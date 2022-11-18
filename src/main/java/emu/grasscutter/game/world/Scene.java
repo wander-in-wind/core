@@ -14,6 +14,7 @@ import emu.grasscutter.game.dungeons.challenge.WorldChallenge;
 import emu.grasscutter.game.dungeons.enums.DungeonPassConditionType;
 import emu.grasscutter.game.entity.*;
 import emu.grasscutter.game.entity.gadget.GadgetWorktop;
+import emu.grasscutter.game.inventory.GameItem;
 import emu.grasscutter.game.managers.blossom.BlossomManager;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.player.TeamInfo;
@@ -42,7 +43,6 @@ import lombok.Setter;
 import lombok.val;
 
 import javax.annotation.Nullable;
-
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -279,6 +279,27 @@ public class Scene {
 
     }
 
+    public void addDropEntity(GameItem item, GameEntity bornForm, Player player, boolean share) {
+        // TODO:optimize EntityItem.java. Maybe we should make other players can't see
+        // the ItemEntity.
+        ItemData itemData = GameData.getItemDataMap().get(item.getItemId());
+        if (itemData == null)
+            return;
+        if (itemData.isEquip()) {
+            float range = (1.5f + (.05f * item.getCount()));
+            for (int j = 0; j < item.getCount(); j++) {
+                Position pos = bornForm.getPosition().nearby2d(range).addY(0.5f);
+                EntityItem entity = new EntityItem(this, player, itemData, pos, item.getCount(), share);
+                addEntity(entity);
+            }
+        } else {
+            EntityItem entity = new EntityItem(this, player, itemData, bornForm.getPosition().clone().addY(0.5f),
+                item.getCount(), share);
+            addEntity(entity);
+        }
+
+    }
+
     public void addEntities(Collection<? extends GameEntity> entities) {
         addEntities(entities, VisionType.VISION_TYPE_BORN);
     }
@@ -386,7 +407,10 @@ public class Scene {
 
         // Reward drop
         if (target instanceof EntityMonster && this.getSceneType() != SceneType.SCENE_DUNGEON) {
-            getWorld().getServer().getDropSystem().callDrop((EntityMonster) target);
+            if (!getWorld().getServer().getDropSystem().handleMonsterDrop((EntityMonster) target)) {
+                Grasscutter.getLogger().warn("Can not solve monster drop: drop_id = {} , drop_tag = {}.Fallback to legacy drop system.", ((EntityMonster) target).getMetaMonster().drop_id, ((EntityMonster) target).getMetaMonster().drop_tag);
+                getWorld().getServer().getDropSystemLegacy().callDrop((EntityMonster) target);
+            }
         }
 
         // Remove entity from world
