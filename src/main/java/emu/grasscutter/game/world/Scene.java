@@ -812,7 +812,8 @@ public class Scene {
             group.regions.values().forEach(getScriptManager()::deregisterRegion);
         }
 
-        scriptManager.getLoadedGroupSetPerBlock().get(block.id).remove(group);
+        if(scriptManager.getLoadedGroupSetPerBlock().containsKey(block.id))
+            scriptManager.getLoadedGroupSetPerBlock().get(block.id).remove(group);
         this.loadedGroups.remove(group);
 
         if(scriptManager.getLoadedGroupSetPerBlock().get(block.id).isEmpty()) {

@@ -12,4 +12,7 @@ public class ConfigGadget {
     // There are more values that can be added that might be useful in the json
     @Nullable
     ConfigGadgetCombat combat;
+
+    @Nullable
+    public ConfigGadgetAbility[] abilities;
 }

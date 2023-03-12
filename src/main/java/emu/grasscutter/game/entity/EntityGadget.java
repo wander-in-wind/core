@@ -1,7 +1,9 @@
 package emu.grasscutter.game.entity;
 
 import emu.grasscutter.data.GameData;
+import emu.grasscutter.data.binout.AbilityData;
 import emu.grasscutter.data.binout.ConfigGadget;
+import emu.grasscutter.data.binout.ConfigGadgetAbility;
 import emu.grasscutter.data.excels.GadgetData;
 import emu.grasscutter.game.entity.gadget.*;
 import emu.grasscutter.game.entity.gadget.platform.BaseRoute;
@@ -95,6 +97,17 @@ public class EntityGadget extends EntityBaseGadget {
         if(GameData.getGadgetMappingMap().containsKey(gadgetId)) {
             String controllerName = GameData.getGadgetMappingMap().get(gadgetId).getServerController();
             setEntityController(EntityControllerScriptManager.getGadgetController(controllerName));
+        }
+
+        //Add abilities
+        ConfigGadget config = GameData.getGadgetConfigData().get(gadgetData.getJsonName());
+        if(config != null && config.abilities != null) {
+            for (ConfigGadgetAbility ability : config.abilities) {
+                AbilityData data =  GameData.getAbilityData(ability.getAbilityName());
+                if(data != null)
+                    scene.getWorld().getHost().getAbilityManager().addAbilityToEntity(
+                        this, data, ability.getAbilityID());
+            }
         }
     }
 
