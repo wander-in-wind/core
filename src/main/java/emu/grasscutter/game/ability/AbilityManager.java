@@ -2,8 +2,14 @@ package emu.grasscutter.game.ability;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.LinkedBlockingDeque;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
 
 import javax.xml.crypto.Data;
+
+import org.reflections.Reflections;
 
 import com.google.protobuf.InvalidProtocolBufferException;
 
@@ -26,17 +32,66 @@ import emu.grasscutter.net.proto.AbilityMetaReInitOverrideMapOuterClass.AbilityM
 import emu.grasscutter.net.proto.AbilityMixinCostStaminaOuterClass.AbilityMixinCostStamina;
 import emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry;
 import emu.grasscutter.net.proto.ModifierActionOuterClass.ModifierAction;
+import io.netty.util.concurrent.FastThreadLocalThread;
+import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
+import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
 import lombok.Getter;
 import emu.grasscutter.net.proto.AbilityMetaAddAbilityOuterClass.AbilityMetaAddAbility;
 
 public final class AbilityManager extends BasePlayerManager {
     HealAbilityManager healAbilityManager;
 
+    private final HashMap<AbilityModifierAction.Type, AbilityActionHandler> actionHandlers;
+
+    public static final ExecutorService eventExecutor;
+    static {
+        eventExecutor = new ThreadPoolExecutor(4, 4,
+            60, TimeUnit.SECONDS, new LinkedBlockingDeque<>(1000),
+            FastThreadLocalThread::new, new ThreadPoolExecutor.AbortPolicy());
+    }
+
     @Getter private boolean abilityInvulnerable = false;
 
     public AbilityManager(Player player) {
         super(player);
         this.healAbilityManager = new HealAbilityManager(player);
+
+        this.actionHandlers = new HashMap<>();
+
+        this.registerHandlers();
+    }
+
+    public void registerHandlers() {
+        Reflections reflections = new Reflections("emu.grasscutter.game.ability.actions");
+        var handlerClasses = reflections.getSubTypesOf(AbilityActionHandler.class);
+
+        for (var obj : handlerClasses) {
+            try {
+                if (obj.isAnnotationPresent(AbilityAction.class)) {
+                    AbilityModifierAction.Type abilityAction = obj.getAnnotation(AbilityAction.class).value();
+                    actionHandlers.put(abilityAction, obj.getDeclaredConstructor().newInstance());
+                } else {
+                    return;
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public void executeAction(Ability ability, AbilityModifierAction action) {
+        AbilityActionHandler handler = actionHandlers.get(action.type);
+
+        if (handler == null || ability == null) {
+            Grasscutter.getLogger().debug("Could not execute ability action {} at {}", action.type, ability);
+            return;
+        }
+
+        eventExecutor.submit(() -> {
+            if (!handler.execute(ability, action)) {
+                Grasscutter.getLogger().debug("exec ability action failed {} at {}", action.type, ability);
+            }
+        });
     }
 
     public void onAbilityInvoke(AbilityInvokeEntry invoke) throws Exception {
@@ -131,7 +186,7 @@ public final class AbilityManager extends BasePlayerManager {
                 var ability = abilities[head.getInstancedAbilityId() - 1];
                 Grasscutter.getLogger().warn("-> {}", ability.getData().localIdToAction);
                 AbilityModifierAction action = ability.getData().localIdToAction.get(head.getLocalId());
-                if(action != null) ability.executeModifierAction(action);
+                if(action != null) ability.getManager().executeAction(ability, action);
             }
 
             return;
@@ -140,7 +195,7 @@ public final class AbilityManager extends BasePlayerManager {
         var stream = entity.getAbilities().values().stream().filter(a -> a.getHash() == hash || a.getData().abilityName == entity.getInstanceToName().get(head.getInstancedAbilityId()));
         stream.forEach(ability -> {
             AbilityModifierAction action = ability.getData().localIdToAction.get(head.getLocalId());
-            if(action != null) ability.executeModifierAction(action);
+            if(action != null) ability.getManager().executeAction(ability, action);
         });
     }
 

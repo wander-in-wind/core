@@ -38,7 +38,7 @@ public class AbilityModifierController {
         if(data.onAdded == null) return;
 
         for (AbilityModifierAction action : data.onAdded) {
-            ability.executeModifierAction(action);
+            ability.getManager().executeAction(ability, action);
         }
     }
 
@@ -46,14 +46,14 @@ public class AbilityModifierController {
         if(data.onRemoved == null) return;
 
         for (AbilityModifierAction action : data.onRemoved) {
-            ability.executeModifierAction(action);
+            ability.getManager().executeAction(ability, action);
         }
     }
 
     public void onBeingHit(EntityDamageEvent event) {
         if(data.onBeingHit != null)
             for (AbilityModifierAction action : data.onBeingHit) {
-                ability.executeModifierAction(action);
+                ability.getManager().executeAction(ability, action);
             }
 
         if(data.elementType != null && event.getAttackElementType().equals(data.elementType)) {
