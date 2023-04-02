@@ -15,6 +15,7 @@ public class SceneSuite {
 	public List<String> triggers = List.of();
     public List<Integer> regions = List.of();
     public int rand_weight;
+    public int[] npcs;
 
     public boolean ban_refresh = false;
 
@@ -24,7 +25,7 @@ public class SceneSuite {
     public transient List<SceneRegion> sceneRegions = List.of();
 
     public void init(SceneGroup sceneGroup) {
-        if(sceneGroup.monsters != null){
+        if(sceneGroup.monsters != null && this.monsters != null){
             this.sceneMonsters = new ArrayList<>(
                 this.monsters.stream()
                     .filter(sceneGroup.monsters::containsKey)
@@ -33,7 +34,7 @@ public class SceneSuite {
             );
         }
 
-        if(sceneGroup.gadgets != null){
+        if(sceneGroup.gadgets != null && this.gadgets != null){
             this.sceneGadgets = new ArrayList<>(
                 this.gadgets.stream()
                     .filter(sceneGroup.gadgets::containsKey)
@@ -42,7 +43,7 @@ public class SceneSuite {
             );
         }
 
-        if(sceneGroup.triggers != null) {
+        if(sceneGroup.triggers != null && this.triggers != null) {
             this.sceneTriggers = new ArrayList<>(
                 this.triggers.stream()
                     .filter(sceneGroup.triggers::containsKey)
@@ -50,7 +51,7 @@ public class SceneSuite {
                     .toList()
             );
         }
-        if(sceneGroup.regions != null) {
+        if(sceneGroup.regions != null && this.regions != null) {
             this.sceneRegions = new ArrayList<>(
                 this.regions.stream()
                     .filter(sceneGroup.regions::containsKey)

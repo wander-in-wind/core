@@ -12,4 +12,8 @@ public class SceneMonster extends SceneObject{
 	public boolean disableWander;
     public int title_id;
     public int special_name_id;
+    public String drop_tag;
+    public int climate_area_id;
+    public int[] affix;
+    public int mark_flag;
 }

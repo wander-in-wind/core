@@ -113,7 +113,7 @@ public final class Grasscutter {
         ResourceLoader.loadAll();
 
         // Generate handbooks.
-        Tools.createGmHandbooks();
+        Tools.createGmHandbooks(false);
 
         // Initialize database.
         DatabaseManager.initialize();

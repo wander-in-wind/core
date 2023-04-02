@@ -9,7 +9,7 @@
       "command_error": "Erreur de commande:"
     },
     "dispatch": {
-      "address_bind": "[Dispatch] Serveur de répartition  \u001b[1m\u001b[33m%s:%s\u001b[0m",
+      "address_bind": "[Dispatch] Serveur de répartition démarré à l'adresse \u001b[1m\u001b[33m%s:%s\u001b[0m",
       "port_bind": "[Dispatch] Serveur de répartition démarré sur le port %s",
       "request": "[Dispatch] Le client %s %s demande : %s",
       "keystore": {
@@ -124,6 +124,21 @@
       "delete": "Compte supprimé.",
       "no_account": "Compte introuvable.",
       "description": "Modifie les comptes utilisateurs"
+    },
+    "achievement": {
+      "success": {
+        "grant": "Le succès à été attribué à %s.",
+        "revoke": "Le succès de %s à été retiré.",
+        "progress": "Le progrès du succès de %s (id: %s) est maintenant %s.",
+        "grantall": "%s succès ont été attibué à %s.",
+        "revokeall": "%s succès ont été retiré de %s."
+      },
+      "fail": {
+        "achievement_not_found": "Succès introuvable",
+        "already_achieved": "%s à déja ce succès.",
+        "not_yet_achieved": "%s n'a pas encore accompli le succès."
+      },
+      "description": "Attribue, retire ou modifie le progrès d'un succès"
     },
     "announce": {
       "send_success": "L'annonce à bien été envoyée, vous pouvez la révoquer en utilisant /a revoke %s.",
@@ -325,7 +340,7 @@
     "team": {
       "invalid_usage": "Utilisation invalide.",
       "invalid_index": "Index invalide.",
-      "add_too_much": "Ce serveur autorise à avoir au maximum %d avatar(s) dans votre équipe.",
+      "add_too_much": "Ce serveur autorise à avoir au maximum %s avatar(s) dans votre équipe.",
       "failed_to_add_avatar": "Echec de l'ajout de l'avatar a l'ID %s dans votre équipe.",
       "failed_to_parse_index": "Echec de l'analyse de l'index index: %s",
       "remove_too_much": "Vous ne pouvez pas retirer tous les avatars.",
@@ -333,7 +348,7 @@
       "index_out_of_range": "L'index spécifié est en dehors du champ.",
       "failed_parse_avatar_id": "Echec de l'analyse de l'ID de l'avatar: %s",
       "avatar_already_in_team": "L'avatar est déjà dans votre équipe.",
-      "avatar_not_found": "L'avatar %d est introuvable.",
+      "avatar_not_found": "L'avatar %s est introuvable.",
       "description": "Modifie votre équipe manuellement."
     },
     "teleportAll": {

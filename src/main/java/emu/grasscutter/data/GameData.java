@@ -64,6 +64,8 @@ public class GameData {
     @Getter private static final Int2ObjectMap<Int2ObjectMap<Route>> sceneRouteData = new Int2ObjectOpenHashMap<>();
 
     @Getter private static final ArrayList<CodexReliquaryData> codexReliquaryArrayList = new ArrayList<>();
+    private static final Int2ObjectMap<AchievementData> achievementDataMap = new Int2ObjectOpenHashMap<>();
+    @Getter private static final Int2ObjectMap<AchievementGoalData> achievementGoalDataMap = new Int2ObjectOpenHashMap<>();
     @Getter private static final Int2ObjectMap<ActivityData> activityDataMap = new Int2ObjectOpenHashMap<>();
     @Getter private static final Int2ObjectMap<ActivityShopData> activityShopDataMap = new Int2ObjectOpenHashMap<>();
     @Getter private static final Int2ObjectMap<ActivityWatcherData> activityWatcherDataMap = new Int2ObjectOpenHashMap<>();
@@ -297,7 +299,12 @@ public class GameData {
     }
 
     @Nullable
-    public static List<QuestData> getQuestDataByConditions(QuestCond questCond, int param0, String questStr){
+    public static List<QuestData> getQuestDataByConditions(QuestCond questCond, int param0, String questStr) {
         return beginCondQuestMap.get(QuestData.questConditionKey(questCond, param0, questStr));
+    }
+
+    public static Int2ObjectMap<AchievementData> getAchievementDataMap() {
+        AchievementData.divideIntoGroups();
+        return achievementDataMap;
     }
 }

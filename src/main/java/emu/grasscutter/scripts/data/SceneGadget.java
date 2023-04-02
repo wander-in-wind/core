@@ -17,6 +17,11 @@ public class SceneGadget extends SceneObject{
     public boolean start_route = true;
     public boolean is_use_point_array  = false;
     public boolean persistent = false;
+    public String drop_tag;
+    public int mark_flag;
+    public Explore explore;
+    public int trigger_count;
+    public boolean showcutscene;
 
     public void setIsOneoff(boolean isOneoff) {
         this.isOneoff = isOneoff;

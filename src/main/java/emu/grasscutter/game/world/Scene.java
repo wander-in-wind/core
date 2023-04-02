@@ -66,6 +66,11 @@ public class Scene {
     @Getter Int2ObjectMap<Route> sceneRoutes;
     private Set<SpawnDataEntry.GridBlockId> loadedGridBlocks;
     @Getter @Setter private boolean dontDestroyWhenEmpty;
+
+    @Getter @Setter private int autoCloseTime;
+    @Getter @Setter private int time;
+    private long startTime;
+
     @Getter private final SceneScriptManager scriptManager;
     @Getter @Setter private WorldChallenge challenge;
     @Getter private List<DungeonSettleListener> dungeonSettleListeners;
