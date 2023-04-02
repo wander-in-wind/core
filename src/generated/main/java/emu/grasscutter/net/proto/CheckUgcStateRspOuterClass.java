@@ -26,7 +26,7 @@ public final class CheckUgcStateRspOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 6314
+   * CmdId: 6314 (3.2)
    * EnetChannelId: 0
    * EnetIsReliable: true
    * </pre>
@@ -280,7 +280,7 @@ public final class CheckUgcStateRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6314
+     * CmdId: 6314 (3.2)
      * EnetChannelId: 0
      * EnetIsReliable: true
      * </pre>

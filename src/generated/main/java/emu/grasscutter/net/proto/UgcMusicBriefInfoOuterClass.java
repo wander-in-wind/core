@@ -167,6 +167,10 @@ public final class UgcMusicBriefInfoOuterClass {
     int getSelfMaxScore();
   }
   /**
+   * <pre>
+   * 3.2
+   * </pre>
+   *
    * Protobuf type {@code UgcMusicBriefInfo}
    */
   public static final class UgcMusicBriefInfo extends
@@ -1070,6 +1074,10 @@ public final class UgcMusicBriefInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * 3.2
+     * </pre>
+     *
      * Protobuf type {@code UgcMusicBriefInfo}
      */
     public static final class Builder extends

@@ -150,7 +150,7 @@ public final class MusicGameSettleReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 8892
+   * CmdId: 8892 (3.2)
    * EnetChannelId: 0
    * EnetIsReliable: true
    * IsAllowClient: true
@@ -978,7 +978,7 @@ public final class MusicGameSettleReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8892
+     * CmdId: 8892 (3.2)
      * EnetChannelId: 0
      * EnetIsReliable: true
      * IsAllowClient: true

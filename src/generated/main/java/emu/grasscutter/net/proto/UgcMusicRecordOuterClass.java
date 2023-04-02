@@ -49,6 +49,10 @@ public final class UgcMusicRecordOuterClass {
     int getMusicId();
   }
   /**
+   * <pre>
+   * 3.2
+   * </pre>
+   *
    * Protobuf type {@code UgcMusicRecord}
    */
   public static final class UgcMusicRecord extends
@@ -364,6 +368,10 @@ public final class UgcMusicRecordOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * 3.2
+     * </pre>
+     *
      * Protobuf type {@code UgcMusicRecord}
      */
     public static final class Builder extends

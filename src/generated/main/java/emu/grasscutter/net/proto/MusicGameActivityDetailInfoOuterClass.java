@@ -101,6 +101,10 @@ public final class MusicGameActivityDetailInfoOuterClass {
         int key);
   }
   /**
+   * <pre>
+   * 3.2
+   * </pre>
+   *
    * Protobuf type {@code MusicGameActivityDetailInfo}
    */
   public static final class MusicGameActivityDetailInfo extends
@@ -583,6 +587,10 @@ public final class MusicGameActivityDetailInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * 3.2
+     * </pre>
+     *
      * Protobuf type {@code MusicGameActivityDetailInfo}
      */
     public static final class Builder extends

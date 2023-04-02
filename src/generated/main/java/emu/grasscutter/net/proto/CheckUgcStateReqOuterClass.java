@@ -20,7 +20,7 @@ public final class CheckUgcStateReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 6342
+   * CmdId: 6342 (3.2)
    * EnetChannelId: 0
    * EnetIsReliable: true
    * IsAllowClient: true
@@ -248,7 +248,7 @@ public final class CheckUgcStateReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6342
+     * CmdId: 6342 (3.2)
      * EnetChannelId: 0
      * EnetIsReliable: true
      * IsAllowClient: true

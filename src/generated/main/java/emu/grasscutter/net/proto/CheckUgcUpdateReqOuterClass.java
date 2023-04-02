@@ -31,7 +31,7 @@ public final class CheckUgcUpdateReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 6320
+   * CmdId: 6320 (3.2)
    * EnetChannelId: 0
    * EnetIsReliable: true
    * IsAllowClient: true
@@ -295,7 +295,7 @@ public final class CheckUgcUpdateReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6320
+     * CmdId: 6320 (3.2)
      * EnetChannelId: 0
      * EnetIsReliable: true
      * IsAllowClient: true

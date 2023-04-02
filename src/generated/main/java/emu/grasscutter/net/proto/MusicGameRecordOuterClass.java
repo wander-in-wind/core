@@ -37,6 +37,10 @@ public final class MusicGameRecordOuterClass {
     int getMaxCombo();
   }
   /**
+   * <pre>
+   * 3.2
+   * </pre>
+   *
    * Protobuf type {@code MusicGameRecord}
    */
   public static final class MusicGameRecord extends
@@ -340,6 +344,10 @@ public final class MusicGameRecordOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * 3.2
+     * </pre>
+     *
      * Protobuf type {@code MusicGameRecord}
      */
     public static final class Builder extends

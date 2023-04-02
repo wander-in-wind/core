@@ -54,7 +54,7 @@ public final class CheckUgcUpdateRspOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 6345
+   * CmdId: 6345 (3.2)
    * EnetChannelId: 0
    * EnetIsReliable: true
    * </pre>
@@ -426,7 +426,7 @@ public final class CheckUgcUpdateRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6345
+     * CmdId: 6345 (3.2)
      * EnetChannelId: 0
      * EnetIsReliable: true
      * </pre>

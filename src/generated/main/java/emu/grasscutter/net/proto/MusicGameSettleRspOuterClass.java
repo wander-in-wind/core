@@ -50,7 +50,7 @@ public final class MusicGameSettleRspOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 8673
+   * CmdId: 8673 (3.2)
    * EnetChannelId: 0
    * EnetIsReliable: true
    * </pre>
@@ -415,7 +415,7 @@ public final class MusicGameSettleRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8673
+     * CmdId: 8673 (3.2)
      * EnetChannelId: 0
      * EnetIsReliable: true
      * </pre>

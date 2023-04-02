@@ -43,6 +43,10 @@ public final class UgcMusicTrackOuterClass {
         int index);
   }
   /**
+   * <pre>
+   * 3.2
+   * </pre>
+   *
    * Protobuf type {@code UgcMusicTrack}
    */
   public static final class UgcMusicTrack extends
@@ -331,6 +335,10 @@ public final class UgcMusicTrackOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * 3.2
+     * </pre>
+     *
      * Protobuf type {@code UgcMusicTrack}
      */
     public static final class Builder extends

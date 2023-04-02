@@ -31,6 +31,10 @@ public final class UgcMusicNoteOuterClass {
     int getEndTime();
   }
   /**
+   * <pre>
+   * 3.2
+   * </pre>
+   *
    * Protobuf type {@code UgcMusicNote}
    */
   public static final class UgcMusicNote extends
@@ -306,6 +310,10 @@ public final class UgcMusicNoteOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * 3.2
+     * </pre>
+     *
      * Protobuf type {@code UgcMusicNote}
      */
     public static final class Builder extends
