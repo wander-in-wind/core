@@ -396,6 +396,17 @@ public class World implements Iterable<Player> {
 
     }
 
+    //3.5 + sends real gametime no mod 1440
+    public void changeTime(int time) {
+        int days = (int) ((time - getTotalGameTimeMinutes()) / 1440);
+        this.currentWorldTime = time * 1000L;
+        this.owner.updatePlayerGameTime(currentWorldTime);
+        this.players.forEach(player -> player.getQuestManager().queueEvent(QuestContent.QUEST_CONTENT_GAME_TIME_TICK,
+            getGameTimeHours(), // hours
+            days)); //days
+    }
+
+    //deprecated for 3.4<
     public void changeTime(int time, int days) {
         val currentTime = getGameTime();
         var diff = time - currentTime;

@@ -1920,6 +1920,6 @@ public class PacketOpcodes {
   public static final int WorldRoutineChangeNotify = 3546;
   public static final int WorldRoutineTypeCloseNotify = 3536;
   public static final int WorldRoutineTypeRefreshNotify = 3509;
-  public static final int SkipPlayerGameTimeReq = 163;
-  public static final int SkipPlayerGameTimeRsp = 196;
+  public static final int SkipPlayerGameTimeReq = 196;
+  public static final int SkipPlayerGameTimeRsp = 163;
 }
