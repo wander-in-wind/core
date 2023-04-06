@@ -152,9 +152,7 @@ public class EntityMonster extends GameEntity {
             Optional.ofNullable(scriptManager.getScriptMonsterSpawnService()).ifPresent(s -> s.onMonsterDead(this));
 
             // prevent spawn monster after success
-            if (challenge.map(c -> c.inProgress()).orElse(true)) {
-                scriptManager.callEvent(new ScriptArgs(EventType.EVENT_ANY_MONSTER_DIE, this.getConfigId()));
-            } else if (getScene().getChallenge() == null) {
+            if (challenge.map(c -> c.inProgress()).orElse(true) || getScene().getChallenge() == null) {
                 scriptManager.callEvent(new ScriptArgs(EventType.EVENT_ANY_MONSTER_DIE, this.getConfigId()));
             }
         }

@@ -252,7 +252,6 @@ public final class AbilityManager extends BasePlayerManager {
         }
 
         if(data.getAction() == ModifierAction.REMOVED) {
-            //Grasscutter.getLogger().warn("Ability {} {}", data.getParentAbilityName(), head.getInstancedModifierId());
             Ability ability = target.getAbilities().get(data.getParentAbilityName().getStr());
             if(ability != null) {
                 AbilityModifierController modifier = ability.getModifiers().get(head.getInstancedModifierId());

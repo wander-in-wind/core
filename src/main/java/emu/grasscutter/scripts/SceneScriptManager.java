@@ -89,7 +89,6 @@ public class SceneScriptManager {
         this.cachedSceneGroupsInstances = new ConcurrentHashMap<>();
         this.scriptMonsterSpawnService = new ScriptMonsterSpawnService(this);
         this.loadedGroupSetPerBlock = new ConcurrentHashMap<>();
-        this.groupGrids = null; //This is changed on init
 
         // TEMPORARY
         if (this.getScene().getId() < 10 && !Grasscutter.getConfig().server.game.enableScriptInBigWorld) {
@@ -120,7 +119,7 @@ public class SceneScriptManager {
     }
 
     public Map<String, Integer> getVariables(int group_id) {
-        if(getCachedGroupInstanceById(group_id) == null) return null;
+        if(getCachedGroupInstanceById(group_id) == null) return Collections.emptyMap();
         return getCachedGroupInstanceById(group_id).getCachedVariables();
     }
 
@@ -380,14 +379,14 @@ public class SceneScriptManager {
         var path = FileUtils.getScriptPath("Scene/" + getScene().getId() + "/scene_grid.json");
 
         try {
-            this.groupGrids = JsonUtils.loadToList(path, Grid.class);
+            groupGrids = JsonUtils.loadToList(path, Grid.class);
         } catch (IOException ignored) {
             Grasscutter.getLogger().error("Scene {} unable to load grid file.", getScene().getId());
         } catch (Exception e) {
             Grasscutter.getLogger().error("Scene {} unable to load grid file.", e, getScene().getId());
         }
 
-        boolean runForFirstTime = this.groupGrids == null;
+        boolean runForFirstTime = groupGrids == null;
 
         //Find if the scene entities are already generated, if not generate it
         if(Grasscutter.getConfig().server.game.cacheSceneEntitiesEveryRun || runForFirstTime) {
@@ -428,10 +427,10 @@ public class SceneScriptManager {
                 });
             });
 
-            this.groupGrids = new ArrayList<>();
+            groupGrids = new ArrayList<>();
             for(int i = 0; i < 6; i++) {
-                this.groupGrids.add(new Grid());
-                this.groupGrids.get(i).grid = groupPositions.get(i);
+                groupGrids.add(new Grid());
+                groupGrids.get(i).grid = groupPositions.get(i);
             }
 
             try (FileWriter file = new FileWriter(path.toFile())) {
@@ -473,9 +472,9 @@ public class SceneScriptManager {
         }
 
         if (group.variables != null) {
-            group.variables.forEach(var -> {
-                if(!this.getVariables(group.id).containsKey(var.name))
-                    this.getVariables(group.id).put(var.name, var.value);
+            group.variables.forEach(variable -> {
+                if(!this.getVariables(group.id).containsKey(variable.name))
+                    this.getVariables(group.id).put(variable.name, variable.value);
             });
         }
     }
@@ -934,12 +933,12 @@ public class SceneScriptManager {
         //TODO test
         var groupTimers = activeGroupTimers.get(groupID);
         if(groupTimers!=null && !groupTimers.isEmpty())
-        for(var timer : groupTimers){
-            if(timer.component1().equals(source)){
-                Grasscutter.getGameServer().getScheduler().cancelTask(timer.component2());
-                return 0;
+            for(var timer : groupTimers){
+                if(timer.component1().equals(source)){
+                    Grasscutter.getGameServer().getScheduler().cancelTask(timer.component2());
+                    return 0;
+                }
             }
-        }
 
         Grasscutter.getLogger().warn("trying to cancel a timer that's not active {} {}", groupID, source);
         return 1;

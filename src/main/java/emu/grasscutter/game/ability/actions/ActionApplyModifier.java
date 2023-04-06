@@ -34,7 +34,7 @@ public class ActionApplyModifier extends AbilityActionHandler {
                     Thread.sleep((int)(modifierData.duration.get() * 1000));
                     modifier.onRemoved();
                 } catch (InterruptedException e) {
-
+                    Grasscutter.getLogger().error("Failed to schedule ability modifier async task.");
                 }
             });
         }

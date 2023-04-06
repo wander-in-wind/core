@@ -422,11 +422,9 @@ public class Scene {
     private void checkPlayerRespawn() {
         players.forEach(player -> {
             //Check if we need a respawn
-            if (getScriptManager().getConfig() != null) {
-                if (getScriptManager().getConfig().die_y >= player.getPosition().getY()) {
-                    //Respawn the player
-                    respawnPlayer(player);
-                }
+            if (getScriptManager().getConfig() != null && getScriptManager().getConfig().die_y >= player.getPosition().getY()) {
+                //Respawn the player
+                respawnPlayer(player);
             }
         });
     }
