@@ -45,7 +45,7 @@ sourceCompatibility = JavaVersion.VERSION_17
 targetCompatibility = JavaVersion.VERSION_17
 
 group = 'xyz.grasscutters'
-version = '1.4.4-dev'
+version = '3.0.0-3.5.0-q'
 
 sourceCompatibility = 17
 targetCompatibility = 17

@@ -17,7 +17,7 @@ public class HandlerPlayerSetPauseReq extends PacketHandler {
 	public void handle(GameSession session, byte[] header, byte[] payload) throws Exception {
 		PlayerSetPauseReq req = PlayerSetPauseReq.parseFrom(payload);
 
-		session.send(new PacketPlayerSetPauseRsp(head.getClientSequenceId()));
+		session.send(new PacketPlayerSetPauseRsp());
 		session.getPlayer().setPaused(req.getIsPaused());
 
         session.send(new PacketPlayerTimeNotify(session.getPlayer()));

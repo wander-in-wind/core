@@ -18,18 +18,19 @@ public class PacketBeginCameraSceneLookNotify extends BasePacket {
         val builder = BeginCameraSceneLookNotify.newBuilder()
             .setLookPos(parameters.lookPos.toProto())
             .setFollowPos(parameters.followPos.toProto())
-            .setDuration(parameters.duration)
-            .setIsAllowInput(parameters.isAllowInput)
-            .setIsSetFollowPos(parameters.setFollowPos)
-            .setIsSetScreenXy(parameters.isScreenXY)
-            .setIsRecoverKeepCurrent(parameters.recoverKeepCurrent)
-            .setIsChangePlayMode(parameters.isChangePlayMode)
-            .setScreenY(parameters.screenY)
-            .setScreenX(parameters.screenX)
-            .setIsForce(parameters.isForce)
-            .setIsForce(parameters.isForceWalk)
-            .setEntityId(parameters.entityId)
-            .addAllOtherParams(parameters.otherParams);
+            .setDuration(parameters.duration);
+        //TODO: due to broken proto
+//            .setIsAllowInput(parameters.isAllowInput)
+//            .setIsSetFollowPos(parameters.setFollowPos)
+//            .setIsSetScreenXy(parameters.isScreenXY)
+//            .setIsRecoverKeepCurrent(parameters.recoverKeepCurrent)
+//            .setIsChangePlayMode(parameters.isChangePlayMode)
+//            .setScreenY(parameters.screenY)
+//            .setScreenX(parameters.screenX)
+//            .setIsForce(parameters.isForce)
+//            .setIsForce(parameters.isForceWalk)
+//            .setEntityId(parameters.entityId)
+//            .addAllOtherParams(parameters.otherParams);
 		this.setData(builder);
 	}
 
