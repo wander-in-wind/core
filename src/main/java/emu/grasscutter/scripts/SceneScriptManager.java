@@ -68,7 +68,7 @@ public class SceneScriptManager {
      * blockid - loaded groupSet
      */
     private final Map<Integer, Set<SceneGroup>> loadedGroupSetPerBlock;
-    private static List<Grid> groupGrids;
+    private static List<Grid> groupGrids = null;
     public static final ExecutorService eventExecutor;
     static {
         eventExecutor = new ThreadPoolExecutor(4, 4,
@@ -378,15 +378,14 @@ public class SceneScriptManager {
 
         var path = FileUtils.getScriptPath("Scene/" + getScene().getId() + "/scene_grid.json");
 
-        try {
-            groupGrids = JsonUtils.loadToList(path, Grid.class);
-        } catch (IOException ignored) {
-            Grasscutter.getLogger().error("Scene {} unable to load grid file.", getScene().getId());
-        } catch (Exception e) {
-            Grasscutter.getLogger().error("Scene {} unable to load grid file.", e, getScene().getId());
-        }
-
         boolean runForFirstTime = groupGrids == null;
+
+        if(runForFirstTime)
+            try {
+                groupGrids = JsonUtils.loadToList(path, Grid.class);
+            } catch (Exception e) {
+                Grasscutter.getLogger().error("Scene {} unable to load grid file.", e, getScene().getId());
+            }
 
         //Find if the scene entities are already generated, if not generate it
         if(Grasscutter.getConfig().server.game.cacheSceneEntitiesEveryRun || runForFirstTime) {
