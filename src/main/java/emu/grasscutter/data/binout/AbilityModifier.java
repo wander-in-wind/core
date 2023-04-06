@@ -36,7 +36,7 @@ public class AbilityModifier implements Serializable {
     public ElementType elementType;
     public DynamicFloat elementDurability = DynamicFloat.ZERO;
 
-    public static class AbilityModifierAction {
+    public static class AbilityModifierAction implements Serializable {
         public enum Type {
             ActCameraRadialBlur, ActCameraShake, AddAvatarSkillInfo, AddChargeBarValue,
             AddClimateMeter, AddElementDurability, AddGlobalValue, AddGlobalValueToTarget,
