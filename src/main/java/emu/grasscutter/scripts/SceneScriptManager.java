@@ -68,7 +68,7 @@ public class SceneScriptManager {
      * blockid - loaded groupSet
      */
     private final Map<Integer, Set<SceneGroup>> loadedGroupSetPerBlock;
-    private List<Grid> groupGrids;
+    private static List<Grid> groupGrids;
     public static final ExecutorService eventExecutor;
     static {
         eventExecutor = new ThreadPoolExecutor(4, 4,
