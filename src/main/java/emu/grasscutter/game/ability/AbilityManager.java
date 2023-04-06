@@ -74,7 +74,7 @@ public final class AbilityManager extends BasePlayerManager {
                     return;
                 }
             } catch (Exception e) {
-                e.printStackTrace();
+                Grasscutter.getLogger().error("Unable to register handler.", e);
             }
         }
     }

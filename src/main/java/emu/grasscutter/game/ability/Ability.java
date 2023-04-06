@@ -55,7 +55,7 @@ public class Ability {
         char[] asCharArray = str.toCharArray();
         for (int i = 0; i < str.length(); i++)
         {
-            hash = ((asCharArray[i] + 131 * hash) & 0xFFFFFFFF) >> 0;
+            hash = ((asCharArray[i] + 131 * hash) & 0xFFFFFFFF);
         }
         return (int)hash;
     }
