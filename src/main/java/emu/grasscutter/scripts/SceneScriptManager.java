@@ -380,14 +380,13 @@ public class SceneScriptManager {
 
         var path = FileUtils.getResourcePath("Server/Cache/scene" + getScene().getId() + "_grid.json");
 
-        boolean runForFirstTime = !groupGridsCache.containsKey(scene.getId());
+        try {
+            groupGridsCache.put(scene.getId(), JsonUtils.loadToList(path, Grid.class));
+        } catch (Exception e) {
+            Grasscutter.getLogger().error("Scene {} unable to load grid file.", e, getScene().getId());
+        }
 
-        if(runForFirstTime)
-            try {
-                groupGridsCache.put(scene.getId(), JsonUtils.loadToList(path, Grid.class));
-            } catch (Exception e) {
-                Grasscutter.getLogger().error("Scene {} unable to load grid file.", e, getScene().getId());
-            }
+        boolean runForFirstTime = !groupGridsCache.containsKey(scene.getId());
 
         //Find if the scene entities are already generated, if not generate it
         if(Grasscutter.getConfig().server.game.cacheSceneEntitiesEveryRun || runForFirstTime) {
