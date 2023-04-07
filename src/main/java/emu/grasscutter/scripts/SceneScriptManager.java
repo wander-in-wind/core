@@ -28,6 +28,8 @@ import emu.grasscutter.utils.GridPosition;
 import emu.grasscutter.utils.JsonUtils;
 import emu.grasscutter.utils.Position;
 import io.netty.util.concurrent.FastThreadLocalThread;
+import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
+import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
 import kotlin.Pair;
 import lombok.val;
 
@@ -68,7 +70,7 @@ public class SceneScriptManager {
      * blockid - loaded groupSet
      */
     private final Map<Integer, Set<SceneGroup>> loadedGroupSetPerBlock;
-    private static List<Grid> groupGrids = null;
+    private static final Int2ObjectMap<List<Grid>> groupGridsCache = new Int2ObjectOpenHashMap<>();
     public static final ExecutorService eventExecutor;
     static {
         eventExecutor = new ThreadPoolExecutor(4, 4,
@@ -104,7 +106,7 @@ public class SceneScriptManager {
     }
 
     public List<Grid> getGroupGrids() {
-        return groupGrids;
+        return groupGridsCache.get(scene.getId());
     }
 
     public SceneConfig getConfig() {
@@ -378,11 +380,11 @@ public class SceneScriptManager {
 
         var path = FileUtils.getScriptPath("Scene/" + getScene().getId() + "/scene_grid.json");
 
-        boolean runForFirstTime = groupGrids == null;
+        boolean runForFirstTime = !groupGridsCache.containsKey(scene.getId());
 
         if(runForFirstTime)
             try {
-                groupGrids = JsonUtils.loadToList(path, Grid.class);
+                groupGridsCache.put(scene.getId(), JsonUtils.loadToList(path, Grid.class));
             } catch (Exception e) {
                 Grasscutter.getLogger().error("Scene {} unable to load grid file.", e, getScene().getId());
             }
@@ -426,11 +428,12 @@ public class SceneScriptManager {
                 });
             });
 
-            groupGrids = new ArrayList<>();
+            var groupGrids = new ArrayList<Grid>();
             for(int i = 0; i < 6; i++) {
                 groupGrids.add(new Grid());
                 groupGrids.get(i).grid = groupPositions.get(i);
             }
+            groupGridsCache.put(scene.getId(), groupGrids);
 
             try (FileWriter file = new FileWriter(path.toFile())) {
                 file.write(JsonUtils.encode(groupGrids));
