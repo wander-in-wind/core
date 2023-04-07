@@ -378,7 +378,7 @@ public class SceneScriptManager {
         }
         this.meta = meta;
 
-        var path = FileUtils.getScriptPath("Scene/" + getScene().getId() + "/scene_grid.json");
+        var path = FileUtils.getResourcePath("Server/Cache/scene" + getScene().getId() + "_grid.json");
 
         boolean runForFirstTime = !groupGridsCache.containsKey(scene.getId());
 
