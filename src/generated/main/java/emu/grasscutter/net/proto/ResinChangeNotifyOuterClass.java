@@ -25,31 +25,18 @@ public final class ResinChangeNotifyOuterClass {
     int getCurValue();
 
     /**
-     * <pre>
-     *KDJDKFKHOEN snootodo swapperoo 2
-     * </pre>
-     *
      * <code>uint32 next_add_timestamp = 13;</code>
      * @return The nextAddTimestamp.
      */
     int getNextAddTimestamp();
 
     /**
-     * <pre>
-     *NJLHPIKCNOP snootodo swapperoo 2
-     * </pre>
-     *
      * <code>uint32 cur_buy_count = 12;</code>
      * @return The curBuyCount.
      */
     int getCurBuyCount();
   }
   /**
-   * <pre>
-   * Name: IBIMGHOHNDK
-   * CmdId: 649
-   * </pre>
-   *
    * Protobuf type {@code ResinChangeNotify}
    */
   public static final class ResinChangeNotify extends
@@ -155,10 +142,6 @@ public final class ResinChangeNotifyOuterClass {
     public static final int NEXT_ADD_TIMESTAMP_FIELD_NUMBER = 13;
     private int nextAddTimestamp_;
     /**
-     * <pre>
-     *KDJDKFKHOEN snootodo swapperoo 2
-     * </pre>
-     *
      * <code>uint32 next_add_timestamp = 13;</code>
      * @return The nextAddTimestamp.
      */
@@ -170,10 +153,6 @@ public final class ResinChangeNotifyOuterClass {
     public static final int CUR_BUY_COUNT_FIELD_NUMBER = 12;
     private int curBuyCount_;
     /**
-     * <pre>
-     *NJLHPIKCNOP snootodo swapperoo 2
-     * </pre>
-     *
      * <code>uint32 cur_buy_count = 12;</code>
      * @return The curBuyCount.
      */
@@ -360,11 +339,6 @@ public final class ResinChangeNotifyOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Name: IBIMGHOHNDK
-     * CmdId: 649
-     * </pre>
-     *
      * Protobuf type {@code ResinChangeNotify}
      */
     public static final class Builder extends
@@ -556,10 +530,6 @@ public final class ResinChangeNotifyOuterClass {
 
       private int nextAddTimestamp_ ;
       /**
-       * <pre>
-       *KDJDKFKHOEN snootodo swapperoo 2
-       * </pre>
-       *
        * <code>uint32 next_add_timestamp = 13;</code>
        * @return The nextAddTimestamp.
        */
@@ -568,10 +538,6 @@ public final class ResinChangeNotifyOuterClass {
         return nextAddTimestamp_;
       }
       /**
-       * <pre>
-       *KDJDKFKHOEN snootodo swapperoo 2
-       * </pre>
-       *
        * <code>uint32 next_add_timestamp = 13;</code>
        * @param value The nextAddTimestamp to set.
        * @return This builder for chaining.
@@ -583,10 +549,6 @@ public final class ResinChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *KDJDKFKHOEN snootodo swapperoo 2
-       * </pre>
-       *
        * <code>uint32 next_add_timestamp = 13;</code>
        * @return This builder for chaining.
        */
@@ -599,10 +561,6 @@ public final class ResinChangeNotifyOuterClass {
 
       private int curBuyCount_ ;
       /**
-       * <pre>
-       *NJLHPIKCNOP snootodo swapperoo 2
-       * </pre>
-       *
        * <code>uint32 cur_buy_count = 12;</code>
        * @return The curBuyCount.
        */
@@ -611,10 +569,6 @@ public final class ResinChangeNotifyOuterClass {
         return curBuyCount_;
       }
       /**
-       * <pre>
-       *NJLHPIKCNOP snootodo swapperoo 2
-       * </pre>
-       *
        * <code>uint32 cur_buy_count = 12;</code>
        * @param value The curBuyCount to set.
        * @return This builder for chaining.
@@ -626,10 +580,6 @@ public final class ResinChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *NJLHPIKCNOP snootodo swapperoo 2
-       * </pre>
-       *
        * <code>uint32 cur_buy_count = 12;</code>
        * @return This builder for chaining.
        */
