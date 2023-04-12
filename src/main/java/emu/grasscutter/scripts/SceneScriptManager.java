@@ -4,7 +4,6 @@ import com.github.davidmoten.rtreemulti.RTree;
 import com.github.davidmoten.rtreemulti.geometry.Geometry;
 
 import emu.grasscutter.Grasscutter;
-import emu.grasscutter.config.ConfigContainer.VisionOptions;
 import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.excels.MonsterData;
 import emu.grasscutter.data.excels.WorldLevelData;
@@ -38,6 +37,7 @@ import org.luaj.vm2.LuaValue;
 import org.luaj.vm2.lib.jse.CoerceJavaToLua;
 
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -120,6 +120,7 @@ public class SceneScriptManager {
         return meta.blocks;
     }
 
+    @Nullable
     public Map<String, Integer> getVariables(int group_id) {
         if(getCachedGroupInstanceById(group_id) == null) return Collections.emptyMap();
         return getCachedGroupInstanceById(group_id).getCachedVariables();
@@ -245,7 +246,7 @@ public class SceneScriptManager {
         return suiteIndex;
     }
 
-    public boolean refreshGroupSuite(int groupId, int suiteId, GameQuest quest) {
+    public boolean refreshGroupSuite(int groupId, int suiteId) {
         var targetGroupInstance = getGroupInstanceById(groupId);
         if (targetGroupInstance == null) {
             getGroupById(groupId); //Load the group, this ensures an instance is created and the if neccesary unloaded, but the suite data is stored
@@ -254,9 +255,14 @@ public class SceneScriptManager {
         } else {
             Grasscutter.getLogger().debug("Refreshing group {} suite {}", groupId, suiteId);
             suiteId = refreshGroup(targetGroupInstance, suiteId, false); //If suiteId is zero, the value of suiteId changes
-            quest.getOwner().sendPacket(new PacketGroupSuiteNotify(groupId, suiteId));
+            scene.broadcastPacket(new PacketGroupSuiteNotify(groupId, suiteId));
         }
 
+
+        return true;
+    }
+    public boolean refreshGroupSuite(int groupId, int suiteId, GameQuest quest) {
+        val result = refreshGroupSuite(groupId, suiteId);
         if(suiteId != 0 && quest != null) {
             quest.getMainQuest().getQuestGroupSuites().add(QuestGroupSuite.of()
                 .scene(getScene().getId())
@@ -265,7 +271,7 @@ public class SceneScriptManager {
                 .build());
         }
 
-        return true;
+        return result;
     }
 
     public boolean refreshGroupMonster(int groupId) {
@@ -401,17 +407,37 @@ public class SceneScriptManager {
 
                     //Add all entitites here
                     Set<Integer> vision_levels = new HashSet<>();
-                    group.monsters.values().forEach(m -> {
-                        addGridPositionToMap(groupPositions.get(m.vision_level), group.id, m.vision_level, m.pos);
-                        vision_levels.add(m.vision_level);
-                    });
-                    group.gadgets.values().forEach(g -> {
-                        int vision_level = Math.max(getGadgetVisionLevel(g.gadget_id), g.vision_level);
-                        addGridPositionToMap(groupPositions.get(vision_level), group.id, vision_level, g.pos);
-                        vision_levels.add(vision_level);
-                    });
-                    group.npcs.values().forEach(n -> addGridPositionToMap(groupPositions.get(n.vision_level), group.id, n.vision_level, n.pos));
-                    group.regions.values().forEach(r -> addGridPositionToMap(groupPositions.get(0), group.id, 0, r.pos));
+
+                    if(group.monsters != null) {
+                        group.monsters.values().forEach(m -> {
+                            addGridPositionToMap(groupPositions.get(m.vision_level), group.id, m.vision_level, m.pos);
+                            vision_levels.add(m.vision_level);
+                        });
+                    } else {
+                        Grasscutter.getLogger().error("group.monsters null for group {}", group.id);
+                    }
+                    if(group.gadgets != null) {
+                        group.gadgets.values().forEach(g -> {
+                            int vision_level = Math.max(getGadgetVisionLevel(g.gadget_id), g.vision_level);
+                            addGridPositionToMap(groupPositions.get(vision_level), group.id, vision_level, g.pos);
+                            vision_levels.add(vision_level);
+                        });
+                    } else {
+                        Grasscutter.getLogger().error("group.gadgets null for group {}", group.id);
+                    }
+
+                    if(group.npcs != null) {
+                        group.npcs.values().forEach(n -> addGridPositionToMap(groupPositions.get(n.vision_level), group.id, n.vision_level, n.pos));
+                    } else {
+                        Grasscutter.getLogger().error("group.npcs null for group {}", group.id);
+                    }
+
+                    if(group.regions != null) {
+                        group.regions.values().forEach(r -> addGridPositionToMap(groupPositions.get(0), group.id, 0, r.pos));
+                    } else {
+                        Grasscutter.getLogger().error("group.regions null for group {}", group.id);
+                    }
+
                     if(group.garbages != null && group.garbages.gadgets != null) group.garbages.gadgets.forEach(g -> addGridPositionToMap(groupPositions.get(g.vision_level), group.id, g.vision_level, g.pos));
 
                     int max_vision_level = -1;
@@ -474,8 +500,9 @@ public class SceneScriptManager {
 
         if (group.variables != null) {
             group.variables.forEach(variable -> {
-                if(!this.getVariables(group.id).containsKey(variable.name))
-                    this.getVariables(group.id).put(variable.name, variable.value);
+                val variables = this.getVariables(group.id);
+                if(variables != null && !variables.containsKey(variable.name))
+                    variables.put(variable.name, variable.value);
             });
         }
     }
@@ -506,7 +533,7 @@ public class SceneScriptManager {
 
             if (region.hasNewEntities()) {
                 Grasscutter.getLogger().trace("Call EVENT_ENTER_REGION_{}",region.getMetaRegion().config_id);
-                callEvent(new ScriptArgs(EventType.EVENT_ENTER_REGION, region.getConfigId())
+                callEvent(new ScriptArgs(region.getGroupId(), EventType.EVENT_ENTER_REGION, region.getConfigId())
                     .setSourceEntityId(region.getId())
                     .setTargetEntityId(targetID)
                 );
@@ -521,7 +548,7 @@ public class SceneScriptManager {
                 }
             }
             if (region.entityLeave()) {
-                callEvent(new ScriptArgs(EventType.EVENT_LEAVE_REGION, region.getConfigId())
+                callEvent(new ScriptArgs(region.getGroupId(), EventType.EVENT_LEAVE_REGION, region.getConfigId())
                     .setSourceEntityId(region.getId())
                     .setTargetEntityId(region.getFirstEntityId())
                 );
@@ -553,18 +580,6 @@ public class SceneScriptManager {
             .map(mob -> createMonster(group.id, group.block_id, mob))
             .filter(Objects::nonNull)
             .toList();
-    }
-
-    public boolean isClearedGroupMonsters(int groupId) {
-        var groupInstance = getGroupInstanceById(groupId);
-        if (groupInstance == null || groupInstance.getLuaGroup() == null) return false;
-
-        var group = groupInstance.getLuaGroup();
-        return group.monsters.values().stream()
-            .filter(m -> {
-                var entity = scene.getEntityByConfigId(m.config_id);
-                return entity != null && entity.getGroupId()==group.id;
-            }).count() == 0;
     }
 
     public void addGroupSuite(SceneGroupInstance groupInstance, SceneSuite suite) {
@@ -633,8 +648,8 @@ public class SceneScriptManager {
         }
     }
     // Events
-    public void callEvent(int eventType) {
-        callEvent(new ScriptArgs(eventType));
+    public void callEvent(int groupId, int eventType) {
+        callEvent(new ScriptArgs(groupId, eventType));
     }
     public void callEvent(@Nonnull ScriptArgs params) {
         /**
@@ -652,11 +667,16 @@ public class SceneScriptManager {
             int eventType = params.type;
             Set<SceneTrigger> relevantTriggers = new HashSet<>();
             if (eventType == EventType.EVENT_ENTER_REGION || eventType == EventType.EVENT_LEAVE_REGION) {
-                List<SceneTrigger> relevantTriggersList = this.getTriggersByEvent(eventType).stream()
-                    .filter(p -> p.getCondition().contains(String.valueOf(params.param1)) &&
-                        (p.getSource().isEmpty() || p.getSource().equals(params.getEventSource()))).toList();
-                relevantTriggers = new HashSet<>(relevantTriggersList);
-            } else {relevantTriggers = new HashSet<>(this.getTriggersByEvent(eventType));}
+                relevantTriggers = this.getTriggersByEvent(eventType).stream()
+                    .filter(t -> t.getCondition().contains(String.valueOf(params.param1)) &&
+                        (t.getSource().isEmpty() || t.getSource().equals(params.getEventSource())))
+                    .collect(Collectors.toSet());
+            } else {
+                relevantTriggers = this.getTriggersByEvent(eventType).stream()
+                    .filter(t -> params.getGroupId() == 0 || t.getCurrentGroup().id == params.getGroupId())
+                    .filter(t ->  (t.getSource().isEmpty() || t.getSource().equals(params.getEventSource())))
+                    .collect(Collectors.toSet());
+            }
             for (SceneTrigger trigger : relevantTriggers) {
                 handleEventForTrigger(params, trigger);
             }
@@ -705,6 +725,12 @@ public class SceneScriptManager {
         val invocations = invocationsCounter.incrementAndGet();
         Grasscutter.getLogger().trace("Call Action Trigger {}", trigger.getAction());
 
+
+        val activeChallenge = scene.getChallenge();
+        if(activeChallenge!=null){
+            activeChallenge.onGroupTriggerDeath(trigger);
+        }
+
         if (trigger.getEvent() == EventType.EVENT_ENTER_REGION) {
             EntityRegion region = this.regions.values().stream().filter(p -> p.getConfigId() == params.param1).toList().get(0);
             getScene().getPlayers().forEach(p -> p.onEnterRegion(region.getMetaRegion()));
@@ -715,12 +741,12 @@ public class SceneScriptManager {
             deregisterRegion(region.getMetaRegion());
         }
 
+        if(trigger.getEvent() == EVENT_TIMER_EVENT){
+            cancelGroupTimerEvent(trigger.currentGroup.id, trigger.getSource());
+        }
         // always deregister on error, otherwise only if the count is reached
         if(ret.isboolean() && !ret.checkboolean() || ret.isint() && ret.checkint()!=0
         || trigger.getTrigger_count()>0 && invocations >= trigger.getTrigger_count()) {
-            if(trigger.getEvent() == EVENT_TIMER_EVENT){
-                cancelGroupTimerEvent(trigger.currentGroup.id, trigger.getSource());
-            }
             deregisterTrigger(trigger);
         }
     }
@@ -920,8 +946,9 @@ public class SceneScriptManager {
             if(trigger.getEvent() == EVENT_TIMER_EVENT &&trigger.getSource().equals(source)){
                 Grasscutter.getLogger().warn("[LUA] Found timer trigger with source {} for group {} : {}",
                     source, groupID, trigger.getName());
+                cancelGroupTimerEvent(groupID, source);
                 var taskIdentifier = Grasscutter.getGameServer().getScheduler().scheduleDelayedRepeatingTask(() ->
-                    callEvent(new ScriptArgs(EVENT_TIMER_EVENT)
+                    callEvent(new ScriptArgs(groupID, EVENT_TIMER_EVENT)
                         .setEventSource(source)), (int)time, (int)time);
                 var groupTasks = activeGroupTimers.computeIfAbsent(groupID, k -> new HashSet<>());
                 groupTasks.add(new Pair<>(source, taskIdentifier));
@@ -933,30 +960,37 @@ public class SceneScriptManager {
     public int cancelGroupTimerEvent(int groupID, String source) {
         //TODO test
         var groupTimers = activeGroupTimers.get(groupID);
-        if(groupTimers!=null && !groupTimers.isEmpty())
-            for(var timer : groupTimers){
-                if(timer.component1().equals(source)){
+        if(groupTimers!=null && !groupTimers.isEmpty()) {
+            for (var timer : new HashSet<>(groupTimers)) {
+                if (timer.component1().equals(source)) {
                     Grasscutter.getGameServer().getScheduler().cancelTask(timer.component2());
+                    groupTimers.remove(timer);
                     return 0;
                 }
             }
+        }
 
         Grasscutter.getLogger().warn("trying to cancel a timer that's not active {} {}", groupID, source);
         return 1;
     }
 
-    // todo implement properly with proper group loading
-    public boolean hasClearedGroupMonsters(int groupId){
-        val group = getGroupById(groupId);
-        if(group == null || !group.isLoaded() || group.monsters == null){
-            return false;
-        }
-        for(val monster : group.monsters.values()) {
-            if(scene.getEntityByConfigId(monster.config_id, groupId) !=null){
-                return false;
-            }
-        }
-        return true;
+    // todo use killed monsters instead of spawned entites for check?
+    public boolean isClearedGroupMonsters(int groupId) {
+        val groupInstance = getGroupInstanceById(groupId);
+        if (groupInstance == null || groupInstance.getLuaGroup() == null) return false;
+
+        val monsters = groupInstance.getLuaGroup().monsters;
+
+        if(monsters == null || monsters.isEmpty()) return true;
+
+        return monsters.values().stream().noneMatch(m -> {
+            val entity = scene.getEntityByConfigId(m.config_id);
+            return entity != null && entity.getGroupId() == groupId;
+        });
     }
 
+    public void onDestroy(){
+        activeGroupTimers.forEach((gid,times) -> times.forEach((e)->Grasscutter.getGameServer().getScheduler().cancelTask(e.getSecond())));
+        activeGroupTimers.clear();
+    }
 }

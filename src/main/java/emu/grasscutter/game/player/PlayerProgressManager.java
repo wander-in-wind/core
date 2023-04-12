@@ -223,7 +223,7 @@ public class PlayerProgressManager extends BasePlayerDataManager {
         for (var subData : statueSubQuests) {
             var subGameQuest = statueGameMainQuest.getChildQuestById(subData.getSubId());
             if (subGameQuest != null && subGameQuest.getState() == QuestState.QUEST_STATE_UNSTARTED) {
-                this.player.getQuestManager().addQuest(subData.getSubId());
+                this.player.getQuestManager().addQuest(subGameQuest.getQuestData());
             }
         }
     }
@@ -247,7 +247,7 @@ public class PlayerProgressManager extends BasePlayerDataManager {
 
         // Fire quest and script trigger for trans point unlock.
         this.player.getQuestManager().queueEvent(QuestContent.QUEST_CONTENT_UNLOCK_TRANS_POINT, sceneId, pointId);
-        this.player.getScene().getScriptManager().callEvent(new ScriptArgs(EVENT_UNLOCK_TRANS_POINT, sceneId, pointId));
+        this.player.getScene().getScriptManager().callEvent(new ScriptArgs(0, EVENT_UNLOCK_TRANS_POINT, sceneId, pointId));
 
         // Send packet.
         this.player.sendPacket(new PacketScenePointUnlockNotify(sceneId, pointId));

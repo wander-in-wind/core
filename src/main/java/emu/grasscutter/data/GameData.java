@@ -9,7 +9,13 @@ import java.util.Optional;
 
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.data.binout.*;
+import emu.grasscutter.data.binout.config.ConfigEntityAvatar;
+import emu.grasscutter.data.binout.config.ConfigEntityGadget;
+import emu.grasscutter.data.binout.config.ConfigEntityMonster;
+import emu.grasscutter.data.binout.config.ConfigLevelEntity;
 import emu.grasscutter.data.binout.routes.Route;
+import emu.grasscutter.data.custom.*;
+import emu.grasscutter.data.server.ActivityCondGroup;
 import emu.grasscutter.data.server.GadgetMapping;
 import emu.grasscutter.game.dungeons.DungeonDropEntry;
 import emu.grasscutter.game.quest.QuestEncryptionKey;
@@ -29,6 +35,7 @@ import it.unimi.dsi.fastutil.ints.IntList;
 import it.unimi.dsi.fastutil.ints.IntSet;
 import lombok.Getter;
 import lombok.experimental.Tolerate;
+import lombok.val;
 
 import javax.annotation.Nullable;
 
@@ -38,7 +45,9 @@ public class GameData {
     @Getter private static final Int2ObjectMap<String> abilityHashes = new Int2ObjectOpenHashMap<>();
     @Deprecated(forRemoval = true)
     @Getter private static final Map<String, AbilityModifierEntry> abilityModifiers = new HashMap<>();
-    @Getter private static final Map<String, ConfigGadget> gadgetConfigData = new HashMap<>();
+    @Getter private static final Map<String, ConfigEntityAvatar> avatarConfigData = new HashMap<>();
+    @Getter private static final Map<String, ConfigEntityGadget> gadgetConfigData = new HashMap<>();
+    @Getter private static final Map<String, ConfigEntityMonster> monsterConfigData = new HashMap<>();
     @Getter private static final Map<String, OpenConfigEntry> openConfigEntries = new HashMap<>();
     @Deprecated(forRemoval = true) @Getter private static final Map<String, ScenePointEntry> scenePointEntries = new HashMap<>();
     protected static final Map<String, AbilityData> abilityDataMap = new HashMap<>();
@@ -120,6 +129,8 @@ public class GameData {
     @Getter private static final Int2ObjectMap<TowerLevelData> towerLevelDataMap = new Int2ObjectOpenHashMap<>();
     @Getter private static final Int2ObjectMap<TowerScheduleData> towerScheduleDataMap = new Int2ObjectOpenHashMap<>();
     @Getter private static final Int2ObjectMap<TrialAvatarData> trialAvatarDataMap = new Int2ObjectOpenHashMap<>();
+    @Getter private static final Int2ObjectMap<TrialAvatarActivityData> trialAvatarActivityDataMap = new Int2ObjectOpenHashMap<>();
+    @Getter private static final Int2ObjectMap<TrialAvatarActivityDataData> trialAvatarActivityDataDataMap = new Int2ObjectOpenHashMap<>();
     @Getter private static final Int2ObjectMap<TrialAvatarTemplateData> trialAvatarTemplateDataMap = new Int2ObjectOpenHashMap<>();
     @Getter private static final Int2ObjectMap<TrialReliquaryData> trialReliquaryDataMap = new Int2ObjectOpenHashMap<>();
     @Getter private static final Int2ObjectMap<TriggerExcelConfigData> triggerExcelConfigDataMap = new Int2ObjectOpenHashMap<>();
@@ -146,6 +157,7 @@ public class GameData {
 
     // Custom community server resources
     @Getter private static final Int2ObjectMap<GadgetMapping> gadgetMappingMap = new Int2ObjectOpenHashMap<>();
+    @Getter private static final Int2ObjectMap<ActivityCondGroup> activityCondGroupMap = new Int2ObjectOpenHashMap<>();
     @Getter private static final Int2ObjectMap<GroupReplacementData> groupReplacements = new Int2ObjectOpenHashMap<>();
 
     // Cache
@@ -162,6 +174,10 @@ public class GameData {
     protected static Int2ObjectMap<IntSet> avatarSkillLevels = new Int2ObjectOpenHashMap<>();
     @Getter private static final Map<String, List<QuestData>> beginCondQuestMap = new HashMap<>(); // cache filled by QuestData
     @Getter private static final Map<Integer, Integer> questTalkMap = new HashMap<>();
+    @Getter private static final Int2ObjectMap<TrialAvatarCustomData> trialAvatarCustomData = new Int2ObjectOpenHashMap<>();
+    @Getter private static final Map<Integer, TrialAvatarActivityCustomData> trialAvatarActivityCustomData = new HashMap<>();
+    @Getter private static final Map<Integer, TrialAvatarActivityDataData> trialAvatarActivityDataCustomData = new HashMap<>();
+    @Getter private static final Int2IntMap trialAvatarIndexIdTrialActivityDataDataMap = new Int2IntOpenHashMap();
 
     // Getters with wrong names, remove later
     @Deprecated(forRemoval = true) public static Int2ObjectMap<CodexReliquaryData> getcodexReliquaryIdMap() {return codexReliquaryDataIdMap;}
@@ -269,6 +285,15 @@ public class GameData {
 
     public static Int2ObjectMap<Route> getSceneRoutes(int sceneId) {
         return sceneRouteData.computeIfAbsent(sceneId, k -> new Int2ObjectOpenHashMap<>());
+    }
+
+    @Nullable
+    public static TrialAvatarActivityDataData getTrialAvatarActivityDataByAvatarIndex(int trialAvatarIndexId){
+        // prefer custom data over official data
+        val dataId = trialAvatarIndexIdTrialActivityDataDataMap.get(trialAvatarIndexId);
+        val datamap = GameData.getTrialAvatarActivityDataCustomData().isEmpty() ? GameData.getTrialAvatarActivityDataDataMap()
+            : GameData.getTrialAvatarActivityDataCustomData();
+        return datamap.get(dataId);
     }
 
     @Nullable
