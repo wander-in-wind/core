@@ -261,6 +261,8 @@ public class World implements Iterable<Player> {
 
         val sceneData = GameData.getSceneDataMap().get(sceneId);
         if (dungeonData != null) {
+            teleportProps.teleportTo(dungeonData.getStartPosition())
+                .teleportRot(dungeonData.getStartRotation());
             teleportProps.enterType(EnterType.ENTER_TYPE_DUNGEON)
                 .enterReason(EnterReason.DungeonEnter);
         } else if (player.getSceneId() == sceneId) {
@@ -270,10 +272,15 @@ public class World implements Iterable<Player> {
             teleportProps.enterType(EnterType.ENTER_TYPE_SELF_HOME)
                 .enterReason(EnterReason.EnterHome);
         }
+
         return transferPlayerToScene(player, teleportProps.build());
     }
 
     public boolean transferPlayerToScene(Player player, TeleportProperties teleportProperties) {
+        // Check if the teleport properties are valid.
+        if (teleportProperties.getTeleportTo() == null)
+            teleportProperties.setTeleportTo(player.getPosition());
+
         // Call player teleport event.
         PlayerTeleportEvent event = new PlayerTeleportEvent(player, teleportProperties, player.getPosition());
         // Call event & check if it was canceled.

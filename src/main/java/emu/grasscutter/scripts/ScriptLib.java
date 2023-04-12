@@ -105,11 +105,11 @@ public class ScriptLib {
 				configId,gadgetState);
 		GameEntity entity = getSceneScriptManager().getScene().getEntityByConfigId(configId);
 
-		if (!(entity instanceof EntityGadget)) {
-			return 1;
-		}
+        if (!(entity instanceof EntityGadget gadget)) {
+            return 1;
+        }
 
-        ((EntityGadget) entity).updateState(gadgetState);
+        gadget.updateState(gadgetState);
         return 0;
 	}
 
@@ -117,11 +117,11 @@ public class ScriptLib {
 		logger.debug("[LUA] Call SetGroupGadgetStateByConfigId with {},{},{}",
 				groupId,configId,gadgetState);
 
-		val entity = getSceneScriptManager().getScene().getEntityByConfigId(configId, groupId);
-        if(!(entity instanceof EntityGadget)){
+        val entity = getSceneScriptManager().getScene().getEntityByConfigId(configId, groupId);
+        if(!(entity instanceof EntityGadget gadget)){
             return -1;
         }
-        ((EntityGadget) entity).updateState(gadgetState);
+        gadget.updateState(gadgetState);
 
 		return 0;
 	}
