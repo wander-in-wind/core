@@ -250,7 +250,7 @@ public class SceneScriptManager {
     public boolean refreshGroupSuite(int groupId, int suiteId) {
         var targetGroupInstance = getGroupInstanceById(groupId);
         if (targetGroupInstance == null) {
-            getGroupById(groupId); //Load the group, this ensures an instance is created and the if neccesary unloaded, but the suite data is stored
+            getGroupById(groupId); //Load the group, this ensures an instance is created and the if necessary unloaded, but the suite data is stored
             targetGroupInstance = getGroupInstanceById(groupId);
             Grasscutter.getLogger().debug("trying to regresh group suite {} in an unloaded and uncached group {} in scene {}", suiteId, groupId, getScene().getId());
         } else {

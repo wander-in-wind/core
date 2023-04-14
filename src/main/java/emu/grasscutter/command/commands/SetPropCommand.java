@@ -26,7 +26,8 @@ public final class SetPropCommand implements CommandHandler {
         UNLIMITED_ENERGY,
         SET_OPENSTATE,
         UNSET_OPENSTATE,
-        UNLOCK_MAP
+        UNLOCK_MAP,
+        IS_FLYABLE
     }
 
     static class Prop {
@@ -253,47 +254,5 @@ public final class SetPropCommand implements CommandHandler {
         targetPlayer.sendPacket(new PacketScenePointUnlockNotify(playerScene, targetPlayer.getUnlockedScenePoints(playerScene)));
         targetPlayer.sendPacket(new PacketSceneAreaUnlockNotify(playerScene, targetPlayer.getUnlockedSceneAreas(playerScene)));
         return true;
-    }
-
-    enum PseudoProp {
-        NONE,
-        WORLD_LEVEL,
-        TOWER_LEVEL,
-        BP_LEVEL,
-        GOD_MODE,
-        UNLIMITED_STAMINA,
-        UNLIMITED_ENERGY,
-        SET_OPENSTATE,
-        UNSET_OPENSTATE,
-        UNLOCK_MAP,
-        IS_FLYABLE
-    }
-
-    static class Prop {
-        String name;
-        PlayerProperty prop;
-        PseudoProp pseudoProp;
-
-        public Prop(PlayerProperty prop) {
-            this(prop.toString(), prop, PseudoProp.NONE);
-        }
-
-        public Prop(String name) {
-            this(name, PlayerProperty.PROP_NONE, PseudoProp.NONE);
-        }
-
-        public Prop(String name, PseudoProp pseudoProp) {
-            this(name, PlayerProperty.PROP_NONE, pseudoProp);
-        }
-
-        public Prop(String name, PlayerProperty prop) {
-            this(name, prop, PseudoProp.NONE);
-        }
-
-        public Prop(String name, PlayerProperty prop, PseudoProp pseudoProp) {
-            this.name = name;
-            this.prop = prop;
-            this.pseudoProp = pseudoProp;
-        }
     }
 }
