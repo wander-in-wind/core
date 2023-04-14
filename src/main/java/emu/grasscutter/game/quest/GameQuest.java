@@ -189,14 +189,12 @@ public class GameQuest {
             ));
         }
 
-        // hard coding to give amber
-        if(getQuestData().getSubId() == 35402){
-            getOwner().getInventory().addItem(1021, 1, ActionReason.QuestItem); // amber item id
-        }
+        // Give items for completing the quest.
+        this.getQuestData().getGainItems().forEach(item ->
+            this.getOwner().getInventory().addItem(item, ActionReason.QuestItem));
 
-        save();
-
-        Grasscutter.getLogger().debug("Quest {} is finished", subQuestId);
+        this.save();
+        Grasscutter.getLogger().debug("Quest {} was completed.", subQuestId);
     }
 
     //TODO
