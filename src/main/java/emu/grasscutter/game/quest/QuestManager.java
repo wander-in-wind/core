@@ -359,7 +359,8 @@ public class QuestManager extends BasePlayerManager {
     }
 
     public void triggerEvent(QuestContent condType, String paramStr, int... params) {
-        Grasscutter.getLogger().debug("Trigger Event {}, {}, {}", condType, paramStr, params);
+        if(condType!=QuestContent.QUEST_CONTENT_GAME_TIME_TICK)
+            Grasscutter.getLogger().debug("Trigger Event {}, {}, {}", condType, paramStr, params);
         List<GameMainQuest> checkMainQuests = this.getMainQuests().values().stream()
             .filter(i -> i.getState() != ParentQuestState.PARENT_QUEST_STATE_FINISHED)
             .toList();

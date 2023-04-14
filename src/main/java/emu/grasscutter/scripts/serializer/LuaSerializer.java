@@ -72,7 +72,7 @@ public class LuaSerializer implements Serializer {
                         map.put(String.valueOf(k),object);
                     }
                 } catch (Exception ex) {
-
+                    ex.printStackTrace();
                 }
             }
         } catch (Exception e) {
@@ -140,7 +140,7 @@ public class LuaSerializer implements Serializer {
     public <T> T serialize(Class<T> type, @Nullable Field field, LuaTable table) {
         T object = null;
 
-        if (type == List.class) {
+        if (type == List.class || type.isArray()) {
             try {
                 Class<?> listType = getListType(type, field);
                 return (T) serializeList(listType, table);

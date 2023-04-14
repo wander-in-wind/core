@@ -23,7 +23,7 @@ public final class CombineRspOuterClass {
      *NOBMIMNDGLA snootodo swapperoo 4
      * </pre>
      *
-     * <code>repeated .ItemParam total_return_item_list = 9;</code>
+     * <code>repeated .ItemParam total_return_item_list = 14;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> 
         getTotalReturnItemListList();
@@ -32,7 +32,7 @@ public final class CombineRspOuterClass {
      *NOBMIMNDGLA snootodo swapperoo 4
      * </pre>
      *
-     * <code>repeated .ItemParam total_return_item_list = 9;</code>
+     * <code>repeated .ItemParam total_return_item_list = 14;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getTotalReturnItemList(int index);
     /**
@@ -40,7 +40,7 @@ public final class CombineRspOuterClass {
      *NOBMIMNDGLA snootodo swapperoo 4
      * </pre>
      *
-     * <code>repeated .ItemParam total_return_item_list = 9;</code>
+     * <code>repeated .ItemParam total_return_item_list = 14;</code>
      */
     int getTotalReturnItemListCount();
     /**
@@ -48,7 +48,7 @@ public final class CombineRspOuterClass {
      *NOBMIMNDGLA snootodo swapperoo 4
      * </pre>
      *
-     * <code>repeated .ItemParam total_return_item_list = 9;</code>
+     * <code>repeated .ItemParam total_return_item_list = 14;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
         getTotalReturnItemListOrBuilderList();
@@ -57,7 +57,7 @@ public final class CombineRspOuterClass {
      *NOBMIMNDGLA snootodo swapperoo 4
      * </pre>
      *
-     * <code>repeated .ItemParam total_return_item_list = 9;</code>
+     * <code>repeated .ItemParam total_return_item_list = 14;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getTotalReturnItemListOrBuilder(
         int index);
@@ -161,7 +161,7 @@ public final class CombineRspOuterClass {
      *INKENHANDMB snootodo swapperoo 4
      * </pre>
      *
-     * <code>repeated .ItemParam result_item_list = 14;</code>
+     * <code>repeated .ItemParam result_item_list = 9;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> 
         getResultItemListList();
@@ -170,7 +170,7 @@ public final class CombineRspOuterClass {
      *INKENHANDMB snootodo swapperoo 4
      * </pre>
      *
-     * <code>repeated .ItemParam result_item_list = 14;</code>
+     * <code>repeated .ItemParam result_item_list = 9;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getResultItemList(int index);
     /**
@@ -178,7 +178,7 @@ public final class CombineRspOuterClass {
      *INKENHANDMB snootodo swapperoo 4
      * </pre>
      *
-     * <code>repeated .ItemParam result_item_list = 14;</code>
+     * <code>repeated .ItemParam result_item_list = 9;</code>
      */
     int getResultItemListCount();
     /**
@@ -186,7 +186,7 @@ public final class CombineRspOuterClass {
      *INKENHANDMB snootodo swapperoo 4
      * </pre>
      *
-     * <code>repeated .ItemParam result_item_list = 14;</code>
+     * <code>repeated .ItemParam result_item_list = 9;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
         getResultItemListOrBuilderList();
@@ -195,7 +195,7 @@ public final class CombineRspOuterClass {
      *INKENHANDMB snootodo swapperoo 4
      * </pre>
      *
-     * <code>repeated .ItemParam result_item_list = 14;</code>
+     * <code>repeated .ItemParam result_item_list = 9;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getResultItemListOrBuilder(
         int index);
@@ -332,11 +332,11 @@ public final class CombineRspOuterClass {
               break;
             }
             case 74: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                totalReturnItemList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>();
-                mutable_bitField0_ |= 0x00000001;
+              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
+                resultItemList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>();
+                mutable_bitField0_ |= 0x00000008;
               }
-              totalReturnItemList_.add(
+              resultItemList_.add(
                   input.readMessage(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.parser(), extensionRegistry));
               break;
             }
@@ -355,11 +355,11 @@ public final class CombineRspOuterClass {
               break;
             }
             case 114: {
-              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
-                resultItemList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>();
-                mutable_bitField0_ |= 0x00000008;
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                totalReturnItemList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>();
+                mutable_bitField0_ |= 0x00000001;
               }
-              resultItemList_.add(
+              totalReturnItemList_.add(
                   input.readMessage(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.parser(), extensionRegistry));
               break;
             }
@@ -384,14 +384,14 @@ public final class CombineRspOuterClass {
         if (((mutable_bitField0_ & 0x00000004) != 0)) {
           totalRandomItemList_ = java.util.Collections.unmodifiableList(totalRandomItemList_);
         }
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          totalReturnItemList_ = java.util.Collections.unmodifiableList(totalReturnItemList_);
+        if (((mutable_bitField0_ & 0x00000008) != 0)) {
+          resultItemList_ = java.util.Collections.unmodifiableList(resultItemList_);
         }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
           totalExtraItemList_ = java.util.Collections.unmodifiableList(totalExtraItemList_);
         }
-        if (((mutable_bitField0_ & 0x00000008) != 0)) {
-          resultItemList_ = java.util.Collections.unmodifiableList(resultItemList_);
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          totalReturnItemList_ = java.util.Collections.unmodifiableList(totalReturnItemList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -410,14 +410,14 @@ public final class CombineRspOuterClass {
               emu.grasscutter.net.proto.CombineRspOuterClass.CombineRsp.class, emu.grasscutter.net.proto.CombineRspOuterClass.CombineRsp.Builder.class);
     }
 
-    public static final int TOTAL_RETURN_ITEM_LIST_FIELD_NUMBER = 9;
+    public static final int TOTAL_RETURN_ITEM_LIST_FIELD_NUMBER = 14;
     private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> totalReturnItemList_;
     /**
      * <pre>
      *NOBMIMNDGLA snootodo swapperoo 4
      * </pre>
      *
-     * <code>repeated .ItemParam total_return_item_list = 9;</code>
+     * <code>repeated .ItemParam total_return_item_list = 14;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getTotalReturnItemListList() {
@@ -428,7 +428,7 @@ public final class CombineRspOuterClass {
      *NOBMIMNDGLA snootodo swapperoo 4
      * </pre>
      *
-     * <code>repeated .ItemParam total_return_item_list = 9;</code>
+     * <code>repeated .ItemParam total_return_item_list = 14;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
@@ -440,7 +440,7 @@ public final class CombineRspOuterClass {
      *NOBMIMNDGLA snootodo swapperoo 4
      * </pre>
      *
-     * <code>repeated .ItemParam total_return_item_list = 9;</code>
+     * <code>repeated .ItemParam total_return_item_list = 14;</code>
      */
     @java.lang.Override
     public int getTotalReturnItemListCount() {
@@ -451,7 +451,7 @@ public final class CombineRspOuterClass {
      *NOBMIMNDGLA snootodo swapperoo 4
      * </pre>
      *
-     * <code>repeated .ItemParam total_return_item_list = 9;</code>
+     * <code>repeated .ItemParam total_return_item_list = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getTotalReturnItemList(int index) {
@@ -462,7 +462,7 @@ public final class CombineRspOuterClass {
      *NOBMIMNDGLA snootodo swapperoo 4
      * </pre>
      *
-     * <code>repeated .ItemParam total_return_item_list = 9;</code>
+     * <code>repeated .ItemParam total_return_item_list = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getTotalReturnItemListOrBuilder(
@@ -601,14 +601,14 @@ public final class CombineRspOuterClass {
       return totalRandomItemList_.get(index);
     }
 
-    public static final int RESULT_ITEM_LIST_FIELD_NUMBER = 14;
+    public static final int RESULT_ITEM_LIST_FIELD_NUMBER = 9;
     private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> resultItemList_;
     /**
      * <pre>
      *INKENHANDMB snootodo swapperoo 4
      * </pre>
      *
-     * <code>repeated .ItemParam result_item_list = 14;</code>
+     * <code>repeated .ItemParam result_item_list = 9;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getResultItemListList() {
@@ -619,7 +619,7 @@ public final class CombineRspOuterClass {
      *INKENHANDMB snootodo swapperoo 4
      * </pre>
      *
-     * <code>repeated .ItemParam result_item_list = 14;</code>
+     * <code>repeated .ItemParam result_item_list = 9;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
@@ -631,7 +631,7 @@ public final class CombineRspOuterClass {
      *INKENHANDMB snootodo swapperoo 4
      * </pre>
      *
-     * <code>repeated .ItemParam result_item_list = 14;</code>
+     * <code>repeated .ItemParam result_item_list = 9;</code>
      */
     @java.lang.Override
     public int getResultItemListCount() {
@@ -642,7 +642,7 @@ public final class CombineRspOuterClass {
      *INKENHANDMB snootodo swapperoo 4
      * </pre>
      *
-     * <code>repeated .ItemParam result_item_list = 14;</code>
+     * <code>repeated .ItemParam result_item_list = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getResultItemList(int index) {
@@ -653,7 +653,7 @@ public final class CombineRspOuterClass {
      *INKENHANDMB snootodo swapperoo 4
      * </pre>
      *
-     * <code>repeated .ItemParam result_item_list = 14;</code>
+     * <code>repeated .ItemParam result_item_list = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getResultItemListOrBuilder(
@@ -763,8 +763,8 @@ public final class CombineRspOuterClass {
       if (retcode_ != 0) {
         output.writeInt32(7, retcode_);
       }
-      for (int i = 0; i < totalReturnItemList_.size(); i++) {
-        output.writeMessage(9, totalReturnItemList_.get(i));
+      for (int i = 0; i < resultItemList_.size(); i++) {
+        output.writeMessage(9, resultItemList_.get(i));
       }
       if (avatarGuid_ != 0L) {
         output.writeUInt64(10, avatarGuid_);
@@ -772,8 +772,8 @@ public final class CombineRspOuterClass {
       for (int i = 0; i < totalExtraItemList_.size(); i++) {
         output.writeMessage(13, totalExtraItemList_.get(i));
       }
-      for (int i = 0; i < resultItemList_.size(); i++) {
-        output.writeMessage(14, resultItemList_.get(i));
+      for (int i = 0; i < totalReturnItemList_.size(); i++) {
+        output.writeMessage(14, totalReturnItemList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -804,9 +804,9 @@ public final class CombineRspOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(7, retcode_);
       }
-      for (int i = 0; i < totalReturnItemList_.size(); i++) {
+      for (int i = 0; i < resultItemList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, totalReturnItemList_.get(i));
+          .computeMessageSize(9, resultItemList_.get(i));
       }
       if (avatarGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
@@ -816,9 +816,9 @@ public final class CombineRspOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(13, totalExtraItemList_.get(i));
       }
-      for (int i = 0; i < resultItemList_.size(); i++) {
+      for (int i = 0; i < totalReturnItemList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, resultItemList_.get(i));
+          .computeMessageSize(14, totalReturnItemList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1387,7 +1387,7 @@ public final class CombineRspOuterClass {
        *NOBMIMNDGLA snootodo swapperoo 4
        * </pre>
        *
-       * <code>repeated .ItemParam total_return_item_list = 9;</code>
+       * <code>repeated .ItemParam total_return_item_list = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getTotalReturnItemListList() {
         if (totalReturnItemListBuilder_ == null) {
@@ -1401,7 +1401,7 @@ public final class CombineRspOuterClass {
        *NOBMIMNDGLA snootodo swapperoo 4
        * </pre>
        *
-       * <code>repeated .ItemParam total_return_item_list = 9;</code>
+       * <code>repeated .ItemParam total_return_item_list = 14;</code>
        */
       public int getTotalReturnItemListCount() {
         if (totalReturnItemListBuilder_ == null) {
@@ -1415,7 +1415,7 @@ public final class CombineRspOuterClass {
        *NOBMIMNDGLA snootodo swapperoo 4
        * </pre>
        *
-       * <code>repeated .ItemParam total_return_item_list = 9;</code>
+       * <code>repeated .ItemParam total_return_item_list = 14;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getTotalReturnItemList(int index) {
         if (totalReturnItemListBuilder_ == null) {
@@ -1429,7 +1429,7 @@ public final class CombineRspOuterClass {
        *NOBMIMNDGLA snootodo swapperoo 4
        * </pre>
        *
-       * <code>repeated .ItemParam total_return_item_list = 9;</code>
+       * <code>repeated .ItemParam total_return_item_list = 14;</code>
        */
       public Builder setTotalReturnItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
@@ -1450,7 +1450,7 @@ public final class CombineRspOuterClass {
        *NOBMIMNDGLA snootodo swapperoo 4
        * </pre>
        *
-       * <code>repeated .ItemParam total_return_item_list = 9;</code>
+       * <code>repeated .ItemParam total_return_item_list = 14;</code>
        */
       public Builder setTotalReturnItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -1468,7 +1468,7 @@ public final class CombineRspOuterClass {
        *NOBMIMNDGLA snootodo swapperoo 4
        * </pre>
        *
-       * <code>repeated .ItemParam total_return_item_list = 9;</code>
+       * <code>repeated .ItemParam total_return_item_list = 14;</code>
        */
       public Builder addTotalReturnItemList(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
         if (totalReturnItemListBuilder_ == null) {
@@ -1488,7 +1488,7 @@ public final class CombineRspOuterClass {
        *NOBMIMNDGLA snootodo swapperoo 4
        * </pre>
        *
-       * <code>repeated .ItemParam total_return_item_list = 9;</code>
+       * <code>repeated .ItemParam total_return_item_list = 14;</code>
        */
       public Builder addTotalReturnItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
@@ -1509,7 +1509,7 @@ public final class CombineRspOuterClass {
        *NOBMIMNDGLA snootodo swapperoo 4
        * </pre>
        *
-       * <code>repeated .ItemParam total_return_item_list = 9;</code>
+       * <code>repeated .ItemParam total_return_item_list = 14;</code>
        */
       public Builder addTotalReturnItemList(
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -1527,7 +1527,7 @@ public final class CombineRspOuterClass {
        *NOBMIMNDGLA snootodo swapperoo 4
        * </pre>
        *
-       * <code>repeated .ItemParam total_return_item_list = 9;</code>
+       * <code>repeated .ItemParam total_return_item_list = 14;</code>
        */
       public Builder addTotalReturnItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -1545,7 +1545,7 @@ public final class CombineRspOuterClass {
        *NOBMIMNDGLA snootodo swapperoo 4
        * </pre>
        *
-       * <code>repeated .ItemParam total_return_item_list = 9;</code>
+       * <code>repeated .ItemParam total_return_item_list = 14;</code>
        */
       public Builder addAllTotalReturnItemList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> values) {
@@ -1564,7 +1564,7 @@ public final class CombineRspOuterClass {
        *NOBMIMNDGLA snootodo swapperoo 4
        * </pre>
        *
-       * <code>repeated .ItemParam total_return_item_list = 9;</code>
+       * <code>repeated .ItemParam total_return_item_list = 14;</code>
        */
       public Builder clearTotalReturnItemList() {
         if (totalReturnItemListBuilder_ == null) {
@@ -1581,7 +1581,7 @@ public final class CombineRspOuterClass {
        *NOBMIMNDGLA snootodo swapperoo 4
        * </pre>
        *
-       * <code>repeated .ItemParam total_return_item_list = 9;</code>
+       * <code>repeated .ItemParam total_return_item_list = 14;</code>
        */
       public Builder removeTotalReturnItemList(int index) {
         if (totalReturnItemListBuilder_ == null) {
@@ -1598,7 +1598,7 @@ public final class CombineRspOuterClass {
        *NOBMIMNDGLA snootodo swapperoo 4
        * </pre>
        *
-       * <code>repeated .ItemParam total_return_item_list = 9;</code>
+       * <code>repeated .ItemParam total_return_item_list = 14;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getTotalReturnItemListBuilder(
           int index) {
@@ -1609,7 +1609,7 @@ public final class CombineRspOuterClass {
        *NOBMIMNDGLA snootodo swapperoo 4
        * </pre>
        *
-       * <code>repeated .ItemParam total_return_item_list = 9;</code>
+       * <code>repeated .ItemParam total_return_item_list = 14;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getTotalReturnItemListOrBuilder(
           int index) {
@@ -1623,7 +1623,7 @@ public final class CombineRspOuterClass {
        *NOBMIMNDGLA snootodo swapperoo 4
        * </pre>
        *
-       * <code>repeated .ItemParam total_return_item_list = 9;</code>
+       * <code>repeated .ItemParam total_return_item_list = 14;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
            getTotalReturnItemListOrBuilderList() {
@@ -1638,7 +1638,7 @@ public final class CombineRspOuterClass {
        *NOBMIMNDGLA snootodo swapperoo 4
        * </pre>
        *
-       * <code>repeated .ItemParam total_return_item_list = 9;</code>
+       * <code>repeated .ItemParam total_return_item_list = 14;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addTotalReturnItemListBuilder() {
         return getTotalReturnItemListFieldBuilder().addBuilder(
@@ -1649,7 +1649,7 @@ public final class CombineRspOuterClass {
        *NOBMIMNDGLA snootodo swapperoo 4
        * </pre>
        *
-       * <code>repeated .ItemParam total_return_item_list = 9;</code>
+       * <code>repeated .ItemParam total_return_item_list = 14;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addTotalReturnItemListBuilder(
           int index) {
@@ -1661,7 +1661,7 @@ public final class CombineRspOuterClass {
        *NOBMIMNDGLA snootodo swapperoo 4
        * </pre>
        *
-       * <code>repeated .ItemParam total_return_item_list = 9;</code>
+       * <code>repeated .ItemParam total_return_item_list = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder> 
            getTotalReturnItemListBuilderList() {
@@ -2354,7 +2354,7 @@ public final class CombineRspOuterClass {
        *INKENHANDMB snootodo swapperoo 4
        * </pre>
        *
-       * <code>repeated .ItemParam result_item_list = 14;</code>
+       * <code>repeated .ItemParam result_item_list = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getResultItemListList() {
         if (resultItemListBuilder_ == null) {
@@ -2368,7 +2368,7 @@ public final class CombineRspOuterClass {
        *INKENHANDMB snootodo swapperoo 4
        * </pre>
        *
-       * <code>repeated .ItemParam result_item_list = 14;</code>
+       * <code>repeated .ItemParam result_item_list = 9;</code>
        */
       public int getResultItemListCount() {
         if (resultItemListBuilder_ == null) {
@@ -2382,7 +2382,7 @@ public final class CombineRspOuterClass {
        *INKENHANDMB snootodo swapperoo 4
        * </pre>
        *
-       * <code>repeated .ItemParam result_item_list = 14;</code>
+       * <code>repeated .ItemParam result_item_list = 9;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getResultItemList(int index) {
         if (resultItemListBuilder_ == null) {
@@ -2396,7 +2396,7 @@ public final class CombineRspOuterClass {
        *INKENHANDMB snootodo swapperoo 4
        * </pre>
        *
-       * <code>repeated .ItemParam result_item_list = 14;</code>
+       * <code>repeated .ItemParam result_item_list = 9;</code>
        */
       public Builder setResultItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
@@ -2417,7 +2417,7 @@ public final class CombineRspOuterClass {
        *INKENHANDMB snootodo swapperoo 4
        * </pre>
        *
-       * <code>repeated .ItemParam result_item_list = 14;</code>
+       * <code>repeated .ItemParam result_item_list = 9;</code>
        */
       public Builder setResultItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -2435,7 +2435,7 @@ public final class CombineRspOuterClass {
        *INKENHANDMB snootodo swapperoo 4
        * </pre>
        *
-       * <code>repeated .ItemParam result_item_list = 14;</code>
+       * <code>repeated .ItemParam result_item_list = 9;</code>
        */
       public Builder addResultItemList(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
         if (resultItemListBuilder_ == null) {
@@ -2455,7 +2455,7 @@ public final class CombineRspOuterClass {
        *INKENHANDMB snootodo swapperoo 4
        * </pre>
        *
-       * <code>repeated .ItemParam result_item_list = 14;</code>
+       * <code>repeated .ItemParam result_item_list = 9;</code>
        */
       public Builder addResultItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
@@ -2476,7 +2476,7 @@ public final class CombineRspOuterClass {
        *INKENHANDMB snootodo swapperoo 4
        * </pre>
        *
-       * <code>repeated .ItemParam result_item_list = 14;</code>
+       * <code>repeated .ItemParam result_item_list = 9;</code>
        */
       public Builder addResultItemList(
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -2494,7 +2494,7 @@ public final class CombineRspOuterClass {
        *INKENHANDMB snootodo swapperoo 4
        * </pre>
        *
-       * <code>repeated .ItemParam result_item_list = 14;</code>
+       * <code>repeated .ItemParam result_item_list = 9;</code>
        */
       public Builder addResultItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -2512,7 +2512,7 @@ public final class CombineRspOuterClass {
        *INKENHANDMB snootodo swapperoo 4
        * </pre>
        *
-       * <code>repeated .ItemParam result_item_list = 14;</code>
+       * <code>repeated .ItemParam result_item_list = 9;</code>
        */
       public Builder addAllResultItemList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> values) {
@@ -2531,7 +2531,7 @@ public final class CombineRspOuterClass {
        *INKENHANDMB snootodo swapperoo 4
        * </pre>
        *
-       * <code>repeated .ItemParam result_item_list = 14;</code>
+       * <code>repeated .ItemParam result_item_list = 9;</code>
        */
       public Builder clearResultItemList() {
         if (resultItemListBuilder_ == null) {
@@ -2548,7 +2548,7 @@ public final class CombineRspOuterClass {
        *INKENHANDMB snootodo swapperoo 4
        * </pre>
        *
-       * <code>repeated .ItemParam result_item_list = 14;</code>
+       * <code>repeated .ItemParam result_item_list = 9;</code>
        */
       public Builder removeResultItemList(int index) {
         if (resultItemListBuilder_ == null) {
@@ -2565,7 +2565,7 @@ public final class CombineRspOuterClass {
        *INKENHANDMB snootodo swapperoo 4
        * </pre>
        *
-       * <code>repeated .ItemParam result_item_list = 14;</code>
+       * <code>repeated .ItemParam result_item_list = 9;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getResultItemListBuilder(
           int index) {
@@ -2576,7 +2576,7 @@ public final class CombineRspOuterClass {
        *INKENHANDMB snootodo swapperoo 4
        * </pre>
        *
-       * <code>repeated .ItemParam result_item_list = 14;</code>
+       * <code>repeated .ItemParam result_item_list = 9;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getResultItemListOrBuilder(
           int index) {
@@ -2590,7 +2590,7 @@ public final class CombineRspOuterClass {
        *INKENHANDMB snootodo swapperoo 4
        * </pre>
        *
-       * <code>repeated .ItemParam result_item_list = 14;</code>
+       * <code>repeated .ItemParam result_item_list = 9;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
            getResultItemListOrBuilderList() {
@@ -2605,7 +2605,7 @@ public final class CombineRspOuterClass {
        *INKENHANDMB snootodo swapperoo 4
        * </pre>
        *
-       * <code>repeated .ItemParam result_item_list = 14;</code>
+       * <code>repeated .ItemParam result_item_list = 9;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addResultItemListBuilder() {
         return getResultItemListFieldBuilder().addBuilder(
@@ -2616,7 +2616,7 @@ public final class CombineRspOuterClass {
        *INKENHANDMB snootodo swapperoo 4
        * </pre>
        *
-       * <code>repeated .ItemParam result_item_list = 14;</code>
+       * <code>repeated .ItemParam result_item_list = 9;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addResultItemListBuilder(
           int index) {
@@ -2628,7 +2628,7 @@ public final class CombineRspOuterClass {
        *INKENHANDMB snootodo swapperoo 4
        * </pre>
        *
-       * <code>repeated .ItemParam result_item_list = 14;</code>
+       * <code>repeated .ItemParam result_item_list = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder> 
            getResultItemListBuilderList() {
@@ -3049,11 +3049,11 @@ public final class CombineRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\020CombineRsp.proto\032\017ItemParam.proto\"\252\002\n\n" +
-      "CombineRsp\022*\n\026total_return_item_list\030\t \003" +
+      "CombineRsp\022*\n\026total_return_item_list\030\016 \003" +
       "(\0132\n.ItemParam\022)\n\025total_extra_item_list\030" +
       "\r \003(\0132\n.ItemParam\022\023\n\013avatar_guid\030\n \001(\004\022*" +
       "\n\026total_random_item_list\030\006 \003(\0132\n.ItemPar" +
-      "am\022$\n\020result_item_list\030\016 \003(\0132\n.ItemParam" +
+      "am\022$\n\020result_item_list\030\t \003(\0132\n.ItemParam" +
       "\022\"\n\016cost_item_list\030\005 \003(\0132\n.ItemParam\022\025\n\r" +
       "combine_count\030\001 \001(\r\022\017\n\007retcode\030\007 \001(\005\022\022\n\n" +
       "combine_id\030\002 \001(\rB\033\n\031emu.grasscutter.net." +
