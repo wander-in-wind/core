@@ -270,6 +270,8 @@ public class Avatar {
 
         // Set skill depot
         setSkillDepotData(skillDepot, true);
+        this.recalcStats(true);
+
         return true;
     }
 

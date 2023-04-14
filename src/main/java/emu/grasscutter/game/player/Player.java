@@ -298,6 +298,7 @@ public class Player {
     // On player creation
     public Player(GameSession session) {
         this();
+
         this.account = session.getAccount();
         this.accountId = this.getAccount().getId();
         this.session = session;
@@ -306,16 +307,11 @@ public class Player {
         this.teamManager = new TeamManager(this);
         this.birthday = new PlayerBirthday();
         this.codex = new PlayerCodex(this);
-        this.setProperty(PlayerProperty.PROP_PLAYER_LEVEL, 1, false);
-        this.setProperty(PlayerProperty.PROP_IS_SPRING_AUTO_USE, 1, false);
-        this.setProperty(PlayerProperty.PROP_SPRING_AUTO_USE_PERCENT, 50, false);
-        this.setProperty(PlayerProperty.PROP_IS_FLYABLE, 1, false);
-        this.setProperty(PlayerProperty.PROP_IS_TRANSFERABLE, 1, false);
-        this.setProperty(PlayerProperty.PROP_MAX_STAMINA, 24000, false);
-        this.setProperty(PlayerProperty.PROP_CUR_PERSIST_STAMINA, 24000, false);
-        this.setProperty(PlayerProperty.PROP_PLAYER_RESIN, 160, false);
+
+        this.applyProperties();
         this.getFlyCloakList().add(140001);
         this.getNameCardList().add(210001);
+
         this.messageHandler = null;
         this.mapMarksManager = new MapMarksManager(this);
         this.staminaManager = new StaminaManager(this);
@@ -327,7 +323,7 @@ public class Player {
         this.progressManager = new PlayerProgressManager(this);
         this.furnitureManager = new FurnitureManager(this);
         this.cookingManager = new CookingManager(this);
-        this.cookingCompoundManager=new CookingCompoundManager(this);
+        this.cookingCompoundManager = new CookingCompoundManager(this);
         this.satiationManager = new SatiationManager(this);
     }
 
@@ -1298,7 +1294,7 @@ public class Player {
 
         // Quest tick handling
         getQuestManager().onTick();
-        
+
         // Satiation
         this.getSatiationManager().reduceSatiation();
 
