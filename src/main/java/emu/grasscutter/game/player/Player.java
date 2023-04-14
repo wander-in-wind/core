@@ -516,6 +516,40 @@ public class Player {
         return this.setProperty(PlayerProperty.PROP_PLAYER_FORGE_POINT, value);
     }
 
+    /**
+     * Applies the properties to the player.
+     */
+    private void applyProperties() {
+        var withQuesting = GAME_OPTIONS.questing;
+
+        this.setOrFetch(PlayerProperty.PROP_PLAYER_LEVEL, 1);
+        this.setOrFetch(PlayerProperty.PROP_IS_SPRING_AUTO_USE, 1);
+        this.setOrFetch(PlayerProperty.PROP_SPRING_AUTO_USE_PERCENT, 50);
+        this.setOrFetch(PlayerProperty.PROP_IS_FLYABLE,
+            withQuesting ? 0 : 1);
+        this.setOrFetch(PlayerProperty.PROP_IS_TRANSFERABLE, 1);
+        this.setOrFetch(PlayerProperty.PROP_MAX_STAMINA,
+            withQuesting ? 10000 : 24000);
+        this.setOrFetch(PlayerProperty.PROP_PLAYER_RESIN, 160);
+
+        // The player's current stamina is always their max stamina.
+        this.setProperty(PlayerProperty.PROP_CUR_PERSIST_STAMINA,
+            this.getProperty(PlayerProperty.PROP_MAX_STAMINA));
+    }
+
+    /**
+     * Applies a property to the player if it doesn't exist in the database.
+     *
+     * @param property The property to apply.
+     * @param defaultValue The value to apply if the property doesn't exist.
+     */
+    private void setOrFetch(PlayerProperty property, int defaultValue) {
+        var exists = this.properties.containsKey(property.getId());
+        if (exists) exists = this.getProperty(property) != 0;
+        this.setProperty(property, exists ? this.getProperty(property)
+            : defaultValue, false);
+    }
+
     public int getPrimogems() {
         return this.getProperty(PlayerProperty.PROP_PLAYER_HCOIN);
     }
