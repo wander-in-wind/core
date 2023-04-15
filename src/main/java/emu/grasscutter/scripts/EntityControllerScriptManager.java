@@ -20,29 +20,28 @@ public class EntityControllerScriptManager {
         cacheGadgetControllers();
     }
 
-    private static void cacheGadgetControllers(){
-        try {
-            Files.newDirectoryStream(getScriptPath("Gadget/"), "*.lua").forEach(path -> {
+    private static void cacheGadgetControllers() {
+        try (var stream = Files.newDirectoryStream(getScriptPath("Gadget/"), "*.lua")) {
+            stream.forEach(path -> {
                 val fileName = path.getFileName().toString();
+                if (!fileName.endsWith(".lua")) return;
 
-                if(!fileName.endsWith(".lua")) return;
-
-                val controllerName = fileName.substring(0, fileName.length()-4);
-                CompiledScript cs = ScriptLoader.getScript("Gadget/"+fileName);
-                Bindings bindings = ScriptLoader.getEngine().createBindings();
+                val controllerName = fileName.substring(0, fileName.length() - 4);
+                var cs = ScriptLoader.getScript("Gadget/" + fileName);
+                var bindings = ScriptLoader.getEngine().createBindings();
                 if (cs == null) return;
 
-                try{
+                try {
                     cs.eval(bindings);
                     gadgetController.put(controllerName, new EntityController(cs, bindings));
-                } catch (Throwable e){
-                    Grasscutter.getLogger().error("Error while loading gadget controller: {}", fileName);
+                } catch (Throwable e) {
+                    Grasscutter.getLogger()
+                        .error("Error while loading gadget controller: {}.", fileName);
                 }
             });
-
-            Grasscutter.getLogger().info("Loaded {} gadget controllers", gadgetController.size());
+            Grasscutter.getLogger().debug("Loaded {} gadget controllers", gadgetController.size());
         } catch (IOException e) {
-            Grasscutter.getLogger().error("Error loading gadget controller luas");
+            Grasscutter.getLogger().error("Error loading gadget controller Lua scripts.");
         }
     }
 
