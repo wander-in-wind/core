@@ -1,5 +1,8 @@
 package emu.grasscutter.game.player;
 
+import static emu.grasscutter.config.Configuration.GAME_OPTIONS;
+import static emu.grasscutter.scripts.constants.EventType.EVENT_UNLOCK_TRANS_POINT;
+
 import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.binout.ScenePointEntry;
 import emu.grasscutter.data.excels.OpenStateData;
@@ -43,14 +46,11 @@ public class PlayerProgressManager extends BasePlayerDataManager {
         // Add statue quests if necessary.
         this.addStatueQuestsOnLogin();
 
-        // Auto-unlock the first statue and map area, until we figure out how to make
-        // that particular statue interactable.
-        this.player.getUnlockedScenePoints(3).add(7);
-        this.player.getUnlockedSceneAreas(3).add(1);
-
-        // add replacement costumes if necessary
-        this.addReplaceCostumes();
-
+        if (!GAME_OPTIONS.questing) {
+            // Auto-unlock the first statue and map area.
+            this.player.getUnlockedScenePoints(3).add(7);
+            this.player.getUnlockedSceneAreas(3).add(1);
+        }
     }
 
     /******************************************************************************************************************
