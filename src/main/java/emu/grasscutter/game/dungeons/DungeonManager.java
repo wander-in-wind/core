@@ -59,7 +59,6 @@ public class DungeonManager {
         this.dungeonData = dungeonData;
         this.passConfigData = GameData.getDungeonPassConfigDataMap().get(dungeonData.getPassCond());
         this.finishedConditions = new int[passConfigData.getConds().size()];
-        this.scene.setDungeonManager(this);
     }
 
     public void triggerEvent(DungeonPassConditionType conditionType, int... params) {
