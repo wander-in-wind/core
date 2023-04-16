@@ -2,8 +2,8 @@ package emu.grasscutter.game.entity;
 
 import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.binout.AbilityData;
-import emu.grasscutter.data.binout.ConfigGadget;
-import emu.grasscutter.data.binout.ConfigGadgetAbility;
+import emu.grasscutter.data.binout.config.ConfigEntityGadget;
+import emu.grasscutter.data.binout.config.fields.ConfigAbilityData;
 import emu.grasscutter.data.excels.GadgetData;
 import emu.grasscutter.game.entity.gadget.*;
 import emu.grasscutter.game.entity.gadget.platform.BaseRoute;
@@ -43,8 +43,6 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-import java.util.Optional;
-
 import javax.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.List;
@@ -66,7 +64,7 @@ public class EntityGadget extends EntityBaseGadget {
     private final Int2FloatMap fightProperties = new Int2FloatOpenHashMap();
     @Getter @Setter private SceneGadget metaGadget;
     @Nullable @Getter
-    private ConfigGadget configGadget;
+    private ConfigEntityGadget configGadget;
     @Getter @Setter private BaseRoute routeConfig;
 
     @Getter @Setter private int stopValue = 0; //Controller related, inited to zero
@@ -99,17 +97,24 @@ public class EntityGadget extends EntityBaseGadget {
             setEntityController(EntityControllerScriptManager.getGadgetController(controllerName));
         }
 
-        //Add abilities
-        ConfigGadget config = GameData.getGadgetConfigData().get(gadgetData.getJsonName());
-        if(config != null && config.abilities != null) {
-            for (ConfigGadgetAbility ability : config.abilities) {
-                AbilityData data =  GameData.getAbilityData(ability.getAbilityName());
-                if(data != null)
-                    scene.getWorld().getHost().getAbilityManager().addAbilityToEntity(
-                        this, data, ability.getAbilityID());
+        addConfigAbilities();
+    }
+
+    private void addConfigAbilities(){
+        if(this.configGadget != null && this.configGadget.getAbilities() != null) {
+            for (var ability : this.configGadget.getAbilities()) {
+                addConfigAbility(ability);
             }
         }
     }
+    private void addConfigAbility(ConfigAbilityData abilityData){
+
+        AbilityData data =  GameData.getAbilityData(abilityData.getAbilityName());
+        if(data != null)
+            getScene().getWorld().getHost().getAbilityManager().addAbilityToEntity(
+                this, data, abilityData.getAbilityID());
+    }
+
 
     public void setState(int state) {
         this.state = state;
@@ -126,7 +131,7 @@ public class EntityGadget extends EntityBaseGadget {
         this.setState(state);
         ticksSinceChange = getScene().getSceneTimeSeconds();
         this.getScene().broadcastPacket(new PacketGadgetStateNotify(this, state));
-        getScene().getScriptManager().callEvent(new ScriptArgs(EventType.EVENT_GADGET_STATE_CHANGE, state, this.getConfigId()));
+        getScene().getScriptManager().callEvent(new ScriptArgs(this.getGroupId(), EventType.EVENT_GADGET_STATE_CHANGE, state, this.getConfigId()));
     }
 
     @Deprecated(forRemoval = true) // Dont use!
@@ -167,7 +172,7 @@ public class EntityGadget extends EntityBaseGadget {
     @Override
     public void onCreate() {
         // Lua event
-        getScene().getScriptManager().callEvent(new ScriptArgs(EventType.EVENT_GADGET_CREATE, this.getConfigId()));
+        getScene().getScriptManager().callEvent(new ScriptArgs(this.getGroupId(), EventType.EVENT_GADGET_CREATE, this.getConfigId()));
     }
 
     @Override
@@ -189,7 +194,7 @@ public class EntityGadget extends EntityBaseGadget {
         if (getScene().getChallenge() != null) {
             getScene().getChallenge().onGadgetDeath(this);
         }
-        getScene().getScriptManager().callEvent(new ScriptArgs(EventType.EVENT_ANY_GADGET_DIE, this.getConfigId()));
+        getScene().getScriptManager().callEvent(new ScriptArgs(this.getGroupId(), EventType.EVENT_ANY_GADGET_DIE, this.getConfigId()));
 
         SceneGroupInstance groupInstance = getScene().getScriptManager().getCachedGroupInstanceById(this.getGroupId());
         if(groupInstance != null && metaGadget != null)
