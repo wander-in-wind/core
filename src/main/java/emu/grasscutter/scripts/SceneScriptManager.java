@@ -193,6 +193,9 @@ public class SceneScriptManager {
         //}
     }
     public int refreshGroup(SceneGroupInstance groupInstance, int suiteIndex, boolean excludePrevSuite) {
+        return refreshGroup(groupInstance, suiteIndex, excludePrevSuite, null);
+    }
+    public int refreshGroup(SceneGroupInstance groupInstance, int suiteIndex, boolean excludePrevSuite, List<GameEntity> entitiesAdded) {
         SceneGroup group = groupInstance.getLuaGroup();
         if(suiteIndex == 0) {
             if(excludePrevSuite) {
@@ -232,7 +235,7 @@ public class SceneScriptManager {
 			removeGroupSuite(group, prevSuiteData);
 		} //Remove old group suite
 
-		addGroupSuite(groupInstance, suiteData);
+		addGroupSuite(groupInstance, suiteData, entitiesAdded);
 
         //Refesh variables here
         group.variables.forEach(variable -> {
@@ -568,6 +571,9 @@ public class SceneScriptManager {
     }
 
     public void addGroupSuite(SceneGroupInstance groupInstance, SceneSuite suite) {
+        addGroupSuite(groupInstance, suite, null);
+    }
+    public void addGroupSuite(SceneGroupInstance groupInstance, SceneSuite suite, List<GameEntity> entities) {
         // we added trigger first
         registerTrigger(suite.sceneTriggers);
 
@@ -575,7 +581,10 @@ public class SceneScriptManager {
         var toCreate = new ArrayList<GameEntity>();
         toCreate.addAll(getGadgetsInGroupSuite(groupInstance, suite));
         toCreate.addAll(getMonstersInGroupSuite(groupInstance, suite));
-        addEntities(toCreate);
+        if(entities != null)
+            toCreate.forEach(entities::add);
+        else
+            addEntities(toCreate);
 
         registerRegionInGroupSuite(group, suite);
     }

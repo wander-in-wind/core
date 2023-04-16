@@ -393,7 +393,9 @@ public class Scene {
         }
         if (this.getScriptManager().isInit()) {
             //this.checkBlocks();
-            checkGroups();
+            if (tickCount % 4 == 0) {
+                checkGroups();
+            }
         } else {
             // TEMPORARY
             this.checkSpawns();
@@ -639,6 +641,11 @@ public class Scene {
     }
 
     public synchronized void checkGroups() {
+        var playerMoved = this.players.stream().filter(p -> p.getLastCheckedPosition() == null || !p.getLastCheckedPosition().equal2d(p.getPosition())).toList();
+        if(playerMoved.isEmpty()) return;
+
+        playerMoved.forEach(p -> p.setLastCheckedPosition(p.getPosition().clone()));
+
         Set<Integer> visible = this.players.stream()
             .map(player -> this.getPlayerActiveGroups(player))
             .flatMap(Collection::stream)
@@ -758,6 +765,7 @@ public class Scene {
         // Spawn gadgets AFTER triggers are added
         // TODO
         var entities = new ArrayList<GameEntity>();
+        var entitiesBorn = new ArrayList<GameEntity>();
         for (SceneGroup group : groups) {
             if(this.loadedGroups.contains(group)) continue;
 
@@ -783,11 +791,12 @@ public class Scene {
 
             // Load suites
             //int suite = group.findInitSuiteIndex(0);
-            this.getScriptManager().refreshGroup(groupInstance, 0, false); //This is what the official server does
+            this.getScriptManager().refreshGroup(groupInstance, 0, false, entitiesBorn); //This is what the official server does
 
             this.loadedGroups.add(group);
         }
 
+        scriptManager.addEntities(entitiesBorn);
         scriptManager.meetEntities(entities);
         groups.forEach(g -> scriptManager.callEvent(new ScriptArgs(EventType.EVENT_GROUP_LOAD, g.id)));
         Grasscutter.getLogger().info("Scene {} loaded {} group(s)", this.getId(), groups.size());
