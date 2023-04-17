@@ -278,6 +278,17 @@ public class Scene {
         addEntities(entities, VisionType.VISION_TYPE_BORN);
     }
 
+    private static <T> List<List<T>> chopped(List<T> list, final int L) {
+        List<List<T>> parts = new ArrayList<List<T>>();
+        final int N = list.size();
+        for (int i = 0; i < N; i += L) {
+            parts.add(new ArrayList<T>(
+                list.subList(i, Math.min(N, i + L)))
+            );
+        }
+        return parts;
+    }
+
     public synchronized void addEntities(Collection<? extends GameEntity> entities, VisionType visionType) {
         if (entities == null || entities.isEmpty()) {
             return;
@@ -286,7 +297,9 @@ public class Scene {
             this.addEntityDirectly(entity);
         }
 
-        this.broadcastPacket(new PacketSceneEntityAppearNotify(entities, visionType));
+        for(val l : chopped(new ArrayList<>(entities), 100)) {
+            this.broadcastPacket(new PacketSceneEntityAppearNotify(l, visionType));
+        }
     }
 
     private GameEntity removeEntityDirectly(GameEntity entity) {
@@ -400,7 +413,7 @@ public class Scene {
         }
         if (this.getScriptManager().isInit()) {
             //this.checkBlocks();
-            if (tickCount % 4 == 0) {
+            if (tickCount % 2 == 0) {
                 checkGroups();
             }
         } else {
@@ -821,8 +834,8 @@ public class Scene {
             this.loadedGroups.add(group);
         }
 
-        scriptManager.addEntities(entitiesBorn);
         scriptManager.meetEntities(entities);
+        scriptManager.addEntities(entitiesBorn);
         groups.forEach(g -> scriptManager.callEvent(new ScriptArgs(g.id, EventType.EVENT_GROUP_LOAD, g.id)));
         Grasscutter.getLogger().info("Scene {} loaded {} group(s)", this.getId(), groups.size());
     }

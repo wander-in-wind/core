@@ -399,7 +399,7 @@ public class SceneScriptManager {
 
         //Find if the scene entities are already generated, if not generate it
         if(Grasscutter.getConfig().server.game.cacheSceneEntitiesEveryRun || runForFirstTime) {
-            List<Map<GridPosition, Set<Integer>>> groupPositions = new ArrayList<>();
+            List<HashMap<GridPosition, Set<Integer>>> groupPositions = new ArrayList<>();
             for(int i = 0; i < 6; i++) groupPositions.add(new HashMap<>());
 
             var visionOptions = Grasscutter.getConfig().server.game.visionOptions;
