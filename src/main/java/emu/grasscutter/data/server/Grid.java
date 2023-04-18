@@ -1,49 +1,36 @@
 package emu.grasscutter.data.server;
 
 import java.util.*;
+import java.util.Map.Entry;
 
 import emu.grasscutter.Grasscutter;
+import emu.grasscutter.scripts.SceneIndexManager;
 import emu.grasscutter.utils.GridPosition;
 import emu.grasscutter.utils.Position;
+import it.unimi.dsi.fastutil.Pair;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
+
+import com.github.davidmoten.rtreemulti.RTree;
+import com.github.davidmoten.rtreemulti.geometry.Geometry;
 import lombok.val;
 
 public class Grid {
     public Map<GridPosition, Set<Integer>> grid;
 
-    public Int2ObjectMap<Int2ObjectMap<Set<Integer>>> gridOptimized;
+    public transient RTree<Entry<GridPosition, Set<Integer>>, Geometry> gridOptimized = null;
 
-    private HashSet<Integer> nearbyGroups = new HashSet<>(100);
+    private transient HashSet<Integer> nearbyGroups = new HashSet<>(100);
 
     private void Optimize() {
         if(gridOptimized == null) {
-            gridOptimized = new Int2ObjectOpenHashMap<>();
+            List<Entry<GridPosition, Set<Integer>>> gridValues = new ArrayList<>();
             grid.forEach((k, v) -> {
-                int x = k.getX() & 0xFFFF;
-                int z = k.getZ() & 0xFFFF;
-                if(!gridOptimized.containsKey(x)) {
-                    gridOptimized.put(x, new Int2ObjectOpenHashMap<>());
-                    gridOptimized.get(x).put(z, v);
-                } else {
-                    val zG = gridOptimized.get(x);
-                    if(!zG.containsKey(z)) {
-                        zG.put(z, v);
-                    } else {
-                        zG.get(z).addAll(v);
-                    }
-                }
+                gridValues.add(new AbstractMap.SimpleEntry<>(k, v));
             });
+            gridOptimized = SceneIndexManager.buildIndex(2, gridValues, entry -> entry.getKey().toPoint());
         }
-    }
 
-    public Set<Integer> GetGroup(GridPosition pos) {
-        int x = pos.getX() & 0xFFFF;
-        int z = pos.getZ() & 0xFFFF;
-        if(!gridOptimized.containsKey(x)) return new HashSet<>();
-        val xG = gridOptimized.get(x);
-        if(!xG.containsKey(z)) return new HashSet<>();
-        return xG.get(z);
     }
 
     public Set<Integer> getNearbyGroups(int vision_level, Position position) {
@@ -56,19 +43,18 @@ public class Grid {
         GridPosition pos = new GridPosition(position, width);
 
         nearbyGroups.clear();
-        //construct a nearby pisition list, add 1 more because a player can be in an edge case, this should not affect much the loading
-        for(int x = 0; x < vision_range_grid + 1; x++) {
-            for(int z = 0; z < vision_range_grid + 1; z++) {
-                nearbyGroups.addAll(GetGroup(pos.addClone( x,  z)));
-                nearbyGroups.addAll(GetGroup(pos.addClone(-x,  z)));
-                nearbyGroups.addAll(GetGroup(pos.addClone( x, -z)));
-                nearbyGroups.addAll(GetGroup(pos.addClone(-x, -z)));
-                //nearbyGroups.addAll(grid.getOrDefault(pos.addClone( x,  z), new HashSet<>()));
-                //nearbyGroups.addAll(grid.getOrDefault(pos.addClone(-x,  z), new HashSet<>()));
-                //nearbyGroups.addAll(grid.getOrDefault(pos.addClone( x, -z), new HashSet<>()));
-                //nearbyGroups.addAll(grid.getOrDefault(pos.addClone(-x, -z), new HashSet<>()));
-            }
-        }
+        //construct a nearby position list, add 1 more because a player can be in an edge case, this should not affect much the loading
+        //for(int x = 0; x < vision_range_grid + 1; x++) {
+        //    for(int z = 0; z < vision_range_grid + 1; z++) {
+        //        //nearbyGroups.addAll(grid.getOrDefault(pos.addClone( x,  z), new HashSet<>()));
+        //        //nearbyGroups.addAll(grid.getOrDefault(pos.addClone(-x,  z), new HashSet<>()));
+        //        //nearbyGroups.addAll(grid.getOrDefault(pos.addClone( x, -z), new HashSet<>()));
+        //        //nearbyGroups.addAll(grid.getOrDefault(pos.addClone(-x, -z), new HashSet<>()));
+        //    }
+        //}
+
+        //Optimized version
+        SceneIndexManager.queryNeighbors(gridOptimized, pos.toDoubleArray(), vision_range_grid + 1).forEach(e -> nearbyGroups.addAll(e.getValue()));
 
         return nearbyGroups;
     }

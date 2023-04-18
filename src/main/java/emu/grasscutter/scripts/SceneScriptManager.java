@@ -390,16 +390,16 @@ public class SceneScriptManager {
 
     public List<Grid> getGroupGrids() {
         int sceneId = scene.getId();
-        if (groupGridsCache.containsKey(sceneId)) {
+        if (groupGridsCache.containsKey(sceneId) && groupGridsCache.get(sceneId) != null) {
             Grasscutter.getLogger().debug("Hit cache for scene {}",sceneId);
             return groupGridsCache.get(sceneId);
         } else {
-            var path = FileUtils.getCachePath("Grids/scene" + sceneId + "_grid.json");
+            var path = FileUtils.getCachePath("scene" + sceneId + "_grid.json");
             if (path.toFile().isFile() && !Grasscutter.config.server.game.cacheSceneEntitiesEveryRun) {
                 try {
                     var groupGrids = JsonUtils.loadToList(path, Grid.class);
                     groupGridsCache.put(sceneId, groupGrids);
-                    return groupGrids;
+                    if(groupGrids != null) return groupGrids;
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
