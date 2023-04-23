@@ -2,6 +2,7 @@ package emu.grasscutter.game.ability;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.ThreadPoolExecutor;
@@ -9,6 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 import javax.xml.crypto.Data;
 
+import lombok.val;
 import org.reflections.Reflections;
 
 import com.google.protobuf.InvalidProtocolBufferException;
@@ -165,6 +167,12 @@ public final class AbilityManager extends BasePlayerManager {
         this.abilityInvulnerable = false;
     }
 
+    private boolean checkAbility(Ability ability, int hash, GameEntity entity, int instancedAbilityId){
+        val abilityName = ability.getData().abilityName;
+        val entityInstanceName = entity.getInstanceToName().get(instancedAbilityId);
+        return ability.getHash() == hash || abilityName!=null && entityInstanceName != null && abilityName.equals(entityInstanceName);
+    }
+
     private void handleInvoke(AbilityInvokeEntry invoke) {
         GameEntity entity = this.player.getScene().getEntityById(invoke.getEntityId());
         if (entity == null) {
@@ -192,11 +200,12 @@ public final class AbilityManager extends BasePlayerManager {
             return;
         }
 
-        var stream = entity.getAbilities().values().stream().filter(a -> a.getHash() == hash || a.getData().abilityName == entity.getInstanceToName().get(head.getInstancedAbilityId()));
-        stream.forEach(ability -> {
-            AbilityModifierAction action = ability.getData().localIdToAction.get(head.getLocalId());
-            if(action != null) ability.getManager().executeAction(ability, action);
-        });
+        entity.getAbilities().values().stream()
+            .filter(a -> checkAbility(a, hash, entity, head.getInstancedAbilityId()))
+            .forEach(ability -> {
+                AbilityModifierAction action = ability.getData().localIdToAction.get(head.getLocalId());
+                if (action != null) ability.getManager().executeAction(ability, action);
+            });
     }
 
     private void handleOverrideParam(AbilityInvokeEntry invoke) throws Exception {
@@ -266,12 +275,12 @@ public final class AbilityManager extends BasePlayerManager {
             String modifierString = data.getParentAbilityName().getStr();
 
             Integer hash = target.getInstanceToHash().get(head.getInstancedAbilityId());
-            if(hash == null) return;
-            target.getAbilities().values().stream().filter(a -> a.getHash() == hash || a.getData().abilityName == target.getInstanceToName().get(head.getInstancedAbilityId())).forEach(a -> {
-                a.getModifiers().keySet().stream().filter(key -> key.compareTo(modifierString) == 0).forEach(key -> {
-                    a.getModifiers().get(key).setLocalId(head.getInstancedModifierId());
-                });
-            });
+            if (hash == null) return;
+            target.getAbilities().values().stream()
+                .filter(a -> checkAbility(a, hash, target, head.getInstancedAbilityId()))
+                .map(a -> a.getModifiers().get(modifierString))
+                .filter(Objects::nonNull)
+                .forEach(a -> a.setLocalId(head.getInstancedModifierId()));
         }
 
         GameEntity sourceEntity = this.player.getScene().getEntityById(data.getApplyEntityId());
@@ -369,11 +378,11 @@ public final class AbilityManager extends BasePlayerManager {
 
         Integer hash = target.getInstanceToHash().get(head.getInstancedAbilityId());
         if(hash == null) return;
-        target.getAbilities().values().stream().filter(a -> a.getHash() == hash || a.getData().abilityName == target.getInstanceToName().get(head.getInstancedAbilityId())).forEach(a -> {
-            a.getModifiers().values().stream().filter(m -> m.getLocalId() == head.getInstancedModifierId()).forEach(modifier -> {
-                modifier.setElementDurability(data.getRemainDurability());
-            });
-        });
+        target.getAbilities().values().stream()
+            .filter(a -> checkAbility(a, hash, target,head.getInstancedAbilityId()))
+            .flatMap(a -> a.getModifiers().values().stream())
+            .filter(m -> m.getLocalId() == head.getInstancedModifierId())
+            .forEach(modifier -> modifier.setElementDurability(data.getRemainDurability()));
     }
 
     private void handleAddNewAbility(AbilityInvokeEntry invoke) throws InvalidProtocolBufferException {
