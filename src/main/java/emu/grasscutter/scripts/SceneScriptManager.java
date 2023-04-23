@@ -4,7 +4,6 @@ import com.github.davidmoten.rtreemulti.RTree;
 import com.github.davidmoten.rtreemulti.geometry.Geometry;
 
 import emu.grasscutter.Grasscutter;
-import emu.grasscutter.config.ConfigContainer.VisionOptions;
 import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.excels.MonsterData;
 import emu.grasscutter.data.excels.WorldLevelData;
@@ -12,7 +11,6 @@ import emu.grasscutter.data.server.Grid;
 import emu.grasscutter.database.DatabaseHelper;
 import emu.grasscutter.game.entity.*;
 import emu.grasscutter.game.entity.gadget.platform.BaseRoute;
-import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.props.EntityType;
 import emu.grasscutter.game.quest.GameQuest;
 import emu.grasscutter.game.quest.QuestGroupSuite;
@@ -29,6 +27,8 @@ import emu.grasscutter.utils.GridPosition;
 import emu.grasscutter.utils.JsonUtils;
 import emu.grasscutter.utils.Position;
 import io.netty.util.concurrent.FastThreadLocalThread;
+import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
+import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
 import kotlin.Pair;
 import lombok.val;
 
@@ -41,6 +41,7 @@ import javax.annotation.Nullable;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Files;
 import java.util.*;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -70,7 +71,7 @@ public class SceneScriptManager {
      * blockid - loaded groupSet
      */
     private final Map<Integer, Set<SceneGroup>> loadedGroupSetPerBlock;
-    private List<Grid> groupGrids;
+    private static final Int2ObjectMap<List<Grid>> groupGridsCache = new Int2ObjectOpenHashMap<>();
     public static final ExecutorService eventExecutor;
     static {
         eventExecutor = new ThreadPoolExecutor(4, 4,
@@ -91,7 +92,6 @@ public class SceneScriptManager {
         this.cachedSceneGroupsInstances = new ConcurrentHashMap<>();
         this.scriptMonsterSpawnService = new ScriptMonsterSpawnService(this);
         this.loadedGroupSetPerBlock = new ConcurrentHashMap<>();
-        this.groupGrids = null; //This is changed on init
 
         // TEMPORARY
         if (this.getScene().getId() < 10 && !Grasscutter.getConfig().server.game.enableScriptInBigWorld) {
@@ -104,10 +104,6 @@ public class SceneScriptManager {
 
     public Scene getScene() {
         return scene;
-    }
-
-    public List<Grid> getGroupGrids() {
-        return groupGrids;
     }
 
     public SceneConfig getConfig() {
@@ -123,7 +119,7 @@ public class SceneScriptManager {
 
     @Nullable
     public Map<String, Integer> getVariables(int group_id) {
-        if(getCachedGroupInstanceById(group_id) == null) return null;
+        if(getCachedGroupInstanceById(group_id) == null) return Collections.emptyMap();
         return getCachedGroupInstanceById(group_id).getCachedVariables();
     }
 
@@ -195,6 +191,9 @@ public class SceneScriptManager {
         //}
     }
     public int refreshGroup(SceneGroupInstance groupInstance, int suiteIndex, boolean excludePrevSuite) {
+        return refreshGroup(groupInstance, suiteIndex, excludePrevSuite, null);
+    }
+    public int refreshGroup(SceneGroupInstance groupInstance, int suiteIndex, boolean excludePrevSuite, List<GameEntity> entitiesAdded) {
         SceneGroup group = groupInstance.getLuaGroup();
         if(suiteIndex == 0) {
             if(excludePrevSuite) {
@@ -234,7 +233,7 @@ public class SceneScriptManager {
 			removeGroupSuite(group, prevSuiteData);
 		} //Remove old group suite
 
-		addGroupSuite(groupInstance, suiteData);
+		addGroupSuite(groupInstance, suiteData, entitiesAdded);
 
         //Refesh variables here
         group.variables.forEach(variable -> {
@@ -385,33 +384,41 @@ public class SceneScriptManager {
         }
         this.meta = meta;
 
-        var path = FileUtils.getScriptPath("Scene/" + getScene().getId() + "/scene_grid.json");
+        // TEMP
+        this.isInit = true;
+    }
 
-        try {
-            this.groupGrids = JsonUtils.loadToList(path, Grid.class);
-        } catch (IOException ignored) {
-            Grasscutter.getLogger().error("Scene {} unable to load grid file.", getScene().getId());
-        } catch (Exception e) {
-            Grasscutter.getLogger().error("Scene {} unable to load grid file.", e, getScene().getId());
-        }
+    public List<Grid> getGroupGrids() {
+        int sceneId = scene.getId();
+        if (groupGridsCache.containsKey(sceneId) && groupGridsCache.get(sceneId) != null) {
+            Grasscutter.getLogger().debug("Hit cache for scene {}",sceneId);
+            return groupGridsCache.get(sceneId);
+        } else {
+            var path = FileUtils.getCachePath("scene" + sceneId + "_grid.json");
+            if (path.toFile().isFile() && !Grasscutter.config.server.game.cacheSceneEntitiesEveryRun) {
+                try {
+                    var groupGrids = JsonUtils.loadToList(path, Grid.class);
+                    groupGridsCache.put(sceneId, groupGrids);
+                    if(groupGrids != null) return groupGrids;
+                } catch (IOException e) {
+                    Grasscutter.getLogger().error("exception during group grid loading: {}", e);
+                }
+            }
 
-        boolean runForFirstTime = this.groupGrids == null;
-
-        //Find if the scene entities are already generated, if not generate it
-        if(Grasscutter.getConfig().server.game.cacheSceneEntitiesEveryRun || runForFirstTime) {
+            //otherwise generate the grids
             List<Map<GridPosition, Set<Integer>>> groupPositions = new ArrayList<>();
-            for(int i = 0; i < 6; i++) groupPositions.add(new HashMap<>());
+            for (int i = 0; i < 6; i++) groupPositions.add(new HashMap<>());
 
-            var visionOptions = Grasscutter.getConfig().server.game.visionOptions;
+            var visionOptions = Grasscutter.config.server.game.visionOptions;
             meta.blocks.values().forEach(block -> {
-                block.load(scene.getId(), meta.context);
+                block.load(sceneId, meta.context);
                 block.groups.values().stream().filter(g -> !g.dynamic_load).forEach(group -> {
                     group.load(this.scene.getId());
 
-                    //Add all entitites here
+                    //Add all entities here
                     Set<Integer> vision_levels = new HashSet<>();
 
-                    if(group.monsters != null) {
+                    if (group.monsters != null) {
                         group.monsters.values().forEach(m -> {
                             addGridPositionToMap(groupPositions.get(m.vision_level), group.id, m.vision_level, m.pos);
                             vision_levels.add(m.vision_level);
@@ -419,7 +426,7 @@ public class SceneScriptManager {
                     } else {
                         Grasscutter.getLogger().error("group.monsters null for group {}", group.id);
                     }
-                    if(group.gadgets != null) {
+                    if (group.gadgets != null) {
                         group.gadgets.values().forEach(g -> {
                             int vision_level = Math.max(getGadgetVisionLevel(g.gadget_id), g.vision_level);
                             addGridPositionToMap(groupPositions.get(vision_level), group.id, vision_level, g.pos);
@@ -429,52 +436,52 @@ public class SceneScriptManager {
                         Grasscutter.getLogger().error("group.gadgets null for group {}", group.id);
                     }
 
-                    if(group.npcs != null) {
+                    if (group.npcs != null) {
                         group.npcs.values().forEach(n -> addGridPositionToMap(groupPositions.get(n.vision_level), group.id, n.vision_level, n.pos));
                     } else {
                         Grasscutter.getLogger().error("group.npcs null for group {}", group.id);
                     }
 
-                    if(group.regions != null) {
+                    if (group.regions != null) {
                         group.regions.values().forEach(r -> addGridPositionToMap(groupPositions.get(0), group.id, 0, r.pos));
                     } else {
                         Grasscutter.getLogger().error("group.regions null for group {}", group.id);
                     }
 
-                    if(group.garbages != null && group.garbages.gadgets != null) group.garbages.gadgets.forEach(g -> addGridPositionToMap(groupPositions.get(g.vision_level), group.id, g.vision_level, g.pos));
+                    if (group.garbages != null && group.garbages.gadgets != null)
+                        group.garbages.gadgets.forEach(g -> addGridPositionToMap(groupPositions.get(g.vision_level), group.id, g.vision_level, g.pos));
 
                     int max_vision_level = -1;
-                    if(!vision_levels.isEmpty()) {
-                        for(int vision_level : vision_levels) {
-                            if(max_vision_level == -1 || visionOptions[max_vision_level].visionRange < visionOptions[vision_level].visionRange)
+                    if (!vision_levels.isEmpty()) {
+                        for (int vision_level : vision_levels) {
+                            if (max_vision_level == -1 || visionOptions[max_vision_level].visionRange < visionOptions[vision_level].visionRange)
                                 max_vision_level = vision_level;
                         }
                     }
-                    if(max_vision_level == -1) max_vision_level = 0;
+                    if (max_vision_level == -1) max_vision_level = 0;
 
                     addGridPositionToMap(groupPositions.get(max_vision_level), group.id, max_vision_level, group.pos);
                 });
             });
 
-            this.groupGrids = new ArrayList<>();
-            for(int i = 0; i < 6; i++) {
-                this.groupGrids.add(new Grid());
-                this.groupGrids.get(i).grid = groupPositions.get(i);
+            var groupGrids = new ArrayList<Grid>();
+            for (int i = 0; i < 6; i++) {
+                groupGrids.add(new Grid());
+                groupGrids.get(i).grid = groupPositions.get(i);
             }
+            groupGridsCache.put(scene.getId(), groupGrids);
 
-            try (FileWriter file = new FileWriter(path.toFile())) {
+            try {
+                Files.createDirectories(path.getParent());
+            } catch (IOException ignored) {}
+            try (var file = new FileWriter(path.toFile())) {
                 file.write(JsonUtils.encode(groupGrids));
-            } catch (IOException ignored) {
-                Grasscutter.getLogger().error("Scene {} unable to write to grid file.", getScene().getId());
+                Grasscutter.getLogger().info("Scene {} saved grid file.", getScene().getId());
             } catch (Exception e) {
-                Grasscutter.getLogger().error("Scene {} unable to save grid file.", e, getScene().getId());
+                Grasscutter.getLogger().error("Scene {} unable to save grid file.", getScene().getId(), e);
             }
-
-            Grasscutter.getLogger().info("Scene {} saved grid file.", getScene().getId());
+            return groupGrids;
         }
-
-        // TEMP
-        this.isInit = true;
     }
 
     public boolean isInit() {
@@ -585,6 +592,9 @@ public class SceneScriptManager {
     }
 
     public void addGroupSuite(SceneGroupInstance groupInstance, SceneSuite suite) {
+        addGroupSuite(groupInstance, suite, null);
+    }
+    public void addGroupSuite(SceneGroupInstance groupInstance, SceneSuite suite, List<GameEntity> entities) {
         // we added trigger first
         registerTrigger(suite.sceneTriggers);
 
@@ -592,7 +602,10 @@ public class SceneScriptManager {
         var toCreate = new ArrayList<GameEntity>();
         toCreate.addAll(getGadgetsInGroupSuite(groupInstance, suite));
         toCreate.addAll(getMonstersInGroupSuite(groupInstance, suite));
-        addEntities(toCreate);
+        if(entities != null)
+            toCreate.forEach(entities::add);
+        else
+            addEntities(toCreate);
 
         registerRegionInGroupSuite(group, suite);
     }

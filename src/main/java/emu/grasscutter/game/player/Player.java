@@ -171,6 +171,8 @@ public class Player {
     @Getter private transient PlayerBuffManager buffManager;
     @Getter private transient PlayerProgressManager progressManager;
 
+    @Getter @Setter private transient Position lastCheckedPosition = null;
+
     // Manager data (Save-able to the database)
     private PlayerProfile playerProfile;  // Getter has null-check
     @Getter private TeamManager teamManager;

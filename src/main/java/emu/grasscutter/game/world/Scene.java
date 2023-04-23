@@ -278,6 +278,17 @@ public class Scene {
         addEntities(entities, VisionType.VISION_TYPE_BORN);
     }
 
+    private static <T> List<List<T>> chopped(List<T> list, final int L) {
+        List<List<T>> parts = new ArrayList<List<T>>();
+        final int N = list.size();
+        for (int i = 0; i < N; i += L) {
+            parts.add(new ArrayList<T>(
+                list.subList(i, Math.min(N, i + L)))
+            );
+        }
+        return parts;
+    }
+
     public synchronized void addEntities(Collection<? extends GameEntity> entities, VisionType visionType) {
         if (entities == null || entities.isEmpty()) {
             return;
@@ -286,7 +297,9 @@ public class Scene {
             this.addEntityDirectly(entity);
         }
 
-        this.broadcastPacket(new PacketSceneEntityAppearNotify(entities, visionType));
+        for(val l : chopped(new ArrayList<>(entities), 100)) {
+            this.broadcastPacket(new PacketSceneEntityAppearNotify(l, visionType));
+        }
     }
 
     private GameEntity removeEntityDirectly(GameEntity entity) {
@@ -400,7 +413,9 @@ public class Scene {
         }
         if (this.getScriptManager().isInit()) {
             //this.checkBlocks();
-            checkGroups();
+            if (tickCount % 2 == 0) {
+                checkGroups();
+            }
         } else {
             // TEMPORARY
             this.checkSpawns();
@@ -427,14 +442,15 @@ public class Scene {
     }
 
     private void checkPlayerRespawn() {
+        if(getScriptManager().getConfig() == null){
+            return;
+        }
         val diePos = getScriptManager().getConfig().die_y;
         players.forEach(player -> {
             //Check if we need a respawn
-            if (getScriptManager().getConfig() != null) {
-                if (diePos >= player.getPosition().getY()) {
-                    //Respawn the player
-                    respawnPlayer(player);
-                }
+            if (diePos >= player.getPosition().getY()) {
+                //Respawn the player
+                respawnPlayer(player);
             }
         });
         getEntities().forEach((eid, e) -> {
@@ -654,6 +670,11 @@ public class Scene {
     }
 
     public synchronized void checkGroups() {
+        var playerMoved = this.players.stream().filter(p -> p.getLastCheckedPosition() == null || !p.getLastCheckedPosition().equal2d(p.getPosition())).toList();
+        if(playerMoved.isEmpty()) return;
+
+        playerMoved.forEach(p -> p.setLastCheckedPosition(p.getPosition().clone()));
+
         Set<Integer> visible = this.players.stream()
             .map(player -> this.getPlayerActiveGroups(player))
             .flatMap(Collection::stream)
@@ -782,6 +803,7 @@ public class Scene {
         // Spawn gadgets AFTER triggers are added
         // TODO
         var entities = new ArrayList<GameEntity>();
+        var entitiesBorn = new ArrayList<GameEntity>();
         for (SceneGroup group : groups) {
             if(this.loadedGroups.contains(group)) continue;
 
@@ -807,12 +829,13 @@ public class Scene {
 
             // Load suites
             //int suite = group.findInitSuiteIndex(0);
-            this.getScriptManager().refreshGroup(groupInstance, 0, false); //This is what the official server does
+            this.getScriptManager().refreshGroup(groupInstance, 0, false, entitiesBorn); //This is what the official server does
 
             this.loadedGroups.add(group);
         }
 
         scriptManager.meetEntities(entities);
+        scriptManager.addEntities(entitiesBorn);
         groups.forEach(g -> scriptManager.callEvent(new ScriptArgs(g.id, EventType.EVENT_GROUP_LOAD, g.id)));
         Grasscutter.getLogger().info("Scene {} loaded {} group(s)", this.getId(), groups.size());
     }
@@ -834,7 +857,8 @@ public class Scene {
             group.regions.values().forEach(getScriptManager()::deregisterRegion);
         }
 
-        scriptManager.getLoadedGroupSetPerBlock().get(block.id).remove(group);
+        if(scriptManager.getLoadedGroupSetPerBlock().containsKey(block.id))
+            scriptManager.getLoadedGroupSetPerBlock().get(block.id).remove(group);
         this.loadedGroups.remove(group);
 
         if(scriptManager.getLoadedGroupSetPerBlock().get(block.id).isEmpty()) {

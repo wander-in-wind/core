@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.io.Serializable;
 import java.util.List;
 
+import com.github.davidmoten.rtreemulti.geometry.Point;
+
 import dev.morphia.annotations.Entity;
 import lombok.Getter;
 import lombok.Setter;
@@ -90,8 +92,16 @@ public class GridPosition implements Serializable {
         return new int[]{ x, z, width };
     }
 
+    public double[] toDoubleArray() {
+        return new double[]{ x, z };
+    }
+
     public int[] toXZIntArray() {
         return new int[]{ x, z };
+    }
+
+    public Point toPoint() {
+        return Point.create(x,z);
     }
 
     @Override
