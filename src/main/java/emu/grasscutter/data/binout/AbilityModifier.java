@@ -1,22 +1,43 @@
 package emu.grasscutter.data.binout;
 
+import java.io.Serial;
 import java.io.Serializable;
 
 import com.google.gson.annotations.SerializedName;
 
 import emu.grasscutter.data.common.DynamicFloat;
+import emu.grasscutter.game.props.ElementType;
 
 public class AbilityModifier implements Serializable {
-    private static final long serialVersionUID = -2001232313615923575L;
+    @Serial private static final long serialVersionUID = -2001232313615923575L;
 
     @SerializedName(value="onAdded", alternate={"KCICDEJLIJD"})
     public AbilityModifierAction[] onAdded;
     @SerializedName(value="onThinkInterval", alternate={"PBDDACFFPOE"})
     public AbilityModifierAction[] onThinkInterval;
     public AbilityModifierAction[] onRemoved;
+    public AbilityModifierAction[] onBeingHit;
+    public AbilityModifierAction[] onAttackLanded;
+    public AbilityModifierAction[] onHittingOther;
+    public AbilityModifierAction[] onKill;
+    public AbilityModifierAction[] onCrash;
+    public AbilityModifierAction[] onAvatarIn;
+    public AbilityModifierAction[] onAvatarOut;
+    public AbilityModifierAction[] onReconnect;
+    public AbilityModifierAction[] onChangeAuthority;
+    public AbilityModifierAction[] onVehicleIn;
+    public AbilityModifierAction[] onVehicleOut;
+    public AbilityModifierAction[] onZoneEnter;
+    public AbilityModifierAction[] onZoneExit;
+    public AbilityModifierAction[] onHeal;
+    public AbilityModifierAction[] onBeingHealed;
     public DynamicFloat duration = DynamicFloat.ZERO;
+    public String stacking;
 
-    public static class AbilityModifierAction {
+    public ElementType elementType;
+    public DynamicFloat elementDurability = DynamicFloat.ZERO;
+
+    public static class AbilityModifierAction implements Serializable {
         public enum Type {
             ActCameraRadialBlur, ActCameraShake, AddAvatarSkillInfo, AddChargeBarValue,
             AddClimateMeter, AddElementDurability, AddGlobalValue, AddGlobalValueToTarget,
@@ -87,6 +108,10 @@ public class AbilityModifier implements Serializable {
         @SerializedName(value = "ignoreAbilityProperty", alternate = "HHFGADCJJDI")
         public boolean ignoreAbilityProperty;
         public String modifierName;
+
+        public int param1;
+        public int param2;
+        public int param3;
     }
 
     //The following should be implemented into DynamicFloat if older resource formats need to be supported

@@ -193,6 +193,11 @@ public class GameQuest {
         this.getQuestData().getGainItems().forEach(item ->
             this.getOwner().getInventory().addItem(item, ActionReason.QuestItem));
 
+        // hard coding to give amber
+        if(getQuestData().getSubId() == 35402){
+            getOwner().getInventory().addItem(1021, 1, ActionReason.QuestItem); // amber item id
+        }
+
         this.save();
         Grasscutter.getLogger().debug("Quest {} was completed.", subQuestId);
     }
@@ -215,7 +220,7 @@ public class GameQuest {
         }
         Grasscutter.getLogger().debug("Quest {} is failed", subQuestId);
 
- 
+
     }
 
     // Return true if it did the rewind
