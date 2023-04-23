@@ -745,7 +745,7 @@ public class ResourceLoader {
         } else {
             Grasscutter.getLogger().debug("Loaded {} group replacements.", GameData.getGroupReplacements().size());
             GameData.getGroupReplacements().forEach((group, groups) -> {
-                Grasscutter.getLogger().debug("{} -> {}", group, groups.getReplace_groups().stream().map(String::valueOf).collect(Collectors.joining(",")));
+                Grasscutter.getLogger().trace("{} -> {}", group, groups.getReplace_groups().stream().map(String::valueOf).collect(Collectors.joining(",")));
             });
         }
     }

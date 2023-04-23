@@ -40,11 +40,11 @@ public class ScriptLoader {
     /**
      * suggest GC to remove it if the memory is less
      */
-    private static Map<String, SoftReference<CompiledScript>> scriptsCache = new ConcurrentHashMap<>();
+    private static final Map<String, SoftReference<CompiledScript>> scriptsCache = new ConcurrentHashMap<>();
     /**
      * sceneId - SceneMeta
      */
-    private static Map<Integer, SoftReference<SceneMeta>> sceneMetaCache = new ConcurrentHashMap<>();
+    private static final Map<Integer, SoftReference<SceneMeta>> sceneMetaCache = new ConcurrentHashMap<>();
 
     public synchronized static void init() throws Exception {
         if (sm != null) {
@@ -80,6 +80,8 @@ public class ScriptLoader {
         ctx.globals.set("EventType", CoerceJavaToLua.coerce(new EventType())); // TODO - make static class to avoid instantiating a new class every scene
         ctx.globals.set("GadgetState", CoerceJavaToLua.coerce(new ScriptGadgetState()));
         ctx.globals.set("RegionShape", CoerceJavaToLua.coerce(new ScriptRegionShape()));
+        ctx.globals.set("VisionLevelType", CoerceJavaToLua.coerce(new VisionLevelType()));
+
 
         scriptLib = new ScriptLib();
         scriptLibLua = CoerceJavaToLua.coerce(scriptLib);

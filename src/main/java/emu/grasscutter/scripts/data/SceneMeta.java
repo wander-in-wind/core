@@ -1,9 +1,6 @@
 package emu.grasscutter.scripts.data;
 
-import com.github.davidmoten.rtreemulti.RTree;
-import com.github.davidmoten.rtreemulti.geometry.Geometry;
 import emu.grasscutter.Grasscutter;
-import emu.grasscutter.scripts.SceneIndexManager;
 import emu.grasscutter.scripts.ScriptLoader;
 import lombok.Setter;
 import lombok.ToString;
@@ -24,8 +21,6 @@ public class SceneMeta {
     public Map<Integer, SceneBlock> blocks;
 
     public Bindings context;
-
-    public RTree<SceneBlock, Geometry> sceneBlockIndex;
 
     public static SceneMeta of(int sceneId) {
         return new SceneMeta().load(sceneId);
@@ -57,11 +52,9 @@ public class SceneMeta {
             for (int i = 0; i < blocks.size(); i++) {
                 SceneBlock block = blocks.get(i);
                 block.id = blockIds.get(i);
-
             }
 
             this.blocks = blocks.stream().collect(Collectors.toMap(b -> b.id, b -> b, (a, b) -> a));
-            this.sceneBlockIndex = SceneIndexManager.buildIndex(2, blocks, SceneBlock::toRectangle);
 
         } catch (ScriptException exception) {
             Grasscutter.getLogger().error("An error occurred while running a script.", exception);

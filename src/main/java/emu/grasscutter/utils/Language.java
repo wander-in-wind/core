@@ -16,6 +16,7 @@ import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap;
 import lombok.EqualsAndHashCode;
 
 import static emu.grasscutter.config.Configuration.*;
+import static emu.grasscutter.utils.FileUtils.getCachePath;
 import static emu.grasscutter.utils.FileUtils.getResourcePath;
 
 import java.io.BufferedInputStream;
@@ -368,17 +369,16 @@ public final class Language {
     }
 
     private static void saveTextMapsCache(Int2ObjectMap<TextStrings> input) throws IOException {
-        try {
-            Files.createDirectory(Path.of("cache"));
-        } catch (FileAlreadyExistsException ignored) {};
-        try (ObjectOutputStream file = new ObjectOutputStream(new BufferedOutputStream(Files.newOutputStream(TEXTMAP_CACHE_PATH, StandardOpenOption.CREATE), 0x100000))) {
+        Files.createDirectories(TEXTMAP_CACHE_PATH.getParent());
+        try (var file = new ObjectOutputStream(new BufferedOutputStream(
+            Files.newOutputStream(TEXTMAP_CACHE_PATH, StandardOpenOption.CREATE), 0x100000))) {
             file.writeInt(TEXTMAP_CACHE_VERSION);
             file.writeObject(input);
         }
     }
 
     private static Int2ObjectMap<TextStrings> textMapStrings;
-    private static final Path TEXTMAP_CACHE_PATH = Path.of(Utils.toFilePath("cache/TextMapCache.bin"));
+    private static final Path TEXTMAP_CACHE_PATH = getCachePath("TextMap/TextMapCache.bin");
 
     @Deprecated(forRemoval = true)
     public static Int2ObjectMap<TextStrings> getTextMapStrings() {

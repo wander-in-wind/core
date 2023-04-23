@@ -29,7 +29,6 @@ import lombok.val;
 import org.luaj.vm2.LuaTable;
 import org.luaj.vm2.LuaValue;
 import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import javax.annotation.Nullable;
 import java.util.*;
@@ -41,7 +40,7 @@ import static emu.grasscutter.scripts.constants.GroupKillPolicy.*;
 
 @SuppressWarnings("unused")
 public class ScriptLib {
-	public static final Logger logger = LoggerFactory.getLogger(ScriptLib.class);
+	public static final Logger logger = Grasscutter.getLogger();
 	private final FastThreadLocal<SceneScriptManager> sceneScriptManager;
 	private final FastThreadLocal<SceneGroup> currentGroup;
 	private final FastThreadLocal<ScriptArgs> callParams;
@@ -171,9 +170,7 @@ public class ScriptLib {
 
         worktop.addWorktopOptions(worktopOptions);
         var scene = getSceneScriptManager().getScene();
-        Grasscutter.getGameServer().getScheduler().scheduleDelayedTask(() -> {
-            scene.broadcastPacket(new PacketWorktopOptionNotify(gadget));
-        },1);
+        Grasscutter.getGameServer().getScheduler().scheduleDelayedTask(() -> scene.broadcastPacket(new PacketWorktopOptionNotify(gadget)),1);
 		return 0;
 	}
 
@@ -216,9 +213,7 @@ public class ScriptLib {
         worktop.removeWorktopOption(callParams.param2);
 
         var scene = getSceneScriptManager().getScene();
-        Grasscutter.getGameServer().getScheduler().scheduleDelayedTask(() -> {
-            scene.broadcastPacket(new PacketWorktopOptionNotify(gadget));
-        },1);
+        Grasscutter.getGameServer().getScheduler().scheduleDelayedTask(() -> scene.broadcastPacket(new PacketWorktopOptionNotify(gadget)),1);
 
         return 0;
     }

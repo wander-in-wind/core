@@ -61,7 +61,8 @@ public abstract class ActivityHandler {
         val questManager = player.getQuestManager();
         activityData.getCondGroupId().forEach(condGroupId -> {
             val condGroup = GameData.getActivityCondGroupMap().get((int)condGroupId);
-            condGroup.getCondIds().forEach(condID -> questManager.queueEvent(QuestCond.QUEST_COND_ACTIVITY_COND, condID));
+            if(condGroup != null)
+                condGroup.getCondIds().forEach(condID -> questManager.queueEvent(QuestCond.QUEST_COND_ACTIVITY_COND, condID));
         });
     }
 
