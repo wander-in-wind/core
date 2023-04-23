@@ -401,7 +401,7 @@ public class SceneScriptManager {
                     groupGridsCache.put(sceneId, groupGrids);
                     if(groupGrids != null) return groupGrids;
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    Grasscutter.getLogger().error("exception during group grid loading: {}", e);
                 }
             }
 

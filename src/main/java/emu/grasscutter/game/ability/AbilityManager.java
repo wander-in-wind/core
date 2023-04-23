@@ -176,7 +176,7 @@ public final class AbilityManager extends BasePlayerManager {
             return;
         }
 
-        Grasscutter.getLogger().warn("{} {} {}", head.getInstancedAbilityId(), entity.getInstanceToHash(), head.getLocalId());
+        Grasscutter.getLogger().debug("{} {} {}", head.getInstancedAbilityId(), entity.getInstanceToHash(), head.getLocalId());
 
         Integer hash = entity.getInstanceToHash().get(head.getInstancedAbilityId());
         if(hash == null) {
@@ -184,7 +184,7 @@ public final class AbilityManager extends BasePlayerManager {
 
             if(head.getInstancedAbilityId() <= abilities.length) {
                 var ability = abilities[head.getInstancedAbilityId() - 1];
-                Grasscutter.getLogger().warn("-> {}", ability.getData().localIdToAction);
+                Grasscutter.getLogger().debug("-> {}", ability.getData().localIdToAction);
                 AbilityModifierAction action = ability.getData().localIdToAction.get(head.getLocalId());
                 if(action != null) ability.getManager().executeAction(ability, action);
             }
@@ -382,8 +382,8 @@ public final class AbilityManager extends BasePlayerManager {
             return;
         }
 
-        if(data.getAbility().getAbilityName().getHash() != 0) Grasscutter.getLogger().warn("Instancing {} in to {}", data.getAbility().getAbilityName().getHash(), data.getAbility().getInstancedAbilityId());
-        else Grasscutter.getLogger().warn("Instancing {} in to {}", data.getAbility().getAbilityName().getStr(), data.getAbility().getInstancedAbilityId());
+        if(data.getAbility().getAbilityName().getHash() != 0) Grasscutter.getLogger().debug("Instancing {} in to {}", data.getAbility().getAbilityName().getHash(), data.getAbility().getInstancedAbilityId());
+        else Grasscutter.getLogger().debug("Instancing {} in to {}", data.getAbility().getAbilityName().getStr(), data.getAbility().getInstancedAbilityId());
 
         GameEntity target = this.player.getScene().getEntityById(invoke.getEntityId());
         if (target == null) {
