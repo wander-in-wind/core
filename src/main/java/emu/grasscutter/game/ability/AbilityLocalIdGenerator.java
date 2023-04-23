@@ -31,7 +31,7 @@ public class AbilityLocalIdGenerator {
         this.type = type;
     }
 
-    public void InitializeActionLocalIds(AbilityModifierAction actions[], Map<Integer, AbilityModifierAction> localIdToAction)
+    public void InitializeActionLocalIds(AbilityModifierAction[] actions, Map<Integer, AbilityModifierAction> localIdToAction)
     {
         if (actions == null) return;
         ActionIndex = 0;

@@ -26,7 +26,7 @@ public class AbilityData {
 
         if(modifiers == null) return;
 
-        AbilityModifier _modifiers[] = modifiers.values().toArray(new AbilityModifier[0]);
+        AbilityModifier[] _modifiers = modifiers.values().toArray(new AbilityModifier[0]);
         long modifierIndex = 0;
         for(int i = 0; i < _modifiers.length; i++) {
             long configIndex = 0L;
