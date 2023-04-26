@@ -4,7 +4,6 @@ import static emu.grasscutter.config.Configuration.ACCOUNT;
 
 import emu.grasscutter.GameConstants;
 import emu.grasscutter.Grasscutter;
-import emu.grasscutter.Grasscutter.ServerRunMode;
 import emu.grasscutter.server.http.objects.HttpJsonResponse;
 import emu.grasscutter.server.http.Router;
 import emu.grasscutter.server.http.objects.WebStaticVersionResponse;
@@ -44,9 +43,7 @@ public final class GenericHandler implements Router {
         // webstatic-sea.hoyoverse.com
         javalin.get("/admin/mi18n/plat_oversea/*", new WebStaticVersionResponse());
 
-        var runMode = Grasscutter.getRunMode();
-        if (runMode == ServerRunMode.GAME_ONLY || runMode == ServerRunMode.HYBRID)
-            javalin.get("/status/server", GenericHandler::serverStatus);
+        javalin.get("/status/server", GenericHandler::serverStatus);
     }
 
     private static void serverStatus(Context ctx) {
