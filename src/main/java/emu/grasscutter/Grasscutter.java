@@ -49,27 +49,21 @@ import static emu.grasscutter.config.Configuration.SERVER;
 import static emu.grasscutter.utils.Language.translate;
 
 public final class Grasscutter {
-    @Getter private static final Logger logger = (Logger) LoggerFactory.getLogger(Grasscutter.class);
-    private static LineReader consoleLineReader = null;
-
-    @Getter @Setter private static Language language;
-
     public static final File configFile = new File("./config.json");
+    public static final Reflections reflector = new Reflections("emu.grasscutter");
+    @Getter private static final Logger logger = (Logger) LoggerFactory.getLogger(Grasscutter.class);
+    @Getter public static ConfigContainer config;
+    private static LineReader consoleLineReader = null;
+    @Getter @Setter private static Language language;
     @Setter private static ServerRunMode runModeOverride = null; // Config override for run mode
-
     @Getter private static int currentDayOfWeek;
     @Getter @Setter private static String preferredLanguage;
-
-    @Getter private static HttpServer httpServer;
-    @Getter private static GameServer gameServer;
+    @Getter private static HttpServer httpServer = null;
+    @Getter private static GameServer gameServer = null;
     @Getter private static PluginManager pluginManager;
     @Getter private static CommandMap commandMap;
-
     @Getter @Setter private static AuthenticationSystem authenticationSystem;
     @Getter @Setter private static PermissionHandler permissionHandler;
-
-    public static final Reflections reflector = new Reflections("emu.grasscutter");
-    @Getter public static ConfigContainer config;
 
     static {
         // Declare logback configuration.
@@ -107,11 +101,6 @@ public final class Grasscutter {
         Grasscutter.getLogger().info(translate("messages.status.game_version", GameConstants.VERSION));
         Grasscutter.getLogger().info(translate("messages.status.version", BuildConfig.VERSION, BuildConfig.GIT_HASH));
 
-        // Load all resources.
-        Grasscutter.updateDayOfWeek();
-        ScriptLoader.init();
-        ResourceLoader.loadAll();
-
         // Generate handbooks.
         Tools.createGmHandbooks(false);
 
@@ -122,35 +111,49 @@ public final class Grasscutter {
         authenticationSystem = new DefaultAuthentication();
         permissionHandler = new DefaultPermissionHandler();
 
-        // Create server instances.
-        httpServer = new HttpServer();
-        gameServer = new GameServer();
-        // Create a server hook instance with both servers.
-        new ServerHook(gameServer, httpServer);
-
         // Create plugin manager instance.
         pluginManager = new PluginManager();
-        // Add HTTP routes after loading plugins.
-        httpServer.addRouter(HttpServer.UnhandledRequestRouter.class);
-        httpServer.addRouter(HttpServer.DefaultRequestRouter.class);
-        httpServer.addRouter(RegionHandler.class);
-        httpServer.addRouter(LogHandler.class);
-        httpServer.addRouter(GenericHandler.class);
-        httpServer.addRouter(AnnouncementsHandler.class);
-        httpServer.addRouter(DispatchHandler.class);
-        httpServer.addRouter(GachaHandler.class);
-        httpServer.addRouter(DocumentationServerHandler.class);
 
-        // Start servers.
+        // Create and run server on need
         var runMode = Grasscutter.getRunMode();
+        if (runMode == ServerRunMode.DISPATCH_ONLY || runMode == ServerRunMode.HYBRID) {
+            // Start dispatch server
+            // Create server instances.
+            httpServer = new HttpServer();
+            // Add HTTP routes after loading plugins.
+            httpServer.addRouter(HttpServer.UnhandledRequestRouter.class);
+            httpServer.addRouter(HttpServer.DefaultRequestRouter.class);
+            httpServer.addRouter(RegionHandler.class);
+            httpServer.addRouter(LogHandler.class);
+            httpServer.addRouter(GenericHandler.class);
+            httpServer.addRouter(AnnouncementsHandler.class);
+            httpServer.addRouter(DispatchHandler.class);
+            httpServer.addRouter(GachaHandler.class);
+            httpServer.addRouter(DocumentationServerHandler.class);
+            // Start servers.
+            httpServer.start();
+        }
+        if (runMode == ServerRunMode.GAME_ONLY || runMode == ServerRunMode.HYBRID) {
+            // Load all resources.
+            Grasscutter.updateDayOfWeek();
+            ResourceLoader.loadAll();
+            ScriptLoader.init();
+
+            // Create server instances.
+            gameServer = new GameServer();
+            gameServer.start();
+            if (runMode == ServerRunMode.GAME_ONLY) {
+                // Create a http server to monitor server status
+                var statusServer = new HttpServer();
+                statusServer.addRouter(GenericHandler.class);
+                statusServer.start();
+            }
+        }
         if (runMode == ServerRunMode.HYBRID) {
-            httpServer.start();
-            gameServer.start();
-        } else if (runMode == ServerRunMode.DISPATCH_ONLY) {
-            httpServer.start();
-        } else if (runMode == ServerRunMode.GAME_ONLY) {
-            gameServer.start();
-        } else {
+            // Create a server hook instance with both servers.
+            new ServerHook(gameServer, httpServer);
+        }
+        if (runMode != ServerRunMode.HYBRID && runMode != ServerRunMode.DISPATCH_ONLY && runMode != ServerRunMode.GAME_ONLY) {
             getLogger().error(translate("messages.status.run_mode_error", runMode));
             getLogger().error(translate("messages.status.run_mode_help"));
             getLogger().error(translate("messages.status.shutdown"));
@@ -266,7 +269,7 @@ public final class Grasscutter {
     public static void updateDayOfWeek() {
         Calendar calendar = Calendar.getInstance();
         Grasscutter.currentDayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);
-        Grasscutter.getLogger().debug("Set day of week to "+currentDayOfWeek);
+        Grasscutter.getLogger().debug("Set day of week to " + currentDayOfWeek);
     }
 
     public static void startConsole() {
@@ -312,10 +315,16 @@ public final class Grasscutter {
      */
 
     public enum ServerRunMode {
-        HYBRID, DISPATCH_ONLY, GAME_ONLY
+        HYBRID,
+        DISPATCH_ONLY,
+        GAME_ONLY
     }
 
     public enum ServerDebugMode {
-        ALL, MISSING, WHITELIST, BLACKLIST, NONE
+        ALL,
+        MISSING,
+        WHITELIST,
+        BLACKLIST,
+        NONE
     }
 }
