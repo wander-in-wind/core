@@ -19,10 +19,10 @@ public final class PlayerLoginReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 KDIHPMJOCPG = 909;</code>
-     * @return The kDIHPMJOCPG.
+     * <code>uint32 sub_channel_id = 909;</code>
+     * @return The subChannelId.
      */
-    int getKDIHPMJOCPG();
+    int getSubChannelId();
 
     /**
      * <code>uint32 PNJNCCNPILL = 2033;</code>
@@ -49,19 +49,11 @@ public final class PlayerLoginReqOuterClass {
     boolean getIsGuest();
 
     /**
-     * <pre>
-     * not work
-     * </pre>
-     *
      * <code>string JKPKMFPELKK = 778;</code>
      * @return The jKPKMFPELKK.
      */
     java.lang.String getJKPKMFPELKK();
     /**
-     * <pre>
-     * not work
-     * </pre>
-     *
      * <code>string JKPKMFPELKK = 778;</code>
      * @return The bytes for jKPKMFPELKK.
      */
@@ -147,24 +139,16 @@ public final class PlayerLoginReqOuterClass {
         getSystemVersionBytes();
 
     /**
-     * <pre>
-     * not work
-     * </pre>
-     *
-     * <code>string DOAPGNNFLBJ = 1352;</code>
-     * @return The dOAPGNNFLBJ.
+     * <code>string cps = 1352;</code>
+     * @return The cps.
      */
-    java.lang.String getDOAPGNNFLBJ();
+    java.lang.String getCps();
     /**
-     * <pre>
-     * not work
-     * </pre>
-     *
-     * <code>string DOAPGNNFLBJ = 1352;</code>
-     * @return The bytes for dOAPGNNFLBJ.
+     * <code>string cps = 1352;</code>
+     * @return The bytes for cps.
      */
     com.google.protobuf.ByteString
-        getDOAPGNNFLBJBytes();
+        getCpsBytes();
 
     /**
      * <code>string account_uid = 4;</code>
@@ -263,19 +247,11 @@ public final class PlayerLoginReqOuterClass {
     int getECJMGOCEABB();
 
     /**
-     * <pre>
-     * ENNPHCJEFFC bruh finally got it right
-     * </pre>
-     *
      * <code>string client_version = 3;</code>
      * @return The clientVersion.
      */
     java.lang.String getClientVersion();
     /**
-     * <pre>
-     * ENNPHCJEFFC bruh finally got it right
-     * </pre>
-     *
      * <code>string client_version = 3;</code>
      * @return The bytes for clientVersion.
      */
@@ -367,10 +343,10 @@ public final class PlayerLoginReqOuterClass {
     int getTag();
 
     /**
-     * <code>uint32 CIJNPHDIOND = 5;</code>
-     * @return The cIJNPHDIOND.
+     * <code>uint32 account_type = 5;</code>
+     * @return The accountType.
      */
-    int getCIJNPHDIOND();
+    int getAccountType();
 
     /**
      * <code>uint32 client_data_version = 1098;</code>
@@ -415,10 +391,10 @@ public final class PlayerLoginReqOuterClass {
     com.google.protobuf.ByteString getSecurityCmdReply();
 
     /**
-     * <code>uint32 LFPHHMGKIIP = 1187;</code>
-     * @return The lFPHHMGKIIP.
+     * <code>uint32 reg_platform = 1187;</code>
+     * @return The regPlatform.
      */
-    int getLFPHHMGKIIP();
+    int getRegPlatform();
 
     /**
      * <code>string birthday = 1256;</code>
@@ -454,7 +430,7 @@ public final class PlayerLoginReqOuterClass {
       jKPKMFPELKK_ = "";
       onlineId_ = "";
       systemVersion_ = "";
-      dOAPGNNFLBJ_ = "";
+      cps_ = "";
       accountUid_ = "";
       securityLibraryMd5_ = "";
       countryCode_ = "";
@@ -530,7 +506,7 @@ public final class PlayerLoginReqOuterClass {
             }
             case 40: {
 
-              cIJNPHDIOND_ = input.readUInt32();
+              accountType_ = input.readUInt32();
               break;
             }
             case 48: {
@@ -636,7 +612,7 @@ public final class PlayerLoginReqOuterClass {
             }
             case 7272: {
 
-              kDIHPMJOCPG_ = input.readUInt32();
+              subChannelId_ = input.readUInt32();
               break;
             }
             case 7304: {
@@ -678,7 +654,7 @@ public final class PlayerLoginReqOuterClass {
             }
             case 9496: {
 
-              lFPHHMGKIIP_ = input.readUInt32();
+              regPlatform_ = input.readUInt32();
               break;
             }
             case 10050: {
@@ -690,7 +666,7 @@ public final class PlayerLoginReqOuterClass {
             case 10818: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              dOAPGNNFLBJ_ = s;
+              cps_ = s;
               break;
             }
             case 11056: {
@@ -786,15 +762,15 @@ public final class PlayerLoginReqOuterClass {
               emu.grasscutter.net.proto.PlayerLoginReqOuterClass.PlayerLoginReq.class, emu.grasscutter.net.proto.PlayerLoginReqOuterClass.PlayerLoginReq.Builder.class);
     }
 
-    public static final int KDIHPMJOCPG_FIELD_NUMBER = 909;
-    private int kDIHPMJOCPG_;
+    public static final int SUB_CHANNEL_ID_FIELD_NUMBER = 909;
+    private int subChannelId_;
     /**
-     * <code>uint32 KDIHPMJOCPG = 909;</code>
-     * @return The kDIHPMJOCPG.
+     * <code>uint32 sub_channel_id = 909;</code>
+     * @return The subChannelId.
      */
     @java.lang.Override
-    public int getKDIHPMJOCPG() {
-      return kDIHPMJOCPG_;
+    public int getSubChannelId() {
+      return subChannelId_;
     }
 
     public static final int PNJNCCNPILL_FIELD_NUMBER = 2033;
@@ -860,10 +836,6 @@ public final class PlayerLoginReqOuterClass {
     public static final int JKPKMFPELKK_FIELD_NUMBER = 778;
     private volatile java.lang.Object jKPKMFPELKK_;
     /**
-     * <pre>
-     * not work
-     * </pre>
-     *
      * <code>string JKPKMFPELKK = 778;</code>
      * @return The jKPKMFPELKK.
      */
@@ -881,10 +853,6 @@ public final class PlayerLoginReqOuterClass {
       }
     }
     /**
-     * <pre>
-     * not work
-     * </pre>
-     *
      * <code>string JKPKMFPELKK = 778;</code>
      * @return The bytes for jKPKMFPELKK.
      */
@@ -1075,46 +1043,38 @@ public final class PlayerLoginReqOuterClass {
       }
     }
 
-    public static final int DOAPGNNFLBJ_FIELD_NUMBER = 1352;
-    private volatile java.lang.Object dOAPGNNFLBJ_;
+    public static final int CPS_FIELD_NUMBER = 1352;
+    private volatile java.lang.Object cps_;
     /**
-     * <pre>
-     * not work
-     * </pre>
-     *
-     * <code>string DOAPGNNFLBJ = 1352;</code>
-     * @return The dOAPGNNFLBJ.
+     * <code>string cps = 1352;</code>
+     * @return The cps.
      */
     @java.lang.Override
-    public java.lang.String getDOAPGNNFLBJ() {
-      java.lang.Object ref = dOAPGNNFLBJ_;
+    public java.lang.String getCps() {
+      java.lang.Object ref = cps_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        dOAPGNNFLBJ_ = s;
+        cps_ = s;
         return s;
       }
     }
     /**
-     * <pre>
-     * not work
-     * </pre>
-     *
-     * <code>string DOAPGNNFLBJ = 1352;</code>
-     * @return The bytes for dOAPGNNFLBJ.
+     * <code>string cps = 1352;</code>
+     * @return The bytes for cps.
      */
     @java.lang.Override
     public com.google.protobuf.ByteString
-        getDOAPGNNFLBJBytes() {
-      java.lang.Object ref = dOAPGNNFLBJ_;
+        getCpsBytes() {
+      java.lang.Object ref = cps_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        dOAPGNNFLBJ_ = b;
+        cps_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -1396,10 +1356,6 @@ public final class PlayerLoginReqOuterClass {
     public static final int CLIENT_VERSION_FIELD_NUMBER = 3;
     private volatile java.lang.Object clientVersion_;
     /**
-     * <pre>
-     * ENNPHCJEFFC bruh finally got it right
-     * </pre>
-     *
      * <code>string client_version = 3;</code>
      * @return The clientVersion.
      */
@@ -1417,10 +1373,6 @@ public final class PlayerLoginReqOuterClass {
       }
     }
     /**
-     * <pre>
-     * ENNPHCJEFFC bruh finally got it right
-     * </pre>
-     *
      * <code>string client_version = 3;</code>
      * @return The bytes for clientVersion.
      */
@@ -1657,15 +1609,15 @@ public final class PlayerLoginReqOuterClass {
       return tag_;
     }
 
-    public static final int CIJNPHDIOND_FIELD_NUMBER = 5;
-    private int cIJNPHDIOND_;
+    public static final int ACCOUNT_TYPE_FIELD_NUMBER = 5;
+    private int accountType_;
     /**
-     * <code>uint32 CIJNPHDIOND = 5;</code>
-     * @return The cIJNPHDIOND.
+     * <code>uint32 account_type = 5;</code>
+     * @return The accountType.
      */
     @java.lang.Override
-    public int getCIJNPHDIOND() {
-      return cIJNPHDIOND_;
+    public int getAccountType() {
+      return accountType_;
     }
 
     public static final int CLIENT_DATA_VERSION_FIELD_NUMBER = 1098;
@@ -1777,15 +1729,15 @@ public final class PlayerLoginReqOuterClass {
       return securityCmdReply_;
     }
 
-    public static final int LFPHHMGKIIP_FIELD_NUMBER = 1187;
-    private int lFPHHMGKIIP_;
+    public static final int REG_PLATFORM_FIELD_NUMBER = 1187;
+    private int regPlatform_;
     /**
-     * <code>uint32 LFPHHMGKIIP = 1187;</code>
-     * @return The lFPHHMGKIIP.
+     * <code>uint32 reg_platform = 1187;</code>
+     * @return The regPlatform.
      */
     @java.lang.Override
-    public int getLFPHHMGKIIP() {
-      return lFPHHMGKIIP_;
+    public int getRegPlatform() {
+      return regPlatform_;
     }
 
     public static final int BIRTHDAY_FIELD_NUMBER = 1256;
@@ -1852,8 +1804,8 @@ public final class PlayerLoginReqOuterClass {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(accountUid_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 4, accountUid_);
       }
-      if (cIJNPHDIOND_ != 0) {
-        output.writeUInt32(5, cIJNPHDIOND_);
+      if (accountType_ != 0) {
+        output.writeUInt32(5, accountType_);
       }
       if (isGuest_ != false) {
         output.writeBool(6, isGuest_);
@@ -1906,8 +1858,8 @@ public final class PlayerLoginReqOuterClass {
       if (fIDMBJJPBEH_ != 0) {
         output.writeUInt32(832, fIDMBJJPBEH_);
       }
-      if (kDIHPMJOCPG_ != 0) {
-        output.writeUInt32(909, kDIHPMJOCPG_);
+      if (subChannelId_ != 0) {
+        output.writeUInt32(909, subChannelId_);
       }
       if (channelId_ != 0) {
         output.writeUInt32(913, channelId_);
@@ -1930,14 +1882,14 @@ public final class PlayerLoginReqOuterClass {
       if (fMOKLFNAOOK_ != 0) {
         output.writeUInt32(1173, fMOKLFNAOOK_);
       }
-      if (lFPHHMGKIIP_ != 0) {
-        output.writeUInt32(1187, lFPHHMGKIIP_);
+      if (regPlatform_ != 0) {
+        output.writeUInt32(1187, regPlatform_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(birthday_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1256, birthday_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(dOAPGNNFLBJ_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1352, dOAPGNNFLBJ_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(cps_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1352, cps_);
       }
       if (isTransfer_ != false) {
         output.writeBool(1382, isTransfer_);
@@ -1990,9 +1942,9 @@ public final class PlayerLoginReqOuterClass {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(accountUid_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, accountUid_);
       }
-      if (cIJNPHDIOND_ != 0) {
+      if (accountType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, cIJNPHDIOND_);
+          .computeUInt32Size(5, accountType_);
       }
       if (isGuest_ != false) {
         size += com.google.protobuf.CodedOutputStream
@@ -2054,9 +2006,9 @@ public final class PlayerLoginReqOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(832, fIDMBJJPBEH_);
       }
-      if (kDIHPMJOCPG_ != 0) {
+      if (subChannelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(909, kDIHPMJOCPG_);
+          .computeUInt32Size(909, subChannelId_);
       }
       if (channelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -2084,15 +2036,15 @@ public final class PlayerLoginReqOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(1173, fMOKLFNAOOK_);
       }
-      if (lFPHHMGKIIP_ != 0) {
+      if (regPlatform_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1187, lFPHHMGKIIP_);
+          .computeUInt32Size(1187, regPlatform_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(birthday_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1256, birthday_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(dOAPGNNFLBJ_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1352, dOAPGNNFLBJ_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(cps_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1352, cps_);
       }
       if (isTransfer_ != false) {
         size += com.google.protobuf.CodedOutputStream
@@ -2146,8 +2098,8 @@ public final class PlayerLoginReqOuterClass {
       }
       emu.grasscutter.net.proto.PlayerLoginReqOuterClass.PlayerLoginReq other = (emu.grasscutter.net.proto.PlayerLoginReqOuterClass.PlayerLoginReq) obj;
 
-      if (getKDIHPMJOCPG()
-          != other.getKDIHPMJOCPG()) return false;
+      if (getSubChannelId()
+          != other.getSubChannelId()) return false;
       if (getPNJNCCNPILL()
           != other.getPNJNCCNPILL()) return false;
       if (!getToken()
@@ -2178,8 +2130,8 @@ public final class PlayerLoginReqOuterClass {
           != other.getFGAKKMHIKHF()) return false;
       if (!getSystemVersion()
           .equals(other.getSystemVersion())) return false;
-      if (!getDOAPGNNFLBJ()
-          .equals(other.getDOAPGNNFLBJ())) return false;
+      if (!getCps()
+          .equals(other.getCps())) return false;
       if (!getAccountUid()
           .equals(other.getAccountUid())) return false;
       if (getTargetUid()
@@ -2222,8 +2174,8 @@ public final class PlayerLoginReqOuterClass {
           != other.getFMOKLFNAOOK()) return false;
       if (getTag()
           != other.getTag()) return false;
-      if (getCIJNPHDIOND()
-          != other.getCIJNPHDIOND()) return false;
+      if (getAccountType()
+          != other.getAccountType()) return false;
       if (getClientDataVersion()
           != other.getClientDataVersion()) return false;
       if (!getDABNCDNACJK()
@@ -2234,8 +2186,8 @@ public final class PlayerLoginReqOuterClass {
           != other.getPlatformType()) return false;
       if (!getSecurityCmdReply()
           .equals(other.getSecurityCmdReply())) return false;
-      if (getLFPHHMGKIIP()
-          != other.getLFPHHMGKIIP()) return false;
+      if (getRegPlatform()
+          != other.getRegPlatform()) return false;
       if (!getBirthday()
           .equals(other.getBirthday())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -2249,8 +2201,8 @@ public final class PlayerLoginReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + KDIHPMJOCPG_FIELD_NUMBER;
-      hash = (53 * hash) + getKDIHPMJOCPG();
+      hash = (37 * hash) + SUB_CHANNEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSubChannelId();
       hash = (37 * hash) + PNJNCCNPILL_FIELD_NUMBER;
       hash = (53 * hash) + getPNJNCCNPILL();
       hash = (37 * hash) + TOKEN_FIELD_NUMBER;
@@ -2281,8 +2233,8 @@ public final class PlayerLoginReqOuterClass {
       hash = (53 * hash) + getFGAKKMHIKHF();
       hash = (37 * hash) + SYSTEM_VERSION_FIELD_NUMBER;
       hash = (53 * hash) + getSystemVersion().hashCode();
-      hash = (37 * hash) + DOAPGNNFLBJ_FIELD_NUMBER;
-      hash = (53 * hash) + getDOAPGNNFLBJ().hashCode();
+      hash = (37 * hash) + CPS_FIELD_NUMBER;
+      hash = (53 * hash) + getCps().hashCode();
       hash = (37 * hash) + ACCOUNT_UID_FIELD_NUMBER;
       hash = (53 * hash) + getAccountUid().hashCode();
       hash = (37 * hash) + TARGET_UID_FIELD_NUMBER;
@@ -2327,8 +2279,8 @@ public final class PlayerLoginReqOuterClass {
       hash = (53 * hash) + getFMOKLFNAOOK();
       hash = (37 * hash) + TAG_FIELD_NUMBER;
       hash = (53 * hash) + getTag();
-      hash = (37 * hash) + CIJNPHDIOND_FIELD_NUMBER;
-      hash = (53 * hash) + getCIJNPHDIOND();
+      hash = (37 * hash) + ACCOUNT_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getAccountType();
       hash = (37 * hash) + CLIENT_DATA_VERSION_FIELD_NUMBER;
       hash = (53 * hash) + getClientDataVersion();
       hash = (37 * hash) + DABNCDNACJK_FIELD_NUMBER;
@@ -2339,8 +2291,8 @@ public final class PlayerLoginReqOuterClass {
       hash = (53 * hash) + getPlatformType();
       hash = (37 * hash) + SECURITY_CMD_REPLY_FIELD_NUMBER;
       hash = (53 * hash) + getSecurityCmdReply().hashCode();
-      hash = (37 * hash) + LFPHHMGKIIP_FIELD_NUMBER;
-      hash = (53 * hash) + getLFPHHMGKIIP();
+      hash = (37 * hash) + REG_PLATFORM_FIELD_NUMBER;
+      hash = (53 * hash) + getRegPlatform();
       hash = (37 * hash) + BIRTHDAY_FIELD_NUMBER;
       hash = (53 * hash) + getBirthday().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -2481,7 +2433,7 @@ public final class PlayerLoginReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        kDIHPMJOCPG_ = 0;
+        subChannelId_ = 0;
 
         pNJNCCNPILL_ = 0;
 
@@ -2515,7 +2467,7 @@ public final class PlayerLoginReqOuterClass {
 
         systemVersion_ = "";
 
-        dOAPGNNFLBJ_ = "";
+        cps_ = "";
 
         accountUid_ = "";
 
@@ -2559,7 +2511,7 @@ public final class PlayerLoginReqOuterClass {
 
         tag_ = 0;
 
-        cIJNPHDIOND_ = 0;
+        accountType_ = 0;
 
         clientDataVersion_ = 0;
 
@@ -2571,7 +2523,7 @@ public final class PlayerLoginReqOuterClass {
 
         securityCmdReply_ = com.google.protobuf.ByteString.EMPTY;
 
-        lFPHHMGKIIP_ = 0;
+        regPlatform_ = 0;
 
         birthday_ = "";
 
@@ -2601,7 +2553,7 @@ public final class PlayerLoginReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PlayerLoginReqOuterClass.PlayerLoginReq buildPartial() {
         emu.grasscutter.net.proto.PlayerLoginReqOuterClass.PlayerLoginReq result = new emu.grasscutter.net.proto.PlayerLoginReqOuterClass.PlayerLoginReq(this);
-        result.kDIHPMJOCPG_ = kDIHPMJOCPG_;
+        result.subChannelId_ = subChannelId_;
         result.pNJNCCNPILL_ = pNJNCCNPILL_;
         result.token_ = token_;
         result.isGuest_ = isGuest_;
@@ -2622,7 +2574,7 @@ public final class PlayerLoginReqOuterClass {
         result.cJHEEAGCFJG_ = cJHEEAGCFJG_;
         result.fGAKKMHIKHF_ = fGAKKMHIKHF_;
         result.systemVersion_ = systemVersion_;
-        result.dOAPGNNFLBJ_ = dOAPGNNFLBJ_;
+        result.cps_ = cps_;
         result.accountUid_ = accountUid_;
         result.targetUid_ = targetUid_;
         result.securityLibraryMd5_ = securityLibraryMd5_;
@@ -2644,13 +2596,13 @@ public final class PlayerLoginReqOuterClass {
         result.deviceName_ = deviceName_;
         result.fMOKLFNAOOK_ = fMOKLFNAOOK_;
         result.tag_ = tag_;
-        result.cIJNPHDIOND_ = cIJNPHDIOND_;
+        result.accountType_ = accountType_;
         result.clientDataVersion_ = clientDataVersion_;
         result.dABNCDNACJK_ = dABNCDNACJK_;
         result.deviceUuid_ = deviceUuid_;
         result.platformType_ = platformType_;
         result.securityCmdReply_ = securityCmdReply_;
-        result.lFPHHMGKIIP_ = lFPHHMGKIIP_;
+        result.regPlatform_ = regPlatform_;
         result.birthday_ = birthday_;
         onBuilt();
         return result;
@@ -2700,8 +2652,8 @@ public final class PlayerLoginReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PlayerLoginReqOuterClass.PlayerLoginReq other) {
         if (other == emu.grasscutter.net.proto.PlayerLoginReqOuterClass.PlayerLoginReq.getDefaultInstance()) return this;
-        if (other.getKDIHPMJOCPG() != 0) {
-          setKDIHPMJOCPG(other.getKDIHPMJOCPG());
+        if (other.getSubChannelId() != 0) {
+          setSubChannelId(other.getSubChannelId());
         }
         if (other.getPNJNCCNPILL() != 0) {
           setPNJNCCNPILL(other.getPNJNCCNPILL());
@@ -2743,8 +2695,8 @@ public final class PlayerLoginReqOuterClass {
           systemVersion_ = other.systemVersion_;
           onChanged();
         }
-        if (!other.getDOAPGNNFLBJ().isEmpty()) {
-          dOAPGNNFLBJ_ = other.dOAPGNNFLBJ_;
+        if (!other.getCps().isEmpty()) {
+          cps_ = other.cps_;
           onChanged();
         }
         if (!other.getAccountUid().isEmpty()) {
@@ -2821,8 +2773,8 @@ public final class PlayerLoginReqOuterClass {
         if (other.getTag() != 0) {
           setTag(other.getTag());
         }
-        if (other.getCIJNPHDIOND() != 0) {
-          setCIJNPHDIOND(other.getCIJNPHDIOND());
+        if (other.getAccountType() != 0) {
+          setAccountType(other.getAccountType());
         }
         if (other.getClientDataVersion() != 0) {
           setClientDataVersion(other.getClientDataVersion());
@@ -2841,8 +2793,8 @@ public final class PlayerLoginReqOuterClass {
         if (other.getSecurityCmdReply() != com.google.protobuf.ByteString.EMPTY) {
           setSecurityCmdReply(other.getSecurityCmdReply());
         }
-        if (other.getLFPHHMGKIIP() != 0) {
-          setLFPHHMGKIIP(other.getLFPHHMGKIIP());
+        if (other.getRegPlatform() != 0) {
+          setRegPlatform(other.getRegPlatform());
         }
         if (!other.getBirthday().isEmpty()) {
           birthday_ = other.birthday_;
@@ -2877,33 +2829,33 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
 
-      private int kDIHPMJOCPG_ ;
+      private int subChannelId_ ;
       /**
-       * <code>uint32 KDIHPMJOCPG = 909;</code>
-       * @return The kDIHPMJOCPG.
+       * <code>uint32 sub_channel_id = 909;</code>
+       * @return The subChannelId.
        */
       @java.lang.Override
-      public int getKDIHPMJOCPG() {
-        return kDIHPMJOCPG_;
+      public int getSubChannelId() {
+        return subChannelId_;
       }
       /**
-       * <code>uint32 KDIHPMJOCPG = 909;</code>
-       * @param value The kDIHPMJOCPG to set.
+       * <code>uint32 sub_channel_id = 909;</code>
+       * @param value The subChannelId to set.
        * @return This builder for chaining.
        */
-      public Builder setKDIHPMJOCPG(int value) {
+      public Builder setSubChannelId(int value) {
         
-        kDIHPMJOCPG_ = value;
+        subChannelId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 KDIHPMJOCPG = 909;</code>
+       * <code>uint32 sub_channel_id = 909;</code>
        * @return This builder for chaining.
        */
-      public Builder clearKDIHPMJOCPG() {
+      public Builder clearSubChannelId() {
         
-        kDIHPMJOCPG_ = 0;
+        subChannelId_ = 0;
         onChanged();
         return this;
       }
@@ -3048,10 +3000,6 @@ public final class PlayerLoginReqOuterClass {
 
       private java.lang.Object jKPKMFPELKK_ = "";
       /**
-       * <pre>
-       * not work
-       * </pre>
-       *
        * <code>string JKPKMFPELKK = 778;</code>
        * @return The jKPKMFPELKK.
        */
@@ -3068,10 +3016,6 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <pre>
-       * not work
-       * </pre>
-       *
        * <code>string JKPKMFPELKK = 778;</code>
        * @return The bytes for jKPKMFPELKK.
        */
@@ -3089,10 +3033,6 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <pre>
-       * not work
-       * </pre>
-       *
        * <code>string JKPKMFPELKK = 778;</code>
        * @param value The jKPKMFPELKK to set.
        * @return This builder for chaining.
@@ -3108,10 +3048,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * not work
-       * </pre>
-       *
        * <code>string JKPKMFPELKK = 778;</code>
        * @return This builder for chaining.
        */
@@ -3122,10 +3058,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * not work
-       * </pre>
-       *
        * <code>string JKPKMFPELKK = 778;</code>
        * @param value The bytes for jKPKMFPELKK to set.
        * @return This builder for chaining.
@@ -3656,98 +3588,78 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
 
-      private java.lang.Object dOAPGNNFLBJ_ = "";
+      private java.lang.Object cps_ = "";
       /**
-       * <pre>
-       * not work
-       * </pre>
-       *
-       * <code>string DOAPGNNFLBJ = 1352;</code>
-       * @return The dOAPGNNFLBJ.
+       * <code>string cps = 1352;</code>
+       * @return The cps.
        */
-      public java.lang.String getDOAPGNNFLBJ() {
-        java.lang.Object ref = dOAPGNNFLBJ_;
+      public java.lang.String getCps() {
+        java.lang.Object ref = cps_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          dOAPGNNFLBJ_ = s;
+          cps_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <pre>
-       * not work
-       * </pre>
-       *
-       * <code>string DOAPGNNFLBJ = 1352;</code>
-       * @return The bytes for dOAPGNNFLBJ.
+       * <code>string cps = 1352;</code>
+       * @return The bytes for cps.
        */
       public com.google.protobuf.ByteString
-          getDOAPGNNFLBJBytes() {
-        java.lang.Object ref = dOAPGNNFLBJ_;
+          getCpsBytes() {
+        java.lang.Object ref = cps_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          dOAPGNNFLBJ_ = b;
+          cps_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <pre>
-       * not work
-       * </pre>
-       *
-       * <code>string DOAPGNNFLBJ = 1352;</code>
-       * @param value The dOAPGNNFLBJ to set.
+       * <code>string cps = 1352;</code>
+       * @param value The cps to set.
        * @return This builder for chaining.
        */
-      public Builder setDOAPGNNFLBJ(
+      public Builder setCps(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        dOAPGNNFLBJ_ = value;
+        cps_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * not work
-       * </pre>
-       *
-       * <code>string DOAPGNNFLBJ = 1352;</code>
+       * <code>string cps = 1352;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDOAPGNNFLBJ() {
+      public Builder clearCps() {
         
-        dOAPGNNFLBJ_ = getDefaultInstance().getDOAPGNNFLBJ();
+        cps_ = getDefaultInstance().getCps();
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * not work
-       * </pre>
-       *
-       * <code>string DOAPGNNFLBJ = 1352;</code>
-       * @param value The bytes for dOAPGNNFLBJ to set.
+       * <code>string cps = 1352;</code>
+       * @param value The bytes for cps to set.
        * @return This builder for chaining.
        */
-      public Builder setDOAPGNNFLBJBytes(
+      public Builder setCpsBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        dOAPGNNFLBJ_ = value;
+        cps_ = value;
         onChanged();
         return this;
       }
@@ -4337,10 +4249,6 @@ public final class PlayerLoginReqOuterClass {
 
       private java.lang.Object clientVersion_ = "";
       /**
-       * <pre>
-       * ENNPHCJEFFC bruh finally got it right
-       * </pre>
-       *
        * <code>string client_version = 3;</code>
        * @return The clientVersion.
        */
@@ -4357,10 +4265,6 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <pre>
-       * ENNPHCJEFFC bruh finally got it right
-       * </pre>
-       *
        * <code>string client_version = 3;</code>
        * @return The bytes for clientVersion.
        */
@@ -4378,10 +4282,6 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <pre>
-       * ENNPHCJEFFC bruh finally got it right
-       * </pre>
-       *
        * <code>string client_version = 3;</code>
        * @param value The clientVersion to set.
        * @return This builder for chaining.
@@ -4397,10 +4297,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * ENNPHCJEFFC bruh finally got it right
-       * </pre>
-       *
        * <code>string client_version = 3;</code>
        * @return This builder for chaining.
        */
@@ -4411,10 +4307,6 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * ENNPHCJEFFC bruh finally got it right
-       * </pre>
-       *
        * <code>string client_version = 3;</code>
        * @param value The bytes for clientVersion to set.
        * @return This builder for chaining.
@@ -4924,33 +4816,33 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
 
-      private int cIJNPHDIOND_ ;
+      private int accountType_ ;
       /**
-       * <code>uint32 CIJNPHDIOND = 5;</code>
-       * @return The cIJNPHDIOND.
+       * <code>uint32 account_type = 5;</code>
+       * @return The accountType.
        */
       @java.lang.Override
-      public int getCIJNPHDIOND() {
-        return cIJNPHDIOND_;
+      public int getAccountType() {
+        return accountType_;
       }
       /**
-       * <code>uint32 CIJNPHDIOND = 5;</code>
-       * @param value The cIJNPHDIOND to set.
+       * <code>uint32 account_type = 5;</code>
+       * @param value The accountType to set.
        * @return This builder for chaining.
        */
-      public Builder setCIJNPHDIOND(int value) {
+      public Builder setAccountType(int value) {
         
-        cIJNPHDIOND_ = value;
+        accountType_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 CIJNPHDIOND = 5;</code>
+       * <code>uint32 account_type = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCIJNPHDIOND() {
+      public Builder clearAccountType() {
         
-        cIJNPHDIOND_ = 0;
+        accountType_ = 0;
         onChanged();
         return this;
       }
@@ -5203,33 +5095,33 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
 
-      private int lFPHHMGKIIP_ ;
+      private int regPlatform_ ;
       /**
-       * <code>uint32 LFPHHMGKIIP = 1187;</code>
-       * @return The lFPHHMGKIIP.
+       * <code>uint32 reg_platform = 1187;</code>
+       * @return The regPlatform.
        */
       @java.lang.Override
-      public int getLFPHHMGKIIP() {
-        return lFPHHMGKIIP_;
+      public int getRegPlatform() {
+        return regPlatform_;
       }
       /**
-       * <code>uint32 LFPHHMGKIIP = 1187;</code>
-       * @param value The lFPHHMGKIIP to set.
+       * <code>uint32 reg_platform = 1187;</code>
+       * @param value The regPlatform to set.
        * @return This builder for chaining.
        */
-      public Builder setLFPHHMGKIIP(int value) {
+      public Builder setRegPlatform(int value) {
         
-        lFPHHMGKIIP_ = value;
+        regPlatform_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 LFPHHMGKIIP = 1187;</code>
+       * <code>uint32 reg_platform = 1187;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLFPHHMGKIIP() {
+      public Builder clearRegPlatform() {
         
-        lFPHHMGKIIP_ = 0;
+        regPlatform_ = 0;
         onChanged();
         return this;
       }
@@ -5377,34 +5269,34 @@ public final class PlayerLoginReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024PlayerLoginReq.proto\032\030AdjustTrackingIn" +
-      "fo.proto\032\024TrackingIOInfo.proto\"\203\010\n\016Playe" +
-      "rLoginReq\022\024\n\013KDIHPMJOCPG\030\215\007 \001(\r\022\024\n\013PNJNC" +
-      "CNPILL\030\361\017 \001(\r\022\r\n\005token\030\010 \001(\t\022\020\n\010is_guest" +
-      "\030\006 \001(\010\022\024\n\013JKPKMFPELKK\030\212\006 \001(\t\022\022\n\tonline_i" +
-      "d\030\365\r \001(\t\0222\n\024adjust_tracking_info\030\332\017 \001(\0132" +
-      "\023.AdjustTrackingInfo\022\022\n\nlogin_rand\030\014 \001(\004" +
-      "\022*\n\020tracking_io_info\030\362\003 \001(\0132\017.TrackingIO" +
-      "Info\022\025\n\rlanguage_type\030\007 \001(\r\022\024\n\013CJHEEAGCF" +
-      "JG\030\337\017 \001(\r\022\024\n\013FGAKKMHIKHF\030\275\006 \001(\r\022\026\n\016syste" +
-      "m_version\030\002 \001(\t\022\024\n\013DOAPGNNFLBJ\030\310\n \001(\t\022\023\n" +
-      "\013account_uid\030\004 \001(\t\022\022\n\ntarget_uid\030\016 \001(\r\022\035" +
-      "\n\024security_library_md5\030\376\001 \001(\t\022\025\n\014country" +
-      "_code\030\250\007 \001(\t\022\024\n\013FIDMBJJPBEH\030\300\006 \001(\r\022\021\n\010ch" +
-      "ecksum\030\241\017 \001(\t\022\023\n\013device_info\030\013 \001(\t\022\024\n\013JL" +
-      "OPICGGPBP\030\322\007 \001(\014\022 \n\027checksum_client_vers" +
-      "ion\030\267\006 \001(\t\022\024\n\013ECJMGOCEABB\030\362\014 \001(\r\022\026\n\016clie" +
-      "nt_version\030\003 \001(\t\022\017\n\006psn_id\030\345\010 \001(\t\022\021\n\tis_" +
-      "editor\030\n \001(\010\022\037\n\026environment_error_code\030\232" +
-      "\007 \001(\014\022\020\n\010platform\030\001 \001(\t\022\023\n\nchannel_id\030\221\007" +
-      " \001(\r\022\024\n\013is_transfer\030\346\n \001(\010\022\034\n\023client_ver" +
-      "ison_hash\030\357\013 \001(\t\022\023\n\013device_name\030\t \001(\t\022\024\n" +
-      "\013FMOKLFNAOOK\030\225\t \001(\r\022\014\n\003tag\030\351\016 \001(\r\022\023\n\013CIJ" +
-      "NPHDIOND\030\005 \001(\r\022\034\n\023client_data_version\030\312\010" +
-      " \001(\r\022\024\n\013DABNCDNACJK\030\313\004 \001(\t\022\023\n\013device_uui" +
-      "d\030\r \001(\t\022\025\n\rplatform_type\030\017 \001(\r\022\033\n\022securi" +
-      "ty_cmd_reply\030\247\017 \001(\014\022\024\n\013LFPHHMGKIIP\030\243\t \001(" +
-      "\r\022\021\n\010birthday\030\350\t \001(\tB\033\n\031emu.grasscutter." +
-      "net.protob\006proto3"
+      "fo.proto\032\024TrackingIOInfo.proto\"\200\010\n\016Playe" +
+      "rLoginReq\022\027\n\016sub_channel_id\030\215\007 \001(\r\022\024\n\013PN" +
+      "JNCCNPILL\030\361\017 \001(\r\022\r\n\005token\030\010 \001(\t\022\020\n\010is_gu" +
+      "est\030\006 \001(\010\022\024\n\013JKPKMFPELKK\030\212\006 \001(\t\022\022\n\tonlin" +
+      "e_id\030\365\r \001(\t\0222\n\024adjust_tracking_info\030\332\017 \001" +
+      "(\0132\023.AdjustTrackingInfo\022\022\n\nlogin_rand\030\014 " +
+      "\001(\004\022*\n\020tracking_io_info\030\362\003 \001(\0132\017.Trackin" +
+      "gIOInfo\022\025\n\rlanguage_type\030\007 \001(\r\022\024\n\013CJHEEA" +
+      "GCFJG\030\337\017 \001(\r\022\024\n\013FGAKKMHIKHF\030\275\006 \001(\r\022\026\n\016sy" +
+      "stem_version\030\002 \001(\t\022\014\n\003cps\030\310\n \001(\t\022\023\n\013acco" +
+      "unt_uid\030\004 \001(\t\022\022\n\ntarget_uid\030\016 \001(\r\022\035\n\024sec" +
+      "urity_library_md5\030\376\001 \001(\t\022\025\n\014country_code" +
+      "\030\250\007 \001(\t\022\024\n\013FIDMBJJPBEH\030\300\006 \001(\r\022\021\n\010checksu" +
+      "m\030\241\017 \001(\t\022\023\n\013device_info\030\013 \001(\t\022\024\n\013JLOPICG" +
+      "GPBP\030\322\007 \001(\014\022 \n\027checksum_client_version\030\267" +
+      "\006 \001(\t\022\024\n\013ECJMGOCEABB\030\362\014 \001(\r\022\026\n\016client_ve" +
+      "rsion\030\003 \001(\t\022\017\n\006psn_id\030\345\010 \001(\t\022\021\n\tis_edito" +
+      "r\030\n \001(\010\022\037\n\026environment_error_code\030\232\007 \001(\014" +
+      "\022\020\n\010platform\030\001 \001(\t\022\023\n\nchannel_id\030\221\007 \001(\r\022" +
+      "\024\n\013is_transfer\030\346\n \001(\010\022\034\n\023client_verison_" +
+      "hash\030\357\013 \001(\t\022\023\n\013device_name\030\t \001(\t\022\024\n\013FMOK" +
+      "LFNAOOK\030\225\t \001(\r\022\014\n\003tag\030\351\016 \001(\r\022\024\n\014account_" +
+      "type\030\005 \001(\r\022\034\n\023client_data_version\030\312\010 \001(\r" +
+      "\022\024\n\013DABNCDNACJK\030\313\004 \001(\t\022\023\n\013device_uuid\030\r " +
+      "\001(\t\022\025\n\rplatform_type\030\017 \001(\r\022\033\n\022security_c" +
+      "md_reply\030\247\017 \001(\014\022\025\n\014reg_platform\030\243\t \001(\r\022\021" +
+      "\n\010birthday\030\350\t \001(\tB\033\n\031emu.grasscutter.net" +
+      ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -5417,7 +5309,7 @@ public final class PlayerLoginReqOuterClass {
     internal_static_PlayerLoginReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerLoginReq_descriptor,
-        new java.lang.String[] { "KDIHPMJOCPG", "PNJNCCNPILL", "Token", "IsGuest", "JKPKMFPELKK", "OnlineId", "AdjustTrackingInfo", "LoginRand", "TrackingIoInfo", "LanguageType", "CJHEEAGCFJG", "FGAKKMHIKHF", "SystemVersion", "DOAPGNNFLBJ", "AccountUid", "TargetUid", "SecurityLibraryMd5", "CountryCode", "FIDMBJJPBEH", "Checksum", "DeviceInfo", "JLOPICGGPBP", "ChecksumClientVersion", "ECJMGOCEABB", "ClientVersion", "PsnId", "IsEditor", "EnvironmentErrorCode", "Platform", "ChannelId", "IsTransfer", "ClientVerisonHash", "DeviceName", "FMOKLFNAOOK", "Tag", "CIJNPHDIOND", "ClientDataVersion", "DABNCDNACJK", "DeviceUuid", "PlatformType", "SecurityCmdReply", "LFPHHMGKIIP", "Birthday", });
+        new java.lang.String[] { "SubChannelId", "PNJNCCNPILL", "Token", "IsGuest", "JKPKMFPELKK", "OnlineId", "AdjustTrackingInfo", "LoginRand", "TrackingIoInfo", "LanguageType", "CJHEEAGCFJG", "FGAKKMHIKHF", "SystemVersion", "Cps", "AccountUid", "TargetUid", "SecurityLibraryMd5", "CountryCode", "FIDMBJJPBEH", "Checksum", "DeviceInfo", "JLOPICGGPBP", "ChecksumClientVersion", "ECJMGOCEABB", "ClientVersion", "PsnId", "IsEditor", "EnvironmentErrorCode", "Platform", "ChannelId", "IsTransfer", "ClientVerisonHash", "DeviceName", "FMOKLFNAOOK", "Tag", "AccountType", "ClientDataVersion", "DABNCDNACJK", "DeviceUuid", "PlatformType", "SecurityCmdReply", "RegPlatform", "Birthday", });
     emu.grasscutter.net.proto.AdjustTrackingInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.TrackingIOInfoOuterClass.getDescriptor();
   }

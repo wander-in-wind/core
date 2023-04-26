@@ -61,24 +61,16 @@ public final class GetPlayerTokenRspOuterClass {
     com.google.protobuf.ByteString getExtraBinData();
 
     /**
-     * <pre>
-     * CIJNPHDIOND
-     * </pre>
-     *
      * <code>uint32 account_type = 12;</code>
      * @return The accountType.
      */
     int getAccountType();
 
     /**
-     * <pre>
-     * KDIHPMJOCPG
-     * </pre>
-     *
-     * <code>uint32 blackUidEndTime = 834;</code>
-     * @return The blackUidEndTime.
+     * <code>uint32 sub_channel_id = 834;</code>
+     * @return The subChannelId.
      */
-    int getBlackUidEndTime();
+    int getSubChannelId();
 
     /**
      * <code>uint32 platform_type = 1;</code>
@@ -111,10 +103,14 @@ public final class GetPlayerTokenRspOuterClass {
         getAccountUidBytes();
 
     /**
-     * <code>uint32 IEPOFPNOOKD = 1572;</code>
-     * @return The iEPOFPNOOKD.
+     * <pre>
+     *IEPOFPNOOKD
+     * </pre>
+     *
+     * <code>uint32 blackUidEndTime = 1572;</code>
+     * @return The blackUidEndTime.
      */
-    int getIEPOFPNOOKD();
+    int getBlackUidEndTime();
 
     /**
      * <code>string token = 15;</code>
@@ -135,10 +131,6 @@ public final class GetPlayerTokenRspOuterClass {
     int getKeyId();
 
     /**
-     * <pre>
-     * LFPHHMGKIIP
-     * </pre>
-     *
      * <code>uint32 reg_platform = 1474;</code>
      * @return The regPlatform.
      */
@@ -493,7 +485,7 @@ public final class GetPlayerTokenRspOuterClass {
             }
             case 6672: {
 
-              blackUidEndTime_ = input.readUInt32();
+              subChannelId_ = input.readUInt32();
               break;
             }
             case 7258: {
@@ -547,7 +539,7 @@ public final class GetPlayerTokenRspOuterClass {
             }
             case 12576: {
 
-              iEPOFPNOOKD_ = input.readUInt32();
+              blackUidEndTime_ = input.readUInt32();
               break;
             }
             case 15048: {
@@ -731,10 +723,6 @@ public final class GetPlayerTokenRspOuterClass {
     public static final int ACCOUNT_TYPE_FIELD_NUMBER = 12;
     private int accountType_;
     /**
-     * <pre>
-     * CIJNPHDIOND
-     * </pre>
-     *
      * <code>uint32 account_type = 12;</code>
      * @return The accountType.
      */
@@ -743,19 +731,15 @@ public final class GetPlayerTokenRspOuterClass {
       return accountType_;
     }
 
-    public static final int BLACKUIDENDTIME_FIELD_NUMBER = 834;
-    private int blackUidEndTime_;
+    public static final int SUB_CHANNEL_ID_FIELD_NUMBER = 834;
+    private int subChannelId_;
     /**
-     * <pre>
-     * KDIHPMJOCPG
-     * </pre>
-     *
-     * <code>uint32 blackUidEndTime = 834;</code>
-     * @return The blackUidEndTime.
+     * <code>uint32 sub_channel_id = 834;</code>
+     * @return The subChannelId.
      */
     @java.lang.Override
-    public int getBlackUidEndTime() {
-      return blackUidEndTime_;
+    public int getSubChannelId() {
+      return subChannelId_;
     }
 
     public static final int PLATFORM_TYPE_FIELD_NUMBER = 1;
@@ -829,15 +813,19 @@ public final class GetPlayerTokenRspOuterClass {
       }
     }
 
-    public static final int IEPOFPNOOKD_FIELD_NUMBER = 1572;
-    private int iEPOFPNOOKD_;
+    public static final int BLACKUIDENDTIME_FIELD_NUMBER = 1572;
+    private int blackUidEndTime_;
     /**
-     * <code>uint32 IEPOFPNOOKD = 1572;</code>
-     * @return The iEPOFPNOOKD.
+     * <pre>
+     *IEPOFPNOOKD
+     * </pre>
+     *
+     * <code>uint32 blackUidEndTime = 1572;</code>
+     * @return The blackUidEndTime.
      */
     @java.lang.Override
-    public int getIEPOFPNOOKD() {
-      return iEPOFPNOOKD_;
+    public int getBlackUidEndTime() {
+      return blackUidEndTime_;
     }
 
     public static final int TOKEN_FIELD_NUMBER = 15;
@@ -892,10 +880,6 @@ public final class GetPlayerTokenRspOuterClass {
     public static final int REG_PLATFORM_FIELD_NUMBER = 1474;
     private int regPlatform_;
     /**
-     * <pre>
-     * LFPHHMGKIIP
-     * </pre>
-     *
      * <code>uint32 reg_platform = 1474;</code>
      * @return The regPlatform.
      */
@@ -1372,8 +1356,8 @@ public final class GetPlayerTokenRspOuterClass {
       for (int i = 0; i < finishCollectionIdList_.size(); i++) {
         output.writeUInt32NoTag(finishCollectionIdList_.getInt(i));
       }
-      if (blackUidEndTime_ != 0) {
-        output.writeUInt32(834, blackUidEndTime_);
+      if (subChannelId_ != 0) {
+        output.writeUInt32(834, subChannelId_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(sign_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 907, sign_);
@@ -1402,8 +1386,8 @@ public final class GetPlayerTokenRspOuterClass {
       if (tag_ != 0) {
         output.writeUInt32(1489, tag_);
       }
-      if (iEPOFPNOOKD_ != 0) {
-        output.writeUInt32(1572, iEPOFPNOOKD_);
+      if (blackUidEndTime_ != 0) {
+        output.writeUInt32(1572, blackUidEndTime_);
       }
       if (eHGCBOCIJPA_ != false) {
         output.writeBool(1881, eHGCBOCIJPA_);
@@ -1499,9 +1483,9 @@ public final class GetPlayerTokenRspOuterClass {
         }
         finishCollectionIdListMemoizedSerializedSize = dataSize;
       }
-      if (blackUidEndTime_ != 0) {
+      if (subChannelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(834, blackUidEndTime_);
+          .computeUInt32Size(834, subChannelId_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(sign_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(907, sign_);
@@ -1535,9 +1519,9 @@ public final class GetPlayerTokenRspOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(1489, tag_);
       }
-      if (iEPOFPNOOKD_ != 0) {
+      if (blackUidEndTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1572, iEPOFPNOOKD_);
+          .computeUInt32Size(1572, blackUidEndTime_);
       }
       if (eHGCBOCIJPA_ != false) {
         size += com.google.protobuf.CodedOutputStream
@@ -1572,8 +1556,8 @@ public final class GetPlayerTokenRspOuterClass {
           .equals(other.getExtraBinData())) return false;
       if (getAccountType()
           != other.getAccountType()) return false;
-      if (getBlackUidEndTime()
-          != other.getBlackUidEndTime()) return false;
+      if (getSubChannelId()
+          != other.getSubChannelId()) return false;
       if (getPlatformType()
           != other.getPlatformType()) return false;
       if (getChannelId()
@@ -1582,8 +1566,8 @@ public final class GetPlayerTokenRspOuterClass {
           != other.getRetcode()) return false;
       if (!getAccountUid()
           .equals(other.getAccountUid())) return false;
-      if (getIEPOFPNOOKD()
-          != other.getIEPOFPNOOKD()) return false;
+      if (getBlackUidEndTime()
+          != other.getBlackUidEndTime()) return false;
       if (!getToken()
           .equals(other.getToken())) return false;
       if (getKeyId()
@@ -1650,8 +1634,8 @@ public final class GetPlayerTokenRspOuterClass {
       hash = (53 * hash) + getExtraBinData().hashCode();
       hash = (37 * hash) + ACCOUNT_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getAccountType();
-      hash = (37 * hash) + BLACKUIDENDTIME_FIELD_NUMBER;
-      hash = (53 * hash) + getBlackUidEndTime();
+      hash = (37 * hash) + SUB_CHANNEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSubChannelId();
       hash = (37 * hash) + PLATFORM_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getPlatformType();
       hash = (37 * hash) + CHANNEL_ID_FIELD_NUMBER;
@@ -1660,8 +1644,8 @@ public final class GetPlayerTokenRspOuterClass {
       hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + ACCOUNT_UID_FIELD_NUMBER;
       hash = (53 * hash) + getAccountUid().hashCode();
-      hash = (37 * hash) + IEPOFPNOOKD_FIELD_NUMBER;
-      hash = (53 * hash) + getIEPOFPNOOKD();
+      hash = (37 * hash) + BLACKUIDENDTIME_FIELD_NUMBER;
+      hash = (53 * hash) + getBlackUidEndTime();
       hash = (37 * hash) + TOKEN_FIELD_NUMBER;
       hash = (53 * hash) + getToken().hashCode();
       hash = (37 * hash) + KEY_ID_FIELD_NUMBER;
@@ -1861,7 +1845,7 @@ public final class GetPlayerTokenRspOuterClass {
 
         accountType_ = 0;
 
-        blackUidEndTime_ = 0;
+        subChannelId_ = 0;
 
         platformType_ = 0;
 
@@ -1871,7 +1855,7 @@ public final class GetPlayerTokenRspOuterClass {
 
         accountUid_ = "";
 
-        iEPOFPNOOKD_ = 0;
+        blackUidEndTime_ = 0;
 
         token_ = "";
 
@@ -1951,12 +1935,12 @@ public final class GetPlayerTokenRspOuterClass {
         result.sign_ = sign_;
         result.extraBinData_ = extraBinData_;
         result.accountType_ = accountType_;
-        result.blackUidEndTime_ = blackUidEndTime_;
+        result.subChannelId_ = subChannelId_;
         result.platformType_ = platformType_;
         result.channelId_ = channelId_;
         result.retcode_ = retcode_;
         result.accountUid_ = accountUid_;
-        result.iEPOFPNOOKD_ = iEPOFPNOOKD_;
+        result.blackUidEndTime_ = blackUidEndTime_;
         result.token_ = token_;
         result.keyId_ = keyId_;
         result.regPlatform_ = regPlatform_;
@@ -2052,8 +2036,8 @@ public final class GetPlayerTokenRspOuterClass {
         if (other.getAccountType() != 0) {
           setAccountType(other.getAccountType());
         }
-        if (other.getBlackUidEndTime() != 0) {
-          setBlackUidEndTime(other.getBlackUidEndTime());
+        if (other.getSubChannelId() != 0) {
+          setSubChannelId(other.getSubChannelId());
         }
         if (other.getPlatformType() != 0) {
           setPlatformType(other.getPlatformType());
@@ -2068,8 +2052,8 @@ public final class GetPlayerTokenRspOuterClass {
           accountUid_ = other.accountUid_;
           onChanged();
         }
-        if (other.getIEPOFPNOOKD() != 0) {
-          setIEPOFPNOOKD(other.getIEPOFPNOOKD());
+        if (other.getBlackUidEndTime() != 0) {
+          setBlackUidEndTime(other.getBlackUidEndTime());
         }
         if (!other.getToken().isEmpty()) {
           token_ = other.token_;
@@ -2442,10 +2426,6 @@ public final class GetPlayerTokenRspOuterClass {
 
       private int accountType_ ;
       /**
-       * <pre>
-       * CIJNPHDIOND
-       * </pre>
-       *
        * <code>uint32 account_type = 12;</code>
        * @return The accountType.
        */
@@ -2454,10 +2434,6 @@ public final class GetPlayerTokenRspOuterClass {
         return accountType_;
       }
       /**
-       * <pre>
-       * CIJNPHDIOND
-       * </pre>
-       *
        * <code>uint32 account_type = 12;</code>
        * @param value The accountType to set.
        * @return This builder for chaining.
@@ -2469,10 +2445,6 @@ public final class GetPlayerTokenRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * CIJNPHDIOND
-       * </pre>
-       *
        * <code>uint32 account_type = 12;</code>
        * @return This builder for chaining.
        */
@@ -2483,45 +2455,33 @@ public final class GetPlayerTokenRspOuterClass {
         return this;
       }
 
-      private int blackUidEndTime_ ;
+      private int subChannelId_ ;
       /**
-       * <pre>
-       * KDIHPMJOCPG
-       * </pre>
-       *
-       * <code>uint32 blackUidEndTime = 834;</code>
-       * @return The blackUidEndTime.
+       * <code>uint32 sub_channel_id = 834;</code>
+       * @return The subChannelId.
        */
       @java.lang.Override
-      public int getBlackUidEndTime() {
-        return blackUidEndTime_;
+      public int getSubChannelId() {
+        return subChannelId_;
       }
       /**
-       * <pre>
-       * KDIHPMJOCPG
-       * </pre>
-       *
-       * <code>uint32 blackUidEndTime = 834;</code>
-       * @param value The blackUidEndTime to set.
+       * <code>uint32 sub_channel_id = 834;</code>
+       * @param value The subChannelId to set.
        * @return This builder for chaining.
        */
-      public Builder setBlackUidEndTime(int value) {
+      public Builder setSubChannelId(int value) {
         
-        blackUidEndTime_ = value;
+        subChannelId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * KDIHPMJOCPG
-       * </pre>
-       *
-       * <code>uint32 blackUidEndTime = 834;</code>
+       * <code>uint32 sub_channel_id = 834;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBlackUidEndTime() {
+      public Builder clearSubChannelId() {
         
-        blackUidEndTime_ = 0;
+        subChannelId_ = 0;
         onChanged();
         return this;
       }
@@ -2695,33 +2655,45 @@ public final class GetPlayerTokenRspOuterClass {
         return this;
       }
 
-      private int iEPOFPNOOKD_ ;
+      private int blackUidEndTime_ ;
       /**
-       * <code>uint32 IEPOFPNOOKD = 1572;</code>
-       * @return The iEPOFPNOOKD.
+       * <pre>
+       *IEPOFPNOOKD
+       * </pre>
+       *
+       * <code>uint32 blackUidEndTime = 1572;</code>
+       * @return The blackUidEndTime.
        */
       @java.lang.Override
-      public int getIEPOFPNOOKD() {
-        return iEPOFPNOOKD_;
+      public int getBlackUidEndTime() {
+        return blackUidEndTime_;
       }
       /**
-       * <code>uint32 IEPOFPNOOKD = 1572;</code>
-       * @param value The iEPOFPNOOKD to set.
+       * <pre>
+       *IEPOFPNOOKD
+       * </pre>
+       *
+       * <code>uint32 blackUidEndTime = 1572;</code>
+       * @param value The blackUidEndTime to set.
        * @return This builder for chaining.
        */
-      public Builder setIEPOFPNOOKD(int value) {
+      public Builder setBlackUidEndTime(int value) {
         
-        iEPOFPNOOKD_ = value;
+        blackUidEndTime_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 IEPOFPNOOKD = 1572;</code>
+       * <pre>
+       *IEPOFPNOOKD
+       * </pre>
+       *
+       * <code>uint32 blackUidEndTime = 1572;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIEPOFPNOOKD() {
+      public Builder clearBlackUidEndTime() {
         
-        iEPOFPNOOKD_ = 0;
+        blackUidEndTime_ = 0;
         onChanged();
         return this;
       }
@@ -2835,10 +2807,6 @@ public final class GetPlayerTokenRspOuterClass {
 
       private int regPlatform_ ;
       /**
-       * <pre>
-       * LFPHHMGKIIP
-       * </pre>
-       *
        * <code>uint32 reg_platform = 1474;</code>
        * @return The regPlatform.
        */
@@ -2847,10 +2815,6 @@ public final class GetPlayerTokenRspOuterClass {
         return regPlatform_;
       }
       /**
-       * <pre>
-       * LFPHHMGKIIP
-       * </pre>
-       *
        * <code>uint32 reg_platform = 1474;</code>
        * @param value The regPlatform to set.
        * @return This builder for chaining.
@@ -2862,10 +2826,6 @@ public final class GetPlayerTokenRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * LFPHHMGKIIP
-       * </pre>
-       *
        * <code>uint32 reg_platform = 1474;</code>
        * @return This builder for chaining.
        */
@@ -3910,26 +3870,26 @@ public final class GetPlayerTokenRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027GetPlayerTokenRsp.proto\032\024StopServerInf" +
-      "o.proto\"\335\005\n\021GetPlayerTokenRsp\022\021\n\010birthda" +
+      "o.proto\"\340\005\n\021GetPlayerTokenRsp\022\021\n\010birthda" +
       "y\030\352\t \001(\t\022\013\n\003msg\030\013 \001(\t\022\r\n\004sign\030\213\007 \001(\t\022\026\n\016" +
       "extra_bin_data\030\t \001(\014\022\024\n\014account_type\030\014 \001" +
-      "(\r\022\030\n\017blackUidEndTime\030\302\006 \001(\r\022\025\n\rplatform" +
-      "_type\030\001 \001(\r\022\023\n\nchannel_id\030\204\t \001(\r\022\017\n\007retc" +
-      "ode\030\n \001(\005\022\023\n\013account_uid\030\004 \001(\t\022\024\n\013IEPOFP" +
-      "NOOKD\030\244\014 \001(\r\022\r\n\005token\030\017 \001(\t\022\017\n\006key_id\030\276\013" +
-      " \001(\r\022\025\n\014reg_platform\030\302\013 \001(\r\022\030\n\017server_ra" +
-      "nd_key\030\213\n \001(\t\022\024\n\013MPKKNNFFINM\030\242\010 \001(\010\022\034\n\024i" +
-      "s_proficient_player\030\016 \001(\010\022\014\n\003tag\030\321\013 \001(\r\022" +
-      "\013\n\003uid\030\r \001(\r\022\027\n\017secret_key_seed\030\005 \001(\004\022\025\n" +
-      "\014country_code\030\276\003 \001(\t\022%\n\013stop_server\030\210\017 \001" +
-      "(\0132\017.StopServerInfo\022\020\n\010is_guest\030\002 \001(\010\022\023\n" +
-      "\013JJNLKCNPOLA\030\007 \001(\r\022\024\n\013EHGCBOCIJPA\030\331\016 \001(\010" +
-      "\022\023\n\013FGAKKMHIKHF\030\006 \001(\r\022\"\n\031client_version_" +
-      "random_key\030\356\001 \001(\t\022\022\n\nsecret_key\030\003 \001(\t\022\033\n" +
-      "\023security_cmd_buffer\030\010 \001(\014\022\"\n\031finish_col" +
-      "lection_id_list\030\221\006 \003(\r\022\017\n\006psn_id\030\372\010 \001(\t\022" +
-      "\026\n\rclient_ip_str\030\211\002 \001(\tB\033\n\031emu.grasscutt" +
-      "er.net.protob\006proto3"
+      "(\r\022\027\n\016sub_channel_id\030\302\006 \001(\r\022\025\n\rplatform_" +
+      "type\030\001 \001(\r\022\023\n\nchannel_id\030\204\t \001(\r\022\017\n\007retco" +
+      "de\030\n \001(\005\022\023\n\013account_uid\030\004 \001(\t\022\030\n\017blackUi" +
+      "dEndTime\030\244\014 \001(\r\022\r\n\005token\030\017 \001(\t\022\017\n\006key_id" +
+      "\030\276\013 \001(\r\022\025\n\014reg_platform\030\302\013 \001(\r\022\030\n\017server" +
+      "_rand_key\030\213\n \001(\t\022\024\n\013MPKKNNFFINM\030\242\010 \001(\010\022\034" +
+      "\n\024is_proficient_player\030\016 \001(\010\022\014\n\003tag\030\321\013 \001" +
+      "(\r\022\013\n\003uid\030\r \001(\r\022\027\n\017secret_key_seed\030\005 \001(\004" +
+      "\022\025\n\014country_code\030\276\003 \001(\t\022%\n\013stop_server\030\210" +
+      "\017 \001(\0132\017.StopServerInfo\022\020\n\010is_guest\030\002 \001(\010" +
+      "\022\023\n\013JJNLKCNPOLA\030\007 \001(\r\022\024\n\013EHGCBOCIJPA\030\331\016 " +
+      "\001(\010\022\023\n\013FGAKKMHIKHF\030\006 \001(\r\022\"\n\031client_versi" +
+      "on_random_key\030\356\001 \001(\t\022\022\n\nsecret_key\030\003 \001(\t" +
+      "\022\033\n\023security_cmd_buffer\030\010 \001(\014\022\"\n\031finish_" +
+      "collection_id_list\030\221\006 \003(\r\022\017\n\006psn_id\030\372\010 \001" +
+      "(\t\022\026\n\rclient_ip_str\030\211\002 \001(\tB\033\n\031emu.grassc" +
+      "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -3941,7 +3901,7 @@ public final class GetPlayerTokenRspOuterClass {
     internal_static_GetPlayerTokenRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetPlayerTokenRsp_descriptor,
-        new java.lang.String[] { "Birthday", "Msg", "Sign", "ExtraBinData", "AccountType", "BlackUidEndTime", "PlatformType", "ChannelId", "Retcode", "AccountUid", "IEPOFPNOOKD", "Token", "KeyId", "RegPlatform", "ServerRandKey", "MPKKNNFFINM", "IsProficientPlayer", "Tag", "Uid", "SecretKeySeed", "CountryCode", "StopServer", "IsGuest", "JJNLKCNPOLA", "EHGCBOCIJPA", "FGAKKMHIKHF", "ClientVersionRandomKey", "SecretKey", "SecurityCmdBuffer", "FinishCollectionIdList", "PsnId", "ClientIpStr", });
+        new java.lang.String[] { "Birthday", "Msg", "Sign", "ExtraBinData", "AccountType", "SubChannelId", "PlatformType", "ChannelId", "Retcode", "AccountUid", "BlackUidEndTime", "Token", "KeyId", "RegPlatform", "ServerRandKey", "MPKKNNFFINM", "IsProficientPlayer", "Tag", "Uid", "SecretKeySeed", "CountryCode", "StopServer", "IsGuest", "JJNLKCNPOLA", "EHGCBOCIJPA", "FGAKKMHIKHF", "ClientVersionRandomKey", "SecretKey", "SecurityCmdBuffer", "FinishCollectionIdList", "PsnId", "ClientIpStr", });
     emu.grasscutter.net.proto.StopServerInfoOuterClass.getDescriptor();
   }
 

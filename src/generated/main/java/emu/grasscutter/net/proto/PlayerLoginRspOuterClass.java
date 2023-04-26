@@ -31,19 +31,11 @@ public final class PlayerLoginRspOuterClass {
     com.google.protobuf.ByteString getScInfo();
 
     /**
-     * <pre>
-     * AAEIDEMEKFF
-     * </pre>
-     *
      * <code>string country_code = 286;</code>
      * @return The countryCode.
      */
     java.lang.String getCountryCode();
     /**
-     * <pre>
-     * AAEIDEMEKFF
-     * </pre>
-     *
      * <code>string country_code = 286;</code>
      * @return The bytes for countryCode.
      */
@@ -87,12 +79,12 @@ public final class PlayerLoginRspOuterClass {
         getClientVersionSuffixBytes();
 
     /**
-     * <code>string clientSilenceMd5 = 1149;</code>
+     * <code>string client_silence_md5 = 1149;</code>
      * @return The clientSilenceMd5.
      */
     java.lang.String getClientSilenceMd5();
     /**
-     * <code>string clientSilenceMd5 = 1149;</code>
+     * <code>string client_silence_md5 = 1149;</code>
      * @return The bytes for clientSilenceMd5.
      */
     com.google.protobuf.ByteString
@@ -109,10 +101,10 @@ public final class PlayerLoginRspOuterClass {
      * HKINPODGHHH
      * </pre>
      *
-     * <code>bool is_use_ability_hash = 2;</code>
-     * @return The isUseAbilityHash.
+     * <code>bool HKINPODGHHH = 2;</code>
+     * @return The hKINPODGHHH.
      */
-    boolean getIsUseAbilityHash();
+    boolean getHKINPODGHHH();
 
     /**
      * <code>.ResVersionConfig res_version_config = 1241;</code>
@@ -130,10 +122,10 @@ public final class PlayerLoginRspOuterClass {
     emu.grasscutter.net.proto.ResVersionConfigOuterClass.ResVersionConfigOrBuilder getResVersionConfigOrBuilder();
 
     /**
-     * <code>bool HKHOCPFCPAM = 242;</code>
-     * @return The hKHOCPFCPAM.
+     * <code>bool is_sc_open = 242;</code>
+     * @return The isScOpen.
      */
-    boolean getHKHOCPFCPAM();
+    boolean getIsScOpen();
 
     /**
      * <code>uint32 DCFPMMCBEAD = 6;</code>
@@ -281,20 +273,20 @@ public final class PlayerLoginRspOuterClass {
         getGameBizBytes();
 
     /**
-     * <code>bool BMLPDBNDAIJ = 15;</code>
-     * @return The bMLPDBNDAIJ.
+     * <code>bool is_use_ability_hash = 15;</code>
+     * @return The isUseAbilityHash.
      */
-    boolean getBMLPDBNDAIJ();
+    boolean getIsUseAbilityHash();
 
     /**
      * <pre>
      * FLEDDLEFFLK
      * </pre>
      *
-     * <code>bool is_sc_open = 1257;</code>
-     * @return The isScOpen.
+     * <code>bool FLEDDLEFFLK = 1257;</code>
+     * @return The fLEDDLEFFLK.
      */
-    boolean getIsScOpen();
+    boolean getFLEDDLEFFLK();
 
     /**
      * <code>uint64 login_rand = 1;</code>
@@ -321,12 +313,12 @@ public final class PlayerLoginRspOuterClass {
     boolean getIsAudit();
 
     /**
-     * <code>string clientMd5 = 625;</code>
+     * <code>string client_md5 = 625;</code>
      * @return The clientMd5.
      */
     java.lang.String getClientMd5();
     /**
-     * <code>string clientMd5 = 625;</code>
+     * <code>string client_md5 = 625;</code>
      * @return The bytes for clientMd5.
      */
     com.google.protobuf.ByteString
@@ -479,7 +471,7 @@ public final class PlayerLoginRspOuterClass {
             }
             case 16: {
 
-              isUseAbilityHash_ = input.readBool();
+              hKINPODGHHH_ = input.readBool();
               break;
             }
             case 26: {
@@ -543,12 +535,12 @@ public final class PlayerLoginRspOuterClass {
             }
             case 120: {
 
-              bMLPDBNDAIJ_ = input.readBool();
+              isUseAbilityHash_ = input.readBool();
               break;
             }
             case 1936: {
 
-              hKHOCPFCPAM_ = input.readBool();
+              isScOpen_ = input.readBool();
               break;
             }
             case 2290: {
@@ -679,7 +671,7 @@ public final class PlayerLoginRspOuterClass {
             }
             case 10056: {
 
-              isScOpen_ = input.readBool();
+              fLEDDLEFFLK_ = input.readBool();
               break;
             }
             case 12906: {
@@ -773,10 +765,6 @@ public final class PlayerLoginRspOuterClass {
     public static final int COUNTRY_CODE_FIELD_NUMBER = 286;
     private volatile java.lang.Object countryCode_;
     /**
-     * <pre>
-     * AAEIDEMEKFF
-     * </pre>
-     *
      * <code>string country_code = 286;</code>
      * @return The countryCode.
      */
@@ -794,10 +782,6 @@ public final class PlayerLoginRspOuterClass {
       }
     }
     /**
-     * <pre>
-     * AAEIDEMEKFF
-     * </pre>
-     *
      * <code>string country_code = 286;</code>
      * @return The bytes for countryCode.
      */
@@ -894,10 +878,10 @@ public final class PlayerLoginRspOuterClass {
       }
     }
 
-    public static final int CLIENTSILENCEMD5_FIELD_NUMBER = 1149;
+    public static final int CLIENT_SILENCE_MD5_FIELD_NUMBER = 1149;
     private volatile java.lang.Object clientSilenceMd5_;
     /**
-     * <code>string clientSilenceMd5 = 1149;</code>
+     * <code>string client_silence_md5 = 1149;</code>
      * @return The clientSilenceMd5.
      */
     @java.lang.Override
@@ -914,7 +898,7 @@ public final class PlayerLoginRspOuterClass {
       }
     }
     /**
-     * <code>string clientSilenceMd5 = 1149;</code>
+     * <code>string client_silence_md5 = 1149;</code>
      * @return The bytes for clientSilenceMd5.
      */
     @java.lang.Override
@@ -943,19 +927,19 @@ public final class PlayerLoginRspOuterClass {
       return isDataNeedRelogin_;
     }
 
-    public static final int IS_USE_ABILITY_HASH_FIELD_NUMBER = 2;
-    private boolean isUseAbilityHash_;
+    public static final int HKINPODGHHH_FIELD_NUMBER = 2;
+    private boolean hKINPODGHHH_;
     /**
      * <pre>
      * HKINPODGHHH
      * </pre>
      *
-     * <code>bool is_use_ability_hash = 2;</code>
-     * @return The isUseAbilityHash.
+     * <code>bool HKINPODGHHH = 2;</code>
+     * @return The hKINPODGHHH.
      */
     @java.lang.Override
-    public boolean getIsUseAbilityHash() {
-      return isUseAbilityHash_;
+    public boolean getHKINPODGHHH() {
+      return hKINPODGHHH_;
     }
 
     public static final int RES_VERSION_CONFIG_FIELD_NUMBER = 1241;
@@ -984,15 +968,15 @@ public final class PlayerLoginRspOuterClass {
       return getResVersionConfig();
     }
 
-    public static final int HKHOCPFCPAM_FIELD_NUMBER = 242;
-    private boolean hKHOCPFCPAM_;
+    public static final int IS_SC_OPEN_FIELD_NUMBER = 242;
+    private boolean isScOpen_;
     /**
-     * <code>bool HKHOCPFCPAM = 242;</code>
-     * @return The hKHOCPFCPAM.
+     * <code>bool is_sc_open = 242;</code>
+     * @return The isScOpen.
      */
     @java.lang.Override
-    public boolean getHKHOCPFCPAM() {
-      return hKHOCPFCPAM_;
+    public boolean getIsScOpen() {
+      return isScOpen_;
     }
 
     public static final int DCFPMMCBEAD_FIELD_NUMBER = 6;
@@ -1322,30 +1306,30 @@ public final class PlayerLoginRspOuterClass {
       }
     }
 
-    public static final int BMLPDBNDAIJ_FIELD_NUMBER = 15;
-    private boolean bMLPDBNDAIJ_;
+    public static final int IS_USE_ABILITY_HASH_FIELD_NUMBER = 15;
+    private boolean isUseAbilityHash_;
     /**
-     * <code>bool BMLPDBNDAIJ = 15;</code>
-     * @return The bMLPDBNDAIJ.
+     * <code>bool is_use_ability_hash = 15;</code>
+     * @return The isUseAbilityHash.
      */
     @java.lang.Override
-    public boolean getBMLPDBNDAIJ() {
-      return bMLPDBNDAIJ_;
+    public boolean getIsUseAbilityHash() {
+      return isUseAbilityHash_;
     }
 
-    public static final int IS_SC_OPEN_FIELD_NUMBER = 1257;
-    private boolean isScOpen_;
+    public static final int FLEDDLEFFLK_FIELD_NUMBER = 1257;
+    private boolean fLEDDLEFFLK_;
     /**
      * <pre>
      * FLEDDLEFFLK
      * </pre>
      *
-     * <code>bool is_sc_open = 1257;</code>
-     * @return The isScOpen.
+     * <code>bool FLEDDLEFFLK = 1257;</code>
+     * @return The fLEDDLEFFLK.
      */
     @java.lang.Override
-    public boolean getIsScOpen() {
-      return isScOpen_;
+    public boolean getFLEDDLEFFLK() {
+      return fLEDDLEFFLK_;
     }
 
     public static final int LOGIN_RAND_FIELD_NUMBER = 1;
@@ -1408,10 +1392,10 @@ public final class PlayerLoginRspOuterClass {
       return isAudit_;
     }
 
-    public static final int CLIENTMD5_FIELD_NUMBER = 625;
+    public static final int CLIENT_MD5_FIELD_NUMBER = 625;
     private volatile java.lang.Object clientMd5_;
     /**
-     * <code>string clientMd5 = 625;</code>
+     * <code>string client_md5 = 625;</code>
      * @return The clientMd5.
      */
     @java.lang.Override
@@ -1428,7 +1412,7 @@ public final class PlayerLoginRspOuterClass {
       }
     }
     /**
-     * <code>string clientMd5 = 625;</code>
+     * <code>string client_md5 = 625;</code>
      * @return The bytes for clientMd5.
      */
     @java.lang.Override
@@ -1637,8 +1621,8 @@ public final class PlayerLoginRspOuterClass {
       if (loginRand_ != 0L) {
         output.writeUInt64(1, loginRand_);
       }
-      if (isUseAbilityHash_ != false) {
-        output.writeBool(2, isUseAbilityHash_);
+      if (hKINPODGHHH_ != false) {
+        output.writeBool(2, hKINPODGHHH_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(gameBiz_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 3, gameBiz_);
@@ -1673,11 +1657,11 @@ public final class PlayerLoginRspOuterClass {
       if (targetUid_ != 0) {
         output.writeUInt32(12, targetUid_);
       }
-      if (bMLPDBNDAIJ_ != false) {
-        output.writeBool(15, bMLPDBNDAIJ_);
+      if (isUseAbilityHash_ != false) {
+        output.writeBool(15, isUseAbilityHash_);
       }
-      if (hKHOCPFCPAM_ != false) {
-        output.writeBool(242, hKHOCPFCPAM_);
+      if (isScOpen_ != false) {
+        output.writeBool(242, isScOpen_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(countryCode_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 286, countryCode_);
@@ -1736,8 +1720,8 @@ public final class PlayerLoginRspOuterClass {
       if (resVersionConfig_ != null) {
         output.writeMessage(1241, getResVersionConfig());
       }
-      if (isScOpen_ != false) {
-        output.writeBool(1257, isScOpen_);
+      if (fLEDDLEFFLK_ != false) {
+        output.writeBool(1257, fLEDDLEFFLK_);
       }
       for (int i = 0; i < featureBlockInfoList_.size(); i++) {
         output.writeMessage(1613, featureBlockInfoList_.get(i));
@@ -1758,9 +1742,9 @@ public final class PlayerLoginRspOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt64Size(1, loginRand_);
       }
-      if (isUseAbilityHash_ != false) {
+      if (hKINPODGHHH_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, isUseAbilityHash_);
+          .computeBoolSize(2, hKINPODGHHH_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(gameBiz_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, gameBiz_);
@@ -1807,13 +1791,13 @@ public final class PlayerLoginRspOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(12, targetUid_);
       }
-      if (bMLPDBNDAIJ_ != false) {
+      if (isUseAbilityHash_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, bMLPDBNDAIJ_);
+          .computeBoolSize(15, isUseAbilityHash_);
       }
-      if (hKHOCPFCPAM_ != false) {
+      if (isScOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(242, hKHOCPFCPAM_);
+          .computeBoolSize(242, isScOpen_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(countryCode_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(286, countryCode_);
@@ -1885,9 +1869,9 @@ public final class PlayerLoginRspOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(1241, getResVersionConfig());
       }
-      if (isScOpen_ != false) {
+      if (fLEDDLEFFLK_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1257, isScOpen_);
+          .computeBoolSize(1257, fLEDDLEFFLK_);
       }
       for (int i = 0; i < featureBlockInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -1926,15 +1910,15 @@ public final class PlayerLoginRspOuterClass {
           .equals(other.getClientSilenceMd5())) return false;
       if (getIsDataNeedRelogin()
           != other.getIsDataNeedRelogin()) return false;
-      if (getIsUseAbilityHash()
-          != other.getIsUseAbilityHash()) return false;
+      if (getHKINPODGHHH()
+          != other.getHKINPODGHHH()) return false;
       if (hasResVersionConfig() != other.hasResVersionConfig()) return false;
       if (hasResVersionConfig()) {
         if (!getResVersionConfig()
             .equals(other.getResVersionConfig())) return false;
       }
-      if (getHKHOCPFCPAM()
-          != other.getHKHOCPFCPAM()) return false;
+      if (getIsScOpen()
+          != other.getIsScOpen()) return false;
       if (getDCFPMMCBEAD()
           != other.getDCFPMMCBEAD()) return false;
       if (!internalGetAbilityHashMap().equals(
@@ -1963,10 +1947,10 @@ public final class PlayerLoginRspOuterClass {
           != other.getRetcode()) return false;
       if (!getGameBiz()
           .equals(other.getGameBiz())) return false;
-      if (getBMLPDBNDAIJ()
-          != other.getBMLPDBNDAIJ()) return false;
-      if (getIsScOpen()
-          != other.getIsScOpen()) return false;
+      if (getIsUseAbilityHash()
+          != other.getIsUseAbilityHash()) return false;
+      if (getFLEDDLEFFLK()
+          != other.getFLEDDLEFFLK()) return false;
       if (getLoginRand()
           != other.getLoginRand()) return false;
       if (!getBirthday()
@@ -2012,21 +1996,21 @@ public final class PlayerLoginRspOuterClass {
       }
       hash = (37 * hash) + CLIENT_VERSION_SUFFIX_FIELD_NUMBER;
       hash = (53 * hash) + getClientVersionSuffix().hashCode();
-      hash = (37 * hash) + CLIENTSILENCEMD5_FIELD_NUMBER;
+      hash = (37 * hash) + CLIENT_SILENCE_MD5_FIELD_NUMBER;
       hash = (53 * hash) + getClientSilenceMd5().hashCode();
       hash = (37 * hash) + IS_DATA_NEED_RELOGIN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsDataNeedRelogin());
-      hash = (37 * hash) + IS_USE_ABILITY_HASH_FIELD_NUMBER;
+      hash = (37 * hash) + HKINPODGHHH_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsUseAbilityHash());
+          getHKINPODGHHH());
       if (hasResVersionConfig()) {
         hash = (37 * hash) + RES_VERSION_CONFIG_FIELD_NUMBER;
         hash = (53 * hash) + getResVersionConfig().hashCode();
       }
-      hash = (37 * hash) + HKHOCPFCPAM_FIELD_NUMBER;
+      hash = (37 * hash) + IS_SC_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getHKHOCPFCPAM());
+          getIsScOpen());
       hash = (37 * hash) + DCFPMMCBEAD_FIELD_NUMBER;
       hash = (53 * hash) + getDCFPMMCBEAD();
       if (!internalGetAbilityHashMap().getMap().isEmpty()) {
@@ -2060,12 +2044,12 @@ public final class PlayerLoginRspOuterClass {
       hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + GAME_BIZ_FIELD_NUMBER;
       hash = (53 * hash) + getGameBiz().hashCode();
-      hash = (37 * hash) + BMLPDBNDAIJ_FIELD_NUMBER;
+      hash = (37 * hash) + IS_USE_ABILITY_HASH_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getBMLPDBNDAIJ());
-      hash = (37 * hash) + IS_SC_OPEN_FIELD_NUMBER;
+          getIsUseAbilityHash());
+      hash = (37 * hash) + FLEDDLEFFLK_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsScOpen());
+          getFLEDDLEFFLK());
       hash = (37 * hash) + LOGIN_RAND_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getLoginRand());
@@ -2074,7 +2058,7 @@ public final class PlayerLoginRspOuterClass {
       hash = (37 * hash) + IS_AUDIT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsAudit());
-      hash = (37 * hash) + CLIENTMD5_FIELD_NUMBER;
+      hash = (37 * hash) + CLIENT_MD5_FIELD_NUMBER;
       hash = (53 * hash) + getClientMd5().hashCode();
       hash = (37 * hash) + BJLCFHHIGJD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
@@ -2277,7 +2261,7 @@ public final class PlayerLoginRspOuterClass {
 
         isDataNeedRelogin_ = false;
 
-        isUseAbilityHash_ = false;
+        hKINPODGHHH_ = false;
 
         if (resVersionConfigBuilder_ == null) {
           resVersionConfig_ = null;
@@ -2285,7 +2269,7 @@ public final class PlayerLoginRspOuterClass {
           resVersionConfig_ = null;
           resVersionConfigBuilder_ = null;
         }
-        hKHOCPFCPAM_ = false;
+        isScOpen_ = false;
 
         dCFPMMCBEAD_ = 0;
 
@@ -2318,9 +2302,9 @@ public final class PlayerLoginRspOuterClass {
 
         gameBiz_ = "";
 
-        bMLPDBNDAIJ_ = false;
+        isUseAbilityHash_ = false;
 
-        isScOpen_ = false;
+        fLEDDLEFFLK_ = false;
 
         loginRand_ = 0L;
 
@@ -2385,13 +2369,13 @@ public final class PlayerLoginRspOuterClass {
         result.clientVersionSuffix_ = clientVersionSuffix_;
         result.clientSilenceMd5_ = clientSilenceMd5_;
         result.isDataNeedRelogin_ = isDataNeedRelogin_;
-        result.isUseAbilityHash_ = isUseAbilityHash_;
+        result.hKINPODGHHH_ = hKINPODGHHH_;
         if (resVersionConfigBuilder_ == null) {
           result.resVersionConfig_ = resVersionConfig_;
         } else {
           result.resVersionConfig_ = resVersionConfigBuilder_.build();
         }
-        result.hKHOCPFCPAM_ = hKHOCPFCPAM_;
+        result.isScOpen_ = isScOpen_;
         result.dCFPMMCBEAD_ = dCFPMMCBEAD_;
         result.abilityHashMap_ = internalGetAbilityHashMap();
         result.abilityHashMap_.makeImmutable();
@@ -2417,8 +2401,8 @@ public final class PlayerLoginRspOuterClass {
         result.registerCps_ = registerCps_;
         result.retcode_ = retcode_;
         result.gameBiz_ = gameBiz_;
-        result.bMLPDBNDAIJ_ = bMLPDBNDAIJ_;
-        result.isScOpen_ = isScOpen_;
+        result.isUseAbilityHash_ = isUseAbilityHash_;
+        result.fLEDDLEFFLK_ = fLEDDLEFFLK_;
         result.loginRand_ = loginRand_;
         result.birthday_ = birthday_;
         result.isAudit_ = isAudit_;
@@ -2526,14 +2510,14 @@ public final class PlayerLoginRspOuterClass {
         if (other.getIsDataNeedRelogin() != false) {
           setIsDataNeedRelogin(other.getIsDataNeedRelogin());
         }
-        if (other.getIsUseAbilityHash() != false) {
-          setIsUseAbilityHash(other.getIsUseAbilityHash());
+        if (other.getHKINPODGHHH() != false) {
+          setHKINPODGHHH(other.getHKINPODGHHH());
         }
         if (other.hasResVersionConfig()) {
           mergeResVersionConfig(other.getResVersionConfig());
         }
-        if (other.getHKHOCPFCPAM() != false) {
-          setHKHOCPFCPAM(other.getHKHOCPFCPAM());
+        if (other.getIsScOpen() != false) {
+          setIsScOpen(other.getIsScOpen());
         }
         if (other.getDCFPMMCBEAD() != 0) {
           setDCFPMMCBEAD(other.getDCFPMMCBEAD());
@@ -2596,11 +2580,11 @@ public final class PlayerLoginRspOuterClass {
           gameBiz_ = other.gameBiz_;
           onChanged();
         }
-        if (other.getBMLPDBNDAIJ() != false) {
-          setBMLPDBNDAIJ(other.getBMLPDBNDAIJ());
+        if (other.getIsUseAbilityHash() != false) {
+          setIsUseAbilityHash(other.getIsUseAbilityHash());
         }
-        if (other.getIsScOpen() != false) {
-          setIsScOpen(other.getIsScOpen());
+        if (other.getFLEDDLEFFLK() != false) {
+          setFLEDDLEFFLK(other.getFLEDDLEFFLK());
         }
         if (other.getLoginRand() != 0L) {
           setLoginRand(other.getLoginRand());
@@ -2734,10 +2718,6 @@ public final class PlayerLoginRspOuterClass {
 
       private java.lang.Object countryCode_ = "";
       /**
-       * <pre>
-       * AAEIDEMEKFF
-       * </pre>
-       *
        * <code>string country_code = 286;</code>
        * @return The countryCode.
        */
@@ -2754,10 +2734,6 @@ public final class PlayerLoginRspOuterClass {
         }
       }
       /**
-       * <pre>
-       * AAEIDEMEKFF
-       * </pre>
-       *
        * <code>string country_code = 286;</code>
        * @return The bytes for countryCode.
        */
@@ -2775,10 +2751,6 @@ public final class PlayerLoginRspOuterClass {
         }
       }
       /**
-       * <pre>
-       * AAEIDEMEKFF
-       * </pre>
-       *
        * <code>string country_code = 286;</code>
        * @param value The countryCode to set.
        * @return This builder for chaining.
@@ -2794,10 +2766,6 @@ public final class PlayerLoginRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * AAEIDEMEKFF
-       * </pre>
-       *
        * <code>string country_code = 286;</code>
        * @return This builder for chaining.
        */
@@ -2808,10 +2776,6 @@ public final class PlayerLoginRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * AAEIDEMEKFF
-       * </pre>
-       *
        * <code>string country_code = 286;</code>
        * @param value The bytes for countryCode to set.
        * @return This builder for chaining.
@@ -3146,7 +3110,7 @@ public final class PlayerLoginRspOuterClass {
 
       private java.lang.Object clientSilenceMd5_ = "";
       /**
-       * <code>string clientSilenceMd5 = 1149;</code>
+       * <code>string client_silence_md5 = 1149;</code>
        * @return The clientSilenceMd5.
        */
       public java.lang.String getClientSilenceMd5() {
@@ -3162,7 +3126,7 @@ public final class PlayerLoginRspOuterClass {
         }
       }
       /**
-       * <code>string clientSilenceMd5 = 1149;</code>
+       * <code>string client_silence_md5 = 1149;</code>
        * @return The bytes for clientSilenceMd5.
        */
       public com.google.protobuf.ByteString
@@ -3179,7 +3143,7 @@ public final class PlayerLoginRspOuterClass {
         }
       }
       /**
-       * <code>string clientSilenceMd5 = 1149;</code>
+       * <code>string client_silence_md5 = 1149;</code>
        * @param value The clientSilenceMd5 to set.
        * @return This builder for chaining.
        */
@@ -3194,7 +3158,7 @@ public final class PlayerLoginRspOuterClass {
         return this;
       }
       /**
-       * <code>string clientSilenceMd5 = 1149;</code>
+       * <code>string client_silence_md5 = 1149;</code>
        * @return This builder for chaining.
        */
       public Builder clearClientSilenceMd5() {
@@ -3204,7 +3168,7 @@ public final class PlayerLoginRspOuterClass {
         return this;
       }
       /**
-       * <code>string clientSilenceMd5 = 1149;</code>
+       * <code>string client_silence_md5 = 1149;</code>
        * @param value The bytes for clientSilenceMd5 to set.
        * @return This builder for chaining.
        */
@@ -3251,31 +3215,31 @@ public final class PlayerLoginRspOuterClass {
         return this;
       }
 
-      private boolean isUseAbilityHash_ ;
+      private boolean hKINPODGHHH_ ;
       /**
        * <pre>
        * HKINPODGHHH
        * </pre>
        *
-       * <code>bool is_use_ability_hash = 2;</code>
-       * @return The isUseAbilityHash.
+       * <code>bool HKINPODGHHH = 2;</code>
+       * @return The hKINPODGHHH.
        */
       @java.lang.Override
-      public boolean getIsUseAbilityHash() {
-        return isUseAbilityHash_;
+      public boolean getHKINPODGHHH() {
+        return hKINPODGHHH_;
       }
       /**
        * <pre>
        * HKINPODGHHH
        * </pre>
        *
-       * <code>bool is_use_ability_hash = 2;</code>
-       * @param value The isUseAbilityHash to set.
+       * <code>bool HKINPODGHHH = 2;</code>
+       * @param value The hKINPODGHHH to set.
        * @return This builder for chaining.
        */
-      public Builder setIsUseAbilityHash(boolean value) {
+      public Builder setHKINPODGHHH(boolean value) {
         
-        isUseAbilityHash_ = value;
+        hKINPODGHHH_ = value;
         onChanged();
         return this;
       }
@@ -3284,12 +3248,12 @@ public final class PlayerLoginRspOuterClass {
        * HKINPODGHHH
        * </pre>
        *
-       * <code>bool is_use_ability_hash = 2;</code>
+       * <code>bool HKINPODGHHH = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsUseAbilityHash() {
+      public Builder clearHKINPODGHHH() {
         
-        isUseAbilityHash_ = false;
+        hKINPODGHHH_ = false;
         onChanged();
         return this;
       }
@@ -3413,33 +3377,33 @@ public final class PlayerLoginRspOuterClass {
         return resVersionConfigBuilder_;
       }
 
-      private boolean hKHOCPFCPAM_ ;
+      private boolean isScOpen_ ;
       /**
-       * <code>bool HKHOCPFCPAM = 242;</code>
-       * @return The hKHOCPFCPAM.
+       * <code>bool is_sc_open = 242;</code>
+       * @return The isScOpen.
        */
       @java.lang.Override
-      public boolean getHKHOCPFCPAM() {
-        return hKHOCPFCPAM_;
+      public boolean getIsScOpen() {
+        return isScOpen_;
       }
       /**
-       * <code>bool HKHOCPFCPAM = 242;</code>
-       * @param value The hKHOCPFCPAM to set.
+       * <code>bool is_sc_open = 242;</code>
+       * @param value The isScOpen to set.
        * @return This builder for chaining.
        */
-      public Builder setHKHOCPFCPAM(boolean value) {
+      public Builder setIsScOpen(boolean value) {
         
-        hKHOCPFCPAM_ = value;
+        isScOpen_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool HKHOCPFCPAM = 242;</code>
+       * <code>bool is_sc_open = 242;</code>
        * @return This builder for chaining.
        */
-      public Builder clearHKHOCPFCPAM() {
+      public Builder clearIsScOpen() {
         
-        hKHOCPFCPAM_ = false;
+        isScOpen_ = false;
         onChanged();
         return this;
       }
@@ -4345,62 +4309,62 @@ public final class PlayerLoginRspOuterClass {
         return this;
       }
 
-      private boolean bMLPDBNDAIJ_ ;
+      private boolean isUseAbilityHash_ ;
       /**
-       * <code>bool BMLPDBNDAIJ = 15;</code>
-       * @return The bMLPDBNDAIJ.
+       * <code>bool is_use_ability_hash = 15;</code>
+       * @return The isUseAbilityHash.
        */
       @java.lang.Override
-      public boolean getBMLPDBNDAIJ() {
-        return bMLPDBNDAIJ_;
+      public boolean getIsUseAbilityHash() {
+        return isUseAbilityHash_;
       }
       /**
-       * <code>bool BMLPDBNDAIJ = 15;</code>
-       * @param value The bMLPDBNDAIJ to set.
+       * <code>bool is_use_ability_hash = 15;</code>
+       * @param value The isUseAbilityHash to set.
        * @return This builder for chaining.
        */
-      public Builder setBMLPDBNDAIJ(boolean value) {
+      public Builder setIsUseAbilityHash(boolean value) {
         
-        bMLPDBNDAIJ_ = value;
+        isUseAbilityHash_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool BMLPDBNDAIJ = 15;</code>
+       * <code>bool is_use_ability_hash = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBMLPDBNDAIJ() {
+      public Builder clearIsUseAbilityHash() {
         
-        bMLPDBNDAIJ_ = false;
+        isUseAbilityHash_ = false;
         onChanged();
         return this;
       }
 
-      private boolean isScOpen_ ;
+      private boolean fLEDDLEFFLK_ ;
       /**
        * <pre>
        * FLEDDLEFFLK
        * </pre>
        *
-       * <code>bool is_sc_open = 1257;</code>
-       * @return The isScOpen.
+       * <code>bool FLEDDLEFFLK = 1257;</code>
+       * @return The fLEDDLEFFLK.
        */
       @java.lang.Override
-      public boolean getIsScOpen() {
-        return isScOpen_;
+      public boolean getFLEDDLEFFLK() {
+        return fLEDDLEFFLK_;
       }
       /**
        * <pre>
        * FLEDDLEFFLK
        * </pre>
        *
-       * <code>bool is_sc_open = 1257;</code>
-       * @param value The isScOpen to set.
+       * <code>bool FLEDDLEFFLK = 1257;</code>
+       * @param value The fLEDDLEFFLK to set.
        * @return This builder for chaining.
        */
-      public Builder setIsScOpen(boolean value) {
+      public Builder setFLEDDLEFFLK(boolean value) {
         
-        isScOpen_ = value;
+        fLEDDLEFFLK_ = value;
         onChanged();
         return this;
       }
@@ -4409,12 +4373,12 @@ public final class PlayerLoginRspOuterClass {
        * FLEDDLEFFLK
        * </pre>
        *
-       * <code>bool is_sc_open = 1257;</code>
+       * <code>bool FLEDDLEFFLK = 1257;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsScOpen() {
+      public Builder clearFLEDDLEFFLK() {
         
-        isScOpen_ = false;
+        fLEDDLEFFLK_ = false;
         onChanged();
         return this;
       }
@@ -4559,7 +4523,7 @@ public final class PlayerLoginRspOuterClass {
 
       private java.lang.Object clientMd5_ = "";
       /**
-       * <code>string clientMd5 = 625;</code>
+       * <code>string client_md5 = 625;</code>
        * @return The clientMd5.
        */
       public java.lang.String getClientMd5() {
@@ -4575,7 +4539,7 @@ public final class PlayerLoginRspOuterClass {
         }
       }
       /**
-       * <code>string clientMd5 = 625;</code>
+       * <code>string client_md5 = 625;</code>
        * @return The bytes for clientMd5.
        */
       public com.google.protobuf.ByteString
@@ -4592,7 +4556,7 @@ public final class PlayerLoginRspOuterClass {
         }
       }
       /**
-       * <code>string clientMd5 = 625;</code>
+       * <code>string client_md5 = 625;</code>
        * @param value The clientMd5 to set.
        * @return This builder for chaining.
        */
@@ -4607,7 +4571,7 @@ public final class PlayerLoginRspOuterClass {
         return this;
       }
       /**
-       * <code>string clientMd5 = 625;</code>
+       * <code>string client_md5 = 625;</code>
        * @return This builder for chaining.
        */
       public Builder clearClientMd5() {
@@ -4617,7 +4581,7 @@ public final class PlayerLoginRspOuterClass {
         return this;
       }
       /**
-       * <code>string clientMd5 = 625;</code>
+       * <code>string client_md5 = 625;</code>
        * @param value The bytes for clientMd5 to set.
        * @return This builder for chaining.
        */
@@ -5073,37 +5037,38 @@ public final class PlayerLoginRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\024PlayerLoginRsp.proto\032\017BlockInfo.proto\032" +
       "\026FeatureBlockInfo.proto\032\026ResVersionConfi" +
-      "g.proto\032\032ShortAbilityHashPair.proto\"\215\t\n\016" +
+      "g.proto\032\032ShortAbilityHashPair.proto\"\220\t\n\016" +
       "PlayerLoginRsp\022\031\n\021ability_hash_code\030\004 \001(" +
       "\005\022\020\n\007sc_info\030\332\006 \001(\014\022\025\n\014country_code\030\236\002 \001" +
       "(\t\0226\n\026short_ability_hash_map\030\221\003 \003(\0132\025.Sh" +
       "ortAbilityHashPair\022\036\n\025client_version_suf" +
-      "fix\030\265\002 \001(\t\022\031\n\020clientSilenceMd5\030\375\010 \001(\t\022\035\n" +
-      "\024is_data_need_relogin\030\247\010 \001(\010\022\033\n\023is_use_a" +
-      "bility_hash\030\002 \001(\010\022.\n\022res_version_config\030" +
-      "\331\t \001(\0132\021.ResVersionConfig\022\024\n\013HKHOCPFCPAM" +
-      "\030\362\001 \001(\010\022\023\n\013DCFPMMCBEAD\030\006 \001(\r\022=\n\020ability_" +
-      "hash_map\030\013 \003(\0132#.PlayerLoginRsp.AbilityH" +
-      "ashMapEntry\022\024\n\013is_transfer\030\212\t \001(\010\022\033\n\023cli" +
-      "ent_data_version\030\n \001(\r\0223\n\027feature_block_" +
-      "info_list\030\315\014 \003(\0132\021.FeatureBlockInfo\022\030\n\017t" +
-      "otal_tick_time\030\224\017 \001(\001\022&\n\035client_silence_" +
-      "version_suffix\030\371\006 \001(\t\0223\n\027next_res_versio" +
-      "n_config\030\236\005 \001(\0132\021.ResVersionConfig\022\024\n\013FC" +
-      "JHOMPHEON\030\345\005 \001(\010\022\025\n\014register_cps\030\200\t \001(\t\022" +
-      "\017\n\007retcode\030\005 \001(\005\022\020\n\010game_biz\030\003 \001(\t\022\023\n\013BM" +
-      "LPDBNDAIJ\030\017 \001(\010\022\023\n\nis_sc_open\030\351\t \001(\010\022\022\n\n" +
-      "login_rand\030\001 \001(\004\022\021\n\010birthday\030\351\010 \001(\t\022\021\n\010i" +
-      "s_audit\030\315\003 \001(\010\022\022\n\tclientMd5\030\361\004 \001(\t\022\023\n\013BJ" +
-      "LCFHHIGJD\030\010 \001(\010\022#\n\033client_silence_data_v" +
-      "ersion\030\t \001(\r\022\024\n\013FMOKLFNAOOK\030\374\006 \001(\r\022\023\n\013JL" +
-      "DGJOPFALG\030\007 \001(\014\022\032\n\021next_resource_url\030\254\002 " +
-      "\001(\t\022\022\n\ntarget_uid\030\014 \001(\r\022:\n\016block_info_ma" +
-      "p\030\203\006 \003(\0132!.PlayerLoginRsp.BlockInfoMapEn" +
-      "try\0325\n\023AbilityHashMapEntry\022\013\n\003key\030\001 \001(\t\022" +
-      "\r\n\005value\030\002 \001(\005:\0028\001\032?\n\021BlockInfoMapEntry\022" +
-      "\013\n\003key\030\001 \001(\r\022\031\n\005value\030\002 \001(\0132\n.BlockInfo:" +
-      "\0028\001B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "fix\030\265\002 \001(\t\022\033\n\022client_silence_md5\030\375\010 \001(\t\022" +
+      "\035\n\024is_data_need_relogin\030\247\010 \001(\010\022\023\n\013HKINPO" +
+      "DGHHH\030\002 \001(\010\022.\n\022res_version_config\030\331\t \001(\013" +
+      "2\021.ResVersionConfig\022\023\n\nis_sc_open\030\362\001 \001(\010" +
+      "\022\023\n\013DCFPMMCBEAD\030\006 \001(\r\022=\n\020ability_hash_ma" +
+      "p\030\013 \003(\0132#.PlayerLoginRsp.AbilityHashMapE" +
+      "ntry\022\024\n\013is_transfer\030\212\t \001(\010\022\033\n\023client_dat" +
+      "a_version\030\n \001(\r\0223\n\027feature_block_info_li" +
+      "st\030\315\014 \003(\0132\021.FeatureBlockInfo\022\030\n\017total_ti" +
+      "ck_time\030\224\017 \001(\001\022&\n\035client_silence_version" +
+      "_suffix\030\371\006 \001(\t\0223\n\027next_res_version_confi" +
+      "g\030\236\005 \001(\0132\021.ResVersionConfig\022\024\n\013FCJHOMPHE" +
+      "ON\030\345\005 \001(\010\022\025\n\014register_cps\030\200\t \001(\t\022\017\n\007retc" +
+      "ode\030\005 \001(\005\022\020\n\010game_biz\030\003 \001(\t\022\033\n\023is_use_ab" +
+      "ility_hash\030\017 \001(\010\022\024\n\013FLEDDLEFFLK\030\351\t \001(\010\022\022" +
+      "\n\nlogin_rand\030\001 \001(\004\022\021\n\010birthday\030\351\010 \001(\t\022\021\n" +
+      "\010is_audit\030\315\003 \001(\010\022\023\n\nclient_md5\030\361\004 \001(\t\022\023\n" +
+      "\013BJLCFHHIGJD\030\010 \001(\010\022#\n\033client_silence_dat" +
+      "a_version\030\t \001(\r\022\024\n\013FMOKLFNAOOK\030\374\006 \001(\r\022\023\n" +
+      "\013JLDGJOPFALG\030\007 \001(\014\022\032\n\021next_resource_url\030" +
+      "\254\002 \001(\t\022\022\n\ntarget_uid\030\014 \001(\r\022:\n\016block_info" +
+      "_map\030\203\006 \003(\0132!.PlayerLoginRsp.BlockInfoMa" +
+      "pEntry\0325\n\023AbilityHashMapEntry\022\013\n\003key\030\001 \001" +
+      "(\t\022\r\n\005value\030\002 \001(\005:\0028\001\032?\n\021BlockInfoMapEnt" +
+      "ry\022\013\n\003key\030\001 \001(\r\022\031\n\005value\030\002 \001(\0132\n.BlockIn" +
+      "fo:\0028\001B\033\n\031emu.grasscutter.net.protob\006pro" +
+      "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -5118,7 +5083,7 @@ public final class PlayerLoginRspOuterClass {
     internal_static_PlayerLoginRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerLoginRsp_descriptor,
-        new java.lang.String[] { "AbilityHashCode", "ScInfo", "CountryCode", "ShortAbilityHashMap", "ClientVersionSuffix", "ClientSilenceMd5", "IsDataNeedRelogin", "IsUseAbilityHash", "ResVersionConfig", "HKHOCPFCPAM", "DCFPMMCBEAD", "AbilityHashMap", "IsTransfer", "ClientDataVersion", "FeatureBlockInfoList", "TotalTickTime", "ClientSilenceVersionSuffix", "NextResVersionConfig", "FCJHOMPHEON", "RegisterCps", "Retcode", "GameBiz", "BMLPDBNDAIJ", "IsScOpen", "LoginRand", "Birthday", "IsAudit", "ClientMd5", "BJLCFHHIGJD", "ClientSilenceDataVersion", "FMOKLFNAOOK", "JLDGJOPFALG", "NextResourceUrl", "TargetUid", "BlockInfoMap", });
+        new java.lang.String[] { "AbilityHashCode", "ScInfo", "CountryCode", "ShortAbilityHashMap", "ClientVersionSuffix", "ClientSilenceMd5", "IsDataNeedRelogin", "HKINPODGHHH", "ResVersionConfig", "IsScOpen", "DCFPMMCBEAD", "AbilityHashMap", "IsTransfer", "ClientDataVersion", "FeatureBlockInfoList", "TotalTickTime", "ClientSilenceVersionSuffix", "NextResVersionConfig", "FCJHOMPHEON", "RegisterCps", "Retcode", "GameBiz", "IsUseAbilityHash", "FLEDDLEFFLK", "LoginRand", "Birthday", "IsAudit", "ClientMd5", "BJLCFHHIGJD", "ClientSilenceDataVersion", "FMOKLFNAOOK", "JLDGJOPFALG", "NextResourceUrl", "TargetUid", "BlockInfoMap", });
     internal_static_PlayerLoginRsp_AbilityHashMapEntry_descriptor =
       internal_static_PlayerLoginRsp_descriptor.getNestedTypes().get(0);
     internal_static_PlayerLoginRsp_AbilityHashMapEntry_fieldAccessorTable = new
