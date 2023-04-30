@@ -688,7 +688,16 @@ public class SceneScriptManager {
             } else {
                 relevantTriggers = this.getTriggersByEvent(eventType).stream()
                     .filter(t -> params.getGroupId() == 0 || t.getCurrentGroup().id == params.getGroupId())
-                    .filter(t ->  (t.getSource().isEmpty() || t.getSource().equals(params.getEventSource())))
+                    .filter(t -> {
+                        if (t.getSource().isEmpty() || t.getSource().equals(params.getEventSource())) {
+                            return true;
+                        }
+                        if (!t.getSource().isEmpty() && params.getEventSource() == null) {
+                            Grasscutter.getLogger().error("[Bypass] Trigger {} source is null!", t.getName());
+                            return true;
+                        }
+                        return false;
+                    })
                     .collect(Collectors.toSet());
             }
             for (SceneTrigger trigger : relevantTriggers) {
