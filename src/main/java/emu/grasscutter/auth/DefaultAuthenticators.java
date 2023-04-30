@@ -2,6 +2,7 @@ package emu.grasscutter.auth;
 
 import at.favre.lib.crypto.bcrypt.BCrypt;
 import emu.grasscutter.Grasscutter;
+import emu.grasscutter.Grasscutter.ServerRunMode;
 import emu.grasscutter.auth.AuthenticationSystem.AuthenticationRequest;
 import emu.grasscutter.database.DatabaseHelper;
 import emu.grasscutter.game.Account;
@@ -33,7 +34,7 @@ public final class DefaultAuthenticators {
 
             var requestData = request.getPasswordRequest();
             assert requestData != null; // This should never be null.
-            int playerCount = Grasscutter.getGameServer().getPlayers().size();
+            int playerCount = DefaultAuthenticators.getPlayerCount();
 
             boolean successfulLogin = false;
             String address = request.getContext().ip();
@@ -96,7 +97,7 @@ public final class DefaultAuthenticators {
 
             var requestData = request.getPasswordRequest();
             assert requestData != null; // This should never be null.
-            int playerCount = Grasscutter.getGameServer().getPlayers().size();
+            int playerCount = DefaultAuthenticators.getPlayerCount();
 
             boolean successfulLogin = false;
             String address = request.getContext().ip();
@@ -207,7 +208,7 @@ public final class DefaultAuthenticators {
             boolean successfulLogin;
             String address = request.getContext().ip();
             String loggerMessage;
-            int playerCount = Grasscutter.getGameServer().getPlayers().size();
+            int playerCount = DefaultAuthenticators.getPlayerCount();
 
             // Log the attempt.
             Grasscutter.getLogger().info(translate("messages.dispatch.account.login_token_attempt", address));
@@ -265,7 +266,7 @@ public final class DefaultAuthenticators {
             boolean successfulLogin;
             String address = request.getContext().ip();
             String loggerMessage;
-            int playerCount = Grasscutter.getGameServer().getPlayers().size();
+            int playerCount = DefaultAuthenticators.getPlayerCount();
 
             if (ACCOUNT.maxPlayer <= -1 || playerCount < ACCOUNT.maxPlayer) {
                 // Get account from database.
@@ -341,5 +342,12 @@ public final class DefaultAuthenticators {
         public void handleTokenProcess(AuthenticationRequest request) {
             request.getContext().result("Authentication is not available with the default authentication method.");
         }
+    }
+    private static int getPlayerCount(){
+        int playerCount = 0;
+        var runMode = Grasscutter.getRunMode();
+        if (runMode == ServerRunMode.GAME_ONLY || runMode == ServerRunMode.HYBRID)
+            playerCount = Grasscutter.getGameServer().getPlayers().size();
+        return playerCount;
     }
 }
