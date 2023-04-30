@@ -55,6 +55,17 @@ public class BattlePassManager extends BasePlayerDataManager {
 
     private Map<Integer, BattlePassMission> missions;
     private Map<Integer, BattlePassReward> takenRewards;
+    static int scheduleId;
+
+    static {
+        try {
+            //calculate scheduleId from game version
+            scheduleId = Integer.parseInt(GameConstants.VERSION.replace(".", "")) * 10;
+        } catch (NumberFormatException e) {
+            e.printStackTrace();
+            scheduleId = 3500;
+        }
+    }
 
     @Deprecated // Morphia only
     public BattlePassManager() {}
@@ -360,7 +371,7 @@ public class BattlePassManager extends BasePlayerDataManager {
         var nextSundayTime = LocalDateTime.of(nextSundayDate.getYear(), nextSundayDate.getMonthValue(), nextSundayDate.getDayOfMonth(), 23, 59, 59);
 
         BattlePassSchedule.Builder schedule = BattlePassSchedule.newBuilder()
-                .setScheduleId(2700)
+                .setScheduleId(scheduleId)
                 .setLevel(this.getLevel())
                 .setPoint(this.getPoint())
                 .setBeginTime(0)
