@@ -76,7 +76,7 @@ public final class DefaultAuthenticators {
                 response.message = "OK";
                 response.data.account.uid = account.getId();
                 response.data.account.token = account.generateSessionKey();
-                response.data.account.email = account.getEmail();
+                response.data.account.email = account.getUsername();
 
                 loggerMessage = translate("messages.dispatch.account.login_success", address, account.getId());
             } else {
@@ -180,7 +180,7 @@ public final class DefaultAuthenticators {
                 response.message = "OK";
                 response.data.account.uid = account.getId();
                 response.data.account.token = account.generateSessionKey();
-                response.data.account.email = account.getEmail();
+                response.data.account.email = account.getUsername();
 
                 loggerMessage = translate("messages.dispatch.account.login_success", address, account.getId());
             } else {
@@ -226,7 +226,7 @@ public final class DefaultAuthenticators {
                     response.message = "OK";
                     response.data.account.uid = account.getId();
                     response.data.account.token = account.getSessionKey();
-                    response.data.account.email = account.getEmail();
+                    response.data.account.email = account.getUsername();
 
                     // Log the login.
                     loggerMessage = translate("messages.dispatch.account.login_token_success", address, requestData.uid);
