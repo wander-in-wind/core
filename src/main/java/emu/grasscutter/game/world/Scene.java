@@ -842,14 +842,14 @@ public class Scene {
                 groupInstance = cachedInstance;
             }
 
-            // Load garbages
-            List<SceneGadget> garbageGadgets = group.getGarbageGadgets();
-
-            if (garbageGadgets != null) {
-                entities.addAll(garbageGadgets.stream().map(g -> scriptManager.createGadget(group.id, group.block_id, g))
-                    .filter(Objects::nonNull)
-                    .toList());
-            }
+            // Don't load garbage's
+//            List<SceneGadget> garbageGadgets = group.getGarbageGadgets();
+//
+//            if (garbageGadgets != null) {
+//                entities.addAll(garbageGadgets.stream().map(g -> scriptManager.createGadget(group.id, group.block_id, g))
+//                    .filter(Objects::nonNull)
+//                    .toList());
+//            }
 
             // Load suites
             //int suite = group.findInitSuiteIndex(0);
