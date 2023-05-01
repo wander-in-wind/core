@@ -213,23 +213,33 @@ public class ScriptLib {
         worktop.removeWorktopOption(callParams.param2);
 
         var scene = getSceneScriptManager().getScene();
-        Grasscutter.getGameServer().getScheduler().scheduleDelayedTask(() -> scene.broadcastPacket(new PacketWorktopOptionNotify(gadget)),1);
+        Grasscutter.getGameServer().getScheduler().scheduleDelayedTask(() -> scene.broadcastPacket(new PacketWorktopOptionNotify(gadget)), 1);
 
         return 0;
     }
 
-	// Some fields are guessed
-	public int AutoMonsterTide(int challengeIndex, int groupId, Integer[] ordersConfigId, int tideCount, int sceneLimit, int param6) {
-		logger.debug("[LUA] Call AutoMonsterTide with {},{},{},{},{},{}",
-				challengeIndex,groupId,ordersConfigId,tideCount,sceneLimit,param6);
+    /**
+     * Create a monster tide
+     *
+     * @param tideIndex        used for EVENT_MONSTER_TIDE_DIE's event source
+     * @param groupId          the tide's group id
+     * @param monsterConfigIds configIds of monsters
+     * @param totalCount       total monster count
+     * @param stageLimitMin    min monster count on the stage
+     * @param stageLimitMax    max monster count on the stage
+     * @return 0 on success
+     */
+    public int AutoMonsterTide(int tideIndex, int groupId, Integer[] monsterConfigIds, int totalCount, int stageLimitMin, int stageLimitMax) {
+        logger.debug("[LUA] Call AutoMonsterTide with {},{},{},{},{},{}",
+            tideIndex, groupId, monsterConfigIds, totalCount, stageLimitMin, stageLimitMax);
 
-		SceneGroup group = getSceneScriptManager().getGroupById(groupId);
+        SceneGroup group = getSceneScriptManager().getGroupById(groupId);
 
-		if (group == null || group.monsters == null) {
-			return 1;
-		}
+        if (group == null || group.monsters == null) {
+            return 1;
+        }
 
-		this.getSceneScriptManager().startMonsterTideInGroup(group, ordersConfigId, tideCount, sceneLimit);
+        this.getSceneScriptManager().startMonsterTideInGroup(tideIndex, group, monsterConfigIds, totalCount, stageLimitMin, stageLimitMax);
 
 		return 0;
 	}
@@ -467,9 +477,14 @@ public class ScriptLib {
         printLog("PrintLog", msg);
 	}
 
-	public int TowerCountTimeStatus(int isDone, int var2){
-		logger.debug("[LUA] Call TowerCountTimeStatus with {},{}",
-				isDone,var2);
+    /**
+     *
+     * @param isDone
+     * @return
+     */
+	public int TowerCountTimeStatus(int isDone){
+		logger.debug("[LUA] Call TowerCountTimeStatus with {}",
+				isDone);
 		// TODO record time
 		return 0;
 	}
