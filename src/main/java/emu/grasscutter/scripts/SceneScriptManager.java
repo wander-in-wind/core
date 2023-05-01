@@ -636,11 +636,12 @@ public class SceneScriptManager {
         suite.sceneRegions.forEach(this::deregisterRegion);
     }
 
-    public void startMonsterTideInGroup(SceneGroup group, Integer[] ordersConfigId, int tideCount, int sceneLimit) {
+    public void startMonsterTideInGroup(int tideIndex, SceneGroup group, Integer[] monsterConfigIds, int totalCount, int stageLimitMin, int stageLimitMax) {
         this.scriptMonsterTideService =
-                new ScriptMonsterTideService(this, group, tideCount, sceneLimit, ordersConfigId);
+            new ScriptMonsterTideService(this, tideIndex, group, monsterConfigIds, totalCount, stageLimitMin, stageLimitMax);
 
     }
+
     public void unloadCurrentMonsterTide() {
         if (this.getScriptMonsterTideService() == null) {
             return;
