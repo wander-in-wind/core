@@ -174,7 +174,7 @@ public final class AbilityManager extends BasePlayerManager {
 
         AbilityInvokeEntryHead head = invoke.getHead();
 
-        Grasscutter.getLogger().debug("{} {} {}", head.getInstancedAbilityId(), entity.getInstanceToHash(), head.getLocalId());
+        Grasscutter.getLogger().trace("{} {} {}", head.getInstancedAbilityId(), entity.getInstanceToHash(), head.getLocalId());
 
         Integer hash = entity.getInstanceToHash().get(head.getInstancedAbilityId());
         if(hash == null) {

@@ -9,6 +9,7 @@ import javax.script.Bindings;
 import javax.script.CompiledScript;
 import javax.script.ScriptException;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -19,6 +20,7 @@ public class SceneMeta {
 
     public SceneConfig config;
     public Map<Integer, SceneBlock> blocks;
+    public Map<Integer, SceneGroup> groups;
 
     public Bindings context;
 
@@ -55,6 +57,13 @@ public class SceneMeta {
             }
 
             this.blocks = blocks.stream().collect(Collectors.toMap(b -> b.id, b -> b, (a, b) -> a));
+
+            //load all blocks
+            this.groups = new HashMap<>();
+            for (var block : this.blocks.values()) {
+                block.load(sceneId, this.context);
+                groups.putAll(block.groups);
+            }
 
         } catch (ScriptException exception) {
             Grasscutter.getLogger().error("An error occurred while running a script.", exception);
