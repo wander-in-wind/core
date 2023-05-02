@@ -138,7 +138,12 @@ public class DungeonManager {
         }
 
         // Get and roll rewards.
-        List<GameItem> rewards = new ArrayList<>(this.rollRewards(useCondensed));
+        List<GameItem> rewards = player.getServer().getDropSystem().handleDungeonRewardDrop(dungeonData.getStatueDrop(), useCondensed);
+        if (rewards.isEmpty()) {
+            //fallback to legacy drop system
+            Grasscutter.getLogger().warn("dungeon drop failed for {}", dungeonData.getId());
+            rewards = new ArrayList<>(this.rollRewards(useCondensed));
+        }
         // Add rewards to player and send notification.
         player.getInventory().addItems(rewards, ActionReason.DungeonStatueDrop);
         player.sendPacket(new PacketGadgetAutoPickDropInfoNotify(rewards));
@@ -191,7 +196,7 @@ public class DungeonManager {
                     amount += Utils.drawRandomListElement(candidateAmounts, entry.getProbabilities());
                 }
 
-                // Double rewards in multiplay mode, if specified.
+                // Double rewards in multiply mode, if specified.
                 if (entry.isMpDouble() && this.getScene().getPlayerCount() > 1) {
                     amount *= 2;
                 }
