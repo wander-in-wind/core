@@ -1,8 +1,5 @@
 package emu.grasscutter.scripts;
 
-import com.github.davidmoten.rtreemulti.RTree;
-import com.github.davidmoten.rtreemulti.geometry.Geometry;
-
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.excels.MonsterData;
@@ -62,7 +59,6 @@ public class SceneScriptManager {
     private final Map<Integer, Set<Pair<String, Integer>>> activeGroupTimers;
     private final Map<String, AtomicInteger> triggerInvocations;
     private final Map<Integer, EntityRegion> regions; // <EntityId-Region>
-    private final Map<Integer, SceneGroup> sceneGroups;
     private final Map<Integer, SceneGroupInstance> sceneGroupsInstances;
     private final Map<Integer, SceneGroupInstance> cachedSceneGroupsInstances;
     private ScriptMonsterTideService scriptMonsterTideService;
@@ -70,7 +66,6 @@ public class SceneScriptManager {
     /**
      * blockid - loaded groupSet
      */
-    private final Map<Integer, Set<SceneGroup>> loadedGroupSetPerBlock;
     private static final Int2ObjectMap<List<Grid>> groupGridsCache = new Int2ObjectOpenHashMap<>();
     public static final ExecutorService eventExecutor;
     static {
@@ -87,11 +82,9 @@ public class SceneScriptManager {
 
         this.regions = new ConcurrentHashMap<>();
         this.variables = new ConcurrentHashMap<>();
-        this.sceneGroups = new ConcurrentHashMap<>();
         this.sceneGroupsInstances = new ConcurrentHashMap<>();
         this.cachedSceneGroupsInstances = new ConcurrentHashMap<>();
         this.scriptMonsterSpawnService = new ScriptMonsterSpawnService(this);
-        this.loadedGroupSetPerBlock = new ConcurrentHashMap<>();
 
         // TEMPORARY
         if (this.getScene().getId() < 10 && !Grasscutter.getConfig().server.game.enableScriptInBigWorld) {
@@ -117,9 +110,13 @@ public class SceneScriptManager {
         return meta.blocks;
     }
 
+    public Map<Integer, SceneGroup> getGroups() {
+        return meta.groups;
+    }
+
     @Nullable
     public Map<String, Integer> getVariables(int group_id) {
-        if(getCachedGroupInstanceById(group_id) == null) return Collections.emptyMap();
+        if (getCachedGroupInstanceById(group_id) == null) return Collections.emptyMap();
         return getCachedGroupInstanceById(group_id).getCachedVariables();
     }
 
@@ -251,7 +248,7 @@ public class SceneScriptManager {
         if (targetGroupInstance == null) {
             getGroupById(groupId); //Load the group, this ensures an instance is created and the if necessary unloaded, but the suite data is stored
             targetGroupInstance = getGroupInstanceById(groupId);
-            Grasscutter.getLogger().debug("trying to regresh group suite {} in an unloaded and uncached group {} in scene {}", suiteId, groupId, getScene().getId());
+            Grasscutter.getLogger().debug("trying to refresh group suite {} in an unloaded and uncached group {} in scene {}", suiteId, groupId, getScene().getId());
         } else {
             Grasscutter.getLogger().debug("Refreshing group {} suite {}", groupId, suiteId);
             suiteId = refreshGroup(targetGroupInstance, suiteId, false); //If suiteId is zero, the value of suiteId changes
@@ -312,27 +309,14 @@ public class SceneScriptManager {
         instance.ifPresent(entityRegion -> regions.remove(entityRegion.getId()));
     }
 
-    public Map<Integer, Set<SceneGroup>> getLoadedGroupSetPerBlock() {
-        return loadedGroupSetPerBlock;
-    }
-
-    // TODO optimize
     public SceneGroup getGroupById(int groupId) {
-        for (SceneBlock block : getBlocks().values()) {
-            getScene().loadBlock(block);
-
-            var group = block.groups.get(groupId);
-            if (group == null) {
-                continue;
-            }
-
-            if (!this.sceneGroupsInstances.containsKey(groupId)) {
-                getScene().onLoadGroup(List.of(group));
-                getScene().onRegisterGroups();
-            }
-            return group;
+        var group = meta.groups.get(groupId);
+        if (group == null) return null;
+        if (!this.sceneGroupsInstances.containsKey(groupId)) {
+            getScene().onLoadGroup(List.of(group));
+            getScene().onRegisterGroups();
         }
-        return null;
+        return group;
     }
 
     public SceneGroupInstance getGroupInstanceById(int groupId) {
@@ -494,7 +478,6 @@ public class SceneScriptManager {
     public void loadGroupFromScript(SceneGroup group) {
         group.load(getScene().getId());
 
-        this.sceneGroups.put(group.id, group);
         if(this.getCachedGroupInstanceById(group.id) != null) {
             this.sceneGroupsInstances.put(group.id, this.cachedSceneGroupsInstances.get(group.id));
             this.cachedSceneGroupsInstances.get(group.id).setCached(false);
@@ -516,7 +499,6 @@ public class SceneScriptManager {
     }
 
     public void unregisterGroup(SceneGroup group) {
-        this.sceneGroups.remove(group.id);
         this.sceneGroupsInstances.values().removeIf(i -> i.getLuaGroup().equals(group));
         this.cachedSceneGroupsInstances.values().stream().filter(i -> i.getLuaGroup().equals(group)).forEach(s -> s.setCached(true));
     }
