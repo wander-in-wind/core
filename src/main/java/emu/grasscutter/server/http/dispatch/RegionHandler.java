@@ -144,7 +144,7 @@ public final class RegionHandler implements Router {
 
             // Determine the region list to use based on the version and platform.
             if ("CNRELiOS".equals(versionCode) || "CNRELWin".equals(versionCode)
-                    || "CNRELAndroid".equals(versionCode)) {
+                    || "CNRELAndroid".equals(versionCode) || "GCPS".equals(versionCode)) {
                 // Use the CN region list.
                 QueryAllRegionsEvent event = new QueryAllRegionsEvent(regionListResponsecn);
                 event.call();
