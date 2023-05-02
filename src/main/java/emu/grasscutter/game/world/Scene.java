@@ -36,6 +36,7 @@ import emu.grasscutter.server.event.player.PlayerTeleportEvent;
 import emu.grasscutter.server.packet.send.*;
 import emu.grasscutter.utils.KahnsSort;
 import emu.grasscutter.utils.Position;
+import emu.grasscutter.utils.ReentrantLockHelper;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import lombok.Getter;
 import lombok.Setter;
@@ -45,6 +46,8 @@ import javax.annotation.Nullable;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 import java.util.stream.Collectors;
 
 
@@ -80,6 +83,7 @@ public class Scene {
     @Getter private boolean finishedLoading = false;
     @Getter private int tickCount = 0;
     @Getter private boolean isPaused = false;
+    private final Lock lock;
 
     public Scene(World world, SceneData sceneData) {
         this.world = world;
@@ -101,6 +105,7 @@ public class Scene {
         this.scriptManager = new SceneScriptManager(this);
         this.blossomManager = new BlossomManager(this);
         this.unlockedForces = new HashSet<>();
+        this.lock = new ReentrantLock();
     }
 
     public int getId() {
@@ -686,36 +691,38 @@ public class Scene {
     }
 
     public void checkGroups() {
-        boolean anyPlayerMoved = false;
-        for (var player : this.players) {
-            var lastPosition = player.getLastCheckedPosition();
-            //Player didn't move
-            if (lastPosition != null && lastPosition.equal2d(player.getPosition())) continue;
-            player.setLastCheckedPosition(player.getPosition().clone());
-            anyPlayerMoved = true;
-        }
-        if (!anyPlayerMoved) return;
-        Set<Integer> visible = new HashSet<>();
-        players.forEach(p -> visible.addAll(getPlayerActiveGroups(p)));
-
-        //unload invisible groups
-        for (SceneGroup group : this.loadedGroups) {
-            if (!visible.contains(group.id) && !group.dynamic_load)
-                unloadGroup(scriptManager.getBlocks().get(group.block_id), group.id);
-        }
-
-        //load visible groups
-        List<SceneGroup> toLoad = new ArrayList<>();
-        for (var g : visible) {
-            if (loadedGroupIds.contains(g)) continue;
-            var group = scriptManager.getGroups().get(g);
-            if (group != null && !group.dynamic_load) {
-                toLoad.add(group);
+        try (ReentrantLockHelper helper = new ReentrantLockHelper(lock)) {
+            boolean anyPlayerMoved = false;
+            for (var player : this.players) {
+                var lastPosition = player.getLastCheckedPosition();
+                //Player didn't move
+                if (lastPosition != null && lastPosition.equal2d(player.getPosition())) continue;
+                player.setLastCheckedPosition(player.getPosition().clone());
+                anyPlayerMoved = true;
             }
-        }
+            if (!anyPlayerMoved) return;
+            Set<Integer> visible = new HashSet<>();
+            players.forEach(p -> visible.addAll(getPlayerActiveGroups(p)));
 
-        this.onLoadGroup(toLoad);
-        if (!toLoad.isEmpty()) this.onRegisterGroups();
+            //unload invisible groups
+            for (SceneGroup group : this.loadedGroups) {
+                if (!visible.contains(group.id) && !group.dynamic_load)
+                    unloadGroup(scriptManager.getBlocks().get(group.block_id), group.id);
+            }
+
+            //load visible groups
+            List<SceneGroup> toLoad = new ArrayList<>();
+            for (var g : visible) {
+                if (loadedGroupIds.contains(g)) continue;
+                var group = scriptManager.getGroups().get(g);
+                if (group != null && !group.dynamic_load) {
+                    toLoad.add(group);
+                }
+            }
+
+            this.onLoadGroup(toLoad);
+            if (!toLoad.isEmpty()) this.onRegisterGroups();
+        }
     }
 
     public int loadDynamicGroup(int group_id) {
