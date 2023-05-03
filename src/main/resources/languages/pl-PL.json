@@ -63,7 +63,10 @@
       "game_version": "Wersja gry: %s",
       "resources": {
         "loading": "Ładowanie zasobów...",
-        "finish": "Załadowano zasoby."
+        "finish": "Załadowano zasoby.",
+        "custom": "🇺🇸Find additional resources at: 'Anime-Game-Servers/CustomGCResources'.",
+        "missing_server": "🇺🇸To fully use questing, it is recommended to add the 'Server' folder.",
+        "missing_scenes": "🇺🇸To fully use questing, it is recommended to add the 'ScriptSceneData' folder."
       }
     }
   },
@@ -236,20 +239,31 @@
       "not_found": "Nie ma zadania o podanym ID.",
       "invalid_id": "Błędny format ID zadania.",
       "description": "Dodaj lub wykonaj wskazane zadanie.",
-      "enabled": "Questing enabled."
+      "running": "🇺🇸Quest %s is %s (%s).",
+      "talking": "🇺🇸Talk %s is %s for main quest %s (%s).",
+      "state": {
+        "none": "🇺🇸unknown (none)",
+        "unstarted": "🇺🇸unfinished (not started, not completed)",
+        "unfinished": "🇺🇸unfinished (started, not completed)",
+        "finished": "🇺🇸finished (completed)",
+        "failed": "🇺🇸finished (completed, but failed)",
+        "exists": "🇺🇸found",
+        "not_exists": "🇺🇸not found"
+      },
+      "enabled": "🇺🇸Questing enabled."
     },
     "group": {
-      "invalid_groupid": "Invalid group ID.",
-      "invalid_suiteid": "Invalid suite ID.",
-      "group_not_found": "Group not found.",
-      "description": "Alter group loading",
-      "refreshed": "Group %s refreshed."
+      "invalid_groupid": "🇺🇸Invalid group ID.",
+      "invalid_suiteid": "🇺🇸Invalid suite ID.",
+      "group_not_found": "🇺🇸Group not found.",
+      "description": "🇺🇸Alter group loading",
+      "refreshed": "🇺🇸Group %s refreshed."
     },
     "cutscene": {
       "description": "Odtwarza przerywnik filmowy"
     },
     "sound": {
-      "description": "Plays a sound"
+      "description": "🇺🇸Plays a sound"
     },
     "reload": {
       "reload_start": "Ponowne ładowanie konfiguracji...",
@@ -340,7 +354,7 @@
     "team": {
       "invalid_usage": "Nieprawidłowe użycie komendy.",
       "invalid_index": "Błędny indeks.",
-      "add_too_much": "Można mieć maksymalnie %s postaci w zespole.",
+      "add_too_much": "Można mieć maksymalnie %d postaci w zespole.",
       "failed_to_add_avatar": "Błąd podczas dodawania awatara o ID \"%s\".",
       "failed_to_parse_index": "Błąd podczas przetwarzania indeksu \"%s\".",
       "remove_too_much": "Nie możesz usunąć wszystkich awatarów w zespole.",
@@ -348,7 +362,7 @@
       "index_out_of_range": "Podany indeks nie mieści się w swoim zakresie.",
       "failed_parse_avatar_id": "Błędny ID awatara \"%s\".",
       "avatar_already_in_team": "Podany awatar jest już w zespole wybranego gracza.",
-      "avatar_not_found": "Awatar o ID \"%s\" nie istnieje.",
+      "avatar_not_found": "Awatar o ID \"%d\" nie istnieje.",
       "description": "Modyfikuj zespół wybranego gracza."
     },
     "teleportAll": {
