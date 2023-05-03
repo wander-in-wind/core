@@ -124,16 +124,18 @@ public class QuestManager extends BasePlayerManager {
         player.getActivityManager().triggerActivityConditions();
     }
 
-    public void onTick(){
-        checkTimeVars();
+    public void onTick() {
+        var world = this.getPlayer().getWorld();
+        if (world == null) return;
 
+        checkTimeVars();
         // trigger game time tick for quests
         queueEvent(QuestContent.QUEST_CONTENT_GAME_TIME_TICK,
-            player.getWorld().getGameTimeHours() , // hours
+            world.getGameTimeHours() , // hours
             0);
     }
 
-    private void checkTimeVars(){
+    private void checkTimeVars() {
         val currentDays = player.getWorld().getTotalGameTimeDays();
         val currentHours = player.getWorld().getTotalGameTimeHours();
         boolean checkDays =  currentDays != lastDayCheck;
@@ -146,11 +148,11 @@ public class QuestManager extends BasePlayerManager {
         this.lastDayCheck = currentDays;
         this.lastHourCheck = currentHours;
         player.getActiveQuestTimers().forEach(mainQuestId -> {
-            if(checkHours) {
+            if (checkHours) {
                 queueEvent(QuestCond.QUEST_COND_TIME_VAR_GT_EQ, mainQuestId);
                 queueEvent(QuestContent.QUEST_CONTENT_TIME_VAR_GT_EQ, mainQuestId);
             }
-            if(checkDays) {
+            if (checkDays) {
                 queueEvent(QuestCond.QUEST_COND_TIME_VAR_PASS_DAY, mainQuestId);
                 queueEvent(QuestContent.QUEST_CONTENT_TIME_VAR_PASS_DAY, mainQuestId);
             }
@@ -377,7 +379,7 @@ public class QuestManager extends BasePlayerManager {
      */
     public void checkQuestAlreadyFullfilled(GameQuest quest){
         Grasscutter.getGameServer().getScheduler().scheduleDelayedTask(() -> {
-            for(var condition : quest.getQuestData().getFinishCond()){
+            for (var condition : quest.getQuestData().getFinishCond()){
                 switch (condition.getType()) {
                     case QUEST_CONTENT_OBTAIN_ITEM, QUEST_CONTENT_ITEM_LESS_THAN -> {
                         //check if we already own enough of the item
