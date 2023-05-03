@@ -649,11 +649,12 @@ public class Player {
     }
 
     public void onEnterRegion(SceneRegion region) {
-        getQuestManager().forEachActiveQuest(quest -> {
-            if (quest.getTriggerData() != null && quest.getTriggers().containsKey("ENTER_REGION_"+ region.config_id)) {
+        this.getQuestManager().forEachActiveQuest(quest -> {
+            if (quest.getTriggerData() != null &&
+                quest.getTriggers().containsKey("ENTER_REGION_"+ region.config_id)) {
                 // If trigger hasn't been fired yet
                 if (!Boolean.TRUE.equals(quest.getTriggers().put("ENTER_REGION_"+ region.config_id, true))) {
-                    //getSession().send(new PacketServerCondMeetQuestListUpdateNotify());
+                    getSession().send(new PacketServerCondMeetQuestListUpdateNotify());
                     getQuestManager().queueEvent(QuestContent.QUEST_CONTENT_TRIGGER_FIRE, quest.getTriggerData().get("ENTER_REGION_"+ region.config_id).getId(),0);
                 }
             }
