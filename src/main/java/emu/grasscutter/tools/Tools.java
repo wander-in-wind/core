@@ -1,10 +1,23 @@
 package emu.grasscutter.tools;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
+import emu.grasscutter.GameConstants;
+import emu.grasscutter.Grasscutter;
+import emu.grasscutter.command.CommandHandler;
+import emu.grasscutter.command.CommandMap;
+import emu.grasscutter.data.GameData;
+import emu.grasscutter.data.ResourceLoader;
+import emu.grasscutter.data.common.ItemUseData;
+import emu.grasscutter.data.excels.AchievementData;
+import emu.grasscutter.data.excels.AvatarData;
+import emu.grasscutter.data.excels.HomeWorldBgmData;
+import emu.grasscutter.data.excels.ItemData;
+import emu.grasscutter.utils.Language;
+import emu.grasscutter.utils.Language.TextStrings;
+import it.unimi.dsi.fastutil.ints.Int2IntRBTreeMap;
+import it.unimi.dsi.fastutil.ints.Int2ObjectRBTreeMap;
+import lombok.val;
+
+import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -15,21 +28,6 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.LongStream;
-
-import emu.grasscutter.GameConstants;
-import emu.grasscutter.Grasscutter;
-import emu.grasscutter.command.CommandHandler;
-import emu.grasscutter.command.CommandMap;
-import emu.grasscutter.data.GameData;
-import emu.grasscutter.data.ResourceLoader;
-import emu.grasscutter.data.excels.AchievementData;
-import emu.grasscutter.data.excels.AvatarData;
-import emu.grasscutter.data.excels.ItemData;
-import emu.grasscutter.utils.Language;
-import emu.grasscutter.utils.Language.TextStrings;
-import it.unimi.dsi.fastutil.ints.Int2IntRBTreeMap;
-import it.unimi.dsi.fastutil.ints.Int2ObjectRBTreeMap;
-import lombok.val;
 
 import static emu.grasscutter.utils.FileUtils.getResourcePath;
 import static emu.grasscutter.utils.Language.getTextMapKey;
@@ -109,27 +107,29 @@ public final class Tools {
         // Items
         h.newSection("Items");
         val itemPre = getPad.apply(itemDataMap);
-        itemDataMap.forEach((id, data) -> {
-            val name = getTextMapKey(data.getNameTextMapHash());
-            switch (data.getMaterialType()) {
-                case MATERIAL_BGM:
-                    val bgmName = Optional.ofNullable(data.getItemUse())
-                        .map(u -> u.get(0))
-                        .map(u -> u.getUseParam())
-                        .filter(u -> u.length > 0)
-                        .map(u -> Integer.parseInt(u[0]))
-                        .map(bgmId -> GameData.getHomeWorldBgmDataMap().get(bgmId))
-                        .map(bgm -> bgm.getBgmNameTextMapHash())
-                        .map(hash -> getTextMapKey(hash));
-                    if (bgmName.isPresent()) {
-                        h.newTranslatedLine(itemPre.formatted(id) + "{0} - {1}", name, bgmName.get());
-                        return;
-                    }  // Fall-through
-                default:
-                    h.newTranslatedLine(itemPre.formatted(id) + "{0}", name);
-                    return;
-            }
-        });
+        itemDataMap.forEach(
+                (id, data) -> {
+                    val name = getTextMapKey(data.getNameTextMapHash());
+                    switch (data.getMaterialType()) {
+                        case MATERIAL_BGM:
+                            val bgmName =
+                                    Optional.ofNullable(data.getItemUse())
+                                            .map(u -> u.get(0))
+                                            .map(ItemUseData::getUseParam)
+                                            .filter(u -> u.length > 0)
+                                            .map(u -> Integer.parseInt(u[0]))
+                                            .map(bgmId -> GameData.getHomeWorldBgmDataMap().get((int) bgmId))
+                                            .map(HomeWorldBgmData::getBgmNameTextMapHash)
+                                            .map(Language::getTextMapKey);
+                            if (bgmName.isPresent()) {
+                                h.newTranslatedLine(itemPre.formatted(id) + "{0} - {1}", name, bgmName.get());
+                                return;
+                            } // Fall-through
+                        default:
+                            h.newTranslatedLine(itemPre.formatted(id) + "{0}", name);
+                            return;
+                    }
+                });
         // Monsters
         h.newSection("Monsters");
         val monsterPre = getPad.apply(monsterDataMap);
