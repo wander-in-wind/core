@@ -5,7 +5,7 @@ import dev.morphia.annotations.Transient;
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.excels.ChapterData;
-import emu.grasscutter.data.excels.QuestData;
+import emu.grasscutter.data.binout.quest.QuestData;
 import emu.grasscutter.data.excels.TriggerExcelConfigData;
 import emu.grasscutter.game.dungeons.enums.DungeonPassConditionType;
 import emu.grasscutter.game.player.Player;
@@ -29,7 +29,6 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.val;
 
-import javax.script.Bindings;
 import java.util.HashMap;
 import java.util.Map;
 

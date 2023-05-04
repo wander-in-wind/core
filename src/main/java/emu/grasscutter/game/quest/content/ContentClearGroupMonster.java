@@ -1,6 +1,6 @@
 package emu.grasscutter.game.quest.content;
 
-import emu.grasscutter.data.excels.QuestData;
+import emu.grasscutter.data.binout.quest.QuestData;
 import emu.grasscutter.game.quest.GameQuest;
 import emu.grasscutter.game.quest.QuestValueContent;
 import lombok.val;

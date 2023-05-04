@@ -2,7 +2,7 @@ package emu.grasscutter.game.quest.exec;
 
 import emu.grasscutter.Grasscutter;
 
-import emu.grasscutter.data.excels.QuestData;
+import emu.grasscutter.data.binout.quest.QuestData;
 import emu.grasscutter.game.quest.GameQuest;
 import emu.grasscutter.game.quest.QuestValueExec;
 import emu.grasscutter.game.quest.enums.QuestExec;

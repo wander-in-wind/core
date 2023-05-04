@@ -6,11 +6,11 @@ import dev.morphia.annotations.Indexed;
 import dev.morphia.annotations.Transient;
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.data.GameData;
-import emu.grasscutter.data.binout.MainQuestData;
-import emu.grasscutter.data.binout.MainQuestData.SubQuestData;
-import emu.grasscutter.data.binout.MainQuestData.TalkData;
+import emu.grasscutter.data.binout.quest.MainQuestData;
+import emu.grasscutter.data.binout.quest.MainQuestData.SubQuestData;
+import emu.grasscutter.data.binout.quest.MainQuestData.TalkData;
 import emu.grasscutter.data.binout.ScriptSceneData;
-import emu.grasscutter.data.excels.QuestData;
+import emu.grasscutter.data.binout.quest.QuestData;
 import emu.grasscutter.data.excels.RewardData;
 import emu.grasscutter.database.DatabaseHelper;
 import emu.grasscutter.game.player.Player;
@@ -28,9 +28,6 @@ import lombok.val;
 import org.bson.types.ObjectId;
 
 import java.util.*;
-import javax.script.Bindings;
-import javax.script.CompiledScript;
-import javax.script.ScriptException;
 
 
 @Entity(value = "quests", useDiscriminator = false)
@@ -39,7 +36,8 @@ public class GameMainQuest {
     @Indexed @Getter private int ownerUid;
     @Transient @Getter private Player owner;
     @Transient @Getter private QuestManager questManager;
-    @Getter private Map<Integer, GameQuest> childQuests;
+    @Transient @Getter private MainQuestData mainQuestData;
+    @Transient @Getter private Map<Integer, GameQuest> childQuests;
     @Getter private int parentQuestId;
     @Getter private int[] questVars;
     @Getter private long[] timeVar;
@@ -60,7 +58,7 @@ public class GameMainQuest {
         this.ownerUid = player.getUid();
         this.questManager = player.getQuestManager();
         this.parentQuestId = parentQuestId;
-        this.childQuests = new HashMap<>();
+        this.mainQuestData = GameData.getMainQuestDataMap().get(parentQuestId);
         this.talks = new HashMap<>();
         //official server always has a list of 5 questVars, with default value 0
         this.questVars = new int[] {0,0,0,0,0};
@@ -162,7 +160,6 @@ public class GameMainQuest {
         this.save();
 
         // Add rewards
-        MainQuestData mainQuestData = GameData.getMainQuestDataMap().get(this.getParentQuestId());
         if (mainQuestData != null && mainQuestData.getRewardIdList() != null) {
             for (int rewardId : mainQuestData.getRewardIdList()) {
                 RewardData rewardData = GameData.getRewardDataMap().get(rewardId);

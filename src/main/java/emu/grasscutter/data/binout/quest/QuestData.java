@@ -1,4 +1,4 @@
-package emu.grasscutter.data.excels;
+package emu.grasscutter.data.binout.quest;
 
 import com.google.gson.annotations.SerializedName;
 import emu.grasscutter.Grasscutter;
@@ -14,11 +14,6 @@ import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
-
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
-import java.util.ArrayList;
-import java.util.List;
 
 @ResourceType(name = "QuestExcelConfigData.json")
 @Getter

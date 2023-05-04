@@ -2,7 +2,7 @@ package emu.grasscutter.game.quest.conditions;
 
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.data.GameData;
-import emu.grasscutter.data.excels.QuestData;
+import emu.grasscutter.data.binout.quest.QuestData;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.quest.QuestValueCond;
 import lombok.val;

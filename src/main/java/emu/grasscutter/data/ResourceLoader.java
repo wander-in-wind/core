@@ -6,6 +6,7 @@ import emu.grasscutter.data.binout.*;
 import emu.grasscutter.data.binout.AbilityModifier.AbilityModifierAction;
 import emu.grasscutter.data.binout.config.*;
 import emu.grasscutter.data.binout.config.fields.ConfigAbilityData;
+import emu.grasscutter.data.binout.quest.MainQuestData;
 import emu.grasscutter.data.binout.routes.SceneRoutes;
 import emu.grasscutter.data.common.PointData;
 import emu.grasscutter.data.custom.*;
@@ -448,24 +449,8 @@ public class ResourceLoader {
             });
         } catch (IOException e) {
             Grasscutter.getLogger().error("Quest data missing");
-            return;
         }
 
-        try {
-            val questEncryptionMap = GameData.getMainQuestEncryptionMap();
-            String path = "QuestEncryptionKeys.json";
-            try {
-                JsonUtils.loadToList(getResourcePath(path), QuestEncryptionKey.class).forEach(key -> questEncryptionMap.put(key.getMainQuestId(), key));
-            } catch (IOException | NullPointerException ignored) {}
-            try {
-                DataLoader.loadList(path, QuestEncryptionKey.class).forEach(key -> questEncryptionMap.put(key.getMainQuestId(), key));
-            } catch (IOException | NullPointerException ignored) {}
-            Grasscutter.getLogger().debug("Loaded {} quest keys.", questEncryptionMap.size());
-        } catch (Exception e) {
-            Grasscutter.getLogger().error("Unable to load quest keys.", e);
-        }
-
-        Grasscutter.getLogger().debug("Loaded " + GameData.getMainQuestDataMap().size() + " MainQuestDatas.");
     }
 
     public static void loadScriptSceneData() {
