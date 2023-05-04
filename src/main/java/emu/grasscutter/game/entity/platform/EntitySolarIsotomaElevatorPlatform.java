@@ -4,16 +4,16 @@ import emu.grasscutter.Grasscutter;
 import emu.grasscutter.data.binout.config.ConfigEntityGadget;
 import emu.grasscutter.game.entity.*;
 import emu.grasscutter.game.entity.gadget.GadgetAbility;
+import emu.grasscutter.game.entity.gadget.GadgetContent;
 import emu.grasscutter.game.entity.gadget.platform.AbilityRoute;
 import emu.grasscutter.game.world.Scene;
 import emu.grasscutter.utils.Position;
 
 public class EntitySolarIsotomaElevatorPlatform extends EntityGadget {
     public EntitySolarIsotomaElevatorPlatform(EntitySolarIsotomaClientGadget isotoma, Scene scene, int gadgetId, Position pos, Position rot) {
-        super(scene, gadgetId, pos, rot);
+        super(scene, gadgetId, pos, rot, new GadgetAbility(isotoma.getPlatformGadget(), isotoma));
         setOwner(isotoma);
         this.setRouteConfig(new AbilityRoute(rot, false, false, pos));
-        this.setContent(new GadgetAbility(this, isotoma));
     }
 
     @Override
