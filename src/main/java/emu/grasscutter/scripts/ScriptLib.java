@@ -6,7 +6,11 @@ import emu.grasscutter.game.activity.ActivityManager;
 import emu.grasscutter.game.dungeons.challenge.DungeonChallenge;
 import emu.grasscutter.game.dungeons.challenge.enums.FatherChallengeProperty;
 import emu.grasscutter.game.dungeons.challenge.factory.ChallengeFactory;
-import emu.grasscutter.game.entity.*;
+import emu.grasscutter.game.entity.EntityAvatar;
+import emu.grasscutter.game.entity.EntityBaseGadget;
+import emu.grasscutter.game.entity.EntityGadget;
+import emu.grasscutter.game.entity.EntityMonster;
+import emu.grasscutter.game.entity.GameEntity;
 import emu.grasscutter.game.entity.gadget.GadgetWorktop;
 import emu.grasscutter.game.entity.gadget.platform.ConfigRoute;
 import emu.grasscutter.game.entity.gadget.platform.PointArrayRoute;
@@ -31,7 +35,10 @@ import org.luaj.vm2.LuaValue;
 import org.slf4j.Logger;
 
 import javax.annotation.Nullable;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Optional;
 
 import static emu.grasscutter.game.props.EnterReason.Lua;
 import static emu.grasscutter.scripts.ScriptUtils.luaToPos;
@@ -175,24 +182,24 @@ public class ScriptLib {
 	}
 
 	public int DelWorktopOptionByGroupId(int groupId, int configId, int option) {
-		logger.debug("[LUA] Call DelWorktopOptionByGroupId with {},{},{}",groupId,configId,option);
+        logger.debug("[LUA] Call DelWorktopOptionByGroupId with {},{},{}", groupId, configId, option);
 
 
         val entity = getSceneScriptManager().getScene().getEntityByConfigId(configId, groupId);
 
-		if (!(entity instanceof EntityGadget gadget)) {
-			return 1;
-		}
+        if (!(entity instanceof EntityGadget gadget)) {
+            return 1;
+        }
 
-		if (!(gadget.getContent() instanceof GadgetWorktop worktop)) {
-			return 1;
-		}
+        if (!(gadget.getContent() instanceof GadgetWorktop worktop)) {
+            return 1;
+        }
 
-		worktop.removeWorktopOption(option);
-		getSceneScriptManager().getScene().broadcastPacket(new PacketWorktopOptionNotify(gadget));
-
-		return 0;
-	}
+        if (worktop.removeWorktopOption(option)) {
+            getSceneScriptManager().getScene().broadcastPacket(new PacketWorktopOptionNotify(gadget));
+            return 0;
+        } else return 1;
+    }
     public int DelWorktopOption(int var1){
         logger.warn("[LUA] Call unimplemented DelWorktopOption with {}", var1);
         var callParams = this.callParams.getIfExists();

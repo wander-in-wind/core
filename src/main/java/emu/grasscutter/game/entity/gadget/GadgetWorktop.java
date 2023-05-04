@@ -1,7 +1,5 @@
 package emu.grasscutter.game.entity.gadget;
 
-import java.util.Arrays;
-
 import emu.grasscutter.game.entity.EntityGadget;
 import emu.grasscutter.game.entity.gadget.worktop.WorktopWorktopOptionHandler;
 import emu.grasscutter.game.player.Player;
@@ -9,36 +7,27 @@ import emu.grasscutter.net.proto.GadgetInteractReqOuterClass.GadgetInteractReq;
 import emu.grasscutter.net.proto.SceneGadgetInfoOuterClass.SceneGadgetInfo;
 import emu.grasscutter.net.proto.SelectWorktopOptionReqOuterClass.SelectWorktopOptionReq;
 import emu.grasscutter.net.proto.WorktopInfoOuterClass.WorktopInfo;
-import it.unimi.dsi.fastutil.ints.IntOpenHashSet;
-import it.unimi.dsi.fastutil.ints.IntSet;
+import lombok.Getter;
+
+import java.util.Arrays;
+import java.util.Set;
+import java.util.concurrent.CopyOnWriteArraySet;
 
 public class GadgetWorktop extends GadgetContent {
-    private IntSet worktopOptions;
+    @Getter private final Set<Integer> worktopOptions = new CopyOnWriteArraySet<>();
     private WorktopWorktopOptionHandler handler;
 
     public GadgetWorktop(EntityGadget gadget) {
         super(gadget);
     }
 
-    public IntSet getWorktopOptions() {
-        if (this.worktopOptions == null) {
-            this.worktopOptions = new IntOpenHashSet();
-        }
-        return worktopOptions;
-    }
 
     public void addWorktopOptions(int[] options) {
-        if (this.worktopOptions == null) {
-            this.worktopOptions = new IntOpenHashSet();
-        }
-        Arrays.stream(options).forEach(this.worktopOptions::add);
+        Arrays.stream(options).forEach(worktopOptions::add);
     }
 
-    public void removeWorktopOption(int option) {
-        if (this.worktopOptions == null) {
-            return;
-        }
-        this.worktopOptions.remove(option);
+    public boolean removeWorktopOption(int option) {
+        return worktopOptions.remove(option);
     }
 
     public boolean onInteract(Player player, GadgetInteractReq req) {
@@ -46,20 +35,19 @@ public class GadgetWorktop extends GadgetContent {
     }
 
     public void onBuildProto(SceneGadgetInfo.Builder gadgetInfo) {
-        if (this.worktopOptions == null) {
-            return;
-        }
-
         WorktopInfo worktop = WorktopInfo.newBuilder()
-                .addAllOptionList(this.getWorktopOptions())
-                .build();
+            .addAllOptionList(worktopOptions)
+            .build();
 
         gadgetInfo.setWorktop(worktop);
     }
 
+    //Legacy handler, now only used by legacy Blossom system, not thread-safe
     public void setOnSelectWorktopOptionEvent(WorktopWorktopOptionHandler handler) {
         this.handler = handler;
     }
+
+    //Legacy handler, now only used by legacy Blossom system, not thread-safe
     public boolean onSelectWorktopOption(SelectWorktopOptionReq req) {
         if (this.handler != null) {
             this.handler.onSelectWorktopOption(this, req.getOptionId());
