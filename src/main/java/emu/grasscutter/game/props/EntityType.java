@@ -1,12 +1,12 @@
 package emu.grasscutter.game.props;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.stream.Stream;
-
 import emu.grasscutter.scripts.constants.IntValueEnum;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.stream.Stream;
 
 public enum EntityType implements IntValueEnum{
     None (0),
@@ -64,18 +64,24 @@ public enum EntityType implements IntValueEnum{
     Foundation (52),
     WidgetGadget (53),
     Vehicle (54),
-    SubEquip (55),
-    FishRod (56),
-    CustomTile (57),
-    FishPool (58),
-    CustomGadget (59),
-    BlackMud (60),
-    RoguelikeOperatorGadget (61),
-    NightCrowGadget (62),
-    Projector (63),
-    Screen (64),
-    EchoShell (65),
-    UIInteractGadget (66),
+    DangerZone(55),
+    EchoShell(56),
+    HomeGatherObject(57),
+    Projector(58),
+    Screen(59),
+    CustomTile(60),
+    FishPool(61),
+    FishRod(62),
+    CustomGadget(63),
+    RoguelikeOperatorGadget(64),
+    ActivityInteractGadget(65),
+    BlackMud(66),
+    SubEquip(67),
+    UIInteractGadget(68),
+    NightCrowGadget(69),
+    Partner(70),
+    DeshretObeliskGadget(71),
+    CoinCollectLevelGadget(72),
     PlaceHolder (99);
 
     private final int value;
@@ -89,7 +95,7 @@ public enum EntityType implements IntValueEnum{
         });
     }
 
-    private EntityType(int value) {
+    EntityType(int value) {
         this.value = value;
     }
 

@@ -2,7 +2,6 @@ package emu.grasscutter.game.dungeons.challenge.trigger;
 
 import emu.grasscutter.game.dungeons.challenge.WorldChallenge;
 import emu.grasscutter.game.entity.EntityGadget;
-import emu.grasscutter.game.entity.EntityMonster;
 import emu.grasscutter.game.props.FightProperty;
 import emu.grasscutter.server.packet.send.PacketChallengeDataNotify;
 
@@ -22,8 +21,8 @@ public class GuardTrigger extends ChallengeTrigger {
         if(gadget.getConfigId() != entityToProtectCFGId){
             return;
         }
-        var curHp = gadget.getFightProperties().get(FightProperty.FIGHT_PROP_CUR_HP.getId());
-        var maxHp = gadget.getFightProperties().get(FightProperty.FIGHT_PROP_BASE_HP.getId());
+        var curHp = gadget.getFightProperty(FightProperty.FIGHT_PROP_CUR_HP);
+        var maxHp = gadget.getFightProperty(FightProperty.FIGHT_PROP_BASE_HP);
         int percent = (int) (curHp / maxHp);
 
         if(percent!=lastSendPercent) {

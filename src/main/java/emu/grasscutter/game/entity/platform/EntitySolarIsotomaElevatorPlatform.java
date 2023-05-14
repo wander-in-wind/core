@@ -2,7 +2,9 @@ package emu.grasscutter.game.entity.platform;
 
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.data.binout.config.ConfigEntityGadget;
-import emu.grasscutter.game.entity.*;
+import emu.grasscutter.game.entity.EntityGadget;
+import emu.grasscutter.game.entity.EntitySolarIsotomaClientGadget;
+import emu.grasscutter.game.entity.GameEntity;
 import emu.grasscutter.game.entity.gadget.GadgetAbility;
 import emu.grasscutter.game.entity.gadget.platform.AbilityRoute;
 import emu.grasscutter.game.world.Scene;
@@ -27,11 +29,13 @@ public class EntitySolarIsotomaElevatorPlatform extends EntityGadget {
         if (combatProperties.isUseCreatorProperty()) {
             //If useCreatorProperty == true, use owner's property;
             GameEntity ownerEntity = getOwner();
-            if (ownerEntity != null) {
+            if (ownerEntity != null && ownerEntity.getFightProperties() != null && getFightProperties() != null) {
                 getFightProperties().putAll(ownerEntity.getFightProperties());
                 return;
             } else {
-                Grasscutter.getLogger().warn("Why gadget owner is null?");
+                if (ownerEntity == null) {
+                    Grasscutter.getLogger().warn("Why gadget owner is null?");
+                }
             }
         }
 

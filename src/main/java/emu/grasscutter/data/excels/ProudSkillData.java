@@ -1,14 +1,16 @@
 package emu.grasscutter.data.excels;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import dev.morphia.annotations.Transient;
 import emu.grasscutter.data.GameResource;
 import emu.grasscutter.data.ResourceType;
 import emu.grasscutter.data.common.FightPropData;
 import emu.grasscutter.data.common.ItemParamData;
+import it.unimi.dsi.fastutil.objects.Object2FloatMap;
+import it.unimi.dsi.fastutil.objects.Object2FloatOpenHashMap;
 import lombok.Getter;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @ResourceType(name = "ProudSkillExcelConfigData.json")
 public class ProudSkillData extends GameResource {
@@ -27,6 +29,8 @@ public class ProudSkillData extends GameResource {
     @Getter private long[] paramDescList;
     @Getter private long nameTextMapHash;
     @Transient private Iterable<ItemParamData> totalCostItems;
+
+    @Transient @Getter private final Object2FloatMap<String> paramListMap = new Object2FloatOpenHashMap<String>();
 
     @Override
     public int getId() {
@@ -54,5 +58,9 @@ public class ProudSkillData extends GameResource {
             }
         }
         this.addProps = parsed.toArray(new FightPropData[parsed.size()]);
+
+        for (int i = 0; i < paramList.length; i++) {
+            paramListMap.put(Integer.toString(i + 1), paramList[i]);
+        }
     }
 }

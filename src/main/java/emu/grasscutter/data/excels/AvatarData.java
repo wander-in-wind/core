@@ -1,7 +1,5 @@
 package emu.grasscutter.data.excels;
 
-import java.util.List;
-
 import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.GameResource;
 import emu.grasscutter.data.ResourceType;
@@ -15,6 +13,9 @@ import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import it.unimi.dsi.fastutil.ints.IntArrayList;
 import it.unimi.dsi.fastutil.ints.IntList;
 import lombok.Getter;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @ResourceType(name = "AvatarExcelConfigData.json", loadPriority = LoadPriority.LOW)
 public class AvatarData extends GameResource {
@@ -56,6 +57,7 @@ public class AvatarData extends GameResource {
     private float[] defenseGrowthCurve;
     @Getter private AvatarSkillDepotData skillDepot;
     @Getter private IntList abilities;
+    @Getter private final List<String> abilitieNames = new ArrayList<>();
 
     @Getter private List<Integer> fetters;
     @Getter private int nameCardRewardId;
@@ -165,6 +167,7 @@ public class AvatarData extends GameResource {
                 this.abilities = new IntArrayList(info.getAbilities().length);
                 for (String ability : info.getAbilities()) {
                     this.abilities.add(Utils.abilityHash(ability));
+                    abilitieNames.add(ability);
                 }
             }
         }

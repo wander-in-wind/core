@@ -21,12 +21,9 @@ import emu.grasscutter.game.entity.gadget.GadgetWorktop;
 import emu.grasscutter.game.inventory.GameItem;
 import emu.grasscutter.game.managers.blossom.BlossomManager;
 import emu.grasscutter.game.player.Player;
-import emu.grasscutter.game.props.ElementType;
-import emu.grasscutter.game.props.EnterReason;
-import emu.grasscutter.game.props.FightProperty;
-import emu.grasscutter.game.props.LifeState;
-import emu.grasscutter.game.props.SceneType;
+import emu.grasscutter.game.props.*;
 import emu.grasscutter.game.quest.QuestGroupSuite;
+import emu.grasscutter.game.world.SpawnDataEntry.GridBlockId;
 import emu.grasscutter.game.world.data.TeleportProperties;
 import emu.grasscutter.net.packet.BasePacket;
 import emu.grasscutter.net.proto.AttackResultOuterClass.AttackResult;
@@ -61,6 +58,7 @@ public class Scene {
     @Getter private final SceneData sceneData;
     @Getter private final List<Player> players;
     @Getter private final Map<Integer, GameEntity> entities;
+    @Getter private final Map<Integer, GameEntity> weaponEntities;
     @Getter private final Set<SpawnDataEntry> spawnedEntities;
     @Getter private final Set<SpawnDataEntry> deadSpawnedEntities;
     @Getter private final Set<SceneGroup> loadedGroups;
@@ -89,11 +87,14 @@ public class Scene {
     @Getter private int tickCount = 0;
     @Getter private boolean isPaused = false;
 
+    @Getter private final GameEntity sceneEntity;
+
     public Scene(World world, SceneData sceneData) {
         this.world = world;
         this.sceneData = sceneData;
         this.players = new CopyOnWriteArrayList<>();
         this.entities = new ConcurrentHashMap<>();
+        this.weaponEntities = new ConcurrentHashMap<>();
 
         this.prevScene = 3;
         this.sceneRoutes = GameData.getSceneRoutes(getId());
@@ -109,6 +110,10 @@ public class Scene {
         this.scriptManager = new SceneScriptManager(this);
         this.blossomManager = new BlossomManager(this);
         this.unlockedForces = new HashSet<>();
+
+        //Create scene entity
+
+        this.sceneEntity = new EntityScene(this);
     }
 
     public int getId() {
@@ -124,7 +129,23 @@ public class Scene {
     }
 
     public GameEntity getEntityById(int id) {
-        return this.entities.get(id);
+        if (id == 0x13800001) return sceneEntity;
+        else if (id == getWorld().getLevelEntityId()) return getWorld().getEntity();
+
+        var teamEntityPlayer = players.stream().filter(p -> p.getTeamManager().getEntity().getId() == id).findAny();
+        if (teamEntityPlayer.isPresent()) return teamEntityPlayer.get().getTeamManager().getEntity();
+
+        var entity = this.entities.get(id);
+        if (entity == null) entity = this.weaponEntities.get(id);
+        if (entity == null && (id >> 24) == EntityIdType.AVATAR.getId()) {
+            for (var player : getPlayers()) {
+                for (var avatar : player.getTeamManager().getActiveTeam()) {
+                    if (avatar.getId() == id) return avatar;
+                }
+            }
+        }
+
+        return entity;
     }
 
     public GameEntity getEntityByConfigId(int configId) {
@@ -295,6 +316,14 @@ public class Scene {
         addEntities(entities, VisionType.VISION_TYPE_BORN);
     }
 
+    public void updateEntity(GameEntity entity) {
+        this.broadcastPacket(new PacketSceneEntityUpdateNotify(entity));
+    }
+
+    public void updateEntity(GameEntity entity, VisionType type) {
+        this.broadcastPacket(new PacketSceneEntityUpdateNotify(Collections.singletonList(entity), type));
+    }
+
     private static <T> List<List<T>> chopped(List<T> list, final int L) {
         List<List<T>> parts = new ArrayList<List<T>>();
         final int N = list.size();
@@ -324,6 +353,14 @@ public class Scene {
         if (removed != null) {
             removed.onRemoved();//Call entity remove event
         }
+
+        //if(entity instanceof EntityWeapon) {
+        //    Grasscutter.getLogger().warn("Weapon removed {}: ", entity.getId());
+//
+        //    for (StackTraceElement ste : Thread.currentThread().getStackTrace()) {
+        //        Grasscutter.getLogger().warn(ste.toString());
+        //    }
+        //}
         return removed;
     }
 
@@ -574,8 +611,7 @@ public class Scene {
     public synchronized void checkSpawns() {
         Set<SpawnDataEntry.GridBlockId> loadedGridBlocks = new HashSet<>();
         for (Player player : this.getPlayers()) {
-            for (SpawnDataEntry.GridBlockId block : SpawnDataEntry.GridBlockId.getAdjacentGridBlockIds(player.getSceneId(), player.getPosition()))
-                loadedGridBlocks.add(block);
+            Collections.addAll(loadedGridBlocks, GridBlockId.getAdjacentGridBlockIds(player.getSceneId(), player.getPosition()));
         }
         if (this.loadedGridBlocks.containsAll(loadedGridBlocks)) {  // Don't recalculate static spawns if nothing has changed
             return;
@@ -652,7 +688,7 @@ public class Scene {
 
         for (GameEntity entity : this.getEntities().values()) {
             var spawnEntry = entity.getSpawnEntry();
-            if (spawnEntry != null && !visible.contains(spawnEntry)) {
+            if (spawnEntry != null && !(entity instanceof EntityWeapon) && !visible.contains(spawnEntry)) {
                 toRemove.add(entity);
                 spawnedEntities.remove(spawnEntry);
             }
@@ -719,12 +755,15 @@ public class Scene {
         SceneGroup group = getScriptManager().getGroupById(group_id);
         if(group == null || getScriptManager().getGroupInstanceById(group_id) != null) return -1; //Group not found or already instanced
 
-        onLoadGroup(new ArrayList<>(Arrays.asList(group)));
+        onLoadGroup(new ArrayList<>(List.of(group)));
 
         if(GameData.getGroupReplacements().containsKey(group_id)) onRegisterGroups();
 
-        if (group.init_config == null) return -1;
-        return group.init_config.suite;
+        SceneGroupInstance instance = getScriptManager().getGroupInstanceById(group_id);
+        if (instance != null)
+            return instance.getActiveSuiteId();
+
+        return -1;
     }
 
     public boolean unregisterDynamicGroup(int groupId){
@@ -889,12 +928,11 @@ public class Scene {
     public void onPlayerDestroyGadget(int entityId) {
         GameEntity entity = getEntities().get(entityId);
 
-        if (!(entity instanceof EntityClientGadget)) {
+        if (!(entity instanceof EntityClientGadget gadget)) {
             return;
         }
 
         // Get and remove entity
-        EntityClientGadget gadget = (EntityClientGadget) entity;
         this.removeEntityDirectly(gadget);
 
         // Remove from owner's gadget list

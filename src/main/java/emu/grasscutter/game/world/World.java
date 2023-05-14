@@ -3,6 +3,8 @@ package emu.grasscutter.game.world;
 import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.excels.DungeonData;
 import emu.grasscutter.data.excels.SceneData;
+import emu.grasscutter.game.entity.EntityTeam;
+import emu.grasscutter.game.entity.EntityWorld;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.player.Player.SceneLoadState;
 import emu.grasscutter.game.props.EnterReason;
@@ -29,6 +31,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Random;
 import java.util.stream.Collectors;
 
 import static emu.grasscutter.server.event.player.PlayerTeleportEvent.TeleportType.SCRIPT;
@@ -39,12 +42,12 @@ public class World implements Iterable<Player> {
     @Getter private final List<Player> players;
     @Getter private final Int2ObjectMap<Scene> scenes;
 
-    @Getter private int levelEntityId;
+    @Getter private final EntityWorld entity;
     private int nextEntityId = 0;
     private int nextPeerId = 0;
     @Getter private int worldLevel;
 
-    @Getter private boolean isMultiplayer;
+    @Getter private final boolean isMultiplayer;
 
 
     @Getter private int tickCount = 0;
@@ -52,8 +55,9 @@ public class World implements Iterable<Player> {
     @Getter private boolean isGameTimeLocked = false;
     private long lastUpdateTime;
     @Getter private long currentWorldTime = 0;
-
     @Getter private long currentGameTime = 540;
+
+    @Getter private final Random worldRandomGenerator;
 
     public World(Player player) {
         this(player, false);
@@ -65,12 +69,15 @@ public class World implements Iterable<Player> {
         this.players = Collections.synchronizedList(new ArrayList<>());
         this.scenes = Int2ObjectMaps.synchronize(new Int2ObjectOpenHashMap<>());
 
-        this.levelEntityId = this.getNextEntityId(EntityIdType.MPLEVEL);
+        //this.levelEntityId = this.getNextEntityId(EntityIdType.MPLEVEL);
+        this.entity = new EntityWorld(this);
         this.worldLevel = player.getWorldLevel();
         this.isMultiplayer = isMultiplayer;
         this.lastUpdateTime = System.currentTimeMillis();
         this.currentGameTime = owner.getPlayerGameTime();
         this.isGameTimeLocked = owner.getBoolProperty(PlayerProperty.PROP_IS_GAME_TIME_LOCKED);
+
+        this.worldRandomGenerator = new Random();
 
         this.owner.getServer().registerWorld(this);
     }
@@ -87,6 +94,11 @@ public class World implements Iterable<Player> {
 
     public Player getHost() {
         return owner;
+    }
+
+
+    public int getLevelEntityId() {
+        return entity.getId();
     }
 
     public int getHostPeerId() {
@@ -147,7 +159,8 @@ public class World implements Iterable<Player> {
 
         // Set player variables
         player.setPeerId(this.getNextPeerId());
-        player.getTeamManager().setEntityId(this.getNextEntityId(EntityIdType.TEAM));
+        player.getTeamManager().setEntity(new EntityTeam(player));
+        //player.getTeamManager().setEntityId(this.getNextEntityId(EntityIdType.TEAM));
 
         // Copy main team to multiplayer team
         if (this.isMultiplayer()) {
@@ -170,7 +183,7 @@ public class World implements Iterable<Player> {
         player.sendPacket(
                 new PacketDelTeamEntityNotify(
                         player.getSceneId(),
-                    this.getPlayers().stream().map(p -> p.getTeamManager().getEntityId()).collect(Collectors.toList())
+                    this.getPlayers().stream().map(p -> p.getTeamManager().getEntity() == null ? 0 : p.getTeamManager().getEntity().getId()).collect(Collectors.toList())
                 )
         );
 

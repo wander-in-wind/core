@@ -1,6 +1,7 @@
 package emu.grasscutter.game.props;
 
 public enum EntityIdType {
+	NONE(0x00),
 	AVATAR	(0x01),
 	MONSTER	(0x02),
 	NPC		(0x03),
@@ -12,7 +13,7 @@ public enum EntityIdType {
 
 	private final int id;
 
-	private EntityIdType(int id) {
+	EntityIdType(int id) {
 		this.id = id;
 	}
 

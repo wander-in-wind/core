@@ -10,12 +10,12 @@ import emu.grasscutter.data.excels.AvatarSkillDepotData.InherentProudSkillOpens;
 import emu.grasscutter.data.excels.ItemData.WeaponProperty;
 import emu.grasscutter.database.DatabaseHelper;
 import emu.grasscutter.game.entity.EntityAvatar;
+import emu.grasscutter.game.entity.EntityWeapon;
 import emu.grasscutter.game.inventory.EquipType;
 import emu.grasscutter.game.inventory.GameItem;
 import emu.grasscutter.game.inventory.ItemType;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.props.ElementType;
-import emu.grasscutter.game.props.EntityIdType;
 import emu.grasscutter.game.props.FetterState;
 import emu.grasscutter.game.props.FightProperty;
 import emu.grasscutter.game.props.PlayerProperty;
@@ -66,9 +66,9 @@ public class Avatar {
 
     private List<Integer> fetters;
 
-    private Map<Integer, Integer> skillLevelMap = new Int2IntArrayMap(7); // Talent levels
-    @Transient @Getter private Map<Integer, Integer> skillExtraChargeMap = new Int2IntArrayMap(2); // Charges
-    @Transient private Map<Integer, Integer> proudSkillBonusMap = new Int2IntArrayMap(2); // Talent bonus levels (from const)
+    private final Map<Integer, Integer> skillLevelMap = new Int2IntArrayMap(7); // Talent levels
+    @Transient @Getter private final Map<Integer, Integer> skillExtraChargeMap = new Int2IntArrayMap(2); // Charges
+    @Transient private final Map<Integer, Integer> proudSkillBonusMap = new Int2IntArrayMap(2); // Talent bonus levels (from const)
     @Getter private int skillDepotId;
     private Set<Integer> talentIdList; // Constellation id list
     @Getter private Set<Integer> proudSkillList; // Character passives
@@ -376,7 +376,11 @@ public class Avatar {
         getEquips().put(itemEquipType.getValue(), item);
 
         if (itemEquipType == EquipType.EQUIP_WEAPON && getPlayer().getWorld() != null) {
-            item.setWeaponEntityId(this.getPlayer().getWorld().getNextEntityId(EntityIdType.WEAPON));
+            if (!(item.getWeaponEntity() != null && item.getWeaponEntity().getScene() == getPlayer().getScene())) {
+                item.setWeaponEntity(new EntityWeapon(this.getPlayer().getScene(), item.getItemData().getGadgetId()));
+                getPlayer().getScene().getWeaponEntities().put(item.getWeaponEntity().getId(), item.getWeaponEntity());
+            }
+            //item.setWeaponEntityId(this.getPlayer().getWorld().getNextEntityId(EntityIdType.WEAPON));
         }
 
         item.setEquipCharacter(this.getAvatarId());

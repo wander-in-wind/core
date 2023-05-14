@@ -10,8 +10,6 @@ import org.luaj.vm2.LuaValue;
 
 import javax.script.Bindings;
 import javax.script.CompiledScript;
-import javax.script.ScriptException;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -164,7 +162,7 @@ public class SceneGroup {
                     if(i == exclude_index) continue;
 
                     var suite = suites.get(i);
-                    for(int j = 0; j < suite.rand_weight; j++) randSuiteList.add(Integer.valueOf(i));
+                    for (int j = 0; j < suite.rand_weight; j++) randSuiteList.add(Integer.valueOf(i + 1));
                 }
                 return randSuiteList.get(new Random().nextInt(randSuiteList.size()));
             }

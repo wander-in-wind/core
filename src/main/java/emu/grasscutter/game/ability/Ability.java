@@ -1,50 +1,47 @@
 package emu.grasscutter.game.ability;
 
+import emu.grasscutter.data.GameData;
+import emu.grasscutter.data.binout.AbilityData;
+import emu.grasscutter.game.entity.GameEntity;
+import emu.grasscutter.game.player.Player;
+import emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString;
+import it.unimi.dsi.fastutil.objects.Object2FloatMap;
+import it.unimi.dsi.fastutil.objects.Object2FloatOpenHashMap;
+import lombok.Getter;
+
 import java.util.HashMap;
 import java.util.Map;
 
-import emu.grasscutter.data.binout.AbilityData;
-import emu.grasscutter.data.binout.AbilityModifier.AbilityModifierAction;
-import emu.grasscutter.game.entity.GameEntity;
-import emu.grasscutter.server.event.entity.EntityDamageEvent;
-import lombok.Getter;
-
 public class Ability {
-    @Getter private AbilityData data;
-    @Getter private GameEntity owner;
+    @Getter private final AbilityData data;
+    @Getter private final GameEntity owner;
+    @Getter private final Player playerOwner;
 
-    @Getter private AbilityManager manager;
+    @Getter private final AbilityManager manager;
 
-    @Getter private Map<String, AbilityModifierController> modifiers = new HashMap<>();
+    @Getter private final Map<String, AbilityModifierController> modifiers = new HashMap<>();
+    @Getter private final Object2FloatMap<String> abilitySpecials = new Object2FloatOpenHashMap<String>();
 
-    @Getter private int hash;
+    @Getter private static final Map<String, Object2FloatMap<String>> abilitySpecialsModified = new HashMap<String, Object2FloatMap<String>>();
 
-    public Ability(AbilityData data, GameEntity owner) {
+    @Getter private final int hash;
+
+    public Ability(AbilityData data, GameEntity owner, Player playerOwner) {
         this.data = data;
         this.owner = owner;
-        this.manager = owner.getScene().getWorld().getHost().getAbilityManager();
+        this.manager = owner.getWorld().getHost().getAbilityManager();
+        if (this.data.abilitySpecials != null)
+            for (var entry : this.data.abilitySpecials.entrySet())
+                abilitySpecials.put(entry.getKey(), entry.getValue().floatValue());
+        //if(abilitySpecialsModified.containsKey(this.data.abilityName)) {//Modify talent data
+        //    abilitySpecials.putAll(abilitySpecialsModified.get(this.data.abilityName));
+        //}
+
+        this.playerOwner = playerOwner;
 
         hash = AbilityHash(data.abilityName);
 
         data.initialize();
-    }
-
-    public void onAdded() {
-        if(data.onAdded == null) return;
-
-        for (AbilityModifierAction action : data.onAdded) {
-            manager.executeAction(this, action);
-        }
-    }
-
-    public void onRemoved() {
-        Map<String, AbilityModifierController> tempModifiers = new HashMap<>(modifiers);
-        tempModifiers.values().forEach(m -> m.onRemoved());
-    }
-
-    public void onBeingHit(EntityDamageEvent event) {
-        Map<String, AbilityModifierController> tempModifiers = new HashMap<>(modifiers);
-        tempModifiers.values().forEach(m -> m.onBeingHit(event));
     }
 
     public static int AbilityHash(String str)
@@ -56,5 +53,12 @@ public class Ability {
             hash = ((asCharArray[i] + 131 * hash) & 0xFFFFFFFFL);
         }
         return (int)hash;
+    }
+
+    public static String getAbilityName(AbilityString abString) {
+        if (abString.hasStr()) return abString.getStr();
+        if (abString.hasHash()) return GameData.getAbilityHashes().get(abString.getHash());
+
+        return null;
     }
 }
