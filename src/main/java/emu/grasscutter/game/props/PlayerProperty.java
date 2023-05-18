@@ -51,7 +51,11 @@ public enum PlayerProperty {
     PROP_PLAYER_WORLD_LEVEL_ADJUST_CD		(10040),
     PROP_PLAYER_LEGENDARY_DAILY_TASK_NUM	(10041),
     PROP_PLAYER_HOME_COIN					(10042, 0), // Realm currency [0, +inf)
-    PROP_PLAYER_WAIT_SUB_HOME_COIN			(10043);
+    PROP_PLAYER_WAIT_SUB_HOME_COIN			(10043),
+    PROP_IS_AUTO_UNLOCK_SPECIFIC_EQUIP      (10044), // New; unknown/un-used.
+    PROP_PLAYER_GCG_COIN                    (10045), // New; unknown/un-used.
+    PROP_PLAYER_WAIT_SUB_GCG_COIN           (10046), // New; unknown/un-used.
+    PROP_PLAYER_ONLINE_TIME                 (10047); // New; unknown/un-used.
 
     private static final int inf = Integer.MAX_VALUE;  // Maybe this should be something else?
     @Getter private final int id, min, max;
