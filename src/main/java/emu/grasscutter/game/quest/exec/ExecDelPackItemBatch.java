@@ -1,10 +1,11 @@
 package emu.grasscutter.game.quest.exec;
 
+import emu.grasscutter.data.common.quest.SubQuestData.QuestExecParam;
+import emu.grasscutter.game.inventory.GameItem;
 import emu.grasscutter.game.quest.GameQuest;
 import emu.grasscutter.game.quest.QuestValueExec;
 import emu.grasscutter.game.quest.enums.QuestExec;
 import emu.grasscutter.game.quest.handlers.QuestExecHandler;
-import emu.grasscutter.data.common.quest.SubQuestData.QuestExecParam;
 
 @QuestValueExec(QuestExec.QUEST_EXEC_DEL_PACK_ITEM_BATCH)
 public class ExecDelPackItemBatch extends QuestExecHandler {
@@ -17,7 +18,7 @@ public class ExecDelPackItemBatch extends QuestExecHandler {
             var itemFields = itemString.split(":");
             var itemId = Integer.parseInt(itemFields[0]);
             var amount = Integer.parseInt(itemFields[1]);
-            if(!quest.getOwner().getInventory().removeItem(itemId, amount)){
+            if (!quest.getOwner().getInventory().removeItem(new GameItem(itemId), amount)) {
                 success = false;
             }
         }

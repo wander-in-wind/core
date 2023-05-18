@@ -36,11 +36,7 @@ import emu.grasscutter.server.game.BaseGameSystem;
 import emu.grasscutter.server.game.GameServer;
 import emu.grasscutter.server.packet.send.*;
 import emu.grasscutter.utils.Utils;
-import it.unimi.dsi.fastutil.ints.Int2FloatArrayMap;
-import it.unimi.dsi.fastutil.ints.Int2IntArrayMap;
-import it.unimi.dsi.fastutil.ints.Int2IntMap;
-import it.unimi.dsi.fastutil.ints.Int2IntOpenHashMap;
-import it.unimi.dsi.fastutil.ints.Int2IntRBTreeMap;
+import it.unimi.dsi.fastutil.ints.*;
 import lombok.val;
 
 public class InventorySystem extends BaseGameSystem {
@@ -793,7 +789,7 @@ public class InventorySystem extends BaseGameSystem {
 
         // Use
         var actions = itemData.getItemUseActions();
-        Grasscutter.getLogger().info("Using - actions - {}", actions);
+        Grasscutter.getLogger().trace("Using - actions - {}", actions);
         params.player.getQuestManager().queueEvent(QuestContent.QUEST_CONTENT_USE_ITEM, itemData.getId());
         if (actions == null) return true;  // Maybe returning false would be more appropriate?
         return actions.stream()
