@@ -1,8 +1,6 @@
 package emu.grasscutter.data.excels;
 
 import com.google.gson.annotations.SerializedName;
-import emu.grasscutter.Grasscutter;
-import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.GameResource;
 import emu.grasscutter.data.ResourceType;
 import emu.grasscutter.game.quest.enums.*;
@@ -11,7 +9,6 @@ import lombok.experimental.FieldDefaults;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
-import java.util.ArrayList;
 import java.util.List;
 
 @ResourceType(name = "QuestExcelConfigData.json")
@@ -48,7 +45,7 @@ public class QuestData extends GameResource {
         return subId;
     }
 
-    public void onLoad() {
+    /*public void onLoad() {
         this.acceptCond = acceptCond.stream().filter(p -> p.getType() != null).toList();
         this.finishCond = finishCond.stream().filter(p -> p.getType() != null).toList();
         this.failCond = failCond.stream().filter(p -> p.getType() != null).toList();
@@ -67,9 +64,9 @@ public class QuestData extends GameResource {
             this.failCondComb = LogicType.LOGIC_NONE;
 
         addToCache();
-    }
+    }*/
 
-    private void addToCache() {
+    /*private void addToCache() {
         if (this.acceptCond == null) {
             Grasscutter.getLogger().warn("missing AcceptConditions for quest {}", getSubId());
             return;
@@ -89,7 +86,7 @@ public class QuestData extends GameResource {
                 list.add(this);
             });
         }
-    }
+    }*/
 
     @Data
     @FieldDefaults(level = AccessLevel.PRIVATE)
@@ -108,17 +105,13 @@ public class QuestData extends GameResource {
 
     @Data
     public static class QuestCondition<TYPE extends Enum<?> & QuestTrigger> {
-        @SerializedName("_type")
         private TYPE type;
-        @SerializedName("_param")
         private int[] param;
-        @SerializedName("_param_str")
-        private String paramStr;
-        @SerializedName("_count")
+        private String paramString;
         private int count;
 
         public String asKey() {
-            return questConditionKey(getType(), getParam()[0], getParamStr());
+            return questConditionKey(getType(), getParam()[0], getParamString());
         }
     }
 

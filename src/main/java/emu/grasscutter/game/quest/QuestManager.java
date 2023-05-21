@@ -8,7 +8,8 @@ import java.util.concurrent.TimeUnit;
 import java.util.function.Consumer;
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.data.GameData;
-import emu.grasscutter.data.binout.MainQuestData;
+import emu.grasscutter.data.binout.quest.MainQuestData;
+import emu.grasscutter.data.binout.quest.SubQuestData;
 import emu.grasscutter.data.excels.QuestData;
 import emu.grasscutter.database.DatabaseHelper;
 import emu.grasscutter.game.player.BasePlayerManager;
@@ -205,7 +206,7 @@ public class QuestManager extends BasePlayerManager {
     }
 
     public GameQuest getQuestById(int questId) {
-        QuestData questConfig = GameData.getQuestDataMap().get(questId);
+        SubQuestData questConfig = GameData.getQuestDataMap().get(questId);
         if (questConfig == null) {
             return null;
         }
@@ -244,7 +245,7 @@ public class QuestManager extends BasePlayerManager {
         }
     }
 
-    public GameMainQuest addMainQuest(QuestData questConfig) {
+    public GameMainQuest addMainQuest(SubQuestData questConfig) {
         GameMainQuest mainQuest = new GameMainQuest(getPlayer(), questConfig.getMainId());
         getMainQuests().put(mainQuest.getParentQuestId(), mainQuest);
 
@@ -254,7 +255,7 @@ public class QuestManager extends BasePlayerManager {
     }
 
     public GameQuest addQuest(int questId) {
-        QuestData questConfig = GameData.getQuestDataMap().get(questId);
+        SubQuestData questConfig = GameData.getQuestDataMap().get(questId);
         if (questConfig == null) {
             return null;
         }
@@ -262,7 +263,7 @@ public class QuestManager extends BasePlayerManager {
        return addQuest(questConfig);
     }
 
-    public GameQuest addQuest(@Nonnull QuestData questConfig) {
+    public GameQuest addQuest(@Nonnull SubQuestData questConfig) {
 
         // Main quest
         GameMainQuest mainQuest = this.getMainQuestById(questConfig.getMainId());
@@ -290,8 +291,7 @@ public class QuestManager extends BasePlayerManager {
         }
 
         Arrays.stream(mainQuestData.getSubQuests())
-            .min(Comparator.comparingInt(MainQuestData.SubQuestData::getOrder))
-            .map(MainQuestData.SubQuestData::getSubId)
+            .min(Comparator.comparingInt(SubQuestData::getOrder))
             .ifPresent(this::addQuest);
         //TODO find a better way then hardcoding to detect needed required quests
         /*if(mainQuestId == 355){
@@ -348,8 +348,8 @@ public class QuestManager extends BasePlayerManager {
         });
     }
 
-    public boolean wasSubQuestStarted(QuestData questData){
-        val quest = getQuestById(questData.getId());
+    public boolean wasSubQuestStarted(emu.grasscutter.data.binout.quest.SubQuestData subQuestData){
+        val quest = getQuestById(subQuestData.getSubId());
         if(quest==null){
             return false;
         }
@@ -416,7 +416,7 @@ public class QuestManager extends BasePlayerManager {
             mainQuest.setOwner(this.getPlayer());
 
             for (GameQuest quest : mainQuest.getChildQuests().values()) {
-                QuestData questConfig = GameData.getQuestDataMap().get(quest.getSubQuestId());
+                SubQuestData questConfig = GameData.getQuestDataMap().get(quest.getSubQuestId());
 
                 if (questConfig == null) {
                     mainQuest.delete();

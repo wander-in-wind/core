@@ -12,7 +12,7 @@ public class ContentTimeVarMoreOrEqual extends BaseContent{
     public boolean execute(GameQuest quest, QuestData.QuestContentCondition condition, String paramStr, int... params) {
         val mainQuestId = condition.getParam()[0];
         val timeVarIndex = condition.getParam()[1];
-        val minTime = Integer.parseInt(condition.getParamStr());
+        val minTime = Integer.parseInt(condition.getParamString());
 
         val mainQuest = quest.getOwner().getQuestManager().getMainQuestById(mainQuestId);
 

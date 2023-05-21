@@ -1,7 +1,7 @@
 package emu.grasscutter.game.quest;
 
 import emu.grasscutter.Grasscutter;
-import emu.grasscutter.data.excels.QuestData;
+import emu.grasscutter.data.binout.quest.SubQuestData;
 import emu.grasscutter.data.excels.QuestData.QuestAcceptCondition;
 import emu.grasscutter.data.excels.QuestData.QuestContentCondition;
 import emu.grasscutter.data.excels.QuestData.QuestExecParam;
@@ -74,7 +74,7 @@ public class QuestSystem extends BaseGameSystem {
 
     // TODO make cleaner
 
-    public boolean triggerCondition(Player owner, QuestData questData, QuestAcceptCondition condition, String paramStr, int... params) {
+    public boolean triggerCondition(Player owner, SubQuestData questData, QuestAcceptCondition condition, String paramStr, int... params) {
         BaseCondition handler = condHandlers.get(condition.getType().getValue());
 
         if (handler == null || questData == null) {
@@ -97,6 +97,10 @@ public class QuestSystem extends BaseGameSystem {
     }
 
     public void triggerExec(GameQuest quest, QuestExecParam execParam, String... params) {
+        if(execParam.getType() == null) {
+            Grasscutter.getLogger().error("execParam.getType() is null {}", quest.getSubQuestId());
+            return;
+        }
         QuestExecHandler handler = execHandlers.get(execParam.getType().getValue());
 
         if (handler == null || quest.getQuestData() == null) {

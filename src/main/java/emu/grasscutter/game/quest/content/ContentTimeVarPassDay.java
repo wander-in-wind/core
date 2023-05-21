@@ -12,7 +12,7 @@ public class ContentTimeVarPassDay extends BaseContent{
     public boolean execute(GameQuest quest, QuestData.QuestContentCondition condition, String paramStr, int... params) {
         val mainQuestId = condition.getParam()[0];
         val timeVarIndex = condition.getParam()[1];
-        val minDays = Integer.parseInt(condition.getParamStr());
+        val minDays = Integer.parseInt(condition.getParamString());
 
         val mainQuest = quest.getOwner().getQuestManager().getMainQuestById(mainQuestId);
 

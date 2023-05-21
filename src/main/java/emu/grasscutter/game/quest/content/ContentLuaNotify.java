@@ -11,7 +11,7 @@ public class ContentLuaNotify extends BaseContent {
 
     @Override
     public boolean execute(GameQuest quest, QuestData.QuestContentCondition condition, String paramStr, int... params) {
-        return condition.getParamStr().equals(paramStr);
+        return condition.getParamString().equals(paramStr);
     }
 
 }

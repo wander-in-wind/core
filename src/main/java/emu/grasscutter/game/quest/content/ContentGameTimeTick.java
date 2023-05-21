@@ -16,7 +16,7 @@ public class ContentGameTimeTick extends BaseContent {
         val currentHour = quest.getOwner().getWorld().getGameTimeHours();
 
         // params[0] is days since start, str is hours of day
-        val range = condition.getParamStr().split(",");
+        val range = condition.getParamString().split(",");
         val from = Integer.parseInt(range[0]);
         val to = Integer.parseInt(range[1]);
 
