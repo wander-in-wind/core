@@ -1,4 +1,4 @@
-package emu.grasscutter.data.binout.quest;
+package emu.grasscutter.data.common.quest;
 
 import dev.morphia.annotations.Entity;
 import emu.grasscutter.game.quest.enums.QuestShowType;

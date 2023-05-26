@@ -13,8 +13,8 @@ import emu.grasscutter.data.binout.config.ConfigEntityAvatar;
 import emu.grasscutter.data.binout.config.ConfigEntityGadget;
 import emu.grasscutter.data.binout.config.ConfigEntityMonster;
 import emu.grasscutter.data.binout.config.ConfigLevelEntity;
-import emu.grasscutter.data.binout.quest.MainQuestData;
-import emu.grasscutter.data.binout.quest.SubQuestData;
+import emu.grasscutter.data.common.quest.MainQuestData;
+import emu.grasscutter.data.common.quest.SubQuestData;
 import emu.grasscutter.data.binout.routes.Route;
 import emu.grasscutter.data.custom.*;
 import emu.grasscutter.data.server.ActivityCondGroup;
@@ -174,7 +174,7 @@ public class GameData {
     protected static Int2ObjectMap<IntSet> proudSkillGroupLevels = new Int2ObjectOpenHashMap<>();
     protected static Int2IntMap proudSkillGroupMaxLevels = new Int2IntOpenHashMap();
     protected static Int2ObjectMap<IntSet> avatarSkillLevels = new Int2ObjectOpenHashMap<>();
-    @Getter private static final Map<String, List<emu.grasscutter.data.binout.quest.SubQuestData>> beginCondQuestMap = new HashMap<>(); // cache filled by QuestData
+    @Getter private static final Map<String, List<SubQuestData>> beginCondQuestMap = new HashMap<>(); // cache filled by QuestData
     @Getter private static final Map<Integer, Integer> questTalkMap = new HashMap<>();
     @Getter private static final Int2ObjectMap<TrialAvatarCustomData> trialAvatarCustomData = new Int2ObjectOpenHashMap<>();
     @Getter private static final Map<Integer, TrialAvatarActivityCustomData> trialAvatarActivityCustomData = new HashMap<>();
@@ -299,7 +299,7 @@ public class GameData {
     }
 
     @Nullable
-    public static List<emu.grasscutter.data.binout.quest.SubQuestData> getQuestDataByConditions(QuestCond questCond, int param0, String questStr){
+    public static List<SubQuestData> getQuestDataByConditions(QuestCond questCond, int param0, String questStr){
         return beginCondQuestMap.get(QuestData.questConditionKey(questCond, param0, questStr));
     }
 }

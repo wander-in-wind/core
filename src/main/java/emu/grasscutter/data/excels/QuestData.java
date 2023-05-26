@@ -91,11 +91,8 @@ public class QuestData extends GameResource {
     @Data
     @FieldDefaults(level = AccessLevel.PRIVATE)
     public static class QuestExecParam {
-        @SerializedName("_type")
         QuestExec type;
-        @SerializedName("_param")
         String[] param;
-        @SerializedName("_count")
         String count;
     }
 

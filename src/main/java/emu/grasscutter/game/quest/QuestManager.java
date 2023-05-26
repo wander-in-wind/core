@@ -8,9 +8,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.function.Consumer;
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.data.GameData;
-import emu.grasscutter.data.binout.quest.MainQuestData;
-import emu.grasscutter.data.binout.quest.SubQuestData;
-import emu.grasscutter.data.excels.QuestData;
+import emu.grasscutter.data.common.quest.SubQuestData;
 import emu.grasscutter.database.DatabaseHelper;
 import emu.grasscutter.game.player.BasePlayerManager;
 import emu.grasscutter.game.player.Player;
@@ -293,14 +291,6 @@ public class QuestManager extends BasePlayerManager {
         Arrays.stream(mainQuestData.getSubQuests())
             .min(Comparator.comparingInt(SubQuestData::getOrder))
             .ifPresent(this::addQuest);
-        //TODO find a better way then hardcoding to detect needed required quests
-        /*if(mainQuestId == 355){
-            startMainQuest(361);
-            startMainQuest(418);
-            startMainQuest(423);
-            startMainQuest(20509);
-
-        }*/
     }
     public void queueEvent(QuestCond condType, int... params) {
         queueEvent(condType, "", params);
@@ -348,7 +338,7 @@ public class QuestManager extends BasePlayerManager {
         });
     }
 
-    public boolean wasSubQuestStarted(emu.grasscutter.data.binout.quest.SubQuestData subQuestData){
+    public boolean wasSubQuestStarted(SubQuestData subQuestData){
         val quest = getQuestById(subQuestData.getSubId());
         if(quest==null){
             return false;

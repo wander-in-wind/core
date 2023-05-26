@@ -1,7 +1,7 @@
 package emu.grasscutter.game.quest;
 
 import emu.grasscutter.Grasscutter;
-import emu.grasscutter.data.binout.quest.SubQuestData;
+import emu.grasscutter.data.common.quest.SubQuestData;
 import emu.grasscutter.data.excels.QuestData.QuestAcceptCondition;
 import emu.grasscutter.data.excels.QuestData.QuestContentCondition;
 import emu.grasscutter.data.excels.QuestData.QuestExecParam;

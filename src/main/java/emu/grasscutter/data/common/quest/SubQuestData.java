@@ -1,4 +1,4 @@
-package emu.grasscutter.data.binout.quest;
+package emu.grasscutter.data.common.quest;
 
 import emu.grasscutter.data.excels.QuestData;
 import emu.grasscutter.game.quest.enums.LogicType;

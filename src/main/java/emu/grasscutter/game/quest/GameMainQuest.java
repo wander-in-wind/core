@@ -6,11 +6,10 @@ import dev.morphia.annotations.Indexed;
 import dev.morphia.annotations.Transient;
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.data.GameData;
-import emu.grasscutter.data.binout.quest.MainQuestData;
-import emu.grasscutter.data.binout.quest.MainQuestData.TalkData;
+import emu.grasscutter.data.common.quest.MainQuestData;
+import emu.grasscutter.data.common.quest.MainQuestData.TalkData;
 import emu.grasscutter.data.binout.ScriptSceneData;
-import emu.grasscutter.data.binout.quest.SubQuestData;
-import emu.grasscutter.data.excels.QuestData;
+import emu.grasscutter.data.common.quest.SubQuestData;
 import emu.grasscutter.data.excels.RewardData;
 import emu.grasscutter.database.DatabaseHelper;
 import emu.grasscutter.game.player.Player;
@@ -250,7 +249,7 @@ public class GameMainQuest {
         if (avatarData == null) return false;
 
         String avatarPos = avatarData.getPos();
-        QuestData.Guide guide = GameData.getQuestDataMap().get(subId).getGuide();
+        val guide = GameData.getQuestDataMap().get(subId).getGuide();
         if (guide == null) return false;
 
         int sceneId = guide.getGuideScene();
