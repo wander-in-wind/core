@@ -50,7 +50,7 @@ public final class AbilityAttachedModifierOuterClass {
   }
   /**
    * <pre>
-   * Name: JFHLNEBEOAA
+   * Obf: KLMOHHKFHDB
    * </pre>
    *
    * Protobuf type {@code AbilityAttachedModifier}
@@ -412,7 +412,7 @@ public final class AbilityAttachedModifierOuterClass {
     }
     /**
      * <pre>
-     * Name: JFHLNEBEOAA
+     * Obf: KLMOHHKFHDB
      * </pre>
      *
      * Protobuf type {@code AbilityAttachedModifier}

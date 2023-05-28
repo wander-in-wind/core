@@ -19,7 +19,7 @@ public final class WinterCampTakeExploreRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 12;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     int getRetcode();
@@ -32,8 +32,8 @@ public final class WinterCampTakeExploreRewardRspOuterClass {
   }
   /**
    * <pre>
-   * Name: EEGFCLLFHBH
-   * CmdId: 8707
+   * CmdId: 8549
+   * Obf: IOCEHLCHDAL
    * </pre>
    *
    * Protobuf type {@code WinterCampTakeExploreRewardRsp}
@@ -80,14 +80,14 @@ public final class WinterCampTakeExploreRewardRspOuterClass {
             case 0:
               done = true;
               break;
+            case 8: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
             case 72: {
 
               id_ = input.readUInt32();
-              break;
-            }
-            case 96: {
-
-              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -122,10 +122,10 @@ public final class WinterCampTakeExploreRewardRspOuterClass {
               emu.grasscutter.net.proto.WinterCampTakeExploreRewardRspOuterClass.WinterCampTakeExploreRewardRsp.class, emu.grasscutter.net.proto.WinterCampTakeExploreRewardRspOuterClass.WinterCampTakeExploreRewardRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 12;
+    public static final int RETCODE_FIELD_NUMBER = 1;
     private int retcode_;
     /**
-     * <code>int32 retcode = 12;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -158,11 +158,11 @@ public final class WinterCampTakeExploreRewardRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (retcode_ != 0) {
+        output.writeInt32(1, retcode_);
+      }
       if (id_ != 0) {
         output.writeUInt32(9, id_);
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(12, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class WinterCampTakeExploreRewardRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, retcode_);
+      }
       if (id_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(9, id_);
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(12, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class WinterCampTakeExploreRewardRspOuterClass {
     }
     /**
      * <pre>
-     * Name: EEGFCLLFHBH
-     * CmdId: 8707
+     * CmdId: 8549
+     * Obf: IOCEHLCHDAL
      * </pre>
      *
      * Protobuf type {@code WinterCampTakeExploreRewardRsp}
@@ -470,7 +470,7 @@ public final class WinterCampTakeExploreRewardRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 1;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class WinterCampTakeExploreRewardRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 1;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class WinterCampTakeExploreRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -598,7 +598,7 @@ public final class WinterCampTakeExploreRewardRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n$WinterCampTakeExploreRewardRsp.proto\"=" +
       "\n\036WinterCampTakeExploreRewardRsp\022\017\n\007retc" +
-      "ode\030\014 \001(\005\022\n\n\002id\030\t \001(\rB\033\n\031emu.grasscutter" +
+      "ode\030\001 \001(\005\022\n\n\002id\030\t \001(\rB\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

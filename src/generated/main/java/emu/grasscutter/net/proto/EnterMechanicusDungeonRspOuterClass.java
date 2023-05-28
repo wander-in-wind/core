@@ -19,33 +19,33 @@ public final class EnterMechanicusDungeonRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 wrong_uid = 14;</code>
-     * @return The wrongUid.
-     */
-    int getWrongUid();
-
-    /**
-     * <code>uint32 dungeon_id = 1;</code>
+     * <code>uint32 dungeon_id = 14;</code>
      * @return The dungeonId.
      */
     int getDungeonId();
 
     /**
-     * <code>int32 retcode = 2;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 difficult_level = 10;</code>
+     * <code>uint32 difficult_level = 3;</code>
      * @return The difficultLevel.
      */
     int getDifficultLevel();
+
+    /**
+     * <code>uint32 wrong_uid = 2;</code>
+     * @return The wrongUid.
+     */
+    int getWrongUid();
   }
   /**
    * <pre>
-   * Name: MJFAHMBOCBP
-   * CmdId: 3907
+   * CmdId: 3964
+   * Obf: EKIFFKENNLB
    * </pre>
    *
    * Protobuf type {@code EnterMechanicusDungeonRsp}
@@ -92,24 +92,24 @@ public final class EnterMechanicusDungeonRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              dungeonId_ = input.readUInt32();
-              break;
-            }
             case 16: {
 
-              retcode_ = input.readInt32();
+              wrongUid_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 24: {
 
               difficultLevel_ = input.readUInt32();
               break;
             }
+            case 48: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
             case 112: {
 
-              wrongUid_ = input.readUInt32();
+              dungeonId_ = input.readUInt32();
               break;
             }
             default: {
@@ -144,21 +144,10 @@ public final class EnterMechanicusDungeonRspOuterClass {
               emu.grasscutter.net.proto.EnterMechanicusDungeonRspOuterClass.EnterMechanicusDungeonRsp.class, emu.grasscutter.net.proto.EnterMechanicusDungeonRspOuterClass.EnterMechanicusDungeonRsp.Builder.class);
     }
 
-    public static final int WRONG_UID_FIELD_NUMBER = 14;
-    private int wrongUid_;
-    /**
-     * <code>uint32 wrong_uid = 14;</code>
-     * @return The wrongUid.
-     */
-    @java.lang.Override
-    public int getWrongUid() {
-      return wrongUid_;
-    }
-
-    public static final int DUNGEON_ID_FIELD_NUMBER = 1;
+    public static final int DUNGEON_ID_FIELD_NUMBER = 14;
     private int dungeonId_;
     /**
-     * <code>uint32 dungeon_id = 1;</code>
+     * <code>uint32 dungeon_id = 14;</code>
      * @return The dungeonId.
      */
     @java.lang.Override
@@ -166,10 +155,10 @@ public final class EnterMechanicusDungeonRspOuterClass {
       return dungeonId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 2;
+    public static final int RETCODE_FIELD_NUMBER = 6;
     private int retcode_;
     /**
-     * <code>int32 retcode = 2;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -177,15 +166,26 @@ public final class EnterMechanicusDungeonRspOuterClass {
       return retcode_;
     }
 
-    public static final int DIFFICULT_LEVEL_FIELD_NUMBER = 10;
+    public static final int DIFFICULT_LEVEL_FIELD_NUMBER = 3;
     private int difficultLevel_;
     /**
-     * <code>uint32 difficult_level = 10;</code>
+     * <code>uint32 difficult_level = 3;</code>
      * @return The difficultLevel.
      */
     @java.lang.Override
     public int getDifficultLevel() {
       return difficultLevel_;
+    }
+
+    public static final int WRONG_UID_FIELD_NUMBER = 2;
+    private int wrongUid_;
+    /**
+     * <code>uint32 wrong_uid = 2;</code>
+     * @return The wrongUid.
+     */
+    @java.lang.Override
+    public int getWrongUid() {
+      return wrongUid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -202,17 +202,17 @@ public final class EnterMechanicusDungeonRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (dungeonId_ != 0) {
-        output.writeUInt32(1, dungeonId_);
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(2, retcode_);
+      if (wrongUid_ != 0) {
+        output.writeUInt32(2, wrongUid_);
       }
       if (difficultLevel_ != 0) {
-        output.writeUInt32(10, difficultLevel_);
+        output.writeUInt32(3, difficultLevel_);
       }
-      if (wrongUid_ != 0) {
-        output.writeUInt32(14, wrongUid_);
+      if (retcode_ != 0) {
+        output.writeInt32(6, retcode_);
+      }
+      if (dungeonId_ != 0) {
+        output.writeUInt32(14, dungeonId_);
       }
       unknownFields.writeTo(output);
     }
@@ -223,21 +223,21 @@ public final class EnterMechanicusDungeonRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (dungeonId_ != 0) {
+      if (wrongUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, dungeonId_);
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, retcode_);
+          .computeUInt32Size(2, wrongUid_);
       }
       if (difficultLevel_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, difficultLevel_);
+          .computeUInt32Size(3, difficultLevel_);
       }
-      if (wrongUid_ != 0) {
+      if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, wrongUid_);
+          .computeInt32Size(6, retcode_);
+      }
+      if (dungeonId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, dungeonId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -254,14 +254,14 @@ public final class EnterMechanicusDungeonRspOuterClass {
       }
       emu.grasscutter.net.proto.EnterMechanicusDungeonRspOuterClass.EnterMechanicusDungeonRsp other = (emu.grasscutter.net.proto.EnterMechanicusDungeonRspOuterClass.EnterMechanicusDungeonRsp) obj;
 
-      if (getWrongUid()
-          != other.getWrongUid()) return false;
       if (getDungeonId()
           != other.getDungeonId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
       if (getDifficultLevel()
           != other.getDifficultLevel()) return false;
+      if (getWrongUid()
+          != other.getWrongUid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -273,14 +273,14 @@ public final class EnterMechanicusDungeonRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + WRONG_UID_FIELD_NUMBER;
-      hash = (53 * hash) + getWrongUid();
       hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
       hash = (53 * hash) + getDungeonId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + DIFFICULT_LEVEL_FIELD_NUMBER;
       hash = (53 * hash) + getDifficultLevel();
+      hash = (37 * hash) + WRONG_UID_FIELD_NUMBER;
+      hash = (53 * hash) + getWrongUid();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -378,8 +378,8 @@ public final class EnterMechanicusDungeonRspOuterClass {
     }
     /**
      * <pre>
-     * Name: MJFAHMBOCBP
-     * CmdId: 3907
+     * CmdId: 3964
+     * Obf: EKIFFKENNLB
      * </pre>
      *
      * Protobuf type {@code EnterMechanicusDungeonRsp}
@@ -419,13 +419,13 @@ public final class EnterMechanicusDungeonRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        wrongUid_ = 0;
-
         dungeonId_ = 0;
 
         retcode_ = 0;
 
         difficultLevel_ = 0;
+
+        wrongUid_ = 0;
 
         return this;
       }
@@ -453,10 +453,10 @@ public final class EnterMechanicusDungeonRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EnterMechanicusDungeonRspOuterClass.EnterMechanicusDungeonRsp buildPartial() {
         emu.grasscutter.net.proto.EnterMechanicusDungeonRspOuterClass.EnterMechanicusDungeonRsp result = new emu.grasscutter.net.proto.EnterMechanicusDungeonRspOuterClass.EnterMechanicusDungeonRsp(this);
-        result.wrongUid_ = wrongUid_;
         result.dungeonId_ = dungeonId_;
         result.retcode_ = retcode_;
         result.difficultLevel_ = difficultLevel_;
+        result.wrongUid_ = wrongUid_;
         onBuilt();
         return result;
       }
@@ -505,9 +505,6 @@ public final class EnterMechanicusDungeonRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EnterMechanicusDungeonRspOuterClass.EnterMechanicusDungeonRsp other) {
         if (other == emu.grasscutter.net.proto.EnterMechanicusDungeonRspOuterClass.EnterMechanicusDungeonRsp.getDefaultInstance()) return this;
-        if (other.getWrongUid() != 0) {
-          setWrongUid(other.getWrongUid());
-        }
         if (other.getDungeonId() != 0) {
           setDungeonId(other.getDungeonId());
         }
@@ -516,6 +513,9 @@ public final class EnterMechanicusDungeonRspOuterClass {
         }
         if (other.getDifficultLevel() != 0) {
           setDifficultLevel(other.getDifficultLevel());
+        }
+        if (other.getWrongUid() != 0) {
+          setWrongUid(other.getWrongUid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -546,40 +546,9 @@ public final class EnterMechanicusDungeonRspOuterClass {
         return this;
       }
 
-      private int wrongUid_ ;
-      /**
-       * <code>uint32 wrong_uid = 14;</code>
-       * @return The wrongUid.
-       */
-      @java.lang.Override
-      public int getWrongUid() {
-        return wrongUid_;
-      }
-      /**
-       * <code>uint32 wrong_uid = 14;</code>
-       * @param value The wrongUid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setWrongUid(int value) {
-        
-        wrongUid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 wrong_uid = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearWrongUid() {
-        
-        wrongUid_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int dungeonId_ ;
       /**
-       * <code>uint32 dungeon_id = 1;</code>
+       * <code>uint32 dungeon_id = 14;</code>
        * @return The dungeonId.
        */
       @java.lang.Override
@@ -587,7 +556,7 @@ public final class EnterMechanicusDungeonRspOuterClass {
         return dungeonId_;
       }
       /**
-       * <code>uint32 dungeon_id = 1;</code>
+       * <code>uint32 dungeon_id = 14;</code>
        * @param value The dungeonId to set.
        * @return This builder for chaining.
        */
@@ -598,7 +567,7 @@ public final class EnterMechanicusDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 dungeon_id = 1;</code>
+       * <code>uint32 dungeon_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonId() {
@@ -610,7 +579,7 @@ public final class EnterMechanicusDungeonRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 6;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -618,7 +587,7 @@ public final class EnterMechanicusDungeonRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 6;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -629,7 +598,7 @@ public final class EnterMechanicusDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -641,7 +610,7 @@ public final class EnterMechanicusDungeonRspOuterClass {
 
       private int difficultLevel_ ;
       /**
-       * <code>uint32 difficult_level = 10;</code>
+       * <code>uint32 difficult_level = 3;</code>
        * @return The difficultLevel.
        */
       @java.lang.Override
@@ -649,7 +618,7 @@ public final class EnterMechanicusDungeonRspOuterClass {
         return difficultLevel_;
       }
       /**
-       * <code>uint32 difficult_level = 10;</code>
+       * <code>uint32 difficult_level = 3;</code>
        * @param value The difficultLevel to set.
        * @return This builder for chaining.
        */
@@ -660,12 +629,43 @@ public final class EnterMechanicusDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficult_level = 10;</code>
+       * <code>uint32 difficult_level = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficultLevel() {
         
         difficultLevel_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int wrongUid_ ;
+      /**
+       * <code>uint32 wrong_uid = 2;</code>
+       * @return The wrongUid.
+       */
+      @java.lang.Override
+      public int getWrongUid() {
+        return wrongUid_;
+      }
+      /**
+       * <code>uint32 wrong_uid = 2;</code>
+       * @param value The wrongUid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setWrongUid(int value) {
+        
+        wrongUid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 wrong_uid = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearWrongUid() {
+        
+        wrongUid_ = 0;
         onChanged();
         return this;
       }
@@ -737,9 +737,9 @@ public final class EnterMechanicusDungeonRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037EnterMechanicusDungeonRsp.proto\"l\n\031Ent" +
-      "erMechanicusDungeonRsp\022\021\n\twrong_uid\030\016 \001(" +
-      "\r\022\022\n\ndungeon_id\030\001 \001(\r\022\017\n\007retcode\030\002 \001(\005\022\027" +
-      "\n\017difficult_level\030\n \001(\rB\033\n\031emu.grasscutt" +
+      "erMechanicusDungeonRsp\022\022\n\ndungeon_id\030\016 \001" +
+      "(\r\022\017\n\007retcode\030\006 \001(\005\022\027\n\017difficult_level\030\003" +
+      " \001(\r\022\021\n\twrong_uid\030\002 \001(\rB\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -751,7 +751,7 @@ public final class EnterMechanicusDungeonRspOuterClass {
     internal_static_EnterMechanicusDungeonRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EnterMechanicusDungeonRsp_descriptor,
-        new java.lang.String[] { "WrongUid", "DungeonId", "Retcode", "DifficultLevel", });
+        new java.lang.String[] { "DungeonId", "Retcode", "DifficultLevel", "WrongUid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

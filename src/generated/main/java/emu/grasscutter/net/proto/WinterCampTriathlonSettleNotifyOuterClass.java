@@ -19,57 +19,57 @@ public final class WinterCampTriathlonSettleNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_new_record = 9;</code>
+     * <code>bool is_new_record = 12;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
 
     /**
-     * <code>uint32 score = 7;</code>
-     * @return The score.
+     * <code>uint32 CKGDCGAGEDA = 6;</code>
+     * @return The cKGDCGAGEDA.
      */
-    int getScore();
+    int getCKGDCGAGEDA();
 
     /**
-     * <code>uint32 gallery_id = 5;</code>
+     * <code>uint32 gallery_id = 9;</code>
      * @return The galleryId.
      */
     int getGalleryId();
 
     /**
-     * <code>uint32 CELBGBHKEII = 2;</code>
-     * @return The cELBGBHKEII.
-     */
-    int getCELBGBHKEII();
-
-    /**
-     * <code>uint32 DIOJNDKDDLI = 6;</code>
-     * @return The dIOJNDKDDLI.
-     */
-    int getDIOJNDKDDLI();
-
-    /**
-     * <code>uint32 GIOFDHLLFNA = 12;</code>
-     * @return The gIOFDHLLFNA.
-     */
-    int getGIOFDHLLFNA();
-
-    /**
-     * <code>bool is_success = 10;</code>
+     * <code>bool is_success = 7;</code>
      * @return The isSuccess.
      */
     boolean getIsSuccess();
 
     /**
-     * <code>uint32 GLMOIGKCNOF = 14;</code>
-     * @return The gLMOIGKCNOF.
+     * <code>uint32 GFFHOIMFLJL = 5;</code>
+     * @return The gFFHOIMFLJL.
      */
-    int getGLMOIGKCNOF();
+    int getGFFHOIMFLJL();
+
+    /**
+     * <code>uint32 score = 14;</code>
+     * @return The score.
+     */
+    int getScore();
+
+    /**
+     * <code>uint32 IMLFPJIHFGP = 3;</code>
+     * @return The iMLFPJIHFGP.
+     */
+    int getIMLFPJIHFGP();
+
+    /**
+     * <code>uint32 NMIODMOOFBF = 11;</code>
+     * @return The nMIODMOOFBF.
+     */
+    int getNMIODMOOFBF();
   }
   /**
    * <pre>
-   * Name: PIIFCIHEFAO
-   * CmdId: 8920
+   * CmdId: 8842
+   * Obf: LCAIEFKIJOP
    * </pre>
    *
    * Protobuf type {@code WinterCampTriathlonSettleNotify}
@@ -116,44 +116,44 @@ public final class WinterCampTriathlonSettleNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 24: {
 
-              cELBGBHKEII_ = input.readUInt32();
+              iMLFPJIHFGP_ = input.readUInt32();
               break;
             }
             case 40: {
 
-              galleryId_ = input.readUInt32();
+              gFFHOIMFLJL_ = input.readUInt32();
               break;
             }
             case 48: {
 
-              dIOJNDKDDLI_ = input.readUInt32();
+              cKGDCGAGEDA_ = input.readUInt32();
               break;
             }
             case 56: {
 
-              score_ = input.readUInt32();
+              isSuccess_ = input.readBool();
               break;
             }
             case 72: {
 
-              isNewRecord_ = input.readBool();
+              galleryId_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 88: {
 
-              isSuccess_ = input.readBool();
+              nMIODMOOFBF_ = input.readUInt32();
               break;
             }
             case 96: {
 
-              gIOFDHLLFNA_ = input.readUInt32();
+              isNewRecord_ = input.readBool();
               break;
             }
             case 112: {
 
-              gLMOIGKCNOF_ = input.readUInt32();
+              score_ = input.readUInt32();
               break;
             }
             default: {
@@ -188,10 +188,10 @@ public final class WinterCampTriathlonSettleNotifyOuterClass {
               emu.grasscutter.net.proto.WinterCampTriathlonSettleNotifyOuterClass.WinterCampTriathlonSettleNotify.class, emu.grasscutter.net.proto.WinterCampTriathlonSettleNotifyOuterClass.WinterCampTriathlonSettleNotify.Builder.class);
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 9;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 12;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 9;</code>
+     * <code>bool is_new_record = 12;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
@@ -199,21 +199,21 @@ public final class WinterCampTriathlonSettleNotifyOuterClass {
       return isNewRecord_;
     }
 
-    public static final int SCORE_FIELD_NUMBER = 7;
-    private int score_;
+    public static final int CKGDCGAGEDA_FIELD_NUMBER = 6;
+    private int cKGDCGAGEDA_;
     /**
-     * <code>uint32 score = 7;</code>
-     * @return The score.
+     * <code>uint32 CKGDCGAGEDA = 6;</code>
+     * @return The cKGDCGAGEDA.
      */
     @java.lang.Override
-    public int getScore() {
-      return score_;
+    public int getCKGDCGAGEDA() {
+      return cKGDCGAGEDA_;
     }
 
-    public static final int GALLERY_ID_FIELD_NUMBER = 5;
+    public static final int GALLERY_ID_FIELD_NUMBER = 9;
     private int galleryId_;
     /**
-     * <code>uint32 gallery_id = 5;</code>
+     * <code>uint32 gallery_id = 9;</code>
      * @return The galleryId.
      */
     @java.lang.Override
@@ -221,43 +221,10 @@ public final class WinterCampTriathlonSettleNotifyOuterClass {
       return galleryId_;
     }
 
-    public static final int CELBGBHKEII_FIELD_NUMBER = 2;
-    private int cELBGBHKEII_;
-    /**
-     * <code>uint32 CELBGBHKEII = 2;</code>
-     * @return The cELBGBHKEII.
-     */
-    @java.lang.Override
-    public int getCELBGBHKEII() {
-      return cELBGBHKEII_;
-    }
-
-    public static final int DIOJNDKDDLI_FIELD_NUMBER = 6;
-    private int dIOJNDKDDLI_;
-    /**
-     * <code>uint32 DIOJNDKDDLI = 6;</code>
-     * @return The dIOJNDKDDLI.
-     */
-    @java.lang.Override
-    public int getDIOJNDKDDLI() {
-      return dIOJNDKDDLI_;
-    }
-
-    public static final int GIOFDHLLFNA_FIELD_NUMBER = 12;
-    private int gIOFDHLLFNA_;
-    /**
-     * <code>uint32 GIOFDHLLFNA = 12;</code>
-     * @return The gIOFDHLLFNA.
-     */
-    @java.lang.Override
-    public int getGIOFDHLLFNA() {
-      return gIOFDHLLFNA_;
-    }
-
-    public static final int IS_SUCCESS_FIELD_NUMBER = 10;
+    public static final int IS_SUCCESS_FIELD_NUMBER = 7;
     private boolean isSuccess_;
     /**
-     * <code>bool is_success = 10;</code>
+     * <code>bool is_success = 7;</code>
      * @return The isSuccess.
      */
     @java.lang.Override
@@ -265,15 +232,48 @@ public final class WinterCampTriathlonSettleNotifyOuterClass {
       return isSuccess_;
     }
 
-    public static final int GLMOIGKCNOF_FIELD_NUMBER = 14;
-    private int gLMOIGKCNOF_;
+    public static final int GFFHOIMFLJL_FIELD_NUMBER = 5;
+    private int gFFHOIMFLJL_;
     /**
-     * <code>uint32 GLMOIGKCNOF = 14;</code>
-     * @return The gLMOIGKCNOF.
+     * <code>uint32 GFFHOIMFLJL = 5;</code>
+     * @return The gFFHOIMFLJL.
      */
     @java.lang.Override
-    public int getGLMOIGKCNOF() {
-      return gLMOIGKCNOF_;
+    public int getGFFHOIMFLJL() {
+      return gFFHOIMFLJL_;
+    }
+
+    public static final int SCORE_FIELD_NUMBER = 14;
+    private int score_;
+    /**
+     * <code>uint32 score = 14;</code>
+     * @return The score.
+     */
+    @java.lang.Override
+    public int getScore() {
+      return score_;
+    }
+
+    public static final int IMLFPJIHFGP_FIELD_NUMBER = 3;
+    private int iMLFPJIHFGP_;
+    /**
+     * <code>uint32 IMLFPJIHFGP = 3;</code>
+     * @return The iMLFPJIHFGP.
+     */
+    @java.lang.Override
+    public int getIMLFPJIHFGP() {
+      return iMLFPJIHFGP_;
+    }
+
+    public static final int NMIODMOOFBF_FIELD_NUMBER = 11;
+    private int nMIODMOOFBF_;
+    /**
+     * <code>uint32 NMIODMOOFBF = 11;</code>
+     * @return The nMIODMOOFBF.
+     */
+    @java.lang.Override
+    public int getNMIODMOOFBF() {
+      return nMIODMOOFBF_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -290,29 +290,29 @@ public final class WinterCampTriathlonSettleNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (cELBGBHKEII_ != 0) {
-        output.writeUInt32(2, cELBGBHKEII_);
+      if (iMLFPJIHFGP_ != 0) {
+        output.writeUInt32(3, iMLFPJIHFGP_);
       }
-      if (galleryId_ != 0) {
-        output.writeUInt32(5, galleryId_);
+      if (gFFHOIMFLJL_ != 0) {
+        output.writeUInt32(5, gFFHOIMFLJL_);
       }
-      if (dIOJNDKDDLI_ != 0) {
-        output.writeUInt32(6, dIOJNDKDDLI_);
-      }
-      if (score_ != 0) {
-        output.writeUInt32(7, score_);
-      }
-      if (isNewRecord_ != false) {
-        output.writeBool(9, isNewRecord_);
+      if (cKGDCGAGEDA_ != 0) {
+        output.writeUInt32(6, cKGDCGAGEDA_);
       }
       if (isSuccess_ != false) {
-        output.writeBool(10, isSuccess_);
+        output.writeBool(7, isSuccess_);
       }
-      if (gIOFDHLLFNA_ != 0) {
-        output.writeUInt32(12, gIOFDHLLFNA_);
+      if (galleryId_ != 0) {
+        output.writeUInt32(9, galleryId_);
       }
-      if (gLMOIGKCNOF_ != 0) {
-        output.writeUInt32(14, gLMOIGKCNOF_);
+      if (nMIODMOOFBF_ != 0) {
+        output.writeUInt32(11, nMIODMOOFBF_);
+      }
+      if (isNewRecord_ != false) {
+        output.writeBool(12, isNewRecord_);
+      }
+      if (score_ != 0) {
+        output.writeUInt32(14, score_);
       }
       unknownFields.writeTo(output);
     }
@@ -323,37 +323,37 @@ public final class WinterCampTriathlonSettleNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (cELBGBHKEII_ != 0) {
+      if (iMLFPJIHFGP_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, cELBGBHKEII_);
+          .computeUInt32Size(3, iMLFPJIHFGP_);
       }
-      if (galleryId_ != 0) {
+      if (gFFHOIMFLJL_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, galleryId_);
+          .computeUInt32Size(5, gFFHOIMFLJL_);
       }
-      if (dIOJNDKDDLI_ != 0) {
+      if (cKGDCGAGEDA_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, dIOJNDKDDLI_);
-      }
-      if (score_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, score_);
-      }
-      if (isNewRecord_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isNewRecord_);
+          .computeUInt32Size(6, cKGDCGAGEDA_);
       }
       if (isSuccess_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isSuccess_);
+          .computeBoolSize(7, isSuccess_);
       }
-      if (gIOFDHLLFNA_ != 0) {
+      if (galleryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, gIOFDHLLFNA_);
+          .computeUInt32Size(9, galleryId_);
       }
-      if (gLMOIGKCNOF_ != 0) {
+      if (nMIODMOOFBF_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, gLMOIGKCNOF_);
+          .computeUInt32Size(11, nMIODMOOFBF_);
+      }
+      if (isNewRecord_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(12, isNewRecord_);
+      }
+      if (score_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, score_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -372,20 +372,20 @@ public final class WinterCampTriathlonSettleNotifyOuterClass {
 
       if (getIsNewRecord()
           != other.getIsNewRecord()) return false;
-      if (getScore()
-          != other.getScore()) return false;
+      if (getCKGDCGAGEDA()
+          != other.getCKGDCGAGEDA()) return false;
       if (getGalleryId()
           != other.getGalleryId()) return false;
-      if (getCELBGBHKEII()
-          != other.getCELBGBHKEII()) return false;
-      if (getDIOJNDKDDLI()
-          != other.getDIOJNDKDDLI()) return false;
-      if (getGIOFDHLLFNA()
-          != other.getGIOFDHLLFNA()) return false;
       if (getIsSuccess()
           != other.getIsSuccess()) return false;
-      if (getGLMOIGKCNOF()
-          != other.getGLMOIGKCNOF()) return false;
+      if (getGFFHOIMFLJL()
+          != other.getGFFHOIMFLJL()) return false;
+      if (getScore()
+          != other.getScore()) return false;
+      if (getIMLFPJIHFGP()
+          != other.getIMLFPJIHFGP()) return false;
+      if (getNMIODMOOFBF()
+          != other.getNMIODMOOFBF()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -400,21 +400,21 @@ public final class WinterCampTriathlonSettleNotifyOuterClass {
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
-      hash = (37 * hash) + SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getScore();
+      hash = (37 * hash) + CKGDCGAGEDA_FIELD_NUMBER;
+      hash = (53 * hash) + getCKGDCGAGEDA();
       hash = (37 * hash) + GALLERY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGalleryId();
-      hash = (37 * hash) + CELBGBHKEII_FIELD_NUMBER;
-      hash = (53 * hash) + getCELBGBHKEII();
-      hash = (37 * hash) + DIOJNDKDDLI_FIELD_NUMBER;
-      hash = (53 * hash) + getDIOJNDKDDLI();
-      hash = (37 * hash) + GIOFDHLLFNA_FIELD_NUMBER;
-      hash = (53 * hash) + getGIOFDHLLFNA();
       hash = (37 * hash) + IS_SUCCESS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsSuccess());
-      hash = (37 * hash) + GLMOIGKCNOF_FIELD_NUMBER;
-      hash = (53 * hash) + getGLMOIGKCNOF();
+      hash = (37 * hash) + GFFHOIMFLJL_FIELD_NUMBER;
+      hash = (53 * hash) + getGFFHOIMFLJL();
+      hash = (37 * hash) + SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getScore();
+      hash = (37 * hash) + IMLFPJIHFGP_FIELD_NUMBER;
+      hash = (53 * hash) + getIMLFPJIHFGP();
+      hash = (37 * hash) + NMIODMOOFBF_FIELD_NUMBER;
+      hash = (53 * hash) + getNMIODMOOFBF();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -512,8 +512,8 @@ public final class WinterCampTriathlonSettleNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: PIIFCIHEFAO
-     * CmdId: 8920
+     * CmdId: 8842
+     * Obf: LCAIEFKIJOP
      * </pre>
      *
      * Protobuf type {@code WinterCampTriathlonSettleNotify}
@@ -555,19 +555,19 @@ public final class WinterCampTriathlonSettleNotifyOuterClass {
         super.clear();
         isNewRecord_ = false;
 
-        score_ = 0;
+        cKGDCGAGEDA_ = 0;
 
         galleryId_ = 0;
 
-        cELBGBHKEII_ = 0;
-
-        dIOJNDKDDLI_ = 0;
-
-        gIOFDHLLFNA_ = 0;
-
         isSuccess_ = false;
 
-        gLMOIGKCNOF_ = 0;
+        gFFHOIMFLJL_ = 0;
+
+        score_ = 0;
+
+        iMLFPJIHFGP_ = 0;
+
+        nMIODMOOFBF_ = 0;
 
         return this;
       }
@@ -596,13 +596,13 @@ public final class WinterCampTriathlonSettleNotifyOuterClass {
       public emu.grasscutter.net.proto.WinterCampTriathlonSettleNotifyOuterClass.WinterCampTriathlonSettleNotify buildPartial() {
         emu.grasscutter.net.proto.WinterCampTriathlonSettleNotifyOuterClass.WinterCampTriathlonSettleNotify result = new emu.grasscutter.net.proto.WinterCampTriathlonSettleNotifyOuterClass.WinterCampTriathlonSettleNotify(this);
         result.isNewRecord_ = isNewRecord_;
-        result.score_ = score_;
+        result.cKGDCGAGEDA_ = cKGDCGAGEDA_;
         result.galleryId_ = galleryId_;
-        result.cELBGBHKEII_ = cELBGBHKEII_;
-        result.dIOJNDKDDLI_ = dIOJNDKDDLI_;
-        result.gIOFDHLLFNA_ = gIOFDHLLFNA_;
         result.isSuccess_ = isSuccess_;
-        result.gLMOIGKCNOF_ = gLMOIGKCNOF_;
+        result.gFFHOIMFLJL_ = gFFHOIMFLJL_;
+        result.score_ = score_;
+        result.iMLFPJIHFGP_ = iMLFPJIHFGP_;
+        result.nMIODMOOFBF_ = nMIODMOOFBF_;
         onBuilt();
         return result;
       }
@@ -654,26 +654,26 @@ public final class WinterCampTriathlonSettleNotifyOuterClass {
         if (other.getIsNewRecord() != false) {
           setIsNewRecord(other.getIsNewRecord());
         }
-        if (other.getScore() != 0) {
-          setScore(other.getScore());
+        if (other.getCKGDCGAGEDA() != 0) {
+          setCKGDCGAGEDA(other.getCKGDCGAGEDA());
         }
         if (other.getGalleryId() != 0) {
           setGalleryId(other.getGalleryId());
         }
-        if (other.getCELBGBHKEII() != 0) {
-          setCELBGBHKEII(other.getCELBGBHKEII());
-        }
-        if (other.getDIOJNDKDDLI() != 0) {
-          setDIOJNDKDDLI(other.getDIOJNDKDDLI());
-        }
-        if (other.getGIOFDHLLFNA() != 0) {
-          setGIOFDHLLFNA(other.getGIOFDHLLFNA());
-        }
         if (other.getIsSuccess() != false) {
           setIsSuccess(other.getIsSuccess());
         }
-        if (other.getGLMOIGKCNOF() != 0) {
-          setGLMOIGKCNOF(other.getGLMOIGKCNOF());
+        if (other.getGFFHOIMFLJL() != 0) {
+          setGFFHOIMFLJL(other.getGFFHOIMFLJL());
+        }
+        if (other.getScore() != 0) {
+          setScore(other.getScore());
+        }
+        if (other.getIMLFPJIHFGP() != 0) {
+          setIMLFPJIHFGP(other.getIMLFPJIHFGP());
+        }
+        if (other.getNMIODMOOFBF() != 0) {
+          setNMIODMOOFBF(other.getNMIODMOOFBF());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -706,7 +706,7 @@ public final class WinterCampTriathlonSettleNotifyOuterClass {
 
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 9;</code>
+       * <code>bool is_new_record = 12;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -714,7 +714,7 @@ public final class WinterCampTriathlonSettleNotifyOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 9;</code>
+       * <code>bool is_new_record = 12;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -725,7 +725,7 @@ public final class WinterCampTriathlonSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 9;</code>
+       * <code>bool is_new_record = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
@@ -735,40 +735,40 @@ public final class WinterCampTriathlonSettleNotifyOuterClass {
         return this;
       }
 
-      private int score_ ;
+      private int cKGDCGAGEDA_ ;
       /**
-       * <code>uint32 score = 7;</code>
-       * @return The score.
+       * <code>uint32 CKGDCGAGEDA = 6;</code>
+       * @return The cKGDCGAGEDA.
        */
       @java.lang.Override
-      public int getScore() {
-        return score_;
+      public int getCKGDCGAGEDA() {
+        return cKGDCGAGEDA_;
       }
       /**
-       * <code>uint32 score = 7;</code>
-       * @param value The score to set.
+       * <code>uint32 CKGDCGAGEDA = 6;</code>
+       * @param value The cKGDCGAGEDA to set.
        * @return This builder for chaining.
        */
-      public Builder setScore(int value) {
+      public Builder setCKGDCGAGEDA(int value) {
         
-        score_ = value;
+        cKGDCGAGEDA_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 score = 7;</code>
+       * <code>uint32 CKGDCGAGEDA = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearScore() {
+      public Builder clearCKGDCGAGEDA() {
         
-        score_ = 0;
+        cKGDCGAGEDA_ = 0;
         onChanged();
         return this;
       }
 
       private int galleryId_ ;
       /**
-       * <code>uint32 gallery_id = 5;</code>
+       * <code>uint32 gallery_id = 9;</code>
        * @return The galleryId.
        */
       @java.lang.Override
@@ -776,7 +776,7 @@ public final class WinterCampTriathlonSettleNotifyOuterClass {
         return galleryId_;
       }
       /**
-       * <code>uint32 gallery_id = 5;</code>
+       * <code>uint32 gallery_id = 9;</code>
        * @param value The galleryId to set.
        * @return This builder for chaining.
        */
@@ -787,7 +787,7 @@ public final class WinterCampTriathlonSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gallery_id = 5;</code>
+       * <code>uint32 gallery_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearGalleryId() {
@@ -797,102 +797,9 @@ public final class WinterCampTriathlonSettleNotifyOuterClass {
         return this;
       }
 
-      private int cELBGBHKEII_ ;
-      /**
-       * <code>uint32 CELBGBHKEII = 2;</code>
-       * @return The cELBGBHKEII.
-       */
-      @java.lang.Override
-      public int getCELBGBHKEII() {
-        return cELBGBHKEII_;
-      }
-      /**
-       * <code>uint32 CELBGBHKEII = 2;</code>
-       * @param value The cELBGBHKEII to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCELBGBHKEII(int value) {
-        
-        cELBGBHKEII_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 CELBGBHKEII = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCELBGBHKEII() {
-        
-        cELBGBHKEII_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int dIOJNDKDDLI_ ;
-      /**
-       * <code>uint32 DIOJNDKDDLI = 6;</code>
-       * @return The dIOJNDKDDLI.
-       */
-      @java.lang.Override
-      public int getDIOJNDKDDLI() {
-        return dIOJNDKDDLI_;
-      }
-      /**
-       * <code>uint32 DIOJNDKDDLI = 6;</code>
-       * @param value The dIOJNDKDDLI to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDIOJNDKDDLI(int value) {
-        
-        dIOJNDKDDLI_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 DIOJNDKDDLI = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDIOJNDKDDLI() {
-        
-        dIOJNDKDDLI_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int gIOFDHLLFNA_ ;
-      /**
-       * <code>uint32 GIOFDHLLFNA = 12;</code>
-       * @return The gIOFDHLLFNA.
-       */
-      @java.lang.Override
-      public int getGIOFDHLLFNA() {
-        return gIOFDHLLFNA_;
-      }
-      /**
-       * <code>uint32 GIOFDHLLFNA = 12;</code>
-       * @param value The gIOFDHLLFNA to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGIOFDHLLFNA(int value) {
-        
-        gIOFDHLLFNA_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 GIOFDHLLFNA = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGIOFDHLLFNA() {
-        
-        gIOFDHLLFNA_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isSuccess_ ;
       /**
-       * <code>bool is_success = 10;</code>
+       * <code>bool is_success = 7;</code>
        * @return The isSuccess.
        */
       @java.lang.Override
@@ -900,7 +807,7 @@ public final class WinterCampTriathlonSettleNotifyOuterClass {
         return isSuccess_;
       }
       /**
-       * <code>bool is_success = 10;</code>
+       * <code>bool is_success = 7;</code>
        * @param value The isSuccess to set.
        * @return This builder for chaining.
        */
@@ -911,7 +818,7 @@ public final class WinterCampTriathlonSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_success = 10;</code>
+       * <code>bool is_success = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsSuccess() {
@@ -921,33 +828,126 @@ public final class WinterCampTriathlonSettleNotifyOuterClass {
         return this;
       }
 
-      private int gLMOIGKCNOF_ ;
+      private int gFFHOIMFLJL_ ;
       /**
-       * <code>uint32 GLMOIGKCNOF = 14;</code>
-       * @return The gLMOIGKCNOF.
+       * <code>uint32 GFFHOIMFLJL = 5;</code>
+       * @return The gFFHOIMFLJL.
        */
       @java.lang.Override
-      public int getGLMOIGKCNOF() {
-        return gLMOIGKCNOF_;
+      public int getGFFHOIMFLJL() {
+        return gFFHOIMFLJL_;
       }
       /**
-       * <code>uint32 GLMOIGKCNOF = 14;</code>
-       * @param value The gLMOIGKCNOF to set.
+       * <code>uint32 GFFHOIMFLJL = 5;</code>
+       * @param value The gFFHOIMFLJL to set.
        * @return This builder for chaining.
        */
-      public Builder setGLMOIGKCNOF(int value) {
+      public Builder setGFFHOIMFLJL(int value) {
         
-        gLMOIGKCNOF_ = value;
+        gFFHOIMFLJL_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 GLMOIGKCNOF = 14;</code>
+       * <code>uint32 GFFHOIMFLJL = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGLMOIGKCNOF() {
+      public Builder clearGFFHOIMFLJL() {
         
-        gLMOIGKCNOF_ = 0;
+        gFFHOIMFLJL_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int score_ ;
+      /**
+       * <code>uint32 score = 14;</code>
+       * @return The score.
+       */
+      @java.lang.Override
+      public int getScore() {
+        return score_;
+      }
+      /**
+       * <code>uint32 score = 14;</code>
+       * @param value The score to set.
+       * @return This builder for chaining.
+       */
+      public Builder setScore(int value) {
+        
+        score_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 score = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearScore() {
+        
+        score_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int iMLFPJIHFGP_ ;
+      /**
+       * <code>uint32 IMLFPJIHFGP = 3;</code>
+       * @return The iMLFPJIHFGP.
+       */
+      @java.lang.Override
+      public int getIMLFPJIHFGP() {
+        return iMLFPJIHFGP_;
+      }
+      /**
+       * <code>uint32 IMLFPJIHFGP = 3;</code>
+       * @param value The iMLFPJIHFGP to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIMLFPJIHFGP(int value) {
+        
+        iMLFPJIHFGP_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 IMLFPJIHFGP = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIMLFPJIHFGP() {
+        
+        iMLFPJIHFGP_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int nMIODMOOFBF_ ;
+      /**
+       * <code>uint32 NMIODMOOFBF = 11;</code>
+       * @return The nMIODMOOFBF.
+       */
+      @java.lang.Override
+      public int getNMIODMOOFBF() {
+        return nMIODMOOFBF_;
+      }
+      /**
+       * <code>uint32 NMIODMOOFBF = 11;</code>
+       * @param value The nMIODMOOFBF to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNMIODMOOFBF(int value) {
+        
+        nMIODMOOFBF_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 NMIODMOOFBF = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNMIODMOOFBF() {
+        
+        nMIODMOOFBF_ = 0;
         onChanged();
         return this;
       }
@@ -1020,10 +1020,10 @@ public final class WinterCampTriathlonSettleNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n%WinterCampTriathlonSettleNotify.proto\"" +
       "\303\001\n\037WinterCampTriathlonSettleNotify\022\025\n\ri" +
-      "s_new_record\030\t \001(\010\022\r\n\005score\030\007 \001(\r\022\022\n\ngal" +
-      "lery_id\030\005 \001(\r\022\023\n\013CELBGBHKEII\030\002 \001(\r\022\023\n\013DI" +
-      "OJNDKDDLI\030\006 \001(\r\022\023\n\013GIOFDHLLFNA\030\014 \001(\r\022\022\n\n" +
-      "is_success\030\n \001(\010\022\023\n\013GLMOIGKCNOF\030\016 \001(\rB\033\n" +
+      "s_new_record\030\014 \001(\010\022\023\n\013CKGDCGAGEDA\030\006 \001(\r\022" +
+      "\022\n\ngallery_id\030\t \001(\r\022\022\n\nis_success\030\007 \001(\010\022" +
+      "\023\n\013GFFHOIMFLJL\030\005 \001(\r\022\r\n\005score\030\016 \001(\r\022\023\n\013I" +
+      "MLFPJIHFGP\030\003 \001(\r\022\023\n\013NMIODMOOFBF\030\013 \001(\rB\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1035,7 +1035,7 @@ public final class WinterCampTriathlonSettleNotifyOuterClass {
     internal_static_WinterCampTriathlonSettleNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_WinterCampTriathlonSettleNotify_descriptor,
-        new java.lang.String[] { "IsNewRecord", "Score", "GalleryId", "CELBGBHKEII", "DIOJNDKDDLI", "GIOFDHLLFNA", "IsSuccess", "GLMOIGKCNOF", });
+        new java.lang.String[] { "IsNewRecord", "CKGDCGAGEDA", "GalleryId", "IsSuccess", "GFFHOIMFLJL", "Score", "IMLFPJIHFGP", "NMIODMOOFBF", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

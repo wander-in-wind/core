@@ -19,33 +19,33 @@ public final class MpPlayOwnerCheckRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 wrong_uid = 6;</code>
+     * <code>uint32 wrong_uid = 4;</code>
      * @return The wrongUid.
      */
     int getWrongUid();
 
     /**
-     * <code>int32 retcode = 1;</code>
-     * @return The retcode.
+     * <code>uint32 mp_play_id = 11;</code>
+     * @return The mpPlayId.
      */
-    int getRetcode();
+    int getMpPlayId();
 
     /**
-     * <code>bool is_skip_match = 7;</code>
+     * <code>bool is_skip_match = 8;</code>
      * @return The isSkipMatch.
      */
     boolean getIsSkipMatch();
 
     /**
-     * <code>uint32 mp_play_id = 5;</code>
-     * @return The mpPlayId.
+     * <code>int32 retcode = 12;</code>
+     * @return The retcode.
      */
-    int getMpPlayId();
+    int getRetcode();
   }
   /**
    * <pre>
-   * Name: EKINJMLIJLE
-   * CmdId: 1826
+   * CmdId: 1831
+   * Obf: OAKGFIPBBDH
    * </pre>
    *
    * Protobuf type {@code MpPlayOwnerCheckRsp}
@@ -92,24 +92,24 @@ public final class MpPlayOwnerCheckRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 40: {
-
-              mpPlayId_ = input.readUInt32();
-              break;
-            }
-            case 48: {
+            case 32: {
 
               wrongUid_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 64: {
 
               isSkipMatch_ = input.readBool();
+              break;
+            }
+            case 88: {
+
+              mpPlayId_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -144,10 +144,10 @@ public final class MpPlayOwnerCheckRspOuterClass {
               emu.grasscutter.net.proto.MpPlayOwnerCheckRspOuterClass.MpPlayOwnerCheckRsp.class, emu.grasscutter.net.proto.MpPlayOwnerCheckRspOuterClass.MpPlayOwnerCheckRsp.Builder.class);
     }
 
-    public static final int WRONG_UID_FIELD_NUMBER = 6;
+    public static final int WRONG_UID_FIELD_NUMBER = 4;
     private int wrongUid_;
     /**
-     * <code>uint32 wrong_uid = 6;</code>
+     * <code>uint32 wrong_uid = 4;</code>
      * @return The wrongUid.
      */
     @java.lang.Override
@@ -155,21 +155,21 @@ public final class MpPlayOwnerCheckRspOuterClass {
       return wrongUid_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 1;
-    private int retcode_;
+    public static final int MP_PLAY_ID_FIELD_NUMBER = 11;
+    private int mpPlayId_;
     /**
-     * <code>int32 retcode = 1;</code>
-     * @return The retcode.
+     * <code>uint32 mp_play_id = 11;</code>
+     * @return The mpPlayId.
      */
     @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
+    public int getMpPlayId() {
+      return mpPlayId_;
     }
 
-    public static final int IS_SKIP_MATCH_FIELD_NUMBER = 7;
+    public static final int IS_SKIP_MATCH_FIELD_NUMBER = 8;
     private boolean isSkipMatch_;
     /**
-     * <code>bool is_skip_match = 7;</code>
+     * <code>bool is_skip_match = 8;</code>
      * @return The isSkipMatch.
      */
     @java.lang.Override
@@ -177,15 +177,15 @@ public final class MpPlayOwnerCheckRspOuterClass {
       return isSkipMatch_;
     }
 
-    public static final int MP_PLAY_ID_FIELD_NUMBER = 5;
-    private int mpPlayId_;
+    public static final int RETCODE_FIELD_NUMBER = 12;
+    private int retcode_;
     /**
-     * <code>uint32 mp_play_id = 5;</code>
-     * @return The mpPlayId.
+     * <code>int32 retcode = 12;</code>
+     * @return The retcode.
      */
     @java.lang.Override
-    public int getMpPlayId() {
-      return mpPlayId_;
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -202,17 +202,17 @@ public final class MpPlayOwnerCheckRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(1, retcode_);
-      }
-      if (mpPlayId_ != 0) {
-        output.writeUInt32(5, mpPlayId_);
-      }
       if (wrongUid_ != 0) {
-        output.writeUInt32(6, wrongUid_);
+        output.writeUInt32(4, wrongUid_);
       }
       if (isSkipMatch_ != false) {
-        output.writeBool(7, isSkipMatch_);
+        output.writeBool(8, isSkipMatch_);
+      }
+      if (mpPlayId_ != 0) {
+        output.writeUInt32(11, mpPlayId_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(12, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -223,21 +223,21 @@ public final class MpPlayOwnerCheckRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, retcode_);
-      }
-      if (mpPlayId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, mpPlayId_);
-      }
       if (wrongUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, wrongUid_);
+          .computeUInt32Size(4, wrongUid_);
       }
       if (isSkipMatch_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isSkipMatch_);
+          .computeBoolSize(8, isSkipMatch_);
+      }
+      if (mpPlayId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, mpPlayId_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(12, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -256,12 +256,12 @@ public final class MpPlayOwnerCheckRspOuterClass {
 
       if (getWrongUid()
           != other.getWrongUid()) return false;
-      if (getRetcode()
-          != other.getRetcode()) return false;
-      if (getIsSkipMatch()
-          != other.getIsSkipMatch()) return false;
       if (getMpPlayId()
           != other.getMpPlayId()) return false;
+      if (getIsSkipMatch()
+          != other.getIsSkipMatch()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -275,13 +275,13 @@ public final class MpPlayOwnerCheckRspOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + WRONG_UID_FIELD_NUMBER;
       hash = (53 * hash) + getWrongUid();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + MP_PLAY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getMpPlayId();
       hash = (37 * hash) + IS_SKIP_MATCH_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsSkipMatch());
-      hash = (37 * hash) + MP_PLAY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getMpPlayId();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -379,8 +379,8 @@ public final class MpPlayOwnerCheckRspOuterClass {
     }
     /**
      * <pre>
-     * Name: EKINJMLIJLE
-     * CmdId: 1826
+     * CmdId: 1831
+     * Obf: OAKGFIPBBDH
      * </pre>
      *
      * Protobuf type {@code MpPlayOwnerCheckRsp}
@@ -422,11 +422,11 @@ public final class MpPlayOwnerCheckRspOuterClass {
         super.clear();
         wrongUid_ = 0;
 
-        retcode_ = 0;
+        mpPlayId_ = 0;
 
         isSkipMatch_ = false;
 
-        mpPlayId_ = 0;
+        retcode_ = 0;
 
         return this;
       }
@@ -455,9 +455,9 @@ public final class MpPlayOwnerCheckRspOuterClass {
       public emu.grasscutter.net.proto.MpPlayOwnerCheckRspOuterClass.MpPlayOwnerCheckRsp buildPartial() {
         emu.grasscutter.net.proto.MpPlayOwnerCheckRspOuterClass.MpPlayOwnerCheckRsp result = new emu.grasscutter.net.proto.MpPlayOwnerCheckRspOuterClass.MpPlayOwnerCheckRsp(this);
         result.wrongUid_ = wrongUid_;
-        result.retcode_ = retcode_;
-        result.isSkipMatch_ = isSkipMatch_;
         result.mpPlayId_ = mpPlayId_;
+        result.isSkipMatch_ = isSkipMatch_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -509,14 +509,14 @@ public final class MpPlayOwnerCheckRspOuterClass {
         if (other.getWrongUid() != 0) {
           setWrongUid(other.getWrongUid());
         }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
+        if (other.getMpPlayId() != 0) {
+          setMpPlayId(other.getMpPlayId());
         }
         if (other.getIsSkipMatch() != false) {
           setIsSkipMatch(other.getIsSkipMatch());
         }
-        if (other.getMpPlayId() != 0) {
-          setMpPlayId(other.getMpPlayId());
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -549,7 +549,7 @@ public final class MpPlayOwnerCheckRspOuterClass {
 
       private int wrongUid_ ;
       /**
-       * <code>uint32 wrong_uid = 6;</code>
+       * <code>uint32 wrong_uid = 4;</code>
        * @return The wrongUid.
        */
       @java.lang.Override
@@ -557,7 +557,7 @@ public final class MpPlayOwnerCheckRspOuterClass {
         return wrongUid_;
       }
       /**
-       * <code>uint32 wrong_uid = 6;</code>
+       * <code>uint32 wrong_uid = 4;</code>
        * @param value The wrongUid to set.
        * @return This builder for chaining.
        */
@@ -568,7 +568,7 @@ public final class MpPlayOwnerCheckRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 wrong_uid = 6;</code>
+       * <code>uint32 wrong_uid = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearWrongUid() {
@@ -578,71 +578,9 @@ public final class MpPlayOwnerCheckRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 1;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 1;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isSkipMatch_ ;
-      /**
-       * <code>bool is_skip_match = 7;</code>
-       * @return The isSkipMatch.
-       */
-      @java.lang.Override
-      public boolean getIsSkipMatch() {
-        return isSkipMatch_;
-      }
-      /**
-       * <code>bool is_skip_match = 7;</code>
-       * @param value The isSkipMatch to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsSkipMatch(boolean value) {
-        
-        isSkipMatch_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_skip_match = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsSkipMatch() {
-        
-        isSkipMatch_ = false;
-        onChanged();
-        return this;
-      }
-
       private int mpPlayId_ ;
       /**
-       * <code>uint32 mp_play_id = 5;</code>
+       * <code>uint32 mp_play_id = 11;</code>
        * @return The mpPlayId.
        */
       @java.lang.Override
@@ -650,7 +588,7 @@ public final class MpPlayOwnerCheckRspOuterClass {
         return mpPlayId_;
       }
       /**
-       * <code>uint32 mp_play_id = 5;</code>
+       * <code>uint32 mp_play_id = 11;</code>
        * @param value The mpPlayId to set.
        * @return This builder for chaining.
        */
@@ -661,12 +599,74 @@ public final class MpPlayOwnerCheckRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 mp_play_id = 5;</code>
+       * <code>uint32 mp_play_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearMpPlayId() {
         
         mpPlayId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isSkipMatch_ ;
+      /**
+       * <code>bool is_skip_match = 8;</code>
+       * @return The isSkipMatch.
+       */
+      @java.lang.Override
+      public boolean getIsSkipMatch() {
+        return isSkipMatch_;
+      }
+      /**
+       * <code>bool is_skip_match = 8;</code>
+       * @param value The isSkipMatch to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsSkipMatch(boolean value) {
+        
+        isSkipMatch_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_skip_match = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsSkipMatch() {
+        
+        isSkipMatch_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 12;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 12;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -738,9 +738,9 @@ public final class MpPlayOwnerCheckRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031MpPlayOwnerCheckRsp.proto\"d\n\023MpPlayOwn" +
-      "erCheckRsp\022\021\n\twrong_uid\030\006 \001(\r\022\017\n\007retcode" +
-      "\030\001 \001(\005\022\025\n\ris_skip_match\030\007 \001(\010\022\022\n\nmp_play" +
-      "_id\030\005 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
+      "erCheckRsp\022\021\n\twrong_uid\030\004 \001(\r\022\022\n\nmp_play" +
+      "_id\030\013 \001(\r\022\025\n\ris_skip_match\030\010 \001(\010\022\017\n\007retc" +
+      "ode\030\014 \001(\005B\033\n\031emu.grasscutter.net.protob\006" +
       "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -752,7 +752,7 @@ public final class MpPlayOwnerCheckRspOuterClass {
     internal_static_MpPlayOwnerCheckRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MpPlayOwnerCheckRsp_descriptor,
-        new java.lang.String[] { "WrongUid", "Retcode", "IsSkipMatch", "MpPlayId", });
+        new java.lang.String[] { "WrongUid", "MpPlayId", "IsSkipMatch", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

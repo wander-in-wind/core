@@ -20,8 +20,8 @@ public final class HomeEnterEditModeFinishReqOuterClass {
   }
   /**
    * <pre>
-   * Name: MDNNIGFAHEO
-   * CmdId: 4676
+   * CmdId: 4537
+   * Obf: HKHAGDJPLEP
    * </pre>
    *
    * Protobuf type {@code HomeEnterEditModeFinishReq}
@@ -246,8 +246,8 @@ public final class HomeEnterEditModeFinishReqOuterClass {
     }
     /**
      * <pre>
-     * Name: MDNNIGFAHEO
-     * CmdId: 4676
+     * CmdId: 4537
+     * Obf: HKHAGDJPLEP
      * </pre>
      *
      * Protobuf type {@code HomeEnterEditModeFinishReq}

@@ -19,21 +19,21 @@ public final class MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 group_id = 12;</code>
+     * <code>uint32 group_id = 10;</code>
      * @return The groupId.
      */
     int getGroupId();
 
     /**
-     * <code>uint32 gadget_id = 10;</code>
+     * <code>uint32 gadget_id = 6;</code>
      * @return The gadgetId.
      */
     int getGadgetId();
   }
   /**
    * <pre>
-   * Name: MFBAAAICHDG
-   * CmdId: 8578
+   * CmdId: 8886
+   * Obf: DNAKIIJPPEO
    * </pre>
    *
    * Protobuf type {@code MichiaeMatsuriRemoveChallengeMarkNotify}
@@ -80,12 +80,12 @@ public final class MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 48: {
 
               gadgetId_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 80: {
 
               groupId_ = input.readUInt32();
               break;
@@ -122,10 +122,10 @@ public final class MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass {
               emu.grasscutter.net.proto.MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass.MichiaeMatsuriRemoveChallengeMarkNotify.class, emu.grasscutter.net.proto.MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass.MichiaeMatsuriRemoveChallengeMarkNotify.Builder.class);
     }
 
-    public static final int GROUP_ID_FIELD_NUMBER = 12;
+    public static final int GROUP_ID_FIELD_NUMBER = 10;
     private int groupId_;
     /**
-     * <code>uint32 group_id = 12;</code>
+     * <code>uint32 group_id = 10;</code>
      * @return The groupId.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass {
       return groupId_;
     }
 
-    public static final int GADGET_ID_FIELD_NUMBER = 10;
+    public static final int GADGET_ID_FIELD_NUMBER = 6;
     private int gadgetId_;
     /**
-     * <code>uint32 gadget_id = 10;</code>
+     * <code>uint32 gadget_id = 6;</code>
      * @return The gadgetId.
      */
     @java.lang.Override
@@ -159,10 +159,10 @@ public final class MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (gadgetId_ != 0) {
-        output.writeUInt32(10, gadgetId_);
+        output.writeUInt32(6, gadgetId_);
       }
       if (groupId_ != 0) {
-        output.writeUInt32(12, groupId_);
+        output.writeUInt32(10, groupId_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +175,11 @@ public final class MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass {
       size = 0;
       if (gadgetId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, gadgetId_);
+          .computeUInt32Size(6, gadgetId_);
       }
       if (groupId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, groupId_);
+          .computeUInt32Size(10, groupId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: MFBAAAICHDG
-     * CmdId: 8578
+     * CmdId: 8886
+     * Obf: DNAKIIJPPEO
      * </pre>
      *
      * Protobuf type {@code MichiaeMatsuriRemoveChallengeMarkNotify}
@@ -470,7 +470,7 @@ public final class MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass {
 
       private int groupId_ ;
       /**
-       * <code>uint32 group_id = 12;</code>
+       * <code>uint32 group_id = 10;</code>
        * @return The groupId.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass {
         return groupId_;
       }
       /**
-       * <code>uint32 group_id = 12;</code>
+       * <code>uint32 group_id = 10;</code>
        * @param value The groupId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 group_id = 12;</code>
+       * <code>uint32 group_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearGroupId() {
@@ -501,7 +501,7 @@ public final class MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass {
 
       private int gadgetId_ ;
       /**
-       * <code>uint32 gadget_id = 10;</code>
+       * <code>uint32 gadget_id = 6;</code>
        * @return The gadgetId.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass {
         return gadgetId_;
       }
       /**
-       * <code>uint32 gadget_id = 10;</code>
+       * <code>uint32 gadget_id = 6;</code>
        * @param value The gadgetId to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gadget_id = 10;</code>
+       * <code>uint32 gadget_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearGadgetId() {
@@ -598,8 +598,8 @@ public final class MichiaeMatsuriRemoveChallengeMarkNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n-MichiaeMatsuriRemoveChallengeMarkNotif" +
       "y.proto\"N\n\'MichiaeMatsuriRemoveChallenge" +
-      "MarkNotify\022\020\n\010group_id\030\014 \001(\r\022\021\n\tgadget_i" +
-      "d\030\n \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "MarkNotify\022\020\n\010group_id\030\n \001(\r\022\021\n\tgadget_i" +
+      "d\030\006 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

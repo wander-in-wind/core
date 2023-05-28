@@ -19,27 +19,27 @@ public final class AdjustWorldLevelRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 7;</code>
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 after_world_level = 9;</code>
-     * @return The afterWorldLevel.
-     */
-    int getAfterWorldLevel();
-
-    /**
-     * <code>uint32 cd_over_time = 12;</code>
+     * <code>uint32 cd_over_time = 3;</code>
      * @return The cdOverTime.
      */
     int getCdOverTime();
+
+    /**
+     * <code>uint32 after_world_level = 13;</code>
+     * @return The afterWorldLevel.
+     */
+    int getAfterWorldLevel();
   }
   /**
    * <pre>
-   * Name: ABHCIIEPGEI
-   * CmdId: 131
+   * CmdId: 199
+   * Obf: HPEBBOOPPOH
    * </pre>
    *
    * Protobuf type {@code AdjustWorldLevelRsp}
@@ -86,19 +86,19 @@ public final class AdjustWorldLevelRspOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 24: {
+
+              cdOverTime_ = input.readUInt32();
+              break;
+            }
+            case 80: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 72: {
+            case 104: {
 
               afterWorldLevel_ = input.readUInt32();
-              break;
-            }
-            case 96: {
-
-              cdOverTime_ = input.readUInt32();
               break;
             }
             default: {
@@ -133,10 +133,10 @@ public final class AdjustWorldLevelRspOuterClass {
               emu.grasscutter.net.proto.AdjustWorldLevelRspOuterClass.AdjustWorldLevelRsp.class, emu.grasscutter.net.proto.AdjustWorldLevelRspOuterClass.AdjustWorldLevelRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 7;
+    public static final int RETCODE_FIELD_NUMBER = 10;
     private int retcode_;
     /**
-     * <code>int32 retcode = 7;</code>
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -144,26 +144,26 @@ public final class AdjustWorldLevelRspOuterClass {
       return retcode_;
     }
 
-    public static final int AFTER_WORLD_LEVEL_FIELD_NUMBER = 9;
-    private int afterWorldLevel_;
-    /**
-     * <code>uint32 after_world_level = 9;</code>
-     * @return The afterWorldLevel.
-     */
-    @java.lang.Override
-    public int getAfterWorldLevel() {
-      return afterWorldLevel_;
-    }
-
-    public static final int CD_OVER_TIME_FIELD_NUMBER = 12;
+    public static final int CD_OVER_TIME_FIELD_NUMBER = 3;
     private int cdOverTime_;
     /**
-     * <code>uint32 cd_over_time = 12;</code>
+     * <code>uint32 cd_over_time = 3;</code>
      * @return The cdOverTime.
      */
     @java.lang.Override
     public int getCdOverTime() {
       return cdOverTime_;
+    }
+
+    public static final int AFTER_WORLD_LEVEL_FIELD_NUMBER = 13;
+    private int afterWorldLevel_;
+    /**
+     * <code>uint32 after_world_level = 13;</code>
+     * @return The afterWorldLevel.
+     */
+    @java.lang.Override
+    public int getAfterWorldLevel() {
+      return afterWorldLevel_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -180,14 +180,14 @@ public final class AdjustWorldLevelRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (cdOverTime_ != 0) {
+        output.writeUInt32(3, cdOverTime_);
+      }
       if (retcode_ != 0) {
-        output.writeInt32(7, retcode_);
+        output.writeInt32(10, retcode_);
       }
       if (afterWorldLevel_ != 0) {
-        output.writeUInt32(9, afterWorldLevel_);
-      }
-      if (cdOverTime_ != 0) {
-        output.writeUInt32(12, cdOverTime_);
+        output.writeUInt32(13, afterWorldLevel_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +198,17 @@ public final class AdjustWorldLevelRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (cdOverTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, cdOverTime_);
+      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, retcode_);
+          .computeInt32Size(10, retcode_);
       }
       if (afterWorldLevel_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, afterWorldLevel_);
-      }
-      if (cdOverTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, cdOverTime_);
+          .computeUInt32Size(13, afterWorldLevel_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -227,10 +227,10 @@ public final class AdjustWorldLevelRspOuterClass {
 
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (getAfterWorldLevel()
-          != other.getAfterWorldLevel()) return false;
       if (getCdOverTime()
           != other.getCdOverTime()) return false;
+      if (getAfterWorldLevel()
+          != other.getAfterWorldLevel()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -244,10 +244,10 @@ public final class AdjustWorldLevelRspOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + AFTER_WORLD_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getAfterWorldLevel();
       hash = (37 * hash) + CD_OVER_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getCdOverTime();
+      hash = (37 * hash) + AFTER_WORLD_LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getAfterWorldLevel();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -345,8 +345,8 @@ public final class AdjustWorldLevelRspOuterClass {
     }
     /**
      * <pre>
-     * Name: ABHCIIEPGEI
-     * CmdId: 131
+     * CmdId: 199
+     * Obf: HPEBBOOPPOH
      * </pre>
      *
      * Protobuf type {@code AdjustWorldLevelRsp}
@@ -388,9 +388,9 @@ public final class AdjustWorldLevelRspOuterClass {
         super.clear();
         retcode_ = 0;
 
-        afterWorldLevel_ = 0;
-
         cdOverTime_ = 0;
+
+        afterWorldLevel_ = 0;
 
         return this;
       }
@@ -419,8 +419,8 @@ public final class AdjustWorldLevelRspOuterClass {
       public emu.grasscutter.net.proto.AdjustWorldLevelRspOuterClass.AdjustWorldLevelRsp buildPartial() {
         emu.grasscutter.net.proto.AdjustWorldLevelRspOuterClass.AdjustWorldLevelRsp result = new emu.grasscutter.net.proto.AdjustWorldLevelRspOuterClass.AdjustWorldLevelRsp(this);
         result.retcode_ = retcode_;
-        result.afterWorldLevel_ = afterWorldLevel_;
         result.cdOverTime_ = cdOverTime_;
+        result.afterWorldLevel_ = afterWorldLevel_;
         onBuilt();
         return result;
       }
@@ -472,11 +472,11 @@ public final class AdjustWorldLevelRspOuterClass {
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
-        if (other.getAfterWorldLevel() != 0) {
-          setAfterWorldLevel(other.getAfterWorldLevel());
-        }
         if (other.getCdOverTime() != 0) {
           setCdOverTime(other.getCdOverTime());
+        }
+        if (other.getAfterWorldLevel() != 0) {
+          setAfterWorldLevel(other.getAfterWorldLevel());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -509,7 +509,7 @@ public final class AdjustWorldLevelRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 10;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -517,7 +517,7 @@ public final class AdjustWorldLevelRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 10;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -528,7 +528,7 @@ public final class AdjustWorldLevelRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>int32 retcode = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -538,40 +538,9 @@ public final class AdjustWorldLevelRspOuterClass {
         return this;
       }
 
-      private int afterWorldLevel_ ;
-      /**
-       * <code>uint32 after_world_level = 9;</code>
-       * @return The afterWorldLevel.
-       */
-      @java.lang.Override
-      public int getAfterWorldLevel() {
-        return afterWorldLevel_;
-      }
-      /**
-       * <code>uint32 after_world_level = 9;</code>
-       * @param value The afterWorldLevel to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAfterWorldLevel(int value) {
-        
-        afterWorldLevel_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 after_world_level = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAfterWorldLevel() {
-        
-        afterWorldLevel_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int cdOverTime_ ;
       /**
-       * <code>uint32 cd_over_time = 12;</code>
+       * <code>uint32 cd_over_time = 3;</code>
        * @return The cdOverTime.
        */
       @java.lang.Override
@@ -579,7 +548,7 @@ public final class AdjustWorldLevelRspOuterClass {
         return cdOverTime_;
       }
       /**
-       * <code>uint32 cd_over_time = 12;</code>
+       * <code>uint32 cd_over_time = 3;</code>
        * @param value The cdOverTime to set.
        * @return This builder for chaining.
        */
@@ -590,12 +559,43 @@ public final class AdjustWorldLevelRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cd_over_time = 12;</code>
+       * <code>uint32 cd_over_time = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearCdOverTime() {
         
         cdOverTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int afterWorldLevel_ ;
+      /**
+       * <code>uint32 after_world_level = 13;</code>
+       * @return The afterWorldLevel.
+       */
+      @java.lang.Override
+      public int getAfterWorldLevel() {
+        return afterWorldLevel_;
+      }
+      /**
+       * <code>uint32 after_world_level = 13;</code>
+       * @param value The afterWorldLevel to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAfterWorldLevel(int value) {
+        
+        afterWorldLevel_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 after_world_level = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAfterWorldLevel() {
+        
+        afterWorldLevel_ = 0;
         onChanged();
         return this;
       }
@@ -667,8 +667,8 @@ public final class AdjustWorldLevelRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031AdjustWorldLevelRsp.proto\"W\n\023AdjustWor" +
-      "ldLevelRsp\022\017\n\007retcode\030\007 \001(\005\022\031\n\021after_wor" +
-      "ld_level\030\t \001(\r\022\024\n\014cd_over_time\030\014 \001(\rB\033\n\031" +
+      "ldLevelRsp\022\017\n\007retcode\030\n \001(\005\022\024\n\014cd_over_t" +
+      "ime\030\003 \001(\r\022\031\n\021after_world_level\030\r \001(\rB\033\n\031" +
       "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -680,7 +680,7 @@ public final class AdjustWorldLevelRspOuterClass {
     internal_static_AdjustWorldLevelRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AdjustWorldLevelRsp_descriptor,
-        new java.lang.String[] { "Retcode", "AfterWorldLevel", "CdOverTime", });
+        new java.lang.String[] { "Retcode", "CdOverTime", "AfterWorldLevel", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -16,7 +16,7 @@ public final class ChangeHpReasonOuterClass {
   }
   /**
    * <pre>
-   * Name: GFDBMHNEOFL
+   * Obf: DKMOJFDCKBB
    * </pre>
    *
    * Protobuf enum {@code ChangeHpReason}
@@ -103,6 +103,14 @@ public final class ChangeHpReasonOuterClass {
      * <code>CHANGE_HP_REASON_ATTACK_BY_RECYCLE = 19;</code>
      */
     CHANGE_HP_REASON_ATTACK_BY_RECYCLE(19),
+    /**
+     * <code>CHANGE_HP_REASON_SUB_PLAYER_BACK = 20;</code>
+     */
+    CHANGE_HP_REASON_SUB_PLAYER_BACK(20),
+    /**
+     * <code>CHANGE_HP_REASON_SUB_UGC = 21;</code>
+     */
+    CHANGE_HP_REASON_SUB_UGC(21),
     /**
      * <code>CHANGE_HP_REASON_BY_LUA = 51;</code>
      */
@@ -227,6 +235,14 @@ public final class ChangeHpReasonOuterClass {
      */
     public static final int CHANGE_HP_REASON_ATTACK_BY_RECYCLE_VALUE = 19;
     /**
+     * <code>CHANGE_HP_REASON_SUB_PLAYER_BACK = 20;</code>
+     */
+    public static final int CHANGE_HP_REASON_SUB_PLAYER_BACK_VALUE = 20;
+    /**
+     * <code>CHANGE_HP_REASON_SUB_UGC = 21;</code>
+     */
+    public static final int CHANGE_HP_REASON_SUB_UGC_VALUE = 21;
+    /**
      * <code>CHANGE_HP_REASON_BY_LUA = 51;</code>
      */
     public static final int CHANGE_HP_REASON_BY_LUA_VALUE = 51;
@@ -312,6 +328,8 @@ public final class ChangeHpReasonOuterClass {
         case 17: return CHANGE_HP_REASON_SUB_PLAYER_LEAVE;
         case 18: return CHANGE_HP_REASON_ATTACK_BY_ENERGY;
         case 19: return CHANGE_HP_REASON_ATTACK_BY_RECYCLE;
+        case 20: return CHANGE_HP_REASON_SUB_PLAYER_BACK;
+        case 21: return CHANGE_HP_REASON_SUB_UGC;
         case 51: return CHANGE_HP_REASON_BY_LUA;
         case 101: return CHANGE_HP_REASON_ADD_ABILITY;
         case 102: return CHANGE_HP_REASON_ADD_ITEM;
@@ -387,7 +405,7 @@ public final class ChangeHpReasonOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\024ChangeHpReason.proto*\246\010\n\016ChangeHpReaso" +
+      "\n\024ChangeHpReason.proto*\352\010\n\016ChangeHpReaso" +
       "n\022\031\n\025CHANGE_HP_REASON_NONE\020\000\022\037\n\033CHANGE_H" +
       "P_REASON_SUB_AVATAR\020\001\022 \n\034CHANGE_HP_REASO" +
       "N_SUB_MONSTER\020\002\022\035\n\031CHANGE_HP_REASON_SUB_" +
@@ -405,17 +423,18 @@ public final class ChangeHpReasonOuterClass {
       "ASON_SUB_REPLACE\020\020\022%\n!CHANGE_HP_REASON_S" +
       "UB_PLAYER_LEAVE\020\021\022%\n!CHANGE_HP_REASON_AT" +
       "TACK_BY_ENERGY\020\022\022&\n\"CHANGE_HP_REASON_ATT" +
-      "ACK_BY_RECYCLE\020\023\022\033\n\027CHANGE_HP_REASON_BY_" +
-      "LUA\0203\022 \n\034CHANGE_HP_REASON_ADD_ABILITY\020e\022" +
-      "\035\n\031CHANGE_HP_REASON_ADD_ITEM\020f\022\037\n\033CHANGE" +
-      "_HP_REASON_ADD_REVIVE\020g\022 \n\034CHANGE_HP_REA" +
-      "SON_ADD_UPGRADE\020h\022\037\n\033CHANGE_HP_REASON_AD" +
-      "D_STATUE\020i\022#\n\037CHANGE_HP_REASON_ADD_BACKG" +
-      "ROUND\020j\022\033\n\027CHANGE_HP_REASON_ADD_GM\020k\022.\n*" +
-      "CHANGE_HP_REASON_ADD_TRIAL_AVATAR_ACTIVI" +
-      "TY\020l\022)\n%CHANGE_HP_REASON_ADD_ROGUELIKE_S" +
-      "PRING\020mB\033\n\031emu.grasscutter.net.protob\006pr" +
-      "oto3"
+      "ACK_BY_RECYCLE\020\023\022$\n CHANGE_HP_REASON_SUB" +
+      "_PLAYER_BACK\020\024\022\034\n\030CHANGE_HP_REASON_SUB_U" +
+      "GC\020\025\022\033\n\027CHANGE_HP_REASON_BY_LUA\0203\022 \n\034CHA" +
+      "NGE_HP_REASON_ADD_ABILITY\020e\022\035\n\031CHANGE_HP" +
+      "_REASON_ADD_ITEM\020f\022\037\n\033CHANGE_HP_REASON_A" +
+      "DD_REVIVE\020g\022 \n\034CHANGE_HP_REASON_ADD_UPGR" +
+      "ADE\020h\022\037\n\033CHANGE_HP_REASON_ADD_STATUE\020i\022#" +
+      "\n\037CHANGE_HP_REASON_ADD_BACKGROUND\020j\022\033\n\027C" +
+      "HANGE_HP_REASON_ADD_GM\020k\022.\n*CHANGE_HP_RE" +
+      "ASON_ADD_TRIAL_AVATAR_ACTIVITY\020l\022)\n%CHAN" +
+      "GE_HP_REASON_ADD_ROGUELIKE_SPRING\020mB\033\n\031e" +
+      "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

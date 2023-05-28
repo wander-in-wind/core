@@ -19,21 +19,21 @@ public final class FocusAvatarReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint64 avatar_guid = 1;</code>
-     * @return The avatarGuid.
-     */
-    long getAvatarGuid();
-
-    /**
-     * <code>bool is_focus = 7;</code>
+     * <code>bool is_focus = 14;</code>
      * @return The isFocus.
      */
     boolean getIsFocus();
+
+    /**
+     * <code>uint64 avatar_guid = 9;</code>
+     * @return The avatarGuid.
+     */
+    long getAvatarGuid();
   }
   /**
    * <pre>
-   * Name: JFCDLLPKDEE
-   * CmdId: 1712
+   * CmdId: 1636
+   * Obf: INPIDILEGCG
    * </pre>
    *
    * Protobuf type {@code FocusAvatarReq}
@@ -80,12 +80,12 @@ public final class FocusAvatarReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 72: {
 
               avatarGuid_ = input.readUInt64();
               break;
             }
-            case 56: {
+            case 112: {
 
               isFocus_ = input.readBool();
               break;
@@ -122,26 +122,26 @@ public final class FocusAvatarReqOuterClass {
               emu.grasscutter.net.proto.FocusAvatarReqOuterClass.FocusAvatarReq.class, emu.grasscutter.net.proto.FocusAvatarReqOuterClass.FocusAvatarReq.Builder.class);
     }
 
-    public static final int AVATAR_GUID_FIELD_NUMBER = 1;
-    private long avatarGuid_;
-    /**
-     * <code>uint64 avatar_guid = 1;</code>
-     * @return The avatarGuid.
-     */
-    @java.lang.Override
-    public long getAvatarGuid() {
-      return avatarGuid_;
-    }
-
-    public static final int IS_FOCUS_FIELD_NUMBER = 7;
+    public static final int IS_FOCUS_FIELD_NUMBER = 14;
     private boolean isFocus_;
     /**
-     * <code>bool is_focus = 7;</code>
+     * <code>bool is_focus = 14;</code>
      * @return The isFocus.
      */
     @java.lang.Override
     public boolean getIsFocus() {
       return isFocus_;
+    }
+
+    public static final int AVATAR_GUID_FIELD_NUMBER = 9;
+    private long avatarGuid_;
+    /**
+     * <code>uint64 avatar_guid = 9;</code>
+     * @return The avatarGuid.
+     */
+    @java.lang.Override
+    public long getAvatarGuid() {
+      return avatarGuid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,10 +159,10 @@ public final class FocusAvatarReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (avatarGuid_ != 0L) {
-        output.writeUInt64(1, avatarGuid_);
+        output.writeUInt64(9, avatarGuid_);
       }
       if (isFocus_ != false) {
-        output.writeBool(7, isFocus_);
+        output.writeBool(14, isFocus_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +175,11 @@ public final class FocusAvatarReqOuterClass {
       size = 0;
       if (avatarGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(1, avatarGuid_);
+          .computeUInt64Size(9, avatarGuid_);
       }
       if (isFocus_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isFocus_);
+          .computeBoolSize(14, isFocus_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +196,10 @@ public final class FocusAvatarReqOuterClass {
       }
       emu.grasscutter.net.proto.FocusAvatarReqOuterClass.FocusAvatarReq other = (emu.grasscutter.net.proto.FocusAvatarReqOuterClass.FocusAvatarReq) obj;
 
-      if (getAvatarGuid()
-          != other.getAvatarGuid()) return false;
       if (getIsFocus()
           != other.getIsFocus()) return false;
+      if (getAvatarGuid()
+          != other.getAvatarGuid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,12 +211,12 @@ public final class FocusAvatarReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + AVATAR_GUID_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getAvatarGuid());
       hash = (37 * hash) + IS_FOCUS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsFocus());
+      hash = (37 * hash) + AVATAR_GUID_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getAvatarGuid());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -314,8 +314,8 @@ public final class FocusAvatarReqOuterClass {
     }
     /**
      * <pre>
-     * Name: JFCDLLPKDEE
-     * CmdId: 1712
+     * CmdId: 1636
+     * Obf: INPIDILEGCG
      * </pre>
      *
      * Protobuf type {@code FocusAvatarReq}
@@ -355,9 +355,9 @@ public final class FocusAvatarReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        avatarGuid_ = 0L;
-
         isFocus_ = false;
+
+        avatarGuid_ = 0L;
 
         return this;
       }
@@ -385,8 +385,8 @@ public final class FocusAvatarReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FocusAvatarReqOuterClass.FocusAvatarReq buildPartial() {
         emu.grasscutter.net.proto.FocusAvatarReqOuterClass.FocusAvatarReq result = new emu.grasscutter.net.proto.FocusAvatarReqOuterClass.FocusAvatarReq(this);
-        result.avatarGuid_ = avatarGuid_;
         result.isFocus_ = isFocus_;
+        result.avatarGuid_ = avatarGuid_;
         onBuilt();
         return result;
       }
@@ -435,11 +435,11 @@ public final class FocusAvatarReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FocusAvatarReqOuterClass.FocusAvatarReq other) {
         if (other == emu.grasscutter.net.proto.FocusAvatarReqOuterClass.FocusAvatarReq.getDefaultInstance()) return this;
-        if (other.getAvatarGuid() != 0L) {
-          setAvatarGuid(other.getAvatarGuid());
-        }
         if (other.getIsFocus() != false) {
           setIsFocus(other.getIsFocus());
+        }
+        if (other.getAvatarGuid() != 0L) {
+          setAvatarGuid(other.getAvatarGuid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -470,40 +470,9 @@ public final class FocusAvatarReqOuterClass {
         return this;
       }
 
-      private long avatarGuid_ ;
-      /**
-       * <code>uint64 avatar_guid = 1;</code>
-       * @return The avatarGuid.
-       */
-      @java.lang.Override
-      public long getAvatarGuid() {
-        return avatarGuid_;
-      }
-      /**
-       * <code>uint64 avatar_guid = 1;</code>
-       * @param value The avatarGuid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAvatarGuid(long value) {
-        
-        avatarGuid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 avatar_guid = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAvatarGuid() {
-        
-        avatarGuid_ = 0L;
-        onChanged();
-        return this;
-      }
-
       private boolean isFocus_ ;
       /**
-       * <code>bool is_focus = 7;</code>
+       * <code>bool is_focus = 14;</code>
        * @return The isFocus.
        */
       @java.lang.Override
@@ -511,7 +480,7 @@ public final class FocusAvatarReqOuterClass {
         return isFocus_;
       }
       /**
-       * <code>bool is_focus = 7;</code>
+       * <code>bool is_focus = 14;</code>
        * @param value The isFocus to set.
        * @return This builder for chaining.
        */
@@ -522,12 +491,43 @@ public final class FocusAvatarReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_focus = 7;</code>
+       * <code>bool is_focus = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFocus() {
         
         isFocus_ = false;
+        onChanged();
+        return this;
+      }
+
+      private long avatarGuid_ ;
+      /**
+       * <code>uint64 avatar_guid = 9;</code>
+       * @return The avatarGuid.
+       */
+      @java.lang.Override
+      public long getAvatarGuid() {
+        return avatarGuid_;
+      }
+      /**
+       * <code>uint64 avatar_guid = 9;</code>
+       * @param value The avatarGuid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAvatarGuid(long value) {
+        
+        avatarGuid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint64 avatar_guid = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAvatarGuid() {
+        
+        avatarGuid_ = 0L;
         onChanged();
         return this;
       }
@@ -599,7 +599,7 @@ public final class FocusAvatarReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024FocusAvatarReq.proto\"7\n\016FocusAvatarReq" +
-      "\022\023\n\013avatar_guid\030\001 \001(\004\022\020\n\010is_focus\030\007 \001(\010B" +
+      "\022\020\n\010is_focus\030\016 \001(\010\022\023\n\013avatar_guid\030\t \001(\004B" +
       "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -611,7 +611,7 @@ public final class FocusAvatarReqOuterClass {
     internal_static_FocusAvatarReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FocusAvatarReq_descriptor,
-        new java.lang.String[] { "AvatarGuid", "IsFocus", });
+        new java.lang.String[] { "IsFocus", "AvatarGuid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

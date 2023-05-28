@@ -151,7 +151,7 @@ public final class EGBBOPCNHCHOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (option_ != emu.grasscutter.net.proto.GCGSettleOptionOuterClass.GCGSettleOption.GCG_SETTLE_OPTION_OPT_NONE.getNumber()) {
+      if (option_ != emu.grasscutter.net.proto.GCGSettleOptionOuterClass.GCGSettleOption.GCG_SETTLE_OPT_NONE.getNumber()) {
         output.writeEnum(11, option_);
       }
       unknownFields.writeTo(output);
@@ -163,7 +163,7 @@ public final class EGBBOPCNHCHOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (option_ != emu.grasscutter.net.proto.GCGSettleOptionOuterClass.GCGSettleOption.GCG_SETTLE_OPTION_OPT_NONE.getNumber()) {
+      if (option_ != emu.grasscutter.net.proto.GCGSettleOptionOuterClass.GCGSettleOption.GCG_SETTLE_OPT_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(11, option_);
       }

@@ -19,32 +19,32 @@ public final class AnimatorForceSetAirMoveNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool in_air_move = 4;</code>
-     * @return The inAirMove.
-     */
-    boolean getInAirMove();
-
-    /**
-     * <code>.ForwardType forward_type = 13;</code>
+     * <code>.ForwardType forward_type = 4;</code>
      * @return The enum numeric value on the wire for forwardType.
      */
     int getForwardTypeValue();
     /**
-     * <code>.ForwardType forward_type = 13;</code>
+     * <code>.ForwardType forward_type = 4;</code>
      * @return The forwardType.
      */
     emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType getForwardType();
 
     /**
-     * <code>uint32 entity_id = 12;</code>
+     * <code>uint32 entity_id = 8;</code>
      * @return The entityId.
      */
     int getEntityId();
+
+    /**
+     * <code>bool in_air_move = 2;</code>
+     * @return The inAirMove.
+     */
+    boolean getInAirMove();
   }
   /**
    * <pre>
-   * Name: NDJOFLFACGC
-   * CmdId: 337
+   * CmdId: 398
+   * Obf: JDGIBNIHLFJ
    * </pre>
    *
    * Protobuf type {@code AnimatorForceSetAirMoveNotify}
@@ -92,20 +92,20 @@ public final class AnimatorForceSetAirMoveNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 16: {
 
               inAirMove_ = input.readBool();
               break;
             }
-            case 96: {
-
-              entityId_ = input.readUInt32();
-              break;
-            }
-            case 104: {
+            case 32: {
               int rawValue = input.readEnum();
 
               forwardType_ = rawValue;
+              break;
+            }
+            case 64: {
+
+              entityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -140,28 +140,17 @@ public final class AnimatorForceSetAirMoveNotifyOuterClass {
               emu.grasscutter.net.proto.AnimatorForceSetAirMoveNotifyOuterClass.AnimatorForceSetAirMoveNotify.class, emu.grasscutter.net.proto.AnimatorForceSetAirMoveNotifyOuterClass.AnimatorForceSetAirMoveNotify.Builder.class);
     }
 
-    public static final int IN_AIR_MOVE_FIELD_NUMBER = 4;
-    private boolean inAirMove_;
-    /**
-     * <code>bool in_air_move = 4;</code>
-     * @return The inAirMove.
-     */
-    @java.lang.Override
-    public boolean getInAirMove() {
-      return inAirMove_;
-    }
-
-    public static final int FORWARD_TYPE_FIELD_NUMBER = 13;
+    public static final int FORWARD_TYPE_FIELD_NUMBER = 4;
     private int forwardType_;
     /**
-     * <code>.ForwardType forward_type = 13;</code>
+     * <code>.ForwardType forward_type = 4;</code>
      * @return The enum numeric value on the wire for forwardType.
      */
     @java.lang.Override public int getForwardTypeValue() {
       return forwardType_;
     }
     /**
-     * <code>.ForwardType forward_type = 13;</code>
+     * <code>.ForwardType forward_type = 4;</code>
      * @return The forwardType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType getForwardType() {
@@ -170,15 +159,26 @@ public final class AnimatorForceSetAirMoveNotifyOuterClass {
       return result == null ? emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.UNRECOGNIZED : result;
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 12;
+    public static final int ENTITY_ID_FIELD_NUMBER = 8;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 12;</code>
+     * <code>uint32 entity_id = 8;</code>
      * @return The entityId.
      */
     @java.lang.Override
     public int getEntityId() {
       return entityId_;
+    }
+
+    public static final int IN_AIR_MOVE_FIELD_NUMBER = 2;
+    private boolean inAirMove_;
+    /**
+     * <code>bool in_air_move = 2;</code>
+     * @return The inAirMove.
+     */
+    @java.lang.Override
+    public boolean getInAirMove() {
+      return inAirMove_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -196,13 +196,13 @@ public final class AnimatorForceSetAirMoveNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (inAirMove_ != false) {
-        output.writeBool(4, inAirMove_);
-      }
-      if (entityId_ != 0) {
-        output.writeUInt32(12, entityId_);
+        output.writeBool(2, inAirMove_);
       }
       if (forwardType_ != emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.FORWARD_TYPE_LOCAL.getNumber()) {
-        output.writeEnum(13, forwardType_);
+        output.writeEnum(4, forwardType_);
+      }
+      if (entityId_ != 0) {
+        output.writeUInt32(8, entityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -215,15 +215,15 @@ public final class AnimatorForceSetAirMoveNotifyOuterClass {
       size = 0;
       if (inAirMove_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, inAirMove_);
-      }
-      if (entityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, entityId_);
+          .computeBoolSize(2, inAirMove_);
       }
       if (forwardType_ != emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.FORWARD_TYPE_LOCAL.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(13, forwardType_);
+          .computeEnumSize(4, forwardType_);
+      }
+      if (entityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, entityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -240,11 +240,11 @@ public final class AnimatorForceSetAirMoveNotifyOuterClass {
       }
       emu.grasscutter.net.proto.AnimatorForceSetAirMoveNotifyOuterClass.AnimatorForceSetAirMoveNotify other = (emu.grasscutter.net.proto.AnimatorForceSetAirMoveNotifyOuterClass.AnimatorForceSetAirMoveNotify) obj;
 
-      if (getInAirMove()
-          != other.getInAirMove()) return false;
       if (forwardType_ != other.forwardType_) return false;
       if (getEntityId()
           != other.getEntityId()) return false;
+      if (getInAirMove()
+          != other.getInAirMove()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -256,13 +256,13 @@ public final class AnimatorForceSetAirMoveNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IN_AIR_MOVE_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getInAirMove());
       hash = (37 * hash) + FORWARD_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + forwardType_;
       hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getEntityId();
+      hash = (37 * hash) + IN_AIR_MOVE_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getInAirMove());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -360,8 +360,8 @@ public final class AnimatorForceSetAirMoveNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: NDJOFLFACGC
-     * CmdId: 337
+     * CmdId: 398
+     * Obf: JDGIBNIHLFJ
      * </pre>
      *
      * Protobuf type {@code AnimatorForceSetAirMoveNotify}
@@ -401,11 +401,11 @@ public final class AnimatorForceSetAirMoveNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        inAirMove_ = false;
-
         forwardType_ = 0;
 
         entityId_ = 0;
+
+        inAirMove_ = false;
 
         return this;
       }
@@ -433,9 +433,9 @@ public final class AnimatorForceSetAirMoveNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AnimatorForceSetAirMoveNotifyOuterClass.AnimatorForceSetAirMoveNotify buildPartial() {
         emu.grasscutter.net.proto.AnimatorForceSetAirMoveNotifyOuterClass.AnimatorForceSetAirMoveNotify result = new emu.grasscutter.net.proto.AnimatorForceSetAirMoveNotifyOuterClass.AnimatorForceSetAirMoveNotify(this);
-        result.inAirMove_ = inAirMove_;
         result.forwardType_ = forwardType_;
         result.entityId_ = entityId_;
+        result.inAirMove_ = inAirMove_;
         onBuilt();
         return result;
       }
@@ -484,14 +484,14 @@ public final class AnimatorForceSetAirMoveNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AnimatorForceSetAirMoveNotifyOuterClass.AnimatorForceSetAirMoveNotify other) {
         if (other == emu.grasscutter.net.proto.AnimatorForceSetAirMoveNotifyOuterClass.AnimatorForceSetAirMoveNotify.getDefaultInstance()) return this;
-        if (other.getInAirMove() != false) {
-          setInAirMove(other.getInAirMove());
-        }
         if (other.forwardType_ != 0) {
           setForwardTypeValue(other.getForwardTypeValue());
         }
         if (other.getEntityId() != 0) {
           setEntityId(other.getEntityId());
+        }
+        if (other.getInAirMove() != false) {
+          setInAirMove(other.getInAirMove());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -522,47 +522,16 @@ public final class AnimatorForceSetAirMoveNotifyOuterClass {
         return this;
       }
 
-      private boolean inAirMove_ ;
-      /**
-       * <code>bool in_air_move = 4;</code>
-       * @return The inAirMove.
-       */
-      @java.lang.Override
-      public boolean getInAirMove() {
-        return inAirMove_;
-      }
-      /**
-       * <code>bool in_air_move = 4;</code>
-       * @param value The inAirMove to set.
-       * @return This builder for chaining.
-       */
-      public Builder setInAirMove(boolean value) {
-        
-        inAirMove_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool in_air_move = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearInAirMove() {
-        
-        inAirMove_ = false;
-        onChanged();
-        return this;
-      }
-
       private int forwardType_ = 0;
       /**
-       * <code>.ForwardType forward_type = 13;</code>
+       * <code>.ForwardType forward_type = 4;</code>
        * @return The enum numeric value on the wire for forwardType.
        */
       @java.lang.Override public int getForwardTypeValue() {
         return forwardType_;
       }
       /**
-       * <code>.ForwardType forward_type = 13;</code>
+       * <code>.ForwardType forward_type = 4;</code>
        * @param value The enum numeric value on the wire for forwardType to set.
        * @return This builder for chaining.
        */
@@ -573,7 +542,7 @@ public final class AnimatorForceSetAirMoveNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ForwardType forward_type = 13;</code>
+       * <code>.ForwardType forward_type = 4;</code>
        * @return The forwardType.
        */
       @java.lang.Override
@@ -583,7 +552,7 @@ public final class AnimatorForceSetAirMoveNotifyOuterClass {
         return result == null ? emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.ForwardType forward_type = 13;</code>
+       * <code>.ForwardType forward_type = 4;</code>
        * @param value The forwardType to set.
        * @return This builder for chaining.
        */
@@ -597,7 +566,7 @@ public final class AnimatorForceSetAirMoveNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ForwardType forward_type = 13;</code>
+       * <code>.ForwardType forward_type = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearForwardType() {
@@ -609,7 +578,7 @@ public final class AnimatorForceSetAirMoveNotifyOuterClass {
 
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 12;</code>
+       * <code>uint32 entity_id = 8;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -617,7 +586,7 @@ public final class AnimatorForceSetAirMoveNotifyOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 12;</code>
+       * <code>uint32 entity_id = 8;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -628,12 +597,43 @@ public final class AnimatorForceSetAirMoveNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 12;</code>
+       * <code>uint32 entity_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
         
         entityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean inAirMove_ ;
+      /**
+       * <code>bool in_air_move = 2;</code>
+       * @return The inAirMove.
+       */
+      @java.lang.Override
+      public boolean getInAirMove() {
+        return inAirMove_;
+      }
+      /**
+       * <code>bool in_air_move = 2;</code>
+       * @param value The inAirMove to set.
+       * @return This builder for chaining.
+       */
+      public Builder setInAirMove(boolean value) {
+        
+        inAirMove_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool in_air_move = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearInAirMove() {
+        
+        inAirMove_ = false;
         onChanged();
         return this;
       }
@@ -706,9 +706,9 @@ public final class AnimatorForceSetAirMoveNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n#AnimatorForceSetAirMoveNotify.proto\032\021F" +
       "orwardType.proto\"k\n\035AnimatorForceSetAirM" +
-      "oveNotify\022\023\n\013in_air_move\030\004 \001(\010\022\"\n\014forwar" +
-      "d_type\030\r \001(\0162\014.ForwardType\022\021\n\tentity_id\030" +
-      "\014 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "oveNotify\022\"\n\014forward_type\030\004 \001(\0162\014.Forwar" +
+      "dType\022\021\n\tentity_id\030\010 \001(\r\022\023\n\013in_air_move\030" +
+      "\002 \001(\010B\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -721,7 +721,7 @@ public final class AnimatorForceSetAirMoveNotifyOuterClass {
     internal_static_AnimatorForceSetAirMoveNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AnimatorForceSetAirMoveNotify_descriptor,
-        new java.lang.String[] { "InAirMove", "ForwardType", "EntityId", });
+        new java.lang.String[] { "ForwardType", "EntityId", "InAirMove", });
     emu.grasscutter.net.proto.ForwardTypeOuterClass.getDescriptor();
   }
 

@@ -38,7 +38,7 @@ public final class EntityClientDataOuterClass {
   }
   /**
    * <pre>
-   * Name: LGAFMFIJKIE
+   * Obf: MIMMOJNHFCB
    * </pre>
    *
    * Protobuf type {@code EntityClientData}
@@ -346,7 +346,7 @@ public final class EntityClientDataOuterClass {
     }
     /**
      * <pre>
-     * Name: LGAFMFIJKIE
+     * Obf: MIMMOJNHFCB
      * </pre>
      *
      * Protobuf type {@code EntityClientData}

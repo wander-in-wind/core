@@ -19,27 +19,27 @@ public final class CoinCollectChooseSkillRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 choose_skill_no = 15;</code>
+     * <code>uint32 choose_skill_no = 6;</code>
      * @return The chooseSkillNo.
      */
     int getChooseSkillNo();
 
     /**
-     * <code>uint32 level_id = 5;</code>
-     * @return The levelId.
-     */
-    int getLevelId();
-
-    /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 7;</code>
      * @return The retcode.
      */
     int getRetcode();
+
+    /**
+     * <code>uint32 level_id = 14;</code>
+     * @return The levelId.
+     */
+    int getLevelId();
   }
   /**
    * <pre>
-   * Name: KNENHHEEIOM
-   * CmdId: 24615
+   * CmdId: 24626
+   * Obf: DMHPLFAMPJI
    * </pre>
    *
    * Protobuf type {@code CoinCollectChooseSkillRsp}
@@ -86,19 +86,19 @@ public final class CoinCollectChooseSkillRspOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 48: {
 
-              levelId_ = input.readUInt32();
+              chooseSkillNo_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 56: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 120: {
+            case 112: {
 
-              chooseSkillNo_ = input.readUInt32();
+              levelId_ = input.readUInt32();
               break;
             }
             default: {
@@ -133,10 +133,10 @@ public final class CoinCollectChooseSkillRspOuterClass {
               emu.grasscutter.net.proto.CoinCollectChooseSkillRspOuterClass.CoinCollectChooseSkillRsp.class, emu.grasscutter.net.proto.CoinCollectChooseSkillRspOuterClass.CoinCollectChooseSkillRsp.Builder.class);
     }
 
-    public static final int CHOOSE_SKILL_NO_FIELD_NUMBER = 15;
+    public static final int CHOOSE_SKILL_NO_FIELD_NUMBER = 6;
     private int chooseSkillNo_;
     /**
-     * <code>uint32 choose_skill_no = 15;</code>
+     * <code>uint32 choose_skill_no = 6;</code>
      * @return The chooseSkillNo.
      */
     @java.lang.Override
@@ -144,26 +144,26 @@ public final class CoinCollectChooseSkillRspOuterClass {
       return chooseSkillNo_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 5;
-    private int levelId_;
-    /**
-     * <code>uint32 level_id = 5;</code>
-     * @return The levelId.
-     */
-    @java.lang.Override
-    public int getLevelId() {
-      return levelId_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 8;
+    public static final int RETCODE_FIELD_NUMBER = 7;
     private int retcode_;
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 7;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
+    }
+
+    public static final int LEVEL_ID_FIELD_NUMBER = 14;
+    private int levelId_;
+    /**
+     * <code>uint32 level_id = 14;</code>
+     * @return The levelId.
+     */
+    @java.lang.Override
+    public int getLevelId() {
+      return levelId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -180,14 +180,14 @@ public final class CoinCollectChooseSkillRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (levelId_ != 0) {
-        output.writeUInt32(5, levelId_);
+      if (chooseSkillNo_ != 0) {
+        output.writeUInt32(6, chooseSkillNo_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
+        output.writeInt32(7, retcode_);
       }
-      if (chooseSkillNo_ != 0) {
-        output.writeUInt32(15, chooseSkillNo_);
+      if (levelId_ != 0) {
+        output.writeUInt32(14, levelId_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +198,17 @@ public final class CoinCollectChooseSkillRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (levelId_ != 0) {
+      if (chooseSkillNo_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, levelId_);
+          .computeUInt32Size(6, chooseSkillNo_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
+          .computeInt32Size(7, retcode_);
       }
-      if (chooseSkillNo_ != 0) {
+      if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, chooseSkillNo_);
+          .computeUInt32Size(14, levelId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -227,10 +227,10 @@ public final class CoinCollectChooseSkillRspOuterClass {
 
       if (getChooseSkillNo()
           != other.getChooseSkillNo()) return false;
-      if (getLevelId()
-          != other.getLevelId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getLevelId()
+          != other.getLevelId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -244,10 +244,10 @@ public final class CoinCollectChooseSkillRspOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CHOOSE_SKILL_NO_FIELD_NUMBER;
       hash = (53 * hash) + getChooseSkillNo();
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -345,8 +345,8 @@ public final class CoinCollectChooseSkillRspOuterClass {
     }
     /**
      * <pre>
-     * Name: KNENHHEEIOM
-     * CmdId: 24615
+     * CmdId: 24626
+     * Obf: DMHPLFAMPJI
      * </pre>
      *
      * Protobuf type {@code CoinCollectChooseSkillRsp}
@@ -388,9 +388,9 @@ public final class CoinCollectChooseSkillRspOuterClass {
         super.clear();
         chooseSkillNo_ = 0;
 
-        levelId_ = 0;
-
         retcode_ = 0;
+
+        levelId_ = 0;
 
         return this;
       }
@@ -419,8 +419,8 @@ public final class CoinCollectChooseSkillRspOuterClass {
       public emu.grasscutter.net.proto.CoinCollectChooseSkillRspOuterClass.CoinCollectChooseSkillRsp buildPartial() {
         emu.grasscutter.net.proto.CoinCollectChooseSkillRspOuterClass.CoinCollectChooseSkillRsp result = new emu.grasscutter.net.proto.CoinCollectChooseSkillRspOuterClass.CoinCollectChooseSkillRsp(this);
         result.chooseSkillNo_ = chooseSkillNo_;
-        result.levelId_ = levelId_;
         result.retcode_ = retcode_;
+        result.levelId_ = levelId_;
         onBuilt();
         return result;
       }
@@ -472,11 +472,11 @@ public final class CoinCollectChooseSkillRspOuterClass {
         if (other.getChooseSkillNo() != 0) {
           setChooseSkillNo(other.getChooseSkillNo());
         }
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -509,7 +509,7 @@ public final class CoinCollectChooseSkillRspOuterClass {
 
       private int chooseSkillNo_ ;
       /**
-       * <code>uint32 choose_skill_no = 15;</code>
+       * <code>uint32 choose_skill_no = 6;</code>
        * @return The chooseSkillNo.
        */
       @java.lang.Override
@@ -517,7 +517,7 @@ public final class CoinCollectChooseSkillRspOuterClass {
         return chooseSkillNo_;
       }
       /**
-       * <code>uint32 choose_skill_no = 15;</code>
+       * <code>uint32 choose_skill_no = 6;</code>
        * @param value The chooseSkillNo to set.
        * @return This builder for chaining.
        */
@@ -528,7 +528,7 @@ public final class CoinCollectChooseSkillRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 choose_skill_no = 15;</code>
+       * <code>uint32 choose_skill_no = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearChooseSkillNo() {
@@ -538,40 +538,9 @@ public final class CoinCollectChooseSkillRspOuterClass {
         return this;
       }
 
-      private int levelId_ ;
-      /**
-       * <code>uint32 level_id = 5;</code>
-       * @return The levelId.
-       */
-      @java.lang.Override
-      public int getLevelId() {
-        return levelId_;
-      }
-      /**
-       * <code>uint32 level_id = 5;</code>
-       * @param value The levelId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevelId(int value) {
-        
-        levelId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level_id = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevelId() {
-        
-        levelId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 7;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -579,7 +548,7 @@ public final class CoinCollectChooseSkillRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 7;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -590,12 +559,43 @@ public final class CoinCollectChooseSkillRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
         
         retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int levelId_ ;
+      /**
+       * <code>uint32 level_id = 14;</code>
+       * @return The levelId.
+       */
+      @java.lang.Override
+      public int getLevelId() {
+        return levelId_;
+      }
+      /**
+       * <code>uint32 level_id = 14;</code>
+       * @param value The levelId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevelId(int value) {
+        
+        levelId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 level_id = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevelId() {
+        
+        levelId_ = 0;
         onChanged();
         return this;
       }
@@ -668,8 +668,8 @@ public final class CoinCollectChooseSkillRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\037CoinCollectChooseSkillRsp.proto\"W\n\031Coi" +
       "nCollectChooseSkillRsp\022\027\n\017choose_skill_n" +
-      "o\030\017 \001(\r\022\020\n\010level_id\030\005 \001(\r\022\017\n\007retcode\030\010 \001" +
-      "(\005B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "o\030\006 \001(\r\022\017\n\007retcode\030\007 \001(\005\022\020\n\010level_id\030\016 \001" +
+      "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -680,7 +680,7 @@ public final class CoinCollectChooseSkillRspOuterClass {
     internal_static_CoinCollectChooseSkillRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CoinCollectChooseSkillRsp_descriptor,
-        new java.lang.String[] { "ChooseSkillNo", "LevelId", "Retcode", });
+        new java.lang.String[] { "ChooseSkillNo", "Retcode", "LevelId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

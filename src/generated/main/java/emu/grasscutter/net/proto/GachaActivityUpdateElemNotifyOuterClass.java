@@ -19,15 +19,15 @@ public final class GachaActivityUpdateElemNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 elem_type = 10;</code>
+     * <code>uint32 elem_type = 15;</code>
      * @return The elemType.
      */
     int getElemType();
   }
   /**
    * <pre>
-   * Name: AGPDCOJBBGB
-   * CmdId: 8338
+   * CmdId: 8530
+   * Obf: PEEBIBADBKI
    * </pre>
    *
    * Protobuf type {@code GachaActivityUpdateElemNotify}
@@ -74,7 +74,7 @@ public final class GachaActivityUpdateElemNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 120: {
 
               elemType_ = input.readUInt32();
               break;
@@ -111,10 +111,10 @@ public final class GachaActivityUpdateElemNotifyOuterClass {
               emu.grasscutter.net.proto.GachaActivityUpdateElemNotifyOuterClass.GachaActivityUpdateElemNotify.class, emu.grasscutter.net.proto.GachaActivityUpdateElemNotifyOuterClass.GachaActivityUpdateElemNotify.Builder.class);
     }
 
-    public static final int ELEM_TYPE_FIELD_NUMBER = 10;
+    public static final int ELEM_TYPE_FIELD_NUMBER = 15;
     private int elemType_;
     /**
-     * <code>uint32 elem_type = 10;</code>
+     * <code>uint32 elem_type = 15;</code>
      * @return The elemType.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class GachaActivityUpdateElemNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (elemType_ != 0) {
-        output.writeUInt32(10, elemType_);
+        output.writeUInt32(15, elemType_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class GachaActivityUpdateElemNotifyOuterClass {
       size = 0;
       if (elemType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, elemType_);
+          .computeUInt32Size(15, elemType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class GachaActivityUpdateElemNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: AGPDCOJBBGB
-     * CmdId: 8338
+     * CmdId: 8530
+     * Obf: PEEBIBADBKI
      * </pre>
      *
      * Protobuf type {@code GachaActivityUpdateElemNotify}
@@ -431,7 +431,7 @@ public final class GachaActivityUpdateElemNotifyOuterClass {
 
       private int elemType_ ;
       /**
-       * <code>uint32 elem_type = 10;</code>
+       * <code>uint32 elem_type = 15;</code>
        * @return The elemType.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class GachaActivityUpdateElemNotifyOuterClass {
         return elemType_;
       }
       /**
-       * <code>uint32 elem_type = 10;</code>
+       * <code>uint32 elem_type = 15;</code>
        * @param value The elemType to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class GachaActivityUpdateElemNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 elem_type = 10;</code>
+       * <code>uint32 elem_type = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearElemType() {
@@ -528,7 +528,7 @@ public final class GachaActivityUpdateElemNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n#GachaActivityUpdateElemNotify.proto\"2\n" +
       "\035GachaActivityUpdateElemNotify\022\021\n\telem_t" +
-      "ype\030\n \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
+      "ype\030\017 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
       "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

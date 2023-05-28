@@ -19,42 +19,42 @@ public final class HomeAvatarRewardEventNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.DLIGBJOALKN BJNGIKEIDDH = 5;</code>
-     * @return Whether the bJNGIKEIDDH field is set.
+     * <code>.HomeAvatarRewardEventInfo reward_event = 15;</code>
+     * @return Whether the rewardEvent field is set.
      */
-    boolean hasBJNGIKEIDDH();
+    boolean hasRewardEvent();
     /**
-     * <code>.DLIGBJOALKN BJNGIKEIDDH = 5;</code>
-     * @return The bJNGIKEIDDH.
+     * <code>.HomeAvatarRewardEventInfo reward_event = 15;</code>
+     * @return The rewardEvent.
      */
-    emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN getBJNGIKEIDDH();
+    emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo getRewardEvent();
     /**
-     * <code>.DLIGBJOALKN BJNGIKEIDDH = 5;</code>
+     * <code>.HomeAvatarRewardEventInfo reward_event = 15;</code>
      */
-    emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKNOrBuilder getBJNGIKEIDDHOrBuilder();
+    emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfoOrBuilder getRewardEventOrBuilder();
 
     /**
-     * <code>repeated .DLIGBJOALKN GLKMELEOCHP = 11;</code>
+     * <code>repeated .HomeAvatarRewardEventInfo pending_list = 9;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN> 
-        getGLKMELEOCHPList();
+    java.util.List<emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo> 
+        getPendingListList();
     /**
-     * <code>repeated .DLIGBJOALKN GLKMELEOCHP = 11;</code>
+     * <code>repeated .HomeAvatarRewardEventInfo pending_list = 9;</code>
      */
-    emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN getGLKMELEOCHP(int index);
+    emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo getPendingList(int index);
     /**
-     * <code>repeated .DLIGBJOALKN GLKMELEOCHP = 11;</code>
+     * <code>repeated .HomeAvatarRewardEventInfo pending_list = 9;</code>
      */
-    int getGLKMELEOCHPCount();
+    int getPendingListCount();
     /**
-     * <code>repeated .DLIGBJOALKN GLKMELEOCHP = 11;</code>
+     * <code>repeated .HomeAvatarRewardEventInfo pending_list = 9;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKNOrBuilder> 
-        getGLKMELEOCHPOrBuilderList();
+    java.util.List<? extends emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfoOrBuilder> 
+        getPendingListOrBuilderList();
     /**
-     * <code>repeated .DLIGBJOALKN GLKMELEOCHP = 11;</code>
+     * <code>repeated .HomeAvatarRewardEventInfo pending_list = 9;</code>
      */
-    emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKNOrBuilder getGLKMELEOCHPOrBuilder(
+    emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfoOrBuilder getPendingListOrBuilder(
         int index);
 
     /**
@@ -65,8 +65,8 @@ public final class HomeAvatarRewardEventNotifyOuterClass {
   }
   /**
    * <pre>
-   * Name: BADOLJHDMLB
-   * CmdId: 4682
+   * CmdId: 4829
+   * Obf: CDGNCIMIHNJ
    * </pre>
    *
    * Protobuf type {@code HomeAvatarRewardEventNotify}
@@ -81,7 +81,7 @@ public final class HomeAvatarRewardEventNotifyOuterClass {
       super(builder);
     }
     private HomeAvatarRewardEventNotify() {
-      gLKMELEOCHP_ = java.util.Collections.emptyList();
+      pendingList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -115,17 +115,13 @@ public final class HomeAvatarRewardEventNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 42: {
-              emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN.Builder subBuilder = null;
-              if (bJNGIKEIDDH_ != null) {
-                subBuilder = bJNGIKEIDDH_.toBuilder();
+            case 74: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                pendingList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo>();
+                mutable_bitField0_ |= 0x00000001;
               }
-              bJNGIKEIDDH_ = input.readMessage(emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(bJNGIKEIDDH_);
-                bJNGIKEIDDH_ = subBuilder.buildPartial();
-              }
-
+              pendingList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo.parser(), extensionRegistry));
               break;
             }
             case 80: {
@@ -133,13 +129,17 @@ public final class HomeAvatarRewardEventNotifyOuterClass {
               isEventTrigger_ = input.readBool();
               break;
             }
-            case 90: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                gLKMELEOCHP_ = new java.util.ArrayList<emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN>();
-                mutable_bitField0_ |= 0x00000001;
+            case 122: {
+              emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo.Builder subBuilder = null;
+              if (rewardEvent_ != null) {
+                subBuilder = rewardEvent_.toBuilder();
               }
-              gLKMELEOCHP_.add(
-                  input.readMessage(emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN.parser(), extensionRegistry));
+              rewardEvent_ = input.readMessage(emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(rewardEvent_);
+                rewardEvent_ = subBuilder.buildPartial();
+              }
+
               break;
             }
             default: {
@@ -158,7 +158,7 @@ public final class HomeAvatarRewardEventNotifyOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          gLKMELEOCHP_ = java.util.Collections.unmodifiableList(gLKMELEOCHP_);
+          pendingList_ = java.util.Collections.unmodifiableList(pendingList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -177,70 +177,70 @@ public final class HomeAvatarRewardEventNotifyOuterClass {
               emu.grasscutter.net.proto.HomeAvatarRewardEventNotifyOuterClass.HomeAvatarRewardEventNotify.class, emu.grasscutter.net.proto.HomeAvatarRewardEventNotifyOuterClass.HomeAvatarRewardEventNotify.Builder.class);
     }
 
-    public static final int BJNGIKEIDDH_FIELD_NUMBER = 5;
-    private emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN bJNGIKEIDDH_;
+    public static final int REWARD_EVENT_FIELD_NUMBER = 15;
+    private emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo rewardEvent_;
     /**
-     * <code>.DLIGBJOALKN BJNGIKEIDDH = 5;</code>
-     * @return Whether the bJNGIKEIDDH field is set.
+     * <code>.HomeAvatarRewardEventInfo reward_event = 15;</code>
+     * @return Whether the rewardEvent field is set.
      */
     @java.lang.Override
-    public boolean hasBJNGIKEIDDH() {
-      return bJNGIKEIDDH_ != null;
+    public boolean hasRewardEvent() {
+      return rewardEvent_ != null;
     }
     /**
-     * <code>.DLIGBJOALKN BJNGIKEIDDH = 5;</code>
-     * @return The bJNGIKEIDDH.
+     * <code>.HomeAvatarRewardEventInfo reward_event = 15;</code>
+     * @return The rewardEvent.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN getBJNGIKEIDDH() {
-      return bJNGIKEIDDH_ == null ? emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN.getDefaultInstance() : bJNGIKEIDDH_;
+    public emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo getRewardEvent() {
+      return rewardEvent_ == null ? emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo.getDefaultInstance() : rewardEvent_;
     }
     /**
-     * <code>.DLIGBJOALKN BJNGIKEIDDH = 5;</code>
+     * <code>.HomeAvatarRewardEventInfo reward_event = 15;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKNOrBuilder getBJNGIKEIDDHOrBuilder() {
-      return getBJNGIKEIDDH();
+    public emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfoOrBuilder getRewardEventOrBuilder() {
+      return getRewardEvent();
     }
 
-    public static final int GLKMELEOCHP_FIELD_NUMBER = 11;
-    private java.util.List<emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN> gLKMELEOCHP_;
+    public static final int PENDING_LIST_FIELD_NUMBER = 9;
+    private java.util.List<emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo> pendingList_;
     /**
-     * <code>repeated .DLIGBJOALKN GLKMELEOCHP = 11;</code>
+     * <code>repeated .HomeAvatarRewardEventInfo pending_list = 9;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN> getGLKMELEOCHPList() {
-      return gLKMELEOCHP_;
+    public java.util.List<emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo> getPendingListList() {
+      return pendingList_;
     }
     /**
-     * <code>repeated .DLIGBJOALKN GLKMELEOCHP = 11;</code>
+     * <code>repeated .HomeAvatarRewardEventInfo pending_list = 9;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKNOrBuilder> 
-        getGLKMELEOCHPOrBuilderList() {
-      return gLKMELEOCHP_;
+    public java.util.List<? extends emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfoOrBuilder> 
+        getPendingListOrBuilderList() {
+      return pendingList_;
     }
     /**
-     * <code>repeated .DLIGBJOALKN GLKMELEOCHP = 11;</code>
+     * <code>repeated .HomeAvatarRewardEventInfo pending_list = 9;</code>
      */
     @java.lang.Override
-    public int getGLKMELEOCHPCount() {
-      return gLKMELEOCHP_.size();
+    public int getPendingListCount() {
+      return pendingList_.size();
     }
     /**
-     * <code>repeated .DLIGBJOALKN GLKMELEOCHP = 11;</code>
+     * <code>repeated .HomeAvatarRewardEventInfo pending_list = 9;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN getGLKMELEOCHP(int index) {
-      return gLKMELEOCHP_.get(index);
+    public emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo getPendingList(int index) {
+      return pendingList_.get(index);
     }
     /**
-     * <code>repeated .DLIGBJOALKN GLKMELEOCHP = 11;</code>
+     * <code>repeated .HomeAvatarRewardEventInfo pending_list = 9;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKNOrBuilder getGLKMELEOCHPOrBuilder(
+    public emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfoOrBuilder getPendingListOrBuilder(
         int index) {
-      return gLKMELEOCHP_.get(index);
+      return pendingList_.get(index);
     }
 
     public static final int IS_EVENT_TRIGGER_FIELD_NUMBER = 10;
@@ -268,14 +268,14 @@ public final class HomeAvatarRewardEventNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (bJNGIKEIDDH_ != null) {
-        output.writeMessage(5, getBJNGIKEIDDH());
+      for (int i = 0; i < pendingList_.size(); i++) {
+        output.writeMessage(9, pendingList_.get(i));
       }
       if (isEventTrigger_ != false) {
         output.writeBool(10, isEventTrigger_);
       }
-      for (int i = 0; i < gLKMELEOCHP_.size(); i++) {
-        output.writeMessage(11, gLKMELEOCHP_.get(i));
+      if (rewardEvent_ != null) {
+        output.writeMessage(15, getRewardEvent());
       }
       unknownFields.writeTo(output);
     }
@@ -286,17 +286,17 @@ public final class HomeAvatarRewardEventNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (bJNGIKEIDDH_ != null) {
+      for (int i = 0; i < pendingList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, getBJNGIKEIDDH());
+          .computeMessageSize(9, pendingList_.get(i));
       }
       if (isEventTrigger_ != false) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(10, isEventTrigger_);
       }
-      for (int i = 0; i < gLKMELEOCHP_.size(); i++) {
+      if (rewardEvent_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, gLKMELEOCHP_.get(i));
+          .computeMessageSize(15, getRewardEvent());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,13 +313,13 @@ public final class HomeAvatarRewardEventNotifyOuterClass {
       }
       emu.grasscutter.net.proto.HomeAvatarRewardEventNotifyOuterClass.HomeAvatarRewardEventNotify other = (emu.grasscutter.net.proto.HomeAvatarRewardEventNotifyOuterClass.HomeAvatarRewardEventNotify) obj;
 
-      if (hasBJNGIKEIDDH() != other.hasBJNGIKEIDDH()) return false;
-      if (hasBJNGIKEIDDH()) {
-        if (!getBJNGIKEIDDH()
-            .equals(other.getBJNGIKEIDDH())) return false;
+      if (hasRewardEvent() != other.hasRewardEvent()) return false;
+      if (hasRewardEvent()) {
+        if (!getRewardEvent()
+            .equals(other.getRewardEvent())) return false;
       }
-      if (!getGLKMELEOCHPList()
-          .equals(other.getGLKMELEOCHPList())) return false;
+      if (!getPendingListList()
+          .equals(other.getPendingListList())) return false;
       if (getIsEventTrigger()
           != other.getIsEventTrigger()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -333,13 +333,13 @@ public final class HomeAvatarRewardEventNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasBJNGIKEIDDH()) {
-        hash = (37 * hash) + BJNGIKEIDDH_FIELD_NUMBER;
-        hash = (53 * hash) + getBJNGIKEIDDH().hashCode();
+      if (hasRewardEvent()) {
+        hash = (37 * hash) + REWARD_EVENT_FIELD_NUMBER;
+        hash = (53 * hash) + getRewardEvent().hashCode();
       }
-      if (getGLKMELEOCHPCount() > 0) {
-        hash = (37 * hash) + GLKMELEOCHP_FIELD_NUMBER;
-        hash = (53 * hash) + getGLKMELEOCHPList().hashCode();
+      if (getPendingListCount() > 0) {
+        hash = (37 * hash) + PENDING_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getPendingListList().hashCode();
       }
       hash = (37 * hash) + IS_EVENT_TRIGGER_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
@@ -441,8 +441,8 @@ public final class HomeAvatarRewardEventNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: BADOLJHDMLB
-     * CmdId: 4682
+     * CmdId: 4829
+     * Obf: CDGNCIMIHNJ
      * </pre>
      *
      * Protobuf type {@code HomeAvatarRewardEventNotify}
@@ -477,23 +477,23 @@ public final class HomeAvatarRewardEventNotifyOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getGLKMELEOCHPFieldBuilder();
+          getPendingListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (bJNGIKEIDDHBuilder_ == null) {
-          bJNGIKEIDDH_ = null;
+        if (rewardEventBuilder_ == null) {
+          rewardEvent_ = null;
         } else {
-          bJNGIKEIDDH_ = null;
-          bJNGIKEIDDHBuilder_ = null;
+          rewardEvent_ = null;
+          rewardEventBuilder_ = null;
         }
-        if (gLKMELEOCHPBuilder_ == null) {
-          gLKMELEOCHP_ = java.util.Collections.emptyList();
+        if (pendingListBuilder_ == null) {
+          pendingList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          gLKMELEOCHPBuilder_.clear();
+          pendingListBuilder_.clear();
         }
         isEventTrigger_ = false;
 
@@ -524,19 +524,19 @@ public final class HomeAvatarRewardEventNotifyOuterClass {
       public emu.grasscutter.net.proto.HomeAvatarRewardEventNotifyOuterClass.HomeAvatarRewardEventNotify buildPartial() {
         emu.grasscutter.net.proto.HomeAvatarRewardEventNotifyOuterClass.HomeAvatarRewardEventNotify result = new emu.grasscutter.net.proto.HomeAvatarRewardEventNotifyOuterClass.HomeAvatarRewardEventNotify(this);
         int from_bitField0_ = bitField0_;
-        if (bJNGIKEIDDHBuilder_ == null) {
-          result.bJNGIKEIDDH_ = bJNGIKEIDDH_;
+        if (rewardEventBuilder_ == null) {
+          result.rewardEvent_ = rewardEvent_;
         } else {
-          result.bJNGIKEIDDH_ = bJNGIKEIDDHBuilder_.build();
+          result.rewardEvent_ = rewardEventBuilder_.build();
         }
-        if (gLKMELEOCHPBuilder_ == null) {
+        if (pendingListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            gLKMELEOCHP_ = java.util.Collections.unmodifiableList(gLKMELEOCHP_);
+            pendingList_ = java.util.Collections.unmodifiableList(pendingList_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.gLKMELEOCHP_ = gLKMELEOCHP_;
+          result.pendingList_ = pendingList_;
         } else {
-          result.gLKMELEOCHP_ = gLKMELEOCHPBuilder_.build();
+          result.pendingList_ = pendingListBuilder_.build();
         }
         result.isEventTrigger_ = isEventTrigger_;
         onBuilt();
@@ -587,32 +587,32 @@ public final class HomeAvatarRewardEventNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HomeAvatarRewardEventNotifyOuterClass.HomeAvatarRewardEventNotify other) {
         if (other == emu.grasscutter.net.proto.HomeAvatarRewardEventNotifyOuterClass.HomeAvatarRewardEventNotify.getDefaultInstance()) return this;
-        if (other.hasBJNGIKEIDDH()) {
-          mergeBJNGIKEIDDH(other.getBJNGIKEIDDH());
+        if (other.hasRewardEvent()) {
+          mergeRewardEvent(other.getRewardEvent());
         }
-        if (gLKMELEOCHPBuilder_ == null) {
-          if (!other.gLKMELEOCHP_.isEmpty()) {
-            if (gLKMELEOCHP_.isEmpty()) {
-              gLKMELEOCHP_ = other.gLKMELEOCHP_;
+        if (pendingListBuilder_ == null) {
+          if (!other.pendingList_.isEmpty()) {
+            if (pendingList_.isEmpty()) {
+              pendingList_ = other.pendingList_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureGLKMELEOCHPIsMutable();
-              gLKMELEOCHP_.addAll(other.gLKMELEOCHP_);
+              ensurePendingListIsMutable();
+              pendingList_.addAll(other.pendingList_);
             }
             onChanged();
           }
         } else {
-          if (!other.gLKMELEOCHP_.isEmpty()) {
-            if (gLKMELEOCHPBuilder_.isEmpty()) {
-              gLKMELEOCHPBuilder_.dispose();
-              gLKMELEOCHPBuilder_ = null;
-              gLKMELEOCHP_ = other.gLKMELEOCHP_;
+          if (!other.pendingList_.isEmpty()) {
+            if (pendingListBuilder_.isEmpty()) {
+              pendingListBuilder_.dispose();
+              pendingListBuilder_ = null;
+              pendingList_ = other.pendingList_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              gLKMELEOCHPBuilder_ = 
+              pendingListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getGLKMELEOCHPFieldBuilder() : null;
+                   getPendingListFieldBuilder() : null;
             } else {
-              gLKMELEOCHPBuilder_.addAllMessages(other.gLKMELEOCHP_);
+              pendingListBuilder_.addAllMessages(other.pendingList_);
             }
           }
         }
@@ -649,363 +649,363 @@ public final class HomeAvatarRewardEventNotifyOuterClass {
       }
       private int bitField0_;
 
-      private emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN bJNGIKEIDDH_;
+      private emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo rewardEvent_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN, emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN.Builder, emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKNOrBuilder> bJNGIKEIDDHBuilder_;
+          emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo, emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo.Builder, emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfoOrBuilder> rewardEventBuilder_;
       /**
-       * <code>.DLIGBJOALKN BJNGIKEIDDH = 5;</code>
-       * @return Whether the bJNGIKEIDDH field is set.
+       * <code>.HomeAvatarRewardEventInfo reward_event = 15;</code>
+       * @return Whether the rewardEvent field is set.
        */
-      public boolean hasBJNGIKEIDDH() {
-        return bJNGIKEIDDHBuilder_ != null || bJNGIKEIDDH_ != null;
+      public boolean hasRewardEvent() {
+        return rewardEventBuilder_ != null || rewardEvent_ != null;
       }
       /**
-       * <code>.DLIGBJOALKN BJNGIKEIDDH = 5;</code>
-       * @return The bJNGIKEIDDH.
+       * <code>.HomeAvatarRewardEventInfo reward_event = 15;</code>
+       * @return The rewardEvent.
        */
-      public emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN getBJNGIKEIDDH() {
-        if (bJNGIKEIDDHBuilder_ == null) {
-          return bJNGIKEIDDH_ == null ? emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN.getDefaultInstance() : bJNGIKEIDDH_;
+      public emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo getRewardEvent() {
+        if (rewardEventBuilder_ == null) {
+          return rewardEvent_ == null ? emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo.getDefaultInstance() : rewardEvent_;
         } else {
-          return bJNGIKEIDDHBuilder_.getMessage();
+          return rewardEventBuilder_.getMessage();
         }
       }
       /**
-       * <code>.DLIGBJOALKN BJNGIKEIDDH = 5;</code>
+       * <code>.HomeAvatarRewardEventInfo reward_event = 15;</code>
        */
-      public Builder setBJNGIKEIDDH(emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN value) {
-        if (bJNGIKEIDDHBuilder_ == null) {
+      public Builder setRewardEvent(emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo value) {
+        if (rewardEventBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          bJNGIKEIDDH_ = value;
+          rewardEvent_ = value;
           onChanged();
         } else {
-          bJNGIKEIDDHBuilder_.setMessage(value);
+          rewardEventBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.DLIGBJOALKN BJNGIKEIDDH = 5;</code>
+       * <code>.HomeAvatarRewardEventInfo reward_event = 15;</code>
        */
-      public Builder setBJNGIKEIDDH(
-          emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN.Builder builderForValue) {
-        if (bJNGIKEIDDHBuilder_ == null) {
-          bJNGIKEIDDH_ = builderForValue.build();
+      public Builder setRewardEvent(
+          emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo.Builder builderForValue) {
+        if (rewardEventBuilder_ == null) {
+          rewardEvent_ = builderForValue.build();
           onChanged();
         } else {
-          bJNGIKEIDDHBuilder_.setMessage(builderForValue.build());
+          rewardEventBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.DLIGBJOALKN BJNGIKEIDDH = 5;</code>
+       * <code>.HomeAvatarRewardEventInfo reward_event = 15;</code>
        */
-      public Builder mergeBJNGIKEIDDH(emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN value) {
-        if (bJNGIKEIDDHBuilder_ == null) {
-          if (bJNGIKEIDDH_ != null) {
-            bJNGIKEIDDH_ =
-              emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN.newBuilder(bJNGIKEIDDH_).mergeFrom(value).buildPartial();
+      public Builder mergeRewardEvent(emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo value) {
+        if (rewardEventBuilder_ == null) {
+          if (rewardEvent_ != null) {
+            rewardEvent_ =
+              emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo.newBuilder(rewardEvent_).mergeFrom(value).buildPartial();
           } else {
-            bJNGIKEIDDH_ = value;
+            rewardEvent_ = value;
           }
           onChanged();
         } else {
-          bJNGIKEIDDHBuilder_.mergeFrom(value);
+          rewardEventBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.DLIGBJOALKN BJNGIKEIDDH = 5;</code>
+       * <code>.HomeAvatarRewardEventInfo reward_event = 15;</code>
        */
-      public Builder clearBJNGIKEIDDH() {
-        if (bJNGIKEIDDHBuilder_ == null) {
-          bJNGIKEIDDH_ = null;
+      public Builder clearRewardEvent() {
+        if (rewardEventBuilder_ == null) {
+          rewardEvent_ = null;
           onChanged();
         } else {
-          bJNGIKEIDDH_ = null;
-          bJNGIKEIDDHBuilder_ = null;
+          rewardEvent_ = null;
+          rewardEventBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.DLIGBJOALKN BJNGIKEIDDH = 5;</code>
+       * <code>.HomeAvatarRewardEventInfo reward_event = 15;</code>
        */
-      public emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN.Builder getBJNGIKEIDDHBuilder() {
+      public emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo.Builder getRewardEventBuilder() {
         
         onChanged();
-        return getBJNGIKEIDDHFieldBuilder().getBuilder();
+        return getRewardEventFieldBuilder().getBuilder();
       }
       /**
-       * <code>.DLIGBJOALKN BJNGIKEIDDH = 5;</code>
+       * <code>.HomeAvatarRewardEventInfo reward_event = 15;</code>
        */
-      public emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKNOrBuilder getBJNGIKEIDDHOrBuilder() {
-        if (bJNGIKEIDDHBuilder_ != null) {
-          return bJNGIKEIDDHBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfoOrBuilder getRewardEventOrBuilder() {
+        if (rewardEventBuilder_ != null) {
+          return rewardEventBuilder_.getMessageOrBuilder();
         } else {
-          return bJNGIKEIDDH_ == null ?
-              emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN.getDefaultInstance() : bJNGIKEIDDH_;
+          return rewardEvent_ == null ?
+              emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo.getDefaultInstance() : rewardEvent_;
         }
       }
       /**
-       * <code>.DLIGBJOALKN BJNGIKEIDDH = 5;</code>
+       * <code>.HomeAvatarRewardEventInfo reward_event = 15;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN, emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN.Builder, emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKNOrBuilder> 
-          getBJNGIKEIDDHFieldBuilder() {
-        if (bJNGIKEIDDHBuilder_ == null) {
-          bJNGIKEIDDHBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN, emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN.Builder, emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKNOrBuilder>(
-                  getBJNGIKEIDDH(),
+          emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo, emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo.Builder, emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfoOrBuilder> 
+          getRewardEventFieldBuilder() {
+        if (rewardEventBuilder_ == null) {
+          rewardEventBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo, emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo.Builder, emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfoOrBuilder>(
+                  getRewardEvent(),
                   getParentForChildren(),
                   isClean());
-          bJNGIKEIDDH_ = null;
+          rewardEvent_ = null;
         }
-        return bJNGIKEIDDHBuilder_;
+        return rewardEventBuilder_;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN> gLKMELEOCHP_ =
+      private java.util.List<emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo> pendingList_ =
         java.util.Collections.emptyList();
-      private void ensureGLKMELEOCHPIsMutable() {
+      private void ensurePendingListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          gLKMELEOCHP_ = new java.util.ArrayList<emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN>(gLKMELEOCHP_);
+          pendingList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo>(pendingList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN, emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN.Builder, emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKNOrBuilder> gLKMELEOCHPBuilder_;
+          emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo, emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo.Builder, emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfoOrBuilder> pendingListBuilder_;
 
       /**
-       * <code>repeated .DLIGBJOALKN GLKMELEOCHP = 11;</code>
+       * <code>repeated .HomeAvatarRewardEventInfo pending_list = 9;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN> getGLKMELEOCHPList() {
-        if (gLKMELEOCHPBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(gLKMELEOCHP_);
+      public java.util.List<emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo> getPendingListList() {
+        if (pendingListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(pendingList_);
         } else {
-          return gLKMELEOCHPBuilder_.getMessageList();
+          return pendingListBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .DLIGBJOALKN GLKMELEOCHP = 11;</code>
+       * <code>repeated .HomeAvatarRewardEventInfo pending_list = 9;</code>
        */
-      public int getGLKMELEOCHPCount() {
-        if (gLKMELEOCHPBuilder_ == null) {
-          return gLKMELEOCHP_.size();
+      public int getPendingListCount() {
+        if (pendingListBuilder_ == null) {
+          return pendingList_.size();
         } else {
-          return gLKMELEOCHPBuilder_.getCount();
+          return pendingListBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .DLIGBJOALKN GLKMELEOCHP = 11;</code>
+       * <code>repeated .HomeAvatarRewardEventInfo pending_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN getGLKMELEOCHP(int index) {
-        if (gLKMELEOCHPBuilder_ == null) {
-          return gLKMELEOCHP_.get(index);
+      public emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo getPendingList(int index) {
+        if (pendingListBuilder_ == null) {
+          return pendingList_.get(index);
         } else {
-          return gLKMELEOCHPBuilder_.getMessage(index);
+          return pendingListBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .DLIGBJOALKN GLKMELEOCHP = 11;</code>
+       * <code>repeated .HomeAvatarRewardEventInfo pending_list = 9;</code>
        */
-      public Builder setGLKMELEOCHP(
-          int index, emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN value) {
-        if (gLKMELEOCHPBuilder_ == null) {
+      public Builder setPendingList(
+          int index, emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo value) {
+        if (pendingListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureGLKMELEOCHPIsMutable();
-          gLKMELEOCHP_.set(index, value);
+          ensurePendingListIsMutable();
+          pendingList_.set(index, value);
           onChanged();
         } else {
-          gLKMELEOCHPBuilder_.setMessage(index, value);
+          pendingListBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .DLIGBJOALKN GLKMELEOCHP = 11;</code>
+       * <code>repeated .HomeAvatarRewardEventInfo pending_list = 9;</code>
        */
-      public Builder setGLKMELEOCHP(
-          int index, emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN.Builder builderForValue) {
-        if (gLKMELEOCHPBuilder_ == null) {
-          ensureGLKMELEOCHPIsMutable();
-          gLKMELEOCHP_.set(index, builderForValue.build());
+      public Builder setPendingList(
+          int index, emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo.Builder builderForValue) {
+        if (pendingListBuilder_ == null) {
+          ensurePendingListIsMutable();
+          pendingList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          gLKMELEOCHPBuilder_.setMessage(index, builderForValue.build());
+          pendingListBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .DLIGBJOALKN GLKMELEOCHP = 11;</code>
+       * <code>repeated .HomeAvatarRewardEventInfo pending_list = 9;</code>
        */
-      public Builder addGLKMELEOCHP(emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN value) {
-        if (gLKMELEOCHPBuilder_ == null) {
+      public Builder addPendingList(emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo value) {
+        if (pendingListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureGLKMELEOCHPIsMutable();
-          gLKMELEOCHP_.add(value);
+          ensurePendingListIsMutable();
+          pendingList_.add(value);
           onChanged();
         } else {
-          gLKMELEOCHPBuilder_.addMessage(value);
+          pendingListBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .DLIGBJOALKN GLKMELEOCHP = 11;</code>
+       * <code>repeated .HomeAvatarRewardEventInfo pending_list = 9;</code>
        */
-      public Builder addGLKMELEOCHP(
-          int index, emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN value) {
-        if (gLKMELEOCHPBuilder_ == null) {
+      public Builder addPendingList(
+          int index, emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo value) {
+        if (pendingListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureGLKMELEOCHPIsMutable();
-          gLKMELEOCHP_.add(index, value);
+          ensurePendingListIsMutable();
+          pendingList_.add(index, value);
           onChanged();
         } else {
-          gLKMELEOCHPBuilder_.addMessage(index, value);
+          pendingListBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .DLIGBJOALKN GLKMELEOCHP = 11;</code>
+       * <code>repeated .HomeAvatarRewardEventInfo pending_list = 9;</code>
        */
-      public Builder addGLKMELEOCHP(
-          emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN.Builder builderForValue) {
-        if (gLKMELEOCHPBuilder_ == null) {
-          ensureGLKMELEOCHPIsMutable();
-          gLKMELEOCHP_.add(builderForValue.build());
+      public Builder addPendingList(
+          emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo.Builder builderForValue) {
+        if (pendingListBuilder_ == null) {
+          ensurePendingListIsMutable();
+          pendingList_.add(builderForValue.build());
           onChanged();
         } else {
-          gLKMELEOCHPBuilder_.addMessage(builderForValue.build());
+          pendingListBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .DLIGBJOALKN GLKMELEOCHP = 11;</code>
+       * <code>repeated .HomeAvatarRewardEventInfo pending_list = 9;</code>
        */
-      public Builder addGLKMELEOCHP(
-          int index, emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN.Builder builderForValue) {
-        if (gLKMELEOCHPBuilder_ == null) {
-          ensureGLKMELEOCHPIsMutable();
-          gLKMELEOCHP_.add(index, builderForValue.build());
+      public Builder addPendingList(
+          int index, emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo.Builder builderForValue) {
+        if (pendingListBuilder_ == null) {
+          ensurePendingListIsMutable();
+          pendingList_.add(index, builderForValue.build());
           onChanged();
         } else {
-          gLKMELEOCHPBuilder_.addMessage(index, builderForValue.build());
+          pendingListBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .DLIGBJOALKN GLKMELEOCHP = 11;</code>
+       * <code>repeated .HomeAvatarRewardEventInfo pending_list = 9;</code>
        */
-      public Builder addAllGLKMELEOCHP(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN> values) {
-        if (gLKMELEOCHPBuilder_ == null) {
-          ensureGLKMELEOCHPIsMutable();
+      public Builder addAllPendingList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo> values) {
+        if (pendingListBuilder_ == null) {
+          ensurePendingListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, gLKMELEOCHP_);
+              values, pendingList_);
           onChanged();
         } else {
-          gLKMELEOCHPBuilder_.addAllMessages(values);
+          pendingListBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .DLIGBJOALKN GLKMELEOCHP = 11;</code>
+       * <code>repeated .HomeAvatarRewardEventInfo pending_list = 9;</code>
        */
-      public Builder clearGLKMELEOCHP() {
-        if (gLKMELEOCHPBuilder_ == null) {
-          gLKMELEOCHP_ = java.util.Collections.emptyList();
+      public Builder clearPendingList() {
+        if (pendingListBuilder_ == null) {
+          pendingList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          gLKMELEOCHPBuilder_.clear();
+          pendingListBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .DLIGBJOALKN GLKMELEOCHP = 11;</code>
+       * <code>repeated .HomeAvatarRewardEventInfo pending_list = 9;</code>
        */
-      public Builder removeGLKMELEOCHP(int index) {
-        if (gLKMELEOCHPBuilder_ == null) {
-          ensureGLKMELEOCHPIsMutable();
-          gLKMELEOCHP_.remove(index);
+      public Builder removePendingList(int index) {
+        if (pendingListBuilder_ == null) {
+          ensurePendingListIsMutable();
+          pendingList_.remove(index);
           onChanged();
         } else {
-          gLKMELEOCHPBuilder_.remove(index);
+          pendingListBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .DLIGBJOALKN GLKMELEOCHP = 11;</code>
+       * <code>repeated .HomeAvatarRewardEventInfo pending_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN.Builder getGLKMELEOCHPBuilder(
+      public emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo.Builder getPendingListBuilder(
           int index) {
-        return getGLKMELEOCHPFieldBuilder().getBuilder(index);
+        return getPendingListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .DLIGBJOALKN GLKMELEOCHP = 11;</code>
+       * <code>repeated .HomeAvatarRewardEventInfo pending_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKNOrBuilder getGLKMELEOCHPOrBuilder(
+      public emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfoOrBuilder getPendingListOrBuilder(
           int index) {
-        if (gLKMELEOCHPBuilder_ == null) {
-          return gLKMELEOCHP_.get(index);  } else {
-          return gLKMELEOCHPBuilder_.getMessageOrBuilder(index);
+        if (pendingListBuilder_ == null) {
+          return pendingList_.get(index);  } else {
+          return pendingListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .DLIGBJOALKN GLKMELEOCHP = 11;</code>
+       * <code>repeated .HomeAvatarRewardEventInfo pending_list = 9;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKNOrBuilder> 
-           getGLKMELEOCHPOrBuilderList() {
-        if (gLKMELEOCHPBuilder_ != null) {
-          return gLKMELEOCHPBuilder_.getMessageOrBuilderList();
+      public java.util.List<? extends emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfoOrBuilder> 
+           getPendingListOrBuilderList() {
+        if (pendingListBuilder_ != null) {
+          return pendingListBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(gLKMELEOCHP_);
+          return java.util.Collections.unmodifiableList(pendingList_);
         }
       }
       /**
-       * <code>repeated .DLIGBJOALKN GLKMELEOCHP = 11;</code>
+       * <code>repeated .HomeAvatarRewardEventInfo pending_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN.Builder addGLKMELEOCHPBuilder() {
-        return getGLKMELEOCHPFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN.getDefaultInstance());
+      public emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo.Builder addPendingListBuilder() {
+        return getPendingListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .DLIGBJOALKN GLKMELEOCHP = 11;</code>
+       * <code>repeated .HomeAvatarRewardEventInfo pending_list = 9;</code>
        */
-      public emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN.Builder addGLKMELEOCHPBuilder(
+      public emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo.Builder addPendingListBuilder(
           int index) {
-        return getGLKMELEOCHPFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN.getDefaultInstance());
+        return getPendingListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .DLIGBJOALKN GLKMELEOCHP = 11;</code>
+       * <code>repeated .HomeAvatarRewardEventInfo pending_list = 9;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN.Builder> 
-           getGLKMELEOCHPBuilderList() {
-        return getGLKMELEOCHPFieldBuilder().getBuilderList();
+      public java.util.List<emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo.Builder> 
+           getPendingListBuilderList() {
+        return getPendingListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN, emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN.Builder, emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKNOrBuilder> 
-          getGLKMELEOCHPFieldBuilder() {
-        if (gLKMELEOCHPBuilder_ == null) {
-          gLKMELEOCHPBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN, emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKN.Builder, emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.DLIGBJOALKNOrBuilder>(
-                  gLKMELEOCHP_,
+          emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo, emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo.Builder, emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfoOrBuilder> 
+          getPendingListFieldBuilder() {
+        if (pendingListBuilder_ == null) {
+          pendingListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo, emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfo.Builder, emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.HomeAvatarRewardEventInfoOrBuilder>(
+                  pendingList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          gLKMELEOCHP_ = null;
+          pendingList_ = null;
         }
-        return gLKMELEOCHPBuilder_;
+        return pendingListBuilder_;
       }
 
       private boolean isEventTrigger_ ;
@@ -1105,25 +1105,26 @@ public final class HomeAvatarRewardEventNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n!HomeAvatarRewardEventNotify.proto\032\021DLI" +
-      "GBJOALKN.proto\"}\n\033HomeAvatarRewardEventN" +
-      "otify\022!\n\013BJNGIKEIDDH\030\005 \001(\0132\014.DLIGBJOALKN" +
-      "\022!\n\013GLKMELEOCHP\030\013 \003(\0132\014.DLIGBJOALKN\022\030\n\020i" +
-      "s_event_trigger\030\n \001(\010B\033\n\031emu.grasscutter" +
-      ".net.protob\006proto3"
+      "\n!HomeAvatarRewardEventNotify.proto\032\037Hom" +
+      "eAvatarRewardEventInfo.proto\"\233\001\n\033HomeAva" +
+      "tarRewardEventNotify\0220\n\014reward_event\030\017 \001" +
+      "(\0132\032.HomeAvatarRewardEventInfo\0220\n\014pendin" +
+      "g_list\030\t \003(\0132\032.HomeAvatarRewardEventInfo" +
+      "\022\030\n\020is_event_trigger\030\n \001(\010B\033\n\031emu.grassc" +
+      "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.getDescriptor(),
         });
     internal_static_HomeAvatarRewardEventNotify_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_HomeAvatarRewardEventNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeAvatarRewardEventNotify_descriptor,
-        new java.lang.String[] { "BJNGIKEIDDH", "GLKMELEOCHP", "IsEventTrigger", });
-    emu.grasscutter.net.proto.DLIGBJOALKNOuterClass.getDescriptor();
+        new java.lang.String[] { "RewardEvent", "PendingList", "IsEventTrigger", });
+    emu.grasscutter.net.proto.HomeAvatarRewardEventInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

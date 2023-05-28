@@ -19,40 +19,40 @@ public final class GCGMsgNoDamageSkillResultOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 skill_id = 2;</code>
+     * <code>uint32 HNLABLOMGMJ = 5;</code>
+     * @return The hNLABLOMGMJ.
+     */
+    int getHNLABLOMGMJ();
+
+    /**
+     * <code>uint32 LDOEHIDLFKI = 1;</code>
+     * @return The lDOEHIDLFKI.
+     */
+    int getLDOEHIDLFKI();
+
+    /**
+     * <code>uint32 NDJABBCPLBB = 3;</code>
+     * @return The nDJABBCPLBB.
+     */
+    int getNDJABBCPLBB();
+
+    /**
+     * <code>uint32 NEAHEJCAPAM = 2;</code>
+     * @return The nEAHEJCAPAM.
+     */
+    int getNEAHEJCAPAM();
+
+    /**
+     * <code>uint32 skill_id = 12;</code>
      * @return The skillId.
      */
     int getSkillId();
 
     /**
-     * <code>uint32 DCEIDIOOFAG = 9;</code>
-     * @return The dCEIDIOOFAG.
+     * <code>uint32 OBKMAKCCGBB = 4;</code>
+     * @return The oBKMAKCCGBB.
      */
-    int getDCEIDIOOFAG();
-
-    /**
-     * <code>uint32 PPADCGGEDOO = 15;</code>
-     * @return The pPADCGGEDOO.
-     */
-    int getPPADCGGEDOO();
-
-    /**
-     * <code>uint32 IHNDAGJJMJK = 6;</code>
-     * @return The iHNDAGJJMJK.
-     */
-    int getIHNDAGJJMJK();
-
-    /**
-     * <code>uint32 FMAFLBOMAFK = 13;</code>
-     * @return The fMAFLBOMAFK.
-     */
-    int getFMAFLBOMAFK();
-
-    /**
-     * <code>uint32 JNDNDBNFEHG = 12;</code>
-     * @return The jNDNDBNFEHG.
-     */
-    int getJNDNDBNFEHG();
+    int getOBKMAKCCGBB();
 
     /**
      * <code>repeated .GCGDamageDetail detail_list = 7;</code>
@@ -80,7 +80,7 @@ public final class GCGMsgNoDamageSkillResultOuterClass {
   }
   /**
    * <pre>
-   * Name: NIMIDBNFGIA
+   * Obf: IFEMNNBPEKH
    * </pre>
    *
    * Protobuf type {@code GCGMsgNoDamageSkillResult}
@@ -129,14 +129,29 @@ public final class GCGMsgNoDamageSkillResultOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 8: {
 
-              skillId_ = input.readUInt32();
+              lDOEHIDLFKI_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 16: {
 
-              iHNDAGJJMJK_ = input.readUInt32();
+              nEAHEJCAPAM_ = input.readUInt32();
+              break;
+            }
+            case 24: {
+
+              nDJABBCPLBB_ = input.readUInt32();
+              break;
+            }
+            case 32: {
+
+              oBKMAKCCGBB_ = input.readUInt32();
+              break;
+            }
+            case 40: {
+
+              hNLABLOMGMJ_ = input.readUInt32();
               break;
             }
             case 58: {
@@ -148,24 +163,9 @@ public final class GCGMsgNoDamageSkillResultOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetail.parser(), extensionRegistry));
               break;
             }
-            case 72: {
-
-              dCEIDIOOFAG_ = input.readUInt32();
-              break;
-            }
             case 96: {
 
-              jNDNDBNFEHG_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
-              fMAFLBOMAFK_ = input.readUInt32();
-              break;
-            }
-            case 120: {
-
-              pPADCGGEDOO_ = input.readUInt32();
+              skillId_ = input.readUInt32();
               break;
             }
             default: {
@@ -203,10 +203,54 @@ public final class GCGMsgNoDamageSkillResultOuterClass {
               emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult.class, emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult.Builder.class);
     }
 
-    public static final int SKILL_ID_FIELD_NUMBER = 2;
+    public static final int HNLABLOMGMJ_FIELD_NUMBER = 5;
+    private int hNLABLOMGMJ_;
+    /**
+     * <code>uint32 HNLABLOMGMJ = 5;</code>
+     * @return The hNLABLOMGMJ.
+     */
+    @java.lang.Override
+    public int getHNLABLOMGMJ() {
+      return hNLABLOMGMJ_;
+    }
+
+    public static final int LDOEHIDLFKI_FIELD_NUMBER = 1;
+    private int lDOEHIDLFKI_;
+    /**
+     * <code>uint32 LDOEHIDLFKI = 1;</code>
+     * @return The lDOEHIDLFKI.
+     */
+    @java.lang.Override
+    public int getLDOEHIDLFKI() {
+      return lDOEHIDLFKI_;
+    }
+
+    public static final int NDJABBCPLBB_FIELD_NUMBER = 3;
+    private int nDJABBCPLBB_;
+    /**
+     * <code>uint32 NDJABBCPLBB = 3;</code>
+     * @return The nDJABBCPLBB.
+     */
+    @java.lang.Override
+    public int getNDJABBCPLBB() {
+      return nDJABBCPLBB_;
+    }
+
+    public static final int NEAHEJCAPAM_FIELD_NUMBER = 2;
+    private int nEAHEJCAPAM_;
+    /**
+     * <code>uint32 NEAHEJCAPAM = 2;</code>
+     * @return The nEAHEJCAPAM.
+     */
+    @java.lang.Override
+    public int getNEAHEJCAPAM() {
+      return nEAHEJCAPAM_;
+    }
+
+    public static final int SKILL_ID_FIELD_NUMBER = 12;
     private int skillId_;
     /**
-     * <code>uint32 skill_id = 2;</code>
+     * <code>uint32 skill_id = 12;</code>
      * @return The skillId.
      */
     @java.lang.Override
@@ -214,59 +258,15 @@ public final class GCGMsgNoDamageSkillResultOuterClass {
       return skillId_;
     }
 
-    public static final int DCEIDIOOFAG_FIELD_NUMBER = 9;
-    private int dCEIDIOOFAG_;
+    public static final int OBKMAKCCGBB_FIELD_NUMBER = 4;
+    private int oBKMAKCCGBB_;
     /**
-     * <code>uint32 DCEIDIOOFAG = 9;</code>
-     * @return The dCEIDIOOFAG.
+     * <code>uint32 OBKMAKCCGBB = 4;</code>
+     * @return The oBKMAKCCGBB.
      */
     @java.lang.Override
-    public int getDCEIDIOOFAG() {
-      return dCEIDIOOFAG_;
-    }
-
-    public static final int PPADCGGEDOO_FIELD_NUMBER = 15;
-    private int pPADCGGEDOO_;
-    /**
-     * <code>uint32 PPADCGGEDOO = 15;</code>
-     * @return The pPADCGGEDOO.
-     */
-    @java.lang.Override
-    public int getPPADCGGEDOO() {
-      return pPADCGGEDOO_;
-    }
-
-    public static final int IHNDAGJJMJK_FIELD_NUMBER = 6;
-    private int iHNDAGJJMJK_;
-    /**
-     * <code>uint32 IHNDAGJJMJK = 6;</code>
-     * @return The iHNDAGJJMJK.
-     */
-    @java.lang.Override
-    public int getIHNDAGJJMJK() {
-      return iHNDAGJJMJK_;
-    }
-
-    public static final int FMAFLBOMAFK_FIELD_NUMBER = 13;
-    private int fMAFLBOMAFK_;
-    /**
-     * <code>uint32 FMAFLBOMAFK = 13;</code>
-     * @return The fMAFLBOMAFK.
-     */
-    @java.lang.Override
-    public int getFMAFLBOMAFK() {
-      return fMAFLBOMAFK_;
-    }
-
-    public static final int JNDNDBNFEHG_FIELD_NUMBER = 12;
-    private int jNDNDBNFEHG_;
-    /**
-     * <code>uint32 JNDNDBNFEHG = 12;</code>
-     * @return The jNDNDBNFEHG.
-     */
-    @java.lang.Override
-    public int getJNDNDBNFEHG() {
-      return jNDNDBNFEHG_;
+    public int getOBKMAKCCGBB() {
+      return oBKMAKCCGBB_;
     }
 
     public static final int DETAIL_LIST_FIELD_NUMBER = 7;
@@ -323,26 +323,26 @@ public final class GCGMsgNoDamageSkillResultOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (skillId_ != 0) {
-        output.writeUInt32(2, skillId_);
+      if (lDOEHIDLFKI_ != 0) {
+        output.writeUInt32(1, lDOEHIDLFKI_);
       }
-      if (iHNDAGJJMJK_ != 0) {
-        output.writeUInt32(6, iHNDAGJJMJK_);
+      if (nEAHEJCAPAM_ != 0) {
+        output.writeUInt32(2, nEAHEJCAPAM_);
+      }
+      if (nDJABBCPLBB_ != 0) {
+        output.writeUInt32(3, nDJABBCPLBB_);
+      }
+      if (oBKMAKCCGBB_ != 0) {
+        output.writeUInt32(4, oBKMAKCCGBB_);
+      }
+      if (hNLABLOMGMJ_ != 0) {
+        output.writeUInt32(5, hNLABLOMGMJ_);
       }
       for (int i = 0; i < detailList_.size(); i++) {
         output.writeMessage(7, detailList_.get(i));
       }
-      if (dCEIDIOOFAG_ != 0) {
-        output.writeUInt32(9, dCEIDIOOFAG_);
-      }
-      if (jNDNDBNFEHG_ != 0) {
-        output.writeUInt32(12, jNDNDBNFEHG_);
-      }
-      if (fMAFLBOMAFK_ != 0) {
-        output.writeUInt32(13, fMAFLBOMAFK_);
-      }
-      if (pPADCGGEDOO_ != 0) {
-        output.writeUInt32(15, pPADCGGEDOO_);
+      if (skillId_ != 0) {
+        output.writeUInt32(12, skillId_);
       }
       unknownFields.writeTo(output);
     }
@@ -353,33 +353,33 @@ public final class GCGMsgNoDamageSkillResultOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (skillId_ != 0) {
+      if (lDOEHIDLFKI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, skillId_);
+          .computeUInt32Size(1, lDOEHIDLFKI_);
       }
-      if (iHNDAGJJMJK_ != 0) {
+      if (nEAHEJCAPAM_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, iHNDAGJJMJK_);
+          .computeUInt32Size(2, nEAHEJCAPAM_);
+      }
+      if (nDJABBCPLBB_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, nDJABBCPLBB_);
+      }
+      if (oBKMAKCCGBB_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, oBKMAKCCGBB_);
+      }
+      if (hNLABLOMGMJ_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, hNLABLOMGMJ_);
       }
       for (int i = 0; i < detailList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(7, detailList_.get(i));
       }
-      if (dCEIDIOOFAG_ != 0) {
+      if (skillId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, dCEIDIOOFAG_);
-      }
-      if (jNDNDBNFEHG_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, jNDNDBNFEHG_);
-      }
-      if (fMAFLBOMAFK_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, fMAFLBOMAFK_);
-      }
-      if (pPADCGGEDOO_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, pPADCGGEDOO_);
+          .computeUInt32Size(12, skillId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -396,18 +396,18 @@ public final class GCGMsgNoDamageSkillResultOuterClass {
       }
       emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult other = (emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult) obj;
 
+      if (getHNLABLOMGMJ()
+          != other.getHNLABLOMGMJ()) return false;
+      if (getLDOEHIDLFKI()
+          != other.getLDOEHIDLFKI()) return false;
+      if (getNDJABBCPLBB()
+          != other.getNDJABBCPLBB()) return false;
+      if (getNEAHEJCAPAM()
+          != other.getNEAHEJCAPAM()) return false;
       if (getSkillId()
           != other.getSkillId()) return false;
-      if (getDCEIDIOOFAG()
-          != other.getDCEIDIOOFAG()) return false;
-      if (getPPADCGGEDOO()
-          != other.getPPADCGGEDOO()) return false;
-      if (getIHNDAGJJMJK()
-          != other.getIHNDAGJJMJK()) return false;
-      if (getFMAFLBOMAFK()
-          != other.getFMAFLBOMAFK()) return false;
-      if (getJNDNDBNFEHG()
-          != other.getJNDNDBNFEHG()) return false;
+      if (getOBKMAKCCGBB()
+          != other.getOBKMAKCCGBB()) return false;
       if (!getDetailListList()
           .equals(other.getDetailListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -421,18 +421,18 @@ public final class GCGMsgNoDamageSkillResultOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + HNLABLOMGMJ_FIELD_NUMBER;
+      hash = (53 * hash) + getHNLABLOMGMJ();
+      hash = (37 * hash) + LDOEHIDLFKI_FIELD_NUMBER;
+      hash = (53 * hash) + getLDOEHIDLFKI();
+      hash = (37 * hash) + NDJABBCPLBB_FIELD_NUMBER;
+      hash = (53 * hash) + getNDJABBCPLBB();
+      hash = (37 * hash) + NEAHEJCAPAM_FIELD_NUMBER;
+      hash = (53 * hash) + getNEAHEJCAPAM();
       hash = (37 * hash) + SKILL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getSkillId();
-      hash = (37 * hash) + DCEIDIOOFAG_FIELD_NUMBER;
-      hash = (53 * hash) + getDCEIDIOOFAG();
-      hash = (37 * hash) + PPADCGGEDOO_FIELD_NUMBER;
-      hash = (53 * hash) + getPPADCGGEDOO();
-      hash = (37 * hash) + IHNDAGJJMJK_FIELD_NUMBER;
-      hash = (53 * hash) + getIHNDAGJJMJK();
-      hash = (37 * hash) + FMAFLBOMAFK_FIELD_NUMBER;
-      hash = (53 * hash) + getFMAFLBOMAFK();
-      hash = (37 * hash) + JNDNDBNFEHG_FIELD_NUMBER;
-      hash = (53 * hash) + getJNDNDBNFEHG();
+      hash = (37 * hash) + OBKMAKCCGBB_FIELD_NUMBER;
+      hash = (53 * hash) + getOBKMAKCCGBB();
       if (getDetailListCount() > 0) {
         hash = (37 * hash) + DETAIL_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getDetailListList().hashCode();
@@ -534,7 +534,7 @@ public final class GCGMsgNoDamageSkillResultOuterClass {
     }
     /**
      * <pre>
-     * Name: NIMIDBNFGIA
+     * Obf: IFEMNNBPEKH
      * </pre>
      *
      * Protobuf type {@code GCGMsgNoDamageSkillResult}
@@ -575,17 +575,17 @@ public final class GCGMsgNoDamageSkillResultOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        hNLABLOMGMJ_ = 0;
+
+        lDOEHIDLFKI_ = 0;
+
+        nDJABBCPLBB_ = 0;
+
+        nEAHEJCAPAM_ = 0;
+
         skillId_ = 0;
 
-        dCEIDIOOFAG_ = 0;
-
-        pPADCGGEDOO_ = 0;
-
-        iHNDAGJJMJK_ = 0;
-
-        fMAFLBOMAFK_ = 0;
-
-        jNDNDBNFEHG_ = 0;
+        oBKMAKCCGBB_ = 0;
 
         if (detailListBuilder_ == null) {
           detailList_ = java.util.Collections.emptyList();
@@ -620,12 +620,12 @@ public final class GCGMsgNoDamageSkillResultOuterClass {
       public emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult buildPartial() {
         emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult result = new emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult(this);
         int from_bitField0_ = bitField0_;
+        result.hNLABLOMGMJ_ = hNLABLOMGMJ_;
+        result.lDOEHIDLFKI_ = lDOEHIDLFKI_;
+        result.nDJABBCPLBB_ = nDJABBCPLBB_;
+        result.nEAHEJCAPAM_ = nEAHEJCAPAM_;
         result.skillId_ = skillId_;
-        result.dCEIDIOOFAG_ = dCEIDIOOFAG_;
-        result.pPADCGGEDOO_ = pPADCGGEDOO_;
-        result.iHNDAGJJMJK_ = iHNDAGJJMJK_;
-        result.fMAFLBOMAFK_ = fMAFLBOMAFK_;
-        result.jNDNDBNFEHG_ = jNDNDBNFEHG_;
+        result.oBKMAKCCGBB_ = oBKMAKCCGBB_;
         if (detailListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             detailList_ = java.util.Collections.unmodifiableList(detailList_);
@@ -683,23 +683,23 @@ public final class GCGMsgNoDamageSkillResultOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult other) {
         if (other == emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult.getDefaultInstance()) return this;
+        if (other.getHNLABLOMGMJ() != 0) {
+          setHNLABLOMGMJ(other.getHNLABLOMGMJ());
+        }
+        if (other.getLDOEHIDLFKI() != 0) {
+          setLDOEHIDLFKI(other.getLDOEHIDLFKI());
+        }
+        if (other.getNDJABBCPLBB() != 0) {
+          setNDJABBCPLBB(other.getNDJABBCPLBB());
+        }
+        if (other.getNEAHEJCAPAM() != 0) {
+          setNEAHEJCAPAM(other.getNEAHEJCAPAM());
+        }
         if (other.getSkillId() != 0) {
           setSkillId(other.getSkillId());
         }
-        if (other.getDCEIDIOOFAG() != 0) {
-          setDCEIDIOOFAG(other.getDCEIDIOOFAG());
-        }
-        if (other.getPPADCGGEDOO() != 0) {
-          setPPADCGGEDOO(other.getPPADCGGEDOO());
-        }
-        if (other.getIHNDAGJJMJK() != 0) {
-          setIHNDAGJJMJK(other.getIHNDAGJJMJK());
-        }
-        if (other.getFMAFLBOMAFK() != 0) {
-          setFMAFLBOMAFK(other.getFMAFLBOMAFK());
-        }
-        if (other.getJNDNDBNFEHG() != 0) {
-          setJNDNDBNFEHG(other.getJNDNDBNFEHG());
+        if (other.getOBKMAKCCGBB() != 0) {
+          setOBKMAKCCGBB(other.getOBKMAKCCGBB());
         }
         if (detailListBuilder_ == null) {
           if (!other.detailList_.isEmpty()) {
@@ -757,9 +757,133 @@ public final class GCGMsgNoDamageSkillResultOuterClass {
       }
       private int bitField0_;
 
+      private int hNLABLOMGMJ_ ;
+      /**
+       * <code>uint32 HNLABLOMGMJ = 5;</code>
+       * @return The hNLABLOMGMJ.
+       */
+      @java.lang.Override
+      public int getHNLABLOMGMJ() {
+        return hNLABLOMGMJ_;
+      }
+      /**
+       * <code>uint32 HNLABLOMGMJ = 5;</code>
+       * @param value The hNLABLOMGMJ to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHNLABLOMGMJ(int value) {
+        
+        hNLABLOMGMJ_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 HNLABLOMGMJ = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHNLABLOMGMJ() {
+        
+        hNLABLOMGMJ_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int lDOEHIDLFKI_ ;
+      /**
+       * <code>uint32 LDOEHIDLFKI = 1;</code>
+       * @return The lDOEHIDLFKI.
+       */
+      @java.lang.Override
+      public int getLDOEHIDLFKI() {
+        return lDOEHIDLFKI_;
+      }
+      /**
+       * <code>uint32 LDOEHIDLFKI = 1;</code>
+       * @param value The lDOEHIDLFKI to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLDOEHIDLFKI(int value) {
+        
+        lDOEHIDLFKI_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 LDOEHIDLFKI = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLDOEHIDLFKI() {
+        
+        lDOEHIDLFKI_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int nDJABBCPLBB_ ;
+      /**
+       * <code>uint32 NDJABBCPLBB = 3;</code>
+       * @return The nDJABBCPLBB.
+       */
+      @java.lang.Override
+      public int getNDJABBCPLBB() {
+        return nDJABBCPLBB_;
+      }
+      /**
+       * <code>uint32 NDJABBCPLBB = 3;</code>
+       * @param value The nDJABBCPLBB to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNDJABBCPLBB(int value) {
+        
+        nDJABBCPLBB_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 NDJABBCPLBB = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNDJABBCPLBB() {
+        
+        nDJABBCPLBB_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int nEAHEJCAPAM_ ;
+      /**
+       * <code>uint32 NEAHEJCAPAM = 2;</code>
+       * @return The nEAHEJCAPAM.
+       */
+      @java.lang.Override
+      public int getNEAHEJCAPAM() {
+        return nEAHEJCAPAM_;
+      }
+      /**
+       * <code>uint32 NEAHEJCAPAM = 2;</code>
+       * @param value The nEAHEJCAPAM to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNEAHEJCAPAM(int value) {
+        
+        nEAHEJCAPAM_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 NEAHEJCAPAM = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNEAHEJCAPAM() {
+        
+        nEAHEJCAPAM_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int skillId_ ;
       /**
-       * <code>uint32 skill_id = 2;</code>
+       * <code>uint32 skill_id = 12;</code>
        * @return The skillId.
        */
       @java.lang.Override
@@ -767,7 +891,7 @@ public final class GCGMsgNoDamageSkillResultOuterClass {
         return skillId_;
       }
       /**
-       * <code>uint32 skill_id = 2;</code>
+       * <code>uint32 skill_id = 12;</code>
        * @param value The skillId to set.
        * @return This builder for chaining.
        */
@@ -778,7 +902,7 @@ public final class GCGMsgNoDamageSkillResultOuterClass {
         return this;
       }
       /**
-       * <code>uint32 skill_id = 2;</code>
+       * <code>uint32 skill_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearSkillId() {
@@ -788,157 +912,33 @@ public final class GCGMsgNoDamageSkillResultOuterClass {
         return this;
       }
 
-      private int dCEIDIOOFAG_ ;
+      private int oBKMAKCCGBB_ ;
       /**
-       * <code>uint32 DCEIDIOOFAG = 9;</code>
-       * @return The dCEIDIOOFAG.
+       * <code>uint32 OBKMAKCCGBB = 4;</code>
+       * @return The oBKMAKCCGBB.
        */
       @java.lang.Override
-      public int getDCEIDIOOFAG() {
-        return dCEIDIOOFAG_;
+      public int getOBKMAKCCGBB() {
+        return oBKMAKCCGBB_;
       }
       /**
-       * <code>uint32 DCEIDIOOFAG = 9;</code>
-       * @param value The dCEIDIOOFAG to set.
+       * <code>uint32 OBKMAKCCGBB = 4;</code>
+       * @param value The oBKMAKCCGBB to set.
        * @return This builder for chaining.
        */
-      public Builder setDCEIDIOOFAG(int value) {
+      public Builder setOBKMAKCCGBB(int value) {
         
-        dCEIDIOOFAG_ = value;
+        oBKMAKCCGBB_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 DCEIDIOOFAG = 9;</code>
+       * <code>uint32 OBKMAKCCGBB = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDCEIDIOOFAG() {
+      public Builder clearOBKMAKCCGBB() {
         
-        dCEIDIOOFAG_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int pPADCGGEDOO_ ;
-      /**
-       * <code>uint32 PPADCGGEDOO = 15;</code>
-       * @return The pPADCGGEDOO.
-       */
-      @java.lang.Override
-      public int getPPADCGGEDOO() {
-        return pPADCGGEDOO_;
-      }
-      /**
-       * <code>uint32 PPADCGGEDOO = 15;</code>
-       * @param value The pPADCGGEDOO to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPPADCGGEDOO(int value) {
-        
-        pPADCGGEDOO_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 PPADCGGEDOO = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPPADCGGEDOO() {
-        
-        pPADCGGEDOO_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int iHNDAGJJMJK_ ;
-      /**
-       * <code>uint32 IHNDAGJJMJK = 6;</code>
-       * @return The iHNDAGJJMJK.
-       */
-      @java.lang.Override
-      public int getIHNDAGJJMJK() {
-        return iHNDAGJJMJK_;
-      }
-      /**
-       * <code>uint32 IHNDAGJJMJK = 6;</code>
-       * @param value The iHNDAGJJMJK to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIHNDAGJJMJK(int value) {
-        
-        iHNDAGJJMJK_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 IHNDAGJJMJK = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIHNDAGJJMJK() {
-        
-        iHNDAGJJMJK_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int fMAFLBOMAFK_ ;
-      /**
-       * <code>uint32 FMAFLBOMAFK = 13;</code>
-       * @return The fMAFLBOMAFK.
-       */
-      @java.lang.Override
-      public int getFMAFLBOMAFK() {
-        return fMAFLBOMAFK_;
-      }
-      /**
-       * <code>uint32 FMAFLBOMAFK = 13;</code>
-       * @param value The fMAFLBOMAFK to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFMAFLBOMAFK(int value) {
-        
-        fMAFLBOMAFK_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 FMAFLBOMAFK = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFMAFLBOMAFK() {
-        
-        fMAFLBOMAFK_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int jNDNDBNFEHG_ ;
-      /**
-       * <code>uint32 JNDNDBNFEHG = 12;</code>
-       * @return The jNDNDBNFEHG.
-       */
-      @java.lang.Override
-      public int getJNDNDBNFEHG() {
-        return jNDNDBNFEHG_;
-      }
-      /**
-       * <code>uint32 JNDNDBNFEHG = 12;</code>
-       * @param value The jNDNDBNFEHG to set.
-       * @return This builder for chaining.
-       */
-      public Builder setJNDNDBNFEHG(int value) {
-        
-        jNDNDBNFEHG_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 JNDNDBNFEHG = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearJNDNDBNFEHG() {
-        
-        jNDNDBNFEHG_ = 0;
+        oBKMAKCCGBB_ = 0;
         onChanged();
         return this;
       }
@@ -1251,10 +1251,10 @@ public final class GCGMsgNoDamageSkillResultOuterClass {
     java.lang.String[] descriptorData = {
       "\n\037GCGMsgNoDamageSkillResult.proto\032\025GCGDa" +
       "mageDetail.proto\"\275\001\n\031GCGMsgNoDamageSkill" +
-      "Result\022\020\n\010skill_id\030\002 \001(\r\022\023\n\013DCEIDIOOFAG\030" +
-      "\t \001(\r\022\023\n\013PPADCGGEDOO\030\017 \001(\r\022\023\n\013IHNDAGJJMJ" +
-      "K\030\006 \001(\r\022\023\n\013FMAFLBOMAFK\030\r \001(\r\022\023\n\013JNDNDBNF" +
-      "EHG\030\014 \001(\r\022%\n\013detail_list\030\007 \003(\0132\020.GCGDama" +
+      "Result\022\023\n\013HNLABLOMGMJ\030\005 \001(\r\022\023\n\013LDOEHIDLF" +
+      "KI\030\001 \001(\r\022\023\n\013NDJABBCPLBB\030\003 \001(\r\022\023\n\013NEAHEJC" +
+      "APAM\030\002 \001(\r\022\020\n\010skill_id\030\014 \001(\r\022\023\n\013OBKMAKCC" +
+      "GBB\030\004 \001(\r\022%\n\013detail_list\030\007 \003(\0132\020.GCGDama" +
       "geDetailB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
@@ -1268,7 +1268,7 @@ public final class GCGMsgNoDamageSkillResultOuterClass {
     internal_static_GCGMsgNoDamageSkillResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGMsgNoDamageSkillResult_descriptor,
-        new java.lang.String[] { "SkillId", "DCEIDIOOFAG", "PPADCGGEDOO", "IHNDAGJJMJK", "FMAFLBOMAFK", "JNDNDBNFEHG", "DetailList", });
+        new java.lang.String[] { "HNLABLOMGMJ", "LDOEHIDLFKI", "NDJABBCPLBB", "NEAHEJCAPAM", "SkillId", "OBKMAKCCGBB", "DetailList", });
     emu.grasscutter.net.proto.GCGDamageDetailOuterClass.getDescriptor();
   }
 

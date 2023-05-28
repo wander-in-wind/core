@@ -34,24 +34,24 @@ public final class WinterCampStageInfoChangeNotifyOuterClass {
     emu.grasscutter.net.proto.WinterCampStageInfoOuterClass.WinterCampStageInfoOrBuilder getBattleInfoOrBuilder();
 
     /**
-     * <code>.WinterCampStageInfo explore_info = 1;</code>
+     * <code>.WinterCampStageInfo explore_info = 4;</code>
      * @return Whether the exploreInfo field is set.
      */
     boolean hasExploreInfo();
     /**
-     * <code>.WinterCampStageInfo explore_info = 1;</code>
+     * <code>.WinterCampStageInfo explore_info = 4;</code>
      * @return The exploreInfo.
      */
     emu.grasscutter.net.proto.WinterCampStageInfoOuterClass.WinterCampStageInfo getExploreInfo();
     /**
-     * <code>.WinterCampStageInfo explore_info = 1;</code>
+     * <code>.WinterCampStageInfo explore_info = 4;</code>
      */
     emu.grasscutter.net.proto.WinterCampStageInfoOuterClass.WinterCampStageInfoOrBuilder getExploreInfoOrBuilder();
   }
   /**
    * <pre>
-   * Name: DCAJHAFCEHL
-   * CmdId: 8531
+   * CmdId: 8463
+   * Obf: IHFPJIAKIEJ
    * </pre>
    *
    * Protobuf type {@code WinterCampStageInfoChangeNotify}
@@ -98,7 +98,7 @@ public final class WinterCampStageInfoChangeNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 34: {
               emu.grasscutter.net.proto.WinterCampStageInfoOuterClass.WinterCampStageInfo.Builder subBuilder = null;
               if (exploreInfo_ != null) {
                 subBuilder = exploreInfo_.toBuilder();
@@ -182,10 +182,10 @@ public final class WinterCampStageInfoChangeNotifyOuterClass {
       return getBattleInfo();
     }
 
-    public static final int EXPLORE_INFO_FIELD_NUMBER = 1;
+    public static final int EXPLORE_INFO_FIELD_NUMBER = 4;
     private emu.grasscutter.net.proto.WinterCampStageInfoOuterClass.WinterCampStageInfo exploreInfo_;
     /**
-     * <code>.WinterCampStageInfo explore_info = 1;</code>
+     * <code>.WinterCampStageInfo explore_info = 4;</code>
      * @return Whether the exploreInfo field is set.
      */
     @java.lang.Override
@@ -193,7 +193,7 @@ public final class WinterCampStageInfoChangeNotifyOuterClass {
       return exploreInfo_ != null;
     }
     /**
-     * <code>.WinterCampStageInfo explore_info = 1;</code>
+     * <code>.WinterCampStageInfo explore_info = 4;</code>
      * @return The exploreInfo.
      */
     @java.lang.Override
@@ -201,7 +201,7 @@ public final class WinterCampStageInfoChangeNotifyOuterClass {
       return exploreInfo_ == null ? emu.grasscutter.net.proto.WinterCampStageInfoOuterClass.WinterCampStageInfo.getDefaultInstance() : exploreInfo_;
     }
     /**
-     * <code>.WinterCampStageInfo explore_info = 1;</code>
+     * <code>.WinterCampStageInfo explore_info = 4;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.WinterCampStageInfoOuterClass.WinterCampStageInfoOrBuilder getExploreInfoOrBuilder() {
@@ -223,7 +223,7 @@ public final class WinterCampStageInfoChangeNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (exploreInfo_ != null) {
-        output.writeMessage(1, getExploreInfo());
+        output.writeMessage(4, getExploreInfo());
       }
       if (battleInfo_ != null) {
         output.writeMessage(8, getBattleInfo());
@@ -239,7 +239,7 @@ public final class WinterCampStageInfoChangeNotifyOuterClass {
       size = 0;
       if (exploreInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, getExploreInfo());
+          .computeMessageSize(4, getExploreInfo());
       }
       if (battleInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
@@ -386,8 +386,8 @@ public final class WinterCampStageInfoChangeNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: DCAJHAFCEHL
-     * CmdId: 8531
+     * CmdId: 8463
+     * Obf: IHFPJIAKIEJ
      * </pre>
      *
      * Protobuf type {@code WinterCampStageInfoChangeNotify}
@@ -681,14 +681,14 @@ public final class WinterCampStageInfoChangeNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.WinterCampStageInfoOuterClass.WinterCampStageInfo, emu.grasscutter.net.proto.WinterCampStageInfoOuterClass.WinterCampStageInfo.Builder, emu.grasscutter.net.proto.WinterCampStageInfoOuterClass.WinterCampStageInfoOrBuilder> exploreInfoBuilder_;
       /**
-       * <code>.WinterCampStageInfo explore_info = 1;</code>
+       * <code>.WinterCampStageInfo explore_info = 4;</code>
        * @return Whether the exploreInfo field is set.
        */
       public boolean hasExploreInfo() {
         return exploreInfoBuilder_ != null || exploreInfo_ != null;
       }
       /**
-       * <code>.WinterCampStageInfo explore_info = 1;</code>
+       * <code>.WinterCampStageInfo explore_info = 4;</code>
        * @return The exploreInfo.
        */
       public emu.grasscutter.net.proto.WinterCampStageInfoOuterClass.WinterCampStageInfo getExploreInfo() {
@@ -699,7 +699,7 @@ public final class WinterCampStageInfoChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>.WinterCampStageInfo explore_info = 1;</code>
+       * <code>.WinterCampStageInfo explore_info = 4;</code>
        */
       public Builder setExploreInfo(emu.grasscutter.net.proto.WinterCampStageInfoOuterClass.WinterCampStageInfo value) {
         if (exploreInfoBuilder_ == null) {
@@ -715,7 +715,7 @@ public final class WinterCampStageInfoChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.WinterCampStageInfo explore_info = 1;</code>
+       * <code>.WinterCampStageInfo explore_info = 4;</code>
        */
       public Builder setExploreInfo(
           emu.grasscutter.net.proto.WinterCampStageInfoOuterClass.WinterCampStageInfo.Builder builderForValue) {
@@ -729,7 +729,7 @@ public final class WinterCampStageInfoChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.WinterCampStageInfo explore_info = 1;</code>
+       * <code>.WinterCampStageInfo explore_info = 4;</code>
        */
       public Builder mergeExploreInfo(emu.grasscutter.net.proto.WinterCampStageInfoOuterClass.WinterCampStageInfo value) {
         if (exploreInfoBuilder_ == null) {
@@ -747,7 +747,7 @@ public final class WinterCampStageInfoChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.WinterCampStageInfo explore_info = 1;</code>
+       * <code>.WinterCampStageInfo explore_info = 4;</code>
        */
       public Builder clearExploreInfo() {
         if (exploreInfoBuilder_ == null) {
@@ -761,7 +761,7 @@ public final class WinterCampStageInfoChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.WinterCampStageInfo explore_info = 1;</code>
+       * <code>.WinterCampStageInfo explore_info = 4;</code>
        */
       public emu.grasscutter.net.proto.WinterCampStageInfoOuterClass.WinterCampStageInfo.Builder getExploreInfoBuilder() {
         
@@ -769,7 +769,7 @@ public final class WinterCampStageInfoChangeNotifyOuterClass {
         return getExploreInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.WinterCampStageInfo explore_info = 1;</code>
+       * <code>.WinterCampStageInfo explore_info = 4;</code>
        */
       public emu.grasscutter.net.proto.WinterCampStageInfoOuterClass.WinterCampStageInfoOrBuilder getExploreInfoOrBuilder() {
         if (exploreInfoBuilder_ != null) {
@@ -780,7 +780,7 @@ public final class WinterCampStageInfoChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>.WinterCampStageInfo explore_info = 1;</code>
+       * <code>.WinterCampStageInfo explore_info = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.WinterCampStageInfoOuterClass.WinterCampStageInfo, emu.grasscutter.net.proto.WinterCampStageInfoOuterClass.WinterCampStageInfo.Builder, emu.grasscutter.net.proto.WinterCampStageInfoOuterClass.WinterCampStageInfoOrBuilder> 
@@ -866,7 +866,7 @@ public final class WinterCampStageInfoChangeNotifyOuterClass {
       "\031WinterCampStageInfo.proto\"x\n\037WinterCamp" +
       "StageInfoChangeNotify\022)\n\013battle_info\030\010 \001" +
       "(\0132\024.WinterCampStageInfo\022*\n\014explore_info" +
-      "\030\001 \001(\0132\024.WinterCampStageInfoB\033\n\031emu.gras" +
+      "\030\004 \001(\0132\024.WinterCampStageInfoB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

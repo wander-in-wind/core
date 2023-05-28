@@ -19,27 +19,27 @@ public final class EnterTrialAvatarActivityDungeonReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 enter_point_id = 15;</code>
-     * @return The enterPointId.
-     */
-    int getEnterPointId();
-
-    /**
-     * <code>uint32 activity_id = 7;</code>
+     * <code>uint32 activity_id = 10;</code>
      * @return The activityId.
      */
     int getActivityId();
 
     /**
-     * <code>uint32 trial_avatar_index_id = 13;</code>
+     * <code>uint32 trial_avatar_index_id = 3;</code>
      * @return The trialAvatarIndexId.
      */
     int getTrialAvatarIndexId();
+
+    /**
+     * <code>uint32 enter_point_id = 8;</code>
+     * @return The enterPointId.
+     */
+    int getEnterPointId();
   }
   /**
    * <pre>
-   * Name: BODNCMMJHFA
-   * CmdId: 2084
+   * CmdId: 2146
+   * Obf: IMDAGCFCHAK
    * </pre>
    *
    * Protobuf type {@code EnterTrialAvatarActivityDungeonReq}
@@ -86,19 +86,19 @@ public final class EnterTrialAvatarActivityDungeonReqOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
-
-              activityId_ = input.readUInt32();
-              break;
-            }
-            case 104: {
+            case 24: {
 
               trialAvatarIndexId_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 64: {
 
               enterPointId_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
+              activityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -133,21 +133,10 @@ public final class EnterTrialAvatarActivityDungeonReqOuterClass {
               emu.grasscutter.net.proto.EnterTrialAvatarActivityDungeonReqOuterClass.EnterTrialAvatarActivityDungeonReq.class, emu.grasscutter.net.proto.EnterTrialAvatarActivityDungeonReqOuterClass.EnterTrialAvatarActivityDungeonReq.Builder.class);
     }
 
-    public static final int ENTER_POINT_ID_FIELD_NUMBER = 15;
-    private int enterPointId_;
-    /**
-     * <code>uint32 enter_point_id = 15;</code>
-     * @return The enterPointId.
-     */
-    @java.lang.Override
-    public int getEnterPointId() {
-      return enterPointId_;
-    }
-
-    public static final int ACTIVITY_ID_FIELD_NUMBER = 7;
+    public static final int ACTIVITY_ID_FIELD_NUMBER = 10;
     private int activityId_;
     /**
-     * <code>uint32 activity_id = 7;</code>
+     * <code>uint32 activity_id = 10;</code>
      * @return The activityId.
      */
     @java.lang.Override
@@ -155,15 +144,26 @@ public final class EnterTrialAvatarActivityDungeonReqOuterClass {
       return activityId_;
     }
 
-    public static final int TRIAL_AVATAR_INDEX_ID_FIELD_NUMBER = 13;
+    public static final int TRIAL_AVATAR_INDEX_ID_FIELD_NUMBER = 3;
     private int trialAvatarIndexId_;
     /**
-     * <code>uint32 trial_avatar_index_id = 13;</code>
+     * <code>uint32 trial_avatar_index_id = 3;</code>
      * @return The trialAvatarIndexId.
      */
     @java.lang.Override
     public int getTrialAvatarIndexId() {
       return trialAvatarIndexId_;
+    }
+
+    public static final int ENTER_POINT_ID_FIELD_NUMBER = 8;
+    private int enterPointId_;
+    /**
+     * <code>uint32 enter_point_id = 8;</code>
+     * @return The enterPointId.
+     */
+    @java.lang.Override
+    public int getEnterPointId() {
+      return enterPointId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -180,14 +180,14 @@ public final class EnterTrialAvatarActivityDungeonReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (activityId_ != 0) {
-        output.writeUInt32(7, activityId_);
-      }
       if (trialAvatarIndexId_ != 0) {
-        output.writeUInt32(13, trialAvatarIndexId_);
+        output.writeUInt32(3, trialAvatarIndexId_);
       }
       if (enterPointId_ != 0) {
-        output.writeUInt32(15, enterPointId_);
+        output.writeUInt32(8, enterPointId_);
+      }
+      if (activityId_ != 0) {
+        output.writeUInt32(10, activityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +198,17 @@ public final class EnterTrialAvatarActivityDungeonReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (activityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, activityId_);
-      }
       if (trialAvatarIndexId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, trialAvatarIndexId_);
+          .computeUInt32Size(3, trialAvatarIndexId_);
       }
       if (enterPointId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, enterPointId_);
+          .computeUInt32Size(8, enterPointId_);
+      }
+      if (activityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, activityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -225,12 +225,12 @@ public final class EnterTrialAvatarActivityDungeonReqOuterClass {
       }
       emu.grasscutter.net.proto.EnterTrialAvatarActivityDungeonReqOuterClass.EnterTrialAvatarActivityDungeonReq other = (emu.grasscutter.net.proto.EnterTrialAvatarActivityDungeonReqOuterClass.EnterTrialAvatarActivityDungeonReq) obj;
 
-      if (getEnterPointId()
-          != other.getEnterPointId()) return false;
       if (getActivityId()
           != other.getActivityId()) return false;
       if (getTrialAvatarIndexId()
           != other.getTrialAvatarIndexId()) return false;
+      if (getEnterPointId()
+          != other.getEnterPointId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -242,12 +242,12 @@ public final class EnterTrialAvatarActivityDungeonReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ENTER_POINT_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getEnterPointId();
       hash = (37 * hash) + ACTIVITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getActivityId();
       hash = (37 * hash) + TRIAL_AVATAR_INDEX_ID_FIELD_NUMBER;
       hash = (53 * hash) + getTrialAvatarIndexId();
+      hash = (37 * hash) + ENTER_POINT_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getEnterPointId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -345,8 +345,8 @@ public final class EnterTrialAvatarActivityDungeonReqOuterClass {
     }
     /**
      * <pre>
-     * Name: BODNCMMJHFA
-     * CmdId: 2084
+     * CmdId: 2146
+     * Obf: IMDAGCFCHAK
      * </pre>
      *
      * Protobuf type {@code EnterTrialAvatarActivityDungeonReq}
@@ -386,11 +386,11 @@ public final class EnterTrialAvatarActivityDungeonReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        enterPointId_ = 0;
-
         activityId_ = 0;
 
         trialAvatarIndexId_ = 0;
+
+        enterPointId_ = 0;
 
         return this;
       }
@@ -418,9 +418,9 @@ public final class EnterTrialAvatarActivityDungeonReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EnterTrialAvatarActivityDungeonReqOuterClass.EnterTrialAvatarActivityDungeonReq buildPartial() {
         emu.grasscutter.net.proto.EnterTrialAvatarActivityDungeonReqOuterClass.EnterTrialAvatarActivityDungeonReq result = new emu.grasscutter.net.proto.EnterTrialAvatarActivityDungeonReqOuterClass.EnterTrialAvatarActivityDungeonReq(this);
-        result.enterPointId_ = enterPointId_;
         result.activityId_ = activityId_;
         result.trialAvatarIndexId_ = trialAvatarIndexId_;
+        result.enterPointId_ = enterPointId_;
         onBuilt();
         return result;
       }
@@ -469,14 +469,14 @@ public final class EnterTrialAvatarActivityDungeonReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EnterTrialAvatarActivityDungeonReqOuterClass.EnterTrialAvatarActivityDungeonReq other) {
         if (other == emu.grasscutter.net.proto.EnterTrialAvatarActivityDungeonReqOuterClass.EnterTrialAvatarActivityDungeonReq.getDefaultInstance()) return this;
-        if (other.getEnterPointId() != 0) {
-          setEnterPointId(other.getEnterPointId());
-        }
         if (other.getActivityId() != 0) {
           setActivityId(other.getActivityId());
         }
         if (other.getTrialAvatarIndexId() != 0) {
           setTrialAvatarIndexId(other.getTrialAvatarIndexId());
+        }
+        if (other.getEnterPointId() != 0) {
+          setEnterPointId(other.getEnterPointId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -507,40 +507,9 @@ public final class EnterTrialAvatarActivityDungeonReqOuterClass {
         return this;
       }
 
-      private int enterPointId_ ;
-      /**
-       * <code>uint32 enter_point_id = 15;</code>
-       * @return The enterPointId.
-       */
-      @java.lang.Override
-      public int getEnterPointId() {
-        return enterPointId_;
-      }
-      /**
-       * <code>uint32 enter_point_id = 15;</code>
-       * @param value The enterPointId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEnterPointId(int value) {
-        
-        enterPointId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 enter_point_id = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEnterPointId() {
-        
-        enterPointId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int activityId_ ;
       /**
-       * <code>uint32 activity_id = 7;</code>
+       * <code>uint32 activity_id = 10;</code>
        * @return The activityId.
        */
       @java.lang.Override
@@ -548,7 +517,7 @@ public final class EnterTrialAvatarActivityDungeonReqOuterClass {
         return activityId_;
       }
       /**
-       * <code>uint32 activity_id = 7;</code>
+       * <code>uint32 activity_id = 10;</code>
        * @param value The activityId to set.
        * @return This builder for chaining.
        */
@@ -559,7 +528,7 @@ public final class EnterTrialAvatarActivityDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 activity_id = 7;</code>
+       * <code>uint32 activity_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearActivityId() {
@@ -571,7 +540,7 @@ public final class EnterTrialAvatarActivityDungeonReqOuterClass {
 
       private int trialAvatarIndexId_ ;
       /**
-       * <code>uint32 trial_avatar_index_id = 13;</code>
+       * <code>uint32 trial_avatar_index_id = 3;</code>
        * @return The trialAvatarIndexId.
        */
       @java.lang.Override
@@ -579,7 +548,7 @@ public final class EnterTrialAvatarActivityDungeonReqOuterClass {
         return trialAvatarIndexId_;
       }
       /**
-       * <code>uint32 trial_avatar_index_id = 13;</code>
+       * <code>uint32 trial_avatar_index_id = 3;</code>
        * @param value The trialAvatarIndexId to set.
        * @return This builder for chaining.
        */
@@ -590,12 +559,43 @@ public final class EnterTrialAvatarActivityDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 trial_avatar_index_id = 13;</code>
+       * <code>uint32 trial_avatar_index_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearTrialAvatarIndexId() {
         
         trialAvatarIndexId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int enterPointId_ ;
+      /**
+       * <code>uint32 enter_point_id = 8;</code>
+       * @return The enterPointId.
+       */
+      @java.lang.Override
+      public int getEnterPointId() {
+        return enterPointId_;
+      }
+      /**
+       * <code>uint32 enter_point_id = 8;</code>
+       * @param value The enterPointId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEnterPointId(int value) {
+        
+        enterPointId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 enter_point_id = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEnterPointId() {
+        
+        enterPointId_ = 0;
         onChanged();
         return this;
       }
@@ -668,8 +668,8 @@ public final class EnterTrialAvatarActivityDungeonReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n(EnterTrialAvatarActivityDungeonReq.pro" +
       "to\"p\n\"EnterTrialAvatarActivityDungeonReq" +
-      "\022\026\n\016enter_point_id\030\017 \001(\r\022\023\n\013activity_id\030" +
-      "\007 \001(\r\022\035\n\025trial_avatar_index_id\030\r \001(\rB\033\n\031" +
+      "\022\023\n\013activity_id\030\n \001(\r\022\035\n\025trial_avatar_in" +
+      "dex_id\030\003 \001(\r\022\026\n\016enter_point_id\030\010 \001(\rB\033\n\031" +
       "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -681,7 +681,7 @@ public final class EnterTrialAvatarActivityDungeonReqOuterClass {
     internal_static_EnterTrialAvatarActivityDungeonReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EnterTrialAvatarActivityDungeonReq_descriptor,
-        new java.lang.String[] { "EnterPointId", "ActivityId", "TrialAvatarIndexId", });
+        new java.lang.String[] { "ActivityId", "TrialAvatarIndexId", "EnterPointId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

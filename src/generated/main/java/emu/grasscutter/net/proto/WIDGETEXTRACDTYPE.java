@@ -16,7 +16,7 @@ public final class WIDGETEXTRACDTYPE {
   }
   /**
    * <pre>
-   * Name: PDLBLABILBO
+   * Obf: NEIEMOHMLEA
    * </pre>
    *
    * Protobuf enum {@code WIDGET_EXTRA_CD_TYPE}

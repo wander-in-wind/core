@@ -44,8 +44,8 @@ public final class CreateMassiveEntityNotifyOuterClass {
   }
   /**
    * <pre>
-   * Name: DBEJKJJKNPH
-   * CmdId: 340
+   * CmdId: 353
+   * Obf: AHGAIMBKGGG
    * </pre>
    *
    * Protobuf type {@code CreateMassiveEntityNotify}
@@ -337,8 +337,8 @@ public final class CreateMassiveEntityNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: DBEJKJJKNPH
-     * CmdId: 340
+     * CmdId: 353
+     * Obf: AHGAIMBKGGG
      * </pre>
      *
      * Protobuf type {@code CreateMassiveEntityNotify}

@@ -50,7 +50,7 @@ public final class PlaceInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: EHEAJFFDMMD
+   * Obf: FGPAAKCNONO
    * </pre>
    *
    * Protobuf type {@code PlaceInfo}
@@ -385,7 +385,7 @@ public final class PlaceInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: EHEAJFFDMMD
+     * Obf: FGPAAKCNONO
      * </pre>
      *
      * Protobuf type {@code PlaceInfo}

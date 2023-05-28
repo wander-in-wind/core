@@ -19,15 +19,15 @@ public final class HomePriorCheckNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 end_time = 5;</code>
+     * <code>fixed32 end_time = 9;</code>
      * @return The endTime.
      */
     int getEndTime();
   }
   /**
    * <pre>
-   * Name: PCNGOIBNHAH
-   * CmdId: 4872
+   * CmdId: 4568
+   * Obf: KMHIFHPLAHH
    * </pre>
    *
    * Protobuf type {@code HomePriorCheckNotify}
@@ -74,9 +74,9 @@ public final class HomePriorCheckNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 77: {
 
-              endTime_ = input.readUInt32();
+              endTime_ = input.readFixed32();
               break;
             }
             default: {
@@ -111,10 +111,10 @@ public final class HomePriorCheckNotifyOuterClass {
               emu.grasscutter.net.proto.HomePriorCheckNotifyOuterClass.HomePriorCheckNotify.class, emu.grasscutter.net.proto.HomePriorCheckNotifyOuterClass.HomePriorCheckNotify.Builder.class);
     }
 
-    public static final int END_TIME_FIELD_NUMBER = 5;
+    public static final int END_TIME_FIELD_NUMBER = 9;
     private int endTime_;
     /**
-     * <code>uint32 end_time = 5;</code>
+     * <code>fixed32 end_time = 9;</code>
      * @return The endTime.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class HomePriorCheckNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (endTime_ != 0) {
-        output.writeUInt32(5, endTime_);
+        output.writeFixed32(9, endTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class HomePriorCheckNotifyOuterClass {
       size = 0;
       if (endTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, endTime_);
+          .computeFixed32Size(9, endTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class HomePriorCheckNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: PCNGOIBNHAH
-     * CmdId: 4872
+     * CmdId: 4568
+     * Obf: KMHIFHPLAHH
      * </pre>
      *
      * Protobuf type {@code HomePriorCheckNotify}
@@ -431,7 +431,7 @@ public final class HomePriorCheckNotifyOuterClass {
 
       private int endTime_ ;
       /**
-       * <code>uint32 end_time = 5;</code>
+       * <code>fixed32 end_time = 9;</code>
        * @return The endTime.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class HomePriorCheckNotifyOuterClass {
         return endTime_;
       }
       /**
-       * <code>uint32 end_time = 5;</code>
+       * <code>fixed32 end_time = 9;</code>
        * @param value The endTime to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class HomePriorCheckNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 end_time = 5;</code>
+       * <code>fixed32 end_time = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearEndTime() {
@@ -527,7 +527,7 @@ public final class HomePriorCheckNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032HomePriorCheckNotify.proto\"(\n\024HomePrio" +
-      "rCheckNotify\022\020\n\010end_time\030\005 \001(\rB\033\n\031emu.gr" +
+      "rCheckNotify\022\020\n\010end_time\030\t \001(\007B\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

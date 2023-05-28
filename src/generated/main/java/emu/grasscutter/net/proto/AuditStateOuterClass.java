@@ -16,7 +16,7 @@ public final class AuditStateOuterClass {
   }
   /**
    * <pre>
-   * Name: MOHMJDDOJMN
+   * Obf: BFNGHFNKELO
    * </pre>
    *
    * Protobuf enum {@code AuditState}

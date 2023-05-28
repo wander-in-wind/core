@@ -26,8 +26,8 @@ public final class ChangeServerGlobalValueNotifyOuterClass {
   }
   /**
    * <pre>
-   * Name: NIOKEKNBBPN
-   * CmdId: 46
+   * CmdId: 76
+   * Obf: MHOKEEHKGHP
    * </pre>
    *
    * Protobuf type {@code ChangeServerGlobalValueNotify}
@@ -279,8 +279,8 @@ public final class ChangeServerGlobalValueNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: NIOKEKNBBPN
-     * CmdId: 46
+     * CmdId: 76
+     * Obf: MHOKEEHKGHP
      * </pre>
      *
      * Protobuf type {@code ChangeServerGlobalValueNotify}

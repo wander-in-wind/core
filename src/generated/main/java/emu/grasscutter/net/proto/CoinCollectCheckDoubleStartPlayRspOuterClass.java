@@ -19,7 +19,7 @@ public final class CoinCollectCheckDoubleStartPlayRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     int getRetcode();
@@ -32,8 +32,8 @@ public final class CoinCollectCheckDoubleStartPlayRspOuterClass {
   }
   /**
    * <pre>
-   * Name: JCDONBNMJNG
-   * CmdId: 23249
+   * CmdId: 24647
+   * Obf: MFPPHNPFEMM
    * </pre>
    *
    * Protobuf type {@code CoinCollectCheckDoubleStartPlayRsp}
@@ -85,7 +85,7 @@ public final class CoinCollectCheckDoubleStartPlayRspOuterClass {
               levelId_ = input.readUInt32();
               break;
             }
-            case 40: {
+            case 32: {
 
               retcode_ = input.readInt32();
               break;
@@ -122,10 +122,10 @@ public final class CoinCollectCheckDoubleStartPlayRspOuterClass {
               emu.grasscutter.net.proto.CoinCollectCheckDoubleStartPlayRspOuterClass.CoinCollectCheckDoubleStartPlayRsp.class, emu.grasscutter.net.proto.CoinCollectCheckDoubleStartPlayRspOuterClass.CoinCollectCheckDoubleStartPlayRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 5;
+    public static final int RETCODE_FIELD_NUMBER = 4;
     private int retcode_;
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -162,7 +162,7 @@ public final class CoinCollectCheckDoubleStartPlayRspOuterClass {
         output.writeUInt32(3, levelId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(5, retcode_);
+        output.writeInt32(4, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -179,7 +179,7 @@ public final class CoinCollectCheckDoubleStartPlayRspOuterClass {
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, retcode_);
+          .computeInt32Size(4, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class CoinCollectCheckDoubleStartPlayRspOuterClass {
     }
     /**
      * <pre>
-     * Name: JCDONBNMJNG
-     * CmdId: 23249
+     * CmdId: 24647
+     * Obf: MFPPHNPFEMM
      * </pre>
      *
      * Protobuf type {@code CoinCollectCheckDoubleStartPlayRsp}
@@ -470,7 +470,7 @@ public final class CoinCollectCheckDoubleStartPlayRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 4;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class CoinCollectCheckDoubleStartPlayRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 4;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class CoinCollectCheckDoubleStartPlayRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -598,7 +598,7 @@ public final class CoinCollectCheckDoubleStartPlayRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n(CoinCollectCheckDoubleStartPlayRsp.pro" +
       "to\"G\n\"CoinCollectCheckDoubleStartPlayRsp" +
-      "\022\017\n\007retcode\030\005 \001(\005\022\020\n\010level_id\030\003 \001(\rB\033\n\031e" +
+      "\022\017\n\007retcode\030\004 \001(\005\022\020\n\010level_id\030\003 \001(\rB\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -44,8 +44,8 @@ public final class AchievementUpdateNotifyOuterClass {
   }
   /**
    * <pre>
-   * Name: PFKCLOLEDDE
-   * CmdId: 2693
+   * CmdId: 2658
+   * Obf: CHOHAAMOIKE
    * </pre>
    *
    * Protobuf type {@code AchievementUpdateNotify}
@@ -337,8 +337,8 @@ public final class AchievementUpdateNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: PFKCLOLEDDE
-     * CmdId: 2693
+     * CmdId: 2658
+     * Obf: CHOHAAMOIKE
      * </pre>
      *
      * Protobuf type {@code AchievementUpdateNotify}

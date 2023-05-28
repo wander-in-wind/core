@@ -35,8 +35,8 @@ public final class TreasureMapDetectorDataNotifyOuterClass {
   }
   /**
    * <pre>
-   * Name: FOHJKJKEKAJ
-   * CmdId: 4272
+   * CmdId: 4288
+   * Obf: LOHPPIBGKDM
    * </pre>
    *
    * Protobuf type {@code TreasureMapDetectorDataNotify}
@@ -316,8 +316,8 @@ public final class TreasureMapDetectorDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: FOHJKJKEKAJ
-     * CmdId: 4272
+     * CmdId: 4288
+     * Obf: LOHPPIBGKDM
      * </pre>
      *
      * Protobuf type {@code TreasureMapDetectorDataNotify}

@@ -19,45 +19,11 @@ public final class ChessMysteryInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint32, uint32&gt; entrance_point_map = 4;</code>
-     */
-    int getEntrancePointMapCount();
-    /**
-     * <code>map&lt;uint32, uint32&gt; entrance_point_map = 4;</code>
-     */
-    boolean containsEntrancePointMap(
-        int key);
-    /**
-     * Use {@link #getEntrancePointMapMap()} instead.
-     */
-    @java.lang.Deprecated
-    java.util.Map<java.lang.Integer, java.lang.Integer>
-    getEntrancePointMap();
-    /**
-     * <code>map&lt;uint32, uint32&gt; entrance_point_map = 4;</code>
-     */
-    java.util.Map<java.lang.Integer, java.lang.Integer>
-    getEntrancePointMapMap();
-    /**
-     * <code>map&lt;uint32, uint32&gt; entrance_point_map = 4;</code>
-     */
-
-    int getEntrancePointMapOrDefault(
-        int key,
-        int defaultValue);
-    /**
-     * <code>map&lt;uint32, uint32&gt; entrance_point_map = 4;</code>
-     */
-
-    int getEntrancePointMapOrThrow(
-        int key);
-
-    /**
-     * <code>map&lt;uint32, .ChessEntranceDetailInfo&gt; detail_info_map = 7;</code>
+     * <code>map&lt;uint32, .ChessEntranceDetailInfo&gt; detail_info_map = 10;</code>
      */
     int getDetailInfoMapCount();
     /**
-     * <code>map&lt;uint32, .ChessEntranceDetailInfo&gt; detail_info_map = 7;</code>
+     * <code>map&lt;uint32, .ChessEntranceDetailInfo&gt; detail_info_map = 10;</code>
      */
     boolean containsDetailInfoMap(
         int key);
@@ -68,44 +34,78 @@ public final class ChessMysteryInfoOuterClass {
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.ChessEntranceDetailInfoOuterClass.ChessEntranceDetailInfo>
     getDetailInfoMap();
     /**
-     * <code>map&lt;uint32, .ChessEntranceDetailInfo&gt; detail_info_map = 7;</code>
+     * <code>map&lt;uint32, .ChessEntranceDetailInfo&gt; detail_info_map = 10;</code>
      */
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.ChessEntranceDetailInfoOuterClass.ChessEntranceDetailInfo>
     getDetailInfoMapMap();
     /**
-     * <code>map&lt;uint32, .ChessEntranceDetailInfo&gt; detail_info_map = 7;</code>
+     * <code>map&lt;uint32, .ChessEntranceDetailInfo&gt; detail_info_map = 10;</code>
      */
 
     emu.grasscutter.net.proto.ChessEntranceDetailInfoOuterClass.ChessEntranceDetailInfo getDetailInfoMapOrDefault(
         int key,
         emu.grasscutter.net.proto.ChessEntranceDetailInfoOuterClass.ChessEntranceDetailInfo defaultValue);
     /**
-     * <code>map&lt;uint32, .ChessEntranceDetailInfo&gt; detail_info_map = 7;</code>
+     * <code>map&lt;uint32, .ChessEntranceDetailInfo&gt; detail_info_map = 10;</code>
      */
 
     emu.grasscutter.net.proto.ChessEntranceDetailInfoOuterClass.ChessEntranceDetailInfo getDetailInfoMapOrThrow(
         int key);
 
     /**
-     * <code>repeated uint32 exit_point_id_list = 8;</code>
+     * <code>repeated uint32 exit_point_id_list = 7;</code>
      * @return A list containing the exitPointIdList.
      */
     java.util.List<java.lang.Integer> getExitPointIdListList();
     /**
-     * <code>repeated uint32 exit_point_id_list = 8;</code>
+     * <code>repeated uint32 exit_point_id_list = 7;</code>
      * @return The count of exitPointIdList.
      */
     int getExitPointIdListCount();
     /**
-     * <code>repeated uint32 exit_point_id_list = 8;</code>
+     * <code>repeated uint32 exit_point_id_list = 7;</code>
      * @param index The index of the element to return.
      * @return The exitPointIdList at the given index.
      */
     int getExitPointIdList(int index);
+
+    /**
+     * <code>map&lt;uint32, uint32&gt; entrance_point_map = 5;</code>
+     */
+    int getEntrancePointMapCount();
+    /**
+     * <code>map&lt;uint32, uint32&gt; entrance_point_map = 5;</code>
+     */
+    boolean containsEntrancePointMap(
+        int key);
+    /**
+     * Use {@link #getEntrancePointMapMap()} instead.
+     */
+    @java.lang.Deprecated
+    java.util.Map<java.lang.Integer, java.lang.Integer>
+    getEntrancePointMap();
+    /**
+     * <code>map&lt;uint32, uint32&gt; entrance_point_map = 5;</code>
+     */
+    java.util.Map<java.lang.Integer, java.lang.Integer>
+    getEntrancePointMapMap();
+    /**
+     * <code>map&lt;uint32, uint32&gt; entrance_point_map = 5;</code>
+     */
+
+    int getEntrancePointMapOrDefault(
+        int key,
+        int defaultValue);
+    /**
+     * <code>map&lt;uint32, uint32&gt; entrance_point_map = 5;</code>
+     */
+
+    int getEntrancePointMapOrThrow(
+        int key);
   }
   /**
    * <pre>
-   * Name: PODDCPLMFHG
+   * Obf: LCLOHAJKAEC
    * </pre>
    *
    * Protobuf type {@code ChessMysteryInfo}
@@ -154,11 +154,11 @@ public final class ChessMysteryInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 34: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+            case 42: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
                 entrancePointMap_ = com.google.protobuf.MapField.newMapField(
                     EntrancePointMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000004;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
               entrancePointMap__ = input.readMessage(
@@ -167,38 +167,38 @@ public final class ChessMysteryInfoOuterClass {
                   entrancePointMap__.getKey(), entrancePointMap__.getValue());
               break;
             }
-            case 58: {
+            case 56: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                exitPointIdList_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              exitPointIdList_.addInt(input.readUInt32());
+              break;
+            }
+            case 58: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                exitPointIdList_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                exitPointIdList_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 82: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 detailInfoMap_ = com.google.protobuf.MapField.newMapField(
                     DetailInfoMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.ChessEntranceDetailInfoOuterClass.ChessEntranceDetailInfo>
               detailInfoMap__ = input.readMessage(
                   DetailInfoMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
               detailInfoMap_.getMutableMap().put(
                   detailInfoMap__.getKey(), detailInfoMap__.getValue());
-              break;
-            }
-            case 64: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                exitPointIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              exitPointIdList_.addInt(input.readUInt32());
-              break;
-            }
-            case 66: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
-                exitPointIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                exitPointIdList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
               break;
             }
             default: {
@@ -216,7 +216,7 @@ public final class ChessMysteryInfoOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
           exitPointIdList_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
@@ -233,10 +233,10 @@ public final class ChessMysteryInfoOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 4:
-          return internalGetEntrancePointMap();
-        case 7:
+        case 10:
           return internalGetDetailInfoMap();
+        case 5:
+          return internalGetEntrancePointMap();
         default:
           throw new RuntimeException(
               "Invalid map field number: " + number);
@@ -250,88 +250,7 @@ public final class ChessMysteryInfoOuterClass {
               emu.grasscutter.net.proto.ChessMysteryInfoOuterClass.ChessMysteryInfo.class, emu.grasscutter.net.proto.ChessMysteryInfoOuterClass.ChessMysteryInfo.Builder.class);
     }
 
-    public static final int ENTRANCE_POINT_MAP_FIELD_NUMBER = 4;
-    private static final class EntrancePointMapDefaultEntryHolder {
-      static final com.google.protobuf.MapEntry<
-          java.lang.Integer, java.lang.Integer> defaultEntry =
-              com.google.protobuf.MapEntry
-              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.ChessMysteryInfoOuterClass.internal_static_ChessMysteryInfo_EntrancePointMapEntry_descriptor, 
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0,
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0);
-    }
-    private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Integer> entrancePointMap_;
-    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-    internalGetEntrancePointMap() {
-      if (entrancePointMap_ == null) {
-        return com.google.protobuf.MapField.emptyMapField(
-            EntrancePointMapDefaultEntryHolder.defaultEntry);
-      }
-      return entrancePointMap_;
-    }
-
-    public int getEntrancePointMapCount() {
-      return internalGetEntrancePointMap().getMap().size();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; entrance_point_map = 4;</code>
-     */
-
-    @java.lang.Override
-    public boolean containsEntrancePointMap(
-        int key) {
-      
-      return internalGetEntrancePointMap().getMap().containsKey(key);
-    }
-    /**
-     * Use {@link #getEntrancePointMapMap()} instead.
-     */
-    @java.lang.Override
-    @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getEntrancePointMap() {
-      return getEntrancePointMapMap();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; entrance_point_map = 4;</code>
-     */
-    @java.lang.Override
-
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getEntrancePointMapMap() {
-      return internalGetEntrancePointMap().getMap();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; entrance_point_map = 4;</code>
-     */
-    @java.lang.Override
-
-    public int getEntrancePointMapOrDefault(
-        int key,
-        int defaultValue) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetEntrancePointMap().getMap();
-      return map.containsKey(key) ? map.get(key) : defaultValue;
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; entrance_point_map = 4;</code>
-     */
-    @java.lang.Override
-
-    public int getEntrancePointMapOrThrow(
-        int key) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetEntrancePointMap().getMap();
-      if (!map.containsKey(key)) {
-        throw new java.lang.IllegalArgumentException();
-      }
-      return map.get(key);
-    }
-
-    public static final int DETAIL_INFO_MAP_FIELD_NUMBER = 7;
+    public static final int DETAIL_INFO_MAP_FIELD_NUMBER = 10;
     private static final class DetailInfoMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, emu.grasscutter.net.proto.ChessEntranceDetailInfoOuterClass.ChessEntranceDetailInfo> defaultEntry =
@@ -358,7 +277,7 @@ public final class ChessMysteryInfoOuterClass {
       return internalGetDetailInfoMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, .ChessEntranceDetailInfo&gt; detail_info_map = 7;</code>
+     * <code>map&lt;uint32, .ChessEntranceDetailInfo&gt; detail_info_map = 10;</code>
      */
 
     @java.lang.Override
@@ -376,7 +295,7 @@ public final class ChessMysteryInfoOuterClass {
       return getDetailInfoMapMap();
     }
     /**
-     * <code>map&lt;uint32, .ChessEntranceDetailInfo&gt; detail_info_map = 7;</code>
+     * <code>map&lt;uint32, .ChessEntranceDetailInfo&gt; detail_info_map = 10;</code>
      */
     @java.lang.Override
 
@@ -384,7 +303,7 @@ public final class ChessMysteryInfoOuterClass {
       return internalGetDetailInfoMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, .ChessEntranceDetailInfo&gt; detail_info_map = 7;</code>
+     * <code>map&lt;uint32, .ChessEntranceDetailInfo&gt; detail_info_map = 10;</code>
      */
     @java.lang.Override
 
@@ -397,7 +316,7 @@ public final class ChessMysteryInfoOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, .ChessEntranceDetailInfo&gt; detail_info_map = 7;</code>
+     * <code>map&lt;uint32, .ChessEntranceDetailInfo&gt; detail_info_map = 10;</code>
      */
     @java.lang.Override
 
@@ -412,10 +331,10 @@ public final class ChessMysteryInfoOuterClass {
       return map.get(key);
     }
 
-    public static final int EXIT_POINT_ID_LIST_FIELD_NUMBER = 8;
+    public static final int EXIT_POINT_ID_LIST_FIELD_NUMBER = 7;
     private com.google.protobuf.Internal.IntList exitPointIdList_;
     /**
-     * <code>repeated uint32 exit_point_id_list = 8;</code>
+     * <code>repeated uint32 exit_point_id_list = 7;</code>
      * @return A list containing the exitPointIdList.
      */
     @java.lang.Override
@@ -424,14 +343,14 @@ public final class ChessMysteryInfoOuterClass {
       return exitPointIdList_;
     }
     /**
-     * <code>repeated uint32 exit_point_id_list = 8;</code>
+     * <code>repeated uint32 exit_point_id_list = 7;</code>
      * @return The count of exitPointIdList.
      */
     public int getExitPointIdListCount() {
       return exitPointIdList_.size();
     }
     /**
-     * <code>repeated uint32 exit_point_id_list = 8;</code>
+     * <code>repeated uint32 exit_point_id_list = 7;</code>
      * @param index The index of the element to return.
      * @return The exitPointIdList at the given index.
      */
@@ -439,6 +358,87 @@ public final class ChessMysteryInfoOuterClass {
       return exitPointIdList_.getInt(index);
     }
     private int exitPointIdListMemoizedSerializedSize = -1;
+
+    public static final int ENTRANCE_POINT_MAP_FIELD_NUMBER = 5;
+    private static final class EntrancePointMapDefaultEntryHolder {
+      static final com.google.protobuf.MapEntry<
+          java.lang.Integer, java.lang.Integer> defaultEntry =
+              com.google.protobuf.MapEntry
+              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
+                  emu.grasscutter.net.proto.ChessMysteryInfoOuterClass.internal_static_ChessMysteryInfo_EntrancePointMapEntry_descriptor, 
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0,
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0);
+    }
+    private com.google.protobuf.MapField<
+        java.lang.Integer, java.lang.Integer> entrancePointMap_;
+    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+    internalGetEntrancePointMap() {
+      if (entrancePointMap_ == null) {
+        return com.google.protobuf.MapField.emptyMapField(
+            EntrancePointMapDefaultEntryHolder.defaultEntry);
+      }
+      return entrancePointMap_;
+    }
+
+    public int getEntrancePointMapCount() {
+      return internalGetEntrancePointMap().getMap().size();
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; entrance_point_map = 5;</code>
+     */
+
+    @java.lang.Override
+    public boolean containsEntrancePointMap(
+        int key) {
+      
+      return internalGetEntrancePointMap().getMap().containsKey(key);
+    }
+    /**
+     * Use {@link #getEntrancePointMapMap()} instead.
+     */
+    @java.lang.Override
+    @java.lang.Deprecated
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getEntrancePointMap() {
+      return getEntrancePointMapMap();
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; entrance_point_map = 5;</code>
+     */
+    @java.lang.Override
+
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getEntrancePointMapMap() {
+      return internalGetEntrancePointMap().getMap();
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; entrance_point_map = 5;</code>
+     */
+    @java.lang.Override
+
+    public int getEntrancePointMapOrDefault(
+        int key,
+        int defaultValue) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetEntrancePointMap().getMap();
+      return map.containsKey(key) ? map.get(key) : defaultValue;
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; entrance_point_map = 5;</code>
+     */
+    @java.lang.Override
+
+    public int getEntrancePointMapOrThrow(
+        int key) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetEntrancePointMap().getMap();
+      if (!map.containsKey(key)) {
+        throw new java.lang.IllegalArgumentException();
+      }
+      return map.get(key);
+    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -460,20 +460,20 @@ public final class ChessMysteryInfoOuterClass {
           output,
           internalGetEntrancePointMap(),
           EntrancePointMapDefaultEntryHolder.defaultEntry,
-          4);
-      com.google.protobuf.GeneratedMessageV3
-        .serializeIntegerMapTo(
-          output,
-          internalGetDetailInfoMap(),
-          DetailInfoMapDefaultEntryHolder.defaultEntry,
-          7);
+          5);
       if (getExitPointIdListList().size() > 0) {
-        output.writeUInt32NoTag(66);
+        output.writeUInt32NoTag(58);
         output.writeUInt32NoTag(exitPointIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < exitPointIdList_.size(); i++) {
         output.writeUInt32NoTag(exitPointIdList_.getInt(i));
       }
+      com.google.protobuf.GeneratedMessageV3
+        .serializeIntegerMapTo(
+          output,
+          internalGetDetailInfoMap(),
+          DetailInfoMapDefaultEntryHolder.defaultEntry,
+          10);
       unknownFields.writeTo(output);
     }
 
@@ -491,17 +491,7 @@ public final class ChessMysteryInfoOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(4, entrancePointMap__);
-      }
-      for (java.util.Map.Entry<java.lang.Integer, emu.grasscutter.net.proto.ChessEntranceDetailInfoOuterClass.ChessEntranceDetailInfo> entry
-           : internalGetDetailInfoMap().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.ChessEntranceDetailInfoOuterClass.ChessEntranceDetailInfo>
-        detailInfoMap__ = DetailInfoMapDefaultEntryHolder.defaultEntry.newBuilderForType()
-            .setKey(entry.getKey())
-            .setValue(entry.getValue())
-            .build();
-        size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(7, detailInfoMap__);
+            .computeMessageSize(5, entrancePointMap__);
       }
       {
         int dataSize = 0;
@@ -516,6 +506,16 @@ public final class ChessMysteryInfoOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         exitPointIdListMemoizedSerializedSize = dataSize;
+      }
+      for (java.util.Map.Entry<java.lang.Integer, emu.grasscutter.net.proto.ChessEntranceDetailInfoOuterClass.ChessEntranceDetailInfo> entry
+           : internalGetDetailInfoMap().getMap().entrySet()) {
+        com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.ChessEntranceDetailInfoOuterClass.ChessEntranceDetailInfo>
+        detailInfoMap__ = DetailInfoMapDefaultEntryHolder.defaultEntry.newBuilderForType()
+            .setKey(entry.getKey())
+            .setValue(entry.getValue())
+            .build();
+        size += com.google.protobuf.CodedOutputStream
+            .computeMessageSize(10, detailInfoMap__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -532,12 +532,12 @@ public final class ChessMysteryInfoOuterClass {
       }
       emu.grasscutter.net.proto.ChessMysteryInfoOuterClass.ChessMysteryInfo other = (emu.grasscutter.net.proto.ChessMysteryInfoOuterClass.ChessMysteryInfo) obj;
 
-      if (!internalGetEntrancePointMap().equals(
-          other.internalGetEntrancePointMap())) return false;
       if (!internalGetDetailInfoMap().equals(
           other.internalGetDetailInfoMap())) return false;
       if (!getExitPointIdListList()
           .equals(other.getExitPointIdListList())) return false;
+      if (!internalGetEntrancePointMap().equals(
+          other.internalGetEntrancePointMap())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -549,10 +549,6 @@ public final class ChessMysteryInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (!internalGetEntrancePointMap().getMap().isEmpty()) {
-        hash = (37 * hash) + ENTRANCE_POINT_MAP_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetEntrancePointMap().hashCode();
-      }
       if (!internalGetDetailInfoMap().getMap().isEmpty()) {
         hash = (37 * hash) + DETAIL_INFO_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetDetailInfoMap().hashCode();
@@ -560,6 +556,10 @@ public final class ChessMysteryInfoOuterClass {
       if (getExitPointIdListCount() > 0) {
         hash = (37 * hash) + EXIT_POINT_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getExitPointIdListList().hashCode();
+      }
+      if (!internalGetEntrancePointMap().getMap().isEmpty()) {
+        hash = (37 * hash) + ENTRANCE_POINT_MAP_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetEntrancePointMap().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -658,7 +658,7 @@ public final class ChessMysteryInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: PODDCPLMFHG
+     * Obf: LCLOHAJKAEC
      * </pre>
      *
      * Protobuf type {@code ChessMysteryInfo}
@@ -676,10 +676,10 @@ public final class ChessMysteryInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 4:
-            return internalGetEntrancePointMap();
-          case 7:
+          case 10:
             return internalGetDetailInfoMap();
+          case 5:
+            return internalGetEntrancePointMap();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -689,10 +689,10 @@ public final class ChessMysteryInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 4:
-            return internalGetMutableEntrancePointMap();
-          case 7:
+          case 10:
             return internalGetMutableDetailInfoMap();
+          case 5:
+            return internalGetMutableEntrancePointMap();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -724,10 +724,10 @@ public final class ChessMysteryInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        internalGetMutableEntrancePointMap().clear();
         internalGetMutableDetailInfoMap().clear();
         exitPointIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000004);
+        bitField0_ = (bitField0_ & ~0x00000002);
+        internalGetMutableEntrancePointMap().clear();
         return this;
       }
 
@@ -755,15 +755,15 @@ public final class ChessMysteryInfoOuterClass {
       public emu.grasscutter.net.proto.ChessMysteryInfoOuterClass.ChessMysteryInfo buildPartial() {
         emu.grasscutter.net.proto.ChessMysteryInfoOuterClass.ChessMysteryInfo result = new emu.grasscutter.net.proto.ChessMysteryInfoOuterClass.ChessMysteryInfo(this);
         int from_bitField0_ = bitField0_;
-        result.entrancePointMap_ = internalGetEntrancePointMap();
-        result.entrancePointMap_.makeImmutable();
         result.detailInfoMap_ = internalGetDetailInfoMap();
         result.detailInfoMap_.makeImmutable();
-        if (((bitField0_ & 0x00000004) != 0)) {
+        if (((bitField0_ & 0x00000002) != 0)) {
           exitPointIdList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000002);
         }
         result.exitPointIdList_ = exitPointIdList_;
+        result.entrancePointMap_ = internalGetEntrancePointMap();
+        result.entrancePointMap_.makeImmutable();
         onBuilt();
         return result;
       }
@@ -812,20 +812,20 @@ public final class ChessMysteryInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ChessMysteryInfoOuterClass.ChessMysteryInfo other) {
         if (other == emu.grasscutter.net.proto.ChessMysteryInfoOuterClass.ChessMysteryInfo.getDefaultInstance()) return this;
-        internalGetMutableEntrancePointMap().mergeFrom(
-            other.internalGetEntrancePointMap());
         internalGetMutableDetailInfoMap().mergeFrom(
             other.internalGetDetailInfoMap());
         if (!other.exitPointIdList_.isEmpty()) {
           if (exitPointIdList_.isEmpty()) {
             exitPointIdList_ = other.exitPointIdList_;
-            bitField0_ = (bitField0_ & ~0x00000004);
+            bitField0_ = (bitField0_ & ~0x00000002);
           } else {
             ensureExitPointIdListIsMutable();
             exitPointIdList_.addAll(other.exitPointIdList_);
           }
           onChanged();
         }
+        internalGetMutableEntrancePointMap().mergeFrom(
+            other.internalGetEntrancePointMap());
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -857,134 +857,6 @@ public final class ChessMysteryInfoOuterClass {
       private int bitField0_;
 
       private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> entrancePointMap_;
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetEntrancePointMap() {
-        if (entrancePointMap_ == null) {
-          return com.google.protobuf.MapField.emptyMapField(
-              EntrancePointMapDefaultEntryHolder.defaultEntry);
-        }
-        return entrancePointMap_;
-      }
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableEntrancePointMap() {
-        onChanged();;
-        if (entrancePointMap_ == null) {
-          entrancePointMap_ = com.google.protobuf.MapField.newMapField(
-              EntrancePointMapDefaultEntryHolder.defaultEntry);
-        }
-        if (!entrancePointMap_.isMutable()) {
-          entrancePointMap_ = entrancePointMap_.copy();
-        }
-        return entrancePointMap_;
-      }
-
-      public int getEntrancePointMapCount() {
-        return internalGetEntrancePointMap().getMap().size();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; entrance_point_map = 4;</code>
-       */
-
-      @java.lang.Override
-      public boolean containsEntrancePointMap(
-          int key) {
-        
-        return internalGetEntrancePointMap().getMap().containsKey(key);
-      }
-      /**
-       * Use {@link #getEntrancePointMapMap()} instead.
-       */
-      @java.lang.Override
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getEntrancePointMap() {
-        return getEntrancePointMapMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; entrance_point_map = 4;</code>
-       */
-      @java.lang.Override
-
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getEntrancePointMapMap() {
-        return internalGetEntrancePointMap().getMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; entrance_point_map = 4;</code>
-       */
-      @java.lang.Override
-
-      public int getEntrancePointMapOrDefault(
-          int key,
-          int defaultValue) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetEntrancePointMap().getMap();
-        return map.containsKey(key) ? map.get(key) : defaultValue;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; entrance_point_map = 4;</code>
-       */
-      @java.lang.Override
-
-      public int getEntrancePointMapOrThrow(
-          int key) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetEntrancePointMap().getMap();
-        if (!map.containsKey(key)) {
-          throw new java.lang.IllegalArgumentException();
-        }
-        return map.get(key);
-      }
-
-      public Builder clearEntrancePointMap() {
-        internalGetMutableEntrancePointMap().getMutableMap()
-            .clear();
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; entrance_point_map = 4;</code>
-       */
-
-      public Builder removeEntrancePointMap(
-          int key) {
-        
-        internalGetMutableEntrancePointMap().getMutableMap()
-            .remove(key);
-        return this;
-      }
-      /**
-       * Use alternate mutation accessors instead.
-       */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableEntrancePointMap() {
-        return internalGetMutableEntrancePointMap().getMutableMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; entrance_point_map = 4;</code>
-       */
-      public Builder putEntrancePointMap(
-          int key,
-          int value) {
-        
-        
-        internalGetMutableEntrancePointMap().getMutableMap()
-            .put(key, value);
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; entrance_point_map = 4;</code>
-       */
-
-      public Builder putAllEntrancePointMap(
-          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableEntrancePointMap().getMutableMap()
-            .putAll(values);
-        return this;
-      }
-
-      private com.google.protobuf.MapField<
           java.lang.Integer, emu.grasscutter.net.proto.ChessEntranceDetailInfoOuterClass.ChessEntranceDetailInfo> detailInfoMap_;
       private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.ChessEntranceDetailInfoOuterClass.ChessEntranceDetailInfo>
       internalGetDetailInfoMap() {
@@ -1011,7 +883,7 @@ public final class ChessMysteryInfoOuterClass {
         return internalGetDetailInfoMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, .ChessEntranceDetailInfo&gt; detail_info_map = 7;</code>
+       * <code>map&lt;uint32, .ChessEntranceDetailInfo&gt; detail_info_map = 10;</code>
        */
 
       @java.lang.Override
@@ -1029,7 +901,7 @@ public final class ChessMysteryInfoOuterClass {
         return getDetailInfoMapMap();
       }
       /**
-       * <code>map&lt;uint32, .ChessEntranceDetailInfo&gt; detail_info_map = 7;</code>
+       * <code>map&lt;uint32, .ChessEntranceDetailInfo&gt; detail_info_map = 10;</code>
        */
       @java.lang.Override
 
@@ -1037,7 +909,7 @@ public final class ChessMysteryInfoOuterClass {
         return internalGetDetailInfoMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, .ChessEntranceDetailInfo&gt; detail_info_map = 7;</code>
+       * <code>map&lt;uint32, .ChessEntranceDetailInfo&gt; detail_info_map = 10;</code>
        */
       @java.lang.Override
 
@@ -1050,7 +922,7 @@ public final class ChessMysteryInfoOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, .ChessEntranceDetailInfo&gt; detail_info_map = 7;</code>
+       * <code>map&lt;uint32, .ChessEntranceDetailInfo&gt; detail_info_map = 10;</code>
        */
       @java.lang.Override
 
@@ -1071,7 +943,7 @@ public final class ChessMysteryInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .ChessEntranceDetailInfo&gt; detail_info_map = 7;</code>
+       * <code>map&lt;uint32, .ChessEntranceDetailInfo&gt; detail_info_map = 10;</code>
        */
 
       public Builder removeDetailInfoMap(
@@ -1090,7 +962,7 @@ public final class ChessMysteryInfoOuterClass {
         return internalGetMutableDetailInfoMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, .ChessEntranceDetailInfo&gt; detail_info_map = 7;</code>
+       * <code>map&lt;uint32, .ChessEntranceDetailInfo&gt; detail_info_map = 10;</code>
        */
       public Builder putDetailInfoMap(
           int key,
@@ -1102,7 +974,7 @@ public final class ChessMysteryInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .ChessEntranceDetailInfo&gt; detail_info_map = 7;</code>
+       * <code>map&lt;uint32, .ChessEntranceDetailInfo&gt; detail_info_map = 10;</code>
        */
 
       public Builder putAllDetailInfoMap(
@@ -1114,29 +986,29 @@ public final class ChessMysteryInfoOuterClass {
 
       private com.google.protobuf.Internal.IntList exitPointIdList_ = emptyIntList();
       private void ensureExitPointIdListIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
+        if (!((bitField0_ & 0x00000002) != 0)) {
           exitPointIdList_ = mutableCopy(exitPointIdList_);
-          bitField0_ |= 0x00000004;
+          bitField0_ |= 0x00000002;
          }
       }
       /**
-       * <code>repeated uint32 exit_point_id_list = 8;</code>
+       * <code>repeated uint32 exit_point_id_list = 7;</code>
        * @return A list containing the exitPointIdList.
        */
       public java.util.List<java.lang.Integer>
           getExitPointIdListList() {
-        return ((bitField0_ & 0x00000004) != 0) ?
+        return ((bitField0_ & 0x00000002) != 0) ?
                  java.util.Collections.unmodifiableList(exitPointIdList_) : exitPointIdList_;
       }
       /**
-       * <code>repeated uint32 exit_point_id_list = 8;</code>
+       * <code>repeated uint32 exit_point_id_list = 7;</code>
        * @return The count of exitPointIdList.
        */
       public int getExitPointIdListCount() {
         return exitPointIdList_.size();
       }
       /**
-       * <code>repeated uint32 exit_point_id_list = 8;</code>
+       * <code>repeated uint32 exit_point_id_list = 7;</code>
        * @param index The index of the element to return.
        * @return The exitPointIdList at the given index.
        */
@@ -1144,7 +1016,7 @@ public final class ChessMysteryInfoOuterClass {
         return exitPointIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 exit_point_id_list = 8;</code>
+       * <code>repeated uint32 exit_point_id_list = 7;</code>
        * @param index The index to set the value at.
        * @param value The exitPointIdList to set.
        * @return This builder for chaining.
@@ -1157,7 +1029,7 @@ public final class ChessMysteryInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 exit_point_id_list = 8;</code>
+       * <code>repeated uint32 exit_point_id_list = 7;</code>
        * @param value The exitPointIdList to add.
        * @return This builder for chaining.
        */
@@ -1168,7 +1040,7 @@ public final class ChessMysteryInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 exit_point_id_list = 8;</code>
+       * <code>repeated uint32 exit_point_id_list = 7;</code>
        * @param values The exitPointIdList to add.
        * @return This builder for chaining.
        */
@@ -1181,13 +1053,141 @@ public final class ChessMysteryInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 exit_point_id_list = 8;</code>
+       * <code>repeated uint32 exit_point_id_list = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearExitPointIdList() {
         exitPointIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000004);
+        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.MapField<
+          java.lang.Integer, java.lang.Integer> entrancePointMap_;
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetEntrancePointMap() {
+        if (entrancePointMap_ == null) {
+          return com.google.protobuf.MapField.emptyMapField(
+              EntrancePointMapDefaultEntryHolder.defaultEntry);
+        }
+        return entrancePointMap_;
+      }
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetMutableEntrancePointMap() {
+        onChanged();;
+        if (entrancePointMap_ == null) {
+          entrancePointMap_ = com.google.protobuf.MapField.newMapField(
+              EntrancePointMapDefaultEntryHolder.defaultEntry);
+        }
+        if (!entrancePointMap_.isMutable()) {
+          entrancePointMap_ = entrancePointMap_.copy();
+        }
+        return entrancePointMap_;
+      }
+
+      public int getEntrancePointMapCount() {
+        return internalGetEntrancePointMap().getMap().size();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; entrance_point_map = 5;</code>
+       */
+
+      @java.lang.Override
+      public boolean containsEntrancePointMap(
+          int key) {
+        
+        return internalGetEntrancePointMap().getMap().containsKey(key);
+      }
+      /**
+       * Use {@link #getEntrancePointMapMap()} instead.
+       */
+      @java.lang.Override
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getEntrancePointMap() {
+        return getEntrancePointMapMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; entrance_point_map = 5;</code>
+       */
+      @java.lang.Override
+
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getEntrancePointMapMap() {
+        return internalGetEntrancePointMap().getMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; entrance_point_map = 5;</code>
+       */
+      @java.lang.Override
+
+      public int getEntrancePointMapOrDefault(
+          int key,
+          int defaultValue) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetEntrancePointMap().getMap();
+        return map.containsKey(key) ? map.get(key) : defaultValue;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; entrance_point_map = 5;</code>
+       */
+      @java.lang.Override
+
+      public int getEntrancePointMapOrThrow(
+          int key) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetEntrancePointMap().getMap();
+        if (!map.containsKey(key)) {
+          throw new java.lang.IllegalArgumentException();
+        }
+        return map.get(key);
+      }
+
+      public Builder clearEntrancePointMap() {
+        internalGetMutableEntrancePointMap().getMutableMap()
+            .clear();
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; entrance_point_map = 5;</code>
+       */
+
+      public Builder removeEntrancePointMap(
+          int key) {
+        
+        internalGetMutableEntrancePointMap().getMutableMap()
+            .remove(key);
+        return this;
+      }
+      /**
+       * Use alternate mutation accessors instead.
+       */
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer>
+      getMutableEntrancePointMap() {
+        return internalGetMutableEntrancePointMap().getMutableMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; entrance_point_map = 5;</code>
+       */
+      public Builder putEntrancePointMap(
+          int key,
+          int value) {
+        
+        
+        internalGetMutableEntrancePointMap().getMutableMap()
+            .put(key, value);
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; entrance_point_map = 5;</code>
+       */
+
+      public Builder putAllEntrancePointMap(
+          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
+        internalGetMutableEntrancePointMap().getMutableMap()
+            .putAll(values);
         return this;
       }
       @java.lang.Override
@@ -1249,15 +1249,15 @@ public final class ChessMysteryInfoOuterClass {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_ChessMysteryInfo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_ChessMysteryInfo_EntrancePointMapEntry_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_ChessMysteryInfo_EntrancePointMapEntry_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_ChessMysteryInfo_DetailInfoMapEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_ChessMysteryInfo_DetailInfoMapEntry_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_ChessMysteryInfo_EntrancePointMapEntry_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_ChessMysteryInfo_EntrancePointMapEntry_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1268,15 +1268,15 @@ public final class ChessMysteryInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026ChessMysteryInfo.proto\032\035ChessEntranceD" +
-      "etailInfo.proto\"\273\002\n\020ChessMysteryInfo\022C\n\022" +
-      "entrance_point_map\030\004 \003(\0132\'.ChessMysteryI" +
-      "nfo.EntrancePointMapEntry\022=\n\017detail_info" +
-      "_map\030\007 \003(\0132$.ChessMysteryInfo.DetailInfo" +
-      "MapEntry\022\032\n\022exit_point_id_list\030\010 \003(\r\0327\n\025" +
+      "etailInfo.proto\"\273\002\n\020ChessMysteryInfo\022=\n\017" +
+      "detail_info_map\030\n \003(\0132$.ChessMysteryInfo" +
+      ".DetailInfoMapEntry\022\032\n\022exit_point_id_lis" +
+      "t\030\007 \003(\r\022C\n\022entrance_point_map\030\005 \003(\0132\'.Ch" +
+      "essMysteryInfo.EntrancePointMapEntry\032N\n\022" +
+      "DetailInfoMapEntry\022\013\n\003key\030\001 \001(\r\022\'\n\005value" +
+      "\030\002 \001(\0132\030.ChessEntranceDetailInfo:\0028\001\0327\n\025" +
       "EntrancePointMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005va" +
-      "lue\030\002 \001(\r:\0028\001\032N\n\022DetailInfoMapEntry\022\013\n\003k" +
-      "ey\030\001 \001(\r\022\'\n\005value\030\002 \001(\0132\030.ChessEntranceD" +
-      "etailInfo:\0028\001B\033\n\031emu.grasscutter.net.pro" +
+      "lue\030\002 \001(\r:\0028\001B\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1289,18 +1289,18 @@ public final class ChessMysteryInfoOuterClass {
     internal_static_ChessMysteryInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ChessMysteryInfo_descriptor,
-        new java.lang.String[] { "EntrancePointMap", "DetailInfoMap", "ExitPointIdList", });
-    internal_static_ChessMysteryInfo_EntrancePointMapEntry_descriptor =
-      internal_static_ChessMysteryInfo_descriptor.getNestedTypes().get(0);
-    internal_static_ChessMysteryInfo_EntrancePointMapEntry_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_ChessMysteryInfo_EntrancePointMapEntry_descriptor,
-        new java.lang.String[] { "Key", "Value", });
+        new java.lang.String[] { "DetailInfoMap", "ExitPointIdList", "EntrancePointMap", });
     internal_static_ChessMysteryInfo_DetailInfoMapEntry_descriptor =
-      internal_static_ChessMysteryInfo_descriptor.getNestedTypes().get(1);
+      internal_static_ChessMysteryInfo_descriptor.getNestedTypes().get(0);
     internal_static_ChessMysteryInfo_DetailInfoMapEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ChessMysteryInfo_DetailInfoMapEntry_descriptor,
+        new java.lang.String[] { "Key", "Value", });
+    internal_static_ChessMysteryInfo_EntrancePointMapEntry_descriptor =
+      internal_static_ChessMysteryInfo_descriptor.getNestedTypes().get(1);
+    internal_static_ChessMysteryInfo_EntrancePointMapEntry_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_ChessMysteryInfo_EntrancePointMapEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
     emu.grasscutter.net.proto.ChessEntranceDetailInfoOuterClass.getDescriptor();
   }

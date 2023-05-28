@@ -19,38 +19,38 @@ public final class GalleryWillStartCountdownNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 end_time = 11;</code>
+     * <code>uint32 end_time = 4;</code>
      * @return The endTime.
      */
     int getEndTime();
 
     /**
-     * <code>bool is_end = 7;</code>
-     * @return The isEnd.
-     */
-    boolean getIsEnd();
-
-    /**
-     * <code>uint32 gallery_id = 1;</code>
+     * <code>uint32 gallery_id = 3;</code>
      * @return The galleryId.
      */
     int getGalleryId();
 
     /**
-     * <code>.GalleryStartSource start_source = 10;</code>
+     * <code>bool is_end = 2;</code>
+     * @return The isEnd.
+     */
+    boolean getIsEnd();
+
+    /**
+     * <code>.GalleryStartSource start_source = 8;</code>
      * @return The enum numeric value on the wire for startSource.
      */
     int getStartSourceValue();
     /**
-     * <code>.GalleryStartSource start_source = 10;</code>
+     * <code>.GalleryStartSource start_source = 8;</code>
      * @return The startSource.
      */
     emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource getStartSource();
   }
   /**
    * <pre>
-   * Name: AOGCMDNFPLJ
-   * CmdId: 5584
+   * CmdId: 5526
+   * Obf: HPLCPGGJMBC
    * </pre>
    *
    * Protobuf type {@code GalleryWillStartCountdownNotify}
@@ -98,25 +98,25 @@ public final class GalleryWillStartCountdownNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              galleryId_ = input.readUInt32();
-              break;
-            }
-            case 56: {
+            case 16: {
 
               isEnd_ = input.readBool();
               break;
             }
-            case 80: {
+            case 24: {
+
+              galleryId_ = input.readUInt32();
+              break;
+            }
+            case 32: {
+
+              endTime_ = input.readUInt32();
+              break;
+            }
+            case 64: {
               int rawValue = input.readEnum();
 
               startSource_ = rawValue;
-              break;
-            }
-            case 88: {
-
-              endTime_ = input.readUInt32();
               break;
             }
             default: {
@@ -151,10 +151,10 @@ public final class GalleryWillStartCountdownNotifyOuterClass {
               emu.grasscutter.net.proto.GalleryWillStartCountdownNotifyOuterClass.GalleryWillStartCountdownNotify.class, emu.grasscutter.net.proto.GalleryWillStartCountdownNotifyOuterClass.GalleryWillStartCountdownNotify.Builder.class);
     }
 
-    public static final int END_TIME_FIELD_NUMBER = 11;
+    public static final int END_TIME_FIELD_NUMBER = 4;
     private int endTime_;
     /**
-     * <code>uint32 end_time = 11;</code>
+     * <code>uint32 end_time = 4;</code>
      * @return The endTime.
      */
     @java.lang.Override
@@ -162,21 +162,10 @@ public final class GalleryWillStartCountdownNotifyOuterClass {
       return endTime_;
     }
 
-    public static final int IS_END_FIELD_NUMBER = 7;
-    private boolean isEnd_;
-    /**
-     * <code>bool is_end = 7;</code>
-     * @return The isEnd.
-     */
-    @java.lang.Override
-    public boolean getIsEnd() {
-      return isEnd_;
-    }
-
-    public static final int GALLERY_ID_FIELD_NUMBER = 1;
+    public static final int GALLERY_ID_FIELD_NUMBER = 3;
     private int galleryId_;
     /**
-     * <code>uint32 gallery_id = 1;</code>
+     * <code>uint32 gallery_id = 3;</code>
      * @return The galleryId.
      */
     @java.lang.Override
@@ -184,17 +173,28 @@ public final class GalleryWillStartCountdownNotifyOuterClass {
       return galleryId_;
     }
 
-    public static final int START_SOURCE_FIELD_NUMBER = 10;
+    public static final int IS_END_FIELD_NUMBER = 2;
+    private boolean isEnd_;
+    /**
+     * <code>bool is_end = 2;</code>
+     * @return The isEnd.
+     */
+    @java.lang.Override
+    public boolean getIsEnd() {
+      return isEnd_;
+    }
+
+    public static final int START_SOURCE_FIELD_NUMBER = 8;
     private int startSource_;
     /**
-     * <code>.GalleryStartSource start_source = 10;</code>
+     * <code>.GalleryStartSource start_source = 8;</code>
      * @return The enum numeric value on the wire for startSource.
      */
     @java.lang.Override public int getStartSourceValue() {
       return startSource_;
     }
     /**
-     * <code>.GalleryStartSource start_source = 10;</code>
+     * <code>.GalleryStartSource start_source = 8;</code>
      * @return The startSource.
      */
     @java.lang.Override public emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource getStartSource() {
@@ -217,17 +217,17 @@ public final class GalleryWillStartCountdownNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (galleryId_ != 0) {
-        output.writeUInt32(1, galleryId_);
-      }
       if (isEnd_ != false) {
-        output.writeBool(7, isEnd_);
+        output.writeBool(2, isEnd_);
       }
-      if (startSource_ != emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.GALLERY_START_BY_NONE.getNumber()) {
-        output.writeEnum(10, startSource_);
+      if (galleryId_ != 0) {
+        output.writeUInt32(3, galleryId_);
       }
       if (endTime_ != 0) {
-        output.writeUInt32(11, endTime_);
+        output.writeUInt32(4, endTime_);
+      }
+      if (startSource_ != emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.GALLERY_START_BY_NONE.getNumber()) {
+        output.writeEnum(8, startSource_);
       }
       unknownFields.writeTo(output);
     }
@@ -238,21 +238,21 @@ public final class GalleryWillStartCountdownNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (galleryId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, galleryId_);
-      }
       if (isEnd_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isEnd_);
+          .computeBoolSize(2, isEnd_);
       }
-      if (startSource_ != emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.GALLERY_START_BY_NONE.getNumber()) {
+      if (galleryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(10, startSource_);
+          .computeUInt32Size(3, galleryId_);
       }
       if (endTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, endTime_);
+          .computeUInt32Size(4, endTime_);
+      }
+      if (startSource_ != emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.GALLERY_START_BY_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(8, startSource_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -271,10 +271,10 @@ public final class GalleryWillStartCountdownNotifyOuterClass {
 
       if (getEndTime()
           != other.getEndTime()) return false;
-      if (getIsEnd()
-          != other.getIsEnd()) return false;
       if (getGalleryId()
           != other.getGalleryId()) return false;
+      if (getIsEnd()
+          != other.getIsEnd()) return false;
       if (startSource_ != other.startSource_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
@@ -289,11 +289,11 @@ public final class GalleryWillStartCountdownNotifyOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + END_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getEndTime();
+      hash = (37 * hash) + GALLERY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGalleryId();
       hash = (37 * hash) + IS_END_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsEnd());
-      hash = (37 * hash) + GALLERY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGalleryId();
       hash = (37 * hash) + START_SOURCE_FIELD_NUMBER;
       hash = (53 * hash) + startSource_;
       hash = (29 * hash) + unknownFields.hashCode();
@@ -393,8 +393,8 @@ public final class GalleryWillStartCountdownNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: AOGCMDNFPLJ
-     * CmdId: 5584
+     * CmdId: 5526
+     * Obf: HPLCPGGJMBC
      * </pre>
      *
      * Protobuf type {@code GalleryWillStartCountdownNotify}
@@ -436,9 +436,9 @@ public final class GalleryWillStartCountdownNotifyOuterClass {
         super.clear();
         endTime_ = 0;
 
-        isEnd_ = false;
-
         galleryId_ = 0;
+
+        isEnd_ = false;
 
         startSource_ = 0;
 
@@ -469,8 +469,8 @@ public final class GalleryWillStartCountdownNotifyOuterClass {
       public emu.grasscutter.net.proto.GalleryWillStartCountdownNotifyOuterClass.GalleryWillStartCountdownNotify buildPartial() {
         emu.grasscutter.net.proto.GalleryWillStartCountdownNotifyOuterClass.GalleryWillStartCountdownNotify result = new emu.grasscutter.net.proto.GalleryWillStartCountdownNotifyOuterClass.GalleryWillStartCountdownNotify(this);
         result.endTime_ = endTime_;
-        result.isEnd_ = isEnd_;
         result.galleryId_ = galleryId_;
+        result.isEnd_ = isEnd_;
         result.startSource_ = startSource_;
         onBuilt();
         return result;
@@ -523,11 +523,11 @@ public final class GalleryWillStartCountdownNotifyOuterClass {
         if (other.getEndTime() != 0) {
           setEndTime(other.getEndTime());
         }
-        if (other.getIsEnd() != false) {
-          setIsEnd(other.getIsEnd());
-        }
         if (other.getGalleryId() != 0) {
           setGalleryId(other.getGalleryId());
+        }
+        if (other.getIsEnd() != false) {
+          setIsEnd(other.getIsEnd());
         }
         if (other.startSource_ != 0) {
           setStartSourceValue(other.getStartSourceValue());
@@ -563,7 +563,7 @@ public final class GalleryWillStartCountdownNotifyOuterClass {
 
       private int endTime_ ;
       /**
-       * <code>uint32 end_time = 11;</code>
+       * <code>uint32 end_time = 4;</code>
        * @return The endTime.
        */
       @java.lang.Override
@@ -571,7 +571,7 @@ public final class GalleryWillStartCountdownNotifyOuterClass {
         return endTime_;
       }
       /**
-       * <code>uint32 end_time = 11;</code>
+       * <code>uint32 end_time = 4;</code>
        * @param value The endTime to set.
        * @return This builder for chaining.
        */
@@ -582,7 +582,7 @@ public final class GalleryWillStartCountdownNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 end_time = 11;</code>
+       * <code>uint32 end_time = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearEndTime() {
@@ -592,40 +592,9 @@ public final class GalleryWillStartCountdownNotifyOuterClass {
         return this;
       }
 
-      private boolean isEnd_ ;
-      /**
-       * <code>bool is_end = 7;</code>
-       * @return The isEnd.
-       */
-      @java.lang.Override
-      public boolean getIsEnd() {
-        return isEnd_;
-      }
-      /**
-       * <code>bool is_end = 7;</code>
-       * @param value The isEnd to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsEnd(boolean value) {
-        
-        isEnd_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_end = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsEnd() {
-        
-        isEnd_ = false;
-        onChanged();
-        return this;
-      }
-
       private int galleryId_ ;
       /**
-       * <code>uint32 gallery_id = 1;</code>
+       * <code>uint32 gallery_id = 3;</code>
        * @return The galleryId.
        */
       @java.lang.Override
@@ -633,7 +602,7 @@ public final class GalleryWillStartCountdownNotifyOuterClass {
         return galleryId_;
       }
       /**
-       * <code>uint32 gallery_id = 1;</code>
+       * <code>uint32 gallery_id = 3;</code>
        * @param value The galleryId to set.
        * @return This builder for chaining.
        */
@@ -644,7 +613,7 @@ public final class GalleryWillStartCountdownNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gallery_id = 1;</code>
+       * <code>uint32 gallery_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearGalleryId() {
@@ -654,16 +623,47 @@ public final class GalleryWillStartCountdownNotifyOuterClass {
         return this;
       }
 
+      private boolean isEnd_ ;
+      /**
+       * <code>bool is_end = 2;</code>
+       * @return The isEnd.
+       */
+      @java.lang.Override
+      public boolean getIsEnd() {
+        return isEnd_;
+      }
+      /**
+       * <code>bool is_end = 2;</code>
+       * @param value The isEnd to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsEnd(boolean value) {
+        
+        isEnd_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_end = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsEnd() {
+        
+        isEnd_ = false;
+        onChanged();
+        return this;
+      }
+
       private int startSource_ = 0;
       /**
-       * <code>.GalleryStartSource start_source = 10;</code>
+       * <code>.GalleryStartSource start_source = 8;</code>
        * @return The enum numeric value on the wire for startSource.
        */
       @java.lang.Override public int getStartSourceValue() {
         return startSource_;
       }
       /**
-       * <code>.GalleryStartSource start_source = 10;</code>
+       * <code>.GalleryStartSource start_source = 8;</code>
        * @param value The enum numeric value on the wire for startSource to set.
        * @return This builder for chaining.
        */
@@ -674,7 +674,7 @@ public final class GalleryWillStartCountdownNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.GalleryStartSource start_source = 10;</code>
+       * <code>.GalleryStartSource start_source = 8;</code>
        * @return The startSource.
        */
       @java.lang.Override
@@ -684,7 +684,7 @@ public final class GalleryWillStartCountdownNotifyOuterClass {
         return result == null ? emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.UNRECOGNIZED : result;
       }
       /**
-       * <code>.GalleryStartSource start_source = 10;</code>
+       * <code>.GalleryStartSource start_source = 8;</code>
        * @param value The startSource to set.
        * @return This builder for chaining.
        */
@@ -698,7 +698,7 @@ public final class GalleryWillStartCountdownNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.GalleryStartSource start_source = 10;</code>
+       * <code>.GalleryStartSource start_source = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearStartSource() {
@@ -776,9 +776,9 @@ public final class GalleryWillStartCountdownNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n%GalleryWillStartCountdownNotify.proto\032" +
       "\030GalleryStartSource.proto\"\202\001\n\037GalleryWil" +
-      "lStartCountdownNotify\022\020\n\010end_time\030\013 \001(\r\022" +
-      "\016\n\006is_end\030\007 \001(\010\022\022\n\ngallery_id\030\001 \001(\r\022)\n\014s" +
-      "tart_source\030\n \001(\0162\023.GalleryStartSourceB\033" +
+      "lStartCountdownNotify\022\020\n\010end_time\030\004 \001(\r\022" +
+      "\022\n\ngallery_id\030\003 \001(\r\022\016\n\006is_end\030\002 \001(\010\022)\n\014s" +
+      "tart_source\030\010 \001(\0162\023.GalleryStartSourceB\033" +
       "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -791,7 +791,7 @@ public final class GalleryWillStartCountdownNotifyOuterClass {
     internal_static_GalleryWillStartCountdownNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GalleryWillStartCountdownNotify_descriptor,
-        new java.lang.String[] { "EndTime", "IsEnd", "GalleryId", "StartSource", });
+        new java.lang.String[] { "EndTime", "GalleryId", "IsEnd", "StartSource", });
     emu.grasscutter.net.proto.GalleryStartSourceOuterClass.getDescriptor();
   }
 

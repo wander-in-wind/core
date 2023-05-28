@@ -19,15 +19,15 @@ public final class HomeGetGroupRecordReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 group_id = 10;</code>
+     * <code>uint32 group_id = 14;</code>
      * @return The groupId.
      */
     int getGroupId();
   }
   /**
    * <pre>
-   * Name: PKDNBHHIMDH
-   * CmdId: 4844
+   * CmdId: 4670
+   * Obf: PGLPEBOMONA
    * </pre>
    *
    * Protobuf type {@code HomeGetGroupRecordReq}
@@ -74,7 +74,7 @@ public final class HomeGetGroupRecordReqOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 112: {
 
               groupId_ = input.readUInt32();
               break;
@@ -111,10 +111,10 @@ public final class HomeGetGroupRecordReqOuterClass {
               emu.grasscutter.net.proto.HomeGetGroupRecordReqOuterClass.HomeGetGroupRecordReq.class, emu.grasscutter.net.proto.HomeGetGroupRecordReqOuterClass.HomeGetGroupRecordReq.Builder.class);
     }
 
-    public static final int GROUP_ID_FIELD_NUMBER = 10;
+    public static final int GROUP_ID_FIELD_NUMBER = 14;
     private int groupId_;
     /**
-     * <code>uint32 group_id = 10;</code>
+     * <code>uint32 group_id = 14;</code>
      * @return The groupId.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class HomeGetGroupRecordReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (groupId_ != 0) {
-        output.writeUInt32(10, groupId_);
+        output.writeUInt32(14, groupId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class HomeGetGroupRecordReqOuterClass {
       size = 0;
       if (groupId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, groupId_);
+          .computeUInt32Size(14, groupId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class HomeGetGroupRecordReqOuterClass {
     }
     /**
      * <pre>
-     * Name: PKDNBHHIMDH
-     * CmdId: 4844
+     * CmdId: 4670
+     * Obf: PGLPEBOMONA
      * </pre>
      *
      * Protobuf type {@code HomeGetGroupRecordReq}
@@ -431,7 +431,7 @@ public final class HomeGetGroupRecordReqOuterClass {
 
       private int groupId_ ;
       /**
-       * <code>uint32 group_id = 10;</code>
+       * <code>uint32 group_id = 14;</code>
        * @return The groupId.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class HomeGetGroupRecordReqOuterClass {
         return groupId_;
       }
       /**
-       * <code>uint32 group_id = 10;</code>
+       * <code>uint32 group_id = 14;</code>
        * @param value The groupId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class HomeGetGroupRecordReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 group_id = 10;</code>
+       * <code>uint32 group_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearGroupId() {
@@ -527,7 +527,7 @@ public final class HomeGetGroupRecordReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033HomeGetGroupRecordReq.proto\")\n\025HomeGet" +
-      "GroupRecordReq\022\020\n\010group_id\030\n \001(\rB\033\n\031emu." +
+      "GroupRecordReq\022\020\n\010group_id\030\016 \001(\rB\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

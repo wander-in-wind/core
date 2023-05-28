@@ -19,21 +19,21 @@ public final class PlantFlowerEditFlowerCombinationRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 schedule_id = 11;</code>
+     * <code>uint32 schedule_id = 6;</code>
      * @return The scheduleId.
      */
     int getScheduleId();
   }
   /**
    * <pre>
-   * Name: LDEIHIHDJOC
-   * CmdId: 8975
+   * CmdId: 8215
+   * Obf: IHNAHEHEHPG
    * </pre>
    *
    * Protobuf type {@code PlantFlowerEditFlowerCombinationRsp}
@@ -80,12 +80,12 @@ public final class PlantFlowerEditFlowerCombinationRspOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 8: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 88: {
+            case 48: {
 
               scheduleId_ = input.readUInt32();
               break;
@@ -122,10 +122,10 @@ public final class PlantFlowerEditFlowerCombinationRspOuterClass {
               emu.grasscutter.net.proto.PlantFlowerEditFlowerCombinationRspOuterClass.PlantFlowerEditFlowerCombinationRsp.class, emu.grasscutter.net.proto.PlantFlowerEditFlowerCombinationRspOuterClass.PlantFlowerEditFlowerCombinationRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 5;
+    public static final int RETCODE_FIELD_NUMBER = 1;
     private int retcode_;
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class PlantFlowerEditFlowerCombinationRspOuterClass {
       return retcode_;
     }
 
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 11;
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 6;
     private int scheduleId_;
     /**
-     * <code>uint32 schedule_id = 11;</code>
+     * <code>uint32 schedule_id = 6;</code>
      * @return The scheduleId.
      */
     @java.lang.Override
@@ -159,10 +159,10 @@ public final class PlantFlowerEditFlowerCombinationRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(5, retcode_);
+        output.writeInt32(1, retcode_);
       }
       if (scheduleId_ != 0) {
-        output.writeUInt32(11, scheduleId_);
+        output.writeUInt32(6, scheduleId_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +175,11 @@ public final class PlantFlowerEditFlowerCombinationRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, retcode_);
+          .computeInt32Size(1, retcode_);
       }
       if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, scheduleId_);
+          .computeUInt32Size(6, scheduleId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class PlantFlowerEditFlowerCombinationRspOuterClass {
     }
     /**
      * <pre>
-     * Name: LDEIHIHDJOC
-     * CmdId: 8975
+     * CmdId: 8215
+     * Obf: IHNAHEHEHPG
      * </pre>
      *
      * Protobuf type {@code PlantFlowerEditFlowerCombinationRsp}
@@ -470,7 +470,7 @@ public final class PlantFlowerEditFlowerCombinationRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 1;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class PlantFlowerEditFlowerCombinationRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 1;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class PlantFlowerEditFlowerCombinationRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -501,7 +501,7 @@ public final class PlantFlowerEditFlowerCombinationRspOuterClass {
 
       private int scheduleId_ ;
       /**
-       * <code>uint32 schedule_id = 11;</code>
+       * <code>uint32 schedule_id = 6;</code>
        * @return The scheduleId.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class PlantFlowerEditFlowerCombinationRspOuterClass {
         return scheduleId_;
       }
       /**
-       * <code>uint32 schedule_id = 11;</code>
+       * <code>uint32 schedule_id = 6;</code>
        * @param value The scheduleId to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class PlantFlowerEditFlowerCombinationRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 schedule_id = 11;</code>
+       * <code>uint32 schedule_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearScheduleId() {
@@ -598,7 +598,7 @@ public final class PlantFlowerEditFlowerCombinationRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n)PlantFlowerEditFlowerCombinationRsp.pr" +
       "oto\"K\n#PlantFlowerEditFlowerCombinationR" +
-      "sp\022\017\n\007retcode\030\005 \001(\005\022\023\n\013schedule_id\030\013 \001(\r" +
+      "sp\022\017\n\007retcode\030\001 \001(\005\022\023\n\013schedule_id\030\006 \001(\r" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

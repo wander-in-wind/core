@@ -19,7 +19,7 @@ public final class EnterFishingRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 fish_pool_id = 9;</code>
+     * <code>uint32 fish_pool_id = 3;</code>
      * @return The fishPoolId.
      */
     int getFishPoolId();
@@ -32,8 +32,8 @@ public final class EnterFishingRspOuterClass {
   }
   /**
    * <pre>
-   * Name: NMPDEBMEIDN
-   * CmdId: 5843
+   * CmdId: 5808
+   * Obf: JNAKALJCBCJ
    * </pre>
    *
    * Protobuf type {@code EnterFishingRsp}
@@ -80,7 +80,7 @@ public final class EnterFishingRspOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 24: {
 
               fishPoolId_ = input.readUInt32();
               break;
@@ -122,10 +122,10 @@ public final class EnterFishingRspOuterClass {
               emu.grasscutter.net.proto.EnterFishingRspOuterClass.EnterFishingRsp.class, emu.grasscutter.net.proto.EnterFishingRspOuterClass.EnterFishingRsp.Builder.class);
     }
 
-    public static final int FISH_POOL_ID_FIELD_NUMBER = 9;
+    public static final int FISH_POOL_ID_FIELD_NUMBER = 3;
     private int fishPoolId_;
     /**
-     * <code>uint32 fish_pool_id = 9;</code>
+     * <code>uint32 fish_pool_id = 3;</code>
      * @return The fishPoolId.
      */
     @java.lang.Override
@@ -159,7 +159,7 @@ public final class EnterFishingRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (fishPoolId_ != 0) {
-        output.writeUInt32(9, fishPoolId_);
+        output.writeUInt32(3, fishPoolId_);
       }
       if (retcode_ != 0) {
         output.writeInt32(10, retcode_);
@@ -175,7 +175,7 @@ public final class EnterFishingRspOuterClass {
       size = 0;
       if (fishPoolId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, fishPoolId_);
+          .computeUInt32Size(3, fishPoolId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -312,8 +312,8 @@ public final class EnterFishingRspOuterClass {
     }
     /**
      * <pre>
-     * Name: NMPDEBMEIDN
-     * CmdId: 5843
+     * CmdId: 5808
+     * Obf: JNAKALJCBCJ
      * </pre>
      *
      * Protobuf type {@code EnterFishingRsp}
@@ -470,7 +470,7 @@ public final class EnterFishingRspOuterClass {
 
       private int fishPoolId_ ;
       /**
-       * <code>uint32 fish_pool_id = 9;</code>
+       * <code>uint32 fish_pool_id = 3;</code>
        * @return The fishPoolId.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class EnterFishingRspOuterClass {
         return fishPoolId_;
       }
       /**
-       * <code>uint32 fish_pool_id = 9;</code>
+       * <code>uint32 fish_pool_id = 3;</code>
        * @param value The fishPoolId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class EnterFishingRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 fish_pool_id = 9;</code>
+       * <code>uint32 fish_pool_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearFishPoolId() {
@@ -597,7 +597,7 @@ public final class EnterFishingRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025EnterFishingRsp.proto\"8\n\017EnterFishingR" +
-      "sp\022\024\n\014fish_pool_id\030\t \001(\r\022\017\n\007retcode\030\n \001(" +
+      "sp\022\024\n\014fish_pool_id\030\003 \001(\r\022\017\n\007retcode\030\n \001(" +
       "\005B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

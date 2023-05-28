@@ -19,32 +19,32 @@ public final class VintageHuntingFirstStageInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 FHICAKKCBPF = 15;</code>
-     * @return The fHICAKKCBPF.
+     * <code>uint32 IIFPOPNBHKN = 4;</code>
+     * @return The iIFPOPNBHKN.
      */
-    int getFHICAKKCBPF();
+    int getIIFPOPNBHKN();
 
     /**
-     * <code>uint32 MEJPBKFHFNH = 9;</code>
-     * @return The mEJPBKFHFNH.
-     */
-    int getMEJPBKFHFNH();
-
-    /**
-     * <code>uint32 MKAMDEJJPAO = 14;</code>
-     * @return The mKAMDEJJPAO.
-     */
-    int getMKAMDEJJPAO();
-
-    /**
-     * <code>uint32 score = 5;</code>
+     * <code>uint32 score = 15;</code>
      * @return The score.
      */
     int getScore();
+
+    /**
+     * <code>uint32 JHDHJDPNNOK = 11;</code>
+     * @return The jHDHJDPNNOK.
+     */
+    int getJHDHJDPNNOK();
+
+    /**
+     * <code>uint32 GBDOOANMBGO = 13;</code>
+     * @return The gBDOOANMBGO.
+     */
+    int getGBDOOANMBGO();
   }
   /**
    * <pre>
-   * Name: OMOBLJGICAI
+   * Obf: KJEODHHMHDG
    * </pre>
    *
    * Protobuf type {@code VintageHuntingFirstStageInfo}
@@ -91,24 +91,24 @@ public final class VintageHuntingFirstStageInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 32: {
 
-              score_ = input.readUInt32();
+              iIFPOPNBHKN_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 88: {
 
-              mEJPBKFHFNH_ = input.readUInt32();
+              jHDHJDPNNOK_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 104: {
 
-              mKAMDEJJPAO_ = input.readUInt32();
+              gBDOOANMBGO_ = input.readUInt32();
               break;
             }
             case 120: {
 
-              fHICAKKCBPF_ = input.readUInt32();
+              score_ = input.readUInt32();
               break;
             }
             default: {
@@ -143,48 +143,48 @@ public final class VintageHuntingFirstStageInfoOuterClass {
               emu.grasscutter.net.proto.VintageHuntingFirstStageInfoOuterClass.VintageHuntingFirstStageInfo.class, emu.grasscutter.net.proto.VintageHuntingFirstStageInfoOuterClass.VintageHuntingFirstStageInfo.Builder.class);
     }
 
-    public static final int FHICAKKCBPF_FIELD_NUMBER = 15;
-    private int fHICAKKCBPF_;
+    public static final int IIFPOPNBHKN_FIELD_NUMBER = 4;
+    private int iIFPOPNBHKN_;
     /**
-     * <code>uint32 FHICAKKCBPF = 15;</code>
-     * @return The fHICAKKCBPF.
+     * <code>uint32 IIFPOPNBHKN = 4;</code>
+     * @return The iIFPOPNBHKN.
      */
     @java.lang.Override
-    public int getFHICAKKCBPF() {
-      return fHICAKKCBPF_;
+    public int getIIFPOPNBHKN() {
+      return iIFPOPNBHKN_;
     }
 
-    public static final int MEJPBKFHFNH_FIELD_NUMBER = 9;
-    private int mEJPBKFHFNH_;
-    /**
-     * <code>uint32 MEJPBKFHFNH = 9;</code>
-     * @return The mEJPBKFHFNH.
-     */
-    @java.lang.Override
-    public int getMEJPBKFHFNH() {
-      return mEJPBKFHFNH_;
-    }
-
-    public static final int MKAMDEJJPAO_FIELD_NUMBER = 14;
-    private int mKAMDEJJPAO_;
-    /**
-     * <code>uint32 MKAMDEJJPAO = 14;</code>
-     * @return The mKAMDEJJPAO.
-     */
-    @java.lang.Override
-    public int getMKAMDEJJPAO() {
-      return mKAMDEJJPAO_;
-    }
-
-    public static final int SCORE_FIELD_NUMBER = 5;
+    public static final int SCORE_FIELD_NUMBER = 15;
     private int score_;
     /**
-     * <code>uint32 score = 5;</code>
+     * <code>uint32 score = 15;</code>
      * @return The score.
      */
     @java.lang.Override
     public int getScore() {
       return score_;
+    }
+
+    public static final int JHDHJDPNNOK_FIELD_NUMBER = 11;
+    private int jHDHJDPNNOK_;
+    /**
+     * <code>uint32 JHDHJDPNNOK = 11;</code>
+     * @return The jHDHJDPNNOK.
+     */
+    @java.lang.Override
+    public int getJHDHJDPNNOK() {
+      return jHDHJDPNNOK_;
+    }
+
+    public static final int GBDOOANMBGO_FIELD_NUMBER = 13;
+    private int gBDOOANMBGO_;
+    /**
+     * <code>uint32 GBDOOANMBGO = 13;</code>
+     * @return The gBDOOANMBGO.
+     */
+    @java.lang.Override
+    public int getGBDOOANMBGO() {
+      return gBDOOANMBGO_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -201,17 +201,17 @@ public final class VintageHuntingFirstStageInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (iIFPOPNBHKN_ != 0) {
+        output.writeUInt32(4, iIFPOPNBHKN_);
+      }
+      if (jHDHJDPNNOK_ != 0) {
+        output.writeUInt32(11, jHDHJDPNNOK_);
+      }
+      if (gBDOOANMBGO_ != 0) {
+        output.writeUInt32(13, gBDOOANMBGO_);
+      }
       if (score_ != 0) {
-        output.writeUInt32(5, score_);
-      }
-      if (mEJPBKFHFNH_ != 0) {
-        output.writeUInt32(9, mEJPBKFHFNH_);
-      }
-      if (mKAMDEJJPAO_ != 0) {
-        output.writeUInt32(14, mKAMDEJJPAO_);
-      }
-      if (fHICAKKCBPF_ != 0) {
-        output.writeUInt32(15, fHICAKKCBPF_);
+        output.writeUInt32(15, score_);
       }
       unknownFields.writeTo(output);
     }
@@ -222,21 +222,21 @@ public final class VintageHuntingFirstStageInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (iIFPOPNBHKN_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, iIFPOPNBHKN_);
+      }
+      if (jHDHJDPNNOK_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, jHDHJDPNNOK_);
+      }
+      if (gBDOOANMBGO_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, gBDOOANMBGO_);
+      }
       if (score_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, score_);
-      }
-      if (mEJPBKFHFNH_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, mEJPBKFHFNH_);
-      }
-      if (mKAMDEJJPAO_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, mKAMDEJJPAO_);
-      }
-      if (fHICAKKCBPF_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, fHICAKKCBPF_);
+          .computeUInt32Size(15, score_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -253,14 +253,14 @@ public final class VintageHuntingFirstStageInfoOuterClass {
       }
       emu.grasscutter.net.proto.VintageHuntingFirstStageInfoOuterClass.VintageHuntingFirstStageInfo other = (emu.grasscutter.net.proto.VintageHuntingFirstStageInfoOuterClass.VintageHuntingFirstStageInfo) obj;
 
-      if (getFHICAKKCBPF()
-          != other.getFHICAKKCBPF()) return false;
-      if (getMEJPBKFHFNH()
-          != other.getMEJPBKFHFNH()) return false;
-      if (getMKAMDEJJPAO()
-          != other.getMKAMDEJJPAO()) return false;
+      if (getIIFPOPNBHKN()
+          != other.getIIFPOPNBHKN()) return false;
       if (getScore()
           != other.getScore()) return false;
+      if (getJHDHJDPNNOK()
+          != other.getJHDHJDPNNOK()) return false;
+      if (getGBDOOANMBGO()
+          != other.getGBDOOANMBGO()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -272,14 +272,14 @@ public final class VintageHuntingFirstStageInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + FHICAKKCBPF_FIELD_NUMBER;
-      hash = (53 * hash) + getFHICAKKCBPF();
-      hash = (37 * hash) + MEJPBKFHFNH_FIELD_NUMBER;
-      hash = (53 * hash) + getMEJPBKFHFNH();
-      hash = (37 * hash) + MKAMDEJJPAO_FIELD_NUMBER;
-      hash = (53 * hash) + getMKAMDEJJPAO();
+      hash = (37 * hash) + IIFPOPNBHKN_FIELD_NUMBER;
+      hash = (53 * hash) + getIIFPOPNBHKN();
       hash = (37 * hash) + SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getScore();
+      hash = (37 * hash) + JHDHJDPNNOK_FIELD_NUMBER;
+      hash = (53 * hash) + getJHDHJDPNNOK();
+      hash = (37 * hash) + GBDOOANMBGO_FIELD_NUMBER;
+      hash = (53 * hash) + getGBDOOANMBGO();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -377,7 +377,7 @@ public final class VintageHuntingFirstStageInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: OMOBLJGICAI
+     * Obf: KJEODHHMHDG
      * </pre>
      *
      * Protobuf type {@code VintageHuntingFirstStageInfo}
@@ -417,13 +417,13 @@ public final class VintageHuntingFirstStageInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        fHICAKKCBPF_ = 0;
-
-        mEJPBKFHFNH_ = 0;
-
-        mKAMDEJJPAO_ = 0;
+        iIFPOPNBHKN_ = 0;
 
         score_ = 0;
+
+        jHDHJDPNNOK_ = 0;
+
+        gBDOOANMBGO_ = 0;
 
         return this;
       }
@@ -451,10 +451,10 @@ public final class VintageHuntingFirstStageInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.VintageHuntingFirstStageInfoOuterClass.VintageHuntingFirstStageInfo buildPartial() {
         emu.grasscutter.net.proto.VintageHuntingFirstStageInfoOuterClass.VintageHuntingFirstStageInfo result = new emu.grasscutter.net.proto.VintageHuntingFirstStageInfoOuterClass.VintageHuntingFirstStageInfo(this);
-        result.fHICAKKCBPF_ = fHICAKKCBPF_;
-        result.mEJPBKFHFNH_ = mEJPBKFHFNH_;
-        result.mKAMDEJJPAO_ = mKAMDEJJPAO_;
+        result.iIFPOPNBHKN_ = iIFPOPNBHKN_;
         result.score_ = score_;
+        result.jHDHJDPNNOK_ = jHDHJDPNNOK_;
+        result.gBDOOANMBGO_ = gBDOOANMBGO_;
         onBuilt();
         return result;
       }
@@ -503,17 +503,17 @@ public final class VintageHuntingFirstStageInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.VintageHuntingFirstStageInfoOuterClass.VintageHuntingFirstStageInfo other) {
         if (other == emu.grasscutter.net.proto.VintageHuntingFirstStageInfoOuterClass.VintageHuntingFirstStageInfo.getDefaultInstance()) return this;
-        if (other.getFHICAKKCBPF() != 0) {
-          setFHICAKKCBPF(other.getFHICAKKCBPF());
-        }
-        if (other.getMEJPBKFHFNH() != 0) {
-          setMEJPBKFHFNH(other.getMEJPBKFHFNH());
-        }
-        if (other.getMKAMDEJJPAO() != 0) {
-          setMKAMDEJJPAO(other.getMKAMDEJJPAO());
+        if (other.getIIFPOPNBHKN() != 0) {
+          setIIFPOPNBHKN(other.getIIFPOPNBHKN());
         }
         if (other.getScore() != 0) {
           setScore(other.getScore());
+        }
+        if (other.getJHDHJDPNNOK() != 0) {
+          setJHDHJDPNNOK(other.getJHDHJDPNNOK());
+        }
+        if (other.getGBDOOANMBGO() != 0) {
+          setGBDOOANMBGO(other.getGBDOOANMBGO());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -544,102 +544,40 @@ public final class VintageHuntingFirstStageInfoOuterClass {
         return this;
       }
 
-      private int fHICAKKCBPF_ ;
+      private int iIFPOPNBHKN_ ;
       /**
-       * <code>uint32 FHICAKKCBPF = 15;</code>
-       * @return The fHICAKKCBPF.
+       * <code>uint32 IIFPOPNBHKN = 4;</code>
+       * @return The iIFPOPNBHKN.
        */
       @java.lang.Override
-      public int getFHICAKKCBPF() {
-        return fHICAKKCBPF_;
+      public int getIIFPOPNBHKN() {
+        return iIFPOPNBHKN_;
       }
       /**
-       * <code>uint32 FHICAKKCBPF = 15;</code>
-       * @param value The fHICAKKCBPF to set.
+       * <code>uint32 IIFPOPNBHKN = 4;</code>
+       * @param value The iIFPOPNBHKN to set.
        * @return This builder for chaining.
        */
-      public Builder setFHICAKKCBPF(int value) {
+      public Builder setIIFPOPNBHKN(int value) {
         
-        fHICAKKCBPF_ = value;
+        iIFPOPNBHKN_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 FHICAKKCBPF = 15;</code>
+       * <code>uint32 IIFPOPNBHKN = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFHICAKKCBPF() {
+      public Builder clearIIFPOPNBHKN() {
         
-        fHICAKKCBPF_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int mEJPBKFHFNH_ ;
-      /**
-       * <code>uint32 MEJPBKFHFNH = 9;</code>
-       * @return The mEJPBKFHFNH.
-       */
-      @java.lang.Override
-      public int getMEJPBKFHFNH() {
-        return mEJPBKFHFNH_;
-      }
-      /**
-       * <code>uint32 MEJPBKFHFNH = 9;</code>
-       * @param value The mEJPBKFHFNH to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMEJPBKFHFNH(int value) {
-        
-        mEJPBKFHFNH_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 MEJPBKFHFNH = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMEJPBKFHFNH() {
-        
-        mEJPBKFHFNH_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int mKAMDEJJPAO_ ;
-      /**
-       * <code>uint32 MKAMDEJJPAO = 14;</code>
-       * @return The mKAMDEJJPAO.
-       */
-      @java.lang.Override
-      public int getMKAMDEJJPAO() {
-        return mKAMDEJJPAO_;
-      }
-      /**
-       * <code>uint32 MKAMDEJJPAO = 14;</code>
-       * @param value The mKAMDEJJPAO to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMKAMDEJJPAO(int value) {
-        
-        mKAMDEJJPAO_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 MKAMDEJJPAO = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMKAMDEJJPAO() {
-        
-        mKAMDEJJPAO_ = 0;
+        iIFPOPNBHKN_ = 0;
         onChanged();
         return this;
       }
 
       private int score_ ;
       /**
-       * <code>uint32 score = 5;</code>
+       * <code>uint32 score = 15;</code>
        * @return The score.
        */
       @java.lang.Override
@@ -647,7 +585,7 @@ public final class VintageHuntingFirstStageInfoOuterClass {
         return score_;
       }
       /**
-       * <code>uint32 score = 5;</code>
+       * <code>uint32 score = 15;</code>
        * @param value The score to set.
        * @return This builder for chaining.
        */
@@ -658,12 +596,74 @@ public final class VintageHuntingFirstStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 score = 5;</code>
+       * <code>uint32 score = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearScore() {
         
         score_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int jHDHJDPNNOK_ ;
+      /**
+       * <code>uint32 JHDHJDPNNOK = 11;</code>
+       * @return The jHDHJDPNNOK.
+       */
+      @java.lang.Override
+      public int getJHDHJDPNNOK() {
+        return jHDHJDPNNOK_;
+      }
+      /**
+       * <code>uint32 JHDHJDPNNOK = 11;</code>
+       * @param value The jHDHJDPNNOK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setJHDHJDPNNOK(int value) {
+        
+        jHDHJDPNNOK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 JHDHJDPNNOK = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearJHDHJDPNNOK() {
+        
+        jHDHJDPNNOK_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int gBDOOANMBGO_ ;
+      /**
+       * <code>uint32 GBDOOANMBGO = 13;</code>
+       * @return The gBDOOANMBGO.
+       */
+      @java.lang.Override
+      public int getGBDOOANMBGO() {
+        return gBDOOANMBGO_;
+      }
+      /**
+       * <code>uint32 GBDOOANMBGO = 13;</code>
+       * @param value The gBDOOANMBGO to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGBDOOANMBGO(int value) {
+        
+        gBDOOANMBGO_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 GBDOOANMBGO = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGBDOOANMBGO() {
+        
+        gBDOOANMBGO_ = 0;
         onChanged();
         return this;
       }
@@ -735,9 +735,9 @@ public final class VintageHuntingFirstStageInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\"VintageHuntingFirstStageInfo.proto\"l\n\034" +
-      "VintageHuntingFirstStageInfo\022\023\n\013FHICAKKC" +
-      "BPF\030\017 \001(\r\022\023\n\013MEJPBKFHFNH\030\t \001(\r\022\023\n\013MKAMDE" +
-      "JJPAO\030\016 \001(\r\022\r\n\005score\030\005 \001(\rB\033\n\031emu.grassc" +
+      "VintageHuntingFirstStageInfo\022\023\n\013IIFPOPNB" +
+      "HKN\030\004 \001(\r\022\r\n\005score\030\017 \001(\r\022\023\n\013JHDHJDPNNOK\030" +
+      "\013 \001(\r\022\023\n\013GBDOOANMBGO\030\r \001(\rB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -749,7 +749,7 @@ public final class VintageHuntingFirstStageInfoOuterClass {
     internal_static_VintageHuntingFirstStageInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_VintageHuntingFirstStageInfo_descriptor,
-        new java.lang.String[] { "FHICAKKCBPF", "MEJPBKFHFNH", "MKAMDEJJPAO", "Score", });
+        new java.lang.String[] { "IIFPOPNBHKN", "Score", "JHDHJDPNNOK", "GBDOOANMBGO", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

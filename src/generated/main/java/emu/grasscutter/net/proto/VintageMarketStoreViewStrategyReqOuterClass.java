@@ -19,32 +19,32 @@ public final class VintageMarketStoreViewStrategyReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 strategy_list = 2;</code>
+     * <code>uint32 strategy_id = 2;</code>
+     * @return The strategyId.
+     */
+    int getStrategyId();
+
+    /**
+     * <code>repeated uint32 strategy_list = 13;</code>
      * @return A list containing the strategyList.
      */
     java.util.List<java.lang.Integer> getStrategyListList();
     /**
-     * <code>repeated uint32 strategy_list = 2;</code>
+     * <code>repeated uint32 strategy_list = 13;</code>
      * @return The count of strategyList.
      */
     int getStrategyListCount();
     /**
-     * <code>repeated uint32 strategy_list = 2;</code>
+     * <code>repeated uint32 strategy_list = 13;</code>
      * @param index The index of the element to return.
      * @return The strategyList at the given index.
      */
     int getStrategyList(int index);
-
-    /**
-     * <code>uint32 strategy_id = 14;</code>
-     * @return The strategyId.
-     */
-    int getStrategyId();
   }
   /**
    * <pre>
-   * Name: HMCFIPKNGCM
-   * CmdId: 22317
+   * CmdId: 21521
+   * Obf: FMKDOMIHJDP
    * </pre>
    *
    * Protobuf type {@code VintageMarketStoreViewStrategyReq}
@@ -94,6 +94,11 @@ public final class VintageMarketStoreViewStrategyReqOuterClass {
               done = true;
               break;
             case 16: {
+
+              strategyId_ = input.readUInt32();
+              break;
+            }
+            case 104: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 strategyList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -101,7 +106,7 @@ public final class VintageMarketStoreViewStrategyReqOuterClass {
               strategyList_.addInt(input.readUInt32());
               break;
             }
-            case 18: {
+            case 106: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -112,11 +117,6 @@ public final class VintageMarketStoreViewStrategyReqOuterClass {
                 strategyList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 112: {
-
-              strategyId_ = input.readUInt32();
               break;
             }
             default: {
@@ -154,10 +154,21 @@ public final class VintageMarketStoreViewStrategyReqOuterClass {
               emu.grasscutter.net.proto.VintageMarketStoreViewStrategyReqOuterClass.VintageMarketStoreViewStrategyReq.class, emu.grasscutter.net.proto.VintageMarketStoreViewStrategyReqOuterClass.VintageMarketStoreViewStrategyReq.Builder.class);
     }
 
-    public static final int STRATEGY_LIST_FIELD_NUMBER = 2;
+    public static final int STRATEGY_ID_FIELD_NUMBER = 2;
+    private int strategyId_;
+    /**
+     * <code>uint32 strategy_id = 2;</code>
+     * @return The strategyId.
+     */
+    @java.lang.Override
+    public int getStrategyId() {
+      return strategyId_;
+    }
+
+    public static final int STRATEGY_LIST_FIELD_NUMBER = 13;
     private com.google.protobuf.Internal.IntList strategyList_;
     /**
-     * <code>repeated uint32 strategy_list = 2;</code>
+     * <code>repeated uint32 strategy_list = 13;</code>
      * @return A list containing the strategyList.
      */
     @java.lang.Override
@@ -166,14 +177,14 @@ public final class VintageMarketStoreViewStrategyReqOuterClass {
       return strategyList_;
     }
     /**
-     * <code>repeated uint32 strategy_list = 2;</code>
+     * <code>repeated uint32 strategy_list = 13;</code>
      * @return The count of strategyList.
      */
     public int getStrategyListCount() {
       return strategyList_.size();
     }
     /**
-     * <code>repeated uint32 strategy_list = 2;</code>
+     * <code>repeated uint32 strategy_list = 13;</code>
      * @param index The index of the element to return.
      * @return The strategyList at the given index.
      */
@@ -181,17 +192,6 @@ public final class VintageMarketStoreViewStrategyReqOuterClass {
       return strategyList_.getInt(index);
     }
     private int strategyListMemoizedSerializedSize = -1;
-
-    public static final int STRATEGY_ID_FIELD_NUMBER = 14;
-    private int strategyId_;
-    /**
-     * <code>uint32 strategy_id = 14;</code>
-     * @return The strategyId.
-     */
-    @java.lang.Override
-    public int getStrategyId() {
-      return strategyId_;
-    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -208,15 +208,15 @@ public final class VintageMarketStoreViewStrategyReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (strategyId_ != 0) {
+        output.writeUInt32(2, strategyId_);
+      }
       if (getStrategyListList().size() > 0) {
-        output.writeUInt32NoTag(18);
+        output.writeUInt32NoTag(106);
         output.writeUInt32NoTag(strategyListMemoizedSerializedSize);
       }
       for (int i = 0; i < strategyList_.size(); i++) {
         output.writeUInt32NoTag(strategyList_.getInt(i));
-      }
-      if (strategyId_ != 0) {
-        output.writeUInt32(14, strategyId_);
       }
       unknownFields.writeTo(output);
     }
@@ -227,6 +227,10 @@ public final class VintageMarketStoreViewStrategyReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (strategyId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, strategyId_);
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < strategyList_.size(); i++) {
@@ -240,10 +244,6 @@ public final class VintageMarketStoreViewStrategyReqOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         strategyListMemoizedSerializedSize = dataSize;
-      }
-      if (strategyId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, strategyId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -260,10 +260,10 @@ public final class VintageMarketStoreViewStrategyReqOuterClass {
       }
       emu.grasscutter.net.proto.VintageMarketStoreViewStrategyReqOuterClass.VintageMarketStoreViewStrategyReq other = (emu.grasscutter.net.proto.VintageMarketStoreViewStrategyReqOuterClass.VintageMarketStoreViewStrategyReq) obj;
 
-      if (!getStrategyListList()
-          .equals(other.getStrategyListList())) return false;
       if (getStrategyId()
           != other.getStrategyId()) return false;
+      if (!getStrategyListList()
+          .equals(other.getStrategyListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -275,12 +275,12 @@ public final class VintageMarketStoreViewStrategyReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + STRATEGY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStrategyId();
       if (getStrategyListCount() > 0) {
         hash = (37 * hash) + STRATEGY_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getStrategyListList().hashCode();
       }
-      hash = (37 * hash) + STRATEGY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getStrategyId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -378,8 +378,8 @@ public final class VintageMarketStoreViewStrategyReqOuterClass {
     }
     /**
      * <pre>
-     * Name: HMCFIPKNGCM
-     * CmdId: 22317
+     * CmdId: 21521
+     * Obf: FMKDOMIHJDP
      * </pre>
      *
      * Protobuf type {@code VintageMarketStoreViewStrategyReq}
@@ -419,10 +419,10 @@ public final class VintageMarketStoreViewStrategyReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        strategyList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         strategyId_ = 0;
 
+        strategyList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -450,12 +450,12 @@ public final class VintageMarketStoreViewStrategyReqOuterClass {
       public emu.grasscutter.net.proto.VintageMarketStoreViewStrategyReqOuterClass.VintageMarketStoreViewStrategyReq buildPartial() {
         emu.grasscutter.net.proto.VintageMarketStoreViewStrategyReqOuterClass.VintageMarketStoreViewStrategyReq result = new emu.grasscutter.net.proto.VintageMarketStoreViewStrategyReqOuterClass.VintageMarketStoreViewStrategyReq(this);
         int from_bitField0_ = bitField0_;
+        result.strategyId_ = strategyId_;
         if (((bitField0_ & 0x00000001) != 0)) {
           strategyList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.strategyList_ = strategyList_;
-        result.strategyId_ = strategyId_;
         onBuilt();
         return result;
       }
@@ -504,6 +504,9 @@ public final class VintageMarketStoreViewStrategyReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.VintageMarketStoreViewStrategyReqOuterClass.VintageMarketStoreViewStrategyReq other) {
         if (other == emu.grasscutter.net.proto.VintageMarketStoreViewStrategyReqOuterClass.VintageMarketStoreViewStrategyReq.getDefaultInstance()) return this;
+        if (other.getStrategyId() != 0) {
+          setStrategyId(other.getStrategyId());
+        }
         if (!other.strategyList_.isEmpty()) {
           if (strategyList_.isEmpty()) {
             strategyList_ = other.strategyList_;
@@ -513,9 +516,6 @@ public final class VintageMarketStoreViewStrategyReqOuterClass {
             strategyList_.addAll(other.strategyList_);
           }
           onChanged();
-        }
-        if (other.getStrategyId() != 0) {
-          setStrategyId(other.getStrategyId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -547,6 +547,37 @@ public final class VintageMarketStoreViewStrategyReqOuterClass {
       }
       private int bitField0_;
 
+      private int strategyId_ ;
+      /**
+       * <code>uint32 strategy_id = 2;</code>
+       * @return The strategyId.
+       */
+      @java.lang.Override
+      public int getStrategyId() {
+        return strategyId_;
+      }
+      /**
+       * <code>uint32 strategy_id = 2;</code>
+       * @param value The strategyId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStrategyId(int value) {
+        
+        strategyId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 strategy_id = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStrategyId() {
+        
+        strategyId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private com.google.protobuf.Internal.IntList strategyList_ = emptyIntList();
       private void ensureStrategyListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -555,7 +586,7 @@ public final class VintageMarketStoreViewStrategyReqOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 strategy_list = 2;</code>
+       * <code>repeated uint32 strategy_list = 13;</code>
        * @return A list containing the strategyList.
        */
       public java.util.List<java.lang.Integer>
@@ -564,14 +595,14 @@ public final class VintageMarketStoreViewStrategyReqOuterClass {
                  java.util.Collections.unmodifiableList(strategyList_) : strategyList_;
       }
       /**
-       * <code>repeated uint32 strategy_list = 2;</code>
+       * <code>repeated uint32 strategy_list = 13;</code>
        * @return The count of strategyList.
        */
       public int getStrategyListCount() {
         return strategyList_.size();
       }
       /**
-       * <code>repeated uint32 strategy_list = 2;</code>
+       * <code>repeated uint32 strategy_list = 13;</code>
        * @param index The index of the element to return.
        * @return The strategyList at the given index.
        */
@@ -579,7 +610,7 @@ public final class VintageMarketStoreViewStrategyReqOuterClass {
         return strategyList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 strategy_list = 2;</code>
+       * <code>repeated uint32 strategy_list = 13;</code>
        * @param index The index to set the value at.
        * @param value The strategyList to set.
        * @return This builder for chaining.
@@ -592,7 +623,7 @@ public final class VintageMarketStoreViewStrategyReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 strategy_list = 2;</code>
+       * <code>repeated uint32 strategy_list = 13;</code>
        * @param value The strategyList to add.
        * @return This builder for chaining.
        */
@@ -603,7 +634,7 @@ public final class VintageMarketStoreViewStrategyReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 strategy_list = 2;</code>
+       * <code>repeated uint32 strategy_list = 13;</code>
        * @param values The strategyList to add.
        * @return This builder for chaining.
        */
@@ -616,43 +647,12 @@ public final class VintageMarketStoreViewStrategyReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 strategy_list = 2;</code>
+       * <code>repeated uint32 strategy_list = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearStrategyList() {
         strategyList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private int strategyId_ ;
-      /**
-       * <code>uint32 strategy_id = 14;</code>
-       * @return The strategyId.
-       */
-      @java.lang.Override
-      public int getStrategyId() {
-        return strategyId_;
-      }
-      /**
-       * <code>uint32 strategy_id = 14;</code>
-       * @param value The strategyId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStrategyId(int value) {
-        
-        strategyId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 strategy_id = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStrategyId() {
-        
-        strategyId_ = 0;
         onChanged();
         return this;
       }
@@ -724,8 +724,8 @@ public final class VintageMarketStoreViewStrategyReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\'VintageMarketStoreViewStrategyReq.prot" +
-      "o\"O\n!VintageMarketStoreViewStrategyReq\022\025" +
-      "\n\rstrategy_list\030\002 \003(\r\022\023\n\013strategy_id\030\016 \001" +
+      "o\"O\n!VintageMarketStoreViewStrategyReq\022\023" +
+      "\n\013strategy_id\030\002 \001(\r\022\025\n\rstrategy_list\030\r \003" +
       "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -737,7 +737,7 @@ public final class VintageMarketStoreViewStrategyReqOuterClass {
     internal_static_VintageMarketStoreViewStrategyReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_VintageMarketStoreViewStrategyReq_descriptor,
-        new java.lang.String[] { "StrategyList", "StrategyId", });
+        new java.lang.String[] { "StrategyId", "StrategyList", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

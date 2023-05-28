@@ -19,109 +19,109 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 IDNBPKLAGJA = 3;</code>
-     * @return A list containing the iDNBPKLAGJA.
-     */
-    java.util.List<java.lang.Integer> getIDNBPKLAGJAList();
-    /**
-     * <code>repeated uint32 IDNBPKLAGJA = 3;</code>
-     * @return The count of iDNBPKLAGJA.
-     */
-    int getIDNBPKLAGJACount();
-    /**
-     * <code>repeated uint32 IDNBPKLAGJA = 3;</code>
-     * @param index The index of the element to return.
-     * @return The iDNBPKLAGJA at the given index.
-     */
-    int getIDNBPKLAGJA(int index);
-
-    /**
-     * <code>uint32 dungeon_id = 4;</code>
-     * @return The dungeonId.
-     */
-    int getDungeonId();
-
-    /**
-     * <code>uint32 cur_round = 7;</code>
+     * <code>uint32 cur_round = 13;</code>
      * @return The curRound.
      */
     int getCurRound();
 
     /**
-     * <code>uint32 cur_room = 9;</code>
-     * @return The curRoom.
+     * <code>repeated uint32 ONGACECOCCB = 6;</code>
+     * @return A list containing the oNGACECOCCB.
      */
-    int getCurRoom();
-
+    java.util.List<java.lang.Integer> getONGACECOCCBList();
     /**
-     * <code>repeated .RogueDiaryRoomInfo room_list = 10;</code>
+     * <code>repeated uint32 ONGACECOCCB = 6;</code>
+     * @return The count of oNGACECOCCB.
      */
-    java.util.List<emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfo> 
-        getRoomListList();
+    int getONGACECOCCBCount();
     /**
-     * <code>repeated .RogueDiaryRoomInfo room_list = 10;</code>
-     */
-    emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfo getRoomList(int index);
-    /**
-     * <code>repeated .RogueDiaryRoomInfo room_list = 10;</code>
-     */
-    int getRoomListCount();
-    /**
-     * <code>repeated .RogueDiaryRoomInfo room_list = 10;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfoOrBuilder> 
-        getRoomListOrBuilderList();
-    /**
-     * <code>repeated .RogueDiaryRoomInfo room_list = 10;</code>
-     */
-    emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfoOrBuilder getRoomListOrBuilder(
-        int index);
-
-    /**
-     * <code>uint32 time = 11;</code>
-     * @return The time.
-     */
-    int getTime();
-
-    /**
-     * <code>repeated uint32 OJDLDMPFFAD = 13;</code>
-     * @return A list containing the oJDLDMPFFAD.
-     */
-    java.util.List<java.lang.Integer> getOJDLDMPFFADList();
-    /**
-     * <code>repeated uint32 OJDLDMPFFAD = 13;</code>
-     * @return The count of oJDLDMPFFAD.
-     */
-    int getOJDLDMPFFADCount();
-    /**
-     * <code>repeated uint32 OJDLDMPFFAD = 13;</code>
+     * <code>repeated uint32 ONGACECOCCB = 6;</code>
      * @param index The index of the element to return.
-     * @return The oJDLDMPFFAD at the given index.
+     * @return The oNGACECOCCB at the given index.
      */
-    int getOJDLDMPFFAD(int index);
+    int getONGACECOCCB(int index);
 
     /**
-     * <code>uint32 stage_id = 14;</code>
-     * @return The stageId.
-     */
-    int getStageId();
-
-    /**
-     * <code>uint32 coin = 8;</code>
+     * <code>uint32 coin = 15;</code>
      * @return The coin.
      */
     int getCoin();
 
     /**
-     * <code>uint32 difficulty = 6;</code>
+     * <code>uint32 cur_room = 5;</code>
+     * @return The curRoom.
+     */
+    int getCurRoom();
+
+    /**
+     * <code>repeated .RogueDiaryRoomInfo room_list = 11;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfo> 
+        getRoomListList();
+    /**
+     * <code>repeated .RogueDiaryRoomInfo room_list = 11;</code>
+     */
+    emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfo getRoomList(int index);
+    /**
+     * <code>repeated .RogueDiaryRoomInfo room_list = 11;</code>
+     */
+    int getRoomListCount();
+    /**
+     * <code>repeated .RogueDiaryRoomInfo room_list = 11;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfoOrBuilder> 
+        getRoomListOrBuilderList();
+    /**
+     * <code>repeated .RogueDiaryRoomInfo room_list = 11;</code>
+     */
+    emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfoOrBuilder getRoomListOrBuilder(
+        int index);
+
+    /**
+     * <code>uint32 dungeon_id = 12;</code>
+     * @return The dungeonId.
+     */
+    int getDungeonId();
+
+    /**
+     * <code>uint32 difficulty = 9;</code>
      * @return The difficulty.
      */
     int getDifficulty();
+
+    /**
+     * <code>uint32 time = 2;</code>
+     * @return The time.
+     */
+    int getTime();
+
+    /**
+     * <code>uint32 stage_id = 1;</code>
+     * @return The stageId.
+     */
+    int getStageId();
+
+    /**
+     * <code>repeated uint32 MFAODDDELCH = 14;</code>
+     * @return A list containing the mFAODDDELCH.
+     */
+    java.util.List<java.lang.Integer> getMFAODDDELCHList();
+    /**
+     * <code>repeated uint32 MFAODDDELCH = 14;</code>
+     * @return The count of mFAODDDELCH.
+     */
+    int getMFAODDDELCHCount();
+    /**
+     * <code>repeated uint32 MFAODDDELCH = 14;</code>
+     * @param index The index of the element to return.
+     * @return The mFAODDDELCH at the given index.
+     */
+    int getMFAODDDELCH(int index);
   }
   /**
    * <pre>
-   * Name: JAHPLBMIKKP
-   * CmdId: 8415
+   * CmdId: 8535
+   * Obf: EGAJOHLBGFN
    * </pre>
    *
    * Protobuf type {@code RogueDiaryDungeonInfoNotify}
@@ -136,9 +136,9 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
       super(builder);
     }
     private RogueDiaryDungeonInfoNotify() {
-      iDNBPKLAGJA_ = emptyIntList();
+      oNGACECOCCB_ = emptyIntList();
       roomList_ = java.util.Collections.emptyList();
-      oJDLDMPFFAD_ = emptyIntList();
+      mFAODDDELCH_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -172,53 +172,48 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                iDNBPKLAGJA_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              iDNBPKLAGJA_.addInt(input.readUInt32());
-              break;
-            }
-            case 26: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                iDNBPKLAGJA_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                iDNBPKLAGJA_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 32: {
+            case 8: {
 
-              dungeonId_ = input.readUInt32();
+              stageId_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 16: {
 
-              difficulty_ = input.readUInt32();
+              time_ = input.readUInt32();
               break;
             }
-            case 56: {
-
-              curRound_ = input.readUInt32();
-              break;
-            }
-            case 64: {
-
-              coin_ = input.readUInt32();
-              break;
-            }
-            case 72: {
+            case 40: {
 
               curRoom_ = input.readUInt32();
               break;
             }
-            case 82: {
+            case 48: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                oNGACECOCCB_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              oNGACECOCCB_.addInt(input.readUInt32());
+              break;
+            }
+            case 50: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+                oNGACECOCCB_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                oNGACECOCCB_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 72: {
+
+              difficulty_ = input.readUInt32();
+              break;
+            }
+            case 90: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 roomList_ = new java.util.ArrayList<emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfo>();
                 mutable_bitField0_ |= 0x00000002;
@@ -227,35 +222,40 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfo.parser(), extensionRegistry));
               break;
             }
-            case 88: {
+            case 96: {
 
-              time_ = input.readUInt32();
+              dungeonId_ = input.readUInt32();
               break;
             }
             case 104: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                oJDLDMPFFAD_ = newIntList();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              oJDLDMPFFAD_.addInt(input.readUInt32());
+
+              curRound_ = input.readUInt32();
               break;
             }
-            case 106: {
+            case 112: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+                mFAODDDELCH_ = newIntList();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              mFAODDDELCH_.addInt(input.readUInt32());
+              break;
+            }
+            case 114: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
-                oJDLDMPFFAD_ = newIntList();
+                mFAODDDELCH_ = newIntList();
                 mutable_bitField0_ |= 0x00000004;
               }
               while (input.getBytesUntilLimit() > 0) {
-                oJDLDMPFFAD_.addInt(input.readUInt32());
+                mFAODDDELCH_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
             }
-            case 112: {
+            case 120: {
 
-              stageId_ = input.readUInt32();
+              coin_ = input.readUInt32();
               break;
             }
             default: {
@@ -274,13 +274,13 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          iDNBPKLAGJA_.makeImmutable(); // C
+          oNGACECOCCB_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
           roomList_ = java.util.Collections.unmodifiableList(roomList_);
         }
         if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          oJDLDMPFFAD_.makeImmutable(); // C
+          mFAODDDELCH_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -299,49 +299,10 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
               emu.grasscutter.net.proto.RogueDiaryDungeonInfoNotifyOuterClass.RogueDiaryDungeonInfoNotify.class, emu.grasscutter.net.proto.RogueDiaryDungeonInfoNotifyOuterClass.RogueDiaryDungeonInfoNotify.Builder.class);
     }
 
-    public static final int IDNBPKLAGJA_FIELD_NUMBER = 3;
-    private com.google.protobuf.Internal.IntList iDNBPKLAGJA_;
-    /**
-     * <code>repeated uint32 IDNBPKLAGJA = 3;</code>
-     * @return A list containing the iDNBPKLAGJA.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getIDNBPKLAGJAList() {
-      return iDNBPKLAGJA_;
-    }
-    /**
-     * <code>repeated uint32 IDNBPKLAGJA = 3;</code>
-     * @return The count of iDNBPKLAGJA.
-     */
-    public int getIDNBPKLAGJACount() {
-      return iDNBPKLAGJA_.size();
-    }
-    /**
-     * <code>repeated uint32 IDNBPKLAGJA = 3;</code>
-     * @param index The index of the element to return.
-     * @return The iDNBPKLAGJA at the given index.
-     */
-    public int getIDNBPKLAGJA(int index) {
-      return iDNBPKLAGJA_.getInt(index);
-    }
-    private int iDNBPKLAGJAMemoizedSerializedSize = -1;
-
-    public static final int DUNGEON_ID_FIELD_NUMBER = 4;
-    private int dungeonId_;
-    /**
-     * <code>uint32 dungeon_id = 4;</code>
-     * @return The dungeonId.
-     */
-    @java.lang.Override
-    public int getDungeonId() {
-      return dungeonId_;
-    }
-
-    public static final int CUR_ROUND_FIELD_NUMBER = 7;
+    public static final int CUR_ROUND_FIELD_NUMBER = 13;
     private int curRound_;
     /**
-     * <code>uint32 cur_round = 7;</code>
+     * <code>uint32 cur_round = 13;</code>
      * @return The curRound.
      */
     @java.lang.Override
@@ -349,111 +310,38 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
       return curRound_;
     }
 
-    public static final int CUR_ROOM_FIELD_NUMBER = 9;
-    private int curRoom_;
+    public static final int ONGACECOCCB_FIELD_NUMBER = 6;
+    private com.google.protobuf.Internal.IntList oNGACECOCCB_;
     /**
-     * <code>uint32 cur_room = 9;</code>
-     * @return The curRoom.
-     */
-    @java.lang.Override
-    public int getCurRoom() {
-      return curRoom_;
-    }
-
-    public static final int ROOM_LIST_FIELD_NUMBER = 10;
-    private java.util.List<emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfo> roomList_;
-    /**
-     * <code>repeated .RogueDiaryRoomInfo room_list = 10;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfo> getRoomListList() {
-      return roomList_;
-    }
-    /**
-     * <code>repeated .RogueDiaryRoomInfo room_list = 10;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfoOrBuilder> 
-        getRoomListOrBuilderList() {
-      return roomList_;
-    }
-    /**
-     * <code>repeated .RogueDiaryRoomInfo room_list = 10;</code>
-     */
-    @java.lang.Override
-    public int getRoomListCount() {
-      return roomList_.size();
-    }
-    /**
-     * <code>repeated .RogueDiaryRoomInfo room_list = 10;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfo getRoomList(int index) {
-      return roomList_.get(index);
-    }
-    /**
-     * <code>repeated .RogueDiaryRoomInfo room_list = 10;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfoOrBuilder getRoomListOrBuilder(
-        int index) {
-      return roomList_.get(index);
-    }
-
-    public static final int TIME_FIELD_NUMBER = 11;
-    private int time_;
-    /**
-     * <code>uint32 time = 11;</code>
-     * @return The time.
-     */
-    @java.lang.Override
-    public int getTime() {
-      return time_;
-    }
-
-    public static final int OJDLDMPFFAD_FIELD_NUMBER = 13;
-    private com.google.protobuf.Internal.IntList oJDLDMPFFAD_;
-    /**
-     * <code>repeated uint32 OJDLDMPFFAD = 13;</code>
-     * @return A list containing the oJDLDMPFFAD.
+     * <code>repeated uint32 ONGACECOCCB = 6;</code>
+     * @return A list containing the oNGACECOCCB.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getOJDLDMPFFADList() {
-      return oJDLDMPFFAD_;
+        getONGACECOCCBList() {
+      return oNGACECOCCB_;
     }
     /**
-     * <code>repeated uint32 OJDLDMPFFAD = 13;</code>
-     * @return The count of oJDLDMPFFAD.
+     * <code>repeated uint32 ONGACECOCCB = 6;</code>
+     * @return The count of oNGACECOCCB.
      */
-    public int getOJDLDMPFFADCount() {
-      return oJDLDMPFFAD_.size();
+    public int getONGACECOCCBCount() {
+      return oNGACECOCCB_.size();
     }
     /**
-     * <code>repeated uint32 OJDLDMPFFAD = 13;</code>
+     * <code>repeated uint32 ONGACECOCCB = 6;</code>
      * @param index The index of the element to return.
-     * @return The oJDLDMPFFAD at the given index.
+     * @return The oNGACECOCCB at the given index.
      */
-    public int getOJDLDMPFFAD(int index) {
-      return oJDLDMPFFAD_.getInt(index);
+    public int getONGACECOCCB(int index) {
+      return oNGACECOCCB_.getInt(index);
     }
-    private int oJDLDMPFFADMemoizedSerializedSize = -1;
+    private int oNGACECOCCBMemoizedSerializedSize = -1;
 
-    public static final int STAGE_ID_FIELD_NUMBER = 14;
-    private int stageId_;
-    /**
-     * <code>uint32 stage_id = 14;</code>
-     * @return The stageId.
-     */
-    @java.lang.Override
-    public int getStageId() {
-      return stageId_;
-    }
-
-    public static final int COIN_FIELD_NUMBER = 8;
+    public static final int COIN_FIELD_NUMBER = 15;
     private int coin_;
     /**
-     * <code>uint32 coin = 8;</code>
+     * <code>uint32 coin = 15;</code>
      * @return The coin.
      */
     @java.lang.Override
@@ -461,16 +349,128 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
       return coin_;
     }
 
-    public static final int DIFFICULTY_FIELD_NUMBER = 6;
+    public static final int CUR_ROOM_FIELD_NUMBER = 5;
+    private int curRoom_;
+    /**
+     * <code>uint32 cur_room = 5;</code>
+     * @return The curRoom.
+     */
+    @java.lang.Override
+    public int getCurRoom() {
+      return curRoom_;
+    }
+
+    public static final int ROOM_LIST_FIELD_NUMBER = 11;
+    private java.util.List<emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfo> roomList_;
+    /**
+     * <code>repeated .RogueDiaryRoomInfo room_list = 11;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfo> getRoomListList() {
+      return roomList_;
+    }
+    /**
+     * <code>repeated .RogueDiaryRoomInfo room_list = 11;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfoOrBuilder> 
+        getRoomListOrBuilderList() {
+      return roomList_;
+    }
+    /**
+     * <code>repeated .RogueDiaryRoomInfo room_list = 11;</code>
+     */
+    @java.lang.Override
+    public int getRoomListCount() {
+      return roomList_.size();
+    }
+    /**
+     * <code>repeated .RogueDiaryRoomInfo room_list = 11;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfo getRoomList(int index) {
+      return roomList_.get(index);
+    }
+    /**
+     * <code>repeated .RogueDiaryRoomInfo room_list = 11;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfoOrBuilder getRoomListOrBuilder(
+        int index) {
+      return roomList_.get(index);
+    }
+
+    public static final int DUNGEON_ID_FIELD_NUMBER = 12;
+    private int dungeonId_;
+    /**
+     * <code>uint32 dungeon_id = 12;</code>
+     * @return The dungeonId.
+     */
+    @java.lang.Override
+    public int getDungeonId() {
+      return dungeonId_;
+    }
+
+    public static final int DIFFICULTY_FIELD_NUMBER = 9;
     private int difficulty_;
     /**
-     * <code>uint32 difficulty = 6;</code>
+     * <code>uint32 difficulty = 9;</code>
      * @return The difficulty.
      */
     @java.lang.Override
     public int getDifficulty() {
       return difficulty_;
     }
+
+    public static final int TIME_FIELD_NUMBER = 2;
+    private int time_;
+    /**
+     * <code>uint32 time = 2;</code>
+     * @return The time.
+     */
+    @java.lang.Override
+    public int getTime() {
+      return time_;
+    }
+
+    public static final int STAGE_ID_FIELD_NUMBER = 1;
+    private int stageId_;
+    /**
+     * <code>uint32 stage_id = 1;</code>
+     * @return The stageId.
+     */
+    @java.lang.Override
+    public int getStageId() {
+      return stageId_;
+    }
+
+    public static final int MFAODDDELCH_FIELD_NUMBER = 14;
+    private com.google.protobuf.Internal.IntList mFAODDDELCH_;
+    /**
+     * <code>repeated uint32 MFAODDDELCH = 14;</code>
+     * @return A list containing the mFAODDDELCH.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getMFAODDDELCHList() {
+      return mFAODDDELCH_;
+    }
+    /**
+     * <code>repeated uint32 MFAODDDELCH = 14;</code>
+     * @return The count of mFAODDDELCH.
+     */
+    public int getMFAODDDELCHCount() {
+      return mFAODDDELCH_.size();
+    }
+    /**
+     * <code>repeated uint32 MFAODDDELCH = 14;</code>
+     * @param index The index of the element to return.
+     * @return The mFAODDDELCH at the given index.
+     */
+    public int getMFAODDDELCH(int index) {
+      return mFAODDDELCH_.getInt(index);
+    }
+    private int mFAODDDELCHMemoizedSerializedSize = -1;
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -487,43 +487,43 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (getIDNBPKLAGJAList().size() > 0) {
-        output.writeUInt32NoTag(26);
-        output.writeUInt32NoTag(iDNBPKLAGJAMemoizedSerializedSize);
-      }
-      for (int i = 0; i < iDNBPKLAGJA_.size(); i++) {
-        output.writeUInt32NoTag(iDNBPKLAGJA_.getInt(i));
-      }
-      if (dungeonId_ != 0) {
-        output.writeUInt32(4, dungeonId_);
-      }
-      if (difficulty_ != 0) {
-        output.writeUInt32(6, difficulty_);
-      }
-      if (curRound_ != 0) {
-        output.writeUInt32(7, curRound_);
-      }
-      if (coin_ != 0) {
-        output.writeUInt32(8, coin_);
-      }
-      if (curRoom_ != 0) {
-        output.writeUInt32(9, curRoom_);
-      }
-      for (int i = 0; i < roomList_.size(); i++) {
-        output.writeMessage(10, roomList_.get(i));
+      if (stageId_ != 0) {
+        output.writeUInt32(1, stageId_);
       }
       if (time_ != 0) {
-        output.writeUInt32(11, time_);
+        output.writeUInt32(2, time_);
       }
-      if (getOJDLDMPFFADList().size() > 0) {
-        output.writeUInt32NoTag(106);
-        output.writeUInt32NoTag(oJDLDMPFFADMemoizedSerializedSize);
+      if (curRoom_ != 0) {
+        output.writeUInt32(5, curRoom_);
       }
-      for (int i = 0; i < oJDLDMPFFAD_.size(); i++) {
-        output.writeUInt32NoTag(oJDLDMPFFAD_.getInt(i));
+      if (getONGACECOCCBList().size() > 0) {
+        output.writeUInt32NoTag(50);
+        output.writeUInt32NoTag(oNGACECOCCBMemoizedSerializedSize);
       }
-      if (stageId_ != 0) {
-        output.writeUInt32(14, stageId_);
+      for (int i = 0; i < oNGACECOCCB_.size(); i++) {
+        output.writeUInt32NoTag(oNGACECOCCB_.getInt(i));
+      }
+      if (difficulty_ != 0) {
+        output.writeUInt32(9, difficulty_);
+      }
+      for (int i = 0; i < roomList_.size(); i++) {
+        output.writeMessage(11, roomList_.get(i));
+      }
+      if (dungeonId_ != 0) {
+        output.writeUInt32(12, dungeonId_);
+      }
+      if (curRound_ != 0) {
+        output.writeUInt32(13, curRound_);
+      }
+      if (getMFAODDDELCHList().size() > 0) {
+        output.writeUInt32NoTag(114);
+        output.writeUInt32NoTag(mFAODDDELCHMemoizedSerializedSize);
+      }
+      for (int i = 0; i < mFAODDDELCH_.size(); i++) {
+        output.writeUInt32NoTag(mFAODDDELCH_.getInt(i));
+      }
+      if (coin_ != 0) {
+        output.writeUInt32(15, coin_);
       }
       unknownFields.writeTo(output);
     }
@@ -534,65 +534,65 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      {
-        int dataSize = 0;
-        for (int i = 0; i < iDNBPKLAGJA_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(iDNBPKLAGJA_.getInt(i));
-        }
-        size += dataSize;
-        if (!getIDNBPKLAGJAList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        iDNBPKLAGJAMemoizedSerializedSize = dataSize;
-      }
-      if (dungeonId_ != 0) {
+      if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, dungeonId_);
-      }
-      if (difficulty_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, difficulty_);
-      }
-      if (curRound_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, curRound_);
-      }
-      if (coin_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, coin_);
-      }
-      if (curRoom_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, curRoom_);
-      }
-      for (int i = 0; i < roomList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, roomList_.get(i));
+          .computeUInt32Size(1, stageId_);
       }
       if (time_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, time_);
+          .computeUInt32Size(2, time_);
+      }
+      if (curRoom_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, curRoom_);
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < oJDLDMPFFAD_.size(); i++) {
+        for (int i = 0; i < oNGACECOCCB_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(oJDLDMPFFAD_.getInt(i));
+            .computeUInt32SizeNoTag(oNGACECOCCB_.getInt(i));
         }
         size += dataSize;
-        if (!getOJDLDMPFFADList().isEmpty()) {
+        if (!getONGACECOCCBList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        oJDLDMPFFADMemoizedSerializedSize = dataSize;
+        oNGACECOCCBMemoizedSerializedSize = dataSize;
       }
-      if (stageId_ != 0) {
+      if (difficulty_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, stageId_);
+          .computeUInt32Size(9, difficulty_);
+      }
+      for (int i = 0; i < roomList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(11, roomList_.get(i));
+      }
+      if (dungeonId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, dungeonId_);
+      }
+      if (curRound_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, curRound_);
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < mFAODDDELCH_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(mFAODDDELCH_.getInt(i));
+        }
+        size += dataSize;
+        if (!getMFAODDDELCHList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        mFAODDDELCHMemoizedSerializedSize = dataSize;
+      }
+      if (coin_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, coin_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -609,26 +609,26 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
       }
       emu.grasscutter.net.proto.RogueDiaryDungeonInfoNotifyOuterClass.RogueDiaryDungeonInfoNotify other = (emu.grasscutter.net.proto.RogueDiaryDungeonInfoNotifyOuterClass.RogueDiaryDungeonInfoNotify) obj;
 
-      if (!getIDNBPKLAGJAList()
-          .equals(other.getIDNBPKLAGJAList())) return false;
-      if (getDungeonId()
-          != other.getDungeonId()) return false;
       if (getCurRound()
           != other.getCurRound()) return false;
+      if (!getONGACECOCCBList()
+          .equals(other.getONGACECOCCBList())) return false;
+      if (getCoin()
+          != other.getCoin()) return false;
       if (getCurRoom()
           != other.getCurRoom()) return false;
       if (!getRoomListList()
           .equals(other.getRoomListList())) return false;
-      if (getTime()
-          != other.getTime()) return false;
-      if (!getOJDLDMPFFADList()
-          .equals(other.getOJDLDMPFFADList())) return false;
-      if (getStageId()
-          != other.getStageId()) return false;
-      if (getCoin()
-          != other.getCoin()) return false;
+      if (getDungeonId()
+          != other.getDungeonId()) return false;
       if (getDifficulty()
           != other.getDifficulty()) return false;
+      if (getTime()
+          != other.getTime()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
+      if (!getMFAODDDELCHList()
+          .equals(other.getMFAODDDELCHList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -640,32 +640,32 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getIDNBPKLAGJACount() > 0) {
-        hash = (37 * hash) + IDNBPKLAGJA_FIELD_NUMBER;
-        hash = (53 * hash) + getIDNBPKLAGJAList().hashCode();
-      }
-      hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getDungeonId();
       hash = (37 * hash) + CUR_ROUND_FIELD_NUMBER;
       hash = (53 * hash) + getCurRound();
+      if (getONGACECOCCBCount() > 0) {
+        hash = (37 * hash) + ONGACECOCCB_FIELD_NUMBER;
+        hash = (53 * hash) + getONGACECOCCBList().hashCode();
+      }
+      hash = (37 * hash) + COIN_FIELD_NUMBER;
+      hash = (53 * hash) + getCoin();
       hash = (37 * hash) + CUR_ROOM_FIELD_NUMBER;
       hash = (53 * hash) + getCurRoom();
       if (getRoomListCount() > 0) {
         hash = (37 * hash) + ROOM_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getRoomListList().hashCode();
       }
-      hash = (37 * hash) + TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getTime();
-      if (getOJDLDMPFFADCount() > 0) {
-        hash = (37 * hash) + OJDLDMPFFAD_FIELD_NUMBER;
-        hash = (53 * hash) + getOJDLDMPFFADList().hashCode();
-      }
-      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getStageId();
-      hash = (37 * hash) + COIN_FIELD_NUMBER;
-      hash = (53 * hash) + getCoin();
+      hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getDungeonId();
       hash = (37 * hash) + DIFFICULTY_FIELD_NUMBER;
       hash = (53 * hash) + getDifficulty();
+      hash = (37 * hash) + TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getTime();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
+      if (getMFAODDDELCHCount() > 0) {
+        hash = (37 * hash) + MFAODDDELCH_FIELD_NUMBER;
+        hash = (53 * hash) + getMFAODDDELCHList().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -763,8 +763,8 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: JAHPLBMIKKP
-     * CmdId: 8415
+     * CmdId: 8535
+     * Obf: EGAJOHLBGFN
      * </pre>
      *
      * Protobuf type {@code RogueDiaryDungeonInfoNotify}
@@ -805,11 +805,11 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        iDNBPKLAGJA_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        dungeonId_ = 0;
-
         curRound_ = 0;
+
+        oNGACECOCCB_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        coin_ = 0;
 
         curRoom_ = 0;
 
@@ -819,16 +819,16 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
         } else {
           roomListBuilder_.clear();
         }
-        time_ = 0;
-
-        oJDLDMPFFAD_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000004);
-        stageId_ = 0;
-
-        coin_ = 0;
+        dungeonId_ = 0;
 
         difficulty_ = 0;
 
+        time_ = 0;
+
+        stageId_ = 0;
+
+        mFAODDDELCH_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000004);
         return this;
       }
 
@@ -856,13 +856,13 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
       public emu.grasscutter.net.proto.RogueDiaryDungeonInfoNotifyOuterClass.RogueDiaryDungeonInfoNotify buildPartial() {
         emu.grasscutter.net.proto.RogueDiaryDungeonInfoNotifyOuterClass.RogueDiaryDungeonInfoNotify result = new emu.grasscutter.net.proto.RogueDiaryDungeonInfoNotifyOuterClass.RogueDiaryDungeonInfoNotify(this);
         int from_bitField0_ = bitField0_;
+        result.curRound_ = curRound_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          iDNBPKLAGJA_.makeImmutable();
+          oNGACECOCCB_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.iDNBPKLAGJA_ = iDNBPKLAGJA_;
-        result.dungeonId_ = dungeonId_;
-        result.curRound_ = curRound_;
+        result.oNGACECOCCB_ = oNGACECOCCB_;
+        result.coin_ = coin_;
         result.curRoom_ = curRoom_;
         if (roomListBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0)) {
@@ -873,15 +873,15 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
         } else {
           result.roomList_ = roomListBuilder_.build();
         }
+        result.dungeonId_ = dungeonId_;
+        result.difficulty_ = difficulty_;
         result.time_ = time_;
+        result.stageId_ = stageId_;
         if (((bitField0_ & 0x00000004) != 0)) {
-          oJDLDMPFFAD_.makeImmutable();
+          mFAODDDELCH_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000004);
         }
-        result.oJDLDMPFFAD_ = oJDLDMPFFAD_;
-        result.stageId_ = stageId_;
-        result.coin_ = coin_;
-        result.difficulty_ = difficulty_;
+        result.mFAODDDELCH_ = mFAODDDELCH_;
         onBuilt();
         return result;
       }
@@ -930,21 +930,21 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.RogueDiaryDungeonInfoNotifyOuterClass.RogueDiaryDungeonInfoNotify other) {
         if (other == emu.grasscutter.net.proto.RogueDiaryDungeonInfoNotifyOuterClass.RogueDiaryDungeonInfoNotify.getDefaultInstance()) return this;
-        if (!other.iDNBPKLAGJA_.isEmpty()) {
-          if (iDNBPKLAGJA_.isEmpty()) {
-            iDNBPKLAGJA_ = other.iDNBPKLAGJA_;
+        if (other.getCurRound() != 0) {
+          setCurRound(other.getCurRound());
+        }
+        if (!other.oNGACECOCCB_.isEmpty()) {
+          if (oNGACECOCCB_.isEmpty()) {
+            oNGACECOCCB_ = other.oNGACECOCCB_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureIDNBPKLAGJAIsMutable();
-            iDNBPKLAGJA_.addAll(other.iDNBPKLAGJA_);
+            ensureONGACECOCCBIsMutable();
+            oNGACECOCCB_.addAll(other.oNGACECOCCB_);
           }
           onChanged();
         }
-        if (other.getDungeonId() != 0) {
-          setDungeonId(other.getDungeonId());
-        }
-        if (other.getCurRound() != 0) {
-          setCurRound(other.getCurRound());
+        if (other.getCoin() != 0) {
+          setCoin(other.getCoin());
         }
         if (other.getCurRoom() != 0) {
           setCurRoom(other.getCurRoom());
@@ -975,27 +975,27 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
             }
           }
         }
+        if (other.getDungeonId() != 0) {
+          setDungeonId(other.getDungeonId());
+        }
+        if (other.getDifficulty() != 0) {
+          setDifficulty(other.getDifficulty());
+        }
         if (other.getTime() != 0) {
           setTime(other.getTime());
-        }
-        if (!other.oJDLDMPFFAD_.isEmpty()) {
-          if (oJDLDMPFFAD_.isEmpty()) {
-            oJDLDMPFFAD_ = other.oJDLDMPFFAD_;
-            bitField0_ = (bitField0_ & ~0x00000004);
-          } else {
-            ensureOJDLDMPFFADIsMutable();
-            oJDLDMPFFAD_.addAll(other.oJDLDMPFFAD_);
-          }
-          onChanged();
         }
         if (other.getStageId() != 0) {
           setStageId(other.getStageId());
         }
-        if (other.getCoin() != 0) {
-          setCoin(other.getCoin());
-        }
-        if (other.getDifficulty() != 0) {
-          setDifficulty(other.getDifficulty());
+        if (!other.mFAODDDELCH_.isEmpty()) {
+          if (mFAODDDELCH_.isEmpty()) {
+            mFAODDDELCH_ = other.mFAODDDELCH_;
+            bitField0_ = (bitField0_ & ~0x00000004);
+          } else {
+            ensureMFAODDDELCHIsMutable();
+            mFAODDDELCH_.addAll(other.mFAODDDELCH_);
+          }
+          onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1027,119 +1027,9 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList iDNBPKLAGJA_ = emptyIntList();
-      private void ensureIDNBPKLAGJAIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          iDNBPKLAGJA_ = mutableCopy(iDNBPKLAGJA_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-      /**
-       * <code>repeated uint32 IDNBPKLAGJA = 3;</code>
-       * @return A list containing the iDNBPKLAGJA.
-       */
-      public java.util.List<java.lang.Integer>
-          getIDNBPKLAGJAList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(iDNBPKLAGJA_) : iDNBPKLAGJA_;
-      }
-      /**
-       * <code>repeated uint32 IDNBPKLAGJA = 3;</code>
-       * @return The count of iDNBPKLAGJA.
-       */
-      public int getIDNBPKLAGJACount() {
-        return iDNBPKLAGJA_.size();
-      }
-      /**
-       * <code>repeated uint32 IDNBPKLAGJA = 3;</code>
-       * @param index The index of the element to return.
-       * @return The iDNBPKLAGJA at the given index.
-       */
-      public int getIDNBPKLAGJA(int index) {
-        return iDNBPKLAGJA_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 IDNBPKLAGJA = 3;</code>
-       * @param index The index to set the value at.
-       * @param value The iDNBPKLAGJA to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIDNBPKLAGJA(
-          int index, int value) {
-        ensureIDNBPKLAGJAIsMutable();
-        iDNBPKLAGJA_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 IDNBPKLAGJA = 3;</code>
-       * @param value The iDNBPKLAGJA to add.
-       * @return This builder for chaining.
-       */
-      public Builder addIDNBPKLAGJA(int value) {
-        ensureIDNBPKLAGJAIsMutable();
-        iDNBPKLAGJA_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 IDNBPKLAGJA = 3;</code>
-       * @param values The iDNBPKLAGJA to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllIDNBPKLAGJA(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureIDNBPKLAGJAIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, iDNBPKLAGJA_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 IDNBPKLAGJA = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIDNBPKLAGJA() {
-        iDNBPKLAGJA_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private int dungeonId_ ;
-      /**
-       * <code>uint32 dungeon_id = 4;</code>
-       * @return The dungeonId.
-       */
-      @java.lang.Override
-      public int getDungeonId() {
-        return dungeonId_;
-      }
-      /**
-       * <code>uint32 dungeon_id = 4;</code>
-       * @param value The dungeonId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDungeonId(int value) {
-        
-        dungeonId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 dungeon_id = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDungeonId() {
-        
-        dungeonId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int curRound_ ;
       /**
-       * <code>uint32 cur_round = 7;</code>
+       * <code>uint32 cur_round = 13;</code>
        * @return The curRound.
        */
       @java.lang.Override
@@ -1147,7 +1037,7 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
         return curRound_;
       }
       /**
-       * <code>uint32 cur_round = 7;</code>
+       * <code>uint32 cur_round = 13;</code>
        * @param value The curRound to set.
        * @return This builder for chaining.
        */
@@ -1158,7 +1048,7 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cur_round = 7;</code>
+       * <code>uint32 cur_round = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearCurRound() {
@@ -1168,9 +1058,119 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
         return this;
       }
 
+      private com.google.protobuf.Internal.IntList oNGACECOCCB_ = emptyIntList();
+      private void ensureONGACECOCCBIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          oNGACECOCCB_ = mutableCopy(oNGACECOCCB_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      /**
+       * <code>repeated uint32 ONGACECOCCB = 6;</code>
+       * @return A list containing the oNGACECOCCB.
+       */
+      public java.util.List<java.lang.Integer>
+          getONGACECOCCBList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(oNGACECOCCB_) : oNGACECOCCB_;
+      }
+      /**
+       * <code>repeated uint32 ONGACECOCCB = 6;</code>
+       * @return The count of oNGACECOCCB.
+       */
+      public int getONGACECOCCBCount() {
+        return oNGACECOCCB_.size();
+      }
+      /**
+       * <code>repeated uint32 ONGACECOCCB = 6;</code>
+       * @param index The index of the element to return.
+       * @return The oNGACECOCCB at the given index.
+       */
+      public int getONGACECOCCB(int index) {
+        return oNGACECOCCB_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 ONGACECOCCB = 6;</code>
+       * @param index The index to set the value at.
+       * @param value The oNGACECOCCB to set.
+       * @return This builder for chaining.
+       */
+      public Builder setONGACECOCCB(
+          int index, int value) {
+        ensureONGACECOCCBIsMutable();
+        oNGACECOCCB_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 ONGACECOCCB = 6;</code>
+       * @param value The oNGACECOCCB to add.
+       * @return This builder for chaining.
+       */
+      public Builder addONGACECOCCB(int value) {
+        ensureONGACECOCCBIsMutable();
+        oNGACECOCCB_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 ONGACECOCCB = 6;</code>
+       * @param values The oNGACECOCCB to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllONGACECOCCB(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureONGACECOCCBIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, oNGACECOCCB_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 ONGACECOCCB = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearONGACECOCCB() {
+        oNGACECOCCB_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private int coin_ ;
+      /**
+       * <code>uint32 coin = 15;</code>
+       * @return The coin.
+       */
+      @java.lang.Override
+      public int getCoin() {
+        return coin_;
+      }
+      /**
+       * <code>uint32 coin = 15;</code>
+       * @param value The coin to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCoin(int value) {
+        
+        coin_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 coin = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCoin() {
+        
+        coin_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int curRoom_ ;
       /**
-       * <code>uint32 cur_room = 9;</code>
+       * <code>uint32 cur_room = 5;</code>
        * @return The curRoom.
        */
       @java.lang.Override
@@ -1178,7 +1178,7 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
         return curRoom_;
       }
       /**
-       * <code>uint32 cur_room = 9;</code>
+       * <code>uint32 cur_room = 5;</code>
        * @param value The curRoom to set.
        * @return This builder for chaining.
        */
@@ -1189,7 +1189,7 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cur_room = 9;</code>
+       * <code>uint32 cur_room = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearCurRoom() {
@@ -1212,7 +1212,7 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
           emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfo, emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfo.Builder, emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfoOrBuilder> roomListBuilder_;
 
       /**
-       * <code>repeated .RogueDiaryRoomInfo room_list = 10;</code>
+       * <code>repeated .RogueDiaryRoomInfo room_list = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfo> getRoomListList() {
         if (roomListBuilder_ == null) {
@@ -1222,7 +1222,7 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .RogueDiaryRoomInfo room_list = 10;</code>
+       * <code>repeated .RogueDiaryRoomInfo room_list = 11;</code>
        */
       public int getRoomListCount() {
         if (roomListBuilder_ == null) {
@@ -1232,7 +1232,7 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .RogueDiaryRoomInfo room_list = 10;</code>
+       * <code>repeated .RogueDiaryRoomInfo room_list = 11;</code>
        */
       public emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfo getRoomList(int index) {
         if (roomListBuilder_ == null) {
@@ -1242,7 +1242,7 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .RogueDiaryRoomInfo room_list = 10;</code>
+       * <code>repeated .RogueDiaryRoomInfo room_list = 11;</code>
        */
       public Builder setRoomList(
           int index, emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfo value) {
@@ -1259,7 +1259,7 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RogueDiaryRoomInfo room_list = 10;</code>
+       * <code>repeated .RogueDiaryRoomInfo room_list = 11;</code>
        */
       public Builder setRoomList(
           int index, emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfo.Builder builderForValue) {
@@ -1273,7 +1273,7 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RogueDiaryRoomInfo room_list = 10;</code>
+       * <code>repeated .RogueDiaryRoomInfo room_list = 11;</code>
        */
       public Builder addRoomList(emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfo value) {
         if (roomListBuilder_ == null) {
@@ -1289,7 +1289,7 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RogueDiaryRoomInfo room_list = 10;</code>
+       * <code>repeated .RogueDiaryRoomInfo room_list = 11;</code>
        */
       public Builder addRoomList(
           int index, emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfo value) {
@@ -1306,7 +1306,7 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RogueDiaryRoomInfo room_list = 10;</code>
+       * <code>repeated .RogueDiaryRoomInfo room_list = 11;</code>
        */
       public Builder addRoomList(
           emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfo.Builder builderForValue) {
@@ -1320,7 +1320,7 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RogueDiaryRoomInfo room_list = 10;</code>
+       * <code>repeated .RogueDiaryRoomInfo room_list = 11;</code>
        */
       public Builder addRoomList(
           int index, emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfo.Builder builderForValue) {
@@ -1334,7 +1334,7 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RogueDiaryRoomInfo room_list = 10;</code>
+       * <code>repeated .RogueDiaryRoomInfo room_list = 11;</code>
        */
       public Builder addAllRoomList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfo> values) {
@@ -1349,7 +1349,7 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RogueDiaryRoomInfo room_list = 10;</code>
+       * <code>repeated .RogueDiaryRoomInfo room_list = 11;</code>
        */
       public Builder clearRoomList() {
         if (roomListBuilder_ == null) {
@@ -1362,7 +1362,7 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RogueDiaryRoomInfo room_list = 10;</code>
+       * <code>repeated .RogueDiaryRoomInfo room_list = 11;</code>
        */
       public Builder removeRoomList(int index) {
         if (roomListBuilder_ == null) {
@@ -1375,14 +1375,14 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RogueDiaryRoomInfo room_list = 10;</code>
+       * <code>repeated .RogueDiaryRoomInfo room_list = 11;</code>
        */
       public emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfo.Builder getRoomListBuilder(
           int index) {
         return getRoomListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .RogueDiaryRoomInfo room_list = 10;</code>
+       * <code>repeated .RogueDiaryRoomInfo room_list = 11;</code>
        */
       public emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfoOrBuilder getRoomListOrBuilder(
           int index) {
@@ -1392,7 +1392,7 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .RogueDiaryRoomInfo room_list = 10;</code>
+       * <code>repeated .RogueDiaryRoomInfo room_list = 11;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfoOrBuilder> 
            getRoomListOrBuilderList() {
@@ -1403,14 +1403,14 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .RogueDiaryRoomInfo room_list = 10;</code>
+       * <code>repeated .RogueDiaryRoomInfo room_list = 11;</code>
        */
       public emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfo.Builder addRoomListBuilder() {
         return getRoomListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .RogueDiaryRoomInfo room_list = 10;</code>
+       * <code>repeated .RogueDiaryRoomInfo room_list = 11;</code>
        */
       public emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfo.Builder addRoomListBuilder(
           int index) {
@@ -1418,7 +1418,7 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
             index, emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .RogueDiaryRoomInfo room_list = 10;</code>
+       * <code>repeated .RogueDiaryRoomInfo room_list = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.RogueDiaryRoomInfo.Builder> 
            getRoomListBuilderList() {
@@ -1439,181 +1439,40 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
         return roomListBuilder_;
       }
 
-      private int time_ ;
+      private int dungeonId_ ;
       /**
-       * <code>uint32 time = 11;</code>
-       * @return The time.
+       * <code>uint32 dungeon_id = 12;</code>
+       * @return The dungeonId.
        */
       @java.lang.Override
-      public int getTime() {
-        return time_;
+      public int getDungeonId() {
+        return dungeonId_;
       }
       /**
-       * <code>uint32 time = 11;</code>
-       * @param value The time to set.
+       * <code>uint32 dungeon_id = 12;</code>
+       * @param value The dungeonId to set.
        * @return This builder for chaining.
        */
-      public Builder setTime(int value) {
+      public Builder setDungeonId(int value) {
         
-        time_ = value;
+        dungeonId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 time = 11;</code>
+       * <code>uint32 dungeon_id = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTime() {
+      public Builder clearDungeonId() {
         
-        time_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList oJDLDMPFFAD_ = emptyIntList();
-      private void ensureOJDLDMPFFADIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
-          oJDLDMPFFAD_ = mutableCopy(oJDLDMPFFAD_);
-          bitField0_ |= 0x00000004;
-         }
-      }
-      /**
-       * <code>repeated uint32 OJDLDMPFFAD = 13;</code>
-       * @return A list containing the oJDLDMPFFAD.
-       */
-      public java.util.List<java.lang.Integer>
-          getOJDLDMPFFADList() {
-        return ((bitField0_ & 0x00000004) != 0) ?
-                 java.util.Collections.unmodifiableList(oJDLDMPFFAD_) : oJDLDMPFFAD_;
-      }
-      /**
-       * <code>repeated uint32 OJDLDMPFFAD = 13;</code>
-       * @return The count of oJDLDMPFFAD.
-       */
-      public int getOJDLDMPFFADCount() {
-        return oJDLDMPFFAD_.size();
-      }
-      /**
-       * <code>repeated uint32 OJDLDMPFFAD = 13;</code>
-       * @param index The index of the element to return.
-       * @return The oJDLDMPFFAD at the given index.
-       */
-      public int getOJDLDMPFFAD(int index) {
-        return oJDLDMPFFAD_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 OJDLDMPFFAD = 13;</code>
-       * @param index The index to set the value at.
-       * @param value The oJDLDMPFFAD to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOJDLDMPFFAD(
-          int index, int value) {
-        ensureOJDLDMPFFADIsMutable();
-        oJDLDMPFFAD_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 OJDLDMPFFAD = 13;</code>
-       * @param value The oJDLDMPFFAD to add.
-       * @return This builder for chaining.
-       */
-      public Builder addOJDLDMPFFAD(int value) {
-        ensureOJDLDMPFFADIsMutable();
-        oJDLDMPFFAD_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 OJDLDMPFFAD = 13;</code>
-       * @param values The oJDLDMPFFAD to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllOJDLDMPFFAD(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureOJDLDMPFFADIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, oJDLDMPFFAD_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 OJDLDMPFFAD = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOJDLDMPFFAD() {
-        oJDLDMPFFAD_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000004);
-        onChanged();
-        return this;
-      }
-
-      private int stageId_ ;
-      /**
-       * <code>uint32 stage_id = 14;</code>
-       * @return The stageId.
-       */
-      @java.lang.Override
-      public int getStageId() {
-        return stageId_;
-      }
-      /**
-       * <code>uint32 stage_id = 14;</code>
-       * @param value The stageId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStageId(int value) {
-        
-        stageId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 stage_id = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStageId() {
-        
-        stageId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int coin_ ;
-      /**
-       * <code>uint32 coin = 8;</code>
-       * @return The coin.
-       */
-      @java.lang.Override
-      public int getCoin() {
-        return coin_;
-      }
-      /**
-       * <code>uint32 coin = 8;</code>
-       * @param value The coin to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCoin(int value) {
-        
-        coin_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 coin = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCoin() {
-        
-        coin_ = 0;
+        dungeonId_ = 0;
         onChanged();
         return this;
       }
 
       private int difficulty_ ;
       /**
-       * <code>uint32 difficulty = 6;</code>
+       * <code>uint32 difficulty = 9;</code>
        * @return The difficulty.
        */
       @java.lang.Override
@@ -1621,7 +1480,7 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
         return difficulty_;
       }
       /**
-       * <code>uint32 difficulty = 6;</code>
+       * <code>uint32 difficulty = 9;</code>
        * @param value The difficulty to set.
        * @return This builder for chaining.
        */
@@ -1632,12 +1491,153 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficulty = 6;</code>
+       * <code>uint32 difficulty = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficulty() {
         
         difficulty_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int time_ ;
+      /**
+       * <code>uint32 time = 2;</code>
+       * @return The time.
+       */
+      @java.lang.Override
+      public int getTime() {
+        return time_;
+      }
+      /**
+       * <code>uint32 time = 2;</code>
+       * @param value The time to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTime(int value) {
+        
+        time_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 time = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTime() {
+        
+        time_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int stageId_ ;
+      /**
+       * <code>uint32 stage_id = 1;</code>
+       * @return The stageId.
+       */
+      @java.lang.Override
+      public int getStageId() {
+        return stageId_;
+      }
+      /**
+       * <code>uint32 stage_id = 1;</code>
+       * @param value The stageId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStageId(int value) {
+        
+        stageId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 stage_id = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStageId() {
+        
+        stageId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList mFAODDDELCH_ = emptyIntList();
+      private void ensureMFAODDDELCHIsMutable() {
+        if (!((bitField0_ & 0x00000004) != 0)) {
+          mFAODDDELCH_ = mutableCopy(mFAODDDELCH_);
+          bitField0_ |= 0x00000004;
+         }
+      }
+      /**
+       * <code>repeated uint32 MFAODDDELCH = 14;</code>
+       * @return A list containing the mFAODDDELCH.
+       */
+      public java.util.List<java.lang.Integer>
+          getMFAODDDELCHList() {
+        return ((bitField0_ & 0x00000004) != 0) ?
+                 java.util.Collections.unmodifiableList(mFAODDDELCH_) : mFAODDDELCH_;
+      }
+      /**
+       * <code>repeated uint32 MFAODDDELCH = 14;</code>
+       * @return The count of mFAODDDELCH.
+       */
+      public int getMFAODDDELCHCount() {
+        return mFAODDDELCH_.size();
+      }
+      /**
+       * <code>repeated uint32 MFAODDDELCH = 14;</code>
+       * @param index The index of the element to return.
+       * @return The mFAODDDELCH at the given index.
+       */
+      public int getMFAODDDELCH(int index) {
+        return mFAODDDELCH_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 MFAODDDELCH = 14;</code>
+       * @param index The index to set the value at.
+       * @param value The mFAODDDELCH to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMFAODDDELCH(
+          int index, int value) {
+        ensureMFAODDDELCHIsMutable();
+        mFAODDDELCH_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 MFAODDDELCH = 14;</code>
+       * @param value The mFAODDDELCH to add.
+       * @return This builder for chaining.
+       */
+      public Builder addMFAODDDELCH(int value) {
+        ensureMFAODDDELCHIsMutable();
+        mFAODDDELCH_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 MFAODDDELCH = 14;</code>
+       * @param values The mFAODDDELCH to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllMFAODDDELCH(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureMFAODDDELCHIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, mFAODDDELCH_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 MFAODDDELCH = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMFAODDDELCH() {
+        mFAODDDELCH_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000004);
         onChanged();
         return this;
       }
@@ -1710,12 +1710,12 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n!RogueDiaryDungeonInfoNotify.proto\032\030Rog" +
       "ueDiaryRoomInfo.proto\"\352\001\n\033RogueDiaryDung" +
-      "eonInfoNotify\022\023\n\013IDNBPKLAGJA\030\003 \003(\r\022\022\n\ndu" +
-      "ngeon_id\030\004 \001(\r\022\021\n\tcur_round\030\007 \001(\r\022\020\n\010cur" +
-      "_room\030\t \001(\r\022&\n\troom_list\030\n \003(\0132\023.RogueDi" +
-      "aryRoomInfo\022\014\n\004time\030\013 \001(\r\022\023\n\013OJDLDMPFFAD" +
-      "\030\r \003(\r\022\020\n\010stage_id\030\016 \001(\r\022\014\n\004coin\030\010 \001(\r\022\022" +
-      "\n\ndifficulty\030\006 \001(\rB\033\n\031emu.grasscutter.ne" +
+      "eonInfoNotify\022\021\n\tcur_round\030\r \001(\r\022\023\n\013ONGA" +
+      "CECOCCB\030\006 \003(\r\022\014\n\004coin\030\017 \001(\r\022\020\n\010cur_room\030" +
+      "\005 \001(\r\022&\n\troom_list\030\013 \003(\0132\023.RogueDiaryRoo" +
+      "mInfo\022\022\n\ndungeon_id\030\014 \001(\r\022\022\n\ndifficulty\030" +
+      "\t \001(\r\022\014\n\004time\030\002 \001(\r\022\020\n\010stage_id\030\001 \001(\r\022\023\n" +
+      "\013MFAODDDELCH\030\016 \003(\rB\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1728,7 +1728,7 @@ public final class RogueDiaryDungeonInfoNotifyOuterClass {
     internal_static_RogueDiaryDungeonInfoNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RogueDiaryDungeonInfoNotify_descriptor,
-        new java.lang.String[] { "IDNBPKLAGJA", "DungeonId", "CurRound", "CurRoom", "RoomList", "Time", "OJDLDMPFFAD", "StageId", "Coin", "Difficulty", });
+        new java.lang.String[] { "CurRound", "ONGACECOCCB", "Coin", "CurRoom", "RoomList", "DungeonId", "Difficulty", "Time", "StageId", "MFAODDDELCH", });
     emu.grasscutter.net.proto.RogueDiaryRoomInfoOuterClass.getDescriptor();
   }
 

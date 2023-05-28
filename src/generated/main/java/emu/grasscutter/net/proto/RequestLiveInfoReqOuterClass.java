@@ -19,15 +19,15 @@ public final class RequestLiveInfoReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 live_id = 1;</code>
+     * <code>uint32 live_id = 8;</code>
      * @return The liveId.
      */
     int getLiveId();
   }
   /**
    * <pre>
-   * Name: OAMHLICHGHF
-   * CmdId: 884
+   * CmdId: 826
+   * Obf: CBAOIGJMEBL
    * </pre>
    *
    * Protobuf type {@code RequestLiveInfoReq}
@@ -74,7 +74,7 @@ public final class RequestLiveInfoReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 64: {
 
               liveId_ = input.readUInt32();
               break;
@@ -111,10 +111,10 @@ public final class RequestLiveInfoReqOuterClass {
               emu.grasscutter.net.proto.RequestLiveInfoReqOuterClass.RequestLiveInfoReq.class, emu.grasscutter.net.proto.RequestLiveInfoReqOuterClass.RequestLiveInfoReq.Builder.class);
     }
 
-    public static final int LIVE_ID_FIELD_NUMBER = 1;
+    public static final int LIVE_ID_FIELD_NUMBER = 8;
     private int liveId_;
     /**
-     * <code>uint32 live_id = 1;</code>
+     * <code>uint32 live_id = 8;</code>
      * @return The liveId.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class RequestLiveInfoReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (liveId_ != 0) {
-        output.writeUInt32(1, liveId_);
+        output.writeUInt32(8, liveId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class RequestLiveInfoReqOuterClass {
       size = 0;
       if (liveId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, liveId_);
+          .computeUInt32Size(8, liveId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class RequestLiveInfoReqOuterClass {
     }
     /**
      * <pre>
-     * Name: OAMHLICHGHF
-     * CmdId: 884
+     * CmdId: 826
+     * Obf: CBAOIGJMEBL
      * </pre>
      *
      * Protobuf type {@code RequestLiveInfoReq}
@@ -431,7 +431,7 @@ public final class RequestLiveInfoReqOuterClass {
 
       private int liveId_ ;
       /**
-       * <code>uint32 live_id = 1;</code>
+       * <code>uint32 live_id = 8;</code>
        * @return The liveId.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class RequestLiveInfoReqOuterClass {
         return liveId_;
       }
       /**
-       * <code>uint32 live_id = 1;</code>
+       * <code>uint32 live_id = 8;</code>
        * @param value The liveId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class RequestLiveInfoReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 live_id = 1;</code>
+       * <code>uint32 live_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearLiveId() {
@@ -527,7 +527,7 @@ public final class RequestLiveInfoReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030RequestLiveInfoReq.proto\"%\n\022RequestLiv" +
-      "eInfoReq\022\017\n\007live_id\030\001 \001(\rB\033\n\031emu.grasscu" +
+      "eInfoReq\022\017\n\007live_id\030\010 \001(\rB\033\n\031emu.grasscu" +
       "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

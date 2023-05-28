@@ -19,27 +19,27 @@ public final class DungeonRestartInviteReplyRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_accept = 11;</code>
-     * @return The isAccept.
-     */
-    boolean getIsAccept();
-
-    /**
-     * <code>int32 retcode = 2;</code>
+     * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>bool is_trans_point = 12;</code>
+     * <code>bool is_trans_point = 7;</code>
      * @return The isTransPoint.
      */
     boolean getIsTransPoint();
+
+    /**
+     * <code>bool is_accept = 2;</code>
+     * @return The isAccept.
+     */
+    boolean getIsAccept();
   }
   /**
    * <pre>
-   * Name: CCBHLLOBEGO
-   * CmdId: 943
+   * CmdId: 974
+   * Obf: GHMIHKGLKGH
    * </pre>
    *
    * Protobuf type {@code DungeonRestartInviteReplyRsp}
@@ -88,15 +88,15 @@ public final class DungeonRestartInviteReplyRspOuterClass {
               break;
             case 16: {
 
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 88: {
-
               isAccept_ = input.readBool();
               break;
             }
-            case 96: {
+            case 32: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 56: {
 
               isTransPoint_ = input.readBool();
               break;
@@ -133,21 +133,10 @@ public final class DungeonRestartInviteReplyRspOuterClass {
               emu.grasscutter.net.proto.DungeonRestartInviteReplyRspOuterClass.DungeonRestartInviteReplyRsp.class, emu.grasscutter.net.proto.DungeonRestartInviteReplyRspOuterClass.DungeonRestartInviteReplyRsp.Builder.class);
     }
 
-    public static final int IS_ACCEPT_FIELD_NUMBER = 11;
-    private boolean isAccept_;
-    /**
-     * <code>bool is_accept = 11;</code>
-     * @return The isAccept.
-     */
-    @java.lang.Override
-    public boolean getIsAccept() {
-      return isAccept_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 2;
+    public static final int RETCODE_FIELD_NUMBER = 4;
     private int retcode_;
     /**
-     * <code>int32 retcode = 2;</code>
+     * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -155,15 +144,26 @@ public final class DungeonRestartInviteReplyRspOuterClass {
       return retcode_;
     }
 
-    public static final int IS_TRANS_POINT_FIELD_NUMBER = 12;
+    public static final int IS_TRANS_POINT_FIELD_NUMBER = 7;
     private boolean isTransPoint_;
     /**
-     * <code>bool is_trans_point = 12;</code>
+     * <code>bool is_trans_point = 7;</code>
      * @return The isTransPoint.
      */
     @java.lang.Override
     public boolean getIsTransPoint() {
       return isTransPoint_;
+    }
+
+    public static final int IS_ACCEPT_FIELD_NUMBER = 2;
+    private boolean isAccept_;
+    /**
+     * <code>bool is_accept = 2;</code>
+     * @return The isAccept.
+     */
+    @java.lang.Override
+    public boolean getIsAccept() {
+      return isAccept_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -180,14 +180,14 @@ public final class DungeonRestartInviteReplyRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(2, retcode_);
-      }
       if (isAccept_ != false) {
-        output.writeBool(11, isAccept_);
+        output.writeBool(2, isAccept_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(4, retcode_);
       }
       if (isTransPoint_ != false) {
-        output.writeBool(12, isTransPoint_);
+        output.writeBool(7, isTransPoint_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +198,17 @@ public final class DungeonRestartInviteReplyRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, retcode_);
-      }
       if (isAccept_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isAccept_);
+          .computeBoolSize(2, isAccept_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(4, retcode_);
       }
       if (isTransPoint_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, isTransPoint_);
+          .computeBoolSize(7, isTransPoint_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -225,12 +225,12 @@ public final class DungeonRestartInviteReplyRspOuterClass {
       }
       emu.grasscutter.net.proto.DungeonRestartInviteReplyRspOuterClass.DungeonRestartInviteReplyRsp other = (emu.grasscutter.net.proto.DungeonRestartInviteReplyRspOuterClass.DungeonRestartInviteReplyRsp) obj;
 
-      if (getIsAccept()
-          != other.getIsAccept()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
       if (getIsTransPoint()
           != other.getIsTransPoint()) return false;
+      if (getIsAccept()
+          != other.getIsAccept()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -242,14 +242,14 @@ public final class DungeonRestartInviteReplyRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_ACCEPT_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsAccept());
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + IS_TRANS_POINT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsTransPoint());
+      hash = (37 * hash) + IS_ACCEPT_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsAccept());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -347,8 +347,8 @@ public final class DungeonRestartInviteReplyRspOuterClass {
     }
     /**
      * <pre>
-     * Name: CCBHLLOBEGO
-     * CmdId: 943
+     * CmdId: 974
+     * Obf: GHMIHKGLKGH
      * </pre>
      *
      * Protobuf type {@code DungeonRestartInviteReplyRsp}
@@ -388,11 +388,11 @@ public final class DungeonRestartInviteReplyRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isAccept_ = false;
-
         retcode_ = 0;
 
         isTransPoint_ = false;
+
+        isAccept_ = false;
 
         return this;
       }
@@ -420,9 +420,9 @@ public final class DungeonRestartInviteReplyRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.DungeonRestartInviteReplyRspOuterClass.DungeonRestartInviteReplyRsp buildPartial() {
         emu.grasscutter.net.proto.DungeonRestartInviteReplyRspOuterClass.DungeonRestartInviteReplyRsp result = new emu.grasscutter.net.proto.DungeonRestartInviteReplyRspOuterClass.DungeonRestartInviteReplyRsp(this);
-        result.isAccept_ = isAccept_;
         result.retcode_ = retcode_;
         result.isTransPoint_ = isTransPoint_;
+        result.isAccept_ = isAccept_;
         onBuilt();
         return result;
       }
@@ -471,14 +471,14 @@ public final class DungeonRestartInviteReplyRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DungeonRestartInviteReplyRspOuterClass.DungeonRestartInviteReplyRsp other) {
         if (other == emu.grasscutter.net.proto.DungeonRestartInviteReplyRspOuterClass.DungeonRestartInviteReplyRsp.getDefaultInstance()) return this;
-        if (other.getIsAccept() != false) {
-          setIsAccept(other.getIsAccept());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
         if (other.getIsTransPoint() != false) {
           setIsTransPoint(other.getIsTransPoint());
+        }
+        if (other.getIsAccept() != false) {
+          setIsAccept(other.getIsAccept());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -509,40 +509,9 @@ public final class DungeonRestartInviteReplyRspOuterClass {
         return this;
       }
 
-      private boolean isAccept_ ;
-      /**
-       * <code>bool is_accept = 11;</code>
-       * @return The isAccept.
-       */
-      @java.lang.Override
-      public boolean getIsAccept() {
-        return isAccept_;
-      }
-      /**
-       * <code>bool is_accept = 11;</code>
-       * @param value The isAccept to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsAccept(boolean value) {
-        
-        isAccept_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_accept = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsAccept() {
-        
-        isAccept_ = false;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 4;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -550,7 +519,7 @@ public final class DungeonRestartInviteReplyRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 4;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -561,7 +530,7 @@ public final class DungeonRestartInviteReplyRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -573,7 +542,7 @@ public final class DungeonRestartInviteReplyRspOuterClass {
 
       private boolean isTransPoint_ ;
       /**
-       * <code>bool is_trans_point = 12;</code>
+       * <code>bool is_trans_point = 7;</code>
        * @return The isTransPoint.
        */
       @java.lang.Override
@@ -581,7 +550,7 @@ public final class DungeonRestartInviteReplyRspOuterClass {
         return isTransPoint_;
       }
       /**
-       * <code>bool is_trans_point = 12;</code>
+       * <code>bool is_trans_point = 7;</code>
        * @param value The isTransPoint to set.
        * @return This builder for chaining.
        */
@@ -592,12 +561,43 @@ public final class DungeonRestartInviteReplyRspOuterClass {
         return this;
       }
       /**
-       * <code>bool is_trans_point = 12;</code>
+       * <code>bool is_trans_point = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsTransPoint() {
         
         isTransPoint_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean isAccept_ ;
+      /**
+       * <code>bool is_accept = 2;</code>
+       * @return The isAccept.
+       */
+      @java.lang.Override
+      public boolean getIsAccept() {
+        return isAccept_;
+      }
+      /**
+       * <code>bool is_accept = 2;</code>
+       * @param value The isAccept to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsAccept(boolean value) {
+        
+        isAccept_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_accept = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsAccept() {
+        
+        isAccept_ = false;
         onChanged();
         return this;
       }
@@ -669,9 +669,9 @@ public final class DungeonRestartInviteReplyRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\"DungeonRestartInviteReplyRsp.proto\"Z\n\034" +
-      "DungeonRestartInviteReplyRsp\022\021\n\tis_accep" +
-      "t\030\013 \001(\010\022\017\n\007retcode\030\002 \001(\005\022\026\n\016is_trans_poi" +
-      "nt\030\014 \001(\010B\033\n\031emu.grasscutter.net.protob\006p" +
+      "DungeonRestartInviteReplyRsp\022\017\n\007retcode\030" +
+      "\004 \001(\005\022\026\n\016is_trans_point\030\007 \001(\010\022\021\n\tis_acce" +
+      "pt\030\002 \001(\010B\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -683,7 +683,7 @@ public final class DungeonRestartInviteReplyRspOuterClass {
     internal_static_DungeonRestartInviteReplyRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DungeonRestartInviteReplyRsp_descriptor,
-        new java.lang.String[] { "IsAccept", "Retcode", "IsTransPoint", });
+        new java.lang.String[] { "Retcode", "IsTransPoint", "IsAccept", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

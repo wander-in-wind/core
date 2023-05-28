@@ -38,7 +38,7 @@ public final class RedPointDataOuterClass {
   }
   /**
    * <pre>
-   * Name: EAMNCJHCHCI
+   * Obf: MBKOPEPFGAG
    * </pre>
    *
    * Protobuf type {@code RedPointData}
@@ -345,7 +345,7 @@ public final class RedPointDataOuterClass {
     }
     /**
      * <pre>
-     * Name: EAMNCJHCHCI
+     * Obf: MBKOPEPFGAG
      * </pre>
      *
      * Protobuf type {@code RedPointData}

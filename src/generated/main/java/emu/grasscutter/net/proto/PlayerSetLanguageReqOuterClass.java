@@ -26,8 +26,8 @@ public final class PlayerSetLanguageReqOuterClass {
   }
   /**
    * <pre>
-   * Name: PBMGCGFPJOM
-   * CmdId: 149
+   * CmdId: 112
+   * Obf: KHDJGGHLMMJ
    * </pre>
    *
    * Protobuf type {@code PlayerSetLanguageReq}
@@ -279,8 +279,8 @@ public final class PlayerSetLanguageReqOuterClass {
     }
     /**
      * <pre>
-     * Name: PBMGCGFPJOM
-     * CmdId: 149
+     * CmdId: 112
+     * Obf: KHDJGGHLMMJ
      * </pre>
      *
      * Protobuf type {@code PlayerSetLanguageReq}

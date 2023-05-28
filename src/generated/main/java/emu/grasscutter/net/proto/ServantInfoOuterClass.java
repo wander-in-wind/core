@@ -32,7 +32,7 @@ public final class ServantInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: HAKHNIFICLC
+   * Obf: KJENNHPPHLL
    * </pre>
    *
    * Protobuf type {@code ServantInfo}
@@ -311,7 +311,7 @@ public final class ServantInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: HAKHNIFICLC
+     * Obf: KJENNHPPHLL
      * </pre>
      *
      * Protobuf type {@code ServantInfo}

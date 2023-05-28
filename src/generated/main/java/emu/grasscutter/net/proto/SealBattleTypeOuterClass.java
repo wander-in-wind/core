@@ -16,7 +16,7 @@ public final class SealBattleTypeOuterClass {
   }
   /**
    * <pre>
-   * Name: DJAIIAIHBKG
+   * Obf: AFBFPFBHEAO
    * </pre>
    *
    * Protobuf enum {@code SealBattleType}

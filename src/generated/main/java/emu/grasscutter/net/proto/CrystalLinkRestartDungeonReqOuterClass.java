@@ -20,8 +20,8 @@ public final class CrystalLinkRestartDungeonReqOuterClass {
   }
   /**
    * <pre>
-   * Name: OBKONCBHOOM
-   * CmdId: 8317
+   * CmdId: 8971
+   * Obf: BPECKIOKHMG
    * </pre>
    *
    * Protobuf type {@code CrystalLinkRestartDungeonReq}
@@ -246,8 +246,8 @@ public final class CrystalLinkRestartDungeonReqOuterClass {
     }
     /**
      * <pre>
-     * Name: OBKONCBHOOM
-     * CmdId: 8317
+     * CmdId: 8971
+     * Obf: BPECKIOKHMG
      * </pre>
      *
      * Protobuf type {@code CrystalLinkRestartDungeonReq}

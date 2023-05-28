@@ -19,15 +19,15 @@ public final class CoinCollectInterruptPlayReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 gallery_id = 9;</code>
+     * <code>uint32 gallery_id = 14;</code>
      * @return The galleryId.
      */
     int getGalleryId();
   }
   /**
    * <pre>
-   * Name: ABAMPBHOKFF
-   * CmdId: 20221
+   * CmdId: 24014
+   * Obf: HHLKLFILMDB
    * </pre>
    *
    * Protobuf type {@code CoinCollectInterruptPlayReq}
@@ -74,7 +74,7 @@ public final class CoinCollectInterruptPlayReqOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 112: {
 
               galleryId_ = input.readUInt32();
               break;
@@ -111,10 +111,10 @@ public final class CoinCollectInterruptPlayReqOuterClass {
               emu.grasscutter.net.proto.CoinCollectInterruptPlayReqOuterClass.CoinCollectInterruptPlayReq.class, emu.grasscutter.net.proto.CoinCollectInterruptPlayReqOuterClass.CoinCollectInterruptPlayReq.Builder.class);
     }
 
-    public static final int GALLERY_ID_FIELD_NUMBER = 9;
+    public static final int GALLERY_ID_FIELD_NUMBER = 14;
     private int galleryId_;
     /**
-     * <code>uint32 gallery_id = 9;</code>
+     * <code>uint32 gallery_id = 14;</code>
      * @return The galleryId.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class CoinCollectInterruptPlayReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (galleryId_ != 0) {
-        output.writeUInt32(9, galleryId_);
+        output.writeUInt32(14, galleryId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class CoinCollectInterruptPlayReqOuterClass {
       size = 0;
       if (galleryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, galleryId_);
+          .computeUInt32Size(14, galleryId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class CoinCollectInterruptPlayReqOuterClass {
     }
     /**
      * <pre>
-     * Name: ABAMPBHOKFF
-     * CmdId: 20221
+     * CmdId: 24014
+     * Obf: HHLKLFILMDB
      * </pre>
      *
      * Protobuf type {@code CoinCollectInterruptPlayReq}
@@ -431,7 +431,7 @@ public final class CoinCollectInterruptPlayReqOuterClass {
 
       private int galleryId_ ;
       /**
-       * <code>uint32 gallery_id = 9;</code>
+       * <code>uint32 gallery_id = 14;</code>
        * @return The galleryId.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class CoinCollectInterruptPlayReqOuterClass {
         return galleryId_;
       }
       /**
-       * <code>uint32 gallery_id = 9;</code>
+       * <code>uint32 gallery_id = 14;</code>
        * @param value The galleryId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class CoinCollectInterruptPlayReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gallery_id = 9;</code>
+       * <code>uint32 gallery_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearGalleryId() {
@@ -528,7 +528,7 @@ public final class CoinCollectInterruptPlayReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n!CoinCollectInterruptPlayReq.proto\"1\n\033C" +
       "oinCollectInterruptPlayReq\022\022\n\ngallery_id" +
-      "\030\t \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
+      "\030\016 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

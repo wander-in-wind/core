@@ -26,8 +26,8 @@ public final class MechanicusCandidateTeamCreateReqOuterClass {
   }
   /**
    * <pre>
-   * Name: EKEMMHOMDKE
-   * CmdId: 3929
+   * CmdId: 3994
+   * Obf: BPMLDBDGHPB
    * </pre>
    *
    * Protobuf type {@code MechanicusCandidateTeamCreateReq}
@@ -279,8 +279,8 @@ public final class MechanicusCandidateTeamCreateReqOuterClass {
     }
     /**
      * <pre>
-     * Name: EKEMMHOMDKE
-     * CmdId: 3929
+     * CmdId: 3994
+     * Obf: BPMLDBDGHPB
      * </pre>
      *
      * Protobuf type {@code MechanicusCandidateTeamCreateReq}

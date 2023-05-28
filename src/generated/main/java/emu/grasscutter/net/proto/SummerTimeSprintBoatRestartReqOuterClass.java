@@ -19,21 +19,21 @@ public final class SummerTimeSprintBoatRestartReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 schedule_id = 13;</code>
+     * <code>uint32 schedule_id = 2;</code>
      * @return The scheduleId.
      */
     int getScheduleId();
 
     /**
-     * <code>uint32 group_id = 12;</code>
+     * <code>uint32 group_id = 15;</code>
      * @return The groupId.
      */
     int getGroupId();
   }
   /**
    * <pre>
-   * Name: HCONKICNFDI
-   * CmdId: 8178
+   * CmdId: 8170
+   * Obf: FMBKHMGAFLF
    * </pre>
    *
    * Protobuf type {@code SummerTimeSprintBoatRestartReq}
@@ -80,14 +80,14 @@ public final class SummerTimeSprintBoatRestartReqOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
-
-              groupId_ = input.readUInt32();
-              break;
-            }
-            case 104: {
+            case 16: {
 
               scheduleId_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              groupId_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,10 +122,10 @@ public final class SummerTimeSprintBoatRestartReqOuterClass {
               emu.grasscutter.net.proto.SummerTimeSprintBoatRestartReqOuterClass.SummerTimeSprintBoatRestartReq.class, emu.grasscutter.net.proto.SummerTimeSprintBoatRestartReqOuterClass.SummerTimeSprintBoatRestartReq.Builder.class);
     }
 
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 13;
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 2;
     private int scheduleId_;
     /**
-     * <code>uint32 schedule_id = 13;</code>
+     * <code>uint32 schedule_id = 2;</code>
      * @return The scheduleId.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class SummerTimeSprintBoatRestartReqOuterClass {
       return scheduleId_;
     }
 
-    public static final int GROUP_ID_FIELD_NUMBER = 12;
+    public static final int GROUP_ID_FIELD_NUMBER = 15;
     private int groupId_;
     /**
-     * <code>uint32 group_id = 12;</code>
+     * <code>uint32 group_id = 15;</code>
      * @return The groupId.
      */
     @java.lang.Override
@@ -158,11 +158,11 @@ public final class SummerTimeSprintBoatRestartReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (groupId_ != 0) {
-        output.writeUInt32(12, groupId_);
-      }
       if (scheduleId_ != 0) {
-        output.writeUInt32(13, scheduleId_);
+        output.writeUInt32(2, scheduleId_);
+      }
+      if (groupId_ != 0) {
+        output.writeUInt32(15, groupId_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class SummerTimeSprintBoatRestartReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (groupId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, groupId_);
-      }
       if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, scheduleId_);
+          .computeUInt32Size(2, scheduleId_);
+      }
+      if (groupId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, groupId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class SummerTimeSprintBoatRestartReqOuterClass {
     }
     /**
      * <pre>
-     * Name: HCONKICNFDI
-     * CmdId: 8178
+     * CmdId: 8170
+     * Obf: FMBKHMGAFLF
      * </pre>
      *
      * Protobuf type {@code SummerTimeSprintBoatRestartReq}
@@ -470,7 +470,7 @@ public final class SummerTimeSprintBoatRestartReqOuterClass {
 
       private int scheduleId_ ;
       /**
-       * <code>uint32 schedule_id = 13;</code>
+       * <code>uint32 schedule_id = 2;</code>
        * @return The scheduleId.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class SummerTimeSprintBoatRestartReqOuterClass {
         return scheduleId_;
       }
       /**
-       * <code>uint32 schedule_id = 13;</code>
+       * <code>uint32 schedule_id = 2;</code>
        * @param value The scheduleId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class SummerTimeSprintBoatRestartReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 schedule_id = 13;</code>
+       * <code>uint32 schedule_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearScheduleId() {
@@ -501,7 +501,7 @@ public final class SummerTimeSprintBoatRestartReqOuterClass {
 
       private int groupId_ ;
       /**
-       * <code>uint32 group_id = 12;</code>
+       * <code>uint32 group_id = 15;</code>
        * @return The groupId.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class SummerTimeSprintBoatRestartReqOuterClass {
         return groupId_;
       }
       /**
-       * <code>uint32 group_id = 12;</code>
+       * <code>uint32 group_id = 15;</code>
        * @param value The groupId to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class SummerTimeSprintBoatRestartReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 group_id = 12;</code>
+       * <code>uint32 group_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearGroupId() {
@@ -598,7 +598,7 @@ public final class SummerTimeSprintBoatRestartReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n$SummerTimeSprintBoatRestartReq.proto\"G" +
       "\n\036SummerTimeSprintBoatRestartReq\022\023\n\013sche" +
-      "dule_id\030\r \001(\r\022\020\n\010group_id\030\014 \001(\rB\033\n\031emu.g" +
+      "dule_id\030\002 \001(\r\022\020\n\010group_id\030\017 \001(\rB\033\n\031emu.g" +
       "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

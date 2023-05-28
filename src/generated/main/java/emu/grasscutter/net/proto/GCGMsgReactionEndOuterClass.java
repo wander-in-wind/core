@@ -19,14 +19,14 @@ public final class GCGMsgReactionEndOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 skill_id = 11;</code>
+     * <code>uint32 skill_id = 2;</code>
      * @return The skillId.
      */
     int getSkillId();
   }
   /**
    * <pre>
-   * Name: EDDAKPCGDNO
+   * Obf: KICGELKNHHB
    * </pre>
    *
    * Protobuf type {@code GCGMsgReactionEnd}
@@ -73,7 +73,7 @@ public final class GCGMsgReactionEndOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
+            case 16: {
 
               skillId_ = input.readUInt32();
               break;
@@ -110,10 +110,10 @@ public final class GCGMsgReactionEndOuterClass {
               emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd.class, emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd.Builder.class);
     }
 
-    public static final int SKILL_ID_FIELD_NUMBER = 11;
+    public static final int SKILL_ID_FIELD_NUMBER = 2;
     private int skillId_;
     /**
-     * <code>uint32 skill_id = 11;</code>
+     * <code>uint32 skill_id = 2;</code>
      * @return The skillId.
      */
     @java.lang.Override
@@ -136,7 +136,7 @@ public final class GCGMsgReactionEndOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (skillId_ != 0) {
-        output.writeUInt32(11, skillId_);
+        output.writeUInt32(2, skillId_);
       }
       unknownFields.writeTo(output);
     }
@@ -149,7 +149,7 @@ public final class GCGMsgReactionEndOuterClass {
       size = 0;
       if (skillId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, skillId_);
+          .computeUInt32Size(2, skillId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -278,7 +278,7 @@ public final class GCGMsgReactionEndOuterClass {
     }
     /**
      * <pre>
-     * Name: EDDAKPCGDNO
+     * Obf: KICGELKNHHB
      * </pre>
      *
      * Protobuf type {@code GCGMsgReactionEnd}
@@ -429,7 +429,7 @@ public final class GCGMsgReactionEndOuterClass {
 
       private int skillId_ ;
       /**
-       * <code>uint32 skill_id = 11;</code>
+       * <code>uint32 skill_id = 2;</code>
        * @return The skillId.
        */
       @java.lang.Override
@@ -437,7 +437,7 @@ public final class GCGMsgReactionEndOuterClass {
         return skillId_;
       }
       /**
-       * <code>uint32 skill_id = 11;</code>
+       * <code>uint32 skill_id = 2;</code>
        * @param value The skillId to set.
        * @return This builder for chaining.
        */
@@ -448,7 +448,7 @@ public final class GCGMsgReactionEndOuterClass {
         return this;
       }
       /**
-       * <code>uint32 skill_id = 11;</code>
+       * <code>uint32 skill_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearSkillId() {
@@ -525,7 +525,7 @@ public final class GCGMsgReactionEndOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027GCGMsgReactionEnd.proto\"%\n\021GCGMsgReact" +
-      "ionEnd\022\020\n\010skill_id\030\013 \001(\rB\033\n\031emu.grasscut" +
+      "ionEnd\022\020\n\010skill_id\030\002 \001(\rB\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

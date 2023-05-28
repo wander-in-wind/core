@@ -19,21 +19,21 @@ public final class HomeKickPlayerReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 target_uid = 6;</code>
+     * <code>uint32 target_uid = 2;</code>
      * @return The targetUid.
      */
     int getTargetUid();
 
     /**
-     * <code>bool is_kick_all = 1;</code>
+     * <code>bool is_kick_all = 14;</code>
      * @return The isKickAll.
      */
     boolean getIsKickAll();
   }
   /**
    * <pre>
-   * Name: LJJPPMGMILK
-   * CmdId: 4610
+   * CmdId: 4647
+   * Obf: JDBFBGGHBOE
    * </pre>
    *
    * Protobuf type {@code HomeKickPlayerReq}
@@ -80,14 +80,14 @@ public final class HomeKickPlayerReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              isKickAll_ = input.readBool();
-              break;
-            }
-            case 48: {
+            case 16: {
 
               targetUid_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              isKickAll_ = input.readBool();
               break;
             }
             default: {
@@ -122,10 +122,10 @@ public final class HomeKickPlayerReqOuterClass {
               emu.grasscutter.net.proto.HomeKickPlayerReqOuterClass.HomeKickPlayerReq.class, emu.grasscutter.net.proto.HomeKickPlayerReqOuterClass.HomeKickPlayerReq.Builder.class);
     }
 
-    public static final int TARGET_UID_FIELD_NUMBER = 6;
+    public static final int TARGET_UID_FIELD_NUMBER = 2;
     private int targetUid_;
     /**
-     * <code>uint32 target_uid = 6;</code>
+     * <code>uint32 target_uid = 2;</code>
      * @return The targetUid.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class HomeKickPlayerReqOuterClass {
       return targetUid_;
     }
 
-    public static final int IS_KICK_ALL_FIELD_NUMBER = 1;
+    public static final int IS_KICK_ALL_FIELD_NUMBER = 14;
     private boolean isKickAll_;
     /**
-     * <code>bool is_kick_all = 1;</code>
+     * <code>bool is_kick_all = 14;</code>
      * @return The isKickAll.
      */
     @java.lang.Override
@@ -158,11 +158,11 @@ public final class HomeKickPlayerReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isKickAll_ != false) {
-        output.writeBool(1, isKickAll_);
-      }
       if (targetUid_ != 0) {
-        output.writeUInt32(6, targetUid_);
+        output.writeUInt32(2, targetUid_);
+      }
+      if (isKickAll_ != false) {
+        output.writeBool(14, isKickAll_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class HomeKickPlayerReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isKickAll_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, isKickAll_);
-      }
       if (targetUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, targetUid_);
+          .computeUInt32Size(2, targetUid_);
+      }
+      if (isKickAll_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(14, isKickAll_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,8 +313,8 @@ public final class HomeKickPlayerReqOuterClass {
     }
     /**
      * <pre>
-     * Name: LJJPPMGMILK
-     * CmdId: 4610
+     * CmdId: 4647
+     * Obf: JDBFBGGHBOE
      * </pre>
      *
      * Protobuf type {@code HomeKickPlayerReq}
@@ -471,7 +471,7 @@ public final class HomeKickPlayerReqOuterClass {
 
       private int targetUid_ ;
       /**
-       * <code>uint32 target_uid = 6;</code>
+       * <code>uint32 target_uid = 2;</code>
        * @return The targetUid.
        */
       @java.lang.Override
@@ -479,7 +479,7 @@ public final class HomeKickPlayerReqOuterClass {
         return targetUid_;
       }
       /**
-       * <code>uint32 target_uid = 6;</code>
+       * <code>uint32 target_uid = 2;</code>
        * @param value The targetUid to set.
        * @return This builder for chaining.
        */
@@ -490,7 +490,7 @@ public final class HomeKickPlayerReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 target_uid = 6;</code>
+       * <code>uint32 target_uid = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetUid() {
@@ -502,7 +502,7 @@ public final class HomeKickPlayerReqOuterClass {
 
       private boolean isKickAll_ ;
       /**
-       * <code>bool is_kick_all = 1;</code>
+       * <code>bool is_kick_all = 14;</code>
        * @return The isKickAll.
        */
       @java.lang.Override
@@ -510,7 +510,7 @@ public final class HomeKickPlayerReqOuterClass {
         return isKickAll_;
       }
       /**
-       * <code>bool is_kick_all = 1;</code>
+       * <code>bool is_kick_all = 14;</code>
        * @param value The isKickAll to set.
        * @return This builder for chaining.
        */
@@ -521,7 +521,7 @@ public final class HomeKickPlayerReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_kick_all = 1;</code>
+       * <code>bool is_kick_all = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsKickAll() {
@@ -598,8 +598,8 @@ public final class HomeKickPlayerReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027HomeKickPlayerReq.proto\"<\n\021HomeKickPla" +
-      "yerReq\022\022\n\ntarget_uid\030\006 \001(\r\022\023\n\013is_kick_al" +
-      "l\030\001 \001(\010B\033\n\031emu.grasscutter.net.protob\006pr" +
+      "yerReq\022\022\n\ntarget_uid\030\002 \001(\r\022\023\n\013is_kick_al" +
+      "l\030\016 \001(\010B\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -43,17 +43,17 @@ public final class ChatChannelDataNotifyOuterClass {
         int index);
 
     /**
-     * <code>repeated uint32 channel_list = 8;</code>
+     * <code>repeated uint32 channel_list = 9;</code>
      * @return A list containing the channelList.
      */
     java.util.List<java.lang.Integer> getChannelListList();
     /**
-     * <code>repeated uint32 channel_list = 8;</code>
+     * <code>repeated uint32 channel_list = 9;</code>
      * @return The count of channelList.
      */
     int getChannelListCount();
     /**
-     * <code>repeated uint32 channel_list = 8;</code>
+     * <code>repeated uint32 channel_list = 9;</code>
      * @param index The index of the element to return.
      * @return The channelList at the given index.
      */
@@ -61,8 +61,8 @@ public final class ChatChannelDataNotifyOuterClass {
   }
   /**
    * <pre>
-   * Name: PHPBACJDBKA
-   * CmdId: 5041
+   * CmdId: 4971
+   * Obf: COGHPLNCFKB
    * </pre>
    *
    * Protobuf type {@code ChatChannelDataNotify}
@@ -112,7 +112,7 @@ public final class ChatChannelDataNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 72: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 channelList_ = newIntList();
                 mutable_bitField0_ |= 0x00000002;
@@ -120,7 +120,7 @@ public final class ChatChannelDataNotifyOuterClass {
               channelList_.addInt(input.readUInt32());
               break;
             }
-            case 66: {
+            case 74: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
@@ -220,10 +220,10 @@ public final class ChatChannelDataNotifyOuterClass {
       return channelInfoList_.get(index);
     }
 
-    public static final int CHANNEL_LIST_FIELD_NUMBER = 8;
+    public static final int CHANNEL_LIST_FIELD_NUMBER = 9;
     private com.google.protobuf.Internal.IntList channelList_;
     /**
-     * <code>repeated uint32 channel_list = 8;</code>
+     * <code>repeated uint32 channel_list = 9;</code>
      * @return A list containing the channelList.
      */
     @java.lang.Override
@@ -232,14 +232,14 @@ public final class ChatChannelDataNotifyOuterClass {
       return channelList_;
     }
     /**
-     * <code>repeated uint32 channel_list = 8;</code>
+     * <code>repeated uint32 channel_list = 9;</code>
      * @return The count of channelList.
      */
     public int getChannelListCount() {
       return channelList_.size();
     }
     /**
-     * <code>repeated uint32 channel_list = 8;</code>
+     * <code>repeated uint32 channel_list = 9;</code>
      * @param index The index of the element to return.
      * @return The channelList at the given index.
      */
@@ -264,7 +264,7 @@ public final class ChatChannelDataNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getChannelListList().size() > 0) {
-        output.writeUInt32NoTag(66);
+        output.writeUInt32NoTag(74);
         output.writeUInt32NoTag(channelListMemoizedSerializedSize);
       }
       for (int i = 0; i < channelList_.size(); i++) {
@@ -435,8 +435,8 @@ public final class ChatChannelDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: PHPBACJDBKA
-     * CmdId: 5041
+     * CmdId: 4971
+     * Obf: COGHPLNCFKB
      * </pre>
      *
      * Protobuf type {@code ChatChannelDataNotify}
@@ -888,7 +888,7 @@ public final class ChatChannelDataNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 channel_list = 8;</code>
+       * <code>repeated uint32 channel_list = 9;</code>
        * @return A list containing the channelList.
        */
       public java.util.List<java.lang.Integer>
@@ -897,14 +897,14 @@ public final class ChatChannelDataNotifyOuterClass {
                  java.util.Collections.unmodifiableList(channelList_) : channelList_;
       }
       /**
-       * <code>repeated uint32 channel_list = 8;</code>
+       * <code>repeated uint32 channel_list = 9;</code>
        * @return The count of channelList.
        */
       public int getChannelListCount() {
         return channelList_.size();
       }
       /**
-       * <code>repeated uint32 channel_list = 8;</code>
+       * <code>repeated uint32 channel_list = 9;</code>
        * @param index The index of the element to return.
        * @return The channelList at the given index.
        */
@@ -912,7 +912,7 @@ public final class ChatChannelDataNotifyOuterClass {
         return channelList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 channel_list = 8;</code>
+       * <code>repeated uint32 channel_list = 9;</code>
        * @param index The index to set the value at.
        * @param value The channelList to set.
        * @return This builder for chaining.
@@ -925,7 +925,7 @@ public final class ChatChannelDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 channel_list = 8;</code>
+       * <code>repeated uint32 channel_list = 9;</code>
        * @param value The channelList to add.
        * @return This builder for chaining.
        */
@@ -936,7 +936,7 @@ public final class ChatChannelDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 channel_list = 8;</code>
+       * <code>repeated uint32 channel_list = 9;</code>
        * @param values The channelList to add.
        * @return This builder for chaining.
        */
@@ -949,7 +949,7 @@ public final class ChatChannelDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 channel_list = 8;</code>
+       * <code>repeated uint32 channel_list = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearChannelList() {
@@ -1028,7 +1028,7 @@ public final class ChatChannelDataNotifyOuterClass {
       "\n\033ChatChannelDataNotify.proto\032\025ChatChann" +
       "elInfo.proto\"Z\n\025ChatChannelDataNotify\022+\n" +
       "\021channel_info_list\030\014 \003(\0132\020.ChatChannelIn" +
-      "fo\022\024\n\014channel_list\030\010 \003(\rB\033\n\031emu.grasscut" +
+      "fo\022\024\n\014channel_list\030\t \003(\rB\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,38 +19,38 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 12;</code>
-     * @return The retcode.
+     * <code>uint32 activity_id = 6;</code>
+     * @return The activityId.
      */
-    int getRetcode();
+    int getActivityId();
 
     /**
-     * <code>repeated uint32 reward_config_list = 8;</code>
+     * <code>repeated uint32 reward_config_list = 9;</code>
      * @return A list containing the rewardConfigList.
      */
     java.util.List<java.lang.Integer> getRewardConfigListList();
     /**
-     * <code>repeated uint32 reward_config_list = 8;</code>
+     * <code>repeated uint32 reward_config_list = 9;</code>
      * @return The count of rewardConfigList.
      */
     int getRewardConfigListCount();
     /**
-     * <code>repeated uint32 reward_config_list = 8;</code>
+     * <code>repeated uint32 reward_config_list = 9;</code>
      * @param index The index of the element to return.
      * @return The rewardConfigList at the given index.
      */
     int getRewardConfigList(int index);
 
     /**
-     * <code>uint32 activity_id = 14;</code>
-     * @return The activityId.
+     * <code>int32 retcode = 10;</code>
+     * @return The retcode.
      */
-    int getActivityId();
+    int getRetcode();
   }
   /**
    * <pre>
-   * Name: EMIKPGMJCAG
-   * CmdId: 8964
+   * CmdId: 8332
+   * Obf: HDEJPPGNCAB
    * </pre>
    *
    * Protobuf type {@code ActivityTakeAllScoreRewardRsp}
@@ -99,7 +99,12 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 48: {
+
+              activityId_ = input.readUInt32();
+              break;
+            }
+            case 72: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 rewardConfigList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -107,7 +112,7 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
               rewardConfigList_.addInt(input.readUInt32());
               break;
             }
-            case 66: {
+            case 74: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -120,14 +125,9 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 96: {
+            case 80: {
 
               retcode_ = input.readInt32();
-              break;
-            }
-            case 112: {
-
-              activityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -165,21 +165,21 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
               emu.grasscutter.net.proto.ActivityTakeAllScoreRewardRspOuterClass.ActivityTakeAllScoreRewardRsp.class, emu.grasscutter.net.proto.ActivityTakeAllScoreRewardRspOuterClass.ActivityTakeAllScoreRewardRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 12;
-    private int retcode_;
+    public static final int ACTIVITY_ID_FIELD_NUMBER = 6;
+    private int activityId_;
     /**
-     * <code>int32 retcode = 12;</code>
-     * @return The retcode.
+     * <code>uint32 activity_id = 6;</code>
+     * @return The activityId.
      */
     @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
+    public int getActivityId() {
+      return activityId_;
     }
 
-    public static final int REWARD_CONFIG_LIST_FIELD_NUMBER = 8;
+    public static final int REWARD_CONFIG_LIST_FIELD_NUMBER = 9;
     private com.google.protobuf.Internal.IntList rewardConfigList_;
     /**
-     * <code>repeated uint32 reward_config_list = 8;</code>
+     * <code>repeated uint32 reward_config_list = 9;</code>
      * @return A list containing the rewardConfigList.
      */
     @java.lang.Override
@@ -188,14 +188,14 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
       return rewardConfigList_;
     }
     /**
-     * <code>repeated uint32 reward_config_list = 8;</code>
+     * <code>repeated uint32 reward_config_list = 9;</code>
      * @return The count of rewardConfigList.
      */
     public int getRewardConfigListCount() {
       return rewardConfigList_.size();
     }
     /**
-     * <code>repeated uint32 reward_config_list = 8;</code>
+     * <code>repeated uint32 reward_config_list = 9;</code>
      * @param index The index of the element to return.
      * @return The rewardConfigList at the given index.
      */
@@ -204,15 +204,15 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
     }
     private int rewardConfigListMemoizedSerializedSize = -1;
 
-    public static final int ACTIVITY_ID_FIELD_NUMBER = 14;
-    private int activityId_;
+    public static final int RETCODE_FIELD_NUMBER = 10;
+    private int retcode_;
     /**
-     * <code>uint32 activity_id = 14;</code>
-     * @return The activityId.
+     * <code>int32 retcode = 10;</code>
+     * @return The retcode.
      */
     @java.lang.Override
-    public int getActivityId() {
-      return activityId_;
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -230,18 +230,18 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (activityId_ != 0) {
+        output.writeUInt32(6, activityId_);
+      }
       if (getRewardConfigListList().size() > 0) {
-        output.writeUInt32NoTag(66);
+        output.writeUInt32NoTag(74);
         output.writeUInt32NoTag(rewardConfigListMemoizedSerializedSize);
       }
       for (int i = 0; i < rewardConfigList_.size(); i++) {
         output.writeUInt32NoTag(rewardConfigList_.getInt(i));
       }
       if (retcode_ != 0) {
-        output.writeInt32(12, retcode_);
-      }
-      if (activityId_ != 0) {
-        output.writeUInt32(14, activityId_);
+        output.writeInt32(10, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -252,6 +252,10 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (activityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, activityId_);
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < rewardConfigList_.size(); i++) {
@@ -268,11 +272,7 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(12, retcode_);
-      }
-      if (activityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, activityId_);
+          .computeInt32Size(10, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -289,12 +289,12 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
       }
       emu.grasscutter.net.proto.ActivityTakeAllScoreRewardRspOuterClass.ActivityTakeAllScoreRewardRsp other = (emu.grasscutter.net.proto.ActivityTakeAllScoreRewardRspOuterClass.ActivityTakeAllScoreRewardRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
-      if (!getRewardConfigListList()
-          .equals(other.getRewardConfigListList())) return false;
       if (getActivityId()
           != other.getActivityId()) return false;
+      if (!getRewardConfigListList()
+          .equals(other.getRewardConfigListList())) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -306,14 +306,14 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + ACTIVITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getActivityId();
       if (getRewardConfigListCount() > 0) {
         hash = (37 * hash) + REWARD_CONFIG_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getRewardConfigListList().hashCode();
       }
-      hash = (37 * hash) + ACTIVITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getActivityId();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -411,8 +411,8 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
     }
     /**
      * <pre>
-     * Name: EMIKPGMJCAG
-     * CmdId: 8964
+     * CmdId: 8332
+     * Obf: HDEJPPGNCAB
      * </pre>
      *
      * Protobuf type {@code ActivityTakeAllScoreRewardRsp}
@@ -452,11 +452,11 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
+        activityId_ = 0;
 
         rewardConfigList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        activityId_ = 0;
+        retcode_ = 0;
 
         return this;
       }
@@ -485,13 +485,13 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
       public emu.grasscutter.net.proto.ActivityTakeAllScoreRewardRspOuterClass.ActivityTakeAllScoreRewardRsp buildPartial() {
         emu.grasscutter.net.proto.ActivityTakeAllScoreRewardRspOuterClass.ActivityTakeAllScoreRewardRsp result = new emu.grasscutter.net.proto.ActivityTakeAllScoreRewardRspOuterClass.ActivityTakeAllScoreRewardRsp(this);
         int from_bitField0_ = bitField0_;
-        result.retcode_ = retcode_;
+        result.activityId_ = activityId_;
         if (((bitField0_ & 0x00000001) != 0)) {
           rewardConfigList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.rewardConfigList_ = rewardConfigList_;
-        result.activityId_ = activityId_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -540,8 +540,8 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ActivityTakeAllScoreRewardRspOuterClass.ActivityTakeAllScoreRewardRsp other) {
         if (other == emu.grasscutter.net.proto.ActivityTakeAllScoreRewardRspOuterClass.ActivityTakeAllScoreRewardRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
+        if (other.getActivityId() != 0) {
+          setActivityId(other.getActivityId());
         }
         if (!other.rewardConfigList_.isEmpty()) {
           if (rewardConfigList_.isEmpty()) {
@@ -553,8 +553,8 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
           }
           onChanged();
         }
-        if (other.getActivityId() != 0) {
-          setActivityId(other.getActivityId());
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -586,33 +586,33 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
       }
       private int bitField0_;
 
-      private int retcode_ ;
+      private int activityId_ ;
       /**
-       * <code>int32 retcode = 12;</code>
-       * @return The retcode.
+       * <code>uint32 activity_id = 6;</code>
+       * @return The activityId.
        */
       @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
+      public int getActivityId() {
+        return activityId_;
       }
       /**
-       * <code>int32 retcode = 12;</code>
-       * @param value The retcode to set.
+       * <code>uint32 activity_id = 6;</code>
+       * @param value The activityId to set.
        * @return This builder for chaining.
        */
-      public Builder setRetcode(int value) {
+      public Builder setActivityId(int value) {
         
-        retcode_ = value;
+        activityId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>uint32 activity_id = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearRetcode() {
+      public Builder clearActivityId() {
         
-        retcode_ = 0;
+        activityId_ = 0;
         onChanged();
         return this;
       }
@@ -625,7 +625,7 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 reward_config_list = 8;</code>
+       * <code>repeated uint32 reward_config_list = 9;</code>
        * @return A list containing the rewardConfigList.
        */
       public java.util.List<java.lang.Integer>
@@ -634,14 +634,14 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
                  java.util.Collections.unmodifiableList(rewardConfigList_) : rewardConfigList_;
       }
       /**
-       * <code>repeated uint32 reward_config_list = 8;</code>
+       * <code>repeated uint32 reward_config_list = 9;</code>
        * @return The count of rewardConfigList.
        */
       public int getRewardConfigListCount() {
         return rewardConfigList_.size();
       }
       /**
-       * <code>repeated uint32 reward_config_list = 8;</code>
+       * <code>repeated uint32 reward_config_list = 9;</code>
        * @param index The index of the element to return.
        * @return The rewardConfigList at the given index.
        */
@@ -649,7 +649,7 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
         return rewardConfigList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 reward_config_list = 8;</code>
+       * <code>repeated uint32 reward_config_list = 9;</code>
        * @param index The index to set the value at.
        * @param value The rewardConfigList to set.
        * @return This builder for chaining.
@@ -662,7 +662,7 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 reward_config_list = 8;</code>
+       * <code>repeated uint32 reward_config_list = 9;</code>
        * @param value The rewardConfigList to add.
        * @return This builder for chaining.
        */
@@ -673,7 +673,7 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 reward_config_list = 8;</code>
+       * <code>repeated uint32 reward_config_list = 9;</code>
        * @param values The rewardConfigList to add.
        * @return This builder for chaining.
        */
@@ -686,7 +686,7 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 reward_config_list = 8;</code>
+       * <code>repeated uint32 reward_config_list = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearRewardConfigList() {
@@ -696,33 +696,33 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
         return this;
       }
 
-      private int activityId_ ;
+      private int retcode_ ;
       /**
-       * <code>uint32 activity_id = 14;</code>
-       * @return The activityId.
+       * <code>int32 retcode = 10;</code>
+       * @return The retcode.
        */
       @java.lang.Override
-      public int getActivityId() {
-        return activityId_;
+      public int getRetcode() {
+        return retcode_;
       }
       /**
-       * <code>uint32 activity_id = 14;</code>
-       * @param value The activityId to set.
+       * <code>int32 retcode = 10;</code>
+       * @param value The retcode to set.
        * @return This builder for chaining.
        */
-      public Builder setActivityId(int value) {
+      public Builder setRetcode(int value) {
         
-        activityId_ = value;
+        retcode_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 activity_id = 14;</code>
+       * <code>int32 retcode = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearActivityId() {
+      public Builder clearRetcode() {
         
-        activityId_ = 0;
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -794,9 +794,9 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n#ActivityTakeAllScoreRewardRsp.proto\"a\n" +
-      "\035ActivityTakeAllScoreRewardRsp\022\017\n\007retcod" +
-      "e\030\014 \001(\005\022\032\n\022reward_config_list\030\010 \003(\r\022\023\n\013a" +
-      "ctivity_id\030\016 \001(\rB\033\n\031emu.grasscutter.net." +
+      "\035ActivityTakeAllScoreRewardRsp\022\023\n\013activi" +
+      "ty_id\030\006 \001(\r\022\032\n\022reward_config_list\030\t \003(\r\022" +
+      "\017\n\007retcode\030\n \001(\005B\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -808,7 +808,7 @@ public final class ActivityTakeAllScoreRewardRspOuterClass {
     internal_static_ActivityTakeAllScoreRewardRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ActivityTakeAllScoreRewardRsp_descriptor,
-        new java.lang.String[] { "Retcode", "RewardConfigList", "ActivityId", });
+        new java.lang.String[] { "ActivityId", "RewardConfigList", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

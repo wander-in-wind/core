@@ -20,8 +20,8 @@ public final class ReadNicknameAuditReqOuterClass {
   }
   /**
    * <pre>
-   * Name: NHKDAKLHLMH
-   * CmdId: 169
+   * CmdId: 152
+   * Obf: OKCMDAIBGNO
    * </pre>
    *
    * Protobuf type {@code ReadNicknameAuditReq}
@@ -246,8 +246,8 @@ public final class ReadNicknameAuditReqOuterClass {
     }
     /**
      * <pre>
-     * Name: NHKDAKLHLMH
-     * CmdId: 169
+     * CmdId: 152
+     * Obf: OKCMDAIBGNO
      * </pre>
      *
      * Protobuf type {@code ReadNicknameAuditReq}

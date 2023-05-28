@@ -19,15 +19,21 @@ public final class HomeBlueprintInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_allow_friend_copy = 8;</code>
-     * @return The isAllowFriendCopy.
+     * <code>bool KMDEOGAINNP = 1;</code>
+     * @return The kMDEOGAINNP.
      */
-    boolean getIsAllowFriendCopy();
+    boolean getKMDEOGAINNP();
+
+    /**
+     * <code>bool CNDJLHPOOBO = 2;</code>
+     * @return The cNDJLHPOOBO.
+     */
+    boolean getCNDJLHPOOBO();
   }
   /**
    * <pre>
-   * Name: BKKCJILAHKK
-   * CmdId: 4463
+   * CmdId: 4870
+   * Obf: FNAINDKHAHL
    * </pre>
    *
    * Protobuf type {@code HomeBlueprintInfoNotify}
@@ -74,9 +80,14 @@ public final class HomeBlueprintInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 8: {
 
-              isAllowFriendCopy_ = input.readBool();
+              kMDEOGAINNP_ = input.readBool();
+              break;
+            }
+            case 16: {
+
+              cNDJLHPOOBO_ = input.readBool();
               break;
             }
             default: {
@@ -111,15 +122,26 @@ public final class HomeBlueprintInfoNotifyOuterClass {
               emu.grasscutter.net.proto.HomeBlueprintInfoNotifyOuterClass.HomeBlueprintInfoNotify.class, emu.grasscutter.net.proto.HomeBlueprintInfoNotifyOuterClass.HomeBlueprintInfoNotify.Builder.class);
     }
 
-    public static final int IS_ALLOW_FRIEND_COPY_FIELD_NUMBER = 8;
-    private boolean isAllowFriendCopy_;
+    public static final int KMDEOGAINNP_FIELD_NUMBER = 1;
+    private boolean kMDEOGAINNP_;
     /**
-     * <code>bool is_allow_friend_copy = 8;</code>
-     * @return The isAllowFriendCopy.
+     * <code>bool KMDEOGAINNP = 1;</code>
+     * @return The kMDEOGAINNP.
      */
     @java.lang.Override
-    public boolean getIsAllowFriendCopy() {
-      return isAllowFriendCopy_;
+    public boolean getKMDEOGAINNP() {
+      return kMDEOGAINNP_;
+    }
+
+    public static final int CNDJLHPOOBO_FIELD_NUMBER = 2;
+    private boolean cNDJLHPOOBO_;
+    /**
+     * <code>bool CNDJLHPOOBO = 2;</code>
+     * @return The cNDJLHPOOBO.
+     */
+    @java.lang.Override
+    public boolean getCNDJLHPOOBO() {
+      return cNDJLHPOOBO_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -136,8 +158,11 @@ public final class HomeBlueprintInfoNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isAllowFriendCopy_ != false) {
-        output.writeBool(8, isAllowFriendCopy_);
+      if (kMDEOGAINNP_ != false) {
+        output.writeBool(1, kMDEOGAINNP_);
+      }
+      if (cNDJLHPOOBO_ != false) {
+        output.writeBool(2, cNDJLHPOOBO_);
       }
       unknownFields.writeTo(output);
     }
@@ -148,9 +173,13 @@ public final class HomeBlueprintInfoNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isAllowFriendCopy_ != false) {
+      if (kMDEOGAINNP_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isAllowFriendCopy_);
+          .computeBoolSize(1, kMDEOGAINNP_);
+      }
+      if (cNDJLHPOOBO_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(2, cNDJLHPOOBO_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -167,8 +196,10 @@ public final class HomeBlueprintInfoNotifyOuterClass {
       }
       emu.grasscutter.net.proto.HomeBlueprintInfoNotifyOuterClass.HomeBlueprintInfoNotify other = (emu.grasscutter.net.proto.HomeBlueprintInfoNotifyOuterClass.HomeBlueprintInfoNotify) obj;
 
-      if (getIsAllowFriendCopy()
-          != other.getIsAllowFriendCopy()) return false;
+      if (getKMDEOGAINNP()
+          != other.getKMDEOGAINNP()) return false;
+      if (getCNDJLHPOOBO()
+          != other.getCNDJLHPOOBO()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -180,9 +211,12 @@ public final class HomeBlueprintInfoNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_ALLOW_FRIEND_COPY_FIELD_NUMBER;
+      hash = (37 * hash) + KMDEOGAINNP_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsAllowFriendCopy());
+          getKMDEOGAINNP());
+      hash = (37 * hash) + CNDJLHPOOBO_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getCNDJLHPOOBO());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -280,8 +314,8 @@ public final class HomeBlueprintInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: BKKCJILAHKK
-     * CmdId: 4463
+     * CmdId: 4870
+     * Obf: FNAINDKHAHL
      * </pre>
      *
      * Protobuf type {@code HomeBlueprintInfoNotify}
@@ -321,7 +355,9 @@ public final class HomeBlueprintInfoNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isAllowFriendCopy_ = false;
+        kMDEOGAINNP_ = false;
+
+        cNDJLHPOOBO_ = false;
 
         return this;
       }
@@ -349,7 +385,8 @@ public final class HomeBlueprintInfoNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeBlueprintInfoNotifyOuterClass.HomeBlueprintInfoNotify buildPartial() {
         emu.grasscutter.net.proto.HomeBlueprintInfoNotifyOuterClass.HomeBlueprintInfoNotify result = new emu.grasscutter.net.proto.HomeBlueprintInfoNotifyOuterClass.HomeBlueprintInfoNotify(this);
-        result.isAllowFriendCopy_ = isAllowFriendCopy_;
+        result.kMDEOGAINNP_ = kMDEOGAINNP_;
+        result.cNDJLHPOOBO_ = cNDJLHPOOBO_;
         onBuilt();
         return result;
       }
@@ -398,8 +435,11 @@ public final class HomeBlueprintInfoNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HomeBlueprintInfoNotifyOuterClass.HomeBlueprintInfoNotify other) {
         if (other == emu.grasscutter.net.proto.HomeBlueprintInfoNotifyOuterClass.HomeBlueprintInfoNotify.getDefaultInstance()) return this;
-        if (other.getIsAllowFriendCopy() != false) {
-          setIsAllowFriendCopy(other.getIsAllowFriendCopy());
+        if (other.getKMDEOGAINNP() != false) {
+          setKMDEOGAINNP(other.getKMDEOGAINNP());
+        }
+        if (other.getCNDJLHPOOBO() != false) {
+          setCNDJLHPOOBO(other.getCNDJLHPOOBO());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -430,33 +470,64 @@ public final class HomeBlueprintInfoNotifyOuterClass {
         return this;
       }
 
-      private boolean isAllowFriendCopy_ ;
+      private boolean kMDEOGAINNP_ ;
       /**
-       * <code>bool is_allow_friend_copy = 8;</code>
-       * @return The isAllowFriendCopy.
+       * <code>bool KMDEOGAINNP = 1;</code>
+       * @return The kMDEOGAINNP.
        */
       @java.lang.Override
-      public boolean getIsAllowFriendCopy() {
-        return isAllowFriendCopy_;
+      public boolean getKMDEOGAINNP() {
+        return kMDEOGAINNP_;
       }
       /**
-       * <code>bool is_allow_friend_copy = 8;</code>
-       * @param value The isAllowFriendCopy to set.
+       * <code>bool KMDEOGAINNP = 1;</code>
+       * @param value The kMDEOGAINNP to set.
        * @return This builder for chaining.
        */
-      public Builder setIsAllowFriendCopy(boolean value) {
+      public Builder setKMDEOGAINNP(boolean value) {
         
-        isAllowFriendCopy_ = value;
+        kMDEOGAINNP_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_allow_friend_copy = 8;</code>
+       * <code>bool KMDEOGAINNP = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsAllowFriendCopy() {
+      public Builder clearKMDEOGAINNP() {
         
-        isAllowFriendCopy_ = false;
+        kMDEOGAINNP_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean cNDJLHPOOBO_ ;
+      /**
+       * <code>bool CNDJLHPOOBO = 2;</code>
+       * @return The cNDJLHPOOBO.
+       */
+      @java.lang.Override
+      public boolean getCNDJLHPOOBO() {
+        return cNDJLHPOOBO_;
+      }
+      /**
+       * <code>bool CNDJLHPOOBO = 2;</code>
+       * @param value The cNDJLHPOOBO to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCNDJLHPOOBO(boolean value) {
+        
+        cNDJLHPOOBO_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool CNDJLHPOOBO = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCNDJLHPOOBO() {
+        
+        cNDJLHPOOBO_ = false;
         onChanged();
         return this;
       }
@@ -527,10 +598,10 @@ public final class HomeBlueprintInfoNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\035HomeBlueprintInfoNotify.proto\"7\n\027HomeB" +
-      "lueprintInfoNotify\022\034\n\024is_allow_friend_co" +
-      "py\030\010 \001(\010B\033\n\031emu.grasscutter.net.protob\006p" +
-      "roto3"
+      "\n\035HomeBlueprintInfoNotify.proto\"C\n\027HomeB" +
+      "lueprintInfoNotify\022\023\n\013KMDEOGAINNP\030\001 \001(\010\022" +
+      "\023\n\013CNDJLHPOOBO\030\002 \001(\010B\033\n\031emu.grasscutter." +
+      "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -541,7 +612,7 @@ public final class HomeBlueprintInfoNotifyOuterClass {
     internal_static_HomeBlueprintInfoNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeBlueprintInfoNotify_descriptor,
-        new java.lang.String[] { "IsAllowFriendCopy", });
+        new java.lang.String[] { "KMDEOGAINNP", "CNDJLHPOOBO", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

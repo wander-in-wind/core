@@ -19,38 +19,38 @@ public final class ChannellerSlabLoopDungeonSelectConditionReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 difficulty_id = 11;</code>
-     * @return The difficultyId.
+     * <code>uint32 dungeon_index = 1;</code>
+     * @return The dungeonIndex.
      */
-    int getDifficultyId();
+    int getDungeonIndex();
 
     /**
-     * <code>repeated uint32 condition_id_list = 15;</code>
+     * <code>repeated uint32 condition_id_list = 13;</code>
      * @return A list containing the conditionIdList.
      */
     java.util.List<java.lang.Integer> getConditionIdListList();
     /**
-     * <code>repeated uint32 condition_id_list = 15;</code>
+     * <code>repeated uint32 condition_id_list = 13;</code>
      * @return The count of conditionIdList.
      */
     int getConditionIdListCount();
     /**
-     * <code>repeated uint32 condition_id_list = 15;</code>
+     * <code>repeated uint32 condition_id_list = 13;</code>
      * @param index The index of the element to return.
      * @return The conditionIdList at the given index.
      */
     int getConditionIdList(int index);
 
     /**
-     * <code>uint32 dungeon_index = 6;</code>
-     * @return The dungeonIndex.
+     * <code>uint32 difficulty_id = 5;</code>
+     * @return The difficultyId.
      */
-    int getDungeonIndex();
+    int getDifficultyId();
   }
   /**
    * <pre>
-   * Name: LENDNBDJFGL
-   * CmdId: 8951
+   * CmdId: 8519
+   * Obf: KCPHLNBFJBL
    * </pre>
    *
    * Protobuf type {@code ChannellerSlabLoopDungeonSelectConditionReq}
@@ -99,17 +99,17 @@ public final class ChannellerSlabLoopDungeonSelectConditionReqOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 8: {
 
               dungeonIndex_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 40: {
 
               difficultyId_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 104: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 conditionIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -117,7 +117,7 @@ public final class ChannellerSlabLoopDungeonSelectConditionReqOuterClass {
               conditionIdList_.addInt(input.readUInt32());
               break;
             }
-            case 122: {
+            case 106: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -165,21 +165,21 @@ public final class ChannellerSlabLoopDungeonSelectConditionReqOuterClass {
               emu.grasscutter.net.proto.ChannellerSlabLoopDungeonSelectConditionReqOuterClass.ChannellerSlabLoopDungeonSelectConditionReq.class, emu.grasscutter.net.proto.ChannellerSlabLoopDungeonSelectConditionReqOuterClass.ChannellerSlabLoopDungeonSelectConditionReq.Builder.class);
     }
 
-    public static final int DIFFICULTY_ID_FIELD_NUMBER = 11;
-    private int difficultyId_;
+    public static final int DUNGEON_INDEX_FIELD_NUMBER = 1;
+    private int dungeonIndex_;
     /**
-     * <code>uint32 difficulty_id = 11;</code>
-     * @return The difficultyId.
+     * <code>uint32 dungeon_index = 1;</code>
+     * @return The dungeonIndex.
      */
     @java.lang.Override
-    public int getDifficultyId() {
-      return difficultyId_;
+    public int getDungeonIndex() {
+      return dungeonIndex_;
     }
 
-    public static final int CONDITION_ID_LIST_FIELD_NUMBER = 15;
+    public static final int CONDITION_ID_LIST_FIELD_NUMBER = 13;
     private com.google.protobuf.Internal.IntList conditionIdList_;
     /**
-     * <code>repeated uint32 condition_id_list = 15;</code>
+     * <code>repeated uint32 condition_id_list = 13;</code>
      * @return A list containing the conditionIdList.
      */
     @java.lang.Override
@@ -188,14 +188,14 @@ public final class ChannellerSlabLoopDungeonSelectConditionReqOuterClass {
       return conditionIdList_;
     }
     /**
-     * <code>repeated uint32 condition_id_list = 15;</code>
+     * <code>repeated uint32 condition_id_list = 13;</code>
      * @return The count of conditionIdList.
      */
     public int getConditionIdListCount() {
       return conditionIdList_.size();
     }
     /**
-     * <code>repeated uint32 condition_id_list = 15;</code>
+     * <code>repeated uint32 condition_id_list = 13;</code>
      * @param index The index of the element to return.
      * @return The conditionIdList at the given index.
      */
@@ -204,15 +204,15 @@ public final class ChannellerSlabLoopDungeonSelectConditionReqOuterClass {
     }
     private int conditionIdListMemoizedSerializedSize = -1;
 
-    public static final int DUNGEON_INDEX_FIELD_NUMBER = 6;
-    private int dungeonIndex_;
+    public static final int DIFFICULTY_ID_FIELD_NUMBER = 5;
+    private int difficultyId_;
     /**
-     * <code>uint32 dungeon_index = 6;</code>
-     * @return The dungeonIndex.
+     * <code>uint32 difficulty_id = 5;</code>
+     * @return The difficultyId.
      */
     @java.lang.Override
-    public int getDungeonIndex() {
-      return dungeonIndex_;
+    public int getDifficultyId() {
+      return difficultyId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -231,13 +231,13 @@ public final class ChannellerSlabLoopDungeonSelectConditionReqOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (dungeonIndex_ != 0) {
-        output.writeUInt32(6, dungeonIndex_);
+        output.writeUInt32(1, dungeonIndex_);
       }
       if (difficultyId_ != 0) {
-        output.writeUInt32(11, difficultyId_);
+        output.writeUInt32(5, difficultyId_);
       }
       if (getConditionIdListList().size() > 0) {
-        output.writeUInt32NoTag(122);
+        output.writeUInt32NoTag(106);
         output.writeUInt32NoTag(conditionIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < conditionIdList_.size(); i++) {
@@ -254,11 +254,11 @@ public final class ChannellerSlabLoopDungeonSelectConditionReqOuterClass {
       size = 0;
       if (dungeonIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, dungeonIndex_);
+          .computeUInt32Size(1, dungeonIndex_);
       }
       if (difficultyId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, difficultyId_);
+          .computeUInt32Size(5, difficultyId_);
       }
       {
         int dataSize = 0;
@@ -289,12 +289,12 @@ public final class ChannellerSlabLoopDungeonSelectConditionReqOuterClass {
       }
       emu.grasscutter.net.proto.ChannellerSlabLoopDungeonSelectConditionReqOuterClass.ChannellerSlabLoopDungeonSelectConditionReq other = (emu.grasscutter.net.proto.ChannellerSlabLoopDungeonSelectConditionReqOuterClass.ChannellerSlabLoopDungeonSelectConditionReq) obj;
 
-      if (getDifficultyId()
-          != other.getDifficultyId()) return false;
-      if (!getConditionIdListList()
-          .equals(other.getConditionIdListList())) return false;
       if (getDungeonIndex()
           != other.getDungeonIndex()) return false;
+      if (!getConditionIdListList()
+          .equals(other.getConditionIdListList())) return false;
+      if (getDifficultyId()
+          != other.getDifficultyId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -306,14 +306,14 @@ public final class ChannellerSlabLoopDungeonSelectConditionReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + DIFFICULTY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getDifficultyId();
+      hash = (37 * hash) + DUNGEON_INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getDungeonIndex();
       if (getConditionIdListCount() > 0) {
         hash = (37 * hash) + CONDITION_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getConditionIdListList().hashCode();
       }
-      hash = (37 * hash) + DUNGEON_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getDungeonIndex();
+      hash = (37 * hash) + DIFFICULTY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getDifficultyId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -411,8 +411,8 @@ public final class ChannellerSlabLoopDungeonSelectConditionReqOuterClass {
     }
     /**
      * <pre>
-     * Name: LENDNBDJFGL
-     * CmdId: 8951
+     * CmdId: 8519
+     * Obf: KCPHLNBFJBL
      * </pre>
      *
      * Protobuf type {@code ChannellerSlabLoopDungeonSelectConditionReq}
@@ -452,11 +452,11 @@ public final class ChannellerSlabLoopDungeonSelectConditionReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        difficultyId_ = 0;
+        dungeonIndex_ = 0;
 
         conditionIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        dungeonIndex_ = 0;
+        difficultyId_ = 0;
 
         return this;
       }
@@ -485,13 +485,13 @@ public final class ChannellerSlabLoopDungeonSelectConditionReqOuterClass {
       public emu.grasscutter.net.proto.ChannellerSlabLoopDungeonSelectConditionReqOuterClass.ChannellerSlabLoopDungeonSelectConditionReq buildPartial() {
         emu.grasscutter.net.proto.ChannellerSlabLoopDungeonSelectConditionReqOuterClass.ChannellerSlabLoopDungeonSelectConditionReq result = new emu.grasscutter.net.proto.ChannellerSlabLoopDungeonSelectConditionReqOuterClass.ChannellerSlabLoopDungeonSelectConditionReq(this);
         int from_bitField0_ = bitField0_;
-        result.difficultyId_ = difficultyId_;
+        result.dungeonIndex_ = dungeonIndex_;
         if (((bitField0_ & 0x00000001) != 0)) {
           conditionIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.conditionIdList_ = conditionIdList_;
-        result.dungeonIndex_ = dungeonIndex_;
+        result.difficultyId_ = difficultyId_;
         onBuilt();
         return result;
       }
@@ -540,8 +540,8 @@ public final class ChannellerSlabLoopDungeonSelectConditionReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ChannellerSlabLoopDungeonSelectConditionReqOuterClass.ChannellerSlabLoopDungeonSelectConditionReq other) {
         if (other == emu.grasscutter.net.proto.ChannellerSlabLoopDungeonSelectConditionReqOuterClass.ChannellerSlabLoopDungeonSelectConditionReq.getDefaultInstance()) return this;
-        if (other.getDifficultyId() != 0) {
-          setDifficultyId(other.getDifficultyId());
+        if (other.getDungeonIndex() != 0) {
+          setDungeonIndex(other.getDungeonIndex());
         }
         if (!other.conditionIdList_.isEmpty()) {
           if (conditionIdList_.isEmpty()) {
@@ -553,8 +553,8 @@ public final class ChannellerSlabLoopDungeonSelectConditionReqOuterClass {
           }
           onChanged();
         }
-        if (other.getDungeonIndex() != 0) {
-          setDungeonIndex(other.getDungeonIndex());
+        if (other.getDifficultyId() != 0) {
+          setDifficultyId(other.getDifficultyId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -586,33 +586,33 @@ public final class ChannellerSlabLoopDungeonSelectConditionReqOuterClass {
       }
       private int bitField0_;
 
-      private int difficultyId_ ;
+      private int dungeonIndex_ ;
       /**
-       * <code>uint32 difficulty_id = 11;</code>
-       * @return The difficultyId.
+       * <code>uint32 dungeon_index = 1;</code>
+       * @return The dungeonIndex.
        */
       @java.lang.Override
-      public int getDifficultyId() {
-        return difficultyId_;
+      public int getDungeonIndex() {
+        return dungeonIndex_;
       }
       /**
-       * <code>uint32 difficulty_id = 11;</code>
-       * @param value The difficultyId to set.
+       * <code>uint32 dungeon_index = 1;</code>
+       * @param value The dungeonIndex to set.
        * @return This builder for chaining.
        */
-      public Builder setDifficultyId(int value) {
+      public Builder setDungeonIndex(int value) {
         
-        difficultyId_ = value;
+        dungeonIndex_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 difficulty_id = 11;</code>
+       * <code>uint32 dungeon_index = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDifficultyId() {
+      public Builder clearDungeonIndex() {
         
-        difficultyId_ = 0;
+        dungeonIndex_ = 0;
         onChanged();
         return this;
       }
@@ -625,7 +625,7 @@ public final class ChannellerSlabLoopDungeonSelectConditionReqOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 condition_id_list = 15;</code>
+       * <code>repeated uint32 condition_id_list = 13;</code>
        * @return A list containing the conditionIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -634,14 +634,14 @@ public final class ChannellerSlabLoopDungeonSelectConditionReqOuterClass {
                  java.util.Collections.unmodifiableList(conditionIdList_) : conditionIdList_;
       }
       /**
-       * <code>repeated uint32 condition_id_list = 15;</code>
+       * <code>repeated uint32 condition_id_list = 13;</code>
        * @return The count of conditionIdList.
        */
       public int getConditionIdListCount() {
         return conditionIdList_.size();
       }
       /**
-       * <code>repeated uint32 condition_id_list = 15;</code>
+       * <code>repeated uint32 condition_id_list = 13;</code>
        * @param index The index of the element to return.
        * @return The conditionIdList at the given index.
        */
@@ -649,7 +649,7 @@ public final class ChannellerSlabLoopDungeonSelectConditionReqOuterClass {
         return conditionIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 condition_id_list = 15;</code>
+       * <code>repeated uint32 condition_id_list = 13;</code>
        * @param index The index to set the value at.
        * @param value The conditionIdList to set.
        * @return This builder for chaining.
@@ -662,7 +662,7 @@ public final class ChannellerSlabLoopDungeonSelectConditionReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 condition_id_list = 15;</code>
+       * <code>repeated uint32 condition_id_list = 13;</code>
        * @param value The conditionIdList to add.
        * @return This builder for chaining.
        */
@@ -673,7 +673,7 @@ public final class ChannellerSlabLoopDungeonSelectConditionReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 condition_id_list = 15;</code>
+       * <code>repeated uint32 condition_id_list = 13;</code>
        * @param values The conditionIdList to add.
        * @return This builder for chaining.
        */
@@ -686,7 +686,7 @@ public final class ChannellerSlabLoopDungeonSelectConditionReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 condition_id_list = 15;</code>
+       * <code>repeated uint32 condition_id_list = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearConditionIdList() {
@@ -696,33 +696,33 @@ public final class ChannellerSlabLoopDungeonSelectConditionReqOuterClass {
         return this;
       }
 
-      private int dungeonIndex_ ;
+      private int difficultyId_ ;
       /**
-       * <code>uint32 dungeon_index = 6;</code>
-       * @return The dungeonIndex.
+       * <code>uint32 difficulty_id = 5;</code>
+       * @return The difficultyId.
        */
       @java.lang.Override
-      public int getDungeonIndex() {
-        return dungeonIndex_;
+      public int getDifficultyId() {
+        return difficultyId_;
       }
       /**
-       * <code>uint32 dungeon_index = 6;</code>
-       * @param value The dungeonIndex to set.
+       * <code>uint32 difficulty_id = 5;</code>
+       * @param value The difficultyId to set.
        * @return This builder for chaining.
        */
-      public Builder setDungeonIndex(int value) {
+      public Builder setDifficultyId(int value) {
         
-        dungeonIndex_ = value;
+        difficultyId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 dungeon_index = 6;</code>
+       * <code>uint32 difficulty_id = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDungeonIndex() {
+      public Builder clearDifficultyId() {
         
-        dungeonIndex_ = 0;
+        difficultyId_ = 0;
         onChanged();
         return this;
       }
@@ -795,9 +795,9 @@ public final class ChannellerSlabLoopDungeonSelectConditionReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n1ChannellerSlabLoopDungeonSelectConditi" +
       "onReq.proto\"v\n+ChannellerSlabLoopDungeon" +
-      "SelectConditionReq\022\025\n\rdifficulty_id\030\013 \001(" +
-      "\r\022\031\n\021condition_id_list\030\017 \003(\r\022\025\n\rdungeon_" +
-      "index\030\006 \001(\rB\033\n\031emu.grasscutter.net.proto" +
+      "SelectConditionReq\022\025\n\rdungeon_index\030\001 \001(" +
+      "\r\022\031\n\021condition_id_list\030\r \003(\r\022\025\n\rdifficul" +
+      "ty_id\030\005 \001(\rB\033\n\031emu.grasscutter.net.proto" +
       "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -809,7 +809,7 @@ public final class ChannellerSlabLoopDungeonSelectConditionReqOuterClass {
     internal_static_ChannellerSlabLoopDungeonSelectConditionReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ChannellerSlabLoopDungeonSelectConditionReq_descriptor,
-        new java.lang.String[] { "DifficultyId", "ConditionIdList", "DungeonIndex", });
+        new java.lang.String[] { "DungeonIndex", "ConditionIdList", "DifficultyId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

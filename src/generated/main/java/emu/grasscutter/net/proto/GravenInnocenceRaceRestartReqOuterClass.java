@@ -19,15 +19,15 @@ public final class GravenInnocenceRaceRestartReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 gallery_id = 2;</code>
+     * <code>uint32 gallery_id = 15;</code>
      * @return The galleryId.
      */
     int getGalleryId();
   }
   /**
    * <pre>
-   * Name: EFPOKHEHFMI
-   * CmdId: 22616
+   * CmdId: 22570
+   * Obf: HIMHAELIHDM
    * </pre>
    *
    * Protobuf type {@code GravenInnocenceRaceRestartReq}
@@ -74,7 +74,7 @@ public final class GravenInnocenceRaceRestartReqOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 120: {
 
               galleryId_ = input.readUInt32();
               break;
@@ -111,10 +111,10 @@ public final class GravenInnocenceRaceRestartReqOuterClass {
               emu.grasscutter.net.proto.GravenInnocenceRaceRestartReqOuterClass.GravenInnocenceRaceRestartReq.class, emu.grasscutter.net.proto.GravenInnocenceRaceRestartReqOuterClass.GravenInnocenceRaceRestartReq.Builder.class);
     }
 
-    public static final int GALLERY_ID_FIELD_NUMBER = 2;
+    public static final int GALLERY_ID_FIELD_NUMBER = 15;
     private int galleryId_;
     /**
-     * <code>uint32 gallery_id = 2;</code>
+     * <code>uint32 gallery_id = 15;</code>
      * @return The galleryId.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class GravenInnocenceRaceRestartReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (galleryId_ != 0) {
-        output.writeUInt32(2, galleryId_);
+        output.writeUInt32(15, galleryId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class GravenInnocenceRaceRestartReqOuterClass {
       size = 0;
       if (galleryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, galleryId_);
+          .computeUInt32Size(15, galleryId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class GravenInnocenceRaceRestartReqOuterClass {
     }
     /**
      * <pre>
-     * Name: EFPOKHEHFMI
-     * CmdId: 22616
+     * CmdId: 22570
+     * Obf: HIMHAELIHDM
      * </pre>
      *
      * Protobuf type {@code GravenInnocenceRaceRestartReq}
@@ -431,7 +431,7 @@ public final class GravenInnocenceRaceRestartReqOuterClass {
 
       private int galleryId_ ;
       /**
-       * <code>uint32 gallery_id = 2;</code>
+       * <code>uint32 gallery_id = 15;</code>
        * @return The galleryId.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class GravenInnocenceRaceRestartReqOuterClass {
         return galleryId_;
       }
       /**
-       * <code>uint32 gallery_id = 2;</code>
+       * <code>uint32 gallery_id = 15;</code>
        * @param value The galleryId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class GravenInnocenceRaceRestartReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gallery_id = 2;</code>
+       * <code>uint32 gallery_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearGalleryId() {
@@ -528,7 +528,7 @@ public final class GravenInnocenceRaceRestartReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n#GravenInnocenceRaceRestartReq.proto\"3\n" +
       "\035GravenInnocenceRaceRestartReq\022\022\n\ngaller" +
-      "y_id\030\002 \001(\rB\033\n\031emu.grasscutter.net.protob" +
+      "y_id\030\017 \001(\rB\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

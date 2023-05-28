@@ -19,41 +19,41 @@ public final class HomeBalloonGalleryRecordOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 score = 10;</code>
-     * @return The score.
+     * <code>uint32 timestamp = 11;</code>
+     * @return The timestamp.
      */
-    int getScore();
+    int getTimestamp();
 
     /**
-     * <code>uint32 hit_count = 15;</code>
+     * <code>.HomeGroupPlayerInfo player_info = 14;</code>
+     * @return Whether the playerInfo field is set.
+     */
+    boolean hasPlayerInfo();
+    /**
+     * <code>.HomeGroupPlayerInfo player_info = 14;</code>
+     * @return The playerInfo.
+     */
+    emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfo getPlayerInfo();
+    /**
+     * <code>.HomeGroupPlayerInfo player_info = 14;</code>
+     */
+    emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfoOrBuilder getPlayerInfoOrBuilder();
+
+    /**
+     * <code>uint32 hit_count = 12;</code>
      * @return The hitCount.
      */
     int getHitCount();
 
     /**
-     * <code>.HomeGroupPlayerInfo player_info = 5;</code>
-     * @return Whether the playerInfo field is set.
+     * <code>uint32 score = 1;</code>
+     * @return The score.
      */
-    boolean hasPlayerInfo();
-    /**
-     * <code>.HomeGroupPlayerInfo player_info = 5;</code>
-     * @return The playerInfo.
-     */
-    emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfo getPlayerInfo();
-    /**
-     * <code>.HomeGroupPlayerInfo player_info = 5;</code>
-     */
-    emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfoOrBuilder getPlayerInfoOrBuilder();
-
-    /**
-     * <code>uint32 timestamp = 3;</code>
-     * @return The timestamp.
-     */
-    int getTimestamp();
+    int getScore();
   }
   /**
    * <pre>
-   * Name: HDILGEFEHEL
+   * Obf: JGNJFAPBOBJ
    * </pre>
    *
    * Protobuf type {@code HomeBalloonGalleryRecord}
@@ -100,12 +100,22 @@ public final class HomeBalloonGalleryRecordOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 8: {
+
+              score_ = input.readUInt32();
+              break;
+            }
+            case 88: {
 
               timestamp_ = input.readUInt32();
               break;
             }
-            case 42: {
+            case 96: {
+
+              hitCount_ = input.readUInt32();
+              break;
+            }
+            case 114: {
               emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfo.Builder subBuilder = null;
               if (playerInfo_ != null) {
                 subBuilder = playerInfo_.toBuilder();
@@ -116,16 +126,6 @@ public final class HomeBalloonGalleryRecordOuterClass {
                 playerInfo_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 80: {
-
-              score_ = input.readUInt32();
-              break;
-            }
-            case 120: {
-
-              hitCount_ = input.readUInt32();
               break;
             }
             default: {
@@ -160,32 +160,21 @@ public final class HomeBalloonGalleryRecordOuterClass {
               emu.grasscutter.net.proto.HomeBalloonGalleryRecordOuterClass.HomeBalloonGalleryRecord.class, emu.grasscutter.net.proto.HomeBalloonGalleryRecordOuterClass.HomeBalloonGalleryRecord.Builder.class);
     }
 
-    public static final int SCORE_FIELD_NUMBER = 10;
-    private int score_;
+    public static final int TIMESTAMP_FIELD_NUMBER = 11;
+    private int timestamp_;
     /**
-     * <code>uint32 score = 10;</code>
-     * @return The score.
+     * <code>uint32 timestamp = 11;</code>
+     * @return The timestamp.
      */
     @java.lang.Override
-    public int getScore() {
-      return score_;
+    public int getTimestamp() {
+      return timestamp_;
     }
 
-    public static final int HIT_COUNT_FIELD_NUMBER = 15;
-    private int hitCount_;
-    /**
-     * <code>uint32 hit_count = 15;</code>
-     * @return The hitCount.
-     */
-    @java.lang.Override
-    public int getHitCount() {
-      return hitCount_;
-    }
-
-    public static final int PLAYER_INFO_FIELD_NUMBER = 5;
+    public static final int PLAYER_INFO_FIELD_NUMBER = 14;
     private emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfo playerInfo_;
     /**
-     * <code>.HomeGroupPlayerInfo player_info = 5;</code>
+     * <code>.HomeGroupPlayerInfo player_info = 14;</code>
      * @return Whether the playerInfo field is set.
      */
     @java.lang.Override
@@ -193,7 +182,7 @@ public final class HomeBalloonGalleryRecordOuterClass {
       return playerInfo_ != null;
     }
     /**
-     * <code>.HomeGroupPlayerInfo player_info = 5;</code>
+     * <code>.HomeGroupPlayerInfo player_info = 14;</code>
      * @return The playerInfo.
      */
     @java.lang.Override
@@ -201,22 +190,33 @@ public final class HomeBalloonGalleryRecordOuterClass {
       return playerInfo_ == null ? emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfo.getDefaultInstance() : playerInfo_;
     }
     /**
-     * <code>.HomeGroupPlayerInfo player_info = 5;</code>
+     * <code>.HomeGroupPlayerInfo player_info = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfoOrBuilder getPlayerInfoOrBuilder() {
       return getPlayerInfo();
     }
 
-    public static final int TIMESTAMP_FIELD_NUMBER = 3;
-    private int timestamp_;
+    public static final int HIT_COUNT_FIELD_NUMBER = 12;
+    private int hitCount_;
     /**
-     * <code>uint32 timestamp = 3;</code>
-     * @return The timestamp.
+     * <code>uint32 hit_count = 12;</code>
+     * @return The hitCount.
      */
     @java.lang.Override
-    public int getTimestamp() {
-      return timestamp_;
+    public int getHitCount() {
+      return hitCount_;
+    }
+
+    public static final int SCORE_FIELD_NUMBER = 1;
+    private int score_;
+    /**
+     * <code>uint32 score = 1;</code>
+     * @return The score.
+     */
+    @java.lang.Override
+    public int getScore() {
+      return score_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -233,17 +233,17 @@ public final class HomeBalloonGalleryRecordOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (timestamp_ != 0) {
-        output.writeUInt32(3, timestamp_);
-      }
-      if (playerInfo_ != null) {
-        output.writeMessage(5, getPlayerInfo());
-      }
       if (score_ != 0) {
-        output.writeUInt32(10, score_);
+        output.writeUInt32(1, score_);
+      }
+      if (timestamp_ != 0) {
+        output.writeUInt32(11, timestamp_);
       }
       if (hitCount_ != 0) {
-        output.writeUInt32(15, hitCount_);
+        output.writeUInt32(12, hitCount_);
+      }
+      if (playerInfo_ != null) {
+        output.writeMessage(14, getPlayerInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -254,21 +254,21 @@ public final class HomeBalloonGalleryRecordOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (timestamp_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, timestamp_);
-      }
-      if (playerInfo_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, getPlayerInfo());
-      }
       if (score_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, score_);
+          .computeUInt32Size(1, score_);
+      }
+      if (timestamp_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, timestamp_);
       }
       if (hitCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, hitCount_);
+          .computeUInt32Size(12, hitCount_);
+      }
+      if (playerInfo_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(14, getPlayerInfo());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -285,17 +285,17 @@ public final class HomeBalloonGalleryRecordOuterClass {
       }
       emu.grasscutter.net.proto.HomeBalloonGalleryRecordOuterClass.HomeBalloonGalleryRecord other = (emu.grasscutter.net.proto.HomeBalloonGalleryRecordOuterClass.HomeBalloonGalleryRecord) obj;
 
-      if (getScore()
-          != other.getScore()) return false;
-      if (getHitCount()
-          != other.getHitCount()) return false;
+      if (getTimestamp()
+          != other.getTimestamp()) return false;
       if (hasPlayerInfo() != other.hasPlayerInfo()) return false;
       if (hasPlayerInfo()) {
         if (!getPlayerInfo()
             .equals(other.getPlayerInfo())) return false;
       }
-      if (getTimestamp()
-          != other.getTimestamp()) return false;
+      if (getHitCount()
+          != other.getHitCount()) return false;
+      if (getScore()
+          != other.getScore()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -307,16 +307,16 @@ public final class HomeBalloonGalleryRecordOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getScore();
-      hash = (37 * hash) + HIT_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getHitCount();
+      hash = (37 * hash) + TIMESTAMP_FIELD_NUMBER;
+      hash = (53 * hash) + getTimestamp();
       if (hasPlayerInfo()) {
         hash = (37 * hash) + PLAYER_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getPlayerInfo().hashCode();
       }
-      hash = (37 * hash) + TIMESTAMP_FIELD_NUMBER;
-      hash = (53 * hash) + getTimestamp();
+      hash = (37 * hash) + HIT_COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getHitCount();
+      hash = (37 * hash) + SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getScore();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -414,7 +414,7 @@ public final class HomeBalloonGalleryRecordOuterClass {
     }
     /**
      * <pre>
-     * Name: HDILGEFEHEL
+     * Obf: JGNJFAPBOBJ
      * </pre>
      *
      * Protobuf type {@code HomeBalloonGalleryRecord}
@@ -454,9 +454,7 @@ public final class HomeBalloonGalleryRecordOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        score_ = 0;
-
-        hitCount_ = 0;
+        timestamp_ = 0;
 
         if (playerInfoBuilder_ == null) {
           playerInfo_ = null;
@@ -464,7 +462,9 @@ public final class HomeBalloonGalleryRecordOuterClass {
           playerInfo_ = null;
           playerInfoBuilder_ = null;
         }
-        timestamp_ = 0;
+        hitCount_ = 0;
+
+        score_ = 0;
 
         return this;
       }
@@ -492,14 +492,14 @@ public final class HomeBalloonGalleryRecordOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeBalloonGalleryRecordOuterClass.HomeBalloonGalleryRecord buildPartial() {
         emu.grasscutter.net.proto.HomeBalloonGalleryRecordOuterClass.HomeBalloonGalleryRecord result = new emu.grasscutter.net.proto.HomeBalloonGalleryRecordOuterClass.HomeBalloonGalleryRecord(this);
-        result.score_ = score_;
-        result.hitCount_ = hitCount_;
+        result.timestamp_ = timestamp_;
         if (playerInfoBuilder_ == null) {
           result.playerInfo_ = playerInfo_;
         } else {
           result.playerInfo_ = playerInfoBuilder_.build();
         }
-        result.timestamp_ = timestamp_;
+        result.hitCount_ = hitCount_;
+        result.score_ = score_;
         onBuilt();
         return result;
       }
@@ -548,17 +548,17 @@ public final class HomeBalloonGalleryRecordOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HomeBalloonGalleryRecordOuterClass.HomeBalloonGalleryRecord other) {
         if (other == emu.grasscutter.net.proto.HomeBalloonGalleryRecordOuterClass.HomeBalloonGalleryRecord.getDefaultInstance()) return this;
-        if (other.getScore() != 0) {
-          setScore(other.getScore());
-        }
-        if (other.getHitCount() != 0) {
-          setHitCount(other.getHitCount());
+        if (other.getTimestamp() != 0) {
+          setTimestamp(other.getTimestamp());
         }
         if (other.hasPlayerInfo()) {
           mergePlayerInfo(other.getPlayerInfo());
         }
-        if (other.getTimestamp() != 0) {
-          setTimestamp(other.getTimestamp());
+        if (other.getHitCount() != 0) {
+          setHitCount(other.getHitCount());
+        }
+        if (other.getScore() != 0) {
+          setScore(other.getScore());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -589,64 +589,33 @@ public final class HomeBalloonGalleryRecordOuterClass {
         return this;
       }
 
-      private int score_ ;
+      private int timestamp_ ;
       /**
-       * <code>uint32 score = 10;</code>
-       * @return The score.
+       * <code>uint32 timestamp = 11;</code>
+       * @return The timestamp.
        */
       @java.lang.Override
-      public int getScore() {
-        return score_;
+      public int getTimestamp() {
+        return timestamp_;
       }
       /**
-       * <code>uint32 score = 10;</code>
-       * @param value The score to set.
+       * <code>uint32 timestamp = 11;</code>
+       * @param value The timestamp to set.
        * @return This builder for chaining.
        */
-      public Builder setScore(int value) {
+      public Builder setTimestamp(int value) {
         
-        score_ = value;
+        timestamp_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 score = 10;</code>
+       * <code>uint32 timestamp = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearScore() {
+      public Builder clearTimestamp() {
         
-        score_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int hitCount_ ;
-      /**
-       * <code>uint32 hit_count = 15;</code>
-       * @return The hitCount.
-       */
-      @java.lang.Override
-      public int getHitCount() {
-        return hitCount_;
-      }
-      /**
-       * <code>uint32 hit_count = 15;</code>
-       * @param value The hitCount to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHitCount(int value) {
-        
-        hitCount_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 hit_count = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearHitCount() {
-        
-        hitCount_ = 0;
+        timestamp_ = 0;
         onChanged();
         return this;
       }
@@ -655,14 +624,14 @@ public final class HomeBalloonGalleryRecordOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfo, emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfo.Builder, emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfoOrBuilder> playerInfoBuilder_;
       /**
-       * <code>.HomeGroupPlayerInfo player_info = 5;</code>
+       * <code>.HomeGroupPlayerInfo player_info = 14;</code>
        * @return Whether the playerInfo field is set.
        */
       public boolean hasPlayerInfo() {
         return playerInfoBuilder_ != null || playerInfo_ != null;
       }
       /**
-       * <code>.HomeGroupPlayerInfo player_info = 5;</code>
+       * <code>.HomeGroupPlayerInfo player_info = 14;</code>
        * @return The playerInfo.
        */
       public emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfo getPlayerInfo() {
@@ -673,7 +642,7 @@ public final class HomeBalloonGalleryRecordOuterClass {
         }
       }
       /**
-       * <code>.HomeGroupPlayerInfo player_info = 5;</code>
+       * <code>.HomeGroupPlayerInfo player_info = 14;</code>
        */
       public Builder setPlayerInfo(emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfo value) {
         if (playerInfoBuilder_ == null) {
@@ -689,7 +658,7 @@ public final class HomeBalloonGalleryRecordOuterClass {
         return this;
       }
       /**
-       * <code>.HomeGroupPlayerInfo player_info = 5;</code>
+       * <code>.HomeGroupPlayerInfo player_info = 14;</code>
        */
       public Builder setPlayerInfo(
           emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfo.Builder builderForValue) {
@@ -703,7 +672,7 @@ public final class HomeBalloonGalleryRecordOuterClass {
         return this;
       }
       /**
-       * <code>.HomeGroupPlayerInfo player_info = 5;</code>
+       * <code>.HomeGroupPlayerInfo player_info = 14;</code>
        */
       public Builder mergePlayerInfo(emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfo value) {
         if (playerInfoBuilder_ == null) {
@@ -721,7 +690,7 @@ public final class HomeBalloonGalleryRecordOuterClass {
         return this;
       }
       /**
-       * <code>.HomeGroupPlayerInfo player_info = 5;</code>
+       * <code>.HomeGroupPlayerInfo player_info = 14;</code>
        */
       public Builder clearPlayerInfo() {
         if (playerInfoBuilder_ == null) {
@@ -735,7 +704,7 @@ public final class HomeBalloonGalleryRecordOuterClass {
         return this;
       }
       /**
-       * <code>.HomeGroupPlayerInfo player_info = 5;</code>
+       * <code>.HomeGroupPlayerInfo player_info = 14;</code>
        */
       public emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfo.Builder getPlayerInfoBuilder() {
         
@@ -743,7 +712,7 @@ public final class HomeBalloonGalleryRecordOuterClass {
         return getPlayerInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.HomeGroupPlayerInfo player_info = 5;</code>
+       * <code>.HomeGroupPlayerInfo player_info = 14;</code>
        */
       public emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfoOrBuilder getPlayerInfoOrBuilder() {
         if (playerInfoBuilder_ != null) {
@@ -754,7 +723,7 @@ public final class HomeBalloonGalleryRecordOuterClass {
         }
       }
       /**
-       * <code>.HomeGroupPlayerInfo player_info = 5;</code>
+       * <code>.HomeGroupPlayerInfo player_info = 14;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfo, emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfo.Builder, emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfoOrBuilder> 
@@ -770,33 +739,64 @@ public final class HomeBalloonGalleryRecordOuterClass {
         return playerInfoBuilder_;
       }
 
-      private int timestamp_ ;
+      private int hitCount_ ;
       /**
-       * <code>uint32 timestamp = 3;</code>
-       * @return The timestamp.
+       * <code>uint32 hit_count = 12;</code>
+       * @return The hitCount.
        */
       @java.lang.Override
-      public int getTimestamp() {
-        return timestamp_;
+      public int getHitCount() {
+        return hitCount_;
       }
       /**
-       * <code>uint32 timestamp = 3;</code>
-       * @param value The timestamp to set.
+       * <code>uint32 hit_count = 12;</code>
+       * @param value The hitCount to set.
        * @return This builder for chaining.
        */
-      public Builder setTimestamp(int value) {
+      public Builder setHitCount(int value) {
         
-        timestamp_ = value;
+        hitCount_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 timestamp = 3;</code>
+       * <code>uint32 hit_count = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTimestamp() {
+      public Builder clearHitCount() {
         
-        timestamp_ = 0;
+        hitCount_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int score_ ;
+      /**
+       * <code>uint32 score = 1;</code>
+       * @return The score.
+       */
+      @java.lang.Override
+      public int getScore() {
+        return score_;
+      }
+      /**
+       * <code>uint32 score = 1;</code>
+       * @param value The score to set.
+       * @return This builder for chaining.
+       */
+      public Builder setScore(int value) {
+        
+        score_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 score = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearScore() {
+        
+        score_ = 0;
         onChanged();
         return this;
       }
@@ -869,9 +869,9 @@ public final class HomeBalloonGalleryRecordOuterClass {
     java.lang.String[] descriptorData = {
       "\n\036HomeBalloonGalleryRecord.proto\032\031HomeGr" +
       "oupPlayerInfo.proto\"z\n\030HomeBalloonGaller" +
-      "yRecord\022\r\n\005score\030\n \001(\r\022\021\n\thit_count\030\017 \001(" +
-      "\r\022)\n\013player_info\030\005 \001(\0132\024.HomeGroupPlayer" +
-      "Info\022\021\n\ttimestamp\030\003 \001(\rB\033\n\031emu.grasscutt" +
+      "yRecord\022\021\n\ttimestamp\030\013 \001(\r\022)\n\013player_inf" +
+      "o\030\016 \001(\0132\024.HomeGroupPlayerInfo\022\021\n\thit_cou" +
+      "nt\030\014 \001(\r\022\r\n\005score\030\001 \001(\rB\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -884,7 +884,7 @@ public final class HomeBalloonGalleryRecordOuterClass {
     internal_static_HomeBalloonGalleryRecord_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeBalloonGalleryRecord_descriptor,
-        new java.lang.String[] { "Score", "HitCount", "PlayerInfo", "Timestamp", });
+        new java.lang.String[] { "Timestamp", "PlayerInfo", "HitCount", "Score", });
     emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.getDescriptor();
   }
 

@@ -19,7 +19,7 @@ public final class EvtBeingHitInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 frame_num = 1;</code>
+     * <code>uint32 frame_num = 9;</code>
      * @return The frameNum.
      */
     int getFrameNum();
@@ -40,14 +40,14 @@ public final class EvtBeingHitInfoOuterClass {
     emu.grasscutter.net.proto.AttackResultOuterClass.AttackResultOrBuilder getAttackResultOrBuilder();
 
     /**
-     * <code>uint32 peer_id = 3;</code>
+     * <code>uint32 peer_id = 11;</code>
      * @return The peerId.
      */
     int getPeerId();
   }
   /**
    * <pre>
-   * Name: IHBAACKKKEC
+   * Obf: FAABEIHJGBK
    * </pre>
    *
    * Protobuf type {@code EvtBeingHitInfo}
@@ -94,16 +94,6 @@ public final class EvtBeingHitInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              frameNum_ = input.readUInt32();
-              break;
-            }
-            case 24: {
-
-              peerId_ = input.readUInt32();
-              break;
-            }
             case 66: {
               emu.grasscutter.net.proto.AttackResultOuterClass.AttackResult.Builder subBuilder = null;
               if (attackResult_ != null) {
@@ -115,6 +105,16 @@ public final class EvtBeingHitInfoOuterClass {
                 attackResult_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 72: {
+
+              frameNum_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              peerId_ = input.readUInt32();
               break;
             }
             default: {
@@ -149,10 +149,10 @@ public final class EvtBeingHitInfoOuterClass {
               emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo.class, emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo.Builder.class);
     }
 
-    public static final int FRAME_NUM_FIELD_NUMBER = 1;
+    public static final int FRAME_NUM_FIELD_NUMBER = 9;
     private int frameNum_;
     /**
-     * <code>uint32 frame_num = 1;</code>
+     * <code>uint32 frame_num = 9;</code>
      * @return The frameNum.
      */
     @java.lang.Override
@@ -186,10 +186,10 @@ public final class EvtBeingHitInfoOuterClass {
       return getAttackResult();
     }
 
-    public static final int PEER_ID_FIELD_NUMBER = 3;
+    public static final int PEER_ID_FIELD_NUMBER = 11;
     private int peerId_;
     /**
-     * <code>uint32 peer_id = 3;</code>
+     * <code>uint32 peer_id = 11;</code>
      * @return The peerId.
      */
     @java.lang.Override
@@ -211,14 +211,14 @@ public final class EvtBeingHitInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (frameNum_ != 0) {
-        output.writeUInt32(1, frameNum_);
-      }
-      if (peerId_ != 0) {
-        output.writeUInt32(3, peerId_);
-      }
       if (attackResult_ != null) {
         output.writeMessage(8, getAttackResult());
+      }
+      if (frameNum_ != 0) {
+        output.writeUInt32(9, frameNum_);
+      }
+      if (peerId_ != 0) {
+        output.writeUInt32(11, peerId_);
       }
       unknownFields.writeTo(output);
     }
@@ -229,17 +229,17 @@ public final class EvtBeingHitInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (frameNum_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, frameNum_);
-      }
-      if (peerId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, peerId_);
-      }
       if (attackResult_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(8, getAttackResult());
+      }
+      if (frameNum_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, frameNum_);
+      }
+      if (peerId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, peerId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -381,7 +381,7 @@ public final class EvtBeingHitInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: IHBAACKKKEC
+     * Obf: FAABEIHJGBK
      * </pre>
      *
      * Protobuf type {@code EvtBeingHitInfo}
@@ -552,7 +552,7 @@ public final class EvtBeingHitInfoOuterClass {
 
       private int frameNum_ ;
       /**
-       * <code>uint32 frame_num = 1;</code>
+       * <code>uint32 frame_num = 9;</code>
        * @return The frameNum.
        */
       @java.lang.Override
@@ -560,7 +560,7 @@ public final class EvtBeingHitInfoOuterClass {
         return frameNum_;
       }
       /**
-       * <code>uint32 frame_num = 1;</code>
+       * <code>uint32 frame_num = 9;</code>
        * @param value The frameNum to set.
        * @return This builder for chaining.
        */
@@ -571,7 +571,7 @@ public final class EvtBeingHitInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 frame_num = 1;</code>
+       * <code>uint32 frame_num = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearFrameNum() {
@@ -702,7 +702,7 @@ public final class EvtBeingHitInfoOuterClass {
 
       private int peerId_ ;
       /**
-       * <code>uint32 peer_id = 3;</code>
+       * <code>uint32 peer_id = 11;</code>
        * @return The peerId.
        */
       @java.lang.Override
@@ -710,7 +710,7 @@ public final class EvtBeingHitInfoOuterClass {
         return peerId_;
       }
       /**
-       * <code>uint32 peer_id = 3;</code>
+       * <code>uint32 peer_id = 11;</code>
        * @param value The peerId to set.
        * @return This builder for chaining.
        */
@@ -721,7 +721,7 @@ public final class EvtBeingHitInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 peer_id = 3;</code>
+       * <code>uint32 peer_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearPeerId() {
@@ -798,9 +798,9 @@ public final class EvtBeingHitInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025EvtBeingHitInfo.proto\032\022AttackResult.pr" +
-      "oto\"[\n\017EvtBeingHitInfo\022\021\n\tframe_num\030\001 \001(" +
+      "oto\"[\n\017EvtBeingHitInfo\022\021\n\tframe_num\030\t \001(" +
       "\r\022$\n\rattack_result\030\010 \001(\0132\r.AttackResult\022" +
-      "\017\n\007peer_id\030\003 \001(\rB\033\n\031emu.grasscutter.net." +
+      "\017\n\007peer_id\030\013 \001(\rB\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,47 +19,47 @@ public final class ScenePlayerSoundNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.ScenePlayerSoundNotify.PlaySoundType play_type = 14;</code>
+     * <code>string sound_name = 1;</code>
+     * @return The soundName.
+     */
+    java.lang.String getSoundName();
+    /**
+     * <code>string sound_name = 1;</code>
+     * @return The bytes for soundName.
+     */
+    com.google.protobuf.ByteString
+        getSoundNameBytes();
+
+    /**
+     * <code>.ScenePlayerSoundNotify.PlaySoundType play_type = 3;</code>
      * @return The enum numeric value on the wire for playType.
      */
     int getPlayTypeValue();
     /**
-     * <code>.ScenePlayerSoundNotify.PlaySoundType play_type = 14;</code>
+     * <code>.ScenePlayerSoundNotify.PlaySoundType play_type = 3;</code>
      * @return The playType.
      */
     emu.grasscutter.net.proto.ScenePlayerSoundNotifyOuterClass.ScenePlayerSoundNotify.PlaySoundType getPlayType();
 
     /**
-     * <code>.Vector play_pos = 1;</code>
+     * <code>.Vector play_pos = 5;</code>
      * @return Whether the playPos field is set.
      */
     boolean hasPlayPos();
     /**
-     * <code>.Vector play_pos = 1;</code>
+     * <code>.Vector play_pos = 5;</code>
      * @return The playPos.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getPlayPos();
     /**
-     * <code>.Vector play_pos = 1;</code>
+     * <code>.Vector play_pos = 5;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPlayPosOrBuilder();
-
-    /**
-     * <code>string sound_name = 4;</code>
-     * @return The soundName.
-     */
-    java.lang.String getSoundName();
-    /**
-     * <code>string sound_name = 4;</code>
-     * @return The bytes for soundName.
-     */
-    com.google.protobuf.ByteString
-        getSoundNameBytes();
   }
   /**
    * <pre>
-   * Name: EMBMCPPLGPA
-   * CmdId: 201
+   * CmdId: 215
+   * Obf: KHIOGGMDHJI
    * </pre>
    *
    * Protobuf type {@code ScenePlayerSoundNotify}
@@ -74,8 +74,8 @@ public final class ScenePlayerSoundNotifyOuterClass {
       super(builder);
     }
     private ScenePlayerSoundNotify() {
-      playType_ = 0;
       soundName_ = "";
+      playType_ = 0;
     }
 
     @java.lang.Override
@@ -109,6 +109,18 @@ public final class ScenePlayerSoundNotifyOuterClass {
               done = true;
               break;
             case 10: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              soundName_ = s;
+              break;
+            }
+            case 24: {
+              int rawValue = input.readEnum();
+
+              playType_ = rawValue;
+              break;
+            }
+            case 42: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (playPos_ != null) {
                 subBuilder = playPos_.toBuilder();
@@ -119,18 +131,6 @@ public final class ScenePlayerSoundNotifyOuterClass {
                 playPos_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 34: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              soundName_ = s;
-              break;
-            }
-            case 112: {
-              int rawValue = input.readEnum();
-
-              playType_ = rawValue;
               break;
             }
             default: {
@@ -167,7 +167,7 @@ public final class ScenePlayerSoundNotifyOuterClass {
 
     /**
      * <pre>
-     * Name: MCCICFBIADN
+     * Obf: EOKADOBMPII
      * </pre>
      *
      * Protobuf enum {@code ScenePlayerSoundNotify.PlaySoundType}
@@ -286,55 +286,10 @@ public final class ScenePlayerSoundNotifyOuterClass {
       // @@protoc_insertion_point(enum_scope:ScenePlayerSoundNotify.PlaySoundType)
     }
 
-    public static final int PLAY_TYPE_FIELD_NUMBER = 14;
-    private int playType_;
-    /**
-     * <code>.ScenePlayerSoundNotify.PlaySoundType play_type = 14;</code>
-     * @return The enum numeric value on the wire for playType.
-     */
-    @java.lang.Override public int getPlayTypeValue() {
-      return playType_;
-    }
-    /**
-     * <code>.ScenePlayerSoundNotify.PlaySoundType play_type = 14;</code>
-     * @return The playType.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.ScenePlayerSoundNotifyOuterClass.ScenePlayerSoundNotify.PlaySoundType getPlayType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.ScenePlayerSoundNotifyOuterClass.ScenePlayerSoundNotify.PlaySoundType result = emu.grasscutter.net.proto.ScenePlayerSoundNotifyOuterClass.ScenePlayerSoundNotify.PlaySoundType.valueOf(playType_);
-      return result == null ? emu.grasscutter.net.proto.ScenePlayerSoundNotifyOuterClass.ScenePlayerSoundNotify.PlaySoundType.UNRECOGNIZED : result;
-    }
-
-    public static final int PLAY_POS_FIELD_NUMBER = 1;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector playPos_;
-    /**
-     * <code>.Vector play_pos = 1;</code>
-     * @return Whether the playPos field is set.
-     */
-    @java.lang.Override
-    public boolean hasPlayPos() {
-      return playPos_ != null;
-    }
-    /**
-     * <code>.Vector play_pos = 1;</code>
-     * @return The playPos.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getPlayPos() {
-      return playPos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : playPos_;
-    }
-    /**
-     * <code>.Vector play_pos = 1;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPlayPosOrBuilder() {
-      return getPlayPos();
-    }
-
-    public static final int SOUND_NAME_FIELD_NUMBER = 4;
+    public static final int SOUND_NAME_FIELD_NUMBER = 1;
     private volatile java.lang.Object soundName_;
     /**
-     * <code>string sound_name = 4;</code>
+     * <code>string sound_name = 1;</code>
      * @return The soundName.
      */
     @java.lang.Override
@@ -351,7 +306,7 @@ public final class ScenePlayerSoundNotifyOuterClass {
       }
     }
     /**
-     * <code>string sound_name = 4;</code>
+     * <code>string sound_name = 1;</code>
      * @return The bytes for soundName.
      */
     @java.lang.Override
@@ -369,6 +324,51 @@ public final class ScenePlayerSoundNotifyOuterClass {
       }
     }
 
+    public static final int PLAY_TYPE_FIELD_NUMBER = 3;
+    private int playType_;
+    /**
+     * <code>.ScenePlayerSoundNotify.PlaySoundType play_type = 3;</code>
+     * @return The enum numeric value on the wire for playType.
+     */
+    @java.lang.Override public int getPlayTypeValue() {
+      return playType_;
+    }
+    /**
+     * <code>.ScenePlayerSoundNotify.PlaySoundType play_type = 3;</code>
+     * @return The playType.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.ScenePlayerSoundNotifyOuterClass.ScenePlayerSoundNotify.PlaySoundType getPlayType() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.ScenePlayerSoundNotifyOuterClass.ScenePlayerSoundNotify.PlaySoundType result = emu.grasscutter.net.proto.ScenePlayerSoundNotifyOuterClass.ScenePlayerSoundNotify.PlaySoundType.valueOf(playType_);
+      return result == null ? emu.grasscutter.net.proto.ScenePlayerSoundNotifyOuterClass.ScenePlayerSoundNotify.PlaySoundType.UNRECOGNIZED : result;
+    }
+
+    public static final int PLAY_POS_FIELD_NUMBER = 5;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector playPos_;
+    /**
+     * <code>.Vector play_pos = 5;</code>
+     * @return Whether the playPos field is set.
+     */
+    @java.lang.Override
+    public boolean hasPlayPos() {
+      return playPos_ != null;
+    }
+    /**
+     * <code>.Vector play_pos = 5;</code>
+     * @return The playPos.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getPlayPos() {
+      return playPos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : playPos_;
+    }
+    /**
+     * <code>.Vector play_pos = 5;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPlayPosOrBuilder() {
+      return getPlayPos();
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -383,14 +383,14 @@ public final class ScenePlayerSoundNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (playPos_ != null) {
-        output.writeMessage(1, getPlayPos());
-      }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(soundName_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, soundName_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, soundName_);
       }
       if (playType_ != emu.grasscutter.net.proto.ScenePlayerSoundNotifyOuterClass.ScenePlayerSoundNotify.PlaySoundType.PLAY_SOUND_NONE.getNumber()) {
-        output.writeEnum(14, playType_);
+        output.writeEnum(3, playType_);
+      }
+      if (playPos_ != null) {
+        output.writeMessage(5, getPlayPos());
       }
       unknownFields.writeTo(output);
     }
@@ -401,16 +401,16 @@ public final class ScenePlayerSoundNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (playPos_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, getPlayPos());
-      }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(soundName_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, soundName_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, soundName_);
       }
       if (playType_ != emu.grasscutter.net.proto.ScenePlayerSoundNotifyOuterClass.ScenePlayerSoundNotify.PlaySoundType.PLAY_SOUND_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(14, playType_);
+          .computeEnumSize(3, playType_);
+      }
+      if (playPos_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(5, getPlayPos());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -427,14 +427,14 @@ public final class ScenePlayerSoundNotifyOuterClass {
       }
       emu.grasscutter.net.proto.ScenePlayerSoundNotifyOuterClass.ScenePlayerSoundNotify other = (emu.grasscutter.net.proto.ScenePlayerSoundNotifyOuterClass.ScenePlayerSoundNotify) obj;
 
+      if (!getSoundName()
+          .equals(other.getSoundName())) return false;
       if (playType_ != other.playType_) return false;
       if (hasPlayPos() != other.hasPlayPos()) return false;
       if (hasPlayPos()) {
         if (!getPlayPos()
             .equals(other.getPlayPos())) return false;
       }
-      if (!getSoundName()
-          .equals(other.getSoundName())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -446,14 +446,14 @@ public final class ScenePlayerSoundNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + SOUND_NAME_FIELD_NUMBER;
+      hash = (53 * hash) + getSoundName().hashCode();
       hash = (37 * hash) + PLAY_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + playType_;
       if (hasPlayPos()) {
         hash = (37 * hash) + PLAY_POS_FIELD_NUMBER;
         hash = (53 * hash) + getPlayPos().hashCode();
       }
-      hash = (37 * hash) + SOUND_NAME_FIELD_NUMBER;
-      hash = (53 * hash) + getSoundName().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -551,8 +551,8 @@ public final class ScenePlayerSoundNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: EMBMCPPLGPA
-     * CmdId: 201
+     * CmdId: 215
+     * Obf: KHIOGGMDHJI
      * </pre>
      *
      * Protobuf type {@code ScenePlayerSoundNotify}
@@ -592,6 +592,8 @@ public final class ScenePlayerSoundNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        soundName_ = "";
+
         playType_ = 0;
 
         if (playPosBuilder_ == null) {
@@ -600,8 +602,6 @@ public final class ScenePlayerSoundNotifyOuterClass {
           playPos_ = null;
           playPosBuilder_ = null;
         }
-        soundName_ = "";
-
         return this;
       }
 
@@ -628,13 +628,13 @@ public final class ScenePlayerSoundNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ScenePlayerSoundNotifyOuterClass.ScenePlayerSoundNotify buildPartial() {
         emu.grasscutter.net.proto.ScenePlayerSoundNotifyOuterClass.ScenePlayerSoundNotify result = new emu.grasscutter.net.proto.ScenePlayerSoundNotifyOuterClass.ScenePlayerSoundNotify(this);
+        result.soundName_ = soundName_;
         result.playType_ = playType_;
         if (playPosBuilder_ == null) {
           result.playPos_ = playPos_;
         } else {
           result.playPos_ = playPosBuilder_.build();
         }
-        result.soundName_ = soundName_;
         onBuilt();
         return result;
       }
@@ -683,15 +683,15 @@ public final class ScenePlayerSoundNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ScenePlayerSoundNotifyOuterClass.ScenePlayerSoundNotify other) {
         if (other == emu.grasscutter.net.proto.ScenePlayerSoundNotifyOuterClass.ScenePlayerSoundNotify.getDefaultInstance()) return this;
+        if (!other.getSoundName().isEmpty()) {
+          soundName_ = other.soundName_;
+          onChanged();
+        }
         if (other.playType_ != 0) {
           setPlayTypeValue(other.getPlayTypeValue());
         }
         if (other.hasPlayPos()) {
           mergePlayPos(other.getPlayPos());
-        }
-        if (!other.getSoundName().isEmpty()) {
-          soundName_ = other.soundName_;
-          onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -722,16 +722,92 @@ public final class ScenePlayerSoundNotifyOuterClass {
         return this;
       }
 
+      private java.lang.Object soundName_ = "";
+      /**
+       * <code>string sound_name = 1;</code>
+       * @return The soundName.
+       */
+      public java.lang.String getSoundName() {
+        java.lang.Object ref = soundName_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          soundName_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string sound_name = 1;</code>
+       * @return The bytes for soundName.
+       */
+      public com.google.protobuf.ByteString
+          getSoundNameBytes() {
+        java.lang.Object ref = soundName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          soundName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string sound_name = 1;</code>
+       * @param value The soundName to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSoundName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        soundName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string sound_name = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSoundName() {
+        
+        soundName_ = getDefaultInstance().getSoundName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string sound_name = 1;</code>
+       * @param value The bytes for soundName to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSoundNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        soundName_ = value;
+        onChanged();
+        return this;
+      }
+
       private int playType_ = 0;
       /**
-       * <code>.ScenePlayerSoundNotify.PlaySoundType play_type = 14;</code>
+       * <code>.ScenePlayerSoundNotify.PlaySoundType play_type = 3;</code>
        * @return The enum numeric value on the wire for playType.
        */
       @java.lang.Override public int getPlayTypeValue() {
         return playType_;
       }
       /**
-       * <code>.ScenePlayerSoundNotify.PlaySoundType play_type = 14;</code>
+       * <code>.ScenePlayerSoundNotify.PlaySoundType play_type = 3;</code>
        * @param value The enum numeric value on the wire for playType to set.
        * @return This builder for chaining.
        */
@@ -742,7 +818,7 @@ public final class ScenePlayerSoundNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ScenePlayerSoundNotify.PlaySoundType play_type = 14;</code>
+       * <code>.ScenePlayerSoundNotify.PlaySoundType play_type = 3;</code>
        * @return The playType.
        */
       @java.lang.Override
@@ -752,7 +828,7 @@ public final class ScenePlayerSoundNotifyOuterClass {
         return result == null ? emu.grasscutter.net.proto.ScenePlayerSoundNotifyOuterClass.ScenePlayerSoundNotify.PlaySoundType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.ScenePlayerSoundNotify.PlaySoundType play_type = 14;</code>
+       * <code>.ScenePlayerSoundNotify.PlaySoundType play_type = 3;</code>
        * @param value The playType to set.
        * @return This builder for chaining.
        */
@@ -766,7 +842,7 @@ public final class ScenePlayerSoundNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ScenePlayerSoundNotify.PlaySoundType play_type = 14;</code>
+       * <code>.ScenePlayerSoundNotify.PlaySoundType play_type = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayType() {
@@ -780,14 +856,14 @@ public final class ScenePlayerSoundNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> playPosBuilder_;
       /**
-       * <code>.Vector play_pos = 1;</code>
+       * <code>.Vector play_pos = 5;</code>
        * @return Whether the playPos field is set.
        */
       public boolean hasPlayPos() {
         return playPosBuilder_ != null || playPos_ != null;
       }
       /**
-       * <code>.Vector play_pos = 1;</code>
+       * <code>.Vector play_pos = 5;</code>
        * @return The playPos.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getPlayPos() {
@@ -798,7 +874,7 @@ public final class ScenePlayerSoundNotifyOuterClass {
         }
       }
       /**
-       * <code>.Vector play_pos = 1;</code>
+       * <code>.Vector play_pos = 5;</code>
        */
       public Builder setPlayPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (playPosBuilder_ == null) {
@@ -814,7 +890,7 @@ public final class ScenePlayerSoundNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.Vector play_pos = 1;</code>
+       * <code>.Vector play_pos = 5;</code>
        */
       public Builder setPlayPos(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -828,7 +904,7 @@ public final class ScenePlayerSoundNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.Vector play_pos = 1;</code>
+       * <code>.Vector play_pos = 5;</code>
        */
       public Builder mergePlayPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (playPosBuilder_ == null) {
@@ -846,7 +922,7 @@ public final class ScenePlayerSoundNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.Vector play_pos = 1;</code>
+       * <code>.Vector play_pos = 5;</code>
        */
       public Builder clearPlayPos() {
         if (playPosBuilder_ == null) {
@@ -860,7 +936,7 @@ public final class ScenePlayerSoundNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.Vector play_pos = 1;</code>
+       * <code>.Vector play_pos = 5;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPlayPosBuilder() {
         
@@ -868,7 +944,7 @@ public final class ScenePlayerSoundNotifyOuterClass {
         return getPlayPosFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector play_pos = 1;</code>
+       * <code>.Vector play_pos = 5;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPlayPosOrBuilder() {
         if (playPosBuilder_ != null) {
@@ -879,7 +955,7 @@ public final class ScenePlayerSoundNotifyOuterClass {
         }
       }
       /**
-       * <code>.Vector play_pos = 1;</code>
+       * <code>.Vector play_pos = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -893,82 +969,6 @@ public final class ScenePlayerSoundNotifyOuterClass {
           playPos_ = null;
         }
         return playPosBuilder_;
-      }
-
-      private java.lang.Object soundName_ = "";
-      /**
-       * <code>string sound_name = 4;</code>
-       * @return The soundName.
-       */
-      public java.lang.String getSoundName() {
-        java.lang.Object ref = soundName_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          soundName_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string sound_name = 4;</code>
-       * @return The bytes for soundName.
-       */
-      public com.google.protobuf.ByteString
-          getSoundNameBytes() {
-        java.lang.Object ref = soundName_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          soundName_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string sound_name = 4;</code>
-       * @param value The soundName to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSoundName(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        soundName_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string sound_name = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSoundName() {
-        
-        soundName_ = getDefaultInstance().getSoundName();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string sound_name = 4;</code>
-       * @param value The bytes for soundName to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSoundNameBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        soundName_ = value;
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1038,10 +1038,10 @@ public final class ScenePlayerSoundNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034ScenePlayerSoundNotify.proto\032\014Vector.p" +
-      "roto\"\322\001\n\026ScenePlayerSoundNotify\0228\n\tplay_" +
-      "type\030\016 \001(\0162%.ScenePlayerSoundNotify.Play" +
-      "SoundType\022\031\n\010play_pos\030\001 \001(\0132\007.Vector\022\022\n\n" +
-      "sound_name\030\004 \001(\t\"O\n\rPlaySoundType\022\023\n\017PLA" +
+      "roto\"\322\001\n\026ScenePlayerSoundNotify\022\022\n\nsound" +
+      "_name\030\001 \001(\t\0228\n\tplay_type\030\003 \001(\0162%.ScenePl" +
+      "ayerSoundNotify.PlaySoundType\022\031\n\010play_po" +
+      "s\030\005 \001(\0132\007.Vector\"O\n\rPlaySoundType\022\023\n\017PLA" +
       "Y_SOUND_NONE\020\000\022\024\n\020PLAY_SOUND_START\020\001\022\023\n\017" +
       "PLAY_SOUND_STOP\020\002B\033\n\031emu.grasscutter.net" +
       ".protob\006proto3"
@@ -1056,7 +1056,7 @@ public final class ScenePlayerSoundNotifyOuterClass {
     internal_static_ScenePlayerSoundNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ScenePlayerSoundNotify_descriptor,
-        new java.lang.String[] { "PlayType", "PlayPos", "SoundName", });
+        new java.lang.String[] { "SoundName", "PlayType", "PlayPos", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

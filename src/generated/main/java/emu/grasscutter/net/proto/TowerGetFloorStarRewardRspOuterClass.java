@@ -19,21 +19,21 @@ public final class TowerGetFloorStarRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 floor_id = 5;</code>
+     * <code>uint32 floor_id = 13;</code>
      * @return The floorId.
      */
     int getFloorId();
 
     /**
-     * <code>int32 retcode = 13;</code>
+     * <code>int32 retcode = 3;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * Name: LNBHJMJDPGC
-   * CmdId: 2474
+   * CmdId: 2431
+   * Obf: FPEKKBLIDKO
    * </pre>
    *
    * Protobuf type {@code TowerGetFloorStarRewardRsp}
@@ -80,14 +80,14 @@ public final class TowerGetFloorStarRewardRspOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 24: {
 
-              floorId_ = input.readUInt32();
+              retcode_ = input.readInt32();
               break;
             }
             case 104: {
 
-              retcode_ = input.readInt32();
+              floorId_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,10 +122,10 @@ public final class TowerGetFloorStarRewardRspOuterClass {
               emu.grasscutter.net.proto.TowerGetFloorStarRewardRspOuterClass.TowerGetFloorStarRewardRsp.class, emu.grasscutter.net.proto.TowerGetFloorStarRewardRspOuterClass.TowerGetFloorStarRewardRsp.Builder.class);
     }
 
-    public static final int FLOOR_ID_FIELD_NUMBER = 5;
+    public static final int FLOOR_ID_FIELD_NUMBER = 13;
     private int floorId_;
     /**
-     * <code>uint32 floor_id = 5;</code>
+     * <code>uint32 floor_id = 13;</code>
      * @return The floorId.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class TowerGetFloorStarRewardRspOuterClass {
       return floorId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 13;
+    public static final int RETCODE_FIELD_NUMBER = 3;
     private int retcode_;
     /**
-     * <code>int32 retcode = 13;</code>
+     * <code>int32 retcode = 3;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -158,11 +158,11 @@ public final class TowerGetFloorStarRewardRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (floorId_ != 0) {
-        output.writeUInt32(5, floorId_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(13, retcode_);
+        output.writeInt32(3, retcode_);
+      }
+      if (floorId_ != 0) {
+        output.writeUInt32(13, floorId_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class TowerGetFloorStarRewardRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (floorId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, floorId_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(13, retcode_);
+          .computeInt32Size(3, retcode_);
+      }
+      if (floorId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, floorId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class TowerGetFloorStarRewardRspOuterClass {
     }
     /**
      * <pre>
-     * Name: LNBHJMJDPGC
-     * CmdId: 2474
+     * CmdId: 2431
+     * Obf: FPEKKBLIDKO
      * </pre>
      *
      * Protobuf type {@code TowerGetFloorStarRewardRsp}
@@ -470,7 +470,7 @@ public final class TowerGetFloorStarRewardRspOuterClass {
 
       private int floorId_ ;
       /**
-       * <code>uint32 floor_id = 5;</code>
+       * <code>uint32 floor_id = 13;</code>
        * @return The floorId.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class TowerGetFloorStarRewardRspOuterClass {
         return floorId_;
       }
       /**
-       * <code>uint32 floor_id = 5;</code>
+       * <code>uint32 floor_id = 13;</code>
        * @param value The floorId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class TowerGetFloorStarRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 floor_id = 5;</code>
+       * <code>uint32 floor_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearFloorId() {
@@ -501,7 +501,7 @@ public final class TowerGetFloorStarRewardRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 3;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class TowerGetFloorStarRewardRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 3;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class TowerGetFloorStarRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -597,8 +597,8 @@ public final class TowerGetFloorStarRewardRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n TowerGetFloorStarRewardRsp.proto\"?\n\032To" +
-      "werGetFloorStarRewardRsp\022\020\n\010floor_id\030\005 \001" +
-      "(\r\022\017\n\007retcode\030\r \001(\005B\033\n\031emu.grasscutter.n" +
+      "werGetFloorStarRewardRsp\022\020\n\010floor_id\030\r \001" +
+      "(\r\022\017\n\007retcode\030\003 \001(\005B\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

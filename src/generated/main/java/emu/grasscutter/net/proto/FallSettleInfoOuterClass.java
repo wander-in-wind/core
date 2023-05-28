@@ -19,23 +19,32 @@ public final class FallSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 final_score = 7;</code>
-     * @return The finalScore.
+     * <code>uint32 CKGDCGAGEDA = 1;</code>
+     * @return The cKGDCGAGEDA.
      */
-    int getFinalScore();
+    int getCKGDCGAGEDA();
 
     /**
-     * <code>uint32 uid = 3;</code>
-     * @return The uid.
+     * <code>.OnlinePlayerInfo player_info = 14;</code>
+     * @return Whether the playerInfo field is set.
      */
-    int getUid();
+    boolean hasPlayerInfo();
+    /**
+     * <code>.OnlinePlayerInfo player_info = 14;</code>
+     * @return The playerInfo.
+     */
+    emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo getPlayerInfo();
+    /**
+     * <code>.OnlinePlayerInfo player_info = 14;</code>
+     */
+    emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder getPlayerInfoOrBuilder();
 
     /**
-     * <code>map&lt;uint32, uint32&gt; flower_ring_catch_count_map = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; flower_ring_catch_count_map = 3;</code>
      */
     int getFlowerRingCatchCountMapCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; flower_ring_catch_count_map = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; flower_ring_catch_count_map = 3;</code>
      */
     boolean containsFlowerRingCatchCountMap(
         int key);
@@ -46,54 +55,45 @@ public final class FallSettleInfoOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getFlowerRingCatchCountMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; flower_ring_catch_count_map = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; flower_ring_catch_count_map = 3;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getFlowerRingCatchCountMapMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; flower_ring_catch_count_map = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; flower_ring_catch_count_map = 3;</code>
      */
 
     int getFlowerRingCatchCountMapOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; flower_ring_catch_count_map = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; flower_ring_catch_count_map = 3;</code>
      */
 
     int getFlowerRingCatchCountMapOrThrow(
         int key);
 
     /**
-     * <code>uint32 GBBJAMEMAHI = 13;</code>
-     * @return The gBBJAMEMAHI.
+     * <code>uint32 DPKNKMLKICC = 10;</code>
+     * @return The dPKNKMLKICC.
      */
-    int getGBBJAMEMAHI();
+    int getDPKNKMLKICC();
 
     /**
-     * <code>.OnlinePlayerInfo player_info = 6;</code>
-     * @return Whether the playerInfo field is set.
+     * <code>uint32 uid = 9;</code>
+     * @return The uid.
      */
-    boolean hasPlayerInfo();
-    /**
-     * <code>.OnlinePlayerInfo player_info = 6;</code>
-     * @return The playerInfo.
-     */
-    emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo getPlayerInfo();
-    /**
-     * <code>.OnlinePlayerInfo player_info = 6;</code>
-     */
-    emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder getPlayerInfoOrBuilder();
+    int getUid();
 
     /**
-     * <code>uint32 DIOJNDKDDLI = 5;</code>
-     * @return The dIOJNDKDDLI.
+     * <code>uint32 final_score = 5;</code>
+     * @return The finalScore.
      */
-    int getDIOJNDKDDLI();
+    int getFinalScore();
   }
   /**
    * <pre>
-   * Name: DGPPIFFCCGJ
+   * Obf: MGECEHKAGEC
    * </pre>
    *
    * Protobuf type {@code FallSettleInfo}
@@ -141,7 +141,12 @@ public final class FallSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
+            case 8: {
+
+              cKGDCGAGEDA_ = input.readUInt32();
+              break;
+            }
+            case 26: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 flowerRingCatchCountMap_ = com.google.protobuf.MapField.newMapField(
                     FlowerRingCatchCountMapDefaultEntryHolder.defaultEntry);
@@ -154,17 +159,22 @@ public final class FallSettleInfoOuterClass {
                   flowerRingCatchCountMap__.getKey(), flowerRingCatchCountMap__.getValue());
               break;
             }
-            case 24: {
+            case 40: {
+
+              finalScore_ = input.readUInt32();
+              break;
+            }
+            case 72: {
 
               uid_ = input.readUInt32();
               break;
             }
-            case 40: {
+            case 80: {
 
-              dIOJNDKDDLI_ = input.readUInt32();
+              dPKNKMLKICC_ = input.readUInt32();
               break;
             }
-            case 50: {
+            case 114: {
               emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder subBuilder = null;
               if (playerInfo_ != null) {
                 subBuilder = playerInfo_.toBuilder();
@@ -175,16 +185,6 @@ public final class FallSettleInfoOuterClass {
                 playerInfo_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 56: {
-
-              finalScore_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
-              gBBJAMEMAHI_ = input.readUInt32();
               break;
             }
             default: {
@@ -216,7 +216,7 @@ public final class FallSettleInfoOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 2:
+        case 3:
           return internalGetFlowerRingCatchCountMap();
         default:
           throw new RuntimeException(
@@ -231,29 +231,44 @@ public final class FallSettleInfoOuterClass {
               emu.grasscutter.net.proto.FallSettleInfoOuterClass.FallSettleInfo.class, emu.grasscutter.net.proto.FallSettleInfoOuterClass.FallSettleInfo.Builder.class);
     }
 
-    public static final int FINAL_SCORE_FIELD_NUMBER = 7;
-    private int finalScore_;
+    public static final int CKGDCGAGEDA_FIELD_NUMBER = 1;
+    private int cKGDCGAGEDA_;
     /**
-     * <code>uint32 final_score = 7;</code>
-     * @return The finalScore.
+     * <code>uint32 CKGDCGAGEDA = 1;</code>
+     * @return The cKGDCGAGEDA.
      */
     @java.lang.Override
-    public int getFinalScore() {
-      return finalScore_;
+    public int getCKGDCGAGEDA() {
+      return cKGDCGAGEDA_;
     }
 
-    public static final int UID_FIELD_NUMBER = 3;
-    private int uid_;
+    public static final int PLAYER_INFO_FIELD_NUMBER = 14;
+    private emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo playerInfo_;
     /**
-     * <code>uint32 uid = 3;</code>
-     * @return The uid.
+     * <code>.OnlinePlayerInfo player_info = 14;</code>
+     * @return Whether the playerInfo field is set.
      */
     @java.lang.Override
-    public int getUid() {
-      return uid_;
+    public boolean hasPlayerInfo() {
+      return playerInfo_ != null;
+    }
+    /**
+     * <code>.OnlinePlayerInfo player_info = 14;</code>
+     * @return The playerInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo getPlayerInfo() {
+      return playerInfo_ == null ? emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.getDefaultInstance() : playerInfo_;
+    }
+    /**
+     * <code>.OnlinePlayerInfo player_info = 14;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder getPlayerInfoOrBuilder() {
+      return getPlayerInfo();
     }
 
-    public static final int FLOWER_RING_CATCH_COUNT_MAP_FIELD_NUMBER = 2;
+    public static final int FLOWER_RING_CATCH_COUNT_MAP_FIELD_NUMBER = 3;
     private static final class FlowerRingCatchCountMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -280,7 +295,7 @@ public final class FallSettleInfoOuterClass {
       return internalGetFlowerRingCatchCountMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; flower_ring_catch_count_map = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; flower_ring_catch_count_map = 3;</code>
      */
 
     @java.lang.Override
@@ -298,7 +313,7 @@ public final class FallSettleInfoOuterClass {
       return getFlowerRingCatchCountMapMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; flower_ring_catch_count_map = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; flower_ring_catch_count_map = 3;</code>
      */
     @java.lang.Override
 
@@ -306,7 +321,7 @@ public final class FallSettleInfoOuterClass {
       return internalGetFlowerRingCatchCountMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; flower_ring_catch_count_map = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; flower_ring_catch_count_map = 3;</code>
      */
     @java.lang.Override
 
@@ -319,7 +334,7 @@ public final class FallSettleInfoOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; flower_ring_catch_count_map = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; flower_ring_catch_count_map = 3;</code>
      */
     @java.lang.Override
 
@@ -334,52 +349,37 @@ public final class FallSettleInfoOuterClass {
       return map.get(key);
     }
 
-    public static final int GBBJAMEMAHI_FIELD_NUMBER = 13;
-    private int gBBJAMEMAHI_;
+    public static final int DPKNKMLKICC_FIELD_NUMBER = 10;
+    private int dPKNKMLKICC_;
     /**
-     * <code>uint32 GBBJAMEMAHI = 13;</code>
-     * @return The gBBJAMEMAHI.
+     * <code>uint32 DPKNKMLKICC = 10;</code>
+     * @return The dPKNKMLKICC.
      */
     @java.lang.Override
-    public int getGBBJAMEMAHI() {
-      return gBBJAMEMAHI_;
+    public int getDPKNKMLKICC() {
+      return dPKNKMLKICC_;
     }
 
-    public static final int PLAYER_INFO_FIELD_NUMBER = 6;
-    private emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo playerInfo_;
+    public static final int UID_FIELD_NUMBER = 9;
+    private int uid_;
     /**
-     * <code>.OnlinePlayerInfo player_info = 6;</code>
-     * @return Whether the playerInfo field is set.
+     * <code>uint32 uid = 9;</code>
+     * @return The uid.
      */
     @java.lang.Override
-    public boolean hasPlayerInfo() {
-      return playerInfo_ != null;
-    }
-    /**
-     * <code>.OnlinePlayerInfo player_info = 6;</code>
-     * @return The playerInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo getPlayerInfo() {
-      return playerInfo_ == null ? emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.getDefaultInstance() : playerInfo_;
-    }
-    /**
-     * <code>.OnlinePlayerInfo player_info = 6;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder getPlayerInfoOrBuilder() {
-      return getPlayerInfo();
+    public int getUid() {
+      return uid_;
     }
 
-    public static final int DIOJNDKDDLI_FIELD_NUMBER = 5;
-    private int dIOJNDKDDLI_;
+    public static final int FINAL_SCORE_FIELD_NUMBER = 5;
+    private int finalScore_;
     /**
-     * <code>uint32 DIOJNDKDDLI = 5;</code>
-     * @return The dIOJNDKDDLI.
+     * <code>uint32 final_score = 5;</code>
+     * @return The finalScore.
      */
     @java.lang.Override
-    public int getDIOJNDKDDLI() {
-      return dIOJNDKDDLI_;
+    public int getFinalScore() {
+      return finalScore_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -396,26 +396,26 @@ public final class FallSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (cKGDCGAGEDA_ != 0) {
+        output.writeUInt32(1, cKGDCGAGEDA_);
+      }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetFlowerRingCatchCountMap(),
           FlowerRingCatchCountMapDefaultEntryHolder.defaultEntry,
-          2);
-      if (uid_ != 0) {
-        output.writeUInt32(3, uid_);
+          3);
+      if (finalScore_ != 0) {
+        output.writeUInt32(5, finalScore_);
       }
-      if (dIOJNDKDDLI_ != 0) {
-        output.writeUInt32(5, dIOJNDKDDLI_);
+      if (uid_ != 0) {
+        output.writeUInt32(9, uid_);
+      }
+      if (dPKNKMLKICC_ != 0) {
+        output.writeUInt32(10, dPKNKMLKICC_);
       }
       if (playerInfo_ != null) {
-        output.writeMessage(6, getPlayerInfo());
-      }
-      if (finalScore_ != 0) {
-        output.writeUInt32(7, finalScore_);
-      }
-      if (gBBJAMEMAHI_ != 0) {
-        output.writeUInt32(13, gBBJAMEMAHI_);
+        output.writeMessage(14, getPlayerInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -426,6 +426,10 @@ public final class FallSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (cKGDCGAGEDA_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, cKGDCGAGEDA_);
+      }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
            : internalGetFlowerRingCatchCountMap().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
@@ -434,27 +438,23 @@ public final class FallSettleInfoOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(2, flowerRingCatchCountMap__);
-      }
-      if (uid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, uid_);
-      }
-      if (dIOJNDKDDLI_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, dIOJNDKDDLI_);
-      }
-      if (playerInfo_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, getPlayerInfo());
+            .computeMessageSize(3, flowerRingCatchCountMap__);
       }
       if (finalScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, finalScore_);
+          .computeUInt32Size(5, finalScore_);
       }
-      if (gBBJAMEMAHI_ != 0) {
+      if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, gBBJAMEMAHI_);
+          .computeUInt32Size(9, uid_);
+      }
+      if (dPKNKMLKICC_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, dPKNKMLKICC_);
+      }
+      if (playerInfo_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(14, getPlayerInfo());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -471,21 +471,21 @@ public final class FallSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.FallSettleInfoOuterClass.FallSettleInfo other = (emu.grasscutter.net.proto.FallSettleInfoOuterClass.FallSettleInfo) obj;
 
-      if (getFinalScore()
-          != other.getFinalScore()) return false;
-      if (getUid()
-          != other.getUid()) return false;
-      if (!internalGetFlowerRingCatchCountMap().equals(
-          other.internalGetFlowerRingCatchCountMap())) return false;
-      if (getGBBJAMEMAHI()
-          != other.getGBBJAMEMAHI()) return false;
+      if (getCKGDCGAGEDA()
+          != other.getCKGDCGAGEDA()) return false;
       if (hasPlayerInfo() != other.hasPlayerInfo()) return false;
       if (hasPlayerInfo()) {
         if (!getPlayerInfo()
             .equals(other.getPlayerInfo())) return false;
       }
-      if (getDIOJNDKDDLI()
-          != other.getDIOJNDKDDLI()) return false;
+      if (!internalGetFlowerRingCatchCountMap().equals(
+          other.internalGetFlowerRingCatchCountMap())) return false;
+      if (getDPKNKMLKICC()
+          != other.getDPKNKMLKICC()) return false;
+      if (getUid()
+          != other.getUid()) return false;
+      if (getFinalScore()
+          != other.getFinalScore()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -497,22 +497,22 @@ public final class FallSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + FINAL_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getFinalScore();
-      hash = (37 * hash) + UID_FIELD_NUMBER;
-      hash = (53 * hash) + getUid();
-      if (!internalGetFlowerRingCatchCountMap().getMap().isEmpty()) {
-        hash = (37 * hash) + FLOWER_RING_CATCH_COUNT_MAP_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetFlowerRingCatchCountMap().hashCode();
-      }
-      hash = (37 * hash) + GBBJAMEMAHI_FIELD_NUMBER;
-      hash = (53 * hash) + getGBBJAMEMAHI();
+      hash = (37 * hash) + CKGDCGAGEDA_FIELD_NUMBER;
+      hash = (53 * hash) + getCKGDCGAGEDA();
       if (hasPlayerInfo()) {
         hash = (37 * hash) + PLAYER_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getPlayerInfo().hashCode();
       }
-      hash = (37 * hash) + DIOJNDKDDLI_FIELD_NUMBER;
-      hash = (53 * hash) + getDIOJNDKDDLI();
+      if (!internalGetFlowerRingCatchCountMap().getMap().isEmpty()) {
+        hash = (37 * hash) + FLOWER_RING_CATCH_COUNT_MAP_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetFlowerRingCatchCountMap().hashCode();
+      }
+      hash = (37 * hash) + DPKNKMLKICC_FIELD_NUMBER;
+      hash = (53 * hash) + getDPKNKMLKICC();
+      hash = (37 * hash) + UID_FIELD_NUMBER;
+      hash = (53 * hash) + getUid();
+      hash = (37 * hash) + FINAL_SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getFinalScore();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -610,7 +610,7 @@ public final class FallSettleInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: DGPPIFFCCGJ
+     * Obf: MGECEHKAGEC
      * </pre>
      *
      * Protobuf type {@code FallSettleInfo}
@@ -628,7 +628,7 @@ public final class FallSettleInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 2:
+          case 3:
             return internalGetFlowerRingCatchCountMap();
           default:
             throw new RuntimeException(
@@ -639,7 +639,7 @@ public final class FallSettleInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 2:
+          case 3:
             return internalGetMutableFlowerRingCatchCountMap();
           default:
             throw new RuntimeException(
@@ -672,12 +672,7 @@ public final class FallSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        finalScore_ = 0;
-
-        uid_ = 0;
-
-        internalGetMutableFlowerRingCatchCountMap().clear();
-        gBBJAMEMAHI_ = 0;
+        cKGDCGAGEDA_ = 0;
 
         if (playerInfoBuilder_ == null) {
           playerInfo_ = null;
@@ -685,7 +680,12 @@ public final class FallSettleInfoOuterClass {
           playerInfo_ = null;
           playerInfoBuilder_ = null;
         }
-        dIOJNDKDDLI_ = 0;
+        internalGetMutableFlowerRingCatchCountMap().clear();
+        dPKNKMLKICC_ = 0;
+
+        uid_ = 0;
+
+        finalScore_ = 0;
 
         return this;
       }
@@ -714,17 +714,17 @@ public final class FallSettleInfoOuterClass {
       public emu.grasscutter.net.proto.FallSettleInfoOuterClass.FallSettleInfo buildPartial() {
         emu.grasscutter.net.proto.FallSettleInfoOuterClass.FallSettleInfo result = new emu.grasscutter.net.proto.FallSettleInfoOuterClass.FallSettleInfo(this);
         int from_bitField0_ = bitField0_;
-        result.finalScore_ = finalScore_;
-        result.uid_ = uid_;
-        result.flowerRingCatchCountMap_ = internalGetFlowerRingCatchCountMap();
-        result.flowerRingCatchCountMap_.makeImmutable();
-        result.gBBJAMEMAHI_ = gBBJAMEMAHI_;
+        result.cKGDCGAGEDA_ = cKGDCGAGEDA_;
         if (playerInfoBuilder_ == null) {
           result.playerInfo_ = playerInfo_;
         } else {
           result.playerInfo_ = playerInfoBuilder_.build();
         }
-        result.dIOJNDKDDLI_ = dIOJNDKDDLI_;
+        result.flowerRingCatchCountMap_ = internalGetFlowerRingCatchCountMap();
+        result.flowerRingCatchCountMap_.makeImmutable();
+        result.dPKNKMLKICC_ = dPKNKMLKICC_;
+        result.uid_ = uid_;
+        result.finalScore_ = finalScore_;
         onBuilt();
         return result;
       }
@@ -773,22 +773,22 @@ public final class FallSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FallSettleInfoOuterClass.FallSettleInfo other) {
         if (other == emu.grasscutter.net.proto.FallSettleInfoOuterClass.FallSettleInfo.getDefaultInstance()) return this;
-        if (other.getFinalScore() != 0) {
-          setFinalScore(other.getFinalScore());
-        }
-        if (other.getUid() != 0) {
-          setUid(other.getUid());
-        }
-        internalGetMutableFlowerRingCatchCountMap().mergeFrom(
-            other.internalGetFlowerRingCatchCountMap());
-        if (other.getGBBJAMEMAHI() != 0) {
-          setGBBJAMEMAHI(other.getGBBJAMEMAHI());
+        if (other.getCKGDCGAGEDA() != 0) {
+          setCKGDCGAGEDA(other.getCKGDCGAGEDA());
         }
         if (other.hasPlayerInfo()) {
           mergePlayerInfo(other.getPlayerInfo());
         }
-        if (other.getDIOJNDKDDLI() != 0) {
-          setDIOJNDKDDLI(other.getDIOJNDKDDLI());
+        internalGetMutableFlowerRingCatchCountMap().mergeFrom(
+            other.internalGetFlowerRingCatchCountMap());
+        if (other.getDPKNKMLKICC() != 0) {
+          setDPKNKMLKICC(other.getDPKNKMLKICC());
+        }
+        if (other.getUid() != 0) {
+          setUid(other.getUid());
+        }
+        if (other.getFinalScore() != 0) {
+          setFinalScore(other.getFinalScore());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -820,66 +820,154 @@ public final class FallSettleInfoOuterClass {
       }
       private int bitField0_;
 
-      private int finalScore_ ;
+      private int cKGDCGAGEDA_ ;
       /**
-       * <code>uint32 final_score = 7;</code>
-       * @return The finalScore.
+       * <code>uint32 CKGDCGAGEDA = 1;</code>
+       * @return The cKGDCGAGEDA.
        */
       @java.lang.Override
-      public int getFinalScore() {
-        return finalScore_;
+      public int getCKGDCGAGEDA() {
+        return cKGDCGAGEDA_;
       }
       /**
-       * <code>uint32 final_score = 7;</code>
-       * @param value The finalScore to set.
+       * <code>uint32 CKGDCGAGEDA = 1;</code>
+       * @param value The cKGDCGAGEDA to set.
        * @return This builder for chaining.
        */
-      public Builder setFinalScore(int value) {
+      public Builder setCKGDCGAGEDA(int value) {
         
-        finalScore_ = value;
+        cKGDCGAGEDA_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 final_score = 7;</code>
+       * <code>uint32 CKGDCGAGEDA = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFinalScore() {
+      public Builder clearCKGDCGAGEDA() {
         
-        finalScore_ = 0;
+        cKGDCGAGEDA_ = 0;
         onChanged();
         return this;
       }
 
-      private int uid_ ;
+      private emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo playerInfo_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder> playerInfoBuilder_;
       /**
-       * <code>uint32 uid = 3;</code>
-       * @return The uid.
+       * <code>.OnlinePlayerInfo player_info = 14;</code>
+       * @return Whether the playerInfo field is set.
        */
-      @java.lang.Override
-      public int getUid() {
-        return uid_;
+      public boolean hasPlayerInfo() {
+        return playerInfoBuilder_ != null || playerInfo_ != null;
       }
       /**
-       * <code>uint32 uid = 3;</code>
-       * @param value The uid to set.
-       * @return This builder for chaining.
+       * <code>.OnlinePlayerInfo player_info = 14;</code>
+       * @return The playerInfo.
        */
-      public Builder setUid(int value) {
-        
-        uid_ = value;
-        onChanged();
+      public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo getPlayerInfo() {
+        if (playerInfoBuilder_ == null) {
+          return playerInfo_ == null ? emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.getDefaultInstance() : playerInfo_;
+        } else {
+          return playerInfoBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.OnlinePlayerInfo player_info = 14;</code>
+       */
+      public Builder setPlayerInfo(emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo value) {
+        if (playerInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          playerInfo_ = value;
+          onChanged();
+        } else {
+          playerInfoBuilder_.setMessage(value);
+        }
+
         return this;
       }
       /**
-       * <code>uint32 uid = 3;</code>
-       * @return This builder for chaining.
+       * <code>.OnlinePlayerInfo player_info = 14;</code>
        */
-      public Builder clearUid() {
-        
-        uid_ = 0;
-        onChanged();
+      public Builder setPlayerInfo(
+          emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder builderForValue) {
+        if (playerInfoBuilder_ == null) {
+          playerInfo_ = builderForValue.build();
+          onChanged();
+        } else {
+          playerInfoBuilder_.setMessage(builderForValue.build());
+        }
+
         return this;
+      }
+      /**
+       * <code>.OnlinePlayerInfo player_info = 14;</code>
+       */
+      public Builder mergePlayerInfo(emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo value) {
+        if (playerInfoBuilder_ == null) {
+          if (playerInfo_ != null) {
+            playerInfo_ =
+              emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.newBuilder(playerInfo_).mergeFrom(value).buildPartial();
+          } else {
+            playerInfo_ = value;
+          }
+          onChanged();
+        } else {
+          playerInfoBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.OnlinePlayerInfo player_info = 14;</code>
+       */
+      public Builder clearPlayerInfo() {
+        if (playerInfoBuilder_ == null) {
+          playerInfo_ = null;
+          onChanged();
+        } else {
+          playerInfo_ = null;
+          playerInfoBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.OnlinePlayerInfo player_info = 14;</code>
+       */
+      public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder getPlayerInfoBuilder() {
+        
+        onChanged();
+        return getPlayerInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.OnlinePlayerInfo player_info = 14;</code>
+       */
+      public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder getPlayerInfoOrBuilder() {
+        if (playerInfoBuilder_ != null) {
+          return playerInfoBuilder_.getMessageOrBuilder();
+        } else {
+          return playerInfo_ == null ?
+              emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.getDefaultInstance() : playerInfo_;
+        }
+      }
+      /**
+       * <code>.OnlinePlayerInfo player_info = 14;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder> 
+          getPlayerInfoFieldBuilder() {
+        if (playerInfoBuilder_ == null) {
+          playerInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder>(
+                  getPlayerInfo(),
+                  getParentForChildren(),
+                  isClean());
+          playerInfo_ = null;
+        }
+        return playerInfoBuilder_;
       }
 
       private com.google.protobuf.MapField<
@@ -909,7 +997,7 @@ public final class FallSettleInfoOuterClass {
         return internalGetFlowerRingCatchCountMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; flower_ring_catch_count_map = 2;</code>
+       * <code>map&lt;uint32, uint32&gt; flower_ring_catch_count_map = 3;</code>
        */
 
       @java.lang.Override
@@ -927,7 +1015,7 @@ public final class FallSettleInfoOuterClass {
         return getFlowerRingCatchCountMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; flower_ring_catch_count_map = 2;</code>
+       * <code>map&lt;uint32, uint32&gt; flower_ring_catch_count_map = 3;</code>
        */
       @java.lang.Override
 
@@ -935,7 +1023,7 @@ public final class FallSettleInfoOuterClass {
         return internalGetFlowerRingCatchCountMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; flower_ring_catch_count_map = 2;</code>
+       * <code>map&lt;uint32, uint32&gt; flower_ring_catch_count_map = 3;</code>
        */
       @java.lang.Override
 
@@ -948,7 +1036,7 @@ public final class FallSettleInfoOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; flower_ring_catch_count_map = 2;</code>
+       * <code>map&lt;uint32, uint32&gt; flower_ring_catch_count_map = 3;</code>
        */
       @java.lang.Override
 
@@ -969,7 +1057,7 @@ public final class FallSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; flower_ring_catch_count_map = 2;</code>
+       * <code>map&lt;uint32, uint32&gt; flower_ring_catch_count_map = 3;</code>
        */
 
       public Builder removeFlowerRingCatchCountMap(
@@ -988,7 +1076,7 @@ public final class FallSettleInfoOuterClass {
         return internalGetMutableFlowerRingCatchCountMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; flower_ring_catch_count_map = 2;</code>
+       * <code>map&lt;uint32, uint32&gt; flower_ring_catch_count_map = 3;</code>
        */
       public Builder putFlowerRingCatchCountMap(
           int key,
@@ -1000,7 +1088,7 @@ public final class FallSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; flower_ring_catch_count_map = 2;</code>
+       * <code>map&lt;uint32, uint32&gt; flower_ring_catch_count_map = 3;</code>
        */
 
       public Builder putAllFlowerRingCatchCountMap(
@@ -1010,183 +1098,95 @@ public final class FallSettleInfoOuterClass {
         return this;
       }
 
-      private int gBBJAMEMAHI_ ;
+      private int dPKNKMLKICC_ ;
       /**
-       * <code>uint32 GBBJAMEMAHI = 13;</code>
-       * @return The gBBJAMEMAHI.
+       * <code>uint32 DPKNKMLKICC = 10;</code>
+       * @return The dPKNKMLKICC.
        */
       @java.lang.Override
-      public int getGBBJAMEMAHI() {
-        return gBBJAMEMAHI_;
+      public int getDPKNKMLKICC() {
+        return dPKNKMLKICC_;
       }
       /**
-       * <code>uint32 GBBJAMEMAHI = 13;</code>
-       * @param value The gBBJAMEMAHI to set.
+       * <code>uint32 DPKNKMLKICC = 10;</code>
+       * @param value The dPKNKMLKICC to set.
        * @return This builder for chaining.
        */
-      public Builder setGBBJAMEMAHI(int value) {
+      public Builder setDPKNKMLKICC(int value) {
         
-        gBBJAMEMAHI_ = value;
+        dPKNKMLKICC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 GBBJAMEMAHI = 13;</code>
+       * <code>uint32 DPKNKMLKICC = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGBBJAMEMAHI() {
+      public Builder clearDPKNKMLKICC() {
         
-        gBBJAMEMAHI_ = 0;
+        dPKNKMLKICC_ = 0;
         onChanged();
         return this;
       }
 
-      private emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo playerInfo_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder> playerInfoBuilder_;
+      private int uid_ ;
       /**
-       * <code>.OnlinePlayerInfo player_info = 6;</code>
-       * @return Whether the playerInfo field is set.
-       */
-      public boolean hasPlayerInfo() {
-        return playerInfoBuilder_ != null || playerInfo_ != null;
-      }
-      /**
-       * <code>.OnlinePlayerInfo player_info = 6;</code>
-       * @return The playerInfo.
-       */
-      public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo getPlayerInfo() {
-        if (playerInfoBuilder_ == null) {
-          return playerInfo_ == null ? emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.getDefaultInstance() : playerInfo_;
-        } else {
-          return playerInfoBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.OnlinePlayerInfo player_info = 6;</code>
-       */
-      public Builder setPlayerInfo(emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo value) {
-        if (playerInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          playerInfo_ = value;
-          onChanged();
-        } else {
-          playerInfoBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.OnlinePlayerInfo player_info = 6;</code>
-       */
-      public Builder setPlayerInfo(
-          emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder builderForValue) {
-        if (playerInfoBuilder_ == null) {
-          playerInfo_ = builderForValue.build();
-          onChanged();
-        } else {
-          playerInfoBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.OnlinePlayerInfo player_info = 6;</code>
-       */
-      public Builder mergePlayerInfo(emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo value) {
-        if (playerInfoBuilder_ == null) {
-          if (playerInfo_ != null) {
-            playerInfo_ =
-              emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.newBuilder(playerInfo_).mergeFrom(value).buildPartial();
-          } else {
-            playerInfo_ = value;
-          }
-          onChanged();
-        } else {
-          playerInfoBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.OnlinePlayerInfo player_info = 6;</code>
-       */
-      public Builder clearPlayerInfo() {
-        if (playerInfoBuilder_ == null) {
-          playerInfo_ = null;
-          onChanged();
-        } else {
-          playerInfo_ = null;
-          playerInfoBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.OnlinePlayerInfo player_info = 6;</code>
-       */
-      public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder getPlayerInfoBuilder() {
-        
-        onChanged();
-        return getPlayerInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.OnlinePlayerInfo player_info = 6;</code>
-       */
-      public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder getPlayerInfoOrBuilder() {
-        if (playerInfoBuilder_ != null) {
-          return playerInfoBuilder_.getMessageOrBuilder();
-        } else {
-          return playerInfo_ == null ?
-              emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.getDefaultInstance() : playerInfo_;
-        }
-      }
-      /**
-       * <code>.OnlinePlayerInfo player_info = 6;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder> 
-          getPlayerInfoFieldBuilder() {
-        if (playerInfoBuilder_ == null) {
-          playerInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder>(
-                  getPlayerInfo(),
-                  getParentForChildren(),
-                  isClean());
-          playerInfo_ = null;
-        }
-        return playerInfoBuilder_;
-      }
-
-      private int dIOJNDKDDLI_ ;
-      /**
-       * <code>uint32 DIOJNDKDDLI = 5;</code>
-       * @return The dIOJNDKDDLI.
+       * <code>uint32 uid = 9;</code>
+       * @return The uid.
        */
       @java.lang.Override
-      public int getDIOJNDKDDLI() {
-        return dIOJNDKDDLI_;
+      public int getUid() {
+        return uid_;
       }
       /**
-       * <code>uint32 DIOJNDKDDLI = 5;</code>
-       * @param value The dIOJNDKDDLI to set.
+       * <code>uint32 uid = 9;</code>
+       * @param value The uid to set.
        * @return This builder for chaining.
        */
-      public Builder setDIOJNDKDDLI(int value) {
+      public Builder setUid(int value) {
         
-        dIOJNDKDDLI_ = value;
+        uid_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 DIOJNDKDDLI = 5;</code>
+       * <code>uint32 uid = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDIOJNDKDDLI() {
+      public Builder clearUid() {
         
-        dIOJNDKDDLI_ = 0;
+        uid_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int finalScore_ ;
+      /**
+       * <code>uint32 final_score = 5;</code>
+       * @return The finalScore.
+       */
+      @java.lang.Override
+      public int getFinalScore() {
+        return finalScore_;
+      }
+      /**
+       * <code>uint32 final_score = 5;</code>
+       * @param value The finalScore to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFinalScore(int value) {
+        
+        finalScore_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 final_score = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFinalScore() {
+        
+        finalScore_ = 0;
         onChanged();
         return this;
       }
@@ -1263,12 +1263,12 @@ public final class FallSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024FallSettleInfo.proto\032\026OnlinePlayerInfo" +
-      ".proto\"\227\002\n\016FallSettleInfo\022\023\n\013final_score" +
-      "\030\007 \001(\r\022\013\n\003uid\030\003 \001(\r\022Q\n\033flower_ring_catch" +
-      "_count_map\030\002 \003(\0132,.FallSettleInfo.Flower" +
-      "RingCatchCountMapEntry\022\023\n\013GBBJAMEMAHI\030\r " +
-      "\001(\r\022&\n\013player_info\030\006 \001(\0132\021.OnlinePlayerI" +
-      "nfo\022\023\n\013DIOJNDKDDLI\030\005 \001(\r\032>\n\034FlowerRingCa" +
+      ".proto\"\227\002\n\016FallSettleInfo\022\023\n\013CKGDCGAGEDA" +
+      "\030\001 \001(\r\022&\n\013player_info\030\016 \001(\0132\021.OnlinePlay" +
+      "erInfo\022Q\n\033flower_ring_catch_count_map\030\003 " +
+      "\003(\0132,.FallSettleInfo.FlowerRingCatchCoun" +
+      "tMapEntry\022\023\n\013DPKNKMLKICC\030\n \001(\r\022\013\n\003uid\030\t " +
+      "\001(\r\022\023\n\013final_score\030\005 \001(\r\032>\n\034FlowerRingCa" +
       "tchCountMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002" +
       " \001(\r:\0028\001B\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
@@ -1283,7 +1283,7 @@ public final class FallSettleInfoOuterClass {
     internal_static_FallSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FallSettleInfo_descriptor,
-        new java.lang.String[] { "FinalScore", "Uid", "FlowerRingCatchCountMap", "GBBJAMEMAHI", "PlayerInfo", "DIOJNDKDDLI", });
+        new java.lang.String[] { "CKGDCGAGEDA", "PlayerInfo", "FlowerRingCatchCountMap", "DPKNKMLKICC", "Uid", "FinalScore", });
     internal_static_FallSettleInfo_FlowerRingCatchCountMapEntry_descriptor =
       internal_static_FallSettleInfo_descriptor.getNestedTypes().get(0);
     internal_static_FallSettleInfo_FlowerRingCatchCountMapEntry_fieldAccessorTable = new

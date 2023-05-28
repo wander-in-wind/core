@@ -50,7 +50,7 @@ public final class MassivePropSyncInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: IBDHKPKIDND
+   * Obf: HNDJPPEKOPF
    * </pre>
    *
    * Protobuf type {@code MassivePropSyncInfo}
@@ -370,7 +370,7 @@ public final class MassivePropSyncInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: IBDHKPKIDND
+     * Obf: HNDJPPEKOPF
      * </pre>
      *
      * Protobuf type {@code MassivePropSyncInfo}

@@ -19,31 +19,31 @@ public final class TaskVarOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated int32 value_list = 10;</code>
+     * <code>repeated int32 value_list = 14;</code>
      * @return A list containing the valueList.
      */
     java.util.List<java.lang.Integer> getValueListList();
     /**
-     * <code>repeated int32 value_list = 10;</code>
+     * <code>repeated int32 value_list = 14;</code>
      * @return The count of valueList.
      */
     int getValueListCount();
     /**
-     * <code>repeated int32 value_list = 10;</code>
+     * <code>repeated int32 value_list = 14;</code>
      * @param index The index of the element to return.
      * @return The valueList at the given index.
      */
     int getValueList(int index);
 
     /**
-     * <code>uint32 key = 5;</code>
+     * <code>uint32 key = 2;</code>
      * @return The key.
      */
     int getKey();
   }
   /**
    * <pre>
-   * Name: OHOPHOBAPIL
+   * Obf: DHHJHMGHCOO
    * </pre>
    *
    * Protobuf type {@code TaskVar}
@@ -92,12 +92,12 @@ public final class TaskVarOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 16: {
 
               key_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 112: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 valueList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -105,7 +105,7 @@ public final class TaskVarOuterClass {
               valueList_.addInt(input.readInt32());
               break;
             }
-            case 82: {
+            case 114: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -153,10 +153,10 @@ public final class TaskVarOuterClass {
               emu.grasscutter.net.proto.TaskVarOuterClass.TaskVar.class, emu.grasscutter.net.proto.TaskVarOuterClass.TaskVar.Builder.class);
     }
 
-    public static final int VALUE_LIST_FIELD_NUMBER = 10;
+    public static final int VALUE_LIST_FIELD_NUMBER = 14;
     private com.google.protobuf.Internal.IntList valueList_;
     /**
-     * <code>repeated int32 value_list = 10;</code>
+     * <code>repeated int32 value_list = 14;</code>
      * @return A list containing the valueList.
      */
     @java.lang.Override
@@ -165,14 +165,14 @@ public final class TaskVarOuterClass {
       return valueList_;
     }
     /**
-     * <code>repeated int32 value_list = 10;</code>
+     * <code>repeated int32 value_list = 14;</code>
      * @return The count of valueList.
      */
     public int getValueListCount() {
       return valueList_.size();
     }
     /**
-     * <code>repeated int32 value_list = 10;</code>
+     * <code>repeated int32 value_list = 14;</code>
      * @param index The index of the element to return.
      * @return The valueList at the given index.
      */
@@ -181,10 +181,10 @@ public final class TaskVarOuterClass {
     }
     private int valueListMemoizedSerializedSize = -1;
 
-    public static final int KEY_FIELD_NUMBER = 5;
+    public static final int KEY_FIELD_NUMBER = 2;
     private int key_;
     /**
-     * <code>uint32 key = 5;</code>
+     * <code>uint32 key = 2;</code>
      * @return The key.
      */
     @java.lang.Override
@@ -208,10 +208,10 @@ public final class TaskVarOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (key_ != 0) {
-        output.writeUInt32(5, key_);
+        output.writeUInt32(2, key_);
       }
       if (getValueListList().size() > 0) {
-        output.writeUInt32NoTag(82);
+        output.writeUInt32NoTag(114);
         output.writeUInt32NoTag(valueListMemoizedSerializedSize);
       }
       for (int i = 0; i < valueList_.size(); i++) {
@@ -228,7 +228,7 @@ public final class TaskVarOuterClass {
       size = 0;
       if (key_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, key_);
+          .computeUInt32Size(2, key_);
       }
       {
         int dataSize = 0;
@@ -377,7 +377,7 @@ public final class TaskVarOuterClass {
     }
     /**
      * <pre>
-     * Name: OHOPHOBAPIL
+     * Obf: DHHJHMGHCOO
      * </pre>
      *
      * Protobuf type {@code TaskVar}
@@ -553,7 +553,7 @@ public final class TaskVarOuterClass {
          }
       }
       /**
-       * <code>repeated int32 value_list = 10;</code>
+       * <code>repeated int32 value_list = 14;</code>
        * @return A list containing the valueList.
        */
       public java.util.List<java.lang.Integer>
@@ -562,14 +562,14 @@ public final class TaskVarOuterClass {
                  java.util.Collections.unmodifiableList(valueList_) : valueList_;
       }
       /**
-       * <code>repeated int32 value_list = 10;</code>
+       * <code>repeated int32 value_list = 14;</code>
        * @return The count of valueList.
        */
       public int getValueListCount() {
         return valueList_.size();
       }
       /**
-       * <code>repeated int32 value_list = 10;</code>
+       * <code>repeated int32 value_list = 14;</code>
        * @param index The index of the element to return.
        * @return The valueList at the given index.
        */
@@ -577,7 +577,7 @@ public final class TaskVarOuterClass {
         return valueList_.getInt(index);
       }
       /**
-       * <code>repeated int32 value_list = 10;</code>
+       * <code>repeated int32 value_list = 14;</code>
        * @param index The index to set the value at.
        * @param value The valueList to set.
        * @return This builder for chaining.
@@ -590,7 +590,7 @@ public final class TaskVarOuterClass {
         return this;
       }
       /**
-       * <code>repeated int32 value_list = 10;</code>
+       * <code>repeated int32 value_list = 14;</code>
        * @param value The valueList to add.
        * @return This builder for chaining.
        */
@@ -601,7 +601,7 @@ public final class TaskVarOuterClass {
         return this;
       }
       /**
-       * <code>repeated int32 value_list = 10;</code>
+       * <code>repeated int32 value_list = 14;</code>
        * @param values The valueList to add.
        * @return This builder for chaining.
        */
@@ -614,7 +614,7 @@ public final class TaskVarOuterClass {
         return this;
       }
       /**
-       * <code>repeated int32 value_list = 10;</code>
+       * <code>repeated int32 value_list = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearValueList() {
@@ -626,7 +626,7 @@ public final class TaskVarOuterClass {
 
       private int key_ ;
       /**
-       * <code>uint32 key = 5;</code>
+       * <code>uint32 key = 2;</code>
        * @return The key.
        */
       @java.lang.Override
@@ -634,7 +634,7 @@ public final class TaskVarOuterClass {
         return key_;
       }
       /**
-       * <code>uint32 key = 5;</code>
+       * <code>uint32 key = 2;</code>
        * @param value The key to set.
        * @return This builder for chaining.
        */
@@ -645,7 +645,7 @@ public final class TaskVarOuterClass {
         return this;
       }
       /**
-       * <code>uint32 key = 5;</code>
+       * <code>uint32 key = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearKey() {
@@ -722,7 +722,7 @@ public final class TaskVarOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\rTaskVar.proto\"*\n\007TaskVar\022\022\n\nvalue_list" +
-      "\030\n \003(\005\022\013\n\003key\030\005 \001(\rB\033\n\031emu.grasscutter.n" +
+      "\030\016 \003(\005\022\013\n\003key\030\002 \001(\rB\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,39 +19,23 @@ public final class GCGTCTavernChallengeDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *FMEICLMBOBF snooswap
-     * </pre>
-     *
      * <code>uint32 character_id = 3;</code>
      * @return The characterId.
      */
     int getCharacterId();
 
     /**
-     * <pre>
-     *PHDCPPEPGGB snooswap
-     * </pre>
-     *
-     * <code>repeated uint32 unlock_level_id_list = 10;</code>
+     * <code>repeated uint32 unlock_level_id_list = 7;</code>
      * @return A list containing the unlockLevelIdList.
      */
     java.util.List<java.lang.Integer> getUnlockLevelIdListList();
     /**
-     * <pre>
-     *PHDCPPEPGGB snooswap
-     * </pre>
-     *
-     * <code>repeated uint32 unlock_level_id_list = 10;</code>
+     * <code>repeated uint32 unlock_level_id_list = 7;</code>
      * @return The count of unlockLevelIdList.
      */
     int getUnlockLevelIdListCount();
     /**
-     * <pre>
-     *PHDCPPEPGGB snooswap
-     * </pre>
-     *
-     * <code>repeated uint32 unlock_level_id_list = 10;</code>
+     * <code>repeated uint32 unlock_level_id_list = 7;</code>
      * @param index The index of the element to return.
      * @return The unlockLevelIdList at the given index.
      */
@@ -59,7 +43,7 @@ public final class GCGTCTavernChallengeDataOuterClass {
   }
   /**
    * <pre>
-   * Name: CGJDJJLIADJ
+   * Obf: GEGDNIBJGAJ
    * </pre>
    *
    * Protobuf type {@code GCGTCTavernChallengeData}
@@ -113,7 +97,7 @@ public final class GCGTCTavernChallengeDataOuterClass {
               characterId_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 56: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 unlockLevelIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -121,7 +105,7 @@ public final class GCGTCTavernChallengeDataOuterClass {
               unlockLevelIdList_.addInt(input.readUInt32());
               break;
             }
-            case 82: {
+            case 58: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -172,10 +156,6 @@ public final class GCGTCTavernChallengeDataOuterClass {
     public static final int CHARACTER_ID_FIELD_NUMBER = 3;
     private int characterId_;
     /**
-     * <pre>
-     *FMEICLMBOBF snooswap
-     * </pre>
-     *
      * <code>uint32 character_id = 3;</code>
      * @return The characterId.
      */
@@ -184,14 +164,10 @@ public final class GCGTCTavernChallengeDataOuterClass {
       return characterId_;
     }
 
-    public static final int UNLOCK_LEVEL_ID_LIST_FIELD_NUMBER = 10;
+    public static final int UNLOCK_LEVEL_ID_LIST_FIELD_NUMBER = 7;
     private com.google.protobuf.Internal.IntList unlockLevelIdList_;
     /**
-     * <pre>
-     *PHDCPPEPGGB snooswap
-     * </pre>
-     *
-     * <code>repeated uint32 unlock_level_id_list = 10;</code>
+     * <code>repeated uint32 unlock_level_id_list = 7;</code>
      * @return A list containing the unlockLevelIdList.
      */
     @java.lang.Override
@@ -200,22 +176,14 @@ public final class GCGTCTavernChallengeDataOuterClass {
       return unlockLevelIdList_;
     }
     /**
-     * <pre>
-     *PHDCPPEPGGB snooswap
-     * </pre>
-     *
-     * <code>repeated uint32 unlock_level_id_list = 10;</code>
+     * <code>repeated uint32 unlock_level_id_list = 7;</code>
      * @return The count of unlockLevelIdList.
      */
     public int getUnlockLevelIdListCount() {
       return unlockLevelIdList_.size();
     }
     /**
-     * <pre>
-     *PHDCPPEPGGB snooswap
-     * </pre>
-     *
-     * <code>repeated uint32 unlock_level_id_list = 10;</code>
+     * <code>repeated uint32 unlock_level_id_list = 7;</code>
      * @param index The index of the element to return.
      * @return The unlockLevelIdList at the given index.
      */
@@ -243,7 +211,7 @@ public final class GCGTCTavernChallengeDataOuterClass {
         output.writeUInt32(3, characterId_);
       }
       if (getUnlockLevelIdListList().size() > 0) {
-        output.writeUInt32NoTag(82);
+        output.writeUInt32NoTag(58);
         output.writeUInt32NoTag(unlockLevelIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < unlockLevelIdList_.size(); i++) {
@@ -409,7 +377,7 @@ public final class GCGTCTavernChallengeDataOuterClass {
     }
     /**
      * <pre>
-     * Name: CGJDJJLIADJ
+     * Obf: GEGDNIBJGAJ
      * </pre>
      *
      * Protobuf type {@code GCGTCTavernChallengeData}
@@ -579,10 +547,6 @@ public final class GCGTCTavernChallengeDataOuterClass {
 
       private int characterId_ ;
       /**
-       * <pre>
-       *FMEICLMBOBF snooswap
-       * </pre>
-       *
        * <code>uint32 character_id = 3;</code>
        * @return The characterId.
        */
@@ -591,10 +555,6 @@ public final class GCGTCTavernChallengeDataOuterClass {
         return characterId_;
       }
       /**
-       * <pre>
-       *FMEICLMBOBF snooswap
-       * </pre>
-       *
        * <code>uint32 character_id = 3;</code>
        * @param value The characterId to set.
        * @return This builder for chaining.
@@ -606,10 +566,6 @@ public final class GCGTCTavernChallengeDataOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *FMEICLMBOBF snooswap
-       * </pre>
-       *
        * <code>uint32 character_id = 3;</code>
        * @return This builder for chaining.
        */
@@ -628,11 +584,7 @@ public final class GCGTCTavernChallengeDataOuterClass {
          }
       }
       /**
-       * <pre>
-       *PHDCPPEPGGB snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 unlock_level_id_list = 10;</code>
+       * <code>repeated uint32 unlock_level_id_list = 7;</code>
        * @return A list containing the unlockLevelIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -641,22 +593,14 @@ public final class GCGTCTavernChallengeDataOuterClass {
                  java.util.Collections.unmodifiableList(unlockLevelIdList_) : unlockLevelIdList_;
       }
       /**
-       * <pre>
-       *PHDCPPEPGGB snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 unlock_level_id_list = 10;</code>
+       * <code>repeated uint32 unlock_level_id_list = 7;</code>
        * @return The count of unlockLevelIdList.
        */
       public int getUnlockLevelIdListCount() {
         return unlockLevelIdList_.size();
       }
       /**
-       * <pre>
-       *PHDCPPEPGGB snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 unlock_level_id_list = 10;</code>
+       * <code>repeated uint32 unlock_level_id_list = 7;</code>
        * @param index The index of the element to return.
        * @return The unlockLevelIdList at the given index.
        */
@@ -664,11 +608,7 @@ public final class GCGTCTavernChallengeDataOuterClass {
         return unlockLevelIdList_.getInt(index);
       }
       /**
-       * <pre>
-       *PHDCPPEPGGB snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 unlock_level_id_list = 10;</code>
+       * <code>repeated uint32 unlock_level_id_list = 7;</code>
        * @param index The index to set the value at.
        * @param value The unlockLevelIdList to set.
        * @return This builder for chaining.
@@ -681,11 +621,7 @@ public final class GCGTCTavernChallengeDataOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *PHDCPPEPGGB snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 unlock_level_id_list = 10;</code>
+       * <code>repeated uint32 unlock_level_id_list = 7;</code>
        * @param value The unlockLevelIdList to add.
        * @return This builder for chaining.
        */
@@ -696,11 +632,7 @@ public final class GCGTCTavernChallengeDataOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *PHDCPPEPGGB snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 unlock_level_id_list = 10;</code>
+       * <code>repeated uint32 unlock_level_id_list = 7;</code>
        * @param values The unlockLevelIdList to add.
        * @return This builder for chaining.
        */
@@ -713,11 +645,7 @@ public final class GCGTCTavernChallengeDataOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *PHDCPPEPGGB snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 unlock_level_id_list = 10;</code>
+       * <code>repeated uint32 unlock_level_id_list = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearUnlockLevelIdList() {
@@ -795,7 +723,7 @@ public final class GCGTCTavernChallengeDataOuterClass {
     java.lang.String[] descriptorData = {
       "\n\036GCGTCTavernChallengeData.proto\"N\n\030GCGT" +
       "CTavernChallengeData\022\024\n\014character_id\030\003 \001" +
-      "(\r\022\034\n\024unlock_level_id_list\030\n \003(\rB\033\n\031emu." +
+      "(\r\022\034\n\024unlock_level_id_list\030\007 \003(\rB\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -20,8 +20,8 @@ public final class LanV3BoatGameStartSingleReqOuterClass {
   }
   /**
    * <pre>
-   * Name: NDNDILMJBOP
-   * CmdId: 24887
+   * CmdId: 20591
+   * Obf: IANIJNOAGBH
    * </pre>
    *
    * Protobuf type {@code LanV3BoatGameStartSingleReq}
@@ -246,8 +246,8 @@ public final class LanV3BoatGameStartSingleReqOuterClass {
     }
     /**
      * <pre>
-     * Name: NDNDILMJBOP
-     * CmdId: 24887
+     * CmdId: 20591
+     * Obf: IANIJNOAGBH
      * </pre>
      *
      * Protobuf type {@code LanV3BoatGameStartSingleReq}

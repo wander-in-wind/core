@@ -41,8 +41,8 @@ public final class TakeReunionSignInRewardRspOuterClass {
   }
   /**
    * <pre>
-   * Name: IOCHGLCGMFD
-   * CmdId: 5082
+   * CmdId: 5057
+   * Obf: GDKHNBIMABH
    * </pre>
    *
    * Protobuf type {@code TakeReunionSignInRewardRsp}
@@ -349,8 +349,8 @@ public final class TakeReunionSignInRewardRspOuterClass {
     }
     /**
      * <pre>
-     * Name: IOCHGLCGMFD
-     * CmdId: 5082
+     * CmdId: 5057
+     * Obf: GDKHNBIMABH
      * </pre>
      *
      * Protobuf type {@code TakeReunionSignInRewardRsp}

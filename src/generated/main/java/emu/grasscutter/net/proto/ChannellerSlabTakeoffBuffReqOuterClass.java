@@ -19,27 +19,27 @@ public final class ChannellerSlabTakeoffBuffReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 buff_id = 9;</code>
+     * <code>uint32 buff_id = 7;</code>
      * @return The buffId.
      */
     int getBuffId();
 
     /**
-     * <code>bool is_mp = 3;</code>
-     * @return The isMp.
-     */
-    boolean getIsMp();
-
-    /**
-     * <code>uint32 slot_id = 13;</code>
+     * <code>uint32 slot_id = 15;</code>
      * @return The slotId.
      */
     int getSlotId();
+
+    /**
+     * <code>bool is_mp = 5;</code>
+     * @return The isMp.
+     */
+    boolean getIsMp();
   }
   /**
    * <pre>
-   * Name: BNDBBLFOHEF
-   * CmdId: 8271
+   * CmdId: 8112
+   * Obf: KDBPPMGGOGJ
    * </pre>
    *
    * Protobuf type {@code ChannellerSlabTakeoffBuffReq}
@@ -86,17 +86,17 @@ public final class ChannellerSlabTakeoffBuffReqOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 40: {
 
               isMp_ = input.readBool();
               break;
             }
-            case 72: {
+            case 56: {
 
               buffId_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 120: {
 
               slotId_ = input.readUInt32();
               break;
@@ -133,10 +133,10 @@ public final class ChannellerSlabTakeoffBuffReqOuterClass {
               emu.grasscutter.net.proto.ChannellerSlabTakeoffBuffReqOuterClass.ChannellerSlabTakeoffBuffReq.class, emu.grasscutter.net.proto.ChannellerSlabTakeoffBuffReqOuterClass.ChannellerSlabTakeoffBuffReq.Builder.class);
     }
 
-    public static final int BUFF_ID_FIELD_NUMBER = 9;
+    public static final int BUFF_ID_FIELD_NUMBER = 7;
     private int buffId_;
     /**
-     * <code>uint32 buff_id = 9;</code>
+     * <code>uint32 buff_id = 7;</code>
      * @return The buffId.
      */
     @java.lang.Override
@@ -144,26 +144,26 @@ public final class ChannellerSlabTakeoffBuffReqOuterClass {
       return buffId_;
     }
 
-    public static final int IS_MP_FIELD_NUMBER = 3;
-    private boolean isMp_;
-    /**
-     * <code>bool is_mp = 3;</code>
-     * @return The isMp.
-     */
-    @java.lang.Override
-    public boolean getIsMp() {
-      return isMp_;
-    }
-
-    public static final int SLOT_ID_FIELD_NUMBER = 13;
+    public static final int SLOT_ID_FIELD_NUMBER = 15;
     private int slotId_;
     /**
-     * <code>uint32 slot_id = 13;</code>
+     * <code>uint32 slot_id = 15;</code>
      * @return The slotId.
      */
     @java.lang.Override
     public int getSlotId() {
       return slotId_;
+    }
+
+    public static final int IS_MP_FIELD_NUMBER = 5;
+    private boolean isMp_;
+    /**
+     * <code>bool is_mp = 5;</code>
+     * @return The isMp.
+     */
+    @java.lang.Override
+    public boolean getIsMp() {
+      return isMp_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -181,13 +181,13 @@ public final class ChannellerSlabTakeoffBuffReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isMp_ != false) {
-        output.writeBool(3, isMp_);
+        output.writeBool(5, isMp_);
       }
       if (buffId_ != 0) {
-        output.writeUInt32(9, buffId_);
+        output.writeUInt32(7, buffId_);
       }
       if (slotId_ != 0) {
-        output.writeUInt32(13, slotId_);
+        output.writeUInt32(15, slotId_);
       }
       unknownFields.writeTo(output);
     }
@@ -200,15 +200,15 @@ public final class ChannellerSlabTakeoffBuffReqOuterClass {
       size = 0;
       if (isMp_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isMp_);
+          .computeBoolSize(5, isMp_);
       }
       if (buffId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, buffId_);
+          .computeUInt32Size(7, buffId_);
       }
       if (slotId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, slotId_);
+          .computeUInt32Size(15, slotId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -227,10 +227,10 @@ public final class ChannellerSlabTakeoffBuffReqOuterClass {
 
       if (getBuffId()
           != other.getBuffId()) return false;
-      if (getIsMp()
-          != other.getIsMp()) return false;
       if (getSlotId()
           != other.getSlotId()) return false;
+      if (getIsMp()
+          != other.getIsMp()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -244,11 +244,11 @@ public final class ChannellerSlabTakeoffBuffReqOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + BUFF_ID_FIELD_NUMBER;
       hash = (53 * hash) + getBuffId();
+      hash = (37 * hash) + SLOT_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSlotId();
       hash = (37 * hash) + IS_MP_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsMp());
-      hash = (37 * hash) + SLOT_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSlotId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -346,8 +346,8 @@ public final class ChannellerSlabTakeoffBuffReqOuterClass {
     }
     /**
      * <pre>
-     * Name: BNDBBLFOHEF
-     * CmdId: 8271
+     * CmdId: 8112
+     * Obf: KDBPPMGGOGJ
      * </pre>
      *
      * Protobuf type {@code ChannellerSlabTakeoffBuffReq}
@@ -389,9 +389,9 @@ public final class ChannellerSlabTakeoffBuffReqOuterClass {
         super.clear();
         buffId_ = 0;
 
-        isMp_ = false;
-
         slotId_ = 0;
+
+        isMp_ = false;
 
         return this;
       }
@@ -420,8 +420,8 @@ public final class ChannellerSlabTakeoffBuffReqOuterClass {
       public emu.grasscutter.net.proto.ChannellerSlabTakeoffBuffReqOuterClass.ChannellerSlabTakeoffBuffReq buildPartial() {
         emu.grasscutter.net.proto.ChannellerSlabTakeoffBuffReqOuterClass.ChannellerSlabTakeoffBuffReq result = new emu.grasscutter.net.proto.ChannellerSlabTakeoffBuffReqOuterClass.ChannellerSlabTakeoffBuffReq(this);
         result.buffId_ = buffId_;
-        result.isMp_ = isMp_;
         result.slotId_ = slotId_;
+        result.isMp_ = isMp_;
         onBuilt();
         return result;
       }
@@ -473,11 +473,11 @@ public final class ChannellerSlabTakeoffBuffReqOuterClass {
         if (other.getBuffId() != 0) {
           setBuffId(other.getBuffId());
         }
-        if (other.getIsMp() != false) {
-          setIsMp(other.getIsMp());
-        }
         if (other.getSlotId() != 0) {
           setSlotId(other.getSlotId());
+        }
+        if (other.getIsMp() != false) {
+          setIsMp(other.getIsMp());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -510,7 +510,7 @@ public final class ChannellerSlabTakeoffBuffReqOuterClass {
 
       private int buffId_ ;
       /**
-       * <code>uint32 buff_id = 9;</code>
+       * <code>uint32 buff_id = 7;</code>
        * @return The buffId.
        */
       @java.lang.Override
@@ -518,7 +518,7 @@ public final class ChannellerSlabTakeoffBuffReqOuterClass {
         return buffId_;
       }
       /**
-       * <code>uint32 buff_id = 9;</code>
+       * <code>uint32 buff_id = 7;</code>
        * @param value The buffId to set.
        * @return This builder for chaining.
        */
@@ -529,7 +529,7 @@ public final class ChannellerSlabTakeoffBuffReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 buff_id = 9;</code>
+       * <code>uint32 buff_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearBuffId() {
@@ -539,40 +539,9 @@ public final class ChannellerSlabTakeoffBuffReqOuterClass {
         return this;
       }
 
-      private boolean isMp_ ;
-      /**
-       * <code>bool is_mp = 3;</code>
-       * @return The isMp.
-       */
-      @java.lang.Override
-      public boolean getIsMp() {
-        return isMp_;
-      }
-      /**
-       * <code>bool is_mp = 3;</code>
-       * @param value The isMp to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsMp(boolean value) {
-        
-        isMp_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_mp = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsMp() {
-        
-        isMp_ = false;
-        onChanged();
-        return this;
-      }
-
       private int slotId_ ;
       /**
-       * <code>uint32 slot_id = 13;</code>
+       * <code>uint32 slot_id = 15;</code>
        * @return The slotId.
        */
       @java.lang.Override
@@ -580,7 +549,7 @@ public final class ChannellerSlabTakeoffBuffReqOuterClass {
         return slotId_;
       }
       /**
-       * <code>uint32 slot_id = 13;</code>
+       * <code>uint32 slot_id = 15;</code>
        * @param value The slotId to set.
        * @return This builder for chaining.
        */
@@ -591,12 +560,43 @@ public final class ChannellerSlabTakeoffBuffReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 slot_id = 13;</code>
+       * <code>uint32 slot_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearSlotId() {
         
         slotId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isMp_ ;
+      /**
+       * <code>bool is_mp = 5;</code>
+       * @return The isMp.
+       */
+      @java.lang.Override
+      public boolean getIsMp() {
+        return isMp_;
+      }
+      /**
+       * <code>bool is_mp = 5;</code>
+       * @param value The isMp to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsMp(boolean value) {
+        
+        isMp_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_mp = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsMp() {
+        
+        isMp_ = false;
         onChanged();
         return this;
       }
@@ -669,7 +669,7 @@ public final class ChannellerSlabTakeoffBuffReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"ChannellerSlabTakeoffBuffReq.proto\"O\n\034" +
       "ChannellerSlabTakeoffBuffReq\022\017\n\007buff_id\030" +
-      "\t \001(\r\022\r\n\005is_mp\030\003 \001(\010\022\017\n\007slot_id\030\r \001(\rB\033\n" +
+      "\007 \001(\r\022\017\n\007slot_id\030\017 \001(\r\022\r\n\005is_mp\030\005 \001(\010B\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -681,7 +681,7 @@ public final class ChannellerSlabTakeoffBuffReqOuterClass {
     internal_static_ChannellerSlabTakeoffBuffReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ChannellerSlabTakeoffBuffReq_descriptor,
-        new java.lang.String[] { "BuffId", "IsMp", "SlotId", });
+        new java.lang.String[] { "BuffId", "SlotId", "IsMp", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -25,15 +25,15 @@ public final class GravenInnocencePhotoFinishReqOuterClass {
     int getObjectId();
 
     /**
-     * <code>uint32 param = 15;</code>
+     * <code>uint32 param = 13;</code>
      * @return The param.
      */
     int getParam();
   }
   /**
    * <pre>
-   * Name: OCLABAOCCHG
-   * CmdId: 23079
+   * CmdId: 21250
+   * Obf: PALKFPHPFOO
    * </pre>
    *
    * Protobuf type {@code GravenInnocencePhotoFinishReq}
@@ -85,7 +85,7 @@ public final class GravenInnocencePhotoFinishReqOuterClass {
               objectId_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 104: {
 
               param_ = input.readUInt32();
               break;
@@ -133,10 +133,10 @@ public final class GravenInnocencePhotoFinishReqOuterClass {
       return objectId_;
     }
 
-    public static final int PARAM_FIELD_NUMBER = 15;
+    public static final int PARAM_FIELD_NUMBER = 13;
     private int param_;
     /**
-     * <code>uint32 param = 15;</code>
+     * <code>uint32 param = 13;</code>
      * @return The param.
      */
     @java.lang.Override
@@ -162,7 +162,7 @@ public final class GravenInnocencePhotoFinishReqOuterClass {
         output.writeUInt32(7, objectId_);
       }
       if (param_ != 0) {
-        output.writeUInt32(15, param_);
+        output.writeUInt32(13, param_);
       }
       unknownFields.writeTo(output);
     }
@@ -179,7 +179,7 @@ public final class GravenInnocencePhotoFinishReqOuterClass {
       }
       if (param_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, param_);
+          .computeUInt32Size(13, param_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class GravenInnocencePhotoFinishReqOuterClass {
     }
     /**
      * <pre>
-     * Name: OCLABAOCCHG
-     * CmdId: 23079
+     * CmdId: 21250
+     * Obf: PALKFPHPFOO
      * </pre>
      *
      * Protobuf type {@code GravenInnocencePhotoFinishReq}
@@ -501,7 +501,7 @@ public final class GravenInnocencePhotoFinishReqOuterClass {
 
       private int param_ ;
       /**
-       * <code>uint32 param = 15;</code>
+       * <code>uint32 param = 13;</code>
        * @return The param.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class GravenInnocencePhotoFinishReqOuterClass {
         return param_;
       }
       /**
-       * <code>uint32 param = 15;</code>
+       * <code>uint32 param = 13;</code>
        * @param value The param to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class GravenInnocencePhotoFinishReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 param = 15;</code>
+       * <code>uint32 param = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearParam() {
@@ -598,7 +598,7 @@ public final class GravenInnocencePhotoFinishReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n#GravenInnocencePhotoFinishReq.proto\"A\n" +
       "\035GravenInnocencePhotoFinishReq\022\021\n\tobject" +
-      "_id\030\007 \001(\r\022\r\n\005param\030\017 \001(\rB\033\n\031emu.grasscut" +
+      "_id\030\007 \001(\r\022\r\n\005param\030\r \001(\rB\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

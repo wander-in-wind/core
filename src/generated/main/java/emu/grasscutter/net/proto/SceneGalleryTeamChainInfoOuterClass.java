@@ -19,38 +19,38 @@ public final class SceneGalleryTeamChainInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 BBGFINCJACC = 2;</code>
-     * @return The bBGFINCJACC.
+     * <code>uint32 LMBEBNHDECJ = 8;</code>
+     * @return The lMBEBNHDECJ.
      */
-    int getBBGFINCJACC();
+    int getLMBEBNHDECJ();
 
     /**
-     * <code>uint32 LONKBFIBJOL = 14;</code>
-     * @return The lONKBFIBJOL.
+     * <code>uint32 MLKMBDPMGCN = 3;</code>
+     * @return The mLKMBDPMGCN.
      */
-    int getLONKBFIBJOL();
+    int getMLKMBDPMGCN();
 
     /**
-     * <code>uint32 FCDILAKFBIJ = 5;</code>
-     * @return The fCDILAKFBIJ.
+     * <code>uint32 CBCPCGHMLPE = 1;</code>
+     * @return The cBCPCGHMLPE.
      */
-    int getFCDILAKFBIJ();
+    int getCBCPCGHMLPE();
 
     /**
-     * <code>uint32 MOIHGLFBLPI = 10;</code>
-     * @return The mOIHGLFBLPI.
+     * <code>uint32 BEFMGHJHLBN = 7;</code>
+     * @return The bEFMGHJHLBN.
      */
-    int getMOIHGLFBLPI();
+    int getBEFMGHJHLBN();
 
     /**
-     * <code>uint32 ACPFEHKCGGB = 13;</code>
-     * @return The aCPFEHKCGGB.
+     * <code>uint32 EAJBENKCPGK = 11;</code>
+     * @return The eAJBENKCPGK.
      */
-    int getACPFEHKCGGB();
+    int getEAJBENKCPGK();
   }
   /**
    * <pre>
-   * Name: KBJEDGGLFMN
+   * Obf: JKLCAHCABGP
    * </pre>
    *
    * Protobuf type {@code SceneGalleryTeamChainInfo}
@@ -97,29 +97,29 @@ public final class SceneGalleryTeamChainInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 8: {
 
-              bBGFINCJACC_ = input.readUInt32();
+              cBCPCGHMLPE_ = input.readUInt32();
               break;
             }
-            case 40: {
+            case 24: {
 
-              fCDILAKFBIJ_ = input.readUInt32();
+              mLKMBDPMGCN_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 56: {
 
-              mOIHGLFBLPI_ = input.readUInt32();
+              bEFMGHJHLBN_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 64: {
 
-              aCPFEHKCGGB_ = input.readUInt32();
+              lMBEBNHDECJ_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 88: {
 
-              lONKBFIBJOL_ = input.readUInt32();
+              eAJBENKCPGK_ = input.readUInt32();
               break;
             }
             default: {
@@ -154,59 +154,59 @@ public final class SceneGalleryTeamChainInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryTeamChainInfoOuterClass.SceneGalleryTeamChainInfo.class, emu.grasscutter.net.proto.SceneGalleryTeamChainInfoOuterClass.SceneGalleryTeamChainInfo.Builder.class);
     }
 
-    public static final int BBGFINCJACC_FIELD_NUMBER = 2;
-    private int bBGFINCJACC_;
+    public static final int LMBEBNHDECJ_FIELD_NUMBER = 8;
+    private int lMBEBNHDECJ_;
     /**
-     * <code>uint32 BBGFINCJACC = 2;</code>
-     * @return The bBGFINCJACC.
+     * <code>uint32 LMBEBNHDECJ = 8;</code>
+     * @return The lMBEBNHDECJ.
      */
     @java.lang.Override
-    public int getBBGFINCJACC() {
-      return bBGFINCJACC_;
+    public int getLMBEBNHDECJ() {
+      return lMBEBNHDECJ_;
     }
 
-    public static final int LONKBFIBJOL_FIELD_NUMBER = 14;
-    private int lONKBFIBJOL_;
+    public static final int MLKMBDPMGCN_FIELD_NUMBER = 3;
+    private int mLKMBDPMGCN_;
     /**
-     * <code>uint32 LONKBFIBJOL = 14;</code>
-     * @return The lONKBFIBJOL.
+     * <code>uint32 MLKMBDPMGCN = 3;</code>
+     * @return The mLKMBDPMGCN.
      */
     @java.lang.Override
-    public int getLONKBFIBJOL() {
-      return lONKBFIBJOL_;
+    public int getMLKMBDPMGCN() {
+      return mLKMBDPMGCN_;
     }
 
-    public static final int FCDILAKFBIJ_FIELD_NUMBER = 5;
-    private int fCDILAKFBIJ_;
+    public static final int CBCPCGHMLPE_FIELD_NUMBER = 1;
+    private int cBCPCGHMLPE_;
     /**
-     * <code>uint32 FCDILAKFBIJ = 5;</code>
-     * @return The fCDILAKFBIJ.
+     * <code>uint32 CBCPCGHMLPE = 1;</code>
+     * @return The cBCPCGHMLPE.
      */
     @java.lang.Override
-    public int getFCDILAKFBIJ() {
-      return fCDILAKFBIJ_;
+    public int getCBCPCGHMLPE() {
+      return cBCPCGHMLPE_;
     }
 
-    public static final int MOIHGLFBLPI_FIELD_NUMBER = 10;
-    private int mOIHGLFBLPI_;
+    public static final int BEFMGHJHLBN_FIELD_NUMBER = 7;
+    private int bEFMGHJHLBN_;
     /**
-     * <code>uint32 MOIHGLFBLPI = 10;</code>
-     * @return The mOIHGLFBLPI.
+     * <code>uint32 BEFMGHJHLBN = 7;</code>
+     * @return The bEFMGHJHLBN.
      */
     @java.lang.Override
-    public int getMOIHGLFBLPI() {
-      return mOIHGLFBLPI_;
+    public int getBEFMGHJHLBN() {
+      return bEFMGHJHLBN_;
     }
 
-    public static final int ACPFEHKCGGB_FIELD_NUMBER = 13;
-    private int aCPFEHKCGGB_;
+    public static final int EAJBENKCPGK_FIELD_NUMBER = 11;
+    private int eAJBENKCPGK_;
     /**
-     * <code>uint32 ACPFEHKCGGB = 13;</code>
-     * @return The aCPFEHKCGGB.
+     * <code>uint32 EAJBENKCPGK = 11;</code>
+     * @return The eAJBENKCPGK.
      */
     @java.lang.Override
-    public int getACPFEHKCGGB() {
-      return aCPFEHKCGGB_;
+    public int getEAJBENKCPGK() {
+      return eAJBENKCPGK_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -223,20 +223,20 @@ public final class SceneGalleryTeamChainInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (bBGFINCJACC_ != 0) {
-        output.writeUInt32(2, bBGFINCJACC_);
+      if (cBCPCGHMLPE_ != 0) {
+        output.writeUInt32(1, cBCPCGHMLPE_);
       }
-      if (fCDILAKFBIJ_ != 0) {
-        output.writeUInt32(5, fCDILAKFBIJ_);
+      if (mLKMBDPMGCN_ != 0) {
+        output.writeUInt32(3, mLKMBDPMGCN_);
       }
-      if (mOIHGLFBLPI_ != 0) {
-        output.writeUInt32(10, mOIHGLFBLPI_);
+      if (bEFMGHJHLBN_ != 0) {
+        output.writeUInt32(7, bEFMGHJHLBN_);
       }
-      if (aCPFEHKCGGB_ != 0) {
-        output.writeUInt32(13, aCPFEHKCGGB_);
+      if (lMBEBNHDECJ_ != 0) {
+        output.writeUInt32(8, lMBEBNHDECJ_);
       }
-      if (lONKBFIBJOL_ != 0) {
-        output.writeUInt32(14, lONKBFIBJOL_);
+      if (eAJBENKCPGK_ != 0) {
+        output.writeUInt32(11, eAJBENKCPGK_);
       }
       unknownFields.writeTo(output);
     }
@@ -247,25 +247,25 @@ public final class SceneGalleryTeamChainInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (bBGFINCJACC_ != 0) {
+      if (cBCPCGHMLPE_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, bBGFINCJACC_);
+          .computeUInt32Size(1, cBCPCGHMLPE_);
       }
-      if (fCDILAKFBIJ_ != 0) {
+      if (mLKMBDPMGCN_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, fCDILAKFBIJ_);
+          .computeUInt32Size(3, mLKMBDPMGCN_);
       }
-      if (mOIHGLFBLPI_ != 0) {
+      if (bEFMGHJHLBN_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, mOIHGLFBLPI_);
+          .computeUInt32Size(7, bEFMGHJHLBN_);
       }
-      if (aCPFEHKCGGB_ != 0) {
+      if (lMBEBNHDECJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, aCPFEHKCGGB_);
+          .computeUInt32Size(8, lMBEBNHDECJ_);
       }
-      if (lONKBFIBJOL_ != 0) {
+      if (eAJBENKCPGK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, lONKBFIBJOL_);
+          .computeUInt32Size(11, eAJBENKCPGK_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -282,16 +282,16 @@ public final class SceneGalleryTeamChainInfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneGalleryTeamChainInfoOuterClass.SceneGalleryTeamChainInfo other = (emu.grasscutter.net.proto.SceneGalleryTeamChainInfoOuterClass.SceneGalleryTeamChainInfo) obj;
 
-      if (getBBGFINCJACC()
-          != other.getBBGFINCJACC()) return false;
-      if (getLONKBFIBJOL()
-          != other.getLONKBFIBJOL()) return false;
-      if (getFCDILAKFBIJ()
-          != other.getFCDILAKFBIJ()) return false;
-      if (getMOIHGLFBLPI()
-          != other.getMOIHGLFBLPI()) return false;
-      if (getACPFEHKCGGB()
-          != other.getACPFEHKCGGB()) return false;
+      if (getLMBEBNHDECJ()
+          != other.getLMBEBNHDECJ()) return false;
+      if (getMLKMBDPMGCN()
+          != other.getMLKMBDPMGCN()) return false;
+      if (getCBCPCGHMLPE()
+          != other.getCBCPCGHMLPE()) return false;
+      if (getBEFMGHJHLBN()
+          != other.getBEFMGHJHLBN()) return false;
+      if (getEAJBENKCPGK()
+          != other.getEAJBENKCPGK()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -303,16 +303,16 @@ public final class SceneGalleryTeamChainInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + BBGFINCJACC_FIELD_NUMBER;
-      hash = (53 * hash) + getBBGFINCJACC();
-      hash = (37 * hash) + LONKBFIBJOL_FIELD_NUMBER;
-      hash = (53 * hash) + getLONKBFIBJOL();
-      hash = (37 * hash) + FCDILAKFBIJ_FIELD_NUMBER;
-      hash = (53 * hash) + getFCDILAKFBIJ();
-      hash = (37 * hash) + MOIHGLFBLPI_FIELD_NUMBER;
-      hash = (53 * hash) + getMOIHGLFBLPI();
-      hash = (37 * hash) + ACPFEHKCGGB_FIELD_NUMBER;
-      hash = (53 * hash) + getACPFEHKCGGB();
+      hash = (37 * hash) + LMBEBNHDECJ_FIELD_NUMBER;
+      hash = (53 * hash) + getLMBEBNHDECJ();
+      hash = (37 * hash) + MLKMBDPMGCN_FIELD_NUMBER;
+      hash = (53 * hash) + getMLKMBDPMGCN();
+      hash = (37 * hash) + CBCPCGHMLPE_FIELD_NUMBER;
+      hash = (53 * hash) + getCBCPCGHMLPE();
+      hash = (37 * hash) + BEFMGHJHLBN_FIELD_NUMBER;
+      hash = (53 * hash) + getBEFMGHJHLBN();
+      hash = (37 * hash) + EAJBENKCPGK_FIELD_NUMBER;
+      hash = (53 * hash) + getEAJBENKCPGK();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -410,7 +410,7 @@ public final class SceneGalleryTeamChainInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: KBJEDGGLFMN
+     * Obf: JKLCAHCABGP
      * </pre>
      *
      * Protobuf type {@code SceneGalleryTeamChainInfo}
@@ -450,15 +450,15 @@ public final class SceneGalleryTeamChainInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        bBGFINCJACC_ = 0;
+        lMBEBNHDECJ_ = 0;
 
-        lONKBFIBJOL_ = 0;
+        mLKMBDPMGCN_ = 0;
 
-        fCDILAKFBIJ_ = 0;
+        cBCPCGHMLPE_ = 0;
 
-        mOIHGLFBLPI_ = 0;
+        bEFMGHJHLBN_ = 0;
 
-        aCPFEHKCGGB_ = 0;
+        eAJBENKCPGK_ = 0;
 
         return this;
       }
@@ -486,11 +486,11 @@ public final class SceneGalleryTeamChainInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneGalleryTeamChainInfoOuterClass.SceneGalleryTeamChainInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGalleryTeamChainInfoOuterClass.SceneGalleryTeamChainInfo result = new emu.grasscutter.net.proto.SceneGalleryTeamChainInfoOuterClass.SceneGalleryTeamChainInfo(this);
-        result.bBGFINCJACC_ = bBGFINCJACC_;
-        result.lONKBFIBJOL_ = lONKBFIBJOL_;
-        result.fCDILAKFBIJ_ = fCDILAKFBIJ_;
-        result.mOIHGLFBLPI_ = mOIHGLFBLPI_;
-        result.aCPFEHKCGGB_ = aCPFEHKCGGB_;
+        result.lMBEBNHDECJ_ = lMBEBNHDECJ_;
+        result.mLKMBDPMGCN_ = mLKMBDPMGCN_;
+        result.cBCPCGHMLPE_ = cBCPCGHMLPE_;
+        result.bEFMGHJHLBN_ = bEFMGHJHLBN_;
+        result.eAJBENKCPGK_ = eAJBENKCPGK_;
         onBuilt();
         return result;
       }
@@ -539,20 +539,20 @@ public final class SceneGalleryTeamChainInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneGalleryTeamChainInfoOuterClass.SceneGalleryTeamChainInfo other) {
         if (other == emu.grasscutter.net.proto.SceneGalleryTeamChainInfoOuterClass.SceneGalleryTeamChainInfo.getDefaultInstance()) return this;
-        if (other.getBBGFINCJACC() != 0) {
-          setBBGFINCJACC(other.getBBGFINCJACC());
+        if (other.getLMBEBNHDECJ() != 0) {
+          setLMBEBNHDECJ(other.getLMBEBNHDECJ());
         }
-        if (other.getLONKBFIBJOL() != 0) {
-          setLONKBFIBJOL(other.getLONKBFIBJOL());
+        if (other.getMLKMBDPMGCN() != 0) {
+          setMLKMBDPMGCN(other.getMLKMBDPMGCN());
         }
-        if (other.getFCDILAKFBIJ() != 0) {
-          setFCDILAKFBIJ(other.getFCDILAKFBIJ());
+        if (other.getCBCPCGHMLPE() != 0) {
+          setCBCPCGHMLPE(other.getCBCPCGHMLPE());
         }
-        if (other.getMOIHGLFBLPI() != 0) {
-          setMOIHGLFBLPI(other.getMOIHGLFBLPI());
+        if (other.getBEFMGHJHLBN() != 0) {
+          setBEFMGHJHLBN(other.getBEFMGHJHLBN());
         }
-        if (other.getACPFEHKCGGB() != 0) {
-          setACPFEHKCGGB(other.getACPFEHKCGGB());
+        if (other.getEAJBENKCPGK() != 0) {
+          setEAJBENKCPGK(other.getEAJBENKCPGK());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -583,157 +583,157 @@ public final class SceneGalleryTeamChainInfoOuterClass {
         return this;
       }
 
-      private int bBGFINCJACC_ ;
+      private int lMBEBNHDECJ_ ;
       /**
-       * <code>uint32 BBGFINCJACC = 2;</code>
-       * @return The bBGFINCJACC.
+       * <code>uint32 LMBEBNHDECJ = 8;</code>
+       * @return The lMBEBNHDECJ.
        */
       @java.lang.Override
-      public int getBBGFINCJACC() {
-        return bBGFINCJACC_;
+      public int getLMBEBNHDECJ() {
+        return lMBEBNHDECJ_;
       }
       /**
-       * <code>uint32 BBGFINCJACC = 2;</code>
-       * @param value The bBGFINCJACC to set.
+       * <code>uint32 LMBEBNHDECJ = 8;</code>
+       * @param value The lMBEBNHDECJ to set.
        * @return This builder for chaining.
        */
-      public Builder setBBGFINCJACC(int value) {
+      public Builder setLMBEBNHDECJ(int value) {
         
-        bBGFINCJACC_ = value;
+        lMBEBNHDECJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 BBGFINCJACC = 2;</code>
+       * <code>uint32 LMBEBNHDECJ = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBBGFINCJACC() {
+      public Builder clearLMBEBNHDECJ() {
         
-        bBGFINCJACC_ = 0;
+        lMBEBNHDECJ_ = 0;
         onChanged();
         return this;
       }
 
-      private int lONKBFIBJOL_ ;
+      private int mLKMBDPMGCN_ ;
       /**
-       * <code>uint32 LONKBFIBJOL = 14;</code>
-       * @return The lONKBFIBJOL.
+       * <code>uint32 MLKMBDPMGCN = 3;</code>
+       * @return The mLKMBDPMGCN.
        */
       @java.lang.Override
-      public int getLONKBFIBJOL() {
-        return lONKBFIBJOL_;
+      public int getMLKMBDPMGCN() {
+        return mLKMBDPMGCN_;
       }
       /**
-       * <code>uint32 LONKBFIBJOL = 14;</code>
-       * @param value The lONKBFIBJOL to set.
+       * <code>uint32 MLKMBDPMGCN = 3;</code>
+       * @param value The mLKMBDPMGCN to set.
        * @return This builder for chaining.
        */
-      public Builder setLONKBFIBJOL(int value) {
+      public Builder setMLKMBDPMGCN(int value) {
         
-        lONKBFIBJOL_ = value;
+        mLKMBDPMGCN_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 LONKBFIBJOL = 14;</code>
+       * <code>uint32 MLKMBDPMGCN = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLONKBFIBJOL() {
+      public Builder clearMLKMBDPMGCN() {
         
-        lONKBFIBJOL_ = 0;
+        mLKMBDPMGCN_ = 0;
         onChanged();
         return this;
       }
 
-      private int fCDILAKFBIJ_ ;
+      private int cBCPCGHMLPE_ ;
       /**
-       * <code>uint32 FCDILAKFBIJ = 5;</code>
-       * @return The fCDILAKFBIJ.
+       * <code>uint32 CBCPCGHMLPE = 1;</code>
+       * @return The cBCPCGHMLPE.
        */
       @java.lang.Override
-      public int getFCDILAKFBIJ() {
-        return fCDILAKFBIJ_;
+      public int getCBCPCGHMLPE() {
+        return cBCPCGHMLPE_;
       }
       /**
-       * <code>uint32 FCDILAKFBIJ = 5;</code>
-       * @param value The fCDILAKFBIJ to set.
+       * <code>uint32 CBCPCGHMLPE = 1;</code>
+       * @param value The cBCPCGHMLPE to set.
        * @return This builder for chaining.
        */
-      public Builder setFCDILAKFBIJ(int value) {
+      public Builder setCBCPCGHMLPE(int value) {
         
-        fCDILAKFBIJ_ = value;
+        cBCPCGHMLPE_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 FCDILAKFBIJ = 5;</code>
+       * <code>uint32 CBCPCGHMLPE = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFCDILAKFBIJ() {
+      public Builder clearCBCPCGHMLPE() {
         
-        fCDILAKFBIJ_ = 0;
+        cBCPCGHMLPE_ = 0;
         onChanged();
         return this;
       }
 
-      private int mOIHGLFBLPI_ ;
+      private int bEFMGHJHLBN_ ;
       /**
-       * <code>uint32 MOIHGLFBLPI = 10;</code>
-       * @return The mOIHGLFBLPI.
+       * <code>uint32 BEFMGHJHLBN = 7;</code>
+       * @return The bEFMGHJHLBN.
        */
       @java.lang.Override
-      public int getMOIHGLFBLPI() {
-        return mOIHGLFBLPI_;
+      public int getBEFMGHJHLBN() {
+        return bEFMGHJHLBN_;
       }
       /**
-       * <code>uint32 MOIHGLFBLPI = 10;</code>
-       * @param value The mOIHGLFBLPI to set.
+       * <code>uint32 BEFMGHJHLBN = 7;</code>
+       * @param value The bEFMGHJHLBN to set.
        * @return This builder for chaining.
        */
-      public Builder setMOIHGLFBLPI(int value) {
+      public Builder setBEFMGHJHLBN(int value) {
         
-        mOIHGLFBLPI_ = value;
+        bEFMGHJHLBN_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 MOIHGLFBLPI = 10;</code>
+       * <code>uint32 BEFMGHJHLBN = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMOIHGLFBLPI() {
+      public Builder clearBEFMGHJHLBN() {
         
-        mOIHGLFBLPI_ = 0;
+        bEFMGHJHLBN_ = 0;
         onChanged();
         return this;
       }
 
-      private int aCPFEHKCGGB_ ;
+      private int eAJBENKCPGK_ ;
       /**
-       * <code>uint32 ACPFEHKCGGB = 13;</code>
-       * @return The aCPFEHKCGGB.
+       * <code>uint32 EAJBENKCPGK = 11;</code>
+       * @return The eAJBENKCPGK.
        */
       @java.lang.Override
-      public int getACPFEHKCGGB() {
-        return aCPFEHKCGGB_;
+      public int getEAJBENKCPGK() {
+        return eAJBENKCPGK_;
       }
       /**
-       * <code>uint32 ACPFEHKCGGB = 13;</code>
-       * @param value The aCPFEHKCGGB to set.
+       * <code>uint32 EAJBENKCPGK = 11;</code>
+       * @param value The eAJBENKCPGK to set.
        * @return This builder for chaining.
        */
-      public Builder setACPFEHKCGGB(int value) {
+      public Builder setEAJBENKCPGK(int value) {
         
-        aCPFEHKCGGB_ = value;
+        eAJBENKCPGK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 ACPFEHKCGGB = 13;</code>
+       * <code>uint32 EAJBENKCPGK = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearACPFEHKCGGB() {
+      public Builder clearEAJBENKCPGK() {
         
-        aCPFEHKCGGB_ = 0;
+        eAJBENKCPGK_ = 0;
         onChanged();
         return this;
       }
@@ -805,10 +805,10 @@ public final class SceneGalleryTeamChainInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037SceneGalleryTeamChainInfo.proto\"\204\001\n\031Sc" +
-      "eneGalleryTeamChainInfo\022\023\n\013BBGFINCJACC\030\002" +
-      " \001(\r\022\023\n\013LONKBFIBJOL\030\016 \001(\r\022\023\n\013FCDILAKFBIJ" +
-      "\030\005 \001(\r\022\023\n\013MOIHGLFBLPI\030\n \001(\r\022\023\n\013ACPFEHKCG" +
-      "GB\030\r \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
+      "eneGalleryTeamChainInfo\022\023\n\013LMBEBNHDECJ\030\010" +
+      " \001(\r\022\023\n\013MLKMBDPMGCN\030\003 \001(\r\022\023\n\013CBCPCGHMLPE" +
+      "\030\001 \001(\r\022\023\n\013BEFMGHJHLBN\030\007 \001(\r\022\023\n\013EAJBENKCP" +
+      "GK\030\013 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -820,7 +820,7 @@ public final class SceneGalleryTeamChainInfoOuterClass {
     internal_static_SceneGalleryTeamChainInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryTeamChainInfo_descriptor,
-        new java.lang.String[] { "BBGFINCJACC", "LONKBFIBJOL", "FCDILAKFBIJ", "MOIHGLFBLPI", "ACPFEHKCGGB", });
+        new java.lang.String[] { "LMBEBNHDECJ", "MLKMBDPMGCN", "CBCPCGHMLPE", "BEFMGHJHLBN", "EAJBENKCPGK", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

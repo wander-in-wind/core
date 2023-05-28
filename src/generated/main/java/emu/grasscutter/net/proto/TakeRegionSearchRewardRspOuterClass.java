@@ -19,27 +19,27 @@ public final class TakeRegionSearchRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 id = 6;</code>
-     * @return The id.
-     */
-    int getId();
-
-    /**
-     * <code>int32 retcode = 2;</code>
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 search_id = 4;</code>
+     * <code>uint32 id = 5;</code>
+     * @return The id.
+     */
+    int getId();
+
+    /**
+     * <code>uint32 search_id = 3;</code>
      * @return The searchId.
      */
     int getSearchId();
   }
   /**
    * <pre>
-   * Name: MBABLBGHNJJ
-   * CmdId: 5646
+   * CmdId: 5621
+   * Obf: JEGJEAIJFDN
    * </pre>
    *
    * Protobuf type {@code TakeRegionSearchRewardRsp}
@@ -86,19 +86,19 @@ public final class TakeRegionSearchRewardRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 32: {
+            case 24: {
 
               searchId_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 40: {
 
               id_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -133,21 +133,10 @@ public final class TakeRegionSearchRewardRspOuterClass {
               emu.grasscutter.net.proto.TakeRegionSearchRewardRspOuterClass.TakeRegionSearchRewardRsp.class, emu.grasscutter.net.proto.TakeRegionSearchRewardRspOuterClass.TakeRegionSearchRewardRsp.Builder.class);
     }
 
-    public static final int ID_FIELD_NUMBER = 6;
-    private int id_;
-    /**
-     * <code>uint32 id = 6;</code>
-     * @return The id.
-     */
-    @java.lang.Override
-    public int getId() {
-      return id_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 2;
+    public static final int RETCODE_FIELD_NUMBER = 10;
     private int retcode_;
     /**
-     * <code>int32 retcode = 2;</code>
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -155,10 +144,21 @@ public final class TakeRegionSearchRewardRspOuterClass {
       return retcode_;
     }
 
-    public static final int SEARCH_ID_FIELD_NUMBER = 4;
+    public static final int ID_FIELD_NUMBER = 5;
+    private int id_;
+    /**
+     * <code>uint32 id = 5;</code>
+     * @return The id.
+     */
+    @java.lang.Override
+    public int getId() {
+      return id_;
+    }
+
+    public static final int SEARCH_ID_FIELD_NUMBER = 3;
     private int searchId_;
     /**
-     * <code>uint32 search_id = 4;</code>
+     * <code>uint32 search_id = 3;</code>
      * @return The searchId.
      */
     @java.lang.Override
@@ -180,14 +180,14 @@ public final class TakeRegionSearchRewardRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(2, retcode_);
-      }
       if (searchId_ != 0) {
-        output.writeUInt32(4, searchId_);
+        output.writeUInt32(3, searchId_);
       }
       if (id_ != 0) {
-        output.writeUInt32(6, id_);
+        output.writeUInt32(5, id_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(10, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +198,17 @@ public final class TakeRegionSearchRewardRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, retcode_);
-      }
       if (searchId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, searchId_);
+          .computeUInt32Size(3, searchId_);
       }
       if (id_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, id_);
+          .computeUInt32Size(5, id_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(10, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -225,10 +225,10 @@ public final class TakeRegionSearchRewardRspOuterClass {
       }
       emu.grasscutter.net.proto.TakeRegionSearchRewardRspOuterClass.TakeRegionSearchRewardRsp other = (emu.grasscutter.net.proto.TakeRegionSearchRewardRspOuterClass.TakeRegionSearchRewardRsp) obj;
 
-      if (getId()
-          != other.getId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getId()
+          != other.getId()) return false;
       if (getSearchId()
           != other.getSearchId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -242,10 +242,10 @@ public final class TakeRegionSearchRewardRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ID_FIELD_NUMBER;
-      hash = (53 * hash) + getId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + ID_FIELD_NUMBER;
+      hash = (53 * hash) + getId();
       hash = (37 * hash) + SEARCH_ID_FIELD_NUMBER;
       hash = (53 * hash) + getSearchId();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -345,8 +345,8 @@ public final class TakeRegionSearchRewardRspOuterClass {
     }
     /**
      * <pre>
-     * Name: MBABLBGHNJJ
-     * CmdId: 5646
+     * CmdId: 5621
+     * Obf: JEGJEAIJFDN
      * </pre>
      *
      * Protobuf type {@code TakeRegionSearchRewardRsp}
@@ -386,9 +386,9 @@ public final class TakeRegionSearchRewardRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        id_ = 0;
-
         retcode_ = 0;
+
+        id_ = 0;
 
         searchId_ = 0;
 
@@ -418,8 +418,8 @@ public final class TakeRegionSearchRewardRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.TakeRegionSearchRewardRspOuterClass.TakeRegionSearchRewardRsp buildPartial() {
         emu.grasscutter.net.proto.TakeRegionSearchRewardRspOuterClass.TakeRegionSearchRewardRsp result = new emu.grasscutter.net.proto.TakeRegionSearchRewardRspOuterClass.TakeRegionSearchRewardRsp(this);
-        result.id_ = id_;
         result.retcode_ = retcode_;
+        result.id_ = id_;
         result.searchId_ = searchId_;
         onBuilt();
         return result;
@@ -469,11 +469,11 @@ public final class TakeRegionSearchRewardRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.TakeRegionSearchRewardRspOuterClass.TakeRegionSearchRewardRsp other) {
         if (other == emu.grasscutter.net.proto.TakeRegionSearchRewardRspOuterClass.TakeRegionSearchRewardRsp.getDefaultInstance()) return this;
-        if (other.getId() != 0) {
-          setId(other.getId());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getId() != 0) {
+          setId(other.getId());
         }
         if (other.getSearchId() != 0) {
           setSearchId(other.getSearchId());
@@ -507,40 +507,9 @@ public final class TakeRegionSearchRewardRspOuterClass {
         return this;
       }
 
-      private int id_ ;
-      /**
-       * <code>uint32 id = 6;</code>
-       * @return The id.
-       */
-      @java.lang.Override
-      public int getId() {
-        return id_;
-      }
-      /**
-       * <code>uint32 id = 6;</code>
-       * @param value The id to set.
-       * @return This builder for chaining.
-       */
-      public Builder setId(int value) {
-        
-        id_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 id = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearId() {
-        
-        id_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 10;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -548,7 +517,7 @@ public final class TakeRegionSearchRewardRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 10;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -559,7 +528,7 @@ public final class TakeRegionSearchRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -569,9 +538,40 @@ public final class TakeRegionSearchRewardRspOuterClass {
         return this;
       }
 
+      private int id_ ;
+      /**
+       * <code>uint32 id = 5;</code>
+       * @return The id.
+       */
+      @java.lang.Override
+      public int getId() {
+        return id_;
+      }
+      /**
+       * <code>uint32 id = 5;</code>
+       * @param value The id to set.
+       * @return This builder for chaining.
+       */
+      public Builder setId(int value) {
+        
+        id_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 id = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearId() {
+        
+        id_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int searchId_ ;
       /**
-       * <code>uint32 search_id = 4;</code>
+       * <code>uint32 search_id = 3;</code>
        * @return The searchId.
        */
       @java.lang.Override
@@ -579,7 +579,7 @@ public final class TakeRegionSearchRewardRspOuterClass {
         return searchId_;
       }
       /**
-       * <code>uint32 search_id = 4;</code>
+       * <code>uint32 search_id = 3;</code>
        * @param value The searchId to set.
        * @return This builder for chaining.
        */
@@ -590,7 +590,7 @@ public final class TakeRegionSearchRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 search_id = 4;</code>
+       * <code>uint32 search_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearSearchId() {
@@ -667,8 +667,8 @@ public final class TakeRegionSearchRewardRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037TakeRegionSearchRewardRsp.proto\"K\n\031Tak" +
-      "eRegionSearchRewardRsp\022\n\n\002id\030\006 \001(\r\022\017\n\007re" +
-      "tcode\030\002 \001(\005\022\021\n\tsearch_id\030\004 \001(\rB\033\n\031emu.gr" +
+      "eRegionSearchRewardRsp\022\017\n\007retcode\030\n \001(\005\022" +
+      "\n\n\002id\030\005 \001(\r\022\021\n\tsearch_id\030\003 \001(\rB\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -680,7 +680,7 @@ public final class TakeRegionSearchRewardRspOuterClass {
     internal_static_TakeRegionSearchRewardRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TakeRegionSearchRewardRsp_descriptor,
-        new java.lang.String[] { "Id", "Retcode", "SearchId", });
+        new java.lang.String[] { "Retcode", "Id", "SearchId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

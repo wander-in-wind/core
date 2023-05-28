@@ -19,17 +19,11 @@ public final class PlantFlowerSetFlowerWishReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 schedule_id = 5;</code>
-     * @return The scheduleId.
-     */
-    int getScheduleId();
-
-    /**
-     * <code>map&lt;uint32, uint32&gt; flower_num_map = 4;</code>
+     * <code>map&lt;uint32, uint32&gt; flower_num_map = 9;</code>
      */
     int getFlowerNumMapCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; flower_num_map = 4;</code>
+     * <code>map&lt;uint32, uint32&gt; flower_num_map = 9;</code>
      */
     boolean containsFlowerNumMap(
         int key);
@@ -40,28 +34,34 @@ public final class PlantFlowerSetFlowerWishReqOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getFlowerNumMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; flower_num_map = 4;</code>
+     * <code>map&lt;uint32, uint32&gt; flower_num_map = 9;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getFlowerNumMapMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; flower_num_map = 4;</code>
+     * <code>map&lt;uint32, uint32&gt; flower_num_map = 9;</code>
      */
 
     int getFlowerNumMapOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; flower_num_map = 4;</code>
+     * <code>map&lt;uint32, uint32&gt; flower_num_map = 9;</code>
      */
 
     int getFlowerNumMapOrThrow(
         int key);
+
+    /**
+     * <code>uint32 schedule_id = 11;</code>
+     * @return The scheduleId.
+     */
+    int getScheduleId();
   }
   /**
    * <pre>
-   * Name: GAHOGELCJBE
-   * CmdId: 8997
+   * CmdId: 8024
+   * Obf: MBCFMJJBEEC
    * </pre>
    *
    * Protobuf type {@code PlantFlowerSetFlowerWishReq}
@@ -109,7 +109,7 @@ public final class PlantFlowerSetFlowerWishReqOuterClass {
             case 0:
               done = true;
               break;
-            case 34: {
+            case 74: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 flowerNumMap_ = com.google.protobuf.MapField.newMapField(
                     FlowerNumMapDefaultEntryHolder.defaultEntry);
@@ -122,7 +122,7 @@ public final class PlantFlowerSetFlowerWishReqOuterClass {
                   flowerNumMap__.getKey(), flowerNumMap__.getValue());
               break;
             }
-            case 40: {
+            case 88: {
 
               scheduleId_ = input.readUInt32();
               break;
@@ -156,7 +156,7 @@ public final class PlantFlowerSetFlowerWishReqOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 4:
+        case 9:
           return internalGetFlowerNumMap();
         default:
           throw new RuntimeException(
@@ -171,18 +171,7 @@ public final class PlantFlowerSetFlowerWishReqOuterClass {
               emu.grasscutter.net.proto.PlantFlowerSetFlowerWishReqOuterClass.PlantFlowerSetFlowerWishReq.class, emu.grasscutter.net.proto.PlantFlowerSetFlowerWishReqOuterClass.PlantFlowerSetFlowerWishReq.Builder.class);
     }
 
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 5;
-    private int scheduleId_;
-    /**
-     * <code>uint32 schedule_id = 5;</code>
-     * @return The scheduleId.
-     */
-    @java.lang.Override
-    public int getScheduleId() {
-      return scheduleId_;
-    }
-
-    public static final int FLOWER_NUM_MAP_FIELD_NUMBER = 4;
+    public static final int FLOWER_NUM_MAP_FIELD_NUMBER = 9;
     private static final class FlowerNumMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -209,7 +198,7 @@ public final class PlantFlowerSetFlowerWishReqOuterClass {
       return internalGetFlowerNumMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; flower_num_map = 4;</code>
+     * <code>map&lt;uint32, uint32&gt; flower_num_map = 9;</code>
      */
 
     @java.lang.Override
@@ -227,7 +216,7 @@ public final class PlantFlowerSetFlowerWishReqOuterClass {
       return getFlowerNumMapMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; flower_num_map = 4;</code>
+     * <code>map&lt;uint32, uint32&gt; flower_num_map = 9;</code>
      */
     @java.lang.Override
 
@@ -235,7 +224,7 @@ public final class PlantFlowerSetFlowerWishReqOuterClass {
       return internalGetFlowerNumMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; flower_num_map = 4;</code>
+     * <code>map&lt;uint32, uint32&gt; flower_num_map = 9;</code>
      */
     @java.lang.Override
 
@@ -248,7 +237,7 @@ public final class PlantFlowerSetFlowerWishReqOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; flower_num_map = 4;</code>
+     * <code>map&lt;uint32, uint32&gt; flower_num_map = 9;</code>
      */
     @java.lang.Override
 
@@ -261,6 +250,17 @@ public final class PlantFlowerSetFlowerWishReqOuterClass {
         throw new java.lang.IllegalArgumentException();
       }
       return map.get(key);
+    }
+
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 11;
+    private int scheduleId_;
+    /**
+     * <code>uint32 schedule_id = 11;</code>
+     * @return The scheduleId.
+     */
+    @java.lang.Override
+    public int getScheduleId() {
+      return scheduleId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -282,9 +282,9 @@ public final class PlantFlowerSetFlowerWishReqOuterClass {
           output,
           internalGetFlowerNumMap(),
           FlowerNumMapDefaultEntryHolder.defaultEntry,
-          4);
+          9);
       if (scheduleId_ != 0) {
-        output.writeUInt32(5, scheduleId_);
+        output.writeUInt32(11, scheduleId_);
       }
       unknownFields.writeTo(output);
     }
@@ -303,11 +303,11 @@ public final class PlantFlowerSetFlowerWishReqOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(4, flowerNumMap__);
+            .computeMessageSize(9, flowerNumMap__);
       }
       if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, scheduleId_);
+          .computeUInt32Size(11, scheduleId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -324,10 +324,10 @@ public final class PlantFlowerSetFlowerWishReqOuterClass {
       }
       emu.grasscutter.net.proto.PlantFlowerSetFlowerWishReqOuterClass.PlantFlowerSetFlowerWishReq other = (emu.grasscutter.net.proto.PlantFlowerSetFlowerWishReqOuterClass.PlantFlowerSetFlowerWishReq) obj;
 
-      if (getScheduleId()
-          != other.getScheduleId()) return false;
       if (!internalGetFlowerNumMap().equals(
           other.internalGetFlowerNumMap())) return false;
+      if (getScheduleId()
+          != other.getScheduleId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -339,12 +339,12 @@ public final class PlantFlowerSetFlowerWishReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SCHEDULE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getScheduleId();
       if (!internalGetFlowerNumMap().getMap().isEmpty()) {
         hash = (37 * hash) + FLOWER_NUM_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetFlowerNumMap().hashCode();
       }
+      hash = (37 * hash) + SCHEDULE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getScheduleId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -442,8 +442,8 @@ public final class PlantFlowerSetFlowerWishReqOuterClass {
     }
     /**
      * <pre>
-     * Name: GAHOGELCJBE
-     * CmdId: 8997
+     * CmdId: 8024
+     * Obf: MBCFMJJBEEC
      * </pre>
      *
      * Protobuf type {@code PlantFlowerSetFlowerWishReq}
@@ -461,7 +461,7 @@ public final class PlantFlowerSetFlowerWishReqOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 4:
+          case 9:
             return internalGetFlowerNumMap();
           default:
             throw new RuntimeException(
@@ -472,7 +472,7 @@ public final class PlantFlowerSetFlowerWishReqOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 4:
+          case 9:
             return internalGetMutableFlowerNumMap();
           default:
             throw new RuntimeException(
@@ -505,9 +505,9 @@ public final class PlantFlowerSetFlowerWishReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        internalGetMutableFlowerNumMap().clear();
         scheduleId_ = 0;
 
-        internalGetMutableFlowerNumMap().clear();
         return this;
       }
 
@@ -535,9 +535,9 @@ public final class PlantFlowerSetFlowerWishReqOuterClass {
       public emu.grasscutter.net.proto.PlantFlowerSetFlowerWishReqOuterClass.PlantFlowerSetFlowerWishReq buildPartial() {
         emu.grasscutter.net.proto.PlantFlowerSetFlowerWishReqOuterClass.PlantFlowerSetFlowerWishReq result = new emu.grasscutter.net.proto.PlantFlowerSetFlowerWishReqOuterClass.PlantFlowerSetFlowerWishReq(this);
         int from_bitField0_ = bitField0_;
-        result.scheduleId_ = scheduleId_;
         result.flowerNumMap_ = internalGetFlowerNumMap();
         result.flowerNumMap_.makeImmutable();
+        result.scheduleId_ = scheduleId_;
         onBuilt();
         return result;
       }
@@ -586,11 +586,11 @@ public final class PlantFlowerSetFlowerWishReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PlantFlowerSetFlowerWishReqOuterClass.PlantFlowerSetFlowerWishReq other) {
         if (other == emu.grasscutter.net.proto.PlantFlowerSetFlowerWishReqOuterClass.PlantFlowerSetFlowerWishReq.getDefaultInstance()) return this;
+        internalGetMutableFlowerNumMap().mergeFrom(
+            other.internalGetFlowerNumMap());
         if (other.getScheduleId() != 0) {
           setScheduleId(other.getScheduleId());
         }
-        internalGetMutableFlowerNumMap().mergeFrom(
-            other.internalGetFlowerNumMap());
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -621,37 +621,6 @@ public final class PlantFlowerSetFlowerWishReqOuterClass {
       }
       private int bitField0_;
 
-      private int scheduleId_ ;
-      /**
-       * <code>uint32 schedule_id = 5;</code>
-       * @return The scheduleId.
-       */
-      @java.lang.Override
-      public int getScheduleId() {
-        return scheduleId_;
-      }
-      /**
-       * <code>uint32 schedule_id = 5;</code>
-       * @param value The scheduleId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setScheduleId(int value) {
-        
-        scheduleId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 schedule_id = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearScheduleId() {
-        
-        scheduleId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private com.google.protobuf.MapField<
           java.lang.Integer, java.lang.Integer> flowerNumMap_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
@@ -679,7 +648,7 @@ public final class PlantFlowerSetFlowerWishReqOuterClass {
         return internalGetFlowerNumMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; flower_num_map = 4;</code>
+       * <code>map&lt;uint32, uint32&gt; flower_num_map = 9;</code>
        */
 
       @java.lang.Override
@@ -697,7 +666,7 @@ public final class PlantFlowerSetFlowerWishReqOuterClass {
         return getFlowerNumMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; flower_num_map = 4;</code>
+       * <code>map&lt;uint32, uint32&gt; flower_num_map = 9;</code>
        */
       @java.lang.Override
 
@@ -705,7 +674,7 @@ public final class PlantFlowerSetFlowerWishReqOuterClass {
         return internalGetFlowerNumMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; flower_num_map = 4;</code>
+       * <code>map&lt;uint32, uint32&gt; flower_num_map = 9;</code>
        */
       @java.lang.Override
 
@@ -718,7 +687,7 @@ public final class PlantFlowerSetFlowerWishReqOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; flower_num_map = 4;</code>
+       * <code>map&lt;uint32, uint32&gt; flower_num_map = 9;</code>
        */
       @java.lang.Override
 
@@ -739,7 +708,7 @@ public final class PlantFlowerSetFlowerWishReqOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; flower_num_map = 4;</code>
+       * <code>map&lt;uint32, uint32&gt; flower_num_map = 9;</code>
        */
 
       public Builder removeFlowerNumMap(
@@ -758,7 +727,7 @@ public final class PlantFlowerSetFlowerWishReqOuterClass {
         return internalGetMutableFlowerNumMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; flower_num_map = 4;</code>
+       * <code>map&lt;uint32, uint32&gt; flower_num_map = 9;</code>
        */
       public Builder putFlowerNumMap(
           int key,
@@ -770,13 +739,44 @@ public final class PlantFlowerSetFlowerWishReqOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; flower_num_map = 4;</code>
+       * <code>map&lt;uint32, uint32&gt; flower_num_map = 9;</code>
        */
 
       public Builder putAllFlowerNumMap(
           java.util.Map<java.lang.Integer, java.lang.Integer> values) {
         internalGetMutableFlowerNumMap().getMutableMap()
             .putAll(values);
+        return this;
+      }
+
+      private int scheduleId_ ;
+      /**
+       * <code>uint32 schedule_id = 11;</code>
+       * @return The scheduleId.
+       */
+      @java.lang.Override
+      public int getScheduleId() {
+        return scheduleId_;
+      }
+      /**
+       * <code>uint32 schedule_id = 11;</code>
+       * @param value The scheduleId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setScheduleId(int value) {
+        
+        scheduleId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 schedule_id = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearScheduleId() {
+        
+        scheduleId_ = 0;
+        onChanged();
         return this;
       }
       @java.lang.Override
@@ -852,9 +852,9 @@ public final class PlantFlowerSetFlowerWishReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!PlantFlowerSetFlowerWishReq.proto\"\257\001\n\033" +
-      "PlantFlowerSetFlowerWishReq\022\023\n\013schedule_" +
-      "id\030\005 \001(\r\022F\n\016flower_num_map\030\004 \003(\0132..Plant" +
-      "FlowerSetFlowerWishReq.FlowerNumMapEntry" +
+      "PlantFlowerSetFlowerWishReq\022F\n\016flower_nu" +
+      "m_map\030\t \003(\0132..PlantFlowerSetFlowerWishRe" +
+      "q.FlowerNumMapEntry\022\023\n\013schedule_id\030\013 \001(\r" +
       "\0323\n\021FlowerNumMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005va" +
       "lue\030\002 \001(\r:\0028\001B\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
@@ -868,7 +868,7 @@ public final class PlantFlowerSetFlowerWishReqOuterClass {
     internal_static_PlantFlowerSetFlowerWishReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlantFlowerSetFlowerWishReq_descriptor,
-        new java.lang.String[] { "ScheduleId", "FlowerNumMap", });
+        new java.lang.String[] { "FlowerNumMap", "ScheduleId", });
     internal_static_PlantFlowerSetFlowerWishReq_FlowerNumMapEntry_descriptor =
       internal_static_PlantFlowerSetFlowerWishReq_descriptor.getNestedTypes().get(0);
     internal_static_PlantFlowerSetFlowerWishReq_FlowerNumMapEntry_fieldAccessorTable = new

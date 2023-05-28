@@ -25,15 +25,15 @@ public final class MuqadasPotionCaptureWeaknessReqOuterClass {
     int getCaptureWeaknessCount();
 
     /**
-     * <code>uint32 level_id = 2;</code>
+     * <code>uint32 level_id = 5;</code>
      * @return The levelId.
      */
     int getLevelId();
   }
   /**
    * <pre>
-   * Name: BEBOPIDLJCN
-   * CmdId: 23970
+   * CmdId: 21302
+   * Obf: MBNBLJCDDNH
    * </pre>
    *
    * Protobuf type {@code MuqadasPotionCaptureWeaknessReq}
@@ -80,7 +80,7 @@ public final class MuqadasPotionCaptureWeaknessReqOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 40: {
 
               levelId_ = input.readUInt32();
               break;
@@ -133,10 +133,10 @@ public final class MuqadasPotionCaptureWeaknessReqOuterClass {
       return captureWeaknessCount_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 2;
+    public static final int LEVEL_ID_FIELD_NUMBER = 5;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 2;</code>
+     * <code>uint32 level_id = 5;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -159,7 +159,7 @@ public final class MuqadasPotionCaptureWeaknessReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (levelId_ != 0) {
-        output.writeUInt32(2, levelId_);
+        output.writeUInt32(5, levelId_);
       }
       if (captureWeaknessCount_ != 0) {
         output.writeUInt32(14, captureWeaknessCount_);
@@ -175,7 +175,7 @@ public final class MuqadasPotionCaptureWeaknessReqOuterClass {
       size = 0;
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, levelId_);
+          .computeUInt32Size(5, levelId_);
       }
       if (captureWeaknessCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -312,8 +312,8 @@ public final class MuqadasPotionCaptureWeaknessReqOuterClass {
     }
     /**
      * <pre>
-     * Name: BEBOPIDLJCN
-     * CmdId: 23970
+     * CmdId: 21302
+     * Obf: MBNBLJCDDNH
      * </pre>
      *
      * Protobuf type {@code MuqadasPotionCaptureWeaknessReq}
@@ -501,7 +501,7 @@ public final class MuqadasPotionCaptureWeaknessReqOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 2;</code>
+       * <code>uint32 level_id = 5;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class MuqadasPotionCaptureWeaknessReqOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 2;</code>
+       * <code>uint32 level_id = 5;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class MuqadasPotionCaptureWeaknessReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 2;</code>
+       * <code>uint32 level_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -598,7 +598,7 @@ public final class MuqadasPotionCaptureWeaknessReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n%MuqadasPotionCaptureWeaknessReq.proto\"" +
       "S\n\037MuqadasPotionCaptureWeaknessReq\022\036\n\026ca" +
-      "pture_weakness_count\030\016 \001(\r\022\020\n\010level_id\030\002" +
+      "pture_weakness_count\030\016 \001(\r\022\020\n\010level_id\030\005" +
       " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
     };

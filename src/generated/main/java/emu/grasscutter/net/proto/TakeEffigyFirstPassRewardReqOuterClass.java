@@ -19,15 +19,15 @@ public final class TakeEffigyFirstPassRewardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 challenge_id = 7;</code>
+     * <code>uint32 challenge_id = 5;</code>
      * @return The challengeId.
      */
     int getChallengeId();
   }
   /**
    * <pre>
-   * Name: BMOHJCEIHCK
-   * CmdId: 2050
+   * CmdId: 2189
+   * Obf: KFOLKBOGDBF
    * </pre>
    *
    * Protobuf type {@code TakeEffigyFirstPassRewardReq}
@@ -74,7 +74,7 @@ public final class TakeEffigyFirstPassRewardReqOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 40: {
 
               challengeId_ = input.readUInt32();
               break;
@@ -111,10 +111,10 @@ public final class TakeEffigyFirstPassRewardReqOuterClass {
               emu.grasscutter.net.proto.TakeEffigyFirstPassRewardReqOuterClass.TakeEffigyFirstPassRewardReq.class, emu.grasscutter.net.proto.TakeEffigyFirstPassRewardReqOuterClass.TakeEffigyFirstPassRewardReq.Builder.class);
     }
 
-    public static final int CHALLENGE_ID_FIELD_NUMBER = 7;
+    public static final int CHALLENGE_ID_FIELD_NUMBER = 5;
     private int challengeId_;
     /**
-     * <code>uint32 challenge_id = 7;</code>
+     * <code>uint32 challenge_id = 5;</code>
      * @return The challengeId.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class TakeEffigyFirstPassRewardReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (challengeId_ != 0) {
-        output.writeUInt32(7, challengeId_);
+        output.writeUInt32(5, challengeId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class TakeEffigyFirstPassRewardReqOuterClass {
       size = 0;
       if (challengeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, challengeId_);
+          .computeUInt32Size(5, challengeId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class TakeEffigyFirstPassRewardReqOuterClass {
     }
     /**
      * <pre>
-     * Name: BMOHJCEIHCK
-     * CmdId: 2050
+     * CmdId: 2189
+     * Obf: KFOLKBOGDBF
      * </pre>
      *
      * Protobuf type {@code TakeEffigyFirstPassRewardReq}
@@ -431,7 +431,7 @@ public final class TakeEffigyFirstPassRewardReqOuterClass {
 
       private int challengeId_ ;
       /**
-       * <code>uint32 challenge_id = 7;</code>
+       * <code>uint32 challenge_id = 5;</code>
        * @return The challengeId.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class TakeEffigyFirstPassRewardReqOuterClass {
         return challengeId_;
       }
       /**
-       * <code>uint32 challenge_id = 7;</code>
+       * <code>uint32 challenge_id = 5;</code>
        * @param value The challengeId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class TakeEffigyFirstPassRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 challenge_id = 7;</code>
+       * <code>uint32 challenge_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearChallengeId() {
@@ -528,7 +528,7 @@ public final class TakeEffigyFirstPassRewardReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"TakeEffigyFirstPassRewardReq.proto\"4\n\034" +
       "TakeEffigyFirstPassRewardReq\022\024\n\014challeng" +
-      "e_id\030\007 \001(\rB\033\n\031emu.grasscutter.net.protob" +
+      "e_id\030\005 \001(\rB\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

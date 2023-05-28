@@ -19,15 +19,15 @@ public final class GravenInnocenceEditCarveCombinationRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 14;</code>
+     * <code>int32 retcode = 12;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * Name: MBBJOIJCJGL
-   * CmdId: 20912
+   * CmdId: 22896
+   * Obf: HHEHOOAGELB
    * </pre>
    *
    * Protobuf type {@code GravenInnocenceEditCarveCombinationRsp}
@@ -74,7 +74,7 @@ public final class GravenInnocenceEditCarveCombinationRspOuterClass {
             case 0:
               done = true;
               break;
-            case 112: {
+            case 96: {
 
               retcode_ = input.readInt32();
               break;
@@ -111,10 +111,10 @@ public final class GravenInnocenceEditCarveCombinationRspOuterClass {
               emu.grasscutter.net.proto.GravenInnocenceEditCarveCombinationRspOuterClass.GravenInnocenceEditCarveCombinationRsp.class, emu.grasscutter.net.proto.GravenInnocenceEditCarveCombinationRspOuterClass.GravenInnocenceEditCarveCombinationRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 14;
+    public static final int RETCODE_FIELD_NUMBER = 12;
     private int retcode_;
     /**
-     * <code>int32 retcode = 14;</code>
+     * <code>int32 retcode = 12;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class GravenInnocenceEditCarveCombinationRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(14, retcode_);
+        output.writeInt32(12, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class GravenInnocenceEditCarveCombinationRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(14, retcode_);
+          .computeInt32Size(12, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class GravenInnocenceEditCarveCombinationRspOuterClass {
     }
     /**
      * <pre>
-     * Name: MBBJOIJCJGL
-     * CmdId: 20912
+     * CmdId: 22896
+     * Obf: HHEHOOAGELB
      * </pre>
      *
      * Protobuf type {@code GravenInnocenceEditCarveCombinationRsp}
@@ -431,7 +431,7 @@ public final class GravenInnocenceEditCarveCombinationRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 12;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class GravenInnocenceEditCarveCombinationRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 12;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class GravenInnocenceEditCarveCombinationRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -528,7 +528,7 @@ public final class GravenInnocenceEditCarveCombinationRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n,GravenInnocenceEditCarveCombinationRsp" +
       ".proto\"9\n&GravenInnocenceEditCarveCombin" +
-      "ationRsp\022\017\n\007retcode\030\016 \001(\005B\033\n\031emu.grasscu" +
+      "ationRsp\022\017\n\007retcode\030\014 \001(\005B\033\n\031emu.grasscu" +
       "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

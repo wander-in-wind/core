@@ -19,26 +19,26 @@ public final class PlayerConfirmMatchReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_agreed = 7;</code>
+     * <code>bool is_agreed = 14;</code>
      * @return The isAgreed.
      */
     boolean getIsAgreed();
 
     /**
-     * <code>.MatchType match_type = 11;</code>
+     * <code>.MatchType match_type = 9;</code>
      * @return The enum numeric value on the wire for matchType.
      */
     int getMatchTypeValue();
     /**
-     * <code>.MatchType match_type = 11;</code>
+     * <code>.MatchType match_type = 9;</code>
      * @return The matchType.
      */
     emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType getMatchType();
   }
   /**
    * <pre>
-   * Name: IGJPKACFAKC
-   * CmdId: 4182
+   * CmdId: 4157
+   * Obf: MMLHDBJNOEN
    * </pre>
    *
    * Protobuf type {@code PlayerConfirmMatchReq}
@@ -86,15 +86,15 @@ public final class PlayerConfirmMatchReqOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
-
-              isAgreed_ = input.readBool();
-              break;
-            }
-            case 88: {
+            case 72: {
               int rawValue = input.readEnum();
 
               matchType_ = rawValue;
+              break;
+            }
+            case 112: {
+
+              isAgreed_ = input.readBool();
               break;
             }
             default: {
@@ -129,10 +129,10 @@ public final class PlayerConfirmMatchReqOuterClass {
               emu.grasscutter.net.proto.PlayerConfirmMatchReqOuterClass.PlayerConfirmMatchReq.class, emu.grasscutter.net.proto.PlayerConfirmMatchReqOuterClass.PlayerConfirmMatchReq.Builder.class);
     }
 
-    public static final int IS_AGREED_FIELD_NUMBER = 7;
+    public static final int IS_AGREED_FIELD_NUMBER = 14;
     private boolean isAgreed_;
     /**
-     * <code>bool is_agreed = 7;</code>
+     * <code>bool is_agreed = 14;</code>
      * @return The isAgreed.
      */
     @java.lang.Override
@@ -140,17 +140,17 @@ public final class PlayerConfirmMatchReqOuterClass {
       return isAgreed_;
     }
 
-    public static final int MATCH_TYPE_FIELD_NUMBER = 11;
+    public static final int MATCH_TYPE_FIELD_NUMBER = 9;
     private int matchType_;
     /**
-     * <code>.MatchType match_type = 11;</code>
+     * <code>.MatchType match_type = 9;</code>
      * @return The enum numeric value on the wire for matchType.
      */
     @java.lang.Override public int getMatchTypeValue() {
       return matchType_;
     }
     /**
-     * <code>.MatchType match_type = 11;</code>
+     * <code>.MatchType match_type = 9;</code>
      * @return The matchType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType getMatchType() {
@@ -173,11 +173,11 @@ public final class PlayerConfirmMatchReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isAgreed_ != false) {
-        output.writeBool(7, isAgreed_);
-      }
       if (matchType_ != emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.MATCH_TYPE_NONE.getNumber()) {
-        output.writeEnum(11, matchType_);
+        output.writeEnum(9, matchType_);
+      }
+      if (isAgreed_ != false) {
+        output.writeBool(14, isAgreed_);
       }
       unknownFields.writeTo(output);
     }
@@ -188,13 +188,13 @@ public final class PlayerConfirmMatchReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isAgreed_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isAgreed_);
-      }
       if (matchType_ != emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.MATCH_TYPE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(11, matchType_);
+          .computeEnumSize(9, matchType_);
+      }
+      if (isAgreed_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(14, isAgreed_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -327,8 +327,8 @@ public final class PlayerConfirmMatchReqOuterClass {
     }
     /**
      * <pre>
-     * Name: IGJPKACFAKC
-     * CmdId: 4182
+     * CmdId: 4157
+     * Obf: MMLHDBJNOEN
      * </pre>
      *
      * Protobuf type {@code PlayerConfirmMatchReq}
@@ -485,7 +485,7 @@ public final class PlayerConfirmMatchReqOuterClass {
 
       private boolean isAgreed_ ;
       /**
-       * <code>bool is_agreed = 7;</code>
+       * <code>bool is_agreed = 14;</code>
        * @return The isAgreed.
        */
       @java.lang.Override
@@ -493,7 +493,7 @@ public final class PlayerConfirmMatchReqOuterClass {
         return isAgreed_;
       }
       /**
-       * <code>bool is_agreed = 7;</code>
+       * <code>bool is_agreed = 14;</code>
        * @param value The isAgreed to set.
        * @return This builder for chaining.
        */
@@ -504,7 +504,7 @@ public final class PlayerConfirmMatchReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_agreed = 7;</code>
+       * <code>bool is_agreed = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsAgreed() {
@@ -516,14 +516,14 @@ public final class PlayerConfirmMatchReqOuterClass {
 
       private int matchType_ = 0;
       /**
-       * <code>.MatchType match_type = 11;</code>
+       * <code>.MatchType match_type = 9;</code>
        * @return The enum numeric value on the wire for matchType.
        */
       @java.lang.Override public int getMatchTypeValue() {
         return matchType_;
       }
       /**
-       * <code>.MatchType match_type = 11;</code>
+       * <code>.MatchType match_type = 9;</code>
        * @param value The enum numeric value on the wire for matchType to set.
        * @return This builder for chaining.
        */
@@ -534,7 +534,7 @@ public final class PlayerConfirmMatchReqOuterClass {
         return this;
       }
       /**
-       * <code>.MatchType match_type = 11;</code>
+       * <code>.MatchType match_type = 9;</code>
        * @return The matchType.
        */
       @java.lang.Override
@@ -544,7 +544,7 @@ public final class PlayerConfirmMatchReqOuterClass {
         return result == null ? emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.MatchType match_type = 11;</code>
+       * <code>.MatchType match_type = 9;</code>
        * @param value The matchType to set.
        * @return This builder for chaining.
        */
@@ -558,7 +558,7 @@ public final class PlayerConfirmMatchReqOuterClass {
         return this;
       }
       /**
-       * <code>.MatchType match_type = 11;</code>
+       * <code>.MatchType match_type = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearMatchType() {
@@ -636,7 +636,7 @@ public final class PlayerConfirmMatchReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033PlayerConfirmMatchReq.proto\032\017MatchType" +
       ".proto\"J\n\025PlayerConfirmMatchReq\022\021\n\tis_ag" +
-      "reed\030\007 \001(\010\022\036\n\nmatch_type\030\013 \001(\0162\n.MatchTy" +
+      "reed\030\016 \001(\010\022\036\n\nmatch_type\030\t \001(\0162\n.MatchTy" +
       "peB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

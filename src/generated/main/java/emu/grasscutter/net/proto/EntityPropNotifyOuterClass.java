@@ -53,15 +53,15 @@ public final class EntityPropNotifyOuterClass {
         int key);
 
     /**
-     * <code>uint32 entity_id = 15;</code>
+     * <code>uint32 entity_id = 2;</code>
      * @return The entityId.
      */
     int getEntityId();
   }
   /**
    * <pre>
-   * Name: ENHEBOIHJJO
-   * CmdId: 1267
+   * CmdId: 1275
+   * Obf: EPCKEHMDLNG
    * </pre>
    *
    * Protobuf type {@code EntityPropNotify}
@@ -109,6 +109,11 @@ public final class EntityPropNotifyOuterClass {
             case 0:
               done = true;
               break;
+            case 16: {
+
+              entityId_ = input.readUInt32();
+              break;
+            }
             case 42: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 propMap_ = com.google.protobuf.MapField.newMapField(
@@ -120,11 +125,6 @@ public final class EntityPropNotifyOuterClass {
                   PropMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
               propMap_.getMutableMap().put(
                   propMap__.getKey(), propMap__.getValue());
-              break;
-            }
-            case 120: {
-
-              entityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -252,10 +252,10 @@ public final class EntityPropNotifyOuterClass {
       return map.get(key);
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 15;
+    public static final int ENTITY_ID_FIELD_NUMBER = 2;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 15;</code>
+     * <code>uint32 entity_id = 2;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -277,15 +277,15 @@ public final class EntityPropNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (entityId_ != 0) {
+        output.writeUInt32(2, entityId_);
+      }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetPropMap(),
           PropMapDefaultEntryHolder.defaultEntry,
           5);
-      if (entityId_ != 0) {
-        output.writeUInt32(15, entityId_);
-      }
       unknownFields.writeTo(output);
     }
 
@@ -295,6 +295,10 @@ public final class EntityPropNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (entityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, entityId_);
+      }
       for (java.util.Map.Entry<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue> entry
            : internalGetPropMap().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue>
@@ -304,10 +308,6 @@ public final class EntityPropNotifyOuterClass {
             .build();
         size += com.google.protobuf.CodedOutputStream
             .computeMessageSize(5, propMap__);
-      }
-      if (entityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, entityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -442,8 +442,8 @@ public final class EntityPropNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: ENHEBOIHJJO
-     * CmdId: 1267
+     * CmdId: 1275
+     * Obf: EPCKEHMDLNG
      * </pre>
      *
      * Protobuf type {@code EntityPropNotify}
@@ -751,7 +751,7 @@ public final class EntityPropNotifyOuterClass {
 
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 15;</code>
+       * <code>uint32 entity_id = 2;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -759,7 +759,7 @@ public final class EntityPropNotifyOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 15;</code>
+       * <code>uint32 entity_id = 2;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -770,7 +770,7 @@ public final class EntityPropNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 15;</code>
+       * <code>uint32 entity_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
@@ -854,7 +854,7 @@ public final class EntityPropNotifyOuterClass {
       "\n\026EntityPropNotify.proto\032\017PropValue.prot" +
       "o\"\223\001\n\020EntityPropNotify\0220\n\010prop_map\030\005 \003(\013" +
       "2\036.EntityPropNotify.PropMapEntry\022\021\n\tenti" +
-      "ty_id\030\017 \001(\r\032:\n\014PropMapEntry\022\013\n\003key\030\001 \001(\r" +
+      "ty_id\030\002 \001(\r\032:\n\014PropMapEntry\022\013\n\003key\030\001 \001(\r" +
       "\022\031\n\005value\030\002 \001(\0132\n.PropValue:\0028\001B\033\n\031emu.g" +
       "rasscutter.net.protob\006proto3"
     };

@@ -19,33 +19,33 @@ public final class TeamChainRestartDungeonReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .TeamChainChooseTeamInfo team_info_list = 7;</code>
+     * <code>repeated .TeamChainChooseTeamInfo team_info_list = 9;</code>
      */
     java.util.List<emu.grasscutter.net.proto.TeamChainChooseTeamInfoOuterClass.TeamChainChooseTeamInfo> 
         getTeamInfoListList();
     /**
-     * <code>repeated .TeamChainChooseTeamInfo team_info_list = 7;</code>
+     * <code>repeated .TeamChainChooseTeamInfo team_info_list = 9;</code>
      */
     emu.grasscutter.net.proto.TeamChainChooseTeamInfoOuterClass.TeamChainChooseTeamInfo getTeamInfoList(int index);
     /**
-     * <code>repeated .TeamChainChooseTeamInfo team_info_list = 7;</code>
+     * <code>repeated .TeamChainChooseTeamInfo team_info_list = 9;</code>
      */
     int getTeamInfoListCount();
     /**
-     * <code>repeated .TeamChainChooseTeamInfo team_info_list = 7;</code>
+     * <code>repeated .TeamChainChooseTeamInfo team_info_list = 9;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.TeamChainChooseTeamInfoOuterClass.TeamChainChooseTeamInfoOrBuilder> 
         getTeamInfoListOrBuilderList();
     /**
-     * <code>repeated .TeamChainChooseTeamInfo team_info_list = 7;</code>
+     * <code>repeated .TeamChainChooseTeamInfo team_info_list = 9;</code>
      */
     emu.grasscutter.net.proto.TeamChainChooseTeamInfoOuterClass.TeamChainChooseTeamInfoOrBuilder getTeamInfoListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * Name: IFFDBELNGDA
-   * CmdId: 21278
+   * CmdId: 24341
+   * Obf: DAFIHNKHLII
    * </pre>
    *
    * Protobuf type {@code TeamChainRestartDungeonReq}
@@ -94,7 +94,7 @@ public final class TeamChainRestartDungeonReqOuterClass {
             case 0:
               done = true;
               break;
-            case 58: {
+            case 74: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 teamInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.TeamChainChooseTeamInfoOuterClass.TeamChainChooseTeamInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -138,17 +138,17 @@ public final class TeamChainRestartDungeonReqOuterClass {
               emu.grasscutter.net.proto.TeamChainRestartDungeonReqOuterClass.TeamChainRestartDungeonReq.class, emu.grasscutter.net.proto.TeamChainRestartDungeonReqOuterClass.TeamChainRestartDungeonReq.Builder.class);
     }
 
-    public static final int TEAM_INFO_LIST_FIELD_NUMBER = 7;
+    public static final int TEAM_INFO_LIST_FIELD_NUMBER = 9;
     private java.util.List<emu.grasscutter.net.proto.TeamChainChooseTeamInfoOuterClass.TeamChainChooseTeamInfo> teamInfoList_;
     /**
-     * <code>repeated .TeamChainChooseTeamInfo team_info_list = 7;</code>
+     * <code>repeated .TeamChainChooseTeamInfo team_info_list = 9;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.TeamChainChooseTeamInfoOuterClass.TeamChainChooseTeamInfo> getTeamInfoListList() {
       return teamInfoList_;
     }
     /**
-     * <code>repeated .TeamChainChooseTeamInfo team_info_list = 7;</code>
+     * <code>repeated .TeamChainChooseTeamInfo team_info_list = 9;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.TeamChainChooseTeamInfoOuterClass.TeamChainChooseTeamInfoOrBuilder> 
@@ -156,21 +156,21 @@ public final class TeamChainRestartDungeonReqOuterClass {
       return teamInfoList_;
     }
     /**
-     * <code>repeated .TeamChainChooseTeamInfo team_info_list = 7;</code>
+     * <code>repeated .TeamChainChooseTeamInfo team_info_list = 9;</code>
      */
     @java.lang.Override
     public int getTeamInfoListCount() {
       return teamInfoList_.size();
     }
     /**
-     * <code>repeated .TeamChainChooseTeamInfo team_info_list = 7;</code>
+     * <code>repeated .TeamChainChooseTeamInfo team_info_list = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.TeamChainChooseTeamInfoOuterClass.TeamChainChooseTeamInfo getTeamInfoList(int index) {
       return teamInfoList_.get(index);
     }
     /**
-     * <code>repeated .TeamChainChooseTeamInfo team_info_list = 7;</code>
+     * <code>repeated .TeamChainChooseTeamInfo team_info_list = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.TeamChainChooseTeamInfoOuterClass.TeamChainChooseTeamInfoOrBuilder getTeamInfoListOrBuilder(
@@ -193,7 +193,7 @@ public final class TeamChainRestartDungeonReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < teamInfoList_.size(); i++) {
-        output.writeMessage(7, teamInfoList_.get(i));
+        output.writeMessage(9, teamInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -206,7 +206,7 @@ public final class TeamChainRestartDungeonReqOuterClass {
       size = 0;
       for (int i = 0; i < teamInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, teamInfoList_.get(i));
+          .computeMessageSize(9, teamInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -337,8 +337,8 @@ public final class TeamChainRestartDungeonReqOuterClass {
     }
     /**
      * <pre>
-     * Name: IFFDBELNGDA
-     * CmdId: 21278
+     * CmdId: 24341
+     * Obf: DAFIHNKHLII
      * </pre>
      *
      * Protobuf type {@code TeamChainRestartDungeonReq}
@@ -538,7 +538,7 @@ public final class TeamChainRestartDungeonReqOuterClass {
           emu.grasscutter.net.proto.TeamChainChooseTeamInfoOuterClass.TeamChainChooseTeamInfo, emu.grasscutter.net.proto.TeamChainChooseTeamInfoOuterClass.TeamChainChooseTeamInfo.Builder, emu.grasscutter.net.proto.TeamChainChooseTeamInfoOuterClass.TeamChainChooseTeamInfoOrBuilder> teamInfoListBuilder_;
 
       /**
-       * <code>repeated .TeamChainChooseTeamInfo team_info_list = 7;</code>
+       * <code>repeated .TeamChainChooseTeamInfo team_info_list = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.TeamChainChooseTeamInfoOuterClass.TeamChainChooseTeamInfo> getTeamInfoListList() {
         if (teamInfoListBuilder_ == null) {
@@ -548,7 +548,7 @@ public final class TeamChainRestartDungeonReqOuterClass {
         }
       }
       /**
-       * <code>repeated .TeamChainChooseTeamInfo team_info_list = 7;</code>
+       * <code>repeated .TeamChainChooseTeamInfo team_info_list = 9;</code>
        */
       public int getTeamInfoListCount() {
         if (teamInfoListBuilder_ == null) {
@@ -558,7 +558,7 @@ public final class TeamChainRestartDungeonReqOuterClass {
         }
       }
       /**
-       * <code>repeated .TeamChainChooseTeamInfo team_info_list = 7;</code>
+       * <code>repeated .TeamChainChooseTeamInfo team_info_list = 9;</code>
        */
       public emu.grasscutter.net.proto.TeamChainChooseTeamInfoOuterClass.TeamChainChooseTeamInfo getTeamInfoList(int index) {
         if (teamInfoListBuilder_ == null) {
@@ -568,7 +568,7 @@ public final class TeamChainRestartDungeonReqOuterClass {
         }
       }
       /**
-       * <code>repeated .TeamChainChooseTeamInfo team_info_list = 7;</code>
+       * <code>repeated .TeamChainChooseTeamInfo team_info_list = 9;</code>
        */
       public Builder setTeamInfoList(
           int index, emu.grasscutter.net.proto.TeamChainChooseTeamInfoOuterClass.TeamChainChooseTeamInfo value) {
@@ -585,7 +585,7 @@ public final class TeamChainRestartDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TeamChainChooseTeamInfo team_info_list = 7;</code>
+       * <code>repeated .TeamChainChooseTeamInfo team_info_list = 9;</code>
        */
       public Builder setTeamInfoList(
           int index, emu.grasscutter.net.proto.TeamChainChooseTeamInfoOuterClass.TeamChainChooseTeamInfo.Builder builderForValue) {
@@ -599,7 +599,7 @@ public final class TeamChainRestartDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TeamChainChooseTeamInfo team_info_list = 7;</code>
+       * <code>repeated .TeamChainChooseTeamInfo team_info_list = 9;</code>
        */
       public Builder addTeamInfoList(emu.grasscutter.net.proto.TeamChainChooseTeamInfoOuterClass.TeamChainChooseTeamInfo value) {
         if (teamInfoListBuilder_ == null) {
@@ -615,7 +615,7 @@ public final class TeamChainRestartDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TeamChainChooseTeamInfo team_info_list = 7;</code>
+       * <code>repeated .TeamChainChooseTeamInfo team_info_list = 9;</code>
        */
       public Builder addTeamInfoList(
           int index, emu.grasscutter.net.proto.TeamChainChooseTeamInfoOuterClass.TeamChainChooseTeamInfo value) {
@@ -632,7 +632,7 @@ public final class TeamChainRestartDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TeamChainChooseTeamInfo team_info_list = 7;</code>
+       * <code>repeated .TeamChainChooseTeamInfo team_info_list = 9;</code>
        */
       public Builder addTeamInfoList(
           emu.grasscutter.net.proto.TeamChainChooseTeamInfoOuterClass.TeamChainChooseTeamInfo.Builder builderForValue) {
@@ -646,7 +646,7 @@ public final class TeamChainRestartDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TeamChainChooseTeamInfo team_info_list = 7;</code>
+       * <code>repeated .TeamChainChooseTeamInfo team_info_list = 9;</code>
        */
       public Builder addTeamInfoList(
           int index, emu.grasscutter.net.proto.TeamChainChooseTeamInfoOuterClass.TeamChainChooseTeamInfo.Builder builderForValue) {
@@ -660,7 +660,7 @@ public final class TeamChainRestartDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TeamChainChooseTeamInfo team_info_list = 7;</code>
+       * <code>repeated .TeamChainChooseTeamInfo team_info_list = 9;</code>
        */
       public Builder addAllTeamInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.TeamChainChooseTeamInfoOuterClass.TeamChainChooseTeamInfo> values) {
@@ -675,7 +675,7 @@ public final class TeamChainRestartDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TeamChainChooseTeamInfo team_info_list = 7;</code>
+       * <code>repeated .TeamChainChooseTeamInfo team_info_list = 9;</code>
        */
       public Builder clearTeamInfoList() {
         if (teamInfoListBuilder_ == null) {
@@ -688,7 +688,7 @@ public final class TeamChainRestartDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TeamChainChooseTeamInfo team_info_list = 7;</code>
+       * <code>repeated .TeamChainChooseTeamInfo team_info_list = 9;</code>
        */
       public Builder removeTeamInfoList(int index) {
         if (teamInfoListBuilder_ == null) {
@@ -701,14 +701,14 @@ public final class TeamChainRestartDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TeamChainChooseTeamInfo team_info_list = 7;</code>
+       * <code>repeated .TeamChainChooseTeamInfo team_info_list = 9;</code>
        */
       public emu.grasscutter.net.proto.TeamChainChooseTeamInfoOuterClass.TeamChainChooseTeamInfo.Builder getTeamInfoListBuilder(
           int index) {
         return getTeamInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .TeamChainChooseTeamInfo team_info_list = 7;</code>
+       * <code>repeated .TeamChainChooseTeamInfo team_info_list = 9;</code>
        */
       public emu.grasscutter.net.proto.TeamChainChooseTeamInfoOuterClass.TeamChainChooseTeamInfoOrBuilder getTeamInfoListOrBuilder(
           int index) {
@@ -718,7 +718,7 @@ public final class TeamChainRestartDungeonReqOuterClass {
         }
       }
       /**
-       * <code>repeated .TeamChainChooseTeamInfo team_info_list = 7;</code>
+       * <code>repeated .TeamChainChooseTeamInfo team_info_list = 9;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.TeamChainChooseTeamInfoOuterClass.TeamChainChooseTeamInfoOrBuilder> 
            getTeamInfoListOrBuilderList() {
@@ -729,14 +729,14 @@ public final class TeamChainRestartDungeonReqOuterClass {
         }
       }
       /**
-       * <code>repeated .TeamChainChooseTeamInfo team_info_list = 7;</code>
+       * <code>repeated .TeamChainChooseTeamInfo team_info_list = 9;</code>
        */
       public emu.grasscutter.net.proto.TeamChainChooseTeamInfoOuterClass.TeamChainChooseTeamInfo.Builder addTeamInfoListBuilder() {
         return getTeamInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.TeamChainChooseTeamInfoOuterClass.TeamChainChooseTeamInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .TeamChainChooseTeamInfo team_info_list = 7;</code>
+       * <code>repeated .TeamChainChooseTeamInfo team_info_list = 9;</code>
        */
       public emu.grasscutter.net.proto.TeamChainChooseTeamInfoOuterClass.TeamChainChooseTeamInfo.Builder addTeamInfoListBuilder(
           int index) {
@@ -744,7 +744,7 @@ public final class TeamChainRestartDungeonReqOuterClass {
             index, emu.grasscutter.net.proto.TeamChainChooseTeamInfoOuterClass.TeamChainChooseTeamInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .TeamChainChooseTeamInfo team_info_list = 7;</code>
+       * <code>repeated .TeamChainChooseTeamInfo team_info_list = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.TeamChainChooseTeamInfoOuterClass.TeamChainChooseTeamInfo.Builder> 
            getTeamInfoListBuilderList() {
@@ -833,7 +833,7 @@ public final class TeamChainRestartDungeonReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n TeamChainRestartDungeonReq.proto\032\035Team" +
       "ChainChooseTeamInfo.proto\"N\n\032TeamChainRe" +
-      "startDungeonReq\0220\n\016team_info_list\030\007 \003(\0132" +
+      "startDungeonReq\0220\n\016team_info_list\030\t \003(\0132" +
       "\030.TeamChainChooseTeamInfoB\033\n\031emu.grasscu" +
       "tter.net.protob\006proto3"
     };

@@ -16,7 +16,7 @@ public final class CustomDungeonBanTypeOuterClass {
   }
   /**
    * <pre>
-   * Name: FNBIFDNMDCH
+   * Obf: NHMOLNFKMJL
    * </pre>
    *
    * Protobuf enum {@code CustomDungeonBanType}

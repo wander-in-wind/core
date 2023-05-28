@@ -16,7 +16,7 @@ public final class GCGIntentionChangeTypeOuterClass {
   }
   /**
    * <pre>
-   * Name: OCBHBGFOOHK
+   * Obf: NLNPAPLIEDM
    * </pre>
    *
    * Protobuf enum {@code GCGIntentionChangeType}
@@ -24,24 +24,24 @@ public final class GCGIntentionChangeTypeOuterClass {
   public enum GCGIntentionChangeType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>GCG_INTENTION_CHANGE_TYPE_NONE = 0;</code>
+     * <code>GCG_INTENTION_CHANGE_NONE = 0;</code>
      */
-    GCG_INTENTION_CHANGE_TYPE_NONE(0),
+    GCG_INTENTION_CHANGE_NONE(0),
     /**
-     * <code>GCG_INTENTION_CHANGE_TYPE_RM = 1;</code>
+     * <code>GCG_INTENTION_CHANGE_RM = 1;</code>
      */
-    GCG_INTENTION_CHANGE_TYPE_RM(1),
+    GCG_INTENTION_CHANGE_RM(1),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>GCG_INTENTION_CHANGE_TYPE_NONE = 0;</code>
+     * <code>GCG_INTENTION_CHANGE_NONE = 0;</code>
      */
-    public static final int GCG_INTENTION_CHANGE_TYPE_NONE_VALUE = 0;
+    public static final int GCG_INTENTION_CHANGE_NONE_VALUE = 0;
     /**
-     * <code>GCG_INTENTION_CHANGE_TYPE_RM = 1;</code>
+     * <code>GCG_INTENTION_CHANGE_RM = 1;</code>
      */
-    public static final int GCG_INTENTION_CHANGE_TYPE_RM_VALUE = 1;
+    public static final int GCG_INTENTION_CHANGE_RM_VALUE = 1;
 
 
     public final int getNumber() {
@@ -68,8 +68,8 @@ public final class GCGIntentionChangeTypeOuterClass {
      */
     public static GCGIntentionChangeType forNumber(int value) {
       switch (value) {
-        case 0: return GCG_INTENTION_CHANGE_TYPE_NONE;
-        case 1: return GCG_INTENTION_CHANGE_TYPE_RM;
+        case 0: return GCG_INTENTION_CHANGE_NONE;
+        case 1: return GCG_INTENTION_CHANGE_RM;
         default: return null;
       }
     }
@@ -135,11 +135,10 @@ public final class GCGIntentionChangeTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034GCGIntentionChangeType.proto*^\n\026GCGInt" +
-      "entionChangeType\022\"\n\036GCG_INTENTION_CHANGE" +
-      "_TYPE_NONE\020\000\022 \n\034GCG_INTENTION_CHANGE_TYP" +
-      "E_RM\020\001B\033\n\031emu.grasscutter.net.protob\006pro" +
-      "to3"
+      "\n\034GCGIntentionChangeType.proto*T\n\026GCGInt" +
+      "entionChangeType\022\035\n\031GCG_INTENTION_CHANGE" +
+      "_NONE\020\000\022\033\n\027GCG_INTENTION_CHANGE_RM\020\001B\033\n\031" +
+      "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

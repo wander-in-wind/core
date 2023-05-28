@@ -19,15 +19,15 @@ public final class TreasureMapCurrencyNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 currency_num = 3;</code>
+     * <code>uint32 currency_num = 2;</code>
      * @return The currencyNum.
      */
     int getCurrencyNum();
   }
   /**
    * <pre>
-   * Name: FEDJFKEGAKM
-   * CmdId: 2046
+   * CmdId: 2060
+   * Obf: KLFPMMBEBEB
    * </pre>
    *
    * Protobuf type {@code TreasureMapCurrencyNotify}
@@ -74,7 +74,7 @@ public final class TreasureMapCurrencyNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 16: {
 
               currencyNum_ = input.readUInt32();
               break;
@@ -111,10 +111,10 @@ public final class TreasureMapCurrencyNotifyOuterClass {
               emu.grasscutter.net.proto.TreasureMapCurrencyNotifyOuterClass.TreasureMapCurrencyNotify.class, emu.grasscutter.net.proto.TreasureMapCurrencyNotifyOuterClass.TreasureMapCurrencyNotify.Builder.class);
     }
 
-    public static final int CURRENCY_NUM_FIELD_NUMBER = 3;
+    public static final int CURRENCY_NUM_FIELD_NUMBER = 2;
     private int currencyNum_;
     /**
-     * <code>uint32 currency_num = 3;</code>
+     * <code>uint32 currency_num = 2;</code>
      * @return The currencyNum.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class TreasureMapCurrencyNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (currencyNum_ != 0) {
-        output.writeUInt32(3, currencyNum_);
+        output.writeUInt32(2, currencyNum_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class TreasureMapCurrencyNotifyOuterClass {
       size = 0;
       if (currencyNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, currencyNum_);
+          .computeUInt32Size(2, currencyNum_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class TreasureMapCurrencyNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: FEDJFKEGAKM
-     * CmdId: 2046
+     * CmdId: 2060
+     * Obf: KLFPMMBEBEB
      * </pre>
      *
      * Protobuf type {@code TreasureMapCurrencyNotify}
@@ -431,7 +431,7 @@ public final class TreasureMapCurrencyNotifyOuterClass {
 
       private int currencyNum_ ;
       /**
-       * <code>uint32 currency_num = 3;</code>
+       * <code>uint32 currency_num = 2;</code>
        * @return The currencyNum.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class TreasureMapCurrencyNotifyOuterClass {
         return currencyNum_;
       }
       /**
-       * <code>uint32 currency_num = 3;</code>
+       * <code>uint32 currency_num = 2;</code>
        * @param value The currencyNum to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class TreasureMapCurrencyNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 currency_num = 3;</code>
+       * <code>uint32 currency_num = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearCurrencyNum() {
@@ -527,7 +527,7 @@ public final class TreasureMapCurrencyNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037TreasureMapCurrencyNotify.proto\"1\n\031Tre" +
-      "asureMapCurrencyNotify\022\024\n\014currency_num\030\003" +
+      "asureMapCurrencyNotify\022\024\n\014currency_num\030\002" +
       " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
     };

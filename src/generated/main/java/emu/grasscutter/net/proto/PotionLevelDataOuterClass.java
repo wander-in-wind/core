@@ -25,26 +25,26 @@ public final class PotionLevelDataOuterClass {
     int getLevelId();
 
     /**
-     * <code>uint32 difficulty_level = 5;</code>
+     * <code>uint32 difficulty_level = 11;</code>
      * @return The difficultyLevel.
      */
     int getDifficultyLevel();
 
     /**
-     * <code>uint32 mode_id = 2;</code>
+     * <code>uint32 mode_id = 9;</code>
      * @return The modeId.
      */
     int getModeId();
 
     /**
-     * <code>uint32 score = 15;</code>
+     * <code>uint32 score = 7;</code>
      * @return The score.
      */
     int getScore();
   }
   /**
    * <pre>
-   * Name: EDCGEBDOJLH
+   * Obf: BAAOONGJGNO
    * </pre>
    *
    * Protobuf type {@code PotionLevelData}
@@ -91,12 +91,17 @@ public final class PotionLevelDataOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 56: {
+
+              score_ = input.readUInt32();
+              break;
+            }
+            case 72: {
 
               modeId_ = input.readUInt32();
               break;
             }
-            case 40: {
+            case 88: {
 
               difficultyLevel_ = input.readUInt32();
               break;
@@ -104,11 +109,6 @@ public final class PotionLevelDataOuterClass {
             case 112: {
 
               levelId_ = input.readUInt32();
-              break;
-            }
-            case 120: {
-
-              score_ = input.readUInt32();
               break;
             }
             default: {
@@ -154,10 +154,10 @@ public final class PotionLevelDataOuterClass {
       return levelId_;
     }
 
-    public static final int DIFFICULTY_LEVEL_FIELD_NUMBER = 5;
+    public static final int DIFFICULTY_LEVEL_FIELD_NUMBER = 11;
     private int difficultyLevel_;
     /**
-     * <code>uint32 difficulty_level = 5;</code>
+     * <code>uint32 difficulty_level = 11;</code>
      * @return The difficultyLevel.
      */
     @java.lang.Override
@@ -165,10 +165,10 @@ public final class PotionLevelDataOuterClass {
       return difficultyLevel_;
     }
 
-    public static final int MODE_ID_FIELD_NUMBER = 2;
+    public static final int MODE_ID_FIELD_NUMBER = 9;
     private int modeId_;
     /**
-     * <code>uint32 mode_id = 2;</code>
+     * <code>uint32 mode_id = 9;</code>
      * @return The modeId.
      */
     @java.lang.Override
@@ -176,10 +176,10 @@ public final class PotionLevelDataOuterClass {
       return modeId_;
     }
 
-    public static final int SCORE_FIELD_NUMBER = 15;
+    public static final int SCORE_FIELD_NUMBER = 7;
     private int score_;
     /**
-     * <code>uint32 score = 15;</code>
+     * <code>uint32 score = 7;</code>
      * @return The score.
      */
     @java.lang.Override
@@ -201,17 +201,17 @@ public final class PotionLevelDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (score_ != 0) {
+        output.writeUInt32(7, score_);
+      }
       if (modeId_ != 0) {
-        output.writeUInt32(2, modeId_);
+        output.writeUInt32(9, modeId_);
       }
       if (difficultyLevel_ != 0) {
-        output.writeUInt32(5, difficultyLevel_);
+        output.writeUInt32(11, difficultyLevel_);
       }
       if (levelId_ != 0) {
         output.writeUInt32(14, levelId_);
-      }
-      if (score_ != 0) {
-        output.writeUInt32(15, score_);
       }
       unknownFields.writeTo(output);
     }
@@ -222,21 +222,21 @@ public final class PotionLevelDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (score_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, score_);
+      }
       if (modeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, modeId_);
+          .computeUInt32Size(9, modeId_);
       }
       if (difficultyLevel_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, difficultyLevel_);
+          .computeUInt32Size(11, difficultyLevel_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(14, levelId_);
-      }
-      if (score_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, score_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -377,7 +377,7 @@ public final class PotionLevelDataOuterClass {
     }
     /**
      * <pre>
-     * Name: EDCGEBDOJLH
+     * Obf: BAAOONGJGNO
      * </pre>
      *
      * Protobuf type {@code PotionLevelData}
@@ -577,7 +577,7 @@ public final class PotionLevelDataOuterClass {
 
       private int difficultyLevel_ ;
       /**
-       * <code>uint32 difficulty_level = 5;</code>
+       * <code>uint32 difficulty_level = 11;</code>
        * @return The difficultyLevel.
        */
       @java.lang.Override
@@ -585,7 +585,7 @@ public final class PotionLevelDataOuterClass {
         return difficultyLevel_;
       }
       /**
-       * <code>uint32 difficulty_level = 5;</code>
+       * <code>uint32 difficulty_level = 11;</code>
        * @param value The difficultyLevel to set.
        * @return This builder for chaining.
        */
@@ -596,7 +596,7 @@ public final class PotionLevelDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficulty_level = 5;</code>
+       * <code>uint32 difficulty_level = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficultyLevel() {
@@ -608,7 +608,7 @@ public final class PotionLevelDataOuterClass {
 
       private int modeId_ ;
       /**
-       * <code>uint32 mode_id = 2;</code>
+       * <code>uint32 mode_id = 9;</code>
        * @return The modeId.
        */
       @java.lang.Override
@@ -616,7 +616,7 @@ public final class PotionLevelDataOuterClass {
         return modeId_;
       }
       /**
-       * <code>uint32 mode_id = 2;</code>
+       * <code>uint32 mode_id = 9;</code>
        * @param value The modeId to set.
        * @return This builder for chaining.
        */
@@ -627,7 +627,7 @@ public final class PotionLevelDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 mode_id = 2;</code>
+       * <code>uint32 mode_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearModeId() {
@@ -639,7 +639,7 @@ public final class PotionLevelDataOuterClass {
 
       private int score_ ;
       /**
-       * <code>uint32 score = 15;</code>
+       * <code>uint32 score = 7;</code>
        * @return The score.
        */
       @java.lang.Override
@@ -647,7 +647,7 @@ public final class PotionLevelDataOuterClass {
         return score_;
       }
       /**
-       * <code>uint32 score = 15;</code>
+       * <code>uint32 score = 7;</code>
        * @param value The score to set.
        * @return This builder for chaining.
        */
@@ -658,7 +658,7 @@ public final class PotionLevelDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 score = 15;</code>
+       * <code>uint32 score = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearScore() {
@@ -736,7 +736,7 @@ public final class PotionLevelDataOuterClass {
     java.lang.String[] descriptorData = {
       "\n\025PotionLevelData.proto\"]\n\017PotionLevelDa" +
       "ta\022\020\n\010level_id\030\016 \001(\r\022\030\n\020difficulty_level" +
-      "\030\005 \001(\r\022\017\n\007mode_id\030\002 \001(\r\022\r\n\005score\030\017 \001(\rB\033" +
+      "\030\013 \001(\r\022\017\n\007mode_id\030\t \001(\r\022\r\n\005score\030\007 \001(\rB\033" +
       "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

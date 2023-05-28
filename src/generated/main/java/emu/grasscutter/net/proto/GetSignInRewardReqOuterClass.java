@@ -19,21 +19,21 @@ public final class GetSignInRewardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 reward_day = 13;</code>
+     * <code>uint32 reward_day = 7;</code>
      * @return The rewardDay.
      */
     int getRewardDay();
 
     /**
-     * <code>uint32 schedule_id = 4;</code>
+     * <code>uint32 schedule_id = 15;</code>
      * @return The scheduleId.
      */
     int getScheduleId();
   }
   /**
    * <pre>
-   * Name: CFIBLMHDOOB
-   * CmdId: 2514
+   * CmdId: 2555
+   * Obf: FNEBDDNALAP
    * </pre>
    *
    * Protobuf type {@code GetSignInRewardReq}
@@ -80,14 +80,14 @@ public final class GetSignInRewardReqOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
-
-              scheduleId_ = input.readUInt32();
-              break;
-            }
-            case 104: {
+            case 56: {
 
               rewardDay_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              scheduleId_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,10 +122,10 @@ public final class GetSignInRewardReqOuterClass {
               emu.grasscutter.net.proto.GetSignInRewardReqOuterClass.GetSignInRewardReq.class, emu.grasscutter.net.proto.GetSignInRewardReqOuterClass.GetSignInRewardReq.Builder.class);
     }
 
-    public static final int REWARD_DAY_FIELD_NUMBER = 13;
+    public static final int REWARD_DAY_FIELD_NUMBER = 7;
     private int rewardDay_;
     /**
-     * <code>uint32 reward_day = 13;</code>
+     * <code>uint32 reward_day = 7;</code>
      * @return The rewardDay.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class GetSignInRewardReqOuterClass {
       return rewardDay_;
     }
 
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 4;
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 15;
     private int scheduleId_;
     /**
-     * <code>uint32 schedule_id = 4;</code>
+     * <code>uint32 schedule_id = 15;</code>
      * @return The scheduleId.
      */
     @java.lang.Override
@@ -158,11 +158,11 @@ public final class GetSignInRewardReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (scheduleId_ != 0) {
-        output.writeUInt32(4, scheduleId_);
-      }
       if (rewardDay_ != 0) {
-        output.writeUInt32(13, rewardDay_);
+        output.writeUInt32(7, rewardDay_);
+      }
+      if (scheduleId_ != 0) {
+        output.writeUInt32(15, scheduleId_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class GetSignInRewardReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (scheduleId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, scheduleId_);
-      }
       if (rewardDay_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, rewardDay_);
+          .computeUInt32Size(7, rewardDay_);
+      }
+      if (scheduleId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, scheduleId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class GetSignInRewardReqOuterClass {
     }
     /**
      * <pre>
-     * Name: CFIBLMHDOOB
-     * CmdId: 2514
+     * CmdId: 2555
+     * Obf: FNEBDDNALAP
      * </pre>
      *
      * Protobuf type {@code GetSignInRewardReq}
@@ -470,7 +470,7 @@ public final class GetSignInRewardReqOuterClass {
 
       private int rewardDay_ ;
       /**
-       * <code>uint32 reward_day = 13;</code>
+       * <code>uint32 reward_day = 7;</code>
        * @return The rewardDay.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class GetSignInRewardReqOuterClass {
         return rewardDay_;
       }
       /**
-       * <code>uint32 reward_day = 13;</code>
+       * <code>uint32 reward_day = 7;</code>
        * @param value The rewardDay to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class GetSignInRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 reward_day = 13;</code>
+       * <code>uint32 reward_day = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearRewardDay() {
@@ -501,7 +501,7 @@ public final class GetSignInRewardReqOuterClass {
 
       private int scheduleId_ ;
       /**
-       * <code>uint32 schedule_id = 4;</code>
+       * <code>uint32 schedule_id = 15;</code>
        * @return The scheduleId.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class GetSignInRewardReqOuterClass {
         return scheduleId_;
       }
       /**
-       * <code>uint32 schedule_id = 4;</code>
+       * <code>uint32 schedule_id = 15;</code>
        * @param value The scheduleId to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class GetSignInRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 schedule_id = 4;</code>
+       * <code>uint32 schedule_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearScheduleId() {
@@ -597,8 +597,8 @@ public final class GetSignInRewardReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030GetSignInRewardReq.proto\"=\n\022GetSignInR" +
-      "ewardReq\022\022\n\nreward_day\030\r \001(\r\022\023\n\013schedule" +
-      "_id\030\004 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
+      "ewardReq\022\022\n\nreward_day\030\007 \001(\r\022\023\n\013schedule" +
+      "_id\030\017 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
       "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

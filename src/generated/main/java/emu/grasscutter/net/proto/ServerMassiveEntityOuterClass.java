@@ -97,7 +97,7 @@ public final class ServerMassiveEntityOuterClass {
   }
   /**
    * <pre>
-   * Name: LFOHOPALPFM
+   * Obf: NIMIKLAIICO
    * </pre>
    *
    * Protobuf type {@code ServerMassiveEntity}
@@ -690,7 +690,7 @@ public final class ServerMassiveEntityOuterClass {
     }
     /**
      * <pre>
-     * Name: LFOHOPALPFM
+     * Obf: NIMIKLAIICO
      * </pre>
      *
      * Protobuf type {@code ServerMassiveEntity}
@@ -1563,9 +1563,9 @@ public final class ServerMassiveEntityOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\031ServerMassiveEntity.proto\032\024MassiveBoxI" +
-      "nfo.proto\032\026MassiveGrassInfo.proto\032\026Massi" +
-      "veWaterInfo.proto\"\202\002\n\023ServerMassiveEntit" +
+      "\n\031ServerMassiveEntity.proto\032\026MassiveWate" +
+      "rInfo.proto\032\026MassiveGrassInfo.proto\032\024Mas" +
+      "siveBoxInfo.proto\"\202\002\n\023ServerMassiveEntit" +
       "y\022\023\n\013entity_type\030\001 \001(\r\022\021\n\tconfig_id\030\002 \001(" +
       "\r\022\022\n\nruntime_id\030\003 \001(\r\022\031\n\021authority_peer_" +
       "id\030\004 \001(\r\022\016\n\006obj_id\030\005 \001(\003\022\'\n\nwater_info\030\006" +
@@ -1577,9 +1577,9 @@ public final class ServerMassiveEntityOuterClass {
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.MassiveBoxInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.MassiveGrassInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.MassiveWaterInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.MassiveGrassInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.MassiveBoxInfoOuterClass.getDescriptor(),
         });
     internal_static_ServerMassiveEntity_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -1587,9 +1587,9 @@ public final class ServerMassiveEntityOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ServerMassiveEntity_descriptor,
         new java.lang.String[] { "EntityType", "ConfigId", "RuntimeId", "AuthorityPeerId", "ObjId", "WaterInfo", "GrassInfo", "BoxInfo", "EntityInfo", });
-    emu.grasscutter.net.proto.MassiveBoxInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.MassiveGrassInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.MassiveWaterInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.MassiveGrassInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.MassiveBoxInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

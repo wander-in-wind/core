@@ -20,8 +20,8 @@ public final class TowerSurrenderReqOuterClass {
   }
   /**
    * <pre>
-   * Name: MGGEALNFNKK
-   * CmdId: 2419
+   * CmdId: 2406
+   * Obf: NBNMBEACMAD
    * </pre>
    *
    * Protobuf type {@code TowerSurrenderReq}
@@ -246,8 +246,8 @@ public final class TowerSurrenderReqOuterClass {
     }
     /**
      * <pre>
-     * Name: MGGEALNFNKK
-     * CmdId: 2419
+     * CmdId: 2406
+     * Obf: NBNMBEACMAD
      * </pre>
      *
      * Protobuf type {@code TowerSurrenderReq}

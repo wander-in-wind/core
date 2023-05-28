@@ -19,32 +19,32 @@ public final class RegionalPlayVarOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>float AAEIFDGIILN = 5;</code>
-     * @return The aAEIFDGIILN.
+     * <code>float JNLLFMIHDAL = 8;</code>
+     * @return The jNLLFMIHDAL.
      */
-    float getAAEIFDGIILN();
+    float getJNLLFMIHDAL();
 
     /**
-     * <code>float FKNGODBDLME = 10;</code>
-     * @return The fKNGODBDLME.
+     * <code>float LAKGMEOKBKJ = 6;</code>
+     * @return The lAKGMEOKBKJ.
      */
-    float getFKNGODBDLME();
+    float getLAKGMEOKBKJ();
 
     /**
-     * <code>uint32 type = 11;</code>
+     * <code>uint32 type = 14;</code>
      * @return The type.
      */
     int getType();
 
     /**
-     * <code>float value = 4;</code>
+     * <code>float value = 5;</code>
      * @return The value.
      */
     float getValue();
   }
   /**
    * <pre>
-   * Name: GICCALFNADA
+   * Obf: NDNEODLPIPC
    * </pre>
    *
    * Protobuf type {@code RegionalPlayVar}
@@ -91,22 +91,22 @@ public final class RegionalPlayVarOuterClass {
             case 0:
               done = true;
               break;
-            case 37: {
+            case 45: {
 
               value_ = input.readFloat();
               break;
             }
-            case 45: {
+            case 53: {
 
-              aAEIFDGIILN_ = input.readFloat();
+              lAKGMEOKBKJ_ = input.readFloat();
               break;
             }
-            case 85: {
+            case 69: {
 
-              fKNGODBDLME_ = input.readFloat();
+              jNLLFMIHDAL_ = input.readFloat();
               break;
             }
-            case 88: {
+            case 112: {
 
               type_ = input.readUInt32();
               break;
@@ -143,32 +143,32 @@ public final class RegionalPlayVarOuterClass {
               emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar.class, emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar.Builder.class);
     }
 
-    public static final int AAEIFDGIILN_FIELD_NUMBER = 5;
-    private float aAEIFDGIILN_;
+    public static final int JNLLFMIHDAL_FIELD_NUMBER = 8;
+    private float jNLLFMIHDAL_;
     /**
-     * <code>float AAEIFDGIILN = 5;</code>
-     * @return The aAEIFDGIILN.
+     * <code>float JNLLFMIHDAL = 8;</code>
+     * @return The jNLLFMIHDAL.
      */
     @java.lang.Override
-    public float getAAEIFDGIILN() {
-      return aAEIFDGIILN_;
+    public float getJNLLFMIHDAL() {
+      return jNLLFMIHDAL_;
     }
 
-    public static final int FKNGODBDLME_FIELD_NUMBER = 10;
-    private float fKNGODBDLME_;
+    public static final int LAKGMEOKBKJ_FIELD_NUMBER = 6;
+    private float lAKGMEOKBKJ_;
     /**
-     * <code>float FKNGODBDLME = 10;</code>
-     * @return The fKNGODBDLME.
+     * <code>float LAKGMEOKBKJ = 6;</code>
+     * @return The lAKGMEOKBKJ.
      */
     @java.lang.Override
-    public float getFKNGODBDLME() {
-      return fKNGODBDLME_;
+    public float getLAKGMEOKBKJ() {
+      return lAKGMEOKBKJ_;
     }
 
-    public static final int TYPE_FIELD_NUMBER = 11;
+    public static final int TYPE_FIELD_NUMBER = 14;
     private int type_;
     /**
-     * <code>uint32 type = 11;</code>
+     * <code>uint32 type = 14;</code>
      * @return The type.
      */
     @java.lang.Override
@@ -176,10 +176,10 @@ public final class RegionalPlayVarOuterClass {
       return type_;
     }
 
-    public static final int VALUE_FIELD_NUMBER = 4;
+    public static final int VALUE_FIELD_NUMBER = 5;
     private float value_;
     /**
-     * <code>float value = 4;</code>
+     * <code>float value = 5;</code>
      * @return The value.
      */
     @java.lang.Override
@@ -202,16 +202,16 @@ public final class RegionalPlayVarOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (value_ != 0F) {
-        output.writeFloat(4, value_);
+        output.writeFloat(5, value_);
       }
-      if (aAEIFDGIILN_ != 0F) {
-        output.writeFloat(5, aAEIFDGIILN_);
+      if (lAKGMEOKBKJ_ != 0F) {
+        output.writeFloat(6, lAKGMEOKBKJ_);
       }
-      if (fKNGODBDLME_ != 0F) {
-        output.writeFloat(10, fKNGODBDLME_);
+      if (jNLLFMIHDAL_ != 0F) {
+        output.writeFloat(8, jNLLFMIHDAL_);
       }
       if (type_ != 0) {
-        output.writeUInt32(11, type_);
+        output.writeUInt32(14, type_);
       }
       unknownFields.writeTo(output);
     }
@@ -224,19 +224,19 @@ public final class RegionalPlayVarOuterClass {
       size = 0;
       if (value_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(4, value_);
+          .computeFloatSize(5, value_);
       }
-      if (aAEIFDGIILN_ != 0F) {
+      if (lAKGMEOKBKJ_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(5, aAEIFDGIILN_);
+          .computeFloatSize(6, lAKGMEOKBKJ_);
       }
-      if (fKNGODBDLME_ != 0F) {
+      if (jNLLFMIHDAL_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(10, fKNGODBDLME_);
+          .computeFloatSize(8, jNLLFMIHDAL_);
       }
       if (type_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, type_);
+          .computeUInt32Size(14, type_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -253,12 +253,12 @@ public final class RegionalPlayVarOuterClass {
       }
       emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar other = (emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar) obj;
 
-      if (java.lang.Float.floatToIntBits(getAAEIFDGIILN())
+      if (java.lang.Float.floatToIntBits(getJNLLFMIHDAL())
           != java.lang.Float.floatToIntBits(
-              other.getAAEIFDGIILN())) return false;
-      if (java.lang.Float.floatToIntBits(getFKNGODBDLME())
+              other.getJNLLFMIHDAL())) return false;
+      if (java.lang.Float.floatToIntBits(getLAKGMEOKBKJ())
           != java.lang.Float.floatToIntBits(
-              other.getFKNGODBDLME())) return false;
+              other.getLAKGMEOKBKJ())) return false;
       if (getType()
           != other.getType()) return false;
       if (java.lang.Float.floatToIntBits(getValue())
@@ -275,12 +275,12 @@ public final class RegionalPlayVarOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + AAEIFDGIILN_FIELD_NUMBER;
+      hash = (37 * hash) + JNLLFMIHDAL_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getAAEIFDGIILN());
-      hash = (37 * hash) + FKNGODBDLME_FIELD_NUMBER;
+          getJNLLFMIHDAL());
+      hash = (37 * hash) + LAKGMEOKBKJ_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getFKNGODBDLME());
+          getLAKGMEOKBKJ());
       hash = (37 * hash) + TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getType();
       hash = (37 * hash) + VALUE_FIELD_NUMBER;
@@ -383,7 +383,7 @@ public final class RegionalPlayVarOuterClass {
     }
     /**
      * <pre>
-     * Name: GICCALFNADA
+     * Obf: NDNEODLPIPC
      * </pre>
      *
      * Protobuf type {@code RegionalPlayVar}
@@ -423,9 +423,9 @@ public final class RegionalPlayVarOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        aAEIFDGIILN_ = 0F;
+        jNLLFMIHDAL_ = 0F;
 
-        fKNGODBDLME_ = 0F;
+        lAKGMEOKBKJ_ = 0F;
 
         type_ = 0;
 
@@ -457,8 +457,8 @@ public final class RegionalPlayVarOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar buildPartial() {
         emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar result = new emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar(this);
-        result.aAEIFDGIILN_ = aAEIFDGIILN_;
-        result.fKNGODBDLME_ = fKNGODBDLME_;
+        result.jNLLFMIHDAL_ = jNLLFMIHDAL_;
+        result.lAKGMEOKBKJ_ = lAKGMEOKBKJ_;
         result.type_ = type_;
         result.value_ = value_;
         onBuilt();
@@ -509,11 +509,11 @@ public final class RegionalPlayVarOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar other) {
         if (other == emu.grasscutter.net.proto.RegionalPlayVarOuterClass.RegionalPlayVar.getDefaultInstance()) return this;
-        if (other.getAAEIFDGIILN() != 0F) {
-          setAAEIFDGIILN(other.getAAEIFDGIILN());
+        if (other.getJNLLFMIHDAL() != 0F) {
+          setJNLLFMIHDAL(other.getJNLLFMIHDAL());
         }
-        if (other.getFKNGODBDLME() != 0F) {
-          setFKNGODBDLME(other.getFKNGODBDLME());
+        if (other.getLAKGMEOKBKJ() != 0F) {
+          setLAKGMEOKBKJ(other.getLAKGMEOKBKJ());
         }
         if (other.getType() != 0) {
           setType(other.getType());
@@ -550,71 +550,71 @@ public final class RegionalPlayVarOuterClass {
         return this;
       }
 
-      private float aAEIFDGIILN_ ;
+      private float jNLLFMIHDAL_ ;
       /**
-       * <code>float AAEIFDGIILN = 5;</code>
-       * @return The aAEIFDGIILN.
+       * <code>float JNLLFMIHDAL = 8;</code>
+       * @return The jNLLFMIHDAL.
        */
       @java.lang.Override
-      public float getAAEIFDGIILN() {
-        return aAEIFDGIILN_;
+      public float getJNLLFMIHDAL() {
+        return jNLLFMIHDAL_;
       }
       /**
-       * <code>float AAEIFDGIILN = 5;</code>
-       * @param value The aAEIFDGIILN to set.
+       * <code>float JNLLFMIHDAL = 8;</code>
+       * @param value The jNLLFMIHDAL to set.
        * @return This builder for chaining.
        */
-      public Builder setAAEIFDGIILN(float value) {
+      public Builder setJNLLFMIHDAL(float value) {
         
-        aAEIFDGIILN_ = value;
+        jNLLFMIHDAL_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float AAEIFDGIILN = 5;</code>
+       * <code>float JNLLFMIHDAL = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearAAEIFDGIILN() {
+      public Builder clearJNLLFMIHDAL() {
         
-        aAEIFDGIILN_ = 0F;
+        jNLLFMIHDAL_ = 0F;
         onChanged();
         return this;
       }
 
-      private float fKNGODBDLME_ ;
+      private float lAKGMEOKBKJ_ ;
       /**
-       * <code>float FKNGODBDLME = 10;</code>
-       * @return The fKNGODBDLME.
+       * <code>float LAKGMEOKBKJ = 6;</code>
+       * @return The lAKGMEOKBKJ.
        */
       @java.lang.Override
-      public float getFKNGODBDLME() {
-        return fKNGODBDLME_;
+      public float getLAKGMEOKBKJ() {
+        return lAKGMEOKBKJ_;
       }
       /**
-       * <code>float FKNGODBDLME = 10;</code>
-       * @param value The fKNGODBDLME to set.
+       * <code>float LAKGMEOKBKJ = 6;</code>
+       * @param value The lAKGMEOKBKJ to set.
        * @return This builder for chaining.
        */
-      public Builder setFKNGODBDLME(float value) {
+      public Builder setLAKGMEOKBKJ(float value) {
         
-        fKNGODBDLME_ = value;
+        lAKGMEOKBKJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float FKNGODBDLME = 10;</code>
+       * <code>float LAKGMEOKBKJ = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFKNGODBDLME() {
+      public Builder clearLAKGMEOKBKJ() {
         
-        fKNGODBDLME_ = 0F;
+        lAKGMEOKBKJ_ = 0F;
         onChanged();
         return this;
       }
 
       private int type_ ;
       /**
-       * <code>uint32 type = 11;</code>
+       * <code>uint32 type = 14;</code>
        * @return The type.
        */
       @java.lang.Override
@@ -622,7 +622,7 @@ public final class RegionalPlayVarOuterClass {
         return type_;
       }
       /**
-       * <code>uint32 type = 11;</code>
+       * <code>uint32 type = 14;</code>
        * @param value The type to set.
        * @return This builder for chaining.
        */
@@ -633,7 +633,7 @@ public final class RegionalPlayVarOuterClass {
         return this;
       }
       /**
-       * <code>uint32 type = 11;</code>
+       * <code>uint32 type = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearType() {
@@ -645,7 +645,7 @@ public final class RegionalPlayVarOuterClass {
 
       private float value_ ;
       /**
-       * <code>float value = 4;</code>
+       * <code>float value = 5;</code>
        * @return The value.
        */
       @java.lang.Override
@@ -653,7 +653,7 @@ public final class RegionalPlayVarOuterClass {
         return value_;
       }
       /**
-       * <code>float value = 4;</code>
+       * <code>float value = 5;</code>
        * @param value The value to set.
        * @return This builder for chaining.
        */
@@ -664,7 +664,7 @@ public final class RegionalPlayVarOuterClass {
         return this;
       }
       /**
-       * <code>float value = 4;</code>
+       * <code>float value = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearValue() {
@@ -741,8 +741,8 @@ public final class RegionalPlayVarOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025RegionalPlayVar.proto\"X\n\017RegionalPlayV" +
-      "ar\022\023\n\013AAEIFDGIILN\030\005 \001(\002\022\023\n\013FKNGODBDLME\030\n" +
-      " \001(\002\022\014\n\004type\030\013 \001(\r\022\r\n\005value\030\004 \001(\002B\033\n\031emu" +
+      "ar\022\023\n\013JNLLFMIHDAL\030\010 \001(\002\022\023\n\013LAKGMEOKBKJ\030\006" +
+      " \001(\002\022\014\n\004type\030\016 \001(\r\022\r\n\005value\030\005 \001(\002B\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -754,7 +754,7 @@ public final class RegionalPlayVarOuterClass {
     internal_static_RegionalPlayVar_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RegionalPlayVar_descriptor,
-        new java.lang.String[] { "AAEIFDGIILN", "FKNGODBDLME", "Type", "Value", });
+        new java.lang.String[] { "JNLLFMIHDAL", "LAKGMEOKBKJ", "Type", "Value", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

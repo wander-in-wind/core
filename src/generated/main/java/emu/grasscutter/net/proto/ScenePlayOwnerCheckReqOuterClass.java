@@ -19,21 +19,21 @@ public final class ScenePlayOwnerCheckReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_skip_match = 7;</code>
+     * <code>bool is_skip_match = 6;</code>
      * @return The isSkipMatch.
      */
     boolean getIsSkipMatch();
 
     /**
-     * <code>uint32 play_id = 10;</code>
+     * <code>uint32 play_id = 14;</code>
      * @return The playId.
      */
     int getPlayId();
   }
   /**
    * <pre>
-   * Name: HNNLFEIANCA
-   * CmdId: 4425
+   * CmdId: 4446
+   * Obf: NACNFJNMLLO
    * </pre>
    *
    * Protobuf type {@code ScenePlayOwnerCheckReq}
@@ -80,12 +80,12 @@ public final class ScenePlayOwnerCheckReqOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 48: {
 
               isSkipMatch_ = input.readBool();
               break;
             }
-            case 80: {
+            case 112: {
 
               playId_ = input.readUInt32();
               break;
@@ -122,10 +122,10 @@ public final class ScenePlayOwnerCheckReqOuterClass {
               emu.grasscutter.net.proto.ScenePlayOwnerCheckReqOuterClass.ScenePlayOwnerCheckReq.class, emu.grasscutter.net.proto.ScenePlayOwnerCheckReqOuterClass.ScenePlayOwnerCheckReq.Builder.class);
     }
 
-    public static final int IS_SKIP_MATCH_FIELD_NUMBER = 7;
+    public static final int IS_SKIP_MATCH_FIELD_NUMBER = 6;
     private boolean isSkipMatch_;
     /**
-     * <code>bool is_skip_match = 7;</code>
+     * <code>bool is_skip_match = 6;</code>
      * @return The isSkipMatch.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class ScenePlayOwnerCheckReqOuterClass {
       return isSkipMatch_;
     }
 
-    public static final int PLAY_ID_FIELD_NUMBER = 10;
+    public static final int PLAY_ID_FIELD_NUMBER = 14;
     private int playId_;
     /**
-     * <code>uint32 play_id = 10;</code>
+     * <code>uint32 play_id = 14;</code>
      * @return The playId.
      */
     @java.lang.Override
@@ -159,10 +159,10 @@ public final class ScenePlayOwnerCheckReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isSkipMatch_ != false) {
-        output.writeBool(7, isSkipMatch_);
+        output.writeBool(6, isSkipMatch_);
       }
       if (playId_ != 0) {
-        output.writeUInt32(10, playId_);
+        output.writeUInt32(14, playId_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +175,11 @@ public final class ScenePlayOwnerCheckReqOuterClass {
       size = 0;
       if (isSkipMatch_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isSkipMatch_);
+          .computeBoolSize(6, isSkipMatch_);
       }
       if (playId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, playId_);
+          .computeUInt32Size(14, playId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,8 +313,8 @@ public final class ScenePlayOwnerCheckReqOuterClass {
     }
     /**
      * <pre>
-     * Name: HNNLFEIANCA
-     * CmdId: 4425
+     * CmdId: 4446
+     * Obf: NACNFJNMLLO
      * </pre>
      *
      * Protobuf type {@code ScenePlayOwnerCheckReq}
@@ -471,7 +471,7 @@ public final class ScenePlayOwnerCheckReqOuterClass {
 
       private boolean isSkipMatch_ ;
       /**
-       * <code>bool is_skip_match = 7;</code>
+       * <code>bool is_skip_match = 6;</code>
        * @return The isSkipMatch.
        */
       @java.lang.Override
@@ -479,7 +479,7 @@ public final class ScenePlayOwnerCheckReqOuterClass {
         return isSkipMatch_;
       }
       /**
-       * <code>bool is_skip_match = 7;</code>
+       * <code>bool is_skip_match = 6;</code>
        * @param value The isSkipMatch to set.
        * @return This builder for chaining.
        */
@@ -490,7 +490,7 @@ public final class ScenePlayOwnerCheckReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_skip_match = 7;</code>
+       * <code>bool is_skip_match = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsSkipMatch() {
@@ -502,7 +502,7 @@ public final class ScenePlayOwnerCheckReqOuterClass {
 
       private int playId_ ;
       /**
-       * <code>uint32 play_id = 10;</code>
+       * <code>uint32 play_id = 14;</code>
        * @return The playId.
        */
       @java.lang.Override
@@ -510,7 +510,7 @@ public final class ScenePlayOwnerCheckReqOuterClass {
         return playId_;
       }
       /**
-       * <code>uint32 play_id = 10;</code>
+       * <code>uint32 play_id = 14;</code>
        * @param value The playId to set.
        * @return This builder for chaining.
        */
@@ -521,7 +521,7 @@ public final class ScenePlayOwnerCheckReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 play_id = 10;</code>
+       * <code>uint32 play_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayId() {
@@ -598,8 +598,8 @@ public final class ScenePlayOwnerCheckReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034ScenePlayOwnerCheckReq.proto\"@\n\026SceneP" +
-      "layOwnerCheckReq\022\025\n\ris_skip_match\030\007 \001(\010\022" +
-      "\017\n\007play_id\030\n \001(\rB\033\n\031emu.grasscutter.net." +
+      "layOwnerCheckReq\022\025\n\ris_skip_match\030\006 \001(\010\022" +
+      "\017\n\007play_id\030\016 \001(\rB\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

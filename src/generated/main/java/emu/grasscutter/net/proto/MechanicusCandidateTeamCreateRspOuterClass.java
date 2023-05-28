@@ -19,27 +19,27 @@ public final class MechanicusCandidateTeamCreateRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 difficult_level = 15;</code>
+     * <code>int32 retcode = 13;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
+
+    /**
+     * <code>uint32 difficult_level = 3;</code>
      * @return The difficultLevel.
      */
     int getDifficultLevel();
 
     /**
-     * <code>uint32 dungeon_id = 5;</code>
+     * <code>uint32 dungeon_id = 7;</code>
      * @return The dungeonId.
      */
     int getDungeonId();
-
-    /**
-     * <code>int32 retcode = 6;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
   }
   /**
    * <pre>
-   * Name: DJDIOACDGEA
-   * CmdId: 3927
+   * CmdId: 3916
+   * Obf: KPKKFLAAGNM
    * </pre>
    *
    * Protobuf type {@code MechanicusCandidateTeamCreateRsp}
@@ -86,19 +86,19 @@ public final class MechanicusCandidateTeamCreateRspOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 24: {
+
+              difficultLevel_ = input.readUInt32();
+              break;
+            }
+            case 56: {
 
               dungeonId_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 104: {
 
               retcode_ = input.readInt32();
-              break;
-            }
-            case 120: {
-
-              difficultLevel_ = input.readUInt32();
               break;
             }
             default: {
@@ -133,10 +133,21 @@ public final class MechanicusCandidateTeamCreateRspOuterClass {
               emu.grasscutter.net.proto.MechanicusCandidateTeamCreateRspOuterClass.MechanicusCandidateTeamCreateRsp.class, emu.grasscutter.net.proto.MechanicusCandidateTeamCreateRspOuterClass.MechanicusCandidateTeamCreateRsp.Builder.class);
     }
 
-    public static final int DIFFICULT_LEVEL_FIELD_NUMBER = 15;
+    public static final int RETCODE_FIELD_NUMBER = 13;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 13;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
+    public static final int DIFFICULT_LEVEL_FIELD_NUMBER = 3;
     private int difficultLevel_;
     /**
-     * <code>uint32 difficult_level = 15;</code>
+     * <code>uint32 difficult_level = 3;</code>
      * @return The difficultLevel.
      */
     @java.lang.Override
@@ -144,26 +155,15 @@ public final class MechanicusCandidateTeamCreateRspOuterClass {
       return difficultLevel_;
     }
 
-    public static final int DUNGEON_ID_FIELD_NUMBER = 5;
+    public static final int DUNGEON_ID_FIELD_NUMBER = 7;
     private int dungeonId_;
     /**
-     * <code>uint32 dungeon_id = 5;</code>
+     * <code>uint32 dungeon_id = 7;</code>
      * @return The dungeonId.
      */
     @java.lang.Override
     public int getDungeonId() {
       return dungeonId_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 6;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 6;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -180,14 +180,14 @@ public final class MechanicusCandidateTeamCreateRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (difficultLevel_ != 0) {
+        output.writeUInt32(3, difficultLevel_);
+      }
       if (dungeonId_ != 0) {
-        output.writeUInt32(5, dungeonId_);
+        output.writeUInt32(7, dungeonId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(6, retcode_);
-      }
-      if (difficultLevel_ != 0) {
-        output.writeUInt32(15, difficultLevel_);
+        output.writeInt32(13, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +198,17 @@ public final class MechanicusCandidateTeamCreateRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (difficultLevel_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, difficultLevel_);
+      }
       if (dungeonId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, dungeonId_);
+          .computeUInt32Size(7, dungeonId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(6, retcode_);
-      }
-      if (difficultLevel_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, difficultLevel_);
+          .computeInt32Size(13, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -225,12 +225,12 @@ public final class MechanicusCandidateTeamCreateRspOuterClass {
       }
       emu.grasscutter.net.proto.MechanicusCandidateTeamCreateRspOuterClass.MechanicusCandidateTeamCreateRsp other = (emu.grasscutter.net.proto.MechanicusCandidateTeamCreateRspOuterClass.MechanicusCandidateTeamCreateRsp) obj;
 
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (getDifficultLevel()
           != other.getDifficultLevel()) return false;
       if (getDungeonId()
           != other.getDungeonId()) return false;
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -242,12 +242,12 @@ public final class MechanicusCandidateTeamCreateRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + DIFFICULT_LEVEL_FIELD_NUMBER;
       hash = (53 * hash) + getDifficultLevel();
       hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
       hash = (53 * hash) + getDungeonId();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -345,8 +345,8 @@ public final class MechanicusCandidateTeamCreateRspOuterClass {
     }
     /**
      * <pre>
-     * Name: DJDIOACDGEA
-     * CmdId: 3927
+     * CmdId: 3916
+     * Obf: KPKKFLAAGNM
      * </pre>
      *
      * Protobuf type {@code MechanicusCandidateTeamCreateRsp}
@@ -386,11 +386,11 @@ public final class MechanicusCandidateTeamCreateRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        retcode_ = 0;
+
         difficultLevel_ = 0;
 
         dungeonId_ = 0;
-
-        retcode_ = 0;
 
         return this;
       }
@@ -418,9 +418,9 @@ public final class MechanicusCandidateTeamCreateRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.MechanicusCandidateTeamCreateRspOuterClass.MechanicusCandidateTeamCreateRsp buildPartial() {
         emu.grasscutter.net.proto.MechanicusCandidateTeamCreateRspOuterClass.MechanicusCandidateTeamCreateRsp result = new emu.grasscutter.net.proto.MechanicusCandidateTeamCreateRspOuterClass.MechanicusCandidateTeamCreateRsp(this);
+        result.retcode_ = retcode_;
         result.difficultLevel_ = difficultLevel_;
         result.dungeonId_ = dungeonId_;
-        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -469,14 +469,14 @@ public final class MechanicusCandidateTeamCreateRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MechanicusCandidateTeamCreateRspOuterClass.MechanicusCandidateTeamCreateRsp other) {
         if (other == emu.grasscutter.net.proto.MechanicusCandidateTeamCreateRspOuterClass.MechanicusCandidateTeamCreateRsp.getDefaultInstance()) return this;
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
+        }
         if (other.getDifficultLevel() != 0) {
           setDifficultLevel(other.getDifficultLevel());
         }
         if (other.getDungeonId() != 0) {
           setDungeonId(other.getDungeonId());
-        }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -507,9 +507,40 @@ public final class MechanicusCandidateTeamCreateRspOuterClass {
         return this;
       }
 
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 13;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 13;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int difficultLevel_ ;
       /**
-       * <code>uint32 difficult_level = 15;</code>
+       * <code>uint32 difficult_level = 3;</code>
        * @return The difficultLevel.
        */
       @java.lang.Override
@@ -517,7 +548,7 @@ public final class MechanicusCandidateTeamCreateRspOuterClass {
         return difficultLevel_;
       }
       /**
-       * <code>uint32 difficult_level = 15;</code>
+       * <code>uint32 difficult_level = 3;</code>
        * @param value The difficultLevel to set.
        * @return This builder for chaining.
        */
@@ -528,7 +559,7 @@ public final class MechanicusCandidateTeamCreateRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficult_level = 15;</code>
+       * <code>uint32 difficult_level = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficultLevel() {
@@ -540,7 +571,7 @@ public final class MechanicusCandidateTeamCreateRspOuterClass {
 
       private int dungeonId_ ;
       /**
-       * <code>uint32 dungeon_id = 5;</code>
+       * <code>uint32 dungeon_id = 7;</code>
        * @return The dungeonId.
        */
       @java.lang.Override
@@ -548,7 +579,7 @@ public final class MechanicusCandidateTeamCreateRspOuterClass {
         return dungeonId_;
       }
       /**
-       * <code>uint32 dungeon_id = 5;</code>
+       * <code>uint32 dungeon_id = 7;</code>
        * @param value The dungeonId to set.
        * @return This builder for chaining.
        */
@@ -559,43 +590,12 @@ public final class MechanicusCandidateTeamCreateRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 dungeon_id = 5;</code>
+       * <code>uint32 dungeon_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonId() {
         
         dungeonId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 6;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 6;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -667,9 +667,9 @@ public final class MechanicusCandidateTeamCreateRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n&MechanicusCandidateTeamCreateRsp.proto" +
-      "\"`\n MechanicusCandidateTeamCreateRsp\022\027\n\017" +
-      "difficult_level\030\017 \001(\r\022\022\n\ndungeon_id\030\005 \001(" +
-      "\r\022\017\n\007retcode\030\006 \001(\005B\033\n\031emu.grasscutter.ne" +
+      "\"`\n MechanicusCandidateTeamCreateRsp\022\017\n\007" +
+      "retcode\030\r \001(\005\022\027\n\017difficult_level\030\003 \001(\r\022\022" +
+      "\n\ndungeon_id\030\007 \001(\rB\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -681,7 +681,7 @@ public final class MechanicusCandidateTeamCreateRspOuterClass {
     internal_static_MechanicusCandidateTeamCreateRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MechanicusCandidateTeamCreateRsp_descriptor,
-        new java.lang.String[] { "DifficultLevel", "DungeonId", "Retcode", });
+        new java.lang.String[] { "Retcode", "DifficultLevel", "DungeonId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

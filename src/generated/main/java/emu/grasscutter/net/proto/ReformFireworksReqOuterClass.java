@@ -35,8 +35,8 @@ public final class ReformFireworksReqOuterClass {
   }
   /**
    * <pre>
-   * Name: HAKLPJBNCEF
-   * CmdId: 6040
+   * CmdId: 6097
+   * Obf: DAHCGDBHFOE
    * </pre>
    *
    * Protobuf type {@code ReformFireworksReq}
@@ -316,8 +316,8 @@ public final class ReformFireworksReqOuterClass {
     }
     /**
      * <pre>
-     * Name: HAKLPJBNCEF
-     * CmdId: 6040
+     * CmdId: 6097
+     * Obf: DAHCGDBHFOE
      * </pre>
      *
      * Protobuf type {@code ReformFireworksReq}

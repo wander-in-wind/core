@@ -19,21 +19,21 @@ public final class TakeRegionSearchRewardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 id = 1;</code>
+     * <code>uint32 id = 12;</code>
      * @return The id.
      */
     int getId();
 
     /**
-     * <code>uint32 search_id = 8;</code>
+     * <code>uint32 search_id = 10;</code>
      * @return The searchId.
      */
     int getSearchId();
   }
   /**
    * <pre>
-   * Name: OPGODNIBJGL
-   * CmdId: 5609
+   * CmdId: 5637
+   * Obf: FFEEDDPMOMP
    * </pre>
    *
    * Protobuf type {@code TakeRegionSearchRewardReq}
@@ -80,14 +80,14 @@ public final class TakeRegionSearchRewardReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              id_ = input.readUInt32();
-              break;
-            }
-            case 64: {
+            case 80: {
 
               searchId_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              id_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,10 +122,10 @@ public final class TakeRegionSearchRewardReqOuterClass {
               emu.grasscutter.net.proto.TakeRegionSearchRewardReqOuterClass.TakeRegionSearchRewardReq.class, emu.grasscutter.net.proto.TakeRegionSearchRewardReqOuterClass.TakeRegionSearchRewardReq.Builder.class);
     }
 
-    public static final int ID_FIELD_NUMBER = 1;
+    public static final int ID_FIELD_NUMBER = 12;
     private int id_;
     /**
-     * <code>uint32 id = 1;</code>
+     * <code>uint32 id = 12;</code>
      * @return The id.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class TakeRegionSearchRewardReqOuterClass {
       return id_;
     }
 
-    public static final int SEARCH_ID_FIELD_NUMBER = 8;
+    public static final int SEARCH_ID_FIELD_NUMBER = 10;
     private int searchId_;
     /**
-     * <code>uint32 search_id = 8;</code>
+     * <code>uint32 search_id = 10;</code>
      * @return The searchId.
      */
     @java.lang.Override
@@ -158,11 +158,11 @@ public final class TakeRegionSearchRewardReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (id_ != 0) {
-        output.writeUInt32(1, id_);
-      }
       if (searchId_ != 0) {
-        output.writeUInt32(8, searchId_);
+        output.writeUInt32(10, searchId_);
+      }
+      if (id_ != 0) {
+        output.writeUInt32(12, id_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class TakeRegionSearchRewardReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (id_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, id_);
-      }
       if (searchId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, searchId_);
+          .computeUInt32Size(10, searchId_);
+      }
+      if (id_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, id_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class TakeRegionSearchRewardReqOuterClass {
     }
     /**
      * <pre>
-     * Name: OPGODNIBJGL
-     * CmdId: 5609
+     * CmdId: 5637
+     * Obf: FFEEDDPMOMP
      * </pre>
      *
      * Protobuf type {@code TakeRegionSearchRewardReq}
@@ -470,7 +470,7 @@ public final class TakeRegionSearchRewardReqOuterClass {
 
       private int id_ ;
       /**
-       * <code>uint32 id = 1;</code>
+       * <code>uint32 id = 12;</code>
        * @return The id.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class TakeRegionSearchRewardReqOuterClass {
         return id_;
       }
       /**
-       * <code>uint32 id = 1;</code>
+       * <code>uint32 id = 12;</code>
        * @param value The id to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class TakeRegionSearchRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 id = 1;</code>
+       * <code>uint32 id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearId() {
@@ -501,7 +501,7 @@ public final class TakeRegionSearchRewardReqOuterClass {
 
       private int searchId_ ;
       /**
-       * <code>uint32 search_id = 8;</code>
+       * <code>uint32 search_id = 10;</code>
        * @return The searchId.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class TakeRegionSearchRewardReqOuterClass {
         return searchId_;
       }
       /**
-       * <code>uint32 search_id = 8;</code>
+       * <code>uint32 search_id = 10;</code>
        * @param value The searchId to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class TakeRegionSearchRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 search_id = 8;</code>
+       * <code>uint32 search_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearSearchId() {
@@ -597,8 +597,8 @@ public final class TakeRegionSearchRewardReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037TakeRegionSearchRewardReq.proto\":\n\031Tak" +
-      "eRegionSearchRewardReq\022\n\n\002id\030\001 \001(\r\022\021\n\tse" +
-      "arch_id\030\010 \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "eRegionSearchRewardReq\022\n\n\002id\030\014 \001(\r\022\021\n\tse" +
+      "arch_id\030\n \001(\rB\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

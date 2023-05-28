@@ -19,45 +19,45 @@ public final class GlobalBuildingInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 LJDMMCIKHLC = 12;</code>
-     * @return The lJDMMCIKHLC.
+     * <code>uint32 max_num = 4;</code>
+     * @return The maxNum.
      */
-    int getLJDMMCIKHLC();
+    int getMaxNum();
 
     /**
-     * <code>uint32 IHNHBADFLKJ = 4;</code>
-     * @return The iHNHBADFLKJ.
+     * <code>uint32 current_num = 6;</code>
+     * @return The currentNum.
      */
-    int getIHNHBADFLKJ();
+    int getCurrentNum();
 
     /**
-     * <code>repeated .BuildingInfo building_list = 5;</code>
+     * <code>repeated .BuildingInfo building_list = 9;</code>
      */
     java.util.List<emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfo> 
         getBuildingListList();
     /**
-     * <code>repeated .BuildingInfo building_list = 5;</code>
+     * <code>repeated .BuildingInfo building_list = 9;</code>
      */
     emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfo getBuildingList(int index);
     /**
-     * <code>repeated .BuildingInfo building_list = 5;</code>
+     * <code>repeated .BuildingInfo building_list = 9;</code>
      */
     int getBuildingListCount();
     /**
-     * <code>repeated .BuildingInfo building_list = 5;</code>
+     * <code>repeated .BuildingInfo building_list = 9;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfoOrBuilder> 
         getBuildingListOrBuilderList();
     /**
-     * <code>repeated .BuildingInfo building_list = 5;</code>
+     * <code>repeated .BuildingInfo building_list = 9;</code>
      */
     emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfoOrBuilder getBuildingListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * Name: JHCOBPEEBLO
-   * CmdId: 5373
+   * CmdId: 5379
+   * Obf: JHJPOPCAKBH
    * </pre>
    *
    * Protobuf type {@code GlobalBuildingInfoNotify}
@@ -108,21 +108,21 @@ public final class GlobalBuildingInfoNotifyOuterClass {
               break;
             case 32: {
 
-              iHNHBADFLKJ_ = input.readUInt32();
+              maxNum_ = input.readUInt32();
               break;
             }
-            case 42: {
+            case 48: {
+
+              currentNum_ = input.readUInt32();
+              break;
+            }
+            case 74: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 buildingList_ = new java.util.ArrayList<emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfo>();
                 mutable_bitField0_ |= 0x00000001;
               }
               buildingList_.add(
                   input.readMessage(emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 96: {
-
-              lJDMMCIKHLC_ = input.readUInt32();
               break;
             }
             default: {
@@ -160,39 +160,39 @@ public final class GlobalBuildingInfoNotifyOuterClass {
               emu.grasscutter.net.proto.GlobalBuildingInfoNotifyOuterClass.GlobalBuildingInfoNotify.class, emu.grasscutter.net.proto.GlobalBuildingInfoNotifyOuterClass.GlobalBuildingInfoNotify.Builder.class);
     }
 
-    public static final int LJDMMCIKHLC_FIELD_NUMBER = 12;
-    private int lJDMMCIKHLC_;
+    public static final int MAX_NUM_FIELD_NUMBER = 4;
+    private int maxNum_;
     /**
-     * <code>uint32 LJDMMCIKHLC = 12;</code>
-     * @return The lJDMMCIKHLC.
+     * <code>uint32 max_num = 4;</code>
+     * @return The maxNum.
      */
     @java.lang.Override
-    public int getLJDMMCIKHLC() {
-      return lJDMMCIKHLC_;
+    public int getMaxNum() {
+      return maxNum_;
     }
 
-    public static final int IHNHBADFLKJ_FIELD_NUMBER = 4;
-    private int iHNHBADFLKJ_;
+    public static final int CURRENT_NUM_FIELD_NUMBER = 6;
+    private int currentNum_;
     /**
-     * <code>uint32 IHNHBADFLKJ = 4;</code>
-     * @return The iHNHBADFLKJ.
+     * <code>uint32 current_num = 6;</code>
+     * @return The currentNum.
      */
     @java.lang.Override
-    public int getIHNHBADFLKJ() {
-      return iHNHBADFLKJ_;
+    public int getCurrentNum() {
+      return currentNum_;
     }
 
-    public static final int BUILDING_LIST_FIELD_NUMBER = 5;
+    public static final int BUILDING_LIST_FIELD_NUMBER = 9;
     private java.util.List<emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfo> buildingList_;
     /**
-     * <code>repeated .BuildingInfo building_list = 5;</code>
+     * <code>repeated .BuildingInfo building_list = 9;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfo> getBuildingListList() {
       return buildingList_;
     }
     /**
-     * <code>repeated .BuildingInfo building_list = 5;</code>
+     * <code>repeated .BuildingInfo building_list = 9;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfoOrBuilder> 
@@ -200,21 +200,21 @@ public final class GlobalBuildingInfoNotifyOuterClass {
       return buildingList_;
     }
     /**
-     * <code>repeated .BuildingInfo building_list = 5;</code>
+     * <code>repeated .BuildingInfo building_list = 9;</code>
      */
     @java.lang.Override
     public int getBuildingListCount() {
       return buildingList_.size();
     }
     /**
-     * <code>repeated .BuildingInfo building_list = 5;</code>
+     * <code>repeated .BuildingInfo building_list = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfo getBuildingList(int index) {
       return buildingList_.get(index);
     }
     /**
-     * <code>repeated .BuildingInfo building_list = 5;</code>
+     * <code>repeated .BuildingInfo building_list = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfoOrBuilder getBuildingListOrBuilder(
@@ -236,14 +236,14 @@ public final class GlobalBuildingInfoNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (iHNHBADFLKJ_ != 0) {
-        output.writeUInt32(4, iHNHBADFLKJ_);
+      if (maxNum_ != 0) {
+        output.writeUInt32(4, maxNum_);
+      }
+      if (currentNum_ != 0) {
+        output.writeUInt32(6, currentNum_);
       }
       for (int i = 0; i < buildingList_.size(); i++) {
-        output.writeMessage(5, buildingList_.get(i));
-      }
-      if (lJDMMCIKHLC_ != 0) {
-        output.writeUInt32(12, lJDMMCIKHLC_);
+        output.writeMessage(9, buildingList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -254,17 +254,17 @@ public final class GlobalBuildingInfoNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (iHNHBADFLKJ_ != 0) {
+      if (maxNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, iHNHBADFLKJ_);
+          .computeUInt32Size(4, maxNum_);
+      }
+      if (currentNum_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, currentNum_);
       }
       for (int i = 0; i < buildingList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, buildingList_.get(i));
-      }
-      if (lJDMMCIKHLC_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, lJDMMCIKHLC_);
+          .computeMessageSize(9, buildingList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,10 +281,10 @@ public final class GlobalBuildingInfoNotifyOuterClass {
       }
       emu.grasscutter.net.proto.GlobalBuildingInfoNotifyOuterClass.GlobalBuildingInfoNotify other = (emu.grasscutter.net.proto.GlobalBuildingInfoNotifyOuterClass.GlobalBuildingInfoNotify) obj;
 
-      if (getLJDMMCIKHLC()
-          != other.getLJDMMCIKHLC()) return false;
-      if (getIHNHBADFLKJ()
-          != other.getIHNHBADFLKJ()) return false;
+      if (getMaxNum()
+          != other.getMaxNum()) return false;
+      if (getCurrentNum()
+          != other.getCurrentNum()) return false;
       if (!getBuildingListList()
           .equals(other.getBuildingListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -298,10 +298,10 @@ public final class GlobalBuildingInfoNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + LJDMMCIKHLC_FIELD_NUMBER;
-      hash = (53 * hash) + getLJDMMCIKHLC();
-      hash = (37 * hash) + IHNHBADFLKJ_FIELD_NUMBER;
-      hash = (53 * hash) + getIHNHBADFLKJ();
+      hash = (37 * hash) + MAX_NUM_FIELD_NUMBER;
+      hash = (53 * hash) + getMaxNum();
+      hash = (37 * hash) + CURRENT_NUM_FIELD_NUMBER;
+      hash = (53 * hash) + getCurrentNum();
       if (getBuildingListCount() > 0) {
         hash = (37 * hash) + BUILDING_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getBuildingListList().hashCode();
@@ -403,8 +403,8 @@ public final class GlobalBuildingInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: JHCOBPEEBLO
-     * CmdId: 5373
+     * CmdId: 5379
+     * Obf: JHJPOPCAKBH
      * </pre>
      *
      * Protobuf type {@code GlobalBuildingInfoNotify}
@@ -445,9 +445,9 @@ public final class GlobalBuildingInfoNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        lJDMMCIKHLC_ = 0;
+        maxNum_ = 0;
 
-        iHNHBADFLKJ_ = 0;
+        currentNum_ = 0;
 
         if (buildingListBuilder_ == null) {
           buildingList_ = java.util.Collections.emptyList();
@@ -482,8 +482,8 @@ public final class GlobalBuildingInfoNotifyOuterClass {
       public emu.grasscutter.net.proto.GlobalBuildingInfoNotifyOuterClass.GlobalBuildingInfoNotify buildPartial() {
         emu.grasscutter.net.proto.GlobalBuildingInfoNotifyOuterClass.GlobalBuildingInfoNotify result = new emu.grasscutter.net.proto.GlobalBuildingInfoNotifyOuterClass.GlobalBuildingInfoNotify(this);
         int from_bitField0_ = bitField0_;
-        result.lJDMMCIKHLC_ = lJDMMCIKHLC_;
-        result.iHNHBADFLKJ_ = iHNHBADFLKJ_;
+        result.maxNum_ = maxNum_;
+        result.currentNum_ = currentNum_;
         if (buildingListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             buildingList_ = java.util.Collections.unmodifiableList(buildingList_);
@@ -541,11 +541,11 @@ public final class GlobalBuildingInfoNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GlobalBuildingInfoNotifyOuterClass.GlobalBuildingInfoNotify other) {
         if (other == emu.grasscutter.net.proto.GlobalBuildingInfoNotifyOuterClass.GlobalBuildingInfoNotify.getDefaultInstance()) return this;
-        if (other.getLJDMMCIKHLC() != 0) {
-          setLJDMMCIKHLC(other.getLJDMMCIKHLC());
+        if (other.getMaxNum() != 0) {
+          setMaxNum(other.getMaxNum());
         }
-        if (other.getIHNHBADFLKJ() != 0) {
-          setIHNHBADFLKJ(other.getIHNHBADFLKJ());
+        if (other.getCurrentNum() != 0) {
+          setCurrentNum(other.getCurrentNum());
         }
         if (buildingListBuilder_ == null) {
           if (!other.buildingList_.isEmpty()) {
@@ -603,64 +603,64 @@ public final class GlobalBuildingInfoNotifyOuterClass {
       }
       private int bitField0_;
 
-      private int lJDMMCIKHLC_ ;
+      private int maxNum_ ;
       /**
-       * <code>uint32 LJDMMCIKHLC = 12;</code>
-       * @return The lJDMMCIKHLC.
+       * <code>uint32 max_num = 4;</code>
+       * @return The maxNum.
        */
       @java.lang.Override
-      public int getLJDMMCIKHLC() {
-        return lJDMMCIKHLC_;
+      public int getMaxNum() {
+        return maxNum_;
       }
       /**
-       * <code>uint32 LJDMMCIKHLC = 12;</code>
-       * @param value The lJDMMCIKHLC to set.
+       * <code>uint32 max_num = 4;</code>
+       * @param value The maxNum to set.
        * @return This builder for chaining.
        */
-      public Builder setLJDMMCIKHLC(int value) {
+      public Builder setMaxNum(int value) {
         
-        lJDMMCIKHLC_ = value;
+        maxNum_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 LJDMMCIKHLC = 12;</code>
+       * <code>uint32 max_num = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLJDMMCIKHLC() {
+      public Builder clearMaxNum() {
         
-        lJDMMCIKHLC_ = 0;
+        maxNum_ = 0;
         onChanged();
         return this;
       }
 
-      private int iHNHBADFLKJ_ ;
+      private int currentNum_ ;
       /**
-       * <code>uint32 IHNHBADFLKJ = 4;</code>
-       * @return The iHNHBADFLKJ.
+       * <code>uint32 current_num = 6;</code>
+       * @return The currentNum.
        */
       @java.lang.Override
-      public int getIHNHBADFLKJ() {
-        return iHNHBADFLKJ_;
+      public int getCurrentNum() {
+        return currentNum_;
       }
       /**
-       * <code>uint32 IHNHBADFLKJ = 4;</code>
-       * @param value The iHNHBADFLKJ to set.
+       * <code>uint32 current_num = 6;</code>
+       * @param value The currentNum to set.
        * @return This builder for chaining.
        */
-      public Builder setIHNHBADFLKJ(int value) {
+      public Builder setCurrentNum(int value) {
         
-        iHNHBADFLKJ_ = value;
+        currentNum_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 IHNHBADFLKJ = 4;</code>
+       * <code>uint32 current_num = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIHNHBADFLKJ() {
+      public Builder clearCurrentNum() {
         
-        iHNHBADFLKJ_ = 0;
+        currentNum_ = 0;
         onChanged();
         return this;
       }
@@ -678,7 +678,7 @@ public final class GlobalBuildingInfoNotifyOuterClass {
           emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfo, emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfo.Builder, emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfoOrBuilder> buildingListBuilder_;
 
       /**
-       * <code>repeated .BuildingInfo building_list = 5;</code>
+       * <code>repeated .BuildingInfo building_list = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfo> getBuildingListList() {
         if (buildingListBuilder_ == null) {
@@ -688,7 +688,7 @@ public final class GlobalBuildingInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .BuildingInfo building_list = 5;</code>
+       * <code>repeated .BuildingInfo building_list = 9;</code>
        */
       public int getBuildingListCount() {
         if (buildingListBuilder_ == null) {
@@ -698,7 +698,7 @@ public final class GlobalBuildingInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .BuildingInfo building_list = 5;</code>
+       * <code>repeated .BuildingInfo building_list = 9;</code>
        */
       public emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfo getBuildingList(int index) {
         if (buildingListBuilder_ == null) {
@@ -708,7 +708,7 @@ public final class GlobalBuildingInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .BuildingInfo building_list = 5;</code>
+       * <code>repeated .BuildingInfo building_list = 9;</code>
        */
       public Builder setBuildingList(
           int index, emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfo value) {
@@ -725,7 +725,7 @@ public final class GlobalBuildingInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BuildingInfo building_list = 5;</code>
+       * <code>repeated .BuildingInfo building_list = 9;</code>
        */
       public Builder setBuildingList(
           int index, emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfo.Builder builderForValue) {
@@ -739,7 +739,7 @@ public final class GlobalBuildingInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BuildingInfo building_list = 5;</code>
+       * <code>repeated .BuildingInfo building_list = 9;</code>
        */
       public Builder addBuildingList(emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfo value) {
         if (buildingListBuilder_ == null) {
@@ -755,7 +755,7 @@ public final class GlobalBuildingInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BuildingInfo building_list = 5;</code>
+       * <code>repeated .BuildingInfo building_list = 9;</code>
        */
       public Builder addBuildingList(
           int index, emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfo value) {
@@ -772,7 +772,7 @@ public final class GlobalBuildingInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BuildingInfo building_list = 5;</code>
+       * <code>repeated .BuildingInfo building_list = 9;</code>
        */
       public Builder addBuildingList(
           emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfo.Builder builderForValue) {
@@ -786,7 +786,7 @@ public final class GlobalBuildingInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BuildingInfo building_list = 5;</code>
+       * <code>repeated .BuildingInfo building_list = 9;</code>
        */
       public Builder addBuildingList(
           int index, emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfo.Builder builderForValue) {
@@ -800,7 +800,7 @@ public final class GlobalBuildingInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BuildingInfo building_list = 5;</code>
+       * <code>repeated .BuildingInfo building_list = 9;</code>
        */
       public Builder addAllBuildingList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfo> values) {
@@ -815,7 +815,7 @@ public final class GlobalBuildingInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BuildingInfo building_list = 5;</code>
+       * <code>repeated .BuildingInfo building_list = 9;</code>
        */
       public Builder clearBuildingList() {
         if (buildingListBuilder_ == null) {
@@ -828,7 +828,7 @@ public final class GlobalBuildingInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BuildingInfo building_list = 5;</code>
+       * <code>repeated .BuildingInfo building_list = 9;</code>
        */
       public Builder removeBuildingList(int index) {
         if (buildingListBuilder_ == null) {
@@ -841,14 +841,14 @@ public final class GlobalBuildingInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BuildingInfo building_list = 5;</code>
+       * <code>repeated .BuildingInfo building_list = 9;</code>
        */
       public emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfo.Builder getBuildingListBuilder(
           int index) {
         return getBuildingListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .BuildingInfo building_list = 5;</code>
+       * <code>repeated .BuildingInfo building_list = 9;</code>
        */
       public emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfoOrBuilder getBuildingListOrBuilder(
           int index) {
@@ -858,7 +858,7 @@ public final class GlobalBuildingInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .BuildingInfo building_list = 5;</code>
+       * <code>repeated .BuildingInfo building_list = 9;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfoOrBuilder> 
            getBuildingListOrBuilderList() {
@@ -869,14 +869,14 @@ public final class GlobalBuildingInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .BuildingInfo building_list = 5;</code>
+       * <code>repeated .BuildingInfo building_list = 9;</code>
        */
       public emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfo.Builder addBuildingListBuilder() {
         return getBuildingListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .BuildingInfo building_list = 5;</code>
+       * <code>repeated .BuildingInfo building_list = 9;</code>
        */
       public emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfo.Builder addBuildingListBuilder(
           int index) {
@@ -884,7 +884,7 @@ public final class GlobalBuildingInfoNotifyOuterClass {
             index, emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .BuildingInfo building_list = 5;</code>
+       * <code>repeated .BuildingInfo building_list = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.BuildingInfoOuterClass.BuildingInfo.Builder> 
            getBuildingListBuilderList() {
@@ -972,10 +972,10 @@ public final class GlobalBuildingInfoNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036GlobalBuildingInfoNotify.proto\032\022Buildi" +
-      "ngInfo.proto\"j\n\030GlobalBuildingInfoNotify" +
-      "\022\023\n\013LJDMMCIKHLC\030\014 \001(\r\022\023\n\013IHNHBADFLKJ\030\004 \001" +
-      "(\r\022$\n\rbuilding_list\030\005 \003(\0132\r.BuildingInfo" +
-      "B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "ngInfo.proto\"f\n\030GlobalBuildingInfoNotify" +
+      "\022\017\n\007max_num\030\004 \001(\r\022\023\n\013current_num\030\006 \001(\r\022$" +
+      "\n\rbuilding_list\030\t \003(\0132\r.BuildingInfoB\033\n\031" +
+      "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -987,7 +987,7 @@ public final class GlobalBuildingInfoNotifyOuterClass {
     internal_static_GlobalBuildingInfoNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GlobalBuildingInfoNotify_descriptor,
-        new java.lang.String[] { "LJDMMCIKHLC", "IHNHBADFLKJ", "BuildingList", });
+        new java.lang.String[] { "MaxNum", "CurrentNum", "BuildingList", });
     emu.grasscutter.net.proto.BuildingInfoOuterClass.getDescriptor();
   }
 

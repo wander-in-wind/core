@@ -19,68 +19,68 @@ public final class FindHilichurlDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 day_index = 6;</code>
-     * @return The dayIndex.
-     */
-    int getDayIndex();
-
-    /**
-     * <code>uint32 content_close_time = 15;</code>
+     * <code>uint32 content_close_time = 12;</code>
      * @return The contentCloseTime.
      */
     int getContentCloseTime();
 
     /**
-     * <code>bool is_content_closed = 7;</code>
+     * <code>bool is_content_closed = 13;</code>
      * @return The isContentClosed.
      */
     boolean getIsContentClosed();
 
     /**
-     * <code>uint32 CKDBHMJNPID = 13;</code>
-     * @return The cKDBHMJNPID.
+     * <code>uint32 day_index = 4;</code>
+     * @return The dayIndex.
      */
-    int getCKDBHMJNPID();
+    int getDayIndex();
 
     /**
-     * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 2;</code>
+     * <code>uint32 FFMLPLGOJBO = 11;</code>
+     * @return The fFMLPLGOJBO.
+     */
+    int getFFMLPLGOJBO();
+
+    /**
+     * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 14;</code>
      */
     java.util.List<emu.grasscutter.net.proto.FindHilichurlDayContentInfoOuterClass.FindHilichurlDayContentInfo> 
         getDayContentInfoListList();
     /**
-     * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 2;</code>
+     * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 14;</code>
      */
     emu.grasscutter.net.proto.FindHilichurlDayContentInfoOuterClass.FindHilichurlDayContentInfo getDayContentInfoList(int index);
     /**
-     * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 2;</code>
+     * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 14;</code>
      */
     int getDayContentInfoListCount();
     /**
-     * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 2;</code>
+     * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 14;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.FindHilichurlDayContentInfoOuterClass.FindHilichurlDayContentInfoOrBuilder> 
         getDayContentInfoListOrBuilderList();
     /**
-     * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 2;</code>
+     * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 14;</code>
      */
     emu.grasscutter.net.proto.FindHilichurlDayContentInfoOuterClass.FindHilichurlDayContentInfoOrBuilder getDayContentInfoListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 EPFPMGJEMJH = 3;</code>
-     * @return The ePFPMGJEMJH.
+     * <code>uint32 AHKMMEEKNKE = 10;</code>
+     * @return The aHKMMEEKNKE.
      */
-    int getEPFPMGJEMJH();
+    int getAHKMMEEKNKE();
 
     /**
-     * <code>bool is_end_quest_accept = 8;</code>
+     * <code>bool is_end_quest_accept = 3;</code>
      * @return The isEndQuestAccept.
      */
     boolean getIsEndQuestAccept();
   }
   /**
    * <pre>
-   * Name: FGFBJGKCLOG
+   * Obf: BOMIAHEPOKN
    * </pre>
    *
    * Protobuf type {@code FindHilichurlDetailInfo}
@@ -129,43 +129,43 @@ public final class FindHilichurlDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
+            case 24: {
+
+              isEndQuestAccept_ = input.readBool();
+              break;
+            }
+            case 32: {
+
+              dayIndex_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
+              aHKMMEEKNKE_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              fFMLPLGOJBO_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              contentCloseTime_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              isContentClosed_ = input.readBool();
+              break;
+            }
+            case 114: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 dayContentInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.FindHilichurlDayContentInfoOuterClass.FindHilichurlDayContentInfo>();
                 mutable_bitField0_ |= 0x00000001;
               }
               dayContentInfoList_.add(
                   input.readMessage(emu.grasscutter.net.proto.FindHilichurlDayContentInfoOuterClass.FindHilichurlDayContentInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 24: {
-
-              ePFPMGJEMJH_ = input.readUInt32();
-              break;
-            }
-            case 48: {
-
-              dayIndex_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              isContentClosed_ = input.readBool();
-              break;
-            }
-            case 64: {
-
-              isEndQuestAccept_ = input.readBool();
-              break;
-            }
-            case 104: {
-
-              cKDBHMJNPID_ = input.readUInt32();
-              break;
-            }
-            case 120: {
-
-              contentCloseTime_ = input.readUInt32();
               break;
             }
             default: {
@@ -203,21 +203,10 @@ public final class FindHilichurlDetailInfoOuterClass {
               emu.grasscutter.net.proto.FindHilichurlDetailInfoOuterClass.FindHilichurlDetailInfo.class, emu.grasscutter.net.proto.FindHilichurlDetailInfoOuterClass.FindHilichurlDetailInfo.Builder.class);
     }
 
-    public static final int DAY_INDEX_FIELD_NUMBER = 6;
-    private int dayIndex_;
-    /**
-     * <code>uint32 day_index = 6;</code>
-     * @return The dayIndex.
-     */
-    @java.lang.Override
-    public int getDayIndex() {
-      return dayIndex_;
-    }
-
-    public static final int CONTENT_CLOSE_TIME_FIELD_NUMBER = 15;
+    public static final int CONTENT_CLOSE_TIME_FIELD_NUMBER = 12;
     private int contentCloseTime_;
     /**
-     * <code>uint32 content_close_time = 15;</code>
+     * <code>uint32 content_close_time = 12;</code>
      * @return The contentCloseTime.
      */
     @java.lang.Override
@@ -225,10 +214,10 @@ public final class FindHilichurlDetailInfoOuterClass {
       return contentCloseTime_;
     }
 
-    public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 7;
+    public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 13;
     private boolean isContentClosed_;
     /**
-     * <code>bool is_content_closed = 7;</code>
+     * <code>bool is_content_closed = 13;</code>
      * @return The isContentClosed.
      */
     @java.lang.Override
@@ -236,28 +225,39 @@ public final class FindHilichurlDetailInfoOuterClass {
       return isContentClosed_;
     }
 
-    public static final int CKDBHMJNPID_FIELD_NUMBER = 13;
-    private int cKDBHMJNPID_;
+    public static final int DAY_INDEX_FIELD_NUMBER = 4;
+    private int dayIndex_;
     /**
-     * <code>uint32 CKDBHMJNPID = 13;</code>
-     * @return The cKDBHMJNPID.
+     * <code>uint32 day_index = 4;</code>
+     * @return The dayIndex.
      */
     @java.lang.Override
-    public int getCKDBHMJNPID() {
-      return cKDBHMJNPID_;
+    public int getDayIndex() {
+      return dayIndex_;
     }
 
-    public static final int DAY_CONTENT_INFO_LIST_FIELD_NUMBER = 2;
+    public static final int FFMLPLGOJBO_FIELD_NUMBER = 11;
+    private int fFMLPLGOJBO_;
+    /**
+     * <code>uint32 FFMLPLGOJBO = 11;</code>
+     * @return The fFMLPLGOJBO.
+     */
+    @java.lang.Override
+    public int getFFMLPLGOJBO() {
+      return fFMLPLGOJBO_;
+    }
+
+    public static final int DAY_CONTENT_INFO_LIST_FIELD_NUMBER = 14;
     private java.util.List<emu.grasscutter.net.proto.FindHilichurlDayContentInfoOuterClass.FindHilichurlDayContentInfo> dayContentInfoList_;
     /**
-     * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 2;</code>
+     * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 14;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.FindHilichurlDayContentInfoOuterClass.FindHilichurlDayContentInfo> getDayContentInfoListList() {
       return dayContentInfoList_;
     }
     /**
-     * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 2;</code>
+     * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 14;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.FindHilichurlDayContentInfoOuterClass.FindHilichurlDayContentInfoOrBuilder> 
@@ -265,21 +265,21 @@ public final class FindHilichurlDetailInfoOuterClass {
       return dayContentInfoList_;
     }
     /**
-     * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 2;</code>
+     * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 14;</code>
      */
     @java.lang.Override
     public int getDayContentInfoListCount() {
       return dayContentInfoList_.size();
     }
     /**
-     * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 2;</code>
+     * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.FindHilichurlDayContentInfoOuterClass.FindHilichurlDayContentInfo getDayContentInfoList(int index) {
       return dayContentInfoList_.get(index);
     }
     /**
-     * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 2;</code>
+     * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.FindHilichurlDayContentInfoOuterClass.FindHilichurlDayContentInfoOrBuilder getDayContentInfoListOrBuilder(
@@ -287,21 +287,21 @@ public final class FindHilichurlDetailInfoOuterClass {
       return dayContentInfoList_.get(index);
     }
 
-    public static final int EPFPMGJEMJH_FIELD_NUMBER = 3;
-    private int ePFPMGJEMJH_;
+    public static final int AHKMMEEKNKE_FIELD_NUMBER = 10;
+    private int aHKMMEEKNKE_;
     /**
-     * <code>uint32 EPFPMGJEMJH = 3;</code>
-     * @return The ePFPMGJEMJH.
+     * <code>uint32 AHKMMEEKNKE = 10;</code>
+     * @return The aHKMMEEKNKE.
      */
     @java.lang.Override
-    public int getEPFPMGJEMJH() {
-      return ePFPMGJEMJH_;
+    public int getAHKMMEEKNKE() {
+      return aHKMMEEKNKE_;
     }
 
-    public static final int IS_END_QUEST_ACCEPT_FIELD_NUMBER = 8;
+    public static final int IS_END_QUEST_ACCEPT_FIELD_NUMBER = 3;
     private boolean isEndQuestAccept_;
     /**
-     * <code>bool is_end_quest_accept = 8;</code>
+     * <code>bool is_end_quest_accept = 3;</code>
      * @return The isEndQuestAccept.
      */
     @java.lang.Override
@@ -323,26 +323,26 @@ public final class FindHilichurlDetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < dayContentInfoList_.size(); i++) {
-        output.writeMessage(2, dayContentInfoList_.get(i));
-      }
-      if (ePFPMGJEMJH_ != 0) {
-        output.writeUInt32(3, ePFPMGJEMJH_);
+      if (isEndQuestAccept_ != false) {
+        output.writeBool(3, isEndQuestAccept_);
       }
       if (dayIndex_ != 0) {
-        output.writeUInt32(6, dayIndex_);
+        output.writeUInt32(4, dayIndex_);
       }
-      if (isContentClosed_ != false) {
-        output.writeBool(7, isContentClosed_);
+      if (aHKMMEEKNKE_ != 0) {
+        output.writeUInt32(10, aHKMMEEKNKE_);
       }
-      if (isEndQuestAccept_ != false) {
-        output.writeBool(8, isEndQuestAccept_);
-      }
-      if (cKDBHMJNPID_ != 0) {
-        output.writeUInt32(13, cKDBHMJNPID_);
+      if (fFMLPLGOJBO_ != 0) {
+        output.writeUInt32(11, fFMLPLGOJBO_);
       }
       if (contentCloseTime_ != 0) {
-        output.writeUInt32(15, contentCloseTime_);
+        output.writeUInt32(12, contentCloseTime_);
+      }
+      if (isContentClosed_ != false) {
+        output.writeBool(13, isContentClosed_);
+      }
+      for (int i = 0; i < dayContentInfoList_.size(); i++) {
+        output.writeMessage(14, dayContentInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -353,33 +353,33 @@ public final class FindHilichurlDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < dayContentInfoList_.size(); i++) {
+      if (isEndQuestAccept_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, dayContentInfoList_.get(i));
-      }
-      if (ePFPMGJEMJH_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, ePFPMGJEMJH_);
+          .computeBoolSize(3, isEndQuestAccept_);
       }
       if (dayIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, dayIndex_);
+          .computeUInt32Size(4, dayIndex_);
       }
-      if (isContentClosed_ != false) {
+      if (aHKMMEEKNKE_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isContentClosed_);
+          .computeUInt32Size(10, aHKMMEEKNKE_);
       }
-      if (isEndQuestAccept_ != false) {
+      if (fFMLPLGOJBO_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isEndQuestAccept_);
-      }
-      if (cKDBHMJNPID_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, cKDBHMJNPID_);
+          .computeUInt32Size(11, fFMLPLGOJBO_);
       }
       if (contentCloseTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, contentCloseTime_);
+          .computeUInt32Size(12, contentCloseTime_);
+      }
+      if (isContentClosed_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(13, isContentClosed_);
+      }
+      for (int i = 0; i < dayContentInfoList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(14, dayContentInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -396,18 +396,18 @@ public final class FindHilichurlDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.FindHilichurlDetailInfoOuterClass.FindHilichurlDetailInfo other = (emu.grasscutter.net.proto.FindHilichurlDetailInfoOuterClass.FindHilichurlDetailInfo) obj;
 
-      if (getDayIndex()
-          != other.getDayIndex()) return false;
       if (getContentCloseTime()
           != other.getContentCloseTime()) return false;
       if (getIsContentClosed()
           != other.getIsContentClosed()) return false;
-      if (getCKDBHMJNPID()
-          != other.getCKDBHMJNPID()) return false;
+      if (getDayIndex()
+          != other.getDayIndex()) return false;
+      if (getFFMLPLGOJBO()
+          != other.getFFMLPLGOJBO()) return false;
       if (!getDayContentInfoListList()
           .equals(other.getDayContentInfoListList())) return false;
-      if (getEPFPMGJEMJH()
-          != other.getEPFPMGJEMJH()) return false;
+      if (getAHKMMEEKNKE()
+          != other.getAHKMMEEKNKE()) return false;
       if (getIsEndQuestAccept()
           != other.getIsEndQuestAccept()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -421,21 +421,21 @@ public final class FindHilichurlDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + DAY_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getDayIndex();
       hash = (37 * hash) + CONTENT_CLOSE_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getContentCloseTime();
       hash = (37 * hash) + IS_CONTENT_CLOSED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsContentClosed());
-      hash = (37 * hash) + CKDBHMJNPID_FIELD_NUMBER;
-      hash = (53 * hash) + getCKDBHMJNPID();
+      hash = (37 * hash) + DAY_INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getDayIndex();
+      hash = (37 * hash) + FFMLPLGOJBO_FIELD_NUMBER;
+      hash = (53 * hash) + getFFMLPLGOJBO();
       if (getDayContentInfoListCount() > 0) {
         hash = (37 * hash) + DAY_CONTENT_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getDayContentInfoListList().hashCode();
       }
-      hash = (37 * hash) + EPFPMGJEMJH_FIELD_NUMBER;
-      hash = (53 * hash) + getEPFPMGJEMJH();
+      hash = (37 * hash) + AHKMMEEKNKE_FIELD_NUMBER;
+      hash = (53 * hash) + getAHKMMEEKNKE();
       hash = (37 * hash) + IS_END_QUEST_ACCEPT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsEndQuestAccept());
@@ -536,7 +536,7 @@ public final class FindHilichurlDetailInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: FGFBJGKCLOG
+     * Obf: BOMIAHEPOKN
      * </pre>
      *
      * Protobuf type {@code FindHilichurlDetailInfo}
@@ -577,13 +577,13 @@ public final class FindHilichurlDetailInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        dayIndex_ = 0;
-
         contentCloseTime_ = 0;
 
         isContentClosed_ = false;
 
-        cKDBHMJNPID_ = 0;
+        dayIndex_ = 0;
+
+        fFMLPLGOJBO_ = 0;
 
         if (dayContentInfoListBuilder_ == null) {
           dayContentInfoList_ = java.util.Collections.emptyList();
@@ -591,7 +591,7 @@ public final class FindHilichurlDetailInfoOuterClass {
         } else {
           dayContentInfoListBuilder_.clear();
         }
-        ePFPMGJEMJH_ = 0;
+        aHKMMEEKNKE_ = 0;
 
         isEndQuestAccept_ = false;
 
@@ -622,10 +622,10 @@ public final class FindHilichurlDetailInfoOuterClass {
       public emu.grasscutter.net.proto.FindHilichurlDetailInfoOuterClass.FindHilichurlDetailInfo buildPartial() {
         emu.grasscutter.net.proto.FindHilichurlDetailInfoOuterClass.FindHilichurlDetailInfo result = new emu.grasscutter.net.proto.FindHilichurlDetailInfoOuterClass.FindHilichurlDetailInfo(this);
         int from_bitField0_ = bitField0_;
-        result.dayIndex_ = dayIndex_;
         result.contentCloseTime_ = contentCloseTime_;
         result.isContentClosed_ = isContentClosed_;
-        result.cKDBHMJNPID_ = cKDBHMJNPID_;
+        result.dayIndex_ = dayIndex_;
+        result.fFMLPLGOJBO_ = fFMLPLGOJBO_;
         if (dayContentInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             dayContentInfoList_ = java.util.Collections.unmodifiableList(dayContentInfoList_);
@@ -635,7 +635,7 @@ public final class FindHilichurlDetailInfoOuterClass {
         } else {
           result.dayContentInfoList_ = dayContentInfoListBuilder_.build();
         }
-        result.ePFPMGJEMJH_ = ePFPMGJEMJH_;
+        result.aHKMMEEKNKE_ = aHKMMEEKNKE_;
         result.isEndQuestAccept_ = isEndQuestAccept_;
         onBuilt();
         return result;
@@ -685,17 +685,17 @@ public final class FindHilichurlDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FindHilichurlDetailInfoOuterClass.FindHilichurlDetailInfo other) {
         if (other == emu.grasscutter.net.proto.FindHilichurlDetailInfoOuterClass.FindHilichurlDetailInfo.getDefaultInstance()) return this;
-        if (other.getDayIndex() != 0) {
-          setDayIndex(other.getDayIndex());
-        }
         if (other.getContentCloseTime() != 0) {
           setContentCloseTime(other.getContentCloseTime());
         }
         if (other.getIsContentClosed() != false) {
           setIsContentClosed(other.getIsContentClosed());
         }
-        if (other.getCKDBHMJNPID() != 0) {
-          setCKDBHMJNPID(other.getCKDBHMJNPID());
+        if (other.getDayIndex() != 0) {
+          setDayIndex(other.getDayIndex());
+        }
+        if (other.getFFMLPLGOJBO() != 0) {
+          setFFMLPLGOJBO(other.getFFMLPLGOJBO());
         }
         if (dayContentInfoListBuilder_ == null) {
           if (!other.dayContentInfoList_.isEmpty()) {
@@ -723,8 +723,8 @@ public final class FindHilichurlDetailInfoOuterClass {
             }
           }
         }
-        if (other.getEPFPMGJEMJH() != 0) {
-          setEPFPMGJEMJH(other.getEPFPMGJEMJH());
+        if (other.getAHKMMEEKNKE() != 0) {
+          setAHKMMEEKNKE(other.getAHKMMEEKNKE());
         }
         if (other.getIsEndQuestAccept() != false) {
           setIsEndQuestAccept(other.getIsEndQuestAccept());
@@ -759,40 +759,9 @@ public final class FindHilichurlDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private int dayIndex_ ;
-      /**
-       * <code>uint32 day_index = 6;</code>
-       * @return The dayIndex.
-       */
-      @java.lang.Override
-      public int getDayIndex() {
-        return dayIndex_;
-      }
-      /**
-       * <code>uint32 day_index = 6;</code>
-       * @param value The dayIndex to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDayIndex(int value) {
-        
-        dayIndex_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 day_index = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDayIndex() {
-        
-        dayIndex_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int contentCloseTime_ ;
       /**
-       * <code>uint32 content_close_time = 15;</code>
+       * <code>uint32 content_close_time = 12;</code>
        * @return The contentCloseTime.
        */
       @java.lang.Override
@@ -800,7 +769,7 @@ public final class FindHilichurlDetailInfoOuterClass {
         return contentCloseTime_;
       }
       /**
-       * <code>uint32 content_close_time = 15;</code>
+       * <code>uint32 content_close_time = 12;</code>
        * @param value The contentCloseTime to set.
        * @return This builder for chaining.
        */
@@ -811,7 +780,7 @@ public final class FindHilichurlDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 content_close_time = 15;</code>
+       * <code>uint32 content_close_time = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearContentCloseTime() {
@@ -823,7 +792,7 @@ public final class FindHilichurlDetailInfoOuterClass {
 
       private boolean isContentClosed_ ;
       /**
-       * <code>bool is_content_closed = 7;</code>
+       * <code>bool is_content_closed = 13;</code>
        * @return The isContentClosed.
        */
       @java.lang.Override
@@ -831,7 +800,7 @@ public final class FindHilichurlDetailInfoOuterClass {
         return isContentClosed_;
       }
       /**
-       * <code>bool is_content_closed = 7;</code>
+       * <code>bool is_content_closed = 13;</code>
        * @param value The isContentClosed to set.
        * @return This builder for chaining.
        */
@@ -842,7 +811,7 @@ public final class FindHilichurlDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_content_closed = 7;</code>
+       * <code>bool is_content_closed = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsContentClosed() {
@@ -852,33 +821,64 @@ public final class FindHilichurlDetailInfoOuterClass {
         return this;
       }
 
-      private int cKDBHMJNPID_ ;
+      private int dayIndex_ ;
       /**
-       * <code>uint32 CKDBHMJNPID = 13;</code>
-       * @return The cKDBHMJNPID.
+       * <code>uint32 day_index = 4;</code>
+       * @return The dayIndex.
        */
       @java.lang.Override
-      public int getCKDBHMJNPID() {
-        return cKDBHMJNPID_;
+      public int getDayIndex() {
+        return dayIndex_;
       }
       /**
-       * <code>uint32 CKDBHMJNPID = 13;</code>
-       * @param value The cKDBHMJNPID to set.
+       * <code>uint32 day_index = 4;</code>
+       * @param value The dayIndex to set.
        * @return This builder for chaining.
        */
-      public Builder setCKDBHMJNPID(int value) {
+      public Builder setDayIndex(int value) {
         
-        cKDBHMJNPID_ = value;
+        dayIndex_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 CKDBHMJNPID = 13;</code>
+       * <code>uint32 day_index = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCKDBHMJNPID() {
+      public Builder clearDayIndex() {
         
-        cKDBHMJNPID_ = 0;
+        dayIndex_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int fFMLPLGOJBO_ ;
+      /**
+       * <code>uint32 FFMLPLGOJBO = 11;</code>
+       * @return The fFMLPLGOJBO.
+       */
+      @java.lang.Override
+      public int getFFMLPLGOJBO() {
+        return fFMLPLGOJBO_;
+      }
+      /**
+       * <code>uint32 FFMLPLGOJBO = 11;</code>
+       * @param value The fFMLPLGOJBO to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFFMLPLGOJBO(int value) {
+        
+        fFMLPLGOJBO_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 FFMLPLGOJBO = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFFMLPLGOJBO() {
+        
+        fFMLPLGOJBO_ = 0;
         onChanged();
         return this;
       }
@@ -896,7 +896,7 @@ public final class FindHilichurlDetailInfoOuterClass {
           emu.grasscutter.net.proto.FindHilichurlDayContentInfoOuterClass.FindHilichurlDayContentInfo, emu.grasscutter.net.proto.FindHilichurlDayContentInfoOuterClass.FindHilichurlDayContentInfo.Builder, emu.grasscutter.net.proto.FindHilichurlDayContentInfoOuterClass.FindHilichurlDayContentInfoOrBuilder> dayContentInfoListBuilder_;
 
       /**
-       * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 2;</code>
+       * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.FindHilichurlDayContentInfoOuterClass.FindHilichurlDayContentInfo> getDayContentInfoListList() {
         if (dayContentInfoListBuilder_ == null) {
@@ -906,7 +906,7 @@ public final class FindHilichurlDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 2;</code>
+       * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 14;</code>
        */
       public int getDayContentInfoListCount() {
         if (dayContentInfoListBuilder_ == null) {
@@ -916,7 +916,7 @@ public final class FindHilichurlDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 2;</code>
+       * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 14;</code>
        */
       public emu.grasscutter.net.proto.FindHilichurlDayContentInfoOuterClass.FindHilichurlDayContentInfo getDayContentInfoList(int index) {
         if (dayContentInfoListBuilder_ == null) {
@@ -926,7 +926,7 @@ public final class FindHilichurlDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 2;</code>
+       * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 14;</code>
        */
       public Builder setDayContentInfoList(
           int index, emu.grasscutter.net.proto.FindHilichurlDayContentInfoOuterClass.FindHilichurlDayContentInfo value) {
@@ -943,7 +943,7 @@ public final class FindHilichurlDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 2;</code>
+       * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 14;</code>
        */
       public Builder setDayContentInfoList(
           int index, emu.grasscutter.net.proto.FindHilichurlDayContentInfoOuterClass.FindHilichurlDayContentInfo.Builder builderForValue) {
@@ -957,7 +957,7 @@ public final class FindHilichurlDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 2;</code>
+       * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 14;</code>
        */
       public Builder addDayContentInfoList(emu.grasscutter.net.proto.FindHilichurlDayContentInfoOuterClass.FindHilichurlDayContentInfo value) {
         if (dayContentInfoListBuilder_ == null) {
@@ -973,7 +973,7 @@ public final class FindHilichurlDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 2;</code>
+       * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 14;</code>
        */
       public Builder addDayContentInfoList(
           int index, emu.grasscutter.net.proto.FindHilichurlDayContentInfoOuterClass.FindHilichurlDayContentInfo value) {
@@ -990,7 +990,7 @@ public final class FindHilichurlDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 2;</code>
+       * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 14;</code>
        */
       public Builder addDayContentInfoList(
           emu.grasscutter.net.proto.FindHilichurlDayContentInfoOuterClass.FindHilichurlDayContentInfo.Builder builderForValue) {
@@ -1004,7 +1004,7 @@ public final class FindHilichurlDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 2;</code>
+       * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 14;</code>
        */
       public Builder addDayContentInfoList(
           int index, emu.grasscutter.net.proto.FindHilichurlDayContentInfoOuterClass.FindHilichurlDayContentInfo.Builder builderForValue) {
@@ -1018,7 +1018,7 @@ public final class FindHilichurlDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 2;</code>
+       * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 14;</code>
        */
       public Builder addAllDayContentInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.FindHilichurlDayContentInfoOuterClass.FindHilichurlDayContentInfo> values) {
@@ -1033,7 +1033,7 @@ public final class FindHilichurlDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 2;</code>
+       * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 14;</code>
        */
       public Builder clearDayContentInfoList() {
         if (dayContentInfoListBuilder_ == null) {
@@ -1046,7 +1046,7 @@ public final class FindHilichurlDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 2;</code>
+       * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 14;</code>
        */
       public Builder removeDayContentInfoList(int index) {
         if (dayContentInfoListBuilder_ == null) {
@@ -1059,14 +1059,14 @@ public final class FindHilichurlDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 2;</code>
+       * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 14;</code>
        */
       public emu.grasscutter.net.proto.FindHilichurlDayContentInfoOuterClass.FindHilichurlDayContentInfo.Builder getDayContentInfoListBuilder(
           int index) {
         return getDayContentInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 2;</code>
+       * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 14;</code>
        */
       public emu.grasscutter.net.proto.FindHilichurlDayContentInfoOuterClass.FindHilichurlDayContentInfoOrBuilder getDayContentInfoListOrBuilder(
           int index) {
@@ -1076,7 +1076,7 @@ public final class FindHilichurlDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 2;</code>
+       * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 14;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.FindHilichurlDayContentInfoOuterClass.FindHilichurlDayContentInfoOrBuilder> 
            getDayContentInfoListOrBuilderList() {
@@ -1087,14 +1087,14 @@ public final class FindHilichurlDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 2;</code>
+       * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 14;</code>
        */
       public emu.grasscutter.net.proto.FindHilichurlDayContentInfoOuterClass.FindHilichurlDayContentInfo.Builder addDayContentInfoListBuilder() {
         return getDayContentInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.FindHilichurlDayContentInfoOuterClass.FindHilichurlDayContentInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 2;</code>
+       * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 14;</code>
        */
       public emu.grasscutter.net.proto.FindHilichurlDayContentInfoOuterClass.FindHilichurlDayContentInfo.Builder addDayContentInfoListBuilder(
           int index) {
@@ -1102,7 +1102,7 @@ public final class FindHilichurlDetailInfoOuterClass {
             index, emu.grasscutter.net.proto.FindHilichurlDayContentInfoOuterClass.FindHilichurlDayContentInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 2;</code>
+       * <code>repeated .FindHilichurlDayContentInfo day_content_info_list = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.FindHilichurlDayContentInfoOuterClass.FindHilichurlDayContentInfo.Builder> 
            getDayContentInfoListBuilderList() {
@@ -1123,40 +1123,40 @@ public final class FindHilichurlDetailInfoOuterClass {
         return dayContentInfoListBuilder_;
       }
 
-      private int ePFPMGJEMJH_ ;
+      private int aHKMMEEKNKE_ ;
       /**
-       * <code>uint32 EPFPMGJEMJH = 3;</code>
-       * @return The ePFPMGJEMJH.
+       * <code>uint32 AHKMMEEKNKE = 10;</code>
+       * @return The aHKMMEEKNKE.
        */
       @java.lang.Override
-      public int getEPFPMGJEMJH() {
-        return ePFPMGJEMJH_;
+      public int getAHKMMEEKNKE() {
+        return aHKMMEEKNKE_;
       }
       /**
-       * <code>uint32 EPFPMGJEMJH = 3;</code>
-       * @param value The ePFPMGJEMJH to set.
+       * <code>uint32 AHKMMEEKNKE = 10;</code>
+       * @param value The aHKMMEEKNKE to set.
        * @return This builder for chaining.
        */
-      public Builder setEPFPMGJEMJH(int value) {
+      public Builder setAHKMMEEKNKE(int value) {
         
-        ePFPMGJEMJH_ = value;
+        aHKMMEEKNKE_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 EPFPMGJEMJH = 3;</code>
+       * <code>uint32 AHKMMEEKNKE = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEPFPMGJEMJH() {
+      public Builder clearAHKMMEEKNKE() {
         
-        ePFPMGJEMJH_ = 0;
+        aHKMMEEKNKE_ = 0;
         onChanged();
         return this;
       }
 
       private boolean isEndQuestAccept_ ;
       /**
-       * <code>bool is_end_quest_accept = 8;</code>
+       * <code>bool is_end_quest_accept = 3;</code>
        * @return The isEndQuestAccept.
        */
       @java.lang.Override
@@ -1164,7 +1164,7 @@ public final class FindHilichurlDetailInfoOuterClass {
         return isEndQuestAccept_;
       }
       /**
-       * <code>bool is_end_quest_accept = 8;</code>
+       * <code>bool is_end_quest_accept = 3;</code>
        * @param value The isEndQuestAccept to set.
        * @return This builder for chaining.
        */
@@ -1175,7 +1175,7 @@ public final class FindHilichurlDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_end_quest_accept = 8;</code>
+       * <code>bool is_end_quest_accept = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsEndQuestAccept() {
@@ -1253,12 +1253,12 @@ public final class FindHilichurlDetailInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\035FindHilichurlDetailInfo.proto\032!FindHil" +
       "ichurlDayContentInfo.proto\"\347\001\n\027FindHilic" +
-      "hurlDetailInfo\022\021\n\tday_index\030\006 \001(\r\022\032\n\022con" +
-      "tent_close_time\030\017 \001(\r\022\031\n\021is_content_clos" +
-      "ed\030\007 \001(\010\022\023\n\013CKDBHMJNPID\030\r \001(\r\022;\n\025day_con" +
-      "tent_info_list\030\002 \003(\0132\034.FindHilichurlDayC" +
-      "ontentInfo\022\023\n\013EPFPMGJEMJH\030\003 \001(\r\022\033\n\023is_en" +
-      "d_quest_accept\030\010 \001(\010B\033\n\031emu.grasscutter." +
+      "hurlDetailInfo\022\032\n\022content_close_time\030\014 \001" +
+      "(\r\022\031\n\021is_content_closed\030\r \001(\010\022\021\n\tday_ind" +
+      "ex\030\004 \001(\r\022\023\n\013FFMLPLGOJBO\030\013 \001(\r\022;\n\025day_con" +
+      "tent_info_list\030\016 \003(\0132\034.FindHilichurlDayC" +
+      "ontentInfo\022\023\n\013AHKMMEEKNKE\030\n \001(\r\022\033\n\023is_en" +
+      "d_quest_accept\030\003 \001(\010B\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1271,7 +1271,7 @@ public final class FindHilichurlDetailInfoOuterClass {
     internal_static_FindHilichurlDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FindHilichurlDetailInfo_descriptor,
-        new java.lang.String[] { "DayIndex", "ContentCloseTime", "IsContentClosed", "CKDBHMJNPID", "DayContentInfoList", "EPFPMGJEMJH", "IsEndQuestAccept", });
+        new java.lang.String[] { "ContentCloseTime", "IsContentClosed", "DayIndex", "FFMLPLGOJBO", "DayContentInfoList", "AHKMMEEKNKE", "IsEndQuestAccept", });
     emu.grasscutter.net.proto.FindHilichurlDayContentInfoOuterClass.getDescriptor();
   }
 

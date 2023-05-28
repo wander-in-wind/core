@@ -19,21 +19,21 @@ public final class ChannellerSlabLoopDungeonTakeFirstPassRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 dungeon_index = 15;</code>
+     * <code>uint32 dungeon_index = 5;</code>
      * @return The dungeonIndex.
      */
     int getDungeonIndex();
   }
   /**
    * <pre>
-   * Name: FNBAAOFEABH
-   * CmdId: 8247
+   * CmdId: 8506
+   * Obf: LCIKELIFIJD
    * </pre>
    *
    * Protobuf type {@code ChannellerSlabLoopDungeonTakeFirstPassRewardRsp}
@@ -80,14 +80,14 @@ public final class ChannellerSlabLoopDungeonTakeFirstPassRewardRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 120: {
+            case 40: {
 
               dungeonIndex_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -122,10 +122,10 @@ public final class ChannellerSlabLoopDungeonTakeFirstPassRewardRspOuterClass {
               emu.grasscutter.net.proto.ChannellerSlabLoopDungeonTakeFirstPassRewardRspOuterClass.ChannellerSlabLoopDungeonTakeFirstPassRewardRsp.class, emu.grasscutter.net.proto.ChannellerSlabLoopDungeonTakeFirstPassRewardRspOuterClass.ChannellerSlabLoopDungeonTakeFirstPassRewardRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 1;
+    public static final int RETCODE_FIELD_NUMBER = 11;
     private int retcode_;
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class ChannellerSlabLoopDungeonTakeFirstPassRewardRspOuterClass {
       return retcode_;
     }
 
-    public static final int DUNGEON_INDEX_FIELD_NUMBER = 15;
+    public static final int DUNGEON_INDEX_FIELD_NUMBER = 5;
     private int dungeonIndex_;
     /**
-     * <code>uint32 dungeon_index = 15;</code>
+     * <code>uint32 dungeon_index = 5;</code>
      * @return The dungeonIndex.
      */
     @java.lang.Override
@@ -158,11 +158,11 @@ public final class ChannellerSlabLoopDungeonTakeFirstPassRewardRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(1, retcode_);
-      }
       if (dungeonIndex_ != 0) {
-        output.writeUInt32(15, dungeonIndex_);
+        output.writeUInt32(5, dungeonIndex_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(11, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class ChannellerSlabLoopDungeonTakeFirstPassRewardRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, retcode_);
-      }
       if (dungeonIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, dungeonIndex_);
+          .computeUInt32Size(5, dungeonIndex_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(11, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class ChannellerSlabLoopDungeonTakeFirstPassRewardRspOuterClass {
     }
     /**
      * <pre>
-     * Name: FNBAAOFEABH
-     * CmdId: 8247
+     * CmdId: 8506
+     * Obf: LCIKELIFIJD
      * </pre>
      *
      * Protobuf type {@code ChannellerSlabLoopDungeonTakeFirstPassRewardRsp}
@@ -470,7 +470,7 @@ public final class ChannellerSlabLoopDungeonTakeFirstPassRewardRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 11;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class ChannellerSlabLoopDungeonTakeFirstPassRewardRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 11;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class ChannellerSlabLoopDungeonTakeFirstPassRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -501,7 +501,7 @@ public final class ChannellerSlabLoopDungeonTakeFirstPassRewardRspOuterClass {
 
       private int dungeonIndex_ ;
       /**
-       * <code>uint32 dungeon_index = 15;</code>
+       * <code>uint32 dungeon_index = 5;</code>
        * @return The dungeonIndex.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class ChannellerSlabLoopDungeonTakeFirstPassRewardRspOuterClass {
         return dungeonIndex_;
       }
       /**
-       * <code>uint32 dungeon_index = 15;</code>
+       * <code>uint32 dungeon_index = 5;</code>
        * @param value The dungeonIndex to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class ChannellerSlabLoopDungeonTakeFirstPassRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 dungeon_index = 15;</code>
+       * <code>uint32 dungeon_index = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonIndex() {
@@ -598,8 +598,8 @@ public final class ChannellerSlabLoopDungeonTakeFirstPassRewardRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n5ChannellerSlabLoopDungeonTakeFirstPass" +
       "RewardRsp.proto\"Y\n/ChannellerSlabLoopDun" +
-      "geonTakeFirstPassRewardRsp\022\017\n\007retcode\030\001 " +
-      "\001(\005\022\025\n\rdungeon_index\030\017 \001(\rB\033\n\031emu.grassc" +
+      "geonTakeFirstPassRewardRsp\022\017\n\007retcode\030\013 " +
+      "\001(\005\022\025\n\rdungeon_index\030\005 \001(\rB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

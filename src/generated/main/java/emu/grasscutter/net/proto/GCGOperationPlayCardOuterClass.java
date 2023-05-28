@@ -19,54 +19,54 @@ public final class GCGOperationPlayCardOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 replace_card_guid = 4;</code>
+     * <code>uint32 card_guid = 11;</code>
+     * @return The cardGuid.
+     */
+    int getCardGuid();
+
+    /**
+     * <code>uint32 replace_card_guid = 12;</code>
      * @return The replaceCardGuid.
      */
     int getReplaceCardGuid();
 
     /**
-     * <code>repeated uint32 cost_dice_index_list = 7;</code>
+     * <code>repeated uint32 cost_dice_index_list = 10;</code>
      * @return A list containing the costDiceIndexList.
      */
     java.util.List<java.lang.Integer> getCostDiceIndexListList();
     /**
-     * <code>repeated uint32 cost_dice_index_list = 7;</code>
+     * <code>repeated uint32 cost_dice_index_list = 10;</code>
      * @return The count of costDiceIndexList.
      */
     int getCostDiceIndexListCount();
     /**
-     * <code>repeated uint32 cost_dice_index_list = 7;</code>
+     * <code>repeated uint32 cost_dice_index_list = 10;</code>
      * @param index The index of the element to return.
      * @return The costDiceIndexList at the given index.
      */
     int getCostDiceIndexList(int index);
 
     /**
-     * <code>repeated uint32 target_card_guid_list = 6;</code>
+     * <code>repeated uint32 target_card_guid_list = 2;</code>
      * @return A list containing the targetCardGuidList.
      */
     java.util.List<java.lang.Integer> getTargetCardGuidListList();
     /**
-     * <code>repeated uint32 target_card_guid_list = 6;</code>
+     * <code>repeated uint32 target_card_guid_list = 2;</code>
      * @return The count of targetCardGuidList.
      */
     int getTargetCardGuidListCount();
     /**
-     * <code>repeated uint32 target_card_guid_list = 6;</code>
+     * <code>repeated uint32 target_card_guid_list = 2;</code>
      * @param index The index of the element to return.
      * @return The targetCardGuidList at the given index.
      */
     int getTargetCardGuidList(int index);
-
-    /**
-     * <code>uint32 card_guid = 14;</code>
-     * @return The cardGuid.
-     */
-    int getCardGuid();
   }
   /**
    * <pre>
-   * Name: MFAPEBAOAIB
+   * Obf: IIAFPBDJMEP
    * </pre>
    *
    * Protobuf type {@code GCGOperationPlayCard}
@@ -116,12 +116,7 @@ public final class GCGOperationPlayCardOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
-
-              replaceCardGuid_ = input.readUInt32();
-              break;
-            }
-            case 48: {
+            case 16: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 targetCardGuidList_ = newIntList();
                 mutable_bitField0_ |= 0x00000002;
@@ -129,7 +124,7 @@ public final class GCGOperationPlayCardOuterClass {
               targetCardGuidList_.addInt(input.readUInt32());
               break;
             }
-            case 50: {
+            case 18: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
@@ -142,7 +137,7 @@ public final class GCGOperationPlayCardOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 56: {
+            case 80: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 costDiceIndexList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -150,7 +145,7 @@ public final class GCGOperationPlayCardOuterClass {
               costDiceIndexList_.addInt(input.readUInt32());
               break;
             }
-            case 58: {
+            case 82: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -163,9 +158,14 @@ public final class GCGOperationPlayCardOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 112: {
+            case 88: {
 
               cardGuid_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              replaceCardGuid_ = input.readUInt32();
               break;
             }
             default: {
@@ -206,10 +206,21 @@ public final class GCGOperationPlayCardOuterClass {
               emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard.class, emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard.Builder.class);
     }
 
-    public static final int REPLACE_CARD_GUID_FIELD_NUMBER = 4;
+    public static final int CARD_GUID_FIELD_NUMBER = 11;
+    private int cardGuid_;
+    /**
+     * <code>uint32 card_guid = 11;</code>
+     * @return The cardGuid.
+     */
+    @java.lang.Override
+    public int getCardGuid() {
+      return cardGuid_;
+    }
+
+    public static final int REPLACE_CARD_GUID_FIELD_NUMBER = 12;
     private int replaceCardGuid_;
     /**
-     * <code>uint32 replace_card_guid = 4;</code>
+     * <code>uint32 replace_card_guid = 12;</code>
      * @return The replaceCardGuid.
      */
     @java.lang.Override
@@ -217,10 +228,10 @@ public final class GCGOperationPlayCardOuterClass {
       return replaceCardGuid_;
     }
 
-    public static final int COST_DICE_INDEX_LIST_FIELD_NUMBER = 7;
+    public static final int COST_DICE_INDEX_LIST_FIELD_NUMBER = 10;
     private com.google.protobuf.Internal.IntList costDiceIndexList_;
     /**
-     * <code>repeated uint32 cost_dice_index_list = 7;</code>
+     * <code>repeated uint32 cost_dice_index_list = 10;</code>
      * @return A list containing the costDiceIndexList.
      */
     @java.lang.Override
@@ -229,14 +240,14 @@ public final class GCGOperationPlayCardOuterClass {
       return costDiceIndexList_;
     }
     /**
-     * <code>repeated uint32 cost_dice_index_list = 7;</code>
+     * <code>repeated uint32 cost_dice_index_list = 10;</code>
      * @return The count of costDiceIndexList.
      */
     public int getCostDiceIndexListCount() {
       return costDiceIndexList_.size();
     }
     /**
-     * <code>repeated uint32 cost_dice_index_list = 7;</code>
+     * <code>repeated uint32 cost_dice_index_list = 10;</code>
      * @param index The index of the element to return.
      * @return The costDiceIndexList at the given index.
      */
@@ -245,10 +256,10 @@ public final class GCGOperationPlayCardOuterClass {
     }
     private int costDiceIndexListMemoizedSerializedSize = -1;
 
-    public static final int TARGET_CARD_GUID_LIST_FIELD_NUMBER = 6;
+    public static final int TARGET_CARD_GUID_LIST_FIELD_NUMBER = 2;
     private com.google.protobuf.Internal.IntList targetCardGuidList_;
     /**
-     * <code>repeated uint32 target_card_guid_list = 6;</code>
+     * <code>repeated uint32 target_card_guid_list = 2;</code>
      * @return A list containing the targetCardGuidList.
      */
     @java.lang.Override
@@ -257,14 +268,14 @@ public final class GCGOperationPlayCardOuterClass {
       return targetCardGuidList_;
     }
     /**
-     * <code>repeated uint32 target_card_guid_list = 6;</code>
+     * <code>repeated uint32 target_card_guid_list = 2;</code>
      * @return The count of targetCardGuidList.
      */
     public int getTargetCardGuidListCount() {
       return targetCardGuidList_.size();
     }
     /**
-     * <code>repeated uint32 target_card_guid_list = 6;</code>
+     * <code>repeated uint32 target_card_guid_list = 2;</code>
      * @param index The index of the element to return.
      * @return The targetCardGuidList at the given index.
      */
@@ -272,17 +283,6 @@ public final class GCGOperationPlayCardOuterClass {
       return targetCardGuidList_.getInt(index);
     }
     private int targetCardGuidListMemoizedSerializedSize = -1;
-
-    public static final int CARD_GUID_FIELD_NUMBER = 14;
-    private int cardGuid_;
-    /**
-     * <code>uint32 card_guid = 14;</code>
-     * @return The cardGuid.
-     */
-    @java.lang.Override
-    public int getCardGuid() {
-      return cardGuid_;
-    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -299,25 +299,25 @@ public final class GCGOperationPlayCardOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (replaceCardGuid_ != 0) {
-        output.writeUInt32(4, replaceCardGuid_);
-      }
       if (getTargetCardGuidListList().size() > 0) {
-        output.writeUInt32NoTag(50);
+        output.writeUInt32NoTag(18);
         output.writeUInt32NoTag(targetCardGuidListMemoizedSerializedSize);
       }
       for (int i = 0; i < targetCardGuidList_.size(); i++) {
         output.writeUInt32NoTag(targetCardGuidList_.getInt(i));
       }
       if (getCostDiceIndexListList().size() > 0) {
-        output.writeUInt32NoTag(58);
+        output.writeUInt32NoTag(82);
         output.writeUInt32NoTag(costDiceIndexListMemoizedSerializedSize);
       }
       for (int i = 0; i < costDiceIndexList_.size(); i++) {
         output.writeUInt32NoTag(costDiceIndexList_.getInt(i));
       }
       if (cardGuid_ != 0) {
-        output.writeUInt32(14, cardGuid_);
+        output.writeUInt32(11, cardGuid_);
+      }
+      if (replaceCardGuid_ != 0) {
+        output.writeUInt32(12, replaceCardGuid_);
       }
       unknownFields.writeTo(output);
     }
@@ -328,10 +328,6 @@ public final class GCGOperationPlayCardOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (replaceCardGuid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, replaceCardGuid_);
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < targetCardGuidList_.size(); i++) {
@@ -362,7 +358,11 @@ public final class GCGOperationPlayCardOuterClass {
       }
       if (cardGuid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, cardGuid_);
+          .computeUInt32Size(11, cardGuid_);
+      }
+      if (replaceCardGuid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, replaceCardGuid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -379,14 +379,14 @@ public final class GCGOperationPlayCardOuterClass {
       }
       emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard other = (emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard) obj;
 
+      if (getCardGuid()
+          != other.getCardGuid()) return false;
       if (getReplaceCardGuid()
           != other.getReplaceCardGuid()) return false;
       if (!getCostDiceIndexListList()
           .equals(other.getCostDiceIndexListList())) return false;
       if (!getTargetCardGuidListList()
           .equals(other.getTargetCardGuidListList())) return false;
-      if (getCardGuid()
-          != other.getCardGuid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -398,6 +398,8 @@ public final class GCGOperationPlayCardOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + CARD_GUID_FIELD_NUMBER;
+      hash = (53 * hash) + getCardGuid();
       hash = (37 * hash) + REPLACE_CARD_GUID_FIELD_NUMBER;
       hash = (53 * hash) + getReplaceCardGuid();
       if (getCostDiceIndexListCount() > 0) {
@@ -408,8 +410,6 @@ public final class GCGOperationPlayCardOuterClass {
         hash = (37 * hash) + TARGET_CARD_GUID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getTargetCardGuidListList().hashCode();
       }
-      hash = (37 * hash) + CARD_GUID_FIELD_NUMBER;
-      hash = (53 * hash) + getCardGuid();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -507,7 +507,7 @@ public final class GCGOperationPlayCardOuterClass {
     }
     /**
      * <pre>
-     * Name: MFAPEBAOAIB
+     * Obf: IIAFPBDJMEP
      * </pre>
      *
      * Protobuf type {@code GCGOperationPlayCard}
@@ -547,14 +547,14 @@ public final class GCGOperationPlayCardOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        cardGuid_ = 0;
+
         replaceCardGuid_ = 0;
 
         costDiceIndexList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         targetCardGuidList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
-        cardGuid_ = 0;
-
         return this;
       }
 
@@ -582,6 +582,7 @@ public final class GCGOperationPlayCardOuterClass {
       public emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard buildPartial() {
         emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard result = new emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard(this);
         int from_bitField0_ = bitField0_;
+        result.cardGuid_ = cardGuid_;
         result.replaceCardGuid_ = replaceCardGuid_;
         if (((bitField0_ & 0x00000001) != 0)) {
           costDiceIndexList_.makeImmutable();
@@ -593,7 +594,6 @@ public final class GCGOperationPlayCardOuterClass {
           bitField0_ = (bitField0_ & ~0x00000002);
         }
         result.targetCardGuidList_ = targetCardGuidList_;
-        result.cardGuid_ = cardGuid_;
         onBuilt();
         return result;
       }
@@ -642,6 +642,9 @@ public final class GCGOperationPlayCardOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard other) {
         if (other == emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard.getDefaultInstance()) return this;
+        if (other.getCardGuid() != 0) {
+          setCardGuid(other.getCardGuid());
+        }
         if (other.getReplaceCardGuid() != 0) {
           setReplaceCardGuid(other.getReplaceCardGuid());
         }
@@ -664,9 +667,6 @@ public final class GCGOperationPlayCardOuterClass {
             targetCardGuidList_.addAll(other.targetCardGuidList_);
           }
           onChanged();
-        }
-        if (other.getCardGuid() != 0) {
-          setCardGuid(other.getCardGuid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -698,9 +698,40 @@ public final class GCGOperationPlayCardOuterClass {
       }
       private int bitField0_;
 
+      private int cardGuid_ ;
+      /**
+       * <code>uint32 card_guid = 11;</code>
+       * @return The cardGuid.
+       */
+      @java.lang.Override
+      public int getCardGuid() {
+        return cardGuid_;
+      }
+      /**
+       * <code>uint32 card_guid = 11;</code>
+       * @param value The cardGuid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCardGuid(int value) {
+        
+        cardGuid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 card_guid = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCardGuid() {
+        
+        cardGuid_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int replaceCardGuid_ ;
       /**
-       * <code>uint32 replace_card_guid = 4;</code>
+       * <code>uint32 replace_card_guid = 12;</code>
        * @return The replaceCardGuid.
        */
       @java.lang.Override
@@ -708,7 +739,7 @@ public final class GCGOperationPlayCardOuterClass {
         return replaceCardGuid_;
       }
       /**
-       * <code>uint32 replace_card_guid = 4;</code>
+       * <code>uint32 replace_card_guid = 12;</code>
        * @param value The replaceCardGuid to set.
        * @return This builder for chaining.
        */
@@ -719,7 +750,7 @@ public final class GCGOperationPlayCardOuterClass {
         return this;
       }
       /**
-       * <code>uint32 replace_card_guid = 4;</code>
+       * <code>uint32 replace_card_guid = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearReplaceCardGuid() {
@@ -737,7 +768,7 @@ public final class GCGOperationPlayCardOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 cost_dice_index_list = 7;</code>
+       * <code>repeated uint32 cost_dice_index_list = 10;</code>
        * @return A list containing the costDiceIndexList.
        */
       public java.util.List<java.lang.Integer>
@@ -746,14 +777,14 @@ public final class GCGOperationPlayCardOuterClass {
                  java.util.Collections.unmodifiableList(costDiceIndexList_) : costDiceIndexList_;
       }
       /**
-       * <code>repeated uint32 cost_dice_index_list = 7;</code>
+       * <code>repeated uint32 cost_dice_index_list = 10;</code>
        * @return The count of costDiceIndexList.
        */
       public int getCostDiceIndexListCount() {
         return costDiceIndexList_.size();
       }
       /**
-       * <code>repeated uint32 cost_dice_index_list = 7;</code>
+       * <code>repeated uint32 cost_dice_index_list = 10;</code>
        * @param index The index of the element to return.
        * @return The costDiceIndexList at the given index.
        */
@@ -761,7 +792,7 @@ public final class GCGOperationPlayCardOuterClass {
         return costDiceIndexList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 cost_dice_index_list = 7;</code>
+       * <code>repeated uint32 cost_dice_index_list = 10;</code>
        * @param index The index to set the value at.
        * @param value The costDiceIndexList to set.
        * @return This builder for chaining.
@@ -774,7 +805,7 @@ public final class GCGOperationPlayCardOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 cost_dice_index_list = 7;</code>
+       * <code>repeated uint32 cost_dice_index_list = 10;</code>
        * @param value The costDiceIndexList to add.
        * @return This builder for chaining.
        */
@@ -785,7 +816,7 @@ public final class GCGOperationPlayCardOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 cost_dice_index_list = 7;</code>
+       * <code>repeated uint32 cost_dice_index_list = 10;</code>
        * @param values The costDiceIndexList to add.
        * @return This builder for chaining.
        */
@@ -798,7 +829,7 @@ public final class GCGOperationPlayCardOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 cost_dice_index_list = 7;</code>
+       * <code>repeated uint32 cost_dice_index_list = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearCostDiceIndexList() {
@@ -816,7 +847,7 @@ public final class GCGOperationPlayCardOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 target_card_guid_list = 6;</code>
+       * <code>repeated uint32 target_card_guid_list = 2;</code>
        * @return A list containing the targetCardGuidList.
        */
       public java.util.List<java.lang.Integer>
@@ -825,14 +856,14 @@ public final class GCGOperationPlayCardOuterClass {
                  java.util.Collections.unmodifiableList(targetCardGuidList_) : targetCardGuidList_;
       }
       /**
-       * <code>repeated uint32 target_card_guid_list = 6;</code>
+       * <code>repeated uint32 target_card_guid_list = 2;</code>
        * @return The count of targetCardGuidList.
        */
       public int getTargetCardGuidListCount() {
         return targetCardGuidList_.size();
       }
       /**
-       * <code>repeated uint32 target_card_guid_list = 6;</code>
+       * <code>repeated uint32 target_card_guid_list = 2;</code>
        * @param index The index of the element to return.
        * @return The targetCardGuidList at the given index.
        */
@@ -840,7 +871,7 @@ public final class GCGOperationPlayCardOuterClass {
         return targetCardGuidList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 target_card_guid_list = 6;</code>
+       * <code>repeated uint32 target_card_guid_list = 2;</code>
        * @param index The index to set the value at.
        * @param value The targetCardGuidList to set.
        * @return This builder for chaining.
@@ -853,7 +884,7 @@ public final class GCGOperationPlayCardOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 target_card_guid_list = 6;</code>
+       * <code>repeated uint32 target_card_guid_list = 2;</code>
        * @param value The targetCardGuidList to add.
        * @return This builder for chaining.
        */
@@ -864,7 +895,7 @@ public final class GCGOperationPlayCardOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 target_card_guid_list = 6;</code>
+       * <code>repeated uint32 target_card_guid_list = 2;</code>
        * @param values The targetCardGuidList to add.
        * @return This builder for chaining.
        */
@@ -877,43 +908,12 @@ public final class GCGOperationPlayCardOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 target_card_guid_list = 6;</code>
+       * <code>repeated uint32 target_card_guid_list = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetCardGuidList() {
         targetCardGuidList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
-        onChanged();
-        return this;
-      }
-
-      private int cardGuid_ ;
-      /**
-       * <code>uint32 card_guid = 14;</code>
-       * @return The cardGuid.
-       */
-      @java.lang.Override
-      public int getCardGuid() {
-        return cardGuid_;
-      }
-      /**
-       * <code>uint32 card_guid = 14;</code>
-       * @param value The cardGuid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCardGuid(int value) {
-        
-        cardGuid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 card_guid = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCardGuid() {
-        
-        cardGuid_ = 0;
         onChanged();
         return this;
       }
@@ -985,9 +985,9 @@ public final class GCGOperationPlayCardOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032GCGOperationPlayCard.proto\"\201\001\n\024GCGOper" +
-      "ationPlayCard\022\031\n\021replace_card_guid\030\004 \001(\r" +
-      "\022\034\n\024cost_dice_index_list\030\007 \003(\r\022\035\n\025target" +
-      "_card_guid_list\030\006 \003(\r\022\021\n\tcard_guid\030\016 \001(\r" +
+      "ationPlayCard\022\021\n\tcard_guid\030\013 \001(\r\022\031\n\021repl" +
+      "ace_card_guid\030\014 \001(\r\022\034\n\024cost_dice_index_l" +
+      "ist\030\n \003(\r\022\035\n\025target_card_guid_list\030\002 \003(\r" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -999,7 +999,7 @@ public final class GCGOperationPlayCardOuterClass {
     internal_static_GCGOperationPlayCard_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGOperationPlayCard_descriptor,
-        new java.lang.String[] { "ReplaceCardGuid", "CostDiceIndexList", "TargetCardGuidList", "CardGuid", });
+        new java.lang.String[] { "CardGuid", "ReplaceCardGuid", "CostDiceIndexList", "TargetCardGuidList", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

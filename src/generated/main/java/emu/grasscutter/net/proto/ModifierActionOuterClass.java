@@ -16,7 +16,7 @@ public final class ModifierActionOuterClass {
   }
   /**
    * <pre>
-   * Name: NFFIAAOHAAO
+   * Obf: KKFENCAJMAP
    * </pre>
    *
    * Protobuf enum {@code ModifierAction}

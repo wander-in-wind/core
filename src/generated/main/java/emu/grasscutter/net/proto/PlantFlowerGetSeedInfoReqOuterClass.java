@@ -19,15 +19,15 @@ public final class PlantFlowerGetSeedInfoReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 schedule_id = 12;</code>
+     * <code>uint32 schedule_id = 7;</code>
      * @return The scheduleId.
      */
     int getScheduleId();
   }
   /**
    * <pre>
-   * Name: OKIEBJIHCGI
-   * CmdId: 8055
+   * CmdId: 8216
+   * Obf: EDFKNPCMLHN
    * </pre>
    *
    * Protobuf type {@code PlantFlowerGetSeedInfoReq}
@@ -74,7 +74,7 @@ public final class PlantFlowerGetSeedInfoReqOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
+            case 56: {
 
               scheduleId_ = input.readUInt32();
               break;
@@ -111,10 +111,10 @@ public final class PlantFlowerGetSeedInfoReqOuterClass {
               emu.grasscutter.net.proto.PlantFlowerGetSeedInfoReqOuterClass.PlantFlowerGetSeedInfoReq.class, emu.grasscutter.net.proto.PlantFlowerGetSeedInfoReqOuterClass.PlantFlowerGetSeedInfoReq.Builder.class);
     }
 
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 12;
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 7;
     private int scheduleId_;
     /**
-     * <code>uint32 schedule_id = 12;</code>
+     * <code>uint32 schedule_id = 7;</code>
      * @return The scheduleId.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class PlantFlowerGetSeedInfoReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (scheduleId_ != 0) {
-        output.writeUInt32(12, scheduleId_);
+        output.writeUInt32(7, scheduleId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class PlantFlowerGetSeedInfoReqOuterClass {
       size = 0;
       if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, scheduleId_);
+          .computeUInt32Size(7, scheduleId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class PlantFlowerGetSeedInfoReqOuterClass {
     }
     /**
      * <pre>
-     * Name: OKIEBJIHCGI
-     * CmdId: 8055
+     * CmdId: 8216
+     * Obf: EDFKNPCMLHN
      * </pre>
      *
      * Protobuf type {@code PlantFlowerGetSeedInfoReq}
@@ -431,7 +431,7 @@ public final class PlantFlowerGetSeedInfoReqOuterClass {
 
       private int scheduleId_ ;
       /**
-       * <code>uint32 schedule_id = 12;</code>
+       * <code>uint32 schedule_id = 7;</code>
        * @return The scheduleId.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class PlantFlowerGetSeedInfoReqOuterClass {
         return scheduleId_;
       }
       /**
-       * <code>uint32 schedule_id = 12;</code>
+       * <code>uint32 schedule_id = 7;</code>
        * @param value The scheduleId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class PlantFlowerGetSeedInfoReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 schedule_id = 12;</code>
+       * <code>uint32 schedule_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearScheduleId() {
@@ -527,7 +527,7 @@ public final class PlantFlowerGetSeedInfoReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037PlantFlowerGetSeedInfoReq.proto\"0\n\031Pla" +
-      "ntFlowerGetSeedInfoReq\022\023\n\013schedule_id\030\014 " +
+      "ntFlowerGetSeedInfoReq\022\023\n\013schedule_id\030\007 " +
       "\001(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

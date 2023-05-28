@@ -19,51 +19,51 @@ public final class CrystalLinkEnterDungeonRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 9;</code>
-     * @return The retcode.
+     * <code>uint32 level_id = 4;</code>
+     * @return The levelId.
      */
-    int getRetcode();
+    int getLevelId();
 
     /**
-     * <code>uint32 difficulty_id = 1;</code>
-     * @return The difficultyId.
-     */
-    int getDifficultyId();
-
-    /**
-     * <code>repeated .CrystalLinkTeamInfo team_info_list = 12;</code>
+     * <code>repeated .CrystalLinkTeamInfo team_info_list = 2;</code>
      */
     java.util.List<emu.grasscutter.net.proto.CrystalLinkTeamInfoOuterClass.CrystalLinkTeamInfo> 
         getTeamInfoListList();
     /**
-     * <code>repeated .CrystalLinkTeamInfo team_info_list = 12;</code>
+     * <code>repeated .CrystalLinkTeamInfo team_info_list = 2;</code>
      */
     emu.grasscutter.net.proto.CrystalLinkTeamInfoOuterClass.CrystalLinkTeamInfo getTeamInfoList(int index);
     /**
-     * <code>repeated .CrystalLinkTeamInfo team_info_list = 12;</code>
+     * <code>repeated .CrystalLinkTeamInfo team_info_list = 2;</code>
      */
     int getTeamInfoListCount();
     /**
-     * <code>repeated .CrystalLinkTeamInfo team_info_list = 12;</code>
+     * <code>repeated .CrystalLinkTeamInfo team_info_list = 2;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.CrystalLinkTeamInfoOuterClass.CrystalLinkTeamInfoOrBuilder> 
         getTeamInfoListOrBuilderList();
     /**
-     * <code>repeated .CrystalLinkTeamInfo team_info_list = 12;</code>
+     * <code>repeated .CrystalLinkTeamInfo team_info_list = 2;</code>
      */
     emu.grasscutter.net.proto.CrystalLinkTeamInfoOuterClass.CrystalLinkTeamInfoOrBuilder getTeamInfoListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 level_id = 5;</code>
-     * @return The levelId.
+     * <code>int32 retcode = 5;</code>
+     * @return The retcode.
      */
-    int getLevelId();
+    int getRetcode();
+
+    /**
+     * <code>uint32 difficulty_id = 7;</code>
+     * @return The difficultyId.
+     */
+    int getDifficultyId();
   }
   /**
    * <pre>
-   * Name: DBLKKPIOGGG
-   * CmdId: 8067
+   * CmdId: 8605
+   * Obf: EGLCACABKBJ
    * </pre>
    *
    * Protobuf type {@code CrystalLinkEnterDungeonRsp}
@@ -112,28 +112,28 @@ public final class CrystalLinkEnterDungeonRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              difficultyId_ = input.readUInt32();
-              break;
-            }
-            case 40: {
-
-              levelId_ = input.readUInt32();
-              break;
-            }
-            case 72: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 98: {
+            case 18: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 teamInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CrystalLinkTeamInfoOuterClass.CrystalLinkTeamInfo>();
                 mutable_bitField0_ |= 0x00000001;
               }
               teamInfoList_.add(
                   input.readMessage(emu.grasscutter.net.proto.CrystalLinkTeamInfoOuterClass.CrystalLinkTeamInfo.parser(), extensionRegistry));
+              break;
+            }
+            case 32: {
+
+              levelId_ = input.readUInt32();
+              break;
+            }
+            case 40: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 56: {
+
+              difficultyId_ = input.readUInt32();
               break;
             }
             default: {
@@ -171,39 +171,28 @@ public final class CrystalLinkEnterDungeonRspOuterClass {
               emu.grasscutter.net.proto.CrystalLinkEnterDungeonRspOuterClass.CrystalLinkEnterDungeonRsp.class, emu.grasscutter.net.proto.CrystalLinkEnterDungeonRspOuterClass.CrystalLinkEnterDungeonRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 9;
-    private int retcode_;
+    public static final int LEVEL_ID_FIELD_NUMBER = 4;
+    private int levelId_;
     /**
-     * <code>int32 retcode = 9;</code>
-     * @return The retcode.
+     * <code>uint32 level_id = 4;</code>
+     * @return The levelId.
      */
     @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
+    public int getLevelId() {
+      return levelId_;
     }
 
-    public static final int DIFFICULTY_ID_FIELD_NUMBER = 1;
-    private int difficultyId_;
-    /**
-     * <code>uint32 difficulty_id = 1;</code>
-     * @return The difficultyId.
-     */
-    @java.lang.Override
-    public int getDifficultyId() {
-      return difficultyId_;
-    }
-
-    public static final int TEAM_INFO_LIST_FIELD_NUMBER = 12;
+    public static final int TEAM_INFO_LIST_FIELD_NUMBER = 2;
     private java.util.List<emu.grasscutter.net.proto.CrystalLinkTeamInfoOuterClass.CrystalLinkTeamInfo> teamInfoList_;
     /**
-     * <code>repeated .CrystalLinkTeamInfo team_info_list = 12;</code>
+     * <code>repeated .CrystalLinkTeamInfo team_info_list = 2;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.CrystalLinkTeamInfoOuterClass.CrystalLinkTeamInfo> getTeamInfoListList() {
       return teamInfoList_;
     }
     /**
-     * <code>repeated .CrystalLinkTeamInfo team_info_list = 12;</code>
+     * <code>repeated .CrystalLinkTeamInfo team_info_list = 2;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.CrystalLinkTeamInfoOuterClass.CrystalLinkTeamInfoOrBuilder> 
@@ -211,21 +200,21 @@ public final class CrystalLinkEnterDungeonRspOuterClass {
       return teamInfoList_;
     }
     /**
-     * <code>repeated .CrystalLinkTeamInfo team_info_list = 12;</code>
+     * <code>repeated .CrystalLinkTeamInfo team_info_list = 2;</code>
      */
     @java.lang.Override
     public int getTeamInfoListCount() {
       return teamInfoList_.size();
     }
     /**
-     * <code>repeated .CrystalLinkTeamInfo team_info_list = 12;</code>
+     * <code>repeated .CrystalLinkTeamInfo team_info_list = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.CrystalLinkTeamInfoOuterClass.CrystalLinkTeamInfo getTeamInfoList(int index) {
       return teamInfoList_.get(index);
     }
     /**
-     * <code>repeated .CrystalLinkTeamInfo team_info_list = 12;</code>
+     * <code>repeated .CrystalLinkTeamInfo team_info_list = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.CrystalLinkTeamInfoOuterClass.CrystalLinkTeamInfoOrBuilder getTeamInfoListOrBuilder(
@@ -233,15 +222,26 @@ public final class CrystalLinkEnterDungeonRspOuterClass {
       return teamInfoList_.get(index);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 5;
-    private int levelId_;
+    public static final int RETCODE_FIELD_NUMBER = 5;
+    private int retcode_;
     /**
-     * <code>uint32 level_id = 5;</code>
-     * @return The levelId.
+     * <code>int32 retcode = 5;</code>
+     * @return The retcode.
      */
     @java.lang.Override
-    public int getLevelId() {
-      return levelId_;
+    public int getRetcode() {
+      return retcode_;
+    }
+
+    public static final int DIFFICULTY_ID_FIELD_NUMBER = 7;
+    private int difficultyId_;
+    /**
+     * <code>uint32 difficulty_id = 7;</code>
+     * @return The difficultyId.
+     */
+    @java.lang.Override
+    public int getDifficultyId() {
+      return difficultyId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -258,17 +258,17 @@ public final class CrystalLinkEnterDungeonRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (difficultyId_ != 0) {
-        output.writeUInt32(1, difficultyId_);
+      for (int i = 0; i < teamInfoList_.size(); i++) {
+        output.writeMessage(2, teamInfoList_.get(i));
       }
       if (levelId_ != 0) {
-        output.writeUInt32(5, levelId_);
+        output.writeUInt32(4, levelId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(9, retcode_);
+        output.writeInt32(5, retcode_);
       }
-      for (int i = 0; i < teamInfoList_.size(); i++) {
-        output.writeMessage(12, teamInfoList_.get(i));
+      if (difficultyId_ != 0) {
+        output.writeUInt32(7, difficultyId_);
       }
       unknownFields.writeTo(output);
     }
@@ -279,21 +279,21 @@ public final class CrystalLinkEnterDungeonRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (difficultyId_ != 0) {
+      for (int i = 0; i < teamInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, difficultyId_);
+          .computeMessageSize(2, teamInfoList_.get(i));
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, levelId_);
+          .computeUInt32Size(4, levelId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, retcode_);
+          .computeInt32Size(5, retcode_);
       }
-      for (int i = 0; i < teamInfoList_.size(); i++) {
+      if (difficultyId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, teamInfoList_.get(i));
+          .computeUInt32Size(7, difficultyId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -310,14 +310,14 @@ public final class CrystalLinkEnterDungeonRspOuterClass {
       }
       emu.grasscutter.net.proto.CrystalLinkEnterDungeonRspOuterClass.CrystalLinkEnterDungeonRsp other = (emu.grasscutter.net.proto.CrystalLinkEnterDungeonRspOuterClass.CrystalLinkEnterDungeonRsp) obj;
 
+      if (getLevelId()
+          != other.getLevelId()) return false;
+      if (!getTeamInfoListList()
+          .equals(other.getTeamInfoListList())) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
       if (getDifficultyId()
           != other.getDifficultyId()) return false;
-      if (!getTeamInfoListList()
-          .equals(other.getTeamInfoListList())) return false;
-      if (getLevelId()
-          != other.getLevelId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -329,16 +329,16 @@ public final class CrystalLinkEnterDungeonRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + DIFFICULTY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getDifficultyId();
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
       if (getTeamInfoListCount() > 0) {
         hash = (37 * hash) + TEAM_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getTeamInfoListList().hashCode();
       }
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + DIFFICULTY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getDifficultyId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -436,8 +436,8 @@ public final class CrystalLinkEnterDungeonRspOuterClass {
     }
     /**
      * <pre>
-     * Name: DBLKKPIOGGG
-     * CmdId: 8067
+     * CmdId: 8605
+     * Obf: EGLCACABKBJ
      * </pre>
      *
      * Protobuf type {@code CrystalLinkEnterDungeonRsp}
@@ -478,9 +478,7 @@ public final class CrystalLinkEnterDungeonRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
-        difficultyId_ = 0;
+        levelId_ = 0;
 
         if (teamInfoListBuilder_ == null) {
           teamInfoList_ = java.util.Collections.emptyList();
@@ -488,7 +486,9 @@ public final class CrystalLinkEnterDungeonRspOuterClass {
         } else {
           teamInfoListBuilder_.clear();
         }
-        levelId_ = 0;
+        retcode_ = 0;
+
+        difficultyId_ = 0;
 
         return this;
       }
@@ -517,8 +517,7 @@ public final class CrystalLinkEnterDungeonRspOuterClass {
       public emu.grasscutter.net.proto.CrystalLinkEnterDungeonRspOuterClass.CrystalLinkEnterDungeonRsp buildPartial() {
         emu.grasscutter.net.proto.CrystalLinkEnterDungeonRspOuterClass.CrystalLinkEnterDungeonRsp result = new emu.grasscutter.net.proto.CrystalLinkEnterDungeonRspOuterClass.CrystalLinkEnterDungeonRsp(this);
         int from_bitField0_ = bitField0_;
-        result.retcode_ = retcode_;
-        result.difficultyId_ = difficultyId_;
+        result.levelId_ = levelId_;
         if (teamInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             teamInfoList_ = java.util.Collections.unmodifiableList(teamInfoList_);
@@ -528,7 +527,8 @@ public final class CrystalLinkEnterDungeonRspOuterClass {
         } else {
           result.teamInfoList_ = teamInfoListBuilder_.build();
         }
-        result.levelId_ = levelId_;
+        result.retcode_ = retcode_;
+        result.difficultyId_ = difficultyId_;
         onBuilt();
         return result;
       }
@@ -577,11 +577,8 @@ public final class CrystalLinkEnterDungeonRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CrystalLinkEnterDungeonRspOuterClass.CrystalLinkEnterDungeonRsp other) {
         if (other == emu.grasscutter.net.proto.CrystalLinkEnterDungeonRspOuterClass.CrystalLinkEnterDungeonRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
-        if (other.getDifficultyId() != 0) {
-          setDifficultyId(other.getDifficultyId());
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
         }
         if (teamInfoListBuilder_ == null) {
           if (!other.teamInfoList_.isEmpty()) {
@@ -609,8 +606,11 @@ public final class CrystalLinkEnterDungeonRspOuterClass {
             }
           }
         }
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
+        }
+        if (other.getDifficultyId() != 0) {
+          setDifficultyId(other.getDifficultyId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -642,64 +642,33 @@ public final class CrystalLinkEnterDungeonRspOuterClass {
       }
       private int bitField0_;
 
-      private int retcode_ ;
+      private int levelId_ ;
       /**
-       * <code>int32 retcode = 9;</code>
-       * @return The retcode.
+       * <code>uint32 level_id = 4;</code>
+       * @return The levelId.
        */
       @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
+      public int getLevelId() {
+        return levelId_;
       }
       /**
-       * <code>int32 retcode = 9;</code>
-       * @param value The retcode to set.
+       * <code>uint32 level_id = 4;</code>
+       * @param value The levelId to set.
        * @return This builder for chaining.
        */
-      public Builder setRetcode(int value) {
+      public Builder setLevelId(int value) {
         
-        retcode_ = value;
+        levelId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>uint32 level_id = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearRetcode() {
+      public Builder clearLevelId() {
         
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int difficultyId_ ;
-      /**
-       * <code>uint32 difficulty_id = 1;</code>
-       * @return The difficultyId.
-       */
-      @java.lang.Override
-      public int getDifficultyId() {
-        return difficultyId_;
-      }
-      /**
-       * <code>uint32 difficulty_id = 1;</code>
-       * @param value The difficultyId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDifficultyId(int value) {
-        
-        difficultyId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 difficulty_id = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDifficultyId() {
-        
-        difficultyId_ = 0;
+        levelId_ = 0;
         onChanged();
         return this;
       }
@@ -717,7 +686,7 @@ public final class CrystalLinkEnterDungeonRspOuterClass {
           emu.grasscutter.net.proto.CrystalLinkTeamInfoOuterClass.CrystalLinkTeamInfo, emu.grasscutter.net.proto.CrystalLinkTeamInfoOuterClass.CrystalLinkTeamInfo.Builder, emu.grasscutter.net.proto.CrystalLinkTeamInfoOuterClass.CrystalLinkTeamInfoOrBuilder> teamInfoListBuilder_;
 
       /**
-       * <code>repeated .CrystalLinkTeamInfo team_info_list = 12;</code>
+       * <code>repeated .CrystalLinkTeamInfo team_info_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.CrystalLinkTeamInfoOuterClass.CrystalLinkTeamInfo> getTeamInfoListList() {
         if (teamInfoListBuilder_ == null) {
@@ -727,7 +696,7 @@ public final class CrystalLinkEnterDungeonRspOuterClass {
         }
       }
       /**
-       * <code>repeated .CrystalLinkTeamInfo team_info_list = 12;</code>
+       * <code>repeated .CrystalLinkTeamInfo team_info_list = 2;</code>
        */
       public int getTeamInfoListCount() {
         if (teamInfoListBuilder_ == null) {
@@ -737,7 +706,7 @@ public final class CrystalLinkEnterDungeonRspOuterClass {
         }
       }
       /**
-       * <code>repeated .CrystalLinkTeamInfo team_info_list = 12;</code>
+       * <code>repeated .CrystalLinkTeamInfo team_info_list = 2;</code>
        */
       public emu.grasscutter.net.proto.CrystalLinkTeamInfoOuterClass.CrystalLinkTeamInfo getTeamInfoList(int index) {
         if (teamInfoListBuilder_ == null) {
@@ -747,7 +716,7 @@ public final class CrystalLinkEnterDungeonRspOuterClass {
         }
       }
       /**
-       * <code>repeated .CrystalLinkTeamInfo team_info_list = 12;</code>
+       * <code>repeated .CrystalLinkTeamInfo team_info_list = 2;</code>
        */
       public Builder setTeamInfoList(
           int index, emu.grasscutter.net.proto.CrystalLinkTeamInfoOuterClass.CrystalLinkTeamInfo value) {
@@ -764,7 +733,7 @@ public final class CrystalLinkEnterDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkTeamInfo team_info_list = 12;</code>
+       * <code>repeated .CrystalLinkTeamInfo team_info_list = 2;</code>
        */
       public Builder setTeamInfoList(
           int index, emu.grasscutter.net.proto.CrystalLinkTeamInfoOuterClass.CrystalLinkTeamInfo.Builder builderForValue) {
@@ -778,7 +747,7 @@ public final class CrystalLinkEnterDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkTeamInfo team_info_list = 12;</code>
+       * <code>repeated .CrystalLinkTeamInfo team_info_list = 2;</code>
        */
       public Builder addTeamInfoList(emu.grasscutter.net.proto.CrystalLinkTeamInfoOuterClass.CrystalLinkTeamInfo value) {
         if (teamInfoListBuilder_ == null) {
@@ -794,7 +763,7 @@ public final class CrystalLinkEnterDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkTeamInfo team_info_list = 12;</code>
+       * <code>repeated .CrystalLinkTeamInfo team_info_list = 2;</code>
        */
       public Builder addTeamInfoList(
           int index, emu.grasscutter.net.proto.CrystalLinkTeamInfoOuterClass.CrystalLinkTeamInfo value) {
@@ -811,7 +780,7 @@ public final class CrystalLinkEnterDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkTeamInfo team_info_list = 12;</code>
+       * <code>repeated .CrystalLinkTeamInfo team_info_list = 2;</code>
        */
       public Builder addTeamInfoList(
           emu.grasscutter.net.proto.CrystalLinkTeamInfoOuterClass.CrystalLinkTeamInfo.Builder builderForValue) {
@@ -825,7 +794,7 @@ public final class CrystalLinkEnterDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkTeamInfo team_info_list = 12;</code>
+       * <code>repeated .CrystalLinkTeamInfo team_info_list = 2;</code>
        */
       public Builder addTeamInfoList(
           int index, emu.grasscutter.net.proto.CrystalLinkTeamInfoOuterClass.CrystalLinkTeamInfo.Builder builderForValue) {
@@ -839,7 +808,7 @@ public final class CrystalLinkEnterDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkTeamInfo team_info_list = 12;</code>
+       * <code>repeated .CrystalLinkTeamInfo team_info_list = 2;</code>
        */
       public Builder addAllTeamInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.CrystalLinkTeamInfoOuterClass.CrystalLinkTeamInfo> values) {
@@ -854,7 +823,7 @@ public final class CrystalLinkEnterDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkTeamInfo team_info_list = 12;</code>
+       * <code>repeated .CrystalLinkTeamInfo team_info_list = 2;</code>
        */
       public Builder clearTeamInfoList() {
         if (teamInfoListBuilder_ == null) {
@@ -867,7 +836,7 @@ public final class CrystalLinkEnterDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkTeamInfo team_info_list = 12;</code>
+       * <code>repeated .CrystalLinkTeamInfo team_info_list = 2;</code>
        */
       public Builder removeTeamInfoList(int index) {
         if (teamInfoListBuilder_ == null) {
@@ -880,14 +849,14 @@ public final class CrystalLinkEnterDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CrystalLinkTeamInfo team_info_list = 12;</code>
+       * <code>repeated .CrystalLinkTeamInfo team_info_list = 2;</code>
        */
       public emu.grasscutter.net.proto.CrystalLinkTeamInfoOuterClass.CrystalLinkTeamInfo.Builder getTeamInfoListBuilder(
           int index) {
         return getTeamInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .CrystalLinkTeamInfo team_info_list = 12;</code>
+       * <code>repeated .CrystalLinkTeamInfo team_info_list = 2;</code>
        */
       public emu.grasscutter.net.proto.CrystalLinkTeamInfoOuterClass.CrystalLinkTeamInfoOrBuilder getTeamInfoListOrBuilder(
           int index) {
@@ -897,7 +866,7 @@ public final class CrystalLinkEnterDungeonRspOuterClass {
         }
       }
       /**
-       * <code>repeated .CrystalLinkTeamInfo team_info_list = 12;</code>
+       * <code>repeated .CrystalLinkTeamInfo team_info_list = 2;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.CrystalLinkTeamInfoOuterClass.CrystalLinkTeamInfoOrBuilder> 
            getTeamInfoListOrBuilderList() {
@@ -908,14 +877,14 @@ public final class CrystalLinkEnterDungeonRspOuterClass {
         }
       }
       /**
-       * <code>repeated .CrystalLinkTeamInfo team_info_list = 12;</code>
+       * <code>repeated .CrystalLinkTeamInfo team_info_list = 2;</code>
        */
       public emu.grasscutter.net.proto.CrystalLinkTeamInfoOuterClass.CrystalLinkTeamInfo.Builder addTeamInfoListBuilder() {
         return getTeamInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.CrystalLinkTeamInfoOuterClass.CrystalLinkTeamInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .CrystalLinkTeamInfo team_info_list = 12;</code>
+       * <code>repeated .CrystalLinkTeamInfo team_info_list = 2;</code>
        */
       public emu.grasscutter.net.proto.CrystalLinkTeamInfoOuterClass.CrystalLinkTeamInfo.Builder addTeamInfoListBuilder(
           int index) {
@@ -923,7 +892,7 @@ public final class CrystalLinkEnterDungeonRspOuterClass {
             index, emu.grasscutter.net.proto.CrystalLinkTeamInfoOuterClass.CrystalLinkTeamInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .CrystalLinkTeamInfo team_info_list = 12;</code>
+       * <code>repeated .CrystalLinkTeamInfo team_info_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.CrystalLinkTeamInfoOuterClass.CrystalLinkTeamInfo.Builder> 
            getTeamInfoListBuilderList() {
@@ -944,33 +913,64 @@ public final class CrystalLinkEnterDungeonRspOuterClass {
         return teamInfoListBuilder_;
       }
 
-      private int levelId_ ;
+      private int retcode_ ;
       /**
-       * <code>uint32 level_id = 5;</code>
-       * @return The levelId.
+       * <code>int32 retcode = 5;</code>
+       * @return The retcode.
        */
       @java.lang.Override
-      public int getLevelId() {
-        return levelId_;
+      public int getRetcode() {
+        return retcode_;
       }
       /**
-       * <code>uint32 level_id = 5;</code>
-       * @param value The levelId to set.
+       * <code>int32 retcode = 5;</code>
+       * @param value The retcode to set.
        * @return This builder for chaining.
        */
-      public Builder setLevelId(int value) {
+      public Builder setRetcode(int value) {
         
-        levelId_ = value;
+        retcode_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 level_id = 5;</code>
+       * <code>int32 retcode = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLevelId() {
+      public Builder clearRetcode() {
         
-        levelId_ = 0;
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int difficultyId_ ;
+      /**
+       * <code>uint32 difficulty_id = 7;</code>
+       * @return The difficultyId.
+       */
+      @java.lang.Override
+      public int getDifficultyId() {
+        return difficultyId_;
+      }
+      /**
+       * <code>uint32 difficulty_id = 7;</code>
+       * @param value The difficultyId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDifficultyId(int value) {
+        
+        difficultyId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 difficulty_id = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDifficultyId() {
+        
+        difficultyId_ = 0;
         onChanged();
         return this;
       }
@@ -1043,9 +1043,9 @@ public final class CrystalLinkEnterDungeonRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n CrystalLinkEnterDungeonRsp.proto\032\031Crys" +
       "talLinkTeamInfo.proto\"\204\001\n\032CrystalLinkEnt" +
-      "erDungeonRsp\022\017\n\007retcode\030\t \001(\005\022\025\n\rdifficu" +
-      "lty_id\030\001 \001(\r\022,\n\016team_info_list\030\014 \003(\0132\024.C" +
-      "rystalLinkTeamInfo\022\020\n\010level_id\030\005 \001(\rB\033\n\031" +
+      "erDungeonRsp\022\020\n\010level_id\030\004 \001(\r\022,\n\016team_i" +
+      "nfo_list\030\002 \003(\0132\024.CrystalLinkTeamInfo\022\017\n\007" +
+      "retcode\030\005 \001(\005\022\025\n\rdifficulty_id\030\007 \001(\rB\033\n\031" +
       "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1058,7 +1058,7 @@ public final class CrystalLinkEnterDungeonRspOuterClass {
     internal_static_CrystalLinkEnterDungeonRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CrystalLinkEnterDungeonRsp_descriptor,
-        new java.lang.String[] { "Retcode", "DifficultyId", "TeamInfoList", "LevelId", });
+        new java.lang.String[] { "LevelId", "TeamInfoList", "Retcode", "DifficultyId", });
     emu.grasscutter.net.proto.CrystalLinkTeamInfoOuterClass.getDescriptor();
   }
 

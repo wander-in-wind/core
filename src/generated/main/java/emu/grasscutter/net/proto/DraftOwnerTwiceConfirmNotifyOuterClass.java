@@ -19,21 +19,21 @@ public final class DraftOwnerTwiceConfirmNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 draft_id = 14;</code>
+     * <code>uint32 draft_id = 3;</code>
      * @return The draftId.
      */
     int getDraftId();
 
     /**
-     * <code>uint32 twice_confirm_deadline_time = 3;</code>
+     * <code>uint32 twice_confirm_deadline_time = 5;</code>
      * @return The twiceConfirmDeadlineTime.
      */
     int getTwiceConfirmDeadlineTime();
   }
   /**
    * <pre>
-   * Name: CEGIJBCFPDA
-   * CmdId: 5450
+   * CmdId: 5430
+   * Obf: MFIINAFHINM
    * </pre>
    *
    * Protobuf type {@code DraftOwnerTwiceConfirmNotify}
@@ -82,12 +82,12 @@ public final class DraftOwnerTwiceConfirmNotifyOuterClass {
               break;
             case 24: {
 
-              twiceConfirmDeadlineTime_ = input.readUInt32();
+              draftId_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 40: {
 
-              draftId_ = input.readUInt32();
+              twiceConfirmDeadlineTime_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,10 +122,10 @@ public final class DraftOwnerTwiceConfirmNotifyOuterClass {
               emu.grasscutter.net.proto.DraftOwnerTwiceConfirmNotifyOuterClass.DraftOwnerTwiceConfirmNotify.class, emu.grasscutter.net.proto.DraftOwnerTwiceConfirmNotifyOuterClass.DraftOwnerTwiceConfirmNotify.Builder.class);
     }
 
-    public static final int DRAFT_ID_FIELD_NUMBER = 14;
+    public static final int DRAFT_ID_FIELD_NUMBER = 3;
     private int draftId_;
     /**
-     * <code>uint32 draft_id = 14;</code>
+     * <code>uint32 draft_id = 3;</code>
      * @return The draftId.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class DraftOwnerTwiceConfirmNotifyOuterClass {
       return draftId_;
     }
 
-    public static final int TWICE_CONFIRM_DEADLINE_TIME_FIELD_NUMBER = 3;
+    public static final int TWICE_CONFIRM_DEADLINE_TIME_FIELD_NUMBER = 5;
     private int twiceConfirmDeadlineTime_;
     /**
-     * <code>uint32 twice_confirm_deadline_time = 3;</code>
+     * <code>uint32 twice_confirm_deadline_time = 5;</code>
      * @return The twiceConfirmDeadlineTime.
      */
     @java.lang.Override
@@ -158,11 +158,11 @@ public final class DraftOwnerTwiceConfirmNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (twiceConfirmDeadlineTime_ != 0) {
-        output.writeUInt32(3, twiceConfirmDeadlineTime_);
-      }
       if (draftId_ != 0) {
-        output.writeUInt32(14, draftId_);
+        output.writeUInt32(3, draftId_);
+      }
+      if (twiceConfirmDeadlineTime_ != 0) {
+        output.writeUInt32(5, twiceConfirmDeadlineTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class DraftOwnerTwiceConfirmNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (twiceConfirmDeadlineTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, twiceConfirmDeadlineTime_);
-      }
       if (draftId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, draftId_);
+          .computeUInt32Size(3, draftId_);
+      }
+      if (twiceConfirmDeadlineTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, twiceConfirmDeadlineTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class DraftOwnerTwiceConfirmNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: CEGIJBCFPDA
-     * CmdId: 5450
+     * CmdId: 5430
+     * Obf: MFIINAFHINM
      * </pre>
      *
      * Protobuf type {@code DraftOwnerTwiceConfirmNotify}
@@ -470,7 +470,7 @@ public final class DraftOwnerTwiceConfirmNotifyOuterClass {
 
       private int draftId_ ;
       /**
-       * <code>uint32 draft_id = 14;</code>
+       * <code>uint32 draft_id = 3;</code>
        * @return The draftId.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class DraftOwnerTwiceConfirmNotifyOuterClass {
         return draftId_;
       }
       /**
-       * <code>uint32 draft_id = 14;</code>
+       * <code>uint32 draft_id = 3;</code>
        * @param value The draftId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class DraftOwnerTwiceConfirmNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 draft_id = 14;</code>
+       * <code>uint32 draft_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearDraftId() {
@@ -501,7 +501,7 @@ public final class DraftOwnerTwiceConfirmNotifyOuterClass {
 
       private int twiceConfirmDeadlineTime_ ;
       /**
-       * <code>uint32 twice_confirm_deadline_time = 3;</code>
+       * <code>uint32 twice_confirm_deadline_time = 5;</code>
        * @return The twiceConfirmDeadlineTime.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class DraftOwnerTwiceConfirmNotifyOuterClass {
         return twiceConfirmDeadlineTime_;
       }
       /**
-       * <code>uint32 twice_confirm_deadline_time = 3;</code>
+       * <code>uint32 twice_confirm_deadline_time = 5;</code>
        * @param value The twiceConfirmDeadlineTime to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class DraftOwnerTwiceConfirmNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 twice_confirm_deadline_time = 3;</code>
+       * <code>uint32 twice_confirm_deadline_time = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearTwiceConfirmDeadlineTime() {
@@ -598,7 +598,7 @@ public final class DraftOwnerTwiceConfirmNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"DraftOwnerTwiceConfirmNotify.proto\"U\n\034" +
       "DraftOwnerTwiceConfirmNotify\022\020\n\010draft_id" +
-      "\030\016 \001(\r\022#\n\033twice_confirm_deadline_time\030\003 " +
+      "\030\003 \001(\r\022#\n\033twice_confirm_deadline_time\030\005 " +
       "\001(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

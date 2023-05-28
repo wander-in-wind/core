@@ -19,26 +19,26 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 buff_id = 7;</code>
+     * <code>uint64 FBNDNNECICJ = 9;</code>
+     * @return The fBNDNNECICJ.
+     */
+    long getFBNDNNECICJ();
+
+    /**
+     * <code>uint32 buff_id = 13;</code>
      * @return The buffId.
      */
     int getBuffId();
 
     /**
-     * <code>uint64 AGGDHOKKEDC = 12;</code>
-     * @return The aGGDHOKKEDC.
+     * <code>uint64 ELNKGOFANFE = 7;</code>
+     * @return The eLNKGOFANFE.
      */
-    long getAGGDHOKKEDC();
-
-    /**
-     * <code>uint64 DCHEPPIPMEN = 13;</code>
-     * @return The dCHEPPIPMEN.
-     */
-    long getDCHEPPIPMEN();
+    long getELNKGOFANFE();
   }
   /**
    * <pre>
-   * Name: GBLJAIEJPKF
+   * Obf: GAANOOHAIAD
    * </pre>
    *
    * Protobuf type {@code SceneGalleryInstableSprayBuffInfo}
@@ -87,17 +87,17 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
               break;
             case 56: {
 
-              buffId_ = input.readUInt32();
+              eLNKGOFANFE_ = input.readUInt64();
               break;
             }
-            case 96: {
+            case 72: {
 
-              aGGDHOKKEDC_ = input.readUInt64();
+              fBNDNNECICJ_ = input.readUInt64();
               break;
             }
             case 104: {
 
-              dCHEPPIPMEN_ = input.readUInt64();
+              buffId_ = input.readUInt32();
               break;
             }
             default: {
@@ -132,10 +132,21 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.class, emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.Builder.class);
     }
 
-    public static final int BUFF_ID_FIELD_NUMBER = 7;
+    public static final int FBNDNNECICJ_FIELD_NUMBER = 9;
+    private long fBNDNNECICJ_;
+    /**
+     * <code>uint64 FBNDNNECICJ = 9;</code>
+     * @return The fBNDNNECICJ.
+     */
+    @java.lang.Override
+    public long getFBNDNNECICJ() {
+      return fBNDNNECICJ_;
+    }
+
+    public static final int BUFF_ID_FIELD_NUMBER = 13;
     private int buffId_;
     /**
-     * <code>uint32 buff_id = 7;</code>
+     * <code>uint32 buff_id = 13;</code>
      * @return The buffId.
      */
     @java.lang.Override
@@ -143,26 +154,15 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
       return buffId_;
     }
 
-    public static final int AGGDHOKKEDC_FIELD_NUMBER = 12;
-    private long aGGDHOKKEDC_;
+    public static final int ELNKGOFANFE_FIELD_NUMBER = 7;
+    private long eLNKGOFANFE_;
     /**
-     * <code>uint64 AGGDHOKKEDC = 12;</code>
-     * @return The aGGDHOKKEDC.
+     * <code>uint64 ELNKGOFANFE = 7;</code>
+     * @return The eLNKGOFANFE.
      */
     @java.lang.Override
-    public long getAGGDHOKKEDC() {
-      return aGGDHOKKEDC_;
-    }
-
-    public static final int DCHEPPIPMEN_FIELD_NUMBER = 13;
-    private long dCHEPPIPMEN_;
-    /**
-     * <code>uint64 DCHEPPIPMEN = 13;</code>
-     * @return The dCHEPPIPMEN.
-     */
-    @java.lang.Override
-    public long getDCHEPPIPMEN() {
-      return dCHEPPIPMEN_;
+    public long getELNKGOFANFE() {
+      return eLNKGOFANFE_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -179,14 +179,14 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (eLNKGOFANFE_ != 0L) {
+        output.writeUInt64(7, eLNKGOFANFE_);
+      }
+      if (fBNDNNECICJ_ != 0L) {
+        output.writeUInt64(9, fBNDNNECICJ_);
+      }
       if (buffId_ != 0) {
-        output.writeUInt32(7, buffId_);
-      }
-      if (aGGDHOKKEDC_ != 0L) {
-        output.writeUInt64(12, aGGDHOKKEDC_);
-      }
-      if (dCHEPPIPMEN_ != 0L) {
-        output.writeUInt64(13, dCHEPPIPMEN_);
+        output.writeUInt32(13, buffId_);
       }
       unknownFields.writeTo(output);
     }
@@ -197,17 +197,17 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (eLNKGOFANFE_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(7, eLNKGOFANFE_);
+      }
+      if (fBNDNNECICJ_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(9, fBNDNNECICJ_);
+      }
       if (buffId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, buffId_);
-      }
-      if (aGGDHOKKEDC_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(12, aGGDHOKKEDC_);
-      }
-      if (dCHEPPIPMEN_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(13, dCHEPPIPMEN_);
+          .computeUInt32Size(13, buffId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -224,12 +224,12 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo other = (emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo) obj;
 
+      if (getFBNDNNECICJ()
+          != other.getFBNDNNECICJ()) return false;
       if (getBuffId()
           != other.getBuffId()) return false;
-      if (getAGGDHOKKEDC()
-          != other.getAGGDHOKKEDC()) return false;
-      if (getDCHEPPIPMEN()
-          != other.getDCHEPPIPMEN()) return false;
+      if (getELNKGOFANFE()
+          != other.getELNKGOFANFE()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -241,14 +241,14 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + FBNDNNECICJ_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getFBNDNNECICJ());
       hash = (37 * hash) + BUFF_ID_FIELD_NUMBER;
       hash = (53 * hash) + getBuffId();
-      hash = (37 * hash) + AGGDHOKKEDC_FIELD_NUMBER;
+      hash = (37 * hash) + ELNKGOFANFE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getAGGDHOKKEDC());
-      hash = (37 * hash) + DCHEPPIPMEN_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getDCHEPPIPMEN());
+          getELNKGOFANFE());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -346,7 +346,7 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: GBLJAIEJPKF
+     * Obf: GAANOOHAIAD
      * </pre>
      *
      * Protobuf type {@code SceneGalleryInstableSprayBuffInfo}
@@ -386,11 +386,11 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        fBNDNNECICJ_ = 0L;
+
         buffId_ = 0;
 
-        aGGDHOKKEDC_ = 0L;
-
-        dCHEPPIPMEN_ = 0L;
+        eLNKGOFANFE_ = 0L;
 
         return this;
       }
@@ -418,9 +418,9 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo result = new emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo(this);
+        result.fBNDNNECICJ_ = fBNDNNECICJ_;
         result.buffId_ = buffId_;
-        result.aGGDHOKKEDC_ = aGGDHOKKEDC_;
-        result.dCHEPPIPMEN_ = dCHEPPIPMEN_;
+        result.eLNKGOFANFE_ = eLNKGOFANFE_;
         onBuilt();
         return result;
       }
@@ -469,14 +469,14 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo other) {
         if (other == emu.grasscutter.net.proto.SceneGalleryInstableSprayBuffInfoOuterClass.SceneGalleryInstableSprayBuffInfo.getDefaultInstance()) return this;
+        if (other.getFBNDNNECICJ() != 0L) {
+          setFBNDNNECICJ(other.getFBNDNNECICJ());
+        }
         if (other.getBuffId() != 0) {
           setBuffId(other.getBuffId());
         }
-        if (other.getAGGDHOKKEDC() != 0L) {
-          setAGGDHOKKEDC(other.getAGGDHOKKEDC());
-        }
-        if (other.getDCHEPPIPMEN() != 0L) {
-          setDCHEPPIPMEN(other.getDCHEPPIPMEN());
+        if (other.getELNKGOFANFE() != 0L) {
+          setELNKGOFANFE(other.getELNKGOFANFE());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -507,9 +507,40 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
         return this;
       }
 
+      private long fBNDNNECICJ_ ;
+      /**
+       * <code>uint64 FBNDNNECICJ = 9;</code>
+       * @return The fBNDNNECICJ.
+       */
+      @java.lang.Override
+      public long getFBNDNNECICJ() {
+        return fBNDNNECICJ_;
+      }
+      /**
+       * <code>uint64 FBNDNNECICJ = 9;</code>
+       * @param value The fBNDNNECICJ to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFBNDNNECICJ(long value) {
+        
+        fBNDNNECICJ_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint64 FBNDNNECICJ = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFBNDNNECICJ() {
+        
+        fBNDNNECICJ_ = 0L;
+        onChanged();
+        return this;
+      }
+
       private int buffId_ ;
       /**
-       * <code>uint32 buff_id = 7;</code>
+       * <code>uint32 buff_id = 13;</code>
        * @return The buffId.
        */
       @java.lang.Override
@@ -517,7 +548,7 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
         return buffId_;
       }
       /**
-       * <code>uint32 buff_id = 7;</code>
+       * <code>uint32 buff_id = 13;</code>
        * @param value The buffId to set.
        * @return This builder for chaining.
        */
@@ -528,7 +559,7 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 buff_id = 7;</code>
+       * <code>uint32 buff_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearBuffId() {
@@ -538,64 +569,33 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
         return this;
       }
 
-      private long aGGDHOKKEDC_ ;
+      private long eLNKGOFANFE_ ;
       /**
-       * <code>uint64 AGGDHOKKEDC = 12;</code>
-       * @return The aGGDHOKKEDC.
+       * <code>uint64 ELNKGOFANFE = 7;</code>
+       * @return The eLNKGOFANFE.
        */
       @java.lang.Override
-      public long getAGGDHOKKEDC() {
-        return aGGDHOKKEDC_;
+      public long getELNKGOFANFE() {
+        return eLNKGOFANFE_;
       }
       /**
-       * <code>uint64 AGGDHOKKEDC = 12;</code>
-       * @param value The aGGDHOKKEDC to set.
+       * <code>uint64 ELNKGOFANFE = 7;</code>
+       * @param value The eLNKGOFANFE to set.
        * @return This builder for chaining.
        */
-      public Builder setAGGDHOKKEDC(long value) {
+      public Builder setELNKGOFANFE(long value) {
         
-        aGGDHOKKEDC_ = value;
+        eLNKGOFANFE_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint64 AGGDHOKKEDC = 12;</code>
+       * <code>uint64 ELNKGOFANFE = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearAGGDHOKKEDC() {
+      public Builder clearELNKGOFANFE() {
         
-        aGGDHOKKEDC_ = 0L;
-        onChanged();
-        return this;
-      }
-
-      private long dCHEPPIPMEN_ ;
-      /**
-       * <code>uint64 DCHEPPIPMEN = 13;</code>
-       * @return The dCHEPPIPMEN.
-       */
-      @java.lang.Override
-      public long getDCHEPPIPMEN() {
-        return dCHEPPIPMEN_;
-      }
-      /**
-       * <code>uint64 DCHEPPIPMEN = 13;</code>
-       * @param value The dCHEPPIPMEN to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDCHEPPIPMEN(long value) {
-        
-        dCHEPPIPMEN_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 DCHEPPIPMEN = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDCHEPPIPMEN() {
-        
-        dCHEPPIPMEN_ = 0L;
+        eLNKGOFANFE_ = 0L;
         onChanged();
         return this;
       }
@@ -667,9 +667,9 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\'SceneGalleryInstableSprayBuffInfo.prot" +
-      "o\"^\n!SceneGalleryInstableSprayBuffInfo\022\017" +
-      "\n\007buff_id\030\007 \001(\r\022\023\n\013AGGDHOKKEDC\030\014 \001(\004\022\023\n\013" +
-      "DCHEPPIPMEN\030\r \001(\004B\033\n\031emu.grasscutter.net" +
+      "o\"^\n!SceneGalleryInstableSprayBuffInfo\022\023" +
+      "\n\013FBNDNNECICJ\030\t \001(\004\022\017\n\007buff_id\030\r \001(\r\022\023\n\013" +
+      "ELNKGOFANFE\030\007 \001(\004B\033\n\031emu.grasscutter.net" +
       ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -681,7 +681,7 @@ public final class SceneGalleryInstableSprayBuffInfoOuterClass {
     internal_static_SceneGalleryInstableSprayBuffInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryInstableSprayBuffInfo_descriptor,
-        new java.lang.String[] { "BuffId", "AGGDHOKKEDC", "DCHEPPIPMEN", });
+        new java.lang.String[] { "FBNDNNECICJ", "BuffId", "ELNKGOFANFE", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

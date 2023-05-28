@@ -19,7 +19,7 @@ public final class RestartCoinCollectPlaySingleModeReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 12;</code>
+     * <code>uint32 level_id = 7;</code>
      * @return The levelId.
      */
     int getLevelId();
@@ -32,8 +32,8 @@ public final class RestartCoinCollectPlaySingleModeReqOuterClass {
   }
   /**
    * <pre>
-   * Name: OCMDBKMAAPK
-   * CmdId: 22688
+   * CmdId: 22708
+   * Obf: JJAOHMJPPLF
    * </pre>
    *
    * Protobuf type {@code RestartCoinCollectPlaySingleModeReq}
@@ -85,7 +85,7 @@ public final class RestartCoinCollectPlaySingleModeReqOuterClass {
               multistagePlayIndex_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 56: {
 
               levelId_ = input.readUInt32();
               break;
@@ -122,10 +122,10 @@ public final class RestartCoinCollectPlaySingleModeReqOuterClass {
               emu.grasscutter.net.proto.RestartCoinCollectPlaySingleModeReqOuterClass.RestartCoinCollectPlaySingleModeReq.class, emu.grasscutter.net.proto.RestartCoinCollectPlaySingleModeReqOuterClass.RestartCoinCollectPlaySingleModeReq.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 12;
+    public static final int LEVEL_ID_FIELD_NUMBER = 7;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 12;</code>
+     * <code>uint32 level_id = 7;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -162,7 +162,7 @@ public final class RestartCoinCollectPlaySingleModeReqOuterClass {
         output.writeUInt32(1, multistagePlayIndex_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(12, levelId_);
+        output.writeUInt32(7, levelId_);
       }
       unknownFields.writeTo(output);
     }
@@ -179,7 +179,7 @@ public final class RestartCoinCollectPlaySingleModeReqOuterClass {
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, levelId_);
+          .computeUInt32Size(7, levelId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class RestartCoinCollectPlaySingleModeReqOuterClass {
     }
     /**
      * <pre>
-     * Name: OCMDBKMAAPK
-     * CmdId: 22688
+     * CmdId: 22708
+     * Obf: JJAOHMJPPLF
      * </pre>
      *
      * Protobuf type {@code RestartCoinCollectPlaySingleModeReq}
@@ -470,7 +470,7 @@ public final class RestartCoinCollectPlaySingleModeReqOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 12;</code>
+       * <code>uint32 level_id = 7;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class RestartCoinCollectPlaySingleModeReqOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 12;</code>
+       * <code>uint32 level_id = 7;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class RestartCoinCollectPlaySingleModeReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 12;</code>
+       * <code>uint32 level_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -598,7 +598,7 @@ public final class RestartCoinCollectPlaySingleModeReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n)RestartCoinCollectPlaySingleModeReq.pr" +
       "oto\"V\n#RestartCoinCollectPlaySingleModeR" +
-      "eq\022\020\n\010level_id\030\014 \001(\r\022\035\n\025multistage_play_" +
+      "eq\022\020\n\010level_id\030\007 \001(\r\022\035\n\025multistage_play_" +
       "index\030\001 \001(\rB\033\n\031emu.grasscutter.net.proto" +
       "b\006proto3"
     };

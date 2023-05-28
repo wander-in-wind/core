@@ -32,7 +32,7 @@ public final class AvatarEquipAffixInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: JPOMNGOBDIO
+   * Obf: MPLMIMHAFOJ
    * </pre>
    *
    * Protobuf type {@code AvatarEquipAffixInfo}
@@ -311,7 +311,7 @@ public final class AvatarEquipAffixInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: JPOMNGOBDIO
+     * Obf: MPLMIMHAFOJ
      * </pre>
      *
      * Protobuf type {@code AvatarEquipAffixInfo}

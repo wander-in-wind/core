@@ -26,8 +26,8 @@ public final class DungeonCandidateTeamSetReadyRspOuterClass {
   }
   /**
    * <pre>
-   * Name: AOLFFFCIKCI
-   * CmdId: 902
+   * CmdId: 971
+   * Obf: EFEDBKPNOCA
    * </pre>
    *
    * Protobuf type {@code DungeonCandidateTeamSetReadyRsp}
@@ -279,8 +279,8 @@ public final class DungeonCandidateTeamSetReadyRspOuterClass {
     }
     /**
      * <pre>
-     * Name: AOLFFFCIKCI
-     * CmdId: 902
+     * CmdId: 971
+     * Obf: EFEDBKPNOCA
      * </pre>
      *
      * Protobuf type {@code DungeonCandidateTeamSetReadyRsp}

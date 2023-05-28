@@ -19,45 +19,45 @@ public final class GetAllH5ActivityInfoRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 3;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>repeated .H5ActivityInfo h5_activity_info_list = 15;</code>
+     * <code>repeated .H5ActivityInfo h5_activity_info_list = 1;</code>
      */
     java.util.List<emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo> 
         getH5ActivityInfoListList();
     /**
-     * <code>repeated .H5ActivityInfo h5_activity_info_list = 15;</code>
+     * <code>repeated .H5ActivityInfo h5_activity_info_list = 1;</code>
      */
     emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo getH5ActivityInfoList(int index);
     /**
-     * <code>repeated .H5ActivityInfo h5_activity_info_list = 15;</code>
+     * <code>repeated .H5ActivityInfo h5_activity_info_list = 1;</code>
      */
     int getH5ActivityInfoListCount();
     /**
-     * <code>repeated .H5ActivityInfo h5_activity_info_list = 15;</code>
+     * <code>repeated .H5ActivityInfo h5_activity_info_list = 1;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfoOrBuilder> 
         getH5ActivityInfoListOrBuilderList();
     /**
-     * <code>repeated .H5ActivityInfo h5_activity_info_list = 15;</code>
+     * <code>repeated .H5ActivityInfo h5_activity_info_list = 1;</code>
      */
     emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfoOrBuilder getH5ActivityInfoListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 client_red_dot_timestamp = 12;</code>
+     * <code>uint32 client_red_dot_timestamp = 8;</code>
      * @return The clientRedDotTimestamp.
      */
     int getClientRedDotTimestamp();
   }
   /**
    * <pre>
-   * Name: LPIJIKGEHMN
-   * CmdId: 5698
+   * CmdId: 5678
+   * Obf: NNENDLPLIHI
    * </pre>
    *
    * Protobuf type {@code GetAllH5ActivityInfoRsp}
@@ -106,23 +106,23 @@ public final class GetAllH5ActivityInfoRspOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 96: {
-
-              clientRedDotTimestamp_ = input.readUInt32();
-              break;
-            }
-            case 122: {
+            case 10: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 h5ActivityInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo>();
                 mutable_bitField0_ |= 0x00000001;
               }
               h5ActivityInfoList_.add(
                   input.readMessage(emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo.parser(), extensionRegistry));
+              break;
+            }
+            case 48: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 64: {
+
+              clientRedDotTimestamp_ = input.readUInt32();
               break;
             }
             default: {
@@ -160,10 +160,10 @@ public final class GetAllH5ActivityInfoRspOuterClass {
               emu.grasscutter.net.proto.GetAllH5ActivityInfoRspOuterClass.GetAllH5ActivityInfoRsp.class, emu.grasscutter.net.proto.GetAllH5ActivityInfoRspOuterClass.GetAllH5ActivityInfoRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 3;
+    public static final int RETCODE_FIELD_NUMBER = 6;
     private int retcode_;
     /**
-     * <code>int32 retcode = 3;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -171,17 +171,17 @@ public final class GetAllH5ActivityInfoRspOuterClass {
       return retcode_;
     }
 
-    public static final int H5_ACTIVITY_INFO_LIST_FIELD_NUMBER = 15;
+    public static final int H5_ACTIVITY_INFO_LIST_FIELD_NUMBER = 1;
     private java.util.List<emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo> h5ActivityInfoList_;
     /**
-     * <code>repeated .H5ActivityInfo h5_activity_info_list = 15;</code>
+     * <code>repeated .H5ActivityInfo h5_activity_info_list = 1;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo> getH5ActivityInfoListList() {
       return h5ActivityInfoList_;
     }
     /**
-     * <code>repeated .H5ActivityInfo h5_activity_info_list = 15;</code>
+     * <code>repeated .H5ActivityInfo h5_activity_info_list = 1;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfoOrBuilder> 
@@ -189,21 +189,21 @@ public final class GetAllH5ActivityInfoRspOuterClass {
       return h5ActivityInfoList_;
     }
     /**
-     * <code>repeated .H5ActivityInfo h5_activity_info_list = 15;</code>
+     * <code>repeated .H5ActivityInfo h5_activity_info_list = 1;</code>
      */
     @java.lang.Override
     public int getH5ActivityInfoListCount() {
       return h5ActivityInfoList_.size();
     }
     /**
-     * <code>repeated .H5ActivityInfo h5_activity_info_list = 15;</code>
+     * <code>repeated .H5ActivityInfo h5_activity_info_list = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo getH5ActivityInfoList(int index) {
       return h5ActivityInfoList_.get(index);
     }
     /**
-     * <code>repeated .H5ActivityInfo h5_activity_info_list = 15;</code>
+     * <code>repeated .H5ActivityInfo h5_activity_info_list = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfoOrBuilder getH5ActivityInfoListOrBuilder(
@@ -211,10 +211,10 @@ public final class GetAllH5ActivityInfoRspOuterClass {
       return h5ActivityInfoList_.get(index);
     }
 
-    public static final int CLIENT_RED_DOT_TIMESTAMP_FIELD_NUMBER = 12;
+    public static final int CLIENT_RED_DOT_TIMESTAMP_FIELD_NUMBER = 8;
     private int clientRedDotTimestamp_;
     /**
-     * <code>uint32 client_red_dot_timestamp = 12;</code>
+     * <code>uint32 client_red_dot_timestamp = 8;</code>
      * @return The clientRedDotTimestamp.
      */
     @java.lang.Override
@@ -236,14 +236,14 @@ public final class GetAllH5ActivityInfoRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      for (int i = 0; i < h5ActivityInfoList_.size(); i++) {
+        output.writeMessage(1, h5ActivityInfoList_.get(i));
+      }
       if (retcode_ != 0) {
-        output.writeInt32(3, retcode_);
+        output.writeInt32(6, retcode_);
       }
       if (clientRedDotTimestamp_ != 0) {
-        output.writeUInt32(12, clientRedDotTimestamp_);
-      }
-      for (int i = 0; i < h5ActivityInfoList_.size(); i++) {
-        output.writeMessage(15, h5ActivityInfoList_.get(i));
+        output.writeUInt32(8, clientRedDotTimestamp_);
       }
       unknownFields.writeTo(output);
     }
@@ -254,17 +254,17 @@ public final class GetAllH5ActivityInfoRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      for (int i = 0; i < h5ActivityInfoList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, h5ActivityInfoList_.get(i));
+      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, retcode_);
+          .computeInt32Size(6, retcode_);
       }
       if (clientRedDotTimestamp_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, clientRedDotTimestamp_);
-      }
-      for (int i = 0; i < h5ActivityInfoList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, h5ActivityInfoList_.get(i));
+          .computeUInt32Size(8, clientRedDotTimestamp_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -403,8 +403,8 @@ public final class GetAllH5ActivityInfoRspOuterClass {
     }
     /**
      * <pre>
-     * Name: LPIJIKGEHMN
-     * CmdId: 5698
+     * CmdId: 5678
+     * Obf: NNENDLPLIHI
      * </pre>
      *
      * Protobuf type {@code GetAllH5ActivityInfoRsp}
@@ -605,7 +605,7 @@ public final class GetAllH5ActivityInfoRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 3;</code>
+       * <code>int32 retcode = 6;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -613,7 +613,7 @@ public final class GetAllH5ActivityInfoRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 3;</code>
+       * <code>int32 retcode = 6;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -624,7 +624,7 @@ public final class GetAllH5ActivityInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 3;</code>
+       * <code>int32 retcode = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -647,7 +647,7 @@ public final class GetAllH5ActivityInfoRspOuterClass {
           emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo, emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo.Builder, emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfoOrBuilder> h5ActivityInfoListBuilder_;
 
       /**
-       * <code>repeated .H5ActivityInfo h5_activity_info_list = 15;</code>
+       * <code>repeated .H5ActivityInfo h5_activity_info_list = 1;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo> getH5ActivityInfoListList() {
         if (h5ActivityInfoListBuilder_ == null) {
@@ -657,7 +657,7 @@ public final class GetAllH5ActivityInfoRspOuterClass {
         }
       }
       /**
-       * <code>repeated .H5ActivityInfo h5_activity_info_list = 15;</code>
+       * <code>repeated .H5ActivityInfo h5_activity_info_list = 1;</code>
        */
       public int getH5ActivityInfoListCount() {
         if (h5ActivityInfoListBuilder_ == null) {
@@ -667,7 +667,7 @@ public final class GetAllH5ActivityInfoRspOuterClass {
         }
       }
       /**
-       * <code>repeated .H5ActivityInfo h5_activity_info_list = 15;</code>
+       * <code>repeated .H5ActivityInfo h5_activity_info_list = 1;</code>
        */
       public emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo getH5ActivityInfoList(int index) {
         if (h5ActivityInfoListBuilder_ == null) {
@@ -677,7 +677,7 @@ public final class GetAllH5ActivityInfoRspOuterClass {
         }
       }
       /**
-       * <code>repeated .H5ActivityInfo h5_activity_info_list = 15;</code>
+       * <code>repeated .H5ActivityInfo h5_activity_info_list = 1;</code>
        */
       public Builder setH5ActivityInfoList(
           int index, emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo value) {
@@ -694,7 +694,7 @@ public final class GetAllH5ActivityInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .H5ActivityInfo h5_activity_info_list = 15;</code>
+       * <code>repeated .H5ActivityInfo h5_activity_info_list = 1;</code>
        */
       public Builder setH5ActivityInfoList(
           int index, emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo.Builder builderForValue) {
@@ -708,7 +708,7 @@ public final class GetAllH5ActivityInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .H5ActivityInfo h5_activity_info_list = 15;</code>
+       * <code>repeated .H5ActivityInfo h5_activity_info_list = 1;</code>
        */
       public Builder addH5ActivityInfoList(emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo value) {
         if (h5ActivityInfoListBuilder_ == null) {
@@ -724,7 +724,7 @@ public final class GetAllH5ActivityInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .H5ActivityInfo h5_activity_info_list = 15;</code>
+       * <code>repeated .H5ActivityInfo h5_activity_info_list = 1;</code>
        */
       public Builder addH5ActivityInfoList(
           int index, emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo value) {
@@ -741,7 +741,7 @@ public final class GetAllH5ActivityInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .H5ActivityInfo h5_activity_info_list = 15;</code>
+       * <code>repeated .H5ActivityInfo h5_activity_info_list = 1;</code>
        */
       public Builder addH5ActivityInfoList(
           emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo.Builder builderForValue) {
@@ -755,7 +755,7 @@ public final class GetAllH5ActivityInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .H5ActivityInfo h5_activity_info_list = 15;</code>
+       * <code>repeated .H5ActivityInfo h5_activity_info_list = 1;</code>
        */
       public Builder addH5ActivityInfoList(
           int index, emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo.Builder builderForValue) {
@@ -769,7 +769,7 @@ public final class GetAllH5ActivityInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .H5ActivityInfo h5_activity_info_list = 15;</code>
+       * <code>repeated .H5ActivityInfo h5_activity_info_list = 1;</code>
        */
       public Builder addAllH5ActivityInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo> values) {
@@ -784,7 +784,7 @@ public final class GetAllH5ActivityInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .H5ActivityInfo h5_activity_info_list = 15;</code>
+       * <code>repeated .H5ActivityInfo h5_activity_info_list = 1;</code>
        */
       public Builder clearH5ActivityInfoList() {
         if (h5ActivityInfoListBuilder_ == null) {
@@ -797,7 +797,7 @@ public final class GetAllH5ActivityInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .H5ActivityInfo h5_activity_info_list = 15;</code>
+       * <code>repeated .H5ActivityInfo h5_activity_info_list = 1;</code>
        */
       public Builder removeH5ActivityInfoList(int index) {
         if (h5ActivityInfoListBuilder_ == null) {
@@ -810,14 +810,14 @@ public final class GetAllH5ActivityInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .H5ActivityInfo h5_activity_info_list = 15;</code>
+       * <code>repeated .H5ActivityInfo h5_activity_info_list = 1;</code>
        */
       public emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo.Builder getH5ActivityInfoListBuilder(
           int index) {
         return getH5ActivityInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .H5ActivityInfo h5_activity_info_list = 15;</code>
+       * <code>repeated .H5ActivityInfo h5_activity_info_list = 1;</code>
        */
       public emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfoOrBuilder getH5ActivityInfoListOrBuilder(
           int index) {
@@ -827,7 +827,7 @@ public final class GetAllH5ActivityInfoRspOuterClass {
         }
       }
       /**
-       * <code>repeated .H5ActivityInfo h5_activity_info_list = 15;</code>
+       * <code>repeated .H5ActivityInfo h5_activity_info_list = 1;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfoOrBuilder> 
            getH5ActivityInfoListOrBuilderList() {
@@ -838,14 +838,14 @@ public final class GetAllH5ActivityInfoRspOuterClass {
         }
       }
       /**
-       * <code>repeated .H5ActivityInfo h5_activity_info_list = 15;</code>
+       * <code>repeated .H5ActivityInfo h5_activity_info_list = 1;</code>
        */
       public emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo.Builder addH5ActivityInfoListBuilder() {
         return getH5ActivityInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .H5ActivityInfo h5_activity_info_list = 15;</code>
+       * <code>repeated .H5ActivityInfo h5_activity_info_list = 1;</code>
        */
       public emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo.Builder addH5ActivityInfoListBuilder(
           int index) {
@@ -853,7 +853,7 @@ public final class GetAllH5ActivityInfoRspOuterClass {
             index, emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .H5ActivityInfo h5_activity_info_list = 15;</code>
+       * <code>repeated .H5ActivityInfo h5_activity_info_list = 1;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo.Builder> 
            getH5ActivityInfoListBuilderList() {
@@ -876,7 +876,7 @@ public final class GetAllH5ActivityInfoRspOuterClass {
 
       private int clientRedDotTimestamp_ ;
       /**
-       * <code>uint32 client_red_dot_timestamp = 12;</code>
+       * <code>uint32 client_red_dot_timestamp = 8;</code>
        * @return The clientRedDotTimestamp.
        */
       @java.lang.Override
@@ -884,7 +884,7 @@ public final class GetAllH5ActivityInfoRspOuterClass {
         return clientRedDotTimestamp_;
       }
       /**
-       * <code>uint32 client_red_dot_timestamp = 12;</code>
+       * <code>uint32 client_red_dot_timestamp = 8;</code>
        * @param value The clientRedDotTimestamp to set.
        * @return This builder for chaining.
        */
@@ -895,7 +895,7 @@ public final class GetAllH5ActivityInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 client_red_dot_timestamp = 12;</code>
+       * <code>uint32 client_red_dot_timestamp = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearClientRedDotTimestamp() {
@@ -973,9 +973,9 @@ public final class GetAllH5ActivityInfoRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\035GetAllH5ActivityInfoRsp.proto\032\024H5Activ" +
       "ityInfo.proto\"|\n\027GetAllH5ActivityInfoRsp" +
-      "\022\017\n\007retcode\030\003 \001(\005\022.\n\025h5_activity_info_li" +
-      "st\030\017 \003(\0132\017.H5ActivityInfo\022 \n\030client_red_" +
-      "dot_timestamp\030\014 \001(\rB\033\n\031emu.grasscutter.n" +
+      "\022\017\n\007retcode\030\006 \001(\005\022.\n\025h5_activity_info_li" +
+      "st\030\001 \003(\0132\017.H5ActivityInfo\022 \n\030client_red_" +
+      "dot_timestamp\030\010 \001(\rB\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

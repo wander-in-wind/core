@@ -19,21 +19,21 @@ public final class HomeAvatarSummonFinishRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 12;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>uint32 event_id = 13;</code>
+     * <code>uint32 event_id = 10;</code>
      * @return The eventId.
      */
     int getEventId();
+
+    /**
+     * <code>int32 retcode = 9;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
    * <pre>
-   * Name: OIJKJGBKLPB
-   * CmdId: 4566
+   * CmdId: 4562
+   * Obf: OJOBMFOEFCL
    * </pre>
    *
    * Protobuf type {@code HomeAvatarSummonFinishRsp}
@@ -80,12 +80,12 @@ public final class HomeAvatarSummonFinishRspOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
+            case 72: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 104: {
+            case 80: {
 
               eventId_ = input.readUInt32();
               break;
@@ -122,26 +122,26 @@ public final class HomeAvatarSummonFinishRspOuterClass {
               emu.grasscutter.net.proto.HomeAvatarSummonFinishRspOuterClass.HomeAvatarSummonFinishRsp.class, emu.grasscutter.net.proto.HomeAvatarSummonFinishRspOuterClass.HomeAvatarSummonFinishRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 12;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 12;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int EVENT_ID_FIELD_NUMBER = 13;
+    public static final int EVENT_ID_FIELD_NUMBER = 10;
     private int eventId_;
     /**
-     * <code>uint32 event_id = 13;</code>
+     * <code>uint32 event_id = 10;</code>
      * @return The eventId.
      */
     @java.lang.Override
     public int getEventId() {
       return eventId_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 9;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 9;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,10 +159,10 @@ public final class HomeAvatarSummonFinishRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(12, retcode_);
+        output.writeInt32(9, retcode_);
       }
       if (eventId_ != 0) {
-        output.writeUInt32(13, eventId_);
+        output.writeUInt32(10, eventId_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +175,11 @@ public final class HomeAvatarSummonFinishRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(12, retcode_);
+          .computeInt32Size(9, retcode_);
       }
       if (eventId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, eventId_);
+          .computeUInt32Size(10, eventId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +196,10 @@ public final class HomeAvatarSummonFinishRspOuterClass {
       }
       emu.grasscutter.net.proto.HomeAvatarSummonFinishRspOuterClass.HomeAvatarSummonFinishRsp other = (emu.grasscutter.net.proto.HomeAvatarSummonFinishRspOuterClass.HomeAvatarSummonFinishRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getEventId()
           != other.getEventId()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +211,10 @@ public final class HomeAvatarSummonFinishRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + EVENT_ID_FIELD_NUMBER;
       hash = (53 * hash) + getEventId();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +312,8 @@ public final class HomeAvatarSummonFinishRspOuterClass {
     }
     /**
      * <pre>
-     * Name: OIJKJGBKLPB
-     * CmdId: 4566
+     * CmdId: 4562
+     * Obf: OJOBMFOEFCL
      * </pre>
      *
      * Protobuf type {@code HomeAvatarSummonFinishRsp}
@@ -353,9 +353,9 @@ public final class HomeAvatarSummonFinishRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         eventId_ = 0;
+
+        retcode_ = 0;
 
         return this;
       }
@@ -383,8 +383,8 @@ public final class HomeAvatarSummonFinishRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeAvatarSummonFinishRspOuterClass.HomeAvatarSummonFinishRsp buildPartial() {
         emu.grasscutter.net.proto.HomeAvatarSummonFinishRspOuterClass.HomeAvatarSummonFinishRsp result = new emu.grasscutter.net.proto.HomeAvatarSummonFinishRspOuterClass.HomeAvatarSummonFinishRsp(this);
-        result.retcode_ = retcode_;
         result.eventId_ = eventId_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -433,11 +433,11 @@ public final class HomeAvatarSummonFinishRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HomeAvatarSummonFinishRspOuterClass.HomeAvatarSummonFinishRsp other) {
         if (other == emu.grasscutter.net.proto.HomeAvatarSummonFinishRspOuterClass.HomeAvatarSummonFinishRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getEventId() != 0) {
           setEventId(other.getEventId());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,40 +468,9 @@ public final class HomeAvatarSummonFinishRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 12;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 12;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int eventId_ ;
       /**
-       * <code>uint32 event_id = 13;</code>
+       * <code>uint32 event_id = 10;</code>
        * @return The eventId.
        */
       @java.lang.Override
@@ -509,7 +478,7 @@ public final class HomeAvatarSummonFinishRspOuterClass {
         return eventId_;
       }
       /**
-       * <code>uint32 event_id = 13;</code>
+       * <code>uint32 event_id = 10;</code>
        * @param value The eventId to set.
        * @return This builder for chaining.
        */
@@ -520,12 +489,43 @@ public final class HomeAvatarSummonFinishRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 event_id = 13;</code>
+       * <code>uint32 event_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearEventId() {
         
         eventId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 9;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 9;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -597,8 +597,8 @@ public final class HomeAvatarSummonFinishRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037HomeAvatarSummonFinishRsp.proto\">\n\031Hom" +
-      "eAvatarSummonFinishRsp\022\017\n\007retcode\030\014 \001(\005\022" +
-      "\020\n\010event_id\030\r \001(\rB\033\n\031emu.grasscutter.net" +
+      "eAvatarSummonFinishRsp\022\020\n\010event_id\030\n \001(\r" +
+      "\022\017\n\007retcode\030\t \001(\005B\033\n\031emu.grasscutter.net" +
       ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -610,7 +610,7 @@ public final class HomeAvatarSummonFinishRspOuterClass {
     internal_static_HomeAvatarSummonFinishRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeAvatarSummonFinishRsp_descriptor,
-        new java.lang.String[] { "Retcode", "EventId", });
+        new java.lang.String[] { "EventId", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

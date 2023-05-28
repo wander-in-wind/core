@@ -19,50 +19,50 @@ public final class ExpeditionAssistInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 costume_id = 12;</code>
-     * @return The costumeId.
-     */
-    int getCostumeId();
-
-    /**
-     * <code>string target_nick_name = 2;</code>
-     * @return The targetNickName.
-     */
-    java.lang.String getTargetNickName();
-    /**
-     * <code>string target_nick_name = 2;</code>
-     * @return The bytes for targetNickName.
-     */
-    com.google.protobuf.ByteString
-        getTargetNickNameBytes();
-
-    /**
-     * <code>string online_id = 6;</code>
+     * <code>string online_id = 2;</code>
      * @return The onlineId.
      */
     java.lang.String getOnlineId();
     /**
-     * <code>string online_id = 6;</code>
+     * <code>string online_id = 2;</code>
      * @return The bytes for onlineId.
      */
     com.google.protobuf.ByteString
         getOnlineIdBytes();
 
     /**
-     * <code>uint32 avatar_id = 5;</code>
+     * <code>uint32 costume_id = 15;</code>
+     * @return The costumeId.
+     */
+    int getCostumeId();
+
+    /**
+     * <code>string target_nick_name = 4;</code>
+     * @return The targetNickName.
+     */
+    java.lang.String getTargetNickName();
+    /**
+     * <code>string target_nick_name = 4;</code>
+     * @return The bytes for targetNickName.
+     */
+    com.google.protobuf.ByteString
+        getTargetNickNameBytes();
+
+    /**
+     * <code>uint32 avatar_id = 10;</code>
      * @return The avatarId.
      */
     int getAvatarId();
 
     /**
-     * <code>uint32 assist_time = 4;</code>
+     * <code>uint32 assist_time = 5;</code>
      * @return The assistTime.
      */
     int getAssistTime();
   }
   /**
    * <pre>
-   * Name: GOCHCAEPGHD
+   * Obf: KDKBIDBGDKF
    * </pre>
    *
    * Protobuf type {@code ExpeditionAssistInfo}
@@ -77,8 +77,8 @@ public final class ExpeditionAssistInfoOuterClass {
       super(builder);
     }
     private ExpeditionAssistInfo() {
-      targetNickName_ = "";
       onlineId_ = "";
+      targetNickName_ = "";
     }
 
     @java.lang.Override
@@ -114,26 +114,26 @@ public final class ExpeditionAssistInfoOuterClass {
             case 18: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              targetNickName_ = s;
+              onlineId_ = s;
               break;
             }
-            case 32: {
+            case 34: {
+              java.lang.String s = input.readStringRequireUtf8();
 
-              assistTime_ = input.readUInt32();
+              targetNickName_ = s;
               break;
             }
             case 40: {
 
+              assistTime_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
               avatarId_ = input.readUInt32();
               break;
             }
-            case 50: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              onlineId_ = s;
-              break;
-            }
-            case 96: {
+            case 120: {
 
               costumeId_ = input.readUInt32();
               break;
@@ -170,59 +170,10 @@ public final class ExpeditionAssistInfoOuterClass {
               emu.grasscutter.net.proto.ExpeditionAssistInfoOuterClass.ExpeditionAssistInfo.class, emu.grasscutter.net.proto.ExpeditionAssistInfoOuterClass.ExpeditionAssistInfo.Builder.class);
     }
 
-    public static final int COSTUME_ID_FIELD_NUMBER = 12;
-    private int costumeId_;
-    /**
-     * <code>uint32 costume_id = 12;</code>
-     * @return The costumeId.
-     */
-    @java.lang.Override
-    public int getCostumeId() {
-      return costumeId_;
-    }
-
-    public static final int TARGET_NICK_NAME_FIELD_NUMBER = 2;
-    private volatile java.lang.Object targetNickName_;
-    /**
-     * <code>string target_nick_name = 2;</code>
-     * @return The targetNickName.
-     */
-    @java.lang.Override
-    public java.lang.String getTargetNickName() {
-      java.lang.Object ref = targetNickName_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        targetNickName_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string target_nick_name = 2;</code>
-     * @return The bytes for targetNickName.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getTargetNickNameBytes() {
-      java.lang.Object ref = targetNickName_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        targetNickName_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int ONLINE_ID_FIELD_NUMBER = 6;
+    public static final int ONLINE_ID_FIELD_NUMBER = 2;
     private volatile java.lang.Object onlineId_;
     /**
-     * <code>string online_id = 6;</code>
+     * <code>string online_id = 2;</code>
      * @return The onlineId.
      */
     @java.lang.Override
@@ -239,7 +190,7 @@ public final class ExpeditionAssistInfoOuterClass {
       }
     }
     /**
-     * <code>string online_id = 6;</code>
+     * <code>string online_id = 2;</code>
      * @return The bytes for onlineId.
      */
     @java.lang.Override
@@ -257,10 +208,59 @@ public final class ExpeditionAssistInfoOuterClass {
       }
     }
 
-    public static final int AVATAR_ID_FIELD_NUMBER = 5;
+    public static final int COSTUME_ID_FIELD_NUMBER = 15;
+    private int costumeId_;
+    /**
+     * <code>uint32 costume_id = 15;</code>
+     * @return The costumeId.
+     */
+    @java.lang.Override
+    public int getCostumeId() {
+      return costumeId_;
+    }
+
+    public static final int TARGET_NICK_NAME_FIELD_NUMBER = 4;
+    private volatile java.lang.Object targetNickName_;
+    /**
+     * <code>string target_nick_name = 4;</code>
+     * @return The targetNickName.
+     */
+    @java.lang.Override
+    public java.lang.String getTargetNickName() {
+      java.lang.Object ref = targetNickName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        targetNickName_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string target_nick_name = 4;</code>
+     * @return The bytes for targetNickName.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getTargetNickNameBytes() {
+      java.lang.Object ref = targetNickName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        targetNickName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int AVATAR_ID_FIELD_NUMBER = 10;
     private int avatarId_;
     /**
-     * <code>uint32 avatar_id = 5;</code>
+     * <code>uint32 avatar_id = 10;</code>
      * @return The avatarId.
      */
     @java.lang.Override
@@ -268,10 +268,10 @@ public final class ExpeditionAssistInfoOuterClass {
       return avatarId_;
     }
 
-    public static final int ASSIST_TIME_FIELD_NUMBER = 4;
+    public static final int ASSIST_TIME_FIELD_NUMBER = 5;
     private int assistTime_;
     /**
-     * <code>uint32 assist_time = 4;</code>
+     * <code>uint32 assist_time = 5;</code>
      * @return The assistTime.
      */
     @java.lang.Override
@@ -293,20 +293,20 @@ public final class ExpeditionAssistInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(onlineId_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, onlineId_);
+      }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(targetNickName_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, targetNickName_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, targetNickName_);
       }
       if (assistTime_ != 0) {
-        output.writeUInt32(4, assistTime_);
+        output.writeUInt32(5, assistTime_);
       }
       if (avatarId_ != 0) {
-        output.writeUInt32(5, avatarId_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(onlineId_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, onlineId_);
+        output.writeUInt32(10, avatarId_);
       }
       if (costumeId_ != 0) {
-        output.writeUInt32(12, costumeId_);
+        output.writeUInt32(15, costumeId_);
       }
       unknownFields.writeTo(output);
     }
@@ -317,23 +317,23 @@ public final class ExpeditionAssistInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(onlineId_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, onlineId_);
+      }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(targetNickName_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, targetNickName_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, targetNickName_);
       }
       if (assistTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, assistTime_);
+          .computeUInt32Size(5, assistTime_);
       }
       if (avatarId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, avatarId_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(onlineId_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, onlineId_);
+          .computeUInt32Size(10, avatarId_);
       }
       if (costumeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, costumeId_);
+          .computeUInt32Size(15, costumeId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -350,12 +350,12 @@ public final class ExpeditionAssistInfoOuterClass {
       }
       emu.grasscutter.net.proto.ExpeditionAssistInfoOuterClass.ExpeditionAssistInfo other = (emu.grasscutter.net.proto.ExpeditionAssistInfoOuterClass.ExpeditionAssistInfo) obj;
 
+      if (!getOnlineId()
+          .equals(other.getOnlineId())) return false;
       if (getCostumeId()
           != other.getCostumeId()) return false;
       if (!getTargetNickName()
           .equals(other.getTargetNickName())) return false;
-      if (!getOnlineId()
-          .equals(other.getOnlineId())) return false;
       if (getAvatarId()
           != other.getAvatarId()) return false;
       if (getAssistTime()
@@ -371,12 +371,12 @@ public final class ExpeditionAssistInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + ONLINE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getOnlineId().hashCode();
       hash = (37 * hash) + COSTUME_ID_FIELD_NUMBER;
       hash = (53 * hash) + getCostumeId();
       hash = (37 * hash) + TARGET_NICK_NAME_FIELD_NUMBER;
       hash = (53 * hash) + getTargetNickName().hashCode();
-      hash = (37 * hash) + ONLINE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getOnlineId().hashCode();
       hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
       hash = (53 * hash) + getAvatarId();
       hash = (37 * hash) + ASSIST_TIME_FIELD_NUMBER;
@@ -478,7 +478,7 @@ public final class ExpeditionAssistInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: GOCHCAEPGHD
+     * Obf: KDKBIDBGDKF
      * </pre>
      *
      * Protobuf type {@code ExpeditionAssistInfo}
@@ -518,11 +518,11 @@ public final class ExpeditionAssistInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        onlineId_ = "";
+
         costumeId_ = 0;
 
         targetNickName_ = "";
-
-        onlineId_ = "";
 
         avatarId_ = 0;
 
@@ -554,9 +554,9 @@ public final class ExpeditionAssistInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ExpeditionAssistInfoOuterClass.ExpeditionAssistInfo buildPartial() {
         emu.grasscutter.net.proto.ExpeditionAssistInfoOuterClass.ExpeditionAssistInfo result = new emu.grasscutter.net.proto.ExpeditionAssistInfoOuterClass.ExpeditionAssistInfo(this);
+        result.onlineId_ = onlineId_;
         result.costumeId_ = costumeId_;
         result.targetNickName_ = targetNickName_;
-        result.onlineId_ = onlineId_;
         result.avatarId_ = avatarId_;
         result.assistTime_ = assistTime_;
         onBuilt();
@@ -607,15 +607,15 @@ public final class ExpeditionAssistInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ExpeditionAssistInfoOuterClass.ExpeditionAssistInfo other) {
         if (other == emu.grasscutter.net.proto.ExpeditionAssistInfoOuterClass.ExpeditionAssistInfo.getDefaultInstance()) return this;
+        if (!other.getOnlineId().isEmpty()) {
+          onlineId_ = other.onlineId_;
+          onChanged();
+        }
         if (other.getCostumeId() != 0) {
           setCostumeId(other.getCostumeId());
         }
         if (!other.getTargetNickName().isEmpty()) {
           targetNickName_ = other.targetNickName_;
-          onChanged();
-        }
-        if (!other.getOnlineId().isEmpty()) {
-          onlineId_ = other.onlineId_;
           onChanged();
         }
         if (other.getAvatarId() != 0) {
@@ -653,116 +653,9 @@ public final class ExpeditionAssistInfoOuterClass {
         return this;
       }
 
-      private int costumeId_ ;
-      /**
-       * <code>uint32 costume_id = 12;</code>
-       * @return The costumeId.
-       */
-      @java.lang.Override
-      public int getCostumeId() {
-        return costumeId_;
-      }
-      /**
-       * <code>uint32 costume_id = 12;</code>
-       * @param value The costumeId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCostumeId(int value) {
-        
-        costumeId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 costume_id = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCostumeId() {
-        
-        costumeId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object targetNickName_ = "";
-      /**
-       * <code>string target_nick_name = 2;</code>
-       * @return The targetNickName.
-       */
-      public java.lang.String getTargetNickName() {
-        java.lang.Object ref = targetNickName_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          targetNickName_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string target_nick_name = 2;</code>
-       * @return The bytes for targetNickName.
-       */
-      public com.google.protobuf.ByteString
-          getTargetNickNameBytes() {
-        java.lang.Object ref = targetNickName_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          targetNickName_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string target_nick_name = 2;</code>
-       * @param value The targetNickName to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTargetNickName(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        targetNickName_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string target_nick_name = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTargetNickName() {
-        
-        targetNickName_ = getDefaultInstance().getTargetNickName();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string target_nick_name = 2;</code>
-       * @param value The bytes for targetNickName to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTargetNickNameBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        targetNickName_ = value;
-        onChanged();
-        return this;
-      }
-
       private java.lang.Object onlineId_ = "";
       /**
-       * <code>string online_id = 6;</code>
+       * <code>string online_id = 2;</code>
        * @return The onlineId.
        */
       public java.lang.String getOnlineId() {
@@ -778,7 +671,7 @@ public final class ExpeditionAssistInfoOuterClass {
         }
       }
       /**
-       * <code>string online_id = 6;</code>
+       * <code>string online_id = 2;</code>
        * @return The bytes for onlineId.
        */
       public com.google.protobuf.ByteString
@@ -795,7 +688,7 @@ public final class ExpeditionAssistInfoOuterClass {
         }
       }
       /**
-       * <code>string online_id = 6;</code>
+       * <code>string online_id = 2;</code>
        * @param value The onlineId to set.
        * @return This builder for chaining.
        */
@@ -810,7 +703,7 @@ public final class ExpeditionAssistInfoOuterClass {
         return this;
       }
       /**
-       * <code>string online_id = 6;</code>
+       * <code>string online_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearOnlineId() {
@@ -820,7 +713,7 @@ public final class ExpeditionAssistInfoOuterClass {
         return this;
       }
       /**
-       * <code>string online_id = 6;</code>
+       * <code>string online_id = 2;</code>
        * @param value The bytes for onlineId to set.
        * @return This builder for chaining.
        */
@@ -836,9 +729,116 @@ public final class ExpeditionAssistInfoOuterClass {
         return this;
       }
 
+      private int costumeId_ ;
+      /**
+       * <code>uint32 costume_id = 15;</code>
+       * @return The costumeId.
+       */
+      @java.lang.Override
+      public int getCostumeId() {
+        return costumeId_;
+      }
+      /**
+       * <code>uint32 costume_id = 15;</code>
+       * @param value The costumeId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCostumeId(int value) {
+        
+        costumeId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 costume_id = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCostumeId() {
+        
+        costumeId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object targetNickName_ = "";
+      /**
+       * <code>string target_nick_name = 4;</code>
+       * @return The targetNickName.
+       */
+      public java.lang.String getTargetNickName() {
+        java.lang.Object ref = targetNickName_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          targetNickName_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string target_nick_name = 4;</code>
+       * @return The bytes for targetNickName.
+       */
+      public com.google.protobuf.ByteString
+          getTargetNickNameBytes() {
+        java.lang.Object ref = targetNickName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          targetNickName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string target_nick_name = 4;</code>
+       * @param value The targetNickName to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTargetNickName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        targetNickName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string target_nick_name = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTargetNickName() {
+        
+        targetNickName_ = getDefaultInstance().getTargetNickName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string target_nick_name = 4;</code>
+       * @param value The bytes for targetNickName to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTargetNickNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        targetNickName_ = value;
+        onChanged();
+        return this;
+      }
+
       private int avatarId_ ;
       /**
-       * <code>uint32 avatar_id = 5;</code>
+       * <code>uint32 avatar_id = 10;</code>
        * @return The avatarId.
        */
       @java.lang.Override
@@ -846,7 +846,7 @@ public final class ExpeditionAssistInfoOuterClass {
         return avatarId_;
       }
       /**
-       * <code>uint32 avatar_id = 5;</code>
+       * <code>uint32 avatar_id = 10;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
        */
@@ -857,7 +857,7 @@ public final class ExpeditionAssistInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 avatar_id = 5;</code>
+       * <code>uint32 avatar_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarId() {
@@ -869,7 +869,7 @@ public final class ExpeditionAssistInfoOuterClass {
 
       private int assistTime_ ;
       /**
-       * <code>uint32 assist_time = 4;</code>
+       * <code>uint32 assist_time = 5;</code>
        * @return The assistTime.
        */
       @java.lang.Override
@@ -877,7 +877,7 @@ public final class ExpeditionAssistInfoOuterClass {
         return assistTime_;
       }
       /**
-       * <code>uint32 assist_time = 4;</code>
+       * <code>uint32 assist_time = 5;</code>
        * @param value The assistTime to set.
        * @return This builder for chaining.
        */
@@ -888,7 +888,7 @@ public final class ExpeditionAssistInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 assist_time = 4;</code>
+       * <code>uint32 assist_time = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearAssistTime() {
@@ -965,9 +965,9 @@ public final class ExpeditionAssistInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032ExpeditionAssistInfo.proto\"\177\n\024Expediti" +
-      "onAssistInfo\022\022\n\ncostume_id\030\014 \001(\r\022\030\n\020targ" +
-      "et_nick_name\030\002 \001(\t\022\021\n\tonline_id\030\006 \001(\t\022\021\n" +
-      "\tavatar_id\030\005 \001(\r\022\023\n\013assist_time\030\004 \001(\rB\033\n" +
+      "onAssistInfo\022\021\n\tonline_id\030\002 \001(\t\022\022\n\ncostu" +
+      "me_id\030\017 \001(\r\022\030\n\020target_nick_name\030\004 \001(\t\022\021\n" +
+      "\tavatar_id\030\n \001(\r\022\023\n\013assist_time\030\005 \001(\rB\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -979,7 +979,7 @@ public final class ExpeditionAssistInfoOuterClass {
     internal_static_ExpeditionAssistInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ExpeditionAssistInfo_descriptor,
-        new java.lang.String[] { "CostumeId", "TargetNickName", "OnlineId", "AvatarId", "AssistTime", });
+        new java.lang.String[] { "OnlineId", "CostumeId", "TargetNickName", "AvatarId", "AssistTime", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

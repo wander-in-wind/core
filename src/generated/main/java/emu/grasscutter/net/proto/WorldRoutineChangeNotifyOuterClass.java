@@ -19,30 +19,30 @@ public final class WorldRoutineChangeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 routine_type = 2;</code>
-     * @return The routineType.
-     */
-    int getRoutineType();
-
-    /**
-     * <code>.WorldRoutineInfo routine_info = 6;</code>
+     * <code>.WorldRoutineInfo routine_info = 3;</code>
      * @return Whether the routineInfo field is set.
      */
     boolean hasRoutineInfo();
     /**
-     * <code>.WorldRoutineInfo routine_info = 6;</code>
+     * <code>.WorldRoutineInfo routine_info = 3;</code>
      * @return The routineInfo.
      */
     emu.grasscutter.net.proto.WorldRoutineInfoOuterClass.WorldRoutineInfo getRoutineInfo();
     /**
-     * <code>.WorldRoutineInfo routine_info = 6;</code>
+     * <code>.WorldRoutineInfo routine_info = 3;</code>
      */
     emu.grasscutter.net.proto.WorldRoutineInfoOuterClass.WorldRoutineInfoOrBuilder getRoutineInfoOrBuilder();
+
+    /**
+     * <code>uint32 routine_type = 5;</code>
+     * @return The routineType.
+     */
+    int getRoutineType();
   }
   /**
    * <pre>
-   * Name: MCLCAINHBKO
-   * CmdId: 3546
+   * CmdId: 3521
+   * Obf: EMCGADPBAGG
    * </pre>
    *
    * Protobuf type {@code WorldRoutineChangeNotify}
@@ -89,12 +89,7 @@ public final class WorldRoutineChangeNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              routineType_ = input.readUInt32();
-              break;
-            }
-            case 50: {
+            case 26: {
               emu.grasscutter.net.proto.WorldRoutineInfoOuterClass.WorldRoutineInfo.Builder subBuilder = null;
               if (routineInfo_ != null) {
                 subBuilder = routineInfo_.toBuilder();
@@ -105,6 +100,11 @@ public final class WorldRoutineChangeNotifyOuterClass {
                 routineInfo_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 40: {
+
+              routineType_ = input.readUInt32();
               break;
             }
             default: {
@@ -139,21 +139,10 @@ public final class WorldRoutineChangeNotifyOuterClass {
               emu.grasscutter.net.proto.WorldRoutineChangeNotifyOuterClass.WorldRoutineChangeNotify.class, emu.grasscutter.net.proto.WorldRoutineChangeNotifyOuterClass.WorldRoutineChangeNotify.Builder.class);
     }
 
-    public static final int ROUTINE_TYPE_FIELD_NUMBER = 2;
-    private int routineType_;
-    /**
-     * <code>uint32 routine_type = 2;</code>
-     * @return The routineType.
-     */
-    @java.lang.Override
-    public int getRoutineType() {
-      return routineType_;
-    }
-
-    public static final int ROUTINE_INFO_FIELD_NUMBER = 6;
+    public static final int ROUTINE_INFO_FIELD_NUMBER = 3;
     private emu.grasscutter.net.proto.WorldRoutineInfoOuterClass.WorldRoutineInfo routineInfo_;
     /**
-     * <code>.WorldRoutineInfo routine_info = 6;</code>
+     * <code>.WorldRoutineInfo routine_info = 3;</code>
      * @return Whether the routineInfo field is set.
      */
     @java.lang.Override
@@ -161,7 +150,7 @@ public final class WorldRoutineChangeNotifyOuterClass {
       return routineInfo_ != null;
     }
     /**
-     * <code>.WorldRoutineInfo routine_info = 6;</code>
+     * <code>.WorldRoutineInfo routine_info = 3;</code>
      * @return The routineInfo.
      */
     @java.lang.Override
@@ -169,11 +158,22 @@ public final class WorldRoutineChangeNotifyOuterClass {
       return routineInfo_ == null ? emu.grasscutter.net.proto.WorldRoutineInfoOuterClass.WorldRoutineInfo.getDefaultInstance() : routineInfo_;
     }
     /**
-     * <code>.WorldRoutineInfo routine_info = 6;</code>
+     * <code>.WorldRoutineInfo routine_info = 3;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.WorldRoutineInfoOuterClass.WorldRoutineInfoOrBuilder getRoutineInfoOrBuilder() {
       return getRoutineInfo();
+    }
+
+    public static final int ROUTINE_TYPE_FIELD_NUMBER = 5;
+    private int routineType_;
+    /**
+     * <code>uint32 routine_type = 5;</code>
+     * @return The routineType.
+     */
+    @java.lang.Override
+    public int getRoutineType() {
+      return routineType_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -190,11 +190,11 @@ public final class WorldRoutineChangeNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (routineType_ != 0) {
-        output.writeUInt32(2, routineType_);
-      }
       if (routineInfo_ != null) {
-        output.writeMessage(6, getRoutineInfo());
+        output.writeMessage(3, getRoutineInfo());
+      }
+      if (routineType_ != 0) {
+        output.writeUInt32(5, routineType_);
       }
       unknownFields.writeTo(output);
     }
@@ -205,13 +205,13 @@ public final class WorldRoutineChangeNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (routineType_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, routineType_);
-      }
       if (routineInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, getRoutineInfo());
+          .computeMessageSize(3, getRoutineInfo());
+      }
+      if (routineType_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, routineType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -228,13 +228,13 @@ public final class WorldRoutineChangeNotifyOuterClass {
       }
       emu.grasscutter.net.proto.WorldRoutineChangeNotifyOuterClass.WorldRoutineChangeNotify other = (emu.grasscutter.net.proto.WorldRoutineChangeNotifyOuterClass.WorldRoutineChangeNotify) obj;
 
-      if (getRoutineType()
-          != other.getRoutineType()) return false;
       if (hasRoutineInfo() != other.hasRoutineInfo()) return false;
       if (hasRoutineInfo()) {
         if (!getRoutineInfo()
             .equals(other.getRoutineInfo())) return false;
       }
+      if (getRoutineType()
+          != other.getRoutineType()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -246,12 +246,12 @@ public final class WorldRoutineChangeNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ROUTINE_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getRoutineType();
       if (hasRoutineInfo()) {
         hash = (37 * hash) + ROUTINE_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getRoutineInfo().hashCode();
       }
+      hash = (37 * hash) + ROUTINE_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getRoutineType();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -349,8 +349,8 @@ public final class WorldRoutineChangeNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: MCLCAINHBKO
-     * CmdId: 3546
+     * CmdId: 3521
+     * Obf: EMCGADPBAGG
      * </pre>
      *
      * Protobuf type {@code WorldRoutineChangeNotify}
@@ -390,14 +390,14 @@ public final class WorldRoutineChangeNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        routineType_ = 0;
-
         if (routineInfoBuilder_ == null) {
           routineInfo_ = null;
         } else {
           routineInfo_ = null;
           routineInfoBuilder_ = null;
         }
+        routineType_ = 0;
+
         return this;
       }
 
@@ -424,12 +424,12 @@ public final class WorldRoutineChangeNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.WorldRoutineChangeNotifyOuterClass.WorldRoutineChangeNotify buildPartial() {
         emu.grasscutter.net.proto.WorldRoutineChangeNotifyOuterClass.WorldRoutineChangeNotify result = new emu.grasscutter.net.proto.WorldRoutineChangeNotifyOuterClass.WorldRoutineChangeNotify(this);
-        result.routineType_ = routineType_;
         if (routineInfoBuilder_ == null) {
           result.routineInfo_ = routineInfo_;
         } else {
           result.routineInfo_ = routineInfoBuilder_.build();
         }
+        result.routineType_ = routineType_;
         onBuilt();
         return result;
       }
@@ -478,11 +478,11 @@ public final class WorldRoutineChangeNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.WorldRoutineChangeNotifyOuterClass.WorldRoutineChangeNotify other) {
         if (other == emu.grasscutter.net.proto.WorldRoutineChangeNotifyOuterClass.WorldRoutineChangeNotify.getDefaultInstance()) return this;
-        if (other.getRoutineType() != 0) {
-          setRoutineType(other.getRoutineType());
-        }
         if (other.hasRoutineInfo()) {
           mergeRoutineInfo(other.getRoutineInfo());
+        }
+        if (other.getRoutineType() != 0) {
+          setRoutineType(other.getRoutineType());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -513,49 +513,18 @@ public final class WorldRoutineChangeNotifyOuterClass {
         return this;
       }
 
-      private int routineType_ ;
-      /**
-       * <code>uint32 routine_type = 2;</code>
-       * @return The routineType.
-       */
-      @java.lang.Override
-      public int getRoutineType() {
-        return routineType_;
-      }
-      /**
-       * <code>uint32 routine_type = 2;</code>
-       * @param value The routineType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRoutineType(int value) {
-        
-        routineType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 routine_type = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRoutineType() {
-        
-        routineType_ = 0;
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.WorldRoutineInfoOuterClass.WorldRoutineInfo routineInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.WorldRoutineInfoOuterClass.WorldRoutineInfo, emu.grasscutter.net.proto.WorldRoutineInfoOuterClass.WorldRoutineInfo.Builder, emu.grasscutter.net.proto.WorldRoutineInfoOuterClass.WorldRoutineInfoOrBuilder> routineInfoBuilder_;
       /**
-       * <code>.WorldRoutineInfo routine_info = 6;</code>
+       * <code>.WorldRoutineInfo routine_info = 3;</code>
        * @return Whether the routineInfo field is set.
        */
       public boolean hasRoutineInfo() {
         return routineInfoBuilder_ != null || routineInfo_ != null;
       }
       /**
-       * <code>.WorldRoutineInfo routine_info = 6;</code>
+       * <code>.WorldRoutineInfo routine_info = 3;</code>
        * @return The routineInfo.
        */
       public emu.grasscutter.net.proto.WorldRoutineInfoOuterClass.WorldRoutineInfo getRoutineInfo() {
@@ -566,7 +535,7 @@ public final class WorldRoutineChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>.WorldRoutineInfo routine_info = 6;</code>
+       * <code>.WorldRoutineInfo routine_info = 3;</code>
        */
       public Builder setRoutineInfo(emu.grasscutter.net.proto.WorldRoutineInfoOuterClass.WorldRoutineInfo value) {
         if (routineInfoBuilder_ == null) {
@@ -582,7 +551,7 @@ public final class WorldRoutineChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.WorldRoutineInfo routine_info = 6;</code>
+       * <code>.WorldRoutineInfo routine_info = 3;</code>
        */
       public Builder setRoutineInfo(
           emu.grasscutter.net.proto.WorldRoutineInfoOuterClass.WorldRoutineInfo.Builder builderForValue) {
@@ -596,7 +565,7 @@ public final class WorldRoutineChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.WorldRoutineInfo routine_info = 6;</code>
+       * <code>.WorldRoutineInfo routine_info = 3;</code>
        */
       public Builder mergeRoutineInfo(emu.grasscutter.net.proto.WorldRoutineInfoOuterClass.WorldRoutineInfo value) {
         if (routineInfoBuilder_ == null) {
@@ -614,7 +583,7 @@ public final class WorldRoutineChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.WorldRoutineInfo routine_info = 6;</code>
+       * <code>.WorldRoutineInfo routine_info = 3;</code>
        */
       public Builder clearRoutineInfo() {
         if (routineInfoBuilder_ == null) {
@@ -628,7 +597,7 @@ public final class WorldRoutineChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.WorldRoutineInfo routine_info = 6;</code>
+       * <code>.WorldRoutineInfo routine_info = 3;</code>
        */
       public emu.grasscutter.net.proto.WorldRoutineInfoOuterClass.WorldRoutineInfo.Builder getRoutineInfoBuilder() {
         
@@ -636,7 +605,7 @@ public final class WorldRoutineChangeNotifyOuterClass {
         return getRoutineInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.WorldRoutineInfo routine_info = 6;</code>
+       * <code>.WorldRoutineInfo routine_info = 3;</code>
        */
       public emu.grasscutter.net.proto.WorldRoutineInfoOuterClass.WorldRoutineInfoOrBuilder getRoutineInfoOrBuilder() {
         if (routineInfoBuilder_ != null) {
@@ -647,7 +616,7 @@ public final class WorldRoutineChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>.WorldRoutineInfo routine_info = 6;</code>
+       * <code>.WorldRoutineInfo routine_info = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.WorldRoutineInfoOuterClass.WorldRoutineInfo, emu.grasscutter.net.proto.WorldRoutineInfoOuterClass.WorldRoutineInfo.Builder, emu.grasscutter.net.proto.WorldRoutineInfoOuterClass.WorldRoutineInfoOrBuilder> 
@@ -661,6 +630,37 @@ public final class WorldRoutineChangeNotifyOuterClass {
           routineInfo_ = null;
         }
         return routineInfoBuilder_;
+      }
+
+      private int routineType_ ;
+      /**
+       * <code>uint32 routine_type = 5;</code>
+       * @return The routineType.
+       */
+      @java.lang.Override
+      public int getRoutineType() {
+        return routineType_;
+      }
+      /**
+       * <code>uint32 routine_type = 5;</code>
+       * @param value The routineType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRoutineType(int value) {
+        
+        routineType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 routine_type = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRoutineType() {
+        
+        routineType_ = 0;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -731,8 +731,8 @@ public final class WorldRoutineChangeNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\036WorldRoutineChangeNotify.proto\032\026WorldR" +
       "outineInfo.proto\"Y\n\030WorldRoutineChangeNo" +
-      "tify\022\024\n\014routine_type\030\002 \001(\r\022\'\n\014routine_in" +
-      "fo\030\006 \001(\0132\021.WorldRoutineInfoB\033\n\031emu.grass" +
+      "tify\022\'\n\014routine_info\030\003 \001(\0132\021.WorldRoutin" +
+      "eInfo\022\024\n\014routine_type\030\005 \001(\rB\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -745,7 +745,7 @@ public final class WorldRoutineChangeNotifyOuterClass {
     internal_static_WorldRoutineChangeNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_WorldRoutineChangeNotify_descriptor,
-        new java.lang.String[] { "RoutineType", "RoutineInfo", });
+        new java.lang.String[] { "RoutineInfo", "RoutineType", });
     emu.grasscutter.net.proto.WorldRoutineInfoOuterClass.getDescriptor();
   }
 

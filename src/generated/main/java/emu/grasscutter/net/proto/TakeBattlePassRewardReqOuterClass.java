@@ -44,8 +44,8 @@ public final class TakeBattlePassRewardReqOuterClass {
   }
   /**
    * <pre>
-   * Name: HDGDFGOALDG
-   * CmdId: 2636
+   * CmdId: 2626
+   * Obf: EAHNLBGINBO
    * </pre>
    *
    * Protobuf type {@code TakeBattlePassRewardReq}
@@ -337,8 +337,8 @@ public final class TakeBattlePassRewardReqOuterClass {
     }
     /**
      * <pre>
-     * Name: HDGDFGOALDG
-     * CmdId: 2636
+     * CmdId: 2626
+     * Obf: EAHNLBGINBO
      * </pre>
      *
      * Protobuf type {@code TakeBattlePassRewardReq}

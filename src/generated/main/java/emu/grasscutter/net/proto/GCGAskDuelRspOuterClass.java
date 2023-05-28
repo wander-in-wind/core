@@ -19,42 +19,30 @@ public final class GCGAskDuelRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *HHACKKBLLHO IEOMECODBLG snooswap
-     * </pre>
-     *
-     * <code>.GCGDuel duel = 4;</code>
+     * <code>int32 retcode = 6;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
+
+    /**
+     * <code>.GCGDuel duel = 12;</code>
      * @return Whether the duel field is set.
      */
     boolean hasDuel();
     /**
-     * <pre>
-     *HHACKKBLLHO IEOMECODBLG snooswap
-     * </pre>
-     *
-     * <code>.GCGDuel duel = 4;</code>
+     * <code>.GCGDuel duel = 12;</code>
      * @return The duel.
      */
     emu.grasscutter.net.proto.GCGDuelOuterClass.GCGDuel getDuel();
     /**
-     * <pre>
-     *HHACKKBLLHO IEOMECODBLG snooswap
-     * </pre>
-     *
-     * <code>.GCGDuel duel = 4;</code>
+     * <code>.GCGDuel duel = 12;</code>
      */
     emu.grasscutter.net.proto.GCGDuelOuterClass.GCGDuelOrBuilder getDuelOrBuilder();
-
-    /**
-     * <code>int32 retcode = 13;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
   }
   /**
    * <pre>
-   * Name: INEIPAMELIP
-   * CmdId: 7287
+   * CmdId: 7659
+   * Obf: IEHCEMKOPCF
    * </pre>
    *
    * Protobuf type {@code GCGAskDuelRsp}
@@ -101,7 +89,12 @@ public final class GCGAskDuelRspOuterClass {
             case 0:
               done = true;
               break;
-            case 34: {
+            case 48: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 98: {
               emu.grasscutter.net.proto.GCGDuelOuterClass.GCGDuel.Builder subBuilder = null;
               if (duel_ != null) {
                 subBuilder = duel_.toBuilder();
@@ -112,11 +105,6 @@ public final class GCGAskDuelRspOuterClass {
                 duel_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 104: {
-
-              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -151,14 +139,21 @@ public final class GCGAskDuelRspOuterClass {
               emu.grasscutter.net.proto.GCGAskDuelRspOuterClass.GCGAskDuelRsp.class, emu.grasscutter.net.proto.GCGAskDuelRspOuterClass.GCGAskDuelRsp.Builder.class);
     }
 
-    public static final int DUEL_FIELD_NUMBER = 4;
+    public static final int RETCODE_FIELD_NUMBER = 6;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 6;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
+    public static final int DUEL_FIELD_NUMBER = 12;
     private emu.grasscutter.net.proto.GCGDuelOuterClass.GCGDuel duel_;
     /**
-     * <pre>
-     *HHACKKBLLHO IEOMECODBLG snooswap
-     * </pre>
-     *
-     * <code>.GCGDuel duel = 4;</code>
+     * <code>.GCGDuel duel = 12;</code>
      * @return Whether the duel field is set.
      */
     @java.lang.Override
@@ -166,11 +161,7 @@ public final class GCGAskDuelRspOuterClass {
       return duel_ != null;
     }
     /**
-     * <pre>
-     *HHACKKBLLHO IEOMECODBLG snooswap
-     * </pre>
-     *
-     * <code>.GCGDuel duel = 4;</code>
+     * <code>.GCGDuel duel = 12;</code>
      * @return The duel.
      */
     @java.lang.Override
@@ -178,26 +169,11 @@ public final class GCGAskDuelRspOuterClass {
       return duel_ == null ? emu.grasscutter.net.proto.GCGDuelOuterClass.GCGDuel.getDefaultInstance() : duel_;
     }
     /**
-     * <pre>
-     *HHACKKBLLHO IEOMECODBLG snooswap
-     * </pre>
-     *
-     * <code>.GCGDuel duel = 4;</code>
+     * <code>.GCGDuel duel = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGDuelOuterClass.GCGDuelOrBuilder getDuelOrBuilder() {
       return getDuel();
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 13;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 13;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -214,11 +190,11 @@ public final class GCGAskDuelRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (duel_ != null) {
-        output.writeMessage(4, getDuel());
-      }
       if (retcode_ != 0) {
-        output.writeInt32(13, retcode_);
+        output.writeInt32(6, retcode_);
+      }
+      if (duel_ != null) {
+        output.writeMessage(12, getDuel());
       }
       unknownFields.writeTo(output);
     }
@@ -229,13 +205,13 @@ public final class GCGAskDuelRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (duel_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, getDuel());
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(13, retcode_);
+          .computeInt32Size(6, retcode_);
+      }
+      if (duel_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(12, getDuel());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -252,13 +228,13 @@ public final class GCGAskDuelRspOuterClass {
       }
       emu.grasscutter.net.proto.GCGAskDuelRspOuterClass.GCGAskDuelRsp other = (emu.grasscutter.net.proto.GCGAskDuelRspOuterClass.GCGAskDuelRsp) obj;
 
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (hasDuel() != other.hasDuel()) return false;
       if (hasDuel()) {
         if (!getDuel()
             .equals(other.getDuel())) return false;
       }
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -270,12 +246,12 @@ public final class GCGAskDuelRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       if (hasDuel()) {
         hash = (37 * hash) + DUEL_FIELD_NUMBER;
         hash = (53 * hash) + getDuel().hashCode();
       }
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -373,8 +349,8 @@ public final class GCGAskDuelRspOuterClass {
     }
     /**
      * <pre>
-     * Name: INEIPAMELIP
-     * CmdId: 7287
+     * CmdId: 7659
+     * Obf: IEHCEMKOPCF
      * </pre>
      *
      * Protobuf type {@code GCGAskDuelRsp}
@@ -414,14 +390,14 @@ public final class GCGAskDuelRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        retcode_ = 0;
+
         if (duelBuilder_ == null) {
           duel_ = null;
         } else {
           duel_ = null;
           duelBuilder_ = null;
         }
-        retcode_ = 0;
-
         return this;
       }
 
@@ -448,12 +424,12 @@ public final class GCGAskDuelRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGAskDuelRspOuterClass.GCGAskDuelRsp buildPartial() {
         emu.grasscutter.net.proto.GCGAskDuelRspOuterClass.GCGAskDuelRsp result = new emu.grasscutter.net.proto.GCGAskDuelRspOuterClass.GCGAskDuelRsp(this);
+        result.retcode_ = retcode_;
         if (duelBuilder_ == null) {
           result.duel_ = duel_;
         } else {
           result.duel_ = duelBuilder_.build();
         }
-        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -502,11 +478,11 @@ public final class GCGAskDuelRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGAskDuelRspOuterClass.GCGAskDuelRsp other) {
         if (other == emu.grasscutter.net.proto.GCGAskDuelRspOuterClass.GCGAskDuelRsp.getDefaultInstance()) return this;
-        if (other.hasDuel()) {
-          mergeDuel(other.getDuel());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.hasDuel()) {
+          mergeDuel(other.getDuel());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -537,26 +513,49 @@ public final class GCGAskDuelRspOuterClass {
         return this;
       }
 
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 6;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 6;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
       private emu.grasscutter.net.proto.GCGDuelOuterClass.GCGDuel duel_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGDuelOuterClass.GCGDuel, emu.grasscutter.net.proto.GCGDuelOuterClass.GCGDuel.Builder, emu.grasscutter.net.proto.GCGDuelOuterClass.GCGDuelOrBuilder> duelBuilder_;
       /**
-       * <pre>
-       *HHACKKBLLHO IEOMECODBLG snooswap
-       * </pre>
-       *
-       * <code>.GCGDuel duel = 4;</code>
+       * <code>.GCGDuel duel = 12;</code>
        * @return Whether the duel field is set.
        */
       public boolean hasDuel() {
         return duelBuilder_ != null || duel_ != null;
       }
       /**
-       * <pre>
-       *HHACKKBLLHO IEOMECODBLG snooswap
-       * </pre>
-       *
-       * <code>.GCGDuel duel = 4;</code>
+       * <code>.GCGDuel duel = 12;</code>
        * @return The duel.
        */
       public emu.grasscutter.net.proto.GCGDuelOuterClass.GCGDuel getDuel() {
@@ -567,11 +566,7 @@ public final class GCGAskDuelRspOuterClass {
         }
       }
       /**
-       * <pre>
-       *HHACKKBLLHO IEOMECODBLG snooswap
-       * </pre>
-       *
-       * <code>.GCGDuel duel = 4;</code>
+       * <code>.GCGDuel duel = 12;</code>
        */
       public Builder setDuel(emu.grasscutter.net.proto.GCGDuelOuterClass.GCGDuel value) {
         if (duelBuilder_ == null) {
@@ -587,11 +582,7 @@ public final class GCGAskDuelRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *HHACKKBLLHO IEOMECODBLG snooswap
-       * </pre>
-       *
-       * <code>.GCGDuel duel = 4;</code>
+       * <code>.GCGDuel duel = 12;</code>
        */
       public Builder setDuel(
           emu.grasscutter.net.proto.GCGDuelOuterClass.GCGDuel.Builder builderForValue) {
@@ -605,11 +596,7 @@ public final class GCGAskDuelRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *HHACKKBLLHO IEOMECODBLG snooswap
-       * </pre>
-       *
-       * <code>.GCGDuel duel = 4;</code>
+       * <code>.GCGDuel duel = 12;</code>
        */
       public Builder mergeDuel(emu.grasscutter.net.proto.GCGDuelOuterClass.GCGDuel value) {
         if (duelBuilder_ == null) {
@@ -627,11 +614,7 @@ public final class GCGAskDuelRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *HHACKKBLLHO IEOMECODBLG snooswap
-       * </pre>
-       *
-       * <code>.GCGDuel duel = 4;</code>
+       * <code>.GCGDuel duel = 12;</code>
        */
       public Builder clearDuel() {
         if (duelBuilder_ == null) {
@@ -645,11 +628,7 @@ public final class GCGAskDuelRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *HHACKKBLLHO IEOMECODBLG snooswap
-       * </pre>
-       *
-       * <code>.GCGDuel duel = 4;</code>
+       * <code>.GCGDuel duel = 12;</code>
        */
       public emu.grasscutter.net.proto.GCGDuelOuterClass.GCGDuel.Builder getDuelBuilder() {
         
@@ -657,11 +636,7 @@ public final class GCGAskDuelRspOuterClass {
         return getDuelFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *HHACKKBLLHO IEOMECODBLG snooswap
-       * </pre>
-       *
-       * <code>.GCGDuel duel = 4;</code>
+       * <code>.GCGDuel duel = 12;</code>
        */
       public emu.grasscutter.net.proto.GCGDuelOuterClass.GCGDuelOrBuilder getDuelOrBuilder() {
         if (duelBuilder_ != null) {
@@ -672,11 +647,7 @@ public final class GCGAskDuelRspOuterClass {
         }
       }
       /**
-       * <pre>
-       *HHACKKBLLHO IEOMECODBLG snooswap
-       * </pre>
-       *
-       * <code>.GCGDuel duel = 4;</code>
+       * <code>.GCGDuel duel = 12;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGDuelOuterClass.GCGDuel, emu.grasscutter.net.proto.GCGDuelOuterClass.GCGDuel.Builder, emu.grasscutter.net.proto.GCGDuelOuterClass.GCGDuelOrBuilder> 
@@ -690,37 +661,6 @@ public final class GCGAskDuelRspOuterClass {
           duel_ = null;
         }
         return duelBuilder_;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 13;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 13;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -790,8 +730,8 @@ public final class GCGAskDuelRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\023GCGAskDuelRsp.proto\032\rGCGDuel.proto\"8\n\r" +
-      "GCGAskDuelRsp\022\026\n\004duel\030\004 \001(\0132\010.GCGDuel\022\017\n" +
-      "\007retcode\030\r \001(\005B\033\n\031emu.grasscutter.net.pr" +
+      "GCGAskDuelRsp\022\017\n\007retcode\030\006 \001(\005\022\026\n\004duel\030\014" +
+      " \001(\0132\010.GCGDuelB\033\n\031emu.grasscutter.net.pr" +
       "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -804,7 +744,7 @@ public final class GCGAskDuelRspOuterClass {
     internal_static_GCGAskDuelRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGAskDuelRsp_descriptor,
-        new java.lang.String[] { "Duel", "Retcode", });
+        new java.lang.String[] { "Retcode", "Duel", });
     emu.grasscutter.net.proto.GCGDuelOuterClass.getDescriptor();
   }
 

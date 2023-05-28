@@ -19,20 +19,20 @@ public final class PushTipsDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 push_tips_id = 1;</code>
-     * @return The pushTipsId.
-     */
-    int getPushTipsId();
-
-    /**
-     * <code>uint32 state = 13;</code>
+     * <code>uint32 state = 5;</code>
      * @return The state.
      */
     int getState();
+
+    /**
+     * <code>uint32 push_tips_id = 12;</code>
+     * @return The pushTipsId.
+     */
+    int getPushTipsId();
   }
   /**
    * <pre>
-   * Name: EPHDHFNBIHF
+   * Obf: GPHKEHNFMKB
    * </pre>
    *
    * Protobuf type {@code PushTipsData}
@@ -79,14 +79,14 @@ public final class PushTipsDataOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              pushTipsId_ = input.readUInt32();
-              break;
-            }
-            case 104: {
+            case 40: {
 
               state_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              pushTipsId_ = input.readUInt32();
               break;
             }
             default: {
@@ -121,26 +121,26 @@ public final class PushTipsDataOuterClass {
               emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsData.class, emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsData.Builder.class);
     }
 
-    public static final int PUSH_TIPS_ID_FIELD_NUMBER = 1;
-    private int pushTipsId_;
-    /**
-     * <code>uint32 push_tips_id = 1;</code>
-     * @return The pushTipsId.
-     */
-    @java.lang.Override
-    public int getPushTipsId() {
-      return pushTipsId_;
-    }
-
-    public static final int STATE_FIELD_NUMBER = 13;
+    public static final int STATE_FIELD_NUMBER = 5;
     private int state_;
     /**
-     * <code>uint32 state = 13;</code>
+     * <code>uint32 state = 5;</code>
      * @return The state.
      */
     @java.lang.Override
     public int getState() {
       return state_;
+    }
+
+    public static final int PUSH_TIPS_ID_FIELD_NUMBER = 12;
+    private int pushTipsId_;
+    /**
+     * <code>uint32 push_tips_id = 12;</code>
+     * @return The pushTipsId.
+     */
+    @java.lang.Override
+    public int getPushTipsId() {
+      return pushTipsId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -157,11 +157,11 @@ public final class PushTipsDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (pushTipsId_ != 0) {
-        output.writeUInt32(1, pushTipsId_);
-      }
       if (state_ != 0) {
-        output.writeUInt32(13, state_);
+        output.writeUInt32(5, state_);
+      }
+      if (pushTipsId_ != 0) {
+        output.writeUInt32(12, pushTipsId_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +172,13 @@ public final class PushTipsDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (pushTipsId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, pushTipsId_);
-      }
       if (state_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, state_);
+          .computeUInt32Size(5, state_);
+      }
+      if (pushTipsId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, pushTipsId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -195,10 +195,10 @@ public final class PushTipsDataOuterClass {
       }
       emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsData other = (emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsData) obj;
 
-      if (getPushTipsId()
-          != other.getPushTipsId()) return false;
       if (getState()
           != other.getState()) return false;
+      if (getPushTipsId()
+          != other.getPushTipsId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -210,10 +210,10 @@ public final class PushTipsDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + PUSH_TIPS_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getPushTipsId();
       hash = (37 * hash) + STATE_FIELD_NUMBER;
       hash = (53 * hash) + getState();
+      hash = (37 * hash) + PUSH_TIPS_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getPushTipsId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -311,7 +311,7 @@ public final class PushTipsDataOuterClass {
     }
     /**
      * <pre>
-     * Name: EPHDHFNBIHF
+     * Obf: GPHKEHNFMKB
      * </pre>
      *
      * Protobuf type {@code PushTipsData}
@@ -351,9 +351,9 @@ public final class PushTipsDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        pushTipsId_ = 0;
-
         state_ = 0;
+
+        pushTipsId_ = 0;
 
         return this;
       }
@@ -381,8 +381,8 @@ public final class PushTipsDataOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsData buildPartial() {
         emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsData result = new emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsData(this);
-        result.pushTipsId_ = pushTipsId_;
         result.state_ = state_;
+        result.pushTipsId_ = pushTipsId_;
         onBuilt();
         return result;
       }
@@ -431,11 +431,11 @@ public final class PushTipsDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsData other) {
         if (other == emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsData.getDefaultInstance()) return this;
-        if (other.getPushTipsId() != 0) {
-          setPushTipsId(other.getPushTipsId());
-        }
         if (other.getState() != 0) {
           setState(other.getState());
+        }
+        if (other.getPushTipsId() != 0) {
+          setPushTipsId(other.getPushTipsId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -466,40 +466,9 @@ public final class PushTipsDataOuterClass {
         return this;
       }
 
-      private int pushTipsId_ ;
-      /**
-       * <code>uint32 push_tips_id = 1;</code>
-       * @return The pushTipsId.
-       */
-      @java.lang.Override
-      public int getPushTipsId() {
-        return pushTipsId_;
-      }
-      /**
-       * <code>uint32 push_tips_id = 1;</code>
-       * @param value The pushTipsId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPushTipsId(int value) {
-        
-        pushTipsId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 push_tips_id = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPushTipsId() {
-        
-        pushTipsId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int state_ ;
       /**
-       * <code>uint32 state = 13;</code>
+       * <code>uint32 state = 5;</code>
        * @return The state.
        */
       @java.lang.Override
@@ -507,7 +476,7 @@ public final class PushTipsDataOuterClass {
         return state_;
       }
       /**
-       * <code>uint32 state = 13;</code>
+       * <code>uint32 state = 5;</code>
        * @param value The state to set.
        * @return This builder for chaining.
        */
@@ -518,12 +487,43 @@ public final class PushTipsDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 state = 13;</code>
+       * <code>uint32 state = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearState() {
         
         state_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int pushTipsId_ ;
+      /**
+       * <code>uint32 push_tips_id = 12;</code>
+       * @return The pushTipsId.
+       */
+      @java.lang.Override
+      public int getPushTipsId() {
+        return pushTipsId_;
+      }
+      /**
+       * <code>uint32 push_tips_id = 12;</code>
+       * @param value The pushTipsId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPushTipsId(int value) {
+        
+        pushTipsId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 push_tips_id = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPushTipsId() {
+        
+        pushTipsId_ = 0;
         onChanged();
         return this;
       }
@@ -594,8 +594,8 @@ public final class PushTipsDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\022PushTipsData.proto\"3\n\014PushTipsData\022\024\n\014" +
-      "push_tips_id\030\001 \001(\r\022\r\n\005state\030\r \001(\rB\033\n\031emu" +
+      "\n\022PushTipsData.proto\"3\n\014PushTipsData\022\r\n\005" +
+      "state\030\005 \001(\r\022\024\n\014push_tips_id\030\014 \001(\rB\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -607,7 +607,7 @@ public final class PushTipsDataOuterClass {
     internal_static_PushTipsData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PushTipsData_descriptor,
-        new java.lang.String[] { "PushTipsId", "State", });
+        new java.lang.String[] { "State", "PushTipsId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

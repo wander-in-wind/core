@@ -20,7 +20,7 @@ public final class GCGOperationPassOuterClass {
   }
   /**
    * <pre>
-   * Name: JMKLPMBHOGG
+   * Obf: PDEMKHPAFIA
    * </pre>
    *
    * Protobuf type {@code GCGOperationPass}
@@ -245,7 +245,7 @@ public final class GCGOperationPassOuterClass {
     }
     /**
      * <pre>
-     * Name: JMKLPMBHOGG
+     * Obf: PDEMKHPAFIA
      * </pre>
      *
      * Protobuf type {@code GCGOperationPass}

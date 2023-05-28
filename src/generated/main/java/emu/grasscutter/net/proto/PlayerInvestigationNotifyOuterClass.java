@@ -44,8 +44,8 @@ public final class PlayerInvestigationNotifyOuterClass {
   }
   /**
    * <pre>
-   * Name: KFLGDLECPAK
-   * CmdId: 1901
+   * CmdId: 1909
+   * Obf: CCDOCNOPOMC
    * </pre>
    *
    * Protobuf type {@code PlayerInvestigationNotify}
@@ -337,8 +337,8 @@ public final class PlayerInvestigationNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: KFLGDLECPAK
-     * CmdId: 1901
+     * CmdId: 1909
+     * Obf: CCDOCNOPOMC
      * </pre>
      *
      * Protobuf type {@code PlayerInvestigationNotify}

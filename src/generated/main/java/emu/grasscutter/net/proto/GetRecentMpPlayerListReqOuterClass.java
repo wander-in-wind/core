@@ -20,8 +20,8 @@ public final class GetRecentMpPlayerListReqOuterClass {
   }
   /**
    * <pre>
-   * Name: LAMJHMACNGB
-   * CmdId: 4026
+   * CmdId: 4003
+   * Obf: BHNDONNDGGJ
    * </pre>
    *
    * Protobuf type {@code GetRecentMpPlayerListReq}
@@ -246,8 +246,8 @@ public final class GetRecentMpPlayerListReqOuterClass {
     }
     /**
      * <pre>
-     * Name: LAMJHMACNGB
-     * CmdId: 4026
+     * CmdId: 4003
+     * Obf: BHNDONNDGGJ
      * </pre>
      *
      * Protobuf type {@code GetRecentMpPlayerListReq}

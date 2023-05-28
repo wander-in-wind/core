@@ -16,7 +16,7 @@ public final class AreaPlayTypeOuterClass {
   }
   /**
    * <pre>
-   * Name: MGOHDOAGFDA
+   * Obf: KAJOBPDKGLN
    * </pre>
    *
    * Protobuf enum {@code AreaPlayType}

@@ -19,44 +19,44 @@ public final class HomeAvatarSummonEventInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 CFKBGIGOEEJ = 2;</code>
-     * @return The cFKBGIGOEEJ.
-     */
-    int getCFKBGIGOEEJ();
-
-    /**
-     * <code>uint32 avatar_id = 9;</code>
-     * @return The avatarId.
-     */
-    int getAvatarId();
-
-    /**
-     * <code>uint32 EBFHOCIGDOI = 4;</code>
-     * @return The eBFHOCIGDOI.
-     */
-    int getEBFHOCIGDOI();
-
-    /**
      * <code>uint32 event_id = 10;</code>
      * @return The eventId.
      */
     int getEventId();
 
     /**
-     * <code>uint32 guid = 14;</code>
+     * <code>uint32 LHAPBMODLNM = 15;</code>
+     * @return The lHAPBMODLNM.
+     */
+    int getLHAPBMODLNM();
+
+    /**
+     * <code>uint32 suit_id = 2;</code>
+     * @return The suitId.
+     */
+    int getSuitId();
+
+    /**
+     * <code>uint32 avatar_id = 7;</code>
+     * @return The avatarId.
+     */
+    int getAvatarId();
+
+    /**
+     * <code>uint32 guid = 5;</code>
      * @return The guid.
      */
     int getGuid();
 
     /**
-     * <code>uint32 suit_id = 7;</code>
-     * @return The suitId.
+     * <code>uint32 DGEELJHENOD = 9;</code>
+     * @return The dGEELJHENOD.
      */
-    int getSuitId();
+    int getDGEELJHENOD();
   }
   /**
    * <pre>
-   * Name: IBJFMGLGGIA
+   * Obf: PCJALOMGBGH
    * </pre>
    *
    * Protobuf type {@code HomeAvatarSummonEventInfo}
@@ -105,22 +105,22 @@ public final class HomeAvatarSummonEventInfoOuterClass {
               break;
             case 16: {
 
-              cFKBGIGOEEJ_ = input.readUInt32();
+              suitId_ = input.readUInt32();
               break;
             }
-            case 32: {
+            case 40: {
 
-              eBFHOCIGDOI_ = input.readUInt32();
+              guid_ = input.readUInt32();
               break;
             }
             case 56: {
 
-              suitId_ = input.readUInt32();
+              avatarId_ = input.readUInt32();
               break;
             }
             case 72: {
 
-              avatarId_ = input.readUInt32();
+              dGEELJHENOD_ = input.readUInt32();
               break;
             }
             case 80: {
@@ -128,9 +128,9 @@ public final class HomeAvatarSummonEventInfoOuterClass {
               eventId_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 120: {
 
-              guid_ = input.readUInt32();
+              lHAPBMODLNM_ = input.readUInt32();
               break;
             }
             default: {
@@ -165,39 +165,6 @@ public final class HomeAvatarSummonEventInfoOuterClass {
               emu.grasscutter.net.proto.HomeAvatarSummonEventInfoOuterClass.HomeAvatarSummonEventInfo.class, emu.grasscutter.net.proto.HomeAvatarSummonEventInfoOuterClass.HomeAvatarSummonEventInfo.Builder.class);
     }
 
-    public static final int CFKBGIGOEEJ_FIELD_NUMBER = 2;
-    private int cFKBGIGOEEJ_;
-    /**
-     * <code>uint32 CFKBGIGOEEJ = 2;</code>
-     * @return The cFKBGIGOEEJ.
-     */
-    @java.lang.Override
-    public int getCFKBGIGOEEJ() {
-      return cFKBGIGOEEJ_;
-    }
-
-    public static final int AVATAR_ID_FIELD_NUMBER = 9;
-    private int avatarId_;
-    /**
-     * <code>uint32 avatar_id = 9;</code>
-     * @return The avatarId.
-     */
-    @java.lang.Override
-    public int getAvatarId() {
-      return avatarId_;
-    }
-
-    public static final int EBFHOCIGDOI_FIELD_NUMBER = 4;
-    private int eBFHOCIGDOI_;
-    /**
-     * <code>uint32 EBFHOCIGDOI = 4;</code>
-     * @return The eBFHOCIGDOI.
-     */
-    @java.lang.Override
-    public int getEBFHOCIGDOI() {
-      return eBFHOCIGDOI_;
-    }
-
     public static final int EVENT_ID_FIELD_NUMBER = 10;
     private int eventId_;
     /**
@@ -209,10 +176,43 @@ public final class HomeAvatarSummonEventInfoOuterClass {
       return eventId_;
     }
 
-    public static final int GUID_FIELD_NUMBER = 14;
+    public static final int LHAPBMODLNM_FIELD_NUMBER = 15;
+    private int lHAPBMODLNM_;
+    /**
+     * <code>uint32 LHAPBMODLNM = 15;</code>
+     * @return The lHAPBMODLNM.
+     */
+    @java.lang.Override
+    public int getLHAPBMODLNM() {
+      return lHAPBMODLNM_;
+    }
+
+    public static final int SUIT_ID_FIELD_NUMBER = 2;
+    private int suitId_;
+    /**
+     * <code>uint32 suit_id = 2;</code>
+     * @return The suitId.
+     */
+    @java.lang.Override
+    public int getSuitId() {
+      return suitId_;
+    }
+
+    public static final int AVATAR_ID_FIELD_NUMBER = 7;
+    private int avatarId_;
+    /**
+     * <code>uint32 avatar_id = 7;</code>
+     * @return The avatarId.
+     */
+    @java.lang.Override
+    public int getAvatarId() {
+      return avatarId_;
+    }
+
+    public static final int GUID_FIELD_NUMBER = 5;
     private int guid_;
     /**
-     * <code>uint32 guid = 14;</code>
+     * <code>uint32 guid = 5;</code>
      * @return The guid.
      */
     @java.lang.Override
@@ -220,15 +220,15 @@ public final class HomeAvatarSummonEventInfoOuterClass {
       return guid_;
     }
 
-    public static final int SUIT_ID_FIELD_NUMBER = 7;
-    private int suitId_;
+    public static final int DGEELJHENOD_FIELD_NUMBER = 9;
+    private int dGEELJHENOD_;
     /**
-     * <code>uint32 suit_id = 7;</code>
-     * @return The suitId.
+     * <code>uint32 DGEELJHENOD = 9;</code>
+     * @return The dGEELJHENOD.
      */
     @java.lang.Override
-    public int getSuitId() {
-      return suitId_;
+    public int getDGEELJHENOD() {
+      return dGEELJHENOD_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -245,23 +245,23 @@ public final class HomeAvatarSummonEventInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (cFKBGIGOEEJ_ != 0) {
-        output.writeUInt32(2, cFKBGIGOEEJ_);
-      }
-      if (eBFHOCIGDOI_ != 0) {
-        output.writeUInt32(4, eBFHOCIGDOI_);
-      }
       if (suitId_ != 0) {
-        output.writeUInt32(7, suitId_);
+        output.writeUInt32(2, suitId_);
+      }
+      if (guid_ != 0) {
+        output.writeUInt32(5, guid_);
       }
       if (avatarId_ != 0) {
-        output.writeUInt32(9, avatarId_);
+        output.writeUInt32(7, avatarId_);
+      }
+      if (dGEELJHENOD_ != 0) {
+        output.writeUInt32(9, dGEELJHENOD_);
       }
       if (eventId_ != 0) {
         output.writeUInt32(10, eventId_);
       }
-      if (guid_ != 0) {
-        output.writeUInt32(14, guid_);
+      if (lHAPBMODLNM_ != 0) {
+        output.writeUInt32(15, lHAPBMODLNM_);
       }
       unknownFields.writeTo(output);
     }
@@ -272,29 +272,29 @@ public final class HomeAvatarSummonEventInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (cFKBGIGOEEJ_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, cFKBGIGOEEJ_);
-      }
-      if (eBFHOCIGDOI_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, eBFHOCIGDOI_);
-      }
       if (suitId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, suitId_);
+          .computeUInt32Size(2, suitId_);
+      }
+      if (guid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, guid_);
       }
       if (avatarId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, avatarId_);
+          .computeUInt32Size(7, avatarId_);
+      }
+      if (dGEELJHENOD_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, dGEELJHENOD_);
       }
       if (eventId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(10, eventId_);
       }
-      if (guid_ != 0) {
+      if (lHAPBMODLNM_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, guid_);
+          .computeUInt32Size(15, lHAPBMODLNM_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -311,18 +311,18 @@ public final class HomeAvatarSummonEventInfoOuterClass {
       }
       emu.grasscutter.net.proto.HomeAvatarSummonEventInfoOuterClass.HomeAvatarSummonEventInfo other = (emu.grasscutter.net.proto.HomeAvatarSummonEventInfoOuterClass.HomeAvatarSummonEventInfo) obj;
 
-      if (getCFKBGIGOEEJ()
-          != other.getCFKBGIGOEEJ()) return false;
-      if (getAvatarId()
-          != other.getAvatarId()) return false;
-      if (getEBFHOCIGDOI()
-          != other.getEBFHOCIGDOI()) return false;
       if (getEventId()
           != other.getEventId()) return false;
-      if (getGuid()
-          != other.getGuid()) return false;
+      if (getLHAPBMODLNM()
+          != other.getLHAPBMODLNM()) return false;
       if (getSuitId()
           != other.getSuitId()) return false;
+      if (getAvatarId()
+          != other.getAvatarId()) return false;
+      if (getGuid()
+          != other.getGuid()) return false;
+      if (getDGEELJHENOD()
+          != other.getDGEELJHENOD()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -334,18 +334,18 @@ public final class HomeAvatarSummonEventInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CFKBGIGOEEJ_FIELD_NUMBER;
-      hash = (53 * hash) + getCFKBGIGOEEJ();
-      hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getAvatarId();
-      hash = (37 * hash) + EBFHOCIGDOI_FIELD_NUMBER;
-      hash = (53 * hash) + getEBFHOCIGDOI();
       hash = (37 * hash) + EVENT_ID_FIELD_NUMBER;
       hash = (53 * hash) + getEventId();
-      hash = (37 * hash) + GUID_FIELD_NUMBER;
-      hash = (53 * hash) + getGuid();
+      hash = (37 * hash) + LHAPBMODLNM_FIELD_NUMBER;
+      hash = (53 * hash) + getLHAPBMODLNM();
       hash = (37 * hash) + SUIT_ID_FIELD_NUMBER;
       hash = (53 * hash) + getSuitId();
+      hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getAvatarId();
+      hash = (37 * hash) + GUID_FIELD_NUMBER;
+      hash = (53 * hash) + getGuid();
+      hash = (37 * hash) + DGEELJHENOD_FIELD_NUMBER;
+      hash = (53 * hash) + getDGEELJHENOD();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -443,7 +443,7 @@ public final class HomeAvatarSummonEventInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: IBJFMGLGGIA
+     * Obf: PCJALOMGBGH
      * </pre>
      *
      * Protobuf type {@code HomeAvatarSummonEventInfo}
@@ -483,17 +483,17 @@ public final class HomeAvatarSummonEventInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        cFKBGIGOEEJ_ = 0;
+        eventId_ = 0;
+
+        lHAPBMODLNM_ = 0;
+
+        suitId_ = 0;
 
         avatarId_ = 0;
 
-        eBFHOCIGDOI_ = 0;
-
-        eventId_ = 0;
-
         guid_ = 0;
 
-        suitId_ = 0;
+        dGEELJHENOD_ = 0;
 
         return this;
       }
@@ -521,12 +521,12 @@ public final class HomeAvatarSummonEventInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeAvatarSummonEventInfoOuterClass.HomeAvatarSummonEventInfo buildPartial() {
         emu.grasscutter.net.proto.HomeAvatarSummonEventInfoOuterClass.HomeAvatarSummonEventInfo result = new emu.grasscutter.net.proto.HomeAvatarSummonEventInfoOuterClass.HomeAvatarSummonEventInfo(this);
-        result.cFKBGIGOEEJ_ = cFKBGIGOEEJ_;
-        result.avatarId_ = avatarId_;
-        result.eBFHOCIGDOI_ = eBFHOCIGDOI_;
         result.eventId_ = eventId_;
-        result.guid_ = guid_;
+        result.lHAPBMODLNM_ = lHAPBMODLNM_;
         result.suitId_ = suitId_;
+        result.avatarId_ = avatarId_;
+        result.guid_ = guid_;
+        result.dGEELJHENOD_ = dGEELJHENOD_;
         onBuilt();
         return result;
       }
@@ -575,23 +575,23 @@ public final class HomeAvatarSummonEventInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HomeAvatarSummonEventInfoOuterClass.HomeAvatarSummonEventInfo other) {
         if (other == emu.grasscutter.net.proto.HomeAvatarSummonEventInfoOuterClass.HomeAvatarSummonEventInfo.getDefaultInstance()) return this;
-        if (other.getCFKBGIGOEEJ() != 0) {
-          setCFKBGIGOEEJ(other.getCFKBGIGOEEJ());
+        if (other.getEventId() != 0) {
+          setEventId(other.getEventId());
+        }
+        if (other.getLHAPBMODLNM() != 0) {
+          setLHAPBMODLNM(other.getLHAPBMODLNM());
+        }
+        if (other.getSuitId() != 0) {
+          setSuitId(other.getSuitId());
         }
         if (other.getAvatarId() != 0) {
           setAvatarId(other.getAvatarId());
         }
-        if (other.getEBFHOCIGDOI() != 0) {
-          setEBFHOCIGDOI(other.getEBFHOCIGDOI());
-        }
-        if (other.getEventId() != 0) {
-          setEventId(other.getEventId());
-        }
         if (other.getGuid() != 0) {
           setGuid(other.getGuid());
         }
-        if (other.getSuitId() != 0) {
-          setSuitId(other.getSuitId());
+        if (other.getDGEELJHENOD() != 0) {
+          setDGEELJHENOD(other.getDGEELJHENOD());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -619,99 +619,6 @@ public final class HomeAvatarSummonEventInfoOuterClass {
             mergeFrom(parsedMessage);
           }
         }
-        return this;
-      }
-
-      private int cFKBGIGOEEJ_ ;
-      /**
-       * <code>uint32 CFKBGIGOEEJ = 2;</code>
-       * @return The cFKBGIGOEEJ.
-       */
-      @java.lang.Override
-      public int getCFKBGIGOEEJ() {
-        return cFKBGIGOEEJ_;
-      }
-      /**
-       * <code>uint32 CFKBGIGOEEJ = 2;</code>
-       * @param value The cFKBGIGOEEJ to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCFKBGIGOEEJ(int value) {
-        
-        cFKBGIGOEEJ_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 CFKBGIGOEEJ = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCFKBGIGOEEJ() {
-        
-        cFKBGIGOEEJ_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int avatarId_ ;
-      /**
-       * <code>uint32 avatar_id = 9;</code>
-       * @return The avatarId.
-       */
-      @java.lang.Override
-      public int getAvatarId() {
-        return avatarId_;
-      }
-      /**
-       * <code>uint32 avatar_id = 9;</code>
-       * @param value The avatarId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAvatarId(int value) {
-        
-        avatarId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 avatar_id = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAvatarId() {
-        
-        avatarId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int eBFHOCIGDOI_ ;
-      /**
-       * <code>uint32 EBFHOCIGDOI = 4;</code>
-       * @return The eBFHOCIGDOI.
-       */
-      @java.lang.Override
-      public int getEBFHOCIGDOI() {
-        return eBFHOCIGDOI_;
-      }
-      /**
-       * <code>uint32 EBFHOCIGDOI = 4;</code>
-       * @param value The eBFHOCIGDOI to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEBFHOCIGDOI(int value) {
-        
-        eBFHOCIGDOI_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 EBFHOCIGDOI = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEBFHOCIGDOI() {
-        
-        eBFHOCIGDOI_ = 0;
-        onChanged();
         return this;
       }
 
@@ -746,40 +653,40 @@ public final class HomeAvatarSummonEventInfoOuterClass {
         return this;
       }
 
-      private int guid_ ;
+      private int lHAPBMODLNM_ ;
       /**
-       * <code>uint32 guid = 14;</code>
-       * @return The guid.
+       * <code>uint32 LHAPBMODLNM = 15;</code>
+       * @return The lHAPBMODLNM.
        */
       @java.lang.Override
-      public int getGuid() {
-        return guid_;
+      public int getLHAPBMODLNM() {
+        return lHAPBMODLNM_;
       }
       /**
-       * <code>uint32 guid = 14;</code>
-       * @param value The guid to set.
+       * <code>uint32 LHAPBMODLNM = 15;</code>
+       * @param value The lHAPBMODLNM to set.
        * @return This builder for chaining.
        */
-      public Builder setGuid(int value) {
+      public Builder setLHAPBMODLNM(int value) {
         
-        guid_ = value;
+        lHAPBMODLNM_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 guid = 14;</code>
+       * <code>uint32 LHAPBMODLNM = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGuid() {
+      public Builder clearLHAPBMODLNM() {
         
-        guid_ = 0;
+        lHAPBMODLNM_ = 0;
         onChanged();
         return this;
       }
 
       private int suitId_ ;
       /**
-       * <code>uint32 suit_id = 7;</code>
+       * <code>uint32 suit_id = 2;</code>
        * @return The suitId.
        */
       @java.lang.Override
@@ -787,7 +694,7 @@ public final class HomeAvatarSummonEventInfoOuterClass {
         return suitId_;
       }
       /**
-       * <code>uint32 suit_id = 7;</code>
+       * <code>uint32 suit_id = 2;</code>
        * @param value The suitId to set.
        * @return This builder for chaining.
        */
@@ -798,12 +705,105 @@ public final class HomeAvatarSummonEventInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 suit_id = 7;</code>
+       * <code>uint32 suit_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearSuitId() {
         
         suitId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int avatarId_ ;
+      /**
+       * <code>uint32 avatar_id = 7;</code>
+       * @return The avatarId.
+       */
+      @java.lang.Override
+      public int getAvatarId() {
+        return avatarId_;
+      }
+      /**
+       * <code>uint32 avatar_id = 7;</code>
+       * @param value The avatarId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAvatarId(int value) {
+        
+        avatarId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 avatar_id = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAvatarId() {
+        
+        avatarId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int guid_ ;
+      /**
+       * <code>uint32 guid = 5;</code>
+       * @return The guid.
+       */
+      @java.lang.Override
+      public int getGuid() {
+        return guid_;
+      }
+      /**
+       * <code>uint32 guid = 5;</code>
+       * @param value The guid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGuid(int value) {
+        
+        guid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 guid = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGuid() {
+        
+        guid_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int dGEELJHENOD_ ;
+      /**
+       * <code>uint32 DGEELJHENOD = 9;</code>
+       * @return The dGEELJHENOD.
+       */
+      @java.lang.Override
+      public int getDGEELJHENOD() {
+        return dGEELJHENOD_;
+      }
+      /**
+       * <code>uint32 DGEELJHENOD = 9;</code>
+       * @param value The dGEELJHENOD to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDGEELJHENOD(int value) {
+        
+        dGEELJHENOD_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 DGEELJHENOD = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDGEELJHENOD() {
+        
+        dGEELJHENOD_ = 0;
         onChanged();
         return this;
       }
@@ -875,10 +875,10 @@ public final class HomeAvatarSummonEventInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037HomeAvatarSummonEventInfo.proto\"\211\001\n\031Ho" +
-      "meAvatarSummonEventInfo\022\023\n\013CFKBGIGOEEJ\030\002" +
-      " \001(\r\022\021\n\tavatar_id\030\t \001(\r\022\023\n\013EBFHOCIGDOI\030\004" +
-      " \001(\r\022\020\n\010event_id\030\n \001(\r\022\014\n\004guid\030\016 \001(\r\022\017\n\007" +
-      "suit_id\030\007 \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "meAvatarSummonEventInfo\022\020\n\010event_id\030\n \001(" +
+      "\r\022\023\n\013LHAPBMODLNM\030\017 \001(\r\022\017\n\007suit_id\030\002 \001(\r\022" +
+      "\021\n\tavatar_id\030\007 \001(\r\022\014\n\004guid\030\005 \001(\r\022\023\n\013DGEE" +
+      "LJHENOD\030\t \001(\rB\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -890,7 +890,7 @@ public final class HomeAvatarSummonEventInfoOuterClass {
     internal_static_HomeAvatarSummonEventInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeAvatarSummonEventInfo_descriptor,
-        new java.lang.String[] { "CFKBGIGOEEJ", "AvatarId", "EBFHOCIGDOI", "EventId", "Guid", "SuitId", });
+        new java.lang.String[] { "EventId", "LHAPBMODLNM", "SuitId", "AvatarId", "Guid", "DGEELJHENOD", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -16,7 +16,7 @@ public final class FishEscapeReasonOuterClass {
   }
   /**
    * <pre>
-   * Name: EBLPNABPEMI
+   * Obf: DGDCCMHODEN
    * </pre>
    *
    * Protobuf enum {@code FishEscapeReason}

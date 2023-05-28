@@ -19,38 +19,38 @@ public final class GCGSkillLimitsInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .GCGLimitsInfo limits_list = 11;</code>
+     * <code>repeated .GCGLimitsInfo limits_list = 5;</code>
      */
     java.util.List<emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo> 
         getLimitsListList();
     /**
-     * <code>repeated .GCGLimitsInfo limits_list = 11;</code>
+     * <code>repeated .GCGLimitsInfo limits_list = 5;</code>
      */
     emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo getLimitsList(int index);
     /**
-     * <code>repeated .GCGLimitsInfo limits_list = 11;</code>
+     * <code>repeated .GCGLimitsInfo limits_list = 5;</code>
      */
     int getLimitsListCount();
     /**
-     * <code>repeated .GCGLimitsInfo limits_list = 11;</code>
+     * <code>repeated .GCGLimitsInfo limits_list = 5;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfoOrBuilder> 
         getLimitsListOrBuilderList();
     /**
-     * <code>repeated .GCGLimitsInfo limits_list = 11;</code>
+     * <code>repeated .GCGLimitsInfo limits_list = 5;</code>
      */
     emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfoOrBuilder getLimitsListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 skill_id = 7;</code>
+     * <code>uint32 skill_id = 1;</code>
      * @return The skillId.
      */
     int getSkillId();
   }
   /**
    * <pre>
-   * Name: GILKJDIJOIG
+   * Obf: OOLDBDINHBG
    * </pre>
    *
    * Protobuf type {@code GCGSkillLimitsInfo}
@@ -99,12 +99,12 @@ public final class GCGSkillLimitsInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 8: {
 
               skillId_ = input.readUInt32();
               break;
             }
-            case 90: {
+            case 42: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 limitsList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -148,17 +148,17 @@ public final class GCGSkillLimitsInfoOuterClass {
               emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo.class, emu.grasscutter.net.proto.GCGSkillLimitsInfoOuterClass.GCGSkillLimitsInfo.Builder.class);
     }
 
-    public static final int LIMITS_LIST_FIELD_NUMBER = 11;
+    public static final int LIMITS_LIST_FIELD_NUMBER = 5;
     private java.util.List<emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo> limitsList_;
     /**
-     * <code>repeated .GCGLimitsInfo limits_list = 11;</code>
+     * <code>repeated .GCGLimitsInfo limits_list = 5;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo> getLimitsListList() {
       return limitsList_;
     }
     /**
-     * <code>repeated .GCGLimitsInfo limits_list = 11;</code>
+     * <code>repeated .GCGLimitsInfo limits_list = 5;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfoOrBuilder> 
@@ -166,21 +166,21 @@ public final class GCGSkillLimitsInfoOuterClass {
       return limitsList_;
     }
     /**
-     * <code>repeated .GCGLimitsInfo limits_list = 11;</code>
+     * <code>repeated .GCGLimitsInfo limits_list = 5;</code>
      */
     @java.lang.Override
     public int getLimitsListCount() {
       return limitsList_.size();
     }
     /**
-     * <code>repeated .GCGLimitsInfo limits_list = 11;</code>
+     * <code>repeated .GCGLimitsInfo limits_list = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo getLimitsList(int index) {
       return limitsList_.get(index);
     }
     /**
-     * <code>repeated .GCGLimitsInfo limits_list = 11;</code>
+     * <code>repeated .GCGLimitsInfo limits_list = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfoOrBuilder getLimitsListOrBuilder(
@@ -188,10 +188,10 @@ public final class GCGSkillLimitsInfoOuterClass {
       return limitsList_.get(index);
     }
 
-    public static final int SKILL_ID_FIELD_NUMBER = 7;
+    public static final int SKILL_ID_FIELD_NUMBER = 1;
     private int skillId_;
     /**
-     * <code>uint32 skill_id = 7;</code>
+     * <code>uint32 skill_id = 1;</code>
      * @return The skillId.
      */
     @java.lang.Override
@@ -214,10 +214,10 @@ public final class GCGSkillLimitsInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (skillId_ != 0) {
-        output.writeUInt32(7, skillId_);
+        output.writeUInt32(1, skillId_);
       }
       for (int i = 0; i < limitsList_.size(); i++) {
-        output.writeMessage(11, limitsList_.get(i));
+        output.writeMessage(5, limitsList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -230,11 +230,11 @@ public final class GCGSkillLimitsInfoOuterClass {
       size = 0;
       if (skillId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, skillId_);
+          .computeUInt32Size(1, skillId_);
       }
       for (int i = 0; i < limitsList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, limitsList_.get(i));
+          .computeMessageSize(5, limitsList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -369,7 +369,7 @@ public final class GCGSkillLimitsInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: GILKJDIJOIG
+     * Obf: OOLDBDINHBG
      * </pre>
      *
      * Protobuf type {@code GCGSkillLimitsInfo}
@@ -575,7 +575,7 @@ public final class GCGSkillLimitsInfoOuterClass {
           emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo, emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo.Builder, emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfoOrBuilder> limitsListBuilder_;
 
       /**
-       * <code>repeated .GCGLimitsInfo limits_list = 11;</code>
+       * <code>repeated .GCGLimitsInfo limits_list = 5;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo> getLimitsListList() {
         if (limitsListBuilder_ == null) {
@@ -585,7 +585,7 @@ public final class GCGSkillLimitsInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGLimitsInfo limits_list = 11;</code>
+       * <code>repeated .GCGLimitsInfo limits_list = 5;</code>
        */
       public int getLimitsListCount() {
         if (limitsListBuilder_ == null) {
@@ -595,7 +595,7 @@ public final class GCGSkillLimitsInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGLimitsInfo limits_list = 11;</code>
+       * <code>repeated .GCGLimitsInfo limits_list = 5;</code>
        */
       public emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo getLimitsList(int index) {
         if (limitsListBuilder_ == null) {
@@ -605,7 +605,7 @@ public final class GCGSkillLimitsInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGLimitsInfo limits_list = 11;</code>
+       * <code>repeated .GCGLimitsInfo limits_list = 5;</code>
        */
       public Builder setLimitsList(
           int index, emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo value) {
@@ -622,7 +622,7 @@ public final class GCGSkillLimitsInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGLimitsInfo limits_list = 11;</code>
+       * <code>repeated .GCGLimitsInfo limits_list = 5;</code>
        */
       public Builder setLimitsList(
           int index, emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo.Builder builderForValue) {
@@ -636,7 +636,7 @@ public final class GCGSkillLimitsInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGLimitsInfo limits_list = 11;</code>
+       * <code>repeated .GCGLimitsInfo limits_list = 5;</code>
        */
       public Builder addLimitsList(emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo value) {
         if (limitsListBuilder_ == null) {
@@ -652,7 +652,7 @@ public final class GCGSkillLimitsInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGLimitsInfo limits_list = 11;</code>
+       * <code>repeated .GCGLimitsInfo limits_list = 5;</code>
        */
       public Builder addLimitsList(
           int index, emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo value) {
@@ -669,7 +669,7 @@ public final class GCGSkillLimitsInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGLimitsInfo limits_list = 11;</code>
+       * <code>repeated .GCGLimitsInfo limits_list = 5;</code>
        */
       public Builder addLimitsList(
           emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo.Builder builderForValue) {
@@ -683,7 +683,7 @@ public final class GCGSkillLimitsInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGLimitsInfo limits_list = 11;</code>
+       * <code>repeated .GCGLimitsInfo limits_list = 5;</code>
        */
       public Builder addLimitsList(
           int index, emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo.Builder builderForValue) {
@@ -697,7 +697,7 @@ public final class GCGSkillLimitsInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGLimitsInfo limits_list = 11;</code>
+       * <code>repeated .GCGLimitsInfo limits_list = 5;</code>
        */
       public Builder addAllLimitsList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo> values) {
@@ -712,7 +712,7 @@ public final class GCGSkillLimitsInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGLimitsInfo limits_list = 11;</code>
+       * <code>repeated .GCGLimitsInfo limits_list = 5;</code>
        */
       public Builder clearLimitsList() {
         if (limitsListBuilder_ == null) {
@@ -725,7 +725,7 @@ public final class GCGSkillLimitsInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGLimitsInfo limits_list = 11;</code>
+       * <code>repeated .GCGLimitsInfo limits_list = 5;</code>
        */
       public Builder removeLimitsList(int index) {
         if (limitsListBuilder_ == null) {
@@ -738,14 +738,14 @@ public final class GCGSkillLimitsInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGLimitsInfo limits_list = 11;</code>
+       * <code>repeated .GCGLimitsInfo limits_list = 5;</code>
        */
       public emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo.Builder getLimitsListBuilder(
           int index) {
         return getLimitsListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .GCGLimitsInfo limits_list = 11;</code>
+       * <code>repeated .GCGLimitsInfo limits_list = 5;</code>
        */
       public emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfoOrBuilder getLimitsListOrBuilder(
           int index) {
@@ -755,7 +755,7 @@ public final class GCGSkillLimitsInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGLimitsInfo limits_list = 11;</code>
+       * <code>repeated .GCGLimitsInfo limits_list = 5;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfoOrBuilder> 
            getLimitsListOrBuilderList() {
@@ -766,14 +766,14 @@ public final class GCGSkillLimitsInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGLimitsInfo limits_list = 11;</code>
+       * <code>repeated .GCGLimitsInfo limits_list = 5;</code>
        */
       public emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo.Builder addLimitsListBuilder() {
         return getLimitsListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .GCGLimitsInfo limits_list = 11;</code>
+       * <code>repeated .GCGLimitsInfo limits_list = 5;</code>
        */
       public emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo.Builder addLimitsListBuilder(
           int index) {
@@ -781,7 +781,7 @@ public final class GCGSkillLimitsInfoOuterClass {
             index, emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .GCGLimitsInfo limits_list = 11;</code>
+       * <code>repeated .GCGLimitsInfo limits_list = 5;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo.Builder> 
            getLimitsListBuilderList() {
@@ -804,7 +804,7 @@ public final class GCGSkillLimitsInfoOuterClass {
 
       private int skillId_ ;
       /**
-       * <code>uint32 skill_id = 7;</code>
+       * <code>uint32 skill_id = 1;</code>
        * @return The skillId.
        */
       @java.lang.Override
@@ -812,7 +812,7 @@ public final class GCGSkillLimitsInfoOuterClass {
         return skillId_;
       }
       /**
-       * <code>uint32 skill_id = 7;</code>
+       * <code>uint32 skill_id = 1;</code>
        * @param value The skillId to set.
        * @return This builder for chaining.
        */
@@ -823,7 +823,7 @@ public final class GCGSkillLimitsInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 skill_id = 7;</code>
+       * <code>uint32 skill_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearSkillId() {
@@ -901,7 +901,7 @@ public final class GCGSkillLimitsInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\030GCGSkillLimitsInfo.proto\032\023GCGLimitsInf" +
       "o.proto\"K\n\022GCGSkillLimitsInfo\022#\n\013limits_" +
-      "list\030\013 \003(\0132\016.GCGLimitsInfo\022\020\n\010skill_id\030\007" +
+      "list\030\005 \003(\0132\016.GCGLimitsInfo\022\020\n\010skill_id\030\001" +
       " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
     };

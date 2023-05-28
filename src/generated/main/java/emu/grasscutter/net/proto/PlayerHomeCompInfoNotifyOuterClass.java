@@ -35,8 +35,8 @@ public final class PlayerHomeCompInfoNotifyOuterClass {
   }
   /**
    * <pre>
-   * Name: FAFABIGFAMI
-   * CmdId: 4886
+   * CmdId: 4769
+   * Obf: CBGMFLDFHFN
    * </pre>
    *
    * Protobuf type {@code PlayerHomeCompInfoNotify}
@@ -316,8 +316,8 @@ public final class PlayerHomeCompInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: FAFABIGFAMI
-     * CmdId: 4886
+     * CmdId: 4769
+     * Obf: CBGMFLDFHFN
      * </pre>
      *
      * Protobuf type {@code PlayerHomeCompInfoNotify}

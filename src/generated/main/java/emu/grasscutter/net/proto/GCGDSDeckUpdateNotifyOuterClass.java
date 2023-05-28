@@ -19,29 +19,21 @@ public final class GCGDSDeckUpdateNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *AHAIAIPGFDN snooswap
-     * </pre>
-     *
-     * <code>uint32 deck_id = 6;</code>
+     * <code>uint32 deck_id = 12;</code>
      * @return The deckId.
      */
     int getDeckId();
 
     /**
-     * <pre>
-     *BBNOFLCPEBA snooswap
-     * </pre>
-     *
-     * <code>bool is_valid = 2;</code>
+     * <code>bool is_valid = 15;</code>
      * @return The isValid.
      */
     boolean getIsValid();
   }
   /**
    * <pre>
-   * Name: GIAFFPENJNC
-   * CmdId: 7387
+   * CmdId: 7317
+   * Obf: CAIHDEJCPHL
    * </pre>
    *
    * Protobuf type {@code GCGDSDeckUpdateNotify}
@@ -88,14 +80,14 @@ public final class GCGDSDeckUpdateNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              isValid_ = input.readBool();
-              break;
-            }
-            case 48: {
+            case 96: {
 
               deckId_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              isValid_ = input.readBool();
               break;
             }
             default: {
@@ -130,14 +122,10 @@ public final class GCGDSDeckUpdateNotifyOuterClass {
               emu.grasscutter.net.proto.GCGDSDeckUpdateNotifyOuterClass.GCGDSDeckUpdateNotify.class, emu.grasscutter.net.proto.GCGDSDeckUpdateNotifyOuterClass.GCGDSDeckUpdateNotify.Builder.class);
     }
 
-    public static final int DECK_ID_FIELD_NUMBER = 6;
+    public static final int DECK_ID_FIELD_NUMBER = 12;
     private int deckId_;
     /**
-     * <pre>
-     *AHAIAIPGFDN snooswap
-     * </pre>
-     *
-     * <code>uint32 deck_id = 6;</code>
+     * <code>uint32 deck_id = 12;</code>
      * @return The deckId.
      */
     @java.lang.Override
@@ -145,14 +133,10 @@ public final class GCGDSDeckUpdateNotifyOuterClass {
       return deckId_;
     }
 
-    public static final int IS_VALID_FIELD_NUMBER = 2;
+    public static final int IS_VALID_FIELD_NUMBER = 15;
     private boolean isValid_;
     /**
-     * <pre>
-     *BBNOFLCPEBA snooswap
-     * </pre>
-     *
-     * <code>bool is_valid = 2;</code>
+     * <code>bool is_valid = 15;</code>
      * @return The isValid.
      */
     @java.lang.Override
@@ -174,11 +158,11 @@ public final class GCGDSDeckUpdateNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isValid_ != false) {
-        output.writeBool(2, isValid_);
-      }
       if (deckId_ != 0) {
-        output.writeUInt32(6, deckId_);
+        output.writeUInt32(12, deckId_);
+      }
+      if (isValid_ != false) {
+        output.writeBool(15, isValid_);
       }
       unknownFields.writeTo(output);
     }
@@ -189,13 +173,13 @@ public final class GCGDSDeckUpdateNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isValid_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, isValid_);
-      }
       if (deckId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, deckId_);
+          .computeUInt32Size(12, deckId_);
+      }
+      if (isValid_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(15, isValid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -329,8 +313,8 @@ public final class GCGDSDeckUpdateNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: GIAFFPENJNC
-     * CmdId: 7387
+     * CmdId: 7317
+     * Obf: CAIHDEJCPHL
      * </pre>
      *
      * Protobuf type {@code GCGDSDeckUpdateNotify}
@@ -487,11 +471,7 @@ public final class GCGDSDeckUpdateNotifyOuterClass {
 
       private int deckId_ ;
       /**
-       * <pre>
-       *AHAIAIPGFDN snooswap
-       * </pre>
-       *
-       * <code>uint32 deck_id = 6;</code>
+       * <code>uint32 deck_id = 12;</code>
        * @return The deckId.
        */
       @java.lang.Override
@@ -499,11 +479,7 @@ public final class GCGDSDeckUpdateNotifyOuterClass {
         return deckId_;
       }
       /**
-       * <pre>
-       *AHAIAIPGFDN snooswap
-       * </pre>
-       *
-       * <code>uint32 deck_id = 6;</code>
+       * <code>uint32 deck_id = 12;</code>
        * @param value The deckId to set.
        * @return This builder for chaining.
        */
@@ -514,11 +490,7 @@ public final class GCGDSDeckUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *AHAIAIPGFDN snooswap
-       * </pre>
-       *
-       * <code>uint32 deck_id = 6;</code>
+       * <code>uint32 deck_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearDeckId() {
@@ -530,11 +502,7 @@ public final class GCGDSDeckUpdateNotifyOuterClass {
 
       private boolean isValid_ ;
       /**
-       * <pre>
-       *BBNOFLCPEBA snooswap
-       * </pre>
-       *
-       * <code>bool is_valid = 2;</code>
+       * <code>bool is_valid = 15;</code>
        * @return The isValid.
        */
       @java.lang.Override
@@ -542,11 +510,7 @@ public final class GCGDSDeckUpdateNotifyOuterClass {
         return isValid_;
       }
       /**
-       * <pre>
-       *BBNOFLCPEBA snooswap
-       * </pre>
-       *
-       * <code>bool is_valid = 2;</code>
+       * <code>bool is_valid = 15;</code>
        * @param value The isValid to set.
        * @return This builder for chaining.
        */
@@ -557,11 +521,7 @@ public final class GCGDSDeckUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *BBNOFLCPEBA snooswap
-       * </pre>
-       *
-       * <code>bool is_valid = 2;</code>
+       * <code>bool is_valid = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsValid() {
@@ -638,8 +598,8 @@ public final class GCGDSDeckUpdateNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033GCGDSDeckUpdateNotify.proto\":\n\025GCGDSDe" +
-      "ckUpdateNotify\022\017\n\007deck_id\030\006 \001(\r\022\020\n\010is_va" +
-      "lid\030\002 \001(\010B\033\n\031emu.grasscutter.net.protob\006" +
+      "ckUpdateNotify\022\017\n\007deck_id\030\014 \001(\r\022\020\n\010is_va" +
+      "lid\030\017 \001(\010B\033\n\031emu.grasscutter.net.protob\006" +
       "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

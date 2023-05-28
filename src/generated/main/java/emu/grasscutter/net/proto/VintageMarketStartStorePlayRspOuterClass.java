@@ -19,33 +19,33 @@ public final class VintageMarketStartStorePlayRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 EKMPDNHDLEG = 13;</code>
-     * @return The eKMPDNHDLEG.
-     */
-    int getEKMPDNHDLEG();
-
-    /**
-     * <code>uint32 store_round = 14;</code>
-     * @return The storeRound.
-     */
-    int getStoreRound();
-
-    /**
-     * <code>int32 retcode = 4;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 AHPFPDKBBCA = 6;</code>
-     * @return The aHPFPDKBBCA.
+     * <code>uint32 store_round = 5;</code>
+     * @return The storeRound.
      */
-    int getAHPFPDKBBCA();
+    int getStoreRound();
+
+    /**
+     * <code>uint32 DOBPHKELDMI = 14;</code>
+     * @return The dOBPHKELDMI.
+     */
+    int getDOBPHKELDMI();
+
+    /**
+     * <code>uint32 DPCAMJBDBNC = 15;</code>
+     * @return The dPCAMJBDBNC.
+     */
+    int getDPCAMJBDBNC();
   }
   /**
    * <pre>
-   * Name: LGEIJIMPEID
-   * CmdId: 23331
+   * CmdId: 21534
+   * Obf: EOJPDJPAPHI
    * </pre>
    *
    * Protobuf type {@code VintageMarketStartStorePlayRsp}
@@ -92,24 +92,24 @@ public final class VintageMarketStartStorePlayRspOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 16: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 48: {
+            case 40: {
 
-              aHPFPDKBBCA_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
-              eKMPDNHDLEG_ = input.readUInt32();
+              storeRound_ = input.readUInt32();
               break;
             }
             case 112: {
 
-              storeRound_ = input.readUInt32();
+              dOBPHKELDMI_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              dPCAMJBDBNC_ = input.readUInt32();
               break;
             }
             default: {
@@ -144,32 +144,10 @@ public final class VintageMarketStartStorePlayRspOuterClass {
               emu.grasscutter.net.proto.VintageMarketStartStorePlayRspOuterClass.VintageMarketStartStorePlayRsp.class, emu.grasscutter.net.proto.VintageMarketStartStorePlayRspOuterClass.VintageMarketStartStorePlayRsp.Builder.class);
     }
 
-    public static final int EKMPDNHDLEG_FIELD_NUMBER = 13;
-    private int eKMPDNHDLEG_;
-    /**
-     * <code>uint32 EKMPDNHDLEG = 13;</code>
-     * @return The eKMPDNHDLEG.
-     */
-    @java.lang.Override
-    public int getEKMPDNHDLEG() {
-      return eKMPDNHDLEG_;
-    }
-
-    public static final int STORE_ROUND_FIELD_NUMBER = 14;
-    private int storeRound_;
-    /**
-     * <code>uint32 store_round = 14;</code>
-     * @return The storeRound.
-     */
-    @java.lang.Override
-    public int getStoreRound() {
-      return storeRound_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 4;
+    public static final int RETCODE_FIELD_NUMBER = 2;
     private int retcode_;
     /**
-     * <code>int32 retcode = 4;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -177,15 +155,37 @@ public final class VintageMarketStartStorePlayRspOuterClass {
       return retcode_;
     }
 
-    public static final int AHPFPDKBBCA_FIELD_NUMBER = 6;
-    private int aHPFPDKBBCA_;
+    public static final int STORE_ROUND_FIELD_NUMBER = 5;
+    private int storeRound_;
     /**
-     * <code>uint32 AHPFPDKBBCA = 6;</code>
-     * @return The aHPFPDKBBCA.
+     * <code>uint32 store_round = 5;</code>
+     * @return The storeRound.
      */
     @java.lang.Override
-    public int getAHPFPDKBBCA() {
-      return aHPFPDKBBCA_;
+    public int getStoreRound() {
+      return storeRound_;
+    }
+
+    public static final int DOBPHKELDMI_FIELD_NUMBER = 14;
+    private int dOBPHKELDMI_;
+    /**
+     * <code>uint32 DOBPHKELDMI = 14;</code>
+     * @return The dOBPHKELDMI.
+     */
+    @java.lang.Override
+    public int getDOBPHKELDMI() {
+      return dOBPHKELDMI_;
+    }
+
+    public static final int DPCAMJBDBNC_FIELD_NUMBER = 15;
+    private int dPCAMJBDBNC_;
+    /**
+     * <code>uint32 DPCAMJBDBNC = 15;</code>
+     * @return The dPCAMJBDBNC.
+     */
+    @java.lang.Override
+    public int getDPCAMJBDBNC() {
+      return dPCAMJBDBNC_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -203,16 +203,16 @@ public final class VintageMarketStartStorePlayRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(4, retcode_);
-      }
-      if (aHPFPDKBBCA_ != 0) {
-        output.writeUInt32(6, aHPFPDKBBCA_);
-      }
-      if (eKMPDNHDLEG_ != 0) {
-        output.writeUInt32(13, eKMPDNHDLEG_);
+        output.writeInt32(2, retcode_);
       }
       if (storeRound_ != 0) {
-        output.writeUInt32(14, storeRound_);
+        output.writeUInt32(5, storeRound_);
+      }
+      if (dOBPHKELDMI_ != 0) {
+        output.writeUInt32(14, dOBPHKELDMI_);
+      }
+      if (dPCAMJBDBNC_ != 0) {
+        output.writeUInt32(15, dPCAMJBDBNC_);
       }
       unknownFields.writeTo(output);
     }
@@ -225,19 +225,19 @@ public final class VintageMarketStartStorePlayRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, retcode_);
-      }
-      if (aHPFPDKBBCA_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, aHPFPDKBBCA_);
-      }
-      if (eKMPDNHDLEG_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, eKMPDNHDLEG_);
+          .computeInt32Size(2, retcode_);
       }
       if (storeRound_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, storeRound_);
+          .computeUInt32Size(5, storeRound_);
+      }
+      if (dOBPHKELDMI_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, dOBPHKELDMI_);
+      }
+      if (dPCAMJBDBNC_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, dPCAMJBDBNC_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -254,14 +254,14 @@ public final class VintageMarketStartStorePlayRspOuterClass {
       }
       emu.grasscutter.net.proto.VintageMarketStartStorePlayRspOuterClass.VintageMarketStartStorePlayRsp other = (emu.grasscutter.net.proto.VintageMarketStartStorePlayRspOuterClass.VintageMarketStartStorePlayRsp) obj;
 
-      if (getEKMPDNHDLEG()
-          != other.getEKMPDNHDLEG()) return false;
-      if (getStoreRound()
-          != other.getStoreRound()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (getAHPFPDKBBCA()
-          != other.getAHPFPDKBBCA()) return false;
+      if (getStoreRound()
+          != other.getStoreRound()) return false;
+      if (getDOBPHKELDMI()
+          != other.getDOBPHKELDMI()) return false;
+      if (getDPCAMJBDBNC()
+          != other.getDPCAMJBDBNC()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -273,14 +273,14 @@ public final class VintageMarketStartStorePlayRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + EKMPDNHDLEG_FIELD_NUMBER;
-      hash = (53 * hash) + getEKMPDNHDLEG();
-      hash = (37 * hash) + STORE_ROUND_FIELD_NUMBER;
-      hash = (53 * hash) + getStoreRound();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + AHPFPDKBBCA_FIELD_NUMBER;
-      hash = (53 * hash) + getAHPFPDKBBCA();
+      hash = (37 * hash) + STORE_ROUND_FIELD_NUMBER;
+      hash = (53 * hash) + getStoreRound();
+      hash = (37 * hash) + DOBPHKELDMI_FIELD_NUMBER;
+      hash = (53 * hash) + getDOBPHKELDMI();
+      hash = (37 * hash) + DPCAMJBDBNC_FIELD_NUMBER;
+      hash = (53 * hash) + getDPCAMJBDBNC();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -378,8 +378,8 @@ public final class VintageMarketStartStorePlayRspOuterClass {
     }
     /**
      * <pre>
-     * Name: LGEIJIMPEID
-     * CmdId: 23331
+     * CmdId: 21534
+     * Obf: EOJPDJPAPHI
      * </pre>
      *
      * Protobuf type {@code VintageMarketStartStorePlayRsp}
@@ -419,13 +419,13 @@ public final class VintageMarketStartStorePlayRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        eKMPDNHDLEG_ = 0;
+        retcode_ = 0;
 
         storeRound_ = 0;
 
-        retcode_ = 0;
+        dOBPHKELDMI_ = 0;
 
-        aHPFPDKBBCA_ = 0;
+        dPCAMJBDBNC_ = 0;
 
         return this;
       }
@@ -453,10 +453,10 @@ public final class VintageMarketStartStorePlayRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.VintageMarketStartStorePlayRspOuterClass.VintageMarketStartStorePlayRsp buildPartial() {
         emu.grasscutter.net.proto.VintageMarketStartStorePlayRspOuterClass.VintageMarketStartStorePlayRsp result = new emu.grasscutter.net.proto.VintageMarketStartStorePlayRspOuterClass.VintageMarketStartStorePlayRsp(this);
-        result.eKMPDNHDLEG_ = eKMPDNHDLEG_;
-        result.storeRound_ = storeRound_;
         result.retcode_ = retcode_;
-        result.aHPFPDKBBCA_ = aHPFPDKBBCA_;
+        result.storeRound_ = storeRound_;
+        result.dOBPHKELDMI_ = dOBPHKELDMI_;
+        result.dPCAMJBDBNC_ = dPCAMJBDBNC_;
         onBuilt();
         return result;
       }
@@ -505,17 +505,17 @@ public final class VintageMarketStartStorePlayRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.VintageMarketStartStorePlayRspOuterClass.VintageMarketStartStorePlayRsp other) {
         if (other == emu.grasscutter.net.proto.VintageMarketStartStorePlayRspOuterClass.VintageMarketStartStorePlayRsp.getDefaultInstance()) return this;
-        if (other.getEKMPDNHDLEG() != 0) {
-          setEKMPDNHDLEG(other.getEKMPDNHDLEG());
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         if (other.getStoreRound() != 0) {
           setStoreRound(other.getStoreRound());
         }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
+        if (other.getDOBPHKELDMI() != 0) {
+          setDOBPHKELDMI(other.getDOBPHKELDMI());
         }
-        if (other.getAHPFPDKBBCA() != 0) {
-          setAHPFPDKBBCA(other.getAHPFPDKBBCA());
+        if (other.getDPCAMJBDBNC() != 0) {
+          setDPCAMJBDBNC(other.getDPCAMJBDBNC());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -546,71 +546,9 @@ public final class VintageMarketStartStorePlayRspOuterClass {
         return this;
       }
 
-      private int eKMPDNHDLEG_ ;
-      /**
-       * <code>uint32 EKMPDNHDLEG = 13;</code>
-       * @return The eKMPDNHDLEG.
-       */
-      @java.lang.Override
-      public int getEKMPDNHDLEG() {
-        return eKMPDNHDLEG_;
-      }
-      /**
-       * <code>uint32 EKMPDNHDLEG = 13;</code>
-       * @param value The eKMPDNHDLEG to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEKMPDNHDLEG(int value) {
-        
-        eKMPDNHDLEG_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 EKMPDNHDLEG = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEKMPDNHDLEG() {
-        
-        eKMPDNHDLEG_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int storeRound_ ;
-      /**
-       * <code>uint32 store_round = 14;</code>
-       * @return The storeRound.
-       */
-      @java.lang.Override
-      public int getStoreRound() {
-        return storeRound_;
-      }
-      /**
-       * <code>uint32 store_round = 14;</code>
-       * @param value The storeRound to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStoreRound(int value) {
-        
-        storeRound_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 store_round = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStoreRound() {
-        
-        storeRound_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 2;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -618,7 +556,7 @@ public final class VintageMarketStartStorePlayRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 2;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -629,7 +567,7 @@ public final class VintageMarketStartStorePlayRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -639,33 +577,95 @@ public final class VintageMarketStartStorePlayRspOuterClass {
         return this;
       }
 
-      private int aHPFPDKBBCA_ ;
+      private int storeRound_ ;
       /**
-       * <code>uint32 AHPFPDKBBCA = 6;</code>
-       * @return The aHPFPDKBBCA.
+       * <code>uint32 store_round = 5;</code>
+       * @return The storeRound.
        */
       @java.lang.Override
-      public int getAHPFPDKBBCA() {
-        return aHPFPDKBBCA_;
+      public int getStoreRound() {
+        return storeRound_;
       }
       /**
-       * <code>uint32 AHPFPDKBBCA = 6;</code>
-       * @param value The aHPFPDKBBCA to set.
+       * <code>uint32 store_round = 5;</code>
+       * @param value The storeRound to set.
        * @return This builder for chaining.
        */
-      public Builder setAHPFPDKBBCA(int value) {
+      public Builder setStoreRound(int value) {
         
-        aHPFPDKBBCA_ = value;
+        storeRound_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 AHPFPDKBBCA = 6;</code>
+       * <code>uint32 store_round = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearAHPFPDKBBCA() {
+      public Builder clearStoreRound() {
         
-        aHPFPDKBBCA_ = 0;
+        storeRound_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int dOBPHKELDMI_ ;
+      /**
+       * <code>uint32 DOBPHKELDMI = 14;</code>
+       * @return The dOBPHKELDMI.
+       */
+      @java.lang.Override
+      public int getDOBPHKELDMI() {
+        return dOBPHKELDMI_;
+      }
+      /**
+       * <code>uint32 DOBPHKELDMI = 14;</code>
+       * @param value The dOBPHKELDMI to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDOBPHKELDMI(int value) {
+        
+        dOBPHKELDMI_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 DOBPHKELDMI = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDOBPHKELDMI() {
+        
+        dOBPHKELDMI_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int dPCAMJBDBNC_ ;
+      /**
+       * <code>uint32 DPCAMJBDBNC = 15;</code>
+       * @return The dPCAMJBDBNC.
+       */
+      @java.lang.Override
+      public int getDPCAMJBDBNC() {
+        return dPCAMJBDBNC_;
+      }
+      /**
+       * <code>uint32 DPCAMJBDBNC = 15;</code>
+       * @param value The dPCAMJBDBNC to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDPCAMJBDBNC(int value) {
+        
+        dPCAMJBDBNC_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 DPCAMJBDBNC = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDPCAMJBDBNC() {
+        
+        dPCAMJBDBNC_ = 0;
         onChanged();
         return this;
       }
@@ -737,9 +737,9 @@ public final class VintageMarketStartStorePlayRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n$VintageMarketStartStorePlayRsp.proto\"p" +
-      "\n\036VintageMarketStartStorePlayRsp\022\023\n\013EKMP" +
-      "DNHDLEG\030\r \001(\r\022\023\n\013store_round\030\016 \001(\r\022\017\n\007re" +
-      "tcode\030\004 \001(\005\022\023\n\013AHPFPDKBBCA\030\006 \001(\rB\033\n\031emu." +
+      "\n\036VintageMarketStartStorePlayRsp\022\017\n\007retc" +
+      "ode\030\002 \001(\005\022\023\n\013store_round\030\005 \001(\r\022\023\n\013DOBPHK" +
+      "ELDMI\030\016 \001(\r\022\023\n\013DPCAMJBDBNC\030\017 \001(\rB\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -751,7 +751,7 @@ public final class VintageMarketStartStorePlayRspOuterClass {
     internal_static_VintageMarketStartStorePlayRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_VintageMarketStartStorePlayRsp_descriptor,
-        new java.lang.String[] { "EKMPDNHDLEG", "StoreRound", "Retcode", "AHPFPDKBBCA", });
+        new java.lang.String[] { "Retcode", "StoreRound", "DOBPHKELDMI", "DPCAMJBDBNC", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -25,17 +25,17 @@ public final class HideAndSeekChooseMapRspOuterClass {
     int getRetcode();
 
     /**
-     * <code>repeated uint32 map_list = 5;</code>
+     * <code>repeated uint32 map_list = 2;</code>
      * @return A list containing the mapList.
      */
     java.util.List<java.lang.Integer> getMapListList();
     /**
-     * <code>repeated uint32 map_list = 5;</code>
+     * <code>repeated uint32 map_list = 2;</code>
      * @return The count of mapList.
      */
     int getMapListCount();
     /**
-     * <code>repeated uint32 map_list = 5;</code>
+     * <code>repeated uint32 map_list = 2;</code>
      * @param index The index of the element to return.
      * @return The mapList at the given index.
      */
@@ -43,8 +43,8 @@ public final class HideAndSeekChooseMapRspOuterClass {
   }
   /**
    * <pre>
-   * Name: EFPEMEDCCEE
-   * CmdId: 8413
+   * CmdId: 8455
+   * Obf: GHHEELDLCFB
    * </pre>
    *
    * Protobuf type {@code HideAndSeekChooseMapRsp}
@@ -98,7 +98,7 @@ public final class HideAndSeekChooseMapRspOuterClass {
               retcode_ = input.readInt32();
               break;
             }
-            case 40: {
+            case 16: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 mapList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -106,7 +106,7 @@ public final class HideAndSeekChooseMapRspOuterClass {
               mapList_.addInt(input.readUInt32());
               break;
             }
-            case 42: {
+            case 18: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -165,10 +165,10 @@ public final class HideAndSeekChooseMapRspOuterClass {
       return retcode_;
     }
 
-    public static final int MAP_LIST_FIELD_NUMBER = 5;
+    public static final int MAP_LIST_FIELD_NUMBER = 2;
     private com.google.protobuf.Internal.IntList mapList_;
     /**
-     * <code>repeated uint32 map_list = 5;</code>
+     * <code>repeated uint32 map_list = 2;</code>
      * @return A list containing the mapList.
      */
     @java.lang.Override
@@ -177,14 +177,14 @@ public final class HideAndSeekChooseMapRspOuterClass {
       return mapList_;
     }
     /**
-     * <code>repeated uint32 map_list = 5;</code>
+     * <code>repeated uint32 map_list = 2;</code>
      * @return The count of mapList.
      */
     public int getMapListCount() {
       return mapList_.size();
     }
     /**
-     * <code>repeated uint32 map_list = 5;</code>
+     * <code>repeated uint32 map_list = 2;</code>
      * @param index The index of the element to return.
      * @return The mapList at the given index.
      */
@@ -212,7 +212,7 @@ public final class HideAndSeekChooseMapRspOuterClass {
         output.writeInt32(1, retcode_);
       }
       if (getMapListList().size() > 0) {
-        output.writeUInt32NoTag(42);
+        output.writeUInt32NoTag(18);
         output.writeUInt32NoTag(mapListMemoizedSerializedSize);
       }
       for (int i = 0; i < mapList_.size(); i++) {
@@ -378,8 +378,8 @@ public final class HideAndSeekChooseMapRspOuterClass {
     }
     /**
      * <pre>
-     * Name: EFPEMEDCCEE
-     * CmdId: 8413
+     * CmdId: 8455
+     * Obf: GHHEELDLCFB
      * </pre>
      *
      * Protobuf type {@code HideAndSeekChooseMapRsp}
@@ -586,7 +586,7 @@ public final class HideAndSeekChooseMapRspOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 map_list = 5;</code>
+       * <code>repeated uint32 map_list = 2;</code>
        * @return A list containing the mapList.
        */
       public java.util.List<java.lang.Integer>
@@ -595,14 +595,14 @@ public final class HideAndSeekChooseMapRspOuterClass {
                  java.util.Collections.unmodifiableList(mapList_) : mapList_;
       }
       /**
-       * <code>repeated uint32 map_list = 5;</code>
+       * <code>repeated uint32 map_list = 2;</code>
        * @return The count of mapList.
        */
       public int getMapListCount() {
         return mapList_.size();
       }
       /**
-       * <code>repeated uint32 map_list = 5;</code>
+       * <code>repeated uint32 map_list = 2;</code>
        * @param index The index of the element to return.
        * @return The mapList at the given index.
        */
@@ -610,7 +610,7 @@ public final class HideAndSeekChooseMapRspOuterClass {
         return mapList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 map_list = 5;</code>
+       * <code>repeated uint32 map_list = 2;</code>
        * @param index The index to set the value at.
        * @param value The mapList to set.
        * @return This builder for chaining.
@@ -623,7 +623,7 @@ public final class HideAndSeekChooseMapRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 map_list = 5;</code>
+       * <code>repeated uint32 map_list = 2;</code>
        * @param value The mapList to add.
        * @return This builder for chaining.
        */
@@ -634,7 +634,7 @@ public final class HideAndSeekChooseMapRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 map_list = 5;</code>
+       * <code>repeated uint32 map_list = 2;</code>
        * @param values The mapList to add.
        * @return This builder for chaining.
        */
@@ -647,7 +647,7 @@ public final class HideAndSeekChooseMapRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 map_list = 5;</code>
+       * <code>repeated uint32 map_list = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearMapList() {
@@ -725,7 +725,7 @@ public final class HideAndSeekChooseMapRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\035HideAndSeekChooseMapRsp.proto\"<\n\027HideA" +
       "ndSeekChooseMapRsp\022\017\n\007retcode\030\001 \001(\005\022\020\n\010m" +
-      "ap_list\030\005 \003(\rB\033\n\031emu.grasscutter.net.pro" +
+      "ap_list\030\002 \003(\rB\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

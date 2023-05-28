@@ -20,7 +20,7 @@ public final class VintageHuntingThirdStageInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: IPILOPKOFDJ
+   * Obf: FMFCGDJGCIF
    * </pre>
    *
    * Protobuf type {@code VintageHuntingThirdStageInfo}
@@ -245,7 +245,7 @@ public final class VintageHuntingThirdStageInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: IPILOPKOFDJ
+     * Obf: FMFCGDJGCIF
      * </pre>
      *
      * Protobuf type {@code VintageHuntingThirdStageInfo}

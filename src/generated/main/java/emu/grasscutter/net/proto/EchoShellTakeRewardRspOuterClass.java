@@ -19,21 +19,21 @@ public final class EchoShellTakeRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 8;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>uint32 reward_id = 4;</code>
+     * <code>uint32 reward_id = 6;</code>
      * @return The rewardId.
      */
     int getRewardId();
+
+    /**
+     * <code>int32 retcode = 12;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
    * <pre>
-   * Name: JPFCLONBGNH
-   * CmdId: 8523
+   * CmdId: 8644
+   * Obf: HMIGOGOPCGA
    * </pre>
    *
    * Protobuf type {@code EchoShellTakeRewardRsp}
@@ -80,12 +80,12 @@ public final class EchoShellTakeRewardRspOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 48: {
 
               rewardId_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 96: {
 
               retcode_ = input.readInt32();
               break;
@@ -122,26 +122,26 @@ public final class EchoShellTakeRewardRspOuterClass {
               emu.grasscutter.net.proto.EchoShellTakeRewardRspOuterClass.EchoShellTakeRewardRsp.class, emu.grasscutter.net.proto.EchoShellTakeRewardRspOuterClass.EchoShellTakeRewardRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 8;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 8;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int REWARD_ID_FIELD_NUMBER = 4;
+    public static final int REWARD_ID_FIELD_NUMBER = 6;
     private int rewardId_;
     /**
-     * <code>uint32 reward_id = 4;</code>
+     * <code>uint32 reward_id = 6;</code>
      * @return The rewardId.
      */
     @java.lang.Override
     public int getRewardId() {
       return rewardId_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 12;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 12;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,10 +159,10 @@ public final class EchoShellTakeRewardRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (rewardId_ != 0) {
-        output.writeUInt32(4, rewardId_);
+        output.writeUInt32(6, rewardId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
+        output.writeInt32(12, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +175,11 @@ public final class EchoShellTakeRewardRspOuterClass {
       size = 0;
       if (rewardId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, rewardId_);
+          .computeUInt32Size(6, rewardId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
+          .computeInt32Size(12, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +196,10 @@ public final class EchoShellTakeRewardRspOuterClass {
       }
       emu.grasscutter.net.proto.EchoShellTakeRewardRspOuterClass.EchoShellTakeRewardRsp other = (emu.grasscutter.net.proto.EchoShellTakeRewardRspOuterClass.EchoShellTakeRewardRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getRewardId()
           != other.getRewardId()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +211,10 @@ public final class EchoShellTakeRewardRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + REWARD_ID_FIELD_NUMBER;
       hash = (53 * hash) + getRewardId();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +312,8 @@ public final class EchoShellTakeRewardRspOuterClass {
     }
     /**
      * <pre>
-     * Name: JPFCLONBGNH
-     * CmdId: 8523
+     * CmdId: 8644
+     * Obf: HMIGOGOPCGA
      * </pre>
      *
      * Protobuf type {@code EchoShellTakeRewardRsp}
@@ -353,9 +353,9 @@ public final class EchoShellTakeRewardRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         rewardId_ = 0;
+
+        retcode_ = 0;
 
         return this;
       }
@@ -383,8 +383,8 @@ public final class EchoShellTakeRewardRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EchoShellTakeRewardRspOuterClass.EchoShellTakeRewardRsp buildPartial() {
         emu.grasscutter.net.proto.EchoShellTakeRewardRspOuterClass.EchoShellTakeRewardRsp result = new emu.grasscutter.net.proto.EchoShellTakeRewardRspOuterClass.EchoShellTakeRewardRsp(this);
-        result.retcode_ = retcode_;
         result.rewardId_ = rewardId_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -433,11 +433,11 @@ public final class EchoShellTakeRewardRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EchoShellTakeRewardRspOuterClass.EchoShellTakeRewardRsp other) {
         if (other == emu.grasscutter.net.proto.EchoShellTakeRewardRspOuterClass.EchoShellTakeRewardRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getRewardId() != 0) {
           setRewardId(other.getRewardId());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,40 +468,9 @@ public final class EchoShellTakeRewardRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int rewardId_ ;
       /**
-       * <code>uint32 reward_id = 4;</code>
+       * <code>uint32 reward_id = 6;</code>
        * @return The rewardId.
        */
       @java.lang.Override
@@ -509,7 +478,7 @@ public final class EchoShellTakeRewardRspOuterClass {
         return rewardId_;
       }
       /**
-       * <code>uint32 reward_id = 4;</code>
+       * <code>uint32 reward_id = 6;</code>
        * @param value The rewardId to set.
        * @return This builder for chaining.
        */
@@ -520,12 +489,43 @@ public final class EchoShellTakeRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 reward_id = 4;</code>
+       * <code>uint32 reward_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearRewardId() {
         
         rewardId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 12;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 12;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -597,8 +597,8 @@ public final class EchoShellTakeRewardRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034EchoShellTakeRewardRsp.proto\"<\n\026EchoSh" +
-      "ellTakeRewardRsp\022\017\n\007retcode\030\010 \001(\005\022\021\n\trew" +
-      "ard_id\030\004 \001(\rB\033\n\031emu.grasscutter.net.prot" +
+      "ellTakeRewardRsp\022\021\n\treward_id\030\006 \001(\r\022\017\n\007r" +
+      "etcode\030\014 \001(\005B\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -610,7 +610,7 @@ public final class EchoShellTakeRewardRspOuterClass {
     internal_static_EchoShellTakeRewardRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EchoShellTakeRewardRsp_descriptor,
-        new java.lang.String[] { "Retcode", "RewardId", });
+        new java.lang.String[] { "RewardId", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

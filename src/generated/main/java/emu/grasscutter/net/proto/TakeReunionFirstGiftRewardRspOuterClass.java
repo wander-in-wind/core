@@ -19,21 +19,21 @@ public final class TakeReunionFirstGiftRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 reward_id = 6;</code>
-     * @return The rewardId.
-     */
-    int getRewardId();
-
-    /**
-     * <code>int32 retcode = 4;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     int getRetcode();
+
+    /**
+     * <code>int32 reward_id = 12;</code>
+     * @return The rewardId.
+     */
+    int getRewardId();
   }
   /**
    * <pre>
-   * Name: ONKHHJIIPDL
-   * CmdId: 5096
+   * CmdId: 5071
+   * Obf: CIEAKKNADMM
    * </pre>
    *
    * Protobuf type {@code TakeReunionFirstGiftRewardRsp}
@@ -80,12 +80,12 @@ public final class TakeReunionFirstGiftRewardRspOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 8: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 48: {
+            case 96: {
 
               rewardId_ = input.readInt32();
               break;
@@ -122,26 +122,26 @@ public final class TakeReunionFirstGiftRewardRspOuterClass {
               emu.grasscutter.net.proto.TakeReunionFirstGiftRewardRspOuterClass.TakeReunionFirstGiftRewardRsp.class, emu.grasscutter.net.proto.TakeReunionFirstGiftRewardRspOuterClass.TakeReunionFirstGiftRewardRsp.Builder.class);
     }
 
-    public static final int REWARD_ID_FIELD_NUMBER = 6;
-    private int rewardId_;
-    /**
-     * <code>int32 reward_id = 6;</code>
-     * @return The rewardId.
-     */
-    @java.lang.Override
-    public int getRewardId() {
-      return rewardId_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 4;
+    public static final int RETCODE_FIELD_NUMBER = 1;
     private int retcode_;
     /**
-     * <code>int32 retcode = 4;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
+    }
+
+    public static final int REWARD_ID_FIELD_NUMBER = 12;
+    private int rewardId_;
+    /**
+     * <code>int32 reward_id = 12;</code>
+     * @return The rewardId.
+     */
+    @java.lang.Override
+    public int getRewardId() {
+      return rewardId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,10 +159,10 @@ public final class TakeReunionFirstGiftRewardRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(4, retcode_);
+        output.writeInt32(1, retcode_);
       }
       if (rewardId_ != 0) {
-        output.writeInt32(6, rewardId_);
+        output.writeInt32(12, rewardId_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +175,11 @@ public final class TakeReunionFirstGiftRewardRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, retcode_);
+          .computeInt32Size(1, retcode_);
       }
       if (rewardId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(6, rewardId_);
+          .computeInt32Size(12, rewardId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +196,10 @@ public final class TakeReunionFirstGiftRewardRspOuterClass {
       }
       emu.grasscutter.net.proto.TakeReunionFirstGiftRewardRspOuterClass.TakeReunionFirstGiftRewardRsp other = (emu.grasscutter.net.proto.TakeReunionFirstGiftRewardRspOuterClass.TakeReunionFirstGiftRewardRsp) obj;
 
-      if (getRewardId()
-          != other.getRewardId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getRewardId()
+          != other.getRewardId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +211,10 @@ public final class TakeReunionFirstGiftRewardRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + REWARD_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getRewardId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + REWARD_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getRewardId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +312,8 @@ public final class TakeReunionFirstGiftRewardRspOuterClass {
     }
     /**
      * <pre>
-     * Name: ONKHHJIIPDL
-     * CmdId: 5096
+     * CmdId: 5071
+     * Obf: CIEAKKNADMM
      * </pre>
      *
      * Protobuf type {@code TakeReunionFirstGiftRewardRsp}
@@ -353,9 +353,9 @@ public final class TakeReunionFirstGiftRewardRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        rewardId_ = 0;
-
         retcode_ = 0;
+
+        rewardId_ = 0;
 
         return this;
       }
@@ -383,8 +383,8 @@ public final class TakeReunionFirstGiftRewardRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.TakeReunionFirstGiftRewardRspOuterClass.TakeReunionFirstGiftRewardRsp buildPartial() {
         emu.grasscutter.net.proto.TakeReunionFirstGiftRewardRspOuterClass.TakeReunionFirstGiftRewardRsp result = new emu.grasscutter.net.proto.TakeReunionFirstGiftRewardRspOuterClass.TakeReunionFirstGiftRewardRsp(this);
-        result.rewardId_ = rewardId_;
         result.retcode_ = retcode_;
+        result.rewardId_ = rewardId_;
         onBuilt();
         return result;
       }
@@ -433,11 +433,11 @@ public final class TakeReunionFirstGiftRewardRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.TakeReunionFirstGiftRewardRspOuterClass.TakeReunionFirstGiftRewardRsp other) {
         if (other == emu.grasscutter.net.proto.TakeReunionFirstGiftRewardRspOuterClass.TakeReunionFirstGiftRewardRsp.getDefaultInstance()) return this;
-        if (other.getRewardId() != 0) {
-          setRewardId(other.getRewardId());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getRewardId() != 0) {
+          setRewardId(other.getRewardId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,40 +468,9 @@ public final class TakeReunionFirstGiftRewardRspOuterClass {
         return this;
       }
 
-      private int rewardId_ ;
-      /**
-       * <code>int32 reward_id = 6;</code>
-       * @return The rewardId.
-       */
-      @java.lang.Override
-      public int getRewardId() {
-        return rewardId_;
-      }
-      /**
-       * <code>int32 reward_id = 6;</code>
-       * @param value The rewardId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRewardId(int value) {
-        
-        rewardId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 reward_id = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRewardId() {
-        
-        rewardId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 1;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -509,7 +478,7 @@ public final class TakeReunionFirstGiftRewardRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 1;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -520,12 +489,43 @@ public final class TakeReunionFirstGiftRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
         
         retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int rewardId_ ;
+      /**
+       * <code>int32 reward_id = 12;</code>
+       * @return The rewardId.
+       */
+      @java.lang.Override
+      public int getRewardId() {
+        return rewardId_;
+      }
+      /**
+       * <code>int32 reward_id = 12;</code>
+       * @param value The rewardId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRewardId(int value) {
+        
+        rewardId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 reward_id = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRewardId() {
+        
+        rewardId_ = 0;
         onChanged();
         return this;
       }
@@ -597,8 +597,8 @@ public final class TakeReunionFirstGiftRewardRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n#TakeReunionFirstGiftRewardRsp.proto\"C\n" +
-      "\035TakeReunionFirstGiftRewardRsp\022\021\n\treward" +
-      "_id\030\006 \001(\005\022\017\n\007retcode\030\004 \001(\005B\033\n\031emu.grassc" +
+      "\035TakeReunionFirstGiftRewardRsp\022\017\n\007retcod" +
+      "e\030\001 \001(\005\022\021\n\treward_id\030\014 \001(\005B\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -610,7 +610,7 @@ public final class TakeReunionFirstGiftRewardRspOuterClass {
     internal_static_TakeReunionFirstGiftRewardRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TakeReunionFirstGiftRewardRsp_descriptor,
-        new java.lang.String[] { "RewardId", "Retcode", });
+        new java.lang.String[] { "Retcode", "RewardId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

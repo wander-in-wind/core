@@ -275,7 +275,7 @@ public final class CKLBEJHMHKGOuterClass {
       if (faceType_ != 0) {
         output.writeUInt32(12, faceType_);
       }
-      if (dJFAEMMLOMD_ != emu.grasscutter.net.proto.GCGZoneTypeOuterClass.GCGZoneType.GCG_ZONE_TYPE_INVALID.getNumber()) {
+      if (dJFAEMMLOMD_ != emu.grasscutter.net.proto.GCGZoneTypeOuterClass.GCGZoneType.GCG_ZONE_INVALID.getNumber()) {
         output.writeEnum(13, dJFAEMMLOMD_);
       }
       unknownFields.writeTo(output);
@@ -307,7 +307,7 @@ public final class CKLBEJHMHKGOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(12, faceType_);
       }
-      if (dJFAEMMLOMD_ != emu.grasscutter.net.proto.GCGZoneTypeOuterClass.GCGZoneType.GCG_ZONE_TYPE_INVALID.getNumber()) {
+      if (dJFAEMMLOMD_ != emu.grasscutter.net.proto.GCGZoneTypeOuterClass.GCGZoneType.GCG_ZONE_INVALID.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(13, dJFAEMMLOMD_);
       }

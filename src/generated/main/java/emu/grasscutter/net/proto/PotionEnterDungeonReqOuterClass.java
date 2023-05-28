@@ -19,68 +19,68 @@ public final class PotionEnterDungeonReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .PotionAvatarInfo avatar_info_list = 5;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo> 
-        getAvatarInfoListList();
-    /**
-     * <code>repeated .PotionAvatarInfo avatar_info_list = 5;</code>
-     */
-    emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo getAvatarInfoList(int index);
-    /**
-     * <code>repeated .PotionAvatarInfo avatar_info_list = 5;</code>
-     */
-    int getAvatarInfoListCount();
-    /**
-     * <code>repeated .PotionAvatarInfo avatar_info_list = 5;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfoOrBuilder> 
-        getAvatarInfoListOrBuilderList();
-    /**
-     * <code>repeated .PotionAvatarInfo avatar_info_list = 5;</code>
-     */
-    emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfoOrBuilder getAvatarInfoListOrBuilder(
-        int index);
-
-    /**
-     * <code>uint32 level_id = 8;</code>
-     * @return The levelId.
-     */
-    int getLevelId();
-
-    /**
-     * <code>repeated uint32 buff_id_list = 12;</code>
+     * <code>repeated uint32 buff_id_list = 3;</code>
      * @return A list containing the buffIdList.
      */
     java.util.List<java.lang.Integer> getBuffIdListList();
     /**
-     * <code>repeated uint32 buff_id_list = 12;</code>
+     * <code>repeated uint32 buff_id_list = 3;</code>
      * @return The count of buffIdList.
      */
     int getBuffIdListCount();
     /**
-     * <code>repeated uint32 buff_id_list = 12;</code>
+     * <code>repeated uint32 buff_id_list = 3;</code>
      * @param index The index of the element to return.
      * @return The buffIdList at the given index.
      */
     int getBuffIdList(int index);
 
     /**
-     * <code>uint32 stage_id = 6;</code>
-     * @return The stageId.
-     */
-    int getStageId();
-
-    /**
-     * <code>uint32 mode_id = 14;</code>
+     * <code>uint32 mode_id = 2;</code>
      * @return The modeId.
      */
     int getModeId();
+
+    /**
+     * <code>uint32 level_id = 9;</code>
+     * @return The levelId.
+     */
+    int getLevelId();
+
+    /**
+     * <code>repeated .PotionAvatarInfo avatar_info_list = 7;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo> 
+        getAvatarInfoListList();
+    /**
+     * <code>repeated .PotionAvatarInfo avatar_info_list = 7;</code>
+     */
+    emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo getAvatarInfoList(int index);
+    /**
+     * <code>repeated .PotionAvatarInfo avatar_info_list = 7;</code>
+     */
+    int getAvatarInfoListCount();
+    /**
+     * <code>repeated .PotionAvatarInfo avatar_info_list = 7;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfoOrBuilder> 
+        getAvatarInfoListOrBuilderList();
+    /**
+     * <code>repeated .PotionAvatarInfo avatar_info_list = 7;</code>
+     */
+    emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfoOrBuilder getAvatarInfoListOrBuilder(
+        int index);
+
+    /**
+     * <code>uint32 stage_id = 15;</code>
+     * @return The stageId.
+     */
+    int getStageId();
   }
   /**
    * <pre>
-   * Name: DFLDHLOHEEI
-   * CmdId: 8630
+   * CmdId: 8252
+   * Obf: CKFAMHGNPMK
    * </pre>
    *
    * Protobuf type {@code PotionEnterDungeonReq}
@@ -95,8 +95,8 @@ public final class PotionEnterDungeonReqOuterClass {
       super(builder);
     }
     private PotionEnterDungeonReq() {
-      avatarInfoList_ = java.util.Collections.emptyList();
       buffIdList_ = emptyIntList();
+      avatarInfoList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -130,39 +130,25 @@ public final class PotionEnterDungeonReqOuterClass {
             case 0:
               done = true;
               break;
-            case 42: {
+            case 16: {
+
+              modeId_ = input.readUInt32();
+              break;
+            }
+            case 24: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                avatarInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              avatarInfoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 48: {
-
-              stageId_ = input.readUInt32();
-              break;
-            }
-            case 64: {
-
-              levelId_ = input.readUInt32();
-              break;
-            }
-            case 96: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 buffIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               buffIdList_.addInt(input.readUInt32());
               break;
             }
-            case 98: {
+            case 26: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
                 buffIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
                 buffIdList_.addInt(input.readUInt32());
@@ -170,9 +156,23 @@ public final class PotionEnterDungeonReqOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 112: {
+            case 58: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                avatarInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              avatarInfoList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo.parser(), extensionRegistry));
+              break;
+            }
+            case 72: {
 
-              modeId_ = input.readUInt32();
+              levelId_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              stageId_ = input.readUInt32();
               break;
             }
             default: {
@@ -191,10 +191,10 @@ public final class PotionEnterDungeonReqOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          avatarInfoList_ = java.util.Collections.unmodifiableList(avatarInfoList_);
+          buffIdList_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          buffIdList_.makeImmutable(); // C
+          avatarInfoList_ = java.util.Collections.unmodifiableList(avatarInfoList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -213,61 +213,10 @@ public final class PotionEnterDungeonReqOuterClass {
               emu.grasscutter.net.proto.PotionEnterDungeonReqOuterClass.PotionEnterDungeonReq.class, emu.grasscutter.net.proto.PotionEnterDungeonReqOuterClass.PotionEnterDungeonReq.Builder.class);
     }
 
-    public static final int AVATAR_INFO_LIST_FIELD_NUMBER = 5;
-    private java.util.List<emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo> avatarInfoList_;
-    /**
-     * <code>repeated .PotionAvatarInfo avatar_info_list = 5;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo> getAvatarInfoListList() {
-      return avatarInfoList_;
-    }
-    /**
-     * <code>repeated .PotionAvatarInfo avatar_info_list = 5;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfoOrBuilder> 
-        getAvatarInfoListOrBuilderList() {
-      return avatarInfoList_;
-    }
-    /**
-     * <code>repeated .PotionAvatarInfo avatar_info_list = 5;</code>
-     */
-    @java.lang.Override
-    public int getAvatarInfoListCount() {
-      return avatarInfoList_.size();
-    }
-    /**
-     * <code>repeated .PotionAvatarInfo avatar_info_list = 5;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo getAvatarInfoList(int index) {
-      return avatarInfoList_.get(index);
-    }
-    /**
-     * <code>repeated .PotionAvatarInfo avatar_info_list = 5;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfoOrBuilder getAvatarInfoListOrBuilder(
-        int index) {
-      return avatarInfoList_.get(index);
-    }
-
-    public static final int LEVEL_ID_FIELD_NUMBER = 8;
-    private int levelId_;
-    /**
-     * <code>uint32 level_id = 8;</code>
-     * @return The levelId.
-     */
-    @java.lang.Override
-    public int getLevelId() {
-      return levelId_;
-    }
-
-    public static final int BUFF_ID_LIST_FIELD_NUMBER = 12;
+    public static final int BUFF_ID_LIST_FIELD_NUMBER = 3;
     private com.google.protobuf.Internal.IntList buffIdList_;
     /**
-     * <code>repeated uint32 buff_id_list = 12;</code>
+     * <code>repeated uint32 buff_id_list = 3;</code>
      * @return A list containing the buffIdList.
      */
     @java.lang.Override
@@ -276,14 +225,14 @@ public final class PotionEnterDungeonReqOuterClass {
       return buffIdList_;
     }
     /**
-     * <code>repeated uint32 buff_id_list = 12;</code>
+     * <code>repeated uint32 buff_id_list = 3;</code>
      * @return The count of buffIdList.
      */
     public int getBuffIdListCount() {
       return buffIdList_.size();
     }
     /**
-     * <code>repeated uint32 buff_id_list = 12;</code>
+     * <code>repeated uint32 buff_id_list = 3;</code>
      * @param index The index of the element to return.
      * @return The buffIdList at the given index.
      */
@@ -292,26 +241,77 @@ public final class PotionEnterDungeonReqOuterClass {
     }
     private int buffIdListMemoizedSerializedSize = -1;
 
-    public static final int STAGE_ID_FIELD_NUMBER = 6;
-    private int stageId_;
-    /**
-     * <code>uint32 stage_id = 6;</code>
-     * @return The stageId.
-     */
-    @java.lang.Override
-    public int getStageId() {
-      return stageId_;
-    }
-
-    public static final int MODE_ID_FIELD_NUMBER = 14;
+    public static final int MODE_ID_FIELD_NUMBER = 2;
     private int modeId_;
     /**
-     * <code>uint32 mode_id = 14;</code>
+     * <code>uint32 mode_id = 2;</code>
      * @return The modeId.
      */
     @java.lang.Override
     public int getModeId() {
       return modeId_;
+    }
+
+    public static final int LEVEL_ID_FIELD_NUMBER = 9;
+    private int levelId_;
+    /**
+     * <code>uint32 level_id = 9;</code>
+     * @return The levelId.
+     */
+    @java.lang.Override
+    public int getLevelId() {
+      return levelId_;
+    }
+
+    public static final int AVATAR_INFO_LIST_FIELD_NUMBER = 7;
+    private java.util.List<emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo> avatarInfoList_;
+    /**
+     * <code>repeated .PotionAvatarInfo avatar_info_list = 7;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo> getAvatarInfoListList() {
+      return avatarInfoList_;
+    }
+    /**
+     * <code>repeated .PotionAvatarInfo avatar_info_list = 7;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfoOrBuilder> 
+        getAvatarInfoListOrBuilderList() {
+      return avatarInfoList_;
+    }
+    /**
+     * <code>repeated .PotionAvatarInfo avatar_info_list = 7;</code>
+     */
+    @java.lang.Override
+    public int getAvatarInfoListCount() {
+      return avatarInfoList_.size();
+    }
+    /**
+     * <code>repeated .PotionAvatarInfo avatar_info_list = 7;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo getAvatarInfoList(int index) {
+      return avatarInfoList_.get(index);
+    }
+    /**
+     * <code>repeated .PotionAvatarInfo avatar_info_list = 7;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfoOrBuilder getAvatarInfoListOrBuilder(
+        int index) {
+      return avatarInfoList_.get(index);
+    }
+
+    public static final int STAGE_ID_FIELD_NUMBER = 15;
+    private int stageId_;
+    /**
+     * <code>uint32 stage_id = 15;</code>
+     * @return The stageId.
+     */
+    @java.lang.Override
+    public int getStageId() {
+      return stageId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -329,24 +329,24 @@ public final class PotionEnterDungeonReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      for (int i = 0; i < avatarInfoList_.size(); i++) {
-        output.writeMessage(5, avatarInfoList_.get(i));
-      }
-      if (stageId_ != 0) {
-        output.writeUInt32(6, stageId_);
-      }
-      if (levelId_ != 0) {
-        output.writeUInt32(8, levelId_);
+      if (modeId_ != 0) {
+        output.writeUInt32(2, modeId_);
       }
       if (getBuffIdListList().size() > 0) {
-        output.writeUInt32NoTag(98);
+        output.writeUInt32NoTag(26);
         output.writeUInt32NoTag(buffIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < buffIdList_.size(); i++) {
         output.writeUInt32NoTag(buffIdList_.getInt(i));
       }
-      if (modeId_ != 0) {
-        output.writeUInt32(14, modeId_);
+      for (int i = 0; i < avatarInfoList_.size(); i++) {
+        output.writeMessage(7, avatarInfoList_.get(i));
+      }
+      if (levelId_ != 0) {
+        output.writeUInt32(9, levelId_);
+      }
+      if (stageId_ != 0) {
+        output.writeUInt32(15, stageId_);
       }
       unknownFields.writeTo(output);
     }
@@ -357,17 +357,9 @@ public final class PotionEnterDungeonReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < avatarInfoList_.size(); i++) {
+      if (modeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, avatarInfoList_.get(i));
-      }
-      if (stageId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, stageId_);
-      }
-      if (levelId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, levelId_);
+          .computeUInt32Size(2, modeId_);
       }
       {
         int dataSize = 0;
@@ -383,9 +375,17 @@ public final class PotionEnterDungeonReqOuterClass {
         }
         buffIdListMemoizedSerializedSize = dataSize;
       }
-      if (modeId_ != 0) {
+      for (int i = 0; i < avatarInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, modeId_);
+          .computeMessageSize(7, avatarInfoList_.get(i));
+      }
+      if (levelId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, levelId_);
+      }
+      if (stageId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, stageId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -402,16 +402,16 @@ public final class PotionEnterDungeonReqOuterClass {
       }
       emu.grasscutter.net.proto.PotionEnterDungeonReqOuterClass.PotionEnterDungeonReq other = (emu.grasscutter.net.proto.PotionEnterDungeonReqOuterClass.PotionEnterDungeonReq) obj;
 
-      if (!getAvatarInfoListList()
-          .equals(other.getAvatarInfoListList())) return false;
-      if (getLevelId()
-          != other.getLevelId()) return false;
       if (!getBuffIdListList()
           .equals(other.getBuffIdListList())) return false;
-      if (getStageId()
-          != other.getStageId()) return false;
       if (getModeId()
           != other.getModeId()) return false;
+      if (getLevelId()
+          != other.getLevelId()) return false;
+      if (!getAvatarInfoListList()
+          .equals(other.getAvatarInfoListList())) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -423,20 +423,20 @@ public final class PotionEnterDungeonReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getAvatarInfoListCount() > 0) {
-        hash = (37 * hash) + AVATAR_INFO_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getAvatarInfoListList().hashCode();
-      }
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
       if (getBuffIdListCount() > 0) {
         hash = (37 * hash) + BUFF_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getBuffIdListList().hashCode();
       }
-      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getStageId();
       hash = (37 * hash) + MODE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getModeId();
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
+      if (getAvatarInfoListCount() > 0) {
+        hash = (37 * hash) + AVATAR_INFO_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getAvatarInfoListList().hashCode();
+      }
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -534,8 +534,8 @@ public final class PotionEnterDungeonReqOuterClass {
     }
     /**
      * <pre>
-     * Name: DFLDHLOHEEI
-     * CmdId: 8630
+     * CmdId: 8252
+     * Obf: CKFAMHGNPMK
      * </pre>
      *
      * Protobuf type {@code PotionEnterDungeonReq}
@@ -576,19 +576,19 @@ public final class PotionEnterDungeonReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        buffIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        modeId_ = 0;
+
+        levelId_ = 0;
+
         if (avatarInfoListBuilder_ == null) {
           avatarInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
         } else {
           avatarInfoListBuilder_.clear();
         }
-        levelId_ = 0;
-
-        buffIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
         stageId_ = 0;
-
-        modeId_ = 0;
 
         return this;
       }
@@ -617,23 +617,23 @@ public final class PotionEnterDungeonReqOuterClass {
       public emu.grasscutter.net.proto.PotionEnterDungeonReqOuterClass.PotionEnterDungeonReq buildPartial() {
         emu.grasscutter.net.proto.PotionEnterDungeonReqOuterClass.PotionEnterDungeonReq result = new emu.grasscutter.net.proto.PotionEnterDungeonReqOuterClass.PotionEnterDungeonReq(this);
         int from_bitField0_ = bitField0_;
+        if (((bitField0_ & 0x00000001) != 0)) {
+          buffIdList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        }
+        result.buffIdList_ = buffIdList_;
+        result.modeId_ = modeId_;
+        result.levelId_ = levelId_;
         if (avatarInfoListBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000002) != 0)) {
             avatarInfoList_ = java.util.Collections.unmodifiableList(avatarInfoList_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000002);
           }
           result.avatarInfoList_ = avatarInfoList_;
         } else {
           result.avatarInfoList_ = avatarInfoListBuilder_.build();
         }
-        result.levelId_ = levelId_;
-        if (((bitField0_ & 0x00000002) != 0)) {
-          buffIdList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000002);
-        }
-        result.buffIdList_ = buffIdList_;
         result.stageId_ = stageId_;
-        result.modeId_ = modeId_;
         onBuilt();
         return result;
       }
@@ -682,11 +682,27 @@ public final class PotionEnterDungeonReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PotionEnterDungeonReqOuterClass.PotionEnterDungeonReq other) {
         if (other == emu.grasscutter.net.proto.PotionEnterDungeonReqOuterClass.PotionEnterDungeonReq.getDefaultInstance()) return this;
+        if (!other.buffIdList_.isEmpty()) {
+          if (buffIdList_.isEmpty()) {
+            buffIdList_ = other.buffIdList_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureBuffIdListIsMutable();
+            buffIdList_.addAll(other.buffIdList_);
+          }
+          onChanged();
+        }
+        if (other.getModeId() != 0) {
+          setModeId(other.getModeId());
+        }
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
+        }
         if (avatarInfoListBuilder_ == null) {
           if (!other.avatarInfoList_.isEmpty()) {
             if (avatarInfoList_.isEmpty()) {
               avatarInfoList_ = other.avatarInfoList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
             } else {
               ensureAvatarInfoListIsMutable();
               avatarInfoList_.addAll(other.avatarInfoList_);
@@ -699,7 +715,7 @@ public final class PotionEnterDungeonReqOuterClass {
               avatarInfoListBuilder_.dispose();
               avatarInfoListBuilder_ = null;
               avatarInfoList_ = other.avatarInfoList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
               avatarInfoListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getAvatarInfoListFieldBuilder() : null;
@@ -708,24 +724,8 @@ public final class PotionEnterDungeonReqOuterClass {
             }
           }
         }
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
-        }
-        if (!other.buffIdList_.isEmpty()) {
-          if (buffIdList_.isEmpty()) {
-            buffIdList_ = other.buffIdList_;
-            bitField0_ = (bitField0_ & ~0x00000002);
-          } else {
-            ensureBuffIdListIsMutable();
-            buffIdList_.addAll(other.buffIdList_);
-          }
-          onChanged();
-        }
         if (other.getStageId() != 0) {
           setStageId(other.getStageId());
-        }
-        if (other.getModeId() != 0) {
-          setModeId(other.getModeId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -757,12 +757,153 @@ public final class PotionEnterDungeonReqOuterClass {
       }
       private int bitField0_;
 
+      private com.google.protobuf.Internal.IntList buffIdList_ = emptyIntList();
+      private void ensureBuffIdListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          buffIdList_ = mutableCopy(buffIdList_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      /**
+       * <code>repeated uint32 buff_id_list = 3;</code>
+       * @return A list containing the buffIdList.
+       */
+      public java.util.List<java.lang.Integer>
+          getBuffIdListList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(buffIdList_) : buffIdList_;
+      }
+      /**
+       * <code>repeated uint32 buff_id_list = 3;</code>
+       * @return The count of buffIdList.
+       */
+      public int getBuffIdListCount() {
+        return buffIdList_.size();
+      }
+      /**
+       * <code>repeated uint32 buff_id_list = 3;</code>
+       * @param index The index of the element to return.
+       * @return The buffIdList at the given index.
+       */
+      public int getBuffIdList(int index) {
+        return buffIdList_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 buff_id_list = 3;</code>
+       * @param index The index to set the value at.
+       * @param value The buffIdList to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBuffIdList(
+          int index, int value) {
+        ensureBuffIdListIsMutable();
+        buffIdList_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 buff_id_list = 3;</code>
+       * @param value The buffIdList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addBuffIdList(int value) {
+        ensureBuffIdListIsMutable();
+        buffIdList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 buff_id_list = 3;</code>
+       * @param values The buffIdList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllBuffIdList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureBuffIdListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, buffIdList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 buff_id_list = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBuffIdList() {
+        buffIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private int modeId_ ;
+      /**
+       * <code>uint32 mode_id = 2;</code>
+       * @return The modeId.
+       */
+      @java.lang.Override
+      public int getModeId() {
+        return modeId_;
+      }
+      /**
+       * <code>uint32 mode_id = 2;</code>
+       * @param value The modeId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setModeId(int value) {
+        
+        modeId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 mode_id = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearModeId() {
+        
+        modeId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int levelId_ ;
+      /**
+       * <code>uint32 level_id = 9;</code>
+       * @return The levelId.
+       */
+      @java.lang.Override
+      public int getLevelId() {
+        return levelId_;
+      }
+      /**
+       * <code>uint32 level_id = 9;</code>
+       * @param value The levelId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevelId(int value) {
+        
+        levelId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 level_id = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevelId() {
+        
+        levelId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo> avatarInfoList_ =
         java.util.Collections.emptyList();
       private void ensureAvatarInfoListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000002) != 0)) {
           avatarInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo>(avatarInfoList_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000002;
          }
       }
 
@@ -770,7 +911,7 @@ public final class PotionEnterDungeonReqOuterClass {
           emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo, emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo.Builder, emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfoOrBuilder> avatarInfoListBuilder_;
 
       /**
-       * <code>repeated .PotionAvatarInfo avatar_info_list = 5;</code>
+       * <code>repeated .PotionAvatarInfo avatar_info_list = 7;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo> getAvatarInfoListList() {
         if (avatarInfoListBuilder_ == null) {
@@ -780,7 +921,7 @@ public final class PotionEnterDungeonReqOuterClass {
         }
       }
       /**
-       * <code>repeated .PotionAvatarInfo avatar_info_list = 5;</code>
+       * <code>repeated .PotionAvatarInfo avatar_info_list = 7;</code>
        */
       public int getAvatarInfoListCount() {
         if (avatarInfoListBuilder_ == null) {
@@ -790,7 +931,7 @@ public final class PotionEnterDungeonReqOuterClass {
         }
       }
       /**
-       * <code>repeated .PotionAvatarInfo avatar_info_list = 5;</code>
+       * <code>repeated .PotionAvatarInfo avatar_info_list = 7;</code>
        */
       public emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo getAvatarInfoList(int index) {
         if (avatarInfoListBuilder_ == null) {
@@ -800,7 +941,7 @@ public final class PotionEnterDungeonReqOuterClass {
         }
       }
       /**
-       * <code>repeated .PotionAvatarInfo avatar_info_list = 5;</code>
+       * <code>repeated .PotionAvatarInfo avatar_info_list = 7;</code>
        */
       public Builder setAvatarInfoList(
           int index, emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo value) {
@@ -817,7 +958,7 @@ public final class PotionEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionAvatarInfo avatar_info_list = 5;</code>
+       * <code>repeated .PotionAvatarInfo avatar_info_list = 7;</code>
        */
       public Builder setAvatarInfoList(
           int index, emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo.Builder builderForValue) {
@@ -831,7 +972,7 @@ public final class PotionEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionAvatarInfo avatar_info_list = 5;</code>
+       * <code>repeated .PotionAvatarInfo avatar_info_list = 7;</code>
        */
       public Builder addAvatarInfoList(emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo value) {
         if (avatarInfoListBuilder_ == null) {
@@ -847,7 +988,7 @@ public final class PotionEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionAvatarInfo avatar_info_list = 5;</code>
+       * <code>repeated .PotionAvatarInfo avatar_info_list = 7;</code>
        */
       public Builder addAvatarInfoList(
           int index, emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo value) {
@@ -864,7 +1005,7 @@ public final class PotionEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionAvatarInfo avatar_info_list = 5;</code>
+       * <code>repeated .PotionAvatarInfo avatar_info_list = 7;</code>
        */
       public Builder addAvatarInfoList(
           emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo.Builder builderForValue) {
@@ -878,7 +1019,7 @@ public final class PotionEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionAvatarInfo avatar_info_list = 5;</code>
+       * <code>repeated .PotionAvatarInfo avatar_info_list = 7;</code>
        */
       public Builder addAvatarInfoList(
           int index, emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo.Builder builderForValue) {
@@ -892,7 +1033,7 @@ public final class PotionEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionAvatarInfo avatar_info_list = 5;</code>
+       * <code>repeated .PotionAvatarInfo avatar_info_list = 7;</code>
        */
       public Builder addAllAvatarInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo> values) {
@@ -907,12 +1048,12 @@ public final class PotionEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionAvatarInfo avatar_info_list = 5;</code>
+       * <code>repeated .PotionAvatarInfo avatar_info_list = 7;</code>
        */
       public Builder clearAvatarInfoList() {
         if (avatarInfoListBuilder_ == null) {
           avatarInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
         } else {
           avatarInfoListBuilder_.clear();
@@ -920,7 +1061,7 @@ public final class PotionEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionAvatarInfo avatar_info_list = 5;</code>
+       * <code>repeated .PotionAvatarInfo avatar_info_list = 7;</code>
        */
       public Builder removeAvatarInfoList(int index) {
         if (avatarInfoListBuilder_ == null) {
@@ -933,14 +1074,14 @@ public final class PotionEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionAvatarInfo avatar_info_list = 5;</code>
+       * <code>repeated .PotionAvatarInfo avatar_info_list = 7;</code>
        */
       public emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo.Builder getAvatarInfoListBuilder(
           int index) {
         return getAvatarInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .PotionAvatarInfo avatar_info_list = 5;</code>
+       * <code>repeated .PotionAvatarInfo avatar_info_list = 7;</code>
        */
       public emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfoOrBuilder getAvatarInfoListOrBuilder(
           int index) {
@@ -950,7 +1091,7 @@ public final class PotionEnterDungeonReqOuterClass {
         }
       }
       /**
-       * <code>repeated .PotionAvatarInfo avatar_info_list = 5;</code>
+       * <code>repeated .PotionAvatarInfo avatar_info_list = 7;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfoOrBuilder> 
            getAvatarInfoListOrBuilderList() {
@@ -961,14 +1102,14 @@ public final class PotionEnterDungeonReqOuterClass {
         }
       }
       /**
-       * <code>repeated .PotionAvatarInfo avatar_info_list = 5;</code>
+       * <code>repeated .PotionAvatarInfo avatar_info_list = 7;</code>
        */
       public emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo.Builder addAvatarInfoListBuilder() {
         return getAvatarInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .PotionAvatarInfo avatar_info_list = 5;</code>
+       * <code>repeated .PotionAvatarInfo avatar_info_list = 7;</code>
        */
       public emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo.Builder addAvatarInfoListBuilder(
           int index) {
@@ -976,7 +1117,7 @@ public final class PotionEnterDungeonReqOuterClass {
             index, emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .PotionAvatarInfo avatar_info_list = 5;</code>
+       * <code>repeated .PotionAvatarInfo avatar_info_list = 7;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo.Builder> 
            getAvatarInfoListBuilderList() {
@@ -989,7 +1130,7 @@ public final class PotionEnterDungeonReqOuterClass {
           avatarInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo, emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfo.Builder, emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.PotionAvatarInfoOrBuilder>(
                   avatarInfoList_,
-                  ((bitField0_ & 0x00000001) != 0),
+                  ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
                   isClean());
           avatarInfoList_ = null;
@@ -997,119 +1138,9 @@ public final class PotionEnterDungeonReqOuterClass {
         return avatarInfoListBuilder_;
       }
 
-      private int levelId_ ;
-      /**
-       * <code>uint32 level_id = 8;</code>
-       * @return The levelId.
-       */
-      @java.lang.Override
-      public int getLevelId() {
-        return levelId_;
-      }
-      /**
-       * <code>uint32 level_id = 8;</code>
-       * @param value The levelId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevelId(int value) {
-        
-        levelId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level_id = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevelId() {
-        
-        levelId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList buffIdList_ = emptyIntList();
-      private void ensureBuffIdListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          buffIdList_ = mutableCopy(buffIdList_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-      /**
-       * <code>repeated uint32 buff_id_list = 12;</code>
-       * @return A list containing the buffIdList.
-       */
-      public java.util.List<java.lang.Integer>
-          getBuffIdListList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(buffIdList_) : buffIdList_;
-      }
-      /**
-       * <code>repeated uint32 buff_id_list = 12;</code>
-       * @return The count of buffIdList.
-       */
-      public int getBuffIdListCount() {
-        return buffIdList_.size();
-      }
-      /**
-       * <code>repeated uint32 buff_id_list = 12;</code>
-       * @param index The index of the element to return.
-       * @return The buffIdList at the given index.
-       */
-      public int getBuffIdList(int index) {
-        return buffIdList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 buff_id_list = 12;</code>
-       * @param index The index to set the value at.
-       * @param value The buffIdList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBuffIdList(
-          int index, int value) {
-        ensureBuffIdListIsMutable();
-        buffIdList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 buff_id_list = 12;</code>
-       * @param value The buffIdList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addBuffIdList(int value) {
-        ensureBuffIdListIsMutable();
-        buffIdList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 buff_id_list = 12;</code>
-       * @param values The buffIdList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllBuffIdList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureBuffIdListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, buffIdList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 buff_id_list = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBuffIdList() {
-        buffIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        onChanged();
-        return this;
-      }
-
       private int stageId_ ;
       /**
-       * <code>uint32 stage_id = 6;</code>
+       * <code>uint32 stage_id = 15;</code>
        * @return The stageId.
        */
       @java.lang.Override
@@ -1117,7 +1148,7 @@ public final class PotionEnterDungeonReqOuterClass {
         return stageId_;
       }
       /**
-       * <code>uint32 stage_id = 6;</code>
+       * <code>uint32 stage_id = 15;</code>
        * @param value The stageId to set.
        * @return This builder for chaining.
        */
@@ -1128,43 +1159,12 @@ public final class PotionEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stage_id = 6;</code>
+       * <code>uint32 stage_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearStageId() {
         
         stageId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int modeId_ ;
-      /**
-       * <code>uint32 mode_id = 14;</code>
-       * @return The modeId.
-       */
-      @java.lang.Override
-      public int getModeId() {
-        return modeId_;
-      }
-      /**
-       * <code>uint32 mode_id = 14;</code>
-       * @param value The modeId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setModeId(int value) {
-        
-        modeId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 mode_id = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearModeId() {
-        
-        modeId_ = 0;
         onChanged();
         return this;
       }
@@ -1237,9 +1237,9 @@ public final class PotionEnterDungeonReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033PotionEnterDungeonReq.proto\032\026PotionAva" +
       "tarInfo.proto\"\217\001\n\025PotionEnterDungeonReq\022" +
-      "+\n\020avatar_info_list\030\005 \003(\0132\021.PotionAvatar" +
-      "Info\022\020\n\010level_id\030\010 \001(\r\022\024\n\014buff_id_list\030\014" +
-      " \003(\r\022\020\n\010stage_id\030\006 \001(\r\022\017\n\007mode_id\030\016 \001(\rB" +
+      "\024\n\014buff_id_list\030\003 \003(\r\022\017\n\007mode_id\030\002 \001(\r\022\020" +
+      "\n\010level_id\030\t \001(\r\022+\n\020avatar_info_list\030\007 \003" +
+      "(\0132\021.PotionAvatarInfo\022\020\n\010stage_id\030\017 \001(\rB" +
       "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1252,7 +1252,7 @@ public final class PotionEnterDungeonReqOuterClass {
     internal_static_PotionEnterDungeonReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PotionEnterDungeonReq_descriptor,
-        new java.lang.String[] { "AvatarInfoList", "LevelId", "BuffIdList", "StageId", "ModeId", });
+        new java.lang.String[] { "BuffIdList", "ModeId", "LevelId", "AvatarInfoList", "StageId", });
     emu.grasscutter.net.proto.PotionAvatarInfoOuterClass.getDescriptor();
   }
 

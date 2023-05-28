@@ -19,40 +19,32 @@ public final class GCGStartChallengeReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *NIELIIFHJCO PPHCMNDNEBE snooswap
-     * </pre>
-     *
-     * <code>.GCGLevelType level_type = 10;</code>
-     * @return The enum numeric value on the wire for levelType.
-     */
-    int getLevelTypeValue();
-    /**
-     * <pre>
-     *NIELIIFHJCO PPHCMNDNEBE snooswap
-     * </pre>
-     *
-     * <code>.GCGLevelType level_type = 10;</code>
-     * @return The levelType.
-     */
-    emu.grasscutter.net.proto.GCGLevelTypeOuterClass.GCGLevelType getLevelType();
-
-    /**
-     * <code>uint32 config_id = 5;</code>
-     * @return The configId.
-     */
-    int getConfigId();
-
-    /**
-     * <code>uint32 level_id = 11;</code>
+     * <code>uint32 level_id = 13;</code>
      * @return The levelId.
      */
     int getLevelId();
+
+    /**
+     * <code>.JKLJHDFICPL KPHEDFKMFOG = 6;</code>
+     * @return The enum numeric value on the wire for kPHEDFKMFOG.
+     */
+    int getKPHEDFKMFOGValue();
+    /**
+     * <code>.JKLJHDFICPL KPHEDFKMFOG = 6;</code>
+     * @return The kPHEDFKMFOG.
+     */
+    emu.grasscutter.net.proto.JKLJHDFICPLOuterClass.JKLJHDFICPL getKPHEDFKMFOG();
+
+    /**
+     * <code>uint32 config_id = 2;</code>
+     * @return The configId.
+     */
+    int getConfigId();
   }
   /**
    * <pre>
-   * Name: OENDJCGMHJJ
-   * CmdId: 7141
+   * CmdId: 7584
+   * Obf: IOAEPMIGNBO
    * </pre>
    *
    * Protobuf type {@code GCGStartChallengeReq}
@@ -67,7 +59,7 @@ public final class GCGStartChallengeReqOuterClass {
       super(builder);
     }
     private GCGStartChallengeReq() {
-      levelType_ = 0;
+      kPHEDFKMFOG_ = 0;
     }
 
     @java.lang.Override
@@ -100,18 +92,18 @@ public final class GCGStartChallengeReqOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 16: {
 
               configId_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 48: {
               int rawValue = input.readEnum();
 
-              levelType_ = rawValue;
+              kPHEDFKMFOG_ = rawValue;
               break;
             }
-            case 88: {
+            case 104: {
 
               levelId_ = input.readUInt32();
               break;
@@ -148,53 +140,45 @@ public final class GCGStartChallengeReqOuterClass {
               emu.grasscutter.net.proto.GCGStartChallengeReqOuterClass.GCGStartChallengeReq.class, emu.grasscutter.net.proto.GCGStartChallengeReqOuterClass.GCGStartChallengeReq.Builder.class);
     }
 
-    public static final int LEVEL_TYPE_FIELD_NUMBER = 10;
-    private int levelType_;
-    /**
-     * <pre>
-     *NIELIIFHJCO PPHCMNDNEBE snooswap
-     * </pre>
-     *
-     * <code>.GCGLevelType level_type = 10;</code>
-     * @return The enum numeric value on the wire for levelType.
-     */
-    @java.lang.Override public int getLevelTypeValue() {
-      return levelType_;
-    }
-    /**
-     * <pre>
-     *NIELIIFHJCO PPHCMNDNEBE snooswap
-     * </pre>
-     *
-     * <code>.GCGLevelType level_type = 10;</code>
-     * @return The levelType.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.GCGLevelTypeOuterClass.GCGLevelType getLevelType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.GCGLevelTypeOuterClass.GCGLevelType result = emu.grasscutter.net.proto.GCGLevelTypeOuterClass.GCGLevelType.valueOf(levelType_);
-      return result == null ? emu.grasscutter.net.proto.GCGLevelTypeOuterClass.GCGLevelType.UNRECOGNIZED : result;
-    }
-
-    public static final int CONFIG_ID_FIELD_NUMBER = 5;
-    private int configId_;
-    /**
-     * <code>uint32 config_id = 5;</code>
-     * @return The configId.
-     */
-    @java.lang.Override
-    public int getConfigId() {
-      return configId_;
-    }
-
-    public static final int LEVEL_ID_FIELD_NUMBER = 11;
+    public static final int LEVEL_ID_FIELD_NUMBER = 13;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 11;</code>
+     * <code>uint32 level_id = 13;</code>
      * @return The levelId.
      */
     @java.lang.Override
     public int getLevelId() {
       return levelId_;
+    }
+
+    public static final int KPHEDFKMFOG_FIELD_NUMBER = 6;
+    private int kPHEDFKMFOG_;
+    /**
+     * <code>.JKLJHDFICPL KPHEDFKMFOG = 6;</code>
+     * @return The enum numeric value on the wire for kPHEDFKMFOG.
+     */
+    @java.lang.Override public int getKPHEDFKMFOGValue() {
+      return kPHEDFKMFOG_;
+    }
+    /**
+     * <code>.JKLJHDFICPL KPHEDFKMFOG = 6;</code>
+     * @return The kPHEDFKMFOG.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.JKLJHDFICPLOuterClass.JKLJHDFICPL getKPHEDFKMFOG() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.JKLJHDFICPLOuterClass.JKLJHDFICPL result = emu.grasscutter.net.proto.JKLJHDFICPLOuterClass.JKLJHDFICPL.valueOf(kPHEDFKMFOG_);
+      return result == null ? emu.grasscutter.net.proto.JKLJHDFICPLOuterClass.JKLJHDFICPL.UNRECOGNIZED : result;
+    }
+
+    public static final int CONFIG_ID_FIELD_NUMBER = 2;
+    private int configId_;
+    /**
+     * <code>uint32 config_id = 2;</code>
+     * @return The configId.
+     */
+    @java.lang.Override
+    public int getConfigId() {
+      return configId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -212,13 +196,13 @@ public final class GCGStartChallengeReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (configId_ != 0) {
-        output.writeUInt32(5, configId_);
+        output.writeUInt32(2, configId_);
       }
-      if (levelType_ != emu.grasscutter.net.proto.GCGLevelTypeOuterClass.GCGLevelType.GCG_LEVEL_TYPE_NONE.getNumber()) {
-        output.writeEnum(10, levelType_);
+      if (kPHEDFKMFOG_ != emu.grasscutter.net.proto.JKLJHDFICPLOuterClass.JKLJHDFICPL.JKLJHDFICPL_GcgLevelNone.getNumber()) {
+        output.writeEnum(6, kPHEDFKMFOG_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(11, levelId_);
+        output.writeUInt32(13, levelId_);
       }
       unknownFields.writeTo(output);
     }
@@ -231,15 +215,15 @@ public final class GCGStartChallengeReqOuterClass {
       size = 0;
       if (configId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, configId_);
+          .computeUInt32Size(2, configId_);
       }
-      if (levelType_ != emu.grasscutter.net.proto.GCGLevelTypeOuterClass.GCGLevelType.GCG_LEVEL_TYPE_NONE.getNumber()) {
+      if (kPHEDFKMFOG_ != emu.grasscutter.net.proto.JKLJHDFICPLOuterClass.JKLJHDFICPL.JKLJHDFICPL_GcgLevelNone.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(10, levelType_);
+          .computeEnumSize(6, kPHEDFKMFOG_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, levelId_);
+          .computeUInt32Size(13, levelId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -256,11 +240,11 @@ public final class GCGStartChallengeReqOuterClass {
       }
       emu.grasscutter.net.proto.GCGStartChallengeReqOuterClass.GCGStartChallengeReq other = (emu.grasscutter.net.proto.GCGStartChallengeReqOuterClass.GCGStartChallengeReq) obj;
 
-      if (levelType_ != other.levelType_) return false;
-      if (getConfigId()
-          != other.getConfigId()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
+      if (kPHEDFKMFOG_ != other.kPHEDFKMFOG_) return false;
+      if (getConfigId()
+          != other.getConfigId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -272,12 +256,12 @@ public final class GCGStartChallengeReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + LEVEL_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + levelType_;
-      hash = (37 * hash) + CONFIG_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getConfigId();
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + KPHEDFKMFOG_FIELD_NUMBER;
+      hash = (53 * hash) + kPHEDFKMFOG_;
+      hash = (37 * hash) + CONFIG_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getConfigId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -375,8 +359,8 @@ public final class GCGStartChallengeReqOuterClass {
     }
     /**
      * <pre>
-     * Name: OENDJCGMHJJ
-     * CmdId: 7141
+     * CmdId: 7584
+     * Obf: IOAEPMIGNBO
      * </pre>
      *
      * Protobuf type {@code GCGStartChallengeReq}
@@ -416,11 +400,11 @@ public final class GCGStartChallengeReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        levelType_ = 0;
+        levelId_ = 0;
+
+        kPHEDFKMFOG_ = 0;
 
         configId_ = 0;
-
-        levelId_ = 0;
 
         return this;
       }
@@ -448,9 +432,9 @@ public final class GCGStartChallengeReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGStartChallengeReqOuterClass.GCGStartChallengeReq buildPartial() {
         emu.grasscutter.net.proto.GCGStartChallengeReqOuterClass.GCGStartChallengeReq result = new emu.grasscutter.net.proto.GCGStartChallengeReqOuterClass.GCGStartChallengeReq(this);
-        result.levelType_ = levelType_;
-        result.configId_ = configId_;
         result.levelId_ = levelId_;
+        result.kPHEDFKMFOG_ = kPHEDFKMFOG_;
+        result.configId_ = configId_;
         onBuilt();
         return result;
       }
@@ -499,14 +483,14 @@ public final class GCGStartChallengeReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGStartChallengeReqOuterClass.GCGStartChallengeReq other) {
         if (other == emu.grasscutter.net.proto.GCGStartChallengeReqOuterClass.GCGStartChallengeReq.getDefaultInstance()) return this;
-        if (other.levelType_ != 0) {
-          setLevelTypeValue(other.getLevelTypeValue());
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
+        }
+        if (other.kPHEDFKMFOG_ != 0) {
+          setKPHEDFKMFOGValue(other.getKPHEDFKMFOGValue());
         }
         if (other.getConfigId() != 0) {
           setConfigId(other.getConfigId());
-        }
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -537,114 +521,9 @@ public final class GCGStartChallengeReqOuterClass {
         return this;
       }
 
-      private int levelType_ = 0;
-      /**
-       * <pre>
-       *NIELIIFHJCO PPHCMNDNEBE snooswap
-       * </pre>
-       *
-       * <code>.GCGLevelType level_type = 10;</code>
-       * @return The enum numeric value on the wire for levelType.
-       */
-      @java.lang.Override public int getLevelTypeValue() {
-        return levelType_;
-      }
-      /**
-       * <pre>
-       *NIELIIFHJCO PPHCMNDNEBE snooswap
-       * </pre>
-       *
-       * <code>.GCGLevelType level_type = 10;</code>
-       * @param value The enum numeric value on the wire for levelType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevelTypeValue(int value) {
-        
-        levelType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *NIELIIFHJCO PPHCMNDNEBE snooswap
-       * </pre>
-       *
-       * <code>.GCGLevelType level_type = 10;</code>
-       * @return The levelType.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.GCGLevelTypeOuterClass.GCGLevelType getLevelType() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.GCGLevelTypeOuterClass.GCGLevelType result = emu.grasscutter.net.proto.GCGLevelTypeOuterClass.GCGLevelType.valueOf(levelType_);
-        return result == null ? emu.grasscutter.net.proto.GCGLevelTypeOuterClass.GCGLevelType.UNRECOGNIZED : result;
-      }
-      /**
-       * <pre>
-       *NIELIIFHJCO PPHCMNDNEBE snooswap
-       * </pre>
-       *
-       * <code>.GCGLevelType level_type = 10;</code>
-       * @param value The levelType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevelType(emu.grasscutter.net.proto.GCGLevelTypeOuterClass.GCGLevelType value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        levelType_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *NIELIIFHJCO PPHCMNDNEBE snooswap
-       * </pre>
-       *
-       * <code>.GCGLevelType level_type = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevelType() {
-        
-        levelType_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int configId_ ;
-      /**
-       * <code>uint32 config_id = 5;</code>
-       * @return The configId.
-       */
-      @java.lang.Override
-      public int getConfigId() {
-        return configId_;
-      }
-      /**
-       * <code>uint32 config_id = 5;</code>
-       * @param value The configId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setConfigId(int value) {
-        
-        configId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 config_id = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearConfigId() {
-        
-        configId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 11;</code>
+       * <code>uint32 level_id = 13;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -652,7 +531,7 @@ public final class GCGStartChallengeReqOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 11;</code>
+       * <code>uint32 level_id = 13;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -663,12 +542,97 @@ public final class GCGStartChallengeReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 11;</code>
+       * <code>uint32 level_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
         
         levelId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int kPHEDFKMFOG_ = 0;
+      /**
+       * <code>.JKLJHDFICPL KPHEDFKMFOG = 6;</code>
+       * @return The enum numeric value on the wire for kPHEDFKMFOG.
+       */
+      @java.lang.Override public int getKPHEDFKMFOGValue() {
+        return kPHEDFKMFOG_;
+      }
+      /**
+       * <code>.JKLJHDFICPL KPHEDFKMFOG = 6;</code>
+       * @param value The enum numeric value on the wire for kPHEDFKMFOG to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKPHEDFKMFOGValue(int value) {
+        
+        kPHEDFKMFOG_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.JKLJHDFICPL KPHEDFKMFOG = 6;</code>
+       * @return The kPHEDFKMFOG.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.JKLJHDFICPLOuterClass.JKLJHDFICPL getKPHEDFKMFOG() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.JKLJHDFICPLOuterClass.JKLJHDFICPL result = emu.grasscutter.net.proto.JKLJHDFICPLOuterClass.JKLJHDFICPL.valueOf(kPHEDFKMFOG_);
+        return result == null ? emu.grasscutter.net.proto.JKLJHDFICPLOuterClass.JKLJHDFICPL.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.JKLJHDFICPL KPHEDFKMFOG = 6;</code>
+       * @param value The kPHEDFKMFOG to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKPHEDFKMFOG(emu.grasscutter.net.proto.JKLJHDFICPLOuterClass.JKLJHDFICPL value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        kPHEDFKMFOG_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.JKLJHDFICPL KPHEDFKMFOG = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearKPHEDFKMFOG() {
+        
+        kPHEDFKMFOG_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int configId_ ;
+      /**
+       * <code>uint32 config_id = 2;</code>
+       * @return The configId.
+       */
+      @java.lang.Override
+      public int getConfigId() {
+        return configId_;
+      }
+      /**
+       * <code>uint32 config_id = 2;</code>
+       * @param value The configId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setConfigId(int value) {
+        
+        configId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 config_id = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearConfigId() {
+        
+        configId_ = 0;
         onChanged();
         return this;
       }
@@ -739,24 +703,24 @@ public final class GCGStartChallengeReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\032GCGStartChallengeReq.proto\032\022GCGLevelTy" +
-      "pe.proto\"^\n\024GCGStartChallengeReq\022!\n\nleve" +
-      "l_type\030\n \001(\0162\r.GCGLevelType\022\021\n\tconfig_id" +
-      "\030\005 \001(\r\022\020\n\010level_id\030\013 \001(\rB\033\n\031emu.grasscut" +
-      "ter.net.protob\006proto3"
+      "\n\032GCGStartChallengeReq.proto\032\021JKLJHDFICP" +
+      "L.proto\"^\n\024GCGStartChallengeReq\022\020\n\010level" +
+      "_id\030\r \001(\r\022!\n\013KPHEDFKMFOG\030\006 \001(\0162\014.JKLJHDF" +
+      "ICPL\022\021\n\tconfig_id\030\002 \001(\rB\033\n\031emu.grasscutt" +
+      "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.GCGLevelTypeOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.JKLJHDFICPLOuterClass.getDescriptor(),
         });
     internal_static_GCGStartChallengeReq_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_GCGStartChallengeReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGStartChallengeReq_descriptor,
-        new java.lang.String[] { "LevelType", "ConfigId", "LevelId", });
-    emu.grasscutter.net.proto.GCGLevelTypeOuterClass.getDescriptor();
+        new java.lang.String[] { "LevelId", "KPHEDFKMFOG", "ConfigId", });
+    emu.grasscutter.net.proto.JKLJHDFICPLOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

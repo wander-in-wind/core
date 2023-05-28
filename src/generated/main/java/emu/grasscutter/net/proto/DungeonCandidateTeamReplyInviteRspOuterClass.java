@@ -19,21 +19,27 @@ public final class DungeonCandidateTeamReplyInviteRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 6;</code>
+     * <code>bool is_trans_point = 7;</code>
+     * @return The isTransPoint.
+     */
+    boolean getIsTransPoint();
+
+    /**
+     * <code>int32 retcode = 13;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>bool is_trans_point = 8;</code>
-     * @return The isTransPoint.
+     * <code>uint32 dungeon_id = 15;</code>
+     * @return The dungeonId.
      */
-    boolean getIsTransPoint();
+    int getDungeonId();
   }
   /**
    * <pre>
-   * Name: JOCEDFKHMHB
-   * CmdId: 905
+   * CmdId: 993
+   * Obf: BFBJLHKGKLE
    * </pre>
    *
    * Protobuf type {@code DungeonCandidateTeamReplyInviteRsp}
@@ -80,14 +86,19 @@ public final class DungeonCandidateTeamReplyInviteRspOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 56: {
+
+              isTransPoint_ = input.readBool();
+              break;
+            }
+            case 104: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 64: {
+            case 120: {
 
-              isTransPoint_ = input.readBool();
+              dungeonId_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,10 +133,21 @@ public final class DungeonCandidateTeamReplyInviteRspOuterClass {
               emu.grasscutter.net.proto.DungeonCandidateTeamReplyInviteRspOuterClass.DungeonCandidateTeamReplyInviteRsp.class, emu.grasscutter.net.proto.DungeonCandidateTeamReplyInviteRspOuterClass.DungeonCandidateTeamReplyInviteRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 6;
+    public static final int IS_TRANS_POINT_FIELD_NUMBER = 7;
+    private boolean isTransPoint_;
+    /**
+     * <code>bool is_trans_point = 7;</code>
+     * @return The isTransPoint.
+     */
+    @java.lang.Override
+    public boolean getIsTransPoint() {
+      return isTransPoint_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 13;
     private int retcode_;
     /**
-     * <code>int32 retcode = 6;</code>
+     * <code>int32 retcode = 13;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -133,15 +155,15 @@ public final class DungeonCandidateTeamReplyInviteRspOuterClass {
       return retcode_;
     }
 
-    public static final int IS_TRANS_POINT_FIELD_NUMBER = 8;
-    private boolean isTransPoint_;
+    public static final int DUNGEON_ID_FIELD_NUMBER = 15;
+    private int dungeonId_;
     /**
-     * <code>bool is_trans_point = 8;</code>
-     * @return The isTransPoint.
+     * <code>uint32 dungeon_id = 15;</code>
+     * @return The dungeonId.
      */
     @java.lang.Override
-    public boolean getIsTransPoint() {
-      return isTransPoint_;
+    public int getDungeonId() {
+      return dungeonId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -158,11 +180,14 @@ public final class DungeonCandidateTeamReplyInviteRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(6, retcode_);
-      }
       if (isTransPoint_ != false) {
-        output.writeBool(8, isTransPoint_);
+        output.writeBool(7, isTransPoint_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(13, retcode_);
+      }
+      if (dungeonId_ != 0) {
+        output.writeUInt32(15, dungeonId_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +198,17 @@ public final class DungeonCandidateTeamReplyInviteRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(6, retcode_);
-      }
       if (isTransPoint_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isTransPoint_);
+          .computeBoolSize(7, isTransPoint_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(13, retcode_);
+      }
+      if (dungeonId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, dungeonId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +225,12 @@ public final class DungeonCandidateTeamReplyInviteRspOuterClass {
       }
       emu.grasscutter.net.proto.DungeonCandidateTeamReplyInviteRspOuterClass.DungeonCandidateTeamReplyInviteRsp other = (emu.grasscutter.net.proto.DungeonCandidateTeamReplyInviteRspOuterClass.DungeonCandidateTeamReplyInviteRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getIsTransPoint()
           != other.getIsTransPoint()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
+      if (getDungeonId()
+          != other.getDungeonId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,11 +242,13 @@ public final class DungeonCandidateTeamReplyInviteRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + IS_TRANS_POINT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsTransPoint());
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getDungeonId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -313,8 +346,8 @@ public final class DungeonCandidateTeamReplyInviteRspOuterClass {
     }
     /**
      * <pre>
-     * Name: JOCEDFKHMHB
-     * CmdId: 905
+     * CmdId: 993
+     * Obf: BFBJLHKGKLE
      * </pre>
      *
      * Protobuf type {@code DungeonCandidateTeamReplyInviteRsp}
@@ -354,9 +387,11 @@ public final class DungeonCandidateTeamReplyInviteRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        isTransPoint_ = false;
+
         retcode_ = 0;
 
-        isTransPoint_ = false;
+        dungeonId_ = 0;
 
         return this;
       }
@@ -384,8 +419,9 @@ public final class DungeonCandidateTeamReplyInviteRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.DungeonCandidateTeamReplyInviteRspOuterClass.DungeonCandidateTeamReplyInviteRsp buildPartial() {
         emu.grasscutter.net.proto.DungeonCandidateTeamReplyInviteRspOuterClass.DungeonCandidateTeamReplyInviteRsp result = new emu.grasscutter.net.proto.DungeonCandidateTeamReplyInviteRspOuterClass.DungeonCandidateTeamReplyInviteRsp(this);
-        result.retcode_ = retcode_;
         result.isTransPoint_ = isTransPoint_;
+        result.retcode_ = retcode_;
+        result.dungeonId_ = dungeonId_;
         onBuilt();
         return result;
       }
@@ -434,11 +470,14 @@ public final class DungeonCandidateTeamReplyInviteRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DungeonCandidateTeamReplyInviteRspOuterClass.DungeonCandidateTeamReplyInviteRsp other) {
         if (other == emu.grasscutter.net.proto.DungeonCandidateTeamReplyInviteRspOuterClass.DungeonCandidateTeamReplyInviteRsp.getDefaultInstance()) return this;
+        if (other.getIsTransPoint() != false) {
+          setIsTransPoint(other.getIsTransPoint());
+        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
-        if (other.getIsTransPoint() != false) {
-          setIsTransPoint(other.getIsTransPoint());
+        if (other.getDungeonId() != 0) {
+          setDungeonId(other.getDungeonId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -469,40 +508,9 @@ public final class DungeonCandidateTeamReplyInviteRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 6;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 6;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isTransPoint_ ;
       /**
-       * <code>bool is_trans_point = 8;</code>
+       * <code>bool is_trans_point = 7;</code>
        * @return The isTransPoint.
        */
       @java.lang.Override
@@ -510,7 +518,7 @@ public final class DungeonCandidateTeamReplyInviteRspOuterClass {
         return isTransPoint_;
       }
       /**
-       * <code>bool is_trans_point = 8;</code>
+       * <code>bool is_trans_point = 7;</code>
        * @param value The isTransPoint to set.
        * @return This builder for chaining.
        */
@@ -521,12 +529,74 @@ public final class DungeonCandidateTeamReplyInviteRspOuterClass {
         return this;
       }
       /**
-       * <code>bool is_trans_point = 8;</code>
+       * <code>bool is_trans_point = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsTransPoint() {
         
         isTransPoint_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 13;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 13;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int dungeonId_ ;
+      /**
+       * <code>uint32 dungeon_id = 15;</code>
+       * @return The dungeonId.
+       */
+      @java.lang.Override
+      public int getDungeonId() {
+        return dungeonId_;
+      }
+      /**
+       * <code>uint32 dungeon_id = 15;</code>
+       * @param value The dungeonId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDungeonId(int value) {
+        
+        dungeonId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 dungeon_id = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDungeonId() {
+        
+        dungeonId_ = 0;
         onChanged();
         return this;
       }
@@ -598,9 +668,10 @@ public final class DungeonCandidateTeamReplyInviteRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n(DungeonCandidateTeamReplyInviteRsp.pro" +
-      "to\"M\n\"DungeonCandidateTeamReplyInviteRsp" +
-      "\022\017\n\007retcode\030\006 \001(\005\022\026\n\016is_trans_point\030\010 \001(" +
-      "\010B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "to\"a\n\"DungeonCandidateTeamReplyInviteRsp" +
+      "\022\026\n\016is_trans_point\030\007 \001(\010\022\017\n\007retcode\030\r \001(" +
+      "\005\022\022\n\ndungeon_id\030\017 \001(\rB\033\n\031emu.grasscutter" +
+      ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -611,7 +682,7 @@ public final class DungeonCandidateTeamReplyInviteRspOuterClass {
     internal_static_DungeonCandidateTeamReplyInviteRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DungeonCandidateTeamReplyInviteRsp_descriptor,
-        new java.lang.String[] { "Retcode", "IsTransPoint", });
+        new java.lang.String[] { "IsTransPoint", "Retcode", "DungeonId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

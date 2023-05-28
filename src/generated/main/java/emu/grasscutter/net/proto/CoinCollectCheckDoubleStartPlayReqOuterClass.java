@@ -19,15 +19,15 @@ public final class CoinCollectCheckDoubleStartPlayReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 3;</code>
+     * <code>uint32 level_id = 13;</code>
      * @return The levelId.
      */
     int getLevelId();
   }
   /**
    * <pre>
-   * Name: FLPHIGJIGGJ
-   * CmdId: 23353
+   * CmdId: 21600
+   * Obf: DOGNIKACDOI
    * </pre>
    *
    * Protobuf type {@code CoinCollectCheckDoubleStartPlayReq}
@@ -74,7 +74,7 @@ public final class CoinCollectCheckDoubleStartPlayReqOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 104: {
 
               levelId_ = input.readUInt32();
               break;
@@ -111,10 +111,10 @@ public final class CoinCollectCheckDoubleStartPlayReqOuterClass {
               emu.grasscutter.net.proto.CoinCollectCheckDoubleStartPlayReqOuterClass.CoinCollectCheckDoubleStartPlayReq.class, emu.grasscutter.net.proto.CoinCollectCheckDoubleStartPlayReqOuterClass.CoinCollectCheckDoubleStartPlayReq.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 3;
+    public static final int LEVEL_ID_FIELD_NUMBER = 13;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 3;</code>
+     * <code>uint32 level_id = 13;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class CoinCollectCheckDoubleStartPlayReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (levelId_ != 0) {
-        output.writeUInt32(3, levelId_);
+        output.writeUInt32(13, levelId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class CoinCollectCheckDoubleStartPlayReqOuterClass {
       size = 0;
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, levelId_);
+          .computeUInt32Size(13, levelId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class CoinCollectCheckDoubleStartPlayReqOuterClass {
     }
     /**
      * <pre>
-     * Name: FLPHIGJIGGJ
-     * CmdId: 23353
+     * CmdId: 21600
+     * Obf: DOGNIKACDOI
      * </pre>
      *
      * Protobuf type {@code CoinCollectCheckDoubleStartPlayReq}
@@ -431,7 +431,7 @@ public final class CoinCollectCheckDoubleStartPlayReqOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 3;</code>
+       * <code>uint32 level_id = 13;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class CoinCollectCheckDoubleStartPlayReqOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 3;</code>
+       * <code>uint32 level_id = 13;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class CoinCollectCheckDoubleStartPlayReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 3;</code>
+       * <code>uint32 level_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -528,7 +528,7 @@ public final class CoinCollectCheckDoubleStartPlayReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n(CoinCollectCheckDoubleStartPlayReq.pro" +
       "to\"6\n\"CoinCollectCheckDoubleStartPlayReq" +
-      "\022\020\n\010level_id\030\003 \001(\rB\033\n\031emu.grasscutter.ne" +
+      "\022\020\n\010level_id\030\r \001(\rB\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

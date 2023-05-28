@@ -19,33 +19,33 @@ public final class DungeonInterruptChallengeRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 group_id = 6;</code>
+     * <code>uint32 group_id = 9;</code>
      * @return The groupId.
      */
     int getGroupId();
 
     /**
-     * <code>uint32 challenge_index = 7;</code>
+     * <code>int32 retcode = 12;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
+
+    /**
+     * <code>uint32 challenge_index = 1;</code>
      * @return The challengeIndex.
      */
     int getChallengeIndex();
 
     /**
-     * <code>uint32 challenge_id = 11;</code>
+     * <code>uint32 challenge_id = 15;</code>
      * @return The challengeId.
      */
     int getChallengeId();
-
-    /**
-     * <code>int32 retcode = 8;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
   }
   /**
    * <pre>
-   * Name: JMFBBJAAPHM
-   * CmdId: 930
+   * CmdId: 969
+   * Obf: NLPKOLOEDHO
    * </pre>
    *
    * Protobuf type {@code DungeonInterruptChallengeRsp}
@@ -92,22 +92,22 @@ public final class DungeonInterruptChallengeRspOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
-
-              groupId_ = input.readUInt32();
-              break;
-            }
-            case 56: {
+            case 8: {
 
               challengeIndex_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 72: {
+
+              groupId_ = input.readUInt32();
+              break;
+            }
+            case 96: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 88: {
+            case 120: {
 
               challengeId_ = input.readUInt32();
               break;
@@ -144,10 +144,10 @@ public final class DungeonInterruptChallengeRspOuterClass {
               emu.grasscutter.net.proto.DungeonInterruptChallengeRspOuterClass.DungeonInterruptChallengeRsp.class, emu.grasscutter.net.proto.DungeonInterruptChallengeRspOuterClass.DungeonInterruptChallengeRsp.Builder.class);
     }
 
-    public static final int GROUP_ID_FIELD_NUMBER = 6;
+    public static final int GROUP_ID_FIELD_NUMBER = 9;
     private int groupId_;
     /**
-     * <code>uint32 group_id = 6;</code>
+     * <code>uint32 group_id = 9;</code>
      * @return The groupId.
      */
     @java.lang.Override
@@ -155,10 +155,21 @@ public final class DungeonInterruptChallengeRspOuterClass {
       return groupId_;
     }
 
-    public static final int CHALLENGE_INDEX_FIELD_NUMBER = 7;
+    public static final int RETCODE_FIELD_NUMBER = 12;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 12;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
+    public static final int CHALLENGE_INDEX_FIELD_NUMBER = 1;
     private int challengeIndex_;
     /**
-     * <code>uint32 challenge_index = 7;</code>
+     * <code>uint32 challenge_index = 1;</code>
      * @return The challengeIndex.
      */
     @java.lang.Override
@@ -166,26 +177,15 @@ public final class DungeonInterruptChallengeRspOuterClass {
       return challengeIndex_;
     }
 
-    public static final int CHALLENGE_ID_FIELD_NUMBER = 11;
+    public static final int CHALLENGE_ID_FIELD_NUMBER = 15;
     private int challengeId_;
     /**
-     * <code>uint32 challenge_id = 11;</code>
+     * <code>uint32 challenge_id = 15;</code>
      * @return The challengeId.
      */
     @java.lang.Override
     public int getChallengeId() {
       return challengeId_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 8;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 8;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -202,17 +202,17 @@ public final class DungeonInterruptChallengeRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (groupId_ != 0) {
-        output.writeUInt32(6, groupId_);
-      }
       if (challengeIndex_ != 0) {
-        output.writeUInt32(7, challengeIndex_);
+        output.writeUInt32(1, challengeIndex_);
+      }
+      if (groupId_ != 0) {
+        output.writeUInt32(9, groupId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
+        output.writeInt32(12, retcode_);
       }
       if (challengeId_ != 0) {
-        output.writeUInt32(11, challengeId_);
+        output.writeUInt32(15, challengeId_);
       }
       unknownFields.writeTo(output);
     }
@@ -223,21 +223,21 @@ public final class DungeonInterruptChallengeRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (groupId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, groupId_);
-      }
       if (challengeIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, challengeIndex_);
+          .computeUInt32Size(1, challengeIndex_);
+      }
+      if (groupId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, groupId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
+          .computeInt32Size(12, retcode_);
       }
       if (challengeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, challengeId_);
+          .computeUInt32Size(15, challengeId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -256,12 +256,12 @@ public final class DungeonInterruptChallengeRspOuterClass {
 
       if (getGroupId()
           != other.getGroupId()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (getChallengeIndex()
           != other.getChallengeIndex()) return false;
       if (getChallengeId()
           != other.getChallengeId()) return false;
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -275,12 +275,12 @@ public final class DungeonInterruptChallengeRspOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGroupId();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + CHALLENGE_INDEX_FIELD_NUMBER;
       hash = (53 * hash) + getChallengeIndex();
       hash = (37 * hash) + CHALLENGE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getChallengeId();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -378,8 +378,8 @@ public final class DungeonInterruptChallengeRspOuterClass {
     }
     /**
      * <pre>
-     * Name: JMFBBJAAPHM
-     * CmdId: 930
+     * CmdId: 969
+     * Obf: NLPKOLOEDHO
      * </pre>
      *
      * Protobuf type {@code DungeonInterruptChallengeRsp}
@@ -421,11 +421,11 @@ public final class DungeonInterruptChallengeRspOuterClass {
         super.clear();
         groupId_ = 0;
 
+        retcode_ = 0;
+
         challengeIndex_ = 0;
 
         challengeId_ = 0;
-
-        retcode_ = 0;
 
         return this;
       }
@@ -454,9 +454,9 @@ public final class DungeonInterruptChallengeRspOuterClass {
       public emu.grasscutter.net.proto.DungeonInterruptChallengeRspOuterClass.DungeonInterruptChallengeRsp buildPartial() {
         emu.grasscutter.net.proto.DungeonInterruptChallengeRspOuterClass.DungeonInterruptChallengeRsp result = new emu.grasscutter.net.proto.DungeonInterruptChallengeRspOuterClass.DungeonInterruptChallengeRsp(this);
         result.groupId_ = groupId_;
+        result.retcode_ = retcode_;
         result.challengeIndex_ = challengeIndex_;
         result.challengeId_ = challengeId_;
-        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -508,14 +508,14 @@ public final class DungeonInterruptChallengeRspOuterClass {
         if (other.getGroupId() != 0) {
           setGroupId(other.getGroupId());
         }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
+        }
         if (other.getChallengeIndex() != 0) {
           setChallengeIndex(other.getChallengeIndex());
         }
         if (other.getChallengeId() != 0) {
           setChallengeId(other.getChallengeId());
-        }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -548,7 +548,7 @@ public final class DungeonInterruptChallengeRspOuterClass {
 
       private int groupId_ ;
       /**
-       * <code>uint32 group_id = 6;</code>
+       * <code>uint32 group_id = 9;</code>
        * @return The groupId.
        */
       @java.lang.Override
@@ -556,7 +556,7 @@ public final class DungeonInterruptChallengeRspOuterClass {
         return groupId_;
       }
       /**
-       * <code>uint32 group_id = 6;</code>
+       * <code>uint32 group_id = 9;</code>
        * @param value The groupId to set.
        * @return This builder for chaining.
        */
@@ -567,7 +567,7 @@ public final class DungeonInterruptChallengeRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 group_id = 6;</code>
+       * <code>uint32 group_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearGroupId() {
@@ -577,9 +577,40 @@ public final class DungeonInterruptChallengeRspOuterClass {
         return this;
       }
 
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 12;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 12;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int challengeIndex_ ;
       /**
-       * <code>uint32 challenge_index = 7;</code>
+       * <code>uint32 challenge_index = 1;</code>
        * @return The challengeIndex.
        */
       @java.lang.Override
@@ -587,7 +618,7 @@ public final class DungeonInterruptChallengeRspOuterClass {
         return challengeIndex_;
       }
       /**
-       * <code>uint32 challenge_index = 7;</code>
+       * <code>uint32 challenge_index = 1;</code>
        * @param value The challengeIndex to set.
        * @return This builder for chaining.
        */
@@ -598,7 +629,7 @@ public final class DungeonInterruptChallengeRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 challenge_index = 7;</code>
+       * <code>uint32 challenge_index = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearChallengeIndex() {
@@ -610,7 +641,7 @@ public final class DungeonInterruptChallengeRspOuterClass {
 
       private int challengeId_ ;
       /**
-       * <code>uint32 challenge_id = 11;</code>
+       * <code>uint32 challenge_id = 15;</code>
        * @return The challengeId.
        */
       @java.lang.Override
@@ -618,7 +649,7 @@ public final class DungeonInterruptChallengeRspOuterClass {
         return challengeId_;
       }
       /**
-       * <code>uint32 challenge_id = 11;</code>
+       * <code>uint32 challenge_id = 15;</code>
        * @param value The challengeId to set.
        * @return This builder for chaining.
        */
@@ -629,43 +660,12 @@ public final class DungeonInterruptChallengeRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 challenge_id = 11;</code>
+       * <code>uint32 challenge_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearChallengeId() {
         
         challengeId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -738,8 +738,8 @@ public final class DungeonInterruptChallengeRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"DungeonInterruptChallengeRsp.proto\"p\n\034" +
       "DungeonInterruptChallengeRsp\022\020\n\010group_id" +
-      "\030\006 \001(\r\022\027\n\017challenge_index\030\007 \001(\r\022\024\n\014chall" +
-      "enge_id\030\013 \001(\r\022\017\n\007retcode\030\010 \001(\005B\033\n\031emu.gr" +
+      "\030\t \001(\r\022\017\n\007retcode\030\014 \001(\005\022\027\n\017challenge_ind" +
+      "ex\030\001 \001(\r\022\024\n\014challenge_id\030\017 \001(\rB\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -751,7 +751,7 @@ public final class DungeonInterruptChallengeRspOuterClass {
     internal_static_DungeonInterruptChallengeRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DungeonInterruptChallengeRsp_descriptor,
-        new java.lang.String[] { "GroupId", "ChallengeIndex", "ChallengeId", "Retcode", });
+        new java.lang.String[] { "GroupId", "Retcode", "ChallengeIndex", "ChallengeId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

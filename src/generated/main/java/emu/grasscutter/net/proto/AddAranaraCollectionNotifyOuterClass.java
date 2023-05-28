@@ -19,43 +19,43 @@ public final class AddAranaraCollectionNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 collection_type = 2;</code>
+     * <code>.AranaraCollectionState GOLJHHICAGJ = 7;</code>
+     * @return The enum numeric value on the wire for gOLJHHICAGJ.
+     */
+    int getGOLJHHICAGJValue();
+    /**
+     * <code>.AranaraCollectionState GOLJHHICAGJ = 7;</code>
+     * @return The gOLJHHICAGJ.
+     */
+    emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState getGOLJHHICAGJ();
+
+    /**
+     * <code>uint32 collection_id = 9;</code>
+     * @return The collectionId.
+     */
+    int getCollectionId();
+
+    /**
+     * <code>uint32 collection_type = 12;</code>
      * @return The collectionType.
      */
     int getCollectionType();
 
     /**
-     * <code>.AranaraCollectionState MENDLEGAOCB = 14;</code>
-     * @return The enum numeric value on the wire for mENDLEGAOCB.
+     * <code>.AranaraCollectionState OMHMCJAFCJH = 4;</code>
+     * @return The enum numeric value on the wire for oMHMCJAFCJH.
      */
-    int getMENDLEGAOCBValue();
+    int getOMHMCJAFCJHValue();
     /**
-     * <code>.AranaraCollectionState MENDLEGAOCB = 14;</code>
-     * @return The mENDLEGAOCB.
+     * <code>.AranaraCollectionState OMHMCJAFCJH = 4;</code>
+     * @return The oMHMCJAFCJH.
      */
-    emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState getMENDLEGAOCB();
-
-    /**
-     * <code>.AranaraCollectionState NJBIEHOJMCO = 5;</code>
-     * @return The enum numeric value on the wire for nJBIEHOJMCO.
-     */
-    int getNJBIEHOJMCOValue();
-    /**
-     * <code>.AranaraCollectionState NJBIEHOJMCO = 5;</code>
-     * @return The nJBIEHOJMCO.
-     */
-    emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState getNJBIEHOJMCO();
-
-    /**
-     * <code>uint32 collection_id = 15;</code>
-     * @return The collectionId.
-     */
-    int getCollectionId();
+    emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState getOMHMCJAFCJH();
   }
   /**
    * <pre>
-   * Name: OFLAHJBIJCJ
-   * CmdId: 6393
+   * CmdId: 6358
+   * Obf: IPOMAKMJOGD
    * </pre>
    *
    * Protobuf type {@code AddAranaraCollectionNotify}
@@ -70,8 +70,8 @@ public final class AddAranaraCollectionNotifyOuterClass {
       super(builder);
     }
     private AddAranaraCollectionNotify() {
-      mENDLEGAOCB_ = 0;
-      nJBIEHOJMCO_ = 0;
+      gOLJHHICAGJ_ = 0;
+      oMHMCJAFCJH_ = 0;
     }
 
     @java.lang.Override
@@ -104,26 +104,26 @@ public final class AddAranaraCollectionNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              collectionType_ = input.readUInt32();
-              break;
-            }
-            case 40: {
+            case 32: {
               int rawValue = input.readEnum();
 
-              nJBIEHOJMCO_ = rawValue;
+              oMHMCJAFCJH_ = rawValue;
               break;
             }
-            case 112: {
+            case 56: {
               int rawValue = input.readEnum();
 
-              mENDLEGAOCB_ = rawValue;
+              gOLJHHICAGJ_ = rawValue;
               break;
             }
-            case 120: {
+            case 72: {
 
               collectionId_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              collectionType_ = input.readUInt32();
               break;
             }
             default: {
@@ -158,10 +158,40 @@ public final class AddAranaraCollectionNotifyOuterClass {
               emu.grasscutter.net.proto.AddAranaraCollectionNotifyOuterClass.AddAranaraCollectionNotify.class, emu.grasscutter.net.proto.AddAranaraCollectionNotifyOuterClass.AddAranaraCollectionNotify.Builder.class);
     }
 
-    public static final int COLLECTION_TYPE_FIELD_NUMBER = 2;
+    public static final int GOLJHHICAGJ_FIELD_NUMBER = 7;
+    private int gOLJHHICAGJ_;
+    /**
+     * <code>.AranaraCollectionState GOLJHHICAGJ = 7;</code>
+     * @return The enum numeric value on the wire for gOLJHHICAGJ.
+     */
+    @java.lang.Override public int getGOLJHHICAGJValue() {
+      return gOLJHHICAGJ_;
+    }
+    /**
+     * <code>.AranaraCollectionState GOLJHHICAGJ = 7;</code>
+     * @return The gOLJHHICAGJ.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState getGOLJHHICAGJ() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState result = emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState.valueOf(gOLJHHICAGJ_);
+      return result == null ? emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState.UNRECOGNIZED : result;
+    }
+
+    public static final int COLLECTION_ID_FIELD_NUMBER = 9;
+    private int collectionId_;
+    /**
+     * <code>uint32 collection_id = 9;</code>
+     * @return The collectionId.
+     */
+    @java.lang.Override
+    public int getCollectionId() {
+      return collectionId_;
+    }
+
+    public static final int COLLECTION_TYPE_FIELD_NUMBER = 12;
     private int collectionType_;
     /**
-     * <code>uint32 collection_type = 2;</code>
+     * <code>uint32 collection_type = 12;</code>
      * @return The collectionType.
      */
     @java.lang.Override
@@ -169,53 +199,23 @@ public final class AddAranaraCollectionNotifyOuterClass {
       return collectionType_;
     }
 
-    public static final int MENDLEGAOCB_FIELD_NUMBER = 14;
-    private int mENDLEGAOCB_;
+    public static final int OMHMCJAFCJH_FIELD_NUMBER = 4;
+    private int oMHMCJAFCJH_;
     /**
-     * <code>.AranaraCollectionState MENDLEGAOCB = 14;</code>
-     * @return The enum numeric value on the wire for mENDLEGAOCB.
+     * <code>.AranaraCollectionState OMHMCJAFCJH = 4;</code>
+     * @return The enum numeric value on the wire for oMHMCJAFCJH.
      */
-    @java.lang.Override public int getMENDLEGAOCBValue() {
-      return mENDLEGAOCB_;
+    @java.lang.Override public int getOMHMCJAFCJHValue() {
+      return oMHMCJAFCJH_;
     }
     /**
-     * <code>.AranaraCollectionState MENDLEGAOCB = 14;</code>
-     * @return The mENDLEGAOCB.
+     * <code>.AranaraCollectionState OMHMCJAFCJH = 4;</code>
+     * @return The oMHMCJAFCJH.
      */
-    @java.lang.Override public emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState getMENDLEGAOCB() {
+    @java.lang.Override public emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState getOMHMCJAFCJH() {
       @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState result = emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState.valueOf(mENDLEGAOCB_);
+      emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState result = emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState.valueOf(oMHMCJAFCJH_);
       return result == null ? emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState.UNRECOGNIZED : result;
-    }
-
-    public static final int NJBIEHOJMCO_FIELD_NUMBER = 5;
-    private int nJBIEHOJMCO_;
-    /**
-     * <code>.AranaraCollectionState NJBIEHOJMCO = 5;</code>
-     * @return The enum numeric value on the wire for nJBIEHOJMCO.
-     */
-    @java.lang.Override public int getNJBIEHOJMCOValue() {
-      return nJBIEHOJMCO_;
-    }
-    /**
-     * <code>.AranaraCollectionState NJBIEHOJMCO = 5;</code>
-     * @return The nJBIEHOJMCO.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState getNJBIEHOJMCO() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState result = emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState.valueOf(nJBIEHOJMCO_);
-      return result == null ? emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState.UNRECOGNIZED : result;
-    }
-
-    public static final int COLLECTION_ID_FIELD_NUMBER = 15;
-    private int collectionId_;
-    /**
-     * <code>uint32 collection_id = 15;</code>
-     * @return The collectionId.
-     */
-    @java.lang.Override
-    public int getCollectionId() {
-      return collectionId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -232,17 +232,17 @@ public final class AddAranaraCollectionNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (collectionType_ != 0) {
-        output.writeUInt32(2, collectionType_);
+      if (oMHMCJAFCJH_ != emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState.ARANARA_COLLECTION_STATE_NONE.getNumber()) {
+        output.writeEnum(4, oMHMCJAFCJH_);
       }
-      if (nJBIEHOJMCO_ != emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState.ARANARA_COLLECTION_STATE_NONE.getNumber()) {
-        output.writeEnum(5, nJBIEHOJMCO_);
-      }
-      if (mENDLEGAOCB_ != emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState.ARANARA_COLLECTION_STATE_NONE.getNumber()) {
-        output.writeEnum(14, mENDLEGAOCB_);
+      if (gOLJHHICAGJ_ != emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState.ARANARA_COLLECTION_STATE_NONE.getNumber()) {
+        output.writeEnum(7, gOLJHHICAGJ_);
       }
       if (collectionId_ != 0) {
-        output.writeUInt32(15, collectionId_);
+        output.writeUInt32(9, collectionId_);
+      }
+      if (collectionType_ != 0) {
+        output.writeUInt32(12, collectionType_);
       }
       unknownFields.writeTo(output);
     }
@@ -253,21 +253,21 @@ public final class AddAranaraCollectionNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (collectionType_ != 0) {
+      if (oMHMCJAFCJH_ != emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState.ARANARA_COLLECTION_STATE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, collectionType_);
+          .computeEnumSize(4, oMHMCJAFCJH_);
       }
-      if (nJBIEHOJMCO_ != emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState.ARANARA_COLLECTION_STATE_NONE.getNumber()) {
+      if (gOLJHHICAGJ_ != emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState.ARANARA_COLLECTION_STATE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(5, nJBIEHOJMCO_);
-      }
-      if (mENDLEGAOCB_ != emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState.ARANARA_COLLECTION_STATE_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(14, mENDLEGAOCB_);
+          .computeEnumSize(7, gOLJHHICAGJ_);
       }
       if (collectionId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, collectionId_);
+          .computeUInt32Size(9, collectionId_);
+      }
+      if (collectionType_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, collectionType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -284,12 +284,12 @@ public final class AddAranaraCollectionNotifyOuterClass {
       }
       emu.grasscutter.net.proto.AddAranaraCollectionNotifyOuterClass.AddAranaraCollectionNotify other = (emu.grasscutter.net.proto.AddAranaraCollectionNotifyOuterClass.AddAranaraCollectionNotify) obj;
 
-      if (getCollectionType()
-          != other.getCollectionType()) return false;
-      if (mENDLEGAOCB_ != other.mENDLEGAOCB_) return false;
-      if (nJBIEHOJMCO_ != other.nJBIEHOJMCO_) return false;
+      if (gOLJHHICAGJ_ != other.gOLJHHICAGJ_) return false;
       if (getCollectionId()
           != other.getCollectionId()) return false;
+      if (getCollectionType()
+          != other.getCollectionType()) return false;
+      if (oMHMCJAFCJH_ != other.oMHMCJAFCJH_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -301,14 +301,14 @@ public final class AddAranaraCollectionNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + COLLECTION_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getCollectionType();
-      hash = (37 * hash) + MENDLEGAOCB_FIELD_NUMBER;
-      hash = (53 * hash) + mENDLEGAOCB_;
-      hash = (37 * hash) + NJBIEHOJMCO_FIELD_NUMBER;
-      hash = (53 * hash) + nJBIEHOJMCO_;
+      hash = (37 * hash) + GOLJHHICAGJ_FIELD_NUMBER;
+      hash = (53 * hash) + gOLJHHICAGJ_;
       hash = (37 * hash) + COLLECTION_ID_FIELD_NUMBER;
       hash = (53 * hash) + getCollectionId();
+      hash = (37 * hash) + COLLECTION_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getCollectionType();
+      hash = (37 * hash) + OMHMCJAFCJH_FIELD_NUMBER;
+      hash = (53 * hash) + oMHMCJAFCJH_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -406,8 +406,8 @@ public final class AddAranaraCollectionNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: OFLAHJBIJCJ
-     * CmdId: 6393
+     * CmdId: 6358
+     * Obf: IPOMAKMJOGD
      * </pre>
      *
      * Protobuf type {@code AddAranaraCollectionNotify}
@@ -447,13 +447,13 @@ public final class AddAranaraCollectionNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        collectionType_ = 0;
-
-        mENDLEGAOCB_ = 0;
-
-        nJBIEHOJMCO_ = 0;
+        gOLJHHICAGJ_ = 0;
 
         collectionId_ = 0;
+
+        collectionType_ = 0;
+
+        oMHMCJAFCJH_ = 0;
 
         return this;
       }
@@ -481,10 +481,10 @@ public final class AddAranaraCollectionNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AddAranaraCollectionNotifyOuterClass.AddAranaraCollectionNotify buildPartial() {
         emu.grasscutter.net.proto.AddAranaraCollectionNotifyOuterClass.AddAranaraCollectionNotify result = new emu.grasscutter.net.proto.AddAranaraCollectionNotifyOuterClass.AddAranaraCollectionNotify(this);
-        result.collectionType_ = collectionType_;
-        result.mENDLEGAOCB_ = mENDLEGAOCB_;
-        result.nJBIEHOJMCO_ = nJBIEHOJMCO_;
+        result.gOLJHHICAGJ_ = gOLJHHICAGJ_;
         result.collectionId_ = collectionId_;
+        result.collectionType_ = collectionType_;
+        result.oMHMCJAFCJH_ = oMHMCJAFCJH_;
         onBuilt();
         return result;
       }
@@ -533,17 +533,17 @@ public final class AddAranaraCollectionNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AddAranaraCollectionNotifyOuterClass.AddAranaraCollectionNotify other) {
         if (other == emu.grasscutter.net.proto.AddAranaraCollectionNotifyOuterClass.AddAranaraCollectionNotify.getDefaultInstance()) return this;
-        if (other.getCollectionType() != 0) {
-          setCollectionType(other.getCollectionType());
-        }
-        if (other.mENDLEGAOCB_ != 0) {
-          setMENDLEGAOCBValue(other.getMENDLEGAOCBValue());
-        }
-        if (other.nJBIEHOJMCO_ != 0) {
-          setNJBIEHOJMCOValue(other.getNJBIEHOJMCOValue());
+        if (other.gOLJHHICAGJ_ != 0) {
+          setGOLJHHICAGJValue(other.getGOLJHHICAGJValue());
         }
         if (other.getCollectionId() != 0) {
           setCollectionId(other.getCollectionId());
+        }
+        if (other.getCollectionType() != 0) {
+          setCollectionType(other.getCollectionType());
+        }
+        if (other.oMHMCJAFCJH_ != 0) {
+          setOMHMCJAFCJHValue(other.getOMHMCJAFCJHValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -574,148 +574,63 @@ public final class AddAranaraCollectionNotifyOuterClass {
         return this;
       }
 
-      private int collectionType_ ;
+      private int gOLJHHICAGJ_ = 0;
       /**
-       * <code>uint32 collection_type = 2;</code>
-       * @return The collectionType.
+       * <code>.AranaraCollectionState GOLJHHICAGJ = 7;</code>
+       * @return The enum numeric value on the wire for gOLJHHICAGJ.
+       */
+      @java.lang.Override public int getGOLJHHICAGJValue() {
+        return gOLJHHICAGJ_;
+      }
+      /**
+       * <code>.AranaraCollectionState GOLJHHICAGJ = 7;</code>
+       * @param value The enum numeric value on the wire for gOLJHHICAGJ to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGOLJHHICAGJValue(int value) {
+        
+        gOLJHHICAGJ_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.AranaraCollectionState GOLJHHICAGJ = 7;</code>
+       * @return The gOLJHHICAGJ.
        */
       @java.lang.Override
-      public int getCollectionType() {
-        return collectionType_;
-      }
-      /**
-       * <code>uint32 collection_type = 2;</code>
-       * @param value The collectionType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCollectionType(int value) {
-        
-        collectionType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 collection_type = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCollectionType() {
-        
-        collectionType_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int mENDLEGAOCB_ = 0;
-      /**
-       * <code>.AranaraCollectionState MENDLEGAOCB = 14;</code>
-       * @return The enum numeric value on the wire for mENDLEGAOCB.
-       */
-      @java.lang.Override public int getMENDLEGAOCBValue() {
-        return mENDLEGAOCB_;
-      }
-      /**
-       * <code>.AranaraCollectionState MENDLEGAOCB = 14;</code>
-       * @param value The enum numeric value on the wire for mENDLEGAOCB to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMENDLEGAOCBValue(int value) {
-        
-        mENDLEGAOCB_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.AranaraCollectionState MENDLEGAOCB = 14;</code>
-       * @return The mENDLEGAOCB.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState getMENDLEGAOCB() {
+      public emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState getGOLJHHICAGJ() {
         @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState result = emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState.valueOf(mENDLEGAOCB_);
+        emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState result = emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState.valueOf(gOLJHHICAGJ_);
         return result == null ? emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState.UNRECOGNIZED : result;
       }
       /**
-       * <code>.AranaraCollectionState MENDLEGAOCB = 14;</code>
-       * @param value The mENDLEGAOCB to set.
+       * <code>.AranaraCollectionState GOLJHHICAGJ = 7;</code>
+       * @param value The gOLJHHICAGJ to set.
        * @return This builder for chaining.
        */
-      public Builder setMENDLEGAOCB(emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState value) {
+      public Builder setGOLJHHICAGJ(emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState value) {
         if (value == null) {
           throw new NullPointerException();
         }
         
-        mENDLEGAOCB_ = value.getNumber();
+        gOLJHHICAGJ_ = value.getNumber();
         onChanged();
         return this;
       }
       /**
-       * <code>.AranaraCollectionState MENDLEGAOCB = 14;</code>
+       * <code>.AranaraCollectionState GOLJHHICAGJ = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMENDLEGAOCB() {
+      public Builder clearGOLJHHICAGJ() {
         
-        mENDLEGAOCB_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int nJBIEHOJMCO_ = 0;
-      /**
-       * <code>.AranaraCollectionState NJBIEHOJMCO = 5;</code>
-       * @return The enum numeric value on the wire for nJBIEHOJMCO.
-       */
-      @java.lang.Override public int getNJBIEHOJMCOValue() {
-        return nJBIEHOJMCO_;
-      }
-      /**
-       * <code>.AranaraCollectionState NJBIEHOJMCO = 5;</code>
-       * @param value The enum numeric value on the wire for nJBIEHOJMCO to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNJBIEHOJMCOValue(int value) {
-        
-        nJBIEHOJMCO_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.AranaraCollectionState NJBIEHOJMCO = 5;</code>
-       * @return The nJBIEHOJMCO.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState getNJBIEHOJMCO() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState result = emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState.valueOf(nJBIEHOJMCO_);
-        return result == null ? emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.AranaraCollectionState NJBIEHOJMCO = 5;</code>
-       * @param value The nJBIEHOJMCO to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNJBIEHOJMCO(emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        nJBIEHOJMCO_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.AranaraCollectionState NJBIEHOJMCO = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearNJBIEHOJMCO() {
-        
-        nJBIEHOJMCO_ = 0;
+        gOLJHHICAGJ_ = 0;
         onChanged();
         return this;
       }
 
       private int collectionId_ ;
       /**
-       * <code>uint32 collection_id = 15;</code>
+       * <code>uint32 collection_id = 9;</code>
        * @return The collectionId.
        */
       @java.lang.Override
@@ -723,7 +638,7 @@ public final class AddAranaraCollectionNotifyOuterClass {
         return collectionId_;
       }
       /**
-       * <code>uint32 collection_id = 15;</code>
+       * <code>uint32 collection_id = 9;</code>
        * @param value The collectionId to set.
        * @return This builder for chaining.
        */
@@ -734,12 +649,97 @@ public final class AddAranaraCollectionNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 collection_id = 15;</code>
+       * <code>uint32 collection_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearCollectionId() {
         
         collectionId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int collectionType_ ;
+      /**
+       * <code>uint32 collection_type = 12;</code>
+       * @return The collectionType.
+       */
+      @java.lang.Override
+      public int getCollectionType() {
+        return collectionType_;
+      }
+      /**
+       * <code>uint32 collection_type = 12;</code>
+       * @param value The collectionType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCollectionType(int value) {
+        
+        collectionType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 collection_type = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCollectionType() {
+        
+        collectionType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int oMHMCJAFCJH_ = 0;
+      /**
+       * <code>.AranaraCollectionState OMHMCJAFCJH = 4;</code>
+       * @return The enum numeric value on the wire for oMHMCJAFCJH.
+       */
+      @java.lang.Override public int getOMHMCJAFCJHValue() {
+        return oMHMCJAFCJH_;
+      }
+      /**
+       * <code>.AranaraCollectionState OMHMCJAFCJH = 4;</code>
+       * @param value The enum numeric value on the wire for oMHMCJAFCJH to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOMHMCJAFCJHValue(int value) {
+        
+        oMHMCJAFCJH_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.AranaraCollectionState OMHMCJAFCJH = 4;</code>
+       * @return The oMHMCJAFCJH.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState getOMHMCJAFCJH() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState result = emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState.valueOf(oMHMCJAFCJH_);
+        return result == null ? emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.AranaraCollectionState OMHMCJAFCJH = 4;</code>
+       * @param value The oMHMCJAFCJH to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOMHMCJAFCJH(emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.AranaraCollectionState value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        oMHMCJAFCJH_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.AranaraCollectionState OMHMCJAFCJH = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOMHMCJAFCJH() {
+        
+        oMHMCJAFCJH_ = 0;
         onChanged();
         return this;
       }
@@ -812,10 +812,10 @@ public final class AddAranaraCollectionNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n AddAranaraCollectionNotify.proto\032\034Aran" +
       "araCollectionState.proto\"\250\001\n\032AddAranaraC" +
-      "ollectionNotify\022\027\n\017collection_type\030\002 \001(\r" +
-      "\022,\n\013MENDLEGAOCB\030\016 \001(\0162\027.AranaraCollectio" +
-      "nState\022,\n\013NJBIEHOJMCO\030\005 \001(\0162\027.AranaraCol" +
-      "lectionState\022\025\n\rcollection_id\030\017 \001(\rB\033\n\031e" +
+      "ollectionNotify\022,\n\013GOLJHHICAGJ\030\007 \001(\0162\027.A" +
+      "ranaraCollectionState\022\025\n\rcollection_id\030\t" +
+      " \001(\r\022\027\n\017collection_type\030\014 \001(\r\022,\n\013OMHMCJA" +
+      "FCJH\030\004 \001(\0162\027.AranaraCollectionStateB\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -828,7 +828,7 @@ public final class AddAranaraCollectionNotifyOuterClass {
     internal_static_AddAranaraCollectionNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AddAranaraCollectionNotify_descriptor,
-        new java.lang.String[] { "CollectionType", "MENDLEGAOCB", "NJBIEHOJMCO", "CollectionId", });
+        new java.lang.String[] { "GOLJHHICAGJ", "CollectionId", "CollectionType", "OMHMCJAFCJH", });
     emu.grasscutter.net.proto.AranaraCollectionStateOuterClass.getDescriptor();
   }
 

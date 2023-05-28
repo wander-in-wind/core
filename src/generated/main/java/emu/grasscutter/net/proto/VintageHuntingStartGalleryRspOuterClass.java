@@ -19,15 +19,15 @@ public final class VintageHuntingStartGalleryRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 12;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * Name: LJAAJOAMJNB
-   * CmdId: 24920
+   * CmdId: 20075
+   * Obf: IJNJCMHHFEL
    * </pre>
    *
    * Protobuf type {@code VintageHuntingStartGalleryRsp}
@@ -74,7 +74,7 @@ public final class VintageHuntingStartGalleryRspOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 96: {
 
               retcode_ = input.readInt32();
               break;
@@ -111,10 +111,10 @@ public final class VintageHuntingStartGalleryRspOuterClass {
               emu.grasscutter.net.proto.VintageHuntingStartGalleryRspOuterClass.VintageHuntingStartGalleryRsp.class, emu.grasscutter.net.proto.VintageHuntingStartGalleryRspOuterClass.VintageHuntingStartGalleryRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 9;
+    public static final int RETCODE_FIELD_NUMBER = 12;
     private int retcode_;
     /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 12;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class VintageHuntingStartGalleryRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(9, retcode_);
+        output.writeInt32(12, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class VintageHuntingStartGalleryRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, retcode_);
+          .computeInt32Size(12, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class VintageHuntingStartGalleryRspOuterClass {
     }
     /**
      * <pre>
-     * Name: LJAAJOAMJNB
-     * CmdId: 24920
+     * CmdId: 20075
+     * Obf: IJNJCMHHFEL
      * </pre>
      *
      * Protobuf type {@code VintageHuntingStartGalleryRsp}
@@ -431,7 +431,7 @@ public final class VintageHuntingStartGalleryRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 12;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class VintageHuntingStartGalleryRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 12;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class VintageHuntingStartGalleryRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -528,7 +528,7 @@ public final class VintageHuntingStartGalleryRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n#VintageHuntingStartGalleryRsp.proto\"0\n" +
       "\035VintageHuntingStartGalleryRsp\022\017\n\007retcod" +
-      "e\030\t \001(\005B\033\n\031emu.grasscutter.net.protob\006pr" +
+      "e\030\014 \001(\005B\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

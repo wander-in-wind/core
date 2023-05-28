@@ -19,21 +19,21 @@ public final class TakeReunionSignInRewardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 reward_day = 3;</code>
-     * @return The rewardDay.
-     */
-    int getRewardDay();
-
-    /**
-     * <code>uint32 config_id = 14;</code>
+     * <code>uint32 config_id = 1;</code>
      * @return The configId.
      */
     int getConfigId();
+
+    /**
+     * <code>uint32 reward_day = 12;</code>
+     * @return The rewardDay.
+     */
+    int getRewardDay();
   }
   /**
    * <pre>
-   * Name: NKMADPICAMJ
-   * CmdId: 5094
+   * CmdId: 5075
+   * Obf: CDPLNEJLJHH
    * </pre>
    *
    * Protobuf type {@code TakeReunionSignInRewardReq}
@@ -80,14 +80,14 @@ public final class TakeReunionSignInRewardReqOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              rewardDay_ = input.readUInt32();
-              break;
-            }
-            case 112: {
+            case 8: {
 
               configId_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              rewardDay_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,26 +122,26 @@ public final class TakeReunionSignInRewardReqOuterClass {
               emu.grasscutter.net.proto.TakeReunionSignInRewardReqOuterClass.TakeReunionSignInRewardReq.class, emu.grasscutter.net.proto.TakeReunionSignInRewardReqOuterClass.TakeReunionSignInRewardReq.Builder.class);
     }
 
-    public static final int REWARD_DAY_FIELD_NUMBER = 3;
-    private int rewardDay_;
-    /**
-     * <code>uint32 reward_day = 3;</code>
-     * @return The rewardDay.
-     */
-    @java.lang.Override
-    public int getRewardDay() {
-      return rewardDay_;
-    }
-
-    public static final int CONFIG_ID_FIELD_NUMBER = 14;
+    public static final int CONFIG_ID_FIELD_NUMBER = 1;
     private int configId_;
     /**
-     * <code>uint32 config_id = 14;</code>
+     * <code>uint32 config_id = 1;</code>
      * @return The configId.
      */
     @java.lang.Override
     public int getConfigId() {
       return configId_;
+    }
+
+    public static final int REWARD_DAY_FIELD_NUMBER = 12;
+    private int rewardDay_;
+    /**
+     * <code>uint32 reward_day = 12;</code>
+     * @return The rewardDay.
+     */
+    @java.lang.Override
+    public int getRewardDay() {
+      return rewardDay_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -158,11 +158,11 @@ public final class TakeReunionSignInRewardReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (rewardDay_ != 0) {
-        output.writeUInt32(3, rewardDay_);
-      }
       if (configId_ != 0) {
-        output.writeUInt32(14, configId_);
+        output.writeUInt32(1, configId_);
+      }
+      if (rewardDay_ != 0) {
+        output.writeUInt32(12, rewardDay_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class TakeReunionSignInRewardReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (rewardDay_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, rewardDay_);
-      }
       if (configId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, configId_);
+          .computeUInt32Size(1, configId_);
+      }
+      if (rewardDay_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, rewardDay_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +196,10 @@ public final class TakeReunionSignInRewardReqOuterClass {
       }
       emu.grasscutter.net.proto.TakeReunionSignInRewardReqOuterClass.TakeReunionSignInRewardReq other = (emu.grasscutter.net.proto.TakeReunionSignInRewardReqOuterClass.TakeReunionSignInRewardReq) obj;
 
-      if (getRewardDay()
-          != other.getRewardDay()) return false;
       if (getConfigId()
           != other.getConfigId()) return false;
+      if (getRewardDay()
+          != other.getRewardDay()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +211,10 @@ public final class TakeReunionSignInRewardReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + REWARD_DAY_FIELD_NUMBER;
-      hash = (53 * hash) + getRewardDay();
       hash = (37 * hash) + CONFIG_ID_FIELD_NUMBER;
       hash = (53 * hash) + getConfigId();
+      hash = (37 * hash) + REWARD_DAY_FIELD_NUMBER;
+      hash = (53 * hash) + getRewardDay();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +312,8 @@ public final class TakeReunionSignInRewardReqOuterClass {
     }
     /**
      * <pre>
-     * Name: NKMADPICAMJ
-     * CmdId: 5094
+     * CmdId: 5075
+     * Obf: CDPLNEJLJHH
      * </pre>
      *
      * Protobuf type {@code TakeReunionSignInRewardReq}
@@ -353,9 +353,9 @@ public final class TakeReunionSignInRewardReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        rewardDay_ = 0;
-
         configId_ = 0;
+
+        rewardDay_ = 0;
 
         return this;
       }
@@ -383,8 +383,8 @@ public final class TakeReunionSignInRewardReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.TakeReunionSignInRewardReqOuterClass.TakeReunionSignInRewardReq buildPartial() {
         emu.grasscutter.net.proto.TakeReunionSignInRewardReqOuterClass.TakeReunionSignInRewardReq result = new emu.grasscutter.net.proto.TakeReunionSignInRewardReqOuterClass.TakeReunionSignInRewardReq(this);
-        result.rewardDay_ = rewardDay_;
         result.configId_ = configId_;
+        result.rewardDay_ = rewardDay_;
         onBuilt();
         return result;
       }
@@ -433,11 +433,11 @@ public final class TakeReunionSignInRewardReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.TakeReunionSignInRewardReqOuterClass.TakeReunionSignInRewardReq other) {
         if (other == emu.grasscutter.net.proto.TakeReunionSignInRewardReqOuterClass.TakeReunionSignInRewardReq.getDefaultInstance()) return this;
-        if (other.getRewardDay() != 0) {
-          setRewardDay(other.getRewardDay());
-        }
         if (other.getConfigId() != 0) {
           setConfigId(other.getConfigId());
+        }
+        if (other.getRewardDay() != 0) {
+          setRewardDay(other.getRewardDay());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,40 +468,9 @@ public final class TakeReunionSignInRewardReqOuterClass {
         return this;
       }
 
-      private int rewardDay_ ;
-      /**
-       * <code>uint32 reward_day = 3;</code>
-       * @return The rewardDay.
-       */
-      @java.lang.Override
-      public int getRewardDay() {
-        return rewardDay_;
-      }
-      /**
-       * <code>uint32 reward_day = 3;</code>
-       * @param value The rewardDay to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRewardDay(int value) {
-        
-        rewardDay_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 reward_day = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRewardDay() {
-        
-        rewardDay_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int configId_ ;
       /**
-       * <code>uint32 config_id = 14;</code>
+       * <code>uint32 config_id = 1;</code>
        * @return The configId.
        */
       @java.lang.Override
@@ -509,7 +478,7 @@ public final class TakeReunionSignInRewardReqOuterClass {
         return configId_;
       }
       /**
-       * <code>uint32 config_id = 14;</code>
+       * <code>uint32 config_id = 1;</code>
        * @param value The configId to set.
        * @return This builder for chaining.
        */
@@ -520,12 +489,43 @@ public final class TakeReunionSignInRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 config_id = 14;</code>
+       * <code>uint32 config_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearConfigId() {
         
         configId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int rewardDay_ ;
+      /**
+       * <code>uint32 reward_day = 12;</code>
+       * @return The rewardDay.
+       */
+      @java.lang.Override
+      public int getRewardDay() {
+        return rewardDay_;
+      }
+      /**
+       * <code>uint32 reward_day = 12;</code>
+       * @param value The rewardDay to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRewardDay(int value) {
+        
+        rewardDay_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 reward_day = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRewardDay() {
+        
+        rewardDay_ = 0;
         onChanged();
         return this;
       }
@@ -597,8 +597,8 @@ public final class TakeReunionSignInRewardReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n TakeReunionSignInRewardReq.proto\"C\n\032Ta" +
-      "keReunionSignInRewardReq\022\022\n\nreward_day\030\003" +
-      " \001(\r\022\021\n\tconfig_id\030\016 \001(\rB\033\n\031emu.grasscutt" +
+      "keReunionSignInRewardReq\022\021\n\tconfig_id\030\001 " +
+      "\001(\r\022\022\n\nreward_day\030\014 \001(\rB\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -610,7 +610,7 @@ public final class TakeReunionSignInRewardReqOuterClass {
     internal_static_TakeReunionSignInRewardReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TakeReunionSignInRewardReq_descriptor,
-        new java.lang.String[] { "RewardDay", "ConfigId", });
+        new java.lang.String[] { "ConfigId", "RewardDay", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

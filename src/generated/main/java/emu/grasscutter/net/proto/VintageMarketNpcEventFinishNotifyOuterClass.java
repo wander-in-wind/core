@@ -19,38 +19,38 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 ENDHNCGMOEK = 8;</code>
-     * @return The eNDHNCGMOEK.
+     * <code>uint32 LGCEBJNOBAM = 13;</code>
+     * @return The lGCEBJNOBAM.
      */
-    int getENDHNCGMOEK();
+    int getLGCEBJNOBAM();
 
     /**
-     * <code>uint32 EGDOECANIOK = 6;</code>
-     * @return The eGDOECANIOK.
-     */
-    int getEGDOECANIOK();
-
-    /**
-     * <code>repeated uint32 unlock_strategy_list = 12;</code>
+     * <code>repeated uint32 unlock_strategy_list = 10;</code>
      * @return A list containing the unlockStrategyList.
      */
     java.util.List<java.lang.Integer> getUnlockStrategyListList();
     /**
-     * <code>repeated uint32 unlock_strategy_list = 12;</code>
+     * <code>repeated uint32 unlock_strategy_list = 10;</code>
      * @return The count of unlockStrategyList.
      */
     int getUnlockStrategyListCount();
     /**
-     * <code>repeated uint32 unlock_strategy_list = 12;</code>
+     * <code>repeated uint32 unlock_strategy_list = 10;</code>
      * @param index The index of the element to return.
      * @return The unlockStrategyList at the given index.
      */
     int getUnlockStrategyList(int index);
+
+    /**
+     * <code>uint32 LJIOMIABKJC = 4;</code>
+     * @return The lJIOMIABKJC.
+     */
+    int getLJIOMIABKJC();
   }
   /**
    * <pre>
-   * Name: EEFPKEOALJB
-   * CmdId: 21131
+   * CmdId: 24968
+   * Obf: ELIGGGIBOGD
    * </pre>
    *
    * Protobuf type {@code VintageMarketNpcEventFinishNotify}
@@ -99,17 +99,12 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 32: {
 
-              eGDOECANIOK_ = input.readUInt32();
+              lJIOMIABKJC_ = input.readUInt32();
               break;
             }
-            case 64: {
-
-              eNDHNCGMOEK_ = input.readUInt32();
-              break;
-            }
-            case 96: {
+            case 80: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 unlockStrategyList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -117,7 +112,7 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
               unlockStrategyList_.addInt(input.readUInt32());
               break;
             }
-            case 98: {
+            case 82: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -128,6 +123,11 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
                 unlockStrategyList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
+              break;
+            }
+            case 104: {
+
+              lGCEBJNOBAM_ = input.readUInt32();
               break;
             }
             default: {
@@ -165,32 +165,21 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
               emu.grasscutter.net.proto.VintageMarketNpcEventFinishNotifyOuterClass.VintageMarketNpcEventFinishNotify.class, emu.grasscutter.net.proto.VintageMarketNpcEventFinishNotifyOuterClass.VintageMarketNpcEventFinishNotify.Builder.class);
     }
 
-    public static final int ENDHNCGMOEK_FIELD_NUMBER = 8;
-    private int eNDHNCGMOEK_;
+    public static final int LGCEBJNOBAM_FIELD_NUMBER = 13;
+    private int lGCEBJNOBAM_;
     /**
-     * <code>uint32 ENDHNCGMOEK = 8;</code>
-     * @return The eNDHNCGMOEK.
+     * <code>uint32 LGCEBJNOBAM = 13;</code>
+     * @return The lGCEBJNOBAM.
      */
     @java.lang.Override
-    public int getENDHNCGMOEK() {
-      return eNDHNCGMOEK_;
+    public int getLGCEBJNOBAM() {
+      return lGCEBJNOBAM_;
     }
 
-    public static final int EGDOECANIOK_FIELD_NUMBER = 6;
-    private int eGDOECANIOK_;
-    /**
-     * <code>uint32 EGDOECANIOK = 6;</code>
-     * @return The eGDOECANIOK.
-     */
-    @java.lang.Override
-    public int getEGDOECANIOK() {
-      return eGDOECANIOK_;
-    }
-
-    public static final int UNLOCK_STRATEGY_LIST_FIELD_NUMBER = 12;
+    public static final int UNLOCK_STRATEGY_LIST_FIELD_NUMBER = 10;
     private com.google.protobuf.Internal.IntList unlockStrategyList_;
     /**
-     * <code>repeated uint32 unlock_strategy_list = 12;</code>
+     * <code>repeated uint32 unlock_strategy_list = 10;</code>
      * @return A list containing the unlockStrategyList.
      */
     @java.lang.Override
@@ -199,14 +188,14 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
       return unlockStrategyList_;
     }
     /**
-     * <code>repeated uint32 unlock_strategy_list = 12;</code>
+     * <code>repeated uint32 unlock_strategy_list = 10;</code>
      * @return The count of unlockStrategyList.
      */
     public int getUnlockStrategyListCount() {
       return unlockStrategyList_.size();
     }
     /**
-     * <code>repeated uint32 unlock_strategy_list = 12;</code>
+     * <code>repeated uint32 unlock_strategy_list = 10;</code>
      * @param index The index of the element to return.
      * @return The unlockStrategyList at the given index.
      */
@@ -214,6 +203,17 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
       return unlockStrategyList_.getInt(index);
     }
     private int unlockStrategyListMemoizedSerializedSize = -1;
+
+    public static final int LJIOMIABKJC_FIELD_NUMBER = 4;
+    private int lJIOMIABKJC_;
+    /**
+     * <code>uint32 LJIOMIABKJC = 4;</code>
+     * @return The lJIOMIABKJC.
+     */
+    @java.lang.Override
+    public int getLJIOMIABKJC() {
+      return lJIOMIABKJC_;
+    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -230,18 +230,18 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (eGDOECANIOK_ != 0) {
-        output.writeUInt32(6, eGDOECANIOK_);
-      }
-      if (eNDHNCGMOEK_ != 0) {
-        output.writeUInt32(8, eNDHNCGMOEK_);
+      if (lJIOMIABKJC_ != 0) {
+        output.writeUInt32(4, lJIOMIABKJC_);
       }
       if (getUnlockStrategyListList().size() > 0) {
-        output.writeUInt32NoTag(98);
+        output.writeUInt32NoTag(82);
         output.writeUInt32NoTag(unlockStrategyListMemoizedSerializedSize);
       }
       for (int i = 0; i < unlockStrategyList_.size(); i++) {
         output.writeUInt32NoTag(unlockStrategyList_.getInt(i));
+      }
+      if (lGCEBJNOBAM_ != 0) {
+        output.writeUInt32(13, lGCEBJNOBAM_);
       }
       unknownFields.writeTo(output);
     }
@@ -252,13 +252,9 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (eGDOECANIOK_ != 0) {
+      if (lJIOMIABKJC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, eGDOECANIOK_);
-      }
-      if (eNDHNCGMOEK_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, eNDHNCGMOEK_);
+          .computeUInt32Size(4, lJIOMIABKJC_);
       }
       {
         int dataSize = 0;
@@ -273,6 +269,10 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         unlockStrategyListMemoizedSerializedSize = dataSize;
+      }
+      if (lGCEBJNOBAM_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, lGCEBJNOBAM_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -289,12 +289,12 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
       }
       emu.grasscutter.net.proto.VintageMarketNpcEventFinishNotifyOuterClass.VintageMarketNpcEventFinishNotify other = (emu.grasscutter.net.proto.VintageMarketNpcEventFinishNotifyOuterClass.VintageMarketNpcEventFinishNotify) obj;
 
-      if (getENDHNCGMOEK()
-          != other.getENDHNCGMOEK()) return false;
-      if (getEGDOECANIOK()
-          != other.getEGDOECANIOK()) return false;
+      if (getLGCEBJNOBAM()
+          != other.getLGCEBJNOBAM()) return false;
       if (!getUnlockStrategyListList()
           .equals(other.getUnlockStrategyListList())) return false;
+      if (getLJIOMIABKJC()
+          != other.getLJIOMIABKJC()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -306,14 +306,14 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ENDHNCGMOEK_FIELD_NUMBER;
-      hash = (53 * hash) + getENDHNCGMOEK();
-      hash = (37 * hash) + EGDOECANIOK_FIELD_NUMBER;
-      hash = (53 * hash) + getEGDOECANIOK();
+      hash = (37 * hash) + LGCEBJNOBAM_FIELD_NUMBER;
+      hash = (53 * hash) + getLGCEBJNOBAM();
       if (getUnlockStrategyListCount() > 0) {
         hash = (37 * hash) + UNLOCK_STRATEGY_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getUnlockStrategyListList().hashCode();
       }
+      hash = (37 * hash) + LJIOMIABKJC_FIELD_NUMBER;
+      hash = (53 * hash) + getLJIOMIABKJC();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -411,8 +411,8 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: EEFPKEOALJB
-     * CmdId: 21131
+     * CmdId: 24968
+     * Obf: ELIGGGIBOGD
      * </pre>
      *
      * Protobuf type {@code VintageMarketNpcEventFinishNotify}
@@ -452,12 +452,12 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        eNDHNCGMOEK_ = 0;
-
-        eGDOECANIOK_ = 0;
+        lGCEBJNOBAM_ = 0;
 
         unlockStrategyList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        lJIOMIABKJC_ = 0;
+
         return this;
       }
 
@@ -485,13 +485,13 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
       public emu.grasscutter.net.proto.VintageMarketNpcEventFinishNotifyOuterClass.VintageMarketNpcEventFinishNotify buildPartial() {
         emu.grasscutter.net.proto.VintageMarketNpcEventFinishNotifyOuterClass.VintageMarketNpcEventFinishNotify result = new emu.grasscutter.net.proto.VintageMarketNpcEventFinishNotifyOuterClass.VintageMarketNpcEventFinishNotify(this);
         int from_bitField0_ = bitField0_;
-        result.eNDHNCGMOEK_ = eNDHNCGMOEK_;
-        result.eGDOECANIOK_ = eGDOECANIOK_;
+        result.lGCEBJNOBAM_ = lGCEBJNOBAM_;
         if (((bitField0_ & 0x00000001) != 0)) {
           unlockStrategyList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.unlockStrategyList_ = unlockStrategyList_;
+        result.lJIOMIABKJC_ = lJIOMIABKJC_;
         onBuilt();
         return result;
       }
@@ -540,11 +540,8 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.VintageMarketNpcEventFinishNotifyOuterClass.VintageMarketNpcEventFinishNotify other) {
         if (other == emu.grasscutter.net.proto.VintageMarketNpcEventFinishNotifyOuterClass.VintageMarketNpcEventFinishNotify.getDefaultInstance()) return this;
-        if (other.getENDHNCGMOEK() != 0) {
-          setENDHNCGMOEK(other.getENDHNCGMOEK());
-        }
-        if (other.getEGDOECANIOK() != 0) {
-          setEGDOECANIOK(other.getEGDOECANIOK());
+        if (other.getLGCEBJNOBAM() != 0) {
+          setLGCEBJNOBAM(other.getLGCEBJNOBAM());
         }
         if (!other.unlockStrategyList_.isEmpty()) {
           if (unlockStrategyList_.isEmpty()) {
@@ -555,6 +552,9 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
             unlockStrategyList_.addAll(other.unlockStrategyList_);
           }
           onChanged();
+        }
+        if (other.getLJIOMIABKJC() != 0) {
+          setLJIOMIABKJC(other.getLJIOMIABKJC());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -586,64 +586,33 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
       }
       private int bitField0_;
 
-      private int eNDHNCGMOEK_ ;
+      private int lGCEBJNOBAM_ ;
       /**
-       * <code>uint32 ENDHNCGMOEK = 8;</code>
-       * @return The eNDHNCGMOEK.
+       * <code>uint32 LGCEBJNOBAM = 13;</code>
+       * @return The lGCEBJNOBAM.
        */
       @java.lang.Override
-      public int getENDHNCGMOEK() {
-        return eNDHNCGMOEK_;
+      public int getLGCEBJNOBAM() {
+        return lGCEBJNOBAM_;
       }
       /**
-       * <code>uint32 ENDHNCGMOEK = 8;</code>
-       * @param value The eNDHNCGMOEK to set.
+       * <code>uint32 LGCEBJNOBAM = 13;</code>
+       * @param value The lGCEBJNOBAM to set.
        * @return This builder for chaining.
        */
-      public Builder setENDHNCGMOEK(int value) {
+      public Builder setLGCEBJNOBAM(int value) {
         
-        eNDHNCGMOEK_ = value;
+        lGCEBJNOBAM_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 ENDHNCGMOEK = 8;</code>
+       * <code>uint32 LGCEBJNOBAM = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearENDHNCGMOEK() {
+      public Builder clearLGCEBJNOBAM() {
         
-        eNDHNCGMOEK_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int eGDOECANIOK_ ;
-      /**
-       * <code>uint32 EGDOECANIOK = 6;</code>
-       * @return The eGDOECANIOK.
-       */
-      @java.lang.Override
-      public int getEGDOECANIOK() {
-        return eGDOECANIOK_;
-      }
-      /**
-       * <code>uint32 EGDOECANIOK = 6;</code>
-       * @param value The eGDOECANIOK to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEGDOECANIOK(int value) {
-        
-        eGDOECANIOK_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 EGDOECANIOK = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEGDOECANIOK() {
-        
-        eGDOECANIOK_ = 0;
+        lGCEBJNOBAM_ = 0;
         onChanged();
         return this;
       }
@@ -656,7 +625,7 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 unlock_strategy_list = 12;</code>
+       * <code>repeated uint32 unlock_strategy_list = 10;</code>
        * @return A list containing the unlockStrategyList.
        */
       public java.util.List<java.lang.Integer>
@@ -665,14 +634,14 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
                  java.util.Collections.unmodifiableList(unlockStrategyList_) : unlockStrategyList_;
       }
       /**
-       * <code>repeated uint32 unlock_strategy_list = 12;</code>
+       * <code>repeated uint32 unlock_strategy_list = 10;</code>
        * @return The count of unlockStrategyList.
        */
       public int getUnlockStrategyListCount() {
         return unlockStrategyList_.size();
       }
       /**
-       * <code>repeated uint32 unlock_strategy_list = 12;</code>
+       * <code>repeated uint32 unlock_strategy_list = 10;</code>
        * @param index The index of the element to return.
        * @return The unlockStrategyList at the given index.
        */
@@ -680,7 +649,7 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
         return unlockStrategyList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 unlock_strategy_list = 12;</code>
+       * <code>repeated uint32 unlock_strategy_list = 10;</code>
        * @param index The index to set the value at.
        * @param value The unlockStrategyList to set.
        * @return This builder for chaining.
@@ -693,7 +662,7 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 unlock_strategy_list = 12;</code>
+       * <code>repeated uint32 unlock_strategy_list = 10;</code>
        * @param value The unlockStrategyList to add.
        * @return This builder for chaining.
        */
@@ -704,7 +673,7 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 unlock_strategy_list = 12;</code>
+       * <code>repeated uint32 unlock_strategy_list = 10;</code>
        * @param values The unlockStrategyList to add.
        * @return This builder for chaining.
        */
@@ -717,12 +686,43 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 unlock_strategy_list = 12;</code>
+       * <code>repeated uint32 unlock_strategy_list = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearUnlockStrategyList() {
         unlockStrategyList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private int lJIOMIABKJC_ ;
+      /**
+       * <code>uint32 LJIOMIABKJC = 4;</code>
+       * @return The lJIOMIABKJC.
+       */
+      @java.lang.Override
+      public int getLJIOMIABKJC() {
+        return lJIOMIABKJC_;
+      }
+      /**
+       * <code>uint32 LJIOMIABKJC = 4;</code>
+       * @param value The lJIOMIABKJC to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLJIOMIABKJC(int value) {
+        
+        lJIOMIABKJC_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 LJIOMIABKJC = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLJIOMIABKJC() {
+        
+        lJIOMIABKJC_ = 0;
         onChanged();
         return this;
       }
@@ -795,8 +795,8 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\'VintageMarketNpcEventFinishNotify.prot" +
       "o\"k\n!VintageMarketNpcEventFinishNotify\022\023" +
-      "\n\013ENDHNCGMOEK\030\010 \001(\r\022\023\n\013EGDOECANIOK\030\006 \001(\r" +
-      "\022\034\n\024unlock_strategy_list\030\014 \003(\rB\033\n\031emu.gr" +
+      "\n\013LGCEBJNOBAM\030\r \001(\r\022\034\n\024unlock_strategy_l" +
+      "ist\030\n \003(\r\022\023\n\013LJIOMIABKJC\030\004 \001(\rB\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -808,7 +808,7 @@ public final class VintageMarketNpcEventFinishNotifyOuterClass {
     internal_static_VintageMarketNpcEventFinishNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_VintageMarketNpcEventFinishNotify_descriptor,
-        new java.lang.String[] { "ENDHNCGMOEK", "EGDOECANIOK", "UnlockStrategyList", });
+        new java.lang.String[] { "LGCEBJNOBAM", "UnlockStrategyList", "LJIOMIABKJC", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

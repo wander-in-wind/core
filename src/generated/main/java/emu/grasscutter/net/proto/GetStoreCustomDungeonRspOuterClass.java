@@ -19,39 +19,39 @@ public final class GetStoreCustomDungeonRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 3;</code>
+     * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 10;</code>
      */
     java.util.List<emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief> 
         getCustomDungeonListList();
     /**
-     * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 3;</code>
+     * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 10;</code>
      */
     emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief getCustomDungeonList(int index);
     /**
-     * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 3;</code>
+     * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 10;</code>
      */
     int getCustomDungeonListCount();
     /**
-     * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 3;</code>
+     * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 10;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBriefOrBuilder> 
         getCustomDungeonListOrBuilderList();
     /**
-     * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 3;</code>
+     * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 10;</code>
      */
     emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBriefOrBuilder getCustomDungeonListOrBuilder(
         int index);
 
     /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 14;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * Name: DFLFGBCHEMP
-   * CmdId: 6210
+   * CmdId: 6249
+   * Obf: CILKHMDLLNN
    * </pre>
    *
    * Protobuf type {@code GetStoreCustomDungeonRsp}
@@ -100,7 +100,7 @@ public final class GetStoreCustomDungeonRspOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
+            case 82: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 customDungeonList_ = new java.util.ArrayList<emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief>();
                 mutable_bitField0_ |= 0x00000001;
@@ -109,7 +109,7 @@ public final class GetStoreCustomDungeonRspOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief.parser(), extensionRegistry));
               break;
             }
-            case 72: {
+            case 112: {
 
               retcode_ = input.readInt32();
               break;
@@ -149,17 +149,17 @@ public final class GetStoreCustomDungeonRspOuterClass {
               emu.grasscutter.net.proto.GetStoreCustomDungeonRspOuterClass.GetStoreCustomDungeonRsp.class, emu.grasscutter.net.proto.GetStoreCustomDungeonRspOuterClass.GetStoreCustomDungeonRsp.Builder.class);
     }
 
-    public static final int CUSTOM_DUNGEON_LIST_FIELD_NUMBER = 3;
+    public static final int CUSTOM_DUNGEON_LIST_FIELD_NUMBER = 10;
     private java.util.List<emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief> customDungeonList_;
     /**
-     * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 3;</code>
+     * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 10;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief> getCustomDungeonListList() {
       return customDungeonList_;
     }
     /**
-     * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 3;</code>
+     * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 10;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBriefOrBuilder> 
@@ -167,21 +167,21 @@ public final class GetStoreCustomDungeonRspOuterClass {
       return customDungeonList_;
     }
     /**
-     * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 3;</code>
+     * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 10;</code>
      */
     @java.lang.Override
     public int getCustomDungeonListCount() {
       return customDungeonList_.size();
     }
     /**
-     * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 3;</code>
+     * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief getCustomDungeonList(int index) {
       return customDungeonList_.get(index);
     }
     /**
-     * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 3;</code>
+     * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBriefOrBuilder getCustomDungeonListOrBuilder(
@@ -189,10 +189,10 @@ public final class GetStoreCustomDungeonRspOuterClass {
       return customDungeonList_.get(index);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 9;
+    public static final int RETCODE_FIELD_NUMBER = 14;
     private int retcode_;
     /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 14;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -215,10 +215,10 @@ public final class GetStoreCustomDungeonRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < customDungeonList_.size(); i++) {
-        output.writeMessage(3, customDungeonList_.get(i));
+        output.writeMessage(10, customDungeonList_.get(i));
       }
       if (retcode_ != 0) {
-        output.writeInt32(9, retcode_);
+        output.writeInt32(14, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -231,11 +231,11 @@ public final class GetStoreCustomDungeonRspOuterClass {
       size = 0;
       for (int i = 0; i < customDungeonList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, customDungeonList_.get(i));
+          .computeMessageSize(10, customDungeonList_.get(i));
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, retcode_);
+          .computeInt32Size(14, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -370,8 +370,8 @@ public final class GetStoreCustomDungeonRspOuterClass {
     }
     /**
      * <pre>
-     * Name: DFLFGBCHEMP
-     * CmdId: 6210
+     * CmdId: 6249
+     * Obf: CILKHMDLLNN
      * </pre>
      *
      * Protobuf type {@code GetStoreCustomDungeonRsp}
@@ -577,7 +577,7 @@ public final class GetStoreCustomDungeonRspOuterClass {
           emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief, emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief.Builder, emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBriefOrBuilder> customDungeonListBuilder_;
 
       /**
-       * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 3;</code>
+       * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 10;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief> getCustomDungeonListList() {
         if (customDungeonListBuilder_ == null) {
@@ -587,7 +587,7 @@ public final class GetStoreCustomDungeonRspOuterClass {
         }
       }
       /**
-       * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 3;</code>
+       * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 10;</code>
        */
       public int getCustomDungeonListCount() {
         if (customDungeonListBuilder_ == null) {
@@ -597,7 +597,7 @@ public final class GetStoreCustomDungeonRspOuterClass {
         }
       }
       /**
-       * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 3;</code>
+       * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 10;</code>
        */
       public emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief getCustomDungeonList(int index) {
         if (customDungeonListBuilder_ == null) {
@@ -607,7 +607,7 @@ public final class GetStoreCustomDungeonRspOuterClass {
         }
       }
       /**
-       * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 3;</code>
+       * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 10;</code>
        */
       public Builder setCustomDungeonList(
           int index, emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief value) {
@@ -624,7 +624,7 @@ public final class GetStoreCustomDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 3;</code>
+       * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 10;</code>
        */
       public Builder setCustomDungeonList(
           int index, emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief.Builder builderForValue) {
@@ -638,7 +638,7 @@ public final class GetStoreCustomDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 3;</code>
+       * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 10;</code>
        */
       public Builder addCustomDungeonList(emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief value) {
         if (customDungeonListBuilder_ == null) {
@@ -654,7 +654,7 @@ public final class GetStoreCustomDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 3;</code>
+       * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 10;</code>
        */
       public Builder addCustomDungeonList(
           int index, emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief value) {
@@ -671,7 +671,7 @@ public final class GetStoreCustomDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 3;</code>
+       * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 10;</code>
        */
       public Builder addCustomDungeonList(
           emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief.Builder builderForValue) {
@@ -685,7 +685,7 @@ public final class GetStoreCustomDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 3;</code>
+       * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 10;</code>
        */
       public Builder addCustomDungeonList(
           int index, emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief.Builder builderForValue) {
@@ -699,7 +699,7 @@ public final class GetStoreCustomDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 3;</code>
+       * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 10;</code>
        */
       public Builder addAllCustomDungeonList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief> values) {
@@ -714,7 +714,7 @@ public final class GetStoreCustomDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 3;</code>
+       * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 10;</code>
        */
       public Builder clearCustomDungeonList() {
         if (customDungeonListBuilder_ == null) {
@@ -727,7 +727,7 @@ public final class GetStoreCustomDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 3;</code>
+       * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 10;</code>
        */
       public Builder removeCustomDungeonList(int index) {
         if (customDungeonListBuilder_ == null) {
@@ -740,14 +740,14 @@ public final class GetStoreCustomDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 3;</code>
+       * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 10;</code>
        */
       public emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief.Builder getCustomDungeonListBuilder(
           int index) {
         return getCustomDungeonListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 3;</code>
+       * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 10;</code>
        */
       public emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBriefOrBuilder getCustomDungeonListOrBuilder(
           int index) {
@@ -757,7 +757,7 @@ public final class GetStoreCustomDungeonRspOuterClass {
         }
       }
       /**
-       * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 3;</code>
+       * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 10;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBriefOrBuilder> 
            getCustomDungeonListOrBuilderList() {
@@ -768,14 +768,14 @@ public final class GetStoreCustomDungeonRspOuterClass {
         }
       }
       /**
-       * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 3;</code>
+       * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 10;</code>
        */
       public emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief.Builder addCustomDungeonListBuilder() {
         return getCustomDungeonListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief.getDefaultInstance());
       }
       /**
-       * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 3;</code>
+       * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 10;</code>
        */
       public emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief.Builder addCustomDungeonListBuilder(
           int index) {
@@ -783,7 +783,7 @@ public final class GetStoreCustomDungeonRspOuterClass {
             index, emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief.getDefaultInstance());
       }
       /**
-       * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 3;</code>
+       * <code>repeated .OtherCustomDungeonBrief custom_dungeon_list = 10;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.OtherCustomDungeonBriefOuterClass.OtherCustomDungeonBrief.Builder> 
            getCustomDungeonListBuilderList() {
@@ -806,7 +806,7 @@ public final class GetStoreCustomDungeonRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 14;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -814,7 +814,7 @@ public final class GetStoreCustomDungeonRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 14;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -825,7 +825,7 @@ public final class GetStoreCustomDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -903,8 +903,8 @@ public final class GetStoreCustomDungeonRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\036GetStoreCustomDungeonRsp.proto\032\035OtherC" +
       "ustomDungeonBrief.proto\"b\n\030GetStoreCusto" +
-      "mDungeonRsp\0225\n\023custom_dungeon_list\030\003 \003(\013" +
-      "2\030.OtherCustomDungeonBrief\022\017\n\007retcode\030\t " +
+      "mDungeonRsp\0225\n\023custom_dungeon_list\030\n \003(\013" +
+      "2\030.OtherCustomDungeonBrief\022\017\n\007retcode\030\016 " +
       "\001(\005B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

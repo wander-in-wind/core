@@ -19,21 +19,21 @@ public final class HideAndSeekSelectAvatarRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 avatar_id = 4;</code>
+     * <code>uint32 avatar_id = 15;</code>
      * @return The avatarId.
      */
     int getAvatarId();
 
     /**
-     * <code>int32 retcode = 10;</code>
+     * <code>int32 retcode = 3;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * Name: CAFALCOGOBE
-   * CmdId: 5340
+   * CmdId: 5353
+   * Obf: GLAOFIIDCHP
    * </pre>
    *
    * Protobuf type {@code HideAndSeekSelectAvatarRsp}
@@ -80,14 +80,14 @@ public final class HideAndSeekSelectAvatarRspOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
-
-              avatarId_ = input.readUInt32();
-              break;
-            }
-            case 80: {
+            case 24: {
 
               retcode_ = input.readInt32();
+              break;
+            }
+            case 120: {
+
+              avatarId_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,10 +122,10 @@ public final class HideAndSeekSelectAvatarRspOuterClass {
               emu.grasscutter.net.proto.HideAndSeekSelectAvatarRspOuterClass.HideAndSeekSelectAvatarRsp.class, emu.grasscutter.net.proto.HideAndSeekSelectAvatarRspOuterClass.HideAndSeekSelectAvatarRsp.Builder.class);
     }
 
-    public static final int AVATAR_ID_FIELD_NUMBER = 4;
+    public static final int AVATAR_ID_FIELD_NUMBER = 15;
     private int avatarId_;
     /**
-     * <code>uint32 avatar_id = 4;</code>
+     * <code>uint32 avatar_id = 15;</code>
      * @return The avatarId.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class HideAndSeekSelectAvatarRspOuterClass {
       return avatarId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 10;
+    public static final int RETCODE_FIELD_NUMBER = 3;
     private int retcode_;
     /**
-     * <code>int32 retcode = 10;</code>
+     * <code>int32 retcode = 3;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -158,11 +158,11 @@ public final class HideAndSeekSelectAvatarRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (avatarId_ != 0) {
-        output.writeUInt32(4, avatarId_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(10, retcode_);
+        output.writeInt32(3, retcode_);
+      }
+      if (avatarId_ != 0) {
+        output.writeUInt32(15, avatarId_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class HideAndSeekSelectAvatarRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (avatarId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, avatarId_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(10, retcode_);
+          .computeInt32Size(3, retcode_);
+      }
+      if (avatarId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, avatarId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class HideAndSeekSelectAvatarRspOuterClass {
     }
     /**
      * <pre>
-     * Name: CAFALCOGOBE
-     * CmdId: 5340
+     * CmdId: 5353
+     * Obf: GLAOFIIDCHP
      * </pre>
      *
      * Protobuf type {@code HideAndSeekSelectAvatarRsp}
@@ -470,7 +470,7 @@ public final class HideAndSeekSelectAvatarRspOuterClass {
 
       private int avatarId_ ;
       /**
-       * <code>uint32 avatar_id = 4;</code>
+       * <code>uint32 avatar_id = 15;</code>
        * @return The avatarId.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class HideAndSeekSelectAvatarRspOuterClass {
         return avatarId_;
       }
       /**
-       * <code>uint32 avatar_id = 4;</code>
+       * <code>uint32 avatar_id = 15;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class HideAndSeekSelectAvatarRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 avatar_id = 4;</code>
+       * <code>uint32 avatar_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarId() {
@@ -501,7 +501,7 @@ public final class HideAndSeekSelectAvatarRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 10;</code>
+       * <code>int32 retcode = 3;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class HideAndSeekSelectAvatarRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 10;</code>
+       * <code>int32 retcode = 3;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class HideAndSeekSelectAvatarRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 10;</code>
+       * <code>int32 retcode = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -597,8 +597,8 @@ public final class HideAndSeekSelectAvatarRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n HideAndSeekSelectAvatarRsp.proto\"@\n\032Hi" +
-      "deAndSeekSelectAvatarRsp\022\021\n\tavatar_id\030\004 " +
-      "\001(\r\022\017\n\007retcode\030\n \001(\005B\033\n\031emu.grasscutter." +
+      "deAndSeekSelectAvatarRsp\022\021\n\tavatar_id\030\017 " +
+      "\001(\r\022\017\n\007retcode\030\003 \001(\005B\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

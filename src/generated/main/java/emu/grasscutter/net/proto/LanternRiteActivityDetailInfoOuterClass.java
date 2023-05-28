@@ -19,80 +19,80 @@ public final class LanternRiteActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool OEMINLMOPPP = 1;</code>
-     * @return The oEMINLMOPPP.
+     * <code>.LanternRiteFireworksInfo fireworks_info = 15;</code>
+     * @return Whether the fireworksInfo field is set.
      */
-    boolean getOEMINLMOPPP();
+    boolean hasFireworksInfo();
+    /**
+     * <code>.LanternRiteFireworksInfo fireworks_info = 15;</code>
+     * @return The fireworksInfo.
+     */
+    emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo getFireworksInfo();
+    /**
+     * <code>.LanternRiteFireworksInfo fireworks_info = 15;</code>
+     */
+    emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfoOrBuilder getFireworksInfoOrBuilder();
 
     /**
-     * <code>bool MMEOMGJBGNE = 7;</code>
-     * @return The mMEOMGJBGNE.
+     * <code>bool HHHOIKIBHOA = 11;</code>
+     * @return The hHHOIKIBHOA.
      */
-    boolean getMMEOMGJBGNE();
+    boolean getHHHOIKIBHOA();
 
     /**
-     * <code>repeated .SalvageStageInfo stage_info_list = 9;</code>
+     * <code>.LanternProjectionInfo projection_info = 7;</code>
+     * @return Whether the projectionInfo field is set.
      */
-    java.util.List<emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo> 
-        getStageInfoListList();
+    boolean hasProjectionInfo();
     /**
-     * <code>repeated .SalvageStageInfo stage_info_list = 9;</code>
+     * <code>.LanternProjectionInfo projection_info = 7;</code>
+     * @return The projectionInfo.
      */
-    emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo getStageInfoList(int index);
+    emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo getProjectionInfo();
     /**
-     * <code>repeated .SalvageStageInfo stage_info_list = 9;</code>
+     * <code>.LanternProjectionInfo projection_info = 7;</code>
      */
-    int getStageInfoListCount();
-    /**
-     * <code>repeated .SalvageStageInfo stage_info_list = 9;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfoOrBuilder> 
-        getStageInfoListOrBuilderList();
-    /**
-     * <code>repeated .SalvageStageInfo stage_info_list = 9;</code>
-     */
-    emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfoOrBuilder getStageInfoListOrBuilder(
-        int index);
+    emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfoOrBuilder getProjectionInfoOrBuilder();
 
     /**
-     * <code>.JFAEOPHPBGL OEEDOHKBLMD = 8;</code>
-     * @return Whether the oEEDOHKBLMD field is set.
+     * <code>bool NGDCCCDNHHE = 5;</code>
+     * @return The nGDCCCDNHHE.
      */
-    boolean hasOEEDOHKBLMD();
-    /**
-     * <code>.JFAEOPHPBGL OEEDOHKBLMD = 8;</code>
-     * @return The oEEDOHKBLMD.
-     */
-    emu.grasscutter.net.proto.JFAEOPHPBGLOuterClass.JFAEOPHPBGL getOEEDOHKBLMD();
-    /**
-     * <code>.JFAEOPHPBGL OEEDOHKBLMD = 8;</code>
-     */
-    emu.grasscutter.net.proto.JFAEOPHPBGLOuterClass.JFAEOPHPBGLOrBuilder getOEEDOHKBLMDOrBuilder();
+    boolean getNGDCCCDNHHE();
 
     /**
-     * <code>bool is_content_closed = 6;</code>
+     * <code>bool is_content_closed = 12;</code>
      * @return The isContentClosed.
      */
     boolean getIsContentClosed();
 
     /**
-     * <code>.MCJJAJKEOAM EGDHPACCIFB = 10;</code>
-     * @return Whether the eGDHPACCIFB field is set.
+     * <code>repeated .SalvageStageInfo stage_info_list = 4;</code>
      */
-    boolean hasEGDHPACCIFB();
+    java.util.List<emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo> 
+        getStageInfoListList();
     /**
-     * <code>.MCJJAJKEOAM EGDHPACCIFB = 10;</code>
-     * @return The eGDHPACCIFB.
+     * <code>repeated .SalvageStageInfo stage_info_list = 4;</code>
      */
-    emu.grasscutter.net.proto.MCJJAJKEOAMOuterClass.MCJJAJKEOAM getEGDHPACCIFB();
+    emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo getStageInfoList(int index);
     /**
-     * <code>.MCJJAJKEOAM EGDHPACCIFB = 10;</code>
+     * <code>repeated .SalvageStageInfo stage_info_list = 4;</code>
      */
-    emu.grasscutter.net.proto.MCJJAJKEOAMOuterClass.MCJJAJKEOAMOrBuilder getEGDHPACCIFBOrBuilder();
+    int getStageInfoListCount();
+    /**
+     * <code>repeated .SalvageStageInfo stage_info_list = 4;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfoOrBuilder> 
+        getStageInfoListOrBuilderList();
+    /**
+     * <code>repeated .SalvageStageInfo stage_info_list = 4;</code>
+     */
+    emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfoOrBuilder getStageInfoListOrBuilder(
+        int index);
   }
   /**
    * <pre>
-   * Name: KALJNIHLPEB
+   * Obf: JJKBLBCBCEH
    * </pre>
    *
    * Protobuf type {@code LanternRiteActivityDetailInfo}
@@ -141,35 +141,7 @@ public final class LanternRiteActivityDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              oEMINLMOPPP_ = input.readBool();
-              break;
-            }
-            case 48: {
-
-              isContentClosed_ = input.readBool();
-              break;
-            }
-            case 56: {
-
-              mMEOMGJBGNE_ = input.readBool();
-              break;
-            }
-            case 66: {
-              emu.grasscutter.net.proto.JFAEOPHPBGLOuterClass.JFAEOPHPBGL.Builder subBuilder = null;
-              if (oEEDOHKBLMD_ != null) {
-                subBuilder = oEEDOHKBLMD_.toBuilder();
-              }
-              oEEDOHKBLMD_ = input.readMessage(emu.grasscutter.net.proto.JFAEOPHPBGLOuterClass.JFAEOPHPBGL.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(oEEDOHKBLMD_);
-                oEEDOHKBLMD_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 74: {
+            case 34: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 stageInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -178,15 +150,43 @@ public final class LanternRiteActivityDetailInfoOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo.parser(), extensionRegistry));
               break;
             }
-            case 82: {
-              emu.grasscutter.net.proto.MCJJAJKEOAMOuterClass.MCJJAJKEOAM.Builder subBuilder = null;
-              if (eGDHPACCIFB_ != null) {
-                subBuilder = eGDHPACCIFB_.toBuilder();
+            case 40: {
+
+              nGDCCCDNHHE_ = input.readBool();
+              break;
+            }
+            case 58: {
+              emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.Builder subBuilder = null;
+              if (projectionInfo_ != null) {
+                subBuilder = projectionInfo_.toBuilder();
               }
-              eGDHPACCIFB_ = input.readMessage(emu.grasscutter.net.proto.MCJJAJKEOAMOuterClass.MCJJAJKEOAM.parser(), extensionRegistry);
+              projectionInfo_ = input.readMessage(emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(eGDHPACCIFB_);
-                eGDHPACCIFB_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(projectionInfo_);
+                projectionInfo_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 88: {
+
+              hHHOIKIBHOA_ = input.readBool();
+              break;
+            }
+            case 96: {
+
+              isContentClosed_ = input.readBool();
+              break;
+            }
+            case 122: {
+              emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo.Builder subBuilder = null;
+              if (fireworksInfo_ != null) {
+                subBuilder = fireworksInfo_.toBuilder();
+              }
+              fireworksInfo_ = input.readMessage(emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(fireworksInfo_);
+                fireworksInfo_ = subBuilder.buildPartial();
               }
 
               break;
@@ -226,98 +226,84 @@ public final class LanternRiteActivityDetailInfoOuterClass {
               emu.grasscutter.net.proto.LanternRiteActivityDetailInfoOuterClass.LanternRiteActivityDetailInfo.class, emu.grasscutter.net.proto.LanternRiteActivityDetailInfoOuterClass.LanternRiteActivityDetailInfo.Builder.class);
     }
 
-    public static final int OEMINLMOPPP_FIELD_NUMBER = 1;
-    private boolean oEMINLMOPPP_;
+    public static final int FIREWORKS_INFO_FIELD_NUMBER = 15;
+    private emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo fireworksInfo_;
     /**
-     * <code>bool OEMINLMOPPP = 1;</code>
-     * @return The oEMINLMOPPP.
+     * <code>.LanternRiteFireworksInfo fireworks_info = 15;</code>
+     * @return Whether the fireworksInfo field is set.
      */
     @java.lang.Override
-    public boolean getOEMINLMOPPP() {
-      return oEMINLMOPPP_;
+    public boolean hasFireworksInfo() {
+      return fireworksInfo_ != null;
+    }
+    /**
+     * <code>.LanternRiteFireworksInfo fireworks_info = 15;</code>
+     * @return The fireworksInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo getFireworksInfo() {
+      return fireworksInfo_ == null ? emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo.getDefaultInstance() : fireworksInfo_;
+    }
+    /**
+     * <code>.LanternRiteFireworksInfo fireworks_info = 15;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfoOrBuilder getFireworksInfoOrBuilder() {
+      return getFireworksInfo();
     }
 
-    public static final int MMEOMGJBGNE_FIELD_NUMBER = 7;
-    private boolean mMEOMGJBGNE_;
+    public static final int HHHOIKIBHOA_FIELD_NUMBER = 11;
+    private boolean hHHOIKIBHOA_;
     /**
-     * <code>bool MMEOMGJBGNE = 7;</code>
-     * @return The mMEOMGJBGNE.
+     * <code>bool HHHOIKIBHOA = 11;</code>
+     * @return The hHHOIKIBHOA.
      */
     @java.lang.Override
-    public boolean getMMEOMGJBGNE() {
-      return mMEOMGJBGNE_;
+    public boolean getHHHOIKIBHOA() {
+      return hHHOIKIBHOA_;
     }
 
-    public static final int STAGE_INFO_LIST_FIELD_NUMBER = 9;
-    private java.util.List<emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo> stageInfoList_;
+    public static final int PROJECTION_INFO_FIELD_NUMBER = 7;
+    private emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo projectionInfo_;
     /**
-     * <code>repeated .SalvageStageInfo stage_info_list = 9;</code>
+     * <code>.LanternProjectionInfo projection_info = 7;</code>
+     * @return Whether the projectionInfo field is set.
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo> getStageInfoListList() {
-      return stageInfoList_;
+    public boolean hasProjectionInfo() {
+      return projectionInfo_ != null;
     }
     /**
-     * <code>repeated .SalvageStageInfo stage_info_list = 9;</code>
+     * <code>.LanternProjectionInfo projection_info = 7;</code>
+     * @return The projectionInfo.
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfoOrBuilder> 
-        getStageInfoListOrBuilderList() {
-      return stageInfoList_;
+    public emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo getProjectionInfo() {
+      return projectionInfo_ == null ? emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.getDefaultInstance() : projectionInfo_;
     }
     /**
-     * <code>repeated .SalvageStageInfo stage_info_list = 9;</code>
+     * <code>.LanternProjectionInfo projection_info = 7;</code>
      */
     @java.lang.Override
-    public int getStageInfoListCount() {
-      return stageInfoList_.size();
-    }
-    /**
-     * <code>repeated .SalvageStageInfo stage_info_list = 9;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo getStageInfoList(int index) {
-      return stageInfoList_.get(index);
-    }
-    /**
-     * <code>repeated .SalvageStageInfo stage_info_list = 9;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfoOrBuilder getStageInfoListOrBuilder(
-        int index) {
-      return stageInfoList_.get(index);
+    public emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfoOrBuilder getProjectionInfoOrBuilder() {
+      return getProjectionInfo();
     }
 
-    public static final int OEEDOHKBLMD_FIELD_NUMBER = 8;
-    private emu.grasscutter.net.proto.JFAEOPHPBGLOuterClass.JFAEOPHPBGL oEEDOHKBLMD_;
+    public static final int NGDCCCDNHHE_FIELD_NUMBER = 5;
+    private boolean nGDCCCDNHHE_;
     /**
-     * <code>.JFAEOPHPBGL OEEDOHKBLMD = 8;</code>
-     * @return Whether the oEEDOHKBLMD field is set.
+     * <code>bool NGDCCCDNHHE = 5;</code>
+     * @return The nGDCCCDNHHE.
      */
     @java.lang.Override
-    public boolean hasOEEDOHKBLMD() {
-      return oEEDOHKBLMD_ != null;
-    }
-    /**
-     * <code>.JFAEOPHPBGL OEEDOHKBLMD = 8;</code>
-     * @return The oEEDOHKBLMD.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.JFAEOPHPBGLOuterClass.JFAEOPHPBGL getOEEDOHKBLMD() {
-      return oEEDOHKBLMD_ == null ? emu.grasscutter.net.proto.JFAEOPHPBGLOuterClass.JFAEOPHPBGL.getDefaultInstance() : oEEDOHKBLMD_;
-    }
-    /**
-     * <code>.JFAEOPHPBGL OEEDOHKBLMD = 8;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.JFAEOPHPBGLOuterClass.JFAEOPHPBGLOrBuilder getOEEDOHKBLMDOrBuilder() {
-      return getOEEDOHKBLMD();
+    public boolean getNGDCCCDNHHE() {
+      return nGDCCCDNHHE_;
     }
 
-    public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 6;
+    public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 12;
     private boolean isContentClosed_;
     /**
-     * <code>bool is_content_closed = 6;</code>
+     * <code>bool is_content_closed = 12;</code>
      * @return The isContentClosed.
      */
     @java.lang.Override
@@ -325,30 +311,44 @@ public final class LanternRiteActivityDetailInfoOuterClass {
       return isContentClosed_;
     }
 
-    public static final int EGDHPACCIFB_FIELD_NUMBER = 10;
-    private emu.grasscutter.net.proto.MCJJAJKEOAMOuterClass.MCJJAJKEOAM eGDHPACCIFB_;
+    public static final int STAGE_INFO_LIST_FIELD_NUMBER = 4;
+    private java.util.List<emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo> stageInfoList_;
     /**
-     * <code>.MCJJAJKEOAM EGDHPACCIFB = 10;</code>
-     * @return Whether the eGDHPACCIFB field is set.
+     * <code>repeated .SalvageStageInfo stage_info_list = 4;</code>
      */
     @java.lang.Override
-    public boolean hasEGDHPACCIFB() {
-      return eGDHPACCIFB_ != null;
+    public java.util.List<emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo> getStageInfoListList() {
+      return stageInfoList_;
     }
     /**
-     * <code>.MCJJAJKEOAM EGDHPACCIFB = 10;</code>
-     * @return The eGDHPACCIFB.
+     * <code>repeated .SalvageStageInfo stage_info_list = 4;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.MCJJAJKEOAMOuterClass.MCJJAJKEOAM getEGDHPACCIFB() {
-      return eGDHPACCIFB_ == null ? emu.grasscutter.net.proto.MCJJAJKEOAMOuterClass.MCJJAJKEOAM.getDefaultInstance() : eGDHPACCIFB_;
+    public java.util.List<? extends emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfoOrBuilder> 
+        getStageInfoListOrBuilderList() {
+      return stageInfoList_;
     }
     /**
-     * <code>.MCJJAJKEOAM EGDHPACCIFB = 10;</code>
+     * <code>repeated .SalvageStageInfo stage_info_list = 4;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.MCJJAJKEOAMOuterClass.MCJJAJKEOAMOrBuilder getEGDHPACCIFBOrBuilder() {
-      return getEGDHPACCIFB();
+    public int getStageInfoListCount() {
+      return stageInfoList_.size();
+    }
+    /**
+     * <code>repeated .SalvageStageInfo stage_info_list = 4;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo getStageInfoList(int index) {
+      return stageInfoList_.get(index);
+    }
+    /**
+     * <code>repeated .SalvageStageInfo stage_info_list = 4;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfoOrBuilder getStageInfoListOrBuilder(
+        int index) {
+      return stageInfoList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -365,23 +365,23 @@ public final class LanternRiteActivityDetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (oEMINLMOPPP_ != false) {
-        output.writeBool(1, oEMINLMOPPP_);
+      for (int i = 0; i < stageInfoList_.size(); i++) {
+        output.writeMessage(4, stageInfoList_.get(i));
+      }
+      if (nGDCCCDNHHE_ != false) {
+        output.writeBool(5, nGDCCCDNHHE_);
+      }
+      if (projectionInfo_ != null) {
+        output.writeMessage(7, getProjectionInfo());
+      }
+      if (hHHOIKIBHOA_ != false) {
+        output.writeBool(11, hHHOIKIBHOA_);
       }
       if (isContentClosed_ != false) {
-        output.writeBool(6, isContentClosed_);
+        output.writeBool(12, isContentClosed_);
       }
-      if (mMEOMGJBGNE_ != false) {
-        output.writeBool(7, mMEOMGJBGNE_);
-      }
-      if (oEEDOHKBLMD_ != null) {
-        output.writeMessage(8, getOEEDOHKBLMD());
-      }
-      for (int i = 0; i < stageInfoList_.size(); i++) {
-        output.writeMessage(9, stageInfoList_.get(i));
-      }
-      if (eGDHPACCIFB_ != null) {
-        output.writeMessage(10, getEGDHPACCIFB());
+      if (fireworksInfo_ != null) {
+        output.writeMessage(15, getFireworksInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -392,29 +392,29 @@ public final class LanternRiteActivityDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (oEMINLMOPPP_ != false) {
+      for (int i = 0; i < stageInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, oEMINLMOPPP_);
+          .computeMessageSize(4, stageInfoList_.get(i));
+      }
+      if (nGDCCCDNHHE_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(5, nGDCCCDNHHE_);
+      }
+      if (projectionInfo_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(7, getProjectionInfo());
+      }
+      if (hHHOIKIBHOA_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(11, hHHOIKIBHOA_);
       }
       if (isContentClosed_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isContentClosed_);
+          .computeBoolSize(12, isContentClosed_);
       }
-      if (mMEOMGJBGNE_ != false) {
+      if (fireworksInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, mMEOMGJBGNE_);
-      }
-      if (oEEDOHKBLMD_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, getOEEDOHKBLMD());
-      }
-      for (int i = 0; i < stageInfoList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, stageInfoList_.get(i));
-      }
-      if (eGDHPACCIFB_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, getEGDHPACCIFB());
+          .computeMessageSize(15, getFireworksInfo());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -431,24 +431,24 @@ public final class LanternRiteActivityDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.LanternRiteActivityDetailInfoOuterClass.LanternRiteActivityDetailInfo other = (emu.grasscutter.net.proto.LanternRiteActivityDetailInfoOuterClass.LanternRiteActivityDetailInfo) obj;
 
-      if (getOEMINLMOPPP()
-          != other.getOEMINLMOPPP()) return false;
-      if (getMMEOMGJBGNE()
-          != other.getMMEOMGJBGNE()) return false;
-      if (!getStageInfoListList()
-          .equals(other.getStageInfoListList())) return false;
-      if (hasOEEDOHKBLMD() != other.hasOEEDOHKBLMD()) return false;
-      if (hasOEEDOHKBLMD()) {
-        if (!getOEEDOHKBLMD()
-            .equals(other.getOEEDOHKBLMD())) return false;
+      if (hasFireworksInfo() != other.hasFireworksInfo()) return false;
+      if (hasFireworksInfo()) {
+        if (!getFireworksInfo()
+            .equals(other.getFireworksInfo())) return false;
       }
+      if (getHHHOIKIBHOA()
+          != other.getHHHOIKIBHOA()) return false;
+      if (hasProjectionInfo() != other.hasProjectionInfo()) return false;
+      if (hasProjectionInfo()) {
+        if (!getProjectionInfo()
+            .equals(other.getProjectionInfo())) return false;
+      }
+      if (getNGDCCCDNHHE()
+          != other.getNGDCCCDNHHE()) return false;
       if (getIsContentClosed()
           != other.getIsContentClosed()) return false;
-      if (hasEGDHPACCIFB() != other.hasEGDHPACCIFB()) return false;
-      if (hasEGDHPACCIFB()) {
-        if (!getEGDHPACCIFB()
-            .equals(other.getEGDHPACCIFB())) return false;
-      }
+      if (!getStageInfoListList()
+          .equals(other.getStageInfoListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -460,26 +460,26 @@ public final class LanternRiteActivityDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + OEMINLMOPPP_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getOEMINLMOPPP());
-      hash = (37 * hash) + MMEOMGJBGNE_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getMMEOMGJBGNE());
-      if (getStageInfoListCount() > 0) {
-        hash = (37 * hash) + STAGE_INFO_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getStageInfoListList().hashCode();
+      if (hasFireworksInfo()) {
+        hash = (37 * hash) + FIREWORKS_INFO_FIELD_NUMBER;
+        hash = (53 * hash) + getFireworksInfo().hashCode();
       }
-      if (hasOEEDOHKBLMD()) {
-        hash = (37 * hash) + OEEDOHKBLMD_FIELD_NUMBER;
-        hash = (53 * hash) + getOEEDOHKBLMD().hashCode();
+      hash = (37 * hash) + HHHOIKIBHOA_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getHHHOIKIBHOA());
+      if (hasProjectionInfo()) {
+        hash = (37 * hash) + PROJECTION_INFO_FIELD_NUMBER;
+        hash = (53 * hash) + getProjectionInfo().hashCode();
       }
+      hash = (37 * hash) + NGDCCCDNHHE_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getNGDCCCDNHHE());
       hash = (37 * hash) + IS_CONTENT_CLOSED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsContentClosed());
-      if (hasEGDHPACCIFB()) {
-        hash = (37 * hash) + EGDHPACCIFB_FIELD_NUMBER;
-        hash = (53 * hash) + getEGDHPACCIFB().hashCode();
+      if (getStageInfoListCount() > 0) {
+        hash = (37 * hash) + STAGE_INFO_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getStageInfoListList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -578,7 +578,7 @@ public final class LanternRiteActivityDetailInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: KALJNIHLPEB
+     * Obf: JJKBLBCBCEH
      * </pre>
      *
      * Protobuf type {@code LanternRiteActivityDetailInfo}
@@ -619,29 +619,29 @@ public final class LanternRiteActivityDetailInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        oEMINLMOPPP_ = false;
+        if (fireworksInfoBuilder_ == null) {
+          fireworksInfo_ = null;
+        } else {
+          fireworksInfo_ = null;
+          fireworksInfoBuilder_ = null;
+        }
+        hHHOIKIBHOA_ = false;
 
-        mMEOMGJBGNE_ = false;
+        if (projectionInfoBuilder_ == null) {
+          projectionInfo_ = null;
+        } else {
+          projectionInfo_ = null;
+          projectionInfoBuilder_ = null;
+        }
+        nGDCCCDNHHE_ = false;
+
+        isContentClosed_ = false;
 
         if (stageInfoListBuilder_ == null) {
           stageInfoList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           stageInfoListBuilder_.clear();
-        }
-        if (oEEDOHKBLMDBuilder_ == null) {
-          oEEDOHKBLMD_ = null;
-        } else {
-          oEEDOHKBLMD_ = null;
-          oEEDOHKBLMDBuilder_ = null;
-        }
-        isContentClosed_ = false;
-
-        if (eGDHPACCIFBBuilder_ == null) {
-          eGDHPACCIFB_ = null;
-        } else {
-          eGDHPACCIFB_ = null;
-          eGDHPACCIFBBuilder_ = null;
         }
         return this;
       }
@@ -670,8 +670,19 @@ public final class LanternRiteActivityDetailInfoOuterClass {
       public emu.grasscutter.net.proto.LanternRiteActivityDetailInfoOuterClass.LanternRiteActivityDetailInfo buildPartial() {
         emu.grasscutter.net.proto.LanternRiteActivityDetailInfoOuterClass.LanternRiteActivityDetailInfo result = new emu.grasscutter.net.proto.LanternRiteActivityDetailInfoOuterClass.LanternRiteActivityDetailInfo(this);
         int from_bitField0_ = bitField0_;
-        result.oEMINLMOPPP_ = oEMINLMOPPP_;
-        result.mMEOMGJBGNE_ = mMEOMGJBGNE_;
+        if (fireworksInfoBuilder_ == null) {
+          result.fireworksInfo_ = fireworksInfo_;
+        } else {
+          result.fireworksInfo_ = fireworksInfoBuilder_.build();
+        }
+        result.hHHOIKIBHOA_ = hHHOIKIBHOA_;
+        if (projectionInfoBuilder_ == null) {
+          result.projectionInfo_ = projectionInfo_;
+        } else {
+          result.projectionInfo_ = projectionInfoBuilder_.build();
+        }
+        result.nGDCCCDNHHE_ = nGDCCCDNHHE_;
+        result.isContentClosed_ = isContentClosed_;
         if (stageInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             stageInfoList_ = java.util.Collections.unmodifiableList(stageInfoList_);
@@ -680,17 +691,6 @@ public final class LanternRiteActivityDetailInfoOuterClass {
           result.stageInfoList_ = stageInfoList_;
         } else {
           result.stageInfoList_ = stageInfoListBuilder_.build();
-        }
-        if (oEEDOHKBLMDBuilder_ == null) {
-          result.oEEDOHKBLMD_ = oEEDOHKBLMD_;
-        } else {
-          result.oEEDOHKBLMD_ = oEEDOHKBLMDBuilder_.build();
-        }
-        result.isContentClosed_ = isContentClosed_;
-        if (eGDHPACCIFBBuilder_ == null) {
-          result.eGDHPACCIFB_ = eGDHPACCIFB_;
-        } else {
-          result.eGDHPACCIFB_ = eGDHPACCIFBBuilder_.build();
         }
         onBuilt();
         return result;
@@ -740,11 +740,20 @@ public final class LanternRiteActivityDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.LanternRiteActivityDetailInfoOuterClass.LanternRiteActivityDetailInfo other) {
         if (other == emu.grasscutter.net.proto.LanternRiteActivityDetailInfoOuterClass.LanternRiteActivityDetailInfo.getDefaultInstance()) return this;
-        if (other.getOEMINLMOPPP() != false) {
-          setOEMINLMOPPP(other.getOEMINLMOPPP());
+        if (other.hasFireworksInfo()) {
+          mergeFireworksInfo(other.getFireworksInfo());
         }
-        if (other.getMMEOMGJBGNE() != false) {
-          setMMEOMGJBGNE(other.getMMEOMGJBGNE());
+        if (other.getHHHOIKIBHOA() != false) {
+          setHHHOIKIBHOA(other.getHHHOIKIBHOA());
+        }
+        if (other.hasProjectionInfo()) {
+          mergeProjectionInfo(other.getProjectionInfo());
+        }
+        if (other.getNGDCCCDNHHE() != false) {
+          setNGDCCCDNHHE(other.getNGDCCCDNHHE());
+        }
+        if (other.getIsContentClosed() != false) {
+          setIsContentClosed(other.getIsContentClosed());
         }
         if (stageInfoListBuilder_ == null) {
           if (!other.stageInfoList_.isEmpty()) {
@@ -771,15 +780,6 @@ public final class LanternRiteActivityDetailInfoOuterClass {
               stageInfoListBuilder_.addAllMessages(other.stageInfoList_);
             }
           }
-        }
-        if (other.hasOEEDOHKBLMD()) {
-          mergeOEEDOHKBLMD(other.getOEEDOHKBLMD());
-        }
-        if (other.getIsContentClosed() != false) {
-          setIsContentClosed(other.getIsContentClosed());
-        }
-        if (other.hasEGDHPACCIFB()) {
-          mergeEGDHPACCIFB(other.getEGDHPACCIFB());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -811,64 +811,333 @@ public final class LanternRiteActivityDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private boolean oEMINLMOPPP_ ;
+      private emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo fireworksInfo_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo, emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo.Builder, emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfoOrBuilder> fireworksInfoBuilder_;
       /**
-       * <code>bool OEMINLMOPPP = 1;</code>
-       * @return The oEMINLMOPPP.
+       * <code>.LanternRiteFireworksInfo fireworks_info = 15;</code>
+       * @return Whether the fireworksInfo field is set.
        */
-      @java.lang.Override
-      public boolean getOEMINLMOPPP() {
-        return oEMINLMOPPP_;
+      public boolean hasFireworksInfo() {
+        return fireworksInfoBuilder_ != null || fireworksInfo_ != null;
       }
       /**
-       * <code>bool OEMINLMOPPP = 1;</code>
-       * @param value The oEMINLMOPPP to set.
+       * <code>.LanternRiteFireworksInfo fireworks_info = 15;</code>
+       * @return The fireworksInfo.
+       */
+      public emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo getFireworksInfo() {
+        if (fireworksInfoBuilder_ == null) {
+          return fireworksInfo_ == null ? emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo.getDefaultInstance() : fireworksInfo_;
+        } else {
+          return fireworksInfoBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.LanternRiteFireworksInfo fireworks_info = 15;</code>
+       */
+      public Builder setFireworksInfo(emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo value) {
+        if (fireworksInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          fireworksInfo_ = value;
+          onChanged();
+        } else {
+          fireworksInfoBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.LanternRiteFireworksInfo fireworks_info = 15;</code>
+       */
+      public Builder setFireworksInfo(
+          emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo.Builder builderForValue) {
+        if (fireworksInfoBuilder_ == null) {
+          fireworksInfo_ = builderForValue.build();
+          onChanged();
+        } else {
+          fireworksInfoBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.LanternRiteFireworksInfo fireworks_info = 15;</code>
+       */
+      public Builder mergeFireworksInfo(emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo value) {
+        if (fireworksInfoBuilder_ == null) {
+          if (fireworksInfo_ != null) {
+            fireworksInfo_ =
+              emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo.newBuilder(fireworksInfo_).mergeFrom(value).buildPartial();
+          } else {
+            fireworksInfo_ = value;
+          }
+          onChanged();
+        } else {
+          fireworksInfoBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.LanternRiteFireworksInfo fireworks_info = 15;</code>
+       */
+      public Builder clearFireworksInfo() {
+        if (fireworksInfoBuilder_ == null) {
+          fireworksInfo_ = null;
+          onChanged();
+        } else {
+          fireworksInfo_ = null;
+          fireworksInfoBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.LanternRiteFireworksInfo fireworks_info = 15;</code>
+       */
+      public emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo.Builder getFireworksInfoBuilder() {
+        
+        onChanged();
+        return getFireworksInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.LanternRiteFireworksInfo fireworks_info = 15;</code>
+       */
+      public emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfoOrBuilder getFireworksInfoOrBuilder() {
+        if (fireworksInfoBuilder_ != null) {
+          return fireworksInfoBuilder_.getMessageOrBuilder();
+        } else {
+          return fireworksInfo_ == null ?
+              emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo.getDefaultInstance() : fireworksInfo_;
+        }
+      }
+      /**
+       * <code>.LanternRiteFireworksInfo fireworks_info = 15;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo, emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo.Builder, emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfoOrBuilder> 
+          getFireworksInfoFieldBuilder() {
+        if (fireworksInfoBuilder_ == null) {
+          fireworksInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo, emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfo.Builder, emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.LanternRiteFireworksInfoOrBuilder>(
+                  getFireworksInfo(),
+                  getParentForChildren(),
+                  isClean());
+          fireworksInfo_ = null;
+        }
+        return fireworksInfoBuilder_;
+      }
+
+      private boolean hHHOIKIBHOA_ ;
+      /**
+       * <code>bool HHHOIKIBHOA = 11;</code>
+       * @return The hHHOIKIBHOA.
+       */
+      @java.lang.Override
+      public boolean getHHHOIKIBHOA() {
+        return hHHOIKIBHOA_;
+      }
+      /**
+       * <code>bool HHHOIKIBHOA = 11;</code>
+       * @param value The hHHOIKIBHOA to set.
        * @return This builder for chaining.
        */
-      public Builder setOEMINLMOPPP(boolean value) {
+      public Builder setHHHOIKIBHOA(boolean value) {
         
-        oEMINLMOPPP_ = value;
+        hHHOIKIBHOA_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool OEMINLMOPPP = 1;</code>
+       * <code>bool HHHOIKIBHOA = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOEMINLMOPPP() {
+      public Builder clearHHHOIKIBHOA() {
         
-        oEMINLMOPPP_ = false;
+        hHHOIKIBHOA_ = false;
         onChanged();
         return this;
       }
 
-      private boolean mMEOMGJBGNE_ ;
+      private emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo projectionInfo_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo, emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.Builder, emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfoOrBuilder> projectionInfoBuilder_;
       /**
-       * <code>bool MMEOMGJBGNE = 7;</code>
-       * @return The mMEOMGJBGNE.
+       * <code>.LanternProjectionInfo projection_info = 7;</code>
+       * @return Whether the projectionInfo field is set.
        */
-      @java.lang.Override
-      public boolean getMMEOMGJBGNE() {
-        return mMEOMGJBGNE_;
+      public boolean hasProjectionInfo() {
+        return projectionInfoBuilder_ != null || projectionInfo_ != null;
       }
       /**
-       * <code>bool MMEOMGJBGNE = 7;</code>
-       * @param value The mMEOMGJBGNE to set.
+       * <code>.LanternProjectionInfo projection_info = 7;</code>
+       * @return The projectionInfo.
+       */
+      public emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo getProjectionInfo() {
+        if (projectionInfoBuilder_ == null) {
+          return projectionInfo_ == null ? emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.getDefaultInstance() : projectionInfo_;
+        } else {
+          return projectionInfoBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.LanternProjectionInfo projection_info = 7;</code>
+       */
+      public Builder setProjectionInfo(emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo value) {
+        if (projectionInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          projectionInfo_ = value;
+          onChanged();
+        } else {
+          projectionInfoBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.LanternProjectionInfo projection_info = 7;</code>
+       */
+      public Builder setProjectionInfo(
+          emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.Builder builderForValue) {
+        if (projectionInfoBuilder_ == null) {
+          projectionInfo_ = builderForValue.build();
+          onChanged();
+        } else {
+          projectionInfoBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.LanternProjectionInfo projection_info = 7;</code>
+       */
+      public Builder mergeProjectionInfo(emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo value) {
+        if (projectionInfoBuilder_ == null) {
+          if (projectionInfo_ != null) {
+            projectionInfo_ =
+              emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.newBuilder(projectionInfo_).mergeFrom(value).buildPartial();
+          } else {
+            projectionInfo_ = value;
+          }
+          onChanged();
+        } else {
+          projectionInfoBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.LanternProjectionInfo projection_info = 7;</code>
+       */
+      public Builder clearProjectionInfo() {
+        if (projectionInfoBuilder_ == null) {
+          projectionInfo_ = null;
+          onChanged();
+        } else {
+          projectionInfo_ = null;
+          projectionInfoBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.LanternProjectionInfo projection_info = 7;</code>
+       */
+      public emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.Builder getProjectionInfoBuilder() {
+        
+        onChanged();
+        return getProjectionInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.LanternProjectionInfo projection_info = 7;</code>
+       */
+      public emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfoOrBuilder getProjectionInfoOrBuilder() {
+        if (projectionInfoBuilder_ != null) {
+          return projectionInfoBuilder_.getMessageOrBuilder();
+        } else {
+          return projectionInfo_ == null ?
+              emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.getDefaultInstance() : projectionInfo_;
+        }
+      }
+      /**
+       * <code>.LanternProjectionInfo projection_info = 7;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo, emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.Builder, emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfoOrBuilder> 
+          getProjectionInfoFieldBuilder() {
+        if (projectionInfoBuilder_ == null) {
+          projectionInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo, emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfo.Builder, emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.LanternProjectionInfoOrBuilder>(
+                  getProjectionInfo(),
+                  getParentForChildren(),
+                  isClean());
+          projectionInfo_ = null;
+        }
+        return projectionInfoBuilder_;
+      }
+
+      private boolean nGDCCCDNHHE_ ;
+      /**
+       * <code>bool NGDCCCDNHHE = 5;</code>
+       * @return The nGDCCCDNHHE.
+       */
+      @java.lang.Override
+      public boolean getNGDCCCDNHHE() {
+        return nGDCCCDNHHE_;
+      }
+      /**
+       * <code>bool NGDCCCDNHHE = 5;</code>
+       * @param value The nGDCCCDNHHE to set.
        * @return This builder for chaining.
        */
-      public Builder setMMEOMGJBGNE(boolean value) {
+      public Builder setNGDCCCDNHHE(boolean value) {
         
-        mMEOMGJBGNE_ = value;
+        nGDCCCDNHHE_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool MMEOMGJBGNE = 7;</code>
+       * <code>bool NGDCCCDNHHE = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMMEOMGJBGNE() {
+      public Builder clearNGDCCCDNHHE() {
         
-        mMEOMGJBGNE_ = false;
+        nGDCCCDNHHE_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean isContentClosed_ ;
+      /**
+       * <code>bool is_content_closed = 12;</code>
+       * @return The isContentClosed.
+       */
+      @java.lang.Override
+      public boolean getIsContentClosed() {
+        return isContentClosed_;
+      }
+      /**
+       * <code>bool is_content_closed = 12;</code>
+       * @param value The isContentClosed to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsContentClosed(boolean value) {
+        
+        isContentClosed_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_content_closed = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsContentClosed() {
+        
+        isContentClosed_ = false;
         onChanged();
         return this;
       }
@@ -886,7 +1155,7 @@ public final class LanternRiteActivityDetailInfoOuterClass {
           emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo, emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo.Builder, emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfoOrBuilder> stageInfoListBuilder_;
 
       /**
-       * <code>repeated .SalvageStageInfo stage_info_list = 9;</code>
+       * <code>repeated .SalvageStageInfo stage_info_list = 4;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo> getStageInfoListList() {
         if (stageInfoListBuilder_ == null) {
@@ -896,7 +1165,7 @@ public final class LanternRiteActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SalvageStageInfo stage_info_list = 9;</code>
+       * <code>repeated .SalvageStageInfo stage_info_list = 4;</code>
        */
       public int getStageInfoListCount() {
         if (stageInfoListBuilder_ == null) {
@@ -906,7 +1175,7 @@ public final class LanternRiteActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SalvageStageInfo stage_info_list = 9;</code>
+       * <code>repeated .SalvageStageInfo stage_info_list = 4;</code>
        */
       public emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo getStageInfoList(int index) {
         if (stageInfoListBuilder_ == null) {
@@ -916,7 +1185,7 @@ public final class LanternRiteActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SalvageStageInfo stage_info_list = 9;</code>
+       * <code>repeated .SalvageStageInfo stage_info_list = 4;</code>
        */
       public Builder setStageInfoList(
           int index, emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo value) {
@@ -933,7 +1202,7 @@ public final class LanternRiteActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SalvageStageInfo stage_info_list = 9;</code>
+       * <code>repeated .SalvageStageInfo stage_info_list = 4;</code>
        */
       public Builder setStageInfoList(
           int index, emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo.Builder builderForValue) {
@@ -947,7 +1216,7 @@ public final class LanternRiteActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SalvageStageInfo stage_info_list = 9;</code>
+       * <code>repeated .SalvageStageInfo stage_info_list = 4;</code>
        */
       public Builder addStageInfoList(emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo value) {
         if (stageInfoListBuilder_ == null) {
@@ -963,7 +1232,7 @@ public final class LanternRiteActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SalvageStageInfo stage_info_list = 9;</code>
+       * <code>repeated .SalvageStageInfo stage_info_list = 4;</code>
        */
       public Builder addStageInfoList(
           int index, emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo value) {
@@ -980,7 +1249,7 @@ public final class LanternRiteActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SalvageStageInfo stage_info_list = 9;</code>
+       * <code>repeated .SalvageStageInfo stage_info_list = 4;</code>
        */
       public Builder addStageInfoList(
           emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo.Builder builderForValue) {
@@ -994,7 +1263,7 @@ public final class LanternRiteActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SalvageStageInfo stage_info_list = 9;</code>
+       * <code>repeated .SalvageStageInfo stage_info_list = 4;</code>
        */
       public Builder addStageInfoList(
           int index, emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo.Builder builderForValue) {
@@ -1008,7 +1277,7 @@ public final class LanternRiteActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SalvageStageInfo stage_info_list = 9;</code>
+       * <code>repeated .SalvageStageInfo stage_info_list = 4;</code>
        */
       public Builder addAllStageInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo> values) {
@@ -1023,7 +1292,7 @@ public final class LanternRiteActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SalvageStageInfo stage_info_list = 9;</code>
+       * <code>repeated .SalvageStageInfo stage_info_list = 4;</code>
        */
       public Builder clearStageInfoList() {
         if (stageInfoListBuilder_ == null) {
@@ -1036,7 +1305,7 @@ public final class LanternRiteActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SalvageStageInfo stage_info_list = 9;</code>
+       * <code>repeated .SalvageStageInfo stage_info_list = 4;</code>
        */
       public Builder removeStageInfoList(int index) {
         if (stageInfoListBuilder_ == null) {
@@ -1049,14 +1318,14 @@ public final class LanternRiteActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SalvageStageInfo stage_info_list = 9;</code>
+       * <code>repeated .SalvageStageInfo stage_info_list = 4;</code>
        */
       public emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo.Builder getStageInfoListBuilder(
           int index) {
         return getStageInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .SalvageStageInfo stage_info_list = 9;</code>
+       * <code>repeated .SalvageStageInfo stage_info_list = 4;</code>
        */
       public emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfoOrBuilder getStageInfoListOrBuilder(
           int index) {
@@ -1066,7 +1335,7 @@ public final class LanternRiteActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SalvageStageInfo stage_info_list = 9;</code>
+       * <code>repeated .SalvageStageInfo stage_info_list = 4;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfoOrBuilder> 
            getStageInfoListOrBuilderList() {
@@ -1077,14 +1346,14 @@ public final class LanternRiteActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SalvageStageInfo stage_info_list = 9;</code>
+       * <code>repeated .SalvageStageInfo stage_info_list = 4;</code>
        */
       public emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo.Builder addStageInfoListBuilder() {
         return getStageInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .SalvageStageInfo stage_info_list = 9;</code>
+       * <code>repeated .SalvageStageInfo stage_info_list = 4;</code>
        */
       public emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo.Builder addStageInfoListBuilder(
           int index) {
@@ -1092,7 +1361,7 @@ public final class LanternRiteActivityDetailInfoOuterClass {
             index, emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .SalvageStageInfo stage_info_list = 9;</code>
+       * <code>repeated .SalvageStageInfo stage_info_list = 4;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.SalvageStageInfoOuterClass.SalvageStageInfo.Builder> 
            getStageInfoListBuilderList() {
@@ -1111,275 +1380,6 @@ public final class LanternRiteActivityDetailInfoOuterClass {
           stageInfoList_ = null;
         }
         return stageInfoListBuilder_;
-      }
-
-      private emu.grasscutter.net.proto.JFAEOPHPBGLOuterClass.JFAEOPHPBGL oEEDOHKBLMD_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.JFAEOPHPBGLOuterClass.JFAEOPHPBGL, emu.grasscutter.net.proto.JFAEOPHPBGLOuterClass.JFAEOPHPBGL.Builder, emu.grasscutter.net.proto.JFAEOPHPBGLOuterClass.JFAEOPHPBGLOrBuilder> oEEDOHKBLMDBuilder_;
-      /**
-       * <code>.JFAEOPHPBGL OEEDOHKBLMD = 8;</code>
-       * @return Whether the oEEDOHKBLMD field is set.
-       */
-      public boolean hasOEEDOHKBLMD() {
-        return oEEDOHKBLMDBuilder_ != null || oEEDOHKBLMD_ != null;
-      }
-      /**
-       * <code>.JFAEOPHPBGL OEEDOHKBLMD = 8;</code>
-       * @return The oEEDOHKBLMD.
-       */
-      public emu.grasscutter.net.proto.JFAEOPHPBGLOuterClass.JFAEOPHPBGL getOEEDOHKBLMD() {
-        if (oEEDOHKBLMDBuilder_ == null) {
-          return oEEDOHKBLMD_ == null ? emu.grasscutter.net.proto.JFAEOPHPBGLOuterClass.JFAEOPHPBGL.getDefaultInstance() : oEEDOHKBLMD_;
-        } else {
-          return oEEDOHKBLMDBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.JFAEOPHPBGL OEEDOHKBLMD = 8;</code>
-       */
-      public Builder setOEEDOHKBLMD(emu.grasscutter.net.proto.JFAEOPHPBGLOuterClass.JFAEOPHPBGL value) {
-        if (oEEDOHKBLMDBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          oEEDOHKBLMD_ = value;
-          onChanged();
-        } else {
-          oEEDOHKBLMDBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.JFAEOPHPBGL OEEDOHKBLMD = 8;</code>
-       */
-      public Builder setOEEDOHKBLMD(
-          emu.grasscutter.net.proto.JFAEOPHPBGLOuterClass.JFAEOPHPBGL.Builder builderForValue) {
-        if (oEEDOHKBLMDBuilder_ == null) {
-          oEEDOHKBLMD_ = builderForValue.build();
-          onChanged();
-        } else {
-          oEEDOHKBLMDBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.JFAEOPHPBGL OEEDOHKBLMD = 8;</code>
-       */
-      public Builder mergeOEEDOHKBLMD(emu.grasscutter.net.proto.JFAEOPHPBGLOuterClass.JFAEOPHPBGL value) {
-        if (oEEDOHKBLMDBuilder_ == null) {
-          if (oEEDOHKBLMD_ != null) {
-            oEEDOHKBLMD_ =
-              emu.grasscutter.net.proto.JFAEOPHPBGLOuterClass.JFAEOPHPBGL.newBuilder(oEEDOHKBLMD_).mergeFrom(value).buildPartial();
-          } else {
-            oEEDOHKBLMD_ = value;
-          }
-          onChanged();
-        } else {
-          oEEDOHKBLMDBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.JFAEOPHPBGL OEEDOHKBLMD = 8;</code>
-       */
-      public Builder clearOEEDOHKBLMD() {
-        if (oEEDOHKBLMDBuilder_ == null) {
-          oEEDOHKBLMD_ = null;
-          onChanged();
-        } else {
-          oEEDOHKBLMD_ = null;
-          oEEDOHKBLMDBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.JFAEOPHPBGL OEEDOHKBLMD = 8;</code>
-       */
-      public emu.grasscutter.net.proto.JFAEOPHPBGLOuterClass.JFAEOPHPBGL.Builder getOEEDOHKBLMDBuilder() {
-        
-        onChanged();
-        return getOEEDOHKBLMDFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.JFAEOPHPBGL OEEDOHKBLMD = 8;</code>
-       */
-      public emu.grasscutter.net.proto.JFAEOPHPBGLOuterClass.JFAEOPHPBGLOrBuilder getOEEDOHKBLMDOrBuilder() {
-        if (oEEDOHKBLMDBuilder_ != null) {
-          return oEEDOHKBLMDBuilder_.getMessageOrBuilder();
-        } else {
-          return oEEDOHKBLMD_ == null ?
-              emu.grasscutter.net.proto.JFAEOPHPBGLOuterClass.JFAEOPHPBGL.getDefaultInstance() : oEEDOHKBLMD_;
-        }
-      }
-      /**
-       * <code>.JFAEOPHPBGL OEEDOHKBLMD = 8;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.JFAEOPHPBGLOuterClass.JFAEOPHPBGL, emu.grasscutter.net.proto.JFAEOPHPBGLOuterClass.JFAEOPHPBGL.Builder, emu.grasscutter.net.proto.JFAEOPHPBGLOuterClass.JFAEOPHPBGLOrBuilder> 
-          getOEEDOHKBLMDFieldBuilder() {
-        if (oEEDOHKBLMDBuilder_ == null) {
-          oEEDOHKBLMDBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.JFAEOPHPBGLOuterClass.JFAEOPHPBGL, emu.grasscutter.net.proto.JFAEOPHPBGLOuterClass.JFAEOPHPBGL.Builder, emu.grasscutter.net.proto.JFAEOPHPBGLOuterClass.JFAEOPHPBGLOrBuilder>(
-                  getOEEDOHKBLMD(),
-                  getParentForChildren(),
-                  isClean());
-          oEEDOHKBLMD_ = null;
-        }
-        return oEEDOHKBLMDBuilder_;
-      }
-
-      private boolean isContentClosed_ ;
-      /**
-       * <code>bool is_content_closed = 6;</code>
-       * @return The isContentClosed.
-       */
-      @java.lang.Override
-      public boolean getIsContentClosed() {
-        return isContentClosed_;
-      }
-      /**
-       * <code>bool is_content_closed = 6;</code>
-       * @param value The isContentClosed to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsContentClosed(boolean value) {
-        
-        isContentClosed_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_content_closed = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsContentClosed() {
-        
-        isContentClosed_ = false;
-        onChanged();
-        return this;
-      }
-
-      private emu.grasscutter.net.proto.MCJJAJKEOAMOuterClass.MCJJAJKEOAM eGDHPACCIFB_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.MCJJAJKEOAMOuterClass.MCJJAJKEOAM, emu.grasscutter.net.proto.MCJJAJKEOAMOuterClass.MCJJAJKEOAM.Builder, emu.grasscutter.net.proto.MCJJAJKEOAMOuterClass.MCJJAJKEOAMOrBuilder> eGDHPACCIFBBuilder_;
-      /**
-       * <code>.MCJJAJKEOAM EGDHPACCIFB = 10;</code>
-       * @return Whether the eGDHPACCIFB field is set.
-       */
-      public boolean hasEGDHPACCIFB() {
-        return eGDHPACCIFBBuilder_ != null || eGDHPACCIFB_ != null;
-      }
-      /**
-       * <code>.MCJJAJKEOAM EGDHPACCIFB = 10;</code>
-       * @return The eGDHPACCIFB.
-       */
-      public emu.grasscutter.net.proto.MCJJAJKEOAMOuterClass.MCJJAJKEOAM getEGDHPACCIFB() {
-        if (eGDHPACCIFBBuilder_ == null) {
-          return eGDHPACCIFB_ == null ? emu.grasscutter.net.proto.MCJJAJKEOAMOuterClass.MCJJAJKEOAM.getDefaultInstance() : eGDHPACCIFB_;
-        } else {
-          return eGDHPACCIFBBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.MCJJAJKEOAM EGDHPACCIFB = 10;</code>
-       */
-      public Builder setEGDHPACCIFB(emu.grasscutter.net.proto.MCJJAJKEOAMOuterClass.MCJJAJKEOAM value) {
-        if (eGDHPACCIFBBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          eGDHPACCIFB_ = value;
-          onChanged();
-        } else {
-          eGDHPACCIFBBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.MCJJAJKEOAM EGDHPACCIFB = 10;</code>
-       */
-      public Builder setEGDHPACCIFB(
-          emu.grasscutter.net.proto.MCJJAJKEOAMOuterClass.MCJJAJKEOAM.Builder builderForValue) {
-        if (eGDHPACCIFBBuilder_ == null) {
-          eGDHPACCIFB_ = builderForValue.build();
-          onChanged();
-        } else {
-          eGDHPACCIFBBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.MCJJAJKEOAM EGDHPACCIFB = 10;</code>
-       */
-      public Builder mergeEGDHPACCIFB(emu.grasscutter.net.proto.MCJJAJKEOAMOuterClass.MCJJAJKEOAM value) {
-        if (eGDHPACCIFBBuilder_ == null) {
-          if (eGDHPACCIFB_ != null) {
-            eGDHPACCIFB_ =
-              emu.grasscutter.net.proto.MCJJAJKEOAMOuterClass.MCJJAJKEOAM.newBuilder(eGDHPACCIFB_).mergeFrom(value).buildPartial();
-          } else {
-            eGDHPACCIFB_ = value;
-          }
-          onChanged();
-        } else {
-          eGDHPACCIFBBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.MCJJAJKEOAM EGDHPACCIFB = 10;</code>
-       */
-      public Builder clearEGDHPACCIFB() {
-        if (eGDHPACCIFBBuilder_ == null) {
-          eGDHPACCIFB_ = null;
-          onChanged();
-        } else {
-          eGDHPACCIFB_ = null;
-          eGDHPACCIFBBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.MCJJAJKEOAM EGDHPACCIFB = 10;</code>
-       */
-      public emu.grasscutter.net.proto.MCJJAJKEOAMOuterClass.MCJJAJKEOAM.Builder getEGDHPACCIFBBuilder() {
-        
-        onChanged();
-        return getEGDHPACCIFBFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.MCJJAJKEOAM EGDHPACCIFB = 10;</code>
-       */
-      public emu.grasscutter.net.proto.MCJJAJKEOAMOuterClass.MCJJAJKEOAMOrBuilder getEGDHPACCIFBOrBuilder() {
-        if (eGDHPACCIFBBuilder_ != null) {
-          return eGDHPACCIFBBuilder_.getMessageOrBuilder();
-        } else {
-          return eGDHPACCIFB_ == null ?
-              emu.grasscutter.net.proto.MCJJAJKEOAMOuterClass.MCJJAJKEOAM.getDefaultInstance() : eGDHPACCIFB_;
-        }
-      }
-      /**
-       * <code>.MCJJAJKEOAM EGDHPACCIFB = 10;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.MCJJAJKEOAMOuterClass.MCJJAJKEOAM, emu.grasscutter.net.proto.MCJJAJKEOAMOuterClass.MCJJAJKEOAM.Builder, emu.grasscutter.net.proto.MCJJAJKEOAMOuterClass.MCJJAJKEOAMOrBuilder> 
-          getEGDHPACCIFBFieldBuilder() {
-        if (eGDHPACCIFBBuilder_ == null) {
-          eGDHPACCIFBBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.MCJJAJKEOAMOuterClass.MCJJAJKEOAM, emu.grasscutter.net.proto.MCJJAJKEOAMOuterClass.MCJJAJKEOAM.Builder, emu.grasscutter.net.proto.MCJJAJKEOAMOuterClass.MCJJAJKEOAMOrBuilder>(
-                  getEGDHPACCIFB(),
-                  getParentForChildren(),
-                  isClean());
-          eGDHPACCIFB_ = null;
-        }
-        return eGDHPACCIFBBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1448,21 +1448,23 @@ public final class LanternRiteActivityDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n#LanternRiteActivityDetailInfo.proto\032\021J" +
-      "FAEOPHPBGL.proto\032\021MCJJAJKEOAM.proto\032\026Sal" +
-      "vageStageInfo.proto\"\326\001\n\035LanternRiteActiv" +
-      "ityDetailInfo\022\023\n\013OEMINLMOPPP\030\001 \001(\010\022\023\n\013MM" +
-      "EOMGJBGNE\030\007 \001(\010\022*\n\017stage_info_list\030\t \003(\013" +
-      "2\021.SalvageStageInfo\022!\n\013OEEDOHKBLMD\030\010 \001(\013" +
-      "2\014.JFAEOPHPBGL\022\031\n\021is_content_closed\030\006 \001(" +
-      "\010\022!\n\013EGDHPACCIFB\030\n \001(\0132\014.MCJJAJKEOAMB\033\n\031" +
-      "emu.grasscutter.net.protob\006proto3"
+      "\n#LanternRiteActivityDetailInfo.proto\032\036L" +
+      "anternRiteFireworksInfo.proto\032\033LanternPr" +
+      "ojectionInfo.proto\032\026SalvageStageInfo.pro" +
+      "to\"\364\001\n\035LanternRiteActivityDetailInfo\0221\n\016" +
+      "fireworks_info\030\017 \001(\0132\031.LanternRiteFirewo" +
+      "rksInfo\022\023\n\013HHHOIKIBHOA\030\013 \001(\010\022/\n\017projecti" +
+      "on_info\030\007 \001(\0132\026.LanternProjectionInfo\022\023\n" +
+      "\013NGDCCCDNHHE\030\005 \001(\010\022\031\n\021is_content_closed\030" +
+      "\014 \001(\010\022*\n\017stage_info_list\030\004 \003(\0132\021.Salvage" +
+      "StageInfoB\033\n\031emu.grasscutter.net.protob\006" +
+      "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.JFAEOPHPBGLOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.MCJJAJKEOAMOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.SalvageStageInfoOuterClass.getDescriptor(),
         });
     internal_static_LanternRiteActivityDetailInfo_descriptor =
@@ -1470,9 +1472,9 @@ public final class LanternRiteActivityDetailInfoOuterClass {
     internal_static_LanternRiteActivityDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_LanternRiteActivityDetailInfo_descriptor,
-        new java.lang.String[] { "OEMINLMOPPP", "MMEOMGJBGNE", "StageInfoList", "OEEDOHKBLMD", "IsContentClosed", "EGDHPACCIFB", });
-    emu.grasscutter.net.proto.JFAEOPHPBGLOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.MCJJAJKEOAMOuterClass.getDescriptor();
+        new java.lang.String[] { "FireworksInfo", "HHHOIKIBHOA", "ProjectionInfo", "NGDCCCDNHHE", "IsContentClosed", "StageInfoList", });
+    emu.grasscutter.net.proto.LanternRiteFireworksInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.LanternProjectionInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.SalvageStageInfoOuterClass.getDescriptor();
   }
 

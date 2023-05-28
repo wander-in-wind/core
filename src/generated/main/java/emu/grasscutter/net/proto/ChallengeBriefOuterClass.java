@@ -19,32 +19,32 @@ public final class ChallengeBriefOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_success = 4;</code>
-     * @return The isSuccess.
-     */
-    boolean getIsSuccess();
-
-    /**
-     * <code>uint32 challenge_id = 6;</code>
+     * <code>uint32 challenge_id = 5;</code>
      * @return The challengeId.
      */
     int getChallengeId();
 
     /**
-     * <code>uint32 challenge_index = 2;</code>
-     * @return The challengeIndex.
+     * <code>bool is_success = 10;</code>
+     * @return The isSuccess.
      */
-    int getChallengeIndex();
+    boolean getIsSuccess();
 
     /**
-     * <code>uint32 cur_progress = 1;</code>
+     * <code>uint32 cur_progress = 12;</code>
      * @return The curProgress.
      */
     int getCurProgress();
+
+    /**
+     * <code>uint32 challenge_index = 4;</code>
+     * @return The challengeIndex.
+     */
+    int getChallengeIndex();
   }
   /**
    * <pre>
-   * Name: NAHPGADLEJH
+   * Obf: HHKBKHDKCAG
    * </pre>
    *
    * Protobuf type {@code ChallengeBrief}
@@ -91,24 +91,24 @@ public final class ChallengeBriefOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              curProgress_ = input.readUInt32();
-              break;
-            }
-            case 16: {
+            case 32: {
 
               challengeIndex_ = input.readUInt32();
               break;
             }
-            case 32: {
+            case 40: {
+
+              challengeId_ = input.readUInt32();
+              break;
+            }
+            case 80: {
 
               isSuccess_ = input.readBool();
               break;
             }
-            case 48: {
+            case 96: {
 
-              challengeId_ = input.readUInt32();
+              curProgress_ = input.readUInt32();
               break;
             }
             default: {
@@ -143,21 +143,10 @@ public final class ChallengeBriefOuterClass {
               emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief.class, emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief.Builder.class);
     }
 
-    public static final int IS_SUCCESS_FIELD_NUMBER = 4;
-    private boolean isSuccess_;
-    /**
-     * <code>bool is_success = 4;</code>
-     * @return The isSuccess.
-     */
-    @java.lang.Override
-    public boolean getIsSuccess() {
-      return isSuccess_;
-    }
-
-    public static final int CHALLENGE_ID_FIELD_NUMBER = 6;
+    public static final int CHALLENGE_ID_FIELD_NUMBER = 5;
     private int challengeId_;
     /**
-     * <code>uint32 challenge_id = 6;</code>
+     * <code>uint32 challenge_id = 5;</code>
      * @return The challengeId.
      */
     @java.lang.Override
@@ -165,26 +154,37 @@ public final class ChallengeBriefOuterClass {
       return challengeId_;
     }
 
-    public static final int CHALLENGE_INDEX_FIELD_NUMBER = 2;
-    private int challengeIndex_;
+    public static final int IS_SUCCESS_FIELD_NUMBER = 10;
+    private boolean isSuccess_;
     /**
-     * <code>uint32 challenge_index = 2;</code>
-     * @return The challengeIndex.
+     * <code>bool is_success = 10;</code>
+     * @return The isSuccess.
      */
     @java.lang.Override
-    public int getChallengeIndex() {
-      return challengeIndex_;
+    public boolean getIsSuccess() {
+      return isSuccess_;
     }
 
-    public static final int CUR_PROGRESS_FIELD_NUMBER = 1;
+    public static final int CUR_PROGRESS_FIELD_NUMBER = 12;
     private int curProgress_;
     /**
-     * <code>uint32 cur_progress = 1;</code>
+     * <code>uint32 cur_progress = 12;</code>
      * @return The curProgress.
      */
     @java.lang.Override
     public int getCurProgress() {
       return curProgress_;
+    }
+
+    public static final int CHALLENGE_INDEX_FIELD_NUMBER = 4;
+    private int challengeIndex_;
+    /**
+     * <code>uint32 challenge_index = 4;</code>
+     * @return The challengeIndex.
+     */
+    @java.lang.Override
+    public int getChallengeIndex() {
+      return challengeIndex_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -201,17 +201,17 @@ public final class ChallengeBriefOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (curProgress_ != 0) {
-        output.writeUInt32(1, curProgress_);
-      }
       if (challengeIndex_ != 0) {
-        output.writeUInt32(2, challengeIndex_);
-      }
-      if (isSuccess_ != false) {
-        output.writeBool(4, isSuccess_);
+        output.writeUInt32(4, challengeIndex_);
       }
       if (challengeId_ != 0) {
-        output.writeUInt32(6, challengeId_);
+        output.writeUInt32(5, challengeId_);
+      }
+      if (isSuccess_ != false) {
+        output.writeBool(10, isSuccess_);
+      }
+      if (curProgress_ != 0) {
+        output.writeUInt32(12, curProgress_);
       }
       unknownFields.writeTo(output);
     }
@@ -222,21 +222,21 @@ public final class ChallengeBriefOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (curProgress_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, curProgress_);
-      }
       if (challengeIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, challengeIndex_);
-      }
-      if (isSuccess_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, isSuccess_);
+          .computeUInt32Size(4, challengeIndex_);
       }
       if (challengeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, challengeId_);
+          .computeUInt32Size(5, challengeId_);
+      }
+      if (isSuccess_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(10, isSuccess_);
+      }
+      if (curProgress_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, curProgress_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -253,14 +253,14 @@ public final class ChallengeBriefOuterClass {
       }
       emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief other = (emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief) obj;
 
-      if (getIsSuccess()
-          != other.getIsSuccess()) return false;
       if (getChallengeId()
           != other.getChallengeId()) return false;
-      if (getChallengeIndex()
-          != other.getChallengeIndex()) return false;
+      if (getIsSuccess()
+          != other.getIsSuccess()) return false;
       if (getCurProgress()
           != other.getCurProgress()) return false;
+      if (getChallengeIndex()
+          != other.getChallengeIndex()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -272,15 +272,15 @@ public final class ChallengeBriefOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + CHALLENGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getChallengeId();
       hash = (37 * hash) + IS_SUCCESS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsSuccess());
-      hash = (37 * hash) + CHALLENGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getChallengeId();
-      hash = (37 * hash) + CHALLENGE_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getChallengeIndex();
       hash = (37 * hash) + CUR_PROGRESS_FIELD_NUMBER;
       hash = (53 * hash) + getCurProgress();
+      hash = (37 * hash) + CHALLENGE_INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getChallengeIndex();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -378,7 +378,7 @@ public final class ChallengeBriefOuterClass {
     }
     /**
      * <pre>
-     * Name: NAHPGADLEJH
+     * Obf: HHKBKHDKCAG
      * </pre>
      *
      * Protobuf type {@code ChallengeBrief}
@@ -418,13 +418,13 @@ public final class ChallengeBriefOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isSuccess_ = false;
-
         challengeId_ = 0;
 
-        challengeIndex_ = 0;
+        isSuccess_ = false;
 
         curProgress_ = 0;
+
+        challengeIndex_ = 0;
 
         return this;
       }
@@ -452,10 +452,10 @@ public final class ChallengeBriefOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief buildPartial() {
         emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief result = new emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief(this);
-        result.isSuccess_ = isSuccess_;
         result.challengeId_ = challengeId_;
-        result.challengeIndex_ = challengeIndex_;
+        result.isSuccess_ = isSuccess_;
         result.curProgress_ = curProgress_;
+        result.challengeIndex_ = challengeIndex_;
         onBuilt();
         return result;
       }
@@ -504,17 +504,17 @@ public final class ChallengeBriefOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief other) {
         if (other == emu.grasscutter.net.proto.ChallengeBriefOuterClass.ChallengeBrief.getDefaultInstance()) return this;
-        if (other.getIsSuccess() != false) {
-          setIsSuccess(other.getIsSuccess());
-        }
         if (other.getChallengeId() != 0) {
           setChallengeId(other.getChallengeId());
         }
-        if (other.getChallengeIndex() != 0) {
-          setChallengeIndex(other.getChallengeIndex());
+        if (other.getIsSuccess() != false) {
+          setIsSuccess(other.getIsSuccess());
         }
         if (other.getCurProgress() != 0) {
           setCurProgress(other.getCurProgress());
+        }
+        if (other.getChallengeIndex() != 0) {
+          setChallengeIndex(other.getChallengeIndex());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -545,40 +545,9 @@ public final class ChallengeBriefOuterClass {
         return this;
       }
 
-      private boolean isSuccess_ ;
-      /**
-       * <code>bool is_success = 4;</code>
-       * @return The isSuccess.
-       */
-      @java.lang.Override
-      public boolean getIsSuccess() {
-        return isSuccess_;
-      }
-      /**
-       * <code>bool is_success = 4;</code>
-       * @param value The isSuccess to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsSuccess(boolean value) {
-        
-        isSuccess_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_success = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsSuccess() {
-        
-        isSuccess_ = false;
-        onChanged();
-        return this;
-      }
-
       private int challengeId_ ;
       /**
-       * <code>uint32 challenge_id = 6;</code>
+       * <code>uint32 challenge_id = 5;</code>
        * @return The challengeId.
        */
       @java.lang.Override
@@ -586,7 +555,7 @@ public final class ChallengeBriefOuterClass {
         return challengeId_;
       }
       /**
-       * <code>uint32 challenge_id = 6;</code>
+       * <code>uint32 challenge_id = 5;</code>
        * @param value The challengeId to set.
        * @return This builder for chaining.
        */
@@ -597,7 +566,7 @@ public final class ChallengeBriefOuterClass {
         return this;
       }
       /**
-       * <code>uint32 challenge_id = 6;</code>
+       * <code>uint32 challenge_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearChallengeId() {
@@ -607,40 +576,40 @@ public final class ChallengeBriefOuterClass {
         return this;
       }
 
-      private int challengeIndex_ ;
+      private boolean isSuccess_ ;
       /**
-       * <code>uint32 challenge_index = 2;</code>
-       * @return The challengeIndex.
+       * <code>bool is_success = 10;</code>
+       * @return The isSuccess.
        */
       @java.lang.Override
-      public int getChallengeIndex() {
-        return challengeIndex_;
+      public boolean getIsSuccess() {
+        return isSuccess_;
       }
       /**
-       * <code>uint32 challenge_index = 2;</code>
-       * @param value The challengeIndex to set.
+       * <code>bool is_success = 10;</code>
+       * @param value The isSuccess to set.
        * @return This builder for chaining.
        */
-      public Builder setChallengeIndex(int value) {
+      public Builder setIsSuccess(boolean value) {
         
-        challengeIndex_ = value;
+        isSuccess_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 challenge_index = 2;</code>
+       * <code>bool is_success = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearChallengeIndex() {
+      public Builder clearIsSuccess() {
         
-        challengeIndex_ = 0;
+        isSuccess_ = false;
         onChanged();
         return this;
       }
 
       private int curProgress_ ;
       /**
-       * <code>uint32 cur_progress = 1;</code>
+       * <code>uint32 cur_progress = 12;</code>
        * @return The curProgress.
        */
       @java.lang.Override
@@ -648,7 +617,7 @@ public final class ChallengeBriefOuterClass {
         return curProgress_;
       }
       /**
-       * <code>uint32 cur_progress = 1;</code>
+       * <code>uint32 cur_progress = 12;</code>
        * @param value The curProgress to set.
        * @return This builder for chaining.
        */
@@ -659,12 +628,43 @@ public final class ChallengeBriefOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cur_progress = 1;</code>
+       * <code>uint32 cur_progress = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearCurProgress() {
         
         curProgress_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int challengeIndex_ ;
+      /**
+       * <code>uint32 challenge_index = 4;</code>
+       * @return The challengeIndex.
+       */
+      @java.lang.Override
+      public int getChallengeIndex() {
+        return challengeIndex_;
+      }
+      /**
+       * <code>uint32 challenge_index = 4;</code>
+       * @param value The challengeIndex to set.
+       * @return This builder for chaining.
+       */
+      public Builder setChallengeIndex(int value) {
+        
+        challengeIndex_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 challenge_index = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearChallengeIndex() {
+        
+        challengeIndex_ = 0;
         onChanged();
         return this;
       }
@@ -736,9 +736,9 @@ public final class ChallengeBriefOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024ChallengeBrief.proto\"i\n\016ChallengeBrief" +
-      "\022\022\n\nis_success\030\004 \001(\010\022\024\n\014challenge_id\030\006 \001" +
-      "(\r\022\027\n\017challenge_index\030\002 \001(\r\022\024\n\014cur_progr" +
-      "ess\030\001 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
+      "\022\024\n\014challenge_id\030\005 \001(\r\022\022\n\nis_success\030\n \001" +
+      "(\010\022\024\n\014cur_progress\030\014 \001(\r\022\027\n\017challenge_in" +
+      "dex\030\004 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
       "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -750,7 +750,7 @@ public final class ChallengeBriefOuterClass {
     internal_static_ChallengeBrief_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ChallengeBrief_descriptor,
-        new java.lang.String[] { "IsSuccess", "ChallengeId", "ChallengeIndex", "CurProgress", });
+        new java.lang.String[] { "ChallengeId", "IsSuccess", "CurProgress", "ChallengeIndex", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

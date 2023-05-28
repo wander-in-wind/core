@@ -19,17 +19,11 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 12;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>map&lt;uint32, uint32&gt; accept_pic_num_map = 6;</code>
+     * <code>map&lt;uint32, uint32&gt; accept_pic_num_map = 1;</code>
      */
     int getAcceptPicNumMapCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; accept_pic_num_map = 6;</code>
+     * <code>map&lt;uint32, uint32&gt; accept_pic_num_map = 1;</code>
      */
     boolean containsAcceptPicNumMap(
         int key);
@@ -40,45 +34,51 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getAcceptPicNumMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; accept_pic_num_map = 6;</code>
+     * <code>map&lt;uint32, uint32&gt; accept_pic_num_map = 1;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getAcceptPicNumMapMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; accept_pic_num_map = 6;</code>
+     * <code>map&lt;uint32, uint32&gt; accept_pic_num_map = 1;</code>
      */
 
     int getAcceptPicNumMapOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; accept_pic_num_map = 6;</code>
+     * <code>map&lt;uint32, uint32&gt; accept_pic_num_map = 1;</code>
      */
 
     int getAcceptPicNumMapOrThrow(
         int key);
 
     /**
-     * <code>repeated uint32 accept_index_list = 7;</code>
+     * <code>repeated uint32 accept_index_list = 11;</code>
      * @return A list containing the acceptIndexList.
      */
     java.util.List<java.lang.Integer> getAcceptIndexListList();
     /**
-     * <code>repeated uint32 accept_index_list = 7;</code>
+     * <code>repeated uint32 accept_index_list = 11;</code>
      * @return The count of acceptIndexList.
      */
     int getAcceptIndexListCount();
     /**
-     * <code>repeated uint32 accept_index_list = 7;</code>
+     * <code>repeated uint32 accept_index_list = 11;</code>
      * @param index The index of the element to return.
      * @return The acceptIndexList at the given index.
      */
     int getAcceptIndexList(int index);
+
+    /**
+     * <code>int32 retcode = 13;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
    * <pre>
-   * Name: NLNHDOFDJAB
-   * CmdId: 2159
+   * CmdId: 2143
+   * Obf: PCNDMAPPDAO
    * </pre>
    *
    * Protobuf type {@code BlessingAcceptAllGivePicRsp}
@@ -127,7 +127,7 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
             case 0:
               done = true;
               break;
-            case 50: {
+            case 10: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 acceptPicNumMap_ = com.google.protobuf.MapField.newMapField(
                     AcceptPicNumMapDefaultEntryHolder.defaultEntry);
@@ -140,7 +140,7 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
                   acceptPicNumMap__.getKey(), acceptPicNumMap__.getValue());
               break;
             }
-            case 56: {
+            case 88: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 acceptIndexList_ = newIntList();
                 mutable_bitField0_ |= 0x00000002;
@@ -148,7 +148,7 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
               acceptIndexList_.addInt(input.readUInt32());
               break;
             }
-            case 58: {
+            case 90: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
@@ -161,7 +161,7 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 96: {
+            case 104: {
 
               retcode_ = input.readInt32();
               break;
@@ -198,7 +198,7 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 6:
+        case 1:
           return internalGetAcceptPicNumMap();
         default:
           throw new RuntimeException(
@@ -213,18 +213,7 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
               emu.grasscutter.net.proto.BlessingAcceptAllGivePicRspOuterClass.BlessingAcceptAllGivePicRsp.class, emu.grasscutter.net.proto.BlessingAcceptAllGivePicRspOuterClass.BlessingAcceptAllGivePicRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 12;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 12;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int ACCEPT_PIC_NUM_MAP_FIELD_NUMBER = 6;
+    public static final int ACCEPT_PIC_NUM_MAP_FIELD_NUMBER = 1;
     private static final class AcceptPicNumMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -251,7 +240,7 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
       return internalGetAcceptPicNumMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; accept_pic_num_map = 6;</code>
+     * <code>map&lt;uint32, uint32&gt; accept_pic_num_map = 1;</code>
      */
 
     @java.lang.Override
@@ -269,7 +258,7 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
       return getAcceptPicNumMapMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; accept_pic_num_map = 6;</code>
+     * <code>map&lt;uint32, uint32&gt; accept_pic_num_map = 1;</code>
      */
     @java.lang.Override
 
@@ -277,7 +266,7 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
       return internalGetAcceptPicNumMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; accept_pic_num_map = 6;</code>
+     * <code>map&lt;uint32, uint32&gt; accept_pic_num_map = 1;</code>
      */
     @java.lang.Override
 
@@ -290,7 +279,7 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; accept_pic_num_map = 6;</code>
+     * <code>map&lt;uint32, uint32&gt; accept_pic_num_map = 1;</code>
      */
     @java.lang.Override
 
@@ -305,10 +294,10 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
       return map.get(key);
     }
 
-    public static final int ACCEPT_INDEX_LIST_FIELD_NUMBER = 7;
+    public static final int ACCEPT_INDEX_LIST_FIELD_NUMBER = 11;
     private com.google.protobuf.Internal.IntList acceptIndexList_;
     /**
-     * <code>repeated uint32 accept_index_list = 7;</code>
+     * <code>repeated uint32 accept_index_list = 11;</code>
      * @return A list containing the acceptIndexList.
      */
     @java.lang.Override
@@ -317,14 +306,14 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
       return acceptIndexList_;
     }
     /**
-     * <code>repeated uint32 accept_index_list = 7;</code>
+     * <code>repeated uint32 accept_index_list = 11;</code>
      * @return The count of acceptIndexList.
      */
     public int getAcceptIndexListCount() {
       return acceptIndexList_.size();
     }
     /**
-     * <code>repeated uint32 accept_index_list = 7;</code>
+     * <code>repeated uint32 accept_index_list = 11;</code>
      * @param index The index of the element to return.
      * @return The acceptIndexList at the given index.
      */
@@ -332,6 +321,17 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
       return acceptIndexList_.getInt(index);
     }
     private int acceptIndexListMemoizedSerializedSize = -1;
+
+    public static final int RETCODE_FIELD_NUMBER = 13;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 13;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -353,16 +353,16 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
           output,
           internalGetAcceptPicNumMap(),
           AcceptPicNumMapDefaultEntryHolder.defaultEntry,
-          6);
+          1);
       if (getAcceptIndexListList().size() > 0) {
-        output.writeUInt32NoTag(58);
+        output.writeUInt32NoTag(90);
         output.writeUInt32NoTag(acceptIndexListMemoizedSerializedSize);
       }
       for (int i = 0; i < acceptIndexList_.size(); i++) {
         output.writeUInt32NoTag(acceptIndexList_.getInt(i));
       }
       if (retcode_ != 0) {
-        output.writeInt32(12, retcode_);
+        output.writeInt32(13, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -381,7 +381,7 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(6, acceptPicNumMap__);
+            .computeMessageSize(1, acceptPicNumMap__);
       }
       {
         int dataSize = 0;
@@ -399,7 +399,7 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(12, retcode_);
+          .computeInt32Size(13, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -416,12 +416,12 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
       }
       emu.grasscutter.net.proto.BlessingAcceptAllGivePicRspOuterClass.BlessingAcceptAllGivePicRsp other = (emu.grasscutter.net.proto.BlessingAcceptAllGivePicRspOuterClass.BlessingAcceptAllGivePicRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (!internalGetAcceptPicNumMap().equals(
           other.internalGetAcceptPicNumMap())) return false;
       if (!getAcceptIndexListList()
           .equals(other.getAcceptIndexListList())) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -433,8 +433,6 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       if (!internalGetAcceptPicNumMap().getMap().isEmpty()) {
         hash = (37 * hash) + ACCEPT_PIC_NUM_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetAcceptPicNumMap().hashCode();
@@ -443,6 +441,8 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
         hash = (37 * hash) + ACCEPT_INDEX_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getAcceptIndexListList().hashCode();
       }
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -540,8 +540,8 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
     }
     /**
      * <pre>
-     * Name: NLNHDOFDJAB
-     * CmdId: 2159
+     * CmdId: 2143
+     * Obf: PCNDMAPPDAO
      * </pre>
      *
      * Protobuf type {@code BlessingAcceptAllGivePicRsp}
@@ -559,7 +559,7 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 6:
+          case 1:
             return internalGetAcceptPicNumMap();
           default:
             throw new RuntimeException(
@@ -570,7 +570,7 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 6:
+          case 1:
             return internalGetMutableAcceptPicNumMap();
           default:
             throw new RuntimeException(
@@ -603,11 +603,11 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         internalGetMutableAcceptPicNumMap().clear();
         acceptIndexList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
+        retcode_ = 0;
+
         return this;
       }
 
@@ -635,7 +635,6 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
       public emu.grasscutter.net.proto.BlessingAcceptAllGivePicRspOuterClass.BlessingAcceptAllGivePicRsp buildPartial() {
         emu.grasscutter.net.proto.BlessingAcceptAllGivePicRspOuterClass.BlessingAcceptAllGivePicRsp result = new emu.grasscutter.net.proto.BlessingAcceptAllGivePicRspOuterClass.BlessingAcceptAllGivePicRsp(this);
         int from_bitField0_ = bitField0_;
-        result.retcode_ = retcode_;
         result.acceptPicNumMap_ = internalGetAcceptPicNumMap();
         result.acceptPicNumMap_.makeImmutable();
         if (((bitField0_ & 0x00000002) != 0)) {
@@ -643,6 +642,7 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
           bitField0_ = (bitField0_ & ~0x00000002);
         }
         result.acceptIndexList_ = acceptIndexList_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -691,9 +691,6 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BlessingAcceptAllGivePicRspOuterClass.BlessingAcceptAllGivePicRsp other) {
         if (other == emu.grasscutter.net.proto.BlessingAcceptAllGivePicRspOuterClass.BlessingAcceptAllGivePicRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         internalGetMutableAcceptPicNumMap().mergeFrom(
             other.internalGetAcceptPicNumMap());
         if (!other.acceptIndexList_.isEmpty()) {
@@ -705,6 +702,9 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
             acceptIndexList_.addAll(other.acceptIndexList_);
           }
           onChanged();
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -736,37 +736,6 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
       }
       private int bitField0_;
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 12;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 12;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private com.google.protobuf.MapField<
           java.lang.Integer, java.lang.Integer> acceptPicNumMap_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
@@ -794,7 +763,7 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
         return internalGetAcceptPicNumMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; accept_pic_num_map = 6;</code>
+       * <code>map&lt;uint32, uint32&gt; accept_pic_num_map = 1;</code>
        */
 
       @java.lang.Override
@@ -812,7 +781,7 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
         return getAcceptPicNumMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; accept_pic_num_map = 6;</code>
+       * <code>map&lt;uint32, uint32&gt; accept_pic_num_map = 1;</code>
        */
       @java.lang.Override
 
@@ -820,7 +789,7 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
         return internalGetAcceptPicNumMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; accept_pic_num_map = 6;</code>
+       * <code>map&lt;uint32, uint32&gt; accept_pic_num_map = 1;</code>
        */
       @java.lang.Override
 
@@ -833,7 +802,7 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; accept_pic_num_map = 6;</code>
+       * <code>map&lt;uint32, uint32&gt; accept_pic_num_map = 1;</code>
        */
       @java.lang.Override
 
@@ -854,7 +823,7 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; accept_pic_num_map = 6;</code>
+       * <code>map&lt;uint32, uint32&gt; accept_pic_num_map = 1;</code>
        */
 
       public Builder removeAcceptPicNumMap(
@@ -873,7 +842,7 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
         return internalGetMutableAcceptPicNumMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; accept_pic_num_map = 6;</code>
+       * <code>map&lt;uint32, uint32&gt; accept_pic_num_map = 1;</code>
        */
       public Builder putAcceptPicNumMap(
           int key,
@@ -885,7 +854,7 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; accept_pic_num_map = 6;</code>
+       * <code>map&lt;uint32, uint32&gt; accept_pic_num_map = 1;</code>
        */
 
       public Builder putAllAcceptPicNumMap(
@@ -903,7 +872,7 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 accept_index_list = 7;</code>
+       * <code>repeated uint32 accept_index_list = 11;</code>
        * @return A list containing the acceptIndexList.
        */
       public java.util.List<java.lang.Integer>
@@ -912,14 +881,14 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
                  java.util.Collections.unmodifiableList(acceptIndexList_) : acceptIndexList_;
       }
       /**
-       * <code>repeated uint32 accept_index_list = 7;</code>
+       * <code>repeated uint32 accept_index_list = 11;</code>
        * @return The count of acceptIndexList.
        */
       public int getAcceptIndexListCount() {
         return acceptIndexList_.size();
       }
       /**
-       * <code>repeated uint32 accept_index_list = 7;</code>
+       * <code>repeated uint32 accept_index_list = 11;</code>
        * @param index The index of the element to return.
        * @return The acceptIndexList at the given index.
        */
@@ -927,7 +896,7 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
         return acceptIndexList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 accept_index_list = 7;</code>
+       * <code>repeated uint32 accept_index_list = 11;</code>
        * @param index The index to set the value at.
        * @param value The acceptIndexList to set.
        * @return This builder for chaining.
@@ -940,7 +909,7 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 accept_index_list = 7;</code>
+       * <code>repeated uint32 accept_index_list = 11;</code>
        * @param value The acceptIndexList to add.
        * @return This builder for chaining.
        */
@@ -951,7 +920,7 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 accept_index_list = 7;</code>
+       * <code>repeated uint32 accept_index_list = 11;</code>
        * @param values The acceptIndexList to add.
        * @return This builder for chaining.
        */
@@ -964,12 +933,43 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 accept_index_list = 7;</code>
+       * <code>repeated uint32 accept_index_list = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearAcceptIndexList() {
         acceptIndexList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 13;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 13;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -1046,10 +1046,10 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!BlessingAcceptAllGivePicRsp.proto\"\320\001\n\033" +
-      "BlessingAcceptAllGivePicRsp\022\017\n\007retcode\030\014" +
-      " \001(\005\022M\n\022accept_pic_num_map\030\006 \003(\01321.Bless" +
-      "ingAcceptAllGivePicRsp.AcceptPicNumMapEn" +
-      "try\022\031\n\021accept_index_list\030\007 \003(\r\0326\n\024Accept" +
+      "BlessingAcceptAllGivePicRsp\022M\n\022accept_pi" +
+      "c_num_map\030\001 \003(\01321.BlessingAcceptAllGiveP" +
+      "icRsp.AcceptPicNumMapEntry\022\031\n\021accept_ind" +
+      "ex_list\030\013 \003(\r\022\017\n\007retcode\030\r \001(\005\0326\n\024Accept" +
       "PicNumMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001" +
       "(\r:\0028\001B\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
@@ -1063,7 +1063,7 @@ public final class BlessingAcceptAllGivePicRspOuterClass {
     internal_static_BlessingAcceptAllGivePicRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BlessingAcceptAllGivePicRsp_descriptor,
-        new java.lang.String[] { "Retcode", "AcceptPicNumMap", "AcceptIndexList", });
+        new java.lang.String[] { "AcceptPicNumMap", "AcceptIndexList", "Retcode", });
     internal_static_BlessingAcceptAllGivePicRsp_AcceptPicNumMapEntry_descriptor =
       internal_static_BlessingAcceptAllGivePicRsp_descriptor.getNestedTypes().get(0);
     internal_static_BlessingAcceptAllGivePicRsp_AcceptPicNumMapEntry_fieldAccessorTable = new

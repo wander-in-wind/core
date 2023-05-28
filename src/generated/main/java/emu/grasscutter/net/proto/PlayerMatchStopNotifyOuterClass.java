@@ -19,6 +19,12 @@ public final class PlayerMatchStopNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>uint32 host_uid = 12;</code>
+     * @return The hostUid.
+     */
+    int getHostUid();
+
+    /**
      * <code>.MatchReason reason = 9;</code>
      * @return The enum numeric value on the wire for reason.
      */
@@ -28,17 +34,11 @@ public final class PlayerMatchStopNotifyOuterClass {
      * @return The reason.
      */
     emu.grasscutter.net.proto.MatchReasonOuterClass.MatchReason getReason();
-
-    /**
-     * <code>uint32 host_uid = 13;</code>
-     * @return The hostUid.
-     */
-    int getHostUid();
   }
   /**
    * <pre>
-   * Name: BOLIJNNEPBK
-   * CmdId: 4165
+   * CmdId: 4189
+   * Obf: DHAEFJHDJNH
    * </pre>
    *
    * Protobuf type {@code PlayerMatchStopNotify}
@@ -92,7 +92,7 @@ public final class PlayerMatchStopNotifyOuterClass {
               reason_ = rawValue;
               break;
             }
-            case 104: {
+            case 96: {
 
               hostUid_ = input.readUInt32();
               break;
@@ -129,6 +129,17 @@ public final class PlayerMatchStopNotifyOuterClass {
               emu.grasscutter.net.proto.PlayerMatchStopNotifyOuterClass.PlayerMatchStopNotify.class, emu.grasscutter.net.proto.PlayerMatchStopNotifyOuterClass.PlayerMatchStopNotify.Builder.class);
     }
 
+    public static final int HOST_UID_FIELD_NUMBER = 12;
+    private int hostUid_;
+    /**
+     * <code>uint32 host_uid = 12;</code>
+     * @return The hostUid.
+     */
+    @java.lang.Override
+    public int getHostUid() {
+      return hostUid_;
+    }
+
     public static final int REASON_FIELD_NUMBER = 9;
     private int reason_;
     /**
@@ -146,17 +157,6 @@ public final class PlayerMatchStopNotifyOuterClass {
       @SuppressWarnings("deprecation")
       emu.grasscutter.net.proto.MatchReasonOuterClass.MatchReason result = emu.grasscutter.net.proto.MatchReasonOuterClass.MatchReason.valueOf(reason_);
       return result == null ? emu.grasscutter.net.proto.MatchReasonOuterClass.MatchReason.UNRECOGNIZED : result;
-    }
-
-    public static final int HOST_UID_FIELD_NUMBER = 13;
-    private int hostUid_;
-    /**
-     * <code>uint32 host_uid = 13;</code>
-     * @return The hostUid.
-     */
-    @java.lang.Override
-    public int getHostUid() {
-      return hostUid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -177,7 +177,7 @@ public final class PlayerMatchStopNotifyOuterClass {
         output.writeEnum(9, reason_);
       }
       if (hostUid_ != 0) {
-        output.writeUInt32(13, hostUid_);
+        output.writeUInt32(12, hostUid_);
       }
       unknownFields.writeTo(output);
     }
@@ -194,7 +194,7 @@ public final class PlayerMatchStopNotifyOuterClass {
       }
       if (hostUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, hostUid_);
+          .computeUInt32Size(12, hostUid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -211,9 +211,9 @@ public final class PlayerMatchStopNotifyOuterClass {
       }
       emu.grasscutter.net.proto.PlayerMatchStopNotifyOuterClass.PlayerMatchStopNotify other = (emu.grasscutter.net.proto.PlayerMatchStopNotifyOuterClass.PlayerMatchStopNotify) obj;
 
-      if (reason_ != other.reason_) return false;
       if (getHostUid()
           != other.getHostUid()) return false;
+      if (reason_ != other.reason_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -225,10 +225,10 @@ public final class PlayerMatchStopNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + REASON_FIELD_NUMBER;
-      hash = (53 * hash) + reason_;
       hash = (37 * hash) + HOST_UID_FIELD_NUMBER;
       hash = (53 * hash) + getHostUid();
+      hash = (37 * hash) + REASON_FIELD_NUMBER;
+      hash = (53 * hash) + reason_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -326,8 +326,8 @@ public final class PlayerMatchStopNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: BOLIJNNEPBK
-     * CmdId: 4165
+     * CmdId: 4189
+     * Obf: DHAEFJHDJNH
      * </pre>
      *
      * Protobuf type {@code PlayerMatchStopNotify}
@@ -367,9 +367,9 @@ public final class PlayerMatchStopNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        reason_ = 0;
-
         hostUid_ = 0;
+
+        reason_ = 0;
 
         return this;
       }
@@ -397,8 +397,8 @@ public final class PlayerMatchStopNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PlayerMatchStopNotifyOuterClass.PlayerMatchStopNotify buildPartial() {
         emu.grasscutter.net.proto.PlayerMatchStopNotifyOuterClass.PlayerMatchStopNotify result = new emu.grasscutter.net.proto.PlayerMatchStopNotifyOuterClass.PlayerMatchStopNotify(this);
-        result.reason_ = reason_;
         result.hostUid_ = hostUid_;
+        result.reason_ = reason_;
         onBuilt();
         return result;
       }
@@ -447,11 +447,11 @@ public final class PlayerMatchStopNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PlayerMatchStopNotifyOuterClass.PlayerMatchStopNotify other) {
         if (other == emu.grasscutter.net.proto.PlayerMatchStopNotifyOuterClass.PlayerMatchStopNotify.getDefaultInstance()) return this;
-        if (other.reason_ != 0) {
-          setReasonValue(other.getReasonValue());
-        }
         if (other.getHostUid() != 0) {
           setHostUid(other.getHostUid());
+        }
+        if (other.reason_ != 0) {
+          setReasonValue(other.getReasonValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -479,6 +479,37 @@ public final class PlayerMatchStopNotifyOuterClass {
             mergeFrom(parsedMessage);
           }
         }
+        return this;
+      }
+
+      private int hostUid_ ;
+      /**
+       * <code>uint32 host_uid = 12;</code>
+       * @return The hostUid.
+       */
+      @java.lang.Override
+      public int getHostUid() {
+        return hostUid_;
+      }
+      /**
+       * <code>uint32 host_uid = 12;</code>
+       * @param value The hostUid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHostUid(int value) {
+        
+        hostUid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 host_uid = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHostUid() {
+        
+        hostUid_ = 0;
+        onChanged();
         return this;
       }
 
@@ -532,37 +563,6 @@ public final class PlayerMatchStopNotifyOuterClass {
       public Builder clearReason() {
         
         reason_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int hostUid_ ;
-      /**
-       * <code>uint32 host_uid = 13;</code>
-       * @return The hostUid.
-       */
-      @java.lang.Override
-      public int getHostUid() {
-        return hostUid_;
-      }
-      /**
-       * <code>uint32 host_uid = 13;</code>
-       * @param value The hostUid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHostUid(int value) {
-        
-        hostUid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 host_uid = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearHostUid() {
-        
-        hostUid_ = 0;
         onChanged();
         return this;
       }
@@ -634,9 +634,9 @@ public final class PlayerMatchStopNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033PlayerMatchStopNotify.proto\032\021MatchReas" +
-      "on.proto\"G\n\025PlayerMatchStopNotify\022\034\n\006rea" +
-      "son\030\t \001(\0162\014.MatchReason\022\020\n\010host_uid\030\r \001(" +
-      "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "on.proto\"G\n\025PlayerMatchStopNotify\022\020\n\010hos" +
+      "t_uid\030\014 \001(\r\022\034\n\006reason\030\t \001(\0162\014.MatchReaso" +
+      "nB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -648,7 +648,7 @@ public final class PlayerMatchStopNotifyOuterClass {
     internal_static_PlayerMatchStopNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerMatchStopNotify_descriptor,
-        new java.lang.String[] { "Reason", "HostUid", });
+        new java.lang.String[] { "HostUid", "Reason", });
     emu.grasscutter.net.proto.MatchReasonOuterClass.getDescriptor();
   }
 

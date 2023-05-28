@@ -41,7 +41,7 @@ public final class ShapeSphereOuterClass {
   }
   /**
    * <pre>
-   * Name: BAECECBNOKK
+   * Obf: OODCAOFHFPD
    * </pre>
    *
    * Protobuf type {@code ShapeSphere}
@@ -350,7 +350,7 @@ public final class ShapeSphereOuterClass {
     }
     /**
      * <pre>
-     * Name: BAECECBNOKK
+     * Obf: OODCAOFHFPD
      * </pre>
      *
      * Protobuf type {@code ShapeSphere}

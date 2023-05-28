@@ -19,21 +19,21 @@ public final class DraftInviteResultNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 draft_id = 5;</code>
-     * @return The draftId.
-     */
-    int getDraftId();
-
-    /**
-     * <code>bool is_all_argee = 12;</code>
+     * <code>bool is_all_argee = 11;</code>
      * @return The isAllArgee.
      */
     boolean getIsAllArgee();
+
+    /**
+     * <code>uint32 draft_id = 13;</code>
+     * @return The draftId.
+     */
+    int getDraftId();
   }
   /**
    * <pre>
-   * Name: JEGCILFCLNK
-   * CmdId: 5465
+   * CmdId: 5487
+   * Obf: GHNMNMFPBHC
    * </pre>
    *
    * Protobuf type {@code DraftInviteResultNotify}
@@ -80,14 +80,14 @@ public final class DraftInviteResultNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
-
-              draftId_ = input.readUInt32();
-              break;
-            }
-            case 96: {
+            case 88: {
 
               isAllArgee_ = input.readBool();
+              break;
+            }
+            case 104: {
+
+              draftId_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,26 +122,26 @@ public final class DraftInviteResultNotifyOuterClass {
               emu.grasscutter.net.proto.DraftInviteResultNotifyOuterClass.DraftInviteResultNotify.class, emu.grasscutter.net.proto.DraftInviteResultNotifyOuterClass.DraftInviteResultNotify.Builder.class);
     }
 
-    public static final int DRAFT_ID_FIELD_NUMBER = 5;
-    private int draftId_;
-    /**
-     * <code>uint32 draft_id = 5;</code>
-     * @return The draftId.
-     */
-    @java.lang.Override
-    public int getDraftId() {
-      return draftId_;
-    }
-
-    public static final int IS_ALL_ARGEE_FIELD_NUMBER = 12;
+    public static final int IS_ALL_ARGEE_FIELD_NUMBER = 11;
     private boolean isAllArgee_;
     /**
-     * <code>bool is_all_argee = 12;</code>
+     * <code>bool is_all_argee = 11;</code>
      * @return The isAllArgee.
      */
     @java.lang.Override
     public boolean getIsAllArgee() {
       return isAllArgee_;
+    }
+
+    public static final int DRAFT_ID_FIELD_NUMBER = 13;
+    private int draftId_;
+    /**
+     * <code>uint32 draft_id = 13;</code>
+     * @return The draftId.
+     */
+    @java.lang.Override
+    public int getDraftId() {
+      return draftId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -158,11 +158,11 @@ public final class DraftInviteResultNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (draftId_ != 0) {
-        output.writeUInt32(5, draftId_);
-      }
       if (isAllArgee_ != false) {
-        output.writeBool(12, isAllArgee_);
+        output.writeBool(11, isAllArgee_);
+      }
+      if (draftId_ != 0) {
+        output.writeUInt32(13, draftId_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class DraftInviteResultNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (draftId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, draftId_);
-      }
       if (isAllArgee_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, isAllArgee_);
+          .computeBoolSize(11, isAllArgee_);
+      }
+      if (draftId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, draftId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +196,10 @@ public final class DraftInviteResultNotifyOuterClass {
       }
       emu.grasscutter.net.proto.DraftInviteResultNotifyOuterClass.DraftInviteResultNotify other = (emu.grasscutter.net.proto.DraftInviteResultNotifyOuterClass.DraftInviteResultNotify) obj;
 
-      if (getDraftId()
-          != other.getDraftId()) return false;
       if (getIsAllArgee()
           != other.getIsAllArgee()) return false;
+      if (getDraftId()
+          != other.getDraftId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,11 +211,11 @@ public final class DraftInviteResultNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + DRAFT_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getDraftId();
       hash = (37 * hash) + IS_ALL_ARGEE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsAllArgee());
+      hash = (37 * hash) + DRAFT_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getDraftId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -313,8 +313,8 @@ public final class DraftInviteResultNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: JEGCILFCLNK
-     * CmdId: 5465
+     * CmdId: 5487
+     * Obf: GHNMNMFPBHC
      * </pre>
      *
      * Protobuf type {@code DraftInviteResultNotify}
@@ -354,9 +354,9 @@ public final class DraftInviteResultNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        draftId_ = 0;
-
         isAllArgee_ = false;
+
+        draftId_ = 0;
 
         return this;
       }
@@ -384,8 +384,8 @@ public final class DraftInviteResultNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.DraftInviteResultNotifyOuterClass.DraftInviteResultNotify buildPartial() {
         emu.grasscutter.net.proto.DraftInviteResultNotifyOuterClass.DraftInviteResultNotify result = new emu.grasscutter.net.proto.DraftInviteResultNotifyOuterClass.DraftInviteResultNotify(this);
-        result.draftId_ = draftId_;
         result.isAllArgee_ = isAllArgee_;
+        result.draftId_ = draftId_;
         onBuilt();
         return result;
       }
@@ -434,11 +434,11 @@ public final class DraftInviteResultNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DraftInviteResultNotifyOuterClass.DraftInviteResultNotify other) {
         if (other == emu.grasscutter.net.proto.DraftInviteResultNotifyOuterClass.DraftInviteResultNotify.getDefaultInstance()) return this;
-        if (other.getDraftId() != 0) {
-          setDraftId(other.getDraftId());
-        }
         if (other.getIsAllArgee() != false) {
           setIsAllArgee(other.getIsAllArgee());
+        }
+        if (other.getDraftId() != 0) {
+          setDraftId(other.getDraftId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -469,40 +469,9 @@ public final class DraftInviteResultNotifyOuterClass {
         return this;
       }
 
-      private int draftId_ ;
-      /**
-       * <code>uint32 draft_id = 5;</code>
-       * @return The draftId.
-       */
-      @java.lang.Override
-      public int getDraftId() {
-        return draftId_;
-      }
-      /**
-       * <code>uint32 draft_id = 5;</code>
-       * @param value The draftId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDraftId(int value) {
-        
-        draftId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 draft_id = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDraftId() {
-        
-        draftId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isAllArgee_ ;
       /**
-       * <code>bool is_all_argee = 12;</code>
+       * <code>bool is_all_argee = 11;</code>
        * @return The isAllArgee.
        */
       @java.lang.Override
@@ -510,7 +479,7 @@ public final class DraftInviteResultNotifyOuterClass {
         return isAllArgee_;
       }
       /**
-       * <code>bool is_all_argee = 12;</code>
+       * <code>bool is_all_argee = 11;</code>
        * @param value The isAllArgee to set.
        * @return This builder for chaining.
        */
@@ -521,12 +490,43 @@ public final class DraftInviteResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_all_argee = 12;</code>
+       * <code>bool is_all_argee = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsAllArgee() {
         
         isAllArgee_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int draftId_ ;
+      /**
+       * <code>uint32 draft_id = 13;</code>
+       * @return The draftId.
+       */
+      @java.lang.Override
+      public int getDraftId() {
+        return draftId_;
+      }
+      /**
+       * <code>uint32 draft_id = 13;</code>
+       * @param value The draftId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDraftId(int value) {
+        
+        draftId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 draft_id = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDraftId() {
+        
+        draftId_ = 0;
         onChanged();
         return this;
       }
@@ -598,8 +598,8 @@ public final class DraftInviteResultNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035DraftInviteResultNotify.proto\"A\n\027Draft" +
-      "InviteResultNotify\022\020\n\010draft_id\030\005 \001(\r\022\024\n\014" +
-      "is_all_argee\030\014 \001(\010B\033\n\031emu.grasscutter.ne" +
+      "InviteResultNotify\022\024\n\014is_all_argee\030\013 \001(\010" +
+      "\022\020\n\010draft_id\030\r \001(\rB\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -611,7 +611,7 @@ public final class DraftInviteResultNotifyOuterClass {
     internal_static_DraftInviteResultNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DraftInviteResultNotify_descriptor,
-        new java.lang.String[] { "DraftId", "IsAllArgee", });
+        new java.lang.String[] { "IsAllArgee", "DraftId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

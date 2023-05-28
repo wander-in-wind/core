@@ -19,27 +19,27 @@ public final class TakeReunionMissionRewardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 reward_id = 3;</code>
-     * @return The rewardId.
-     */
-    int getRewardId();
-
-    /**
-     * <code>uint32 reward_index = 4;</code>
+     * <code>uint32 reward_index = 11;</code>
      * @return The rewardIndex.
      */
     int getRewardIndex();
 
     /**
-     * <code>uint32 mission_id = 1;</code>
+     * <code>uint32 mission_id = 5;</code>
      * @return The missionId.
      */
     int getMissionId();
+
+    /**
+     * <code>uint32 reward_id = 6;</code>
+     * @return The rewardId.
+     */
+    int getRewardId();
   }
   /**
    * <pre>
-   * Name: KEMGFBIJKCM
-   * CmdId: 5052
+   * CmdId: 5092
+   * Obf: ODCOABFIGPA
    * </pre>
    *
    * Protobuf type {@code TakeReunionMissionRewardReq}
@@ -86,17 +86,17 @@ public final class TakeReunionMissionRewardReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 40: {
 
               missionId_ = input.readUInt32();
               break;
             }
-            case 24: {
+            case 48: {
 
               rewardId_ = input.readUInt32();
               break;
             }
-            case 32: {
+            case 88: {
 
               rewardIndex_ = input.readUInt32();
               break;
@@ -133,21 +133,10 @@ public final class TakeReunionMissionRewardReqOuterClass {
               emu.grasscutter.net.proto.TakeReunionMissionRewardReqOuterClass.TakeReunionMissionRewardReq.class, emu.grasscutter.net.proto.TakeReunionMissionRewardReqOuterClass.TakeReunionMissionRewardReq.Builder.class);
     }
 
-    public static final int REWARD_ID_FIELD_NUMBER = 3;
-    private int rewardId_;
-    /**
-     * <code>uint32 reward_id = 3;</code>
-     * @return The rewardId.
-     */
-    @java.lang.Override
-    public int getRewardId() {
-      return rewardId_;
-    }
-
-    public static final int REWARD_INDEX_FIELD_NUMBER = 4;
+    public static final int REWARD_INDEX_FIELD_NUMBER = 11;
     private int rewardIndex_;
     /**
-     * <code>uint32 reward_index = 4;</code>
+     * <code>uint32 reward_index = 11;</code>
      * @return The rewardIndex.
      */
     @java.lang.Override
@@ -155,15 +144,26 @@ public final class TakeReunionMissionRewardReqOuterClass {
       return rewardIndex_;
     }
 
-    public static final int MISSION_ID_FIELD_NUMBER = 1;
+    public static final int MISSION_ID_FIELD_NUMBER = 5;
     private int missionId_;
     /**
-     * <code>uint32 mission_id = 1;</code>
+     * <code>uint32 mission_id = 5;</code>
      * @return The missionId.
      */
     @java.lang.Override
     public int getMissionId() {
       return missionId_;
+    }
+
+    public static final int REWARD_ID_FIELD_NUMBER = 6;
+    private int rewardId_;
+    /**
+     * <code>uint32 reward_id = 6;</code>
+     * @return The rewardId.
+     */
+    @java.lang.Override
+    public int getRewardId() {
+      return rewardId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -181,13 +181,13 @@ public final class TakeReunionMissionRewardReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (missionId_ != 0) {
-        output.writeUInt32(1, missionId_);
+        output.writeUInt32(5, missionId_);
       }
       if (rewardId_ != 0) {
-        output.writeUInt32(3, rewardId_);
+        output.writeUInt32(6, rewardId_);
       }
       if (rewardIndex_ != 0) {
-        output.writeUInt32(4, rewardIndex_);
+        output.writeUInt32(11, rewardIndex_);
       }
       unknownFields.writeTo(output);
     }
@@ -200,15 +200,15 @@ public final class TakeReunionMissionRewardReqOuterClass {
       size = 0;
       if (missionId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, missionId_);
+          .computeUInt32Size(5, missionId_);
       }
       if (rewardId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, rewardId_);
+          .computeUInt32Size(6, rewardId_);
       }
       if (rewardIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, rewardIndex_);
+          .computeUInt32Size(11, rewardIndex_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -225,12 +225,12 @@ public final class TakeReunionMissionRewardReqOuterClass {
       }
       emu.grasscutter.net.proto.TakeReunionMissionRewardReqOuterClass.TakeReunionMissionRewardReq other = (emu.grasscutter.net.proto.TakeReunionMissionRewardReqOuterClass.TakeReunionMissionRewardReq) obj;
 
-      if (getRewardId()
-          != other.getRewardId()) return false;
       if (getRewardIndex()
           != other.getRewardIndex()) return false;
       if (getMissionId()
           != other.getMissionId()) return false;
+      if (getRewardId()
+          != other.getRewardId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -242,12 +242,12 @@ public final class TakeReunionMissionRewardReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + REWARD_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getRewardId();
       hash = (37 * hash) + REWARD_INDEX_FIELD_NUMBER;
       hash = (53 * hash) + getRewardIndex();
       hash = (37 * hash) + MISSION_ID_FIELD_NUMBER;
       hash = (53 * hash) + getMissionId();
+      hash = (37 * hash) + REWARD_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getRewardId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -345,8 +345,8 @@ public final class TakeReunionMissionRewardReqOuterClass {
     }
     /**
      * <pre>
-     * Name: KEMGFBIJKCM
-     * CmdId: 5052
+     * CmdId: 5092
+     * Obf: ODCOABFIGPA
      * </pre>
      *
      * Protobuf type {@code TakeReunionMissionRewardReq}
@@ -386,11 +386,11 @@ public final class TakeReunionMissionRewardReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        rewardId_ = 0;
-
         rewardIndex_ = 0;
 
         missionId_ = 0;
+
+        rewardId_ = 0;
 
         return this;
       }
@@ -418,9 +418,9 @@ public final class TakeReunionMissionRewardReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.TakeReunionMissionRewardReqOuterClass.TakeReunionMissionRewardReq buildPartial() {
         emu.grasscutter.net.proto.TakeReunionMissionRewardReqOuterClass.TakeReunionMissionRewardReq result = new emu.grasscutter.net.proto.TakeReunionMissionRewardReqOuterClass.TakeReunionMissionRewardReq(this);
-        result.rewardId_ = rewardId_;
         result.rewardIndex_ = rewardIndex_;
         result.missionId_ = missionId_;
+        result.rewardId_ = rewardId_;
         onBuilt();
         return result;
       }
@@ -469,14 +469,14 @@ public final class TakeReunionMissionRewardReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.TakeReunionMissionRewardReqOuterClass.TakeReunionMissionRewardReq other) {
         if (other == emu.grasscutter.net.proto.TakeReunionMissionRewardReqOuterClass.TakeReunionMissionRewardReq.getDefaultInstance()) return this;
-        if (other.getRewardId() != 0) {
-          setRewardId(other.getRewardId());
-        }
         if (other.getRewardIndex() != 0) {
           setRewardIndex(other.getRewardIndex());
         }
         if (other.getMissionId() != 0) {
           setMissionId(other.getMissionId());
+        }
+        if (other.getRewardId() != 0) {
+          setRewardId(other.getRewardId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -507,40 +507,9 @@ public final class TakeReunionMissionRewardReqOuterClass {
         return this;
       }
 
-      private int rewardId_ ;
-      /**
-       * <code>uint32 reward_id = 3;</code>
-       * @return The rewardId.
-       */
-      @java.lang.Override
-      public int getRewardId() {
-        return rewardId_;
-      }
-      /**
-       * <code>uint32 reward_id = 3;</code>
-       * @param value The rewardId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRewardId(int value) {
-        
-        rewardId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 reward_id = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRewardId() {
-        
-        rewardId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int rewardIndex_ ;
       /**
-       * <code>uint32 reward_index = 4;</code>
+       * <code>uint32 reward_index = 11;</code>
        * @return The rewardIndex.
        */
       @java.lang.Override
@@ -548,7 +517,7 @@ public final class TakeReunionMissionRewardReqOuterClass {
         return rewardIndex_;
       }
       /**
-       * <code>uint32 reward_index = 4;</code>
+       * <code>uint32 reward_index = 11;</code>
        * @param value The rewardIndex to set.
        * @return This builder for chaining.
        */
@@ -559,7 +528,7 @@ public final class TakeReunionMissionRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 reward_index = 4;</code>
+       * <code>uint32 reward_index = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearRewardIndex() {
@@ -571,7 +540,7 @@ public final class TakeReunionMissionRewardReqOuterClass {
 
       private int missionId_ ;
       /**
-       * <code>uint32 mission_id = 1;</code>
+       * <code>uint32 mission_id = 5;</code>
        * @return The missionId.
        */
       @java.lang.Override
@@ -579,7 +548,7 @@ public final class TakeReunionMissionRewardReqOuterClass {
         return missionId_;
       }
       /**
-       * <code>uint32 mission_id = 1;</code>
+       * <code>uint32 mission_id = 5;</code>
        * @param value The missionId to set.
        * @return This builder for chaining.
        */
@@ -590,12 +559,43 @@ public final class TakeReunionMissionRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 mission_id = 1;</code>
+       * <code>uint32 mission_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearMissionId() {
         
         missionId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int rewardId_ ;
+      /**
+       * <code>uint32 reward_id = 6;</code>
+       * @return The rewardId.
+       */
+      @java.lang.Override
+      public int getRewardId() {
+        return rewardId_;
+      }
+      /**
+       * <code>uint32 reward_id = 6;</code>
+       * @param value The rewardId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRewardId(int value) {
+        
+        rewardId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 reward_id = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRewardId() {
+        
+        rewardId_ = 0;
         onChanged();
         return this;
       }
@@ -667,9 +667,9 @@ public final class TakeReunionMissionRewardReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!TakeReunionMissionRewardReq.proto\"Z\n\033T" +
-      "akeReunionMissionRewardReq\022\021\n\treward_id\030" +
-      "\003 \001(\r\022\024\n\014reward_index\030\004 \001(\r\022\022\n\nmission_i" +
-      "d\030\001 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "akeReunionMissionRewardReq\022\024\n\014reward_ind" +
+      "ex\030\013 \001(\r\022\022\n\nmission_id\030\005 \001(\r\022\021\n\treward_i" +
+      "d\030\006 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -681,7 +681,7 @@ public final class TakeReunionMissionRewardReqOuterClass {
     internal_static_TakeReunionMissionRewardReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TakeReunionMissionRewardReq_descriptor,
-        new java.lang.String[] { "RewardId", "RewardIndex", "MissionId", });
+        new java.lang.String[] { "RewardIndex", "MissionId", "RewardId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -20,8 +20,8 @@ public final class SignInInfoReqOuterClass {
   }
   /**
    * <pre>
-   * Name: BCGADBEENDB
-   * CmdId: 2554
+   * CmdId: 2502
+   * Obf: GEOAIECJEOJ
    * </pre>
    *
    * Protobuf type {@code SignInInfoReq}
@@ -246,8 +246,8 @@ public final class SignInInfoReqOuterClass {
     }
     /**
      * <pre>
-     * Name: BCGADBEENDB
-     * CmdId: 2554
+     * CmdId: 2502
+     * Obf: GEOAIECJEOJ
      * </pre>
      *
      * Protobuf type {@code SignInInfoReq}

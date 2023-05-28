@@ -19,21 +19,21 @@ public final class MultistagePlayFinishStageReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 play_index = 3;</code>
-     * @return The playIndex.
-     */
-    int getPlayIndex();
-
-    /**
-     * <code>uint32 group_id = 4;</code>
+     * <code>uint32 group_id = 5;</code>
      * @return The groupId.
      */
     int getGroupId();
+
+    /**
+     * <code>uint32 play_index = 15;</code>
+     * @return The playIndex.
+     */
+    int getPlayIndex();
   }
   /**
    * <pre>
-   * Name: MJIHKJDFHAK
-   * CmdId: 5375
+   * CmdId: 5396
+   * Obf: JOELDAJAJIH
    * </pre>
    *
    * Protobuf type {@code MultistagePlayFinishStageReq}
@@ -80,14 +80,14 @@ public final class MultistagePlayFinishStageReqOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              playIndex_ = input.readUInt32();
-              break;
-            }
-            case 32: {
+            case 40: {
 
               groupId_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              playIndex_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,26 +122,26 @@ public final class MultistagePlayFinishStageReqOuterClass {
               emu.grasscutter.net.proto.MultistagePlayFinishStageReqOuterClass.MultistagePlayFinishStageReq.class, emu.grasscutter.net.proto.MultistagePlayFinishStageReqOuterClass.MultistagePlayFinishStageReq.Builder.class);
     }
 
-    public static final int PLAY_INDEX_FIELD_NUMBER = 3;
-    private int playIndex_;
-    /**
-     * <code>uint32 play_index = 3;</code>
-     * @return The playIndex.
-     */
-    @java.lang.Override
-    public int getPlayIndex() {
-      return playIndex_;
-    }
-
-    public static final int GROUP_ID_FIELD_NUMBER = 4;
+    public static final int GROUP_ID_FIELD_NUMBER = 5;
     private int groupId_;
     /**
-     * <code>uint32 group_id = 4;</code>
+     * <code>uint32 group_id = 5;</code>
      * @return The groupId.
      */
     @java.lang.Override
     public int getGroupId() {
       return groupId_;
+    }
+
+    public static final int PLAY_INDEX_FIELD_NUMBER = 15;
+    private int playIndex_;
+    /**
+     * <code>uint32 play_index = 15;</code>
+     * @return The playIndex.
+     */
+    @java.lang.Override
+    public int getPlayIndex() {
+      return playIndex_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -158,11 +158,11 @@ public final class MultistagePlayFinishStageReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (playIndex_ != 0) {
-        output.writeUInt32(3, playIndex_);
-      }
       if (groupId_ != 0) {
-        output.writeUInt32(4, groupId_);
+        output.writeUInt32(5, groupId_);
+      }
+      if (playIndex_ != 0) {
+        output.writeUInt32(15, playIndex_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class MultistagePlayFinishStageReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (playIndex_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, playIndex_);
-      }
       if (groupId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, groupId_);
+          .computeUInt32Size(5, groupId_);
+      }
+      if (playIndex_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, playIndex_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +196,10 @@ public final class MultistagePlayFinishStageReqOuterClass {
       }
       emu.grasscutter.net.proto.MultistagePlayFinishStageReqOuterClass.MultistagePlayFinishStageReq other = (emu.grasscutter.net.proto.MultistagePlayFinishStageReqOuterClass.MultistagePlayFinishStageReq) obj;
 
-      if (getPlayIndex()
-          != other.getPlayIndex()) return false;
       if (getGroupId()
           != other.getGroupId()) return false;
+      if (getPlayIndex()
+          != other.getPlayIndex()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +211,10 @@ public final class MultistagePlayFinishStageReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + PLAY_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getPlayIndex();
       hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGroupId();
+      hash = (37 * hash) + PLAY_INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getPlayIndex();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +312,8 @@ public final class MultistagePlayFinishStageReqOuterClass {
     }
     /**
      * <pre>
-     * Name: MJIHKJDFHAK
-     * CmdId: 5375
+     * CmdId: 5396
+     * Obf: JOELDAJAJIH
      * </pre>
      *
      * Protobuf type {@code MultistagePlayFinishStageReq}
@@ -353,9 +353,9 @@ public final class MultistagePlayFinishStageReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        playIndex_ = 0;
-
         groupId_ = 0;
+
+        playIndex_ = 0;
 
         return this;
       }
@@ -383,8 +383,8 @@ public final class MultistagePlayFinishStageReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.MultistagePlayFinishStageReqOuterClass.MultistagePlayFinishStageReq buildPartial() {
         emu.grasscutter.net.proto.MultistagePlayFinishStageReqOuterClass.MultistagePlayFinishStageReq result = new emu.grasscutter.net.proto.MultistagePlayFinishStageReqOuterClass.MultistagePlayFinishStageReq(this);
-        result.playIndex_ = playIndex_;
         result.groupId_ = groupId_;
+        result.playIndex_ = playIndex_;
         onBuilt();
         return result;
       }
@@ -433,11 +433,11 @@ public final class MultistagePlayFinishStageReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MultistagePlayFinishStageReqOuterClass.MultistagePlayFinishStageReq other) {
         if (other == emu.grasscutter.net.proto.MultistagePlayFinishStageReqOuterClass.MultistagePlayFinishStageReq.getDefaultInstance()) return this;
-        if (other.getPlayIndex() != 0) {
-          setPlayIndex(other.getPlayIndex());
-        }
         if (other.getGroupId() != 0) {
           setGroupId(other.getGroupId());
+        }
+        if (other.getPlayIndex() != 0) {
+          setPlayIndex(other.getPlayIndex());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,40 +468,9 @@ public final class MultistagePlayFinishStageReqOuterClass {
         return this;
       }
 
-      private int playIndex_ ;
-      /**
-       * <code>uint32 play_index = 3;</code>
-       * @return The playIndex.
-       */
-      @java.lang.Override
-      public int getPlayIndex() {
-        return playIndex_;
-      }
-      /**
-       * <code>uint32 play_index = 3;</code>
-       * @param value The playIndex to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPlayIndex(int value) {
-        
-        playIndex_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 play_index = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPlayIndex() {
-        
-        playIndex_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int groupId_ ;
       /**
-       * <code>uint32 group_id = 4;</code>
+       * <code>uint32 group_id = 5;</code>
        * @return The groupId.
        */
       @java.lang.Override
@@ -509,7 +478,7 @@ public final class MultistagePlayFinishStageReqOuterClass {
         return groupId_;
       }
       /**
-       * <code>uint32 group_id = 4;</code>
+       * <code>uint32 group_id = 5;</code>
        * @param value The groupId to set.
        * @return This builder for chaining.
        */
@@ -520,12 +489,43 @@ public final class MultistagePlayFinishStageReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 group_id = 4;</code>
+       * <code>uint32 group_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearGroupId() {
         
         groupId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int playIndex_ ;
+      /**
+       * <code>uint32 play_index = 15;</code>
+       * @return The playIndex.
+       */
+      @java.lang.Override
+      public int getPlayIndex() {
+        return playIndex_;
+      }
+      /**
+       * <code>uint32 play_index = 15;</code>
+       * @param value The playIndex to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPlayIndex(int value) {
+        
+        playIndex_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 play_index = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPlayIndex() {
+        
+        playIndex_ = 0;
         onChanged();
         return this;
       }
@@ -597,8 +597,8 @@ public final class MultistagePlayFinishStageReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\"MultistagePlayFinishStageReq.proto\"D\n\034" +
-      "MultistagePlayFinishStageReq\022\022\n\nplay_ind" +
-      "ex\030\003 \001(\r\022\020\n\010group_id\030\004 \001(\rB\033\n\031emu.grassc" +
+      "MultistagePlayFinishStageReq\022\020\n\010group_id" +
+      "\030\005 \001(\r\022\022\n\nplay_index\030\017 \001(\rB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -610,7 +610,7 @@ public final class MultistagePlayFinishStageReqOuterClass {
     internal_static_MultistagePlayFinishStageReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MultistagePlayFinishStageReq_descriptor,
-        new java.lang.String[] { "PlayIndex", "GroupId", });
+        new java.lang.String[] { "GroupId", "PlayIndex", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

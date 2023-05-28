@@ -34,15 +34,15 @@ public final class GadgetCustomTreeInfoNotifyOuterClass {
     emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfoOrBuilder getCustomGadgetTreeInfoOrBuilder();
 
     /**
-     * <code>uint32 gadget_entity_id = 8;</code>
+     * <code>uint32 gadget_entity_id = 2;</code>
      * @return The gadgetEntityId.
      */
     int getGadgetEntityId();
   }
   /**
    * <pre>
-   * Name: HDLODDFAAEF
-   * CmdId: 833
+   * CmdId: 842
+   * Obf: JCECAPKAIAG
    * </pre>
    *
    * Protobuf type {@code GadgetCustomTreeInfoNotify}
@@ -89,6 +89,11 @@ public final class GadgetCustomTreeInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
+            case 16: {
+
+              gadgetEntityId_ = input.readUInt32();
+              break;
+            }
             case 34: {
               emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.Builder subBuilder = null;
               if (customGadgetTreeInfo_ != null) {
@@ -100,11 +105,6 @@ public final class GadgetCustomTreeInfoNotifyOuterClass {
                 customGadgetTreeInfo_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 64: {
-
-              gadgetEntityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -165,10 +165,10 @@ public final class GadgetCustomTreeInfoNotifyOuterClass {
       return getCustomGadgetTreeInfo();
     }
 
-    public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 8;
+    public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 2;
     private int gadgetEntityId_;
     /**
-     * <code>uint32 gadget_entity_id = 8;</code>
+     * <code>uint32 gadget_entity_id = 2;</code>
      * @return The gadgetEntityId.
      */
     @java.lang.Override
@@ -190,11 +190,11 @@ public final class GadgetCustomTreeInfoNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (gadgetEntityId_ != 0) {
+        output.writeUInt32(2, gadgetEntityId_);
+      }
       if (customGadgetTreeInfo_ != null) {
         output.writeMessage(4, getCustomGadgetTreeInfo());
-      }
-      if (gadgetEntityId_ != 0) {
-        output.writeUInt32(8, gadgetEntityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -205,13 +205,13 @@ public final class GadgetCustomTreeInfoNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (gadgetEntityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, gadgetEntityId_);
+      }
       if (customGadgetTreeInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(4, getCustomGadgetTreeInfo());
-      }
-      if (gadgetEntityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, gadgetEntityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -349,8 +349,8 @@ public final class GadgetCustomTreeInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: HDLODDFAAEF
-     * CmdId: 833
+     * CmdId: 842
+     * Obf: JCECAPKAIAG
      * </pre>
      *
      * Protobuf type {@code GadgetCustomTreeInfoNotify}
@@ -634,7 +634,7 @@ public final class GadgetCustomTreeInfoNotifyOuterClass {
 
       private int gadgetEntityId_ ;
       /**
-       * <code>uint32 gadget_entity_id = 8;</code>
+       * <code>uint32 gadget_entity_id = 2;</code>
        * @return The gadgetEntityId.
        */
       @java.lang.Override
@@ -642,7 +642,7 @@ public final class GadgetCustomTreeInfoNotifyOuterClass {
         return gadgetEntityId_;
       }
       /**
-       * <code>uint32 gadget_entity_id = 8;</code>
+       * <code>uint32 gadget_entity_id = 2;</code>
        * @param value The gadgetEntityId to set.
        * @return This builder for chaining.
        */
@@ -653,7 +653,7 @@ public final class GadgetCustomTreeInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gadget_entity_id = 8;</code>
+       * <code>uint32 gadget_entity_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearGadgetEntityId() {
@@ -733,7 +733,7 @@ public final class GadgetCustomTreeInfoNotifyOuterClass {
       "omGadgetTreeInfo.proto\"n\n\032GadgetCustomTr" +
       "eeInfoNotify\0226\n\027custom_gadget_tree_info\030" +
       "\004 \001(\0132\025.CustomGadgetTreeInfo\022\030\n\020gadget_e" +
-      "ntity_id\030\010 \001(\rB\033\n\031emu.grasscutter.net.pr" +
+      "ntity_id\030\002 \001(\rB\033\n\031emu.grasscutter.net.pr" +
       "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,39 +19,39 @@ public final class SetFriendRemarkNameRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_clear_remark = 7;</code>
-     * @return The isClearRemark.
-     */
-    boolean getIsClearRemark();
-
-    /**
-     * <code>int32 retcode = 10;</code>
+     * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>string remark_name = 14;</code>
+     * <code>uint32 uid = 8;</code>
+     * @return The uid.
+     */
+    int getUid();
+
+    /**
+     * <code>bool is_clear_remark = 14;</code>
+     * @return The isClearRemark.
+     */
+    boolean getIsClearRemark();
+
+    /**
+     * <code>string remark_name = 6;</code>
      * @return The remarkName.
      */
     java.lang.String getRemarkName();
     /**
-     * <code>string remark_name = 14;</code>
+     * <code>string remark_name = 6;</code>
      * @return The bytes for remarkName.
      */
     com.google.protobuf.ByteString
         getRemarkNameBytes();
-
-    /**
-     * <code>uint32 uid = 1;</code>
-     * @return The uid.
-     */
-    int getUid();
   }
   /**
    * <pre>
-   * Name: FDEANIDKEID
-   * CmdId: 4097
+   * CmdId: 4041
+   * Obf: ACNCOFKGGMB
    * </pre>
    *
    * Protobuf type {@code SetFriendRemarkNameRsp}
@@ -99,25 +99,25 @@ public final class SetFriendRemarkNameRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              uid_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              isClearRemark_ = input.readBool();
-              break;
-            }
-            case 80: {
+            case 32: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 114: {
+            case 50: {
               java.lang.String s = input.readStringRequireUtf8();
 
               remarkName_ = s;
+              break;
+            }
+            case 64: {
+
+              uid_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              isClearRemark_ = input.readBool();
               break;
             }
             default: {
@@ -152,21 +152,10 @@ public final class SetFriendRemarkNameRspOuterClass {
               emu.grasscutter.net.proto.SetFriendRemarkNameRspOuterClass.SetFriendRemarkNameRsp.class, emu.grasscutter.net.proto.SetFriendRemarkNameRspOuterClass.SetFriendRemarkNameRsp.Builder.class);
     }
 
-    public static final int IS_CLEAR_REMARK_FIELD_NUMBER = 7;
-    private boolean isClearRemark_;
-    /**
-     * <code>bool is_clear_remark = 7;</code>
-     * @return The isClearRemark.
-     */
-    @java.lang.Override
-    public boolean getIsClearRemark() {
-      return isClearRemark_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 10;
+    public static final int RETCODE_FIELD_NUMBER = 4;
     private int retcode_;
     /**
-     * <code>int32 retcode = 10;</code>
+     * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -174,10 +163,32 @@ public final class SetFriendRemarkNameRspOuterClass {
       return retcode_;
     }
 
-    public static final int REMARK_NAME_FIELD_NUMBER = 14;
+    public static final int UID_FIELD_NUMBER = 8;
+    private int uid_;
+    /**
+     * <code>uint32 uid = 8;</code>
+     * @return The uid.
+     */
+    @java.lang.Override
+    public int getUid() {
+      return uid_;
+    }
+
+    public static final int IS_CLEAR_REMARK_FIELD_NUMBER = 14;
+    private boolean isClearRemark_;
+    /**
+     * <code>bool is_clear_remark = 14;</code>
+     * @return The isClearRemark.
+     */
+    @java.lang.Override
+    public boolean getIsClearRemark() {
+      return isClearRemark_;
+    }
+
+    public static final int REMARK_NAME_FIELD_NUMBER = 6;
     private volatile java.lang.Object remarkName_;
     /**
-     * <code>string remark_name = 14;</code>
+     * <code>string remark_name = 6;</code>
      * @return The remarkName.
      */
     @java.lang.Override
@@ -194,7 +205,7 @@ public final class SetFriendRemarkNameRspOuterClass {
       }
     }
     /**
-     * <code>string remark_name = 14;</code>
+     * <code>string remark_name = 6;</code>
      * @return The bytes for remarkName.
      */
     @java.lang.Override
@@ -212,17 +223,6 @@ public final class SetFriendRemarkNameRspOuterClass {
       }
     }
 
-    public static final int UID_FIELD_NUMBER = 1;
-    private int uid_;
-    /**
-     * <code>uint32 uid = 1;</code>
-     * @return The uid.
-     */
-    @java.lang.Override
-    public int getUid() {
-      return uid_;
-    }
-
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -237,17 +237,17 @@ public final class SetFriendRemarkNameRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (uid_ != 0) {
-        output.writeUInt32(1, uid_);
-      }
-      if (isClearRemark_ != false) {
-        output.writeBool(7, isClearRemark_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(10, retcode_);
+        output.writeInt32(4, retcode_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(remarkName_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 14, remarkName_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, remarkName_);
+      }
+      if (uid_ != 0) {
+        output.writeUInt32(8, uid_);
+      }
+      if (isClearRemark_ != false) {
+        output.writeBool(14, isClearRemark_);
       }
       unknownFields.writeTo(output);
     }
@@ -258,20 +258,20 @@ public final class SetFriendRemarkNameRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(4, retcode_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(remarkName_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, remarkName_);
+      }
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, uid_);
+          .computeUInt32Size(8, uid_);
       }
       if (isClearRemark_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isClearRemark_);
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(10, retcode_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(remarkName_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(14, remarkName_);
+          .computeBoolSize(14, isClearRemark_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -288,14 +288,14 @@ public final class SetFriendRemarkNameRspOuterClass {
       }
       emu.grasscutter.net.proto.SetFriendRemarkNameRspOuterClass.SetFriendRemarkNameRsp other = (emu.grasscutter.net.proto.SetFriendRemarkNameRspOuterClass.SetFriendRemarkNameRsp) obj;
 
-      if (getIsClearRemark()
-          != other.getIsClearRemark()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (!getRemarkName()
-          .equals(other.getRemarkName())) return false;
       if (getUid()
           != other.getUid()) return false;
+      if (getIsClearRemark()
+          != other.getIsClearRemark()) return false;
+      if (!getRemarkName()
+          .equals(other.getRemarkName())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -307,15 +307,15 @@ public final class SetFriendRemarkNameRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + UID_FIELD_NUMBER;
+      hash = (53 * hash) + getUid();
       hash = (37 * hash) + IS_CLEAR_REMARK_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsClearRemark());
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + REMARK_NAME_FIELD_NUMBER;
       hash = (53 * hash) + getRemarkName().hashCode();
-      hash = (37 * hash) + UID_FIELD_NUMBER;
-      hash = (53 * hash) + getUid();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -413,8 +413,8 @@ public final class SetFriendRemarkNameRspOuterClass {
     }
     /**
      * <pre>
-     * Name: FDEANIDKEID
-     * CmdId: 4097
+     * CmdId: 4041
+     * Obf: ACNCOFKGGMB
      * </pre>
      *
      * Protobuf type {@code SetFriendRemarkNameRsp}
@@ -454,13 +454,13 @@ public final class SetFriendRemarkNameRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isClearRemark_ = false;
-
         retcode_ = 0;
 
-        remarkName_ = "";
-
         uid_ = 0;
+
+        isClearRemark_ = false;
+
+        remarkName_ = "";
 
         return this;
       }
@@ -488,10 +488,10 @@ public final class SetFriendRemarkNameRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SetFriendRemarkNameRspOuterClass.SetFriendRemarkNameRsp buildPartial() {
         emu.grasscutter.net.proto.SetFriendRemarkNameRspOuterClass.SetFriendRemarkNameRsp result = new emu.grasscutter.net.proto.SetFriendRemarkNameRspOuterClass.SetFriendRemarkNameRsp(this);
-        result.isClearRemark_ = isClearRemark_;
         result.retcode_ = retcode_;
-        result.remarkName_ = remarkName_;
         result.uid_ = uid_;
+        result.isClearRemark_ = isClearRemark_;
+        result.remarkName_ = remarkName_;
         onBuilt();
         return result;
       }
@@ -540,18 +540,18 @@ public final class SetFriendRemarkNameRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SetFriendRemarkNameRspOuterClass.SetFriendRemarkNameRsp other) {
         if (other == emu.grasscutter.net.proto.SetFriendRemarkNameRspOuterClass.SetFriendRemarkNameRsp.getDefaultInstance()) return this;
-        if (other.getIsClearRemark() != false) {
-          setIsClearRemark(other.getIsClearRemark());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getUid() != 0) {
+          setUid(other.getUid());
+        }
+        if (other.getIsClearRemark() != false) {
+          setIsClearRemark(other.getIsClearRemark());
         }
         if (!other.getRemarkName().isEmpty()) {
           remarkName_ = other.remarkName_;
           onChanged();
-        }
-        if (other.getUid() != 0) {
-          setUid(other.getUid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -582,40 +582,9 @@ public final class SetFriendRemarkNameRspOuterClass {
         return this;
       }
 
-      private boolean isClearRemark_ ;
-      /**
-       * <code>bool is_clear_remark = 7;</code>
-       * @return The isClearRemark.
-       */
-      @java.lang.Override
-      public boolean getIsClearRemark() {
-        return isClearRemark_;
-      }
-      /**
-       * <code>bool is_clear_remark = 7;</code>
-       * @param value The isClearRemark to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsClearRemark(boolean value) {
-        
-        isClearRemark_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_clear_remark = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsClearRemark() {
-        
-        isClearRemark_ = false;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 10;</code>
+       * <code>int32 retcode = 4;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -623,7 +592,7 @@ public final class SetFriendRemarkNameRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 10;</code>
+       * <code>int32 retcode = 4;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -634,7 +603,7 @@ public final class SetFriendRemarkNameRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 10;</code>
+       * <code>int32 retcode = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -644,9 +613,71 @@ public final class SetFriendRemarkNameRspOuterClass {
         return this;
       }
 
+      private int uid_ ;
+      /**
+       * <code>uint32 uid = 8;</code>
+       * @return The uid.
+       */
+      @java.lang.Override
+      public int getUid() {
+        return uid_;
+      }
+      /**
+       * <code>uint32 uid = 8;</code>
+       * @param value The uid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUid(int value) {
+        
+        uid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 uid = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUid() {
+        
+        uid_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isClearRemark_ ;
+      /**
+       * <code>bool is_clear_remark = 14;</code>
+       * @return The isClearRemark.
+       */
+      @java.lang.Override
+      public boolean getIsClearRemark() {
+        return isClearRemark_;
+      }
+      /**
+       * <code>bool is_clear_remark = 14;</code>
+       * @param value The isClearRemark to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsClearRemark(boolean value) {
+        
+        isClearRemark_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_clear_remark = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsClearRemark() {
+        
+        isClearRemark_ = false;
+        onChanged();
+        return this;
+      }
+
       private java.lang.Object remarkName_ = "";
       /**
-       * <code>string remark_name = 14;</code>
+       * <code>string remark_name = 6;</code>
        * @return The remarkName.
        */
       public java.lang.String getRemarkName() {
@@ -662,7 +693,7 @@ public final class SetFriendRemarkNameRspOuterClass {
         }
       }
       /**
-       * <code>string remark_name = 14;</code>
+       * <code>string remark_name = 6;</code>
        * @return The bytes for remarkName.
        */
       public com.google.protobuf.ByteString
@@ -679,7 +710,7 @@ public final class SetFriendRemarkNameRspOuterClass {
         }
       }
       /**
-       * <code>string remark_name = 14;</code>
+       * <code>string remark_name = 6;</code>
        * @param value The remarkName to set.
        * @return This builder for chaining.
        */
@@ -694,7 +725,7 @@ public final class SetFriendRemarkNameRspOuterClass {
         return this;
       }
       /**
-       * <code>string remark_name = 14;</code>
+       * <code>string remark_name = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearRemarkName() {
@@ -704,7 +735,7 @@ public final class SetFriendRemarkNameRspOuterClass {
         return this;
       }
       /**
-       * <code>string remark_name = 14;</code>
+       * <code>string remark_name = 6;</code>
        * @param value The bytes for remarkName to set.
        * @return This builder for chaining.
        */
@@ -716,37 +747,6 @@ public final class SetFriendRemarkNameRspOuterClass {
   checkByteStringIsUtf8(value);
         
         remarkName_ = value;
-        onChanged();
-        return this;
-      }
-
-      private int uid_ ;
-      /**
-       * <code>uint32 uid = 1;</code>
-       * @return The uid.
-       */
-      @java.lang.Override
-      public int getUid() {
-        return uid_;
-      }
-      /**
-       * <code>uint32 uid = 1;</code>
-       * @param value The uid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUid(int value) {
-        
-        uid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 uid = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUid() {
-        
-        uid_ = 0;
         onChanged();
         return this;
       }
@@ -818,9 +818,9 @@ public final class SetFriendRemarkNameRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034SetFriendRemarkNameRsp.proto\"d\n\026SetFri" +
-      "endRemarkNameRsp\022\027\n\017is_clear_remark\030\007 \001(" +
-      "\010\022\017\n\007retcode\030\n \001(\005\022\023\n\013remark_name\030\016 \001(\t\022" +
-      "\013\n\003uid\030\001 \001(\rB\033\n\031emu.grasscutter.net.prot" +
+      "endRemarkNameRsp\022\017\n\007retcode\030\004 \001(\005\022\013\n\003uid" +
+      "\030\010 \001(\r\022\027\n\017is_clear_remark\030\016 \001(\010\022\023\n\013remar" +
+      "k_name\030\006 \001(\tB\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -832,7 +832,7 @@ public final class SetFriendRemarkNameRspOuterClass {
     internal_static_SetFriendRemarkNameRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SetFriendRemarkNameRsp_descriptor,
-        new java.lang.String[] { "IsClearRemark", "Retcode", "RemarkName", "Uid", });
+        new java.lang.String[] { "Retcode", "Uid", "IsClearRemark", "RemarkName", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,15 +19,15 @@ public final class UnlockCoopChapterReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 chapter_id = 10;</code>
+     * <code>uint32 chapter_id = 8;</code>
      * @return The chapterId.
      */
     int getChapterId();
   }
   /**
    * <pre>
-   * Name: MHOMBDAKFEI
-   * CmdId: 1985
+   * CmdId: 1953
+   * Obf: OCNALLJIACD
    * </pre>
    *
    * Protobuf type {@code UnlockCoopChapterReq}
@@ -74,7 +74,7 @@ public final class UnlockCoopChapterReqOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 64: {
 
               chapterId_ = input.readUInt32();
               break;
@@ -111,10 +111,10 @@ public final class UnlockCoopChapterReqOuterClass {
               emu.grasscutter.net.proto.UnlockCoopChapterReqOuterClass.UnlockCoopChapterReq.class, emu.grasscutter.net.proto.UnlockCoopChapterReqOuterClass.UnlockCoopChapterReq.Builder.class);
     }
 
-    public static final int CHAPTER_ID_FIELD_NUMBER = 10;
+    public static final int CHAPTER_ID_FIELD_NUMBER = 8;
     private int chapterId_;
     /**
-     * <code>uint32 chapter_id = 10;</code>
+     * <code>uint32 chapter_id = 8;</code>
      * @return The chapterId.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class UnlockCoopChapterReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (chapterId_ != 0) {
-        output.writeUInt32(10, chapterId_);
+        output.writeUInt32(8, chapterId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class UnlockCoopChapterReqOuterClass {
       size = 0;
       if (chapterId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, chapterId_);
+          .computeUInt32Size(8, chapterId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class UnlockCoopChapterReqOuterClass {
     }
     /**
      * <pre>
-     * Name: MHOMBDAKFEI
-     * CmdId: 1985
+     * CmdId: 1953
+     * Obf: OCNALLJIACD
      * </pre>
      *
      * Protobuf type {@code UnlockCoopChapterReq}
@@ -431,7 +431,7 @@ public final class UnlockCoopChapterReqOuterClass {
 
       private int chapterId_ ;
       /**
-       * <code>uint32 chapter_id = 10;</code>
+       * <code>uint32 chapter_id = 8;</code>
        * @return The chapterId.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class UnlockCoopChapterReqOuterClass {
         return chapterId_;
       }
       /**
-       * <code>uint32 chapter_id = 10;</code>
+       * <code>uint32 chapter_id = 8;</code>
        * @param value The chapterId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class UnlockCoopChapterReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 chapter_id = 10;</code>
+       * <code>uint32 chapter_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearChapterId() {
@@ -527,7 +527,7 @@ public final class UnlockCoopChapterReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032UnlockCoopChapterReq.proto\"*\n\024UnlockCo" +
-      "opChapterReq\022\022\n\nchapter_id\030\n \001(\rB\033\n\031emu." +
+      "opChapterReq\022\022\n\nchapter_id\030\010 \001(\rB\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

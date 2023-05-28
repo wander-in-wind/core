@@ -19,15 +19,15 @@ public final class ExitFishingRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * Name: ILDJIKECIKM
-   * CmdId: 5826
+   * CmdId: 5831
+   * Obf: OFJKPOHEAFK
    * </pre>
    *
    * Protobuf type {@code ExitFishingRsp}
@@ -74,7 +74,7 @@ public final class ExitFishingRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 80: {
 
               retcode_ = input.readInt32();
               break;
@@ -111,10 +111,10 @@ public final class ExitFishingRspOuterClass {
               emu.grasscutter.net.proto.ExitFishingRspOuterClass.ExitFishingRsp.class, emu.grasscutter.net.proto.ExitFishingRspOuterClass.ExitFishingRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 1;
+    public static final int RETCODE_FIELD_NUMBER = 10;
     private int retcode_;
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class ExitFishingRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(1, retcode_);
+        output.writeInt32(10, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class ExitFishingRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, retcode_);
+          .computeInt32Size(10, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class ExitFishingRspOuterClass {
     }
     /**
      * <pre>
-     * Name: ILDJIKECIKM
-     * CmdId: 5826
+     * CmdId: 5831
+     * Obf: OFJKPOHEAFK
      * </pre>
      *
      * Protobuf type {@code ExitFishingRsp}
@@ -431,7 +431,7 @@ public final class ExitFishingRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 10;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class ExitFishingRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 10;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class ExitFishingRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -527,7 +527,7 @@ public final class ExitFishingRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024ExitFishingRsp.proto\"!\n\016ExitFishingRsp" +
-      "\022\017\n\007retcode\030\001 \001(\005B\033\n\031emu.grasscutter.net" +
+      "\022\017\n\007retcode\030\n \001(\005B\033\n\031emu.grasscutter.net" +
       ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

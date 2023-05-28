@@ -19,21 +19,21 @@ public final class SingleRestartBrickBreakerReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_dungeon = 1;</code>
+     * <code>bool is_dungeon = 5;</code>
      * @return The isDungeon.
      */
     boolean getIsDungeon();
 
     /**
-     * <code>uint32 level_id = 5;</code>
+     * <code>uint32 level_id = 15;</code>
      * @return The levelId.
      */
     int getLevelId();
   }
   /**
    * <pre>
-   * Name: IINNLEJKOBH
-   * CmdId: 21486
+   * CmdId: 21458
+   * Obf: DDJBPDICNCB
    * </pre>
    *
    * Protobuf type {@code SingleRestartBrickBreakerReq}
@@ -80,12 +80,12 @@ public final class SingleRestartBrickBreakerReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 40: {
 
               isDungeon_ = input.readBool();
               break;
             }
-            case 40: {
+            case 120: {
 
               levelId_ = input.readUInt32();
               break;
@@ -122,10 +122,10 @@ public final class SingleRestartBrickBreakerReqOuterClass {
               emu.grasscutter.net.proto.SingleRestartBrickBreakerReqOuterClass.SingleRestartBrickBreakerReq.class, emu.grasscutter.net.proto.SingleRestartBrickBreakerReqOuterClass.SingleRestartBrickBreakerReq.Builder.class);
     }
 
-    public static final int IS_DUNGEON_FIELD_NUMBER = 1;
+    public static final int IS_DUNGEON_FIELD_NUMBER = 5;
     private boolean isDungeon_;
     /**
-     * <code>bool is_dungeon = 1;</code>
+     * <code>bool is_dungeon = 5;</code>
      * @return The isDungeon.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class SingleRestartBrickBreakerReqOuterClass {
       return isDungeon_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 5;
+    public static final int LEVEL_ID_FIELD_NUMBER = 15;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 5;</code>
+     * <code>uint32 level_id = 15;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -159,10 +159,10 @@ public final class SingleRestartBrickBreakerReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isDungeon_ != false) {
-        output.writeBool(1, isDungeon_);
+        output.writeBool(5, isDungeon_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(5, levelId_);
+        output.writeUInt32(15, levelId_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +175,11 @@ public final class SingleRestartBrickBreakerReqOuterClass {
       size = 0;
       if (isDungeon_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, isDungeon_);
+          .computeBoolSize(5, isDungeon_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, levelId_);
+          .computeUInt32Size(15, levelId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,8 +313,8 @@ public final class SingleRestartBrickBreakerReqOuterClass {
     }
     /**
      * <pre>
-     * Name: IINNLEJKOBH
-     * CmdId: 21486
+     * CmdId: 21458
+     * Obf: DDJBPDICNCB
      * </pre>
      *
      * Protobuf type {@code SingleRestartBrickBreakerReq}
@@ -471,7 +471,7 @@ public final class SingleRestartBrickBreakerReqOuterClass {
 
       private boolean isDungeon_ ;
       /**
-       * <code>bool is_dungeon = 1;</code>
+       * <code>bool is_dungeon = 5;</code>
        * @return The isDungeon.
        */
       @java.lang.Override
@@ -479,7 +479,7 @@ public final class SingleRestartBrickBreakerReqOuterClass {
         return isDungeon_;
       }
       /**
-       * <code>bool is_dungeon = 1;</code>
+       * <code>bool is_dungeon = 5;</code>
        * @param value The isDungeon to set.
        * @return This builder for chaining.
        */
@@ -490,7 +490,7 @@ public final class SingleRestartBrickBreakerReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_dungeon = 1;</code>
+       * <code>bool is_dungeon = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsDungeon() {
@@ -502,7 +502,7 @@ public final class SingleRestartBrickBreakerReqOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 5;</code>
+       * <code>uint32 level_id = 15;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -510,7 +510,7 @@ public final class SingleRestartBrickBreakerReqOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 5;</code>
+       * <code>uint32 level_id = 15;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -521,7 +521,7 @@ public final class SingleRestartBrickBreakerReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 5;</code>
+       * <code>uint32 level_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -599,7 +599,7 @@ public final class SingleRestartBrickBreakerReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"SingleRestartBrickBreakerReq.proto\"D\n\034" +
       "SingleRestartBrickBreakerReq\022\022\n\nis_dunge" +
-      "on\030\001 \001(\010\022\020\n\010level_id\030\005 \001(\rB\033\n\031emu.grassc" +
+      "on\030\005 \001(\010\022\020\n\010level_id\030\017 \001(\rB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -20,8 +20,8 @@ public final class PlayerForceExitReqOuterClass {
   }
   /**
    * <pre>
-   * Name: ELGONJCDJGH
-   * CmdId: 106
+   * CmdId: 160
+   * Obf: JOALHHCCOMM
    * </pre>
    *
    * Protobuf type {@code PlayerForceExitReq}
@@ -246,8 +246,8 @@ public final class PlayerForceExitReqOuterClass {
     }
     /**
      * <pre>
-     * Name: ELGONJCDJGH
-     * CmdId: 106
+     * CmdId: 160
+     * Obf: JOALHHCCOMM
      * </pre>
      *
      * Protobuf type {@code PlayerForceExitReq}

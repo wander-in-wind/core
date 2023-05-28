@@ -20,8 +20,8 @@ public final class CloseCommonTipsNotifyOuterClass {
   }
   /**
    * <pre>
-   * Name: AFLOLBEDPJM
-   * CmdId: 3196
+   * CmdId: 3063
+   * Obf: MKKMNMNIBPK
    * </pre>
    *
    * Protobuf type {@code CloseCommonTipsNotify}
@@ -246,8 +246,8 @@ public final class CloseCommonTipsNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: AFLOLBEDPJM
-     * CmdId: 3196
+     * CmdId: 3063
+     * Obf: MKKMNMNIBPK
      * </pre>
      *
      * Protobuf type {@code CloseCommonTipsNotify}

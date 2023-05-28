@@ -43,23 +43,23 @@ public final class DungeonSettleExhibitionInfoOuterClass {
         int index);
 
     /**
-     * <code>.OnlinePlayerInfo player_info = 4;</code>
+     * <code>.OnlinePlayerInfo player_info = 3;</code>
      * @return Whether the playerInfo field is set.
      */
     boolean hasPlayerInfo();
     /**
-     * <code>.OnlinePlayerInfo player_info = 4;</code>
+     * <code>.OnlinePlayerInfo player_info = 3;</code>
      * @return The playerInfo.
      */
     emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo getPlayerInfo();
     /**
-     * <code>.OnlinePlayerInfo player_info = 4;</code>
+     * <code>.OnlinePlayerInfo player_info = 3;</code>
      */
     emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder getPlayerInfoOrBuilder();
   }
   /**
    * <pre>
-   * Name: DPACDAIBBIL
+   * Obf: DBHHHJAGAHO
    * </pre>
    *
    * Protobuf type {@code DungeonSettleExhibitionInfo}
@@ -108,7 +108,7 @@ public final class DungeonSettleExhibitionInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 34: {
+            case 26: {
               emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder subBuilder = null;
               if (playerInfo_ != null) {
                 subBuilder = playerInfo_.toBuilder();
@@ -205,10 +205,10 @@ public final class DungeonSettleExhibitionInfoOuterClass {
       return cardList_.get(index);
     }
 
-    public static final int PLAYER_INFO_FIELD_NUMBER = 4;
+    public static final int PLAYER_INFO_FIELD_NUMBER = 3;
     private emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo playerInfo_;
     /**
-     * <code>.OnlinePlayerInfo player_info = 4;</code>
+     * <code>.OnlinePlayerInfo player_info = 3;</code>
      * @return Whether the playerInfo field is set.
      */
     @java.lang.Override
@@ -216,7 +216,7 @@ public final class DungeonSettleExhibitionInfoOuterClass {
       return playerInfo_ != null;
     }
     /**
-     * <code>.OnlinePlayerInfo player_info = 4;</code>
+     * <code>.OnlinePlayerInfo player_info = 3;</code>
      * @return The playerInfo.
      */
     @java.lang.Override
@@ -224,7 +224,7 @@ public final class DungeonSettleExhibitionInfoOuterClass {
       return playerInfo_ == null ? emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.getDefaultInstance() : playerInfo_;
     }
     /**
-     * <code>.OnlinePlayerInfo player_info = 4;</code>
+     * <code>.OnlinePlayerInfo player_info = 3;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder getPlayerInfoOrBuilder() {
@@ -246,7 +246,7 @@ public final class DungeonSettleExhibitionInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (playerInfo_ != null) {
-        output.writeMessage(4, getPlayerInfo());
+        output.writeMessage(3, getPlayerInfo());
       }
       for (int i = 0; i < cardList_.size(); i++) {
         output.writeMessage(13, cardList_.get(i));
@@ -262,7 +262,7 @@ public final class DungeonSettleExhibitionInfoOuterClass {
       size = 0;
       if (playerInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, getPlayerInfo());
+          .computeMessageSize(3, getPlayerInfo());
       }
       for (int i = 0; i < cardList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -406,7 +406,7 @@ public final class DungeonSettleExhibitionInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: DPACDAIBBIL
+     * Obf: DBHHHJAGAHO
      * </pre>
      *
      * Protobuf type {@code DungeonSettleExhibitionInfo}
@@ -851,14 +851,14 @@ public final class DungeonSettleExhibitionInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder> playerInfoBuilder_;
       /**
-       * <code>.OnlinePlayerInfo player_info = 4;</code>
+       * <code>.OnlinePlayerInfo player_info = 3;</code>
        * @return Whether the playerInfo field is set.
        */
       public boolean hasPlayerInfo() {
         return playerInfoBuilder_ != null || playerInfo_ != null;
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 4;</code>
+       * <code>.OnlinePlayerInfo player_info = 3;</code>
        * @return The playerInfo.
        */
       public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo getPlayerInfo() {
@@ -869,7 +869,7 @@ public final class DungeonSettleExhibitionInfoOuterClass {
         }
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 4;</code>
+       * <code>.OnlinePlayerInfo player_info = 3;</code>
        */
       public Builder setPlayerInfo(emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo value) {
         if (playerInfoBuilder_ == null) {
@@ -885,7 +885,7 @@ public final class DungeonSettleExhibitionInfoOuterClass {
         return this;
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 4;</code>
+       * <code>.OnlinePlayerInfo player_info = 3;</code>
        */
       public Builder setPlayerInfo(
           emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder builderForValue) {
@@ -899,7 +899,7 @@ public final class DungeonSettleExhibitionInfoOuterClass {
         return this;
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 4;</code>
+       * <code>.OnlinePlayerInfo player_info = 3;</code>
        */
       public Builder mergePlayerInfo(emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo value) {
         if (playerInfoBuilder_ == null) {
@@ -917,7 +917,7 @@ public final class DungeonSettleExhibitionInfoOuterClass {
         return this;
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 4;</code>
+       * <code>.OnlinePlayerInfo player_info = 3;</code>
        */
       public Builder clearPlayerInfo() {
         if (playerInfoBuilder_ == null) {
@@ -931,7 +931,7 @@ public final class DungeonSettleExhibitionInfoOuterClass {
         return this;
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 4;</code>
+       * <code>.OnlinePlayerInfo player_info = 3;</code>
        */
       public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder getPlayerInfoBuilder() {
         
@@ -939,7 +939,7 @@ public final class DungeonSettleExhibitionInfoOuterClass {
         return getPlayerInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 4;</code>
+       * <code>.OnlinePlayerInfo player_info = 3;</code>
        */
       public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder getPlayerInfoOrBuilder() {
         if (playerInfoBuilder_ != null) {
@@ -950,7 +950,7 @@ public final class DungeonSettleExhibitionInfoOuterClass {
         }
       }
       /**
-       * <code>.OnlinePlayerInfo player_info = 4;</code>
+       * <code>.OnlinePlayerInfo player_info = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder> 
@@ -1036,7 +1036,7 @@ public final class DungeonSettleExhibitionInfoOuterClass {
       "ibitionDisplayInfo.proto\032\026OnlinePlayerIn" +
       "fo.proto\"p\n\033DungeonSettleExhibitionInfo\022" +
       ")\n\tcard_list\030\r \003(\0132\026.ExhibitionDisplayIn" +
-      "fo\022&\n\013player_info\030\004 \001(\0132\021.OnlinePlayerIn" +
+      "fo\022&\n\013player_info\030\003 \001(\0132\021.OnlinePlayerIn" +
       "foB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

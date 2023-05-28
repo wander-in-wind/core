@@ -19,30 +19,30 @@ public final class BlossomChestInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 entity_id = 2;</code>
+     * <code>uint32 entity_id = 11;</code>
      * @return The entityId.
      */
     int getEntityId();
 
     /**
-     * <code>.BlossomChestInfo blossom_chest_info = 6;</code>
+     * <code>.BlossomChestInfo blossom_chest_info = 14;</code>
      * @return Whether the blossomChestInfo field is set.
      */
     boolean hasBlossomChestInfo();
     /**
-     * <code>.BlossomChestInfo blossom_chest_info = 6;</code>
+     * <code>.BlossomChestInfo blossom_chest_info = 14;</code>
      * @return The blossomChestInfo.
      */
     emu.grasscutter.net.proto.BlossomChestInfoOuterClass.BlossomChestInfo getBlossomChestInfo();
     /**
-     * <code>.BlossomChestInfo blossom_chest_info = 6;</code>
+     * <code>.BlossomChestInfo blossom_chest_info = 14;</code>
      */
     emu.grasscutter.net.proto.BlossomChestInfoOuterClass.BlossomChestInfoOrBuilder getBlossomChestInfoOrBuilder();
   }
   /**
    * <pre>
-   * Name: OOLJECNMFDH
-   * CmdId: 882
+   * CmdId: 835
+   * Obf: JPJFICLJICJ
    * </pre>
    *
    * Protobuf type {@code BlossomChestInfoNotify}
@@ -89,12 +89,12 @@ public final class BlossomChestInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 88: {
 
               entityId_ = input.readUInt32();
               break;
             }
-            case 50: {
+            case 114: {
               emu.grasscutter.net.proto.BlossomChestInfoOuterClass.BlossomChestInfo.Builder subBuilder = null;
               if (blossomChestInfo_ != null) {
                 subBuilder = blossomChestInfo_.toBuilder();
@@ -139,10 +139,10 @@ public final class BlossomChestInfoNotifyOuterClass {
               emu.grasscutter.net.proto.BlossomChestInfoNotifyOuterClass.BlossomChestInfoNotify.class, emu.grasscutter.net.proto.BlossomChestInfoNotifyOuterClass.BlossomChestInfoNotify.Builder.class);
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 2;
+    public static final int ENTITY_ID_FIELD_NUMBER = 11;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 2;</code>
+     * <code>uint32 entity_id = 11;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class BlossomChestInfoNotifyOuterClass {
       return entityId_;
     }
 
-    public static final int BLOSSOM_CHEST_INFO_FIELD_NUMBER = 6;
+    public static final int BLOSSOM_CHEST_INFO_FIELD_NUMBER = 14;
     private emu.grasscutter.net.proto.BlossomChestInfoOuterClass.BlossomChestInfo blossomChestInfo_;
     /**
-     * <code>.BlossomChestInfo blossom_chest_info = 6;</code>
+     * <code>.BlossomChestInfo blossom_chest_info = 14;</code>
      * @return Whether the blossomChestInfo field is set.
      */
     @java.lang.Override
@@ -161,7 +161,7 @@ public final class BlossomChestInfoNotifyOuterClass {
       return blossomChestInfo_ != null;
     }
     /**
-     * <code>.BlossomChestInfo blossom_chest_info = 6;</code>
+     * <code>.BlossomChestInfo blossom_chest_info = 14;</code>
      * @return The blossomChestInfo.
      */
     @java.lang.Override
@@ -169,7 +169,7 @@ public final class BlossomChestInfoNotifyOuterClass {
       return blossomChestInfo_ == null ? emu.grasscutter.net.proto.BlossomChestInfoOuterClass.BlossomChestInfo.getDefaultInstance() : blossomChestInfo_;
     }
     /**
-     * <code>.BlossomChestInfo blossom_chest_info = 6;</code>
+     * <code>.BlossomChestInfo blossom_chest_info = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.BlossomChestInfoOuterClass.BlossomChestInfoOrBuilder getBlossomChestInfoOrBuilder() {
@@ -191,10 +191,10 @@ public final class BlossomChestInfoNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (entityId_ != 0) {
-        output.writeUInt32(2, entityId_);
+        output.writeUInt32(11, entityId_);
       }
       if (blossomChestInfo_ != null) {
-        output.writeMessage(6, getBlossomChestInfo());
+        output.writeMessage(14, getBlossomChestInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -207,11 +207,11 @@ public final class BlossomChestInfoNotifyOuterClass {
       size = 0;
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, entityId_);
+          .computeUInt32Size(11, entityId_);
       }
       if (blossomChestInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, getBlossomChestInfo());
+          .computeMessageSize(14, getBlossomChestInfo());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -349,8 +349,8 @@ public final class BlossomChestInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: OOLJECNMFDH
-     * CmdId: 882
+     * CmdId: 835
+     * Obf: JPJFICLJICJ
      * </pre>
      *
      * Protobuf type {@code BlossomChestInfoNotify}
@@ -515,7 +515,7 @@ public final class BlossomChestInfoNotifyOuterClass {
 
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 2;</code>
+       * <code>uint32 entity_id = 11;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -523,7 +523,7 @@ public final class BlossomChestInfoNotifyOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 2;</code>
+       * <code>uint32 entity_id = 11;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -534,7 +534,7 @@ public final class BlossomChestInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 2;</code>
+       * <code>uint32 entity_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
@@ -548,14 +548,14 @@ public final class BlossomChestInfoNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.BlossomChestInfoOuterClass.BlossomChestInfo, emu.grasscutter.net.proto.BlossomChestInfoOuterClass.BlossomChestInfo.Builder, emu.grasscutter.net.proto.BlossomChestInfoOuterClass.BlossomChestInfoOrBuilder> blossomChestInfoBuilder_;
       /**
-       * <code>.BlossomChestInfo blossom_chest_info = 6;</code>
+       * <code>.BlossomChestInfo blossom_chest_info = 14;</code>
        * @return Whether the blossomChestInfo field is set.
        */
       public boolean hasBlossomChestInfo() {
         return blossomChestInfoBuilder_ != null || blossomChestInfo_ != null;
       }
       /**
-       * <code>.BlossomChestInfo blossom_chest_info = 6;</code>
+       * <code>.BlossomChestInfo blossom_chest_info = 14;</code>
        * @return The blossomChestInfo.
        */
       public emu.grasscutter.net.proto.BlossomChestInfoOuterClass.BlossomChestInfo getBlossomChestInfo() {
@@ -566,7 +566,7 @@ public final class BlossomChestInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>.BlossomChestInfo blossom_chest_info = 6;</code>
+       * <code>.BlossomChestInfo blossom_chest_info = 14;</code>
        */
       public Builder setBlossomChestInfo(emu.grasscutter.net.proto.BlossomChestInfoOuterClass.BlossomChestInfo value) {
         if (blossomChestInfoBuilder_ == null) {
@@ -582,7 +582,7 @@ public final class BlossomChestInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.BlossomChestInfo blossom_chest_info = 6;</code>
+       * <code>.BlossomChestInfo blossom_chest_info = 14;</code>
        */
       public Builder setBlossomChestInfo(
           emu.grasscutter.net.proto.BlossomChestInfoOuterClass.BlossomChestInfo.Builder builderForValue) {
@@ -596,7 +596,7 @@ public final class BlossomChestInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.BlossomChestInfo blossom_chest_info = 6;</code>
+       * <code>.BlossomChestInfo blossom_chest_info = 14;</code>
        */
       public Builder mergeBlossomChestInfo(emu.grasscutter.net.proto.BlossomChestInfoOuterClass.BlossomChestInfo value) {
         if (blossomChestInfoBuilder_ == null) {
@@ -614,7 +614,7 @@ public final class BlossomChestInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.BlossomChestInfo blossom_chest_info = 6;</code>
+       * <code>.BlossomChestInfo blossom_chest_info = 14;</code>
        */
       public Builder clearBlossomChestInfo() {
         if (blossomChestInfoBuilder_ == null) {
@@ -628,7 +628,7 @@ public final class BlossomChestInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.BlossomChestInfo blossom_chest_info = 6;</code>
+       * <code>.BlossomChestInfo blossom_chest_info = 14;</code>
        */
       public emu.grasscutter.net.proto.BlossomChestInfoOuterClass.BlossomChestInfo.Builder getBlossomChestInfoBuilder() {
         
@@ -636,7 +636,7 @@ public final class BlossomChestInfoNotifyOuterClass {
         return getBlossomChestInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.BlossomChestInfo blossom_chest_info = 6;</code>
+       * <code>.BlossomChestInfo blossom_chest_info = 14;</code>
        */
       public emu.grasscutter.net.proto.BlossomChestInfoOuterClass.BlossomChestInfoOrBuilder getBlossomChestInfoOrBuilder() {
         if (blossomChestInfoBuilder_ != null) {
@@ -647,7 +647,7 @@ public final class BlossomChestInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>.BlossomChestInfo blossom_chest_info = 6;</code>
+       * <code>.BlossomChestInfo blossom_chest_info = 14;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.BlossomChestInfoOuterClass.BlossomChestInfo, emu.grasscutter.net.proto.BlossomChestInfoOuterClass.BlossomChestInfo.Builder, emu.grasscutter.net.proto.BlossomChestInfoOuterClass.BlossomChestInfoOrBuilder> 
@@ -731,8 +731,8 @@ public final class BlossomChestInfoNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\034BlossomChestInfoNotify.proto\032\026BlossomC" +
       "hestInfo.proto\"Z\n\026BlossomChestInfoNotify" +
-      "\022\021\n\tentity_id\030\002 \001(\r\022-\n\022blossom_chest_inf" +
-      "o\030\006 \001(\0132\021.BlossomChestInfoB\033\n\031emu.grassc" +
+      "\022\021\n\tentity_id\030\013 \001(\r\022-\n\022blossom_chest_inf" +
+      "o\030\016 \001(\0132\021.BlossomChestInfoB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

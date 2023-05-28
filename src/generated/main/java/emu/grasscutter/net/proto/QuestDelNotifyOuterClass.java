@@ -26,8 +26,8 @@ public final class QuestDelNotifyOuterClass {
   }
   /**
    * <pre>
-   * Name: NICABKGLDMP
-   * CmdId: 454
+   * CmdId: 402
+   * Obf: IJMJIMCHBHG
    * </pre>
    *
    * Protobuf type {@code QuestDelNotify}
@@ -279,8 +279,8 @@ public final class QuestDelNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: NICABKGLDMP
-     * CmdId: 454
+     * CmdId: 402
+     * Obf: IJMJIMCHBHG
      * </pre>
      *
      * Protobuf type {@code QuestDelNotify}

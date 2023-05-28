@@ -20,8 +20,8 @@ public final class BlessingAcceptAllGivePicReqOuterClass {
   }
   /**
    * <pre>
-   * Name: KPONCKCLCME
-   * CmdId: 2160
+   * CmdId: 2025
+   * Obf: LPBGGMGLMNH
    * </pre>
    *
    * Protobuf type {@code BlessingAcceptAllGivePicReq}
@@ -246,8 +246,8 @@ public final class BlessingAcceptAllGivePicReqOuterClass {
     }
     /**
      * <pre>
-     * Name: KPONCKCLCME
-     * CmdId: 2160
+     * CmdId: 2025
+     * Obf: LPBGGMGLMNH
      * </pre>
      *
      * Protobuf type {@code BlessingAcceptAllGivePicReq}

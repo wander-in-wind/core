@@ -32,8 +32,8 @@ public final class MechanicusSequenceOpenNotifyOuterClass {
   }
   /**
    * <pre>
-   * Name: OKHAPKMDLDM
-   * CmdId: 3954
+   * CmdId: 3902
+   * Obf: JKINALBHPOK
    * </pre>
    *
    * Protobuf type {@code MechanicusSequenceOpenNotify}
@@ -312,8 +312,8 @@ public final class MechanicusSequenceOpenNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: OKHAPKMDLDM
-     * CmdId: 3954
+     * CmdId: 3902
+     * Obf: JKINALBHPOK
      * </pre>
      *
      * Protobuf type {@code MechanicusSequenceOpenNotify}

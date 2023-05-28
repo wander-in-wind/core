@@ -19,32 +19,32 @@ public final class ScenePlayInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_open = 4;</code>
-     * @return The isOpen.
+     * <code>uint32 entry_id = 14;</code>
+     * @return The entryId.
      */
-    boolean getIsOpen();
+    int getEntryId();
 
     /**
-     * <code>uint32 play_type = 15;</code>
-     * @return The playType.
-     */
-    int getPlayType();
-
-    /**
-     * <code>uint32 play_id = 9;</code>
+     * <code>uint32 play_id = 2;</code>
      * @return The playId.
      */
     int getPlayId();
 
     /**
-     * <code>uint32 entry_id = 10;</code>
-     * @return The entryId.
+     * <code>bool is_open = 10;</code>
+     * @return The isOpen.
      */
-    int getEntryId();
+    boolean getIsOpen();
+
+    /**
+     * <code>uint32 play_type = 8;</code>
+     * @return The playType.
+     */
+    int getPlayType();
   }
   /**
    * <pre>
-   * Name: DKJMPKAMKLA
+   * Obf: PILPOJPDJBA
    * </pre>
    *
    * Protobuf type {@code ScenePlayInfo}
@@ -91,24 +91,24 @@ public final class ScenePlayInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
-
-              isOpen_ = input.readBool();
-              break;
-            }
-            case 72: {
+            case 16: {
 
               playId_ = input.readUInt32();
               break;
             }
-            case 80: {
-
-              entryId_ = input.readUInt32();
-              break;
-            }
-            case 120: {
+            case 64: {
 
               playType_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
+              isOpen_ = input.readBool();
+              break;
+            }
+            case 112: {
+
+              entryId_ = input.readUInt32();
               break;
             }
             default: {
@@ -143,32 +143,21 @@ public final class ScenePlayInfoOuterClass {
               emu.grasscutter.net.proto.ScenePlayInfoOuterClass.ScenePlayInfo.class, emu.grasscutter.net.proto.ScenePlayInfoOuterClass.ScenePlayInfo.Builder.class);
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 4;
-    private boolean isOpen_;
+    public static final int ENTRY_ID_FIELD_NUMBER = 14;
+    private int entryId_;
     /**
-     * <code>bool is_open = 4;</code>
-     * @return The isOpen.
+     * <code>uint32 entry_id = 14;</code>
+     * @return The entryId.
      */
     @java.lang.Override
-    public boolean getIsOpen() {
-      return isOpen_;
+    public int getEntryId() {
+      return entryId_;
     }
 
-    public static final int PLAY_TYPE_FIELD_NUMBER = 15;
-    private int playType_;
-    /**
-     * <code>uint32 play_type = 15;</code>
-     * @return The playType.
-     */
-    @java.lang.Override
-    public int getPlayType() {
-      return playType_;
-    }
-
-    public static final int PLAY_ID_FIELD_NUMBER = 9;
+    public static final int PLAY_ID_FIELD_NUMBER = 2;
     private int playId_;
     /**
-     * <code>uint32 play_id = 9;</code>
+     * <code>uint32 play_id = 2;</code>
      * @return The playId.
      */
     @java.lang.Override
@@ -176,15 +165,26 @@ public final class ScenePlayInfoOuterClass {
       return playId_;
     }
 
-    public static final int ENTRY_ID_FIELD_NUMBER = 10;
-    private int entryId_;
+    public static final int IS_OPEN_FIELD_NUMBER = 10;
+    private boolean isOpen_;
     /**
-     * <code>uint32 entry_id = 10;</code>
-     * @return The entryId.
+     * <code>bool is_open = 10;</code>
+     * @return The isOpen.
      */
     @java.lang.Override
-    public int getEntryId() {
-      return entryId_;
+    public boolean getIsOpen() {
+      return isOpen_;
+    }
+
+    public static final int PLAY_TYPE_FIELD_NUMBER = 8;
+    private int playType_;
+    /**
+     * <code>uint32 play_type = 8;</code>
+     * @return The playType.
+     */
+    @java.lang.Override
+    public int getPlayType() {
+      return playType_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -201,17 +201,17 @@ public final class ScenePlayInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isOpen_ != false) {
-        output.writeBool(4, isOpen_);
-      }
       if (playId_ != 0) {
-        output.writeUInt32(9, playId_);
-      }
-      if (entryId_ != 0) {
-        output.writeUInt32(10, entryId_);
+        output.writeUInt32(2, playId_);
       }
       if (playType_ != 0) {
-        output.writeUInt32(15, playType_);
+        output.writeUInt32(8, playType_);
+      }
+      if (isOpen_ != false) {
+        output.writeBool(10, isOpen_);
+      }
+      if (entryId_ != 0) {
+        output.writeUInt32(14, entryId_);
       }
       unknownFields.writeTo(output);
     }
@@ -222,21 +222,21 @@ public final class ScenePlayInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isOpen_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, isOpen_);
-      }
       if (playId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, playId_);
-      }
-      if (entryId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, entryId_);
+          .computeUInt32Size(2, playId_);
       }
       if (playType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, playType_);
+          .computeUInt32Size(8, playType_);
+      }
+      if (isOpen_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(10, isOpen_);
+      }
+      if (entryId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, entryId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -253,14 +253,14 @@ public final class ScenePlayInfoOuterClass {
       }
       emu.grasscutter.net.proto.ScenePlayInfoOuterClass.ScenePlayInfo other = (emu.grasscutter.net.proto.ScenePlayInfoOuterClass.ScenePlayInfo) obj;
 
+      if (getEntryId()
+          != other.getEntryId()) return false;
+      if (getPlayId()
+          != other.getPlayId()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
       if (getPlayType()
           != other.getPlayType()) return false;
-      if (getPlayId()
-          != other.getPlayId()) return false;
-      if (getEntryId()
-          != other.getEntryId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -272,15 +272,15 @@ public final class ScenePlayInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + ENTRY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getEntryId();
+      hash = (37 * hash) + PLAY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getPlayId();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
       hash = (37 * hash) + PLAY_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getPlayType();
-      hash = (37 * hash) + PLAY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getPlayId();
-      hash = (37 * hash) + ENTRY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getEntryId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -378,7 +378,7 @@ public final class ScenePlayInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: DKJMPKAMKLA
+     * Obf: PILPOJPDJBA
      * </pre>
      *
      * Protobuf type {@code ScenePlayInfo}
@@ -418,13 +418,13 @@ public final class ScenePlayInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isOpen_ = false;
-
-        playType_ = 0;
+        entryId_ = 0;
 
         playId_ = 0;
 
-        entryId_ = 0;
+        isOpen_ = false;
+
+        playType_ = 0;
 
         return this;
       }
@@ -452,10 +452,10 @@ public final class ScenePlayInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ScenePlayInfoOuterClass.ScenePlayInfo buildPartial() {
         emu.grasscutter.net.proto.ScenePlayInfoOuterClass.ScenePlayInfo result = new emu.grasscutter.net.proto.ScenePlayInfoOuterClass.ScenePlayInfo(this);
+        result.entryId_ = entryId_;
+        result.playId_ = playId_;
         result.isOpen_ = isOpen_;
         result.playType_ = playType_;
-        result.playId_ = playId_;
-        result.entryId_ = entryId_;
         onBuilt();
         return result;
       }
@@ -504,17 +504,17 @@ public final class ScenePlayInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ScenePlayInfoOuterClass.ScenePlayInfo other) {
         if (other == emu.grasscutter.net.proto.ScenePlayInfoOuterClass.ScenePlayInfo.getDefaultInstance()) return this;
+        if (other.getEntryId() != 0) {
+          setEntryId(other.getEntryId());
+        }
+        if (other.getPlayId() != 0) {
+          setPlayId(other.getPlayId());
+        }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
         }
         if (other.getPlayType() != 0) {
           setPlayType(other.getPlayType());
-        }
-        if (other.getPlayId() != 0) {
-          setPlayId(other.getPlayId());
-        }
-        if (other.getEntryId() != 0) {
-          setEntryId(other.getEntryId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -545,9 +545,71 @@ public final class ScenePlayInfoOuterClass {
         return this;
       }
 
+      private int entryId_ ;
+      /**
+       * <code>uint32 entry_id = 14;</code>
+       * @return The entryId.
+       */
+      @java.lang.Override
+      public int getEntryId() {
+        return entryId_;
+      }
+      /**
+       * <code>uint32 entry_id = 14;</code>
+       * @param value The entryId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEntryId(int value) {
+        
+        entryId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 entry_id = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEntryId() {
+        
+        entryId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int playId_ ;
+      /**
+       * <code>uint32 play_id = 2;</code>
+       * @return The playId.
+       */
+      @java.lang.Override
+      public int getPlayId() {
+        return playId_;
+      }
+      /**
+       * <code>uint32 play_id = 2;</code>
+       * @param value The playId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPlayId(int value) {
+        
+        playId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 play_id = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPlayId() {
+        
+        playId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 4;</code>
+       * <code>bool is_open = 10;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -555,7 +617,7 @@ public final class ScenePlayInfoOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 4;</code>
+       * <code>bool is_open = 10;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -566,7 +628,7 @@ public final class ScenePlayInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 4;</code>
+       * <code>bool is_open = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -578,7 +640,7 @@ public final class ScenePlayInfoOuterClass {
 
       private int playType_ ;
       /**
-       * <code>uint32 play_type = 15;</code>
+       * <code>uint32 play_type = 8;</code>
        * @return The playType.
        */
       @java.lang.Override
@@ -586,7 +648,7 @@ public final class ScenePlayInfoOuterClass {
         return playType_;
       }
       /**
-       * <code>uint32 play_type = 15;</code>
+       * <code>uint32 play_type = 8;</code>
        * @param value The playType to set.
        * @return This builder for chaining.
        */
@@ -597,74 +659,12 @@ public final class ScenePlayInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 play_type = 15;</code>
+       * <code>uint32 play_type = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayType() {
         
         playType_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int playId_ ;
-      /**
-       * <code>uint32 play_id = 9;</code>
-       * @return The playId.
-       */
-      @java.lang.Override
-      public int getPlayId() {
-        return playId_;
-      }
-      /**
-       * <code>uint32 play_id = 9;</code>
-       * @param value The playId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPlayId(int value) {
-        
-        playId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 play_id = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPlayId() {
-        
-        playId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int entryId_ ;
-      /**
-       * <code>uint32 entry_id = 10;</code>
-       * @return The entryId.
-       */
-      @java.lang.Override
-      public int getEntryId() {
-        return entryId_;
-      }
-      /**
-       * <code>uint32 entry_id = 10;</code>
-       * @param value The entryId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEntryId(int value) {
-        
-        entryId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 entry_id = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEntryId() {
-        
-        entryId_ = 0;
         onChanged();
         return this;
       }
@@ -735,9 +735,9 @@ public final class ScenePlayInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\023ScenePlayInfo.proto\"V\n\rScenePlayInfo\022\017" +
-      "\n\007is_open\030\004 \001(\010\022\021\n\tplay_type\030\017 \001(\r\022\017\n\007pl" +
-      "ay_id\030\t \001(\r\022\020\n\010entry_id\030\n \001(\rB\033\n\031emu.gra" +
+      "\n\023ScenePlayInfo.proto\"V\n\rScenePlayInfo\022\020" +
+      "\n\010entry_id\030\016 \001(\r\022\017\n\007play_id\030\002 \001(\r\022\017\n\007is_" +
+      "open\030\n \001(\010\022\021\n\tplay_type\030\010 \001(\rB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -749,7 +749,7 @@ public final class ScenePlayInfoOuterClass {
     internal_static_ScenePlayInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ScenePlayInfo_descriptor,
-        new java.lang.String[] { "IsOpen", "PlayType", "PlayId", "EntryId", });
+        new java.lang.String[] { "EntryId", "PlayId", "IsOpen", "PlayType", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

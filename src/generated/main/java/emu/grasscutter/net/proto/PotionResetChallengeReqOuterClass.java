@@ -26,8 +26,8 @@ public final class PotionResetChallengeReqOuterClass {
   }
   /**
    * <pre>
-   * Name: MGMKDCPCCOK
-   * CmdId: 8958
+   * CmdId: 8298
+   * Obf: FDHEHHCPHPH
    * </pre>
    *
    * Protobuf type {@code PotionResetChallengeReq}
@@ -279,8 +279,8 @@ public final class PotionResetChallengeReqOuterClass {
     }
     /**
      * <pre>
-     * Name: MGMKDCPCCOK
-     * CmdId: 8958
+     * CmdId: 8298
+     * Obf: FDHEHHCPHPH
      * </pre>
      *
      * Protobuf type {@code PotionResetChallengeReq}

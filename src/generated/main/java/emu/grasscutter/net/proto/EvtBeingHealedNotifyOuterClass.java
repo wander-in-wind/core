@@ -19,33 +19,33 @@ public final class EvtBeingHealedNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 source_id = 6;</code>
+     * <code>float BCPCBNJPKML = 15;</code>
+     * @return The bCPCBNJPKML.
+     */
+    float getBCPCBNJPKML();
+
+    /**
+     * <code>uint32 source_id = 13;</code>
      * @return The sourceId.
      */
     int getSourceId();
 
     /**
-     * <code>float JHONBPIGLCI = 4;</code>
-     * @return The jHONBPIGLCI.
+     * <code>float INLMLKPPDPI = 5;</code>
+     * @return The iNLMLKPPDPI.
      */
-    float getJHONBPIGLCI();
+    float getINLMLKPPDPI();
 
     /**
-     * <code>uint32 target_id = 3;</code>
+     * <code>uint32 target_id = 1;</code>
      * @return The targetId.
      */
     int getTargetId();
-
-    /**
-     * <code>float PNLNNJHIJFC = 7;</code>
-     * @return The pNLNNJHIJFC.
-     */
-    float getPNLNNJHIJFC();
   }
   /**
    * <pre>
-   * Name: GENANJCFELF
-   * CmdId: 301
+   * CmdId: 315
+   * Obf: OMODMHOJJCL
    * </pre>
    *
    * Protobuf type {@code EvtBeingHealedNotify}
@@ -92,24 +92,24 @@ public final class EvtBeingHealedNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 8: {
 
               targetId_ = input.readUInt32();
               break;
             }
-            case 37: {
+            case 45: {
 
-              jHONBPIGLCI_ = input.readFloat();
+              iNLMLKPPDPI_ = input.readFloat();
               break;
             }
-            case 48: {
+            case 104: {
 
               sourceId_ = input.readUInt32();
               break;
             }
-            case 61: {
+            case 125: {
 
-              pNLNNJHIJFC_ = input.readFloat();
+              bCPCBNJPKML_ = input.readFloat();
               break;
             }
             default: {
@@ -144,10 +144,21 @@ public final class EvtBeingHealedNotifyOuterClass {
               emu.grasscutter.net.proto.EvtBeingHealedNotifyOuterClass.EvtBeingHealedNotify.class, emu.grasscutter.net.proto.EvtBeingHealedNotifyOuterClass.EvtBeingHealedNotify.Builder.class);
     }
 
-    public static final int SOURCE_ID_FIELD_NUMBER = 6;
+    public static final int BCPCBNJPKML_FIELD_NUMBER = 15;
+    private float bCPCBNJPKML_;
+    /**
+     * <code>float BCPCBNJPKML = 15;</code>
+     * @return The bCPCBNJPKML.
+     */
+    @java.lang.Override
+    public float getBCPCBNJPKML() {
+      return bCPCBNJPKML_;
+    }
+
+    public static final int SOURCE_ID_FIELD_NUMBER = 13;
     private int sourceId_;
     /**
-     * <code>uint32 source_id = 6;</code>
+     * <code>uint32 source_id = 13;</code>
      * @return The sourceId.
      */
     @java.lang.Override
@@ -155,37 +166,26 @@ public final class EvtBeingHealedNotifyOuterClass {
       return sourceId_;
     }
 
-    public static final int JHONBPIGLCI_FIELD_NUMBER = 4;
-    private float jHONBPIGLCI_;
+    public static final int INLMLKPPDPI_FIELD_NUMBER = 5;
+    private float iNLMLKPPDPI_;
     /**
-     * <code>float JHONBPIGLCI = 4;</code>
-     * @return The jHONBPIGLCI.
+     * <code>float INLMLKPPDPI = 5;</code>
+     * @return The iNLMLKPPDPI.
      */
     @java.lang.Override
-    public float getJHONBPIGLCI() {
-      return jHONBPIGLCI_;
+    public float getINLMLKPPDPI() {
+      return iNLMLKPPDPI_;
     }
 
-    public static final int TARGET_ID_FIELD_NUMBER = 3;
+    public static final int TARGET_ID_FIELD_NUMBER = 1;
     private int targetId_;
     /**
-     * <code>uint32 target_id = 3;</code>
+     * <code>uint32 target_id = 1;</code>
      * @return The targetId.
      */
     @java.lang.Override
     public int getTargetId() {
       return targetId_;
-    }
-
-    public static final int PNLNNJHIJFC_FIELD_NUMBER = 7;
-    private float pNLNNJHIJFC_;
-    /**
-     * <code>float PNLNNJHIJFC = 7;</code>
-     * @return The pNLNNJHIJFC.
-     */
-    @java.lang.Override
-    public float getPNLNNJHIJFC() {
-      return pNLNNJHIJFC_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -203,16 +203,16 @@ public final class EvtBeingHealedNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (targetId_ != 0) {
-        output.writeUInt32(3, targetId_);
+        output.writeUInt32(1, targetId_);
       }
-      if (jHONBPIGLCI_ != 0F) {
-        output.writeFloat(4, jHONBPIGLCI_);
+      if (iNLMLKPPDPI_ != 0F) {
+        output.writeFloat(5, iNLMLKPPDPI_);
       }
       if (sourceId_ != 0) {
-        output.writeUInt32(6, sourceId_);
+        output.writeUInt32(13, sourceId_);
       }
-      if (pNLNNJHIJFC_ != 0F) {
-        output.writeFloat(7, pNLNNJHIJFC_);
+      if (bCPCBNJPKML_ != 0F) {
+        output.writeFloat(15, bCPCBNJPKML_);
       }
       unknownFields.writeTo(output);
     }
@@ -225,19 +225,19 @@ public final class EvtBeingHealedNotifyOuterClass {
       size = 0;
       if (targetId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, targetId_);
+          .computeUInt32Size(1, targetId_);
       }
-      if (jHONBPIGLCI_ != 0F) {
+      if (iNLMLKPPDPI_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(4, jHONBPIGLCI_);
+          .computeFloatSize(5, iNLMLKPPDPI_);
       }
       if (sourceId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, sourceId_);
+          .computeUInt32Size(13, sourceId_);
       }
-      if (pNLNNJHIJFC_ != 0F) {
+      if (bCPCBNJPKML_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(7, pNLNNJHIJFC_);
+          .computeFloatSize(15, bCPCBNJPKML_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -254,16 +254,16 @@ public final class EvtBeingHealedNotifyOuterClass {
       }
       emu.grasscutter.net.proto.EvtBeingHealedNotifyOuterClass.EvtBeingHealedNotify other = (emu.grasscutter.net.proto.EvtBeingHealedNotifyOuterClass.EvtBeingHealedNotify) obj;
 
+      if (java.lang.Float.floatToIntBits(getBCPCBNJPKML())
+          != java.lang.Float.floatToIntBits(
+              other.getBCPCBNJPKML())) return false;
       if (getSourceId()
           != other.getSourceId()) return false;
-      if (java.lang.Float.floatToIntBits(getJHONBPIGLCI())
+      if (java.lang.Float.floatToIntBits(getINLMLKPPDPI())
           != java.lang.Float.floatToIntBits(
-              other.getJHONBPIGLCI())) return false;
+              other.getINLMLKPPDPI())) return false;
       if (getTargetId()
           != other.getTargetId()) return false;
-      if (java.lang.Float.floatToIntBits(getPNLNNJHIJFC())
-          != java.lang.Float.floatToIntBits(
-              other.getPNLNNJHIJFC())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -275,16 +275,16 @@ public final class EvtBeingHealedNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + BCPCBNJPKML_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getBCPCBNJPKML());
       hash = (37 * hash) + SOURCE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getSourceId();
-      hash = (37 * hash) + JHONBPIGLCI_FIELD_NUMBER;
+      hash = (37 * hash) + INLMLKPPDPI_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getJHONBPIGLCI());
+          getINLMLKPPDPI());
       hash = (37 * hash) + TARGET_ID_FIELD_NUMBER;
       hash = (53 * hash) + getTargetId();
-      hash = (37 * hash) + PNLNNJHIJFC_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getPNLNNJHIJFC());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -382,8 +382,8 @@ public final class EvtBeingHealedNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: GENANJCFELF
-     * CmdId: 301
+     * CmdId: 315
+     * Obf: OMODMHOJJCL
      * </pre>
      *
      * Protobuf type {@code EvtBeingHealedNotify}
@@ -423,13 +423,13 @@ public final class EvtBeingHealedNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        bCPCBNJPKML_ = 0F;
+
         sourceId_ = 0;
 
-        jHONBPIGLCI_ = 0F;
+        iNLMLKPPDPI_ = 0F;
 
         targetId_ = 0;
-
-        pNLNNJHIJFC_ = 0F;
 
         return this;
       }
@@ -457,10 +457,10 @@ public final class EvtBeingHealedNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EvtBeingHealedNotifyOuterClass.EvtBeingHealedNotify buildPartial() {
         emu.grasscutter.net.proto.EvtBeingHealedNotifyOuterClass.EvtBeingHealedNotify result = new emu.grasscutter.net.proto.EvtBeingHealedNotifyOuterClass.EvtBeingHealedNotify(this);
+        result.bCPCBNJPKML_ = bCPCBNJPKML_;
         result.sourceId_ = sourceId_;
-        result.jHONBPIGLCI_ = jHONBPIGLCI_;
+        result.iNLMLKPPDPI_ = iNLMLKPPDPI_;
         result.targetId_ = targetId_;
-        result.pNLNNJHIJFC_ = pNLNNJHIJFC_;
         onBuilt();
         return result;
       }
@@ -509,17 +509,17 @@ public final class EvtBeingHealedNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EvtBeingHealedNotifyOuterClass.EvtBeingHealedNotify other) {
         if (other == emu.grasscutter.net.proto.EvtBeingHealedNotifyOuterClass.EvtBeingHealedNotify.getDefaultInstance()) return this;
+        if (other.getBCPCBNJPKML() != 0F) {
+          setBCPCBNJPKML(other.getBCPCBNJPKML());
+        }
         if (other.getSourceId() != 0) {
           setSourceId(other.getSourceId());
         }
-        if (other.getJHONBPIGLCI() != 0F) {
-          setJHONBPIGLCI(other.getJHONBPIGLCI());
+        if (other.getINLMLKPPDPI() != 0F) {
+          setINLMLKPPDPI(other.getINLMLKPPDPI());
         }
         if (other.getTargetId() != 0) {
           setTargetId(other.getTargetId());
-        }
-        if (other.getPNLNNJHIJFC() != 0F) {
-          setPNLNNJHIJFC(other.getPNLNNJHIJFC());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -550,9 +550,40 @@ public final class EvtBeingHealedNotifyOuterClass {
         return this;
       }
 
+      private float bCPCBNJPKML_ ;
+      /**
+       * <code>float BCPCBNJPKML = 15;</code>
+       * @return The bCPCBNJPKML.
+       */
+      @java.lang.Override
+      public float getBCPCBNJPKML() {
+        return bCPCBNJPKML_;
+      }
+      /**
+       * <code>float BCPCBNJPKML = 15;</code>
+       * @param value The bCPCBNJPKML to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBCPCBNJPKML(float value) {
+        
+        bCPCBNJPKML_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>float BCPCBNJPKML = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBCPCBNJPKML() {
+        
+        bCPCBNJPKML_ = 0F;
+        onChanged();
+        return this;
+      }
+
       private int sourceId_ ;
       /**
-       * <code>uint32 source_id = 6;</code>
+       * <code>uint32 source_id = 13;</code>
        * @return The sourceId.
        */
       @java.lang.Override
@@ -560,7 +591,7 @@ public final class EvtBeingHealedNotifyOuterClass {
         return sourceId_;
       }
       /**
-       * <code>uint32 source_id = 6;</code>
+       * <code>uint32 source_id = 13;</code>
        * @param value The sourceId to set.
        * @return This builder for chaining.
        */
@@ -571,7 +602,7 @@ public final class EvtBeingHealedNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 source_id = 6;</code>
+       * <code>uint32 source_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearSourceId() {
@@ -581,40 +612,40 @@ public final class EvtBeingHealedNotifyOuterClass {
         return this;
       }
 
-      private float jHONBPIGLCI_ ;
+      private float iNLMLKPPDPI_ ;
       /**
-       * <code>float JHONBPIGLCI = 4;</code>
-       * @return The jHONBPIGLCI.
+       * <code>float INLMLKPPDPI = 5;</code>
+       * @return The iNLMLKPPDPI.
        */
       @java.lang.Override
-      public float getJHONBPIGLCI() {
-        return jHONBPIGLCI_;
+      public float getINLMLKPPDPI() {
+        return iNLMLKPPDPI_;
       }
       /**
-       * <code>float JHONBPIGLCI = 4;</code>
-       * @param value The jHONBPIGLCI to set.
+       * <code>float INLMLKPPDPI = 5;</code>
+       * @param value The iNLMLKPPDPI to set.
        * @return This builder for chaining.
        */
-      public Builder setJHONBPIGLCI(float value) {
+      public Builder setINLMLKPPDPI(float value) {
         
-        jHONBPIGLCI_ = value;
+        iNLMLKPPDPI_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float JHONBPIGLCI = 4;</code>
+       * <code>float INLMLKPPDPI = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearJHONBPIGLCI() {
+      public Builder clearINLMLKPPDPI() {
         
-        jHONBPIGLCI_ = 0F;
+        iNLMLKPPDPI_ = 0F;
         onChanged();
         return this;
       }
 
       private int targetId_ ;
       /**
-       * <code>uint32 target_id = 3;</code>
+       * <code>uint32 target_id = 1;</code>
        * @return The targetId.
        */
       @java.lang.Override
@@ -622,7 +653,7 @@ public final class EvtBeingHealedNotifyOuterClass {
         return targetId_;
       }
       /**
-       * <code>uint32 target_id = 3;</code>
+       * <code>uint32 target_id = 1;</code>
        * @param value The targetId to set.
        * @return This builder for chaining.
        */
@@ -633,43 +664,12 @@ public final class EvtBeingHealedNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 target_id = 3;</code>
+       * <code>uint32 target_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetId() {
         
         targetId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private float pNLNNJHIJFC_ ;
-      /**
-       * <code>float PNLNNJHIJFC = 7;</code>
-       * @return The pNLNNJHIJFC.
-       */
-      @java.lang.Override
-      public float getPNLNNJHIJFC() {
-        return pNLNNJHIJFC_;
-      }
-      /**
-       * <code>float PNLNNJHIJFC = 7;</code>
-       * @param value The pNLNNJHIJFC to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPNLNNJHIJFC(float value) {
-        
-        pNLNNJHIJFC_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float PNLNNJHIJFC = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPNLNNJHIJFC() {
-        
-        pNLNNJHIJFC_ = 0F;
         onChanged();
         return this;
       }
@@ -741,9 +741,9 @@ public final class EvtBeingHealedNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032EvtBeingHealedNotify.proto\"f\n\024EvtBeing" +
-      "HealedNotify\022\021\n\tsource_id\030\006 \001(\r\022\023\n\013JHONB" +
-      "PIGLCI\030\004 \001(\002\022\021\n\ttarget_id\030\003 \001(\r\022\023\n\013PNLNN" +
-      "JHIJFC\030\007 \001(\002B\033\n\031emu.grasscutter.net.prot" +
+      "HealedNotify\022\023\n\013BCPCBNJPKML\030\017 \001(\002\022\021\n\tsou" +
+      "rce_id\030\r \001(\r\022\023\n\013INLMLKPPDPI\030\005 \001(\002\022\021\n\ttar" +
+      "get_id\030\001 \001(\rB\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -755,7 +755,7 @@ public final class EvtBeingHealedNotifyOuterClass {
     internal_static_EvtBeingHealedNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EvtBeingHealedNotify_descriptor,
-        new java.lang.String[] { "SourceId", "JHONBPIGLCI", "TargetId", "PNLNNJHIJFC", });
+        new java.lang.String[] { "BCPCBNJPKML", "SourceId", "INLMLKPPDPI", "TargetId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,32 +19,32 @@ public final class FungusFighterPlotInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 fungus_id_list = 5;</code>
+     * <code>repeated uint32 fungus_id_list = 7;</code>
      * @return A list containing the fungusIdList.
      */
     java.util.List<java.lang.Integer> getFungusIdListList();
     /**
-     * <code>repeated uint32 fungus_id_list = 5;</code>
+     * <code>repeated uint32 fungus_id_list = 7;</code>
      * @return The count of fungusIdList.
      */
     int getFungusIdListCount();
     /**
-     * <code>repeated uint32 fungus_id_list = 5;</code>
+     * <code>repeated uint32 fungus_id_list = 7;</code>
      * @param index The index of the element to return.
      * @return The fungusIdList at the given index.
      */
     int getFungusIdList(int index);
 
     /**
-     * <code>uint32 dungeon_id = 2;</code>
+     * <code>uint32 dungeon_id = 12;</code>
      * @return The dungeonId.
      */
     int getDungeonId();
   }
   /**
    * <pre>
-   * Name: FLDGKPCJMCM
-   * CmdId: 21404
+   * CmdId: 21226
+   * Obf: BDPMEMMMNDD
    * </pre>
    *
    * Protobuf type {@code FungusFighterPlotInfoNotify}
@@ -93,12 +93,7 @@ public final class FungusFighterPlotInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              dungeonId_ = input.readUInt32();
-              break;
-            }
-            case 40: {
+            case 56: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 fungusIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -106,7 +101,7 @@ public final class FungusFighterPlotInfoNotifyOuterClass {
               fungusIdList_.addInt(input.readUInt32());
               break;
             }
-            case 42: {
+            case 58: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -117,6 +112,11 @@ public final class FungusFighterPlotInfoNotifyOuterClass {
                 fungusIdList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
+              break;
+            }
+            case 96: {
+
+              dungeonId_ = input.readUInt32();
               break;
             }
             default: {
@@ -154,10 +154,10 @@ public final class FungusFighterPlotInfoNotifyOuterClass {
               emu.grasscutter.net.proto.FungusFighterPlotInfoNotifyOuterClass.FungusFighterPlotInfoNotify.class, emu.grasscutter.net.proto.FungusFighterPlotInfoNotifyOuterClass.FungusFighterPlotInfoNotify.Builder.class);
     }
 
-    public static final int FUNGUS_ID_LIST_FIELD_NUMBER = 5;
+    public static final int FUNGUS_ID_LIST_FIELD_NUMBER = 7;
     private com.google.protobuf.Internal.IntList fungusIdList_;
     /**
-     * <code>repeated uint32 fungus_id_list = 5;</code>
+     * <code>repeated uint32 fungus_id_list = 7;</code>
      * @return A list containing the fungusIdList.
      */
     @java.lang.Override
@@ -166,14 +166,14 @@ public final class FungusFighterPlotInfoNotifyOuterClass {
       return fungusIdList_;
     }
     /**
-     * <code>repeated uint32 fungus_id_list = 5;</code>
+     * <code>repeated uint32 fungus_id_list = 7;</code>
      * @return The count of fungusIdList.
      */
     public int getFungusIdListCount() {
       return fungusIdList_.size();
     }
     /**
-     * <code>repeated uint32 fungus_id_list = 5;</code>
+     * <code>repeated uint32 fungus_id_list = 7;</code>
      * @param index The index of the element to return.
      * @return The fungusIdList at the given index.
      */
@@ -182,10 +182,10 @@ public final class FungusFighterPlotInfoNotifyOuterClass {
     }
     private int fungusIdListMemoizedSerializedSize = -1;
 
-    public static final int DUNGEON_ID_FIELD_NUMBER = 2;
+    public static final int DUNGEON_ID_FIELD_NUMBER = 12;
     private int dungeonId_;
     /**
-     * <code>uint32 dungeon_id = 2;</code>
+     * <code>uint32 dungeon_id = 12;</code>
      * @return The dungeonId.
      */
     @java.lang.Override
@@ -208,15 +208,15 @@ public final class FungusFighterPlotInfoNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (dungeonId_ != 0) {
-        output.writeUInt32(2, dungeonId_);
-      }
       if (getFungusIdListList().size() > 0) {
-        output.writeUInt32NoTag(42);
+        output.writeUInt32NoTag(58);
         output.writeUInt32NoTag(fungusIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < fungusIdList_.size(); i++) {
         output.writeUInt32NoTag(fungusIdList_.getInt(i));
+      }
+      if (dungeonId_ != 0) {
+        output.writeUInt32(12, dungeonId_);
       }
       unknownFields.writeTo(output);
     }
@@ -227,10 +227,6 @@ public final class FungusFighterPlotInfoNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (dungeonId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, dungeonId_);
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < fungusIdList_.size(); i++) {
@@ -244,6 +240,10 @@ public final class FungusFighterPlotInfoNotifyOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         fungusIdListMemoizedSerializedSize = dataSize;
+      }
+      if (dungeonId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, dungeonId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -378,8 +378,8 @@ public final class FungusFighterPlotInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: FLDGKPCJMCM
-     * CmdId: 21404
+     * CmdId: 21226
+     * Obf: BDPMEMMMNDD
      * </pre>
      *
      * Protobuf type {@code FungusFighterPlotInfoNotify}
@@ -555,7 +555,7 @@ public final class FungusFighterPlotInfoNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 fungus_id_list = 5;</code>
+       * <code>repeated uint32 fungus_id_list = 7;</code>
        * @return A list containing the fungusIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -564,14 +564,14 @@ public final class FungusFighterPlotInfoNotifyOuterClass {
                  java.util.Collections.unmodifiableList(fungusIdList_) : fungusIdList_;
       }
       /**
-       * <code>repeated uint32 fungus_id_list = 5;</code>
+       * <code>repeated uint32 fungus_id_list = 7;</code>
        * @return The count of fungusIdList.
        */
       public int getFungusIdListCount() {
         return fungusIdList_.size();
       }
       /**
-       * <code>repeated uint32 fungus_id_list = 5;</code>
+       * <code>repeated uint32 fungus_id_list = 7;</code>
        * @param index The index of the element to return.
        * @return The fungusIdList at the given index.
        */
@@ -579,7 +579,7 @@ public final class FungusFighterPlotInfoNotifyOuterClass {
         return fungusIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 fungus_id_list = 5;</code>
+       * <code>repeated uint32 fungus_id_list = 7;</code>
        * @param index The index to set the value at.
        * @param value The fungusIdList to set.
        * @return This builder for chaining.
@@ -592,7 +592,7 @@ public final class FungusFighterPlotInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 fungus_id_list = 5;</code>
+       * <code>repeated uint32 fungus_id_list = 7;</code>
        * @param value The fungusIdList to add.
        * @return This builder for chaining.
        */
@@ -603,7 +603,7 @@ public final class FungusFighterPlotInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 fungus_id_list = 5;</code>
+       * <code>repeated uint32 fungus_id_list = 7;</code>
        * @param values The fungusIdList to add.
        * @return This builder for chaining.
        */
@@ -616,7 +616,7 @@ public final class FungusFighterPlotInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 fungus_id_list = 5;</code>
+       * <code>repeated uint32 fungus_id_list = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearFungusIdList() {
@@ -628,7 +628,7 @@ public final class FungusFighterPlotInfoNotifyOuterClass {
 
       private int dungeonId_ ;
       /**
-       * <code>uint32 dungeon_id = 2;</code>
+       * <code>uint32 dungeon_id = 12;</code>
        * @return The dungeonId.
        */
       @java.lang.Override
@@ -636,7 +636,7 @@ public final class FungusFighterPlotInfoNotifyOuterClass {
         return dungeonId_;
       }
       /**
-       * <code>uint32 dungeon_id = 2;</code>
+       * <code>uint32 dungeon_id = 12;</code>
        * @param value The dungeonId to set.
        * @return This builder for chaining.
        */
@@ -647,7 +647,7 @@ public final class FungusFighterPlotInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 dungeon_id = 2;</code>
+       * <code>uint32 dungeon_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonId() {
@@ -725,7 +725,7 @@ public final class FungusFighterPlotInfoNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n!FungusFighterPlotInfoNotify.proto\"I\n\033F" +
       "ungusFighterPlotInfoNotify\022\026\n\016fungus_id_" +
-      "list\030\005 \003(\r\022\022\n\ndungeon_id\030\002 \001(\rB\033\n\031emu.gr" +
+      "list\030\007 \003(\r\022\022\n\ndungeon_id\030\014 \001(\rB\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

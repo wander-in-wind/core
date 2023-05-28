@@ -19,27 +19,27 @@ public final class EchoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string content = 9;</code>
+     * <code>string content = 12;</code>
      * @return The content.
      */
     java.lang.String getContent();
     /**
-     * <code>string content = 9;</code>
+     * <code>string content = 12;</code>
      * @return The bytes for content.
      */
     com.google.protobuf.ByteString
         getContentBytes();
 
     /**
-     * <code>uint32 seq_id = 11;</code>
+     * <code>uint32 seq_id = 5;</code>
      * @return The seqId.
      */
     int getSeqId();
   }
   /**
    * <pre>
-   * Name: GLFEGKIJKDD
-   * CmdId: 44
+   * CmdId: 33
+   * Obf: MMAHJNEDNJF
    * </pre>
    *
    * Protobuf type {@code EchoNotify}
@@ -87,15 +87,15 @@ public final class EchoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 74: {
+            case 40: {
+
+              seqId_ = input.readUInt32();
+              break;
+            }
+            case 98: {
               java.lang.String s = input.readStringRequireUtf8();
 
               content_ = s;
-              break;
-            }
-            case 88: {
-
-              seqId_ = input.readUInt32();
               break;
             }
             default: {
@@ -130,10 +130,10 @@ public final class EchoNotifyOuterClass {
               emu.grasscutter.net.proto.EchoNotifyOuterClass.EchoNotify.class, emu.grasscutter.net.proto.EchoNotifyOuterClass.EchoNotify.Builder.class);
     }
 
-    public static final int CONTENT_FIELD_NUMBER = 9;
+    public static final int CONTENT_FIELD_NUMBER = 12;
     private volatile java.lang.Object content_;
     /**
-     * <code>string content = 9;</code>
+     * <code>string content = 12;</code>
      * @return The content.
      */
     @java.lang.Override
@@ -150,7 +150,7 @@ public final class EchoNotifyOuterClass {
       }
     }
     /**
-     * <code>string content = 9;</code>
+     * <code>string content = 12;</code>
      * @return The bytes for content.
      */
     @java.lang.Override
@@ -168,10 +168,10 @@ public final class EchoNotifyOuterClass {
       }
     }
 
-    public static final int SEQ_ID_FIELD_NUMBER = 11;
+    public static final int SEQ_ID_FIELD_NUMBER = 5;
     private int seqId_;
     /**
-     * <code>uint32 seq_id = 11;</code>
+     * <code>uint32 seq_id = 5;</code>
      * @return The seqId.
      */
     @java.lang.Override
@@ -193,11 +193,11 @@ public final class EchoNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(content_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 9, content_);
-      }
       if (seqId_ != 0) {
-        output.writeUInt32(11, seqId_);
+        output.writeUInt32(5, seqId_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(content_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 12, content_);
       }
       unknownFields.writeTo(output);
     }
@@ -208,12 +208,12 @@ public final class EchoNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(content_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, content_);
-      }
       if (seqId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, seqId_);
+          .computeUInt32Size(5, seqId_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(content_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, content_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -346,8 +346,8 @@ public final class EchoNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: GLFEGKIJKDD
-     * CmdId: 44
+     * CmdId: 33
+     * Obf: MMAHJNEDNJF
      * </pre>
      *
      * Protobuf type {@code EchoNotify}
@@ -505,7 +505,7 @@ public final class EchoNotifyOuterClass {
 
       private java.lang.Object content_ = "";
       /**
-       * <code>string content = 9;</code>
+       * <code>string content = 12;</code>
        * @return The content.
        */
       public java.lang.String getContent() {
@@ -521,7 +521,7 @@ public final class EchoNotifyOuterClass {
         }
       }
       /**
-       * <code>string content = 9;</code>
+       * <code>string content = 12;</code>
        * @return The bytes for content.
        */
       public com.google.protobuf.ByteString
@@ -538,7 +538,7 @@ public final class EchoNotifyOuterClass {
         }
       }
       /**
-       * <code>string content = 9;</code>
+       * <code>string content = 12;</code>
        * @param value The content to set.
        * @return This builder for chaining.
        */
@@ -553,7 +553,7 @@ public final class EchoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>string content = 9;</code>
+       * <code>string content = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearContent() {
@@ -563,7 +563,7 @@ public final class EchoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>string content = 9;</code>
+       * <code>string content = 12;</code>
        * @param value The bytes for content to set.
        * @return This builder for chaining.
        */
@@ -581,7 +581,7 @@ public final class EchoNotifyOuterClass {
 
       private int seqId_ ;
       /**
-       * <code>uint32 seq_id = 11;</code>
+       * <code>uint32 seq_id = 5;</code>
        * @return The seqId.
        */
       @java.lang.Override
@@ -589,7 +589,7 @@ public final class EchoNotifyOuterClass {
         return seqId_;
       }
       /**
-       * <code>uint32 seq_id = 11;</code>
+       * <code>uint32 seq_id = 5;</code>
        * @param value The seqId to set.
        * @return This builder for chaining.
        */
@@ -600,7 +600,7 @@ public final class EchoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 seq_id = 11;</code>
+       * <code>uint32 seq_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearSeqId() {
@@ -677,7 +677,7 @@ public final class EchoNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\020EchoNotify.proto\"-\n\nEchoNotify\022\017\n\007cont" +
-      "ent\030\t \001(\t\022\016\n\006seq_id\030\013 \001(\rB\033\n\031emu.grasscu" +
+      "ent\030\014 \001(\t\022\016\n\006seq_id\030\005 \001(\rB\033\n\031emu.grasscu" +
       "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

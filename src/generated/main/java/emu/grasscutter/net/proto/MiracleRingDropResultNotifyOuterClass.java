@@ -19,21 +19,21 @@ public final class MiracleRingDropResultNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 JCFKODDCBIH = 15;</code>
-     * @return The jCFKODDCBIH.
+     * <code>int32 CGEEAAHAOPL = 8;</code>
+     * @return The cGEEAAHAOPL.
      */
-    int getJCFKODDCBIH();
+    int getCGEEAAHAOPL();
 
     /**
-     * <code>int32 OIMOAGJJCOI = 13;</code>
-     * @return The oIMOAGJJCOI.
+     * <code>uint32 BJHONLLCDPC = 1;</code>
+     * @return The bJHONLLCDPC.
      */
-    int getOIMOAGJJCOI();
+    int getBJHONLLCDPC();
   }
   /**
    * <pre>
-   * Name: HCFHCCKHJMN
-   * CmdId: 5215
+   * CmdId: 5239
+   * Obf: MMEDNFIFFFC
    * </pre>
    *
    * Protobuf type {@code MiracleRingDropResultNotify}
@@ -80,14 +80,14 @@ public final class MiracleRingDropResultNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
+            case 8: {
 
-              oIMOAGJJCOI_ = input.readInt32();
+              bJHONLLCDPC_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 64: {
 
-              jCFKODDCBIH_ = input.readInt32();
+              cGEEAAHAOPL_ = input.readInt32();
               break;
             }
             default: {
@@ -122,26 +122,26 @@ public final class MiracleRingDropResultNotifyOuterClass {
               emu.grasscutter.net.proto.MiracleRingDropResultNotifyOuterClass.MiracleRingDropResultNotify.class, emu.grasscutter.net.proto.MiracleRingDropResultNotifyOuterClass.MiracleRingDropResultNotify.Builder.class);
     }
 
-    public static final int JCFKODDCBIH_FIELD_NUMBER = 15;
-    private int jCFKODDCBIH_;
+    public static final int CGEEAAHAOPL_FIELD_NUMBER = 8;
+    private int cGEEAAHAOPL_;
     /**
-     * <code>int32 JCFKODDCBIH = 15;</code>
-     * @return The jCFKODDCBIH.
+     * <code>int32 CGEEAAHAOPL = 8;</code>
+     * @return The cGEEAAHAOPL.
      */
     @java.lang.Override
-    public int getJCFKODDCBIH() {
-      return jCFKODDCBIH_;
+    public int getCGEEAAHAOPL() {
+      return cGEEAAHAOPL_;
     }
 
-    public static final int OIMOAGJJCOI_FIELD_NUMBER = 13;
-    private int oIMOAGJJCOI_;
+    public static final int BJHONLLCDPC_FIELD_NUMBER = 1;
+    private int bJHONLLCDPC_;
     /**
-     * <code>int32 OIMOAGJJCOI = 13;</code>
-     * @return The oIMOAGJJCOI.
+     * <code>uint32 BJHONLLCDPC = 1;</code>
+     * @return The bJHONLLCDPC.
      */
     @java.lang.Override
-    public int getOIMOAGJJCOI() {
-      return oIMOAGJJCOI_;
+    public int getBJHONLLCDPC() {
+      return bJHONLLCDPC_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -158,11 +158,11 @@ public final class MiracleRingDropResultNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (oIMOAGJJCOI_ != 0) {
-        output.writeInt32(13, oIMOAGJJCOI_);
+      if (bJHONLLCDPC_ != 0) {
+        output.writeUInt32(1, bJHONLLCDPC_);
       }
-      if (jCFKODDCBIH_ != 0) {
-        output.writeInt32(15, jCFKODDCBIH_);
+      if (cGEEAAHAOPL_ != 0) {
+        output.writeInt32(8, cGEEAAHAOPL_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class MiracleRingDropResultNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (oIMOAGJJCOI_ != 0) {
+      if (bJHONLLCDPC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(13, oIMOAGJJCOI_);
+          .computeUInt32Size(1, bJHONLLCDPC_);
       }
-      if (jCFKODDCBIH_ != 0) {
+      if (cGEEAAHAOPL_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(15, jCFKODDCBIH_);
+          .computeInt32Size(8, cGEEAAHAOPL_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +196,10 @@ public final class MiracleRingDropResultNotifyOuterClass {
       }
       emu.grasscutter.net.proto.MiracleRingDropResultNotifyOuterClass.MiracleRingDropResultNotify other = (emu.grasscutter.net.proto.MiracleRingDropResultNotifyOuterClass.MiracleRingDropResultNotify) obj;
 
-      if (getJCFKODDCBIH()
-          != other.getJCFKODDCBIH()) return false;
-      if (getOIMOAGJJCOI()
-          != other.getOIMOAGJJCOI()) return false;
+      if (getCGEEAAHAOPL()
+          != other.getCGEEAAHAOPL()) return false;
+      if (getBJHONLLCDPC()
+          != other.getBJHONLLCDPC()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +211,10 @@ public final class MiracleRingDropResultNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + JCFKODDCBIH_FIELD_NUMBER;
-      hash = (53 * hash) + getJCFKODDCBIH();
-      hash = (37 * hash) + OIMOAGJJCOI_FIELD_NUMBER;
-      hash = (53 * hash) + getOIMOAGJJCOI();
+      hash = (37 * hash) + CGEEAAHAOPL_FIELD_NUMBER;
+      hash = (53 * hash) + getCGEEAAHAOPL();
+      hash = (37 * hash) + BJHONLLCDPC_FIELD_NUMBER;
+      hash = (53 * hash) + getBJHONLLCDPC();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +312,8 @@ public final class MiracleRingDropResultNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: HCFHCCKHJMN
-     * CmdId: 5215
+     * CmdId: 5239
+     * Obf: MMEDNFIFFFC
      * </pre>
      *
      * Protobuf type {@code MiracleRingDropResultNotify}
@@ -353,9 +353,9 @@ public final class MiracleRingDropResultNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        jCFKODDCBIH_ = 0;
+        cGEEAAHAOPL_ = 0;
 
-        oIMOAGJJCOI_ = 0;
+        bJHONLLCDPC_ = 0;
 
         return this;
       }
@@ -383,8 +383,8 @@ public final class MiracleRingDropResultNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.MiracleRingDropResultNotifyOuterClass.MiracleRingDropResultNotify buildPartial() {
         emu.grasscutter.net.proto.MiracleRingDropResultNotifyOuterClass.MiracleRingDropResultNotify result = new emu.grasscutter.net.proto.MiracleRingDropResultNotifyOuterClass.MiracleRingDropResultNotify(this);
-        result.jCFKODDCBIH_ = jCFKODDCBIH_;
-        result.oIMOAGJJCOI_ = oIMOAGJJCOI_;
+        result.cGEEAAHAOPL_ = cGEEAAHAOPL_;
+        result.bJHONLLCDPC_ = bJHONLLCDPC_;
         onBuilt();
         return result;
       }
@@ -433,11 +433,11 @@ public final class MiracleRingDropResultNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MiracleRingDropResultNotifyOuterClass.MiracleRingDropResultNotify other) {
         if (other == emu.grasscutter.net.proto.MiracleRingDropResultNotifyOuterClass.MiracleRingDropResultNotify.getDefaultInstance()) return this;
-        if (other.getJCFKODDCBIH() != 0) {
-          setJCFKODDCBIH(other.getJCFKODDCBIH());
+        if (other.getCGEEAAHAOPL() != 0) {
+          setCGEEAAHAOPL(other.getCGEEAAHAOPL());
         }
-        if (other.getOIMOAGJJCOI() != 0) {
-          setOIMOAGJJCOI(other.getOIMOAGJJCOI());
+        if (other.getBJHONLLCDPC() != 0) {
+          setBJHONLLCDPC(other.getBJHONLLCDPC());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,64 +468,64 @@ public final class MiracleRingDropResultNotifyOuterClass {
         return this;
       }
 
-      private int jCFKODDCBIH_ ;
+      private int cGEEAAHAOPL_ ;
       /**
-       * <code>int32 JCFKODDCBIH = 15;</code>
-       * @return The jCFKODDCBIH.
+       * <code>int32 CGEEAAHAOPL = 8;</code>
+       * @return The cGEEAAHAOPL.
        */
       @java.lang.Override
-      public int getJCFKODDCBIH() {
-        return jCFKODDCBIH_;
+      public int getCGEEAAHAOPL() {
+        return cGEEAAHAOPL_;
       }
       /**
-       * <code>int32 JCFKODDCBIH = 15;</code>
-       * @param value The jCFKODDCBIH to set.
+       * <code>int32 CGEEAAHAOPL = 8;</code>
+       * @param value The cGEEAAHAOPL to set.
        * @return This builder for chaining.
        */
-      public Builder setJCFKODDCBIH(int value) {
+      public Builder setCGEEAAHAOPL(int value) {
         
-        jCFKODDCBIH_ = value;
+        cGEEAAHAOPL_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 JCFKODDCBIH = 15;</code>
+       * <code>int32 CGEEAAHAOPL = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearJCFKODDCBIH() {
+      public Builder clearCGEEAAHAOPL() {
         
-        jCFKODDCBIH_ = 0;
+        cGEEAAHAOPL_ = 0;
         onChanged();
         return this;
       }
 
-      private int oIMOAGJJCOI_ ;
+      private int bJHONLLCDPC_ ;
       /**
-       * <code>int32 OIMOAGJJCOI = 13;</code>
-       * @return The oIMOAGJJCOI.
+       * <code>uint32 BJHONLLCDPC = 1;</code>
+       * @return The bJHONLLCDPC.
        */
       @java.lang.Override
-      public int getOIMOAGJJCOI() {
-        return oIMOAGJJCOI_;
+      public int getBJHONLLCDPC() {
+        return bJHONLLCDPC_;
       }
       /**
-       * <code>int32 OIMOAGJJCOI = 13;</code>
-       * @param value The oIMOAGJJCOI to set.
+       * <code>uint32 BJHONLLCDPC = 1;</code>
+       * @param value The bJHONLLCDPC to set.
        * @return This builder for chaining.
        */
-      public Builder setOIMOAGJJCOI(int value) {
+      public Builder setBJHONLLCDPC(int value) {
         
-        oIMOAGJJCOI_ = value;
+        bJHONLLCDPC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 OIMOAGJJCOI = 13;</code>
+       * <code>uint32 BJHONLLCDPC = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOIMOAGJJCOI() {
+      public Builder clearBJHONLLCDPC() {
         
-        oIMOAGJJCOI_ = 0;
+        bJHONLLCDPC_ = 0;
         onChanged();
         return this;
       }
@@ -597,8 +597,8 @@ public final class MiracleRingDropResultNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!MiracleRingDropResultNotify.proto\"G\n\033M" +
-      "iracleRingDropResultNotify\022\023\n\013JCFKODDCBI" +
-      "H\030\017 \001(\005\022\023\n\013OIMOAGJJCOI\030\r \001(\005B\033\n\031emu.gras" +
+      "iracleRingDropResultNotify\022\023\n\013CGEEAAHAOP" +
+      "L\030\010 \001(\005\022\023\n\013BJHONLLCDPC\030\001 \001(\rB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -610,7 +610,7 @@ public final class MiracleRingDropResultNotifyOuterClass {
     internal_static_MiracleRingDropResultNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MiracleRingDropResultNotify_descriptor,
-        new java.lang.String[] { "JCFKODDCBIH", "OIMOAGJJCOI", });
+        new java.lang.String[] { "CGEEAAHAOPL", "BJHONLLCDPC", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

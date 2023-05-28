@@ -19,15 +19,15 @@ public final class LoadActivityTerrainNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 activity_id = 13;</code>
+     * <code>uint32 activity_id = 10;</code>
      * @return The activityId.
      */
     int getActivityId();
   }
   /**
    * <pre>
-   * Name: JEAMOBGHLEL
-   * CmdId: 2146
+   * CmdId: 2032
+   * Obf: MALICCMIPPP
    * </pre>
    *
    * Protobuf type {@code LoadActivityTerrainNotify}
@@ -74,7 +74,7 @@ public final class LoadActivityTerrainNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
+            case 80: {
 
               activityId_ = input.readUInt32();
               break;
@@ -111,10 +111,10 @@ public final class LoadActivityTerrainNotifyOuterClass {
               emu.grasscutter.net.proto.LoadActivityTerrainNotifyOuterClass.LoadActivityTerrainNotify.class, emu.grasscutter.net.proto.LoadActivityTerrainNotifyOuterClass.LoadActivityTerrainNotify.Builder.class);
     }
 
-    public static final int ACTIVITY_ID_FIELD_NUMBER = 13;
+    public static final int ACTIVITY_ID_FIELD_NUMBER = 10;
     private int activityId_;
     /**
-     * <code>uint32 activity_id = 13;</code>
+     * <code>uint32 activity_id = 10;</code>
      * @return The activityId.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class LoadActivityTerrainNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (activityId_ != 0) {
-        output.writeUInt32(13, activityId_);
+        output.writeUInt32(10, activityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class LoadActivityTerrainNotifyOuterClass {
       size = 0;
       if (activityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, activityId_);
+          .computeUInt32Size(10, activityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class LoadActivityTerrainNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: JEAMOBGHLEL
-     * CmdId: 2146
+     * CmdId: 2032
+     * Obf: MALICCMIPPP
      * </pre>
      *
      * Protobuf type {@code LoadActivityTerrainNotify}
@@ -431,7 +431,7 @@ public final class LoadActivityTerrainNotifyOuterClass {
 
       private int activityId_ ;
       /**
-       * <code>uint32 activity_id = 13;</code>
+       * <code>uint32 activity_id = 10;</code>
        * @return The activityId.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class LoadActivityTerrainNotifyOuterClass {
         return activityId_;
       }
       /**
-       * <code>uint32 activity_id = 13;</code>
+       * <code>uint32 activity_id = 10;</code>
        * @param value The activityId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class LoadActivityTerrainNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 activity_id = 13;</code>
+       * <code>uint32 activity_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearActivityId() {
@@ -527,7 +527,7 @@ public final class LoadActivityTerrainNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037LoadActivityTerrainNotify.proto\"0\n\031Loa" +
-      "dActivityTerrainNotify\022\023\n\013activity_id\030\r " +
+      "dActivityTerrainNotify\022\023\n\013activity_id\030\n " +
       "\001(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

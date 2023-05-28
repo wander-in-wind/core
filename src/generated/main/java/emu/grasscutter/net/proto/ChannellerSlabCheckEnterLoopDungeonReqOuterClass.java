@@ -20,8 +20,8 @@ public final class ChannellerSlabCheckEnterLoopDungeonReqOuterClass {
   }
   /**
    * <pre>
-   * Name: JNOFKMKAGAC
-   * CmdId: 8485
+   * CmdId: 8476
+   * Obf: KCFFPAFLKEI
    * </pre>
    *
    * Protobuf type {@code ChannellerSlabCheckEnterLoopDungeonReq}
@@ -246,8 +246,8 @@ public final class ChannellerSlabCheckEnterLoopDungeonReqOuterClass {
     }
     /**
      * <pre>
-     * Name: JNOFKMKAGAC
-     * CmdId: 8485
+     * CmdId: 8476
+     * Obf: KCFFPAFLKEI
      * </pre>
      *
      * Protobuf type {@code ChannellerSlabCheckEnterLoopDungeonReq}

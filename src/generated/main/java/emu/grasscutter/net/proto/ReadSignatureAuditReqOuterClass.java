@@ -20,8 +20,8 @@ public final class ReadSignatureAuditReqOuterClass {
   }
   /**
    * <pre>
-   * Name: BMOIDNLNCMF
-   * CmdId: 4073
+   * CmdId: 4079
+   * Obf: KAPHPPKCKBK
    * </pre>
    *
    * Protobuf type {@code ReadSignatureAuditReq}
@@ -246,8 +246,8 @@ public final class ReadSignatureAuditReqOuterClass {
     }
     /**
      * <pre>
-     * Name: BMOIDNLNCMF
-     * CmdId: 4073
+     * CmdId: 4079
+     * Obf: KAPHPPKCKBK
      * </pre>
      *
      * Protobuf type {@code ReadSignatureAuditReq}

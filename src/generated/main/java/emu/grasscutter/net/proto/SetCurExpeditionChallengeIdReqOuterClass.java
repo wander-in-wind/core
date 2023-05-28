@@ -19,15 +19,15 @@ public final class SetCurExpeditionChallengeIdReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 id = 9;</code>
+     * <code>uint32 id = 11;</code>
      * @return The id.
      */
     int getId();
   }
   /**
    * <pre>
-   * Name: LOAPMNFOJBM
-   * CmdId: 2168
+   * CmdId: 2106
+   * Obf: MAAKMJOIMIG
    * </pre>
    *
    * Protobuf type {@code SetCurExpeditionChallengeIdReq}
@@ -74,7 +74,7 @@ public final class SetCurExpeditionChallengeIdReqOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 88: {
 
               id_ = input.readUInt32();
               break;
@@ -111,10 +111,10 @@ public final class SetCurExpeditionChallengeIdReqOuterClass {
               emu.grasscutter.net.proto.SetCurExpeditionChallengeIdReqOuterClass.SetCurExpeditionChallengeIdReq.class, emu.grasscutter.net.proto.SetCurExpeditionChallengeIdReqOuterClass.SetCurExpeditionChallengeIdReq.Builder.class);
     }
 
-    public static final int ID_FIELD_NUMBER = 9;
+    public static final int ID_FIELD_NUMBER = 11;
     private int id_;
     /**
-     * <code>uint32 id = 9;</code>
+     * <code>uint32 id = 11;</code>
      * @return The id.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class SetCurExpeditionChallengeIdReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (id_ != 0) {
-        output.writeUInt32(9, id_);
+        output.writeUInt32(11, id_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class SetCurExpeditionChallengeIdReqOuterClass {
       size = 0;
       if (id_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, id_);
+          .computeUInt32Size(11, id_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class SetCurExpeditionChallengeIdReqOuterClass {
     }
     /**
      * <pre>
-     * Name: LOAPMNFOJBM
-     * CmdId: 2168
+     * CmdId: 2106
+     * Obf: MAAKMJOIMIG
      * </pre>
      *
      * Protobuf type {@code SetCurExpeditionChallengeIdReq}
@@ -431,7 +431,7 @@ public final class SetCurExpeditionChallengeIdReqOuterClass {
 
       private int id_ ;
       /**
-       * <code>uint32 id = 9;</code>
+       * <code>uint32 id = 11;</code>
        * @return The id.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class SetCurExpeditionChallengeIdReqOuterClass {
         return id_;
       }
       /**
-       * <code>uint32 id = 9;</code>
+       * <code>uint32 id = 11;</code>
        * @param value The id to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class SetCurExpeditionChallengeIdReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 id = 9;</code>
+       * <code>uint32 id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearId() {
@@ -527,7 +527,7 @@ public final class SetCurExpeditionChallengeIdReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n$SetCurExpeditionChallengeIdReq.proto\"," +
-      "\n\036SetCurExpeditionChallengeIdReq\022\n\n\002id\030\t" +
+      "\n\036SetCurExpeditionChallengeIdReq\022\n\n\002id\030\013" +
       " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
     };

@@ -19,21 +19,21 @@ public final class PlantFlowerAcceptGiveFlowerReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 schedule_id = 13;</code>
+     * <code>uint32 schedule_id = 4;</code>
      * @return The scheduleId.
      */
     int getScheduleId();
 
     /**
-     * <code>uint32 uid = 1;</code>
+     * <code>uint32 uid = 11;</code>
      * @return The uid.
      */
     int getUid();
   }
   /**
    * <pre>
-   * Name: HFBCBHKAAPF
-   * CmdId: 8989
+   * CmdId: 8705
+   * Obf: FJEFMFNFKMN
    * </pre>
    *
    * Protobuf type {@code PlantFlowerAcceptGiveFlowerReq}
@@ -80,14 +80,14 @@ public final class PlantFlowerAcceptGiveFlowerReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              uid_ = input.readUInt32();
-              break;
-            }
-            case 104: {
+            case 32: {
 
               scheduleId_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              uid_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,10 +122,10 @@ public final class PlantFlowerAcceptGiveFlowerReqOuterClass {
               emu.grasscutter.net.proto.PlantFlowerAcceptGiveFlowerReqOuterClass.PlantFlowerAcceptGiveFlowerReq.class, emu.grasscutter.net.proto.PlantFlowerAcceptGiveFlowerReqOuterClass.PlantFlowerAcceptGiveFlowerReq.Builder.class);
     }
 
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 13;
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 4;
     private int scheduleId_;
     /**
-     * <code>uint32 schedule_id = 13;</code>
+     * <code>uint32 schedule_id = 4;</code>
      * @return The scheduleId.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class PlantFlowerAcceptGiveFlowerReqOuterClass {
       return scheduleId_;
     }
 
-    public static final int UID_FIELD_NUMBER = 1;
+    public static final int UID_FIELD_NUMBER = 11;
     private int uid_;
     /**
-     * <code>uint32 uid = 1;</code>
+     * <code>uint32 uid = 11;</code>
      * @return The uid.
      */
     @java.lang.Override
@@ -158,11 +158,11 @@ public final class PlantFlowerAcceptGiveFlowerReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (uid_ != 0) {
-        output.writeUInt32(1, uid_);
-      }
       if (scheduleId_ != 0) {
-        output.writeUInt32(13, scheduleId_);
+        output.writeUInt32(4, scheduleId_);
+      }
+      if (uid_ != 0) {
+        output.writeUInt32(11, uid_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class PlantFlowerAcceptGiveFlowerReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (uid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, uid_);
-      }
       if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, scheduleId_);
+          .computeUInt32Size(4, scheduleId_);
+      }
+      if (uid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, uid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class PlantFlowerAcceptGiveFlowerReqOuterClass {
     }
     /**
      * <pre>
-     * Name: HFBCBHKAAPF
-     * CmdId: 8989
+     * CmdId: 8705
+     * Obf: FJEFMFNFKMN
      * </pre>
      *
      * Protobuf type {@code PlantFlowerAcceptGiveFlowerReq}
@@ -470,7 +470,7 @@ public final class PlantFlowerAcceptGiveFlowerReqOuterClass {
 
       private int scheduleId_ ;
       /**
-       * <code>uint32 schedule_id = 13;</code>
+       * <code>uint32 schedule_id = 4;</code>
        * @return The scheduleId.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class PlantFlowerAcceptGiveFlowerReqOuterClass {
         return scheduleId_;
       }
       /**
-       * <code>uint32 schedule_id = 13;</code>
+       * <code>uint32 schedule_id = 4;</code>
        * @param value The scheduleId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class PlantFlowerAcceptGiveFlowerReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 schedule_id = 13;</code>
+       * <code>uint32 schedule_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearScheduleId() {
@@ -501,7 +501,7 @@ public final class PlantFlowerAcceptGiveFlowerReqOuterClass {
 
       private int uid_ ;
       /**
-       * <code>uint32 uid = 1;</code>
+       * <code>uint32 uid = 11;</code>
        * @return The uid.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class PlantFlowerAcceptGiveFlowerReqOuterClass {
         return uid_;
       }
       /**
-       * <code>uint32 uid = 1;</code>
+       * <code>uint32 uid = 11;</code>
        * @param value The uid to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class PlantFlowerAcceptGiveFlowerReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 uid = 1;</code>
+       * <code>uint32 uid = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearUid() {
@@ -598,7 +598,7 @@ public final class PlantFlowerAcceptGiveFlowerReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n$PlantFlowerAcceptGiveFlowerReq.proto\"B" +
       "\n\036PlantFlowerAcceptGiveFlowerReq\022\023\n\013sche" +
-      "dule_id\030\r \001(\r\022\013\n\003uid\030\001 \001(\rB\033\n\031emu.grassc" +
+      "dule_id\030\004 \001(\r\022\013\n\003uid\030\013 \001(\rB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

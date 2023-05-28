@@ -37,8 +37,8 @@ public final class CombineDataNotifyOuterClass {
   }
   /**
    * <pre>
-   * Name: JNBJGBNCBAK
-   * CmdId: 690
+   * CmdId: 640
+   * Obf: DCIKPMMCEAB
    * </pre>
    *
    * Protobuf type {@code CombineDataNotify}
@@ -345,8 +345,8 @@ public final class CombineDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: JNBJGBNCBAK
-     * CmdId: 690
+     * CmdId: 640
+     * Obf: DCIKPMMCEAB
      * </pre>
      *
      * Protobuf type {@code CombineDataNotify}

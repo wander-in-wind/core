@@ -19,44 +19,44 @@ public final class ExpeditionStartReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 avatar_id_list = 11;</code>
+     * <code>uint32 path_id = 7;</code>
+     * @return The pathId.
+     */
+    int getPathId();
+
+    /**
+     * <code>uint32 MFNGJOCIAPE = 2;</code>
+     * @return The mFNGJOCIAPE.
+     */
+    int getMFNGJOCIAPE();
+
+    /**
+     * <code>repeated uint32 avatar_id_list = 6;</code>
      * @return A list containing the avatarIdList.
      */
     java.util.List<java.lang.Integer> getAvatarIdListList();
     /**
-     * <code>repeated uint32 avatar_id_list = 11;</code>
+     * <code>repeated uint32 avatar_id_list = 6;</code>
      * @return The count of avatarIdList.
      */
     int getAvatarIdListCount();
     /**
-     * <code>repeated uint32 avatar_id_list = 11;</code>
+     * <code>repeated uint32 avatar_id_list = 6;</code>
      * @param index The index of the element to return.
      * @return The avatarIdList at the given index.
      */
     int getAvatarIdList(int index);
 
     /**
-     * <code>uint32 LOHMHPCOLBG = 8;</code>
-     * @return The lOHMHPCOLBG.
+     * <code>uint32 FLHKBCEIKLE = 12;</code>
+     * @return The fLHKBCEIKLE.
      */
-    int getLOHMHPCOLBG();
-
-    /**
-     * <code>uint32 OOKCMLMGMJB = 1;</code>
-     * @return The oOKCMLMGMJB.
-     */
-    int getOOKCMLMGMJB();
-
-    /**
-     * <code>uint32 path_id = 10;</code>
-     * @return The pathId.
-     */
-    int getPathId();
+    int getFLHKBCEIKLE();
   }
   /**
    * <pre>
-   * Name: CCGEPDKJGBB
-   * CmdId: 2002
+   * CmdId: 2038
+   * Obf: EJCDOOPMCED
    * </pre>
    *
    * Protobuf type {@code ExpeditionStartReq}
@@ -105,22 +105,12 @@ public final class ExpeditionStartReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 16: {
 
-              oOKCMLMGMJB_ = input.readUInt32();
+              mFNGJOCIAPE_ = input.readUInt32();
               break;
             }
-            case 64: {
-
-              lOHMHPCOLBG_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
-              pathId_ = input.readUInt32();
-              break;
-            }
-            case 88: {
+            case 48: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 avatarIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -128,7 +118,7 @@ public final class ExpeditionStartReqOuterClass {
               avatarIdList_.addInt(input.readUInt32());
               break;
             }
-            case 90: {
+            case 50: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -139,6 +129,16 @@ public final class ExpeditionStartReqOuterClass {
                 avatarIdList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
+              break;
+            }
+            case 56: {
+
+              pathId_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              fLHKBCEIKLE_ = input.readUInt32();
               break;
             }
             default: {
@@ -176,10 +176,32 @@ public final class ExpeditionStartReqOuterClass {
               emu.grasscutter.net.proto.ExpeditionStartReqOuterClass.ExpeditionStartReq.class, emu.grasscutter.net.proto.ExpeditionStartReqOuterClass.ExpeditionStartReq.Builder.class);
     }
 
-    public static final int AVATAR_ID_LIST_FIELD_NUMBER = 11;
+    public static final int PATH_ID_FIELD_NUMBER = 7;
+    private int pathId_;
+    /**
+     * <code>uint32 path_id = 7;</code>
+     * @return The pathId.
+     */
+    @java.lang.Override
+    public int getPathId() {
+      return pathId_;
+    }
+
+    public static final int MFNGJOCIAPE_FIELD_NUMBER = 2;
+    private int mFNGJOCIAPE_;
+    /**
+     * <code>uint32 MFNGJOCIAPE = 2;</code>
+     * @return The mFNGJOCIAPE.
+     */
+    @java.lang.Override
+    public int getMFNGJOCIAPE() {
+      return mFNGJOCIAPE_;
+    }
+
+    public static final int AVATAR_ID_LIST_FIELD_NUMBER = 6;
     private com.google.protobuf.Internal.IntList avatarIdList_;
     /**
-     * <code>repeated uint32 avatar_id_list = 11;</code>
+     * <code>repeated uint32 avatar_id_list = 6;</code>
      * @return A list containing the avatarIdList.
      */
     @java.lang.Override
@@ -188,14 +210,14 @@ public final class ExpeditionStartReqOuterClass {
       return avatarIdList_;
     }
     /**
-     * <code>repeated uint32 avatar_id_list = 11;</code>
+     * <code>repeated uint32 avatar_id_list = 6;</code>
      * @return The count of avatarIdList.
      */
     public int getAvatarIdListCount() {
       return avatarIdList_.size();
     }
     /**
-     * <code>repeated uint32 avatar_id_list = 11;</code>
+     * <code>repeated uint32 avatar_id_list = 6;</code>
      * @param index The index of the element to return.
      * @return The avatarIdList at the given index.
      */
@@ -204,37 +226,15 @@ public final class ExpeditionStartReqOuterClass {
     }
     private int avatarIdListMemoizedSerializedSize = -1;
 
-    public static final int LOHMHPCOLBG_FIELD_NUMBER = 8;
-    private int lOHMHPCOLBG_;
+    public static final int FLHKBCEIKLE_FIELD_NUMBER = 12;
+    private int fLHKBCEIKLE_;
     /**
-     * <code>uint32 LOHMHPCOLBG = 8;</code>
-     * @return The lOHMHPCOLBG.
+     * <code>uint32 FLHKBCEIKLE = 12;</code>
+     * @return The fLHKBCEIKLE.
      */
     @java.lang.Override
-    public int getLOHMHPCOLBG() {
-      return lOHMHPCOLBG_;
-    }
-
-    public static final int OOKCMLMGMJB_FIELD_NUMBER = 1;
-    private int oOKCMLMGMJB_;
-    /**
-     * <code>uint32 OOKCMLMGMJB = 1;</code>
-     * @return The oOKCMLMGMJB.
-     */
-    @java.lang.Override
-    public int getOOKCMLMGMJB() {
-      return oOKCMLMGMJB_;
-    }
-
-    public static final int PATH_ID_FIELD_NUMBER = 10;
-    private int pathId_;
-    /**
-     * <code>uint32 path_id = 10;</code>
-     * @return The pathId.
-     */
-    @java.lang.Override
-    public int getPathId() {
-      return pathId_;
+    public int getFLHKBCEIKLE() {
+      return fLHKBCEIKLE_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -252,21 +252,21 @@ public final class ExpeditionStartReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (oOKCMLMGMJB_ != 0) {
-        output.writeUInt32(1, oOKCMLMGMJB_);
-      }
-      if (lOHMHPCOLBG_ != 0) {
-        output.writeUInt32(8, lOHMHPCOLBG_);
-      }
-      if (pathId_ != 0) {
-        output.writeUInt32(10, pathId_);
+      if (mFNGJOCIAPE_ != 0) {
+        output.writeUInt32(2, mFNGJOCIAPE_);
       }
       if (getAvatarIdListList().size() > 0) {
-        output.writeUInt32NoTag(90);
+        output.writeUInt32NoTag(50);
         output.writeUInt32NoTag(avatarIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < avatarIdList_.size(); i++) {
         output.writeUInt32NoTag(avatarIdList_.getInt(i));
+      }
+      if (pathId_ != 0) {
+        output.writeUInt32(7, pathId_);
+      }
+      if (fLHKBCEIKLE_ != 0) {
+        output.writeUInt32(12, fLHKBCEIKLE_);
       }
       unknownFields.writeTo(output);
     }
@@ -277,17 +277,9 @@ public final class ExpeditionStartReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (oOKCMLMGMJB_ != 0) {
+      if (mFNGJOCIAPE_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, oOKCMLMGMJB_);
-      }
-      if (lOHMHPCOLBG_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, lOHMHPCOLBG_);
-      }
-      if (pathId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, pathId_);
+          .computeUInt32Size(2, mFNGJOCIAPE_);
       }
       {
         int dataSize = 0;
@@ -302,6 +294,14 @@ public final class ExpeditionStartReqOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         avatarIdListMemoizedSerializedSize = dataSize;
+      }
+      if (pathId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, pathId_);
+      }
+      if (fLHKBCEIKLE_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, fLHKBCEIKLE_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -318,14 +318,14 @@ public final class ExpeditionStartReqOuterClass {
       }
       emu.grasscutter.net.proto.ExpeditionStartReqOuterClass.ExpeditionStartReq other = (emu.grasscutter.net.proto.ExpeditionStartReqOuterClass.ExpeditionStartReq) obj;
 
-      if (!getAvatarIdListList()
-          .equals(other.getAvatarIdListList())) return false;
-      if (getLOHMHPCOLBG()
-          != other.getLOHMHPCOLBG()) return false;
-      if (getOOKCMLMGMJB()
-          != other.getOOKCMLMGMJB()) return false;
       if (getPathId()
           != other.getPathId()) return false;
+      if (getMFNGJOCIAPE()
+          != other.getMFNGJOCIAPE()) return false;
+      if (!getAvatarIdListList()
+          .equals(other.getAvatarIdListList())) return false;
+      if (getFLHKBCEIKLE()
+          != other.getFLHKBCEIKLE()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -337,16 +337,16 @@ public final class ExpeditionStartReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + PATH_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getPathId();
+      hash = (37 * hash) + MFNGJOCIAPE_FIELD_NUMBER;
+      hash = (53 * hash) + getMFNGJOCIAPE();
       if (getAvatarIdListCount() > 0) {
         hash = (37 * hash) + AVATAR_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getAvatarIdListList().hashCode();
       }
-      hash = (37 * hash) + LOHMHPCOLBG_FIELD_NUMBER;
-      hash = (53 * hash) + getLOHMHPCOLBG();
-      hash = (37 * hash) + OOKCMLMGMJB_FIELD_NUMBER;
-      hash = (53 * hash) + getOOKCMLMGMJB();
-      hash = (37 * hash) + PATH_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getPathId();
+      hash = (37 * hash) + FLHKBCEIKLE_FIELD_NUMBER;
+      hash = (53 * hash) + getFLHKBCEIKLE();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -444,8 +444,8 @@ public final class ExpeditionStartReqOuterClass {
     }
     /**
      * <pre>
-     * Name: CCGEPDKJGBB
-     * CmdId: 2002
+     * CmdId: 2038
+     * Obf: EJCDOOPMCED
      * </pre>
      *
      * Protobuf type {@code ExpeditionStartReq}
@@ -485,13 +485,13 @@ public final class ExpeditionStartReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        pathId_ = 0;
+
+        mFNGJOCIAPE_ = 0;
+
         avatarIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        lOHMHPCOLBG_ = 0;
-
-        oOKCMLMGMJB_ = 0;
-
-        pathId_ = 0;
+        fLHKBCEIKLE_ = 0;
 
         return this;
       }
@@ -520,14 +520,14 @@ public final class ExpeditionStartReqOuterClass {
       public emu.grasscutter.net.proto.ExpeditionStartReqOuterClass.ExpeditionStartReq buildPartial() {
         emu.grasscutter.net.proto.ExpeditionStartReqOuterClass.ExpeditionStartReq result = new emu.grasscutter.net.proto.ExpeditionStartReqOuterClass.ExpeditionStartReq(this);
         int from_bitField0_ = bitField0_;
+        result.pathId_ = pathId_;
+        result.mFNGJOCIAPE_ = mFNGJOCIAPE_;
         if (((bitField0_ & 0x00000001) != 0)) {
           avatarIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.avatarIdList_ = avatarIdList_;
-        result.lOHMHPCOLBG_ = lOHMHPCOLBG_;
-        result.oOKCMLMGMJB_ = oOKCMLMGMJB_;
-        result.pathId_ = pathId_;
+        result.fLHKBCEIKLE_ = fLHKBCEIKLE_;
         onBuilt();
         return result;
       }
@@ -576,6 +576,12 @@ public final class ExpeditionStartReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ExpeditionStartReqOuterClass.ExpeditionStartReq other) {
         if (other == emu.grasscutter.net.proto.ExpeditionStartReqOuterClass.ExpeditionStartReq.getDefaultInstance()) return this;
+        if (other.getPathId() != 0) {
+          setPathId(other.getPathId());
+        }
+        if (other.getMFNGJOCIAPE() != 0) {
+          setMFNGJOCIAPE(other.getMFNGJOCIAPE());
+        }
         if (!other.avatarIdList_.isEmpty()) {
           if (avatarIdList_.isEmpty()) {
             avatarIdList_ = other.avatarIdList_;
@@ -586,14 +592,8 @@ public final class ExpeditionStartReqOuterClass {
           }
           onChanged();
         }
-        if (other.getLOHMHPCOLBG() != 0) {
-          setLOHMHPCOLBG(other.getLOHMHPCOLBG());
-        }
-        if (other.getOOKCMLMGMJB() != 0) {
-          setOOKCMLMGMJB(other.getOOKCMLMGMJB());
-        }
-        if (other.getPathId() != 0) {
-          setPathId(other.getPathId());
+        if (other.getFLHKBCEIKLE() != 0) {
+          setFLHKBCEIKLE(other.getFLHKBCEIKLE());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -625,6 +625,68 @@ public final class ExpeditionStartReqOuterClass {
       }
       private int bitField0_;
 
+      private int pathId_ ;
+      /**
+       * <code>uint32 path_id = 7;</code>
+       * @return The pathId.
+       */
+      @java.lang.Override
+      public int getPathId() {
+        return pathId_;
+      }
+      /**
+       * <code>uint32 path_id = 7;</code>
+       * @param value The pathId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPathId(int value) {
+        
+        pathId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 path_id = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPathId() {
+        
+        pathId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int mFNGJOCIAPE_ ;
+      /**
+       * <code>uint32 MFNGJOCIAPE = 2;</code>
+       * @return The mFNGJOCIAPE.
+       */
+      @java.lang.Override
+      public int getMFNGJOCIAPE() {
+        return mFNGJOCIAPE_;
+      }
+      /**
+       * <code>uint32 MFNGJOCIAPE = 2;</code>
+       * @param value The mFNGJOCIAPE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMFNGJOCIAPE(int value) {
+        
+        mFNGJOCIAPE_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 MFNGJOCIAPE = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMFNGJOCIAPE() {
+        
+        mFNGJOCIAPE_ = 0;
+        onChanged();
+        return this;
+      }
+
       private com.google.protobuf.Internal.IntList avatarIdList_ = emptyIntList();
       private void ensureAvatarIdListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -633,7 +695,7 @@ public final class ExpeditionStartReqOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 avatar_id_list = 11;</code>
+       * <code>repeated uint32 avatar_id_list = 6;</code>
        * @return A list containing the avatarIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -642,14 +704,14 @@ public final class ExpeditionStartReqOuterClass {
                  java.util.Collections.unmodifiableList(avatarIdList_) : avatarIdList_;
       }
       /**
-       * <code>repeated uint32 avatar_id_list = 11;</code>
+       * <code>repeated uint32 avatar_id_list = 6;</code>
        * @return The count of avatarIdList.
        */
       public int getAvatarIdListCount() {
         return avatarIdList_.size();
       }
       /**
-       * <code>repeated uint32 avatar_id_list = 11;</code>
+       * <code>repeated uint32 avatar_id_list = 6;</code>
        * @param index The index of the element to return.
        * @return The avatarIdList at the given index.
        */
@@ -657,7 +719,7 @@ public final class ExpeditionStartReqOuterClass {
         return avatarIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 avatar_id_list = 11;</code>
+       * <code>repeated uint32 avatar_id_list = 6;</code>
        * @param index The index to set the value at.
        * @param value The avatarIdList to set.
        * @return This builder for chaining.
@@ -670,7 +732,7 @@ public final class ExpeditionStartReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 avatar_id_list = 11;</code>
+       * <code>repeated uint32 avatar_id_list = 6;</code>
        * @param value The avatarIdList to add.
        * @return This builder for chaining.
        */
@@ -681,7 +743,7 @@ public final class ExpeditionStartReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 avatar_id_list = 11;</code>
+       * <code>repeated uint32 avatar_id_list = 6;</code>
        * @param values The avatarIdList to add.
        * @return This builder for chaining.
        */
@@ -694,7 +756,7 @@ public final class ExpeditionStartReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 avatar_id_list = 11;</code>
+       * <code>repeated uint32 avatar_id_list = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarIdList() {
@@ -704,95 +766,33 @@ public final class ExpeditionStartReqOuterClass {
         return this;
       }
 
-      private int lOHMHPCOLBG_ ;
+      private int fLHKBCEIKLE_ ;
       /**
-       * <code>uint32 LOHMHPCOLBG = 8;</code>
-       * @return The lOHMHPCOLBG.
+       * <code>uint32 FLHKBCEIKLE = 12;</code>
+       * @return The fLHKBCEIKLE.
        */
       @java.lang.Override
-      public int getLOHMHPCOLBG() {
-        return lOHMHPCOLBG_;
+      public int getFLHKBCEIKLE() {
+        return fLHKBCEIKLE_;
       }
       /**
-       * <code>uint32 LOHMHPCOLBG = 8;</code>
-       * @param value The lOHMHPCOLBG to set.
+       * <code>uint32 FLHKBCEIKLE = 12;</code>
+       * @param value The fLHKBCEIKLE to set.
        * @return This builder for chaining.
        */
-      public Builder setLOHMHPCOLBG(int value) {
+      public Builder setFLHKBCEIKLE(int value) {
         
-        lOHMHPCOLBG_ = value;
+        fLHKBCEIKLE_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 LOHMHPCOLBG = 8;</code>
+       * <code>uint32 FLHKBCEIKLE = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLOHMHPCOLBG() {
+      public Builder clearFLHKBCEIKLE() {
         
-        lOHMHPCOLBG_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int oOKCMLMGMJB_ ;
-      /**
-       * <code>uint32 OOKCMLMGMJB = 1;</code>
-       * @return The oOKCMLMGMJB.
-       */
-      @java.lang.Override
-      public int getOOKCMLMGMJB() {
-        return oOKCMLMGMJB_;
-      }
-      /**
-       * <code>uint32 OOKCMLMGMJB = 1;</code>
-       * @param value The oOKCMLMGMJB to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOOKCMLMGMJB(int value) {
-        
-        oOKCMLMGMJB_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 OOKCMLMGMJB = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOOKCMLMGMJB() {
-        
-        oOKCMLMGMJB_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int pathId_ ;
-      /**
-       * <code>uint32 path_id = 10;</code>
-       * @return The pathId.
-       */
-      @java.lang.Override
-      public int getPathId() {
-        return pathId_;
-      }
-      /**
-       * <code>uint32 path_id = 10;</code>
-       * @param value The pathId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPathId(int value) {
-        
-        pathId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 path_id = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPathId() {
-        
-        pathId_ = 0;
+        fLHKBCEIKLE_ = 0;
         onChanged();
         return this;
       }
@@ -864,9 +864,9 @@ public final class ExpeditionStartReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030ExpeditionStartReq.proto\"g\n\022Expedition" +
-      "StartReq\022\026\n\016avatar_id_list\030\013 \003(\r\022\023\n\013LOHM" +
-      "HPCOLBG\030\010 \001(\r\022\023\n\013OOKCMLMGMJB\030\001 \001(\r\022\017\n\007pa" +
-      "th_id\030\n \001(\rB\033\n\031emu.grasscutter.net.proto" +
+      "StartReq\022\017\n\007path_id\030\007 \001(\r\022\023\n\013MFNGJOCIAPE" +
+      "\030\002 \001(\r\022\026\n\016avatar_id_list\030\006 \003(\r\022\023\n\013FLHKBC" +
+      "EIKLE\030\014 \001(\rB\033\n\031emu.grasscutter.net.proto" +
       "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -878,7 +878,7 @@ public final class ExpeditionStartReqOuterClass {
     internal_static_ExpeditionStartReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ExpeditionStartReq_descriptor,
-        new java.lang.String[] { "AvatarIdList", "LOHMHPCOLBG", "OOKCMLMGMJB", "PathId", });
+        new java.lang.String[] { "PathId", "MFNGJOCIAPE", "AvatarIdList", "FLHKBCEIKLE", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

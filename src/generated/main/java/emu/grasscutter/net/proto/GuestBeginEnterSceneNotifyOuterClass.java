@@ -19,21 +19,21 @@ public final class GuestBeginEnterSceneNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 uid = 14;</code>
+     * <code>uint32 uid = 15;</code>
      * @return The uid.
      */
     int getUid();
 
     /**
-     * <code>uint32 scene_id = 6;</code>
+     * <code>uint32 scene_id = 12;</code>
      * @return The sceneId.
      */
     int getSceneId();
   }
   /**
    * <pre>
-   * Name: EAMIJFJLKJK
-   * CmdId: 3195
+   * CmdId: 3099
+   * Obf: GLLEKDKOBFO
    * </pre>
    *
    * Protobuf type {@code GuestBeginEnterSceneNotify}
@@ -80,12 +80,12 @@ public final class GuestBeginEnterSceneNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 96: {
 
               sceneId_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 120: {
 
               uid_ = input.readUInt32();
               break;
@@ -122,10 +122,10 @@ public final class GuestBeginEnterSceneNotifyOuterClass {
               emu.grasscutter.net.proto.GuestBeginEnterSceneNotifyOuterClass.GuestBeginEnterSceneNotify.class, emu.grasscutter.net.proto.GuestBeginEnterSceneNotifyOuterClass.GuestBeginEnterSceneNotify.Builder.class);
     }
 
-    public static final int UID_FIELD_NUMBER = 14;
+    public static final int UID_FIELD_NUMBER = 15;
     private int uid_;
     /**
-     * <code>uint32 uid = 14;</code>
+     * <code>uint32 uid = 15;</code>
      * @return The uid.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class GuestBeginEnterSceneNotifyOuterClass {
       return uid_;
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 6;
+    public static final int SCENE_ID_FIELD_NUMBER = 12;
     private int sceneId_;
     /**
-     * <code>uint32 scene_id = 6;</code>
+     * <code>uint32 scene_id = 12;</code>
      * @return The sceneId.
      */
     @java.lang.Override
@@ -159,10 +159,10 @@ public final class GuestBeginEnterSceneNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (sceneId_ != 0) {
-        output.writeUInt32(6, sceneId_);
+        output.writeUInt32(12, sceneId_);
       }
       if (uid_ != 0) {
-        output.writeUInt32(14, uid_);
+        output.writeUInt32(15, uid_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +175,11 @@ public final class GuestBeginEnterSceneNotifyOuterClass {
       size = 0;
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, sceneId_);
+          .computeUInt32Size(12, sceneId_);
       }
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, uid_);
+          .computeUInt32Size(15, uid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class GuestBeginEnterSceneNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: EAMIJFJLKJK
-     * CmdId: 3195
+     * CmdId: 3099
+     * Obf: GLLEKDKOBFO
      * </pre>
      *
      * Protobuf type {@code GuestBeginEnterSceneNotify}
@@ -470,7 +470,7 @@ public final class GuestBeginEnterSceneNotifyOuterClass {
 
       private int uid_ ;
       /**
-       * <code>uint32 uid = 14;</code>
+       * <code>uint32 uid = 15;</code>
        * @return The uid.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class GuestBeginEnterSceneNotifyOuterClass {
         return uid_;
       }
       /**
-       * <code>uint32 uid = 14;</code>
+       * <code>uint32 uid = 15;</code>
        * @param value The uid to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class GuestBeginEnterSceneNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 uid = 14;</code>
+       * <code>uint32 uid = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearUid() {
@@ -501,7 +501,7 @@ public final class GuestBeginEnterSceneNotifyOuterClass {
 
       private int sceneId_ ;
       /**
-       * <code>uint32 scene_id = 6;</code>
+       * <code>uint32 scene_id = 12;</code>
        * @return The sceneId.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class GuestBeginEnterSceneNotifyOuterClass {
         return sceneId_;
       }
       /**
-       * <code>uint32 scene_id = 6;</code>
+       * <code>uint32 scene_id = 12;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class GuestBeginEnterSceneNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 scene_id = 6;</code>
+       * <code>uint32 scene_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneId() {
@@ -597,8 +597,8 @@ public final class GuestBeginEnterSceneNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n GuestBeginEnterSceneNotify.proto\";\n\032Gu" +
-      "estBeginEnterSceneNotify\022\013\n\003uid\030\016 \001(\r\022\020\n" +
-      "\010scene_id\030\006 \001(\rB\033\n\031emu.grasscutter.net.p" +
+      "estBeginEnterSceneNotify\022\013\n\003uid\030\017 \001(\r\022\020\n" +
+      "\010scene_id\030\014 \001(\rB\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

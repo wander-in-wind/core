@@ -26,7 +26,7 @@ public final class MassiveWaterInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: OKHOAHGOJBA
+   * Obf: EMAIJJNIDOE
    * </pre>
    *
    * Protobuf type {@code MassiveWaterInfo}
@@ -279,7 +279,7 @@ public final class MassiveWaterInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: OKHOAHGOJBA
+     * Obf: EMAIJJNIDOE
      * </pre>
      *
      * Protobuf type {@code MassiveWaterInfo}

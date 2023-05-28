@@ -19,15 +19,15 @@ public final class LanV3BoatGameTransferFinishNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_reenter = 15;</code>
+     * <code>bool is_reenter = 4;</code>
      * @return The isReenter.
      */
     boolean getIsReenter();
   }
   /**
    * <pre>
-   * Name: DDKDGNHFPFL
-   * CmdId: 20763
+   * CmdId: 20376
+   * Obf: OAIOHBNFMIN
    * </pre>
    *
    * Protobuf type {@code LanV3BoatGameTransferFinishNotify}
@@ -74,7 +74,7 @@ public final class LanV3BoatGameTransferFinishNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 120: {
+            case 32: {
 
               isReenter_ = input.readBool();
               break;
@@ -111,10 +111,10 @@ public final class LanV3BoatGameTransferFinishNotifyOuterClass {
               emu.grasscutter.net.proto.LanV3BoatGameTransferFinishNotifyOuterClass.LanV3BoatGameTransferFinishNotify.class, emu.grasscutter.net.proto.LanV3BoatGameTransferFinishNotifyOuterClass.LanV3BoatGameTransferFinishNotify.Builder.class);
     }
 
-    public static final int IS_REENTER_FIELD_NUMBER = 15;
+    public static final int IS_REENTER_FIELD_NUMBER = 4;
     private boolean isReenter_;
     /**
-     * <code>bool is_reenter = 15;</code>
+     * <code>bool is_reenter = 4;</code>
      * @return The isReenter.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class LanV3BoatGameTransferFinishNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isReenter_ != false) {
-        output.writeBool(15, isReenter_);
+        output.writeBool(4, isReenter_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class LanV3BoatGameTransferFinishNotifyOuterClass {
       size = 0;
       if (isReenter_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isReenter_);
+          .computeBoolSize(4, isReenter_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,8 +280,8 @@ public final class LanV3BoatGameTransferFinishNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: DDKDGNHFPFL
-     * CmdId: 20763
+     * CmdId: 20376
+     * Obf: OAIOHBNFMIN
      * </pre>
      *
      * Protobuf type {@code LanV3BoatGameTransferFinishNotify}
@@ -432,7 +432,7 @@ public final class LanV3BoatGameTransferFinishNotifyOuterClass {
 
       private boolean isReenter_ ;
       /**
-       * <code>bool is_reenter = 15;</code>
+       * <code>bool is_reenter = 4;</code>
        * @return The isReenter.
        */
       @java.lang.Override
@@ -440,7 +440,7 @@ public final class LanV3BoatGameTransferFinishNotifyOuterClass {
         return isReenter_;
       }
       /**
-       * <code>bool is_reenter = 15;</code>
+       * <code>bool is_reenter = 4;</code>
        * @param value The isReenter to set.
        * @return This builder for chaining.
        */
@@ -451,7 +451,7 @@ public final class LanV3BoatGameTransferFinishNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_reenter = 15;</code>
+       * <code>bool is_reenter = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsReenter() {
@@ -529,7 +529,7 @@ public final class LanV3BoatGameTransferFinishNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\'LanV3BoatGameTransferFinishNotify.prot" +
       "o\"7\n!LanV3BoatGameTransferFinishNotify\022\022" +
-      "\n\nis_reenter\030\017 \001(\010B\033\n\031emu.grasscutter.ne" +
+      "\n\nis_reenter\030\004 \001(\010B\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

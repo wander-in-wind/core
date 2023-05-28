@@ -16,7 +16,7 @@ public final class DungeonEntryBlockReasonOuterClass {
   }
   /**
    * <pre>
-   * Name: LAMPLBKECOO
+   * Obf: DMHCHCJJAKN
    * </pre>
    *
    * Protobuf enum {@code DungeonEntryBlockReason}

@@ -20,8 +20,8 @@ public final class WindFieldRestartDungeonReqOuterClass {
   }
   /**
    * <pre>
-   * Name: FJEGFBGGKOE
-   * CmdId: 20087
+   * CmdId: 21920
+   * Obf: PODNDDMDCFD
    * </pre>
    *
    * Protobuf type {@code WindFieldRestartDungeonReq}
@@ -246,8 +246,8 @@ public final class WindFieldRestartDungeonReqOuterClass {
     }
     /**
      * <pre>
-     * Name: FJEGFBGGKOE
-     * CmdId: 20087
+     * CmdId: 21920
+     * Obf: PODNDDMDCFD
      * </pre>
      *
      * Protobuf type {@code WindFieldRestartDungeonReq}

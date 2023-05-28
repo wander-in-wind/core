@@ -20,8 +20,8 @@ public final class GetActivityScheduleReqOuterClass {
   }
   /**
    * <pre>
-   * Name: DNEAEAKINKO
-   * CmdId: 2153
+   * CmdId: 2055
+   * Obf: AGMEBDMCBEA
    * </pre>
    *
    * Protobuf type {@code GetActivityScheduleReq}
@@ -246,8 +246,8 @@ public final class GetActivityScheduleReqOuterClass {
     }
     /**
      * <pre>
-     * Name: DNEAEAKINKO
-     * CmdId: 2153
+     * CmdId: 2055
+     * Obf: AGMEBDMCBEA
      * </pre>
      *
      * Protobuf type {@code GetActivityScheduleReq}

@@ -26,8 +26,8 @@ public final class ActivityAcceptAllGiveGiftReqOuterClass {
   }
   /**
    * <pre>
-   * Name: AIFAHKAGCKI
-   * CmdId: 8394
+   * CmdId: 8507
+   * Obf: ONKFBHGPPNL
    * </pre>
    *
    * Protobuf type {@code ActivityAcceptAllGiveGiftReq}
@@ -279,8 +279,8 @@ public final class ActivityAcceptAllGiveGiftReqOuterClass {
     }
     /**
      * <pre>
-     * Name: AIFAHKAGCKI
-     * CmdId: 8394
+     * CmdId: 8507
+     * Obf: ONKFBHGPPNL
      * </pre>
      *
      * Protobuf type {@code ActivityAcceptAllGiveGiftReq}

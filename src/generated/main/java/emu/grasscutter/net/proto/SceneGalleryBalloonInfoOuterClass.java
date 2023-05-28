@@ -19,17 +19,17 @@ public final class SceneGalleryBalloonInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 end_time = 3;</code>
+     * <code>uint32 end_time = 7;</code>
      * @return The endTime.
      */
     int getEndTime();
 
     /**
-     * <code>map&lt;uint32, .BalloonPlayerInfo&gt; scene_player_balloon_info_map = 2;</code>
+     * <code>map&lt;uint32, .BalloonPlayerInfo&gt; scene_player_balloon_info_map = 13;</code>
      */
     int getScenePlayerBalloonInfoMapCount();
     /**
-     * <code>map&lt;uint32, .BalloonPlayerInfo&gt; scene_player_balloon_info_map = 2;</code>
+     * <code>map&lt;uint32, .BalloonPlayerInfo&gt; scene_player_balloon_info_map = 13;</code>
      */
     boolean containsScenePlayerBalloonInfoMap(
         int key);
@@ -40,19 +40,19 @@ public final class SceneGalleryBalloonInfoOuterClass {
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.BalloonPlayerInfoOuterClass.BalloonPlayerInfo>
     getScenePlayerBalloonInfoMap();
     /**
-     * <code>map&lt;uint32, .BalloonPlayerInfo&gt; scene_player_balloon_info_map = 2;</code>
+     * <code>map&lt;uint32, .BalloonPlayerInfo&gt; scene_player_balloon_info_map = 13;</code>
      */
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.BalloonPlayerInfoOuterClass.BalloonPlayerInfo>
     getScenePlayerBalloonInfoMapMap();
     /**
-     * <code>map&lt;uint32, .BalloonPlayerInfo&gt; scene_player_balloon_info_map = 2;</code>
+     * <code>map&lt;uint32, .BalloonPlayerInfo&gt; scene_player_balloon_info_map = 13;</code>
      */
 
     emu.grasscutter.net.proto.BalloonPlayerInfoOuterClass.BalloonPlayerInfo getScenePlayerBalloonInfoMapOrDefault(
         int key,
         emu.grasscutter.net.proto.BalloonPlayerInfoOuterClass.BalloonPlayerInfo defaultValue);
     /**
-     * <code>map&lt;uint32, .BalloonPlayerInfo&gt; scene_player_balloon_info_map = 2;</code>
+     * <code>map&lt;uint32, .BalloonPlayerInfo&gt; scene_player_balloon_info_map = 13;</code>
      */
 
     emu.grasscutter.net.proto.BalloonPlayerInfoOuterClass.BalloonPlayerInfo getScenePlayerBalloonInfoMapOrThrow(
@@ -60,7 +60,7 @@ public final class SceneGalleryBalloonInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: FLDMBPJPJOB
+   * Obf: OMONJJKCABM
    * </pre>
    *
    * Protobuf type {@code SceneGalleryBalloonInfo}
@@ -108,7 +108,12 @@ public final class SceneGalleryBalloonInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
+            case 56: {
+
+              endTime_ = input.readUInt32();
+              break;
+            }
+            case 106: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 scenePlayerBalloonInfoMap_ = com.google.protobuf.MapField.newMapField(
                     ScenePlayerBalloonInfoMapDefaultEntryHolder.defaultEntry);
@@ -119,11 +124,6 @@ public final class SceneGalleryBalloonInfoOuterClass {
                   ScenePlayerBalloonInfoMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
               scenePlayerBalloonInfoMap_.getMutableMap().put(
                   scenePlayerBalloonInfoMap__.getKey(), scenePlayerBalloonInfoMap__.getValue());
-              break;
-            }
-            case 24: {
-
-              endTime_ = input.readUInt32();
               break;
             }
             default: {
@@ -155,7 +155,7 @@ public final class SceneGalleryBalloonInfoOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 2:
+        case 13:
           return internalGetScenePlayerBalloonInfoMap();
         default:
           throw new RuntimeException(
@@ -170,10 +170,10 @@ public final class SceneGalleryBalloonInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryBalloonInfoOuterClass.SceneGalleryBalloonInfo.class, emu.grasscutter.net.proto.SceneGalleryBalloonInfoOuterClass.SceneGalleryBalloonInfo.Builder.class);
     }
 
-    public static final int END_TIME_FIELD_NUMBER = 3;
+    public static final int END_TIME_FIELD_NUMBER = 7;
     private int endTime_;
     /**
-     * <code>uint32 end_time = 3;</code>
+     * <code>uint32 end_time = 7;</code>
      * @return The endTime.
      */
     @java.lang.Override
@@ -181,7 +181,7 @@ public final class SceneGalleryBalloonInfoOuterClass {
       return endTime_;
     }
 
-    public static final int SCENE_PLAYER_BALLOON_INFO_MAP_FIELD_NUMBER = 2;
+    public static final int SCENE_PLAYER_BALLOON_INFO_MAP_FIELD_NUMBER = 13;
     private static final class ScenePlayerBalloonInfoMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, emu.grasscutter.net.proto.BalloonPlayerInfoOuterClass.BalloonPlayerInfo> defaultEntry =
@@ -208,7 +208,7 @@ public final class SceneGalleryBalloonInfoOuterClass {
       return internalGetScenePlayerBalloonInfoMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, .BalloonPlayerInfo&gt; scene_player_balloon_info_map = 2;</code>
+     * <code>map&lt;uint32, .BalloonPlayerInfo&gt; scene_player_balloon_info_map = 13;</code>
      */
 
     @java.lang.Override
@@ -226,7 +226,7 @@ public final class SceneGalleryBalloonInfoOuterClass {
       return getScenePlayerBalloonInfoMapMap();
     }
     /**
-     * <code>map&lt;uint32, .BalloonPlayerInfo&gt; scene_player_balloon_info_map = 2;</code>
+     * <code>map&lt;uint32, .BalloonPlayerInfo&gt; scene_player_balloon_info_map = 13;</code>
      */
     @java.lang.Override
 
@@ -234,7 +234,7 @@ public final class SceneGalleryBalloonInfoOuterClass {
       return internalGetScenePlayerBalloonInfoMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, .BalloonPlayerInfo&gt; scene_player_balloon_info_map = 2;</code>
+     * <code>map&lt;uint32, .BalloonPlayerInfo&gt; scene_player_balloon_info_map = 13;</code>
      */
     @java.lang.Override
 
@@ -247,7 +247,7 @@ public final class SceneGalleryBalloonInfoOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, .BalloonPlayerInfo&gt; scene_player_balloon_info_map = 2;</code>
+     * <code>map&lt;uint32, .BalloonPlayerInfo&gt; scene_player_balloon_info_map = 13;</code>
      */
     @java.lang.Override
 
@@ -276,15 +276,15 @@ public final class SceneGalleryBalloonInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (endTime_ != 0) {
+        output.writeUInt32(7, endTime_);
+      }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetScenePlayerBalloonInfoMap(),
           ScenePlayerBalloonInfoMapDefaultEntryHolder.defaultEntry,
-          2);
-      if (endTime_ != 0) {
-        output.writeUInt32(3, endTime_);
-      }
+          13);
       unknownFields.writeTo(output);
     }
 
@@ -294,6 +294,10 @@ public final class SceneGalleryBalloonInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (endTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, endTime_);
+      }
       for (java.util.Map.Entry<java.lang.Integer, emu.grasscutter.net.proto.BalloonPlayerInfoOuterClass.BalloonPlayerInfo> entry
            : internalGetScenePlayerBalloonInfoMap().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.BalloonPlayerInfoOuterClass.BalloonPlayerInfo>
@@ -302,11 +306,7 @@ public final class SceneGalleryBalloonInfoOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(2, scenePlayerBalloonInfoMap__);
-      }
-      if (endTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, endTime_);
+            .computeMessageSize(13, scenePlayerBalloonInfoMap__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -441,7 +441,7 @@ public final class SceneGalleryBalloonInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: FLDMBPJPJOB
+     * Obf: OMONJJKCABM
      * </pre>
      *
      * Protobuf type {@code SceneGalleryBalloonInfo}
@@ -459,7 +459,7 @@ public final class SceneGalleryBalloonInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 2:
+          case 13:
             return internalGetScenePlayerBalloonInfoMap();
           default:
             throw new RuntimeException(
@@ -470,7 +470,7 @@ public final class SceneGalleryBalloonInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 2:
+          case 13:
             return internalGetMutableScenePlayerBalloonInfoMap();
           default:
             throw new RuntimeException(
@@ -621,7 +621,7 @@ public final class SceneGalleryBalloonInfoOuterClass {
 
       private int endTime_ ;
       /**
-       * <code>uint32 end_time = 3;</code>
+       * <code>uint32 end_time = 7;</code>
        * @return The endTime.
        */
       @java.lang.Override
@@ -629,7 +629,7 @@ public final class SceneGalleryBalloonInfoOuterClass {
         return endTime_;
       }
       /**
-       * <code>uint32 end_time = 3;</code>
+       * <code>uint32 end_time = 7;</code>
        * @param value The endTime to set.
        * @return This builder for chaining.
        */
@@ -640,7 +640,7 @@ public final class SceneGalleryBalloonInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 end_time = 3;</code>
+       * <code>uint32 end_time = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearEndTime() {
@@ -677,7 +677,7 @@ public final class SceneGalleryBalloonInfoOuterClass {
         return internalGetScenePlayerBalloonInfoMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, .BalloonPlayerInfo&gt; scene_player_balloon_info_map = 2;</code>
+       * <code>map&lt;uint32, .BalloonPlayerInfo&gt; scene_player_balloon_info_map = 13;</code>
        */
 
       @java.lang.Override
@@ -695,7 +695,7 @@ public final class SceneGalleryBalloonInfoOuterClass {
         return getScenePlayerBalloonInfoMapMap();
       }
       /**
-       * <code>map&lt;uint32, .BalloonPlayerInfo&gt; scene_player_balloon_info_map = 2;</code>
+       * <code>map&lt;uint32, .BalloonPlayerInfo&gt; scene_player_balloon_info_map = 13;</code>
        */
       @java.lang.Override
 
@@ -703,7 +703,7 @@ public final class SceneGalleryBalloonInfoOuterClass {
         return internalGetScenePlayerBalloonInfoMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, .BalloonPlayerInfo&gt; scene_player_balloon_info_map = 2;</code>
+       * <code>map&lt;uint32, .BalloonPlayerInfo&gt; scene_player_balloon_info_map = 13;</code>
        */
       @java.lang.Override
 
@@ -716,7 +716,7 @@ public final class SceneGalleryBalloonInfoOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, .BalloonPlayerInfo&gt; scene_player_balloon_info_map = 2;</code>
+       * <code>map&lt;uint32, .BalloonPlayerInfo&gt; scene_player_balloon_info_map = 13;</code>
        */
       @java.lang.Override
 
@@ -737,7 +737,7 @@ public final class SceneGalleryBalloonInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .BalloonPlayerInfo&gt; scene_player_balloon_info_map = 2;</code>
+       * <code>map&lt;uint32, .BalloonPlayerInfo&gt; scene_player_balloon_info_map = 13;</code>
        */
 
       public Builder removeScenePlayerBalloonInfoMap(
@@ -756,7 +756,7 @@ public final class SceneGalleryBalloonInfoOuterClass {
         return internalGetMutableScenePlayerBalloonInfoMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, .BalloonPlayerInfo&gt; scene_player_balloon_info_map = 2;</code>
+       * <code>map&lt;uint32, .BalloonPlayerInfo&gt; scene_player_balloon_info_map = 13;</code>
        */
       public Builder putScenePlayerBalloonInfoMap(
           int key,
@@ -768,7 +768,7 @@ public final class SceneGalleryBalloonInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .BalloonPlayerInfo&gt; scene_player_balloon_info_map = 2;</code>
+       * <code>map&lt;uint32, .BalloonPlayerInfo&gt; scene_player_balloon_info_map = 13;</code>
        */
 
       public Builder putAllScenePlayerBalloonInfoMap(
@@ -851,8 +851,8 @@ public final class SceneGalleryBalloonInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\035SceneGalleryBalloonInfo.proto\032\027Balloon" +
       "PlayerInfo.proto\"\341\001\n\027SceneGalleryBalloon" +
-      "Info\022\020\n\010end_time\030\003 \001(\r\022^\n\035scene_player_b" +
-      "alloon_info_map\030\002 \003(\01327.SceneGalleryBall" +
+      "Info\022\020\n\010end_time\030\007 \001(\r\022^\n\035scene_player_b" +
+      "alloon_info_map\030\r \003(\01327.SceneGalleryBall" +
       "oonInfo.ScenePlayerBalloonInfoMapEntry\032T" +
       "\n\036ScenePlayerBalloonInfoMapEntry\022\013\n\003key\030" +
       "\001 \001(\r\022!\n\005value\030\002 \001(\0132\022.BalloonPlayerInfo" +

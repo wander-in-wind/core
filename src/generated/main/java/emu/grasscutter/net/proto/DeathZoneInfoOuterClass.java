@@ -25,14 +25,14 @@ public final class DeathZoneInfoOuterClass {
     int getId();
 
     /**
-     * <code>bool is_open = 1;</code>
+     * <code>bool is_open = 13;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
   }
   /**
    * <pre>
-   * Name: PMBGJHILHMF
+   * Obf: JIHOPPHABOC
    * </pre>
    *
    * Protobuf type {@code DeathZoneInfo}
@@ -79,14 +79,14 @@ public final class DeathZoneInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              isOpen_ = input.readBool();
-              break;
-            }
             case 72: {
 
               id_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              isOpen_ = input.readBool();
               break;
             }
             default: {
@@ -132,10 +132,10 @@ public final class DeathZoneInfoOuterClass {
       return id_;
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 1;
+    public static final int IS_OPEN_FIELD_NUMBER = 13;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 1;</code>
+     * <code>bool is_open = 13;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -157,11 +157,11 @@ public final class DeathZoneInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isOpen_ != false) {
-        output.writeBool(1, isOpen_);
-      }
       if (id_ != 0) {
         output.writeUInt32(9, id_);
+      }
+      if (isOpen_ != false) {
+        output.writeBool(13, isOpen_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +172,13 @@ public final class DeathZoneInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isOpen_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, isOpen_);
-      }
       if (id_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(9, id_);
+      }
+      if (isOpen_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(13, isOpen_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,7 +312,7 @@ public final class DeathZoneInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: PMBGJHILHMF
+     * Obf: JIHOPPHABOC
      * </pre>
      *
      * Protobuf type {@code DeathZoneInfo}
@@ -500,7 +500,7 @@ public final class DeathZoneInfoOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 1;</code>
+       * <code>bool is_open = 13;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -508,7 +508,7 @@ public final class DeathZoneInfoOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 1;</code>
+       * <code>bool is_open = 13;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -519,7 +519,7 @@ public final class DeathZoneInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 1;</code>
+       * <code>bool is_open = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -596,7 +596,7 @@ public final class DeathZoneInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\023DeathZoneInfo.proto\",\n\rDeathZoneInfo\022\n" +
-      "\n\002id\030\t \001(\r\022\017\n\007is_open\030\001 \001(\010B\033\n\031emu.grass" +
+      "\n\002id\030\t \001(\r\022\017\n\007is_open\030\r \001(\010B\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

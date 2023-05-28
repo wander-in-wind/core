@@ -19,63 +19,39 @@ public final class GCGMessagePackNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *HCKIILHKKBE snooswap
-     * </pre>
-     *
-     * <code>uint32 server_seq = 8;</code>
-     * @return The serverSeq.
-     */
-    int getServerSeq();
-
-    /**
-     * <pre>
-     *NIHOOOAICMD ABBIFONKPDJ snooswap
-     * </pre>
-     *
-     * <code>repeated .GCGMessagePack msg_pack_list = 1;</code>
+     * <code>repeated .GCGMessagePack msg_pack_list = 5;</code>
      */
     java.util.List<emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack> 
         getMsgPackListList();
     /**
-     * <pre>
-     *NIHOOOAICMD ABBIFONKPDJ snooswap
-     * </pre>
-     *
-     * <code>repeated .GCGMessagePack msg_pack_list = 1;</code>
+     * <code>repeated .GCGMessagePack msg_pack_list = 5;</code>
      */
     emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack getMsgPackList(int index);
     /**
-     * <pre>
-     *NIHOOOAICMD ABBIFONKPDJ snooswap
-     * </pre>
-     *
-     * <code>repeated .GCGMessagePack msg_pack_list = 1;</code>
+     * <code>repeated .GCGMessagePack msg_pack_list = 5;</code>
      */
     int getMsgPackListCount();
     /**
-     * <pre>
-     *NIHOOOAICMD ABBIFONKPDJ snooswap
-     * </pre>
-     *
-     * <code>repeated .GCGMessagePack msg_pack_list = 1;</code>
+     * <code>repeated .GCGMessagePack msg_pack_list = 5;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePackOrBuilder> 
         getMsgPackListOrBuilderList();
     /**
-     * <pre>
-     *NIHOOOAICMD ABBIFONKPDJ snooswap
-     * </pre>
-     *
-     * <code>repeated .GCGMessagePack msg_pack_list = 1;</code>
+     * <code>repeated .GCGMessagePack msg_pack_list = 5;</code>
      */
     emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePackOrBuilder getMsgPackListOrBuilder(
         int index);
+
+    /**
+     * <code>uint32 server_seq = 10;</code>
+     * @return The serverSeq.
+     */
+    int getServerSeq();
   }
   /**
    * <pre>
-   * Name: AOMHEMBIHNE
-   * CmdId: 7271
+   * CmdId: 7112
+   * Obf: BPAKPFAPKMD
    * </pre>
    *
    * Protobuf type {@code GCGMessagePackNotify}
@@ -124,7 +100,7 @@ public final class GCGMessagePackNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 42: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 msgPackList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack>();
                 mutable_bitField0_ |= 0x00000001;
@@ -133,7 +109,7 @@ public final class GCGMessagePackNotifyOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.parser(), extensionRegistry));
               break;
             }
-            case 64: {
+            case 80: {
 
               serverSeq_ = input.readUInt32();
               break;
@@ -173,40 +149,17 @@ public final class GCGMessagePackNotifyOuterClass {
               emu.grasscutter.net.proto.GCGMessagePackNotifyOuterClass.GCGMessagePackNotify.class, emu.grasscutter.net.proto.GCGMessagePackNotifyOuterClass.GCGMessagePackNotify.Builder.class);
     }
 
-    public static final int SERVER_SEQ_FIELD_NUMBER = 8;
-    private int serverSeq_;
-    /**
-     * <pre>
-     *HCKIILHKKBE snooswap
-     * </pre>
-     *
-     * <code>uint32 server_seq = 8;</code>
-     * @return The serverSeq.
-     */
-    @java.lang.Override
-    public int getServerSeq() {
-      return serverSeq_;
-    }
-
-    public static final int MSG_PACK_LIST_FIELD_NUMBER = 1;
+    public static final int MSG_PACK_LIST_FIELD_NUMBER = 5;
     private java.util.List<emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack> msgPackList_;
     /**
-     * <pre>
-     *NIHOOOAICMD ABBIFONKPDJ snooswap
-     * </pre>
-     *
-     * <code>repeated .GCGMessagePack msg_pack_list = 1;</code>
+     * <code>repeated .GCGMessagePack msg_pack_list = 5;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack> getMsgPackListList() {
       return msgPackList_;
     }
     /**
-     * <pre>
-     *NIHOOOAICMD ABBIFONKPDJ snooswap
-     * </pre>
-     *
-     * <code>repeated .GCGMessagePack msg_pack_list = 1;</code>
+     * <code>repeated .GCGMessagePack msg_pack_list = 5;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePackOrBuilder> 
@@ -214,38 +167,37 @@ public final class GCGMessagePackNotifyOuterClass {
       return msgPackList_;
     }
     /**
-     * <pre>
-     *NIHOOOAICMD ABBIFONKPDJ snooswap
-     * </pre>
-     *
-     * <code>repeated .GCGMessagePack msg_pack_list = 1;</code>
+     * <code>repeated .GCGMessagePack msg_pack_list = 5;</code>
      */
     @java.lang.Override
     public int getMsgPackListCount() {
       return msgPackList_.size();
     }
     /**
-     * <pre>
-     *NIHOOOAICMD ABBIFONKPDJ snooswap
-     * </pre>
-     *
-     * <code>repeated .GCGMessagePack msg_pack_list = 1;</code>
+     * <code>repeated .GCGMessagePack msg_pack_list = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack getMsgPackList(int index) {
       return msgPackList_.get(index);
     }
     /**
-     * <pre>
-     *NIHOOOAICMD ABBIFONKPDJ snooswap
-     * </pre>
-     *
-     * <code>repeated .GCGMessagePack msg_pack_list = 1;</code>
+     * <code>repeated .GCGMessagePack msg_pack_list = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePackOrBuilder getMsgPackListOrBuilder(
         int index) {
       return msgPackList_.get(index);
+    }
+
+    public static final int SERVER_SEQ_FIELD_NUMBER = 10;
+    private int serverSeq_;
+    /**
+     * <code>uint32 server_seq = 10;</code>
+     * @return The serverSeq.
+     */
+    @java.lang.Override
+    public int getServerSeq() {
+      return serverSeq_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -263,10 +215,10 @@ public final class GCGMessagePackNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < msgPackList_.size(); i++) {
-        output.writeMessage(1, msgPackList_.get(i));
+        output.writeMessage(5, msgPackList_.get(i));
       }
       if (serverSeq_ != 0) {
-        output.writeUInt32(8, serverSeq_);
+        output.writeUInt32(10, serverSeq_);
       }
       unknownFields.writeTo(output);
     }
@@ -279,11 +231,11 @@ public final class GCGMessagePackNotifyOuterClass {
       size = 0;
       for (int i = 0; i < msgPackList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, msgPackList_.get(i));
+          .computeMessageSize(5, msgPackList_.get(i));
       }
       if (serverSeq_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, serverSeq_);
+          .computeUInt32Size(10, serverSeq_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -300,10 +252,10 @@ public final class GCGMessagePackNotifyOuterClass {
       }
       emu.grasscutter.net.proto.GCGMessagePackNotifyOuterClass.GCGMessagePackNotify other = (emu.grasscutter.net.proto.GCGMessagePackNotifyOuterClass.GCGMessagePackNotify) obj;
 
-      if (getServerSeq()
-          != other.getServerSeq()) return false;
       if (!getMsgPackListList()
           .equals(other.getMsgPackListList())) return false;
+      if (getServerSeq()
+          != other.getServerSeq()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -315,12 +267,12 @@ public final class GCGMessagePackNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SERVER_SEQ_FIELD_NUMBER;
-      hash = (53 * hash) + getServerSeq();
       if (getMsgPackListCount() > 0) {
         hash = (37 * hash) + MSG_PACK_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getMsgPackListList().hashCode();
       }
+      hash = (37 * hash) + SERVER_SEQ_FIELD_NUMBER;
+      hash = (53 * hash) + getServerSeq();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -418,8 +370,8 @@ public final class GCGMessagePackNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: AOMHEMBIHNE
-     * CmdId: 7271
+     * CmdId: 7112
+     * Obf: BPAKPFAPKMD
      * </pre>
      *
      * Protobuf type {@code GCGMessagePackNotify}
@@ -460,14 +412,14 @@ public final class GCGMessagePackNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        serverSeq_ = 0;
-
         if (msgPackListBuilder_ == null) {
           msgPackList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           msgPackListBuilder_.clear();
         }
+        serverSeq_ = 0;
+
         return this;
       }
 
@@ -495,7 +447,6 @@ public final class GCGMessagePackNotifyOuterClass {
       public emu.grasscutter.net.proto.GCGMessagePackNotifyOuterClass.GCGMessagePackNotify buildPartial() {
         emu.grasscutter.net.proto.GCGMessagePackNotifyOuterClass.GCGMessagePackNotify result = new emu.grasscutter.net.proto.GCGMessagePackNotifyOuterClass.GCGMessagePackNotify(this);
         int from_bitField0_ = bitField0_;
-        result.serverSeq_ = serverSeq_;
         if (msgPackListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             msgPackList_ = java.util.Collections.unmodifiableList(msgPackList_);
@@ -505,6 +456,7 @@ public final class GCGMessagePackNotifyOuterClass {
         } else {
           result.msgPackList_ = msgPackListBuilder_.build();
         }
+        result.serverSeq_ = serverSeq_;
         onBuilt();
         return result;
       }
@@ -553,9 +505,6 @@ public final class GCGMessagePackNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGMessagePackNotifyOuterClass.GCGMessagePackNotify other) {
         if (other == emu.grasscutter.net.proto.GCGMessagePackNotifyOuterClass.GCGMessagePackNotify.getDefaultInstance()) return this;
-        if (other.getServerSeq() != 0) {
-          setServerSeq(other.getServerSeq());
-        }
         if (msgPackListBuilder_ == null) {
           if (!other.msgPackList_.isEmpty()) {
             if (msgPackList_.isEmpty()) {
@@ -581,6 +530,9 @@ public final class GCGMessagePackNotifyOuterClass {
               msgPackListBuilder_.addAllMessages(other.msgPackList_);
             }
           }
+        }
+        if (other.getServerSeq() != 0) {
+          setServerSeq(other.getServerSeq());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -612,49 +564,6 @@ public final class GCGMessagePackNotifyOuterClass {
       }
       private int bitField0_;
 
-      private int serverSeq_ ;
-      /**
-       * <pre>
-       *HCKIILHKKBE snooswap
-       * </pre>
-       *
-       * <code>uint32 server_seq = 8;</code>
-       * @return The serverSeq.
-       */
-      @java.lang.Override
-      public int getServerSeq() {
-        return serverSeq_;
-      }
-      /**
-       * <pre>
-       *HCKIILHKKBE snooswap
-       * </pre>
-       *
-       * <code>uint32 server_seq = 8;</code>
-       * @param value The serverSeq to set.
-       * @return This builder for chaining.
-       */
-      public Builder setServerSeq(int value) {
-        
-        serverSeq_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *HCKIILHKKBE snooswap
-       * </pre>
-       *
-       * <code>uint32 server_seq = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearServerSeq() {
-        
-        serverSeq_ = 0;
-        onChanged();
-        return this;
-      }
-
       private java.util.List<emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack> msgPackList_ =
         java.util.Collections.emptyList();
       private void ensureMsgPackListIsMutable() {
@@ -668,11 +577,7 @@ public final class GCGMessagePackNotifyOuterClass {
           emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack, emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.Builder, emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePackOrBuilder> msgPackListBuilder_;
 
       /**
-       * <pre>
-       *NIHOOOAICMD ABBIFONKPDJ snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGMessagePack msg_pack_list = 1;</code>
+       * <code>repeated .GCGMessagePack msg_pack_list = 5;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack> getMsgPackListList() {
         if (msgPackListBuilder_ == null) {
@@ -682,11 +587,7 @@ public final class GCGMessagePackNotifyOuterClass {
         }
       }
       /**
-       * <pre>
-       *NIHOOOAICMD ABBIFONKPDJ snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGMessagePack msg_pack_list = 1;</code>
+       * <code>repeated .GCGMessagePack msg_pack_list = 5;</code>
        */
       public int getMsgPackListCount() {
         if (msgPackListBuilder_ == null) {
@@ -696,11 +597,7 @@ public final class GCGMessagePackNotifyOuterClass {
         }
       }
       /**
-       * <pre>
-       *NIHOOOAICMD ABBIFONKPDJ snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGMessagePack msg_pack_list = 1;</code>
+       * <code>repeated .GCGMessagePack msg_pack_list = 5;</code>
        */
       public emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack getMsgPackList(int index) {
         if (msgPackListBuilder_ == null) {
@@ -710,11 +607,7 @@ public final class GCGMessagePackNotifyOuterClass {
         }
       }
       /**
-       * <pre>
-       *NIHOOOAICMD ABBIFONKPDJ snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGMessagePack msg_pack_list = 1;</code>
+       * <code>repeated .GCGMessagePack msg_pack_list = 5;</code>
        */
       public Builder setMsgPackList(
           int index, emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack value) {
@@ -731,11 +624,7 @@ public final class GCGMessagePackNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *NIHOOOAICMD ABBIFONKPDJ snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGMessagePack msg_pack_list = 1;</code>
+       * <code>repeated .GCGMessagePack msg_pack_list = 5;</code>
        */
       public Builder setMsgPackList(
           int index, emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.Builder builderForValue) {
@@ -749,11 +638,7 @@ public final class GCGMessagePackNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *NIHOOOAICMD ABBIFONKPDJ snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGMessagePack msg_pack_list = 1;</code>
+       * <code>repeated .GCGMessagePack msg_pack_list = 5;</code>
        */
       public Builder addMsgPackList(emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack value) {
         if (msgPackListBuilder_ == null) {
@@ -769,11 +654,7 @@ public final class GCGMessagePackNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *NIHOOOAICMD ABBIFONKPDJ snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGMessagePack msg_pack_list = 1;</code>
+       * <code>repeated .GCGMessagePack msg_pack_list = 5;</code>
        */
       public Builder addMsgPackList(
           int index, emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack value) {
@@ -790,11 +671,7 @@ public final class GCGMessagePackNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *NIHOOOAICMD ABBIFONKPDJ snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGMessagePack msg_pack_list = 1;</code>
+       * <code>repeated .GCGMessagePack msg_pack_list = 5;</code>
        */
       public Builder addMsgPackList(
           emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.Builder builderForValue) {
@@ -808,11 +685,7 @@ public final class GCGMessagePackNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *NIHOOOAICMD ABBIFONKPDJ snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGMessagePack msg_pack_list = 1;</code>
+       * <code>repeated .GCGMessagePack msg_pack_list = 5;</code>
        */
       public Builder addMsgPackList(
           int index, emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.Builder builderForValue) {
@@ -826,11 +699,7 @@ public final class GCGMessagePackNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *NIHOOOAICMD ABBIFONKPDJ snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGMessagePack msg_pack_list = 1;</code>
+       * <code>repeated .GCGMessagePack msg_pack_list = 5;</code>
        */
       public Builder addAllMsgPackList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack> values) {
@@ -845,11 +714,7 @@ public final class GCGMessagePackNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *NIHOOOAICMD ABBIFONKPDJ snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGMessagePack msg_pack_list = 1;</code>
+       * <code>repeated .GCGMessagePack msg_pack_list = 5;</code>
        */
       public Builder clearMsgPackList() {
         if (msgPackListBuilder_ == null) {
@@ -862,11 +727,7 @@ public final class GCGMessagePackNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *NIHOOOAICMD ABBIFONKPDJ snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGMessagePack msg_pack_list = 1;</code>
+       * <code>repeated .GCGMessagePack msg_pack_list = 5;</code>
        */
       public Builder removeMsgPackList(int index) {
         if (msgPackListBuilder_ == null) {
@@ -879,22 +740,14 @@ public final class GCGMessagePackNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *NIHOOOAICMD ABBIFONKPDJ snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGMessagePack msg_pack_list = 1;</code>
+       * <code>repeated .GCGMessagePack msg_pack_list = 5;</code>
        */
       public emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.Builder getMsgPackListBuilder(
           int index) {
         return getMsgPackListFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *NIHOOOAICMD ABBIFONKPDJ snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGMessagePack msg_pack_list = 1;</code>
+       * <code>repeated .GCGMessagePack msg_pack_list = 5;</code>
        */
       public emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePackOrBuilder getMsgPackListOrBuilder(
           int index) {
@@ -904,11 +757,7 @@ public final class GCGMessagePackNotifyOuterClass {
         }
       }
       /**
-       * <pre>
-       *NIHOOOAICMD ABBIFONKPDJ snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGMessagePack msg_pack_list = 1;</code>
+       * <code>repeated .GCGMessagePack msg_pack_list = 5;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePackOrBuilder> 
            getMsgPackListOrBuilderList() {
@@ -919,22 +768,14 @@ public final class GCGMessagePackNotifyOuterClass {
         }
       }
       /**
-       * <pre>
-       *NIHOOOAICMD ABBIFONKPDJ snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGMessagePack msg_pack_list = 1;</code>
+       * <code>repeated .GCGMessagePack msg_pack_list = 5;</code>
        */
       public emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.Builder addMsgPackListBuilder() {
         return getMsgPackListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.getDefaultInstance());
       }
       /**
-       * <pre>
-       *NIHOOOAICMD ABBIFONKPDJ snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGMessagePack msg_pack_list = 1;</code>
+       * <code>repeated .GCGMessagePack msg_pack_list = 5;</code>
        */
       public emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.Builder addMsgPackListBuilder(
           int index) {
@@ -942,11 +783,7 @@ public final class GCGMessagePackNotifyOuterClass {
             index, emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.getDefaultInstance());
       }
       /**
-       * <pre>
-       *NIHOOOAICMD ABBIFONKPDJ snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGMessagePack msg_pack_list = 1;</code>
+       * <code>repeated .GCGMessagePack msg_pack_list = 5;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GCGMessagePackOuterClass.GCGMessagePack.Builder> 
            getMsgPackListBuilderList() {
@@ -965,6 +802,37 @@ public final class GCGMessagePackNotifyOuterClass {
           msgPackList_ = null;
         }
         return msgPackListBuilder_;
+      }
+
+      private int serverSeq_ ;
+      /**
+       * <code>uint32 server_seq = 10;</code>
+       * @return The serverSeq.
+       */
+      @java.lang.Override
+      public int getServerSeq() {
+        return serverSeq_;
+      }
+      /**
+       * <code>uint32 server_seq = 10;</code>
+       * @param value The serverSeq to set.
+       * @return This builder for chaining.
+       */
+      public Builder setServerSeq(int value) {
+        
+        serverSeq_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 server_seq = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearServerSeq() {
+        
+        serverSeq_ = 0;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1034,9 +902,9 @@ public final class GCGMessagePackNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032GCGMessagePackNotify.proto\032\024GCGMessage" +
-      "Pack.proto\"R\n\024GCGMessagePackNotify\022\022\n\nse" +
-      "rver_seq\030\010 \001(\r\022&\n\rmsg_pack_list\030\001 \003(\0132\017." +
-      "GCGMessagePackB\033\n\031emu.grasscutter.net.pr" +
+      "Pack.proto\"R\n\024GCGMessagePackNotify\022&\n\rms" +
+      "g_pack_list\030\005 \003(\0132\017.GCGMessagePack\022\022\n\nse" +
+      "rver_seq\030\n \001(\rB\033\n\031emu.grasscutter.net.pr" +
       "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1049,7 +917,7 @@ public final class GCGMessagePackNotifyOuterClass {
     internal_static_GCGMessagePackNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGMessagePackNotify_descriptor,
-        new java.lang.String[] { "ServerSeq", "MsgPackList", });
+        new java.lang.String[] { "MsgPackList", "ServerSeq", });
     emu.grasscutter.net.proto.GCGMessagePackOuterClass.getDescriptor();
   }
 

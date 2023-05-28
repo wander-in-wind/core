@@ -36,15 +36,15 @@ public final class SceneAreaUnlockNotifyOuterClass {
     int getAreaList(int index);
 
     /**
-     * <code>uint32 scene_id = 1;</code>
+     * <code>uint32 scene_id = 7;</code>
      * @return The sceneId.
      */
     int getSceneId();
   }
   /**
    * <pre>
-   * Name: BAMMPAGNAFG
-   * CmdId: 274
+   * CmdId: 231
+   * Obf: IFBDHEFEFKN
    * </pre>
    *
    * Protobuf type {@code SceneAreaUnlockNotify}
@@ -93,7 +93,7 @@ public final class SceneAreaUnlockNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 56: {
 
               sceneId_ = input.readUInt32();
               break;
@@ -182,10 +182,10 @@ public final class SceneAreaUnlockNotifyOuterClass {
     }
     private int areaListMemoizedSerializedSize = -1;
 
-    public static final int SCENE_ID_FIELD_NUMBER = 1;
+    public static final int SCENE_ID_FIELD_NUMBER = 7;
     private int sceneId_;
     /**
-     * <code>uint32 scene_id = 1;</code>
+     * <code>uint32 scene_id = 7;</code>
      * @return The sceneId.
      */
     @java.lang.Override
@@ -209,7 +209,7 @@ public final class SceneAreaUnlockNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (sceneId_ != 0) {
-        output.writeUInt32(1, sceneId_);
+        output.writeUInt32(7, sceneId_);
       }
       if (getAreaListList().size() > 0) {
         output.writeUInt32NoTag(66);
@@ -229,7 +229,7 @@ public final class SceneAreaUnlockNotifyOuterClass {
       size = 0;
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, sceneId_);
+          .computeUInt32Size(7, sceneId_);
       }
       {
         int dataSize = 0;
@@ -378,8 +378,8 @@ public final class SceneAreaUnlockNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: BAMMPAGNAFG
-     * CmdId: 274
+     * CmdId: 231
+     * Obf: IFBDHEFEFKN
      * </pre>
      *
      * Protobuf type {@code SceneAreaUnlockNotify}
@@ -628,7 +628,7 @@ public final class SceneAreaUnlockNotifyOuterClass {
 
       private int sceneId_ ;
       /**
-       * <code>uint32 scene_id = 1;</code>
+       * <code>uint32 scene_id = 7;</code>
        * @return The sceneId.
        */
       @java.lang.Override
@@ -636,7 +636,7 @@ public final class SceneAreaUnlockNotifyOuterClass {
         return sceneId_;
       }
       /**
-       * <code>uint32 scene_id = 1;</code>
+       * <code>uint32 scene_id = 7;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
        */
@@ -647,7 +647,7 @@ public final class SceneAreaUnlockNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 scene_id = 1;</code>
+       * <code>uint32 scene_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneId() {
@@ -725,7 +725,7 @@ public final class SceneAreaUnlockNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033SceneAreaUnlockNotify.proto\"<\n\025SceneAr" +
       "eaUnlockNotify\022\021\n\tarea_list\030\010 \003(\r\022\020\n\010sce" +
-      "ne_id\030\001 \001(\rB\033\n\031emu.grasscutter.net.proto" +
+      "ne_id\030\007 \001(\rB\033\n\031emu.grasscutter.net.proto" +
       "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

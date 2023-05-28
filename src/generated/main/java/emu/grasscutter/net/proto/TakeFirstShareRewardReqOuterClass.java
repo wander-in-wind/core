@@ -20,8 +20,8 @@ public final class TakeFirstShareRewardReqOuterClass {
   }
   /**
    * <pre>
-   * Name: FMGPFBEINJM
-   * CmdId: 4037
+   * CmdId: 4098
+   * Obf: MMIKEAOCMFP
    * </pre>
    *
    * Protobuf type {@code TakeFirstShareRewardReq}
@@ -246,8 +246,8 @@ public final class TakeFirstShareRewardReqOuterClass {
     }
     /**
      * <pre>
-     * Name: FMGPFBEINJM
-     * CmdId: 4037
+     * CmdId: 4098
+     * Obf: MMIKEAOCMFP
      * </pre>
      *
      * Protobuf type {@code TakeFirstShareRewardReq}

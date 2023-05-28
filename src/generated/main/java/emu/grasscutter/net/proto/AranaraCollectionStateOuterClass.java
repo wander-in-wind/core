@@ -16,7 +16,7 @@ public final class AranaraCollectionStateOuterClass {
   }
   /**
    * <pre>
-   * Name: JKFLGCKKEBD
+   * Obf: FDKHADPBJAD
    * </pre>
    *
    * Protobuf enum {@code AranaraCollectionState}

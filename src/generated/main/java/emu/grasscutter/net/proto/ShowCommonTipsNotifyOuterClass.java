@@ -19,39 +19,39 @@ public final class ShowCommonTipsNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 close_time = 1;</code>
+     * <code>uint32 close_time = 14;</code>
      * @return The closeTime.
      */
     int getCloseTime();
 
     /**
-     * <code>string content = 6;</code>
-     * @return The content.
-     */
-    java.lang.String getContent();
-    /**
-     * <code>string content = 6;</code>
-     * @return The bytes for content.
-     */
-    com.google.protobuf.ByteString
-        getContentBytes();
-
-    /**
-     * <code>string title = 14;</code>
+     * <code>string title = 15;</code>
      * @return The title.
      */
     java.lang.String getTitle();
     /**
-     * <code>string title = 14;</code>
+     * <code>string title = 15;</code>
      * @return The bytes for title.
      */
     com.google.protobuf.ByteString
         getTitleBytes();
+
+    /**
+     * <code>string content = 12;</code>
+     * @return The content.
+     */
+    java.lang.String getContent();
+    /**
+     * <code>string content = 12;</code>
+     * @return The bytes for content.
+     */
+    com.google.protobuf.ByteString
+        getContentBytes();
   }
   /**
    * <pre>
-   * Name: DCNCLONCJHI
-   * CmdId: 3469
+   * CmdId: 3479
+   * Obf: OFPCCAELGHL
    * </pre>
    *
    * Protobuf type {@code ShowCommonTipsNotify}
@@ -66,8 +66,8 @@ public final class ShowCommonTipsNotifyOuterClass {
       super(builder);
     }
     private ShowCommonTipsNotify() {
-      content_ = "";
       title_ = "";
+      content_ = "";
     }
 
     @java.lang.Override
@@ -100,18 +100,18 @@ public final class ShowCommonTipsNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              closeTime_ = input.readUInt32();
-              break;
-            }
-            case 50: {
+            case 98: {
               java.lang.String s = input.readStringRequireUtf8();
 
               content_ = s;
               break;
             }
-            case 114: {
+            case 112: {
+
+              closeTime_ = input.readUInt32();
+              break;
+            }
+            case 122: {
               java.lang.String s = input.readStringRequireUtf8();
 
               title_ = s;
@@ -149,10 +149,10 @@ public final class ShowCommonTipsNotifyOuterClass {
               emu.grasscutter.net.proto.ShowCommonTipsNotifyOuterClass.ShowCommonTipsNotify.class, emu.grasscutter.net.proto.ShowCommonTipsNotifyOuterClass.ShowCommonTipsNotify.Builder.class);
     }
 
-    public static final int CLOSE_TIME_FIELD_NUMBER = 1;
+    public static final int CLOSE_TIME_FIELD_NUMBER = 14;
     private int closeTime_;
     /**
-     * <code>uint32 close_time = 1;</code>
+     * <code>uint32 close_time = 14;</code>
      * @return The closeTime.
      */
     @java.lang.Override
@@ -160,48 +160,10 @@ public final class ShowCommonTipsNotifyOuterClass {
       return closeTime_;
     }
 
-    public static final int CONTENT_FIELD_NUMBER = 6;
-    private volatile java.lang.Object content_;
-    /**
-     * <code>string content = 6;</code>
-     * @return The content.
-     */
-    @java.lang.Override
-    public java.lang.String getContent() {
-      java.lang.Object ref = content_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        content_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string content = 6;</code>
-     * @return The bytes for content.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getContentBytes() {
-      java.lang.Object ref = content_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        content_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int TITLE_FIELD_NUMBER = 14;
+    public static final int TITLE_FIELD_NUMBER = 15;
     private volatile java.lang.Object title_;
     /**
-     * <code>string title = 14;</code>
+     * <code>string title = 15;</code>
      * @return The title.
      */
     @java.lang.Override
@@ -218,7 +180,7 @@ public final class ShowCommonTipsNotifyOuterClass {
       }
     }
     /**
-     * <code>string title = 14;</code>
+     * <code>string title = 15;</code>
      * @return The bytes for title.
      */
     @java.lang.Override
@@ -230,6 +192,44 @@ public final class ShowCommonTipsNotifyOuterClass {
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         title_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int CONTENT_FIELD_NUMBER = 12;
+    private volatile java.lang.Object content_;
+    /**
+     * <code>string content = 12;</code>
+     * @return The content.
+     */
+    @java.lang.Override
+    public java.lang.String getContent() {
+      java.lang.Object ref = content_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        content_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string content = 12;</code>
+     * @return The bytes for content.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getContentBytes() {
+      java.lang.Object ref = content_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        content_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -250,14 +250,14 @@ public final class ShowCommonTipsNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (closeTime_ != 0) {
-        output.writeUInt32(1, closeTime_);
-      }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(content_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, content_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 12, content_);
+      }
+      if (closeTime_ != 0) {
+        output.writeUInt32(14, closeTime_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(title_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 14, title_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 15, title_);
       }
       unknownFields.writeTo(output);
     }
@@ -268,15 +268,15 @@ public final class ShowCommonTipsNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(content_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, content_);
+      }
       if (closeTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, closeTime_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(content_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, content_);
+          .computeUInt32Size(14, closeTime_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(title_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(14, title_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(15, title_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -295,10 +295,10 @@ public final class ShowCommonTipsNotifyOuterClass {
 
       if (getCloseTime()
           != other.getCloseTime()) return false;
-      if (!getContent()
-          .equals(other.getContent())) return false;
       if (!getTitle()
           .equals(other.getTitle())) return false;
+      if (!getContent()
+          .equals(other.getContent())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -312,10 +312,10 @@ public final class ShowCommonTipsNotifyOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CLOSE_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getCloseTime();
-      hash = (37 * hash) + CONTENT_FIELD_NUMBER;
-      hash = (53 * hash) + getContent().hashCode();
       hash = (37 * hash) + TITLE_FIELD_NUMBER;
       hash = (53 * hash) + getTitle().hashCode();
+      hash = (37 * hash) + CONTENT_FIELD_NUMBER;
+      hash = (53 * hash) + getContent().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -413,8 +413,8 @@ public final class ShowCommonTipsNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: DCNCLONCJHI
-     * CmdId: 3469
+     * CmdId: 3479
+     * Obf: OFPCCAELGHL
      * </pre>
      *
      * Protobuf type {@code ShowCommonTipsNotify}
@@ -456,9 +456,9 @@ public final class ShowCommonTipsNotifyOuterClass {
         super.clear();
         closeTime_ = 0;
 
-        content_ = "";
-
         title_ = "";
+
+        content_ = "";
 
         return this;
       }
@@ -487,8 +487,8 @@ public final class ShowCommonTipsNotifyOuterClass {
       public emu.grasscutter.net.proto.ShowCommonTipsNotifyOuterClass.ShowCommonTipsNotify buildPartial() {
         emu.grasscutter.net.proto.ShowCommonTipsNotifyOuterClass.ShowCommonTipsNotify result = new emu.grasscutter.net.proto.ShowCommonTipsNotifyOuterClass.ShowCommonTipsNotify(this);
         result.closeTime_ = closeTime_;
-        result.content_ = content_;
         result.title_ = title_;
+        result.content_ = content_;
         onBuilt();
         return result;
       }
@@ -540,12 +540,12 @@ public final class ShowCommonTipsNotifyOuterClass {
         if (other.getCloseTime() != 0) {
           setCloseTime(other.getCloseTime());
         }
-        if (!other.getContent().isEmpty()) {
-          content_ = other.content_;
-          onChanged();
-        }
         if (!other.getTitle().isEmpty()) {
           title_ = other.title_;
+          onChanged();
+        }
+        if (!other.getContent().isEmpty()) {
+          content_ = other.content_;
           onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
@@ -579,7 +579,7 @@ public final class ShowCommonTipsNotifyOuterClass {
 
       private int closeTime_ ;
       /**
-       * <code>uint32 close_time = 1;</code>
+       * <code>uint32 close_time = 14;</code>
        * @return The closeTime.
        */
       @java.lang.Override
@@ -587,7 +587,7 @@ public final class ShowCommonTipsNotifyOuterClass {
         return closeTime_;
       }
       /**
-       * <code>uint32 close_time = 1;</code>
+       * <code>uint32 close_time = 14;</code>
        * @param value The closeTime to set.
        * @return This builder for chaining.
        */
@@ -598,7 +598,7 @@ public final class ShowCommonTipsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 close_time = 1;</code>
+       * <code>uint32 close_time = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearCloseTime() {
@@ -608,85 +608,9 @@ public final class ShowCommonTipsNotifyOuterClass {
         return this;
       }
 
-      private java.lang.Object content_ = "";
-      /**
-       * <code>string content = 6;</code>
-       * @return The content.
-       */
-      public java.lang.String getContent() {
-        java.lang.Object ref = content_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          content_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string content = 6;</code>
-       * @return The bytes for content.
-       */
-      public com.google.protobuf.ByteString
-          getContentBytes() {
-        java.lang.Object ref = content_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          content_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string content = 6;</code>
-       * @param value The content to set.
-       * @return This builder for chaining.
-       */
-      public Builder setContent(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        content_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string content = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearContent() {
-        
-        content_ = getDefaultInstance().getContent();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string content = 6;</code>
-       * @param value The bytes for content to set.
-       * @return This builder for chaining.
-       */
-      public Builder setContentBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        content_ = value;
-        onChanged();
-        return this;
-      }
-
       private java.lang.Object title_ = "";
       /**
-       * <code>string title = 14;</code>
+       * <code>string title = 15;</code>
        * @return The title.
        */
       public java.lang.String getTitle() {
@@ -702,7 +626,7 @@ public final class ShowCommonTipsNotifyOuterClass {
         }
       }
       /**
-       * <code>string title = 14;</code>
+       * <code>string title = 15;</code>
        * @return The bytes for title.
        */
       public com.google.protobuf.ByteString
@@ -719,7 +643,7 @@ public final class ShowCommonTipsNotifyOuterClass {
         }
       }
       /**
-       * <code>string title = 14;</code>
+       * <code>string title = 15;</code>
        * @param value The title to set.
        * @return This builder for chaining.
        */
@@ -734,7 +658,7 @@ public final class ShowCommonTipsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>string title = 14;</code>
+       * <code>string title = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearTitle() {
@@ -744,7 +668,7 @@ public final class ShowCommonTipsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>string title = 14;</code>
+       * <code>string title = 15;</code>
        * @param value The bytes for title to set.
        * @return This builder for chaining.
        */
@@ -756,6 +680,82 @@ public final class ShowCommonTipsNotifyOuterClass {
   checkByteStringIsUtf8(value);
         
         title_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object content_ = "";
+      /**
+       * <code>string content = 12;</code>
+       * @return The content.
+       */
+      public java.lang.String getContent() {
+        java.lang.Object ref = content_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          content_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string content = 12;</code>
+       * @return The bytes for content.
+       */
+      public com.google.protobuf.ByteString
+          getContentBytes() {
+        java.lang.Object ref = content_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          content_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string content = 12;</code>
+       * @param value The content to set.
+       * @return This builder for chaining.
+       */
+      public Builder setContent(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        content_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string content = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearContent() {
+        
+        content_ = getDefaultInstance().getContent();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string content = 12;</code>
+       * @param value The bytes for content to set.
+       * @return This builder for chaining.
+       */
+      public Builder setContentBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        content_ = value;
         onChanged();
         return this;
       }
@@ -827,8 +827,8 @@ public final class ShowCommonTipsNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032ShowCommonTipsNotify.proto\"J\n\024ShowComm" +
-      "onTipsNotify\022\022\n\nclose_time\030\001 \001(\r\022\017\n\007cont" +
-      "ent\030\006 \001(\t\022\r\n\005title\030\016 \001(\tB\033\n\031emu.grasscut" +
+      "onTipsNotify\022\022\n\nclose_time\030\016 \001(\r\022\r\n\005titl" +
+      "e\030\017 \001(\t\022\017\n\007content\030\014 \001(\tB\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -840,7 +840,7 @@ public final class ShowCommonTipsNotifyOuterClass {
     internal_static_ShowCommonTipsNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ShowCommonTipsNotify_descriptor,
-        new java.lang.String[] { "CloseTime", "Content", "Title", });
+        new java.lang.String[] { "CloseTime", "Title", "Content", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

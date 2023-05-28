@@ -44,7 +44,7 @@ public final class MathQuaternionOuterClass {
   }
   /**
    * <pre>
-   * Name: KAPLNKOBMCI
+   * Obf: DAKBAOLCLCB
    * </pre>
    *
    * Protobuf type {@code MathQuaternion}
@@ -385,7 +385,7 @@ public final class MathQuaternionOuterClass {
     }
     /**
      * <pre>
-     * Name: KAPLNKOBMCI
+     * Obf: DAKBAOLCLCB
      * </pre>
      *
      * Protobuf type {@code MathQuaternion}

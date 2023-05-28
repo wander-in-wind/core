@@ -41,7 +41,7 @@ public final class AnimatorParameterValueInfoPairOuterClass {
   }
   /**
    * <pre>
-   * Name: FEGCMMBGONJ
+   * Obf: HDPEDMCMNHN
    * </pre>
    *
    * Protobuf type {@code AnimatorParameterValueInfoPair}
@@ -348,7 +348,7 @@ public final class AnimatorParameterValueInfoPairOuterClass {
     }
     /**
      * <pre>
-     * Name: FEGCMMBGONJ
+     * Obf: HDPEDMCMNHN
      * </pre>
      *
      * Protobuf type {@code AnimatorParameterValueInfoPair}

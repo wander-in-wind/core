@@ -20,8 +20,8 @@ public final class ReunionSettleNotifyOuterClass {
   }
   /**
    * <pre>
-   * Name: FMHOHHADCKH
-   * CmdId: 5075
+   * CmdId: 5063
+   * Obf: NJMHNPHGKBN
    * </pre>
    *
    * Protobuf type {@code ReunionSettleNotify}
@@ -246,8 +246,8 @@ public final class ReunionSettleNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: FMHOHHADCKH
-     * CmdId: 5075
+     * CmdId: 5063
+     * Obf: NJMHNPHGKBN
      * </pre>
      *
      * Protobuf type {@code ReunionSettleNotify}

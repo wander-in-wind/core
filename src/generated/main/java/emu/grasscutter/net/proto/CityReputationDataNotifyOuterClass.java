@@ -44,8 +44,8 @@ public final class CityReputationDataNotifyOuterClass {
   }
   /**
    * <pre>
-   * Name: BGIMDCKHDHN
-   * CmdId: 2827
+   * CmdId: 2816
+   * Obf: ONLFJBNBLNL
    * </pre>
    *
    * Protobuf type {@code CityReputationDataNotify}
@@ -337,8 +337,8 @@ public final class CityReputationDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: BGIMDCKHDHN
-     * CmdId: 2827
+     * CmdId: 2816
+     * Obf: ONLFJBNBLNL
      * </pre>
      *
      * Protobuf type {@code CityReputationDataNotify}

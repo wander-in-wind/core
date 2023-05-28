@@ -19,56 +19,56 @@ public final class CharAmusementInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 9;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo> 
-        getAvatarInfoListList();
-    /**
-     * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 9;</code>
-     */
-    emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo getAvatarInfoList(int index);
-    /**
-     * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 9;</code>
-     */
-    int getAvatarInfoListCount();
-    /**
-     * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 9;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfoOrBuilder> 
-        getAvatarInfoListOrBuilderList();
-    /**
-     * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 9;</code>
-     */
-    emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfoOrBuilder getAvatarInfoListOrBuilder(
-        int index);
-
-    /**
-     * <code>uint32 JNLHFFKMCNM = 5;</code>
-     * @return The jNLHFFKMCNM.
-     */
-    int getJNLHFFKMCNM();
-
-    /**
-     * <code>uint32 stage_id = 7;</code>
+     * <code>uint32 stage_id = 12;</code>
      * @return The stageId.
      */
     int getStageId();
 
     /**
-     * <code>uint32 OEHEMHPFFBO = 14;</code>
-     * @return The oEHEMHPFFBO.
+     * <code>uint32 LOLFIBKLONK = 10;</code>
+     * @return The lOLFIBKLONK.
      */
-    int getOEHEMHPFFBO();
+    int getLOLFIBKLONK();
 
     /**
-     * <code>uint32 level_id = 1;</code>
+     * <code>uint32 LPOCDLNJLBH = 3;</code>
+     * @return The lPOCDLNJLBH.
+     */
+    int getLPOCDLNJLBH();
+
+    /**
+     * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 8;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo> 
+        getAvatarInfoListList();
+    /**
+     * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 8;</code>
+     */
+    emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo getAvatarInfoList(int index);
+    /**
+     * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 8;</code>
+     */
+    int getAvatarInfoListCount();
+    /**
+     * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 8;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfoOrBuilder> 
+        getAvatarInfoListOrBuilderList();
+    /**
+     * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 8;</code>
+     */
+    emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfoOrBuilder getAvatarInfoListOrBuilder(
+        int index);
+
+    /**
+     * <code>uint32 level_id = 14;</code>
      * @return The levelId.
      */
     int getLevelId();
   }
   /**
    * <pre>
-   * Name: DKAJENPELLD
+   * Obf: LDOHLKCMHAB
    * </pre>
    *
    * Protobuf type {@code CharAmusementInfo}
@@ -117,22 +117,12 @@ public final class CharAmusementInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 24: {
 
-              levelId_ = input.readUInt32();
+              lPOCDLNJLBH_ = input.readUInt32();
               break;
             }
-            case 40: {
-
-              jNLHFFKMCNM_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              stageId_ = input.readUInt32();
-              break;
-            }
-            case 74: {
+            case 66: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 avatarInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -141,9 +131,19 @@ public final class CharAmusementInfoOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo.parser(), extensionRegistry));
               break;
             }
+            case 80: {
+
+              lOLFIBKLONK_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              stageId_ = input.readUInt32();
+              break;
+            }
             case 112: {
 
-              oEHEMHPFFBO_ = input.readUInt32();
+              levelId_ = input.readUInt32();
               break;
             }
             default: {
@@ -181,61 +181,10 @@ public final class CharAmusementInfoOuterClass {
               emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo.class, emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo.Builder.class);
     }
 
-    public static final int AVATAR_INFO_LIST_FIELD_NUMBER = 9;
-    private java.util.List<emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo> avatarInfoList_;
-    /**
-     * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 9;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo> getAvatarInfoListList() {
-      return avatarInfoList_;
-    }
-    /**
-     * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 9;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfoOrBuilder> 
-        getAvatarInfoListOrBuilderList() {
-      return avatarInfoList_;
-    }
-    /**
-     * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 9;</code>
-     */
-    @java.lang.Override
-    public int getAvatarInfoListCount() {
-      return avatarInfoList_.size();
-    }
-    /**
-     * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 9;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo getAvatarInfoList(int index) {
-      return avatarInfoList_.get(index);
-    }
-    /**
-     * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 9;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfoOrBuilder getAvatarInfoListOrBuilder(
-        int index) {
-      return avatarInfoList_.get(index);
-    }
-
-    public static final int JNLHFFKMCNM_FIELD_NUMBER = 5;
-    private int jNLHFFKMCNM_;
-    /**
-     * <code>uint32 JNLHFFKMCNM = 5;</code>
-     * @return The jNLHFFKMCNM.
-     */
-    @java.lang.Override
-    public int getJNLHFFKMCNM() {
-      return jNLHFFKMCNM_;
-    }
-
-    public static final int STAGE_ID_FIELD_NUMBER = 7;
+    public static final int STAGE_ID_FIELD_NUMBER = 12;
     private int stageId_;
     /**
-     * <code>uint32 stage_id = 7;</code>
+     * <code>uint32 stage_id = 12;</code>
      * @return The stageId.
      */
     @java.lang.Override
@@ -243,21 +192,72 @@ public final class CharAmusementInfoOuterClass {
       return stageId_;
     }
 
-    public static final int OEHEMHPFFBO_FIELD_NUMBER = 14;
-    private int oEHEMHPFFBO_;
+    public static final int LOLFIBKLONK_FIELD_NUMBER = 10;
+    private int lOLFIBKLONK_;
     /**
-     * <code>uint32 OEHEMHPFFBO = 14;</code>
-     * @return The oEHEMHPFFBO.
+     * <code>uint32 LOLFIBKLONK = 10;</code>
+     * @return The lOLFIBKLONK.
      */
     @java.lang.Override
-    public int getOEHEMHPFFBO() {
-      return oEHEMHPFFBO_;
+    public int getLOLFIBKLONK() {
+      return lOLFIBKLONK_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 1;
+    public static final int LPOCDLNJLBH_FIELD_NUMBER = 3;
+    private int lPOCDLNJLBH_;
+    /**
+     * <code>uint32 LPOCDLNJLBH = 3;</code>
+     * @return The lPOCDLNJLBH.
+     */
+    @java.lang.Override
+    public int getLPOCDLNJLBH() {
+      return lPOCDLNJLBH_;
+    }
+
+    public static final int AVATAR_INFO_LIST_FIELD_NUMBER = 8;
+    private java.util.List<emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo> avatarInfoList_;
+    /**
+     * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 8;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo> getAvatarInfoListList() {
+      return avatarInfoList_;
+    }
+    /**
+     * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 8;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfoOrBuilder> 
+        getAvatarInfoListOrBuilderList() {
+      return avatarInfoList_;
+    }
+    /**
+     * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 8;</code>
+     */
+    @java.lang.Override
+    public int getAvatarInfoListCount() {
+      return avatarInfoList_.size();
+    }
+    /**
+     * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 8;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo getAvatarInfoList(int index) {
+      return avatarInfoList_.get(index);
+    }
+    /**
+     * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 8;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfoOrBuilder getAvatarInfoListOrBuilder(
+        int index) {
+      return avatarInfoList_.get(index);
+    }
+
+    public static final int LEVEL_ID_FIELD_NUMBER = 14;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 1;</code>
+     * <code>uint32 level_id = 14;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -279,20 +279,20 @@ public final class CharAmusementInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (levelId_ != 0) {
-        output.writeUInt32(1, levelId_);
-      }
-      if (jNLHFFKMCNM_ != 0) {
-        output.writeUInt32(5, jNLHFFKMCNM_);
-      }
-      if (stageId_ != 0) {
-        output.writeUInt32(7, stageId_);
+      if (lPOCDLNJLBH_ != 0) {
+        output.writeUInt32(3, lPOCDLNJLBH_);
       }
       for (int i = 0; i < avatarInfoList_.size(); i++) {
-        output.writeMessage(9, avatarInfoList_.get(i));
+        output.writeMessage(8, avatarInfoList_.get(i));
       }
-      if (oEHEMHPFFBO_ != 0) {
-        output.writeUInt32(14, oEHEMHPFFBO_);
+      if (lOLFIBKLONK_ != 0) {
+        output.writeUInt32(10, lOLFIBKLONK_);
+      }
+      if (stageId_ != 0) {
+        output.writeUInt32(12, stageId_);
+      }
+      if (levelId_ != 0) {
+        output.writeUInt32(14, levelId_);
       }
       unknownFields.writeTo(output);
     }
@@ -303,25 +303,25 @@ public final class CharAmusementInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (levelId_ != 0) {
+      if (lPOCDLNJLBH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, levelId_);
-      }
-      if (jNLHFFKMCNM_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, jNLHFFKMCNM_);
-      }
-      if (stageId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, stageId_);
+          .computeUInt32Size(3, lPOCDLNJLBH_);
       }
       for (int i = 0; i < avatarInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, avatarInfoList_.get(i));
+          .computeMessageSize(8, avatarInfoList_.get(i));
       }
-      if (oEHEMHPFFBO_ != 0) {
+      if (lOLFIBKLONK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, oEHEMHPFFBO_);
+          .computeUInt32Size(10, lOLFIBKLONK_);
+      }
+      if (stageId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, stageId_);
+      }
+      if (levelId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, levelId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -338,14 +338,14 @@ public final class CharAmusementInfoOuterClass {
       }
       emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo other = (emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo) obj;
 
-      if (!getAvatarInfoListList()
-          .equals(other.getAvatarInfoListList())) return false;
-      if (getJNLHFFKMCNM()
-          != other.getJNLHFFKMCNM()) return false;
       if (getStageId()
           != other.getStageId()) return false;
-      if (getOEHEMHPFFBO()
-          != other.getOEHEMHPFFBO()) return false;
+      if (getLOLFIBKLONK()
+          != other.getLOLFIBKLONK()) return false;
+      if (getLPOCDLNJLBH()
+          != other.getLPOCDLNJLBH()) return false;
+      if (!getAvatarInfoListList()
+          .equals(other.getAvatarInfoListList())) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -359,16 +359,16 @@ public final class CharAmusementInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
+      hash = (37 * hash) + LOLFIBKLONK_FIELD_NUMBER;
+      hash = (53 * hash) + getLOLFIBKLONK();
+      hash = (37 * hash) + LPOCDLNJLBH_FIELD_NUMBER;
+      hash = (53 * hash) + getLPOCDLNJLBH();
       if (getAvatarInfoListCount() > 0) {
         hash = (37 * hash) + AVATAR_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getAvatarInfoListList().hashCode();
       }
-      hash = (37 * hash) + JNLHFFKMCNM_FIELD_NUMBER;
-      hash = (53 * hash) + getJNLHFFKMCNM();
-      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getStageId();
-      hash = (37 * hash) + OEHEMHPFFBO_FIELD_NUMBER;
-      hash = (53 * hash) + getOEHEMHPFFBO();
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -468,7 +468,7 @@ public final class CharAmusementInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: DKAJENPELLD
+     * Obf: LDOHLKCMHAB
      * </pre>
      *
      * Protobuf type {@code CharAmusementInfo}
@@ -509,18 +509,18 @@ public final class CharAmusementInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        stageId_ = 0;
+
+        lOLFIBKLONK_ = 0;
+
+        lPOCDLNJLBH_ = 0;
+
         if (avatarInfoListBuilder_ == null) {
           avatarInfoList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           avatarInfoListBuilder_.clear();
         }
-        jNLHFFKMCNM_ = 0;
-
-        stageId_ = 0;
-
-        oEHEMHPFFBO_ = 0;
-
         levelId_ = 0;
 
         return this;
@@ -550,6 +550,9 @@ public final class CharAmusementInfoOuterClass {
       public emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo buildPartial() {
         emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo result = new emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo(this);
         int from_bitField0_ = bitField0_;
+        result.stageId_ = stageId_;
+        result.lOLFIBKLONK_ = lOLFIBKLONK_;
+        result.lPOCDLNJLBH_ = lPOCDLNJLBH_;
         if (avatarInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             avatarInfoList_ = java.util.Collections.unmodifiableList(avatarInfoList_);
@@ -559,9 +562,6 @@ public final class CharAmusementInfoOuterClass {
         } else {
           result.avatarInfoList_ = avatarInfoListBuilder_.build();
         }
-        result.jNLHFFKMCNM_ = jNLHFFKMCNM_;
-        result.stageId_ = stageId_;
-        result.oEHEMHPFFBO_ = oEHEMHPFFBO_;
         result.levelId_ = levelId_;
         onBuilt();
         return result;
@@ -611,6 +611,15 @@ public final class CharAmusementInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo other) {
         if (other == emu.grasscutter.net.proto.CharAmusementInfoOuterClass.CharAmusementInfo.getDefaultInstance()) return this;
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
+        }
+        if (other.getLOLFIBKLONK() != 0) {
+          setLOLFIBKLONK(other.getLOLFIBKLONK());
+        }
+        if (other.getLPOCDLNJLBH() != 0) {
+          setLPOCDLNJLBH(other.getLPOCDLNJLBH());
+        }
         if (avatarInfoListBuilder_ == null) {
           if (!other.avatarInfoList_.isEmpty()) {
             if (avatarInfoList_.isEmpty()) {
@@ -636,15 +645,6 @@ public final class CharAmusementInfoOuterClass {
               avatarInfoListBuilder_.addAllMessages(other.avatarInfoList_);
             }
           }
-        }
-        if (other.getJNLHFFKMCNM() != 0) {
-          setJNLHFFKMCNM(other.getJNLHFFKMCNM());
-        }
-        if (other.getStageId() != 0) {
-          setStageId(other.getStageId());
-        }
-        if (other.getOEHEMHPFFBO() != 0) {
-          setOEHEMHPFFBO(other.getOEHEMHPFFBO());
         }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
@@ -679,6 +679,99 @@ public final class CharAmusementInfoOuterClass {
       }
       private int bitField0_;
 
+      private int stageId_ ;
+      /**
+       * <code>uint32 stage_id = 12;</code>
+       * @return The stageId.
+       */
+      @java.lang.Override
+      public int getStageId() {
+        return stageId_;
+      }
+      /**
+       * <code>uint32 stage_id = 12;</code>
+       * @param value The stageId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStageId(int value) {
+        
+        stageId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 stage_id = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStageId() {
+        
+        stageId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int lOLFIBKLONK_ ;
+      /**
+       * <code>uint32 LOLFIBKLONK = 10;</code>
+       * @return The lOLFIBKLONK.
+       */
+      @java.lang.Override
+      public int getLOLFIBKLONK() {
+        return lOLFIBKLONK_;
+      }
+      /**
+       * <code>uint32 LOLFIBKLONK = 10;</code>
+       * @param value The lOLFIBKLONK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLOLFIBKLONK(int value) {
+        
+        lOLFIBKLONK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 LOLFIBKLONK = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLOLFIBKLONK() {
+        
+        lOLFIBKLONK_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int lPOCDLNJLBH_ ;
+      /**
+       * <code>uint32 LPOCDLNJLBH = 3;</code>
+       * @return The lPOCDLNJLBH.
+       */
+      @java.lang.Override
+      public int getLPOCDLNJLBH() {
+        return lPOCDLNJLBH_;
+      }
+      /**
+       * <code>uint32 LPOCDLNJLBH = 3;</code>
+       * @param value The lPOCDLNJLBH to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLPOCDLNJLBH(int value) {
+        
+        lPOCDLNJLBH_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 LPOCDLNJLBH = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLPOCDLNJLBH() {
+        
+        lPOCDLNJLBH_ = 0;
+        onChanged();
+        return this;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo> avatarInfoList_ =
         java.util.Collections.emptyList();
       private void ensureAvatarInfoListIsMutable() {
@@ -692,7 +785,7 @@ public final class CharAmusementInfoOuterClass {
           emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo, emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo.Builder, emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfoOrBuilder> avatarInfoListBuilder_;
 
       /**
-       * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 9;</code>
+       * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo> getAvatarInfoListList() {
         if (avatarInfoListBuilder_ == null) {
@@ -702,7 +795,7 @@ public final class CharAmusementInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 9;</code>
+       * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 8;</code>
        */
       public int getAvatarInfoListCount() {
         if (avatarInfoListBuilder_ == null) {
@@ -712,7 +805,7 @@ public final class CharAmusementInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 9;</code>
+       * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 8;</code>
        */
       public emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo getAvatarInfoList(int index) {
         if (avatarInfoListBuilder_ == null) {
@@ -722,7 +815,7 @@ public final class CharAmusementInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 9;</code>
+       * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 8;</code>
        */
       public Builder setAvatarInfoList(
           int index, emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo value) {
@@ -739,7 +832,7 @@ public final class CharAmusementInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 9;</code>
+       * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 8;</code>
        */
       public Builder setAvatarInfoList(
           int index, emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo.Builder builderForValue) {
@@ -753,7 +846,7 @@ public final class CharAmusementInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 9;</code>
+       * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 8;</code>
        */
       public Builder addAvatarInfoList(emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo value) {
         if (avatarInfoListBuilder_ == null) {
@@ -769,7 +862,7 @@ public final class CharAmusementInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 9;</code>
+       * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 8;</code>
        */
       public Builder addAvatarInfoList(
           int index, emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo value) {
@@ -786,7 +879,7 @@ public final class CharAmusementInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 9;</code>
+       * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 8;</code>
        */
       public Builder addAvatarInfoList(
           emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo.Builder builderForValue) {
@@ -800,7 +893,7 @@ public final class CharAmusementInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 9;</code>
+       * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 8;</code>
        */
       public Builder addAvatarInfoList(
           int index, emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo.Builder builderForValue) {
@@ -814,7 +907,7 @@ public final class CharAmusementInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 9;</code>
+       * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 8;</code>
        */
       public Builder addAllAvatarInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo> values) {
@@ -829,7 +922,7 @@ public final class CharAmusementInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 9;</code>
+       * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 8;</code>
        */
       public Builder clearAvatarInfoList() {
         if (avatarInfoListBuilder_ == null) {
@@ -842,7 +935,7 @@ public final class CharAmusementInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 9;</code>
+       * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 8;</code>
        */
       public Builder removeAvatarInfoList(int index) {
         if (avatarInfoListBuilder_ == null) {
@@ -855,14 +948,14 @@ public final class CharAmusementInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 9;</code>
+       * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 8;</code>
        */
       public emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo.Builder getAvatarInfoListBuilder(
           int index) {
         return getAvatarInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 9;</code>
+       * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 8;</code>
        */
       public emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfoOrBuilder getAvatarInfoListOrBuilder(
           int index) {
@@ -872,7 +965,7 @@ public final class CharAmusementInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 9;</code>
+       * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 8;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfoOrBuilder> 
            getAvatarInfoListOrBuilderList() {
@@ -883,14 +976,14 @@ public final class CharAmusementInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 9;</code>
+       * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 8;</code>
        */
       public emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo.Builder addAvatarInfoListBuilder() {
         return getAvatarInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 9;</code>
+       * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 8;</code>
        */
       public emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo.Builder addAvatarInfoListBuilder(
           int index) {
@@ -898,7 +991,7 @@ public final class CharAmusementInfoOuterClass {
             index, emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 9;</code>
+       * <code>repeated .CharAmusementAvatarInfo avatar_info_list = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.CharAmusementAvatarInfo.Builder> 
            getAvatarInfoListBuilderList() {
@@ -919,102 +1012,9 @@ public final class CharAmusementInfoOuterClass {
         return avatarInfoListBuilder_;
       }
 
-      private int jNLHFFKMCNM_ ;
-      /**
-       * <code>uint32 JNLHFFKMCNM = 5;</code>
-       * @return The jNLHFFKMCNM.
-       */
-      @java.lang.Override
-      public int getJNLHFFKMCNM() {
-        return jNLHFFKMCNM_;
-      }
-      /**
-       * <code>uint32 JNLHFFKMCNM = 5;</code>
-       * @param value The jNLHFFKMCNM to set.
-       * @return This builder for chaining.
-       */
-      public Builder setJNLHFFKMCNM(int value) {
-        
-        jNLHFFKMCNM_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 JNLHFFKMCNM = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearJNLHFFKMCNM() {
-        
-        jNLHFFKMCNM_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int stageId_ ;
-      /**
-       * <code>uint32 stage_id = 7;</code>
-       * @return The stageId.
-       */
-      @java.lang.Override
-      public int getStageId() {
-        return stageId_;
-      }
-      /**
-       * <code>uint32 stage_id = 7;</code>
-       * @param value The stageId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStageId(int value) {
-        
-        stageId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 stage_id = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStageId() {
-        
-        stageId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int oEHEMHPFFBO_ ;
-      /**
-       * <code>uint32 OEHEMHPFFBO = 14;</code>
-       * @return The oEHEMHPFFBO.
-       */
-      @java.lang.Override
-      public int getOEHEMHPFFBO() {
-        return oEHEMHPFFBO_;
-      }
-      /**
-       * <code>uint32 OEHEMHPFFBO = 14;</code>
-       * @param value The oEHEMHPFFBO to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOEHEMHPFFBO(int value) {
-        
-        oEHEMHPFFBO_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 OEHEMHPFFBO = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOEHEMHPFFBO() {
-        
-        oEHEMHPFFBO_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 1;</code>
+       * <code>uint32 level_id = 14;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -1022,7 +1022,7 @@ public final class CharAmusementInfoOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 1;</code>
+       * <code>uint32 level_id = 14;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -1033,7 +1033,7 @@ public final class CharAmusementInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 1;</code>
+       * <code>uint32 level_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -1110,11 +1110,11 @@ public final class CharAmusementInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027CharAmusementInfo.proto\032\035CharAmusement" +
-      "AvatarInfo.proto\"\225\001\n\021CharAmusementInfo\0222" +
-      "\n\020avatar_info_list\030\t \003(\0132\030.CharAmusement" +
-      "AvatarInfo\022\023\n\013JNLHFFKMCNM\030\005 \001(\r\022\020\n\010stage" +
-      "_id\030\007 \001(\r\022\023\n\013OEHEMHPFFBO\030\016 \001(\r\022\020\n\010level_" +
-      "id\030\001 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
+      "AvatarInfo.proto\"\225\001\n\021CharAmusementInfo\022\020" +
+      "\n\010stage_id\030\014 \001(\r\022\023\n\013LOLFIBKLONK\030\n \001(\r\022\023\n" +
+      "\013LPOCDLNJLBH\030\003 \001(\r\0222\n\020avatar_info_list\030\010" +
+      " \003(\0132\030.CharAmusementAvatarInfo\022\020\n\010level_" +
+      "id\030\016 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1127,7 +1127,7 @@ public final class CharAmusementInfoOuterClass {
     internal_static_CharAmusementInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CharAmusementInfo_descriptor,
-        new java.lang.String[] { "AvatarInfoList", "JNLHFFKMCNM", "StageId", "OEHEMHPFFBO", "LevelId", });
+        new java.lang.String[] { "StageId", "LOLFIBKLONK", "LPOCDLNJLBH", "AvatarInfoList", "LevelId", });
     emu.grasscutter.net.proto.CharAmusementAvatarInfoOuterClass.getDescriptor();
   }
 

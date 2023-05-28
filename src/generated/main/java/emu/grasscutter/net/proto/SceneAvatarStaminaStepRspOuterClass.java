@@ -19,36 +19,36 @@ public final class SceneAvatarStaminaStepRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 10;</code>
-     * @return The retcode.
+     * <code>bool use_client_rot = 10;</code>
+     * @return The useClientRot.
      */
-    int getRetcode();
+    boolean getUseClientRot();
 
     /**
-     * <code>.Vector rot = 14;</code>
+     * <code>.Vector rot = 3;</code>
      * @return Whether the rot field is set.
      */
     boolean hasRot();
     /**
-     * <code>.Vector rot = 14;</code>
+     * <code>.Vector rot = 3;</code>
      * @return The rot.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getRot();
     /**
-     * <code>.Vector rot = 14;</code>
+     * <code>.Vector rot = 3;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder();
 
     /**
-     * <code>bool use_client_rot = 3;</code>
-     * @return The useClientRot.
+     * <code>int32 retcode = 13;</code>
+     * @return The retcode.
      */
-    boolean getUseClientRot();
+    int getRetcode();
   }
   /**
    * <pre>
-   * Name: NPDDDIOCDLF
-   * CmdId: 259
+   * CmdId: 284
+   * Obf: FHHPFEOPMKH
    * </pre>
    *
    * Protobuf type {@code SceneAvatarStaminaStepRsp}
@@ -95,17 +95,7 @@ public final class SceneAvatarStaminaStepRspOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              useClientRot_ = input.readBool();
-              break;
-            }
-            case 80: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 114: {
+            case 26: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (rot_ != null) {
                 subBuilder = rot_.toBuilder();
@@ -116,6 +106,16 @@ public final class SceneAvatarStaminaStepRspOuterClass {
                 rot_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 80: {
+
+              useClientRot_ = input.readBool();
+              break;
+            }
+            case 104: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -150,21 +150,21 @@ public final class SceneAvatarStaminaStepRspOuterClass {
               emu.grasscutter.net.proto.SceneAvatarStaminaStepRspOuterClass.SceneAvatarStaminaStepRsp.class, emu.grasscutter.net.proto.SceneAvatarStaminaStepRspOuterClass.SceneAvatarStaminaStepRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 10;
-    private int retcode_;
+    public static final int USE_CLIENT_ROT_FIELD_NUMBER = 10;
+    private boolean useClientRot_;
     /**
-     * <code>int32 retcode = 10;</code>
-     * @return The retcode.
+     * <code>bool use_client_rot = 10;</code>
+     * @return The useClientRot.
      */
     @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
+    public boolean getUseClientRot() {
+      return useClientRot_;
     }
 
-    public static final int ROT_FIELD_NUMBER = 14;
+    public static final int ROT_FIELD_NUMBER = 3;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector rot_;
     /**
-     * <code>.Vector rot = 14;</code>
+     * <code>.Vector rot = 3;</code>
      * @return Whether the rot field is set.
      */
     @java.lang.Override
@@ -172,7 +172,7 @@ public final class SceneAvatarStaminaStepRspOuterClass {
       return rot_ != null;
     }
     /**
-     * <code>.Vector rot = 14;</code>
+     * <code>.Vector rot = 3;</code>
      * @return The rot.
      */
     @java.lang.Override
@@ -180,22 +180,22 @@ public final class SceneAvatarStaminaStepRspOuterClass {
       return rot_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : rot_;
     }
     /**
-     * <code>.Vector rot = 14;</code>
+     * <code>.Vector rot = 3;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder() {
       return getRot();
     }
 
-    public static final int USE_CLIENT_ROT_FIELD_NUMBER = 3;
-    private boolean useClientRot_;
+    public static final int RETCODE_FIELD_NUMBER = 13;
+    private int retcode_;
     /**
-     * <code>bool use_client_rot = 3;</code>
-     * @return The useClientRot.
+     * <code>int32 retcode = 13;</code>
+     * @return The retcode.
      */
     @java.lang.Override
-    public boolean getUseClientRot() {
-      return useClientRot_;
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -212,14 +212,14 @@ public final class SceneAvatarStaminaStepRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (rot_ != null) {
+        output.writeMessage(3, getRot());
+      }
       if (useClientRot_ != false) {
-        output.writeBool(3, useClientRot_);
+        output.writeBool(10, useClientRot_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(10, retcode_);
-      }
-      if (rot_ != null) {
-        output.writeMessage(14, getRot());
+        output.writeInt32(13, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -230,17 +230,17 @@ public final class SceneAvatarStaminaStepRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (rot_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(3, getRot());
+      }
       if (useClientRot_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, useClientRot_);
+          .computeBoolSize(10, useClientRot_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(10, retcode_);
-      }
-      if (rot_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, getRot());
+          .computeInt32Size(13, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -257,15 +257,15 @@ public final class SceneAvatarStaminaStepRspOuterClass {
       }
       emu.grasscutter.net.proto.SceneAvatarStaminaStepRspOuterClass.SceneAvatarStaminaStepRsp other = (emu.grasscutter.net.proto.SceneAvatarStaminaStepRspOuterClass.SceneAvatarStaminaStepRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
+      if (getUseClientRot()
+          != other.getUseClientRot()) return false;
       if (hasRot() != other.hasRot()) return false;
       if (hasRot()) {
         if (!getRot()
             .equals(other.getRot())) return false;
       }
-      if (getUseClientRot()
-          != other.getUseClientRot()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -277,15 +277,15 @@ public final class SceneAvatarStaminaStepRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + USE_CLIENT_ROT_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getUseClientRot());
       if (hasRot()) {
         hash = (37 * hash) + ROT_FIELD_NUMBER;
         hash = (53 * hash) + getRot().hashCode();
       }
-      hash = (37 * hash) + USE_CLIENT_ROT_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUseClientRot());
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -383,8 +383,8 @@ public final class SceneAvatarStaminaStepRspOuterClass {
     }
     /**
      * <pre>
-     * Name: NPDDDIOCDLF
-     * CmdId: 259
+     * CmdId: 284
+     * Obf: FHHPFEOPMKH
      * </pre>
      *
      * Protobuf type {@code SceneAvatarStaminaStepRsp}
@@ -424,7 +424,7 @@ public final class SceneAvatarStaminaStepRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
+        useClientRot_ = false;
 
         if (rotBuilder_ == null) {
           rot_ = null;
@@ -432,7 +432,7 @@ public final class SceneAvatarStaminaStepRspOuterClass {
           rot_ = null;
           rotBuilder_ = null;
         }
-        useClientRot_ = false;
+        retcode_ = 0;
 
         return this;
       }
@@ -460,13 +460,13 @@ public final class SceneAvatarStaminaStepRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneAvatarStaminaStepRspOuterClass.SceneAvatarStaminaStepRsp buildPartial() {
         emu.grasscutter.net.proto.SceneAvatarStaminaStepRspOuterClass.SceneAvatarStaminaStepRsp result = new emu.grasscutter.net.proto.SceneAvatarStaminaStepRspOuterClass.SceneAvatarStaminaStepRsp(this);
-        result.retcode_ = retcode_;
+        result.useClientRot_ = useClientRot_;
         if (rotBuilder_ == null) {
           result.rot_ = rot_;
         } else {
           result.rot_ = rotBuilder_.build();
         }
-        result.useClientRot_ = useClientRot_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -515,14 +515,14 @@ public final class SceneAvatarStaminaStepRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneAvatarStaminaStepRspOuterClass.SceneAvatarStaminaStepRsp other) {
         if (other == emu.grasscutter.net.proto.SceneAvatarStaminaStepRspOuterClass.SceneAvatarStaminaStepRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
+        if (other.getUseClientRot() != false) {
+          setUseClientRot(other.getUseClientRot());
         }
         if (other.hasRot()) {
           mergeRot(other.getRot());
         }
-        if (other.getUseClientRot() != false) {
-          setUseClientRot(other.getUseClientRot());
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -553,33 +553,33 @@ public final class SceneAvatarStaminaStepRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
+      private boolean useClientRot_ ;
       /**
-       * <code>int32 retcode = 10;</code>
-       * @return The retcode.
+       * <code>bool use_client_rot = 10;</code>
+       * @return The useClientRot.
        */
       @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
+      public boolean getUseClientRot() {
+        return useClientRot_;
       }
       /**
-       * <code>int32 retcode = 10;</code>
-       * @param value The retcode to set.
+       * <code>bool use_client_rot = 10;</code>
+       * @param value The useClientRot to set.
        * @return This builder for chaining.
        */
-      public Builder setRetcode(int value) {
+      public Builder setUseClientRot(boolean value) {
         
-        retcode_ = value;
+        useClientRot_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 retcode = 10;</code>
+       * <code>bool use_client_rot = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearRetcode() {
+      public Builder clearUseClientRot() {
         
-        retcode_ = 0;
+        useClientRot_ = false;
         onChanged();
         return this;
       }
@@ -588,14 +588,14 @@ public final class SceneAvatarStaminaStepRspOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> rotBuilder_;
       /**
-       * <code>.Vector rot = 14;</code>
+       * <code>.Vector rot = 3;</code>
        * @return Whether the rot field is set.
        */
       public boolean hasRot() {
         return rotBuilder_ != null || rot_ != null;
       }
       /**
-       * <code>.Vector rot = 14;</code>
+       * <code>.Vector rot = 3;</code>
        * @return The rot.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getRot() {
@@ -606,7 +606,7 @@ public final class SceneAvatarStaminaStepRspOuterClass {
         }
       }
       /**
-       * <code>.Vector rot = 14;</code>
+       * <code>.Vector rot = 3;</code>
        */
       public Builder setRot(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (rotBuilder_ == null) {
@@ -622,7 +622,7 @@ public final class SceneAvatarStaminaStepRspOuterClass {
         return this;
       }
       /**
-       * <code>.Vector rot = 14;</code>
+       * <code>.Vector rot = 3;</code>
        */
       public Builder setRot(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -636,7 +636,7 @@ public final class SceneAvatarStaminaStepRspOuterClass {
         return this;
       }
       /**
-       * <code>.Vector rot = 14;</code>
+       * <code>.Vector rot = 3;</code>
        */
       public Builder mergeRot(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (rotBuilder_ == null) {
@@ -654,7 +654,7 @@ public final class SceneAvatarStaminaStepRspOuterClass {
         return this;
       }
       /**
-       * <code>.Vector rot = 14;</code>
+       * <code>.Vector rot = 3;</code>
        */
       public Builder clearRot() {
         if (rotBuilder_ == null) {
@@ -668,7 +668,7 @@ public final class SceneAvatarStaminaStepRspOuterClass {
         return this;
       }
       /**
-       * <code>.Vector rot = 14;</code>
+       * <code>.Vector rot = 3;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getRotBuilder() {
         
@@ -676,7 +676,7 @@ public final class SceneAvatarStaminaStepRspOuterClass {
         return getRotFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector rot = 14;</code>
+       * <code>.Vector rot = 3;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder() {
         if (rotBuilder_ != null) {
@@ -687,7 +687,7 @@ public final class SceneAvatarStaminaStepRspOuterClass {
         }
       }
       /**
-       * <code>.Vector rot = 14;</code>
+       * <code>.Vector rot = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -703,33 +703,33 @@ public final class SceneAvatarStaminaStepRspOuterClass {
         return rotBuilder_;
       }
 
-      private boolean useClientRot_ ;
+      private int retcode_ ;
       /**
-       * <code>bool use_client_rot = 3;</code>
-       * @return The useClientRot.
+       * <code>int32 retcode = 13;</code>
+       * @return The retcode.
        */
       @java.lang.Override
-      public boolean getUseClientRot() {
-        return useClientRot_;
+      public int getRetcode() {
+        return retcode_;
       }
       /**
-       * <code>bool use_client_rot = 3;</code>
-       * @param value The useClientRot to set.
+       * <code>int32 retcode = 13;</code>
+       * @param value The retcode to set.
        * @return This builder for chaining.
        */
-      public Builder setUseClientRot(boolean value) {
+      public Builder setRetcode(int value) {
         
-        useClientRot_ = value;
+        retcode_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool use_client_rot = 3;</code>
+       * <code>int32 retcode = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUseClientRot() {
+      public Builder clearRetcode() {
         
-        useClientRot_ = false;
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -801,9 +801,9 @@ public final class SceneAvatarStaminaStepRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037SceneAvatarStaminaStepRsp.proto\032\014Vecto" +
-      "r.proto\"Z\n\031SceneAvatarStaminaStepRsp\022\017\n\007" +
-      "retcode\030\n \001(\005\022\024\n\003rot\030\016 \001(\0132\007.Vector\022\026\n\016u" +
-      "se_client_rot\030\003 \001(\010B\033\n\031emu.grasscutter.n" +
+      "r.proto\"Z\n\031SceneAvatarStaminaStepRsp\022\026\n\016" +
+      "use_client_rot\030\n \001(\010\022\024\n\003rot\030\003 \001(\0132\007.Vect" +
+      "or\022\017\n\007retcode\030\r \001(\005B\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -816,7 +816,7 @@ public final class SceneAvatarStaminaStepRspOuterClass {
     internal_static_SceneAvatarStaminaStepRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneAvatarStaminaStepRsp_descriptor,
-        new java.lang.String[] { "Retcode", "Rot", "UseClientRot", });
+        new java.lang.String[] { "UseClientRot", "Rot", "Retcode", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

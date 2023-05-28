@@ -19,39 +19,39 @@ public final class RegionSearchNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .RegionSearchInfo region_search_list = 11;</code>
+     * <code>repeated .RegionSearchInfo region_search_list = 8;</code>
      */
     java.util.List<emu.grasscutter.net.proto.RegionSearchInfoOuterClass.RegionSearchInfo> 
         getRegionSearchListList();
     /**
-     * <code>repeated .RegionSearchInfo region_search_list = 11;</code>
+     * <code>repeated .RegionSearchInfo region_search_list = 8;</code>
      */
     emu.grasscutter.net.proto.RegionSearchInfoOuterClass.RegionSearchInfo getRegionSearchList(int index);
     /**
-     * <code>repeated .RegionSearchInfo region_search_list = 11;</code>
+     * <code>repeated .RegionSearchInfo region_search_list = 8;</code>
      */
     int getRegionSearchListCount();
     /**
-     * <code>repeated .RegionSearchInfo region_search_list = 11;</code>
+     * <code>repeated .RegionSearchInfo region_search_list = 8;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.RegionSearchInfoOuterClass.RegionSearchInfoOrBuilder> 
         getRegionSearchListOrBuilderList();
     /**
-     * <code>repeated .RegionSearchInfo region_search_list = 11;</code>
+     * <code>repeated .RegionSearchInfo region_search_list = 8;</code>
      */
     emu.grasscutter.net.proto.RegionSearchInfoOuterClass.RegionSearchInfoOrBuilder getRegionSearchListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 uid = 10;</code>
+     * <code>uint32 uid = 12;</code>
      * @return The uid.
      */
     int getUid();
   }
   /**
    * <pre>
-   * Name: HHNOJCJIIKA
-   * CmdId: 5648
+   * CmdId: 5628
+   * Obf: FMNKPPHEHAE
    * </pre>
    *
    * Protobuf type {@code RegionSearchNotify}
@@ -100,18 +100,18 @@ public final class RegionSearchNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
-
-              uid_ = input.readUInt32();
-              break;
-            }
-            case 90: {
+            case 66: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 regionSearchList_ = new java.util.ArrayList<emu.grasscutter.net.proto.RegionSearchInfoOuterClass.RegionSearchInfo>();
                 mutable_bitField0_ |= 0x00000001;
               }
               regionSearchList_.add(
                   input.readMessage(emu.grasscutter.net.proto.RegionSearchInfoOuterClass.RegionSearchInfo.parser(), extensionRegistry));
+              break;
+            }
+            case 96: {
+
+              uid_ = input.readUInt32();
               break;
             }
             default: {
@@ -149,17 +149,17 @@ public final class RegionSearchNotifyOuterClass {
               emu.grasscutter.net.proto.RegionSearchNotifyOuterClass.RegionSearchNotify.class, emu.grasscutter.net.proto.RegionSearchNotifyOuterClass.RegionSearchNotify.Builder.class);
     }
 
-    public static final int REGION_SEARCH_LIST_FIELD_NUMBER = 11;
+    public static final int REGION_SEARCH_LIST_FIELD_NUMBER = 8;
     private java.util.List<emu.grasscutter.net.proto.RegionSearchInfoOuterClass.RegionSearchInfo> regionSearchList_;
     /**
-     * <code>repeated .RegionSearchInfo region_search_list = 11;</code>
+     * <code>repeated .RegionSearchInfo region_search_list = 8;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.RegionSearchInfoOuterClass.RegionSearchInfo> getRegionSearchListList() {
       return regionSearchList_;
     }
     /**
-     * <code>repeated .RegionSearchInfo region_search_list = 11;</code>
+     * <code>repeated .RegionSearchInfo region_search_list = 8;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.RegionSearchInfoOuterClass.RegionSearchInfoOrBuilder> 
@@ -167,21 +167,21 @@ public final class RegionSearchNotifyOuterClass {
       return regionSearchList_;
     }
     /**
-     * <code>repeated .RegionSearchInfo region_search_list = 11;</code>
+     * <code>repeated .RegionSearchInfo region_search_list = 8;</code>
      */
     @java.lang.Override
     public int getRegionSearchListCount() {
       return regionSearchList_.size();
     }
     /**
-     * <code>repeated .RegionSearchInfo region_search_list = 11;</code>
+     * <code>repeated .RegionSearchInfo region_search_list = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.RegionSearchInfoOuterClass.RegionSearchInfo getRegionSearchList(int index) {
       return regionSearchList_.get(index);
     }
     /**
-     * <code>repeated .RegionSearchInfo region_search_list = 11;</code>
+     * <code>repeated .RegionSearchInfo region_search_list = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.RegionSearchInfoOuterClass.RegionSearchInfoOrBuilder getRegionSearchListOrBuilder(
@@ -189,10 +189,10 @@ public final class RegionSearchNotifyOuterClass {
       return regionSearchList_.get(index);
     }
 
-    public static final int UID_FIELD_NUMBER = 10;
+    public static final int UID_FIELD_NUMBER = 12;
     private int uid_;
     /**
-     * <code>uint32 uid = 10;</code>
+     * <code>uint32 uid = 12;</code>
      * @return The uid.
      */
     @java.lang.Override
@@ -214,11 +214,11 @@ public final class RegionSearchNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (uid_ != 0) {
-        output.writeUInt32(10, uid_);
-      }
       for (int i = 0; i < regionSearchList_.size(); i++) {
-        output.writeMessage(11, regionSearchList_.get(i));
+        output.writeMessage(8, regionSearchList_.get(i));
+      }
+      if (uid_ != 0) {
+        output.writeUInt32(12, uid_);
       }
       unknownFields.writeTo(output);
     }
@@ -229,13 +229,13 @@ public final class RegionSearchNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (uid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, uid_);
-      }
       for (int i = 0; i < regionSearchList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, regionSearchList_.get(i));
+          .computeMessageSize(8, regionSearchList_.get(i));
+      }
+      if (uid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, uid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -370,8 +370,8 @@ public final class RegionSearchNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: HHNOJCJIIKA
-     * CmdId: 5648
+     * CmdId: 5628
+     * Obf: FMNKPPHEHAE
      * </pre>
      *
      * Protobuf type {@code RegionSearchNotify}
@@ -577,7 +577,7 @@ public final class RegionSearchNotifyOuterClass {
           emu.grasscutter.net.proto.RegionSearchInfoOuterClass.RegionSearchInfo, emu.grasscutter.net.proto.RegionSearchInfoOuterClass.RegionSearchInfo.Builder, emu.grasscutter.net.proto.RegionSearchInfoOuterClass.RegionSearchInfoOrBuilder> regionSearchListBuilder_;
 
       /**
-       * <code>repeated .RegionSearchInfo region_search_list = 11;</code>
+       * <code>repeated .RegionSearchInfo region_search_list = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.RegionSearchInfoOuterClass.RegionSearchInfo> getRegionSearchListList() {
         if (regionSearchListBuilder_ == null) {
@@ -587,7 +587,7 @@ public final class RegionSearchNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .RegionSearchInfo region_search_list = 11;</code>
+       * <code>repeated .RegionSearchInfo region_search_list = 8;</code>
        */
       public int getRegionSearchListCount() {
         if (regionSearchListBuilder_ == null) {
@@ -597,7 +597,7 @@ public final class RegionSearchNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .RegionSearchInfo region_search_list = 11;</code>
+       * <code>repeated .RegionSearchInfo region_search_list = 8;</code>
        */
       public emu.grasscutter.net.proto.RegionSearchInfoOuterClass.RegionSearchInfo getRegionSearchList(int index) {
         if (regionSearchListBuilder_ == null) {
@@ -607,7 +607,7 @@ public final class RegionSearchNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .RegionSearchInfo region_search_list = 11;</code>
+       * <code>repeated .RegionSearchInfo region_search_list = 8;</code>
        */
       public Builder setRegionSearchList(
           int index, emu.grasscutter.net.proto.RegionSearchInfoOuterClass.RegionSearchInfo value) {
@@ -624,7 +624,7 @@ public final class RegionSearchNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RegionSearchInfo region_search_list = 11;</code>
+       * <code>repeated .RegionSearchInfo region_search_list = 8;</code>
        */
       public Builder setRegionSearchList(
           int index, emu.grasscutter.net.proto.RegionSearchInfoOuterClass.RegionSearchInfo.Builder builderForValue) {
@@ -638,7 +638,7 @@ public final class RegionSearchNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RegionSearchInfo region_search_list = 11;</code>
+       * <code>repeated .RegionSearchInfo region_search_list = 8;</code>
        */
       public Builder addRegionSearchList(emu.grasscutter.net.proto.RegionSearchInfoOuterClass.RegionSearchInfo value) {
         if (regionSearchListBuilder_ == null) {
@@ -654,7 +654,7 @@ public final class RegionSearchNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RegionSearchInfo region_search_list = 11;</code>
+       * <code>repeated .RegionSearchInfo region_search_list = 8;</code>
        */
       public Builder addRegionSearchList(
           int index, emu.grasscutter.net.proto.RegionSearchInfoOuterClass.RegionSearchInfo value) {
@@ -671,7 +671,7 @@ public final class RegionSearchNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RegionSearchInfo region_search_list = 11;</code>
+       * <code>repeated .RegionSearchInfo region_search_list = 8;</code>
        */
       public Builder addRegionSearchList(
           emu.grasscutter.net.proto.RegionSearchInfoOuterClass.RegionSearchInfo.Builder builderForValue) {
@@ -685,7 +685,7 @@ public final class RegionSearchNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RegionSearchInfo region_search_list = 11;</code>
+       * <code>repeated .RegionSearchInfo region_search_list = 8;</code>
        */
       public Builder addRegionSearchList(
           int index, emu.grasscutter.net.proto.RegionSearchInfoOuterClass.RegionSearchInfo.Builder builderForValue) {
@@ -699,7 +699,7 @@ public final class RegionSearchNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RegionSearchInfo region_search_list = 11;</code>
+       * <code>repeated .RegionSearchInfo region_search_list = 8;</code>
        */
       public Builder addAllRegionSearchList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.RegionSearchInfoOuterClass.RegionSearchInfo> values) {
@@ -714,7 +714,7 @@ public final class RegionSearchNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RegionSearchInfo region_search_list = 11;</code>
+       * <code>repeated .RegionSearchInfo region_search_list = 8;</code>
        */
       public Builder clearRegionSearchList() {
         if (regionSearchListBuilder_ == null) {
@@ -727,7 +727,7 @@ public final class RegionSearchNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RegionSearchInfo region_search_list = 11;</code>
+       * <code>repeated .RegionSearchInfo region_search_list = 8;</code>
        */
       public Builder removeRegionSearchList(int index) {
         if (regionSearchListBuilder_ == null) {
@@ -740,14 +740,14 @@ public final class RegionSearchNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RegionSearchInfo region_search_list = 11;</code>
+       * <code>repeated .RegionSearchInfo region_search_list = 8;</code>
        */
       public emu.grasscutter.net.proto.RegionSearchInfoOuterClass.RegionSearchInfo.Builder getRegionSearchListBuilder(
           int index) {
         return getRegionSearchListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .RegionSearchInfo region_search_list = 11;</code>
+       * <code>repeated .RegionSearchInfo region_search_list = 8;</code>
        */
       public emu.grasscutter.net.proto.RegionSearchInfoOuterClass.RegionSearchInfoOrBuilder getRegionSearchListOrBuilder(
           int index) {
@@ -757,7 +757,7 @@ public final class RegionSearchNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .RegionSearchInfo region_search_list = 11;</code>
+       * <code>repeated .RegionSearchInfo region_search_list = 8;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.RegionSearchInfoOuterClass.RegionSearchInfoOrBuilder> 
            getRegionSearchListOrBuilderList() {
@@ -768,14 +768,14 @@ public final class RegionSearchNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .RegionSearchInfo region_search_list = 11;</code>
+       * <code>repeated .RegionSearchInfo region_search_list = 8;</code>
        */
       public emu.grasscutter.net.proto.RegionSearchInfoOuterClass.RegionSearchInfo.Builder addRegionSearchListBuilder() {
         return getRegionSearchListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.RegionSearchInfoOuterClass.RegionSearchInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .RegionSearchInfo region_search_list = 11;</code>
+       * <code>repeated .RegionSearchInfo region_search_list = 8;</code>
        */
       public emu.grasscutter.net.proto.RegionSearchInfoOuterClass.RegionSearchInfo.Builder addRegionSearchListBuilder(
           int index) {
@@ -783,7 +783,7 @@ public final class RegionSearchNotifyOuterClass {
             index, emu.grasscutter.net.proto.RegionSearchInfoOuterClass.RegionSearchInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .RegionSearchInfo region_search_list = 11;</code>
+       * <code>repeated .RegionSearchInfo region_search_list = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.RegionSearchInfoOuterClass.RegionSearchInfo.Builder> 
            getRegionSearchListBuilderList() {
@@ -806,7 +806,7 @@ public final class RegionSearchNotifyOuterClass {
 
       private int uid_ ;
       /**
-       * <code>uint32 uid = 10;</code>
+       * <code>uint32 uid = 12;</code>
        * @return The uid.
        */
       @java.lang.Override
@@ -814,7 +814,7 @@ public final class RegionSearchNotifyOuterClass {
         return uid_;
       }
       /**
-       * <code>uint32 uid = 10;</code>
+       * <code>uint32 uid = 12;</code>
        * @param value The uid to set.
        * @return This builder for chaining.
        */
@@ -825,7 +825,7 @@ public final class RegionSearchNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 uid = 10;</code>
+       * <code>uint32 uid = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearUid() {
@@ -903,8 +903,8 @@ public final class RegionSearchNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\030RegionSearchNotify.proto\032\026RegionSearch" +
       "Info.proto\"P\n\022RegionSearchNotify\022-\n\022regi" +
-      "on_search_list\030\013 \003(\0132\021.RegionSearchInfo\022" +
-      "\013\n\003uid\030\n \001(\rB\033\n\031emu.grasscutter.net.prot" +
+      "on_search_list\030\010 \003(\0132\021.RegionSearchInfo\022" +
+      "\013\n\003uid\030\014 \001(\rB\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

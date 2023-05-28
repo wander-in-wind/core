@@ -19,45 +19,45 @@ public final class CoinCollectGallerySettleNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 EINKOMCFNDN = 5;</code>
-     * @return The eINKOMCFNDN.
+     * <code>bool is_new_record = 1;</code>
+     * @return The isNewRecord.
      */
-    int getEINKOMCFNDN();
+    boolean getIsNewRecord();
 
     /**
-     * <code>uint32 BOFDHHNBNCH = 1;</code>
-     * @return The bOFDHHNBNCH.
+     * <code>uint32 FOAFDGFNCFL = 13;</code>
+     * @return The fOAFDGFNCFL.
      */
-    int getBOFDHHNBNCH();
+    int getFOAFDGFNCFL();
 
     /**
-     * <code>uint32 JIEODOEOBID = 8;</code>
-     * @return The jIEODOEOBID.
-     */
-    int getJIEODOEOBID();
-
-    /**
-     * <code>uint32 level_id = 7;</code>
-     * @return The levelId.
-     */
-    int getLevelId();
-
-    /**
-     * <code>uint32 multistage_play_index = 10;</code>
+     * <code>uint32 multistage_play_index = 8;</code>
      * @return The multistagePlayIndex.
      */
     int getMultistagePlayIndex();
 
     /**
-     * <code>bool is_new_record = 15;</code>
-     * @return The isNewRecord.
+     * <code>uint32 HCDKJFMNMAM = 12;</code>
+     * @return The hCDKJFMNMAM.
      */
-    boolean getIsNewRecord();
+    int getHCDKJFMNMAM();
+
+    /**
+     * <code>uint32 NIOOACIEABD = 3;</code>
+     * @return The nIOOACIEABD.
+     */
+    int getNIOOACIEABD();
+
+    /**
+     * <code>uint32 level_id = 14;</code>
+     * @return The levelId.
+     */
+    int getLevelId();
   }
   /**
    * <pre>
-   * Name: FPJJGBEBAAD
-   * CmdId: 5533
+   * CmdId: 5542
+   * Obf: CPJGALGBPHB
    * </pre>
    *
    * Protobuf type {@code CoinCollectGallerySettleNotify}
@@ -106,32 +106,32 @@ public final class CoinCollectGallerySettleNotifyOuterClass {
               break;
             case 8: {
 
-              bOFDHHNBNCH_ = input.readUInt32();
+              isNewRecord_ = input.readBool();
               break;
             }
-            case 40: {
+            case 24: {
 
-              eINKOMCFNDN_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              levelId_ = input.readUInt32();
+              nIOOACIEABD_ = input.readUInt32();
               break;
             }
             case 64: {
 
-              jIEODOEOBID_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
               multistagePlayIndex_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 96: {
 
-              isNewRecord_ = input.readBool();
+              hCDKJFMNMAM_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              fOAFDGFNCFL_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              levelId_ = input.readUInt32();
               break;
             }
             default: {
@@ -166,54 +166,32 @@ public final class CoinCollectGallerySettleNotifyOuterClass {
               emu.grasscutter.net.proto.CoinCollectGallerySettleNotifyOuterClass.CoinCollectGallerySettleNotify.class, emu.grasscutter.net.proto.CoinCollectGallerySettleNotifyOuterClass.CoinCollectGallerySettleNotify.Builder.class);
     }
 
-    public static final int EINKOMCFNDN_FIELD_NUMBER = 5;
-    private int eINKOMCFNDN_;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 1;
+    private boolean isNewRecord_;
     /**
-     * <code>uint32 EINKOMCFNDN = 5;</code>
-     * @return The eINKOMCFNDN.
+     * <code>bool is_new_record = 1;</code>
+     * @return The isNewRecord.
      */
     @java.lang.Override
-    public int getEINKOMCFNDN() {
-      return eINKOMCFNDN_;
+    public boolean getIsNewRecord() {
+      return isNewRecord_;
     }
 
-    public static final int BOFDHHNBNCH_FIELD_NUMBER = 1;
-    private int bOFDHHNBNCH_;
+    public static final int FOAFDGFNCFL_FIELD_NUMBER = 13;
+    private int fOAFDGFNCFL_;
     /**
-     * <code>uint32 BOFDHHNBNCH = 1;</code>
-     * @return The bOFDHHNBNCH.
+     * <code>uint32 FOAFDGFNCFL = 13;</code>
+     * @return The fOAFDGFNCFL.
      */
     @java.lang.Override
-    public int getBOFDHHNBNCH() {
-      return bOFDHHNBNCH_;
+    public int getFOAFDGFNCFL() {
+      return fOAFDGFNCFL_;
     }
 
-    public static final int JIEODOEOBID_FIELD_NUMBER = 8;
-    private int jIEODOEOBID_;
-    /**
-     * <code>uint32 JIEODOEOBID = 8;</code>
-     * @return The jIEODOEOBID.
-     */
-    @java.lang.Override
-    public int getJIEODOEOBID() {
-      return jIEODOEOBID_;
-    }
-
-    public static final int LEVEL_ID_FIELD_NUMBER = 7;
-    private int levelId_;
-    /**
-     * <code>uint32 level_id = 7;</code>
-     * @return The levelId.
-     */
-    @java.lang.Override
-    public int getLevelId() {
-      return levelId_;
-    }
-
-    public static final int MULTISTAGE_PLAY_INDEX_FIELD_NUMBER = 10;
+    public static final int MULTISTAGE_PLAY_INDEX_FIELD_NUMBER = 8;
     private int multistagePlayIndex_;
     /**
-     * <code>uint32 multistage_play_index = 10;</code>
+     * <code>uint32 multistage_play_index = 8;</code>
      * @return The multistagePlayIndex.
      */
     @java.lang.Override
@@ -221,15 +199,37 @@ public final class CoinCollectGallerySettleNotifyOuterClass {
       return multistagePlayIndex_;
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 15;
-    private boolean isNewRecord_;
+    public static final int HCDKJFMNMAM_FIELD_NUMBER = 12;
+    private int hCDKJFMNMAM_;
     /**
-     * <code>bool is_new_record = 15;</code>
-     * @return The isNewRecord.
+     * <code>uint32 HCDKJFMNMAM = 12;</code>
+     * @return The hCDKJFMNMAM.
      */
     @java.lang.Override
-    public boolean getIsNewRecord() {
-      return isNewRecord_;
+    public int getHCDKJFMNMAM() {
+      return hCDKJFMNMAM_;
+    }
+
+    public static final int NIOOACIEABD_FIELD_NUMBER = 3;
+    private int nIOOACIEABD_;
+    /**
+     * <code>uint32 NIOOACIEABD = 3;</code>
+     * @return The nIOOACIEABD.
+     */
+    @java.lang.Override
+    public int getNIOOACIEABD() {
+      return nIOOACIEABD_;
+    }
+
+    public static final int LEVEL_ID_FIELD_NUMBER = 14;
+    private int levelId_;
+    /**
+     * <code>uint32 level_id = 14;</code>
+     * @return The levelId.
+     */
+    @java.lang.Override
+    public int getLevelId() {
+      return levelId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -246,23 +246,23 @@ public final class CoinCollectGallerySettleNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (bOFDHHNBNCH_ != 0) {
-        output.writeUInt32(1, bOFDHHNBNCH_);
+      if (isNewRecord_ != false) {
+        output.writeBool(1, isNewRecord_);
       }
-      if (eINKOMCFNDN_ != 0) {
-        output.writeUInt32(5, eINKOMCFNDN_);
-      }
-      if (levelId_ != 0) {
-        output.writeUInt32(7, levelId_);
-      }
-      if (jIEODOEOBID_ != 0) {
-        output.writeUInt32(8, jIEODOEOBID_);
+      if (nIOOACIEABD_ != 0) {
+        output.writeUInt32(3, nIOOACIEABD_);
       }
       if (multistagePlayIndex_ != 0) {
-        output.writeUInt32(10, multistagePlayIndex_);
+        output.writeUInt32(8, multistagePlayIndex_);
       }
-      if (isNewRecord_ != false) {
-        output.writeBool(15, isNewRecord_);
+      if (hCDKJFMNMAM_ != 0) {
+        output.writeUInt32(12, hCDKJFMNMAM_);
+      }
+      if (fOAFDGFNCFL_ != 0) {
+        output.writeUInt32(13, fOAFDGFNCFL_);
+      }
+      if (levelId_ != 0) {
+        output.writeUInt32(14, levelId_);
       }
       unknownFields.writeTo(output);
     }
@@ -273,29 +273,29 @@ public final class CoinCollectGallerySettleNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (bOFDHHNBNCH_ != 0) {
+      if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, bOFDHHNBNCH_);
+          .computeBoolSize(1, isNewRecord_);
       }
-      if (eINKOMCFNDN_ != 0) {
+      if (nIOOACIEABD_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, eINKOMCFNDN_);
-      }
-      if (levelId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, levelId_);
-      }
-      if (jIEODOEOBID_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, jIEODOEOBID_);
+          .computeUInt32Size(3, nIOOACIEABD_);
       }
       if (multistagePlayIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, multistagePlayIndex_);
+          .computeUInt32Size(8, multistagePlayIndex_);
       }
-      if (isNewRecord_ != false) {
+      if (hCDKJFMNMAM_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isNewRecord_);
+          .computeUInt32Size(12, hCDKJFMNMAM_);
+      }
+      if (fOAFDGFNCFL_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, fOAFDGFNCFL_);
+      }
+      if (levelId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, levelId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,18 +312,18 @@ public final class CoinCollectGallerySettleNotifyOuterClass {
       }
       emu.grasscutter.net.proto.CoinCollectGallerySettleNotifyOuterClass.CoinCollectGallerySettleNotify other = (emu.grasscutter.net.proto.CoinCollectGallerySettleNotifyOuterClass.CoinCollectGallerySettleNotify) obj;
 
-      if (getEINKOMCFNDN()
-          != other.getEINKOMCFNDN()) return false;
-      if (getBOFDHHNBNCH()
-          != other.getBOFDHHNBNCH()) return false;
-      if (getJIEODOEOBID()
-          != other.getJIEODOEOBID()) return false;
-      if (getLevelId()
-          != other.getLevelId()) return false;
-      if (getMultistagePlayIndex()
-          != other.getMultistagePlayIndex()) return false;
       if (getIsNewRecord()
           != other.getIsNewRecord()) return false;
+      if (getFOAFDGFNCFL()
+          != other.getFOAFDGFNCFL()) return false;
+      if (getMultistagePlayIndex()
+          != other.getMultistagePlayIndex()) return false;
+      if (getHCDKJFMNMAM()
+          != other.getHCDKJFMNMAM()) return false;
+      if (getNIOOACIEABD()
+          != other.getNIOOACIEABD()) return false;
+      if (getLevelId()
+          != other.getLevelId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -335,19 +335,19 @@ public final class CoinCollectGallerySettleNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + EINKOMCFNDN_FIELD_NUMBER;
-      hash = (53 * hash) + getEINKOMCFNDN();
-      hash = (37 * hash) + BOFDHHNBNCH_FIELD_NUMBER;
-      hash = (53 * hash) + getBOFDHHNBNCH();
-      hash = (37 * hash) + JIEODOEOBID_FIELD_NUMBER;
-      hash = (53 * hash) + getJIEODOEOBID();
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
-      hash = (37 * hash) + MULTISTAGE_PLAY_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getMultistagePlayIndex();
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
+      hash = (37 * hash) + FOAFDGFNCFL_FIELD_NUMBER;
+      hash = (53 * hash) + getFOAFDGFNCFL();
+      hash = (37 * hash) + MULTISTAGE_PLAY_INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getMultistagePlayIndex();
+      hash = (37 * hash) + HCDKJFMNMAM_FIELD_NUMBER;
+      hash = (53 * hash) + getHCDKJFMNMAM();
+      hash = (37 * hash) + NIOOACIEABD_FIELD_NUMBER;
+      hash = (53 * hash) + getNIOOACIEABD();
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -445,8 +445,8 @@ public final class CoinCollectGallerySettleNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: FPJJGBEBAAD
-     * CmdId: 5533
+     * CmdId: 5542
+     * Obf: CPJGALGBPHB
      * </pre>
      *
      * Protobuf type {@code CoinCollectGallerySettleNotify}
@@ -486,17 +486,17 @@ public final class CoinCollectGallerySettleNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        eINKOMCFNDN_ = 0;
+        isNewRecord_ = false;
 
-        bOFDHHNBNCH_ = 0;
-
-        jIEODOEOBID_ = 0;
-
-        levelId_ = 0;
+        fOAFDGFNCFL_ = 0;
 
         multistagePlayIndex_ = 0;
 
-        isNewRecord_ = false;
+        hCDKJFMNMAM_ = 0;
+
+        nIOOACIEABD_ = 0;
+
+        levelId_ = 0;
 
         return this;
       }
@@ -524,12 +524,12 @@ public final class CoinCollectGallerySettleNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.CoinCollectGallerySettleNotifyOuterClass.CoinCollectGallerySettleNotify buildPartial() {
         emu.grasscutter.net.proto.CoinCollectGallerySettleNotifyOuterClass.CoinCollectGallerySettleNotify result = new emu.grasscutter.net.proto.CoinCollectGallerySettleNotifyOuterClass.CoinCollectGallerySettleNotify(this);
-        result.eINKOMCFNDN_ = eINKOMCFNDN_;
-        result.bOFDHHNBNCH_ = bOFDHHNBNCH_;
-        result.jIEODOEOBID_ = jIEODOEOBID_;
-        result.levelId_ = levelId_;
-        result.multistagePlayIndex_ = multistagePlayIndex_;
         result.isNewRecord_ = isNewRecord_;
+        result.fOAFDGFNCFL_ = fOAFDGFNCFL_;
+        result.multistagePlayIndex_ = multistagePlayIndex_;
+        result.hCDKJFMNMAM_ = hCDKJFMNMAM_;
+        result.nIOOACIEABD_ = nIOOACIEABD_;
+        result.levelId_ = levelId_;
         onBuilt();
         return result;
       }
@@ -578,23 +578,23 @@ public final class CoinCollectGallerySettleNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CoinCollectGallerySettleNotifyOuterClass.CoinCollectGallerySettleNotify other) {
         if (other == emu.grasscutter.net.proto.CoinCollectGallerySettleNotifyOuterClass.CoinCollectGallerySettleNotify.getDefaultInstance()) return this;
-        if (other.getEINKOMCFNDN() != 0) {
-          setEINKOMCFNDN(other.getEINKOMCFNDN());
+        if (other.getIsNewRecord() != false) {
+          setIsNewRecord(other.getIsNewRecord());
         }
-        if (other.getBOFDHHNBNCH() != 0) {
-          setBOFDHHNBNCH(other.getBOFDHHNBNCH());
-        }
-        if (other.getJIEODOEOBID() != 0) {
-          setJIEODOEOBID(other.getJIEODOEOBID());
-        }
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
+        if (other.getFOAFDGFNCFL() != 0) {
+          setFOAFDGFNCFL(other.getFOAFDGFNCFL());
         }
         if (other.getMultistagePlayIndex() != 0) {
           setMultistagePlayIndex(other.getMultistagePlayIndex());
         }
-        if (other.getIsNewRecord() != false) {
-          setIsNewRecord(other.getIsNewRecord());
+        if (other.getHCDKJFMNMAM() != 0) {
+          setHCDKJFMNMAM(other.getHCDKJFMNMAM());
+        }
+        if (other.getNIOOACIEABD() != 0) {
+          setNIOOACIEABD(other.getNIOOACIEABD());
+        }
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -625,164 +625,9 @@ public final class CoinCollectGallerySettleNotifyOuterClass {
         return this;
       }
 
-      private int eINKOMCFNDN_ ;
-      /**
-       * <code>uint32 EINKOMCFNDN = 5;</code>
-       * @return The eINKOMCFNDN.
-       */
-      @java.lang.Override
-      public int getEINKOMCFNDN() {
-        return eINKOMCFNDN_;
-      }
-      /**
-       * <code>uint32 EINKOMCFNDN = 5;</code>
-       * @param value The eINKOMCFNDN to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEINKOMCFNDN(int value) {
-        
-        eINKOMCFNDN_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 EINKOMCFNDN = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEINKOMCFNDN() {
-        
-        eINKOMCFNDN_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int bOFDHHNBNCH_ ;
-      /**
-       * <code>uint32 BOFDHHNBNCH = 1;</code>
-       * @return The bOFDHHNBNCH.
-       */
-      @java.lang.Override
-      public int getBOFDHHNBNCH() {
-        return bOFDHHNBNCH_;
-      }
-      /**
-       * <code>uint32 BOFDHHNBNCH = 1;</code>
-       * @param value The bOFDHHNBNCH to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBOFDHHNBNCH(int value) {
-        
-        bOFDHHNBNCH_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 BOFDHHNBNCH = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBOFDHHNBNCH() {
-        
-        bOFDHHNBNCH_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int jIEODOEOBID_ ;
-      /**
-       * <code>uint32 JIEODOEOBID = 8;</code>
-       * @return The jIEODOEOBID.
-       */
-      @java.lang.Override
-      public int getJIEODOEOBID() {
-        return jIEODOEOBID_;
-      }
-      /**
-       * <code>uint32 JIEODOEOBID = 8;</code>
-       * @param value The jIEODOEOBID to set.
-       * @return This builder for chaining.
-       */
-      public Builder setJIEODOEOBID(int value) {
-        
-        jIEODOEOBID_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 JIEODOEOBID = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearJIEODOEOBID() {
-        
-        jIEODOEOBID_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int levelId_ ;
-      /**
-       * <code>uint32 level_id = 7;</code>
-       * @return The levelId.
-       */
-      @java.lang.Override
-      public int getLevelId() {
-        return levelId_;
-      }
-      /**
-       * <code>uint32 level_id = 7;</code>
-       * @param value The levelId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevelId(int value) {
-        
-        levelId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level_id = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevelId() {
-        
-        levelId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int multistagePlayIndex_ ;
-      /**
-       * <code>uint32 multistage_play_index = 10;</code>
-       * @return The multistagePlayIndex.
-       */
-      @java.lang.Override
-      public int getMultistagePlayIndex() {
-        return multistagePlayIndex_;
-      }
-      /**
-       * <code>uint32 multistage_play_index = 10;</code>
-       * @param value The multistagePlayIndex to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMultistagePlayIndex(int value) {
-        
-        multistagePlayIndex_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 multistage_play_index = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMultistagePlayIndex() {
-        
-        multistagePlayIndex_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 15;</code>
+       * <code>bool is_new_record = 1;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -790,7 +635,7 @@ public final class CoinCollectGallerySettleNotifyOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 15;</code>
+       * <code>bool is_new_record = 1;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -801,12 +646,167 @@ public final class CoinCollectGallerySettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 15;</code>
+       * <code>bool is_new_record = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
         
         isNewRecord_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int fOAFDGFNCFL_ ;
+      /**
+       * <code>uint32 FOAFDGFNCFL = 13;</code>
+       * @return The fOAFDGFNCFL.
+       */
+      @java.lang.Override
+      public int getFOAFDGFNCFL() {
+        return fOAFDGFNCFL_;
+      }
+      /**
+       * <code>uint32 FOAFDGFNCFL = 13;</code>
+       * @param value The fOAFDGFNCFL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFOAFDGFNCFL(int value) {
+        
+        fOAFDGFNCFL_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 FOAFDGFNCFL = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFOAFDGFNCFL() {
+        
+        fOAFDGFNCFL_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int multistagePlayIndex_ ;
+      /**
+       * <code>uint32 multistage_play_index = 8;</code>
+       * @return The multistagePlayIndex.
+       */
+      @java.lang.Override
+      public int getMultistagePlayIndex() {
+        return multistagePlayIndex_;
+      }
+      /**
+       * <code>uint32 multistage_play_index = 8;</code>
+       * @param value The multistagePlayIndex to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMultistagePlayIndex(int value) {
+        
+        multistagePlayIndex_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 multistage_play_index = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMultistagePlayIndex() {
+        
+        multistagePlayIndex_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int hCDKJFMNMAM_ ;
+      /**
+       * <code>uint32 HCDKJFMNMAM = 12;</code>
+       * @return The hCDKJFMNMAM.
+       */
+      @java.lang.Override
+      public int getHCDKJFMNMAM() {
+        return hCDKJFMNMAM_;
+      }
+      /**
+       * <code>uint32 HCDKJFMNMAM = 12;</code>
+       * @param value The hCDKJFMNMAM to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHCDKJFMNMAM(int value) {
+        
+        hCDKJFMNMAM_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 HCDKJFMNMAM = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHCDKJFMNMAM() {
+        
+        hCDKJFMNMAM_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int nIOOACIEABD_ ;
+      /**
+       * <code>uint32 NIOOACIEABD = 3;</code>
+       * @return The nIOOACIEABD.
+       */
+      @java.lang.Override
+      public int getNIOOACIEABD() {
+        return nIOOACIEABD_;
+      }
+      /**
+       * <code>uint32 NIOOACIEABD = 3;</code>
+       * @param value The nIOOACIEABD to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNIOOACIEABD(int value) {
+        
+        nIOOACIEABD_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 NIOOACIEABD = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNIOOACIEABD() {
+        
+        nIOOACIEABD_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int levelId_ ;
+      /**
+       * <code>uint32 level_id = 14;</code>
+       * @return The levelId.
+       */
+      @java.lang.Override
+      public int getLevelId() {
+        return levelId_;
+      }
+      /**
+       * <code>uint32 level_id = 14;</code>
+       * @param value The levelId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevelId(int value) {
+        
+        levelId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 level_id = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevelId() {
+        
+        levelId_ = 0;
         onChanged();
         return this;
       }
@@ -878,11 +878,11 @@ public final class CoinCollectGallerySettleNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n$CoinCollectGallerySettleNotify.proto\"\247" +
-      "\001\n\036CoinCollectGallerySettleNotify\022\023\n\013EIN" +
-      "KOMCFNDN\030\005 \001(\r\022\023\n\013BOFDHHNBNCH\030\001 \001(\r\022\023\n\013J" +
-      "IEODOEOBID\030\010 \001(\r\022\020\n\010level_id\030\007 \001(\r\022\035\n\025mu" +
-      "ltistage_play_index\030\n \001(\r\022\025\n\ris_new_reco" +
-      "rd\030\017 \001(\010B\033\n\031emu.grasscutter.net.protob\006p" +
+      "\001\n\036CoinCollectGallerySettleNotify\022\025\n\ris_" +
+      "new_record\030\001 \001(\010\022\023\n\013FOAFDGFNCFL\030\r \001(\r\022\035\n" +
+      "\025multistage_play_index\030\010 \001(\r\022\023\n\013HCDKJFMN" +
+      "MAM\030\014 \001(\r\022\023\n\013NIOOACIEABD\030\003 \001(\r\022\020\n\010level_" +
+      "id\030\016 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -894,7 +894,7 @@ public final class CoinCollectGallerySettleNotifyOuterClass {
     internal_static_CoinCollectGallerySettleNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CoinCollectGallerySettleNotify_descriptor,
-        new java.lang.String[] { "EINKOMCFNDN", "BOFDHHNBNCH", "JIEODOEOBID", "LevelId", "MultistagePlayIndex", "IsNewRecord", });
+        new java.lang.String[] { "IsNewRecord", "FOAFDGFNCFL", "MultistagePlayIndex", "HCDKJFMNMAM", "NIOOACIEABD", "LevelId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,11 +19,11 @@ public final class GalleryFallScoreNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint32, .FallPlayerBrief&gt; uid_brief_map = 15;</code>
+     * <code>map&lt;uint32, .FallPlayerBrief&gt; uid_brief_map = 13;</code>
      */
     int getUidBriefMapCount();
     /**
-     * <code>map&lt;uint32, .FallPlayerBrief&gt; uid_brief_map = 15;</code>
+     * <code>map&lt;uint32, .FallPlayerBrief&gt; uid_brief_map = 13;</code>
      */
     boolean containsUidBriefMap(
         int key);
@@ -34,34 +34,34 @@ public final class GalleryFallScoreNotifyOuterClass {
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FallPlayerBriefOuterClass.FallPlayerBrief>
     getUidBriefMap();
     /**
-     * <code>map&lt;uint32, .FallPlayerBrief&gt; uid_brief_map = 15;</code>
+     * <code>map&lt;uint32, .FallPlayerBrief&gt; uid_brief_map = 13;</code>
      */
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FallPlayerBriefOuterClass.FallPlayerBrief>
     getUidBriefMapMap();
     /**
-     * <code>map&lt;uint32, .FallPlayerBrief&gt; uid_brief_map = 15;</code>
+     * <code>map&lt;uint32, .FallPlayerBrief&gt; uid_brief_map = 13;</code>
      */
 
     emu.grasscutter.net.proto.FallPlayerBriefOuterClass.FallPlayerBrief getUidBriefMapOrDefault(
         int key,
         emu.grasscutter.net.proto.FallPlayerBriefOuterClass.FallPlayerBrief defaultValue);
     /**
-     * <code>map&lt;uint32, .FallPlayerBrief&gt; uid_brief_map = 15;</code>
+     * <code>map&lt;uint32, .FallPlayerBrief&gt; uid_brief_map = 13;</code>
      */
 
     emu.grasscutter.net.proto.FallPlayerBriefOuterClass.FallPlayerBrief getUidBriefMapOrThrow(
         int key);
 
     /**
-     * <code>uint32 gallery_id = 12;</code>
+     * <code>uint32 gallery_id = 3;</code>
      * @return The galleryId.
      */
     int getGalleryId();
   }
   /**
    * <pre>
-   * Name: FABGNMBDPKE
-   * CmdId: 5534
+   * CmdId: 5548
+   * Obf: AEFOEBDICOD
    * </pre>
    *
    * Protobuf type {@code GalleryFallScoreNotify}
@@ -109,12 +109,12 @@ public final class GalleryFallScoreNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
+            case 24: {
 
               galleryId_ = input.readUInt32();
               break;
             }
-            case 122: {
+            case 106: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 uidBriefMap_ = com.google.protobuf.MapField.newMapField(
                     UidBriefMapDefaultEntryHolder.defaultEntry);
@@ -156,7 +156,7 @@ public final class GalleryFallScoreNotifyOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 15:
+        case 13:
           return internalGetUidBriefMap();
         default:
           throw new RuntimeException(
@@ -171,7 +171,7 @@ public final class GalleryFallScoreNotifyOuterClass {
               emu.grasscutter.net.proto.GalleryFallScoreNotifyOuterClass.GalleryFallScoreNotify.class, emu.grasscutter.net.proto.GalleryFallScoreNotifyOuterClass.GalleryFallScoreNotify.Builder.class);
     }
 
-    public static final int UID_BRIEF_MAP_FIELD_NUMBER = 15;
+    public static final int UID_BRIEF_MAP_FIELD_NUMBER = 13;
     private static final class UidBriefMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, emu.grasscutter.net.proto.FallPlayerBriefOuterClass.FallPlayerBrief> defaultEntry =
@@ -198,7 +198,7 @@ public final class GalleryFallScoreNotifyOuterClass {
       return internalGetUidBriefMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, .FallPlayerBrief&gt; uid_brief_map = 15;</code>
+     * <code>map&lt;uint32, .FallPlayerBrief&gt; uid_brief_map = 13;</code>
      */
 
     @java.lang.Override
@@ -216,7 +216,7 @@ public final class GalleryFallScoreNotifyOuterClass {
       return getUidBriefMapMap();
     }
     /**
-     * <code>map&lt;uint32, .FallPlayerBrief&gt; uid_brief_map = 15;</code>
+     * <code>map&lt;uint32, .FallPlayerBrief&gt; uid_brief_map = 13;</code>
      */
     @java.lang.Override
 
@@ -224,7 +224,7 @@ public final class GalleryFallScoreNotifyOuterClass {
       return internalGetUidBriefMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, .FallPlayerBrief&gt; uid_brief_map = 15;</code>
+     * <code>map&lt;uint32, .FallPlayerBrief&gt; uid_brief_map = 13;</code>
      */
     @java.lang.Override
 
@@ -237,7 +237,7 @@ public final class GalleryFallScoreNotifyOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, .FallPlayerBrief&gt; uid_brief_map = 15;</code>
+     * <code>map&lt;uint32, .FallPlayerBrief&gt; uid_brief_map = 13;</code>
      */
     @java.lang.Override
 
@@ -252,10 +252,10 @@ public final class GalleryFallScoreNotifyOuterClass {
       return map.get(key);
     }
 
-    public static final int GALLERY_ID_FIELD_NUMBER = 12;
+    public static final int GALLERY_ID_FIELD_NUMBER = 3;
     private int galleryId_;
     /**
-     * <code>uint32 gallery_id = 12;</code>
+     * <code>uint32 gallery_id = 3;</code>
      * @return The galleryId.
      */
     @java.lang.Override
@@ -278,14 +278,14 @@ public final class GalleryFallScoreNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (galleryId_ != 0) {
-        output.writeUInt32(12, galleryId_);
+        output.writeUInt32(3, galleryId_);
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetUidBriefMap(),
           UidBriefMapDefaultEntryHolder.defaultEntry,
-          15);
+          13);
       unknownFields.writeTo(output);
     }
 
@@ -297,7 +297,7 @@ public final class GalleryFallScoreNotifyOuterClass {
       size = 0;
       if (galleryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, galleryId_);
+          .computeUInt32Size(3, galleryId_);
       }
       for (java.util.Map.Entry<java.lang.Integer, emu.grasscutter.net.proto.FallPlayerBriefOuterClass.FallPlayerBrief> entry
            : internalGetUidBriefMap().getMap().entrySet()) {
@@ -307,7 +307,7 @@ public final class GalleryFallScoreNotifyOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(15, uidBriefMap__);
+            .computeMessageSize(13, uidBriefMap__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -442,8 +442,8 @@ public final class GalleryFallScoreNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: FABGNMBDPKE
-     * CmdId: 5534
+     * CmdId: 5548
+     * Obf: AEFOEBDICOD
      * </pre>
      *
      * Protobuf type {@code GalleryFallScoreNotify}
@@ -461,7 +461,7 @@ public final class GalleryFallScoreNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 15:
+          case 13:
             return internalGetUidBriefMap();
           default:
             throw new RuntimeException(
@@ -472,7 +472,7 @@ public final class GalleryFallScoreNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 15:
+          case 13:
             return internalGetMutableUidBriefMap();
           default:
             throw new RuntimeException(
@@ -648,7 +648,7 @@ public final class GalleryFallScoreNotifyOuterClass {
         return internalGetUidBriefMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, .FallPlayerBrief&gt; uid_brief_map = 15;</code>
+       * <code>map&lt;uint32, .FallPlayerBrief&gt; uid_brief_map = 13;</code>
        */
 
       @java.lang.Override
@@ -666,7 +666,7 @@ public final class GalleryFallScoreNotifyOuterClass {
         return getUidBriefMapMap();
       }
       /**
-       * <code>map&lt;uint32, .FallPlayerBrief&gt; uid_brief_map = 15;</code>
+       * <code>map&lt;uint32, .FallPlayerBrief&gt; uid_brief_map = 13;</code>
        */
       @java.lang.Override
 
@@ -674,7 +674,7 @@ public final class GalleryFallScoreNotifyOuterClass {
         return internalGetUidBriefMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, .FallPlayerBrief&gt; uid_brief_map = 15;</code>
+       * <code>map&lt;uint32, .FallPlayerBrief&gt; uid_brief_map = 13;</code>
        */
       @java.lang.Override
 
@@ -687,7 +687,7 @@ public final class GalleryFallScoreNotifyOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, .FallPlayerBrief&gt; uid_brief_map = 15;</code>
+       * <code>map&lt;uint32, .FallPlayerBrief&gt; uid_brief_map = 13;</code>
        */
       @java.lang.Override
 
@@ -708,7 +708,7 @@ public final class GalleryFallScoreNotifyOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .FallPlayerBrief&gt; uid_brief_map = 15;</code>
+       * <code>map&lt;uint32, .FallPlayerBrief&gt; uid_brief_map = 13;</code>
        */
 
       public Builder removeUidBriefMap(
@@ -727,7 +727,7 @@ public final class GalleryFallScoreNotifyOuterClass {
         return internalGetMutableUidBriefMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, .FallPlayerBrief&gt; uid_brief_map = 15;</code>
+       * <code>map&lt;uint32, .FallPlayerBrief&gt; uid_brief_map = 13;</code>
        */
       public Builder putUidBriefMap(
           int key,
@@ -739,7 +739,7 @@ public final class GalleryFallScoreNotifyOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .FallPlayerBrief&gt; uid_brief_map = 15;</code>
+       * <code>map&lt;uint32, .FallPlayerBrief&gt; uid_brief_map = 13;</code>
        */
 
       public Builder putAllUidBriefMap(
@@ -751,7 +751,7 @@ public final class GalleryFallScoreNotifyOuterClass {
 
       private int galleryId_ ;
       /**
-       * <code>uint32 gallery_id = 12;</code>
+       * <code>uint32 gallery_id = 3;</code>
        * @return The galleryId.
        */
       @java.lang.Override
@@ -759,7 +759,7 @@ public final class GalleryFallScoreNotifyOuterClass {
         return galleryId_;
       }
       /**
-       * <code>uint32 gallery_id = 12;</code>
+       * <code>uint32 gallery_id = 3;</code>
        * @param value The galleryId to set.
        * @return This builder for chaining.
        */
@@ -770,7 +770,7 @@ public final class GalleryFallScoreNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gallery_id = 12;</code>
+       * <code>uint32 gallery_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearGalleryId() {
@@ -853,9 +853,9 @@ public final class GalleryFallScoreNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\034GalleryFallScoreNotify.proto\032\025FallPlay" +
       "erBrief.proto\"\263\001\n\026GalleryFallScoreNotify" +
-      "\022?\n\ruid_brief_map\030\017 \003(\0132(.GalleryFallSco" +
+      "\022?\n\ruid_brief_map\030\r \003(\0132(.GalleryFallSco" +
       "reNotify.UidBriefMapEntry\022\022\n\ngallery_id\030" +
-      "\014 \001(\r\032D\n\020UidBriefMapEntry\022\013\n\003key\030\001 \001(\r\022\037" +
+      "\003 \001(\r\032D\n\020UidBriefMapEntry\022\013\n\003key\030\001 \001(\r\022\037" +
       "\n\005value\030\002 \001(\0132\020.FallPlayerBrief:\0028\001B\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };

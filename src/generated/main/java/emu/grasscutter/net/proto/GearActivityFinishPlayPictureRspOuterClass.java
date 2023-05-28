@@ -19,21 +19,21 @@ public final class GearActivityFinishPlayPictureRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_success = 3;</code>
+     * <code>bool is_success = 5;</code>
      * @return The isSuccess.
      */
     boolean getIsSuccess();
 
     /**
-     * <code>int32 retcode = 10;</code>
+     * <code>int32 retcode = 3;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * Name: EDNCCAKIHMO
-   * CmdId: 23580
+   * CmdId: 23286
+   * Obf: PLHHLGIGKGI
    * </pre>
    *
    * Protobuf type {@code GearActivityFinishPlayPictureRsp}
@@ -82,12 +82,12 @@ public final class GearActivityFinishPlayPictureRspOuterClass {
               break;
             case 24: {
 
-              isSuccess_ = input.readBool();
+              retcode_ = input.readInt32();
               break;
             }
-            case 80: {
+            case 40: {
 
-              retcode_ = input.readInt32();
+              isSuccess_ = input.readBool();
               break;
             }
             default: {
@@ -122,10 +122,10 @@ public final class GearActivityFinishPlayPictureRspOuterClass {
               emu.grasscutter.net.proto.GearActivityFinishPlayPictureRspOuterClass.GearActivityFinishPlayPictureRsp.class, emu.grasscutter.net.proto.GearActivityFinishPlayPictureRspOuterClass.GearActivityFinishPlayPictureRsp.Builder.class);
     }
 
-    public static final int IS_SUCCESS_FIELD_NUMBER = 3;
+    public static final int IS_SUCCESS_FIELD_NUMBER = 5;
     private boolean isSuccess_;
     /**
-     * <code>bool is_success = 3;</code>
+     * <code>bool is_success = 5;</code>
      * @return The isSuccess.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class GearActivityFinishPlayPictureRspOuterClass {
       return isSuccess_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 10;
+    public static final int RETCODE_FIELD_NUMBER = 3;
     private int retcode_;
     /**
-     * <code>int32 retcode = 10;</code>
+     * <code>int32 retcode = 3;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -158,11 +158,11 @@ public final class GearActivityFinishPlayPictureRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isSuccess_ != false) {
-        output.writeBool(3, isSuccess_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(10, retcode_);
+        output.writeInt32(3, retcode_);
+      }
+      if (isSuccess_ != false) {
+        output.writeBool(5, isSuccess_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class GearActivityFinishPlayPictureRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isSuccess_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isSuccess_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(10, retcode_);
+          .computeInt32Size(3, retcode_);
+      }
+      if (isSuccess_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(5, isSuccess_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,8 +313,8 @@ public final class GearActivityFinishPlayPictureRspOuterClass {
     }
     /**
      * <pre>
-     * Name: EDNCCAKIHMO
-     * CmdId: 23580
+     * CmdId: 23286
+     * Obf: PLHHLGIGKGI
      * </pre>
      *
      * Protobuf type {@code GearActivityFinishPlayPictureRsp}
@@ -471,7 +471,7 @@ public final class GearActivityFinishPlayPictureRspOuterClass {
 
       private boolean isSuccess_ ;
       /**
-       * <code>bool is_success = 3;</code>
+       * <code>bool is_success = 5;</code>
        * @return The isSuccess.
        */
       @java.lang.Override
@@ -479,7 +479,7 @@ public final class GearActivityFinishPlayPictureRspOuterClass {
         return isSuccess_;
       }
       /**
-       * <code>bool is_success = 3;</code>
+       * <code>bool is_success = 5;</code>
        * @param value The isSuccess to set.
        * @return This builder for chaining.
        */
@@ -490,7 +490,7 @@ public final class GearActivityFinishPlayPictureRspOuterClass {
         return this;
       }
       /**
-       * <code>bool is_success = 3;</code>
+       * <code>bool is_success = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsSuccess() {
@@ -502,7 +502,7 @@ public final class GearActivityFinishPlayPictureRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 10;</code>
+       * <code>int32 retcode = 3;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -510,7 +510,7 @@ public final class GearActivityFinishPlayPictureRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 10;</code>
+       * <code>int32 retcode = 3;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -521,7 +521,7 @@ public final class GearActivityFinishPlayPictureRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 10;</code>
+       * <code>int32 retcode = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -599,7 +599,7 @@ public final class GearActivityFinishPlayPictureRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n&GearActivityFinishPlayPictureRsp.proto" +
       "\"G\n GearActivityFinishPlayPictureRsp\022\022\n\n" +
-      "is_success\030\003 \001(\010\022\017\n\007retcode\030\n \001(\005B\033\n\031emu" +
+      "is_success\030\005 \001(\010\022\017\n\007retcode\030\003 \001(\005B\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

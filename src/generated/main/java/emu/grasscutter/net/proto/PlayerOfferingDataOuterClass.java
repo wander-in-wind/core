@@ -19,49 +19,20 @@ public final class PlayerOfferingDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_new_max_level = 1;</code>
-     * @return The isNewMaxLevel.
+     * <code>uint32 IGHMDGHKADF = 8;</code>
+     * @return The iGHMDGHKADF.
      */
-    boolean getIsNewMaxLevel();
+    int getIGHMDGHKADF();
 
     /**
-     * <code>repeated uint32 taken_level_reward_list = 3;</code>
-     * @return A list containing the takenLevelRewardList.
+     * <code>bool CJNBGNOIIJL = 4;</code>
+     * @return The cJNBGNOIIJL.
      */
-    java.util.List<java.lang.Integer> getTakenLevelRewardListList();
-    /**
-     * <code>repeated uint32 taken_level_reward_list = 3;</code>
-     * @return The count of takenLevelRewardList.
-     */
-    int getTakenLevelRewardListCount();
-    /**
-     * <code>repeated uint32 taken_level_reward_list = 3;</code>
-     * @param index The index of the element to return.
-     * @return The takenLevelRewardList at the given index.
-     */
-    int getTakenLevelRewardList(int index);
-
-    /**
-     * <code>bool is_first_interact = 14;</code>
-     * @return The isFirstInteract.
-     */
-    boolean getIsFirstInteract();
-
-    /**
-     * <code>uint32 level = 15;</code>
-     * @return The level.
-     */
-    int getLevel();
-
-    /**
-     * <code>uint32 offering_id = 5;</code>
-     * @return The offeringId.
-     */
-    int getOfferingId();
+    boolean getCJNBGNOIIJL();
   }
   /**
    * <pre>
-   * Name: DPLMHBBLJDM
+   * Obf: GEFPJNAPGJK
    * </pre>
    *
    * Protobuf type {@code PlayerOfferingData}
@@ -76,7 +47,6 @@ public final class PlayerOfferingDataOuterClass {
       super(builder);
     }
     private PlayerOfferingData() {
-      takenLevelRewardList_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -99,7 +69,6 @@ public final class PlayerOfferingDataOuterClass {
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
-      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -110,45 +79,14 @@ public final class PlayerOfferingDataOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 32: {
 
-              isNewMaxLevel_ = input.readBool();
+              cJNBGNOIIJL_ = input.readBool();
               break;
             }
-            case 24: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                takenLevelRewardList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              takenLevelRewardList_.addInt(input.readUInt32());
-              break;
-            }
-            case 26: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                takenLevelRewardList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                takenLevelRewardList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 40: {
+            case 64: {
 
-              offeringId_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
-              isFirstInteract_ = input.readBool();
-              break;
-            }
-            case 120: {
-
-              level_ = input.readUInt32();
+              iGHMDGHKADF_ = input.readUInt32();
               break;
             }
             default: {
@@ -166,9 +104,6 @@ public final class PlayerOfferingDataOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          takenLevelRewardList_.makeImmutable(); // C
-        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
@@ -186,76 +121,26 @@ public final class PlayerOfferingDataOuterClass {
               emu.grasscutter.net.proto.PlayerOfferingDataOuterClass.PlayerOfferingData.class, emu.grasscutter.net.proto.PlayerOfferingDataOuterClass.PlayerOfferingData.Builder.class);
     }
 
-    public static final int IS_NEW_MAX_LEVEL_FIELD_NUMBER = 1;
-    private boolean isNewMaxLevel_;
+    public static final int IGHMDGHKADF_FIELD_NUMBER = 8;
+    private int iGHMDGHKADF_;
     /**
-     * <code>bool is_new_max_level = 1;</code>
-     * @return The isNewMaxLevel.
+     * <code>uint32 IGHMDGHKADF = 8;</code>
+     * @return The iGHMDGHKADF.
      */
     @java.lang.Override
-    public boolean getIsNewMaxLevel() {
-      return isNewMaxLevel_;
+    public int getIGHMDGHKADF() {
+      return iGHMDGHKADF_;
     }
 
-    public static final int TAKEN_LEVEL_REWARD_LIST_FIELD_NUMBER = 3;
-    private com.google.protobuf.Internal.IntList takenLevelRewardList_;
+    public static final int CJNBGNOIIJL_FIELD_NUMBER = 4;
+    private boolean cJNBGNOIIJL_;
     /**
-     * <code>repeated uint32 taken_level_reward_list = 3;</code>
-     * @return A list containing the takenLevelRewardList.
+     * <code>bool CJNBGNOIIJL = 4;</code>
+     * @return The cJNBGNOIIJL.
      */
     @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getTakenLevelRewardListList() {
-      return takenLevelRewardList_;
-    }
-    /**
-     * <code>repeated uint32 taken_level_reward_list = 3;</code>
-     * @return The count of takenLevelRewardList.
-     */
-    public int getTakenLevelRewardListCount() {
-      return takenLevelRewardList_.size();
-    }
-    /**
-     * <code>repeated uint32 taken_level_reward_list = 3;</code>
-     * @param index The index of the element to return.
-     * @return The takenLevelRewardList at the given index.
-     */
-    public int getTakenLevelRewardList(int index) {
-      return takenLevelRewardList_.getInt(index);
-    }
-    private int takenLevelRewardListMemoizedSerializedSize = -1;
-
-    public static final int IS_FIRST_INTERACT_FIELD_NUMBER = 14;
-    private boolean isFirstInteract_;
-    /**
-     * <code>bool is_first_interact = 14;</code>
-     * @return The isFirstInteract.
-     */
-    @java.lang.Override
-    public boolean getIsFirstInteract() {
-      return isFirstInteract_;
-    }
-
-    public static final int LEVEL_FIELD_NUMBER = 15;
-    private int level_;
-    /**
-     * <code>uint32 level = 15;</code>
-     * @return The level.
-     */
-    @java.lang.Override
-    public int getLevel() {
-      return level_;
-    }
-
-    public static final int OFFERING_ID_FIELD_NUMBER = 5;
-    private int offeringId_;
-    /**
-     * <code>uint32 offering_id = 5;</code>
-     * @return The offeringId.
-     */
-    @java.lang.Override
-    public int getOfferingId() {
-      return offeringId_;
+    public boolean getCJNBGNOIIJL() {
+      return cJNBGNOIIJL_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -272,25 +157,11 @@ public final class PlayerOfferingDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      getSerializedSize();
-      if (isNewMaxLevel_ != false) {
-        output.writeBool(1, isNewMaxLevel_);
+      if (cJNBGNOIIJL_ != false) {
+        output.writeBool(4, cJNBGNOIIJL_);
       }
-      if (getTakenLevelRewardListList().size() > 0) {
-        output.writeUInt32NoTag(26);
-        output.writeUInt32NoTag(takenLevelRewardListMemoizedSerializedSize);
-      }
-      for (int i = 0; i < takenLevelRewardList_.size(); i++) {
-        output.writeUInt32NoTag(takenLevelRewardList_.getInt(i));
-      }
-      if (offeringId_ != 0) {
-        output.writeUInt32(5, offeringId_);
-      }
-      if (isFirstInteract_ != false) {
-        output.writeBool(14, isFirstInteract_);
-      }
-      if (level_ != 0) {
-        output.writeUInt32(15, level_);
+      if (iGHMDGHKADF_ != 0) {
+        output.writeUInt32(8, iGHMDGHKADF_);
       }
       unknownFields.writeTo(output);
     }
@@ -301,35 +172,13 @@ public final class PlayerOfferingDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isNewMaxLevel_ != false) {
+      if (cJNBGNOIIJL_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, isNewMaxLevel_);
+          .computeBoolSize(4, cJNBGNOIIJL_);
       }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < takenLevelRewardList_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(takenLevelRewardList_.getInt(i));
-        }
-        size += dataSize;
-        if (!getTakenLevelRewardListList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        takenLevelRewardListMemoizedSerializedSize = dataSize;
-      }
-      if (offeringId_ != 0) {
+      if (iGHMDGHKADF_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, offeringId_);
-      }
-      if (isFirstInteract_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, isFirstInteract_);
-      }
-      if (level_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, level_);
+          .computeUInt32Size(8, iGHMDGHKADF_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -346,16 +195,10 @@ public final class PlayerOfferingDataOuterClass {
       }
       emu.grasscutter.net.proto.PlayerOfferingDataOuterClass.PlayerOfferingData other = (emu.grasscutter.net.proto.PlayerOfferingDataOuterClass.PlayerOfferingData) obj;
 
-      if (getIsNewMaxLevel()
-          != other.getIsNewMaxLevel()) return false;
-      if (!getTakenLevelRewardListList()
-          .equals(other.getTakenLevelRewardListList())) return false;
-      if (getIsFirstInteract()
-          != other.getIsFirstInteract()) return false;
-      if (getLevel()
-          != other.getLevel()) return false;
-      if (getOfferingId()
-          != other.getOfferingId()) return false;
+      if (getIGHMDGHKADF()
+          != other.getIGHMDGHKADF()) return false;
+      if (getCJNBGNOIIJL()
+          != other.getCJNBGNOIIJL()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -367,20 +210,11 @@ public final class PlayerOfferingDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_NEW_MAX_LEVEL_FIELD_NUMBER;
+      hash = (37 * hash) + IGHMDGHKADF_FIELD_NUMBER;
+      hash = (53 * hash) + getIGHMDGHKADF();
+      hash = (37 * hash) + CJNBGNOIIJL_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsNewMaxLevel());
-      if (getTakenLevelRewardListCount() > 0) {
-        hash = (37 * hash) + TAKEN_LEVEL_REWARD_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getTakenLevelRewardListList().hashCode();
-      }
-      hash = (37 * hash) + IS_FIRST_INTERACT_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsFirstInteract());
-      hash = (37 * hash) + LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getLevel();
-      hash = (37 * hash) + OFFERING_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getOfferingId();
+          getCJNBGNOIIJL());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -478,7 +312,7 @@ public final class PlayerOfferingDataOuterClass {
     }
     /**
      * <pre>
-     * Name: DPLMHBBLJDM
+     * Obf: GEFPJNAPGJK
      * </pre>
      *
      * Protobuf type {@code PlayerOfferingData}
@@ -518,15 +352,9 @@ public final class PlayerOfferingDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isNewMaxLevel_ = false;
+        iGHMDGHKADF_ = 0;
 
-        takenLevelRewardList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        isFirstInteract_ = false;
-
-        level_ = 0;
-
-        offeringId_ = 0;
+        cJNBGNOIIJL_ = false;
 
         return this;
       }
@@ -554,16 +382,8 @@ public final class PlayerOfferingDataOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PlayerOfferingDataOuterClass.PlayerOfferingData buildPartial() {
         emu.grasscutter.net.proto.PlayerOfferingDataOuterClass.PlayerOfferingData result = new emu.grasscutter.net.proto.PlayerOfferingDataOuterClass.PlayerOfferingData(this);
-        int from_bitField0_ = bitField0_;
-        result.isNewMaxLevel_ = isNewMaxLevel_;
-        if (((bitField0_ & 0x00000001) != 0)) {
-          takenLevelRewardList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        }
-        result.takenLevelRewardList_ = takenLevelRewardList_;
-        result.isFirstInteract_ = isFirstInteract_;
-        result.level_ = level_;
-        result.offeringId_ = offeringId_;
+        result.iGHMDGHKADF_ = iGHMDGHKADF_;
+        result.cJNBGNOIIJL_ = cJNBGNOIIJL_;
         onBuilt();
         return result;
       }
@@ -612,27 +432,11 @@ public final class PlayerOfferingDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PlayerOfferingDataOuterClass.PlayerOfferingData other) {
         if (other == emu.grasscutter.net.proto.PlayerOfferingDataOuterClass.PlayerOfferingData.getDefaultInstance()) return this;
-        if (other.getIsNewMaxLevel() != false) {
-          setIsNewMaxLevel(other.getIsNewMaxLevel());
+        if (other.getIGHMDGHKADF() != 0) {
+          setIGHMDGHKADF(other.getIGHMDGHKADF());
         }
-        if (!other.takenLevelRewardList_.isEmpty()) {
-          if (takenLevelRewardList_.isEmpty()) {
-            takenLevelRewardList_ = other.takenLevelRewardList_;
-            bitField0_ = (bitField0_ & ~0x00000001);
-          } else {
-            ensureTakenLevelRewardListIsMutable();
-            takenLevelRewardList_.addAll(other.takenLevelRewardList_);
-          }
-          onChanged();
-        }
-        if (other.getIsFirstInteract() != false) {
-          setIsFirstInteract(other.getIsFirstInteract());
-        }
-        if (other.getLevel() != 0) {
-          setLevel(other.getLevel());
-        }
-        if (other.getOfferingId() != 0) {
-          setOfferingId(other.getOfferingId());
+        if (other.getCJNBGNOIIJL() != false) {
+          setCJNBGNOIIJL(other.getCJNBGNOIIJL());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -662,207 +466,65 @@ public final class PlayerOfferingDataOuterClass {
         }
         return this;
       }
-      private int bitField0_;
 
-      private boolean isNewMaxLevel_ ;
+      private int iGHMDGHKADF_ ;
       /**
-       * <code>bool is_new_max_level = 1;</code>
-       * @return The isNewMaxLevel.
+       * <code>uint32 IGHMDGHKADF = 8;</code>
+       * @return The iGHMDGHKADF.
        */
       @java.lang.Override
-      public boolean getIsNewMaxLevel() {
-        return isNewMaxLevel_;
+      public int getIGHMDGHKADF() {
+        return iGHMDGHKADF_;
       }
       /**
-       * <code>bool is_new_max_level = 1;</code>
-       * @param value The isNewMaxLevel to set.
+       * <code>uint32 IGHMDGHKADF = 8;</code>
+       * @param value The iGHMDGHKADF to set.
        * @return This builder for chaining.
        */
-      public Builder setIsNewMaxLevel(boolean value) {
+      public Builder setIGHMDGHKADF(int value) {
         
-        isNewMaxLevel_ = value;
+        iGHMDGHKADF_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_new_max_level = 1;</code>
+       * <code>uint32 IGHMDGHKADF = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsNewMaxLevel() {
+      public Builder clearIGHMDGHKADF() {
         
-        isNewMaxLevel_ = false;
+        iGHMDGHKADF_ = 0;
         onChanged();
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList takenLevelRewardList_ = emptyIntList();
-      private void ensureTakenLevelRewardListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          takenLevelRewardList_ = mutableCopy(takenLevelRewardList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
+      private boolean cJNBGNOIIJL_ ;
       /**
-       * <code>repeated uint32 taken_level_reward_list = 3;</code>
-       * @return A list containing the takenLevelRewardList.
-       */
-      public java.util.List<java.lang.Integer>
-          getTakenLevelRewardListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(takenLevelRewardList_) : takenLevelRewardList_;
-      }
-      /**
-       * <code>repeated uint32 taken_level_reward_list = 3;</code>
-       * @return The count of takenLevelRewardList.
-       */
-      public int getTakenLevelRewardListCount() {
-        return takenLevelRewardList_.size();
-      }
-      /**
-       * <code>repeated uint32 taken_level_reward_list = 3;</code>
-       * @param index The index of the element to return.
-       * @return The takenLevelRewardList at the given index.
-       */
-      public int getTakenLevelRewardList(int index) {
-        return takenLevelRewardList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 taken_level_reward_list = 3;</code>
-       * @param index The index to set the value at.
-       * @param value The takenLevelRewardList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTakenLevelRewardList(
-          int index, int value) {
-        ensureTakenLevelRewardListIsMutable();
-        takenLevelRewardList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 taken_level_reward_list = 3;</code>
-       * @param value The takenLevelRewardList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addTakenLevelRewardList(int value) {
-        ensureTakenLevelRewardListIsMutable();
-        takenLevelRewardList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 taken_level_reward_list = 3;</code>
-       * @param values The takenLevelRewardList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllTakenLevelRewardList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureTakenLevelRewardListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, takenLevelRewardList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 taken_level_reward_list = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTakenLevelRewardList() {
-        takenLevelRewardList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private boolean isFirstInteract_ ;
-      /**
-       * <code>bool is_first_interact = 14;</code>
-       * @return The isFirstInteract.
+       * <code>bool CJNBGNOIIJL = 4;</code>
+       * @return The cJNBGNOIIJL.
        */
       @java.lang.Override
-      public boolean getIsFirstInteract() {
-        return isFirstInteract_;
+      public boolean getCJNBGNOIIJL() {
+        return cJNBGNOIIJL_;
       }
       /**
-       * <code>bool is_first_interact = 14;</code>
-       * @param value The isFirstInteract to set.
+       * <code>bool CJNBGNOIIJL = 4;</code>
+       * @param value The cJNBGNOIIJL to set.
        * @return This builder for chaining.
        */
-      public Builder setIsFirstInteract(boolean value) {
+      public Builder setCJNBGNOIIJL(boolean value) {
         
-        isFirstInteract_ = value;
+        cJNBGNOIIJL_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_first_interact = 14;</code>
+       * <code>bool CJNBGNOIIJL = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsFirstInteract() {
+      public Builder clearCJNBGNOIIJL() {
         
-        isFirstInteract_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int level_ ;
-      /**
-       * <code>uint32 level = 15;</code>
-       * @return The level.
-       */
-      @java.lang.Override
-      public int getLevel() {
-        return level_;
-      }
-      /**
-       * <code>uint32 level = 15;</code>
-       * @param value The level to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevel(int value) {
-        
-        level_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevel() {
-        
-        level_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int offeringId_ ;
-      /**
-       * <code>uint32 offering_id = 5;</code>
-       * @return The offeringId.
-       */
-      @java.lang.Override
-      public int getOfferingId() {
-        return offeringId_;
-      }
-      /**
-       * <code>uint32 offering_id = 5;</code>
-       * @param value The offeringId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOfferingId(int value) {
-        
-        offeringId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 offering_id = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOfferingId() {
-        
-        offeringId_ = 0;
+        cJNBGNOIIJL_ = false;
         onChanged();
         return this;
       }
@@ -933,12 +595,10 @@ public final class PlayerOfferingDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\030PlayerOfferingData.proto\"\216\001\n\022PlayerOff" +
-      "eringData\022\030\n\020is_new_max_level\030\001 \001(\010\022\037\n\027t" +
-      "aken_level_reward_list\030\003 \003(\r\022\031\n\021is_first" +
-      "_interact\030\016 \001(\010\022\r\n\005level\030\017 \001(\r\022\023\n\013offeri" +
-      "ng_id\030\005 \001(\rB\033\n\031emu.grasscutter.net.proto" +
-      "b\006proto3"
+      "\n\030PlayerOfferingData.proto\">\n\022PlayerOffe" +
+      "ringData\022\023\n\013IGHMDGHKADF\030\010 \001(\r\022\023\n\013CJNBGNO" +
+      "IIJL\030\004 \001(\010B\033\n\031emu.grasscutter.net.protob" +
+      "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -949,7 +609,7 @@ public final class PlayerOfferingDataOuterClass {
     internal_static_PlayerOfferingData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerOfferingData_descriptor,
-        new java.lang.String[] { "IsNewMaxLevel", "TakenLevelRewardList", "IsFirstInteract", "Level", "OfferingId", });
+        new java.lang.String[] { "IGHMDGHKADF", "CJNBGNOIIJL", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -20,8 +20,8 @@ public final class GetRogueDairyRepairInfoReqOuterClass {
   }
   /**
    * <pre>
-   * Name: BEFOOABLOFB
-   * CmdId: 8633
+   * CmdId: 8441
+   * Obf: CIECJNBHHEC
    * </pre>
    *
    * Protobuf type {@code GetRogueDairyRepairInfoReq}
@@ -246,8 +246,8 @@ public final class GetRogueDairyRepairInfoReqOuterClass {
     }
     /**
      * <pre>
-     * Name: BEFOOABLOFB
-     * CmdId: 8633
+     * CmdId: 8441
+     * Obf: CIECJNBHHEC
      * </pre>
      *
      * Protobuf type {@code GetRogueDairyRepairInfoReq}

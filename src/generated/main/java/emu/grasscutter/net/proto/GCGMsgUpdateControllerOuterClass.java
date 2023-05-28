@@ -19,52 +19,32 @@ public final class GCGMsgUpdateControllerOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *PAAKNMDNEGJ snooswap
-     * </pre>
-     *
-     * <code>repeated .Uint32Pair allow_controller_map = 5;</code>
+     * <code>repeated .Uint32Pair allow_controller_map = 15;</code>
      */
     java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> 
         getAllowControllerMapList();
     /**
-     * <pre>
-     *PAAKNMDNEGJ snooswap
-     * </pre>
-     *
-     * <code>repeated .Uint32Pair allow_controller_map = 5;</code>
+     * <code>repeated .Uint32Pair allow_controller_map = 15;</code>
      */
     emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getAllowControllerMap(int index);
     /**
-     * <pre>
-     *PAAKNMDNEGJ snooswap
-     * </pre>
-     *
-     * <code>repeated .Uint32Pair allow_controller_map = 5;</code>
+     * <code>repeated .Uint32Pair allow_controller_map = 15;</code>
      */
     int getAllowControllerMapCount();
     /**
-     * <pre>
-     *PAAKNMDNEGJ snooswap
-     * </pre>
-     *
-     * <code>repeated .Uint32Pair allow_controller_map = 5;</code>
+     * <code>repeated .Uint32Pair allow_controller_map = 15;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
         getAllowControllerMapOrBuilderList();
     /**
-     * <pre>
-     *PAAKNMDNEGJ snooswap
-     * </pre>
-     *
-     * <code>repeated .Uint32Pair allow_controller_map = 5;</code>
+     * <code>repeated .Uint32Pair allow_controller_map = 15;</code>
      */
     emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getAllowControllerMapOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * Name: GIHCLFFDKLE
+   * Obf: BJHAAKKBECG
    * </pre>
    *
    * Protobuf type {@code GCGMsgUpdateController}
@@ -113,7 +93,7 @@ public final class GCGMsgUpdateControllerOuterClass {
             case 0:
               done = true;
               break;
-            case 42: {
+            case 122: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 allowControllerMap_ = new java.util.ArrayList<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair>();
                 mutable_bitField0_ |= 0x00000001;
@@ -157,25 +137,17 @@ public final class GCGMsgUpdateControllerOuterClass {
               emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController.class, emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController.Builder.class);
     }
 
-    public static final int ALLOW_CONTROLLER_MAP_FIELD_NUMBER = 5;
+    public static final int ALLOW_CONTROLLER_MAP_FIELD_NUMBER = 15;
     private java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> allowControllerMap_;
     /**
-     * <pre>
-     *PAAKNMDNEGJ snooswap
-     * </pre>
-     *
-     * <code>repeated .Uint32Pair allow_controller_map = 5;</code>
+     * <code>repeated .Uint32Pair allow_controller_map = 15;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> getAllowControllerMapList() {
       return allowControllerMap_;
     }
     /**
-     * <pre>
-     *PAAKNMDNEGJ snooswap
-     * </pre>
-     *
-     * <code>repeated .Uint32Pair allow_controller_map = 5;</code>
+     * <code>repeated .Uint32Pair allow_controller_map = 15;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
@@ -183,33 +155,21 @@ public final class GCGMsgUpdateControllerOuterClass {
       return allowControllerMap_;
     }
     /**
-     * <pre>
-     *PAAKNMDNEGJ snooswap
-     * </pre>
-     *
-     * <code>repeated .Uint32Pair allow_controller_map = 5;</code>
+     * <code>repeated .Uint32Pair allow_controller_map = 15;</code>
      */
     @java.lang.Override
     public int getAllowControllerMapCount() {
       return allowControllerMap_.size();
     }
     /**
-     * <pre>
-     *PAAKNMDNEGJ snooswap
-     * </pre>
-     *
-     * <code>repeated .Uint32Pair allow_controller_map = 5;</code>
+     * <code>repeated .Uint32Pair allow_controller_map = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getAllowControllerMap(int index) {
       return allowControllerMap_.get(index);
     }
     /**
-     * <pre>
-     *PAAKNMDNEGJ snooswap
-     * </pre>
-     *
-     * <code>repeated .Uint32Pair allow_controller_map = 5;</code>
+     * <code>repeated .Uint32Pair allow_controller_map = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getAllowControllerMapOrBuilder(
@@ -232,7 +192,7 @@ public final class GCGMsgUpdateControllerOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < allowControllerMap_.size(); i++) {
-        output.writeMessage(5, allowControllerMap_.get(i));
+        output.writeMessage(15, allowControllerMap_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -245,7 +205,7 @@ public final class GCGMsgUpdateControllerOuterClass {
       size = 0;
       for (int i = 0; i < allowControllerMap_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, allowControllerMap_.get(i));
+          .computeMessageSize(15, allowControllerMap_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -376,7 +336,7 @@ public final class GCGMsgUpdateControllerOuterClass {
     }
     /**
      * <pre>
-     * Name: GIHCLFFDKLE
+     * Obf: BJHAAKKBECG
      * </pre>
      *
      * Protobuf type {@code GCGMsgUpdateController}
@@ -576,11 +536,7 @@ public final class GCGMsgUpdateControllerOuterClass {
           emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> allowControllerMapBuilder_;
 
       /**
-       * <pre>
-       *PAAKNMDNEGJ snooswap
-       * </pre>
-       *
-       * <code>repeated .Uint32Pair allow_controller_map = 5;</code>
+       * <code>repeated .Uint32Pair allow_controller_map = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> getAllowControllerMapList() {
         if (allowControllerMapBuilder_ == null) {
@@ -590,11 +546,7 @@ public final class GCGMsgUpdateControllerOuterClass {
         }
       }
       /**
-       * <pre>
-       *PAAKNMDNEGJ snooswap
-       * </pre>
-       *
-       * <code>repeated .Uint32Pair allow_controller_map = 5;</code>
+       * <code>repeated .Uint32Pair allow_controller_map = 15;</code>
        */
       public int getAllowControllerMapCount() {
         if (allowControllerMapBuilder_ == null) {
@@ -604,11 +556,7 @@ public final class GCGMsgUpdateControllerOuterClass {
         }
       }
       /**
-       * <pre>
-       *PAAKNMDNEGJ snooswap
-       * </pre>
-       *
-       * <code>repeated .Uint32Pair allow_controller_map = 5;</code>
+       * <code>repeated .Uint32Pair allow_controller_map = 15;</code>
        */
       public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getAllowControllerMap(int index) {
         if (allowControllerMapBuilder_ == null) {
@@ -618,11 +566,7 @@ public final class GCGMsgUpdateControllerOuterClass {
         }
       }
       /**
-       * <pre>
-       *PAAKNMDNEGJ snooswap
-       * </pre>
-       *
-       * <code>repeated .Uint32Pair allow_controller_map = 5;</code>
+       * <code>repeated .Uint32Pair allow_controller_map = 15;</code>
        */
       public Builder setAllowControllerMap(
           int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
@@ -639,11 +583,7 @@ public final class GCGMsgUpdateControllerOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *PAAKNMDNEGJ snooswap
-       * </pre>
-       *
-       * <code>repeated .Uint32Pair allow_controller_map = 5;</code>
+       * <code>repeated .Uint32Pair allow_controller_map = 15;</code>
        */
       public Builder setAllowControllerMap(
           int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder builderForValue) {
@@ -657,11 +597,7 @@ public final class GCGMsgUpdateControllerOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *PAAKNMDNEGJ snooswap
-       * </pre>
-       *
-       * <code>repeated .Uint32Pair allow_controller_map = 5;</code>
+       * <code>repeated .Uint32Pair allow_controller_map = 15;</code>
        */
       public Builder addAllowControllerMap(emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
         if (allowControllerMapBuilder_ == null) {
@@ -677,11 +613,7 @@ public final class GCGMsgUpdateControllerOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *PAAKNMDNEGJ snooswap
-       * </pre>
-       *
-       * <code>repeated .Uint32Pair allow_controller_map = 5;</code>
+       * <code>repeated .Uint32Pair allow_controller_map = 15;</code>
        */
       public Builder addAllowControllerMap(
           int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
@@ -698,11 +630,7 @@ public final class GCGMsgUpdateControllerOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *PAAKNMDNEGJ snooswap
-       * </pre>
-       *
-       * <code>repeated .Uint32Pair allow_controller_map = 5;</code>
+       * <code>repeated .Uint32Pair allow_controller_map = 15;</code>
        */
       public Builder addAllowControllerMap(
           emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder builderForValue) {
@@ -716,11 +644,7 @@ public final class GCGMsgUpdateControllerOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *PAAKNMDNEGJ snooswap
-       * </pre>
-       *
-       * <code>repeated .Uint32Pair allow_controller_map = 5;</code>
+       * <code>repeated .Uint32Pair allow_controller_map = 15;</code>
        */
       public Builder addAllowControllerMap(
           int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder builderForValue) {
@@ -734,11 +658,7 @@ public final class GCGMsgUpdateControllerOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *PAAKNMDNEGJ snooswap
-       * </pre>
-       *
-       * <code>repeated .Uint32Pair allow_controller_map = 5;</code>
+       * <code>repeated .Uint32Pair allow_controller_map = 15;</code>
        */
       public Builder addAllAllowControllerMap(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> values) {
@@ -753,11 +673,7 @@ public final class GCGMsgUpdateControllerOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *PAAKNMDNEGJ snooswap
-       * </pre>
-       *
-       * <code>repeated .Uint32Pair allow_controller_map = 5;</code>
+       * <code>repeated .Uint32Pair allow_controller_map = 15;</code>
        */
       public Builder clearAllowControllerMap() {
         if (allowControllerMapBuilder_ == null) {
@@ -770,11 +686,7 @@ public final class GCGMsgUpdateControllerOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *PAAKNMDNEGJ snooswap
-       * </pre>
-       *
-       * <code>repeated .Uint32Pair allow_controller_map = 5;</code>
+       * <code>repeated .Uint32Pair allow_controller_map = 15;</code>
        */
       public Builder removeAllowControllerMap(int index) {
         if (allowControllerMapBuilder_ == null) {
@@ -787,22 +699,14 @@ public final class GCGMsgUpdateControllerOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *PAAKNMDNEGJ snooswap
-       * </pre>
-       *
-       * <code>repeated .Uint32Pair allow_controller_map = 5;</code>
+       * <code>repeated .Uint32Pair allow_controller_map = 15;</code>
        */
       public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder getAllowControllerMapBuilder(
           int index) {
         return getAllowControllerMapFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *PAAKNMDNEGJ snooswap
-       * </pre>
-       *
-       * <code>repeated .Uint32Pair allow_controller_map = 5;</code>
+       * <code>repeated .Uint32Pair allow_controller_map = 15;</code>
        */
       public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getAllowControllerMapOrBuilder(
           int index) {
@@ -812,11 +716,7 @@ public final class GCGMsgUpdateControllerOuterClass {
         }
       }
       /**
-       * <pre>
-       *PAAKNMDNEGJ snooswap
-       * </pre>
-       *
-       * <code>repeated .Uint32Pair allow_controller_map = 5;</code>
+       * <code>repeated .Uint32Pair allow_controller_map = 15;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
            getAllowControllerMapOrBuilderList() {
@@ -827,22 +727,14 @@ public final class GCGMsgUpdateControllerOuterClass {
         }
       }
       /**
-       * <pre>
-       *PAAKNMDNEGJ snooswap
-       * </pre>
-       *
-       * <code>repeated .Uint32Pair allow_controller_map = 5;</code>
+       * <code>repeated .Uint32Pair allow_controller_map = 15;</code>
        */
       public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder addAllowControllerMapBuilder() {
         return getAllowControllerMapFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.getDefaultInstance());
       }
       /**
-       * <pre>
-       *PAAKNMDNEGJ snooswap
-       * </pre>
-       *
-       * <code>repeated .Uint32Pair allow_controller_map = 5;</code>
+       * <code>repeated .Uint32Pair allow_controller_map = 15;</code>
        */
       public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder addAllowControllerMapBuilder(
           int index) {
@@ -850,11 +742,7 @@ public final class GCGMsgUpdateControllerOuterClass {
             index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.getDefaultInstance());
       }
       /**
-       * <pre>
-       *PAAKNMDNEGJ snooswap
-       * </pre>
-       *
-       * <code>repeated .Uint32Pair allow_controller_map = 5;</code>
+       * <code>repeated .Uint32Pair allow_controller_map = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder> 
            getAllowControllerMapBuilderList() {
@@ -943,7 +831,7 @@ public final class GCGMsgUpdateControllerOuterClass {
     java.lang.String[] descriptorData = {
       "\n\034GCGMsgUpdateController.proto\032\020Uint32Pa" +
       "ir.proto\"C\n\026GCGMsgUpdateController\022)\n\024al" +
-      "low_controller_map\030\005 \003(\0132\013.Uint32PairB\033\n" +
+      "low_controller_map\030\017 \003(\0132\013.Uint32PairB\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

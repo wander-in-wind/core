@@ -19,38 +19,38 @@ public final class TowerMonthlyDetailOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.TowerMonthlyBrief monthly_brief = 3;</code>
-     * @return Whether the monthlyBrief field is set.
-     */
-    boolean hasMonthlyBrief();
-    /**
-     * <code>.TowerMonthlyBrief monthly_brief = 3;</code>
-     * @return The monthlyBrief.
-     */
-    emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief getMonthlyBrief();
-    /**
-     * <code>.TowerMonthlyBrief monthly_brief = 3;</code>
-     */
-    emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBriefOrBuilder getMonthlyBriefOrBuilder();
-
-    /**
-     * <code>.TowerMonthlyCombatRecord monthly_combat_record = 2;</code>
+     * <code>.TowerMonthlyCombatRecord monthly_combat_record = 8;</code>
      * @return Whether the monthlyCombatRecord field is set.
      */
     boolean hasMonthlyCombatRecord();
     /**
-     * <code>.TowerMonthlyCombatRecord monthly_combat_record = 2;</code>
+     * <code>.TowerMonthlyCombatRecord monthly_combat_record = 8;</code>
      * @return The monthlyCombatRecord.
      */
     emu.grasscutter.net.proto.TowerMonthlyCombatRecordOuterClass.TowerMonthlyCombatRecord getMonthlyCombatRecord();
     /**
-     * <code>.TowerMonthlyCombatRecord monthly_combat_record = 2;</code>
+     * <code>.TowerMonthlyCombatRecord monthly_combat_record = 8;</code>
      */
     emu.grasscutter.net.proto.TowerMonthlyCombatRecordOuterClass.TowerMonthlyCombatRecordOrBuilder getMonthlyCombatRecordOrBuilder();
+
+    /**
+     * <code>.TowerMonthlyBrief last_schedule_monthly_brief = 12;</code>
+     * @return Whether the lastScheduleMonthlyBrief field is set.
+     */
+    boolean hasLastScheduleMonthlyBrief();
+    /**
+     * <code>.TowerMonthlyBrief last_schedule_monthly_brief = 12;</code>
+     * @return The lastScheduleMonthlyBrief.
+     */
+    emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief getLastScheduleMonthlyBrief();
+    /**
+     * <code>.TowerMonthlyBrief last_schedule_monthly_brief = 12;</code>
+     */
+    emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBriefOrBuilder getLastScheduleMonthlyBriefOrBuilder();
   }
   /**
    * <pre>
-   * Name: MBJAKBMCIDD
+   * Obf: EGHIMFAFPDO
    * </pre>
    *
    * Protobuf type {@code TowerMonthlyDetail}
@@ -97,7 +97,7 @@ public final class TowerMonthlyDetailOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
+            case 66: {
               emu.grasscutter.net.proto.TowerMonthlyCombatRecordOuterClass.TowerMonthlyCombatRecord.Builder subBuilder = null;
               if (monthlyCombatRecord_ != null) {
                 subBuilder = monthlyCombatRecord_.toBuilder();
@@ -110,15 +110,15 @@ public final class TowerMonthlyDetailOuterClass {
 
               break;
             }
-            case 26: {
+            case 98: {
               emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief.Builder subBuilder = null;
-              if (monthlyBrief_ != null) {
-                subBuilder = monthlyBrief_.toBuilder();
+              if (lastScheduleMonthlyBrief_ != null) {
+                subBuilder = lastScheduleMonthlyBrief_.toBuilder();
               }
-              monthlyBrief_ = input.readMessage(emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief.parser(), extensionRegistry);
+              lastScheduleMonthlyBrief_ = input.readMessage(emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(monthlyBrief_);
-                monthlyBrief_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(lastScheduleMonthlyBrief_);
+                lastScheduleMonthlyBrief_ = subBuilder.buildPartial();
               }
 
               break;
@@ -155,36 +155,10 @@ public final class TowerMonthlyDetailOuterClass {
               emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetail.class, emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetail.Builder.class);
     }
 
-    public static final int MONTHLY_BRIEF_FIELD_NUMBER = 3;
-    private emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief monthlyBrief_;
-    /**
-     * <code>.TowerMonthlyBrief monthly_brief = 3;</code>
-     * @return Whether the monthlyBrief field is set.
-     */
-    @java.lang.Override
-    public boolean hasMonthlyBrief() {
-      return monthlyBrief_ != null;
-    }
-    /**
-     * <code>.TowerMonthlyBrief monthly_brief = 3;</code>
-     * @return The monthlyBrief.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief getMonthlyBrief() {
-      return monthlyBrief_ == null ? emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief.getDefaultInstance() : monthlyBrief_;
-    }
-    /**
-     * <code>.TowerMonthlyBrief monthly_brief = 3;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBriefOrBuilder getMonthlyBriefOrBuilder() {
-      return getMonthlyBrief();
-    }
-
-    public static final int MONTHLY_COMBAT_RECORD_FIELD_NUMBER = 2;
+    public static final int MONTHLY_COMBAT_RECORD_FIELD_NUMBER = 8;
     private emu.grasscutter.net.proto.TowerMonthlyCombatRecordOuterClass.TowerMonthlyCombatRecord monthlyCombatRecord_;
     /**
-     * <code>.TowerMonthlyCombatRecord monthly_combat_record = 2;</code>
+     * <code>.TowerMonthlyCombatRecord monthly_combat_record = 8;</code>
      * @return Whether the monthlyCombatRecord field is set.
      */
     @java.lang.Override
@@ -192,7 +166,7 @@ public final class TowerMonthlyDetailOuterClass {
       return monthlyCombatRecord_ != null;
     }
     /**
-     * <code>.TowerMonthlyCombatRecord monthly_combat_record = 2;</code>
+     * <code>.TowerMonthlyCombatRecord monthly_combat_record = 8;</code>
      * @return The monthlyCombatRecord.
      */
     @java.lang.Override
@@ -200,11 +174,37 @@ public final class TowerMonthlyDetailOuterClass {
       return monthlyCombatRecord_ == null ? emu.grasscutter.net.proto.TowerMonthlyCombatRecordOuterClass.TowerMonthlyCombatRecord.getDefaultInstance() : monthlyCombatRecord_;
     }
     /**
-     * <code>.TowerMonthlyCombatRecord monthly_combat_record = 2;</code>
+     * <code>.TowerMonthlyCombatRecord monthly_combat_record = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.TowerMonthlyCombatRecordOuterClass.TowerMonthlyCombatRecordOrBuilder getMonthlyCombatRecordOrBuilder() {
       return getMonthlyCombatRecord();
+    }
+
+    public static final int LAST_SCHEDULE_MONTHLY_BRIEF_FIELD_NUMBER = 12;
+    private emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief lastScheduleMonthlyBrief_;
+    /**
+     * <code>.TowerMonthlyBrief last_schedule_monthly_brief = 12;</code>
+     * @return Whether the lastScheduleMonthlyBrief field is set.
+     */
+    @java.lang.Override
+    public boolean hasLastScheduleMonthlyBrief() {
+      return lastScheduleMonthlyBrief_ != null;
+    }
+    /**
+     * <code>.TowerMonthlyBrief last_schedule_monthly_brief = 12;</code>
+     * @return The lastScheduleMonthlyBrief.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief getLastScheduleMonthlyBrief() {
+      return lastScheduleMonthlyBrief_ == null ? emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief.getDefaultInstance() : lastScheduleMonthlyBrief_;
+    }
+    /**
+     * <code>.TowerMonthlyBrief last_schedule_monthly_brief = 12;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBriefOrBuilder getLastScheduleMonthlyBriefOrBuilder() {
+      return getLastScheduleMonthlyBrief();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -222,10 +222,10 @@ public final class TowerMonthlyDetailOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (monthlyCombatRecord_ != null) {
-        output.writeMessage(2, getMonthlyCombatRecord());
+        output.writeMessage(8, getMonthlyCombatRecord());
       }
-      if (monthlyBrief_ != null) {
-        output.writeMessage(3, getMonthlyBrief());
+      if (lastScheduleMonthlyBrief_ != null) {
+        output.writeMessage(12, getLastScheduleMonthlyBrief());
       }
       unknownFields.writeTo(output);
     }
@@ -238,11 +238,11 @@ public final class TowerMonthlyDetailOuterClass {
       size = 0;
       if (monthlyCombatRecord_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, getMonthlyCombatRecord());
+          .computeMessageSize(8, getMonthlyCombatRecord());
       }
-      if (monthlyBrief_ != null) {
+      if (lastScheduleMonthlyBrief_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getMonthlyBrief());
+          .computeMessageSize(12, getLastScheduleMonthlyBrief());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -259,15 +259,15 @@ public final class TowerMonthlyDetailOuterClass {
       }
       emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetail other = (emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetail) obj;
 
-      if (hasMonthlyBrief() != other.hasMonthlyBrief()) return false;
-      if (hasMonthlyBrief()) {
-        if (!getMonthlyBrief()
-            .equals(other.getMonthlyBrief())) return false;
-      }
       if (hasMonthlyCombatRecord() != other.hasMonthlyCombatRecord()) return false;
       if (hasMonthlyCombatRecord()) {
         if (!getMonthlyCombatRecord()
             .equals(other.getMonthlyCombatRecord())) return false;
+      }
+      if (hasLastScheduleMonthlyBrief() != other.hasLastScheduleMonthlyBrief()) return false;
+      if (hasLastScheduleMonthlyBrief()) {
+        if (!getLastScheduleMonthlyBrief()
+            .equals(other.getLastScheduleMonthlyBrief())) return false;
       }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
@@ -280,13 +280,13 @@ public final class TowerMonthlyDetailOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasMonthlyBrief()) {
-        hash = (37 * hash) + MONTHLY_BRIEF_FIELD_NUMBER;
-        hash = (53 * hash) + getMonthlyBrief().hashCode();
-      }
       if (hasMonthlyCombatRecord()) {
         hash = (37 * hash) + MONTHLY_COMBAT_RECORD_FIELD_NUMBER;
         hash = (53 * hash) + getMonthlyCombatRecord().hashCode();
+      }
+      if (hasLastScheduleMonthlyBrief()) {
+        hash = (37 * hash) + LAST_SCHEDULE_MONTHLY_BRIEF_FIELD_NUMBER;
+        hash = (53 * hash) + getLastScheduleMonthlyBrief().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -385,7 +385,7 @@ public final class TowerMonthlyDetailOuterClass {
     }
     /**
      * <pre>
-     * Name: MBJAKBMCIDD
+     * Obf: EGHIMFAFPDO
      * </pre>
      *
      * Protobuf type {@code TowerMonthlyDetail}
@@ -425,17 +425,17 @@ public final class TowerMonthlyDetailOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (monthlyBriefBuilder_ == null) {
-          monthlyBrief_ = null;
-        } else {
-          monthlyBrief_ = null;
-          monthlyBriefBuilder_ = null;
-        }
         if (monthlyCombatRecordBuilder_ == null) {
           monthlyCombatRecord_ = null;
         } else {
           monthlyCombatRecord_ = null;
           monthlyCombatRecordBuilder_ = null;
+        }
+        if (lastScheduleMonthlyBriefBuilder_ == null) {
+          lastScheduleMonthlyBrief_ = null;
+        } else {
+          lastScheduleMonthlyBrief_ = null;
+          lastScheduleMonthlyBriefBuilder_ = null;
         }
         return this;
       }
@@ -463,15 +463,15 @@ public final class TowerMonthlyDetailOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetail buildPartial() {
         emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetail result = new emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetail(this);
-        if (monthlyBriefBuilder_ == null) {
-          result.monthlyBrief_ = monthlyBrief_;
-        } else {
-          result.monthlyBrief_ = monthlyBriefBuilder_.build();
-        }
         if (monthlyCombatRecordBuilder_ == null) {
           result.monthlyCombatRecord_ = monthlyCombatRecord_;
         } else {
           result.monthlyCombatRecord_ = monthlyCombatRecordBuilder_.build();
+        }
+        if (lastScheduleMonthlyBriefBuilder_ == null) {
+          result.lastScheduleMonthlyBrief_ = lastScheduleMonthlyBrief_;
+        } else {
+          result.lastScheduleMonthlyBrief_ = lastScheduleMonthlyBriefBuilder_.build();
         }
         onBuilt();
         return result;
@@ -521,11 +521,11 @@ public final class TowerMonthlyDetailOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetail other) {
         if (other == emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetail.getDefaultInstance()) return this;
-        if (other.hasMonthlyBrief()) {
-          mergeMonthlyBrief(other.getMonthlyBrief());
-        }
         if (other.hasMonthlyCombatRecord()) {
           mergeMonthlyCombatRecord(other.getMonthlyCombatRecord());
+        }
+        if (other.hasLastScheduleMonthlyBrief()) {
+          mergeLastScheduleMonthlyBrief(other.getLastScheduleMonthlyBrief());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -556,137 +556,18 @@ public final class TowerMonthlyDetailOuterClass {
         return this;
       }
 
-      private emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief monthlyBrief_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief, emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief.Builder, emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBriefOrBuilder> monthlyBriefBuilder_;
-      /**
-       * <code>.TowerMonthlyBrief monthly_brief = 3;</code>
-       * @return Whether the monthlyBrief field is set.
-       */
-      public boolean hasMonthlyBrief() {
-        return monthlyBriefBuilder_ != null || monthlyBrief_ != null;
-      }
-      /**
-       * <code>.TowerMonthlyBrief monthly_brief = 3;</code>
-       * @return The monthlyBrief.
-       */
-      public emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief getMonthlyBrief() {
-        if (monthlyBriefBuilder_ == null) {
-          return monthlyBrief_ == null ? emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief.getDefaultInstance() : monthlyBrief_;
-        } else {
-          return monthlyBriefBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.TowerMonthlyBrief monthly_brief = 3;</code>
-       */
-      public Builder setMonthlyBrief(emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief value) {
-        if (monthlyBriefBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          monthlyBrief_ = value;
-          onChanged();
-        } else {
-          monthlyBriefBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.TowerMonthlyBrief monthly_brief = 3;</code>
-       */
-      public Builder setMonthlyBrief(
-          emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief.Builder builderForValue) {
-        if (monthlyBriefBuilder_ == null) {
-          monthlyBrief_ = builderForValue.build();
-          onChanged();
-        } else {
-          monthlyBriefBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.TowerMonthlyBrief monthly_brief = 3;</code>
-       */
-      public Builder mergeMonthlyBrief(emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief value) {
-        if (monthlyBriefBuilder_ == null) {
-          if (monthlyBrief_ != null) {
-            monthlyBrief_ =
-              emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief.newBuilder(monthlyBrief_).mergeFrom(value).buildPartial();
-          } else {
-            monthlyBrief_ = value;
-          }
-          onChanged();
-        } else {
-          monthlyBriefBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.TowerMonthlyBrief monthly_brief = 3;</code>
-       */
-      public Builder clearMonthlyBrief() {
-        if (monthlyBriefBuilder_ == null) {
-          monthlyBrief_ = null;
-          onChanged();
-        } else {
-          monthlyBrief_ = null;
-          monthlyBriefBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.TowerMonthlyBrief monthly_brief = 3;</code>
-       */
-      public emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief.Builder getMonthlyBriefBuilder() {
-        
-        onChanged();
-        return getMonthlyBriefFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.TowerMonthlyBrief monthly_brief = 3;</code>
-       */
-      public emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBriefOrBuilder getMonthlyBriefOrBuilder() {
-        if (monthlyBriefBuilder_ != null) {
-          return monthlyBriefBuilder_.getMessageOrBuilder();
-        } else {
-          return monthlyBrief_ == null ?
-              emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief.getDefaultInstance() : monthlyBrief_;
-        }
-      }
-      /**
-       * <code>.TowerMonthlyBrief monthly_brief = 3;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief, emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief.Builder, emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBriefOrBuilder> 
-          getMonthlyBriefFieldBuilder() {
-        if (monthlyBriefBuilder_ == null) {
-          monthlyBriefBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief, emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief.Builder, emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBriefOrBuilder>(
-                  getMonthlyBrief(),
-                  getParentForChildren(),
-                  isClean());
-          monthlyBrief_ = null;
-        }
-        return monthlyBriefBuilder_;
-      }
-
       private emu.grasscutter.net.proto.TowerMonthlyCombatRecordOuterClass.TowerMonthlyCombatRecord monthlyCombatRecord_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.TowerMonthlyCombatRecordOuterClass.TowerMonthlyCombatRecord, emu.grasscutter.net.proto.TowerMonthlyCombatRecordOuterClass.TowerMonthlyCombatRecord.Builder, emu.grasscutter.net.proto.TowerMonthlyCombatRecordOuterClass.TowerMonthlyCombatRecordOrBuilder> monthlyCombatRecordBuilder_;
       /**
-       * <code>.TowerMonthlyCombatRecord monthly_combat_record = 2;</code>
+       * <code>.TowerMonthlyCombatRecord monthly_combat_record = 8;</code>
        * @return Whether the monthlyCombatRecord field is set.
        */
       public boolean hasMonthlyCombatRecord() {
         return monthlyCombatRecordBuilder_ != null || monthlyCombatRecord_ != null;
       }
       /**
-       * <code>.TowerMonthlyCombatRecord monthly_combat_record = 2;</code>
+       * <code>.TowerMonthlyCombatRecord monthly_combat_record = 8;</code>
        * @return The monthlyCombatRecord.
        */
       public emu.grasscutter.net.proto.TowerMonthlyCombatRecordOuterClass.TowerMonthlyCombatRecord getMonthlyCombatRecord() {
@@ -697,7 +578,7 @@ public final class TowerMonthlyDetailOuterClass {
         }
       }
       /**
-       * <code>.TowerMonthlyCombatRecord monthly_combat_record = 2;</code>
+       * <code>.TowerMonthlyCombatRecord monthly_combat_record = 8;</code>
        */
       public Builder setMonthlyCombatRecord(emu.grasscutter.net.proto.TowerMonthlyCombatRecordOuterClass.TowerMonthlyCombatRecord value) {
         if (monthlyCombatRecordBuilder_ == null) {
@@ -713,7 +594,7 @@ public final class TowerMonthlyDetailOuterClass {
         return this;
       }
       /**
-       * <code>.TowerMonthlyCombatRecord monthly_combat_record = 2;</code>
+       * <code>.TowerMonthlyCombatRecord monthly_combat_record = 8;</code>
        */
       public Builder setMonthlyCombatRecord(
           emu.grasscutter.net.proto.TowerMonthlyCombatRecordOuterClass.TowerMonthlyCombatRecord.Builder builderForValue) {
@@ -727,7 +608,7 @@ public final class TowerMonthlyDetailOuterClass {
         return this;
       }
       /**
-       * <code>.TowerMonthlyCombatRecord monthly_combat_record = 2;</code>
+       * <code>.TowerMonthlyCombatRecord monthly_combat_record = 8;</code>
        */
       public Builder mergeMonthlyCombatRecord(emu.grasscutter.net.proto.TowerMonthlyCombatRecordOuterClass.TowerMonthlyCombatRecord value) {
         if (monthlyCombatRecordBuilder_ == null) {
@@ -745,7 +626,7 @@ public final class TowerMonthlyDetailOuterClass {
         return this;
       }
       /**
-       * <code>.TowerMonthlyCombatRecord monthly_combat_record = 2;</code>
+       * <code>.TowerMonthlyCombatRecord monthly_combat_record = 8;</code>
        */
       public Builder clearMonthlyCombatRecord() {
         if (monthlyCombatRecordBuilder_ == null) {
@@ -759,7 +640,7 @@ public final class TowerMonthlyDetailOuterClass {
         return this;
       }
       /**
-       * <code>.TowerMonthlyCombatRecord monthly_combat_record = 2;</code>
+       * <code>.TowerMonthlyCombatRecord monthly_combat_record = 8;</code>
        */
       public emu.grasscutter.net.proto.TowerMonthlyCombatRecordOuterClass.TowerMonthlyCombatRecord.Builder getMonthlyCombatRecordBuilder() {
         
@@ -767,7 +648,7 @@ public final class TowerMonthlyDetailOuterClass {
         return getMonthlyCombatRecordFieldBuilder().getBuilder();
       }
       /**
-       * <code>.TowerMonthlyCombatRecord monthly_combat_record = 2;</code>
+       * <code>.TowerMonthlyCombatRecord monthly_combat_record = 8;</code>
        */
       public emu.grasscutter.net.proto.TowerMonthlyCombatRecordOuterClass.TowerMonthlyCombatRecordOrBuilder getMonthlyCombatRecordOrBuilder() {
         if (monthlyCombatRecordBuilder_ != null) {
@@ -778,7 +659,7 @@ public final class TowerMonthlyDetailOuterClass {
         }
       }
       /**
-       * <code>.TowerMonthlyCombatRecord monthly_combat_record = 2;</code>
+       * <code>.TowerMonthlyCombatRecord monthly_combat_record = 8;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.TowerMonthlyCombatRecordOuterClass.TowerMonthlyCombatRecord, emu.grasscutter.net.proto.TowerMonthlyCombatRecordOuterClass.TowerMonthlyCombatRecord.Builder, emu.grasscutter.net.proto.TowerMonthlyCombatRecordOuterClass.TowerMonthlyCombatRecordOrBuilder> 
@@ -792,6 +673,125 @@ public final class TowerMonthlyDetailOuterClass {
           monthlyCombatRecord_ = null;
         }
         return monthlyCombatRecordBuilder_;
+      }
+
+      private emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief lastScheduleMonthlyBrief_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief, emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief.Builder, emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBriefOrBuilder> lastScheduleMonthlyBriefBuilder_;
+      /**
+       * <code>.TowerMonthlyBrief last_schedule_monthly_brief = 12;</code>
+       * @return Whether the lastScheduleMonthlyBrief field is set.
+       */
+      public boolean hasLastScheduleMonthlyBrief() {
+        return lastScheduleMonthlyBriefBuilder_ != null || lastScheduleMonthlyBrief_ != null;
+      }
+      /**
+       * <code>.TowerMonthlyBrief last_schedule_monthly_brief = 12;</code>
+       * @return The lastScheduleMonthlyBrief.
+       */
+      public emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief getLastScheduleMonthlyBrief() {
+        if (lastScheduleMonthlyBriefBuilder_ == null) {
+          return lastScheduleMonthlyBrief_ == null ? emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief.getDefaultInstance() : lastScheduleMonthlyBrief_;
+        } else {
+          return lastScheduleMonthlyBriefBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.TowerMonthlyBrief last_schedule_monthly_brief = 12;</code>
+       */
+      public Builder setLastScheduleMonthlyBrief(emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief value) {
+        if (lastScheduleMonthlyBriefBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          lastScheduleMonthlyBrief_ = value;
+          onChanged();
+        } else {
+          lastScheduleMonthlyBriefBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.TowerMonthlyBrief last_schedule_monthly_brief = 12;</code>
+       */
+      public Builder setLastScheduleMonthlyBrief(
+          emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief.Builder builderForValue) {
+        if (lastScheduleMonthlyBriefBuilder_ == null) {
+          lastScheduleMonthlyBrief_ = builderForValue.build();
+          onChanged();
+        } else {
+          lastScheduleMonthlyBriefBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.TowerMonthlyBrief last_schedule_monthly_brief = 12;</code>
+       */
+      public Builder mergeLastScheduleMonthlyBrief(emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief value) {
+        if (lastScheduleMonthlyBriefBuilder_ == null) {
+          if (lastScheduleMonthlyBrief_ != null) {
+            lastScheduleMonthlyBrief_ =
+              emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief.newBuilder(lastScheduleMonthlyBrief_).mergeFrom(value).buildPartial();
+          } else {
+            lastScheduleMonthlyBrief_ = value;
+          }
+          onChanged();
+        } else {
+          lastScheduleMonthlyBriefBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.TowerMonthlyBrief last_schedule_monthly_brief = 12;</code>
+       */
+      public Builder clearLastScheduleMonthlyBrief() {
+        if (lastScheduleMonthlyBriefBuilder_ == null) {
+          lastScheduleMonthlyBrief_ = null;
+          onChanged();
+        } else {
+          lastScheduleMonthlyBrief_ = null;
+          lastScheduleMonthlyBriefBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.TowerMonthlyBrief last_schedule_monthly_brief = 12;</code>
+       */
+      public emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief.Builder getLastScheduleMonthlyBriefBuilder() {
+        
+        onChanged();
+        return getLastScheduleMonthlyBriefFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.TowerMonthlyBrief last_schedule_monthly_brief = 12;</code>
+       */
+      public emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBriefOrBuilder getLastScheduleMonthlyBriefOrBuilder() {
+        if (lastScheduleMonthlyBriefBuilder_ != null) {
+          return lastScheduleMonthlyBriefBuilder_.getMessageOrBuilder();
+        } else {
+          return lastScheduleMonthlyBrief_ == null ?
+              emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief.getDefaultInstance() : lastScheduleMonthlyBrief_;
+        }
+      }
+      /**
+       * <code>.TowerMonthlyBrief last_schedule_monthly_brief = 12;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief, emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief.Builder, emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBriefOrBuilder> 
+          getLastScheduleMonthlyBriefFieldBuilder() {
+        if (lastScheduleMonthlyBriefBuilder_ == null) {
+          lastScheduleMonthlyBriefBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief, emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief.Builder, emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBriefOrBuilder>(
+                  getLastScheduleMonthlyBrief(),
+                  getParentForChildren(),
+                  isClean());
+          lastScheduleMonthlyBrief_ = null;
+        }
+        return lastScheduleMonthlyBriefBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -860,28 +860,28 @@ public final class TowerMonthlyDetailOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\030TowerMonthlyDetail.proto\032\027TowerMonthly" +
-      "Brief.proto\032\036TowerMonthlyCombatRecord.pr" +
-      "oto\"y\n\022TowerMonthlyDetail\022)\n\rmonthly_bri" +
-      "ef\030\003 \001(\0132\022.TowerMonthlyBrief\0228\n\025monthly_" +
-      "combat_record\030\002 \001(\0132\031.TowerMonthlyCombat" +
-      "RecordB\033\n\031emu.grasscutter.net.protob\006pro" +
-      "to3"
+      "\n\030TowerMonthlyDetail.proto\032\036TowerMonthly" +
+      "CombatRecord.proto\032\027TowerMonthlyBrief.pr" +
+      "oto\"\207\001\n\022TowerMonthlyDetail\0228\n\025monthly_co" +
+      "mbat_record\030\010 \001(\0132\031.TowerMonthlyCombatRe" +
+      "cord\0227\n\033last_schedule_monthly_brief\030\014 \001(" +
+      "\0132\022.TowerMonthlyBriefB\033\n\031emu.grasscutter" +
+      ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.TowerMonthlyCombatRecordOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.getDescriptor(),
         });
     internal_static_TowerMonthlyDetail_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_TowerMonthlyDetail_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TowerMonthlyDetail_descriptor,
-        new java.lang.String[] { "MonthlyBrief", "MonthlyCombatRecord", });
-    emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.getDescriptor();
+        new java.lang.String[] { "MonthlyCombatRecord", "LastScheduleMonthlyBrief", });
     emu.grasscutter.net.proto.TowerMonthlyCombatRecordOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

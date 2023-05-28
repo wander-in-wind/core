@@ -16,7 +16,7 @@ public final class GalleryStageTypeOuterClass {
   }
   /**
    * <pre>
-   * Name: MIJHDKPDCPP
+   * Obf: CMICPFOKJFN
    * </pre>
    *
    * Protobuf enum {@code GalleryStageType}

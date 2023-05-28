@@ -19,27 +19,27 @@ public final class AvatarChangeAnimHashRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 anim_hash = 1;</code>
+     * <code>uint32 anim_hash = 12;</code>
      * @return The animHash.
      */
     int getAnimHash();
 
     /**
-     * <code>uint64 avatar_guid = 11;</code>
+     * <code>uint64 avatar_guid = 10;</code>
      * @return The avatarGuid.
      */
     long getAvatarGuid();
 
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 7;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * Name: AEMAPIINBLO
-   * CmdId: 1694
+   * CmdId: 1790
+   * Obf: PEAMAJJMFAM
    * </pre>
    *
    * Protobuf type {@code AvatarChangeAnimHashRsp}
@@ -86,19 +86,19 @@ public final class AvatarChangeAnimHashRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              animHash_ = input.readUInt32();
-              break;
-            }
-            case 64: {
+            case 56: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 88: {
+            case 80: {
 
               avatarGuid_ = input.readUInt64();
+              break;
+            }
+            case 96: {
+
+              animHash_ = input.readUInt32();
               break;
             }
             default: {
@@ -133,10 +133,10 @@ public final class AvatarChangeAnimHashRspOuterClass {
               emu.grasscutter.net.proto.AvatarChangeAnimHashRspOuterClass.AvatarChangeAnimHashRsp.class, emu.grasscutter.net.proto.AvatarChangeAnimHashRspOuterClass.AvatarChangeAnimHashRsp.Builder.class);
     }
 
-    public static final int ANIM_HASH_FIELD_NUMBER = 1;
+    public static final int ANIM_HASH_FIELD_NUMBER = 12;
     private int animHash_;
     /**
-     * <code>uint32 anim_hash = 1;</code>
+     * <code>uint32 anim_hash = 12;</code>
      * @return The animHash.
      */
     @java.lang.Override
@@ -144,10 +144,10 @@ public final class AvatarChangeAnimHashRspOuterClass {
       return animHash_;
     }
 
-    public static final int AVATAR_GUID_FIELD_NUMBER = 11;
+    public static final int AVATAR_GUID_FIELD_NUMBER = 10;
     private long avatarGuid_;
     /**
-     * <code>uint64 avatar_guid = 11;</code>
+     * <code>uint64 avatar_guid = 10;</code>
      * @return The avatarGuid.
      */
     @java.lang.Override
@@ -155,10 +155,10 @@ public final class AvatarChangeAnimHashRspOuterClass {
       return avatarGuid_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 8;
+    public static final int RETCODE_FIELD_NUMBER = 7;
     private int retcode_;
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 7;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -180,14 +180,14 @@ public final class AvatarChangeAnimHashRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (animHash_ != 0) {
-        output.writeUInt32(1, animHash_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
+        output.writeInt32(7, retcode_);
       }
       if (avatarGuid_ != 0L) {
-        output.writeUInt64(11, avatarGuid_);
+        output.writeUInt64(10, avatarGuid_);
+      }
+      if (animHash_ != 0) {
+        output.writeUInt32(12, animHash_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +198,17 @@ public final class AvatarChangeAnimHashRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (animHash_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, animHash_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
+          .computeInt32Size(7, retcode_);
       }
       if (avatarGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(11, avatarGuid_);
+          .computeUInt64Size(10, avatarGuid_);
+      }
+      if (animHash_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, animHash_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -346,8 +346,8 @@ public final class AvatarChangeAnimHashRspOuterClass {
     }
     /**
      * <pre>
-     * Name: AEMAPIINBLO
-     * CmdId: 1694
+     * CmdId: 1790
+     * Obf: PEAMAJJMFAM
      * </pre>
      *
      * Protobuf type {@code AvatarChangeAnimHashRsp}
@@ -510,7 +510,7 @@ public final class AvatarChangeAnimHashRspOuterClass {
 
       private int animHash_ ;
       /**
-       * <code>uint32 anim_hash = 1;</code>
+       * <code>uint32 anim_hash = 12;</code>
        * @return The animHash.
        */
       @java.lang.Override
@@ -518,7 +518,7 @@ public final class AvatarChangeAnimHashRspOuterClass {
         return animHash_;
       }
       /**
-       * <code>uint32 anim_hash = 1;</code>
+       * <code>uint32 anim_hash = 12;</code>
        * @param value The animHash to set.
        * @return This builder for chaining.
        */
@@ -529,7 +529,7 @@ public final class AvatarChangeAnimHashRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 anim_hash = 1;</code>
+       * <code>uint32 anim_hash = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearAnimHash() {
@@ -541,7 +541,7 @@ public final class AvatarChangeAnimHashRspOuterClass {
 
       private long avatarGuid_ ;
       /**
-       * <code>uint64 avatar_guid = 11;</code>
+       * <code>uint64 avatar_guid = 10;</code>
        * @return The avatarGuid.
        */
       @java.lang.Override
@@ -549,7 +549,7 @@ public final class AvatarChangeAnimHashRspOuterClass {
         return avatarGuid_;
       }
       /**
-       * <code>uint64 avatar_guid = 11;</code>
+       * <code>uint64 avatar_guid = 10;</code>
        * @param value The avatarGuid to set.
        * @return This builder for chaining.
        */
@@ -560,7 +560,7 @@ public final class AvatarChangeAnimHashRspOuterClass {
         return this;
       }
       /**
-       * <code>uint64 avatar_guid = 11;</code>
+       * <code>uint64 avatar_guid = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarGuid() {
@@ -572,7 +572,7 @@ public final class AvatarChangeAnimHashRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 7;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -580,7 +580,7 @@ public final class AvatarChangeAnimHashRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 7;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -591,7 +591,7 @@ public final class AvatarChangeAnimHashRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -668,8 +668,8 @@ public final class AvatarChangeAnimHashRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035AvatarChangeAnimHashRsp.proto\"R\n\027Avata" +
-      "rChangeAnimHashRsp\022\021\n\tanim_hash\030\001 \001(\r\022\023\n" +
-      "\013avatar_guid\030\013 \001(\004\022\017\n\007retcode\030\010 \001(\005B\033\n\031e" +
+      "rChangeAnimHashRsp\022\021\n\tanim_hash\030\014 \001(\r\022\023\n" +
+      "\013avatar_guid\030\n \001(\004\022\017\n\007retcode\030\007 \001(\005B\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -16,7 +16,7 @@ public final class EnterTypeOuterClass {
   }
   /**
    * <pre>
-   * Name: FNGKDKJDKHM
+   * Obf: JFDPPEKABPL
    * </pre>
    *
    * Protobuf enum {@code EnterType}

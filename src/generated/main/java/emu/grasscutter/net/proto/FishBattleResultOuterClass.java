@@ -16,7 +16,7 @@ public final class FishBattleResultOuterClass {
   }
   /**
    * <pre>
-   * Name: NOMPJNNKOKM
+   * Obf: GDPFLPOCOJE
    * </pre>
    *
    * Protobuf enum {@code FishBattleResult}

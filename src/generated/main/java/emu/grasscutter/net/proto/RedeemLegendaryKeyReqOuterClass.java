@@ -20,8 +20,8 @@ public final class RedeemLegendaryKeyReqOuterClass {
   }
   /**
    * <pre>
-   * Name: HGNKPAPAHNA
-   * CmdId: 418
+   * CmdId: 480
+   * Obf: ELJILKEDOIG
    * </pre>
    *
    * Protobuf type {@code RedeemLegendaryKeyReq}
@@ -246,8 +246,8 @@ public final class RedeemLegendaryKeyReqOuterClass {
     }
     /**
      * <pre>
-     * Name: HGNKPAPAHNA
-     * CmdId: 418
+     * CmdId: 480
+     * Obf: ELJILKEDOIG
      * </pre>
      *
      * Protobuf type {@code RedeemLegendaryKeyReq}

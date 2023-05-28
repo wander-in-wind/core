@@ -19,122 +19,122 @@ public final class GCGOperationOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.GCGOperationRedraw op_redraw = 3;</code>
+     * <code>.GCGOperationRedraw op_redraw = 6;</code>
      * @return Whether the opRedraw field is set.
      */
     boolean hasOpRedraw();
     /**
-     * <code>.GCGOperationRedraw op_redraw = 3;</code>
+     * <code>.GCGOperationRedraw op_redraw = 6;</code>
      * @return The opRedraw.
      */
     emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedraw getOpRedraw();
     /**
-     * <code>.GCGOperationRedraw op_redraw = 3;</code>
+     * <code>.GCGOperationRedraw op_redraw = 6;</code>
      */
     emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedrawOrBuilder getOpRedrawOrBuilder();
 
     /**
-     * <code>.GCGOperationOnStageSelect op_select_on_stage = 14;</code>
+     * <code>.GCGOperationOnStageSelect op_select_on_stage = 12;</code>
      * @return Whether the opSelectOnStage field is set.
      */
     boolean hasOpSelectOnStage();
     /**
-     * <code>.GCGOperationOnStageSelect op_select_on_stage = 14;</code>
+     * <code>.GCGOperationOnStageSelect op_select_on_stage = 12;</code>
      * @return The opSelectOnStage.
      */
     emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect getOpSelectOnStage();
     /**
-     * <code>.GCGOperationOnStageSelect op_select_on_stage = 14;</code>
+     * <code>.GCGOperationOnStageSelect op_select_on_stage = 12;</code>
      */
     emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelectOrBuilder getOpSelectOnStageOrBuilder();
 
     /**
-     * <code>.GCGOperationReroll op_reroll = 6;</code>
+     * <code>.GCGOperationReroll op_reroll = 14;</code>
      * @return Whether the opReroll field is set.
      */
     boolean hasOpReroll();
     /**
-     * <code>.GCGOperationReroll op_reroll = 6;</code>
+     * <code>.GCGOperationReroll op_reroll = 14;</code>
      * @return The opReroll.
      */
     emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll getOpReroll();
     /**
-     * <code>.GCGOperationReroll op_reroll = 6;</code>
+     * <code>.GCGOperationReroll op_reroll = 14;</code>
      */
     emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationRerollOrBuilder getOpRerollOrBuilder();
 
     /**
-     * <code>.GCGOperationAttack op_attack = 2;</code>
+     * <code>.GCGOperationAttack op_attack = 11;</code>
      * @return Whether the opAttack field is set.
      */
     boolean hasOpAttack();
     /**
-     * <code>.GCGOperationAttack op_attack = 2;</code>
+     * <code>.GCGOperationAttack op_attack = 11;</code>
      * @return The opAttack.
      */
     emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack getOpAttack();
     /**
-     * <code>.GCGOperationAttack op_attack = 2;</code>
+     * <code>.GCGOperationAttack op_attack = 11;</code>
      */
     emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttackOrBuilder getOpAttackOrBuilder();
 
     /**
-     * <code>.GCGOperationPass op_pass = 15;</code>
+     * <code>.GCGOperationPass op_pass = 2;</code>
      * @return Whether the opPass field is set.
      */
     boolean hasOpPass();
     /**
-     * <code>.GCGOperationPass op_pass = 15;</code>
+     * <code>.GCGOperationPass op_pass = 2;</code>
      * @return The opPass.
      */
     emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPass getOpPass();
     /**
-     * <code>.GCGOperationPass op_pass = 15;</code>
+     * <code>.GCGOperationPass op_pass = 2;</code>
      */
     emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPassOrBuilder getOpPassOrBuilder();
 
     /**
-     * <code>.GCGOperationPlayCard op_play_card = 9;</code>
+     * <code>.GCGOperationPlayCard op_play_card = 8;</code>
      * @return Whether the opPlayCard field is set.
      */
     boolean hasOpPlayCard();
     /**
-     * <code>.GCGOperationPlayCard op_play_card = 9;</code>
+     * <code>.GCGOperationPlayCard op_play_card = 8;</code>
      * @return The opPlayCard.
      */
     emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard getOpPlayCard();
     /**
-     * <code>.GCGOperationPlayCard op_play_card = 9;</code>
+     * <code>.GCGOperationPlayCard op_play_card = 8;</code>
      */
     emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCardOrBuilder getOpPlayCardOrBuilder();
 
     /**
-     * <code>.GCGOperationReboot op_reboot = 12;</code>
+     * <code>.GCGOperationReboot op_reboot = 15;</code>
      * @return Whether the opReboot field is set.
      */
     boolean hasOpReboot();
     /**
-     * <code>.GCGOperationReboot op_reboot = 12;</code>
+     * <code>.GCGOperationReboot op_reboot = 15;</code>
      * @return The opReboot.
      */
     emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationReboot getOpReboot();
     /**
-     * <code>.GCGOperationReboot op_reboot = 12;</code>
+     * <code>.GCGOperationReboot op_reboot = 15;</code>
      */
     emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationRebootOrBuilder getOpRebootOrBuilder();
 
     /**
-     * <code>.GCGOperationSurrender op_surrender = 4;</code>
+     * <code>.GCGOperationSurrender op_surrender = 9;</code>
      * @return Whether the opSurrender field is set.
      */
     boolean hasOpSurrender();
     /**
-     * <code>.GCGOperationSurrender op_surrender = 4;</code>
+     * <code>.GCGOperationSurrender op_surrender = 9;</code>
      * @return The opSurrender.
      */
     emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrender getOpSurrender();
     /**
-     * <code>.GCGOperationSurrender op_surrender = 4;</code>
+     * <code>.GCGOperationSurrender op_surrender = 9;</code>
      */
     emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrenderOrBuilder getOpSurrenderOrBuilder();
 
@@ -142,7 +142,7 @@ public final class GCGOperationOuterClass {
   }
   /**
    * <pre>
-   * Name: AOBAFNIHINJ
+   * Obf: LMDBIHEBAJM
    * </pre>
    *
    * Protobuf type {@code GCGOperation}
@@ -190,22 +190,22 @@ public final class GCGOperationOuterClass {
               done = true;
               break;
             case 18: {
-              emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack.Builder subBuilder = null;
+              emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPass.Builder subBuilder = null;
               if (opCase_ == 2) {
-                subBuilder = ((emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack) op_).toBuilder();
+                subBuilder = ((emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPass) op_).toBuilder();
               }
               op_ =
-                  input.readMessage(emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack.parser(), extensionRegistry);
+                  input.readMessage(emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPass.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack) op_);
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPass) op_);
                 op_ = subBuilder.buildPartial();
               }
               opCase_ = 2;
               break;
             }
-            case 26: {
+            case 50: {
               emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedraw.Builder subBuilder = null;
-              if (opCase_ == 3) {
+              if (opCase_ == 6) {
                 subBuilder = ((emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedraw) op_).toBuilder();
               }
               op_ =
@@ -214,40 +214,12 @@ public final class GCGOperationOuterClass {
                 subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedraw) op_);
                 op_ = subBuilder.buildPartial();
               }
-              opCase_ = 3;
-              break;
-            }
-            case 34: {
-              emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrender.Builder subBuilder = null;
-              if (opCase_ == 4) {
-                subBuilder = ((emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrender) op_).toBuilder();
-              }
-              op_ =
-                  input.readMessage(emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrender.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrender) op_);
-                op_ = subBuilder.buildPartial();
-              }
-              opCase_ = 4;
-              break;
-            }
-            case 50: {
-              emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll.Builder subBuilder = null;
-              if (opCase_ == 6) {
-                subBuilder = ((emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll) op_).toBuilder();
-              }
-              op_ =
-                  input.readMessage(emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll) op_);
-                op_ = subBuilder.buildPartial();
-              }
               opCase_ = 6;
               break;
             }
-            case 74: {
+            case 66: {
               emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard.Builder subBuilder = null;
-              if (opCase_ == 9) {
+              if (opCase_ == 8) {
                 subBuilder = ((emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard) op_).toBuilder();
               }
               op_ =
@@ -256,26 +228,40 @@ public final class GCGOperationOuterClass {
                 subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard) op_);
                 op_ = subBuilder.buildPartial();
               }
+              opCase_ = 8;
+              break;
+            }
+            case 74: {
+              emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrender.Builder subBuilder = null;
+              if (opCase_ == 9) {
+                subBuilder = ((emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrender) op_).toBuilder();
+              }
+              op_ =
+                  input.readMessage(emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrender.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrender) op_);
+                op_ = subBuilder.buildPartial();
+              }
               opCase_ = 9;
               break;
             }
-            case 98: {
-              emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationReboot.Builder subBuilder = null;
-              if (opCase_ == 12) {
-                subBuilder = ((emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationReboot) op_).toBuilder();
+            case 90: {
+              emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack.Builder subBuilder = null;
+              if (opCase_ == 11) {
+                subBuilder = ((emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack) op_).toBuilder();
               }
               op_ =
-                  input.readMessage(emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationReboot.parser(), extensionRegistry);
+                  input.readMessage(emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationReboot) op_);
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack) op_);
                 op_ = subBuilder.buildPartial();
               }
-              opCase_ = 12;
+              opCase_ = 11;
               break;
             }
-            case 114: {
+            case 98: {
               emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect.Builder subBuilder = null;
-              if (opCase_ == 14) {
+              if (opCase_ == 12) {
                 subBuilder = ((emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect) op_).toBuilder();
               }
               op_ =
@@ -284,18 +270,32 @@ public final class GCGOperationOuterClass {
                 subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect) op_);
                 op_ = subBuilder.buildPartial();
               }
+              opCase_ = 12;
+              break;
+            }
+            case 114: {
+              emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll.Builder subBuilder = null;
+              if (opCase_ == 14) {
+                subBuilder = ((emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll) op_).toBuilder();
+              }
+              op_ =
+                  input.readMessage(emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll) op_);
+                op_ = subBuilder.buildPartial();
+              }
               opCase_ = 14;
               break;
             }
             case 122: {
-              emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPass.Builder subBuilder = null;
+              emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationReboot.Builder subBuilder = null;
               if (opCase_ == 15) {
-                subBuilder = ((emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPass) op_).toBuilder();
+                subBuilder = ((emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationReboot) op_).toBuilder();
               }
               op_ =
-                  input.readMessage(emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPass.parser(), extensionRegistry);
+                  input.readMessage(emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationReboot.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPass) op_);
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationReboot) op_);
                 op_ = subBuilder.buildPartial();
               }
               opCase_ = 15;
@@ -338,14 +338,14 @@ public final class GCGOperationOuterClass {
     public enum OpCase
         implements com.google.protobuf.Internal.EnumLite,
             com.google.protobuf.AbstractMessage.InternalOneOfEnum {
-      OP_REDRAW(3),
-      OP_SELECT_ON_STAGE(14),
-      OP_REROLL(6),
-      OP_ATTACK(2),
-      OP_PASS(15),
-      OP_PLAY_CARD(9),
-      OP_REBOOT(12),
-      OP_SURRENDER(4),
+      OP_REDRAW(6),
+      OP_SELECT_ON_STAGE(12),
+      OP_REROLL(14),
+      OP_ATTACK(11),
+      OP_PASS(2),
+      OP_PLAY_CARD(8),
+      OP_REBOOT(15),
+      OP_SURRENDER(9),
       OP_NOT_SET(0);
       private final int value;
       private OpCase(int value) {
@@ -363,14 +363,14 @@ public final class GCGOperationOuterClass {
 
       public static OpCase forNumber(int value) {
         switch (value) {
-          case 3: return OP_REDRAW;
-          case 14: return OP_SELECT_ON_STAGE;
-          case 6: return OP_REROLL;
-          case 2: return OP_ATTACK;
-          case 15: return OP_PASS;
-          case 9: return OP_PLAY_CARD;
-          case 12: return OP_REBOOT;
-          case 4: return OP_SURRENDER;
+          case 6: return OP_REDRAW;
+          case 12: return OP_SELECT_ON_STAGE;
+          case 14: return OP_REROLL;
+          case 11: return OP_ATTACK;
+          case 2: return OP_PASS;
+          case 8: return OP_PLAY_CARD;
+          case 15: return OP_REBOOT;
+          case 9: return OP_SURRENDER;
           case 0: return OP_NOT_SET;
           default: return null;
         }
@@ -386,249 +386,249 @@ public final class GCGOperationOuterClass {
           opCase_);
     }
 
-    public static final int OP_REDRAW_FIELD_NUMBER = 3;
+    public static final int OP_REDRAW_FIELD_NUMBER = 6;
     /**
-     * <code>.GCGOperationRedraw op_redraw = 3;</code>
+     * <code>.GCGOperationRedraw op_redraw = 6;</code>
      * @return Whether the opRedraw field is set.
      */
     @java.lang.Override
     public boolean hasOpRedraw() {
-      return opCase_ == 3;
+      return opCase_ == 6;
     }
     /**
-     * <code>.GCGOperationRedraw op_redraw = 3;</code>
+     * <code>.GCGOperationRedraw op_redraw = 6;</code>
      * @return The opRedraw.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedraw getOpRedraw() {
-      if (opCase_ == 3) {
+      if (opCase_ == 6) {
          return (emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedraw) op_;
       }
       return emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedraw.getDefaultInstance();
     }
     /**
-     * <code>.GCGOperationRedraw op_redraw = 3;</code>
+     * <code>.GCGOperationRedraw op_redraw = 6;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedrawOrBuilder getOpRedrawOrBuilder() {
-      if (opCase_ == 3) {
+      if (opCase_ == 6) {
          return (emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedraw) op_;
       }
       return emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedraw.getDefaultInstance();
     }
 
-    public static final int OP_SELECT_ON_STAGE_FIELD_NUMBER = 14;
+    public static final int OP_SELECT_ON_STAGE_FIELD_NUMBER = 12;
     /**
-     * <code>.GCGOperationOnStageSelect op_select_on_stage = 14;</code>
+     * <code>.GCGOperationOnStageSelect op_select_on_stage = 12;</code>
      * @return Whether the opSelectOnStage field is set.
      */
     @java.lang.Override
     public boolean hasOpSelectOnStage() {
-      return opCase_ == 14;
+      return opCase_ == 12;
     }
     /**
-     * <code>.GCGOperationOnStageSelect op_select_on_stage = 14;</code>
+     * <code>.GCGOperationOnStageSelect op_select_on_stage = 12;</code>
      * @return The opSelectOnStage.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect getOpSelectOnStage() {
-      if (opCase_ == 14) {
+      if (opCase_ == 12) {
          return (emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect) op_;
       }
       return emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect.getDefaultInstance();
     }
     /**
-     * <code>.GCGOperationOnStageSelect op_select_on_stage = 14;</code>
+     * <code>.GCGOperationOnStageSelect op_select_on_stage = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelectOrBuilder getOpSelectOnStageOrBuilder() {
-      if (opCase_ == 14) {
+      if (opCase_ == 12) {
          return (emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect) op_;
       }
       return emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect.getDefaultInstance();
     }
 
-    public static final int OP_REROLL_FIELD_NUMBER = 6;
+    public static final int OP_REROLL_FIELD_NUMBER = 14;
     /**
-     * <code>.GCGOperationReroll op_reroll = 6;</code>
+     * <code>.GCGOperationReroll op_reroll = 14;</code>
      * @return Whether the opReroll field is set.
      */
     @java.lang.Override
     public boolean hasOpReroll() {
-      return opCase_ == 6;
+      return opCase_ == 14;
     }
     /**
-     * <code>.GCGOperationReroll op_reroll = 6;</code>
+     * <code>.GCGOperationReroll op_reroll = 14;</code>
      * @return The opReroll.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll getOpReroll() {
-      if (opCase_ == 6) {
+      if (opCase_ == 14) {
          return (emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll) op_;
       }
       return emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll.getDefaultInstance();
     }
     /**
-     * <code>.GCGOperationReroll op_reroll = 6;</code>
+     * <code>.GCGOperationReroll op_reroll = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationRerollOrBuilder getOpRerollOrBuilder() {
-      if (opCase_ == 6) {
+      if (opCase_ == 14) {
          return (emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll) op_;
       }
       return emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll.getDefaultInstance();
     }
 
-    public static final int OP_ATTACK_FIELD_NUMBER = 2;
+    public static final int OP_ATTACK_FIELD_NUMBER = 11;
     /**
-     * <code>.GCGOperationAttack op_attack = 2;</code>
+     * <code>.GCGOperationAttack op_attack = 11;</code>
      * @return Whether the opAttack field is set.
      */
     @java.lang.Override
     public boolean hasOpAttack() {
-      return opCase_ == 2;
+      return opCase_ == 11;
     }
     /**
-     * <code>.GCGOperationAttack op_attack = 2;</code>
+     * <code>.GCGOperationAttack op_attack = 11;</code>
      * @return The opAttack.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack getOpAttack() {
-      if (opCase_ == 2) {
+      if (opCase_ == 11) {
          return (emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack) op_;
       }
       return emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack.getDefaultInstance();
     }
     /**
-     * <code>.GCGOperationAttack op_attack = 2;</code>
+     * <code>.GCGOperationAttack op_attack = 11;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttackOrBuilder getOpAttackOrBuilder() {
-      if (opCase_ == 2) {
+      if (opCase_ == 11) {
          return (emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack) op_;
       }
       return emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack.getDefaultInstance();
     }
 
-    public static final int OP_PASS_FIELD_NUMBER = 15;
+    public static final int OP_PASS_FIELD_NUMBER = 2;
     /**
-     * <code>.GCGOperationPass op_pass = 15;</code>
+     * <code>.GCGOperationPass op_pass = 2;</code>
      * @return Whether the opPass field is set.
      */
     @java.lang.Override
     public boolean hasOpPass() {
-      return opCase_ == 15;
+      return opCase_ == 2;
     }
     /**
-     * <code>.GCGOperationPass op_pass = 15;</code>
+     * <code>.GCGOperationPass op_pass = 2;</code>
      * @return The opPass.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPass getOpPass() {
-      if (opCase_ == 15) {
+      if (opCase_ == 2) {
          return (emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPass) op_;
       }
       return emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPass.getDefaultInstance();
     }
     /**
-     * <code>.GCGOperationPass op_pass = 15;</code>
+     * <code>.GCGOperationPass op_pass = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPassOrBuilder getOpPassOrBuilder() {
-      if (opCase_ == 15) {
+      if (opCase_ == 2) {
          return (emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPass) op_;
       }
       return emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPass.getDefaultInstance();
     }
 
-    public static final int OP_PLAY_CARD_FIELD_NUMBER = 9;
+    public static final int OP_PLAY_CARD_FIELD_NUMBER = 8;
     /**
-     * <code>.GCGOperationPlayCard op_play_card = 9;</code>
+     * <code>.GCGOperationPlayCard op_play_card = 8;</code>
      * @return Whether the opPlayCard field is set.
      */
     @java.lang.Override
     public boolean hasOpPlayCard() {
-      return opCase_ == 9;
+      return opCase_ == 8;
     }
     /**
-     * <code>.GCGOperationPlayCard op_play_card = 9;</code>
+     * <code>.GCGOperationPlayCard op_play_card = 8;</code>
      * @return The opPlayCard.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard getOpPlayCard() {
-      if (opCase_ == 9) {
+      if (opCase_ == 8) {
          return (emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard) op_;
       }
       return emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard.getDefaultInstance();
     }
     /**
-     * <code>.GCGOperationPlayCard op_play_card = 9;</code>
+     * <code>.GCGOperationPlayCard op_play_card = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCardOrBuilder getOpPlayCardOrBuilder() {
-      if (opCase_ == 9) {
+      if (opCase_ == 8) {
          return (emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard) op_;
       }
       return emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard.getDefaultInstance();
     }
 
-    public static final int OP_REBOOT_FIELD_NUMBER = 12;
+    public static final int OP_REBOOT_FIELD_NUMBER = 15;
     /**
-     * <code>.GCGOperationReboot op_reboot = 12;</code>
+     * <code>.GCGOperationReboot op_reboot = 15;</code>
      * @return Whether the opReboot field is set.
      */
     @java.lang.Override
     public boolean hasOpReboot() {
-      return opCase_ == 12;
+      return opCase_ == 15;
     }
     /**
-     * <code>.GCGOperationReboot op_reboot = 12;</code>
+     * <code>.GCGOperationReboot op_reboot = 15;</code>
      * @return The opReboot.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationReboot getOpReboot() {
-      if (opCase_ == 12) {
+      if (opCase_ == 15) {
          return (emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationReboot) op_;
       }
       return emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationReboot.getDefaultInstance();
     }
     /**
-     * <code>.GCGOperationReboot op_reboot = 12;</code>
+     * <code>.GCGOperationReboot op_reboot = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationRebootOrBuilder getOpRebootOrBuilder() {
-      if (opCase_ == 12) {
+      if (opCase_ == 15) {
          return (emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationReboot) op_;
       }
       return emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationReboot.getDefaultInstance();
     }
 
-    public static final int OP_SURRENDER_FIELD_NUMBER = 4;
+    public static final int OP_SURRENDER_FIELD_NUMBER = 9;
     /**
-     * <code>.GCGOperationSurrender op_surrender = 4;</code>
+     * <code>.GCGOperationSurrender op_surrender = 9;</code>
      * @return Whether the opSurrender field is set.
      */
     @java.lang.Override
     public boolean hasOpSurrender() {
-      return opCase_ == 4;
+      return opCase_ == 9;
     }
     /**
-     * <code>.GCGOperationSurrender op_surrender = 4;</code>
+     * <code>.GCGOperationSurrender op_surrender = 9;</code>
      * @return The opSurrender.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrender getOpSurrender() {
-      if (opCase_ == 4) {
+      if (opCase_ == 9) {
          return (emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrender) op_;
       }
       return emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrender.getDefaultInstance();
     }
     /**
-     * <code>.GCGOperationSurrender op_surrender = 4;</code>
+     * <code>.GCGOperationSurrender op_surrender = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrenderOrBuilder getOpSurrenderOrBuilder() {
-      if (opCase_ == 4) {
+      if (opCase_ == 9) {
          return (emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrender) op_;
       }
       return emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrender.getDefaultInstance();
@@ -649,28 +649,28 @@ public final class GCGOperationOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (opCase_ == 2) {
-        output.writeMessage(2, (emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack) op_);
-      }
-      if (opCase_ == 3) {
-        output.writeMessage(3, (emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedraw) op_);
-      }
-      if (opCase_ == 4) {
-        output.writeMessage(4, (emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrender) op_);
+        output.writeMessage(2, (emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPass) op_);
       }
       if (opCase_ == 6) {
-        output.writeMessage(6, (emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll) op_);
+        output.writeMessage(6, (emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedraw) op_);
+      }
+      if (opCase_ == 8) {
+        output.writeMessage(8, (emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard) op_);
       }
       if (opCase_ == 9) {
-        output.writeMessage(9, (emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard) op_);
+        output.writeMessage(9, (emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrender) op_);
+      }
+      if (opCase_ == 11) {
+        output.writeMessage(11, (emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack) op_);
       }
       if (opCase_ == 12) {
-        output.writeMessage(12, (emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationReboot) op_);
+        output.writeMessage(12, (emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect) op_);
       }
       if (opCase_ == 14) {
-        output.writeMessage(14, (emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect) op_);
+        output.writeMessage(14, (emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll) op_);
       }
       if (opCase_ == 15) {
-        output.writeMessage(15, (emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPass) op_);
+        output.writeMessage(15, (emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationReboot) op_);
       }
       unknownFields.writeTo(output);
     }
@@ -683,35 +683,35 @@ public final class GCGOperationOuterClass {
       size = 0;
       if (opCase_ == 2) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, (emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack) op_);
-      }
-      if (opCase_ == 3) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, (emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedraw) op_);
-      }
-      if (opCase_ == 4) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, (emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrender) op_);
+          .computeMessageSize(2, (emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPass) op_);
       }
       if (opCase_ == 6) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, (emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll) op_);
+          .computeMessageSize(6, (emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedraw) op_);
+      }
+      if (opCase_ == 8) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(8, (emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard) op_);
       }
       if (opCase_ == 9) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, (emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard) op_);
+          .computeMessageSize(9, (emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrender) op_);
+      }
+      if (opCase_ == 11) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(11, (emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack) op_);
       }
       if (opCase_ == 12) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, (emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationReboot) op_);
+          .computeMessageSize(12, (emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect) op_);
       }
       if (opCase_ == 14) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, (emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect) op_);
+          .computeMessageSize(14, (emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll) op_);
       }
       if (opCase_ == 15) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, (emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPass) op_);
+          .computeMessageSize(15, (emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationReboot) op_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -730,35 +730,35 @@ public final class GCGOperationOuterClass {
 
       if (!getOpCase().equals(other.getOpCase())) return false;
       switch (opCase_) {
-        case 3:
+        case 6:
           if (!getOpRedraw()
               .equals(other.getOpRedraw())) return false;
           break;
-        case 14:
+        case 12:
           if (!getOpSelectOnStage()
               .equals(other.getOpSelectOnStage())) return false;
           break;
-        case 6:
+        case 14:
           if (!getOpReroll()
               .equals(other.getOpReroll())) return false;
           break;
-        case 2:
+        case 11:
           if (!getOpAttack()
               .equals(other.getOpAttack())) return false;
           break;
-        case 15:
+        case 2:
           if (!getOpPass()
               .equals(other.getOpPass())) return false;
           break;
-        case 9:
+        case 8:
           if (!getOpPlayCard()
               .equals(other.getOpPlayCard())) return false;
           break;
-        case 12:
+        case 15:
           if (!getOpReboot()
               .equals(other.getOpReboot())) return false;
           break;
-        case 4:
+        case 9:
           if (!getOpSurrender()
               .equals(other.getOpSurrender())) return false;
           break;
@@ -777,35 +777,35 @@ public final class GCGOperationOuterClass {
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
       switch (opCase_) {
-        case 3:
+        case 6:
           hash = (37 * hash) + OP_REDRAW_FIELD_NUMBER;
           hash = (53 * hash) + getOpRedraw().hashCode();
           break;
-        case 14:
+        case 12:
           hash = (37 * hash) + OP_SELECT_ON_STAGE_FIELD_NUMBER;
           hash = (53 * hash) + getOpSelectOnStage().hashCode();
           break;
-        case 6:
+        case 14:
           hash = (37 * hash) + OP_REROLL_FIELD_NUMBER;
           hash = (53 * hash) + getOpReroll().hashCode();
           break;
-        case 2:
+        case 11:
           hash = (37 * hash) + OP_ATTACK_FIELD_NUMBER;
           hash = (53 * hash) + getOpAttack().hashCode();
           break;
-        case 15:
+        case 2:
           hash = (37 * hash) + OP_PASS_FIELD_NUMBER;
           hash = (53 * hash) + getOpPass().hashCode();
           break;
-        case 9:
+        case 8:
           hash = (37 * hash) + OP_PLAY_CARD_FIELD_NUMBER;
           hash = (53 * hash) + getOpPlayCard().hashCode();
           break;
-        case 12:
+        case 15:
           hash = (37 * hash) + OP_REBOOT_FIELD_NUMBER;
           hash = (53 * hash) + getOpReboot().hashCode();
           break;
-        case 4:
+        case 9:
           hash = (37 * hash) + OP_SURRENDER_FIELD_NUMBER;
           hash = (53 * hash) + getOpSurrender().hashCode();
           break;
@@ -909,7 +909,7 @@ public final class GCGOperationOuterClass {
     }
     /**
      * <pre>
-     * Name: AOBAFNIHINJ
+     * Obf: LMDBIHEBAJM
      * </pre>
      *
      * Protobuf type {@code GCGOperation}
@@ -977,56 +977,56 @@ public final class GCGOperationOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGOperationOuterClass.GCGOperation buildPartial() {
         emu.grasscutter.net.proto.GCGOperationOuterClass.GCGOperation result = new emu.grasscutter.net.proto.GCGOperationOuterClass.GCGOperation(this);
-        if (opCase_ == 3) {
+        if (opCase_ == 6) {
           if (opRedrawBuilder_ == null) {
             result.op_ = op_;
           } else {
             result.op_ = opRedrawBuilder_.build();
           }
         }
-        if (opCase_ == 14) {
+        if (opCase_ == 12) {
           if (opSelectOnStageBuilder_ == null) {
             result.op_ = op_;
           } else {
             result.op_ = opSelectOnStageBuilder_.build();
           }
         }
-        if (opCase_ == 6) {
+        if (opCase_ == 14) {
           if (opRerollBuilder_ == null) {
             result.op_ = op_;
           } else {
             result.op_ = opRerollBuilder_.build();
           }
         }
-        if (opCase_ == 2) {
+        if (opCase_ == 11) {
           if (opAttackBuilder_ == null) {
             result.op_ = op_;
           } else {
             result.op_ = opAttackBuilder_.build();
           }
         }
-        if (opCase_ == 15) {
+        if (opCase_ == 2) {
           if (opPassBuilder_ == null) {
             result.op_ = op_;
           } else {
             result.op_ = opPassBuilder_.build();
           }
         }
-        if (opCase_ == 9) {
+        if (opCase_ == 8) {
           if (opPlayCardBuilder_ == null) {
             result.op_ = op_;
           } else {
             result.op_ = opPlayCardBuilder_.build();
           }
         }
-        if (opCase_ == 12) {
+        if (opCase_ == 15) {
           if (opRebootBuilder_ == null) {
             result.op_ = op_;
           } else {
             result.op_ = opRebootBuilder_.build();
           }
         }
-        if (opCase_ == 4) {
+        if (opCase_ == 9) {
           if (opSurrenderBuilder_ == null) {
             result.op_ = op_;
           } else {
@@ -1166,33 +1166,33 @@ public final class GCGOperationOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedraw, emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedraw.Builder, emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedrawOrBuilder> opRedrawBuilder_;
       /**
-       * <code>.GCGOperationRedraw op_redraw = 3;</code>
+       * <code>.GCGOperationRedraw op_redraw = 6;</code>
        * @return Whether the opRedraw field is set.
        */
       @java.lang.Override
       public boolean hasOpRedraw() {
-        return opCase_ == 3;
+        return opCase_ == 6;
       }
       /**
-       * <code>.GCGOperationRedraw op_redraw = 3;</code>
+       * <code>.GCGOperationRedraw op_redraw = 6;</code>
        * @return The opRedraw.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedraw getOpRedraw() {
         if (opRedrawBuilder_ == null) {
-          if (opCase_ == 3) {
+          if (opCase_ == 6) {
             return (emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedraw) op_;
           }
           return emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedraw.getDefaultInstance();
         } else {
-          if (opCase_ == 3) {
+          if (opCase_ == 6) {
             return opRedrawBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedraw.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGOperationRedraw op_redraw = 3;</code>
+       * <code>.GCGOperationRedraw op_redraw = 6;</code>
        */
       public Builder setOpRedraw(emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedraw value) {
         if (opRedrawBuilder_ == null) {
@@ -1204,11 +1204,11 @@ public final class GCGOperationOuterClass {
         } else {
           opRedrawBuilder_.setMessage(value);
         }
-        opCase_ = 3;
+        opCase_ = 6;
         return this;
       }
       /**
-       * <code>.GCGOperationRedraw op_redraw = 3;</code>
+       * <code>.GCGOperationRedraw op_redraw = 6;</code>
        */
       public Builder setOpRedraw(
           emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedraw.Builder builderForValue) {
@@ -1218,15 +1218,15 @@ public final class GCGOperationOuterClass {
         } else {
           opRedrawBuilder_.setMessage(builderForValue.build());
         }
-        opCase_ = 3;
+        opCase_ = 6;
         return this;
       }
       /**
-       * <code>.GCGOperationRedraw op_redraw = 3;</code>
+       * <code>.GCGOperationRedraw op_redraw = 6;</code>
        */
       public Builder mergeOpRedraw(emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedraw value) {
         if (opRedrawBuilder_ == null) {
-          if (opCase_ == 3 &&
+          if (opCase_ == 6 &&
               op_ != emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedraw.getDefaultInstance()) {
             op_ = emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedraw.newBuilder((emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedraw) op_)
                 .mergeFrom(value).buildPartial();
@@ -1235,26 +1235,26 @@ public final class GCGOperationOuterClass {
           }
           onChanged();
         } else {
-          if (opCase_ == 3) {
+          if (opCase_ == 6) {
             opRedrawBuilder_.mergeFrom(value);
           }
           opRedrawBuilder_.setMessage(value);
         }
-        opCase_ = 3;
+        opCase_ = 6;
         return this;
       }
       /**
-       * <code>.GCGOperationRedraw op_redraw = 3;</code>
+       * <code>.GCGOperationRedraw op_redraw = 6;</code>
        */
       public Builder clearOpRedraw() {
         if (opRedrawBuilder_ == null) {
-          if (opCase_ == 3) {
+          if (opCase_ == 6) {
             opCase_ = 0;
             op_ = null;
             onChanged();
           }
         } else {
-          if (opCase_ == 3) {
+          if (opCase_ == 6) {
             opCase_ = 0;
             op_ = null;
           }
@@ -1263,33 +1263,33 @@ public final class GCGOperationOuterClass {
         return this;
       }
       /**
-       * <code>.GCGOperationRedraw op_redraw = 3;</code>
+       * <code>.GCGOperationRedraw op_redraw = 6;</code>
        */
       public emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedraw.Builder getOpRedrawBuilder() {
         return getOpRedrawFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGOperationRedraw op_redraw = 3;</code>
+       * <code>.GCGOperationRedraw op_redraw = 6;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedrawOrBuilder getOpRedrawOrBuilder() {
-        if ((opCase_ == 3) && (opRedrawBuilder_ != null)) {
+        if ((opCase_ == 6) && (opRedrawBuilder_ != null)) {
           return opRedrawBuilder_.getMessageOrBuilder();
         } else {
-          if (opCase_ == 3) {
+          if (opCase_ == 6) {
             return (emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedraw) op_;
           }
           return emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedraw.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGOperationRedraw op_redraw = 3;</code>
+       * <code>.GCGOperationRedraw op_redraw = 6;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedraw, emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedraw.Builder, emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedrawOrBuilder> 
           getOpRedrawFieldBuilder() {
         if (opRedrawBuilder_ == null) {
-          if (!(opCase_ == 3)) {
+          if (!(opCase_ == 6)) {
             op_ = emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.GCGOperationRedraw.getDefaultInstance();
           }
           opRedrawBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -1299,7 +1299,7 @@ public final class GCGOperationOuterClass {
                   isClean());
           op_ = null;
         }
-        opCase_ = 3;
+        opCase_ = 6;
         onChanged();;
         return opRedrawBuilder_;
       }
@@ -1307,33 +1307,33 @@ public final class GCGOperationOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect, emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect.Builder, emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelectOrBuilder> opSelectOnStageBuilder_;
       /**
-       * <code>.GCGOperationOnStageSelect op_select_on_stage = 14;</code>
+       * <code>.GCGOperationOnStageSelect op_select_on_stage = 12;</code>
        * @return Whether the opSelectOnStage field is set.
        */
       @java.lang.Override
       public boolean hasOpSelectOnStage() {
-        return opCase_ == 14;
+        return opCase_ == 12;
       }
       /**
-       * <code>.GCGOperationOnStageSelect op_select_on_stage = 14;</code>
+       * <code>.GCGOperationOnStageSelect op_select_on_stage = 12;</code>
        * @return The opSelectOnStage.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect getOpSelectOnStage() {
         if (opSelectOnStageBuilder_ == null) {
-          if (opCase_ == 14) {
+          if (opCase_ == 12) {
             return (emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect) op_;
           }
           return emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect.getDefaultInstance();
         } else {
-          if (opCase_ == 14) {
+          if (opCase_ == 12) {
             return opSelectOnStageBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGOperationOnStageSelect op_select_on_stage = 14;</code>
+       * <code>.GCGOperationOnStageSelect op_select_on_stage = 12;</code>
        */
       public Builder setOpSelectOnStage(emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect value) {
         if (opSelectOnStageBuilder_ == null) {
@@ -1345,11 +1345,11 @@ public final class GCGOperationOuterClass {
         } else {
           opSelectOnStageBuilder_.setMessage(value);
         }
-        opCase_ = 14;
+        opCase_ = 12;
         return this;
       }
       /**
-       * <code>.GCGOperationOnStageSelect op_select_on_stage = 14;</code>
+       * <code>.GCGOperationOnStageSelect op_select_on_stage = 12;</code>
        */
       public Builder setOpSelectOnStage(
           emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect.Builder builderForValue) {
@@ -1359,15 +1359,15 @@ public final class GCGOperationOuterClass {
         } else {
           opSelectOnStageBuilder_.setMessage(builderForValue.build());
         }
-        opCase_ = 14;
+        opCase_ = 12;
         return this;
       }
       /**
-       * <code>.GCGOperationOnStageSelect op_select_on_stage = 14;</code>
+       * <code>.GCGOperationOnStageSelect op_select_on_stage = 12;</code>
        */
       public Builder mergeOpSelectOnStage(emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect value) {
         if (opSelectOnStageBuilder_ == null) {
-          if (opCase_ == 14 &&
+          if (opCase_ == 12 &&
               op_ != emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect.getDefaultInstance()) {
             op_ = emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect.newBuilder((emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect) op_)
                 .mergeFrom(value).buildPartial();
@@ -1376,26 +1376,26 @@ public final class GCGOperationOuterClass {
           }
           onChanged();
         } else {
-          if (opCase_ == 14) {
+          if (opCase_ == 12) {
             opSelectOnStageBuilder_.mergeFrom(value);
           }
           opSelectOnStageBuilder_.setMessage(value);
         }
-        opCase_ = 14;
+        opCase_ = 12;
         return this;
       }
       /**
-       * <code>.GCGOperationOnStageSelect op_select_on_stage = 14;</code>
+       * <code>.GCGOperationOnStageSelect op_select_on_stage = 12;</code>
        */
       public Builder clearOpSelectOnStage() {
         if (opSelectOnStageBuilder_ == null) {
-          if (opCase_ == 14) {
+          if (opCase_ == 12) {
             opCase_ = 0;
             op_ = null;
             onChanged();
           }
         } else {
-          if (opCase_ == 14) {
+          if (opCase_ == 12) {
             opCase_ = 0;
             op_ = null;
           }
@@ -1404,33 +1404,33 @@ public final class GCGOperationOuterClass {
         return this;
       }
       /**
-       * <code>.GCGOperationOnStageSelect op_select_on_stage = 14;</code>
+       * <code>.GCGOperationOnStageSelect op_select_on_stage = 12;</code>
        */
       public emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect.Builder getOpSelectOnStageBuilder() {
         return getOpSelectOnStageFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGOperationOnStageSelect op_select_on_stage = 14;</code>
+       * <code>.GCGOperationOnStageSelect op_select_on_stage = 12;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelectOrBuilder getOpSelectOnStageOrBuilder() {
-        if ((opCase_ == 14) && (opSelectOnStageBuilder_ != null)) {
+        if ((opCase_ == 12) && (opSelectOnStageBuilder_ != null)) {
           return opSelectOnStageBuilder_.getMessageOrBuilder();
         } else {
-          if (opCase_ == 14) {
+          if (opCase_ == 12) {
             return (emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect) op_;
           }
           return emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGOperationOnStageSelect op_select_on_stage = 14;</code>
+       * <code>.GCGOperationOnStageSelect op_select_on_stage = 12;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect, emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect.Builder, emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelectOrBuilder> 
           getOpSelectOnStageFieldBuilder() {
         if (opSelectOnStageBuilder_ == null) {
-          if (!(opCase_ == 14)) {
+          if (!(opCase_ == 12)) {
             op_ = emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.GCGOperationOnStageSelect.getDefaultInstance();
           }
           opSelectOnStageBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -1440,7 +1440,7 @@ public final class GCGOperationOuterClass {
                   isClean());
           op_ = null;
         }
-        opCase_ = 14;
+        opCase_ = 12;
         onChanged();;
         return opSelectOnStageBuilder_;
       }
@@ -1448,33 +1448,33 @@ public final class GCGOperationOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll, emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll.Builder, emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationRerollOrBuilder> opRerollBuilder_;
       /**
-       * <code>.GCGOperationReroll op_reroll = 6;</code>
+       * <code>.GCGOperationReroll op_reroll = 14;</code>
        * @return Whether the opReroll field is set.
        */
       @java.lang.Override
       public boolean hasOpReroll() {
-        return opCase_ == 6;
+        return opCase_ == 14;
       }
       /**
-       * <code>.GCGOperationReroll op_reroll = 6;</code>
+       * <code>.GCGOperationReroll op_reroll = 14;</code>
        * @return The opReroll.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll getOpReroll() {
         if (opRerollBuilder_ == null) {
-          if (opCase_ == 6) {
+          if (opCase_ == 14) {
             return (emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll) op_;
           }
           return emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll.getDefaultInstance();
         } else {
-          if (opCase_ == 6) {
+          if (opCase_ == 14) {
             return opRerollBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGOperationReroll op_reroll = 6;</code>
+       * <code>.GCGOperationReroll op_reroll = 14;</code>
        */
       public Builder setOpReroll(emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll value) {
         if (opRerollBuilder_ == null) {
@@ -1486,11 +1486,11 @@ public final class GCGOperationOuterClass {
         } else {
           opRerollBuilder_.setMessage(value);
         }
-        opCase_ = 6;
+        opCase_ = 14;
         return this;
       }
       /**
-       * <code>.GCGOperationReroll op_reroll = 6;</code>
+       * <code>.GCGOperationReroll op_reroll = 14;</code>
        */
       public Builder setOpReroll(
           emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll.Builder builderForValue) {
@@ -1500,15 +1500,15 @@ public final class GCGOperationOuterClass {
         } else {
           opRerollBuilder_.setMessage(builderForValue.build());
         }
-        opCase_ = 6;
+        opCase_ = 14;
         return this;
       }
       /**
-       * <code>.GCGOperationReroll op_reroll = 6;</code>
+       * <code>.GCGOperationReroll op_reroll = 14;</code>
        */
       public Builder mergeOpReroll(emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll value) {
         if (opRerollBuilder_ == null) {
-          if (opCase_ == 6 &&
+          if (opCase_ == 14 &&
               op_ != emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll.getDefaultInstance()) {
             op_ = emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll.newBuilder((emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll) op_)
                 .mergeFrom(value).buildPartial();
@@ -1517,26 +1517,26 @@ public final class GCGOperationOuterClass {
           }
           onChanged();
         } else {
-          if (opCase_ == 6) {
+          if (opCase_ == 14) {
             opRerollBuilder_.mergeFrom(value);
           }
           opRerollBuilder_.setMessage(value);
         }
-        opCase_ = 6;
+        opCase_ = 14;
         return this;
       }
       /**
-       * <code>.GCGOperationReroll op_reroll = 6;</code>
+       * <code>.GCGOperationReroll op_reroll = 14;</code>
        */
       public Builder clearOpReroll() {
         if (opRerollBuilder_ == null) {
-          if (opCase_ == 6) {
+          if (opCase_ == 14) {
             opCase_ = 0;
             op_ = null;
             onChanged();
           }
         } else {
-          if (opCase_ == 6) {
+          if (opCase_ == 14) {
             opCase_ = 0;
             op_ = null;
           }
@@ -1545,33 +1545,33 @@ public final class GCGOperationOuterClass {
         return this;
       }
       /**
-       * <code>.GCGOperationReroll op_reroll = 6;</code>
+       * <code>.GCGOperationReroll op_reroll = 14;</code>
        */
       public emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll.Builder getOpRerollBuilder() {
         return getOpRerollFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGOperationReroll op_reroll = 6;</code>
+       * <code>.GCGOperationReroll op_reroll = 14;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationRerollOrBuilder getOpRerollOrBuilder() {
-        if ((opCase_ == 6) && (opRerollBuilder_ != null)) {
+        if ((opCase_ == 14) && (opRerollBuilder_ != null)) {
           return opRerollBuilder_.getMessageOrBuilder();
         } else {
-          if (opCase_ == 6) {
+          if (opCase_ == 14) {
             return (emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll) op_;
           }
           return emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGOperationReroll op_reroll = 6;</code>
+       * <code>.GCGOperationReroll op_reroll = 14;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll, emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll.Builder, emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationRerollOrBuilder> 
           getOpRerollFieldBuilder() {
         if (opRerollBuilder_ == null) {
-          if (!(opCase_ == 6)) {
+          if (!(opCase_ == 14)) {
             op_ = emu.grasscutter.net.proto.GCGOperationRerollOuterClass.GCGOperationReroll.getDefaultInstance();
           }
           opRerollBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -1581,7 +1581,7 @@ public final class GCGOperationOuterClass {
                   isClean());
           op_ = null;
         }
-        opCase_ = 6;
+        opCase_ = 14;
         onChanged();;
         return opRerollBuilder_;
       }
@@ -1589,33 +1589,33 @@ public final class GCGOperationOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack, emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack.Builder, emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttackOrBuilder> opAttackBuilder_;
       /**
-       * <code>.GCGOperationAttack op_attack = 2;</code>
+       * <code>.GCGOperationAttack op_attack = 11;</code>
        * @return Whether the opAttack field is set.
        */
       @java.lang.Override
       public boolean hasOpAttack() {
-        return opCase_ == 2;
+        return opCase_ == 11;
       }
       /**
-       * <code>.GCGOperationAttack op_attack = 2;</code>
+       * <code>.GCGOperationAttack op_attack = 11;</code>
        * @return The opAttack.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack getOpAttack() {
         if (opAttackBuilder_ == null) {
-          if (opCase_ == 2) {
+          if (opCase_ == 11) {
             return (emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack) op_;
           }
           return emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack.getDefaultInstance();
         } else {
-          if (opCase_ == 2) {
+          if (opCase_ == 11) {
             return opAttackBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGOperationAttack op_attack = 2;</code>
+       * <code>.GCGOperationAttack op_attack = 11;</code>
        */
       public Builder setOpAttack(emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack value) {
         if (opAttackBuilder_ == null) {
@@ -1627,11 +1627,11 @@ public final class GCGOperationOuterClass {
         } else {
           opAttackBuilder_.setMessage(value);
         }
-        opCase_ = 2;
+        opCase_ = 11;
         return this;
       }
       /**
-       * <code>.GCGOperationAttack op_attack = 2;</code>
+       * <code>.GCGOperationAttack op_attack = 11;</code>
        */
       public Builder setOpAttack(
           emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack.Builder builderForValue) {
@@ -1641,15 +1641,15 @@ public final class GCGOperationOuterClass {
         } else {
           opAttackBuilder_.setMessage(builderForValue.build());
         }
-        opCase_ = 2;
+        opCase_ = 11;
         return this;
       }
       /**
-       * <code>.GCGOperationAttack op_attack = 2;</code>
+       * <code>.GCGOperationAttack op_attack = 11;</code>
        */
       public Builder mergeOpAttack(emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack value) {
         if (opAttackBuilder_ == null) {
-          if (opCase_ == 2 &&
+          if (opCase_ == 11 &&
               op_ != emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack.getDefaultInstance()) {
             op_ = emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack.newBuilder((emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack) op_)
                 .mergeFrom(value).buildPartial();
@@ -1658,26 +1658,26 @@ public final class GCGOperationOuterClass {
           }
           onChanged();
         } else {
-          if (opCase_ == 2) {
+          if (opCase_ == 11) {
             opAttackBuilder_.mergeFrom(value);
           }
           opAttackBuilder_.setMessage(value);
         }
-        opCase_ = 2;
+        opCase_ = 11;
         return this;
       }
       /**
-       * <code>.GCGOperationAttack op_attack = 2;</code>
+       * <code>.GCGOperationAttack op_attack = 11;</code>
        */
       public Builder clearOpAttack() {
         if (opAttackBuilder_ == null) {
-          if (opCase_ == 2) {
+          if (opCase_ == 11) {
             opCase_ = 0;
             op_ = null;
             onChanged();
           }
         } else {
-          if (opCase_ == 2) {
+          if (opCase_ == 11) {
             opCase_ = 0;
             op_ = null;
           }
@@ -1686,33 +1686,33 @@ public final class GCGOperationOuterClass {
         return this;
       }
       /**
-       * <code>.GCGOperationAttack op_attack = 2;</code>
+       * <code>.GCGOperationAttack op_attack = 11;</code>
        */
       public emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack.Builder getOpAttackBuilder() {
         return getOpAttackFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGOperationAttack op_attack = 2;</code>
+       * <code>.GCGOperationAttack op_attack = 11;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttackOrBuilder getOpAttackOrBuilder() {
-        if ((opCase_ == 2) && (opAttackBuilder_ != null)) {
+        if ((opCase_ == 11) && (opAttackBuilder_ != null)) {
           return opAttackBuilder_.getMessageOrBuilder();
         } else {
-          if (opCase_ == 2) {
+          if (opCase_ == 11) {
             return (emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack) op_;
           }
           return emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGOperationAttack op_attack = 2;</code>
+       * <code>.GCGOperationAttack op_attack = 11;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack, emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack.Builder, emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttackOrBuilder> 
           getOpAttackFieldBuilder() {
         if (opAttackBuilder_ == null) {
-          if (!(opCase_ == 2)) {
+          if (!(opCase_ == 11)) {
             op_ = emu.grasscutter.net.proto.GCGOperationAttackOuterClass.GCGOperationAttack.getDefaultInstance();
           }
           opAttackBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -1722,7 +1722,7 @@ public final class GCGOperationOuterClass {
                   isClean());
           op_ = null;
         }
-        opCase_ = 2;
+        opCase_ = 11;
         onChanged();;
         return opAttackBuilder_;
       }
@@ -1730,33 +1730,33 @@ public final class GCGOperationOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPass, emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPass.Builder, emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPassOrBuilder> opPassBuilder_;
       /**
-       * <code>.GCGOperationPass op_pass = 15;</code>
+       * <code>.GCGOperationPass op_pass = 2;</code>
        * @return Whether the opPass field is set.
        */
       @java.lang.Override
       public boolean hasOpPass() {
-        return opCase_ == 15;
+        return opCase_ == 2;
       }
       /**
-       * <code>.GCGOperationPass op_pass = 15;</code>
+       * <code>.GCGOperationPass op_pass = 2;</code>
        * @return The opPass.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPass getOpPass() {
         if (opPassBuilder_ == null) {
-          if (opCase_ == 15) {
+          if (opCase_ == 2) {
             return (emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPass) op_;
           }
           return emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPass.getDefaultInstance();
         } else {
-          if (opCase_ == 15) {
+          if (opCase_ == 2) {
             return opPassBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPass.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGOperationPass op_pass = 15;</code>
+       * <code>.GCGOperationPass op_pass = 2;</code>
        */
       public Builder setOpPass(emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPass value) {
         if (opPassBuilder_ == null) {
@@ -1768,11 +1768,11 @@ public final class GCGOperationOuterClass {
         } else {
           opPassBuilder_.setMessage(value);
         }
-        opCase_ = 15;
+        opCase_ = 2;
         return this;
       }
       /**
-       * <code>.GCGOperationPass op_pass = 15;</code>
+       * <code>.GCGOperationPass op_pass = 2;</code>
        */
       public Builder setOpPass(
           emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPass.Builder builderForValue) {
@@ -1782,15 +1782,15 @@ public final class GCGOperationOuterClass {
         } else {
           opPassBuilder_.setMessage(builderForValue.build());
         }
-        opCase_ = 15;
+        opCase_ = 2;
         return this;
       }
       /**
-       * <code>.GCGOperationPass op_pass = 15;</code>
+       * <code>.GCGOperationPass op_pass = 2;</code>
        */
       public Builder mergeOpPass(emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPass value) {
         if (opPassBuilder_ == null) {
-          if (opCase_ == 15 &&
+          if (opCase_ == 2 &&
               op_ != emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPass.getDefaultInstance()) {
             op_ = emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPass.newBuilder((emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPass) op_)
                 .mergeFrom(value).buildPartial();
@@ -1799,26 +1799,26 @@ public final class GCGOperationOuterClass {
           }
           onChanged();
         } else {
-          if (opCase_ == 15) {
+          if (opCase_ == 2) {
             opPassBuilder_.mergeFrom(value);
           }
           opPassBuilder_.setMessage(value);
         }
-        opCase_ = 15;
+        opCase_ = 2;
         return this;
       }
       /**
-       * <code>.GCGOperationPass op_pass = 15;</code>
+       * <code>.GCGOperationPass op_pass = 2;</code>
        */
       public Builder clearOpPass() {
         if (opPassBuilder_ == null) {
-          if (opCase_ == 15) {
+          if (opCase_ == 2) {
             opCase_ = 0;
             op_ = null;
             onChanged();
           }
         } else {
-          if (opCase_ == 15) {
+          if (opCase_ == 2) {
             opCase_ = 0;
             op_ = null;
           }
@@ -1827,33 +1827,33 @@ public final class GCGOperationOuterClass {
         return this;
       }
       /**
-       * <code>.GCGOperationPass op_pass = 15;</code>
+       * <code>.GCGOperationPass op_pass = 2;</code>
        */
       public emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPass.Builder getOpPassBuilder() {
         return getOpPassFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGOperationPass op_pass = 15;</code>
+       * <code>.GCGOperationPass op_pass = 2;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPassOrBuilder getOpPassOrBuilder() {
-        if ((opCase_ == 15) && (opPassBuilder_ != null)) {
+        if ((opCase_ == 2) && (opPassBuilder_ != null)) {
           return opPassBuilder_.getMessageOrBuilder();
         } else {
-          if (opCase_ == 15) {
+          if (opCase_ == 2) {
             return (emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPass) op_;
           }
           return emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPass.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGOperationPass op_pass = 15;</code>
+       * <code>.GCGOperationPass op_pass = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPass, emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPass.Builder, emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPassOrBuilder> 
           getOpPassFieldBuilder() {
         if (opPassBuilder_ == null) {
-          if (!(opCase_ == 15)) {
+          if (!(opCase_ == 2)) {
             op_ = emu.grasscutter.net.proto.GCGOperationPassOuterClass.GCGOperationPass.getDefaultInstance();
           }
           opPassBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -1863,7 +1863,7 @@ public final class GCGOperationOuterClass {
                   isClean());
           op_ = null;
         }
-        opCase_ = 15;
+        opCase_ = 2;
         onChanged();;
         return opPassBuilder_;
       }
@@ -1871,33 +1871,33 @@ public final class GCGOperationOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard, emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard.Builder, emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCardOrBuilder> opPlayCardBuilder_;
       /**
-       * <code>.GCGOperationPlayCard op_play_card = 9;</code>
+       * <code>.GCGOperationPlayCard op_play_card = 8;</code>
        * @return Whether the opPlayCard field is set.
        */
       @java.lang.Override
       public boolean hasOpPlayCard() {
-        return opCase_ == 9;
+        return opCase_ == 8;
       }
       /**
-       * <code>.GCGOperationPlayCard op_play_card = 9;</code>
+       * <code>.GCGOperationPlayCard op_play_card = 8;</code>
        * @return The opPlayCard.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard getOpPlayCard() {
         if (opPlayCardBuilder_ == null) {
-          if (opCase_ == 9) {
+          if (opCase_ == 8) {
             return (emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard) op_;
           }
           return emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard.getDefaultInstance();
         } else {
-          if (opCase_ == 9) {
+          if (opCase_ == 8) {
             return opPlayCardBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGOperationPlayCard op_play_card = 9;</code>
+       * <code>.GCGOperationPlayCard op_play_card = 8;</code>
        */
       public Builder setOpPlayCard(emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard value) {
         if (opPlayCardBuilder_ == null) {
@@ -1909,11 +1909,11 @@ public final class GCGOperationOuterClass {
         } else {
           opPlayCardBuilder_.setMessage(value);
         }
-        opCase_ = 9;
+        opCase_ = 8;
         return this;
       }
       /**
-       * <code>.GCGOperationPlayCard op_play_card = 9;</code>
+       * <code>.GCGOperationPlayCard op_play_card = 8;</code>
        */
       public Builder setOpPlayCard(
           emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard.Builder builderForValue) {
@@ -1923,15 +1923,15 @@ public final class GCGOperationOuterClass {
         } else {
           opPlayCardBuilder_.setMessage(builderForValue.build());
         }
-        opCase_ = 9;
+        opCase_ = 8;
         return this;
       }
       /**
-       * <code>.GCGOperationPlayCard op_play_card = 9;</code>
+       * <code>.GCGOperationPlayCard op_play_card = 8;</code>
        */
       public Builder mergeOpPlayCard(emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard value) {
         if (opPlayCardBuilder_ == null) {
-          if (opCase_ == 9 &&
+          if (opCase_ == 8 &&
               op_ != emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard.getDefaultInstance()) {
             op_ = emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard.newBuilder((emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard) op_)
                 .mergeFrom(value).buildPartial();
@@ -1940,26 +1940,26 @@ public final class GCGOperationOuterClass {
           }
           onChanged();
         } else {
-          if (opCase_ == 9) {
+          if (opCase_ == 8) {
             opPlayCardBuilder_.mergeFrom(value);
           }
           opPlayCardBuilder_.setMessage(value);
         }
-        opCase_ = 9;
+        opCase_ = 8;
         return this;
       }
       /**
-       * <code>.GCGOperationPlayCard op_play_card = 9;</code>
+       * <code>.GCGOperationPlayCard op_play_card = 8;</code>
        */
       public Builder clearOpPlayCard() {
         if (opPlayCardBuilder_ == null) {
-          if (opCase_ == 9) {
+          if (opCase_ == 8) {
             opCase_ = 0;
             op_ = null;
             onChanged();
           }
         } else {
-          if (opCase_ == 9) {
+          if (opCase_ == 8) {
             opCase_ = 0;
             op_ = null;
           }
@@ -1968,33 +1968,33 @@ public final class GCGOperationOuterClass {
         return this;
       }
       /**
-       * <code>.GCGOperationPlayCard op_play_card = 9;</code>
+       * <code>.GCGOperationPlayCard op_play_card = 8;</code>
        */
       public emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard.Builder getOpPlayCardBuilder() {
         return getOpPlayCardFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGOperationPlayCard op_play_card = 9;</code>
+       * <code>.GCGOperationPlayCard op_play_card = 8;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCardOrBuilder getOpPlayCardOrBuilder() {
-        if ((opCase_ == 9) && (opPlayCardBuilder_ != null)) {
+        if ((opCase_ == 8) && (opPlayCardBuilder_ != null)) {
           return opPlayCardBuilder_.getMessageOrBuilder();
         } else {
-          if (opCase_ == 9) {
+          if (opCase_ == 8) {
             return (emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard) op_;
           }
           return emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGOperationPlayCard op_play_card = 9;</code>
+       * <code>.GCGOperationPlayCard op_play_card = 8;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard, emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard.Builder, emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCardOrBuilder> 
           getOpPlayCardFieldBuilder() {
         if (opPlayCardBuilder_ == null) {
-          if (!(opCase_ == 9)) {
+          if (!(opCase_ == 8)) {
             op_ = emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.GCGOperationPlayCard.getDefaultInstance();
           }
           opPlayCardBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -2004,7 +2004,7 @@ public final class GCGOperationOuterClass {
                   isClean());
           op_ = null;
         }
-        opCase_ = 9;
+        opCase_ = 8;
         onChanged();;
         return opPlayCardBuilder_;
       }
@@ -2012,33 +2012,33 @@ public final class GCGOperationOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationReboot, emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationReboot.Builder, emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationRebootOrBuilder> opRebootBuilder_;
       /**
-       * <code>.GCGOperationReboot op_reboot = 12;</code>
+       * <code>.GCGOperationReboot op_reboot = 15;</code>
        * @return Whether the opReboot field is set.
        */
       @java.lang.Override
       public boolean hasOpReboot() {
-        return opCase_ == 12;
+        return opCase_ == 15;
       }
       /**
-       * <code>.GCGOperationReboot op_reboot = 12;</code>
+       * <code>.GCGOperationReboot op_reboot = 15;</code>
        * @return The opReboot.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationReboot getOpReboot() {
         if (opRebootBuilder_ == null) {
-          if (opCase_ == 12) {
+          if (opCase_ == 15) {
             return (emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationReboot) op_;
           }
           return emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationReboot.getDefaultInstance();
         } else {
-          if (opCase_ == 12) {
+          if (opCase_ == 15) {
             return opRebootBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationReboot.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGOperationReboot op_reboot = 12;</code>
+       * <code>.GCGOperationReboot op_reboot = 15;</code>
        */
       public Builder setOpReboot(emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationReboot value) {
         if (opRebootBuilder_ == null) {
@@ -2050,11 +2050,11 @@ public final class GCGOperationOuterClass {
         } else {
           opRebootBuilder_.setMessage(value);
         }
-        opCase_ = 12;
+        opCase_ = 15;
         return this;
       }
       /**
-       * <code>.GCGOperationReboot op_reboot = 12;</code>
+       * <code>.GCGOperationReboot op_reboot = 15;</code>
        */
       public Builder setOpReboot(
           emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationReboot.Builder builderForValue) {
@@ -2064,15 +2064,15 @@ public final class GCGOperationOuterClass {
         } else {
           opRebootBuilder_.setMessage(builderForValue.build());
         }
-        opCase_ = 12;
+        opCase_ = 15;
         return this;
       }
       /**
-       * <code>.GCGOperationReboot op_reboot = 12;</code>
+       * <code>.GCGOperationReboot op_reboot = 15;</code>
        */
       public Builder mergeOpReboot(emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationReboot value) {
         if (opRebootBuilder_ == null) {
-          if (opCase_ == 12 &&
+          if (opCase_ == 15 &&
               op_ != emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationReboot.getDefaultInstance()) {
             op_ = emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationReboot.newBuilder((emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationReboot) op_)
                 .mergeFrom(value).buildPartial();
@@ -2081,26 +2081,26 @@ public final class GCGOperationOuterClass {
           }
           onChanged();
         } else {
-          if (opCase_ == 12) {
+          if (opCase_ == 15) {
             opRebootBuilder_.mergeFrom(value);
           }
           opRebootBuilder_.setMessage(value);
         }
-        opCase_ = 12;
+        opCase_ = 15;
         return this;
       }
       /**
-       * <code>.GCGOperationReboot op_reboot = 12;</code>
+       * <code>.GCGOperationReboot op_reboot = 15;</code>
        */
       public Builder clearOpReboot() {
         if (opRebootBuilder_ == null) {
-          if (opCase_ == 12) {
+          if (opCase_ == 15) {
             opCase_ = 0;
             op_ = null;
             onChanged();
           }
         } else {
-          if (opCase_ == 12) {
+          if (opCase_ == 15) {
             opCase_ = 0;
             op_ = null;
           }
@@ -2109,33 +2109,33 @@ public final class GCGOperationOuterClass {
         return this;
       }
       /**
-       * <code>.GCGOperationReboot op_reboot = 12;</code>
+       * <code>.GCGOperationReboot op_reboot = 15;</code>
        */
       public emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationReboot.Builder getOpRebootBuilder() {
         return getOpRebootFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGOperationReboot op_reboot = 12;</code>
+       * <code>.GCGOperationReboot op_reboot = 15;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationRebootOrBuilder getOpRebootOrBuilder() {
-        if ((opCase_ == 12) && (opRebootBuilder_ != null)) {
+        if ((opCase_ == 15) && (opRebootBuilder_ != null)) {
           return opRebootBuilder_.getMessageOrBuilder();
         } else {
-          if (opCase_ == 12) {
+          if (opCase_ == 15) {
             return (emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationReboot) op_;
           }
           return emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationReboot.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGOperationReboot op_reboot = 12;</code>
+       * <code>.GCGOperationReboot op_reboot = 15;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationReboot, emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationReboot.Builder, emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationRebootOrBuilder> 
           getOpRebootFieldBuilder() {
         if (opRebootBuilder_ == null) {
-          if (!(opCase_ == 12)) {
+          if (!(opCase_ == 15)) {
             op_ = emu.grasscutter.net.proto.GCGOperationRebootOuterClass.GCGOperationReboot.getDefaultInstance();
           }
           opRebootBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -2145,7 +2145,7 @@ public final class GCGOperationOuterClass {
                   isClean());
           op_ = null;
         }
-        opCase_ = 12;
+        opCase_ = 15;
         onChanged();;
         return opRebootBuilder_;
       }
@@ -2153,33 +2153,33 @@ public final class GCGOperationOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrender, emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrender.Builder, emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrenderOrBuilder> opSurrenderBuilder_;
       /**
-       * <code>.GCGOperationSurrender op_surrender = 4;</code>
+       * <code>.GCGOperationSurrender op_surrender = 9;</code>
        * @return Whether the opSurrender field is set.
        */
       @java.lang.Override
       public boolean hasOpSurrender() {
-        return opCase_ == 4;
+        return opCase_ == 9;
       }
       /**
-       * <code>.GCGOperationSurrender op_surrender = 4;</code>
+       * <code>.GCGOperationSurrender op_surrender = 9;</code>
        * @return The opSurrender.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrender getOpSurrender() {
         if (opSurrenderBuilder_ == null) {
-          if (opCase_ == 4) {
+          if (opCase_ == 9) {
             return (emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrender) op_;
           }
           return emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrender.getDefaultInstance();
         } else {
-          if (opCase_ == 4) {
+          if (opCase_ == 9) {
             return opSurrenderBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrender.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGOperationSurrender op_surrender = 4;</code>
+       * <code>.GCGOperationSurrender op_surrender = 9;</code>
        */
       public Builder setOpSurrender(emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrender value) {
         if (opSurrenderBuilder_ == null) {
@@ -2191,11 +2191,11 @@ public final class GCGOperationOuterClass {
         } else {
           opSurrenderBuilder_.setMessage(value);
         }
-        opCase_ = 4;
+        opCase_ = 9;
         return this;
       }
       /**
-       * <code>.GCGOperationSurrender op_surrender = 4;</code>
+       * <code>.GCGOperationSurrender op_surrender = 9;</code>
        */
       public Builder setOpSurrender(
           emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrender.Builder builderForValue) {
@@ -2205,15 +2205,15 @@ public final class GCGOperationOuterClass {
         } else {
           opSurrenderBuilder_.setMessage(builderForValue.build());
         }
-        opCase_ = 4;
+        opCase_ = 9;
         return this;
       }
       /**
-       * <code>.GCGOperationSurrender op_surrender = 4;</code>
+       * <code>.GCGOperationSurrender op_surrender = 9;</code>
        */
       public Builder mergeOpSurrender(emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrender value) {
         if (opSurrenderBuilder_ == null) {
-          if (opCase_ == 4 &&
+          if (opCase_ == 9 &&
               op_ != emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrender.getDefaultInstance()) {
             op_ = emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrender.newBuilder((emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrender) op_)
                 .mergeFrom(value).buildPartial();
@@ -2222,26 +2222,26 @@ public final class GCGOperationOuterClass {
           }
           onChanged();
         } else {
-          if (opCase_ == 4) {
+          if (opCase_ == 9) {
             opSurrenderBuilder_.mergeFrom(value);
           }
           opSurrenderBuilder_.setMessage(value);
         }
-        opCase_ = 4;
+        opCase_ = 9;
         return this;
       }
       /**
-       * <code>.GCGOperationSurrender op_surrender = 4;</code>
+       * <code>.GCGOperationSurrender op_surrender = 9;</code>
        */
       public Builder clearOpSurrender() {
         if (opSurrenderBuilder_ == null) {
-          if (opCase_ == 4) {
+          if (opCase_ == 9) {
             opCase_ = 0;
             op_ = null;
             onChanged();
           }
         } else {
-          if (opCase_ == 4) {
+          if (opCase_ == 9) {
             opCase_ = 0;
             op_ = null;
           }
@@ -2250,33 +2250,33 @@ public final class GCGOperationOuterClass {
         return this;
       }
       /**
-       * <code>.GCGOperationSurrender op_surrender = 4;</code>
+       * <code>.GCGOperationSurrender op_surrender = 9;</code>
        */
       public emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrender.Builder getOpSurrenderBuilder() {
         return getOpSurrenderFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGOperationSurrender op_surrender = 4;</code>
+       * <code>.GCGOperationSurrender op_surrender = 9;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrenderOrBuilder getOpSurrenderOrBuilder() {
-        if ((opCase_ == 4) && (opSurrenderBuilder_ != null)) {
+        if ((opCase_ == 9) && (opSurrenderBuilder_ != null)) {
           return opSurrenderBuilder_.getMessageOrBuilder();
         } else {
-          if (opCase_ == 4) {
+          if (opCase_ == 9) {
             return (emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrender) op_;
           }
           return emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrender.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGOperationSurrender op_surrender = 4;</code>
+       * <code>.GCGOperationSurrender op_surrender = 9;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrender, emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrender.Builder, emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrenderOrBuilder> 
           getOpSurrenderFieldBuilder() {
         if (opSurrenderBuilder_ == null) {
-          if (!(opCase_ == 4)) {
+          if (!(opCase_ == 9)) {
             op_ = emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.GCGOperationSurrender.getDefaultInstance();
           }
           opSurrenderBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -2286,7 +2286,7 @@ public final class GCGOperationOuterClass {
                   isClean());
           op_ = null;
         }
-        opCase_ = 4;
+        opCase_ = 9;
         onChanged();;
         return opSurrenderBuilder_;
       }
@@ -2357,34 +2357,34 @@ public final class GCGOperationOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\022GCGOperation.proto\032\030GCGOperationAttack" +
+      "\n\022GCGOperation.proto\032\030GCGOperationRedraw" +
       ".proto\032\037GCGOperationOnStageSelect.proto\032" +
-      "\026GCGOperationPass.proto\032\032GCGOperationPla" +
-      "yCard.proto\032\030GCGOperationReboot.proto\032\030G" +
-      "CGOperationRedraw.proto\032\030GCGOperationRer" +
-      "oll.proto\032\033GCGOperationSurrender.proto\"\373" +
-      "\002\n\014GCGOperation\022(\n\top_redraw\030\003 \001(\0132\023.GCG" +
+      "\030GCGOperationReroll.proto\032\030GCGOperationA" +
+      "ttack.proto\032\026GCGOperationPass.proto\032\032GCG" +
+      "OperationPlayCard.proto\032\030GCGOperationReb" +
+      "oot.proto\032\033GCGOperationSurrender.proto\"\373" +
+      "\002\n\014GCGOperation\022(\n\top_redraw\030\006 \001(\0132\023.GCG" +
       "OperationRedrawH\000\0228\n\022op_select_on_stage\030" +
-      "\016 \001(\0132\032.GCGOperationOnStageSelectH\000\022(\n\to" +
-      "p_reroll\030\006 \001(\0132\023.GCGOperationRerollH\000\022(\n" +
-      "\top_attack\030\002 \001(\0132\023.GCGOperationAttackH\000\022" +
-      "$\n\007op_pass\030\017 \001(\0132\021.GCGOperationPassH\000\022-\n" +
-      "\014op_play_card\030\t \001(\0132\025.GCGOperationPlayCa" +
-      "rdH\000\022(\n\top_reboot\030\014 \001(\0132\023.GCGOperationRe" +
-      "bootH\000\022.\n\014op_surrender\030\004 \001(\0132\026.GCGOperat" +
+      "\014 \001(\0132\032.GCGOperationOnStageSelectH\000\022(\n\to" +
+      "p_reroll\030\016 \001(\0132\023.GCGOperationRerollH\000\022(\n" +
+      "\top_attack\030\013 \001(\0132\023.GCGOperationAttackH\000\022" +
+      "$\n\007op_pass\030\002 \001(\0132\021.GCGOperationPassH\000\022-\n" +
+      "\014op_play_card\030\010 \001(\0132\025.GCGOperationPlayCa" +
+      "rdH\000\022(\n\top_reboot\030\017 \001(\0132\023.GCGOperationRe" +
+      "bootH\000\022.\n\014op_surrender\030\t \001(\0132\026.GCGOperat" +
       "ionSurrenderH\000B\004\n\002opB\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.GCGOperationAttackOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGOperationRerollOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGOperationAttackOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.GCGOperationPassOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.GCGOperationRebootOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.GCGOperationRerollOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.getDescriptor(),
         });
     internal_static_GCGOperation_descriptor =
@@ -2393,13 +2393,13 @@ public final class GCGOperationOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGOperation_descriptor,
         new java.lang.String[] { "OpRedraw", "OpSelectOnStage", "OpReroll", "OpAttack", "OpPass", "OpPlayCard", "OpReboot", "OpSurrender", "Op", });
-    emu.grasscutter.net.proto.GCGOperationAttackOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.getDescriptor();
     emu.grasscutter.net.proto.GCGOperationOnStageSelectOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGOperationRerollOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGOperationAttackOuterClass.getDescriptor();
     emu.grasscutter.net.proto.GCGOperationPassOuterClass.getDescriptor();
     emu.grasscutter.net.proto.GCGOperationPlayCardOuterClass.getDescriptor();
     emu.grasscutter.net.proto.GCGOperationRebootOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.GCGOperationRedrawOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.GCGOperationRerollOuterClass.getDescriptor();
     emu.grasscutter.net.proto.GCGOperationSurrenderOuterClass.getDescriptor();
   }
 

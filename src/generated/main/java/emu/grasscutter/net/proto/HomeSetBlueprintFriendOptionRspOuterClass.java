@@ -19,21 +19,27 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>bool is_allow_friend_copy = 12;</code>
-     * @return The isAllowFriendCopy.
+     * <code>bool CNDJLHPOOBO = 7;</code>
+     * @return The cNDJLHPOOBO.
      */
-    boolean getIsAllowFriendCopy();
+    boolean getCNDJLHPOOBO();
+
+    /**
+     * <code>bool KMDEOGAINNP = 8;</code>
+     * @return The kMDEOGAINNP.
+     */
+    boolean getKMDEOGAINNP();
   }
   /**
    * <pre>
-   * Name: DCLKDPAJLHG
-   * CmdId: 4496
+   * CmdId: 4539
+   * Obf: GEIHHOCOPFD
    * </pre>
    *
    * Protobuf type {@code HomeSetBlueprintFriendOptionRsp}
@@ -80,14 +86,19 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 40: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 96: {
+            case 56: {
 
-              isAllowFriendCopy_ = input.readBool();
+              cNDJLHPOOBO_ = input.readBool();
+              break;
+            }
+            case 64: {
+
+              kMDEOGAINNP_ = input.readBool();
               break;
             }
             default: {
@@ -122,10 +133,10 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
               emu.grasscutter.net.proto.HomeSetBlueprintFriendOptionRspOuterClass.HomeSetBlueprintFriendOptionRsp.class, emu.grasscutter.net.proto.HomeSetBlueprintFriendOptionRspOuterClass.HomeSetBlueprintFriendOptionRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 9;
+    public static final int RETCODE_FIELD_NUMBER = 5;
     private int retcode_;
     /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -133,15 +144,26 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
       return retcode_;
     }
 
-    public static final int IS_ALLOW_FRIEND_COPY_FIELD_NUMBER = 12;
-    private boolean isAllowFriendCopy_;
+    public static final int CNDJLHPOOBO_FIELD_NUMBER = 7;
+    private boolean cNDJLHPOOBO_;
     /**
-     * <code>bool is_allow_friend_copy = 12;</code>
-     * @return The isAllowFriendCopy.
+     * <code>bool CNDJLHPOOBO = 7;</code>
+     * @return The cNDJLHPOOBO.
      */
     @java.lang.Override
-    public boolean getIsAllowFriendCopy() {
-      return isAllowFriendCopy_;
+    public boolean getCNDJLHPOOBO() {
+      return cNDJLHPOOBO_;
+    }
+
+    public static final int KMDEOGAINNP_FIELD_NUMBER = 8;
+    private boolean kMDEOGAINNP_;
+    /**
+     * <code>bool KMDEOGAINNP = 8;</code>
+     * @return The kMDEOGAINNP.
+     */
+    @java.lang.Override
+    public boolean getKMDEOGAINNP() {
+      return kMDEOGAINNP_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,10 +181,13 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(9, retcode_);
+        output.writeInt32(5, retcode_);
       }
-      if (isAllowFriendCopy_ != false) {
-        output.writeBool(12, isAllowFriendCopy_);
+      if (cNDJLHPOOBO_ != false) {
+        output.writeBool(7, cNDJLHPOOBO_);
+      }
+      if (kMDEOGAINNP_ != false) {
+        output.writeBool(8, kMDEOGAINNP_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +200,15 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, retcode_);
+          .computeInt32Size(5, retcode_);
       }
-      if (isAllowFriendCopy_ != false) {
+      if (cNDJLHPOOBO_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, isAllowFriendCopy_);
+          .computeBoolSize(7, cNDJLHPOOBO_);
+      }
+      if (kMDEOGAINNP_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(8, kMDEOGAINNP_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -198,8 +227,10 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
 
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (getIsAllowFriendCopy()
-          != other.getIsAllowFriendCopy()) return false;
+      if (getCNDJLHPOOBO()
+          != other.getCNDJLHPOOBO()) return false;
+      if (getKMDEOGAINNP()
+          != other.getKMDEOGAINNP()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -213,9 +244,12 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + IS_ALLOW_FRIEND_COPY_FIELD_NUMBER;
+      hash = (37 * hash) + CNDJLHPOOBO_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsAllowFriendCopy());
+          getCNDJLHPOOBO());
+      hash = (37 * hash) + KMDEOGAINNP_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getKMDEOGAINNP());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -313,8 +347,8 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
     }
     /**
      * <pre>
-     * Name: DCLKDPAJLHG
-     * CmdId: 4496
+     * CmdId: 4539
+     * Obf: GEIHHOCOPFD
      * </pre>
      *
      * Protobuf type {@code HomeSetBlueprintFriendOptionRsp}
@@ -356,7 +390,9 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
         super.clear();
         retcode_ = 0;
 
-        isAllowFriendCopy_ = false;
+        cNDJLHPOOBO_ = false;
+
+        kMDEOGAINNP_ = false;
 
         return this;
       }
@@ -385,7 +421,8 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
       public emu.grasscutter.net.proto.HomeSetBlueprintFriendOptionRspOuterClass.HomeSetBlueprintFriendOptionRsp buildPartial() {
         emu.grasscutter.net.proto.HomeSetBlueprintFriendOptionRspOuterClass.HomeSetBlueprintFriendOptionRsp result = new emu.grasscutter.net.proto.HomeSetBlueprintFriendOptionRspOuterClass.HomeSetBlueprintFriendOptionRsp(this);
         result.retcode_ = retcode_;
-        result.isAllowFriendCopy_ = isAllowFriendCopy_;
+        result.cNDJLHPOOBO_ = cNDJLHPOOBO_;
+        result.kMDEOGAINNP_ = kMDEOGAINNP_;
         onBuilt();
         return result;
       }
@@ -437,8 +474,11 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
-        if (other.getIsAllowFriendCopy() != false) {
-          setIsAllowFriendCopy(other.getIsAllowFriendCopy());
+        if (other.getCNDJLHPOOBO() != false) {
+          setCNDJLHPOOBO(other.getCNDJLHPOOBO());
+        }
+        if (other.getKMDEOGAINNP() != false) {
+          setKMDEOGAINNP(other.getKMDEOGAINNP());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -471,7 +511,7 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 5;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -479,7 +519,7 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 5;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -490,7 +530,7 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -500,33 +540,64 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
         return this;
       }
 
-      private boolean isAllowFriendCopy_ ;
+      private boolean cNDJLHPOOBO_ ;
       /**
-       * <code>bool is_allow_friend_copy = 12;</code>
-       * @return The isAllowFriendCopy.
+       * <code>bool CNDJLHPOOBO = 7;</code>
+       * @return The cNDJLHPOOBO.
        */
       @java.lang.Override
-      public boolean getIsAllowFriendCopy() {
-        return isAllowFriendCopy_;
+      public boolean getCNDJLHPOOBO() {
+        return cNDJLHPOOBO_;
       }
       /**
-       * <code>bool is_allow_friend_copy = 12;</code>
-       * @param value The isAllowFriendCopy to set.
+       * <code>bool CNDJLHPOOBO = 7;</code>
+       * @param value The cNDJLHPOOBO to set.
        * @return This builder for chaining.
        */
-      public Builder setIsAllowFriendCopy(boolean value) {
+      public Builder setCNDJLHPOOBO(boolean value) {
         
-        isAllowFriendCopy_ = value;
+        cNDJLHPOOBO_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_allow_friend_copy = 12;</code>
+       * <code>bool CNDJLHPOOBO = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsAllowFriendCopy() {
+      public Builder clearCNDJLHPOOBO() {
         
-        isAllowFriendCopy_ = false;
+        cNDJLHPOOBO_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean kMDEOGAINNP_ ;
+      /**
+       * <code>bool KMDEOGAINNP = 8;</code>
+       * @return The kMDEOGAINNP.
+       */
+      @java.lang.Override
+      public boolean getKMDEOGAINNP() {
+        return kMDEOGAINNP_;
+      }
+      /**
+       * <code>bool KMDEOGAINNP = 8;</code>
+       * @param value The kMDEOGAINNP to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKMDEOGAINNP(boolean value) {
+        
+        kMDEOGAINNP_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool KMDEOGAINNP = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearKMDEOGAINNP() {
+        
+        kMDEOGAINNP_ = false;
         onChanged();
         return this;
       }
@@ -598,9 +669,10 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n%HomeSetBlueprintFriendOptionRsp.proto\"" +
-      "P\n\037HomeSetBlueprintFriendOptionRsp\022\017\n\007re" +
-      "tcode\030\t \001(\005\022\034\n\024is_allow_friend_copy\030\014 \001(" +
-      "\010B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\\\n\037HomeSetBlueprintFriendOptionRsp\022\017\n\007re" +
+      "tcode\030\005 \001(\005\022\023\n\013CNDJLHPOOBO\030\007 \001(\010\022\023\n\013KMDE" +
+      "OGAINNP\030\010 \001(\010B\033\n\031emu.grasscutter.net.pro" +
+      "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -611,7 +683,7 @@ public final class HomeSetBlueprintFriendOptionRspOuterClass {
     internal_static_HomeSetBlueprintFriendOptionRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeSetBlueprintFriendOptionRsp_descriptor,
-        new java.lang.String[] { "Retcode", "IsAllowFriendCopy", });
+        new java.lang.String[] { "Retcode", "CNDJLHPOOBO", "KMDEOGAINNP", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

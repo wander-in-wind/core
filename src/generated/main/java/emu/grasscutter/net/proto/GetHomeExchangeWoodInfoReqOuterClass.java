@@ -20,8 +20,8 @@ public final class GetHomeExchangeWoodInfoReqOuterClass {
   }
   /**
    * <pre>
-   * Name: HKKOOBLCCHM
-   * CmdId: 4852
+   * CmdId: 4786
+   * Obf: NDEGAABFNKA
    * </pre>
    *
    * Protobuf type {@code GetHomeExchangeWoodInfoReq}
@@ -246,8 +246,8 @@ public final class GetHomeExchangeWoodInfoReqOuterClass {
     }
     /**
      * <pre>
-     * Name: HKKOOBLCCHM
-     * CmdId: 4852
+     * CmdId: 4786
+     * Obf: NDEGAABFNKA
      * </pre>
      *
      * Protobuf type {@code GetHomeExchangeWoodInfoReq}

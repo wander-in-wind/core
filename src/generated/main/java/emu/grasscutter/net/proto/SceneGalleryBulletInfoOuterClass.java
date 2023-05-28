@@ -19,11 +19,11 @@ public final class SceneGalleryBulletInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint32, uint32&gt; hit_count_map = 1;</code>
+     * <code>map&lt;uint32, uint32&gt; hit_count_map = 14;</code>
      */
     int getHitCountMapCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; hit_count_map = 1;</code>
+     * <code>map&lt;uint32, uint32&gt; hit_count_map = 14;</code>
      */
     boolean containsHitCountMap(
         int key);
@@ -34,33 +34,33 @@ public final class SceneGalleryBulletInfoOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getHitCountMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; hit_count_map = 1;</code>
+     * <code>map&lt;uint32, uint32&gt; hit_count_map = 14;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getHitCountMapMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; hit_count_map = 1;</code>
+     * <code>map&lt;uint32, uint32&gt; hit_count_map = 14;</code>
      */
 
     int getHitCountMapOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; hit_count_map = 1;</code>
+     * <code>map&lt;uint32, uint32&gt; hit_count_map = 14;</code>
      */
 
     int getHitCountMapOrThrow(
         int key);
 
     /**
-     * <code>uint32 end_time = 14;</code>
+     * <code>uint32 end_time = 5;</code>
      * @return The endTime.
      */
     int getEndTime();
   }
   /**
    * <pre>
-   * Name: HNABHDDNPBM
+   * Obf: JCHAFGJDGCD
    * </pre>
    *
    * Protobuf type {@code SceneGalleryBulletInfo}
@@ -108,7 +108,12 @@ public final class SceneGalleryBulletInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 40: {
+
+              endTime_ = input.readUInt32();
+              break;
+            }
+            case 114: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 hitCountMap_ = com.google.protobuf.MapField.newMapField(
                     HitCountMapDefaultEntryHolder.defaultEntry);
@@ -119,11 +124,6 @@ public final class SceneGalleryBulletInfoOuterClass {
                   HitCountMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
               hitCountMap_.getMutableMap().put(
                   hitCountMap__.getKey(), hitCountMap__.getValue());
-              break;
-            }
-            case 112: {
-
-              endTime_ = input.readUInt32();
               break;
             }
             default: {
@@ -155,7 +155,7 @@ public final class SceneGalleryBulletInfoOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 1:
+        case 14:
           return internalGetHitCountMap();
         default:
           throw new RuntimeException(
@@ -170,7 +170,7 @@ public final class SceneGalleryBulletInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryBulletInfoOuterClass.SceneGalleryBulletInfo.class, emu.grasscutter.net.proto.SceneGalleryBulletInfoOuterClass.SceneGalleryBulletInfo.Builder.class);
     }
 
-    public static final int HIT_COUNT_MAP_FIELD_NUMBER = 1;
+    public static final int HIT_COUNT_MAP_FIELD_NUMBER = 14;
     private static final class HitCountMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -197,7 +197,7 @@ public final class SceneGalleryBulletInfoOuterClass {
       return internalGetHitCountMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; hit_count_map = 1;</code>
+     * <code>map&lt;uint32, uint32&gt; hit_count_map = 14;</code>
      */
 
     @java.lang.Override
@@ -215,7 +215,7 @@ public final class SceneGalleryBulletInfoOuterClass {
       return getHitCountMapMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; hit_count_map = 1;</code>
+     * <code>map&lt;uint32, uint32&gt; hit_count_map = 14;</code>
      */
     @java.lang.Override
 
@@ -223,7 +223,7 @@ public final class SceneGalleryBulletInfoOuterClass {
       return internalGetHitCountMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; hit_count_map = 1;</code>
+     * <code>map&lt;uint32, uint32&gt; hit_count_map = 14;</code>
      */
     @java.lang.Override
 
@@ -236,7 +236,7 @@ public final class SceneGalleryBulletInfoOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; hit_count_map = 1;</code>
+     * <code>map&lt;uint32, uint32&gt; hit_count_map = 14;</code>
      */
     @java.lang.Override
 
@@ -251,10 +251,10 @@ public final class SceneGalleryBulletInfoOuterClass {
       return map.get(key);
     }
 
-    public static final int END_TIME_FIELD_NUMBER = 14;
+    public static final int END_TIME_FIELD_NUMBER = 5;
     private int endTime_;
     /**
-     * <code>uint32 end_time = 14;</code>
+     * <code>uint32 end_time = 5;</code>
      * @return The endTime.
      */
     @java.lang.Override
@@ -276,15 +276,15 @@ public final class SceneGalleryBulletInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (endTime_ != 0) {
+        output.writeUInt32(5, endTime_);
+      }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetHitCountMap(),
           HitCountMapDefaultEntryHolder.defaultEntry,
-          1);
-      if (endTime_ != 0) {
-        output.writeUInt32(14, endTime_);
-      }
+          14);
       unknownFields.writeTo(output);
     }
 
@@ -294,6 +294,10 @@ public final class SceneGalleryBulletInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (endTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, endTime_);
+      }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
            : internalGetHitCountMap().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
@@ -302,11 +306,7 @@ public final class SceneGalleryBulletInfoOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(1, hitCountMap__);
-      }
-      if (endTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, endTime_);
+            .computeMessageSize(14, hitCountMap__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -441,7 +441,7 @@ public final class SceneGalleryBulletInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: HNABHDDNPBM
+     * Obf: JCHAFGJDGCD
      * </pre>
      *
      * Protobuf type {@code SceneGalleryBulletInfo}
@@ -459,7 +459,7 @@ public final class SceneGalleryBulletInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 1:
+          case 14:
             return internalGetHitCountMap();
           default:
             throw new RuntimeException(
@@ -470,7 +470,7 @@ public final class SceneGalleryBulletInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 1:
+          case 14:
             return internalGetMutableHitCountMap();
           default:
             throw new RuntimeException(
@@ -646,7 +646,7 @@ public final class SceneGalleryBulletInfoOuterClass {
         return internalGetHitCountMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; hit_count_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; hit_count_map = 14;</code>
        */
 
       @java.lang.Override
@@ -664,7 +664,7 @@ public final class SceneGalleryBulletInfoOuterClass {
         return getHitCountMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; hit_count_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; hit_count_map = 14;</code>
        */
       @java.lang.Override
 
@@ -672,7 +672,7 @@ public final class SceneGalleryBulletInfoOuterClass {
         return internalGetHitCountMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; hit_count_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; hit_count_map = 14;</code>
        */
       @java.lang.Override
 
@@ -685,7 +685,7 @@ public final class SceneGalleryBulletInfoOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; hit_count_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; hit_count_map = 14;</code>
        */
       @java.lang.Override
 
@@ -706,7 +706,7 @@ public final class SceneGalleryBulletInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; hit_count_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; hit_count_map = 14;</code>
        */
 
       public Builder removeHitCountMap(
@@ -725,7 +725,7 @@ public final class SceneGalleryBulletInfoOuterClass {
         return internalGetMutableHitCountMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; hit_count_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; hit_count_map = 14;</code>
        */
       public Builder putHitCountMap(
           int key,
@@ -737,7 +737,7 @@ public final class SceneGalleryBulletInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; hit_count_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; hit_count_map = 14;</code>
        */
 
       public Builder putAllHitCountMap(
@@ -749,7 +749,7 @@ public final class SceneGalleryBulletInfoOuterClass {
 
       private int endTime_ ;
       /**
-       * <code>uint32 end_time = 14;</code>
+       * <code>uint32 end_time = 5;</code>
        * @return The endTime.
        */
       @java.lang.Override
@@ -757,7 +757,7 @@ public final class SceneGalleryBulletInfoOuterClass {
         return endTime_;
       }
       /**
-       * <code>uint32 end_time = 14;</code>
+       * <code>uint32 end_time = 5;</code>
        * @param value The endTime to set.
        * @return This builder for chaining.
        */
@@ -768,7 +768,7 @@ public final class SceneGalleryBulletInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 end_time = 14;</code>
+       * <code>uint32 end_time = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearEndTime() {
@@ -850,9 +850,9 @@ public final class SceneGalleryBulletInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034SceneGalleryBulletInfo.proto\"\237\001\n\026Scene" +
-      "GalleryBulletInfo\022?\n\rhit_count_map\030\001 \003(\013" +
+      "GalleryBulletInfo\022?\n\rhit_count_map\030\016 \003(\013" +
       "2(.SceneGalleryBulletInfo.HitCountMapEnt" +
-      "ry\022\020\n\010end_time\030\016 \001(\r\0322\n\020HitCountMapEntry" +
+      "ry\022\020\n\010end_time\030\005 \001(\r\0322\n\020HitCountMapEntry" +
       "\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };

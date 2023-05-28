@@ -19,30 +19,30 @@ public final class GravenInnocenceEditCarveCombinationReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.CustomGadgetTreeInfo combination_info = 14;</code>
-     * @return Whether the combinationInfo field is set.
-     */
-    boolean hasCombinationInfo();
-    /**
-     * <code>.CustomGadgetTreeInfo combination_info = 14;</code>
-     * @return The combinationInfo.
-     */
-    emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo getCombinationInfo();
-    /**
-     * <code>.CustomGadgetTreeInfo combination_info = 14;</code>
-     */
-    emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfoOrBuilder getCombinationInfoOrBuilder();
-
-    /**
      * <code>uint32 entity_id = 10;</code>
      * @return The entityId.
      */
     int getEntityId();
+
+    /**
+     * <code>.CustomGadgetTreeInfo combination_info = 9;</code>
+     * @return Whether the combinationInfo field is set.
+     */
+    boolean hasCombinationInfo();
+    /**
+     * <code>.CustomGadgetTreeInfo combination_info = 9;</code>
+     * @return The combinationInfo.
+     */
+    emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo getCombinationInfo();
+    /**
+     * <code>.CustomGadgetTreeInfo combination_info = 9;</code>
+     */
+    emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfoOrBuilder getCombinationInfoOrBuilder();
   }
   /**
    * <pre>
-   * Name: DOKILHABPNG
-   * CmdId: 24190
+   * CmdId: 21123
+   * Obf: NHDALOLAKAL
    * </pre>
    *
    * Protobuf type {@code GravenInnocenceEditCarveCombinationReq}
@@ -89,12 +89,7 @@ public final class GravenInnocenceEditCarveCombinationReqOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
-
-              entityId_ = input.readUInt32();
-              break;
-            }
-            case 114: {
+            case 74: {
               emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.Builder subBuilder = null;
               if (combinationInfo_ != null) {
                 subBuilder = combinationInfo_.toBuilder();
@@ -105,6 +100,11 @@ public final class GravenInnocenceEditCarveCombinationReqOuterClass {
                 combinationInfo_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 80: {
+
+              entityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -139,32 +139,6 @@ public final class GravenInnocenceEditCarveCombinationReqOuterClass {
               emu.grasscutter.net.proto.GravenInnocenceEditCarveCombinationReqOuterClass.GravenInnocenceEditCarveCombinationReq.class, emu.grasscutter.net.proto.GravenInnocenceEditCarveCombinationReqOuterClass.GravenInnocenceEditCarveCombinationReq.Builder.class);
     }
 
-    public static final int COMBINATION_INFO_FIELD_NUMBER = 14;
-    private emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo combinationInfo_;
-    /**
-     * <code>.CustomGadgetTreeInfo combination_info = 14;</code>
-     * @return Whether the combinationInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasCombinationInfo() {
-      return combinationInfo_ != null;
-    }
-    /**
-     * <code>.CustomGadgetTreeInfo combination_info = 14;</code>
-     * @return The combinationInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo getCombinationInfo() {
-      return combinationInfo_ == null ? emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.getDefaultInstance() : combinationInfo_;
-    }
-    /**
-     * <code>.CustomGadgetTreeInfo combination_info = 14;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfoOrBuilder getCombinationInfoOrBuilder() {
-      return getCombinationInfo();
-    }
-
     public static final int ENTITY_ID_FIELD_NUMBER = 10;
     private int entityId_;
     /**
@@ -174,6 +148,32 @@ public final class GravenInnocenceEditCarveCombinationReqOuterClass {
     @java.lang.Override
     public int getEntityId() {
       return entityId_;
+    }
+
+    public static final int COMBINATION_INFO_FIELD_NUMBER = 9;
+    private emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo combinationInfo_;
+    /**
+     * <code>.CustomGadgetTreeInfo combination_info = 9;</code>
+     * @return Whether the combinationInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasCombinationInfo() {
+      return combinationInfo_ != null;
+    }
+    /**
+     * <code>.CustomGadgetTreeInfo combination_info = 9;</code>
+     * @return The combinationInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo getCombinationInfo() {
+      return combinationInfo_ == null ? emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.getDefaultInstance() : combinationInfo_;
+    }
+    /**
+     * <code>.CustomGadgetTreeInfo combination_info = 9;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfoOrBuilder getCombinationInfoOrBuilder() {
+      return getCombinationInfo();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -190,11 +190,11 @@ public final class GravenInnocenceEditCarveCombinationReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (combinationInfo_ != null) {
+        output.writeMessage(9, getCombinationInfo());
+      }
       if (entityId_ != 0) {
         output.writeUInt32(10, entityId_);
-      }
-      if (combinationInfo_ != null) {
-        output.writeMessage(14, getCombinationInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -205,13 +205,13 @@ public final class GravenInnocenceEditCarveCombinationReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (combinationInfo_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(9, getCombinationInfo());
+      }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(10, entityId_);
-      }
-      if (combinationInfo_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, getCombinationInfo());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -228,13 +228,13 @@ public final class GravenInnocenceEditCarveCombinationReqOuterClass {
       }
       emu.grasscutter.net.proto.GravenInnocenceEditCarveCombinationReqOuterClass.GravenInnocenceEditCarveCombinationReq other = (emu.grasscutter.net.proto.GravenInnocenceEditCarveCombinationReqOuterClass.GravenInnocenceEditCarveCombinationReq) obj;
 
+      if (getEntityId()
+          != other.getEntityId()) return false;
       if (hasCombinationInfo() != other.hasCombinationInfo()) return false;
       if (hasCombinationInfo()) {
         if (!getCombinationInfo()
             .equals(other.getCombinationInfo())) return false;
       }
-      if (getEntityId()
-          != other.getEntityId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -246,12 +246,12 @@ public final class GravenInnocenceEditCarveCombinationReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getEntityId();
       if (hasCombinationInfo()) {
         hash = (37 * hash) + COMBINATION_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getCombinationInfo().hashCode();
       }
-      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getEntityId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -349,8 +349,8 @@ public final class GravenInnocenceEditCarveCombinationReqOuterClass {
     }
     /**
      * <pre>
-     * Name: DOKILHABPNG
-     * CmdId: 24190
+     * CmdId: 21123
+     * Obf: NHDALOLAKAL
      * </pre>
      *
      * Protobuf type {@code GravenInnocenceEditCarveCombinationReq}
@@ -390,14 +390,14 @@ public final class GravenInnocenceEditCarveCombinationReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        entityId_ = 0;
+
         if (combinationInfoBuilder_ == null) {
           combinationInfo_ = null;
         } else {
           combinationInfo_ = null;
           combinationInfoBuilder_ = null;
         }
-        entityId_ = 0;
-
         return this;
       }
 
@@ -424,12 +424,12 @@ public final class GravenInnocenceEditCarveCombinationReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GravenInnocenceEditCarveCombinationReqOuterClass.GravenInnocenceEditCarveCombinationReq buildPartial() {
         emu.grasscutter.net.proto.GravenInnocenceEditCarveCombinationReqOuterClass.GravenInnocenceEditCarveCombinationReq result = new emu.grasscutter.net.proto.GravenInnocenceEditCarveCombinationReqOuterClass.GravenInnocenceEditCarveCombinationReq(this);
+        result.entityId_ = entityId_;
         if (combinationInfoBuilder_ == null) {
           result.combinationInfo_ = combinationInfo_;
         } else {
           result.combinationInfo_ = combinationInfoBuilder_.build();
         }
-        result.entityId_ = entityId_;
         onBuilt();
         return result;
       }
@@ -478,11 +478,11 @@ public final class GravenInnocenceEditCarveCombinationReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GravenInnocenceEditCarveCombinationReqOuterClass.GravenInnocenceEditCarveCombinationReq other) {
         if (other == emu.grasscutter.net.proto.GravenInnocenceEditCarveCombinationReqOuterClass.GravenInnocenceEditCarveCombinationReq.getDefaultInstance()) return this;
-        if (other.hasCombinationInfo()) {
-          mergeCombinationInfo(other.getCombinationInfo());
-        }
         if (other.getEntityId() != 0) {
           setEntityId(other.getEntityId());
+        }
+        if (other.hasCombinationInfo()) {
+          mergeCombinationInfo(other.getCombinationInfo());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -511,125 +511,6 @@ public final class GravenInnocenceEditCarveCombinationReqOuterClass {
           }
         }
         return this;
-      }
-
-      private emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo combinationInfo_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo, emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.Builder, emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfoOrBuilder> combinationInfoBuilder_;
-      /**
-       * <code>.CustomGadgetTreeInfo combination_info = 14;</code>
-       * @return Whether the combinationInfo field is set.
-       */
-      public boolean hasCombinationInfo() {
-        return combinationInfoBuilder_ != null || combinationInfo_ != null;
-      }
-      /**
-       * <code>.CustomGadgetTreeInfo combination_info = 14;</code>
-       * @return The combinationInfo.
-       */
-      public emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo getCombinationInfo() {
-        if (combinationInfoBuilder_ == null) {
-          return combinationInfo_ == null ? emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.getDefaultInstance() : combinationInfo_;
-        } else {
-          return combinationInfoBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.CustomGadgetTreeInfo combination_info = 14;</code>
-       */
-      public Builder setCombinationInfo(emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo value) {
-        if (combinationInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          combinationInfo_ = value;
-          onChanged();
-        } else {
-          combinationInfoBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.CustomGadgetTreeInfo combination_info = 14;</code>
-       */
-      public Builder setCombinationInfo(
-          emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.Builder builderForValue) {
-        if (combinationInfoBuilder_ == null) {
-          combinationInfo_ = builderForValue.build();
-          onChanged();
-        } else {
-          combinationInfoBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.CustomGadgetTreeInfo combination_info = 14;</code>
-       */
-      public Builder mergeCombinationInfo(emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo value) {
-        if (combinationInfoBuilder_ == null) {
-          if (combinationInfo_ != null) {
-            combinationInfo_ =
-              emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.newBuilder(combinationInfo_).mergeFrom(value).buildPartial();
-          } else {
-            combinationInfo_ = value;
-          }
-          onChanged();
-        } else {
-          combinationInfoBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.CustomGadgetTreeInfo combination_info = 14;</code>
-       */
-      public Builder clearCombinationInfo() {
-        if (combinationInfoBuilder_ == null) {
-          combinationInfo_ = null;
-          onChanged();
-        } else {
-          combinationInfo_ = null;
-          combinationInfoBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.CustomGadgetTreeInfo combination_info = 14;</code>
-       */
-      public emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.Builder getCombinationInfoBuilder() {
-        
-        onChanged();
-        return getCombinationInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.CustomGadgetTreeInfo combination_info = 14;</code>
-       */
-      public emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfoOrBuilder getCombinationInfoOrBuilder() {
-        if (combinationInfoBuilder_ != null) {
-          return combinationInfoBuilder_.getMessageOrBuilder();
-        } else {
-          return combinationInfo_ == null ?
-              emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.getDefaultInstance() : combinationInfo_;
-        }
-      }
-      /**
-       * <code>.CustomGadgetTreeInfo combination_info = 14;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo, emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.Builder, emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfoOrBuilder> 
-          getCombinationInfoFieldBuilder() {
-        if (combinationInfoBuilder_ == null) {
-          combinationInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo, emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.Builder, emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfoOrBuilder>(
-                  getCombinationInfo(),
-                  getParentForChildren(),
-                  isClean());
-          combinationInfo_ = null;
-        }
-        return combinationInfoBuilder_;
       }
 
       private int entityId_ ;
@@ -661,6 +542,125 @@ public final class GravenInnocenceEditCarveCombinationReqOuterClass {
         entityId_ = 0;
         onChanged();
         return this;
+      }
+
+      private emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo combinationInfo_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo, emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.Builder, emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfoOrBuilder> combinationInfoBuilder_;
+      /**
+       * <code>.CustomGadgetTreeInfo combination_info = 9;</code>
+       * @return Whether the combinationInfo field is set.
+       */
+      public boolean hasCombinationInfo() {
+        return combinationInfoBuilder_ != null || combinationInfo_ != null;
+      }
+      /**
+       * <code>.CustomGadgetTreeInfo combination_info = 9;</code>
+       * @return The combinationInfo.
+       */
+      public emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo getCombinationInfo() {
+        if (combinationInfoBuilder_ == null) {
+          return combinationInfo_ == null ? emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.getDefaultInstance() : combinationInfo_;
+        } else {
+          return combinationInfoBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.CustomGadgetTreeInfo combination_info = 9;</code>
+       */
+      public Builder setCombinationInfo(emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo value) {
+        if (combinationInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          combinationInfo_ = value;
+          onChanged();
+        } else {
+          combinationInfoBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.CustomGadgetTreeInfo combination_info = 9;</code>
+       */
+      public Builder setCombinationInfo(
+          emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.Builder builderForValue) {
+        if (combinationInfoBuilder_ == null) {
+          combinationInfo_ = builderForValue.build();
+          onChanged();
+        } else {
+          combinationInfoBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.CustomGadgetTreeInfo combination_info = 9;</code>
+       */
+      public Builder mergeCombinationInfo(emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo value) {
+        if (combinationInfoBuilder_ == null) {
+          if (combinationInfo_ != null) {
+            combinationInfo_ =
+              emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.newBuilder(combinationInfo_).mergeFrom(value).buildPartial();
+          } else {
+            combinationInfo_ = value;
+          }
+          onChanged();
+        } else {
+          combinationInfoBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.CustomGadgetTreeInfo combination_info = 9;</code>
+       */
+      public Builder clearCombinationInfo() {
+        if (combinationInfoBuilder_ == null) {
+          combinationInfo_ = null;
+          onChanged();
+        } else {
+          combinationInfo_ = null;
+          combinationInfoBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.CustomGadgetTreeInfo combination_info = 9;</code>
+       */
+      public emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.Builder getCombinationInfoBuilder() {
+        
+        onChanged();
+        return getCombinationInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.CustomGadgetTreeInfo combination_info = 9;</code>
+       */
+      public emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfoOrBuilder getCombinationInfoOrBuilder() {
+        if (combinationInfoBuilder_ != null) {
+          return combinationInfoBuilder_.getMessageOrBuilder();
+        } else {
+          return combinationInfo_ == null ?
+              emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.getDefaultInstance() : combinationInfo_;
+        }
+      }
+      /**
+       * <code>.CustomGadgetTreeInfo combination_info = 9;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo, emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.Builder, emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfoOrBuilder> 
+          getCombinationInfoFieldBuilder() {
+        if (combinationInfoBuilder_ == null) {
+          combinationInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo, emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfo.Builder, emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.CustomGadgetTreeInfoOrBuilder>(
+                  getCombinationInfo(),
+                  getParentForChildren(),
+                  isClean());
+          combinationInfo_ = null;
+        }
+        return combinationInfoBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -731,9 +731,9 @@ public final class GravenInnocenceEditCarveCombinationReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n,GravenInnocenceEditCarveCombinationReq" +
       ".proto\032\032CustomGadgetTreeInfo.proto\"l\n&Gr" +
-      "avenInnocenceEditCarveCombinationReq\022/\n\020" +
-      "combination_info\030\016 \001(\0132\025.CustomGadgetTre" +
-      "eInfo\022\021\n\tentity_id\030\n \001(\rB\033\n\031emu.grasscut" +
+      "avenInnocenceEditCarveCombinationReq\022\021\n\t" +
+      "entity_id\030\n \001(\r\022/\n\020combination_info\030\t \001(" +
+      "\0132\025.CustomGadgetTreeInfoB\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -746,7 +746,7 @@ public final class GravenInnocenceEditCarveCombinationReqOuterClass {
     internal_static_GravenInnocenceEditCarveCombinationReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GravenInnocenceEditCarveCombinationReq_descriptor,
-        new java.lang.String[] { "CombinationInfo", "EntityId", });
+        new java.lang.String[] { "EntityId", "CombinationInfo", });
     emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.getDescriptor();
   }
 

@@ -19,15 +19,15 @@ public final class HomePlantWeedRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 13;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * Name: FEJHPMNIMDI
-   * CmdId: 4671
+   * CmdId: 4680
+   * Obf: PFNGMNNGOPH
    * </pre>
    *
    * Protobuf type {@code HomePlantWeedRsp}
@@ -74,7 +74,7 @@ public final class HomePlantWeedRspOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 104: {
 
               retcode_ = input.readInt32();
               break;
@@ -111,10 +111,10 @@ public final class HomePlantWeedRspOuterClass {
               emu.grasscutter.net.proto.HomePlantWeedRspOuterClass.HomePlantWeedRsp.class, emu.grasscutter.net.proto.HomePlantWeedRspOuterClass.HomePlantWeedRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 5;
+    public static final int RETCODE_FIELD_NUMBER = 13;
     private int retcode_;
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 13;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class HomePlantWeedRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(5, retcode_);
+        output.writeInt32(13, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class HomePlantWeedRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, retcode_);
+          .computeInt32Size(13, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class HomePlantWeedRspOuterClass {
     }
     /**
      * <pre>
-     * Name: FEJHPMNIMDI
-     * CmdId: 4671
+     * CmdId: 4680
+     * Obf: PFNGMNNGOPH
      * </pre>
      *
      * Protobuf type {@code HomePlantWeedRsp}
@@ -431,7 +431,7 @@ public final class HomePlantWeedRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 13;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class HomePlantWeedRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 13;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class HomePlantWeedRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -527,7 +527,7 @@ public final class HomePlantWeedRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026HomePlantWeedRsp.proto\"#\n\020HomePlantWee" +
-      "dRsp\022\017\n\007retcode\030\005 \001(\005B\033\n\031emu.grasscutter" +
+      "dRsp\022\017\n\007retcode\030\r \001(\005B\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

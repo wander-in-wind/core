@@ -26,8 +26,8 @@ public final class EchoShellTakeRewardReqOuterClass {
   }
   /**
    * <pre>
-   * Name: HGJBMPDPJLK
-   * CmdId: 8078
+   * CmdId: 8280
+   * Obf: IMBLMKPEOGP
    * </pre>
    *
    * Protobuf type {@code EchoShellTakeRewardReq}
@@ -279,8 +279,8 @@ public final class EchoShellTakeRewardReqOuterClass {
     }
     /**
      * <pre>
-     * Name: HGJBMPDPJLK
-     * CmdId: 8078
+     * CmdId: 8280
+     * Obf: IMBLMKPEOGP
      * </pre>
      *
      * Protobuf type {@code EchoShellTakeRewardReq}

@@ -19,33 +19,33 @@ public final class SelectAsterMidDifficultyRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 gadget_entity_id = 11;</code>
-     * @return The gadgetEntityId.
-     */
-    int getGadgetEntityId();
-
-    /**
-     * <code>uint32 difficulty_id = 6;</code>
+     * <code>uint32 difficulty_id = 13;</code>
      * @return The difficultyId.
      */
     int getDifficultyId();
 
     /**
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 schedule_id = 7;</code>
+     * <code>uint32 gadget_entity_id = 4;</code>
+     * @return The gadgetEntityId.
+     */
+    int getGadgetEntityId();
+
+    /**
+     * <code>uint32 schedule_id = 3;</code>
      * @return The scheduleId.
      */
     int getScheduleId();
   }
   /**
    * <pre>
-   * Name: IMECNPNGPNG
-   * CmdId: 2001
+   * CmdId: 2010
+   * Obf: JJJFHAJLFGF
    * </pre>
    *
    * Protobuf type {@code SelectAsterMidDifficultyRsp}
@@ -92,24 +92,24 @@ public final class SelectAsterMidDifficultyRspOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
-
-              difficultyId_ = input.readUInt32();
-              break;
-            }
-            case 56: {
+            case 24: {
 
               scheduleId_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 32: {
 
               gadgetEntityId_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 48: {
 
               retcode_ = input.readInt32();
+              break;
+            }
+            case 104: {
+
+              difficultyId_ = input.readUInt32();
               break;
             }
             default: {
@@ -144,21 +144,10 @@ public final class SelectAsterMidDifficultyRspOuterClass {
               emu.grasscutter.net.proto.SelectAsterMidDifficultyRspOuterClass.SelectAsterMidDifficultyRsp.class, emu.grasscutter.net.proto.SelectAsterMidDifficultyRspOuterClass.SelectAsterMidDifficultyRsp.Builder.class);
     }
 
-    public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 11;
-    private int gadgetEntityId_;
-    /**
-     * <code>uint32 gadget_entity_id = 11;</code>
-     * @return The gadgetEntityId.
-     */
-    @java.lang.Override
-    public int getGadgetEntityId() {
-      return gadgetEntityId_;
-    }
-
-    public static final int DIFFICULTY_ID_FIELD_NUMBER = 6;
+    public static final int DIFFICULTY_ID_FIELD_NUMBER = 13;
     private int difficultyId_;
     /**
-     * <code>uint32 difficulty_id = 6;</code>
+     * <code>uint32 difficulty_id = 13;</code>
      * @return The difficultyId.
      */
     @java.lang.Override
@@ -166,10 +155,10 @@ public final class SelectAsterMidDifficultyRspOuterClass {
       return difficultyId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 15;
+    public static final int RETCODE_FIELD_NUMBER = 6;
     private int retcode_;
     /**
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -177,10 +166,21 @@ public final class SelectAsterMidDifficultyRspOuterClass {
       return retcode_;
     }
 
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 7;
+    public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 4;
+    private int gadgetEntityId_;
+    /**
+     * <code>uint32 gadget_entity_id = 4;</code>
+     * @return The gadgetEntityId.
+     */
+    @java.lang.Override
+    public int getGadgetEntityId() {
+      return gadgetEntityId_;
+    }
+
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 3;
     private int scheduleId_;
     /**
-     * <code>uint32 schedule_id = 7;</code>
+     * <code>uint32 schedule_id = 3;</code>
      * @return The scheduleId.
      */
     @java.lang.Override
@@ -202,17 +202,17 @@ public final class SelectAsterMidDifficultyRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (difficultyId_ != 0) {
-        output.writeUInt32(6, difficultyId_);
-      }
       if (scheduleId_ != 0) {
-        output.writeUInt32(7, scheduleId_);
+        output.writeUInt32(3, scheduleId_);
       }
       if (gadgetEntityId_ != 0) {
-        output.writeUInt32(11, gadgetEntityId_);
+        output.writeUInt32(4, gadgetEntityId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(15, retcode_);
+        output.writeInt32(6, retcode_);
+      }
+      if (difficultyId_ != 0) {
+        output.writeUInt32(13, difficultyId_);
       }
       unknownFields.writeTo(output);
     }
@@ -223,21 +223,21 @@ public final class SelectAsterMidDifficultyRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (difficultyId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, difficultyId_);
-      }
       if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, scheduleId_);
+          .computeUInt32Size(3, scheduleId_);
       }
       if (gadgetEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, gadgetEntityId_);
+          .computeUInt32Size(4, gadgetEntityId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(15, retcode_);
+          .computeInt32Size(6, retcode_);
+      }
+      if (difficultyId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, difficultyId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -254,12 +254,12 @@ public final class SelectAsterMidDifficultyRspOuterClass {
       }
       emu.grasscutter.net.proto.SelectAsterMidDifficultyRspOuterClass.SelectAsterMidDifficultyRsp other = (emu.grasscutter.net.proto.SelectAsterMidDifficultyRspOuterClass.SelectAsterMidDifficultyRsp) obj;
 
-      if (getGadgetEntityId()
-          != other.getGadgetEntityId()) return false;
       if (getDifficultyId()
           != other.getDifficultyId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getGadgetEntityId()
+          != other.getGadgetEntityId()) return false;
       if (getScheduleId()
           != other.getScheduleId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -273,12 +273,12 @@ public final class SelectAsterMidDifficultyRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + GADGET_ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGadgetEntityId();
       hash = (37 * hash) + DIFFICULTY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getDifficultyId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + GADGET_ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGadgetEntityId();
       hash = (37 * hash) + SCHEDULE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getScheduleId();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -378,8 +378,8 @@ public final class SelectAsterMidDifficultyRspOuterClass {
     }
     /**
      * <pre>
-     * Name: IMECNPNGPNG
-     * CmdId: 2001
+     * CmdId: 2010
+     * Obf: JJJFHAJLFGF
      * </pre>
      *
      * Protobuf type {@code SelectAsterMidDifficultyRsp}
@@ -419,11 +419,11 @@ public final class SelectAsterMidDifficultyRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        gadgetEntityId_ = 0;
-
         difficultyId_ = 0;
 
         retcode_ = 0;
+
+        gadgetEntityId_ = 0;
 
         scheduleId_ = 0;
 
@@ -453,9 +453,9 @@ public final class SelectAsterMidDifficultyRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SelectAsterMidDifficultyRspOuterClass.SelectAsterMidDifficultyRsp buildPartial() {
         emu.grasscutter.net.proto.SelectAsterMidDifficultyRspOuterClass.SelectAsterMidDifficultyRsp result = new emu.grasscutter.net.proto.SelectAsterMidDifficultyRspOuterClass.SelectAsterMidDifficultyRsp(this);
-        result.gadgetEntityId_ = gadgetEntityId_;
         result.difficultyId_ = difficultyId_;
         result.retcode_ = retcode_;
+        result.gadgetEntityId_ = gadgetEntityId_;
         result.scheduleId_ = scheduleId_;
         onBuilt();
         return result;
@@ -505,14 +505,14 @@ public final class SelectAsterMidDifficultyRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SelectAsterMidDifficultyRspOuterClass.SelectAsterMidDifficultyRsp other) {
         if (other == emu.grasscutter.net.proto.SelectAsterMidDifficultyRspOuterClass.SelectAsterMidDifficultyRsp.getDefaultInstance()) return this;
-        if (other.getGadgetEntityId() != 0) {
-          setGadgetEntityId(other.getGadgetEntityId());
-        }
         if (other.getDifficultyId() != 0) {
           setDifficultyId(other.getDifficultyId());
         }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getGadgetEntityId() != 0) {
+          setGadgetEntityId(other.getGadgetEntityId());
         }
         if (other.getScheduleId() != 0) {
           setScheduleId(other.getScheduleId());
@@ -546,40 +546,9 @@ public final class SelectAsterMidDifficultyRspOuterClass {
         return this;
       }
 
-      private int gadgetEntityId_ ;
-      /**
-       * <code>uint32 gadget_entity_id = 11;</code>
-       * @return The gadgetEntityId.
-       */
-      @java.lang.Override
-      public int getGadgetEntityId() {
-        return gadgetEntityId_;
-      }
-      /**
-       * <code>uint32 gadget_entity_id = 11;</code>
-       * @param value The gadgetEntityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGadgetEntityId(int value) {
-        
-        gadgetEntityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 gadget_entity_id = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGadgetEntityId() {
-        
-        gadgetEntityId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int difficultyId_ ;
       /**
-       * <code>uint32 difficulty_id = 6;</code>
+       * <code>uint32 difficulty_id = 13;</code>
        * @return The difficultyId.
        */
       @java.lang.Override
@@ -587,7 +556,7 @@ public final class SelectAsterMidDifficultyRspOuterClass {
         return difficultyId_;
       }
       /**
-       * <code>uint32 difficulty_id = 6;</code>
+       * <code>uint32 difficulty_id = 13;</code>
        * @param value The difficultyId to set.
        * @return This builder for chaining.
        */
@@ -598,7 +567,7 @@ public final class SelectAsterMidDifficultyRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficulty_id = 6;</code>
+       * <code>uint32 difficulty_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficultyId() {
@@ -610,7 +579,7 @@ public final class SelectAsterMidDifficultyRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 6;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -618,7 +587,7 @@ public final class SelectAsterMidDifficultyRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 6;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -629,7 +598,7 @@ public final class SelectAsterMidDifficultyRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -639,9 +608,40 @@ public final class SelectAsterMidDifficultyRspOuterClass {
         return this;
       }
 
+      private int gadgetEntityId_ ;
+      /**
+       * <code>uint32 gadget_entity_id = 4;</code>
+       * @return The gadgetEntityId.
+       */
+      @java.lang.Override
+      public int getGadgetEntityId() {
+        return gadgetEntityId_;
+      }
+      /**
+       * <code>uint32 gadget_entity_id = 4;</code>
+       * @param value The gadgetEntityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGadgetEntityId(int value) {
+        
+        gadgetEntityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 gadget_entity_id = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGadgetEntityId() {
+        
+        gadgetEntityId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int scheduleId_ ;
       /**
-       * <code>uint32 schedule_id = 7;</code>
+       * <code>uint32 schedule_id = 3;</code>
        * @return The scheduleId.
        */
       @java.lang.Override
@@ -649,7 +649,7 @@ public final class SelectAsterMidDifficultyRspOuterClass {
         return scheduleId_;
       }
       /**
-       * <code>uint32 schedule_id = 7;</code>
+       * <code>uint32 schedule_id = 3;</code>
        * @param value The scheduleId to set.
        * @return This builder for chaining.
        */
@@ -660,7 +660,7 @@ public final class SelectAsterMidDifficultyRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 schedule_id = 7;</code>
+       * <code>uint32 schedule_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearScheduleId() {
@@ -737,9 +737,9 @@ public final class SelectAsterMidDifficultyRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!SelectAsterMidDifficultyRsp.proto\"t\n\033S" +
-      "electAsterMidDifficultyRsp\022\030\n\020gadget_ent" +
-      "ity_id\030\013 \001(\r\022\025\n\rdifficulty_id\030\006 \001(\r\022\017\n\007r" +
-      "etcode\030\017 \001(\005\022\023\n\013schedule_id\030\007 \001(\rB\033\n\031emu" +
+      "electAsterMidDifficultyRsp\022\025\n\rdifficulty" +
+      "_id\030\r \001(\r\022\017\n\007retcode\030\006 \001(\005\022\030\n\020gadget_ent" +
+      "ity_id\030\004 \001(\r\022\023\n\013schedule_id\030\003 \001(\rB\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -751,7 +751,7 @@ public final class SelectAsterMidDifficultyRspOuterClass {
     internal_static_SelectAsterMidDifficultyRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SelectAsterMidDifficultyRsp_descriptor,
-        new java.lang.String[] { "GadgetEntityId", "DifficultyId", "Retcode", "ScheduleId", });
+        new java.lang.String[] { "DifficultyId", "Retcode", "GadgetEntityId", "ScheduleId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

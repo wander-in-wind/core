@@ -19,83 +19,71 @@ public final class DungeonEntryInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>uint32 FFJHKNBBFMF = 13;</code>
+     * @return The fFJHKNBBFMF.
+     */
+    int getFFJHKNBBFMF();
+
+    /**
+     * <code>uint32 dungeon_id = 9;</code>
+     * @return The dungeonId.
+     */
+    int getDungeonId();
+
+    /**
+     * <code>uint32 max_boss_chest_num = 5;</code>
+     * @return The maxBossChestNum.
+     */
+    int getMaxBossChestNum();
+
+    /**
+     * <code>bool is_passed = 12;</code>
+     * @return The isPassed.
+     */
+    boolean getIsPassed();
+
+    /**
+     * <code>uint32 ODGFEEPJAJA = 11;</code>
+     * @return The oDGFEEPJAJA.
+     */
+    int getODGFEEPJAJA();
+
+    /**
+     * <code>uint32 next_refresh_time = 10;</code>
+     * @return The nextRefreshTime.
+     */
+    int getNextRefreshTime();
+
+    /**
+     * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 3;</code>
+     * @return Whether the weeklyBossResinDiscountInfo field is set.
+     */
+    boolean hasWeeklyBossResinDiscountInfo();
+    /**
+     * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 3;</code>
+     * @return The weeklyBossResinDiscountInfo.
+     */
+    emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo getWeeklyBossResinDiscountInfo();
+    /**
+     * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 3;</code>
+     */
+    emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfoOrBuilder getWeeklyBossResinDiscountInfoOrBuilder();
+
+    /**
      * <code>uint32 start_time = 4;</code>
      * @return The startTime.
      */
     int getStartTime();
 
     /**
-     * <code>uint32 next_refresh_time = 2;</code>
-     * @return The nextRefreshTime.
-     */
-    int getNextRefreshTime();
-
-    /**
-     * <pre>
-     *HFEFHDCOMLB
-     * </pre>
-     *
-     * <code>uint32 max_boss_chest_num = 12;</code>
-     * @return The maxBossChestNum.
-     */
-    int getMaxBossChestNum();
-
-    /**
-     * <pre>
-     *not used
-     * </pre>
-     *
-     * <code>uint32 EIMBMLKPONH = 7;</code>
-     * @return The eIMBMLKPONH.
-     */
-    int getEIMBMLKPONH();
-
-    /**
-     * <code>bool is_passed = 15;</code>
-     * @return The isPassed.
-     */
-    boolean getIsPassed();
-
-    /**
-     * <pre>
-     *not used
-     * </pre>
-     *
-     * <code>uint32 JPBJFFCFINC = 6;</code>
-     * @return The jPBJFFCFINC.
-     */
-    int getJPBJFFCFINC();
-
-    /**
-     * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 10;</code>
-     * @return Whether the weeklyBossResinDiscountInfo field is set.
-     */
-    boolean hasWeeklyBossResinDiscountInfo();
-    /**
-     * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 10;</code>
-     * @return The weeklyBossResinDiscountInfo.
-     */
-    emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo getWeeklyBossResinDiscountInfo();
-    /**
-     * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 10;</code>
-     */
-    emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfoOrBuilder getWeeklyBossResinDiscountInfoOrBuilder();
-
-    /**
-     * <code>uint32 dungeon_id = 11;</code>
-     * @return The dungeonId.
-     */
-    int getDungeonId();
-
-    /**
-     * <code>uint32 end_time = 9;</code>
+     * <code>uint32 end_time = 2;</code>
      * @return The endTime.
      */
     int getEndTime();
   }
   /**
    * <pre>
-   * Name: CKFOCGGAGBL
+   * Obf: FCEKHDABEJM
    * </pre>
    *
    * Protobuf type {@code DungeonEntryInfo}
@@ -144,30 +132,10 @@ public final class DungeonEntryInfoOuterClass {
               break;
             case 16: {
 
-              nextRefreshTime_ = input.readUInt32();
-              break;
-            }
-            case 32: {
-
-              startTime_ = input.readUInt32();
-              break;
-            }
-            case 48: {
-
-              jPBJFFCFINC_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              eIMBMLKPONH_ = input.readUInt32();
-              break;
-            }
-            case 72: {
-
               endTime_ = input.readUInt32();
               break;
             }
-            case 82: {
+            case 26: {
               emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo.Builder subBuilder = null;
               if (weeklyBossResinDiscountInfo_ != null) {
                 subBuilder = weeklyBossResinDiscountInfo_.toBuilder();
@@ -180,19 +148,39 @@ public final class DungeonEntryInfoOuterClass {
 
               break;
             }
-            case 88: {
+            case 32: {
 
-              dungeonId_ = input.readUInt32();
+              startTime_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 40: {
 
               maxBossChestNum_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 72: {
+
+              dungeonId_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
+              nextRefreshTime_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              oDGFEEPJAJA_ = input.readUInt32();
+              break;
+            }
+            case 96: {
 
               isPassed_ = input.readBool();
+              break;
+            }
+            case 104: {
+
+              fFJHKNBBFMF_ = input.readUInt32();
               break;
             }
             default: {
@@ -227,6 +215,98 @@ public final class DungeonEntryInfoOuterClass {
               emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfo.class, emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfo.Builder.class);
     }
 
+    public static final int FFJHKNBBFMF_FIELD_NUMBER = 13;
+    private int fFJHKNBBFMF_;
+    /**
+     * <code>uint32 FFJHKNBBFMF = 13;</code>
+     * @return The fFJHKNBBFMF.
+     */
+    @java.lang.Override
+    public int getFFJHKNBBFMF() {
+      return fFJHKNBBFMF_;
+    }
+
+    public static final int DUNGEON_ID_FIELD_NUMBER = 9;
+    private int dungeonId_;
+    /**
+     * <code>uint32 dungeon_id = 9;</code>
+     * @return The dungeonId.
+     */
+    @java.lang.Override
+    public int getDungeonId() {
+      return dungeonId_;
+    }
+
+    public static final int MAX_BOSS_CHEST_NUM_FIELD_NUMBER = 5;
+    private int maxBossChestNum_;
+    /**
+     * <code>uint32 max_boss_chest_num = 5;</code>
+     * @return The maxBossChestNum.
+     */
+    @java.lang.Override
+    public int getMaxBossChestNum() {
+      return maxBossChestNum_;
+    }
+
+    public static final int IS_PASSED_FIELD_NUMBER = 12;
+    private boolean isPassed_;
+    /**
+     * <code>bool is_passed = 12;</code>
+     * @return The isPassed.
+     */
+    @java.lang.Override
+    public boolean getIsPassed() {
+      return isPassed_;
+    }
+
+    public static final int ODGFEEPJAJA_FIELD_NUMBER = 11;
+    private int oDGFEEPJAJA_;
+    /**
+     * <code>uint32 ODGFEEPJAJA = 11;</code>
+     * @return The oDGFEEPJAJA.
+     */
+    @java.lang.Override
+    public int getODGFEEPJAJA() {
+      return oDGFEEPJAJA_;
+    }
+
+    public static final int NEXT_REFRESH_TIME_FIELD_NUMBER = 10;
+    private int nextRefreshTime_;
+    /**
+     * <code>uint32 next_refresh_time = 10;</code>
+     * @return The nextRefreshTime.
+     */
+    @java.lang.Override
+    public int getNextRefreshTime() {
+      return nextRefreshTime_;
+    }
+
+    public static final int WEEKLY_BOSS_RESIN_DISCOUNT_INFO_FIELD_NUMBER = 3;
+    private emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo weeklyBossResinDiscountInfo_;
+    /**
+     * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 3;</code>
+     * @return Whether the weeklyBossResinDiscountInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasWeeklyBossResinDiscountInfo() {
+      return weeklyBossResinDiscountInfo_ != null;
+    }
+    /**
+     * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 3;</code>
+     * @return The weeklyBossResinDiscountInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo getWeeklyBossResinDiscountInfo() {
+      return weeklyBossResinDiscountInfo_ == null ? emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo.getDefaultInstance() : weeklyBossResinDiscountInfo_;
+    }
+    /**
+     * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 3;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfoOrBuilder getWeeklyBossResinDiscountInfoOrBuilder() {
+      return getWeeklyBossResinDiscountInfo();
+    }
+
     public static final int START_TIME_FIELD_NUMBER = 4;
     private int startTime_;
     /**
@@ -238,114 +318,10 @@ public final class DungeonEntryInfoOuterClass {
       return startTime_;
     }
 
-    public static final int NEXT_REFRESH_TIME_FIELD_NUMBER = 2;
-    private int nextRefreshTime_;
-    /**
-     * <code>uint32 next_refresh_time = 2;</code>
-     * @return The nextRefreshTime.
-     */
-    @java.lang.Override
-    public int getNextRefreshTime() {
-      return nextRefreshTime_;
-    }
-
-    public static final int MAX_BOSS_CHEST_NUM_FIELD_NUMBER = 12;
-    private int maxBossChestNum_;
-    /**
-     * <pre>
-     *HFEFHDCOMLB
-     * </pre>
-     *
-     * <code>uint32 max_boss_chest_num = 12;</code>
-     * @return The maxBossChestNum.
-     */
-    @java.lang.Override
-    public int getMaxBossChestNum() {
-      return maxBossChestNum_;
-    }
-
-    public static final int EIMBMLKPONH_FIELD_NUMBER = 7;
-    private int eIMBMLKPONH_;
-    /**
-     * <pre>
-     *not used
-     * </pre>
-     *
-     * <code>uint32 EIMBMLKPONH = 7;</code>
-     * @return The eIMBMLKPONH.
-     */
-    @java.lang.Override
-    public int getEIMBMLKPONH() {
-      return eIMBMLKPONH_;
-    }
-
-    public static final int IS_PASSED_FIELD_NUMBER = 15;
-    private boolean isPassed_;
-    /**
-     * <code>bool is_passed = 15;</code>
-     * @return The isPassed.
-     */
-    @java.lang.Override
-    public boolean getIsPassed() {
-      return isPassed_;
-    }
-
-    public static final int JPBJFFCFINC_FIELD_NUMBER = 6;
-    private int jPBJFFCFINC_;
-    /**
-     * <pre>
-     *not used
-     * </pre>
-     *
-     * <code>uint32 JPBJFFCFINC = 6;</code>
-     * @return The jPBJFFCFINC.
-     */
-    @java.lang.Override
-    public int getJPBJFFCFINC() {
-      return jPBJFFCFINC_;
-    }
-
-    public static final int WEEKLY_BOSS_RESIN_DISCOUNT_INFO_FIELD_NUMBER = 10;
-    private emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo weeklyBossResinDiscountInfo_;
-    /**
-     * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 10;</code>
-     * @return Whether the weeklyBossResinDiscountInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasWeeklyBossResinDiscountInfo() {
-      return weeklyBossResinDiscountInfo_ != null;
-    }
-    /**
-     * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 10;</code>
-     * @return The weeklyBossResinDiscountInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo getWeeklyBossResinDiscountInfo() {
-      return weeklyBossResinDiscountInfo_ == null ? emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo.getDefaultInstance() : weeklyBossResinDiscountInfo_;
-    }
-    /**
-     * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 10;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfoOrBuilder getWeeklyBossResinDiscountInfoOrBuilder() {
-      return getWeeklyBossResinDiscountInfo();
-    }
-
-    public static final int DUNGEON_ID_FIELD_NUMBER = 11;
-    private int dungeonId_;
-    /**
-     * <code>uint32 dungeon_id = 11;</code>
-     * @return The dungeonId.
-     */
-    @java.lang.Override
-    public int getDungeonId() {
-      return dungeonId_;
-    }
-
-    public static final int END_TIME_FIELD_NUMBER = 9;
+    public static final int END_TIME_FIELD_NUMBER = 2;
     private int endTime_;
     /**
-     * <code>uint32 end_time = 9;</code>
+     * <code>uint32 end_time = 2;</code>
      * @return The endTime.
      */
     @java.lang.Override
@@ -367,32 +343,32 @@ public final class DungeonEntryInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (nextRefreshTime_ != 0) {
-        output.writeUInt32(2, nextRefreshTime_);
+      if (endTime_ != 0) {
+        output.writeUInt32(2, endTime_);
+      }
+      if (weeklyBossResinDiscountInfo_ != null) {
+        output.writeMessage(3, getWeeklyBossResinDiscountInfo());
       }
       if (startTime_ != 0) {
         output.writeUInt32(4, startTime_);
       }
-      if (jPBJFFCFINC_ != 0) {
-        output.writeUInt32(6, jPBJFFCFINC_);
-      }
-      if (eIMBMLKPONH_ != 0) {
-        output.writeUInt32(7, eIMBMLKPONH_);
-      }
-      if (endTime_ != 0) {
-        output.writeUInt32(9, endTime_);
-      }
-      if (weeklyBossResinDiscountInfo_ != null) {
-        output.writeMessage(10, getWeeklyBossResinDiscountInfo());
+      if (maxBossChestNum_ != 0) {
+        output.writeUInt32(5, maxBossChestNum_);
       }
       if (dungeonId_ != 0) {
-        output.writeUInt32(11, dungeonId_);
+        output.writeUInt32(9, dungeonId_);
       }
-      if (maxBossChestNum_ != 0) {
-        output.writeUInt32(12, maxBossChestNum_);
+      if (nextRefreshTime_ != 0) {
+        output.writeUInt32(10, nextRefreshTime_);
+      }
+      if (oDGFEEPJAJA_ != 0) {
+        output.writeUInt32(11, oDGFEEPJAJA_);
       }
       if (isPassed_ != false) {
-        output.writeBool(15, isPassed_);
+        output.writeBool(12, isPassed_);
+      }
+      if (fFJHKNBBFMF_ != 0) {
+        output.writeUInt32(13, fFJHKNBBFMF_);
       }
       unknownFields.writeTo(output);
     }
@@ -403,41 +379,41 @@ public final class DungeonEntryInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (nextRefreshTime_ != 0) {
+      if (endTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, nextRefreshTime_);
+          .computeUInt32Size(2, endTime_);
+      }
+      if (weeklyBossResinDiscountInfo_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(3, getWeeklyBossResinDiscountInfo());
       }
       if (startTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(4, startTime_);
       }
-      if (jPBJFFCFINC_ != 0) {
+      if (maxBossChestNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, jPBJFFCFINC_);
-      }
-      if (eIMBMLKPONH_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, eIMBMLKPONH_);
-      }
-      if (endTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, endTime_);
-      }
-      if (weeklyBossResinDiscountInfo_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, getWeeklyBossResinDiscountInfo());
+          .computeUInt32Size(5, maxBossChestNum_);
       }
       if (dungeonId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, dungeonId_);
+          .computeUInt32Size(9, dungeonId_);
       }
-      if (maxBossChestNum_ != 0) {
+      if (nextRefreshTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, maxBossChestNum_);
+          .computeUInt32Size(10, nextRefreshTime_);
+      }
+      if (oDGFEEPJAJA_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, oDGFEEPJAJA_);
       }
       if (isPassed_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isPassed_);
+          .computeBoolSize(12, isPassed_);
+      }
+      if (fFJHKNBBFMF_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, fFJHKNBBFMF_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -454,25 +430,25 @@ public final class DungeonEntryInfoOuterClass {
       }
       emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfo other = (emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfo) obj;
 
-      if (getStartTime()
-          != other.getStartTime()) return false;
-      if (getNextRefreshTime()
-          != other.getNextRefreshTime()) return false;
+      if (getFFJHKNBBFMF()
+          != other.getFFJHKNBBFMF()) return false;
+      if (getDungeonId()
+          != other.getDungeonId()) return false;
       if (getMaxBossChestNum()
           != other.getMaxBossChestNum()) return false;
-      if (getEIMBMLKPONH()
-          != other.getEIMBMLKPONH()) return false;
       if (getIsPassed()
           != other.getIsPassed()) return false;
-      if (getJPBJFFCFINC()
-          != other.getJPBJFFCFINC()) return false;
+      if (getODGFEEPJAJA()
+          != other.getODGFEEPJAJA()) return false;
+      if (getNextRefreshTime()
+          != other.getNextRefreshTime()) return false;
       if (hasWeeklyBossResinDiscountInfo() != other.hasWeeklyBossResinDiscountInfo()) return false;
       if (hasWeeklyBossResinDiscountInfo()) {
         if (!getWeeklyBossResinDiscountInfo()
             .equals(other.getWeeklyBossResinDiscountInfo())) return false;
       }
-      if (getDungeonId()
-          != other.getDungeonId()) return false;
+      if (getStartTime()
+          != other.getStartTime()) return false;
       if (getEndTime()
           != other.getEndTime()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -486,25 +462,25 @@ public final class DungeonEntryInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + START_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getStartTime();
-      hash = (37 * hash) + NEXT_REFRESH_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getNextRefreshTime();
+      hash = (37 * hash) + FFJHKNBBFMF_FIELD_NUMBER;
+      hash = (53 * hash) + getFFJHKNBBFMF();
+      hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getDungeonId();
       hash = (37 * hash) + MAX_BOSS_CHEST_NUM_FIELD_NUMBER;
       hash = (53 * hash) + getMaxBossChestNum();
-      hash = (37 * hash) + EIMBMLKPONH_FIELD_NUMBER;
-      hash = (53 * hash) + getEIMBMLKPONH();
       hash = (37 * hash) + IS_PASSED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsPassed());
-      hash = (37 * hash) + JPBJFFCFINC_FIELD_NUMBER;
-      hash = (53 * hash) + getJPBJFFCFINC();
+      hash = (37 * hash) + ODGFEEPJAJA_FIELD_NUMBER;
+      hash = (53 * hash) + getODGFEEPJAJA();
+      hash = (37 * hash) + NEXT_REFRESH_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getNextRefreshTime();
       if (hasWeeklyBossResinDiscountInfo()) {
         hash = (37 * hash) + WEEKLY_BOSS_RESIN_DISCOUNT_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getWeeklyBossResinDiscountInfo().hashCode();
       }
-      hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getDungeonId();
+      hash = (37 * hash) + START_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getStartTime();
       hash = (37 * hash) + END_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getEndTime();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -604,7 +580,7 @@ public final class DungeonEntryInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: CKFOCGGAGBL
+     * Obf: FCEKHDABEJM
      * </pre>
      *
      * Protobuf type {@code DungeonEntryInfo}
@@ -644,17 +620,17 @@ public final class DungeonEntryInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        startTime_ = 0;
+        fFJHKNBBFMF_ = 0;
 
-        nextRefreshTime_ = 0;
+        dungeonId_ = 0;
 
         maxBossChestNum_ = 0;
 
-        eIMBMLKPONH_ = 0;
-
         isPassed_ = false;
 
-        jPBJFFCFINC_ = 0;
+        oDGFEEPJAJA_ = 0;
+
+        nextRefreshTime_ = 0;
 
         if (weeklyBossResinDiscountInfoBuilder_ == null) {
           weeklyBossResinDiscountInfo_ = null;
@@ -662,7 +638,7 @@ public final class DungeonEntryInfoOuterClass {
           weeklyBossResinDiscountInfo_ = null;
           weeklyBossResinDiscountInfoBuilder_ = null;
         }
-        dungeonId_ = 0;
+        startTime_ = 0;
 
         endTime_ = 0;
 
@@ -692,18 +668,18 @@ public final class DungeonEntryInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfo buildPartial() {
         emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfo result = new emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfo(this);
-        result.startTime_ = startTime_;
-        result.nextRefreshTime_ = nextRefreshTime_;
+        result.fFJHKNBBFMF_ = fFJHKNBBFMF_;
+        result.dungeonId_ = dungeonId_;
         result.maxBossChestNum_ = maxBossChestNum_;
-        result.eIMBMLKPONH_ = eIMBMLKPONH_;
         result.isPassed_ = isPassed_;
-        result.jPBJFFCFINC_ = jPBJFFCFINC_;
+        result.oDGFEEPJAJA_ = oDGFEEPJAJA_;
+        result.nextRefreshTime_ = nextRefreshTime_;
         if (weeklyBossResinDiscountInfoBuilder_ == null) {
           result.weeklyBossResinDiscountInfo_ = weeklyBossResinDiscountInfo_;
         } else {
           result.weeklyBossResinDiscountInfo_ = weeklyBossResinDiscountInfoBuilder_.build();
         }
-        result.dungeonId_ = dungeonId_;
+        result.startTime_ = startTime_;
         result.endTime_ = endTime_;
         onBuilt();
         return result;
@@ -753,29 +729,29 @@ public final class DungeonEntryInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfo other) {
         if (other == emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfo.getDefaultInstance()) return this;
-        if (other.getStartTime() != 0) {
-          setStartTime(other.getStartTime());
+        if (other.getFFJHKNBBFMF() != 0) {
+          setFFJHKNBBFMF(other.getFFJHKNBBFMF());
         }
-        if (other.getNextRefreshTime() != 0) {
-          setNextRefreshTime(other.getNextRefreshTime());
+        if (other.getDungeonId() != 0) {
+          setDungeonId(other.getDungeonId());
         }
         if (other.getMaxBossChestNum() != 0) {
           setMaxBossChestNum(other.getMaxBossChestNum());
         }
-        if (other.getEIMBMLKPONH() != 0) {
-          setEIMBMLKPONH(other.getEIMBMLKPONH());
-        }
         if (other.getIsPassed() != false) {
           setIsPassed(other.getIsPassed());
         }
-        if (other.getJPBJFFCFINC() != 0) {
-          setJPBJFFCFINC(other.getJPBJFFCFINC());
+        if (other.getODGFEEPJAJA() != 0) {
+          setODGFEEPJAJA(other.getODGFEEPJAJA());
+        }
+        if (other.getNextRefreshTime() != 0) {
+          setNextRefreshTime(other.getNextRefreshTime());
         }
         if (other.hasWeeklyBossResinDiscountInfo()) {
           mergeWeeklyBossResinDiscountInfo(other.getWeeklyBossResinDiscountInfo());
         }
-        if (other.getDungeonId() != 0) {
-          setDungeonId(other.getDungeonId());
+        if (other.getStartTime() != 0) {
+          setStartTime(other.getStartTime());
         }
         if (other.getEndTime() != 0) {
           setEndTime(other.getEndTime());
@@ -809,6 +785,311 @@ public final class DungeonEntryInfoOuterClass {
         return this;
       }
 
+      private int fFJHKNBBFMF_ ;
+      /**
+       * <code>uint32 FFJHKNBBFMF = 13;</code>
+       * @return The fFJHKNBBFMF.
+       */
+      @java.lang.Override
+      public int getFFJHKNBBFMF() {
+        return fFJHKNBBFMF_;
+      }
+      /**
+       * <code>uint32 FFJHKNBBFMF = 13;</code>
+       * @param value The fFJHKNBBFMF to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFFJHKNBBFMF(int value) {
+        
+        fFJHKNBBFMF_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 FFJHKNBBFMF = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFFJHKNBBFMF() {
+        
+        fFJHKNBBFMF_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int dungeonId_ ;
+      /**
+       * <code>uint32 dungeon_id = 9;</code>
+       * @return The dungeonId.
+       */
+      @java.lang.Override
+      public int getDungeonId() {
+        return dungeonId_;
+      }
+      /**
+       * <code>uint32 dungeon_id = 9;</code>
+       * @param value The dungeonId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDungeonId(int value) {
+        
+        dungeonId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 dungeon_id = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDungeonId() {
+        
+        dungeonId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int maxBossChestNum_ ;
+      /**
+       * <code>uint32 max_boss_chest_num = 5;</code>
+       * @return The maxBossChestNum.
+       */
+      @java.lang.Override
+      public int getMaxBossChestNum() {
+        return maxBossChestNum_;
+      }
+      /**
+       * <code>uint32 max_boss_chest_num = 5;</code>
+       * @param value The maxBossChestNum to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMaxBossChestNum(int value) {
+        
+        maxBossChestNum_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 max_boss_chest_num = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMaxBossChestNum() {
+        
+        maxBossChestNum_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isPassed_ ;
+      /**
+       * <code>bool is_passed = 12;</code>
+       * @return The isPassed.
+       */
+      @java.lang.Override
+      public boolean getIsPassed() {
+        return isPassed_;
+      }
+      /**
+       * <code>bool is_passed = 12;</code>
+       * @param value The isPassed to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsPassed(boolean value) {
+        
+        isPassed_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_passed = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsPassed() {
+        
+        isPassed_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int oDGFEEPJAJA_ ;
+      /**
+       * <code>uint32 ODGFEEPJAJA = 11;</code>
+       * @return The oDGFEEPJAJA.
+       */
+      @java.lang.Override
+      public int getODGFEEPJAJA() {
+        return oDGFEEPJAJA_;
+      }
+      /**
+       * <code>uint32 ODGFEEPJAJA = 11;</code>
+       * @param value The oDGFEEPJAJA to set.
+       * @return This builder for chaining.
+       */
+      public Builder setODGFEEPJAJA(int value) {
+        
+        oDGFEEPJAJA_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 ODGFEEPJAJA = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearODGFEEPJAJA() {
+        
+        oDGFEEPJAJA_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int nextRefreshTime_ ;
+      /**
+       * <code>uint32 next_refresh_time = 10;</code>
+       * @return The nextRefreshTime.
+       */
+      @java.lang.Override
+      public int getNextRefreshTime() {
+        return nextRefreshTime_;
+      }
+      /**
+       * <code>uint32 next_refresh_time = 10;</code>
+       * @param value The nextRefreshTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNextRefreshTime(int value) {
+        
+        nextRefreshTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 next_refresh_time = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNextRefreshTime() {
+        
+        nextRefreshTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo weeklyBossResinDiscountInfo_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo, emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo.Builder, emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfoOrBuilder> weeklyBossResinDiscountInfoBuilder_;
+      /**
+       * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 3;</code>
+       * @return Whether the weeklyBossResinDiscountInfo field is set.
+       */
+      public boolean hasWeeklyBossResinDiscountInfo() {
+        return weeklyBossResinDiscountInfoBuilder_ != null || weeklyBossResinDiscountInfo_ != null;
+      }
+      /**
+       * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 3;</code>
+       * @return The weeklyBossResinDiscountInfo.
+       */
+      public emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo getWeeklyBossResinDiscountInfo() {
+        if (weeklyBossResinDiscountInfoBuilder_ == null) {
+          return weeklyBossResinDiscountInfo_ == null ? emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo.getDefaultInstance() : weeklyBossResinDiscountInfo_;
+        } else {
+          return weeklyBossResinDiscountInfoBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 3;</code>
+       */
+      public Builder setWeeklyBossResinDiscountInfo(emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo value) {
+        if (weeklyBossResinDiscountInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          weeklyBossResinDiscountInfo_ = value;
+          onChanged();
+        } else {
+          weeklyBossResinDiscountInfoBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 3;</code>
+       */
+      public Builder setWeeklyBossResinDiscountInfo(
+          emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo.Builder builderForValue) {
+        if (weeklyBossResinDiscountInfoBuilder_ == null) {
+          weeklyBossResinDiscountInfo_ = builderForValue.build();
+          onChanged();
+        } else {
+          weeklyBossResinDiscountInfoBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 3;</code>
+       */
+      public Builder mergeWeeklyBossResinDiscountInfo(emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo value) {
+        if (weeklyBossResinDiscountInfoBuilder_ == null) {
+          if (weeklyBossResinDiscountInfo_ != null) {
+            weeklyBossResinDiscountInfo_ =
+              emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo.newBuilder(weeklyBossResinDiscountInfo_).mergeFrom(value).buildPartial();
+          } else {
+            weeklyBossResinDiscountInfo_ = value;
+          }
+          onChanged();
+        } else {
+          weeklyBossResinDiscountInfoBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 3;</code>
+       */
+      public Builder clearWeeklyBossResinDiscountInfo() {
+        if (weeklyBossResinDiscountInfoBuilder_ == null) {
+          weeklyBossResinDiscountInfo_ = null;
+          onChanged();
+        } else {
+          weeklyBossResinDiscountInfo_ = null;
+          weeklyBossResinDiscountInfoBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 3;</code>
+       */
+      public emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo.Builder getWeeklyBossResinDiscountInfoBuilder() {
+        
+        onChanged();
+        return getWeeklyBossResinDiscountInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 3;</code>
+       */
+      public emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfoOrBuilder getWeeklyBossResinDiscountInfoOrBuilder() {
+        if (weeklyBossResinDiscountInfoBuilder_ != null) {
+          return weeklyBossResinDiscountInfoBuilder_.getMessageOrBuilder();
+        } else {
+          return weeklyBossResinDiscountInfo_ == null ?
+              emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo.getDefaultInstance() : weeklyBossResinDiscountInfo_;
+        }
+      }
+      /**
+       * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 3;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo, emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo.Builder, emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfoOrBuilder> 
+          getWeeklyBossResinDiscountInfoFieldBuilder() {
+        if (weeklyBossResinDiscountInfoBuilder_ == null) {
+          weeklyBossResinDiscountInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo, emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo.Builder, emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfoOrBuilder>(
+                  getWeeklyBossResinDiscountInfo(),
+                  getParentForChildren(),
+                  isClean());
+          weeklyBossResinDiscountInfo_ = null;
+        }
+        return weeklyBossResinDiscountInfoBuilder_;
+      }
+
       private int startTime_ ;
       /**
        * <code>uint32 start_time = 4;</code>
@@ -840,350 +1121,9 @@ public final class DungeonEntryInfoOuterClass {
         return this;
       }
 
-      private int nextRefreshTime_ ;
-      /**
-       * <code>uint32 next_refresh_time = 2;</code>
-       * @return The nextRefreshTime.
-       */
-      @java.lang.Override
-      public int getNextRefreshTime() {
-        return nextRefreshTime_;
-      }
-      /**
-       * <code>uint32 next_refresh_time = 2;</code>
-       * @param value The nextRefreshTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNextRefreshTime(int value) {
-        
-        nextRefreshTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 next_refresh_time = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearNextRefreshTime() {
-        
-        nextRefreshTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int maxBossChestNum_ ;
-      /**
-       * <pre>
-       *HFEFHDCOMLB
-       * </pre>
-       *
-       * <code>uint32 max_boss_chest_num = 12;</code>
-       * @return The maxBossChestNum.
-       */
-      @java.lang.Override
-      public int getMaxBossChestNum() {
-        return maxBossChestNum_;
-      }
-      /**
-       * <pre>
-       *HFEFHDCOMLB
-       * </pre>
-       *
-       * <code>uint32 max_boss_chest_num = 12;</code>
-       * @param value The maxBossChestNum to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMaxBossChestNum(int value) {
-        
-        maxBossChestNum_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *HFEFHDCOMLB
-       * </pre>
-       *
-       * <code>uint32 max_boss_chest_num = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMaxBossChestNum() {
-        
-        maxBossChestNum_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int eIMBMLKPONH_ ;
-      /**
-       * <pre>
-       *not used
-       * </pre>
-       *
-       * <code>uint32 EIMBMLKPONH = 7;</code>
-       * @return The eIMBMLKPONH.
-       */
-      @java.lang.Override
-      public int getEIMBMLKPONH() {
-        return eIMBMLKPONH_;
-      }
-      /**
-       * <pre>
-       *not used
-       * </pre>
-       *
-       * <code>uint32 EIMBMLKPONH = 7;</code>
-       * @param value The eIMBMLKPONH to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEIMBMLKPONH(int value) {
-        
-        eIMBMLKPONH_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *not used
-       * </pre>
-       *
-       * <code>uint32 EIMBMLKPONH = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEIMBMLKPONH() {
-        
-        eIMBMLKPONH_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isPassed_ ;
-      /**
-       * <code>bool is_passed = 15;</code>
-       * @return The isPassed.
-       */
-      @java.lang.Override
-      public boolean getIsPassed() {
-        return isPassed_;
-      }
-      /**
-       * <code>bool is_passed = 15;</code>
-       * @param value The isPassed to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsPassed(boolean value) {
-        
-        isPassed_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_passed = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsPassed() {
-        
-        isPassed_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int jPBJFFCFINC_ ;
-      /**
-       * <pre>
-       *not used
-       * </pre>
-       *
-       * <code>uint32 JPBJFFCFINC = 6;</code>
-       * @return The jPBJFFCFINC.
-       */
-      @java.lang.Override
-      public int getJPBJFFCFINC() {
-        return jPBJFFCFINC_;
-      }
-      /**
-       * <pre>
-       *not used
-       * </pre>
-       *
-       * <code>uint32 JPBJFFCFINC = 6;</code>
-       * @param value The jPBJFFCFINC to set.
-       * @return This builder for chaining.
-       */
-      public Builder setJPBJFFCFINC(int value) {
-        
-        jPBJFFCFINC_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *not used
-       * </pre>
-       *
-       * <code>uint32 JPBJFFCFINC = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearJPBJFFCFINC() {
-        
-        jPBJFFCFINC_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo weeklyBossResinDiscountInfo_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo, emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo.Builder, emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfoOrBuilder> weeklyBossResinDiscountInfoBuilder_;
-      /**
-       * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 10;</code>
-       * @return Whether the weeklyBossResinDiscountInfo field is set.
-       */
-      public boolean hasWeeklyBossResinDiscountInfo() {
-        return weeklyBossResinDiscountInfoBuilder_ != null || weeklyBossResinDiscountInfo_ != null;
-      }
-      /**
-       * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 10;</code>
-       * @return The weeklyBossResinDiscountInfo.
-       */
-      public emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo getWeeklyBossResinDiscountInfo() {
-        if (weeklyBossResinDiscountInfoBuilder_ == null) {
-          return weeklyBossResinDiscountInfo_ == null ? emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo.getDefaultInstance() : weeklyBossResinDiscountInfo_;
-        } else {
-          return weeklyBossResinDiscountInfoBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 10;</code>
-       */
-      public Builder setWeeklyBossResinDiscountInfo(emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo value) {
-        if (weeklyBossResinDiscountInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          weeklyBossResinDiscountInfo_ = value;
-          onChanged();
-        } else {
-          weeklyBossResinDiscountInfoBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 10;</code>
-       */
-      public Builder setWeeklyBossResinDiscountInfo(
-          emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo.Builder builderForValue) {
-        if (weeklyBossResinDiscountInfoBuilder_ == null) {
-          weeklyBossResinDiscountInfo_ = builderForValue.build();
-          onChanged();
-        } else {
-          weeklyBossResinDiscountInfoBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 10;</code>
-       */
-      public Builder mergeWeeklyBossResinDiscountInfo(emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo value) {
-        if (weeklyBossResinDiscountInfoBuilder_ == null) {
-          if (weeklyBossResinDiscountInfo_ != null) {
-            weeklyBossResinDiscountInfo_ =
-              emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo.newBuilder(weeklyBossResinDiscountInfo_).mergeFrom(value).buildPartial();
-          } else {
-            weeklyBossResinDiscountInfo_ = value;
-          }
-          onChanged();
-        } else {
-          weeklyBossResinDiscountInfoBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 10;</code>
-       */
-      public Builder clearWeeklyBossResinDiscountInfo() {
-        if (weeklyBossResinDiscountInfoBuilder_ == null) {
-          weeklyBossResinDiscountInfo_ = null;
-          onChanged();
-        } else {
-          weeklyBossResinDiscountInfo_ = null;
-          weeklyBossResinDiscountInfoBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 10;</code>
-       */
-      public emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo.Builder getWeeklyBossResinDiscountInfoBuilder() {
-        
-        onChanged();
-        return getWeeklyBossResinDiscountInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 10;</code>
-       */
-      public emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfoOrBuilder getWeeklyBossResinDiscountInfoOrBuilder() {
-        if (weeklyBossResinDiscountInfoBuilder_ != null) {
-          return weeklyBossResinDiscountInfoBuilder_.getMessageOrBuilder();
-        } else {
-          return weeklyBossResinDiscountInfo_ == null ?
-              emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo.getDefaultInstance() : weeklyBossResinDiscountInfo_;
-        }
-      }
-      /**
-       * <code>.WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 10;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo, emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo.Builder, emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfoOrBuilder> 
-          getWeeklyBossResinDiscountInfoFieldBuilder() {
-        if (weeklyBossResinDiscountInfoBuilder_ == null) {
-          weeklyBossResinDiscountInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo, emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo.Builder, emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfoOrBuilder>(
-                  getWeeklyBossResinDiscountInfo(),
-                  getParentForChildren(),
-                  isClean());
-          weeklyBossResinDiscountInfo_ = null;
-        }
-        return weeklyBossResinDiscountInfoBuilder_;
-      }
-
-      private int dungeonId_ ;
-      /**
-       * <code>uint32 dungeon_id = 11;</code>
-       * @return The dungeonId.
-       */
-      @java.lang.Override
-      public int getDungeonId() {
-        return dungeonId_;
-      }
-      /**
-       * <code>uint32 dungeon_id = 11;</code>
-       * @param value The dungeonId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDungeonId(int value) {
-        
-        dungeonId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 dungeon_id = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDungeonId() {
-        
-        dungeonId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int endTime_ ;
       /**
-       * <code>uint32 end_time = 9;</code>
+       * <code>uint32 end_time = 2;</code>
        * @return The endTime.
        */
       @java.lang.Override
@@ -1191,7 +1131,7 @@ public final class DungeonEntryInfoOuterClass {
         return endTime_;
       }
       /**
-       * <code>uint32 end_time = 9;</code>
+       * <code>uint32 end_time = 2;</code>
        * @param value The endTime to set.
        * @return This builder for chaining.
        */
@@ -1202,7 +1142,7 @@ public final class DungeonEntryInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 end_time = 9;</code>
+       * <code>uint32 end_time = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearEndTime() {
@@ -1280,13 +1220,13 @@ public final class DungeonEntryInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\026DungeonEntryInfo.proto\032!WeeklyBossResi" +
       "nDiscountInfo.proto\"\207\002\n\020DungeonEntryInfo" +
-      "\022\022\n\nstart_time\030\004 \001(\r\022\031\n\021next_refresh_tim" +
-      "e\030\002 \001(\r\022\032\n\022max_boss_chest_num\030\014 \001(\r\022\023\n\013E" +
-      "IMBMLKPONH\030\007 \001(\r\022\021\n\tis_passed\030\017 \001(\010\022\023\n\013J" +
-      "PBJFFCFINC\030\006 \001(\r\022E\n\037weekly_boss_resin_di" +
-      "scount_info\030\n \001(\0132\034.WeeklyBossResinDisco" +
-      "untInfo\022\022\n\ndungeon_id\030\013 \001(\r\022\020\n\010end_time\030" +
-      "\t \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "\022\023\n\013FFJHKNBBFMF\030\r \001(\r\022\022\n\ndungeon_id\030\t \001(" +
+      "\r\022\032\n\022max_boss_chest_num\030\005 \001(\r\022\021\n\tis_pass" +
+      "ed\030\014 \001(\010\022\023\n\013ODGFEEPJAJA\030\013 \001(\r\022\031\n\021next_re" +
+      "fresh_time\030\n \001(\r\022E\n\037weekly_boss_resin_di" +
+      "scount_info\030\003 \001(\0132\034.WeeklyBossResinDisco" +
+      "untInfo\022\022\n\nstart_time\030\004 \001(\r\022\020\n\010end_time\030" +
+      "\002 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1299,7 +1239,7 @@ public final class DungeonEntryInfoOuterClass {
     internal_static_DungeonEntryInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DungeonEntryInfo_descriptor,
-        new java.lang.String[] { "StartTime", "NextRefreshTime", "MaxBossChestNum", "EIMBMLKPONH", "IsPassed", "JPBJFFCFINC", "WeeklyBossResinDiscountInfo", "DungeonId", "EndTime", });
+        new java.lang.String[] { "FFJHKNBBFMF", "DungeonId", "MaxBossChestNum", "IsPassed", "ODGFEEPJAJA", "NextRefreshTime", "WeeklyBossResinDiscountInfo", "StartTime", "EndTime", });
     emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.getDescriptor();
   }
 

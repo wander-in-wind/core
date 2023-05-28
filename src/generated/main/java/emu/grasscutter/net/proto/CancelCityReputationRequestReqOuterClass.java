@@ -19,21 +19,21 @@ public final class CancelCityReputationRequestReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 request_id = 6;</code>
+     * <code>uint32 request_id = 12;</code>
      * @return The requestId.
      */
     int getRequestId();
 
     /**
-     * <code>uint32 city_id = 10;</code>
+     * <code>uint32 city_id = 9;</code>
      * @return The cityId.
      */
     int getCityId();
   }
   /**
    * <pre>
-   * Name: KOMPEBHALPK
-   * CmdId: 2850
+   * CmdId: 2830
+   * Obf: BINIMLECNHN
    * </pre>
    *
    * Protobuf type {@code CancelCityReputationRequestReq}
@@ -80,14 +80,14 @@ public final class CancelCityReputationRequestReqOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
-
-              requestId_ = input.readUInt32();
-              break;
-            }
-            case 80: {
+            case 72: {
 
               cityId_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              requestId_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,10 +122,10 @@ public final class CancelCityReputationRequestReqOuterClass {
               emu.grasscutter.net.proto.CancelCityReputationRequestReqOuterClass.CancelCityReputationRequestReq.class, emu.grasscutter.net.proto.CancelCityReputationRequestReqOuterClass.CancelCityReputationRequestReq.Builder.class);
     }
 
-    public static final int REQUEST_ID_FIELD_NUMBER = 6;
+    public static final int REQUEST_ID_FIELD_NUMBER = 12;
     private int requestId_;
     /**
-     * <code>uint32 request_id = 6;</code>
+     * <code>uint32 request_id = 12;</code>
      * @return The requestId.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class CancelCityReputationRequestReqOuterClass {
       return requestId_;
     }
 
-    public static final int CITY_ID_FIELD_NUMBER = 10;
+    public static final int CITY_ID_FIELD_NUMBER = 9;
     private int cityId_;
     /**
-     * <code>uint32 city_id = 10;</code>
+     * <code>uint32 city_id = 9;</code>
      * @return The cityId.
      */
     @java.lang.Override
@@ -158,11 +158,11 @@ public final class CancelCityReputationRequestReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (requestId_ != 0) {
-        output.writeUInt32(6, requestId_);
-      }
       if (cityId_ != 0) {
-        output.writeUInt32(10, cityId_);
+        output.writeUInt32(9, cityId_);
+      }
+      if (requestId_ != 0) {
+        output.writeUInt32(12, requestId_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class CancelCityReputationRequestReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (requestId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, requestId_);
-      }
       if (cityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, cityId_);
+          .computeUInt32Size(9, cityId_);
+      }
+      if (requestId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, requestId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class CancelCityReputationRequestReqOuterClass {
     }
     /**
      * <pre>
-     * Name: KOMPEBHALPK
-     * CmdId: 2850
+     * CmdId: 2830
+     * Obf: BINIMLECNHN
      * </pre>
      *
      * Protobuf type {@code CancelCityReputationRequestReq}
@@ -470,7 +470,7 @@ public final class CancelCityReputationRequestReqOuterClass {
 
       private int requestId_ ;
       /**
-       * <code>uint32 request_id = 6;</code>
+       * <code>uint32 request_id = 12;</code>
        * @return The requestId.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class CancelCityReputationRequestReqOuterClass {
         return requestId_;
       }
       /**
-       * <code>uint32 request_id = 6;</code>
+       * <code>uint32 request_id = 12;</code>
        * @param value The requestId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class CancelCityReputationRequestReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 request_id = 6;</code>
+       * <code>uint32 request_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearRequestId() {
@@ -501,7 +501,7 @@ public final class CancelCityReputationRequestReqOuterClass {
 
       private int cityId_ ;
       /**
-       * <code>uint32 city_id = 10;</code>
+       * <code>uint32 city_id = 9;</code>
        * @return The cityId.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class CancelCityReputationRequestReqOuterClass {
         return cityId_;
       }
       /**
-       * <code>uint32 city_id = 10;</code>
+       * <code>uint32 city_id = 9;</code>
        * @param value The cityId to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class CancelCityReputationRequestReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 city_id = 10;</code>
+       * <code>uint32 city_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearCityId() {
@@ -598,7 +598,7 @@ public final class CancelCityReputationRequestReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n$CancelCityReputationRequestReq.proto\"E" +
       "\n\036CancelCityReputationRequestReq\022\022\n\nrequ" +
-      "est_id\030\006 \001(\r\022\017\n\007city_id\030\n \001(\rB\033\n\031emu.gra" +
+      "est_id\030\014 \001(\r\022\017\n\007city_id\030\t \001(\rB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

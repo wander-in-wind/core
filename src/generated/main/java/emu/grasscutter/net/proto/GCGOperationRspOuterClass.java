@@ -19,21 +19,21 @@ public final class GCGOperationRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 10;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>uint32 op_seq = 14;</code>
+     * <code>uint32 op_seq = 8;</code>
      * @return The opSeq.
      */
     int getOpSeq();
+
+    /**
+     * <code>int32 retcode = 6;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
    * <pre>
-   * Name: FLANFFAFKCL
-   * CmdId: 7668
+   * CmdId: 7697
+   * Obf: HKDOBJEEIFB
    * </pre>
    *
    * Protobuf type {@code GCGOperationRsp}
@@ -80,12 +80,12 @@ public final class GCGOperationRspOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 48: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 112: {
+            case 64: {
 
               opSeq_ = input.readUInt32();
               break;
@@ -122,26 +122,26 @@ public final class GCGOperationRspOuterClass {
               emu.grasscutter.net.proto.GCGOperationRspOuterClass.GCGOperationRsp.class, emu.grasscutter.net.proto.GCGOperationRspOuterClass.GCGOperationRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 10;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 10;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int OP_SEQ_FIELD_NUMBER = 14;
+    public static final int OP_SEQ_FIELD_NUMBER = 8;
     private int opSeq_;
     /**
-     * <code>uint32 op_seq = 14;</code>
+     * <code>uint32 op_seq = 8;</code>
      * @return The opSeq.
      */
     @java.lang.Override
     public int getOpSeq() {
       return opSeq_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 6;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 6;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,10 +159,10 @@ public final class GCGOperationRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(10, retcode_);
+        output.writeInt32(6, retcode_);
       }
       if (opSeq_ != 0) {
-        output.writeUInt32(14, opSeq_);
+        output.writeUInt32(8, opSeq_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +175,11 @@ public final class GCGOperationRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(10, retcode_);
+          .computeInt32Size(6, retcode_);
       }
       if (opSeq_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, opSeq_);
+          .computeUInt32Size(8, opSeq_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +196,10 @@ public final class GCGOperationRspOuterClass {
       }
       emu.grasscutter.net.proto.GCGOperationRspOuterClass.GCGOperationRsp other = (emu.grasscutter.net.proto.GCGOperationRspOuterClass.GCGOperationRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getOpSeq()
           != other.getOpSeq()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +211,10 @@ public final class GCGOperationRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + OP_SEQ_FIELD_NUMBER;
       hash = (53 * hash) + getOpSeq();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +312,8 @@ public final class GCGOperationRspOuterClass {
     }
     /**
      * <pre>
-     * Name: FLANFFAFKCL
-     * CmdId: 7668
+     * CmdId: 7697
+     * Obf: HKDOBJEEIFB
      * </pre>
      *
      * Protobuf type {@code GCGOperationRsp}
@@ -353,9 +353,9 @@ public final class GCGOperationRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         opSeq_ = 0;
+
+        retcode_ = 0;
 
         return this;
       }
@@ -383,8 +383,8 @@ public final class GCGOperationRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGOperationRspOuterClass.GCGOperationRsp buildPartial() {
         emu.grasscutter.net.proto.GCGOperationRspOuterClass.GCGOperationRsp result = new emu.grasscutter.net.proto.GCGOperationRspOuterClass.GCGOperationRsp(this);
-        result.retcode_ = retcode_;
         result.opSeq_ = opSeq_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -433,11 +433,11 @@ public final class GCGOperationRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGOperationRspOuterClass.GCGOperationRsp other) {
         if (other == emu.grasscutter.net.proto.GCGOperationRspOuterClass.GCGOperationRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getOpSeq() != 0) {
           setOpSeq(other.getOpSeq());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,40 +468,9 @@ public final class GCGOperationRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 10;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 10;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int opSeq_ ;
       /**
-       * <code>uint32 op_seq = 14;</code>
+       * <code>uint32 op_seq = 8;</code>
        * @return The opSeq.
        */
       @java.lang.Override
@@ -509,7 +478,7 @@ public final class GCGOperationRspOuterClass {
         return opSeq_;
       }
       /**
-       * <code>uint32 op_seq = 14;</code>
+       * <code>uint32 op_seq = 8;</code>
        * @param value The opSeq to set.
        * @return This builder for chaining.
        */
@@ -520,12 +489,43 @@ public final class GCGOperationRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 op_seq = 14;</code>
+       * <code>uint32 op_seq = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearOpSeq() {
         
         opSeq_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 6;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 6;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -597,7 +597,7 @@ public final class GCGOperationRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025GCGOperationRsp.proto\"2\n\017GCGOperationR" +
-      "sp\022\017\n\007retcode\030\n \001(\005\022\016\n\006op_seq\030\016 \001(\rB\033\n\031e" +
+      "sp\022\016\n\006op_seq\030\010 \001(\r\022\017\n\007retcode\030\006 \001(\005B\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -609,7 +609,7 @@ public final class GCGOperationRspOuterClass {
     internal_static_GCGOperationRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGOperationRsp_descriptor,
-        new java.lang.String[] { "Retcode", "OpSeq", });
+        new java.lang.String[] { "OpSeq", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

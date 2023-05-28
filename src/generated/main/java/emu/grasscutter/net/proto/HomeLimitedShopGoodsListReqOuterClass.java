@@ -20,8 +20,8 @@ public final class HomeLimitedShopGoodsListReqOuterClass {
   }
   /**
    * <pre>
-   * Name: JBDGFINNHHN
-   * CmdId: 4769
+   * CmdId: 4719
+   * Obf: KKDGLPBMPLP
    * </pre>
    *
    * Protobuf type {@code HomeLimitedShopGoodsListReq}
@@ -246,8 +246,8 @@ public final class HomeLimitedShopGoodsListReqOuterClass {
     }
     /**
      * <pre>
-     * Name: JBDGFINNHHN
-     * CmdId: 4769
+     * CmdId: 4719
+     * Obf: KKDGLPBMPLP
      * </pre>
      *
      * Protobuf type {@code HomeLimitedShopGoodsListReq}

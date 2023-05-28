@@ -19,21 +19,21 @@ public final class FinishMainCoopReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 id = 2;</code>
-     * @return The id.
-     */
-    int getId();
-
-    /**
-     * <code>uint32 ending_save_point_id = 15;</code>
+     * <code>uint32 ending_save_point_id = 14;</code>
      * @return The endingSavePointId.
      */
     int getEndingSavePointId();
+
+    /**
+     * <code>uint32 id = 4;</code>
+     * @return The id.
+     */
+    int getId();
   }
   /**
    * <pre>
-   * Name: DGHACBNAMDF
-   * CmdId: 1986
+   * CmdId: 1976
+   * Obf: EAMDLBPCLFM
    * </pre>
    *
    * Protobuf type {@code FinishMainCoopReq}
@@ -80,12 +80,12 @@ public final class FinishMainCoopReqOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 32: {
 
               id_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 112: {
 
               endingSavePointId_ = input.readUInt32();
               break;
@@ -122,26 +122,26 @@ public final class FinishMainCoopReqOuterClass {
               emu.grasscutter.net.proto.FinishMainCoopReqOuterClass.FinishMainCoopReq.class, emu.grasscutter.net.proto.FinishMainCoopReqOuterClass.FinishMainCoopReq.Builder.class);
     }
 
-    public static final int ID_FIELD_NUMBER = 2;
-    private int id_;
-    /**
-     * <code>uint32 id = 2;</code>
-     * @return The id.
-     */
-    @java.lang.Override
-    public int getId() {
-      return id_;
-    }
-
-    public static final int ENDING_SAVE_POINT_ID_FIELD_NUMBER = 15;
+    public static final int ENDING_SAVE_POINT_ID_FIELD_NUMBER = 14;
     private int endingSavePointId_;
     /**
-     * <code>uint32 ending_save_point_id = 15;</code>
+     * <code>uint32 ending_save_point_id = 14;</code>
      * @return The endingSavePointId.
      */
     @java.lang.Override
     public int getEndingSavePointId() {
       return endingSavePointId_;
+    }
+
+    public static final int ID_FIELD_NUMBER = 4;
+    private int id_;
+    /**
+     * <code>uint32 id = 4;</code>
+     * @return The id.
+     */
+    @java.lang.Override
+    public int getId() {
+      return id_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,10 +159,10 @@ public final class FinishMainCoopReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (id_ != 0) {
-        output.writeUInt32(2, id_);
+        output.writeUInt32(4, id_);
       }
       if (endingSavePointId_ != 0) {
-        output.writeUInt32(15, endingSavePointId_);
+        output.writeUInt32(14, endingSavePointId_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +175,11 @@ public final class FinishMainCoopReqOuterClass {
       size = 0;
       if (id_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, id_);
+          .computeUInt32Size(4, id_);
       }
       if (endingSavePointId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, endingSavePointId_);
+          .computeUInt32Size(14, endingSavePointId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +196,10 @@ public final class FinishMainCoopReqOuterClass {
       }
       emu.grasscutter.net.proto.FinishMainCoopReqOuterClass.FinishMainCoopReq other = (emu.grasscutter.net.proto.FinishMainCoopReqOuterClass.FinishMainCoopReq) obj;
 
-      if (getId()
-          != other.getId()) return false;
       if (getEndingSavePointId()
           != other.getEndingSavePointId()) return false;
+      if (getId()
+          != other.getId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +211,10 @@ public final class FinishMainCoopReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ID_FIELD_NUMBER;
-      hash = (53 * hash) + getId();
       hash = (37 * hash) + ENDING_SAVE_POINT_ID_FIELD_NUMBER;
       hash = (53 * hash) + getEndingSavePointId();
+      hash = (37 * hash) + ID_FIELD_NUMBER;
+      hash = (53 * hash) + getId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +312,8 @@ public final class FinishMainCoopReqOuterClass {
     }
     /**
      * <pre>
-     * Name: DGHACBNAMDF
-     * CmdId: 1986
+     * CmdId: 1976
+     * Obf: EAMDLBPCLFM
      * </pre>
      *
      * Protobuf type {@code FinishMainCoopReq}
@@ -353,9 +353,9 @@ public final class FinishMainCoopReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        id_ = 0;
-
         endingSavePointId_ = 0;
+
+        id_ = 0;
 
         return this;
       }
@@ -383,8 +383,8 @@ public final class FinishMainCoopReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FinishMainCoopReqOuterClass.FinishMainCoopReq buildPartial() {
         emu.grasscutter.net.proto.FinishMainCoopReqOuterClass.FinishMainCoopReq result = new emu.grasscutter.net.proto.FinishMainCoopReqOuterClass.FinishMainCoopReq(this);
-        result.id_ = id_;
         result.endingSavePointId_ = endingSavePointId_;
+        result.id_ = id_;
         onBuilt();
         return result;
       }
@@ -433,11 +433,11 @@ public final class FinishMainCoopReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FinishMainCoopReqOuterClass.FinishMainCoopReq other) {
         if (other == emu.grasscutter.net.proto.FinishMainCoopReqOuterClass.FinishMainCoopReq.getDefaultInstance()) return this;
-        if (other.getId() != 0) {
-          setId(other.getId());
-        }
         if (other.getEndingSavePointId() != 0) {
           setEndingSavePointId(other.getEndingSavePointId());
+        }
+        if (other.getId() != 0) {
+          setId(other.getId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,40 +468,9 @@ public final class FinishMainCoopReqOuterClass {
         return this;
       }
 
-      private int id_ ;
-      /**
-       * <code>uint32 id = 2;</code>
-       * @return The id.
-       */
-      @java.lang.Override
-      public int getId() {
-        return id_;
-      }
-      /**
-       * <code>uint32 id = 2;</code>
-       * @param value The id to set.
-       * @return This builder for chaining.
-       */
-      public Builder setId(int value) {
-        
-        id_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 id = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearId() {
-        
-        id_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int endingSavePointId_ ;
       /**
-       * <code>uint32 ending_save_point_id = 15;</code>
+       * <code>uint32 ending_save_point_id = 14;</code>
        * @return The endingSavePointId.
        */
       @java.lang.Override
@@ -509,7 +478,7 @@ public final class FinishMainCoopReqOuterClass {
         return endingSavePointId_;
       }
       /**
-       * <code>uint32 ending_save_point_id = 15;</code>
+       * <code>uint32 ending_save_point_id = 14;</code>
        * @param value The endingSavePointId to set.
        * @return This builder for chaining.
        */
@@ -520,12 +489,43 @@ public final class FinishMainCoopReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 ending_save_point_id = 15;</code>
+       * <code>uint32 ending_save_point_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearEndingSavePointId() {
         
         endingSavePointId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int id_ ;
+      /**
+       * <code>uint32 id = 4;</code>
+       * @return The id.
+       */
+      @java.lang.Override
+      public int getId() {
+        return id_;
+      }
+      /**
+       * <code>uint32 id = 4;</code>
+       * @param value The id to set.
+       * @return This builder for chaining.
+       */
+      public Builder setId(int value) {
+        
+        id_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 id = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearId() {
+        
+        id_ = 0;
         onChanged();
         return this;
       }
@@ -597,8 +597,8 @@ public final class FinishMainCoopReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027FinishMainCoopReq.proto\"=\n\021FinishMainC" +
-      "oopReq\022\n\n\002id\030\002 \001(\r\022\034\n\024ending_save_point_" +
-      "id\030\017 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
+      "oopReq\022\034\n\024ending_save_point_id\030\016 \001(\r\022\n\n\002" +
+      "id\030\004 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -610,7 +610,7 @@ public final class FinishMainCoopReqOuterClass {
     internal_static_FinishMainCoopReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FinishMainCoopReq_descriptor,
-        new java.lang.String[] { "Id", "EndingSavePointId", });
+        new java.lang.String[] { "EndingSavePointId", "Id", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

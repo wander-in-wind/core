@@ -20,8 +20,8 @@ public final class GCGAskDuelReqOuterClass {
   }
   /**
    * <pre>
-   * Name: EPCHCAEIPNH
-   * CmdId: 7875
+   * CmdId: 7230
+   * Obf: OLFMBLLJPJJ
    * </pre>
    *
    * Protobuf type {@code GCGAskDuelReq}
@@ -246,8 +246,8 @@ public final class GCGAskDuelReqOuterClass {
     }
     /**
      * <pre>
-     * Name: EPCHCAEIPNH
-     * CmdId: 7875
+     * CmdId: 7230
+     * Obf: OLFMBLLJPJJ
      * </pre>
      *
      * Protobuf type {@code GCGAskDuelReq}

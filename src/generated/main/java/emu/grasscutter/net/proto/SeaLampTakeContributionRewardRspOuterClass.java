@@ -19,21 +19,21 @@ public final class SeaLampTakeContributionRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 2;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>uint32 config_id = 6;</code>
+     * <code>uint32 config_id = 7;</code>
      * @return The configId.
      */
     int getConfigId();
+
+    /**
+     * <code>int32 retcode = 10;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
    * <pre>
-   * Name: ECJCMKNADJP
-   * CmdId: 2170
+   * CmdId: 2023
+   * Obf: OHJNPDMFBCF
    * </pre>
    *
    * Protobuf type {@code SeaLampTakeContributionRewardRsp}
@@ -80,14 +80,14 @@ public final class SeaLampTakeContributionRewardRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 48: {
+            case 56: {
 
               configId_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -122,26 +122,26 @@ public final class SeaLampTakeContributionRewardRspOuterClass {
               emu.grasscutter.net.proto.SeaLampTakeContributionRewardRspOuterClass.SeaLampTakeContributionRewardRsp.class, emu.grasscutter.net.proto.SeaLampTakeContributionRewardRspOuterClass.SeaLampTakeContributionRewardRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 2;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 2;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int CONFIG_ID_FIELD_NUMBER = 6;
+    public static final int CONFIG_ID_FIELD_NUMBER = 7;
     private int configId_;
     /**
-     * <code>uint32 config_id = 6;</code>
+     * <code>uint32 config_id = 7;</code>
      * @return The configId.
      */
     @java.lang.Override
     public int getConfigId() {
       return configId_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 10;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 10;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -158,11 +158,11 @@ public final class SeaLampTakeContributionRewardRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(2, retcode_);
-      }
       if (configId_ != 0) {
-        output.writeUInt32(6, configId_);
+        output.writeUInt32(7, configId_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(10, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class SeaLampTakeContributionRewardRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, retcode_);
-      }
       if (configId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, configId_);
+          .computeUInt32Size(7, configId_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(10, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +196,10 @@ public final class SeaLampTakeContributionRewardRspOuterClass {
       }
       emu.grasscutter.net.proto.SeaLampTakeContributionRewardRspOuterClass.SeaLampTakeContributionRewardRsp other = (emu.grasscutter.net.proto.SeaLampTakeContributionRewardRspOuterClass.SeaLampTakeContributionRewardRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getConfigId()
           != other.getConfigId()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +211,10 @@ public final class SeaLampTakeContributionRewardRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + CONFIG_ID_FIELD_NUMBER;
       hash = (53 * hash) + getConfigId();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +312,8 @@ public final class SeaLampTakeContributionRewardRspOuterClass {
     }
     /**
      * <pre>
-     * Name: ECJCMKNADJP
-     * CmdId: 2170
+     * CmdId: 2023
+     * Obf: OHJNPDMFBCF
      * </pre>
      *
      * Protobuf type {@code SeaLampTakeContributionRewardRsp}
@@ -353,9 +353,9 @@ public final class SeaLampTakeContributionRewardRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         configId_ = 0;
+
+        retcode_ = 0;
 
         return this;
       }
@@ -383,8 +383,8 @@ public final class SeaLampTakeContributionRewardRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SeaLampTakeContributionRewardRspOuterClass.SeaLampTakeContributionRewardRsp buildPartial() {
         emu.grasscutter.net.proto.SeaLampTakeContributionRewardRspOuterClass.SeaLampTakeContributionRewardRsp result = new emu.grasscutter.net.proto.SeaLampTakeContributionRewardRspOuterClass.SeaLampTakeContributionRewardRsp(this);
-        result.retcode_ = retcode_;
         result.configId_ = configId_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -433,11 +433,11 @@ public final class SeaLampTakeContributionRewardRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SeaLampTakeContributionRewardRspOuterClass.SeaLampTakeContributionRewardRsp other) {
         if (other == emu.grasscutter.net.proto.SeaLampTakeContributionRewardRspOuterClass.SeaLampTakeContributionRewardRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getConfigId() != 0) {
           setConfigId(other.getConfigId());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,40 +468,9 @@ public final class SeaLampTakeContributionRewardRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 2;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 2;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int configId_ ;
       /**
-       * <code>uint32 config_id = 6;</code>
+       * <code>uint32 config_id = 7;</code>
        * @return The configId.
        */
       @java.lang.Override
@@ -509,7 +478,7 @@ public final class SeaLampTakeContributionRewardRspOuterClass {
         return configId_;
       }
       /**
-       * <code>uint32 config_id = 6;</code>
+       * <code>uint32 config_id = 7;</code>
        * @param value The configId to set.
        * @return This builder for chaining.
        */
@@ -520,12 +489,43 @@ public final class SeaLampTakeContributionRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 config_id = 6;</code>
+       * <code>uint32 config_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearConfigId() {
         
         configId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 10;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 10;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -597,8 +597,8 @@ public final class SeaLampTakeContributionRewardRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n&SeaLampTakeContributionRewardRsp.proto" +
-      "\"F\n SeaLampTakeContributionRewardRsp\022\017\n\007" +
-      "retcode\030\002 \001(\005\022\021\n\tconfig_id\030\006 \001(\rB\033\n\031emu." +
+      "\"F\n SeaLampTakeContributionRewardRsp\022\021\n\t" +
+      "config_id\030\007 \001(\r\022\017\n\007retcode\030\n \001(\005B\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -610,7 +610,7 @@ public final class SeaLampTakeContributionRewardRspOuterClass {
     internal_static_SeaLampTakeContributionRewardRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SeaLampTakeContributionRewardRsp_descriptor,
-        new java.lang.String[] { "Retcode", "ConfigId", });
+        new java.lang.String[] { "ConfigId", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

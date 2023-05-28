@@ -20,8 +20,8 @@ public final class DungeonGetStatueDropReqOuterClass {
   }
   /**
    * <pre>
-   * Name: NKICHKJFBBF
-   * CmdId: 944
+   * CmdId: 933
+   * Obf: KKFJFGDDAIE
    * </pre>
    *
    * Protobuf type {@code DungeonGetStatueDropReq}
@@ -246,8 +246,8 @@ public final class DungeonGetStatueDropReqOuterClass {
     }
     /**
      * <pre>
-     * Name: NKICHKJFBBF
-     * CmdId: 944
+     * CmdId: 933
+     * Obf: KKFJFGDDAIE
      * </pre>
      *
      * Protobuf type {@code DungeonGetStatueDropReq}

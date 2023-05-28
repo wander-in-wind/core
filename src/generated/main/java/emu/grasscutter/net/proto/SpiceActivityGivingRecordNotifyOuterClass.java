@@ -19,27 +19,27 @@ public final class SpiceActivityGivingRecordNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 OFGCHEAEEAG = 7;</code>
-     * @return The oFGCHEAEEAG.
-     */
-    int getOFGCHEAEEAG();
-
-    /**
-     * <code>uint32 avatar_id = 12;</code>
+     * <code>uint32 avatar_id = 15;</code>
      * @return The avatarId.
      */
     int getAvatarId();
 
     /**
-     * <code>uint32 OCLAPMEFLPK = 11;</code>
-     * @return The oCLAPMEFLPK.
+     * <code>uint32 BDGNIOMACMP = 4;</code>
+     * @return The bDGNIOMACMP.
      */
-    int getOCLAPMEFLPK();
+    int getBDGNIOMACMP();
+
+    /**
+     * <code>uint32 KIFHDNINMHD = 6;</code>
+     * @return The kIFHDNINMHD.
+     */
+    int getKIFHDNINMHD();
   }
   /**
    * <pre>
-   * Name: NBLFJCPIPFO
-   * CmdId: 8049
+   * CmdId: 8649
+   * Obf: GOJOEACCDEA
    * </pre>
    *
    * Protobuf type {@code SpiceActivityGivingRecordNotify}
@@ -86,17 +86,17 @@ public final class SpiceActivityGivingRecordNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 32: {
 
-              oFGCHEAEEAG_ = input.readUInt32();
+              bDGNIOMACMP_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 48: {
 
-              oCLAPMEFLPK_ = input.readUInt32();
+              kIFHDNINMHD_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 120: {
 
               avatarId_ = input.readUInt32();
               break;
@@ -133,21 +133,10 @@ public final class SpiceActivityGivingRecordNotifyOuterClass {
               emu.grasscutter.net.proto.SpiceActivityGivingRecordNotifyOuterClass.SpiceActivityGivingRecordNotify.class, emu.grasscutter.net.proto.SpiceActivityGivingRecordNotifyOuterClass.SpiceActivityGivingRecordNotify.Builder.class);
     }
 
-    public static final int OFGCHEAEEAG_FIELD_NUMBER = 7;
-    private int oFGCHEAEEAG_;
-    /**
-     * <code>uint32 OFGCHEAEEAG = 7;</code>
-     * @return The oFGCHEAEEAG.
-     */
-    @java.lang.Override
-    public int getOFGCHEAEEAG() {
-      return oFGCHEAEEAG_;
-    }
-
-    public static final int AVATAR_ID_FIELD_NUMBER = 12;
+    public static final int AVATAR_ID_FIELD_NUMBER = 15;
     private int avatarId_;
     /**
-     * <code>uint32 avatar_id = 12;</code>
+     * <code>uint32 avatar_id = 15;</code>
      * @return The avatarId.
      */
     @java.lang.Override
@@ -155,15 +144,26 @@ public final class SpiceActivityGivingRecordNotifyOuterClass {
       return avatarId_;
     }
 
-    public static final int OCLAPMEFLPK_FIELD_NUMBER = 11;
-    private int oCLAPMEFLPK_;
+    public static final int BDGNIOMACMP_FIELD_NUMBER = 4;
+    private int bDGNIOMACMP_;
     /**
-     * <code>uint32 OCLAPMEFLPK = 11;</code>
-     * @return The oCLAPMEFLPK.
+     * <code>uint32 BDGNIOMACMP = 4;</code>
+     * @return The bDGNIOMACMP.
      */
     @java.lang.Override
-    public int getOCLAPMEFLPK() {
-      return oCLAPMEFLPK_;
+    public int getBDGNIOMACMP() {
+      return bDGNIOMACMP_;
+    }
+
+    public static final int KIFHDNINMHD_FIELD_NUMBER = 6;
+    private int kIFHDNINMHD_;
+    /**
+     * <code>uint32 KIFHDNINMHD = 6;</code>
+     * @return The kIFHDNINMHD.
+     */
+    @java.lang.Override
+    public int getKIFHDNINMHD() {
+      return kIFHDNINMHD_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -180,14 +180,14 @@ public final class SpiceActivityGivingRecordNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (oFGCHEAEEAG_ != 0) {
-        output.writeUInt32(7, oFGCHEAEEAG_);
+      if (bDGNIOMACMP_ != 0) {
+        output.writeUInt32(4, bDGNIOMACMP_);
       }
-      if (oCLAPMEFLPK_ != 0) {
-        output.writeUInt32(11, oCLAPMEFLPK_);
+      if (kIFHDNINMHD_ != 0) {
+        output.writeUInt32(6, kIFHDNINMHD_);
       }
       if (avatarId_ != 0) {
-        output.writeUInt32(12, avatarId_);
+        output.writeUInt32(15, avatarId_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +198,17 @@ public final class SpiceActivityGivingRecordNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (oFGCHEAEEAG_ != 0) {
+      if (bDGNIOMACMP_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, oFGCHEAEEAG_);
+          .computeUInt32Size(4, bDGNIOMACMP_);
       }
-      if (oCLAPMEFLPK_ != 0) {
+      if (kIFHDNINMHD_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, oCLAPMEFLPK_);
+          .computeUInt32Size(6, kIFHDNINMHD_);
       }
       if (avatarId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, avatarId_);
+          .computeUInt32Size(15, avatarId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -225,12 +225,12 @@ public final class SpiceActivityGivingRecordNotifyOuterClass {
       }
       emu.grasscutter.net.proto.SpiceActivityGivingRecordNotifyOuterClass.SpiceActivityGivingRecordNotify other = (emu.grasscutter.net.proto.SpiceActivityGivingRecordNotifyOuterClass.SpiceActivityGivingRecordNotify) obj;
 
-      if (getOFGCHEAEEAG()
-          != other.getOFGCHEAEEAG()) return false;
       if (getAvatarId()
           != other.getAvatarId()) return false;
-      if (getOCLAPMEFLPK()
-          != other.getOCLAPMEFLPK()) return false;
+      if (getBDGNIOMACMP()
+          != other.getBDGNIOMACMP()) return false;
+      if (getKIFHDNINMHD()
+          != other.getKIFHDNINMHD()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -242,12 +242,12 @@ public final class SpiceActivityGivingRecordNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + OFGCHEAEEAG_FIELD_NUMBER;
-      hash = (53 * hash) + getOFGCHEAEEAG();
       hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
       hash = (53 * hash) + getAvatarId();
-      hash = (37 * hash) + OCLAPMEFLPK_FIELD_NUMBER;
-      hash = (53 * hash) + getOCLAPMEFLPK();
+      hash = (37 * hash) + BDGNIOMACMP_FIELD_NUMBER;
+      hash = (53 * hash) + getBDGNIOMACMP();
+      hash = (37 * hash) + KIFHDNINMHD_FIELD_NUMBER;
+      hash = (53 * hash) + getKIFHDNINMHD();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -345,8 +345,8 @@ public final class SpiceActivityGivingRecordNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: NBLFJCPIPFO
-     * CmdId: 8049
+     * CmdId: 8649
+     * Obf: GOJOEACCDEA
      * </pre>
      *
      * Protobuf type {@code SpiceActivityGivingRecordNotify}
@@ -386,11 +386,11 @@ public final class SpiceActivityGivingRecordNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        oFGCHEAEEAG_ = 0;
-
         avatarId_ = 0;
 
-        oCLAPMEFLPK_ = 0;
+        bDGNIOMACMP_ = 0;
+
+        kIFHDNINMHD_ = 0;
 
         return this;
       }
@@ -418,9 +418,9 @@ public final class SpiceActivityGivingRecordNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SpiceActivityGivingRecordNotifyOuterClass.SpiceActivityGivingRecordNotify buildPartial() {
         emu.grasscutter.net.proto.SpiceActivityGivingRecordNotifyOuterClass.SpiceActivityGivingRecordNotify result = new emu.grasscutter.net.proto.SpiceActivityGivingRecordNotifyOuterClass.SpiceActivityGivingRecordNotify(this);
-        result.oFGCHEAEEAG_ = oFGCHEAEEAG_;
         result.avatarId_ = avatarId_;
-        result.oCLAPMEFLPK_ = oCLAPMEFLPK_;
+        result.bDGNIOMACMP_ = bDGNIOMACMP_;
+        result.kIFHDNINMHD_ = kIFHDNINMHD_;
         onBuilt();
         return result;
       }
@@ -469,14 +469,14 @@ public final class SpiceActivityGivingRecordNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SpiceActivityGivingRecordNotifyOuterClass.SpiceActivityGivingRecordNotify other) {
         if (other == emu.grasscutter.net.proto.SpiceActivityGivingRecordNotifyOuterClass.SpiceActivityGivingRecordNotify.getDefaultInstance()) return this;
-        if (other.getOFGCHEAEEAG() != 0) {
-          setOFGCHEAEEAG(other.getOFGCHEAEEAG());
-        }
         if (other.getAvatarId() != 0) {
           setAvatarId(other.getAvatarId());
         }
-        if (other.getOCLAPMEFLPK() != 0) {
-          setOCLAPMEFLPK(other.getOCLAPMEFLPK());
+        if (other.getBDGNIOMACMP() != 0) {
+          setBDGNIOMACMP(other.getBDGNIOMACMP());
+        }
+        if (other.getKIFHDNINMHD() != 0) {
+          setKIFHDNINMHD(other.getKIFHDNINMHD());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -507,40 +507,9 @@ public final class SpiceActivityGivingRecordNotifyOuterClass {
         return this;
       }
 
-      private int oFGCHEAEEAG_ ;
-      /**
-       * <code>uint32 OFGCHEAEEAG = 7;</code>
-       * @return The oFGCHEAEEAG.
-       */
-      @java.lang.Override
-      public int getOFGCHEAEEAG() {
-        return oFGCHEAEEAG_;
-      }
-      /**
-       * <code>uint32 OFGCHEAEEAG = 7;</code>
-       * @param value The oFGCHEAEEAG to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOFGCHEAEEAG(int value) {
-        
-        oFGCHEAEEAG_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 OFGCHEAEEAG = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOFGCHEAEEAG() {
-        
-        oFGCHEAEEAG_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int avatarId_ ;
       /**
-       * <code>uint32 avatar_id = 12;</code>
+       * <code>uint32 avatar_id = 15;</code>
        * @return The avatarId.
        */
       @java.lang.Override
@@ -548,7 +517,7 @@ public final class SpiceActivityGivingRecordNotifyOuterClass {
         return avatarId_;
       }
       /**
-       * <code>uint32 avatar_id = 12;</code>
+       * <code>uint32 avatar_id = 15;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
        */
@@ -559,7 +528,7 @@ public final class SpiceActivityGivingRecordNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 avatar_id = 12;</code>
+       * <code>uint32 avatar_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarId() {
@@ -569,33 +538,64 @@ public final class SpiceActivityGivingRecordNotifyOuterClass {
         return this;
       }
 
-      private int oCLAPMEFLPK_ ;
+      private int bDGNIOMACMP_ ;
       /**
-       * <code>uint32 OCLAPMEFLPK = 11;</code>
-       * @return The oCLAPMEFLPK.
+       * <code>uint32 BDGNIOMACMP = 4;</code>
+       * @return The bDGNIOMACMP.
        */
       @java.lang.Override
-      public int getOCLAPMEFLPK() {
-        return oCLAPMEFLPK_;
+      public int getBDGNIOMACMP() {
+        return bDGNIOMACMP_;
       }
       /**
-       * <code>uint32 OCLAPMEFLPK = 11;</code>
-       * @param value The oCLAPMEFLPK to set.
+       * <code>uint32 BDGNIOMACMP = 4;</code>
+       * @param value The bDGNIOMACMP to set.
        * @return This builder for chaining.
        */
-      public Builder setOCLAPMEFLPK(int value) {
+      public Builder setBDGNIOMACMP(int value) {
         
-        oCLAPMEFLPK_ = value;
+        bDGNIOMACMP_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 OCLAPMEFLPK = 11;</code>
+       * <code>uint32 BDGNIOMACMP = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOCLAPMEFLPK() {
+      public Builder clearBDGNIOMACMP() {
         
-        oCLAPMEFLPK_ = 0;
+        bDGNIOMACMP_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int kIFHDNINMHD_ ;
+      /**
+       * <code>uint32 KIFHDNINMHD = 6;</code>
+       * @return The kIFHDNINMHD.
+       */
+      @java.lang.Override
+      public int getKIFHDNINMHD() {
+        return kIFHDNINMHD_;
+      }
+      /**
+       * <code>uint32 KIFHDNINMHD = 6;</code>
+       * @param value The kIFHDNINMHD to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKIFHDNINMHD(int value) {
+        
+        kIFHDNINMHD_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 KIFHDNINMHD = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearKIFHDNINMHD() {
+        
+        kIFHDNINMHD_ = 0;
         onChanged();
         return this;
       }
@@ -667,9 +667,9 @@ public final class SpiceActivityGivingRecordNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n%SpiceActivityGivingRecordNotify.proto\"" +
-      "^\n\037SpiceActivityGivingRecordNotify\022\023\n\013OF" +
-      "GCHEAEEAG\030\007 \001(\r\022\021\n\tavatar_id\030\014 \001(\r\022\023\n\013OC" +
-      "LAPMEFLPK\030\013 \001(\rB\033\n\031emu.grasscutter.net.p" +
+      "^\n\037SpiceActivityGivingRecordNotify\022\021\n\tav" +
+      "atar_id\030\017 \001(\r\022\023\n\013BDGNIOMACMP\030\004 \001(\r\022\023\n\013KI" +
+      "FHDNINMHD\030\006 \001(\rB\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -681,7 +681,7 @@ public final class SpiceActivityGivingRecordNotifyOuterClass {
     internal_static_SpiceActivityGivingRecordNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SpiceActivityGivingRecordNotify_descriptor,
-        new java.lang.String[] { "OFGCHEAEEAG", "AvatarId", "OCLAPMEFLPK", });
+        new java.lang.String[] { "AvatarId", "BDGNIOMACMP", "KIFHDNINMHD", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

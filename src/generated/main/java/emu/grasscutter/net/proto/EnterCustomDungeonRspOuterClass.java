@@ -19,43 +19,32 @@ public final class EnterCustomDungeonRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.EnterCustomDungeonType enter_type = 5;</code>
-     * @return The enum numeric value on the wire for enterType.
-     */
-    int getEnterTypeValue();
-    /**
-     * <code>.EnterCustomDungeonType enter_type = 5;</code>
-     * @return The enterType.
-     */
-    emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType getEnterType();
-
-    /**
-     * <code>.CustomDungeon custom_dungeon = 14;</code>
-     * @return Whether the customDungeon field is set.
-     */
-    boolean hasCustomDungeon();
-    /**
-     * <code>.CustomDungeon custom_dungeon = 14;</code>
-     * @return The customDungeon.
-     */
-    emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeon getCustomDungeon();
-    /**
-     * <code>.CustomDungeon custom_dungeon = 14;</code>
-     */
-    emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeonOrBuilder getCustomDungeonOrBuilder();
-
-    /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 7;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>map&lt;uint32, uint32&gt; room_cost_map = 3;</code>
+     * <code>.CustomDungeon custom_dungeon = 3;</code>
+     * @return Whether the customDungeon field is set.
+     */
+    boolean hasCustomDungeon();
+    /**
+     * <code>.CustomDungeon custom_dungeon = 3;</code>
+     * @return The customDungeon.
+     */
+    emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeon getCustomDungeon();
+    /**
+     * <code>.CustomDungeon custom_dungeon = 3;</code>
+     */
+    emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeonOrBuilder getCustomDungeonOrBuilder();
+
+    /**
+     * <code>map&lt;uint32, uint32&gt; room_cost_map = 15;</code>
      */
     int getRoomCostMapCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; room_cost_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; room_cost_map = 15;</code>
      */
     boolean containsRoomCostMap(
         int key);
@@ -66,28 +55,39 @@ public final class EnterCustomDungeonRspOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getRoomCostMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; room_cost_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; room_cost_map = 15;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getRoomCostMapMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; room_cost_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; room_cost_map = 15;</code>
      */
 
     int getRoomCostMapOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; room_cost_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; room_cost_map = 15;</code>
      */
 
     int getRoomCostMapOrThrow(
         int key);
+
+    /**
+     * <code>.EnterCustomDungeonType enter_type = 10;</code>
+     * @return The enum numeric value on the wire for enterType.
+     */
+    int getEnterTypeValue();
+    /**
+     * <code>.EnterCustomDungeonType enter_type = 10;</code>
+     * @return The enterType.
+     */
+    emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType getEnterType();
   }
   /**
    * <pre>
-   * Name: DKDPGFEDLKH
-   * CmdId: 6243
+   * CmdId: 6208
+   * Obf: LJEKKIJMALI
    * </pre>
    *
    * Protobuf type {@code EnterCustomDungeonRsp}
@@ -136,31 +136,7 @@ public final class EnterCustomDungeonRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
             case 26: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                roomCostMap_ = com.google.protobuf.MapField.newMapField(
-                    RoomCostMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000001;
-              }
-              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              roomCostMap__ = input.readMessage(
-                  RoomCostMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              roomCostMap_.getMutableMap().put(
-                  roomCostMap__.getKey(), roomCostMap__.getValue());
-              break;
-            }
-            case 40: {
-              int rawValue = input.readEnum();
-
-              enterType_ = rawValue;
-              break;
-            }
-            case 114: {
               emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeon.Builder subBuilder = null;
               if (customDungeon_ != null) {
                 subBuilder = customDungeon_.toBuilder();
@@ -171,6 +147,30 @@ public final class EnterCustomDungeonRspOuterClass {
                 customDungeon_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 56: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 80: {
+              int rawValue = input.readEnum();
+
+              enterType_ = rawValue;
+              break;
+            }
+            case 122: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                roomCostMap_ = com.google.protobuf.MapField.newMapField(
+                    RoomCostMapDefaultEntryHolder.defaultEntry);
+                mutable_bitField0_ |= 0x00000001;
+              }
+              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+              roomCostMap__ = input.readMessage(
+                  RoomCostMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              roomCostMap_.getMutableMap().put(
+                  roomCostMap__.getKey(), roomCostMap__.getValue());
               break;
             }
             default: {
@@ -202,7 +202,7 @@ public final class EnterCustomDungeonRspOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 3:
+        case 15:
           return internalGetRoomCostMap();
         default:
           throw new RuntimeException(
@@ -217,55 +217,10 @@ public final class EnterCustomDungeonRspOuterClass {
               emu.grasscutter.net.proto.EnterCustomDungeonRspOuterClass.EnterCustomDungeonRsp.class, emu.grasscutter.net.proto.EnterCustomDungeonRspOuterClass.EnterCustomDungeonRsp.Builder.class);
     }
 
-    public static final int ENTER_TYPE_FIELD_NUMBER = 5;
-    private int enterType_;
-    /**
-     * <code>.EnterCustomDungeonType enter_type = 5;</code>
-     * @return The enum numeric value on the wire for enterType.
-     */
-    @java.lang.Override public int getEnterTypeValue() {
-      return enterType_;
-    }
-    /**
-     * <code>.EnterCustomDungeonType enter_type = 5;</code>
-     * @return The enterType.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType getEnterType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType result = emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.valueOf(enterType_);
-      return result == null ? emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.UNRECOGNIZED : result;
-    }
-
-    public static final int CUSTOM_DUNGEON_FIELD_NUMBER = 14;
-    private emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeon customDungeon_;
-    /**
-     * <code>.CustomDungeon custom_dungeon = 14;</code>
-     * @return Whether the customDungeon field is set.
-     */
-    @java.lang.Override
-    public boolean hasCustomDungeon() {
-      return customDungeon_ != null;
-    }
-    /**
-     * <code>.CustomDungeon custom_dungeon = 14;</code>
-     * @return The customDungeon.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeon getCustomDungeon() {
-      return customDungeon_ == null ? emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeon.getDefaultInstance() : customDungeon_;
-    }
-    /**
-     * <code>.CustomDungeon custom_dungeon = 14;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeonOrBuilder getCustomDungeonOrBuilder() {
-      return getCustomDungeon();
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 1;
+    public static final int RETCODE_FIELD_NUMBER = 7;
     private int retcode_;
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 7;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -273,7 +228,33 @@ public final class EnterCustomDungeonRspOuterClass {
       return retcode_;
     }
 
-    public static final int ROOM_COST_MAP_FIELD_NUMBER = 3;
+    public static final int CUSTOM_DUNGEON_FIELD_NUMBER = 3;
+    private emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeon customDungeon_;
+    /**
+     * <code>.CustomDungeon custom_dungeon = 3;</code>
+     * @return Whether the customDungeon field is set.
+     */
+    @java.lang.Override
+    public boolean hasCustomDungeon() {
+      return customDungeon_ != null;
+    }
+    /**
+     * <code>.CustomDungeon custom_dungeon = 3;</code>
+     * @return The customDungeon.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeon getCustomDungeon() {
+      return customDungeon_ == null ? emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeon.getDefaultInstance() : customDungeon_;
+    }
+    /**
+     * <code>.CustomDungeon custom_dungeon = 3;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeonOrBuilder getCustomDungeonOrBuilder() {
+      return getCustomDungeon();
+    }
+
+    public static final int ROOM_COST_MAP_FIELD_NUMBER = 15;
     private static final class RoomCostMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -300,7 +281,7 @@ public final class EnterCustomDungeonRspOuterClass {
       return internalGetRoomCostMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; room_cost_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; room_cost_map = 15;</code>
      */
 
     @java.lang.Override
@@ -318,7 +299,7 @@ public final class EnterCustomDungeonRspOuterClass {
       return getRoomCostMapMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; room_cost_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; room_cost_map = 15;</code>
      */
     @java.lang.Override
 
@@ -326,7 +307,7 @@ public final class EnterCustomDungeonRspOuterClass {
       return internalGetRoomCostMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; room_cost_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; room_cost_map = 15;</code>
      */
     @java.lang.Override
 
@@ -339,7 +320,7 @@ public final class EnterCustomDungeonRspOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; room_cost_map = 3;</code>
+     * <code>map&lt;uint32, uint32&gt; room_cost_map = 15;</code>
      */
     @java.lang.Override
 
@@ -352,6 +333,25 @@ public final class EnterCustomDungeonRspOuterClass {
         throw new java.lang.IllegalArgumentException();
       }
       return map.get(key);
+    }
+
+    public static final int ENTER_TYPE_FIELD_NUMBER = 10;
+    private int enterType_;
+    /**
+     * <code>.EnterCustomDungeonType enter_type = 10;</code>
+     * @return The enum numeric value on the wire for enterType.
+     */
+    @java.lang.Override public int getEnterTypeValue() {
+      return enterType_;
+    }
+    /**
+     * <code>.EnterCustomDungeonType enter_type = 10;</code>
+     * @return The enterType.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType getEnterType() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType result = emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.valueOf(enterType_);
+      return result == null ? emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.UNRECOGNIZED : result;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -368,21 +368,21 @@ public final class EnterCustomDungeonRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (customDungeon_ != null) {
+        output.writeMessage(3, getCustomDungeon());
+      }
       if (retcode_ != 0) {
-        output.writeInt32(1, retcode_);
+        output.writeInt32(7, retcode_);
+      }
+      if (enterType_ != emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.ENTER_CUSTOM_DUNGEON_NONE.getNumber()) {
+        output.writeEnum(10, enterType_);
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetRoomCostMap(),
           RoomCostMapDefaultEntryHolder.defaultEntry,
-          3);
-      if (enterType_ != emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.ENTER_CUSTOM_DUNGEON_NONE.getNumber()) {
-        output.writeEnum(5, enterType_);
-      }
-      if (customDungeon_ != null) {
-        output.writeMessage(14, getCustomDungeon());
-      }
+          15);
       unknownFields.writeTo(output);
     }
 
@@ -392,9 +392,17 @@ public final class EnterCustomDungeonRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (customDungeon_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(3, getCustomDungeon());
+      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, retcode_);
+          .computeInt32Size(7, retcode_);
+      }
+      if (enterType_ != emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.ENTER_CUSTOM_DUNGEON_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(10, enterType_);
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
            : internalGetRoomCostMap().getMap().entrySet()) {
@@ -404,15 +412,7 @@ public final class EnterCustomDungeonRspOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(3, roomCostMap__);
-      }
-      if (enterType_ != emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.ENTER_CUSTOM_DUNGEON_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(5, enterType_);
-      }
-      if (customDungeon_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, getCustomDungeon());
+            .computeMessageSize(15, roomCostMap__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -429,16 +429,16 @@ public final class EnterCustomDungeonRspOuterClass {
       }
       emu.grasscutter.net.proto.EnterCustomDungeonRspOuterClass.EnterCustomDungeonRsp other = (emu.grasscutter.net.proto.EnterCustomDungeonRspOuterClass.EnterCustomDungeonRsp) obj;
 
-      if (enterType_ != other.enterType_) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (hasCustomDungeon() != other.hasCustomDungeon()) return false;
       if (hasCustomDungeon()) {
         if (!getCustomDungeon()
             .equals(other.getCustomDungeon())) return false;
       }
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (!internalGetRoomCostMap().equals(
           other.internalGetRoomCostMap())) return false;
+      if (enterType_ != other.enterType_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -450,18 +450,18 @@ public final class EnterCustomDungeonRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ENTER_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + enterType_;
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       if (hasCustomDungeon()) {
         hash = (37 * hash) + CUSTOM_DUNGEON_FIELD_NUMBER;
         hash = (53 * hash) + getCustomDungeon().hashCode();
       }
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       if (!internalGetRoomCostMap().getMap().isEmpty()) {
         hash = (37 * hash) + ROOM_COST_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetRoomCostMap().hashCode();
       }
+      hash = (37 * hash) + ENTER_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + enterType_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -559,8 +559,8 @@ public final class EnterCustomDungeonRspOuterClass {
     }
     /**
      * <pre>
-     * Name: DKDPGFEDLKH
-     * CmdId: 6243
+     * CmdId: 6208
+     * Obf: LJEKKIJMALI
      * </pre>
      *
      * Protobuf type {@code EnterCustomDungeonRsp}
@@ -578,7 +578,7 @@ public final class EnterCustomDungeonRspOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 3:
+          case 15:
             return internalGetRoomCostMap();
           default:
             throw new RuntimeException(
@@ -589,7 +589,7 @@ public final class EnterCustomDungeonRspOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 3:
+          case 15:
             return internalGetMutableRoomCostMap();
           default:
             throw new RuntimeException(
@@ -622,7 +622,7 @@ public final class EnterCustomDungeonRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        enterType_ = 0;
+        retcode_ = 0;
 
         if (customDungeonBuilder_ == null) {
           customDungeon_ = null;
@@ -630,9 +630,9 @@ public final class EnterCustomDungeonRspOuterClass {
           customDungeon_ = null;
           customDungeonBuilder_ = null;
         }
-        retcode_ = 0;
-
         internalGetMutableRoomCostMap().clear();
+        enterType_ = 0;
+
         return this;
       }
 
@@ -660,15 +660,15 @@ public final class EnterCustomDungeonRspOuterClass {
       public emu.grasscutter.net.proto.EnterCustomDungeonRspOuterClass.EnterCustomDungeonRsp buildPartial() {
         emu.grasscutter.net.proto.EnterCustomDungeonRspOuterClass.EnterCustomDungeonRsp result = new emu.grasscutter.net.proto.EnterCustomDungeonRspOuterClass.EnterCustomDungeonRsp(this);
         int from_bitField0_ = bitField0_;
-        result.enterType_ = enterType_;
+        result.retcode_ = retcode_;
         if (customDungeonBuilder_ == null) {
           result.customDungeon_ = customDungeon_;
         } else {
           result.customDungeon_ = customDungeonBuilder_.build();
         }
-        result.retcode_ = retcode_;
         result.roomCostMap_ = internalGetRoomCostMap();
         result.roomCostMap_.makeImmutable();
+        result.enterType_ = enterType_;
         onBuilt();
         return result;
       }
@@ -717,17 +717,17 @@ public final class EnterCustomDungeonRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EnterCustomDungeonRspOuterClass.EnterCustomDungeonRsp other) {
         if (other == emu.grasscutter.net.proto.EnterCustomDungeonRspOuterClass.EnterCustomDungeonRsp.getDefaultInstance()) return this;
-        if (other.enterType_ != 0) {
-          setEnterTypeValue(other.getEnterTypeValue());
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         if (other.hasCustomDungeon()) {
           mergeCustomDungeon(other.getCustomDungeon());
         }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         internalGetMutableRoomCostMap().mergeFrom(
             other.internalGetRoomCostMap());
+        if (other.enterType_ != 0) {
+          setEnterTypeValue(other.getEnterTypeValue());
+        }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -758,56 +758,33 @@ public final class EnterCustomDungeonRspOuterClass {
       }
       private int bitField0_;
 
-      private int enterType_ = 0;
+      private int retcode_ ;
       /**
-       * <code>.EnterCustomDungeonType enter_type = 5;</code>
-       * @return The enum numeric value on the wire for enterType.
-       */
-      @java.lang.Override public int getEnterTypeValue() {
-        return enterType_;
-      }
-      /**
-       * <code>.EnterCustomDungeonType enter_type = 5;</code>
-       * @param value The enum numeric value on the wire for enterType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEnterTypeValue(int value) {
-        
-        enterType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.EnterCustomDungeonType enter_type = 5;</code>
-       * @return The enterType.
+       * <code>int32 retcode = 7;</code>
+       * @return The retcode.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType getEnterType() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType result = emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.valueOf(enterType_);
-        return result == null ? emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.UNRECOGNIZED : result;
+      public int getRetcode() {
+        return retcode_;
       }
       /**
-       * <code>.EnterCustomDungeonType enter_type = 5;</code>
-       * @param value The enterType to set.
+       * <code>int32 retcode = 7;</code>
+       * @param value The retcode to set.
        * @return This builder for chaining.
        */
-      public Builder setEnterType(emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
+      public Builder setRetcode(int value) {
         
-        enterType_ = value.getNumber();
+        retcode_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>.EnterCustomDungeonType enter_type = 5;</code>
+       * <code>int32 retcode = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEnterType() {
+      public Builder clearRetcode() {
         
-        enterType_ = 0;
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -816,14 +793,14 @@ public final class EnterCustomDungeonRspOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeon, emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeon.Builder, emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeonOrBuilder> customDungeonBuilder_;
       /**
-       * <code>.CustomDungeon custom_dungeon = 14;</code>
+       * <code>.CustomDungeon custom_dungeon = 3;</code>
        * @return Whether the customDungeon field is set.
        */
       public boolean hasCustomDungeon() {
         return customDungeonBuilder_ != null || customDungeon_ != null;
       }
       /**
-       * <code>.CustomDungeon custom_dungeon = 14;</code>
+       * <code>.CustomDungeon custom_dungeon = 3;</code>
        * @return The customDungeon.
        */
       public emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeon getCustomDungeon() {
@@ -834,7 +811,7 @@ public final class EnterCustomDungeonRspOuterClass {
         }
       }
       /**
-       * <code>.CustomDungeon custom_dungeon = 14;</code>
+       * <code>.CustomDungeon custom_dungeon = 3;</code>
        */
       public Builder setCustomDungeon(emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeon value) {
         if (customDungeonBuilder_ == null) {
@@ -850,7 +827,7 @@ public final class EnterCustomDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>.CustomDungeon custom_dungeon = 14;</code>
+       * <code>.CustomDungeon custom_dungeon = 3;</code>
        */
       public Builder setCustomDungeon(
           emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeon.Builder builderForValue) {
@@ -864,7 +841,7 @@ public final class EnterCustomDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>.CustomDungeon custom_dungeon = 14;</code>
+       * <code>.CustomDungeon custom_dungeon = 3;</code>
        */
       public Builder mergeCustomDungeon(emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeon value) {
         if (customDungeonBuilder_ == null) {
@@ -882,7 +859,7 @@ public final class EnterCustomDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>.CustomDungeon custom_dungeon = 14;</code>
+       * <code>.CustomDungeon custom_dungeon = 3;</code>
        */
       public Builder clearCustomDungeon() {
         if (customDungeonBuilder_ == null) {
@@ -896,7 +873,7 @@ public final class EnterCustomDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>.CustomDungeon custom_dungeon = 14;</code>
+       * <code>.CustomDungeon custom_dungeon = 3;</code>
        */
       public emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeon.Builder getCustomDungeonBuilder() {
         
@@ -904,7 +881,7 @@ public final class EnterCustomDungeonRspOuterClass {
         return getCustomDungeonFieldBuilder().getBuilder();
       }
       /**
-       * <code>.CustomDungeon custom_dungeon = 14;</code>
+       * <code>.CustomDungeon custom_dungeon = 3;</code>
        */
       public emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeonOrBuilder getCustomDungeonOrBuilder() {
         if (customDungeonBuilder_ != null) {
@@ -915,7 +892,7 @@ public final class EnterCustomDungeonRspOuterClass {
         }
       }
       /**
-       * <code>.CustomDungeon custom_dungeon = 14;</code>
+       * <code>.CustomDungeon custom_dungeon = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeon, emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeon.Builder, emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeonOrBuilder> 
@@ -929,37 +906,6 @@ public final class EnterCustomDungeonRspOuterClass {
           customDungeon_ = null;
         }
         return customDungeonBuilder_;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 1;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 1;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
       }
 
       private com.google.protobuf.MapField<
@@ -989,7 +935,7 @@ public final class EnterCustomDungeonRspOuterClass {
         return internalGetRoomCostMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; room_cost_map = 3;</code>
+       * <code>map&lt;uint32, uint32&gt; room_cost_map = 15;</code>
        */
 
       @java.lang.Override
@@ -1007,7 +953,7 @@ public final class EnterCustomDungeonRspOuterClass {
         return getRoomCostMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; room_cost_map = 3;</code>
+       * <code>map&lt;uint32, uint32&gt; room_cost_map = 15;</code>
        */
       @java.lang.Override
 
@@ -1015,7 +961,7 @@ public final class EnterCustomDungeonRspOuterClass {
         return internalGetRoomCostMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; room_cost_map = 3;</code>
+       * <code>map&lt;uint32, uint32&gt; room_cost_map = 15;</code>
        */
       @java.lang.Override
 
@@ -1028,7 +974,7 @@ public final class EnterCustomDungeonRspOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; room_cost_map = 3;</code>
+       * <code>map&lt;uint32, uint32&gt; room_cost_map = 15;</code>
        */
       @java.lang.Override
 
@@ -1049,7 +995,7 @@ public final class EnterCustomDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; room_cost_map = 3;</code>
+       * <code>map&lt;uint32, uint32&gt; room_cost_map = 15;</code>
        */
 
       public Builder removeRoomCostMap(
@@ -1068,7 +1014,7 @@ public final class EnterCustomDungeonRspOuterClass {
         return internalGetMutableRoomCostMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; room_cost_map = 3;</code>
+       * <code>map&lt;uint32, uint32&gt; room_cost_map = 15;</code>
        */
       public Builder putRoomCostMap(
           int key,
@@ -1080,13 +1026,67 @@ public final class EnterCustomDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; room_cost_map = 3;</code>
+       * <code>map&lt;uint32, uint32&gt; room_cost_map = 15;</code>
        */
 
       public Builder putAllRoomCostMap(
           java.util.Map<java.lang.Integer, java.lang.Integer> values) {
         internalGetMutableRoomCostMap().getMutableMap()
             .putAll(values);
+        return this;
+      }
+
+      private int enterType_ = 0;
+      /**
+       * <code>.EnterCustomDungeonType enter_type = 10;</code>
+       * @return The enum numeric value on the wire for enterType.
+       */
+      @java.lang.Override public int getEnterTypeValue() {
+        return enterType_;
+      }
+      /**
+       * <code>.EnterCustomDungeonType enter_type = 10;</code>
+       * @param value The enum numeric value on the wire for enterType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEnterTypeValue(int value) {
+        
+        enterType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.EnterCustomDungeonType enter_type = 10;</code>
+       * @return The enterType.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType getEnterType() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType result = emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.valueOf(enterType_);
+        return result == null ? emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.EnterCustomDungeonType enter_type = 10;</code>
+       * @param value The enterType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEnterType(emu.grasscutter.net.proto.EnterCustomDungeonTypeOuterClass.EnterCustomDungeonType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        enterType_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.EnterCustomDungeonType enter_type = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEnterType() {
+        
+        enterType_ = 0;
+        onChanged();
         return this;
       }
       @java.lang.Override
@@ -1163,11 +1163,11 @@ public final class EnterCustomDungeonRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033EnterCustomDungeonRsp.proto\032\023CustomDun" +
       "geon.proto\032\034EnterCustomDungeonType.proto" +
-      "\"\361\001\n\025EnterCustomDungeonRsp\022+\n\nenter_type" +
-      "\030\005 \001(\0162\027.EnterCustomDungeonType\022&\n\016custo" +
-      "m_dungeon\030\016 \001(\0132\016.CustomDungeon\022\017\n\007retco" +
-      "de\030\001 \001(\005\022>\n\rroom_cost_map\030\003 \003(\0132\'.EnterC" +
-      "ustomDungeonRsp.RoomCostMapEntry\0322\n\020Room" +
+      "\"\361\001\n\025EnterCustomDungeonRsp\022\017\n\007retcode\030\007 " +
+      "\001(\005\022&\n\016custom_dungeon\030\003 \001(\0132\016.CustomDung" +
+      "eon\022>\n\rroom_cost_map\030\017 \003(\0132\'.EnterCustom" +
+      "DungeonRsp.RoomCostMapEntry\022+\n\nenter_typ" +
+      "e\030\n \001(\0162\027.EnterCustomDungeonType\0322\n\020Room" +
       "CostMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r" +
       ":\0028\001B\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
@@ -1183,7 +1183,7 @@ public final class EnterCustomDungeonRspOuterClass {
     internal_static_EnterCustomDungeonRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EnterCustomDungeonRsp_descriptor,
-        new java.lang.String[] { "EnterType", "CustomDungeon", "Retcode", "RoomCostMap", });
+        new java.lang.String[] { "Retcode", "CustomDungeon", "RoomCostMap", "EnterType", });
     internal_static_EnterCustomDungeonRsp_RoomCostMapEntry_descriptor =
       internal_static_EnterCustomDungeonRsp_descriptor.getNestedTypes().get(0);
     internal_static_EnterCustomDungeonRsp_RoomCostMapEntry_fieldAccessorTable = new

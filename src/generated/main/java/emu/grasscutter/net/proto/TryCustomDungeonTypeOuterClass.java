@@ -16,7 +16,7 @@ public final class TryCustomDungeonTypeOuterClass {
   }
   /**
    * <pre>
-   * Name: GKDCKNEDMAM
+   * Obf: PDNHHHHPBOK
    * </pre>
    *
    * Protobuf enum {@code TryCustomDungeonType}

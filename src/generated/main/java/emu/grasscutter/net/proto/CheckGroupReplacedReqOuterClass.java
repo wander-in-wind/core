@@ -19,17 +19,17 @@ public final class CheckGroupReplacedReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 group_id_list = 15;</code>
+     * <code>repeated uint32 group_id_list = 13;</code>
      * @return A list containing the groupIdList.
      */
     java.util.List<java.lang.Integer> getGroupIdListList();
     /**
-     * <code>repeated uint32 group_id_list = 15;</code>
+     * <code>repeated uint32 group_id_list = 13;</code>
      * @return The count of groupIdList.
      */
     int getGroupIdListCount();
     /**
-     * <code>repeated uint32 group_id_list = 15;</code>
+     * <code>repeated uint32 group_id_list = 13;</code>
      * @param index The index of the element to return.
      * @return The groupIdList at the given index.
      */
@@ -37,8 +37,8 @@ public final class CheckGroupReplacedReqOuterClass {
   }
   /**
    * <pre>
-   * Name: CGOCEJAMMOF
-   * CmdId: 3036
+   * CmdId: 3324
+   * Obf: KLPKFECLGBI
    * </pre>
    *
    * Protobuf type {@code CheckGroupReplacedReq}
@@ -87,7 +87,7 @@ public final class CheckGroupReplacedReqOuterClass {
             case 0:
               done = true;
               break;
-            case 120: {
+            case 104: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 groupIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -95,7 +95,7 @@ public final class CheckGroupReplacedReqOuterClass {
               groupIdList_.addInt(input.readUInt32());
               break;
             }
-            case 122: {
+            case 106: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -143,10 +143,10 @@ public final class CheckGroupReplacedReqOuterClass {
               emu.grasscutter.net.proto.CheckGroupReplacedReqOuterClass.CheckGroupReplacedReq.class, emu.grasscutter.net.proto.CheckGroupReplacedReqOuterClass.CheckGroupReplacedReq.Builder.class);
     }
 
-    public static final int GROUP_ID_LIST_FIELD_NUMBER = 15;
+    public static final int GROUP_ID_LIST_FIELD_NUMBER = 13;
     private com.google.protobuf.Internal.IntList groupIdList_;
     /**
-     * <code>repeated uint32 group_id_list = 15;</code>
+     * <code>repeated uint32 group_id_list = 13;</code>
      * @return A list containing the groupIdList.
      */
     @java.lang.Override
@@ -155,14 +155,14 @@ public final class CheckGroupReplacedReqOuterClass {
       return groupIdList_;
     }
     /**
-     * <code>repeated uint32 group_id_list = 15;</code>
+     * <code>repeated uint32 group_id_list = 13;</code>
      * @return The count of groupIdList.
      */
     public int getGroupIdListCount() {
       return groupIdList_.size();
     }
     /**
-     * <code>repeated uint32 group_id_list = 15;</code>
+     * <code>repeated uint32 group_id_list = 13;</code>
      * @param index The index of the element to return.
      * @return The groupIdList at the given index.
      */
@@ -187,7 +187,7 @@ public final class CheckGroupReplacedReqOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getGroupIdListList().size() > 0) {
-        output.writeUInt32NoTag(122);
+        output.writeUInt32NoTag(106);
         output.writeUInt32NoTag(groupIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < groupIdList_.size(); i++) {
@@ -345,8 +345,8 @@ public final class CheckGroupReplacedReqOuterClass {
     }
     /**
      * <pre>
-     * Name: CGOCEJAMMOF
-     * CmdId: 3036
+     * CmdId: 3324
+     * Obf: KLPKFECLGBI
      * </pre>
      *
      * Protobuf type {@code CheckGroupReplacedReq}
@@ -516,7 +516,7 @@ public final class CheckGroupReplacedReqOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 group_id_list = 15;</code>
+       * <code>repeated uint32 group_id_list = 13;</code>
        * @return A list containing the groupIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -525,14 +525,14 @@ public final class CheckGroupReplacedReqOuterClass {
                  java.util.Collections.unmodifiableList(groupIdList_) : groupIdList_;
       }
       /**
-       * <code>repeated uint32 group_id_list = 15;</code>
+       * <code>repeated uint32 group_id_list = 13;</code>
        * @return The count of groupIdList.
        */
       public int getGroupIdListCount() {
         return groupIdList_.size();
       }
       /**
-       * <code>repeated uint32 group_id_list = 15;</code>
+       * <code>repeated uint32 group_id_list = 13;</code>
        * @param index The index of the element to return.
        * @return The groupIdList at the given index.
        */
@@ -540,7 +540,7 @@ public final class CheckGroupReplacedReqOuterClass {
         return groupIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 group_id_list = 15;</code>
+       * <code>repeated uint32 group_id_list = 13;</code>
        * @param index The index to set the value at.
        * @param value The groupIdList to set.
        * @return This builder for chaining.
@@ -553,7 +553,7 @@ public final class CheckGroupReplacedReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 group_id_list = 15;</code>
+       * <code>repeated uint32 group_id_list = 13;</code>
        * @param value The groupIdList to add.
        * @return This builder for chaining.
        */
@@ -564,7 +564,7 @@ public final class CheckGroupReplacedReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 group_id_list = 15;</code>
+       * <code>repeated uint32 group_id_list = 13;</code>
        * @param values The groupIdList to add.
        * @return This builder for chaining.
        */
@@ -577,7 +577,7 @@ public final class CheckGroupReplacedReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 group_id_list = 15;</code>
+       * <code>repeated uint32 group_id_list = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearGroupIdList() {
@@ -654,7 +654,7 @@ public final class CheckGroupReplacedReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033CheckGroupReplacedReq.proto\".\n\025CheckGr" +
-      "oupReplacedReq\022\025\n\rgroup_id_list\030\017 \003(\rB\033\n" +
+      "oupReplacedReq\022\025\n\rgroup_id_list\030\r \003(\rB\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,21 +19,21 @@ public final class LunaRiteTakeSacrificeRewardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 area_id = 12;</code>
+     * <code>uint32 area_id = 6;</code>
      * @return The areaId.
      */
     int getAreaId();
 
     /**
-     * <code>uint32 index = 14;</code>
+     * <code>uint32 index = 15;</code>
      * @return The index.
      */
     int getIndex();
   }
   /**
    * <pre>
-   * Name: IOANJFHEAEE
-   * CmdId: 8999
+   * CmdId: 8871
+   * Obf: PKOIKAJJFCM
    * </pre>
    *
    * Protobuf type {@code LunaRiteTakeSacrificeRewardReq}
@@ -80,12 +80,12 @@ public final class LunaRiteTakeSacrificeRewardReqOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
+            case 48: {
 
               areaId_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 120: {
 
               index_ = input.readUInt32();
               break;
@@ -122,10 +122,10 @@ public final class LunaRiteTakeSacrificeRewardReqOuterClass {
               emu.grasscutter.net.proto.LunaRiteTakeSacrificeRewardReqOuterClass.LunaRiteTakeSacrificeRewardReq.class, emu.grasscutter.net.proto.LunaRiteTakeSacrificeRewardReqOuterClass.LunaRiteTakeSacrificeRewardReq.Builder.class);
     }
 
-    public static final int AREA_ID_FIELD_NUMBER = 12;
+    public static final int AREA_ID_FIELD_NUMBER = 6;
     private int areaId_;
     /**
-     * <code>uint32 area_id = 12;</code>
+     * <code>uint32 area_id = 6;</code>
      * @return The areaId.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class LunaRiteTakeSacrificeRewardReqOuterClass {
       return areaId_;
     }
 
-    public static final int INDEX_FIELD_NUMBER = 14;
+    public static final int INDEX_FIELD_NUMBER = 15;
     private int index_;
     /**
-     * <code>uint32 index = 14;</code>
+     * <code>uint32 index = 15;</code>
      * @return The index.
      */
     @java.lang.Override
@@ -159,10 +159,10 @@ public final class LunaRiteTakeSacrificeRewardReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (areaId_ != 0) {
-        output.writeUInt32(12, areaId_);
+        output.writeUInt32(6, areaId_);
       }
       if (index_ != 0) {
-        output.writeUInt32(14, index_);
+        output.writeUInt32(15, index_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +175,11 @@ public final class LunaRiteTakeSacrificeRewardReqOuterClass {
       size = 0;
       if (areaId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, areaId_);
+          .computeUInt32Size(6, areaId_);
       }
       if (index_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, index_);
+          .computeUInt32Size(15, index_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class LunaRiteTakeSacrificeRewardReqOuterClass {
     }
     /**
      * <pre>
-     * Name: IOANJFHEAEE
-     * CmdId: 8999
+     * CmdId: 8871
+     * Obf: PKOIKAJJFCM
      * </pre>
      *
      * Protobuf type {@code LunaRiteTakeSacrificeRewardReq}
@@ -470,7 +470,7 @@ public final class LunaRiteTakeSacrificeRewardReqOuterClass {
 
       private int areaId_ ;
       /**
-       * <code>uint32 area_id = 12;</code>
+       * <code>uint32 area_id = 6;</code>
        * @return The areaId.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class LunaRiteTakeSacrificeRewardReqOuterClass {
         return areaId_;
       }
       /**
-       * <code>uint32 area_id = 12;</code>
+       * <code>uint32 area_id = 6;</code>
        * @param value The areaId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class LunaRiteTakeSacrificeRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 area_id = 12;</code>
+       * <code>uint32 area_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearAreaId() {
@@ -501,7 +501,7 @@ public final class LunaRiteTakeSacrificeRewardReqOuterClass {
 
       private int index_ ;
       /**
-       * <code>uint32 index = 14;</code>
+       * <code>uint32 index = 15;</code>
        * @return The index.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class LunaRiteTakeSacrificeRewardReqOuterClass {
         return index_;
       }
       /**
-       * <code>uint32 index = 14;</code>
+       * <code>uint32 index = 15;</code>
        * @param value The index to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class LunaRiteTakeSacrificeRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 index = 14;</code>
+       * <code>uint32 index = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearIndex() {
@@ -598,7 +598,7 @@ public final class LunaRiteTakeSacrificeRewardReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n$LunaRiteTakeSacrificeRewardReq.proto\"@" +
       "\n\036LunaRiteTakeSacrificeRewardReq\022\017\n\007area" +
-      "_id\030\014 \001(\r\022\r\n\005index\030\016 \001(\rB\033\n\031emu.grasscut" +
+      "_id\030\006 \001(\r\022\r\n\005index\030\017 \001(\rB\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -26,8 +26,8 @@ public final class MpPlayPrepareInterruptNotifyOuterClass {
   }
   /**
    * <pre>
-   * Name: CIDANFONHIN
-   * CmdId: 1818
+   * CmdId: 1809
+   * Obf: OBNKKKDMJHD
    * </pre>
    *
    * Protobuf type {@code MpPlayPrepareInterruptNotify}
@@ -279,8 +279,8 @@ public final class MpPlayPrepareInterruptNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: CIDANFONHIN
-     * CmdId: 1818
+     * CmdId: 1809
+     * Obf: OBNKKKDMJHD
      * </pre>
      *
      * Protobuf type {@code MpPlayPrepareInterruptNotify}

@@ -19,90 +19,90 @@ public final class MechanicusInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 coin = 9;</code>
-     * @return The coin.
-     */
-    int getCoin();
-
-    /**
-     * <code>uint32 punish_over_time = 6;</code>
-     * @return The punishOverTime.
-     */
-    int getPunishOverTime();
-
-    /**
-     * <code>repeated uint32 GHGMJKLAAPH = 8;</code>
-     * @return A list containing the gHGMJKLAAPH.
-     */
-    java.util.List<java.lang.Integer> getGHGMJKLAAPHList();
-    /**
-     * <code>repeated uint32 GHGMJKLAAPH = 8;</code>
-     * @return The count of gHGMJKLAAPH.
-     */
-    int getGHGMJKLAAPHCount();
-    /**
-     * <code>repeated uint32 GHGMJKLAAPH = 8;</code>
-     * @param index The index of the element to return.
-     * @return The gHGMJKLAAPH at the given index.
-     */
-    int getGHGMJKLAAPH(int index);
-
-    /**
-     * <code>bool is_finish_teach_dungeon = 5;</code>
+     * <code>bool is_finish_teach_dungeon = 10;</code>
      * @return The isFinishTeachDungeon.
      */
     boolean getIsFinishTeachDungeon();
 
     /**
-     * <code>uint32 mechanicus_id = 12;</code>
+     * <code>repeated .Uint32Pair gear_level_pair_list = 11;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> 
+        getGearLevelPairListList();
+    /**
+     * <code>repeated .Uint32Pair gear_level_pair_list = 11;</code>
+     */
+    emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getGearLevelPairList(int index);
+    /**
+     * <code>repeated .Uint32Pair gear_level_pair_list = 11;</code>
+     */
+    int getGearLevelPairListCount();
+    /**
+     * <code>repeated .Uint32Pair gear_level_pair_list = 11;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
+        getGearLevelPairListOrBuilderList();
+    /**
+     * <code>repeated .Uint32Pair gear_level_pair_list = 11;</code>
+     */
+    emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getGearLevelPairListOrBuilder(
+        int index);
+
+    /**
+     * <code>uint32 punish_over_time = 13;</code>
+     * @return The punishOverTime.
+     */
+    int getPunishOverTime();
+
+    /**
+     * <code>repeated uint32 MBOJECMGEPI = 7;</code>
+     * @return A list containing the mBOJECMGEPI.
+     */
+    java.util.List<java.lang.Integer> getMBOJECMGEPIList();
+    /**
+     * <code>repeated uint32 MBOJECMGEPI = 7;</code>
+     * @return The count of mBOJECMGEPI.
+     */
+    int getMBOJECMGEPICount();
+    /**
+     * <code>repeated uint32 MBOJECMGEPI = 7;</code>
+     * @param index The index of the element to return.
+     * @return The mBOJECMGEPI at the given index.
+     */
+    int getMBOJECMGEPI(int index);
+
+    /**
+     * <code>repeated uint32 NNFLCNDGEEE = 3;</code>
+     * @return A list containing the nNFLCNDGEEE.
+     */
+    java.util.List<java.lang.Integer> getNNFLCNDGEEEList();
+    /**
+     * <code>repeated uint32 NNFLCNDGEEE = 3;</code>
+     * @return The count of nNFLCNDGEEE.
+     */
+    int getNNFLCNDGEEECount();
+    /**
+     * <code>repeated uint32 NNFLCNDGEEE = 3;</code>
+     * @param index The index of the element to return.
+     * @return The nNFLCNDGEEE at the given index.
+     */
+    int getNNFLCNDGEEE(int index);
+
+    /**
+     * <code>uint32 mechanicus_id = 5;</code>
      * @return The mechanicusId.
      */
     int getMechanicusId();
 
     /**
-     * <code>repeated uint32 BAIFJGCDOAI = 10;</code>
-     * @return A list containing the bAIFJGCDOAI.
+     * <code>uint32 coin = 15;</code>
+     * @return The coin.
      */
-    java.util.List<java.lang.Integer> getBAIFJGCDOAIList();
-    /**
-     * <code>repeated uint32 BAIFJGCDOAI = 10;</code>
-     * @return The count of bAIFJGCDOAI.
-     */
-    int getBAIFJGCDOAICount();
-    /**
-     * <code>repeated uint32 BAIFJGCDOAI = 10;</code>
-     * @param index The index of the element to return.
-     * @return The bAIFJGCDOAI at the given index.
-     */
-    int getBAIFJGCDOAI(int index);
-
-    /**
-     * <code>repeated .Uint32Pair gear_level_pair_list = 7;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> 
-        getGearLevelPairListList();
-    /**
-     * <code>repeated .Uint32Pair gear_level_pair_list = 7;</code>
-     */
-    emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getGearLevelPairList(int index);
-    /**
-     * <code>repeated .Uint32Pair gear_level_pair_list = 7;</code>
-     */
-    int getGearLevelPairListCount();
-    /**
-     * <code>repeated .Uint32Pair gear_level_pair_list = 7;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
-        getGearLevelPairListOrBuilderList();
-    /**
-     * <code>repeated .Uint32Pair gear_level_pair_list = 7;</code>
-     */
-    emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getGearLevelPairListOrBuilder(
-        int index);
+    int getCoin();
   }
   /**
    * <pre>
-   * Name: NJOPCBIPPBE
+   * Obf: DDJCLHEIKPE
    * </pre>
    *
    * Protobuf type {@code MechanicusInfo}
@@ -117,9 +117,9 @@ public final class MechanicusInfoOuterClass {
       super(builder);
     }
     private MechanicusInfo() {
-      gHGMJKLAAPH_ = emptyIntList();
-      bAIFJGCDOAI_ = emptyIntList();
       gearLevelPairList_ = java.util.Collections.emptyList();
+      mBOJECMGEPI_ = emptyIntList();
+      nNFLCNDGEEE_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -153,75 +153,75 @@ public final class MechanicusInfoOuterClass {
             case 0:
               done = true;
               break;
+            case 24: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+                nNFLCNDGEEE_ = newIntList();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              nNFLCNDGEEE_.addInt(input.readUInt32());
+              break;
+            }
+            case 26: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
+                nNFLCNDGEEE_ = newIntList();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                nNFLCNDGEEE_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
             case 40: {
+
+              mechanicusId_ = input.readUInt32();
+              break;
+            }
+            case 56: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                mBOJECMGEPI_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              mBOJECMGEPI_.addInt(input.readUInt32());
+              break;
+            }
+            case 58: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                mBOJECMGEPI_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                mBOJECMGEPI_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 80: {
 
               isFinishTeachDungeon_ = input.readBool();
               break;
             }
-            case 48: {
-
-              punishOverTime_ = input.readUInt32();
-              break;
-            }
-            case 58: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+            case 90: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 gearLevelPairList_ = new java.util.ArrayList<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair>();
-                mutable_bitField0_ |= 0x00000004;
+                mutable_bitField0_ |= 0x00000001;
               }
               gearLevelPairList_.add(
                   input.readMessage(emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.parser(), extensionRegistry));
               break;
             }
-            case 64: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                gHGMJKLAAPH_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              gHGMJKLAAPH_.addInt(input.readUInt32());
+            case 104: {
+
+              punishOverTime_ = input.readUInt32();
               break;
             }
-            case 66: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                gHGMJKLAAPH_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                gHGMJKLAAPH_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 72: {
+            case 120: {
 
               coin_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                bAIFJGCDOAI_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              bAIFJGCDOAI_.addInt(input.readUInt32());
-              break;
-            }
-            case 82: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                bAIFJGCDOAI_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                bAIFJGCDOAI_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 96: {
-
-              mechanicusId_ = input.readUInt32();
               break;
             }
             default: {
@@ -240,13 +240,13 @@ public final class MechanicusInfoOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          gearLevelPairList_ = java.util.Collections.unmodifiableList(gearLevelPairList_);
-        }
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          gHGMJKLAAPH_.makeImmutable(); // C
+          nNFLCNDGEEE_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          bAIFJGCDOAI_.makeImmutable(); // C
+          mBOJECMGEPI_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          gearLevelPairList_ = java.util.Collections.unmodifiableList(gearLevelPairList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -265,60 +265,10 @@ public final class MechanicusInfoOuterClass {
               emu.grasscutter.net.proto.MechanicusInfoOuterClass.MechanicusInfo.class, emu.grasscutter.net.proto.MechanicusInfoOuterClass.MechanicusInfo.Builder.class);
     }
 
-    public static final int COIN_FIELD_NUMBER = 9;
-    private int coin_;
-    /**
-     * <code>uint32 coin = 9;</code>
-     * @return The coin.
-     */
-    @java.lang.Override
-    public int getCoin() {
-      return coin_;
-    }
-
-    public static final int PUNISH_OVER_TIME_FIELD_NUMBER = 6;
-    private int punishOverTime_;
-    /**
-     * <code>uint32 punish_over_time = 6;</code>
-     * @return The punishOverTime.
-     */
-    @java.lang.Override
-    public int getPunishOverTime() {
-      return punishOverTime_;
-    }
-
-    public static final int GHGMJKLAAPH_FIELD_NUMBER = 8;
-    private com.google.protobuf.Internal.IntList gHGMJKLAAPH_;
-    /**
-     * <code>repeated uint32 GHGMJKLAAPH = 8;</code>
-     * @return A list containing the gHGMJKLAAPH.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getGHGMJKLAAPHList() {
-      return gHGMJKLAAPH_;
-    }
-    /**
-     * <code>repeated uint32 GHGMJKLAAPH = 8;</code>
-     * @return The count of gHGMJKLAAPH.
-     */
-    public int getGHGMJKLAAPHCount() {
-      return gHGMJKLAAPH_.size();
-    }
-    /**
-     * <code>repeated uint32 GHGMJKLAAPH = 8;</code>
-     * @param index The index of the element to return.
-     * @return The gHGMJKLAAPH at the given index.
-     */
-    public int getGHGMJKLAAPH(int index) {
-      return gHGMJKLAAPH_.getInt(index);
-    }
-    private int gHGMJKLAAPHMemoizedSerializedSize = -1;
-
-    public static final int IS_FINISH_TEACH_DUNGEON_FIELD_NUMBER = 5;
+    public static final int IS_FINISH_TEACH_DUNGEON_FIELD_NUMBER = 10;
     private boolean isFinishTeachDungeon_;
     /**
-     * <code>bool is_finish_teach_dungeon = 5;</code>
+     * <code>bool is_finish_teach_dungeon = 10;</code>
      * @return The isFinishTeachDungeon.
      */
     @java.lang.Override
@@ -326,56 +276,17 @@ public final class MechanicusInfoOuterClass {
       return isFinishTeachDungeon_;
     }
 
-    public static final int MECHANICUS_ID_FIELD_NUMBER = 12;
-    private int mechanicusId_;
-    /**
-     * <code>uint32 mechanicus_id = 12;</code>
-     * @return The mechanicusId.
-     */
-    @java.lang.Override
-    public int getMechanicusId() {
-      return mechanicusId_;
-    }
-
-    public static final int BAIFJGCDOAI_FIELD_NUMBER = 10;
-    private com.google.protobuf.Internal.IntList bAIFJGCDOAI_;
-    /**
-     * <code>repeated uint32 BAIFJGCDOAI = 10;</code>
-     * @return A list containing the bAIFJGCDOAI.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getBAIFJGCDOAIList() {
-      return bAIFJGCDOAI_;
-    }
-    /**
-     * <code>repeated uint32 BAIFJGCDOAI = 10;</code>
-     * @return The count of bAIFJGCDOAI.
-     */
-    public int getBAIFJGCDOAICount() {
-      return bAIFJGCDOAI_.size();
-    }
-    /**
-     * <code>repeated uint32 BAIFJGCDOAI = 10;</code>
-     * @param index The index of the element to return.
-     * @return The bAIFJGCDOAI at the given index.
-     */
-    public int getBAIFJGCDOAI(int index) {
-      return bAIFJGCDOAI_.getInt(index);
-    }
-    private int bAIFJGCDOAIMemoizedSerializedSize = -1;
-
-    public static final int GEAR_LEVEL_PAIR_LIST_FIELD_NUMBER = 7;
+    public static final int GEAR_LEVEL_PAIR_LIST_FIELD_NUMBER = 11;
     private java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> gearLevelPairList_;
     /**
-     * <code>repeated .Uint32Pair gear_level_pair_list = 7;</code>
+     * <code>repeated .Uint32Pair gear_level_pair_list = 11;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> getGearLevelPairListList() {
       return gearLevelPairList_;
     }
     /**
-     * <code>repeated .Uint32Pair gear_level_pair_list = 7;</code>
+     * <code>repeated .Uint32Pair gear_level_pair_list = 11;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
@@ -383,26 +294,115 @@ public final class MechanicusInfoOuterClass {
       return gearLevelPairList_;
     }
     /**
-     * <code>repeated .Uint32Pair gear_level_pair_list = 7;</code>
+     * <code>repeated .Uint32Pair gear_level_pair_list = 11;</code>
      */
     @java.lang.Override
     public int getGearLevelPairListCount() {
       return gearLevelPairList_.size();
     }
     /**
-     * <code>repeated .Uint32Pair gear_level_pair_list = 7;</code>
+     * <code>repeated .Uint32Pair gear_level_pair_list = 11;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getGearLevelPairList(int index) {
       return gearLevelPairList_.get(index);
     }
     /**
-     * <code>repeated .Uint32Pair gear_level_pair_list = 7;</code>
+     * <code>repeated .Uint32Pair gear_level_pair_list = 11;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getGearLevelPairListOrBuilder(
         int index) {
       return gearLevelPairList_.get(index);
+    }
+
+    public static final int PUNISH_OVER_TIME_FIELD_NUMBER = 13;
+    private int punishOverTime_;
+    /**
+     * <code>uint32 punish_over_time = 13;</code>
+     * @return The punishOverTime.
+     */
+    @java.lang.Override
+    public int getPunishOverTime() {
+      return punishOverTime_;
+    }
+
+    public static final int MBOJECMGEPI_FIELD_NUMBER = 7;
+    private com.google.protobuf.Internal.IntList mBOJECMGEPI_;
+    /**
+     * <code>repeated uint32 MBOJECMGEPI = 7;</code>
+     * @return A list containing the mBOJECMGEPI.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getMBOJECMGEPIList() {
+      return mBOJECMGEPI_;
+    }
+    /**
+     * <code>repeated uint32 MBOJECMGEPI = 7;</code>
+     * @return The count of mBOJECMGEPI.
+     */
+    public int getMBOJECMGEPICount() {
+      return mBOJECMGEPI_.size();
+    }
+    /**
+     * <code>repeated uint32 MBOJECMGEPI = 7;</code>
+     * @param index The index of the element to return.
+     * @return The mBOJECMGEPI at the given index.
+     */
+    public int getMBOJECMGEPI(int index) {
+      return mBOJECMGEPI_.getInt(index);
+    }
+    private int mBOJECMGEPIMemoizedSerializedSize = -1;
+
+    public static final int NNFLCNDGEEE_FIELD_NUMBER = 3;
+    private com.google.protobuf.Internal.IntList nNFLCNDGEEE_;
+    /**
+     * <code>repeated uint32 NNFLCNDGEEE = 3;</code>
+     * @return A list containing the nNFLCNDGEEE.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getNNFLCNDGEEEList() {
+      return nNFLCNDGEEE_;
+    }
+    /**
+     * <code>repeated uint32 NNFLCNDGEEE = 3;</code>
+     * @return The count of nNFLCNDGEEE.
+     */
+    public int getNNFLCNDGEEECount() {
+      return nNFLCNDGEEE_.size();
+    }
+    /**
+     * <code>repeated uint32 NNFLCNDGEEE = 3;</code>
+     * @param index The index of the element to return.
+     * @return The nNFLCNDGEEE at the given index.
+     */
+    public int getNNFLCNDGEEE(int index) {
+      return nNFLCNDGEEE_.getInt(index);
+    }
+    private int nNFLCNDGEEEMemoizedSerializedSize = -1;
+
+    public static final int MECHANICUS_ID_FIELD_NUMBER = 5;
+    private int mechanicusId_;
+    /**
+     * <code>uint32 mechanicus_id = 5;</code>
+     * @return The mechanicusId.
+     */
+    @java.lang.Override
+    public int getMechanicusId() {
+      return mechanicusId_;
+    }
+
+    public static final int COIN_FIELD_NUMBER = 15;
+    private int coin_;
+    /**
+     * <code>uint32 coin = 15;</code>
+     * @return The coin.
+     */
+    @java.lang.Override
+    public int getCoin() {
+      return coin_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -420,34 +420,34 @@ public final class MechanicusInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (isFinishTeachDungeon_ != false) {
-        output.writeBool(5, isFinishTeachDungeon_);
+      if (getNNFLCNDGEEEList().size() > 0) {
+        output.writeUInt32NoTag(26);
+        output.writeUInt32NoTag(nNFLCNDGEEEMemoizedSerializedSize);
       }
-      if (punishOverTime_ != 0) {
-        output.writeUInt32(6, punishOverTime_);
-      }
-      for (int i = 0; i < gearLevelPairList_.size(); i++) {
-        output.writeMessage(7, gearLevelPairList_.get(i));
-      }
-      if (getGHGMJKLAAPHList().size() > 0) {
-        output.writeUInt32NoTag(66);
-        output.writeUInt32NoTag(gHGMJKLAAPHMemoizedSerializedSize);
-      }
-      for (int i = 0; i < gHGMJKLAAPH_.size(); i++) {
-        output.writeUInt32NoTag(gHGMJKLAAPH_.getInt(i));
-      }
-      if (coin_ != 0) {
-        output.writeUInt32(9, coin_);
-      }
-      if (getBAIFJGCDOAIList().size() > 0) {
-        output.writeUInt32NoTag(82);
-        output.writeUInt32NoTag(bAIFJGCDOAIMemoizedSerializedSize);
-      }
-      for (int i = 0; i < bAIFJGCDOAI_.size(); i++) {
-        output.writeUInt32NoTag(bAIFJGCDOAI_.getInt(i));
+      for (int i = 0; i < nNFLCNDGEEE_.size(); i++) {
+        output.writeUInt32NoTag(nNFLCNDGEEE_.getInt(i));
       }
       if (mechanicusId_ != 0) {
-        output.writeUInt32(12, mechanicusId_);
+        output.writeUInt32(5, mechanicusId_);
+      }
+      if (getMBOJECMGEPIList().size() > 0) {
+        output.writeUInt32NoTag(58);
+        output.writeUInt32NoTag(mBOJECMGEPIMemoizedSerializedSize);
+      }
+      for (int i = 0; i < mBOJECMGEPI_.size(); i++) {
+        output.writeUInt32NoTag(mBOJECMGEPI_.getInt(i));
+      }
+      if (isFinishTeachDungeon_ != false) {
+        output.writeBool(10, isFinishTeachDungeon_);
+      }
+      for (int i = 0; i < gearLevelPairList_.size(); i++) {
+        output.writeMessage(11, gearLevelPairList_.get(i));
+      }
+      if (punishOverTime_ != 0) {
+        output.writeUInt32(13, punishOverTime_);
+      }
+      if (coin_ != 0) {
+        output.writeUInt32(15, coin_);
       }
       unknownFields.writeTo(output);
     }
@@ -458,53 +458,53 @@ public final class MechanicusInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isFinishTeachDungeon_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, isFinishTeachDungeon_);
-      }
-      if (punishOverTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, punishOverTime_);
-      }
-      for (int i = 0; i < gearLevelPairList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, gearLevelPairList_.get(i));
-      }
       {
         int dataSize = 0;
-        for (int i = 0; i < gHGMJKLAAPH_.size(); i++) {
+        for (int i = 0; i < nNFLCNDGEEE_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(gHGMJKLAAPH_.getInt(i));
+            .computeUInt32SizeNoTag(nNFLCNDGEEE_.getInt(i));
         }
         size += dataSize;
-        if (!getGHGMJKLAAPHList().isEmpty()) {
+        if (!getNNFLCNDGEEEList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        gHGMJKLAAPHMemoizedSerializedSize = dataSize;
-      }
-      if (coin_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, coin_);
-      }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < bAIFJGCDOAI_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(bAIFJGCDOAI_.getInt(i));
-        }
-        size += dataSize;
-        if (!getBAIFJGCDOAIList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        bAIFJGCDOAIMemoizedSerializedSize = dataSize;
+        nNFLCNDGEEEMemoizedSerializedSize = dataSize;
       }
       if (mechanicusId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, mechanicusId_);
+          .computeUInt32Size(5, mechanicusId_);
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < mBOJECMGEPI_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(mBOJECMGEPI_.getInt(i));
+        }
+        size += dataSize;
+        if (!getMBOJECMGEPIList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        mBOJECMGEPIMemoizedSerializedSize = dataSize;
+      }
+      if (isFinishTeachDungeon_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(10, isFinishTeachDungeon_);
+      }
+      for (int i = 0; i < gearLevelPairList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(11, gearLevelPairList_.get(i));
+      }
+      if (punishOverTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, punishOverTime_);
+      }
+      if (coin_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, coin_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -521,20 +521,20 @@ public final class MechanicusInfoOuterClass {
       }
       emu.grasscutter.net.proto.MechanicusInfoOuterClass.MechanicusInfo other = (emu.grasscutter.net.proto.MechanicusInfoOuterClass.MechanicusInfo) obj;
 
-      if (getCoin()
-          != other.getCoin()) return false;
-      if (getPunishOverTime()
-          != other.getPunishOverTime()) return false;
-      if (!getGHGMJKLAAPHList()
-          .equals(other.getGHGMJKLAAPHList())) return false;
       if (getIsFinishTeachDungeon()
           != other.getIsFinishTeachDungeon()) return false;
-      if (getMechanicusId()
-          != other.getMechanicusId()) return false;
-      if (!getBAIFJGCDOAIList()
-          .equals(other.getBAIFJGCDOAIList())) return false;
       if (!getGearLevelPairListList()
           .equals(other.getGearLevelPairListList())) return false;
+      if (getPunishOverTime()
+          != other.getPunishOverTime()) return false;
+      if (!getMBOJECMGEPIList()
+          .equals(other.getMBOJECMGEPIList())) return false;
+      if (!getNNFLCNDGEEEList()
+          .equals(other.getNNFLCNDGEEEList())) return false;
+      if (getMechanicusId()
+          != other.getMechanicusId()) return false;
+      if (getCoin()
+          != other.getCoin()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -546,27 +546,27 @@ public final class MechanicusInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + COIN_FIELD_NUMBER;
-      hash = (53 * hash) + getCoin();
-      hash = (37 * hash) + PUNISH_OVER_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getPunishOverTime();
-      if (getGHGMJKLAAPHCount() > 0) {
-        hash = (37 * hash) + GHGMJKLAAPH_FIELD_NUMBER;
-        hash = (53 * hash) + getGHGMJKLAAPHList().hashCode();
-      }
       hash = (37 * hash) + IS_FINISH_TEACH_DUNGEON_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsFinishTeachDungeon());
-      hash = (37 * hash) + MECHANICUS_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getMechanicusId();
-      if (getBAIFJGCDOAICount() > 0) {
-        hash = (37 * hash) + BAIFJGCDOAI_FIELD_NUMBER;
-        hash = (53 * hash) + getBAIFJGCDOAIList().hashCode();
-      }
       if (getGearLevelPairListCount() > 0) {
         hash = (37 * hash) + GEAR_LEVEL_PAIR_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getGearLevelPairListList().hashCode();
       }
+      hash = (37 * hash) + PUNISH_OVER_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getPunishOverTime();
+      if (getMBOJECMGEPICount() > 0) {
+        hash = (37 * hash) + MBOJECMGEPI_FIELD_NUMBER;
+        hash = (53 * hash) + getMBOJECMGEPIList().hashCode();
+      }
+      if (getNNFLCNDGEEECount() > 0) {
+        hash = (37 * hash) + NNFLCNDGEEE_FIELD_NUMBER;
+        hash = (53 * hash) + getNNFLCNDGEEEList().hashCode();
+      }
+      hash = (37 * hash) + MECHANICUS_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getMechanicusId();
+      hash = (37 * hash) + COIN_FIELD_NUMBER;
+      hash = (53 * hash) + getCoin();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -664,7 +664,7 @@ public final class MechanicusInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: NJOPCBIPPBE
+     * Obf: DDJCLHEIKPE
      * </pre>
      *
      * Protobuf type {@code MechanicusInfo}
@@ -705,24 +705,24 @@ public final class MechanicusInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        coin_ = 0;
-
-        punishOverTime_ = 0;
-
-        gHGMJKLAAPH_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         isFinishTeachDungeon_ = false;
 
-        mechanicusId_ = 0;
-
-        bAIFJGCDOAI_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
         if (gearLevelPairListBuilder_ == null) {
           gearLevelPairList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           gearLevelPairListBuilder_.clear();
         }
+        punishOverTime_ = 0;
+
+        mBOJECMGEPI_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        nNFLCNDGEEE_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000004);
+        mechanicusId_ = 0;
+
+        coin_ = 0;
+
         return this;
       }
 
@@ -750,29 +750,29 @@ public final class MechanicusInfoOuterClass {
       public emu.grasscutter.net.proto.MechanicusInfoOuterClass.MechanicusInfo buildPartial() {
         emu.grasscutter.net.proto.MechanicusInfoOuterClass.MechanicusInfo result = new emu.grasscutter.net.proto.MechanicusInfoOuterClass.MechanicusInfo(this);
         int from_bitField0_ = bitField0_;
-        result.coin_ = coin_;
-        result.punishOverTime_ = punishOverTime_;
-        if (((bitField0_ & 0x00000001) != 0)) {
-          gHGMJKLAAPH_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        }
-        result.gHGMJKLAAPH_ = gHGMJKLAAPH_;
         result.isFinishTeachDungeon_ = isFinishTeachDungeon_;
-        result.mechanicusId_ = mechanicusId_;
-        if (((bitField0_ & 0x00000002) != 0)) {
-          bAIFJGCDOAI_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000002);
-        }
-        result.bAIFJGCDOAI_ = bAIFJGCDOAI_;
         if (gearLevelPairListBuilder_ == null) {
-          if (((bitField0_ & 0x00000004) != 0)) {
+          if (((bitField0_ & 0x00000001) != 0)) {
             gearLevelPairList_ = java.util.Collections.unmodifiableList(gearLevelPairList_);
-            bitField0_ = (bitField0_ & ~0x00000004);
+            bitField0_ = (bitField0_ & ~0x00000001);
           }
           result.gearLevelPairList_ = gearLevelPairList_;
         } else {
           result.gearLevelPairList_ = gearLevelPairListBuilder_.build();
         }
+        result.punishOverTime_ = punishOverTime_;
+        if (((bitField0_ & 0x00000002) != 0)) {
+          mBOJECMGEPI_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        }
+        result.mBOJECMGEPI_ = mBOJECMGEPI_;
+        if (((bitField0_ & 0x00000004) != 0)) {
+          nNFLCNDGEEE_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000004);
+        }
+        result.nNFLCNDGEEE_ = nNFLCNDGEEE_;
+        result.mechanicusId_ = mechanicusId_;
+        result.coin_ = coin_;
         onBuilt();
         return result;
       }
@@ -821,43 +821,14 @@ public final class MechanicusInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MechanicusInfoOuterClass.MechanicusInfo other) {
         if (other == emu.grasscutter.net.proto.MechanicusInfoOuterClass.MechanicusInfo.getDefaultInstance()) return this;
-        if (other.getCoin() != 0) {
-          setCoin(other.getCoin());
-        }
-        if (other.getPunishOverTime() != 0) {
-          setPunishOverTime(other.getPunishOverTime());
-        }
-        if (!other.gHGMJKLAAPH_.isEmpty()) {
-          if (gHGMJKLAAPH_.isEmpty()) {
-            gHGMJKLAAPH_ = other.gHGMJKLAAPH_;
-            bitField0_ = (bitField0_ & ~0x00000001);
-          } else {
-            ensureGHGMJKLAAPHIsMutable();
-            gHGMJKLAAPH_.addAll(other.gHGMJKLAAPH_);
-          }
-          onChanged();
-        }
         if (other.getIsFinishTeachDungeon() != false) {
           setIsFinishTeachDungeon(other.getIsFinishTeachDungeon());
-        }
-        if (other.getMechanicusId() != 0) {
-          setMechanicusId(other.getMechanicusId());
-        }
-        if (!other.bAIFJGCDOAI_.isEmpty()) {
-          if (bAIFJGCDOAI_.isEmpty()) {
-            bAIFJGCDOAI_ = other.bAIFJGCDOAI_;
-            bitField0_ = (bitField0_ & ~0x00000002);
-          } else {
-            ensureBAIFJGCDOAIIsMutable();
-            bAIFJGCDOAI_.addAll(other.bAIFJGCDOAI_);
-          }
-          onChanged();
         }
         if (gearLevelPairListBuilder_ == null) {
           if (!other.gearLevelPairList_.isEmpty()) {
             if (gearLevelPairList_.isEmpty()) {
               gearLevelPairList_ = other.gearLevelPairList_;
-              bitField0_ = (bitField0_ & ~0x00000004);
+              bitField0_ = (bitField0_ & ~0x00000001);
             } else {
               ensureGearLevelPairListIsMutable();
               gearLevelPairList_.addAll(other.gearLevelPairList_);
@@ -870,7 +841,7 @@ public final class MechanicusInfoOuterClass {
               gearLevelPairListBuilder_.dispose();
               gearLevelPairListBuilder_ = null;
               gearLevelPairList_ = other.gearLevelPairList_;
-              bitField0_ = (bitField0_ & ~0x00000004);
+              bitField0_ = (bitField0_ & ~0x00000001);
               gearLevelPairListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getGearLevelPairListFieldBuilder() : null;
@@ -878,6 +849,35 @@ public final class MechanicusInfoOuterClass {
               gearLevelPairListBuilder_.addAllMessages(other.gearLevelPairList_);
             }
           }
+        }
+        if (other.getPunishOverTime() != 0) {
+          setPunishOverTime(other.getPunishOverTime());
+        }
+        if (!other.mBOJECMGEPI_.isEmpty()) {
+          if (mBOJECMGEPI_.isEmpty()) {
+            mBOJECMGEPI_ = other.mBOJECMGEPI_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+          } else {
+            ensureMBOJECMGEPIIsMutable();
+            mBOJECMGEPI_.addAll(other.mBOJECMGEPI_);
+          }
+          onChanged();
+        }
+        if (!other.nNFLCNDGEEE_.isEmpty()) {
+          if (nNFLCNDGEEE_.isEmpty()) {
+            nNFLCNDGEEE_ = other.nNFLCNDGEEE_;
+            bitField0_ = (bitField0_ & ~0x00000004);
+          } else {
+            ensureNNFLCNDGEEEIsMutable();
+            nNFLCNDGEEE_.addAll(other.nNFLCNDGEEE_);
+          }
+          onChanged();
+        }
+        if (other.getMechanicusId() != 0) {
+          setMechanicusId(other.getMechanicusId());
+        }
+        if (other.getCoin() != 0) {
+          setCoin(other.getCoin());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -909,150 +909,9 @@ public final class MechanicusInfoOuterClass {
       }
       private int bitField0_;
 
-      private int coin_ ;
-      /**
-       * <code>uint32 coin = 9;</code>
-       * @return The coin.
-       */
-      @java.lang.Override
-      public int getCoin() {
-        return coin_;
-      }
-      /**
-       * <code>uint32 coin = 9;</code>
-       * @param value The coin to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCoin(int value) {
-        
-        coin_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 coin = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCoin() {
-        
-        coin_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int punishOverTime_ ;
-      /**
-       * <code>uint32 punish_over_time = 6;</code>
-       * @return The punishOverTime.
-       */
-      @java.lang.Override
-      public int getPunishOverTime() {
-        return punishOverTime_;
-      }
-      /**
-       * <code>uint32 punish_over_time = 6;</code>
-       * @param value The punishOverTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPunishOverTime(int value) {
-        
-        punishOverTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 punish_over_time = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPunishOverTime() {
-        
-        punishOverTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList gHGMJKLAAPH_ = emptyIntList();
-      private void ensureGHGMJKLAAPHIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          gHGMJKLAAPH_ = mutableCopy(gHGMJKLAAPH_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-      /**
-       * <code>repeated uint32 GHGMJKLAAPH = 8;</code>
-       * @return A list containing the gHGMJKLAAPH.
-       */
-      public java.util.List<java.lang.Integer>
-          getGHGMJKLAAPHList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(gHGMJKLAAPH_) : gHGMJKLAAPH_;
-      }
-      /**
-       * <code>repeated uint32 GHGMJKLAAPH = 8;</code>
-       * @return The count of gHGMJKLAAPH.
-       */
-      public int getGHGMJKLAAPHCount() {
-        return gHGMJKLAAPH_.size();
-      }
-      /**
-       * <code>repeated uint32 GHGMJKLAAPH = 8;</code>
-       * @param index The index of the element to return.
-       * @return The gHGMJKLAAPH at the given index.
-       */
-      public int getGHGMJKLAAPH(int index) {
-        return gHGMJKLAAPH_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 GHGMJKLAAPH = 8;</code>
-       * @param index The index to set the value at.
-       * @param value The gHGMJKLAAPH to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGHGMJKLAAPH(
-          int index, int value) {
-        ensureGHGMJKLAAPHIsMutable();
-        gHGMJKLAAPH_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 GHGMJKLAAPH = 8;</code>
-       * @param value The gHGMJKLAAPH to add.
-       * @return This builder for chaining.
-       */
-      public Builder addGHGMJKLAAPH(int value) {
-        ensureGHGMJKLAAPHIsMutable();
-        gHGMJKLAAPH_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 GHGMJKLAAPH = 8;</code>
-       * @param values The gHGMJKLAAPH to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllGHGMJKLAAPH(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureGHGMJKLAAPHIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, gHGMJKLAAPH_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 GHGMJKLAAPH = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGHGMJKLAAPH() {
-        gHGMJKLAAPH_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
       private boolean isFinishTeachDungeon_ ;
       /**
-       * <code>bool is_finish_teach_dungeon = 5;</code>
+       * <code>bool is_finish_teach_dungeon = 10;</code>
        * @return The isFinishTeachDungeon.
        */
       @java.lang.Override
@@ -1060,7 +919,7 @@ public final class MechanicusInfoOuterClass {
         return isFinishTeachDungeon_;
       }
       /**
-       * <code>bool is_finish_teach_dungeon = 5;</code>
+       * <code>bool is_finish_teach_dungeon = 10;</code>
        * @param value The isFinishTeachDungeon to set.
        * @return This builder for chaining.
        */
@@ -1071,7 +930,7 @@ public final class MechanicusInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_finish_teach_dungeon = 5;</code>
+       * <code>bool is_finish_teach_dungeon = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinishTeachDungeon() {
@@ -1081,122 +940,12 @@ public final class MechanicusInfoOuterClass {
         return this;
       }
 
-      private int mechanicusId_ ;
-      /**
-       * <code>uint32 mechanicus_id = 12;</code>
-       * @return The mechanicusId.
-       */
-      @java.lang.Override
-      public int getMechanicusId() {
-        return mechanicusId_;
-      }
-      /**
-       * <code>uint32 mechanicus_id = 12;</code>
-       * @param value The mechanicusId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMechanicusId(int value) {
-        
-        mechanicusId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 mechanicus_id = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMechanicusId() {
-        
-        mechanicusId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList bAIFJGCDOAI_ = emptyIntList();
-      private void ensureBAIFJGCDOAIIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          bAIFJGCDOAI_ = mutableCopy(bAIFJGCDOAI_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-      /**
-       * <code>repeated uint32 BAIFJGCDOAI = 10;</code>
-       * @return A list containing the bAIFJGCDOAI.
-       */
-      public java.util.List<java.lang.Integer>
-          getBAIFJGCDOAIList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(bAIFJGCDOAI_) : bAIFJGCDOAI_;
-      }
-      /**
-       * <code>repeated uint32 BAIFJGCDOAI = 10;</code>
-       * @return The count of bAIFJGCDOAI.
-       */
-      public int getBAIFJGCDOAICount() {
-        return bAIFJGCDOAI_.size();
-      }
-      /**
-       * <code>repeated uint32 BAIFJGCDOAI = 10;</code>
-       * @param index The index of the element to return.
-       * @return The bAIFJGCDOAI at the given index.
-       */
-      public int getBAIFJGCDOAI(int index) {
-        return bAIFJGCDOAI_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 BAIFJGCDOAI = 10;</code>
-       * @param index The index to set the value at.
-       * @param value The bAIFJGCDOAI to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBAIFJGCDOAI(
-          int index, int value) {
-        ensureBAIFJGCDOAIIsMutable();
-        bAIFJGCDOAI_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 BAIFJGCDOAI = 10;</code>
-       * @param value The bAIFJGCDOAI to add.
-       * @return This builder for chaining.
-       */
-      public Builder addBAIFJGCDOAI(int value) {
-        ensureBAIFJGCDOAIIsMutable();
-        bAIFJGCDOAI_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 BAIFJGCDOAI = 10;</code>
-       * @param values The bAIFJGCDOAI to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllBAIFJGCDOAI(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureBAIFJGCDOAIIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, bAIFJGCDOAI_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 BAIFJGCDOAI = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBAIFJGCDOAI() {
-        bAIFJGCDOAI_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        onChanged();
-        return this;
-      }
-
       private java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> gearLevelPairList_ =
         java.util.Collections.emptyList();
       private void ensureGearLevelPairListIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
+        if (!((bitField0_ & 0x00000001) != 0)) {
           gearLevelPairList_ = new java.util.ArrayList<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair>(gearLevelPairList_);
-          bitField0_ |= 0x00000004;
+          bitField0_ |= 0x00000001;
          }
       }
 
@@ -1204,7 +953,7 @@ public final class MechanicusInfoOuterClass {
           emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> gearLevelPairListBuilder_;
 
       /**
-       * <code>repeated .Uint32Pair gear_level_pair_list = 7;</code>
+       * <code>repeated .Uint32Pair gear_level_pair_list = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> getGearLevelPairListList() {
         if (gearLevelPairListBuilder_ == null) {
@@ -1214,7 +963,7 @@ public final class MechanicusInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .Uint32Pair gear_level_pair_list = 7;</code>
+       * <code>repeated .Uint32Pair gear_level_pair_list = 11;</code>
        */
       public int getGearLevelPairListCount() {
         if (gearLevelPairListBuilder_ == null) {
@@ -1224,7 +973,7 @@ public final class MechanicusInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .Uint32Pair gear_level_pair_list = 7;</code>
+       * <code>repeated .Uint32Pair gear_level_pair_list = 11;</code>
        */
       public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getGearLevelPairList(int index) {
         if (gearLevelPairListBuilder_ == null) {
@@ -1234,7 +983,7 @@ public final class MechanicusInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .Uint32Pair gear_level_pair_list = 7;</code>
+       * <code>repeated .Uint32Pair gear_level_pair_list = 11;</code>
        */
       public Builder setGearLevelPairList(
           int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
@@ -1251,7 +1000,7 @@ public final class MechanicusInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair gear_level_pair_list = 7;</code>
+       * <code>repeated .Uint32Pair gear_level_pair_list = 11;</code>
        */
       public Builder setGearLevelPairList(
           int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder builderForValue) {
@@ -1265,7 +1014,7 @@ public final class MechanicusInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair gear_level_pair_list = 7;</code>
+       * <code>repeated .Uint32Pair gear_level_pair_list = 11;</code>
        */
       public Builder addGearLevelPairList(emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
         if (gearLevelPairListBuilder_ == null) {
@@ -1281,7 +1030,7 @@ public final class MechanicusInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair gear_level_pair_list = 7;</code>
+       * <code>repeated .Uint32Pair gear_level_pair_list = 11;</code>
        */
       public Builder addGearLevelPairList(
           int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
@@ -1298,7 +1047,7 @@ public final class MechanicusInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair gear_level_pair_list = 7;</code>
+       * <code>repeated .Uint32Pair gear_level_pair_list = 11;</code>
        */
       public Builder addGearLevelPairList(
           emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder builderForValue) {
@@ -1312,7 +1061,7 @@ public final class MechanicusInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair gear_level_pair_list = 7;</code>
+       * <code>repeated .Uint32Pair gear_level_pair_list = 11;</code>
        */
       public Builder addGearLevelPairList(
           int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder builderForValue) {
@@ -1326,7 +1075,7 @@ public final class MechanicusInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair gear_level_pair_list = 7;</code>
+       * <code>repeated .Uint32Pair gear_level_pair_list = 11;</code>
        */
       public Builder addAllGearLevelPairList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> values) {
@@ -1341,12 +1090,12 @@ public final class MechanicusInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair gear_level_pair_list = 7;</code>
+       * <code>repeated .Uint32Pair gear_level_pair_list = 11;</code>
        */
       public Builder clearGearLevelPairList() {
         if (gearLevelPairListBuilder_ == null) {
           gearLevelPairList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
           gearLevelPairListBuilder_.clear();
@@ -1354,7 +1103,7 @@ public final class MechanicusInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair gear_level_pair_list = 7;</code>
+       * <code>repeated .Uint32Pair gear_level_pair_list = 11;</code>
        */
       public Builder removeGearLevelPairList(int index) {
         if (gearLevelPairListBuilder_ == null) {
@@ -1367,14 +1116,14 @@ public final class MechanicusInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair gear_level_pair_list = 7;</code>
+       * <code>repeated .Uint32Pair gear_level_pair_list = 11;</code>
        */
       public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder getGearLevelPairListBuilder(
           int index) {
         return getGearLevelPairListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .Uint32Pair gear_level_pair_list = 7;</code>
+       * <code>repeated .Uint32Pair gear_level_pair_list = 11;</code>
        */
       public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getGearLevelPairListOrBuilder(
           int index) {
@@ -1384,7 +1133,7 @@ public final class MechanicusInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .Uint32Pair gear_level_pair_list = 7;</code>
+       * <code>repeated .Uint32Pair gear_level_pair_list = 11;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
            getGearLevelPairListOrBuilderList() {
@@ -1395,14 +1144,14 @@ public final class MechanicusInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .Uint32Pair gear_level_pair_list = 7;</code>
+       * <code>repeated .Uint32Pair gear_level_pair_list = 11;</code>
        */
       public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder addGearLevelPairListBuilder() {
         return getGearLevelPairListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.getDefaultInstance());
       }
       /**
-       * <code>repeated .Uint32Pair gear_level_pair_list = 7;</code>
+       * <code>repeated .Uint32Pair gear_level_pair_list = 11;</code>
        */
       public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder addGearLevelPairListBuilder(
           int index) {
@@ -1410,7 +1159,7 @@ public final class MechanicusInfoOuterClass {
             index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.getDefaultInstance());
       }
       /**
-       * <code>repeated .Uint32Pair gear_level_pair_list = 7;</code>
+       * <code>repeated .Uint32Pair gear_level_pair_list = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder> 
            getGearLevelPairListBuilderList() {
@@ -1423,12 +1172,263 @@ public final class MechanicusInfoOuterClass {
           gearLevelPairListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder>(
                   gearLevelPairList_,
-                  ((bitField0_ & 0x00000004) != 0),
+                  ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
           gearLevelPairList_ = null;
         }
         return gearLevelPairListBuilder_;
+      }
+
+      private int punishOverTime_ ;
+      /**
+       * <code>uint32 punish_over_time = 13;</code>
+       * @return The punishOverTime.
+       */
+      @java.lang.Override
+      public int getPunishOverTime() {
+        return punishOverTime_;
+      }
+      /**
+       * <code>uint32 punish_over_time = 13;</code>
+       * @param value The punishOverTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPunishOverTime(int value) {
+        
+        punishOverTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 punish_over_time = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPunishOverTime() {
+        
+        punishOverTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList mBOJECMGEPI_ = emptyIntList();
+      private void ensureMBOJECMGEPIIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          mBOJECMGEPI_ = mutableCopy(mBOJECMGEPI_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+      /**
+       * <code>repeated uint32 MBOJECMGEPI = 7;</code>
+       * @return A list containing the mBOJECMGEPI.
+       */
+      public java.util.List<java.lang.Integer>
+          getMBOJECMGEPIList() {
+        return ((bitField0_ & 0x00000002) != 0) ?
+                 java.util.Collections.unmodifiableList(mBOJECMGEPI_) : mBOJECMGEPI_;
+      }
+      /**
+       * <code>repeated uint32 MBOJECMGEPI = 7;</code>
+       * @return The count of mBOJECMGEPI.
+       */
+      public int getMBOJECMGEPICount() {
+        return mBOJECMGEPI_.size();
+      }
+      /**
+       * <code>repeated uint32 MBOJECMGEPI = 7;</code>
+       * @param index The index of the element to return.
+       * @return The mBOJECMGEPI at the given index.
+       */
+      public int getMBOJECMGEPI(int index) {
+        return mBOJECMGEPI_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 MBOJECMGEPI = 7;</code>
+       * @param index The index to set the value at.
+       * @param value The mBOJECMGEPI to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMBOJECMGEPI(
+          int index, int value) {
+        ensureMBOJECMGEPIIsMutable();
+        mBOJECMGEPI_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 MBOJECMGEPI = 7;</code>
+       * @param value The mBOJECMGEPI to add.
+       * @return This builder for chaining.
+       */
+      public Builder addMBOJECMGEPI(int value) {
+        ensureMBOJECMGEPIIsMutable();
+        mBOJECMGEPI_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 MBOJECMGEPI = 7;</code>
+       * @param values The mBOJECMGEPI to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllMBOJECMGEPI(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureMBOJECMGEPIIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, mBOJECMGEPI_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 MBOJECMGEPI = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMBOJECMGEPI() {
+        mBOJECMGEPI_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList nNFLCNDGEEE_ = emptyIntList();
+      private void ensureNNFLCNDGEEEIsMutable() {
+        if (!((bitField0_ & 0x00000004) != 0)) {
+          nNFLCNDGEEE_ = mutableCopy(nNFLCNDGEEE_);
+          bitField0_ |= 0x00000004;
+         }
+      }
+      /**
+       * <code>repeated uint32 NNFLCNDGEEE = 3;</code>
+       * @return A list containing the nNFLCNDGEEE.
+       */
+      public java.util.List<java.lang.Integer>
+          getNNFLCNDGEEEList() {
+        return ((bitField0_ & 0x00000004) != 0) ?
+                 java.util.Collections.unmodifiableList(nNFLCNDGEEE_) : nNFLCNDGEEE_;
+      }
+      /**
+       * <code>repeated uint32 NNFLCNDGEEE = 3;</code>
+       * @return The count of nNFLCNDGEEE.
+       */
+      public int getNNFLCNDGEEECount() {
+        return nNFLCNDGEEE_.size();
+      }
+      /**
+       * <code>repeated uint32 NNFLCNDGEEE = 3;</code>
+       * @param index The index of the element to return.
+       * @return The nNFLCNDGEEE at the given index.
+       */
+      public int getNNFLCNDGEEE(int index) {
+        return nNFLCNDGEEE_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 NNFLCNDGEEE = 3;</code>
+       * @param index The index to set the value at.
+       * @param value The nNFLCNDGEEE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNNFLCNDGEEE(
+          int index, int value) {
+        ensureNNFLCNDGEEEIsMutable();
+        nNFLCNDGEEE_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 NNFLCNDGEEE = 3;</code>
+       * @param value The nNFLCNDGEEE to add.
+       * @return This builder for chaining.
+       */
+      public Builder addNNFLCNDGEEE(int value) {
+        ensureNNFLCNDGEEEIsMutable();
+        nNFLCNDGEEE_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 NNFLCNDGEEE = 3;</code>
+       * @param values The nNFLCNDGEEE to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllNNFLCNDGEEE(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureNNFLCNDGEEEIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, nNFLCNDGEEE_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 NNFLCNDGEEE = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNNFLCNDGEEE() {
+        nNFLCNDGEEE_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000004);
+        onChanged();
+        return this;
+      }
+
+      private int mechanicusId_ ;
+      /**
+       * <code>uint32 mechanicus_id = 5;</code>
+       * @return The mechanicusId.
+       */
+      @java.lang.Override
+      public int getMechanicusId() {
+        return mechanicusId_;
+      }
+      /**
+       * <code>uint32 mechanicus_id = 5;</code>
+       * @param value The mechanicusId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMechanicusId(int value) {
+        
+        mechanicusId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 mechanicus_id = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMechanicusId() {
+        
+        mechanicusId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int coin_ ;
+      /**
+       * <code>uint32 coin = 15;</code>
+       * @return The coin.
+       */
+      @java.lang.Override
+      public int getCoin() {
+        return coin_;
+      }
+      /**
+       * <code>uint32 coin = 15;</code>
+       * @param value The coin to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCoin(int value) {
+        
+        coin_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 coin = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCoin() {
+        
+        coin_ = 0;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1498,11 +1498,11 @@ public final class MechanicusInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024MechanicusInfo.proto\032\020Uint32Pair.proto" +
-      "\"\305\001\n\016MechanicusInfo\022\014\n\004coin\030\t \001(\r\022\030\n\020pun" +
-      "ish_over_time\030\006 \001(\r\022\023\n\013GHGMJKLAAPH\030\010 \003(\r" +
-      "\022\037\n\027is_finish_teach_dungeon\030\005 \001(\010\022\025\n\rmec" +
-      "hanicus_id\030\014 \001(\r\022\023\n\013BAIFJGCDOAI\030\n \003(\r\022)\n" +
-      "\024gear_level_pair_list\030\007 \003(\0132\013.Uint32Pair" +
+      "\"\305\001\n\016MechanicusInfo\022\037\n\027is_finish_teach_d" +
+      "ungeon\030\n \001(\010\022)\n\024gear_level_pair_list\030\013 \003" +
+      "(\0132\013.Uint32Pair\022\030\n\020punish_over_time\030\r \001(" +
+      "\r\022\023\n\013MBOJECMGEPI\030\007 \003(\r\022\023\n\013NNFLCNDGEEE\030\003 " +
+      "\003(\r\022\025\n\rmechanicus_id\030\005 \001(\r\022\014\n\004coin\030\017 \001(\r" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1515,7 +1515,7 @@ public final class MechanicusInfoOuterClass {
     internal_static_MechanicusInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MechanicusInfo_descriptor,
-        new java.lang.String[] { "Coin", "PunishOverTime", "GHGMJKLAAPH", "IsFinishTeachDungeon", "MechanicusId", "BAIFJGCDOAI", "GearLevelPairList", });
+        new java.lang.String[] { "IsFinishTeachDungeon", "GearLevelPairList", "PunishOverTime", "MBOJECMGEPI", "NNFLCNDGEEE", "MechanicusId", "Coin", });
     emu.grasscutter.net.proto.Uint32PairOuterClass.getDescriptor();
   }
 

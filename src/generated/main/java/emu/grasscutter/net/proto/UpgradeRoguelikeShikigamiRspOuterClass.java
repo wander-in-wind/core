@@ -19,27 +19,27 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 CAGAJANMNOP = 15;</code>
-     * @return The cAGAJANMNOP.
-     */
-    int getCAGAJANMNOP();
-
-    /**
-     * <code>uint32 cur_level = 14;</code>
+     * <code>uint32 cur_level = 7;</code>
      * @return The curLevel.
      */
     int getCurLevel();
 
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     int getRetcode();
+
+    /**
+     * <code>uint32 OOHLIPJCHNE = 3;</code>
+     * @return The oOHLIPJCHNE.
+     */
+    int getOOHLIPJCHNE();
   }
   /**
    * <pre>
-   * Name: JJGODOPCBHD
-   * CmdId: 8493
+   * CmdId: 8486
+   * Obf: AMFGMCCHNCB
    * </pre>
    *
    * Protobuf type {@code UpgradeRoguelikeShikigamiRsp}
@@ -86,19 +86,19 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 24: {
+
+              oOHLIPJCHNE_ = input.readUInt32();
+              break;
+            }
+            case 32: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 112: {
+            case 56: {
 
               curLevel_ = input.readUInt32();
-              break;
-            }
-            case 120: {
-
-              cAGAJANMNOP_ = input.readUInt32();
               break;
             }
             default: {
@@ -133,21 +133,10 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
               emu.grasscutter.net.proto.UpgradeRoguelikeShikigamiRspOuterClass.UpgradeRoguelikeShikigamiRsp.class, emu.grasscutter.net.proto.UpgradeRoguelikeShikigamiRspOuterClass.UpgradeRoguelikeShikigamiRsp.Builder.class);
     }
 
-    public static final int CAGAJANMNOP_FIELD_NUMBER = 15;
-    private int cAGAJANMNOP_;
-    /**
-     * <code>uint32 CAGAJANMNOP = 15;</code>
-     * @return The cAGAJANMNOP.
-     */
-    @java.lang.Override
-    public int getCAGAJANMNOP() {
-      return cAGAJANMNOP_;
-    }
-
-    public static final int CUR_LEVEL_FIELD_NUMBER = 14;
+    public static final int CUR_LEVEL_FIELD_NUMBER = 7;
     private int curLevel_;
     /**
-     * <code>uint32 cur_level = 14;</code>
+     * <code>uint32 cur_level = 7;</code>
      * @return The curLevel.
      */
     @java.lang.Override
@@ -155,15 +144,26 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
       return curLevel_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 1;
+    public static final int RETCODE_FIELD_NUMBER = 4;
     private int retcode_;
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
+    }
+
+    public static final int OOHLIPJCHNE_FIELD_NUMBER = 3;
+    private int oOHLIPJCHNE_;
+    /**
+     * <code>uint32 OOHLIPJCHNE = 3;</code>
+     * @return The oOHLIPJCHNE.
+     */
+    @java.lang.Override
+    public int getOOHLIPJCHNE() {
+      return oOHLIPJCHNE_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -180,14 +180,14 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (oOHLIPJCHNE_ != 0) {
+        output.writeUInt32(3, oOHLIPJCHNE_);
+      }
       if (retcode_ != 0) {
-        output.writeInt32(1, retcode_);
+        output.writeInt32(4, retcode_);
       }
       if (curLevel_ != 0) {
-        output.writeUInt32(14, curLevel_);
-      }
-      if (cAGAJANMNOP_ != 0) {
-        output.writeUInt32(15, cAGAJANMNOP_);
+        output.writeUInt32(7, curLevel_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +198,17 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (oOHLIPJCHNE_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, oOHLIPJCHNE_);
+      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, retcode_);
+          .computeInt32Size(4, retcode_);
       }
       if (curLevel_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, curLevel_);
-      }
-      if (cAGAJANMNOP_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, cAGAJANMNOP_);
+          .computeUInt32Size(7, curLevel_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -225,12 +225,12 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
       }
       emu.grasscutter.net.proto.UpgradeRoguelikeShikigamiRspOuterClass.UpgradeRoguelikeShikigamiRsp other = (emu.grasscutter.net.proto.UpgradeRoguelikeShikigamiRspOuterClass.UpgradeRoguelikeShikigamiRsp) obj;
 
-      if (getCAGAJANMNOP()
-          != other.getCAGAJANMNOP()) return false;
       if (getCurLevel()
           != other.getCurLevel()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getOOHLIPJCHNE()
+          != other.getOOHLIPJCHNE()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -242,12 +242,12 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CAGAJANMNOP_FIELD_NUMBER;
-      hash = (53 * hash) + getCAGAJANMNOP();
       hash = (37 * hash) + CUR_LEVEL_FIELD_NUMBER;
       hash = (53 * hash) + getCurLevel();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + OOHLIPJCHNE_FIELD_NUMBER;
+      hash = (53 * hash) + getOOHLIPJCHNE();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -345,8 +345,8 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
     }
     /**
      * <pre>
-     * Name: JJGODOPCBHD
-     * CmdId: 8493
+     * CmdId: 8486
+     * Obf: AMFGMCCHNCB
      * </pre>
      *
      * Protobuf type {@code UpgradeRoguelikeShikigamiRsp}
@@ -386,11 +386,11 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        cAGAJANMNOP_ = 0;
-
         curLevel_ = 0;
 
         retcode_ = 0;
+
+        oOHLIPJCHNE_ = 0;
 
         return this;
       }
@@ -418,9 +418,9 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.UpgradeRoguelikeShikigamiRspOuterClass.UpgradeRoguelikeShikigamiRsp buildPartial() {
         emu.grasscutter.net.proto.UpgradeRoguelikeShikigamiRspOuterClass.UpgradeRoguelikeShikigamiRsp result = new emu.grasscutter.net.proto.UpgradeRoguelikeShikigamiRspOuterClass.UpgradeRoguelikeShikigamiRsp(this);
-        result.cAGAJANMNOP_ = cAGAJANMNOP_;
         result.curLevel_ = curLevel_;
         result.retcode_ = retcode_;
+        result.oOHLIPJCHNE_ = oOHLIPJCHNE_;
         onBuilt();
         return result;
       }
@@ -469,14 +469,14 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.UpgradeRoguelikeShikigamiRspOuterClass.UpgradeRoguelikeShikigamiRsp other) {
         if (other == emu.grasscutter.net.proto.UpgradeRoguelikeShikigamiRspOuterClass.UpgradeRoguelikeShikigamiRsp.getDefaultInstance()) return this;
-        if (other.getCAGAJANMNOP() != 0) {
-          setCAGAJANMNOP(other.getCAGAJANMNOP());
-        }
         if (other.getCurLevel() != 0) {
           setCurLevel(other.getCurLevel());
         }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getOOHLIPJCHNE() != 0) {
+          setOOHLIPJCHNE(other.getOOHLIPJCHNE());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -507,40 +507,9 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
         return this;
       }
 
-      private int cAGAJANMNOP_ ;
-      /**
-       * <code>uint32 CAGAJANMNOP = 15;</code>
-       * @return The cAGAJANMNOP.
-       */
-      @java.lang.Override
-      public int getCAGAJANMNOP() {
-        return cAGAJANMNOP_;
-      }
-      /**
-       * <code>uint32 CAGAJANMNOP = 15;</code>
-       * @param value The cAGAJANMNOP to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCAGAJANMNOP(int value) {
-        
-        cAGAJANMNOP_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 CAGAJANMNOP = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCAGAJANMNOP() {
-        
-        cAGAJANMNOP_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int curLevel_ ;
       /**
-       * <code>uint32 cur_level = 14;</code>
+       * <code>uint32 cur_level = 7;</code>
        * @return The curLevel.
        */
       @java.lang.Override
@@ -548,7 +517,7 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
         return curLevel_;
       }
       /**
-       * <code>uint32 cur_level = 14;</code>
+       * <code>uint32 cur_level = 7;</code>
        * @param value The curLevel to set.
        * @return This builder for chaining.
        */
@@ -559,7 +528,7 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cur_level = 14;</code>
+       * <code>uint32 cur_level = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearCurLevel() {
@@ -571,7 +540,7 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 4;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -579,7 +548,7 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 4;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -590,12 +559,43 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
         
         retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int oOHLIPJCHNE_ ;
+      /**
+       * <code>uint32 OOHLIPJCHNE = 3;</code>
+       * @return The oOHLIPJCHNE.
+       */
+      @java.lang.Override
+      public int getOOHLIPJCHNE() {
+        return oOHLIPJCHNE_;
+      }
+      /**
+       * <code>uint32 OOHLIPJCHNE = 3;</code>
+       * @param value The oOHLIPJCHNE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOOHLIPJCHNE(int value) {
+        
+        oOHLIPJCHNE_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 OOHLIPJCHNE = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOOHLIPJCHNE() {
+        
+        oOHLIPJCHNE_ = 0;
         onChanged();
         return this;
       }
@@ -667,9 +667,9 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\"UpgradeRoguelikeShikigamiRsp.proto\"W\n\034" +
-      "UpgradeRoguelikeShikigamiRsp\022\023\n\013CAGAJANM" +
-      "NOP\030\017 \001(\r\022\021\n\tcur_level\030\016 \001(\r\022\017\n\007retcode\030" +
-      "\001 \001(\005B\033\n\031emu.grasscutter.net.protob\006prot" +
+      "UpgradeRoguelikeShikigamiRsp\022\021\n\tcur_leve" +
+      "l\030\007 \001(\r\022\017\n\007retcode\030\004 \001(\005\022\023\n\013OOHLIPJCHNE\030" +
+      "\003 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -681,7 +681,7 @@ public final class UpgradeRoguelikeShikigamiRspOuterClass {
     internal_static_UpgradeRoguelikeShikigamiRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_UpgradeRoguelikeShikigamiRsp_descriptor,
-        new java.lang.String[] { "CAGAJANMNOP", "CurLevel", "Retcode", });
+        new java.lang.String[] { "CurLevel", "Retcode", "OOHLIPJCHNE", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

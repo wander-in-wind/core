@@ -20,8 +20,8 @@ public final class ForceDragBackTransferNotifyOuterClass {
   }
   /**
    * <pre>
-   * Name: CLFIEDECLGI
-   * CmdId: 3245
+   * CmdId: 3439
+   * Obf: HPBKAFCAHOJ
    * </pre>
    *
    * Protobuf type {@code ForceDragBackTransferNotify}
@@ -246,8 +246,8 @@ public final class ForceDragBackTransferNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: CLFIEDECLGI
-     * CmdId: 3245
+     * CmdId: 3439
+     * Obf: HPBKAFCAHOJ
      * </pre>
      *
      * Protobuf type {@code ForceDragBackTransferNotify}

@@ -19,15 +19,15 @@ public final class ReserveRogueDiaryAvatarRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * Name: OPICKCNIEAC
-   * CmdId: 8457
+   * CmdId: 8191
+   * Obf: EKLFJMOHAPB
    * </pre>
    *
    * Protobuf type {@code ReserveRogueDiaryAvatarRsp}
@@ -74,7 +74,7 @@ public final class ReserveRogueDiaryAvatarRspOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 48: {
 
               retcode_ = input.readInt32();
               break;
@@ -111,10 +111,10 @@ public final class ReserveRogueDiaryAvatarRspOuterClass {
               emu.grasscutter.net.proto.ReserveRogueDiaryAvatarRspOuterClass.ReserveRogueDiaryAvatarRsp.class, emu.grasscutter.net.proto.ReserveRogueDiaryAvatarRspOuterClass.ReserveRogueDiaryAvatarRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 5;
+    public static final int RETCODE_FIELD_NUMBER = 6;
     private int retcode_;
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class ReserveRogueDiaryAvatarRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(5, retcode_);
+        output.writeInt32(6, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class ReserveRogueDiaryAvatarRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, retcode_);
+          .computeInt32Size(6, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class ReserveRogueDiaryAvatarRspOuterClass {
     }
     /**
      * <pre>
-     * Name: OPICKCNIEAC
-     * CmdId: 8457
+     * CmdId: 8191
+     * Obf: EKLFJMOHAPB
      * </pre>
      *
      * Protobuf type {@code ReserveRogueDiaryAvatarRsp}
@@ -431,7 +431,7 @@ public final class ReserveRogueDiaryAvatarRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 6;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class ReserveRogueDiaryAvatarRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 6;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class ReserveRogueDiaryAvatarRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -527,7 +527,7 @@ public final class ReserveRogueDiaryAvatarRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n ReserveRogueDiaryAvatarRsp.proto\"-\n\032Re" +
-      "serveRogueDiaryAvatarRsp\022\017\n\007retcode\030\005 \001(" +
+      "serveRogueDiaryAvatarRsp\022\017\n\007retcode\030\006 \001(" +
       "\005B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

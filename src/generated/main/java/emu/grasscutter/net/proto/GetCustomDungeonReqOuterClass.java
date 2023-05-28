@@ -20,8 +20,8 @@ public final class GetCustomDungeonReqOuterClass {
   }
   /**
    * <pre>
-   * Name: JDAHDKIFPOC
-   * CmdId: 6247
+   * CmdId: 6250
+   * Obf: FEOHCOLNJBP
    * </pre>
    *
    * Protobuf type {@code GetCustomDungeonReq}
@@ -246,8 +246,8 @@ public final class GetCustomDungeonReqOuterClass {
     }
     /**
      * <pre>
-     * Name: JDAHDKIFPOC
-     * CmdId: 6247
+     * CmdId: 6250
+     * Obf: FEOHCOLNJBP
      * </pre>
      *
      * Protobuf type {@code GetCustomDungeonReq}

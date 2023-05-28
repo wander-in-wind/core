@@ -19,57 +19,57 @@ public final class LanV3RaceSettleNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 score = 4;</code>
-     * @return The score.
-     */
-    int getScore();
-
-    /**
-     * <code>bool is_success = 7;</code>
+     * <code>bool is_success = 2;</code>
      * @return The isSuccess.
      */
     boolean getIsSuccess();
 
     /**
-     * <code>uint32 gallery_id = 3;</code>
+     * <code>uint32 OHFJJJNAIKN = 10;</code>
+     * @return The oHFJJJNAIKN.
+     */
+    int getOHFJJJNAIKN();
+
+    /**
+     * <code>uint32 NHGEAMPJEEM = 9;</code>
+     * @return The nHGEAMPJEEM.
+     */
+    int getNHGEAMPJEEM();
+
+    /**
+     * <code>uint32 gallery_id = 5;</code>
      * @return The galleryId.
      */
     int getGalleryId();
 
     /**
-     * <code>uint32 level_id = 15;</code>
+     * <code>uint32 level_id = 4;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>uint32 IHPLEFBHBDG = 14;</code>
-     * @return The iHPLEFBHBDG.
+     * <code>uint32 CKGDCGAGEDA = 7;</code>
+     * @return The cKGDCGAGEDA.
      */
-    int getIHPLEFBHBDG();
+    int getCKGDCGAGEDA();
 
     /**
-     * <code>uint32 DIOJNDKDDLI = 1;</code>
-     * @return The dIOJNDKDDLI.
-     */
-    int getDIOJNDKDDLI();
-
-    /**
-     * <code>uint32 FBKJHNDOKFM = 8;</code>
-     * @return The fBKJHNDOKFM.
-     */
-    int getFBKJHNDOKFM();
-
-    /**
-     * <code>bool is_new_record = 12;</code>
+     * <code>bool is_new_record = 1;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
+
+    /**
+     * <code>uint32 score = 8;</code>
+     * @return The score.
+     */
+    int getScore();
   }
   /**
    * <pre>
-   * Name: HAMOAAGMJCK
-   * CmdId: 24480
+   * CmdId: 24410
+   * Obf: KANEOLFCHPA
    * </pre>
    *
    * Protobuf type {@code LanV3RaceSettleNotify}
@@ -118,42 +118,42 @@ public final class LanV3RaceSettleNotifyOuterClass {
               break;
             case 8: {
 
-              dIOJNDKDDLI_ = input.readUInt32();
+              isNewRecord_ = input.readBool();
               break;
             }
-            case 24: {
-
-              galleryId_ = input.readUInt32();
-              break;
-            }
-            case 32: {
-
-              score_ = input.readUInt32();
-              break;
-            }
-            case 56: {
+            case 16: {
 
               isSuccess_ = input.readBool();
               break;
             }
-            case 64: {
-
-              fBKJHNDOKFM_ = input.readUInt32();
-              break;
-            }
-            case 96: {
-
-              isNewRecord_ = input.readBool();
-              break;
-            }
-            case 112: {
-
-              iHPLEFBHBDG_ = input.readUInt32();
-              break;
-            }
-            case 120: {
+            case 32: {
 
               levelId_ = input.readUInt32();
+              break;
+            }
+            case 40: {
+
+              galleryId_ = input.readUInt32();
+              break;
+            }
+            case 56: {
+
+              cKGDCGAGEDA_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+
+              score_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
+              nHGEAMPJEEM_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
+              oHFJJJNAIKN_ = input.readUInt32();
               break;
             }
             default: {
@@ -188,21 +188,10 @@ public final class LanV3RaceSettleNotifyOuterClass {
               emu.grasscutter.net.proto.LanV3RaceSettleNotifyOuterClass.LanV3RaceSettleNotify.class, emu.grasscutter.net.proto.LanV3RaceSettleNotifyOuterClass.LanV3RaceSettleNotify.Builder.class);
     }
 
-    public static final int SCORE_FIELD_NUMBER = 4;
-    private int score_;
-    /**
-     * <code>uint32 score = 4;</code>
-     * @return The score.
-     */
-    @java.lang.Override
-    public int getScore() {
-      return score_;
-    }
-
-    public static final int IS_SUCCESS_FIELD_NUMBER = 7;
+    public static final int IS_SUCCESS_FIELD_NUMBER = 2;
     private boolean isSuccess_;
     /**
-     * <code>bool is_success = 7;</code>
+     * <code>bool is_success = 2;</code>
      * @return The isSuccess.
      */
     @java.lang.Override
@@ -210,10 +199,32 @@ public final class LanV3RaceSettleNotifyOuterClass {
       return isSuccess_;
     }
 
-    public static final int GALLERY_ID_FIELD_NUMBER = 3;
+    public static final int OHFJJJNAIKN_FIELD_NUMBER = 10;
+    private int oHFJJJNAIKN_;
+    /**
+     * <code>uint32 OHFJJJNAIKN = 10;</code>
+     * @return The oHFJJJNAIKN.
+     */
+    @java.lang.Override
+    public int getOHFJJJNAIKN() {
+      return oHFJJJNAIKN_;
+    }
+
+    public static final int NHGEAMPJEEM_FIELD_NUMBER = 9;
+    private int nHGEAMPJEEM_;
+    /**
+     * <code>uint32 NHGEAMPJEEM = 9;</code>
+     * @return The nHGEAMPJEEM.
+     */
+    @java.lang.Override
+    public int getNHGEAMPJEEM() {
+      return nHGEAMPJEEM_;
+    }
+
+    public static final int GALLERY_ID_FIELD_NUMBER = 5;
     private int galleryId_;
     /**
-     * <code>uint32 gallery_id = 3;</code>
+     * <code>uint32 gallery_id = 5;</code>
      * @return The galleryId.
      */
     @java.lang.Override
@@ -221,10 +232,10 @@ public final class LanV3RaceSettleNotifyOuterClass {
       return galleryId_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 15;
+    public static final int LEVEL_ID_FIELD_NUMBER = 4;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 15;</code>
+     * <code>uint32 level_id = 4;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -232,48 +243,37 @@ public final class LanV3RaceSettleNotifyOuterClass {
       return levelId_;
     }
 
-    public static final int IHPLEFBHBDG_FIELD_NUMBER = 14;
-    private int iHPLEFBHBDG_;
+    public static final int CKGDCGAGEDA_FIELD_NUMBER = 7;
+    private int cKGDCGAGEDA_;
     /**
-     * <code>uint32 IHPLEFBHBDG = 14;</code>
-     * @return The iHPLEFBHBDG.
+     * <code>uint32 CKGDCGAGEDA = 7;</code>
+     * @return The cKGDCGAGEDA.
      */
     @java.lang.Override
-    public int getIHPLEFBHBDG() {
-      return iHPLEFBHBDG_;
+    public int getCKGDCGAGEDA() {
+      return cKGDCGAGEDA_;
     }
 
-    public static final int DIOJNDKDDLI_FIELD_NUMBER = 1;
-    private int dIOJNDKDDLI_;
-    /**
-     * <code>uint32 DIOJNDKDDLI = 1;</code>
-     * @return The dIOJNDKDDLI.
-     */
-    @java.lang.Override
-    public int getDIOJNDKDDLI() {
-      return dIOJNDKDDLI_;
-    }
-
-    public static final int FBKJHNDOKFM_FIELD_NUMBER = 8;
-    private int fBKJHNDOKFM_;
-    /**
-     * <code>uint32 FBKJHNDOKFM = 8;</code>
-     * @return The fBKJHNDOKFM.
-     */
-    @java.lang.Override
-    public int getFBKJHNDOKFM() {
-      return fBKJHNDOKFM_;
-    }
-
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 12;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 1;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 12;</code>
+     * <code>bool is_new_record = 1;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
     public boolean getIsNewRecord() {
       return isNewRecord_;
+    }
+
+    public static final int SCORE_FIELD_NUMBER = 8;
+    private int score_;
+    /**
+     * <code>uint32 score = 8;</code>
+     * @return The score.
+     */
+    @java.lang.Override
+    public int getScore() {
+      return score_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -290,29 +290,29 @@ public final class LanV3RaceSettleNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (dIOJNDKDDLI_ != 0) {
-        output.writeUInt32(1, dIOJNDKDDLI_);
-      }
-      if (galleryId_ != 0) {
-        output.writeUInt32(3, galleryId_);
-      }
-      if (score_ != 0) {
-        output.writeUInt32(4, score_);
+      if (isNewRecord_ != false) {
+        output.writeBool(1, isNewRecord_);
       }
       if (isSuccess_ != false) {
-        output.writeBool(7, isSuccess_);
-      }
-      if (fBKJHNDOKFM_ != 0) {
-        output.writeUInt32(8, fBKJHNDOKFM_);
-      }
-      if (isNewRecord_ != false) {
-        output.writeBool(12, isNewRecord_);
-      }
-      if (iHPLEFBHBDG_ != 0) {
-        output.writeUInt32(14, iHPLEFBHBDG_);
+        output.writeBool(2, isSuccess_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(15, levelId_);
+        output.writeUInt32(4, levelId_);
+      }
+      if (galleryId_ != 0) {
+        output.writeUInt32(5, galleryId_);
+      }
+      if (cKGDCGAGEDA_ != 0) {
+        output.writeUInt32(7, cKGDCGAGEDA_);
+      }
+      if (score_ != 0) {
+        output.writeUInt32(8, score_);
+      }
+      if (nHGEAMPJEEM_ != 0) {
+        output.writeUInt32(9, nHGEAMPJEEM_);
+      }
+      if (oHFJJJNAIKN_ != 0) {
+        output.writeUInt32(10, oHFJJJNAIKN_);
       }
       unknownFields.writeTo(output);
     }
@@ -323,37 +323,37 @@ public final class LanV3RaceSettleNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (dIOJNDKDDLI_ != 0) {
+      if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, dIOJNDKDDLI_);
-      }
-      if (galleryId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, galleryId_);
-      }
-      if (score_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, score_);
+          .computeBoolSize(1, isNewRecord_);
       }
       if (isSuccess_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isSuccess_);
-      }
-      if (fBKJHNDOKFM_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, fBKJHNDOKFM_);
-      }
-      if (isNewRecord_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, isNewRecord_);
-      }
-      if (iHPLEFBHBDG_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, iHPLEFBHBDG_);
+          .computeBoolSize(2, isSuccess_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, levelId_);
+          .computeUInt32Size(4, levelId_);
+      }
+      if (galleryId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, galleryId_);
+      }
+      if (cKGDCGAGEDA_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, cKGDCGAGEDA_);
+      }
+      if (score_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, score_);
+      }
+      if (nHGEAMPJEEM_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, nHGEAMPJEEM_);
+      }
+      if (oHFJJJNAIKN_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, oHFJJJNAIKN_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -370,22 +370,22 @@ public final class LanV3RaceSettleNotifyOuterClass {
       }
       emu.grasscutter.net.proto.LanV3RaceSettleNotifyOuterClass.LanV3RaceSettleNotify other = (emu.grasscutter.net.proto.LanV3RaceSettleNotifyOuterClass.LanV3RaceSettleNotify) obj;
 
-      if (getScore()
-          != other.getScore()) return false;
       if (getIsSuccess()
           != other.getIsSuccess()) return false;
+      if (getOHFJJJNAIKN()
+          != other.getOHFJJJNAIKN()) return false;
+      if (getNHGEAMPJEEM()
+          != other.getNHGEAMPJEEM()) return false;
       if (getGalleryId()
           != other.getGalleryId()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
-      if (getIHPLEFBHBDG()
-          != other.getIHPLEFBHBDG()) return false;
-      if (getDIOJNDKDDLI()
-          != other.getDIOJNDKDDLI()) return false;
-      if (getFBKJHNDOKFM()
-          != other.getFBKJHNDOKFM()) return false;
+      if (getCKGDCGAGEDA()
+          != other.getCKGDCGAGEDA()) return false;
       if (getIsNewRecord()
           != other.getIsNewRecord()) return false;
+      if (getScore()
+          != other.getScore()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -397,24 +397,24 @@ public final class LanV3RaceSettleNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getScore();
       hash = (37 * hash) + IS_SUCCESS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsSuccess());
+      hash = (37 * hash) + OHFJJJNAIKN_FIELD_NUMBER;
+      hash = (53 * hash) + getOHFJJJNAIKN();
+      hash = (37 * hash) + NHGEAMPJEEM_FIELD_NUMBER;
+      hash = (53 * hash) + getNHGEAMPJEEM();
       hash = (37 * hash) + GALLERY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGalleryId();
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
-      hash = (37 * hash) + IHPLEFBHBDG_FIELD_NUMBER;
-      hash = (53 * hash) + getIHPLEFBHBDG();
-      hash = (37 * hash) + DIOJNDKDDLI_FIELD_NUMBER;
-      hash = (53 * hash) + getDIOJNDKDDLI();
-      hash = (37 * hash) + FBKJHNDOKFM_FIELD_NUMBER;
-      hash = (53 * hash) + getFBKJHNDOKFM();
+      hash = (37 * hash) + CKGDCGAGEDA_FIELD_NUMBER;
+      hash = (53 * hash) + getCKGDCGAGEDA();
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
+      hash = (37 * hash) + SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getScore();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -512,8 +512,8 @@ public final class LanV3RaceSettleNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: HAMOAAGMJCK
-     * CmdId: 24480
+     * CmdId: 24410
+     * Obf: KANEOLFCHPA
      * </pre>
      *
      * Protobuf type {@code LanV3RaceSettleNotify}
@@ -553,21 +553,21 @@ public final class LanV3RaceSettleNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        score_ = 0;
-
         isSuccess_ = false;
+
+        oHFJJJNAIKN_ = 0;
+
+        nHGEAMPJEEM_ = 0;
 
         galleryId_ = 0;
 
         levelId_ = 0;
 
-        iHPLEFBHBDG_ = 0;
-
-        dIOJNDKDDLI_ = 0;
-
-        fBKJHNDOKFM_ = 0;
+        cKGDCGAGEDA_ = 0;
 
         isNewRecord_ = false;
+
+        score_ = 0;
 
         return this;
       }
@@ -595,14 +595,14 @@ public final class LanV3RaceSettleNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.LanV3RaceSettleNotifyOuterClass.LanV3RaceSettleNotify buildPartial() {
         emu.grasscutter.net.proto.LanV3RaceSettleNotifyOuterClass.LanV3RaceSettleNotify result = new emu.grasscutter.net.proto.LanV3RaceSettleNotifyOuterClass.LanV3RaceSettleNotify(this);
-        result.score_ = score_;
         result.isSuccess_ = isSuccess_;
+        result.oHFJJJNAIKN_ = oHFJJJNAIKN_;
+        result.nHGEAMPJEEM_ = nHGEAMPJEEM_;
         result.galleryId_ = galleryId_;
         result.levelId_ = levelId_;
-        result.iHPLEFBHBDG_ = iHPLEFBHBDG_;
-        result.dIOJNDKDDLI_ = dIOJNDKDDLI_;
-        result.fBKJHNDOKFM_ = fBKJHNDOKFM_;
+        result.cKGDCGAGEDA_ = cKGDCGAGEDA_;
         result.isNewRecord_ = isNewRecord_;
+        result.score_ = score_;
         onBuilt();
         return result;
       }
@@ -651,11 +651,14 @@ public final class LanV3RaceSettleNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.LanV3RaceSettleNotifyOuterClass.LanV3RaceSettleNotify other) {
         if (other == emu.grasscutter.net.proto.LanV3RaceSettleNotifyOuterClass.LanV3RaceSettleNotify.getDefaultInstance()) return this;
-        if (other.getScore() != 0) {
-          setScore(other.getScore());
-        }
         if (other.getIsSuccess() != false) {
           setIsSuccess(other.getIsSuccess());
+        }
+        if (other.getOHFJJJNAIKN() != 0) {
+          setOHFJJJNAIKN(other.getOHFJJJNAIKN());
+        }
+        if (other.getNHGEAMPJEEM() != 0) {
+          setNHGEAMPJEEM(other.getNHGEAMPJEEM());
         }
         if (other.getGalleryId() != 0) {
           setGalleryId(other.getGalleryId());
@@ -663,17 +666,14 @@ public final class LanV3RaceSettleNotifyOuterClass {
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
         }
-        if (other.getIHPLEFBHBDG() != 0) {
-          setIHPLEFBHBDG(other.getIHPLEFBHBDG());
-        }
-        if (other.getDIOJNDKDDLI() != 0) {
-          setDIOJNDKDDLI(other.getDIOJNDKDDLI());
-        }
-        if (other.getFBKJHNDOKFM() != 0) {
-          setFBKJHNDOKFM(other.getFBKJHNDOKFM());
+        if (other.getCKGDCGAGEDA() != 0) {
+          setCKGDCGAGEDA(other.getCKGDCGAGEDA());
         }
         if (other.getIsNewRecord() != false) {
           setIsNewRecord(other.getIsNewRecord());
+        }
+        if (other.getScore() != 0) {
+          setScore(other.getScore());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -704,40 +704,9 @@ public final class LanV3RaceSettleNotifyOuterClass {
         return this;
       }
 
-      private int score_ ;
-      /**
-       * <code>uint32 score = 4;</code>
-       * @return The score.
-       */
-      @java.lang.Override
-      public int getScore() {
-        return score_;
-      }
-      /**
-       * <code>uint32 score = 4;</code>
-       * @param value The score to set.
-       * @return This builder for chaining.
-       */
-      public Builder setScore(int value) {
-        
-        score_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 score = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearScore() {
-        
-        score_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isSuccess_ ;
       /**
-       * <code>bool is_success = 7;</code>
+       * <code>bool is_success = 2;</code>
        * @return The isSuccess.
        */
       @java.lang.Override
@@ -745,7 +714,7 @@ public final class LanV3RaceSettleNotifyOuterClass {
         return isSuccess_;
       }
       /**
-       * <code>bool is_success = 7;</code>
+       * <code>bool is_success = 2;</code>
        * @param value The isSuccess to set.
        * @return This builder for chaining.
        */
@@ -756,7 +725,7 @@ public final class LanV3RaceSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_success = 7;</code>
+       * <code>bool is_success = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsSuccess() {
@@ -766,9 +735,71 @@ public final class LanV3RaceSettleNotifyOuterClass {
         return this;
       }
 
+      private int oHFJJJNAIKN_ ;
+      /**
+       * <code>uint32 OHFJJJNAIKN = 10;</code>
+       * @return The oHFJJJNAIKN.
+       */
+      @java.lang.Override
+      public int getOHFJJJNAIKN() {
+        return oHFJJJNAIKN_;
+      }
+      /**
+       * <code>uint32 OHFJJJNAIKN = 10;</code>
+       * @param value The oHFJJJNAIKN to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOHFJJJNAIKN(int value) {
+        
+        oHFJJJNAIKN_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 OHFJJJNAIKN = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOHFJJJNAIKN() {
+        
+        oHFJJJNAIKN_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int nHGEAMPJEEM_ ;
+      /**
+       * <code>uint32 NHGEAMPJEEM = 9;</code>
+       * @return The nHGEAMPJEEM.
+       */
+      @java.lang.Override
+      public int getNHGEAMPJEEM() {
+        return nHGEAMPJEEM_;
+      }
+      /**
+       * <code>uint32 NHGEAMPJEEM = 9;</code>
+       * @param value The nHGEAMPJEEM to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNHGEAMPJEEM(int value) {
+        
+        nHGEAMPJEEM_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 NHGEAMPJEEM = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNHGEAMPJEEM() {
+        
+        nHGEAMPJEEM_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int galleryId_ ;
       /**
-       * <code>uint32 gallery_id = 3;</code>
+       * <code>uint32 gallery_id = 5;</code>
        * @return The galleryId.
        */
       @java.lang.Override
@@ -776,7 +807,7 @@ public final class LanV3RaceSettleNotifyOuterClass {
         return galleryId_;
       }
       /**
-       * <code>uint32 gallery_id = 3;</code>
+       * <code>uint32 gallery_id = 5;</code>
        * @param value The galleryId to set.
        * @return This builder for chaining.
        */
@@ -787,7 +818,7 @@ public final class LanV3RaceSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gallery_id = 3;</code>
+       * <code>uint32 gallery_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearGalleryId() {
@@ -799,7 +830,7 @@ public final class LanV3RaceSettleNotifyOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 15;</code>
+       * <code>uint32 level_id = 4;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -807,7 +838,7 @@ public final class LanV3RaceSettleNotifyOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 15;</code>
+       * <code>uint32 level_id = 4;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -818,7 +849,7 @@ public final class LanV3RaceSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 15;</code>
+       * <code>uint32 level_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -828,102 +859,40 @@ public final class LanV3RaceSettleNotifyOuterClass {
         return this;
       }
 
-      private int iHPLEFBHBDG_ ;
+      private int cKGDCGAGEDA_ ;
       /**
-       * <code>uint32 IHPLEFBHBDG = 14;</code>
-       * @return The iHPLEFBHBDG.
+       * <code>uint32 CKGDCGAGEDA = 7;</code>
+       * @return The cKGDCGAGEDA.
        */
       @java.lang.Override
-      public int getIHPLEFBHBDG() {
-        return iHPLEFBHBDG_;
+      public int getCKGDCGAGEDA() {
+        return cKGDCGAGEDA_;
       }
       /**
-       * <code>uint32 IHPLEFBHBDG = 14;</code>
-       * @param value The iHPLEFBHBDG to set.
+       * <code>uint32 CKGDCGAGEDA = 7;</code>
+       * @param value The cKGDCGAGEDA to set.
        * @return This builder for chaining.
        */
-      public Builder setIHPLEFBHBDG(int value) {
+      public Builder setCKGDCGAGEDA(int value) {
         
-        iHPLEFBHBDG_ = value;
+        cKGDCGAGEDA_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 IHPLEFBHBDG = 14;</code>
+       * <code>uint32 CKGDCGAGEDA = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIHPLEFBHBDG() {
+      public Builder clearCKGDCGAGEDA() {
         
-        iHPLEFBHBDG_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int dIOJNDKDDLI_ ;
-      /**
-       * <code>uint32 DIOJNDKDDLI = 1;</code>
-       * @return The dIOJNDKDDLI.
-       */
-      @java.lang.Override
-      public int getDIOJNDKDDLI() {
-        return dIOJNDKDDLI_;
-      }
-      /**
-       * <code>uint32 DIOJNDKDDLI = 1;</code>
-       * @param value The dIOJNDKDDLI to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDIOJNDKDDLI(int value) {
-        
-        dIOJNDKDDLI_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 DIOJNDKDDLI = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDIOJNDKDDLI() {
-        
-        dIOJNDKDDLI_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int fBKJHNDOKFM_ ;
-      /**
-       * <code>uint32 FBKJHNDOKFM = 8;</code>
-       * @return The fBKJHNDOKFM.
-       */
-      @java.lang.Override
-      public int getFBKJHNDOKFM() {
-        return fBKJHNDOKFM_;
-      }
-      /**
-       * <code>uint32 FBKJHNDOKFM = 8;</code>
-       * @param value The fBKJHNDOKFM to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFBKJHNDOKFM(int value) {
-        
-        fBKJHNDOKFM_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 FBKJHNDOKFM = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFBKJHNDOKFM() {
-        
-        fBKJHNDOKFM_ = 0;
+        cKGDCGAGEDA_ = 0;
         onChanged();
         return this;
       }
 
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 12;</code>
+       * <code>bool is_new_record = 1;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -931,7 +900,7 @@ public final class LanV3RaceSettleNotifyOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 12;</code>
+       * <code>bool is_new_record = 1;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -942,12 +911,43 @@ public final class LanV3RaceSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 12;</code>
+       * <code>bool is_new_record = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
         
         isNewRecord_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int score_ ;
+      /**
+       * <code>uint32 score = 8;</code>
+       * @return The score.
+       */
+      @java.lang.Override
+      public int getScore() {
+        return score_;
+      }
+      /**
+       * <code>uint32 score = 8;</code>
+       * @param value The score to set.
+       * @return This builder for chaining.
+       */
+      public Builder setScore(int value) {
+        
+        score_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 score = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearScore() {
+        
+        score_ = 0;
         onChanged();
         return this;
       }
@@ -1019,11 +1019,11 @@ public final class LanV3RaceSettleNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033LanV3RaceSettleNotify.proto\"\266\001\n\025LanV3R" +
-      "aceSettleNotify\022\r\n\005score\030\004 \001(\r\022\022\n\nis_suc" +
-      "cess\030\007 \001(\010\022\022\n\ngallery_id\030\003 \001(\r\022\020\n\010level_" +
-      "id\030\017 \001(\r\022\023\n\013IHPLEFBHBDG\030\016 \001(\r\022\023\n\013DIOJNDK" +
-      "DDLI\030\001 \001(\r\022\023\n\013FBKJHNDOKFM\030\010 \001(\r\022\025\n\ris_ne" +
-      "w_record\030\014 \001(\010B\033\n\031emu.grasscutter.net.pr" +
+      "aceSettleNotify\022\022\n\nis_success\030\002 \001(\010\022\023\n\013O" +
+      "HFJJJNAIKN\030\n \001(\r\022\023\n\013NHGEAMPJEEM\030\t \001(\r\022\022\n" +
+      "\ngallery_id\030\005 \001(\r\022\020\n\010level_id\030\004 \001(\r\022\023\n\013C" +
+      "KGDCGAGEDA\030\007 \001(\r\022\025\n\ris_new_record\030\001 \001(\010\022" +
+      "\r\n\005score\030\010 \001(\rB\033\n\031emu.grasscutter.net.pr" +
       "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1035,7 +1035,7 @@ public final class LanV3RaceSettleNotifyOuterClass {
     internal_static_LanV3RaceSettleNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_LanV3RaceSettleNotify_descriptor,
-        new java.lang.String[] { "Score", "IsSuccess", "GalleryId", "LevelId", "IHPLEFBHBDG", "DIOJNDKDDLI", "FBKJHNDOKFM", "IsNewRecord", });
+        new java.lang.String[] { "IsSuccess", "OHFJJJNAIKN", "NHGEAMPJEEM", "GalleryId", "LevelId", "CKGDCGAGEDA", "IsNewRecord", "Score", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

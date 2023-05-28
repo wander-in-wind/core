@@ -19,20 +19,20 @@ public final class GCGTokenOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 value = 6;</code>
+     * <code>uint32 value = 13;</code>
      * @return The value.
      */
     int getValue();
 
     /**
-     * <code>uint32 key = 13;</code>
+     * <code>uint32 key = 8;</code>
      * @return The key.
      */
     int getKey();
   }
   /**
    * <pre>
-   * Name: PALOPENLFFM
+   * Obf: ELLELBPJFFN
    * </pre>
    *
    * Protobuf type {@code GCGToken}
@@ -79,14 +79,14 @@ public final class GCGTokenOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 64: {
 
-              value_ = input.readUInt32();
+              key_ = input.readUInt32();
               break;
             }
             case 104: {
 
-              key_ = input.readUInt32();
+              value_ = input.readUInt32();
               break;
             }
             default: {
@@ -121,10 +121,10 @@ public final class GCGTokenOuterClass {
               emu.grasscutter.net.proto.GCGTokenOuterClass.GCGToken.class, emu.grasscutter.net.proto.GCGTokenOuterClass.GCGToken.Builder.class);
     }
 
-    public static final int VALUE_FIELD_NUMBER = 6;
+    public static final int VALUE_FIELD_NUMBER = 13;
     private int value_;
     /**
-     * <code>uint32 value = 6;</code>
+     * <code>uint32 value = 13;</code>
      * @return The value.
      */
     @java.lang.Override
@@ -132,10 +132,10 @@ public final class GCGTokenOuterClass {
       return value_;
     }
 
-    public static final int KEY_FIELD_NUMBER = 13;
+    public static final int KEY_FIELD_NUMBER = 8;
     private int key_;
     /**
-     * <code>uint32 key = 13;</code>
+     * <code>uint32 key = 8;</code>
      * @return The key.
      */
     @java.lang.Override
@@ -157,11 +157,11 @@ public final class GCGTokenOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (value_ != 0) {
-        output.writeUInt32(6, value_);
-      }
       if (key_ != 0) {
-        output.writeUInt32(13, key_);
+        output.writeUInt32(8, key_);
+      }
+      if (value_ != 0) {
+        output.writeUInt32(13, value_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +172,13 @@ public final class GCGTokenOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (value_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, value_);
-      }
       if (key_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, key_);
+          .computeUInt32Size(8, key_);
+      }
+      if (value_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, value_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -311,7 +311,7 @@ public final class GCGTokenOuterClass {
     }
     /**
      * <pre>
-     * Name: PALOPENLFFM
+     * Obf: ELLELBPJFFN
      * </pre>
      *
      * Protobuf type {@code GCGToken}
@@ -468,7 +468,7 @@ public final class GCGTokenOuterClass {
 
       private int value_ ;
       /**
-       * <code>uint32 value = 6;</code>
+       * <code>uint32 value = 13;</code>
        * @return The value.
        */
       @java.lang.Override
@@ -476,7 +476,7 @@ public final class GCGTokenOuterClass {
         return value_;
       }
       /**
-       * <code>uint32 value = 6;</code>
+       * <code>uint32 value = 13;</code>
        * @param value The value to set.
        * @return This builder for chaining.
        */
@@ -487,7 +487,7 @@ public final class GCGTokenOuterClass {
         return this;
       }
       /**
-       * <code>uint32 value = 6;</code>
+       * <code>uint32 value = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearValue() {
@@ -499,7 +499,7 @@ public final class GCGTokenOuterClass {
 
       private int key_ ;
       /**
-       * <code>uint32 key = 13;</code>
+       * <code>uint32 key = 8;</code>
        * @return The key.
        */
       @java.lang.Override
@@ -507,7 +507,7 @@ public final class GCGTokenOuterClass {
         return key_;
       }
       /**
-       * <code>uint32 key = 13;</code>
+       * <code>uint32 key = 8;</code>
        * @param value The key to set.
        * @return This builder for chaining.
        */
@@ -518,7 +518,7 @@ public final class GCGTokenOuterClass {
         return this;
       }
       /**
-       * <code>uint32 key = 13;</code>
+       * <code>uint32 key = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearKey() {
@@ -594,8 +594,8 @@ public final class GCGTokenOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\016GCGToken.proto\"&\n\010GCGToken\022\r\n\005value\030\006 " +
-      "\001(\r\022\013\n\003key\030\r \001(\rB\033\n\031emu.grasscutter.net." +
+      "\n\016GCGToken.proto\"&\n\010GCGToken\022\r\n\005value\030\r " +
+      "\001(\r\022\013\n\003key\030\010 \001(\rB\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

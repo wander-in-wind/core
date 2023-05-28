@@ -19,27 +19,27 @@ public final class McoinExchangeHcoinRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 MIBMBPJHBBM = 2;</code>
-     * @return The mIBMBPJHBBM.
+     * <code>uint32 hcoin = 1;</code>
+     * @return The hcoin.
      */
-    int getMIBMBPJHBBM();
+    int getHcoin();
 
     /**
-     * <code>int32 retcode = 15;</code>
+     * <code>uint32 mcoin_cost = 5;</code>
+     * @return The mcoinCost.
+     */
+    int getMcoinCost();
+
+    /**
+     * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
     int getRetcode();
-
-    /**
-     * <code>uint32 CALAJIHCLCF = 4;</code>
-     * @return The cALAJIHCLCF.
-     */
-    int getCALAJIHCLCF();
   }
   /**
    * <pre>
-   * Name: NBMNMAAOFAN
-   * CmdId: 636
+   * CmdId: 617
+   * Obf: KFGCMIDKGMC
    * </pre>
    *
    * Protobuf type {@code McoinExchangeHcoinRsp}
@@ -86,17 +86,17 @@ public final class McoinExchangeHcoinRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 8: {
 
-              mIBMBPJHBBM_ = input.readUInt32();
+              hcoin_ = input.readUInt32();
               break;
             }
-            case 32: {
+            case 40: {
 
-              cALAJIHCLCF_ = input.readUInt32();
+              mcoinCost_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 88: {
 
               retcode_ = input.readInt32();
               break;
@@ -133,37 +133,37 @@ public final class McoinExchangeHcoinRspOuterClass {
               emu.grasscutter.net.proto.McoinExchangeHcoinRspOuterClass.McoinExchangeHcoinRsp.class, emu.grasscutter.net.proto.McoinExchangeHcoinRspOuterClass.McoinExchangeHcoinRsp.Builder.class);
     }
 
-    public static final int MIBMBPJHBBM_FIELD_NUMBER = 2;
-    private int mIBMBPJHBBM_;
+    public static final int HCOIN_FIELD_NUMBER = 1;
+    private int hcoin_;
     /**
-     * <code>uint32 MIBMBPJHBBM = 2;</code>
-     * @return The mIBMBPJHBBM.
+     * <code>uint32 hcoin = 1;</code>
+     * @return The hcoin.
      */
     @java.lang.Override
-    public int getMIBMBPJHBBM() {
-      return mIBMBPJHBBM_;
+    public int getHcoin() {
+      return hcoin_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 15;
+    public static final int MCOIN_COST_FIELD_NUMBER = 5;
+    private int mcoinCost_;
+    /**
+     * <code>uint32 mcoin_cost = 5;</code>
+     * @return The mcoinCost.
+     */
+    @java.lang.Override
+    public int getMcoinCost() {
+      return mcoinCost_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 11;
     private int retcode_;
     /**
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
-    }
-
-    public static final int CALAJIHCLCF_FIELD_NUMBER = 4;
-    private int cALAJIHCLCF_;
-    /**
-     * <code>uint32 CALAJIHCLCF = 4;</code>
-     * @return The cALAJIHCLCF.
-     */
-    @java.lang.Override
-    public int getCALAJIHCLCF() {
-      return cALAJIHCLCF_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -180,14 +180,14 @@ public final class McoinExchangeHcoinRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (mIBMBPJHBBM_ != 0) {
-        output.writeUInt32(2, mIBMBPJHBBM_);
+      if (hcoin_ != 0) {
+        output.writeUInt32(1, hcoin_);
       }
-      if (cALAJIHCLCF_ != 0) {
-        output.writeUInt32(4, cALAJIHCLCF_);
+      if (mcoinCost_ != 0) {
+        output.writeUInt32(5, mcoinCost_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(15, retcode_);
+        output.writeInt32(11, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +198,17 @@ public final class McoinExchangeHcoinRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (mIBMBPJHBBM_ != 0) {
+      if (hcoin_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, mIBMBPJHBBM_);
+          .computeUInt32Size(1, hcoin_);
       }
-      if (cALAJIHCLCF_ != 0) {
+      if (mcoinCost_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, cALAJIHCLCF_);
+          .computeUInt32Size(5, mcoinCost_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(15, retcode_);
+          .computeInt32Size(11, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -225,12 +225,12 @@ public final class McoinExchangeHcoinRspOuterClass {
       }
       emu.grasscutter.net.proto.McoinExchangeHcoinRspOuterClass.McoinExchangeHcoinRsp other = (emu.grasscutter.net.proto.McoinExchangeHcoinRspOuterClass.McoinExchangeHcoinRsp) obj;
 
-      if (getMIBMBPJHBBM()
-          != other.getMIBMBPJHBBM()) return false;
+      if (getHcoin()
+          != other.getHcoin()) return false;
+      if (getMcoinCost()
+          != other.getMcoinCost()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (getCALAJIHCLCF()
-          != other.getCALAJIHCLCF()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -242,12 +242,12 @@ public final class McoinExchangeHcoinRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MIBMBPJHBBM_FIELD_NUMBER;
-      hash = (53 * hash) + getMIBMBPJHBBM();
+      hash = (37 * hash) + HCOIN_FIELD_NUMBER;
+      hash = (53 * hash) + getHcoin();
+      hash = (37 * hash) + MCOIN_COST_FIELD_NUMBER;
+      hash = (53 * hash) + getMcoinCost();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + CALAJIHCLCF_FIELD_NUMBER;
-      hash = (53 * hash) + getCALAJIHCLCF();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -345,8 +345,8 @@ public final class McoinExchangeHcoinRspOuterClass {
     }
     /**
      * <pre>
-     * Name: NBMNMAAOFAN
-     * CmdId: 636
+     * CmdId: 617
+     * Obf: KFGCMIDKGMC
      * </pre>
      *
      * Protobuf type {@code McoinExchangeHcoinRsp}
@@ -386,11 +386,11 @@ public final class McoinExchangeHcoinRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        mIBMBPJHBBM_ = 0;
+        hcoin_ = 0;
+
+        mcoinCost_ = 0;
 
         retcode_ = 0;
-
-        cALAJIHCLCF_ = 0;
 
         return this;
       }
@@ -418,9 +418,9 @@ public final class McoinExchangeHcoinRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.McoinExchangeHcoinRspOuterClass.McoinExchangeHcoinRsp buildPartial() {
         emu.grasscutter.net.proto.McoinExchangeHcoinRspOuterClass.McoinExchangeHcoinRsp result = new emu.grasscutter.net.proto.McoinExchangeHcoinRspOuterClass.McoinExchangeHcoinRsp(this);
-        result.mIBMBPJHBBM_ = mIBMBPJHBBM_;
+        result.hcoin_ = hcoin_;
+        result.mcoinCost_ = mcoinCost_;
         result.retcode_ = retcode_;
-        result.cALAJIHCLCF_ = cALAJIHCLCF_;
         onBuilt();
         return result;
       }
@@ -469,14 +469,14 @@ public final class McoinExchangeHcoinRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.McoinExchangeHcoinRspOuterClass.McoinExchangeHcoinRsp other) {
         if (other == emu.grasscutter.net.proto.McoinExchangeHcoinRspOuterClass.McoinExchangeHcoinRsp.getDefaultInstance()) return this;
-        if (other.getMIBMBPJHBBM() != 0) {
-          setMIBMBPJHBBM(other.getMIBMBPJHBBM());
+        if (other.getHcoin() != 0) {
+          setHcoin(other.getHcoin());
+        }
+        if (other.getMcoinCost() != 0) {
+          setMcoinCost(other.getMcoinCost());
         }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
-        }
-        if (other.getCALAJIHCLCF() != 0) {
-          setCALAJIHCLCF(other.getCALAJIHCLCF());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -507,40 +507,71 @@ public final class McoinExchangeHcoinRspOuterClass {
         return this;
       }
 
-      private int mIBMBPJHBBM_ ;
+      private int hcoin_ ;
       /**
-       * <code>uint32 MIBMBPJHBBM = 2;</code>
-       * @return The mIBMBPJHBBM.
+       * <code>uint32 hcoin = 1;</code>
+       * @return The hcoin.
        */
       @java.lang.Override
-      public int getMIBMBPJHBBM() {
-        return mIBMBPJHBBM_;
+      public int getHcoin() {
+        return hcoin_;
       }
       /**
-       * <code>uint32 MIBMBPJHBBM = 2;</code>
-       * @param value The mIBMBPJHBBM to set.
+       * <code>uint32 hcoin = 1;</code>
+       * @param value The hcoin to set.
        * @return This builder for chaining.
        */
-      public Builder setMIBMBPJHBBM(int value) {
+      public Builder setHcoin(int value) {
         
-        mIBMBPJHBBM_ = value;
+        hcoin_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 MIBMBPJHBBM = 2;</code>
+       * <code>uint32 hcoin = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMIBMBPJHBBM() {
+      public Builder clearHcoin() {
         
-        mIBMBPJHBBM_ = 0;
+        hcoin_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int mcoinCost_ ;
+      /**
+       * <code>uint32 mcoin_cost = 5;</code>
+       * @return The mcoinCost.
+       */
+      @java.lang.Override
+      public int getMcoinCost() {
+        return mcoinCost_;
+      }
+      /**
+       * <code>uint32 mcoin_cost = 5;</code>
+       * @param value The mcoinCost to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMcoinCost(int value) {
+        
+        mcoinCost_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 mcoin_cost = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMcoinCost() {
+        
+        mcoinCost_ = 0;
         onChanged();
         return this;
       }
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 11;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -548,7 +579,7 @@ public final class McoinExchangeHcoinRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 11;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -559,43 +590,12 @@ public final class McoinExchangeHcoinRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
         
         retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int cALAJIHCLCF_ ;
-      /**
-       * <code>uint32 CALAJIHCLCF = 4;</code>
-       * @return The cALAJIHCLCF.
-       */
-      @java.lang.Override
-      public int getCALAJIHCLCF() {
-        return cALAJIHCLCF_;
-      }
-      /**
-       * <code>uint32 CALAJIHCLCF = 4;</code>
-       * @param value The cALAJIHCLCF to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCALAJIHCLCF(int value) {
-        
-        cALAJIHCLCF_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 CALAJIHCLCF = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCALAJIHCLCF() {
-        
-        cALAJIHCLCF_ = 0;
         onChanged();
         return this;
       }
@@ -666,10 +666,10 @@ public final class McoinExchangeHcoinRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033McoinExchangeHcoinRsp.proto\"R\n\025McoinEx" +
-      "changeHcoinRsp\022\023\n\013MIBMBPJHBBM\030\002 \001(\r\022\017\n\007r" +
-      "etcode\030\017 \001(\005\022\023\n\013CALAJIHCLCF\030\004 \001(\rB\033\n\031emu" +
-      ".grasscutter.net.protob\006proto3"
+      "\n\033McoinExchangeHcoinRsp.proto\"K\n\025McoinEx" +
+      "changeHcoinRsp\022\r\n\005hcoin\030\001 \001(\r\022\022\n\nmcoin_c" +
+      "ost\030\005 \001(\r\022\017\n\007retcode\030\013 \001(\005B\033\n\031emu.grassc" +
+      "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -680,7 +680,7 @@ public final class McoinExchangeHcoinRspOuterClass {
     internal_static_McoinExchangeHcoinRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_McoinExchangeHcoinRsp_descriptor,
-        new java.lang.String[] { "MIBMBPJHBBM", "Retcode", "CALAJIHCLCF", });
+        new java.lang.String[] { "Hcoin", "McoinCost", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

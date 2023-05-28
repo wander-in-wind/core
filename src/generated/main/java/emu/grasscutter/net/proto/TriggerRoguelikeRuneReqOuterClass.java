@@ -19,15 +19,15 @@ public final class TriggerRoguelikeRuneReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 rune_id = 6;</code>
+     * <code>uint32 rune_id = 4;</code>
      * @return The runeId.
      */
     int getRuneId();
   }
   /**
    * <pre>
-   * Name: CHDINBMNKOC
-   * CmdId: 8053
+   * CmdId: 8661
+   * Obf: EMJGMMMOINA
    * </pre>
    *
    * Protobuf type {@code TriggerRoguelikeRuneReq}
@@ -74,7 +74,7 @@ public final class TriggerRoguelikeRuneReqOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 32: {
 
               runeId_ = input.readUInt32();
               break;
@@ -111,10 +111,10 @@ public final class TriggerRoguelikeRuneReqOuterClass {
               emu.grasscutter.net.proto.TriggerRoguelikeRuneReqOuterClass.TriggerRoguelikeRuneReq.class, emu.grasscutter.net.proto.TriggerRoguelikeRuneReqOuterClass.TriggerRoguelikeRuneReq.Builder.class);
     }
 
-    public static final int RUNE_ID_FIELD_NUMBER = 6;
+    public static final int RUNE_ID_FIELD_NUMBER = 4;
     private int runeId_;
     /**
-     * <code>uint32 rune_id = 6;</code>
+     * <code>uint32 rune_id = 4;</code>
      * @return The runeId.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class TriggerRoguelikeRuneReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (runeId_ != 0) {
-        output.writeUInt32(6, runeId_);
+        output.writeUInt32(4, runeId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class TriggerRoguelikeRuneReqOuterClass {
       size = 0;
       if (runeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, runeId_);
+          .computeUInt32Size(4, runeId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class TriggerRoguelikeRuneReqOuterClass {
     }
     /**
      * <pre>
-     * Name: CHDINBMNKOC
-     * CmdId: 8053
+     * CmdId: 8661
+     * Obf: EMJGMMMOINA
      * </pre>
      *
      * Protobuf type {@code TriggerRoguelikeRuneReq}
@@ -431,7 +431,7 @@ public final class TriggerRoguelikeRuneReqOuterClass {
 
       private int runeId_ ;
       /**
-       * <code>uint32 rune_id = 6;</code>
+       * <code>uint32 rune_id = 4;</code>
        * @return The runeId.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class TriggerRoguelikeRuneReqOuterClass {
         return runeId_;
       }
       /**
-       * <code>uint32 rune_id = 6;</code>
+       * <code>uint32 rune_id = 4;</code>
        * @param value The runeId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class TriggerRoguelikeRuneReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 rune_id = 6;</code>
+       * <code>uint32 rune_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearRuneId() {
@@ -527,7 +527,7 @@ public final class TriggerRoguelikeRuneReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035TriggerRoguelikeRuneReq.proto\"*\n\027Trigg" +
-      "erRoguelikeRuneReq\022\017\n\007rune_id\030\006 \001(\rB\033\n\031e" +
+      "erRoguelikeRuneReq\022\017\n\007rune_id\030\004 \001(\rB\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

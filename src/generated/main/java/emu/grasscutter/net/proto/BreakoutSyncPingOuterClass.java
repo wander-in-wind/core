@@ -19,20 +19,20 @@ public final class BreakoutSyncPingOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint64 client_game_time = 8;</code>
+     * <code>uint64 client_game_time = 14;</code>
      * @return The clientGameTime.
      */
     long getClientGameTime();
 
     /**
-     * <code>uint64 server_game_time = 9;</code>
+     * <code>uint64 server_game_time = 11;</code>
      * @return The serverGameTime.
      */
     long getServerGameTime();
   }
   /**
    * <pre>
-   * Name: KCLGMMEOPAE
+   * Obf: MMPEIBJBNMB
    * </pre>
    *
    * Protobuf type {@code BreakoutSyncPing}
@@ -79,14 +79,14 @@ public final class BreakoutSyncPingOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
-
-              clientGameTime_ = input.readUInt64();
-              break;
-            }
-            case 72: {
+            case 88: {
 
               serverGameTime_ = input.readUInt64();
+              break;
+            }
+            case 112: {
+
+              clientGameTime_ = input.readUInt64();
               break;
             }
             default: {
@@ -121,10 +121,10 @@ public final class BreakoutSyncPingOuterClass {
               emu.grasscutter.net.proto.BreakoutSyncPingOuterClass.BreakoutSyncPing.class, emu.grasscutter.net.proto.BreakoutSyncPingOuterClass.BreakoutSyncPing.Builder.class);
     }
 
-    public static final int CLIENT_GAME_TIME_FIELD_NUMBER = 8;
+    public static final int CLIENT_GAME_TIME_FIELD_NUMBER = 14;
     private long clientGameTime_;
     /**
-     * <code>uint64 client_game_time = 8;</code>
+     * <code>uint64 client_game_time = 14;</code>
      * @return The clientGameTime.
      */
     @java.lang.Override
@@ -132,10 +132,10 @@ public final class BreakoutSyncPingOuterClass {
       return clientGameTime_;
     }
 
-    public static final int SERVER_GAME_TIME_FIELD_NUMBER = 9;
+    public static final int SERVER_GAME_TIME_FIELD_NUMBER = 11;
     private long serverGameTime_;
     /**
-     * <code>uint64 server_game_time = 9;</code>
+     * <code>uint64 server_game_time = 11;</code>
      * @return The serverGameTime.
      */
     @java.lang.Override
@@ -157,11 +157,11 @@ public final class BreakoutSyncPingOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (clientGameTime_ != 0L) {
-        output.writeUInt64(8, clientGameTime_);
-      }
       if (serverGameTime_ != 0L) {
-        output.writeUInt64(9, serverGameTime_);
+        output.writeUInt64(11, serverGameTime_);
+      }
+      if (clientGameTime_ != 0L) {
+        output.writeUInt64(14, clientGameTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +172,13 @@ public final class BreakoutSyncPingOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (clientGameTime_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(8, clientGameTime_);
-      }
       if (serverGameTime_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(9, serverGameTime_);
+          .computeUInt64Size(11, serverGameTime_);
+      }
+      if (clientGameTime_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(14, clientGameTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,7 +313,7 @@ public final class BreakoutSyncPingOuterClass {
     }
     /**
      * <pre>
-     * Name: KCLGMMEOPAE
+     * Obf: MMPEIBJBNMB
      * </pre>
      *
      * Protobuf type {@code BreakoutSyncPing}
@@ -470,7 +470,7 @@ public final class BreakoutSyncPingOuterClass {
 
       private long clientGameTime_ ;
       /**
-       * <code>uint64 client_game_time = 8;</code>
+       * <code>uint64 client_game_time = 14;</code>
        * @return The clientGameTime.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class BreakoutSyncPingOuterClass {
         return clientGameTime_;
       }
       /**
-       * <code>uint64 client_game_time = 8;</code>
+       * <code>uint64 client_game_time = 14;</code>
        * @param value The clientGameTime to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class BreakoutSyncPingOuterClass {
         return this;
       }
       /**
-       * <code>uint64 client_game_time = 8;</code>
+       * <code>uint64 client_game_time = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearClientGameTime() {
@@ -501,7 +501,7 @@ public final class BreakoutSyncPingOuterClass {
 
       private long serverGameTime_ ;
       /**
-       * <code>uint64 server_game_time = 9;</code>
+       * <code>uint64 server_game_time = 11;</code>
        * @return The serverGameTime.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class BreakoutSyncPingOuterClass {
         return serverGameTime_;
       }
       /**
-       * <code>uint64 server_game_time = 9;</code>
+       * <code>uint64 server_game_time = 11;</code>
        * @param value The serverGameTime to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class BreakoutSyncPingOuterClass {
         return this;
       }
       /**
-       * <code>uint64 server_game_time = 9;</code>
+       * <code>uint64 server_game_time = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearServerGameTime() {
@@ -597,8 +597,8 @@ public final class BreakoutSyncPingOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026BreakoutSyncPing.proto\"F\n\020BreakoutSync" +
-      "Ping\022\030\n\020client_game_time\030\010 \001(\004\022\030\n\020server" +
-      "_game_time\030\t \001(\004B\033\n\031emu.grasscutter.net." +
+      "Ping\022\030\n\020client_game_time\030\016 \001(\004\022\030\n\020server" +
+      "_game_time\030\013 \001(\004B\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,27 +19,27 @@ public final class RogueHealAvatarsRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 cell_id = 15;</code>
-     * @return The cellId.
-     */
-    int getCellId();
-
-    /**
-     * <code>uint32 dungeon_id = 2;</code>
+     * <code>uint32 dungeon_id = 5;</code>
      * @return The dungeonId.
      */
     int getDungeonId();
+
+    /**
+     * <code>uint32 cell_id = 13;</code>
+     * @return The cellId.
+     */
+    int getCellId();
   }
   /**
    * <pre>
-   * Name: EKCHEGGLOOG
-   * CmdId: 8941
+   * CmdId: 8037
+   * Obf: CLDNIDNBGAH
    * </pre>
    *
    * Protobuf type {@code RogueHealAvatarsRsp}
@@ -86,17 +86,17 @@ public final class RogueHealAvatarsRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 16: {
+            case 40: {
 
               dungeonId_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 88: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 104: {
 
               cellId_ = input.readUInt32();
               break;
@@ -133,10 +133,10 @@ public final class RogueHealAvatarsRspOuterClass {
               emu.grasscutter.net.proto.RogueHealAvatarsRspOuterClass.RogueHealAvatarsRsp.class, emu.grasscutter.net.proto.RogueHealAvatarsRspOuterClass.RogueHealAvatarsRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 1;
+    public static final int RETCODE_FIELD_NUMBER = 11;
     private int retcode_;
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 11;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -144,26 +144,26 @@ public final class RogueHealAvatarsRspOuterClass {
       return retcode_;
     }
 
-    public static final int CELL_ID_FIELD_NUMBER = 15;
-    private int cellId_;
-    /**
-     * <code>uint32 cell_id = 15;</code>
-     * @return The cellId.
-     */
-    @java.lang.Override
-    public int getCellId() {
-      return cellId_;
-    }
-
-    public static final int DUNGEON_ID_FIELD_NUMBER = 2;
+    public static final int DUNGEON_ID_FIELD_NUMBER = 5;
     private int dungeonId_;
     /**
-     * <code>uint32 dungeon_id = 2;</code>
+     * <code>uint32 dungeon_id = 5;</code>
      * @return The dungeonId.
      */
     @java.lang.Override
     public int getDungeonId() {
       return dungeonId_;
+    }
+
+    public static final int CELL_ID_FIELD_NUMBER = 13;
+    private int cellId_;
+    /**
+     * <code>uint32 cell_id = 13;</code>
+     * @return The cellId.
+     */
+    @java.lang.Override
+    public int getCellId() {
+      return cellId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -180,14 +180,14 @@ public final class RogueHealAvatarsRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(1, retcode_);
-      }
       if (dungeonId_ != 0) {
-        output.writeUInt32(2, dungeonId_);
+        output.writeUInt32(5, dungeonId_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(11, retcode_);
       }
       if (cellId_ != 0) {
-        output.writeUInt32(15, cellId_);
+        output.writeUInt32(13, cellId_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +198,17 @@ public final class RogueHealAvatarsRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, retcode_);
-      }
       if (dungeonId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, dungeonId_);
+          .computeUInt32Size(5, dungeonId_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(11, retcode_);
       }
       if (cellId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, cellId_);
+          .computeUInt32Size(13, cellId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -227,10 +227,10 @@ public final class RogueHealAvatarsRspOuterClass {
 
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (getCellId()
-          != other.getCellId()) return false;
       if (getDungeonId()
           != other.getDungeonId()) return false;
+      if (getCellId()
+          != other.getCellId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -244,10 +244,10 @@ public final class RogueHealAvatarsRspOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + CELL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCellId();
       hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
       hash = (53 * hash) + getDungeonId();
+      hash = (37 * hash) + CELL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getCellId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -345,8 +345,8 @@ public final class RogueHealAvatarsRspOuterClass {
     }
     /**
      * <pre>
-     * Name: EKCHEGGLOOG
-     * CmdId: 8941
+     * CmdId: 8037
+     * Obf: CLDNIDNBGAH
      * </pre>
      *
      * Protobuf type {@code RogueHealAvatarsRsp}
@@ -388,9 +388,9 @@ public final class RogueHealAvatarsRspOuterClass {
         super.clear();
         retcode_ = 0;
 
-        cellId_ = 0;
-
         dungeonId_ = 0;
+
+        cellId_ = 0;
 
         return this;
       }
@@ -419,8 +419,8 @@ public final class RogueHealAvatarsRspOuterClass {
       public emu.grasscutter.net.proto.RogueHealAvatarsRspOuterClass.RogueHealAvatarsRsp buildPartial() {
         emu.grasscutter.net.proto.RogueHealAvatarsRspOuterClass.RogueHealAvatarsRsp result = new emu.grasscutter.net.proto.RogueHealAvatarsRspOuterClass.RogueHealAvatarsRsp(this);
         result.retcode_ = retcode_;
-        result.cellId_ = cellId_;
         result.dungeonId_ = dungeonId_;
+        result.cellId_ = cellId_;
         onBuilt();
         return result;
       }
@@ -472,11 +472,11 @@ public final class RogueHealAvatarsRspOuterClass {
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
-        if (other.getCellId() != 0) {
-          setCellId(other.getCellId());
-        }
         if (other.getDungeonId() != 0) {
           setDungeonId(other.getDungeonId());
+        }
+        if (other.getCellId() != 0) {
+          setCellId(other.getCellId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -509,7 +509,7 @@ public final class RogueHealAvatarsRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 11;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -517,7 +517,7 @@ public final class RogueHealAvatarsRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 11;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -528,7 +528,7 @@ public final class RogueHealAvatarsRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -538,40 +538,9 @@ public final class RogueHealAvatarsRspOuterClass {
         return this;
       }
 
-      private int cellId_ ;
-      /**
-       * <code>uint32 cell_id = 15;</code>
-       * @return The cellId.
-       */
-      @java.lang.Override
-      public int getCellId() {
-        return cellId_;
-      }
-      /**
-       * <code>uint32 cell_id = 15;</code>
-       * @param value The cellId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCellId(int value) {
-        
-        cellId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 cell_id = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCellId() {
-        
-        cellId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int dungeonId_ ;
       /**
-       * <code>uint32 dungeon_id = 2;</code>
+       * <code>uint32 dungeon_id = 5;</code>
        * @return The dungeonId.
        */
       @java.lang.Override
@@ -579,7 +548,7 @@ public final class RogueHealAvatarsRspOuterClass {
         return dungeonId_;
       }
       /**
-       * <code>uint32 dungeon_id = 2;</code>
+       * <code>uint32 dungeon_id = 5;</code>
        * @param value The dungeonId to set.
        * @return This builder for chaining.
        */
@@ -590,12 +559,43 @@ public final class RogueHealAvatarsRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 dungeon_id = 2;</code>
+       * <code>uint32 dungeon_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonId() {
         
         dungeonId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int cellId_ ;
+      /**
+       * <code>uint32 cell_id = 13;</code>
+       * @return The cellId.
+       */
+      @java.lang.Override
+      public int getCellId() {
+        return cellId_;
+      }
+      /**
+       * <code>uint32 cell_id = 13;</code>
+       * @param value The cellId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCellId(int value) {
+        
+        cellId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 cell_id = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCellId() {
+        
+        cellId_ = 0;
         onChanged();
         return this;
       }
@@ -667,8 +667,8 @@ public final class RogueHealAvatarsRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031RogueHealAvatarsRsp.proto\"K\n\023RogueHeal" +
-      "AvatarsRsp\022\017\n\007retcode\030\001 \001(\005\022\017\n\007cell_id\030\017" +
-      " \001(\r\022\022\n\ndungeon_id\030\002 \001(\rB\033\n\031emu.grasscut" +
+      "AvatarsRsp\022\017\n\007retcode\030\013 \001(\005\022\022\n\ndungeon_i" +
+      "d\030\005 \001(\r\022\017\n\007cell_id\030\r \001(\rB\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -680,7 +680,7 @@ public final class RogueHealAvatarsRspOuterClass {
     internal_static_RogueHealAvatarsRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RogueHealAvatarsRsp_descriptor,
-        new java.lang.String[] { "Retcode", "CellId", "DungeonId", });
+        new java.lang.String[] { "Retcode", "DungeonId", "CellId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

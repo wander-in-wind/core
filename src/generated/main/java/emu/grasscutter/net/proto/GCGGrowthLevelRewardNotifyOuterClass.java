@@ -19,29 +19,17 @@ public final class GCGGrowthLevelRewardNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *IAADAMKHBIL snooswap
-     * </pre>
-     *
-     * <code>repeated uint32 level_reward_taken_list = 10;</code>
+     * <code>repeated uint32 level_reward_taken_list = 5;</code>
      * @return A list containing the levelRewardTakenList.
      */
     java.util.List<java.lang.Integer> getLevelRewardTakenListList();
     /**
-     * <pre>
-     *IAADAMKHBIL snooswap
-     * </pre>
-     *
-     * <code>repeated uint32 level_reward_taken_list = 10;</code>
+     * <code>repeated uint32 level_reward_taken_list = 5;</code>
      * @return The count of levelRewardTakenList.
      */
     int getLevelRewardTakenListCount();
     /**
-     * <pre>
-     *IAADAMKHBIL snooswap
-     * </pre>
-     *
-     * <code>repeated uint32 level_reward_taken_list = 10;</code>
+     * <code>repeated uint32 level_reward_taken_list = 5;</code>
      * @param index The index of the element to return.
      * @return The levelRewardTakenList at the given index.
      */
@@ -49,8 +37,8 @@ public final class GCGGrowthLevelRewardNotifyOuterClass {
   }
   /**
    * <pre>
-   * Name: HMLAENOCENE
-   * CmdId: 7195
+   * CmdId: 7128
+   * Obf: JFFHJBPBMAL
    * </pre>
    *
    * Protobuf type {@code GCGGrowthLevelRewardNotify}
@@ -99,7 +87,7 @@ public final class GCGGrowthLevelRewardNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 40: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 levelRewardTakenList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -107,7 +95,7 @@ public final class GCGGrowthLevelRewardNotifyOuterClass {
               levelRewardTakenList_.addInt(input.readUInt32());
               break;
             }
-            case 82: {
+            case 42: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -155,14 +143,10 @@ public final class GCGGrowthLevelRewardNotifyOuterClass {
               emu.grasscutter.net.proto.GCGGrowthLevelRewardNotifyOuterClass.GCGGrowthLevelRewardNotify.class, emu.grasscutter.net.proto.GCGGrowthLevelRewardNotifyOuterClass.GCGGrowthLevelRewardNotify.Builder.class);
     }
 
-    public static final int LEVEL_REWARD_TAKEN_LIST_FIELD_NUMBER = 10;
+    public static final int LEVEL_REWARD_TAKEN_LIST_FIELD_NUMBER = 5;
     private com.google.protobuf.Internal.IntList levelRewardTakenList_;
     /**
-     * <pre>
-     *IAADAMKHBIL snooswap
-     * </pre>
-     *
-     * <code>repeated uint32 level_reward_taken_list = 10;</code>
+     * <code>repeated uint32 level_reward_taken_list = 5;</code>
      * @return A list containing the levelRewardTakenList.
      */
     @java.lang.Override
@@ -171,22 +155,14 @@ public final class GCGGrowthLevelRewardNotifyOuterClass {
       return levelRewardTakenList_;
     }
     /**
-     * <pre>
-     *IAADAMKHBIL snooswap
-     * </pre>
-     *
-     * <code>repeated uint32 level_reward_taken_list = 10;</code>
+     * <code>repeated uint32 level_reward_taken_list = 5;</code>
      * @return The count of levelRewardTakenList.
      */
     public int getLevelRewardTakenListCount() {
       return levelRewardTakenList_.size();
     }
     /**
-     * <pre>
-     *IAADAMKHBIL snooswap
-     * </pre>
-     *
-     * <code>repeated uint32 level_reward_taken_list = 10;</code>
+     * <code>repeated uint32 level_reward_taken_list = 5;</code>
      * @param index The index of the element to return.
      * @return The levelRewardTakenList at the given index.
      */
@@ -211,7 +187,7 @@ public final class GCGGrowthLevelRewardNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getLevelRewardTakenListList().size() > 0) {
-        output.writeUInt32NoTag(82);
+        output.writeUInt32NoTag(42);
         output.writeUInt32NoTag(levelRewardTakenListMemoizedSerializedSize);
       }
       for (int i = 0; i < levelRewardTakenList_.size(); i++) {
@@ -369,8 +345,8 @@ public final class GCGGrowthLevelRewardNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: HMLAENOCENE
-     * CmdId: 7195
+     * CmdId: 7128
+     * Obf: JFFHJBPBMAL
      * </pre>
      *
      * Protobuf type {@code GCGGrowthLevelRewardNotify}
@@ -540,11 +516,7 @@ public final class GCGGrowthLevelRewardNotifyOuterClass {
          }
       }
       /**
-       * <pre>
-       *IAADAMKHBIL snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 level_reward_taken_list = 10;</code>
+       * <code>repeated uint32 level_reward_taken_list = 5;</code>
        * @return A list containing the levelRewardTakenList.
        */
       public java.util.List<java.lang.Integer>
@@ -553,22 +525,14 @@ public final class GCGGrowthLevelRewardNotifyOuterClass {
                  java.util.Collections.unmodifiableList(levelRewardTakenList_) : levelRewardTakenList_;
       }
       /**
-       * <pre>
-       *IAADAMKHBIL snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 level_reward_taken_list = 10;</code>
+       * <code>repeated uint32 level_reward_taken_list = 5;</code>
        * @return The count of levelRewardTakenList.
        */
       public int getLevelRewardTakenListCount() {
         return levelRewardTakenList_.size();
       }
       /**
-       * <pre>
-       *IAADAMKHBIL snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 level_reward_taken_list = 10;</code>
+       * <code>repeated uint32 level_reward_taken_list = 5;</code>
        * @param index The index of the element to return.
        * @return The levelRewardTakenList at the given index.
        */
@@ -576,11 +540,7 @@ public final class GCGGrowthLevelRewardNotifyOuterClass {
         return levelRewardTakenList_.getInt(index);
       }
       /**
-       * <pre>
-       *IAADAMKHBIL snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 level_reward_taken_list = 10;</code>
+       * <code>repeated uint32 level_reward_taken_list = 5;</code>
        * @param index The index to set the value at.
        * @param value The levelRewardTakenList to set.
        * @return This builder for chaining.
@@ -593,11 +553,7 @@ public final class GCGGrowthLevelRewardNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *IAADAMKHBIL snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 level_reward_taken_list = 10;</code>
+       * <code>repeated uint32 level_reward_taken_list = 5;</code>
        * @param value The levelRewardTakenList to add.
        * @return This builder for chaining.
        */
@@ -608,11 +564,7 @@ public final class GCGGrowthLevelRewardNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *IAADAMKHBIL snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 level_reward_taken_list = 10;</code>
+       * <code>repeated uint32 level_reward_taken_list = 5;</code>
        * @param values The levelRewardTakenList to add.
        * @return This builder for chaining.
        */
@@ -625,11 +577,7 @@ public final class GCGGrowthLevelRewardNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *IAADAMKHBIL snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 level_reward_taken_list = 10;</code>
+       * <code>repeated uint32 level_reward_taken_list = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelRewardTakenList() {
@@ -707,7 +655,7 @@ public final class GCGGrowthLevelRewardNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n GCGGrowthLevelRewardNotify.proto\"=\n\032GC" +
       "GGrowthLevelRewardNotify\022\037\n\027level_reward" +
-      "_taken_list\030\n \003(\rB\033\n\031emu.grasscutter.net" +
+      "_taken_list\030\005 \003(\rB\033\n\031emu.grasscutter.net" +
       ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

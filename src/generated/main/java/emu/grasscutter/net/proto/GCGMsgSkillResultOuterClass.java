@@ -19,122 +19,94 @@ public final class GCGMsgSkillResultOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *DCEIDIOOFAG last_hp
-     * </pre>
-     *
-     * <code>uint32 result_seq = 3;</code>
-     * @return The resultSeq.
+     * <code>uint32 BGFONKCHPHD = 4;</code>
+     * @return The bGFONKCHPHD.
      */
-    int getResultSeq();
+    int getBGFONKCHPHD();
 
     /**
-     * <pre>
-     *GKLDDNNENDO	
-     * </pre>
-     *
-     * <code>uint32 last_hp = 2;</code>
-     * @return The lastHp.
+     * <code>uint32 HNLABLOMGMJ = 13;</code>
+     * @return The hNLABLOMGMJ.
      */
-    int getLastHp();
+    int getHNLABLOMGMJ();
 
     /**
-     * <pre>
-     *OOMEGPIIIMH from_result_seq
-     * </pre>
-     *
-     * <code>uint32 hp = 8;</code>
-     * @return The hp.
+     * <code>uint32 OBKMAKCCGBB = 11;</code>
+     * @return The oBKMAKCCGBB.
      */
-    int getHp();
+    int getOBKMAKCCGBB();
 
     /**
-     * <code>uint32 damage = 10;</code>
+     * <code>uint32 damage = 15;</code>
      * @return The damage.
      */
     int getDamage();
 
     /**
-     * <code>repeated .GCGDamageDetail detail_list = 15;</code>
+     * <code>uint32 NEAHEJCAPAM = 7;</code>
+     * @return The nEAHEJCAPAM.
      */
-    java.util.List<emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetail> 
-        getDetailListList();
-    /**
-     * <code>repeated .GCGDamageDetail detail_list = 15;</code>
-     */
-    emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetail getDetailList(int index);
-    /**
-     * <code>repeated .GCGDamageDetail detail_list = 15;</code>
-     */
-    int getDetailListCount();
-    /**
-     * <code>repeated .GCGDamageDetail detail_list = 15;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetailOrBuilder> 
-        getDetailListOrBuilderList();
-    /**
-     * <code>repeated .GCGDamageDetail detail_list = 15;</code>
-     */
-    emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetailOrBuilder getDetailListOrBuilder(
-        int index);
+    int getNEAHEJCAPAM();
 
     /**
-     * <pre>
-     *FMAFLBOMAFK result_seq
-     * </pre>
-     *
-     * <code>uint32 from_result_seq = 14;</code>
-     * @return The fromResultSeq.
+     * <code>uint32 NDJABBCPLBB = 10;</code>
+     * @return The nDJABBCPLBB.
      */
-    int getFromResultSeq();
+    int getNDJABBCPLBB();
 
     /**
-     * <code>uint32 skill_id = 7;</code>
+     * <code>uint32 DMBDKFHNGOF = 12;</code>
+     * @return The dMBDKFHNGOF.
+     */
+    int getDMBDKFHNGOF();
+
+    /**
+     * <code>uint32 LDOEHIDLFKI = 9;</code>
+     * @return The lDOEHIDLFKI.
+     */
+    int getLDOEHIDLFKI();
+
+    /**
+     * <code>uint32 skill_id = 6;</code>
      * @return The skillId.
      */
     int getSkillId();
 
     /**
-     * <pre>
-     *MNOMJNEOJHD element_type
-     * </pre>
-     *
-     * <code>uint32 MNOMJNEOJHD = 6;</code>
-     * @return The mNOMJNEOJHD.
+     * <code>uint32 AOIGOAHIPIG = 8;</code>
+     * @return The aOIGOAHIPIG.
      */
-    int getMNOMJNEOJHD();
+    int getAOIGOAHIPIG();
 
     /**
-     * <pre>
-     *IHNDAGJJMJK target_card_guid
-     * </pre>
-     *
-     * <code>uint32 target_card_guid = 12;</code>
-     * @return The targetCardGuid.
+     * <code>repeated .GCGDamageDetail detail_list = 2;</code>
      */
-    int getTargetCardGuid();
-
+    java.util.List<emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetail> 
+        getDetailListList();
     /**
-     * <pre>
-     *PPADCGGEDOO
-     * </pre>
-     *
-     * <code>uint32 src_card_guid = 4;</code>
-     * @return The srcCardGuid.
+     * <code>repeated .GCGDamageDetail detail_list = 2;</code>
      */
-    int getSrcCardGuid();
-
+    emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetail getDetailList(int index);
     /**
-     * <pre>
-     *JNDNDBNFEHG src_card_guid
-     * </pre>
-     *
-     * <code>uint32 element_type = 11;</code>
-     * @return The elementType.
+     * <code>repeated .GCGDamageDetail detail_list = 2;</code>
      */
-    int getElementType();
+    int getDetailListCount();
+    /**
+     * <code>repeated .GCGDamageDetail detail_list = 2;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetailOrBuilder> 
+        getDetailListOrBuilderList();
+    /**
+     * <code>repeated .GCGDamageDetail detail_list = 2;</code>
+     */
+    emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetailOrBuilder getDetailListOrBuilder(
+        int index);
   }
   /**
+   * <pre>
+   * Obf: BFEKNPOBAMH
+   * </pre>
+   *
    * Protobuf type {@code GCGMsgSkillResult}
    */
   public static final class GCGMsgSkillResult extends
@@ -181,63 +153,63 @@ public final class GCGMsgSkillResultOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              lastHp_ = input.readUInt32();
-              break;
-            }
-            case 24: {
-
-              resultSeq_ = input.readUInt32();
-              break;
-            }
-            case 32: {
-
-              srcCardGuid_ = input.readUInt32();
-              break;
-            }
-            case 48: {
-
-              mNOMJNEOJHD_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              skillId_ = input.readUInt32();
-              break;
-            }
-            case 64: {
-
-              hp_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
-              damage_ = input.readUInt32();
-              break;
-            }
-            case 88: {
-
-              elementType_ = input.readUInt32();
-              break;
-            }
-            case 96: {
-
-              targetCardGuid_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
-              fromResultSeq_ = input.readUInt32();
-              break;
-            }
-            case 122: {
+            case 18: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 detailList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetail>();
                 mutable_bitField0_ |= 0x00000001;
               }
               detailList_.add(
                   input.readMessage(emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetail.parser(), extensionRegistry));
+              break;
+            }
+            case 32: {
+
+              bGFONKCHPHD_ = input.readUInt32();
+              break;
+            }
+            case 48: {
+
+              skillId_ = input.readUInt32();
+              break;
+            }
+            case 56: {
+
+              nEAHEJCAPAM_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+
+              aOIGOAHIPIG_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
+              lDOEHIDLFKI_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
+              nDJABBCPLBB_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              oBKMAKCCGBB_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              dMBDKFHNGOF_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              hNLABLOMGMJ_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              damage_ = input.readUInt32();
               break;
             }
             default: {
@@ -275,55 +247,43 @@ public final class GCGMsgSkillResultOuterClass {
               emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult.class, emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult.Builder.class);
     }
 
-    public static final int RESULT_SEQ_FIELD_NUMBER = 3;
-    private int resultSeq_;
+    public static final int BGFONKCHPHD_FIELD_NUMBER = 4;
+    private int bGFONKCHPHD_;
     /**
-     * <pre>
-     *DCEIDIOOFAG last_hp
-     * </pre>
-     *
-     * <code>uint32 result_seq = 3;</code>
-     * @return The resultSeq.
+     * <code>uint32 BGFONKCHPHD = 4;</code>
+     * @return The bGFONKCHPHD.
      */
     @java.lang.Override
-    public int getResultSeq() {
-      return resultSeq_;
+    public int getBGFONKCHPHD() {
+      return bGFONKCHPHD_;
     }
 
-    public static final int LAST_HP_FIELD_NUMBER = 2;
-    private int lastHp_;
+    public static final int HNLABLOMGMJ_FIELD_NUMBER = 13;
+    private int hNLABLOMGMJ_;
     /**
-     * <pre>
-     *GKLDDNNENDO	
-     * </pre>
-     *
-     * <code>uint32 last_hp = 2;</code>
-     * @return The lastHp.
+     * <code>uint32 HNLABLOMGMJ = 13;</code>
+     * @return The hNLABLOMGMJ.
      */
     @java.lang.Override
-    public int getLastHp() {
-      return lastHp_;
+    public int getHNLABLOMGMJ() {
+      return hNLABLOMGMJ_;
     }
 
-    public static final int HP_FIELD_NUMBER = 8;
-    private int hp_;
+    public static final int OBKMAKCCGBB_FIELD_NUMBER = 11;
+    private int oBKMAKCCGBB_;
     /**
-     * <pre>
-     *OOMEGPIIIMH from_result_seq
-     * </pre>
-     *
-     * <code>uint32 hp = 8;</code>
-     * @return The hp.
+     * <code>uint32 OBKMAKCCGBB = 11;</code>
+     * @return The oBKMAKCCGBB.
      */
     @java.lang.Override
-    public int getHp() {
-      return hp_;
+    public int getOBKMAKCCGBB() {
+      return oBKMAKCCGBB_;
     }
 
-    public static final int DAMAGE_FIELD_NUMBER = 10;
+    public static final int DAMAGE_FIELD_NUMBER = 15;
     private int damage_;
     /**
-     * <code>uint32 damage = 10;</code>
+     * <code>uint32 damage = 15;</code>
      * @return The damage.
      */
     @java.lang.Override
@@ -331,65 +291,54 @@ public final class GCGMsgSkillResultOuterClass {
       return damage_;
     }
 
-    public static final int DETAIL_LIST_FIELD_NUMBER = 15;
-    private java.util.List<emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetail> detailList_;
+    public static final int NEAHEJCAPAM_FIELD_NUMBER = 7;
+    private int nEAHEJCAPAM_;
     /**
-     * <code>repeated .GCGDamageDetail detail_list = 15;</code>
+     * <code>uint32 NEAHEJCAPAM = 7;</code>
+     * @return The nEAHEJCAPAM.
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetail> getDetailListList() {
-      return detailList_;
-    }
-    /**
-     * <code>repeated .GCGDamageDetail detail_list = 15;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetailOrBuilder> 
-        getDetailListOrBuilderList() {
-      return detailList_;
-    }
-    /**
-     * <code>repeated .GCGDamageDetail detail_list = 15;</code>
-     */
-    @java.lang.Override
-    public int getDetailListCount() {
-      return detailList_.size();
-    }
-    /**
-     * <code>repeated .GCGDamageDetail detail_list = 15;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetail getDetailList(int index) {
-      return detailList_.get(index);
-    }
-    /**
-     * <code>repeated .GCGDamageDetail detail_list = 15;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetailOrBuilder getDetailListOrBuilder(
-        int index) {
-      return detailList_.get(index);
+    public int getNEAHEJCAPAM() {
+      return nEAHEJCAPAM_;
     }
 
-    public static final int FROM_RESULT_SEQ_FIELD_NUMBER = 14;
-    private int fromResultSeq_;
+    public static final int NDJABBCPLBB_FIELD_NUMBER = 10;
+    private int nDJABBCPLBB_;
     /**
-     * <pre>
-     *FMAFLBOMAFK result_seq
-     * </pre>
-     *
-     * <code>uint32 from_result_seq = 14;</code>
-     * @return The fromResultSeq.
+     * <code>uint32 NDJABBCPLBB = 10;</code>
+     * @return The nDJABBCPLBB.
      */
     @java.lang.Override
-    public int getFromResultSeq() {
-      return fromResultSeq_;
+    public int getNDJABBCPLBB() {
+      return nDJABBCPLBB_;
     }
 
-    public static final int SKILL_ID_FIELD_NUMBER = 7;
+    public static final int DMBDKFHNGOF_FIELD_NUMBER = 12;
+    private int dMBDKFHNGOF_;
+    /**
+     * <code>uint32 DMBDKFHNGOF = 12;</code>
+     * @return The dMBDKFHNGOF.
+     */
+    @java.lang.Override
+    public int getDMBDKFHNGOF() {
+      return dMBDKFHNGOF_;
+    }
+
+    public static final int LDOEHIDLFKI_FIELD_NUMBER = 9;
+    private int lDOEHIDLFKI_;
+    /**
+     * <code>uint32 LDOEHIDLFKI = 9;</code>
+     * @return The lDOEHIDLFKI.
+     */
+    @java.lang.Override
+    public int getLDOEHIDLFKI() {
+      return lDOEHIDLFKI_;
+    }
+
+    public static final int SKILL_ID_FIELD_NUMBER = 6;
     private int skillId_;
     /**
-     * <code>uint32 skill_id = 7;</code>
+     * <code>uint32 skill_id = 6;</code>
      * @return The skillId.
      */
     @java.lang.Override
@@ -397,64 +346,55 @@ public final class GCGMsgSkillResultOuterClass {
       return skillId_;
     }
 
-    public static final int MNOMJNEOJHD_FIELD_NUMBER = 6;
-    private int mNOMJNEOJHD_;
+    public static final int AOIGOAHIPIG_FIELD_NUMBER = 8;
+    private int aOIGOAHIPIG_;
     /**
-     * <pre>
-     *MNOMJNEOJHD element_type
-     * </pre>
-     *
-     * <code>uint32 MNOMJNEOJHD = 6;</code>
-     * @return The mNOMJNEOJHD.
+     * <code>uint32 AOIGOAHIPIG = 8;</code>
+     * @return The aOIGOAHIPIG.
      */
     @java.lang.Override
-    public int getMNOMJNEOJHD() {
-      return mNOMJNEOJHD_;
+    public int getAOIGOAHIPIG() {
+      return aOIGOAHIPIG_;
     }
 
-    public static final int TARGET_CARD_GUID_FIELD_NUMBER = 12;
-    private int targetCardGuid_;
+    public static final int DETAIL_LIST_FIELD_NUMBER = 2;
+    private java.util.List<emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetail> detailList_;
     /**
-     * <pre>
-     *IHNDAGJJMJK target_card_guid
-     * </pre>
-     *
-     * <code>uint32 target_card_guid = 12;</code>
-     * @return The targetCardGuid.
+     * <code>repeated .GCGDamageDetail detail_list = 2;</code>
      */
     @java.lang.Override
-    public int getTargetCardGuid() {
-      return targetCardGuid_;
+    public java.util.List<emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetail> getDetailListList() {
+      return detailList_;
     }
-
-    public static final int SRC_CARD_GUID_FIELD_NUMBER = 4;
-    private int srcCardGuid_;
     /**
-     * <pre>
-     *PPADCGGEDOO
-     * </pre>
-     *
-     * <code>uint32 src_card_guid = 4;</code>
-     * @return The srcCardGuid.
+     * <code>repeated .GCGDamageDetail detail_list = 2;</code>
      */
     @java.lang.Override
-    public int getSrcCardGuid() {
-      return srcCardGuid_;
+    public java.util.List<? extends emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetailOrBuilder> 
+        getDetailListOrBuilderList() {
+      return detailList_;
     }
-
-    public static final int ELEMENT_TYPE_FIELD_NUMBER = 11;
-    private int elementType_;
     /**
-     * <pre>
-     *JNDNDBNFEHG src_card_guid
-     * </pre>
-     *
-     * <code>uint32 element_type = 11;</code>
-     * @return The elementType.
+     * <code>repeated .GCGDamageDetail detail_list = 2;</code>
      */
     @java.lang.Override
-    public int getElementType() {
-      return elementType_;
+    public int getDetailListCount() {
+      return detailList_.size();
+    }
+    /**
+     * <code>repeated .GCGDamageDetail detail_list = 2;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetail getDetailList(int index) {
+      return detailList_.get(index);
+    }
+    /**
+     * <code>repeated .GCGDamageDetail detail_list = 2;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetailOrBuilder getDetailListOrBuilder(
+        int index) {
+      return detailList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -471,38 +411,38 @@ public final class GCGMsgSkillResultOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (lastHp_ != 0) {
-        output.writeUInt32(2, lastHp_);
+      for (int i = 0; i < detailList_.size(); i++) {
+        output.writeMessage(2, detailList_.get(i));
       }
-      if (resultSeq_ != 0) {
-        output.writeUInt32(3, resultSeq_);
-      }
-      if (srcCardGuid_ != 0) {
-        output.writeUInt32(4, srcCardGuid_);
-      }
-      if (mNOMJNEOJHD_ != 0) {
-        output.writeUInt32(6, mNOMJNEOJHD_);
+      if (bGFONKCHPHD_ != 0) {
+        output.writeUInt32(4, bGFONKCHPHD_);
       }
       if (skillId_ != 0) {
-        output.writeUInt32(7, skillId_);
+        output.writeUInt32(6, skillId_);
       }
-      if (hp_ != 0) {
-        output.writeUInt32(8, hp_);
+      if (nEAHEJCAPAM_ != 0) {
+        output.writeUInt32(7, nEAHEJCAPAM_);
+      }
+      if (aOIGOAHIPIG_ != 0) {
+        output.writeUInt32(8, aOIGOAHIPIG_);
+      }
+      if (lDOEHIDLFKI_ != 0) {
+        output.writeUInt32(9, lDOEHIDLFKI_);
+      }
+      if (nDJABBCPLBB_ != 0) {
+        output.writeUInt32(10, nDJABBCPLBB_);
+      }
+      if (oBKMAKCCGBB_ != 0) {
+        output.writeUInt32(11, oBKMAKCCGBB_);
+      }
+      if (dMBDKFHNGOF_ != 0) {
+        output.writeUInt32(12, dMBDKFHNGOF_);
+      }
+      if (hNLABLOMGMJ_ != 0) {
+        output.writeUInt32(13, hNLABLOMGMJ_);
       }
       if (damage_ != 0) {
-        output.writeUInt32(10, damage_);
-      }
-      if (elementType_ != 0) {
-        output.writeUInt32(11, elementType_);
-      }
-      if (targetCardGuid_ != 0) {
-        output.writeUInt32(12, targetCardGuid_);
-      }
-      if (fromResultSeq_ != 0) {
-        output.writeUInt32(14, fromResultSeq_);
-      }
-      for (int i = 0; i < detailList_.size(); i++) {
-        output.writeMessage(15, detailList_.get(i));
+        output.writeUInt32(15, damage_);
       }
       unknownFields.writeTo(output);
     }
@@ -513,49 +453,49 @@ public final class GCGMsgSkillResultOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (lastHp_ != 0) {
+      for (int i = 0; i < detailList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, lastHp_);
+          .computeMessageSize(2, detailList_.get(i));
       }
-      if (resultSeq_ != 0) {
+      if (bGFONKCHPHD_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, resultSeq_);
-      }
-      if (srcCardGuid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, srcCardGuid_);
-      }
-      if (mNOMJNEOJHD_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, mNOMJNEOJHD_);
+          .computeUInt32Size(4, bGFONKCHPHD_);
       }
       if (skillId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, skillId_);
+          .computeUInt32Size(6, skillId_);
       }
-      if (hp_ != 0) {
+      if (nEAHEJCAPAM_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, hp_);
+          .computeUInt32Size(7, nEAHEJCAPAM_);
+      }
+      if (aOIGOAHIPIG_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, aOIGOAHIPIG_);
+      }
+      if (lDOEHIDLFKI_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, lDOEHIDLFKI_);
+      }
+      if (nDJABBCPLBB_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, nDJABBCPLBB_);
+      }
+      if (oBKMAKCCGBB_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, oBKMAKCCGBB_);
+      }
+      if (dMBDKFHNGOF_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, dMBDKFHNGOF_);
+      }
+      if (hNLABLOMGMJ_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, hNLABLOMGMJ_);
       }
       if (damage_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, damage_);
-      }
-      if (elementType_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, elementType_);
-      }
-      if (targetCardGuid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, targetCardGuid_);
-      }
-      if (fromResultSeq_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, fromResultSeq_);
-      }
-      for (int i = 0; i < detailList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, detailList_.get(i));
+          .computeUInt32Size(15, damage_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -572,28 +512,28 @@ public final class GCGMsgSkillResultOuterClass {
       }
       emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult other = (emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult) obj;
 
-      if (getResultSeq()
-          != other.getResultSeq()) return false;
-      if (getLastHp()
-          != other.getLastHp()) return false;
-      if (getHp()
-          != other.getHp()) return false;
+      if (getBGFONKCHPHD()
+          != other.getBGFONKCHPHD()) return false;
+      if (getHNLABLOMGMJ()
+          != other.getHNLABLOMGMJ()) return false;
+      if (getOBKMAKCCGBB()
+          != other.getOBKMAKCCGBB()) return false;
       if (getDamage()
           != other.getDamage()) return false;
-      if (!getDetailListList()
-          .equals(other.getDetailListList())) return false;
-      if (getFromResultSeq()
-          != other.getFromResultSeq()) return false;
+      if (getNEAHEJCAPAM()
+          != other.getNEAHEJCAPAM()) return false;
+      if (getNDJABBCPLBB()
+          != other.getNDJABBCPLBB()) return false;
+      if (getDMBDKFHNGOF()
+          != other.getDMBDKFHNGOF()) return false;
+      if (getLDOEHIDLFKI()
+          != other.getLDOEHIDLFKI()) return false;
       if (getSkillId()
           != other.getSkillId()) return false;
-      if (getMNOMJNEOJHD()
-          != other.getMNOMJNEOJHD()) return false;
-      if (getTargetCardGuid()
-          != other.getTargetCardGuid()) return false;
-      if (getSrcCardGuid()
-          != other.getSrcCardGuid()) return false;
-      if (getElementType()
-          != other.getElementType()) return false;
+      if (getAOIGOAHIPIG()
+          != other.getAOIGOAHIPIG()) return false;
+      if (!getDetailListList()
+          .equals(other.getDetailListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -605,30 +545,30 @@ public final class GCGMsgSkillResultOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RESULT_SEQ_FIELD_NUMBER;
-      hash = (53 * hash) + getResultSeq();
-      hash = (37 * hash) + LAST_HP_FIELD_NUMBER;
-      hash = (53 * hash) + getLastHp();
-      hash = (37 * hash) + HP_FIELD_NUMBER;
-      hash = (53 * hash) + getHp();
+      hash = (37 * hash) + BGFONKCHPHD_FIELD_NUMBER;
+      hash = (53 * hash) + getBGFONKCHPHD();
+      hash = (37 * hash) + HNLABLOMGMJ_FIELD_NUMBER;
+      hash = (53 * hash) + getHNLABLOMGMJ();
+      hash = (37 * hash) + OBKMAKCCGBB_FIELD_NUMBER;
+      hash = (53 * hash) + getOBKMAKCCGBB();
       hash = (37 * hash) + DAMAGE_FIELD_NUMBER;
       hash = (53 * hash) + getDamage();
+      hash = (37 * hash) + NEAHEJCAPAM_FIELD_NUMBER;
+      hash = (53 * hash) + getNEAHEJCAPAM();
+      hash = (37 * hash) + NDJABBCPLBB_FIELD_NUMBER;
+      hash = (53 * hash) + getNDJABBCPLBB();
+      hash = (37 * hash) + DMBDKFHNGOF_FIELD_NUMBER;
+      hash = (53 * hash) + getDMBDKFHNGOF();
+      hash = (37 * hash) + LDOEHIDLFKI_FIELD_NUMBER;
+      hash = (53 * hash) + getLDOEHIDLFKI();
+      hash = (37 * hash) + SKILL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSkillId();
+      hash = (37 * hash) + AOIGOAHIPIG_FIELD_NUMBER;
+      hash = (53 * hash) + getAOIGOAHIPIG();
       if (getDetailListCount() > 0) {
         hash = (37 * hash) + DETAIL_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getDetailListList().hashCode();
       }
-      hash = (37 * hash) + FROM_RESULT_SEQ_FIELD_NUMBER;
-      hash = (53 * hash) + getFromResultSeq();
-      hash = (37 * hash) + SKILL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSkillId();
-      hash = (37 * hash) + MNOMJNEOJHD_FIELD_NUMBER;
-      hash = (53 * hash) + getMNOMJNEOJHD();
-      hash = (37 * hash) + TARGET_CARD_GUID_FIELD_NUMBER;
-      hash = (53 * hash) + getTargetCardGuid();
-      hash = (37 * hash) + SRC_CARD_GUID_FIELD_NUMBER;
-      hash = (53 * hash) + getSrcCardGuid();
-      hash = (37 * hash) + ELEMENT_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getElementType();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -725,6 +665,10 @@ public final class GCGMsgSkillResultOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: BFEKNPOBAMH
+     * </pre>
+     *
      * Protobuf type {@code GCGMsgSkillResult}
      */
     public static final class Builder extends
@@ -763,13 +707,25 @@ public final class GCGMsgSkillResultOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        resultSeq_ = 0;
+        bGFONKCHPHD_ = 0;
 
-        lastHp_ = 0;
+        hNLABLOMGMJ_ = 0;
 
-        hp_ = 0;
+        oBKMAKCCGBB_ = 0;
 
         damage_ = 0;
+
+        nEAHEJCAPAM_ = 0;
+
+        nDJABBCPLBB_ = 0;
+
+        dMBDKFHNGOF_ = 0;
+
+        lDOEHIDLFKI_ = 0;
+
+        skillId_ = 0;
+
+        aOIGOAHIPIG_ = 0;
 
         if (detailListBuilder_ == null) {
           detailList_ = java.util.Collections.emptyList();
@@ -777,18 +733,6 @@ public final class GCGMsgSkillResultOuterClass {
         } else {
           detailListBuilder_.clear();
         }
-        fromResultSeq_ = 0;
-
-        skillId_ = 0;
-
-        mNOMJNEOJHD_ = 0;
-
-        targetCardGuid_ = 0;
-
-        srcCardGuid_ = 0;
-
-        elementType_ = 0;
-
         return this;
       }
 
@@ -816,10 +760,16 @@ public final class GCGMsgSkillResultOuterClass {
       public emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult buildPartial() {
         emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult result = new emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult(this);
         int from_bitField0_ = bitField0_;
-        result.resultSeq_ = resultSeq_;
-        result.lastHp_ = lastHp_;
-        result.hp_ = hp_;
+        result.bGFONKCHPHD_ = bGFONKCHPHD_;
+        result.hNLABLOMGMJ_ = hNLABLOMGMJ_;
+        result.oBKMAKCCGBB_ = oBKMAKCCGBB_;
         result.damage_ = damage_;
+        result.nEAHEJCAPAM_ = nEAHEJCAPAM_;
+        result.nDJABBCPLBB_ = nDJABBCPLBB_;
+        result.dMBDKFHNGOF_ = dMBDKFHNGOF_;
+        result.lDOEHIDLFKI_ = lDOEHIDLFKI_;
+        result.skillId_ = skillId_;
+        result.aOIGOAHIPIG_ = aOIGOAHIPIG_;
         if (detailListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             detailList_ = java.util.Collections.unmodifiableList(detailList_);
@@ -829,12 +779,6 @@ public final class GCGMsgSkillResultOuterClass {
         } else {
           result.detailList_ = detailListBuilder_.build();
         }
-        result.fromResultSeq_ = fromResultSeq_;
-        result.skillId_ = skillId_;
-        result.mNOMJNEOJHD_ = mNOMJNEOJHD_;
-        result.targetCardGuid_ = targetCardGuid_;
-        result.srcCardGuid_ = srcCardGuid_;
-        result.elementType_ = elementType_;
         onBuilt();
         return result;
       }
@@ -883,17 +827,35 @@ public final class GCGMsgSkillResultOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult other) {
         if (other == emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult.getDefaultInstance()) return this;
-        if (other.getResultSeq() != 0) {
-          setResultSeq(other.getResultSeq());
+        if (other.getBGFONKCHPHD() != 0) {
+          setBGFONKCHPHD(other.getBGFONKCHPHD());
         }
-        if (other.getLastHp() != 0) {
-          setLastHp(other.getLastHp());
+        if (other.getHNLABLOMGMJ() != 0) {
+          setHNLABLOMGMJ(other.getHNLABLOMGMJ());
         }
-        if (other.getHp() != 0) {
-          setHp(other.getHp());
+        if (other.getOBKMAKCCGBB() != 0) {
+          setOBKMAKCCGBB(other.getOBKMAKCCGBB());
         }
         if (other.getDamage() != 0) {
           setDamage(other.getDamage());
+        }
+        if (other.getNEAHEJCAPAM() != 0) {
+          setNEAHEJCAPAM(other.getNEAHEJCAPAM());
+        }
+        if (other.getNDJABBCPLBB() != 0) {
+          setNDJABBCPLBB(other.getNDJABBCPLBB());
+        }
+        if (other.getDMBDKFHNGOF() != 0) {
+          setDMBDKFHNGOF(other.getDMBDKFHNGOF());
+        }
+        if (other.getLDOEHIDLFKI() != 0) {
+          setLDOEHIDLFKI(other.getLDOEHIDLFKI());
+        }
+        if (other.getSkillId() != 0) {
+          setSkillId(other.getSkillId());
+        }
+        if (other.getAOIGOAHIPIG() != 0) {
+          setAOIGOAHIPIG(other.getAOIGOAHIPIG());
         }
         if (detailListBuilder_ == null) {
           if (!other.detailList_.isEmpty()) {
@@ -920,24 +882,6 @@ public final class GCGMsgSkillResultOuterClass {
               detailListBuilder_.addAllMessages(other.detailList_);
             }
           }
-        }
-        if (other.getFromResultSeq() != 0) {
-          setFromResultSeq(other.getFromResultSeq());
-        }
-        if (other.getSkillId() != 0) {
-          setSkillId(other.getSkillId());
-        }
-        if (other.getMNOMJNEOJHD() != 0) {
-          setMNOMJNEOJHD(other.getMNOMJNEOJHD());
-        }
-        if (other.getTargetCardGuid() != 0) {
-          setTargetCardGuid(other.getTargetCardGuid());
-        }
-        if (other.getSrcCardGuid() != 0) {
-          setSrcCardGuid(other.getSrcCardGuid());
-        }
-        if (other.getElementType() != 0) {
-          setElementType(other.getElementType());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -969,138 +913,102 @@ public final class GCGMsgSkillResultOuterClass {
       }
       private int bitField0_;
 
-      private int resultSeq_ ;
+      private int bGFONKCHPHD_ ;
       /**
-       * <pre>
-       *DCEIDIOOFAG last_hp
-       * </pre>
-       *
-       * <code>uint32 result_seq = 3;</code>
-       * @return The resultSeq.
+       * <code>uint32 BGFONKCHPHD = 4;</code>
+       * @return The bGFONKCHPHD.
        */
       @java.lang.Override
-      public int getResultSeq() {
-        return resultSeq_;
+      public int getBGFONKCHPHD() {
+        return bGFONKCHPHD_;
       }
       /**
-       * <pre>
-       *DCEIDIOOFAG last_hp
-       * </pre>
-       *
-       * <code>uint32 result_seq = 3;</code>
-       * @param value The resultSeq to set.
+       * <code>uint32 BGFONKCHPHD = 4;</code>
+       * @param value The bGFONKCHPHD to set.
        * @return This builder for chaining.
        */
-      public Builder setResultSeq(int value) {
+      public Builder setBGFONKCHPHD(int value) {
         
-        resultSeq_ = value;
+        bGFONKCHPHD_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       *DCEIDIOOFAG last_hp
-       * </pre>
-       *
-       * <code>uint32 result_seq = 3;</code>
+       * <code>uint32 BGFONKCHPHD = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearResultSeq() {
+      public Builder clearBGFONKCHPHD() {
         
-        resultSeq_ = 0;
+        bGFONKCHPHD_ = 0;
         onChanged();
         return this;
       }
 
-      private int lastHp_ ;
+      private int hNLABLOMGMJ_ ;
       /**
-       * <pre>
-       *GKLDDNNENDO	
-       * </pre>
-       *
-       * <code>uint32 last_hp = 2;</code>
-       * @return The lastHp.
+       * <code>uint32 HNLABLOMGMJ = 13;</code>
+       * @return The hNLABLOMGMJ.
        */
       @java.lang.Override
-      public int getLastHp() {
-        return lastHp_;
+      public int getHNLABLOMGMJ() {
+        return hNLABLOMGMJ_;
       }
       /**
-       * <pre>
-       *GKLDDNNENDO	
-       * </pre>
-       *
-       * <code>uint32 last_hp = 2;</code>
-       * @param value The lastHp to set.
+       * <code>uint32 HNLABLOMGMJ = 13;</code>
+       * @param value The hNLABLOMGMJ to set.
        * @return This builder for chaining.
        */
-      public Builder setLastHp(int value) {
+      public Builder setHNLABLOMGMJ(int value) {
         
-        lastHp_ = value;
+        hNLABLOMGMJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       *GKLDDNNENDO	
-       * </pre>
-       *
-       * <code>uint32 last_hp = 2;</code>
+       * <code>uint32 HNLABLOMGMJ = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLastHp() {
+      public Builder clearHNLABLOMGMJ() {
         
-        lastHp_ = 0;
+        hNLABLOMGMJ_ = 0;
         onChanged();
         return this;
       }
 
-      private int hp_ ;
+      private int oBKMAKCCGBB_ ;
       /**
-       * <pre>
-       *OOMEGPIIIMH from_result_seq
-       * </pre>
-       *
-       * <code>uint32 hp = 8;</code>
-       * @return The hp.
+       * <code>uint32 OBKMAKCCGBB = 11;</code>
+       * @return The oBKMAKCCGBB.
        */
       @java.lang.Override
-      public int getHp() {
-        return hp_;
+      public int getOBKMAKCCGBB() {
+        return oBKMAKCCGBB_;
       }
       /**
-       * <pre>
-       *OOMEGPIIIMH from_result_seq
-       * </pre>
-       *
-       * <code>uint32 hp = 8;</code>
-       * @param value The hp to set.
+       * <code>uint32 OBKMAKCCGBB = 11;</code>
+       * @param value The oBKMAKCCGBB to set.
        * @return This builder for chaining.
        */
-      public Builder setHp(int value) {
+      public Builder setOBKMAKCCGBB(int value) {
         
-        hp_ = value;
+        oBKMAKCCGBB_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       *OOMEGPIIIMH from_result_seq
-       * </pre>
-       *
-       * <code>uint32 hp = 8;</code>
+       * <code>uint32 OBKMAKCCGBB = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearHp() {
+      public Builder clearOBKMAKCCGBB() {
         
-        hp_ = 0;
+        oBKMAKCCGBB_ = 0;
         onChanged();
         return this;
       }
 
       private int damage_ ;
       /**
-       * <code>uint32 damage = 10;</code>
+       * <code>uint32 damage = 15;</code>
        * @return The damage.
        */
       @java.lang.Override
@@ -1108,7 +1016,7 @@ public final class GCGMsgSkillResultOuterClass {
         return damage_;
       }
       /**
-       * <code>uint32 damage = 10;</code>
+       * <code>uint32 damage = 15;</code>
        * @param value The damage to set.
        * @return This builder for chaining.
        */
@@ -1119,12 +1027,198 @@ public final class GCGMsgSkillResultOuterClass {
         return this;
       }
       /**
-       * <code>uint32 damage = 10;</code>
+       * <code>uint32 damage = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearDamage() {
         
         damage_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int nEAHEJCAPAM_ ;
+      /**
+       * <code>uint32 NEAHEJCAPAM = 7;</code>
+       * @return The nEAHEJCAPAM.
+       */
+      @java.lang.Override
+      public int getNEAHEJCAPAM() {
+        return nEAHEJCAPAM_;
+      }
+      /**
+       * <code>uint32 NEAHEJCAPAM = 7;</code>
+       * @param value The nEAHEJCAPAM to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNEAHEJCAPAM(int value) {
+        
+        nEAHEJCAPAM_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 NEAHEJCAPAM = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNEAHEJCAPAM() {
+        
+        nEAHEJCAPAM_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int nDJABBCPLBB_ ;
+      /**
+       * <code>uint32 NDJABBCPLBB = 10;</code>
+       * @return The nDJABBCPLBB.
+       */
+      @java.lang.Override
+      public int getNDJABBCPLBB() {
+        return nDJABBCPLBB_;
+      }
+      /**
+       * <code>uint32 NDJABBCPLBB = 10;</code>
+       * @param value The nDJABBCPLBB to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNDJABBCPLBB(int value) {
+        
+        nDJABBCPLBB_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 NDJABBCPLBB = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNDJABBCPLBB() {
+        
+        nDJABBCPLBB_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int dMBDKFHNGOF_ ;
+      /**
+       * <code>uint32 DMBDKFHNGOF = 12;</code>
+       * @return The dMBDKFHNGOF.
+       */
+      @java.lang.Override
+      public int getDMBDKFHNGOF() {
+        return dMBDKFHNGOF_;
+      }
+      /**
+       * <code>uint32 DMBDKFHNGOF = 12;</code>
+       * @param value The dMBDKFHNGOF to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDMBDKFHNGOF(int value) {
+        
+        dMBDKFHNGOF_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 DMBDKFHNGOF = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDMBDKFHNGOF() {
+        
+        dMBDKFHNGOF_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int lDOEHIDLFKI_ ;
+      /**
+       * <code>uint32 LDOEHIDLFKI = 9;</code>
+       * @return The lDOEHIDLFKI.
+       */
+      @java.lang.Override
+      public int getLDOEHIDLFKI() {
+        return lDOEHIDLFKI_;
+      }
+      /**
+       * <code>uint32 LDOEHIDLFKI = 9;</code>
+       * @param value The lDOEHIDLFKI to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLDOEHIDLFKI(int value) {
+        
+        lDOEHIDLFKI_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 LDOEHIDLFKI = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLDOEHIDLFKI() {
+        
+        lDOEHIDLFKI_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int skillId_ ;
+      /**
+       * <code>uint32 skill_id = 6;</code>
+       * @return The skillId.
+       */
+      @java.lang.Override
+      public int getSkillId() {
+        return skillId_;
+      }
+      /**
+       * <code>uint32 skill_id = 6;</code>
+       * @param value The skillId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSkillId(int value) {
+        
+        skillId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 skill_id = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSkillId() {
+        
+        skillId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int aOIGOAHIPIG_ ;
+      /**
+       * <code>uint32 AOIGOAHIPIG = 8;</code>
+       * @return The aOIGOAHIPIG.
+       */
+      @java.lang.Override
+      public int getAOIGOAHIPIG() {
+        return aOIGOAHIPIG_;
+      }
+      /**
+       * <code>uint32 AOIGOAHIPIG = 8;</code>
+       * @param value The aOIGOAHIPIG to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAOIGOAHIPIG(int value) {
+        
+        aOIGOAHIPIG_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 AOIGOAHIPIG = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAOIGOAHIPIG() {
+        
+        aOIGOAHIPIG_ = 0;
         onChanged();
         return this;
       }
@@ -1142,7 +1236,7 @@ public final class GCGMsgSkillResultOuterClass {
           emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetail, emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetail.Builder, emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetailOrBuilder> detailListBuilder_;
 
       /**
-       * <code>repeated .GCGDamageDetail detail_list = 15;</code>
+       * <code>repeated .GCGDamageDetail detail_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetail> getDetailListList() {
         if (detailListBuilder_ == null) {
@@ -1152,7 +1246,7 @@ public final class GCGMsgSkillResultOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGDamageDetail detail_list = 15;</code>
+       * <code>repeated .GCGDamageDetail detail_list = 2;</code>
        */
       public int getDetailListCount() {
         if (detailListBuilder_ == null) {
@@ -1162,7 +1256,7 @@ public final class GCGMsgSkillResultOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGDamageDetail detail_list = 15;</code>
+       * <code>repeated .GCGDamageDetail detail_list = 2;</code>
        */
       public emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetail getDetailList(int index) {
         if (detailListBuilder_ == null) {
@@ -1172,7 +1266,7 @@ public final class GCGMsgSkillResultOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGDamageDetail detail_list = 15;</code>
+       * <code>repeated .GCGDamageDetail detail_list = 2;</code>
        */
       public Builder setDetailList(
           int index, emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetail value) {
@@ -1189,7 +1283,7 @@ public final class GCGMsgSkillResultOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGDamageDetail detail_list = 15;</code>
+       * <code>repeated .GCGDamageDetail detail_list = 2;</code>
        */
       public Builder setDetailList(
           int index, emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetail.Builder builderForValue) {
@@ -1203,7 +1297,7 @@ public final class GCGMsgSkillResultOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGDamageDetail detail_list = 15;</code>
+       * <code>repeated .GCGDamageDetail detail_list = 2;</code>
        */
       public Builder addDetailList(emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetail value) {
         if (detailListBuilder_ == null) {
@@ -1219,7 +1313,7 @@ public final class GCGMsgSkillResultOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGDamageDetail detail_list = 15;</code>
+       * <code>repeated .GCGDamageDetail detail_list = 2;</code>
        */
       public Builder addDetailList(
           int index, emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetail value) {
@@ -1236,7 +1330,7 @@ public final class GCGMsgSkillResultOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGDamageDetail detail_list = 15;</code>
+       * <code>repeated .GCGDamageDetail detail_list = 2;</code>
        */
       public Builder addDetailList(
           emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetail.Builder builderForValue) {
@@ -1250,7 +1344,7 @@ public final class GCGMsgSkillResultOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGDamageDetail detail_list = 15;</code>
+       * <code>repeated .GCGDamageDetail detail_list = 2;</code>
        */
       public Builder addDetailList(
           int index, emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetail.Builder builderForValue) {
@@ -1264,7 +1358,7 @@ public final class GCGMsgSkillResultOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGDamageDetail detail_list = 15;</code>
+       * <code>repeated .GCGDamageDetail detail_list = 2;</code>
        */
       public Builder addAllDetailList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetail> values) {
@@ -1279,7 +1373,7 @@ public final class GCGMsgSkillResultOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGDamageDetail detail_list = 15;</code>
+       * <code>repeated .GCGDamageDetail detail_list = 2;</code>
        */
       public Builder clearDetailList() {
         if (detailListBuilder_ == null) {
@@ -1292,7 +1386,7 @@ public final class GCGMsgSkillResultOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGDamageDetail detail_list = 15;</code>
+       * <code>repeated .GCGDamageDetail detail_list = 2;</code>
        */
       public Builder removeDetailList(int index) {
         if (detailListBuilder_ == null) {
@@ -1305,14 +1399,14 @@ public final class GCGMsgSkillResultOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GCGDamageDetail detail_list = 15;</code>
+       * <code>repeated .GCGDamageDetail detail_list = 2;</code>
        */
       public emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetail.Builder getDetailListBuilder(
           int index) {
         return getDetailListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .GCGDamageDetail detail_list = 15;</code>
+       * <code>repeated .GCGDamageDetail detail_list = 2;</code>
        */
       public emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetailOrBuilder getDetailListOrBuilder(
           int index) {
@@ -1322,7 +1416,7 @@ public final class GCGMsgSkillResultOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGDamageDetail detail_list = 15;</code>
+       * <code>repeated .GCGDamageDetail detail_list = 2;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetailOrBuilder> 
            getDetailListOrBuilderList() {
@@ -1333,14 +1427,14 @@ public final class GCGMsgSkillResultOuterClass {
         }
       }
       /**
-       * <code>repeated .GCGDamageDetail detail_list = 15;</code>
+       * <code>repeated .GCGDamageDetail detail_list = 2;</code>
        */
       public emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetail.Builder addDetailListBuilder() {
         return getDetailListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetail.getDefaultInstance());
       }
       /**
-       * <code>repeated .GCGDamageDetail detail_list = 15;</code>
+       * <code>repeated .GCGDamageDetail detail_list = 2;</code>
        */
       public emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetail.Builder addDetailListBuilder(
           int index) {
@@ -1348,7 +1442,7 @@ public final class GCGMsgSkillResultOuterClass {
             index, emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetail.getDefaultInstance());
       }
       /**
-       * <code>repeated .GCGDamageDetail detail_list = 15;</code>
+       * <code>repeated .GCGDamageDetail detail_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GCGDamageDetailOuterClass.GCGDamageDetail.Builder> 
            getDetailListBuilderList() {
@@ -1367,252 +1461,6 @@ public final class GCGMsgSkillResultOuterClass {
           detailList_ = null;
         }
         return detailListBuilder_;
-      }
-
-      private int fromResultSeq_ ;
-      /**
-       * <pre>
-       *FMAFLBOMAFK result_seq
-       * </pre>
-       *
-       * <code>uint32 from_result_seq = 14;</code>
-       * @return The fromResultSeq.
-       */
-      @java.lang.Override
-      public int getFromResultSeq() {
-        return fromResultSeq_;
-      }
-      /**
-       * <pre>
-       *FMAFLBOMAFK result_seq
-       * </pre>
-       *
-       * <code>uint32 from_result_seq = 14;</code>
-       * @param value The fromResultSeq to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFromResultSeq(int value) {
-        
-        fromResultSeq_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *FMAFLBOMAFK result_seq
-       * </pre>
-       *
-       * <code>uint32 from_result_seq = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFromResultSeq() {
-        
-        fromResultSeq_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int skillId_ ;
-      /**
-       * <code>uint32 skill_id = 7;</code>
-       * @return The skillId.
-       */
-      @java.lang.Override
-      public int getSkillId() {
-        return skillId_;
-      }
-      /**
-       * <code>uint32 skill_id = 7;</code>
-       * @param value The skillId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSkillId(int value) {
-        
-        skillId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 skill_id = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSkillId() {
-        
-        skillId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int mNOMJNEOJHD_ ;
-      /**
-       * <pre>
-       *MNOMJNEOJHD element_type
-       * </pre>
-       *
-       * <code>uint32 MNOMJNEOJHD = 6;</code>
-       * @return The mNOMJNEOJHD.
-       */
-      @java.lang.Override
-      public int getMNOMJNEOJHD() {
-        return mNOMJNEOJHD_;
-      }
-      /**
-       * <pre>
-       *MNOMJNEOJHD element_type
-       * </pre>
-       *
-       * <code>uint32 MNOMJNEOJHD = 6;</code>
-       * @param value The mNOMJNEOJHD to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMNOMJNEOJHD(int value) {
-        
-        mNOMJNEOJHD_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *MNOMJNEOJHD element_type
-       * </pre>
-       *
-       * <code>uint32 MNOMJNEOJHD = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMNOMJNEOJHD() {
-        
-        mNOMJNEOJHD_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int targetCardGuid_ ;
-      /**
-       * <pre>
-       *IHNDAGJJMJK target_card_guid
-       * </pre>
-       *
-       * <code>uint32 target_card_guid = 12;</code>
-       * @return The targetCardGuid.
-       */
-      @java.lang.Override
-      public int getTargetCardGuid() {
-        return targetCardGuid_;
-      }
-      /**
-       * <pre>
-       *IHNDAGJJMJK target_card_guid
-       * </pre>
-       *
-       * <code>uint32 target_card_guid = 12;</code>
-       * @param value The targetCardGuid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTargetCardGuid(int value) {
-        
-        targetCardGuid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *IHNDAGJJMJK target_card_guid
-       * </pre>
-       *
-       * <code>uint32 target_card_guid = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTargetCardGuid() {
-        
-        targetCardGuid_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int srcCardGuid_ ;
-      /**
-       * <pre>
-       *PPADCGGEDOO
-       * </pre>
-       *
-       * <code>uint32 src_card_guid = 4;</code>
-       * @return The srcCardGuid.
-       */
-      @java.lang.Override
-      public int getSrcCardGuid() {
-        return srcCardGuid_;
-      }
-      /**
-       * <pre>
-       *PPADCGGEDOO
-       * </pre>
-       *
-       * <code>uint32 src_card_guid = 4;</code>
-       * @param value The srcCardGuid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSrcCardGuid(int value) {
-        
-        srcCardGuid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *PPADCGGEDOO
-       * </pre>
-       *
-       * <code>uint32 src_card_guid = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSrcCardGuid() {
-        
-        srcCardGuid_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int elementType_ ;
-      /**
-       * <pre>
-       *JNDNDBNFEHG src_card_guid
-       * </pre>
-       *
-       * <code>uint32 element_type = 11;</code>
-       * @return The elementType.
-       */
-      @java.lang.Override
-      public int getElementType() {
-        return elementType_;
-      }
-      /**
-       * <pre>
-       *JNDNDBNFEHG src_card_guid
-       * </pre>
-       *
-       * <code>uint32 element_type = 11;</code>
-       * @param value The elementType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setElementType(int value) {
-        
-        elementType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *JNDNDBNFEHG src_card_guid
-       * </pre>
-       *
-       * <code>uint32 element_type = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearElementType() {
-        
-        elementType_ = 0;
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1682,14 +1530,14 @@ public final class GCGMsgSkillResultOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027GCGMsgSkillResult.proto\032\025GCGDamageDeta" +
-      "il.proto\"\202\002\n\021GCGMsgSkillResult\022\022\n\nresult" +
-      "_seq\030\003 \001(\r\022\017\n\007last_hp\030\002 \001(\r\022\n\n\002hp\030\010 \001(\r\022" +
-      "\016\n\006damage\030\n \001(\r\022%\n\013detail_list\030\017 \003(\0132\020.G" +
-      "CGDamageDetail\022\027\n\017from_result_seq\030\016 \001(\r\022" +
-      "\020\n\010skill_id\030\007 \001(\r\022\023\n\013MNOMJNEOJHD\030\006 \001(\r\022\030" +
-      "\n\020target_card_guid\030\014 \001(\r\022\025\n\rsrc_card_gui" +
-      "d\030\004 \001(\r\022\024\n\014element_type\030\013 \001(\rB\033\n\031emu.gra" +
-      "sscutter.net.protob\006proto3"
+      "il.proto\"\204\002\n\021GCGMsgSkillResult\022\023\n\013BGFONK" +
+      "CHPHD\030\004 \001(\r\022\023\n\013HNLABLOMGMJ\030\r \001(\r\022\023\n\013OBKM" +
+      "AKCCGBB\030\013 \001(\r\022\016\n\006damage\030\017 \001(\r\022\023\n\013NEAHEJC" +
+      "APAM\030\007 \001(\r\022\023\n\013NDJABBCPLBB\030\n \001(\r\022\023\n\013DMBDK" +
+      "FHNGOF\030\014 \001(\r\022\023\n\013LDOEHIDLFKI\030\t \001(\r\022\020\n\010ski" +
+      "ll_id\030\006 \001(\r\022\023\n\013AOIGOAHIPIG\030\010 \001(\r\022%\n\013deta" +
+      "il_list\030\002 \003(\0132\020.GCGDamageDetailB\033\n\031emu.g" +
+      "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1701,7 +1549,7 @@ public final class GCGMsgSkillResultOuterClass {
     internal_static_GCGMsgSkillResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGMsgSkillResult_descriptor,
-        new java.lang.String[] { "ResultSeq", "LastHp", "Hp", "Damage", "DetailList", "FromResultSeq", "SkillId", "MNOMJNEOJHD", "TargetCardGuid", "SrcCardGuid", "ElementType", });
+        new java.lang.String[] { "BGFONKCHPHD", "HNLABLOMGMJ", "OBKMAKCCGBB", "Damage", "NEAHEJCAPAM", "NDJABBCPLBB", "DMBDKFHNGOF", "LDOEHIDLFKI", "SkillId", "AOIGOAHIPIG", "DetailList", });
     emu.grasscutter.net.proto.GCGDamageDetailOuterClass.getDescriptor();
   }
 

@@ -19,20 +19,20 @@ public final class GCGMsgUseSkillEndOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>uint32 card_guid = 3;</code>
+     * @return The cardGuid.
+     */
+    int getCardGuid();
+
+    /**
      * <code>uint32 skill_id = 5;</code>
      * @return The skillId.
      */
     int getSkillId();
-
-    /**
-     * <code>uint32 card_guid = 8;</code>
-     * @return The cardGuid.
-     */
-    int getCardGuid();
   }
   /**
    * <pre>
-   * Name: HLNPOIKFBAJ
+   * Obf: OBFOLLGDLOI
    * </pre>
    *
    * Protobuf type {@code GCGMsgUseSkillEnd}
@@ -79,14 +79,14 @@ public final class GCGMsgUseSkillEndOuterClass {
             case 0:
               done = true;
               break;
+            case 24: {
+
+              cardGuid_ = input.readUInt32();
+              break;
+            }
             case 40: {
 
               skillId_ = input.readUInt32();
-              break;
-            }
-            case 64: {
-
-              cardGuid_ = input.readUInt32();
               break;
             }
             default: {
@@ -121,6 +121,17 @@ public final class GCGMsgUseSkillEndOuterClass {
               emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd.class, emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd.Builder.class);
     }
 
+    public static final int CARD_GUID_FIELD_NUMBER = 3;
+    private int cardGuid_;
+    /**
+     * <code>uint32 card_guid = 3;</code>
+     * @return The cardGuid.
+     */
+    @java.lang.Override
+    public int getCardGuid() {
+      return cardGuid_;
+    }
+
     public static final int SKILL_ID_FIELD_NUMBER = 5;
     private int skillId_;
     /**
@@ -130,17 +141,6 @@ public final class GCGMsgUseSkillEndOuterClass {
     @java.lang.Override
     public int getSkillId() {
       return skillId_;
-    }
-
-    public static final int CARD_GUID_FIELD_NUMBER = 8;
-    private int cardGuid_;
-    /**
-     * <code>uint32 card_guid = 8;</code>
-     * @return The cardGuid.
-     */
-    @java.lang.Override
-    public int getCardGuid() {
-      return cardGuid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -157,11 +157,11 @@ public final class GCGMsgUseSkillEndOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (cardGuid_ != 0) {
+        output.writeUInt32(3, cardGuid_);
+      }
       if (skillId_ != 0) {
         output.writeUInt32(5, skillId_);
-      }
-      if (cardGuid_ != 0) {
-        output.writeUInt32(8, cardGuid_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +172,13 @@ public final class GCGMsgUseSkillEndOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (cardGuid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, cardGuid_);
+      }
       if (skillId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(5, skillId_);
-      }
-      if (cardGuid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, cardGuid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -195,10 +195,10 @@ public final class GCGMsgUseSkillEndOuterClass {
       }
       emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd other = (emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd) obj;
 
-      if (getSkillId()
-          != other.getSkillId()) return false;
       if (getCardGuid()
           != other.getCardGuid()) return false;
+      if (getSkillId()
+          != other.getSkillId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -210,10 +210,10 @@ public final class GCGMsgUseSkillEndOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SKILL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSkillId();
       hash = (37 * hash) + CARD_GUID_FIELD_NUMBER;
       hash = (53 * hash) + getCardGuid();
+      hash = (37 * hash) + SKILL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSkillId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -311,7 +311,7 @@ public final class GCGMsgUseSkillEndOuterClass {
     }
     /**
      * <pre>
-     * Name: HLNPOIKFBAJ
+     * Obf: OBFOLLGDLOI
      * </pre>
      *
      * Protobuf type {@code GCGMsgUseSkillEnd}
@@ -351,9 +351,9 @@ public final class GCGMsgUseSkillEndOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        skillId_ = 0;
-
         cardGuid_ = 0;
+
+        skillId_ = 0;
 
         return this;
       }
@@ -381,8 +381,8 @@ public final class GCGMsgUseSkillEndOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd buildPartial() {
         emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd result = new emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd(this);
-        result.skillId_ = skillId_;
         result.cardGuid_ = cardGuid_;
+        result.skillId_ = skillId_;
         onBuilt();
         return result;
       }
@@ -431,11 +431,11 @@ public final class GCGMsgUseSkillEndOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd other) {
         if (other == emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd.getDefaultInstance()) return this;
-        if (other.getSkillId() != 0) {
-          setSkillId(other.getSkillId());
-        }
         if (other.getCardGuid() != 0) {
           setCardGuid(other.getCardGuid());
+        }
+        if (other.getSkillId() != 0) {
+          setSkillId(other.getSkillId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -466,6 +466,37 @@ public final class GCGMsgUseSkillEndOuterClass {
         return this;
       }
 
+      private int cardGuid_ ;
+      /**
+       * <code>uint32 card_guid = 3;</code>
+       * @return The cardGuid.
+       */
+      @java.lang.Override
+      public int getCardGuid() {
+        return cardGuid_;
+      }
+      /**
+       * <code>uint32 card_guid = 3;</code>
+       * @param value The cardGuid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCardGuid(int value) {
+        
+        cardGuid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 card_guid = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCardGuid() {
+        
+        cardGuid_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int skillId_ ;
       /**
        * <code>uint32 skill_id = 5;</code>
@@ -493,37 +524,6 @@ public final class GCGMsgUseSkillEndOuterClass {
       public Builder clearSkillId() {
         
         skillId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int cardGuid_ ;
-      /**
-       * <code>uint32 card_guid = 8;</code>
-       * @return The cardGuid.
-       */
-      @java.lang.Override
-      public int getCardGuid() {
-        return cardGuid_;
-      }
-      /**
-       * <code>uint32 card_guid = 8;</code>
-       * @param value The cardGuid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCardGuid(int value) {
-        
-        cardGuid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 card_guid = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCardGuid() {
-        
-        cardGuid_ = 0;
         onChanged();
         return this;
       }
@@ -595,7 +595,7 @@ public final class GCGMsgUseSkillEndOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027GCGMsgUseSkillEnd.proto\"8\n\021GCGMsgUseSk" +
-      "illEnd\022\020\n\010skill_id\030\005 \001(\r\022\021\n\tcard_guid\030\010 " +
+      "illEnd\022\021\n\tcard_guid\030\003 \001(\r\022\020\n\010skill_id\030\005 " +
       "\001(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -607,7 +607,7 @@ public final class GCGMsgUseSkillEndOuterClass {
     internal_static_GCGMsgUseSkillEnd_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGMsgUseSkillEnd_descriptor,
-        new java.lang.String[] { "SkillId", "CardGuid", });
+        new java.lang.String[] { "CardGuid", "SkillId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,57 +19,57 @@ public final class FlightActivitySettleNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 ECGNDJEFALL = 7;</code>
-     * @return The eCGNDJEFALL.
+     * <code>uint32 total_num = 5;</code>
+     * @return The totalNum.
      */
-    int getECGNDJEFALL();
+    int getTotalNum();
 
     /**
-     * <code>uint32 DOJCKDMCLJE = 14;</code>
-     * @return The dOJCKDMCLJE.
+     * <code>uint32 group_id = 4;</code>
+     * @return The groupId.
      */
-    int getDOJCKDMCLJE();
+    int getGroupId();
 
     /**
-     * <code>uint32 score = 5;</code>
-     * @return The score.
-     */
-    int getScore();
-
-    /**
-     * <code>bool is_new_record = 15;</code>
+     * <code>bool is_new_record = 2;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
 
     /**
-     * <code>uint32 group_id = 3;</code>
-     * @return The groupId.
+     * <code>uint32 DBIHJAJCNBC = 6;</code>
+     * @return The dBIHJAJCNBC.
      */
-    int getGroupId();
+    int getDBIHJAJCNBC();
+
+    /**
+     * <code>uint32 PCEABJGNLBB = 3;</code>
+     * @return The pCEABJGNLBB.
+     */
+    int getPCEABJGNLBB();
+
+    /**
+     * <code>bool is_success = 12;</code>
+     * @return The isSuccess.
+     */
+    boolean getIsSuccess();
+
+    /**
+     * <code>uint32 score = 7;</code>
+     * @return The score.
+     */
+    int getScore();
 
     /**
      * <code>uint32 left_time = 9;</code>
      * @return The leftTime.
      */
     int getLeftTime();
-
-    /**
-     * <code>bool is_success = 4;</code>
-     * @return The isSuccess.
-     */
-    boolean getIsSuccess();
-
-    /**
-     * <code>uint32 NJENGLLHPJD = 10;</code>
-     * @return The nJENGLLHPJD.
-     */
-    int getNJENGLLHPJD();
   }
   /**
    * <pre>
-   * Name: MKOCGKJGDEN
-   * CmdId: 2115
+   * CmdId: 2002
+   * Obf: DHONHJMPNPH
    * </pre>
    *
    * Protobuf type {@code FlightActivitySettleNotify}
@@ -116,24 +116,34 @@ public final class FlightActivitySettleNotifyOuterClass {
             case 0:
               done = true;
               break;
+            case 16: {
+
+              isNewRecord_ = input.readBool();
+              break;
+            }
             case 24: {
 
-              groupId_ = input.readUInt32();
+              pCEABJGNLBB_ = input.readUInt32();
               break;
             }
             case 32: {
 
-              isSuccess_ = input.readBool();
+              groupId_ = input.readUInt32();
               break;
             }
             case 40: {
 
-              score_ = input.readUInt32();
+              totalNum_ = input.readUInt32();
+              break;
+            }
+            case 48: {
+
+              dBIHJAJCNBC_ = input.readUInt32();
               break;
             }
             case 56: {
 
-              eCGNDJEFALL_ = input.readUInt32();
+              score_ = input.readUInt32();
               break;
             }
             case 72: {
@@ -141,19 +151,9 @@ public final class FlightActivitySettleNotifyOuterClass {
               leftTime_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 96: {
 
-              nJENGLLHPJD_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
-              dOJCKDMCLJE_ = input.readUInt32();
-              break;
-            }
-            case 120: {
-
-              isNewRecord_ = input.readBool();
+              isSuccess_ = input.readBool();
               break;
             }
             default: {
@@ -188,43 +188,32 @@ public final class FlightActivitySettleNotifyOuterClass {
               emu.grasscutter.net.proto.FlightActivitySettleNotifyOuterClass.FlightActivitySettleNotify.class, emu.grasscutter.net.proto.FlightActivitySettleNotifyOuterClass.FlightActivitySettleNotify.Builder.class);
     }
 
-    public static final int ECGNDJEFALL_FIELD_NUMBER = 7;
-    private int eCGNDJEFALL_;
+    public static final int TOTAL_NUM_FIELD_NUMBER = 5;
+    private int totalNum_;
     /**
-     * <code>uint32 ECGNDJEFALL = 7;</code>
-     * @return The eCGNDJEFALL.
+     * <code>uint32 total_num = 5;</code>
+     * @return The totalNum.
      */
     @java.lang.Override
-    public int getECGNDJEFALL() {
-      return eCGNDJEFALL_;
+    public int getTotalNum() {
+      return totalNum_;
     }
 
-    public static final int DOJCKDMCLJE_FIELD_NUMBER = 14;
-    private int dOJCKDMCLJE_;
+    public static final int GROUP_ID_FIELD_NUMBER = 4;
+    private int groupId_;
     /**
-     * <code>uint32 DOJCKDMCLJE = 14;</code>
-     * @return The dOJCKDMCLJE.
+     * <code>uint32 group_id = 4;</code>
+     * @return The groupId.
      */
     @java.lang.Override
-    public int getDOJCKDMCLJE() {
-      return dOJCKDMCLJE_;
+    public int getGroupId() {
+      return groupId_;
     }
 
-    public static final int SCORE_FIELD_NUMBER = 5;
-    private int score_;
-    /**
-     * <code>uint32 score = 5;</code>
-     * @return The score.
-     */
-    @java.lang.Override
-    public int getScore() {
-      return score_;
-    }
-
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 15;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 2;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 15;</code>
+     * <code>bool is_new_record = 2;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
@@ -232,15 +221,48 @@ public final class FlightActivitySettleNotifyOuterClass {
       return isNewRecord_;
     }
 
-    public static final int GROUP_ID_FIELD_NUMBER = 3;
-    private int groupId_;
+    public static final int DBIHJAJCNBC_FIELD_NUMBER = 6;
+    private int dBIHJAJCNBC_;
     /**
-     * <code>uint32 group_id = 3;</code>
-     * @return The groupId.
+     * <code>uint32 DBIHJAJCNBC = 6;</code>
+     * @return The dBIHJAJCNBC.
      */
     @java.lang.Override
-    public int getGroupId() {
-      return groupId_;
+    public int getDBIHJAJCNBC() {
+      return dBIHJAJCNBC_;
+    }
+
+    public static final int PCEABJGNLBB_FIELD_NUMBER = 3;
+    private int pCEABJGNLBB_;
+    /**
+     * <code>uint32 PCEABJGNLBB = 3;</code>
+     * @return The pCEABJGNLBB.
+     */
+    @java.lang.Override
+    public int getPCEABJGNLBB() {
+      return pCEABJGNLBB_;
+    }
+
+    public static final int IS_SUCCESS_FIELD_NUMBER = 12;
+    private boolean isSuccess_;
+    /**
+     * <code>bool is_success = 12;</code>
+     * @return The isSuccess.
+     */
+    @java.lang.Override
+    public boolean getIsSuccess() {
+      return isSuccess_;
+    }
+
+    public static final int SCORE_FIELD_NUMBER = 7;
+    private int score_;
+    /**
+     * <code>uint32 score = 7;</code>
+     * @return The score.
+     */
+    @java.lang.Override
+    public int getScore() {
+      return score_;
     }
 
     public static final int LEFT_TIME_FIELD_NUMBER = 9;
@@ -252,28 +274,6 @@ public final class FlightActivitySettleNotifyOuterClass {
     @java.lang.Override
     public int getLeftTime() {
       return leftTime_;
-    }
-
-    public static final int IS_SUCCESS_FIELD_NUMBER = 4;
-    private boolean isSuccess_;
-    /**
-     * <code>bool is_success = 4;</code>
-     * @return The isSuccess.
-     */
-    @java.lang.Override
-    public boolean getIsSuccess() {
-      return isSuccess_;
-    }
-
-    public static final int NJENGLLHPJD_FIELD_NUMBER = 10;
-    private int nJENGLLHPJD_;
-    /**
-     * <code>uint32 NJENGLLHPJD = 10;</code>
-     * @return The nJENGLLHPJD.
-     */
-    @java.lang.Override
-    public int getNJENGLLHPJD() {
-      return nJENGLLHPJD_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -290,29 +290,29 @@ public final class FlightActivitySettleNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (groupId_ != 0) {
-        output.writeUInt32(3, groupId_);
+      if (isNewRecord_ != false) {
+        output.writeBool(2, isNewRecord_);
       }
-      if (isSuccess_ != false) {
-        output.writeBool(4, isSuccess_);
+      if (pCEABJGNLBB_ != 0) {
+        output.writeUInt32(3, pCEABJGNLBB_);
+      }
+      if (groupId_ != 0) {
+        output.writeUInt32(4, groupId_);
+      }
+      if (totalNum_ != 0) {
+        output.writeUInt32(5, totalNum_);
+      }
+      if (dBIHJAJCNBC_ != 0) {
+        output.writeUInt32(6, dBIHJAJCNBC_);
       }
       if (score_ != 0) {
-        output.writeUInt32(5, score_);
-      }
-      if (eCGNDJEFALL_ != 0) {
-        output.writeUInt32(7, eCGNDJEFALL_);
+        output.writeUInt32(7, score_);
       }
       if (leftTime_ != 0) {
         output.writeUInt32(9, leftTime_);
       }
-      if (nJENGLLHPJD_ != 0) {
-        output.writeUInt32(10, nJENGLLHPJD_);
-      }
-      if (dOJCKDMCLJE_ != 0) {
-        output.writeUInt32(14, dOJCKDMCLJE_);
-      }
-      if (isNewRecord_ != false) {
-        output.writeBool(15, isNewRecord_);
+      if (isSuccess_ != false) {
+        output.writeBool(12, isSuccess_);
       }
       unknownFields.writeTo(output);
     }
@@ -323,37 +323,37 @@ public final class FlightActivitySettleNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (isNewRecord_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(2, isNewRecord_);
+      }
+      if (pCEABJGNLBB_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, pCEABJGNLBB_);
+      }
       if (groupId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, groupId_);
+          .computeUInt32Size(4, groupId_);
       }
-      if (isSuccess_ != false) {
+      if (totalNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, isSuccess_);
+          .computeUInt32Size(5, totalNum_);
+      }
+      if (dBIHJAJCNBC_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, dBIHJAJCNBC_);
       }
       if (score_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, score_);
-      }
-      if (eCGNDJEFALL_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, eCGNDJEFALL_);
+          .computeUInt32Size(7, score_);
       }
       if (leftTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(9, leftTime_);
       }
-      if (nJENGLLHPJD_ != 0) {
+      if (isSuccess_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, nJENGLLHPJD_);
-      }
-      if (dOJCKDMCLJE_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, dOJCKDMCLJE_);
-      }
-      if (isNewRecord_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isNewRecord_);
+          .computeBoolSize(12, isSuccess_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -370,22 +370,22 @@ public final class FlightActivitySettleNotifyOuterClass {
       }
       emu.grasscutter.net.proto.FlightActivitySettleNotifyOuterClass.FlightActivitySettleNotify other = (emu.grasscutter.net.proto.FlightActivitySettleNotifyOuterClass.FlightActivitySettleNotify) obj;
 
-      if (getECGNDJEFALL()
-          != other.getECGNDJEFALL()) return false;
-      if (getDOJCKDMCLJE()
-          != other.getDOJCKDMCLJE()) return false;
-      if (getScore()
-          != other.getScore()) return false;
-      if (getIsNewRecord()
-          != other.getIsNewRecord()) return false;
+      if (getTotalNum()
+          != other.getTotalNum()) return false;
       if (getGroupId()
           != other.getGroupId()) return false;
-      if (getLeftTime()
-          != other.getLeftTime()) return false;
+      if (getIsNewRecord()
+          != other.getIsNewRecord()) return false;
+      if (getDBIHJAJCNBC()
+          != other.getDBIHJAJCNBC()) return false;
+      if (getPCEABJGNLBB()
+          != other.getPCEABJGNLBB()) return false;
       if (getIsSuccess()
           != other.getIsSuccess()) return false;
-      if (getNJENGLLHPJD()
-          != other.getNJENGLLHPJD()) return false;
+      if (getScore()
+          != other.getScore()) return false;
+      if (getLeftTime()
+          != other.getLeftTime()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -397,24 +397,24 @@ public final class FlightActivitySettleNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ECGNDJEFALL_FIELD_NUMBER;
-      hash = (53 * hash) + getECGNDJEFALL();
-      hash = (37 * hash) + DOJCKDMCLJE_FIELD_NUMBER;
-      hash = (53 * hash) + getDOJCKDMCLJE();
-      hash = (37 * hash) + SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getScore();
+      hash = (37 * hash) + TOTAL_NUM_FIELD_NUMBER;
+      hash = (53 * hash) + getTotalNum();
+      hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGroupId();
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNewRecord());
-      hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGroupId();
-      hash = (37 * hash) + LEFT_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getLeftTime();
+      hash = (37 * hash) + DBIHJAJCNBC_FIELD_NUMBER;
+      hash = (53 * hash) + getDBIHJAJCNBC();
+      hash = (37 * hash) + PCEABJGNLBB_FIELD_NUMBER;
+      hash = (53 * hash) + getPCEABJGNLBB();
       hash = (37 * hash) + IS_SUCCESS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsSuccess());
-      hash = (37 * hash) + NJENGLLHPJD_FIELD_NUMBER;
-      hash = (53 * hash) + getNJENGLLHPJD();
+      hash = (37 * hash) + SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getScore();
+      hash = (37 * hash) + LEFT_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getLeftTime();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -512,8 +512,8 @@ public final class FlightActivitySettleNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: MKOCGKJGDEN
-     * CmdId: 2115
+     * CmdId: 2002
+     * Obf: DHONHJMPNPH
      * </pre>
      *
      * Protobuf type {@code FlightActivitySettleNotify}
@@ -553,21 +553,21 @@ public final class FlightActivitySettleNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        eCGNDJEFALL_ = 0;
-
-        dOJCKDMCLJE_ = 0;
-
-        score_ = 0;
-
-        isNewRecord_ = false;
+        totalNum_ = 0;
 
         groupId_ = 0;
 
-        leftTime_ = 0;
+        isNewRecord_ = false;
+
+        dBIHJAJCNBC_ = 0;
+
+        pCEABJGNLBB_ = 0;
 
         isSuccess_ = false;
 
-        nJENGLLHPJD_ = 0;
+        score_ = 0;
+
+        leftTime_ = 0;
 
         return this;
       }
@@ -595,14 +595,14 @@ public final class FlightActivitySettleNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FlightActivitySettleNotifyOuterClass.FlightActivitySettleNotify buildPartial() {
         emu.grasscutter.net.proto.FlightActivitySettleNotifyOuterClass.FlightActivitySettleNotify result = new emu.grasscutter.net.proto.FlightActivitySettleNotifyOuterClass.FlightActivitySettleNotify(this);
-        result.eCGNDJEFALL_ = eCGNDJEFALL_;
-        result.dOJCKDMCLJE_ = dOJCKDMCLJE_;
-        result.score_ = score_;
-        result.isNewRecord_ = isNewRecord_;
+        result.totalNum_ = totalNum_;
         result.groupId_ = groupId_;
-        result.leftTime_ = leftTime_;
+        result.isNewRecord_ = isNewRecord_;
+        result.dBIHJAJCNBC_ = dBIHJAJCNBC_;
+        result.pCEABJGNLBB_ = pCEABJGNLBB_;
         result.isSuccess_ = isSuccess_;
-        result.nJENGLLHPJD_ = nJENGLLHPJD_;
+        result.score_ = score_;
+        result.leftTime_ = leftTime_;
         onBuilt();
         return result;
       }
@@ -651,29 +651,29 @@ public final class FlightActivitySettleNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FlightActivitySettleNotifyOuterClass.FlightActivitySettleNotify other) {
         if (other == emu.grasscutter.net.proto.FlightActivitySettleNotifyOuterClass.FlightActivitySettleNotify.getDefaultInstance()) return this;
-        if (other.getECGNDJEFALL() != 0) {
-          setECGNDJEFALL(other.getECGNDJEFALL());
-        }
-        if (other.getDOJCKDMCLJE() != 0) {
-          setDOJCKDMCLJE(other.getDOJCKDMCLJE());
-        }
-        if (other.getScore() != 0) {
-          setScore(other.getScore());
-        }
-        if (other.getIsNewRecord() != false) {
-          setIsNewRecord(other.getIsNewRecord());
+        if (other.getTotalNum() != 0) {
+          setTotalNum(other.getTotalNum());
         }
         if (other.getGroupId() != 0) {
           setGroupId(other.getGroupId());
         }
-        if (other.getLeftTime() != 0) {
-          setLeftTime(other.getLeftTime());
+        if (other.getIsNewRecord() != false) {
+          setIsNewRecord(other.getIsNewRecord());
+        }
+        if (other.getDBIHJAJCNBC() != 0) {
+          setDBIHJAJCNBC(other.getDBIHJAJCNBC());
+        }
+        if (other.getPCEABJGNLBB() != 0) {
+          setPCEABJGNLBB(other.getPCEABJGNLBB());
         }
         if (other.getIsSuccess() != false) {
           setIsSuccess(other.getIsSuccess());
         }
-        if (other.getNJENGLLHPJD() != 0) {
-          setNJENGLLHPJD(other.getNJENGLLHPJD());
+        if (other.getScore() != 0) {
+          setScore(other.getScore());
+        }
+        if (other.getLeftTime() != 0) {
+          setLeftTime(other.getLeftTime());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -704,133 +704,40 @@ public final class FlightActivitySettleNotifyOuterClass {
         return this;
       }
 
-      private int eCGNDJEFALL_ ;
+      private int totalNum_ ;
       /**
-       * <code>uint32 ECGNDJEFALL = 7;</code>
-       * @return The eCGNDJEFALL.
+       * <code>uint32 total_num = 5;</code>
+       * @return The totalNum.
        */
       @java.lang.Override
-      public int getECGNDJEFALL() {
-        return eCGNDJEFALL_;
+      public int getTotalNum() {
+        return totalNum_;
       }
       /**
-       * <code>uint32 ECGNDJEFALL = 7;</code>
-       * @param value The eCGNDJEFALL to set.
+       * <code>uint32 total_num = 5;</code>
+       * @param value The totalNum to set.
        * @return This builder for chaining.
        */
-      public Builder setECGNDJEFALL(int value) {
+      public Builder setTotalNum(int value) {
         
-        eCGNDJEFALL_ = value;
+        totalNum_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 ECGNDJEFALL = 7;</code>
+       * <code>uint32 total_num = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearECGNDJEFALL() {
+      public Builder clearTotalNum() {
         
-        eCGNDJEFALL_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int dOJCKDMCLJE_ ;
-      /**
-       * <code>uint32 DOJCKDMCLJE = 14;</code>
-       * @return The dOJCKDMCLJE.
-       */
-      @java.lang.Override
-      public int getDOJCKDMCLJE() {
-        return dOJCKDMCLJE_;
-      }
-      /**
-       * <code>uint32 DOJCKDMCLJE = 14;</code>
-       * @param value The dOJCKDMCLJE to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDOJCKDMCLJE(int value) {
-        
-        dOJCKDMCLJE_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 DOJCKDMCLJE = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDOJCKDMCLJE() {
-        
-        dOJCKDMCLJE_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int score_ ;
-      /**
-       * <code>uint32 score = 5;</code>
-       * @return The score.
-       */
-      @java.lang.Override
-      public int getScore() {
-        return score_;
-      }
-      /**
-       * <code>uint32 score = 5;</code>
-       * @param value The score to set.
-       * @return This builder for chaining.
-       */
-      public Builder setScore(int value) {
-        
-        score_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 score = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearScore() {
-        
-        score_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isNewRecord_ ;
-      /**
-       * <code>bool is_new_record = 15;</code>
-       * @return The isNewRecord.
-       */
-      @java.lang.Override
-      public boolean getIsNewRecord() {
-        return isNewRecord_;
-      }
-      /**
-       * <code>bool is_new_record = 15;</code>
-       * @param value The isNewRecord to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsNewRecord(boolean value) {
-        
-        isNewRecord_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_new_record = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsNewRecord() {
-        
-        isNewRecord_ = false;
+        totalNum_ = 0;
         onChanged();
         return this;
       }
 
       private int groupId_ ;
       /**
-       * <code>uint32 group_id = 3;</code>
+       * <code>uint32 group_id = 4;</code>
        * @return The groupId.
        */
       @java.lang.Override
@@ -838,7 +745,7 @@ public final class FlightActivitySettleNotifyOuterClass {
         return groupId_;
       }
       /**
-       * <code>uint32 group_id = 3;</code>
+       * <code>uint32 group_id = 4;</code>
        * @param value The groupId to set.
        * @return This builder for chaining.
        */
@@ -849,12 +756,167 @@ public final class FlightActivitySettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 group_id = 3;</code>
+       * <code>uint32 group_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearGroupId() {
         
         groupId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isNewRecord_ ;
+      /**
+       * <code>bool is_new_record = 2;</code>
+       * @return The isNewRecord.
+       */
+      @java.lang.Override
+      public boolean getIsNewRecord() {
+        return isNewRecord_;
+      }
+      /**
+       * <code>bool is_new_record = 2;</code>
+       * @param value The isNewRecord to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsNewRecord(boolean value) {
+        
+        isNewRecord_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_new_record = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsNewRecord() {
+        
+        isNewRecord_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int dBIHJAJCNBC_ ;
+      /**
+       * <code>uint32 DBIHJAJCNBC = 6;</code>
+       * @return The dBIHJAJCNBC.
+       */
+      @java.lang.Override
+      public int getDBIHJAJCNBC() {
+        return dBIHJAJCNBC_;
+      }
+      /**
+       * <code>uint32 DBIHJAJCNBC = 6;</code>
+       * @param value The dBIHJAJCNBC to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDBIHJAJCNBC(int value) {
+        
+        dBIHJAJCNBC_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 DBIHJAJCNBC = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDBIHJAJCNBC() {
+        
+        dBIHJAJCNBC_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int pCEABJGNLBB_ ;
+      /**
+       * <code>uint32 PCEABJGNLBB = 3;</code>
+       * @return The pCEABJGNLBB.
+       */
+      @java.lang.Override
+      public int getPCEABJGNLBB() {
+        return pCEABJGNLBB_;
+      }
+      /**
+       * <code>uint32 PCEABJGNLBB = 3;</code>
+       * @param value The pCEABJGNLBB to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPCEABJGNLBB(int value) {
+        
+        pCEABJGNLBB_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 PCEABJGNLBB = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPCEABJGNLBB() {
+        
+        pCEABJGNLBB_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isSuccess_ ;
+      /**
+       * <code>bool is_success = 12;</code>
+       * @return The isSuccess.
+       */
+      @java.lang.Override
+      public boolean getIsSuccess() {
+        return isSuccess_;
+      }
+      /**
+       * <code>bool is_success = 12;</code>
+       * @param value The isSuccess to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsSuccess(boolean value) {
+        
+        isSuccess_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_success = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsSuccess() {
+        
+        isSuccess_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int score_ ;
+      /**
+       * <code>uint32 score = 7;</code>
+       * @return The score.
+       */
+      @java.lang.Override
+      public int getScore() {
+        return score_;
+      }
+      /**
+       * <code>uint32 score = 7;</code>
+       * @param value The score to set.
+       * @return This builder for chaining.
+       */
+      public Builder setScore(int value) {
+        
+        score_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 score = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearScore() {
+        
+        score_ = 0;
         onChanged();
         return this;
       }
@@ -886,68 +948,6 @@ public final class FlightActivitySettleNotifyOuterClass {
       public Builder clearLeftTime() {
         
         leftTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isSuccess_ ;
-      /**
-       * <code>bool is_success = 4;</code>
-       * @return The isSuccess.
-       */
-      @java.lang.Override
-      public boolean getIsSuccess() {
-        return isSuccess_;
-      }
-      /**
-       * <code>bool is_success = 4;</code>
-       * @param value The isSuccess to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsSuccess(boolean value) {
-        
-        isSuccess_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_success = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsSuccess() {
-        
-        isSuccess_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int nJENGLLHPJD_ ;
-      /**
-       * <code>uint32 NJENGLLHPJD = 10;</code>
-       * @return The nJENGLLHPJD.
-       */
-      @java.lang.Override
-      public int getNJENGLLHPJD() {
-        return nJENGLLHPJD_;
-      }
-      /**
-       * <code>uint32 NJENGLLHPJD = 10;</code>
-       * @param value The nJENGLLHPJD to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNJENGLLHPJD(int value) {
-        
-        nJENGLLHPJD_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 NJENGLLHPJD = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearNJENGLLHPJD() {
-        
-        nJENGLLHPJD_ = 0;
         onChanged();
         return this;
       }
@@ -1018,13 +1018,13 @@ public final class FlightActivitySettleNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n FlightActivitySettleNotify.proto\"\272\001\n\032F" +
-      "lightActivitySettleNotify\022\023\n\013ECGNDJEFALL" +
-      "\030\007 \001(\r\022\023\n\013DOJCKDMCLJE\030\016 \001(\r\022\r\n\005score\030\005 \001" +
-      "(\r\022\025\n\ris_new_record\030\017 \001(\010\022\020\n\010group_id\030\003 " +
-      "\001(\r\022\021\n\tleft_time\030\t \001(\r\022\022\n\nis_success\030\004 \001" +
-      "(\010\022\023\n\013NJENGLLHPJD\030\n \001(\rB\033\n\031emu.grasscutt" +
-      "er.net.protob\006proto3"
+      "\n FlightActivitySettleNotify.proto\"\270\001\n\032F" +
+      "lightActivitySettleNotify\022\021\n\ttotal_num\030\005" +
+      " \001(\r\022\020\n\010group_id\030\004 \001(\r\022\025\n\ris_new_record\030" +
+      "\002 \001(\010\022\023\n\013DBIHJAJCNBC\030\006 \001(\r\022\023\n\013PCEABJGNLB" +
+      "B\030\003 \001(\r\022\022\n\nis_success\030\014 \001(\010\022\r\n\005score\030\007 \001" +
+      "(\r\022\021\n\tleft_time\030\t \001(\rB\033\n\031emu.grasscutter" +
+      ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1035,7 +1035,7 @@ public final class FlightActivitySettleNotifyOuterClass {
     internal_static_FlightActivitySettleNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FlightActivitySettleNotify_descriptor,
-        new java.lang.String[] { "ECGNDJEFALL", "DOJCKDMCLJE", "Score", "IsNewRecord", "GroupId", "LeftTime", "IsSuccess", "NJENGLLHPJD", });
+        new java.lang.String[] { "TotalNum", "GroupId", "IsNewRecord", "DBIHJAJCNBC", "PCEABJGNLBB", "IsSuccess", "Score", "LeftTime", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

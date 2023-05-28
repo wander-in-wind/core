@@ -19,15 +19,15 @@ public final class DungeonCandidateTeamReplyInviteReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_accept = 7;</code>
+     * <code>bool is_accept = 12;</code>
      * @return The isAccept.
      */
     boolean getIsAccept();
   }
   /**
    * <pre>
-   * Name: CMNFHHGFKMM
-   * CmdId: 958
+   * CmdId: 959
+   * Obf: MJMBLIAIAKH
    * </pre>
    *
    * Protobuf type {@code DungeonCandidateTeamReplyInviteReq}
@@ -74,7 +74,7 @@ public final class DungeonCandidateTeamReplyInviteReqOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 96: {
 
               isAccept_ = input.readBool();
               break;
@@ -111,10 +111,10 @@ public final class DungeonCandidateTeamReplyInviteReqOuterClass {
               emu.grasscutter.net.proto.DungeonCandidateTeamReplyInviteReqOuterClass.DungeonCandidateTeamReplyInviteReq.class, emu.grasscutter.net.proto.DungeonCandidateTeamReplyInviteReqOuterClass.DungeonCandidateTeamReplyInviteReq.Builder.class);
     }
 
-    public static final int IS_ACCEPT_FIELD_NUMBER = 7;
+    public static final int IS_ACCEPT_FIELD_NUMBER = 12;
     private boolean isAccept_;
     /**
-     * <code>bool is_accept = 7;</code>
+     * <code>bool is_accept = 12;</code>
      * @return The isAccept.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class DungeonCandidateTeamReplyInviteReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isAccept_ != false) {
-        output.writeBool(7, isAccept_);
+        output.writeBool(12, isAccept_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class DungeonCandidateTeamReplyInviteReqOuterClass {
       size = 0;
       if (isAccept_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isAccept_);
+          .computeBoolSize(12, isAccept_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,8 +280,8 @@ public final class DungeonCandidateTeamReplyInviteReqOuterClass {
     }
     /**
      * <pre>
-     * Name: CMNFHHGFKMM
-     * CmdId: 958
+     * CmdId: 959
+     * Obf: MJMBLIAIAKH
      * </pre>
      *
      * Protobuf type {@code DungeonCandidateTeamReplyInviteReq}
@@ -432,7 +432,7 @@ public final class DungeonCandidateTeamReplyInviteReqOuterClass {
 
       private boolean isAccept_ ;
       /**
-       * <code>bool is_accept = 7;</code>
+       * <code>bool is_accept = 12;</code>
        * @return The isAccept.
        */
       @java.lang.Override
@@ -440,7 +440,7 @@ public final class DungeonCandidateTeamReplyInviteReqOuterClass {
         return isAccept_;
       }
       /**
-       * <code>bool is_accept = 7;</code>
+       * <code>bool is_accept = 12;</code>
        * @param value The isAccept to set.
        * @return This builder for chaining.
        */
@@ -451,7 +451,7 @@ public final class DungeonCandidateTeamReplyInviteReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_accept = 7;</code>
+       * <code>bool is_accept = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsAccept() {
@@ -529,7 +529,7 @@ public final class DungeonCandidateTeamReplyInviteReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n(DungeonCandidateTeamReplyInviteReq.pro" +
       "to\"7\n\"DungeonCandidateTeamReplyInviteReq" +
-      "\022\021\n\tis_accept\030\007 \001(\010B\033\n\031emu.grasscutter.n" +
+      "\022\021\n\tis_accept\030\014 \001(\010B\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

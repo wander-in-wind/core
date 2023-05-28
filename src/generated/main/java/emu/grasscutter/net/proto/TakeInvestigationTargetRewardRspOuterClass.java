@@ -19,21 +19,21 @@ public final class TakeInvestigationTargetRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 6;</code>
+     * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 quest_id = 14;</code>
+     * <code>uint32 quest_id = 4;</code>
      * @return The questId.
      */
     int getQuestId();
   }
   /**
    * <pre>
-   * Name: LHAPHELPIHC
-   * CmdId: 1927
+   * CmdId: 1914
+   * Obf: IHHFOENFHJG
    * </pre>
    *
    * Protobuf type {@code TakeInvestigationTargetRewardRsp}
@@ -80,14 +80,14 @@ public final class TakeInvestigationTargetRewardRspOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 112: {
+            case 32: {
 
               questId_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -122,10 +122,10 @@ public final class TakeInvestigationTargetRewardRspOuterClass {
               emu.grasscutter.net.proto.TakeInvestigationTargetRewardRspOuterClass.TakeInvestigationTargetRewardRsp.class, emu.grasscutter.net.proto.TakeInvestigationTargetRewardRspOuterClass.TakeInvestigationTargetRewardRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 6;
+    public static final int RETCODE_FIELD_NUMBER = 15;
     private int retcode_;
     /**
-     * <code>int32 retcode = 6;</code>
+     * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class TakeInvestigationTargetRewardRspOuterClass {
       return retcode_;
     }
 
-    public static final int QUEST_ID_FIELD_NUMBER = 14;
+    public static final int QUEST_ID_FIELD_NUMBER = 4;
     private int questId_;
     /**
-     * <code>uint32 quest_id = 14;</code>
+     * <code>uint32 quest_id = 4;</code>
      * @return The questId.
      */
     @java.lang.Override
@@ -158,11 +158,11 @@ public final class TakeInvestigationTargetRewardRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(6, retcode_);
-      }
       if (questId_ != 0) {
-        output.writeUInt32(14, questId_);
+        output.writeUInt32(4, questId_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(15, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class TakeInvestigationTargetRewardRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(6, retcode_);
-      }
       if (questId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, questId_);
+          .computeUInt32Size(4, questId_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(15, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class TakeInvestigationTargetRewardRspOuterClass {
     }
     /**
      * <pre>
-     * Name: LHAPHELPIHC
-     * CmdId: 1927
+     * CmdId: 1914
+     * Obf: IHHFOENFHJG
      * </pre>
      *
      * Protobuf type {@code TakeInvestigationTargetRewardRsp}
@@ -470,7 +470,7 @@ public final class TakeInvestigationTargetRewardRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 15;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class TakeInvestigationTargetRewardRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 15;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class TakeInvestigationTargetRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -501,7 +501,7 @@ public final class TakeInvestigationTargetRewardRspOuterClass {
 
       private int questId_ ;
       /**
-       * <code>uint32 quest_id = 14;</code>
+       * <code>uint32 quest_id = 4;</code>
        * @return The questId.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class TakeInvestigationTargetRewardRspOuterClass {
         return questId_;
       }
       /**
-       * <code>uint32 quest_id = 14;</code>
+       * <code>uint32 quest_id = 4;</code>
        * @param value The questId to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class TakeInvestigationTargetRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 quest_id = 14;</code>
+       * <code>uint32 quest_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearQuestId() {
@@ -598,7 +598,7 @@ public final class TakeInvestigationTargetRewardRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n&TakeInvestigationTargetRewardRsp.proto" +
       "\"E\n TakeInvestigationTargetRewardRsp\022\017\n\007" +
-      "retcode\030\006 \001(\005\022\020\n\010quest_id\030\016 \001(\rB\033\n\031emu.g" +
+      "retcode\030\017 \001(\005\022\020\n\010quest_id\030\004 \001(\rB\033\n\031emu.g" +
       "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,21 +19,21 @@ public final class MuqadasPotionActivityEnterDungeonRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 1;</code>
+     * <code>uint32 level_id = 9;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>int32 retcode = 11;</code>
+     * <code>int32 retcode = 7;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * Name: NEENJIBAKKA
-   * CmdId: 22334
+   * CmdId: 21540
+   * Obf: BCENGACGCML
    * </pre>
    *
    * Protobuf type {@code MuqadasPotionActivityEnterDungeonRsp}
@@ -80,14 +80,14 @@ public final class MuqadasPotionActivityEnterDungeonRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              levelId_ = input.readUInt32();
-              break;
-            }
-            case 88: {
+            case 56: {
 
               retcode_ = input.readInt32();
+              break;
+            }
+            case 72: {
+
+              levelId_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,10 +122,10 @@ public final class MuqadasPotionActivityEnterDungeonRspOuterClass {
               emu.grasscutter.net.proto.MuqadasPotionActivityEnterDungeonRspOuterClass.MuqadasPotionActivityEnterDungeonRsp.class, emu.grasscutter.net.proto.MuqadasPotionActivityEnterDungeonRspOuterClass.MuqadasPotionActivityEnterDungeonRsp.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 1;
+    public static final int LEVEL_ID_FIELD_NUMBER = 9;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 1;</code>
+     * <code>uint32 level_id = 9;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class MuqadasPotionActivityEnterDungeonRspOuterClass {
       return levelId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 11;
+    public static final int RETCODE_FIELD_NUMBER = 7;
     private int retcode_;
     /**
-     * <code>int32 retcode = 11;</code>
+     * <code>int32 retcode = 7;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -158,11 +158,11 @@ public final class MuqadasPotionActivityEnterDungeonRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (levelId_ != 0) {
-        output.writeUInt32(1, levelId_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(11, retcode_);
+        output.writeInt32(7, retcode_);
+      }
+      if (levelId_ != 0) {
+        output.writeUInt32(9, levelId_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class MuqadasPotionActivityEnterDungeonRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (levelId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, levelId_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(11, retcode_);
+          .computeInt32Size(7, retcode_);
+      }
+      if (levelId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, levelId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class MuqadasPotionActivityEnterDungeonRspOuterClass {
     }
     /**
      * <pre>
-     * Name: NEENJIBAKKA
-     * CmdId: 22334
+     * CmdId: 21540
+     * Obf: BCENGACGCML
      * </pre>
      *
      * Protobuf type {@code MuqadasPotionActivityEnterDungeonRsp}
@@ -470,7 +470,7 @@ public final class MuqadasPotionActivityEnterDungeonRspOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 1;</code>
+       * <code>uint32 level_id = 9;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class MuqadasPotionActivityEnterDungeonRspOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 1;</code>
+       * <code>uint32 level_id = 9;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class MuqadasPotionActivityEnterDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 1;</code>
+       * <code>uint32 level_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -501,7 +501,7 @@ public final class MuqadasPotionActivityEnterDungeonRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 7;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class MuqadasPotionActivityEnterDungeonRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 7;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class MuqadasPotionActivityEnterDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -598,7 +598,7 @@ public final class MuqadasPotionActivityEnterDungeonRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n*MuqadasPotionActivityEnterDungeonRsp.p" +
       "roto\"I\n$MuqadasPotionActivityEnterDungeo" +
-      "nRsp\022\020\n\010level_id\030\001 \001(\r\022\017\n\007retcode\030\013 \001(\005B" +
+      "nRsp\022\020\n\010level_id\030\t \001(\r\022\017\n\007retcode\030\007 \001(\005B" +
       "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

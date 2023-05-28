@@ -19,15 +19,15 @@ public final class BrickBreakerSetChangingReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_changing = 6;</code>
+     * <code>bool is_changing = 5;</code>
      * @return The isChanging.
      */
     boolean getIsChanging();
   }
   /**
    * <pre>
-   * Name: LDACIPENNDP
-   * CmdId: 5351
+   * CmdId: 5391
+   * Obf: LOPBKCGNPJD
    * </pre>
    *
    * Protobuf type {@code BrickBreakerSetChangingReq}
@@ -74,7 +74,7 @@ public final class BrickBreakerSetChangingReqOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 40: {
 
               isChanging_ = input.readBool();
               break;
@@ -111,10 +111,10 @@ public final class BrickBreakerSetChangingReqOuterClass {
               emu.grasscutter.net.proto.BrickBreakerSetChangingReqOuterClass.BrickBreakerSetChangingReq.class, emu.grasscutter.net.proto.BrickBreakerSetChangingReqOuterClass.BrickBreakerSetChangingReq.Builder.class);
     }
 
-    public static final int IS_CHANGING_FIELD_NUMBER = 6;
+    public static final int IS_CHANGING_FIELD_NUMBER = 5;
     private boolean isChanging_;
     /**
-     * <code>bool is_changing = 6;</code>
+     * <code>bool is_changing = 5;</code>
      * @return The isChanging.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class BrickBreakerSetChangingReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isChanging_ != false) {
-        output.writeBool(6, isChanging_);
+        output.writeBool(5, isChanging_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class BrickBreakerSetChangingReqOuterClass {
       size = 0;
       if (isChanging_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isChanging_);
+          .computeBoolSize(5, isChanging_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,8 +280,8 @@ public final class BrickBreakerSetChangingReqOuterClass {
     }
     /**
      * <pre>
-     * Name: LDACIPENNDP
-     * CmdId: 5351
+     * CmdId: 5391
+     * Obf: LOPBKCGNPJD
      * </pre>
      *
      * Protobuf type {@code BrickBreakerSetChangingReq}
@@ -432,7 +432,7 @@ public final class BrickBreakerSetChangingReqOuterClass {
 
       private boolean isChanging_ ;
       /**
-       * <code>bool is_changing = 6;</code>
+       * <code>bool is_changing = 5;</code>
        * @return The isChanging.
        */
       @java.lang.Override
@@ -440,7 +440,7 @@ public final class BrickBreakerSetChangingReqOuterClass {
         return isChanging_;
       }
       /**
-       * <code>bool is_changing = 6;</code>
+       * <code>bool is_changing = 5;</code>
        * @param value The isChanging to set.
        * @return This builder for chaining.
        */
@@ -451,7 +451,7 @@ public final class BrickBreakerSetChangingReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_changing = 6;</code>
+       * <code>bool is_changing = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsChanging() {
@@ -529,7 +529,7 @@ public final class BrickBreakerSetChangingReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n BrickBreakerSetChangingReq.proto\"1\n\032Br" +
       "ickBreakerSetChangingReq\022\023\n\013is_changing\030" +
-      "\006 \001(\010B\033\n\031emu.grasscutter.net.protob\006prot" +
+      "\005 \001(\010B\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

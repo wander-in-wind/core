@@ -49,7 +49,7 @@ public final class FishPoolInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: KMDKMJLGNHL
+   * Obf: JNLEJBIEONJ
    * </pre>
    *
    * Protobuf type {@code FishPoolInfo}
@@ -410,7 +410,7 @@ public final class FishPoolInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: KMDKMJLGNHL
+     * Obf: JNLEJBIEONJ
      * </pre>
      *
      * Protobuf type {@code FishPoolInfo}

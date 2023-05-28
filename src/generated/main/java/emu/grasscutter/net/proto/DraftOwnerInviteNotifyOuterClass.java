@@ -19,21 +19,21 @@ public final class DraftOwnerInviteNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 invite_deadline_time = 13;</code>
+     * <code>uint32 invite_deadline_time = 15;</code>
      * @return The inviteDeadlineTime.
      */
     int getInviteDeadlineTime();
 
     /**
-     * <code>uint32 draft_id = 11;</code>
+     * <code>uint32 draft_id = 2;</code>
      * @return The draftId.
      */
     int getDraftId();
   }
   /**
    * <pre>
-   * Name: DEJILIINEMK
-   * CmdId: 5414
+   * CmdId: 5455
+   * Obf: EINHACNCMIO
    * </pre>
    *
    * Protobuf type {@code DraftOwnerInviteNotify}
@@ -80,12 +80,12 @@ public final class DraftOwnerInviteNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
+            case 16: {
 
               draftId_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 120: {
 
               inviteDeadlineTime_ = input.readUInt32();
               break;
@@ -122,10 +122,10 @@ public final class DraftOwnerInviteNotifyOuterClass {
               emu.grasscutter.net.proto.DraftOwnerInviteNotifyOuterClass.DraftOwnerInviteNotify.class, emu.grasscutter.net.proto.DraftOwnerInviteNotifyOuterClass.DraftOwnerInviteNotify.Builder.class);
     }
 
-    public static final int INVITE_DEADLINE_TIME_FIELD_NUMBER = 13;
+    public static final int INVITE_DEADLINE_TIME_FIELD_NUMBER = 15;
     private int inviteDeadlineTime_;
     /**
-     * <code>uint32 invite_deadline_time = 13;</code>
+     * <code>uint32 invite_deadline_time = 15;</code>
      * @return The inviteDeadlineTime.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class DraftOwnerInviteNotifyOuterClass {
       return inviteDeadlineTime_;
     }
 
-    public static final int DRAFT_ID_FIELD_NUMBER = 11;
+    public static final int DRAFT_ID_FIELD_NUMBER = 2;
     private int draftId_;
     /**
-     * <code>uint32 draft_id = 11;</code>
+     * <code>uint32 draft_id = 2;</code>
      * @return The draftId.
      */
     @java.lang.Override
@@ -159,10 +159,10 @@ public final class DraftOwnerInviteNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (draftId_ != 0) {
-        output.writeUInt32(11, draftId_);
+        output.writeUInt32(2, draftId_);
       }
       if (inviteDeadlineTime_ != 0) {
-        output.writeUInt32(13, inviteDeadlineTime_);
+        output.writeUInt32(15, inviteDeadlineTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +175,11 @@ public final class DraftOwnerInviteNotifyOuterClass {
       size = 0;
       if (draftId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, draftId_);
+          .computeUInt32Size(2, draftId_);
       }
       if (inviteDeadlineTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, inviteDeadlineTime_);
+          .computeUInt32Size(15, inviteDeadlineTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class DraftOwnerInviteNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: DEJILIINEMK
-     * CmdId: 5414
+     * CmdId: 5455
+     * Obf: EINHACNCMIO
      * </pre>
      *
      * Protobuf type {@code DraftOwnerInviteNotify}
@@ -470,7 +470,7 @@ public final class DraftOwnerInviteNotifyOuterClass {
 
       private int inviteDeadlineTime_ ;
       /**
-       * <code>uint32 invite_deadline_time = 13;</code>
+       * <code>uint32 invite_deadline_time = 15;</code>
        * @return The inviteDeadlineTime.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class DraftOwnerInviteNotifyOuterClass {
         return inviteDeadlineTime_;
       }
       /**
-       * <code>uint32 invite_deadline_time = 13;</code>
+       * <code>uint32 invite_deadline_time = 15;</code>
        * @param value The inviteDeadlineTime to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class DraftOwnerInviteNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 invite_deadline_time = 13;</code>
+       * <code>uint32 invite_deadline_time = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearInviteDeadlineTime() {
@@ -501,7 +501,7 @@ public final class DraftOwnerInviteNotifyOuterClass {
 
       private int draftId_ ;
       /**
-       * <code>uint32 draft_id = 11;</code>
+       * <code>uint32 draft_id = 2;</code>
        * @return The draftId.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class DraftOwnerInviteNotifyOuterClass {
         return draftId_;
       }
       /**
-       * <code>uint32 draft_id = 11;</code>
+       * <code>uint32 draft_id = 2;</code>
        * @param value The draftId to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class DraftOwnerInviteNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 draft_id = 11;</code>
+       * <code>uint32 draft_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearDraftId() {
@@ -598,7 +598,7 @@ public final class DraftOwnerInviteNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\034DraftOwnerInviteNotify.proto\"H\n\026DraftO" +
       "wnerInviteNotify\022\034\n\024invite_deadline_time" +
-      "\030\r \001(\r\022\020\n\010draft_id\030\013 \001(\rB\033\n\031emu.grasscut" +
+      "\030\017 \001(\r\022\020\n\010draft_id\030\002 \001(\rB\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

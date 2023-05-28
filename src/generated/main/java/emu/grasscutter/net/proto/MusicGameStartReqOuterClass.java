@@ -19,7 +19,7 @@ public final class MusicGameStartReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 music_basic_id = 2;</code>
+     * <code>uint32 music_basic_id = 9;</code>
      * @return The musicBasicId.
      */
     int getMusicBasicId();
@@ -31,17 +31,14 @@ public final class MusicGameStartReqOuterClass {
     boolean getIsSaveScore();
 
     /**
-     * <code>uint64 ugc_guid = 3;</code>
+     * <code>uint64 ugc_guid = 4;</code>
      * @return The ugcGuid.
      */
     long getUgcGuid();
   }
   /**
    * <pre>
-   * CmdId: 8406 (3.2)
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * CmdId: 8583
    * </pre>
    *
    * Protobuf type {@code MusicGameStartReq}
@@ -88,14 +85,14 @@ public final class MusicGameStartReqOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              musicBasicId_ = input.readUInt32();
-              break;
-            }
-            case 24: {
+            case 32: {
 
               ugcGuid_ = input.readUInt64();
+              break;
+            }
+            case 72: {
+
+              musicBasicId_ = input.readUInt32();
               break;
             }
             case 88: {
@@ -135,10 +132,10 @@ public final class MusicGameStartReqOuterClass {
               emu.grasscutter.net.proto.MusicGameStartReqOuterClass.MusicGameStartReq.class, emu.grasscutter.net.proto.MusicGameStartReqOuterClass.MusicGameStartReq.Builder.class);
     }
 
-    public static final int MUSIC_BASIC_ID_FIELD_NUMBER = 2;
+    public static final int MUSIC_BASIC_ID_FIELD_NUMBER = 9;
     private int musicBasicId_;
     /**
-     * <code>uint32 music_basic_id = 2;</code>
+     * <code>uint32 music_basic_id = 9;</code>
      * @return The musicBasicId.
      */
     @java.lang.Override
@@ -157,10 +154,10 @@ public final class MusicGameStartReqOuterClass {
       return isSaveScore_;
     }
 
-    public static final int UGC_GUID_FIELD_NUMBER = 3;
+    public static final int UGC_GUID_FIELD_NUMBER = 4;
     private long ugcGuid_;
     /**
-     * <code>uint64 ugc_guid = 3;</code>
+     * <code>uint64 ugc_guid = 4;</code>
      * @return The ugcGuid.
      */
     @java.lang.Override
@@ -182,11 +179,11 @@ public final class MusicGameStartReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (musicBasicId_ != 0) {
-        output.writeUInt32(2, musicBasicId_);
-      }
       if (ugcGuid_ != 0L) {
-        output.writeUInt64(3, ugcGuid_);
+        output.writeUInt64(4, ugcGuid_);
+      }
+      if (musicBasicId_ != 0) {
+        output.writeUInt32(9, musicBasicId_);
       }
       if (isSaveScore_ != false) {
         output.writeBool(11, isSaveScore_);
@@ -200,13 +197,13 @@ public final class MusicGameStartReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (musicBasicId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, musicBasicId_);
-      }
       if (ugcGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(3, ugcGuid_);
+          .computeUInt64Size(4, ugcGuid_);
+      }
+      if (musicBasicId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, musicBasicId_);
       }
       if (isSaveScore_ != false) {
         size += com.google.protobuf.CodedOutputStream
@@ -349,10 +346,7 @@ public final class MusicGameStartReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8406 (3.2)
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * CmdId: 8583
      * </pre>
      *
      * Protobuf type {@code MusicGameStartReq}
@@ -515,7 +509,7 @@ public final class MusicGameStartReqOuterClass {
 
       private int musicBasicId_ ;
       /**
-       * <code>uint32 music_basic_id = 2;</code>
+       * <code>uint32 music_basic_id = 9;</code>
        * @return The musicBasicId.
        */
       @java.lang.Override
@@ -523,7 +517,7 @@ public final class MusicGameStartReqOuterClass {
         return musicBasicId_;
       }
       /**
-       * <code>uint32 music_basic_id = 2;</code>
+       * <code>uint32 music_basic_id = 9;</code>
        * @param value The musicBasicId to set.
        * @return This builder for chaining.
        */
@@ -534,7 +528,7 @@ public final class MusicGameStartReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 music_basic_id = 2;</code>
+       * <code>uint32 music_basic_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearMusicBasicId() {
@@ -577,7 +571,7 @@ public final class MusicGameStartReqOuterClass {
 
       private long ugcGuid_ ;
       /**
-       * <code>uint64 ugc_guid = 3;</code>
+       * <code>uint64 ugc_guid = 4;</code>
        * @return The ugcGuid.
        */
       @java.lang.Override
@@ -585,7 +579,7 @@ public final class MusicGameStartReqOuterClass {
         return ugcGuid_;
       }
       /**
-       * <code>uint64 ugc_guid = 3;</code>
+       * <code>uint64 ugc_guid = 4;</code>
        * @param value The ugcGuid to set.
        * @return This builder for chaining.
        */
@@ -596,7 +590,7 @@ public final class MusicGameStartReqOuterClass {
         return this;
       }
       /**
-       * <code>uint64 ugc_guid = 3;</code>
+       * <code>uint64 ugc_guid = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearUgcGuid() {
@@ -673,8 +667,8 @@ public final class MusicGameStartReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027MusicGameStartReq.proto\"T\n\021MusicGameSt" +
-      "artReq\022\026\n\016music_basic_id\030\002 \001(\r\022\025\n\ris_sav" +
-      "e_score\030\013 \001(\010\022\020\n\010ugc_guid\030\003 \001(\004B\033\n\031emu.g" +
+      "artReq\022\026\n\016music_basic_id\030\t \001(\r\022\025\n\ris_sav" +
+      "e_score\030\013 \001(\010\022\020\n\010ugc_guid\030\004 \001(\004B\033\n\031emu.g" +
       "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

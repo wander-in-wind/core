@@ -19,21 +19,21 @@ public final class ExpeditionRecallRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 path_id = 7;</code>
-     * @return The pathId.
-     */
-    int getPathId();
-
-    /**
-     * <code>int32 retcode = 2;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     int getRetcode();
+
+    /**
+     * <code>uint32 path_id = 13;</code>
+     * @return The pathId.
+     */
+    int getPathId();
   }
   /**
    * <pre>
-   * Name: JANPFEIFJLH
-   * CmdId: 2015
+   * CmdId: 2177
+   * Obf: IBJAIAJEBNH
    * </pre>
    *
    * Protobuf type {@code ExpeditionRecallRsp}
@@ -80,12 +80,12 @@ public final class ExpeditionRecallRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 8: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 56: {
+            case 104: {
 
               pathId_ = input.readUInt32();
               break;
@@ -122,26 +122,26 @@ public final class ExpeditionRecallRspOuterClass {
               emu.grasscutter.net.proto.ExpeditionRecallRspOuterClass.ExpeditionRecallRsp.class, emu.grasscutter.net.proto.ExpeditionRecallRspOuterClass.ExpeditionRecallRsp.Builder.class);
     }
 
-    public static final int PATH_ID_FIELD_NUMBER = 7;
-    private int pathId_;
-    /**
-     * <code>uint32 path_id = 7;</code>
-     * @return The pathId.
-     */
-    @java.lang.Override
-    public int getPathId() {
-      return pathId_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 2;
+    public static final int RETCODE_FIELD_NUMBER = 1;
     private int retcode_;
     /**
-     * <code>int32 retcode = 2;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
+    }
+
+    public static final int PATH_ID_FIELD_NUMBER = 13;
+    private int pathId_;
+    /**
+     * <code>uint32 path_id = 13;</code>
+     * @return The pathId.
+     */
+    @java.lang.Override
+    public int getPathId() {
+      return pathId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,10 +159,10 @@ public final class ExpeditionRecallRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(2, retcode_);
+        output.writeInt32(1, retcode_);
       }
       if (pathId_ != 0) {
-        output.writeUInt32(7, pathId_);
+        output.writeUInt32(13, pathId_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +175,11 @@ public final class ExpeditionRecallRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, retcode_);
+          .computeInt32Size(1, retcode_);
       }
       if (pathId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, pathId_);
+          .computeUInt32Size(13, pathId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +196,10 @@ public final class ExpeditionRecallRspOuterClass {
       }
       emu.grasscutter.net.proto.ExpeditionRecallRspOuterClass.ExpeditionRecallRsp other = (emu.grasscutter.net.proto.ExpeditionRecallRspOuterClass.ExpeditionRecallRsp) obj;
 
-      if (getPathId()
-          != other.getPathId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getPathId()
+          != other.getPathId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +211,10 @@ public final class ExpeditionRecallRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + PATH_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getPathId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + PATH_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getPathId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +312,8 @@ public final class ExpeditionRecallRspOuterClass {
     }
     /**
      * <pre>
-     * Name: JANPFEIFJLH
-     * CmdId: 2015
+     * CmdId: 2177
+     * Obf: IBJAIAJEBNH
      * </pre>
      *
      * Protobuf type {@code ExpeditionRecallRsp}
@@ -353,9 +353,9 @@ public final class ExpeditionRecallRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        pathId_ = 0;
-
         retcode_ = 0;
+
+        pathId_ = 0;
 
         return this;
       }
@@ -383,8 +383,8 @@ public final class ExpeditionRecallRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ExpeditionRecallRspOuterClass.ExpeditionRecallRsp buildPartial() {
         emu.grasscutter.net.proto.ExpeditionRecallRspOuterClass.ExpeditionRecallRsp result = new emu.grasscutter.net.proto.ExpeditionRecallRspOuterClass.ExpeditionRecallRsp(this);
-        result.pathId_ = pathId_;
         result.retcode_ = retcode_;
+        result.pathId_ = pathId_;
         onBuilt();
         return result;
       }
@@ -433,11 +433,11 @@ public final class ExpeditionRecallRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ExpeditionRecallRspOuterClass.ExpeditionRecallRsp other) {
         if (other == emu.grasscutter.net.proto.ExpeditionRecallRspOuterClass.ExpeditionRecallRsp.getDefaultInstance()) return this;
-        if (other.getPathId() != 0) {
-          setPathId(other.getPathId());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getPathId() != 0) {
+          setPathId(other.getPathId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,40 +468,9 @@ public final class ExpeditionRecallRspOuterClass {
         return this;
       }
 
-      private int pathId_ ;
-      /**
-       * <code>uint32 path_id = 7;</code>
-       * @return The pathId.
-       */
-      @java.lang.Override
-      public int getPathId() {
-        return pathId_;
-      }
-      /**
-       * <code>uint32 path_id = 7;</code>
-       * @param value The pathId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPathId(int value) {
-        
-        pathId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 path_id = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPathId() {
-        
-        pathId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 1;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -509,7 +478,7 @@ public final class ExpeditionRecallRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 1;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -520,12 +489,43 @@ public final class ExpeditionRecallRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
         
         retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int pathId_ ;
+      /**
+       * <code>uint32 path_id = 13;</code>
+       * @return The pathId.
+       */
+      @java.lang.Override
+      public int getPathId() {
+        return pathId_;
+      }
+      /**
+       * <code>uint32 path_id = 13;</code>
+       * @param value The pathId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPathId(int value) {
+        
+        pathId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 path_id = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPathId() {
+        
+        pathId_ = 0;
         onChanged();
         return this;
       }
@@ -597,8 +597,8 @@ public final class ExpeditionRecallRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031ExpeditionRecallRsp.proto\"7\n\023Expeditio" +
-      "nRecallRsp\022\017\n\007path_id\030\007 \001(\r\022\017\n\007retcode\030\002" +
-      " \001(\005B\033\n\031emu.grasscutter.net.protob\006proto" +
+      "nRecallRsp\022\017\n\007retcode\030\001 \001(\005\022\017\n\007path_id\030\r" +
+      " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -610,7 +610,7 @@ public final class ExpeditionRecallRspOuterClass {
     internal_static_ExpeditionRecallRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ExpeditionRecallRsp_descriptor,
-        new java.lang.String[] { "PathId", "Retcode", });
+        new java.lang.String[] { "Retcode", "PathId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

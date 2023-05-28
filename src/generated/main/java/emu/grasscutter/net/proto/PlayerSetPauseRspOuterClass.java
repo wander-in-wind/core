@@ -26,8 +26,8 @@ public final class PlayerSetPauseRspOuterClass {
   }
   /**
    * <pre>
-   * Name: LKBGOHAPNME
-   * CmdId: 188
+   * CmdId: 149
+   * Obf: IGMIFEKGJNK
    * </pre>
    *
    * Protobuf type {@code PlayerSetPauseRsp}
@@ -279,8 +279,8 @@ public final class PlayerSetPauseRspOuterClass {
     }
     /**
      * <pre>
-     * Name: LKBGOHAPNME
-     * CmdId: 188
+     * CmdId: 149
+     * Obf: IGMIFEKGJNK
      * </pre>
      *
      * Protobuf type {@code PlayerSetPauseRsp}

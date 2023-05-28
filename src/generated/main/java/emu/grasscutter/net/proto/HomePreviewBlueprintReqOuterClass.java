@@ -29,11 +29,17 @@ public final class HomePreviewBlueprintReqOuterClass {
      */
     com.google.protobuf.ByteString
         getShareCodeBytes();
+
+    /**
+     * <code>uint32 slot_id = 13;</code>
+     * @return The slotId.
+     */
+    int getSlotId();
   }
   /**
    * <pre>
-   * Name: APCEABAFGNL
-   * CmdId: 4650
+   * CmdId: 4508
+   * Obf: NGCKGLKOPIO
    * </pre>
    *
    * Protobuf type {@code HomePreviewBlueprintReq}
@@ -85,6 +91,11 @@ public final class HomePreviewBlueprintReqOuterClass {
               java.lang.String s = input.readStringRequireUtf8();
 
               shareCode_ = s;
+              break;
+            }
+            case 104: {
+
+              slotId_ = input.readUInt32();
               break;
             }
             default: {
@@ -157,6 +168,17 @@ public final class HomePreviewBlueprintReqOuterClass {
       }
     }
 
+    public static final int SLOT_ID_FIELD_NUMBER = 13;
+    private int slotId_;
+    /**
+     * <code>uint32 slot_id = 13;</code>
+     * @return The slotId.
+     */
+    @java.lang.Override
+    public int getSlotId() {
+      return slotId_;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -174,6 +196,9 @@ public final class HomePreviewBlueprintReqOuterClass {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(shareCode_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 12, shareCode_);
       }
+      if (slotId_ != 0) {
+        output.writeUInt32(13, slotId_);
+      }
       unknownFields.writeTo(output);
     }
 
@@ -185,6 +210,10 @@ public final class HomePreviewBlueprintReqOuterClass {
       size = 0;
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(shareCode_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, shareCode_);
+      }
+      if (slotId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, slotId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -203,6 +232,8 @@ public final class HomePreviewBlueprintReqOuterClass {
 
       if (!getShareCode()
           .equals(other.getShareCode())) return false;
+      if (getSlotId()
+          != other.getSlotId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -216,6 +247,8 @@ public final class HomePreviewBlueprintReqOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + SHARE_CODE_FIELD_NUMBER;
       hash = (53 * hash) + getShareCode().hashCode();
+      hash = (37 * hash) + SLOT_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSlotId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -313,8 +346,8 @@ public final class HomePreviewBlueprintReqOuterClass {
     }
     /**
      * <pre>
-     * Name: APCEABAFGNL
-     * CmdId: 4650
+     * CmdId: 4508
+     * Obf: NGCKGLKOPIO
      * </pre>
      *
      * Protobuf type {@code HomePreviewBlueprintReq}
@@ -356,6 +389,8 @@ public final class HomePreviewBlueprintReqOuterClass {
         super.clear();
         shareCode_ = "";
 
+        slotId_ = 0;
+
         return this;
       }
 
@@ -383,6 +418,7 @@ public final class HomePreviewBlueprintReqOuterClass {
       public emu.grasscutter.net.proto.HomePreviewBlueprintReqOuterClass.HomePreviewBlueprintReq buildPartial() {
         emu.grasscutter.net.proto.HomePreviewBlueprintReqOuterClass.HomePreviewBlueprintReq result = new emu.grasscutter.net.proto.HomePreviewBlueprintReqOuterClass.HomePreviewBlueprintReq(this);
         result.shareCode_ = shareCode_;
+        result.slotId_ = slotId_;
         onBuilt();
         return result;
       }
@@ -434,6 +470,9 @@ public final class HomePreviewBlueprintReqOuterClass {
         if (!other.getShareCode().isEmpty()) {
           shareCode_ = other.shareCode_;
           onChanged();
+        }
+        if (other.getSlotId() != 0) {
+          setSlotId(other.getSlotId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -539,6 +578,37 @@ public final class HomePreviewBlueprintReqOuterClass {
         onChanged();
         return this;
       }
+
+      private int slotId_ ;
+      /**
+       * <code>uint32 slot_id = 13;</code>
+       * @return The slotId.
+       */
+      @java.lang.Override
+      public int getSlotId() {
+        return slotId_;
+      }
+      /**
+       * <code>uint32 slot_id = 13;</code>
+       * @param value The slotId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSlotId(int value) {
+        
+        slotId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 slot_id = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSlotId() {
+        
+        slotId_ = 0;
+        onChanged();
+        return this;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -606,9 +676,10 @@ public final class HomePreviewBlueprintReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\035HomePreviewBlueprintReq.proto\"-\n\027HomeP" +
-      "reviewBlueprintReq\022\022\n\nshare_code\030\014 \001(\tB\033" +
-      "\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\035HomePreviewBlueprintReq.proto\">\n\027HomeP" +
+      "reviewBlueprintReq\022\022\n\nshare_code\030\014 \001(\t\022\017" +
+      "\n\007slot_id\030\r \001(\rB\033\n\031emu.grasscutter.net.p" +
+      "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -619,7 +690,7 @@ public final class HomePreviewBlueprintReqOuterClass {
     internal_static_HomePreviewBlueprintReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomePreviewBlueprintReq_descriptor,
-        new java.lang.String[] { "ShareCode", });
+        new java.lang.String[] { "ShareCode", "SlotId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

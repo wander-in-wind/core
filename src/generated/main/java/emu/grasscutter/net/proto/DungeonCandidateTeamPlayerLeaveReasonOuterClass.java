@@ -16,7 +16,7 @@ public final class DungeonCandidateTeamPlayerLeaveReasonOuterClass {
   }
   /**
    * <pre>
-   * Name: FLBIIPBHFOE
+   * Obf: DKFEAEEPKME
    * </pre>
    *
    * Protobuf enum {@code DungeonCandidateTeamPlayerLeaveReason}

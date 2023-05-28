@@ -19,44 +19,32 @@ public final class GCGLevelChallengeFinishNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *EJMHNAHNPOB snooswap
-     * </pre>
-     *
-     * <code>repeated uint32 finished_challenge_id_list = 10;</code>
+     * <code>repeated uint32 finished_challenge_id_list = 15;</code>
      * @return A list containing the finishedChallengeIdList.
      */
     java.util.List<java.lang.Integer> getFinishedChallengeIdListList();
     /**
-     * <pre>
-     *EJMHNAHNPOB snooswap
-     * </pre>
-     *
-     * <code>repeated uint32 finished_challenge_id_list = 10;</code>
+     * <code>repeated uint32 finished_challenge_id_list = 15;</code>
      * @return The count of finishedChallengeIdList.
      */
     int getFinishedChallengeIdListCount();
     /**
-     * <pre>
-     *EJMHNAHNPOB snooswap
-     * </pre>
-     *
-     * <code>repeated uint32 finished_challenge_id_list = 10;</code>
+     * <code>repeated uint32 finished_challenge_id_list = 15;</code>
      * @param index The index of the element to return.
      * @return The finishedChallengeIdList at the given index.
      */
     int getFinishedChallengeIdList(int index);
 
     /**
-     * <code>uint32 level_id = 9;</code>
+     * <code>uint32 level_id = 1;</code>
      * @return The levelId.
      */
     int getLevelId();
   }
   /**
    * <pre>
-   * Name: FDHMBLAHCMP
-   * CmdId: 7311
+   * CmdId: 7207
+   * Obf: DCGKGHOFDMC
    * </pre>
    *
    * Protobuf type {@code GCGLevelChallengeFinishNotify}
@@ -105,12 +93,12 @@ public final class GCGLevelChallengeFinishNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 8: {
 
               levelId_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 120: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 finishedChallengeIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -118,7 +106,7 @@ public final class GCGLevelChallengeFinishNotifyOuterClass {
               finishedChallengeIdList_.addInt(input.readUInt32());
               break;
             }
-            case 82: {
+            case 122: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -166,14 +154,10 @@ public final class GCGLevelChallengeFinishNotifyOuterClass {
               emu.grasscutter.net.proto.GCGLevelChallengeFinishNotifyOuterClass.GCGLevelChallengeFinishNotify.class, emu.grasscutter.net.proto.GCGLevelChallengeFinishNotifyOuterClass.GCGLevelChallengeFinishNotify.Builder.class);
     }
 
-    public static final int FINISHED_CHALLENGE_ID_LIST_FIELD_NUMBER = 10;
+    public static final int FINISHED_CHALLENGE_ID_LIST_FIELD_NUMBER = 15;
     private com.google.protobuf.Internal.IntList finishedChallengeIdList_;
     /**
-     * <pre>
-     *EJMHNAHNPOB snooswap
-     * </pre>
-     *
-     * <code>repeated uint32 finished_challenge_id_list = 10;</code>
+     * <code>repeated uint32 finished_challenge_id_list = 15;</code>
      * @return A list containing the finishedChallengeIdList.
      */
     @java.lang.Override
@@ -182,22 +166,14 @@ public final class GCGLevelChallengeFinishNotifyOuterClass {
       return finishedChallengeIdList_;
     }
     /**
-     * <pre>
-     *EJMHNAHNPOB snooswap
-     * </pre>
-     *
-     * <code>repeated uint32 finished_challenge_id_list = 10;</code>
+     * <code>repeated uint32 finished_challenge_id_list = 15;</code>
      * @return The count of finishedChallengeIdList.
      */
     public int getFinishedChallengeIdListCount() {
       return finishedChallengeIdList_.size();
     }
     /**
-     * <pre>
-     *EJMHNAHNPOB snooswap
-     * </pre>
-     *
-     * <code>repeated uint32 finished_challenge_id_list = 10;</code>
+     * <code>repeated uint32 finished_challenge_id_list = 15;</code>
      * @param index The index of the element to return.
      * @return The finishedChallengeIdList at the given index.
      */
@@ -206,10 +182,10 @@ public final class GCGLevelChallengeFinishNotifyOuterClass {
     }
     private int finishedChallengeIdListMemoizedSerializedSize = -1;
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 9;
+    public static final int LEVEL_ID_FIELD_NUMBER = 1;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 9;</code>
+     * <code>uint32 level_id = 1;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -233,10 +209,10 @@ public final class GCGLevelChallengeFinishNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (levelId_ != 0) {
-        output.writeUInt32(9, levelId_);
+        output.writeUInt32(1, levelId_);
       }
       if (getFinishedChallengeIdListList().size() > 0) {
-        output.writeUInt32NoTag(82);
+        output.writeUInt32NoTag(122);
         output.writeUInt32NoTag(finishedChallengeIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < finishedChallengeIdList_.size(); i++) {
@@ -253,7 +229,7 @@ public final class GCGLevelChallengeFinishNotifyOuterClass {
       size = 0;
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, levelId_);
+          .computeUInt32Size(1, levelId_);
       }
       {
         int dataSize = 0;
@@ -402,8 +378,8 @@ public final class GCGLevelChallengeFinishNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: FDHMBLAHCMP
-     * CmdId: 7311
+     * CmdId: 7207
+     * Obf: DCGKGHOFDMC
      * </pre>
      *
      * Protobuf type {@code GCGLevelChallengeFinishNotify}
@@ -579,11 +555,7 @@ public final class GCGLevelChallengeFinishNotifyOuterClass {
          }
       }
       /**
-       * <pre>
-       *EJMHNAHNPOB snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 finished_challenge_id_list = 10;</code>
+       * <code>repeated uint32 finished_challenge_id_list = 15;</code>
        * @return A list containing the finishedChallengeIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -592,22 +564,14 @@ public final class GCGLevelChallengeFinishNotifyOuterClass {
                  java.util.Collections.unmodifiableList(finishedChallengeIdList_) : finishedChallengeIdList_;
       }
       /**
-       * <pre>
-       *EJMHNAHNPOB snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 finished_challenge_id_list = 10;</code>
+       * <code>repeated uint32 finished_challenge_id_list = 15;</code>
        * @return The count of finishedChallengeIdList.
        */
       public int getFinishedChallengeIdListCount() {
         return finishedChallengeIdList_.size();
       }
       /**
-       * <pre>
-       *EJMHNAHNPOB snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 finished_challenge_id_list = 10;</code>
+       * <code>repeated uint32 finished_challenge_id_list = 15;</code>
        * @param index The index of the element to return.
        * @return The finishedChallengeIdList at the given index.
        */
@@ -615,11 +579,7 @@ public final class GCGLevelChallengeFinishNotifyOuterClass {
         return finishedChallengeIdList_.getInt(index);
       }
       /**
-       * <pre>
-       *EJMHNAHNPOB snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 finished_challenge_id_list = 10;</code>
+       * <code>repeated uint32 finished_challenge_id_list = 15;</code>
        * @param index The index to set the value at.
        * @param value The finishedChallengeIdList to set.
        * @return This builder for chaining.
@@ -632,11 +592,7 @@ public final class GCGLevelChallengeFinishNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *EJMHNAHNPOB snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 finished_challenge_id_list = 10;</code>
+       * <code>repeated uint32 finished_challenge_id_list = 15;</code>
        * @param value The finishedChallengeIdList to add.
        * @return This builder for chaining.
        */
@@ -647,11 +603,7 @@ public final class GCGLevelChallengeFinishNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *EJMHNAHNPOB snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 finished_challenge_id_list = 10;</code>
+       * <code>repeated uint32 finished_challenge_id_list = 15;</code>
        * @param values The finishedChallengeIdList to add.
        * @return This builder for chaining.
        */
@@ -664,11 +616,7 @@ public final class GCGLevelChallengeFinishNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *EJMHNAHNPOB snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 finished_challenge_id_list = 10;</code>
+       * <code>repeated uint32 finished_challenge_id_list = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearFinishedChallengeIdList() {
@@ -680,7 +628,7 @@ public final class GCGLevelChallengeFinishNotifyOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 9;</code>
+       * <code>uint32 level_id = 1;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -688,7 +636,7 @@ public final class GCGLevelChallengeFinishNotifyOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 9;</code>
+       * <code>uint32 level_id = 1;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -699,7 +647,7 @@ public final class GCGLevelChallengeFinishNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 9;</code>
+       * <code>uint32 level_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -777,7 +725,7 @@ public final class GCGLevelChallengeFinishNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n#GCGLevelChallengeFinishNotify.proto\"U\n" +
       "\035GCGLevelChallengeFinishNotify\022\"\n\032finish" +
-      "ed_challenge_id_list\030\n \003(\r\022\020\n\010level_id\030\t" +
+      "ed_challenge_id_list\030\017 \003(\r\022\020\n\010level_id\030\001" +
       " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
     };

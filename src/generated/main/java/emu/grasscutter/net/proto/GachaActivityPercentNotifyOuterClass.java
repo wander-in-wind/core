@@ -19,17 +19,29 @@ public final class GachaActivityPercentNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 JBOFEKDGMIO = 6;</code>
-     * @return The jBOFEKDGMIO.
+     * <code>uint32 GIKCLDNNKBH = 13;</code>
+     * @return The gIKCLDNNKBH.
      */
-    int getJBOFEKDGMIO();
+    int getGIKCLDNNKBH();
 
     /**
-     * <code>map&lt;uint32, uint32&gt; target_num_map = 9;</code>
+     * <code>uint32 BMAOMMKFOII = 7;</code>
+     * @return The bMAOMMKFOII.
+     */
+    int getBMAOMMKFOII();
+
+    /**
+     * <code>uint32 CCNPDBCOPFG = 3;</code>
+     * @return The cCNPDBCOPFG.
+     */
+    int getCCNPDBCOPFG();
+
+    /**
+     * <code>map&lt;uint32, uint32&gt; target_num_map = 14;</code>
      */
     int getTargetNumMapCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; target_num_map = 9;</code>
+     * <code>map&lt;uint32, uint32&gt; target_num_map = 14;</code>
      */
     boolean containsTargetNumMap(
         int key);
@@ -40,40 +52,28 @@ public final class GachaActivityPercentNotifyOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getTargetNumMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; target_num_map = 9;</code>
+     * <code>map&lt;uint32, uint32&gt; target_num_map = 14;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getTargetNumMapMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; target_num_map = 9;</code>
+     * <code>map&lt;uint32, uint32&gt; target_num_map = 14;</code>
      */
 
     int getTargetNumMapOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; target_num_map = 9;</code>
+     * <code>map&lt;uint32, uint32&gt; target_num_map = 14;</code>
      */
 
     int getTargetNumMapOrThrow(
         int key);
-
-    /**
-     * <code>uint32 IMBCNJFONIC = 5;</code>
-     * @return The iMBCNJFONIC.
-     */
-    int getIMBCNJFONIC();
-
-    /**
-     * <code>uint32 BOPLNMEHANO = 14;</code>
-     * @return The bOPLNMEHANO.
-     */
-    int getBOPLNMEHANO();
   }
   /**
    * <pre>
-   * Name: LKNJAJALDIA
-   * CmdId: 8469
+   * CmdId: 8904
+   * Obf: MEDKLJJEOKG
    * </pre>
    *
    * Protobuf type {@code GachaActivityPercentNotify}
@@ -121,17 +121,22 @@ public final class GachaActivityPercentNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 24: {
 
-              iMBCNJFONIC_ = input.readUInt32();
+              cCNPDBCOPFG_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 56: {
 
-              jBOFEKDGMIO_ = input.readUInt32();
+              bMAOMMKFOII_ = input.readUInt32();
               break;
             }
-            case 74: {
+            case 104: {
+
+              gIKCLDNNKBH_ = input.readUInt32();
+              break;
+            }
+            case 114: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 targetNumMap_ = com.google.protobuf.MapField.newMapField(
                     TargetNumMapDefaultEntryHolder.defaultEntry);
@@ -142,11 +147,6 @@ public final class GachaActivityPercentNotifyOuterClass {
                   TargetNumMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
               targetNumMap_.getMutableMap().put(
                   targetNumMap__.getKey(), targetNumMap__.getValue());
-              break;
-            }
-            case 112: {
-
-              bOPLNMEHANO_ = input.readUInt32();
               break;
             }
             default: {
@@ -178,7 +178,7 @@ public final class GachaActivityPercentNotifyOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 9:
+        case 14:
           return internalGetTargetNumMap();
         default:
           throw new RuntimeException(
@@ -193,18 +193,40 @@ public final class GachaActivityPercentNotifyOuterClass {
               emu.grasscutter.net.proto.GachaActivityPercentNotifyOuterClass.GachaActivityPercentNotify.class, emu.grasscutter.net.proto.GachaActivityPercentNotifyOuterClass.GachaActivityPercentNotify.Builder.class);
     }
 
-    public static final int JBOFEKDGMIO_FIELD_NUMBER = 6;
-    private int jBOFEKDGMIO_;
+    public static final int GIKCLDNNKBH_FIELD_NUMBER = 13;
+    private int gIKCLDNNKBH_;
     /**
-     * <code>uint32 JBOFEKDGMIO = 6;</code>
-     * @return The jBOFEKDGMIO.
+     * <code>uint32 GIKCLDNNKBH = 13;</code>
+     * @return The gIKCLDNNKBH.
      */
     @java.lang.Override
-    public int getJBOFEKDGMIO() {
-      return jBOFEKDGMIO_;
+    public int getGIKCLDNNKBH() {
+      return gIKCLDNNKBH_;
     }
 
-    public static final int TARGET_NUM_MAP_FIELD_NUMBER = 9;
+    public static final int BMAOMMKFOII_FIELD_NUMBER = 7;
+    private int bMAOMMKFOII_;
+    /**
+     * <code>uint32 BMAOMMKFOII = 7;</code>
+     * @return The bMAOMMKFOII.
+     */
+    @java.lang.Override
+    public int getBMAOMMKFOII() {
+      return bMAOMMKFOII_;
+    }
+
+    public static final int CCNPDBCOPFG_FIELD_NUMBER = 3;
+    private int cCNPDBCOPFG_;
+    /**
+     * <code>uint32 CCNPDBCOPFG = 3;</code>
+     * @return The cCNPDBCOPFG.
+     */
+    @java.lang.Override
+    public int getCCNPDBCOPFG() {
+      return cCNPDBCOPFG_;
+    }
+
+    public static final int TARGET_NUM_MAP_FIELD_NUMBER = 14;
     private static final class TargetNumMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -231,7 +253,7 @@ public final class GachaActivityPercentNotifyOuterClass {
       return internalGetTargetNumMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; target_num_map = 9;</code>
+     * <code>map&lt;uint32, uint32&gt; target_num_map = 14;</code>
      */
 
     @java.lang.Override
@@ -249,7 +271,7 @@ public final class GachaActivityPercentNotifyOuterClass {
       return getTargetNumMapMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; target_num_map = 9;</code>
+     * <code>map&lt;uint32, uint32&gt; target_num_map = 14;</code>
      */
     @java.lang.Override
 
@@ -257,7 +279,7 @@ public final class GachaActivityPercentNotifyOuterClass {
       return internalGetTargetNumMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; target_num_map = 9;</code>
+     * <code>map&lt;uint32, uint32&gt; target_num_map = 14;</code>
      */
     @java.lang.Override
 
@@ -270,7 +292,7 @@ public final class GachaActivityPercentNotifyOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; target_num_map = 9;</code>
+     * <code>map&lt;uint32, uint32&gt; target_num_map = 14;</code>
      */
     @java.lang.Override
 
@@ -283,28 +305,6 @@ public final class GachaActivityPercentNotifyOuterClass {
         throw new java.lang.IllegalArgumentException();
       }
       return map.get(key);
-    }
-
-    public static final int IMBCNJFONIC_FIELD_NUMBER = 5;
-    private int iMBCNJFONIC_;
-    /**
-     * <code>uint32 IMBCNJFONIC = 5;</code>
-     * @return The iMBCNJFONIC.
-     */
-    @java.lang.Override
-    public int getIMBCNJFONIC() {
-      return iMBCNJFONIC_;
-    }
-
-    public static final int BOPLNMEHANO_FIELD_NUMBER = 14;
-    private int bOPLNMEHANO_;
-    /**
-     * <code>uint32 BOPLNMEHANO = 14;</code>
-     * @return The bOPLNMEHANO.
-     */
-    @java.lang.Override
-    public int getBOPLNMEHANO() {
-      return bOPLNMEHANO_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -321,21 +321,21 @@ public final class GachaActivityPercentNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (iMBCNJFONIC_ != 0) {
-        output.writeUInt32(5, iMBCNJFONIC_);
+      if (cCNPDBCOPFG_ != 0) {
+        output.writeUInt32(3, cCNPDBCOPFG_);
       }
-      if (jBOFEKDGMIO_ != 0) {
-        output.writeUInt32(6, jBOFEKDGMIO_);
+      if (bMAOMMKFOII_ != 0) {
+        output.writeUInt32(7, bMAOMMKFOII_);
+      }
+      if (gIKCLDNNKBH_ != 0) {
+        output.writeUInt32(13, gIKCLDNNKBH_);
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetTargetNumMap(),
           TargetNumMapDefaultEntryHolder.defaultEntry,
-          9);
-      if (bOPLNMEHANO_ != 0) {
-        output.writeUInt32(14, bOPLNMEHANO_);
-      }
+          14);
       unknownFields.writeTo(output);
     }
 
@@ -345,13 +345,17 @@ public final class GachaActivityPercentNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (iMBCNJFONIC_ != 0) {
+      if (cCNPDBCOPFG_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, iMBCNJFONIC_);
+          .computeUInt32Size(3, cCNPDBCOPFG_);
       }
-      if (jBOFEKDGMIO_ != 0) {
+      if (bMAOMMKFOII_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, jBOFEKDGMIO_);
+          .computeUInt32Size(7, bMAOMMKFOII_);
+      }
+      if (gIKCLDNNKBH_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, gIKCLDNNKBH_);
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
            : internalGetTargetNumMap().getMap().entrySet()) {
@@ -361,11 +365,7 @@ public final class GachaActivityPercentNotifyOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(9, targetNumMap__);
-      }
-      if (bOPLNMEHANO_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, bOPLNMEHANO_);
+            .computeMessageSize(14, targetNumMap__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -382,14 +382,14 @@ public final class GachaActivityPercentNotifyOuterClass {
       }
       emu.grasscutter.net.proto.GachaActivityPercentNotifyOuterClass.GachaActivityPercentNotify other = (emu.grasscutter.net.proto.GachaActivityPercentNotifyOuterClass.GachaActivityPercentNotify) obj;
 
-      if (getJBOFEKDGMIO()
-          != other.getJBOFEKDGMIO()) return false;
+      if (getGIKCLDNNKBH()
+          != other.getGIKCLDNNKBH()) return false;
+      if (getBMAOMMKFOII()
+          != other.getBMAOMMKFOII()) return false;
+      if (getCCNPDBCOPFG()
+          != other.getCCNPDBCOPFG()) return false;
       if (!internalGetTargetNumMap().equals(
           other.internalGetTargetNumMap())) return false;
-      if (getIMBCNJFONIC()
-          != other.getIMBCNJFONIC()) return false;
-      if (getBOPLNMEHANO()
-          != other.getBOPLNMEHANO()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -401,16 +401,16 @@ public final class GachaActivityPercentNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + JBOFEKDGMIO_FIELD_NUMBER;
-      hash = (53 * hash) + getJBOFEKDGMIO();
+      hash = (37 * hash) + GIKCLDNNKBH_FIELD_NUMBER;
+      hash = (53 * hash) + getGIKCLDNNKBH();
+      hash = (37 * hash) + BMAOMMKFOII_FIELD_NUMBER;
+      hash = (53 * hash) + getBMAOMMKFOII();
+      hash = (37 * hash) + CCNPDBCOPFG_FIELD_NUMBER;
+      hash = (53 * hash) + getCCNPDBCOPFG();
       if (!internalGetTargetNumMap().getMap().isEmpty()) {
         hash = (37 * hash) + TARGET_NUM_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetTargetNumMap().hashCode();
       }
-      hash = (37 * hash) + IMBCNJFONIC_FIELD_NUMBER;
-      hash = (53 * hash) + getIMBCNJFONIC();
-      hash = (37 * hash) + BOPLNMEHANO_FIELD_NUMBER;
-      hash = (53 * hash) + getBOPLNMEHANO();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -508,8 +508,8 @@ public final class GachaActivityPercentNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: LKNJAJALDIA
-     * CmdId: 8469
+     * CmdId: 8904
+     * Obf: MEDKLJJEOKG
      * </pre>
      *
      * Protobuf type {@code GachaActivityPercentNotify}
@@ -527,7 +527,7 @@ public final class GachaActivityPercentNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 9:
+          case 14:
             return internalGetTargetNumMap();
           default:
             throw new RuntimeException(
@@ -538,7 +538,7 @@ public final class GachaActivityPercentNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 9:
+          case 14:
             return internalGetMutableTargetNumMap();
           default:
             throw new RuntimeException(
@@ -571,13 +571,13 @@ public final class GachaActivityPercentNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        jBOFEKDGMIO_ = 0;
+        gIKCLDNNKBH_ = 0;
+
+        bMAOMMKFOII_ = 0;
+
+        cCNPDBCOPFG_ = 0;
 
         internalGetMutableTargetNumMap().clear();
-        iMBCNJFONIC_ = 0;
-
-        bOPLNMEHANO_ = 0;
-
         return this;
       }
 
@@ -605,11 +605,11 @@ public final class GachaActivityPercentNotifyOuterClass {
       public emu.grasscutter.net.proto.GachaActivityPercentNotifyOuterClass.GachaActivityPercentNotify buildPartial() {
         emu.grasscutter.net.proto.GachaActivityPercentNotifyOuterClass.GachaActivityPercentNotify result = new emu.grasscutter.net.proto.GachaActivityPercentNotifyOuterClass.GachaActivityPercentNotify(this);
         int from_bitField0_ = bitField0_;
-        result.jBOFEKDGMIO_ = jBOFEKDGMIO_;
+        result.gIKCLDNNKBH_ = gIKCLDNNKBH_;
+        result.bMAOMMKFOII_ = bMAOMMKFOII_;
+        result.cCNPDBCOPFG_ = cCNPDBCOPFG_;
         result.targetNumMap_ = internalGetTargetNumMap();
         result.targetNumMap_.makeImmutable();
-        result.iMBCNJFONIC_ = iMBCNJFONIC_;
-        result.bOPLNMEHANO_ = bOPLNMEHANO_;
         onBuilt();
         return result;
       }
@@ -658,17 +658,17 @@ public final class GachaActivityPercentNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GachaActivityPercentNotifyOuterClass.GachaActivityPercentNotify other) {
         if (other == emu.grasscutter.net.proto.GachaActivityPercentNotifyOuterClass.GachaActivityPercentNotify.getDefaultInstance()) return this;
-        if (other.getJBOFEKDGMIO() != 0) {
-          setJBOFEKDGMIO(other.getJBOFEKDGMIO());
+        if (other.getGIKCLDNNKBH() != 0) {
+          setGIKCLDNNKBH(other.getGIKCLDNNKBH());
+        }
+        if (other.getBMAOMMKFOII() != 0) {
+          setBMAOMMKFOII(other.getBMAOMMKFOII());
+        }
+        if (other.getCCNPDBCOPFG() != 0) {
+          setCCNPDBCOPFG(other.getCCNPDBCOPFG());
         }
         internalGetMutableTargetNumMap().mergeFrom(
             other.internalGetTargetNumMap());
-        if (other.getIMBCNJFONIC() != 0) {
-          setIMBCNJFONIC(other.getIMBCNJFONIC());
-        }
-        if (other.getBOPLNMEHANO() != 0) {
-          setBOPLNMEHANO(other.getBOPLNMEHANO());
-        }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -699,33 +699,95 @@ public final class GachaActivityPercentNotifyOuterClass {
       }
       private int bitField0_;
 
-      private int jBOFEKDGMIO_ ;
+      private int gIKCLDNNKBH_ ;
       /**
-       * <code>uint32 JBOFEKDGMIO = 6;</code>
-       * @return The jBOFEKDGMIO.
+       * <code>uint32 GIKCLDNNKBH = 13;</code>
+       * @return The gIKCLDNNKBH.
        */
       @java.lang.Override
-      public int getJBOFEKDGMIO() {
-        return jBOFEKDGMIO_;
+      public int getGIKCLDNNKBH() {
+        return gIKCLDNNKBH_;
       }
       /**
-       * <code>uint32 JBOFEKDGMIO = 6;</code>
-       * @param value The jBOFEKDGMIO to set.
+       * <code>uint32 GIKCLDNNKBH = 13;</code>
+       * @param value The gIKCLDNNKBH to set.
        * @return This builder for chaining.
        */
-      public Builder setJBOFEKDGMIO(int value) {
+      public Builder setGIKCLDNNKBH(int value) {
         
-        jBOFEKDGMIO_ = value;
+        gIKCLDNNKBH_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 JBOFEKDGMIO = 6;</code>
+       * <code>uint32 GIKCLDNNKBH = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearJBOFEKDGMIO() {
+      public Builder clearGIKCLDNNKBH() {
         
-        jBOFEKDGMIO_ = 0;
+        gIKCLDNNKBH_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int bMAOMMKFOII_ ;
+      /**
+       * <code>uint32 BMAOMMKFOII = 7;</code>
+       * @return The bMAOMMKFOII.
+       */
+      @java.lang.Override
+      public int getBMAOMMKFOII() {
+        return bMAOMMKFOII_;
+      }
+      /**
+       * <code>uint32 BMAOMMKFOII = 7;</code>
+       * @param value The bMAOMMKFOII to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBMAOMMKFOII(int value) {
+        
+        bMAOMMKFOII_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 BMAOMMKFOII = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBMAOMMKFOII() {
+        
+        bMAOMMKFOII_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int cCNPDBCOPFG_ ;
+      /**
+       * <code>uint32 CCNPDBCOPFG = 3;</code>
+       * @return The cCNPDBCOPFG.
+       */
+      @java.lang.Override
+      public int getCCNPDBCOPFG() {
+        return cCNPDBCOPFG_;
+      }
+      /**
+       * <code>uint32 CCNPDBCOPFG = 3;</code>
+       * @param value The cCNPDBCOPFG to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCCNPDBCOPFG(int value) {
+        
+        cCNPDBCOPFG_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 CCNPDBCOPFG = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCCNPDBCOPFG() {
+        
+        cCNPDBCOPFG_ = 0;
         onChanged();
         return this;
       }
@@ -757,7 +819,7 @@ public final class GachaActivityPercentNotifyOuterClass {
         return internalGetTargetNumMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; target_num_map = 9;</code>
+       * <code>map&lt;uint32, uint32&gt; target_num_map = 14;</code>
        */
 
       @java.lang.Override
@@ -775,7 +837,7 @@ public final class GachaActivityPercentNotifyOuterClass {
         return getTargetNumMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; target_num_map = 9;</code>
+       * <code>map&lt;uint32, uint32&gt; target_num_map = 14;</code>
        */
       @java.lang.Override
 
@@ -783,7 +845,7 @@ public final class GachaActivityPercentNotifyOuterClass {
         return internalGetTargetNumMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; target_num_map = 9;</code>
+       * <code>map&lt;uint32, uint32&gt; target_num_map = 14;</code>
        */
       @java.lang.Override
 
@@ -796,7 +858,7 @@ public final class GachaActivityPercentNotifyOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; target_num_map = 9;</code>
+       * <code>map&lt;uint32, uint32&gt; target_num_map = 14;</code>
        */
       @java.lang.Override
 
@@ -817,7 +879,7 @@ public final class GachaActivityPercentNotifyOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; target_num_map = 9;</code>
+       * <code>map&lt;uint32, uint32&gt; target_num_map = 14;</code>
        */
 
       public Builder removeTargetNumMap(
@@ -836,7 +898,7 @@ public final class GachaActivityPercentNotifyOuterClass {
         return internalGetMutableTargetNumMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; target_num_map = 9;</code>
+       * <code>map&lt;uint32, uint32&gt; target_num_map = 14;</code>
        */
       public Builder putTargetNumMap(
           int key,
@@ -848,75 +910,13 @@ public final class GachaActivityPercentNotifyOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; target_num_map = 9;</code>
+       * <code>map&lt;uint32, uint32&gt; target_num_map = 14;</code>
        */
 
       public Builder putAllTargetNumMap(
           java.util.Map<java.lang.Integer, java.lang.Integer> values) {
         internalGetMutableTargetNumMap().getMutableMap()
             .putAll(values);
-        return this;
-      }
-
-      private int iMBCNJFONIC_ ;
-      /**
-       * <code>uint32 IMBCNJFONIC = 5;</code>
-       * @return The iMBCNJFONIC.
-       */
-      @java.lang.Override
-      public int getIMBCNJFONIC() {
-        return iMBCNJFONIC_;
-      }
-      /**
-       * <code>uint32 IMBCNJFONIC = 5;</code>
-       * @param value The iMBCNJFONIC to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIMBCNJFONIC(int value) {
-        
-        iMBCNJFONIC_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 IMBCNJFONIC = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIMBCNJFONIC() {
-        
-        iMBCNJFONIC_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int bOPLNMEHANO_ ;
-      /**
-       * <code>uint32 BOPLNMEHANO = 14;</code>
-       * @return The bOPLNMEHANO.
-       */
-      @java.lang.Override
-      public int getBOPLNMEHANO() {
-        return bOPLNMEHANO_;
-      }
-      /**
-       * <code>uint32 BOPLNMEHANO = 14;</code>
-       * @param value The bOPLNMEHANO to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBOPLNMEHANO(int value) {
-        
-        bOPLNMEHANO_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 BOPLNMEHANO = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBOPLNMEHANO() {
-        
-        bOPLNMEHANO_ = 0;
-        onChanged();
         return this;
       }
       @java.lang.Override
@@ -992,10 +992,10 @@ public final class GachaActivityPercentNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n GachaActivityPercentNotify.proto\"\327\001\n\032G" +
-      "achaActivityPercentNotify\022\023\n\013JBOFEKDGMIO" +
-      "\030\006 \001(\r\022E\n\016target_num_map\030\t \003(\0132-.GachaAc" +
-      "tivityPercentNotify.TargetNumMapEntry\022\023\n" +
-      "\013IMBCNJFONIC\030\005 \001(\r\022\023\n\013BOPLNMEHANO\030\016 \001(\r\032" +
+      "achaActivityPercentNotify\022\023\n\013GIKCLDNNKBH" +
+      "\030\r \001(\r\022\023\n\013BMAOMMKFOII\030\007 \001(\r\022\023\n\013CCNPDBCOP" +
+      "FG\030\003 \001(\r\022E\n\016target_num_map\030\016 \003(\0132-.Gacha" +
+      "ActivityPercentNotify.TargetNumMapEntry\032" +
       "3\n\021TargetNumMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005val" +
       "ue\030\002 \001(\r:\0028\001B\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
@@ -1009,7 +1009,7 @@ public final class GachaActivityPercentNotifyOuterClass {
     internal_static_GachaActivityPercentNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GachaActivityPercentNotify_descriptor,
-        new java.lang.String[] { "JBOFEKDGMIO", "TargetNumMap", "IMBCNJFONIC", "BOPLNMEHANO", });
+        new java.lang.String[] { "GIKCLDNNKBH", "BMAOMMKFOII", "CCNPDBCOPFG", "TargetNumMap", });
     internal_static_GachaActivityPercentNotify_TargetNumMapEntry_descriptor =
       internal_static_GachaActivityPercentNotify_descriptor.getNestedTypes().get(0);
     internal_static_GachaActivityPercentNotify_TargetNumMapEntry_fieldAccessorTable = new

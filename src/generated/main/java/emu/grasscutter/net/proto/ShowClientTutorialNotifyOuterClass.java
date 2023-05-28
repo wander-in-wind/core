@@ -19,15 +19,15 @@ public final class ShowClientTutorialNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 tutorial_id = 6;</code>
+     * <code>uint32 tutorial_id = 9;</code>
      * @return The tutorialId.
      */
     int getTutorialId();
   }
   /**
    * <pre>
-   * Name: HNIEJMPFIBA
-   * CmdId: 3120
+   * CmdId: 3113
+   * Obf: BDHNPFFDMKB
    * </pre>
    *
    * Protobuf type {@code ShowClientTutorialNotify}
@@ -74,7 +74,7 @@ public final class ShowClientTutorialNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 72: {
 
               tutorialId_ = input.readUInt32();
               break;
@@ -111,10 +111,10 @@ public final class ShowClientTutorialNotifyOuterClass {
               emu.grasscutter.net.proto.ShowClientTutorialNotifyOuterClass.ShowClientTutorialNotify.class, emu.grasscutter.net.proto.ShowClientTutorialNotifyOuterClass.ShowClientTutorialNotify.Builder.class);
     }
 
-    public static final int TUTORIAL_ID_FIELD_NUMBER = 6;
+    public static final int TUTORIAL_ID_FIELD_NUMBER = 9;
     private int tutorialId_;
     /**
-     * <code>uint32 tutorial_id = 6;</code>
+     * <code>uint32 tutorial_id = 9;</code>
      * @return The tutorialId.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class ShowClientTutorialNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (tutorialId_ != 0) {
-        output.writeUInt32(6, tutorialId_);
+        output.writeUInt32(9, tutorialId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class ShowClientTutorialNotifyOuterClass {
       size = 0;
       if (tutorialId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, tutorialId_);
+          .computeUInt32Size(9, tutorialId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class ShowClientTutorialNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: HNIEJMPFIBA
-     * CmdId: 3120
+     * CmdId: 3113
+     * Obf: BDHNPFFDMKB
      * </pre>
      *
      * Protobuf type {@code ShowClientTutorialNotify}
@@ -431,7 +431,7 @@ public final class ShowClientTutorialNotifyOuterClass {
 
       private int tutorialId_ ;
       /**
-       * <code>uint32 tutorial_id = 6;</code>
+       * <code>uint32 tutorial_id = 9;</code>
        * @return The tutorialId.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class ShowClientTutorialNotifyOuterClass {
         return tutorialId_;
       }
       /**
-       * <code>uint32 tutorial_id = 6;</code>
+       * <code>uint32 tutorial_id = 9;</code>
        * @param value The tutorialId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class ShowClientTutorialNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 tutorial_id = 6;</code>
+       * <code>uint32 tutorial_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearTutorialId() {
@@ -527,7 +527,7 @@ public final class ShowClientTutorialNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036ShowClientTutorialNotify.proto\"/\n\030Show" +
-      "ClientTutorialNotify\022\023\n\013tutorial_id\030\006 \001(" +
+      "ClientTutorialNotify\022\023\n\013tutorial_id\030\t \001(" +
       "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -309,7 +309,7 @@ public final class SceneAvatarInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: JIKGNBFBIGC
+   * Obf: IPPGFCBJAGI
    * </pre>
    *
    * Protobuf type {@code SceneAvatarInfo}
@@ -1670,7 +1670,7 @@ public final class SceneAvatarInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: JIKGNBFBIGC
+     * Obf: IPPGFCBJAGI
      * </pre>
      *
      * Protobuf type {@code SceneAvatarInfo}
@@ -3900,10 +3900,10 @@ public final class SceneAvatarInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025SceneAvatarInfo.proto\032\025AvatarExcelInfo" +
-      ".proto\032\024CurVehicleInfo.proto\032\030SceneReliq" +
-      "uaryInfo.proto\032\025SceneWeaponInfo.proto\032\020S" +
-      "erverBuff.proto\"\235\006\n\017SceneAvatarInfo\022\013\n\003u" +
+      "\n\025SceneAvatarInfo.proto\032\025SceneWeaponInfo" +
+      ".proto\032\030SceneReliquaryInfo.proto\032\020Server" +
+      "Buff.proto\032\024CurVehicleInfo.proto\032\025Avatar" +
+      "ExcelInfo.proto\"\235\006\n\017SceneAvatarInfo\022\013\n\003u" +
       "id\030\001 \001(\r\022\021\n\tavatar_id\030\002 \001(\r\022\014\n\004guid\030\003 \001(" +
       "\004\022\017\n\007peer_id\030\004 \001(\r\022\025\n\requip_id_list\030\005 \003(" +
       "\r\022\026\n\016skill_depot_id\030\006 \001(\r\022\026\n\016talent_id_l" +
@@ -3929,11 +3929,11 @@ public final class SceneAvatarInfoOuterClass {
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.CurVehicleInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.ServerBuffOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.CurVehicleInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.getDescriptor(),
         });
     internal_static_SceneAvatarInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -3953,11 +3953,11 @@ public final class SceneAvatarInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneAvatarInfo_ProudSkillExtraLevelMapEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
-    emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.CurVehicleInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.SceneWeaponInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.SceneReliquaryInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.ServerBuffOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.CurVehicleInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

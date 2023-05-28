@@ -19,72 +19,72 @@ public final class GetScenePerformanceRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 ADFPDKKFBFA = 14;</code>
-     * @return The aDFPDKKFBFA.
-     */
-    int getADFPDKKFBFA();
-
-    /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 13;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 FFIGGEJJKHB = 5;</code>
-     * @return The fFIGGEJJKHB.
+     * <code>uint32 JHINOOICAJM = 12;</code>
+     * @return The jHINOOICAJM.
      */
-    int getFFIGGEJJKHB();
+    int getJHINOOICAJM();
 
     /**
-     * <code>uint32 FCNENPIPOHF = 10;</code>
-     * @return The fCNENPIPOHF.
+     * <code>uint32 HGJLDHOJLJJ = 6;</code>
+     * @return The hGJLDHOJLJJ.
      */
-    int getFCNENPIPOHF();
+    int getHGJLDHOJLJJ();
 
     /**
-     * <code>uint32 BGNBOPLNAGE = 2;</code>
-     * @return The bGNBOPLNAGE.
+     * <code>uint32 PGFLPDCCPMF = 10;</code>
+     * @return The pGFLPDCCPMF.
      */
-    int getBGNBOPLNAGE();
+    int getPGFLPDCCPMF();
 
     /**
-     * <code>uint32 OOJBBDPEAFK = 6;</code>
-     * @return The oOJBBDPEAFK.
+     * <code>uint32 BHKAFKKOANC = 3;</code>
+     * @return The bHKAFKKOANC.
      */
-    int getOOJBBDPEAFK();
+    int getBHKAFKKOANC();
 
     /**
-     * <code>uint32 OKDLGDADHNA = 13;</code>
-     * @return The oKDLGDADHNA.
+     * <code>uint32 NNEDOHGOGML = 14;</code>
+     * @return The nNEDOHGOGML.
      */
-    int getOKDLGDADHNA();
+    int getNNEDOHGOGML();
 
     /**
-     * <code>uint32 HMKFIEOOMLE = 7;</code>
-     * @return The hMKFIEOOMLE.
-     */
-    int getHMKFIEOOMLE();
-
-    /**
-     * <code>.Vector pos = 15;</code>
+     * <code>.Vector pos = 8;</code>
      * @return Whether the pos field is set.
      */
     boolean hasPos();
     /**
-     * <code>.Vector pos = 15;</code>
+     * <code>.Vector pos = 8;</code>
      * @return The pos.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
     /**
-     * <code>.Vector pos = 15;</code>
+     * <code>.Vector pos = 8;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
+
+    /**
+     * <code>uint32 OEJLPKPBOIO = 1;</code>
+     * @return The oEJLPKPBOIO.
+     */
+    int getOEJLPKPBOIO();
+
+    /**
+     * <code>uint32 BPNLPLOGNKB = 5;</code>
+     * @return The bPNLPLOGNKB.
+     */
+    int getBPNLPLOGNKB();
   }
   /**
    * <pre>
-   * Name: AINMKBAOKKB
-   * CmdId: 3274
+   * CmdId: 3082
+   * Obf: BIMLDBJFABH
    * </pre>
    *
    * Protobuf type {@code GetScenePerformanceRsp}
@@ -133,45 +133,25 @@ public final class GetScenePerformanceRspOuterClass {
               break;
             case 8: {
 
-              retcode_ = input.readInt32();
+              oEJLPKPBOIO_ = input.readUInt32();
               break;
             }
-            case 16: {
+            case 24: {
 
-              bGNBOPLNAGE_ = input.readUInt32();
+              bHKAFKKOANC_ = input.readUInt32();
               break;
             }
             case 40: {
 
-              fFIGGEJJKHB_ = input.readUInt32();
+              bPNLPLOGNKB_ = input.readUInt32();
               break;
             }
             case 48: {
 
-              oOJBBDPEAFK_ = input.readUInt32();
+              hGJLDHOJLJJ_ = input.readUInt32();
               break;
             }
-            case 56: {
-
-              hMKFIEOOMLE_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
-              fCNENPIPOHF_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
-              oKDLGDADHNA_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
-              aDFPDKKFBFA_ = input.readUInt32();
-              break;
-            }
-            case 122: {
+            case 66: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (pos_ != null) {
                 subBuilder = pos_.toBuilder();
@@ -182,6 +162,26 @@ public final class GetScenePerformanceRspOuterClass {
                 pos_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 80: {
+
+              pGFLPDCCPMF_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              jHINOOICAJM_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 112: {
+
+              nNEDOHGOGML_ = input.readUInt32();
               break;
             }
             default: {
@@ -216,21 +216,10 @@ public final class GetScenePerformanceRspOuterClass {
               emu.grasscutter.net.proto.GetScenePerformanceRspOuterClass.GetScenePerformanceRsp.class, emu.grasscutter.net.proto.GetScenePerformanceRspOuterClass.GetScenePerformanceRsp.Builder.class);
     }
 
-    public static final int ADFPDKKFBFA_FIELD_NUMBER = 14;
-    private int aDFPDKKFBFA_;
-    /**
-     * <code>uint32 ADFPDKKFBFA = 14;</code>
-     * @return The aDFPDKKFBFA.
-     */
-    @java.lang.Override
-    public int getADFPDKKFBFA() {
-      return aDFPDKKFBFA_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 1;
+    public static final int RETCODE_FIELD_NUMBER = 13;
     private int retcode_;
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 13;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -238,76 +227,65 @@ public final class GetScenePerformanceRspOuterClass {
       return retcode_;
     }
 
-    public static final int FFIGGEJJKHB_FIELD_NUMBER = 5;
-    private int fFIGGEJJKHB_;
+    public static final int JHINOOICAJM_FIELD_NUMBER = 12;
+    private int jHINOOICAJM_;
     /**
-     * <code>uint32 FFIGGEJJKHB = 5;</code>
-     * @return The fFIGGEJJKHB.
+     * <code>uint32 JHINOOICAJM = 12;</code>
+     * @return The jHINOOICAJM.
      */
     @java.lang.Override
-    public int getFFIGGEJJKHB() {
-      return fFIGGEJJKHB_;
+    public int getJHINOOICAJM() {
+      return jHINOOICAJM_;
     }
 
-    public static final int FCNENPIPOHF_FIELD_NUMBER = 10;
-    private int fCNENPIPOHF_;
+    public static final int HGJLDHOJLJJ_FIELD_NUMBER = 6;
+    private int hGJLDHOJLJJ_;
     /**
-     * <code>uint32 FCNENPIPOHF = 10;</code>
-     * @return The fCNENPIPOHF.
+     * <code>uint32 HGJLDHOJLJJ = 6;</code>
+     * @return The hGJLDHOJLJJ.
      */
     @java.lang.Override
-    public int getFCNENPIPOHF() {
-      return fCNENPIPOHF_;
+    public int getHGJLDHOJLJJ() {
+      return hGJLDHOJLJJ_;
     }
 
-    public static final int BGNBOPLNAGE_FIELD_NUMBER = 2;
-    private int bGNBOPLNAGE_;
+    public static final int PGFLPDCCPMF_FIELD_NUMBER = 10;
+    private int pGFLPDCCPMF_;
     /**
-     * <code>uint32 BGNBOPLNAGE = 2;</code>
-     * @return The bGNBOPLNAGE.
+     * <code>uint32 PGFLPDCCPMF = 10;</code>
+     * @return The pGFLPDCCPMF.
      */
     @java.lang.Override
-    public int getBGNBOPLNAGE() {
-      return bGNBOPLNAGE_;
+    public int getPGFLPDCCPMF() {
+      return pGFLPDCCPMF_;
     }
 
-    public static final int OOJBBDPEAFK_FIELD_NUMBER = 6;
-    private int oOJBBDPEAFK_;
+    public static final int BHKAFKKOANC_FIELD_NUMBER = 3;
+    private int bHKAFKKOANC_;
     /**
-     * <code>uint32 OOJBBDPEAFK = 6;</code>
-     * @return The oOJBBDPEAFK.
+     * <code>uint32 BHKAFKKOANC = 3;</code>
+     * @return The bHKAFKKOANC.
      */
     @java.lang.Override
-    public int getOOJBBDPEAFK() {
-      return oOJBBDPEAFK_;
+    public int getBHKAFKKOANC() {
+      return bHKAFKKOANC_;
     }
 
-    public static final int OKDLGDADHNA_FIELD_NUMBER = 13;
-    private int oKDLGDADHNA_;
+    public static final int NNEDOHGOGML_FIELD_NUMBER = 14;
+    private int nNEDOHGOGML_;
     /**
-     * <code>uint32 OKDLGDADHNA = 13;</code>
-     * @return The oKDLGDADHNA.
+     * <code>uint32 NNEDOHGOGML = 14;</code>
+     * @return The nNEDOHGOGML.
      */
     @java.lang.Override
-    public int getOKDLGDADHNA() {
-      return oKDLGDADHNA_;
+    public int getNNEDOHGOGML() {
+      return nNEDOHGOGML_;
     }
 
-    public static final int HMKFIEOOMLE_FIELD_NUMBER = 7;
-    private int hMKFIEOOMLE_;
-    /**
-     * <code>uint32 HMKFIEOOMLE = 7;</code>
-     * @return The hMKFIEOOMLE.
-     */
-    @java.lang.Override
-    public int getHMKFIEOOMLE() {
-      return hMKFIEOOMLE_;
-    }
-
-    public static final int POS_FIELD_NUMBER = 15;
+    public static final int POS_FIELD_NUMBER = 8;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
     /**
-     * <code>.Vector pos = 15;</code>
+     * <code>.Vector pos = 8;</code>
      * @return Whether the pos field is set.
      */
     @java.lang.Override
@@ -315,7 +293,7 @@ public final class GetScenePerformanceRspOuterClass {
       return pos_ != null;
     }
     /**
-     * <code>.Vector pos = 15;</code>
+     * <code>.Vector pos = 8;</code>
      * @return The pos.
      */
     @java.lang.Override
@@ -323,11 +301,33 @@ public final class GetScenePerformanceRspOuterClass {
       return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
     }
     /**
-     * <code>.Vector pos = 15;</code>
+     * <code>.Vector pos = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
       return getPos();
+    }
+
+    public static final int OEJLPKPBOIO_FIELD_NUMBER = 1;
+    private int oEJLPKPBOIO_;
+    /**
+     * <code>uint32 OEJLPKPBOIO = 1;</code>
+     * @return The oEJLPKPBOIO.
+     */
+    @java.lang.Override
+    public int getOEJLPKPBOIO() {
+      return oEJLPKPBOIO_;
+    }
+
+    public static final int BPNLPLOGNKB_FIELD_NUMBER = 5;
+    private int bPNLPLOGNKB_;
+    /**
+     * <code>uint32 BPNLPLOGNKB = 5;</code>
+     * @return The bPNLPLOGNKB.
+     */
+    @java.lang.Override
+    public int getBPNLPLOGNKB() {
+      return bPNLPLOGNKB_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -344,32 +344,32 @@ public final class GetScenePerformanceRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(1, retcode_);
+      if (oEJLPKPBOIO_ != 0) {
+        output.writeUInt32(1, oEJLPKPBOIO_);
       }
-      if (bGNBOPLNAGE_ != 0) {
-        output.writeUInt32(2, bGNBOPLNAGE_);
+      if (bHKAFKKOANC_ != 0) {
+        output.writeUInt32(3, bHKAFKKOANC_);
       }
-      if (fFIGGEJJKHB_ != 0) {
-        output.writeUInt32(5, fFIGGEJJKHB_);
+      if (bPNLPLOGNKB_ != 0) {
+        output.writeUInt32(5, bPNLPLOGNKB_);
       }
-      if (oOJBBDPEAFK_ != 0) {
-        output.writeUInt32(6, oOJBBDPEAFK_);
-      }
-      if (hMKFIEOOMLE_ != 0) {
-        output.writeUInt32(7, hMKFIEOOMLE_);
-      }
-      if (fCNENPIPOHF_ != 0) {
-        output.writeUInt32(10, fCNENPIPOHF_);
-      }
-      if (oKDLGDADHNA_ != 0) {
-        output.writeUInt32(13, oKDLGDADHNA_);
-      }
-      if (aDFPDKKFBFA_ != 0) {
-        output.writeUInt32(14, aDFPDKKFBFA_);
+      if (hGJLDHOJLJJ_ != 0) {
+        output.writeUInt32(6, hGJLDHOJLJJ_);
       }
       if (pos_ != null) {
-        output.writeMessage(15, getPos());
+        output.writeMessage(8, getPos());
+      }
+      if (pGFLPDCCPMF_ != 0) {
+        output.writeUInt32(10, pGFLPDCCPMF_);
+      }
+      if (jHINOOICAJM_ != 0) {
+        output.writeUInt32(12, jHINOOICAJM_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(13, retcode_);
+      }
+      if (nNEDOHGOGML_ != 0) {
+        output.writeUInt32(14, nNEDOHGOGML_);
       }
       unknownFields.writeTo(output);
     }
@@ -380,41 +380,41 @@ public final class GetScenePerformanceRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
+      if (oEJLPKPBOIO_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, retcode_);
+          .computeUInt32Size(1, oEJLPKPBOIO_);
       }
-      if (bGNBOPLNAGE_ != 0) {
+      if (bHKAFKKOANC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, bGNBOPLNAGE_);
+          .computeUInt32Size(3, bHKAFKKOANC_);
       }
-      if (fFIGGEJJKHB_ != 0) {
+      if (bPNLPLOGNKB_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, fFIGGEJJKHB_);
+          .computeUInt32Size(5, bPNLPLOGNKB_);
       }
-      if (oOJBBDPEAFK_ != 0) {
+      if (hGJLDHOJLJJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, oOJBBDPEAFK_);
-      }
-      if (hMKFIEOOMLE_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, hMKFIEOOMLE_);
-      }
-      if (fCNENPIPOHF_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, fCNENPIPOHF_);
-      }
-      if (oKDLGDADHNA_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, oKDLGDADHNA_);
-      }
-      if (aDFPDKKFBFA_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, aDFPDKKFBFA_);
+          .computeUInt32Size(6, hGJLDHOJLJJ_);
       }
       if (pos_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, getPos());
+          .computeMessageSize(8, getPos());
+      }
+      if (pGFLPDCCPMF_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, pGFLPDCCPMF_);
+      }
+      if (jHINOOICAJM_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, jHINOOICAJM_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(13, retcode_);
+      }
+      if (nNEDOHGOGML_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, nNEDOHGOGML_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -431,27 +431,27 @@ public final class GetScenePerformanceRspOuterClass {
       }
       emu.grasscutter.net.proto.GetScenePerformanceRspOuterClass.GetScenePerformanceRsp other = (emu.grasscutter.net.proto.GetScenePerformanceRspOuterClass.GetScenePerformanceRsp) obj;
 
-      if (getADFPDKKFBFA()
-          != other.getADFPDKKFBFA()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (getFFIGGEJJKHB()
-          != other.getFFIGGEJJKHB()) return false;
-      if (getFCNENPIPOHF()
-          != other.getFCNENPIPOHF()) return false;
-      if (getBGNBOPLNAGE()
-          != other.getBGNBOPLNAGE()) return false;
-      if (getOOJBBDPEAFK()
-          != other.getOOJBBDPEAFK()) return false;
-      if (getOKDLGDADHNA()
-          != other.getOKDLGDADHNA()) return false;
-      if (getHMKFIEOOMLE()
-          != other.getHMKFIEOOMLE()) return false;
+      if (getJHINOOICAJM()
+          != other.getJHINOOICAJM()) return false;
+      if (getHGJLDHOJLJJ()
+          != other.getHGJLDHOJLJJ()) return false;
+      if (getPGFLPDCCPMF()
+          != other.getPGFLPDCCPMF()) return false;
+      if (getBHKAFKKOANC()
+          != other.getBHKAFKKOANC()) return false;
+      if (getNNEDOHGOGML()
+          != other.getNNEDOHGOGML()) return false;
       if (hasPos() != other.hasPos()) return false;
       if (hasPos()) {
         if (!getPos()
             .equals(other.getPos())) return false;
       }
+      if (getOEJLPKPBOIO()
+          != other.getOEJLPKPBOIO()) return false;
+      if (getBPNLPLOGNKB()
+          != other.getBPNLPLOGNKB()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -463,26 +463,26 @@ public final class GetScenePerformanceRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ADFPDKKFBFA_FIELD_NUMBER;
-      hash = (53 * hash) + getADFPDKKFBFA();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + FFIGGEJJKHB_FIELD_NUMBER;
-      hash = (53 * hash) + getFFIGGEJJKHB();
-      hash = (37 * hash) + FCNENPIPOHF_FIELD_NUMBER;
-      hash = (53 * hash) + getFCNENPIPOHF();
-      hash = (37 * hash) + BGNBOPLNAGE_FIELD_NUMBER;
-      hash = (53 * hash) + getBGNBOPLNAGE();
-      hash = (37 * hash) + OOJBBDPEAFK_FIELD_NUMBER;
-      hash = (53 * hash) + getOOJBBDPEAFK();
-      hash = (37 * hash) + OKDLGDADHNA_FIELD_NUMBER;
-      hash = (53 * hash) + getOKDLGDADHNA();
-      hash = (37 * hash) + HMKFIEOOMLE_FIELD_NUMBER;
-      hash = (53 * hash) + getHMKFIEOOMLE();
+      hash = (37 * hash) + JHINOOICAJM_FIELD_NUMBER;
+      hash = (53 * hash) + getJHINOOICAJM();
+      hash = (37 * hash) + HGJLDHOJLJJ_FIELD_NUMBER;
+      hash = (53 * hash) + getHGJLDHOJLJJ();
+      hash = (37 * hash) + PGFLPDCCPMF_FIELD_NUMBER;
+      hash = (53 * hash) + getPGFLPDCCPMF();
+      hash = (37 * hash) + BHKAFKKOANC_FIELD_NUMBER;
+      hash = (53 * hash) + getBHKAFKKOANC();
+      hash = (37 * hash) + NNEDOHGOGML_FIELD_NUMBER;
+      hash = (53 * hash) + getNNEDOHGOGML();
       if (hasPos()) {
         hash = (37 * hash) + POS_FIELD_NUMBER;
         hash = (53 * hash) + getPos().hashCode();
       }
+      hash = (37 * hash) + OEJLPKPBOIO_FIELD_NUMBER;
+      hash = (53 * hash) + getOEJLPKPBOIO();
+      hash = (37 * hash) + BPNLPLOGNKB_FIELD_NUMBER;
+      hash = (53 * hash) + getBPNLPLOGNKB();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -580,8 +580,8 @@ public final class GetScenePerformanceRspOuterClass {
     }
     /**
      * <pre>
-     * Name: AINMKBAOKKB
-     * CmdId: 3274
+     * CmdId: 3082
+     * Obf: BIMLDBJFABH
      * </pre>
      *
      * Protobuf type {@code GetScenePerformanceRsp}
@@ -621,21 +621,17 @@ public final class GetScenePerformanceRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        aDFPDKKFBFA_ = 0;
-
         retcode_ = 0;
 
-        fFIGGEJJKHB_ = 0;
+        jHINOOICAJM_ = 0;
 
-        fCNENPIPOHF_ = 0;
+        hGJLDHOJLJJ_ = 0;
 
-        bGNBOPLNAGE_ = 0;
+        pGFLPDCCPMF_ = 0;
 
-        oOJBBDPEAFK_ = 0;
+        bHKAFKKOANC_ = 0;
 
-        oKDLGDADHNA_ = 0;
-
-        hMKFIEOOMLE_ = 0;
+        nNEDOHGOGML_ = 0;
 
         if (posBuilder_ == null) {
           pos_ = null;
@@ -643,6 +639,10 @@ public final class GetScenePerformanceRspOuterClass {
           pos_ = null;
           posBuilder_ = null;
         }
+        oEJLPKPBOIO_ = 0;
+
+        bPNLPLOGNKB_ = 0;
+
         return this;
       }
 
@@ -669,19 +669,19 @@ public final class GetScenePerformanceRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GetScenePerformanceRspOuterClass.GetScenePerformanceRsp buildPartial() {
         emu.grasscutter.net.proto.GetScenePerformanceRspOuterClass.GetScenePerformanceRsp result = new emu.grasscutter.net.proto.GetScenePerformanceRspOuterClass.GetScenePerformanceRsp(this);
-        result.aDFPDKKFBFA_ = aDFPDKKFBFA_;
         result.retcode_ = retcode_;
-        result.fFIGGEJJKHB_ = fFIGGEJJKHB_;
-        result.fCNENPIPOHF_ = fCNENPIPOHF_;
-        result.bGNBOPLNAGE_ = bGNBOPLNAGE_;
-        result.oOJBBDPEAFK_ = oOJBBDPEAFK_;
-        result.oKDLGDADHNA_ = oKDLGDADHNA_;
-        result.hMKFIEOOMLE_ = hMKFIEOOMLE_;
+        result.jHINOOICAJM_ = jHINOOICAJM_;
+        result.hGJLDHOJLJJ_ = hGJLDHOJLJJ_;
+        result.pGFLPDCCPMF_ = pGFLPDCCPMF_;
+        result.bHKAFKKOANC_ = bHKAFKKOANC_;
+        result.nNEDOHGOGML_ = nNEDOHGOGML_;
         if (posBuilder_ == null) {
           result.pos_ = pos_;
         } else {
           result.pos_ = posBuilder_.build();
         }
+        result.oEJLPKPBOIO_ = oEJLPKPBOIO_;
+        result.bPNLPLOGNKB_ = bPNLPLOGNKB_;
         onBuilt();
         return result;
       }
@@ -730,32 +730,32 @@ public final class GetScenePerformanceRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GetScenePerformanceRspOuterClass.GetScenePerformanceRsp other) {
         if (other == emu.grasscutter.net.proto.GetScenePerformanceRspOuterClass.GetScenePerformanceRsp.getDefaultInstance()) return this;
-        if (other.getADFPDKKFBFA() != 0) {
-          setADFPDKKFBFA(other.getADFPDKKFBFA());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
-        if (other.getFFIGGEJJKHB() != 0) {
-          setFFIGGEJJKHB(other.getFFIGGEJJKHB());
+        if (other.getJHINOOICAJM() != 0) {
+          setJHINOOICAJM(other.getJHINOOICAJM());
         }
-        if (other.getFCNENPIPOHF() != 0) {
-          setFCNENPIPOHF(other.getFCNENPIPOHF());
+        if (other.getHGJLDHOJLJJ() != 0) {
+          setHGJLDHOJLJJ(other.getHGJLDHOJLJJ());
         }
-        if (other.getBGNBOPLNAGE() != 0) {
-          setBGNBOPLNAGE(other.getBGNBOPLNAGE());
+        if (other.getPGFLPDCCPMF() != 0) {
+          setPGFLPDCCPMF(other.getPGFLPDCCPMF());
         }
-        if (other.getOOJBBDPEAFK() != 0) {
-          setOOJBBDPEAFK(other.getOOJBBDPEAFK());
+        if (other.getBHKAFKKOANC() != 0) {
+          setBHKAFKKOANC(other.getBHKAFKKOANC());
         }
-        if (other.getOKDLGDADHNA() != 0) {
-          setOKDLGDADHNA(other.getOKDLGDADHNA());
-        }
-        if (other.getHMKFIEOOMLE() != 0) {
-          setHMKFIEOOMLE(other.getHMKFIEOOMLE());
+        if (other.getNNEDOHGOGML() != 0) {
+          setNNEDOHGOGML(other.getNNEDOHGOGML());
         }
         if (other.hasPos()) {
           mergePos(other.getPos());
+        }
+        if (other.getOEJLPKPBOIO() != 0) {
+          setOEJLPKPBOIO(other.getOEJLPKPBOIO());
+        }
+        if (other.getBPNLPLOGNKB() != 0) {
+          setBPNLPLOGNKB(other.getBPNLPLOGNKB());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -786,40 +786,9 @@ public final class GetScenePerformanceRspOuterClass {
         return this;
       }
 
-      private int aDFPDKKFBFA_ ;
-      /**
-       * <code>uint32 ADFPDKKFBFA = 14;</code>
-       * @return The aDFPDKKFBFA.
-       */
-      @java.lang.Override
-      public int getADFPDKKFBFA() {
-        return aDFPDKKFBFA_;
-      }
-      /**
-       * <code>uint32 ADFPDKKFBFA = 14;</code>
-       * @param value The aDFPDKKFBFA to set.
-       * @return This builder for chaining.
-       */
-      public Builder setADFPDKKFBFA(int value) {
-        
-        aDFPDKKFBFA_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 ADFPDKKFBFA = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearADFPDKKFBFA() {
-        
-        aDFPDKKFBFA_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 13;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -827,7 +796,7 @@ public final class GetScenePerformanceRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 13;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -838,7 +807,7 @@ public final class GetScenePerformanceRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -848,188 +817,157 @@ public final class GetScenePerformanceRspOuterClass {
         return this;
       }
 
-      private int fFIGGEJJKHB_ ;
+      private int jHINOOICAJM_ ;
       /**
-       * <code>uint32 FFIGGEJJKHB = 5;</code>
-       * @return The fFIGGEJJKHB.
+       * <code>uint32 JHINOOICAJM = 12;</code>
+       * @return The jHINOOICAJM.
        */
       @java.lang.Override
-      public int getFFIGGEJJKHB() {
-        return fFIGGEJJKHB_;
+      public int getJHINOOICAJM() {
+        return jHINOOICAJM_;
       }
       /**
-       * <code>uint32 FFIGGEJJKHB = 5;</code>
-       * @param value The fFIGGEJJKHB to set.
+       * <code>uint32 JHINOOICAJM = 12;</code>
+       * @param value The jHINOOICAJM to set.
        * @return This builder for chaining.
        */
-      public Builder setFFIGGEJJKHB(int value) {
+      public Builder setJHINOOICAJM(int value) {
         
-        fFIGGEJJKHB_ = value;
+        jHINOOICAJM_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 FFIGGEJJKHB = 5;</code>
+       * <code>uint32 JHINOOICAJM = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFFIGGEJJKHB() {
+      public Builder clearJHINOOICAJM() {
         
-        fFIGGEJJKHB_ = 0;
+        jHINOOICAJM_ = 0;
         onChanged();
         return this;
       }
 
-      private int fCNENPIPOHF_ ;
+      private int hGJLDHOJLJJ_ ;
       /**
-       * <code>uint32 FCNENPIPOHF = 10;</code>
-       * @return The fCNENPIPOHF.
+       * <code>uint32 HGJLDHOJLJJ = 6;</code>
+       * @return The hGJLDHOJLJJ.
        */
       @java.lang.Override
-      public int getFCNENPIPOHF() {
-        return fCNENPIPOHF_;
+      public int getHGJLDHOJLJJ() {
+        return hGJLDHOJLJJ_;
       }
       /**
-       * <code>uint32 FCNENPIPOHF = 10;</code>
-       * @param value The fCNENPIPOHF to set.
+       * <code>uint32 HGJLDHOJLJJ = 6;</code>
+       * @param value The hGJLDHOJLJJ to set.
        * @return This builder for chaining.
        */
-      public Builder setFCNENPIPOHF(int value) {
+      public Builder setHGJLDHOJLJJ(int value) {
         
-        fCNENPIPOHF_ = value;
+        hGJLDHOJLJJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 FCNENPIPOHF = 10;</code>
+       * <code>uint32 HGJLDHOJLJJ = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFCNENPIPOHF() {
+      public Builder clearHGJLDHOJLJJ() {
         
-        fCNENPIPOHF_ = 0;
+        hGJLDHOJLJJ_ = 0;
         onChanged();
         return this;
       }
 
-      private int bGNBOPLNAGE_ ;
+      private int pGFLPDCCPMF_ ;
       /**
-       * <code>uint32 BGNBOPLNAGE = 2;</code>
-       * @return The bGNBOPLNAGE.
+       * <code>uint32 PGFLPDCCPMF = 10;</code>
+       * @return The pGFLPDCCPMF.
        */
       @java.lang.Override
-      public int getBGNBOPLNAGE() {
-        return bGNBOPLNAGE_;
+      public int getPGFLPDCCPMF() {
+        return pGFLPDCCPMF_;
       }
       /**
-       * <code>uint32 BGNBOPLNAGE = 2;</code>
-       * @param value The bGNBOPLNAGE to set.
+       * <code>uint32 PGFLPDCCPMF = 10;</code>
+       * @param value The pGFLPDCCPMF to set.
        * @return This builder for chaining.
        */
-      public Builder setBGNBOPLNAGE(int value) {
+      public Builder setPGFLPDCCPMF(int value) {
         
-        bGNBOPLNAGE_ = value;
+        pGFLPDCCPMF_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 BGNBOPLNAGE = 2;</code>
+       * <code>uint32 PGFLPDCCPMF = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBGNBOPLNAGE() {
+      public Builder clearPGFLPDCCPMF() {
         
-        bGNBOPLNAGE_ = 0;
+        pGFLPDCCPMF_ = 0;
         onChanged();
         return this;
       }
 
-      private int oOJBBDPEAFK_ ;
+      private int bHKAFKKOANC_ ;
       /**
-       * <code>uint32 OOJBBDPEAFK = 6;</code>
-       * @return The oOJBBDPEAFK.
+       * <code>uint32 BHKAFKKOANC = 3;</code>
+       * @return The bHKAFKKOANC.
        */
       @java.lang.Override
-      public int getOOJBBDPEAFK() {
-        return oOJBBDPEAFK_;
+      public int getBHKAFKKOANC() {
+        return bHKAFKKOANC_;
       }
       /**
-       * <code>uint32 OOJBBDPEAFK = 6;</code>
-       * @param value The oOJBBDPEAFK to set.
+       * <code>uint32 BHKAFKKOANC = 3;</code>
+       * @param value The bHKAFKKOANC to set.
        * @return This builder for chaining.
        */
-      public Builder setOOJBBDPEAFK(int value) {
+      public Builder setBHKAFKKOANC(int value) {
         
-        oOJBBDPEAFK_ = value;
+        bHKAFKKOANC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 OOJBBDPEAFK = 6;</code>
+       * <code>uint32 BHKAFKKOANC = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOOJBBDPEAFK() {
+      public Builder clearBHKAFKKOANC() {
         
-        oOJBBDPEAFK_ = 0;
+        bHKAFKKOANC_ = 0;
         onChanged();
         return this;
       }
 
-      private int oKDLGDADHNA_ ;
+      private int nNEDOHGOGML_ ;
       /**
-       * <code>uint32 OKDLGDADHNA = 13;</code>
-       * @return The oKDLGDADHNA.
+       * <code>uint32 NNEDOHGOGML = 14;</code>
+       * @return The nNEDOHGOGML.
        */
       @java.lang.Override
-      public int getOKDLGDADHNA() {
-        return oKDLGDADHNA_;
+      public int getNNEDOHGOGML() {
+        return nNEDOHGOGML_;
       }
       /**
-       * <code>uint32 OKDLGDADHNA = 13;</code>
-       * @param value The oKDLGDADHNA to set.
+       * <code>uint32 NNEDOHGOGML = 14;</code>
+       * @param value The nNEDOHGOGML to set.
        * @return This builder for chaining.
        */
-      public Builder setOKDLGDADHNA(int value) {
+      public Builder setNNEDOHGOGML(int value) {
         
-        oKDLGDADHNA_ = value;
+        nNEDOHGOGML_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 OKDLGDADHNA = 13;</code>
+       * <code>uint32 NNEDOHGOGML = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOKDLGDADHNA() {
+      public Builder clearNNEDOHGOGML() {
         
-        oKDLGDADHNA_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int hMKFIEOOMLE_ ;
-      /**
-       * <code>uint32 HMKFIEOOMLE = 7;</code>
-       * @return The hMKFIEOOMLE.
-       */
-      @java.lang.Override
-      public int getHMKFIEOOMLE() {
-        return hMKFIEOOMLE_;
-      }
-      /**
-       * <code>uint32 HMKFIEOOMLE = 7;</code>
-       * @param value The hMKFIEOOMLE to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHMKFIEOOMLE(int value) {
-        
-        hMKFIEOOMLE_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 HMKFIEOOMLE = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearHMKFIEOOMLE() {
-        
-        hMKFIEOOMLE_ = 0;
+        nNEDOHGOGML_ = 0;
         onChanged();
         return this;
       }
@@ -1038,14 +976,14 @@ public final class GetScenePerformanceRspOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
       /**
-       * <code>.Vector pos = 15;</code>
+       * <code>.Vector pos = 8;</code>
        * @return Whether the pos field is set.
        */
       public boolean hasPos() {
         return posBuilder_ != null || pos_ != null;
       }
       /**
-       * <code>.Vector pos = 15;</code>
+       * <code>.Vector pos = 8;</code>
        * @return The pos.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
@@ -1056,7 +994,7 @@ public final class GetScenePerformanceRspOuterClass {
         }
       }
       /**
-       * <code>.Vector pos = 15;</code>
+       * <code>.Vector pos = 8;</code>
        */
       public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -1072,7 +1010,7 @@ public final class GetScenePerformanceRspOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 15;</code>
+       * <code>.Vector pos = 8;</code>
        */
       public Builder setPos(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -1086,7 +1024,7 @@ public final class GetScenePerformanceRspOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 15;</code>
+       * <code>.Vector pos = 8;</code>
        */
       public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -1104,7 +1042,7 @@ public final class GetScenePerformanceRspOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 15;</code>
+       * <code>.Vector pos = 8;</code>
        */
       public Builder clearPos() {
         if (posBuilder_ == null) {
@@ -1118,7 +1056,7 @@ public final class GetScenePerformanceRspOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 15;</code>
+       * <code>.Vector pos = 8;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
         
@@ -1126,7 +1064,7 @@ public final class GetScenePerformanceRspOuterClass {
         return getPosFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector pos = 15;</code>
+       * <code>.Vector pos = 8;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
         if (posBuilder_ != null) {
@@ -1137,7 +1075,7 @@ public final class GetScenePerformanceRspOuterClass {
         }
       }
       /**
-       * <code>.Vector pos = 15;</code>
+       * <code>.Vector pos = 8;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -1151,6 +1089,68 @@ public final class GetScenePerformanceRspOuterClass {
           pos_ = null;
         }
         return posBuilder_;
+      }
+
+      private int oEJLPKPBOIO_ ;
+      /**
+       * <code>uint32 OEJLPKPBOIO = 1;</code>
+       * @return The oEJLPKPBOIO.
+       */
+      @java.lang.Override
+      public int getOEJLPKPBOIO() {
+        return oEJLPKPBOIO_;
+      }
+      /**
+       * <code>uint32 OEJLPKPBOIO = 1;</code>
+       * @param value The oEJLPKPBOIO to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOEJLPKPBOIO(int value) {
+        
+        oEJLPKPBOIO_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 OEJLPKPBOIO = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOEJLPKPBOIO() {
+        
+        oEJLPKPBOIO_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int bPNLPLOGNKB_ ;
+      /**
+       * <code>uint32 BPNLPLOGNKB = 5;</code>
+       * @return The bPNLPLOGNKB.
+       */
+      @java.lang.Override
+      public int getBPNLPLOGNKB() {
+        return bPNLPLOGNKB_;
+      }
+      /**
+       * <code>uint32 BPNLPLOGNKB = 5;</code>
+       * @param value The bPNLPLOGNKB to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBPNLPLOGNKB(int value) {
+        
+        bPNLPLOGNKB_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 BPNLPLOGNKB = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBPNLPLOGNKB() {
+        
+        bPNLPLOGNKB_ = 0;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1220,12 +1220,12 @@ public final class GetScenePerformanceRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034GetScenePerformanceRsp.proto\032\014Vector.p" +
-      "roto\"\322\001\n\026GetScenePerformanceRsp\022\023\n\013ADFPD" +
-      "KKFBFA\030\016 \001(\r\022\017\n\007retcode\030\001 \001(\005\022\023\n\013FFIGGEJ" +
-      "JKHB\030\005 \001(\r\022\023\n\013FCNENPIPOHF\030\n \001(\r\022\023\n\013BGNBO" +
-      "PLNAGE\030\002 \001(\r\022\023\n\013OOJBBDPEAFK\030\006 \001(\r\022\023\n\013OKD" +
-      "LGDADHNA\030\r \001(\r\022\023\n\013HMKFIEOOMLE\030\007 \001(\r\022\024\n\003p" +
-      "os\030\017 \001(\0132\007.VectorB\033\n\031emu.grasscutter.net" +
+      "roto\"\322\001\n\026GetScenePerformanceRsp\022\017\n\007retco" +
+      "de\030\r \001(\005\022\023\n\013JHINOOICAJM\030\014 \001(\r\022\023\n\013HGJLDHO" +
+      "JLJJ\030\006 \001(\r\022\023\n\013PGFLPDCCPMF\030\n \001(\r\022\023\n\013BHKAF" +
+      "KKOANC\030\003 \001(\r\022\023\n\013NNEDOHGOGML\030\016 \001(\r\022\024\n\003pos" +
+      "\030\010 \001(\0132\007.Vector\022\023\n\013OEJLPKPBOIO\030\001 \001(\r\022\023\n\013" +
+      "BPNLPLOGNKB\030\005 \001(\rB\033\n\031emu.grasscutter.net" +
       ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1238,7 +1238,7 @@ public final class GetScenePerformanceRspOuterClass {
     internal_static_GetScenePerformanceRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetScenePerformanceRsp_descriptor,
-        new java.lang.String[] { "ADFPDKKFBFA", "Retcode", "FFIGGEJJKHB", "FCNENPIPOHF", "BGNBOPLNAGE", "OOJBBDPEAFK", "OKDLGDADHNA", "HMKFIEOOMLE", "Pos", });
+        new java.lang.String[] { "Retcode", "JHINOOICAJM", "HGJLDHOJLJJ", "PGFLPDCCPMF", "BHKAFKKOANC", "NNEDOHGOGML", "Pos", "OEJLPKPBOIO", "BPNLPLOGNKB", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

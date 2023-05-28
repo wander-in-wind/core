@@ -19,7 +19,7 @@ public final class SelectWorktopOptionReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 gadget_entity_id = 12;</code>
+     * <code>uint32 gadget_entity_id = 3;</code>
      * @return The gadgetEntityId.
      */
     int getGadgetEntityId();
@@ -32,8 +32,8 @@ public final class SelectWorktopOptionReqOuterClass {
   }
   /**
    * <pre>
-   * Name: EJIFKLBLKOE
-   * CmdId: 814
+   * CmdId: 855
+   * Obf: MDNJNLAPAFA
    * </pre>
    *
    * Protobuf type {@code SelectWorktopOptionReq}
@@ -85,7 +85,7 @@ public final class SelectWorktopOptionReqOuterClass {
               optionId_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 24: {
 
               gadgetEntityId_ = input.readUInt32();
               break;
@@ -122,10 +122,10 @@ public final class SelectWorktopOptionReqOuterClass {
               emu.grasscutter.net.proto.SelectWorktopOptionReqOuterClass.SelectWorktopOptionReq.class, emu.grasscutter.net.proto.SelectWorktopOptionReqOuterClass.SelectWorktopOptionReq.Builder.class);
     }
 
-    public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 12;
+    public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 3;
     private int gadgetEntityId_;
     /**
-     * <code>uint32 gadget_entity_id = 12;</code>
+     * <code>uint32 gadget_entity_id = 3;</code>
      * @return The gadgetEntityId.
      */
     @java.lang.Override
@@ -162,7 +162,7 @@ public final class SelectWorktopOptionReqOuterClass {
         output.writeUInt32(2, optionId_);
       }
       if (gadgetEntityId_ != 0) {
-        output.writeUInt32(12, gadgetEntityId_);
+        output.writeUInt32(3, gadgetEntityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -179,7 +179,7 @@ public final class SelectWorktopOptionReqOuterClass {
       }
       if (gadgetEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, gadgetEntityId_);
+          .computeUInt32Size(3, gadgetEntityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class SelectWorktopOptionReqOuterClass {
     }
     /**
      * <pre>
-     * Name: EJIFKLBLKOE
-     * CmdId: 814
+     * CmdId: 855
+     * Obf: MDNJNLAPAFA
      * </pre>
      *
      * Protobuf type {@code SelectWorktopOptionReq}
@@ -470,7 +470,7 @@ public final class SelectWorktopOptionReqOuterClass {
 
       private int gadgetEntityId_ ;
       /**
-       * <code>uint32 gadget_entity_id = 12;</code>
+       * <code>uint32 gadget_entity_id = 3;</code>
        * @return The gadgetEntityId.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class SelectWorktopOptionReqOuterClass {
         return gadgetEntityId_;
       }
       /**
-       * <code>uint32 gadget_entity_id = 12;</code>
+       * <code>uint32 gadget_entity_id = 3;</code>
        * @param value The gadgetEntityId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class SelectWorktopOptionReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gadget_entity_id = 12;</code>
+       * <code>uint32 gadget_entity_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearGadgetEntityId() {
@@ -597,7 +597,7 @@ public final class SelectWorktopOptionReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034SelectWorktopOptionReq.proto\"E\n\026Select" +
-      "WorktopOptionReq\022\030\n\020gadget_entity_id\030\014 \001" +
+      "WorktopOptionReq\022\030\n\020gadget_entity_id\030\003 \001" +
       "(\r\022\021\n\toption_id\030\002 \001(\rB\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };

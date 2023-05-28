@@ -19,62 +19,62 @@ public final class PerformOperationNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.Vector pos = 11;</code>
-     * @return Whether the pos field is set.
+     * <code>.Vector rot = 5;</code>
+     * @return Whether the rot field is set.
      */
-    boolean hasPos();
+    boolean hasRot();
     /**
-     * <code>.Vector pos = 11;</code>
-     * @return The pos.
+     * <code>.Vector rot = 5;</code>
+     * @return The rot.
      */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getRot();
     /**
-     * <code>.Vector pos = 11;</code>
+     * <code>.Vector rot = 5;</code>
      */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder();
 
     /**
-     * <code>.PerformOperationNotify.OperateType operate_type = 3;</code>
+     * <code>.PerformOperationNotify.OperateType operate_type = 6;</code>
      * @return The enum numeric value on the wire for operateType.
      */
     int getOperateTypeValue();
     /**
-     * <code>.PerformOperationNotify.OperateType operate_type = 3;</code>
+     * <code>.PerformOperationNotify.OperateType operate_type = 6;</code>
      * @return The operateType.
      */
     emu.grasscutter.net.proto.PerformOperationNotifyOuterClass.PerformOperationNotify.OperateType getOperateType();
 
     /**
-     * <code>.Vector rot = 6;</code>
-     * @return Whether the rot field is set.
+     * <code>.Vector pos = 4;</code>
+     * @return Whether the pos field is set.
      */
-    boolean hasRot();
+    boolean hasPos();
     /**
-     * <code>.Vector rot = 6;</code>
-     * @return The rot.
+     * <code>.Vector pos = 4;</code>
+     * @return The pos.
      */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getRot();
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
     /**
-     * <code>.Vector rot = 6;</code>
+     * <code>.Vector pos = 4;</code>
      */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder();
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
 
     /**
-     * <code>uint32 index = 2;</code>
-     * @return The index.
-     */
-    int getIndex();
-
-    /**
-     * <code>uint32 entity_id = 15;</code>
+     * <code>uint32 entity_id = 2;</code>
      * @return The entityId.
      */
     int getEntityId();
+
+    /**
+     * <code>uint32 index = 14;</code>
+     * @return The index.
+     */
+    int getIndex();
   }
   /**
    * <pre>
-   * Name: PJEPKPGNFNF
-   * CmdId: 1161
+   * CmdId: 1138
+   * Obf: FHFCIHCBFCH
    * </pre>
    *
    * Protobuf type {@code PerformOperationNotify}
@@ -124,29 +124,10 @@ public final class PerformOperationNotifyOuterClass {
               break;
             case 16: {
 
-              index_ = input.readUInt32();
+              entityId_ = input.readUInt32();
               break;
             }
-            case 24: {
-              int rawValue = input.readEnum();
-
-              operateType_ = rawValue;
-              break;
-            }
-            case 50: {
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
-              if (rot_ != null) {
-                subBuilder = rot_.toBuilder();
-              }
-              rot_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(rot_);
-                rot_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 90: {
+            case 34: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (pos_ != null) {
                 subBuilder = pos_.toBuilder();
@@ -159,9 +140,28 @@ public final class PerformOperationNotifyOuterClass {
 
               break;
             }
-            case 120: {
+            case 42: {
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
+              if (rot_ != null) {
+                subBuilder = rot_.toBuilder();
+              }
+              rot_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(rot_);
+                rot_ = subBuilder.buildPartial();
+              }
 
-              entityId_ = input.readUInt32();
+              break;
+            }
+            case 48: {
+              int rawValue = input.readEnum();
+
+              operateType_ = rawValue;
+              break;
+            }
+            case 112: {
+
+              index_ = input.readUInt32();
               break;
             }
             default: {
@@ -198,7 +198,7 @@ public final class PerformOperationNotifyOuterClass {
 
     /**
      * <pre>
-     * Name: PAALNOEKAHO
+     * Obf: NNFFFOHDDHO
      * </pre>
      *
      * Protobuf enum {@code PerformOperationNotify.OperateType}
@@ -308,43 +308,43 @@ public final class PerformOperationNotifyOuterClass {
       // @@protoc_insertion_point(enum_scope:PerformOperationNotify.OperateType)
     }
 
-    public static final int POS_FIELD_NUMBER = 11;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
+    public static final int ROT_FIELD_NUMBER = 5;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector rot_;
     /**
-     * <code>.Vector pos = 11;</code>
-     * @return Whether the pos field is set.
+     * <code>.Vector rot = 5;</code>
+     * @return Whether the rot field is set.
      */
     @java.lang.Override
-    public boolean hasPos() {
-      return pos_ != null;
+    public boolean hasRot() {
+      return rot_ != null;
     }
     /**
-     * <code>.Vector pos = 11;</code>
-     * @return The pos.
+     * <code>.Vector rot = 5;</code>
+     * @return The rot.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
-      return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getRot() {
+      return rot_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : rot_;
     }
     /**
-     * <code>.Vector pos = 11;</code>
+     * <code>.Vector rot = 5;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
-      return getPos();
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder() {
+      return getRot();
     }
 
-    public static final int OPERATE_TYPE_FIELD_NUMBER = 3;
+    public static final int OPERATE_TYPE_FIELD_NUMBER = 6;
     private int operateType_;
     /**
-     * <code>.PerformOperationNotify.OperateType operate_type = 3;</code>
+     * <code>.PerformOperationNotify.OperateType operate_type = 6;</code>
      * @return The enum numeric value on the wire for operateType.
      */
     @java.lang.Override public int getOperateTypeValue() {
       return operateType_;
     }
     /**
-     * <code>.PerformOperationNotify.OperateType operate_type = 3;</code>
+     * <code>.PerformOperationNotify.OperateType operate_type = 6;</code>
      * @return The operateType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.PerformOperationNotifyOuterClass.PerformOperationNotify.OperateType getOperateType() {
@@ -353,52 +353,52 @@ public final class PerformOperationNotifyOuterClass {
       return result == null ? emu.grasscutter.net.proto.PerformOperationNotifyOuterClass.PerformOperationNotify.OperateType.UNRECOGNIZED : result;
     }
 
-    public static final int ROT_FIELD_NUMBER = 6;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector rot_;
+    public static final int POS_FIELD_NUMBER = 4;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
     /**
-     * <code>.Vector rot = 6;</code>
-     * @return Whether the rot field is set.
+     * <code>.Vector pos = 4;</code>
+     * @return Whether the pos field is set.
      */
     @java.lang.Override
-    public boolean hasRot() {
-      return rot_ != null;
+    public boolean hasPos() {
+      return pos_ != null;
     }
     /**
-     * <code>.Vector rot = 6;</code>
-     * @return The rot.
+     * <code>.Vector pos = 4;</code>
+     * @return The pos.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getRot() {
-      return rot_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : rot_;
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
+      return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
     }
     /**
-     * <code>.Vector rot = 6;</code>
+     * <code>.Vector pos = 4;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder() {
-      return getRot();
-    }
-
-    public static final int INDEX_FIELD_NUMBER = 2;
-    private int index_;
-    /**
-     * <code>uint32 index = 2;</code>
-     * @return The index.
-     */
-    @java.lang.Override
-    public int getIndex() {
-      return index_;
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
+      return getPos();
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 15;
+    public static final int ENTITY_ID_FIELD_NUMBER = 2;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 15;</code>
+     * <code>uint32 entity_id = 2;</code>
      * @return The entityId.
      */
     @java.lang.Override
     public int getEntityId() {
       return entityId_;
+    }
+
+    public static final int INDEX_FIELD_NUMBER = 14;
+    private int index_;
+    /**
+     * <code>uint32 index = 14;</code>
+     * @return The index.
+     */
+    @java.lang.Override
+    public int getIndex() {
+      return index_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -415,20 +415,20 @@ public final class PerformOperationNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (index_ != 0) {
-        output.writeUInt32(2, index_);
-      }
-      if (operateType_ != emu.grasscutter.net.proto.PerformOperationNotifyOuterClass.PerformOperationNotify.OperateType.OPERATE_TYPE_NONE.getNumber()) {
-        output.writeEnum(3, operateType_);
-      }
-      if (rot_ != null) {
-        output.writeMessage(6, getRot());
+      if (entityId_ != 0) {
+        output.writeUInt32(2, entityId_);
       }
       if (pos_ != null) {
-        output.writeMessage(11, getPos());
+        output.writeMessage(4, getPos());
       }
-      if (entityId_ != 0) {
-        output.writeUInt32(15, entityId_);
+      if (rot_ != null) {
+        output.writeMessage(5, getRot());
+      }
+      if (operateType_ != emu.grasscutter.net.proto.PerformOperationNotifyOuterClass.PerformOperationNotify.OperateType.OPERATE_TYPE_NONE.getNumber()) {
+        output.writeEnum(6, operateType_);
+      }
+      if (index_ != 0) {
+        output.writeUInt32(14, index_);
       }
       unknownFields.writeTo(output);
     }
@@ -439,25 +439,25 @@ public final class PerformOperationNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (index_ != 0) {
+      if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, index_);
-      }
-      if (operateType_ != emu.grasscutter.net.proto.PerformOperationNotifyOuterClass.PerformOperationNotify.OperateType.OPERATE_TYPE_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(3, operateType_);
-      }
-      if (rot_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, getRot());
+          .computeUInt32Size(2, entityId_);
       }
       if (pos_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, getPos());
+          .computeMessageSize(4, getPos());
       }
-      if (entityId_ != 0) {
+      if (rot_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, entityId_);
+          .computeMessageSize(5, getRot());
+      }
+      if (operateType_ != emu.grasscutter.net.proto.PerformOperationNotifyOuterClass.PerformOperationNotify.OperateType.OPERATE_TYPE_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(6, operateType_);
+      }
+      if (index_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, index_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -474,21 +474,21 @@ public final class PerformOperationNotifyOuterClass {
       }
       emu.grasscutter.net.proto.PerformOperationNotifyOuterClass.PerformOperationNotify other = (emu.grasscutter.net.proto.PerformOperationNotifyOuterClass.PerformOperationNotify) obj;
 
-      if (hasPos() != other.hasPos()) return false;
-      if (hasPos()) {
-        if (!getPos()
-            .equals(other.getPos())) return false;
-      }
-      if (operateType_ != other.operateType_) return false;
       if (hasRot() != other.hasRot()) return false;
       if (hasRot()) {
         if (!getRot()
             .equals(other.getRot())) return false;
       }
-      if (getIndex()
-          != other.getIndex()) return false;
+      if (operateType_ != other.operateType_) return false;
+      if (hasPos() != other.hasPos()) return false;
+      if (hasPos()) {
+        if (!getPos()
+            .equals(other.getPos())) return false;
+      }
       if (getEntityId()
           != other.getEntityId()) return false;
+      if (getIndex()
+          != other.getIndex()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -500,20 +500,20 @@ public final class PerformOperationNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasPos()) {
-        hash = (37 * hash) + POS_FIELD_NUMBER;
-        hash = (53 * hash) + getPos().hashCode();
-      }
-      hash = (37 * hash) + OPERATE_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + operateType_;
       if (hasRot()) {
         hash = (37 * hash) + ROT_FIELD_NUMBER;
         hash = (53 * hash) + getRot().hashCode();
       }
-      hash = (37 * hash) + INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getIndex();
+      hash = (37 * hash) + OPERATE_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + operateType_;
+      if (hasPos()) {
+        hash = (37 * hash) + POS_FIELD_NUMBER;
+        hash = (53 * hash) + getPos().hashCode();
+      }
       hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getEntityId();
+      hash = (37 * hash) + INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getIndex();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -611,8 +611,8 @@ public final class PerformOperationNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: PJEPKPGNFNF
-     * CmdId: 1161
+     * CmdId: 1138
+     * Obf: FHFCIHCBFCH
      * </pre>
      *
      * Protobuf type {@code PerformOperationNotify}
@@ -652,23 +652,23 @@ public final class PerformOperationNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (posBuilder_ == null) {
-          pos_ = null;
-        } else {
-          pos_ = null;
-          posBuilder_ = null;
-        }
-        operateType_ = 0;
-
         if (rotBuilder_ == null) {
           rot_ = null;
         } else {
           rot_ = null;
           rotBuilder_ = null;
         }
-        index_ = 0;
+        operateType_ = 0;
 
+        if (posBuilder_ == null) {
+          pos_ = null;
+        } else {
+          pos_ = null;
+          posBuilder_ = null;
+        }
         entityId_ = 0;
+
+        index_ = 0;
 
         return this;
       }
@@ -696,19 +696,19 @@ public final class PerformOperationNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PerformOperationNotifyOuterClass.PerformOperationNotify buildPartial() {
         emu.grasscutter.net.proto.PerformOperationNotifyOuterClass.PerformOperationNotify result = new emu.grasscutter.net.proto.PerformOperationNotifyOuterClass.PerformOperationNotify(this);
-        if (posBuilder_ == null) {
-          result.pos_ = pos_;
-        } else {
-          result.pos_ = posBuilder_.build();
-        }
-        result.operateType_ = operateType_;
         if (rotBuilder_ == null) {
           result.rot_ = rot_;
         } else {
           result.rot_ = rotBuilder_.build();
         }
-        result.index_ = index_;
+        result.operateType_ = operateType_;
+        if (posBuilder_ == null) {
+          result.pos_ = pos_;
+        } else {
+          result.pos_ = posBuilder_.build();
+        }
         result.entityId_ = entityId_;
+        result.index_ = index_;
         onBuilt();
         return result;
       }
@@ -757,20 +757,20 @@ public final class PerformOperationNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PerformOperationNotifyOuterClass.PerformOperationNotify other) {
         if (other == emu.grasscutter.net.proto.PerformOperationNotifyOuterClass.PerformOperationNotify.getDefaultInstance()) return this;
-        if (other.hasPos()) {
-          mergePos(other.getPos());
+        if (other.hasRot()) {
+          mergeRot(other.getRot());
         }
         if (other.operateType_ != 0) {
           setOperateTypeValue(other.getOperateTypeValue());
         }
-        if (other.hasRot()) {
-          mergeRot(other.getRot());
-        }
-        if (other.getIndex() != 0) {
-          setIndex(other.getIndex());
+        if (other.hasPos()) {
+          mergePos(other.getPos());
         }
         if (other.getEntityId() != 0) {
           setEntityId(other.getEntityId());
+        }
+        if (other.getIndex() != 0) {
+          setIndex(other.getIndex());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -801,191 +801,18 @@ public final class PerformOperationNotifyOuterClass {
         return this;
       }
 
-      private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
-      /**
-       * <code>.Vector pos = 11;</code>
-       * @return Whether the pos field is set.
-       */
-      public boolean hasPos() {
-        return posBuilder_ != null || pos_ != null;
-      }
-      /**
-       * <code>.Vector pos = 11;</code>
-       * @return The pos.
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
-        if (posBuilder_ == null) {
-          return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
-        } else {
-          return posBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.Vector pos = 11;</code>
-       */
-      public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (posBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          pos_ = value;
-          onChanged();
-        } else {
-          posBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector pos = 11;</code>
-       */
-      public Builder setPos(
-          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
-        if (posBuilder_ == null) {
-          pos_ = builderForValue.build();
-          onChanged();
-        } else {
-          posBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector pos = 11;</code>
-       */
-      public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (posBuilder_ == null) {
-          if (pos_ != null) {
-            pos_ =
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(pos_).mergeFrom(value).buildPartial();
-          } else {
-            pos_ = value;
-          }
-          onChanged();
-        } else {
-          posBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector pos = 11;</code>
-       */
-      public Builder clearPos() {
-        if (posBuilder_ == null) {
-          pos_ = null;
-          onChanged();
-        } else {
-          pos_ = null;
-          posBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector pos = 11;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
-        
-        onChanged();
-        return getPosFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.Vector pos = 11;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
-        if (posBuilder_ != null) {
-          return posBuilder_.getMessageOrBuilder();
-        } else {
-          return pos_ == null ?
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
-        }
-      }
-      /**
-       * <code>.Vector pos = 11;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
-          getPosFieldBuilder() {
-        if (posBuilder_ == null) {
-          posBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
-                  getPos(),
-                  getParentForChildren(),
-                  isClean());
-          pos_ = null;
-        }
-        return posBuilder_;
-      }
-
-      private int operateType_ = 0;
-      /**
-       * <code>.PerformOperationNotify.OperateType operate_type = 3;</code>
-       * @return The enum numeric value on the wire for operateType.
-       */
-      @java.lang.Override public int getOperateTypeValue() {
-        return operateType_;
-      }
-      /**
-       * <code>.PerformOperationNotify.OperateType operate_type = 3;</code>
-       * @param value The enum numeric value on the wire for operateType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOperateTypeValue(int value) {
-        
-        operateType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.PerformOperationNotify.OperateType operate_type = 3;</code>
-       * @return The operateType.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.PerformOperationNotifyOuterClass.PerformOperationNotify.OperateType getOperateType() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.PerformOperationNotifyOuterClass.PerformOperationNotify.OperateType result = emu.grasscutter.net.proto.PerformOperationNotifyOuterClass.PerformOperationNotify.OperateType.valueOf(operateType_);
-        return result == null ? emu.grasscutter.net.proto.PerformOperationNotifyOuterClass.PerformOperationNotify.OperateType.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.PerformOperationNotify.OperateType operate_type = 3;</code>
-       * @param value The operateType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOperateType(emu.grasscutter.net.proto.PerformOperationNotifyOuterClass.PerformOperationNotify.OperateType value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        operateType_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.PerformOperationNotify.OperateType operate_type = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOperateType() {
-        
-        operateType_ = 0;
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.VectorOuterClass.Vector rot_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> rotBuilder_;
       /**
-       * <code>.Vector rot = 6;</code>
+       * <code>.Vector rot = 5;</code>
        * @return Whether the rot field is set.
        */
       public boolean hasRot() {
         return rotBuilder_ != null || rot_ != null;
       }
       /**
-       * <code>.Vector rot = 6;</code>
+       * <code>.Vector rot = 5;</code>
        * @return The rot.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getRot() {
@@ -996,7 +823,7 @@ public final class PerformOperationNotifyOuterClass {
         }
       }
       /**
-       * <code>.Vector rot = 6;</code>
+       * <code>.Vector rot = 5;</code>
        */
       public Builder setRot(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (rotBuilder_ == null) {
@@ -1012,7 +839,7 @@ public final class PerformOperationNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.Vector rot = 6;</code>
+       * <code>.Vector rot = 5;</code>
        */
       public Builder setRot(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -1026,7 +853,7 @@ public final class PerformOperationNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.Vector rot = 6;</code>
+       * <code>.Vector rot = 5;</code>
        */
       public Builder mergeRot(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (rotBuilder_ == null) {
@@ -1044,7 +871,7 @@ public final class PerformOperationNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.Vector rot = 6;</code>
+       * <code>.Vector rot = 5;</code>
        */
       public Builder clearRot() {
         if (rotBuilder_ == null) {
@@ -1058,7 +885,7 @@ public final class PerformOperationNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.Vector rot = 6;</code>
+       * <code>.Vector rot = 5;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getRotBuilder() {
         
@@ -1066,7 +893,7 @@ public final class PerformOperationNotifyOuterClass {
         return getRotFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector rot = 6;</code>
+       * <code>.Vector rot = 5;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder() {
         if (rotBuilder_ != null) {
@@ -1077,7 +904,7 @@ public final class PerformOperationNotifyOuterClass {
         }
       }
       /**
-       * <code>.Vector rot = 6;</code>
+       * <code>.Vector rot = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -1093,40 +920,182 @@ public final class PerformOperationNotifyOuterClass {
         return rotBuilder_;
       }
 
-      private int index_ ;
+      private int operateType_ = 0;
       /**
-       * <code>uint32 index = 2;</code>
-       * @return The index.
+       * <code>.PerformOperationNotify.OperateType operate_type = 6;</code>
+       * @return The enum numeric value on the wire for operateType.
        */
-      @java.lang.Override
-      public int getIndex() {
-        return index_;
+      @java.lang.Override public int getOperateTypeValue() {
+        return operateType_;
       }
       /**
-       * <code>uint32 index = 2;</code>
-       * @param value The index to set.
+       * <code>.PerformOperationNotify.OperateType operate_type = 6;</code>
+       * @param value The enum numeric value on the wire for operateType to set.
        * @return This builder for chaining.
        */
-      public Builder setIndex(int value) {
+      public Builder setOperateTypeValue(int value) {
         
-        index_ = value;
+        operateType_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 index = 2;</code>
+       * <code>.PerformOperationNotify.OperateType operate_type = 6;</code>
+       * @return The operateType.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.PerformOperationNotifyOuterClass.PerformOperationNotify.OperateType getOperateType() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.PerformOperationNotifyOuterClass.PerformOperationNotify.OperateType result = emu.grasscutter.net.proto.PerformOperationNotifyOuterClass.PerformOperationNotify.OperateType.valueOf(operateType_);
+        return result == null ? emu.grasscutter.net.proto.PerformOperationNotifyOuterClass.PerformOperationNotify.OperateType.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.PerformOperationNotify.OperateType operate_type = 6;</code>
+       * @param value The operateType to set.
        * @return This builder for chaining.
        */
-      public Builder clearIndex() {
+      public Builder setOperateType(emu.grasscutter.net.proto.PerformOperationNotifyOuterClass.PerformOperationNotify.OperateType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
         
-        index_ = 0;
+        operateType_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.PerformOperationNotify.OperateType operate_type = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOperateType() {
+        
+        operateType_ = 0;
         onChanged();
         return this;
       }
 
+      private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
+      /**
+       * <code>.Vector pos = 4;</code>
+       * @return Whether the pos field is set.
+       */
+      public boolean hasPos() {
+        return posBuilder_ != null || pos_ != null;
+      }
+      /**
+       * <code>.Vector pos = 4;</code>
+       * @return The pos.
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
+        if (posBuilder_ == null) {
+          return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
+        } else {
+          return posBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.Vector pos = 4;</code>
+       */
+      public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (posBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          pos_ = value;
+          onChanged();
+        } else {
+          posBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector pos = 4;</code>
+       */
+      public Builder setPos(
+          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
+        if (posBuilder_ == null) {
+          pos_ = builderForValue.build();
+          onChanged();
+        } else {
+          posBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector pos = 4;</code>
+       */
+      public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (posBuilder_ == null) {
+          if (pos_ != null) {
+            pos_ =
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(pos_).mergeFrom(value).buildPartial();
+          } else {
+            pos_ = value;
+          }
+          onChanged();
+        } else {
+          posBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector pos = 4;</code>
+       */
+      public Builder clearPos() {
+        if (posBuilder_ == null) {
+          pos_ = null;
+          onChanged();
+        } else {
+          pos_ = null;
+          posBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector pos = 4;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
+        
+        onChanged();
+        return getPosFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.Vector pos = 4;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
+        if (posBuilder_ != null) {
+          return posBuilder_.getMessageOrBuilder();
+        } else {
+          return pos_ == null ?
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
+        }
+      }
+      /**
+       * <code>.Vector pos = 4;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
+          getPosFieldBuilder() {
+        if (posBuilder_ == null) {
+          posBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
+                  getPos(),
+                  getParentForChildren(),
+                  isClean());
+          pos_ = null;
+        }
+        return posBuilder_;
+      }
+
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 15;</code>
+       * <code>uint32 entity_id = 2;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -1134,7 +1103,7 @@ public final class PerformOperationNotifyOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 15;</code>
+       * <code>uint32 entity_id = 2;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -1145,12 +1114,43 @@ public final class PerformOperationNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 15;</code>
+       * <code>uint32 entity_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
         
         entityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int index_ ;
+      /**
+       * <code>uint32 index = 14;</code>
+       * @return The index.
+       */
+      @java.lang.Override
+      public int getIndex() {
+        return index_;
+      }
+      /**
+       * <code>uint32 index = 14;</code>
+       * @param value The index to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIndex(int value) {
+        
+        index_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 index = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIndex() {
+        
+        index_ = 0;
         onChanged();
         return this;
       }
@@ -1222,11 +1222,11 @@ public final class PerformOperationNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034PerformOperationNotify.proto\032\014Vector.p" +
-      "roto\"\340\001\n\026PerformOperationNotify\022\024\n\003pos\030\013" +
-      " \001(\0132\007.Vector\0229\n\014operate_type\030\003 \001(\0162#.Pe" +
-      "rformOperationNotify.OperateType\022\024\n\003rot\030" +
-      "\006 \001(\0132\007.Vector\022\r\n\005index\030\002 \001(\r\022\021\n\tentity_" +
-      "id\030\017 \001(\r\"=\n\013OperateType\022\025\n\021OPERATE_TYPE_" +
+      "roto\"\340\001\n\026PerformOperationNotify\022\024\n\003rot\030\005" +
+      " \001(\0132\007.Vector\0229\n\014operate_type\030\006 \001(\0162#.Pe" +
+      "rformOperationNotify.OperateType\022\024\n\003pos\030" +
+      "\004 \001(\0132\007.Vector\022\021\n\tentity_id\030\002 \001(\r\022\r\n\005ind" +
+      "ex\030\016 \001(\r\"=\n\013OperateType\022\025\n\021OPERATE_TYPE_" +
       "NONE\020\000\022\027\n\023OPERATE_TYPE_EFFECT\020\001B\033\n\031emu.g" +
       "rasscutter.net.protob\006proto3"
     };
@@ -1240,7 +1240,7 @@ public final class PerformOperationNotifyOuterClass {
     internal_static_PerformOperationNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PerformOperationNotify_descriptor,
-        new java.lang.String[] { "Pos", "OperateType", "Rot", "Index", "EntityId", });
+        new java.lang.String[] { "Rot", "OperateType", "Pos", "EntityId", "Index", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

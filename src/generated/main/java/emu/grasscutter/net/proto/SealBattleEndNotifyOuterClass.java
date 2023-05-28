@@ -19,21 +19,21 @@ public final class SealBattleEndNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_win = 13;</code>
-     * @return The isWin.
-     */
-    boolean getIsWin();
-
-    /**
-     * <code>uint32 seal_entity_id = 1;</code>
+     * <code>uint32 seal_entity_id = 11;</code>
      * @return The sealEntityId.
      */
     int getSealEntityId();
+
+    /**
+     * <code>bool is_win = 7;</code>
+     * @return The isWin.
+     */
+    boolean getIsWin();
   }
   /**
    * <pre>
-   * Name: MKIGENIAOAL
-   * CmdId: 290
+   * CmdId: 240
+   * Obf: OPMJPGCGNGC
    * </pre>
    *
    * Protobuf type {@code SealBattleEndNotify}
@@ -80,14 +80,14 @@ public final class SealBattleEndNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              sealEntityId_ = input.readUInt32();
-              break;
-            }
-            case 104: {
+            case 56: {
 
               isWin_ = input.readBool();
+              break;
+            }
+            case 88: {
+
+              sealEntityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,26 +122,26 @@ public final class SealBattleEndNotifyOuterClass {
               emu.grasscutter.net.proto.SealBattleEndNotifyOuterClass.SealBattleEndNotify.class, emu.grasscutter.net.proto.SealBattleEndNotifyOuterClass.SealBattleEndNotify.Builder.class);
     }
 
-    public static final int IS_WIN_FIELD_NUMBER = 13;
-    private boolean isWin_;
-    /**
-     * <code>bool is_win = 13;</code>
-     * @return The isWin.
-     */
-    @java.lang.Override
-    public boolean getIsWin() {
-      return isWin_;
-    }
-
-    public static final int SEAL_ENTITY_ID_FIELD_NUMBER = 1;
+    public static final int SEAL_ENTITY_ID_FIELD_NUMBER = 11;
     private int sealEntityId_;
     /**
-     * <code>uint32 seal_entity_id = 1;</code>
+     * <code>uint32 seal_entity_id = 11;</code>
      * @return The sealEntityId.
      */
     @java.lang.Override
     public int getSealEntityId() {
       return sealEntityId_;
+    }
+
+    public static final int IS_WIN_FIELD_NUMBER = 7;
+    private boolean isWin_;
+    /**
+     * <code>bool is_win = 7;</code>
+     * @return The isWin.
+     */
+    @java.lang.Override
+    public boolean getIsWin() {
+      return isWin_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -158,11 +158,11 @@ public final class SealBattleEndNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (sealEntityId_ != 0) {
-        output.writeUInt32(1, sealEntityId_);
-      }
       if (isWin_ != false) {
-        output.writeBool(13, isWin_);
+        output.writeBool(7, isWin_);
+      }
+      if (sealEntityId_ != 0) {
+        output.writeUInt32(11, sealEntityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class SealBattleEndNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (sealEntityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, sealEntityId_);
-      }
       if (isWin_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, isWin_);
+          .computeBoolSize(7, isWin_);
+      }
+      if (sealEntityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, sealEntityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +196,10 @@ public final class SealBattleEndNotifyOuterClass {
       }
       emu.grasscutter.net.proto.SealBattleEndNotifyOuterClass.SealBattleEndNotify other = (emu.grasscutter.net.proto.SealBattleEndNotifyOuterClass.SealBattleEndNotify) obj;
 
-      if (getIsWin()
-          != other.getIsWin()) return false;
       if (getSealEntityId()
           != other.getSealEntityId()) return false;
+      if (getIsWin()
+          != other.getIsWin()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,11 +211,11 @@ public final class SealBattleEndNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + SEAL_ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSealEntityId();
       hash = (37 * hash) + IS_WIN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsWin());
-      hash = (37 * hash) + SEAL_ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSealEntityId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -313,8 +313,8 @@ public final class SealBattleEndNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: MKIGENIAOAL
-     * CmdId: 290
+     * CmdId: 240
+     * Obf: OPMJPGCGNGC
      * </pre>
      *
      * Protobuf type {@code SealBattleEndNotify}
@@ -354,9 +354,9 @@ public final class SealBattleEndNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isWin_ = false;
-
         sealEntityId_ = 0;
+
+        isWin_ = false;
 
         return this;
       }
@@ -384,8 +384,8 @@ public final class SealBattleEndNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SealBattleEndNotifyOuterClass.SealBattleEndNotify buildPartial() {
         emu.grasscutter.net.proto.SealBattleEndNotifyOuterClass.SealBattleEndNotify result = new emu.grasscutter.net.proto.SealBattleEndNotifyOuterClass.SealBattleEndNotify(this);
-        result.isWin_ = isWin_;
         result.sealEntityId_ = sealEntityId_;
+        result.isWin_ = isWin_;
         onBuilt();
         return result;
       }
@@ -434,11 +434,11 @@ public final class SealBattleEndNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SealBattleEndNotifyOuterClass.SealBattleEndNotify other) {
         if (other == emu.grasscutter.net.proto.SealBattleEndNotifyOuterClass.SealBattleEndNotify.getDefaultInstance()) return this;
-        if (other.getIsWin() != false) {
-          setIsWin(other.getIsWin());
-        }
         if (other.getSealEntityId() != 0) {
           setSealEntityId(other.getSealEntityId());
+        }
+        if (other.getIsWin() != false) {
+          setIsWin(other.getIsWin());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -469,40 +469,9 @@ public final class SealBattleEndNotifyOuterClass {
         return this;
       }
 
-      private boolean isWin_ ;
-      /**
-       * <code>bool is_win = 13;</code>
-       * @return The isWin.
-       */
-      @java.lang.Override
-      public boolean getIsWin() {
-        return isWin_;
-      }
-      /**
-       * <code>bool is_win = 13;</code>
-       * @param value The isWin to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsWin(boolean value) {
-        
-        isWin_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_win = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsWin() {
-        
-        isWin_ = false;
-        onChanged();
-        return this;
-      }
-
       private int sealEntityId_ ;
       /**
-       * <code>uint32 seal_entity_id = 1;</code>
+       * <code>uint32 seal_entity_id = 11;</code>
        * @return The sealEntityId.
        */
       @java.lang.Override
@@ -510,7 +479,7 @@ public final class SealBattleEndNotifyOuterClass {
         return sealEntityId_;
       }
       /**
-       * <code>uint32 seal_entity_id = 1;</code>
+       * <code>uint32 seal_entity_id = 11;</code>
        * @param value The sealEntityId to set.
        * @return This builder for chaining.
        */
@@ -521,12 +490,43 @@ public final class SealBattleEndNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 seal_entity_id = 1;</code>
+       * <code>uint32 seal_entity_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearSealEntityId() {
         
         sealEntityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isWin_ ;
+      /**
+       * <code>bool is_win = 7;</code>
+       * @return The isWin.
+       */
+      @java.lang.Override
+      public boolean getIsWin() {
+        return isWin_;
+      }
+      /**
+       * <code>bool is_win = 7;</code>
+       * @param value The isWin to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsWin(boolean value) {
+        
+        isWin_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_win = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsWin() {
+        
+        isWin_ = false;
         onChanged();
         return this;
       }
@@ -598,8 +598,8 @@ public final class SealBattleEndNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031SealBattleEndNotify.proto\"=\n\023SealBattl" +
-      "eEndNotify\022\016\n\006is_win\030\r \001(\010\022\026\n\016seal_entit" +
-      "y_id\030\001 \001(\rB\033\n\031emu.grasscutter.net.protob" +
+      "eEndNotify\022\026\n\016seal_entity_id\030\013 \001(\r\022\016\n\006is" +
+      "_win\030\007 \001(\010B\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -611,7 +611,7 @@ public final class SealBattleEndNotifyOuterClass {
     internal_static_SealBattleEndNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SealBattleEndNotify_descriptor,
-        new java.lang.String[] { "IsWin", "SealEntityId", });
+        new java.lang.String[] { "SealEntityId", "IsWin", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

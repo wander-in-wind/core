@@ -19,15 +19,15 @@ public final class MeetNpcReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 npc_id = 8;</code>
+     * <code>uint32 npc_id = 14;</code>
      * @return The npcId.
      */
     int getNpcId();
   }
   /**
    * <pre>
-   * Name: ANDOJPOAAPC
-   * CmdId: 572
+   * CmdId: 558
+   * Obf: JPJOIOMFOBI
    * </pre>
    *
    * Protobuf type {@code MeetNpcReq}
@@ -74,7 +74,7 @@ public final class MeetNpcReqOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 112: {
 
               npcId_ = input.readUInt32();
               break;
@@ -111,10 +111,10 @@ public final class MeetNpcReqOuterClass {
               emu.grasscutter.net.proto.MeetNpcReqOuterClass.MeetNpcReq.class, emu.grasscutter.net.proto.MeetNpcReqOuterClass.MeetNpcReq.Builder.class);
     }
 
-    public static final int NPC_ID_FIELD_NUMBER = 8;
+    public static final int NPC_ID_FIELD_NUMBER = 14;
     private int npcId_;
     /**
-     * <code>uint32 npc_id = 8;</code>
+     * <code>uint32 npc_id = 14;</code>
      * @return The npcId.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class MeetNpcReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (npcId_ != 0) {
-        output.writeUInt32(8, npcId_);
+        output.writeUInt32(14, npcId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class MeetNpcReqOuterClass {
       size = 0;
       if (npcId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, npcId_);
+          .computeUInt32Size(14, npcId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class MeetNpcReqOuterClass {
     }
     /**
      * <pre>
-     * Name: ANDOJPOAAPC
-     * CmdId: 572
+     * CmdId: 558
+     * Obf: JPJOIOMFOBI
      * </pre>
      *
      * Protobuf type {@code MeetNpcReq}
@@ -431,7 +431,7 @@ public final class MeetNpcReqOuterClass {
 
       private int npcId_ ;
       /**
-       * <code>uint32 npc_id = 8;</code>
+       * <code>uint32 npc_id = 14;</code>
        * @return The npcId.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class MeetNpcReqOuterClass {
         return npcId_;
       }
       /**
-       * <code>uint32 npc_id = 8;</code>
+       * <code>uint32 npc_id = 14;</code>
        * @param value The npcId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class MeetNpcReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 npc_id = 8;</code>
+       * <code>uint32 npc_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearNpcId() {
@@ -527,7 +527,7 @@ public final class MeetNpcReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\020MeetNpcReq.proto\"\034\n\nMeetNpcReq\022\016\n\006npc_" +
-      "id\030\010 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
+      "id\030\016 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

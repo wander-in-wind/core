@@ -19,82 +19,82 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint32, uint32&gt; MFBGONHGOKI = 14;</code>
-     */
-    int getMFBGONHGOKICount();
-    /**
-     * <code>map&lt;uint32, uint32&gt; MFBGONHGOKI = 14;</code>
-     */
-    boolean containsMFBGONHGOKI(
-        int key);
-    /**
-     * Use {@link #getMFBGONHGOKIMap()} instead.
-     */
-    @java.lang.Deprecated
-    java.util.Map<java.lang.Integer, java.lang.Integer>
-    getMFBGONHGOKI();
-    /**
-     * <code>map&lt;uint32, uint32&gt; MFBGONHGOKI = 14;</code>
-     */
-    java.util.Map<java.lang.Integer, java.lang.Integer>
-    getMFBGONHGOKIMap();
-    /**
-     * <code>map&lt;uint32, uint32&gt; MFBGONHGOKI = 14;</code>
-     */
-
-    int getMFBGONHGOKIOrDefault(
-        int key,
-        int defaultValue);
-    /**
-     * <code>map&lt;uint32, uint32&gt; MFBGONHGOKI = 14;</code>
-     */
-
-    int getMFBGONHGOKIOrThrow(
-        int key);
-
-    /**
-     * <code>map&lt;uint32, uint32&gt; DOONOMIFCJA = 13;</code>
-     */
-    int getDOONOMIFCJACount();
-    /**
-     * <code>map&lt;uint32, uint32&gt; DOONOMIFCJA = 13;</code>
-     */
-    boolean containsDOONOMIFCJA(
-        int key);
-    /**
-     * Use {@link #getDOONOMIFCJAMap()} instead.
-     */
-    @java.lang.Deprecated
-    java.util.Map<java.lang.Integer, java.lang.Integer>
-    getDOONOMIFCJA();
-    /**
-     * <code>map&lt;uint32, uint32&gt; DOONOMIFCJA = 13;</code>
-     */
-    java.util.Map<java.lang.Integer, java.lang.Integer>
-    getDOONOMIFCJAMap();
-    /**
-     * <code>map&lt;uint32, uint32&gt; DOONOMIFCJA = 13;</code>
-     */
-
-    int getDOONOMIFCJAOrDefault(
-        int key,
-        int defaultValue);
-    /**
-     * <code>map&lt;uint32, uint32&gt; DOONOMIFCJA = 13;</code>
-     */
-
-    int getDOONOMIFCJAOrThrow(
-        int key);
-
-    /**
-     * <code>uint32 uid = 12;</code>
+     * <code>uint32 uid = 14;</code>
      * @return The uid.
      */
     int getUid();
+
+    /**
+     * <code>map&lt;uint32, uint32&gt; CAIDLCELFLB = 15;</code>
+     */
+    int getCAIDLCELFLBCount();
+    /**
+     * <code>map&lt;uint32, uint32&gt; CAIDLCELFLB = 15;</code>
+     */
+    boolean containsCAIDLCELFLB(
+        int key);
+    /**
+     * Use {@link #getCAIDLCELFLBMap()} instead.
+     */
+    @java.lang.Deprecated
+    java.util.Map<java.lang.Integer, java.lang.Integer>
+    getCAIDLCELFLB();
+    /**
+     * <code>map&lt;uint32, uint32&gt; CAIDLCELFLB = 15;</code>
+     */
+    java.util.Map<java.lang.Integer, java.lang.Integer>
+    getCAIDLCELFLBMap();
+    /**
+     * <code>map&lt;uint32, uint32&gt; CAIDLCELFLB = 15;</code>
+     */
+
+    int getCAIDLCELFLBOrDefault(
+        int key,
+        int defaultValue);
+    /**
+     * <code>map&lt;uint32, uint32&gt; CAIDLCELFLB = 15;</code>
+     */
+
+    int getCAIDLCELFLBOrThrow(
+        int key);
+
+    /**
+     * <code>map&lt;uint32, uint32&gt; EBBCPNKLENP = 2;</code>
+     */
+    int getEBBCPNKLENPCount();
+    /**
+     * <code>map&lt;uint32, uint32&gt; EBBCPNKLENP = 2;</code>
+     */
+    boolean containsEBBCPNKLENP(
+        int key);
+    /**
+     * Use {@link #getEBBCPNKLENPMap()} instead.
+     */
+    @java.lang.Deprecated
+    java.util.Map<java.lang.Integer, java.lang.Integer>
+    getEBBCPNKLENP();
+    /**
+     * <code>map&lt;uint32, uint32&gt; EBBCPNKLENP = 2;</code>
+     */
+    java.util.Map<java.lang.Integer, java.lang.Integer>
+    getEBBCPNKLENPMap();
+    /**
+     * <code>map&lt;uint32, uint32&gt; EBBCPNKLENP = 2;</code>
+     */
+
+    int getEBBCPNKLENPOrDefault(
+        int key,
+        int defaultValue);
+    /**
+     * <code>map&lt;uint32, uint32&gt; EBBCPNKLENP = 2;</code>
+     */
+
+    int getEBBCPNKLENPOrThrow(
+        int key);
   }
   /**
    * <pre>
-   * Name: EAMMPIMBPKH
+   * Obf: IODOKNGPEHE
    * </pre>
    *
    * Protobuf type {@code PlantFlowerAcceptFlowerResultInfo}
@@ -142,35 +142,35 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
+            case 18: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                eBBCPNKLENP_ = com.google.protobuf.MapField.newMapField(
+                    EBBCPNKLENPDefaultEntryHolder.defaultEntry);
+                mutable_bitField0_ |= 0x00000002;
+              }
+              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+              eBBCPNKLENP__ = input.readMessage(
+                  EBBCPNKLENPDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              eBBCPNKLENP_.getMutableMap().put(
+                  eBBCPNKLENP__.getKey(), eBBCPNKLENP__.getValue());
+              break;
+            }
+            case 112: {
 
               uid_ = input.readUInt32();
               break;
             }
-            case 106: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                dOONOMIFCJA_ = com.google.protobuf.MapField.newMapField(
-                    DOONOMIFCJADefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000002;
-              }
-              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              dOONOMIFCJA__ = input.readMessage(
-                  DOONOMIFCJADefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              dOONOMIFCJA_.getMutableMap().put(
-                  dOONOMIFCJA__.getKey(), dOONOMIFCJA__.getValue());
-              break;
-            }
-            case 114: {
+            case 122: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                mFBGONHGOKI_ = com.google.protobuf.MapField.newMapField(
-                    MFBGONHGOKIDefaultEntryHolder.defaultEntry);
+                cAIDLCELFLB_ = com.google.protobuf.MapField.newMapField(
+                    CAIDLCELFLBDefaultEntryHolder.defaultEntry);
                 mutable_bitField0_ |= 0x00000001;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              mFBGONHGOKI__ = input.readMessage(
-                  MFBGONHGOKIDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              mFBGONHGOKI_.getMutableMap().put(
-                  mFBGONHGOKI__.getKey(), mFBGONHGOKI__.getValue());
+              cAIDLCELFLB__ = input.readMessage(
+                  CAIDLCELFLBDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              cAIDLCELFLB_.getMutableMap().put(
+                  cAIDLCELFLB__.getKey(), cAIDLCELFLB__.getValue());
               break;
             }
             default: {
@@ -202,10 +202,10 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 14:
-          return internalGetMFBGONHGOKI();
-        case 13:
-          return internalGetDOONOMIFCJA();
+        case 15:
+          return internalGetCAIDLCELFLB();
+        case 2:
+          return internalGetEBBCPNKLENP();
         default:
           throw new RuntimeException(
               "Invalid map field number: " + number);
@@ -219,177 +219,177 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
               emu.grasscutter.net.proto.PlantFlowerAcceptFlowerResultInfoOuterClass.PlantFlowerAcceptFlowerResultInfo.class, emu.grasscutter.net.proto.PlantFlowerAcceptFlowerResultInfoOuterClass.PlantFlowerAcceptFlowerResultInfo.Builder.class);
     }
 
-    public static final int MFBGONHGOKI_FIELD_NUMBER = 14;
-    private static final class MFBGONHGOKIDefaultEntryHolder {
-      static final com.google.protobuf.MapEntry<
-          java.lang.Integer, java.lang.Integer> defaultEntry =
-              com.google.protobuf.MapEntry
-              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.PlantFlowerAcceptFlowerResultInfoOuterClass.internal_static_PlantFlowerAcceptFlowerResultInfo_MFBGONHGOKIEntry_descriptor, 
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0,
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0);
-    }
-    private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Integer> mFBGONHGOKI_;
-    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-    internalGetMFBGONHGOKI() {
-      if (mFBGONHGOKI_ == null) {
-        return com.google.protobuf.MapField.emptyMapField(
-            MFBGONHGOKIDefaultEntryHolder.defaultEntry);
-      }
-      return mFBGONHGOKI_;
-    }
-
-    public int getMFBGONHGOKICount() {
-      return internalGetMFBGONHGOKI().getMap().size();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; MFBGONHGOKI = 14;</code>
-     */
-
-    @java.lang.Override
-    public boolean containsMFBGONHGOKI(
-        int key) {
-      
-      return internalGetMFBGONHGOKI().getMap().containsKey(key);
-    }
-    /**
-     * Use {@link #getMFBGONHGOKIMap()} instead.
-     */
-    @java.lang.Override
-    @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getMFBGONHGOKI() {
-      return getMFBGONHGOKIMap();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; MFBGONHGOKI = 14;</code>
-     */
-    @java.lang.Override
-
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getMFBGONHGOKIMap() {
-      return internalGetMFBGONHGOKI().getMap();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; MFBGONHGOKI = 14;</code>
-     */
-    @java.lang.Override
-
-    public int getMFBGONHGOKIOrDefault(
-        int key,
-        int defaultValue) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetMFBGONHGOKI().getMap();
-      return map.containsKey(key) ? map.get(key) : defaultValue;
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; MFBGONHGOKI = 14;</code>
-     */
-    @java.lang.Override
-
-    public int getMFBGONHGOKIOrThrow(
-        int key) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetMFBGONHGOKI().getMap();
-      if (!map.containsKey(key)) {
-        throw new java.lang.IllegalArgumentException();
-      }
-      return map.get(key);
-    }
-
-    public static final int DOONOMIFCJA_FIELD_NUMBER = 13;
-    private static final class DOONOMIFCJADefaultEntryHolder {
-      static final com.google.protobuf.MapEntry<
-          java.lang.Integer, java.lang.Integer> defaultEntry =
-              com.google.protobuf.MapEntry
-              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.PlantFlowerAcceptFlowerResultInfoOuterClass.internal_static_PlantFlowerAcceptFlowerResultInfo_DOONOMIFCJAEntry_descriptor, 
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0,
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0);
-    }
-    private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Integer> dOONOMIFCJA_;
-    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-    internalGetDOONOMIFCJA() {
-      if (dOONOMIFCJA_ == null) {
-        return com.google.protobuf.MapField.emptyMapField(
-            DOONOMIFCJADefaultEntryHolder.defaultEntry);
-      }
-      return dOONOMIFCJA_;
-    }
-
-    public int getDOONOMIFCJACount() {
-      return internalGetDOONOMIFCJA().getMap().size();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; DOONOMIFCJA = 13;</code>
-     */
-
-    @java.lang.Override
-    public boolean containsDOONOMIFCJA(
-        int key) {
-      
-      return internalGetDOONOMIFCJA().getMap().containsKey(key);
-    }
-    /**
-     * Use {@link #getDOONOMIFCJAMap()} instead.
-     */
-    @java.lang.Override
-    @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getDOONOMIFCJA() {
-      return getDOONOMIFCJAMap();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; DOONOMIFCJA = 13;</code>
-     */
-    @java.lang.Override
-
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getDOONOMIFCJAMap() {
-      return internalGetDOONOMIFCJA().getMap();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; DOONOMIFCJA = 13;</code>
-     */
-    @java.lang.Override
-
-    public int getDOONOMIFCJAOrDefault(
-        int key,
-        int defaultValue) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetDOONOMIFCJA().getMap();
-      return map.containsKey(key) ? map.get(key) : defaultValue;
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; DOONOMIFCJA = 13;</code>
-     */
-    @java.lang.Override
-
-    public int getDOONOMIFCJAOrThrow(
-        int key) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetDOONOMIFCJA().getMap();
-      if (!map.containsKey(key)) {
-        throw new java.lang.IllegalArgumentException();
-      }
-      return map.get(key);
-    }
-
-    public static final int UID_FIELD_NUMBER = 12;
+    public static final int UID_FIELD_NUMBER = 14;
     private int uid_;
     /**
-     * <code>uint32 uid = 12;</code>
+     * <code>uint32 uid = 14;</code>
      * @return The uid.
      */
     @java.lang.Override
     public int getUid() {
       return uid_;
+    }
+
+    public static final int CAIDLCELFLB_FIELD_NUMBER = 15;
+    private static final class CAIDLCELFLBDefaultEntryHolder {
+      static final com.google.protobuf.MapEntry<
+          java.lang.Integer, java.lang.Integer> defaultEntry =
+              com.google.protobuf.MapEntry
+              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
+                  emu.grasscutter.net.proto.PlantFlowerAcceptFlowerResultInfoOuterClass.internal_static_PlantFlowerAcceptFlowerResultInfo_CAIDLCELFLBEntry_descriptor, 
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0,
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0);
+    }
+    private com.google.protobuf.MapField<
+        java.lang.Integer, java.lang.Integer> cAIDLCELFLB_;
+    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+    internalGetCAIDLCELFLB() {
+      if (cAIDLCELFLB_ == null) {
+        return com.google.protobuf.MapField.emptyMapField(
+            CAIDLCELFLBDefaultEntryHolder.defaultEntry);
+      }
+      return cAIDLCELFLB_;
+    }
+
+    public int getCAIDLCELFLBCount() {
+      return internalGetCAIDLCELFLB().getMap().size();
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; CAIDLCELFLB = 15;</code>
+     */
+
+    @java.lang.Override
+    public boolean containsCAIDLCELFLB(
+        int key) {
+      
+      return internalGetCAIDLCELFLB().getMap().containsKey(key);
+    }
+    /**
+     * Use {@link #getCAIDLCELFLBMap()} instead.
+     */
+    @java.lang.Override
+    @java.lang.Deprecated
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getCAIDLCELFLB() {
+      return getCAIDLCELFLBMap();
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; CAIDLCELFLB = 15;</code>
+     */
+    @java.lang.Override
+
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getCAIDLCELFLBMap() {
+      return internalGetCAIDLCELFLB().getMap();
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; CAIDLCELFLB = 15;</code>
+     */
+    @java.lang.Override
+
+    public int getCAIDLCELFLBOrDefault(
+        int key,
+        int defaultValue) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetCAIDLCELFLB().getMap();
+      return map.containsKey(key) ? map.get(key) : defaultValue;
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; CAIDLCELFLB = 15;</code>
+     */
+    @java.lang.Override
+
+    public int getCAIDLCELFLBOrThrow(
+        int key) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetCAIDLCELFLB().getMap();
+      if (!map.containsKey(key)) {
+        throw new java.lang.IllegalArgumentException();
+      }
+      return map.get(key);
+    }
+
+    public static final int EBBCPNKLENP_FIELD_NUMBER = 2;
+    private static final class EBBCPNKLENPDefaultEntryHolder {
+      static final com.google.protobuf.MapEntry<
+          java.lang.Integer, java.lang.Integer> defaultEntry =
+              com.google.protobuf.MapEntry
+              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
+                  emu.grasscutter.net.proto.PlantFlowerAcceptFlowerResultInfoOuterClass.internal_static_PlantFlowerAcceptFlowerResultInfo_EBBCPNKLENPEntry_descriptor, 
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0,
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0);
+    }
+    private com.google.protobuf.MapField<
+        java.lang.Integer, java.lang.Integer> eBBCPNKLENP_;
+    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+    internalGetEBBCPNKLENP() {
+      if (eBBCPNKLENP_ == null) {
+        return com.google.protobuf.MapField.emptyMapField(
+            EBBCPNKLENPDefaultEntryHolder.defaultEntry);
+      }
+      return eBBCPNKLENP_;
+    }
+
+    public int getEBBCPNKLENPCount() {
+      return internalGetEBBCPNKLENP().getMap().size();
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; EBBCPNKLENP = 2;</code>
+     */
+
+    @java.lang.Override
+    public boolean containsEBBCPNKLENP(
+        int key) {
+      
+      return internalGetEBBCPNKLENP().getMap().containsKey(key);
+    }
+    /**
+     * Use {@link #getEBBCPNKLENPMap()} instead.
+     */
+    @java.lang.Override
+    @java.lang.Deprecated
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getEBBCPNKLENP() {
+      return getEBBCPNKLENPMap();
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; EBBCPNKLENP = 2;</code>
+     */
+    @java.lang.Override
+
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getEBBCPNKLENPMap() {
+      return internalGetEBBCPNKLENP().getMap();
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; EBBCPNKLENP = 2;</code>
+     */
+    @java.lang.Override
+
+    public int getEBBCPNKLENPOrDefault(
+        int key,
+        int defaultValue) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetEBBCPNKLENP().getMap();
+      return map.containsKey(key) ? map.get(key) : defaultValue;
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; EBBCPNKLENP = 2;</code>
+     */
+    @java.lang.Override
+
+    public int getEBBCPNKLENPOrThrow(
+        int key) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetEBBCPNKLENP().getMap();
+      if (!map.containsKey(key)) {
+        throw new java.lang.IllegalArgumentException();
+      }
+      return map.get(key);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -406,21 +406,21 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      com.google.protobuf.GeneratedMessageV3
+        .serializeIntegerMapTo(
+          output,
+          internalGetEBBCPNKLENP(),
+          EBBCPNKLENPDefaultEntryHolder.defaultEntry,
+          2);
       if (uid_ != 0) {
-        output.writeUInt32(12, uid_);
+        output.writeUInt32(14, uid_);
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
-          internalGetDOONOMIFCJA(),
-          DOONOMIFCJADefaultEntryHolder.defaultEntry,
-          13);
-      com.google.protobuf.GeneratedMessageV3
-        .serializeIntegerMapTo(
-          output,
-          internalGetMFBGONHGOKI(),
-          MFBGONHGOKIDefaultEntryHolder.defaultEntry,
-          14);
+          internalGetCAIDLCELFLB(),
+          CAIDLCELFLBDefaultEntryHolder.defaultEntry,
+          15);
       unknownFields.writeTo(output);
     }
 
@@ -430,29 +430,29 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
+           : internalGetEBBCPNKLENP().getMap().entrySet()) {
+        com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+        eBBCPNKLENP__ = EBBCPNKLENPDefaultEntryHolder.defaultEntry.newBuilderForType()
+            .setKey(entry.getKey())
+            .setValue(entry.getValue())
+            .build();
+        size += com.google.protobuf.CodedOutputStream
+            .computeMessageSize(2, eBBCPNKLENP__);
+      }
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, uid_);
+          .computeUInt32Size(14, uid_);
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetDOONOMIFCJA().getMap().entrySet()) {
+           : internalGetCAIDLCELFLB().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        dOONOMIFCJA__ = DOONOMIFCJADefaultEntryHolder.defaultEntry.newBuilderForType()
+        cAIDLCELFLB__ = CAIDLCELFLBDefaultEntryHolder.defaultEntry.newBuilderForType()
             .setKey(entry.getKey())
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(13, dOONOMIFCJA__);
-      }
-      for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetMFBGONHGOKI().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        mFBGONHGOKI__ = MFBGONHGOKIDefaultEntryHolder.defaultEntry.newBuilderForType()
-            .setKey(entry.getKey())
-            .setValue(entry.getValue())
-            .build();
-        size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(14, mFBGONHGOKI__);
+            .computeMessageSize(15, cAIDLCELFLB__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -469,12 +469,12 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
       }
       emu.grasscutter.net.proto.PlantFlowerAcceptFlowerResultInfoOuterClass.PlantFlowerAcceptFlowerResultInfo other = (emu.grasscutter.net.proto.PlantFlowerAcceptFlowerResultInfoOuterClass.PlantFlowerAcceptFlowerResultInfo) obj;
 
-      if (!internalGetMFBGONHGOKI().equals(
-          other.internalGetMFBGONHGOKI())) return false;
-      if (!internalGetDOONOMIFCJA().equals(
-          other.internalGetDOONOMIFCJA())) return false;
       if (getUid()
           != other.getUid()) return false;
+      if (!internalGetCAIDLCELFLB().equals(
+          other.internalGetCAIDLCELFLB())) return false;
+      if (!internalGetEBBCPNKLENP().equals(
+          other.internalGetEBBCPNKLENP())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -486,16 +486,16 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (!internalGetMFBGONHGOKI().getMap().isEmpty()) {
-        hash = (37 * hash) + MFBGONHGOKI_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetMFBGONHGOKI().hashCode();
-      }
-      if (!internalGetDOONOMIFCJA().getMap().isEmpty()) {
-        hash = (37 * hash) + DOONOMIFCJA_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetDOONOMIFCJA().hashCode();
-      }
       hash = (37 * hash) + UID_FIELD_NUMBER;
       hash = (53 * hash) + getUid();
+      if (!internalGetCAIDLCELFLB().getMap().isEmpty()) {
+        hash = (37 * hash) + CAIDLCELFLB_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetCAIDLCELFLB().hashCode();
+      }
+      if (!internalGetEBBCPNKLENP().getMap().isEmpty()) {
+        hash = (37 * hash) + EBBCPNKLENP_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetEBBCPNKLENP().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -593,7 +593,7 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: EAMMPIMBPKH
+     * Obf: IODOKNGPEHE
      * </pre>
      *
      * Protobuf type {@code PlantFlowerAcceptFlowerResultInfo}
@@ -611,10 +611,10 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 14:
-            return internalGetMFBGONHGOKI();
-          case 13:
-            return internalGetDOONOMIFCJA();
+          case 15:
+            return internalGetCAIDLCELFLB();
+          case 2:
+            return internalGetEBBCPNKLENP();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -624,10 +624,10 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 14:
-            return internalGetMutableMFBGONHGOKI();
-          case 13:
-            return internalGetMutableDOONOMIFCJA();
+          case 15:
+            return internalGetMutableCAIDLCELFLB();
+          case 2:
+            return internalGetMutableEBBCPNKLENP();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -659,10 +659,10 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        internalGetMutableMFBGONHGOKI().clear();
-        internalGetMutableDOONOMIFCJA().clear();
         uid_ = 0;
 
+        internalGetMutableCAIDLCELFLB().clear();
+        internalGetMutableEBBCPNKLENP().clear();
         return this;
       }
 
@@ -690,11 +690,11 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
       public emu.grasscutter.net.proto.PlantFlowerAcceptFlowerResultInfoOuterClass.PlantFlowerAcceptFlowerResultInfo buildPartial() {
         emu.grasscutter.net.proto.PlantFlowerAcceptFlowerResultInfoOuterClass.PlantFlowerAcceptFlowerResultInfo result = new emu.grasscutter.net.proto.PlantFlowerAcceptFlowerResultInfoOuterClass.PlantFlowerAcceptFlowerResultInfo(this);
         int from_bitField0_ = bitField0_;
-        result.mFBGONHGOKI_ = internalGetMFBGONHGOKI();
-        result.mFBGONHGOKI_.makeImmutable();
-        result.dOONOMIFCJA_ = internalGetDOONOMIFCJA();
-        result.dOONOMIFCJA_.makeImmutable();
         result.uid_ = uid_;
+        result.cAIDLCELFLB_ = internalGetCAIDLCELFLB();
+        result.cAIDLCELFLB_.makeImmutable();
+        result.eBBCPNKLENP_ = internalGetEBBCPNKLENP();
+        result.eBBCPNKLENP_.makeImmutable();
         onBuilt();
         return result;
       }
@@ -743,13 +743,13 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PlantFlowerAcceptFlowerResultInfoOuterClass.PlantFlowerAcceptFlowerResultInfo other) {
         if (other == emu.grasscutter.net.proto.PlantFlowerAcceptFlowerResultInfoOuterClass.PlantFlowerAcceptFlowerResultInfo.getDefaultInstance()) return this;
-        internalGetMutableMFBGONHGOKI().mergeFrom(
-            other.internalGetMFBGONHGOKI());
-        internalGetMutableDOONOMIFCJA().mergeFrom(
-            other.internalGetDOONOMIFCJA());
         if (other.getUid() != 0) {
           setUid(other.getUid());
         }
+        internalGetMutableCAIDLCELFLB().mergeFrom(
+            other.internalGetCAIDLCELFLB());
+        internalGetMutableEBBCPNKLENP().mergeFrom(
+            other.internalGetEBBCPNKLENP());
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -780,265 +780,9 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> mFBGONHGOKI_;
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMFBGONHGOKI() {
-        if (mFBGONHGOKI_ == null) {
-          return com.google.protobuf.MapField.emptyMapField(
-              MFBGONHGOKIDefaultEntryHolder.defaultEntry);
-        }
-        return mFBGONHGOKI_;
-      }
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableMFBGONHGOKI() {
-        onChanged();;
-        if (mFBGONHGOKI_ == null) {
-          mFBGONHGOKI_ = com.google.protobuf.MapField.newMapField(
-              MFBGONHGOKIDefaultEntryHolder.defaultEntry);
-        }
-        if (!mFBGONHGOKI_.isMutable()) {
-          mFBGONHGOKI_ = mFBGONHGOKI_.copy();
-        }
-        return mFBGONHGOKI_;
-      }
-
-      public int getMFBGONHGOKICount() {
-        return internalGetMFBGONHGOKI().getMap().size();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; MFBGONHGOKI = 14;</code>
-       */
-
-      @java.lang.Override
-      public boolean containsMFBGONHGOKI(
-          int key) {
-        
-        return internalGetMFBGONHGOKI().getMap().containsKey(key);
-      }
-      /**
-       * Use {@link #getMFBGONHGOKIMap()} instead.
-       */
-      @java.lang.Override
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getMFBGONHGOKI() {
-        return getMFBGONHGOKIMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; MFBGONHGOKI = 14;</code>
-       */
-      @java.lang.Override
-
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getMFBGONHGOKIMap() {
-        return internalGetMFBGONHGOKI().getMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; MFBGONHGOKI = 14;</code>
-       */
-      @java.lang.Override
-
-      public int getMFBGONHGOKIOrDefault(
-          int key,
-          int defaultValue) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetMFBGONHGOKI().getMap();
-        return map.containsKey(key) ? map.get(key) : defaultValue;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; MFBGONHGOKI = 14;</code>
-       */
-      @java.lang.Override
-
-      public int getMFBGONHGOKIOrThrow(
-          int key) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetMFBGONHGOKI().getMap();
-        if (!map.containsKey(key)) {
-          throw new java.lang.IllegalArgumentException();
-        }
-        return map.get(key);
-      }
-
-      public Builder clearMFBGONHGOKI() {
-        internalGetMutableMFBGONHGOKI().getMutableMap()
-            .clear();
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; MFBGONHGOKI = 14;</code>
-       */
-
-      public Builder removeMFBGONHGOKI(
-          int key) {
-        
-        internalGetMutableMFBGONHGOKI().getMutableMap()
-            .remove(key);
-        return this;
-      }
-      /**
-       * Use alternate mutation accessors instead.
-       */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableMFBGONHGOKI() {
-        return internalGetMutableMFBGONHGOKI().getMutableMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; MFBGONHGOKI = 14;</code>
-       */
-      public Builder putMFBGONHGOKI(
-          int key,
-          int value) {
-        
-        
-        internalGetMutableMFBGONHGOKI().getMutableMap()
-            .put(key, value);
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; MFBGONHGOKI = 14;</code>
-       */
-
-      public Builder putAllMFBGONHGOKI(
-          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableMFBGONHGOKI().getMutableMap()
-            .putAll(values);
-        return this;
-      }
-
-      private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> dOONOMIFCJA_;
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetDOONOMIFCJA() {
-        if (dOONOMIFCJA_ == null) {
-          return com.google.protobuf.MapField.emptyMapField(
-              DOONOMIFCJADefaultEntryHolder.defaultEntry);
-        }
-        return dOONOMIFCJA_;
-      }
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableDOONOMIFCJA() {
-        onChanged();;
-        if (dOONOMIFCJA_ == null) {
-          dOONOMIFCJA_ = com.google.protobuf.MapField.newMapField(
-              DOONOMIFCJADefaultEntryHolder.defaultEntry);
-        }
-        if (!dOONOMIFCJA_.isMutable()) {
-          dOONOMIFCJA_ = dOONOMIFCJA_.copy();
-        }
-        return dOONOMIFCJA_;
-      }
-
-      public int getDOONOMIFCJACount() {
-        return internalGetDOONOMIFCJA().getMap().size();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; DOONOMIFCJA = 13;</code>
-       */
-
-      @java.lang.Override
-      public boolean containsDOONOMIFCJA(
-          int key) {
-        
-        return internalGetDOONOMIFCJA().getMap().containsKey(key);
-      }
-      /**
-       * Use {@link #getDOONOMIFCJAMap()} instead.
-       */
-      @java.lang.Override
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getDOONOMIFCJA() {
-        return getDOONOMIFCJAMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; DOONOMIFCJA = 13;</code>
-       */
-      @java.lang.Override
-
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getDOONOMIFCJAMap() {
-        return internalGetDOONOMIFCJA().getMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; DOONOMIFCJA = 13;</code>
-       */
-      @java.lang.Override
-
-      public int getDOONOMIFCJAOrDefault(
-          int key,
-          int defaultValue) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetDOONOMIFCJA().getMap();
-        return map.containsKey(key) ? map.get(key) : defaultValue;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; DOONOMIFCJA = 13;</code>
-       */
-      @java.lang.Override
-
-      public int getDOONOMIFCJAOrThrow(
-          int key) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetDOONOMIFCJA().getMap();
-        if (!map.containsKey(key)) {
-          throw new java.lang.IllegalArgumentException();
-        }
-        return map.get(key);
-      }
-
-      public Builder clearDOONOMIFCJA() {
-        internalGetMutableDOONOMIFCJA().getMutableMap()
-            .clear();
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; DOONOMIFCJA = 13;</code>
-       */
-
-      public Builder removeDOONOMIFCJA(
-          int key) {
-        
-        internalGetMutableDOONOMIFCJA().getMutableMap()
-            .remove(key);
-        return this;
-      }
-      /**
-       * Use alternate mutation accessors instead.
-       */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableDOONOMIFCJA() {
-        return internalGetMutableDOONOMIFCJA().getMutableMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; DOONOMIFCJA = 13;</code>
-       */
-      public Builder putDOONOMIFCJA(
-          int key,
-          int value) {
-        
-        
-        internalGetMutableDOONOMIFCJA().getMutableMap()
-            .put(key, value);
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; DOONOMIFCJA = 13;</code>
-       */
-
-      public Builder putAllDOONOMIFCJA(
-          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableDOONOMIFCJA().getMutableMap()
-            .putAll(values);
-        return this;
-      }
-
       private int uid_ ;
       /**
-       * <code>uint32 uid = 12;</code>
+       * <code>uint32 uid = 14;</code>
        * @return The uid.
        */
       @java.lang.Override
@@ -1046,7 +790,7 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
         return uid_;
       }
       /**
-       * <code>uint32 uid = 12;</code>
+       * <code>uint32 uid = 14;</code>
        * @param value The uid to set.
        * @return This builder for chaining.
        */
@@ -1057,13 +801,269 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 uid = 12;</code>
+       * <code>uint32 uid = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearUid() {
         
         uid_ = 0;
         onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.MapField<
+          java.lang.Integer, java.lang.Integer> cAIDLCELFLB_;
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetCAIDLCELFLB() {
+        if (cAIDLCELFLB_ == null) {
+          return com.google.protobuf.MapField.emptyMapField(
+              CAIDLCELFLBDefaultEntryHolder.defaultEntry);
+        }
+        return cAIDLCELFLB_;
+      }
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetMutableCAIDLCELFLB() {
+        onChanged();;
+        if (cAIDLCELFLB_ == null) {
+          cAIDLCELFLB_ = com.google.protobuf.MapField.newMapField(
+              CAIDLCELFLBDefaultEntryHolder.defaultEntry);
+        }
+        if (!cAIDLCELFLB_.isMutable()) {
+          cAIDLCELFLB_ = cAIDLCELFLB_.copy();
+        }
+        return cAIDLCELFLB_;
+      }
+
+      public int getCAIDLCELFLBCount() {
+        return internalGetCAIDLCELFLB().getMap().size();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; CAIDLCELFLB = 15;</code>
+       */
+
+      @java.lang.Override
+      public boolean containsCAIDLCELFLB(
+          int key) {
+        
+        return internalGetCAIDLCELFLB().getMap().containsKey(key);
+      }
+      /**
+       * Use {@link #getCAIDLCELFLBMap()} instead.
+       */
+      @java.lang.Override
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getCAIDLCELFLB() {
+        return getCAIDLCELFLBMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; CAIDLCELFLB = 15;</code>
+       */
+      @java.lang.Override
+
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getCAIDLCELFLBMap() {
+        return internalGetCAIDLCELFLB().getMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; CAIDLCELFLB = 15;</code>
+       */
+      @java.lang.Override
+
+      public int getCAIDLCELFLBOrDefault(
+          int key,
+          int defaultValue) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetCAIDLCELFLB().getMap();
+        return map.containsKey(key) ? map.get(key) : defaultValue;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; CAIDLCELFLB = 15;</code>
+       */
+      @java.lang.Override
+
+      public int getCAIDLCELFLBOrThrow(
+          int key) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetCAIDLCELFLB().getMap();
+        if (!map.containsKey(key)) {
+          throw new java.lang.IllegalArgumentException();
+        }
+        return map.get(key);
+      }
+
+      public Builder clearCAIDLCELFLB() {
+        internalGetMutableCAIDLCELFLB().getMutableMap()
+            .clear();
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; CAIDLCELFLB = 15;</code>
+       */
+
+      public Builder removeCAIDLCELFLB(
+          int key) {
+        
+        internalGetMutableCAIDLCELFLB().getMutableMap()
+            .remove(key);
+        return this;
+      }
+      /**
+       * Use alternate mutation accessors instead.
+       */
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer>
+      getMutableCAIDLCELFLB() {
+        return internalGetMutableCAIDLCELFLB().getMutableMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; CAIDLCELFLB = 15;</code>
+       */
+      public Builder putCAIDLCELFLB(
+          int key,
+          int value) {
+        
+        
+        internalGetMutableCAIDLCELFLB().getMutableMap()
+            .put(key, value);
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; CAIDLCELFLB = 15;</code>
+       */
+
+      public Builder putAllCAIDLCELFLB(
+          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
+        internalGetMutableCAIDLCELFLB().getMutableMap()
+            .putAll(values);
+        return this;
+      }
+
+      private com.google.protobuf.MapField<
+          java.lang.Integer, java.lang.Integer> eBBCPNKLENP_;
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetEBBCPNKLENP() {
+        if (eBBCPNKLENP_ == null) {
+          return com.google.protobuf.MapField.emptyMapField(
+              EBBCPNKLENPDefaultEntryHolder.defaultEntry);
+        }
+        return eBBCPNKLENP_;
+      }
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetMutableEBBCPNKLENP() {
+        onChanged();;
+        if (eBBCPNKLENP_ == null) {
+          eBBCPNKLENP_ = com.google.protobuf.MapField.newMapField(
+              EBBCPNKLENPDefaultEntryHolder.defaultEntry);
+        }
+        if (!eBBCPNKLENP_.isMutable()) {
+          eBBCPNKLENP_ = eBBCPNKLENP_.copy();
+        }
+        return eBBCPNKLENP_;
+      }
+
+      public int getEBBCPNKLENPCount() {
+        return internalGetEBBCPNKLENP().getMap().size();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; EBBCPNKLENP = 2;</code>
+       */
+
+      @java.lang.Override
+      public boolean containsEBBCPNKLENP(
+          int key) {
+        
+        return internalGetEBBCPNKLENP().getMap().containsKey(key);
+      }
+      /**
+       * Use {@link #getEBBCPNKLENPMap()} instead.
+       */
+      @java.lang.Override
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getEBBCPNKLENP() {
+        return getEBBCPNKLENPMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; EBBCPNKLENP = 2;</code>
+       */
+      @java.lang.Override
+
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getEBBCPNKLENPMap() {
+        return internalGetEBBCPNKLENP().getMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; EBBCPNKLENP = 2;</code>
+       */
+      @java.lang.Override
+
+      public int getEBBCPNKLENPOrDefault(
+          int key,
+          int defaultValue) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetEBBCPNKLENP().getMap();
+        return map.containsKey(key) ? map.get(key) : defaultValue;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; EBBCPNKLENP = 2;</code>
+       */
+      @java.lang.Override
+
+      public int getEBBCPNKLENPOrThrow(
+          int key) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetEBBCPNKLENP().getMap();
+        if (!map.containsKey(key)) {
+          throw new java.lang.IllegalArgumentException();
+        }
+        return map.get(key);
+      }
+
+      public Builder clearEBBCPNKLENP() {
+        internalGetMutableEBBCPNKLENP().getMutableMap()
+            .clear();
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; EBBCPNKLENP = 2;</code>
+       */
+
+      public Builder removeEBBCPNKLENP(
+          int key) {
+        
+        internalGetMutableEBBCPNKLENP().getMutableMap()
+            .remove(key);
+        return this;
+      }
+      /**
+       * Use alternate mutation accessors instead.
+       */
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer>
+      getMutableEBBCPNKLENP() {
+        return internalGetMutableEBBCPNKLENP().getMutableMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; EBBCPNKLENP = 2;</code>
+       */
+      public Builder putEBBCPNKLENP(
+          int key,
+          int value) {
+        
+        
+        internalGetMutableEBBCPNKLENP().getMutableMap()
+            .put(key, value);
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; EBBCPNKLENP = 2;</code>
+       */
+
+      public Builder putAllEBBCPNKLENP(
+          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
+        internalGetMutableEBBCPNKLENP().getMutableMap()
+            .putAll(values);
         return this;
       }
       @java.lang.Override
@@ -1125,15 +1125,15 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_PlantFlowerAcceptFlowerResultInfo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_PlantFlowerAcceptFlowerResultInfo_MFBGONHGOKIEntry_descriptor;
+    internal_static_PlantFlowerAcceptFlowerResultInfo_CAIDLCELFLBEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_PlantFlowerAcceptFlowerResultInfo_MFBGONHGOKIEntry_fieldAccessorTable;
+      internal_static_PlantFlowerAcceptFlowerResultInfo_CAIDLCELFLBEntry_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_PlantFlowerAcceptFlowerResultInfo_DOONOMIFCJAEntry_descriptor;
+    internal_static_PlantFlowerAcceptFlowerResultInfo_EBBCPNKLENPEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_PlantFlowerAcceptFlowerResultInfo_DOONOMIFCJAEntry_fieldAccessorTable;
+      internal_static_PlantFlowerAcceptFlowerResultInfo_EBBCPNKLENPEntry_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1145,12 +1145,12 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\'PlantFlowerAcceptFlowerResultInfo.prot" +
       "o\"\254\002\n!PlantFlowerAcceptFlowerResultInfo\022" +
-      "H\n\013MFBGONHGOKI\030\016 \003(\01323.PlantFlowerAccept" +
-      "FlowerResultInfo.MFBGONHGOKIEntry\022H\n\013DOO" +
-      "NOMIFCJA\030\r \003(\01323.PlantFlowerAcceptFlower" +
-      "ResultInfo.DOONOMIFCJAEntry\022\013\n\003uid\030\014 \001(\r" +
-      "\0322\n\020MFBGONHGOKIEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005val" +
-      "ue\030\002 \001(\r:\0028\001\0322\n\020DOONOMIFCJAEntry\022\013\n\003key\030" +
+      "\013\n\003uid\030\016 \001(\r\022H\n\013CAIDLCELFLB\030\017 \003(\01323.Plan" +
+      "tFlowerAcceptFlowerResultInfo.CAIDLCELFL" +
+      "BEntry\022H\n\013EBBCPNKLENP\030\002 \003(\01323.PlantFlowe" +
+      "rAcceptFlowerResultInfo.EBBCPNKLENPEntry" +
+      "\0322\n\020CAIDLCELFLBEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005val" +
+      "ue\030\002 \001(\r:\0028\001\0322\n\020EBBCPNKLENPEntry\022\013\n\003key\030" +
       "\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };
@@ -1163,18 +1163,18 @@ public final class PlantFlowerAcceptFlowerResultInfoOuterClass {
     internal_static_PlantFlowerAcceptFlowerResultInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlantFlowerAcceptFlowerResultInfo_descriptor,
-        new java.lang.String[] { "MFBGONHGOKI", "DOONOMIFCJA", "Uid", });
-    internal_static_PlantFlowerAcceptFlowerResultInfo_MFBGONHGOKIEntry_descriptor =
+        new java.lang.String[] { "Uid", "CAIDLCELFLB", "EBBCPNKLENP", });
+    internal_static_PlantFlowerAcceptFlowerResultInfo_CAIDLCELFLBEntry_descriptor =
       internal_static_PlantFlowerAcceptFlowerResultInfo_descriptor.getNestedTypes().get(0);
-    internal_static_PlantFlowerAcceptFlowerResultInfo_MFBGONHGOKIEntry_fieldAccessorTable = new
+    internal_static_PlantFlowerAcceptFlowerResultInfo_CAIDLCELFLBEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_PlantFlowerAcceptFlowerResultInfo_MFBGONHGOKIEntry_descriptor,
+        internal_static_PlantFlowerAcceptFlowerResultInfo_CAIDLCELFLBEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
-    internal_static_PlantFlowerAcceptFlowerResultInfo_DOONOMIFCJAEntry_descriptor =
+    internal_static_PlantFlowerAcceptFlowerResultInfo_EBBCPNKLENPEntry_descriptor =
       internal_static_PlantFlowerAcceptFlowerResultInfo_descriptor.getNestedTypes().get(1);
-    internal_static_PlantFlowerAcceptFlowerResultInfo_DOONOMIFCJAEntry_fieldAccessorTable = new
+    internal_static_PlantFlowerAcceptFlowerResultInfo_EBBCPNKLENPEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_PlantFlowerAcceptFlowerResultInfo_DOONOMIFCJAEntry_descriptor,
+        internal_static_PlantFlowerAcceptFlowerResultInfo_EBBCPNKLENPEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
   }
 

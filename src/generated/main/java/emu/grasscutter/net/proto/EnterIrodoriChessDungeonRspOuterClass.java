@@ -19,27 +19,27 @@ public final class EnterIrodoriChessDungeonRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 13;</code>
+     * <code>uint32 level_id = 9;</code>
+     * @return The levelId.
+     */
+    int getLevelId();
+
+    /**
+     * <code>int32 retcode = 8;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>bool is_hard_map = 9;</code>
+     * <code>bool is_hard_map = 11;</code>
      * @return The isHardMap.
      */
     boolean getIsHardMap();
-
-    /**
-     * <code>uint32 level_id = 14;</code>
-     * @return The levelId.
-     */
-    int getLevelId();
   }
   /**
    * <pre>
-   * Name: OFEDKGKHEKE
-   * CmdId: 8211
+   * CmdId: 8208
+   * Obf: HFJNNJIOCHD
    * </pre>
    *
    * Protobuf type {@code EnterIrodoriChessDungeonRsp}
@@ -86,19 +86,19 @@ public final class EnterIrodoriChessDungeonRspOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
-
-              isHardMap_ = input.readBool();
-              break;
-            }
-            case 104: {
+            case 64: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 112: {
+            case 72: {
 
               levelId_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              isHardMap_ = input.readBool();
               break;
             }
             default: {
@@ -133,10 +133,21 @@ public final class EnterIrodoriChessDungeonRspOuterClass {
               emu.grasscutter.net.proto.EnterIrodoriChessDungeonRspOuterClass.EnterIrodoriChessDungeonRsp.class, emu.grasscutter.net.proto.EnterIrodoriChessDungeonRspOuterClass.EnterIrodoriChessDungeonRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 13;
+    public static final int LEVEL_ID_FIELD_NUMBER = 9;
+    private int levelId_;
+    /**
+     * <code>uint32 level_id = 9;</code>
+     * @return The levelId.
+     */
+    @java.lang.Override
+    public int getLevelId() {
+      return levelId_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 8;
     private int retcode_;
     /**
-     * <code>int32 retcode = 13;</code>
+     * <code>int32 retcode = 8;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -144,26 +155,15 @@ public final class EnterIrodoriChessDungeonRspOuterClass {
       return retcode_;
     }
 
-    public static final int IS_HARD_MAP_FIELD_NUMBER = 9;
+    public static final int IS_HARD_MAP_FIELD_NUMBER = 11;
     private boolean isHardMap_;
     /**
-     * <code>bool is_hard_map = 9;</code>
+     * <code>bool is_hard_map = 11;</code>
      * @return The isHardMap.
      */
     @java.lang.Override
     public boolean getIsHardMap() {
       return isHardMap_;
-    }
-
-    public static final int LEVEL_ID_FIELD_NUMBER = 14;
-    private int levelId_;
-    /**
-     * <code>uint32 level_id = 14;</code>
-     * @return The levelId.
-     */
-    @java.lang.Override
-    public int getLevelId() {
-      return levelId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -180,14 +180,14 @@ public final class EnterIrodoriChessDungeonRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isHardMap_ != false) {
-        output.writeBool(9, isHardMap_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(13, retcode_);
+        output.writeInt32(8, retcode_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(14, levelId_);
+        output.writeUInt32(9, levelId_);
+      }
+      if (isHardMap_ != false) {
+        output.writeBool(11, isHardMap_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +198,17 @@ public final class EnterIrodoriChessDungeonRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isHardMap_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isHardMap_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(13, retcode_);
+          .computeInt32Size(8, retcode_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, levelId_);
+          .computeUInt32Size(9, levelId_);
+      }
+      if (isHardMap_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(11, isHardMap_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -225,12 +225,12 @@ public final class EnterIrodoriChessDungeonRspOuterClass {
       }
       emu.grasscutter.net.proto.EnterIrodoriChessDungeonRspOuterClass.EnterIrodoriChessDungeonRsp other = (emu.grasscutter.net.proto.EnterIrodoriChessDungeonRspOuterClass.EnterIrodoriChessDungeonRsp) obj;
 
+      if (getLevelId()
+          != other.getLevelId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
       if (getIsHardMap()
           != other.getIsHardMap()) return false;
-      if (getLevelId()
-          != other.getLevelId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -242,13 +242,13 @@ public final class EnterIrodoriChessDungeonRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + IS_HARD_MAP_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsHardMap());
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -346,8 +346,8 @@ public final class EnterIrodoriChessDungeonRspOuterClass {
     }
     /**
      * <pre>
-     * Name: OFEDKGKHEKE
-     * CmdId: 8211
+     * CmdId: 8208
+     * Obf: HFJNNJIOCHD
      * </pre>
      *
      * Protobuf type {@code EnterIrodoriChessDungeonRsp}
@@ -387,11 +387,11 @@ public final class EnterIrodoriChessDungeonRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        levelId_ = 0;
+
         retcode_ = 0;
 
         isHardMap_ = false;
-
-        levelId_ = 0;
 
         return this;
       }
@@ -419,9 +419,9 @@ public final class EnterIrodoriChessDungeonRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EnterIrodoriChessDungeonRspOuterClass.EnterIrodoriChessDungeonRsp buildPartial() {
         emu.grasscutter.net.proto.EnterIrodoriChessDungeonRspOuterClass.EnterIrodoriChessDungeonRsp result = new emu.grasscutter.net.proto.EnterIrodoriChessDungeonRspOuterClass.EnterIrodoriChessDungeonRsp(this);
+        result.levelId_ = levelId_;
         result.retcode_ = retcode_;
         result.isHardMap_ = isHardMap_;
-        result.levelId_ = levelId_;
         onBuilt();
         return result;
       }
@@ -470,14 +470,14 @@ public final class EnterIrodoriChessDungeonRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EnterIrodoriChessDungeonRspOuterClass.EnterIrodoriChessDungeonRsp other) {
         if (other == emu.grasscutter.net.proto.EnterIrodoriChessDungeonRspOuterClass.EnterIrodoriChessDungeonRsp.getDefaultInstance()) return this;
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
+        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
         if (other.getIsHardMap() != false) {
           setIsHardMap(other.getIsHardMap());
-        }
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -508,9 +508,40 @@ public final class EnterIrodoriChessDungeonRspOuterClass {
         return this;
       }
 
+      private int levelId_ ;
+      /**
+       * <code>uint32 level_id = 9;</code>
+       * @return The levelId.
+       */
+      @java.lang.Override
+      public int getLevelId() {
+        return levelId_;
+      }
+      /**
+       * <code>uint32 level_id = 9;</code>
+       * @param value The levelId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevelId(int value) {
+        
+        levelId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 level_id = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevelId() {
+        
+        levelId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 8;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -518,7 +549,7 @@ public final class EnterIrodoriChessDungeonRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 8;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -529,7 +560,7 @@ public final class EnterIrodoriChessDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -541,7 +572,7 @@ public final class EnterIrodoriChessDungeonRspOuterClass {
 
       private boolean isHardMap_ ;
       /**
-       * <code>bool is_hard_map = 9;</code>
+       * <code>bool is_hard_map = 11;</code>
        * @return The isHardMap.
        */
       @java.lang.Override
@@ -549,7 +580,7 @@ public final class EnterIrodoriChessDungeonRspOuterClass {
         return isHardMap_;
       }
       /**
-       * <code>bool is_hard_map = 9;</code>
+       * <code>bool is_hard_map = 11;</code>
        * @param value The isHardMap to set.
        * @return This builder for chaining.
        */
@@ -560,43 +591,12 @@ public final class EnterIrodoriChessDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>bool is_hard_map = 9;</code>
+       * <code>bool is_hard_map = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsHardMap() {
         
         isHardMap_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int levelId_ ;
-      /**
-       * <code>uint32 level_id = 14;</code>
-       * @return The levelId.
-       */
-      @java.lang.Override
-      public int getLevelId() {
-        return levelId_;
-      }
-      /**
-       * <code>uint32 level_id = 14;</code>
-       * @param value The levelId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevelId(int value) {
-        
-        levelId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level_id = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevelId() {
-        
-        levelId_ = 0;
         onChanged();
         return this;
       }
@@ -668,9 +668,9 @@ public final class EnterIrodoriChessDungeonRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!EnterIrodoriChessDungeonRsp.proto\"U\n\033E" +
-      "nterIrodoriChessDungeonRsp\022\017\n\007retcode\030\r " +
-      "\001(\005\022\023\n\013is_hard_map\030\t \001(\010\022\020\n\010level_id\030\016 \001" +
-      "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "nterIrodoriChessDungeonRsp\022\020\n\010level_id\030\t" +
+      " \001(\r\022\017\n\007retcode\030\010 \001(\005\022\023\n\013is_hard_map\030\013 \001" +
+      "(\010B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -681,7 +681,7 @@ public final class EnterIrodoriChessDungeonRspOuterClass {
     internal_static_EnterIrodoriChessDungeonRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EnterIrodoriChessDungeonRsp_descriptor,
-        new java.lang.String[] { "Retcode", "IsHardMap", "LevelId", });
+        new java.lang.String[] { "LevelId", "Retcode", "IsHardMap", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,21 +19,21 @@ public final class SceneKickPlayerNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 kicker_uid = 12;</code>
-     * @return The kickerUid.
-     */
-    int getKickerUid();
-
-    /**
      * <code>uint32 target_uid = 3;</code>
      * @return The targetUid.
      */
     int getTargetUid();
+
+    /**
+     * <code>uint32 kicker_uid = 8;</code>
+     * @return The kickerUid.
+     */
+    int getKickerUid();
   }
   /**
    * <pre>
-   * Name: HEODAKMCPNE
-   * CmdId: 299
+   * CmdId: 232
+   * Obf: FPFJFLPEPDP
    * </pre>
    *
    * Protobuf type {@code SceneKickPlayerNotify}
@@ -85,7 +85,7 @@ public final class SceneKickPlayerNotifyOuterClass {
               targetUid_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 64: {
 
               kickerUid_ = input.readUInt32();
               break;
@@ -122,17 +122,6 @@ public final class SceneKickPlayerNotifyOuterClass {
               emu.grasscutter.net.proto.SceneKickPlayerNotifyOuterClass.SceneKickPlayerNotify.class, emu.grasscutter.net.proto.SceneKickPlayerNotifyOuterClass.SceneKickPlayerNotify.Builder.class);
     }
 
-    public static final int KICKER_UID_FIELD_NUMBER = 12;
-    private int kickerUid_;
-    /**
-     * <code>uint32 kicker_uid = 12;</code>
-     * @return The kickerUid.
-     */
-    @java.lang.Override
-    public int getKickerUid() {
-      return kickerUid_;
-    }
-
     public static final int TARGET_UID_FIELD_NUMBER = 3;
     private int targetUid_;
     /**
@@ -142,6 +131,17 @@ public final class SceneKickPlayerNotifyOuterClass {
     @java.lang.Override
     public int getTargetUid() {
       return targetUid_;
+    }
+
+    public static final int KICKER_UID_FIELD_NUMBER = 8;
+    private int kickerUid_;
+    /**
+     * <code>uint32 kicker_uid = 8;</code>
+     * @return The kickerUid.
+     */
+    @java.lang.Override
+    public int getKickerUid() {
+      return kickerUid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -162,7 +162,7 @@ public final class SceneKickPlayerNotifyOuterClass {
         output.writeUInt32(3, targetUid_);
       }
       if (kickerUid_ != 0) {
-        output.writeUInt32(12, kickerUid_);
+        output.writeUInt32(8, kickerUid_);
       }
       unknownFields.writeTo(output);
     }
@@ -179,7 +179,7 @@ public final class SceneKickPlayerNotifyOuterClass {
       }
       if (kickerUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, kickerUid_);
+          .computeUInt32Size(8, kickerUid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +196,10 @@ public final class SceneKickPlayerNotifyOuterClass {
       }
       emu.grasscutter.net.proto.SceneKickPlayerNotifyOuterClass.SceneKickPlayerNotify other = (emu.grasscutter.net.proto.SceneKickPlayerNotifyOuterClass.SceneKickPlayerNotify) obj;
 
-      if (getKickerUid()
-          != other.getKickerUid()) return false;
       if (getTargetUid()
           != other.getTargetUid()) return false;
+      if (getKickerUid()
+          != other.getKickerUid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +211,10 @@ public final class SceneKickPlayerNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + KICKER_UID_FIELD_NUMBER;
-      hash = (53 * hash) + getKickerUid();
       hash = (37 * hash) + TARGET_UID_FIELD_NUMBER;
       hash = (53 * hash) + getTargetUid();
+      hash = (37 * hash) + KICKER_UID_FIELD_NUMBER;
+      hash = (53 * hash) + getKickerUid();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +312,8 @@ public final class SceneKickPlayerNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: HEODAKMCPNE
-     * CmdId: 299
+     * CmdId: 232
+     * Obf: FPFJFLPEPDP
      * </pre>
      *
      * Protobuf type {@code SceneKickPlayerNotify}
@@ -353,9 +353,9 @@ public final class SceneKickPlayerNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        kickerUid_ = 0;
-
         targetUid_ = 0;
+
+        kickerUid_ = 0;
 
         return this;
       }
@@ -383,8 +383,8 @@ public final class SceneKickPlayerNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneKickPlayerNotifyOuterClass.SceneKickPlayerNotify buildPartial() {
         emu.grasscutter.net.proto.SceneKickPlayerNotifyOuterClass.SceneKickPlayerNotify result = new emu.grasscutter.net.proto.SceneKickPlayerNotifyOuterClass.SceneKickPlayerNotify(this);
-        result.kickerUid_ = kickerUid_;
         result.targetUid_ = targetUid_;
+        result.kickerUid_ = kickerUid_;
         onBuilt();
         return result;
       }
@@ -433,11 +433,11 @@ public final class SceneKickPlayerNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneKickPlayerNotifyOuterClass.SceneKickPlayerNotify other) {
         if (other == emu.grasscutter.net.proto.SceneKickPlayerNotifyOuterClass.SceneKickPlayerNotify.getDefaultInstance()) return this;
-        if (other.getKickerUid() != 0) {
-          setKickerUid(other.getKickerUid());
-        }
         if (other.getTargetUid() != 0) {
           setTargetUid(other.getTargetUid());
+        }
+        if (other.getKickerUid() != 0) {
+          setKickerUid(other.getKickerUid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,37 +468,6 @@ public final class SceneKickPlayerNotifyOuterClass {
         return this;
       }
 
-      private int kickerUid_ ;
-      /**
-       * <code>uint32 kicker_uid = 12;</code>
-       * @return The kickerUid.
-       */
-      @java.lang.Override
-      public int getKickerUid() {
-        return kickerUid_;
-      }
-      /**
-       * <code>uint32 kicker_uid = 12;</code>
-       * @param value The kickerUid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setKickerUid(int value) {
-        
-        kickerUid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 kicker_uid = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearKickerUid() {
-        
-        kickerUid_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int targetUid_ ;
       /**
        * <code>uint32 target_uid = 3;</code>
@@ -526,6 +495,37 @@ public final class SceneKickPlayerNotifyOuterClass {
       public Builder clearTargetUid() {
         
         targetUid_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int kickerUid_ ;
+      /**
+       * <code>uint32 kicker_uid = 8;</code>
+       * @return The kickerUid.
+       */
+      @java.lang.Override
+      public int getKickerUid() {
+        return kickerUid_;
+      }
+      /**
+       * <code>uint32 kicker_uid = 8;</code>
+       * @param value The kickerUid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKickerUid(int value) {
+        
+        kickerUid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 kicker_uid = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearKickerUid() {
+        
+        kickerUid_ = 0;
         onChanged();
         return this;
       }
@@ -597,8 +597,8 @@ public final class SceneKickPlayerNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033SceneKickPlayerNotify.proto\"?\n\025SceneKi" +
-      "ckPlayerNotify\022\022\n\nkicker_uid\030\014 \001(\r\022\022\n\nta" +
-      "rget_uid\030\003 \001(\rB\033\n\031emu.grasscutter.net.pr" +
+      "ckPlayerNotify\022\022\n\ntarget_uid\030\003 \001(\r\022\022\n\nki" +
+      "cker_uid\030\010 \001(\rB\033\n\031emu.grasscutter.net.pr" +
       "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -610,7 +610,7 @@ public final class SceneKickPlayerNotifyOuterClass {
     internal_static_SceneKickPlayerNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneKickPlayerNotify_descriptor,
-        new java.lang.String[] { "KickerUid", "TargetUid", });
+        new java.lang.String[] { "TargetUid", "KickerUid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

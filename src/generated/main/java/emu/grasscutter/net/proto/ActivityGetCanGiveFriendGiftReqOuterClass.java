@@ -19,15 +19,15 @@ public final class ActivityGetCanGiveFriendGiftReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 schedule_id = 8;</code>
+     * <code>uint32 schedule_id = 15;</code>
      * @return The scheduleId.
      */
     int getScheduleId();
   }
   /**
    * <pre>
-   * Name: PLOKAKEIEFA
-   * CmdId: 8934
+   * CmdId: 8136
+   * Obf: LKFEIACELML
    * </pre>
    *
    * Protobuf type {@code ActivityGetCanGiveFriendGiftReq}
@@ -74,7 +74,7 @@ public final class ActivityGetCanGiveFriendGiftReqOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 120: {
 
               scheduleId_ = input.readUInt32();
               break;
@@ -111,10 +111,10 @@ public final class ActivityGetCanGiveFriendGiftReqOuterClass {
               emu.grasscutter.net.proto.ActivityGetCanGiveFriendGiftReqOuterClass.ActivityGetCanGiveFriendGiftReq.class, emu.grasscutter.net.proto.ActivityGetCanGiveFriendGiftReqOuterClass.ActivityGetCanGiveFriendGiftReq.Builder.class);
     }
 
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 8;
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 15;
     private int scheduleId_;
     /**
-     * <code>uint32 schedule_id = 8;</code>
+     * <code>uint32 schedule_id = 15;</code>
      * @return The scheduleId.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class ActivityGetCanGiveFriendGiftReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (scheduleId_ != 0) {
-        output.writeUInt32(8, scheduleId_);
+        output.writeUInt32(15, scheduleId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class ActivityGetCanGiveFriendGiftReqOuterClass {
       size = 0;
       if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, scheduleId_);
+          .computeUInt32Size(15, scheduleId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class ActivityGetCanGiveFriendGiftReqOuterClass {
     }
     /**
      * <pre>
-     * Name: PLOKAKEIEFA
-     * CmdId: 8934
+     * CmdId: 8136
+     * Obf: LKFEIACELML
      * </pre>
      *
      * Protobuf type {@code ActivityGetCanGiveFriendGiftReq}
@@ -431,7 +431,7 @@ public final class ActivityGetCanGiveFriendGiftReqOuterClass {
 
       private int scheduleId_ ;
       /**
-       * <code>uint32 schedule_id = 8;</code>
+       * <code>uint32 schedule_id = 15;</code>
        * @return The scheduleId.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class ActivityGetCanGiveFriendGiftReqOuterClass {
         return scheduleId_;
       }
       /**
-       * <code>uint32 schedule_id = 8;</code>
+       * <code>uint32 schedule_id = 15;</code>
        * @param value The scheduleId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class ActivityGetCanGiveFriendGiftReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 schedule_id = 8;</code>
+       * <code>uint32 schedule_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearScheduleId() {
@@ -528,7 +528,7 @@ public final class ActivityGetCanGiveFriendGiftReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n%ActivityGetCanGiveFriendGiftReq.proto\"" +
       "6\n\037ActivityGetCanGiveFriendGiftReq\022\023\n\013sc" +
-      "hedule_id\030\010 \001(\rB\033\n\031emu.grasscutter.net.p" +
+      "hedule_id\030\017 \001(\rB\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

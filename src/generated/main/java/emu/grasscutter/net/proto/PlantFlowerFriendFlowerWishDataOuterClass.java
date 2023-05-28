@@ -19,46 +19,18 @@ public final class PlantFlowerFriendFlowerWishDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint32, uint32&gt; flower_num_map = 15;</code>
+     * <code>uint32 uid = 1;</code>
+     * @return The uid.
      */
-    int getFlowerNumMapCount();
-    /**
-     * <code>map&lt;uint32, uint32&gt; flower_num_map = 15;</code>
-     */
-    boolean containsFlowerNumMap(
-        int key);
-    /**
-     * Use {@link #getFlowerNumMapMap()} instead.
-     */
-    @java.lang.Deprecated
-    java.util.Map<java.lang.Integer, java.lang.Integer>
-    getFlowerNumMap();
-    /**
-     * <code>map&lt;uint32, uint32&gt; flower_num_map = 15;</code>
-     */
-    java.util.Map<java.lang.Integer, java.lang.Integer>
-    getFlowerNumMapMap();
-    /**
-     * <code>map&lt;uint32, uint32&gt; flower_num_map = 15;</code>
-     */
-
-    int getFlowerNumMapOrDefault(
-        int key,
-        int defaultValue);
-    /**
-     * <code>map&lt;uint32, uint32&gt; flower_num_map = 15;</code>
-     */
-
-    int getFlowerNumMapOrThrow(
-        int key);
+    int getUid();
 
     /**
-     * <code>string nickname = 1;</code>
+     * <code>string nickname = 3;</code>
      * @return The nickname.
      */
     java.lang.String getNickname();
     /**
-     * <code>string nickname = 1;</code>
+     * <code>string nickname = 3;</code>
      * @return The bytes for nickname.
      */
     com.google.protobuf.ByteString
@@ -80,14 +52,42 @@ public final class PlantFlowerFriendFlowerWishDataOuterClass {
     emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder();
 
     /**
-     * <code>uint32 uid = 8;</code>
-     * @return The uid.
+     * <code>map&lt;uint32, uint32&gt; flower_num_map = 12;</code>
      */
-    int getUid();
+    int getFlowerNumMapCount();
+    /**
+     * <code>map&lt;uint32, uint32&gt; flower_num_map = 12;</code>
+     */
+    boolean containsFlowerNumMap(
+        int key);
+    /**
+     * Use {@link #getFlowerNumMapMap()} instead.
+     */
+    @java.lang.Deprecated
+    java.util.Map<java.lang.Integer, java.lang.Integer>
+    getFlowerNumMap();
+    /**
+     * <code>map&lt;uint32, uint32&gt; flower_num_map = 12;</code>
+     */
+    java.util.Map<java.lang.Integer, java.lang.Integer>
+    getFlowerNumMapMap();
+    /**
+     * <code>map&lt;uint32, uint32&gt; flower_num_map = 12;</code>
+     */
+
+    int getFlowerNumMapOrDefault(
+        int key,
+        int defaultValue);
+    /**
+     * <code>map&lt;uint32, uint32&gt; flower_num_map = 12;</code>
+     */
+
+    int getFlowerNumMapOrThrow(
+        int key);
   }
   /**
    * <pre>
-   * Name: DBGHDOAFABF
+   * Obf: BABKLIDHCGJ
    * </pre>
    *
    * Protobuf type {@code PlantFlowerFriendFlowerWishData}
@@ -136,7 +136,12 @@ public final class PlantFlowerFriendFlowerWishDataOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 8: {
+
+              uid_ = input.readUInt32();
+              break;
+            }
+            case 26: {
               java.lang.String s = input.readStringRequireUtf8();
 
               nickname_ = s;
@@ -155,12 +160,7 @@ public final class PlantFlowerFriendFlowerWishDataOuterClass {
 
               break;
             }
-            case 64: {
-
-              uid_ = input.readUInt32();
-              break;
-            }
-            case 122: {
+            case 98: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 flowerNumMap_ = com.google.protobuf.MapField.newMapField(
                     FlowerNumMapDefaultEntryHolder.defaultEntry);
@@ -202,7 +202,7 @@ public final class PlantFlowerFriendFlowerWishDataOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 15:
+        case 12:
           return internalGetFlowerNumMap();
         default:
           throw new RuntimeException(
@@ -217,91 +217,21 @@ public final class PlantFlowerFriendFlowerWishDataOuterClass {
               emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData.class, emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData.Builder.class);
     }
 
-    public static final int FLOWER_NUM_MAP_FIELD_NUMBER = 15;
-    private static final class FlowerNumMapDefaultEntryHolder {
-      static final com.google.protobuf.MapEntry<
-          java.lang.Integer, java.lang.Integer> defaultEntry =
-              com.google.protobuf.MapEntry
-              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.internal_static_PlantFlowerFriendFlowerWishData_FlowerNumMapEntry_descriptor, 
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0,
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0);
-    }
-    private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Integer> flowerNumMap_;
-    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-    internalGetFlowerNumMap() {
-      if (flowerNumMap_ == null) {
-        return com.google.protobuf.MapField.emptyMapField(
-            FlowerNumMapDefaultEntryHolder.defaultEntry);
-      }
-      return flowerNumMap_;
-    }
-
-    public int getFlowerNumMapCount() {
-      return internalGetFlowerNumMap().getMap().size();
-    }
+    public static final int UID_FIELD_NUMBER = 1;
+    private int uid_;
     /**
-     * <code>map&lt;uint32, uint32&gt; flower_num_map = 15;</code>
-     */
-
-    @java.lang.Override
-    public boolean containsFlowerNumMap(
-        int key) {
-      
-      return internalGetFlowerNumMap().getMap().containsKey(key);
-    }
-    /**
-     * Use {@link #getFlowerNumMapMap()} instead.
+     * <code>uint32 uid = 1;</code>
+     * @return The uid.
      */
     @java.lang.Override
-    @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getFlowerNumMap() {
-      return getFlowerNumMapMap();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; flower_num_map = 15;</code>
-     */
-    @java.lang.Override
-
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getFlowerNumMapMap() {
-      return internalGetFlowerNumMap().getMap();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; flower_num_map = 15;</code>
-     */
-    @java.lang.Override
-
-    public int getFlowerNumMapOrDefault(
-        int key,
-        int defaultValue) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetFlowerNumMap().getMap();
-      return map.containsKey(key) ? map.get(key) : defaultValue;
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; flower_num_map = 15;</code>
-     */
-    @java.lang.Override
-
-    public int getFlowerNumMapOrThrow(
-        int key) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetFlowerNumMap().getMap();
-      if (!map.containsKey(key)) {
-        throw new java.lang.IllegalArgumentException();
-      }
-      return map.get(key);
+    public int getUid() {
+      return uid_;
     }
 
-    public static final int NICKNAME_FIELD_NUMBER = 1;
+    public static final int NICKNAME_FIELD_NUMBER = 3;
     private volatile java.lang.Object nickname_;
     /**
-     * <code>string nickname = 1;</code>
+     * <code>string nickname = 3;</code>
      * @return The nickname.
      */
     @java.lang.Override
@@ -318,7 +248,7 @@ public final class PlantFlowerFriendFlowerWishDataOuterClass {
       }
     }
     /**
-     * <code>string nickname = 1;</code>
+     * <code>string nickname = 3;</code>
      * @return The bytes for nickname.
      */
     @java.lang.Override
@@ -362,15 +292,85 @@ public final class PlantFlowerFriendFlowerWishDataOuterClass {
       return getProfilePicture();
     }
 
-    public static final int UID_FIELD_NUMBER = 8;
-    private int uid_;
+    public static final int FLOWER_NUM_MAP_FIELD_NUMBER = 12;
+    private static final class FlowerNumMapDefaultEntryHolder {
+      static final com.google.protobuf.MapEntry<
+          java.lang.Integer, java.lang.Integer> defaultEntry =
+              com.google.protobuf.MapEntry
+              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
+                  emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.internal_static_PlantFlowerFriendFlowerWishData_FlowerNumMapEntry_descriptor, 
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0,
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0);
+    }
+    private com.google.protobuf.MapField<
+        java.lang.Integer, java.lang.Integer> flowerNumMap_;
+    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+    internalGetFlowerNumMap() {
+      if (flowerNumMap_ == null) {
+        return com.google.protobuf.MapField.emptyMapField(
+            FlowerNumMapDefaultEntryHolder.defaultEntry);
+      }
+      return flowerNumMap_;
+    }
+
+    public int getFlowerNumMapCount() {
+      return internalGetFlowerNumMap().getMap().size();
+    }
     /**
-     * <code>uint32 uid = 8;</code>
-     * @return The uid.
+     * <code>map&lt;uint32, uint32&gt; flower_num_map = 12;</code>
+     */
+
+    @java.lang.Override
+    public boolean containsFlowerNumMap(
+        int key) {
+      
+      return internalGetFlowerNumMap().getMap().containsKey(key);
+    }
+    /**
+     * Use {@link #getFlowerNumMapMap()} instead.
      */
     @java.lang.Override
-    public int getUid() {
-      return uid_;
+    @java.lang.Deprecated
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getFlowerNumMap() {
+      return getFlowerNumMapMap();
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; flower_num_map = 12;</code>
+     */
+    @java.lang.Override
+
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getFlowerNumMapMap() {
+      return internalGetFlowerNumMap().getMap();
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; flower_num_map = 12;</code>
+     */
+    @java.lang.Override
+
+    public int getFlowerNumMapOrDefault(
+        int key,
+        int defaultValue) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetFlowerNumMap().getMap();
+      return map.containsKey(key) ? map.get(key) : defaultValue;
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; flower_num_map = 12;</code>
+     */
+    @java.lang.Override
+
+    public int getFlowerNumMapOrThrow(
+        int key) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetFlowerNumMap().getMap();
+      if (!map.containsKey(key)) {
+        throw new java.lang.IllegalArgumentException();
+      }
+      return map.get(key);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -387,21 +387,21 @@ public final class PlantFlowerFriendFlowerWishDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (uid_ != 0) {
+        output.writeUInt32(1, uid_);
+      }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickname_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, nickname_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, nickname_);
       }
       if (profilePicture_ != null) {
         output.writeMessage(6, getProfilePicture());
-      }
-      if (uid_ != 0) {
-        output.writeUInt32(8, uid_);
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetFlowerNumMap(),
           FlowerNumMapDefaultEntryHolder.defaultEntry,
-          15);
+          12);
       unknownFields.writeTo(output);
     }
 
@@ -411,16 +411,16 @@ public final class PlantFlowerFriendFlowerWishDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (uid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, uid_);
+      }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickname_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, nickname_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, nickname_);
       }
       if (profilePicture_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(6, getProfilePicture());
-      }
-      if (uid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, uid_);
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
            : internalGetFlowerNumMap().getMap().entrySet()) {
@@ -430,7 +430,7 @@ public final class PlantFlowerFriendFlowerWishDataOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(15, flowerNumMap__);
+            .computeMessageSize(12, flowerNumMap__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -447,8 +447,8 @@ public final class PlantFlowerFriendFlowerWishDataOuterClass {
       }
       emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData other = (emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData) obj;
 
-      if (!internalGetFlowerNumMap().equals(
-          other.internalGetFlowerNumMap())) return false;
+      if (getUid()
+          != other.getUid()) return false;
       if (!getNickname()
           .equals(other.getNickname())) return false;
       if (hasProfilePicture() != other.hasProfilePicture()) return false;
@@ -456,8 +456,8 @@ public final class PlantFlowerFriendFlowerWishDataOuterClass {
         if (!getProfilePicture()
             .equals(other.getProfilePicture())) return false;
       }
-      if (getUid()
-          != other.getUid()) return false;
+      if (!internalGetFlowerNumMap().equals(
+          other.internalGetFlowerNumMap())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -469,18 +469,18 @@ public final class PlantFlowerFriendFlowerWishDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (!internalGetFlowerNumMap().getMap().isEmpty()) {
-        hash = (37 * hash) + FLOWER_NUM_MAP_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetFlowerNumMap().hashCode();
-      }
+      hash = (37 * hash) + UID_FIELD_NUMBER;
+      hash = (53 * hash) + getUid();
       hash = (37 * hash) + NICKNAME_FIELD_NUMBER;
       hash = (53 * hash) + getNickname().hashCode();
       if (hasProfilePicture()) {
         hash = (37 * hash) + PROFILE_PICTURE_FIELD_NUMBER;
         hash = (53 * hash) + getProfilePicture().hashCode();
       }
-      hash = (37 * hash) + UID_FIELD_NUMBER;
-      hash = (53 * hash) + getUid();
+      if (!internalGetFlowerNumMap().getMap().isEmpty()) {
+        hash = (37 * hash) + FLOWER_NUM_MAP_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetFlowerNumMap().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -578,7 +578,7 @@ public final class PlantFlowerFriendFlowerWishDataOuterClass {
     }
     /**
      * <pre>
-     * Name: DBGHDOAFABF
+     * Obf: BABKLIDHCGJ
      * </pre>
      *
      * Protobuf type {@code PlantFlowerFriendFlowerWishData}
@@ -596,7 +596,7 @@ public final class PlantFlowerFriendFlowerWishDataOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 15:
+          case 12:
             return internalGetFlowerNumMap();
           default:
             throw new RuntimeException(
@@ -607,7 +607,7 @@ public final class PlantFlowerFriendFlowerWishDataOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 15:
+          case 12:
             return internalGetMutableFlowerNumMap();
           default:
             throw new RuntimeException(
@@ -640,7 +640,8 @@ public final class PlantFlowerFriendFlowerWishDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        internalGetMutableFlowerNumMap().clear();
+        uid_ = 0;
+
         nickname_ = "";
 
         if (profilePictureBuilder_ == null) {
@@ -649,8 +650,7 @@ public final class PlantFlowerFriendFlowerWishDataOuterClass {
           profilePicture_ = null;
           profilePictureBuilder_ = null;
         }
-        uid_ = 0;
-
+        internalGetMutableFlowerNumMap().clear();
         return this;
       }
 
@@ -678,15 +678,15 @@ public final class PlantFlowerFriendFlowerWishDataOuterClass {
       public emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData buildPartial() {
         emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData result = new emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData(this);
         int from_bitField0_ = bitField0_;
-        result.flowerNumMap_ = internalGetFlowerNumMap();
-        result.flowerNumMap_.makeImmutable();
+        result.uid_ = uid_;
         result.nickname_ = nickname_;
         if (profilePictureBuilder_ == null) {
           result.profilePicture_ = profilePicture_;
         } else {
           result.profilePicture_ = profilePictureBuilder_.build();
         }
-        result.uid_ = uid_;
+        result.flowerNumMap_ = internalGetFlowerNumMap();
+        result.flowerNumMap_.makeImmutable();
         onBuilt();
         return result;
       }
@@ -735,8 +735,9 @@ public final class PlantFlowerFriendFlowerWishDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData other) {
         if (other == emu.grasscutter.net.proto.PlantFlowerFriendFlowerWishDataOuterClass.PlantFlowerFriendFlowerWishData.getDefaultInstance()) return this;
-        internalGetMutableFlowerNumMap().mergeFrom(
-            other.internalGetFlowerNumMap());
+        if (other.getUid() != 0) {
+          setUid(other.getUid());
+        }
         if (!other.getNickname().isEmpty()) {
           nickname_ = other.nickname_;
           onChanged();
@@ -744,9 +745,8 @@ public final class PlantFlowerFriendFlowerWishDataOuterClass {
         if (other.hasProfilePicture()) {
           mergeProfilePicture(other.getProfilePicture());
         }
-        if (other.getUid() != 0) {
-          setUid(other.getUid());
-        }
+        internalGetMutableFlowerNumMap().mergeFrom(
+            other.internalGetFlowerNumMap());
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -777,137 +777,40 @@ public final class PlantFlowerFriendFlowerWishDataOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> flowerNumMap_;
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetFlowerNumMap() {
-        if (flowerNumMap_ == null) {
-          return com.google.protobuf.MapField.emptyMapField(
-              FlowerNumMapDefaultEntryHolder.defaultEntry);
-        }
-        return flowerNumMap_;
-      }
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableFlowerNumMap() {
-        onChanged();;
-        if (flowerNumMap_ == null) {
-          flowerNumMap_ = com.google.protobuf.MapField.newMapField(
-              FlowerNumMapDefaultEntryHolder.defaultEntry);
-        }
-        if (!flowerNumMap_.isMutable()) {
-          flowerNumMap_ = flowerNumMap_.copy();
-        }
-        return flowerNumMap_;
-      }
-
-      public int getFlowerNumMapCount() {
-        return internalGetFlowerNumMap().getMap().size();
+      private int uid_ ;
+      /**
+       * <code>uint32 uid = 1;</code>
+       * @return The uid.
+       */
+      @java.lang.Override
+      public int getUid() {
+        return uid_;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; flower_num_map = 15;</code>
+       * <code>uint32 uid = 1;</code>
+       * @param value The uid to set.
+       * @return This builder for chaining.
        */
-
-      @java.lang.Override
-      public boolean containsFlowerNumMap(
-          int key) {
+      public Builder setUid(int value) {
         
-        return internalGetFlowerNumMap().getMap().containsKey(key);
-      }
-      /**
-       * Use {@link #getFlowerNumMapMap()} instead.
-       */
-      @java.lang.Override
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getFlowerNumMap() {
-        return getFlowerNumMapMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; flower_num_map = 15;</code>
-       */
-      @java.lang.Override
-
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getFlowerNumMapMap() {
-        return internalGetFlowerNumMap().getMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; flower_num_map = 15;</code>
-       */
-      @java.lang.Override
-
-      public int getFlowerNumMapOrDefault(
-          int key,
-          int defaultValue) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetFlowerNumMap().getMap();
-        return map.containsKey(key) ? map.get(key) : defaultValue;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; flower_num_map = 15;</code>
-       */
-      @java.lang.Override
-
-      public int getFlowerNumMapOrThrow(
-          int key) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetFlowerNumMap().getMap();
-        if (!map.containsKey(key)) {
-          throw new java.lang.IllegalArgumentException();
-        }
-        return map.get(key);
-      }
-
-      public Builder clearFlowerNumMap() {
-        internalGetMutableFlowerNumMap().getMutableMap()
-            .clear();
+        uid_ = value;
+        onChanged();
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; flower_num_map = 15;</code>
+       * <code>uint32 uid = 1;</code>
+       * @return This builder for chaining.
        */
-
-      public Builder removeFlowerNumMap(
-          int key) {
+      public Builder clearUid() {
         
-        internalGetMutableFlowerNumMap().getMutableMap()
-            .remove(key);
-        return this;
-      }
-      /**
-       * Use alternate mutation accessors instead.
-       */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableFlowerNumMap() {
-        return internalGetMutableFlowerNumMap().getMutableMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; flower_num_map = 15;</code>
-       */
-      public Builder putFlowerNumMap(
-          int key,
-          int value) {
-        
-        
-        internalGetMutableFlowerNumMap().getMutableMap()
-            .put(key, value);
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; flower_num_map = 15;</code>
-       */
-
-      public Builder putAllFlowerNumMap(
-          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableFlowerNumMap().getMutableMap()
-            .putAll(values);
+        uid_ = 0;
+        onChanged();
         return this;
       }
 
       private java.lang.Object nickname_ = "";
       /**
-       * <code>string nickname = 1;</code>
+       * <code>string nickname = 3;</code>
        * @return The nickname.
        */
       public java.lang.String getNickname() {
@@ -923,7 +826,7 @@ public final class PlantFlowerFriendFlowerWishDataOuterClass {
         }
       }
       /**
-       * <code>string nickname = 1;</code>
+       * <code>string nickname = 3;</code>
        * @return The bytes for nickname.
        */
       public com.google.protobuf.ByteString
@@ -940,7 +843,7 @@ public final class PlantFlowerFriendFlowerWishDataOuterClass {
         }
       }
       /**
-       * <code>string nickname = 1;</code>
+       * <code>string nickname = 3;</code>
        * @param value The nickname to set.
        * @return This builder for chaining.
        */
@@ -955,7 +858,7 @@ public final class PlantFlowerFriendFlowerWishDataOuterClass {
         return this;
       }
       /**
-       * <code>string nickname = 1;</code>
+       * <code>string nickname = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearNickname() {
@@ -965,7 +868,7 @@ public final class PlantFlowerFriendFlowerWishDataOuterClass {
         return this;
       }
       /**
-       * <code>string nickname = 1;</code>
+       * <code>string nickname = 3;</code>
        * @param value The bytes for nickname to set.
        * @return This builder for chaining.
        */
@@ -1100,34 +1003,131 @@ public final class PlantFlowerFriendFlowerWishDataOuterClass {
         return profilePictureBuilder_;
       }
 
-      private int uid_ ;
-      /**
-       * <code>uint32 uid = 8;</code>
-       * @return The uid.
-       */
-      @java.lang.Override
-      public int getUid() {
-        return uid_;
+      private com.google.protobuf.MapField<
+          java.lang.Integer, java.lang.Integer> flowerNumMap_;
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetFlowerNumMap() {
+        if (flowerNumMap_ == null) {
+          return com.google.protobuf.MapField.emptyMapField(
+              FlowerNumMapDefaultEntryHolder.defaultEntry);
+        }
+        return flowerNumMap_;
+      }
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetMutableFlowerNumMap() {
+        onChanged();;
+        if (flowerNumMap_ == null) {
+          flowerNumMap_ = com.google.protobuf.MapField.newMapField(
+              FlowerNumMapDefaultEntryHolder.defaultEntry);
+        }
+        if (!flowerNumMap_.isMutable()) {
+          flowerNumMap_ = flowerNumMap_.copy();
+        }
+        return flowerNumMap_;
+      }
+
+      public int getFlowerNumMapCount() {
+        return internalGetFlowerNumMap().getMap().size();
       }
       /**
-       * <code>uint32 uid = 8;</code>
-       * @param value The uid to set.
-       * @return This builder for chaining.
+       * <code>map&lt;uint32, uint32&gt; flower_num_map = 12;</code>
        */
-      public Builder setUid(int value) {
+
+      @java.lang.Override
+      public boolean containsFlowerNumMap(
+          int key) {
         
-        uid_ = value;
-        onChanged();
+        return internalGetFlowerNumMap().getMap().containsKey(key);
+      }
+      /**
+       * Use {@link #getFlowerNumMapMap()} instead.
+       */
+      @java.lang.Override
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getFlowerNumMap() {
+        return getFlowerNumMapMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; flower_num_map = 12;</code>
+       */
+      @java.lang.Override
+
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getFlowerNumMapMap() {
+        return internalGetFlowerNumMap().getMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; flower_num_map = 12;</code>
+       */
+      @java.lang.Override
+
+      public int getFlowerNumMapOrDefault(
+          int key,
+          int defaultValue) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetFlowerNumMap().getMap();
+        return map.containsKey(key) ? map.get(key) : defaultValue;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; flower_num_map = 12;</code>
+       */
+      @java.lang.Override
+
+      public int getFlowerNumMapOrThrow(
+          int key) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetFlowerNumMap().getMap();
+        if (!map.containsKey(key)) {
+          throw new java.lang.IllegalArgumentException();
+        }
+        return map.get(key);
+      }
+
+      public Builder clearFlowerNumMap() {
+        internalGetMutableFlowerNumMap().getMutableMap()
+            .clear();
         return this;
       }
       /**
-       * <code>uint32 uid = 8;</code>
-       * @return This builder for chaining.
+       * <code>map&lt;uint32, uint32&gt; flower_num_map = 12;</code>
        */
-      public Builder clearUid() {
+
+      public Builder removeFlowerNumMap(
+          int key) {
         
-        uid_ = 0;
-        onChanged();
+        internalGetMutableFlowerNumMap().getMutableMap()
+            .remove(key);
+        return this;
+      }
+      /**
+       * Use alternate mutation accessors instead.
+       */
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer>
+      getMutableFlowerNumMap() {
+        return internalGetMutableFlowerNumMap().getMutableMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; flower_num_map = 12;</code>
+       */
+      public Builder putFlowerNumMap(
+          int key,
+          int value) {
+        
+        
+        internalGetMutableFlowerNumMap().getMutableMap()
+            .put(key, value);
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; flower_num_map = 12;</code>
+       */
+
+      public Builder putAllFlowerNumMap(
+          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
+        internalGetMutableFlowerNumMap().getMutableMap()
+            .putAll(values);
         return this;
       }
       @java.lang.Override
@@ -1204,11 +1204,11 @@ public final class PlantFlowerFriendFlowerWishDataOuterClass {
     java.lang.String[] descriptorData = {
       "\n%PlantFlowerFriendFlowerWishData.proto\032" +
       "\024ProfilePicture.proto\"\353\001\n\037PlantFlowerFri" +
-      "endFlowerWishData\022J\n\016flower_num_map\030\017 \003(" +
-      "\01322.PlantFlowerFriendFlowerWishData.Flow" +
-      "erNumMapEntry\022\020\n\010nickname\030\001 \001(\t\022(\n\017profi" +
-      "le_picture\030\006 \001(\0132\017.ProfilePicture\022\013\n\003uid" +
-      "\030\010 \001(\r\0323\n\021FlowerNumMapEntry\022\013\n\003key\030\001 \001(\r" +
+      "endFlowerWishData\022\013\n\003uid\030\001 \001(\r\022\020\n\010nickna" +
+      "me\030\003 \001(\t\022(\n\017profile_picture\030\006 \001(\0132\017.Prof" +
+      "ilePicture\022J\n\016flower_num_map\030\014 \003(\01322.Pla" +
+      "ntFlowerFriendFlowerWishData.FlowerNumMa" +
+      "pEntry\0323\n\021FlowerNumMapEntry\022\013\n\003key\030\001 \001(\r" +
       "\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };
@@ -1222,7 +1222,7 @@ public final class PlantFlowerFriendFlowerWishDataOuterClass {
     internal_static_PlantFlowerFriendFlowerWishData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlantFlowerFriendFlowerWishData_descriptor,
-        new java.lang.String[] { "FlowerNumMap", "Nickname", "ProfilePicture", "Uid", });
+        new java.lang.String[] { "Uid", "Nickname", "ProfilePicture", "FlowerNumMap", });
     internal_static_PlantFlowerFriendFlowerWishData_FlowerNumMapEntry_descriptor =
       internal_static_PlantFlowerFriendFlowerWishData_descriptor.getNestedTypes().get(0);
     internal_static_PlantFlowerFriendFlowerWishData_FlowerNumMapEntry_fieldAccessorTable = new

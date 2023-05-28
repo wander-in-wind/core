@@ -19,26 +19,26 @@ public final class ChannelerSlabOneoffDungeonOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 dungeon_id = 12;</code>
-     * @return The dungeonId.
-     */
-    int getDungeonId();
-
-    /**
-     * <code>uint32 reward_id = 14;</code>
+     * <code>uint32 reward_id = 3;</code>
      * @return The rewardId.
      */
     int getRewardId();
 
     /**
-     * <code>bool is_done = 4;</code>
+     * <code>uint32 dungeon_id = 8;</code>
+     * @return The dungeonId.
+     */
+    int getDungeonId();
+
+    /**
+     * <code>bool is_done = 6;</code>
      * @return The isDone.
      */
     boolean getIsDone();
   }
   /**
    * <pre>
-   * Name: BAEHNHHABBK
+   * Obf: HCIMIDPHFBF
    * </pre>
    *
    * Protobuf type {@code ChannelerSlabOneoffDungeon}
@@ -85,19 +85,19 @@ public final class ChannelerSlabOneoffDungeonOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 24: {
+
+              rewardId_ = input.readUInt32();
+              break;
+            }
+            case 48: {
 
               isDone_ = input.readBool();
               break;
             }
-            case 96: {
+            case 64: {
 
               dungeonId_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
-              rewardId_ = input.readUInt32();
               break;
             }
             default: {
@@ -132,21 +132,10 @@ public final class ChannelerSlabOneoffDungeonOuterClass {
               emu.grasscutter.net.proto.ChannelerSlabOneoffDungeonOuterClass.ChannelerSlabOneoffDungeon.class, emu.grasscutter.net.proto.ChannelerSlabOneoffDungeonOuterClass.ChannelerSlabOneoffDungeon.Builder.class);
     }
 
-    public static final int DUNGEON_ID_FIELD_NUMBER = 12;
-    private int dungeonId_;
-    /**
-     * <code>uint32 dungeon_id = 12;</code>
-     * @return The dungeonId.
-     */
-    @java.lang.Override
-    public int getDungeonId() {
-      return dungeonId_;
-    }
-
-    public static final int REWARD_ID_FIELD_NUMBER = 14;
+    public static final int REWARD_ID_FIELD_NUMBER = 3;
     private int rewardId_;
     /**
-     * <code>uint32 reward_id = 14;</code>
+     * <code>uint32 reward_id = 3;</code>
      * @return The rewardId.
      */
     @java.lang.Override
@@ -154,10 +143,21 @@ public final class ChannelerSlabOneoffDungeonOuterClass {
       return rewardId_;
     }
 
-    public static final int IS_DONE_FIELD_NUMBER = 4;
+    public static final int DUNGEON_ID_FIELD_NUMBER = 8;
+    private int dungeonId_;
+    /**
+     * <code>uint32 dungeon_id = 8;</code>
+     * @return The dungeonId.
+     */
+    @java.lang.Override
+    public int getDungeonId() {
+      return dungeonId_;
+    }
+
+    public static final int IS_DONE_FIELD_NUMBER = 6;
     private boolean isDone_;
     /**
-     * <code>bool is_done = 4;</code>
+     * <code>bool is_done = 6;</code>
      * @return The isDone.
      */
     @java.lang.Override
@@ -179,14 +179,14 @@ public final class ChannelerSlabOneoffDungeonOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (rewardId_ != 0) {
+        output.writeUInt32(3, rewardId_);
+      }
       if (isDone_ != false) {
-        output.writeBool(4, isDone_);
+        output.writeBool(6, isDone_);
       }
       if (dungeonId_ != 0) {
-        output.writeUInt32(12, dungeonId_);
-      }
-      if (rewardId_ != 0) {
-        output.writeUInt32(14, rewardId_);
+        output.writeUInt32(8, dungeonId_);
       }
       unknownFields.writeTo(output);
     }
@@ -197,17 +197,17 @@ public final class ChannelerSlabOneoffDungeonOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (rewardId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, rewardId_);
+      }
       if (isDone_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, isDone_);
+          .computeBoolSize(6, isDone_);
       }
       if (dungeonId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, dungeonId_);
-      }
-      if (rewardId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, rewardId_);
+          .computeUInt32Size(8, dungeonId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -224,10 +224,10 @@ public final class ChannelerSlabOneoffDungeonOuterClass {
       }
       emu.grasscutter.net.proto.ChannelerSlabOneoffDungeonOuterClass.ChannelerSlabOneoffDungeon other = (emu.grasscutter.net.proto.ChannelerSlabOneoffDungeonOuterClass.ChannelerSlabOneoffDungeon) obj;
 
-      if (getDungeonId()
-          != other.getDungeonId()) return false;
       if (getRewardId()
           != other.getRewardId()) return false;
+      if (getDungeonId()
+          != other.getDungeonId()) return false;
       if (getIsDone()
           != other.getIsDone()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -241,10 +241,10 @@ public final class ChannelerSlabOneoffDungeonOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getDungeonId();
       hash = (37 * hash) + REWARD_ID_FIELD_NUMBER;
       hash = (53 * hash) + getRewardId();
+      hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getDungeonId();
       hash = (37 * hash) + IS_DONE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsDone());
@@ -345,7 +345,7 @@ public final class ChannelerSlabOneoffDungeonOuterClass {
     }
     /**
      * <pre>
-     * Name: BAEHNHHABBK
+     * Obf: HCIMIDPHFBF
      * </pre>
      *
      * Protobuf type {@code ChannelerSlabOneoffDungeon}
@@ -385,9 +385,9 @@ public final class ChannelerSlabOneoffDungeonOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        dungeonId_ = 0;
-
         rewardId_ = 0;
+
+        dungeonId_ = 0;
 
         isDone_ = false;
 
@@ -417,8 +417,8 @@ public final class ChannelerSlabOneoffDungeonOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ChannelerSlabOneoffDungeonOuterClass.ChannelerSlabOneoffDungeon buildPartial() {
         emu.grasscutter.net.proto.ChannelerSlabOneoffDungeonOuterClass.ChannelerSlabOneoffDungeon result = new emu.grasscutter.net.proto.ChannelerSlabOneoffDungeonOuterClass.ChannelerSlabOneoffDungeon(this);
-        result.dungeonId_ = dungeonId_;
         result.rewardId_ = rewardId_;
+        result.dungeonId_ = dungeonId_;
         result.isDone_ = isDone_;
         onBuilt();
         return result;
@@ -468,11 +468,11 @@ public final class ChannelerSlabOneoffDungeonOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ChannelerSlabOneoffDungeonOuterClass.ChannelerSlabOneoffDungeon other) {
         if (other == emu.grasscutter.net.proto.ChannelerSlabOneoffDungeonOuterClass.ChannelerSlabOneoffDungeon.getDefaultInstance()) return this;
-        if (other.getDungeonId() != 0) {
-          setDungeonId(other.getDungeonId());
-        }
         if (other.getRewardId() != 0) {
           setRewardId(other.getRewardId());
+        }
+        if (other.getDungeonId() != 0) {
+          setDungeonId(other.getDungeonId());
         }
         if (other.getIsDone() != false) {
           setIsDone(other.getIsDone());
@@ -506,40 +506,9 @@ public final class ChannelerSlabOneoffDungeonOuterClass {
         return this;
       }
 
-      private int dungeonId_ ;
-      /**
-       * <code>uint32 dungeon_id = 12;</code>
-       * @return The dungeonId.
-       */
-      @java.lang.Override
-      public int getDungeonId() {
-        return dungeonId_;
-      }
-      /**
-       * <code>uint32 dungeon_id = 12;</code>
-       * @param value The dungeonId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDungeonId(int value) {
-        
-        dungeonId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 dungeon_id = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDungeonId() {
-        
-        dungeonId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int rewardId_ ;
       /**
-       * <code>uint32 reward_id = 14;</code>
+       * <code>uint32 reward_id = 3;</code>
        * @return The rewardId.
        */
       @java.lang.Override
@@ -547,7 +516,7 @@ public final class ChannelerSlabOneoffDungeonOuterClass {
         return rewardId_;
       }
       /**
-       * <code>uint32 reward_id = 14;</code>
+       * <code>uint32 reward_id = 3;</code>
        * @param value The rewardId to set.
        * @return This builder for chaining.
        */
@@ -558,7 +527,7 @@ public final class ChannelerSlabOneoffDungeonOuterClass {
         return this;
       }
       /**
-       * <code>uint32 reward_id = 14;</code>
+       * <code>uint32 reward_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearRewardId() {
@@ -568,9 +537,40 @@ public final class ChannelerSlabOneoffDungeonOuterClass {
         return this;
       }
 
+      private int dungeonId_ ;
+      /**
+       * <code>uint32 dungeon_id = 8;</code>
+       * @return The dungeonId.
+       */
+      @java.lang.Override
+      public int getDungeonId() {
+        return dungeonId_;
+      }
+      /**
+       * <code>uint32 dungeon_id = 8;</code>
+       * @param value The dungeonId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDungeonId(int value) {
+        
+        dungeonId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 dungeon_id = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDungeonId() {
+        
+        dungeonId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private boolean isDone_ ;
       /**
-       * <code>bool is_done = 4;</code>
+       * <code>bool is_done = 6;</code>
        * @return The isDone.
        */
       @java.lang.Override
@@ -578,7 +578,7 @@ public final class ChannelerSlabOneoffDungeonOuterClass {
         return isDone_;
       }
       /**
-       * <code>bool is_done = 4;</code>
+       * <code>bool is_done = 6;</code>
        * @param value The isDone to set.
        * @return This builder for chaining.
        */
@@ -589,7 +589,7 @@ public final class ChannelerSlabOneoffDungeonOuterClass {
         return this;
       }
       /**
-       * <code>bool is_done = 4;</code>
+       * <code>bool is_done = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsDone() {
@@ -666,8 +666,8 @@ public final class ChannelerSlabOneoffDungeonOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n ChannelerSlabOneoffDungeon.proto\"T\n\032Ch" +
-      "annelerSlabOneoffDungeon\022\022\n\ndungeon_id\030\014" +
-      " \001(\r\022\021\n\treward_id\030\016 \001(\r\022\017\n\007is_done\030\004 \001(\010" +
+      "annelerSlabOneoffDungeon\022\021\n\treward_id\030\003 " +
+      "\001(\r\022\022\n\ndungeon_id\030\010 \001(\r\022\017\n\007is_done\030\006 \001(\010" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -679,7 +679,7 @@ public final class ChannelerSlabOneoffDungeonOuterClass {
     internal_static_ChannelerSlabOneoffDungeon_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ChannelerSlabOneoffDungeon_descriptor,
-        new java.lang.String[] { "DungeonId", "RewardId", "IsDone", });
+        new java.lang.String[] { "RewardId", "DungeonId", "IsDone", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

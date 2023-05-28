@@ -20,8 +20,8 @@ public final class HomePlantInfoReqOuterClass {
   }
   /**
    * <pre>
-   * Name: MCLEPEBMOHE
-   * CmdId: 4645
+   * CmdId: 4879
+   * Obf: GMOFAGLHKNB
    * </pre>
    *
    * Protobuf type {@code HomePlantInfoReq}
@@ -246,8 +246,8 @@ public final class HomePlantInfoReqOuterClass {
     }
     /**
      * <pre>
-     * Name: MCLEPEBMOHE
-     * CmdId: 4645
+     * CmdId: 4879
+     * Obf: GMOFAGLHKNB
      * </pre>
      *
      * Protobuf type {@code HomePlantInfoReq}

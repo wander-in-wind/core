@@ -19,26 +19,26 @@ public final class ReunionPrivilegeInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 KMEGFGAADHB = 11;</code>
-     * @return The kMEGFGAADHB.
+     * <code>uint32 EDBAKLDPAAD = 6;</code>
+     * @return The eDBAKLDPAAD.
      */
-    int getKMEGFGAADHB();
+    int getEDBAKLDPAAD();
 
     /**
-     * <code>uint32 GCJPFFOBGMJ = 3;</code>
-     * @return The gCJPFFOBGMJ.
+     * <code>uint32 NJGIJJIJGCJ = 12;</code>
+     * @return The nJGIJJIJGCJ.
      */
-    int getGCJPFFOBGMJ();
+    int getNJGIJJIJGCJ();
 
     /**
-     * <code>uint32 privilege_id = 1;</code>
+     * <code>uint32 privilege_id = 9;</code>
      * @return The privilegeId.
      */
     int getPrivilegeId();
   }
   /**
    * <pre>
-   * Name: GGJNNEGFMKM
+   * Obf: KOJNFAKDGFL
    * </pre>
    *
    * Protobuf type {@code ReunionPrivilegeInfo}
@@ -85,19 +85,19 @@ public final class ReunionPrivilegeInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 48: {
+
+              eDBAKLDPAAD_ = input.readUInt32();
+              break;
+            }
+            case 72: {
 
               privilegeId_ = input.readUInt32();
               break;
             }
-            case 24: {
+            case 96: {
 
-              gCJPFFOBGMJ_ = input.readUInt32();
-              break;
-            }
-            case 88: {
-
-              kMEGFGAADHB_ = input.readUInt32();
+              nJGIJJIJGCJ_ = input.readUInt32();
               break;
             }
             default: {
@@ -132,32 +132,32 @@ public final class ReunionPrivilegeInfoOuterClass {
               emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo.class, emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo.Builder.class);
     }
 
-    public static final int KMEGFGAADHB_FIELD_NUMBER = 11;
-    private int kMEGFGAADHB_;
+    public static final int EDBAKLDPAAD_FIELD_NUMBER = 6;
+    private int eDBAKLDPAAD_;
     /**
-     * <code>uint32 KMEGFGAADHB = 11;</code>
-     * @return The kMEGFGAADHB.
+     * <code>uint32 EDBAKLDPAAD = 6;</code>
+     * @return The eDBAKLDPAAD.
      */
     @java.lang.Override
-    public int getKMEGFGAADHB() {
-      return kMEGFGAADHB_;
+    public int getEDBAKLDPAAD() {
+      return eDBAKLDPAAD_;
     }
 
-    public static final int GCJPFFOBGMJ_FIELD_NUMBER = 3;
-    private int gCJPFFOBGMJ_;
+    public static final int NJGIJJIJGCJ_FIELD_NUMBER = 12;
+    private int nJGIJJIJGCJ_;
     /**
-     * <code>uint32 GCJPFFOBGMJ = 3;</code>
-     * @return The gCJPFFOBGMJ.
+     * <code>uint32 NJGIJJIJGCJ = 12;</code>
+     * @return The nJGIJJIJGCJ.
      */
     @java.lang.Override
-    public int getGCJPFFOBGMJ() {
-      return gCJPFFOBGMJ_;
+    public int getNJGIJJIJGCJ() {
+      return nJGIJJIJGCJ_;
     }
 
-    public static final int PRIVILEGE_ID_FIELD_NUMBER = 1;
+    public static final int PRIVILEGE_ID_FIELD_NUMBER = 9;
     private int privilegeId_;
     /**
-     * <code>uint32 privilege_id = 1;</code>
+     * <code>uint32 privilege_id = 9;</code>
      * @return The privilegeId.
      */
     @java.lang.Override
@@ -179,14 +179,14 @@ public final class ReunionPrivilegeInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (eDBAKLDPAAD_ != 0) {
+        output.writeUInt32(6, eDBAKLDPAAD_);
+      }
       if (privilegeId_ != 0) {
-        output.writeUInt32(1, privilegeId_);
+        output.writeUInt32(9, privilegeId_);
       }
-      if (gCJPFFOBGMJ_ != 0) {
-        output.writeUInt32(3, gCJPFFOBGMJ_);
-      }
-      if (kMEGFGAADHB_ != 0) {
-        output.writeUInt32(11, kMEGFGAADHB_);
+      if (nJGIJJIJGCJ_ != 0) {
+        output.writeUInt32(12, nJGIJJIJGCJ_);
       }
       unknownFields.writeTo(output);
     }
@@ -197,17 +197,17 @@ public final class ReunionPrivilegeInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (eDBAKLDPAAD_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, eDBAKLDPAAD_);
+      }
       if (privilegeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, privilegeId_);
+          .computeUInt32Size(9, privilegeId_);
       }
-      if (gCJPFFOBGMJ_ != 0) {
+      if (nJGIJJIJGCJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, gCJPFFOBGMJ_);
-      }
-      if (kMEGFGAADHB_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, kMEGFGAADHB_);
+          .computeUInt32Size(12, nJGIJJIJGCJ_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -224,10 +224,10 @@ public final class ReunionPrivilegeInfoOuterClass {
       }
       emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo other = (emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo) obj;
 
-      if (getKMEGFGAADHB()
-          != other.getKMEGFGAADHB()) return false;
-      if (getGCJPFFOBGMJ()
-          != other.getGCJPFFOBGMJ()) return false;
+      if (getEDBAKLDPAAD()
+          != other.getEDBAKLDPAAD()) return false;
+      if (getNJGIJJIJGCJ()
+          != other.getNJGIJJIJGCJ()) return false;
       if (getPrivilegeId()
           != other.getPrivilegeId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -241,10 +241,10 @@ public final class ReunionPrivilegeInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + KMEGFGAADHB_FIELD_NUMBER;
-      hash = (53 * hash) + getKMEGFGAADHB();
-      hash = (37 * hash) + GCJPFFOBGMJ_FIELD_NUMBER;
-      hash = (53 * hash) + getGCJPFFOBGMJ();
+      hash = (37 * hash) + EDBAKLDPAAD_FIELD_NUMBER;
+      hash = (53 * hash) + getEDBAKLDPAAD();
+      hash = (37 * hash) + NJGIJJIJGCJ_FIELD_NUMBER;
+      hash = (53 * hash) + getNJGIJJIJGCJ();
       hash = (37 * hash) + PRIVILEGE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getPrivilegeId();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -344,7 +344,7 @@ public final class ReunionPrivilegeInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: GGJNNEGFMKM
+     * Obf: KOJNFAKDGFL
      * </pre>
      *
      * Protobuf type {@code ReunionPrivilegeInfo}
@@ -384,9 +384,9 @@ public final class ReunionPrivilegeInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        kMEGFGAADHB_ = 0;
+        eDBAKLDPAAD_ = 0;
 
-        gCJPFFOBGMJ_ = 0;
+        nJGIJJIJGCJ_ = 0;
 
         privilegeId_ = 0;
 
@@ -416,8 +416,8 @@ public final class ReunionPrivilegeInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo buildPartial() {
         emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo result = new emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo(this);
-        result.kMEGFGAADHB_ = kMEGFGAADHB_;
-        result.gCJPFFOBGMJ_ = gCJPFFOBGMJ_;
+        result.eDBAKLDPAAD_ = eDBAKLDPAAD_;
+        result.nJGIJJIJGCJ_ = nJGIJJIJGCJ_;
         result.privilegeId_ = privilegeId_;
         onBuilt();
         return result;
@@ -467,11 +467,11 @@ public final class ReunionPrivilegeInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo other) {
         if (other == emu.grasscutter.net.proto.ReunionPrivilegeInfoOuterClass.ReunionPrivilegeInfo.getDefaultInstance()) return this;
-        if (other.getKMEGFGAADHB() != 0) {
-          setKMEGFGAADHB(other.getKMEGFGAADHB());
+        if (other.getEDBAKLDPAAD() != 0) {
+          setEDBAKLDPAAD(other.getEDBAKLDPAAD());
         }
-        if (other.getGCJPFFOBGMJ() != 0) {
-          setGCJPFFOBGMJ(other.getGCJPFFOBGMJ());
+        if (other.getNJGIJJIJGCJ() != 0) {
+          setNJGIJJIJGCJ(other.getNJGIJJIJGCJ());
         }
         if (other.getPrivilegeId() != 0) {
           setPrivilegeId(other.getPrivilegeId());
@@ -505,71 +505,71 @@ public final class ReunionPrivilegeInfoOuterClass {
         return this;
       }
 
-      private int kMEGFGAADHB_ ;
+      private int eDBAKLDPAAD_ ;
       /**
-       * <code>uint32 KMEGFGAADHB = 11;</code>
-       * @return The kMEGFGAADHB.
+       * <code>uint32 EDBAKLDPAAD = 6;</code>
+       * @return The eDBAKLDPAAD.
        */
       @java.lang.Override
-      public int getKMEGFGAADHB() {
-        return kMEGFGAADHB_;
+      public int getEDBAKLDPAAD() {
+        return eDBAKLDPAAD_;
       }
       /**
-       * <code>uint32 KMEGFGAADHB = 11;</code>
-       * @param value The kMEGFGAADHB to set.
+       * <code>uint32 EDBAKLDPAAD = 6;</code>
+       * @param value The eDBAKLDPAAD to set.
        * @return This builder for chaining.
        */
-      public Builder setKMEGFGAADHB(int value) {
+      public Builder setEDBAKLDPAAD(int value) {
         
-        kMEGFGAADHB_ = value;
+        eDBAKLDPAAD_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 KMEGFGAADHB = 11;</code>
+       * <code>uint32 EDBAKLDPAAD = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearKMEGFGAADHB() {
+      public Builder clearEDBAKLDPAAD() {
         
-        kMEGFGAADHB_ = 0;
+        eDBAKLDPAAD_ = 0;
         onChanged();
         return this;
       }
 
-      private int gCJPFFOBGMJ_ ;
+      private int nJGIJJIJGCJ_ ;
       /**
-       * <code>uint32 GCJPFFOBGMJ = 3;</code>
-       * @return The gCJPFFOBGMJ.
+       * <code>uint32 NJGIJJIJGCJ = 12;</code>
+       * @return The nJGIJJIJGCJ.
        */
       @java.lang.Override
-      public int getGCJPFFOBGMJ() {
-        return gCJPFFOBGMJ_;
+      public int getNJGIJJIJGCJ() {
+        return nJGIJJIJGCJ_;
       }
       /**
-       * <code>uint32 GCJPFFOBGMJ = 3;</code>
-       * @param value The gCJPFFOBGMJ to set.
+       * <code>uint32 NJGIJJIJGCJ = 12;</code>
+       * @param value The nJGIJJIJGCJ to set.
        * @return This builder for chaining.
        */
-      public Builder setGCJPFFOBGMJ(int value) {
+      public Builder setNJGIJJIJGCJ(int value) {
         
-        gCJPFFOBGMJ_ = value;
+        nJGIJJIJGCJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 GCJPFFOBGMJ = 3;</code>
+       * <code>uint32 NJGIJJIJGCJ = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGCJPFFOBGMJ() {
+      public Builder clearNJGIJJIJGCJ() {
         
-        gCJPFFOBGMJ_ = 0;
+        nJGIJJIJGCJ_ = 0;
         onChanged();
         return this;
       }
 
       private int privilegeId_ ;
       /**
-       * <code>uint32 privilege_id = 1;</code>
+       * <code>uint32 privilege_id = 9;</code>
        * @return The privilegeId.
        */
       @java.lang.Override
@@ -577,7 +577,7 @@ public final class ReunionPrivilegeInfoOuterClass {
         return privilegeId_;
       }
       /**
-       * <code>uint32 privilege_id = 1;</code>
+       * <code>uint32 privilege_id = 9;</code>
        * @param value The privilegeId to set.
        * @return This builder for chaining.
        */
@@ -588,7 +588,7 @@ public final class ReunionPrivilegeInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 privilege_id = 1;</code>
+       * <code>uint32 privilege_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearPrivilegeId() {
@@ -665,8 +665,8 @@ public final class ReunionPrivilegeInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032ReunionPrivilegeInfo.proto\"V\n\024ReunionP" +
-      "rivilegeInfo\022\023\n\013KMEGFGAADHB\030\013 \001(\r\022\023\n\013GCJ" +
-      "PFFOBGMJ\030\003 \001(\r\022\024\n\014privilege_id\030\001 \001(\rB\033\n\031" +
+      "rivilegeInfo\022\023\n\013EDBAKLDPAAD\030\006 \001(\r\022\023\n\013NJG" +
+      "IJJIJGCJ\030\014 \001(\r\022\024\n\014privilege_id\030\t \001(\rB\033\n\031" +
       "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -678,7 +678,7 @@ public final class ReunionPrivilegeInfoOuterClass {
     internal_static_ReunionPrivilegeInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ReunionPrivilegeInfo_descriptor,
-        new java.lang.String[] { "KMEGFGAADHB", "GCJPFFOBGMJ", "PrivilegeId", });
+        new java.lang.String[] { "EDBAKLDPAAD", "NJGIJJIJGCJ", "PrivilegeId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

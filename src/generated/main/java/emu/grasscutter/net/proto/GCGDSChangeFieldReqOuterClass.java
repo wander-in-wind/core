@@ -19,29 +19,21 @@ public final class GCGDSChangeFieldReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *AHAIAIPGFDN snooswap
-     * </pre>
-     *
-     * <code>uint32 deck_id = 15;</code>
-     * @return The deckId.
-     */
-    int getDeckId();
-
-    /**
-     * <pre>
-     *LKFDEJMGHMP snooswap
-     * </pre>
-     *
      * <code>uint32 field_id = 12;</code>
      * @return The fieldId.
      */
     int getFieldId();
+
+    /**
+     * <code>uint32 deck_id = 4;</code>
+     * @return The deckId.
+     */
+    int getDeckId();
   }
   /**
    * <pre>
-   * Name: CMCJOKLGMCA
-   * CmdId: 7150
+   * CmdId: 7321
+   * Obf: MJDLKAIIMNM
    * </pre>
    *
    * Protobuf type {@code GCGDSChangeFieldReq}
@@ -88,14 +80,14 @@ public final class GCGDSChangeFieldReqOuterClass {
             case 0:
               done = true;
               break;
+            case 32: {
+
+              deckId_ = input.readUInt32();
+              break;
+            }
             case 96: {
 
               fieldId_ = input.readUInt32();
-              break;
-            }
-            case 120: {
-
-              deckId_ = input.readUInt32();
               break;
             }
             default: {
@@ -130,34 +122,26 @@ public final class GCGDSChangeFieldReqOuterClass {
               emu.grasscutter.net.proto.GCGDSChangeFieldReqOuterClass.GCGDSChangeFieldReq.class, emu.grasscutter.net.proto.GCGDSChangeFieldReqOuterClass.GCGDSChangeFieldReq.Builder.class);
     }
 
-    public static final int DECK_ID_FIELD_NUMBER = 15;
-    private int deckId_;
-    /**
-     * <pre>
-     *AHAIAIPGFDN snooswap
-     * </pre>
-     *
-     * <code>uint32 deck_id = 15;</code>
-     * @return The deckId.
-     */
-    @java.lang.Override
-    public int getDeckId() {
-      return deckId_;
-    }
-
     public static final int FIELD_ID_FIELD_NUMBER = 12;
     private int fieldId_;
     /**
-     * <pre>
-     *LKFDEJMGHMP snooswap
-     * </pre>
-     *
      * <code>uint32 field_id = 12;</code>
      * @return The fieldId.
      */
     @java.lang.Override
     public int getFieldId() {
       return fieldId_;
+    }
+
+    public static final int DECK_ID_FIELD_NUMBER = 4;
+    private int deckId_;
+    /**
+     * <code>uint32 deck_id = 4;</code>
+     * @return The deckId.
+     */
+    @java.lang.Override
+    public int getDeckId() {
+      return deckId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -174,11 +158,11 @@ public final class GCGDSChangeFieldReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (deckId_ != 0) {
+        output.writeUInt32(4, deckId_);
+      }
       if (fieldId_ != 0) {
         output.writeUInt32(12, fieldId_);
-      }
-      if (deckId_ != 0) {
-        output.writeUInt32(15, deckId_);
       }
       unknownFields.writeTo(output);
     }
@@ -189,13 +173,13 @@ public final class GCGDSChangeFieldReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (deckId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, deckId_);
+      }
       if (fieldId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(12, fieldId_);
-      }
-      if (deckId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, deckId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -212,10 +196,10 @@ public final class GCGDSChangeFieldReqOuterClass {
       }
       emu.grasscutter.net.proto.GCGDSChangeFieldReqOuterClass.GCGDSChangeFieldReq other = (emu.grasscutter.net.proto.GCGDSChangeFieldReqOuterClass.GCGDSChangeFieldReq) obj;
 
-      if (getDeckId()
-          != other.getDeckId()) return false;
       if (getFieldId()
           != other.getFieldId()) return false;
+      if (getDeckId()
+          != other.getDeckId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -227,10 +211,10 @@ public final class GCGDSChangeFieldReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + DECK_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getDeckId();
       hash = (37 * hash) + FIELD_ID_FIELD_NUMBER;
       hash = (53 * hash) + getFieldId();
+      hash = (37 * hash) + DECK_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getDeckId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -328,8 +312,8 @@ public final class GCGDSChangeFieldReqOuterClass {
     }
     /**
      * <pre>
-     * Name: CMCJOKLGMCA
-     * CmdId: 7150
+     * CmdId: 7321
+     * Obf: MJDLKAIIMNM
      * </pre>
      *
      * Protobuf type {@code GCGDSChangeFieldReq}
@@ -369,9 +353,9 @@ public final class GCGDSChangeFieldReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        deckId_ = 0;
-
         fieldId_ = 0;
+
+        deckId_ = 0;
 
         return this;
       }
@@ -399,8 +383,8 @@ public final class GCGDSChangeFieldReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGDSChangeFieldReqOuterClass.GCGDSChangeFieldReq buildPartial() {
         emu.grasscutter.net.proto.GCGDSChangeFieldReqOuterClass.GCGDSChangeFieldReq result = new emu.grasscutter.net.proto.GCGDSChangeFieldReqOuterClass.GCGDSChangeFieldReq(this);
-        result.deckId_ = deckId_;
         result.fieldId_ = fieldId_;
+        result.deckId_ = deckId_;
         onBuilt();
         return result;
       }
@@ -449,11 +433,11 @@ public final class GCGDSChangeFieldReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGDSChangeFieldReqOuterClass.GCGDSChangeFieldReq other) {
         if (other == emu.grasscutter.net.proto.GCGDSChangeFieldReqOuterClass.GCGDSChangeFieldReq.getDefaultInstance()) return this;
-        if (other.getDeckId() != 0) {
-          setDeckId(other.getDeckId());
-        }
         if (other.getFieldId() != 0) {
           setFieldId(other.getFieldId());
+        }
+        if (other.getDeckId() != 0) {
+          setDeckId(other.getDeckId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -484,55 +468,8 @@ public final class GCGDSChangeFieldReqOuterClass {
         return this;
       }
 
-      private int deckId_ ;
-      /**
-       * <pre>
-       *AHAIAIPGFDN snooswap
-       * </pre>
-       *
-       * <code>uint32 deck_id = 15;</code>
-       * @return The deckId.
-       */
-      @java.lang.Override
-      public int getDeckId() {
-        return deckId_;
-      }
-      /**
-       * <pre>
-       *AHAIAIPGFDN snooswap
-       * </pre>
-       *
-       * <code>uint32 deck_id = 15;</code>
-       * @param value The deckId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDeckId(int value) {
-        
-        deckId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *AHAIAIPGFDN snooswap
-       * </pre>
-       *
-       * <code>uint32 deck_id = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDeckId() {
-        
-        deckId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int fieldId_ ;
       /**
-       * <pre>
-       *LKFDEJMGHMP snooswap
-       * </pre>
-       *
        * <code>uint32 field_id = 12;</code>
        * @return The fieldId.
        */
@@ -541,10 +478,6 @@ public final class GCGDSChangeFieldReqOuterClass {
         return fieldId_;
       }
       /**
-       * <pre>
-       *LKFDEJMGHMP snooswap
-       * </pre>
-       *
        * <code>uint32 field_id = 12;</code>
        * @param value The fieldId to set.
        * @return This builder for chaining.
@@ -556,16 +489,43 @@ public final class GCGDSChangeFieldReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *LKFDEJMGHMP snooswap
-       * </pre>
-       *
        * <code>uint32 field_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearFieldId() {
         
         fieldId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int deckId_ ;
+      /**
+       * <code>uint32 deck_id = 4;</code>
+       * @return The deckId.
+       */
+      @java.lang.Override
+      public int getDeckId() {
+        return deckId_;
+      }
+      /**
+       * <code>uint32 deck_id = 4;</code>
+       * @param value The deckId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDeckId(int value) {
+        
+        deckId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 deck_id = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDeckId() {
+        
+        deckId_ = 0;
         onChanged();
         return this;
       }
@@ -637,8 +597,8 @@ public final class GCGDSChangeFieldReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031GCGDSChangeFieldReq.proto\"8\n\023GCGDSChan" +
-      "geFieldReq\022\017\n\007deck_id\030\017 \001(\r\022\020\n\010field_id\030" +
-      "\014 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "geFieldReq\022\020\n\010field_id\030\014 \001(\r\022\017\n\007deck_id\030" +
+      "\004 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -650,7 +610,7 @@ public final class GCGDSChangeFieldReqOuterClass {
     internal_static_GCGDSChangeFieldReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGDSChangeFieldReq_descriptor,
-        new java.lang.String[] { "DeckId", "FieldId", });
+        new java.lang.String[] { "FieldId", "DeckId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,21 +19,21 @@ public final class GachaActivityCreateRobotRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 3;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 robot_id = 14;</code>
+     * <code>uint32 robot_id = 1;</code>
      * @return The robotId.
      */
     int getRobotId();
   }
   /**
    * <pre>
-   * Name: PBNEDENDCGG
-   * CmdId: 8808
+   * CmdId: 8688
+   * Obf: IKHIDKIADHN
    * </pre>
    *
    * Protobuf type {@code GachaActivityCreateRobotRsp}
@@ -80,14 +80,14 @@ public final class GachaActivityCreateRobotRspOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 112: {
+            case 8: {
 
               robotId_ = input.readUInt32();
+              break;
+            }
+            case 16: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -122,10 +122,10 @@ public final class GachaActivityCreateRobotRspOuterClass {
               emu.grasscutter.net.proto.GachaActivityCreateRobotRspOuterClass.GachaActivityCreateRobotRsp.class, emu.grasscutter.net.proto.GachaActivityCreateRobotRspOuterClass.GachaActivityCreateRobotRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 3;
+    public static final int RETCODE_FIELD_NUMBER = 2;
     private int retcode_;
     /**
-     * <code>int32 retcode = 3;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class GachaActivityCreateRobotRspOuterClass {
       return retcode_;
     }
 
-    public static final int ROBOT_ID_FIELD_NUMBER = 14;
+    public static final int ROBOT_ID_FIELD_NUMBER = 1;
     private int robotId_;
     /**
-     * <code>uint32 robot_id = 14;</code>
+     * <code>uint32 robot_id = 1;</code>
      * @return The robotId.
      */
     @java.lang.Override
@@ -158,11 +158,11 @@ public final class GachaActivityCreateRobotRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(3, retcode_);
-      }
       if (robotId_ != 0) {
-        output.writeUInt32(14, robotId_);
+        output.writeUInt32(1, robotId_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(2, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class GachaActivityCreateRobotRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, retcode_);
-      }
       if (robotId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, robotId_);
+          .computeUInt32Size(1, robotId_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class GachaActivityCreateRobotRspOuterClass {
     }
     /**
      * <pre>
-     * Name: PBNEDENDCGG
-     * CmdId: 8808
+     * CmdId: 8688
+     * Obf: IKHIDKIADHN
      * </pre>
      *
      * Protobuf type {@code GachaActivityCreateRobotRsp}
@@ -470,7 +470,7 @@ public final class GachaActivityCreateRobotRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 3;</code>
+       * <code>int32 retcode = 2;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class GachaActivityCreateRobotRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 3;</code>
+       * <code>int32 retcode = 2;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class GachaActivityCreateRobotRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 3;</code>
+       * <code>int32 retcode = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -501,7 +501,7 @@ public final class GachaActivityCreateRobotRspOuterClass {
 
       private int robotId_ ;
       /**
-       * <code>uint32 robot_id = 14;</code>
+       * <code>uint32 robot_id = 1;</code>
        * @return The robotId.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class GachaActivityCreateRobotRspOuterClass {
         return robotId_;
       }
       /**
-       * <code>uint32 robot_id = 14;</code>
+       * <code>uint32 robot_id = 1;</code>
        * @param value The robotId to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class GachaActivityCreateRobotRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 robot_id = 14;</code>
+       * <code>uint32 robot_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearRobotId() {
@@ -597,8 +597,8 @@ public final class GachaActivityCreateRobotRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!GachaActivityCreateRobotRsp.proto\"@\n\033G" +
-      "achaActivityCreateRobotRsp\022\017\n\007retcode\030\003 " +
-      "\001(\005\022\020\n\010robot_id\030\016 \001(\rB\033\n\031emu.grasscutter" +
+      "achaActivityCreateRobotRsp\022\017\n\007retcode\030\002 " +
+      "\001(\005\022\020\n\010robot_id\030\001 \001(\rB\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

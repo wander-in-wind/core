@@ -19,21 +19,21 @@ public final class GCGGrowthLevelNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level = 10;</code>
+     * <code>uint32 level = 7;</code>
      * @return The level.
      */
     int getLevel();
 
     /**
-     * <code>uint32 exp = 7;</code>
+     * <code>uint32 exp = 8;</code>
      * @return The exp.
      */
     int getExp();
   }
   /**
    * <pre>
-   * Name: LGFMBGFHJEF
-   * CmdId: 7680
+   * CmdId: 7788
+   * Obf: GGBEJKGHEKJ
    * </pre>
    *
    * Protobuf type {@code GCGGrowthLevelNotify}
@@ -82,12 +82,12 @@ public final class GCGGrowthLevelNotifyOuterClass {
               break;
             case 56: {
 
-              exp_ = input.readUInt32();
+              level_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 64: {
 
-              level_ = input.readUInt32();
+              exp_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,10 +122,10 @@ public final class GCGGrowthLevelNotifyOuterClass {
               emu.grasscutter.net.proto.GCGGrowthLevelNotifyOuterClass.GCGGrowthLevelNotify.class, emu.grasscutter.net.proto.GCGGrowthLevelNotifyOuterClass.GCGGrowthLevelNotify.Builder.class);
     }
 
-    public static final int LEVEL_FIELD_NUMBER = 10;
+    public static final int LEVEL_FIELD_NUMBER = 7;
     private int level_;
     /**
-     * <code>uint32 level = 10;</code>
+     * <code>uint32 level = 7;</code>
      * @return The level.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class GCGGrowthLevelNotifyOuterClass {
       return level_;
     }
 
-    public static final int EXP_FIELD_NUMBER = 7;
+    public static final int EXP_FIELD_NUMBER = 8;
     private int exp_;
     /**
-     * <code>uint32 exp = 7;</code>
+     * <code>uint32 exp = 8;</code>
      * @return The exp.
      */
     @java.lang.Override
@@ -158,11 +158,11 @@ public final class GCGGrowthLevelNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (exp_ != 0) {
-        output.writeUInt32(7, exp_);
-      }
       if (level_ != 0) {
-        output.writeUInt32(10, level_);
+        output.writeUInt32(7, level_);
+      }
+      if (exp_ != 0) {
+        output.writeUInt32(8, exp_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class GCGGrowthLevelNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (exp_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, exp_);
-      }
       if (level_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, level_);
+          .computeUInt32Size(7, level_);
+      }
+      if (exp_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, exp_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class GCGGrowthLevelNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: LGFMBGFHJEF
-     * CmdId: 7680
+     * CmdId: 7788
+     * Obf: GGBEJKGHEKJ
      * </pre>
      *
      * Protobuf type {@code GCGGrowthLevelNotify}
@@ -470,7 +470,7 @@ public final class GCGGrowthLevelNotifyOuterClass {
 
       private int level_ ;
       /**
-       * <code>uint32 level = 10;</code>
+       * <code>uint32 level = 7;</code>
        * @return The level.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class GCGGrowthLevelNotifyOuterClass {
         return level_;
       }
       /**
-       * <code>uint32 level = 10;</code>
+       * <code>uint32 level = 7;</code>
        * @param value The level to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class GCGGrowthLevelNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level = 10;</code>
+       * <code>uint32 level = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevel() {
@@ -501,7 +501,7 @@ public final class GCGGrowthLevelNotifyOuterClass {
 
       private int exp_ ;
       /**
-       * <code>uint32 exp = 7;</code>
+       * <code>uint32 exp = 8;</code>
        * @return The exp.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class GCGGrowthLevelNotifyOuterClass {
         return exp_;
       }
       /**
-       * <code>uint32 exp = 7;</code>
+       * <code>uint32 exp = 8;</code>
        * @param value The exp to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class GCGGrowthLevelNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 exp = 7;</code>
+       * <code>uint32 exp = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearExp() {
@@ -597,7 +597,7 @@ public final class GCGGrowthLevelNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032GCGGrowthLevelNotify.proto\"2\n\024GCGGrowt" +
-      "hLevelNotify\022\r\n\005level\030\n \001(\r\022\013\n\003exp\030\007 \001(\r" +
+      "hLevelNotify\022\r\n\005level\030\007 \001(\r\022\013\n\003exp\030\010 \001(\r" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

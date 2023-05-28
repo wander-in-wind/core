@@ -19,21 +19,21 @@ public final class InterpretInferenceWordReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 page_id = 1;</code>
-     * @return The pageId.
-     */
-    int getPageId();
-
-    /**
-     * <code>uint32 word_id = 6;</code>
+     * <code>uint32 word_id = 9;</code>
      * @return The wordId.
      */
     int getWordId();
+
+    /**
+     * <code>uint32 page_id = 3;</code>
+     * @return The pageId.
+     */
+    int getPageId();
   }
   /**
    * <pre>
-   * Name: OIOIOFJMHFO
-   * CmdId: 487
+   * CmdId: 410
+   * Obf: PLBKCHMFCKC
    * </pre>
    *
    * Protobuf type {@code InterpretInferenceWordReq}
@@ -80,12 +80,12 @@ public final class InterpretInferenceWordReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 24: {
 
               pageId_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 72: {
 
               wordId_ = input.readUInt32();
               break;
@@ -122,26 +122,26 @@ public final class InterpretInferenceWordReqOuterClass {
               emu.grasscutter.net.proto.InterpretInferenceWordReqOuterClass.InterpretInferenceWordReq.class, emu.grasscutter.net.proto.InterpretInferenceWordReqOuterClass.InterpretInferenceWordReq.Builder.class);
     }
 
-    public static final int PAGE_ID_FIELD_NUMBER = 1;
-    private int pageId_;
-    /**
-     * <code>uint32 page_id = 1;</code>
-     * @return The pageId.
-     */
-    @java.lang.Override
-    public int getPageId() {
-      return pageId_;
-    }
-
-    public static final int WORD_ID_FIELD_NUMBER = 6;
+    public static final int WORD_ID_FIELD_NUMBER = 9;
     private int wordId_;
     /**
-     * <code>uint32 word_id = 6;</code>
+     * <code>uint32 word_id = 9;</code>
      * @return The wordId.
      */
     @java.lang.Override
     public int getWordId() {
       return wordId_;
+    }
+
+    public static final int PAGE_ID_FIELD_NUMBER = 3;
+    private int pageId_;
+    /**
+     * <code>uint32 page_id = 3;</code>
+     * @return The pageId.
+     */
+    @java.lang.Override
+    public int getPageId() {
+      return pageId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,10 +159,10 @@ public final class InterpretInferenceWordReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (pageId_ != 0) {
-        output.writeUInt32(1, pageId_);
+        output.writeUInt32(3, pageId_);
       }
       if (wordId_ != 0) {
-        output.writeUInt32(6, wordId_);
+        output.writeUInt32(9, wordId_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +175,11 @@ public final class InterpretInferenceWordReqOuterClass {
       size = 0;
       if (pageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, pageId_);
+          .computeUInt32Size(3, pageId_);
       }
       if (wordId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, wordId_);
+          .computeUInt32Size(9, wordId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +196,10 @@ public final class InterpretInferenceWordReqOuterClass {
       }
       emu.grasscutter.net.proto.InterpretInferenceWordReqOuterClass.InterpretInferenceWordReq other = (emu.grasscutter.net.proto.InterpretInferenceWordReqOuterClass.InterpretInferenceWordReq) obj;
 
-      if (getPageId()
-          != other.getPageId()) return false;
       if (getWordId()
           != other.getWordId()) return false;
+      if (getPageId()
+          != other.getPageId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +211,10 @@ public final class InterpretInferenceWordReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + PAGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getPageId();
       hash = (37 * hash) + WORD_ID_FIELD_NUMBER;
       hash = (53 * hash) + getWordId();
+      hash = (37 * hash) + PAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getPageId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +312,8 @@ public final class InterpretInferenceWordReqOuterClass {
     }
     /**
      * <pre>
-     * Name: OIOIOFJMHFO
-     * CmdId: 487
+     * CmdId: 410
+     * Obf: PLBKCHMFCKC
      * </pre>
      *
      * Protobuf type {@code InterpretInferenceWordReq}
@@ -353,9 +353,9 @@ public final class InterpretInferenceWordReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        pageId_ = 0;
-
         wordId_ = 0;
+
+        pageId_ = 0;
 
         return this;
       }
@@ -383,8 +383,8 @@ public final class InterpretInferenceWordReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.InterpretInferenceWordReqOuterClass.InterpretInferenceWordReq buildPartial() {
         emu.grasscutter.net.proto.InterpretInferenceWordReqOuterClass.InterpretInferenceWordReq result = new emu.grasscutter.net.proto.InterpretInferenceWordReqOuterClass.InterpretInferenceWordReq(this);
-        result.pageId_ = pageId_;
         result.wordId_ = wordId_;
+        result.pageId_ = pageId_;
         onBuilt();
         return result;
       }
@@ -433,11 +433,11 @@ public final class InterpretInferenceWordReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.InterpretInferenceWordReqOuterClass.InterpretInferenceWordReq other) {
         if (other == emu.grasscutter.net.proto.InterpretInferenceWordReqOuterClass.InterpretInferenceWordReq.getDefaultInstance()) return this;
-        if (other.getPageId() != 0) {
-          setPageId(other.getPageId());
-        }
         if (other.getWordId() != 0) {
           setWordId(other.getWordId());
+        }
+        if (other.getPageId() != 0) {
+          setPageId(other.getPageId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,40 +468,9 @@ public final class InterpretInferenceWordReqOuterClass {
         return this;
       }
 
-      private int pageId_ ;
-      /**
-       * <code>uint32 page_id = 1;</code>
-       * @return The pageId.
-       */
-      @java.lang.Override
-      public int getPageId() {
-        return pageId_;
-      }
-      /**
-       * <code>uint32 page_id = 1;</code>
-       * @param value The pageId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPageId(int value) {
-        
-        pageId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 page_id = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPageId() {
-        
-        pageId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int wordId_ ;
       /**
-       * <code>uint32 word_id = 6;</code>
+       * <code>uint32 word_id = 9;</code>
        * @return The wordId.
        */
       @java.lang.Override
@@ -509,7 +478,7 @@ public final class InterpretInferenceWordReqOuterClass {
         return wordId_;
       }
       /**
-       * <code>uint32 word_id = 6;</code>
+       * <code>uint32 word_id = 9;</code>
        * @param value The wordId to set.
        * @return This builder for chaining.
        */
@@ -520,12 +489,43 @@ public final class InterpretInferenceWordReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 word_id = 6;</code>
+       * <code>uint32 word_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearWordId() {
         
         wordId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int pageId_ ;
+      /**
+       * <code>uint32 page_id = 3;</code>
+       * @return The pageId.
+       */
+      @java.lang.Override
+      public int getPageId() {
+        return pageId_;
+      }
+      /**
+       * <code>uint32 page_id = 3;</code>
+       * @param value The pageId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPageId(int value) {
+        
+        pageId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 page_id = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPageId() {
+        
+        pageId_ = 0;
         onChanged();
         return this;
       }
@@ -597,8 +597,8 @@ public final class InterpretInferenceWordReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037InterpretInferenceWordReq.proto\"=\n\031Int" +
-      "erpretInferenceWordReq\022\017\n\007page_id\030\001 \001(\r\022" +
-      "\017\n\007word_id\030\006 \001(\rB\033\n\031emu.grasscutter.net." +
+      "erpretInferenceWordReq\022\017\n\007word_id\030\t \001(\r\022" +
+      "\017\n\007page_id\030\003 \001(\rB\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -610,7 +610,7 @@ public final class InterpretInferenceWordReqOuterClass {
     internal_static_InterpretInferenceWordReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_InterpretInferenceWordReq_descriptor,
-        new java.lang.String[] { "PageId", "WordId", });
+        new java.lang.String[] { "WordId", "PageId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

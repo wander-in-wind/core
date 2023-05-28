@@ -19,21 +19,21 @@ public final class BrickBreakerPlayerSetChangingNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_changing = 15;</code>
+     * <code>bool is_changing = 3;</code>
      * @return The isChanging.
      */
     boolean getIsChanging();
 
     /**
-     * <code>uint32 uid = 14;</code>
+     * <code>uint32 uid = 6;</code>
      * @return The uid.
      */
     int getUid();
   }
   /**
    * <pre>
-   * Name: IGLFMBGPMPN
-   * CmdId: 5363
+   * CmdId: 5329
+   * Obf: CFLFAICKEOC
    * </pre>
    *
    * Protobuf type {@code BrickBreakerPlayerSetChangingNotify}
@@ -80,14 +80,14 @@ public final class BrickBreakerPlayerSetChangingNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 112: {
-
-              uid_ = input.readUInt32();
-              break;
-            }
-            case 120: {
+            case 24: {
 
               isChanging_ = input.readBool();
+              break;
+            }
+            case 48: {
+
+              uid_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,10 +122,10 @@ public final class BrickBreakerPlayerSetChangingNotifyOuterClass {
               emu.grasscutter.net.proto.BrickBreakerPlayerSetChangingNotifyOuterClass.BrickBreakerPlayerSetChangingNotify.class, emu.grasscutter.net.proto.BrickBreakerPlayerSetChangingNotifyOuterClass.BrickBreakerPlayerSetChangingNotify.Builder.class);
     }
 
-    public static final int IS_CHANGING_FIELD_NUMBER = 15;
+    public static final int IS_CHANGING_FIELD_NUMBER = 3;
     private boolean isChanging_;
     /**
-     * <code>bool is_changing = 15;</code>
+     * <code>bool is_changing = 3;</code>
      * @return The isChanging.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class BrickBreakerPlayerSetChangingNotifyOuterClass {
       return isChanging_;
     }
 
-    public static final int UID_FIELD_NUMBER = 14;
+    public static final int UID_FIELD_NUMBER = 6;
     private int uid_;
     /**
-     * <code>uint32 uid = 14;</code>
+     * <code>uint32 uid = 6;</code>
      * @return The uid.
      */
     @java.lang.Override
@@ -158,11 +158,11 @@ public final class BrickBreakerPlayerSetChangingNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (uid_ != 0) {
-        output.writeUInt32(14, uid_);
-      }
       if (isChanging_ != false) {
-        output.writeBool(15, isChanging_);
+        output.writeBool(3, isChanging_);
+      }
+      if (uid_ != 0) {
+        output.writeUInt32(6, uid_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class BrickBreakerPlayerSetChangingNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (uid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, uid_);
-      }
       if (isChanging_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isChanging_);
+          .computeBoolSize(3, isChanging_);
+      }
+      if (uid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, uid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,8 +313,8 @@ public final class BrickBreakerPlayerSetChangingNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: IGLFMBGPMPN
-     * CmdId: 5363
+     * CmdId: 5329
+     * Obf: CFLFAICKEOC
      * </pre>
      *
      * Protobuf type {@code BrickBreakerPlayerSetChangingNotify}
@@ -471,7 +471,7 @@ public final class BrickBreakerPlayerSetChangingNotifyOuterClass {
 
       private boolean isChanging_ ;
       /**
-       * <code>bool is_changing = 15;</code>
+       * <code>bool is_changing = 3;</code>
        * @return The isChanging.
        */
       @java.lang.Override
@@ -479,7 +479,7 @@ public final class BrickBreakerPlayerSetChangingNotifyOuterClass {
         return isChanging_;
       }
       /**
-       * <code>bool is_changing = 15;</code>
+       * <code>bool is_changing = 3;</code>
        * @param value The isChanging to set.
        * @return This builder for chaining.
        */
@@ -490,7 +490,7 @@ public final class BrickBreakerPlayerSetChangingNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_changing = 15;</code>
+       * <code>bool is_changing = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsChanging() {
@@ -502,7 +502,7 @@ public final class BrickBreakerPlayerSetChangingNotifyOuterClass {
 
       private int uid_ ;
       /**
-       * <code>uint32 uid = 14;</code>
+       * <code>uint32 uid = 6;</code>
        * @return The uid.
        */
       @java.lang.Override
@@ -510,7 +510,7 @@ public final class BrickBreakerPlayerSetChangingNotifyOuterClass {
         return uid_;
       }
       /**
-       * <code>uint32 uid = 14;</code>
+       * <code>uint32 uid = 6;</code>
        * @param value The uid to set.
        * @return This builder for chaining.
        */
@@ -521,7 +521,7 @@ public final class BrickBreakerPlayerSetChangingNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 uid = 14;</code>
+       * <code>uint32 uid = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearUid() {
@@ -599,7 +599,7 @@ public final class BrickBreakerPlayerSetChangingNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n)BrickBreakerPlayerSetChangingNotify.pr" +
       "oto\"G\n#BrickBreakerPlayerSetChangingNoti" +
-      "fy\022\023\n\013is_changing\030\017 \001(\010\022\013\n\003uid\030\016 \001(\rB\033\n\031" +
+      "fy\022\023\n\013is_changing\030\003 \001(\010\022\013\n\003uid\030\006 \001(\rB\033\n\031" +
       "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

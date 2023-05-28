@@ -19,30 +19,30 @@ public final class ActivityUpdateWatcherNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 activity_id = 15;</code>
+     * <code>uint32 activity_id = 14;</code>
      * @return The activityId.
      */
     int getActivityId();
 
     /**
-     * <code>.ActivityWatcherInfo watcher_info = 3;</code>
+     * <code>.ActivityWatcherInfo watcher_info = 9;</code>
      * @return Whether the watcherInfo field is set.
      */
     boolean hasWatcherInfo();
     /**
-     * <code>.ActivityWatcherInfo watcher_info = 3;</code>
+     * <code>.ActivityWatcherInfo watcher_info = 9;</code>
      * @return The watcherInfo.
      */
     emu.grasscutter.net.proto.ActivityWatcherInfoOuterClass.ActivityWatcherInfo getWatcherInfo();
     /**
-     * <code>.ActivityWatcherInfo watcher_info = 3;</code>
+     * <code>.ActivityWatcherInfo watcher_info = 9;</code>
      */
     emu.grasscutter.net.proto.ActivityWatcherInfoOuterClass.ActivityWatcherInfoOrBuilder getWatcherInfoOrBuilder();
   }
   /**
    * <pre>
-   * Name: PPOLCIAJKGN
-   * CmdId: 2183
+   * CmdId: 2007
+   * Obf: JCOLCLFIFCO
    * </pre>
    *
    * Protobuf type {@code ActivityUpdateWatcherNotify}
@@ -89,7 +89,7 @@ public final class ActivityUpdateWatcherNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
+            case 74: {
               emu.grasscutter.net.proto.ActivityWatcherInfoOuterClass.ActivityWatcherInfo.Builder subBuilder = null;
               if (watcherInfo_ != null) {
                 subBuilder = watcherInfo_.toBuilder();
@@ -102,7 +102,7 @@ public final class ActivityUpdateWatcherNotifyOuterClass {
 
               break;
             }
-            case 120: {
+            case 112: {
 
               activityId_ = input.readUInt32();
               break;
@@ -139,10 +139,10 @@ public final class ActivityUpdateWatcherNotifyOuterClass {
               emu.grasscutter.net.proto.ActivityUpdateWatcherNotifyOuterClass.ActivityUpdateWatcherNotify.class, emu.grasscutter.net.proto.ActivityUpdateWatcherNotifyOuterClass.ActivityUpdateWatcherNotify.Builder.class);
     }
 
-    public static final int ACTIVITY_ID_FIELD_NUMBER = 15;
+    public static final int ACTIVITY_ID_FIELD_NUMBER = 14;
     private int activityId_;
     /**
-     * <code>uint32 activity_id = 15;</code>
+     * <code>uint32 activity_id = 14;</code>
      * @return The activityId.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class ActivityUpdateWatcherNotifyOuterClass {
       return activityId_;
     }
 
-    public static final int WATCHER_INFO_FIELD_NUMBER = 3;
+    public static final int WATCHER_INFO_FIELD_NUMBER = 9;
     private emu.grasscutter.net.proto.ActivityWatcherInfoOuterClass.ActivityWatcherInfo watcherInfo_;
     /**
-     * <code>.ActivityWatcherInfo watcher_info = 3;</code>
+     * <code>.ActivityWatcherInfo watcher_info = 9;</code>
      * @return Whether the watcherInfo field is set.
      */
     @java.lang.Override
@@ -161,7 +161,7 @@ public final class ActivityUpdateWatcherNotifyOuterClass {
       return watcherInfo_ != null;
     }
     /**
-     * <code>.ActivityWatcherInfo watcher_info = 3;</code>
+     * <code>.ActivityWatcherInfo watcher_info = 9;</code>
      * @return The watcherInfo.
      */
     @java.lang.Override
@@ -169,7 +169,7 @@ public final class ActivityUpdateWatcherNotifyOuterClass {
       return watcherInfo_ == null ? emu.grasscutter.net.proto.ActivityWatcherInfoOuterClass.ActivityWatcherInfo.getDefaultInstance() : watcherInfo_;
     }
     /**
-     * <code>.ActivityWatcherInfo watcher_info = 3;</code>
+     * <code>.ActivityWatcherInfo watcher_info = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ActivityWatcherInfoOuterClass.ActivityWatcherInfoOrBuilder getWatcherInfoOrBuilder() {
@@ -191,10 +191,10 @@ public final class ActivityUpdateWatcherNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (watcherInfo_ != null) {
-        output.writeMessage(3, getWatcherInfo());
+        output.writeMessage(9, getWatcherInfo());
       }
       if (activityId_ != 0) {
-        output.writeUInt32(15, activityId_);
+        output.writeUInt32(14, activityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -207,11 +207,11 @@ public final class ActivityUpdateWatcherNotifyOuterClass {
       size = 0;
       if (watcherInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getWatcherInfo());
+          .computeMessageSize(9, getWatcherInfo());
       }
       if (activityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, activityId_);
+          .computeUInt32Size(14, activityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -349,8 +349,8 @@ public final class ActivityUpdateWatcherNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: PPOLCIAJKGN
-     * CmdId: 2183
+     * CmdId: 2007
+     * Obf: JCOLCLFIFCO
      * </pre>
      *
      * Protobuf type {@code ActivityUpdateWatcherNotify}
@@ -515,7 +515,7 @@ public final class ActivityUpdateWatcherNotifyOuterClass {
 
       private int activityId_ ;
       /**
-       * <code>uint32 activity_id = 15;</code>
+       * <code>uint32 activity_id = 14;</code>
        * @return The activityId.
        */
       @java.lang.Override
@@ -523,7 +523,7 @@ public final class ActivityUpdateWatcherNotifyOuterClass {
         return activityId_;
       }
       /**
-       * <code>uint32 activity_id = 15;</code>
+       * <code>uint32 activity_id = 14;</code>
        * @param value The activityId to set.
        * @return This builder for chaining.
        */
@@ -534,7 +534,7 @@ public final class ActivityUpdateWatcherNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 activity_id = 15;</code>
+       * <code>uint32 activity_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearActivityId() {
@@ -548,14 +548,14 @@ public final class ActivityUpdateWatcherNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ActivityWatcherInfoOuterClass.ActivityWatcherInfo, emu.grasscutter.net.proto.ActivityWatcherInfoOuterClass.ActivityWatcherInfo.Builder, emu.grasscutter.net.proto.ActivityWatcherInfoOuterClass.ActivityWatcherInfoOrBuilder> watcherInfoBuilder_;
       /**
-       * <code>.ActivityWatcherInfo watcher_info = 3;</code>
+       * <code>.ActivityWatcherInfo watcher_info = 9;</code>
        * @return Whether the watcherInfo field is set.
        */
       public boolean hasWatcherInfo() {
         return watcherInfoBuilder_ != null || watcherInfo_ != null;
       }
       /**
-       * <code>.ActivityWatcherInfo watcher_info = 3;</code>
+       * <code>.ActivityWatcherInfo watcher_info = 9;</code>
        * @return The watcherInfo.
        */
       public emu.grasscutter.net.proto.ActivityWatcherInfoOuterClass.ActivityWatcherInfo getWatcherInfo() {
@@ -566,7 +566,7 @@ public final class ActivityUpdateWatcherNotifyOuterClass {
         }
       }
       /**
-       * <code>.ActivityWatcherInfo watcher_info = 3;</code>
+       * <code>.ActivityWatcherInfo watcher_info = 9;</code>
        */
       public Builder setWatcherInfo(emu.grasscutter.net.proto.ActivityWatcherInfoOuterClass.ActivityWatcherInfo value) {
         if (watcherInfoBuilder_ == null) {
@@ -582,7 +582,7 @@ public final class ActivityUpdateWatcherNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ActivityWatcherInfo watcher_info = 3;</code>
+       * <code>.ActivityWatcherInfo watcher_info = 9;</code>
        */
       public Builder setWatcherInfo(
           emu.grasscutter.net.proto.ActivityWatcherInfoOuterClass.ActivityWatcherInfo.Builder builderForValue) {
@@ -596,7 +596,7 @@ public final class ActivityUpdateWatcherNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ActivityWatcherInfo watcher_info = 3;</code>
+       * <code>.ActivityWatcherInfo watcher_info = 9;</code>
        */
       public Builder mergeWatcherInfo(emu.grasscutter.net.proto.ActivityWatcherInfoOuterClass.ActivityWatcherInfo value) {
         if (watcherInfoBuilder_ == null) {
@@ -614,7 +614,7 @@ public final class ActivityUpdateWatcherNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ActivityWatcherInfo watcher_info = 3;</code>
+       * <code>.ActivityWatcherInfo watcher_info = 9;</code>
        */
       public Builder clearWatcherInfo() {
         if (watcherInfoBuilder_ == null) {
@@ -628,7 +628,7 @@ public final class ActivityUpdateWatcherNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.ActivityWatcherInfo watcher_info = 3;</code>
+       * <code>.ActivityWatcherInfo watcher_info = 9;</code>
        */
       public emu.grasscutter.net.proto.ActivityWatcherInfoOuterClass.ActivityWatcherInfo.Builder getWatcherInfoBuilder() {
         
@@ -636,7 +636,7 @@ public final class ActivityUpdateWatcherNotifyOuterClass {
         return getWatcherInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.ActivityWatcherInfo watcher_info = 3;</code>
+       * <code>.ActivityWatcherInfo watcher_info = 9;</code>
        */
       public emu.grasscutter.net.proto.ActivityWatcherInfoOuterClass.ActivityWatcherInfoOrBuilder getWatcherInfoOrBuilder() {
         if (watcherInfoBuilder_ != null) {
@@ -647,7 +647,7 @@ public final class ActivityUpdateWatcherNotifyOuterClass {
         }
       }
       /**
-       * <code>.ActivityWatcherInfo watcher_info = 3;</code>
+       * <code>.ActivityWatcherInfo watcher_info = 9;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ActivityWatcherInfoOuterClass.ActivityWatcherInfo, emu.grasscutter.net.proto.ActivityWatcherInfoOuterClass.ActivityWatcherInfo.Builder, emu.grasscutter.net.proto.ActivityWatcherInfoOuterClass.ActivityWatcherInfoOrBuilder> 
@@ -731,8 +731,8 @@ public final class ActivityUpdateWatcherNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n!ActivityUpdateWatcherNotify.proto\032\031Act" +
       "ivityWatcherInfo.proto\"^\n\033ActivityUpdate" +
-      "WatcherNotify\022\023\n\013activity_id\030\017 \001(\r\022*\n\014wa" +
-      "tcher_info\030\003 \001(\0132\024.ActivityWatcherInfoB\033" +
+      "WatcherNotify\022\023\n\013activity_id\030\016 \001(\r\022*\n\014wa" +
+      "tcher_info\030\t \001(\0132\024.ActivityWatcherInfoB\033" +
       "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -20,8 +20,8 @@ public final class WinterCampGetRecvItemListReqOuterClass {
   }
   /**
    * <pre>
-   * Name: LFFCNIFDDJG
-   * CmdId: 8547
+   * CmdId: 8339
+   * Obf: JBADDDJFJIN
    * </pre>
    *
    * Protobuf type {@code WinterCampGetRecvItemListReq}
@@ -246,8 +246,8 @@ public final class WinterCampGetRecvItemListReqOuterClass {
     }
     /**
      * <pre>
-     * Name: LFFCNIFDDJG
-     * CmdId: 8547
+     * CmdId: 8339
+     * Obf: JBADDDJFJIN
      * </pre>
      *
      * Protobuf type {@code WinterCampGetRecvItemListReq}

@@ -50,7 +50,7 @@ public final class RewardOuterClass {
   }
   /**
    * <pre>
-   * Name: EOLLGIAIKJG
+   * Obf: ELHGKKNMKPG
    * </pre>
    *
    * Protobuf type {@code Reward}
@@ -369,7 +369,7 @@ public final class RewardOuterClass {
     }
     /**
      * <pre>
-     * Name: EOLLGIAIKJG
+     * Obf: ELHGKKNMKPG
      * </pre>
      *
      * Protobuf type {@code Reward}

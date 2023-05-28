@@ -34,89 +34,77 @@ public final class GCGMessageOuterClass {
     emu.grasscutter.net.proto.GCGMsgTokenChangeOuterClass.GCGMsgTokenChangeOrBuilder getTokenChangeOrBuilder();
 
     /**
-     * <pre>
-     *LNDLOPKJALI snooswap
-     * </pre>
-     *
-     * <code>.GCGMsgPhaseChange phase_change = 2;</code>
+     * <code>.GCGMsgPhaseChange phase_change = 7;</code>
      * @return Whether the phaseChange field is set.
      */
     boolean hasPhaseChange();
     /**
-     * <pre>
-     *LNDLOPKJALI snooswap
-     * </pre>
-     *
-     * <code>.GCGMsgPhaseChange phase_change = 2;</code>
+     * <code>.GCGMsgPhaseChange phase_change = 7;</code>
      * @return The phaseChange.
      */
     emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange getPhaseChange();
     /**
-     * <pre>
-     *LNDLOPKJALI snooswap
-     * </pre>
-     *
-     * <code>.GCGMsgPhaseChange phase_change = 2;</code>
+     * <code>.GCGMsgPhaseChange phase_change = 7;</code>
      */
     emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChangeOrBuilder getPhaseChangeOrBuilder();
 
     /**
-     * <code>.GCGMsgAddCards add_cards = 14;</code>
+     * <code>.GCGMsgAddCards add_cards = 4;</code>
      * @return Whether the addCards field is set.
      */
     boolean hasAddCards();
     /**
-     * <code>.GCGMsgAddCards add_cards = 14;</code>
+     * <code>.GCGMsgAddCards add_cards = 4;</code>
      * @return The addCards.
      */
     emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCards getAddCards();
     /**
-     * <code>.GCGMsgAddCards add_cards = 14;</code>
+     * <code>.GCGMsgAddCards add_cards = 4;</code>
      */
     emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCardsOrBuilder getAddCardsOrBuilder();
 
     /**
-     * <code>.GCGMsgRemoveCards remove_cards = 10;</code>
+     * <code>.GCGMsgRemoveCards remove_cards = 5;</code>
      * @return Whether the removeCards field is set.
      */
     boolean hasRemoveCards();
     /**
-     * <code>.GCGMsgRemoveCards remove_cards = 10;</code>
+     * <code>.GCGMsgRemoveCards remove_cards = 5;</code>
      * @return The removeCards.
      */
     emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCards getRemoveCards();
     /**
-     * <code>.GCGMsgRemoveCards remove_cards = 10;</code>
+     * <code>.GCGMsgRemoveCards remove_cards = 5;</code>
      */
     emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCardsOrBuilder getRemoveCardsOrBuilder();
 
     /**
-     * <code>.GCGMsgSelectOnStage select_on_stage = 8;</code>
+     * <code>.GCGMsgSelectOnStage select_on_stage = 2;</code>
      * @return Whether the selectOnStage field is set.
      */
     boolean hasSelectOnStage();
     /**
-     * <code>.GCGMsgSelectOnStage select_on_stage = 8;</code>
+     * <code>.GCGMsgSelectOnStage select_on_stage = 2;</code>
      * @return The selectOnStage.
      */
     emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage getSelectOnStage();
     /**
-     * <code>.GCGMsgSelectOnStage select_on_stage = 8;</code>
+     * <code>.GCGMsgSelectOnStage select_on_stage = 2;</code>
      */
     emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStageOrBuilder getSelectOnStageOrBuilder();
 
     /**
-     * <code>.GCGMsgDiceRoll dice_roll = 13;</code>
+     * <code>.GCGMsgDiceRoll dice_roll = 3;</code>
      * @return Whether the diceRoll field is set.
      */
     boolean hasDiceRoll();
     /**
-     * <code>.GCGMsgDiceRoll dice_roll = 13;</code>
+     * <code>.GCGMsgDiceRoll dice_roll = 3;</code>
      * @return The diceRoll.
      */
     emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll getDiceRoll();
     /**
-     * <code>.GCGMsgDiceRoll dice_roll = 13;</code>
+     * <code>.GCGMsgDiceRoll dice_roll = 3;</code>
      */
     emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRollOrBuilder getDiceRollOrBuilder();
 
@@ -136,77 +124,62 @@ public final class GCGMessageOuterClass {
     emu.grasscutter.net.proto.GCGMsgDiceRerollOuterClass.GCGMsgDiceRerollOrBuilder getDiceRerollOrBuilder();
 
     /**
-     * <code>.GCGMsgPass pass = 11;</code>
+     * <code>.GCGMsgPass pass = 8;</code>
      * @return Whether the pass field is set.
      */
     boolean hasPass();
     /**
-     * <code>.GCGMsgPass pass = 11;</code>
+     * <code>.GCGMsgPass pass = 8;</code>
      * @return The pass.
      */
     emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPass getPass();
     /**
-     * <code>.GCGMsgPass pass = 11;</code>
+     * <code>.GCGMsgPass pass = 8;</code>
      */
     emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPassOrBuilder getPassOrBuilder();
 
     /**
-     * <code>.GCGMsgCharDie char_die = 3;</code>
-     * @return Whether the charDie field is set.
-     */
-    boolean hasCharDie();
-    /**
-     * <code>.GCGMsgCharDie char_die = 3;</code>
-     * @return The charDie.
-     */
-    emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie getCharDie();
-    /**
-     * <code>.GCGMsgCharDie char_die = 3;</code>
-     */
-    emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDieOrBuilder getCharDieOrBuilder();
-
-    /**
-     * <code>.GCGMsgSkillResult skill_result = 5;</code>
+     * <code>.GCGMsgSkillResult skill_result = 10;</code>
      * @return Whether the skillResult field is set.
      */
     boolean hasSkillResult();
     /**
-     * <code>.GCGMsgSkillResult skill_result = 5;</code>
+     * <code>.GCGMsgSkillResult skill_result = 10;</code>
      * @return The skillResult.
      */
     emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult getSkillResult();
     /**
-     * <code>.GCGMsgSkillResult skill_result = 5;</code>
+     * <code>.GCGMsgSkillResult skill_result = 10;</code>
      */
     emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResultOrBuilder getSkillResultOrBuilder();
 
     /**
-     * <code>.GCGMsgCostDice cost_dice = 4;</code>
+     * <code>.GCGMsgCostDice cost_dice = 14;</code>
      * @return Whether the costDice field is set.
      */
     boolean hasCostDice();
     /**
-     * <code>.GCGMsgCostDice cost_dice = 4;</code>
+     * <code>.GCGMsgCostDice cost_dice = 14;</code>
      * @return The costDice.
      */
     emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDice getCostDice();
     /**
-     * <code>.GCGMsgCostDice cost_dice = 4;</code>
+     * <code>.GCGMsgCostDice cost_dice = 14;</code>
      */
     emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDiceOrBuilder getCostDiceOrBuilder();
 
     /**
-     * <code>.GCGMsgAddDice add_dice = 1;</code>
+     * <code>.GCGMsgAddDice add_dice = 11;</code>
      * @return Whether the addDice field is set.
      */
     boolean hasAddDice();
     /**
-     * <code>.GCGMsgAddDice add_dice = 1;</code>
+     * <code>.GCGMsgAddDice add_dice = 11;</code>
      * @return The addDice.
      */
     emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice getAddDice();
     /**
-     * <code>.GCGMsgAddDice add_dice = 1;</code>
+     * <code>.GCGMsgAddDice add_dice = 11;</code>
      */
     emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDiceOrBuilder getAddDiceOrBuilder();
 
@@ -226,341 +199,317 @@ public final class GCGMessageOuterClass {
     emu.grasscutter.net.proto.GCGMsgMoveCardOuterClass.GCGMsgMoveCardOrBuilder getMoveCardOrBuilder();
 
     /**
-     * <code>.GCGMsgUseSkill use_skill = 7;</code>
+     * <code>.GCGMsgUseSkill use_skill = 13;</code>
      * @return Whether the useSkill field is set.
      */
     boolean hasUseSkill();
     /**
-     * <code>.GCGMsgUseSkill use_skill = 7;</code>
+     * <code>.GCGMsgUseSkill use_skill = 13;</code>
      * @return The useSkill.
      */
     emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill getUseSkill();
     /**
-     * <code>.GCGMsgUseSkill use_skill = 7;</code>
+     * <code>.GCGMsgUseSkill use_skill = 13;</code>
      */
     emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkillOrBuilder getUseSkillOrBuilder();
 
     /**
-     * <code>.GCGMsgNewCard new_card = 1698;</code>
+     * <code>.GCGMsgNewCard new_card = 1229;</code>
      * @return Whether the newCard field is set.
      */
     boolean hasNewCard();
     /**
-     * <code>.GCGMsgNewCard new_card = 1698;</code>
+     * <code>.GCGMsgNewCard new_card = 1229;</code>
      * @return The newCard.
      */
     emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard getNewCard();
     /**
-     * <code>.GCGMsgNewCard new_card = 1698;</code>
+     * <code>.GCGMsgNewCard new_card = 1229;</code>
      */
     emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCardOrBuilder getNewCardOrBuilder();
 
     /**
-     * <pre>
-     *GIHCLFFDKLE snooswap
-     * </pre>
-     *
-     * <code>.GCGMsgUpdateController update_controller = 2016;</code>
+     * <code>.GCGMsgUpdateController update_controller = 1135;</code>
      * @return Whether the updateController field is set.
      */
     boolean hasUpdateController();
     /**
-     * <pre>
-     *GIHCLFFDKLE snooswap
-     * </pre>
-     *
-     * <code>.GCGMsgUpdateController update_controller = 2016;</code>
+     * <code>.GCGMsgUpdateController update_controller = 1135;</code>
      * @return The updateController.
      */
     emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController getUpdateController();
     /**
-     * <pre>
-     *GIHCLFFDKLE snooswap
-     * </pre>
-     *
-     * <code>.GCGMsgUpdateController update_controller = 2016;</code>
+     * <code>.GCGMsgUpdateController update_controller = 1135;</code>
      */
     emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateControllerOrBuilder getUpdateControllerOrBuilder();
 
     /**
-     * <code>.GCGMsgModifyAdd modify_add = 555;</code>
+     * <code>.GCGMsgModifyAdd modify_add = 1437;</code>
      * @return Whether the modifyAdd field is set.
      */
     boolean hasModifyAdd();
     /**
-     * <code>.GCGMsgModifyAdd modify_add = 555;</code>
+     * <code>.GCGMsgModifyAdd modify_add = 1437;</code>
      * @return The modifyAdd.
      */
     emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAdd getModifyAdd();
     /**
-     * <code>.GCGMsgModifyAdd modify_add = 555;</code>
+     * <code>.GCGMsgModifyAdd modify_add = 1437;</code>
      */
     emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAddOrBuilder getModifyAddOrBuilder();
 
     /**
-     * <code>.GCGMsgModifyRemove modify_remove = 1901;</code>
+     * <code>.GCGMsgModifyRemove modify_remove = 1575;</code>
      * @return Whether the modifyRemove field is set.
      */
     boolean hasModifyRemove();
     /**
-     * <code>.GCGMsgModifyRemove modify_remove = 1901;</code>
+     * <code>.GCGMsgModifyRemove modify_remove = 1575;</code>
      * @return The modifyRemove.
      */
     emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemove getModifyRemove();
     /**
-     * <code>.GCGMsgModifyRemove modify_remove = 1901;</code>
+     * <code>.GCGMsgModifyRemove modify_remove = 1575;</code>
      */
     emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemoveOrBuilder getModifyRemoveOrBuilder();
 
     /**
-     * <code>.GCGMsgUseSkillEnd use_skill_end = 1067;</code>
+     * <code>.GCGMsgUseSkillEnd use_skill_end = 1426;</code>
      * @return Whether the useSkillEnd field is set.
      */
     boolean hasUseSkillEnd();
     /**
-     * <code>.GCGMsgUseSkillEnd use_skill_end = 1067;</code>
+     * <code>.GCGMsgUseSkillEnd use_skill_end = 1426;</code>
      * @return The useSkillEnd.
      */
     emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd getUseSkillEnd();
     /**
-     * <code>.GCGMsgUseSkillEnd use_skill_end = 1067;</code>
+     * <code>.GCGMsgUseSkillEnd use_skill_end = 1426;</code>
      */
     emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEndOrBuilder getUseSkillEndOrBuilder();
 
     /**
-     * <code>.GCGMsgDuelDataChange duel_data_change = 686;</code>
+     * <code>.GCGMsgDuelDataChange duel_data_change = 526;</code>
      * @return Whether the duelDataChange field is set.
      */
     boolean hasDuelDataChange();
     /**
-     * <code>.GCGMsgDuelDataChange duel_data_change = 686;</code>
+     * <code>.GCGMsgDuelDataChange duel_data_change = 526;</code>
      * @return The duelDataChange.
      */
     emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange getDuelDataChange();
     /**
-     * <code>.GCGMsgDuelDataChange duel_data_change = 686;</code>
+     * <code>.GCGMsgDuelDataChange duel_data_change = 526;</code>
      */
     emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChangeOrBuilder getDuelDataChangeOrBuilder();
 
     /**
-     * <code>.GCGMsgClientPerform client_perform = 1743;</code>
+     * <code>.GCGMsgClientPerform client_perform = 230;</code>
      * @return Whether the clientPerform field is set.
      */
     boolean hasClientPerform();
     /**
-     * <code>.GCGMsgClientPerform client_perform = 1743;</code>
+     * <code>.GCGMsgClientPerform client_perform = 230;</code>
      * @return The clientPerform.
      */
     emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.GCGMsgClientPerform getClientPerform();
     /**
-     * <code>.GCGMsgClientPerform client_perform = 1743;</code>
+     * <code>.GCGMsgClientPerform client_perform = 230;</code>
      */
     emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.GCGMsgClientPerformOrBuilder getClientPerformOrBuilder();
 
     /**
-     * <code>.GCGMsgGameOver game_over = 1766;</code>
+     * <code>.GCGMsgGameOver game_over = 900;</code>
      * @return Whether the gameOver field is set.
      */
     boolean hasGameOver();
     /**
-     * <code>.GCGMsgGameOver game_over = 1766;</code>
+     * <code>.GCGMsgGameOver game_over = 900;</code>
      * @return The gameOver.
      */
     emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOver getGameOver();
     /**
-     * <code>.GCGMsgGameOver game_over = 1766;</code>
+     * <code>.GCGMsgGameOver game_over = 900;</code>
      */
     emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOverOrBuilder getGameOverOrBuilder();
 
     /**
-     * <pre>
-     *AOHEFFCPELI snooswap
-     * </pre>
-     *
-     * <code>.GCGMsgOpTimer op_timer = 167;</code>
+     * <code>.GCGMsgOpTimer op_timer = 352;</code>
      * @return Whether the opTimer field is set.
      */
     boolean hasOpTimer();
     /**
-     * <pre>
-     *AOHEFFCPELI snooswap
-     * </pre>
-     *
-     * <code>.GCGMsgOpTimer op_timer = 167;</code>
+     * <code>.GCGMsgOpTimer op_timer = 352;</code>
      * @return The opTimer.
      */
     emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer getOpTimer();
     /**
-     * <pre>
-     *AOHEFFCPELI snooswap
-     * </pre>
-     *
-     * <code>.GCGMsgOpTimer op_timer = 167;</code>
+     * <code>.GCGMsgOpTimer op_timer = 352;</code>
      */
     emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimerOrBuilder getOpTimerOrBuilder();
 
     /**
-     * <code>.GCGMsgWaitingListChange waiting_list_change = 891;</code>
+     * <code>.GCGMsgWaitingListChange waiting_list_change = 938;</code>
      * @return Whether the waitingListChange field is set.
      */
     boolean hasWaitingListChange();
     /**
-     * <code>.GCGMsgWaitingListChange waiting_list_change = 891;</code>
+     * <code>.GCGMsgWaitingListChange waiting_list_change = 938;</code>
      * @return The waitingListChange.
      */
     emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange getWaitingListChange();
     /**
-     * <code>.GCGMsgWaitingListChange waiting_list_change = 891;</code>
+     * <code>.GCGMsgWaitingListChange waiting_list_change = 938;</code>
      */
     emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChangeOrBuilder getWaitingListChangeOrBuilder();
 
     /**
-     * <code>.GCGMsgCardUpdate card_update = 1549;</code>
+     * <code>.GCGMsgCardUpdate card_update = 594;</code>
      * @return Whether the cardUpdate field is set.
      */
     boolean hasCardUpdate();
     /**
-     * <code>.GCGMsgCardUpdate card_update = 1549;</code>
+     * <code>.GCGMsgCardUpdate card_update = 594;</code>
      * @return The cardUpdate.
      */
     emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdate getCardUpdate();
     /**
-     * <code>.GCGMsgCardUpdate card_update = 1549;</code>
+     * <code>.GCGMsgCardUpdate card_update = 594;</code>
      */
     emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdateOrBuilder getCardUpdateOrBuilder();
 
     /**
-     * <code>.GCGMsgSelectOnStageByEffect select_on_stage_by_effect = 1093;</code>
+     * <code>.GCGMsgSelectOnStageByEffect select_on_stage_by_effect = 417;</code>
      * @return Whether the selectOnStageByEffect field is set.
      */
     boolean hasSelectOnStageByEffect();
     /**
-     * <code>.GCGMsgSelectOnStageByEffect select_on_stage_by_effect = 1093;</code>
+     * <code>.GCGMsgSelectOnStageByEffect select_on_stage_by_effect = 417;</code>
      * @return The selectOnStageByEffect.
      */
     emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffect getSelectOnStageByEffect();
     /**
-     * <code>.GCGMsgSelectOnStageByEffect select_on_stage_by_effect = 1093;</code>
+     * <code>.GCGMsgSelectOnStageByEffect select_on_stage_by_effect = 417;</code>
      */
     emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffectOrBuilder getSelectOnStageByEffectOrBuilder();
 
     /**
-     * <code>.GCGMsgCostRevise cost_revise = 1422;</code>
+     * <code>.GCGMsgCostRevise cost_revise = 1255;</code>
      * @return Whether the costRevise field is set.
      */
     boolean hasCostRevise();
     /**
-     * <code>.GCGMsgCostRevise cost_revise = 1422;</code>
+     * <code>.GCGMsgCostRevise cost_revise = 1255;</code>
      * @return The costRevise.
      */
     emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostRevise getCostRevise();
     /**
-     * <code>.GCGMsgCostRevise cost_revise = 1422;</code>
+     * <code>.GCGMsgCostRevise cost_revise = 1255;</code>
      */
     emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostReviseOrBuilder getCostReviseOrBuilder();
 
     /**
-     * <code>.GCGMsgPhaseContinue phase_continue = 624;</code>
+     * <code>.GCGMsgPhaseContinue phase_continue = 955;</code>
      * @return Whether the phaseContinue field is set.
      */
     boolean hasPhaseContinue();
     /**
-     * <code>.GCGMsgPhaseContinue phase_continue = 624;</code>
+     * <code>.GCGMsgPhaseContinue phase_continue = 955;</code>
      * @return The phaseContinue.
      */
     emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinue getPhaseContinue();
     /**
-     * <code>.GCGMsgPhaseContinue phase_continue = 624;</code>
+     * <code>.GCGMsgPhaseContinue phase_continue = 955;</code>
      */
     emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinueOrBuilder getPhaseContinueOrBuilder();
 
     /**
-     * <code>.GCGMsgPVEIntentionInfo pve_intention_info = 65;</code>
+     * <code>.GCGMsgPVEIntentionInfo pve_intention_info = 1111;</code>
      * @return Whether the pveIntentionInfo field is set.
      */
     boolean hasPveIntentionInfo();
     /**
-     * <code>.GCGMsgPVEIntentionInfo pve_intention_info = 65;</code>
+     * <code>.GCGMsgPVEIntentionInfo pve_intention_info = 1111;</code>
      * @return The pveIntentionInfo.
      */
     emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo getPveIntentionInfo();
     /**
-     * <code>.GCGMsgPVEIntentionInfo pve_intention_info = 65;</code>
+     * <code>.GCGMsgPVEIntentionInfo pve_intention_info = 1111;</code>
      */
     emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfoOrBuilder getPveIntentionInfoOrBuilder();
 
     /**
-     * <code>.GCGMsgPVEIntentionChange pve_intention_change = 1571;</code>
+     * <code>.GCGMsgPVEIntentionChange pve_intention_change = 189;</code>
      * @return Whether the pveIntentionChange field is set.
      */
     boolean hasPveIntentionChange();
     /**
-     * <code>.GCGMsgPVEIntentionChange pve_intention_change = 1571;</code>
+     * <code>.GCGMsgPVEIntentionChange pve_intention_change = 189;</code>
      * @return The pveIntentionChange.
      */
     emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange getPveIntentionChange();
     /**
-     * <code>.GCGMsgPVEIntentionChange pve_intention_change = 1571;</code>
+     * <code>.GCGMsgPVEIntentionChange pve_intention_change = 189;</code>
      */
     emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChangeOrBuilder getPveIntentionChangeOrBuilder();
 
     /**
-     * <code>.GCGMsgSkillLimitsChange skill_limits_change = 1013;</code>
+     * <code>.GCGMsgSkillLimitsChange skill_limits_change = 1581;</code>
      * @return Whether the skillLimitsChange field is set.
      */
     boolean hasSkillLimitsChange();
     /**
-     * <code>.GCGMsgSkillLimitsChange skill_limits_change = 1013;</code>
+     * <code>.GCGMsgSkillLimitsChange skill_limits_change = 1581;</code>
      * @return The skillLimitsChange.
      */
     emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange getSkillLimitsChange();
     /**
-     * <code>.GCGMsgSkillLimitsChange skill_limits_change = 1013;</code>
+     * <code>.GCGMsgSkillLimitsChange skill_limits_change = 1581;</code>
      */
     emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChangeOrBuilder getSkillLimitsChangeOrBuilder();
 
     /**
-     * <code>.GCGMsgNoDamageSkillResult no_damage_skill_result = 1753;</code>
+     * <code>.GCGMsgNoDamageSkillResult no_damage_skill_result = 1331;</code>
      * @return Whether the noDamageSkillResult field is set.
      */
     boolean hasNoDamageSkillResult();
     /**
-     * <code>.GCGMsgNoDamageSkillResult no_damage_skill_result = 1753;</code>
+     * <code>.GCGMsgNoDamageSkillResult no_damage_skill_result = 1331;</code>
      * @return The noDamageSkillResult.
      */
     emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult getNoDamageSkillResult();
     /**
-     * <code>.GCGMsgNoDamageSkillResult no_damage_skill_result = 1753;</code>
+     * <code>.GCGMsgNoDamageSkillResult no_damage_skill_result = 1331;</code>
      */
     emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResultOrBuilder getNoDamageSkillResultOrBuilder();
 
     /**
-     * <code>.GCGMsgReactionBegin reaction_begin = 1386;</code>
+     * <code>.GCGMsgReactionBegin reaction_begin = 322;</code>
      * @return Whether the reactionBegin field is set.
      */
     boolean hasReactionBegin();
     /**
-     * <code>.GCGMsgReactionBegin reaction_begin = 1386;</code>
+     * <code>.GCGMsgReactionBegin reaction_begin = 322;</code>
      * @return The reactionBegin.
      */
     emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin getReactionBegin();
     /**
-     * <code>.GCGMsgReactionBegin reaction_begin = 1386;</code>
+     * <code>.GCGMsgReactionBegin reaction_begin = 322;</code>
      */
     emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBeginOrBuilder getReactionBeginOrBuilder();
 
     /**
-     * <code>.GCGMsgReactionEnd reaction_end = 1304;</code>
+     * <code>.GCGMsgReactionEnd reaction_end = 1565;</code>
      * @return Whether the reactionEnd field is set.
      */
     boolean hasReactionEnd();
     /**
-     * <code>.GCGMsgReactionEnd reaction_end = 1304;</code>
+     * <code>.GCGMsgReactionEnd reaction_end = 1565;</code>
      * @return The reactionEnd.
      */
     emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd getReactionEnd();
     /**
-     * <code>.GCGMsgReactionEnd reaction_end = 1304;</code>
+     * <code>.GCGMsgReactionEnd reaction_end = 1565;</code>
      */
     emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEndOrBuilder getReactionEndOrBuilder();
 
@@ -568,7 +517,7 @@ public final class GCGMessageOuterClass {
   }
   /**
    * <pre>
-   * Name: NDDAOOGOECF
+   * Obf: IKBFDMLBONN
    * </pre>
    *
    * Protobuf type {@code GCGMessage}
@@ -615,71 +564,57 @@ public final class GCGMessageOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
-              emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice.Builder subBuilder = null;
-              if (messageCase_ == 1) {
-                subBuilder = ((emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice) message_).toBuilder();
-              }
-              message_ =
-                  input.readMessage(emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice) message_);
-                message_ = subBuilder.buildPartial();
-              }
-              messageCase_ = 1;
-              break;
-            }
             case 18: {
-              emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange.Builder subBuilder = null;
+              emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage.Builder subBuilder = null;
               if (messageCase_ == 2) {
-                subBuilder = ((emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange) message_).toBuilder();
+                subBuilder = ((emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage) message_).toBuilder();
               }
               message_ =
-                  input.readMessage(emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange.parser(), extensionRegistry);
+                  input.readMessage(emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange) message_);
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage) message_);
                 message_ = subBuilder.buildPartial();
               }
               messageCase_ = 2;
               break;
             }
             case 26: {
-              emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie.Builder subBuilder = null;
+              emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll.Builder subBuilder = null;
               if (messageCase_ == 3) {
-                subBuilder = ((emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie) message_).toBuilder();
+                subBuilder = ((emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll) message_).toBuilder();
               }
               message_ =
-                  input.readMessage(emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie.parser(), extensionRegistry);
+                  input.readMessage(emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie) message_);
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll) message_);
                 message_ = subBuilder.buildPartial();
               }
               messageCase_ = 3;
               break;
             }
             case 34: {
-              emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDice.Builder subBuilder = null;
+              emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCards.Builder subBuilder = null;
               if (messageCase_ == 4) {
-                subBuilder = ((emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDice) message_).toBuilder();
+                subBuilder = ((emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCards) message_).toBuilder();
               }
               message_ =
-                  input.readMessage(emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDice.parser(), extensionRegistry);
+                  input.readMessage(emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCards.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDice) message_);
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCards) message_);
                 message_ = subBuilder.buildPartial();
               }
               messageCase_ = 4;
               break;
             }
             case 42: {
-              emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult.Builder subBuilder = null;
+              emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCards.Builder subBuilder = null;
               if (messageCase_ == 5) {
-                subBuilder = ((emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult) message_).toBuilder();
+                subBuilder = ((emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCards) message_).toBuilder();
               }
               message_ =
-                  input.readMessage(emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult.parser(), extensionRegistry);
+                  input.readMessage(emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCards.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult) message_);
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCards) message_);
                 message_ = subBuilder.buildPartial();
               }
               messageCase_ = 5;
@@ -700,56 +635,56 @@ public final class GCGMessageOuterClass {
               break;
             }
             case 58: {
-              emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill.Builder subBuilder = null;
+              emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange.Builder subBuilder = null;
               if (messageCase_ == 7) {
-                subBuilder = ((emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill) message_).toBuilder();
+                subBuilder = ((emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange) message_).toBuilder();
               }
               message_ =
-                  input.readMessage(emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill.parser(), extensionRegistry);
+                  input.readMessage(emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill) message_);
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange) message_);
                 message_ = subBuilder.buildPartial();
               }
               messageCase_ = 7;
               break;
             }
             case 66: {
-              emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage.Builder subBuilder = null;
-              if (messageCase_ == 8) {
-                subBuilder = ((emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage) message_).toBuilder();
-              }
-              message_ =
-                  input.readMessage(emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage) message_);
-                message_ = subBuilder.buildPartial();
-              }
-              messageCase_ = 8;
-              break;
-            }
-            case 82: {
-              emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCards.Builder subBuilder = null;
-              if (messageCase_ == 10) {
-                subBuilder = ((emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCards) message_).toBuilder();
-              }
-              message_ =
-                  input.readMessage(emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCards.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCards) message_);
-                message_ = subBuilder.buildPartial();
-              }
-              messageCase_ = 10;
-              break;
-            }
-            case 90: {
               emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPass.Builder subBuilder = null;
-              if (messageCase_ == 11) {
+              if (messageCase_ == 8) {
                 subBuilder = ((emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPass) message_).toBuilder();
               }
               message_ =
                   input.readMessage(emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPass.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPass) message_);
+                message_ = subBuilder.buildPartial();
+              }
+              messageCase_ = 8;
+              break;
+            }
+            case 82: {
+              emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult.Builder subBuilder = null;
+              if (messageCase_ == 10) {
+                subBuilder = ((emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult) message_).toBuilder();
+              }
+              message_ =
+                  input.readMessage(emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult) message_);
+                message_ = subBuilder.buildPartial();
+              }
+              messageCase_ = 10;
+              break;
+            }
+            case 90: {
+              emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice.Builder subBuilder = null;
+              if (messageCase_ == 11) {
+                subBuilder = ((emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice) message_).toBuilder();
+              }
+              message_ =
+                  input.readMessage(emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice) message_);
                 message_ = subBuilder.buildPartial();
               }
               messageCase_ = 11;
@@ -770,28 +705,28 @@ public final class GCGMessageOuterClass {
               break;
             }
             case 106: {
-              emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll.Builder subBuilder = null;
+              emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill.Builder subBuilder = null;
               if (messageCase_ == 13) {
-                subBuilder = ((emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll) message_).toBuilder();
+                subBuilder = ((emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill) message_).toBuilder();
               }
               message_ =
-                  input.readMessage(emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll.parser(), extensionRegistry);
+                  input.readMessage(emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll) message_);
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill) message_);
                 message_ = subBuilder.buildPartial();
               }
               messageCase_ = 13;
               break;
             }
             case 114: {
-              emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCards.Builder subBuilder = null;
+              emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDice.Builder subBuilder = null;
               if (messageCase_ == 14) {
-                subBuilder = ((emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCards) message_).toBuilder();
+                subBuilder = ((emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDice) message_).toBuilder();
               }
               message_ =
-                  input.readMessage(emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCards.parser(), extensionRegistry);
+                  input.readMessage(emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDice.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCards) message_);
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDice) message_);
                 message_ = subBuilder.buildPartial();
               }
               messageCase_ = 14;
@@ -811,191 +746,9 @@ public final class GCGMessageOuterClass {
               messageCase_ = 15;
               break;
             }
-            case 522: {
-              emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo.Builder subBuilder = null;
-              if (messageCase_ == 65) {
-                subBuilder = ((emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo) message_).toBuilder();
-              }
-              message_ =
-                  input.readMessage(emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo) message_);
-                message_ = subBuilder.buildPartial();
-              }
-              messageCase_ = 65;
-              break;
-            }
-            case 1338: {
-              emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer.Builder subBuilder = null;
-              if (messageCase_ == 167) {
-                subBuilder = ((emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer) message_).toBuilder();
-              }
-              message_ =
-                  input.readMessage(emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer) message_);
-                message_ = subBuilder.buildPartial();
-              }
-              messageCase_ = 167;
-              break;
-            }
-            case 4442: {
-              emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAdd.Builder subBuilder = null;
-              if (messageCase_ == 555) {
-                subBuilder = ((emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAdd) message_).toBuilder();
-              }
-              message_ =
-                  input.readMessage(emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAdd.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAdd) message_);
-                message_ = subBuilder.buildPartial();
-              }
-              messageCase_ = 555;
-              break;
-            }
-            case 4994: {
-              emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinue.Builder subBuilder = null;
-              if (messageCase_ == 624) {
-                subBuilder = ((emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinue) message_).toBuilder();
-              }
-              message_ =
-                  input.readMessage(emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinue.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinue) message_);
-                message_ = subBuilder.buildPartial();
-              }
-              messageCase_ = 624;
-              break;
-            }
-            case 5490: {
-              emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange.Builder subBuilder = null;
-              if (messageCase_ == 686) {
-                subBuilder = ((emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange) message_).toBuilder();
-              }
-              message_ =
-                  input.readMessage(emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange) message_);
-                message_ = subBuilder.buildPartial();
-              }
-              messageCase_ = 686;
-              break;
-            }
-            case 7130: {
-              emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange.Builder subBuilder = null;
-              if (messageCase_ == 891) {
-                subBuilder = ((emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange) message_).toBuilder();
-              }
-              message_ =
-                  input.readMessage(emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange) message_);
-                message_ = subBuilder.buildPartial();
-              }
-              messageCase_ = 891;
-              break;
-            }
-            case 8106: {
-              emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange.Builder subBuilder = null;
-              if (messageCase_ == 1013) {
-                subBuilder = ((emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange) message_).toBuilder();
-              }
-              message_ =
-                  input.readMessage(emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange) message_);
-                message_ = subBuilder.buildPartial();
-              }
-              messageCase_ = 1013;
-              break;
-            }
-            case 8538: {
-              emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd.Builder subBuilder = null;
-              if (messageCase_ == 1067) {
-                subBuilder = ((emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd) message_).toBuilder();
-              }
-              message_ =
-                  input.readMessage(emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd) message_);
-                message_ = subBuilder.buildPartial();
-              }
-              messageCase_ = 1067;
-              break;
-            }
-            case 8746: {
-              emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffect.Builder subBuilder = null;
-              if (messageCase_ == 1093) {
-                subBuilder = ((emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffect) message_).toBuilder();
-              }
-              message_ =
-                  input.readMessage(emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffect.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffect) message_);
-                message_ = subBuilder.buildPartial();
-              }
-              messageCase_ = 1093;
-              break;
-            }
-            case 10434: {
-              emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd.Builder subBuilder = null;
-              if (messageCase_ == 1304) {
-                subBuilder = ((emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd) message_).toBuilder();
-              }
-              message_ =
-                  input.readMessage(emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd) message_);
-                message_ = subBuilder.buildPartial();
-              }
-              messageCase_ = 1304;
-              break;
-            }
-            case 11090: {
-              emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin.Builder subBuilder = null;
-              if (messageCase_ == 1386) {
-                subBuilder = ((emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin) message_).toBuilder();
-              }
-              message_ =
-                  input.readMessage(emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin) message_);
-                message_ = subBuilder.buildPartial();
-              }
-              messageCase_ = 1386;
-              break;
-            }
-            case 11378: {
-              emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostRevise.Builder subBuilder = null;
-              if (messageCase_ == 1422) {
-                subBuilder = ((emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostRevise) message_).toBuilder();
-              }
-              message_ =
-                  input.readMessage(emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostRevise.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostRevise) message_);
-                message_ = subBuilder.buildPartial();
-              }
-              messageCase_ = 1422;
-              break;
-            }
-            case 12394: {
-              emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdate.Builder subBuilder = null;
-              if (messageCase_ == 1549) {
-                subBuilder = ((emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdate) message_).toBuilder();
-              }
-              message_ =
-                  input.readMessage(emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdate.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdate) message_);
-                message_ = subBuilder.buildPartial();
-              }
-              messageCase_ = 1549;
-              break;
-            }
-            case 12570: {
+            case 1514: {
               emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange.Builder subBuilder = null;
-              if (messageCase_ == 1571) {
+              if (messageCase_ == 189) {
                 subBuilder = ((emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange) message_).toBuilder();
               }
               message_ =
@@ -1004,26 +757,12 @@ public final class GCGMessageOuterClass {
                 subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange) message_);
                 message_ = subBuilder.buildPartial();
               }
-              messageCase_ = 1571;
+              messageCase_ = 189;
               break;
             }
-            case 13586: {
-              emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard.Builder subBuilder = null;
-              if (messageCase_ == 1698) {
-                subBuilder = ((emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard) message_).toBuilder();
-              }
-              message_ =
-                  input.readMessage(emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard) message_);
-                message_ = subBuilder.buildPartial();
-              }
-              messageCase_ = 1698;
-              break;
-            }
-            case 13946: {
+            case 1842: {
               emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.GCGMsgClientPerform.Builder subBuilder = null;
-              if (messageCase_ == 1743) {
+              if (messageCase_ == 230) {
                 subBuilder = ((emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.GCGMsgClientPerform) message_).toBuilder();
               }
               message_ =
@@ -1032,26 +771,82 @@ public final class GCGMessageOuterClass {
                 subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.GCGMsgClientPerform) message_);
                 message_ = subBuilder.buildPartial();
               }
-              messageCase_ = 1743;
+              messageCase_ = 230;
               break;
             }
-            case 14026: {
-              emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult.Builder subBuilder = null;
-              if (messageCase_ == 1753) {
-                subBuilder = ((emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult) message_).toBuilder();
+            case 2578: {
+              emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin.Builder subBuilder = null;
+              if (messageCase_ == 322) {
+                subBuilder = ((emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin) message_).toBuilder();
               }
               message_ =
-                  input.readMessage(emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult.parser(), extensionRegistry);
+                  input.readMessage(emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult) message_);
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin) message_);
                 message_ = subBuilder.buildPartial();
               }
-              messageCase_ = 1753;
+              messageCase_ = 322;
               break;
             }
-            case 14130: {
+            case 2818: {
+              emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer.Builder subBuilder = null;
+              if (messageCase_ == 352) {
+                subBuilder = ((emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer) message_).toBuilder();
+              }
+              message_ =
+                  input.readMessage(emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer) message_);
+                message_ = subBuilder.buildPartial();
+              }
+              messageCase_ = 352;
+              break;
+            }
+            case 3338: {
+              emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffect.Builder subBuilder = null;
+              if (messageCase_ == 417) {
+                subBuilder = ((emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffect) message_).toBuilder();
+              }
+              message_ =
+                  input.readMessage(emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffect.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffect) message_);
+                message_ = subBuilder.buildPartial();
+              }
+              messageCase_ = 417;
+              break;
+            }
+            case 4210: {
+              emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange.Builder subBuilder = null;
+              if (messageCase_ == 526) {
+                subBuilder = ((emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange) message_).toBuilder();
+              }
+              message_ =
+                  input.readMessage(emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange) message_);
+                message_ = subBuilder.buildPartial();
+              }
+              messageCase_ = 526;
+              break;
+            }
+            case 4754: {
+              emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdate.Builder subBuilder = null;
+              if (messageCase_ == 594) {
+                subBuilder = ((emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdate) message_).toBuilder();
+              }
+              message_ =
+                  input.readMessage(emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdate.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdate) message_);
+                message_ = subBuilder.buildPartial();
+              }
+              messageCase_ = 594;
+              break;
+            }
+            case 7202: {
               emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOver.Builder subBuilder = null;
-              if (messageCase_ == 1766) {
+              if (messageCase_ == 900) {
                 subBuilder = ((emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOver) message_).toBuilder();
               }
               message_ =
@@ -1060,26 +855,54 @@ public final class GCGMessageOuterClass {
                 subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOver) message_);
                 message_ = subBuilder.buildPartial();
               }
-              messageCase_ = 1766;
+              messageCase_ = 900;
               break;
             }
-            case 15210: {
-              emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemove.Builder subBuilder = null;
-              if (messageCase_ == 1901) {
-                subBuilder = ((emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemove) message_).toBuilder();
+            case 7506: {
+              emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange.Builder subBuilder = null;
+              if (messageCase_ == 938) {
+                subBuilder = ((emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange) message_).toBuilder();
               }
               message_ =
-                  input.readMessage(emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemove.parser(), extensionRegistry);
+                  input.readMessage(emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemove) message_);
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange) message_);
                 message_ = subBuilder.buildPartial();
               }
-              messageCase_ = 1901;
+              messageCase_ = 938;
               break;
             }
-            case 16130: {
+            case 7642: {
+              emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinue.Builder subBuilder = null;
+              if (messageCase_ == 955) {
+                subBuilder = ((emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinue) message_).toBuilder();
+              }
+              message_ =
+                  input.readMessage(emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinue.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinue) message_);
+                message_ = subBuilder.buildPartial();
+              }
+              messageCase_ = 955;
+              break;
+            }
+            case 8890: {
+              emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo.Builder subBuilder = null;
+              if (messageCase_ == 1111) {
+                subBuilder = ((emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo) message_).toBuilder();
+              }
+              message_ =
+                  input.readMessage(emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo) message_);
+                message_ = subBuilder.buildPartial();
+              }
+              messageCase_ = 1111;
+              break;
+            }
+            case 9082: {
               emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController.Builder subBuilder = null;
-              if (messageCase_ == 2016) {
+              if (messageCase_ == 1135) {
                 subBuilder = ((emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController) message_).toBuilder();
               }
               message_ =
@@ -1088,7 +911,119 @@ public final class GCGMessageOuterClass {
                 subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController) message_);
                 message_ = subBuilder.buildPartial();
               }
-              messageCase_ = 2016;
+              messageCase_ = 1135;
+              break;
+            }
+            case 9834: {
+              emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard.Builder subBuilder = null;
+              if (messageCase_ == 1229) {
+                subBuilder = ((emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard) message_).toBuilder();
+              }
+              message_ =
+                  input.readMessage(emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard) message_);
+                message_ = subBuilder.buildPartial();
+              }
+              messageCase_ = 1229;
+              break;
+            }
+            case 10042: {
+              emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostRevise.Builder subBuilder = null;
+              if (messageCase_ == 1255) {
+                subBuilder = ((emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostRevise) message_).toBuilder();
+              }
+              message_ =
+                  input.readMessage(emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostRevise.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostRevise) message_);
+                message_ = subBuilder.buildPartial();
+              }
+              messageCase_ = 1255;
+              break;
+            }
+            case 10650: {
+              emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult.Builder subBuilder = null;
+              if (messageCase_ == 1331) {
+                subBuilder = ((emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult) message_).toBuilder();
+              }
+              message_ =
+                  input.readMessage(emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult) message_);
+                message_ = subBuilder.buildPartial();
+              }
+              messageCase_ = 1331;
+              break;
+            }
+            case 11410: {
+              emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd.Builder subBuilder = null;
+              if (messageCase_ == 1426) {
+                subBuilder = ((emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd) message_).toBuilder();
+              }
+              message_ =
+                  input.readMessage(emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd) message_);
+                message_ = subBuilder.buildPartial();
+              }
+              messageCase_ = 1426;
+              break;
+            }
+            case 11498: {
+              emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAdd.Builder subBuilder = null;
+              if (messageCase_ == 1437) {
+                subBuilder = ((emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAdd) message_).toBuilder();
+              }
+              message_ =
+                  input.readMessage(emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAdd.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAdd) message_);
+                message_ = subBuilder.buildPartial();
+              }
+              messageCase_ = 1437;
+              break;
+            }
+            case 12522: {
+              emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd.Builder subBuilder = null;
+              if (messageCase_ == 1565) {
+                subBuilder = ((emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd) message_).toBuilder();
+              }
+              message_ =
+                  input.readMessage(emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd) message_);
+                message_ = subBuilder.buildPartial();
+              }
+              messageCase_ = 1565;
+              break;
+            }
+            case 12602: {
+              emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemove.Builder subBuilder = null;
+              if (messageCase_ == 1575) {
+                subBuilder = ((emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemove) message_).toBuilder();
+              }
+              message_ =
+                  input.readMessage(emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemove.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemove) message_);
+                message_ = subBuilder.buildPartial();
+              }
+              messageCase_ = 1575;
+              break;
+            }
+            case 12650: {
+              emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange.Builder subBuilder = null;
+              if (messageCase_ == 1581) {
+                subBuilder = ((emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange) message_).toBuilder();
+              }
+              message_ =
+                  input.readMessage(emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange) message_);
+                message_ = subBuilder.buildPartial();
+              }
+              messageCase_ = 1581;
               break;
             }
             default: {
@@ -1129,39 +1064,38 @@ public final class GCGMessageOuterClass {
         implements com.google.protobuf.Internal.EnumLite,
             com.google.protobuf.AbstractMessage.InternalOneOfEnum {
       TOKEN_CHANGE(6),
-      PHASE_CHANGE(2),
-      ADD_CARDS(14),
-      REMOVE_CARDS(10),
-      SELECT_ON_STAGE(8),
-      DICE_ROLL(13),
+      PHASE_CHANGE(7),
+      ADD_CARDS(4),
+      REMOVE_CARDS(5),
+      SELECT_ON_STAGE(2),
+      DICE_ROLL(3),
       DICE_REROLL(15),
-      PASS(11),
-      CHAR_DIE(3),
-      SKILL_RESULT(5),
-      COST_DICE(4),
-      ADD_DICE(1),
+      PASS(8),
+      SKILL_RESULT(10),
+      COST_DICE(14),
+      ADD_DICE(11),
       MOVE_CARD(12),
-      USE_SKILL(7),
-      NEW_CARD(1698),
-      UPDATE_CONTROLLER(2016),
-      MODIFY_ADD(555),
-      MODIFY_REMOVE(1901),
-      USE_SKILL_END(1067),
-      DUEL_DATA_CHANGE(686),
-      CLIENT_PERFORM(1743),
-      GAME_OVER(1766),
-      OP_TIMER(167),
-      WAITING_LIST_CHANGE(891),
-      CARD_UPDATE(1549),
-      SELECT_ON_STAGE_BY_EFFECT(1093),
-      COST_REVISE(1422),
-      PHASE_CONTINUE(624),
-      PVE_INTENTION_INFO(65),
-      PVE_INTENTION_CHANGE(1571),
-      SKILL_LIMITS_CHANGE(1013),
-      NO_DAMAGE_SKILL_RESULT(1753),
-      REACTION_BEGIN(1386),
-      REACTION_END(1304),
+      USE_SKILL(13),
+      NEW_CARD(1229),
+      UPDATE_CONTROLLER(1135),
+      MODIFY_ADD(1437),
+      MODIFY_REMOVE(1575),
+      USE_SKILL_END(1426),
+      DUEL_DATA_CHANGE(526),
+      CLIENT_PERFORM(230),
+      GAME_OVER(900),
+      OP_TIMER(352),
+      WAITING_LIST_CHANGE(938),
+      CARD_UPDATE(594),
+      SELECT_ON_STAGE_BY_EFFECT(417),
+      COST_REVISE(1255),
+      PHASE_CONTINUE(955),
+      PVE_INTENTION_INFO(1111),
+      PVE_INTENTION_CHANGE(189),
+      SKILL_LIMITS_CHANGE(1581),
+      NO_DAMAGE_SKILL_RESULT(1331),
+      REACTION_BEGIN(322),
+      REACTION_END(1565),
       MESSAGE_NOT_SET(0);
       private final int value;
       private MessageCase(int value) {
@@ -1180,39 +1114,38 @@ public final class GCGMessageOuterClass {
       public static MessageCase forNumber(int value) {
         switch (value) {
           case 6: return TOKEN_CHANGE;
-          case 2: return PHASE_CHANGE;
-          case 14: return ADD_CARDS;
-          case 10: return REMOVE_CARDS;
-          case 8: return SELECT_ON_STAGE;
-          case 13: return DICE_ROLL;
+          case 7: return PHASE_CHANGE;
+          case 4: return ADD_CARDS;
+          case 5: return REMOVE_CARDS;
+          case 2: return SELECT_ON_STAGE;
+          case 3: return DICE_ROLL;
           case 15: return DICE_REROLL;
-          case 11: return PASS;
-          case 3: return CHAR_DIE;
-          case 5: return SKILL_RESULT;
-          case 4: return COST_DICE;
-          case 1: return ADD_DICE;
+          case 8: return PASS;
+          case 10: return SKILL_RESULT;
+          case 14: return COST_DICE;
+          case 11: return ADD_DICE;
           case 12: return MOVE_CARD;
-          case 7: return USE_SKILL;
-          case 1698: return NEW_CARD;
-          case 2016: return UPDATE_CONTROLLER;
-          case 555: return MODIFY_ADD;
-          case 1901: return MODIFY_REMOVE;
-          case 1067: return USE_SKILL_END;
-          case 686: return DUEL_DATA_CHANGE;
-          case 1743: return CLIENT_PERFORM;
-          case 1766: return GAME_OVER;
-          case 167: return OP_TIMER;
-          case 891: return WAITING_LIST_CHANGE;
-          case 1549: return CARD_UPDATE;
-          case 1093: return SELECT_ON_STAGE_BY_EFFECT;
-          case 1422: return COST_REVISE;
-          case 624: return PHASE_CONTINUE;
-          case 65: return PVE_INTENTION_INFO;
-          case 1571: return PVE_INTENTION_CHANGE;
-          case 1013: return SKILL_LIMITS_CHANGE;
-          case 1753: return NO_DAMAGE_SKILL_RESULT;
-          case 1386: return REACTION_BEGIN;
-          case 1304: return REACTION_END;
+          case 13: return USE_SKILL;
+          case 1229: return NEW_CARD;
+          case 1135: return UPDATE_CONTROLLER;
+          case 1437: return MODIFY_ADD;
+          case 1575: return MODIFY_REMOVE;
+          case 1426: return USE_SKILL_END;
+          case 526: return DUEL_DATA_CHANGE;
+          case 230: return CLIENT_PERFORM;
+          case 900: return GAME_OVER;
+          case 352: return OP_TIMER;
+          case 938: return WAITING_LIST_CHANGE;
+          case 594: return CARD_UPDATE;
+          case 417: return SELECT_ON_STAGE_BY_EFFECT;
+          case 1255: return COST_REVISE;
+          case 955: return PHASE_CONTINUE;
+          case 1111: return PVE_INTENTION_INFO;
+          case 189: return PVE_INTENTION_CHANGE;
+          case 1581: return SKILL_LIMITS_CHANGE;
+          case 1331: return NO_DAMAGE_SKILL_RESULT;
+          case 322: return REACTION_BEGIN;
+          case 1565: return REACTION_END;
           case 0: return MESSAGE_NOT_SET;
           default: return null;
         }
@@ -1259,168 +1192,156 @@ public final class GCGMessageOuterClass {
       return emu.grasscutter.net.proto.GCGMsgTokenChangeOuterClass.GCGMsgTokenChange.getDefaultInstance();
     }
 
-    public static final int PHASE_CHANGE_FIELD_NUMBER = 2;
+    public static final int PHASE_CHANGE_FIELD_NUMBER = 7;
     /**
-     * <pre>
-     *LNDLOPKJALI snooswap
-     * </pre>
-     *
-     * <code>.GCGMsgPhaseChange phase_change = 2;</code>
+     * <code>.GCGMsgPhaseChange phase_change = 7;</code>
      * @return Whether the phaseChange field is set.
      */
     @java.lang.Override
     public boolean hasPhaseChange() {
-      return messageCase_ == 2;
+      return messageCase_ == 7;
     }
     /**
-     * <pre>
-     *LNDLOPKJALI snooswap
-     * </pre>
-     *
-     * <code>.GCGMsgPhaseChange phase_change = 2;</code>
+     * <code>.GCGMsgPhaseChange phase_change = 7;</code>
      * @return The phaseChange.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange getPhaseChange() {
-      if (messageCase_ == 2) {
+      if (messageCase_ == 7) {
          return (emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange.getDefaultInstance();
     }
     /**
-     * <pre>
-     *LNDLOPKJALI snooswap
-     * </pre>
-     *
-     * <code>.GCGMsgPhaseChange phase_change = 2;</code>
+     * <code>.GCGMsgPhaseChange phase_change = 7;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChangeOrBuilder getPhaseChangeOrBuilder() {
-      if (messageCase_ == 2) {
+      if (messageCase_ == 7) {
          return (emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange.getDefaultInstance();
     }
 
-    public static final int ADD_CARDS_FIELD_NUMBER = 14;
+    public static final int ADD_CARDS_FIELD_NUMBER = 4;
     /**
-     * <code>.GCGMsgAddCards add_cards = 14;</code>
+     * <code>.GCGMsgAddCards add_cards = 4;</code>
      * @return Whether the addCards field is set.
      */
     @java.lang.Override
     public boolean hasAddCards() {
-      return messageCase_ == 14;
+      return messageCase_ == 4;
     }
     /**
-     * <code>.GCGMsgAddCards add_cards = 14;</code>
+     * <code>.GCGMsgAddCards add_cards = 4;</code>
      * @return The addCards.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCards getAddCards() {
-      if (messageCase_ == 14) {
+      if (messageCase_ == 4) {
          return (emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCards) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCards.getDefaultInstance();
     }
     /**
-     * <code>.GCGMsgAddCards add_cards = 14;</code>
+     * <code>.GCGMsgAddCards add_cards = 4;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCardsOrBuilder getAddCardsOrBuilder() {
-      if (messageCase_ == 14) {
+      if (messageCase_ == 4) {
          return (emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCards) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCards.getDefaultInstance();
     }
 
-    public static final int REMOVE_CARDS_FIELD_NUMBER = 10;
+    public static final int REMOVE_CARDS_FIELD_NUMBER = 5;
     /**
-     * <code>.GCGMsgRemoveCards remove_cards = 10;</code>
+     * <code>.GCGMsgRemoveCards remove_cards = 5;</code>
      * @return Whether the removeCards field is set.
      */
     @java.lang.Override
     public boolean hasRemoveCards() {
-      return messageCase_ == 10;
+      return messageCase_ == 5;
     }
     /**
-     * <code>.GCGMsgRemoveCards remove_cards = 10;</code>
+     * <code>.GCGMsgRemoveCards remove_cards = 5;</code>
      * @return The removeCards.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCards getRemoveCards() {
-      if (messageCase_ == 10) {
+      if (messageCase_ == 5) {
          return (emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCards) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCards.getDefaultInstance();
     }
     /**
-     * <code>.GCGMsgRemoveCards remove_cards = 10;</code>
+     * <code>.GCGMsgRemoveCards remove_cards = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCardsOrBuilder getRemoveCardsOrBuilder() {
-      if (messageCase_ == 10) {
+      if (messageCase_ == 5) {
          return (emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCards) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCards.getDefaultInstance();
     }
 
-    public static final int SELECT_ON_STAGE_FIELD_NUMBER = 8;
+    public static final int SELECT_ON_STAGE_FIELD_NUMBER = 2;
     /**
-     * <code>.GCGMsgSelectOnStage select_on_stage = 8;</code>
+     * <code>.GCGMsgSelectOnStage select_on_stage = 2;</code>
      * @return Whether the selectOnStage field is set.
      */
     @java.lang.Override
     public boolean hasSelectOnStage() {
-      return messageCase_ == 8;
+      return messageCase_ == 2;
     }
     /**
-     * <code>.GCGMsgSelectOnStage select_on_stage = 8;</code>
+     * <code>.GCGMsgSelectOnStage select_on_stage = 2;</code>
      * @return The selectOnStage.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage getSelectOnStage() {
-      if (messageCase_ == 8) {
+      if (messageCase_ == 2) {
          return (emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage.getDefaultInstance();
     }
     /**
-     * <code>.GCGMsgSelectOnStage select_on_stage = 8;</code>
+     * <code>.GCGMsgSelectOnStage select_on_stage = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStageOrBuilder getSelectOnStageOrBuilder() {
-      if (messageCase_ == 8) {
+      if (messageCase_ == 2) {
          return (emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage.getDefaultInstance();
     }
 
-    public static final int DICE_ROLL_FIELD_NUMBER = 13;
+    public static final int DICE_ROLL_FIELD_NUMBER = 3;
     /**
-     * <code>.GCGMsgDiceRoll dice_roll = 13;</code>
+     * <code>.GCGMsgDiceRoll dice_roll = 3;</code>
      * @return Whether the diceRoll field is set.
      */
     @java.lang.Override
     public boolean hasDiceRoll() {
-      return messageCase_ == 13;
+      return messageCase_ == 3;
     }
     /**
-     * <code>.GCGMsgDiceRoll dice_roll = 13;</code>
+     * <code>.GCGMsgDiceRoll dice_roll = 3;</code>
      * @return The diceRoll.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll getDiceRoll() {
-      if (messageCase_ == 13) {
+      if (messageCase_ == 3) {
          return (emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll.getDefaultInstance();
     }
     /**
-     * <code>.GCGMsgDiceRoll dice_roll = 13;</code>
+     * <code>.GCGMsgDiceRoll dice_roll = 3;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRollOrBuilder getDiceRollOrBuilder() {
-      if (messageCase_ == 13) {
+      if (messageCase_ == 3) {
          return (emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll.getDefaultInstance();
@@ -1457,156 +1378,125 @@ public final class GCGMessageOuterClass {
       return emu.grasscutter.net.proto.GCGMsgDiceRerollOuterClass.GCGMsgDiceReroll.getDefaultInstance();
     }
 
-    public static final int PASS_FIELD_NUMBER = 11;
+    public static final int PASS_FIELD_NUMBER = 8;
     /**
-     * <code>.GCGMsgPass pass = 11;</code>
+     * <code>.GCGMsgPass pass = 8;</code>
      * @return Whether the pass field is set.
      */
     @java.lang.Override
     public boolean hasPass() {
-      return messageCase_ == 11;
+      return messageCase_ == 8;
     }
     /**
-     * <code>.GCGMsgPass pass = 11;</code>
+     * <code>.GCGMsgPass pass = 8;</code>
      * @return The pass.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPass getPass() {
-      if (messageCase_ == 11) {
+      if (messageCase_ == 8) {
          return (emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPass) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPass.getDefaultInstance();
     }
     /**
-     * <code>.GCGMsgPass pass = 11;</code>
+     * <code>.GCGMsgPass pass = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPassOrBuilder getPassOrBuilder() {
-      if (messageCase_ == 11) {
+      if (messageCase_ == 8) {
          return (emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPass) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPass.getDefaultInstance();
     }
 
-    public static final int CHAR_DIE_FIELD_NUMBER = 3;
+    public static final int SKILL_RESULT_FIELD_NUMBER = 10;
     /**
-     * <code>.GCGMsgCharDie char_die = 3;</code>
-     * @return Whether the charDie field is set.
-     */
-    @java.lang.Override
-    public boolean hasCharDie() {
-      return messageCase_ == 3;
-    }
-    /**
-     * <code>.GCGMsgCharDie char_die = 3;</code>
-     * @return The charDie.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie getCharDie() {
-      if (messageCase_ == 3) {
-         return (emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie) message_;
-      }
-      return emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie.getDefaultInstance();
-    }
-    /**
-     * <code>.GCGMsgCharDie char_die = 3;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDieOrBuilder getCharDieOrBuilder() {
-      if (messageCase_ == 3) {
-         return (emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie) message_;
-      }
-      return emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie.getDefaultInstance();
-    }
-
-    public static final int SKILL_RESULT_FIELD_NUMBER = 5;
-    /**
-     * <code>.GCGMsgSkillResult skill_result = 5;</code>
+     * <code>.GCGMsgSkillResult skill_result = 10;</code>
      * @return Whether the skillResult field is set.
      */
     @java.lang.Override
     public boolean hasSkillResult() {
-      return messageCase_ == 5;
+      return messageCase_ == 10;
     }
     /**
-     * <code>.GCGMsgSkillResult skill_result = 5;</code>
+     * <code>.GCGMsgSkillResult skill_result = 10;</code>
      * @return The skillResult.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult getSkillResult() {
-      if (messageCase_ == 5) {
+      if (messageCase_ == 10) {
          return (emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult.getDefaultInstance();
     }
     /**
-     * <code>.GCGMsgSkillResult skill_result = 5;</code>
+     * <code>.GCGMsgSkillResult skill_result = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResultOrBuilder getSkillResultOrBuilder() {
-      if (messageCase_ == 5) {
+      if (messageCase_ == 10) {
          return (emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult.getDefaultInstance();
     }
 
-    public static final int COST_DICE_FIELD_NUMBER = 4;
+    public static final int COST_DICE_FIELD_NUMBER = 14;
     /**
-     * <code>.GCGMsgCostDice cost_dice = 4;</code>
+     * <code>.GCGMsgCostDice cost_dice = 14;</code>
      * @return Whether the costDice field is set.
      */
     @java.lang.Override
     public boolean hasCostDice() {
-      return messageCase_ == 4;
+      return messageCase_ == 14;
     }
     /**
-     * <code>.GCGMsgCostDice cost_dice = 4;</code>
+     * <code>.GCGMsgCostDice cost_dice = 14;</code>
      * @return The costDice.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDice getCostDice() {
-      if (messageCase_ == 4) {
+      if (messageCase_ == 14) {
          return (emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDice) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDice.getDefaultInstance();
     }
     /**
-     * <code>.GCGMsgCostDice cost_dice = 4;</code>
+     * <code>.GCGMsgCostDice cost_dice = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDiceOrBuilder getCostDiceOrBuilder() {
-      if (messageCase_ == 4) {
+      if (messageCase_ == 14) {
          return (emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDice) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDice.getDefaultInstance();
     }
 
-    public static final int ADD_DICE_FIELD_NUMBER = 1;
+    public static final int ADD_DICE_FIELD_NUMBER = 11;
     /**
-     * <code>.GCGMsgAddDice add_dice = 1;</code>
+     * <code>.GCGMsgAddDice add_dice = 11;</code>
      * @return Whether the addDice field is set.
      */
     @java.lang.Override
     public boolean hasAddDice() {
-      return messageCase_ == 1;
+      return messageCase_ == 11;
     }
     /**
-     * <code>.GCGMsgAddDice add_dice = 1;</code>
+     * <code>.GCGMsgAddDice add_dice = 11;</code>
      * @return The addDice.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice getAddDice() {
-      if (messageCase_ == 1) {
+      if (messageCase_ == 11) {
          return (emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice.getDefaultInstance();
     }
     /**
-     * <code>.GCGMsgAddDice add_dice = 1;</code>
+     * <code>.GCGMsgAddDice add_dice = 11;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDiceOrBuilder getAddDiceOrBuilder() {
-      if (messageCase_ == 1) {
+      if (messageCase_ == 11) {
          return (emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice.getDefaultInstance();
@@ -1643,676 +1533,652 @@ public final class GCGMessageOuterClass {
       return emu.grasscutter.net.proto.GCGMsgMoveCardOuterClass.GCGMsgMoveCard.getDefaultInstance();
     }
 
-    public static final int USE_SKILL_FIELD_NUMBER = 7;
+    public static final int USE_SKILL_FIELD_NUMBER = 13;
     /**
-     * <code>.GCGMsgUseSkill use_skill = 7;</code>
+     * <code>.GCGMsgUseSkill use_skill = 13;</code>
      * @return Whether the useSkill field is set.
      */
     @java.lang.Override
     public boolean hasUseSkill() {
-      return messageCase_ == 7;
+      return messageCase_ == 13;
     }
     /**
-     * <code>.GCGMsgUseSkill use_skill = 7;</code>
+     * <code>.GCGMsgUseSkill use_skill = 13;</code>
      * @return The useSkill.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill getUseSkill() {
-      if (messageCase_ == 7) {
+      if (messageCase_ == 13) {
          return (emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill.getDefaultInstance();
     }
     /**
-     * <code>.GCGMsgUseSkill use_skill = 7;</code>
+     * <code>.GCGMsgUseSkill use_skill = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkillOrBuilder getUseSkillOrBuilder() {
-      if (messageCase_ == 7) {
+      if (messageCase_ == 13) {
          return (emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill.getDefaultInstance();
     }
 
-    public static final int NEW_CARD_FIELD_NUMBER = 1698;
+    public static final int NEW_CARD_FIELD_NUMBER = 1229;
     /**
-     * <code>.GCGMsgNewCard new_card = 1698;</code>
+     * <code>.GCGMsgNewCard new_card = 1229;</code>
      * @return Whether the newCard field is set.
      */
     @java.lang.Override
     public boolean hasNewCard() {
-      return messageCase_ == 1698;
+      return messageCase_ == 1229;
     }
     /**
-     * <code>.GCGMsgNewCard new_card = 1698;</code>
+     * <code>.GCGMsgNewCard new_card = 1229;</code>
      * @return The newCard.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard getNewCard() {
-      if (messageCase_ == 1698) {
+      if (messageCase_ == 1229) {
          return (emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard.getDefaultInstance();
     }
     /**
-     * <code>.GCGMsgNewCard new_card = 1698;</code>
+     * <code>.GCGMsgNewCard new_card = 1229;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCardOrBuilder getNewCardOrBuilder() {
-      if (messageCase_ == 1698) {
+      if (messageCase_ == 1229) {
          return (emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard.getDefaultInstance();
     }
 
-    public static final int UPDATE_CONTROLLER_FIELD_NUMBER = 2016;
+    public static final int UPDATE_CONTROLLER_FIELD_NUMBER = 1135;
     /**
-     * <pre>
-     *GIHCLFFDKLE snooswap
-     * </pre>
-     *
-     * <code>.GCGMsgUpdateController update_controller = 2016;</code>
+     * <code>.GCGMsgUpdateController update_controller = 1135;</code>
      * @return Whether the updateController field is set.
      */
     @java.lang.Override
     public boolean hasUpdateController() {
-      return messageCase_ == 2016;
+      return messageCase_ == 1135;
     }
     /**
-     * <pre>
-     *GIHCLFFDKLE snooswap
-     * </pre>
-     *
-     * <code>.GCGMsgUpdateController update_controller = 2016;</code>
+     * <code>.GCGMsgUpdateController update_controller = 1135;</code>
      * @return The updateController.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController getUpdateController() {
-      if (messageCase_ == 2016) {
+      if (messageCase_ == 1135) {
          return (emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController.getDefaultInstance();
     }
     /**
-     * <pre>
-     *GIHCLFFDKLE snooswap
-     * </pre>
-     *
-     * <code>.GCGMsgUpdateController update_controller = 2016;</code>
+     * <code>.GCGMsgUpdateController update_controller = 1135;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateControllerOrBuilder getUpdateControllerOrBuilder() {
-      if (messageCase_ == 2016) {
+      if (messageCase_ == 1135) {
          return (emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController.getDefaultInstance();
     }
 
-    public static final int MODIFY_ADD_FIELD_NUMBER = 555;
+    public static final int MODIFY_ADD_FIELD_NUMBER = 1437;
     /**
-     * <code>.GCGMsgModifyAdd modify_add = 555;</code>
+     * <code>.GCGMsgModifyAdd modify_add = 1437;</code>
      * @return Whether the modifyAdd field is set.
      */
     @java.lang.Override
     public boolean hasModifyAdd() {
-      return messageCase_ == 555;
+      return messageCase_ == 1437;
     }
     /**
-     * <code>.GCGMsgModifyAdd modify_add = 555;</code>
+     * <code>.GCGMsgModifyAdd modify_add = 1437;</code>
      * @return The modifyAdd.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAdd getModifyAdd() {
-      if (messageCase_ == 555) {
+      if (messageCase_ == 1437) {
          return (emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAdd) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAdd.getDefaultInstance();
     }
     /**
-     * <code>.GCGMsgModifyAdd modify_add = 555;</code>
+     * <code>.GCGMsgModifyAdd modify_add = 1437;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAddOrBuilder getModifyAddOrBuilder() {
-      if (messageCase_ == 555) {
+      if (messageCase_ == 1437) {
          return (emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAdd) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAdd.getDefaultInstance();
     }
 
-    public static final int MODIFY_REMOVE_FIELD_NUMBER = 1901;
+    public static final int MODIFY_REMOVE_FIELD_NUMBER = 1575;
     /**
-     * <code>.GCGMsgModifyRemove modify_remove = 1901;</code>
+     * <code>.GCGMsgModifyRemove modify_remove = 1575;</code>
      * @return Whether the modifyRemove field is set.
      */
     @java.lang.Override
     public boolean hasModifyRemove() {
-      return messageCase_ == 1901;
+      return messageCase_ == 1575;
     }
     /**
-     * <code>.GCGMsgModifyRemove modify_remove = 1901;</code>
+     * <code>.GCGMsgModifyRemove modify_remove = 1575;</code>
      * @return The modifyRemove.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemove getModifyRemove() {
-      if (messageCase_ == 1901) {
+      if (messageCase_ == 1575) {
          return (emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemove) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemove.getDefaultInstance();
     }
     /**
-     * <code>.GCGMsgModifyRemove modify_remove = 1901;</code>
+     * <code>.GCGMsgModifyRemove modify_remove = 1575;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemoveOrBuilder getModifyRemoveOrBuilder() {
-      if (messageCase_ == 1901) {
+      if (messageCase_ == 1575) {
          return (emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemove) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemove.getDefaultInstance();
     }
 
-    public static final int USE_SKILL_END_FIELD_NUMBER = 1067;
+    public static final int USE_SKILL_END_FIELD_NUMBER = 1426;
     /**
-     * <code>.GCGMsgUseSkillEnd use_skill_end = 1067;</code>
+     * <code>.GCGMsgUseSkillEnd use_skill_end = 1426;</code>
      * @return Whether the useSkillEnd field is set.
      */
     @java.lang.Override
     public boolean hasUseSkillEnd() {
-      return messageCase_ == 1067;
+      return messageCase_ == 1426;
     }
     /**
-     * <code>.GCGMsgUseSkillEnd use_skill_end = 1067;</code>
+     * <code>.GCGMsgUseSkillEnd use_skill_end = 1426;</code>
      * @return The useSkillEnd.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd getUseSkillEnd() {
-      if (messageCase_ == 1067) {
+      if (messageCase_ == 1426) {
          return (emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd.getDefaultInstance();
     }
     /**
-     * <code>.GCGMsgUseSkillEnd use_skill_end = 1067;</code>
+     * <code>.GCGMsgUseSkillEnd use_skill_end = 1426;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEndOrBuilder getUseSkillEndOrBuilder() {
-      if (messageCase_ == 1067) {
+      if (messageCase_ == 1426) {
          return (emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd.getDefaultInstance();
     }
 
-    public static final int DUEL_DATA_CHANGE_FIELD_NUMBER = 686;
+    public static final int DUEL_DATA_CHANGE_FIELD_NUMBER = 526;
     /**
-     * <code>.GCGMsgDuelDataChange duel_data_change = 686;</code>
+     * <code>.GCGMsgDuelDataChange duel_data_change = 526;</code>
      * @return Whether the duelDataChange field is set.
      */
     @java.lang.Override
     public boolean hasDuelDataChange() {
-      return messageCase_ == 686;
+      return messageCase_ == 526;
     }
     /**
-     * <code>.GCGMsgDuelDataChange duel_data_change = 686;</code>
+     * <code>.GCGMsgDuelDataChange duel_data_change = 526;</code>
      * @return The duelDataChange.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange getDuelDataChange() {
-      if (messageCase_ == 686) {
+      if (messageCase_ == 526) {
          return (emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange.getDefaultInstance();
     }
     /**
-     * <code>.GCGMsgDuelDataChange duel_data_change = 686;</code>
+     * <code>.GCGMsgDuelDataChange duel_data_change = 526;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChangeOrBuilder getDuelDataChangeOrBuilder() {
-      if (messageCase_ == 686) {
+      if (messageCase_ == 526) {
          return (emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange.getDefaultInstance();
     }
 
-    public static final int CLIENT_PERFORM_FIELD_NUMBER = 1743;
+    public static final int CLIENT_PERFORM_FIELD_NUMBER = 230;
     /**
-     * <code>.GCGMsgClientPerform client_perform = 1743;</code>
+     * <code>.GCGMsgClientPerform client_perform = 230;</code>
      * @return Whether the clientPerform field is set.
      */
     @java.lang.Override
     public boolean hasClientPerform() {
-      return messageCase_ == 1743;
+      return messageCase_ == 230;
     }
     /**
-     * <code>.GCGMsgClientPerform client_perform = 1743;</code>
+     * <code>.GCGMsgClientPerform client_perform = 230;</code>
      * @return The clientPerform.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.GCGMsgClientPerform getClientPerform() {
-      if (messageCase_ == 1743) {
+      if (messageCase_ == 230) {
          return (emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.GCGMsgClientPerform) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.GCGMsgClientPerform.getDefaultInstance();
     }
     /**
-     * <code>.GCGMsgClientPerform client_perform = 1743;</code>
+     * <code>.GCGMsgClientPerform client_perform = 230;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.GCGMsgClientPerformOrBuilder getClientPerformOrBuilder() {
-      if (messageCase_ == 1743) {
+      if (messageCase_ == 230) {
          return (emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.GCGMsgClientPerform) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.GCGMsgClientPerform.getDefaultInstance();
     }
 
-    public static final int GAME_OVER_FIELD_NUMBER = 1766;
+    public static final int GAME_OVER_FIELD_NUMBER = 900;
     /**
-     * <code>.GCGMsgGameOver game_over = 1766;</code>
+     * <code>.GCGMsgGameOver game_over = 900;</code>
      * @return Whether the gameOver field is set.
      */
     @java.lang.Override
     public boolean hasGameOver() {
-      return messageCase_ == 1766;
+      return messageCase_ == 900;
     }
     /**
-     * <code>.GCGMsgGameOver game_over = 1766;</code>
+     * <code>.GCGMsgGameOver game_over = 900;</code>
      * @return The gameOver.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOver getGameOver() {
-      if (messageCase_ == 1766) {
+      if (messageCase_ == 900) {
          return (emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOver) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOver.getDefaultInstance();
     }
     /**
-     * <code>.GCGMsgGameOver game_over = 1766;</code>
+     * <code>.GCGMsgGameOver game_over = 900;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOverOrBuilder getGameOverOrBuilder() {
-      if (messageCase_ == 1766) {
+      if (messageCase_ == 900) {
          return (emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOver) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOver.getDefaultInstance();
     }
 
-    public static final int OP_TIMER_FIELD_NUMBER = 167;
+    public static final int OP_TIMER_FIELD_NUMBER = 352;
     /**
-     * <pre>
-     *AOHEFFCPELI snooswap
-     * </pre>
-     *
-     * <code>.GCGMsgOpTimer op_timer = 167;</code>
+     * <code>.GCGMsgOpTimer op_timer = 352;</code>
      * @return Whether the opTimer field is set.
      */
     @java.lang.Override
     public boolean hasOpTimer() {
-      return messageCase_ == 167;
+      return messageCase_ == 352;
     }
     /**
-     * <pre>
-     *AOHEFFCPELI snooswap
-     * </pre>
-     *
-     * <code>.GCGMsgOpTimer op_timer = 167;</code>
+     * <code>.GCGMsgOpTimer op_timer = 352;</code>
      * @return The opTimer.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer getOpTimer() {
-      if (messageCase_ == 167) {
+      if (messageCase_ == 352) {
          return (emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer.getDefaultInstance();
     }
     /**
-     * <pre>
-     *AOHEFFCPELI snooswap
-     * </pre>
-     *
-     * <code>.GCGMsgOpTimer op_timer = 167;</code>
+     * <code>.GCGMsgOpTimer op_timer = 352;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimerOrBuilder getOpTimerOrBuilder() {
-      if (messageCase_ == 167) {
+      if (messageCase_ == 352) {
          return (emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer.getDefaultInstance();
     }
 
-    public static final int WAITING_LIST_CHANGE_FIELD_NUMBER = 891;
+    public static final int WAITING_LIST_CHANGE_FIELD_NUMBER = 938;
     /**
-     * <code>.GCGMsgWaitingListChange waiting_list_change = 891;</code>
+     * <code>.GCGMsgWaitingListChange waiting_list_change = 938;</code>
      * @return Whether the waitingListChange field is set.
      */
     @java.lang.Override
     public boolean hasWaitingListChange() {
-      return messageCase_ == 891;
+      return messageCase_ == 938;
     }
     /**
-     * <code>.GCGMsgWaitingListChange waiting_list_change = 891;</code>
+     * <code>.GCGMsgWaitingListChange waiting_list_change = 938;</code>
      * @return The waitingListChange.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange getWaitingListChange() {
-      if (messageCase_ == 891) {
+      if (messageCase_ == 938) {
          return (emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange.getDefaultInstance();
     }
     /**
-     * <code>.GCGMsgWaitingListChange waiting_list_change = 891;</code>
+     * <code>.GCGMsgWaitingListChange waiting_list_change = 938;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChangeOrBuilder getWaitingListChangeOrBuilder() {
-      if (messageCase_ == 891) {
+      if (messageCase_ == 938) {
          return (emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange.getDefaultInstance();
     }
 
-    public static final int CARD_UPDATE_FIELD_NUMBER = 1549;
+    public static final int CARD_UPDATE_FIELD_NUMBER = 594;
     /**
-     * <code>.GCGMsgCardUpdate card_update = 1549;</code>
+     * <code>.GCGMsgCardUpdate card_update = 594;</code>
      * @return Whether the cardUpdate field is set.
      */
     @java.lang.Override
     public boolean hasCardUpdate() {
-      return messageCase_ == 1549;
+      return messageCase_ == 594;
     }
     /**
-     * <code>.GCGMsgCardUpdate card_update = 1549;</code>
+     * <code>.GCGMsgCardUpdate card_update = 594;</code>
      * @return The cardUpdate.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdate getCardUpdate() {
-      if (messageCase_ == 1549) {
+      if (messageCase_ == 594) {
          return (emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdate) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdate.getDefaultInstance();
     }
     /**
-     * <code>.GCGMsgCardUpdate card_update = 1549;</code>
+     * <code>.GCGMsgCardUpdate card_update = 594;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdateOrBuilder getCardUpdateOrBuilder() {
-      if (messageCase_ == 1549) {
+      if (messageCase_ == 594) {
          return (emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdate) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdate.getDefaultInstance();
     }
 
-    public static final int SELECT_ON_STAGE_BY_EFFECT_FIELD_NUMBER = 1093;
+    public static final int SELECT_ON_STAGE_BY_EFFECT_FIELD_NUMBER = 417;
     /**
-     * <code>.GCGMsgSelectOnStageByEffect select_on_stage_by_effect = 1093;</code>
+     * <code>.GCGMsgSelectOnStageByEffect select_on_stage_by_effect = 417;</code>
      * @return Whether the selectOnStageByEffect field is set.
      */
     @java.lang.Override
     public boolean hasSelectOnStageByEffect() {
-      return messageCase_ == 1093;
+      return messageCase_ == 417;
     }
     /**
-     * <code>.GCGMsgSelectOnStageByEffect select_on_stage_by_effect = 1093;</code>
+     * <code>.GCGMsgSelectOnStageByEffect select_on_stage_by_effect = 417;</code>
      * @return The selectOnStageByEffect.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffect getSelectOnStageByEffect() {
-      if (messageCase_ == 1093) {
+      if (messageCase_ == 417) {
          return (emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffect) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffect.getDefaultInstance();
     }
     /**
-     * <code>.GCGMsgSelectOnStageByEffect select_on_stage_by_effect = 1093;</code>
+     * <code>.GCGMsgSelectOnStageByEffect select_on_stage_by_effect = 417;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffectOrBuilder getSelectOnStageByEffectOrBuilder() {
-      if (messageCase_ == 1093) {
+      if (messageCase_ == 417) {
          return (emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffect) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffect.getDefaultInstance();
     }
 
-    public static final int COST_REVISE_FIELD_NUMBER = 1422;
+    public static final int COST_REVISE_FIELD_NUMBER = 1255;
     /**
-     * <code>.GCGMsgCostRevise cost_revise = 1422;</code>
+     * <code>.GCGMsgCostRevise cost_revise = 1255;</code>
      * @return Whether the costRevise field is set.
      */
     @java.lang.Override
     public boolean hasCostRevise() {
-      return messageCase_ == 1422;
+      return messageCase_ == 1255;
     }
     /**
-     * <code>.GCGMsgCostRevise cost_revise = 1422;</code>
+     * <code>.GCGMsgCostRevise cost_revise = 1255;</code>
      * @return The costRevise.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostRevise getCostRevise() {
-      if (messageCase_ == 1422) {
+      if (messageCase_ == 1255) {
          return (emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostRevise) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostRevise.getDefaultInstance();
     }
     /**
-     * <code>.GCGMsgCostRevise cost_revise = 1422;</code>
+     * <code>.GCGMsgCostRevise cost_revise = 1255;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostReviseOrBuilder getCostReviseOrBuilder() {
-      if (messageCase_ == 1422) {
+      if (messageCase_ == 1255) {
          return (emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostRevise) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostRevise.getDefaultInstance();
     }
 
-    public static final int PHASE_CONTINUE_FIELD_NUMBER = 624;
+    public static final int PHASE_CONTINUE_FIELD_NUMBER = 955;
     /**
-     * <code>.GCGMsgPhaseContinue phase_continue = 624;</code>
+     * <code>.GCGMsgPhaseContinue phase_continue = 955;</code>
      * @return Whether the phaseContinue field is set.
      */
     @java.lang.Override
     public boolean hasPhaseContinue() {
-      return messageCase_ == 624;
+      return messageCase_ == 955;
     }
     /**
-     * <code>.GCGMsgPhaseContinue phase_continue = 624;</code>
+     * <code>.GCGMsgPhaseContinue phase_continue = 955;</code>
      * @return The phaseContinue.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinue getPhaseContinue() {
-      if (messageCase_ == 624) {
+      if (messageCase_ == 955) {
          return (emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinue) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinue.getDefaultInstance();
     }
     /**
-     * <code>.GCGMsgPhaseContinue phase_continue = 624;</code>
+     * <code>.GCGMsgPhaseContinue phase_continue = 955;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinueOrBuilder getPhaseContinueOrBuilder() {
-      if (messageCase_ == 624) {
+      if (messageCase_ == 955) {
          return (emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinue) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinue.getDefaultInstance();
     }
 
-    public static final int PVE_INTENTION_INFO_FIELD_NUMBER = 65;
+    public static final int PVE_INTENTION_INFO_FIELD_NUMBER = 1111;
     /**
-     * <code>.GCGMsgPVEIntentionInfo pve_intention_info = 65;</code>
+     * <code>.GCGMsgPVEIntentionInfo pve_intention_info = 1111;</code>
      * @return Whether the pveIntentionInfo field is set.
      */
     @java.lang.Override
     public boolean hasPveIntentionInfo() {
-      return messageCase_ == 65;
+      return messageCase_ == 1111;
     }
     /**
-     * <code>.GCGMsgPVEIntentionInfo pve_intention_info = 65;</code>
+     * <code>.GCGMsgPVEIntentionInfo pve_intention_info = 1111;</code>
      * @return The pveIntentionInfo.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo getPveIntentionInfo() {
-      if (messageCase_ == 65) {
+      if (messageCase_ == 1111) {
          return (emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo.getDefaultInstance();
     }
     /**
-     * <code>.GCGMsgPVEIntentionInfo pve_intention_info = 65;</code>
+     * <code>.GCGMsgPVEIntentionInfo pve_intention_info = 1111;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfoOrBuilder getPveIntentionInfoOrBuilder() {
-      if (messageCase_ == 65) {
+      if (messageCase_ == 1111) {
          return (emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo.getDefaultInstance();
     }
 
-    public static final int PVE_INTENTION_CHANGE_FIELD_NUMBER = 1571;
+    public static final int PVE_INTENTION_CHANGE_FIELD_NUMBER = 189;
     /**
-     * <code>.GCGMsgPVEIntentionChange pve_intention_change = 1571;</code>
+     * <code>.GCGMsgPVEIntentionChange pve_intention_change = 189;</code>
      * @return Whether the pveIntentionChange field is set.
      */
     @java.lang.Override
     public boolean hasPveIntentionChange() {
-      return messageCase_ == 1571;
+      return messageCase_ == 189;
     }
     /**
-     * <code>.GCGMsgPVEIntentionChange pve_intention_change = 1571;</code>
+     * <code>.GCGMsgPVEIntentionChange pve_intention_change = 189;</code>
      * @return The pveIntentionChange.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange getPveIntentionChange() {
-      if (messageCase_ == 1571) {
+      if (messageCase_ == 189) {
          return (emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange.getDefaultInstance();
     }
     /**
-     * <code>.GCGMsgPVEIntentionChange pve_intention_change = 1571;</code>
+     * <code>.GCGMsgPVEIntentionChange pve_intention_change = 189;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChangeOrBuilder getPveIntentionChangeOrBuilder() {
-      if (messageCase_ == 1571) {
+      if (messageCase_ == 189) {
          return (emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange.getDefaultInstance();
     }
 
-    public static final int SKILL_LIMITS_CHANGE_FIELD_NUMBER = 1013;
+    public static final int SKILL_LIMITS_CHANGE_FIELD_NUMBER = 1581;
     /**
-     * <code>.GCGMsgSkillLimitsChange skill_limits_change = 1013;</code>
+     * <code>.GCGMsgSkillLimitsChange skill_limits_change = 1581;</code>
      * @return Whether the skillLimitsChange field is set.
      */
     @java.lang.Override
     public boolean hasSkillLimitsChange() {
-      return messageCase_ == 1013;
+      return messageCase_ == 1581;
     }
     /**
-     * <code>.GCGMsgSkillLimitsChange skill_limits_change = 1013;</code>
+     * <code>.GCGMsgSkillLimitsChange skill_limits_change = 1581;</code>
      * @return The skillLimitsChange.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange getSkillLimitsChange() {
-      if (messageCase_ == 1013) {
+      if (messageCase_ == 1581) {
          return (emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange.getDefaultInstance();
     }
     /**
-     * <code>.GCGMsgSkillLimitsChange skill_limits_change = 1013;</code>
+     * <code>.GCGMsgSkillLimitsChange skill_limits_change = 1581;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChangeOrBuilder getSkillLimitsChangeOrBuilder() {
-      if (messageCase_ == 1013) {
+      if (messageCase_ == 1581) {
          return (emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange.getDefaultInstance();
     }
 
-    public static final int NO_DAMAGE_SKILL_RESULT_FIELD_NUMBER = 1753;
+    public static final int NO_DAMAGE_SKILL_RESULT_FIELD_NUMBER = 1331;
     /**
-     * <code>.GCGMsgNoDamageSkillResult no_damage_skill_result = 1753;</code>
+     * <code>.GCGMsgNoDamageSkillResult no_damage_skill_result = 1331;</code>
      * @return Whether the noDamageSkillResult field is set.
      */
     @java.lang.Override
     public boolean hasNoDamageSkillResult() {
-      return messageCase_ == 1753;
+      return messageCase_ == 1331;
     }
     /**
-     * <code>.GCGMsgNoDamageSkillResult no_damage_skill_result = 1753;</code>
+     * <code>.GCGMsgNoDamageSkillResult no_damage_skill_result = 1331;</code>
      * @return The noDamageSkillResult.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult getNoDamageSkillResult() {
-      if (messageCase_ == 1753) {
+      if (messageCase_ == 1331) {
          return (emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult.getDefaultInstance();
     }
     /**
-     * <code>.GCGMsgNoDamageSkillResult no_damage_skill_result = 1753;</code>
+     * <code>.GCGMsgNoDamageSkillResult no_damage_skill_result = 1331;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResultOrBuilder getNoDamageSkillResultOrBuilder() {
-      if (messageCase_ == 1753) {
+      if (messageCase_ == 1331) {
          return (emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult.getDefaultInstance();
     }
 
-    public static final int REACTION_BEGIN_FIELD_NUMBER = 1386;
+    public static final int REACTION_BEGIN_FIELD_NUMBER = 322;
     /**
-     * <code>.GCGMsgReactionBegin reaction_begin = 1386;</code>
+     * <code>.GCGMsgReactionBegin reaction_begin = 322;</code>
      * @return Whether the reactionBegin field is set.
      */
     @java.lang.Override
     public boolean hasReactionBegin() {
-      return messageCase_ == 1386;
+      return messageCase_ == 322;
     }
     /**
-     * <code>.GCGMsgReactionBegin reaction_begin = 1386;</code>
+     * <code>.GCGMsgReactionBegin reaction_begin = 322;</code>
      * @return The reactionBegin.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin getReactionBegin() {
-      if (messageCase_ == 1386) {
+      if (messageCase_ == 322) {
          return (emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin.getDefaultInstance();
     }
     /**
-     * <code>.GCGMsgReactionBegin reaction_begin = 1386;</code>
+     * <code>.GCGMsgReactionBegin reaction_begin = 322;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBeginOrBuilder getReactionBeginOrBuilder() {
-      if (messageCase_ == 1386) {
+      if (messageCase_ == 322) {
          return (emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin.getDefaultInstance();
     }
 
-    public static final int REACTION_END_FIELD_NUMBER = 1304;
+    public static final int REACTION_END_FIELD_NUMBER = 1565;
     /**
-     * <code>.GCGMsgReactionEnd reaction_end = 1304;</code>
+     * <code>.GCGMsgReactionEnd reaction_end = 1565;</code>
      * @return Whether the reactionEnd field is set.
      */
     @java.lang.Override
     public boolean hasReactionEnd() {
-      return messageCase_ == 1304;
+      return messageCase_ == 1565;
     }
     /**
-     * <code>.GCGMsgReactionEnd reaction_end = 1304;</code>
+     * <code>.GCGMsgReactionEnd reaction_end = 1565;</code>
      * @return The reactionEnd.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd getReactionEnd() {
-      if (messageCase_ == 1304) {
+      if (messageCase_ == 1565) {
          return (emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd.getDefaultInstance();
     }
     /**
-     * <code>.GCGMsgReactionEnd reaction_end = 1304;</code>
+     * <code>.GCGMsgReactionEnd reaction_end = 1565;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEndOrBuilder getReactionEndOrBuilder() {
-      if (messageCase_ == 1304) {
+      if (messageCase_ == 1565) {
          return (emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd) message_;
       }
       return emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd.getDefaultInstance();
@@ -2332,107 +2198,104 @@ public final class GCGMessageOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (messageCase_ == 1) {
-        output.writeMessage(1, (emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice) message_);
-      }
       if (messageCase_ == 2) {
-        output.writeMessage(2, (emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange) message_);
+        output.writeMessage(2, (emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage) message_);
       }
       if (messageCase_ == 3) {
-        output.writeMessage(3, (emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie) message_);
+        output.writeMessage(3, (emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll) message_);
       }
       if (messageCase_ == 4) {
-        output.writeMessage(4, (emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDice) message_);
+        output.writeMessage(4, (emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCards) message_);
       }
       if (messageCase_ == 5) {
-        output.writeMessage(5, (emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult) message_);
+        output.writeMessage(5, (emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCards) message_);
       }
       if (messageCase_ == 6) {
         output.writeMessage(6, (emu.grasscutter.net.proto.GCGMsgTokenChangeOuterClass.GCGMsgTokenChange) message_);
       }
       if (messageCase_ == 7) {
-        output.writeMessage(7, (emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill) message_);
+        output.writeMessage(7, (emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange) message_);
       }
       if (messageCase_ == 8) {
-        output.writeMessage(8, (emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage) message_);
+        output.writeMessage(8, (emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPass) message_);
       }
       if (messageCase_ == 10) {
-        output.writeMessage(10, (emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCards) message_);
+        output.writeMessage(10, (emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult) message_);
       }
       if (messageCase_ == 11) {
-        output.writeMessage(11, (emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPass) message_);
+        output.writeMessage(11, (emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice) message_);
       }
       if (messageCase_ == 12) {
         output.writeMessage(12, (emu.grasscutter.net.proto.GCGMsgMoveCardOuterClass.GCGMsgMoveCard) message_);
       }
       if (messageCase_ == 13) {
-        output.writeMessage(13, (emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll) message_);
+        output.writeMessage(13, (emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill) message_);
       }
       if (messageCase_ == 14) {
-        output.writeMessage(14, (emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCards) message_);
+        output.writeMessage(14, (emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDice) message_);
       }
       if (messageCase_ == 15) {
         output.writeMessage(15, (emu.grasscutter.net.proto.GCGMsgDiceRerollOuterClass.GCGMsgDiceReroll) message_);
       }
-      if (messageCase_ == 65) {
-        output.writeMessage(65, (emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo) message_);
+      if (messageCase_ == 189) {
+        output.writeMessage(189, (emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange) message_);
       }
-      if (messageCase_ == 167) {
-        output.writeMessage(167, (emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer) message_);
+      if (messageCase_ == 230) {
+        output.writeMessage(230, (emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.GCGMsgClientPerform) message_);
       }
-      if (messageCase_ == 555) {
-        output.writeMessage(555, (emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAdd) message_);
+      if (messageCase_ == 322) {
+        output.writeMessage(322, (emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin) message_);
       }
-      if (messageCase_ == 624) {
-        output.writeMessage(624, (emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinue) message_);
+      if (messageCase_ == 352) {
+        output.writeMessage(352, (emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer) message_);
       }
-      if (messageCase_ == 686) {
-        output.writeMessage(686, (emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange) message_);
+      if (messageCase_ == 417) {
+        output.writeMessage(417, (emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffect) message_);
       }
-      if (messageCase_ == 891) {
-        output.writeMessage(891, (emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange) message_);
+      if (messageCase_ == 526) {
+        output.writeMessage(526, (emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange) message_);
       }
-      if (messageCase_ == 1013) {
-        output.writeMessage(1013, (emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange) message_);
+      if (messageCase_ == 594) {
+        output.writeMessage(594, (emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdate) message_);
       }
-      if (messageCase_ == 1067) {
-        output.writeMessage(1067, (emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd) message_);
+      if (messageCase_ == 900) {
+        output.writeMessage(900, (emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOver) message_);
       }
-      if (messageCase_ == 1093) {
-        output.writeMessage(1093, (emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffect) message_);
+      if (messageCase_ == 938) {
+        output.writeMessage(938, (emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange) message_);
       }
-      if (messageCase_ == 1304) {
-        output.writeMessage(1304, (emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd) message_);
+      if (messageCase_ == 955) {
+        output.writeMessage(955, (emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinue) message_);
       }
-      if (messageCase_ == 1386) {
-        output.writeMessage(1386, (emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin) message_);
+      if (messageCase_ == 1111) {
+        output.writeMessage(1111, (emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo) message_);
       }
-      if (messageCase_ == 1422) {
-        output.writeMessage(1422, (emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostRevise) message_);
+      if (messageCase_ == 1135) {
+        output.writeMessage(1135, (emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController) message_);
       }
-      if (messageCase_ == 1549) {
-        output.writeMessage(1549, (emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdate) message_);
+      if (messageCase_ == 1229) {
+        output.writeMessage(1229, (emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard) message_);
       }
-      if (messageCase_ == 1571) {
-        output.writeMessage(1571, (emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange) message_);
+      if (messageCase_ == 1255) {
+        output.writeMessage(1255, (emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostRevise) message_);
       }
-      if (messageCase_ == 1698) {
-        output.writeMessage(1698, (emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard) message_);
+      if (messageCase_ == 1331) {
+        output.writeMessage(1331, (emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult) message_);
       }
-      if (messageCase_ == 1743) {
-        output.writeMessage(1743, (emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.GCGMsgClientPerform) message_);
+      if (messageCase_ == 1426) {
+        output.writeMessage(1426, (emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd) message_);
       }
-      if (messageCase_ == 1753) {
-        output.writeMessage(1753, (emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult) message_);
+      if (messageCase_ == 1437) {
+        output.writeMessage(1437, (emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAdd) message_);
       }
-      if (messageCase_ == 1766) {
-        output.writeMessage(1766, (emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOver) message_);
+      if (messageCase_ == 1565) {
+        output.writeMessage(1565, (emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd) message_);
       }
-      if (messageCase_ == 1901) {
-        output.writeMessage(1901, (emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemove) message_);
+      if (messageCase_ == 1575) {
+        output.writeMessage(1575, (emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemove) message_);
       }
-      if (messageCase_ == 2016) {
-        output.writeMessage(2016, (emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController) message_);
+      if (messageCase_ == 1581) {
+        output.writeMessage(1581, (emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange) message_);
       }
       unknownFields.writeTo(output);
     }
@@ -2443,25 +2306,21 @@ public final class GCGMessageOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (messageCase_ == 1) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, (emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice) message_);
-      }
       if (messageCase_ == 2) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, (emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange) message_);
+          .computeMessageSize(2, (emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage) message_);
       }
       if (messageCase_ == 3) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, (emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie) message_);
+          .computeMessageSize(3, (emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll) message_);
       }
       if (messageCase_ == 4) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, (emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDice) message_);
+          .computeMessageSize(4, (emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCards) message_);
       }
       if (messageCase_ == 5) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, (emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult) message_);
+          .computeMessageSize(5, (emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCards) message_);
       }
       if (messageCase_ == 6) {
         size += com.google.protobuf.CodedOutputStream
@@ -2469,19 +2328,19 @@ public final class GCGMessageOuterClass {
       }
       if (messageCase_ == 7) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, (emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill) message_);
+          .computeMessageSize(7, (emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange) message_);
       }
       if (messageCase_ == 8) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, (emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage) message_);
+          .computeMessageSize(8, (emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPass) message_);
       }
       if (messageCase_ == 10) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, (emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCards) message_);
+          .computeMessageSize(10, (emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult) message_);
       }
       if (messageCase_ == 11) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, (emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPass) message_);
+          .computeMessageSize(11, (emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice) message_);
       }
       if (messageCase_ == 12) {
         size += com.google.protobuf.CodedOutputStream
@@ -2489,95 +2348,95 @@ public final class GCGMessageOuterClass {
       }
       if (messageCase_ == 13) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, (emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll) message_);
+          .computeMessageSize(13, (emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill) message_);
       }
       if (messageCase_ == 14) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, (emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCards) message_);
+          .computeMessageSize(14, (emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDice) message_);
       }
       if (messageCase_ == 15) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(15, (emu.grasscutter.net.proto.GCGMsgDiceRerollOuterClass.GCGMsgDiceReroll) message_);
       }
-      if (messageCase_ == 65) {
+      if (messageCase_ == 189) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(65, (emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo) message_);
+          .computeMessageSize(189, (emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange) message_);
       }
-      if (messageCase_ == 167) {
+      if (messageCase_ == 230) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(167, (emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer) message_);
+          .computeMessageSize(230, (emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.GCGMsgClientPerform) message_);
       }
-      if (messageCase_ == 555) {
+      if (messageCase_ == 322) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(555, (emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAdd) message_);
+          .computeMessageSize(322, (emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin) message_);
       }
-      if (messageCase_ == 624) {
+      if (messageCase_ == 352) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(624, (emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinue) message_);
+          .computeMessageSize(352, (emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer) message_);
       }
-      if (messageCase_ == 686) {
+      if (messageCase_ == 417) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(686, (emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange) message_);
+          .computeMessageSize(417, (emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffect) message_);
       }
-      if (messageCase_ == 891) {
+      if (messageCase_ == 526) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(891, (emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange) message_);
+          .computeMessageSize(526, (emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange) message_);
       }
-      if (messageCase_ == 1013) {
+      if (messageCase_ == 594) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1013, (emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange) message_);
+          .computeMessageSize(594, (emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdate) message_);
       }
-      if (messageCase_ == 1067) {
+      if (messageCase_ == 900) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1067, (emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd) message_);
+          .computeMessageSize(900, (emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOver) message_);
       }
-      if (messageCase_ == 1093) {
+      if (messageCase_ == 938) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1093, (emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffect) message_);
+          .computeMessageSize(938, (emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange) message_);
       }
-      if (messageCase_ == 1304) {
+      if (messageCase_ == 955) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1304, (emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd) message_);
+          .computeMessageSize(955, (emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinue) message_);
       }
-      if (messageCase_ == 1386) {
+      if (messageCase_ == 1111) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1386, (emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin) message_);
+          .computeMessageSize(1111, (emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo) message_);
       }
-      if (messageCase_ == 1422) {
+      if (messageCase_ == 1135) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1422, (emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostRevise) message_);
+          .computeMessageSize(1135, (emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController) message_);
       }
-      if (messageCase_ == 1549) {
+      if (messageCase_ == 1229) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1549, (emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdate) message_);
+          .computeMessageSize(1229, (emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard) message_);
       }
-      if (messageCase_ == 1571) {
+      if (messageCase_ == 1255) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1571, (emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange) message_);
+          .computeMessageSize(1255, (emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostRevise) message_);
       }
-      if (messageCase_ == 1698) {
+      if (messageCase_ == 1331) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1698, (emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard) message_);
+          .computeMessageSize(1331, (emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult) message_);
       }
-      if (messageCase_ == 1743) {
+      if (messageCase_ == 1426) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1743, (emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.GCGMsgClientPerform) message_);
+          .computeMessageSize(1426, (emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd) message_);
       }
-      if (messageCase_ == 1753) {
+      if (messageCase_ == 1437) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1753, (emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult) message_);
+          .computeMessageSize(1437, (emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAdd) message_);
       }
-      if (messageCase_ == 1766) {
+      if (messageCase_ == 1565) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1766, (emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOver) message_);
+          .computeMessageSize(1565, (emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd) message_);
       }
-      if (messageCase_ == 1901) {
+      if (messageCase_ == 1575) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1901, (emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemove) message_);
+          .computeMessageSize(1575, (emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemove) message_);
       }
-      if (messageCase_ == 2016) {
+      if (messageCase_ == 1581) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2016, (emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController) message_);
+          .computeMessageSize(1581, (emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange) message_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -2600,23 +2459,23 @@ public final class GCGMessageOuterClass {
           if (!getTokenChange()
               .equals(other.getTokenChange())) return false;
           break;
-        case 2:
+        case 7:
           if (!getPhaseChange()
               .equals(other.getPhaseChange())) return false;
           break;
-        case 14:
+        case 4:
           if (!getAddCards()
               .equals(other.getAddCards())) return false;
           break;
-        case 10:
+        case 5:
           if (!getRemoveCards()
               .equals(other.getRemoveCards())) return false;
           break;
-        case 8:
+        case 2:
           if (!getSelectOnStage()
               .equals(other.getSelectOnStage())) return false;
           break;
-        case 13:
+        case 3:
           if (!getDiceRoll()
               .equals(other.getDiceRoll())) return false;
           break;
@@ -2624,23 +2483,19 @@ public final class GCGMessageOuterClass {
           if (!getDiceReroll()
               .equals(other.getDiceReroll())) return false;
           break;
-        case 11:
+        case 8:
           if (!getPass()
               .equals(other.getPass())) return false;
           break;
-        case 3:
-          if (!getCharDie()
-              .equals(other.getCharDie())) return false;
-          break;
-        case 5:
+        case 10:
           if (!getSkillResult()
               .equals(other.getSkillResult())) return false;
           break;
-        case 4:
+        case 14:
           if (!getCostDice()
               .equals(other.getCostDice())) return false;
           break;
-        case 1:
+        case 11:
           if (!getAddDice()
               .equals(other.getAddDice())) return false;
           break;
@@ -2648,87 +2503,87 @@ public final class GCGMessageOuterClass {
           if (!getMoveCard()
               .equals(other.getMoveCard())) return false;
           break;
-        case 7:
+        case 13:
           if (!getUseSkill()
               .equals(other.getUseSkill())) return false;
           break;
-        case 1698:
+        case 1229:
           if (!getNewCard()
               .equals(other.getNewCard())) return false;
           break;
-        case 2016:
+        case 1135:
           if (!getUpdateController()
               .equals(other.getUpdateController())) return false;
           break;
-        case 555:
+        case 1437:
           if (!getModifyAdd()
               .equals(other.getModifyAdd())) return false;
           break;
-        case 1901:
+        case 1575:
           if (!getModifyRemove()
               .equals(other.getModifyRemove())) return false;
           break;
-        case 1067:
+        case 1426:
           if (!getUseSkillEnd()
               .equals(other.getUseSkillEnd())) return false;
           break;
-        case 686:
+        case 526:
           if (!getDuelDataChange()
               .equals(other.getDuelDataChange())) return false;
           break;
-        case 1743:
+        case 230:
           if (!getClientPerform()
               .equals(other.getClientPerform())) return false;
           break;
-        case 1766:
+        case 900:
           if (!getGameOver()
               .equals(other.getGameOver())) return false;
           break;
-        case 167:
+        case 352:
           if (!getOpTimer()
               .equals(other.getOpTimer())) return false;
           break;
-        case 891:
+        case 938:
           if (!getWaitingListChange()
               .equals(other.getWaitingListChange())) return false;
           break;
-        case 1549:
+        case 594:
           if (!getCardUpdate()
               .equals(other.getCardUpdate())) return false;
           break;
-        case 1093:
+        case 417:
           if (!getSelectOnStageByEffect()
               .equals(other.getSelectOnStageByEffect())) return false;
           break;
-        case 1422:
+        case 1255:
           if (!getCostRevise()
               .equals(other.getCostRevise())) return false;
           break;
-        case 624:
+        case 955:
           if (!getPhaseContinue()
               .equals(other.getPhaseContinue())) return false;
           break;
-        case 65:
+        case 1111:
           if (!getPveIntentionInfo()
               .equals(other.getPveIntentionInfo())) return false;
           break;
-        case 1571:
+        case 189:
           if (!getPveIntentionChange()
               .equals(other.getPveIntentionChange())) return false;
           break;
-        case 1013:
+        case 1581:
           if (!getSkillLimitsChange()
               .equals(other.getSkillLimitsChange())) return false;
           break;
-        case 1753:
+        case 1331:
           if (!getNoDamageSkillResult()
               .equals(other.getNoDamageSkillResult())) return false;
           break;
-        case 1386:
+        case 322:
           if (!getReactionBegin()
               .equals(other.getReactionBegin())) return false;
           break;
-        case 1304:
+        case 1565:
           if (!getReactionEnd()
               .equals(other.getReactionEnd())) return false;
           break;
@@ -2751,23 +2606,23 @@ public final class GCGMessageOuterClass {
           hash = (37 * hash) + TOKEN_CHANGE_FIELD_NUMBER;
           hash = (53 * hash) + getTokenChange().hashCode();
           break;
-        case 2:
+        case 7:
           hash = (37 * hash) + PHASE_CHANGE_FIELD_NUMBER;
           hash = (53 * hash) + getPhaseChange().hashCode();
           break;
-        case 14:
+        case 4:
           hash = (37 * hash) + ADD_CARDS_FIELD_NUMBER;
           hash = (53 * hash) + getAddCards().hashCode();
           break;
-        case 10:
+        case 5:
           hash = (37 * hash) + REMOVE_CARDS_FIELD_NUMBER;
           hash = (53 * hash) + getRemoveCards().hashCode();
           break;
-        case 8:
+        case 2:
           hash = (37 * hash) + SELECT_ON_STAGE_FIELD_NUMBER;
           hash = (53 * hash) + getSelectOnStage().hashCode();
           break;
-        case 13:
+        case 3:
           hash = (37 * hash) + DICE_ROLL_FIELD_NUMBER;
           hash = (53 * hash) + getDiceRoll().hashCode();
           break;
@@ -2775,23 +2630,19 @@ public final class GCGMessageOuterClass {
           hash = (37 * hash) + DICE_REROLL_FIELD_NUMBER;
           hash = (53 * hash) + getDiceReroll().hashCode();
           break;
-        case 11:
+        case 8:
           hash = (37 * hash) + PASS_FIELD_NUMBER;
           hash = (53 * hash) + getPass().hashCode();
           break;
-        case 3:
-          hash = (37 * hash) + CHAR_DIE_FIELD_NUMBER;
-          hash = (53 * hash) + getCharDie().hashCode();
-          break;
-        case 5:
+        case 10:
           hash = (37 * hash) + SKILL_RESULT_FIELD_NUMBER;
           hash = (53 * hash) + getSkillResult().hashCode();
           break;
-        case 4:
+        case 14:
           hash = (37 * hash) + COST_DICE_FIELD_NUMBER;
           hash = (53 * hash) + getCostDice().hashCode();
           break;
-        case 1:
+        case 11:
           hash = (37 * hash) + ADD_DICE_FIELD_NUMBER;
           hash = (53 * hash) + getAddDice().hashCode();
           break;
@@ -2799,87 +2650,87 @@ public final class GCGMessageOuterClass {
           hash = (37 * hash) + MOVE_CARD_FIELD_NUMBER;
           hash = (53 * hash) + getMoveCard().hashCode();
           break;
-        case 7:
+        case 13:
           hash = (37 * hash) + USE_SKILL_FIELD_NUMBER;
           hash = (53 * hash) + getUseSkill().hashCode();
           break;
-        case 1698:
+        case 1229:
           hash = (37 * hash) + NEW_CARD_FIELD_NUMBER;
           hash = (53 * hash) + getNewCard().hashCode();
           break;
-        case 2016:
+        case 1135:
           hash = (37 * hash) + UPDATE_CONTROLLER_FIELD_NUMBER;
           hash = (53 * hash) + getUpdateController().hashCode();
           break;
-        case 555:
+        case 1437:
           hash = (37 * hash) + MODIFY_ADD_FIELD_NUMBER;
           hash = (53 * hash) + getModifyAdd().hashCode();
           break;
-        case 1901:
+        case 1575:
           hash = (37 * hash) + MODIFY_REMOVE_FIELD_NUMBER;
           hash = (53 * hash) + getModifyRemove().hashCode();
           break;
-        case 1067:
+        case 1426:
           hash = (37 * hash) + USE_SKILL_END_FIELD_NUMBER;
           hash = (53 * hash) + getUseSkillEnd().hashCode();
           break;
-        case 686:
+        case 526:
           hash = (37 * hash) + DUEL_DATA_CHANGE_FIELD_NUMBER;
           hash = (53 * hash) + getDuelDataChange().hashCode();
           break;
-        case 1743:
+        case 230:
           hash = (37 * hash) + CLIENT_PERFORM_FIELD_NUMBER;
           hash = (53 * hash) + getClientPerform().hashCode();
           break;
-        case 1766:
+        case 900:
           hash = (37 * hash) + GAME_OVER_FIELD_NUMBER;
           hash = (53 * hash) + getGameOver().hashCode();
           break;
-        case 167:
+        case 352:
           hash = (37 * hash) + OP_TIMER_FIELD_NUMBER;
           hash = (53 * hash) + getOpTimer().hashCode();
           break;
-        case 891:
+        case 938:
           hash = (37 * hash) + WAITING_LIST_CHANGE_FIELD_NUMBER;
           hash = (53 * hash) + getWaitingListChange().hashCode();
           break;
-        case 1549:
+        case 594:
           hash = (37 * hash) + CARD_UPDATE_FIELD_NUMBER;
           hash = (53 * hash) + getCardUpdate().hashCode();
           break;
-        case 1093:
+        case 417:
           hash = (37 * hash) + SELECT_ON_STAGE_BY_EFFECT_FIELD_NUMBER;
           hash = (53 * hash) + getSelectOnStageByEffect().hashCode();
           break;
-        case 1422:
+        case 1255:
           hash = (37 * hash) + COST_REVISE_FIELD_NUMBER;
           hash = (53 * hash) + getCostRevise().hashCode();
           break;
-        case 624:
+        case 955:
           hash = (37 * hash) + PHASE_CONTINUE_FIELD_NUMBER;
           hash = (53 * hash) + getPhaseContinue().hashCode();
           break;
-        case 65:
+        case 1111:
           hash = (37 * hash) + PVE_INTENTION_INFO_FIELD_NUMBER;
           hash = (53 * hash) + getPveIntentionInfo().hashCode();
           break;
-        case 1571:
+        case 189:
           hash = (37 * hash) + PVE_INTENTION_CHANGE_FIELD_NUMBER;
           hash = (53 * hash) + getPveIntentionChange().hashCode();
           break;
-        case 1013:
+        case 1581:
           hash = (37 * hash) + SKILL_LIMITS_CHANGE_FIELD_NUMBER;
           hash = (53 * hash) + getSkillLimitsChange().hashCode();
           break;
-        case 1753:
+        case 1331:
           hash = (37 * hash) + NO_DAMAGE_SKILL_RESULT_FIELD_NUMBER;
           hash = (53 * hash) + getNoDamageSkillResult().hashCode();
           break;
-        case 1386:
+        case 322:
           hash = (37 * hash) + REACTION_BEGIN_FIELD_NUMBER;
           hash = (53 * hash) + getReactionBegin().hashCode();
           break;
-        case 1304:
+        case 1565:
           hash = (37 * hash) + REACTION_END_FIELD_NUMBER;
           hash = (53 * hash) + getReactionEnd().hashCode();
           break;
@@ -2983,7 +2834,7 @@ public final class GCGMessageOuterClass {
     }
     /**
      * <pre>
-     * Name: NDDAOOGOECF
+     * Obf: IKBFDMLBONN
      * </pre>
      *
      * Protobuf type {@code GCGMessage}
@@ -3058,35 +2909,35 @@ public final class GCGMessageOuterClass {
             result.message_ = tokenChangeBuilder_.build();
           }
         }
-        if (messageCase_ == 2) {
+        if (messageCase_ == 7) {
           if (phaseChangeBuilder_ == null) {
             result.message_ = message_;
           } else {
             result.message_ = phaseChangeBuilder_.build();
           }
         }
-        if (messageCase_ == 14) {
+        if (messageCase_ == 4) {
           if (addCardsBuilder_ == null) {
             result.message_ = message_;
           } else {
             result.message_ = addCardsBuilder_.build();
           }
         }
-        if (messageCase_ == 10) {
+        if (messageCase_ == 5) {
           if (removeCardsBuilder_ == null) {
             result.message_ = message_;
           } else {
             result.message_ = removeCardsBuilder_.build();
           }
         }
-        if (messageCase_ == 8) {
+        if (messageCase_ == 2) {
           if (selectOnStageBuilder_ == null) {
             result.message_ = message_;
           } else {
             result.message_ = selectOnStageBuilder_.build();
           }
         }
-        if (messageCase_ == 13) {
+        if (messageCase_ == 3) {
           if (diceRollBuilder_ == null) {
             result.message_ = message_;
           } else {
@@ -3100,35 +2951,28 @@ public final class GCGMessageOuterClass {
             result.message_ = diceRerollBuilder_.build();
           }
         }
-        if (messageCase_ == 11) {
+        if (messageCase_ == 8) {
           if (passBuilder_ == null) {
             result.message_ = message_;
           } else {
             result.message_ = passBuilder_.build();
           }
         }
-        if (messageCase_ == 3) {
-          if (charDieBuilder_ == null) {
-            result.message_ = message_;
-          } else {
-            result.message_ = charDieBuilder_.build();
-          }
-        }
-        if (messageCase_ == 5) {
+        if (messageCase_ == 10) {
           if (skillResultBuilder_ == null) {
             result.message_ = message_;
           } else {
             result.message_ = skillResultBuilder_.build();
           }
         }
-        if (messageCase_ == 4) {
+        if (messageCase_ == 14) {
           if (costDiceBuilder_ == null) {
             result.message_ = message_;
           } else {
             result.message_ = costDiceBuilder_.build();
           }
         }
-        if (messageCase_ == 1) {
+        if (messageCase_ == 11) {
           if (addDiceBuilder_ == null) {
             result.message_ = message_;
           } else {
@@ -3142,147 +2986,147 @@ public final class GCGMessageOuterClass {
             result.message_ = moveCardBuilder_.build();
           }
         }
-        if (messageCase_ == 7) {
+        if (messageCase_ == 13) {
           if (useSkillBuilder_ == null) {
             result.message_ = message_;
           } else {
             result.message_ = useSkillBuilder_.build();
           }
         }
-        if (messageCase_ == 1698) {
+        if (messageCase_ == 1229) {
           if (newCardBuilder_ == null) {
             result.message_ = message_;
           } else {
             result.message_ = newCardBuilder_.build();
           }
         }
-        if (messageCase_ == 2016) {
+        if (messageCase_ == 1135) {
           if (updateControllerBuilder_ == null) {
             result.message_ = message_;
           } else {
             result.message_ = updateControllerBuilder_.build();
           }
         }
-        if (messageCase_ == 555) {
+        if (messageCase_ == 1437) {
           if (modifyAddBuilder_ == null) {
             result.message_ = message_;
           } else {
             result.message_ = modifyAddBuilder_.build();
           }
         }
-        if (messageCase_ == 1901) {
+        if (messageCase_ == 1575) {
           if (modifyRemoveBuilder_ == null) {
             result.message_ = message_;
           } else {
             result.message_ = modifyRemoveBuilder_.build();
           }
         }
-        if (messageCase_ == 1067) {
+        if (messageCase_ == 1426) {
           if (useSkillEndBuilder_ == null) {
             result.message_ = message_;
           } else {
             result.message_ = useSkillEndBuilder_.build();
           }
         }
-        if (messageCase_ == 686) {
+        if (messageCase_ == 526) {
           if (duelDataChangeBuilder_ == null) {
             result.message_ = message_;
           } else {
             result.message_ = duelDataChangeBuilder_.build();
           }
         }
-        if (messageCase_ == 1743) {
+        if (messageCase_ == 230) {
           if (clientPerformBuilder_ == null) {
             result.message_ = message_;
           } else {
             result.message_ = clientPerformBuilder_.build();
           }
         }
-        if (messageCase_ == 1766) {
+        if (messageCase_ == 900) {
           if (gameOverBuilder_ == null) {
             result.message_ = message_;
           } else {
             result.message_ = gameOverBuilder_.build();
           }
         }
-        if (messageCase_ == 167) {
+        if (messageCase_ == 352) {
           if (opTimerBuilder_ == null) {
             result.message_ = message_;
           } else {
             result.message_ = opTimerBuilder_.build();
           }
         }
-        if (messageCase_ == 891) {
+        if (messageCase_ == 938) {
           if (waitingListChangeBuilder_ == null) {
             result.message_ = message_;
           } else {
             result.message_ = waitingListChangeBuilder_.build();
           }
         }
-        if (messageCase_ == 1549) {
+        if (messageCase_ == 594) {
           if (cardUpdateBuilder_ == null) {
             result.message_ = message_;
           } else {
             result.message_ = cardUpdateBuilder_.build();
           }
         }
-        if (messageCase_ == 1093) {
+        if (messageCase_ == 417) {
           if (selectOnStageByEffectBuilder_ == null) {
             result.message_ = message_;
           } else {
             result.message_ = selectOnStageByEffectBuilder_.build();
           }
         }
-        if (messageCase_ == 1422) {
+        if (messageCase_ == 1255) {
           if (costReviseBuilder_ == null) {
             result.message_ = message_;
           } else {
             result.message_ = costReviseBuilder_.build();
           }
         }
-        if (messageCase_ == 624) {
+        if (messageCase_ == 955) {
           if (phaseContinueBuilder_ == null) {
             result.message_ = message_;
           } else {
             result.message_ = phaseContinueBuilder_.build();
           }
         }
-        if (messageCase_ == 65) {
+        if (messageCase_ == 1111) {
           if (pveIntentionInfoBuilder_ == null) {
             result.message_ = message_;
           } else {
             result.message_ = pveIntentionInfoBuilder_.build();
           }
         }
-        if (messageCase_ == 1571) {
+        if (messageCase_ == 189) {
           if (pveIntentionChangeBuilder_ == null) {
             result.message_ = message_;
           } else {
             result.message_ = pveIntentionChangeBuilder_.build();
           }
         }
-        if (messageCase_ == 1013) {
+        if (messageCase_ == 1581) {
           if (skillLimitsChangeBuilder_ == null) {
             result.message_ = message_;
           } else {
             result.message_ = skillLimitsChangeBuilder_.build();
           }
         }
-        if (messageCase_ == 1753) {
+        if (messageCase_ == 1331) {
           if (noDamageSkillResultBuilder_ == null) {
             result.message_ = message_;
           } else {
             result.message_ = noDamageSkillResultBuilder_.build();
           }
         }
-        if (messageCase_ == 1386) {
+        if (messageCase_ == 322) {
           if (reactionBeginBuilder_ == null) {
             result.message_ = message_;
           } else {
             result.message_ = reactionBeginBuilder_.build();
           }
         }
-        if (messageCase_ == 1304) {
+        if (messageCase_ == 1565) {
           if (reactionEndBuilder_ == null) {
             result.message_ = message_;
           } else {
@@ -3369,10 +3213,6 @@ public final class GCGMessageOuterClass {
           }
           case PASS: {
             mergePass(other.getPass());
-            break;
-          }
-          case CHAR_DIE: {
-            mergeCharDie(other.getCharDie());
             break;
           }
           case SKILL_RESULT: {
@@ -3667,45 +3507,33 @@ public final class GCGMessageOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange, emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange.Builder, emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChangeOrBuilder> phaseChangeBuilder_;
       /**
-       * <pre>
-       *LNDLOPKJALI snooswap
-       * </pre>
-       *
-       * <code>.GCGMsgPhaseChange phase_change = 2;</code>
+       * <code>.GCGMsgPhaseChange phase_change = 7;</code>
        * @return Whether the phaseChange field is set.
        */
       @java.lang.Override
       public boolean hasPhaseChange() {
-        return messageCase_ == 2;
+        return messageCase_ == 7;
       }
       /**
-       * <pre>
-       *LNDLOPKJALI snooswap
-       * </pre>
-       *
-       * <code>.GCGMsgPhaseChange phase_change = 2;</code>
+       * <code>.GCGMsgPhaseChange phase_change = 7;</code>
        * @return The phaseChange.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange getPhaseChange() {
         if (phaseChangeBuilder_ == null) {
-          if (messageCase_ == 2) {
+          if (messageCase_ == 7) {
             return (emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange.getDefaultInstance();
         } else {
-          if (messageCase_ == 2) {
+          if (messageCase_ == 7) {
             return phaseChangeBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange.getDefaultInstance();
         }
       }
       /**
-       * <pre>
-       *LNDLOPKJALI snooswap
-       * </pre>
-       *
-       * <code>.GCGMsgPhaseChange phase_change = 2;</code>
+       * <code>.GCGMsgPhaseChange phase_change = 7;</code>
        */
       public Builder setPhaseChange(emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange value) {
         if (phaseChangeBuilder_ == null) {
@@ -3717,15 +3545,11 @@ public final class GCGMessageOuterClass {
         } else {
           phaseChangeBuilder_.setMessage(value);
         }
-        messageCase_ = 2;
+        messageCase_ = 7;
         return this;
       }
       /**
-       * <pre>
-       *LNDLOPKJALI snooswap
-       * </pre>
-       *
-       * <code>.GCGMsgPhaseChange phase_change = 2;</code>
+       * <code>.GCGMsgPhaseChange phase_change = 7;</code>
        */
       public Builder setPhaseChange(
           emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange.Builder builderForValue) {
@@ -3735,19 +3559,15 @@ public final class GCGMessageOuterClass {
         } else {
           phaseChangeBuilder_.setMessage(builderForValue.build());
         }
-        messageCase_ = 2;
+        messageCase_ = 7;
         return this;
       }
       /**
-       * <pre>
-       *LNDLOPKJALI snooswap
-       * </pre>
-       *
-       * <code>.GCGMsgPhaseChange phase_change = 2;</code>
+       * <code>.GCGMsgPhaseChange phase_change = 7;</code>
        */
       public Builder mergePhaseChange(emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange value) {
         if (phaseChangeBuilder_ == null) {
-          if (messageCase_ == 2 &&
+          if (messageCase_ == 7 &&
               message_ != emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange.getDefaultInstance()) {
             message_ = emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange.newBuilder((emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange) message_)
                 .mergeFrom(value).buildPartial();
@@ -3756,30 +3576,26 @@ public final class GCGMessageOuterClass {
           }
           onChanged();
         } else {
-          if (messageCase_ == 2) {
+          if (messageCase_ == 7) {
             phaseChangeBuilder_.mergeFrom(value);
           }
           phaseChangeBuilder_.setMessage(value);
         }
-        messageCase_ = 2;
+        messageCase_ = 7;
         return this;
       }
       /**
-       * <pre>
-       *LNDLOPKJALI snooswap
-       * </pre>
-       *
-       * <code>.GCGMsgPhaseChange phase_change = 2;</code>
+       * <code>.GCGMsgPhaseChange phase_change = 7;</code>
        */
       public Builder clearPhaseChange() {
         if (phaseChangeBuilder_ == null) {
-          if (messageCase_ == 2) {
+          if (messageCase_ == 7) {
             messageCase_ = 0;
             message_ = null;
             onChanged();
           }
         } else {
-          if (messageCase_ == 2) {
+          if (messageCase_ == 7) {
             messageCase_ = 0;
             message_ = null;
           }
@@ -3788,45 +3604,33 @@ public final class GCGMessageOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *LNDLOPKJALI snooswap
-       * </pre>
-       *
-       * <code>.GCGMsgPhaseChange phase_change = 2;</code>
+       * <code>.GCGMsgPhaseChange phase_change = 7;</code>
        */
       public emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange.Builder getPhaseChangeBuilder() {
         return getPhaseChangeFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *LNDLOPKJALI snooswap
-       * </pre>
-       *
-       * <code>.GCGMsgPhaseChange phase_change = 2;</code>
+       * <code>.GCGMsgPhaseChange phase_change = 7;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChangeOrBuilder getPhaseChangeOrBuilder() {
-        if ((messageCase_ == 2) && (phaseChangeBuilder_ != null)) {
+        if ((messageCase_ == 7) && (phaseChangeBuilder_ != null)) {
           return phaseChangeBuilder_.getMessageOrBuilder();
         } else {
-          if (messageCase_ == 2) {
+          if (messageCase_ == 7) {
             return (emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange.getDefaultInstance();
         }
       }
       /**
-       * <pre>
-       *LNDLOPKJALI snooswap
-       * </pre>
-       *
-       * <code>.GCGMsgPhaseChange phase_change = 2;</code>
+       * <code>.GCGMsgPhaseChange phase_change = 7;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange, emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange.Builder, emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChangeOrBuilder> 
           getPhaseChangeFieldBuilder() {
         if (phaseChangeBuilder_ == null) {
-          if (!(messageCase_ == 2)) {
+          if (!(messageCase_ == 7)) {
             message_ = emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.GCGMsgPhaseChange.getDefaultInstance();
           }
           phaseChangeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -3836,7 +3640,7 @@ public final class GCGMessageOuterClass {
                   isClean());
           message_ = null;
         }
-        messageCase_ = 2;
+        messageCase_ = 7;
         onChanged();;
         return phaseChangeBuilder_;
       }
@@ -3844,33 +3648,33 @@ public final class GCGMessageOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCards, emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCards.Builder, emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCardsOrBuilder> addCardsBuilder_;
       /**
-       * <code>.GCGMsgAddCards add_cards = 14;</code>
+       * <code>.GCGMsgAddCards add_cards = 4;</code>
        * @return Whether the addCards field is set.
        */
       @java.lang.Override
       public boolean hasAddCards() {
-        return messageCase_ == 14;
+        return messageCase_ == 4;
       }
       /**
-       * <code>.GCGMsgAddCards add_cards = 14;</code>
+       * <code>.GCGMsgAddCards add_cards = 4;</code>
        * @return The addCards.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCards getAddCards() {
         if (addCardsBuilder_ == null) {
-          if (messageCase_ == 14) {
+          if (messageCase_ == 4) {
             return (emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCards) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCards.getDefaultInstance();
         } else {
-          if (messageCase_ == 14) {
+          if (messageCase_ == 4) {
             return addCardsBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCards.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgAddCards add_cards = 14;</code>
+       * <code>.GCGMsgAddCards add_cards = 4;</code>
        */
       public Builder setAddCards(emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCards value) {
         if (addCardsBuilder_ == null) {
@@ -3882,11 +3686,11 @@ public final class GCGMessageOuterClass {
         } else {
           addCardsBuilder_.setMessage(value);
         }
-        messageCase_ = 14;
+        messageCase_ = 4;
         return this;
       }
       /**
-       * <code>.GCGMsgAddCards add_cards = 14;</code>
+       * <code>.GCGMsgAddCards add_cards = 4;</code>
        */
       public Builder setAddCards(
           emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCards.Builder builderForValue) {
@@ -3896,15 +3700,15 @@ public final class GCGMessageOuterClass {
         } else {
           addCardsBuilder_.setMessage(builderForValue.build());
         }
-        messageCase_ = 14;
+        messageCase_ = 4;
         return this;
       }
       /**
-       * <code>.GCGMsgAddCards add_cards = 14;</code>
+       * <code>.GCGMsgAddCards add_cards = 4;</code>
        */
       public Builder mergeAddCards(emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCards value) {
         if (addCardsBuilder_ == null) {
-          if (messageCase_ == 14 &&
+          if (messageCase_ == 4 &&
               message_ != emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCards.getDefaultInstance()) {
             message_ = emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCards.newBuilder((emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCards) message_)
                 .mergeFrom(value).buildPartial();
@@ -3913,26 +3717,26 @@ public final class GCGMessageOuterClass {
           }
           onChanged();
         } else {
-          if (messageCase_ == 14) {
+          if (messageCase_ == 4) {
             addCardsBuilder_.mergeFrom(value);
           }
           addCardsBuilder_.setMessage(value);
         }
-        messageCase_ = 14;
+        messageCase_ = 4;
         return this;
       }
       /**
-       * <code>.GCGMsgAddCards add_cards = 14;</code>
+       * <code>.GCGMsgAddCards add_cards = 4;</code>
        */
       public Builder clearAddCards() {
         if (addCardsBuilder_ == null) {
-          if (messageCase_ == 14) {
+          if (messageCase_ == 4) {
             messageCase_ = 0;
             message_ = null;
             onChanged();
           }
         } else {
-          if (messageCase_ == 14) {
+          if (messageCase_ == 4) {
             messageCase_ = 0;
             message_ = null;
           }
@@ -3941,33 +3745,33 @@ public final class GCGMessageOuterClass {
         return this;
       }
       /**
-       * <code>.GCGMsgAddCards add_cards = 14;</code>
+       * <code>.GCGMsgAddCards add_cards = 4;</code>
        */
       public emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCards.Builder getAddCardsBuilder() {
         return getAddCardsFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGMsgAddCards add_cards = 14;</code>
+       * <code>.GCGMsgAddCards add_cards = 4;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCardsOrBuilder getAddCardsOrBuilder() {
-        if ((messageCase_ == 14) && (addCardsBuilder_ != null)) {
+        if ((messageCase_ == 4) && (addCardsBuilder_ != null)) {
           return addCardsBuilder_.getMessageOrBuilder();
         } else {
-          if (messageCase_ == 14) {
+          if (messageCase_ == 4) {
             return (emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCards) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCards.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgAddCards add_cards = 14;</code>
+       * <code>.GCGMsgAddCards add_cards = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCards, emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCards.Builder, emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCardsOrBuilder> 
           getAddCardsFieldBuilder() {
         if (addCardsBuilder_ == null) {
-          if (!(messageCase_ == 14)) {
+          if (!(messageCase_ == 4)) {
             message_ = emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.GCGMsgAddCards.getDefaultInstance();
           }
           addCardsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -3977,7 +3781,7 @@ public final class GCGMessageOuterClass {
                   isClean());
           message_ = null;
         }
-        messageCase_ = 14;
+        messageCase_ = 4;
         onChanged();;
         return addCardsBuilder_;
       }
@@ -3985,33 +3789,33 @@ public final class GCGMessageOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCards, emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCards.Builder, emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCardsOrBuilder> removeCardsBuilder_;
       /**
-       * <code>.GCGMsgRemoveCards remove_cards = 10;</code>
+       * <code>.GCGMsgRemoveCards remove_cards = 5;</code>
        * @return Whether the removeCards field is set.
        */
       @java.lang.Override
       public boolean hasRemoveCards() {
-        return messageCase_ == 10;
+        return messageCase_ == 5;
       }
       /**
-       * <code>.GCGMsgRemoveCards remove_cards = 10;</code>
+       * <code>.GCGMsgRemoveCards remove_cards = 5;</code>
        * @return The removeCards.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCards getRemoveCards() {
         if (removeCardsBuilder_ == null) {
-          if (messageCase_ == 10) {
+          if (messageCase_ == 5) {
             return (emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCards) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCards.getDefaultInstance();
         } else {
-          if (messageCase_ == 10) {
+          if (messageCase_ == 5) {
             return removeCardsBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCards.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgRemoveCards remove_cards = 10;</code>
+       * <code>.GCGMsgRemoveCards remove_cards = 5;</code>
        */
       public Builder setRemoveCards(emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCards value) {
         if (removeCardsBuilder_ == null) {
@@ -4023,11 +3827,11 @@ public final class GCGMessageOuterClass {
         } else {
           removeCardsBuilder_.setMessage(value);
         }
-        messageCase_ = 10;
+        messageCase_ = 5;
         return this;
       }
       /**
-       * <code>.GCGMsgRemoveCards remove_cards = 10;</code>
+       * <code>.GCGMsgRemoveCards remove_cards = 5;</code>
        */
       public Builder setRemoveCards(
           emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCards.Builder builderForValue) {
@@ -4037,15 +3841,15 @@ public final class GCGMessageOuterClass {
         } else {
           removeCardsBuilder_.setMessage(builderForValue.build());
         }
-        messageCase_ = 10;
+        messageCase_ = 5;
         return this;
       }
       /**
-       * <code>.GCGMsgRemoveCards remove_cards = 10;</code>
+       * <code>.GCGMsgRemoveCards remove_cards = 5;</code>
        */
       public Builder mergeRemoveCards(emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCards value) {
         if (removeCardsBuilder_ == null) {
-          if (messageCase_ == 10 &&
+          if (messageCase_ == 5 &&
               message_ != emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCards.getDefaultInstance()) {
             message_ = emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCards.newBuilder((emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCards) message_)
                 .mergeFrom(value).buildPartial();
@@ -4054,26 +3858,26 @@ public final class GCGMessageOuterClass {
           }
           onChanged();
         } else {
-          if (messageCase_ == 10) {
+          if (messageCase_ == 5) {
             removeCardsBuilder_.mergeFrom(value);
           }
           removeCardsBuilder_.setMessage(value);
         }
-        messageCase_ = 10;
+        messageCase_ = 5;
         return this;
       }
       /**
-       * <code>.GCGMsgRemoveCards remove_cards = 10;</code>
+       * <code>.GCGMsgRemoveCards remove_cards = 5;</code>
        */
       public Builder clearRemoveCards() {
         if (removeCardsBuilder_ == null) {
-          if (messageCase_ == 10) {
+          if (messageCase_ == 5) {
             messageCase_ = 0;
             message_ = null;
             onChanged();
           }
         } else {
-          if (messageCase_ == 10) {
+          if (messageCase_ == 5) {
             messageCase_ = 0;
             message_ = null;
           }
@@ -4082,33 +3886,33 @@ public final class GCGMessageOuterClass {
         return this;
       }
       /**
-       * <code>.GCGMsgRemoveCards remove_cards = 10;</code>
+       * <code>.GCGMsgRemoveCards remove_cards = 5;</code>
        */
       public emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCards.Builder getRemoveCardsBuilder() {
         return getRemoveCardsFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGMsgRemoveCards remove_cards = 10;</code>
+       * <code>.GCGMsgRemoveCards remove_cards = 5;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCardsOrBuilder getRemoveCardsOrBuilder() {
-        if ((messageCase_ == 10) && (removeCardsBuilder_ != null)) {
+        if ((messageCase_ == 5) && (removeCardsBuilder_ != null)) {
           return removeCardsBuilder_.getMessageOrBuilder();
         } else {
-          if (messageCase_ == 10) {
+          if (messageCase_ == 5) {
             return (emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCards) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCards.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgRemoveCards remove_cards = 10;</code>
+       * <code>.GCGMsgRemoveCards remove_cards = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCards, emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCards.Builder, emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCardsOrBuilder> 
           getRemoveCardsFieldBuilder() {
         if (removeCardsBuilder_ == null) {
-          if (!(messageCase_ == 10)) {
+          if (!(messageCase_ == 5)) {
             message_ = emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.GCGMsgRemoveCards.getDefaultInstance();
           }
           removeCardsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -4118,7 +3922,7 @@ public final class GCGMessageOuterClass {
                   isClean());
           message_ = null;
         }
-        messageCase_ = 10;
+        messageCase_ = 5;
         onChanged();;
         return removeCardsBuilder_;
       }
@@ -4126,33 +3930,33 @@ public final class GCGMessageOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage, emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage.Builder, emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStageOrBuilder> selectOnStageBuilder_;
       /**
-       * <code>.GCGMsgSelectOnStage select_on_stage = 8;</code>
+       * <code>.GCGMsgSelectOnStage select_on_stage = 2;</code>
        * @return Whether the selectOnStage field is set.
        */
       @java.lang.Override
       public boolean hasSelectOnStage() {
-        return messageCase_ == 8;
+        return messageCase_ == 2;
       }
       /**
-       * <code>.GCGMsgSelectOnStage select_on_stage = 8;</code>
+       * <code>.GCGMsgSelectOnStage select_on_stage = 2;</code>
        * @return The selectOnStage.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage getSelectOnStage() {
         if (selectOnStageBuilder_ == null) {
-          if (messageCase_ == 8) {
+          if (messageCase_ == 2) {
             return (emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage.getDefaultInstance();
         } else {
-          if (messageCase_ == 8) {
+          if (messageCase_ == 2) {
             return selectOnStageBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgSelectOnStage select_on_stage = 8;</code>
+       * <code>.GCGMsgSelectOnStage select_on_stage = 2;</code>
        */
       public Builder setSelectOnStage(emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage value) {
         if (selectOnStageBuilder_ == null) {
@@ -4164,11 +3968,11 @@ public final class GCGMessageOuterClass {
         } else {
           selectOnStageBuilder_.setMessage(value);
         }
-        messageCase_ = 8;
+        messageCase_ = 2;
         return this;
       }
       /**
-       * <code>.GCGMsgSelectOnStage select_on_stage = 8;</code>
+       * <code>.GCGMsgSelectOnStage select_on_stage = 2;</code>
        */
       public Builder setSelectOnStage(
           emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage.Builder builderForValue) {
@@ -4178,15 +3982,15 @@ public final class GCGMessageOuterClass {
         } else {
           selectOnStageBuilder_.setMessage(builderForValue.build());
         }
-        messageCase_ = 8;
+        messageCase_ = 2;
         return this;
       }
       /**
-       * <code>.GCGMsgSelectOnStage select_on_stage = 8;</code>
+       * <code>.GCGMsgSelectOnStage select_on_stage = 2;</code>
        */
       public Builder mergeSelectOnStage(emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage value) {
         if (selectOnStageBuilder_ == null) {
-          if (messageCase_ == 8 &&
+          if (messageCase_ == 2 &&
               message_ != emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage.getDefaultInstance()) {
             message_ = emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage.newBuilder((emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage) message_)
                 .mergeFrom(value).buildPartial();
@@ -4195,26 +3999,26 @@ public final class GCGMessageOuterClass {
           }
           onChanged();
         } else {
-          if (messageCase_ == 8) {
+          if (messageCase_ == 2) {
             selectOnStageBuilder_.mergeFrom(value);
           }
           selectOnStageBuilder_.setMessage(value);
         }
-        messageCase_ = 8;
+        messageCase_ = 2;
         return this;
       }
       /**
-       * <code>.GCGMsgSelectOnStage select_on_stage = 8;</code>
+       * <code>.GCGMsgSelectOnStage select_on_stage = 2;</code>
        */
       public Builder clearSelectOnStage() {
         if (selectOnStageBuilder_ == null) {
-          if (messageCase_ == 8) {
+          if (messageCase_ == 2) {
             messageCase_ = 0;
             message_ = null;
             onChanged();
           }
         } else {
-          if (messageCase_ == 8) {
+          if (messageCase_ == 2) {
             messageCase_ = 0;
             message_ = null;
           }
@@ -4223,33 +4027,33 @@ public final class GCGMessageOuterClass {
         return this;
       }
       /**
-       * <code>.GCGMsgSelectOnStage select_on_stage = 8;</code>
+       * <code>.GCGMsgSelectOnStage select_on_stage = 2;</code>
        */
       public emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage.Builder getSelectOnStageBuilder() {
         return getSelectOnStageFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGMsgSelectOnStage select_on_stage = 8;</code>
+       * <code>.GCGMsgSelectOnStage select_on_stage = 2;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStageOrBuilder getSelectOnStageOrBuilder() {
-        if ((messageCase_ == 8) && (selectOnStageBuilder_ != null)) {
+        if ((messageCase_ == 2) && (selectOnStageBuilder_ != null)) {
           return selectOnStageBuilder_.getMessageOrBuilder();
         } else {
-          if (messageCase_ == 8) {
+          if (messageCase_ == 2) {
             return (emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgSelectOnStage select_on_stage = 8;</code>
+       * <code>.GCGMsgSelectOnStage select_on_stage = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage, emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage.Builder, emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStageOrBuilder> 
           getSelectOnStageFieldBuilder() {
         if (selectOnStageBuilder_ == null) {
-          if (!(messageCase_ == 8)) {
+          if (!(messageCase_ == 2)) {
             message_ = emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.GCGMsgSelectOnStage.getDefaultInstance();
           }
           selectOnStageBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -4259,7 +4063,7 @@ public final class GCGMessageOuterClass {
                   isClean());
           message_ = null;
         }
-        messageCase_ = 8;
+        messageCase_ = 2;
         onChanged();;
         return selectOnStageBuilder_;
       }
@@ -4267,33 +4071,33 @@ public final class GCGMessageOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll, emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll.Builder, emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRollOrBuilder> diceRollBuilder_;
       /**
-       * <code>.GCGMsgDiceRoll dice_roll = 13;</code>
+       * <code>.GCGMsgDiceRoll dice_roll = 3;</code>
        * @return Whether the diceRoll field is set.
        */
       @java.lang.Override
       public boolean hasDiceRoll() {
-        return messageCase_ == 13;
+        return messageCase_ == 3;
       }
       /**
-       * <code>.GCGMsgDiceRoll dice_roll = 13;</code>
+       * <code>.GCGMsgDiceRoll dice_roll = 3;</code>
        * @return The diceRoll.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll getDiceRoll() {
         if (diceRollBuilder_ == null) {
-          if (messageCase_ == 13) {
+          if (messageCase_ == 3) {
             return (emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll.getDefaultInstance();
         } else {
-          if (messageCase_ == 13) {
+          if (messageCase_ == 3) {
             return diceRollBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgDiceRoll dice_roll = 13;</code>
+       * <code>.GCGMsgDiceRoll dice_roll = 3;</code>
        */
       public Builder setDiceRoll(emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll value) {
         if (diceRollBuilder_ == null) {
@@ -4305,11 +4109,11 @@ public final class GCGMessageOuterClass {
         } else {
           diceRollBuilder_.setMessage(value);
         }
-        messageCase_ = 13;
+        messageCase_ = 3;
         return this;
       }
       /**
-       * <code>.GCGMsgDiceRoll dice_roll = 13;</code>
+       * <code>.GCGMsgDiceRoll dice_roll = 3;</code>
        */
       public Builder setDiceRoll(
           emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll.Builder builderForValue) {
@@ -4319,15 +4123,15 @@ public final class GCGMessageOuterClass {
         } else {
           diceRollBuilder_.setMessage(builderForValue.build());
         }
-        messageCase_ = 13;
+        messageCase_ = 3;
         return this;
       }
       /**
-       * <code>.GCGMsgDiceRoll dice_roll = 13;</code>
+       * <code>.GCGMsgDiceRoll dice_roll = 3;</code>
        */
       public Builder mergeDiceRoll(emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll value) {
         if (diceRollBuilder_ == null) {
-          if (messageCase_ == 13 &&
+          if (messageCase_ == 3 &&
               message_ != emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll.getDefaultInstance()) {
             message_ = emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll.newBuilder((emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll) message_)
                 .mergeFrom(value).buildPartial();
@@ -4336,26 +4140,26 @@ public final class GCGMessageOuterClass {
           }
           onChanged();
         } else {
-          if (messageCase_ == 13) {
+          if (messageCase_ == 3) {
             diceRollBuilder_.mergeFrom(value);
           }
           diceRollBuilder_.setMessage(value);
         }
-        messageCase_ = 13;
+        messageCase_ = 3;
         return this;
       }
       /**
-       * <code>.GCGMsgDiceRoll dice_roll = 13;</code>
+       * <code>.GCGMsgDiceRoll dice_roll = 3;</code>
        */
       public Builder clearDiceRoll() {
         if (diceRollBuilder_ == null) {
-          if (messageCase_ == 13) {
+          if (messageCase_ == 3) {
             messageCase_ = 0;
             message_ = null;
             onChanged();
           }
         } else {
-          if (messageCase_ == 13) {
+          if (messageCase_ == 3) {
             messageCase_ = 0;
             message_ = null;
           }
@@ -4364,33 +4168,33 @@ public final class GCGMessageOuterClass {
         return this;
       }
       /**
-       * <code>.GCGMsgDiceRoll dice_roll = 13;</code>
+       * <code>.GCGMsgDiceRoll dice_roll = 3;</code>
        */
       public emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll.Builder getDiceRollBuilder() {
         return getDiceRollFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGMsgDiceRoll dice_roll = 13;</code>
+       * <code>.GCGMsgDiceRoll dice_roll = 3;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRollOrBuilder getDiceRollOrBuilder() {
-        if ((messageCase_ == 13) && (diceRollBuilder_ != null)) {
+        if ((messageCase_ == 3) && (diceRollBuilder_ != null)) {
           return diceRollBuilder_.getMessageOrBuilder();
         } else {
-          if (messageCase_ == 13) {
+          if (messageCase_ == 3) {
             return (emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgDiceRoll dice_roll = 13;</code>
+       * <code>.GCGMsgDiceRoll dice_roll = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll, emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll.Builder, emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRollOrBuilder> 
           getDiceRollFieldBuilder() {
         if (diceRollBuilder_ == null) {
-          if (!(messageCase_ == 13)) {
+          if (!(messageCase_ == 3)) {
             message_ = emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.GCGMsgDiceRoll.getDefaultInstance();
           }
           diceRollBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -4400,7 +4204,7 @@ public final class GCGMessageOuterClass {
                   isClean());
           message_ = null;
         }
-        messageCase_ = 13;
+        messageCase_ = 3;
         onChanged();;
         return diceRollBuilder_;
       }
@@ -4549,33 +4353,33 @@ public final class GCGMessageOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPass, emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPass.Builder, emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPassOrBuilder> passBuilder_;
       /**
-       * <code>.GCGMsgPass pass = 11;</code>
+       * <code>.GCGMsgPass pass = 8;</code>
        * @return Whether the pass field is set.
        */
       @java.lang.Override
       public boolean hasPass() {
-        return messageCase_ == 11;
+        return messageCase_ == 8;
       }
       /**
-       * <code>.GCGMsgPass pass = 11;</code>
+       * <code>.GCGMsgPass pass = 8;</code>
        * @return The pass.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPass getPass() {
         if (passBuilder_ == null) {
-          if (messageCase_ == 11) {
+          if (messageCase_ == 8) {
             return (emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPass) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPass.getDefaultInstance();
         } else {
-          if (messageCase_ == 11) {
+          if (messageCase_ == 8) {
             return passBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPass.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgPass pass = 11;</code>
+       * <code>.GCGMsgPass pass = 8;</code>
        */
       public Builder setPass(emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPass value) {
         if (passBuilder_ == null) {
@@ -4587,11 +4391,11 @@ public final class GCGMessageOuterClass {
         } else {
           passBuilder_.setMessage(value);
         }
-        messageCase_ = 11;
+        messageCase_ = 8;
         return this;
       }
       /**
-       * <code>.GCGMsgPass pass = 11;</code>
+       * <code>.GCGMsgPass pass = 8;</code>
        */
       public Builder setPass(
           emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPass.Builder builderForValue) {
@@ -4601,15 +4405,15 @@ public final class GCGMessageOuterClass {
         } else {
           passBuilder_.setMessage(builderForValue.build());
         }
-        messageCase_ = 11;
+        messageCase_ = 8;
         return this;
       }
       /**
-       * <code>.GCGMsgPass pass = 11;</code>
+       * <code>.GCGMsgPass pass = 8;</code>
        */
       public Builder mergePass(emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPass value) {
         if (passBuilder_ == null) {
-          if (messageCase_ == 11 &&
+          if (messageCase_ == 8 &&
               message_ != emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPass.getDefaultInstance()) {
             message_ = emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPass.newBuilder((emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPass) message_)
                 .mergeFrom(value).buildPartial();
@@ -4618,26 +4422,26 @@ public final class GCGMessageOuterClass {
           }
           onChanged();
         } else {
-          if (messageCase_ == 11) {
+          if (messageCase_ == 8) {
             passBuilder_.mergeFrom(value);
           }
           passBuilder_.setMessage(value);
         }
-        messageCase_ = 11;
+        messageCase_ = 8;
         return this;
       }
       /**
-       * <code>.GCGMsgPass pass = 11;</code>
+       * <code>.GCGMsgPass pass = 8;</code>
        */
       public Builder clearPass() {
         if (passBuilder_ == null) {
-          if (messageCase_ == 11) {
+          if (messageCase_ == 8) {
             messageCase_ = 0;
             message_ = null;
             onChanged();
           }
         } else {
-          if (messageCase_ == 11) {
+          if (messageCase_ == 8) {
             messageCase_ = 0;
             message_ = null;
           }
@@ -4646,33 +4450,33 @@ public final class GCGMessageOuterClass {
         return this;
       }
       /**
-       * <code>.GCGMsgPass pass = 11;</code>
+       * <code>.GCGMsgPass pass = 8;</code>
        */
       public emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPass.Builder getPassBuilder() {
         return getPassFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGMsgPass pass = 11;</code>
+       * <code>.GCGMsgPass pass = 8;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPassOrBuilder getPassOrBuilder() {
-        if ((messageCase_ == 11) && (passBuilder_ != null)) {
+        if ((messageCase_ == 8) && (passBuilder_ != null)) {
           return passBuilder_.getMessageOrBuilder();
         } else {
-          if (messageCase_ == 11) {
+          if (messageCase_ == 8) {
             return (emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPass) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPass.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgPass pass = 11;</code>
+       * <code>.GCGMsgPass pass = 8;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPass, emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPass.Builder, emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPassOrBuilder> 
           getPassFieldBuilder() {
         if (passBuilder_ == null) {
-          if (!(messageCase_ == 11)) {
+          if (!(messageCase_ == 8)) {
             message_ = emu.grasscutter.net.proto.GCGMsgPassOuterClass.GCGMsgPass.getDefaultInstance();
           }
           passBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -4682,182 +4486,41 @@ public final class GCGMessageOuterClass {
                   isClean());
           message_ = null;
         }
-        messageCase_ = 11;
+        messageCase_ = 8;
         onChanged();;
         return passBuilder_;
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie, emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie.Builder, emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDieOrBuilder> charDieBuilder_;
-      /**
-       * <code>.GCGMsgCharDie char_die = 3;</code>
-       * @return Whether the charDie field is set.
-       */
-      @java.lang.Override
-      public boolean hasCharDie() {
-        return messageCase_ == 3;
-      }
-      /**
-       * <code>.GCGMsgCharDie char_die = 3;</code>
-       * @return The charDie.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie getCharDie() {
-        if (charDieBuilder_ == null) {
-          if (messageCase_ == 3) {
-            return (emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie) message_;
-          }
-          return emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie.getDefaultInstance();
-        } else {
-          if (messageCase_ == 3) {
-            return charDieBuilder_.getMessage();
-          }
-          return emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.GCGMsgCharDie char_die = 3;</code>
-       */
-      public Builder setCharDie(emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie value) {
-        if (charDieBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          message_ = value;
-          onChanged();
-        } else {
-          charDieBuilder_.setMessage(value);
-        }
-        messageCase_ = 3;
-        return this;
-      }
-      /**
-       * <code>.GCGMsgCharDie char_die = 3;</code>
-       */
-      public Builder setCharDie(
-          emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie.Builder builderForValue) {
-        if (charDieBuilder_ == null) {
-          message_ = builderForValue.build();
-          onChanged();
-        } else {
-          charDieBuilder_.setMessage(builderForValue.build());
-        }
-        messageCase_ = 3;
-        return this;
-      }
-      /**
-       * <code>.GCGMsgCharDie char_die = 3;</code>
-       */
-      public Builder mergeCharDie(emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie value) {
-        if (charDieBuilder_ == null) {
-          if (messageCase_ == 3 &&
-              message_ != emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie.getDefaultInstance()) {
-            message_ = emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie.newBuilder((emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie) message_)
-                .mergeFrom(value).buildPartial();
-          } else {
-            message_ = value;
-          }
-          onChanged();
-        } else {
-          if (messageCase_ == 3) {
-            charDieBuilder_.mergeFrom(value);
-          }
-          charDieBuilder_.setMessage(value);
-        }
-        messageCase_ = 3;
-        return this;
-      }
-      /**
-       * <code>.GCGMsgCharDie char_die = 3;</code>
-       */
-      public Builder clearCharDie() {
-        if (charDieBuilder_ == null) {
-          if (messageCase_ == 3) {
-            messageCase_ = 0;
-            message_ = null;
-            onChanged();
-          }
-        } else {
-          if (messageCase_ == 3) {
-            messageCase_ = 0;
-            message_ = null;
-          }
-          charDieBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>.GCGMsgCharDie char_die = 3;</code>
-       */
-      public emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie.Builder getCharDieBuilder() {
-        return getCharDieFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.GCGMsgCharDie char_die = 3;</code>
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDieOrBuilder getCharDieOrBuilder() {
-        if ((messageCase_ == 3) && (charDieBuilder_ != null)) {
-          return charDieBuilder_.getMessageOrBuilder();
-        } else {
-          if (messageCase_ == 3) {
-            return (emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie) message_;
-          }
-          return emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie.getDefaultInstance();
-        }
-      }
-      /**
-       * <code>.GCGMsgCharDie char_die = 3;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie, emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie.Builder, emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDieOrBuilder> 
-          getCharDieFieldBuilder() {
-        if (charDieBuilder_ == null) {
-          if (!(messageCase_ == 3)) {
-            message_ = emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie.getDefaultInstance();
-          }
-          charDieBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie, emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie.Builder, emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDieOrBuilder>(
-                  (emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.GCGMsgCharDie) message_,
-                  getParentForChildren(),
-                  isClean());
-          message_ = null;
-        }
-        messageCase_ = 3;
-        onChanged();;
-        return charDieBuilder_;
-      }
-
-      private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult, emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult.Builder, emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResultOrBuilder> skillResultBuilder_;
       /**
-       * <code>.GCGMsgSkillResult skill_result = 5;</code>
+       * <code>.GCGMsgSkillResult skill_result = 10;</code>
        * @return Whether the skillResult field is set.
        */
       @java.lang.Override
       public boolean hasSkillResult() {
-        return messageCase_ == 5;
+        return messageCase_ == 10;
       }
       /**
-       * <code>.GCGMsgSkillResult skill_result = 5;</code>
+       * <code>.GCGMsgSkillResult skill_result = 10;</code>
        * @return The skillResult.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult getSkillResult() {
         if (skillResultBuilder_ == null) {
-          if (messageCase_ == 5) {
+          if (messageCase_ == 10) {
             return (emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult.getDefaultInstance();
         } else {
-          if (messageCase_ == 5) {
+          if (messageCase_ == 10) {
             return skillResultBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgSkillResult skill_result = 5;</code>
+       * <code>.GCGMsgSkillResult skill_result = 10;</code>
        */
       public Builder setSkillResult(emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult value) {
         if (skillResultBuilder_ == null) {
@@ -4869,11 +4532,11 @@ public final class GCGMessageOuterClass {
         } else {
           skillResultBuilder_.setMessage(value);
         }
-        messageCase_ = 5;
+        messageCase_ = 10;
         return this;
       }
       /**
-       * <code>.GCGMsgSkillResult skill_result = 5;</code>
+       * <code>.GCGMsgSkillResult skill_result = 10;</code>
        */
       public Builder setSkillResult(
           emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult.Builder builderForValue) {
@@ -4883,15 +4546,15 @@ public final class GCGMessageOuterClass {
         } else {
           skillResultBuilder_.setMessage(builderForValue.build());
         }
-        messageCase_ = 5;
+        messageCase_ = 10;
         return this;
       }
       /**
-       * <code>.GCGMsgSkillResult skill_result = 5;</code>
+       * <code>.GCGMsgSkillResult skill_result = 10;</code>
        */
       public Builder mergeSkillResult(emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult value) {
         if (skillResultBuilder_ == null) {
-          if (messageCase_ == 5 &&
+          if (messageCase_ == 10 &&
               message_ != emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult.getDefaultInstance()) {
             message_ = emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult.newBuilder((emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult) message_)
                 .mergeFrom(value).buildPartial();
@@ -4900,26 +4563,26 @@ public final class GCGMessageOuterClass {
           }
           onChanged();
         } else {
-          if (messageCase_ == 5) {
+          if (messageCase_ == 10) {
             skillResultBuilder_.mergeFrom(value);
           }
           skillResultBuilder_.setMessage(value);
         }
-        messageCase_ = 5;
+        messageCase_ = 10;
         return this;
       }
       /**
-       * <code>.GCGMsgSkillResult skill_result = 5;</code>
+       * <code>.GCGMsgSkillResult skill_result = 10;</code>
        */
       public Builder clearSkillResult() {
         if (skillResultBuilder_ == null) {
-          if (messageCase_ == 5) {
+          if (messageCase_ == 10) {
             messageCase_ = 0;
             message_ = null;
             onChanged();
           }
         } else {
-          if (messageCase_ == 5) {
+          if (messageCase_ == 10) {
             messageCase_ = 0;
             message_ = null;
           }
@@ -4928,33 +4591,33 @@ public final class GCGMessageOuterClass {
         return this;
       }
       /**
-       * <code>.GCGMsgSkillResult skill_result = 5;</code>
+       * <code>.GCGMsgSkillResult skill_result = 10;</code>
        */
       public emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult.Builder getSkillResultBuilder() {
         return getSkillResultFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGMsgSkillResult skill_result = 5;</code>
+       * <code>.GCGMsgSkillResult skill_result = 10;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResultOrBuilder getSkillResultOrBuilder() {
-        if ((messageCase_ == 5) && (skillResultBuilder_ != null)) {
+        if ((messageCase_ == 10) && (skillResultBuilder_ != null)) {
           return skillResultBuilder_.getMessageOrBuilder();
         } else {
-          if (messageCase_ == 5) {
+          if (messageCase_ == 10) {
             return (emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgSkillResult skill_result = 5;</code>
+       * <code>.GCGMsgSkillResult skill_result = 10;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult, emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult.Builder, emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResultOrBuilder> 
           getSkillResultFieldBuilder() {
         if (skillResultBuilder_ == null) {
-          if (!(messageCase_ == 5)) {
+          if (!(messageCase_ == 10)) {
             message_ = emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.GCGMsgSkillResult.getDefaultInstance();
           }
           skillResultBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -4964,7 +4627,7 @@ public final class GCGMessageOuterClass {
                   isClean());
           message_ = null;
         }
-        messageCase_ = 5;
+        messageCase_ = 10;
         onChanged();;
         return skillResultBuilder_;
       }
@@ -4972,33 +4635,33 @@ public final class GCGMessageOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDice, emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDice.Builder, emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDiceOrBuilder> costDiceBuilder_;
       /**
-       * <code>.GCGMsgCostDice cost_dice = 4;</code>
+       * <code>.GCGMsgCostDice cost_dice = 14;</code>
        * @return Whether the costDice field is set.
        */
       @java.lang.Override
       public boolean hasCostDice() {
-        return messageCase_ == 4;
+        return messageCase_ == 14;
       }
       /**
-       * <code>.GCGMsgCostDice cost_dice = 4;</code>
+       * <code>.GCGMsgCostDice cost_dice = 14;</code>
        * @return The costDice.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDice getCostDice() {
         if (costDiceBuilder_ == null) {
-          if (messageCase_ == 4) {
+          if (messageCase_ == 14) {
             return (emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDice) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDice.getDefaultInstance();
         } else {
-          if (messageCase_ == 4) {
+          if (messageCase_ == 14) {
             return costDiceBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDice.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgCostDice cost_dice = 4;</code>
+       * <code>.GCGMsgCostDice cost_dice = 14;</code>
        */
       public Builder setCostDice(emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDice value) {
         if (costDiceBuilder_ == null) {
@@ -5010,11 +4673,11 @@ public final class GCGMessageOuterClass {
         } else {
           costDiceBuilder_.setMessage(value);
         }
-        messageCase_ = 4;
+        messageCase_ = 14;
         return this;
       }
       /**
-       * <code>.GCGMsgCostDice cost_dice = 4;</code>
+       * <code>.GCGMsgCostDice cost_dice = 14;</code>
        */
       public Builder setCostDice(
           emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDice.Builder builderForValue) {
@@ -5024,15 +4687,15 @@ public final class GCGMessageOuterClass {
         } else {
           costDiceBuilder_.setMessage(builderForValue.build());
         }
-        messageCase_ = 4;
+        messageCase_ = 14;
         return this;
       }
       /**
-       * <code>.GCGMsgCostDice cost_dice = 4;</code>
+       * <code>.GCGMsgCostDice cost_dice = 14;</code>
        */
       public Builder mergeCostDice(emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDice value) {
         if (costDiceBuilder_ == null) {
-          if (messageCase_ == 4 &&
+          if (messageCase_ == 14 &&
               message_ != emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDice.getDefaultInstance()) {
             message_ = emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDice.newBuilder((emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDice) message_)
                 .mergeFrom(value).buildPartial();
@@ -5041,26 +4704,26 @@ public final class GCGMessageOuterClass {
           }
           onChanged();
         } else {
-          if (messageCase_ == 4) {
+          if (messageCase_ == 14) {
             costDiceBuilder_.mergeFrom(value);
           }
           costDiceBuilder_.setMessage(value);
         }
-        messageCase_ = 4;
+        messageCase_ = 14;
         return this;
       }
       /**
-       * <code>.GCGMsgCostDice cost_dice = 4;</code>
+       * <code>.GCGMsgCostDice cost_dice = 14;</code>
        */
       public Builder clearCostDice() {
         if (costDiceBuilder_ == null) {
-          if (messageCase_ == 4) {
+          if (messageCase_ == 14) {
             messageCase_ = 0;
             message_ = null;
             onChanged();
           }
         } else {
-          if (messageCase_ == 4) {
+          if (messageCase_ == 14) {
             messageCase_ = 0;
             message_ = null;
           }
@@ -5069,33 +4732,33 @@ public final class GCGMessageOuterClass {
         return this;
       }
       /**
-       * <code>.GCGMsgCostDice cost_dice = 4;</code>
+       * <code>.GCGMsgCostDice cost_dice = 14;</code>
        */
       public emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDice.Builder getCostDiceBuilder() {
         return getCostDiceFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGMsgCostDice cost_dice = 4;</code>
+       * <code>.GCGMsgCostDice cost_dice = 14;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDiceOrBuilder getCostDiceOrBuilder() {
-        if ((messageCase_ == 4) && (costDiceBuilder_ != null)) {
+        if ((messageCase_ == 14) && (costDiceBuilder_ != null)) {
           return costDiceBuilder_.getMessageOrBuilder();
         } else {
-          if (messageCase_ == 4) {
+          if (messageCase_ == 14) {
             return (emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDice) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDice.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgCostDice cost_dice = 4;</code>
+       * <code>.GCGMsgCostDice cost_dice = 14;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDice, emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDice.Builder, emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDiceOrBuilder> 
           getCostDiceFieldBuilder() {
         if (costDiceBuilder_ == null) {
-          if (!(messageCase_ == 4)) {
+          if (!(messageCase_ == 14)) {
             message_ = emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.GCGMsgCostDice.getDefaultInstance();
           }
           costDiceBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -5105,7 +4768,7 @@ public final class GCGMessageOuterClass {
                   isClean());
           message_ = null;
         }
-        messageCase_ = 4;
+        messageCase_ = 14;
         onChanged();;
         return costDiceBuilder_;
       }
@@ -5113,33 +4776,33 @@ public final class GCGMessageOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice, emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice.Builder, emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDiceOrBuilder> addDiceBuilder_;
       /**
-       * <code>.GCGMsgAddDice add_dice = 1;</code>
+       * <code>.GCGMsgAddDice add_dice = 11;</code>
        * @return Whether the addDice field is set.
        */
       @java.lang.Override
       public boolean hasAddDice() {
-        return messageCase_ == 1;
+        return messageCase_ == 11;
       }
       /**
-       * <code>.GCGMsgAddDice add_dice = 1;</code>
+       * <code>.GCGMsgAddDice add_dice = 11;</code>
        * @return The addDice.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice getAddDice() {
         if (addDiceBuilder_ == null) {
-          if (messageCase_ == 1) {
+          if (messageCase_ == 11) {
             return (emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice.getDefaultInstance();
         } else {
-          if (messageCase_ == 1) {
+          if (messageCase_ == 11) {
             return addDiceBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgAddDice add_dice = 1;</code>
+       * <code>.GCGMsgAddDice add_dice = 11;</code>
        */
       public Builder setAddDice(emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice value) {
         if (addDiceBuilder_ == null) {
@@ -5151,11 +4814,11 @@ public final class GCGMessageOuterClass {
         } else {
           addDiceBuilder_.setMessage(value);
         }
-        messageCase_ = 1;
+        messageCase_ = 11;
         return this;
       }
       /**
-       * <code>.GCGMsgAddDice add_dice = 1;</code>
+       * <code>.GCGMsgAddDice add_dice = 11;</code>
        */
       public Builder setAddDice(
           emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice.Builder builderForValue) {
@@ -5165,15 +4828,15 @@ public final class GCGMessageOuterClass {
         } else {
           addDiceBuilder_.setMessage(builderForValue.build());
         }
-        messageCase_ = 1;
+        messageCase_ = 11;
         return this;
       }
       /**
-       * <code>.GCGMsgAddDice add_dice = 1;</code>
+       * <code>.GCGMsgAddDice add_dice = 11;</code>
        */
       public Builder mergeAddDice(emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice value) {
         if (addDiceBuilder_ == null) {
-          if (messageCase_ == 1 &&
+          if (messageCase_ == 11 &&
               message_ != emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice.getDefaultInstance()) {
             message_ = emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice.newBuilder((emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice) message_)
                 .mergeFrom(value).buildPartial();
@@ -5182,26 +4845,26 @@ public final class GCGMessageOuterClass {
           }
           onChanged();
         } else {
-          if (messageCase_ == 1) {
+          if (messageCase_ == 11) {
             addDiceBuilder_.mergeFrom(value);
           }
           addDiceBuilder_.setMessage(value);
         }
-        messageCase_ = 1;
+        messageCase_ = 11;
         return this;
       }
       /**
-       * <code>.GCGMsgAddDice add_dice = 1;</code>
+       * <code>.GCGMsgAddDice add_dice = 11;</code>
        */
       public Builder clearAddDice() {
         if (addDiceBuilder_ == null) {
-          if (messageCase_ == 1) {
+          if (messageCase_ == 11) {
             messageCase_ = 0;
             message_ = null;
             onChanged();
           }
         } else {
-          if (messageCase_ == 1) {
+          if (messageCase_ == 11) {
             messageCase_ = 0;
             message_ = null;
           }
@@ -5210,33 +4873,33 @@ public final class GCGMessageOuterClass {
         return this;
       }
       /**
-       * <code>.GCGMsgAddDice add_dice = 1;</code>
+       * <code>.GCGMsgAddDice add_dice = 11;</code>
        */
       public emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice.Builder getAddDiceBuilder() {
         return getAddDiceFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGMsgAddDice add_dice = 1;</code>
+       * <code>.GCGMsgAddDice add_dice = 11;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDiceOrBuilder getAddDiceOrBuilder() {
-        if ((messageCase_ == 1) && (addDiceBuilder_ != null)) {
+        if ((messageCase_ == 11) && (addDiceBuilder_ != null)) {
           return addDiceBuilder_.getMessageOrBuilder();
         } else {
-          if (messageCase_ == 1) {
+          if (messageCase_ == 11) {
             return (emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgAddDice add_dice = 1;</code>
+       * <code>.GCGMsgAddDice add_dice = 11;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice, emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice.Builder, emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDiceOrBuilder> 
           getAddDiceFieldBuilder() {
         if (addDiceBuilder_ == null) {
-          if (!(messageCase_ == 1)) {
+          if (!(messageCase_ == 11)) {
             message_ = emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice.getDefaultInstance();
           }
           addDiceBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -5246,7 +4909,7 @@ public final class GCGMessageOuterClass {
                   isClean());
           message_ = null;
         }
-        messageCase_ = 1;
+        messageCase_ = 11;
         onChanged();;
         return addDiceBuilder_;
       }
@@ -5395,33 +5058,33 @@ public final class GCGMessageOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill, emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill.Builder, emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkillOrBuilder> useSkillBuilder_;
       /**
-       * <code>.GCGMsgUseSkill use_skill = 7;</code>
+       * <code>.GCGMsgUseSkill use_skill = 13;</code>
        * @return Whether the useSkill field is set.
        */
       @java.lang.Override
       public boolean hasUseSkill() {
-        return messageCase_ == 7;
+        return messageCase_ == 13;
       }
       /**
-       * <code>.GCGMsgUseSkill use_skill = 7;</code>
+       * <code>.GCGMsgUseSkill use_skill = 13;</code>
        * @return The useSkill.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill getUseSkill() {
         if (useSkillBuilder_ == null) {
-          if (messageCase_ == 7) {
+          if (messageCase_ == 13) {
             return (emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill.getDefaultInstance();
         } else {
-          if (messageCase_ == 7) {
+          if (messageCase_ == 13) {
             return useSkillBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgUseSkill use_skill = 7;</code>
+       * <code>.GCGMsgUseSkill use_skill = 13;</code>
        */
       public Builder setUseSkill(emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill value) {
         if (useSkillBuilder_ == null) {
@@ -5433,11 +5096,11 @@ public final class GCGMessageOuterClass {
         } else {
           useSkillBuilder_.setMessage(value);
         }
-        messageCase_ = 7;
+        messageCase_ = 13;
         return this;
       }
       /**
-       * <code>.GCGMsgUseSkill use_skill = 7;</code>
+       * <code>.GCGMsgUseSkill use_skill = 13;</code>
        */
       public Builder setUseSkill(
           emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill.Builder builderForValue) {
@@ -5447,15 +5110,15 @@ public final class GCGMessageOuterClass {
         } else {
           useSkillBuilder_.setMessage(builderForValue.build());
         }
-        messageCase_ = 7;
+        messageCase_ = 13;
         return this;
       }
       /**
-       * <code>.GCGMsgUseSkill use_skill = 7;</code>
+       * <code>.GCGMsgUseSkill use_skill = 13;</code>
        */
       public Builder mergeUseSkill(emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill value) {
         if (useSkillBuilder_ == null) {
-          if (messageCase_ == 7 &&
+          if (messageCase_ == 13 &&
               message_ != emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill.getDefaultInstance()) {
             message_ = emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill.newBuilder((emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill) message_)
                 .mergeFrom(value).buildPartial();
@@ -5464,26 +5127,26 @@ public final class GCGMessageOuterClass {
           }
           onChanged();
         } else {
-          if (messageCase_ == 7) {
+          if (messageCase_ == 13) {
             useSkillBuilder_.mergeFrom(value);
           }
           useSkillBuilder_.setMessage(value);
         }
-        messageCase_ = 7;
+        messageCase_ = 13;
         return this;
       }
       /**
-       * <code>.GCGMsgUseSkill use_skill = 7;</code>
+       * <code>.GCGMsgUseSkill use_skill = 13;</code>
        */
       public Builder clearUseSkill() {
         if (useSkillBuilder_ == null) {
-          if (messageCase_ == 7) {
+          if (messageCase_ == 13) {
             messageCase_ = 0;
             message_ = null;
             onChanged();
           }
         } else {
-          if (messageCase_ == 7) {
+          if (messageCase_ == 13) {
             messageCase_ = 0;
             message_ = null;
           }
@@ -5492,33 +5155,33 @@ public final class GCGMessageOuterClass {
         return this;
       }
       /**
-       * <code>.GCGMsgUseSkill use_skill = 7;</code>
+       * <code>.GCGMsgUseSkill use_skill = 13;</code>
        */
       public emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill.Builder getUseSkillBuilder() {
         return getUseSkillFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGMsgUseSkill use_skill = 7;</code>
+       * <code>.GCGMsgUseSkill use_skill = 13;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkillOrBuilder getUseSkillOrBuilder() {
-        if ((messageCase_ == 7) && (useSkillBuilder_ != null)) {
+        if ((messageCase_ == 13) && (useSkillBuilder_ != null)) {
           return useSkillBuilder_.getMessageOrBuilder();
         } else {
-          if (messageCase_ == 7) {
+          if (messageCase_ == 13) {
             return (emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgUseSkill use_skill = 7;</code>
+       * <code>.GCGMsgUseSkill use_skill = 13;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill, emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill.Builder, emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkillOrBuilder> 
           getUseSkillFieldBuilder() {
         if (useSkillBuilder_ == null) {
-          if (!(messageCase_ == 7)) {
+          if (!(messageCase_ == 13)) {
             message_ = emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.GCGMsgUseSkill.getDefaultInstance();
           }
           useSkillBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -5528,7 +5191,7 @@ public final class GCGMessageOuterClass {
                   isClean());
           message_ = null;
         }
-        messageCase_ = 7;
+        messageCase_ = 13;
         onChanged();;
         return useSkillBuilder_;
       }
@@ -5536,33 +5199,33 @@ public final class GCGMessageOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard, emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard.Builder, emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCardOrBuilder> newCardBuilder_;
       /**
-       * <code>.GCGMsgNewCard new_card = 1698;</code>
+       * <code>.GCGMsgNewCard new_card = 1229;</code>
        * @return Whether the newCard field is set.
        */
       @java.lang.Override
       public boolean hasNewCard() {
-        return messageCase_ == 1698;
+        return messageCase_ == 1229;
       }
       /**
-       * <code>.GCGMsgNewCard new_card = 1698;</code>
+       * <code>.GCGMsgNewCard new_card = 1229;</code>
        * @return The newCard.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard getNewCard() {
         if (newCardBuilder_ == null) {
-          if (messageCase_ == 1698) {
+          if (messageCase_ == 1229) {
             return (emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard.getDefaultInstance();
         } else {
-          if (messageCase_ == 1698) {
+          if (messageCase_ == 1229) {
             return newCardBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgNewCard new_card = 1698;</code>
+       * <code>.GCGMsgNewCard new_card = 1229;</code>
        */
       public Builder setNewCard(emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard value) {
         if (newCardBuilder_ == null) {
@@ -5574,11 +5237,11 @@ public final class GCGMessageOuterClass {
         } else {
           newCardBuilder_.setMessage(value);
         }
-        messageCase_ = 1698;
+        messageCase_ = 1229;
         return this;
       }
       /**
-       * <code>.GCGMsgNewCard new_card = 1698;</code>
+       * <code>.GCGMsgNewCard new_card = 1229;</code>
        */
       public Builder setNewCard(
           emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard.Builder builderForValue) {
@@ -5588,15 +5251,15 @@ public final class GCGMessageOuterClass {
         } else {
           newCardBuilder_.setMessage(builderForValue.build());
         }
-        messageCase_ = 1698;
+        messageCase_ = 1229;
         return this;
       }
       /**
-       * <code>.GCGMsgNewCard new_card = 1698;</code>
+       * <code>.GCGMsgNewCard new_card = 1229;</code>
        */
       public Builder mergeNewCard(emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard value) {
         if (newCardBuilder_ == null) {
-          if (messageCase_ == 1698 &&
+          if (messageCase_ == 1229 &&
               message_ != emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard.getDefaultInstance()) {
             message_ = emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard.newBuilder((emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard) message_)
                 .mergeFrom(value).buildPartial();
@@ -5605,26 +5268,26 @@ public final class GCGMessageOuterClass {
           }
           onChanged();
         } else {
-          if (messageCase_ == 1698) {
+          if (messageCase_ == 1229) {
             newCardBuilder_.mergeFrom(value);
           }
           newCardBuilder_.setMessage(value);
         }
-        messageCase_ = 1698;
+        messageCase_ = 1229;
         return this;
       }
       /**
-       * <code>.GCGMsgNewCard new_card = 1698;</code>
+       * <code>.GCGMsgNewCard new_card = 1229;</code>
        */
       public Builder clearNewCard() {
         if (newCardBuilder_ == null) {
-          if (messageCase_ == 1698) {
+          if (messageCase_ == 1229) {
             messageCase_ = 0;
             message_ = null;
             onChanged();
           }
         } else {
-          if (messageCase_ == 1698) {
+          if (messageCase_ == 1229) {
             messageCase_ = 0;
             message_ = null;
           }
@@ -5633,33 +5296,33 @@ public final class GCGMessageOuterClass {
         return this;
       }
       /**
-       * <code>.GCGMsgNewCard new_card = 1698;</code>
+       * <code>.GCGMsgNewCard new_card = 1229;</code>
        */
       public emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard.Builder getNewCardBuilder() {
         return getNewCardFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGMsgNewCard new_card = 1698;</code>
+       * <code>.GCGMsgNewCard new_card = 1229;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCardOrBuilder getNewCardOrBuilder() {
-        if ((messageCase_ == 1698) && (newCardBuilder_ != null)) {
+        if ((messageCase_ == 1229) && (newCardBuilder_ != null)) {
           return newCardBuilder_.getMessageOrBuilder();
         } else {
-          if (messageCase_ == 1698) {
+          if (messageCase_ == 1229) {
             return (emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgNewCard new_card = 1698;</code>
+       * <code>.GCGMsgNewCard new_card = 1229;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard, emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard.Builder, emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCardOrBuilder> 
           getNewCardFieldBuilder() {
         if (newCardBuilder_ == null) {
-          if (!(messageCase_ == 1698)) {
+          if (!(messageCase_ == 1229)) {
             message_ = emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.GCGMsgNewCard.getDefaultInstance();
           }
           newCardBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -5669,7 +5332,7 @@ public final class GCGMessageOuterClass {
                   isClean());
           message_ = null;
         }
-        messageCase_ = 1698;
+        messageCase_ = 1229;
         onChanged();;
         return newCardBuilder_;
       }
@@ -5677,45 +5340,33 @@ public final class GCGMessageOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController, emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController.Builder, emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateControllerOrBuilder> updateControllerBuilder_;
       /**
-       * <pre>
-       *GIHCLFFDKLE snooswap
-       * </pre>
-       *
-       * <code>.GCGMsgUpdateController update_controller = 2016;</code>
+       * <code>.GCGMsgUpdateController update_controller = 1135;</code>
        * @return Whether the updateController field is set.
        */
       @java.lang.Override
       public boolean hasUpdateController() {
-        return messageCase_ == 2016;
+        return messageCase_ == 1135;
       }
       /**
-       * <pre>
-       *GIHCLFFDKLE snooswap
-       * </pre>
-       *
-       * <code>.GCGMsgUpdateController update_controller = 2016;</code>
+       * <code>.GCGMsgUpdateController update_controller = 1135;</code>
        * @return The updateController.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController getUpdateController() {
         if (updateControllerBuilder_ == null) {
-          if (messageCase_ == 2016) {
+          if (messageCase_ == 1135) {
             return (emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController.getDefaultInstance();
         } else {
-          if (messageCase_ == 2016) {
+          if (messageCase_ == 1135) {
             return updateControllerBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController.getDefaultInstance();
         }
       }
       /**
-       * <pre>
-       *GIHCLFFDKLE snooswap
-       * </pre>
-       *
-       * <code>.GCGMsgUpdateController update_controller = 2016;</code>
+       * <code>.GCGMsgUpdateController update_controller = 1135;</code>
        */
       public Builder setUpdateController(emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController value) {
         if (updateControllerBuilder_ == null) {
@@ -5727,15 +5378,11 @@ public final class GCGMessageOuterClass {
         } else {
           updateControllerBuilder_.setMessage(value);
         }
-        messageCase_ = 2016;
+        messageCase_ = 1135;
         return this;
       }
       /**
-       * <pre>
-       *GIHCLFFDKLE snooswap
-       * </pre>
-       *
-       * <code>.GCGMsgUpdateController update_controller = 2016;</code>
+       * <code>.GCGMsgUpdateController update_controller = 1135;</code>
        */
       public Builder setUpdateController(
           emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController.Builder builderForValue) {
@@ -5745,19 +5392,15 @@ public final class GCGMessageOuterClass {
         } else {
           updateControllerBuilder_.setMessage(builderForValue.build());
         }
-        messageCase_ = 2016;
+        messageCase_ = 1135;
         return this;
       }
       /**
-       * <pre>
-       *GIHCLFFDKLE snooswap
-       * </pre>
-       *
-       * <code>.GCGMsgUpdateController update_controller = 2016;</code>
+       * <code>.GCGMsgUpdateController update_controller = 1135;</code>
        */
       public Builder mergeUpdateController(emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController value) {
         if (updateControllerBuilder_ == null) {
-          if (messageCase_ == 2016 &&
+          if (messageCase_ == 1135 &&
               message_ != emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController.getDefaultInstance()) {
             message_ = emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController.newBuilder((emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController) message_)
                 .mergeFrom(value).buildPartial();
@@ -5766,30 +5409,26 @@ public final class GCGMessageOuterClass {
           }
           onChanged();
         } else {
-          if (messageCase_ == 2016) {
+          if (messageCase_ == 1135) {
             updateControllerBuilder_.mergeFrom(value);
           }
           updateControllerBuilder_.setMessage(value);
         }
-        messageCase_ = 2016;
+        messageCase_ = 1135;
         return this;
       }
       /**
-       * <pre>
-       *GIHCLFFDKLE snooswap
-       * </pre>
-       *
-       * <code>.GCGMsgUpdateController update_controller = 2016;</code>
+       * <code>.GCGMsgUpdateController update_controller = 1135;</code>
        */
       public Builder clearUpdateController() {
         if (updateControllerBuilder_ == null) {
-          if (messageCase_ == 2016) {
+          if (messageCase_ == 1135) {
             messageCase_ = 0;
             message_ = null;
             onChanged();
           }
         } else {
-          if (messageCase_ == 2016) {
+          if (messageCase_ == 1135) {
             messageCase_ = 0;
             message_ = null;
           }
@@ -5798,45 +5437,33 @@ public final class GCGMessageOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *GIHCLFFDKLE snooswap
-       * </pre>
-       *
-       * <code>.GCGMsgUpdateController update_controller = 2016;</code>
+       * <code>.GCGMsgUpdateController update_controller = 1135;</code>
        */
       public emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController.Builder getUpdateControllerBuilder() {
         return getUpdateControllerFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *GIHCLFFDKLE snooswap
-       * </pre>
-       *
-       * <code>.GCGMsgUpdateController update_controller = 2016;</code>
+       * <code>.GCGMsgUpdateController update_controller = 1135;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateControllerOrBuilder getUpdateControllerOrBuilder() {
-        if ((messageCase_ == 2016) && (updateControllerBuilder_ != null)) {
+        if ((messageCase_ == 1135) && (updateControllerBuilder_ != null)) {
           return updateControllerBuilder_.getMessageOrBuilder();
         } else {
-          if (messageCase_ == 2016) {
+          if (messageCase_ == 1135) {
             return (emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController.getDefaultInstance();
         }
       }
       /**
-       * <pre>
-       *GIHCLFFDKLE snooswap
-       * </pre>
-       *
-       * <code>.GCGMsgUpdateController update_controller = 2016;</code>
+       * <code>.GCGMsgUpdateController update_controller = 1135;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController, emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController.Builder, emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateControllerOrBuilder> 
           getUpdateControllerFieldBuilder() {
         if (updateControllerBuilder_ == null) {
-          if (!(messageCase_ == 2016)) {
+          if (!(messageCase_ == 1135)) {
             message_ = emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.GCGMsgUpdateController.getDefaultInstance();
           }
           updateControllerBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -5846,7 +5473,7 @@ public final class GCGMessageOuterClass {
                   isClean());
           message_ = null;
         }
-        messageCase_ = 2016;
+        messageCase_ = 1135;
         onChanged();;
         return updateControllerBuilder_;
       }
@@ -5854,33 +5481,33 @@ public final class GCGMessageOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAdd, emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAdd.Builder, emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAddOrBuilder> modifyAddBuilder_;
       /**
-       * <code>.GCGMsgModifyAdd modify_add = 555;</code>
+       * <code>.GCGMsgModifyAdd modify_add = 1437;</code>
        * @return Whether the modifyAdd field is set.
        */
       @java.lang.Override
       public boolean hasModifyAdd() {
-        return messageCase_ == 555;
+        return messageCase_ == 1437;
       }
       /**
-       * <code>.GCGMsgModifyAdd modify_add = 555;</code>
+       * <code>.GCGMsgModifyAdd modify_add = 1437;</code>
        * @return The modifyAdd.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAdd getModifyAdd() {
         if (modifyAddBuilder_ == null) {
-          if (messageCase_ == 555) {
+          if (messageCase_ == 1437) {
             return (emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAdd) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAdd.getDefaultInstance();
         } else {
-          if (messageCase_ == 555) {
+          if (messageCase_ == 1437) {
             return modifyAddBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAdd.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgModifyAdd modify_add = 555;</code>
+       * <code>.GCGMsgModifyAdd modify_add = 1437;</code>
        */
       public Builder setModifyAdd(emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAdd value) {
         if (modifyAddBuilder_ == null) {
@@ -5892,11 +5519,11 @@ public final class GCGMessageOuterClass {
         } else {
           modifyAddBuilder_.setMessage(value);
         }
-        messageCase_ = 555;
+        messageCase_ = 1437;
         return this;
       }
       /**
-       * <code>.GCGMsgModifyAdd modify_add = 555;</code>
+       * <code>.GCGMsgModifyAdd modify_add = 1437;</code>
        */
       public Builder setModifyAdd(
           emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAdd.Builder builderForValue) {
@@ -5906,15 +5533,15 @@ public final class GCGMessageOuterClass {
         } else {
           modifyAddBuilder_.setMessage(builderForValue.build());
         }
-        messageCase_ = 555;
+        messageCase_ = 1437;
         return this;
       }
       /**
-       * <code>.GCGMsgModifyAdd modify_add = 555;</code>
+       * <code>.GCGMsgModifyAdd modify_add = 1437;</code>
        */
       public Builder mergeModifyAdd(emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAdd value) {
         if (modifyAddBuilder_ == null) {
-          if (messageCase_ == 555 &&
+          if (messageCase_ == 1437 &&
               message_ != emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAdd.getDefaultInstance()) {
             message_ = emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAdd.newBuilder((emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAdd) message_)
                 .mergeFrom(value).buildPartial();
@@ -5923,26 +5550,26 @@ public final class GCGMessageOuterClass {
           }
           onChanged();
         } else {
-          if (messageCase_ == 555) {
+          if (messageCase_ == 1437) {
             modifyAddBuilder_.mergeFrom(value);
           }
           modifyAddBuilder_.setMessage(value);
         }
-        messageCase_ = 555;
+        messageCase_ = 1437;
         return this;
       }
       /**
-       * <code>.GCGMsgModifyAdd modify_add = 555;</code>
+       * <code>.GCGMsgModifyAdd modify_add = 1437;</code>
        */
       public Builder clearModifyAdd() {
         if (modifyAddBuilder_ == null) {
-          if (messageCase_ == 555) {
+          if (messageCase_ == 1437) {
             messageCase_ = 0;
             message_ = null;
             onChanged();
           }
         } else {
-          if (messageCase_ == 555) {
+          if (messageCase_ == 1437) {
             messageCase_ = 0;
             message_ = null;
           }
@@ -5951,33 +5578,33 @@ public final class GCGMessageOuterClass {
         return this;
       }
       /**
-       * <code>.GCGMsgModifyAdd modify_add = 555;</code>
+       * <code>.GCGMsgModifyAdd modify_add = 1437;</code>
        */
       public emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAdd.Builder getModifyAddBuilder() {
         return getModifyAddFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGMsgModifyAdd modify_add = 555;</code>
+       * <code>.GCGMsgModifyAdd modify_add = 1437;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAddOrBuilder getModifyAddOrBuilder() {
-        if ((messageCase_ == 555) && (modifyAddBuilder_ != null)) {
+        if ((messageCase_ == 1437) && (modifyAddBuilder_ != null)) {
           return modifyAddBuilder_.getMessageOrBuilder();
         } else {
-          if (messageCase_ == 555) {
+          if (messageCase_ == 1437) {
             return (emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAdd) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAdd.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgModifyAdd modify_add = 555;</code>
+       * <code>.GCGMsgModifyAdd modify_add = 1437;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAdd, emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAdd.Builder, emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAddOrBuilder> 
           getModifyAddFieldBuilder() {
         if (modifyAddBuilder_ == null) {
-          if (!(messageCase_ == 555)) {
+          if (!(messageCase_ == 1437)) {
             message_ = emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.GCGMsgModifyAdd.getDefaultInstance();
           }
           modifyAddBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -5987,7 +5614,7 @@ public final class GCGMessageOuterClass {
                   isClean());
           message_ = null;
         }
-        messageCase_ = 555;
+        messageCase_ = 1437;
         onChanged();;
         return modifyAddBuilder_;
       }
@@ -5995,33 +5622,33 @@ public final class GCGMessageOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemove, emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemove.Builder, emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemoveOrBuilder> modifyRemoveBuilder_;
       /**
-       * <code>.GCGMsgModifyRemove modify_remove = 1901;</code>
+       * <code>.GCGMsgModifyRemove modify_remove = 1575;</code>
        * @return Whether the modifyRemove field is set.
        */
       @java.lang.Override
       public boolean hasModifyRemove() {
-        return messageCase_ == 1901;
+        return messageCase_ == 1575;
       }
       /**
-       * <code>.GCGMsgModifyRemove modify_remove = 1901;</code>
+       * <code>.GCGMsgModifyRemove modify_remove = 1575;</code>
        * @return The modifyRemove.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemove getModifyRemove() {
         if (modifyRemoveBuilder_ == null) {
-          if (messageCase_ == 1901) {
+          if (messageCase_ == 1575) {
             return (emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemove) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemove.getDefaultInstance();
         } else {
-          if (messageCase_ == 1901) {
+          if (messageCase_ == 1575) {
             return modifyRemoveBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemove.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgModifyRemove modify_remove = 1901;</code>
+       * <code>.GCGMsgModifyRemove modify_remove = 1575;</code>
        */
       public Builder setModifyRemove(emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemove value) {
         if (modifyRemoveBuilder_ == null) {
@@ -6033,11 +5660,11 @@ public final class GCGMessageOuterClass {
         } else {
           modifyRemoveBuilder_.setMessage(value);
         }
-        messageCase_ = 1901;
+        messageCase_ = 1575;
         return this;
       }
       /**
-       * <code>.GCGMsgModifyRemove modify_remove = 1901;</code>
+       * <code>.GCGMsgModifyRemove modify_remove = 1575;</code>
        */
       public Builder setModifyRemove(
           emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemove.Builder builderForValue) {
@@ -6047,15 +5674,15 @@ public final class GCGMessageOuterClass {
         } else {
           modifyRemoveBuilder_.setMessage(builderForValue.build());
         }
-        messageCase_ = 1901;
+        messageCase_ = 1575;
         return this;
       }
       /**
-       * <code>.GCGMsgModifyRemove modify_remove = 1901;</code>
+       * <code>.GCGMsgModifyRemove modify_remove = 1575;</code>
        */
       public Builder mergeModifyRemove(emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemove value) {
         if (modifyRemoveBuilder_ == null) {
-          if (messageCase_ == 1901 &&
+          if (messageCase_ == 1575 &&
               message_ != emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemove.getDefaultInstance()) {
             message_ = emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemove.newBuilder((emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemove) message_)
                 .mergeFrom(value).buildPartial();
@@ -6064,26 +5691,26 @@ public final class GCGMessageOuterClass {
           }
           onChanged();
         } else {
-          if (messageCase_ == 1901) {
+          if (messageCase_ == 1575) {
             modifyRemoveBuilder_.mergeFrom(value);
           }
           modifyRemoveBuilder_.setMessage(value);
         }
-        messageCase_ = 1901;
+        messageCase_ = 1575;
         return this;
       }
       /**
-       * <code>.GCGMsgModifyRemove modify_remove = 1901;</code>
+       * <code>.GCGMsgModifyRemove modify_remove = 1575;</code>
        */
       public Builder clearModifyRemove() {
         if (modifyRemoveBuilder_ == null) {
-          if (messageCase_ == 1901) {
+          if (messageCase_ == 1575) {
             messageCase_ = 0;
             message_ = null;
             onChanged();
           }
         } else {
-          if (messageCase_ == 1901) {
+          if (messageCase_ == 1575) {
             messageCase_ = 0;
             message_ = null;
           }
@@ -6092,33 +5719,33 @@ public final class GCGMessageOuterClass {
         return this;
       }
       /**
-       * <code>.GCGMsgModifyRemove modify_remove = 1901;</code>
+       * <code>.GCGMsgModifyRemove modify_remove = 1575;</code>
        */
       public emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemove.Builder getModifyRemoveBuilder() {
         return getModifyRemoveFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGMsgModifyRemove modify_remove = 1901;</code>
+       * <code>.GCGMsgModifyRemove modify_remove = 1575;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemoveOrBuilder getModifyRemoveOrBuilder() {
-        if ((messageCase_ == 1901) && (modifyRemoveBuilder_ != null)) {
+        if ((messageCase_ == 1575) && (modifyRemoveBuilder_ != null)) {
           return modifyRemoveBuilder_.getMessageOrBuilder();
         } else {
-          if (messageCase_ == 1901) {
+          if (messageCase_ == 1575) {
             return (emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemove) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemove.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgModifyRemove modify_remove = 1901;</code>
+       * <code>.GCGMsgModifyRemove modify_remove = 1575;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemove, emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemove.Builder, emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemoveOrBuilder> 
           getModifyRemoveFieldBuilder() {
         if (modifyRemoveBuilder_ == null) {
-          if (!(messageCase_ == 1901)) {
+          if (!(messageCase_ == 1575)) {
             message_ = emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.GCGMsgModifyRemove.getDefaultInstance();
           }
           modifyRemoveBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -6128,7 +5755,7 @@ public final class GCGMessageOuterClass {
                   isClean());
           message_ = null;
         }
-        messageCase_ = 1901;
+        messageCase_ = 1575;
         onChanged();;
         return modifyRemoveBuilder_;
       }
@@ -6136,33 +5763,33 @@ public final class GCGMessageOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd, emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd.Builder, emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEndOrBuilder> useSkillEndBuilder_;
       /**
-       * <code>.GCGMsgUseSkillEnd use_skill_end = 1067;</code>
+       * <code>.GCGMsgUseSkillEnd use_skill_end = 1426;</code>
        * @return Whether the useSkillEnd field is set.
        */
       @java.lang.Override
       public boolean hasUseSkillEnd() {
-        return messageCase_ == 1067;
+        return messageCase_ == 1426;
       }
       /**
-       * <code>.GCGMsgUseSkillEnd use_skill_end = 1067;</code>
+       * <code>.GCGMsgUseSkillEnd use_skill_end = 1426;</code>
        * @return The useSkillEnd.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd getUseSkillEnd() {
         if (useSkillEndBuilder_ == null) {
-          if (messageCase_ == 1067) {
+          if (messageCase_ == 1426) {
             return (emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd.getDefaultInstance();
         } else {
-          if (messageCase_ == 1067) {
+          if (messageCase_ == 1426) {
             return useSkillEndBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgUseSkillEnd use_skill_end = 1067;</code>
+       * <code>.GCGMsgUseSkillEnd use_skill_end = 1426;</code>
        */
       public Builder setUseSkillEnd(emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd value) {
         if (useSkillEndBuilder_ == null) {
@@ -6174,11 +5801,11 @@ public final class GCGMessageOuterClass {
         } else {
           useSkillEndBuilder_.setMessage(value);
         }
-        messageCase_ = 1067;
+        messageCase_ = 1426;
         return this;
       }
       /**
-       * <code>.GCGMsgUseSkillEnd use_skill_end = 1067;</code>
+       * <code>.GCGMsgUseSkillEnd use_skill_end = 1426;</code>
        */
       public Builder setUseSkillEnd(
           emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd.Builder builderForValue) {
@@ -6188,15 +5815,15 @@ public final class GCGMessageOuterClass {
         } else {
           useSkillEndBuilder_.setMessage(builderForValue.build());
         }
-        messageCase_ = 1067;
+        messageCase_ = 1426;
         return this;
       }
       /**
-       * <code>.GCGMsgUseSkillEnd use_skill_end = 1067;</code>
+       * <code>.GCGMsgUseSkillEnd use_skill_end = 1426;</code>
        */
       public Builder mergeUseSkillEnd(emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd value) {
         if (useSkillEndBuilder_ == null) {
-          if (messageCase_ == 1067 &&
+          if (messageCase_ == 1426 &&
               message_ != emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd.getDefaultInstance()) {
             message_ = emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd.newBuilder((emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd) message_)
                 .mergeFrom(value).buildPartial();
@@ -6205,26 +5832,26 @@ public final class GCGMessageOuterClass {
           }
           onChanged();
         } else {
-          if (messageCase_ == 1067) {
+          if (messageCase_ == 1426) {
             useSkillEndBuilder_.mergeFrom(value);
           }
           useSkillEndBuilder_.setMessage(value);
         }
-        messageCase_ = 1067;
+        messageCase_ = 1426;
         return this;
       }
       /**
-       * <code>.GCGMsgUseSkillEnd use_skill_end = 1067;</code>
+       * <code>.GCGMsgUseSkillEnd use_skill_end = 1426;</code>
        */
       public Builder clearUseSkillEnd() {
         if (useSkillEndBuilder_ == null) {
-          if (messageCase_ == 1067) {
+          if (messageCase_ == 1426) {
             messageCase_ = 0;
             message_ = null;
             onChanged();
           }
         } else {
-          if (messageCase_ == 1067) {
+          if (messageCase_ == 1426) {
             messageCase_ = 0;
             message_ = null;
           }
@@ -6233,33 +5860,33 @@ public final class GCGMessageOuterClass {
         return this;
       }
       /**
-       * <code>.GCGMsgUseSkillEnd use_skill_end = 1067;</code>
+       * <code>.GCGMsgUseSkillEnd use_skill_end = 1426;</code>
        */
       public emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd.Builder getUseSkillEndBuilder() {
         return getUseSkillEndFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGMsgUseSkillEnd use_skill_end = 1067;</code>
+       * <code>.GCGMsgUseSkillEnd use_skill_end = 1426;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEndOrBuilder getUseSkillEndOrBuilder() {
-        if ((messageCase_ == 1067) && (useSkillEndBuilder_ != null)) {
+        if ((messageCase_ == 1426) && (useSkillEndBuilder_ != null)) {
           return useSkillEndBuilder_.getMessageOrBuilder();
         } else {
-          if (messageCase_ == 1067) {
+          if (messageCase_ == 1426) {
             return (emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgUseSkillEnd use_skill_end = 1067;</code>
+       * <code>.GCGMsgUseSkillEnd use_skill_end = 1426;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd, emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd.Builder, emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEndOrBuilder> 
           getUseSkillEndFieldBuilder() {
         if (useSkillEndBuilder_ == null) {
-          if (!(messageCase_ == 1067)) {
+          if (!(messageCase_ == 1426)) {
             message_ = emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.GCGMsgUseSkillEnd.getDefaultInstance();
           }
           useSkillEndBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -6269,7 +5896,7 @@ public final class GCGMessageOuterClass {
                   isClean());
           message_ = null;
         }
-        messageCase_ = 1067;
+        messageCase_ = 1426;
         onChanged();;
         return useSkillEndBuilder_;
       }
@@ -6277,33 +5904,33 @@ public final class GCGMessageOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange, emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange.Builder, emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChangeOrBuilder> duelDataChangeBuilder_;
       /**
-       * <code>.GCGMsgDuelDataChange duel_data_change = 686;</code>
+       * <code>.GCGMsgDuelDataChange duel_data_change = 526;</code>
        * @return Whether the duelDataChange field is set.
        */
       @java.lang.Override
       public boolean hasDuelDataChange() {
-        return messageCase_ == 686;
+        return messageCase_ == 526;
       }
       /**
-       * <code>.GCGMsgDuelDataChange duel_data_change = 686;</code>
+       * <code>.GCGMsgDuelDataChange duel_data_change = 526;</code>
        * @return The duelDataChange.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange getDuelDataChange() {
         if (duelDataChangeBuilder_ == null) {
-          if (messageCase_ == 686) {
+          if (messageCase_ == 526) {
             return (emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange.getDefaultInstance();
         } else {
-          if (messageCase_ == 686) {
+          if (messageCase_ == 526) {
             return duelDataChangeBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgDuelDataChange duel_data_change = 686;</code>
+       * <code>.GCGMsgDuelDataChange duel_data_change = 526;</code>
        */
       public Builder setDuelDataChange(emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange value) {
         if (duelDataChangeBuilder_ == null) {
@@ -6315,11 +5942,11 @@ public final class GCGMessageOuterClass {
         } else {
           duelDataChangeBuilder_.setMessage(value);
         }
-        messageCase_ = 686;
+        messageCase_ = 526;
         return this;
       }
       /**
-       * <code>.GCGMsgDuelDataChange duel_data_change = 686;</code>
+       * <code>.GCGMsgDuelDataChange duel_data_change = 526;</code>
        */
       public Builder setDuelDataChange(
           emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange.Builder builderForValue) {
@@ -6329,15 +5956,15 @@ public final class GCGMessageOuterClass {
         } else {
           duelDataChangeBuilder_.setMessage(builderForValue.build());
         }
-        messageCase_ = 686;
+        messageCase_ = 526;
         return this;
       }
       /**
-       * <code>.GCGMsgDuelDataChange duel_data_change = 686;</code>
+       * <code>.GCGMsgDuelDataChange duel_data_change = 526;</code>
        */
       public Builder mergeDuelDataChange(emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange value) {
         if (duelDataChangeBuilder_ == null) {
-          if (messageCase_ == 686 &&
+          if (messageCase_ == 526 &&
               message_ != emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange.getDefaultInstance()) {
             message_ = emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange.newBuilder((emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange) message_)
                 .mergeFrom(value).buildPartial();
@@ -6346,26 +5973,26 @@ public final class GCGMessageOuterClass {
           }
           onChanged();
         } else {
-          if (messageCase_ == 686) {
+          if (messageCase_ == 526) {
             duelDataChangeBuilder_.mergeFrom(value);
           }
           duelDataChangeBuilder_.setMessage(value);
         }
-        messageCase_ = 686;
+        messageCase_ = 526;
         return this;
       }
       /**
-       * <code>.GCGMsgDuelDataChange duel_data_change = 686;</code>
+       * <code>.GCGMsgDuelDataChange duel_data_change = 526;</code>
        */
       public Builder clearDuelDataChange() {
         if (duelDataChangeBuilder_ == null) {
-          if (messageCase_ == 686) {
+          if (messageCase_ == 526) {
             messageCase_ = 0;
             message_ = null;
             onChanged();
           }
         } else {
-          if (messageCase_ == 686) {
+          if (messageCase_ == 526) {
             messageCase_ = 0;
             message_ = null;
           }
@@ -6374,33 +6001,33 @@ public final class GCGMessageOuterClass {
         return this;
       }
       /**
-       * <code>.GCGMsgDuelDataChange duel_data_change = 686;</code>
+       * <code>.GCGMsgDuelDataChange duel_data_change = 526;</code>
        */
       public emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange.Builder getDuelDataChangeBuilder() {
         return getDuelDataChangeFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGMsgDuelDataChange duel_data_change = 686;</code>
+       * <code>.GCGMsgDuelDataChange duel_data_change = 526;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChangeOrBuilder getDuelDataChangeOrBuilder() {
-        if ((messageCase_ == 686) && (duelDataChangeBuilder_ != null)) {
+        if ((messageCase_ == 526) && (duelDataChangeBuilder_ != null)) {
           return duelDataChangeBuilder_.getMessageOrBuilder();
         } else {
-          if (messageCase_ == 686) {
+          if (messageCase_ == 526) {
             return (emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgDuelDataChange duel_data_change = 686;</code>
+       * <code>.GCGMsgDuelDataChange duel_data_change = 526;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange, emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange.Builder, emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChangeOrBuilder> 
           getDuelDataChangeFieldBuilder() {
         if (duelDataChangeBuilder_ == null) {
-          if (!(messageCase_ == 686)) {
+          if (!(messageCase_ == 526)) {
             message_ = emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.GCGMsgDuelDataChange.getDefaultInstance();
           }
           duelDataChangeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -6410,7 +6037,7 @@ public final class GCGMessageOuterClass {
                   isClean());
           message_ = null;
         }
-        messageCase_ = 686;
+        messageCase_ = 526;
         onChanged();;
         return duelDataChangeBuilder_;
       }
@@ -6418,33 +6045,33 @@ public final class GCGMessageOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.GCGMsgClientPerform, emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.GCGMsgClientPerform.Builder, emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.GCGMsgClientPerformOrBuilder> clientPerformBuilder_;
       /**
-       * <code>.GCGMsgClientPerform client_perform = 1743;</code>
+       * <code>.GCGMsgClientPerform client_perform = 230;</code>
        * @return Whether the clientPerform field is set.
        */
       @java.lang.Override
       public boolean hasClientPerform() {
-        return messageCase_ == 1743;
+        return messageCase_ == 230;
       }
       /**
-       * <code>.GCGMsgClientPerform client_perform = 1743;</code>
+       * <code>.GCGMsgClientPerform client_perform = 230;</code>
        * @return The clientPerform.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.GCGMsgClientPerform getClientPerform() {
         if (clientPerformBuilder_ == null) {
-          if (messageCase_ == 1743) {
+          if (messageCase_ == 230) {
             return (emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.GCGMsgClientPerform) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.GCGMsgClientPerform.getDefaultInstance();
         } else {
-          if (messageCase_ == 1743) {
+          if (messageCase_ == 230) {
             return clientPerformBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.GCGMsgClientPerform.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgClientPerform client_perform = 1743;</code>
+       * <code>.GCGMsgClientPerform client_perform = 230;</code>
        */
       public Builder setClientPerform(emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.GCGMsgClientPerform value) {
         if (clientPerformBuilder_ == null) {
@@ -6456,11 +6083,11 @@ public final class GCGMessageOuterClass {
         } else {
           clientPerformBuilder_.setMessage(value);
         }
-        messageCase_ = 1743;
+        messageCase_ = 230;
         return this;
       }
       /**
-       * <code>.GCGMsgClientPerform client_perform = 1743;</code>
+       * <code>.GCGMsgClientPerform client_perform = 230;</code>
        */
       public Builder setClientPerform(
           emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.GCGMsgClientPerform.Builder builderForValue) {
@@ -6470,15 +6097,15 @@ public final class GCGMessageOuterClass {
         } else {
           clientPerformBuilder_.setMessage(builderForValue.build());
         }
-        messageCase_ = 1743;
+        messageCase_ = 230;
         return this;
       }
       /**
-       * <code>.GCGMsgClientPerform client_perform = 1743;</code>
+       * <code>.GCGMsgClientPerform client_perform = 230;</code>
        */
       public Builder mergeClientPerform(emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.GCGMsgClientPerform value) {
         if (clientPerformBuilder_ == null) {
-          if (messageCase_ == 1743 &&
+          if (messageCase_ == 230 &&
               message_ != emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.GCGMsgClientPerform.getDefaultInstance()) {
             message_ = emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.GCGMsgClientPerform.newBuilder((emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.GCGMsgClientPerform) message_)
                 .mergeFrom(value).buildPartial();
@@ -6487,26 +6114,26 @@ public final class GCGMessageOuterClass {
           }
           onChanged();
         } else {
-          if (messageCase_ == 1743) {
+          if (messageCase_ == 230) {
             clientPerformBuilder_.mergeFrom(value);
           }
           clientPerformBuilder_.setMessage(value);
         }
-        messageCase_ = 1743;
+        messageCase_ = 230;
         return this;
       }
       /**
-       * <code>.GCGMsgClientPerform client_perform = 1743;</code>
+       * <code>.GCGMsgClientPerform client_perform = 230;</code>
        */
       public Builder clearClientPerform() {
         if (clientPerformBuilder_ == null) {
-          if (messageCase_ == 1743) {
+          if (messageCase_ == 230) {
             messageCase_ = 0;
             message_ = null;
             onChanged();
           }
         } else {
-          if (messageCase_ == 1743) {
+          if (messageCase_ == 230) {
             messageCase_ = 0;
             message_ = null;
           }
@@ -6515,33 +6142,33 @@ public final class GCGMessageOuterClass {
         return this;
       }
       /**
-       * <code>.GCGMsgClientPerform client_perform = 1743;</code>
+       * <code>.GCGMsgClientPerform client_perform = 230;</code>
        */
       public emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.GCGMsgClientPerform.Builder getClientPerformBuilder() {
         return getClientPerformFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGMsgClientPerform client_perform = 1743;</code>
+       * <code>.GCGMsgClientPerform client_perform = 230;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.GCGMsgClientPerformOrBuilder getClientPerformOrBuilder() {
-        if ((messageCase_ == 1743) && (clientPerformBuilder_ != null)) {
+        if ((messageCase_ == 230) && (clientPerformBuilder_ != null)) {
           return clientPerformBuilder_.getMessageOrBuilder();
         } else {
-          if (messageCase_ == 1743) {
+          if (messageCase_ == 230) {
             return (emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.GCGMsgClientPerform) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.GCGMsgClientPerform.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgClientPerform client_perform = 1743;</code>
+       * <code>.GCGMsgClientPerform client_perform = 230;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.GCGMsgClientPerform, emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.GCGMsgClientPerform.Builder, emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.GCGMsgClientPerformOrBuilder> 
           getClientPerformFieldBuilder() {
         if (clientPerformBuilder_ == null) {
-          if (!(messageCase_ == 1743)) {
+          if (!(messageCase_ == 230)) {
             message_ = emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.GCGMsgClientPerform.getDefaultInstance();
           }
           clientPerformBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -6551,7 +6178,7 @@ public final class GCGMessageOuterClass {
                   isClean());
           message_ = null;
         }
-        messageCase_ = 1743;
+        messageCase_ = 230;
         onChanged();;
         return clientPerformBuilder_;
       }
@@ -6559,33 +6186,33 @@ public final class GCGMessageOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOver, emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOver.Builder, emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOverOrBuilder> gameOverBuilder_;
       /**
-       * <code>.GCGMsgGameOver game_over = 1766;</code>
+       * <code>.GCGMsgGameOver game_over = 900;</code>
        * @return Whether the gameOver field is set.
        */
       @java.lang.Override
       public boolean hasGameOver() {
-        return messageCase_ == 1766;
+        return messageCase_ == 900;
       }
       /**
-       * <code>.GCGMsgGameOver game_over = 1766;</code>
+       * <code>.GCGMsgGameOver game_over = 900;</code>
        * @return The gameOver.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOver getGameOver() {
         if (gameOverBuilder_ == null) {
-          if (messageCase_ == 1766) {
+          if (messageCase_ == 900) {
             return (emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOver) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOver.getDefaultInstance();
         } else {
-          if (messageCase_ == 1766) {
+          if (messageCase_ == 900) {
             return gameOverBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOver.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgGameOver game_over = 1766;</code>
+       * <code>.GCGMsgGameOver game_over = 900;</code>
        */
       public Builder setGameOver(emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOver value) {
         if (gameOverBuilder_ == null) {
@@ -6597,11 +6224,11 @@ public final class GCGMessageOuterClass {
         } else {
           gameOverBuilder_.setMessage(value);
         }
-        messageCase_ = 1766;
+        messageCase_ = 900;
         return this;
       }
       /**
-       * <code>.GCGMsgGameOver game_over = 1766;</code>
+       * <code>.GCGMsgGameOver game_over = 900;</code>
        */
       public Builder setGameOver(
           emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOver.Builder builderForValue) {
@@ -6611,15 +6238,15 @@ public final class GCGMessageOuterClass {
         } else {
           gameOverBuilder_.setMessage(builderForValue.build());
         }
-        messageCase_ = 1766;
+        messageCase_ = 900;
         return this;
       }
       /**
-       * <code>.GCGMsgGameOver game_over = 1766;</code>
+       * <code>.GCGMsgGameOver game_over = 900;</code>
        */
       public Builder mergeGameOver(emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOver value) {
         if (gameOverBuilder_ == null) {
-          if (messageCase_ == 1766 &&
+          if (messageCase_ == 900 &&
               message_ != emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOver.getDefaultInstance()) {
             message_ = emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOver.newBuilder((emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOver) message_)
                 .mergeFrom(value).buildPartial();
@@ -6628,26 +6255,26 @@ public final class GCGMessageOuterClass {
           }
           onChanged();
         } else {
-          if (messageCase_ == 1766) {
+          if (messageCase_ == 900) {
             gameOverBuilder_.mergeFrom(value);
           }
           gameOverBuilder_.setMessage(value);
         }
-        messageCase_ = 1766;
+        messageCase_ = 900;
         return this;
       }
       /**
-       * <code>.GCGMsgGameOver game_over = 1766;</code>
+       * <code>.GCGMsgGameOver game_over = 900;</code>
        */
       public Builder clearGameOver() {
         if (gameOverBuilder_ == null) {
-          if (messageCase_ == 1766) {
+          if (messageCase_ == 900) {
             messageCase_ = 0;
             message_ = null;
             onChanged();
           }
         } else {
-          if (messageCase_ == 1766) {
+          if (messageCase_ == 900) {
             messageCase_ = 0;
             message_ = null;
           }
@@ -6656,33 +6283,33 @@ public final class GCGMessageOuterClass {
         return this;
       }
       /**
-       * <code>.GCGMsgGameOver game_over = 1766;</code>
+       * <code>.GCGMsgGameOver game_over = 900;</code>
        */
       public emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOver.Builder getGameOverBuilder() {
         return getGameOverFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGMsgGameOver game_over = 1766;</code>
+       * <code>.GCGMsgGameOver game_over = 900;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOverOrBuilder getGameOverOrBuilder() {
-        if ((messageCase_ == 1766) && (gameOverBuilder_ != null)) {
+        if ((messageCase_ == 900) && (gameOverBuilder_ != null)) {
           return gameOverBuilder_.getMessageOrBuilder();
         } else {
-          if (messageCase_ == 1766) {
+          if (messageCase_ == 900) {
             return (emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOver) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOver.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgGameOver game_over = 1766;</code>
+       * <code>.GCGMsgGameOver game_over = 900;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOver, emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOver.Builder, emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOverOrBuilder> 
           getGameOverFieldBuilder() {
         if (gameOverBuilder_ == null) {
-          if (!(messageCase_ == 1766)) {
+          if (!(messageCase_ == 900)) {
             message_ = emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.GCGMsgGameOver.getDefaultInstance();
           }
           gameOverBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -6692,7 +6319,7 @@ public final class GCGMessageOuterClass {
                   isClean());
           message_ = null;
         }
-        messageCase_ = 1766;
+        messageCase_ = 900;
         onChanged();;
         return gameOverBuilder_;
       }
@@ -6700,45 +6327,33 @@ public final class GCGMessageOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer, emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer.Builder, emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimerOrBuilder> opTimerBuilder_;
       /**
-       * <pre>
-       *AOHEFFCPELI snooswap
-       * </pre>
-       *
-       * <code>.GCGMsgOpTimer op_timer = 167;</code>
+       * <code>.GCGMsgOpTimer op_timer = 352;</code>
        * @return Whether the opTimer field is set.
        */
       @java.lang.Override
       public boolean hasOpTimer() {
-        return messageCase_ == 167;
+        return messageCase_ == 352;
       }
       /**
-       * <pre>
-       *AOHEFFCPELI snooswap
-       * </pre>
-       *
-       * <code>.GCGMsgOpTimer op_timer = 167;</code>
+       * <code>.GCGMsgOpTimer op_timer = 352;</code>
        * @return The opTimer.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer getOpTimer() {
         if (opTimerBuilder_ == null) {
-          if (messageCase_ == 167) {
+          if (messageCase_ == 352) {
             return (emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer.getDefaultInstance();
         } else {
-          if (messageCase_ == 167) {
+          if (messageCase_ == 352) {
             return opTimerBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer.getDefaultInstance();
         }
       }
       /**
-       * <pre>
-       *AOHEFFCPELI snooswap
-       * </pre>
-       *
-       * <code>.GCGMsgOpTimer op_timer = 167;</code>
+       * <code>.GCGMsgOpTimer op_timer = 352;</code>
        */
       public Builder setOpTimer(emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer value) {
         if (opTimerBuilder_ == null) {
@@ -6750,15 +6365,11 @@ public final class GCGMessageOuterClass {
         } else {
           opTimerBuilder_.setMessage(value);
         }
-        messageCase_ = 167;
+        messageCase_ = 352;
         return this;
       }
       /**
-       * <pre>
-       *AOHEFFCPELI snooswap
-       * </pre>
-       *
-       * <code>.GCGMsgOpTimer op_timer = 167;</code>
+       * <code>.GCGMsgOpTimer op_timer = 352;</code>
        */
       public Builder setOpTimer(
           emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer.Builder builderForValue) {
@@ -6768,19 +6379,15 @@ public final class GCGMessageOuterClass {
         } else {
           opTimerBuilder_.setMessage(builderForValue.build());
         }
-        messageCase_ = 167;
+        messageCase_ = 352;
         return this;
       }
       /**
-       * <pre>
-       *AOHEFFCPELI snooswap
-       * </pre>
-       *
-       * <code>.GCGMsgOpTimer op_timer = 167;</code>
+       * <code>.GCGMsgOpTimer op_timer = 352;</code>
        */
       public Builder mergeOpTimer(emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer value) {
         if (opTimerBuilder_ == null) {
-          if (messageCase_ == 167 &&
+          if (messageCase_ == 352 &&
               message_ != emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer.getDefaultInstance()) {
             message_ = emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer.newBuilder((emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer) message_)
                 .mergeFrom(value).buildPartial();
@@ -6789,30 +6396,26 @@ public final class GCGMessageOuterClass {
           }
           onChanged();
         } else {
-          if (messageCase_ == 167) {
+          if (messageCase_ == 352) {
             opTimerBuilder_.mergeFrom(value);
           }
           opTimerBuilder_.setMessage(value);
         }
-        messageCase_ = 167;
+        messageCase_ = 352;
         return this;
       }
       /**
-       * <pre>
-       *AOHEFFCPELI snooswap
-       * </pre>
-       *
-       * <code>.GCGMsgOpTimer op_timer = 167;</code>
+       * <code>.GCGMsgOpTimer op_timer = 352;</code>
        */
       public Builder clearOpTimer() {
         if (opTimerBuilder_ == null) {
-          if (messageCase_ == 167) {
+          if (messageCase_ == 352) {
             messageCase_ = 0;
             message_ = null;
             onChanged();
           }
         } else {
-          if (messageCase_ == 167) {
+          if (messageCase_ == 352) {
             messageCase_ = 0;
             message_ = null;
           }
@@ -6821,45 +6424,33 @@ public final class GCGMessageOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *AOHEFFCPELI snooswap
-       * </pre>
-       *
-       * <code>.GCGMsgOpTimer op_timer = 167;</code>
+       * <code>.GCGMsgOpTimer op_timer = 352;</code>
        */
       public emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer.Builder getOpTimerBuilder() {
         return getOpTimerFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *AOHEFFCPELI snooswap
-       * </pre>
-       *
-       * <code>.GCGMsgOpTimer op_timer = 167;</code>
+       * <code>.GCGMsgOpTimer op_timer = 352;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimerOrBuilder getOpTimerOrBuilder() {
-        if ((messageCase_ == 167) && (opTimerBuilder_ != null)) {
+        if ((messageCase_ == 352) && (opTimerBuilder_ != null)) {
           return opTimerBuilder_.getMessageOrBuilder();
         } else {
-          if (messageCase_ == 167) {
+          if (messageCase_ == 352) {
             return (emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer.getDefaultInstance();
         }
       }
       /**
-       * <pre>
-       *AOHEFFCPELI snooswap
-       * </pre>
-       *
-       * <code>.GCGMsgOpTimer op_timer = 167;</code>
+       * <code>.GCGMsgOpTimer op_timer = 352;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer, emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer.Builder, emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimerOrBuilder> 
           getOpTimerFieldBuilder() {
         if (opTimerBuilder_ == null) {
-          if (!(messageCase_ == 167)) {
+          if (!(messageCase_ == 352)) {
             message_ = emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer.getDefaultInstance();
           }
           opTimerBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -6869,7 +6460,7 @@ public final class GCGMessageOuterClass {
                   isClean());
           message_ = null;
         }
-        messageCase_ = 167;
+        messageCase_ = 352;
         onChanged();;
         return opTimerBuilder_;
       }
@@ -6877,33 +6468,33 @@ public final class GCGMessageOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange, emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange.Builder, emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChangeOrBuilder> waitingListChangeBuilder_;
       /**
-       * <code>.GCGMsgWaitingListChange waiting_list_change = 891;</code>
+       * <code>.GCGMsgWaitingListChange waiting_list_change = 938;</code>
        * @return Whether the waitingListChange field is set.
        */
       @java.lang.Override
       public boolean hasWaitingListChange() {
-        return messageCase_ == 891;
+        return messageCase_ == 938;
       }
       /**
-       * <code>.GCGMsgWaitingListChange waiting_list_change = 891;</code>
+       * <code>.GCGMsgWaitingListChange waiting_list_change = 938;</code>
        * @return The waitingListChange.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange getWaitingListChange() {
         if (waitingListChangeBuilder_ == null) {
-          if (messageCase_ == 891) {
+          if (messageCase_ == 938) {
             return (emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange.getDefaultInstance();
         } else {
-          if (messageCase_ == 891) {
+          if (messageCase_ == 938) {
             return waitingListChangeBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgWaitingListChange waiting_list_change = 891;</code>
+       * <code>.GCGMsgWaitingListChange waiting_list_change = 938;</code>
        */
       public Builder setWaitingListChange(emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange value) {
         if (waitingListChangeBuilder_ == null) {
@@ -6915,11 +6506,11 @@ public final class GCGMessageOuterClass {
         } else {
           waitingListChangeBuilder_.setMessage(value);
         }
-        messageCase_ = 891;
+        messageCase_ = 938;
         return this;
       }
       /**
-       * <code>.GCGMsgWaitingListChange waiting_list_change = 891;</code>
+       * <code>.GCGMsgWaitingListChange waiting_list_change = 938;</code>
        */
       public Builder setWaitingListChange(
           emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange.Builder builderForValue) {
@@ -6929,15 +6520,15 @@ public final class GCGMessageOuterClass {
         } else {
           waitingListChangeBuilder_.setMessage(builderForValue.build());
         }
-        messageCase_ = 891;
+        messageCase_ = 938;
         return this;
       }
       /**
-       * <code>.GCGMsgWaitingListChange waiting_list_change = 891;</code>
+       * <code>.GCGMsgWaitingListChange waiting_list_change = 938;</code>
        */
       public Builder mergeWaitingListChange(emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange value) {
         if (waitingListChangeBuilder_ == null) {
-          if (messageCase_ == 891 &&
+          if (messageCase_ == 938 &&
               message_ != emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange.getDefaultInstance()) {
             message_ = emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange.newBuilder((emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange) message_)
                 .mergeFrom(value).buildPartial();
@@ -6946,26 +6537,26 @@ public final class GCGMessageOuterClass {
           }
           onChanged();
         } else {
-          if (messageCase_ == 891) {
+          if (messageCase_ == 938) {
             waitingListChangeBuilder_.mergeFrom(value);
           }
           waitingListChangeBuilder_.setMessage(value);
         }
-        messageCase_ = 891;
+        messageCase_ = 938;
         return this;
       }
       /**
-       * <code>.GCGMsgWaitingListChange waiting_list_change = 891;</code>
+       * <code>.GCGMsgWaitingListChange waiting_list_change = 938;</code>
        */
       public Builder clearWaitingListChange() {
         if (waitingListChangeBuilder_ == null) {
-          if (messageCase_ == 891) {
+          if (messageCase_ == 938) {
             messageCase_ = 0;
             message_ = null;
             onChanged();
           }
         } else {
-          if (messageCase_ == 891) {
+          if (messageCase_ == 938) {
             messageCase_ = 0;
             message_ = null;
           }
@@ -6974,33 +6565,33 @@ public final class GCGMessageOuterClass {
         return this;
       }
       /**
-       * <code>.GCGMsgWaitingListChange waiting_list_change = 891;</code>
+       * <code>.GCGMsgWaitingListChange waiting_list_change = 938;</code>
        */
       public emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange.Builder getWaitingListChangeBuilder() {
         return getWaitingListChangeFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGMsgWaitingListChange waiting_list_change = 891;</code>
+       * <code>.GCGMsgWaitingListChange waiting_list_change = 938;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChangeOrBuilder getWaitingListChangeOrBuilder() {
-        if ((messageCase_ == 891) && (waitingListChangeBuilder_ != null)) {
+        if ((messageCase_ == 938) && (waitingListChangeBuilder_ != null)) {
           return waitingListChangeBuilder_.getMessageOrBuilder();
         } else {
-          if (messageCase_ == 891) {
+          if (messageCase_ == 938) {
             return (emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgWaitingListChange waiting_list_change = 891;</code>
+       * <code>.GCGMsgWaitingListChange waiting_list_change = 938;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange, emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange.Builder, emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChangeOrBuilder> 
           getWaitingListChangeFieldBuilder() {
         if (waitingListChangeBuilder_ == null) {
-          if (!(messageCase_ == 891)) {
+          if (!(messageCase_ == 938)) {
             message_ = emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.GCGMsgWaitingListChange.getDefaultInstance();
           }
           waitingListChangeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -7010,7 +6601,7 @@ public final class GCGMessageOuterClass {
                   isClean());
           message_ = null;
         }
-        messageCase_ = 891;
+        messageCase_ = 938;
         onChanged();;
         return waitingListChangeBuilder_;
       }
@@ -7018,33 +6609,33 @@ public final class GCGMessageOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdate, emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdate.Builder, emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdateOrBuilder> cardUpdateBuilder_;
       /**
-       * <code>.GCGMsgCardUpdate card_update = 1549;</code>
+       * <code>.GCGMsgCardUpdate card_update = 594;</code>
        * @return Whether the cardUpdate field is set.
        */
       @java.lang.Override
       public boolean hasCardUpdate() {
-        return messageCase_ == 1549;
+        return messageCase_ == 594;
       }
       /**
-       * <code>.GCGMsgCardUpdate card_update = 1549;</code>
+       * <code>.GCGMsgCardUpdate card_update = 594;</code>
        * @return The cardUpdate.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdate getCardUpdate() {
         if (cardUpdateBuilder_ == null) {
-          if (messageCase_ == 1549) {
+          if (messageCase_ == 594) {
             return (emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdate) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdate.getDefaultInstance();
         } else {
-          if (messageCase_ == 1549) {
+          if (messageCase_ == 594) {
             return cardUpdateBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdate.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgCardUpdate card_update = 1549;</code>
+       * <code>.GCGMsgCardUpdate card_update = 594;</code>
        */
       public Builder setCardUpdate(emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdate value) {
         if (cardUpdateBuilder_ == null) {
@@ -7056,11 +6647,11 @@ public final class GCGMessageOuterClass {
         } else {
           cardUpdateBuilder_.setMessage(value);
         }
-        messageCase_ = 1549;
+        messageCase_ = 594;
         return this;
       }
       /**
-       * <code>.GCGMsgCardUpdate card_update = 1549;</code>
+       * <code>.GCGMsgCardUpdate card_update = 594;</code>
        */
       public Builder setCardUpdate(
           emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdate.Builder builderForValue) {
@@ -7070,15 +6661,15 @@ public final class GCGMessageOuterClass {
         } else {
           cardUpdateBuilder_.setMessage(builderForValue.build());
         }
-        messageCase_ = 1549;
+        messageCase_ = 594;
         return this;
       }
       /**
-       * <code>.GCGMsgCardUpdate card_update = 1549;</code>
+       * <code>.GCGMsgCardUpdate card_update = 594;</code>
        */
       public Builder mergeCardUpdate(emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdate value) {
         if (cardUpdateBuilder_ == null) {
-          if (messageCase_ == 1549 &&
+          if (messageCase_ == 594 &&
               message_ != emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdate.getDefaultInstance()) {
             message_ = emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdate.newBuilder((emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdate) message_)
                 .mergeFrom(value).buildPartial();
@@ -7087,26 +6678,26 @@ public final class GCGMessageOuterClass {
           }
           onChanged();
         } else {
-          if (messageCase_ == 1549) {
+          if (messageCase_ == 594) {
             cardUpdateBuilder_.mergeFrom(value);
           }
           cardUpdateBuilder_.setMessage(value);
         }
-        messageCase_ = 1549;
+        messageCase_ = 594;
         return this;
       }
       /**
-       * <code>.GCGMsgCardUpdate card_update = 1549;</code>
+       * <code>.GCGMsgCardUpdate card_update = 594;</code>
        */
       public Builder clearCardUpdate() {
         if (cardUpdateBuilder_ == null) {
-          if (messageCase_ == 1549) {
+          if (messageCase_ == 594) {
             messageCase_ = 0;
             message_ = null;
             onChanged();
           }
         } else {
-          if (messageCase_ == 1549) {
+          if (messageCase_ == 594) {
             messageCase_ = 0;
             message_ = null;
           }
@@ -7115,33 +6706,33 @@ public final class GCGMessageOuterClass {
         return this;
       }
       /**
-       * <code>.GCGMsgCardUpdate card_update = 1549;</code>
+       * <code>.GCGMsgCardUpdate card_update = 594;</code>
        */
       public emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdate.Builder getCardUpdateBuilder() {
         return getCardUpdateFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGMsgCardUpdate card_update = 1549;</code>
+       * <code>.GCGMsgCardUpdate card_update = 594;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdateOrBuilder getCardUpdateOrBuilder() {
-        if ((messageCase_ == 1549) && (cardUpdateBuilder_ != null)) {
+        if ((messageCase_ == 594) && (cardUpdateBuilder_ != null)) {
           return cardUpdateBuilder_.getMessageOrBuilder();
         } else {
-          if (messageCase_ == 1549) {
+          if (messageCase_ == 594) {
             return (emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdate) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdate.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgCardUpdate card_update = 1549;</code>
+       * <code>.GCGMsgCardUpdate card_update = 594;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdate, emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdate.Builder, emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdateOrBuilder> 
           getCardUpdateFieldBuilder() {
         if (cardUpdateBuilder_ == null) {
-          if (!(messageCase_ == 1549)) {
+          if (!(messageCase_ == 594)) {
             message_ = emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.GCGMsgCardUpdate.getDefaultInstance();
           }
           cardUpdateBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -7151,7 +6742,7 @@ public final class GCGMessageOuterClass {
                   isClean());
           message_ = null;
         }
-        messageCase_ = 1549;
+        messageCase_ = 594;
         onChanged();;
         return cardUpdateBuilder_;
       }
@@ -7159,33 +6750,33 @@ public final class GCGMessageOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffect, emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffect.Builder, emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffectOrBuilder> selectOnStageByEffectBuilder_;
       /**
-       * <code>.GCGMsgSelectOnStageByEffect select_on_stage_by_effect = 1093;</code>
+       * <code>.GCGMsgSelectOnStageByEffect select_on_stage_by_effect = 417;</code>
        * @return Whether the selectOnStageByEffect field is set.
        */
       @java.lang.Override
       public boolean hasSelectOnStageByEffect() {
-        return messageCase_ == 1093;
+        return messageCase_ == 417;
       }
       /**
-       * <code>.GCGMsgSelectOnStageByEffect select_on_stage_by_effect = 1093;</code>
+       * <code>.GCGMsgSelectOnStageByEffect select_on_stage_by_effect = 417;</code>
        * @return The selectOnStageByEffect.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffect getSelectOnStageByEffect() {
         if (selectOnStageByEffectBuilder_ == null) {
-          if (messageCase_ == 1093) {
+          if (messageCase_ == 417) {
             return (emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffect) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffect.getDefaultInstance();
         } else {
-          if (messageCase_ == 1093) {
+          if (messageCase_ == 417) {
             return selectOnStageByEffectBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffect.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgSelectOnStageByEffect select_on_stage_by_effect = 1093;</code>
+       * <code>.GCGMsgSelectOnStageByEffect select_on_stage_by_effect = 417;</code>
        */
       public Builder setSelectOnStageByEffect(emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffect value) {
         if (selectOnStageByEffectBuilder_ == null) {
@@ -7197,11 +6788,11 @@ public final class GCGMessageOuterClass {
         } else {
           selectOnStageByEffectBuilder_.setMessage(value);
         }
-        messageCase_ = 1093;
+        messageCase_ = 417;
         return this;
       }
       /**
-       * <code>.GCGMsgSelectOnStageByEffect select_on_stage_by_effect = 1093;</code>
+       * <code>.GCGMsgSelectOnStageByEffect select_on_stage_by_effect = 417;</code>
        */
       public Builder setSelectOnStageByEffect(
           emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffect.Builder builderForValue) {
@@ -7211,15 +6802,15 @@ public final class GCGMessageOuterClass {
         } else {
           selectOnStageByEffectBuilder_.setMessage(builderForValue.build());
         }
-        messageCase_ = 1093;
+        messageCase_ = 417;
         return this;
       }
       /**
-       * <code>.GCGMsgSelectOnStageByEffect select_on_stage_by_effect = 1093;</code>
+       * <code>.GCGMsgSelectOnStageByEffect select_on_stage_by_effect = 417;</code>
        */
       public Builder mergeSelectOnStageByEffect(emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffect value) {
         if (selectOnStageByEffectBuilder_ == null) {
-          if (messageCase_ == 1093 &&
+          if (messageCase_ == 417 &&
               message_ != emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffect.getDefaultInstance()) {
             message_ = emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffect.newBuilder((emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffect) message_)
                 .mergeFrom(value).buildPartial();
@@ -7228,26 +6819,26 @@ public final class GCGMessageOuterClass {
           }
           onChanged();
         } else {
-          if (messageCase_ == 1093) {
+          if (messageCase_ == 417) {
             selectOnStageByEffectBuilder_.mergeFrom(value);
           }
           selectOnStageByEffectBuilder_.setMessage(value);
         }
-        messageCase_ = 1093;
+        messageCase_ = 417;
         return this;
       }
       /**
-       * <code>.GCGMsgSelectOnStageByEffect select_on_stage_by_effect = 1093;</code>
+       * <code>.GCGMsgSelectOnStageByEffect select_on_stage_by_effect = 417;</code>
        */
       public Builder clearSelectOnStageByEffect() {
         if (selectOnStageByEffectBuilder_ == null) {
-          if (messageCase_ == 1093) {
+          if (messageCase_ == 417) {
             messageCase_ = 0;
             message_ = null;
             onChanged();
           }
         } else {
-          if (messageCase_ == 1093) {
+          if (messageCase_ == 417) {
             messageCase_ = 0;
             message_ = null;
           }
@@ -7256,33 +6847,33 @@ public final class GCGMessageOuterClass {
         return this;
       }
       /**
-       * <code>.GCGMsgSelectOnStageByEffect select_on_stage_by_effect = 1093;</code>
+       * <code>.GCGMsgSelectOnStageByEffect select_on_stage_by_effect = 417;</code>
        */
       public emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffect.Builder getSelectOnStageByEffectBuilder() {
         return getSelectOnStageByEffectFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGMsgSelectOnStageByEffect select_on_stage_by_effect = 1093;</code>
+       * <code>.GCGMsgSelectOnStageByEffect select_on_stage_by_effect = 417;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffectOrBuilder getSelectOnStageByEffectOrBuilder() {
-        if ((messageCase_ == 1093) && (selectOnStageByEffectBuilder_ != null)) {
+        if ((messageCase_ == 417) && (selectOnStageByEffectBuilder_ != null)) {
           return selectOnStageByEffectBuilder_.getMessageOrBuilder();
         } else {
-          if (messageCase_ == 1093) {
+          if (messageCase_ == 417) {
             return (emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffect) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffect.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgSelectOnStageByEffect select_on_stage_by_effect = 1093;</code>
+       * <code>.GCGMsgSelectOnStageByEffect select_on_stage_by_effect = 417;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffect, emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffect.Builder, emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffectOrBuilder> 
           getSelectOnStageByEffectFieldBuilder() {
         if (selectOnStageByEffectBuilder_ == null) {
-          if (!(messageCase_ == 1093)) {
+          if (!(messageCase_ == 417)) {
             message_ = emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.GCGMsgSelectOnStageByEffect.getDefaultInstance();
           }
           selectOnStageByEffectBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -7292,7 +6883,7 @@ public final class GCGMessageOuterClass {
                   isClean());
           message_ = null;
         }
-        messageCase_ = 1093;
+        messageCase_ = 417;
         onChanged();;
         return selectOnStageByEffectBuilder_;
       }
@@ -7300,33 +6891,33 @@ public final class GCGMessageOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostRevise, emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostRevise.Builder, emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostReviseOrBuilder> costReviseBuilder_;
       /**
-       * <code>.GCGMsgCostRevise cost_revise = 1422;</code>
+       * <code>.GCGMsgCostRevise cost_revise = 1255;</code>
        * @return Whether the costRevise field is set.
        */
       @java.lang.Override
       public boolean hasCostRevise() {
-        return messageCase_ == 1422;
+        return messageCase_ == 1255;
       }
       /**
-       * <code>.GCGMsgCostRevise cost_revise = 1422;</code>
+       * <code>.GCGMsgCostRevise cost_revise = 1255;</code>
        * @return The costRevise.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostRevise getCostRevise() {
         if (costReviseBuilder_ == null) {
-          if (messageCase_ == 1422) {
+          if (messageCase_ == 1255) {
             return (emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostRevise) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostRevise.getDefaultInstance();
         } else {
-          if (messageCase_ == 1422) {
+          if (messageCase_ == 1255) {
             return costReviseBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostRevise.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgCostRevise cost_revise = 1422;</code>
+       * <code>.GCGMsgCostRevise cost_revise = 1255;</code>
        */
       public Builder setCostRevise(emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostRevise value) {
         if (costReviseBuilder_ == null) {
@@ -7338,11 +6929,11 @@ public final class GCGMessageOuterClass {
         } else {
           costReviseBuilder_.setMessage(value);
         }
-        messageCase_ = 1422;
+        messageCase_ = 1255;
         return this;
       }
       /**
-       * <code>.GCGMsgCostRevise cost_revise = 1422;</code>
+       * <code>.GCGMsgCostRevise cost_revise = 1255;</code>
        */
       public Builder setCostRevise(
           emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostRevise.Builder builderForValue) {
@@ -7352,15 +6943,15 @@ public final class GCGMessageOuterClass {
         } else {
           costReviseBuilder_.setMessage(builderForValue.build());
         }
-        messageCase_ = 1422;
+        messageCase_ = 1255;
         return this;
       }
       /**
-       * <code>.GCGMsgCostRevise cost_revise = 1422;</code>
+       * <code>.GCGMsgCostRevise cost_revise = 1255;</code>
        */
       public Builder mergeCostRevise(emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostRevise value) {
         if (costReviseBuilder_ == null) {
-          if (messageCase_ == 1422 &&
+          if (messageCase_ == 1255 &&
               message_ != emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostRevise.getDefaultInstance()) {
             message_ = emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostRevise.newBuilder((emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostRevise) message_)
                 .mergeFrom(value).buildPartial();
@@ -7369,26 +6960,26 @@ public final class GCGMessageOuterClass {
           }
           onChanged();
         } else {
-          if (messageCase_ == 1422) {
+          if (messageCase_ == 1255) {
             costReviseBuilder_.mergeFrom(value);
           }
           costReviseBuilder_.setMessage(value);
         }
-        messageCase_ = 1422;
+        messageCase_ = 1255;
         return this;
       }
       /**
-       * <code>.GCGMsgCostRevise cost_revise = 1422;</code>
+       * <code>.GCGMsgCostRevise cost_revise = 1255;</code>
        */
       public Builder clearCostRevise() {
         if (costReviseBuilder_ == null) {
-          if (messageCase_ == 1422) {
+          if (messageCase_ == 1255) {
             messageCase_ = 0;
             message_ = null;
             onChanged();
           }
         } else {
-          if (messageCase_ == 1422) {
+          if (messageCase_ == 1255) {
             messageCase_ = 0;
             message_ = null;
           }
@@ -7397,33 +6988,33 @@ public final class GCGMessageOuterClass {
         return this;
       }
       /**
-       * <code>.GCGMsgCostRevise cost_revise = 1422;</code>
+       * <code>.GCGMsgCostRevise cost_revise = 1255;</code>
        */
       public emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostRevise.Builder getCostReviseBuilder() {
         return getCostReviseFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGMsgCostRevise cost_revise = 1422;</code>
+       * <code>.GCGMsgCostRevise cost_revise = 1255;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostReviseOrBuilder getCostReviseOrBuilder() {
-        if ((messageCase_ == 1422) && (costReviseBuilder_ != null)) {
+        if ((messageCase_ == 1255) && (costReviseBuilder_ != null)) {
           return costReviseBuilder_.getMessageOrBuilder();
         } else {
-          if (messageCase_ == 1422) {
+          if (messageCase_ == 1255) {
             return (emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostRevise) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostRevise.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgCostRevise cost_revise = 1422;</code>
+       * <code>.GCGMsgCostRevise cost_revise = 1255;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostRevise, emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostRevise.Builder, emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostReviseOrBuilder> 
           getCostReviseFieldBuilder() {
         if (costReviseBuilder_ == null) {
-          if (!(messageCase_ == 1422)) {
+          if (!(messageCase_ == 1255)) {
             message_ = emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.GCGMsgCostRevise.getDefaultInstance();
           }
           costReviseBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -7433,7 +7024,7 @@ public final class GCGMessageOuterClass {
                   isClean());
           message_ = null;
         }
-        messageCase_ = 1422;
+        messageCase_ = 1255;
         onChanged();;
         return costReviseBuilder_;
       }
@@ -7441,33 +7032,33 @@ public final class GCGMessageOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinue, emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinue.Builder, emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinueOrBuilder> phaseContinueBuilder_;
       /**
-       * <code>.GCGMsgPhaseContinue phase_continue = 624;</code>
+       * <code>.GCGMsgPhaseContinue phase_continue = 955;</code>
        * @return Whether the phaseContinue field is set.
        */
       @java.lang.Override
       public boolean hasPhaseContinue() {
-        return messageCase_ == 624;
+        return messageCase_ == 955;
       }
       /**
-       * <code>.GCGMsgPhaseContinue phase_continue = 624;</code>
+       * <code>.GCGMsgPhaseContinue phase_continue = 955;</code>
        * @return The phaseContinue.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinue getPhaseContinue() {
         if (phaseContinueBuilder_ == null) {
-          if (messageCase_ == 624) {
+          if (messageCase_ == 955) {
             return (emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinue) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinue.getDefaultInstance();
         } else {
-          if (messageCase_ == 624) {
+          if (messageCase_ == 955) {
             return phaseContinueBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinue.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgPhaseContinue phase_continue = 624;</code>
+       * <code>.GCGMsgPhaseContinue phase_continue = 955;</code>
        */
       public Builder setPhaseContinue(emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinue value) {
         if (phaseContinueBuilder_ == null) {
@@ -7479,11 +7070,11 @@ public final class GCGMessageOuterClass {
         } else {
           phaseContinueBuilder_.setMessage(value);
         }
-        messageCase_ = 624;
+        messageCase_ = 955;
         return this;
       }
       /**
-       * <code>.GCGMsgPhaseContinue phase_continue = 624;</code>
+       * <code>.GCGMsgPhaseContinue phase_continue = 955;</code>
        */
       public Builder setPhaseContinue(
           emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinue.Builder builderForValue) {
@@ -7493,15 +7084,15 @@ public final class GCGMessageOuterClass {
         } else {
           phaseContinueBuilder_.setMessage(builderForValue.build());
         }
-        messageCase_ = 624;
+        messageCase_ = 955;
         return this;
       }
       /**
-       * <code>.GCGMsgPhaseContinue phase_continue = 624;</code>
+       * <code>.GCGMsgPhaseContinue phase_continue = 955;</code>
        */
       public Builder mergePhaseContinue(emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinue value) {
         if (phaseContinueBuilder_ == null) {
-          if (messageCase_ == 624 &&
+          if (messageCase_ == 955 &&
               message_ != emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinue.getDefaultInstance()) {
             message_ = emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinue.newBuilder((emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinue) message_)
                 .mergeFrom(value).buildPartial();
@@ -7510,26 +7101,26 @@ public final class GCGMessageOuterClass {
           }
           onChanged();
         } else {
-          if (messageCase_ == 624) {
+          if (messageCase_ == 955) {
             phaseContinueBuilder_.mergeFrom(value);
           }
           phaseContinueBuilder_.setMessage(value);
         }
-        messageCase_ = 624;
+        messageCase_ = 955;
         return this;
       }
       /**
-       * <code>.GCGMsgPhaseContinue phase_continue = 624;</code>
+       * <code>.GCGMsgPhaseContinue phase_continue = 955;</code>
        */
       public Builder clearPhaseContinue() {
         if (phaseContinueBuilder_ == null) {
-          if (messageCase_ == 624) {
+          if (messageCase_ == 955) {
             messageCase_ = 0;
             message_ = null;
             onChanged();
           }
         } else {
-          if (messageCase_ == 624) {
+          if (messageCase_ == 955) {
             messageCase_ = 0;
             message_ = null;
           }
@@ -7538,33 +7129,33 @@ public final class GCGMessageOuterClass {
         return this;
       }
       /**
-       * <code>.GCGMsgPhaseContinue phase_continue = 624;</code>
+       * <code>.GCGMsgPhaseContinue phase_continue = 955;</code>
        */
       public emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinue.Builder getPhaseContinueBuilder() {
         return getPhaseContinueFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGMsgPhaseContinue phase_continue = 624;</code>
+       * <code>.GCGMsgPhaseContinue phase_continue = 955;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinueOrBuilder getPhaseContinueOrBuilder() {
-        if ((messageCase_ == 624) && (phaseContinueBuilder_ != null)) {
+        if ((messageCase_ == 955) && (phaseContinueBuilder_ != null)) {
           return phaseContinueBuilder_.getMessageOrBuilder();
         } else {
-          if (messageCase_ == 624) {
+          if (messageCase_ == 955) {
             return (emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinue) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinue.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgPhaseContinue phase_continue = 624;</code>
+       * <code>.GCGMsgPhaseContinue phase_continue = 955;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinue, emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinue.Builder, emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinueOrBuilder> 
           getPhaseContinueFieldBuilder() {
         if (phaseContinueBuilder_ == null) {
-          if (!(messageCase_ == 624)) {
+          if (!(messageCase_ == 955)) {
             message_ = emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.GCGMsgPhaseContinue.getDefaultInstance();
           }
           phaseContinueBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -7574,7 +7165,7 @@ public final class GCGMessageOuterClass {
                   isClean());
           message_ = null;
         }
-        messageCase_ = 624;
+        messageCase_ = 955;
         onChanged();;
         return phaseContinueBuilder_;
       }
@@ -7582,33 +7173,33 @@ public final class GCGMessageOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo, emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo.Builder, emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfoOrBuilder> pveIntentionInfoBuilder_;
       /**
-       * <code>.GCGMsgPVEIntentionInfo pve_intention_info = 65;</code>
+       * <code>.GCGMsgPVEIntentionInfo pve_intention_info = 1111;</code>
        * @return Whether the pveIntentionInfo field is set.
        */
       @java.lang.Override
       public boolean hasPveIntentionInfo() {
-        return messageCase_ == 65;
+        return messageCase_ == 1111;
       }
       /**
-       * <code>.GCGMsgPVEIntentionInfo pve_intention_info = 65;</code>
+       * <code>.GCGMsgPVEIntentionInfo pve_intention_info = 1111;</code>
        * @return The pveIntentionInfo.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo getPveIntentionInfo() {
         if (pveIntentionInfoBuilder_ == null) {
-          if (messageCase_ == 65) {
+          if (messageCase_ == 1111) {
             return (emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo.getDefaultInstance();
         } else {
-          if (messageCase_ == 65) {
+          if (messageCase_ == 1111) {
             return pveIntentionInfoBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgPVEIntentionInfo pve_intention_info = 65;</code>
+       * <code>.GCGMsgPVEIntentionInfo pve_intention_info = 1111;</code>
        */
       public Builder setPveIntentionInfo(emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo value) {
         if (pveIntentionInfoBuilder_ == null) {
@@ -7620,11 +7211,11 @@ public final class GCGMessageOuterClass {
         } else {
           pveIntentionInfoBuilder_.setMessage(value);
         }
-        messageCase_ = 65;
+        messageCase_ = 1111;
         return this;
       }
       /**
-       * <code>.GCGMsgPVEIntentionInfo pve_intention_info = 65;</code>
+       * <code>.GCGMsgPVEIntentionInfo pve_intention_info = 1111;</code>
        */
       public Builder setPveIntentionInfo(
           emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo.Builder builderForValue) {
@@ -7634,15 +7225,15 @@ public final class GCGMessageOuterClass {
         } else {
           pveIntentionInfoBuilder_.setMessage(builderForValue.build());
         }
-        messageCase_ = 65;
+        messageCase_ = 1111;
         return this;
       }
       /**
-       * <code>.GCGMsgPVEIntentionInfo pve_intention_info = 65;</code>
+       * <code>.GCGMsgPVEIntentionInfo pve_intention_info = 1111;</code>
        */
       public Builder mergePveIntentionInfo(emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo value) {
         if (pveIntentionInfoBuilder_ == null) {
-          if (messageCase_ == 65 &&
+          if (messageCase_ == 1111 &&
               message_ != emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo.getDefaultInstance()) {
             message_ = emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo.newBuilder((emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo) message_)
                 .mergeFrom(value).buildPartial();
@@ -7651,26 +7242,26 @@ public final class GCGMessageOuterClass {
           }
           onChanged();
         } else {
-          if (messageCase_ == 65) {
+          if (messageCase_ == 1111) {
             pveIntentionInfoBuilder_.mergeFrom(value);
           }
           pveIntentionInfoBuilder_.setMessage(value);
         }
-        messageCase_ = 65;
+        messageCase_ = 1111;
         return this;
       }
       /**
-       * <code>.GCGMsgPVEIntentionInfo pve_intention_info = 65;</code>
+       * <code>.GCGMsgPVEIntentionInfo pve_intention_info = 1111;</code>
        */
       public Builder clearPveIntentionInfo() {
         if (pveIntentionInfoBuilder_ == null) {
-          if (messageCase_ == 65) {
+          if (messageCase_ == 1111) {
             messageCase_ = 0;
             message_ = null;
             onChanged();
           }
         } else {
-          if (messageCase_ == 65) {
+          if (messageCase_ == 1111) {
             messageCase_ = 0;
             message_ = null;
           }
@@ -7679,33 +7270,33 @@ public final class GCGMessageOuterClass {
         return this;
       }
       /**
-       * <code>.GCGMsgPVEIntentionInfo pve_intention_info = 65;</code>
+       * <code>.GCGMsgPVEIntentionInfo pve_intention_info = 1111;</code>
        */
       public emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo.Builder getPveIntentionInfoBuilder() {
         return getPveIntentionInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGMsgPVEIntentionInfo pve_intention_info = 65;</code>
+       * <code>.GCGMsgPVEIntentionInfo pve_intention_info = 1111;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfoOrBuilder getPveIntentionInfoOrBuilder() {
-        if ((messageCase_ == 65) && (pveIntentionInfoBuilder_ != null)) {
+        if ((messageCase_ == 1111) && (pveIntentionInfoBuilder_ != null)) {
           return pveIntentionInfoBuilder_.getMessageOrBuilder();
         } else {
-          if (messageCase_ == 65) {
+          if (messageCase_ == 1111) {
             return (emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgPVEIntentionInfo pve_intention_info = 65;</code>
+       * <code>.GCGMsgPVEIntentionInfo pve_intention_info = 1111;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo, emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo.Builder, emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfoOrBuilder> 
           getPveIntentionInfoFieldBuilder() {
         if (pveIntentionInfoBuilder_ == null) {
-          if (!(messageCase_ == 65)) {
+          if (!(messageCase_ == 1111)) {
             message_ = emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo.getDefaultInstance();
           }
           pveIntentionInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -7715,7 +7306,7 @@ public final class GCGMessageOuterClass {
                   isClean());
           message_ = null;
         }
-        messageCase_ = 65;
+        messageCase_ = 1111;
         onChanged();;
         return pveIntentionInfoBuilder_;
       }
@@ -7723,33 +7314,33 @@ public final class GCGMessageOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange, emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange.Builder, emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChangeOrBuilder> pveIntentionChangeBuilder_;
       /**
-       * <code>.GCGMsgPVEIntentionChange pve_intention_change = 1571;</code>
+       * <code>.GCGMsgPVEIntentionChange pve_intention_change = 189;</code>
        * @return Whether the pveIntentionChange field is set.
        */
       @java.lang.Override
       public boolean hasPveIntentionChange() {
-        return messageCase_ == 1571;
+        return messageCase_ == 189;
       }
       /**
-       * <code>.GCGMsgPVEIntentionChange pve_intention_change = 1571;</code>
+       * <code>.GCGMsgPVEIntentionChange pve_intention_change = 189;</code>
        * @return The pveIntentionChange.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange getPveIntentionChange() {
         if (pveIntentionChangeBuilder_ == null) {
-          if (messageCase_ == 1571) {
+          if (messageCase_ == 189) {
             return (emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange.getDefaultInstance();
         } else {
-          if (messageCase_ == 1571) {
+          if (messageCase_ == 189) {
             return pveIntentionChangeBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgPVEIntentionChange pve_intention_change = 1571;</code>
+       * <code>.GCGMsgPVEIntentionChange pve_intention_change = 189;</code>
        */
       public Builder setPveIntentionChange(emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange value) {
         if (pveIntentionChangeBuilder_ == null) {
@@ -7761,11 +7352,11 @@ public final class GCGMessageOuterClass {
         } else {
           pveIntentionChangeBuilder_.setMessage(value);
         }
-        messageCase_ = 1571;
+        messageCase_ = 189;
         return this;
       }
       /**
-       * <code>.GCGMsgPVEIntentionChange pve_intention_change = 1571;</code>
+       * <code>.GCGMsgPVEIntentionChange pve_intention_change = 189;</code>
        */
       public Builder setPveIntentionChange(
           emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange.Builder builderForValue) {
@@ -7775,15 +7366,15 @@ public final class GCGMessageOuterClass {
         } else {
           pveIntentionChangeBuilder_.setMessage(builderForValue.build());
         }
-        messageCase_ = 1571;
+        messageCase_ = 189;
         return this;
       }
       /**
-       * <code>.GCGMsgPVEIntentionChange pve_intention_change = 1571;</code>
+       * <code>.GCGMsgPVEIntentionChange pve_intention_change = 189;</code>
        */
       public Builder mergePveIntentionChange(emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange value) {
         if (pveIntentionChangeBuilder_ == null) {
-          if (messageCase_ == 1571 &&
+          if (messageCase_ == 189 &&
               message_ != emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange.getDefaultInstance()) {
             message_ = emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange.newBuilder((emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange) message_)
                 .mergeFrom(value).buildPartial();
@@ -7792,26 +7383,26 @@ public final class GCGMessageOuterClass {
           }
           onChanged();
         } else {
-          if (messageCase_ == 1571) {
+          if (messageCase_ == 189) {
             pveIntentionChangeBuilder_.mergeFrom(value);
           }
           pveIntentionChangeBuilder_.setMessage(value);
         }
-        messageCase_ = 1571;
+        messageCase_ = 189;
         return this;
       }
       /**
-       * <code>.GCGMsgPVEIntentionChange pve_intention_change = 1571;</code>
+       * <code>.GCGMsgPVEIntentionChange pve_intention_change = 189;</code>
        */
       public Builder clearPveIntentionChange() {
         if (pveIntentionChangeBuilder_ == null) {
-          if (messageCase_ == 1571) {
+          if (messageCase_ == 189) {
             messageCase_ = 0;
             message_ = null;
             onChanged();
           }
         } else {
-          if (messageCase_ == 1571) {
+          if (messageCase_ == 189) {
             messageCase_ = 0;
             message_ = null;
           }
@@ -7820,33 +7411,33 @@ public final class GCGMessageOuterClass {
         return this;
       }
       /**
-       * <code>.GCGMsgPVEIntentionChange pve_intention_change = 1571;</code>
+       * <code>.GCGMsgPVEIntentionChange pve_intention_change = 189;</code>
        */
       public emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange.Builder getPveIntentionChangeBuilder() {
         return getPveIntentionChangeFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGMsgPVEIntentionChange pve_intention_change = 1571;</code>
+       * <code>.GCGMsgPVEIntentionChange pve_intention_change = 189;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChangeOrBuilder getPveIntentionChangeOrBuilder() {
-        if ((messageCase_ == 1571) && (pveIntentionChangeBuilder_ != null)) {
+        if ((messageCase_ == 189) && (pveIntentionChangeBuilder_ != null)) {
           return pveIntentionChangeBuilder_.getMessageOrBuilder();
         } else {
-          if (messageCase_ == 1571) {
+          if (messageCase_ == 189) {
             return (emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgPVEIntentionChange pve_intention_change = 1571;</code>
+       * <code>.GCGMsgPVEIntentionChange pve_intention_change = 189;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange, emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange.Builder, emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChangeOrBuilder> 
           getPveIntentionChangeFieldBuilder() {
         if (pveIntentionChangeBuilder_ == null) {
-          if (!(messageCase_ == 1571)) {
+          if (!(messageCase_ == 189)) {
             message_ = emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.GCGMsgPVEIntentionChange.getDefaultInstance();
           }
           pveIntentionChangeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -7856,7 +7447,7 @@ public final class GCGMessageOuterClass {
                   isClean());
           message_ = null;
         }
-        messageCase_ = 1571;
+        messageCase_ = 189;
         onChanged();;
         return pveIntentionChangeBuilder_;
       }
@@ -7864,33 +7455,33 @@ public final class GCGMessageOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange, emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange.Builder, emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChangeOrBuilder> skillLimitsChangeBuilder_;
       /**
-       * <code>.GCGMsgSkillLimitsChange skill_limits_change = 1013;</code>
+       * <code>.GCGMsgSkillLimitsChange skill_limits_change = 1581;</code>
        * @return Whether the skillLimitsChange field is set.
        */
       @java.lang.Override
       public boolean hasSkillLimitsChange() {
-        return messageCase_ == 1013;
+        return messageCase_ == 1581;
       }
       /**
-       * <code>.GCGMsgSkillLimitsChange skill_limits_change = 1013;</code>
+       * <code>.GCGMsgSkillLimitsChange skill_limits_change = 1581;</code>
        * @return The skillLimitsChange.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange getSkillLimitsChange() {
         if (skillLimitsChangeBuilder_ == null) {
-          if (messageCase_ == 1013) {
+          if (messageCase_ == 1581) {
             return (emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange.getDefaultInstance();
         } else {
-          if (messageCase_ == 1013) {
+          if (messageCase_ == 1581) {
             return skillLimitsChangeBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgSkillLimitsChange skill_limits_change = 1013;</code>
+       * <code>.GCGMsgSkillLimitsChange skill_limits_change = 1581;</code>
        */
       public Builder setSkillLimitsChange(emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange value) {
         if (skillLimitsChangeBuilder_ == null) {
@@ -7902,11 +7493,11 @@ public final class GCGMessageOuterClass {
         } else {
           skillLimitsChangeBuilder_.setMessage(value);
         }
-        messageCase_ = 1013;
+        messageCase_ = 1581;
         return this;
       }
       /**
-       * <code>.GCGMsgSkillLimitsChange skill_limits_change = 1013;</code>
+       * <code>.GCGMsgSkillLimitsChange skill_limits_change = 1581;</code>
        */
       public Builder setSkillLimitsChange(
           emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange.Builder builderForValue) {
@@ -7916,15 +7507,15 @@ public final class GCGMessageOuterClass {
         } else {
           skillLimitsChangeBuilder_.setMessage(builderForValue.build());
         }
-        messageCase_ = 1013;
+        messageCase_ = 1581;
         return this;
       }
       /**
-       * <code>.GCGMsgSkillLimitsChange skill_limits_change = 1013;</code>
+       * <code>.GCGMsgSkillLimitsChange skill_limits_change = 1581;</code>
        */
       public Builder mergeSkillLimitsChange(emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange value) {
         if (skillLimitsChangeBuilder_ == null) {
-          if (messageCase_ == 1013 &&
+          if (messageCase_ == 1581 &&
               message_ != emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange.getDefaultInstance()) {
             message_ = emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange.newBuilder((emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange) message_)
                 .mergeFrom(value).buildPartial();
@@ -7933,26 +7524,26 @@ public final class GCGMessageOuterClass {
           }
           onChanged();
         } else {
-          if (messageCase_ == 1013) {
+          if (messageCase_ == 1581) {
             skillLimitsChangeBuilder_.mergeFrom(value);
           }
           skillLimitsChangeBuilder_.setMessage(value);
         }
-        messageCase_ = 1013;
+        messageCase_ = 1581;
         return this;
       }
       /**
-       * <code>.GCGMsgSkillLimitsChange skill_limits_change = 1013;</code>
+       * <code>.GCGMsgSkillLimitsChange skill_limits_change = 1581;</code>
        */
       public Builder clearSkillLimitsChange() {
         if (skillLimitsChangeBuilder_ == null) {
-          if (messageCase_ == 1013) {
+          if (messageCase_ == 1581) {
             messageCase_ = 0;
             message_ = null;
             onChanged();
           }
         } else {
-          if (messageCase_ == 1013) {
+          if (messageCase_ == 1581) {
             messageCase_ = 0;
             message_ = null;
           }
@@ -7961,33 +7552,33 @@ public final class GCGMessageOuterClass {
         return this;
       }
       /**
-       * <code>.GCGMsgSkillLimitsChange skill_limits_change = 1013;</code>
+       * <code>.GCGMsgSkillLimitsChange skill_limits_change = 1581;</code>
        */
       public emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange.Builder getSkillLimitsChangeBuilder() {
         return getSkillLimitsChangeFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGMsgSkillLimitsChange skill_limits_change = 1013;</code>
+       * <code>.GCGMsgSkillLimitsChange skill_limits_change = 1581;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChangeOrBuilder getSkillLimitsChangeOrBuilder() {
-        if ((messageCase_ == 1013) && (skillLimitsChangeBuilder_ != null)) {
+        if ((messageCase_ == 1581) && (skillLimitsChangeBuilder_ != null)) {
           return skillLimitsChangeBuilder_.getMessageOrBuilder();
         } else {
-          if (messageCase_ == 1013) {
+          if (messageCase_ == 1581) {
             return (emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgSkillLimitsChange skill_limits_change = 1013;</code>
+       * <code>.GCGMsgSkillLimitsChange skill_limits_change = 1581;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange, emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange.Builder, emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChangeOrBuilder> 
           getSkillLimitsChangeFieldBuilder() {
         if (skillLimitsChangeBuilder_ == null) {
-          if (!(messageCase_ == 1013)) {
+          if (!(messageCase_ == 1581)) {
             message_ = emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange.getDefaultInstance();
           }
           skillLimitsChangeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -7997,7 +7588,7 @@ public final class GCGMessageOuterClass {
                   isClean());
           message_ = null;
         }
-        messageCase_ = 1013;
+        messageCase_ = 1581;
         onChanged();;
         return skillLimitsChangeBuilder_;
       }
@@ -8005,33 +7596,33 @@ public final class GCGMessageOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult, emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult.Builder, emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResultOrBuilder> noDamageSkillResultBuilder_;
       /**
-       * <code>.GCGMsgNoDamageSkillResult no_damage_skill_result = 1753;</code>
+       * <code>.GCGMsgNoDamageSkillResult no_damage_skill_result = 1331;</code>
        * @return Whether the noDamageSkillResult field is set.
        */
       @java.lang.Override
       public boolean hasNoDamageSkillResult() {
-        return messageCase_ == 1753;
+        return messageCase_ == 1331;
       }
       /**
-       * <code>.GCGMsgNoDamageSkillResult no_damage_skill_result = 1753;</code>
+       * <code>.GCGMsgNoDamageSkillResult no_damage_skill_result = 1331;</code>
        * @return The noDamageSkillResult.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult getNoDamageSkillResult() {
         if (noDamageSkillResultBuilder_ == null) {
-          if (messageCase_ == 1753) {
+          if (messageCase_ == 1331) {
             return (emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult.getDefaultInstance();
         } else {
-          if (messageCase_ == 1753) {
+          if (messageCase_ == 1331) {
             return noDamageSkillResultBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgNoDamageSkillResult no_damage_skill_result = 1753;</code>
+       * <code>.GCGMsgNoDamageSkillResult no_damage_skill_result = 1331;</code>
        */
       public Builder setNoDamageSkillResult(emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult value) {
         if (noDamageSkillResultBuilder_ == null) {
@@ -8043,11 +7634,11 @@ public final class GCGMessageOuterClass {
         } else {
           noDamageSkillResultBuilder_.setMessage(value);
         }
-        messageCase_ = 1753;
+        messageCase_ = 1331;
         return this;
       }
       /**
-       * <code>.GCGMsgNoDamageSkillResult no_damage_skill_result = 1753;</code>
+       * <code>.GCGMsgNoDamageSkillResult no_damage_skill_result = 1331;</code>
        */
       public Builder setNoDamageSkillResult(
           emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult.Builder builderForValue) {
@@ -8057,15 +7648,15 @@ public final class GCGMessageOuterClass {
         } else {
           noDamageSkillResultBuilder_.setMessage(builderForValue.build());
         }
-        messageCase_ = 1753;
+        messageCase_ = 1331;
         return this;
       }
       /**
-       * <code>.GCGMsgNoDamageSkillResult no_damage_skill_result = 1753;</code>
+       * <code>.GCGMsgNoDamageSkillResult no_damage_skill_result = 1331;</code>
        */
       public Builder mergeNoDamageSkillResult(emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult value) {
         if (noDamageSkillResultBuilder_ == null) {
-          if (messageCase_ == 1753 &&
+          if (messageCase_ == 1331 &&
               message_ != emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult.getDefaultInstance()) {
             message_ = emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult.newBuilder((emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult) message_)
                 .mergeFrom(value).buildPartial();
@@ -8074,26 +7665,26 @@ public final class GCGMessageOuterClass {
           }
           onChanged();
         } else {
-          if (messageCase_ == 1753) {
+          if (messageCase_ == 1331) {
             noDamageSkillResultBuilder_.mergeFrom(value);
           }
           noDamageSkillResultBuilder_.setMessage(value);
         }
-        messageCase_ = 1753;
+        messageCase_ = 1331;
         return this;
       }
       /**
-       * <code>.GCGMsgNoDamageSkillResult no_damage_skill_result = 1753;</code>
+       * <code>.GCGMsgNoDamageSkillResult no_damage_skill_result = 1331;</code>
        */
       public Builder clearNoDamageSkillResult() {
         if (noDamageSkillResultBuilder_ == null) {
-          if (messageCase_ == 1753) {
+          if (messageCase_ == 1331) {
             messageCase_ = 0;
             message_ = null;
             onChanged();
           }
         } else {
-          if (messageCase_ == 1753) {
+          if (messageCase_ == 1331) {
             messageCase_ = 0;
             message_ = null;
           }
@@ -8102,33 +7693,33 @@ public final class GCGMessageOuterClass {
         return this;
       }
       /**
-       * <code>.GCGMsgNoDamageSkillResult no_damage_skill_result = 1753;</code>
+       * <code>.GCGMsgNoDamageSkillResult no_damage_skill_result = 1331;</code>
        */
       public emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult.Builder getNoDamageSkillResultBuilder() {
         return getNoDamageSkillResultFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGMsgNoDamageSkillResult no_damage_skill_result = 1753;</code>
+       * <code>.GCGMsgNoDamageSkillResult no_damage_skill_result = 1331;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResultOrBuilder getNoDamageSkillResultOrBuilder() {
-        if ((messageCase_ == 1753) && (noDamageSkillResultBuilder_ != null)) {
+        if ((messageCase_ == 1331) && (noDamageSkillResultBuilder_ != null)) {
           return noDamageSkillResultBuilder_.getMessageOrBuilder();
         } else {
-          if (messageCase_ == 1753) {
+          if (messageCase_ == 1331) {
             return (emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgNoDamageSkillResult no_damage_skill_result = 1753;</code>
+       * <code>.GCGMsgNoDamageSkillResult no_damage_skill_result = 1331;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult, emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult.Builder, emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResultOrBuilder> 
           getNoDamageSkillResultFieldBuilder() {
         if (noDamageSkillResultBuilder_ == null) {
-          if (!(messageCase_ == 1753)) {
+          if (!(messageCase_ == 1331)) {
             message_ = emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.GCGMsgNoDamageSkillResult.getDefaultInstance();
           }
           noDamageSkillResultBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -8138,7 +7729,7 @@ public final class GCGMessageOuterClass {
                   isClean());
           message_ = null;
         }
-        messageCase_ = 1753;
+        messageCase_ = 1331;
         onChanged();;
         return noDamageSkillResultBuilder_;
       }
@@ -8146,33 +7737,33 @@ public final class GCGMessageOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin, emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin.Builder, emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBeginOrBuilder> reactionBeginBuilder_;
       /**
-       * <code>.GCGMsgReactionBegin reaction_begin = 1386;</code>
+       * <code>.GCGMsgReactionBegin reaction_begin = 322;</code>
        * @return Whether the reactionBegin field is set.
        */
       @java.lang.Override
       public boolean hasReactionBegin() {
-        return messageCase_ == 1386;
+        return messageCase_ == 322;
       }
       /**
-       * <code>.GCGMsgReactionBegin reaction_begin = 1386;</code>
+       * <code>.GCGMsgReactionBegin reaction_begin = 322;</code>
        * @return The reactionBegin.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin getReactionBegin() {
         if (reactionBeginBuilder_ == null) {
-          if (messageCase_ == 1386) {
+          if (messageCase_ == 322) {
             return (emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin.getDefaultInstance();
         } else {
-          if (messageCase_ == 1386) {
+          if (messageCase_ == 322) {
             return reactionBeginBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgReactionBegin reaction_begin = 1386;</code>
+       * <code>.GCGMsgReactionBegin reaction_begin = 322;</code>
        */
       public Builder setReactionBegin(emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin value) {
         if (reactionBeginBuilder_ == null) {
@@ -8184,11 +7775,11 @@ public final class GCGMessageOuterClass {
         } else {
           reactionBeginBuilder_.setMessage(value);
         }
-        messageCase_ = 1386;
+        messageCase_ = 322;
         return this;
       }
       /**
-       * <code>.GCGMsgReactionBegin reaction_begin = 1386;</code>
+       * <code>.GCGMsgReactionBegin reaction_begin = 322;</code>
        */
       public Builder setReactionBegin(
           emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin.Builder builderForValue) {
@@ -8198,15 +7789,15 @@ public final class GCGMessageOuterClass {
         } else {
           reactionBeginBuilder_.setMessage(builderForValue.build());
         }
-        messageCase_ = 1386;
+        messageCase_ = 322;
         return this;
       }
       /**
-       * <code>.GCGMsgReactionBegin reaction_begin = 1386;</code>
+       * <code>.GCGMsgReactionBegin reaction_begin = 322;</code>
        */
       public Builder mergeReactionBegin(emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin value) {
         if (reactionBeginBuilder_ == null) {
-          if (messageCase_ == 1386 &&
+          if (messageCase_ == 322 &&
               message_ != emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin.getDefaultInstance()) {
             message_ = emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin.newBuilder((emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin) message_)
                 .mergeFrom(value).buildPartial();
@@ -8215,26 +7806,26 @@ public final class GCGMessageOuterClass {
           }
           onChanged();
         } else {
-          if (messageCase_ == 1386) {
+          if (messageCase_ == 322) {
             reactionBeginBuilder_.mergeFrom(value);
           }
           reactionBeginBuilder_.setMessage(value);
         }
-        messageCase_ = 1386;
+        messageCase_ = 322;
         return this;
       }
       /**
-       * <code>.GCGMsgReactionBegin reaction_begin = 1386;</code>
+       * <code>.GCGMsgReactionBegin reaction_begin = 322;</code>
        */
       public Builder clearReactionBegin() {
         if (reactionBeginBuilder_ == null) {
-          if (messageCase_ == 1386) {
+          if (messageCase_ == 322) {
             messageCase_ = 0;
             message_ = null;
             onChanged();
           }
         } else {
-          if (messageCase_ == 1386) {
+          if (messageCase_ == 322) {
             messageCase_ = 0;
             message_ = null;
           }
@@ -8243,33 +7834,33 @@ public final class GCGMessageOuterClass {
         return this;
       }
       /**
-       * <code>.GCGMsgReactionBegin reaction_begin = 1386;</code>
+       * <code>.GCGMsgReactionBegin reaction_begin = 322;</code>
        */
       public emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin.Builder getReactionBeginBuilder() {
         return getReactionBeginFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGMsgReactionBegin reaction_begin = 1386;</code>
+       * <code>.GCGMsgReactionBegin reaction_begin = 322;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBeginOrBuilder getReactionBeginOrBuilder() {
-        if ((messageCase_ == 1386) && (reactionBeginBuilder_ != null)) {
+        if ((messageCase_ == 322) && (reactionBeginBuilder_ != null)) {
           return reactionBeginBuilder_.getMessageOrBuilder();
         } else {
-          if (messageCase_ == 1386) {
+          if (messageCase_ == 322) {
             return (emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgReactionBegin reaction_begin = 1386;</code>
+       * <code>.GCGMsgReactionBegin reaction_begin = 322;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin, emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin.Builder, emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBeginOrBuilder> 
           getReactionBeginFieldBuilder() {
         if (reactionBeginBuilder_ == null) {
-          if (!(messageCase_ == 1386)) {
+          if (!(messageCase_ == 322)) {
             message_ = emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin.getDefaultInstance();
           }
           reactionBeginBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -8279,7 +7870,7 @@ public final class GCGMessageOuterClass {
                   isClean());
           message_ = null;
         }
-        messageCase_ = 1386;
+        messageCase_ = 322;
         onChanged();;
         return reactionBeginBuilder_;
       }
@@ -8287,33 +7878,33 @@ public final class GCGMessageOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd, emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd.Builder, emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEndOrBuilder> reactionEndBuilder_;
       /**
-       * <code>.GCGMsgReactionEnd reaction_end = 1304;</code>
+       * <code>.GCGMsgReactionEnd reaction_end = 1565;</code>
        * @return Whether the reactionEnd field is set.
        */
       @java.lang.Override
       public boolean hasReactionEnd() {
-        return messageCase_ == 1304;
+        return messageCase_ == 1565;
       }
       /**
-       * <code>.GCGMsgReactionEnd reaction_end = 1304;</code>
+       * <code>.GCGMsgReactionEnd reaction_end = 1565;</code>
        * @return The reactionEnd.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd getReactionEnd() {
         if (reactionEndBuilder_ == null) {
-          if (messageCase_ == 1304) {
+          if (messageCase_ == 1565) {
             return (emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd.getDefaultInstance();
         } else {
-          if (messageCase_ == 1304) {
+          if (messageCase_ == 1565) {
             return reactionEndBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgReactionEnd reaction_end = 1304;</code>
+       * <code>.GCGMsgReactionEnd reaction_end = 1565;</code>
        */
       public Builder setReactionEnd(emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd value) {
         if (reactionEndBuilder_ == null) {
@@ -8325,11 +7916,11 @@ public final class GCGMessageOuterClass {
         } else {
           reactionEndBuilder_.setMessage(value);
         }
-        messageCase_ = 1304;
+        messageCase_ = 1565;
         return this;
       }
       /**
-       * <code>.GCGMsgReactionEnd reaction_end = 1304;</code>
+       * <code>.GCGMsgReactionEnd reaction_end = 1565;</code>
        */
       public Builder setReactionEnd(
           emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd.Builder builderForValue) {
@@ -8339,15 +7930,15 @@ public final class GCGMessageOuterClass {
         } else {
           reactionEndBuilder_.setMessage(builderForValue.build());
         }
-        messageCase_ = 1304;
+        messageCase_ = 1565;
         return this;
       }
       /**
-       * <code>.GCGMsgReactionEnd reaction_end = 1304;</code>
+       * <code>.GCGMsgReactionEnd reaction_end = 1565;</code>
        */
       public Builder mergeReactionEnd(emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd value) {
         if (reactionEndBuilder_ == null) {
-          if (messageCase_ == 1304 &&
+          if (messageCase_ == 1565 &&
               message_ != emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd.getDefaultInstance()) {
             message_ = emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd.newBuilder((emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd) message_)
                 .mergeFrom(value).buildPartial();
@@ -8356,26 +7947,26 @@ public final class GCGMessageOuterClass {
           }
           onChanged();
         } else {
-          if (messageCase_ == 1304) {
+          if (messageCase_ == 1565) {
             reactionEndBuilder_.mergeFrom(value);
           }
           reactionEndBuilder_.setMessage(value);
         }
-        messageCase_ = 1304;
+        messageCase_ = 1565;
         return this;
       }
       /**
-       * <code>.GCGMsgReactionEnd reaction_end = 1304;</code>
+       * <code>.GCGMsgReactionEnd reaction_end = 1565;</code>
        */
       public Builder clearReactionEnd() {
         if (reactionEndBuilder_ == null) {
-          if (messageCase_ == 1304) {
+          if (messageCase_ == 1565) {
             messageCase_ = 0;
             message_ = null;
             onChanged();
           }
         } else {
-          if (messageCase_ == 1304) {
+          if (messageCase_ == 1565) {
             messageCase_ = 0;
             message_ = null;
           }
@@ -8384,33 +7975,33 @@ public final class GCGMessageOuterClass {
         return this;
       }
       /**
-       * <code>.GCGMsgReactionEnd reaction_end = 1304;</code>
+       * <code>.GCGMsgReactionEnd reaction_end = 1565;</code>
        */
       public emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd.Builder getReactionEndBuilder() {
         return getReactionEndFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GCGMsgReactionEnd reaction_end = 1304;</code>
+       * <code>.GCGMsgReactionEnd reaction_end = 1565;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEndOrBuilder getReactionEndOrBuilder() {
-        if ((messageCase_ == 1304) && (reactionEndBuilder_ != null)) {
+        if ((messageCase_ == 1565) && (reactionEndBuilder_ != null)) {
           return reactionEndBuilder_.getMessageOrBuilder();
         } else {
-          if (messageCase_ == 1304) {
+          if (messageCase_ == 1565) {
             return (emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd) message_;
           }
           return emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd.getDefaultInstance();
         }
       }
       /**
-       * <code>.GCGMsgReactionEnd reaction_end = 1304;</code>
+       * <code>.GCGMsgReactionEnd reaction_end = 1565;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd, emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd.Builder, emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEndOrBuilder> 
           getReactionEndFieldBuilder() {
         if (reactionEndBuilder_ == null) {
-          if (!(messageCase_ == 1304)) {
+          if (!(messageCase_ == 1565)) {
             message_ = emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.GCGMsgReactionEnd.getDefaultInstance();
           }
           reactionEndBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -8420,7 +8011,7 @@ public final class GCGMessageOuterClass {
                   isClean());
           message_ = null;
         }
-        messageCase_ = 1304;
+        messageCase_ = 1565;
         onChanged();;
         return reactionEndBuilder_;
       }
@@ -8491,148 +8082,144 @@ public final class GCGMessageOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\020GCGMessage.proto\032\024GCGMsgAddCards.proto" +
-      "\032\023GCGMsgAddDice.proto\032\026GCGMsgCardUpdate." +
-      "proto\032\023GCGMsgCharDie.proto\032\031GCGMsgClient" +
-      "Perform.proto\032\024GCGMsgCostDice.proto\032\026GCG" +
-      "MsgCostRevise.proto\032\026GCGMsgDiceReroll.pr" +
-      "oto\032\024GCGMsgDiceRoll.proto\032\032GCGMsgDuelDat" +
-      "aChange.proto\032\024GCGMsgGameOver.proto\032\025GCG" +
-      "MsgModifyAdd.proto\032\030GCGMsgModifyRemove.p" +
-      "roto\032\024GCGMsgMoveCard.proto\032\023GCGMsgNewCar" +
-      "d.proto\032\037GCGMsgNoDamageSkillResult.proto" +
-      "\032\023GCGMsgOpTimer.proto\032\020GCGMsgPass.proto\032" +
-      "\027GCGMsgPhaseChange.proto\032\031GCGMsgPhaseCon" +
-      "tinue.proto\032\036GCGMsgPVEIntentionChange.pr" +
-      "oto\032\034GCGMsgPVEIntentionInfo.proto\032\031GCGMs" +
-      "gReactionBegin.proto\032\027GCGMsgReactionEnd." +
-      "proto\032\027GCGMsgRemoveCards.proto\032\031GCGMsgSe" +
-      "lectOnStage.proto\032!GCGMsgSelectOnStageBy" +
-      "Effect.proto\032\035GCGMsgSkillLimitsChange.pr" +
-      "oto\032\027GCGMsgSkillResult.proto\032\027GCGMsgToke" +
-      "nChange.proto\032\034GCGMsgUpdateController.pr" +
-      "oto\032\024GCGMsgUseSkill.proto\032\027GCGMsgUseSkil" +
-      "lEnd.proto\032\035GCGMsgWaitingListChange.prot" +
-      "o\"\247\014\n\nGCGMessage\022*\n\014token_change\030\006 \001(\0132\022" +
-      ".GCGMsgTokenChangeH\000\022*\n\014phase_change\030\002 \001" +
-      "(\0132\022.GCGMsgPhaseChangeH\000\022$\n\tadd_cards\030\016 " +
-      "\001(\0132\017.GCGMsgAddCardsH\000\022*\n\014remove_cards\030\n" +
-      " \001(\0132\022.GCGMsgRemoveCardsH\000\022/\n\017select_on_" +
-      "stage\030\010 \001(\0132\024.GCGMsgSelectOnStageH\000\022$\n\td" +
-      "ice_roll\030\r \001(\0132\017.GCGMsgDiceRollH\000\022(\n\013dic" +
-      "e_reroll\030\017 \001(\0132\021.GCGMsgDiceRerollH\000\022\033\n\004p" +
-      "ass\030\013 \001(\0132\013.GCGMsgPassH\000\022\"\n\010char_die\030\003 \001" +
-      "(\0132\016.GCGMsgCharDieH\000\022*\n\014skill_result\030\005 \001" +
-      "(\0132\022.GCGMsgSkillResultH\000\022$\n\tcost_dice\030\004 " +
-      "\001(\0132\017.GCGMsgCostDiceH\000\022\"\n\010add_dice\030\001 \001(\013" +
-      "2\016.GCGMsgAddDiceH\000\022$\n\tmove_card\030\014 \001(\0132\017." +
-      "GCGMsgMoveCardH\000\022$\n\tuse_skill\030\007 \001(\0132\017.GC" +
-      "GMsgUseSkillH\000\022#\n\010new_card\030\242\r \001(\0132\016.GCGM" +
-      "sgNewCardH\000\0225\n\021update_controller\030\340\017 \001(\0132" +
-      "\027.GCGMsgUpdateControllerH\000\022\'\n\nmodify_add" +
-      "\030\253\004 \001(\0132\020.GCGMsgModifyAddH\000\022-\n\rmodify_re" +
-      "move\030\355\016 \001(\0132\023.GCGMsgModifyRemoveH\000\022,\n\rus" +
-      "e_skill_end\030\253\010 \001(\0132\022.GCGMsgUseSkillEndH\000" +
-      "\0222\n\020duel_data_change\030\256\005 \001(\0132\025.GCGMsgDuel" +
-      "DataChangeH\000\022/\n\016client_perform\030\317\r \001(\0132\024." +
-      "GCGMsgClientPerformH\000\022%\n\tgame_over\030\346\r \001(" +
-      "\0132\017.GCGMsgGameOverH\000\022#\n\010op_timer\030\247\001 \001(\0132" +
-      "\016.GCGMsgOpTimerH\000\0228\n\023waiting_list_change" +
-      "\030\373\006 \001(\0132\030.GCGMsgWaitingListChangeH\000\022)\n\013c" +
-      "ard_update\030\215\014 \001(\0132\021.GCGMsgCardUpdateH\000\022B" +
-      "\n\031select_on_stage_by_effect\030\305\010 \001(\0132\034.GCG" +
-      "MsgSelectOnStageByEffectH\000\022)\n\013cost_revis" +
-      "e\030\216\013 \001(\0132\021.GCGMsgCostReviseH\000\022/\n\016phase_c" +
-      "ontinue\030\360\004 \001(\0132\024.GCGMsgPhaseContinueH\000\0225" +
-      "\n\022pve_intention_info\030A \001(\0132\027.GCGMsgPVEIn" +
-      "tentionInfoH\000\022:\n\024pve_intention_change\030\243\014" +
-      " \001(\0132\031.GCGMsgPVEIntentionChangeH\000\0228\n\023ski" +
-      "ll_limits_change\030\365\007 \001(\0132\030.GCGMsgSkillLim" +
-      "itsChangeH\000\022=\n\026no_damage_skill_result\030\331\r" +
-      " \001(\0132\032.GCGMsgNoDamageSkillResultH\000\022/\n\016re" +
-      "action_begin\030\352\n \001(\0132\024.GCGMsgReactionBegi" +
-      "nH\000\022+\n\014reaction_end\030\230\n \001(\0132\022.GCGMsgReact" +
-      "ionEndH\000B\t\n\007messageB\033\n\031emu.grasscutter.n" +
-      "et.protob\006proto3"
+      "\n\020GCGMessage.proto\032\027GCGMsgTokenChange.pr" +
+      "oto\032\027GCGMsgPhaseChange.proto\032\024GCGMsgAddC" +
+      "ards.proto\032\027GCGMsgRemoveCards.proto\032\031GCG" +
+      "MsgSelectOnStage.proto\032\024GCGMsgDiceRoll.p" +
+      "roto\032\026GCGMsgDiceReroll.proto\032\020GCGMsgPass" +
+      ".proto\032\027GCGMsgSkillResult.proto\032\024GCGMsgC" +
+      "ostDice.proto\032\023GCGMsgAddDice.proto\032\024GCGM" +
+      "sgMoveCard.proto\032\024GCGMsgUseSkill.proto\032\023" +
+      "GCGMsgNewCard.proto\032\034GCGMsgUpdateControl" +
+      "ler.proto\032\025GCGMsgModifyAdd.proto\032\030GCGMsg" +
+      "ModifyRemove.proto\032\027GCGMsgUseSkillEnd.pr" +
+      "oto\032\032GCGMsgDuelDataChange.proto\032\031GCGMsgC" +
+      "lientPerform.proto\032\024GCGMsgGameOver.proto" +
+      "\032\023GCGMsgOpTimer.proto\032\035GCGMsgWaitingList" +
+      "Change.proto\032\026GCGMsgCardUpdate.proto\032!GC" +
+      "GMsgSelectOnStageByEffect.proto\032\026GCGMsgC" +
+      "ostRevise.proto\032\031GCGMsgPhaseContinue.pro" +
+      "to\032\034GCGMsgPVEIntentionInfo.proto\032\036GCGMsg" +
+      "PVEIntentionChange.proto\032\035GCGMsgSkillLim" +
+      "itsChange.proto\032\037GCGMsgNoDamageSkillResu" +
+      "lt.proto\032\031GCGMsgReactionBegin.proto\032\027GCG" +
+      "MsgReactionEnd.proto\"\204\014\n\nGCGMessage\022*\n\014t" +
+      "oken_change\030\006 \001(\0132\022.GCGMsgTokenChangeH\000\022" +
+      "*\n\014phase_change\030\007 \001(\0132\022.GCGMsgPhaseChang" +
+      "eH\000\022$\n\tadd_cards\030\004 \001(\0132\017.GCGMsgAddCardsH" +
+      "\000\022*\n\014remove_cards\030\005 \001(\0132\022.GCGMsgRemoveCa" +
+      "rdsH\000\022/\n\017select_on_stage\030\002 \001(\0132\024.GCGMsgS" +
+      "electOnStageH\000\022$\n\tdice_roll\030\003 \001(\0132\017.GCGM" +
+      "sgDiceRollH\000\022(\n\013dice_reroll\030\017 \001(\0132\021.GCGM" +
+      "sgDiceRerollH\000\022\033\n\004pass\030\010 \001(\0132\013.GCGMsgPas" +
+      "sH\000\022*\n\014skill_result\030\n \001(\0132\022.GCGMsgSkillR" +
+      "esultH\000\022$\n\tcost_dice\030\016 \001(\0132\017.GCGMsgCostD" +
+      "iceH\000\022\"\n\010add_dice\030\013 \001(\0132\016.GCGMsgAddDiceH" +
+      "\000\022$\n\tmove_card\030\014 \001(\0132\017.GCGMsgMoveCardH\000\022" +
+      "$\n\tuse_skill\030\r \001(\0132\017.GCGMsgUseSkillH\000\022#\n" +
+      "\010new_card\030\315\t \001(\0132\016.GCGMsgNewCardH\000\0225\n\021up" +
+      "date_controller\030\357\010 \001(\0132\027.GCGMsgUpdateCon" +
+      "trollerH\000\022\'\n\nmodify_add\030\235\013 \001(\0132\020.GCGMsgM" +
+      "odifyAddH\000\022-\n\rmodify_remove\030\247\014 \001(\0132\023.GCG" +
+      "MsgModifyRemoveH\000\022,\n\ruse_skill_end\030\222\013 \001(" +
+      "\0132\022.GCGMsgUseSkillEndH\000\0222\n\020duel_data_cha" +
+      "nge\030\216\004 \001(\0132\025.GCGMsgDuelDataChangeH\000\022/\n\016c" +
+      "lient_perform\030\346\001 \001(\0132\024.GCGMsgClientPerfo" +
+      "rmH\000\022%\n\tgame_over\030\204\007 \001(\0132\017.GCGMsgGameOve" +
+      "rH\000\022#\n\010op_timer\030\340\002 \001(\0132\016.GCGMsgOpTimerH\000" +
+      "\0228\n\023waiting_list_change\030\252\007 \001(\0132\030.GCGMsgW" +
+      "aitingListChangeH\000\022)\n\013card_update\030\322\004 \001(\013" +
+      "2\021.GCGMsgCardUpdateH\000\022B\n\031select_on_stage" +
+      "_by_effect\030\241\003 \001(\0132\034.GCGMsgSelectOnStageB" +
+      "yEffectH\000\022)\n\013cost_revise\030\347\t \001(\0132\021.GCGMsg" +
+      "CostReviseH\000\022/\n\016phase_continue\030\273\007 \001(\0132\024." +
+      "GCGMsgPhaseContinueH\000\0226\n\022pve_intention_i" +
+      "nfo\030\327\010 \001(\0132\027.GCGMsgPVEIntentionInfoH\000\022:\n" +
+      "\024pve_intention_change\030\275\001 \001(\0132\031.GCGMsgPVE" +
+      "IntentionChangeH\000\0228\n\023skill_limits_change" +
+      "\030\255\014 \001(\0132\030.GCGMsgSkillLimitsChangeH\000\022=\n\026n" +
+      "o_damage_skill_result\030\263\n \001(\0132\032.GCGMsgNoD" +
+      "amageSkillResultH\000\022/\n\016reaction_begin\030\302\002 " +
+      "\001(\0132\024.GCGMsgReactionBeginH\000\022+\n\014reaction_" +
+      "end\030\235\014 \001(\0132\022.GCGMsgReactionEndH\000B\t\n\007mess" +
+      "ageB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.GCGMsgDiceRerollOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.GCGMsgMoveCardOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.GCGMsgPassOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGMsgTokenChangeOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGMsgDiceRerollOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGMsgPassOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.GCGMsgTokenChangeOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGMsgMoveCardOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.getDescriptor(),
         });
     internal_static_GCGMessage_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_GCGMessage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGMessage_descriptor,
-        new java.lang.String[] { "TokenChange", "PhaseChange", "AddCards", "RemoveCards", "SelectOnStage", "DiceRoll", "DiceReroll", "Pass", "CharDie", "SkillResult", "CostDice", "AddDice", "MoveCard", "UseSkill", "NewCard", "UpdateController", "ModifyAdd", "ModifyRemove", "UseSkillEnd", "DuelDataChange", "ClientPerform", "GameOver", "OpTimer", "WaitingListChange", "CardUpdate", "SelectOnStageByEffect", "CostRevise", "PhaseContinue", "PveIntentionInfo", "PveIntentionChange", "SkillLimitsChange", "NoDamageSkillResult", "ReactionBegin", "ReactionEnd", "Message", });
-    emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.GCGMsgCharDieOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.GCGMsgDiceRerollOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.GCGMsgMoveCardOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.GCGMsgPassOuterClass.getDescriptor();
+        new java.lang.String[] { "TokenChange", "PhaseChange", "AddCards", "RemoveCards", "SelectOnStage", "DiceRoll", "DiceReroll", "Pass", "SkillResult", "CostDice", "AddDice", "MoveCard", "UseSkill", "NewCard", "UpdateController", "ModifyAdd", "ModifyRemove", "UseSkillEnd", "DuelDataChange", "ClientPerform", "GameOver", "OpTimer", "WaitingListChange", "CardUpdate", "SelectOnStageByEffect", "CostRevise", "PhaseContinue", "PveIntentionInfo", "PveIntentionChange", "SkillLimitsChange", "NoDamageSkillResult", "ReactionBegin", "ReactionEnd", "Message", });
+    emu.grasscutter.net.proto.GCGMsgTokenChangeOuterClass.getDescriptor();
     emu.grasscutter.net.proto.GCGMsgPhaseChangeOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGMsgAddCardsOuterClass.getDescriptor();
     emu.grasscutter.net.proto.GCGMsgRemoveCardsOuterClass.getDescriptor();
     emu.grasscutter.net.proto.GCGMsgSelectOnStageOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGMsgDiceRollOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGMsgDiceRerollOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGMsgPassOuterClass.getDescriptor();
     emu.grasscutter.net.proto.GCGMsgSkillResultOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.GCGMsgTokenChangeOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGMsgCostDiceOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGMsgMoveCardOuterClass.getDescriptor();
     emu.grasscutter.net.proto.GCGMsgUseSkillOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGMsgNewCardOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGMsgUpdateControllerOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGMsgModifyAddOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGMsgModifyRemoveOuterClass.getDescriptor();
     emu.grasscutter.net.proto.GCGMsgUseSkillEndOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGMsgDuelDataChangeOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGMsgClientPerformOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGMsgGameOverOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.getDescriptor();
     emu.grasscutter.net.proto.GCGMsgWaitingListChangeOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGMsgCardUpdateOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGMsgSelectOnStageByEffectOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGMsgCostReviseOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGMsgPhaseContinueOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGMsgPVEIntentionChangeOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGMsgNoDamageSkillResultOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGMsgReactionEndOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

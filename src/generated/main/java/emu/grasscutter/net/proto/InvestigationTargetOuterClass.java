@@ -19,6 +19,12 @@ public final class InvestigationTargetOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>uint32 investigation_id = 5;</code>
+     * @return The investigationId.
+     */
+    int getInvestigationId();
+
+    /**
      * <code>.InvestigationTarget.State state = 6;</code>
      * @return The enum numeric value on the wire for state.
      */
@@ -30,16 +36,10 @@ public final class InvestigationTargetOuterClass {
     emu.grasscutter.net.proto.InvestigationTargetOuterClass.InvestigationTarget.State getState();
 
     /**
-     * <code>uint32 total_progress = 5;</code>
-     * @return The totalProgress.
+     * <code>uint32 progress = 7;</code>
+     * @return The progress.
      */
-    int getTotalProgress();
-
-    /**
-     * <code>uint32 investigation_id = 7;</code>
-     * @return The investigationId.
-     */
-    int getInvestigationId();
+    int getProgress();
 
     /**
      * <code>uint32 quest_id = 14;</code>
@@ -48,14 +48,14 @@ public final class InvestigationTargetOuterClass {
     int getQuestId();
 
     /**
-     * <code>uint32 progress = 1;</code>
-     * @return The progress.
+     * <code>uint32 total_progress = 11;</code>
+     * @return The totalProgress.
      */
-    int getProgress();
+    int getTotalProgress();
   }
   /**
    * <pre>
-   * Name: EJKIKKJCFKL
+   * Obf: OBIKILBIEGP
    * </pre>
    *
    * Protobuf type {@code InvestigationTarget}
@@ -103,14 +103,9 @@ public final class InvestigationTargetOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              progress_ = input.readUInt32();
-              break;
-            }
             case 40: {
 
-              totalProgress_ = input.readUInt32();
+              investigationId_ = input.readUInt32();
               break;
             }
             case 48: {
@@ -121,7 +116,12 @@ public final class InvestigationTargetOuterClass {
             }
             case 56: {
 
-              investigationId_ = input.readUInt32();
+              progress_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              totalProgress_ = input.readUInt32();
               break;
             }
             case 112: {
@@ -163,7 +163,7 @@ public final class InvestigationTargetOuterClass {
 
     /**
      * <pre>
-     * Name: PMPLOIOCICM
+     * Obf: HBKLOLAACJJ
      * </pre>
      *
      * Protobuf enum {@code InvestigationTarget.State}
@@ -171,40 +171,40 @@ public final class InvestigationTargetOuterClass {
     public enum State
         implements com.google.protobuf.ProtocolMessageEnum {
       /**
-       * <code>STATE_INVALID = 0;</code>
+       * <code>INVALID = 0;</code>
        */
-      STATE_INVALID(0),
+      INVALID(0),
       /**
-       * <code>STATE_IN_PROGRESS = 1;</code>
+       * <code>IN_PROGRESS = 1;</code>
        */
-      STATE_IN_PROGRESS(1),
+      IN_PROGRESS(1),
       /**
-       * <code>STATE_COMPLETE = 2;</code>
+       * <code>COMPLETE = 2;</code>
        */
-      STATE_COMPLETE(2),
+      COMPLETE(2),
       /**
-       * <code>STATE_REWARD_TAKEN = 3;</code>
+       * <code>REWARD_TAKEN = 3;</code>
        */
-      STATE_REWARD_TAKEN(3),
+      REWARD_TAKEN(3),
       UNRECOGNIZED(-1),
       ;
 
       /**
-       * <code>STATE_INVALID = 0;</code>
+       * <code>INVALID = 0;</code>
        */
-      public static final int STATE_INVALID_VALUE = 0;
+      public static final int INVALID_VALUE = 0;
       /**
-       * <code>STATE_IN_PROGRESS = 1;</code>
+       * <code>IN_PROGRESS = 1;</code>
        */
-      public static final int STATE_IN_PROGRESS_VALUE = 1;
+      public static final int IN_PROGRESS_VALUE = 1;
       /**
-       * <code>STATE_COMPLETE = 2;</code>
+       * <code>COMPLETE = 2;</code>
        */
-      public static final int STATE_COMPLETE_VALUE = 2;
+      public static final int COMPLETE_VALUE = 2;
       /**
-       * <code>STATE_REWARD_TAKEN = 3;</code>
+       * <code>REWARD_TAKEN = 3;</code>
        */
-      public static final int STATE_REWARD_TAKEN_VALUE = 3;
+      public static final int REWARD_TAKEN_VALUE = 3;
 
 
       public final int getNumber() {
@@ -231,10 +231,10 @@ public final class InvestigationTargetOuterClass {
        */
       public static State forNumber(int value) {
         switch (value) {
-          case 0: return STATE_INVALID;
-          case 1: return STATE_IN_PROGRESS;
-          case 2: return STATE_COMPLETE;
-          case 3: return STATE_REWARD_TAKEN;
+          case 0: return INVALID;
+          case 1: return IN_PROGRESS;
+          case 2: return COMPLETE;
+          case 3: return REWARD_TAKEN;
           default: return null;
         }
       }
@@ -291,6 +291,17 @@ public final class InvestigationTargetOuterClass {
       // @@protoc_insertion_point(enum_scope:InvestigationTarget.State)
     }
 
+    public static final int INVESTIGATION_ID_FIELD_NUMBER = 5;
+    private int investigationId_;
+    /**
+     * <code>uint32 investigation_id = 5;</code>
+     * @return The investigationId.
+     */
+    @java.lang.Override
+    public int getInvestigationId() {
+      return investigationId_;
+    }
+
     public static final int STATE_FIELD_NUMBER = 6;
     private int state_;
     /**
@@ -310,26 +321,15 @@ public final class InvestigationTargetOuterClass {
       return result == null ? emu.grasscutter.net.proto.InvestigationTargetOuterClass.InvestigationTarget.State.UNRECOGNIZED : result;
     }
 
-    public static final int TOTAL_PROGRESS_FIELD_NUMBER = 5;
-    private int totalProgress_;
+    public static final int PROGRESS_FIELD_NUMBER = 7;
+    private int progress_;
     /**
-     * <code>uint32 total_progress = 5;</code>
-     * @return The totalProgress.
+     * <code>uint32 progress = 7;</code>
+     * @return The progress.
      */
     @java.lang.Override
-    public int getTotalProgress() {
-      return totalProgress_;
-    }
-
-    public static final int INVESTIGATION_ID_FIELD_NUMBER = 7;
-    private int investigationId_;
-    /**
-     * <code>uint32 investigation_id = 7;</code>
-     * @return The investigationId.
-     */
-    @java.lang.Override
-    public int getInvestigationId() {
-      return investigationId_;
+    public int getProgress() {
+      return progress_;
     }
 
     public static final int QUEST_ID_FIELD_NUMBER = 14;
@@ -343,15 +343,15 @@ public final class InvestigationTargetOuterClass {
       return questId_;
     }
 
-    public static final int PROGRESS_FIELD_NUMBER = 1;
-    private int progress_;
+    public static final int TOTAL_PROGRESS_FIELD_NUMBER = 11;
+    private int totalProgress_;
     /**
-     * <code>uint32 progress = 1;</code>
-     * @return The progress.
+     * <code>uint32 total_progress = 11;</code>
+     * @return The totalProgress.
      */
     @java.lang.Override
-    public int getProgress() {
-      return progress_;
+    public int getTotalProgress() {
+      return totalProgress_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -368,17 +368,17 @@ public final class InvestigationTargetOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (progress_ != 0) {
-        output.writeUInt32(1, progress_);
+      if (investigationId_ != 0) {
+        output.writeUInt32(5, investigationId_);
       }
-      if (totalProgress_ != 0) {
-        output.writeUInt32(5, totalProgress_);
-      }
-      if (state_ != emu.grasscutter.net.proto.InvestigationTargetOuterClass.InvestigationTarget.State.STATE_INVALID.getNumber()) {
+      if (state_ != emu.grasscutter.net.proto.InvestigationTargetOuterClass.InvestigationTarget.State.INVALID.getNumber()) {
         output.writeEnum(6, state_);
       }
-      if (investigationId_ != 0) {
-        output.writeUInt32(7, investigationId_);
+      if (progress_ != 0) {
+        output.writeUInt32(7, progress_);
+      }
+      if (totalProgress_ != 0) {
+        output.writeUInt32(11, totalProgress_);
       }
       if (questId_ != 0) {
         output.writeUInt32(14, questId_);
@@ -392,21 +392,21 @@ public final class InvestigationTargetOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (progress_ != 0) {
+      if (investigationId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, progress_);
+          .computeUInt32Size(5, investigationId_);
       }
-      if (totalProgress_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, totalProgress_);
-      }
-      if (state_ != emu.grasscutter.net.proto.InvestigationTargetOuterClass.InvestigationTarget.State.STATE_INVALID.getNumber()) {
+      if (state_ != emu.grasscutter.net.proto.InvestigationTargetOuterClass.InvestigationTarget.State.INVALID.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(6, state_);
       }
-      if (investigationId_ != 0) {
+      if (progress_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, investigationId_);
+          .computeUInt32Size(7, progress_);
+      }
+      if (totalProgress_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, totalProgress_);
       }
       if (questId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -427,15 +427,15 @@ public final class InvestigationTargetOuterClass {
       }
       emu.grasscutter.net.proto.InvestigationTargetOuterClass.InvestigationTarget other = (emu.grasscutter.net.proto.InvestigationTargetOuterClass.InvestigationTarget) obj;
 
-      if (state_ != other.state_) return false;
-      if (getTotalProgress()
-          != other.getTotalProgress()) return false;
       if (getInvestigationId()
           != other.getInvestigationId()) return false;
-      if (getQuestId()
-          != other.getQuestId()) return false;
+      if (state_ != other.state_) return false;
       if (getProgress()
           != other.getProgress()) return false;
+      if (getQuestId()
+          != other.getQuestId()) return false;
+      if (getTotalProgress()
+          != other.getTotalProgress()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -447,16 +447,16 @@ public final class InvestigationTargetOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + STATE_FIELD_NUMBER;
-      hash = (53 * hash) + state_;
-      hash = (37 * hash) + TOTAL_PROGRESS_FIELD_NUMBER;
-      hash = (53 * hash) + getTotalProgress();
       hash = (37 * hash) + INVESTIGATION_ID_FIELD_NUMBER;
       hash = (53 * hash) + getInvestigationId();
-      hash = (37 * hash) + QUEST_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getQuestId();
+      hash = (37 * hash) + STATE_FIELD_NUMBER;
+      hash = (53 * hash) + state_;
       hash = (37 * hash) + PROGRESS_FIELD_NUMBER;
       hash = (53 * hash) + getProgress();
+      hash = (37 * hash) + QUEST_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getQuestId();
+      hash = (37 * hash) + TOTAL_PROGRESS_FIELD_NUMBER;
+      hash = (53 * hash) + getTotalProgress();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -554,7 +554,7 @@ public final class InvestigationTargetOuterClass {
     }
     /**
      * <pre>
-     * Name: EJKIKKJCFKL
+     * Obf: OBIKILBIEGP
      * </pre>
      *
      * Protobuf type {@code InvestigationTarget}
@@ -594,15 +594,15 @@ public final class InvestigationTargetOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        investigationId_ = 0;
+
         state_ = 0;
 
-        totalProgress_ = 0;
-
-        investigationId_ = 0;
+        progress_ = 0;
 
         questId_ = 0;
 
-        progress_ = 0;
+        totalProgress_ = 0;
 
         return this;
       }
@@ -630,11 +630,11 @@ public final class InvestigationTargetOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.InvestigationTargetOuterClass.InvestigationTarget buildPartial() {
         emu.grasscutter.net.proto.InvestigationTargetOuterClass.InvestigationTarget result = new emu.grasscutter.net.proto.InvestigationTargetOuterClass.InvestigationTarget(this);
-        result.state_ = state_;
-        result.totalProgress_ = totalProgress_;
         result.investigationId_ = investigationId_;
-        result.questId_ = questId_;
+        result.state_ = state_;
         result.progress_ = progress_;
+        result.questId_ = questId_;
+        result.totalProgress_ = totalProgress_;
         onBuilt();
         return result;
       }
@@ -683,20 +683,20 @@ public final class InvestigationTargetOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.InvestigationTargetOuterClass.InvestigationTarget other) {
         if (other == emu.grasscutter.net.proto.InvestigationTargetOuterClass.InvestigationTarget.getDefaultInstance()) return this;
+        if (other.getInvestigationId() != 0) {
+          setInvestigationId(other.getInvestigationId());
+        }
         if (other.state_ != 0) {
           setStateValue(other.getStateValue());
         }
-        if (other.getTotalProgress() != 0) {
-          setTotalProgress(other.getTotalProgress());
-        }
-        if (other.getInvestigationId() != 0) {
-          setInvestigationId(other.getInvestigationId());
+        if (other.getProgress() != 0) {
+          setProgress(other.getProgress());
         }
         if (other.getQuestId() != 0) {
           setQuestId(other.getQuestId());
         }
-        if (other.getProgress() != 0) {
-          setProgress(other.getProgress());
+        if (other.getTotalProgress() != 0) {
+          setTotalProgress(other.getTotalProgress());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -724,6 +724,37 @@ public final class InvestigationTargetOuterClass {
             mergeFrom(parsedMessage);
           }
         }
+        return this;
+      }
+
+      private int investigationId_ ;
+      /**
+       * <code>uint32 investigation_id = 5;</code>
+       * @return The investigationId.
+       */
+      @java.lang.Override
+      public int getInvestigationId() {
+        return investigationId_;
+      }
+      /**
+       * <code>uint32 investigation_id = 5;</code>
+       * @param value The investigationId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setInvestigationId(int value) {
+        
+        investigationId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 investigation_id = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearInvestigationId() {
+        
+        investigationId_ = 0;
+        onChanged();
         return this;
       }
 
@@ -781,64 +812,33 @@ public final class InvestigationTargetOuterClass {
         return this;
       }
 
-      private int totalProgress_ ;
+      private int progress_ ;
       /**
-       * <code>uint32 total_progress = 5;</code>
-       * @return The totalProgress.
+       * <code>uint32 progress = 7;</code>
+       * @return The progress.
        */
       @java.lang.Override
-      public int getTotalProgress() {
-        return totalProgress_;
+      public int getProgress() {
+        return progress_;
       }
       /**
-       * <code>uint32 total_progress = 5;</code>
-       * @param value The totalProgress to set.
+       * <code>uint32 progress = 7;</code>
+       * @param value The progress to set.
        * @return This builder for chaining.
        */
-      public Builder setTotalProgress(int value) {
+      public Builder setProgress(int value) {
         
-        totalProgress_ = value;
+        progress_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 total_progress = 5;</code>
+       * <code>uint32 progress = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTotalProgress() {
+      public Builder clearProgress() {
         
-        totalProgress_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int investigationId_ ;
-      /**
-       * <code>uint32 investigation_id = 7;</code>
-       * @return The investigationId.
-       */
-      @java.lang.Override
-      public int getInvestigationId() {
-        return investigationId_;
-      }
-      /**
-       * <code>uint32 investigation_id = 7;</code>
-       * @param value The investigationId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setInvestigationId(int value) {
-        
-        investigationId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 investigation_id = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearInvestigationId() {
-        
-        investigationId_ = 0;
+        progress_ = 0;
         onChanged();
         return this;
       }
@@ -874,33 +874,33 @@ public final class InvestigationTargetOuterClass {
         return this;
       }
 
-      private int progress_ ;
+      private int totalProgress_ ;
       /**
-       * <code>uint32 progress = 1;</code>
-       * @return The progress.
+       * <code>uint32 total_progress = 11;</code>
+       * @return The totalProgress.
        */
       @java.lang.Override
-      public int getProgress() {
-        return progress_;
+      public int getTotalProgress() {
+        return totalProgress_;
       }
       /**
-       * <code>uint32 progress = 1;</code>
-       * @param value The progress to set.
+       * <code>uint32 total_progress = 11;</code>
+       * @param value The totalProgress to set.
        * @return This builder for chaining.
        */
-      public Builder setProgress(int value) {
+      public Builder setTotalProgress(int value) {
         
-        progress_ = value;
+        totalProgress_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 progress = 1;</code>
+       * <code>uint32 total_progress = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearProgress() {
+      public Builder clearTotalProgress() {
         
-        progress_ = 0;
+        totalProgress_ = 0;
         onChanged();
         return this;
       }
@@ -971,14 +971,14 @@ public final class InvestigationTargetOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\031InvestigationTarget.proto\"\365\001\n\023Investig" +
-      "ationTarget\022)\n\005state\030\006 \001(\0162\032.Investigati" +
-      "onTarget.State\022\026\n\016total_progress\030\005 \001(\r\022\030" +
-      "\n\020investigation_id\030\007 \001(\r\022\020\n\010quest_id\030\016 \001" +
-      "(\r\022\020\n\010progress\030\001 \001(\r\"]\n\005State\022\021\n\rSTATE_I" +
-      "NVALID\020\000\022\025\n\021STATE_IN_PROGRESS\020\001\022\022\n\016STATE" +
-      "_COMPLETE\020\002\022\026\n\022STATE_REWARD_TAKEN\020\003B\033\n\031e" +
-      "mu.grasscutter.net.protob\006proto3"
+      "\n\031InvestigationTarget.proto\"\335\001\n\023Investig" +
+      "ationTarget\022\030\n\020investigation_id\030\005 \001(\r\022)\n" +
+      "\005state\030\006 \001(\0162\032.InvestigationTarget.State" +
+      "\022\020\n\010progress\030\007 \001(\r\022\020\n\010quest_id\030\016 \001(\r\022\026\n\016" +
+      "total_progress\030\013 \001(\r\"E\n\005State\022\013\n\007INVALID" +
+      "\020\000\022\017\n\013IN_PROGRESS\020\001\022\014\n\010COMPLETE\020\002\022\020\n\014REW" +
+      "ARD_TAKEN\020\003B\033\n\031emu.grasscutter.net.proto" +
+      "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -989,7 +989,7 @@ public final class InvestigationTargetOuterClass {
     internal_static_InvestigationTarget_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_InvestigationTarget_descriptor,
-        new java.lang.String[] { "State", "TotalProgress", "InvestigationId", "QuestId", "Progress", });
+        new java.lang.String[] { "InvestigationId", "State", "Progress", "QuestId", "TotalProgress", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

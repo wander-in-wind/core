@@ -19,21 +19,21 @@ public final class TakeEffigyFirstPassRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 challenge_id = 4;</code>
+     * <code>uint32 challenge_id = 10;</code>
      * @return The challengeId.
      */
     int getChallengeId();
 
     /**
-     * <code>int32 retcode = 12;</code>
+     * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * Name: JFLFPKNJMBO
-   * CmdId: 2025
+   * CmdId: 2084
+   * Obf: MIFHPFGCJIN
    * </pre>
    *
    * Protobuf type {@code TakeEffigyFirstPassRewardRsp}
@@ -80,12 +80,12 @@ public final class TakeEffigyFirstPassRewardRspOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 80: {
 
               challengeId_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 120: {
 
               retcode_ = input.readInt32();
               break;
@@ -122,10 +122,10 @@ public final class TakeEffigyFirstPassRewardRspOuterClass {
               emu.grasscutter.net.proto.TakeEffigyFirstPassRewardRspOuterClass.TakeEffigyFirstPassRewardRsp.class, emu.grasscutter.net.proto.TakeEffigyFirstPassRewardRspOuterClass.TakeEffigyFirstPassRewardRsp.Builder.class);
     }
 
-    public static final int CHALLENGE_ID_FIELD_NUMBER = 4;
+    public static final int CHALLENGE_ID_FIELD_NUMBER = 10;
     private int challengeId_;
     /**
-     * <code>uint32 challenge_id = 4;</code>
+     * <code>uint32 challenge_id = 10;</code>
      * @return The challengeId.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class TakeEffigyFirstPassRewardRspOuterClass {
       return challengeId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 12;
+    public static final int RETCODE_FIELD_NUMBER = 15;
     private int retcode_;
     /**
-     * <code>int32 retcode = 12;</code>
+     * <code>int32 retcode = 15;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -159,10 +159,10 @@ public final class TakeEffigyFirstPassRewardRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (challengeId_ != 0) {
-        output.writeUInt32(4, challengeId_);
+        output.writeUInt32(10, challengeId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(12, retcode_);
+        output.writeInt32(15, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +175,11 @@ public final class TakeEffigyFirstPassRewardRspOuterClass {
       size = 0;
       if (challengeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, challengeId_);
+          .computeUInt32Size(10, challengeId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(12, retcode_);
+          .computeInt32Size(15, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class TakeEffigyFirstPassRewardRspOuterClass {
     }
     /**
      * <pre>
-     * Name: JFLFPKNJMBO
-     * CmdId: 2025
+     * CmdId: 2084
+     * Obf: MIFHPFGCJIN
      * </pre>
      *
      * Protobuf type {@code TakeEffigyFirstPassRewardRsp}
@@ -470,7 +470,7 @@ public final class TakeEffigyFirstPassRewardRspOuterClass {
 
       private int challengeId_ ;
       /**
-       * <code>uint32 challenge_id = 4;</code>
+       * <code>uint32 challenge_id = 10;</code>
        * @return The challengeId.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class TakeEffigyFirstPassRewardRspOuterClass {
         return challengeId_;
       }
       /**
-       * <code>uint32 challenge_id = 4;</code>
+       * <code>uint32 challenge_id = 10;</code>
        * @param value The challengeId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class TakeEffigyFirstPassRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 challenge_id = 4;</code>
+       * <code>uint32 challenge_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearChallengeId() {
@@ -501,7 +501,7 @@ public final class TakeEffigyFirstPassRewardRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 15;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class TakeEffigyFirstPassRewardRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 15;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class TakeEffigyFirstPassRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -598,7 +598,7 @@ public final class TakeEffigyFirstPassRewardRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"TakeEffigyFirstPassRewardRsp.proto\"E\n\034" +
       "TakeEffigyFirstPassRewardRsp\022\024\n\014challeng" +
-      "e_id\030\004 \001(\r\022\017\n\007retcode\030\014 \001(\005B\033\n\031emu.grass" +
+      "e_id\030\n \001(\r\022\017\n\007retcode\030\017 \001(\005B\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

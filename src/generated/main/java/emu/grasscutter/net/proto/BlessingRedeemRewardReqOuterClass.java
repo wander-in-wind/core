@@ -20,8 +20,8 @@ public final class BlessingRedeemRewardReqOuterClass {
   }
   /**
    * <pre>
-   * Name: HPKPKNJLKKD
-   * CmdId: 2100
+   * CmdId: 2159
+   * Obf: KJNBIHFKOAO
    * </pre>
    *
    * Protobuf type {@code BlessingRedeemRewardReq}
@@ -246,8 +246,8 @@ public final class BlessingRedeemRewardReqOuterClass {
     }
     /**
      * <pre>
-     * Name: HPKPKNJLKKD
-     * CmdId: 2100
+     * CmdId: 2159
+     * Obf: KJNBIHFKOAO
      * </pre>
      *
      * Protobuf type {@code BlessingRedeemRewardReq}

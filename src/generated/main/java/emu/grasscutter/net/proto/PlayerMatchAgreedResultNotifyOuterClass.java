@@ -19,21 +19,15 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.PlayerMatchAgreedResultNotify.Reason reason = 13;</code>
+     * <code>.PlayerMatchAgreedResultNotify.Reason reason = 7;</code>
      * @return The enum numeric value on the wire for reason.
      */
     int getReasonValue();
     /**
-     * <code>.PlayerMatchAgreedResultNotify.Reason reason = 13;</code>
+     * <code>.PlayerMatchAgreedResultNotify.Reason reason = 7;</code>
      * @return The reason.
      */
     emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify.Reason getReason();
-
-    /**
-     * <code>uint32 target_uid = 15;</code>
-     * @return The targetUid.
-     */
-    int getTargetUid();
 
     /**
      * <code>.MatchType match_type = 10;</code>
@@ -45,11 +39,17 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
      * @return The matchType.
      */
     emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType getMatchType();
+
+    /**
+     * <code>uint32 target_uid = 15;</code>
+     * @return The targetUid.
+     */
+    int getTargetUid();
   }
   /**
    * <pre>
-   * Name: LLNEHDDNECO
-   * CmdId: 4185
+   * CmdId: 4153
+   * Obf: JFBDENGHLJN
    * </pre>
    *
    * Protobuf type {@code PlayerMatchAgreedResultNotify}
@@ -98,16 +98,16 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
             case 0:
               done = true;
               break;
+            case 56: {
+              int rawValue = input.readEnum();
+
+              reason_ = rawValue;
+              break;
+            }
             case 80: {
               int rawValue = input.readEnum();
 
               matchType_ = rawValue;
-              break;
-            }
-            case 104: {
-              int rawValue = input.readEnum();
-
-              reason_ = rawValue;
               break;
             }
             case 120: {
@@ -149,7 +149,7 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
 
     /**
      * <pre>
-     * Name: GPKBCIHEKAE
+     * Obf: EGGMLHKLMHE
      * </pre>
      *
      * Protobuf enum {@code PlayerMatchAgreedResultNotify.Reason}
@@ -286,34 +286,23 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
       // @@protoc_insertion_point(enum_scope:PlayerMatchAgreedResultNotify.Reason)
     }
 
-    public static final int REASON_FIELD_NUMBER = 13;
+    public static final int REASON_FIELD_NUMBER = 7;
     private int reason_;
     /**
-     * <code>.PlayerMatchAgreedResultNotify.Reason reason = 13;</code>
+     * <code>.PlayerMatchAgreedResultNotify.Reason reason = 7;</code>
      * @return The enum numeric value on the wire for reason.
      */
     @java.lang.Override public int getReasonValue() {
       return reason_;
     }
     /**
-     * <code>.PlayerMatchAgreedResultNotify.Reason reason = 13;</code>
+     * <code>.PlayerMatchAgreedResultNotify.Reason reason = 7;</code>
      * @return The reason.
      */
     @java.lang.Override public emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify.Reason getReason() {
       @SuppressWarnings("deprecation")
       emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify.Reason result = emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify.Reason.valueOf(reason_);
       return result == null ? emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify.Reason.UNRECOGNIZED : result;
-    }
-
-    public static final int TARGET_UID_FIELD_NUMBER = 15;
-    private int targetUid_;
-    /**
-     * <code>uint32 target_uid = 15;</code>
-     * @return The targetUid.
-     */
-    @java.lang.Override
-    public int getTargetUid() {
-      return targetUid_;
     }
 
     public static final int MATCH_TYPE_FIELD_NUMBER = 10;
@@ -335,6 +324,17 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
       return result == null ? emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.UNRECOGNIZED : result;
     }
 
+    public static final int TARGET_UID_FIELD_NUMBER = 15;
+    private int targetUid_;
+    /**
+     * <code>uint32 target_uid = 15;</code>
+     * @return The targetUid.
+     */
+    @java.lang.Override
+    public int getTargetUid() {
+      return targetUid_;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -349,11 +349,11 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (reason_ != emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify.Reason.SUCC.getNumber()) {
+        output.writeEnum(7, reason_);
+      }
       if (matchType_ != emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.MATCH_TYPE_NONE.getNumber()) {
         output.writeEnum(10, matchType_);
-      }
-      if (reason_ != emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify.Reason.SUCC.getNumber()) {
-        output.writeEnum(13, reason_);
       }
       if (targetUid_ != 0) {
         output.writeUInt32(15, targetUid_);
@@ -367,13 +367,13 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (reason_ != emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify.Reason.SUCC.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(7, reason_);
+      }
       if (matchType_ != emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.MATCH_TYPE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(10, matchType_);
-      }
-      if (reason_ != emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify.Reason.SUCC.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(13, reason_);
       }
       if (targetUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -395,9 +395,9 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
       emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify other = (emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify) obj;
 
       if (reason_ != other.reason_) return false;
+      if (matchType_ != other.matchType_) return false;
       if (getTargetUid()
           != other.getTargetUid()) return false;
-      if (matchType_ != other.matchType_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -411,10 +411,10 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + REASON_FIELD_NUMBER;
       hash = (53 * hash) + reason_;
-      hash = (37 * hash) + TARGET_UID_FIELD_NUMBER;
-      hash = (53 * hash) + getTargetUid();
       hash = (37 * hash) + MATCH_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + matchType_;
+      hash = (37 * hash) + TARGET_UID_FIELD_NUMBER;
+      hash = (53 * hash) + getTargetUid();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -512,8 +512,8 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: LLNEHDDNECO
-     * CmdId: 4185
+     * CmdId: 4153
+     * Obf: JFBDENGHLJN
      * </pre>
      *
      * Protobuf type {@code PlayerMatchAgreedResultNotify}
@@ -555,9 +555,9 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
         super.clear();
         reason_ = 0;
 
-        targetUid_ = 0;
-
         matchType_ = 0;
+
+        targetUid_ = 0;
 
         return this;
       }
@@ -586,8 +586,8 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
       public emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify buildPartial() {
         emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify result = new emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify(this);
         result.reason_ = reason_;
-        result.targetUid_ = targetUid_;
         result.matchType_ = matchType_;
+        result.targetUid_ = targetUid_;
         onBuilt();
         return result;
       }
@@ -639,11 +639,11 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
         if (other.reason_ != 0) {
           setReasonValue(other.getReasonValue());
         }
-        if (other.getTargetUid() != 0) {
-          setTargetUid(other.getTargetUid());
-        }
         if (other.matchType_ != 0) {
           setMatchTypeValue(other.getMatchTypeValue());
+        }
+        if (other.getTargetUid() != 0) {
+          setTargetUid(other.getTargetUid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -676,14 +676,14 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
 
       private int reason_ = 0;
       /**
-       * <code>.PlayerMatchAgreedResultNotify.Reason reason = 13;</code>
+       * <code>.PlayerMatchAgreedResultNotify.Reason reason = 7;</code>
        * @return The enum numeric value on the wire for reason.
        */
       @java.lang.Override public int getReasonValue() {
         return reason_;
       }
       /**
-       * <code>.PlayerMatchAgreedResultNotify.Reason reason = 13;</code>
+       * <code>.PlayerMatchAgreedResultNotify.Reason reason = 7;</code>
        * @param value The enum numeric value on the wire for reason to set.
        * @return This builder for chaining.
        */
@@ -694,7 +694,7 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.PlayerMatchAgreedResultNotify.Reason reason = 13;</code>
+       * <code>.PlayerMatchAgreedResultNotify.Reason reason = 7;</code>
        * @return The reason.
        */
       @java.lang.Override
@@ -704,7 +704,7 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
         return result == null ? emu.grasscutter.net.proto.PlayerMatchAgreedResultNotifyOuterClass.PlayerMatchAgreedResultNotify.Reason.UNRECOGNIZED : result;
       }
       /**
-       * <code>.PlayerMatchAgreedResultNotify.Reason reason = 13;</code>
+       * <code>.PlayerMatchAgreedResultNotify.Reason reason = 7;</code>
        * @param value The reason to set.
        * @return This builder for chaining.
        */
@@ -718,43 +718,12 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.PlayerMatchAgreedResultNotify.Reason reason = 13;</code>
+       * <code>.PlayerMatchAgreedResultNotify.Reason reason = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearReason() {
         
         reason_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int targetUid_ ;
-      /**
-       * <code>uint32 target_uid = 15;</code>
-       * @return The targetUid.
-       */
-      @java.lang.Override
-      public int getTargetUid() {
-        return targetUid_;
-      }
-      /**
-       * <code>uint32 target_uid = 15;</code>
-       * @param value The targetUid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTargetUid(int value) {
-        
-        targetUid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 target_uid = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTargetUid() {
-        
-        targetUid_ = 0;
         onChanged();
         return this;
       }
@@ -809,6 +778,37 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
       public Builder clearMatchType() {
         
         matchType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int targetUid_ ;
+      /**
+       * <code>uint32 target_uid = 15;</code>
+       * @return The targetUid.
+       */
+      @java.lang.Override
+      public int getTargetUid() {
+        return targetUid_;
+      }
+      /**
+       * <code>uint32 target_uid = 15;</code>
+       * @param value The targetUid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTargetUid(int value) {
+        
+        targetUid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 target_uid = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTargetUid() {
+        
+        targetUid_ = 0;
         onChanged();
         return this;
       }
@@ -881,9 +881,9 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n#PlayerMatchAgreedResultNotify.proto\032\017M" +
       "atchType.proto\"\227\002\n\035PlayerMatchAgreedResu" +
-      "ltNotify\0225\n\006reason\030\r \001(\0162%.PlayerMatchAg" +
-      "reedResultNotify.Reason\022\022\n\ntarget_uid\030\017 " +
-      "\001(\r\022\036\n\nmatch_type\030\n \001(\0162\n.MatchType\"\212\001\n\006" +
+      "ltNotify\0225\n\006reason\030\007 \001(\0162%.PlayerMatchAg" +
+      "reedResultNotify.Reason\022\036\n\nmatch_type\030\n " +
+      "\001(\0162\n.MatchType\022\022\n\ntarget_uid\030\017 \001(\r\"\212\001\n\006" +
       "Reason\022\010\n\004SUCC\020\000\022\035\n\031TARGET_SCENE_CANNOT_" +
       "ENTER\020\001\022\027\n\023SELF_MP_UNAVAILABLE\020\002\022!\n\035OTHE" +
       "R_DATA_VERSION_NOT_LATEST\020\003\022\033\n\027DATA_VERS" +
@@ -900,7 +900,7 @@ public final class PlayerMatchAgreedResultNotifyOuterClass {
     internal_static_PlayerMatchAgreedResultNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerMatchAgreedResultNotify_descriptor,
-        new java.lang.String[] { "Reason", "TargetUid", "MatchType", });
+        new java.lang.String[] { "Reason", "MatchType", "TargetUid", });
     emu.grasscutter.net.proto.MatchTypeOuterClass.getDescriptor();
   }
 

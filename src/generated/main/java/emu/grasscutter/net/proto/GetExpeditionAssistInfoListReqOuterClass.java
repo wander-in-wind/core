@@ -20,8 +20,8 @@ public final class GetExpeditionAssistInfoListReqOuterClass {
   }
   /**
    * <pre>
-   * Name: LIFODGKBFKK
-   * CmdId: 2180
+   * CmdId: 2097
+   * Obf: POEHJGPBMFO
    * </pre>
    *
    * Protobuf type {@code GetExpeditionAssistInfoListReq}
@@ -246,8 +246,8 @@ public final class GetExpeditionAssistInfoListReqOuterClass {
     }
     /**
      * <pre>
-     * Name: LIFODGKBFKK
-     * CmdId: 2180
+     * CmdId: 2097
+     * Obf: POEHJGPBMFO
      * </pre>
      *
      * Protobuf type {@code GetExpeditionAssistInfoListReq}

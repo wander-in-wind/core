@@ -19,47 +19,43 @@ public final class AchievementOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * Name: JPGOFPINCMO &gt; Status
-     * </pre>
-     *
-     * <code>uint32 cur_progress = 2;</code>
-     * @return The curProgress.
+     * <code>uint32 id = 3;</code>
+     * @return The id.
      */
-    int getCurProgress();
+    int getId();
 
     /**
-     * <code>uint32 finish_timestamp = 13;</code>
-     * @return The finishTimestamp.
-     */
-    int getFinishTimestamp();
-
-    /**
-     * <code>.Status status = 6;</code>
+     * <code>.Status status = 10;</code>
      * @return The enum numeric value on the wire for status.
      */
     int getStatusValue();
     /**
-     * <code>.Status status = 6;</code>
+     * <code>.Status status = 10;</code>
      * @return The status.
      */
     emu.grasscutter.net.proto.StatusOuterClass.Status getStatus();
 
     /**
-     * <code>uint32 total_progress = 5;</code>
+     * <code>uint32 total_progress = 14;</code>
      * @return The totalProgress.
      */
     int getTotalProgress();
 
     /**
-     * <code>uint32 id = 9;</code>
-     * @return The id.
+     * <code>uint32 finish_timestamp = 15;</code>
+     * @return The finishTimestamp.
      */
-    int getId();
+    int getFinishTimestamp();
+
+    /**
+     * <code>uint32 cur_progress = 5;</code>
+     * @return The curProgress.
+     */
+    int getCurProgress();
   }
   /**
    * <pre>
-   * Name: IMEFDIKAJBD
+   * Obf: LPAPJAKPDJO
    * </pre>
    *
    * Protobuf type {@code Achievement}
@@ -107,28 +103,28 @@ public final class AchievementOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 24: {
 
-              curProgress_ = input.readUInt32();
+              id_ = input.readUInt32();
               break;
             }
             case 40: {
 
-              totalProgress_ = input.readUInt32();
+              curProgress_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 80: {
               int rawValue = input.readEnum();
 
               status_ = rawValue;
               break;
             }
-            case 72: {
+            case 112: {
 
-              id_ = input.readUInt32();
+              totalProgress_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 120: {
 
               finishTimestamp_ = input.readUInt32();
               break;
@@ -165,43 +161,28 @@ public final class AchievementOuterClass {
               emu.grasscutter.net.proto.AchievementOuterClass.Achievement.class, emu.grasscutter.net.proto.AchievementOuterClass.Achievement.Builder.class);
     }
 
-    public static final int CUR_PROGRESS_FIELD_NUMBER = 2;
-    private int curProgress_;
+    public static final int ID_FIELD_NUMBER = 3;
+    private int id_;
     /**
-     * <pre>
-     * Name: JPGOFPINCMO &gt; Status
-     * </pre>
-     *
-     * <code>uint32 cur_progress = 2;</code>
-     * @return The curProgress.
+     * <code>uint32 id = 3;</code>
+     * @return The id.
      */
     @java.lang.Override
-    public int getCurProgress() {
-      return curProgress_;
+    public int getId() {
+      return id_;
     }
 
-    public static final int FINISH_TIMESTAMP_FIELD_NUMBER = 13;
-    private int finishTimestamp_;
-    /**
-     * <code>uint32 finish_timestamp = 13;</code>
-     * @return The finishTimestamp.
-     */
-    @java.lang.Override
-    public int getFinishTimestamp() {
-      return finishTimestamp_;
-    }
-
-    public static final int STATUS_FIELD_NUMBER = 6;
+    public static final int STATUS_FIELD_NUMBER = 10;
     private int status_;
     /**
-     * <code>.Status status = 6;</code>
+     * <code>.Status status = 10;</code>
      * @return The enum numeric value on the wire for status.
      */
     @java.lang.Override public int getStatusValue() {
       return status_;
     }
     /**
-     * <code>.Status status = 6;</code>
+     * <code>.Status status = 10;</code>
      * @return The status.
      */
     @java.lang.Override public emu.grasscutter.net.proto.StatusOuterClass.Status getStatus() {
@@ -210,10 +191,10 @@ public final class AchievementOuterClass {
       return result == null ? emu.grasscutter.net.proto.StatusOuterClass.Status.UNRECOGNIZED : result;
     }
 
-    public static final int TOTAL_PROGRESS_FIELD_NUMBER = 5;
+    public static final int TOTAL_PROGRESS_FIELD_NUMBER = 14;
     private int totalProgress_;
     /**
-     * <code>uint32 total_progress = 5;</code>
+     * <code>uint32 total_progress = 14;</code>
      * @return The totalProgress.
      */
     @java.lang.Override
@@ -221,15 +202,26 @@ public final class AchievementOuterClass {
       return totalProgress_;
     }
 
-    public static final int ID_FIELD_NUMBER = 9;
-    private int id_;
+    public static final int FINISH_TIMESTAMP_FIELD_NUMBER = 15;
+    private int finishTimestamp_;
     /**
-     * <code>uint32 id = 9;</code>
-     * @return The id.
+     * <code>uint32 finish_timestamp = 15;</code>
+     * @return The finishTimestamp.
      */
     @java.lang.Override
-    public int getId() {
-      return id_;
+    public int getFinishTimestamp() {
+      return finishTimestamp_;
+    }
+
+    public static final int CUR_PROGRESS_FIELD_NUMBER = 5;
+    private int curProgress_;
+    /**
+     * <code>uint32 cur_progress = 5;</code>
+     * @return The curProgress.
+     */
+    @java.lang.Override
+    public int getCurProgress() {
+      return curProgress_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -246,20 +238,20 @@ public final class AchievementOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (curProgress_ != 0) {
-        output.writeUInt32(2, curProgress_);
+      if (id_ != 0) {
+        output.writeUInt32(3, id_);
       }
-      if (totalProgress_ != 0) {
-        output.writeUInt32(5, totalProgress_);
+      if (curProgress_ != 0) {
+        output.writeUInt32(5, curProgress_);
       }
       if (status_ != emu.grasscutter.net.proto.StatusOuterClass.Status.STATUS_INVALID.getNumber()) {
-        output.writeEnum(6, status_);
+        output.writeEnum(10, status_);
       }
-      if (id_ != 0) {
-        output.writeUInt32(9, id_);
+      if (totalProgress_ != 0) {
+        output.writeUInt32(14, totalProgress_);
       }
       if (finishTimestamp_ != 0) {
-        output.writeUInt32(13, finishTimestamp_);
+        output.writeUInt32(15, finishTimestamp_);
       }
       unknownFields.writeTo(output);
     }
@@ -270,25 +262,25 @@ public final class AchievementOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (id_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, id_);
+      }
       if (curProgress_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, curProgress_);
-      }
-      if (totalProgress_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, totalProgress_);
+          .computeUInt32Size(5, curProgress_);
       }
       if (status_ != emu.grasscutter.net.proto.StatusOuterClass.Status.STATUS_INVALID.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(6, status_);
+          .computeEnumSize(10, status_);
       }
-      if (id_ != 0) {
+      if (totalProgress_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, id_);
+          .computeUInt32Size(14, totalProgress_);
       }
       if (finishTimestamp_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, finishTimestamp_);
+          .computeUInt32Size(15, finishTimestamp_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -305,15 +297,15 @@ public final class AchievementOuterClass {
       }
       emu.grasscutter.net.proto.AchievementOuterClass.Achievement other = (emu.grasscutter.net.proto.AchievementOuterClass.Achievement) obj;
 
-      if (getCurProgress()
-          != other.getCurProgress()) return false;
-      if (getFinishTimestamp()
-          != other.getFinishTimestamp()) return false;
+      if (getId()
+          != other.getId()) return false;
       if (status_ != other.status_) return false;
       if (getTotalProgress()
           != other.getTotalProgress()) return false;
-      if (getId()
-          != other.getId()) return false;
+      if (getFinishTimestamp()
+          != other.getFinishTimestamp()) return false;
+      if (getCurProgress()
+          != other.getCurProgress()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -325,16 +317,16 @@ public final class AchievementOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CUR_PROGRESS_FIELD_NUMBER;
-      hash = (53 * hash) + getCurProgress();
-      hash = (37 * hash) + FINISH_TIMESTAMP_FIELD_NUMBER;
-      hash = (53 * hash) + getFinishTimestamp();
+      hash = (37 * hash) + ID_FIELD_NUMBER;
+      hash = (53 * hash) + getId();
       hash = (37 * hash) + STATUS_FIELD_NUMBER;
       hash = (53 * hash) + status_;
       hash = (37 * hash) + TOTAL_PROGRESS_FIELD_NUMBER;
       hash = (53 * hash) + getTotalProgress();
-      hash = (37 * hash) + ID_FIELD_NUMBER;
-      hash = (53 * hash) + getId();
+      hash = (37 * hash) + FINISH_TIMESTAMP_FIELD_NUMBER;
+      hash = (53 * hash) + getFinishTimestamp();
+      hash = (37 * hash) + CUR_PROGRESS_FIELD_NUMBER;
+      hash = (53 * hash) + getCurProgress();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -432,7 +424,7 @@ public final class AchievementOuterClass {
     }
     /**
      * <pre>
-     * Name: IMEFDIKAJBD
+     * Obf: LPAPJAKPDJO
      * </pre>
      *
      * Protobuf type {@code Achievement}
@@ -472,15 +464,15 @@ public final class AchievementOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        curProgress_ = 0;
-
-        finishTimestamp_ = 0;
+        id_ = 0;
 
         status_ = 0;
 
         totalProgress_ = 0;
 
-        id_ = 0;
+        finishTimestamp_ = 0;
+
+        curProgress_ = 0;
 
         return this;
       }
@@ -508,11 +500,11 @@ public final class AchievementOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AchievementOuterClass.Achievement buildPartial() {
         emu.grasscutter.net.proto.AchievementOuterClass.Achievement result = new emu.grasscutter.net.proto.AchievementOuterClass.Achievement(this);
-        result.curProgress_ = curProgress_;
-        result.finishTimestamp_ = finishTimestamp_;
+        result.id_ = id_;
         result.status_ = status_;
         result.totalProgress_ = totalProgress_;
-        result.id_ = id_;
+        result.finishTimestamp_ = finishTimestamp_;
+        result.curProgress_ = curProgress_;
         onBuilt();
         return result;
       }
@@ -561,11 +553,8 @@ public final class AchievementOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AchievementOuterClass.Achievement other) {
         if (other == emu.grasscutter.net.proto.AchievementOuterClass.Achievement.getDefaultInstance()) return this;
-        if (other.getCurProgress() != 0) {
-          setCurProgress(other.getCurProgress());
-        }
-        if (other.getFinishTimestamp() != 0) {
-          setFinishTimestamp(other.getFinishTimestamp());
+        if (other.getId() != 0) {
+          setId(other.getId());
         }
         if (other.status_ != 0) {
           setStatusValue(other.getStatusValue());
@@ -573,8 +562,11 @@ public final class AchievementOuterClass {
         if (other.getTotalProgress() != 0) {
           setTotalProgress(other.getTotalProgress());
         }
-        if (other.getId() != 0) {
-          setId(other.getId());
+        if (other.getFinishTimestamp() != 0) {
+          setFinishTimestamp(other.getFinishTimestamp());
+        }
+        if (other.getCurProgress() != 0) {
+          setCurProgress(other.getCurProgress());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -605,90 +597,47 @@ public final class AchievementOuterClass {
         return this;
       }
 
-      private int curProgress_ ;
+      private int id_ ;
       /**
-       * <pre>
-       * Name: JPGOFPINCMO &gt; Status
-       * </pre>
-       *
-       * <code>uint32 cur_progress = 2;</code>
-       * @return The curProgress.
+       * <code>uint32 id = 3;</code>
+       * @return The id.
        */
       @java.lang.Override
-      public int getCurProgress() {
-        return curProgress_;
+      public int getId() {
+        return id_;
       }
       /**
-       * <pre>
-       * Name: JPGOFPINCMO &gt; Status
-       * </pre>
-       *
-       * <code>uint32 cur_progress = 2;</code>
-       * @param value The curProgress to set.
+       * <code>uint32 id = 3;</code>
+       * @param value The id to set.
        * @return This builder for chaining.
        */
-      public Builder setCurProgress(int value) {
+      public Builder setId(int value) {
         
-        curProgress_ = value;
+        id_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * Name: JPGOFPINCMO &gt; Status
-       * </pre>
-       *
-       * <code>uint32 cur_progress = 2;</code>
+       * <code>uint32 id = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCurProgress() {
+      public Builder clearId() {
         
-        curProgress_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int finishTimestamp_ ;
-      /**
-       * <code>uint32 finish_timestamp = 13;</code>
-       * @return The finishTimestamp.
-       */
-      @java.lang.Override
-      public int getFinishTimestamp() {
-        return finishTimestamp_;
-      }
-      /**
-       * <code>uint32 finish_timestamp = 13;</code>
-       * @param value The finishTimestamp to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFinishTimestamp(int value) {
-        
-        finishTimestamp_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 finish_timestamp = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFinishTimestamp() {
-        
-        finishTimestamp_ = 0;
+        id_ = 0;
         onChanged();
         return this;
       }
 
       private int status_ = 0;
       /**
-       * <code>.Status status = 6;</code>
+       * <code>.Status status = 10;</code>
        * @return The enum numeric value on the wire for status.
        */
       @java.lang.Override public int getStatusValue() {
         return status_;
       }
       /**
-       * <code>.Status status = 6;</code>
+       * <code>.Status status = 10;</code>
        * @param value The enum numeric value on the wire for status to set.
        * @return This builder for chaining.
        */
@@ -699,7 +648,7 @@ public final class AchievementOuterClass {
         return this;
       }
       /**
-       * <code>.Status status = 6;</code>
+       * <code>.Status status = 10;</code>
        * @return The status.
        */
       @java.lang.Override
@@ -709,7 +658,7 @@ public final class AchievementOuterClass {
         return result == null ? emu.grasscutter.net.proto.StatusOuterClass.Status.UNRECOGNIZED : result;
       }
       /**
-       * <code>.Status status = 6;</code>
+       * <code>.Status status = 10;</code>
        * @param value The status to set.
        * @return This builder for chaining.
        */
@@ -723,7 +672,7 @@ public final class AchievementOuterClass {
         return this;
       }
       /**
-       * <code>.Status status = 6;</code>
+       * <code>.Status status = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearStatus() {
@@ -735,7 +684,7 @@ public final class AchievementOuterClass {
 
       private int totalProgress_ ;
       /**
-       * <code>uint32 total_progress = 5;</code>
+       * <code>uint32 total_progress = 14;</code>
        * @return The totalProgress.
        */
       @java.lang.Override
@@ -743,7 +692,7 @@ public final class AchievementOuterClass {
         return totalProgress_;
       }
       /**
-       * <code>uint32 total_progress = 5;</code>
+       * <code>uint32 total_progress = 14;</code>
        * @param value The totalProgress to set.
        * @return This builder for chaining.
        */
@@ -754,7 +703,7 @@ public final class AchievementOuterClass {
         return this;
       }
       /**
-       * <code>uint32 total_progress = 5;</code>
+       * <code>uint32 total_progress = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearTotalProgress() {
@@ -764,33 +713,64 @@ public final class AchievementOuterClass {
         return this;
       }
 
-      private int id_ ;
+      private int finishTimestamp_ ;
       /**
-       * <code>uint32 id = 9;</code>
-       * @return The id.
+       * <code>uint32 finish_timestamp = 15;</code>
+       * @return The finishTimestamp.
        */
       @java.lang.Override
-      public int getId() {
-        return id_;
+      public int getFinishTimestamp() {
+        return finishTimestamp_;
       }
       /**
-       * <code>uint32 id = 9;</code>
-       * @param value The id to set.
+       * <code>uint32 finish_timestamp = 15;</code>
+       * @param value The finishTimestamp to set.
        * @return This builder for chaining.
        */
-      public Builder setId(int value) {
+      public Builder setFinishTimestamp(int value) {
         
-        id_ = value;
+        finishTimestamp_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 id = 9;</code>
+       * <code>uint32 finish_timestamp = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearId() {
+      public Builder clearFinishTimestamp() {
         
-        id_ = 0;
+        finishTimestamp_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int curProgress_ ;
+      /**
+       * <code>uint32 cur_progress = 5;</code>
+       * @return The curProgress.
+       */
+      @java.lang.Override
+      public int getCurProgress() {
+        return curProgress_;
+      }
+      /**
+       * <code>uint32 cur_progress = 5;</code>
+       * @param value The curProgress to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCurProgress(int value) {
+        
+        curProgress_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 cur_progress = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCurProgress() {
+        
+        curProgress_ = 0;
         onChanged();
         return this;
       }
@@ -862,9 +842,9 @@ public final class AchievementOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021Achievement.proto\032\014Status.proto\"z\n\013Ach" +
-      "ievement\022\024\n\014cur_progress\030\002 \001(\r\022\030\n\020finish" +
-      "_timestamp\030\r \001(\r\022\027\n\006status\030\006 \001(\0162\007.Statu" +
-      "s\022\026\n\016total_progress\030\005 \001(\r\022\n\n\002id\030\t \001(\rB\033\n" +
+      "ievement\022\n\n\002id\030\003 \001(\r\022\027\n\006status\030\n \001(\0162\007.S" +
+      "tatus\022\026\n\016total_progress\030\016 \001(\r\022\030\n\020finish_" +
+      "timestamp\030\017 \001(\r\022\024\n\014cur_progress\030\005 \001(\rB\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -877,7 +857,7 @@ public final class AchievementOuterClass {
     internal_static_Achievement_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Achievement_descriptor,
-        new java.lang.String[] { "CurProgress", "FinishTimestamp", "Status", "TotalProgress", "Id", });
+        new java.lang.String[] { "Id", "Status", "TotalProgress", "FinishTimestamp", "CurProgress", });
     emu.grasscutter.net.proto.StatusOuterClass.getDescriptor();
   }
 

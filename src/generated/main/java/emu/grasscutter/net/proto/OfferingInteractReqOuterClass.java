@@ -19,15 +19,15 @@ public final class OfferingInteractReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 offering_id = 13;</code>
+     * <code>uint32 offering_id = 11;</code>
      * @return The offeringId.
      */
     int getOfferingId();
   }
   /**
    * <pre>
-   * Name: GJAILLBBAON
-   * CmdId: 2901
+   * CmdId: 2904
+   * Obf: ABEPPJCNPLH
    * </pre>
    *
    * Protobuf type {@code OfferingInteractReq}
@@ -74,7 +74,7 @@ public final class OfferingInteractReqOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
+            case 88: {
 
               offeringId_ = input.readUInt32();
               break;
@@ -111,10 +111,10 @@ public final class OfferingInteractReqOuterClass {
               emu.grasscutter.net.proto.OfferingInteractReqOuterClass.OfferingInteractReq.class, emu.grasscutter.net.proto.OfferingInteractReqOuterClass.OfferingInteractReq.Builder.class);
     }
 
-    public static final int OFFERING_ID_FIELD_NUMBER = 13;
+    public static final int OFFERING_ID_FIELD_NUMBER = 11;
     private int offeringId_;
     /**
-     * <code>uint32 offering_id = 13;</code>
+     * <code>uint32 offering_id = 11;</code>
      * @return The offeringId.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class OfferingInteractReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (offeringId_ != 0) {
-        output.writeUInt32(13, offeringId_);
+        output.writeUInt32(11, offeringId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class OfferingInteractReqOuterClass {
       size = 0;
       if (offeringId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, offeringId_);
+          .computeUInt32Size(11, offeringId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class OfferingInteractReqOuterClass {
     }
     /**
      * <pre>
-     * Name: GJAILLBBAON
-     * CmdId: 2901
+     * CmdId: 2904
+     * Obf: ABEPPJCNPLH
      * </pre>
      *
      * Protobuf type {@code OfferingInteractReq}
@@ -431,7 +431,7 @@ public final class OfferingInteractReqOuterClass {
 
       private int offeringId_ ;
       /**
-       * <code>uint32 offering_id = 13;</code>
+       * <code>uint32 offering_id = 11;</code>
        * @return The offeringId.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class OfferingInteractReqOuterClass {
         return offeringId_;
       }
       /**
-       * <code>uint32 offering_id = 13;</code>
+       * <code>uint32 offering_id = 11;</code>
        * @param value The offeringId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class OfferingInteractReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 offering_id = 13;</code>
+       * <code>uint32 offering_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearOfferingId() {
@@ -527,7 +527,7 @@ public final class OfferingInteractReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031OfferingInteractReq.proto\"*\n\023OfferingI" +
-      "nteractReq\022\023\n\013offering_id\030\r \001(\rB\033\n\031emu.g" +
+      "nteractReq\022\023\n\013offering_id\030\013 \001(\rB\033\n\031emu.g" +
       "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

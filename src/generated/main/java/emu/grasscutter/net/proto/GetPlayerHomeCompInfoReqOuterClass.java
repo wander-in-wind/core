@@ -20,8 +20,8 @@ public final class GetPlayerHomeCompInfoReqOuterClass {
   }
   /**
    * <pre>
-   * Name: DFLOHDCCBBO
-   * CmdId: 4511
+   * CmdId: 4482
+   * Obf: JCGLANNLAND
    * </pre>
    *
    * Protobuf type {@code GetPlayerHomeCompInfoReq}
@@ -246,8 +246,8 @@ public final class GetPlayerHomeCompInfoReqOuterClass {
     }
     /**
      * <pre>
-     * Name: DFLOHDCCBBO
-     * CmdId: 4511
+     * CmdId: 4482
+     * Obf: JCGLANNLAND
      * </pre>
      *
      * Protobuf type {@code GetPlayerHomeCompInfoReq}

@@ -19,13 +19,13 @@ public final class AiSyncInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 entity_id = 10;</code>
+     * <code>uint32 entity_id = 2;</code>
      * @return The entityId.
      */
     int getEntityId();
 
     /**
-     * <code>bool is_self_killing = 6;</code>
+     * <code>bool is_self_killing = 7;</code>
      * @return The isSelfKilling.
      */
     boolean getIsSelfKilling();
@@ -38,7 +38,7 @@ public final class AiSyncInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: FCJLAGHOIFC
+   * Obf: LDLPBJOIHEO
    * </pre>
    *
    * Protobuf type {@code AiSyncInfo}
@@ -85,7 +85,12 @@ public final class AiSyncInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 16: {
+
+              entityId_ = input.readUInt32();
+              break;
+            }
+            case 56: {
 
               isSelfKilling_ = input.readBool();
               break;
@@ -93,11 +98,6 @@ public final class AiSyncInfoOuterClass {
             case 64: {
 
               hasPathToTarget_ = input.readBool();
-              break;
-            }
-            case 80: {
-
-              entityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -132,10 +132,10 @@ public final class AiSyncInfoOuterClass {
               emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo.class, emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo.Builder.class);
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 10;
+    public static final int ENTITY_ID_FIELD_NUMBER = 2;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 10;</code>
+     * <code>uint32 entity_id = 2;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -143,10 +143,10 @@ public final class AiSyncInfoOuterClass {
       return entityId_;
     }
 
-    public static final int IS_SELF_KILLING_FIELD_NUMBER = 6;
+    public static final int IS_SELF_KILLING_FIELD_NUMBER = 7;
     private boolean isSelfKilling_;
     /**
-     * <code>bool is_self_killing = 6;</code>
+     * <code>bool is_self_killing = 7;</code>
      * @return The isSelfKilling.
      */
     @java.lang.Override
@@ -179,14 +179,14 @@ public final class AiSyncInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (entityId_ != 0) {
+        output.writeUInt32(2, entityId_);
+      }
       if (isSelfKilling_ != false) {
-        output.writeBool(6, isSelfKilling_);
+        output.writeBool(7, isSelfKilling_);
       }
       if (hasPathToTarget_ != false) {
         output.writeBool(8, hasPathToTarget_);
-      }
-      if (entityId_ != 0) {
-        output.writeUInt32(10, entityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -197,17 +197,17 @@ public final class AiSyncInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (entityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, entityId_);
+      }
       if (isSelfKilling_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isSelfKilling_);
+          .computeBoolSize(7, isSelfKilling_);
       }
       if (hasPathToTarget_ != false) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(8, hasPathToTarget_);
-      }
-      if (entityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, entityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -346,7 +346,7 @@ public final class AiSyncInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: FCJLAGHOIFC
+     * Obf: LDLPBJOIHEO
      * </pre>
      *
      * Protobuf type {@code AiSyncInfo}
@@ -509,7 +509,7 @@ public final class AiSyncInfoOuterClass {
 
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 10;</code>
+       * <code>uint32 entity_id = 2;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -517,7 +517,7 @@ public final class AiSyncInfoOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 10;</code>
+       * <code>uint32 entity_id = 2;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -528,7 +528,7 @@ public final class AiSyncInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 10;</code>
+       * <code>uint32 entity_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
@@ -540,7 +540,7 @@ public final class AiSyncInfoOuterClass {
 
       private boolean isSelfKilling_ ;
       /**
-       * <code>bool is_self_killing = 6;</code>
+       * <code>bool is_self_killing = 7;</code>
        * @return The isSelfKilling.
        */
       @java.lang.Override
@@ -548,7 +548,7 @@ public final class AiSyncInfoOuterClass {
         return isSelfKilling_;
       }
       /**
-       * <code>bool is_self_killing = 6;</code>
+       * <code>bool is_self_killing = 7;</code>
        * @param value The isSelfKilling to set.
        * @return This builder for chaining.
        */
@@ -559,7 +559,7 @@ public final class AiSyncInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_self_killing = 6;</code>
+       * <code>bool is_self_killing = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsSelfKilling() {
@@ -667,7 +667,7 @@ public final class AiSyncInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\020AiSyncInfo.proto\"T\n\nAiSyncInfo\022\021\n\tenti" +
-      "ty_id\030\n \001(\r\022\027\n\017is_self_killing\030\006 \001(\010\022\032\n\022" +
+      "ty_id\030\002 \001(\r\022\027\n\017is_self_killing\030\007 \001(\010\022\032\n\022" +
       "has_path_to_target\030\010 \001(\010B\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };

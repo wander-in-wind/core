@@ -19,58 +19,58 @@ public final class FishEscapeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.Vector pos = 2;</code>
+     * <code>.Vector pos = 1;</code>
      * @return Whether the pos field is set.
      */
     boolean hasPos();
     /**
-     * <code>.Vector pos = 2;</code>
+     * <code>.Vector pos = 1;</code>
      * @return The pos.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
     /**
-     * <code>.Vector pos = 2;</code>
+     * <code>.Vector pos = 1;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
 
     /**
-     * <code>uint32 uid = 11;</code>
-     * @return The uid.
-     */
-    int getUid();
-
-    /**
-     * <code>repeated uint32 fish_id_list = 7;</code>
+     * <code>repeated uint32 fish_id_list = 15;</code>
      * @return A list containing the fishIdList.
      */
     java.util.List<java.lang.Integer> getFishIdListList();
     /**
-     * <code>repeated uint32 fish_id_list = 7;</code>
+     * <code>repeated uint32 fish_id_list = 15;</code>
      * @return The count of fishIdList.
      */
     int getFishIdListCount();
     /**
-     * <code>repeated uint32 fish_id_list = 7;</code>
+     * <code>repeated uint32 fish_id_list = 15;</code>
      * @param index The index of the element to return.
      * @return The fishIdList at the given index.
      */
     int getFishIdList(int index);
 
     /**
-     * <code>.FishEscapeReason reason = 12;</code>
+     * <code>uint32 uid = 5;</code>
+     * @return The uid.
+     */
+    int getUid();
+
+    /**
+     * <code>.FishEscapeReason reason = 7;</code>
      * @return The enum numeric value on the wire for reason.
      */
     int getReasonValue();
     /**
-     * <code>.FishEscapeReason reason = 12;</code>
+     * <code>.FishEscapeReason reason = 7;</code>
      * @return The reason.
      */
     emu.grasscutter.net.proto.FishEscapeReasonOuterClass.FishEscapeReason getReason();
   }
   /**
    * <pre>
-   * Name: KGMGCMOOMOG
-   * CmdId: 5832
+   * CmdId: 5807
+   * Obf: CJAOKNLFKBE
    * </pre>
    *
    * Protobuf type {@code FishEscapeNotify}
@@ -120,7 +120,7 @@ public final class FishEscapeNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
+            case 10: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (pos_ != null) {
                 subBuilder = pos_.toBuilder();
@@ -133,7 +133,18 @@ public final class FishEscapeNotifyOuterClass {
 
               break;
             }
+            case 40: {
+
+              uid_ = input.readUInt32();
+              break;
+            }
             case 56: {
+              int rawValue = input.readEnum();
+
+              reason_ = rawValue;
+              break;
+            }
+            case 120: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 fishIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -141,7 +152,7 @@ public final class FishEscapeNotifyOuterClass {
               fishIdList_.addInt(input.readUInt32());
               break;
             }
-            case 58: {
+            case 122: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -152,17 +163,6 @@ public final class FishEscapeNotifyOuterClass {
                 fishIdList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 88: {
-
-              uid_ = input.readUInt32();
-              break;
-            }
-            case 96: {
-              int rawValue = input.readEnum();
-
-              reason_ = rawValue;
               break;
             }
             default: {
@@ -200,10 +200,10 @@ public final class FishEscapeNotifyOuterClass {
               emu.grasscutter.net.proto.FishEscapeNotifyOuterClass.FishEscapeNotify.class, emu.grasscutter.net.proto.FishEscapeNotifyOuterClass.FishEscapeNotify.Builder.class);
     }
 
-    public static final int POS_FIELD_NUMBER = 2;
+    public static final int POS_FIELD_NUMBER = 1;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
     /**
-     * <code>.Vector pos = 2;</code>
+     * <code>.Vector pos = 1;</code>
      * @return Whether the pos field is set.
      */
     @java.lang.Override
@@ -211,7 +211,7 @@ public final class FishEscapeNotifyOuterClass {
       return pos_ != null;
     }
     /**
-     * <code>.Vector pos = 2;</code>
+     * <code>.Vector pos = 1;</code>
      * @return The pos.
      */
     @java.lang.Override
@@ -219,28 +219,17 @@ public final class FishEscapeNotifyOuterClass {
       return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
     }
     /**
-     * <code>.Vector pos = 2;</code>
+     * <code>.Vector pos = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
       return getPos();
     }
 
-    public static final int UID_FIELD_NUMBER = 11;
-    private int uid_;
-    /**
-     * <code>uint32 uid = 11;</code>
-     * @return The uid.
-     */
-    @java.lang.Override
-    public int getUid() {
-      return uid_;
-    }
-
-    public static final int FISH_ID_LIST_FIELD_NUMBER = 7;
+    public static final int FISH_ID_LIST_FIELD_NUMBER = 15;
     private com.google.protobuf.Internal.IntList fishIdList_;
     /**
-     * <code>repeated uint32 fish_id_list = 7;</code>
+     * <code>repeated uint32 fish_id_list = 15;</code>
      * @return A list containing the fishIdList.
      */
     @java.lang.Override
@@ -249,14 +238,14 @@ public final class FishEscapeNotifyOuterClass {
       return fishIdList_;
     }
     /**
-     * <code>repeated uint32 fish_id_list = 7;</code>
+     * <code>repeated uint32 fish_id_list = 15;</code>
      * @return The count of fishIdList.
      */
     public int getFishIdListCount() {
       return fishIdList_.size();
     }
     /**
-     * <code>repeated uint32 fish_id_list = 7;</code>
+     * <code>repeated uint32 fish_id_list = 15;</code>
      * @param index The index of the element to return.
      * @return The fishIdList at the given index.
      */
@@ -265,17 +254,28 @@ public final class FishEscapeNotifyOuterClass {
     }
     private int fishIdListMemoizedSerializedSize = -1;
 
-    public static final int REASON_FIELD_NUMBER = 12;
+    public static final int UID_FIELD_NUMBER = 5;
+    private int uid_;
+    /**
+     * <code>uint32 uid = 5;</code>
+     * @return The uid.
+     */
+    @java.lang.Override
+    public int getUid() {
+      return uid_;
+    }
+
+    public static final int REASON_FIELD_NUMBER = 7;
     private int reason_;
     /**
-     * <code>.FishEscapeReason reason = 12;</code>
+     * <code>.FishEscapeReason reason = 7;</code>
      * @return The enum numeric value on the wire for reason.
      */
     @java.lang.Override public int getReasonValue() {
       return reason_;
     }
     /**
-     * <code>.FishEscapeReason reason = 12;</code>
+     * <code>.FishEscapeReason reason = 7;</code>
      * @return The reason.
      */
     @java.lang.Override public emu.grasscutter.net.proto.FishEscapeReasonOuterClass.FishEscapeReason getReason() {
@@ -300,20 +300,20 @@ public final class FishEscapeNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (pos_ != null) {
-        output.writeMessage(2, getPos());
+        output.writeMessage(1, getPos());
+      }
+      if (uid_ != 0) {
+        output.writeUInt32(5, uid_);
+      }
+      if (reason_ != emu.grasscutter.net.proto.FishEscapeReasonOuterClass.FishEscapeReason.FISN_ESCAPE_NONE.getNumber()) {
+        output.writeEnum(7, reason_);
       }
       if (getFishIdListList().size() > 0) {
-        output.writeUInt32NoTag(58);
+        output.writeUInt32NoTag(122);
         output.writeUInt32NoTag(fishIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < fishIdList_.size(); i++) {
         output.writeUInt32NoTag(fishIdList_.getInt(i));
-      }
-      if (uid_ != 0) {
-        output.writeUInt32(11, uid_);
-      }
-      if (reason_ != emu.grasscutter.net.proto.FishEscapeReasonOuterClass.FishEscapeReason.FISN_ESCAPE_NONE.getNumber()) {
-        output.writeEnum(12, reason_);
       }
       unknownFields.writeTo(output);
     }
@@ -326,7 +326,15 @@ public final class FishEscapeNotifyOuterClass {
       size = 0;
       if (pos_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, getPos());
+          .computeMessageSize(1, getPos());
+      }
+      if (uid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, uid_);
+      }
+      if (reason_ != emu.grasscutter.net.proto.FishEscapeReasonOuterClass.FishEscapeReason.FISN_ESCAPE_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(7, reason_);
       }
       {
         int dataSize = 0;
@@ -341,14 +349,6 @@ public final class FishEscapeNotifyOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         fishIdListMemoizedSerializedSize = dataSize;
-      }
-      if (uid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, uid_);
-      }
-      if (reason_ != emu.grasscutter.net.proto.FishEscapeReasonOuterClass.FishEscapeReason.FISN_ESCAPE_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(12, reason_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -370,10 +370,10 @@ public final class FishEscapeNotifyOuterClass {
         if (!getPos()
             .equals(other.getPos())) return false;
       }
-      if (getUid()
-          != other.getUid()) return false;
       if (!getFishIdListList()
           .equals(other.getFishIdListList())) return false;
+      if (getUid()
+          != other.getUid()) return false;
       if (reason_ != other.reason_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
@@ -390,12 +390,12 @@ public final class FishEscapeNotifyOuterClass {
         hash = (37 * hash) + POS_FIELD_NUMBER;
         hash = (53 * hash) + getPos().hashCode();
       }
-      hash = (37 * hash) + UID_FIELD_NUMBER;
-      hash = (53 * hash) + getUid();
       if (getFishIdListCount() > 0) {
         hash = (37 * hash) + FISH_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getFishIdListList().hashCode();
       }
+      hash = (37 * hash) + UID_FIELD_NUMBER;
+      hash = (53 * hash) + getUid();
       hash = (37 * hash) + REASON_FIELD_NUMBER;
       hash = (53 * hash) + reason_;
       hash = (29 * hash) + unknownFields.hashCode();
@@ -495,8 +495,8 @@ public final class FishEscapeNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: KGMGCMOOMOG
-     * CmdId: 5832
+     * CmdId: 5807
+     * Obf: CJAOKNLFKBE
      * </pre>
      *
      * Protobuf type {@code FishEscapeNotify}
@@ -542,10 +542,10 @@ public final class FishEscapeNotifyOuterClass {
           pos_ = null;
           posBuilder_ = null;
         }
-        uid_ = 0;
-
         fishIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        uid_ = 0;
+
         reason_ = 0;
 
         return this;
@@ -580,12 +580,12 @@ public final class FishEscapeNotifyOuterClass {
         } else {
           result.pos_ = posBuilder_.build();
         }
-        result.uid_ = uid_;
         if (((bitField0_ & 0x00000001) != 0)) {
           fishIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.fishIdList_ = fishIdList_;
+        result.uid_ = uid_;
         result.reason_ = reason_;
         onBuilt();
         return result;
@@ -638,9 +638,6 @@ public final class FishEscapeNotifyOuterClass {
         if (other.hasPos()) {
           mergePos(other.getPos());
         }
-        if (other.getUid() != 0) {
-          setUid(other.getUid());
-        }
         if (!other.fishIdList_.isEmpty()) {
           if (fishIdList_.isEmpty()) {
             fishIdList_ = other.fishIdList_;
@@ -650,6 +647,9 @@ public final class FishEscapeNotifyOuterClass {
             fishIdList_.addAll(other.fishIdList_);
           }
           onChanged();
+        }
+        if (other.getUid() != 0) {
+          setUid(other.getUid());
         }
         if (other.reason_ != 0) {
           setReasonValue(other.getReasonValue());
@@ -688,14 +688,14 @@ public final class FishEscapeNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
       /**
-       * <code>.Vector pos = 2;</code>
+       * <code>.Vector pos = 1;</code>
        * @return Whether the pos field is set.
        */
       public boolean hasPos() {
         return posBuilder_ != null || pos_ != null;
       }
       /**
-       * <code>.Vector pos = 2;</code>
+       * <code>.Vector pos = 1;</code>
        * @return The pos.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
@@ -706,7 +706,7 @@ public final class FishEscapeNotifyOuterClass {
         }
       }
       /**
-       * <code>.Vector pos = 2;</code>
+       * <code>.Vector pos = 1;</code>
        */
       public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -722,7 +722,7 @@ public final class FishEscapeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 2;</code>
+       * <code>.Vector pos = 1;</code>
        */
       public Builder setPos(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -736,7 +736,7 @@ public final class FishEscapeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 2;</code>
+       * <code>.Vector pos = 1;</code>
        */
       public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -754,7 +754,7 @@ public final class FishEscapeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 2;</code>
+       * <code>.Vector pos = 1;</code>
        */
       public Builder clearPos() {
         if (posBuilder_ == null) {
@@ -768,7 +768,7 @@ public final class FishEscapeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 2;</code>
+       * <code>.Vector pos = 1;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
         
@@ -776,7 +776,7 @@ public final class FishEscapeNotifyOuterClass {
         return getPosFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector pos = 2;</code>
+       * <code>.Vector pos = 1;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
         if (posBuilder_ != null) {
@@ -787,7 +787,7 @@ public final class FishEscapeNotifyOuterClass {
         }
       }
       /**
-       * <code>.Vector pos = 2;</code>
+       * <code>.Vector pos = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -803,37 +803,6 @@ public final class FishEscapeNotifyOuterClass {
         return posBuilder_;
       }
 
-      private int uid_ ;
-      /**
-       * <code>uint32 uid = 11;</code>
-       * @return The uid.
-       */
-      @java.lang.Override
-      public int getUid() {
-        return uid_;
-      }
-      /**
-       * <code>uint32 uid = 11;</code>
-       * @param value The uid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUid(int value) {
-        
-        uid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 uid = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUid() {
-        
-        uid_ = 0;
-        onChanged();
-        return this;
-      }
-
       private com.google.protobuf.Internal.IntList fishIdList_ = emptyIntList();
       private void ensureFishIdListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -842,7 +811,7 @@ public final class FishEscapeNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 fish_id_list = 7;</code>
+       * <code>repeated uint32 fish_id_list = 15;</code>
        * @return A list containing the fishIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -851,14 +820,14 @@ public final class FishEscapeNotifyOuterClass {
                  java.util.Collections.unmodifiableList(fishIdList_) : fishIdList_;
       }
       /**
-       * <code>repeated uint32 fish_id_list = 7;</code>
+       * <code>repeated uint32 fish_id_list = 15;</code>
        * @return The count of fishIdList.
        */
       public int getFishIdListCount() {
         return fishIdList_.size();
       }
       /**
-       * <code>repeated uint32 fish_id_list = 7;</code>
+       * <code>repeated uint32 fish_id_list = 15;</code>
        * @param index The index of the element to return.
        * @return The fishIdList at the given index.
        */
@@ -866,7 +835,7 @@ public final class FishEscapeNotifyOuterClass {
         return fishIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 fish_id_list = 7;</code>
+       * <code>repeated uint32 fish_id_list = 15;</code>
        * @param index The index to set the value at.
        * @param value The fishIdList to set.
        * @return This builder for chaining.
@@ -879,7 +848,7 @@ public final class FishEscapeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 fish_id_list = 7;</code>
+       * <code>repeated uint32 fish_id_list = 15;</code>
        * @param value The fishIdList to add.
        * @return This builder for chaining.
        */
@@ -890,7 +859,7 @@ public final class FishEscapeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 fish_id_list = 7;</code>
+       * <code>repeated uint32 fish_id_list = 15;</code>
        * @param values The fishIdList to add.
        * @return This builder for chaining.
        */
@@ -903,7 +872,7 @@ public final class FishEscapeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 fish_id_list = 7;</code>
+       * <code>repeated uint32 fish_id_list = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearFishIdList() {
@@ -913,16 +882,47 @@ public final class FishEscapeNotifyOuterClass {
         return this;
       }
 
+      private int uid_ ;
+      /**
+       * <code>uint32 uid = 5;</code>
+       * @return The uid.
+       */
+      @java.lang.Override
+      public int getUid() {
+        return uid_;
+      }
+      /**
+       * <code>uint32 uid = 5;</code>
+       * @param value The uid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUid(int value) {
+        
+        uid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 uid = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUid() {
+        
+        uid_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int reason_ = 0;
       /**
-       * <code>.FishEscapeReason reason = 12;</code>
+       * <code>.FishEscapeReason reason = 7;</code>
        * @return The enum numeric value on the wire for reason.
        */
       @java.lang.Override public int getReasonValue() {
         return reason_;
       }
       /**
-       * <code>.FishEscapeReason reason = 12;</code>
+       * <code>.FishEscapeReason reason = 7;</code>
        * @param value The enum numeric value on the wire for reason to set.
        * @return This builder for chaining.
        */
@@ -933,7 +933,7 @@ public final class FishEscapeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.FishEscapeReason reason = 12;</code>
+       * <code>.FishEscapeReason reason = 7;</code>
        * @return The reason.
        */
       @java.lang.Override
@@ -943,7 +943,7 @@ public final class FishEscapeNotifyOuterClass {
         return result == null ? emu.grasscutter.net.proto.FishEscapeReasonOuterClass.FishEscapeReason.UNRECOGNIZED : result;
       }
       /**
-       * <code>.FishEscapeReason reason = 12;</code>
+       * <code>.FishEscapeReason reason = 7;</code>
        * @param value The reason to set.
        * @return This builder for chaining.
        */
@@ -957,7 +957,7 @@ public final class FishEscapeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.FishEscapeReason reason = 12;</code>
+       * <code>.FishEscapeReason reason = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearReason() {
@@ -1033,27 +1033,27 @@ public final class FishEscapeNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026FishEscapeNotify.proto\032\026FishEscapeReas" +
-      "on.proto\032\014Vector.proto\"n\n\020FishEscapeNoti" +
-      "fy\022\024\n\003pos\030\002 \001(\0132\007.Vector\022\013\n\003uid\030\013 \001(\r\022\024\n" +
-      "\014fish_id_list\030\007 \003(\r\022!\n\006reason\030\014 \001(\0162\021.Fi" +
+      "\n\026FishEscapeNotify.proto\032\014Vector.proto\032\026" +
+      "FishEscapeReason.proto\"n\n\020FishEscapeNoti" +
+      "fy\022\024\n\003pos\030\001 \001(\0132\007.Vector\022\024\n\014fish_id_list" +
+      "\030\017 \003(\r\022\013\n\003uid\030\005 \001(\r\022!\n\006reason\030\007 \001(\0162\021.Fi" +
       "shEscapeReasonB\033\n\031emu.grasscutter.net.pr" +
       "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.FishEscapeReasonOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.VectorOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.FishEscapeReasonOuterClass.getDescriptor(),
         });
     internal_static_FishEscapeNotify_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_FishEscapeNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FishEscapeNotify_descriptor,
-        new java.lang.String[] { "Pos", "Uid", "FishIdList", "Reason", });
-    emu.grasscutter.net.proto.FishEscapeReasonOuterClass.getDescriptor();
+        new java.lang.String[] { "Pos", "FishIdList", "Uid", "Reason", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.FishEscapeReasonOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,30 +19,30 @@ public final class AddRandTaskInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.Vector pos = 11;</code>
+     * <code>.Vector pos = 14;</code>
      * @return Whether the pos field is set.
      */
     boolean hasPos();
     /**
-     * <code>.Vector pos = 11;</code>
+     * <code>.Vector pos = 14;</code>
      * @return The pos.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
     /**
-     * <code>.Vector pos = 11;</code>
+     * <code>.Vector pos = 14;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
 
     /**
-     * <code>uint32 rand_task_id = 6;</code>
+     * <code>uint32 rand_task_id = 5;</code>
      * @return The randTaskId.
      */
     int getRandTaskId();
   }
   /**
    * <pre>
-   * Name: KOBACDPOPJI
-   * CmdId: 187
+   * CmdId: 110
+   * Obf: HPHBIEGDFGM
    * </pre>
    *
    * Protobuf type {@code AddRandTaskInfoNotify}
@@ -89,12 +89,12 @@ public final class AddRandTaskInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 40: {
 
               randTaskId_ = input.readUInt32();
               break;
             }
-            case 90: {
+            case 114: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (pos_ != null) {
                 subBuilder = pos_.toBuilder();
@@ -139,10 +139,10 @@ public final class AddRandTaskInfoNotifyOuterClass {
               emu.grasscutter.net.proto.AddRandTaskInfoNotifyOuterClass.AddRandTaskInfoNotify.class, emu.grasscutter.net.proto.AddRandTaskInfoNotifyOuterClass.AddRandTaskInfoNotify.Builder.class);
     }
 
-    public static final int POS_FIELD_NUMBER = 11;
+    public static final int POS_FIELD_NUMBER = 14;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
     /**
-     * <code>.Vector pos = 11;</code>
+     * <code>.Vector pos = 14;</code>
      * @return Whether the pos field is set.
      */
     @java.lang.Override
@@ -150,7 +150,7 @@ public final class AddRandTaskInfoNotifyOuterClass {
       return pos_ != null;
     }
     /**
-     * <code>.Vector pos = 11;</code>
+     * <code>.Vector pos = 14;</code>
      * @return The pos.
      */
     @java.lang.Override
@@ -158,17 +158,17 @@ public final class AddRandTaskInfoNotifyOuterClass {
       return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
     }
     /**
-     * <code>.Vector pos = 11;</code>
+     * <code>.Vector pos = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
       return getPos();
     }
 
-    public static final int RAND_TASK_ID_FIELD_NUMBER = 6;
+    public static final int RAND_TASK_ID_FIELD_NUMBER = 5;
     private int randTaskId_;
     /**
-     * <code>uint32 rand_task_id = 6;</code>
+     * <code>uint32 rand_task_id = 5;</code>
      * @return The randTaskId.
      */
     @java.lang.Override
@@ -191,10 +191,10 @@ public final class AddRandTaskInfoNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (randTaskId_ != 0) {
-        output.writeUInt32(6, randTaskId_);
+        output.writeUInt32(5, randTaskId_);
       }
       if (pos_ != null) {
-        output.writeMessage(11, getPos());
+        output.writeMessage(14, getPos());
       }
       unknownFields.writeTo(output);
     }
@@ -207,11 +207,11 @@ public final class AddRandTaskInfoNotifyOuterClass {
       size = 0;
       if (randTaskId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, randTaskId_);
+          .computeUInt32Size(5, randTaskId_);
       }
       if (pos_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, getPos());
+          .computeMessageSize(14, getPos());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -349,8 +349,8 @@ public final class AddRandTaskInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: KOBACDPOPJI
-     * CmdId: 187
+     * CmdId: 110
+     * Obf: HPHBIEGDFGM
      * </pre>
      *
      * Protobuf type {@code AddRandTaskInfoNotify}
@@ -517,14 +517,14 @@ public final class AddRandTaskInfoNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
       /**
-       * <code>.Vector pos = 11;</code>
+       * <code>.Vector pos = 14;</code>
        * @return Whether the pos field is set.
        */
       public boolean hasPos() {
         return posBuilder_ != null || pos_ != null;
       }
       /**
-       * <code>.Vector pos = 11;</code>
+       * <code>.Vector pos = 14;</code>
        * @return The pos.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
@@ -535,7 +535,7 @@ public final class AddRandTaskInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>.Vector pos = 11;</code>
+       * <code>.Vector pos = 14;</code>
        */
       public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -551,7 +551,7 @@ public final class AddRandTaskInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 11;</code>
+       * <code>.Vector pos = 14;</code>
        */
       public Builder setPos(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -565,7 +565,7 @@ public final class AddRandTaskInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 11;</code>
+       * <code>.Vector pos = 14;</code>
        */
       public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -583,7 +583,7 @@ public final class AddRandTaskInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 11;</code>
+       * <code>.Vector pos = 14;</code>
        */
       public Builder clearPos() {
         if (posBuilder_ == null) {
@@ -597,7 +597,7 @@ public final class AddRandTaskInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 11;</code>
+       * <code>.Vector pos = 14;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
         
@@ -605,7 +605,7 @@ public final class AddRandTaskInfoNotifyOuterClass {
         return getPosFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector pos = 11;</code>
+       * <code>.Vector pos = 14;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
         if (posBuilder_ != null) {
@@ -616,7 +616,7 @@ public final class AddRandTaskInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>.Vector pos = 11;</code>
+       * <code>.Vector pos = 14;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -634,7 +634,7 @@ public final class AddRandTaskInfoNotifyOuterClass {
 
       private int randTaskId_ ;
       /**
-       * <code>uint32 rand_task_id = 6;</code>
+       * <code>uint32 rand_task_id = 5;</code>
        * @return The randTaskId.
        */
       @java.lang.Override
@@ -642,7 +642,7 @@ public final class AddRandTaskInfoNotifyOuterClass {
         return randTaskId_;
       }
       /**
-       * <code>uint32 rand_task_id = 6;</code>
+       * <code>uint32 rand_task_id = 5;</code>
        * @param value The randTaskId to set.
        * @return This builder for chaining.
        */
@@ -653,7 +653,7 @@ public final class AddRandTaskInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 rand_task_id = 6;</code>
+       * <code>uint32 rand_task_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearRandTaskId() {
@@ -730,8 +730,8 @@ public final class AddRandTaskInfoNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033AddRandTaskInfoNotify.proto\032\014Vector.pr" +
-      "oto\"C\n\025AddRandTaskInfoNotify\022\024\n\003pos\030\013 \001(" +
-      "\0132\007.Vector\022\024\n\014rand_task_id\030\006 \001(\rB\033\n\031emu." +
+      "oto\"C\n\025AddRandTaskInfoNotify\022\024\n\003pos\030\016 \001(" +
+      "\0132\007.Vector\022\024\n\014rand_task_id\030\005 \001(\rB\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

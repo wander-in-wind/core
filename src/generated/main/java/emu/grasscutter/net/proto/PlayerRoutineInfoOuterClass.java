@@ -19,20 +19,20 @@ public final class PlayerRoutineInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 finished_num = 2;</code>
-     * @return The finishedNum.
-     */
-    int getFinishedNum();
-
-    /**
-     * <code>uint32 routine_type = 13;</code>
+     * <code>uint32 routine_type = 2;</code>
      * @return The routineType.
      */
     int getRoutineType();
+
+    /**
+     * <code>uint32 finished_num = 4;</code>
+     * @return The finishedNum.
+     */
+    int getFinishedNum();
   }
   /**
    * <pre>
-   * Name: EDGJBMLJMCD
+   * Obf: CIDDDIHEFHF
    * </pre>
    *
    * Protobuf type {@code PlayerRoutineInfo}
@@ -81,12 +81,12 @@ public final class PlayerRoutineInfoOuterClass {
               break;
             case 16: {
 
-              finishedNum_ = input.readUInt32();
+              routineType_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 32: {
 
-              routineType_ = input.readUInt32();
+              finishedNum_ = input.readUInt32();
               break;
             }
             default: {
@@ -121,26 +121,26 @@ public final class PlayerRoutineInfoOuterClass {
               emu.grasscutter.net.proto.PlayerRoutineInfoOuterClass.PlayerRoutineInfo.class, emu.grasscutter.net.proto.PlayerRoutineInfoOuterClass.PlayerRoutineInfo.Builder.class);
     }
 
-    public static final int FINISHED_NUM_FIELD_NUMBER = 2;
-    private int finishedNum_;
-    /**
-     * <code>uint32 finished_num = 2;</code>
-     * @return The finishedNum.
-     */
-    @java.lang.Override
-    public int getFinishedNum() {
-      return finishedNum_;
-    }
-
-    public static final int ROUTINE_TYPE_FIELD_NUMBER = 13;
+    public static final int ROUTINE_TYPE_FIELD_NUMBER = 2;
     private int routineType_;
     /**
-     * <code>uint32 routine_type = 13;</code>
+     * <code>uint32 routine_type = 2;</code>
      * @return The routineType.
      */
     @java.lang.Override
     public int getRoutineType() {
       return routineType_;
+    }
+
+    public static final int FINISHED_NUM_FIELD_NUMBER = 4;
+    private int finishedNum_;
+    /**
+     * <code>uint32 finished_num = 4;</code>
+     * @return The finishedNum.
+     */
+    @java.lang.Override
+    public int getFinishedNum() {
+      return finishedNum_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -157,11 +157,11 @@ public final class PlayerRoutineInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (finishedNum_ != 0) {
-        output.writeUInt32(2, finishedNum_);
-      }
       if (routineType_ != 0) {
-        output.writeUInt32(13, routineType_);
+        output.writeUInt32(2, routineType_);
+      }
+      if (finishedNum_ != 0) {
+        output.writeUInt32(4, finishedNum_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +172,13 @@ public final class PlayerRoutineInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (finishedNum_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, finishedNum_);
-      }
       if (routineType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, routineType_);
+          .computeUInt32Size(2, routineType_);
+      }
+      if (finishedNum_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, finishedNum_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -195,10 +195,10 @@ public final class PlayerRoutineInfoOuterClass {
       }
       emu.grasscutter.net.proto.PlayerRoutineInfoOuterClass.PlayerRoutineInfo other = (emu.grasscutter.net.proto.PlayerRoutineInfoOuterClass.PlayerRoutineInfo) obj;
 
-      if (getFinishedNum()
-          != other.getFinishedNum()) return false;
       if (getRoutineType()
           != other.getRoutineType()) return false;
+      if (getFinishedNum()
+          != other.getFinishedNum()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -210,10 +210,10 @@ public final class PlayerRoutineInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + FINISHED_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getFinishedNum();
       hash = (37 * hash) + ROUTINE_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getRoutineType();
+      hash = (37 * hash) + FINISHED_NUM_FIELD_NUMBER;
+      hash = (53 * hash) + getFinishedNum();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -311,7 +311,7 @@ public final class PlayerRoutineInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: EDGJBMLJMCD
+     * Obf: CIDDDIHEFHF
      * </pre>
      *
      * Protobuf type {@code PlayerRoutineInfo}
@@ -351,9 +351,9 @@ public final class PlayerRoutineInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        finishedNum_ = 0;
-
         routineType_ = 0;
+
+        finishedNum_ = 0;
 
         return this;
       }
@@ -381,8 +381,8 @@ public final class PlayerRoutineInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PlayerRoutineInfoOuterClass.PlayerRoutineInfo buildPartial() {
         emu.grasscutter.net.proto.PlayerRoutineInfoOuterClass.PlayerRoutineInfo result = new emu.grasscutter.net.proto.PlayerRoutineInfoOuterClass.PlayerRoutineInfo(this);
-        result.finishedNum_ = finishedNum_;
         result.routineType_ = routineType_;
+        result.finishedNum_ = finishedNum_;
         onBuilt();
         return result;
       }
@@ -431,11 +431,11 @@ public final class PlayerRoutineInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PlayerRoutineInfoOuterClass.PlayerRoutineInfo other) {
         if (other == emu.grasscutter.net.proto.PlayerRoutineInfoOuterClass.PlayerRoutineInfo.getDefaultInstance()) return this;
-        if (other.getFinishedNum() != 0) {
-          setFinishedNum(other.getFinishedNum());
-        }
         if (other.getRoutineType() != 0) {
           setRoutineType(other.getRoutineType());
+        }
+        if (other.getFinishedNum() != 0) {
+          setFinishedNum(other.getFinishedNum());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -466,40 +466,9 @@ public final class PlayerRoutineInfoOuterClass {
         return this;
       }
 
-      private int finishedNum_ ;
-      /**
-       * <code>uint32 finished_num = 2;</code>
-       * @return The finishedNum.
-       */
-      @java.lang.Override
-      public int getFinishedNum() {
-        return finishedNum_;
-      }
-      /**
-       * <code>uint32 finished_num = 2;</code>
-       * @param value The finishedNum to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFinishedNum(int value) {
-        
-        finishedNum_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 finished_num = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFinishedNum() {
-        
-        finishedNum_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int routineType_ ;
       /**
-       * <code>uint32 routine_type = 13;</code>
+       * <code>uint32 routine_type = 2;</code>
        * @return The routineType.
        */
       @java.lang.Override
@@ -507,7 +476,7 @@ public final class PlayerRoutineInfoOuterClass {
         return routineType_;
       }
       /**
-       * <code>uint32 routine_type = 13;</code>
+       * <code>uint32 routine_type = 2;</code>
        * @param value The routineType to set.
        * @return This builder for chaining.
        */
@@ -518,12 +487,43 @@ public final class PlayerRoutineInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 routine_type = 13;</code>
+       * <code>uint32 routine_type = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearRoutineType() {
         
         routineType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int finishedNum_ ;
+      /**
+       * <code>uint32 finished_num = 4;</code>
+       * @return The finishedNum.
+       */
+      @java.lang.Override
+      public int getFinishedNum() {
+        return finishedNum_;
+      }
+      /**
+       * <code>uint32 finished_num = 4;</code>
+       * @param value The finishedNum to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFinishedNum(int value) {
+        
+        finishedNum_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 finished_num = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFinishedNum() {
+        
+        finishedNum_ = 0;
         onChanged();
         return this;
       }
@@ -595,8 +595,8 @@ public final class PlayerRoutineInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027PlayerRoutineInfo.proto\"?\n\021PlayerRouti" +
-      "neInfo\022\024\n\014finished_num\030\002 \001(\r\022\024\n\014routine_" +
-      "type\030\r \001(\rB\033\n\031emu.grasscutter.net.protob" +
+      "neInfo\022\024\n\014routine_type\030\002 \001(\r\022\024\n\014finished" +
+      "_num\030\004 \001(\rB\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -608,7 +608,7 @@ public final class PlayerRoutineInfoOuterClass {
     internal_static_PlayerRoutineInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerRoutineInfo_descriptor,
-        new java.lang.String[] { "FinishedNum", "RoutineType", });
+        new java.lang.String[] { "RoutineType", "FinishedNum", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

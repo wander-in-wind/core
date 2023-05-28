@@ -112,7 +112,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: LMMFGNIDKME
+   * Obf: PEBNHOCGDFE
    * </pre>
    *
    * Protobuf type {@code AbilityMixinRecoverInfo}
@@ -731,7 +731,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: LMMFGNIDKME
+     * Obf: PEBNHOCGDFE
      * </pre>
      *
      * Protobuf type {@code AbilityMixinRecoverInfo}
@@ -1646,22 +1646,22 @@ public final class AbilityMixinRecoverInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\035AbilityMixinRecoverInfo.proto\032\026Breakou" +
-      "tSnapShot.proto\032\031MassivePropSyncInfo.pro" +
+      "\n\035AbilityMixinRecoverInfo.proto\032\031Massive" +
+      "PropSyncInfo.proto\032\026BreakoutSnapShot.pro" +
       "to\"\211\002\n\027AbilityMixinRecoverInfo\022\020\n\010local_" +
       "id\030\003 \001(\r\022\021\n\tdata_list\030\004 \003(\r\022\036\n\026is_server" +
       "buff_modifier\030\005 \001(\010\022/\n\021massive_prop_list" +
       "\030\006 \003(\0132\024.MassivePropSyncInfo\022-\n\022breakout" +
       "_snap_shot\030\007 \001(\0132\021.BreakoutSnapShot\022\036\n\024i" +
       "nstanced_ability_id\030\001 \001(\rH\000\022\037\n\025instanced" +
-      "_modifier_id\030\002 \001(\rH\000B\010\n\006sourceB\033\n\031emu.gr" +
+      "_modifier_id\030\002 \001(\rH\000B\010\n\006SourceB\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.MassivePropSyncInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.getDescriptor(),
         });
     internal_static_AbilityMixinRecoverInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -1669,8 +1669,8 @@ public final class AbilityMixinRecoverInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilityMixinRecoverInfo_descriptor,
         new java.lang.String[] { "LocalId", "DataList", "IsServerbuffModifier", "MassivePropList", "BreakoutSnapShot", "InstancedAbilityId", "InstancedModifierId", "Source", });
-    emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.getDescriptor();
     emu.grasscutter.net.proto.MassivePropSyncInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

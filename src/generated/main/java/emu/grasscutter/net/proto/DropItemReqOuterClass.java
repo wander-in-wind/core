@@ -19,47 +19,47 @@ public final class DropItemReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 count = 5;</code>
-     * @return The count.
-     */
-    int getCount();
-
-    /**
-     * <code>uint64 guid = 1;</code>
-     * @return The guid.
-     */
-    long getGuid();
-
-    /**
-     * <code>.StoreType store_type = 4;</code>
+     * <code>.StoreType store_type = 3;</code>
      * @return The enum numeric value on the wire for storeType.
      */
     int getStoreTypeValue();
     /**
-     * <code>.StoreType store_type = 4;</code>
+     * <code>.StoreType store_type = 3;</code>
      * @return The storeType.
      */
     emu.grasscutter.net.proto.StoreTypeOuterClass.StoreType getStoreType();
 
     /**
-     * <code>.Vector pos = 12;</code>
+     * <code>.Vector pos = 15;</code>
      * @return Whether the pos field is set.
      */
     boolean hasPos();
     /**
-     * <code>.Vector pos = 12;</code>
+     * <code>.Vector pos = 15;</code>
      * @return The pos.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
     /**
-     * <code>.Vector pos = 12;</code>
+     * <code>.Vector pos = 15;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
+
+    /**
+     * <code>uint64 guid = 8;</code>
+     * @return The guid.
+     */
+    long getGuid();
+
+    /**
+     * <code>uint32 count = 11;</code>
+     * @return The count.
+     */
+    int getCount();
   }
   /**
    * <pre>
-   * Name: PDAMDHFOIIL
-   * CmdId: 650
+   * CmdId: 630
+   * Obf: HBHDPEOGOMB
    * </pre>
    *
    * Protobuf type {@code DropItemReq}
@@ -107,23 +107,23 @@ public final class DropItemReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              guid_ = input.readUInt64();
-              break;
-            }
-            case 32: {
+            case 24: {
               int rawValue = input.readEnum();
 
               storeType_ = rawValue;
               break;
             }
-            case 40: {
+            case 64: {
+
+              guid_ = input.readUInt64();
+              break;
+            }
+            case 88: {
 
               count_ = input.readUInt32();
               break;
             }
-            case 98: {
+            case 122: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (pos_ != null) {
                 subBuilder = pos_.toBuilder();
@@ -168,39 +168,17 @@ public final class DropItemReqOuterClass {
               emu.grasscutter.net.proto.DropItemReqOuterClass.DropItemReq.class, emu.grasscutter.net.proto.DropItemReqOuterClass.DropItemReq.Builder.class);
     }
 
-    public static final int COUNT_FIELD_NUMBER = 5;
-    private int count_;
-    /**
-     * <code>uint32 count = 5;</code>
-     * @return The count.
-     */
-    @java.lang.Override
-    public int getCount() {
-      return count_;
-    }
-
-    public static final int GUID_FIELD_NUMBER = 1;
-    private long guid_;
-    /**
-     * <code>uint64 guid = 1;</code>
-     * @return The guid.
-     */
-    @java.lang.Override
-    public long getGuid() {
-      return guid_;
-    }
-
-    public static final int STORE_TYPE_FIELD_NUMBER = 4;
+    public static final int STORE_TYPE_FIELD_NUMBER = 3;
     private int storeType_;
     /**
-     * <code>.StoreType store_type = 4;</code>
+     * <code>.StoreType store_type = 3;</code>
      * @return The enum numeric value on the wire for storeType.
      */
     @java.lang.Override public int getStoreTypeValue() {
       return storeType_;
     }
     /**
-     * <code>.StoreType store_type = 4;</code>
+     * <code>.StoreType store_type = 3;</code>
      * @return The storeType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.StoreTypeOuterClass.StoreType getStoreType() {
@@ -209,10 +187,10 @@ public final class DropItemReqOuterClass {
       return result == null ? emu.grasscutter.net.proto.StoreTypeOuterClass.StoreType.UNRECOGNIZED : result;
     }
 
-    public static final int POS_FIELD_NUMBER = 12;
+    public static final int POS_FIELD_NUMBER = 15;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
     /**
-     * <code>.Vector pos = 12;</code>
+     * <code>.Vector pos = 15;</code>
      * @return Whether the pos field is set.
      */
     @java.lang.Override
@@ -220,7 +198,7 @@ public final class DropItemReqOuterClass {
       return pos_ != null;
     }
     /**
-     * <code>.Vector pos = 12;</code>
+     * <code>.Vector pos = 15;</code>
      * @return The pos.
      */
     @java.lang.Override
@@ -228,11 +206,33 @@ public final class DropItemReqOuterClass {
       return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
     }
     /**
-     * <code>.Vector pos = 12;</code>
+     * <code>.Vector pos = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
       return getPos();
+    }
+
+    public static final int GUID_FIELD_NUMBER = 8;
+    private long guid_;
+    /**
+     * <code>uint64 guid = 8;</code>
+     * @return The guid.
+     */
+    @java.lang.Override
+    public long getGuid() {
+      return guid_;
+    }
+
+    public static final int COUNT_FIELD_NUMBER = 11;
+    private int count_;
+    /**
+     * <code>uint32 count = 11;</code>
+     * @return The count.
+     */
+    @java.lang.Override
+    public int getCount() {
+      return count_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -249,17 +249,17 @@ public final class DropItemReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (guid_ != 0L) {
-        output.writeUInt64(1, guid_);
-      }
       if (storeType_ != emu.grasscutter.net.proto.StoreTypeOuterClass.StoreType.STORE_TYPE_NONE.getNumber()) {
-        output.writeEnum(4, storeType_);
+        output.writeEnum(3, storeType_);
+      }
+      if (guid_ != 0L) {
+        output.writeUInt64(8, guid_);
       }
       if (count_ != 0) {
-        output.writeUInt32(5, count_);
+        output.writeUInt32(11, count_);
       }
       if (pos_ != null) {
-        output.writeMessage(12, getPos());
+        output.writeMessage(15, getPos());
       }
       unknownFields.writeTo(output);
     }
@@ -270,21 +270,21 @@ public final class DropItemReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (guid_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(1, guid_);
-      }
       if (storeType_ != emu.grasscutter.net.proto.StoreTypeOuterClass.StoreType.STORE_TYPE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(4, storeType_);
+          .computeEnumSize(3, storeType_);
+      }
+      if (guid_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(8, guid_);
       }
       if (count_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, count_);
+          .computeUInt32Size(11, count_);
       }
       if (pos_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, getPos());
+          .computeMessageSize(15, getPos());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -301,16 +301,16 @@ public final class DropItemReqOuterClass {
       }
       emu.grasscutter.net.proto.DropItemReqOuterClass.DropItemReq other = (emu.grasscutter.net.proto.DropItemReqOuterClass.DropItemReq) obj;
 
-      if (getCount()
-          != other.getCount()) return false;
-      if (getGuid()
-          != other.getGuid()) return false;
       if (storeType_ != other.storeType_) return false;
       if (hasPos() != other.hasPos()) return false;
       if (hasPos()) {
         if (!getPos()
             .equals(other.getPos())) return false;
       }
+      if (getGuid()
+          != other.getGuid()) return false;
+      if (getCount()
+          != other.getCount()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -322,17 +322,17 @@ public final class DropItemReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getCount();
-      hash = (37 * hash) + GUID_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getGuid());
       hash = (37 * hash) + STORE_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + storeType_;
       if (hasPos()) {
         hash = (37 * hash) + POS_FIELD_NUMBER;
         hash = (53 * hash) + getPos().hashCode();
       }
+      hash = (37 * hash) + GUID_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getGuid());
+      hash = (37 * hash) + COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getCount();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -430,8 +430,8 @@ public final class DropItemReqOuterClass {
     }
     /**
      * <pre>
-     * Name: PDAMDHFOIIL
-     * CmdId: 650
+     * CmdId: 630
+     * Obf: HBHDPEOGOMB
      * </pre>
      *
      * Protobuf type {@code DropItemReq}
@@ -471,10 +471,6 @@ public final class DropItemReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        count_ = 0;
-
-        guid_ = 0L;
-
         storeType_ = 0;
 
         if (posBuilder_ == null) {
@@ -483,6 +479,10 @@ public final class DropItemReqOuterClass {
           pos_ = null;
           posBuilder_ = null;
         }
+        guid_ = 0L;
+
+        count_ = 0;
+
         return this;
       }
 
@@ -509,14 +509,14 @@ public final class DropItemReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.DropItemReqOuterClass.DropItemReq buildPartial() {
         emu.grasscutter.net.proto.DropItemReqOuterClass.DropItemReq result = new emu.grasscutter.net.proto.DropItemReqOuterClass.DropItemReq(this);
-        result.count_ = count_;
-        result.guid_ = guid_;
         result.storeType_ = storeType_;
         if (posBuilder_ == null) {
           result.pos_ = pos_;
         } else {
           result.pos_ = posBuilder_.build();
         }
+        result.guid_ = guid_;
+        result.count_ = count_;
         onBuilt();
         return result;
       }
@@ -565,17 +565,17 @@ public final class DropItemReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DropItemReqOuterClass.DropItemReq other) {
         if (other == emu.grasscutter.net.proto.DropItemReqOuterClass.DropItemReq.getDefaultInstance()) return this;
-        if (other.getCount() != 0) {
-          setCount(other.getCount());
-        }
-        if (other.getGuid() != 0L) {
-          setGuid(other.getGuid());
-        }
         if (other.storeType_ != 0) {
           setStoreTypeValue(other.getStoreTypeValue());
         }
         if (other.hasPos()) {
           mergePos(other.getPos());
+        }
+        if (other.getGuid() != 0L) {
+          setGuid(other.getGuid());
+        }
+        if (other.getCount() != 0) {
+          setCount(other.getCount());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -606,78 +606,16 @@ public final class DropItemReqOuterClass {
         return this;
       }
 
-      private int count_ ;
-      /**
-       * <code>uint32 count = 5;</code>
-       * @return The count.
-       */
-      @java.lang.Override
-      public int getCount() {
-        return count_;
-      }
-      /**
-       * <code>uint32 count = 5;</code>
-       * @param value The count to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCount(int value) {
-        
-        count_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 count = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCount() {
-        
-        count_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private long guid_ ;
-      /**
-       * <code>uint64 guid = 1;</code>
-       * @return The guid.
-       */
-      @java.lang.Override
-      public long getGuid() {
-        return guid_;
-      }
-      /**
-       * <code>uint64 guid = 1;</code>
-       * @param value The guid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGuid(long value) {
-        
-        guid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 guid = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGuid() {
-        
-        guid_ = 0L;
-        onChanged();
-        return this;
-      }
-
       private int storeType_ = 0;
       /**
-       * <code>.StoreType store_type = 4;</code>
+       * <code>.StoreType store_type = 3;</code>
        * @return The enum numeric value on the wire for storeType.
        */
       @java.lang.Override public int getStoreTypeValue() {
         return storeType_;
       }
       /**
-       * <code>.StoreType store_type = 4;</code>
+       * <code>.StoreType store_type = 3;</code>
        * @param value The enum numeric value on the wire for storeType to set.
        * @return This builder for chaining.
        */
@@ -688,7 +626,7 @@ public final class DropItemReqOuterClass {
         return this;
       }
       /**
-       * <code>.StoreType store_type = 4;</code>
+       * <code>.StoreType store_type = 3;</code>
        * @return The storeType.
        */
       @java.lang.Override
@@ -698,7 +636,7 @@ public final class DropItemReqOuterClass {
         return result == null ? emu.grasscutter.net.proto.StoreTypeOuterClass.StoreType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.StoreType store_type = 4;</code>
+       * <code>.StoreType store_type = 3;</code>
        * @param value The storeType to set.
        * @return This builder for chaining.
        */
@@ -712,7 +650,7 @@ public final class DropItemReqOuterClass {
         return this;
       }
       /**
-       * <code>.StoreType store_type = 4;</code>
+       * <code>.StoreType store_type = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearStoreType() {
@@ -726,14 +664,14 @@ public final class DropItemReqOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
       /**
-       * <code>.Vector pos = 12;</code>
+       * <code>.Vector pos = 15;</code>
        * @return Whether the pos field is set.
        */
       public boolean hasPos() {
         return posBuilder_ != null || pos_ != null;
       }
       /**
-       * <code>.Vector pos = 12;</code>
+       * <code>.Vector pos = 15;</code>
        * @return The pos.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
@@ -744,7 +682,7 @@ public final class DropItemReqOuterClass {
         }
       }
       /**
-       * <code>.Vector pos = 12;</code>
+       * <code>.Vector pos = 15;</code>
        */
       public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -760,7 +698,7 @@ public final class DropItemReqOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 12;</code>
+       * <code>.Vector pos = 15;</code>
        */
       public Builder setPos(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -774,7 +712,7 @@ public final class DropItemReqOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 12;</code>
+       * <code>.Vector pos = 15;</code>
        */
       public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -792,7 +730,7 @@ public final class DropItemReqOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 12;</code>
+       * <code>.Vector pos = 15;</code>
        */
       public Builder clearPos() {
         if (posBuilder_ == null) {
@@ -806,7 +744,7 @@ public final class DropItemReqOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 12;</code>
+       * <code>.Vector pos = 15;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
         
@@ -814,7 +752,7 @@ public final class DropItemReqOuterClass {
         return getPosFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector pos = 12;</code>
+       * <code>.Vector pos = 15;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
         if (posBuilder_ != null) {
@@ -825,7 +763,7 @@ public final class DropItemReqOuterClass {
         }
       }
       /**
-       * <code>.Vector pos = 12;</code>
+       * <code>.Vector pos = 15;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -839,6 +777,68 @@ public final class DropItemReqOuterClass {
           pos_ = null;
         }
         return posBuilder_;
+      }
+
+      private long guid_ ;
+      /**
+       * <code>uint64 guid = 8;</code>
+       * @return The guid.
+       */
+      @java.lang.Override
+      public long getGuid() {
+        return guid_;
+      }
+      /**
+       * <code>uint64 guid = 8;</code>
+       * @param value The guid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGuid(long value) {
+        
+        guid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint64 guid = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGuid() {
+        
+        guid_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private int count_ ;
+      /**
+       * <code>uint32 count = 11;</code>
+       * @return The count.
+       */
+      @java.lang.Override
+      public int getCount() {
+        return count_;
+      }
+      /**
+       * <code>uint32 count = 11;</code>
+       * @param value The count to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCount(int value) {
+        
+        count_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 count = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCount() {
+        
+        count_ = 0;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -908,9 +908,9 @@ public final class DropItemReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021DropItemReq.proto\032\017StoreType.proto\032\014Ve" +
-      "ctor.proto\"`\n\013DropItemReq\022\r\n\005count\030\005 \001(\r" +
-      "\022\014\n\004guid\030\001 \001(\004\022\036\n\nstore_type\030\004 \001(\0162\n.Sto" +
-      "reType\022\024\n\003pos\030\014 \001(\0132\007.VectorB\033\n\031emu.gras" +
+      "ctor.proto\"`\n\013DropItemReq\022\036\n\nstore_type\030" +
+      "\003 \001(\0162\n.StoreType\022\024\n\003pos\030\017 \001(\0132\007.Vector\022" +
+      "\014\n\004guid\030\010 \001(\004\022\r\n\005count\030\013 \001(\rB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -924,7 +924,7 @@ public final class DropItemReqOuterClass {
     internal_static_DropItemReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DropItemReq_descriptor,
-        new java.lang.String[] { "Count", "Guid", "StoreType", "Pos", });
+        new java.lang.String[] { "StoreType", "Pos", "Guid", "Count", });
     emu.grasscutter.net.proto.StoreTypeOuterClass.getDescriptor();
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }

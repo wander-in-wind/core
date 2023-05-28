@@ -19,11 +19,11 @@ public final class GalleryBalloonScoreNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint32, uint32&gt; uid_score_map = 13;</code>
+     * <code>map&lt;uint32, uint32&gt; uid_score_map = 10;</code>
      */
     int getUidScoreMapCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; uid_score_map = 13;</code>
+     * <code>map&lt;uint32, uint32&gt; uid_score_map = 10;</code>
      */
     boolean containsUidScoreMap(
         int key);
@@ -34,34 +34,34 @@ public final class GalleryBalloonScoreNotifyOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getUidScoreMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; uid_score_map = 13;</code>
+     * <code>map&lt;uint32, uint32&gt; uid_score_map = 10;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getUidScoreMapMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; uid_score_map = 13;</code>
+     * <code>map&lt;uint32, uint32&gt; uid_score_map = 10;</code>
      */
 
     int getUidScoreMapOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; uid_score_map = 13;</code>
+     * <code>map&lt;uint32, uint32&gt; uid_score_map = 10;</code>
      */
 
     int getUidScoreMapOrThrow(
         int key);
 
     /**
-     * <code>uint32 gallery_id = 6;</code>
+     * <code>uint32 gallery_id = 1;</code>
      * @return The galleryId.
      */
     int getGalleryId();
   }
   /**
    * <pre>
-   * Name: CKHHPKMCPGO
-   * CmdId: 5554
+   * CmdId: 5502
+   * Obf: IEEOOALICIK
    * </pre>
    *
    * Protobuf type {@code GalleryBalloonScoreNotify}
@@ -109,12 +109,12 @@ public final class GalleryBalloonScoreNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 8: {
 
               galleryId_ = input.readUInt32();
               break;
             }
-            case 106: {
+            case 82: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 uidScoreMap_ = com.google.protobuf.MapField.newMapField(
                     UidScoreMapDefaultEntryHolder.defaultEntry);
@@ -156,7 +156,7 @@ public final class GalleryBalloonScoreNotifyOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 13:
+        case 10:
           return internalGetUidScoreMap();
         default:
           throw new RuntimeException(
@@ -171,7 +171,7 @@ public final class GalleryBalloonScoreNotifyOuterClass {
               emu.grasscutter.net.proto.GalleryBalloonScoreNotifyOuterClass.GalleryBalloonScoreNotify.class, emu.grasscutter.net.proto.GalleryBalloonScoreNotifyOuterClass.GalleryBalloonScoreNotify.Builder.class);
     }
 
-    public static final int UID_SCORE_MAP_FIELD_NUMBER = 13;
+    public static final int UID_SCORE_MAP_FIELD_NUMBER = 10;
     private static final class UidScoreMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -198,7 +198,7 @@ public final class GalleryBalloonScoreNotifyOuterClass {
       return internalGetUidScoreMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; uid_score_map = 13;</code>
+     * <code>map&lt;uint32, uint32&gt; uid_score_map = 10;</code>
      */
 
     @java.lang.Override
@@ -216,7 +216,7 @@ public final class GalleryBalloonScoreNotifyOuterClass {
       return getUidScoreMapMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; uid_score_map = 13;</code>
+     * <code>map&lt;uint32, uint32&gt; uid_score_map = 10;</code>
      */
     @java.lang.Override
 
@@ -224,7 +224,7 @@ public final class GalleryBalloonScoreNotifyOuterClass {
       return internalGetUidScoreMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; uid_score_map = 13;</code>
+     * <code>map&lt;uint32, uint32&gt; uid_score_map = 10;</code>
      */
     @java.lang.Override
 
@@ -237,7 +237,7 @@ public final class GalleryBalloonScoreNotifyOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; uid_score_map = 13;</code>
+     * <code>map&lt;uint32, uint32&gt; uid_score_map = 10;</code>
      */
     @java.lang.Override
 
@@ -252,10 +252,10 @@ public final class GalleryBalloonScoreNotifyOuterClass {
       return map.get(key);
     }
 
-    public static final int GALLERY_ID_FIELD_NUMBER = 6;
+    public static final int GALLERY_ID_FIELD_NUMBER = 1;
     private int galleryId_;
     /**
-     * <code>uint32 gallery_id = 6;</code>
+     * <code>uint32 gallery_id = 1;</code>
      * @return The galleryId.
      */
     @java.lang.Override
@@ -278,14 +278,14 @@ public final class GalleryBalloonScoreNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (galleryId_ != 0) {
-        output.writeUInt32(6, galleryId_);
+        output.writeUInt32(1, galleryId_);
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetUidScoreMap(),
           UidScoreMapDefaultEntryHolder.defaultEntry,
-          13);
+          10);
       unknownFields.writeTo(output);
     }
 
@@ -297,7 +297,7 @@ public final class GalleryBalloonScoreNotifyOuterClass {
       size = 0;
       if (galleryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, galleryId_);
+          .computeUInt32Size(1, galleryId_);
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
            : internalGetUidScoreMap().getMap().entrySet()) {
@@ -307,7 +307,7 @@ public final class GalleryBalloonScoreNotifyOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(13, uidScoreMap__);
+            .computeMessageSize(10, uidScoreMap__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -442,8 +442,8 @@ public final class GalleryBalloonScoreNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: CKHHPKMCPGO
-     * CmdId: 5554
+     * CmdId: 5502
+     * Obf: IEEOOALICIK
      * </pre>
      *
      * Protobuf type {@code GalleryBalloonScoreNotify}
@@ -461,7 +461,7 @@ public final class GalleryBalloonScoreNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 13:
+          case 10:
             return internalGetUidScoreMap();
           default:
             throw new RuntimeException(
@@ -472,7 +472,7 @@ public final class GalleryBalloonScoreNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 13:
+          case 10:
             return internalGetMutableUidScoreMap();
           default:
             throw new RuntimeException(
@@ -648,7 +648,7 @@ public final class GalleryBalloonScoreNotifyOuterClass {
         return internalGetUidScoreMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; uid_score_map = 13;</code>
+       * <code>map&lt;uint32, uint32&gt; uid_score_map = 10;</code>
        */
 
       @java.lang.Override
@@ -666,7 +666,7 @@ public final class GalleryBalloonScoreNotifyOuterClass {
         return getUidScoreMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; uid_score_map = 13;</code>
+       * <code>map&lt;uint32, uint32&gt; uid_score_map = 10;</code>
        */
       @java.lang.Override
 
@@ -674,7 +674,7 @@ public final class GalleryBalloonScoreNotifyOuterClass {
         return internalGetUidScoreMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; uid_score_map = 13;</code>
+       * <code>map&lt;uint32, uint32&gt; uid_score_map = 10;</code>
        */
       @java.lang.Override
 
@@ -687,7 +687,7 @@ public final class GalleryBalloonScoreNotifyOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; uid_score_map = 13;</code>
+       * <code>map&lt;uint32, uint32&gt; uid_score_map = 10;</code>
        */
       @java.lang.Override
 
@@ -708,7 +708,7 @@ public final class GalleryBalloonScoreNotifyOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; uid_score_map = 13;</code>
+       * <code>map&lt;uint32, uint32&gt; uid_score_map = 10;</code>
        */
 
       public Builder removeUidScoreMap(
@@ -727,7 +727,7 @@ public final class GalleryBalloonScoreNotifyOuterClass {
         return internalGetMutableUidScoreMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; uid_score_map = 13;</code>
+       * <code>map&lt;uint32, uint32&gt; uid_score_map = 10;</code>
        */
       public Builder putUidScoreMap(
           int key,
@@ -739,7 +739,7 @@ public final class GalleryBalloonScoreNotifyOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; uid_score_map = 13;</code>
+       * <code>map&lt;uint32, uint32&gt; uid_score_map = 10;</code>
        */
 
       public Builder putAllUidScoreMap(
@@ -751,7 +751,7 @@ public final class GalleryBalloonScoreNotifyOuterClass {
 
       private int galleryId_ ;
       /**
-       * <code>uint32 gallery_id = 6;</code>
+       * <code>uint32 gallery_id = 1;</code>
        * @return The galleryId.
        */
       @java.lang.Override
@@ -759,7 +759,7 @@ public final class GalleryBalloonScoreNotifyOuterClass {
         return galleryId_;
       }
       /**
-       * <code>uint32 gallery_id = 6;</code>
+       * <code>uint32 gallery_id = 1;</code>
        * @param value The galleryId to set.
        * @return This builder for chaining.
        */
@@ -770,7 +770,7 @@ public final class GalleryBalloonScoreNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gallery_id = 6;</code>
+       * <code>uint32 gallery_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearGalleryId() {
@@ -853,8 +853,8 @@ public final class GalleryBalloonScoreNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\037GalleryBalloonScoreNotify.proto\"\247\001\n\031Ga" +
       "lleryBalloonScoreNotify\022B\n\ruid_score_map" +
-      "\030\r \003(\0132+.GalleryBalloonScoreNotify.UidSc" +
-      "oreMapEntry\022\022\n\ngallery_id\030\006 \001(\r\0322\n\020UidSc" +
+      "\030\n \003(\0132+.GalleryBalloonScoreNotify.UidSc" +
+      "oreMapEntry\022\022\n\ngallery_id\030\001 \001(\r\0322\n\020UidSc" +
       "oreMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:" +
       "\0028\001B\033\n\031emu.grasscutter.net.protob\006proto3"
     };

@@ -25,15 +25,15 @@ public final class DungeonRestartInviteReplyNotifyOuterClass {
     boolean getIsAccept();
 
     /**
-     * <code>uint32 player_uid = 6;</code>
+     * <code>uint32 player_uid = 11;</code>
      * @return The playerUid.
      */
     int getPlayerUid();
   }
   /**
    * <pre>
-   * Name: BCHCJGKHLAH
-   * CmdId: 936
+   * CmdId: 917
+   * Obf: OLKIHDOOGHG
    * </pre>
    *
    * Protobuf type {@code DungeonRestartInviteReplyNotify}
@@ -85,7 +85,7 @@ public final class DungeonRestartInviteReplyNotifyOuterClass {
               isAccept_ = input.readBool();
               break;
             }
-            case 48: {
+            case 88: {
 
               playerUid_ = input.readUInt32();
               break;
@@ -133,10 +133,10 @@ public final class DungeonRestartInviteReplyNotifyOuterClass {
       return isAccept_;
     }
 
-    public static final int PLAYER_UID_FIELD_NUMBER = 6;
+    public static final int PLAYER_UID_FIELD_NUMBER = 11;
     private int playerUid_;
     /**
-     * <code>uint32 player_uid = 6;</code>
+     * <code>uint32 player_uid = 11;</code>
      * @return The playerUid.
      */
     @java.lang.Override
@@ -162,7 +162,7 @@ public final class DungeonRestartInviteReplyNotifyOuterClass {
         output.writeBool(2, isAccept_);
       }
       if (playerUid_ != 0) {
-        output.writeUInt32(6, playerUid_);
+        output.writeUInt32(11, playerUid_);
       }
       unknownFields.writeTo(output);
     }
@@ -179,7 +179,7 @@ public final class DungeonRestartInviteReplyNotifyOuterClass {
       }
       if (playerUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, playerUid_);
+          .computeUInt32Size(11, playerUid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,8 +313,8 @@ public final class DungeonRestartInviteReplyNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: BCHCJGKHLAH
-     * CmdId: 936
+     * CmdId: 917
+     * Obf: OLKIHDOOGHG
      * </pre>
      *
      * Protobuf type {@code DungeonRestartInviteReplyNotify}
@@ -502,7 +502,7 @@ public final class DungeonRestartInviteReplyNotifyOuterClass {
 
       private int playerUid_ ;
       /**
-       * <code>uint32 player_uid = 6;</code>
+       * <code>uint32 player_uid = 11;</code>
        * @return The playerUid.
        */
       @java.lang.Override
@@ -510,7 +510,7 @@ public final class DungeonRestartInviteReplyNotifyOuterClass {
         return playerUid_;
       }
       /**
-       * <code>uint32 player_uid = 6;</code>
+       * <code>uint32 player_uid = 11;</code>
        * @param value The playerUid to set.
        * @return This builder for chaining.
        */
@@ -521,7 +521,7 @@ public final class DungeonRestartInviteReplyNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 player_uid = 6;</code>
+       * <code>uint32 player_uid = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayerUid() {
@@ -599,7 +599,7 @@ public final class DungeonRestartInviteReplyNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n%DungeonRestartInviteReplyNotify.proto\"" +
       "H\n\037DungeonRestartInviteReplyNotify\022\021\n\tis" +
-      "_accept\030\002 \001(\010\022\022\n\nplayer_uid\030\006 \001(\rB\033\n\031emu" +
+      "_accept\030\002 \001(\010\022\022\n\nplayer_uid\030\013 \001(\rB\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

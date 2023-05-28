@@ -19,21 +19,21 @@ public final class TakeCoopRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 10;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>uint32 reward_config_id = 2;</code>
+     * <code>uint32 reward_config_id = 1;</code>
      * @return The rewardConfigId.
      */
     int getRewardConfigId();
+
+    /**
+     * <code>int32 retcode = 11;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
    * <pre>
-   * Name: EBNNHBHGOLP
-   * CmdId: 1988
+   * CmdId: 1993
+   * Obf: DPPJIJJPDEM
    * </pre>
    *
    * Protobuf type {@code TakeCoopRewardRsp}
@@ -80,12 +80,12 @@ public final class TakeCoopRewardRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 8: {
 
               rewardConfigId_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 88: {
 
               retcode_ = input.readInt32();
               break;
@@ -122,26 +122,26 @@ public final class TakeCoopRewardRspOuterClass {
               emu.grasscutter.net.proto.TakeCoopRewardRspOuterClass.TakeCoopRewardRsp.class, emu.grasscutter.net.proto.TakeCoopRewardRspOuterClass.TakeCoopRewardRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 10;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 10;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int REWARD_CONFIG_ID_FIELD_NUMBER = 2;
+    public static final int REWARD_CONFIG_ID_FIELD_NUMBER = 1;
     private int rewardConfigId_;
     /**
-     * <code>uint32 reward_config_id = 2;</code>
+     * <code>uint32 reward_config_id = 1;</code>
      * @return The rewardConfigId.
      */
     @java.lang.Override
     public int getRewardConfigId() {
       return rewardConfigId_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 11;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 11;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,10 +159,10 @@ public final class TakeCoopRewardRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (rewardConfigId_ != 0) {
-        output.writeUInt32(2, rewardConfigId_);
+        output.writeUInt32(1, rewardConfigId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(10, retcode_);
+        output.writeInt32(11, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +175,11 @@ public final class TakeCoopRewardRspOuterClass {
       size = 0;
       if (rewardConfigId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, rewardConfigId_);
+          .computeUInt32Size(1, rewardConfigId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(10, retcode_);
+          .computeInt32Size(11, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +196,10 @@ public final class TakeCoopRewardRspOuterClass {
       }
       emu.grasscutter.net.proto.TakeCoopRewardRspOuterClass.TakeCoopRewardRsp other = (emu.grasscutter.net.proto.TakeCoopRewardRspOuterClass.TakeCoopRewardRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getRewardConfigId()
           != other.getRewardConfigId()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +211,10 @@ public final class TakeCoopRewardRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + REWARD_CONFIG_ID_FIELD_NUMBER;
       hash = (53 * hash) + getRewardConfigId();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +312,8 @@ public final class TakeCoopRewardRspOuterClass {
     }
     /**
      * <pre>
-     * Name: EBNNHBHGOLP
-     * CmdId: 1988
+     * CmdId: 1993
+     * Obf: DPPJIJJPDEM
      * </pre>
      *
      * Protobuf type {@code TakeCoopRewardRsp}
@@ -353,9 +353,9 @@ public final class TakeCoopRewardRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         rewardConfigId_ = 0;
+
+        retcode_ = 0;
 
         return this;
       }
@@ -383,8 +383,8 @@ public final class TakeCoopRewardRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.TakeCoopRewardRspOuterClass.TakeCoopRewardRsp buildPartial() {
         emu.grasscutter.net.proto.TakeCoopRewardRspOuterClass.TakeCoopRewardRsp result = new emu.grasscutter.net.proto.TakeCoopRewardRspOuterClass.TakeCoopRewardRsp(this);
-        result.retcode_ = retcode_;
         result.rewardConfigId_ = rewardConfigId_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -433,11 +433,11 @@ public final class TakeCoopRewardRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.TakeCoopRewardRspOuterClass.TakeCoopRewardRsp other) {
         if (other == emu.grasscutter.net.proto.TakeCoopRewardRspOuterClass.TakeCoopRewardRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getRewardConfigId() != 0) {
           setRewardConfigId(other.getRewardConfigId());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,40 +468,9 @@ public final class TakeCoopRewardRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 10;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 10;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int rewardConfigId_ ;
       /**
-       * <code>uint32 reward_config_id = 2;</code>
+       * <code>uint32 reward_config_id = 1;</code>
        * @return The rewardConfigId.
        */
       @java.lang.Override
@@ -509,7 +478,7 @@ public final class TakeCoopRewardRspOuterClass {
         return rewardConfigId_;
       }
       /**
-       * <code>uint32 reward_config_id = 2;</code>
+       * <code>uint32 reward_config_id = 1;</code>
        * @param value The rewardConfigId to set.
        * @return This builder for chaining.
        */
@@ -520,12 +489,43 @@ public final class TakeCoopRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 reward_config_id = 2;</code>
+       * <code>uint32 reward_config_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearRewardConfigId() {
         
         rewardConfigId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 11;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 11;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -597,8 +597,8 @@ public final class TakeCoopRewardRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027TakeCoopRewardRsp.proto\">\n\021TakeCoopRew" +
-      "ardRsp\022\017\n\007retcode\030\n \001(\005\022\030\n\020reward_config" +
-      "_id\030\002 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
+      "ardRsp\022\030\n\020reward_config_id\030\001 \001(\r\022\017\n\007retc" +
+      "ode\030\013 \001(\005B\033\n\031emu.grasscutter.net.protob\006" +
       "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -610,7 +610,7 @@ public final class TakeCoopRewardRspOuterClass {
     internal_static_TakeCoopRewardRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TakeCoopRewardRsp_descriptor,
-        new java.lang.String[] { "Retcode", "RewardConfigId", });
+        new java.lang.String[] { "RewardConfigId", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

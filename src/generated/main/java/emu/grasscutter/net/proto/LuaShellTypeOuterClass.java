@@ -16,7 +16,7 @@ public final class LuaShellTypeOuterClass {
   }
   /**
    * <pre>
-   * Name: JHJOFAIGFMI
+   * Obf: OEHKPJCBOEA
    * </pre>
    *
    * Protobuf enum {@code LuaShellType}

@@ -19,21 +19,21 @@ public final class CoinCollectChooseSkillReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 choose_skill_no = 6;</code>
-     * @return The chooseSkillNo.
-     */
-    int getChooseSkillNo();
-
-    /**
-     * <code>uint32 level_id = 13;</code>
+     * <code>uint32 level_id = 9;</code>
      * @return The levelId.
      */
     int getLevelId();
+
+    /**
+     * <code>uint32 choose_skill_no = 13;</code>
+     * @return The chooseSkillNo.
+     */
+    int getChooseSkillNo();
   }
   /**
    * <pre>
-   * Name: ODGDGCGMJEN
-   * CmdId: 21522
+   * CmdId: 23268
+   * Obf: MDPGEPFKNAN
    * </pre>
    *
    * Protobuf type {@code CoinCollectChooseSkillReq}
@@ -80,14 +80,14 @@ public final class CoinCollectChooseSkillReqOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 72: {
 
-              chooseSkillNo_ = input.readUInt32();
+              levelId_ = input.readUInt32();
               break;
             }
             case 104: {
 
-              levelId_ = input.readUInt32();
+              chooseSkillNo_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,26 +122,26 @@ public final class CoinCollectChooseSkillReqOuterClass {
               emu.grasscutter.net.proto.CoinCollectChooseSkillReqOuterClass.CoinCollectChooseSkillReq.class, emu.grasscutter.net.proto.CoinCollectChooseSkillReqOuterClass.CoinCollectChooseSkillReq.Builder.class);
     }
 
-    public static final int CHOOSE_SKILL_NO_FIELD_NUMBER = 6;
-    private int chooseSkillNo_;
-    /**
-     * <code>uint32 choose_skill_no = 6;</code>
-     * @return The chooseSkillNo.
-     */
-    @java.lang.Override
-    public int getChooseSkillNo() {
-      return chooseSkillNo_;
-    }
-
-    public static final int LEVEL_ID_FIELD_NUMBER = 13;
+    public static final int LEVEL_ID_FIELD_NUMBER = 9;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 13;</code>
+     * <code>uint32 level_id = 9;</code>
      * @return The levelId.
      */
     @java.lang.Override
     public int getLevelId() {
       return levelId_;
+    }
+
+    public static final int CHOOSE_SKILL_NO_FIELD_NUMBER = 13;
+    private int chooseSkillNo_;
+    /**
+     * <code>uint32 choose_skill_no = 13;</code>
+     * @return The chooseSkillNo.
+     */
+    @java.lang.Override
+    public int getChooseSkillNo() {
+      return chooseSkillNo_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -158,11 +158,11 @@ public final class CoinCollectChooseSkillReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (chooseSkillNo_ != 0) {
-        output.writeUInt32(6, chooseSkillNo_);
-      }
       if (levelId_ != 0) {
-        output.writeUInt32(13, levelId_);
+        output.writeUInt32(9, levelId_);
+      }
+      if (chooseSkillNo_ != 0) {
+        output.writeUInt32(13, chooseSkillNo_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class CoinCollectChooseSkillReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (chooseSkillNo_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, chooseSkillNo_);
-      }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, levelId_);
+          .computeUInt32Size(9, levelId_);
+      }
+      if (chooseSkillNo_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, chooseSkillNo_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +196,10 @@ public final class CoinCollectChooseSkillReqOuterClass {
       }
       emu.grasscutter.net.proto.CoinCollectChooseSkillReqOuterClass.CoinCollectChooseSkillReq other = (emu.grasscutter.net.proto.CoinCollectChooseSkillReqOuterClass.CoinCollectChooseSkillReq) obj;
 
-      if (getChooseSkillNo()
-          != other.getChooseSkillNo()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
+      if (getChooseSkillNo()
+          != other.getChooseSkillNo()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +211,10 @@ public final class CoinCollectChooseSkillReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CHOOSE_SKILL_NO_FIELD_NUMBER;
-      hash = (53 * hash) + getChooseSkillNo();
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + CHOOSE_SKILL_NO_FIELD_NUMBER;
+      hash = (53 * hash) + getChooseSkillNo();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +312,8 @@ public final class CoinCollectChooseSkillReqOuterClass {
     }
     /**
      * <pre>
-     * Name: ODGDGCGMJEN
-     * CmdId: 21522
+     * CmdId: 23268
+     * Obf: MDPGEPFKNAN
      * </pre>
      *
      * Protobuf type {@code CoinCollectChooseSkillReq}
@@ -353,9 +353,9 @@ public final class CoinCollectChooseSkillReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        chooseSkillNo_ = 0;
-
         levelId_ = 0;
+
+        chooseSkillNo_ = 0;
 
         return this;
       }
@@ -383,8 +383,8 @@ public final class CoinCollectChooseSkillReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.CoinCollectChooseSkillReqOuterClass.CoinCollectChooseSkillReq buildPartial() {
         emu.grasscutter.net.proto.CoinCollectChooseSkillReqOuterClass.CoinCollectChooseSkillReq result = new emu.grasscutter.net.proto.CoinCollectChooseSkillReqOuterClass.CoinCollectChooseSkillReq(this);
-        result.chooseSkillNo_ = chooseSkillNo_;
         result.levelId_ = levelId_;
+        result.chooseSkillNo_ = chooseSkillNo_;
         onBuilt();
         return result;
       }
@@ -433,11 +433,11 @@ public final class CoinCollectChooseSkillReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CoinCollectChooseSkillReqOuterClass.CoinCollectChooseSkillReq other) {
         if (other == emu.grasscutter.net.proto.CoinCollectChooseSkillReqOuterClass.CoinCollectChooseSkillReq.getDefaultInstance()) return this;
-        if (other.getChooseSkillNo() != 0) {
-          setChooseSkillNo(other.getChooseSkillNo());
-        }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
+        }
+        if (other.getChooseSkillNo() != 0) {
+          setChooseSkillNo(other.getChooseSkillNo());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,40 +468,9 @@ public final class CoinCollectChooseSkillReqOuterClass {
         return this;
       }
 
-      private int chooseSkillNo_ ;
-      /**
-       * <code>uint32 choose_skill_no = 6;</code>
-       * @return The chooseSkillNo.
-       */
-      @java.lang.Override
-      public int getChooseSkillNo() {
-        return chooseSkillNo_;
-      }
-      /**
-       * <code>uint32 choose_skill_no = 6;</code>
-       * @param value The chooseSkillNo to set.
-       * @return This builder for chaining.
-       */
-      public Builder setChooseSkillNo(int value) {
-        
-        chooseSkillNo_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 choose_skill_no = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearChooseSkillNo() {
-        
-        chooseSkillNo_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 13;</code>
+       * <code>uint32 level_id = 9;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -509,7 +478,7 @@ public final class CoinCollectChooseSkillReqOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 13;</code>
+       * <code>uint32 level_id = 9;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -520,12 +489,43 @@ public final class CoinCollectChooseSkillReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 13;</code>
+       * <code>uint32 level_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
         
         levelId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int chooseSkillNo_ ;
+      /**
+       * <code>uint32 choose_skill_no = 13;</code>
+       * @return The chooseSkillNo.
+       */
+      @java.lang.Override
+      public int getChooseSkillNo() {
+        return chooseSkillNo_;
+      }
+      /**
+       * <code>uint32 choose_skill_no = 13;</code>
+       * @param value The chooseSkillNo to set.
+       * @return This builder for chaining.
+       */
+      public Builder setChooseSkillNo(int value) {
+        
+        chooseSkillNo_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 choose_skill_no = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearChooseSkillNo() {
+        
+        chooseSkillNo_ = 0;
         onChanged();
         return this;
       }
@@ -597,8 +597,8 @@ public final class CoinCollectChooseSkillReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037CoinCollectChooseSkillReq.proto\"F\n\031Coi" +
-      "nCollectChooseSkillReq\022\027\n\017choose_skill_n" +
-      "o\030\006 \001(\r\022\020\n\010level_id\030\r \001(\rB\033\n\031emu.grasscu" +
+      "nCollectChooseSkillReq\022\020\n\010level_id\030\t \001(\r" +
+      "\022\027\n\017choose_skill_no\030\r \001(\rB\033\n\031emu.grasscu" +
       "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -610,7 +610,7 @@ public final class CoinCollectChooseSkillReqOuterClass {
     internal_static_CoinCollectChooseSkillReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CoinCollectChooseSkillReq_descriptor,
-        new java.lang.String[] { "ChooseSkillNo", "LevelId", });
+        new java.lang.String[] { "LevelId", "ChooseSkillNo", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -20,8 +20,8 @@ public final class RestartEffigyChallengeReqOuterClass {
   }
   /**
    * <pre>
-   * Name: BFCLAIGBOLF
-   * CmdId: 2188
+   * CmdId: 2199
+   * Obf: PENIPBMIHCP
    * </pre>
    *
    * Protobuf type {@code RestartEffigyChallengeReq}
@@ -246,8 +246,8 @@ public final class RestartEffigyChallengeReqOuterClass {
     }
     /**
      * <pre>
-     * Name: BFCLAIGBOLF
-     * CmdId: 2188
+     * CmdId: 2199
+     * Obf: PENIPBMIHCP
      * </pre>
      *
      * Protobuf type {@code RestartEffigyChallengeReq}

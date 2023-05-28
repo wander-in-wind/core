@@ -25,25 +25,25 @@ public final class RacingGallerySettleInfoOuterClass {
     int getUseTime();
 
     /**
-     * <code>uint32 winner_uid = 4;</code>
+     * <code>uint32 winner_uid = 10;</code>
      * @return The winnerUid.
      */
     int getWinnerUid();
 
     /**
-     * <code>.GalleryStopReason reason = 9;</code>
+     * <code>.HDDANIDHCMI reason = 11;</code>
      * @return The enum numeric value on the wire for reason.
      */
     int getReasonValue();
     /**
-     * <code>.GalleryStopReason reason = 9;</code>
+     * <code>.HDDANIDHCMI reason = 11;</code>
      * @return The reason.
      */
-    emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason getReason();
+    emu.grasscutter.net.proto.HDDANIDHCMIOuterClass.HDDANIDHCMI getReason();
   }
   /**
    * <pre>
-   * Name: IDGKEJIPDNB
+   * Obf: IBEPMEHMFIP
    * </pre>
    *
    * Protobuf type {@code RacingGallerySettleInfo}
@@ -91,12 +91,12 @@ public final class RacingGallerySettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 80: {
 
               winnerUid_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 88: {
               int rawValue = input.readEnum();
 
               reason_ = rawValue;
@@ -150,10 +150,10 @@ public final class RacingGallerySettleInfoOuterClass {
       return useTime_;
     }
 
-    public static final int WINNER_UID_FIELD_NUMBER = 4;
+    public static final int WINNER_UID_FIELD_NUMBER = 10;
     private int winnerUid_;
     /**
-     * <code>uint32 winner_uid = 4;</code>
+     * <code>uint32 winner_uid = 10;</code>
      * @return The winnerUid.
      */
     @java.lang.Override
@@ -161,23 +161,23 @@ public final class RacingGallerySettleInfoOuterClass {
       return winnerUid_;
     }
 
-    public static final int REASON_FIELD_NUMBER = 9;
+    public static final int REASON_FIELD_NUMBER = 11;
     private int reason_;
     /**
-     * <code>.GalleryStopReason reason = 9;</code>
+     * <code>.HDDANIDHCMI reason = 11;</code>
      * @return The enum numeric value on the wire for reason.
      */
     @java.lang.Override public int getReasonValue() {
       return reason_;
     }
     /**
-     * <code>.GalleryStopReason reason = 9;</code>
+     * <code>.HDDANIDHCMI reason = 11;</code>
      * @return The reason.
      */
-    @java.lang.Override public emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason getReason() {
+    @java.lang.Override public emu.grasscutter.net.proto.HDDANIDHCMIOuterClass.HDDANIDHCMI getReason() {
       @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason result = emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.valueOf(reason_);
-      return result == null ? emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.UNRECOGNIZED : result;
+      emu.grasscutter.net.proto.HDDANIDHCMIOuterClass.HDDANIDHCMI result = emu.grasscutter.net.proto.HDDANIDHCMIOuterClass.HDDANIDHCMI.valueOf(reason_);
+      return result == null ? emu.grasscutter.net.proto.HDDANIDHCMIOuterClass.HDDANIDHCMI.UNRECOGNIZED : result;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -195,10 +195,10 @@ public final class RacingGallerySettleInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (winnerUid_ != 0) {
-        output.writeUInt32(4, winnerUid_);
+        output.writeUInt32(10, winnerUid_);
       }
-      if (reason_ != emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.GALLERY_STOP_NONE.getNumber()) {
-        output.writeEnum(9, reason_);
+      if (reason_ != emu.grasscutter.net.proto.HDDANIDHCMIOuterClass.HDDANIDHCMI.HDDANIDHCMI_GalleryStopNone.getNumber()) {
+        output.writeEnum(11, reason_);
       }
       if (useTime_ != 0) {
         output.writeUInt32(14, useTime_);
@@ -214,11 +214,11 @@ public final class RacingGallerySettleInfoOuterClass {
       size = 0;
       if (winnerUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, winnerUid_);
+          .computeUInt32Size(10, winnerUid_);
       }
-      if (reason_ != emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.GALLERY_STOP_NONE.getNumber()) {
+      if (reason_ != emu.grasscutter.net.proto.HDDANIDHCMIOuterClass.HDDANIDHCMI.HDDANIDHCMI_GalleryStopNone.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(9, reason_);
+          .computeEnumSize(11, reason_);
       }
       if (useTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -358,7 +358,7 @@ public final class RacingGallerySettleInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: IDGKEJIPDNB
+     * Obf: IBEPMEHMFIP
      * </pre>
      *
      * Protobuf type {@code RacingGallerySettleInfo}
@@ -552,7 +552,7 @@ public final class RacingGallerySettleInfoOuterClass {
 
       private int winnerUid_ ;
       /**
-       * <code>uint32 winner_uid = 4;</code>
+       * <code>uint32 winner_uid = 10;</code>
        * @return The winnerUid.
        */
       @java.lang.Override
@@ -560,7 +560,7 @@ public final class RacingGallerySettleInfoOuterClass {
         return winnerUid_;
       }
       /**
-       * <code>uint32 winner_uid = 4;</code>
+       * <code>uint32 winner_uid = 10;</code>
        * @param value The winnerUid to set.
        * @return This builder for chaining.
        */
@@ -571,7 +571,7 @@ public final class RacingGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 winner_uid = 4;</code>
+       * <code>uint32 winner_uid = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearWinnerUid() {
@@ -583,14 +583,14 @@ public final class RacingGallerySettleInfoOuterClass {
 
       private int reason_ = 0;
       /**
-       * <code>.GalleryStopReason reason = 9;</code>
+       * <code>.HDDANIDHCMI reason = 11;</code>
        * @return The enum numeric value on the wire for reason.
        */
       @java.lang.Override public int getReasonValue() {
         return reason_;
       }
       /**
-       * <code>.GalleryStopReason reason = 9;</code>
+       * <code>.HDDANIDHCMI reason = 11;</code>
        * @param value The enum numeric value on the wire for reason to set.
        * @return This builder for chaining.
        */
@@ -601,21 +601,21 @@ public final class RacingGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.GalleryStopReason reason = 9;</code>
+       * <code>.HDDANIDHCMI reason = 11;</code>
        * @return The reason.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason getReason() {
+      public emu.grasscutter.net.proto.HDDANIDHCMIOuterClass.HDDANIDHCMI getReason() {
         @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason result = emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.valueOf(reason_);
-        return result == null ? emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.UNRECOGNIZED : result;
+        emu.grasscutter.net.proto.HDDANIDHCMIOuterClass.HDDANIDHCMI result = emu.grasscutter.net.proto.HDDANIDHCMIOuterClass.HDDANIDHCMI.valueOf(reason_);
+        return result == null ? emu.grasscutter.net.proto.HDDANIDHCMIOuterClass.HDDANIDHCMI.UNRECOGNIZED : result;
       }
       /**
-       * <code>.GalleryStopReason reason = 9;</code>
+       * <code>.HDDANIDHCMI reason = 11;</code>
        * @param value The reason to set.
        * @return This builder for chaining.
        */
-      public Builder setReason(emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason value) {
+      public Builder setReason(emu.grasscutter.net.proto.HDDANIDHCMIOuterClass.HDDANIDHCMI value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -625,7 +625,7 @@ public final class RacingGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.GalleryStopReason reason = 9;</code>
+       * <code>.HDDANIDHCMI reason = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearReason() {
@@ -701,16 +701,16 @@ public final class RacingGallerySettleInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\035RacingGallerySettleInfo.proto\032\027Gallery" +
-      "StopReason.proto\"c\n\027RacingGallerySettleI" +
-      "nfo\022\020\n\010use_time\030\016 \001(\r\022\022\n\nwinner_uid\030\004 \001(" +
-      "\r\022\"\n\006reason\030\t \001(\0162\022.GalleryStopReasonB\033\n" +
-      "\031emu.grasscutter.net.protob\006proto3"
+      "\n\035RacingGallerySettleInfo.proto\032\021HDDANID" +
+      "HCMI.proto\"]\n\027RacingGallerySettleInfo\022\020\n" +
+      "\010use_time\030\016 \001(\r\022\022\n\nwinner_uid\030\n \001(\r\022\034\n\006r" +
+      "eason\030\013 \001(\0162\014.HDDANIDHCMIB\033\n\031emu.grasscu" +
+      "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.GalleryStopReasonOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.HDDANIDHCMIOuterClass.getDescriptor(),
         });
     internal_static_RacingGallerySettleInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -718,7 +718,7 @@ public final class RacingGallerySettleInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RacingGallerySettleInfo_descriptor,
         new java.lang.String[] { "UseTime", "WinnerUid", "Reason", });
-    emu.grasscutter.net.proto.GalleryStopReasonOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.HDDANIDHCMIOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

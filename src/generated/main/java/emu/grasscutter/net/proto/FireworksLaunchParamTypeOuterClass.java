@@ -16,7 +16,7 @@ public final class FireworksLaunchParamTypeOuterClass {
   }
   /**
    * <pre>
-   * Name: NCJKDBBODAO
+   * Obf: IGGAOLBKDMP
    * </pre>
    *
    * Protobuf enum {@code FireworksLaunchParamType}

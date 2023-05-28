@@ -19,48 +19,28 @@ public final class GCGMsgDiceRerollOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *PENJFODAGGI GGGHONFOAKP snooswap
-     * </pre>
-     *
      * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
      * @return A list containing the diceSideList.
      */
     java.util.List<emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType> getDiceSideListList();
     /**
-     * <pre>
-     *PENJFODAGGI GGGHONFOAKP snooswap
-     * </pre>
-     *
      * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
      * @return The count of diceSideList.
      */
     int getDiceSideListCount();
     /**
-     * <pre>
-     *PENJFODAGGI GGGHONFOAKP snooswap
-     * </pre>
-     *
      * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
      * @param index The index of the element to return.
      * @return The diceSideList at the given index.
      */
     emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getDiceSideList(int index);
     /**
-     * <pre>
-     *PENJFODAGGI GGGHONFOAKP snooswap
-     * </pre>
-     *
      * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
      * @return A list containing the enum numeric values on the wire for diceSideList.
      */
     java.util.List<java.lang.Integer>
     getDiceSideListValueList();
     /**
-     * <pre>
-     *PENJFODAGGI GGGHONFOAKP snooswap
-     * </pre>
-     *
      * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
      * @param index The index of the value to return.
      * @return The enum numeric value on the wire of diceSideList at the given index.
@@ -68,31 +48,31 @@ public final class GCGMsgDiceRerollOuterClass {
     int getDiceSideListValue(int index);
 
     /**
-     * <code>repeated uint32 select_dice_index_list = 2;</code>
+     * <code>repeated uint32 select_dice_index_list = 8;</code>
      * @return A list containing the selectDiceIndexList.
      */
     java.util.List<java.lang.Integer> getSelectDiceIndexListList();
     /**
-     * <code>repeated uint32 select_dice_index_list = 2;</code>
+     * <code>repeated uint32 select_dice_index_list = 8;</code>
      * @return The count of selectDiceIndexList.
      */
     int getSelectDiceIndexListCount();
     /**
-     * <code>repeated uint32 select_dice_index_list = 2;</code>
+     * <code>repeated uint32 select_dice_index_list = 8;</code>
      * @param index The index of the element to return.
      * @return The selectDiceIndexList at the given index.
      */
     int getSelectDiceIndexList(int index);
 
     /**
-     * <code>uint32 controller_id = 13;</code>
+     * <code>uint32 controller_id = 15;</code>
      * @return The controllerId.
      */
     int getControllerId();
   }
   /**
    * <pre>
-   * Name: EMAGMDBBEJB
+   * Obf: DBHOHKMKEPA
    * </pre>
    *
    * Protobuf type {@code GCGMsgDiceReroll}
@@ -165,7 +145,7 @@ public final class GCGMsgDiceRerollOuterClass {
               input.popLimit(oldLimit);
               break;
             }
-            case 16: {
+            case 64: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 selectDiceIndexList_ = newIntList();
                 mutable_bitField0_ |= 0x00000002;
@@ -173,7 +153,7 @@ public final class GCGMsgDiceRerollOuterClass {
               selectDiceIndexList_.addInt(input.readUInt32());
               break;
             }
-            case 18: {
+            case 66: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
@@ -186,7 +166,7 @@ public final class GCGMsgDiceRerollOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 104: {
+            case 120: {
 
               controllerId_ = input.readUInt32();
               break;
@@ -242,10 +222,6 @@ public final class GCGMsgDiceRerollOuterClass {
               }
             };
     /**
-     * <pre>
-     *PENJFODAGGI GGGHONFOAKP snooswap
-     * </pre>
-     *
      * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
      * @return A list containing the diceSideList.
      */
@@ -255,10 +231,6 @@ public final class GCGMsgDiceRerollOuterClass {
           java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>(diceSideList_, diceSideList_converter_);
     }
     /**
-     * <pre>
-     *PENJFODAGGI GGGHONFOAKP snooswap
-     * </pre>
-     *
      * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
      * @return The count of diceSideList.
      */
@@ -267,10 +239,6 @@ public final class GCGMsgDiceRerollOuterClass {
       return diceSideList_.size();
     }
     /**
-     * <pre>
-     *PENJFODAGGI GGGHONFOAKP snooswap
-     * </pre>
-     *
      * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
      * @param index The index of the element to return.
      * @return The diceSideList at the given index.
@@ -280,10 +248,6 @@ public final class GCGMsgDiceRerollOuterClass {
       return diceSideList_converter_.convert(diceSideList_.get(index));
     }
     /**
-     * <pre>
-     *PENJFODAGGI GGGHONFOAKP snooswap
-     * </pre>
-     *
      * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
      * @return A list containing the enum numeric values on the wire for diceSideList.
      */
@@ -293,10 +257,6 @@ public final class GCGMsgDiceRerollOuterClass {
       return diceSideList_;
     }
     /**
-     * <pre>
-     *PENJFODAGGI GGGHONFOAKP snooswap
-     * </pre>
-     *
      * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
      * @param index The index of the value to return.
      * @return The enum numeric value on the wire of diceSideList at the given index.
@@ -307,10 +267,10 @@ public final class GCGMsgDiceRerollOuterClass {
     }
     private int diceSideListMemoizedSerializedSize;
 
-    public static final int SELECT_DICE_INDEX_LIST_FIELD_NUMBER = 2;
+    public static final int SELECT_DICE_INDEX_LIST_FIELD_NUMBER = 8;
     private com.google.protobuf.Internal.IntList selectDiceIndexList_;
     /**
-     * <code>repeated uint32 select_dice_index_list = 2;</code>
+     * <code>repeated uint32 select_dice_index_list = 8;</code>
      * @return A list containing the selectDiceIndexList.
      */
     @java.lang.Override
@@ -319,14 +279,14 @@ public final class GCGMsgDiceRerollOuterClass {
       return selectDiceIndexList_;
     }
     /**
-     * <code>repeated uint32 select_dice_index_list = 2;</code>
+     * <code>repeated uint32 select_dice_index_list = 8;</code>
      * @return The count of selectDiceIndexList.
      */
     public int getSelectDiceIndexListCount() {
       return selectDiceIndexList_.size();
     }
     /**
-     * <code>repeated uint32 select_dice_index_list = 2;</code>
+     * <code>repeated uint32 select_dice_index_list = 8;</code>
      * @param index The index of the element to return.
      * @return The selectDiceIndexList at the given index.
      */
@@ -335,10 +295,10 @@ public final class GCGMsgDiceRerollOuterClass {
     }
     private int selectDiceIndexListMemoizedSerializedSize = -1;
 
-    public static final int CONTROLLER_ID_FIELD_NUMBER = 13;
+    public static final int CONTROLLER_ID_FIELD_NUMBER = 15;
     private int controllerId_;
     /**
-     * <code>uint32 controller_id = 13;</code>
+     * <code>uint32 controller_id = 15;</code>
      * @return The controllerId.
      */
     @java.lang.Override
@@ -369,14 +329,14 @@ public final class GCGMsgDiceRerollOuterClass {
         output.writeEnumNoTag(diceSideList_.get(i));
       }
       if (getSelectDiceIndexListList().size() > 0) {
-        output.writeUInt32NoTag(18);
+        output.writeUInt32NoTag(66);
         output.writeUInt32NoTag(selectDiceIndexListMemoizedSerializedSize);
       }
       for (int i = 0; i < selectDiceIndexList_.size(); i++) {
         output.writeUInt32NoTag(selectDiceIndexList_.getInt(i));
       }
       if (controllerId_ != 0) {
-        output.writeUInt32(13, controllerId_);
+        output.writeUInt32(15, controllerId_);
       }
       unknownFields.writeTo(output);
     }
@@ -415,7 +375,7 @@ public final class GCGMsgDiceRerollOuterClass {
       }
       if (controllerId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, controllerId_);
+          .computeUInt32Size(15, controllerId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -555,7 +515,7 @@ public final class GCGMsgDiceRerollOuterClass {
     }
     /**
      * <pre>
-     * Name: EMAGMDBBEJB
+     * Obf: DBHOHKMKEPA
      * </pre>
      *
      * Protobuf type {@code GCGMsgDiceReroll}
@@ -749,10 +709,6 @@ public final class GCGMsgDiceRerollOuterClass {
         }
       }
       /**
-       * <pre>
-       *PENJFODAGGI GGGHONFOAKP snooswap
-       * </pre>
-       *
        * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
        * @return A list containing the diceSideList.
        */
@@ -761,10 +717,6 @@ public final class GCGMsgDiceRerollOuterClass {
             java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>(diceSideList_, diceSideList_converter_);
       }
       /**
-       * <pre>
-       *PENJFODAGGI GGGHONFOAKP snooswap
-       * </pre>
-       *
        * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
        * @return The count of diceSideList.
        */
@@ -772,10 +724,6 @@ public final class GCGMsgDiceRerollOuterClass {
         return diceSideList_.size();
       }
       /**
-       * <pre>
-       *PENJFODAGGI GGGHONFOAKP snooswap
-       * </pre>
-       *
        * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
        * @param index The index of the element to return.
        * @return The diceSideList at the given index.
@@ -784,10 +732,6 @@ public final class GCGMsgDiceRerollOuterClass {
         return diceSideList_converter_.convert(diceSideList_.get(index));
       }
       /**
-       * <pre>
-       *PENJFODAGGI GGGHONFOAKP snooswap
-       * </pre>
-       *
        * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
        * @param index The index to set the value at.
        * @param value The diceSideList to set.
@@ -804,10 +748,6 @@ public final class GCGMsgDiceRerollOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *PENJFODAGGI GGGHONFOAKP snooswap
-       * </pre>
-       *
        * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
        * @param value The diceSideList to add.
        * @return This builder for chaining.
@@ -822,10 +762,6 @@ public final class GCGMsgDiceRerollOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *PENJFODAGGI GGGHONFOAKP snooswap
-       * </pre>
-       *
        * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
        * @param values The diceSideList to add.
        * @return This builder for chaining.
@@ -840,10 +776,6 @@ public final class GCGMsgDiceRerollOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *PENJFODAGGI GGGHONFOAKP snooswap
-       * </pre>
-       *
        * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
        * @return This builder for chaining.
        */
@@ -854,10 +786,6 @@ public final class GCGMsgDiceRerollOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *PENJFODAGGI GGGHONFOAKP snooswap
-       * </pre>
-       *
        * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
        * @return A list containing the enum numeric values on the wire for diceSideList.
        */
@@ -866,10 +794,6 @@ public final class GCGMsgDiceRerollOuterClass {
         return java.util.Collections.unmodifiableList(diceSideList_);
       }
       /**
-       * <pre>
-       *PENJFODAGGI GGGHONFOAKP snooswap
-       * </pre>
-       *
        * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
        * @param index The index of the value to return.
        * @return The enum numeric value on the wire of diceSideList at the given index.
@@ -878,10 +802,6 @@ public final class GCGMsgDiceRerollOuterClass {
         return diceSideList_.get(index);
       }
       /**
-       * <pre>
-       *PENJFODAGGI GGGHONFOAKP snooswap
-       * </pre>
-       *
        * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
        * @param index The index of the value to return.
        * @return The enum numeric value on the wire of diceSideList at the given index.
@@ -895,10 +815,6 @@ public final class GCGMsgDiceRerollOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *PENJFODAGGI GGGHONFOAKP snooswap
-       * </pre>
-       *
        * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
        * @param value The enum numeric value on the wire for diceSideList to add.
        * @return This builder for chaining.
@@ -910,10 +826,6 @@ public final class GCGMsgDiceRerollOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *PENJFODAGGI GGGHONFOAKP snooswap
-       * </pre>
-       *
        * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
        * @param values The enum numeric values on the wire for diceSideList to add.
        * @return This builder for chaining.
@@ -936,7 +848,7 @@ public final class GCGMsgDiceRerollOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 select_dice_index_list = 2;</code>
+       * <code>repeated uint32 select_dice_index_list = 8;</code>
        * @return A list containing the selectDiceIndexList.
        */
       public java.util.List<java.lang.Integer>
@@ -945,14 +857,14 @@ public final class GCGMsgDiceRerollOuterClass {
                  java.util.Collections.unmodifiableList(selectDiceIndexList_) : selectDiceIndexList_;
       }
       /**
-       * <code>repeated uint32 select_dice_index_list = 2;</code>
+       * <code>repeated uint32 select_dice_index_list = 8;</code>
        * @return The count of selectDiceIndexList.
        */
       public int getSelectDiceIndexListCount() {
         return selectDiceIndexList_.size();
       }
       /**
-       * <code>repeated uint32 select_dice_index_list = 2;</code>
+       * <code>repeated uint32 select_dice_index_list = 8;</code>
        * @param index The index of the element to return.
        * @return The selectDiceIndexList at the given index.
        */
@@ -960,7 +872,7 @@ public final class GCGMsgDiceRerollOuterClass {
         return selectDiceIndexList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 select_dice_index_list = 2;</code>
+       * <code>repeated uint32 select_dice_index_list = 8;</code>
        * @param index The index to set the value at.
        * @param value The selectDiceIndexList to set.
        * @return This builder for chaining.
@@ -973,7 +885,7 @@ public final class GCGMsgDiceRerollOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 select_dice_index_list = 2;</code>
+       * <code>repeated uint32 select_dice_index_list = 8;</code>
        * @param value The selectDiceIndexList to add.
        * @return This builder for chaining.
        */
@@ -984,7 +896,7 @@ public final class GCGMsgDiceRerollOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 select_dice_index_list = 2;</code>
+       * <code>repeated uint32 select_dice_index_list = 8;</code>
        * @param values The selectDiceIndexList to add.
        * @return This builder for chaining.
        */
@@ -997,7 +909,7 @@ public final class GCGMsgDiceRerollOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 select_dice_index_list = 2;</code>
+       * <code>repeated uint32 select_dice_index_list = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearSelectDiceIndexList() {
@@ -1009,7 +921,7 @@ public final class GCGMsgDiceRerollOuterClass {
 
       private int controllerId_ ;
       /**
-       * <code>uint32 controller_id = 13;</code>
+       * <code>uint32 controller_id = 15;</code>
        * @return The controllerId.
        */
       @java.lang.Override
@@ -1017,7 +929,7 @@ public final class GCGMsgDiceRerollOuterClass {
         return controllerId_;
       }
       /**
-       * <code>uint32 controller_id = 13;</code>
+       * <code>uint32 controller_id = 15;</code>
        * @param value The controllerId to set.
        * @return This builder for chaining.
        */
@@ -1028,7 +940,7 @@ public final class GCGMsgDiceRerollOuterClass {
         return this;
       }
       /**
-       * <code>uint32 controller_id = 13;</code>
+       * <code>uint32 controller_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearControllerId() {
@@ -1107,7 +1019,7 @@ public final class GCGMsgDiceRerollOuterClass {
       "\n\026GCGMsgDiceReroll.proto\032\025GCGDiceSideTyp" +
       "e.proto\"s\n\020GCGMsgDiceReroll\022(\n\016dice_side" +
       "_list\030\001 \003(\0162\020.GCGDiceSideType\022\036\n\026select_" +
-      "dice_index_list\030\002 \003(\r\022\025\n\rcontroller_id\030\r" +
+      "dice_index_list\030\010 \003(\r\022\025\n\rcontroller_id\030\017" +
       " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
     };

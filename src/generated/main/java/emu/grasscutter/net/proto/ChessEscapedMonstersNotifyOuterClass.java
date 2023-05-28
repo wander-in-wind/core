@@ -19,15 +19,15 @@ public final class ChessEscapedMonstersNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 excaped_monsters = 10;</code>
+     * <code>uint32 excaped_monsters = 15;</code>
      * @return The excapedMonsters.
      */
     int getExcapedMonsters();
   }
   /**
    * <pre>
-   * Name: EMIMGLEEBHF
-   * CmdId: 5389
+   * CmdId: 5347
+   * Obf: DPLFFMINHNN
    * </pre>
    *
    * Protobuf type {@code ChessEscapedMonstersNotify}
@@ -74,7 +74,7 @@ public final class ChessEscapedMonstersNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 120: {
 
               excapedMonsters_ = input.readUInt32();
               break;
@@ -111,10 +111,10 @@ public final class ChessEscapedMonstersNotifyOuterClass {
               emu.grasscutter.net.proto.ChessEscapedMonstersNotifyOuterClass.ChessEscapedMonstersNotify.class, emu.grasscutter.net.proto.ChessEscapedMonstersNotifyOuterClass.ChessEscapedMonstersNotify.Builder.class);
     }
 
-    public static final int EXCAPED_MONSTERS_FIELD_NUMBER = 10;
+    public static final int EXCAPED_MONSTERS_FIELD_NUMBER = 15;
     private int excapedMonsters_;
     /**
-     * <code>uint32 excaped_monsters = 10;</code>
+     * <code>uint32 excaped_monsters = 15;</code>
      * @return The excapedMonsters.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class ChessEscapedMonstersNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (excapedMonsters_ != 0) {
-        output.writeUInt32(10, excapedMonsters_);
+        output.writeUInt32(15, excapedMonsters_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class ChessEscapedMonstersNotifyOuterClass {
       size = 0;
       if (excapedMonsters_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, excapedMonsters_);
+          .computeUInt32Size(15, excapedMonsters_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class ChessEscapedMonstersNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: EMIMGLEEBHF
-     * CmdId: 5389
+     * CmdId: 5347
+     * Obf: DPLFFMINHNN
      * </pre>
      *
      * Protobuf type {@code ChessEscapedMonstersNotify}
@@ -431,7 +431,7 @@ public final class ChessEscapedMonstersNotifyOuterClass {
 
       private int excapedMonsters_ ;
       /**
-       * <code>uint32 excaped_monsters = 10;</code>
+       * <code>uint32 excaped_monsters = 15;</code>
        * @return The excapedMonsters.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class ChessEscapedMonstersNotifyOuterClass {
         return excapedMonsters_;
       }
       /**
-       * <code>uint32 excaped_monsters = 10;</code>
+       * <code>uint32 excaped_monsters = 15;</code>
        * @param value The excapedMonsters to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class ChessEscapedMonstersNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 excaped_monsters = 10;</code>
+       * <code>uint32 excaped_monsters = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearExcapedMonsters() {
@@ -528,7 +528,7 @@ public final class ChessEscapedMonstersNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n ChessEscapedMonstersNotify.proto\"6\n\032Ch" +
       "essEscapedMonstersNotify\022\030\n\020excaped_mons" +
-      "ters\030\n \001(\rB\033\n\031emu.grasscutter.net.protob" +
+      "ters\030\017 \001(\rB\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,21 +19,21 @@ public final class SignatureAuditConfigNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 submit_limit = 1;</code>
-     * @return The submitLimit.
-     */
-    int getSubmitLimit();
-
-    /**
-     * <code>bool is_open = 11;</code>
+     * <code>bool is_open = 2;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
+
+    /**
+     * <code>uint32 submit_limit = 9;</code>
+     * @return The submitLimit.
+     */
+    int getSubmitLimit();
   }
   /**
    * <pre>
-   * Name: GHCJIDMBNGK
-   * CmdId: 4085
+   * CmdId: 4044
+   * Obf: AIEMKHBEBON
    * </pre>
    *
    * Protobuf type {@code SignatureAuditConfigNotify}
@@ -80,14 +80,14 @@ public final class SignatureAuditConfigNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              submitLimit_ = input.readUInt32();
-              break;
-            }
-            case 88: {
+            case 16: {
 
               isOpen_ = input.readBool();
+              break;
+            }
+            case 72: {
+
+              submitLimit_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,26 +122,26 @@ public final class SignatureAuditConfigNotifyOuterClass {
               emu.grasscutter.net.proto.SignatureAuditConfigNotifyOuterClass.SignatureAuditConfigNotify.class, emu.grasscutter.net.proto.SignatureAuditConfigNotifyOuterClass.SignatureAuditConfigNotify.Builder.class);
     }
 
-    public static final int SUBMIT_LIMIT_FIELD_NUMBER = 1;
-    private int submitLimit_;
-    /**
-     * <code>uint32 submit_limit = 1;</code>
-     * @return The submitLimit.
-     */
-    @java.lang.Override
-    public int getSubmitLimit() {
-      return submitLimit_;
-    }
-
-    public static final int IS_OPEN_FIELD_NUMBER = 11;
+    public static final int IS_OPEN_FIELD_NUMBER = 2;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 11;</code>
+     * <code>bool is_open = 2;</code>
      * @return The isOpen.
      */
     @java.lang.Override
     public boolean getIsOpen() {
       return isOpen_;
+    }
+
+    public static final int SUBMIT_LIMIT_FIELD_NUMBER = 9;
+    private int submitLimit_;
+    /**
+     * <code>uint32 submit_limit = 9;</code>
+     * @return The submitLimit.
+     */
+    @java.lang.Override
+    public int getSubmitLimit() {
+      return submitLimit_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -158,11 +158,11 @@ public final class SignatureAuditConfigNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (submitLimit_ != 0) {
-        output.writeUInt32(1, submitLimit_);
-      }
       if (isOpen_ != false) {
-        output.writeBool(11, isOpen_);
+        output.writeBool(2, isOpen_);
+      }
+      if (submitLimit_ != 0) {
+        output.writeUInt32(9, submitLimit_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class SignatureAuditConfigNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (submitLimit_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, submitLimit_);
-      }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isOpen_);
+          .computeBoolSize(2, isOpen_);
+      }
+      if (submitLimit_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, submitLimit_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +196,10 @@ public final class SignatureAuditConfigNotifyOuterClass {
       }
       emu.grasscutter.net.proto.SignatureAuditConfigNotifyOuterClass.SignatureAuditConfigNotify other = (emu.grasscutter.net.proto.SignatureAuditConfigNotifyOuterClass.SignatureAuditConfigNotify) obj;
 
-      if (getSubmitLimit()
-          != other.getSubmitLimit()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
+      if (getSubmitLimit()
+          != other.getSubmitLimit()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,11 +211,11 @@ public final class SignatureAuditConfigNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SUBMIT_LIMIT_FIELD_NUMBER;
-      hash = (53 * hash) + getSubmitLimit();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
+      hash = (37 * hash) + SUBMIT_LIMIT_FIELD_NUMBER;
+      hash = (53 * hash) + getSubmitLimit();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -313,8 +313,8 @@ public final class SignatureAuditConfigNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: GHCJIDMBNGK
-     * CmdId: 4085
+     * CmdId: 4044
+     * Obf: AIEMKHBEBON
      * </pre>
      *
      * Protobuf type {@code SignatureAuditConfigNotify}
@@ -354,9 +354,9 @@ public final class SignatureAuditConfigNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        submitLimit_ = 0;
-
         isOpen_ = false;
+
+        submitLimit_ = 0;
 
         return this;
       }
@@ -384,8 +384,8 @@ public final class SignatureAuditConfigNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SignatureAuditConfigNotifyOuterClass.SignatureAuditConfigNotify buildPartial() {
         emu.grasscutter.net.proto.SignatureAuditConfigNotifyOuterClass.SignatureAuditConfigNotify result = new emu.grasscutter.net.proto.SignatureAuditConfigNotifyOuterClass.SignatureAuditConfigNotify(this);
-        result.submitLimit_ = submitLimit_;
         result.isOpen_ = isOpen_;
+        result.submitLimit_ = submitLimit_;
         onBuilt();
         return result;
       }
@@ -434,11 +434,11 @@ public final class SignatureAuditConfigNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SignatureAuditConfigNotifyOuterClass.SignatureAuditConfigNotify other) {
         if (other == emu.grasscutter.net.proto.SignatureAuditConfigNotifyOuterClass.SignatureAuditConfigNotify.getDefaultInstance()) return this;
-        if (other.getSubmitLimit() != 0) {
-          setSubmitLimit(other.getSubmitLimit());
-        }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
+        }
+        if (other.getSubmitLimit() != 0) {
+          setSubmitLimit(other.getSubmitLimit());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -469,40 +469,9 @@ public final class SignatureAuditConfigNotifyOuterClass {
         return this;
       }
 
-      private int submitLimit_ ;
-      /**
-       * <code>uint32 submit_limit = 1;</code>
-       * @return The submitLimit.
-       */
-      @java.lang.Override
-      public int getSubmitLimit() {
-        return submitLimit_;
-      }
-      /**
-       * <code>uint32 submit_limit = 1;</code>
-       * @param value The submitLimit to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSubmitLimit(int value) {
-        
-        submitLimit_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 submit_limit = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSubmitLimit() {
-        
-        submitLimit_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 11;</code>
+       * <code>bool is_open = 2;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -510,7 +479,7 @@ public final class SignatureAuditConfigNotifyOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 11;</code>
+       * <code>bool is_open = 2;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -521,12 +490,43 @@ public final class SignatureAuditConfigNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 11;</code>
+       * <code>bool is_open = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
         
         isOpen_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int submitLimit_ ;
+      /**
+       * <code>uint32 submit_limit = 9;</code>
+       * @return The submitLimit.
+       */
+      @java.lang.Override
+      public int getSubmitLimit() {
+        return submitLimit_;
+      }
+      /**
+       * <code>uint32 submit_limit = 9;</code>
+       * @param value The submitLimit to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSubmitLimit(int value) {
+        
+        submitLimit_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 submit_limit = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSubmitLimit() {
+        
+        submitLimit_ = 0;
         onChanged();
         return this;
       }
@@ -598,8 +598,8 @@ public final class SignatureAuditConfigNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n SignatureAuditConfigNotify.proto\"C\n\032Si" +
-      "gnatureAuditConfigNotify\022\024\n\014submit_limit" +
-      "\030\001 \001(\r\022\017\n\007is_open\030\013 \001(\010B\033\n\031emu.grasscutt" +
+      "gnatureAuditConfigNotify\022\017\n\007is_open\030\002 \001(" +
+      "\010\022\024\n\014submit_limit\030\t \001(\rB\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -611,7 +611,7 @@ public final class SignatureAuditConfigNotifyOuterClass {
     internal_static_SignatureAuditConfigNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SignatureAuditConfigNotify_descriptor,
-        new java.lang.String[] { "SubmitLimit", "IsOpen", });
+        new java.lang.String[] { "IsOpen", "SubmitLimit", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

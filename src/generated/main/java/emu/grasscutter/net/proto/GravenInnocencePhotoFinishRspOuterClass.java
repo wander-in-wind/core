@@ -19,27 +19,27 @@ public final class GravenInnocencePhotoFinishRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 14;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>uint32 param = 3;</code>
+     * <code>uint32 param = 15;</code>
      * @return The param.
      */
     int getParam();
 
     /**
-     * <code>uint32 object_id = 12;</code>
+     * <code>uint32 object_id = 11;</code>
      * @return The objectId.
      */
     int getObjectId();
+
+    /**
+     * <code>int32 retcode = 7;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
    * <pre>
-   * Name: KEHDDOMEPEJ
-   * CmdId: 23629
+   * CmdId: 24245
+   * Obf: IPMNBOLLJOE
    * </pre>
    *
    * Protobuf type {@code GravenInnocencePhotoFinishRsp}
@@ -86,19 +86,19 @@ public final class GravenInnocencePhotoFinishRspOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 56: {
 
-              param_ = input.readUInt32();
+              retcode_ = input.readInt32();
               break;
             }
-            case 96: {
+            case 88: {
 
               objectId_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 120: {
 
-              retcode_ = input.readInt32();
+              param_ = input.readUInt32();
               break;
             }
             default: {
@@ -133,21 +133,10 @@ public final class GravenInnocencePhotoFinishRspOuterClass {
               emu.grasscutter.net.proto.GravenInnocencePhotoFinishRspOuterClass.GravenInnocencePhotoFinishRsp.class, emu.grasscutter.net.proto.GravenInnocencePhotoFinishRspOuterClass.GravenInnocencePhotoFinishRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 14;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 14;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int PARAM_FIELD_NUMBER = 3;
+    public static final int PARAM_FIELD_NUMBER = 15;
     private int param_;
     /**
-     * <code>uint32 param = 3;</code>
+     * <code>uint32 param = 15;</code>
      * @return The param.
      */
     @java.lang.Override
@@ -155,15 +144,26 @@ public final class GravenInnocencePhotoFinishRspOuterClass {
       return param_;
     }
 
-    public static final int OBJECT_ID_FIELD_NUMBER = 12;
+    public static final int OBJECT_ID_FIELD_NUMBER = 11;
     private int objectId_;
     /**
-     * <code>uint32 object_id = 12;</code>
+     * <code>uint32 object_id = 11;</code>
      * @return The objectId.
      */
     @java.lang.Override
     public int getObjectId() {
       return objectId_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 7;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 7;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -180,14 +180,14 @@ public final class GravenInnocencePhotoFinishRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (param_ != 0) {
-        output.writeUInt32(3, param_);
+      if (retcode_ != 0) {
+        output.writeInt32(7, retcode_);
       }
       if (objectId_ != 0) {
-        output.writeUInt32(12, objectId_);
+        output.writeUInt32(11, objectId_);
       }
-      if (retcode_ != 0) {
-        output.writeInt32(14, retcode_);
+      if (param_ != 0) {
+        output.writeUInt32(15, param_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +198,17 @@ public final class GravenInnocencePhotoFinishRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (param_ != 0) {
+      if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, param_);
+          .computeInt32Size(7, retcode_);
       }
       if (objectId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, objectId_);
+          .computeUInt32Size(11, objectId_);
       }
-      if (retcode_ != 0) {
+      if (param_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(14, retcode_);
+          .computeUInt32Size(15, param_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -225,12 +225,12 @@ public final class GravenInnocencePhotoFinishRspOuterClass {
       }
       emu.grasscutter.net.proto.GravenInnocencePhotoFinishRspOuterClass.GravenInnocencePhotoFinishRsp other = (emu.grasscutter.net.proto.GravenInnocencePhotoFinishRspOuterClass.GravenInnocencePhotoFinishRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getParam()
           != other.getParam()) return false;
       if (getObjectId()
           != other.getObjectId()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -242,12 +242,12 @@ public final class GravenInnocencePhotoFinishRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + PARAM_FIELD_NUMBER;
       hash = (53 * hash) + getParam();
       hash = (37 * hash) + OBJECT_ID_FIELD_NUMBER;
       hash = (53 * hash) + getObjectId();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -345,8 +345,8 @@ public final class GravenInnocencePhotoFinishRspOuterClass {
     }
     /**
      * <pre>
-     * Name: KEHDDOMEPEJ
-     * CmdId: 23629
+     * CmdId: 24245
+     * Obf: IPMNBOLLJOE
      * </pre>
      *
      * Protobuf type {@code GravenInnocencePhotoFinishRsp}
@@ -386,11 +386,11 @@ public final class GravenInnocencePhotoFinishRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         param_ = 0;
 
         objectId_ = 0;
+
+        retcode_ = 0;
 
         return this;
       }
@@ -418,9 +418,9 @@ public final class GravenInnocencePhotoFinishRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GravenInnocencePhotoFinishRspOuterClass.GravenInnocencePhotoFinishRsp buildPartial() {
         emu.grasscutter.net.proto.GravenInnocencePhotoFinishRspOuterClass.GravenInnocencePhotoFinishRsp result = new emu.grasscutter.net.proto.GravenInnocencePhotoFinishRspOuterClass.GravenInnocencePhotoFinishRsp(this);
-        result.retcode_ = retcode_;
         result.param_ = param_;
         result.objectId_ = objectId_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -469,14 +469,14 @@ public final class GravenInnocencePhotoFinishRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GravenInnocencePhotoFinishRspOuterClass.GravenInnocencePhotoFinishRsp other) {
         if (other == emu.grasscutter.net.proto.GravenInnocencePhotoFinishRspOuterClass.GravenInnocencePhotoFinishRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getParam() != 0) {
           setParam(other.getParam());
         }
         if (other.getObjectId() != 0) {
           setObjectId(other.getObjectId());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -507,40 +507,9 @@ public final class GravenInnocencePhotoFinishRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 14;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 14;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int param_ ;
       /**
-       * <code>uint32 param = 3;</code>
+       * <code>uint32 param = 15;</code>
        * @return The param.
        */
       @java.lang.Override
@@ -548,7 +517,7 @@ public final class GravenInnocencePhotoFinishRspOuterClass {
         return param_;
       }
       /**
-       * <code>uint32 param = 3;</code>
+       * <code>uint32 param = 15;</code>
        * @param value The param to set.
        * @return This builder for chaining.
        */
@@ -559,7 +528,7 @@ public final class GravenInnocencePhotoFinishRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 param = 3;</code>
+       * <code>uint32 param = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearParam() {
@@ -571,7 +540,7 @@ public final class GravenInnocencePhotoFinishRspOuterClass {
 
       private int objectId_ ;
       /**
-       * <code>uint32 object_id = 12;</code>
+       * <code>uint32 object_id = 11;</code>
        * @return The objectId.
        */
       @java.lang.Override
@@ -579,7 +548,7 @@ public final class GravenInnocencePhotoFinishRspOuterClass {
         return objectId_;
       }
       /**
-       * <code>uint32 object_id = 12;</code>
+       * <code>uint32 object_id = 11;</code>
        * @param value The objectId to set.
        * @return This builder for chaining.
        */
@@ -590,12 +559,43 @@ public final class GravenInnocencePhotoFinishRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 object_id = 12;</code>
+       * <code>uint32 object_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearObjectId() {
         
         objectId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 7;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 7;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -667,9 +667,9 @@ public final class GravenInnocencePhotoFinishRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n#GravenInnocencePhotoFinishRsp.proto\"R\n" +
-      "\035GravenInnocencePhotoFinishRsp\022\017\n\007retcod" +
-      "e\030\016 \001(\005\022\r\n\005param\030\003 \001(\r\022\021\n\tobject_id\030\014 \001(" +
-      "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\035GravenInnocencePhotoFinishRsp\022\r\n\005param\030" +
+      "\017 \001(\r\022\021\n\tobject_id\030\013 \001(\r\022\017\n\007retcode\030\007 \001(" +
+      "\005B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -680,7 +680,7 @@ public final class GravenInnocencePhotoFinishRspOuterClass {
     internal_static_GravenInnocencePhotoFinishRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GravenInnocencePhotoFinishRsp_descriptor,
-        new java.lang.String[] { "Retcode", "Param", "ObjectId", });
+        new java.lang.String[] { "Param", "ObjectId", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

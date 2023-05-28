@@ -19,21 +19,21 @@ public final class MechanicusCoinNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 mechanicus_id = 12;</code>
+     * <code>uint32 mechanicus_id = 10;</code>
      * @return The mechanicusId.
      */
     int getMechanicusId();
 
     /**
-     * <code>uint32 coin = 1;</code>
+     * <code>uint32 coin = 14;</code>
      * @return The coin.
      */
     int getCoin();
   }
   /**
    * <pre>
-   * Name: KHJMCOBIELE
-   * CmdId: 3964
+   * CmdId: 3972
+   * Obf: ADMIDFBBDJF
    * </pre>
    *
    * Protobuf type {@code MechanicusCoinNotify}
@@ -80,14 +80,14 @@ public final class MechanicusCoinNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              coin_ = input.readUInt32();
-              break;
-            }
-            case 96: {
+            case 80: {
 
               mechanicusId_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              coin_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,10 +122,10 @@ public final class MechanicusCoinNotifyOuterClass {
               emu.grasscutter.net.proto.MechanicusCoinNotifyOuterClass.MechanicusCoinNotify.class, emu.grasscutter.net.proto.MechanicusCoinNotifyOuterClass.MechanicusCoinNotify.Builder.class);
     }
 
-    public static final int MECHANICUS_ID_FIELD_NUMBER = 12;
+    public static final int MECHANICUS_ID_FIELD_NUMBER = 10;
     private int mechanicusId_;
     /**
-     * <code>uint32 mechanicus_id = 12;</code>
+     * <code>uint32 mechanicus_id = 10;</code>
      * @return The mechanicusId.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class MechanicusCoinNotifyOuterClass {
       return mechanicusId_;
     }
 
-    public static final int COIN_FIELD_NUMBER = 1;
+    public static final int COIN_FIELD_NUMBER = 14;
     private int coin_;
     /**
-     * <code>uint32 coin = 1;</code>
+     * <code>uint32 coin = 14;</code>
      * @return The coin.
      */
     @java.lang.Override
@@ -158,11 +158,11 @@ public final class MechanicusCoinNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (coin_ != 0) {
-        output.writeUInt32(1, coin_);
-      }
       if (mechanicusId_ != 0) {
-        output.writeUInt32(12, mechanicusId_);
+        output.writeUInt32(10, mechanicusId_);
+      }
+      if (coin_ != 0) {
+        output.writeUInt32(14, coin_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class MechanicusCoinNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (coin_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, coin_);
-      }
       if (mechanicusId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, mechanicusId_);
+          .computeUInt32Size(10, mechanicusId_);
+      }
+      if (coin_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, coin_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class MechanicusCoinNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: KHJMCOBIELE
-     * CmdId: 3964
+     * CmdId: 3972
+     * Obf: ADMIDFBBDJF
      * </pre>
      *
      * Protobuf type {@code MechanicusCoinNotify}
@@ -470,7 +470,7 @@ public final class MechanicusCoinNotifyOuterClass {
 
       private int mechanicusId_ ;
       /**
-       * <code>uint32 mechanicus_id = 12;</code>
+       * <code>uint32 mechanicus_id = 10;</code>
        * @return The mechanicusId.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class MechanicusCoinNotifyOuterClass {
         return mechanicusId_;
       }
       /**
-       * <code>uint32 mechanicus_id = 12;</code>
+       * <code>uint32 mechanicus_id = 10;</code>
        * @param value The mechanicusId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class MechanicusCoinNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 mechanicus_id = 12;</code>
+       * <code>uint32 mechanicus_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearMechanicusId() {
@@ -501,7 +501,7 @@ public final class MechanicusCoinNotifyOuterClass {
 
       private int coin_ ;
       /**
-       * <code>uint32 coin = 1;</code>
+       * <code>uint32 coin = 14;</code>
        * @return The coin.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class MechanicusCoinNotifyOuterClass {
         return coin_;
       }
       /**
-       * <code>uint32 coin = 1;</code>
+       * <code>uint32 coin = 14;</code>
        * @param value The coin to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class MechanicusCoinNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 coin = 1;</code>
+       * <code>uint32 coin = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearCoin() {
@@ -597,8 +597,8 @@ public final class MechanicusCoinNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032MechanicusCoinNotify.proto\";\n\024Mechanic" +
-      "usCoinNotify\022\025\n\rmechanicus_id\030\014 \001(\r\022\014\n\004c" +
-      "oin\030\001 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
+      "usCoinNotify\022\025\n\rmechanicus_id\030\n \001(\r\022\014\n\004c" +
+      "oin\030\016 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
       "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

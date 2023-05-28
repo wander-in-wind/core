@@ -19,63 +19,63 @@ public final class HuntingOngoingNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.Vector next_position = 7;</code>
-     * @return Whether the nextPosition field is set.
+     * <code>bool is_started = 1;</code>
+     * @return The isStarted.
      */
-    boolean hasNextPosition();
-    /**
-     * <code>.Vector next_position = 7;</code>
-     * @return The nextPosition.
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getNextPosition();
-    /**
-     * <code>.Vector next_position = 7;</code>
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getNextPositionOrBuilder();
+    boolean getIsStarted();
 
     /**
-     * <code>.HuntingPair hunting_pair = 11;</code>
-     * @return Whether the huntingPair field is set.
-     */
-    boolean hasHuntingPair();
-    /**
-     * <code>.HuntingPair hunting_pair = 11;</code>
-     * @return The huntingPair.
-     */
-    emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair getHuntingPair();
-    /**
-     * <code>.HuntingPair hunting_pair = 11;</code>
-     */
-    emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder getHuntingPairOrBuilder();
-
-    /**
-     * <code>uint32 fail_time = 1;</code>
-     * @return The failTime.
-     */
-    int getFailTime();
-
-    /**
-     * <code>uint32 finish_clue_count = 10;</code>
+     * <code>uint32 finish_clue_count = 9;</code>
      * @return The finishClueCount.
      */
     int getFinishClueCount();
 
     /**
-     * <code>bool is_final = 9;</code>
+     * <code>bool is_final = 8;</code>
      * @return The isFinal.
      */
     boolean getIsFinal();
 
     /**
-     * <code>bool is_started = 5;</code>
-     * @return The isStarted.
+     * <code>.Vector next_position = 10;</code>
+     * @return Whether the nextPosition field is set.
      */
-    boolean getIsStarted();
+    boolean hasNextPosition();
+    /**
+     * <code>.Vector next_position = 10;</code>
+     * @return The nextPosition.
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getNextPosition();
+    /**
+     * <code>.Vector next_position = 10;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getNextPositionOrBuilder();
+
+    /**
+     * <code>.HuntingPair hunting_pair = 12;</code>
+     * @return Whether the huntingPair field is set.
+     */
+    boolean hasHuntingPair();
+    /**
+     * <code>.HuntingPair hunting_pair = 12;</code>
+     * @return The huntingPair.
+     */
+    emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair getHuntingPair();
+    /**
+     * <code>.HuntingPair hunting_pair = 12;</code>
+     */
+    emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder getHuntingPairOrBuilder();
+
+    /**
+     * <code>uint32 fail_time = 4;</code>
+     * @return The failTime.
+     */
+    int getFailTime();
   }
   /**
    * <pre>
-   * Name: LGBLMLKHJNC
-   * CmdId: 4321
+   * CmdId: 4348
+   * Obf: MOKPILDIKJN
    * </pre>
    *
    * Protobuf type {@code HuntingOngoingNotify}
@@ -124,15 +124,25 @@ public final class HuntingOngoingNotifyOuterClass {
               break;
             case 8: {
 
-              failTime_ = input.readUInt32();
-              break;
-            }
-            case 40: {
-
               isStarted_ = input.readBool();
               break;
             }
-            case 58: {
+            case 32: {
+
+              failTime_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+
+              isFinal_ = input.readBool();
+              break;
+            }
+            case 72: {
+
+              finishClueCount_ = input.readUInt32();
+              break;
+            }
+            case 82: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (nextPosition_ != null) {
                 subBuilder = nextPosition_.toBuilder();
@@ -145,17 +155,7 @@ public final class HuntingOngoingNotifyOuterClass {
 
               break;
             }
-            case 72: {
-
-              isFinal_ = input.readBool();
-              break;
-            }
-            case 80: {
-
-              finishClueCount_ = input.readUInt32();
-              break;
-            }
-            case 90: {
+            case 98: {
               emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder subBuilder = null;
               if (huntingPair_ != null) {
                 subBuilder = huntingPair_.toBuilder();
@@ -200,73 +200,21 @@ public final class HuntingOngoingNotifyOuterClass {
               emu.grasscutter.net.proto.HuntingOngoingNotifyOuterClass.HuntingOngoingNotify.class, emu.grasscutter.net.proto.HuntingOngoingNotifyOuterClass.HuntingOngoingNotify.Builder.class);
     }
 
-    public static final int NEXT_POSITION_FIELD_NUMBER = 7;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector nextPosition_;
+    public static final int IS_STARTED_FIELD_NUMBER = 1;
+    private boolean isStarted_;
     /**
-     * <code>.Vector next_position = 7;</code>
-     * @return Whether the nextPosition field is set.
+     * <code>bool is_started = 1;</code>
+     * @return The isStarted.
      */
     @java.lang.Override
-    public boolean hasNextPosition() {
-      return nextPosition_ != null;
-    }
-    /**
-     * <code>.Vector next_position = 7;</code>
-     * @return The nextPosition.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getNextPosition() {
-      return nextPosition_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : nextPosition_;
-    }
-    /**
-     * <code>.Vector next_position = 7;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getNextPositionOrBuilder() {
-      return getNextPosition();
+    public boolean getIsStarted() {
+      return isStarted_;
     }
 
-    public static final int HUNTING_PAIR_FIELD_NUMBER = 11;
-    private emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair huntingPair_;
-    /**
-     * <code>.HuntingPair hunting_pair = 11;</code>
-     * @return Whether the huntingPair field is set.
-     */
-    @java.lang.Override
-    public boolean hasHuntingPair() {
-      return huntingPair_ != null;
-    }
-    /**
-     * <code>.HuntingPair hunting_pair = 11;</code>
-     * @return The huntingPair.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair getHuntingPair() {
-      return huntingPair_ == null ? emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.getDefaultInstance() : huntingPair_;
-    }
-    /**
-     * <code>.HuntingPair hunting_pair = 11;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder getHuntingPairOrBuilder() {
-      return getHuntingPair();
-    }
-
-    public static final int FAIL_TIME_FIELD_NUMBER = 1;
-    private int failTime_;
-    /**
-     * <code>uint32 fail_time = 1;</code>
-     * @return The failTime.
-     */
-    @java.lang.Override
-    public int getFailTime() {
-      return failTime_;
-    }
-
-    public static final int FINISH_CLUE_COUNT_FIELD_NUMBER = 10;
+    public static final int FINISH_CLUE_COUNT_FIELD_NUMBER = 9;
     private int finishClueCount_;
     /**
-     * <code>uint32 finish_clue_count = 10;</code>
+     * <code>uint32 finish_clue_count = 9;</code>
      * @return The finishClueCount.
      */
     @java.lang.Override
@@ -274,10 +222,10 @@ public final class HuntingOngoingNotifyOuterClass {
       return finishClueCount_;
     }
 
-    public static final int IS_FINAL_FIELD_NUMBER = 9;
+    public static final int IS_FINAL_FIELD_NUMBER = 8;
     private boolean isFinal_;
     /**
-     * <code>bool is_final = 9;</code>
+     * <code>bool is_final = 8;</code>
      * @return The isFinal.
      */
     @java.lang.Override
@@ -285,15 +233,67 @@ public final class HuntingOngoingNotifyOuterClass {
       return isFinal_;
     }
 
-    public static final int IS_STARTED_FIELD_NUMBER = 5;
-    private boolean isStarted_;
+    public static final int NEXT_POSITION_FIELD_NUMBER = 10;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector nextPosition_;
     /**
-     * <code>bool is_started = 5;</code>
-     * @return The isStarted.
+     * <code>.Vector next_position = 10;</code>
+     * @return Whether the nextPosition field is set.
      */
     @java.lang.Override
-    public boolean getIsStarted() {
-      return isStarted_;
+    public boolean hasNextPosition() {
+      return nextPosition_ != null;
+    }
+    /**
+     * <code>.Vector next_position = 10;</code>
+     * @return The nextPosition.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getNextPosition() {
+      return nextPosition_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : nextPosition_;
+    }
+    /**
+     * <code>.Vector next_position = 10;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getNextPositionOrBuilder() {
+      return getNextPosition();
+    }
+
+    public static final int HUNTING_PAIR_FIELD_NUMBER = 12;
+    private emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair huntingPair_;
+    /**
+     * <code>.HuntingPair hunting_pair = 12;</code>
+     * @return Whether the huntingPair field is set.
+     */
+    @java.lang.Override
+    public boolean hasHuntingPair() {
+      return huntingPair_ != null;
+    }
+    /**
+     * <code>.HuntingPair hunting_pair = 12;</code>
+     * @return The huntingPair.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair getHuntingPair() {
+      return huntingPair_ == null ? emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.getDefaultInstance() : huntingPair_;
+    }
+    /**
+     * <code>.HuntingPair hunting_pair = 12;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder getHuntingPairOrBuilder() {
+      return getHuntingPair();
+    }
+
+    public static final int FAIL_TIME_FIELD_NUMBER = 4;
+    private int failTime_;
+    /**
+     * <code>uint32 fail_time = 4;</code>
+     * @return The failTime.
+     */
+    @java.lang.Override
+    public int getFailTime() {
+      return failTime_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -310,23 +310,23 @@ public final class HuntingOngoingNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (failTime_ != 0) {
-        output.writeUInt32(1, failTime_);
-      }
       if (isStarted_ != false) {
-        output.writeBool(5, isStarted_);
+        output.writeBool(1, isStarted_);
       }
-      if (nextPosition_ != null) {
-        output.writeMessage(7, getNextPosition());
+      if (failTime_ != 0) {
+        output.writeUInt32(4, failTime_);
       }
       if (isFinal_ != false) {
-        output.writeBool(9, isFinal_);
+        output.writeBool(8, isFinal_);
       }
       if (finishClueCount_ != 0) {
-        output.writeUInt32(10, finishClueCount_);
+        output.writeUInt32(9, finishClueCount_);
+      }
+      if (nextPosition_ != null) {
+        output.writeMessage(10, getNextPosition());
       }
       if (huntingPair_ != null) {
-        output.writeMessage(11, getHuntingPair());
+        output.writeMessage(12, getHuntingPair());
       }
       unknownFields.writeTo(output);
     }
@@ -337,29 +337,29 @@ public final class HuntingOngoingNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (failTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, failTime_);
-      }
       if (isStarted_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, isStarted_);
+          .computeBoolSize(1, isStarted_);
       }
-      if (nextPosition_ != null) {
+      if (failTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, getNextPosition());
+          .computeUInt32Size(4, failTime_);
       }
       if (isFinal_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isFinal_);
+          .computeBoolSize(8, isFinal_);
       }
       if (finishClueCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, finishClueCount_);
+          .computeUInt32Size(9, finishClueCount_);
+      }
+      if (nextPosition_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(10, getNextPosition());
       }
       if (huntingPair_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, getHuntingPair());
+          .computeMessageSize(12, getHuntingPair());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -376,6 +376,12 @@ public final class HuntingOngoingNotifyOuterClass {
       }
       emu.grasscutter.net.proto.HuntingOngoingNotifyOuterClass.HuntingOngoingNotify other = (emu.grasscutter.net.proto.HuntingOngoingNotifyOuterClass.HuntingOngoingNotify) obj;
 
+      if (getIsStarted()
+          != other.getIsStarted()) return false;
+      if (getFinishClueCount()
+          != other.getFinishClueCount()) return false;
+      if (getIsFinal()
+          != other.getIsFinal()) return false;
       if (hasNextPosition() != other.hasNextPosition()) return false;
       if (hasNextPosition()) {
         if (!getNextPosition()
@@ -388,12 +394,6 @@ public final class HuntingOngoingNotifyOuterClass {
       }
       if (getFailTime()
           != other.getFailTime()) return false;
-      if (getFinishClueCount()
-          != other.getFinishClueCount()) return false;
-      if (getIsFinal()
-          != other.getIsFinal()) return false;
-      if (getIsStarted()
-          != other.getIsStarted()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -405,6 +405,14 @@ public final class HuntingOngoingNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + IS_STARTED_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsStarted());
+      hash = (37 * hash) + FINISH_CLUE_COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getFinishClueCount();
+      hash = (37 * hash) + IS_FINAL_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsFinal());
       if (hasNextPosition()) {
         hash = (37 * hash) + NEXT_POSITION_FIELD_NUMBER;
         hash = (53 * hash) + getNextPosition().hashCode();
@@ -415,14 +423,6 @@ public final class HuntingOngoingNotifyOuterClass {
       }
       hash = (37 * hash) + FAIL_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getFailTime();
-      hash = (37 * hash) + FINISH_CLUE_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getFinishClueCount();
-      hash = (37 * hash) + IS_FINAL_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsFinal());
-      hash = (37 * hash) + IS_STARTED_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsStarted());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -520,8 +520,8 @@ public final class HuntingOngoingNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: LGBLMLKHJNC
-     * CmdId: 4321
+     * CmdId: 4348
+     * Obf: MOKPILDIKJN
      * </pre>
      *
      * Protobuf type {@code HuntingOngoingNotify}
@@ -561,6 +561,12 @@ public final class HuntingOngoingNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        isStarted_ = false;
+
+        finishClueCount_ = 0;
+
+        isFinal_ = false;
+
         if (nextPositionBuilder_ == null) {
           nextPosition_ = null;
         } else {
@@ -574,12 +580,6 @@ public final class HuntingOngoingNotifyOuterClass {
           huntingPairBuilder_ = null;
         }
         failTime_ = 0;
-
-        finishClueCount_ = 0;
-
-        isFinal_ = false;
-
-        isStarted_ = false;
 
         return this;
       }
@@ -607,6 +607,9 @@ public final class HuntingOngoingNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HuntingOngoingNotifyOuterClass.HuntingOngoingNotify buildPartial() {
         emu.grasscutter.net.proto.HuntingOngoingNotifyOuterClass.HuntingOngoingNotify result = new emu.grasscutter.net.proto.HuntingOngoingNotifyOuterClass.HuntingOngoingNotify(this);
+        result.isStarted_ = isStarted_;
+        result.finishClueCount_ = finishClueCount_;
+        result.isFinal_ = isFinal_;
         if (nextPositionBuilder_ == null) {
           result.nextPosition_ = nextPosition_;
         } else {
@@ -618,9 +621,6 @@ public final class HuntingOngoingNotifyOuterClass {
           result.huntingPair_ = huntingPairBuilder_.build();
         }
         result.failTime_ = failTime_;
-        result.finishClueCount_ = finishClueCount_;
-        result.isFinal_ = isFinal_;
-        result.isStarted_ = isStarted_;
         onBuilt();
         return result;
       }
@@ -669,6 +669,15 @@ public final class HuntingOngoingNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HuntingOngoingNotifyOuterClass.HuntingOngoingNotify other) {
         if (other == emu.grasscutter.net.proto.HuntingOngoingNotifyOuterClass.HuntingOngoingNotify.getDefaultInstance()) return this;
+        if (other.getIsStarted() != false) {
+          setIsStarted(other.getIsStarted());
+        }
+        if (other.getFinishClueCount() != 0) {
+          setFinishClueCount(other.getFinishClueCount());
+        }
+        if (other.getIsFinal() != false) {
+          setIsFinal(other.getIsFinal());
+        }
         if (other.hasNextPosition()) {
           mergeNextPosition(other.getNextPosition());
         }
@@ -677,15 +686,6 @@ public final class HuntingOngoingNotifyOuterClass {
         }
         if (other.getFailTime() != 0) {
           setFailTime(other.getFailTime());
-        }
-        if (other.getFinishClueCount() != 0) {
-          setFinishClueCount(other.getFinishClueCount());
-        }
-        if (other.getIsFinal() != false) {
-          setIsFinal(other.getIsFinal());
-        }
-        if (other.getIsStarted() != false) {
-          setIsStarted(other.getIsStarted());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -716,18 +716,111 @@ public final class HuntingOngoingNotifyOuterClass {
         return this;
       }
 
+      private boolean isStarted_ ;
+      /**
+       * <code>bool is_started = 1;</code>
+       * @return The isStarted.
+       */
+      @java.lang.Override
+      public boolean getIsStarted() {
+        return isStarted_;
+      }
+      /**
+       * <code>bool is_started = 1;</code>
+       * @param value The isStarted to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsStarted(boolean value) {
+        
+        isStarted_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_started = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsStarted() {
+        
+        isStarted_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int finishClueCount_ ;
+      /**
+       * <code>uint32 finish_clue_count = 9;</code>
+       * @return The finishClueCount.
+       */
+      @java.lang.Override
+      public int getFinishClueCount() {
+        return finishClueCount_;
+      }
+      /**
+       * <code>uint32 finish_clue_count = 9;</code>
+       * @param value The finishClueCount to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFinishClueCount(int value) {
+        
+        finishClueCount_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 finish_clue_count = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFinishClueCount() {
+        
+        finishClueCount_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isFinal_ ;
+      /**
+       * <code>bool is_final = 8;</code>
+       * @return The isFinal.
+       */
+      @java.lang.Override
+      public boolean getIsFinal() {
+        return isFinal_;
+      }
+      /**
+       * <code>bool is_final = 8;</code>
+       * @param value The isFinal to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsFinal(boolean value) {
+        
+        isFinal_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_final = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsFinal() {
+        
+        isFinal_ = false;
+        onChanged();
+        return this;
+      }
+
       private emu.grasscutter.net.proto.VectorOuterClass.Vector nextPosition_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> nextPositionBuilder_;
       /**
-       * <code>.Vector next_position = 7;</code>
+       * <code>.Vector next_position = 10;</code>
        * @return Whether the nextPosition field is set.
        */
       public boolean hasNextPosition() {
         return nextPositionBuilder_ != null || nextPosition_ != null;
       }
       /**
-       * <code>.Vector next_position = 7;</code>
+       * <code>.Vector next_position = 10;</code>
        * @return The nextPosition.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getNextPosition() {
@@ -738,7 +831,7 @@ public final class HuntingOngoingNotifyOuterClass {
         }
       }
       /**
-       * <code>.Vector next_position = 7;</code>
+       * <code>.Vector next_position = 10;</code>
        */
       public Builder setNextPosition(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (nextPositionBuilder_ == null) {
@@ -754,7 +847,7 @@ public final class HuntingOngoingNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.Vector next_position = 7;</code>
+       * <code>.Vector next_position = 10;</code>
        */
       public Builder setNextPosition(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -768,7 +861,7 @@ public final class HuntingOngoingNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.Vector next_position = 7;</code>
+       * <code>.Vector next_position = 10;</code>
        */
       public Builder mergeNextPosition(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (nextPositionBuilder_ == null) {
@@ -786,7 +879,7 @@ public final class HuntingOngoingNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.Vector next_position = 7;</code>
+       * <code>.Vector next_position = 10;</code>
        */
       public Builder clearNextPosition() {
         if (nextPositionBuilder_ == null) {
@@ -800,7 +893,7 @@ public final class HuntingOngoingNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.Vector next_position = 7;</code>
+       * <code>.Vector next_position = 10;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getNextPositionBuilder() {
         
@@ -808,7 +901,7 @@ public final class HuntingOngoingNotifyOuterClass {
         return getNextPositionFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector next_position = 7;</code>
+       * <code>.Vector next_position = 10;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getNextPositionOrBuilder() {
         if (nextPositionBuilder_ != null) {
@@ -819,7 +912,7 @@ public final class HuntingOngoingNotifyOuterClass {
         }
       }
       /**
-       * <code>.Vector next_position = 7;</code>
+       * <code>.Vector next_position = 10;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -839,14 +932,14 @@ public final class HuntingOngoingNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder> huntingPairBuilder_;
       /**
-       * <code>.HuntingPair hunting_pair = 11;</code>
+       * <code>.HuntingPair hunting_pair = 12;</code>
        * @return Whether the huntingPair field is set.
        */
       public boolean hasHuntingPair() {
         return huntingPairBuilder_ != null || huntingPair_ != null;
       }
       /**
-       * <code>.HuntingPair hunting_pair = 11;</code>
+       * <code>.HuntingPair hunting_pair = 12;</code>
        * @return The huntingPair.
        */
       public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair getHuntingPair() {
@@ -857,7 +950,7 @@ public final class HuntingOngoingNotifyOuterClass {
         }
       }
       /**
-       * <code>.HuntingPair hunting_pair = 11;</code>
+       * <code>.HuntingPair hunting_pair = 12;</code>
        */
       public Builder setHuntingPair(emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair value) {
         if (huntingPairBuilder_ == null) {
@@ -873,7 +966,7 @@ public final class HuntingOngoingNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.HuntingPair hunting_pair = 11;</code>
+       * <code>.HuntingPair hunting_pair = 12;</code>
        */
       public Builder setHuntingPair(
           emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder builderForValue) {
@@ -887,7 +980,7 @@ public final class HuntingOngoingNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.HuntingPair hunting_pair = 11;</code>
+       * <code>.HuntingPair hunting_pair = 12;</code>
        */
       public Builder mergeHuntingPair(emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair value) {
         if (huntingPairBuilder_ == null) {
@@ -905,7 +998,7 @@ public final class HuntingOngoingNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.HuntingPair hunting_pair = 11;</code>
+       * <code>.HuntingPair hunting_pair = 12;</code>
        */
       public Builder clearHuntingPair() {
         if (huntingPairBuilder_ == null) {
@@ -919,7 +1012,7 @@ public final class HuntingOngoingNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.HuntingPair hunting_pair = 11;</code>
+       * <code>.HuntingPair hunting_pair = 12;</code>
        */
       public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder getHuntingPairBuilder() {
         
@@ -927,7 +1020,7 @@ public final class HuntingOngoingNotifyOuterClass {
         return getHuntingPairFieldBuilder().getBuilder();
       }
       /**
-       * <code>.HuntingPair hunting_pair = 11;</code>
+       * <code>.HuntingPair hunting_pair = 12;</code>
        */
       public emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder getHuntingPairOrBuilder() {
         if (huntingPairBuilder_ != null) {
@@ -938,7 +1031,7 @@ public final class HuntingOngoingNotifyOuterClass {
         }
       }
       /**
-       * <code>.HuntingPair hunting_pair = 11;</code>
+       * <code>.HuntingPair hunting_pair = 12;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPairOrBuilder> 
@@ -956,7 +1049,7 @@ public final class HuntingOngoingNotifyOuterClass {
 
       private int failTime_ ;
       /**
-       * <code>uint32 fail_time = 1;</code>
+       * <code>uint32 fail_time = 4;</code>
        * @return The failTime.
        */
       @java.lang.Override
@@ -964,7 +1057,7 @@ public final class HuntingOngoingNotifyOuterClass {
         return failTime_;
       }
       /**
-       * <code>uint32 fail_time = 1;</code>
+       * <code>uint32 fail_time = 4;</code>
        * @param value The failTime to set.
        * @return This builder for chaining.
        */
@@ -975,105 +1068,12 @@ public final class HuntingOngoingNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 fail_time = 1;</code>
+       * <code>uint32 fail_time = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearFailTime() {
         
         failTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int finishClueCount_ ;
-      /**
-       * <code>uint32 finish_clue_count = 10;</code>
-       * @return The finishClueCount.
-       */
-      @java.lang.Override
-      public int getFinishClueCount() {
-        return finishClueCount_;
-      }
-      /**
-       * <code>uint32 finish_clue_count = 10;</code>
-       * @param value The finishClueCount to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFinishClueCount(int value) {
-        
-        finishClueCount_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 finish_clue_count = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFinishClueCount() {
-        
-        finishClueCount_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isFinal_ ;
-      /**
-       * <code>bool is_final = 9;</code>
-       * @return The isFinal.
-       */
-      @java.lang.Override
-      public boolean getIsFinal() {
-        return isFinal_;
-      }
-      /**
-       * <code>bool is_final = 9;</code>
-       * @param value The isFinal to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsFinal(boolean value) {
-        
-        isFinal_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_final = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsFinal() {
-        
-        isFinal_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean isStarted_ ;
-      /**
-       * <code>bool is_started = 5;</code>
-       * @return The isStarted.
-       */
-      @java.lang.Override
-      public boolean getIsStarted() {
-        return isStarted_;
-      }
-      /**
-       * <code>bool is_started = 5;</code>
-       * @param value The isStarted to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsStarted(boolean value) {
-        
-        isStarted_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_started = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsStarted() {
-        
-        isStarted_ = false;
         onChanged();
         return this;
       }
@@ -1144,28 +1144,28 @@ public final class HuntingOngoingNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\032HuntingOngoingNotify.proto\032\021HuntingPai" +
-      "r.proto\032\014Vector.proto\"\256\001\n\024HuntingOngoing" +
-      "Notify\022\036\n\rnext_position\030\007 \001(\0132\007.Vector\022\"" +
-      "\n\014hunting_pair\030\013 \001(\0132\014.HuntingPair\022\021\n\tfa" +
-      "il_time\030\001 \001(\r\022\031\n\021finish_clue_count\030\n \001(\r" +
-      "\022\020\n\010is_final\030\t \001(\010\022\022\n\nis_started\030\005 \001(\010B\033" +
+      "\n\032HuntingOngoingNotify.proto\032\014Vector.pro" +
+      "to\032\021HuntingPair.proto\"\256\001\n\024HuntingOngoing" +
+      "Notify\022\022\n\nis_started\030\001 \001(\010\022\031\n\021finish_clu" +
+      "e_count\030\t \001(\r\022\020\n\010is_final\030\010 \001(\010\022\036\n\rnext_" +
+      "position\030\n \001(\0132\007.Vector\022\"\n\014hunting_pair\030" +
+      "\014 \001(\0132\014.HuntingPair\022\021\n\tfail_time\030\004 \001(\rB\033" +
       "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.HuntingPairOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.VectorOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.HuntingPairOuterClass.getDescriptor(),
         });
     internal_static_HuntingOngoingNotify_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_HuntingOngoingNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HuntingOngoingNotify_descriptor,
-        new java.lang.String[] { "NextPosition", "HuntingPair", "FailTime", "FinishClueCount", "IsFinal", "IsStarted", });
-    emu.grasscutter.net.proto.HuntingPairOuterClass.getDescriptor();
+        new java.lang.String[] { "IsStarted", "FinishClueCount", "IsFinal", "NextPosition", "HuntingPair", "FailTime", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.HuntingPairOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

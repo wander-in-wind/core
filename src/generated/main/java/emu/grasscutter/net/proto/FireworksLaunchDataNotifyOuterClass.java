@@ -19,7 +19,7 @@ public final class FireworksLaunchDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 last_use_scheme_id = 1;</code>
+     * <code>uint32 last_use_scheme_id = 7;</code>
      * @return The lastUseSchemeId.
      */
     int getLastUseSchemeId();
@@ -50,8 +50,8 @@ public final class FireworksLaunchDataNotifyOuterClass {
   }
   /**
    * <pre>
-   * Name: NLCCANLMPOI
-   * CmdId: 6038
+   * CmdId: 6007
+   * Obf: PHEIBOINJNF
    * </pre>
    *
    * Protobuf type {@code FireworksLaunchDataNotify}
@@ -100,7 +100,7 @@ public final class FireworksLaunchDataNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 56: {
 
               lastUseSchemeId_ = input.readUInt32();
               break;
@@ -149,10 +149,10 @@ public final class FireworksLaunchDataNotifyOuterClass {
               emu.grasscutter.net.proto.FireworksLaunchDataNotifyOuterClass.FireworksLaunchDataNotify.class, emu.grasscutter.net.proto.FireworksLaunchDataNotifyOuterClass.FireworksLaunchDataNotify.Builder.class);
     }
 
-    public static final int LAST_USE_SCHEME_ID_FIELD_NUMBER = 1;
+    public static final int LAST_USE_SCHEME_ID_FIELD_NUMBER = 7;
     private int lastUseSchemeId_;
     /**
-     * <code>uint32 last_use_scheme_id = 1;</code>
+     * <code>uint32 last_use_scheme_id = 7;</code>
      * @return The lastUseSchemeId.
      */
     @java.lang.Override
@@ -215,7 +215,7 @@ public final class FireworksLaunchDataNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (lastUseSchemeId_ != 0) {
-        output.writeUInt32(1, lastUseSchemeId_);
+        output.writeUInt32(7, lastUseSchemeId_);
       }
       for (int i = 0; i < schemeDataList_.size(); i++) {
         output.writeMessage(10, schemeDataList_.get(i));
@@ -231,7 +231,7 @@ public final class FireworksLaunchDataNotifyOuterClass {
       size = 0;
       if (lastUseSchemeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, lastUseSchemeId_);
+          .computeUInt32Size(7, lastUseSchemeId_);
       }
       for (int i = 0; i < schemeDataList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -370,8 +370,8 @@ public final class FireworksLaunchDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: NLCCANLMPOI
-     * CmdId: 6038
+     * CmdId: 6007
+     * Obf: PHEIBOINJNF
      * </pre>
      *
      * Protobuf type {@code FireworksLaunchDataNotify}
@@ -566,7 +566,7 @@ public final class FireworksLaunchDataNotifyOuterClass {
 
       private int lastUseSchemeId_ ;
       /**
-       * <code>uint32 last_use_scheme_id = 1;</code>
+       * <code>uint32 last_use_scheme_id = 7;</code>
        * @return The lastUseSchemeId.
        */
       @java.lang.Override
@@ -574,7 +574,7 @@ public final class FireworksLaunchDataNotifyOuterClass {
         return lastUseSchemeId_;
       }
       /**
-       * <code>uint32 last_use_scheme_id = 1;</code>
+       * <code>uint32 last_use_scheme_id = 7;</code>
        * @param value The lastUseSchemeId to set.
        * @return This builder for chaining.
        */
@@ -585,7 +585,7 @@ public final class FireworksLaunchDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 last_use_scheme_id = 1;</code>
+       * <code>uint32 last_use_scheme_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearLastUseSchemeId() {
@@ -903,7 +903,7 @@ public final class FireworksLaunchDataNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\037FireworksLaunchDataNotify.proto\032\037Firew" +
       "orksLaunchSchemeData.proto\"m\n\031FireworksL" +
-      "aunchDataNotify\022\032\n\022last_use_scheme_id\030\001 " +
+      "aunchDataNotify\022\032\n\022last_use_scheme_id\030\007 " +
       "\001(\r\0224\n\020scheme_data_list\030\n \003(\0132\032.Firework" +
       "sLaunchSchemeDataB\033\n\031emu.grasscutter.net" +
       ".protob\006proto3"

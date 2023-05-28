@@ -19,21 +19,21 @@ public final class MpPlayPrepareNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 prepare_end_time = 9;</code>
-     * @return The prepareEndTime.
-     */
-    int getPrepareEndTime();
-
-    /**
-     * <code>uint32 mp_play_id = 12;</code>
+     * <code>uint32 mp_play_id = 2;</code>
      * @return The mpPlayId.
      */
     int getMpPlayId();
+
+    /**
+     * <code>uint32 prepare_end_time = 8;</code>
+     * @return The prepareEndTime.
+     */
+    int getPrepareEndTime();
   }
   /**
    * <pre>
-   * Name: FIDDEBMCHAH
-   * CmdId: 1807
+   * CmdId: 1847
+   * Obf: BLKFBDLFGNI
    * </pre>
    *
    * Protobuf type {@code MpPlayPrepareNotify}
@@ -80,14 +80,14 @@ public final class MpPlayPrepareNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
-
-              prepareEndTime_ = input.readUInt32();
-              break;
-            }
-            case 96: {
+            case 16: {
 
               mpPlayId_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+
+              prepareEndTime_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,26 +122,26 @@ public final class MpPlayPrepareNotifyOuterClass {
               emu.grasscutter.net.proto.MpPlayPrepareNotifyOuterClass.MpPlayPrepareNotify.class, emu.grasscutter.net.proto.MpPlayPrepareNotifyOuterClass.MpPlayPrepareNotify.Builder.class);
     }
 
-    public static final int PREPARE_END_TIME_FIELD_NUMBER = 9;
-    private int prepareEndTime_;
-    /**
-     * <code>uint32 prepare_end_time = 9;</code>
-     * @return The prepareEndTime.
-     */
-    @java.lang.Override
-    public int getPrepareEndTime() {
-      return prepareEndTime_;
-    }
-
-    public static final int MP_PLAY_ID_FIELD_NUMBER = 12;
+    public static final int MP_PLAY_ID_FIELD_NUMBER = 2;
     private int mpPlayId_;
     /**
-     * <code>uint32 mp_play_id = 12;</code>
+     * <code>uint32 mp_play_id = 2;</code>
      * @return The mpPlayId.
      */
     @java.lang.Override
     public int getMpPlayId() {
       return mpPlayId_;
+    }
+
+    public static final int PREPARE_END_TIME_FIELD_NUMBER = 8;
+    private int prepareEndTime_;
+    /**
+     * <code>uint32 prepare_end_time = 8;</code>
+     * @return The prepareEndTime.
+     */
+    @java.lang.Override
+    public int getPrepareEndTime() {
+      return prepareEndTime_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -158,11 +158,11 @@ public final class MpPlayPrepareNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (prepareEndTime_ != 0) {
-        output.writeUInt32(9, prepareEndTime_);
-      }
       if (mpPlayId_ != 0) {
-        output.writeUInt32(12, mpPlayId_);
+        output.writeUInt32(2, mpPlayId_);
+      }
+      if (prepareEndTime_ != 0) {
+        output.writeUInt32(8, prepareEndTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class MpPlayPrepareNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (prepareEndTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, prepareEndTime_);
-      }
       if (mpPlayId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, mpPlayId_);
+          .computeUInt32Size(2, mpPlayId_);
+      }
+      if (prepareEndTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, prepareEndTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +196,10 @@ public final class MpPlayPrepareNotifyOuterClass {
       }
       emu.grasscutter.net.proto.MpPlayPrepareNotifyOuterClass.MpPlayPrepareNotify other = (emu.grasscutter.net.proto.MpPlayPrepareNotifyOuterClass.MpPlayPrepareNotify) obj;
 
-      if (getPrepareEndTime()
-          != other.getPrepareEndTime()) return false;
       if (getMpPlayId()
           != other.getMpPlayId()) return false;
+      if (getPrepareEndTime()
+          != other.getPrepareEndTime()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +211,10 @@ public final class MpPlayPrepareNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + PREPARE_END_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getPrepareEndTime();
       hash = (37 * hash) + MP_PLAY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getMpPlayId();
+      hash = (37 * hash) + PREPARE_END_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getPrepareEndTime();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +312,8 @@ public final class MpPlayPrepareNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: FIDDEBMCHAH
-     * CmdId: 1807
+     * CmdId: 1847
+     * Obf: BLKFBDLFGNI
      * </pre>
      *
      * Protobuf type {@code MpPlayPrepareNotify}
@@ -353,9 +353,9 @@ public final class MpPlayPrepareNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        prepareEndTime_ = 0;
-
         mpPlayId_ = 0;
+
+        prepareEndTime_ = 0;
 
         return this;
       }
@@ -383,8 +383,8 @@ public final class MpPlayPrepareNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.MpPlayPrepareNotifyOuterClass.MpPlayPrepareNotify buildPartial() {
         emu.grasscutter.net.proto.MpPlayPrepareNotifyOuterClass.MpPlayPrepareNotify result = new emu.grasscutter.net.proto.MpPlayPrepareNotifyOuterClass.MpPlayPrepareNotify(this);
-        result.prepareEndTime_ = prepareEndTime_;
         result.mpPlayId_ = mpPlayId_;
+        result.prepareEndTime_ = prepareEndTime_;
         onBuilt();
         return result;
       }
@@ -433,11 +433,11 @@ public final class MpPlayPrepareNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MpPlayPrepareNotifyOuterClass.MpPlayPrepareNotify other) {
         if (other == emu.grasscutter.net.proto.MpPlayPrepareNotifyOuterClass.MpPlayPrepareNotify.getDefaultInstance()) return this;
-        if (other.getPrepareEndTime() != 0) {
-          setPrepareEndTime(other.getPrepareEndTime());
-        }
         if (other.getMpPlayId() != 0) {
           setMpPlayId(other.getMpPlayId());
+        }
+        if (other.getPrepareEndTime() != 0) {
+          setPrepareEndTime(other.getPrepareEndTime());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,40 +468,9 @@ public final class MpPlayPrepareNotifyOuterClass {
         return this;
       }
 
-      private int prepareEndTime_ ;
-      /**
-       * <code>uint32 prepare_end_time = 9;</code>
-       * @return The prepareEndTime.
-       */
-      @java.lang.Override
-      public int getPrepareEndTime() {
-        return prepareEndTime_;
-      }
-      /**
-       * <code>uint32 prepare_end_time = 9;</code>
-       * @param value The prepareEndTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPrepareEndTime(int value) {
-        
-        prepareEndTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 prepare_end_time = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPrepareEndTime() {
-        
-        prepareEndTime_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int mpPlayId_ ;
       /**
-       * <code>uint32 mp_play_id = 12;</code>
+       * <code>uint32 mp_play_id = 2;</code>
        * @return The mpPlayId.
        */
       @java.lang.Override
@@ -509,7 +478,7 @@ public final class MpPlayPrepareNotifyOuterClass {
         return mpPlayId_;
       }
       /**
-       * <code>uint32 mp_play_id = 12;</code>
+       * <code>uint32 mp_play_id = 2;</code>
        * @param value The mpPlayId to set.
        * @return This builder for chaining.
        */
@@ -520,12 +489,43 @@ public final class MpPlayPrepareNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 mp_play_id = 12;</code>
+       * <code>uint32 mp_play_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearMpPlayId() {
         
         mpPlayId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int prepareEndTime_ ;
+      /**
+       * <code>uint32 prepare_end_time = 8;</code>
+       * @return The prepareEndTime.
+       */
+      @java.lang.Override
+      public int getPrepareEndTime() {
+        return prepareEndTime_;
+      }
+      /**
+       * <code>uint32 prepare_end_time = 8;</code>
+       * @param value The prepareEndTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPrepareEndTime(int value) {
+        
+        prepareEndTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 prepare_end_time = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPrepareEndTime() {
+        
+        prepareEndTime_ = 0;
         onChanged();
         return this;
       }
@@ -597,8 +597,8 @@ public final class MpPlayPrepareNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031MpPlayPrepareNotify.proto\"C\n\023MpPlayPre" +
-      "pareNotify\022\030\n\020prepare_end_time\030\t \001(\r\022\022\n\n" +
-      "mp_play_id\030\014 \001(\rB\033\n\031emu.grasscutter.net." +
+      "pareNotify\022\022\n\nmp_play_id\030\002 \001(\r\022\030\n\020prepar" +
+      "e_end_time\030\010 \001(\rB\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -610,7 +610,7 @@ public final class MpPlayPrepareNotifyOuterClass {
     internal_static_MpPlayPrepareNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MpPlayPrepareNotify_descriptor,
-        new java.lang.String[] { "PrepareEndTime", "MpPlayId", });
+        new java.lang.String[] { "MpPlayId", "PrepareEndTime", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

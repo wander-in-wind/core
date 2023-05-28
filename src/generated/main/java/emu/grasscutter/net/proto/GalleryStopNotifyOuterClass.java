@@ -19,15 +19,15 @@ public final class GalleryStopNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 gallery_id = 10;</code>
+     * <code>uint32 gallery_id = 1;</code>
      * @return The galleryId.
      */
     int getGalleryId();
   }
   /**
    * <pre>
-   * Name: NOFFEEDPAEB
-   * CmdId: 5564
+   * CmdId: 5572
+   * Obf: KNILNOFCPBH
    * </pre>
    *
    * Protobuf type {@code GalleryStopNotify}
@@ -74,7 +74,7 @@ public final class GalleryStopNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 8: {
 
               galleryId_ = input.readUInt32();
               break;
@@ -111,10 +111,10 @@ public final class GalleryStopNotifyOuterClass {
               emu.grasscutter.net.proto.GalleryStopNotifyOuterClass.GalleryStopNotify.class, emu.grasscutter.net.proto.GalleryStopNotifyOuterClass.GalleryStopNotify.Builder.class);
     }
 
-    public static final int GALLERY_ID_FIELD_NUMBER = 10;
+    public static final int GALLERY_ID_FIELD_NUMBER = 1;
     private int galleryId_;
     /**
-     * <code>uint32 gallery_id = 10;</code>
+     * <code>uint32 gallery_id = 1;</code>
      * @return The galleryId.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class GalleryStopNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (galleryId_ != 0) {
-        output.writeUInt32(10, galleryId_);
+        output.writeUInt32(1, galleryId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class GalleryStopNotifyOuterClass {
       size = 0;
       if (galleryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, galleryId_);
+          .computeUInt32Size(1, galleryId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class GalleryStopNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: NOFFEEDPAEB
-     * CmdId: 5564
+     * CmdId: 5572
+     * Obf: KNILNOFCPBH
      * </pre>
      *
      * Protobuf type {@code GalleryStopNotify}
@@ -431,7 +431,7 @@ public final class GalleryStopNotifyOuterClass {
 
       private int galleryId_ ;
       /**
-       * <code>uint32 gallery_id = 10;</code>
+       * <code>uint32 gallery_id = 1;</code>
        * @return The galleryId.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class GalleryStopNotifyOuterClass {
         return galleryId_;
       }
       /**
-       * <code>uint32 gallery_id = 10;</code>
+       * <code>uint32 gallery_id = 1;</code>
        * @param value The galleryId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class GalleryStopNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gallery_id = 10;</code>
+       * <code>uint32 gallery_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearGalleryId() {
@@ -527,7 +527,7 @@ public final class GalleryStopNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027GalleryStopNotify.proto\"\'\n\021GalleryStop" +
-      "Notify\022\022\n\ngallery_id\030\n \001(\rB\033\n\031emu.grassc" +
+      "Notify\022\022\n\ngallery_id\030\001 \001(\rB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

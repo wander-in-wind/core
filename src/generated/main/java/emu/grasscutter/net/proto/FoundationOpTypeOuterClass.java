@@ -16,7 +16,7 @@ public final class FoundationOpTypeOuterClass {
   }
   /**
    * <pre>
-   * Name: MFMLDFBDCLA
+   * Obf: MDNDNFJFKDJ
    * </pre>
    *
    * Protobuf enum {@code FoundationOpType}

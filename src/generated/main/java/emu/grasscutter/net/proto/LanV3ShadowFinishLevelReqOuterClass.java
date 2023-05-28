@@ -19,21 +19,21 @@ public final class LanV3ShadowFinishLevelReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 finish_time = 1;</code>
+     * <code>uint32 finish_time = 12;</code>
      * @return The finishTime.
      */
     int getFinishTime();
 
     /**
-     * <code>uint32 level_id = 5;</code>
+     * <code>uint32 level_id = 10;</code>
      * @return The levelId.
      */
     int getLevelId();
   }
   /**
    * <pre>
-   * Name: KNMALDDNDBH
-   * CmdId: 23065
+   * CmdId: 22696
+   * Obf: MACBCAPDCGK
    * </pre>
    *
    * Protobuf type {@code LanV3ShadowFinishLevelReq}
@@ -80,14 +80,14 @@ public final class LanV3ShadowFinishLevelReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              finishTime_ = input.readUInt32();
-              break;
-            }
-            case 40: {
+            case 80: {
 
               levelId_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              finishTime_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,10 +122,10 @@ public final class LanV3ShadowFinishLevelReqOuterClass {
               emu.grasscutter.net.proto.LanV3ShadowFinishLevelReqOuterClass.LanV3ShadowFinishLevelReq.class, emu.grasscutter.net.proto.LanV3ShadowFinishLevelReqOuterClass.LanV3ShadowFinishLevelReq.Builder.class);
     }
 
-    public static final int FINISH_TIME_FIELD_NUMBER = 1;
+    public static final int FINISH_TIME_FIELD_NUMBER = 12;
     private int finishTime_;
     /**
-     * <code>uint32 finish_time = 1;</code>
+     * <code>uint32 finish_time = 12;</code>
      * @return The finishTime.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class LanV3ShadowFinishLevelReqOuterClass {
       return finishTime_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 5;
+    public static final int LEVEL_ID_FIELD_NUMBER = 10;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 5;</code>
+     * <code>uint32 level_id = 10;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -158,11 +158,11 @@ public final class LanV3ShadowFinishLevelReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (finishTime_ != 0) {
-        output.writeUInt32(1, finishTime_);
-      }
       if (levelId_ != 0) {
-        output.writeUInt32(5, levelId_);
+        output.writeUInt32(10, levelId_);
+      }
+      if (finishTime_ != 0) {
+        output.writeUInt32(12, finishTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class LanV3ShadowFinishLevelReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (finishTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, finishTime_);
-      }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, levelId_);
+          .computeUInt32Size(10, levelId_);
+      }
+      if (finishTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, finishTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class LanV3ShadowFinishLevelReqOuterClass {
     }
     /**
      * <pre>
-     * Name: KNMALDDNDBH
-     * CmdId: 23065
+     * CmdId: 22696
+     * Obf: MACBCAPDCGK
      * </pre>
      *
      * Protobuf type {@code LanV3ShadowFinishLevelReq}
@@ -470,7 +470,7 @@ public final class LanV3ShadowFinishLevelReqOuterClass {
 
       private int finishTime_ ;
       /**
-       * <code>uint32 finish_time = 1;</code>
+       * <code>uint32 finish_time = 12;</code>
        * @return The finishTime.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class LanV3ShadowFinishLevelReqOuterClass {
         return finishTime_;
       }
       /**
-       * <code>uint32 finish_time = 1;</code>
+       * <code>uint32 finish_time = 12;</code>
        * @param value The finishTime to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class LanV3ShadowFinishLevelReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 finish_time = 1;</code>
+       * <code>uint32 finish_time = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearFinishTime() {
@@ -501,7 +501,7 @@ public final class LanV3ShadowFinishLevelReqOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 5;</code>
+       * <code>uint32 level_id = 10;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class LanV3ShadowFinishLevelReqOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 5;</code>
+       * <code>uint32 level_id = 10;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class LanV3ShadowFinishLevelReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 5;</code>
+       * <code>uint32 level_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -597,8 +597,8 @@ public final class LanV3ShadowFinishLevelReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037LanV3ShadowFinishLevelReq.proto\"B\n\031Lan" +
-      "V3ShadowFinishLevelReq\022\023\n\013finish_time\030\001 " +
-      "\001(\r\022\020\n\010level_id\030\005 \001(\rB\033\n\031emu.grasscutter" +
+      "V3ShadowFinishLevelReq\022\023\n\013finish_time\030\014 " +
+      "\001(\r\022\020\n\010level_id\030\n \001(\rB\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

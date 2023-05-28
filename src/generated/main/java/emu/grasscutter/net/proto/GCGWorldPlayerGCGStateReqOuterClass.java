@@ -20,8 +20,8 @@ public final class GCGWorldPlayerGCGStateReqOuterClass {
   }
   /**
    * <pre>
-   * Name: PCIJLHIIMLA
-   * CmdId: 7827
+   * CmdId: 7421
+   * Obf: AJDKPAPGPMB
    * </pre>
    *
    * Protobuf type {@code GCGWorldPlayerGCGStateReq}
@@ -246,8 +246,8 @@ public final class GCGWorldPlayerGCGStateReqOuterClass {
     }
     /**
      * <pre>
-     * Name: PCIJLHIIMLA
-     * CmdId: 7827
+     * CmdId: 7421
+     * Obf: AJDKPAPGPMB
      * </pre>
      *
      * Protobuf type {@code GCGWorldPlayerGCGStateReq}

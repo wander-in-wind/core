@@ -35,8 +35,8 @@ public final class DailyTaskProgressNotifyOuterClass {
   }
   /**
    * <pre>
-   * Name: CAMFJNGDAOP
-   * CmdId: 160
+   * CmdId: 163
+   * Obf: PKNBMIJGAGF
    * </pre>
    *
    * Protobuf type {@code DailyTaskProgressNotify}
@@ -316,8 +316,8 @@ public final class DailyTaskProgressNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: CAMFJNGDAOP
-     * CmdId: 160
+     * CmdId: 163
+     * Obf: PKNBMIJGAGF
      * </pre>
      *
      * Protobuf type {@code DailyTaskProgressNotify}

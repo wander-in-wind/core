@@ -19,26 +19,26 @@ public final class GCGTavernNpcInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 14;</code>
-     * @return The levelId.
+     * <code>uint32 scene_point_id = 7;</code>
+     * @return The scenePointId.
      */
-    int getLevelId();
+    int getScenePointId();
 
     /**
-     * <code>uint32 id = 8;</code>
+     * <code>uint32 id = 5;</code>
      * @return The id.
      */
     int getId();
 
     /**
-     * <code>uint32 scene_point_id = 10;</code>
-     * @return The scenePointId.
+     * <code>uint32 level_id = 1;</code>
+     * @return The levelId.
      */
-    int getScenePointId();
+    int getLevelId();
   }
   /**
    * <pre>
-   * Name: EIOOMOJGHCP
+   * Obf: GPIDFBHLGOB
    * </pre>
    *
    * Protobuf type {@code GCGTavernNpcInfo}
@@ -85,19 +85,19 @@ public final class GCGTavernNpcInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 8: {
+
+              levelId_ = input.readUInt32();
+              break;
+            }
+            case 40: {
 
               id_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 56: {
 
               scenePointId_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
-              levelId_ = input.readUInt32();
               break;
             }
             default: {
@@ -132,21 +132,21 @@ public final class GCGTavernNpcInfoOuterClass {
               emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.class, emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 14;
-    private int levelId_;
+    public static final int SCENE_POINT_ID_FIELD_NUMBER = 7;
+    private int scenePointId_;
     /**
-     * <code>uint32 level_id = 14;</code>
-     * @return The levelId.
+     * <code>uint32 scene_point_id = 7;</code>
+     * @return The scenePointId.
      */
     @java.lang.Override
-    public int getLevelId() {
-      return levelId_;
+    public int getScenePointId() {
+      return scenePointId_;
     }
 
-    public static final int ID_FIELD_NUMBER = 8;
+    public static final int ID_FIELD_NUMBER = 5;
     private int id_;
     /**
-     * <code>uint32 id = 8;</code>
+     * <code>uint32 id = 5;</code>
      * @return The id.
      */
     @java.lang.Override
@@ -154,15 +154,15 @@ public final class GCGTavernNpcInfoOuterClass {
       return id_;
     }
 
-    public static final int SCENE_POINT_ID_FIELD_NUMBER = 10;
-    private int scenePointId_;
+    public static final int LEVEL_ID_FIELD_NUMBER = 1;
+    private int levelId_;
     /**
-     * <code>uint32 scene_point_id = 10;</code>
-     * @return The scenePointId.
+     * <code>uint32 level_id = 1;</code>
+     * @return The levelId.
      */
     @java.lang.Override
-    public int getScenePointId() {
-      return scenePointId_;
+    public int getLevelId() {
+      return levelId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -179,14 +179,14 @@ public final class GCGTavernNpcInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (levelId_ != 0) {
+        output.writeUInt32(1, levelId_);
+      }
       if (id_ != 0) {
-        output.writeUInt32(8, id_);
+        output.writeUInt32(5, id_);
       }
       if (scenePointId_ != 0) {
-        output.writeUInt32(10, scenePointId_);
-      }
-      if (levelId_ != 0) {
-        output.writeUInt32(14, levelId_);
+        output.writeUInt32(7, scenePointId_);
       }
       unknownFields.writeTo(output);
     }
@@ -197,17 +197,17 @@ public final class GCGTavernNpcInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (levelId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, levelId_);
+      }
       if (id_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, id_);
+          .computeUInt32Size(5, id_);
       }
       if (scenePointId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, scenePointId_);
-      }
-      if (levelId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, levelId_);
+          .computeUInt32Size(7, scenePointId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -224,12 +224,12 @@ public final class GCGTavernNpcInfoOuterClass {
       }
       emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo other = (emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo) obj;
 
-      if (getLevelId()
-          != other.getLevelId()) return false;
-      if (getId()
-          != other.getId()) return false;
       if (getScenePointId()
           != other.getScenePointId()) return false;
+      if (getId()
+          != other.getId()) return false;
+      if (getLevelId()
+          != other.getLevelId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -241,12 +241,12 @@ public final class GCGTavernNpcInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
-      hash = (37 * hash) + ID_FIELD_NUMBER;
-      hash = (53 * hash) + getId();
       hash = (37 * hash) + SCENE_POINT_ID_FIELD_NUMBER;
       hash = (53 * hash) + getScenePointId();
+      hash = (37 * hash) + ID_FIELD_NUMBER;
+      hash = (53 * hash) + getId();
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -344,7 +344,7 @@ public final class GCGTavernNpcInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: EIOOMOJGHCP
+     * Obf: GPIDFBHLGOB
      * </pre>
      *
      * Protobuf type {@code GCGTavernNpcInfo}
@@ -384,11 +384,11 @@ public final class GCGTavernNpcInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        levelId_ = 0;
+        scenePointId_ = 0;
 
         id_ = 0;
 
-        scenePointId_ = 0;
+        levelId_ = 0;
 
         return this;
       }
@@ -416,9 +416,9 @@ public final class GCGTavernNpcInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo buildPartial() {
         emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo result = new emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo(this);
-        result.levelId_ = levelId_;
-        result.id_ = id_;
         result.scenePointId_ = scenePointId_;
+        result.id_ = id_;
+        result.levelId_ = levelId_;
         onBuilt();
         return result;
       }
@@ -467,14 +467,14 @@ public final class GCGTavernNpcInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo other) {
         if (other == emu.grasscutter.net.proto.GCGTavernNpcInfoOuterClass.GCGTavernNpcInfo.getDefaultInstance()) return this;
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
+        if (other.getScenePointId() != 0) {
+          setScenePointId(other.getScenePointId());
         }
         if (other.getId() != 0) {
           setId(other.getId());
         }
-        if (other.getScenePointId() != 0) {
-          setScenePointId(other.getScenePointId());
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -505,71 +505,9 @@ public final class GCGTavernNpcInfoOuterClass {
         return this;
       }
 
-      private int levelId_ ;
-      /**
-       * <code>uint32 level_id = 14;</code>
-       * @return The levelId.
-       */
-      @java.lang.Override
-      public int getLevelId() {
-        return levelId_;
-      }
-      /**
-       * <code>uint32 level_id = 14;</code>
-       * @param value The levelId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevelId(int value) {
-        
-        levelId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level_id = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevelId() {
-        
-        levelId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int id_ ;
-      /**
-       * <code>uint32 id = 8;</code>
-       * @return The id.
-       */
-      @java.lang.Override
-      public int getId() {
-        return id_;
-      }
-      /**
-       * <code>uint32 id = 8;</code>
-       * @param value The id to set.
-       * @return This builder for chaining.
-       */
-      public Builder setId(int value) {
-        
-        id_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 id = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearId() {
-        
-        id_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int scenePointId_ ;
       /**
-       * <code>uint32 scene_point_id = 10;</code>
+       * <code>uint32 scene_point_id = 7;</code>
        * @return The scenePointId.
        */
       @java.lang.Override
@@ -577,7 +515,7 @@ public final class GCGTavernNpcInfoOuterClass {
         return scenePointId_;
       }
       /**
-       * <code>uint32 scene_point_id = 10;</code>
+       * <code>uint32 scene_point_id = 7;</code>
        * @param value The scenePointId to set.
        * @return This builder for chaining.
        */
@@ -588,12 +526,74 @@ public final class GCGTavernNpcInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 scene_point_id = 10;</code>
+       * <code>uint32 scene_point_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearScenePointId() {
         
         scenePointId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int id_ ;
+      /**
+       * <code>uint32 id = 5;</code>
+       * @return The id.
+       */
+      @java.lang.Override
+      public int getId() {
+        return id_;
+      }
+      /**
+       * <code>uint32 id = 5;</code>
+       * @param value The id to set.
+       * @return This builder for chaining.
+       */
+      public Builder setId(int value) {
+        
+        id_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 id = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearId() {
+        
+        id_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int levelId_ ;
+      /**
+       * <code>uint32 level_id = 1;</code>
+       * @return The levelId.
+       */
+      @java.lang.Override
+      public int getLevelId() {
+        return levelId_;
+      }
+      /**
+       * <code>uint32 level_id = 1;</code>
+       * @param value The levelId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevelId(int value) {
+        
+        levelId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 level_id = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevelId() {
+        
+        levelId_ = 0;
         onChanged();
         return this;
       }
@@ -665,8 +665,8 @@ public final class GCGTavernNpcInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026GCGTavernNpcInfo.proto\"H\n\020GCGTavernNpc" +
-      "Info\022\020\n\010level_id\030\016 \001(\r\022\n\n\002id\030\010 \001(\r\022\026\n\016sc" +
-      "ene_point_id\030\n \001(\rB\033\n\031emu.grasscutter.ne" +
+      "Info\022\026\n\016scene_point_id\030\007 \001(\r\022\n\n\002id\030\005 \001(\r" +
+      "\022\020\n\010level_id\030\001 \001(\rB\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -678,7 +678,7 @@ public final class GCGTavernNpcInfoOuterClass {
     internal_static_GCGTavernNpcInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGTavernNpcInfo_descriptor,
-        new java.lang.String[] { "LevelId", "Id", "ScenePointId", });
+        new java.lang.String[] { "ScenePointId", "Id", "LevelId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

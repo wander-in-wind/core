@@ -44,8 +44,8 @@ public final class WidgetActiveChangeNotifyOuterClass {
   }
   /**
    * <pre>
-   * Name: FMGIFBHJHEP
-   * CmdId: 4264
+   * CmdId: 4268
+   * Obf: IPJHCDMFGBB
    * </pre>
    *
    * Protobuf type {@code WidgetActiveChangeNotify}
@@ -337,8 +337,8 @@ public final class WidgetActiveChangeNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: FMGIFBHJHEP
-     * CmdId: 4264
+     * CmdId: 4268
+     * Obf: IPJHCDMFGBB
      * </pre>
      *
      * Protobuf type {@code WidgetActiveChangeNotify}

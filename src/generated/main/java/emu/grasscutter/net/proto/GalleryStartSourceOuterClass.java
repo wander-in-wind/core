@@ -16,7 +16,7 @@ public final class GalleryStartSourceOuterClass {
   }
   /**
    * <pre>
-   * Name: MIAFPBFKBHC
+   * Obf: PKDPAPFKIAK
    * </pre>
    *
    * Protobuf enum {@code GalleryStartSource}

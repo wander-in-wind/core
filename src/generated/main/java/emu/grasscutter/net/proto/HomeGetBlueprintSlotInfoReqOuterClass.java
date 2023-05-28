@@ -20,8 +20,8 @@ public final class HomeGetBlueprintSlotInfoReqOuterClass {
   }
   /**
    * <pre>
-   * Name: MFOKKNGFOEP
-   * CmdId: 4657
+   * CmdId: 4452
+   * Obf: JAMFEAFLMEK
    * </pre>
    *
    * Protobuf type {@code HomeGetBlueprintSlotInfoReq}
@@ -246,8 +246,8 @@ public final class HomeGetBlueprintSlotInfoReqOuterClass {
     }
     /**
      * <pre>
-     * Name: MFOKKNGFOEP
-     * CmdId: 4657
+     * CmdId: 4452
+     * Obf: JAMFEAFLMEK
      * </pre>
      *
      * Protobuf type {@code HomeGetBlueprintSlotInfoReq}

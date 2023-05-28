@@ -19,15 +19,15 @@ public final class InstableSprayGalleryInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 score = 6;</code>
+     * <code>uint32 score = 8;</code>
      * @return The score.
      */
     int getScore();
   }
   /**
    * <pre>
-   * Name: KCMKBMLANBF
-   * CmdId: 5541
+   * CmdId: 5520
+   * Obf: KOODHOENOHB
    * </pre>
    *
    * Protobuf type {@code InstableSprayGalleryInfoNotify}
@@ -74,7 +74,7 @@ public final class InstableSprayGalleryInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 64: {
 
               score_ = input.readUInt32();
               break;
@@ -111,10 +111,10 @@ public final class InstableSprayGalleryInfoNotifyOuterClass {
               emu.grasscutter.net.proto.InstableSprayGalleryInfoNotifyOuterClass.InstableSprayGalleryInfoNotify.class, emu.grasscutter.net.proto.InstableSprayGalleryInfoNotifyOuterClass.InstableSprayGalleryInfoNotify.Builder.class);
     }
 
-    public static final int SCORE_FIELD_NUMBER = 6;
+    public static final int SCORE_FIELD_NUMBER = 8;
     private int score_;
     /**
-     * <code>uint32 score = 6;</code>
+     * <code>uint32 score = 8;</code>
      * @return The score.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class InstableSprayGalleryInfoNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (score_ != 0) {
-        output.writeUInt32(6, score_);
+        output.writeUInt32(8, score_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class InstableSprayGalleryInfoNotifyOuterClass {
       size = 0;
       if (score_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, score_);
+          .computeUInt32Size(8, score_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class InstableSprayGalleryInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: KCMKBMLANBF
-     * CmdId: 5541
+     * CmdId: 5520
+     * Obf: KOODHOENOHB
      * </pre>
      *
      * Protobuf type {@code InstableSprayGalleryInfoNotify}
@@ -431,7 +431,7 @@ public final class InstableSprayGalleryInfoNotifyOuterClass {
 
       private int score_ ;
       /**
-       * <code>uint32 score = 6;</code>
+       * <code>uint32 score = 8;</code>
        * @return The score.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class InstableSprayGalleryInfoNotifyOuterClass {
         return score_;
       }
       /**
-       * <code>uint32 score = 6;</code>
+       * <code>uint32 score = 8;</code>
        * @param value The score to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class InstableSprayGalleryInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 score = 6;</code>
+       * <code>uint32 score = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearScore() {
@@ -528,7 +528,7 @@ public final class InstableSprayGalleryInfoNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n$InstableSprayGalleryInfoNotify.proto\"/" +
       "\n\036InstableSprayGalleryInfoNotify\022\r\n\005scor" +
-      "e\030\006 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "e\030\010 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

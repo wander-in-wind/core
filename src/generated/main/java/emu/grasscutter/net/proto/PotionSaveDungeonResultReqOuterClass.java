@@ -19,21 +19,21 @@ public final class PotionSaveDungeonResultReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 stage_id = 7;</code>
+     * <code>uint32 stage_id = 13;</code>
      * @return The stageId.
      */
     int getStageId();
 
     /**
-     * <code>uint32 level_id = 9;</code>
+     * <code>uint32 level_id = 8;</code>
      * @return The levelId.
      */
     int getLevelId();
   }
   /**
    * <pre>
-   * Name: ADNJJDMMMEL
-   * CmdId: 8306
+   * CmdId: 8611
+   * Obf: LLJOJKMGHDJ
    * </pre>
    *
    * Protobuf type {@code PotionSaveDungeonResultReq}
@@ -80,14 +80,14 @@ public final class PotionSaveDungeonResultReqOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
-
-              stageId_ = input.readUInt32();
-              break;
-            }
-            case 72: {
+            case 64: {
 
               levelId_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              stageId_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,10 +122,10 @@ public final class PotionSaveDungeonResultReqOuterClass {
               emu.grasscutter.net.proto.PotionSaveDungeonResultReqOuterClass.PotionSaveDungeonResultReq.class, emu.grasscutter.net.proto.PotionSaveDungeonResultReqOuterClass.PotionSaveDungeonResultReq.Builder.class);
     }
 
-    public static final int STAGE_ID_FIELD_NUMBER = 7;
+    public static final int STAGE_ID_FIELD_NUMBER = 13;
     private int stageId_;
     /**
-     * <code>uint32 stage_id = 7;</code>
+     * <code>uint32 stage_id = 13;</code>
      * @return The stageId.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class PotionSaveDungeonResultReqOuterClass {
       return stageId_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 9;
+    public static final int LEVEL_ID_FIELD_NUMBER = 8;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 9;</code>
+     * <code>uint32 level_id = 8;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -158,11 +158,11 @@ public final class PotionSaveDungeonResultReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (stageId_ != 0) {
-        output.writeUInt32(7, stageId_);
-      }
       if (levelId_ != 0) {
-        output.writeUInt32(9, levelId_);
+        output.writeUInt32(8, levelId_);
+      }
+      if (stageId_ != 0) {
+        output.writeUInt32(13, stageId_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class PotionSaveDungeonResultReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (stageId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, stageId_);
-      }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, levelId_);
+          .computeUInt32Size(8, levelId_);
+      }
+      if (stageId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, stageId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class PotionSaveDungeonResultReqOuterClass {
     }
     /**
      * <pre>
-     * Name: ADNJJDMMMEL
-     * CmdId: 8306
+     * CmdId: 8611
+     * Obf: LLJOJKMGHDJ
      * </pre>
      *
      * Protobuf type {@code PotionSaveDungeonResultReq}
@@ -470,7 +470,7 @@ public final class PotionSaveDungeonResultReqOuterClass {
 
       private int stageId_ ;
       /**
-       * <code>uint32 stage_id = 7;</code>
+       * <code>uint32 stage_id = 13;</code>
        * @return The stageId.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class PotionSaveDungeonResultReqOuterClass {
         return stageId_;
       }
       /**
-       * <code>uint32 stage_id = 7;</code>
+       * <code>uint32 stage_id = 13;</code>
        * @param value The stageId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class PotionSaveDungeonResultReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stage_id = 7;</code>
+       * <code>uint32 stage_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearStageId() {
@@ -501,7 +501,7 @@ public final class PotionSaveDungeonResultReqOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 9;</code>
+       * <code>uint32 level_id = 8;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class PotionSaveDungeonResultReqOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 9;</code>
+       * <code>uint32 level_id = 8;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class PotionSaveDungeonResultReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 9;</code>
+       * <code>uint32 level_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -597,8 +597,8 @@ public final class PotionSaveDungeonResultReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n PotionSaveDungeonResultReq.proto\"@\n\032Po" +
-      "tionSaveDungeonResultReq\022\020\n\010stage_id\030\007 \001" +
-      "(\r\022\020\n\010level_id\030\t \001(\rB\033\n\031emu.grasscutter." +
+      "tionSaveDungeonResultReq\022\020\n\010stage_id\030\r \001" +
+      "(\r\022\020\n\010level_id\030\010 \001(\rB\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

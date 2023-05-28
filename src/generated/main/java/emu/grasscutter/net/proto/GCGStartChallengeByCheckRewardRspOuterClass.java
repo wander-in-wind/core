@@ -19,104 +19,72 @@ public final class GCGStartChallengeByCheckRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *DNJDACFOEJA snooguess swapperoo
-     * </pre>
-     *
-     * <code>repeated uint32 exceeded_item_type_list = 11;</code>
-     * @return A list containing the exceededItemTypeList.
+     * <code>repeated uint32 GGJOANDELMJ = 8;</code>
+     * @return A list containing the gGJOANDELMJ.
      */
-    java.util.List<java.lang.Integer> getExceededItemTypeListList();
+    java.util.List<java.lang.Integer> getGGJOANDELMJList();
     /**
-     * <pre>
-     *DNJDACFOEJA snooguess swapperoo
-     * </pre>
-     *
-     * <code>repeated uint32 exceeded_item_type_list = 11;</code>
-     * @return The count of exceededItemTypeList.
+     * <code>repeated uint32 GGJOANDELMJ = 8;</code>
+     * @return The count of gGJOANDELMJ.
      */
-    int getExceededItemTypeListCount();
+    int getGGJOANDELMJCount();
     /**
-     * <pre>
-     *DNJDACFOEJA snooguess swapperoo
-     * </pre>
-     *
-     * <code>repeated uint32 exceeded_item_type_list = 11;</code>
+     * <code>repeated uint32 GGJOANDELMJ = 8;</code>
      * @param index The index of the element to return.
-     * @return The exceededItemTypeList at the given index.
+     * @return The gGJOANDELMJ at the given index.
      */
-    int getExceededItemTypeList(int index);
+    int getGGJOANDELMJ(int index);
 
     /**
-     * <code>uint32 level_id = 1;</code>
-     * @return The levelId.
+     * <code>repeated uint32 JIDEBPPDFAP = 3;</code>
+     * @return A list containing the jIDEBPPDFAP.
      */
-    int getLevelId();
+    java.util.List<java.lang.Integer> getJIDEBPPDFAPList();
+    /**
+     * <code>repeated uint32 JIDEBPPDFAP = 3;</code>
+     * @return The count of jIDEBPPDFAP.
+     */
+    int getJIDEBPPDFAPCount();
+    /**
+     * <code>repeated uint32 JIDEBPPDFAP = 3;</code>
+     * @param index The index of the element to return.
+     * @return The jIDEBPPDFAP at the given index.
+     */
+    int getJIDEBPPDFAP(int index);
 
     /**
-     * <code>int32 retcode = 8;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>uint32 config_id = 4;</code>
+     * <code>uint32 config_id = 1;</code>
      * @return The configId.
      */
     int getConfigId();
 
     /**
-     * <pre>
-     *NIELIIFHJCO PPHCMNDNEBE snooswap
-     * </pre>
-     *
-     * <code>.GCGLevelType level_type = 3;</code>
-     * @return The enum numeric value on the wire for levelType.
+     * <code>.JKLJHDFICPL KPHEDFKMFOG = 13;</code>
+     * @return The enum numeric value on the wire for kPHEDFKMFOG.
      */
-    int getLevelTypeValue();
+    int getKPHEDFKMFOGValue();
     /**
-     * <pre>
-     *NIELIIFHJCO PPHCMNDNEBE snooswap
-     * </pre>
-     *
-     * <code>.GCGLevelType level_type = 3;</code>
-     * @return The levelType.
+     * <code>.JKLJHDFICPL KPHEDFKMFOG = 13;</code>
+     * @return The kPHEDFKMFOG.
      */
-    emu.grasscutter.net.proto.GCGLevelTypeOuterClass.GCGLevelType getLevelType();
+    emu.grasscutter.net.proto.JKLJHDFICPLOuterClass.JKLJHDFICPL getKPHEDFKMFOG();
 
     /**
-     * <pre>
-     *NPLFIOFPAKH snooguess swapperoo
-     * </pre>
-     *
-     * <code>repeated uint32 exceeded_item_list = 12;</code>
-     * @return A list containing the exceededItemList.
+     * <code>uint32 level_id = 2;</code>
+     * @return The levelId.
      */
-    java.util.List<java.lang.Integer> getExceededItemListList();
+    int getLevelId();
+
     /**
-     * <pre>
-     *NPLFIOFPAKH snooguess swapperoo
-     * </pre>
-     *
-     * <code>repeated uint32 exceeded_item_list = 12;</code>
-     * @return The count of exceededItemList.
+     * <code>int32 retcode = 4;</code>
+     * @return The retcode.
      */
-    int getExceededItemListCount();
-    /**
-     * <pre>
-     *NPLFIOFPAKH snooguess swapperoo
-     * </pre>
-     *
-     * <code>repeated uint32 exceeded_item_list = 12;</code>
-     * @param index The index of the element to return.
-     * @return The exceededItemList at the given index.
-     */
-    int getExceededItemList(int index);
+    int getRetcode();
   }
   /**
    * <pre>
-   * Name: GHLIEPKOHJD
-   * CmdId: 7942
+   * CmdId: 7702
+   * Obf: MPAGMBABPFH
    * </pre>
    *
    * Protobuf type {@code GCGStartChallengeByCheckRewardRsp}
@@ -131,9 +99,9 @@ public final class GCGStartChallengeByCheckRewardRspOuterClass {
       super(builder);
     }
     private GCGStartChallengeByCheckRewardRsp() {
-      exceededItemTypeList_ = emptyIntList();
-      levelType_ = 0;
-      exceededItemList_ = emptyIntList();
+      gGJOANDELMJ_ = emptyIntList();
+      jIDEBPPDFAP_ = emptyIntList();
+      kPHEDFKMFOG_ = 0;
     }
 
     @java.lang.Override
@@ -169,65 +137,65 @@ public final class GCGStartChallengeByCheckRewardRspOuterClass {
               break;
             case 8: {
 
+              configId_ = input.readUInt32();
+              break;
+            }
+            case 16: {
+
               levelId_ = input.readUInt32();
               break;
             }
             case 24: {
-              int rawValue = input.readEnum();
-
-              levelType_ = rawValue;
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                jIDEBPPDFAP_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              jIDEBPPDFAP_.addInt(input.readUInt32());
+              break;
+            }
+            case 26: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                jIDEBPPDFAP_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                jIDEBPPDFAP_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
               break;
             }
             case 32: {
 
-              configId_ = input.readUInt32();
-              break;
-            }
-            case 64: {
-
               retcode_ = input.readInt32();
               break;
             }
-            case 88: {
+            case 64: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                exceededItemTypeList_ = newIntList();
+                gGJOANDELMJ_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
-              exceededItemTypeList_.addInt(input.readUInt32());
+              gGJOANDELMJ_.addInt(input.readUInt32());
               break;
             }
-            case 90: {
+            case 66: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                exceededItemTypeList_ = newIntList();
+                gGJOANDELMJ_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
-                exceededItemTypeList_.addInt(input.readUInt32());
+                gGJOANDELMJ_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
             }
-            case 96: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                exceededItemList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              exceededItemList_.addInt(input.readUInt32());
-              break;
-            }
-            case 98: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                exceededItemList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                exceededItemList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
+            case 104: {
+              int rawValue = input.readEnum();
+
+              kPHEDFKMFOG_ = rawValue;
               break;
             }
             default: {
@@ -245,11 +213,11 @@ public final class GCGStartChallengeByCheckRewardRspOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          exceededItemTypeList_.makeImmutable(); // C
-        }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          exceededItemList_.makeImmutable(); // C
+          jIDEBPPDFAP_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          gGJOANDELMJ_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -268,72 +236,66 @@ public final class GCGStartChallengeByCheckRewardRspOuterClass {
               emu.grasscutter.net.proto.GCGStartChallengeByCheckRewardRspOuterClass.GCGStartChallengeByCheckRewardRsp.class, emu.grasscutter.net.proto.GCGStartChallengeByCheckRewardRspOuterClass.GCGStartChallengeByCheckRewardRsp.Builder.class);
     }
 
-    public static final int EXCEEDED_ITEM_TYPE_LIST_FIELD_NUMBER = 11;
-    private com.google.protobuf.Internal.IntList exceededItemTypeList_;
+    public static final int GGJOANDELMJ_FIELD_NUMBER = 8;
+    private com.google.protobuf.Internal.IntList gGJOANDELMJ_;
     /**
-     * <pre>
-     *DNJDACFOEJA snooguess swapperoo
-     * </pre>
-     *
-     * <code>repeated uint32 exceeded_item_type_list = 11;</code>
-     * @return A list containing the exceededItemTypeList.
+     * <code>repeated uint32 GGJOANDELMJ = 8;</code>
+     * @return A list containing the gGJOANDELMJ.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getExceededItemTypeListList() {
-      return exceededItemTypeList_;
+        getGGJOANDELMJList() {
+      return gGJOANDELMJ_;
     }
     /**
-     * <pre>
-     *DNJDACFOEJA snooguess swapperoo
-     * </pre>
-     *
-     * <code>repeated uint32 exceeded_item_type_list = 11;</code>
-     * @return The count of exceededItemTypeList.
+     * <code>repeated uint32 GGJOANDELMJ = 8;</code>
+     * @return The count of gGJOANDELMJ.
      */
-    public int getExceededItemTypeListCount() {
-      return exceededItemTypeList_.size();
+    public int getGGJOANDELMJCount() {
+      return gGJOANDELMJ_.size();
     }
     /**
-     * <pre>
-     *DNJDACFOEJA snooguess swapperoo
-     * </pre>
-     *
-     * <code>repeated uint32 exceeded_item_type_list = 11;</code>
+     * <code>repeated uint32 GGJOANDELMJ = 8;</code>
      * @param index The index of the element to return.
-     * @return The exceededItemTypeList at the given index.
+     * @return The gGJOANDELMJ at the given index.
      */
-    public int getExceededItemTypeList(int index) {
-      return exceededItemTypeList_.getInt(index);
+    public int getGGJOANDELMJ(int index) {
+      return gGJOANDELMJ_.getInt(index);
     }
-    private int exceededItemTypeListMemoizedSerializedSize = -1;
+    private int gGJOANDELMJMemoizedSerializedSize = -1;
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 1;
-    private int levelId_;
+    public static final int JIDEBPPDFAP_FIELD_NUMBER = 3;
+    private com.google.protobuf.Internal.IntList jIDEBPPDFAP_;
     /**
-     * <code>uint32 level_id = 1;</code>
-     * @return The levelId.
+     * <code>repeated uint32 JIDEBPPDFAP = 3;</code>
+     * @return A list containing the jIDEBPPDFAP.
      */
     @java.lang.Override
-    public int getLevelId() {
-      return levelId_;
+    public java.util.List<java.lang.Integer>
+        getJIDEBPPDFAPList() {
+      return jIDEBPPDFAP_;
     }
-
-    public static final int RETCODE_FIELD_NUMBER = 8;
-    private int retcode_;
     /**
-     * <code>int32 retcode = 8;</code>
-     * @return The retcode.
+     * <code>repeated uint32 JIDEBPPDFAP = 3;</code>
+     * @return The count of jIDEBPPDFAP.
      */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
+    public int getJIDEBPPDFAPCount() {
+      return jIDEBPPDFAP_.size();
     }
+    /**
+     * <code>repeated uint32 JIDEBPPDFAP = 3;</code>
+     * @param index The index of the element to return.
+     * @return The jIDEBPPDFAP at the given index.
+     */
+    public int getJIDEBPPDFAP(int index) {
+      return jIDEBPPDFAP_.getInt(index);
+    }
+    private int jIDEBPPDFAPMemoizedSerializedSize = -1;
 
-    public static final int CONFIG_ID_FIELD_NUMBER = 4;
+    public static final int CONFIG_ID_FIELD_NUMBER = 1;
     private int configId_;
     /**
-     * <code>uint32 config_id = 4;</code>
+     * <code>uint32 config_id = 1;</code>
      * @return The configId.
      */
     @java.lang.Override
@@ -341,72 +303,46 @@ public final class GCGStartChallengeByCheckRewardRspOuterClass {
       return configId_;
     }
 
-    public static final int LEVEL_TYPE_FIELD_NUMBER = 3;
-    private int levelType_;
+    public static final int KPHEDFKMFOG_FIELD_NUMBER = 13;
+    private int kPHEDFKMFOG_;
     /**
-     * <pre>
-     *NIELIIFHJCO PPHCMNDNEBE snooswap
-     * </pre>
-     *
-     * <code>.GCGLevelType level_type = 3;</code>
-     * @return The enum numeric value on the wire for levelType.
+     * <code>.JKLJHDFICPL KPHEDFKMFOG = 13;</code>
+     * @return The enum numeric value on the wire for kPHEDFKMFOG.
      */
-    @java.lang.Override public int getLevelTypeValue() {
-      return levelType_;
+    @java.lang.Override public int getKPHEDFKMFOGValue() {
+      return kPHEDFKMFOG_;
     }
     /**
-     * <pre>
-     *NIELIIFHJCO PPHCMNDNEBE snooswap
-     * </pre>
-     *
-     * <code>.GCGLevelType level_type = 3;</code>
-     * @return The levelType.
+     * <code>.JKLJHDFICPL KPHEDFKMFOG = 13;</code>
+     * @return The kPHEDFKMFOG.
      */
-    @java.lang.Override public emu.grasscutter.net.proto.GCGLevelTypeOuterClass.GCGLevelType getLevelType() {
+    @java.lang.Override public emu.grasscutter.net.proto.JKLJHDFICPLOuterClass.JKLJHDFICPL getKPHEDFKMFOG() {
       @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.GCGLevelTypeOuterClass.GCGLevelType result = emu.grasscutter.net.proto.GCGLevelTypeOuterClass.GCGLevelType.valueOf(levelType_);
-      return result == null ? emu.grasscutter.net.proto.GCGLevelTypeOuterClass.GCGLevelType.UNRECOGNIZED : result;
+      emu.grasscutter.net.proto.JKLJHDFICPLOuterClass.JKLJHDFICPL result = emu.grasscutter.net.proto.JKLJHDFICPLOuterClass.JKLJHDFICPL.valueOf(kPHEDFKMFOG_);
+      return result == null ? emu.grasscutter.net.proto.JKLJHDFICPLOuterClass.JKLJHDFICPL.UNRECOGNIZED : result;
     }
 
-    public static final int EXCEEDED_ITEM_LIST_FIELD_NUMBER = 12;
-    private com.google.protobuf.Internal.IntList exceededItemList_;
+    public static final int LEVEL_ID_FIELD_NUMBER = 2;
+    private int levelId_;
     /**
-     * <pre>
-     *NPLFIOFPAKH snooguess swapperoo
-     * </pre>
-     *
-     * <code>repeated uint32 exceeded_item_list = 12;</code>
-     * @return A list containing the exceededItemList.
+     * <code>uint32 level_id = 2;</code>
+     * @return The levelId.
      */
     @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getExceededItemListList() {
-      return exceededItemList_;
+    public int getLevelId() {
+      return levelId_;
     }
+
+    public static final int RETCODE_FIELD_NUMBER = 4;
+    private int retcode_;
     /**
-     * <pre>
-     *NPLFIOFPAKH snooguess swapperoo
-     * </pre>
-     *
-     * <code>repeated uint32 exceeded_item_list = 12;</code>
-     * @return The count of exceededItemList.
+     * <code>int32 retcode = 4;</code>
+     * @return The retcode.
      */
-    public int getExceededItemListCount() {
-      return exceededItemList_.size();
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
-    /**
-     * <pre>
-     *NPLFIOFPAKH snooguess swapperoo
-     * </pre>
-     *
-     * <code>repeated uint32 exceeded_item_list = 12;</code>
-     * @param index The index of the element to return.
-     * @return The exceededItemList at the given index.
-     */
-    public int getExceededItemList(int index) {
-      return exceededItemList_.getInt(index);
-    }
-    private int exceededItemListMemoizedSerializedSize = -1;
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -423,31 +359,31 @@ public final class GCGStartChallengeByCheckRewardRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (levelId_ != 0) {
-        output.writeUInt32(1, levelId_);
-      }
-      if (levelType_ != emu.grasscutter.net.proto.GCGLevelTypeOuterClass.GCGLevelType.GCG_LEVEL_TYPE_NONE.getNumber()) {
-        output.writeEnum(3, levelType_);
-      }
       if (configId_ != 0) {
-        output.writeUInt32(4, configId_);
+        output.writeUInt32(1, configId_);
+      }
+      if (levelId_ != 0) {
+        output.writeUInt32(2, levelId_);
+      }
+      if (getJIDEBPPDFAPList().size() > 0) {
+        output.writeUInt32NoTag(26);
+        output.writeUInt32NoTag(jIDEBPPDFAPMemoizedSerializedSize);
+      }
+      for (int i = 0; i < jIDEBPPDFAP_.size(); i++) {
+        output.writeUInt32NoTag(jIDEBPPDFAP_.getInt(i));
       }
       if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
+        output.writeInt32(4, retcode_);
       }
-      if (getExceededItemTypeListList().size() > 0) {
-        output.writeUInt32NoTag(90);
-        output.writeUInt32NoTag(exceededItemTypeListMemoizedSerializedSize);
+      if (getGGJOANDELMJList().size() > 0) {
+        output.writeUInt32NoTag(66);
+        output.writeUInt32NoTag(gGJOANDELMJMemoizedSerializedSize);
       }
-      for (int i = 0; i < exceededItemTypeList_.size(); i++) {
-        output.writeUInt32NoTag(exceededItemTypeList_.getInt(i));
+      for (int i = 0; i < gGJOANDELMJ_.size(); i++) {
+        output.writeUInt32NoTag(gGJOANDELMJ_.getInt(i));
       }
-      if (getExceededItemListList().size() > 0) {
-        output.writeUInt32NoTag(98);
-        output.writeUInt32NoTag(exceededItemListMemoizedSerializedSize);
-      }
-      for (int i = 0; i < exceededItemList_.size(); i++) {
-        output.writeUInt32NoTag(exceededItemList_.getInt(i));
+      if (kPHEDFKMFOG_ != emu.grasscutter.net.proto.JKLJHDFICPLOuterClass.JKLJHDFICPL.JKLJHDFICPL_GcgLevelNone.getNumber()) {
+        output.writeEnum(13, kPHEDFKMFOG_);
       }
       unknownFields.writeTo(output);
     }
@@ -458,49 +394,49 @@ public final class GCGStartChallengeByCheckRewardRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (levelId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, levelId_);
-      }
-      if (levelType_ != emu.grasscutter.net.proto.GCGLevelTypeOuterClass.GCGLevelType.GCG_LEVEL_TYPE_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(3, levelType_);
-      }
       if (configId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, configId_);
+          .computeUInt32Size(1, configId_);
+      }
+      if (levelId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, levelId_);
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < jIDEBPPDFAP_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(jIDEBPPDFAP_.getInt(i));
+        }
+        size += dataSize;
+        if (!getJIDEBPPDFAPList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        jIDEBPPDFAPMemoizedSerializedSize = dataSize;
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
+          .computeInt32Size(4, retcode_);
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < exceededItemTypeList_.size(); i++) {
+        for (int i = 0; i < gGJOANDELMJ_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(exceededItemTypeList_.getInt(i));
+            .computeUInt32SizeNoTag(gGJOANDELMJ_.getInt(i));
         }
         size += dataSize;
-        if (!getExceededItemTypeListList().isEmpty()) {
+        if (!getGGJOANDELMJList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        exceededItemTypeListMemoizedSerializedSize = dataSize;
+        gGJOANDELMJMemoizedSerializedSize = dataSize;
       }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < exceededItemList_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(exceededItemList_.getInt(i));
-        }
-        size += dataSize;
-        if (!getExceededItemListList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        exceededItemListMemoizedSerializedSize = dataSize;
+      if (kPHEDFKMFOG_ != emu.grasscutter.net.proto.JKLJHDFICPLOuterClass.JKLJHDFICPL.JKLJHDFICPL_GcgLevelNone.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(13, kPHEDFKMFOG_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -517,17 +453,17 @@ public final class GCGStartChallengeByCheckRewardRspOuterClass {
       }
       emu.grasscutter.net.proto.GCGStartChallengeByCheckRewardRspOuterClass.GCGStartChallengeByCheckRewardRsp other = (emu.grasscutter.net.proto.GCGStartChallengeByCheckRewardRspOuterClass.GCGStartChallengeByCheckRewardRsp) obj;
 
-      if (!getExceededItemTypeListList()
-          .equals(other.getExceededItemTypeListList())) return false;
+      if (!getGGJOANDELMJList()
+          .equals(other.getGGJOANDELMJList())) return false;
+      if (!getJIDEBPPDFAPList()
+          .equals(other.getJIDEBPPDFAPList())) return false;
+      if (getConfigId()
+          != other.getConfigId()) return false;
+      if (kPHEDFKMFOG_ != other.kPHEDFKMFOG_) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (getConfigId()
-          != other.getConfigId()) return false;
-      if (levelType_ != other.levelType_) return false;
-      if (!getExceededItemListList()
-          .equals(other.getExceededItemListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -539,22 +475,22 @@ public final class GCGStartChallengeByCheckRewardRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getExceededItemTypeListCount() > 0) {
-        hash = (37 * hash) + EXCEEDED_ITEM_TYPE_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getExceededItemTypeListList().hashCode();
+      if (getGGJOANDELMJCount() > 0) {
+        hash = (37 * hash) + GGJOANDELMJ_FIELD_NUMBER;
+        hash = (53 * hash) + getGGJOANDELMJList().hashCode();
       }
+      if (getJIDEBPPDFAPCount() > 0) {
+        hash = (37 * hash) + JIDEBPPDFAP_FIELD_NUMBER;
+        hash = (53 * hash) + getJIDEBPPDFAPList().hashCode();
+      }
+      hash = (37 * hash) + CONFIG_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getConfigId();
+      hash = (37 * hash) + KPHEDFKMFOG_FIELD_NUMBER;
+      hash = (53 * hash) + kPHEDFKMFOG_;
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + CONFIG_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getConfigId();
-      hash = (37 * hash) + LEVEL_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + levelType_;
-      if (getExceededItemListCount() > 0) {
-        hash = (37 * hash) + EXCEEDED_ITEM_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getExceededItemListList().hashCode();
-      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -652,8 +588,8 @@ public final class GCGStartChallengeByCheckRewardRspOuterClass {
     }
     /**
      * <pre>
-     * Name: GHLIEPKOHJD
-     * CmdId: 7942
+     * CmdId: 7702
+     * Obf: MPAGMBABPFH
      * </pre>
      *
      * Protobuf type {@code GCGStartChallengeByCheckRewardRsp}
@@ -693,18 +629,18 @@ public final class GCGStartChallengeByCheckRewardRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        exceededItemTypeList_ = emptyIntList();
+        gGJOANDELMJ_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        jIDEBPPDFAP_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        configId_ = 0;
+
+        kPHEDFKMFOG_ = 0;
+
         levelId_ = 0;
 
         retcode_ = 0;
 
-        configId_ = 0;
-
-        levelType_ = 0;
-
-        exceededItemList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
@@ -733,19 +669,19 @@ public final class GCGStartChallengeByCheckRewardRspOuterClass {
         emu.grasscutter.net.proto.GCGStartChallengeByCheckRewardRspOuterClass.GCGStartChallengeByCheckRewardRsp result = new emu.grasscutter.net.proto.GCGStartChallengeByCheckRewardRspOuterClass.GCGStartChallengeByCheckRewardRsp(this);
         int from_bitField0_ = bitField0_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          exceededItemTypeList_.makeImmutable();
+          gGJOANDELMJ_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.exceededItemTypeList_ = exceededItemTypeList_;
-        result.levelId_ = levelId_;
-        result.retcode_ = retcode_;
-        result.configId_ = configId_;
-        result.levelType_ = levelType_;
+        result.gGJOANDELMJ_ = gGJOANDELMJ_;
         if (((bitField0_ & 0x00000002) != 0)) {
-          exceededItemList_.makeImmutable();
+          jIDEBPPDFAP_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000002);
         }
-        result.exceededItemList_ = exceededItemList_;
+        result.jIDEBPPDFAP_ = jIDEBPPDFAP_;
+        result.configId_ = configId_;
+        result.kPHEDFKMFOG_ = kPHEDFKMFOG_;
+        result.levelId_ = levelId_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -794,37 +730,37 @@ public final class GCGStartChallengeByCheckRewardRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGStartChallengeByCheckRewardRspOuterClass.GCGStartChallengeByCheckRewardRsp other) {
         if (other == emu.grasscutter.net.proto.GCGStartChallengeByCheckRewardRspOuterClass.GCGStartChallengeByCheckRewardRsp.getDefaultInstance()) return this;
-        if (!other.exceededItemTypeList_.isEmpty()) {
-          if (exceededItemTypeList_.isEmpty()) {
-            exceededItemTypeList_ = other.exceededItemTypeList_;
+        if (!other.gGJOANDELMJ_.isEmpty()) {
+          if (gGJOANDELMJ_.isEmpty()) {
+            gGJOANDELMJ_ = other.gGJOANDELMJ_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureExceededItemTypeListIsMutable();
-            exceededItemTypeList_.addAll(other.exceededItemTypeList_);
+            ensureGGJOANDELMJIsMutable();
+            gGJOANDELMJ_.addAll(other.gGJOANDELMJ_);
           }
           onChanged();
+        }
+        if (!other.jIDEBPPDFAP_.isEmpty()) {
+          if (jIDEBPPDFAP_.isEmpty()) {
+            jIDEBPPDFAP_ = other.jIDEBPPDFAP_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+          } else {
+            ensureJIDEBPPDFAPIsMutable();
+            jIDEBPPDFAP_.addAll(other.jIDEBPPDFAP_);
+          }
+          onChanged();
+        }
+        if (other.getConfigId() != 0) {
+          setConfigId(other.getConfigId());
+        }
+        if (other.kPHEDFKMFOG_ != 0) {
+          setKPHEDFKMFOGValue(other.getKPHEDFKMFOGValue());
         }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
         }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
-        }
-        if (other.getConfigId() != 0) {
-          setConfigId(other.getConfigId());
-        }
-        if (other.levelType_ != 0) {
-          setLevelTypeValue(other.getLevelTypeValue());
-        }
-        if (!other.exceededItemList_.isEmpty()) {
-          if (exceededItemList_.isEmpty()) {
-            exceededItemList_ = other.exceededItemList_;
-            bitField0_ = (bitField0_ & ~0x00000002);
-          } else {
-            ensureExceededItemListIsMutable();
-            exceededItemList_.addAll(other.exceededItemList_);
-          }
-          onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -856,116 +792,252 @@ public final class GCGStartChallengeByCheckRewardRspOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList exceededItemTypeList_ = emptyIntList();
-      private void ensureExceededItemTypeListIsMutable() {
+      private com.google.protobuf.Internal.IntList gGJOANDELMJ_ = emptyIntList();
+      private void ensureGGJOANDELMJIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          exceededItemTypeList_ = mutableCopy(exceededItemTypeList_);
+          gGJOANDELMJ_ = mutableCopy(gGJOANDELMJ_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <pre>
-       *DNJDACFOEJA snooguess swapperoo
-       * </pre>
-       *
-       * <code>repeated uint32 exceeded_item_type_list = 11;</code>
-       * @return A list containing the exceededItemTypeList.
+       * <code>repeated uint32 GGJOANDELMJ = 8;</code>
+       * @return A list containing the gGJOANDELMJ.
        */
       public java.util.List<java.lang.Integer>
-          getExceededItemTypeListList() {
+          getGGJOANDELMJList() {
         return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(exceededItemTypeList_) : exceededItemTypeList_;
+                 java.util.Collections.unmodifiableList(gGJOANDELMJ_) : gGJOANDELMJ_;
       }
       /**
-       * <pre>
-       *DNJDACFOEJA snooguess swapperoo
-       * </pre>
-       *
-       * <code>repeated uint32 exceeded_item_type_list = 11;</code>
-       * @return The count of exceededItemTypeList.
+       * <code>repeated uint32 GGJOANDELMJ = 8;</code>
+       * @return The count of gGJOANDELMJ.
        */
-      public int getExceededItemTypeListCount() {
-        return exceededItemTypeList_.size();
+      public int getGGJOANDELMJCount() {
+        return gGJOANDELMJ_.size();
       }
       /**
-       * <pre>
-       *DNJDACFOEJA snooguess swapperoo
-       * </pre>
-       *
-       * <code>repeated uint32 exceeded_item_type_list = 11;</code>
+       * <code>repeated uint32 GGJOANDELMJ = 8;</code>
        * @param index The index of the element to return.
-       * @return The exceededItemTypeList at the given index.
+       * @return The gGJOANDELMJ at the given index.
        */
-      public int getExceededItemTypeList(int index) {
-        return exceededItemTypeList_.getInt(index);
+      public int getGGJOANDELMJ(int index) {
+        return gGJOANDELMJ_.getInt(index);
       }
       /**
-       * <pre>
-       *DNJDACFOEJA snooguess swapperoo
-       * </pre>
-       *
-       * <code>repeated uint32 exceeded_item_type_list = 11;</code>
+       * <code>repeated uint32 GGJOANDELMJ = 8;</code>
        * @param index The index to set the value at.
-       * @param value The exceededItemTypeList to set.
+       * @param value The gGJOANDELMJ to set.
        * @return This builder for chaining.
        */
-      public Builder setExceededItemTypeList(
+      public Builder setGGJOANDELMJ(
           int index, int value) {
-        ensureExceededItemTypeListIsMutable();
-        exceededItemTypeList_.setInt(index, value);
+        ensureGGJOANDELMJIsMutable();
+        gGJOANDELMJ_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       *DNJDACFOEJA snooguess swapperoo
-       * </pre>
-       *
-       * <code>repeated uint32 exceeded_item_type_list = 11;</code>
-       * @param value The exceededItemTypeList to add.
+       * <code>repeated uint32 GGJOANDELMJ = 8;</code>
+       * @param value The gGJOANDELMJ to add.
        * @return This builder for chaining.
        */
-      public Builder addExceededItemTypeList(int value) {
-        ensureExceededItemTypeListIsMutable();
-        exceededItemTypeList_.addInt(value);
+      public Builder addGGJOANDELMJ(int value) {
+        ensureGGJOANDELMJIsMutable();
+        gGJOANDELMJ_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       *DNJDACFOEJA snooguess swapperoo
-       * </pre>
-       *
-       * <code>repeated uint32 exceeded_item_type_list = 11;</code>
-       * @param values The exceededItemTypeList to add.
+       * <code>repeated uint32 GGJOANDELMJ = 8;</code>
+       * @param values The gGJOANDELMJ to add.
        * @return This builder for chaining.
        */
-      public Builder addAllExceededItemTypeList(
+      public Builder addAllGGJOANDELMJ(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureExceededItemTypeListIsMutable();
+        ensureGGJOANDELMJIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, exceededItemTypeList_);
+            values, gGJOANDELMJ_);
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       *DNJDACFOEJA snooguess swapperoo
-       * </pre>
-       *
-       * <code>repeated uint32 exceeded_item_type_list = 11;</code>
+       * <code>repeated uint32 GGJOANDELMJ = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearExceededItemTypeList() {
-        exceededItemTypeList_ = emptyIntList();
+      public Builder clearGGJOANDELMJ() {
+        gGJOANDELMJ_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList jIDEBPPDFAP_ = emptyIntList();
+      private void ensureJIDEBPPDFAPIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          jIDEBPPDFAP_ = mutableCopy(jIDEBPPDFAP_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+      /**
+       * <code>repeated uint32 JIDEBPPDFAP = 3;</code>
+       * @return A list containing the jIDEBPPDFAP.
+       */
+      public java.util.List<java.lang.Integer>
+          getJIDEBPPDFAPList() {
+        return ((bitField0_ & 0x00000002) != 0) ?
+                 java.util.Collections.unmodifiableList(jIDEBPPDFAP_) : jIDEBPPDFAP_;
+      }
+      /**
+       * <code>repeated uint32 JIDEBPPDFAP = 3;</code>
+       * @return The count of jIDEBPPDFAP.
+       */
+      public int getJIDEBPPDFAPCount() {
+        return jIDEBPPDFAP_.size();
+      }
+      /**
+       * <code>repeated uint32 JIDEBPPDFAP = 3;</code>
+       * @param index The index of the element to return.
+       * @return The jIDEBPPDFAP at the given index.
+       */
+      public int getJIDEBPPDFAP(int index) {
+        return jIDEBPPDFAP_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 JIDEBPPDFAP = 3;</code>
+       * @param index The index to set the value at.
+       * @param value The jIDEBPPDFAP to set.
+       * @return This builder for chaining.
+       */
+      public Builder setJIDEBPPDFAP(
+          int index, int value) {
+        ensureJIDEBPPDFAPIsMutable();
+        jIDEBPPDFAP_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 JIDEBPPDFAP = 3;</code>
+       * @param value The jIDEBPPDFAP to add.
+       * @return This builder for chaining.
+       */
+      public Builder addJIDEBPPDFAP(int value) {
+        ensureJIDEBPPDFAPIsMutable();
+        jIDEBPPDFAP_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 JIDEBPPDFAP = 3;</code>
+       * @param values The jIDEBPPDFAP to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllJIDEBPPDFAP(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureJIDEBPPDFAPIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, jIDEBPPDFAP_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 JIDEBPPDFAP = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearJIDEBPPDFAP() {
+        jIDEBPPDFAP_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        onChanged();
+        return this;
+      }
+
+      private int configId_ ;
+      /**
+       * <code>uint32 config_id = 1;</code>
+       * @return The configId.
+       */
+      @java.lang.Override
+      public int getConfigId() {
+        return configId_;
+      }
+      /**
+       * <code>uint32 config_id = 1;</code>
+       * @param value The configId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setConfigId(int value) {
+        
+        configId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 config_id = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearConfigId() {
+        
+        configId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int kPHEDFKMFOG_ = 0;
+      /**
+       * <code>.JKLJHDFICPL KPHEDFKMFOG = 13;</code>
+       * @return The enum numeric value on the wire for kPHEDFKMFOG.
+       */
+      @java.lang.Override public int getKPHEDFKMFOGValue() {
+        return kPHEDFKMFOG_;
+      }
+      /**
+       * <code>.JKLJHDFICPL KPHEDFKMFOG = 13;</code>
+       * @param value The enum numeric value on the wire for kPHEDFKMFOG to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKPHEDFKMFOGValue(int value) {
+        
+        kPHEDFKMFOG_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.JKLJHDFICPL KPHEDFKMFOG = 13;</code>
+       * @return The kPHEDFKMFOG.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.JKLJHDFICPLOuterClass.JKLJHDFICPL getKPHEDFKMFOG() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.JKLJHDFICPLOuterClass.JKLJHDFICPL result = emu.grasscutter.net.proto.JKLJHDFICPLOuterClass.JKLJHDFICPL.valueOf(kPHEDFKMFOG_);
+        return result == null ? emu.grasscutter.net.proto.JKLJHDFICPLOuterClass.JKLJHDFICPL.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.JKLJHDFICPL KPHEDFKMFOG = 13;</code>
+       * @param value The kPHEDFKMFOG to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKPHEDFKMFOG(emu.grasscutter.net.proto.JKLJHDFICPLOuterClass.JKLJHDFICPL value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        kPHEDFKMFOG_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.JKLJHDFICPL KPHEDFKMFOG = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearKPHEDFKMFOG() {
+        
+        kPHEDFKMFOG_ = 0;
         onChanged();
         return this;
       }
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 1;</code>
+       * <code>uint32 level_id = 2;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -973,7 +1045,7 @@ public final class GCGStartChallengeByCheckRewardRspOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 1;</code>
+       * <code>uint32 level_id = 2;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -984,7 +1056,7 @@ public final class GCGStartChallengeByCheckRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 1;</code>
+       * <code>uint32 level_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -996,7 +1068,7 @@ public final class GCGStartChallengeByCheckRewardRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 4;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -1004,7 +1076,7 @@ public final class GCGStartChallengeByCheckRewardRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 4;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -1015,224 +1087,12 @@ public final class GCGStartChallengeByCheckRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
         
         retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int configId_ ;
-      /**
-       * <code>uint32 config_id = 4;</code>
-       * @return The configId.
-       */
-      @java.lang.Override
-      public int getConfigId() {
-        return configId_;
-      }
-      /**
-       * <code>uint32 config_id = 4;</code>
-       * @param value The configId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setConfigId(int value) {
-        
-        configId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 config_id = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearConfigId() {
-        
-        configId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int levelType_ = 0;
-      /**
-       * <pre>
-       *NIELIIFHJCO PPHCMNDNEBE snooswap
-       * </pre>
-       *
-       * <code>.GCGLevelType level_type = 3;</code>
-       * @return The enum numeric value on the wire for levelType.
-       */
-      @java.lang.Override public int getLevelTypeValue() {
-        return levelType_;
-      }
-      /**
-       * <pre>
-       *NIELIIFHJCO PPHCMNDNEBE snooswap
-       * </pre>
-       *
-       * <code>.GCGLevelType level_type = 3;</code>
-       * @param value The enum numeric value on the wire for levelType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevelTypeValue(int value) {
-        
-        levelType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *NIELIIFHJCO PPHCMNDNEBE snooswap
-       * </pre>
-       *
-       * <code>.GCGLevelType level_type = 3;</code>
-       * @return The levelType.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.GCGLevelTypeOuterClass.GCGLevelType getLevelType() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.GCGLevelTypeOuterClass.GCGLevelType result = emu.grasscutter.net.proto.GCGLevelTypeOuterClass.GCGLevelType.valueOf(levelType_);
-        return result == null ? emu.grasscutter.net.proto.GCGLevelTypeOuterClass.GCGLevelType.UNRECOGNIZED : result;
-      }
-      /**
-       * <pre>
-       *NIELIIFHJCO PPHCMNDNEBE snooswap
-       * </pre>
-       *
-       * <code>.GCGLevelType level_type = 3;</code>
-       * @param value The levelType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevelType(emu.grasscutter.net.proto.GCGLevelTypeOuterClass.GCGLevelType value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        levelType_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *NIELIIFHJCO PPHCMNDNEBE snooswap
-       * </pre>
-       *
-       * <code>.GCGLevelType level_type = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevelType() {
-        
-        levelType_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList exceededItemList_ = emptyIntList();
-      private void ensureExceededItemListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          exceededItemList_ = mutableCopy(exceededItemList_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-      /**
-       * <pre>
-       *NPLFIOFPAKH snooguess swapperoo
-       * </pre>
-       *
-       * <code>repeated uint32 exceeded_item_list = 12;</code>
-       * @return A list containing the exceededItemList.
-       */
-      public java.util.List<java.lang.Integer>
-          getExceededItemListList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(exceededItemList_) : exceededItemList_;
-      }
-      /**
-       * <pre>
-       *NPLFIOFPAKH snooguess swapperoo
-       * </pre>
-       *
-       * <code>repeated uint32 exceeded_item_list = 12;</code>
-       * @return The count of exceededItemList.
-       */
-      public int getExceededItemListCount() {
-        return exceededItemList_.size();
-      }
-      /**
-       * <pre>
-       *NPLFIOFPAKH snooguess swapperoo
-       * </pre>
-       *
-       * <code>repeated uint32 exceeded_item_list = 12;</code>
-       * @param index The index of the element to return.
-       * @return The exceededItemList at the given index.
-       */
-      public int getExceededItemList(int index) {
-        return exceededItemList_.getInt(index);
-      }
-      /**
-       * <pre>
-       *NPLFIOFPAKH snooguess swapperoo
-       * </pre>
-       *
-       * <code>repeated uint32 exceeded_item_list = 12;</code>
-       * @param index The index to set the value at.
-       * @param value The exceededItemList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setExceededItemList(
-          int index, int value) {
-        ensureExceededItemListIsMutable();
-        exceededItemList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *NPLFIOFPAKH snooguess swapperoo
-       * </pre>
-       *
-       * <code>repeated uint32 exceeded_item_list = 12;</code>
-       * @param value The exceededItemList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addExceededItemList(int value) {
-        ensureExceededItemListIsMutable();
-        exceededItemList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *NPLFIOFPAKH snooguess swapperoo
-       * </pre>
-       *
-       * <code>repeated uint32 exceeded_item_list = 12;</code>
-       * @param values The exceededItemList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllExceededItemList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureExceededItemListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, exceededItemList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *NPLFIOFPAKH snooguess swapperoo
-       * </pre>
-       *
-       * <code>repeated uint32 exceeded_item_list = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearExceededItemList() {
-        exceededItemList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
@@ -1304,26 +1164,25 @@ public final class GCGStartChallengeByCheckRewardRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\'GCGStartChallengeByCheckRewardRsp.prot" +
-      "o\032\022GCGLevelType.proto\"\271\001\n!GCGStartChalle" +
-      "ngeByCheckRewardRsp\022\037\n\027exceeded_item_typ" +
-      "e_list\030\013 \003(\r\022\020\n\010level_id\030\001 \001(\r\022\017\n\007retcod" +
-      "e\030\010 \001(\005\022\021\n\tconfig_id\030\004 \001(\r\022!\n\nlevel_type" +
-      "\030\003 \001(\0162\r.GCGLevelType\022\032\n\022exceeded_item_l" +
-      "ist\030\014 \003(\rB\033\n\031emu.grasscutter.net.protob\006" +
-      "proto3"
+      "o\032\021JKLJHDFICPL.proto\"\246\001\n!GCGStartChallen" +
+      "geByCheckRewardRsp\022\023\n\013GGJOANDELMJ\030\010 \003(\r\022" +
+      "\023\n\013JIDEBPPDFAP\030\003 \003(\r\022\021\n\tconfig_id\030\001 \001(\r\022" +
+      "!\n\013KPHEDFKMFOG\030\r \001(\0162\014.JKLJHDFICPL\022\020\n\010le" +
+      "vel_id\030\002 \001(\r\022\017\n\007retcode\030\004 \001(\005B\033\n\031emu.gra" +
+      "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.GCGLevelTypeOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.JKLJHDFICPLOuterClass.getDescriptor(),
         });
     internal_static_GCGStartChallengeByCheckRewardRsp_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_GCGStartChallengeByCheckRewardRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGStartChallengeByCheckRewardRsp_descriptor,
-        new java.lang.String[] { "ExceededItemTypeList", "LevelId", "Retcode", "ConfigId", "LevelType", "ExceededItemList", });
-    emu.grasscutter.net.proto.GCGLevelTypeOuterClass.getDescriptor();
+        new java.lang.String[] { "GGJOANDELMJ", "JIDEBPPDFAP", "ConfigId", "KPHEDFKMFOG", "LevelId", "Retcode", });
+    emu.grasscutter.net.proto.JKLJHDFICPLOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

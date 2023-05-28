@@ -16,7 +16,7 @@ public final class MapMarkTipsTypeOuterClass {
   }
   /**
    * <pre>
-   * Name: DILMJFDGLNH
+   * Obf: LAACCPKHDCM
    * </pre>
    *
    * Protobuf enum {@code MapMarkTipsType}
@@ -24,16 +24,16 @@ public final class MapMarkTipsTypeOuterClass {
   public enum MapMarkTipsType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>MAP_MARK_TIPS_TYPE_DUNGEON_ELEMENT_TRIAL = 0;</code>
+     * <code>MARK_TIPS_DUNGEON_ELEMENT_TRIAL = 0;</code>
      */
-    MAP_MARK_TIPS_TYPE_DUNGEON_ELEMENT_TRIAL(0),
+    MARK_TIPS_DUNGEON_ELEMENT_TRIAL(0),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>MAP_MARK_TIPS_TYPE_DUNGEON_ELEMENT_TRIAL = 0;</code>
+     * <code>MARK_TIPS_DUNGEON_ELEMENT_TRIAL = 0;</code>
      */
-    public static final int MAP_MARK_TIPS_TYPE_DUNGEON_ELEMENT_TRIAL_VALUE = 0;
+    public static final int MARK_TIPS_DUNGEON_ELEMENT_TRIAL_VALUE = 0;
 
 
     public final int getNumber() {
@@ -60,7 +60,7 @@ public final class MapMarkTipsTypeOuterClass {
      */
     public static MapMarkTipsType forNumber(int value) {
       switch (value) {
-        case 0: return MAP_MARK_TIPS_TYPE_DUNGEON_ELEMENT_TRIAL;
+        case 0: return MARK_TIPS_DUNGEON_ELEMENT_TRIAL;
         default: return null;
       }
     }
@@ -126,10 +126,9 @@ public final class MapMarkTipsTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025MapMarkTipsType.proto*?\n\017MapMarkTipsTy" +
-      "pe\022,\n(MAP_MARK_TIPS_TYPE_DUNGEON_ELEMENT" +
-      "_TRIAL\020\000B\033\n\031emu.grasscutter.net.protob\006p" +
-      "roto3"
+      "\n\025MapMarkTipsType.proto*6\n\017MapMarkTipsTy" +
+      "pe\022#\n\037MARK_TIPS_DUNGEON_ELEMENT_TRIAL\020\000B" +
+      "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

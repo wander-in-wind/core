@@ -19,25 +19,21 @@ public final class GCGTCInviteReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *FMEICLMBOBF snooswap
-     * </pre>
-     *
-     * <code>uint32 character_id = 1;</code>
-     * @return The characterId.
-     */
-    int getCharacterId();
-
-    /**
-     * <code>uint32 level_id = 11;</code>
+     * <code>uint32 level_id = 10;</code>
      * @return The levelId.
      */
     int getLevelId();
+
+    /**
+     * <code>uint32 character_id = 2;</code>
+     * @return The characterId.
+     */
+    int getCharacterId();
   }
   /**
    * <pre>
-   * Name: HGIFNPKLHJM
-   * CmdId: 7776
+   * CmdId: 7449
+   * Obf: EPNLBMDEFLC
    * </pre>
    *
    * Protobuf type {@code GCGTCInviteReq}
@@ -84,12 +80,12 @@ public final class GCGTCInviteReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 16: {
 
               characterId_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 80: {
 
               levelId_ = input.readUInt32();
               break;
@@ -126,30 +122,26 @@ public final class GCGTCInviteReqOuterClass {
               emu.grasscutter.net.proto.GCGTCInviteReqOuterClass.GCGTCInviteReq.class, emu.grasscutter.net.proto.GCGTCInviteReqOuterClass.GCGTCInviteReq.Builder.class);
     }
 
-    public static final int CHARACTER_ID_FIELD_NUMBER = 1;
-    private int characterId_;
-    /**
-     * <pre>
-     *FMEICLMBOBF snooswap
-     * </pre>
-     *
-     * <code>uint32 character_id = 1;</code>
-     * @return The characterId.
-     */
-    @java.lang.Override
-    public int getCharacterId() {
-      return characterId_;
-    }
-
-    public static final int LEVEL_ID_FIELD_NUMBER = 11;
+    public static final int LEVEL_ID_FIELD_NUMBER = 10;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 11;</code>
+     * <code>uint32 level_id = 10;</code>
      * @return The levelId.
      */
     @java.lang.Override
     public int getLevelId() {
       return levelId_;
+    }
+
+    public static final int CHARACTER_ID_FIELD_NUMBER = 2;
+    private int characterId_;
+    /**
+     * <code>uint32 character_id = 2;</code>
+     * @return The characterId.
+     */
+    @java.lang.Override
+    public int getCharacterId() {
+      return characterId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -167,10 +159,10 @@ public final class GCGTCInviteReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (characterId_ != 0) {
-        output.writeUInt32(1, characterId_);
+        output.writeUInt32(2, characterId_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(11, levelId_);
+        output.writeUInt32(10, levelId_);
       }
       unknownFields.writeTo(output);
     }
@@ -183,11 +175,11 @@ public final class GCGTCInviteReqOuterClass {
       size = 0;
       if (characterId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, characterId_);
+          .computeUInt32Size(2, characterId_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, levelId_);
+          .computeUInt32Size(10, levelId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -204,10 +196,10 @@ public final class GCGTCInviteReqOuterClass {
       }
       emu.grasscutter.net.proto.GCGTCInviteReqOuterClass.GCGTCInviteReq other = (emu.grasscutter.net.proto.GCGTCInviteReqOuterClass.GCGTCInviteReq) obj;
 
-      if (getCharacterId()
-          != other.getCharacterId()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
+      if (getCharacterId()
+          != other.getCharacterId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -219,10 +211,10 @@ public final class GCGTCInviteReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CHARACTER_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCharacterId();
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + CHARACTER_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getCharacterId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -320,8 +312,8 @@ public final class GCGTCInviteReqOuterClass {
     }
     /**
      * <pre>
-     * Name: HGIFNPKLHJM
-     * CmdId: 7776
+     * CmdId: 7449
+     * Obf: EPNLBMDEFLC
      * </pre>
      *
      * Protobuf type {@code GCGTCInviteReq}
@@ -361,9 +353,9 @@ public final class GCGTCInviteReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        characterId_ = 0;
-
         levelId_ = 0;
+
+        characterId_ = 0;
 
         return this;
       }
@@ -391,8 +383,8 @@ public final class GCGTCInviteReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGTCInviteReqOuterClass.GCGTCInviteReq buildPartial() {
         emu.grasscutter.net.proto.GCGTCInviteReqOuterClass.GCGTCInviteReq result = new emu.grasscutter.net.proto.GCGTCInviteReqOuterClass.GCGTCInviteReq(this);
-        result.characterId_ = characterId_;
         result.levelId_ = levelId_;
+        result.characterId_ = characterId_;
         onBuilt();
         return result;
       }
@@ -441,11 +433,11 @@ public final class GCGTCInviteReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGTCInviteReqOuterClass.GCGTCInviteReq other) {
         if (other == emu.grasscutter.net.proto.GCGTCInviteReqOuterClass.GCGTCInviteReq.getDefaultInstance()) return this;
-        if (other.getCharacterId() != 0) {
-          setCharacterId(other.getCharacterId());
-        }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
+        }
+        if (other.getCharacterId() != 0) {
+          setCharacterId(other.getCharacterId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -476,52 +468,9 @@ public final class GCGTCInviteReqOuterClass {
         return this;
       }
 
-      private int characterId_ ;
-      /**
-       * <pre>
-       *FMEICLMBOBF snooswap
-       * </pre>
-       *
-       * <code>uint32 character_id = 1;</code>
-       * @return The characterId.
-       */
-      @java.lang.Override
-      public int getCharacterId() {
-        return characterId_;
-      }
-      /**
-       * <pre>
-       *FMEICLMBOBF snooswap
-       * </pre>
-       *
-       * <code>uint32 character_id = 1;</code>
-       * @param value The characterId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCharacterId(int value) {
-        
-        characterId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *FMEICLMBOBF snooswap
-       * </pre>
-       *
-       * <code>uint32 character_id = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCharacterId() {
-        
-        characterId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 11;</code>
+       * <code>uint32 level_id = 10;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -529,7 +478,7 @@ public final class GCGTCInviteReqOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 11;</code>
+       * <code>uint32 level_id = 10;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -540,12 +489,43 @@ public final class GCGTCInviteReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 11;</code>
+       * <code>uint32 level_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
         
         levelId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int characterId_ ;
+      /**
+       * <code>uint32 character_id = 2;</code>
+       * @return The characterId.
+       */
+      @java.lang.Override
+      public int getCharacterId() {
+        return characterId_;
+      }
+      /**
+       * <code>uint32 character_id = 2;</code>
+       * @param value The characterId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCharacterId(int value) {
+        
+        characterId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 character_id = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCharacterId() {
+        
+        characterId_ = 0;
         onChanged();
         return this;
       }
@@ -617,7 +597,7 @@ public final class GCGTCInviteReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024GCGTCInviteReq.proto\"8\n\016GCGTCInviteReq" +
-      "\022\024\n\014character_id\030\001 \001(\r\022\020\n\010level_id\030\013 \001(\r" +
+      "\022\020\n\010level_id\030\n \001(\r\022\024\n\014character_id\030\002 \001(\r" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -629,7 +609,7 @@ public final class GCGTCInviteReqOuterClass {
     internal_static_GCGTCInviteReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGTCInviteReq_descriptor,
-        new java.lang.String[] { "CharacterId", "LevelId", });
+        new java.lang.String[] { "LevelId", "CharacterId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

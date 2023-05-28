@@ -19,50 +19,50 @@ public final class RogueFinishRepairReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 2;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar> 
-        getChosenAvatarListList();
-    /**
-     * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 2;</code>
-     */
-    emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar getChosenAvatarList(int index);
-    /**
-     * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 2;</code>
-     */
-    int getChosenAvatarListCount();
-    /**
-     * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 2;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatarOrBuilder> 
-        getChosenAvatarListOrBuilderList();
-    /**
-     * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 2;</code>
-     */
-    emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatarOrBuilder getChosenAvatarListOrBuilder(
-        int index);
-
-    /**
-     * <code>repeated uint32 chosen_card_list = 12;</code>
+     * <code>repeated uint32 chosen_card_list = 8;</code>
      * @return A list containing the chosenCardList.
      */
     java.util.List<java.lang.Integer> getChosenCardListList();
     /**
-     * <code>repeated uint32 chosen_card_list = 12;</code>
+     * <code>repeated uint32 chosen_card_list = 8;</code>
      * @return The count of chosenCardList.
      */
     int getChosenCardListCount();
     /**
-     * <code>repeated uint32 chosen_card_list = 12;</code>
+     * <code>repeated uint32 chosen_card_list = 8;</code>
      * @param index The index of the element to return.
      * @return The chosenCardList at the given index.
      */
     int getChosenCardList(int index);
+
+    /**
+     * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 11;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar> 
+        getChosenAvatarListList();
+    /**
+     * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 11;</code>
+     */
+    emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar getChosenAvatarList(int index);
+    /**
+     * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 11;</code>
+     */
+    int getChosenAvatarListCount();
+    /**
+     * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 11;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatarOrBuilder> 
+        getChosenAvatarListOrBuilderList();
+    /**
+     * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 11;</code>
+     */
+    emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatarOrBuilder getChosenAvatarListOrBuilder(
+        int index);
   }
   /**
    * <pre>
-   * Name: EILFAEAPPLM
-   * CmdId: 8749
+   * CmdId: 8237
+   * Obf: GGKMPOBBBGL
    * </pre>
    *
    * Protobuf type {@code RogueFinishRepairReq}
@@ -77,8 +77,8 @@ public final class RogueFinishRepairReqOuterClass {
       super(builder);
     }
     private RogueFinishRepairReq() {
-      chosenAvatarList_ = java.util.Collections.emptyList();
       chosenCardList_ = emptyIntList();
+      chosenAvatarList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -112,34 +112,34 @@ public final class RogueFinishRepairReqOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
+            case 64: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                chosenAvatarList_ = new java.util.ArrayList<emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              chosenAvatarList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.parser(), extensionRegistry));
-              break;
-            }
-            case 96: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 chosenCardList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               chosenCardList_.addInt(input.readUInt32());
               break;
             }
-            case 98: {
+            case 66: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
                 chosenCardList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
                 chosenCardList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
+              break;
+            }
+            case 90: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                chosenAvatarList_ = new java.util.ArrayList<emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              chosenAvatarList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -158,10 +158,10 @@ public final class RogueFinishRepairReqOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          chosenAvatarList_ = java.util.Collections.unmodifiableList(chosenAvatarList_);
+          chosenCardList_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          chosenCardList_.makeImmutable(); // C
+          chosenAvatarList_ = java.util.Collections.unmodifiableList(chosenAvatarList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -180,50 +180,10 @@ public final class RogueFinishRepairReqOuterClass {
               emu.grasscutter.net.proto.RogueFinishRepairReqOuterClass.RogueFinishRepairReq.class, emu.grasscutter.net.proto.RogueFinishRepairReqOuterClass.RogueFinishRepairReq.Builder.class);
     }
 
-    public static final int CHOSEN_AVATAR_LIST_FIELD_NUMBER = 2;
-    private java.util.List<emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar> chosenAvatarList_;
-    /**
-     * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 2;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar> getChosenAvatarListList() {
-      return chosenAvatarList_;
-    }
-    /**
-     * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 2;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatarOrBuilder> 
-        getChosenAvatarListOrBuilderList() {
-      return chosenAvatarList_;
-    }
-    /**
-     * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 2;</code>
-     */
-    @java.lang.Override
-    public int getChosenAvatarListCount() {
-      return chosenAvatarList_.size();
-    }
-    /**
-     * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 2;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar getChosenAvatarList(int index) {
-      return chosenAvatarList_.get(index);
-    }
-    /**
-     * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 2;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatarOrBuilder getChosenAvatarListOrBuilder(
-        int index) {
-      return chosenAvatarList_.get(index);
-    }
-
-    public static final int CHOSEN_CARD_LIST_FIELD_NUMBER = 12;
+    public static final int CHOSEN_CARD_LIST_FIELD_NUMBER = 8;
     private com.google.protobuf.Internal.IntList chosenCardList_;
     /**
-     * <code>repeated uint32 chosen_card_list = 12;</code>
+     * <code>repeated uint32 chosen_card_list = 8;</code>
      * @return A list containing the chosenCardList.
      */
     @java.lang.Override
@@ -232,14 +192,14 @@ public final class RogueFinishRepairReqOuterClass {
       return chosenCardList_;
     }
     /**
-     * <code>repeated uint32 chosen_card_list = 12;</code>
+     * <code>repeated uint32 chosen_card_list = 8;</code>
      * @return The count of chosenCardList.
      */
     public int getChosenCardListCount() {
       return chosenCardList_.size();
     }
     /**
-     * <code>repeated uint32 chosen_card_list = 12;</code>
+     * <code>repeated uint32 chosen_card_list = 8;</code>
      * @param index The index of the element to return.
      * @return The chosenCardList at the given index.
      */
@@ -247,6 +207,46 @@ public final class RogueFinishRepairReqOuterClass {
       return chosenCardList_.getInt(index);
     }
     private int chosenCardListMemoizedSerializedSize = -1;
+
+    public static final int CHOSEN_AVATAR_LIST_FIELD_NUMBER = 11;
+    private java.util.List<emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar> chosenAvatarList_;
+    /**
+     * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 11;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar> getChosenAvatarListList() {
+      return chosenAvatarList_;
+    }
+    /**
+     * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 11;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatarOrBuilder> 
+        getChosenAvatarListOrBuilderList() {
+      return chosenAvatarList_;
+    }
+    /**
+     * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 11;</code>
+     */
+    @java.lang.Override
+    public int getChosenAvatarListCount() {
+      return chosenAvatarList_.size();
+    }
+    /**
+     * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 11;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar getChosenAvatarList(int index) {
+      return chosenAvatarList_.get(index);
+    }
+    /**
+     * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 11;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatarOrBuilder getChosenAvatarListOrBuilder(
+        int index) {
+      return chosenAvatarList_.get(index);
+    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -263,15 +263,15 @@ public final class RogueFinishRepairReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      for (int i = 0; i < chosenAvatarList_.size(); i++) {
-        output.writeMessage(2, chosenAvatarList_.get(i));
-      }
       if (getChosenCardListList().size() > 0) {
-        output.writeUInt32NoTag(98);
+        output.writeUInt32NoTag(66);
         output.writeUInt32NoTag(chosenCardListMemoizedSerializedSize);
       }
       for (int i = 0; i < chosenCardList_.size(); i++) {
         output.writeUInt32NoTag(chosenCardList_.getInt(i));
+      }
+      for (int i = 0; i < chosenAvatarList_.size(); i++) {
+        output.writeMessage(11, chosenAvatarList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -282,10 +282,6 @@ public final class RogueFinishRepairReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < chosenAvatarList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, chosenAvatarList_.get(i));
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < chosenCardList_.size(); i++) {
@@ -299,6 +295,10 @@ public final class RogueFinishRepairReqOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         chosenCardListMemoizedSerializedSize = dataSize;
+      }
+      for (int i = 0; i < chosenAvatarList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(11, chosenAvatarList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -315,10 +315,10 @@ public final class RogueFinishRepairReqOuterClass {
       }
       emu.grasscutter.net.proto.RogueFinishRepairReqOuterClass.RogueFinishRepairReq other = (emu.grasscutter.net.proto.RogueFinishRepairReqOuterClass.RogueFinishRepairReq) obj;
 
-      if (!getChosenAvatarListList()
-          .equals(other.getChosenAvatarListList())) return false;
       if (!getChosenCardListList()
           .equals(other.getChosenCardListList())) return false;
+      if (!getChosenAvatarListList()
+          .equals(other.getChosenAvatarListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -330,13 +330,13 @@ public final class RogueFinishRepairReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getChosenAvatarListCount() > 0) {
-        hash = (37 * hash) + CHOSEN_AVATAR_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getChosenAvatarListList().hashCode();
-      }
       if (getChosenCardListCount() > 0) {
         hash = (37 * hash) + CHOSEN_CARD_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getChosenCardListList().hashCode();
+      }
+      if (getChosenAvatarListCount() > 0) {
+        hash = (37 * hash) + CHOSEN_AVATAR_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getChosenAvatarListList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -435,8 +435,8 @@ public final class RogueFinishRepairReqOuterClass {
     }
     /**
      * <pre>
-     * Name: EILFAEAPPLM
-     * CmdId: 8749
+     * CmdId: 8237
+     * Obf: GGKMPOBBBGL
      * </pre>
      *
      * Protobuf type {@code RogueFinishRepairReq}
@@ -477,14 +477,14 @@ public final class RogueFinishRepairReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        chosenCardList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         if (chosenAvatarListBuilder_ == null) {
           chosenAvatarList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
         } else {
           chosenAvatarListBuilder_.clear();
         }
-        chosenCardList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
@@ -512,20 +512,20 @@ public final class RogueFinishRepairReqOuterClass {
       public emu.grasscutter.net.proto.RogueFinishRepairReqOuterClass.RogueFinishRepairReq buildPartial() {
         emu.grasscutter.net.proto.RogueFinishRepairReqOuterClass.RogueFinishRepairReq result = new emu.grasscutter.net.proto.RogueFinishRepairReqOuterClass.RogueFinishRepairReq(this);
         int from_bitField0_ = bitField0_;
+        if (((bitField0_ & 0x00000001) != 0)) {
+          chosenCardList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        }
+        result.chosenCardList_ = chosenCardList_;
         if (chosenAvatarListBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000002) != 0)) {
             chosenAvatarList_ = java.util.Collections.unmodifiableList(chosenAvatarList_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000002);
           }
           result.chosenAvatarList_ = chosenAvatarList_;
         } else {
           result.chosenAvatarList_ = chosenAvatarListBuilder_.build();
         }
-        if (((bitField0_ & 0x00000002) != 0)) {
-          chosenCardList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000002);
-        }
-        result.chosenCardList_ = chosenCardList_;
         onBuilt();
         return result;
       }
@@ -574,11 +574,21 @@ public final class RogueFinishRepairReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.RogueFinishRepairReqOuterClass.RogueFinishRepairReq other) {
         if (other == emu.grasscutter.net.proto.RogueFinishRepairReqOuterClass.RogueFinishRepairReq.getDefaultInstance()) return this;
+        if (!other.chosenCardList_.isEmpty()) {
+          if (chosenCardList_.isEmpty()) {
+            chosenCardList_ = other.chosenCardList_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureChosenCardListIsMutable();
+            chosenCardList_.addAll(other.chosenCardList_);
+          }
+          onChanged();
+        }
         if (chosenAvatarListBuilder_ == null) {
           if (!other.chosenAvatarList_.isEmpty()) {
             if (chosenAvatarList_.isEmpty()) {
               chosenAvatarList_ = other.chosenAvatarList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
             } else {
               ensureChosenAvatarListIsMutable();
               chosenAvatarList_.addAll(other.chosenAvatarList_);
@@ -591,7 +601,7 @@ public final class RogueFinishRepairReqOuterClass {
               chosenAvatarListBuilder_.dispose();
               chosenAvatarListBuilder_ = null;
               chosenAvatarList_ = other.chosenAvatarList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
               chosenAvatarListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getChosenAvatarListFieldBuilder() : null;
@@ -599,16 +609,6 @@ public final class RogueFinishRepairReqOuterClass {
               chosenAvatarListBuilder_.addAllMessages(other.chosenAvatarList_);
             }
           }
-        }
-        if (!other.chosenCardList_.isEmpty()) {
-          if (chosenCardList_.isEmpty()) {
-            chosenCardList_ = other.chosenCardList_;
-            bitField0_ = (bitField0_ & ~0x00000002);
-          } else {
-            ensureChosenCardListIsMutable();
-            chosenCardList_.addAll(other.chosenCardList_);
-          }
-          onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -640,12 +640,91 @@ public final class RogueFinishRepairReqOuterClass {
       }
       private int bitField0_;
 
+      private com.google.protobuf.Internal.IntList chosenCardList_ = emptyIntList();
+      private void ensureChosenCardListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          chosenCardList_ = mutableCopy(chosenCardList_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      /**
+       * <code>repeated uint32 chosen_card_list = 8;</code>
+       * @return A list containing the chosenCardList.
+       */
+      public java.util.List<java.lang.Integer>
+          getChosenCardListList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(chosenCardList_) : chosenCardList_;
+      }
+      /**
+       * <code>repeated uint32 chosen_card_list = 8;</code>
+       * @return The count of chosenCardList.
+       */
+      public int getChosenCardListCount() {
+        return chosenCardList_.size();
+      }
+      /**
+       * <code>repeated uint32 chosen_card_list = 8;</code>
+       * @param index The index of the element to return.
+       * @return The chosenCardList at the given index.
+       */
+      public int getChosenCardList(int index) {
+        return chosenCardList_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 chosen_card_list = 8;</code>
+       * @param index The index to set the value at.
+       * @param value The chosenCardList to set.
+       * @return This builder for chaining.
+       */
+      public Builder setChosenCardList(
+          int index, int value) {
+        ensureChosenCardListIsMutable();
+        chosenCardList_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 chosen_card_list = 8;</code>
+       * @param value The chosenCardList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addChosenCardList(int value) {
+        ensureChosenCardListIsMutable();
+        chosenCardList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 chosen_card_list = 8;</code>
+       * @param values The chosenCardList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllChosenCardList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureChosenCardListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, chosenCardList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 chosen_card_list = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearChosenCardList() {
+        chosenCardList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar> chosenAvatarList_ =
         java.util.Collections.emptyList();
       private void ensureChosenAvatarListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000002) != 0)) {
           chosenAvatarList_ = new java.util.ArrayList<emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar>(chosenAvatarList_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000002;
          }
       }
 
@@ -653,7 +732,7 @@ public final class RogueFinishRepairReqOuterClass {
           emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar, emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.Builder, emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatarOrBuilder> chosenAvatarListBuilder_;
 
       /**
-       * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 2;</code>
+       * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar> getChosenAvatarListList() {
         if (chosenAvatarListBuilder_ == null) {
@@ -663,7 +742,7 @@ public final class RogueFinishRepairReqOuterClass {
         }
       }
       /**
-       * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 2;</code>
+       * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 11;</code>
        */
       public int getChosenAvatarListCount() {
         if (chosenAvatarListBuilder_ == null) {
@@ -673,7 +752,7 @@ public final class RogueFinishRepairReqOuterClass {
         }
       }
       /**
-       * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 2;</code>
+       * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 11;</code>
        */
       public emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar getChosenAvatarList(int index) {
         if (chosenAvatarListBuilder_ == null) {
@@ -683,7 +762,7 @@ public final class RogueFinishRepairReqOuterClass {
         }
       }
       /**
-       * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 2;</code>
+       * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 11;</code>
        */
       public Builder setChosenAvatarList(
           int index, emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar value) {
@@ -700,7 +779,7 @@ public final class RogueFinishRepairReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 2;</code>
+       * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 11;</code>
        */
       public Builder setChosenAvatarList(
           int index, emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.Builder builderForValue) {
@@ -714,7 +793,7 @@ public final class RogueFinishRepairReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 2;</code>
+       * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 11;</code>
        */
       public Builder addChosenAvatarList(emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar value) {
         if (chosenAvatarListBuilder_ == null) {
@@ -730,7 +809,7 @@ public final class RogueFinishRepairReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 2;</code>
+       * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 11;</code>
        */
       public Builder addChosenAvatarList(
           int index, emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar value) {
@@ -747,7 +826,7 @@ public final class RogueFinishRepairReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 2;</code>
+       * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 11;</code>
        */
       public Builder addChosenAvatarList(
           emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.Builder builderForValue) {
@@ -761,7 +840,7 @@ public final class RogueFinishRepairReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 2;</code>
+       * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 11;</code>
        */
       public Builder addChosenAvatarList(
           int index, emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.Builder builderForValue) {
@@ -775,7 +854,7 @@ public final class RogueFinishRepairReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 2;</code>
+       * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 11;</code>
        */
       public Builder addAllChosenAvatarList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar> values) {
@@ -790,12 +869,12 @@ public final class RogueFinishRepairReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 2;</code>
+       * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 11;</code>
        */
       public Builder clearChosenAvatarList() {
         if (chosenAvatarListBuilder_ == null) {
           chosenAvatarList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
         } else {
           chosenAvatarListBuilder_.clear();
@@ -803,7 +882,7 @@ public final class RogueFinishRepairReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 2;</code>
+       * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 11;</code>
        */
       public Builder removeChosenAvatarList(int index) {
         if (chosenAvatarListBuilder_ == null) {
@@ -816,14 +895,14 @@ public final class RogueFinishRepairReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 2;</code>
+       * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 11;</code>
        */
       public emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.Builder getChosenAvatarListBuilder(
           int index) {
         return getChosenAvatarListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 2;</code>
+       * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 11;</code>
        */
       public emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatarOrBuilder getChosenAvatarListOrBuilder(
           int index) {
@@ -833,7 +912,7 @@ public final class RogueFinishRepairReqOuterClass {
         }
       }
       /**
-       * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 2;</code>
+       * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 11;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatarOrBuilder> 
            getChosenAvatarListOrBuilderList() {
@@ -844,14 +923,14 @@ public final class RogueFinishRepairReqOuterClass {
         }
       }
       /**
-       * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 2;</code>
+       * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 11;</code>
        */
       public emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.Builder addChosenAvatarListBuilder() {
         return getChosenAvatarListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.getDefaultInstance());
       }
       /**
-       * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 2;</code>
+       * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 11;</code>
        */
       public emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.Builder addChosenAvatarListBuilder(
           int index) {
@@ -859,7 +938,7 @@ public final class RogueFinishRepairReqOuterClass {
             index, emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.getDefaultInstance());
       }
       /**
-       * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 2;</code>
+       * <code>repeated .RogueDiaryAvatar chosen_avatar_list = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.Builder> 
            getChosenAvatarListBuilderList() {
@@ -872,91 +951,12 @@ public final class RogueFinishRepairReqOuterClass {
           chosenAvatarListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar, emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatar.Builder, emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.RogueDiaryAvatarOrBuilder>(
                   chosenAvatarList_,
-                  ((bitField0_ & 0x00000001) != 0),
+                  ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
                   isClean());
           chosenAvatarList_ = null;
         }
         return chosenAvatarListBuilder_;
-      }
-
-      private com.google.protobuf.Internal.IntList chosenCardList_ = emptyIntList();
-      private void ensureChosenCardListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          chosenCardList_ = mutableCopy(chosenCardList_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-      /**
-       * <code>repeated uint32 chosen_card_list = 12;</code>
-       * @return A list containing the chosenCardList.
-       */
-      public java.util.List<java.lang.Integer>
-          getChosenCardListList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(chosenCardList_) : chosenCardList_;
-      }
-      /**
-       * <code>repeated uint32 chosen_card_list = 12;</code>
-       * @return The count of chosenCardList.
-       */
-      public int getChosenCardListCount() {
-        return chosenCardList_.size();
-      }
-      /**
-       * <code>repeated uint32 chosen_card_list = 12;</code>
-       * @param index The index of the element to return.
-       * @return The chosenCardList at the given index.
-       */
-      public int getChosenCardList(int index) {
-        return chosenCardList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 chosen_card_list = 12;</code>
-       * @param index The index to set the value at.
-       * @param value The chosenCardList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setChosenCardList(
-          int index, int value) {
-        ensureChosenCardListIsMutable();
-        chosenCardList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 chosen_card_list = 12;</code>
-       * @param value The chosenCardList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addChosenCardList(int value) {
-        ensureChosenCardListIsMutable();
-        chosenCardList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 chosen_card_list = 12;</code>
-       * @param values The chosenCardList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllChosenCardList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureChosenCardListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, chosenCardList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 chosen_card_list = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearChosenCardList() {
-        chosenCardList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1026,9 +1026,9 @@ public final class RogueFinishRepairReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032RogueFinishRepairReq.proto\032\026RogueDiary" +
-      "Avatar.proto\"_\n\024RogueFinishRepairReq\022-\n\022" +
-      "chosen_avatar_list\030\002 \003(\0132\021.RogueDiaryAva" +
-      "tar\022\030\n\020chosen_card_list\030\014 \003(\rB\033\n\031emu.gra" +
+      "Avatar.proto\"_\n\024RogueFinishRepairReq\022\030\n\020" +
+      "chosen_card_list\030\010 \003(\r\022-\n\022chosen_avatar_" +
+      "list\030\013 \003(\0132\021.RogueDiaryAvatarB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1041,7 +1041,7 @@ public final class RogueFinishRepairReqOuterClass {
     internal_static_RogueFinishRepairReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RogueFinishRepairReq_descriptor,
-        new java.lang.String[] { "ChosenAvatarList", "ChosenCardList", });
+        new java.lang.String[] { "ChosenCardList", "ChosenAvatarList", });
     emu.grasscutter.net.proto.RogueDiaryAvatarOuterClass.getDescriptor();
   }
 

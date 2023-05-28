@@ -19,15 +19,15 @@ public final class LiveEndNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 live_id = 14;</code>
+     * <code>uint32 live_id = 7;</code>
      * @return The liveId.
      */
     int getLiveId();
   }
   /**
    * <pre>
-   * Name: BHEIFLAOFKA
-   * CmdId: 886
+   * CmdId: 843
+   * Obf: GPPFLJNEPCF
    * </pre>
    *
    * Protobuf type {@code LiveEndNotify}
@@ -74,7 +74,7 @@ public final class LiveEndNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 112: {
+            case 56: {
 
               liveId_ = input.readUInt32();
               break;
@@ -111,10 +111,10 @@ public final class LiveEndNotifyOuterClass {
               emu.grasscutter.net.proto.LiveEndNotifyOuterClass.LiveEndNotify.class, emu.grasscutter.net.proto.LiveEndNotifyOuterClass.LiveEndNotify.Builder.class);
     }
 
-    public static final int LIVE_ID_FIELD_NUMBER = 14;
+    public static final int LIVE_ID_FIELD_NUMBER = 7;
     private int liveId_;
     /**
-     * <code>uint32 live_id = 14;</code>
+     * <code>uint32 live_id = 7;</code>
      * @return The liveId.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class LiveEndNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (liveId_ != 0) {
-        output.writeUInt32(14, liveId_);
+        output.writeUInt32(7, liveId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class LiveEndNotifyOuterClass {
       size = 0;
       if (liveId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, liveId_);
+          .computeUInt32Size(7, liveId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class LiveEndNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: BHEIFLAOFKA
-     * CmdId: 886
+     * CmdId: 843
+     * Obf: GPPFLJNEPCF
      * </pre>
      *
      * Protobuf type {@code LiveEndNotify}
@@ -431,7 +431,7 @@ public final class LiveEndNotifyOuterClass {
 
       private int liveId_ ;
       /**
-       * <code>uint32 live_id = 14;</code>
+       * <code>uint32 live_id = 7;</code>
        * @return The liveId.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class LiveEndNotifyOuterClass {
         return liveId_;
       }
       /**
-       * <code>uint32 live_id = 14;</code>
+       * <code>uint32 live_id = 7;</code>
        * @param value The liveId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class LiveEndNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 live_id = 14;</code>
+       * <code>uint32 live_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearLiveId() {
@@ -527,7 +527,7 @@ public final class LiveEndNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\023LiveEndNotify.proto\" \n\rLiveEndNotify\022\017" +
-      "\n\007live_id\030\016 \001(\rB\033\n\031emu.grasscutter.net.p" +
+      "\n\007live_id\030\007 \001(\rB\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

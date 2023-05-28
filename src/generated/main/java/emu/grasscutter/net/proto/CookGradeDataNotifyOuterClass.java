@@ -19,15 +19,15 @@ public final class CookGradeDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 grade = 3;</code>
+     * <code>uint32 grade = 13;</code>
      * @return The grade.
      */
     int getGrade();
   }
   /**
    * <pre>
-   * Name: OBOFAJMJMGL
-   * CmdId: 126
+   * CmdId: 103
+   * Obf: MPEDAIGLBMB
    * </pre>
    *
    * Protobuf type {@code CookGradeDataNotify}
@@ -74,7 +74,7 @@ public final class CookGradeDataNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 104: {
 
               grade_ = input.readUInt32();
               break;
@@ -111,10 +111,10 @@ public final class CookGradeDataNotifyOuterClass {
               emu.grasscutter.net.proto.CookGradeDataNotifyOuterClass.CookGradeDataNotify.class, emu.grasscutter.net.proto.CookGradeDataNotifyOuterClass.CookGradeDataNotify.Builder.class);
     }
 
-    public static final int GRADE_FIELD_NUMBER = 3;
+    public static final int GRADE_FIELD_NUMBER = 13;
     private int grade_;
     /**
-     * <code>uint32 grade = 3;</code>
+     * <code>uint32 grade = 13;</code>
      * @return The grade.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class CookGradeDataNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (grade_ != 0) {
-        output.writeUInt32(3, grade_);
+        output.writeUInt32(13, grade_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class CookGradeDataNotifyOuterClass {
       size = 0;
       if (grade_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, grade_);
+          .computeUInt32Size(13, grade_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class CookGradeDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: OBOFAJMJMGL
-     * CmdId: 126
+     * CmdId: 103
+     * Obf: MPEDAIGLBMB
      * </pre>
      *
      * Protobuf type {@code CookGradeDataNotify}
@@ -431,7 +431,7 @@ public final class CookGradeDataNotifyOuterClass {
 
       private int grade_ ;
       /**
-       * <code>uint32 grade = 3;</code>
+       * <code>uint32 grade = 13;</code>
        * @return The grade.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class CookGradeDataNotifyOuterClass {
         return grade_;
       }
       /**
-       * <code>uint32 grade = 3;</code>
+       * <code>uint32 grade = 13;</code>
        * @param value The grade to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class CookGradeDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 grade = 3;</code>
+       * <code>uint32 grade = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearGrade() {
@@ -527,7 +527,7 @@ public final class CookGradeDataNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031CookGradeDataNotify.proto\"$\n\023CookGrade" +
-      "DataNotify\022\r\n\005grade\030\003 \001(\rB\033\n\031emu.grasscu" +
+      "DataNotify\022\r\n\005grade\030\r \001(\rB\033\n\031emu.grasscu" +
       "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

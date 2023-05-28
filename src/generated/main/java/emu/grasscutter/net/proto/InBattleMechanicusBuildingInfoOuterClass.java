@@ -19,32 +19,32 @@ public final class InBattleMechanicusBuildingInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>uint32 refund_points = 11;</code>
+     * @return The refundPoints.
+     */
+    int getRefundPoints();
+
+    /**
      * <code>uint32 cost_points = 8;</code>
      * @return The costPoints.
      */
     int getCostPoints();
 
     /**
-     * <code>uint32 KEOEDNKONHH = 4;</code>
-     * @return The kEOEDNKONHH.
-     */
-    int getKEOEDNKONHH();
-
-    /**
-     * <code>uint32 AHBIFENKEPF = 9;</code>
-     * @return The aHBIFENKEPF.
-     */
-    int getAHBIFENKEPF();
-
-    /**
-     * <code>uint32 level = 13;</code>
+     * <code>uint32 level = 5;</code>
      * @return The level.
      */
     int getLevel();
+
+    /**
+     * <code>uint32 building_id = 1;</code>
+     * @return The buildingId.
+     */
+    int getBuildingId();
   }
   /**
    * <pre>
-   * Name: PHLPMOGFMDN
+   * Obf: EJHDOLJOJMP
    * </pre>
    *
    * Protobuf type {@code InBattleMechanicusBuildingInfo}
@@ -91,9 +91,14 @@ public final class InBattleMechanicusBuildingInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 8: {
 
-              kEOEDNKONHH_ = input.readUInt32();
+              buildingId_ = input.readUInt32();
+              break;
+            }
+            case 40: {
+
+              level_ = input.readUInt32();
               break;
             }
             case 64: {
@@ -101,14 +106,9 @@ public final class InBattleMechanicusBuildingInfoOuterClass {
               costPoints_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 88: {
 
-              aHBIFENKEPF_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
-              level_ = input.readUInt32();
+              refundPoints_ = input.readUInt32();
               break;
             }
             default: {
@@ -143,6 +143,17 @@ public final class InBattleMechanicusBuildingInfoOuterClass {
               emu.grasscutter.net.proto.InBattleMechanicusBuildingInfoOuterClass.InBattleMechanicusBuildingInfo.class, emu.grasscutter.net.proto.InBattleMechanicusBuildingInfoOuterClass.InBattleMechanicusBuildingInfo.Builder.class);
     }
 
+    public static final int REFUND_POINTS_FIELD_NUMBER = 11;
+    private int refundPoints_;
+    /**
+     * <code>uint32 refund_points = 11;</code>
+     * @return The refundPoints.
+     */
+    @java.lang.Override
+    public int getRefundPoints() {
+      return refundPoints_;
+    }
+
     public static final int COST_POINTS_FIELD_NUMBER = 8;
     private int costPoints_;
     /**
@@ -154,37 +165,26 @@ public final class InBattleMechanicusBuildingInfoOuterClass {
       return costPoints_;
     }
 
-    public static final int KEOEDNKONHH_FIELD_NUMBER = 4;
-    private int kEOEDNKONHH_;
-    /**
-     * <code>uint32 KEOEDNKONHH = 4;</code>
-     * @return The kEOEDNKONHH.
-     */
-    @java.lang.Override
-    public int getKEOEDNKONHH() {
-      return kEOEDNKONHH_;
-    }
-
-    public static final int AHBIFENKEPF_FIELD_NUMBER = 9;
-    private int aHBIFENKEPF_;
-    /**
-     * <code>uint32 AHBIFENKEPF = 9;</code>
-     * @return The aHBIFENKEPF.
-     */
-    @java.lang.Override
-    public int getAHBIFENKEPF() {
-      return aHBIFENKEPF_;
-    }
-
-    public static final int LEVEL_FIELD_NUMBER = 13;
+    public static final int LEVEL_FIELD_NUMBER = 5;
     private int level_;
     /**
-     * <code>uint32 level = 13;</code>
+     * <code>uint32 level = 5;</code>
      * @return The level.
      */
     @java.lang.Override
     public int getLevel() {
       return level_;
+    }
+
+    public static final int BUILDING_ID_FIELD_NUMBER = 1;
+    private int buildingId_;
+    /**
+     * <code>uint32 building_id = 1;</code>
+     * @return The buildingId.
+     */
+    @java.lang.Override
+    public int getBuildingId() {
+      return buildingId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -201,17 +201,17 @@ public final class InBattleMechanicusBuildingInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (kEOEDNKONHH_ != 0) {
-        output.writeUInt32(4, kEOEDNKONHH_);
+      if (buildingId_ != 0) {
+        output.writeUInt32(1, buildingId_);
+      }
+      if (level_ != 0) {
+        output.writeUInt32(5, level_);
       }
       if (costPoints_ != 0) {
         output.writeUInt32(8, costPoints_);
       }
-      if (aHBIFENKEPF_ != 0) {
-        output.writeUInt32(9, aHBIFENKEPF_);
-      }
-      if (level_ != 0) {
-        output.writeUInt32(13, level_);
+      if (refundPoints_ != 0) {
+        output.writeUInt32(11, refundPoints_);
       }
       unknownFields.writeTo(output);
     }
@@ -222,21 +222,21 @@ public final class InBattleMechanicusBuildingInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (kEOEDNKONHH_ != 0) {
+      if (buildingId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, kEOEDNKONHH_);
+          .computeUInt32Size(1, buildingId_);
+      }
+      if (level_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, level_);
       }
       if (costPoints_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(8, costPoints_);
       }
-      if (aHBIFENKEPF_ != 0) {
+      if (refundPoints_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, aHBIFENKEPF_);
-      }
-      if (level_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, level_);
+          .computeUInt32Size(11, refundPoints_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -253,14 +253,14 @@ public final class InBattleMechanicusBuildingInfoOuterClass {
       }
       emu.grasscutter.net.proto.InBattleMechanicusBuildingInfoOuterClass.InBattleMechanicusBuildingInfo other = (emu.grasscutter.net.proto.InBattleMechanicusBuildingInfoOuterClass.InBattleMechanicusBuildingInfo) obj;
 
+      if (getRefundPoints()
+          != other.getRefundPoints()) return false;
       if (getCostPoints()
           != other.getCostPoints()) return false;
-      if (getKEOEDNKONHH()
-          != other.getKEOEDNKONHH()) return false;
-      if (getAHBIFENKEPF()
-          != other.getAHBIFENKEPF()) return false;
       if (getLevel()
           != other.getLevel()) return false;
+      if (getBuildingId()
+          != other.getBuildingId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -272,14 +272,14 @@ public final class InBattleMechanicusBuildingInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + REFUND_POINTS_FIELD_NUMBER;
+      hash = (53 * hash) + getRefundPoints();
       hash = (37 * hash) + COST_POINTS_FIELD_NUMBER;
       hash = (53 * hash) + getCostPoints();
-      hash = (37 * hash) + KEOEDNKONHH_FIELD_NUMBER;
-      hash = (53 * hash) + getKEOEDNKONHH();
-      hash = (37 * hash) + AHBIFENKEPF_FIELD_NUMBER;
-      hash = (53 * hash) + getAHBIFENKEPF();
       hash = (37 * hash) + LEVEL_FIELD_NUMBER;
       hash = (53 * hash) + getLevel();
+      hash = (37 * hash) + BUILDING_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getBuildingId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -377,7 +377,7 @@ public final class InBattleMechanicusBuildingInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: PHLPMOGFMDN
+     * Obf: EJHDOLJOJMP
      * </pre>
      *
      * Protobuf type {@code InBattleMechanicusBuildingInfo}
@@ -417,13 +417,13 @@ public final class InBattleMechanicusBuildingInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        refundPoints_ = 0;
+
         costPoints_ = 0;
 
-        kEOEDNKONHH_ = 0;
-
-        aHBIFENKEPF_ = 0;
-
         level_ = 0;
+
+        buildingId_ = 0;
 
         return this;
       }
@@ -451,10 +451,10 @@ public final class InBattleMechanicusBuildingInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.InBattleMechanicusBuildingInfoOuterClass.InBattleMechanicusBuildingInfo buildPartial() {
         emu.grasscutter.net.proto.InBattleMechanicusBuildingInfoOuterClass.InBattleMechanicusBuildingInfo result = new emu.grasscutter.net.proto.InBattleMechanicusBuildingInfoOuterClass.InBattleMechanicusBuildingInfo(this);
+        result.refundPoints_ = refundPoints_;
         result.costPoints_ = costPoints_;
-        result.kEOEDNKONHH_ = kEOEDNKONHH_;
-        result.aHBIFENKEPF_ = aHBIFENKEPF_;
         result.level_ = level_;
+        result.buildingId_ = buildingId_;
         onBuilt();
         return result;
       }
@@ -503,17 +503,17 @@ public final class InBattleMechanicusBuildingInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.InBattleMechanicusBuildingInfoOuterClass.InBattleMechanicusBuildingInfo other) {
         if (other == emu.grasscutter.net.proto.InBattleMechanicusBuildingInfoOuterClass.InBattleMechanicusBuildingInfo.getDefaultInstance()) return this;
+        if (other.getRefundPoints() != 0) {
+          setRefundPoints(other.getRefundPoints());
+        }
         if (other.getCostPoints() != 0) {
           setCostPoints(other.getCostPoints());
         }
-        if (other.getKEOEDNKONHH() != 0) {
-          setKEOEDNKONHH(other.getKEOEDNKONHH());
-        }
-        if (other.getAHBIFENKEPF() != 0) {
-          setAHBIFENKEPF(other.getAHBIFENKEPF());
-        }
         if (other.getLevel() != 0) {
           setLevel(other.getLevel());
+        }
+        if (other.getBuildingId() != 0) {
+          setBuildingId(other.getBuildingId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -541,6 +541,37 @@ public final class InBattleMechanicusBuildingInfoOuterClass {
             mergeFrom(parsedMessage);
           }
         }
+        return this;
+      }
+
+      private int refundPoints_ ;
+      /**
+       * <code>uint32 refund_points = 11;</code>
+       * @return The refundPoints.
+       */
+      @java.lang.Override
+      public int getRefundPoints() {
+        return refundPoints_;
+      }
+      /**
+       * <code>uint32 refund_points = 11;</code>
+       * @param value The refundPoints to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRefundPoints(int value) {
+        
+        refundPoints_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 refund_points = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRefundPoints() {
+        
+        refundPoints_ = 0;
+        onChanged();
         return this;
       }
 
@@ -575,71 +606,9 @@ public final class InBattleMechanicusBuildingInfoOuterClass {
         return this;
       }
 
-      private int kEOEDNKONHH_ ;
-      /**
-       * <code>uint32 KEOEDNKONHH = 4;</code>
-       * @return The kEOEDNKONHH.
-       */
-      @java.lang.Override
-      public int getKEOEDNKONHH() {
-        return kEOEDNKONHH_;
-      }
-      /**
-       * <code>uint32 KEOEDNKONHH = 4;</code>
-       * @param value The kEOEDNKONHH to set.
-       * @return This builder for chaining.
-       */
-      public Builder setKEOEDNKONHH(int value) {
-        
-        kEOEDNKONHH_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 KEOEDNKONHH = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearKEOEDNKONHH() {
-        
-        kEOEDNKONHH_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int aHBIFENKEPF_ ;
-      /**
-       * <code>uint32 AHBIFENKEPF = 9;</code>
-       * @return The aHBIFENKEPF.
-       */
-      @java.lang.Override
-      public int getAHBIFENKEPF() {
-        return aHBIFENKEPF_;
-      }
-      /**
-       * <code>uint32 AHBIFENKEPF = 9;</code>
-       * @param value The aHBIFENKEPF to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAHBIFENKEPF(int value) {
-        
-        aHBIFENKEPF_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 AHBIFENKEPF = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAHBIFENKEPF() {
-        
-        aHBIFENKEPF_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int level_ ;
       /**
-       * <code>uint32 level = 13;</code>
+       * <code>uint32 level = 5;</code>
        * @return The level.
        */
       @java.lang.Override
@@ -647,7 +616,7 @@ public final class InBattleMechanicusBuildingInfoOuterClass {
         return level_;
       }
       /**
-       * <code>uint32 level = 13;</code>
+       * <code>uint32 level = 5;</code>
        * @param value The level to set.
        * @return This builder for chaining.
        */
@@ -658,12 +627,43 @@ public final class InBattleMechanicusBuildingInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level = 13;</code>
+       * <code>uint32 level = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevel() {
         
         level_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int buildingId_ ;
+      /**
+       * <code>uint32 building_id = 1;</code>
+       * @return The buildingId.
+       */
+      @java.lang.Override
+      public int getBuildingId() {
+        return buildingId_;
+      }
+      /**
+       * <code>uint32 building_id = 1;</code>
+       * @param value The buildingId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBuildingId(int value) {
+        
+        buildingId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 building_id = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBuildingId() {
+        
+        buildingId_ = 0;
         onChanged();
         return this;
       }
@@ -734,11 +734,11 @@ public final class InBattleMechanicusBuildingInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n$InBattleMechanicusBuildingInfo.proto\"n" +
-      "\n\036InBattleMechanicusBuildingInfo\022\023\n\013cost" +
-      "_points\030\010 \001(\r\022\023\n\013KEOEDNKONHH\030\004 \001(\r\022\023\n\013AH" +
-      "BIFENKEPF\030\t \001(\r\022\r\n\005level\030\r \001(\rB\033\n\031emu.gr" +
-      "asscutter.net.protob\006proto3"
+      "\n$InBattleMechanicusBuildingInfo.proto\"p" +
+      "\n\036InBattleMechanicusBuildingInfo\022\025\n\rrefu" +
+      "nd_points\030\013 \001(\r\022\023\n\013cost_points\030\010 \001(\r\022\r\n\005" +
+      "level\030\005 \001(\r\022\023\n\013building_id\030\001 \001(\rB\033\n\031emu." +
+      "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -749,7 +749,7 @@ public final class InBattleMechanicusBuildingInfoOuterClass {
     internal_static_InBattleMechanicusBuildingInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_InBattleMechanicusBuildingInfo_descriptor,
-        new java.lang.String[] { "CostPoints", "KEOEDNKONHH", "AHBIFENKEPF", "Level", });
+        new java.lang.String[] { "RefundPoints", "CostPoints", "Level", "BuildingId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

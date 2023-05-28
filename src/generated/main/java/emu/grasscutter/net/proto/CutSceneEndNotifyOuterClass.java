@@ -19,21 +19,21 @@ public final class CutSceneEndNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 cutscene_id = 6;</code>
+     * <code>uint32 cutscene_id = 13;</code>
      * @return The cutsceneId.
      */
     int getCutsceneId();
 
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 3;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * Name: AOLNCADGIOF
-   * CmdId: 283
+   * CmdId: 222
+   * Obf: IOBIKEILGDA
    * </pre>
    *
    * Protobuf type {@code CutSceneEndNotify}
@@ -80,12 +80,12 @@ public final class CutSceneEndNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 24: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 48: {
+            case 104: {
 
               cutsceneId_ = input.readUInt32();
               break;
@@ -122,10 +122,10 @@ public final class CutSceneEndNotifyOuterClass {
               emu.grasscutter.net.proto.CutSceneEndNotifyOuterClass.CutSceneEndNotify.class, emu.grasscutter.net.proto.CutSceneEndNotifyOuterClass.CutSceneEndNotify.Builder.class);
     }
 
-    public static final int CUTSCENE_ID_FIELD_NUMBER = 6;
+    public static final int CUTSCENE_ID_FIELD_NUMBER = 13;
     private int cutsceneId_;
     /**
-     * <code>uint32 cutscene_id = 6;</code>
+     * <code>uint32 cutscene_id = 13;</code>
      * @return The cutsceneId.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class CutSceneEndNotifyOuterClass {
       return cutsceneId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 1;
+    public static final int RETCODE_FIELD_NUMBER = 3;
     private int retcode_;
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 3;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -159,10 +159,10 @@ public final class CutSceneEndNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(1, retcode_);
+        output.writeInt32(3, retcode_);
       }
       if (cutsceneId_ != 0) {
-        output.writeUInt32(6, cutsceneId_);
+        output.writeUInt32(13, cutsceneId_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +175,11 @@ public final class CutSceneEndNotifyOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, retcode_);
+          .computeInt32Size(3, retcode_);
       }
       if (cutsceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, cutsceneId_);
+          .computeUInt32Size(13, cutsceneId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class CutSceneEndNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: AOLNCADGIOF
-     * CmdId: 283
+     * CmdId: 222
+     * Obf: IOBIKEILGDA
      * </pre>
      *
      * Protobuf type {@code CutSceneEndNotify}
@@ -470,7 +470,7 @@ public final class CutSceneEndNotifyOuterClass {
 
       private int cutsceneId_ ;
       /**
-       * <code>uint32 cutscene_id = 6;</code>
+       * <code>uint32 cutscene_id = 13;</code>
        * @return The cutsceneId.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class CutSceneEndNotifyOuterClass {
         return cutsceneId_;
       }
       /**
-       * <code>uint32 cutscene_id = 6;</code>
+       * <code>uint32 cutscene_id = 13;</code>
        * @param value The cutsceneId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class CutSceneEndNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cutscene_id = 6;</code>
+       * <code>uint32 cutscene_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearCutsceneId() {
@@ -501,7 +501,7 @@ public final class CutSceneEndNotifyOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 3;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class CutSceneEndNotifyOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 3;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class CutSceneEndNotifyOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -597,7 +597,7 @@ public final class CutSceneEndNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027CutSceneEndNotify.proto\"9\n\021CutSceneEnd" +
-      "Notify\022\023\n\013cutscene_id\030\006 \001(\r\022\017\n\007retcode\030\001" +
+      "Notify\022\023\n\013cutscene_id\030\r \001(\r\022\017\n\007retcode\030\003" +
       " \001(\005B\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
     };

@@ -19,35 +19,35 @@ public final class StartEffigyChallengeReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 point_id = 7;</code>
-     * @return The pointId.
-     */
-    int getPointId();
-
-    /**
-     * <code>uint32 challenge_id = 4;</code>
+     * <code>uint32 challenge_id = 2;</code>
      * @return The challengeId.
      */
     int getChallengeId();
 
     /**
-     * <code>uint32 difficulty_id = 12;</code>
+     * <code>uint32 point_id = 6;</code>
+     * @return The pointId.
+     */
+    int getPointId();
+
+    /**
+     * <code>uint32 difficulty_id = 1;</code>
      * @return The difficultyId.
      */
     int getDifficultyId();
 
     /**
-     * <code>repeated uint32 condition_id_list = 9;</code>
+     * <code>repeated uint32 condition_id_list = 4;</code>
      * @return A list containing the conditionIdList.
      */
     java.util.List<java.lang.Integer> getConditionIdListList();
     /**
-     * <code>repeated uint32 condition_id_list = 9;</code>
+     * <code>repeated uint32 condition_id_list = 4;</code>
      * @return The count of conditionIdList.
      */
     int getConditionIdListCount();
     /**
-     * <code>repeated uint32 condition_id_list = 9;</code>
+     * <code>repeated uint32 condition_id_list = 4;</code>
      * @param index The index of the element to return.
      * @return The conditionIdList at the given index.
      */
@@ -55,8 +55,8 @@ public final class StartEffigyChallengeReqOuterClass {
   }
   /**
    * <pre>
-   * Name: CKHKLDBIHFB
-   * CmdId: 2156
+   * CmdId: 2158
+   * Obf: EKPECPKIHLI
    * </pre>
    *
    * Protobuf type {@code StartEffigyChallengeReq}
@@ -105,17 +105,17 @@ public final class StartEffigyChallengeReqOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 8: {
+
+              difficultyId_ = input.readUInt32();
+              break;
+            }
+            case 16: {
 
               challengeId_ = input.readUInt32();
               break;
             }
-            case 56: {
-
-              pointId_ = input.readUInt32();
-              break;
-            }
-            case 72: {
+            case 32: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 conditionIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -123,7 +123,7 @@ public final class StartEffigyChallengeReqOuterClass {
               conditionIdList_.addInt(input.readUInt32());
               break;
             }
-            case 74: {
+            case 34: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -136,9 +136,9 @@ public final class StartEffigyChallengeReqOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 96: {
+            case 48: {
 
-              difficultyId_ = input.readUInt32();
+              pointId_ = input.readUInt32();
               break;
             }
             default: {
@@ -176,21 +176,10 @@ public final class StartEffigyChallengeReqOuterClass {
               emu.grasscutter.net.proto.StartEffigyChallengeReqOuterClass.StartEffigyChallengeReq.class, emu.grasscutter.net.proto.StartEffigyChallengeReqOuterClass.StartEffigyChallengeReq.Builder.class);
     }
 
-    public static final int POINT_ID_FIELD_NUMBER = 7;
-    private int pointId_;
-    /**
-     * <code>uint32 point_id = 7;</code>
-     * @return The pointId.
-     */
-    @java.lang.Override
-    public int getPointId() {
-      return pointId_;
-    }
-
-    public static final int CHALLENGE_ID_FIELD_NUMBER = 4;
+    public static final int CHALLENGE_ID_FIELD_NUMBER = 2;
     private int challengeId_;
     /**
-     * <code>uint32 challenge_id = 4;</code>
+     * <code>uint32 challenge_id = 2;</code>
      * @return The challengeId.
      */
     @java.lang.Override
@@ -198,10 +187,21 @@ public final class StartEffigyChallengeReqOuterClass {
       return challengeId_;
     }
 
-    public static final int DIFFICULTY_ID_FIELD_NUMBER = 12;
+    public static final int POINT_ID_FIELD_NUMBER = 6;
+    private int pointId_;
+    /**
+     * <code>uint32 point_id = 6;</code>
+     * @return The pointId.
+     */
+    @java.lang.Override
+    public int getPointId() {
+      return pointId_;
+    }
+
+    public static final int DIFFICULTY_ID_FIELD_NUMBER = 1;
     private int difficultyId_;
     /**
-     * <code>uint32 difficulty_id = 12;</code>
+     * <code>uint32 difficulty_id = 1;</code>
      * @return The difficultyId.
      */
     @java.lang.Override
@@ -209,10 +209,10 @@ public final class StartEffigyChallengeReqOuterClass {
       return difficultyId_;
     }
 
-    public static final int CONDITION_ID_LIST_FIELD_NUMBER = 9;
+    public static final int CONDITION_ID_LIST_FIELD_NUMBER = 4;
     private com.google.protobuf.Internal.IntList conditionIdList_;
     /**
-     * <code>repeated uint32 condition_id_list = 9;</code>
+     * <code>repeated uint32 condition_id_list = 4;</code>
      * @return A list containing the conditionIdList.
      */
     @java.lang.Override
@@ -221,14 +221,14 @@ public final class StartEffigyChallengeReqOuterClass {
       return conditionIdList_;
     }
     /**
-     * <code>repeated uint32 condition_id_list = 9;</code>
+     * <code>repeated uint32 condition_id_list = 4;</code>
      * @return The count of conditionIdList.
      */
     public int getConditionIdListCount() {
       return conditionIdList_.size();
     }
     /**
-     * <code>repeated uint32 condition_id_list = 9;</code>
+     * <code>repeated uint32 condition_id_list = 4;</code>
      * @param index The index of the element to return.
      * @return The conditionIdList at the given index.
      */
@@ -252,21 +252,21 @@ public final class StartEffigyChallengeReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (challengeId_ != 0) {
-        output.writeUInt32(4, challengeId_);
+      if (difficultyId_ != 0) {
+        output.writeUInt32(1, difficultyId_);
       }
-      if (pointId_ != 0) {
-        output.writeUInt32(7, pointId_);
+      if (challengeId_ != 0) {
+        output.writeUInt32(2, challengeId_);
       }
       if (getConditionIdListList().size() > 0) {
-        output.writeUInt32NoTag(74);
+        output.writeUInt32NoTag(34);
         output.writeUInt32NoTag(conditionIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < conditionIdList_.size(); i++) {
         output.writeUInt32NoTag(conditionIdList_.getInt(i));
       }
-      if (difficultyId_ != 0) {
-        output.writeUInt32(12, difficultyId_);
+      if (pointId_ != 0) {
+        output.writeUInt32(6, pointId_);
       }
       unknownFields.writeTo(output);
     }
@@ -277,13 +277,13 @@ public final class StartEffigyChallengeReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (difficultyId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, difficultyId_);
+      }
       if (challengeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, challengeId_);
-      }
-      if (pointId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, pointId_);
+          .computeUInt32Size(2, challengeId_);
       }
       {
         int dataSize = 0;
@@ -299,9 +299,9 @@ public final class StartEffigyChallengeReqOuterClass {
         }
         conditionIdListMemoizedSerializedSize = dataSize;
       }
-      if (difficultyId_ != 0) {
+      if (pointId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, difficultyId_);
+          .computeUInt32Size(6, pointId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -318,10 +318,10 @@ public final class StartEffigyChallengeReqOuterClass {
       }
       emu.grasscutter.net.proto.StartEffigyChallengeReqOuterClass.StartEffigyChallengeReq other = (emu.grasscutter.net.proto.StartEffigyChallengeReqOuterClass.StartEffigyChallengeReq) obj;
 
-      if (getPointId()
-          != other.getPointId()) return false;
       if (getChallengeId()
           != other.getChallengeId()) return false;
+      if (getPointId()
+          != other.getPointId()) return false;
       if (getDifficultyId()
           != other.getDifficultyId()) return false;
       if (!getConditionIdListList()
@@ -337,10 +337,10 @@ public final class StartEffigyChallengeReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + POINT_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getPointId();
       hash = (37 * hash) + CHALLENGE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getChallengeId();
+      hash = (37 * hash) + POINT_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getPointId();
       hash = (37 * hash) + DIFFICULTY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getDifficultyId();
       if (getConditionIdListCount() > 0) {
@@ -444,8 +444,8 @@ public final class StartEffigyChallengeReqOuterClass {
     }
     /**
      * <pre>
-     * Name: CKHKLDBIHFB
-     * CmdId: 2156
+     * CmdId: 2158
+     * Obf: EKPECPKIHLI
      * </pre>
      *
      * Protobuf type {@code StartEffigyChallengeReq}
@@ -485,9 +485,9 @@ public final class StartEffigyChallengeReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        pointId_ = 0;
-
         challengeId_ = 0;
+
+        pointId_ = 0;
 
         difficultyId_ = 0;
 
@@ -520,8 +520,8 @@ public final class StartEffigyChallengeReqOuterClass {
       public emu.grasscutter.net.proto.StartEffigyChallengeReqOuterClass.StartEffigyChallengeReq buildPartial() {
         emu.grasscutter.net.proto.StartEffigyChallengeReqOuterClass.StartEffigyChallengeReq result = new emu.grasscutter.net.proto.StartEffigyChallengeReqOuterClass.StartEffigyChallengeReq(this);
         int from_bitField0_ = bitField0_;
-        result.pointId_ = pointId_;
         result.challengeId_ = challengeId_;
+        result.pointId_ = pointId_;
         result.difficultyId_ = difficultyId_;
         if (((bitField0_ & 0x00000001) != 0)) {
           conditionIdList_.makeImmutable();
@@ -576,11 +576,11 @@ public final class StartEffigyChallengeReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.StartEffigyChallengeReqOuterClass.StartEffigyChallengeReq other) {
         if (other == emu.grasscutter.net.proto.StartEffigyChallengeReqOuterClass.StartEffigyChallengeReq.getDefaultInstance()) return this;
-        if (other.getPointId() != 0) {
-          setPointId(other.getPointId());
-        }
         if (other.getChallengeId() != 0) {
           setChallengeId(other.getChallengeId());
+        }
+        if (other.getPointId() != 0) {
+          setPointId(other.getPointId());
         }
         if (other.getDifficultyId() != 0) {
           setDifficultyId(other.getDifficultyId());
@@ -625,40 +625,9 @@ public final class StartEffigyChallengeReqOuterClass {
       }
       private int bitField0_;
 
-      private int pointId_ ;
-      /**
-       * <code>uint32 point_id = 7;</code>
-       * @return The pointId.
-       */
-      @java.lang.Override
-      public int getPointId() {
-        return pointId_;
-      }
-      /**
-       * <code>uint32 point_id = 7;</code>
-       * @param value The pointId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPointId(int value) {
-        
-        pointId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 point_id = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPointId() {
-        
-        pointId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int challengeId_ ;
       /**
-       * <code>uint32 challenge_id = 4;</code>
+       * <code>uint32 challenge_id = 2;</code>
        * @return The challengeId.
        */
       @java.lang.Override
@@ -666,7 +635,7 @@ public final class StartEffigyChallengeReqOuterClass {
         return challengeId_;
       }
       /**
-       * <code>uint32 challenge_id = 4;</code>
+       * <code>uint32 challenge_id = 2;</code>
        * @param value The challengeId to set.
        * @return This builder for chaining.
        */
@@ -677,7 +646,7 @@ public final class StartEffigyChallengeReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 challenge_id = 4;</code>
+       * <code>uint32 challenge_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearChallengeId() {
@@ -687,9 +656,40 @@ public final class StartEffigyChallengeReqOuterClass {
         return this;
       }
 
+      private int pointId_ ;
+      /**
+       * <code>uint32 point_id = 6;</code>
+       * @return The pointId.
+       */
+      @java.lang.Override
+      public int getPointId() {
+        return pointId_;
+      }
+      /**
+       * <code>uint32 point_id = 6;</code>
+       * @param value The pointId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPointId(int value) {
+        
+        pointId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 point_id = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPointId() {
+        
+        pointId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int difficultyId_ ;
       /**
-       * <code>uint32 difficulty_id = 12;</code>
+       * <code>uint32 difficulty_id = 1;</code>
        * @return The difficultyId.
        */
       @java.lang.Override
@@ -697,7 +697,7 @@ public final class StartEffigyChallengeReqOuterClass {
         return difficultyId_;
       }
       /**
-       * <code>uint32 difficulty_id = 12;</code>
+       * <code>uint32 difficulty_id = 1;</code>
        * @param value The difficultyId to set.
        * @return This builder for chaining.
        */
@@ -708,7 +708,7 @@ public final class StartEffigyChallengeReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficulty_id = 12;</code>
+       * <code>uint32 difficulty_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficultyId() {
@@ -726,7 +726,7 @@ public final class StartEffigyChallengeReqOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 condition_id_list = 9;</code>
+       * <code>repeated uint32 condition_id_list = 4;</code>
        * @return A list containing the conditionIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -735,14 +735,14 @@ public final class StartEffigyChallengeReqOuterClass {
                  java.util.Collections.unmodifiableList(conditionIdList_) : conditionIdList_;
       }
       /**
-       * <code>repeated uint32 condition_id_list = 9;</code>
+       * <code>repeated uint32 condition_id_list = 4;</code>
        * @return The count of conditionIdList.
        */
       public int getConditionIdListCount() {
         return conditionIdList_.size();
       }
       /**
-       * <code>repeated uint32 condition_id_list = 9;</code>
+       * <code>repeated uint32 condition_id_list = 4;</code>
        * @param index The index of the element to return.
        * @return The conditionIdList at the given index.
        */
@@ -750,7 +750,7 @@ public final class StartEffigyChallengeReqOuterClass {
         return conditionIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 condition_id_list = 9;</code>
+       * <code>repeated uint32 condition_id_list = 4;</code>
        * @param index The index to set the value at.
        * @param value The conditionIdList to set.
        * @return This builder for chaining.
@@ -763,7 +763,7 @@ public final class StartEffigyChallengeReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 condition_id_list = 9;</code>
+       * <code>repeated uint32 condition_id_list = 4;</code>
        * @param value The conditionIdList to add.
        * @return This builder for chaining.
        */
@@ -774,7 +774,7 @@ public final class StartEffigyChallengeReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 condition_id_list = 9;</code>
+       * <code>repeated uint32 condition_id_list = 4;</code>
        * @param values The conditionIdList to add.
        * @return This builder for chaining.
        */
@@ -787,7 +787,7 @@ public final class StartEffigyChallengeReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 condition_id_list = 9;</code>
+       * <code>repeated uint32 condition_id_list = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearConditionIdList() {
@@ -864,9 +864,9 @@ public final class StartEffigyChallengeReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035StartEffigyChallengeReq.proto\"s\n\027Start" +
-      "EffigyChallengeReq\022\020\n\010point_id\030\007 \001(\r\022\024\n\014" +
-      "challenge_id\030\004 \001(\r\022\025\n\rdifficulty_id\030\014 \001(" +
-      "\r\022\031\n\021condition_id_list\030\t \003(\rB\033\n\031emu.gras" +
+      "EffigyChallengeReq\022\024\n\014challenge_id\030\002 \001(\r" +
+      "\022\020\n\010point_id\030\006 \001(\r\022\025\n\rdifficulty_id\030\001 \001(" +
+      "\r\022\031\n\021condition_id_list\030\004 \003(\rB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -878,7 +878,7 @@ public final class StartEffigyChallengeReqOuterClass {
     internal_static_StartEffigyChallengeReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_StartEffigyChallengeReq_descriptor,
-        new java.lang.String[] { "PointId", "ChallengeId", "DifficultyId", "ConditionIdList", });
+        new java.lang.String[] { "ChallengeId", "PointId", "DifficultyId", "ConditionIdList", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

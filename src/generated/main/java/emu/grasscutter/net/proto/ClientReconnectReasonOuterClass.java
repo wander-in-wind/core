@@ -16,7 +16,7 @@ public final class ClientReconnectReasonOuterClass {
   }
   /**
    * <pre>
-   * Name: OKHBKFNPGHJ
+   * Obf: DAFLDPNBLMC
    * </pre>
    *
    * Protobuf enum {@code ClientReconnectReason}
@@ -24,24 +24,24 @@ public final class ClientReconnectReasonOuterClass {
   public enum ClientReconnectReason
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>CLIENT_RECONNECT_REASON_NONE = 0;</code>
+     * <code>CLIENT_RECONNNECT_NONE = 0;</code>
      */
-    CLIENT_RECONNECT_REASON_NONE(0),
+    CLIENT_RECONNNECT_NONE(0),
     /**
-     * <code>CLIENT_RECONNECT_REASON_QUIT_MP = 1;</code>
+     * <code>CLIENT_RECONNNECT_QUIT_MP = 1;</code>
      */
-    CLIENT_RECONNECT_REASON_QUIT_MP(1),
+    CLIENT_RECONNNECT_QUIT_MP(1),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>CLIENT_RECONNECT_REASON_NONE = 0;</code>
+     * <code>CLIENT_RECONNNECT_NONE = 0;</code>
      */
-    public static final int CLIENT_RECONNECT_REASON_NONE_VALUE = 0;
+    public static final int CLIENT_RECONNNECT_NONE_VALUE = 0;
     /**
-     * <code>CLIENT_RECONNECT_REASON_QUIT_MP = 1;</code>
+     * <code>CLIENT_RECONNNECT_QUIT_MP = 1;</code>
      */
-    public static final int CLIENT_RECONNECT_REASON_QUIT_MP_VALUE = 1;
+    public static final int CLIENT_RECONNNECT_QUIT_MP_VALUE = 1;
 
 
     public final int getNumber() {
@@ -68,8 +68,8 @@ public final class ClientReconnectReasonOuterClass {
      */
     public static ClientReconnectReason forNumber(int value) {
       switch (value) {
-        case 0: return CLIENT_RECONNECT_REASON_NONE;
-        case 1: return CLIENT_RECONNECT_REASON_QUIT_MP;
+        case 0: return CLIENT_RECONNNECT_NONE;
+        case 1: return CLIENT_RECONNNECT_QUIT_MP;
         default: return null;
       }
     }
@@ -135,11 +135,10 @@ public final class ClientReconnectReasonOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033ClientReconnectReason.proto*^\n\025ClientR" +
-      "econnectReason\022 \n\034CLIENT_RECONNECT_REASO" +
-      "N_NONE\020\000\022#\n\037CLIENT_RECONNECT_REASON_QUIT" +
-      "_MP\020\001B\033\n\031emu.grasscutter.net.protob\006prot" +
-      "o3"
+      "\n\033ClientReconnectReason.proto*R\n\025ClientR" +
+      "econnectReason\022\032\n\026CLIENT_RECONNNECT_NONE" +
+      "\020\000\022\035\n\031CLIENT_RECONNNECT_QUIT_MP\020\001B\033\n\031emu" +
+      ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

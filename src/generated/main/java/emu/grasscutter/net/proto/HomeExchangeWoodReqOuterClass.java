@@ -19,11 +19,11 @@ public final class HomeExchangeWoodReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint32, uint32&gt; material_count_map = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; material_count_map = 6;</code>
      */
     int getMaterialCountMapCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; material_count_map = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; material_count_map = 6;</code>
      */
     boolean containsMaterialCountMap(
         int key);
@@ -34,34 +34,34 @@ public final class HomeExchangeWoodReqOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getMaterialCountMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; material_count_map = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; material_count_map = 6;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getMaterialCountMapMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; material_count_map = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; material_count_map = 6;</code>
      */
 
     int getMaterialCountMapOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; material_count_map = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; material_count_map = 6;</code>
      */
 
     int getMaterialCountMapOrThrow(
         int key);
 
     /**
-     * <code>uint32 wood_id = 12;</code>
+     * <code>uint32 wood_id = 10;</code>
      * @return The woodId.
      */
     int getWoodId();
   }
   /**
    * <pre>
-   * Name: OIEENDGMEIG
-   * CmdId: 4716
+   * CmdId: 4648
+   * Obf: PPFBLNPIJCM
    * </pre>
    *
    * Protobuf type {@code HomeExchangeWoodReq}
@@ -109,7 +109,7 @@ public final class HomeExchangeWoodReqOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
+            case 50: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 materialCountMap_ = com.google.protobuf.MapField.newMapField(
                     MaterialCountMapDefaultEntryHolder.defaultEntry);
@@ -122,7 +122,7 @@ public final class HomeExchangeWoodReqOuterClass {
                   materialCountMap__.getKey(), materialCountMap__.getValue());
               break;
             }
-            case 96: {
+            case 80: {
 
               woodId_ = input.readUInt32();
               break;
@@ -156,7 +156,7 @@ public final class HomeExchangeWoodReqOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 2:
+        case 6:
           return internalGetMaterialCountMap();
         default:
           throw new RuntimeException(
@@ -171,7 +171,7 @@ public final class HomeExchangeWoodReqOuterClass {
               emu.grasscutter.net.proto.HomeExchangeWoodReqOuterClass.HomeExchangeWoodReq.class, emu.grasscutter.net.proto.HomeExchangeWoodReqOuterClass.HomeExchangeWoodReq.Builder.class);
     }
 
-    public static final int MATERIAL_COUNT_MAP_FIELD_NUMBER = 2;
+    public static final int MATERIAL_COUNT_MAP_FIELD_NUMBER = 6;
     private static final class MaterialCountMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -198,7 +198,7 @@ public final class HomeExchangeWoodReqOuterClass {
       return internalGetMaterialCountMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; material_count_map = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; material_count_map = 6;</code>
      */
 
     @java.lang.Override
@@ -216,7 +216,7 @@ public final class HomeExchangeWoodReqOuterClass {
       return getMaterialCountMapMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; material_count_map = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; material_count_map = 6;</code>
      */
     @java.lang.Override
 
@@ -224,7 +224,7 @@ public final class HomeExchangeWoodReqOuterClass {
       return internalGetMaterialCountMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; material_count_map = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; material_count_map = 6;</code>
      */
     @java.lang.Override
 
@@ -237,7 +237,7 @@ public final class HomeExchangeWoodReqOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; material_count_map = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; material_count_map = 6;</code>
      */
     @java.lang.Override
 
@@ -252,10 +252,10 @@ public final class HomeExchangeWoodReqOuterClass {
       return map.get(key);
     }
 
-    public static final int WOOD_ID_FIELD_NUMBER = 12;
+    public static final int WOOD_ID_FIELD_NUMBER = 10;
     private int woodId_;
     /**
-     * <code>uint32 wood_id = 12;</code>
+     * <code>uint32 wood_id = 10;</code>
      * @return The woodId.
      */
     @java.lang.Override
@@ -282,9 +282,9 @@ public final class HomeExchangeWoodReqOuterClass {
           output,
           internalGetMaterialCountMap(),
           MaterialCountMapDefaultEntryHolder.defaultEntry,
-          2);
+          6);
       if (woodId_ != 0) {
-        output.writeUInt32(12, woodId_);
+        output.writeUInt32(10, woodId_);
       }
       unknownFields.writeTo(output);
     }
@@ -303,11 +303,11 @@ public final class HomeExchangeWoodReqOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(2, materialCountMap__);
+            .computeMessageSize(6, materialCountMap__);
       }
       if (woodId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, woodId_);
+          .computeUInt32Size(10, woodId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -442,8 +442,8 @@ public final class HomeExchangeWoodReqOuterClass {
     }
     /**
      * <pre>
-     * Name: OIEENDGMEIG
-     * CmdId: 4716
+     * CmdId: 4648
+     * Obf: PPFBLNPIJCM
      * </pre>
      *
      * Protobuf type {@code HomeExchangeWoodReq}
@@ -461,7 +461,7 @@ public final class HomeExchangeWoodReqOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 2:
+          case 6:
             return internalGetMaterialCountMap();
           default:
             throw new RuntimeException(
@@ -472,7 +472,7 @@ public final class HomeExchangeWoodReqOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 2:
+          case 6:
             return internalGetMutableMaterialCountMap();
           default:
             throw new RuntimeException(
@@ -648,7 +648,7 @@ public final class HomeExchangeWoodReqOuterClass {
         return internalGetMaterialCountMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; material_count_map = 2;</code>
+       * <code>map&lt;uint32, uint32&gt; material_count_map = 6;</code>
        */
 
       @java.lang.Override
@@ -666,7 +666,7 @@ public final class HomeExchangeWoodReqOuterClass {
         return getMaterialCountMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; material_count_map = 2;</code>
+       * <code>map&lt;uint32, uint32&gt; material_count_map = 6;</code>
        */
       @java.lang.Override
 
@@ -674,7 +674,7 @@ public final class HomeExchangeWoodReqOuterClass {
         return internalGetMaterialCountMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; material_count_map = 2;</code>
+       * <code>map&lt;uint32, uint32&gt; material_count_map = 6;</code>
        */
       @java.lang.Override
 
@@ -687,7 +687,7 @@ public final class HomeExchangeWoodReqOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; material_count_map = 2;</code>
+       * <code>map&lt;uint32, uint32&gt; material_count_map = 6;</code>
        */
       @java.lang.Override
 
@@ -708,7 +708,7 @@ public final class HomeExchangeWoodReqOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; material_count_map = 2;</code>
+       * <code>map&lt;uint32, uint32&gt; material_count_map = 6;</code>
        */
 
       public Builder removeMaterialCountMap(
@@ -727,7 +727,7 @@ public final class HomeExchangeWoodReqOuterClass {
         return internalGetMutableMaterialCountMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; material_count_map = 2;</code>
+       * <code>map&lt;uint32, uint32&gt; material_count_map = 6;</code>
        */
       public Builder putMaterialCountMap(
           int key,
@@ -739,7 +739,7 @@ public final class HomeExchangeWoodReqOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; material_count_map = 2;</code>
+       * <code>map&lt;uint32, uint32&gt; material_count_map = 6;</code>
        */
 
       public Builder putAllMaterialCountMap(
@@ -751,7 +751,7 @@ public final class HomeExchangeWoodReqOuterClass {
 
       private int woodId_ ;
       /**
-       * <code>uint32 wood_id = 12;</code>
+       * <code>uint32 wood_id = 10;</code>
        * @return The woodId.
        */
       @java.lang.Override
@@ -759,7 +759,7 @@ public final class HomeExchangeWoodReqOuterClass {
         return woodId_;
       }
       /**
-       * <code>uint32 wood_id = 12;</code>
+       * <code>uint32 wood_id = 10;</code>
        * @param value The woodId to set.
        * @return This builder for chaining.
        */
@@ -770,7 +770,7 @@ public final class HomeExchangeWoodReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 wood_id = 12;</code>
+       * <code>uint32 wood_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearWoodId() {
@@ -852,9 +852,9 @@ public final class HomeExchangeWoodReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031HomeExchangeWoodReq.proto\"\247\001\n\023HomeExch" +
-      "angeWoodReq\022F\n\022material_count_map\030\002 \003(\0132" +
+      "angeWoodReq\022F\n\022material_count_map\030\006 \003(\0132" +
       "*.HomeExchangeWoodReq.MaterialCountMapEn" +
-      "try\022\017\n\007wood_id\030\014 \001(\r\0327\n\025MaterialCountMap" +
+      "try\022\017\n\007wood_id\030\n \001(\r\0327\n\025MaterialCountMap" +
       "Entry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };

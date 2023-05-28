@@ -20,8 +20,8 @@ public final class EffigyChallengeV2RestartDungeonReqOuterClass {
   }
   /**
    * <pre>
-   * Name: BDEPGMGHKBF
-   * CmdId: 20949
+   * CmdId: 23136
+   * Obf: MEMGKKPAODO
    * </pre>
    *
    * Protobuf type {@code EffigyChallengeV2RestartDungeonReq}
@@ -246,8 +246,8 @@ public final class EffigyChallengeV2RestartDungeonReqOuterClass {
     }
     /**
      * <pre>
-     * Name: BDEPGMGHKBF
-     * CmdId: 20949
+     * CmdId: 23136
+     * Obf: MEMGKKPAODO
      * </pre>
      *
      * Protobuf type {@code EffigyChallengeV2RestartDungeonReq}

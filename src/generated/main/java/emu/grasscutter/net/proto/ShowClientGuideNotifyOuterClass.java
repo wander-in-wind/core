@@ -32,8 +32,8 @@ public final class ShowClientGuideNotifyOuterClass {
   }
   /**
    * <pre>
-   * Name: LAJJKMLLJEB
-   * CmdId: 3384
+   * CmdId: 3399
+   * Obf: FKCLONJPIHM
    * </pre>
    *
    * Protobuf type {@code ShowClientGuideNotify}
@@ -313,8 +313,8 @@ public final class ShowClientGuideNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: LAJJKMLLJEB
-     * CmdId: 3384
+     * CmdId: 3399
+     * Obf: FKCLONJPIHM
      * </pre>
      *
      * Protobuf type {@code ShowClientGuideNotify}

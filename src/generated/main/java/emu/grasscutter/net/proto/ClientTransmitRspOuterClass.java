@@ -19,26 +19,26 @@ public final class ClientTransmitRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.TransmitReason reason = 10;</code>
+     * <code>.TransmitReason reason = 15;</code>
      * @return The enum numeric value on the wire for reason.
      */
     int getReasonValue();
     /**
-     * <code>.TransmitReason reason = 10;</code>
+     * <code>.TransmitReason reason = 15;</code>
      * @return The reason.
      */
     emu.grasscutter.net.proto.TransmitReasonOuterClass.TransmitReason getReason();
 
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * Name: FHBLFIAFHCA
-   * CmdId: 202
+   * CmdId: 271
+   * Obf: JOOFBEDCDMD
    * </pre>
    *
    * Protobuf type {@code ClientTransmitRsp}
@@ -86,12 +86,12 @@ public final class ClientTransmitRspOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 8: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 80: {
+            case 120: {
               int rawValue = input.readEnum();
 
               reason_ = rawValue;
@@ -129,17 +129,17 @@ public final class ClientTransmitRspOuterClass {
               emu.grasscutter.net.proto.ClientTransmitRspOuterClass.ClientTransmitRsp.class, emu.grasscutter.net.proto.ClientTransmitRspOuterClass.ClientTransmitRsp.Builder.class);
     }
 
-    public static final int REASON_FIELD_NUMBER = 10;
+    public static final int REASON_FIELD_NUMBER = 15;
     private int reason_;
     /**
-     * <code>.TransmitReason reason = 10;</code>
+     * <code>.TransmitReason reason = 15;</code>
      * @return The enum numeric value on the wire for reason.
      */
     @java.lang.Override public int getReasonValue() {
       return reason_;
     }
     /**
-     * <code>.TransmitReason reason = 10;</code>
+     * <code>.TransmitReason reason = 15;</code>
      * @return The reason.
      */
     @java.lang.Override public emu.grasscutter.net.proto.TransmitReasonOuterClass.TransmitReason getReason() {
@@ -148,10 +148,10 @@ public final class ClientTransmitRspOuterClass {
       return result == null ? emu.grasscutter.net.proto.TransmitReasonOuterClass.TransmitReason.UNRECOGNIZED : result;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 5;
+    public static final int RETCODE_FIELD_NUMBER = 1;
     private int retcode_;
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -174,10 +174,10 @@ public final class ClientTransmitRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(5, retcode_);
+        output.writeInt32(1, retcode_);
       }
       if (reason_ != emu.grasscutter.net.proto.TransmitReasonOuterClass.TransmitReason.TRANSMIT_NONE.getNumber()) {
-        output.writeEnum(10, reason_);
+        output.writeEnum(15, reason_);
       }
       unknownFields.writeTo(output);
     }
@@ -190,11 +190,11 @@ public final class ClientTransmitRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, retcode_);
+          .computeInt32Size(1, retcode_);
       }
       if (reason_ != emu.grasscutter.net.proto.TransmitReasonOuterClass.TransmitReason.TRANSMIT_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(10, reason_);
+          .computeEnumSize(15, reason_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -326,8 +326,8 @@ public final class ClientTransmitRspOuterClass {
     }
     /**
      * <pre>
-     * Name: FHBLFIAFHCA
-     * CmdId: 202
+     * CmdId: 271
+     * Obf: JOOFBEDCDMD
      * </pre>
      *
      * Protobuf type {@code ClientTransmitRsp}
@@ -484,14 +484,14 @@ public final class ClientTransmitRspOuterClass {
 
       private int reason_ = 0;
       /**
-       * <code>.TransmitReason reason = 10;</code>
+       * <code>.TransmitReason reason = 15;</code>
        * @return The enum numeric value on the wire for reason.
        */
       @java.lang.Override public int getReasonValue() {
         return reason_;
       }
       /**
-       * <code>.TransmitReason reason = 10;</code>
+       * <code>.TransmitReason reason = 15;</code>
        * @param value The enum numeric value on the wire for reason to set.
        * @return This builder for chaining.
        */
@@ -502,7 +502,7 @@ public final class ClientTransmitRspOuterClass {
         return this;
       }
       /**
-       * <code>.TransmitReason reason = 10;</code>
+       * <code>.TransmitReason reason = 15;</code>
        * @return The reason.
        */
       @java.lang.Override
@@ -512,7 +512,7 @@ public final class ClientTransmitRspOuterClass {
         return result == null ? emu.grasscutter.net.proto.TransmitReasonOuterClass.TransmitReason.UNRECOGNIZED : result;
       }
       /**
-       * <code>.TransmitReason reason = 10;</code>
+       * <code>.TransmitReason reason = 15;</code>
        * @param value The reason to set.
        * @return This builder for chaining.
        */
@@ -526,7 +526,7 @@ public final class ClientTransmitRspOuterClass {
         return this;
       }
       /**
-       * <code>.TransmitReason reason = 10;</code>
+       * <code>.TransmitReason reason = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearReason() {
@@ -538,7 +538,7 @@ public final class ClientTransmitRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 1;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -546,7 +546,7 @@ public final class ClientTransmitRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 1;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -557,7 +557,7 @@ public final class ClientTransmitRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -634,8 +634,8 @@ public final class ClientTransmitRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027ClientTransmitRsp.proto\032\024TransmitReaso" +
-      "n.proto\"E\n\021ClientTransmitRsp\022\037\n\006reason\030\n" +
-      " \001(\0162\017.TransmitReason\022\017\n\007retcode\030\005 \001(\005B\033" +
+      "n.proto\"E\n\021ClientTransmitRsp\022\037\n\006reason\030\017" +
+      " \001(\0162\017.TransmitReason\022\017\n\007retcode\030\001 \001(\005B\033" +
       "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

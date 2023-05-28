@@ -19,21 +19,21 @@ public final class EntityMoveRoomNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 entity_id = 2;</code>
-     * @return The entityId.
-     */
-    int getEntityId();
-
-    /**
-     * <code>uint32 dest_room_id = 12;</code>
+     * <code>uint32 dest_room_id = 8;</code>
      * @return The destRoomId.
      */
     int getDestRoomId();
+
+    /**
+     * <code>uint32 entity_id = 11;</code>
+     * @return The entityId.
+     */
+    int getEntityId();
   }
   /**
    * <pre>
-   * Name: HHOCGMHBEMH
-   * CmdId: 3060
+   * CmdId: 3265
+   * Obf: DJNDOPBJIPE
    * </pre>
    *
    * Protobuf type {@code EntityMoveRoomNotify}
@@ -80,14 +80,14 @@ public final class EntityMoveRoomNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              entityId_ = input.readUInt32();
-              break;
-            }
-            case 96: {
+            case 64: {
 
               destRoomId_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              entityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,26 +122,26 @@ public final class EntityMoveRoomNotifyOuterClass {
               emu.grasscutter.net.proto.EntityMoveRoomNotifyOuterClass.EntityMoveRoomNotify.class, emu.grasscutter.net.proto.EntityMoveRoomNotifyOuterClass.EntityMoveRoomNotify.Builder.class);
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 2;
-    private int entityId_;
-    /**
-     * <code>uint32 entity_id = 2;</code>
-     * @return The entityId.
-     */
-    @java.lang.Override
-    public int getEntityId() {
-      return entityId_;
-    }
-
-    public static final int DEST_ROOM_ID_FIELD_NUMBER = 12;
+    public static final int DEST_ROOM_ID_FIELD_NUMBER = 8;
     private int destRoomId_;
     /**
-     * <code>uint32 dest_room_id = 12;</code>
+     * <code>uint32 dest_room_id = 8;</code>
      * @return The destRoomId.
      */
     @java.lang.Override
     public int getDestRoomId() {
       return destRoomId_;
+    }
+
+    public static final int ENTITY_ID_FIELD_NUMBER = 11;
+    private int entityId_;
+    /**
+     * <code>uint32 entity_id = 11;</code>
+     * @return The entityId.
+     */
+    @java.lang.Override
+    public int getEntityId() {
+      return entityId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -158,11 +158,11 @@ public final class EntityMoveRoomNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (entityId_ != 0) {
-        output.writeUInt32(2, entityId_);
-      }
       if (destRoomId_ != 0) {
-        output.writeUInt32(12, destRoomId_);
+        output.writeUInt32(8, destRoomId_);
+      }
+      if (entityId_ != 0) {
+        output.writeUInt32(11, entityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class EntityMoveRoomNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (entityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, entityId_);
-      }
       if (destRoomId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, destRoomId_);
+          .computeUInt32Size(8, destRoomId_);
+      }
+      if (entityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, entityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +196,10 @@ public final class EntityMoveRoomNotifyOuterClass {
       }
       emu.grasscutter.net.proto.EntityMoveRoomNotifyOuterClass.EntityMoveRoomNotify other = (emu.grasscutter.net.proto.EntityMoveRoomNotifyOuterClass.EntityMoveRoomNotify) obj;
 
-      if (getEntityId()
-          != other.getEntityId()) return false;
       if (getDestRoomId()
           != other.getDestRoomId()) return false;
+      if (getEntityId()
+          != other.getEntityId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +211,10 @@ public final class EntityMoveRoomNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getEntityId();
       hash = (37 * hash) + DEST_ROOM_ID_FIELD_NUMBER;
       hash = (53 * hash) + getDestRoomId();
+      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getEntityId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +312,8 @@ public final class EntityMoveRoomNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: HHOCGMHBEMH
-     * CmdId: 3060
+     * CmdId: 3265
+     * Obf: DJNDOPBJIPE
      * </pre>
      *
      * Protobuf type {@code EntityMoveRoomNotify}
@@ -353,9 +353,9 @@ public final class EntityMoveRoomNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        entityId_ = 0;
-
         destRoomId_ = 0;
+
+        entityId_ = 0;
 
         return this;
       }
@@ -383,8 +383,8 @@ public final class EntityMoveRoomNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EntityMoveRoomNotifyOuterClass.EntityMoveRoomNotify buildPartial() {
         emu.grasscutter.net.proto.EntityMoveRoomNotifyOuterClass.EntityMoveRoomNotify result = new emu.grasscutter.net.proto.EntityMoveRoomNotifyOuterClass.EntityMoveRoomNotify(this);
-        result.entityId_ = entityId_;
         result.destRoomId_ = destRoomId_;
+        result.entityId_ = entityId_;
         onBuilt();
         return result;
       }
@@ -433,11 +433,11 @@ public final class EntityMoveRoomNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EntityMoveRoomNotifyOuterClass.EntityMoveRoomNotify other) {
         if (other == emu.grasscutter.net.proto.EntityMoveRoomNotifyOuterClass.EntityMoveRoomNotify.getDefaultInstance()) return this;
-        if (other.getEntityId() != 0) {
-          setEntityId(other.getEntityId());
-        }
         if (other.getDestRoomId() != 0) {
           setDestRoomId(other.getDestRoomId());
+        }
+        if (other.getEntityId() != 0) {
+          setEntityId(other.getEntityId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,40 +468,9 @@ public final class EntityMoveRoomNotifyOuterClass {
         return this;
       }
 
-      private int entityId_ ;
-      /**
-       * <code>uint32 entity_id = 2;</code>
-       * @return The entityId.
-       */
-      @java.lang.Override
-      public int getEntityId() {
-        return entityId_;
-      }
-      /**
-       * <code>uint32 entity_id = 2;</code>
-       * @param value The entityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEntityId(int value) {
-        
-        entityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 entity_id = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEntityId() {
-        
-        entityId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int destRoomId_ ;
       /**
-       * <code>uint32 dest_room_id = 12;</code>
+       * <code>uint32 dest_room_id = 8;</code>
        * @return The destRoomId.
        */
       @java.lang.Override
@@ -509,7 +478,7 @@ public final class EntityMoveRoomNotifyOuterClass {
         return destRoomId_;
       }
       /**
-       * <code>uint32 dest_room_id = 12;</code>
+       * <code>uint32 dest_room_id = 8;</code>
        * @param value The destRoomId to set.
        * @return This builder for chaining.
        */
@@ -520,12 +489,43 @@ public final class EntityMoveRoomNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 dest_room_id = 12;</code>
+       * <code>uint32 dest_room_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearDestRoomId() {
         
         destRoomId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int entityId_ ;
+      /**
+       * <code>uint32 entity_id = 11;</code>
+       * @return The entityId.
+       */
+      @java.lang.Override
+      public int getEntityId() {
+        return entityId_;
+      }
+      /**
+       * <code>uint32 entity_id = 11;</code>
+       * @param value The entityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEntityId(int value) {
+        
+        entityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 entity_id = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEntityId() {
+        
+        entityId_ = 0;
         onChanged();
         return this;
       }
@@ -597,8 +597,8 @@ public final class EntityMoveRoomNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032EntityMoveRoomNotify.proto\"?\n\024EntityMo" +
-      "veRoomNotify\022\021\n\tentity_id\030\002 \001(\r\022\024\n\014dest_" +
-      "room_id\030\014 \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "veRoomNotify\022\024\n\014dest_room_id\030\010 \001(\r\022\021\n\ten" +
+      "tity_id\030\013 \001(\rB\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -610,7 +610,7 @@ public final class EntityMoveRoomNotifyOuterClass {
     internal_static_EntityMoveRoomNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EntityMoveRoomNotify_descriptor,
-        new java.lang.String[] { "EntityId", "DestRoomId", });
+        new java.lang.String[] { "DestRoomId", "EntityId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

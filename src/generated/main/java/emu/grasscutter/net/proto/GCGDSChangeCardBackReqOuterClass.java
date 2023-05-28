@@ -19,29 +19,21 @@ public final class GCGDSChangeCardBackReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *MBNLNOFPLLA snooswap
-     * </pre>
-     *
-     * <code>uint32 card_back_id = 9;</code>
+     * <code>uint32 card_back_id = 8;</code>
      * @return The cardBackId.
      */
     int getCardBackId();
 
     /**
-     * <pre>
-     *AHAIAIPGFDN snooswap
-     * </pre>
-     *
-     * <code>uint32 deck_id = 10;</code>
+     * <code>uint32 deck_id = 7;</code>
      * @return The deckId.
      */
     int getDeckId();
   }
   /**
    * <pre>
-   * Name: FDOHOGJAGDN
-   * CmdId: 7390
+   * CmdId: 7303
+   * Obf: HJKOHPKBMCO
    * </pre>
    *
    * Protobuf type {@code GCGDSChangeCardBackReq}
@@ -88,14 +80,14 @@ public final class GCGDSChangeCardBackReqOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
-
-              cardBackId_ = input.readUInt32();
-              break;
-            }
-            case 80: {
+            case 56: {
 
               deckId_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+
+              cardBackId_ = input.readUInt32();
               break;
             }
             default: {
@@ -130,14 +122,10 @@ public final class GCGDSChangeCardBackReqOuterClass {
               emu.grasscutter.net.proto.GCGDSChangeCardBackReqOuterClass.GCGDSChangeCardBackReq.class, emu.grasscutter.net.proto.GCGDSChangeCardBackReqOuterClass.GCGDSChangeCardBackReq.Builder.class);
     }
 
-    public static final int CARD_BACK_ID_FIELD_NUMBER = 9;
+    public static final int CARD_BACK_ID_FIELD_NUMBER = 8;
     private int cardBackId_;
     /**
-     * <pre>
-     *MBNLNOFPLLA snooswap
-     * </pre>
-     *
-     * <code>uint32 card_back_id = 9;</code>
+     * <code>uint32 card_back_id = 8;</code>
      * @return The cardBackId.
      */
     @java.lang.Override
@@ -145,14 +133,10 @@ public final class GCGDSChangeCardBackReqOuterClass {
       return cardBackId_;
     }
 
-    public static final int DECK_ID_FIELD_NUMBER = 10;
+    public static final int DECK_ID_FIELD_NUMBER = 7;
     private int deckId_;
     /**
-     * <pre>
-     *AHAIAIPGFDN snooswap
-     * </pre>
-     *
-     * <code>uint32 deck_id = 10;</code>
+     * <code>uint32 deck_id = 7;</code>
      * @return The deckId.
      */
     @java.lang.Override
@@ -174,11 +158,11 @@ public final class GCGDSChangeCardBackReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (cardBackId_ != 0) {
-        output.writeUInt32(9, cardBackId_);
-      }
       if (deckId_ != 0) {
-        output.writeUInt32(10, deckId_);
+        output.writeUInt32(7, deckId_);
+      }
+      if (cardBackId_ != 0) {
+        output.writeUInt32(8, cardBackId_);
       }
       unknownFields.writeTo(output);
     }
@@ -189,13 +173,13 @@ public final class GCGDSChangeCardBackReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (cardBackId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, cardBackId_);
-      }
       if (deckId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, deckId_);
+          .computeUInt32Size(7, deckId_);
+      }
+      if (cardBackId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, cardBackId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -328,8 +312,8 @@ public final class GCGDSChangeCardBackReqOuterClass {
     }
     /**
      * <pre>
-     * Name: FDOHOGJAGDN
-     * CmdId: 7390
+     * CmdId: 7303
+     * Obf: HJKOHPKBMCO
      * </pre>
      *
      * Protobuf type {@code GCGDSChangeCardBackReq}
@@ -486,11 +470,7 @@ public final class GCGDSChangeCardBackReqOuterClass {
 
       private int cardBackId_ ;
       /**
-       * <pre>
-       *MBNLNOFPLLA snooswap
-       * </pre>
-       *
-       * <code>uint32 card_back_id = 9;</code>
+       * <code>uint32 card_back_id = 8;</code>
        * @return The cardBackId.
        */
       @java.lang.Override
@@ -498,11 +478,7 @@ public final class GCGDSChangeCardBackReqOuterClass {
         return cardBackId_;
       }
       /**
-       * <pre>
-       *MBNLNOFPLLA snooswap
-       * </pre>
-       *
-       * <code>uint32 card_back_id = 9;</code>
+       * <code>uint32 card_back_id = 8;</code>
        * @param value The cardBackId to set.
        * @return This builder for chaining.
        */
@@ -513,11 +489,7 @@ public final class GCGDSChangeCardBackReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *MBNLNOFPLLA snooswap
-       * </pre>
-       *
-       * <code>uint32 card_back_id = 9;</code>
+       * <code>uint32 card_back_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearCardBackId() {
@@ -529,11 +501,7 @@ public final class GCGDSChangeCardBackReqOuterClass {
 
       private int deckId_ ;
       /**
-       * <pre>
-       *AHAIAIPGFDN snooswap
-       * </pre>
-       *
-       * <code>uint32 deck_id = 10;</code>
+       * <code>uint32 deck_id = 7;</code>
        * @return The deckId.
        */
       @java.lang.Override
@@ -541,11 +509,7 @@ public final class GCGDSChangeCardBackReqOuterClass {
         return deckId_;
       }
       /**
-       * <pre>
-       *AHAIAIPGFDN snooswap
-       * </pre>
-       *
-       * <code>uint32 deck_id = 10;</code>
+       * <code>uint32 deck_id = 7;</code>
        * @param value The deckId to set.
        * @return This builder for chaining.
        */
@@ -556,11 +520,7 @@ public final class GCGDSChangeCardBackReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *AHAIAIPGFDN snooswap
-       * </pre>
-       *
-       * <code>uint32 deck_id = 10;</code>
+       * <code>uint32 deck_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearDeckId() {
@@ -637,8 +597,8 @@ public final class GCGDSChangeCardBackReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034GCGDSChangeCardBackReq.proto\"?\n\026GCGDSC" +
-      "hangeCardBackReq\022\024\n\014card_back_id\030\t \001(\r\022\017" +
-      "\n\007deck_id\030\n \001(\rB\033\n\031emu.grasscutter.net.p" +
+      "hangeCardBackReq\022\024\n\014card_back_id\030\010 \001(\r\022\017" +
+      "\n\007deck_id\030\007 \001(\rB\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

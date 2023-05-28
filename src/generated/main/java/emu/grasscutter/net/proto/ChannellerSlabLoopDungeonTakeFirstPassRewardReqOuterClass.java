@@ -19,15 +19,15 @@ public final class ChannellerSlabLoopDungeonTakeFirstPassRewardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 dungeon_index = 11;</code>
+     * <code>uint32 dungeon_index = 1;</code>
      * @return The dungeonIndex.
      */
     int getDungeonIndex();
   }
   /**
    * <pre>
-   * Name: BEONLOGAHNF
-   * CmdId: 8191
+   * CmdId: 8140
+   * Obf: GBCAPJBLGOP
    * </pre>
    *
    * Protobuf type {@code ChannellerSlabLoopDungeonTakeFirstPassRewardReq}
@@ -74,7 +74,7 @@ public final class ChannellerSlabLoopDungeonTakeFirstPassRewardReqOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
+            case 8: {
 
               dungeonIndex_ = input.readUInt32();
               break;
@@ -111,10 +111,10 @@ public final class ChannellerSlabLoopDungeonTakeFirstPassRewardReqOuterClass {
               emu.grasscutter.net.proto.ChannellerSlabLoopDungeonTakeFirstPassRewardReqOuterClass.ChannellerSlabLoopDungeonTakeFirstPassRewardReq.class, emu.grasscutter.net.proto.ChannellerSlabLoopDungeonTakeFirstPassRewardReqOuterClass.ChannellerSlabLoopDungeonTakeFirstPassRewardReq.Builder.class);
     }
 
-    public static final int DUNGEON_INDEX_FIELD_NUMBER = 11;
+    public static final int DUNGEON_INDEX_FIELD_NUMBER = 1;
     private int dungeonIndex_;
     /**
-     * <code>uint32 dungeon_index = 11;</code>
+     * <code>uint32 dungeon_index = 1;</code>
      * @return The dungeonIndex.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class ChannellerSlabLoopDungeonTakeFirstPassRewardReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (dungeonIndex_ != 0) {
-        output.writeUInt32(11, dungeonIndex_);
+        output.writeUInt32(1, dungeonIndex_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class ChannellerSlabLoopDungeonTakeFirstPassRewardReqOuterClass {
       size = 0;
       if (dungeonIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, dungeonIndex_);
+          .computeUInt32Size(1, dungeonIndex_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class ChannellerSlabLoopDungeonTakeFirstPassRewardReqOuterClass {
     }
     /**
      * <pre>
-     * Name: BEONLOGAHNF
-     * CmdId: 8191
+     * CmdId: 8140
+     * Obf: GBCAPJBLGOP
      * </pre>
      *
      * Protobuf type {@code ChannellerSlabLoopDungeonTakeFirstPassRewardReq}
@@ -431,7 +431,7 @@ public final class ChannellerSlabLoopDungeonTakeFirstPassRewardReqOuterClass {
 
       private int dungeonIndex_ ;
       /**
-       * <code>uint32 dungeon_index = 11;</code>
+       * <code>uint32 dungeon_index = 1;</code>
        * @return The dungeonIndex.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class ChannellerSlabLoopDungeonTakeFirstPassRewardReqOuterClass {
         return dungeonIndex_;
       }
       /**
-       * <code>uint32 dungeon_index = 11;</code>
+       * <code>uint32 dungeon_index = 1;</code>
        * @param value The dungeonIndex to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class ChannellerSlabLoopDungeonTakeFirstPassRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 dungeon_index = 11;</code>
+       * <code>uint32 dungeon_index = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonIndex() {
@@ -529,7 +529,7 @@ public final class ChannellerSlabLoopDungeonTakeFirstPassRewardReqOuterClass {
       "\n5ChannellerSlabLoopDungeonTakeFirstPass" +
       "RewardReq.proto\"H\n/ChannellerSlabLoopDun" +
       "geonTakeFirstPassRewardReq\022\025\n\rdungeon_in" +
-      "dex\030\013 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
+      "dex\030\001 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
       "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

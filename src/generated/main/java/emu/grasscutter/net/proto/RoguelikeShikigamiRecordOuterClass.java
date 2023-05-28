@@ -25,14 +25,14 @@ public final class RoguelikeShikigamiRecordOuterClass {
     int getLevel();
 
     /**
-     * <code>uint32 id = 13;</code>
+     * <code>uint32 id = 8;</code>
      * @return The id.
      */
     int getId();
   }
   /**
    * <pre>
-   * Name: ODKNHPHCDCG
+   * Obf: EAGEBKMEIPO
    * </pre>
    *
    * Protobuf type {@code RoguelikeShikigamiRecord}
@@ -84,7 +84,7 @@ public final class RoguelikeShikigamiRecordOuterClass {
               level_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 64: {
 
               id_ = input.readUInt32();
               break;
@@ -132,10 +132,10 @@ public final class RoguelikeShikigamiRecordOuterClass {
       return level_;
     }
 
-    public static final int ID_FIELD_NUMBER = 13;
+    public static final int ID_FIELD_NUMBER = 8;
     private int id_;
     /**
-     * <code>uint32 id = 13;</code>
+     * <code>uint32 id = 8;</code>
      * @return The id.
      */
     @java.lang.Override
@@ -161,7 +161,7 @@ public final class RoguelikeShikigamiRecordOuterClass {
         output.writeUInt32(4, level_);
       }
       if (id_ != 0) {
-        output.writeUInt32(13, id_);
+        output.writeUInt32(8, id_);
       }
       unknownFields.writeTo(output);
     }
@@ -178,7 +178,7 @@ public final class RoguelikeShikigamiRecordOuterClass {
       }
       if (id_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, id_);
+          .computeUInt32Size(8, id_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -311,7 +311,7 @@ public final class RoguelikeShikigamiRecordOuterClass {
     }
     /**
      * <pre>
-     * Name: ODKNHPHCDCG
+     * Obf: EAGEBKMEIPO
      * </pre>
      *
      * Protobuf type {@code RoguelikeShikigamiRecord}
@@ -499,7 +499,7 @@ public final class RoguelikeShikigamiRecordOuterClass {
 
       private int id_ ;
       /**
-       * <code>uint32 id = 13;</code>
+       * <code>uint32 id = 8;</code>
        * @return The id.
        */
       @java.lang.Override
@@ -507,7 +507,7 @@ public final class RoguelikeShikigamiRecordOuterClass {
         return id_;
       }
       /**
-       * <code>uint32 id = 13;</code>
+       * <code>uint32 id = 8;</code>
        * @param value The id to set.
        * @return This builder for chaining.
        */
@@ -518,7 +518,7 @@ public final class RoguelikeShikigamiRecordOuterClass {
         return this;
       }
       /**
-       * <code>uint32 id = 13;</code>
+       * <code>uint32 id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearId() {
@@ -596,7 +596,7 @@ public final class RoguelikeShikigamiRecordOuterClass {
     java.lang.String[] descriptorData = {
       "\n\036RoguelikeShikigamiRecord.proto\"5\n\030Rogu" +
       "elikeShikigamiRecord\022\r\n\005level\030\004 \001(\r\022\n\n\002i" +
-      "d\030\r \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "d\030\010 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

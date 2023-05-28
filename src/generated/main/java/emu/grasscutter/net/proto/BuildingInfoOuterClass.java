@@ -62,7 +62,7 @@ public final class BuildingInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: KAGPDLCBOHD
+   * Obf: JBIEMDCOMAM
    * </pre>
    *
    * Protobuf type {@code BuildingInfo}
@@ -476,7 +476,7 @@ public final class BuildingInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: KAGPDLCBOHD
+     * Obf: JBIEMDCOMAM
      * </pre>
      *
      * Protobuf type {@code BuildingInfo}

@@ -19,15 +19,15 @@ public final class EnterMechanicusDungeonReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 difficult_level = 10;</code>
+     * <code>uint32 difficult_level = 8;</code>
      * @return The difficultLevel.
      */
     int getDifficultLevel();
   }
   /**
    * <pre>
-   * Name: AFGBFGAFILO
-   * CmdId: 3959
+   * CmdId: 3984
+   * Obf: OEBANJNBOIL
    * </pre>
    *
    * Protobuf type {@code EnterMechanicusDungeonReq}
@@ -74,7 +74,7 @@ public final class EnterMechanicusDungeonReqOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 64: {
 
               difficultLevel_ = input.readUInt32();
               break;
@@ -111,10 +111,10 @@ public final class EnterMechanicusDungeonReqOuterClass {
               emu.grasscutter.net.proto.EnterMechanicusDungeonReqOuterClass.EnterMechanicusDungeonReq.class, emu.grasscutter.net.proto.EnterMechanicusDungeonReqOuterClass.EnterMechanicusDungeonReq.Builder.class);
     }
 
-    public static final int DIFFICULT_LEVEL_FIELD_NUMBER = 10;
+    public static final int DIFFICULT_LEVEL_FIELD_NUMBER = 8;
     private int difficultLevel_;
     /**
-     * <code>uint32 difficult_level = 10;</code>
+     * <code>uint32 difficult_level = 8;</code>
      * @return The difficultLevel.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class EnterMechanicusDungeonReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (difficultLevel_ != 0) {
-        output.writeUInt32(10, difficultLevel_);
+        output.writeUInt32(8, difficultLevel_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class EnterMechanicusDungeonReqOuterClass {
       size = 0;
       if (difficultLevel_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, difficultLevel_);
+          .computeUInt32Size(8, difficultLevel_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class EnterMechanicusDungeonReqOuterClass {
     }
     /**
      * <pre>
-     * Name: AFGBFGAFILO
-     * CmdId: 3959
+     * CmdId: 3984
+     * Obf: OEBANJNBOIL
      * </pre>
      *
      * Protobuf type {@code EnterMechanicusDungeonReq}
@@ -431,7 +431,7 @@ public final class EnterMechanicusDungeonReqOuterClass {
 
       private int difficultLevel_ ;
       /**
-       * <code>uint32 difficult_level = 10;</code>
+       * <code>uint32 difficult_level = 8;</code>
        * @return The difficultLevel.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class EnterMechanicusDungeonReqOuterClass {
         return difficultLevel_;
       }
       /**
-       * <code>uint32 difficult_level = 10;</code>
+       * <code>uint32 difficult_level = 8;</code>
        * @param value The difficultLevel to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class EnterMechanicusDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficult_level = 10;</code>
+       * <code>uint32 difficult_level = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficultLevel() {
@@ -528,7 +528,7 @@ public final class EnterMechanicusDungeonReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\037EnterMechanicusDungeonReq.proto\"4\n\031Ent" +
       "erMechanicusDungeonReq\022\027\n\017difficult_leve" +
-      "l\030\n \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "l\030\010 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

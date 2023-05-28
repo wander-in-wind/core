@@ -20,8 +20,8 @@ public final class GCGInitFinishReqOuterClass {
   }
   /**
    * <pre>
-   * Name: AAFAJFPLBMI
-   * CmdId: 7944
+   * CmdId: 7642
+   * Obf: AAFNJHFALBA
    * </pre>
    *
    * Protobuf type {@code GCGInitFinishReq}
@@ -246,8 +246,8 @@ public final class GCGInitFinishReqOuterClass {
     }
     /**
      * <pre>
-     * Name: AAFAJFPLBMI
-     * CmdId: 7944
+     * CmdId: 7642
+     * Obf: AAFNJHFALBA
      * </pre>
      *
      * Protobuf type {@code GCGInitFinishReq}

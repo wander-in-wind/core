@@ -19,81 +19,81 @@ public final class ScenePlayBattleResultNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 cost_time = 7;</code>
-     * @return The costTime.
-     */
-    int getCostTime();
-
-    /**
-     * <code>uint32 play_id = 12;</code>
-     * @return The playId.
-     */
-    int getPlayId();
-
-    /**
-     * <code>uint32 play_type = 10;</code>
+     * <code>uint32 play_type = 2;</code>
      * @return The playType.
      */
     int getPlayType();
 
     /**
-     * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 4;</code>
+     * <code>bool is_win = 5;</code>
+     * @return The isWin.
+     */
+    boolean getIsWin();
+
+    /**
+     * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 1;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo> 
         getSettleRewardInfoListList();
     /**
-     * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 4;</code>
+     * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 1;</code>
      */
     emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo getSettleRewardInfoList(int index);
     /**
-     * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 4;</code>
+     * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 1;</code>
      */
     int getSettleRewardInfoListCount();
     /**
-     * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 4;</code>
+     * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 1;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfoOrBuilder> 
         getSettleRewardInfoListOrBuilderList();
     /**
-     * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 4;</code>
+     * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 1;</code>
      */
     emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfoOrBuilder getSettleRewardInfoListOrBuilder(
         int index);
 
     /**
-     * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 2;</code>
+     * <code>uint32 play_id = 9;</code>
+     * @return The playId.
+     */
+    int getPlayId();
+
+    /**
+     * <code>uint32 cost_time = 13;</code>
+     * @return The costTime.
+     */
+    int getCostTime();
+
+    /**
+     * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 7;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.ScenePlayBattleSettlePlayerInfo> 
         getSettlePlayerInfoListList();
     /**
-     * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 2;</code>
+     * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 7;</code>
      */
     emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.ScenePlayBattleSettlePlayerInfo getSettlePlayerInfoList(int index);
     /**
-     * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 2;</code>
+     * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 7;</code>
      */
     int getSettlePlayerInfoListCount();
     /**
-     * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 2;</code>
+     * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 7;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.ScenePlayBattleSettlePlayerInfoOrBuilder> 
         getSettlePlayerInfoListOrBuilderList();
     /**
-     * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 2;</code>
+     * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 7;</code>
      */
     emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.ScenePlayBattleSettlePlayerInfoOrBuilder getSettlePlayerInfoListOrBuilder(
         int index);
-
-    /**
-     * <code>bool is_win = 6;</code>
-     * @return The isWin.
-     */
-    boolean getIsWin();
   }
   /**
    * <pre>
-   * Name: CIKJLLFFAFK
-   * CmdId: 4441
+   * CmdId: 4371
+   * Obf: IAFOMGBNGAF
    * </pre>
    *
    * Protobuf type {@code ScenePlayBattleResultNotify}
@@ -143,16 +143,7 @@ public final class ScenePlayBattleResultNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                settlePlayerInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.ScenePlayBattleSettlePlayerInfo>();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              settlePlayerInfoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.ScenePlayBattleSettlePlayerInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 34: {
+            case 10: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 settleRewardInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -161,24 +152,33 @@ public final class ScenePlayBattleResultNotifyOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo.parser(), extensionRegistry));
               break;
             }
-            case 48: {
-
-              isWin_ = input.readBool();
-              break;
-            }
-            case 56: {
-
-              costTime_ = input.readUInt32();
-              break;
-            }
-            case 80: {
+            case 16: {
 
               playType_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 40: {
+
+              isWin_ = input.readBool();
+              break;
+            }
+            case 58: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                settlePlayerInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.ScenePlayBattleSettlePlayerInfo>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              settlePlayerInfoList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.ScenePlayBattleSettlePlayerInfo.parser(), extensionRegistry));
+              break;
+            }
+            case 72: {
 
               playId_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              costTime_ = input.readUInt32();
               break;
             }
             default: {
@@ -196,11 +196,11 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          settlePlayerInfoList_ = java.util.Collections.unmodifiableList(settlePlayerInfoList_);
-        }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
           settleRewardInfoList_ = java.util.Collections.unmodifiableList(settleRewardInfoList_);
+        }
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          settlePlayerInfoList_ = java.util.Collections.unmodifiableList(settlePlayerInfoList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -219,32 +219,10 @@ public final class ScenePlayBattleResultNotifyOuterClass {
               emu.grasscutter.net.proto.ScenePlayBattleResultNotifyOuterClass.ScenePlayBattleResultNotify.class, emu.grasscutter.net.proto.ScenePlayBattleResultNotifyOuterClass.ScenePlayBattleResultNotify.Builder.class);
     }
 
-    public static final int COST_TIME_FIELD_NUMBER = 7;
-    private int costTime_;
-    /**
-     * <code>uint32 cost_time = 7;</code>
-     * @return The costTime.
-     */
-    @java.lang.Override
-    public int getCostTime() {
-      return costTime_;
-    }
-
-    public static final int PLAY_ID_FIELD_NUMBER = 12;
-    private int playId_;
-    /**
-     * <code>uint32 play_id = 12;</code>
-     * @return The playId.
-     */
-    @java.lang.Override
-    public int getPlayId() {
-      return playId_;
-    }
-
-    public static final int PLAY_TYPE_FIELD_NUMBER = 10;
+    public static final int PLAY_TYPE_FIELD_NUMBER = 2;
     private int playType_;
     /**
-     * <code>uint32 play_type = 10;</code>
+     * <code>uint32 play_type = 2;</code>
      * @return The playType.
      */
     @java.lang.Override
@@ -252,17 +230,28 @@ public final class ScenePlayBattleResultNotifyOuterClass {
       return playType_;
     }
 
-    public static final int SETTLE_REWARD_INFO_LIST_FIELD_NUMBER = 4;
+    public static final int IS_WIN_FIELD_NUMBER = 5;
+    private boolean isWin_;
+    /**
+     * <code>bool is_win = 5;</code>
+     * @return The isWin.
+     */
+    @java.lang.Override
+    public boolean getIsWin() {
+      return isWin_;
+    }
+
+    public static final int SETTLE_REWARD_INFO_LIST_FIELD_NUMBER = 1;
     private java.util.List<emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo> settleRewardInfoList_;
     /**
-     * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 4;</code>
+     * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 1;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo> getSettleRewardInfoListList() {
       return settleRewardInfoList_;
     }
     /**
-     * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 4;</code>
+     * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 1;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfoOrBuilder> 
@@ -270,21 +259,21 @@ public final class ScenePlayBattleResultNotifyOuterClass {
       return settleRewardInfoList_;
     }
     /**
-     * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 4;</code>
+     * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 1;</code>
      */
     @java.lang.Override
     public int getSettleRewardInfoListCount() {
       return settleRewardInfoList_.size();
     }
     /**
-     * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 4;</code>
+     * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo getSettleRewardInfoList(int index) {
       return settleRewardInfoList_.get(index);
     }
     /**
-     * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 4;</code>
+     * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfoOrBuilder getSettleRewardInfoListOrBuilder(
@@ -292,17 +281,39 @@ public final class ScenePlayBattleResultNotifyOuterClass {
       return settleRewardInfoList_.get(index);
     }
 
-    public static final int SETTLE_PLAYER_INFO_LIST_FIELD_NUMBER = 2;
+    public static final int PLAY_ID_FIELD_NUMBER = 9;
+    private int playId_;
+    /**
+     * <code>uint32 play_id = 9;</code>
+     * @return The playId.
+     */
+    @java.lang.Override
+    public int getPlayId() {
+      return playId_;
+    }
+
+    public static final int COST_TIME_FIELD_NUMBER = 13;
+    private int costTime_;
+    /**
+     * <code>uint32 cost_time = 13;</code>
+     * @return The costTime.
+     */
+    @java.lang.Override
+    public int getCostTime() {
+      return costTime_;
+    }
+
+    public static final int SETTLE_PLAYER_INFO_LIST_FIELD_NUMBER = 7;
     private java.util.List<emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.ScenePlayBattleSettlePlayerInfo> settlePlayerInfoList_;
     /**
-     * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 2;</code>
+     * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 7;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.ScenePlayBattleSettlePlayerInfo> getSettlePlayerInfoListList() {
       return settlePlayerInfoList_;
     }
     /**
-     * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 2;</code>
+     * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 7;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.ScenePlayBattleSettlePlayerInfoOrBuilder> 
@@ -310,37 +321,26 @@ public final class ScenePlayBattleResultNotifyOuterClass {
       return settlePlayerInfoList_;
     }
     /**
-     * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 2;</code>
+     * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 7;</code>
      */
     @java.lang.Override
     public int getSettlePlayerInfoListCount() {
       return settlePlayerInfoList_.size();
     }
     /**
-     * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 2;</code>
+     * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 7;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.ScenePlayBattleSettlePlayerInfo getSettlePlayerInfoList(int index) {
       return settlePlayerInfoList_.get(index);
     }
     /**
-     * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 2;</code>
+     * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 7;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.ScenePlayBattleSettlePlayerInfoOrBuilder getSettlePlayerInfoListOrBuilder(
         int index) {
       return settlePlayerInfoList_.get(index);
-    }
-
-    public static final int IS_WIN_FIELD_NUMBER = 6;
-    private boolean isWin_;
-    /**
-     * <code>bool is_win = 6;</code>
-     * @return The isWin.
-     */
-    @java.lang.Override
-    public boolean getIsWin() {
-      return isWin_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -357,23 +357,23 @@ public final class ScenePlayBattleResultNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < settlePlayerInfoList_.size(); i++) {
-        output.writeMessage(2, settlePlayerInfoList_.get(i));
-      }
       for (int i = 0; i < settleRewardInfoList_.size(); i++) {
-        output.writeMessage(4, settleRewardInfoList_.get(i));
-      }
-      if (isWin_ != false) {
-        output.writeBool(6, isWin_);
-      }
-      if (costTime_ != 0) {
-        output.writeUInt32(7, costTime_);
+        output.writeMessage(1, settleRewardInfoList_.get(i));
       }
       if (playType_ != 0) {
-        output.writeUInt32(10, playType_);
+        output.writeUInt32(2, playType_);
+      }
+      if (isWin_ != false) {
+        output.writeBool(5, isWin_);
+      }
+      for (int i = 0; i < settlePlayerInfoList_.size(); i++) {
+        output.writeMessage(7, settlePlayerInfoList_.get(i));
       }
       if (playId_ != 0) {
-        output.writeUInt32(12, playId_);
+        output.writeUInt32(9, playId_);
+      }
+      if (costTime_ != 0) {
+        output.writeUInt32(13, costTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -384,29 +384,29 @@ public final class ScenePlayBattleResultNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < settlePlayerInfoList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, settlePlayerInfoList_.get(i));
-      }
       for (int i = 0; i < settleRewardInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, settleRewardInfoList_.get(i));
-      }
-      if (isWin_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isWin_);
-      }
-      if (costTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, costTime_);
+          .computeMessageSize(1, settleRewardInfoList_.get(i));
       }
       if (playType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, playType_);
+          .computeUInt32Size(2, playType_);
+      }
+      if (isWin_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(5, isWin_);
+      }
+      for (int i = 0; i < settlePlayerInfoList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(7, settlePlayerInfoList_.get(i));
       }
       if (playId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, playId_);
+          .computeUInt32Size(9, playId_);
+      }
+      if (costTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, costTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -423,18 +423,18 @@ public final class ScenePlayBattleResultNotifyOuterClass {
       }
       emu.grasscutter.net.proto.ScenePlayBattleResultNotifyOuterClass.ScenePlayBattleResultNotify other = (emu.grasscutter.net.proto.ScenePlayBattleResultNotifyOuterClass.ScenePlayBattleResultNotify) obj;
 
-      if (getCostTime()
-          != other.getCostTime()) return false;
-      if (getPlayId()
-          != other.getPlayId()) return false;
       if (getPlayType()
           != other.getPlayType()) return false;
-      if (!getSettleRewardInfoListList()
-          .equals(other.getSettleRewardInfoListList())) return false;
-      if (!getSettlePlayerInfoListList()
-          .equals(other.getSettlePlayerInfoListList())) return false;
       if (getIsWin()
           != other.getIsWin()) return false;
+      if (!getSettleRewardInfoListList()
+          .equals(other.getSettleRewardInfoListList())) return false;
+      if (getPlayId()
+          != other.getPlayId()) return false;
+      if (getCostTime()
+          != other.getCostTime()) return false;
+      if (!getSettlePlayerInfoListList()
+          .equals(other.getSettlePlayerInfoListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -446,23 +446,23 @@ public final class ScenePlayBattleResultNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + COST_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getCostTime();
-      hash = (37 * hash) + PLAY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getPlayId();
       hash = (37 * hash) + PLAY_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getPlayType();
+      hash = (37 * hash) + IS_WIN_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsWin());
       if (getSettleRewardInfoListCount() > 0) {
         hash = (37 * hash) + SETTLE_REWARD_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getSettleRewardInfoListList().hashCode();
       }
+      hash = (37 * hash) + PLAY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getPlayId();
+      hash = (37 * hash) + COST_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getCostTime();
       if (getSettlePlayerInfoListCount() > 0) {
         hash = (37 * hash) + SETTLE_PLAYER_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getSettlePlayerInfoListList().hashCode();
       }
-      hash = (37 * hash) + IS_WIN_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsWin());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -560,8 +560,8 @@ public final class ScenePlayBattleResultNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: CIKJLLFFAFK
-     * CmdId: 4441
+     * CmdId: 4371
+     * Obf: IAFOMGBNGAF
      * </pre>
      *
      * Protobuf type {@code ScenePlayBattleResultNotify}
@@ -603,11 +603,9 @@ public final class ScenePlayBattleResultNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        costTime_ = 0;
-
-        playId_ = 0;
-
         playType_ = 0;
+
+        isWin_ = false;
 
         if (settleRewardInfoListBuilder_ == null) {
           settleRewardInfoList_ = java.util.Collections.emptyList();
@@ -615,14 +613,16 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         } else {
           settleRewardInfoListBuilder_.clear();
         }
+        playId_ = 0;
+
+        costTime_ = 0;
+
         if (settlePlayerInfoListBuilder_ == null) {
           settlePlayerInfoList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000002);
         } else {
           settlePlayerInfoListBuilder_.clear();
         }
-        isWin_ = false;
-
         return this;
       }
 
@@ -650,9 +650,8 @@ public final class ScenePlayBattleResultNotifyOuterClass {
       public emu.grasscutter.net.proto.ScenePlayBattleResultNotifyOuterClass.ScenePlayBattleResultNotify buildPartial() {
         emu.grasscutter.net.proto.ScenePlayBattleResultNotifyOuterClass.ScenePlayBattleResultNotify result = new emu.grasscutter.net.proto.ScenePlayBattleResultNotifyOuterClass.ScenePlayBattleResultNotify(this);
         int from_bitField0_ = bitField0_;
-        result.costTime_ = costTime_;
-        result.playId_ = playId_;
         result.playType_ = playType_;
+        result.isWin_ = isWin_;
         if (settleRewardInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             settleRewardInfoList_ = java.util.Collections.unmodifiableList(settleRewardInfoList_);
@@ -662,6 +661,8 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         } else {
           result.settleRewardInfoList_ = settleRewardInfoListBuilder_.build();
         }
+        result.playId_ = playId_;
+        result.costTime_ = costTime_;
         if (settlePlayerInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0)) {
             settlePlayerInfoList_ = java.util.Collections.unmodifiableList(settlePlayerInfoList_);
@@ -671,7 +672,6 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         } else {
           result.settlePlayerInfoList_ = settlePlayerInfoListBuilder_.build();
         }
-        result.isWin_ = isWin_;
         onBuilt();
         return result;
       }
@@ -720,14 +720,11 @@ public final class ScenePlayBattleResultNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ScenePlayBattleResultNotifyOuterClass.ScenePlayBattleResultNotify other) {
         if (other == emu.grasscutter.net.proto.ScenePlayBattleResultNotifyOuterClass.ScenePlayBattleResultNotify.getDefaultInstance()) return this;
-        if (other.getCostTime() != 0) {
-          setCostTime(other.getCostTime());
-        }
-        if (other.getPlayId() != 0) {
-          setPlayId(other.getPlayId());
-        }
         if (other.getPlayType() != 0) {
           setPlayType(other.getPlayType());
+        }
+        if (other.getIsWin() != false) {
+          setIsWin(other.getIsWin());
         }
         if (settleRewardInfoListBuilder_ == null) {
           if (!other.settleRewardInfoList_.isEmpty()) {
@@ -755,6 +752,12 @@ public final class ScenePlayBattleResultNotifyOuterClass {
             }
           }
         }
+        if (other.getPlayId() != 0) {
+          setPlayId(other.getPlayId());
+        }
+        if (other.getCostTime() != 0) {
+          setCostTime(other.getCostTime());
+        }
         if (settlePlayerInfoListBuilder_ == null) {
           if (!other.settlePlayerInfoList_.isEmpty()) {
             if (settlePlayerInfoList_.isEmpty()) {
@@ -780,9 +783,6 @@ public final class ScenePlayBattleResultNotifyOuterClass {
               settlePlayerInfoListBuilder_.addAllMessages(other.settlePlayerInfoList_);
             }
           }
-        }
-        if (other.getIsWin() != false) {
-          setIsWin(other.getIsWin());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -814,71 +814,9 @@ public final class ScenePlayBattleResultNotifyOuterClass {
       }
       private int bitField0_;
 
-      private int costTime_ ;
-      /**
-       * <code>uint32 cost_time = 7;</code>
-       * @return The costTime.
-       */
-      @java.lang.Override
-      public int getCostTime() {
-        return costTime_;
-      }
-      /**
-       * <code>uint32 cost_time = 7;</code>
-       * @param value The costTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCostTime(int value) {
-        
-        costTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 cost_time = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCostTime() {
-        
-        costTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int playId_ ;
-      /**
-       * <code>uint32 play_id = 12;</code>
-       * @return The playId.
-       */
-      @java.lang.Override
-      public int getPlayId() {
-        return playId_;
-      }
-      /**
-       * <code>uint32 play_id = 12;</code>
-       * @param value The playId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPlayId(int value) {
-        
-        playId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 play_id = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPlayId() {
-        
-        playId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int playType_ ;
       /**
-       * <code>uint32 play_type = 10;</code>
+       * <code>uint32 play_type = 2;</code>
        * @return The playType.
        */
       @java.lang.Override
@@ -886,7 +824,7 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         return playType_;
       }
       /**
-       * <code>uint32 play_type = 10;</code>
+       * <code>uint32 play_type = 2;</code>
        * @param value The playType to set.
        * @return This builder for chaining.
        */
@@ -897,12 +835,43 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 play_type = 10;</code>
+       * <code>uint32 play_type = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayType() {
         
         playType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isWin_ ;
+      /**
+       * <code>bool is_win = 5;</code>
+       * @return The isWin.
+       */
+      @java.lang.Override
+      public boolean getIsWin() {
+        return isWin_;
+      }
+      /**
+       * <code>bool is_win = 5;</code>
+       * @param value The isWin to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsWin(boolean value) {
+        
+        isWin_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_win = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsWin() {
+        
+        isWin_ = false;
         onChanged();
         return this;
       }
@@ -920,7 +889,7 @@ public final class ScenePlayBattleResultNotifyOuterClass {
           emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo, emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo.Builder, emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfoOrBuilder> settleRewardInfoListBuilder_;
 
       /**
-       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 4;</code>
+       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 1;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo> getSettleRewardInfoListList() {
         if (settleRewardInfoListBuilder_ == null) {
@@ -930,7 +899,7 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 4;</code>
+       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 1;</code>
        */
       public int getSettleRewardInfoListCount() {
         if (settleRewardInfoListBuilder_ == null) {
@@ -940,7 +909,7 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 4;</code>
+       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 1;</code>
        */
       public emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo getSettleRewardInfoList(int index) {
         if (settleRewardInfoListBuilder_ == null) {
@@ -950,7 +919,7 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 4;</code>
+       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 1;</code>
        */
       public Builder setSettleRewardInfoList(
           int index, emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo value) {
@@ -967,7 +936,7 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 4;</code>
+       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 1;</code>
        */
       public Builder setSettleRewardInfoList(
           int index, emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo.Builder builderForValue) {
@@ -981,7 +950,7 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 4;</code>
+       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 1;</code>
        */
       public Builder addSettleRewardInfoList(emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo value) {
         if (settleRewardInfoListBuilder_ == null) {
@@ -997,7 +966,7 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 4;</code>
+       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 1;</code>
        */
       public Builder addSettleRewardInfoList(
           int index, emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo value) {
@@ -1014,7 +983,7 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 4;</code>
+       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 1;</code>
        */
       public Builder addSettleRewardInfoList(
           emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo.Builder builderForValue) {
@@ -1028,7 +997,7 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 4;</code>
+       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 1;</code>
        */
       public Builder addSettleRewardInfoList(
           int index, emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo.Builder builderForValue) {
@@ -1042,7 +1011,7 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 4;</code>
+       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 1;</code>
        */
       public Builder addAllSettleRewardInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo> values) {
@@ -1057,7 +1026,7 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 4;</code>
+       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 1;</code>
        */
       public Builder clearSettleRewardInfoList() {
         if (settleRewardInfoListBuilder_ == null) {
@@ -1070,7 +1039,7 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 4;</code>
+       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 1;</code>
        */
       public Builder removeSettleRewardInfoList(int index) {
         if (settleRewardInfoListBuilder_ == null) {
@@ -1083,14 +1052,14 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 4;</code>
+       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 1;</code>
        */
       public emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo.Builder getSettleRewardInfoListBuilder(
           int index) {
         return getSettleRewardInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 4;</code>
+       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 1;</code>
        */
       public emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfoOrBuilder getSettleRewardInfoListOrBuilder(
           int index) {
@@ -1100,7 +1069,7 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 4;</code>
+       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 1;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfoOrBuilder> 
            getSettleRewardInfoListOrBuilderList() {
@@ -1111,14 +1080,14 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 4;</code>
+       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 1;</code>
        */
       public emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo.Builder addSettleRewardInfoListBuilder() {
         return getSettleRewardInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 4;</code>
+       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 1;</code>
        */
       public emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo.Builder addSettleRewardInfoListBuilder(
           int index) {
@@ -1126,7 +1095,7 @@ public final class ScenePlayBattleResultNotifyOuterClass {
             index, emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 4;</code>
+       * <code>repeated .ScenePlayBattleSettleRewardInfo settle_reward_info_list = 1;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.ScenePlayBattleSettleRewardInfo.Builder> 
            getSettleRewardInfoListBuilderList() {
@@ -1147,6 +1116,68 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         return settleRewardInfoListBuilder_;
       }
 
+      private int playId_ ;
+      /**
+       * <code>uint32 play_id = 9;</code>
+       * @return The playId.
+       */
+      @java.lang.Override
+      public int getPlayId() {
+        return playId_;
+      }
+      /**
+       * <code>uint32 play_id = 9;</code>
+       * @param value The playId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPlayId(int value) {
+        
+        playId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 play_id = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPlayId() {
+        
+        playId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int costTime_ ;
+      /**
+       * <code>uint32 cost_time = 13;</code>
+       * @return The costTime.
+       */
+      @java.lang.Override
+      public int getCostTime() {
+        return costTime_;
+      }
+      /**
+       * <code>uint32 cost_time = 13;</code>
+       * @param value The costTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCostTime(int value) {
+        
+        costTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 cost_time = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCostTime() {
+        
+        costTime_ = 0;
+        onChanged();
+        return this;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.ScenePlayBattleSettlePlayerInfo> settlePlayerInfoList_ =
         java.util.Collections.emptyList();
       private void ensureSettlePlayerInfoListIsMutable() {
@@ -1160,7 +1191,7 @@ public final class ScenePlayBattleResultNotifyOuterClass {
           emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.ScenePlayBattleSettlePlayerInfo, emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.ScenePlayBattleSettlePlayerInfo.Builder, emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.ScenePlayBattleSettlePlayerInfoOrBuilder> settlePlayerInfoListBuilder_;
 
       /**
-       * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 2;</code>
+       * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 7;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.ScenePlayBattleSettlePlayerInfo> getSettlePlayerInfoListList() {
         if (settlePlayerInfoListBuilder_ == null) {
@@ -1170,7 +1201,7 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 2;</code>
+       * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 7;</code>
        */
       public int getSettlePlayerInfoListCount() {
         if (settlePlayerInfoListBuilder_ == null) {
@@ -1180,7 +1211,7 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 2;</code>
+       * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 7;</code>
        */
       public emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.ScenePlayBattleSettlePlayerInfo getSettlePlayerInfoList(int index) {
         if (settlePlayerInfoListBuilder_ == null) {
@@ -1190,7 +1221,7 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 2;</code>
+       * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 7;</code>
        */
       public Builder setSettlePlayerInfoList(
           int index, emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.ScenePlayBattleSettlePlayerInfo value) {
@@ -1207,7 +1238,7 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 2;</code>
+       * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 7;</code>
        */
       public Builder setSettlePlayerInfoList(
           int index, emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.ScenePlayBattleSettlePlayerInfo.Builder builderForValue) {
@@ -1221,7 +1252,7 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 2;</code>
+       * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 7;</code>
        */
       public Builder addSettlePlayerInfoList(emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.ScenePlayBattleSettlePlayerInfo value) {
         if (settlePlayerInfoListBuilder_ == null) {
@@ -1237,7 +1268,7 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 2;</code>
+       * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 7;</code>
        */
       public Builder addSettlePlayerInfoList(
           int index, emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.ScenePlayBattleSettlePlayerInfo value) {
@@ -1254,7 +1285,7 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 2;</code>
+       * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 7;</code>
        */
       public Builder addSettlePlayerInfoList(
           emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.ScenePlayBattleSettlePlayerInfo.Builder builderForValue) {
@@ -1268,7 +1299,7 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 2;</code>
+       * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 7;</code>
        */
       public Builder addSettlePlayerInfoList(
           int index, emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.ScenePlayBattleSettlePlayerInfo.Builder builderForValue) {
@@ -1282,7 +1313,7 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 2;</code>
+       * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 7;</code>
        */
       public Builder addAllSettlePlayerInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.ScenePlayBattleSettlePlayerInfo> values) {
@@ -1297,7 +1328,7 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 2;</code>
+       * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 7;</code>
        */
       public Builder clearSettlePlayerInfoList() {
         if (settlePlayerInfoListBuilder_ == null) {
@@ -1310,7 +1341,7 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 2;</code>
+       * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 7;</code>
        */
       public Builder removeSettlePlayerInfoList(int index) {
         if (settlePlayerInfoListBuilder_ == null) {
@@ -1323,14 +1354,14 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 2;</code>
+       * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 7;</code>
        */
       public emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.ScenePlayBattleSettlePlayerInfo.Builder getSettlePlayerInfoListBuilder(
           int index) {
         return getSettlePlayerInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 2;</code>
+       * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 7;</code>
        */
       public emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.ScenePlayBattleSettlePlayerInfoOrBuilder getSettlePlayerInfoListOrBuilder(
           int index) {
@@ -1340,7 +1371,7 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 2;</code>
+       * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 7;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.ScenePlayBattleSettlePlayerInfoOrBuilder> 
            getSettlePlayerInfoListOrBuilderList() {
@@ -1351,14 +1382,14 @@ public final class ScenePlayBattleResultNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 2;</code>
+       * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 7;</code>
        */
       public emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.ScenePlayBattleSettlePlayerInfo.Builder addSettlePlayerInfoListBuilder() {
         return getSettlePlayerInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.ScenePlayBattleSettlePlayerInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 2;</code>
+       * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 7;</code>
        */
       public emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.ScenePlayBattleSettlePlayerInfo.Builder addSettlePlayerInfoListBuilder(
           int index) {
@@ -1366,7 +1397,7 @@ public final class ScenePlayBattleResultNotifyOuterClass {
             index, emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.ScenePlayBattleSettlePlayerInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 2;</code>
+       * <code>repeated .ScenePlayBattleSettlePlayerInfo settle_player_info_list = 7;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.ScenePlayBattleSettlePlayerInfo.Builder> 
            getSettlePlayerInfoListBuilderList() {
@@ -1385,37 +1416,6 @@ public final class ScenePlayBattleResultNotifyOuterClass {
           settlePlayerInfoList_ = null;
         }
         return settlePlayerInfoListBuilder_;
-      }
-
-      private boolean isWin_ ;
-      /**
-       * <code>bool is_win = 6;</code>
-       * @return The isWin.
-       */
-      @java.lang.Override
-      public boolean getIsWin() {
-        return isWin_;
-      }
-      /**
-       * <code>bool is_win = 6;</code>
-       * @param value The isWin to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsWin(boolean value) {
-        
-        isWin_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_win = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsWin() {
-        
-        isWin_ = false;
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1485,30 +1485,30 @@ public final class ScenePlayBattleResultNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!ScenePlayBattleResultNotify.proto\032%Sce" +
-      "nePlayBattleSettlePlayerInfo.proto\032%Scen" +
-      "ePlayBattleSettleRewardInfo.proto\"\352\001\n\033Sc" +
-      "enePlayBattleResultNotify\022\021\n\tcost_time\030\007" +
-      " \001(\r\022\017\n\007play_id\030\014 \001(\r\022\021\n\tplay_type\030\n \001(\r" +
-      "\022A\n\027settle_reward_info_list\030\004 \003(\0132 .Scen" +
-      "ePlayBattleSettleRewardInfo\022A\n\027settle_pl" +
-      "ayer_info_list\030\002 \003(\0132 .ScenePlayBattleSe" +
-      "ttlePlayerInfo\022\016\n\006is_win\030\006 \001(\010B\033\n\031emu.gr" +
+      "nePlayBattleSettleRewardInfo.proto\032%Scen" +
+      "ePlayBattleSettlePlayerInfo.proto\"\352\001\n\033Sc" +
+      "enePlayBattleResultNotify\022\021\n\tplay_type\030\002" +
+      " \001(\r\022\016\n\006is_win\030\005 \001(\010\022A\n\027settle_reward_in" +
+      "fo_list\030\001 \003(\0132 .ScenePlayBattleSettleRew" +
+      "ardInfo\022\017\n\007play_id\030\t \001(\r\022\021\n\tcost_time\030\r " +
+      "\001(\r\022A\n\027settle_player_info_list\030\007 \003(\0132 .S" +
+      "cenePlayBattleSettlePlayerInfoB\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.getDescriptor(),
         });
     internal_static_ScenePlayBattleResultNotify_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_ScenePlayBattleResultNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ScenePlayBattleResultNotify_descriptor,
-        new java.lang.String[] { "CostTime", "PlayId", "PlayType", "SettleRewardInfoList", "SettlePlayerInfoList", "IsWin", });
-    emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.getDescriptor();
+        new java.lang.String[] { "PlayType", "IsWin", "SettleRewardInfoList", "PlayId", "CostTime", "SettlePlayerInfoList", });
     emu.grasscutter.net.proto.ScenePlayBattleSettleRewardInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.ScenePlayBattleSettlePlayerInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

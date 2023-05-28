@@ -19,12 +19,6 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 8;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
      * <code>repeated uint32 avatar_id = 14;</code>
      * @return A list containing the avatarId.
      */
@@ -40,11 +34,17 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
      * @return The avatarId at the given index.
      */
     int getAvatarId(int index);
+
+    /**
+     * <code>int32 retcode = 13;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
    * <pre>
-   * Name: NLMJGBBBNOA
-   * CmdId: 5377
+   * CmdId: 5314
+   * Obf: HPFAKCEOEAM
    * </pre>
    *
    * Protobuf type {@code BrickBreakerSelectAvatarRsp}
@@ -93,7 +93,7 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 104: {
 
               retcode_ = input.readInt32();
               break;
@@ -154,17 +154,6 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
               emu.grasscutter.net.proto.BrickBreakerSelectAvatarRspOuterClass.BrickBreakerSelectAvatarRsp.class, emu.grasscutter.net.proto.BrickBreakerSelectAvatarRspOuterClass.BrickBreakerSelectAvatarRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 8;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 8;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
     public static final int AVATAR_ID_FIELD_NUMBER = 14;
     private com.google.protobuf.Internal.IntList avatarId_;
     /**
@@ -193,6 +182,17 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
     }
     private int avatarIdMemoizedSerializedSize = -1;
 
+    public static final int RETCODE_FIELD_NUMBER = 13;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 13;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -209,7 +209,7 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
+        output.writeInt32(13, retcode_);
       }
       if (getAvatarIdList().size() > 0) {
         output.writeUInt32NoTag(114);
@@ -229,7 +229,7 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
+          .computeInt32Size(13, retcode_);
       }
       {
         int dataSize = 0;
@@ -260,10 +260,10 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
       }
       emu.grasscutter.net.proto.BrickBreakerSelectAvatarRspOuterClass.BrickBreakerSelectAvatarRsp other = (emu.grasscutter.net.proto.BrickBreakerSelectAvatarRspOuterClass.BrickBreakerSelectAvatarRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (!getAvatarIdList()
           .equals(other.getAvatarIdList())) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -275,12 +275,12 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       if (getAvatarIdCount() > 0) {
         hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
         hash = (53 * hash) + getAvatarIdList().hashCode();
       }
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -378,8 +378,8 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
     }
     /**
      * <pre>
-     * Name: NLMJGBBBNOA
-     * CmdId: 5377
+     * CmdId: 5314
+     * Obf: HPFAKCEOEAM
      * </pre>
      *
      * Protobuf type {@code BrickBreakerSelectAvatarRsp}
@@ -419,10 +419,10 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         avatarId_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        retcode_ = 0;
+
         return this;
       }
 
@@ -450,12 +450,12 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
       public emu.grasscutter.net.proto.BrickBreakerSelectAvatarRspOuterClass.BrickBreakerSelectAvatarRsp buildPartial() {
         emu.grasscutter.net.proto.BrickBreakerSelectAvatarRspOuterClass.BrickBreakerSelectAvatarRsp result = new emu.grasscutter.net.proto.BrickBreakerSelectAvatarRspOuterClass.BrickBreakerSelectAvatarRsp(this);
         int from_bitField0_ = bitField0_;
-        result.retcode_ = retcode_;
         if (((bitField0_ & 0x00000001) != 0)) {
           avatarId_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.avatarId_ = avatarId_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -504,9 +504,6 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BrickBreakerSelectAvatarRspOuterClass.BrickBreakerSelectAvatarRsp other) {
         if (other == emu.grasscutter.net.proto.BrickBreakerSelectAvatarRspOuterClass.BrickBreakerSelectAvatarRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (!other.avatarId_.isEmpty()) {
           if (avatarId_.isEmpty()) {
             avatarId_ = other.avatarId_;
@@ -516,6 +513,9 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
             avatarId_.addAll(other.avatarId_);
           }
           onChanged();
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -546,37 +546,6 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
         return this;
       }
       private int bitField0_;
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
 
       private com.google.protobuf.Internal.IntList avatarId_ = emptyIntList();
       private void ensureAvatarIdIsMutable() {
@@ -656,6 +625,37 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
         onChanged();
         return this;
       }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 13;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 13;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -724,8 +724,8 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!BrickBreakerSelectAvatarRsp.proto\"A\n\033B" +
-      "rickBreakerSelectAvatarRsp\022\017\n\007retcode\030\010 " +
-      "\001(\005\022\021\n\tavatar_id\030\016 \003(\rB\033\n\031emu.grasscutte" +
+      "rickBreakerSelectAvatarRsp\022\021\n\tavatar_id\030" +
+      "\016 \003(\r\022\017\n\007retcode\030\r \001(\005B\033\n\031emu.grasscutte" +
       "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -737,7 +737,7 @@ public final class BrickBreakerSelectAvatarRspOuterClass {
     internal_static_BrickBreakerSelectAvatarRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BrickBreakerSelectAvatarRsp_descriptor,
-        new java.lang.String[] { "Retcode", "AvatarId", });
+        new java.lang.String[] { "AvatarId", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,21 +19,21 @@ public final class GetHomeLevelUpRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level = 14;</code>
+     * <code>uint32 level = 3;</code>
      * @return The level.
      */
     int getLevel();
 
     /**
-     * <code>int32 retcode = 11;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * Name: HFMNPNKDDDM
-   * CmdId: 4585
+   * CmdId: 4579
+   * Obf: GIAFFMBGNHJ
    * </pre>
    *
    * Protobuf type {@code GetHomeLevelUpRewardRsp}
@@ -80,14 +80,14 @@ public final class GetHomeLevelUpRewardRspOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 112: {
+            case 24: {
 
               level_ = input.readUInt32();
+              break;
+            }
+            case 48: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -122,10 +122,10 @@ public final class GetHomeLevelUpRewardRspOuterClass {
               emu.grasscutter.net.proto.GetHomeLevelUpRewardRspOuterClass.GetHomeLevelUpRewardRsp.class, emu.grasscutter.net.proto.GetHomeLevelUpRewardRspOuterClass.GetHomeLevelUpRewardRsp.Builder.class);
     }
 
-    public static final int LEVEL_FIELD_NUMBER = 14;
+    public static final int LEVEL_FIELD_NUMBER = 3;
     private int level_;
     /**
-     * <code>uint32 level = 14;</code>
+     * <code>uint32 level = 3;</code>
      * @return The level.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class GetHomeLevelUpRewardRspOuterClass {
       return level_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 11;
+    public static final int RETCODE_FIELD_NUMBER = 6;
     private int retcode_;
     /**
-     * <code>int32 retcode = 11;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -158,11 +158,11 @@ public final class GetHomeLevelUpRewardRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(11, retcode_);
-      }
       if (level_ != 0) {
-        output.writeUInt32(14, level_);
+        output.writeUInt32(3, level_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(6, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class GetHomeLevelUpRewardRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(11, retcode_);
-      }
       if (level_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, level_);
+          .computeUInt32Size(3, level_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(6, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class GetHomeLevelUpRewardRspOuterClass {
     }
     /**
      * <pre>
-     * Name: HFMNPNKDDDM
-     * CmdId: 4585
+     * CmdId: 4579
+     * Obf: GIAFFMBGNHJ
      * </pre>
      *
      * Protobuf type {@code GetHomeLevelUpRewardRsp}
@@ -470,7 +470,7 @@ public final class GetHomeLevelUpRewardRspOuterClass {
 
       private int level_ ;
       /**
-       * <code>uint32 level = 14;</code>
+       * <code>uint32 level = 3;</code>
        * @return The level.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class GetHomeLevelUpRewardRspOuterClass {
         return level_;
       }
       /**
-       * <code>uint32 level = 14;</code>
+       * <code>uint32 level = 3;</code>
        * @param value The level to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class GetHomeLevelUpRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level = 14;</code>
+       * <code>uint32 level = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevel() {
@@ -501,7 +501,7 @@ public final class GetHomeLevelUpRewardRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 6;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class GetHomeLevelUpRewardRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 6;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class GetHomeLevelUpRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -597,8 +597,8 @@ public final class GetHomeLevelUpRewardRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035GetHomeLevelUpRewardRsp.proto\"9\n\027GetHo" +
-      "meLevelUpRewardRsp\022\r\n\005level\030\016 \001(\r\022\017\n\007ret" +
-      "code\030\013 \001(\005B\033\n\031emu.grasscutter.net.protob" +
+      "meLevelUpRewardRsp\022\r\n\005level\030\003 \001(\r\022\017\n\007ret" +
+      "code\030\006 \001(\005B\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

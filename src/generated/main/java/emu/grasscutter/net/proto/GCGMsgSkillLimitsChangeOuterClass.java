@@ -19,42 +19,32 @@ public final class GCGMsgSkillLimitsChangeOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint32, .GCGCardSkillLimitsInfo&gt; card_limits_change_map = 7;</code>
+     * <code>repeated .GCGCardSkillLimitsInfo card_limits_change_map = 5;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo> 
+        getCardLimitsChangeMapList();
+    /**
+     * <code>repeated .GCGCardSkillLimitsInfo card_limits_change_map = 5;</code>
+     */
+    emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo getCardLimitsChangeMap(int index);
+    /**
+     * <code>repeated .GCGCardSkillLimitsInfo card_limits_change_map = 5;</code>
      */
     int getCardLimitsChangeMapCount();
     /**
-     * <code>map&lt;uint32, .GCGCardSkillLimitsInfo&gt; card_limits_change_map = 7;</code>
+     * <code>repeated .GCGCardSkillLimitsInfo card_limits_change_map = 5;</code>
      */
-    boolean containsCardLimitsChangeMap(
-        int key);
+    java.util.List<? extends emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfoOrBuilder> 
+        getCardLimitsChangeMapOrBuilderList();
     /**
-     * Use {@link #getCardLimitsChangeMapMap()} instead.
+     * <code>repeated .GCGCardSkillLimitsInfo card_limits_change_map = 5;</code>
      */
-    @java.lang.Deprecated
-    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo>
-    getCardLimitsChangeMap();
-    /**
-     * <code>map&lt;uint32, .GCGCardSkillLimitsInfo&gt; card_limits_change_map = 7;</code>
-     */
-    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo>
-    getCardLimitsChangeMapMap();
-    /**
-     * <code>map&lt;uint32, .GCGCardSkillLimitsInfo&gt; card_limits_change_map = 7;</code>
-     */
-
-    emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo getCardLimitsChangeMapOrDefault(
-        int key,
-        emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo defaultValue);
-    /**
-     * <code>map&lt;uint32, .GCGCardSkillLimitsInfo&gt; card_limits_change_map = 7;</code>
-     */
-
-    emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo getCardLimitsChangeMapOrThrow(
-        int key);
+    emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfoOrBuilder getCardLimitsChangeMapOrBuilder(
+        int index);
   }
   /**
    * <pre>
-   * Name: PGCOGOHENKC
+   * Obf: HEDOCLCABBL
    * </pre>
    *
    * Protobuf type {@code GCGMsgSkillLimitsChange}
@@ -69,6 +59,7 @@ public final class GCGMsgSkillLimitsChangeOuterClass {
       super(builder);
     }
     private GCGMsgSkillLimitsChange() {
+      cardLimitsChangeMap_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -102,17 +93,13 @@ public final class GCGMsgSkillLimitsChangeOuterClass {
             case 0:
               done = true;
               break;
-            case 58: {
+            case 42: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                cardLimitsChangeMap_ = com.google.protobuf.MapField.newMapField(
-                    CardLimitsChangeMapDefaultEntryHolder.defaultEntry);
+                cardLimitsChangeMap_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo>
-              cardLimitsChangeMap__ = input.readMessage(
-                  CardLimitsChangeMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              cardLimitsChangeMap_.getMutableMap().put(
-                  cardLimitsChangeMap__.getKey(), cardLimitsChangeMap__.getValue());
+              cardLimitsChangeMap_.add(
+                  input.readMessage(emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -130,6 +117,9 @@ public final class GCGMsgSkillLimitsChangeOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          cardLimitsChangeMap_ = java.util.Collections.unmodifiableList(cardLimitsChangeMap_);
+        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
@@ -139,18 +129,6 @@ public final class GCGMsgSkillLimitsChangeOuterClass {
       return emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.internal_static_GCGMsgSkillLimitsChange_descriptor;
     }
 
-    @SuppressWarnings({"rawtypes"})
-    @java.lang.Override
-    protected com.google.protobuf.MapField internalGetMapField(
-        int number) {
-      switch (number) {
-        case 7:
-          return internalGetCardLimitsChangeMap();
-        default:
-          throw new RuntimeException(
-              "Invalid map field number: " + number);
-      }
-    }
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
@@ -159,85 +137,44 @@ public final class GCGMsgSkillLimitsChangeOuterClass {
               emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange.class, emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange.Builder.class);
     }
 
-    public static final int CARD_LIMITS_CHANGE_MAP_FIELD_NUMBER = 7;
-    private static final class CardLimitsChangeMapDefaultEntryHolder {
-      static final com.google.protobuf.MapEntry<
-          java.lang.Integer, emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo> defaultEntry =
-              com.google.protobuf.MapEntry
-              .<java.lang.Integer, emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo>newDefaultInstance(
-                  emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.internal_static_GCGMsgSkillLimitsChange_CardLimitsChangeMapEntry_descriptor, 
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0,
-                  com.google.protobuf.WireFormat.FieldType.MESSAGE,
-                  emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo.getDefaultInstance());
-    }
-    private com.google.protobuf.MapField<
-        java.lang.Integer, emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo> cardLimitsChangeMap_;
-    private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo>
-    internalGetCardLimitsChangeMap() {
-      if (cardLimitsChangeMap_ == null) {
-        return com.google.protobuf.MapField.emptyMapField(
-            CardLimitsChangeMapDefaultEntryHolder.defaultEntry);
-      }
+    public static final int CARD_LIMITS_CHANGE_MAP_FIELD_NUMBER = 5;
+    private java.util.List<emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo> cardLimitsChangeMap_;
+    /**
+     * <code>repeated .GCGCardSkillLimitsInfo card_limits_change_map = 5;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo> getCardLimitsChangeMapList() {
       return cardLimitsChangeMap_;
     }
-
+    /**
+     * <code>repeated .GCGCardSkillLimitsInfo card_limits_change_map = 5;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfoOrBuilder> 
+        getCardLimitsChangeMapOrBuilderList() {
+      return cardLimitsChangeMap_;
+    }
+    /**
+     * <code>repeated .GCGCardSkillLimitsInfo card_limits_change_map = 5;</code>
+     */
+    @java.lang.Override
     public int getCardLimitsChangeMapCount() {
-      return internalGetCardLimitsChangeMap().getMap().size();
+      return cardLimitsChangeMap_.size();
     }
     /**
-     * <code>map&lt;uint32, .GCGCardSkillLimitsInfo&gt; card_limits_change_map = 7;</code>
+     * <code>repeated .GCGCardSkillLimitsInfo card_limits_change_map = 5;</code>
      */
-
     @java.lang.Override
-    public boolean containsCardLimitsChangeMap(
-        int key) {
-      
-      return internalGetCardLimitsChangeMap().getMap().containsKey(key);
+    public emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo getCardLimitsChangeMap(int index) {
+      return cardLimitsChangeMap_.get(index);
     }
     /**
-     * Use {@link #getCardLimitsChangeMapMap()} instead.
+     * <code>repeated .GCGCardSkillLimitsInfo card_limits_change_map = 5;</code>
      */
     @java.lang.Override
-    @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo> getCardLimitsChangeMap() {
-      return getCardLimitsChangeMapMap();
-    }
-    /**
-     * <code>map&lt;uint32, .GCGCardSkillLimitsInfo&gt; card_limits_change_map = 7;</code>
-     */
-    @java.lang.Override
-
-    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo> getCardLimitsChangeMapMap() {
-      return internalGetCardLimitsChangeMap().getMap();
-    }
-    /**
-     * <code>map&lt;uint32, .GCGCardSkillLimitsInfo&gt; card_limits_change_map = 7;</code>
-     */
-    @java.lang.Override
-
-    public emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo getCardLimitsChangeMapOrDefault(
-        int key,
-        emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo defaultValue) {
-      
-      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo> map =
-          internalGetCardLimitsChangeMap().getMap();
-      return map.containsKey(key) ? map.get(key) : defaultValue;
-    }
-    /**
-     * <code>map&lt;uint32, .GCGCardSkillLimitsInfo&gt; card_limits_change_map = 7;</code>
-     */
-    @java.lang.Override
-
-    public emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo getCardLimitsChangeMapOrThrow(
-        int key) {
-      
-      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo> map =
-          internalGetCardLimitsChangeMap().getMap();
-      if (!map.containsKey(key)) {
-        throw new java.lang.IllegalArgumentException();
-      }
-      return map.get(key);
+    public emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfoOrBuilder getCardLimitsChangeMapOrBuilder(
+        int index) {
+      return cardLimitsChangeMap_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -254,12 +191,9 @@ public final class GCGMsgSkillLimitsChangeOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      com.google.protobuf.GeneratedMessageV3
-        .serializeIntegerMapTo(
-          output,
-          internalGetCardLimitsChangeMap(),
-          CardLimitsChangeMapDefaultEntryHolder.defaultEntry,
-          7);
+      for (int i = 0; i < cardLimitsChangeMap_.size(); i++) {
+        output.writeMessage(5, cardLimitsChangeMap_.get(i));
+      }
       unknownFields.writeTo(output);
     }
 
@@ -269,15 +203,9 @@ public final class GCGMsgSkillLimitsChangeOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (java.util.Map.Entry<java.lang.Integer, emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo> entry
-           : internalGetCardLimitsChangeMap().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo>
-        cardLimitsChangeMap__ = CardLimitsChangeMapDefaultEntryHolder.defaultEntry.newBuilderForType()
-            .setKey(entry.getKey())
-            .setValue(entry.getValue())
-            .build();
+      for (int i = 0; i < cardLimitsChangeMap_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(7, cardLimitsChangeMap__);
+          .computeMessageSize(5, cardLimitsChangeMap_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -294,8 +222,8 @@ public final class GCGMsgSkillLimitsChangeOuterClass {
       }
       emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange other = (emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange) obj;
 
-      if (!internalGetCardLimitsChangeMap().equals(
-          other.internalGetCardLimitsChangeMap())) return false;
+      if (!getCardLimitsChangeMapList()
+          .equals(other.getCardLimitsChangeMapList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -307,9 +235,9 @@ public final class GCGMsgSkillLimitsChangeOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (!internalGetCardLimitsChangeMap().getMap().isEmpty()) {
+      if (getCardLimitsChangeMapCount() > 0) {
         hash = (37 * hash) + CARD_LIMITS_CHANGE_MAP_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetCardLimitsChangeMap().hashCode();
+        hash = (53 * hash) + getCardLimitsChangeMapList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -408,7 +336,7 @@ public final class GCGMsgSkillLimitsChangeOuterClass {
     }
     /**
      * <pre>
-     * Name: PGCOGOHENKC
+     * Obf: HEDOCLCABBL
      * </pre>
      *
      * Protobuf type {@code GCGMsgSkillLimitsChange}
@@ -422,28 +350,6 @@ public final class GCGMsgSkillLimitsChangeOuterClass {
         return emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.internal_static_GCGMsgSkillLimitsChange_descriptor;
       }
 
-      @SuppressWarnings({"rawtypes"})
-      protected com.google.protobuf.MapField internalGetMapField(
-          int number) {
-        switch (number) {
-          case 7:
-            return internalGetCardLimitsChangeMap();
-          default:
-            throw new RuntimeException(
-                "Invalid map field number: " + number);
-        }
-      }
-      @SuppressWarnings({"rawtypes"})
-      protected com.google.protobuf.MapField internalGetMutableMapField(
-          int number) {
-        switch (number) {
-          case 7:
-            return internalGetMutableCardLimitsChangeMap();
-          default:
-            throw new RuntimeException(
-                "Invalid map field number: " + number);
-        }
-      }
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
@@ -465,12 +371,18 @@ public final class GCGMsgSkillLimitsChangeOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
+          getCardLimitsChangeMapFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        internalGetMutableCardLimitsChangeMap().clear();
+        if (cardLimitsChangeMapBuilder_ == null) {
+          cardLimitsChangeMap_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          cardLimitsChangeMapBuilder_.clear();
+        }
         return this;
       }
 
@@ -498,8 +410,15 @@ public final class GCGMsgSkillLimitsChangeOuterClass {
       public emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange buildPartial() {
         emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange result = new emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange(this);
         int from_bitField0_ = bitField0_;
-        result.cardLimitsChangeMap_ = internalGetCardLimitsChangeMap();
-        result.cardLimitsChangeMap_.makeImmutable();
+        if (cardLimitsChangeMapBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) != 0)) {
+            cardLimitsChangeMap_ = java.util.Collections.unmodifiableList(cardLimitsChangeMap_);
+            bitField0_ = (bitField0_ & ~0x00000001);
+          }
+          result.cardLimitsChangeMap_ = cardLimitsChangeMap_;
+        } else {
+          result.cardLimitsChangeMap_ = cardLimitsChangeMapBuilder_.build();
+        }
         onBuilt();
         return result;
       }
@@ -548,8 +467,32 @@ public final class GCGMsgSkillLimitsChangeOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange other) {
         if (other == emu.grasscutter.net.proto.GCGMsgSkillLimitsChangeOuterClass.GCGMsgSkillLimitsChange.getDefaultInstance()) return this;
-        internalGetMutableCardLimitsChangeMap().mergeFrom(
-            other.internalGetCardLimitsChangeMap());
+        if (cardLimitsChangeMapBuilder_ == null) {
+          if (!other.cardLimitsChangeMap_.isEmpty()) {
+            if (cardLimitsChangeMap_.isEmpty()) {
+              cardLimitsChangeMap_ = other.cardLimitsChangeMap_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+            } else {
+              ensureCardLimitsChangeMapIsMutable();
+              cardLimitsChangeMap_.addAll(other.cardLimitsChangeMap_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.cardLimitsChangeMap_.isEmpty()) {
+            if (cardLimitsChangeMapBuilder_.isEmpty()) {
+              cardLimitsChangeMapBuilder_.dispose();
+              cardLimitsChangeMapBuilder_ = null;
+              cardLimitsChangeMap_ = other.cardLimitsChangeMap_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+              cardLimitsChangeMapBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getCardLimitsChangeMapFieldBuilder() : null;
+            } else {
+              cardLimitsChangeMapBuilder_.addAllMessages(other.cardLimitsChangeMap_);
+            }
+          }
+        }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -580,132 +523,244 @@ public final class GCGMsgSkillLimitsChangeOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.MapField<
-          java.lang.Integer, emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo> cardLimitsChangeMap_;
-      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo>
-      internalGetCardLimitsChangeMap() {
-        if (cardLimitsChangeMap_ == null) {
-          return com.google.protobuf.MapField.emptyMapField(
-              CardLimitsChangeMapDefaultEntryHolder.defaultEntry);
-        }
-        return cardLimitsChangeMap_;
-      }
-      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo>
-      internalGetMutableCardLimitsChangeMap() {
-        onChanged();;
-        if (cardLimitsChangeMap_ == null) {
-          cardLimitsChangeMap_ = com.google.protobuf.MapField.newMapField(
-              CardLimitsChangeMapDefaultEntryHolder.defaultEntry);
-        }
-        if (!cardLimitsChangeMap_.isMutable()) {
-          cardLimitsChangeMap_ = cardLimitsChangeMap_.copy();
-        }
-        return cardLimitsChangeMap_;
+      private java.util.List<emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo> cardLimitsChangeMap_ =
+        java.util.Collections.emptyList();
+      private void ensureCardLimitsChangeMapIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          cardLimitsChangeMap_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo>(cardLimitsChangeMap_);
+          bitField0_ |= 0x00000001;
+         }
       }
 
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo, emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo.Builder, emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfoOrBuilder> cardLimitsChangeMapBuilder_;
+
+      /**
+       * <code>repeated .GCGCardSkillLimitsInfo card_limits_change_map = 5;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo> getCardLimitsChangeMapList() {
+        if (cardLimitsChangeMapBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(cardLimitsChangeMap_);
+        } else {
+          return cardLimitsChangeMapBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .GCGCardSkillLimitsInfo card_limits_change_map = 5;</code>
+       */
       public int getCardLimitsChangeMapCount() {
-        return internalGetCardLimitsChangeMap().getMap().size();
-      }
-      /**
-       * <code>map&lt;uint32, .GCGCardSkillLimitsInfo&gt; card_limits_change_map = 7;</code>
-       */
-
-      @java.lang.Override
-      public boolean containsCardLimitsChangeMap(
-          int key) {
-        
-        return internalGetCardLimitsChangeMap().getMap().containsKey(key);
-      }
-      /**
-       * Use {@link #getCardLimitsChangeMapMap()} instead.
-       */
-      @java.lang.Override
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo> getCardLimitsChangeMap() {
-        return getCardLimitsChangeMapMap();
-      }
-      /**
-       * <code>map&lt;uint32, .GCGCardSkillLimitsInfo&gt; card_limits_change_map = 7;</code>
-       */
-      @java.lang.Override
-
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo> getCardLimitsChangeMapMap() {
-        return internalGetCardLimitsChangeMap().getMap();
-      }
-      /**
-       * <code>map&lt;uint32, .GCGCardSkillLimitsInfo&gt; card_limits_change_map = 7;</code>
-       */
-      @java.lang.Override
-
-      public emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo getCardLimitsChangeMapOrDefault(
-          int key,
-          emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo defaultValue) {
-        
-        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo> map =
-            internalGetCardLimitsChangeMap().getMap();
-        return map.containsKey(key) ? map.get(key) : defaultValue;
-      }
-      /**
-       * <code>map&lt;uint32, .GCGCardSkillLimitsInfo&gt; card_limits_change_map = 7;</code>
-       */
-      @java.lang.Override
-
-      public emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo getCardLimitsChangeMapOrThrow(
-          int key) {
-        
-        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo> map =
-            internalGetCardLimitsChangeMap().getMap();
-        if (!map.containsKey(key)) {
-          throw new java.lang.IllegalArgumentException();
+        if (cardLimitsChangeMapBuilder_ == null) {
+          return cardLimitsChangeMap_.size();
+        } else {
+          return cardLimitsChangeMapBuilder_.getCount();
         }
-        return map.get(key);
       }
-
+      /**
+       * <code>repeated .GCGCardSkillLimitsInfo card_limits_change_map = 5;</code>
+       */
+      public emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo getCardLimitsChangeMap(int index) {
+        if (cardLimitsChangeMapBuilder_ == null) {
+          return cardLimitsChangeMap_.get(index);
+        } else {
+          return cardLimitsChangeMapBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .GCGCardSkillLimitsInfo card_limits_change_map = 5;</code>
+       */
+      public Builder setCardLimitsChangeMap(
+          int index, emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo value) {
+        if (cardLimitsChangeMapBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureCardLimitsChangeMapIsMutable();
+          cardLimitsChangeMap_.set(index, value);
+          onChanged();
+        } else {
+          cardLimitsChangeMapBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGCardSkillLimitsInfo card_limits_change_map = 5;</code>
+       */
+      public Builder setCardLimitsChangeMap(
+          int index, emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo.Builder builderForValue) {
+        if (cardLimitsChangeMapBuilder_ == null) {
+          ensureCardLimitsChangeMapIsMutable();
+          cardLimitsChangeMap_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          cardLimitsChangeMapBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGCardSkillLimitsInfo card_limits_change_map = 5;</code>
+       */
+      public Builder addCardLimitsChangeMap(emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo value) {
+        if (cardLimitsChangeMapBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureCardLimitsChangeMapIsMutable();
+          cardLimitsChangeMap_.add(value);
+          onChanged();
+        } else {
+          cardLimitsChangeMapBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGCardSkillLimitsInfo card_limits_change_map = 5;</code>
+       */
+      public Builder addCardLimitsChangeMap(
+          int index, emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo value) {
+        if (cardLimitsChangeMapBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureCardLimitsChangeMapIsMutable();
+          cardLimitsChangeMap_.add(index, value);
+          onChanged();
+        } else {
+          cardLimitsChangeMapBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGCardSkillLimitsInfo card_limits_change_map = 5;</code>
+       */
+      public Builder addCardLimitsChangeMap(
+          emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo.Builder builderForValue) {
+        if (cardLimitsChangeMapBuilder_ == null) {
+          ensureCardLimitsChangeMapIsMutable();
+          cardLimitsChangeMap_.add(builderForValue.build());
+          onChanged();
+        } else {
+          cardLimitsChangeMapBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGCardSkillLimitsInfo card_limits_change_map = 5;</code>
+       */
+      public Builder addCardLimitsChangeMap(
+          int index, emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo.Builder builderForValue) {
+        if (cardLimitsChangeMapBuilder_ == null) {
+          ensureCardLimitsChangeMapIsMutable();
+          cardLimitsChangeMap_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          cardLimitsChangeMapBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGCardSkillLimitsInfo card_limits_change_map = 5;</code>
+       */
+      public Builder addAllCardLimitsChangeMap(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo> values) {
+        if (cardLimitsChangeMapBuilder_ == null) {
+          ensureCardLimitsChangeMapIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, cardLimitsChangeMap_);
+          onChanged();
+        } else {
+          cardLimitsChangeMapBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GCGCardSkillLimitsInfo card_limits_change_map = 5;</code>
+       */
       public Builder clearCardLimitsChangeMap() {
-        internalGetMutableCardLimitsChangeMap().getMutableMap()
-            .clear();
+        if (cardLimitsChangeMapBuilder_ == null) {
+          cardLimitsChangeMap_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          cardLimitsChangeMapBuilder_.clear();
+        }
         return this;
       }
       /**
-       * <code>map&lt;uint32, .GCGCardSkillLimitsInfo&gt; card_limits_change_map = 7;</code>
+       * <code>repeated .GCGCardSkillLimitsInfo card_limits_change_map = 5;</code>
        */
-
-      public Builder removeCardLimitsChangeMap(
-          int key) {
-        
-        internalGetMutableCardLimitsChangeMap().getMutableMap()
-            .remove(key);
+      public Builder removeCardLimitsChangeMap(int index) {
+        if (cardLimitsChangeMapBuilder_ == null) {
+          ensureCardLimitsChangeMapIsMutable();
+          cardLimitsChangeMap_.remove(index);
+          onChanged();
+        } else {
+          cardLimitsChangeMapBuilder_.remove(index);
+        }
         return this;
       }
       /**
-       * Use alternate mutation accessors instead.
+       * <code>repeated .GCGCardSkillLimitsInfo card_limits_change_map = 5;</code>
        */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo>
-      getMutableCardLimitsChangeMap() {
-        return internalGetMutableCardLimitsChangeMap().getMutableMap();
+      public emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo.Builder getCardLimitsChangeMapBuilder(
+          int index) {
+        return getCardLimitsChangeMapFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>map&lt;uint32, .GCGCardSkillLimitsInfo&gt; card_limits_change_map = 7;</code>
+       * <code>repeated .GCGCardSkillLimitsInfo card_limits_change_map = 5;</code>
        */
-      public Builder putCardLimitsChangeMap(
-          int key,
-          emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo value) {
-        
-        if (value == null) { throw new java.lang.NullPointerException(); }
-        internalGetMutableCardLimitsChangeMap().getMutableMap()
-            .put(key, value);
-        return this;
+      public emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfoOrBuilder getCardLimitsChangeMapOrBuilder(
+          int index) {
+        if (cardLimitsChangeMapBuilder_ == null) {
+          return cardLimitsChangeMap_.get(index);  } else {
+          return cardLimitsChangeMapBuilder_.getMessageOrBuilder(index);
+        }
       }
       /**
-       * <code>map&lt;uint32, .GCGCardSkillLimitsInfo&gt; card_limits_change_map = 7;</code>
+       * <code>repeated .GCGCardSkillLimitsInfo card_limits_change_map = 5;</code>
        */
-
-      public Builder putAllCardLimitsChangeMap(
-          java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo> values) {
-        internalGetMutableCardLimitsChangeMap().getMutableMap()
-            .putAll(values);
-        return this;
+      public java.util.List<? extends emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfoOrBuilder> 
+           getCardLimitsChangeMapOrBuilderList() {
+        if (cardLimitsChangeMapBuilder_ != null) {
+          return cardLimitsChangeMapBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(cardLimitsChangeMap_);
+        }
+      }
+      /**
+       * <code>repeated .GCGCardSkillLimitsInfo card_limits_change_map = 5;</code>
+       */
+      public emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo.Builder addCardLimitsChangeMapBuilder() {
+        return getCardLimitsChangeMapFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .GCGCardSkillLimitsInfo card_limits_change_map = 5;</code>
+       */
+      public emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo.Builder addCardLimitsChangeMapBuilder(
+          int index) {
+        return getCardLimitsChangeMapFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .GCGCardSkillLimitsInfo card_limits_change_map = 5;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo.Builder> 
+           getCardLimitsChangeMapBuilderList() {
+        return getCardLimitsChangeMapFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo, emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo.Builder, emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfoOrBuilder> 
+          getCardLimitsChangeMapFieldBuilder() {
+        if (cardLimitsChangeMapBuilder_ == null) {
+          cardLimitsChangeMapBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo, emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfo.Builder, emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.GCGCardSkillLimitsInfoOrBuilder>(
+                  cardLimitsChangeMap_,
+                  ((bitField0_ & 0x00000001) != 0),
+                  getParentForChildren(),
+                  isClean());
+          cardLimitsChangeMap_ = null;
+        }
+        return cardLimitsChangeMapBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -765,11 +820,6 @@ public final class GCGMsgSkillLimitsChangeOuterClass {
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_GCGMsgSkillLimitsChange_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_GCGMsgSkillLimitsChange_CardLimitsChangeMapEntry_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_GCGMsgSkillLimitsChange_CardLimitsChangeMapEntry_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -780,13 +830,10 @@ public final class GCGMsgSkillLimitsChangeOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035GCGMsgSkillLimitsChange.proto\032\034GCGCard" +
-      "SkillLimitsInfo.proto\"\301\001\n\027GCGMsgSkillLim" +
-      "itsChange\022Q\n\026card_limits_change_map\030\007 \003(" +
-      "\01321.GCGMsgSkillLimitsChange.CardLimitsCh" +
-      "angeMapEntry\032S\n\030CardLimitsChangeMapEntry" +
-      "\022\013\n\003key\030\001 \001(\r\022&\n\005value\030\002 \001(\0132\027.GCGCardSk" +
-      "illLimitsInfo:\0028\001B\033\n\031emu.grasscutter.net" +
-      ".protob\006proto3"
+      "SkillLimitsInfo.proto\"R\n\027GCGMsgSkillLimi" +
+      "tsChange\0227\n\026card_limits_change_map\030\005 \003(\013" +
+      "2\027.GCGCardSkillLimitsInfoB\033\n\031emu.grasscu" +
+      "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -799,12 +846,6 @@ public final class GCGMsgSkillLimitsChangeOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGMsgSkillLimitsChange_descriptor,
         new java.lang.String[] { "CardLimitsChangeMap", });
-    internal_static_GCGMsgSkillLimitsChange_CardLimitsChangeMapEntry_descriptor =
-      internal_static_GCGMsgSkillLimitsChange_descriptor.getNestedTypes().get(0);
-    internal_static_GCGMsgSkillLimitsChange_CardLimitsChangeMapEntry_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_GCGMsgSkillLimitsChange_CardLimitsChangeMapEntry_descriptor,
-        new java.lang.String[] { "Key", "Value", });
     emu.grasscutter.net.proto.GCGCardSkillLimitsInfoOuterClass.getDescriptor();
   }
 

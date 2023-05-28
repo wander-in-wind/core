@@ -19,21 +19,21 @@ public final class BlessingAcceptGivePicReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 uid = 13;</code>
+     * <code>uint32 uid = 2;</code>
      * @return The uid.
      */
     int getUid();
 
     /**
-     * <code>uint32 index = 11;</code>
+     * <code>uint32 index = 15;</code>
      * @return The index.
      */
     int getIndex();
   }
   /**
    * <pre>
-   * Name: IIAGEJNNINA
-   * CmdId: 2091
+   * CmdId: 2132
+   * Obf: OCOOFMPCFPB
    * </pre>
    *
    * Protobuf type {@code BlessingAcceptGivePicReq}
@@ -80,14 +80,14 @@ public final class BlessingAcceptGivePicReqOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
-
-              index_ = input.readUInt32();
-              break;
-            }
-            case 104: {
+            case 16: {
 
               uid_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              index_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,10 +122,10 @@ public final class BlessingAcceptGivePicReqOuterClass {
               emu.grasscutter.net.proto.BlessingAcceptGivePicReqOuterClass.BlessingAcceptGivePicReq.class, emu.grasscutter.net.proto.BlessingAcceptGivePicReqOuterClass.BlessingAcceptGivePicReq.Builder.class);
     }
 
-    public static final int UID_FIELD_NUMBER = 13;
+    public static final int UID_FIELD_NUMBER = 2;
     private int uid_;
     /**
-     * <code>uint32 uid = 13;</code>
+     * <code>uint32 uid = 2;</code>
      * @return The uid.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class BlessingAcceptGivePicReqOuterClass {
       return uid_;
     }
 
-    public static final int INDEX_FIELD_NUMBER = 11;
+    public static final int INDEX_FIELD_NUMBER = 15;
     private int index_;
     /**
-     * <code>uint32 index = 11;</code>
+     * <code>uint32 index = 15;</code>
      * @return The index.
      */
     @java.lang.Override
@@ -158,11 +158,11 @@ public final class BlessingAcceptGivePicReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (index_ != 0) {
-        output.writeUInt32(11, index_);
-      }
       if (uid_ != 0) {
-        output.writeUInt32(13, uid_);
+        output.writeUInt32(2, uid_);
+      }
+      if (index_ != 0) {
+        output.writeUInt32(15, index_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class BlessingAcceptGivePicReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (index_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, index_);
-      }
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, uid_);
+          .computeUInt32Size(2, uid_);
+      }
+      if (index_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, index_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class BlessingAcceptGivePicReqOuterClass {
     }
     /**
      * <pre>
-     * Name: IIAGEJNNINA
-     * CmdId: 2091
+     * CmdId: 2132
+     * Obf: OCOOFMPCFPB
      * </pre>
      *
      * Protobuf type {@code BlessingAcceptGivePicReq}
@@ -470,7 +470,7 @@ public final class BlessingAcceptGivePicReqOuterClass {
 
       private int uid_ ;
       /**
-       * <code>uint32 uid = 13;</code>
+       * <code>uint32 uid = 2;</code>
        * @return The uid.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class BlessingAcceptGivePicReqOuterClass {
         return uid_;
       }
       /**
-       * <code>uint32 uid = 13;</code>
+       * <code>uint32 uid = 2;</code>
        * @param value The uid to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class BlessingAcceptGivePicReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 uid = 13;</code>
+       * <code>uint32 uid = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearUid() {
@@ -501,7 +501,7 @@ public final class BlessingAcceptGivePicReqOuterClass {
 
       private int index_ ;
       /**
-       * <code>uint32 index = 11;</code>
+       * <code>uint32 index = 15;</code>
        * @return The index.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class BlessingAcceptGivePicReqOuterClass {
         return index_;
       }
       /**
-       * <code>uint32 index = 11;</code>
+       * <code>uint32 index = 15;</code>
        * @param value The index to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class BlessingAcceptGivePicReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 index = 11;</code>
+       * <code>uint32 index = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearIndex() {
@@ -597,8 +597,8 @@ public final class BlessingAcceptGivePicReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036BlessingAcceptGivePicReq.proto\"6\n\030Bles" +
-      "singAcceptGivePicReq\022\013\n\003uid\030\r \001(\r\022\r\n\005ind" +
-      "ex\030\013 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
+      "singAcceptGivePicReq\022\013\n\003uid\030\002 \001(\r\022\r\n\005ind" +
+      "ex\030\017 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

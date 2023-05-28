@@ -19,11 +19,11 @@ public final class GCGMsgPVEIntentionInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint32, .GCGMsgPVEIntention&gt; intention_map = 4;</code>
+     * <code>map&lt;uint32, .GCGMsgPVEIntention&gt; intention_map = 7;</code>
      */
     int getIntentionMapCount();
     /**
-     * <code>map&lt;uint32, .GCGMsgPVEIntention&gt; intention_map = 4;</code>
+     * <code>map&lt;uint32, .GCGMsgPVEIntention&gt; intention_map = 7;</code>
      */
     boolean containsIntentionMap(
         int key);
@@ -34,19 +34,19 @@ public final class GCGMsgPVEIntentionInfoOuterClass {
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntention>
     getIntentionMap();
     /**
-     * <code>map&lt;uint32, .GCGMsgPVEIntention&gt; intention_map = 4;</code>
+     * <code>map&lt;uint32, .GCGMsgPVEIntention&gt; intention_map = 7;</code>
      */
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntention>
     getIntentionMapMap();
     /**
-     * <code>map&lt;uint32, .GCGMsgPVEIntention&gt; intention_map = 4;</code>
+     * <code>map&lt;uint32, .GCGMsgPVEIntention&gt; intention_map = 7;</code>
      */
 
     emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntention getIntentionMapOrDefault(
         int key,
         emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntention defaultValue);
     /**
-     * <code>map&lt;uint32, .GCGMsgPVEIntention&gt; intention_map = 4;</code>
+     * <code>map&lt;uint32, .GCGMsgPVEIntention&gt; intention_map = 7;</code>
      */
 
     emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntention getIntentionMapOrThrow(
@@ -54,7 +54,7 @@ public final class GCGMsgPVEIntentionInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: DBNHODFFHMG
+   * Obf: BGGKCMPMNPA
    * </pre>
    *
    * Protobuf type {@code GCGMsgPVEIntentionInfo}
@@ -102,7 +102,7 @@ public final class GCGMsgPVEIntentionInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 34: {
+            case 58: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 intentionMap_ = com.google.protobuf.MapField.newMapField(
                     IntentionMapDefaultEntryHolder.defaultEntry);
@@ -144,7 +144,7 @@ public final class GCGMsgPVEIntentionInfoOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 4:
+        case 7:
           return internalGetIntentionMap();
         default:
           throw new RuntimeException(
@@ -159,7 +159,7 @@ public final class GCGMsgPVEIntentionInfoOuterClass {
               emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo.class, emu.grasscutter.net.proto.GCGMsgPVEIntentionInfoOuterClass.GCGMsgPVEIntentionInfo.Builder.class);
     }
 
-    public static final int INTENTION_MAP_FIELD_NUMBER = 4;
+    public static final int INTENTION_MAP_FIELD_NUMBER = 7;
     private static final class IntentionMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, emu.grasscutter.net.proto.GCGMsgPVEIntentionOuterClass.GCGMsgPVEIntention> defaultEntry =
@@ -186,7 +186,7 @@ public final class GCGMsgPVEIntentionInfoOuterClass {
       return internalGetIntentionMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, .GCGMsgPVEIntention&gt; intention_map = 4;</code>
+     * <code>map&lt;uint32, .GCGMsgPVEIntention&gt; intention_map = 7;</code>
      */
 
     @java.lang.Override
@@ -204,7 +204,7 @@ public final class GCGMsgPVEIntentionInfoOuterClass {
       return getIntentionMapMap();
     }
     /**
-     * <code>map&lt;uint32, .GCGMsgPVEIntention&gt; intention_map = 4;</code>
+     * <code>map&lt;uint32, .GCGMsgPVEIntention&gt; intention_map = 7;</code>
      */
     @java.lang.Override
 
@@ -212,7 +212,7 @@ public final class GCGMsgPVEIntentionInfoOuterClass {
       return internalGetIntentionMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, .GCGMsgPVEIntention&gt; intention_map = 4;</code>
+     * <code>map&lt;uint32, .GCGMsgPVEIntention&gt; intention_map = 7;</code>
      */
     @java.lang.Override
 
@@ -225,7 +225,7 @@ public final class GCGMsgPVEIntentionInfoOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, .GCGMsgPVEIntention&gt; intention_map = 4;</code>
+     * <code>map&lt;uint32, .GCGMsgPVEIntention&gt; intention_map = 7;</code>
      */
     @java.lang.Override
 
@@ -259,7 +259,7 @@ public final class GCGMsgPVEIntentionInfoOuterClass {
           output,
           internalGetIntentionMap(),
           IntentionMapDefaultEntryHolder.defaultEntry,
-          4);
+          7);
       unknownFields.writeTo(output);
     }
 
@@ -277,7 +277,7 @@ public final class GCGMsgPVEIntentionInfoOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(4, intentionMap__);
+            .computeMessageSize(7, intentionMap__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -408,7 +408,7 @@ public final class GCGMsgPVEIntentionInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: DBNHODFFHMG
+     * Obf: BGGKCMPMNPA
      * </pre>
      *
      * Protobuf type {@code GCGMsgPVEIntentionInfo}
@@ -426,7 +426,7 @@ public final class GCGMsgPVEIntentionInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 4:
+          case 7:
             return internalGetIntentionMap();
           default:
             throw new RuntimeException(
@@ -437,7 +437,7 @@ public final class GCGMsgPVEIntentionInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 4:
+          case 7:
             return internalGetMutableIntentionMap();
           default:
             throw new RuntimeException(
@@ -607,7 +607,7 @@ public final class GCGMsgPVEIntentionInfoOuterClass {
         return internalGetIntentionMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, .GCGMsgPVEIntention&gt; intention_map = 4;</code>
+       * <code>map&lt;uint32, .GCGMsgPVEIntention&gt; intention_map = 7;</code>
        */
 
       @java.lang.Override
@@ -625,7 +625,7 @@ public final class GCGMsgPVEIntentionInfoOuterClass {
         return getIntentionMapMap();
       }
       /**
-       * <code>map&lt;uint32, .GCGMsgPVEIntention&gt; intention_map = 4;</code>
+       * <code>map&lt;uint32, .GCGMsgPVEIntention&gt; intention_map = 7;</code>
        */
       @java.lang.Override
 
@@ -633,7 +633,7 @@ public final class GCGMsgPVEIntentionInfoOuterClass {
         return internalGetIntentionMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, .GCGMsgPVEIntention&gt; intention_map = 4;</code>
+       * <code>map&lt;uint32, .GCGMsgPVEIntention&gt; intention_map = 7;</code>
        */
       @java.lang.Override
 
@@ -646,7 +646,7 @@ public final class GCGMsgPVEIntentionInfoOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, .GCGMsgPVEIntention&gt; intention_map = 4;</code>
+       * <code>map&lt;uint32, .GCGMsgPVEIntention&gt; intention_map = 7;</code>
        */
       @java.lang.Override
 
@@ -667,7 +667,7 @@ public final class GCGMsgPVEIntentionInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .GCGMsgPVEIntention&gt; intention_map = 4;</code>
+       * <code>map&lt;uint32, .GCGMsgPVEIntention&gt; intention_map = 7;</code>
        */
 
       public Builder removeIntentionMap(
@@ -686,7 +686,7 @@ public final class GCGMsgPVEIntentionInfoOuterClass {
         return internalGetMutableIntentionMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, .GCGMsgPVEIntention&gt; intention_map = 4;</code>
+       * <code>map&lt;uint32, .GCGMsgPVEIntention&gt; intention_map = 7;</code>
        */
       public Builder putIntentionMap(
           int key,
@@ -698,7 +698,7 @@ public final class GCGMsgPVEIntentionInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .GCGMsgPVEIntention&gt; intention_map = 4;</code>
+       * <code>map&lt;uint32, .GCGMsgPVEIntention&gt; intention_map = 7;</code>
        */
 
       public Builder putAllIntentionMap(
@@ -781,7 +781,7 @@ public final class GCGMsgPVEIntentionInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\034GCGMsgPVEIntentionInfo.proto\032\030GCGMsgPV" +
       "EIntention.proto\"\244\001\n\026GCGMsgPVEIntentionI" +
-      "nfo\022@\n\rintention_map\030\004 \003(\0132).GCGMsgPVEIn" +
+      "nfo\022@\n\rintention_map\030\007 \003(\0132).GCGMsgPVEIn" +
       "tentionInfo.IntentionMapEntry\032H\n\021Intenti" +
       "onMapEntry\022\013\n\003key\030\001 \001(\r\022\"\n\005value\030\002 \001(\0132\023" +
       ".GCGMsgPVEIntention:\0028\001B\033\n\031emu.grasscutt" +

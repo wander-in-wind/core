@@ -19,30 +19,30 @@ public final class GetReunionSignInInfoRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.ReunionSignInInfo sign_in_info = 8;</code>
+     * <code>int32 retcode = 8;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
+
+    /**
+     * <code>.ReunionSignInInfo sign_in_info = 5;</code>
      * @return Whether the signInInfo field is set.
      */
     boolean hasSignInInfo();
     /**
-     * <code>.ReunionSignInInfo sign_in_info = 8;</code>
+     * <code>.ReunionSignInInfo sign_in_info = 5;</code>
      * @return The signInInfo.
      */
     emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfo getSignInInfo();
     /**
-     * <code>.ReunionSignInInfo sign_in_info = 8;</code>
+     * <code>.ReunionSignInInfo sign_in_info = 5;</code>
      */
     emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfoOrBuilder getSignInInfoOrBuilder();
-
-    /**
-     * <code>int32 retcode = 10;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
   }
   /**
    * <pre>
-   * Name: JGPECFNNFJP
-   * CmdId: 5065
+   * CmdId: 5089
+   * Obf: DFELNPBAODE
    * </pre>
    *
    * Protobuf type {@code GetReunionSignInInfoRsp}
@@ -89,7 +89,7 @@ public final class GetReunionSignInInfoRspOuterClass {
             case 0:
               done = true;
               break;
-            case 66: {
+            case 42: {
               emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfo.Builder subBuilder = null;
               if (signInInfo_ != null) {
                 subBuilder = signInInfo_.toBuilder();
@@ -102,7 +102,7 @@ public final class GetReunionSignInInfoRspOuterClass {
 
               break;
             }
-            case 80: {
+            case 64: {
 
               retcode_ = input.readInt32();
               break;
@@ -139,10 +139,21 @@ public final class GetReunionSignInInfoRspOuterClass {
               emu.grasscutter.net.proto.GetReunionSignInInfoRspOuterClass.GetReunionSignInInfoRsp.class, emu.grasscutter.net.proto.GetReunionSignInInfoRspOuterClass.GetReunionSignInInfoRsp.Builder.class);
     }
 
-    public static final int SIGN_IN_INFO_FIELD_NUMBER = 8;
+    public static final int RETCODE_FIELD_NUMBER = 8;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 8;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
+    public static final int SIGN_IN_INFO_FIELD_NUMBER = 5;
     private emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfo signInInfo_;
     /**
-     * <code>.ReunionSignInInfo sign_in_info = 8;</code>
+     * <code>.ReunionSignInInfo sign_in_info = 5;</code>
      * @return Whether the signInInfo field is set.
      */
     @java.lang.Override
@@ -150,7 +161,7 @@ public final class GetReunionSignInInfoRspOuterClass {
       return signInInfo_ != null;
     }
     /**
-     * <code>.ReunionSignInInfo sign_in_info = 8;</code>
+     * <code>.ReunionSignInInfo sign_in_info = 5;</code>
      * @return The signInInfo.
      */
     @java.lang.Override
@@ -158,22 +169,11 @@ public final class GetReunionSignInInfoRspOuterClass {
       return signInInfo_ == null ? emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfo.getDefaultInstance() : signInInfo_;
     }
     /**
-     * <code>.ReunionSignInInfo sign_in_info = 8;</code>
+     * <code>.ReunionSignInInfo sign_in_info = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfoOrBuilder getSignInInfoOrBuilder() {
       return getSignInInfo();
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 10;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 10;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -191,10 +191,10 @@ public final class GetReunionSignInInfoRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (signInInfo_ != null) {
-        output.writeMessage(8, getSignInInfo());
+        output.writeMessage(5, getSignInInfo());
       }
       if (retcode_ != 0) {
-        output.writeInt32(10, retcode_);
+        output.writeInt32(8, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -207,11 +207,11 @@ public final class GetReunionSignInInfoRspOuterClass {
       size = 0;
       if (signInInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, getSignInInfo());
+          .computeMessageSize(5, getSignInInfo());
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(10, retcode_);
+          .computeInt32Size(8, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -228,13 +228,13 @@ public final class GetReunionSignInInfoRspOuterClass {
       }
       emu.grasscutter.net.proto.GetReunionSignInInfoRspOuterClass.GetReunionSignInInfoRsp other = (emu.grasscutter.net.proto.GetReunionSignInInfoRspOuterClass.GetReunionSignInInfoRsp) obj;
 
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (hasSignInInfo() != other.hasSignInInfo()) return false;
       if (hasSignInInfo()) {
         if (!getSignInInfo()
             .equals(other.getSignInInfo())) return false;
       }
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -246,12 +246,12 @@ public final class GetReunionSignInInfoRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       if (hasSignInInfo()) {
         hash = (37 * hash) + SIGN_IN_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getSignInInfo().hashCode();
       }
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -349,8 +349,8 @@ public final class GetReunionSignInInfoRspOuterClass {
     }
     /**
      * <pre>
-     * Name: JGPECFNNFJP
-     * CmdId: 5065
+     * CmdId: 5089
+     * Obf: DFELNPBAODE
      * </pre>
      *
      * Protobuf type {@code GetReunionSignInInfoRsp}
@@ -390,14 +390,14 @@ public final class GetReunionSignInInfoRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        retcode_ = 0;
+
         if (signInInfoBuilder_ == null) {
           signInInfo_ = null;
         } else {
           signInInfo_ = null;
           signInInfoBuilder_ = null;
         }
-        retcode_ = 0;
-
         return this;
       }
 
@@ -424,12 +424,12 @@ public final class GetReunionSignInInfoRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GetReunionSignInInfoRspOuterClass.GetReunionSignInInfoRsp buildPartial() {
         emu.grasscutter.net.proto.GetReunionSignInInfoRspOuterClass.GetReunionSignInInfoRsp result = new emu.grasscutter.net.proto.GetReunionSignInInfoRspOuterClass.GetReunionSignInInfoRsp(this);
+        result.retcode_ = retcode_;
         if (signInInfoBuilder_ == null) {
           result.signInInfo_ = signInInfo_;
         } else {
           result.signInInfo_ = signInInfoBuilder_.build();
         }
-        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -478,11 +478,11 @@ public final class GetReunionSignInInfoRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GetReunionSignInInfoRspOuterClass.GetReunionSignInInfoRsp other) {
         if (other == emu.grasscutter.net.proto.GetReunionSignInInfoRspOuterClass.GetReunionSignInInfoRsp.getDefaultInstance()) return this;
-        if (other.hasSignInInfo()) {
-          mergeSignInInfo(other.getSignInInfo());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.hasSignInInfo()) {
+          mergeSignInInfo(other.getSignInInfo());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -513,18 +513,49 @@ public final class GetReunionSignInInfoRspOuterClass {
         return this;
       }
 
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 8;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 8;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
       private emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfo signInInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfo, emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfo.Builder, emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfoOrBuilder> signInInfoBuilder_;
       /**
-       * <code>.ReunionSignInInfo sign_in_info = 8;</code>
+       * <code>.ReunionSignInInfo sign_in_info = 5;</code>
        * @return Whether the signInInfo field is set.
        */
       public boolean hasSignInInfo() {
         return signInInfoBuilder_ != null || signInInfo_ != null;
       }
       /**
-       * <code>.ReunionSignInInfo sign_in_info = 8;</code>
+       * <code>.ReunionSignInInfo sign_in_info = 5;</code>
        * @return The signInInfo.
        */
       public emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfo getSignInInfo() {
@@ -535,7 +566,7 @@ public final class GetReunionSignInInfoRspOuterClass {
         }
       }
       /**
-       * <code>.ReunionSignInInfo sign_in_info = 8;</code>
+       * <code>.ReunionSignInInfo sign_in_info = 5;</code>
        */
       public Builder setSignInInfo(emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfo value) {
         if (signInInfoBuilder_ == null) {
@@ -551,7 +582,7 @@ public final class GetReunionSignInInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>.ReunionSignInInfo sign_in_info = 8;</code>
+       * <code>.ReunionSignInInfo sign_in_info = 5;</code>
        */
       public Builder setSignInInfo(
           emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfo.Builder builderForValue) {
@@ -565,7 +596,7 @@ public final class GetReunionSignInInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>.ReunionSignInInfo sign_in_info = 8;</code>
+       * <code>.ReunionSignInInfo sign_in_info = 5;</code>
        */
       public Builder mergeSignInInfo(emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfo value) {
         if (signInInfoBuilder_ == null) {
@@ -583,7 +614,7 @@ public final class GetReunionSignInInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>.ReunionSignInInfo sign_in_info = 8;</code>
+       * <code>.ReunionSignInInfo sign_in_info = 5;</code>
        */
       public Builder clearSignInInfo() {
         if (signInInfoBuilder_ == null) {
@@ -597,7 +628,7 @@ public final class GetReunionSignInInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>.ReunionSignInInfo sign_in_info = 8;</code>
+       * <code>.ReunionSignInInfo sign_in_info = 5;</code>
        */
       public emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfo.Builder getSignInInfoBuilder() {
         
@@ -605,7 +636,7 @@ public final class GetReunionSignInInfoRspOuterClass {
         return getSignInInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.ReunionSignInInfo sign_in_info = 8;</code>
+       * <code>.ReunionSignInInfo sign_in_info = 5;</code>
        */
       public emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfoOrBuilder getSignInInfoOrBuilder() {
         if (signInInfoBuilder_ != null) {
@@ -616,7 +647,7 @@ public final class GetReunionSignInInfoRspOuterClass {
         }
       }
       /**
-       * <code>.ReunionSignInInfo sign_in_info = 8;</code>
+       * <code>.ReunionSignInInfo sign_in_info = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfo, emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfo.Builder, emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.ReunionSignInInfoOrBuilder> 
@@ -630,37 +661,6 @@ public final class GetReunionSignInInfoRspOuterClass {
           signInInfo_ = null;
         }
         return signInInfoBuilder_;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 10;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 10;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -731,8 +731,8 @@ public final class GetReunionSignInInfoRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\035GetReunionSignInInfoRsp.proto\032\027Reunion" +
       "SignInInfo.proto\"T\n\027GetReunionSignInInfo" +
-      "Rsp\022(\n\014sign_in_info\030\010 \001(\0132\022.ReunionSignI" +
-      "nInfo\022\017\n\007retcode\030\n \001(\005B\033\n\031emu.grasscutte" +
+      "Rsp\022\017\n\007retcode\030\010 \001(\005\022(\n\014sign_in_info\030\005 \001" +
+      "(\0132\022.ReunionSignInInfoB\033\n\031emu.grasscutte" +
       "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -745,7 +745,7 @@ public final class GetReunionSignInInfoRspOuterClass {
     internal_static_GetReunionSignInInfoRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetReunionSignInInfoRsp_descriptor,
-        new java.lang.String[] { "SignInInfo", "Retcode", });
+        new java.lang.String[] { "Retcode", "SignInInfo", });
     emu.grasscutter.net.proto.ReunionSignInInfoOuterClass.getDescriptor();
   }
 

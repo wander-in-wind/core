@@ -45,8 +45,8 @@ public final class UpdatePS4BlockListReqOuterClass {
   }
   /**
    * <pre>
-   * Name: DCIHAMDFDGL
-   * CmdId: 4018
+   * CmdId: 4080
+   * Obf: OEMJDMOKIGJ
    * </pre>
    *
    * Protobuf type {@code UpdatePS4BlockListReq}
@@ -337,8 +337,8 @@ public final class UpdatePS4BlockListReqOuterClass {
     }
     /**
      * <pre>
-     * Name: DCIHAMDFDGL
-     * CmdId: 4018
+     * CmdId: 4080
+     * Obf: OEMJDMOKIGJ
      * </pre>
      *
      * Protobuf type {@code UpdatePS4BlockListReq}

@@ -19,11 +19,11 @@ public final class RefreshBackgroundAvatarRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint64, uint32&gt; hp_full_time_map = 8;</code>
+     * <code>map&lt;uint64, uint32&gt; hp_full_time_map = 1;</code>
      */
     int getHpFullTimeMapCount();
     /**
-     * <code>map&lt;uint64, uint32&gt; hp_full_time_map = 8;</code>
+     * <code>map&lt;uint64, uint32&gt; hp_full_time_map = 1;</code>
      */
     boolean containsHpFullTimeMap(
         long key);
@@ -34,34 +34,34 @@ public final class RefreshBackgroundAvatarRspOuterClass {
     java.util.Map<java.lang.Long, java.lang.Integer>
     getHpFullTimeMap();
     /**
-     * <code>map&lt;uint64, uint32&gt; hp_full_time_map = 8;</code>
+     * <code>map&lt;uint64, uint32&gt; hp_full_time_map = 1;</code>
      */
     java.util.Map<java.lang.Long, java.lang.Integer>
     getHpFullTimeMapMap();
     /**
-     * <code>map&lt;uint64, uint32&gt; hp_full_time_map = 8;</code>
+     * <code>map&lt;uint64, uint32&gt; hp_full_time_map = 1;</code>
      */
 
     int getHpFullTimeMapOrDefault(
         long key,
         int defaultValue);
     /**
-     * <code>map&lt;uint64, uint32&gt; hp_full_time_map = 8;</code>
+     * <code>map&lt;uint64, uint32&gt; hp_full_time_map = 1;</code>
      */
 
     int getHpFullTimeMapOrThrow(
         long key);
 
     /**
-     * <code>int32 retcode = 12;</code>
+     * <code>int32 retcode = 3;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * Name: CKMLMNALECC
-   * CmdId: 1786
+   * CmdId: 1657
+   * Obf: LKDCCAAPAMM
    * </pre>
    *
    * Protobuf type {@code RefreshBackgroundAvatarRsp}
@@ -109,7 +109,7 @@ public final class RefreshBackgroundAvatarRspOuterClass {
             case 0:
               done = true;
               break;
-            case 66: {
+            case 10: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 hpFullTimeMap_ = com.google.protobuf.MapField.newMapField(
                     HpFullTimeMapDefaultEntryHolder.defaultEntry);
@@ -122,7 +122,7 @@ public final class RefreshBackgroundAvatarRspOuterClass {
                   hpFullTimeMap__.getKey(), hpFullTimeMap__.getValue());
               break;
             }
-            case 96: {
+            case 24: {
 
               retcode_ = input.readInt32();
               break;
@@ -156,7 +156,7 @@ public final class RefreshBackgroundAvatarRspOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 8:
+        case 1:
           return internalGetHpFullTimeMap();
         default:
           throw new RuntimeException(
@@ -171,7 +171,7 @@ public final class RefreshBackgroundAvatarRspOuterClass {
               emu.grasscutter.net.proto.RefreshBackgroundAvatarRspOuterClass.RefreshBackgroundAvatarRsp.class, emu.grasscutter.net.proto.RefreshBackgroundAvatarRspOuterClass.RefreshBackgroundAvatarRsp.Builder.class);
     }
 
-    public static final int HP_FULL_TIME_MAP_FIELD_NUMBER = 8;
+    public static final int HP_FULL_TIME_MAP_FIELD_NUMBER = 1;
     private static final class HpFullTimeMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Long, java.lang.Integer> defaultEntry =
@@ -198,7 +198,7 @@ public final class RefreshBackgroundAvatarRspOuterClass {
       return internalGetHpFullTimeMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint64, uint32&gt; hp_full_time_map = 8;</code>
+     * <code>map&lt;uint64, uint32&gt; hp_full_time_map = 1;</code>
      */
 
     @java.lang.Override
@@ -216,7 +216,7 @@ public final class RefreshBackgroundAvatarRspOuterClass {
       return getHpFullTimeMapMap();
     }
     /**
-     * <code>map&lt;uint64, uint32&gt; hp_full_time_map = 8;</code>
+     * <code>map&lt;uint64, uint32&gt; hp_full_time_map = 1;</code>
      */
     @java.lang.Override
 
@@ -224,7 +224,7 @@ public final class RefreshBackgroundAvatarRspOuterClass {
       return internalGetHpFullTimeMap().getMap();
     }
     /**
-     * <code>map&lt;uint64, uint32&gt; hp_full_time_map = 8;</code>
+     * <code>map&lt;uint64, uint32&gt; hp_full_time_map = 1;</code>
      */
     @java.lang.Override
 
@@ -237,7 +237,7 @@ public final class RefreshBackgroundAvatarRspOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint64, uint32&gt; hp_full_time_map = 8;</code>
+     * <code>map&lt;uint64, uint32&gt; hp_full_time_map = 1;</code>
      */
     @java.lang.Override
 
@@ -252,10 +252,10 @@ public final class RefreshBackgroundAvatarRspOuterClass {
       return map.get(key);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 12;
+    public static final int RETCODE_FIELD_NUMBER = 3;
     private int retcode_;
     /**
-     * <code>int32 retcode = 12;</code>
+     * <code>int32 retcode = 3;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -282,9 +282,9 @@ public final class RefreshBackgroundAvatarRspOuterClass {
           output,
           internalGetHpFullTimeMap(),
           HpFullTimeMapDefaultEntryHolder.defaultEntry,
-          8);
+          1);
       if (retcode_ != 0) {
-        output.writeInt32(12, retcode_);
+        output.writeInt32(3, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -303,11 +303,11 @@ public final class RefreshBackgroundAvatarRspOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(8, hpFullTimeMap__);
+            .computeMessageSize(1, hpFullTimeMap__);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(12, retcode_);
+          .computeInt32Size(3, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -442,8 +442,8 @@ public final class RefreshBackgroundAvatarRspOuterClass {
     }
     /**
      * <pre>
-     * Name: CKMLMNALECC
-     * CmdId: 1786
+     * CmdId: 1657
+     * Obf: LKDCCAAPAMM
      * </pre>
      *
      * Protobuf type {@code RefreshBackgroundAvatarRsp}
@@ -461,7 +461,7 @@ public final class RefreshBackgroundAvatarRspOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 8:
+          case 1:
             return internalGetHpFullTimeMap();
           default:
             throw new RuntimeException(
@@ -472,7 +472,7 @@ public final class RefreshBackgroundAvatarRspOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 8:
+          case 1:
             return internalGetMutableHpFullTimeMap();
           default:
             throw new RuntimeException(
@@ -648,7 +648,7 @@ public final class RefreshBackgroundAvatarRspOuterClass {
         return internalGetHpFullTimeMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint64, uint32&gt; hp_full_time_map = 8;</code>
+       * <code>map&lt;uint64, uint32&gt; hp_full_time_map = 1;</code>
        */
 
       @java.lang.Override
@@ -666,7 +666,7 @@ public final class RefreshBackgroundAvatarRspOuterClass {
         return getHpFullTimeMapMap();
       }
       /**
-       * <code>map&lt;uint64, uint32&gt; hp_full_time_map = 8;</code>
+       * <code>map&lt;uint64, uint32&gt; hp_full_time_map = 1;</code>
        */
       @java.lang.Override
 
@@ -674,7 +674,7 @@ public final class RefreshBackgroundAvatarRspOuterClass {
         return internalGetHpFullTimeMap().getMap();
       }
       /**
-       * <code>map&lt;uint64, uint32&gt; hp_full_time_map = 8;</code>
+       * <code>map&lt;uint64, uint32&gt; hp_full_time_map = 1;</code>
        */
       @java.lang.Override
 
@@ -687,7 +687,7 @@ public final class RefreshBackgroundAvatarRspOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint64, uint32&gt; hp_full_time_map = 8;</code>
+       * <code>map&lt;uint64, uint32&gt; hp_full_time_map = 1;</code>
        */
       @java.lang.Override
 
@@ -708,7 +708,7 @@ public final class RefreshBackgroundAvatarRspOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint64, uint32&gt; hp_full_time_map = 8;</code>
+       * <code>map&lt;uint64, uint32&gt; hp_full_time_map = 1;</code>
        */
 
       public Builder removeHpFullTimeMap(
@@ -727,7 +727,7 @@ public final class RefreshBackgroundAvatarRspOuterClass {
         return internalGetMutableHpFullTimeMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint64, uint32&gt; hp_full_time_map = 8;</code>
+       * <code>map&lt;uint64, uint32&gt; hp_full_time_map = 1;</code>
        */
       public Builder putHpFullTimeMap(
           long key,
@@ -739,7 +739,7 @@ public final class RefreshBackgroundAvatarRspOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint64, uint32&gt; hp_full_time_map = 8;</code>
+       * <code>map&lt;uint64, uint32&gt; hp_full_time_map = 1;</code>
        */
 
       public Builder putAllHpFullTimeMap(
@@ -751,7 +751,7 @@ public final class RefreshBackgroundAvatarRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 3;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -759,7 +759,7 @@ public final class RefreshBackgroundAvatarRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 3;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -770,7 +770,7 @@ public final class RefreshBackgroundAvatarRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -853,8 +853,8 @@ public final class RefreshBackgroundAvatarRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n RefreshBackgroundAvatarRsp.proto\"\255\001\n\032R" +
       "efreshBackgroundAvatarRsp\022H\n\020hp_full_tim" +
-      "e_map\030\010 \003(\0132..RefreshBackgroundAvatarRsp" +
-      ".HpFullTimeMapEntry\022\017\n\007retcode\030\014 \001(\005\0324\n\022" +
+      "e_map\030\001 \003(\0132..RefreshBackgroundAvatarRsp" +
+      ".HpFullTimeMapEntry\022\017\n\007retcode\030\003 \001(\005\0324\n\022" +
       "HpFullTimeMapEntry\022\013\n\003key\030\001 \001(\004\022\r\n\005value" +
       "\030\002 \001(\r:\0028\001B\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"

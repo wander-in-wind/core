@@ -20,8 +20,8 @@ public final class TreasureMapGuideTaskDoneNotifyOuterClass {
   }
   /**
    * <pre>
-   * Name: CIMPKGDGBNG
-   * CmdId: 2099
+   * CmdId: 2020
+   * Obf: JIJMOEPDNAF
    * </pre>
    *
    * Protobuf type {@code TreasureMapGuideTaskDoneNotify}
@@ -246,8 +246,8 @@ public final class TreasureMapGuideTaskDoneNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: CIMPKGDGBNG
-     * CmdId: 2099
+     * CmdId: 2020
+     * Obf: JIJMOEPDNAF
      * </pre>
      *
      * Protobuf type {@code TreasureMapGuideTaskDoneNotify}

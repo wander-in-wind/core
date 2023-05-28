@@ -19,32 +19,32 @@ public final class WinterCampSetWishListRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 item_id_list = 2;</code>
+     * <code>repeated uint32 item_id_list = 1;</code>
      * @return A list containing the itemIdList.
      */
     java.util.List<java.lang.Integer> getItemIdListList();
     /**
-     * <code>repeated uint32 item_id_list = 2;</code>
+     * <code>repeated uint32 item_id_list = 1;</code>
      * @return The count of itemIdList.
      */
     int getItemIdListCount();
     /**
-     * <code>repeated uint32 item_id_list = 2;</code>
+     * <code>repeated uint32 item_id_list = 1;</code>
      * @param index The index of the element to return.
      * @return The itemIdList at the given index.
      */
     int getItemIdList(int index);
 
     /**
-     * <code>int32 retcode = 13;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * Name: GAHFFOEKAAF
-   * CmdId: 8985
+   * CmdId: 8887
+   * Obf: MOCNKHEAAHD
    * </pre>
    *
    * Protobuf type {@code WinterCampSetWishListRsp}
@@ -93,7 +93,7 @@ public final class WinterCampSetWishListRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 8: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 itemIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -101,7 +101,7 @@ public final class WinterCampSetWishListRspOuterClass {
               itemIdList_.addInt(input.readUInt32());
               break;
             }
-            case 18: {
+            case 10: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -114,7 +114,7 @@ public final class WinterCampSetWishListRspOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 104: {
+            case 48: {
 
               retcode_ = input.readInt32();
               break;
@@ -154,10 +154,10 @@ public final class WinterCampSetWishListRspOuterClass {
               emu.grasscutter.net.proto.WinterCampSetWishListRspOuterClass.WinterCampSetWishListRsp.class, emu.grasscutter.net.proto.WinterCampSetWishListRspOuterClass.WinterCampSetWishListRsp.Builder.class);
     }
 
-    public static final int ITEM_ID_LIST_FIELD_NUMBER = 2;
+    public static final int ITEM_ID_LIST_FIELD_NUMBER = 1;
     private com.google.protobuf.Internal.IntList itemIdList_;
     /**
-     * <code>repeated uint32 item_id_list = 2;</code>
+     * <code>repeated uint32 item_id_list = 1;</code>
      * @return A list containing the itemIdList.
      */
     @java.lang.Override
@@ -166,14 +166,14 @@ public final class WinterCampSetWishListRspOuterClass {
       return itemIdList_;
     }
     /**
-     * <code>repeated uint32 item_id_list = 2;</code>
+     * <code>repeated uint32 item_id_list = 1;</code>
      * @return The count of itemIdList.
      */
     public int getItemIdListCount() {
       return itemIdList_.size();
     }
     /**
-     * <code>repeated uint32 item_id_list = 2;</code>
+     * <code>repeated uint32 item_id_list = 1;</code>
      * @param index The index of the element to return.
      * @return The itemIdList at the given index.
      */
@@ -182,10 +182,10 @@ public final class WinterCampSetWishListRspOuterClass {
     }
     private int itemIdListMemoizedSerializedSize = -1;
 
-    public static final int RETCODE_FIELD_NUMBER = 13;
+    public static final int RETCODE_FIELD_NUMBER = 6;
     private int retcode_;
     /**
-     * <code>int32 retcode = 13;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -209,14 +209,14 @@ public final class WinterCampSetWishListRspOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getItemIdListList().size() > 0) {
-        output.writeUInt32NoTag(18);
+        output.writeUInt32NoTag(10);
         output.writeUInt32NoTag(itemIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < itemIdList_.size(); i++) {
         output.writeUInt32NoTag(itemIdList_.getInt(i));
       }
       if (retcode_ != 0) {
-        output.writeInt32(13, retcode_);
+        output.writeInt32(6, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -243,7 +243,7 @@ public final class WinterCampSetWishListRspOuterClass {
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(13, retcode_);
+          .computeInt32Size(6, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -378,8 +378,8 @@ public final class WinterCampSetWishListRspOuterClass {
     }
     /**
      * <pre>
-     * Name: GAHFFOEKAAF
-     * CmdId: 8985
+     * CmdId: 8887
+     * Obf: MOCNKHEAAHD
      * </pre>
      *
      * Protobuf type {@code WinterCampSetWishListRsp}
@@ -555,7 +555,7 @@ public final class WinterCampSetWishListRspOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 item_id_list = 2;</code>
+       * <code>repeated uint32 item_id_list = 1;</code>
        * @return A list containing the itemIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -564,14 +564,14 @@ public final class WinterCampSetWishListRspOuterClass {
                  java.util.Collections.unmodifiableList(itemIdList_) : itemIdList_;
       }
       /**
-       * <code>repeated uint32 item_id_list = 2;</code>
+       * <code>repeated uint32 item_id_list = 1;</code>
        * @return The count of itemIdList.
        */
       public int getItemIdListCount() {
         return itemIdList_.size();
       }
       /**
-       * <code>repeated uint32 item_id_list = 2;</code>
+       * <code>repeated uint32 item_id_list = 1;</code>
        * @param index The index of the element to return.
        * @return The itemIdList at the given index.
        */
@@ -579,7 +579,7 @@ public final class WinterCampSetWishListRspOuterClass {
         return itemIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 item_id_list = 2;</code>
+       * <code>repeated uint32 item_id_list = 1;</code>
        * @param index The index to set the value at.
        * @param value The itemIdList to set.
        * @return This builder for chaining.
@@ -592,7 +592,7 @@ public final class WinterCampSetWishListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 item_id_list = 2;</code>
+       * <code>repeated uint32 item_id_list = 1;</code>
        * @param value The itemIdList to add.
        * @return This builder for chaining.
        */
@@ -603,7 +603,7 @@ public final class WinterCampSetWishListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 item_id_list = 2;</code>
+       * <code>repeated uint32 item_id_list = 1;</code>
        * @param values The itemIdList to add.
        * @return This builder for chaining.
        */
@@ -616,7 +616,7 @@ public final class WinterCampSetWishListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 item_id_list = 2;</code>
+       * <code>repeated uint32 item_id_list = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearItemIdList() {
@@ -628,7 +628,7 @@ public final class WinterCampSetWishListRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 6;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -636,7 +636,7 @@ public final class WinterCampSetWishListRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 6;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -647,7 +647,7 @@ public final class WinterCampSetWishListRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -724,8 +724,8 @@ public final class WinterCampSetWishListRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036WinterCampSetWishListRsp.proto\"A\n\030Wint" +
-      "erCampSetWishListRsp\022\024\n\014item_id_list\030\002 \003" +
-      "(\r\022\017\n\007retcode\030\r \001(\005B\033\n\031emu.grasscutter.n" +
+      "erCampSetWishListRsp\022\024\n\014item_id_list\030\001 \003" +
+      "(\r\022\017\n\007retcode\030\006 \001(\005B\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

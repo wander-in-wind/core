@@ -19,27 +19,27 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 query_id = 6;</code>
-     * @return The queryId.
-     */
-    int getQueryId();
-
-    /**
-     * <code>int32 handle = 1;</code>
+     * <code>int32 handle = 2;</code>
      * @return The handle.
      */
     int getHandle();
 
     /**
-     * <code>uint32 scene_id = 3;</code>
+     * <code>int32 query_id = 13;</code>
+     * @return The queryId.
+     */
+    int getQueryId();
+
+    /**
+     * <code>uint32 scene_id = 9;</code>
      * @return The sceneId.
      */
     int getSceneId();
   }
   /**
    * <pre>
-   * Name: OCLFPKFMGBE
-   * CmdId: 6182
+   * CmdId: 6135
+   * Obf: GCGBBDICFEC
    * </pre>
    *
    * Protobuf type {@code ToTheMoonRemoveObstacleReq}
@@ -86,17 +86,17 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 16: {
 
               handle_ = input.readInt32();
               break;
             }
-            case 24: {
+            case 72: {
 
               sceneId_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 104: {
 
               queryId_ = input.readInt32();
               break;
@@ -133,133 +133,10 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
               emu.grasscutter.net.proto.ToTheMoonRemoveObstacleReqOuterClass.ToTheMoonRemoveObstacleReq.class, emu.grasscutter.net.proto.ToTheMoonRemoveObstacleReqOuterClass.ToTheMoonRemoveObstacleReq.Builder.class);
     }
 
-    /**
-     * <pre>
-     * Name: CFNHLMAPIOJ
-     * </pre>
-     *
-     * Protobuf enum {@code ToTheMoonRemoveObstacleReq.CFNHLMAPIOJ}
-     */
-    public enum CFNHLMAPIOJ
-        implements com.google.protobuf.ProtocolMessageEnum {
-      /**
-       * <code>CFNHLMAPIOJ_IIGFIDPJPDF = 0;</code>
-       */
-      CFNHLMAPIOJ_IIGFIDPJPDF(0),
-      /**
-       * <code>CFNHLMAPIOJ_HNBGNEFHJOA = 1;</code>
-       */
-      CFNHLMAPIOJ_HNBGNEFHJOA(1),
-      UNRECOGNIZED(-1),
-      ;
-
-      /**
-       * <code>CFNHLMAPIOJ_IIGFIDPJPDF = 0;</code>
-       */
-      public static final int CFNHLMAPIOJ_IIGFIDPJPDF_VALUE = 0;
-      /**
-       * <code>CFNHLMAPIOJ_HNBGNEFHJOA = 1;</code>
-       */
-      public static final int CFNHLMAPIOJ_HNBGNEFHJOA_VALUE = 1;
-
-
-      public final int getNumber() {
-        if (this == UNRECOGNIZED) {
-          throw new java.lang.IllegalArgumentException(
-              "Can't get the number of an unknown enum value.");
-        }
-        return value;
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       * @deprecated Use {@link #forNumber(int)} instead.
-       */
-      @java.lang.Deprecated
-      public static CFNHLMAPIOJ valueOf(int value) {
-        return forNumber(value);
-      }
-
-      /**
-       * @param value The numeric wire value of the corresponding enum entry.
-       * @return The enum associated with the given numeric wire value.
-       */
-      public static CFNHLMAPIOJ forNumber(int value) {
-        switch (value) {
-          case 0: return CFNHLMAPIOJ_IIGFIDPJPDF;
-          case 1: return CFNHLMAPIOJ_HNBGNEFHJOA;
-          default: return null;
-        }
-      }
-
-      public static com.google.protobuf.Internal.EnumLiteMap<CFNHLMAPIOJ>
-          internalGetValueMap() {
-        return internalValueMap;
-      }
-      private static final com.google.protobuf.Internal.EnumLiteMap<
-          CFNHLMAPIOJ> internalValueMap =
-            new com.google.protobuf.Internal.EnumLiteMap<CFNHLMAPIOJ>() {
-              public CFNHLMAPIOJ findValueByNumber(int number) {
-                return CFNHLMAPIOJ.forNumber(number);
-              }
-            };
-
-      public final com.google.protobuf.Descriptors.EnumValueDescriptor
-          getValueDescriptor() {
-        if (this == UNRECOGNIZED) {
-          throw new java.lang.IllegalStateException(
-              "Can't get the descriptor of an unrecognized enum value.");
-        }
-        return getDescriptor().getValues().get(ordinal());
-      }
-      public final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptorForType() {
-        return getDescriptor();
-      }
-      public static final com.google.protobuf.Descriptors.EnumDescriptor
-          getDescriptor() {
-        return emu.grasscutter.net.proto.ToTheMoonRemoveObstacleReqOuterClass.ToTheMoonRemoveObstacleReq.getDescriptor().getEnumTypes().get(0);
-      }
-
-      private static final CFNHLMAPIOJ[] VALUES = values();
-
-      public static CFNHLMAPIOJ valueOf(
-          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-        if (desc.getType() != getDescriptor()) {
-          throw new java.lang.IllegalArgumentException(
-            "EnumValueDescriptor is not for this type.");
-        }
-        if (desc.getIndex() == -1) {
-          return UNRECOGNIZED;
-        }
-        return VALUES[desc.getIndex()];
-      }
-
-      private final int value;
-
-      private CFNHLMAPIOJ(int value) {
-        this.value = value;
-      }
-
-      // @@protoc_insertion_point(enum_scope:ToTheMoonRemoveObstacleReq.CFNHLMAPIOJ)
-    }
-
-    public static final int QUERY_ID_FIELD_NUMBER = 6;
-    private int queryId_;
-    /**
-     * <code>int32 query_id = 6;</code>
-     * @return The queryId.
-     */
-    @java.lang.Override
-    public int getQueryId() {
-      return queryId_;
-    }
-
-    public static final int HANDLE_FIELD_NUMBER = 1;
+    public static final int HANDLE_FIELD_NUMBER = 2;
     private int handle_;
     /**
-     * <code>int32 handle = 1;</code>
+     * <code>int32 handle = 2;</code>
      * @return The handle.
      */
     @java.lang.Override
@@ -267,10 +144,21 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
       return handle_;
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 3;
+    public static final int QUERY_ID_FIELD_NUMBER = 13;
+    private int queryId_;
+    /**
+     * <code>int32 query_id = 13;</code>
+     * @return The queryId.
+     */
+    @java.lang.Override
+    public int getQueryId() {
+      return queryId_;
+    }
+
+    public static final int SCENE_ID_FIELD_NUMBER = 9;
     private int sceneId_;
     /**
-     * <code>uint32 scene_id = 3;</code>
+     * <code>uint32 scene_id = 9;</code>
      * @return The sceneId.
      */
     @java.lang.Override
@@ -293,13 +181,13 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (handle_ != 0) {
-        output.writeInt32(1, handle_);
+        output.writeInt32(2, handle_);
       }
       if (sceneId_ != 0) {
-        output.writeUInt32(3, sceneId_);
+        output.writeUInt32(9, sceneId_);
       }
       if (queryId_ != 0) {
-        output.writeInt32(6, queryId_);
+        output.writeInt32(13, queryId_);
       }
       unknownFields.writeTo(output);
     }
@@ -312,15 +200,15 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
       size = 0;
       if (handle_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, handle_);
+          .computeInt32Size(2, handle_);
       }
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, sceneId_);
+          .computeUInt32Size(9, sceneId_);
       }
       if (queryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(6, queryId_);
+          .computeInt32Size(13, queryId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -337,10 +225,10 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
       }
       emu.grasscutter.net.proto.ToTheMoonRemoveObstacleReqOuterClass.ToTheMoonRemoveObstacleReq other = (emu.grasscutter.net.proto.ToTheMoonRemoveObstacleReqOuterClass.ToTheMoonRemoveObstacleReq) obj;
 
-      if (getQueryId()
-          != other.getQueryId()) return false;
       if (getHandle()
           != other.getHandle()) return false;
+      if (getQueryId()
+          != other.getQueryId()) return false;
       if (getSceneId()
           != other.getSceneId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -354,10 +242,10 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + QUERY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getQueryId();
       hash = (37 * hash) + HANDLE_FIELD_NUMBER;
       hash = (53 * hash) + getHandle();
+      hash = (37 * hash) + QUERY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getQueryId();
       hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getSceneId();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -457,8 +345,8 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
     }
     /**
      * <pre>
-     * Name: OCLFPKFMGBE
-     * CmdId: 6182
+     * CmdId: 6135
+     * Obf: GCGBBDICFEC
      * </pre>
      *
      * Protobuf type {@code ToTheMoonRemoveObstacleReq}
@@ -498,9 +386,9 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        queryId_ = 0;
-
         handle_ = 0;
+
+        queryId_ = 0;
 
         sceneId_ = 0;
 
@@ -530,8 +418,8 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ToTheMoonRemoveObstacleReqOuterClass.ToTheMoonRemoveObstacleReq buildPartial() {
         emu.grasscutter.net.proto.ToTheMoonRemoveObstacleReqOuterClass.ToTheMoonRemoveObstacleReq result = new emu.grasscutter.net.proto.ToTheMoonRemoveObstacleReqOuterClass.ToTheMoonRemoveObstacleReq(this);
-        result.queryId_ = queryId_;
         result.handle_ = handle_;
+        result.queryId_ = queryId_;
         result.sceneId_ = sceneId_;
         onBuilt();
         return result;
@@ -581,11 +469,11 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ToTheMoonRemoveObstacleReqOuterClass.ToTheMoonRemoveObstacleReq other) {
         if (other == emu.grasscutter.net.proto.ToTheMoonRemoveObstacleReqOuterClass.ToTheMoonRemoveObstacleReq.getDefaultInstance()) return this;
-        if (other.getQueryId() != 0) {
-          setQueryId(other.getQueryId());
-        }
         if (other.getHandle() != 0) {
           setHandle(other.getHandle());
+        }
+        if (other.getQueryId() != 0) {
+          setQueryId(other.getQueryId());
         }
         if (other.getSceneId() != 0) {
           setSceneId(other.getSceneId());
@@ -619,40 +507,9 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
         return this;
       }
 
-      private int queryId_ ;
-      /**
-       * <code>int32 query_id = 6;</code>
-       * @return The queryId.
-       */
-      @java.lang.Override
-      public int getQueryId() {
-        return queryId_;
-      }
-      /**
-       * <code>int32 query_id = 6;</code>
-       * @param value The queryId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setQueryId(int value) {
-        
-        queryId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 query_id = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearQueryId() {
-        
-        queryId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int handle_ ;
       /**
-       * <code>int32 handle = 1;</code>
+       * <code>int32 handle = 2;</code>
        * @return The handle.
        */
       @java.lang.Override
@@ -660,7 +517,7 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
         return handle_;
       }
       /**
-       * <code>int32 handle = 1;</code>
+       * <code>int32 handle = 2;</code>
        * @param value The handle to set.
        * @return This builder for chaining.
        */
@@ -671,7 +528,7 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
         return this;
       }
       /**
-       * <code>int32 handle = 1;</code>
+       * <code>int32 handle = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearHandle() {
@@ -681,9 +538,40 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
         return this;
       }
 
+      private int queryId_ ;
+      /**
+       * <code>int32 query_id = 13;</code>
+       * @return The queryId.
+       */
+      @java.lang.Override
+      public int getQueryId() {
+        return queryId_;
+      }
+      /**
+       * <code>int32 query_id = 13;</code>
+       * @param value The queryId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setQueryId(int value) {
+        
+        queryId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 query_id = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearQueryId() {
+        
+        queryId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int sceneId_ ;
       /**
-       * <code>uint32 scene_id = 3;</code>
+       * <code>uint32 scene_id = 9;</code>
        * @return The sceneId.
        */
       @java.lang.Override
@@ -691,7 +579,7 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
         return sceneId_;
       }
       /**
-       * <code>uint32 scene_id = 3;</code>
+       * <code>uint32 scene_id = 9;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
        */
@@ -702,7 +590,7 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 scene_id = 3;</code>
+       * <code>uint32 scene_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneId() {
@@ -778,12 +666,10 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n ToTheMoonRemoveObstacleReq.proto\"\231\001\n\032T" +
-      "oTheMoonRemoveObstacleReq\022\020\n\010query_id\030\006 " +
-      "\001(\005\022\016\n\006handle\030\001 \001(\005\022\020\n\010scene_id\030\003 \001(\r\"G\n" +
-      "\013CFNHLMAPIOJ\022\033\n\027CFNHLMAPIOJ_IIGFIDPJPDF\020" +
-      "\000\022\033\n\027CFNHLMAPIOJ_HNBGNEFHJOA\020\001B\033\n\031emu.gr" +
-      "asscutter.net.protob\006proto3"
+      "\n ToTheMoonRemoveObstacleReq.proto\"P\n\032To" +
+      "TheMoonRemoveObstacleReq\022\016\n\006handle\030\002 \001(\005" +
+      "\022\020\n\010query_id\030\r \001(\005\022\020\n\010scene_id\030\t \001(\rB\033\n\031" +
+      "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -794,7 +680,7 @@ public final class ToTheMoonRemoveObstacleReqOuterClass {
     internal_static_ToTheMoonRemoveObstacleReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ToTheMoonRemoveObstacleReq_descriptor,
-        new java.lang.String[] { "QueryId", "Handle", "SceneId", });
+        new java.lang.String[] { "Handle", "QueryId", "SceneId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

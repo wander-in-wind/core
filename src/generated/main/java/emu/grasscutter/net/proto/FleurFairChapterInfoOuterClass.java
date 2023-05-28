@@ -25,14 +25,14 @@ public final class FleurFairChapterInfoOuterClass {
     int getChapterId();
 
     /**
-     * <code>uint32 open_time = 15;</code>
+     * <code>uint32 open_time = 7;</code>
      * @return The openTime.
      */
     int getOpenTime();
   }
   /**
    * <pre>
-   * Name: POIKFFBLPIJ
+   * Obf: ANBPPBIEHCK
    * </pre>
    *
    * Protobuf type {@code FleurFairChapterInfo}
@@ -84,7 +84,7 @@ public final class FleurFairChapterInfoOuterClass {
               chapterId_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 56: {
 
               openTime_ = input.readUInt32();
               break;
@@ -132,10 +132,10 @@ public final class FleurFairChapterInfoOuterClass {
       return chapterId_;
     }
 
-    public static final int OPEN_TIME_FIELD_NUMBER = 15;
+    public static final int OPEN_TIME_FIELD_NUMBER = 7;
     private int openTime_;
     /**
-     * <code>uint32 open_time = 15;</code>
+     * <code>uint32 open_time = 7;</code>
      * @return The openTime.
      */
     @java.lang.Override
@@ -161,7 +161,7 @@ public final class FleurFairChapterInfoOuterClass {
         output.writeUInt32(3, chapterId_);
       }
       if (openTime_ != 0) {
-        output.writeUInt32(15, openTime_);
+        output.writeUInt32(7, openTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -178,7 +178,7 @@ public final class FleurFairChapterInfoOuterClass {
       }
       if (openTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, openTime_);
+          .computeUInt32Size(7, openTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -311,7 +311,7 @@ public final class FleurFairChapterInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: POIKFFBLPIJ
+     * Obf: ANBPPBIEHCK
      * </pre>
      *
      * Protobuf type {@code FleurFairChapterInfo}
@@ -499,7 +499,7 @@ public final class FleurFairChapterInfoOuterClass {
 
       private int openTime_ ;
       /**
-       * <code>uint32 open_time = 15;</code>
+       * <code>uint32 open_time = 7;</code>
        * @return The openTime.
        */
       @java.lang.Override
@@ -507,7 +507,7 @@ public final class FleurFairChapterInfoOuterClass {
         return openTime_;
       }
       /**
-       * <code>uint32 open_time = 15;</code>
+       * <code>uint32 open_time = 7;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
        */
@@ -518,7 +518,7 @@ public final class FleurFairChapterInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 open_time = 15;</code>
+       * <code>uint32 open_time = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearOpenTime() {
@@ -596,7 +596,7 @@ public final class FleurFairChapterInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\032FleurFairChapterInfo.proto\"=\n\024FleurFai" +
       "rChapterInfo\022\022\n\nchapter_id\030\003 \001(\r\022\021\n\topen" +
-      "_time\030\017 \001(\rB\033\n\031emu.grasscutter.net.proto" +
+      "_time\030\007 \001(\rB\033\n\031emu.grasscutter.net.proto" +
       "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

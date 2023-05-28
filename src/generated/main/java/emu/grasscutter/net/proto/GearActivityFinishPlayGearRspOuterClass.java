@@ -19,27 +19,27 @@ public final class GearActivityFinishPlayGearRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 13;</code>
-     * @return The levelId.
-     */
-    int getLevelId();
-
-    /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>bool is_success = 10;</code>
+     * <code>uint32 level_id = 7;</code>
+     * @return The levelId.
+     */
+    int getLevelId();
+
+    /**
+     * <code>bool is_success = 5;</code>
      * @return The isSuccess.
      */
     boolean getIsSuccess();
   }
   /**
    * <pre>
-   * Name: LJEMOBEDBMB
-   * CmdId: 20017
+   * CmdId: 24130
+   * Obf: JCFOAENGAII
    * </pre>
    *
    * Protobuf type {@code GearActivityFinishPlayGearRsp}
@@ -86,17 +86,17 @@ public final class GearActivityFinishPlayGearRspOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 80: {
+            case 40: {
 
               isSuccess_ = input.readBool();
               break;
             }
-            case 104: {
+            case 48: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 56: {
 
               levelId_ = input.readUInt32();
               break;
@@ -133,21 +133,10 @@ public final class GearActivityFinishPlayGearRspOuterClass {
               emu.grasscutter.net.proto.GearActivityFinishPlayGearRspOuterClass.GearActivityFinishPlayGearRsp.class, emu.grasscutter.net.proto.GearActivityFinishPlayGearRspOuterClass.GearActivityFinishPlayGearRsp.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 13;
-    private int levelId_;
-    /**
-     * <code>uint32 level_id = 13;</code>
-     * @return The levelId.
-     */
-    @java.lang.Override
-    public int getLevelId() {
-      return levelId_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 8;
+    public static final int RETCODE_FIELD_NUMBER = 6;
     private int retcode_;
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -155,10 +144,21 @@ public final class GearActivityFinishPlayGearRspOuterClass {
       return retcode_;
     }
 
-    public static final int IS_SUCCESS_FIELD_NUMBER = 10;
+    public static final int LEVEL_ID_FIELD_NUMBER = 7;
+    private int levelId_;
+    /**
+     * <code>uint32 level_id = 7;</code>
+     * @return The levelId.
+     */
+    @java.lang.Override
+    public int getLevelId() {
+      return levelId_;
+    }
+
+    public static final int IS_SUCCESS_FIELD_NUMBER = 5;
     private boolean isSuccess_;
     /**
-     * <code>bool is_success = 10;</code>
+     * <code>bool is_success = 5;</code>
      * @return The isSuccess.
      */
     @java.lang.Override
@@ -180,14 +180,14 @@ public final class GearActivityFinishPlayGearRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
-      }
       if (isSuccess_ != false) {
-        output.writeBool(10, isSuccess_);
+        output.writeBool(5, isSuccess_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(6, retcode_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(13, levelId_);
+        output.writeUInt32(7, levelId_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +198,17 @@ public final class GearActivityFinishPlayGearRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
-      }
       if (isSuccess_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isSuccess_);
+          .computeBoolSize(5, isSuccess_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(6, retcode_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, levelId_);
+          .computeUInt32Size(7, levelId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -225,10 +225,10 @@ public final class GearActivityFinishPlayGearRspOuterClass {
       }
       emu.grasscutter.net.proto.GearActivityFinishPlayGearRspOuterClass.GearActivityFinishPlayGearRsp other = (emu.grasscutter.net.proto.GearActivityFinishPlayGearRspOuterClass.GearActivityFinishPlayGearRsp) obj;
 
-      if (getLevelId()
-          != other.getLevelId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getLevelId()
+          != other.getLevelId()) return false;
       if (getIsSuccess()
           != other.getIsSuccess()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -242,10 +242,10 @@ public final class GearActivityFinishPlayGearRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
       hash = (37 * hash) + IS_SUCCESS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsSuccess());
@@ -346,8 +346,8 @@ public final class GearActivityFinishPlayGearRspOuterClass {
     }
     /**
      * <pre>
-     * Name: LJEMOBEDBMB
-     * CmdId: 20017
+     * CmdId: 24130
+     * Obf: JCFOAENGAII
      * </pre>
      *
      * Protobuf type {@code GearActivityFinishPlayGearRsp}
@@ -387,9 +387,9 @@ public final class GearActivityFinishPlayGearRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        levelId_ = 0;
-
         retcode_ = 0;
+
+        levelId_ = 0;
 
         isSuccess_ = false;
 
@@ -419,8 +419,8 @@ public final class GearActivityFinishPlayGearRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GearActivityFinishPlayGearRspOuterClass.GearActivityFinishPlayGearRsp buildPartial() {
         emu.grasscutter.net.proto.GearActivityFinishPlayGearRspOuterClass.GearActivityFinishPlayGearRsp result = new emu.grasscutter.net.proto.GearActivityFinishPlayGearRspOuterClass.GearActivityFinishPlayGearRsp(this);
-        result.levelId_ = levelId_;
         result.retcode_ = retcode_;
+        result.levelId_ = levelId_;
         result.isSuccess_ = isSuccess_;
         onBuilt();
         return result;
@@ -470,11 +470,11 @@ public final class GearActivityFinishPlayGearRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GearActivityFinishPlayGearRspOuterClass.GearActivityFinishPlayGearRsp other) {
         if (other == emu.grasscutter.net.proto.GearActivityFinishPlayGearRspOuterClass.GearActivityFinishPlayGearRsp.getDefaultInstance()) return this;
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
         }
         if (other.getIsSuccess() != false) {
           setIsSuccess(other.getIsSuccess());
@@ -508,40 +508,9 @@ public final class GearActivityFinishPlayGearRspOuterClass {
         return this;
       }
 
-      private int levelId_ ;
-      /**
-       * <code>uint32 level_id = 13;</code>
-       * @return The levelId.
-       */
-      @java.lang.Override
-      public int getLevelId() {
-        return levelId_;
-      }
-      /**
-       * <code>uint32 level_id = 13;</code>
-       * @param value The levelId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevelId(int value) {
-        
-        levelId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level_id = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevelId() {
-        
-        levelId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 6;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -549,7 +518,7 @@ public final class GearActivityFinishPlayGearRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 6;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -560,7 +529,7 @@ public final class GearActivityFinishPlayGearRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -570,9 +539,40 @@ public final class GearActivityFinishPlayGearRspOuterClass {
         return this;
       }
 
+      private int levelId_ ;
+      /**
+       * <code>uint32 level_id = 7;</code>
+       * @return The levelId.
+       */
+      @java.lang.Override
+      public int getLevelId() {
+        return levelId_;
+      }
+      /**
+       * <code>uint32 level_id = 7;</code>
+       * @param value The levelId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevelId(int value) {
+        
+        levelId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 level_id = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevelId() {
+        
+        levelId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private boolean isSuccess_ ;
       /**
-       * <code>bool is_success = 10;</code>
+       * <code>bool is_success = 5;</code>
        * @return The isSuccess.
        */
       @java.lang.Override
@@ -580,7 +580,7 @@ public final class GearActivityFinishPlayGearRspOuterClass {
         return isSuccess_;
       }
       /**
-       * <code>bool is_success = 10;</code>
+       * <code>bool is_success = 5;</code>
        * @param value The isSuccess to set.
        * @return This builder for chaining.
        */
@@ -591,7 +591,7 @@ public final class GearActivityFinishPlayGearRspOuterClass {
         return this;
       }
       /**
-       * <code>bool is_success = 10;</code>
+       * <code>bool is_success = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsSuccess() {
@@ -668,9 +668,9 @@ public final class GearActivityFinishPlayGearRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n#GearActivityFinishPlayGearRsp.proto\"V\n" +
-      "\035GearActivityFinishPlayGearRsp\022\020\n\010level_" +
-      "id\030\r \001(\r\022\017\n\007retcode\030\010 \001(\005\022\022\n\nis_success\030" +
-      "\n \001(\010B\033\n\031emu.grasscutter.net.protob\006prot" +
+      "\035GearActivityFinishPlayGearRsp\022\017\n\007retcod" +
+      "e\030\006 \001(\005\022\020\n\010level_id\030\007 \001(\r\022\022\n\nis_success\030" +
+      "\005 \001(\010B\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -682,7 +682,7 @@ public final class GearActivityFinishPlayGearRspOuterClass {
     internal_static_GearActivityFinishPlayGearRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GearActivityFinishPlayGearRsp_descriptor,
-        new java.lang.String[] { "LevelId", "Retcode", "IsSuccess", });
+        new java.lang.String[] { "Retcode", "LevelId", "IsSuccess", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

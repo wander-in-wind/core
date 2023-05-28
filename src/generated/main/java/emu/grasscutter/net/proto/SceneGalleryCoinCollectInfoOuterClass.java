@@ -19,20 +19,20 @@ public final class SceneGalleryCoinCollectInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 JIEODOEOBID = 15;</code>
-     * @return The jIEODOEOBID.
+     * <code>uint32 FOAFDGFNCFL = 12;</code>
+     * @return The fOAFDGFNCFL.
      */
-    int getJIEODOEOBID();
+    int getFOAFDGFNCFL();
 
     /**
-     * <code>uint32 BOFDHHNBNCH = 6;</code>
-     * @return The bOFDHHNBNCH.
+     * <code>uint32 HCDKJFMNMAM = 5;</code>
+     * @return The hCDKJFMNMAM.
      */
-    int getBOFDHHNBNCH();
+    int getHCDKJFMNMAM();
   }
   /**
    * <pre>
-   * Name: DHBOANFMLNE
+   * Obf: OHLHMAEDCHF
    * </pre>
    *
    * Protobuf type {@code SceneGalleryCoinCollectInfo}
@@ -79,14 +79,14 @@ public final class SceneGalleryCoinCollectInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 40: {
 
-              bOFDHHNBNCH_ = input.readUInt32();
+              hCDKJFMNMAM_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 96: {
 
-              jIEODOEOBID_ = input.readUInt32();
+              fOAFDGFNCFL_ = input.readUInt32();
               break;
             }
             default: {
@@ -121,26 +121,26 @@ public final class SceneGalleryCoinCollectInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryCoinCollectInfoOuterClass.SceneGalleryCoinCollectInfo.class, emu.grasscutter.net.proto.SceneGalleryCoinCollectInfoOuterClass.SceneGalleryCoinCollectInfo.Builder.class);
     }
 
-    public static final int JIEODOEOBID_FIELD_NUMBER = 15;
-    private int jIEODOEOBID_;
+    public static final int FOAFDGFNCFL_FIELD_NUMBER = 12;
+    private int fOAFDGFNCFL_;
     /**
-     * <code>uint32 JIEODOEOBID = 15;</code>
-     * @return The jIEODOEOBID.
+     * <code>uint32 FOAFDGFNCFL = 12;</code>
+     * @return The fOAFDGFNCFL.
      */
     @java.lang.Override
-    public int getJIEODOEOBID() {
-      return jIEODOEOBID_;
+    public int getFOAFDGFNCFL() {
+      return fOAFDGFNCFL_;
     }
 
-    public static final int BOFDHHNBNCH_FIELD_NUMBER = 6;
-    private int bOFDHHNBNCH_;
+    public static final int HCDKJFMNMAM_FIELD_NUMBER = 5;
+    private int hCDKJFMNMAM_;
     /**
-     * <code>uint32 BOFDHHNBNCH = 6;</code>
-     * @return The bOFDHHNBNCH.
+     * <code>uint32 HCDKJFMNMAM = 5;</code>
+     * @return The hCDKJFMNMAM.
      */
     @java.lang.Override
-    public int getBOFDHHNBNCH() {
-      return bOFDHHNBNCH_;
+    public int getHCDKJFMNMAM() {
+      return hCDKJFMNMAM_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -157,11 +157,11 @@ public final class SceneGalleryCoinCollectInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (bOFDHHNBNCH_ != 0) {
-        output.writeUInt32(6, bOFDHHNBNCH_);
+      if (hCDKJFMNMAM_ != 0) {
+        output.writeUInt32(5, hCDKJFMNMAM_);
       }
-      if (jIEODOEOBID_ != 0) {
-        output.writeUInt32(15, jIEODOEOBID_);
+      if (fOAFDGFNCFL_ != 0) {
+        output.writeUInt32(12, fOAFDGFNCFL_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +172,13 @@ public final class SceneGalleryCoinCollectInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (bOFDHHNBNCH_ != 0) {
+      if (hCDKJFMNMAM_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, bOFDHHNBNCH_);
+          .computeUInt32Size(5, hCDKJFMNMAM_);
       }
-      if (jIEODOEOBID_ != 0) {
+      if (fOAFDGFNCFL_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, jIEODOEOBID_);
+          .computeUInt32Size(12, fOAFDGFNCFL_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -195,10 +195,10 @@ public final class SceneGalleryCoinCollectInfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneGalleryCoinCollectInfoOuterClass.SceneGalleryCoinCollectInfo other = (emu.grasscutter.net.proto.SceneGalleryCoinCollectInfoOuterClass.SceneGalleryCoinCollectInfo) obj;
 
-      if (getJIEODOEOBID()
-          != other.getJIEODOEOBID()) return false;
-      if (getBOFDHHNBNCH()
-          != other.getBOFDHHNBNCH()) return false;
+      if (getFOAFDGFNCFL()
+          != other.getFOAFDGFNCFL()) return false;
+      if (getHCDKJFMNMAM()
+          != other.getHCDKJFMNMAM()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -210,10 +210,10 @@ public final class SceneGalleryCoinCollectInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + JIEODOEOBID_FIELD_NUMBER;
-      hash = (53 * hash) + getJIEODOEOBID();
-      hash = (37 * hash) + BOFDHHNBNCH_FIELD_NUMBER;
-      hash = (53 * hash) + getBOFDHHNBNCH();
+      hash = (37 * hash) + FOAFDGFNCFL_FIELD_NUMBER;
+      hash = (53 * hash) + getFOAFDGFNCFL();
+      hash = (37 * hash) + HCDKJFMNMAM_FIELD_NUMBER;
+      hash = (53 * hash) + getHCDKJFMNMAM();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -311,7 +311,7 @@ public final class SceneGalleryCoinCollectInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: DHBOANFMLNE
+     * Obf: OHLHMAEDCHF
      * </pre>
      *
      * Protobuf type {@code SceneGalleryCoinCollectInfo}
@@ -351,9 +351,9 @@ public final class SceneGalleryCoinCollectInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        jIEODOEOBID_ = 0;
+        fOAFDGFNCFL_ = 0;
 
-        bOFDHHNBNCH_ = 0;
+        hCDKJFMNMAM_ = 0;
 
         return this;
       }
@@ -381,8 +381,8 @@ public final class SceneGalleryCoinCollectInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneGalleryCoinCollectInfoOuterClass.SceneGalleryCoinCollectInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGalleryCoinCollectInfoOuterClass.SceneGalleryCoinCollectInfo result = new emu.grasscutter.net.proto.SceneGalleryCoinCollectInfoOuterClass.SceneGalleryCoinCollectInfo(this);
-        result.jIEODOEOBID_ = jIEODOEOBID_;
-        result.bOFDHHNBNCH_ = bOFDHHNBNCH_;
+        result.fOAFDGFNCFL_ = fOAFDGFNCFL_;
+        result.hCDKJFMNMAM_ = hCDKJFMNMAM_;
         onBuilt();
         return result;
       }
@@ -431,11 +431,11 @@ public final class SceneGalleryCoinCollectInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneGalleryCoinCollectInfoOuterClass.SceneGalleryCoinCollectInfo other) {
         if (other == emu.grasscutter.net.proto.SceneGalleryCoinCollectInfoOuterClass.SceneGalleryCoinCollectInfo.getDefaultInstance()) return this;
-        if (other.getJIEODOEOBID() != 0) {
-          setJIEODOEOBID(other.getJIEODOEOBID());
+        if (other.getFOAFDGFNCFL() != 0) {
+          setFOAFDGFNCFL(other.getFOAFDGFNCFL());
         }
-        if (other.getBOFDHHNBNCH() != 0) {
-          setBOFDHHNBNCH(other.getBOFDHHNBNCH());
+        if (other.getHCDKJFMNMAM() != 0) {
+          setHCDKJFMNMAM(other.getHCDKJFMNMAM());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -466,64 +466,64 @@ public final class SceneGalleryCoinCollectInfoOuterClass {
         return this;
       }
 
-      private int jIEODOEOBID_ ;
+      private int fOAFDGFNCFL_ ;
       /**
-       * <code>uint32 JIEODOEOBID = 15;</code>
-       * @return The jIEODOEOBID.
+       * <code>uint32 FOAFDGFNCFL = 12;</code>
+       * @return The fOAFDGFNCFL.
        */
       @java.lang.Override
-      public int getJIEODOEOBID() {
-        return jIEODOEOBID_;
+      public int getFOAFDGFNCFL() {
+        return fOAFDGFNCFL_;
       }
       /**
-       * <code>uint32 JIEODOEOBID = 15;</code>
-       * @param value The jIEODOEOBID to set.
+       * <code>uint32 FOAFDGFNCFL = 12;</code>
+       * @param value The fOAFDGFNCFL to set.
        * @return This builder for chaining.
        */
-      public Builder setJIEODOEOBID(int value) {
+      public Builder setFOAFDGFNCFL(int value) {
         
-        jIEODOEOBID_ = value;
+        fOAFDGFNCFL_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 JIEODOEOBID = 15;</code>
+       * <code>uint32 FOAFDGFNCFL = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearJIEODOEOBID() {
+      public Builder clearFOAFDGFNCFL() {
         
-        jIEODOEOBID_ = 0;
+        fOAFDGFNCFL_ = 0;
         onChanged();
         return this;
       }
 
-      private int bOFDHHNBNCH_ ;
+      private int hCDKJFMNMAM_ ;
       /**
-       * <code>uint32 BOFDHHNBNCH = 6;</code>
-       * @return The bOFDHHNBNCH.
+       * <code>uint32 HCDKJFMNMAM = 5;</code>
+       * @return The hCDKJFMNMAM.
        */
       @java.lang.Override
-      public int getBOFDHHNBNCH() {
-        return bOFDHHNBNCH_;
+      public int getHCDKJFMNMAM() {
+        return hCDKJFMNMAM_;
       }
       /**
-       * <code>uint32 BOFDHHNBNCH = 6;</code>
-       * @param value The bOFDHHNBNCH to set.
+       * <code>uint32 HCDKJFMNMAM = 5;</code>
+       * @param value The hCDKJFMNMAM to set.
        * @return This builder for chaining.
        */
-      public Builder setBOFDHHNBNCH(int value) {
+      public Builder setHCDKJFMNMAM(int value) {
         
-        bOFDHHNBNCH_ = value;
+        hCDKJFMNMAM_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 BOFDHHNBNCH = 6;</code>
+       * <code>uint32 HCDKJFMNMAM = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBOFDHHNBNCH() {
+      public Builder clearHCDKJFMNMAM() {
         
-        bOFDHHNBNCH_ = 0;
+        hCDKJFMNMAM_ = 0;
         onChanged();
         return this;
       }
@@ -595,8 +595,8 @@ public final class SceneGalleryCoinCollectInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!SceneGalleryCoinCollectInfo.proto\"G\n\033S" +
-      "ceneGalleryCoinCollectInfo\022\023\n\013JIEODOEOBI" +
-      "D\030\017 \001(\r\022\023\n\013BOFDHHNBNCH\030\006 \001(\rB\033\n\031emu.gras" +
+      "ceneGalleryCoinCollectInfo\022\023\n\013FOAFDGFNCF" +
+      "L\030\014 \001(\r\022\023\n\013HCDKJFMNMAM\030\005 \001(\rB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -608,7 +608,7 @@ public final class SceneGalleryCoinCollectInfoOuterClass {
     internal_static_SceneGalleryCoinCollectInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryCoinCollectInfo_descriptor,
-        new java.lang.String[] { "JIEODOEOBID", "BOFDHHNBNCH", });
+        new java.lang.String[] { "FOAFDGFNCFL", "HCDKJFMNMAM", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

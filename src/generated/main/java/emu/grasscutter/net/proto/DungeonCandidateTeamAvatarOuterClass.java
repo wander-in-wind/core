@@ -19,29 +19,34 @@ public final class DungeonCandidateTeamAvatarOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 player_uid = 3;</code>
-     * @return The playerUid.
+     * <code>.GMIOAJDAFAB enter_type = 13;</code>
+     * @return The enum numeric value on the wire for enterType.
      */
-    int getPlayerUid();
+    int getEnterTypeValue();
+    /**
+     * <code>.GMIOAJDAFAB enter_type = 13;</code>
+     * @return The enterType.
+     */
+    emu.grasscutter.net.proto.GMIOAJDAFABOuterClass.GMIOAJDAFAB getEnterType();
 
     /**
-     * <code>.AvatarInfo avatar_info = 4;</code>
-     * @return Whether the avatarInfo field is set.
+     * <code>.EGEBOGIIBGB DHNMGNOLFKJ = 4;</code>
+     * @return Whether the dHNMGNOLFKJ field is set.
      */
-    boolean hasAvatarInfo();
+    boolean hasDHNMGNOLFKJ();
     /**
-     * <code>.AvatarInfo avatar_info = 4;</code>
-     * @return The avatarInfo.
+     * <code>.EGEBOGIIBGB DHNMGNOLFKJ = 4;</code>
+     * @return The dHNMGNOLFKJ.
      */
-    emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo getAvatarInfo();
+    emu.grasscutter.net.proto.EGEBOGIIBGBOuterClass.EGEBOGIIBGB getDHNMGNOLFKJ();
     /**
-     * <code>.AvatarInfo avatar_info = 4;</code>
+     * <code>.EGEBOGIIBGB DHNMGNOLFKJ = 4;</code>
      */
-    emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfoOrBuilder getAvatarInfoOrBuilder();
+    emu.grasscutter.net.proto.EGEBOGIIBGBOuterClass.EGEBOGIIBGBOrBuilder getDHNMGNOLFKJOrBuilder();
   }
   /**
    * <pre>
-   * Name: DGNHHEPOEIP
+   * Obf: NDOOPLOCEFN
    * </pre>
    *
    * Protobuf type {@code DungeonCandidateTeamAvatar}
@@ -56,6 +61,7 @@ public final class DungeonCandidateTeamAvatarOuterClass {
       super(builder);
     }
     private DungeonCandidateTeamAvatar() {
+      enterType_ = 0;
     }
 
     @java.lang.Override
@@ -88,22 +94,23 @@ public final class DungeonCandidateTeamAvatarOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 34: {
+              emu.grasscutter.net.proto.EGEBOGIIBGBOuterClass.EGEBOGIIBGB.Builder subBuilder = null;
+              if (dHNMGNOLFKJ_ != null) {
+                subBuilder = dHNMGNOLFKJ_.toBuilder();
+              }
+              dHNMGNOLFKJ_ = input.readMessage(emu.grasscutter.net.proto.EGEBOGIIBGBOuterClass.EGEBOGIIBGB.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(dHNMGNOLFKJ_);
+                dHNMGNOLFKJ_ = subBuilder.buildPartial();
+              }
 
-              playerUid_ = input.readUInt32();
               break;
             }
-            case 34: {
-              emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo.Builder subBuilder = null;
-              if (avatarInfo_ != null) {
-                subBuilder = avatarInfo_.toBuilder();
-              }
-              avatarInfo_ = input.readMessage(emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(avatarInfo_);
-                avatarInfo_ = subBuilder.buildPartial();
-              }
+            case 104: {
+              int rawValue = input.readEnum();
 
+              enterType_ = rawValue;
               break;
             }
             default: {
@@ -138,41 +145,49 @@ public final class DungeonCandidateTeamAvatarOuterClass {
               emu.grasscutter.net.proto.DungeonCandidateTeamAvatarOuterClass.DungeonCandidateTeamAvatar.class, emu.grasscutter.net.proto.DungeonCandidateTeamAvatarOuterClass.DungeonCandidateTeamAvatar.Builder.class);
     }
 
-    public static final int PLAYER_UID_FIELD_NUMBER = 3;
-    private int playerUid_;
+    public static final int ENTER_TYPE_FIELD_NUMBER = 13;
+    private int enterType_;
     /**
-     * <code>uint32 player_uid = 3;</code>
-     * @return The playerUid.
+     * <code>.GMIOAJDAFAB enter_type = 13;</code>
+     * @return The enum numeric value on the wire for enterType.
      */
-    @java.lang.Override
-    public int getPlayerUid() {
-      return playerUid_;
+    @java.lang.Override public int getEnterTypeValue() {
+      return enterType_;
+    }
+    /**
+     * <code>.GMIOAJDAFAB enter_type = 13;</code>
+     * @return The enterType.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.GMIOAJDAFABOuterClass.GMIOAJDAFAB getEnterType() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.GMIOAJDAFABOuterClass.GMIOAJDAFAB result = emu.grasscutter.net.proto.GMIOAJDAFABOuterClass.GMIOAJDAFAB.valueOf(enterType_);
+      return result == null ? emu.grasscutter.net.proto.GMIOAJDAFABOuterClass.GMIOAJDAFAB.UNRECOGNIZED : result;
     }
 
-    public static final int AVATAR_INFO_FIELD_NUMBER = 4;
-    private emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo avatarInfo_;
+    public static final int DHNMGNOLFKJ_FIELD_NUMBER = 4;
+    private emu.grasscutter.net.proto.EGEBOGIIBGBOuterClass.EGEBOGIIBGB dHNMGNOLFKJ_;
     /**
-     * <code>.AvatarInfo avatar_info = 4;</code>
-     * @return Whether the avatarInfo field is set.
+     * <code>.EGEBOGIIBGB DHNMGNOLFKJ = 4;</code>
+     * @return Whether the dHNMGNOLFKJ field is set.
      */
     @java.lang.Override
-    public boolean hasAvatarInfo() {
-      return avatarInfo_ != null;
+    public boolean hasDHNMGNOLFKJ() {
+      return dHNMGNOLFKJ_ != null;
     }
     /**
-     * <code>.AvatarInfo avatar_info = 4;</code>
-     * @return The avatarInfo.
+     * <code>.EGEBOGIIBGB DHNMGNOLFKJ = 4;</code>
+     * @return The dHNMGNOLFKJ.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo getAvatarInfo() {
-      return avatarInfo_ == null ? emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo.getDefaultInstance() : avatarInfo_;
+    public emu.grasscutter.net.proto.EGEBOGIIBGBOuterClass.EGEBOGIIBGB getDHNMGNOLFKJ() {
+      return dHNMGNOLFKJ_ == null ? emu.grasscutter.net.proto.EGEBOGIIBGBOuterClass.EGEBOGIIBGB.getDefaultInstance() : dHNMGNOLFKJ_;
     }
     /**
-     * <code>.AvatarInfo avatar_info = 4;</code>
+     * <code>.EGEBOGIIBGB DHNMGNOLFKJ = 4;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfoOrBuilder getAvatarInfoOrBuilder() {
-      return getAvatarInfo();
+    public emu.grasscutter.net.proto.EGEBOGIIBGBOuterClass.EGEBOGIIBGBOrBuilder getDHNMGNOLFKJOrBuilder() {
+      return getDHNMGNOLFKJ();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -189,11 +204,11 @@ public final class DungeonCandidateTeamAvatarOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (playerUid_ != 0) {
-        output.writeUInt32(3, playerUid_);
+      if (dHNMGNOLFKJ_ != null) {
+        output.writeMessage(4, getDHNMGNOLFKJ());
       }
-      if (avatarInfo_ != null) {
-        output.writeMessage(4, getAvatarInfo());
+      if (enterType_ != emu.grasscutter.net.proto.GMIOAJDAFABOuterClass.GMIOAJDAFAB.GMIOAJDAFAB_EnterUgcDungeonNone.getNumber()) {
+        output.writeEnum(13, enterType_);
       }
       unknownFields.writeTo(output);
     }
@@ -204,13 +219,13 @@ public final class DungeonCandidateTeamAvatarOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (playerUid_ != 0) {
+      if (dHNMGNOLFKJ_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, playerUid_);
+          .computeMessageSize(4, getDHNMGNOLFKJ());
       }
-      if (avatarInfo_ != null) {
+      if (enterType_ != emu.grasscutter.net.proto.GMIOAJDAFABOuterClass.GMIOAJDAFAB.GMIOAJDAFAB_EnterUgcDungeonNone.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, getAvatarInfo());
+          .computeEnumSize(13, enterType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -227,12 +242,11 @@ public final class DungeonCandidateTeamAvatarOuterClass {
       }
       emu.grasscutter.net.proto.DungeonCandidateTeamAvatarOuterClass.DungeonCandidateTeamAvatar other = (emu.grasscutter.net.proto.DungeonCandidateTeamAvatarOuterClass.DungeonCandidateTeamAvatar) obj;
 
-      if (getPlayerUid()
-          != other.getPlayerUid()) return false;
-      if (hasAvatarInfo() != other.hasAvatarInfo()) return false;
-      if (hasAvatarInfo()) {
-        if (!getAvatarInfo()
-            .equals(other.getAvatarInfo())) return false;
+      if (enterType_ != other.enterType_) return false;
+      if (hasDHNMGNOLFKJ() != other.hasDHNMGNOLFKJ()) return false;
+      if (hasDHNMGNOLFKJ()) {
+        if (!getDHNMGNOLFKJ()
+            .equals(other.getDHNMGNOLFKJ())) return false;
       }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
@@ -245,11 +259,11 @@ public final class DungeonCandidateTeamAvatarOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + PLAYER_UID_FIELD_NUMBER;
-      hash = (53 * hash) + getPlayerUid();
-      if (hasAvatarInfo()) {
-        hash = (37 * hash) + AVATAR_INFO_FIELD_NUMBER;
-        hash = (53 * hash) + getAvatarInfo().hashCode();
+      hash = (37 * hash) + ENTER_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + enterType_;
+      if (hasDHNMGNOLFKJ()) {
+        hash = (37 * hash) + DHNMGNOLFKJ_FIELD_NUMBER;
+        hash = (53 * hash) + getDHNMGNOLFKJ().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -348,7 +362,7 @@ public final class DungeonCandidateTeamAvatarOuterClass {
     }
     /**
      * <pre>
-     * Name: DGNHHEPOEIP
+     * Obf: NDOOPLOCEFN
      * </pre>
      *
      * Protobuf type {@code DungeonCandidateTeamAvatar}
@@ -388,13 +402,13 @@ public final class DungeonCandidateTeamAvatarOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        playerUid_ = 0;
+        enterType_ = 0;
 
-        if (avatarInfoBuilder_ == null) {
-          avatarInfo_ = null;
+        if (dHNMGNOLFKJBuilder_ == null) {
+          dHNMGNOLFKJ_ = null;
         } else {
-          avatarInfo_ = null;
-          avatarInfoBuilder_ = null;
+          dHNMGNOLFKJ_ = null;
+          dHNMGNOLFKJBuilder_ = null;
         }
         return this;
       }
@@ -422,11 +436,11 @@ public final class DungeonCandidateTeamAvatarOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.DungeonCandidateTeamAvatarOuterClass.DungeonCandidateTeamAvatar buildPartial() {
         emu.grasscutter.net.proto.DungeonCandidateTeamAvatarOuterClass.DungeonCandidateTeamAvatar result = new emu.grasscutter.net.proto.DungeonCandidateTeamAvatarOuterClass.DungeonCandidateTeamAvatar(this);
-        result.playerUid_ = playerUid_;
-        if (avatarInfoBuilder_ == null) {
-          result.avatarInfo_ = avatarInfo_;
+        result.enterType_ = enterType_;
+        if (dHNMGNOLFKJBuilder_ == null) {
+          result.dHNMGNOLFKJ_ = dHNMGNOLFKJ_;
         } else {
-          result.avatarInfo_ = avatarInfoBuilder_.build();
+          result.dHNMGNOLFKJ_ = dHNMGNOLFKJBuilder_.build();
         }
         onBuilt();
         return result;
@@ -476,11 +490,11 @@ public final class DungeonCandidateTeamAvatarOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DungeonCandidateTeamAvatarOuterClass.DungeonCandidateTeamAvatar other) {
         if (other == emu.grasscutter.net.proto.DungeonCandidateTeamAvatarOuterClass.DungeonCandidateTeamAvatar.getDefaultInstance()) return this;
-        if (other.getPlayerUid() != 0) {
-          setPlayerUid(other.getPlayerUid());
+        if (other.enterType_ != 0) {
+          setEnterTypeValue(other.getEnterTypeValue());
         }
-        if (other.hasAvatarInfo()) {
-          mergeAvatarInfo(other.getAvatarInfo());
+        if (other.hasDHNMGNOLFKJ()) {
+          mergeDHNMGNOLFKJ(other.getDHNMGNOLFKJ());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -511,154 +525,177 @@ public final class DungeonCandidateTeamAvatarOuterClass {
         return this;
       }
 
-      private int playerUid_ ;
+      private int enterType_ = 0;
       /**
-       * <code>uint32 player_uid = 3;</code>
-       * @return The playerUid.
+       * <code>.GMIOAJDAFAB enter_type = 13;</code>
+       * @return The enum numeric value on the wire for enterType.
        */
-      @java.lang.Override
-      public int getPlayerUid() {
-        return playerUid_;
+      @java.lang.Override public int getEnterTypeValue() {
+        return enterType_;
       }
       /**
-       * <code>uint32 player_uid = 3;</code>
-       * @param value The playerUid to set.
+       * <code>.GMIOAJDAFAB enter_type = 13;</code>
+       * @param value The enum numeric value on the wire for enterType to set.
        * @return This builder for chaining.
        */
-      public Builder setPlayerUid(int value) {
+      public Builder setEnterTypeValue(int value) {
         
-        playerUid_ = value;
+        enterType_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 player_uid = 3;</code>
+       * <code>.GMIOAJDAFAB enter_type = 13;</code>
+       * @return The enterType.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.GMIOAJDAFABOuterClass.GMIOAJDAFAB getEnterType() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.GMIOAJDAFABOuterClass.GMIOAJDAFAB result = emu.grasscutter.net.proto.GMIOAJDAFABOuterClass.GMIOAJDAFAB.valueOf(enterType_);
+        return result == null ? emu.grasscutter.net.proto.GMIOAJDAFABOuterClass.GMIOAJDAFAB.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.GMIOAJDAFAB enter_type = 13;</code>
+       * @param value The enterType to set.
        * @return This builder for chaining.
        */
-      public Builder clearPlayerUid() {
+      public Builder setEnterType(emu.grasscutter.net.proto.GMIOAJDAFABOuterClass.GMIOAJDAFAB value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
         
-        playerUid_ = 0;
+        enterType_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.GMIOAJDAFAB enter_type = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEnterType() {
+        
+        enterType_ = 0;
         onChanged();
         return this;
       }
 
-      private emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo avatarInfo_;
+      private emu.grasscutter.net.proto.EGEBOGIIBGBOuterClass.EGEBOGIIBGB dHNMGNOLFKJ_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo, emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo.Builder, emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfoOrBuilder> avatarInfoBuilder_;
+          emu.grasscutter.net.proto.EGEBOGIIBGBOuterClass.EGEBOGIIBGB, emu.grasscutter.net.proto.EGEBOGIIBGBOuterClass.EGEBOGIIBGB.Builder, emu.grasscutter.net.proto.EGEBOGIIBGBOuterClass.EGEBOGIIBGBOrBuilder> dHNMGNOLFKJBuilder_;
       /**
-       * <code>.AvatarInfo avatar_info = 4;</code>
-       * @return Whether the avatarInfo field is set.
+       * <code>.EGEBOGIIBGB DHNMGNOLFKJ = 4;</code>
+       * @return Whether the dHNMGNOLFKJ field is set.
        */
-      public boolean hasAvatarInfo() {
-        return avatarInfoBuilder_ != null || avatarInfo_ != null;
+      public boolean hasDHNMGNOLFKJ() {
+        return dHNMGNOLFKJBuilder_ != null || dHNMGNOLFKJ_ != null;
       }
       /**
-       * <code>.AvatarInfo avatar_info = 4;</code>
-       * @return The avatarInfo.
+       * <code>.EGEBOGIIBGB DHNMGNOLFKJ = 4;</code>
+       * @return The dHNMGNOLFKJ.
        */
-      public emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo getAvatarInfo() {
-        if (avatarInfoBuilder_ == null) {
-          return avatarInfo_ == null ? emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo.getDefaultInstance() : avatarInfo_;
+      public emu.grasscutter.net.proto.EGEBOGIIBGBOuterClass.EGEBOGIIBGB getDHNMGNOLFKJ() {
+        if (dHNMGNOLFKJBuilder_ == null) {
+          return dHNMGNOLFKJ_ == null ? emu.grasscutter.net.proto.EGEBOGIIBGBOuterClass.EGEBOGIIBGB.getDefaultInstance() : dHNMGNOLFKJ_;
         } else {
-          return avatarInfoBuilder_.getMessage();
+          return dHNMGNOLFKJBuilder_.getMessage();
         }
       }
       /**
-       * <code>.AvatarInfo avatar_info = 4;</code>
+       * <code>.EGEBOGIIBGB DHNMGNOLFKJ = 4;</code>
        */
-      public Builder setAvatarInfo(emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo value) {
-        if (avatarInfoBuilder_ == null) {
+      public Builder setDHNMGNOLFKJ(emu.grasscutter.net.proto.EGEBOGIIBGBOuterClass.EGEBOGIIBGB value) {
+        if (dHNMGNOLFKJBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          avatarInfo_ = value;
+          dHNMGNOLFKJ_ = value;
           onChanged();
         } else {
-          avatarInfoBuilder_.setMessage(value);
+          dHNMGNOLFKJBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.AvatarInfo avatar_info = 4;</code>
+       * <code>.EGEBOGIIBGB DHNMGNOLFKJ = 4;</code>
        */
-      public Builder setAvatarInfo(
-          emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo.Builder builderForValue) {
-        if (avatarInfoBuilder_ == null) {
-          avatarInfo_ = builderForValue.build();
+      public Builder setDHNMGNOLFKJ(
+          emu.grasscutter.net.proto.EGEBOGIIBGBOuterClass.EGEBOGIIBGB.Builder builderForValue) {
+        if (dHNMGNOLFKJBuilder_ == null) {
+          dHNMGNOLFKJ_ = builderForValue.build();
           onChanged();
         } else {
-          avatarInfoBuilder_.setMessage(builderForValue.build());
+          dHNMGNOLFKJBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.AvatarInfo avatar_info = 4;</code>
+       * <code>.EGEBOGIIBGB DHNMGNOLFKJ = 4;</code>
        */
-      public Builder mergeAvatarInfo(emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo value) {
-        if (avatarInfoBuilder_ == null) {
-          if (avatarInfo_ != null) {
-            avatarInfo_ =
-              emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo.newBuilder(avatarInfo_).mergeFrom(value).buildPartial();
+      public Builder mergeDHNMGNOLFKJ(emu.grasscutter.net.proto.EGEBOGIIBGBOuterClass.EGEBOGIIBGB value) {
+        if (dHNMGNOLFKJBuilder_ == null) {
+          if (dHNMGNOLFKJ_ != null) {
+            dHNMGNOLFKJ_ =
+              emu.grasscutter.net.proto.EGEBOGIIBGBOuterClass.EGEBOGIIBGB.newBuilder(dHNMGNOLFKJ_).mergeFrom(value).buildPartial();
           } else {
-            avatarInfo_ = value;
+            dHNMGNOLFKJ_ = value;
           }
           onChanged();
         } else {
-          avatarInfoBuilder_.mergeFrom(value);
+          dHNMGNOLFKJBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.AvatarInfo avatar_info = 4;</code>
+       * <code>.EGEBOGIIBGB DHNMGNOLFKJ = 4;</code>
        */
-      public Builder clearAvatarInfo() {
-        if (avatarInfoBuilder_ == null) {
-          avatarInfo_ = null;
+      public Builder clearDHNMGNOLFKJ() {
+        if (dHNMGNOLFKJBuilder_ == null) {
+          dHNMGNOLFKJ_ = null;
           onChanged();
         } else {
-          avatarInfo_ = null;
-          avatarInfoBuilder_ = null;
+          dHNMGNOLFKJ_ = null;
+          dHNMGNOLFKJBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.AvatarInfo avatar_info = 4;</code>
+       * <code>.EGEBOGIIBGB DHNMGNOLFKJ = 4;</code>
        */
-      public emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo.Builder getAvatarInfoBuilder() {
+      public emu.grasscutter.net.proto.EGEBOGIIBGBOuterClass.EGEBOGIIBGB.Builder getDHNMGNOLFKJBuilder() {
         
         onChanged();
-        return getAvatarInfoFieldBuilder().getBuilder();
+        return getDHNMGNOLFKJFieldBuilder().getBuilder();
       }
       /**
-       * <code>.AvatarInfo avatar_info = 4;</code>
+       * <code>.EGEBOGIIBGB DHNMGNOLFKJ = 4;</code>
        */
-      public emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfoOrBuilder getAvatarInfoOrBuilder() {
-        if (avatarInfoBuilder_ != null) {
-          return avatarInfoBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.EGEBOGIIBGBOuterClass.EGEBOGIIBGBOrBuilder getDHNMGNOLFKJOrBuilder() {
+        if (dHNMGNOLFKJBuilder_ != null) {
+          return dHNMGNOLFKJBuilder_.getMessageOrBuilder();
         } else {
-          return avatarInfo_ == null ?
-              emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo.getDefaultInstance() : avatarInfo_;
+          return dHNMGNOLFKJ_ == null ?
+              emu.grasscutter.net.proto.EGEBOGIIBGBOuterClass.EGEBOGIIBGB.getDefaultInstance() : dHNMGNOLFKJ_;
         }
       }
       /**
-       * <code>.AvatarInfo avatar_info = 4;</code>
+       * <code>.EGEBOGIIBGB DHNMGNOLFKJ = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo, emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo.Builder, emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfoOrBuilder> 
-          getAvatarInfoFieldBuilder() {
-        if (avatarInfoBuilder_ == null) {
-          avatarInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo, emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo.Builder, emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfoOrBuilder>(
-                  getAvatarInfo(),
+          emu.grasscutter.net.proto.EGEBOGIIBGBOuterClass.EGEBOGIIBGB, emu.grasscutter.net.proto.EGEBOGIIBGBOuterClass.EGEBOGIIBGB.Builder, emu.grasscutter.net.proto.EGEBOGIIBGBOuterClass.EGEBOGIIBGBOrBuilder> 
+          getDHNMGNOLFKJFieldBuilder() {
+        if (dHNMGNOLFKJBuilder_ == null) {
+          dHNMGNOLFKJBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.EGEBOGIIBGBOuterClass.EGEBOGIIBGB, emu.grasscutter.net.proto.EGEBOGIIBGBOuterClass.EGEBOGIIBGB.Builder, emu.grasscutter.net.proto.EGEBOGIIBGBOuterClass.EGEBOGIIBGBOrBuilder>(
+                  getDHNMGNOLFKJ(),
                   getParentForChildren(),
                   isClean());
-          avatarInfo_ = null;
+          dHNMGNOLFKJ_ = null;
         }
-        return avatarInfoBuilder_;
+        return dHNMGNOLFKJBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -727,24 +764,27 @@ public final class DungeonCandidateTeamAvatarOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n DungeonCandidateTeamAvatar.proto\032\020Avat" +
-      "arInfo.proto\"R\n\032DungeonCandidateTeamAvat" +
-      "ar\022\022\n\nplayer_uid\030\003 \001(\r\022 \n\013avatar_info\030\004 " +
-      "\001(\0132\013.AvatarInfoB\033\n\031emu.grasscutter.net." +
-      "protob\006proto3"
+      "\n DungeonCandidateTeamAvatar.proto\032\021GMIO" +
+      "AJDAFAB.proto\032\021EGEBOGIIBGB.proto\"a\n\032Dung" +
+      "eonCandidateTeamAvatar\022 \n\nenter_type\030\r \001" +
+      "(\0162\014.GMIOAJDAFAB\022!\n\013DHNMGNOLFKJ\030\004 \001(\0132\014." +
+      "EGEBOGIIBGBB\033\n\031emu.grasscutter.net.proto" +
+      "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.AvatarInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GMIOAJDAFABOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.EGEBOGIIBGBOuterClass.getDescriptor(),
         });
     internal_static_DungeonCandidateTeamAvatar_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_DungeonCandidateTeamAvatar_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DungeonCandidateTeamAvatar_descriptor,
-        new java.lang.String[] { "PlayerUid", "AvatarInfo", });
-    emu.grasscutter.net.proto.AvatarInfoOuterClass.getDescriptor();
+        new java.lang.String[] { "EnterType", "DHNMGNOLFKJ", });
+    emu.grasscutter.net.proto.GMIOAJDAFABOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.EGEBOGIIBGBOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

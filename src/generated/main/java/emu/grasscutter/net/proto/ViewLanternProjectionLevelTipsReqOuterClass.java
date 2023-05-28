@@ -19,15 +19,15 @@ public final class ViewLanternProjectionLevelTipsReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 3;</code>
+     * <code>uint32 level_id = 8;</code>
      * @return The levelId.
      */
     int getLevelId();
   }
   /**
    * <pre>
-   * Name: BOAINCLDMBC
-   * CmdId: 8937
+   * CmdId: 8953
+   * Obf: MKGJEKLFPLE
    * </pre>
    *
    * Protobuf type {@code ViewLanternProjectionLevelTipsReq}
@@ -74,7 +74,7 @@ public final class ViewLanternProjectionLevelTipsReqOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 64: {
 
               levelId_ = input.readUInt32();
               break;
@@ -111,10 +111,10 @@ public final class ViewLanternProjectionLevelTipsReqOuterClass {
               emu.grasscutter.net.proto.ViewLanternProjectionLevelTipsReqOuterClass.ViewLanternProjectionLevelTipsReq.class, emu.grasscutter.net.proto.ViewLanternProjectionLevelTipsReqOuterClass.ViewLanternProjectionLevelTipsReq.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 3;
+    public static final int LEVEL_ID_FIELD_NUMBER = 8;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 3;</code>
+     * <code>uint32 level_id = 8;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class ViewLanternProjectionLevelTipsReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (levelId_ != 0) {
-        output.writeUInt32(3, levelId_);
+        output.writeUInt32(8, levelId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class ViewLanternProjectionLevelTipsReqOuterClass {
       size = 0;
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, levelId_);
+          .computeUInt32Size(8, levelId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class ViewLanternProjectionLevelTipsReqOuterClass {
     }
     /**
      * <pre>
-     * Name: BOAINCLDMBC
-     * CmdId: 8937
+     * CmdId: 8953
+     * Obf: MKGJEKLFPLE
      * </pre>
      *
      * Protobuf type {@code ViewLanternProjectionLevelTipsReq}
@@ -431,7 +431,7 @@ public final class ViewLanternProjectionLevelTipsReqOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 3;</code>
+       * <code>uint32 level_id = 8;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class ViewLanternProjectionLevelTipsReqOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 3;</code>
+       * <code>uint32 level_id = 8;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class ViewLanternProjectionLevelTipsReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 3;</code>
+       * <code>uint32 level_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -528,7 +528,7 @@ public final class ViewLanternProjectionLevelTipsReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\'ViewLanternProjectionLevelTipsReq.prot" +
       "o\"5\n!ViewLanternProjectionLevelTipsReq\022\020" +
-      "\n\010level_id\030\003 \001(\rB\033\n\031emu.grasscutter.net." +
+      "\n\010level_id\030\010 \001(\rB\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

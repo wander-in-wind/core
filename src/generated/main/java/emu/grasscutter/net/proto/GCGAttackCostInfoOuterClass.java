@@ -19,58 +19,38 @@ public final class GCGAttackCostInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *FHMGOBDDINB snooswap
-     * </pre>
-     *
-     * <code>repeated .Uint32Pair cost_map = 3;</code>
+     * <code>uint32 skill_id = 12;</code>
+     * @return The skillId.
+     */
+    int getSkillId();
+
+    /**
+     * <code>repeated .Uint32Pair cost_map = 4;</code>
      */
     java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> 
         getCostMapList();
     /**
-     * <pre>
-     *FHMGOBDDINB snooswap
-     * </pre>
-     *
-     * <code>repeated .Uint32Pair cost_map = 3;</code>
+     * <code>repeated .Uint32Pair cost_map = 4;</code>
      */
     emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getCostMap(int index);
     /**
-     * <pre>
-     *FHMGOBDDINB snooswap
-     * </pre>
-     *
-     * <code>repeated .Uint32Pair cost_map = 3;</code>
+     * <code>repeated .Uint32Pair cost_map = 4;</code>
      */
     int getCostMapCount();
     /**
-     * <pre>
-     *FHMGOBDDINB snooswap
-     * </pre>
-     *
-     * <code>repeated .Uint32Pair cost_map = 3;</code>
+     * <code>repeated .Uint32Pair cost_map = 4;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
         getCostMapOrBuilderList();
     /**
-     * <pre>
-     *FHMGOBDDINB snooswap
-     * </pre>
-     *
-     * <code>repeated .Uint32Pair cost_map = 3;</code>
+     * <code>repeated .Uint32Pair cost_map = 4;</code>
      */
     emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getCostMapOrBuilder(
         int index);
-
-    /**
-     * <code>uint32 skill_id = 10;</code>
-     * @return The skillId.
-     */
-    int getSkillId();
   }
   /**
    * <pre>
-   * Name: PLPINEPGFHD
+   * Obf: IADEIPANMIH
    * </pre>
    *
    * Protobuf type {@code GCGAttackCostInfo}
@@ -119,7 +99,7 @@ public final class GCGAttackCostInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
+            case 34: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 costMap_ = new java.util.ArrayList<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair>();
                 mutable_bitField0_ |= 0x00000001;
@@ -128,7 +108,7 @@ public final class GCGAttackCostInfoOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.parser(), extensionRegistry));
               break;
             }
-            case 80: {
+            case 96: {
 
               skillId_ = input.readUInt32();
               break;
@@ -168,25 +148,28 @@ public final class GCGAttackCostInfoOuterClass {
               emu.grasscutter.net.proto.GCGAttackCostInfoOuterClass.GCGAttackCostInfo.class, emu.grasscutter.net.proto.GCGAttackCostInfoOuterClass.GCGAttackCostInfo.Builder.class);
     }
 
-    public static final int COST_MAP_FIELD_NUMBER = 3;
+    public static final int SKILL_ID_FIELD_NUMBER = 12;
+    private int skillId_;
+    /**
+     * <code>uint32 skill_id = 12;</code>
+     * @return The skillId.
+     */
+    @java.lang.Override
+    public int getSkillId() {
+      return skillId_;
+    }
+
+    public static final int COST_MAP_FIELD_NUMBER = 4;
     private java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> costMap_;
     /**
-     * <pre>
-     *FHMGOBDDINB snooswap
-     * </pre>
-     *
-     * <code>repeated .Uint32Pair cost_map = 3;</code>
+     * <code>repeated .Uint32Pair cost_map = 4;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> getCostMapList() {
       return costMap_;
     }
     /**
-     * <pre>
-     *FHMGOBDDINB snooswap
-     * </pre>
-     *
-     * <code>repeated .Uint32Pair cost_map = 3;</code>
+     * <code>repeated .Uint32Pair cost_map = 4;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
@@ -194,49 +177,26 @@ public final class GCGAttackCostInfoOuterClass {
       return costMap_;
     }
     /**
-     * <pre>
-     *FHMGOBDDINB snooswap
-     * </pre>
-     *
-     * <code>repeated .Uint32Pair cost_map = 3;</code>
+     * <code>repeated .Uint32Pair cost_map = 4;</code>
      */
     @java.lang.Override
     public int getCostMapCount() {
       return costMap_.size();
     }
     /**
-     * <pre>
-     *FHMGOBDDINB snooswap
-     * </pre>
-     *
-     * <code>repeated .Uint32Pair cost_map = 3;</code>
+     * <code>repeated .Uint32Pair cost_map = 4;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getCostMap(int index) {
       return costMap_.get(index);
     }
     /**
-     * <pre>
-     *FHMGOBDDINB snooswap
-     * </pre>
-     *
-     * <code>repeated .Uint32Pair cost_map = 3;</code>
+     * <code>repeated .Uint32Pair cost_map = 4;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getCostMapOrBuilder(
         int index) {
       return costMap_.get(index);
-    }
-
-    public static final int SKILL_ID_FIELD_NUMBER = 10;
-    private int skillId_;
-    /**
-     * <code>uint32 skill_id = 10;</code>
-     * @return The skillId.
-     */
-    @java.lang.Override
-    public int getSkillId() {
-      return skillId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -254,10 +214,10 @@ public final class GCGAttackCostInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < costMap_.size(); i++) {
-        output.writeMessage(3, costMap_.get(i));
+        output.writeMessage(4, costMap_.get(i));
       }
       if (skillId_ != 0) {
-        output.writeUInt32(10, skillId_);
+        output.writeUInt32(12, skillId_);
       }
       unknownFields.writeTo(output);
     }
@@ -270,11 +230,11 @@ public final class GCGAttackCostInfoOuterClass {
       size = 0;
       for (int i = 0; i < costMap_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, costMap_.get(i));
+          .computeMessageSize(4, costMap_.get(i));
       }
       if (skillId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, skillId_);
+          .computeUInt32Size(12, skillId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -291,10 +251,10 @@ public final class GCGAttackCostInfoOuterClass {
       }
       emu.grasscutter.net.proto.GCGAttackCostInfoOuterClass.GCGAttackCostInfo other = (emu.grasscutter.net.proto.GCGAttackCostInfoOuterClass.GCGAttackCostInfo) obj;
 
-      if (!getCostMapList()
-          .equals(other.getCostMapList())) return false;
       if (getSkillId()
           != other.getSkillId()) return false;
+      if (!getCostMapList()
+          .equals(other.getCostMapList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -306,12 +266,12 @@ public final class GCGAttackCostInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + SKILL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSkillId();
       if (getCostMapCount() > 0) {
         hash = (37 * hash) + COST_MAP_FIELD_NUMBER;
         hash = (53 * hash) + getCostMapList().hashCode();
       }
-      hash = (37 * hash) + SKILL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSkillId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -409,7 +369,7 @@ public final class GCGAttackCostInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: PLPINEPGFHD
+     * Obf: IADEIPANMIH
      * </pre>
      *
      * Protobuf type {@code GCGAttackCostInfo}
@@ -450,14 +410,14 @@ public final class GCGAttackCostInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        skillId_ = 0;
+
         if (costMapBuilder_ == null) {
           costMap_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           costMapBuilder_.clear();
         }
-        skillId_ = 0;
-
         return this;
       }
 
@@ -485,6 +445,7 @@ public final class GCGAttackCostInfoOuterClass {
       public emu.grasscutter.net.proto.GCGAttackCostInfoOuterClass.GCGAttackCostInfo buildPartial() {
         emu.grasscutter.net.proto.GCGAttackCostInfoOuterClass.GCGAttackCostInfo result = new emu.grasscutter.net.proto.GCGAttackCostInfoOuterClass.GCGAttackCostInfo(this);
         int from_bitField0_ = bitField0_;
+        result.skillId_ = skillId_;
         if (costMapBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             costMap_ = java.util.Collections.unmodifiableList(costMap_);
@@ -494,7 +455,6 @@ public final class GCGAttackCostInfoOuterClass {
         } else {
           result.costMap_ = costMapBuilder_.build();
         }
-        result.skillId_ = skillId_;
         onBuilt();
         return result;
       }
@@ -543,6 +503,9 @@ public final class GCGAttackCostInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGAttackCostInfoOuterClass.GCGAttackCostInfo other) {
         if (other == emu.grasscutter.net.proto.GCGAttackCostInfoOuterClass.GCGAttackCostInfo.getDefaultInstance()) return this;
+        if (other.getSkillId() != 0) {
+          setSkillId(other.getSkillId());
+        }
         if (costMapBuilder_ == null) {
           if (!other.costMap_.isEmpty()) {
             if (costMap_.isEmpty()) {
@@ -568,9 +531,6 @@ public final class GCGAttackCostInfoOuterClass {
               costMapBuilder_.addAllMessages(other.costMap_);
             }
           }
-        }
-        if (other.getSkillId() != 0) {
-          setSkillId(other.getSkillId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -602,6 +562,37 @@ public final class GCGAttackCostInfoOuterClass {
       }
       private int bitField0_;
 
+      private int skillId_ ;
+      /**
+       * <code>uint32 skill_id = 12;</code>
+       * @return The skillId.
+       */
+      @java.lang.Override
+      public int getSkillId() {
+        return skillId_;
+      }
+      /**
+       * <code>uint32 skill_id = 12;</code>
+       * @param value The skillId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSkillId(int value) {
+        
+        skillId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 skill_id = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSkillId() {
+        
+        skillId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> costMap_ =
         java.util.Collections.emptyList();
       private void ensureCostMapIsMutable() {
@@ -615,11 +606,7 @@ public final class GCGAttackCostInfoOuterClass {
           emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> costMapBuilder_;
 
       /**
-       * <pre>
-       *FHMGOBDDINB snooswap
-       * </pre>
-       *
-       * <code>repeated .Uint32Pair cost_map = 3;</code>
+       * <code>repeated .Uint32Pair cost_map = 4;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> getCostMapList() {
         if (costMapBuilder_ == null) {
@@ -629,11 +616,7 @@ public final class GCGAttackCostInfoOuterClass {
         }
       }
       /**
-       * <pre>
-       *FHMGOBDDINB snooswap
-       * </pre>
-       *
-       * <code>repeated .Uint32Pair cost_map = 3;</code>
+       * <code>repeated .Uint32Pair cost_map = 4;</code>
        */
       public int getCostMapCount() {
         if (costMapBuilder_ == null) {
@@ -643,11 +626,7 @@ public final class GCGAttackCostInfoOuterClass {
         }
       }
       /**
-       * <pre>
-       *FHMGOBDDINB snooswap
-       * </pre>
-       *
-       * <code>repeated .Uint32Pair cost_map = 3;</code>
+       * <code>repeated .Uint32Pair cost_map = 4;</code>
        */
       public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getCostMap(int index) {
         if (costMapBuilder_ == null) {
@@ -657,11 +636,7 @@ public final class GCGAttackCostInfoOuterClass {
         }
       }
       /**
-       * <pre>
-       *FHMGOBDDINB snooswap
-       * </pre>
-       *
-       * <code>repeated .Uint32Pair cost_map = 3;</code>
+       * <code>repeated .Uint32Pair cost_map = 4;</code>
        */
       public Builder setCostMap(
           int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
@@ -678,11 +653,7 @@ public final class GCGAttackCostInfoOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *FHMGOBDDINB snooswap
-       * </pre>
-       *
-       * <code>repeated .Uint32Pair cost_map = 3;</code>
+       * <code>repeated .Uint32Pair cost_map = 4;</code>
        */
       public Builder setCostMap(
           int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder builderForValue) {
@@ -696,11 +667,7 @@ public final class GCGAttackCostInfoOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *FHMGOBDDINB snooswap
-       * </pre>
-       *
-       * <code>repeated .Uint32Pair cost_map = 3;</code>
+       * <code>repeated .Uint32Pair cost_map = 4;</code>
        */
       public Builder addCostMap(emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
         if (costMapBuilder_ == null) {
@@ -716,11 +683,7 @@ public final class GCGAttackCostInfoOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *FHMGOBDDINB snooswap
-       * </pre>
-       *
-       * <code>repeated .Uint32Pair cost_map = 3;</code>
+       * <code>repeated .Uint32Pair cost_map = 4;</code>
        */
       public Builder addCostMap(
           int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
@@ -737,11 +700,7 @@ public final class GCGAttackCostInfoOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *FHMGOBDDINB snooswap
-       * </pre>
-       *
-       * <code>repeated .Uint32Pair cost_map = 3;</code>
+       * <code>repeated .Uint32Pair cost_map = 4;</code>
        */
       public Builder addCostMap(
           emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder builderForValue) {
@@ -755,11 +714,7 @@ public final class GCGAttackCostInfoOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *FHMGOBDDINB snooswap
-       * </pre>
-       *
-       * <code>repeated .Uint32Pair cost_map = 3;</code>
+       * <code>repeated .Uint32Pair cost_map = 4;</code>
        */
       public Builder addCostMap(
           int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder builderForValue) {
@@ -773,11 +728,7 @@ public final class GCGAttackCostInfoOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *FHMGOBDDINB snooswap
-       * </pre>
-       *
-       * <code>repeated .Uint32Pair cost_map = 3;</code>
+       * <code>repeated .Uint32Pair cost_map = 4;</code>
        */
       public Builder addAllCostMap(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> values) {
@@ -792,11 +743,7 @@ public final class GCGAttackCostInfoOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *FHMGOBDDINB snooswap
-       * </pre>
-       *
-       * <code>repeated .Uint32Pair cost_map = 3;</code>
+       * <code>repeated .Uint32Pair cost_map = 4;</code>
        */
       public Builder clearCostMap() {
         if (costMapBuilder_ == null) {
@@ -809,11 +756,7 @@ public final class GCGAttackCostInfoOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *FHMGOBDDINB snooswap
-       * </pre>
-       *
-       * <code>repeated .Uint32Pair cost_map = 3;</code>
+       * <code>repeated .Uint32Pair cost_map = 4;</code>
        */
       public Builder removeCostMap(int index) {
         if (costMapBuilder_ == null) {
@@ -826,22 +769,14 @@ public final class GCGAttackCostInfoOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *FHMGOBDDINB snooswap
-       * </pre>
-       *
-       * <code>repeated .Uint32Pair cost_map = 3;</code>
+       * <code>repeated .Uint32Pair cost_map = 4;</code>
        */
       public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder getCostMapBuilder(
           int index) {
         return getCostMapFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *FHMGOBDDINB snooswap
-       * </pre>
-       *
-       * <code>repeated .Uint32Pair cost_map = 3;</code>
+       * <code>repeated .Uint32Pair cost_map = 4;</code>
        */
       public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getCostMapOrBuilder(
           int index) {
@@ -851,11 +786,7 @@ public final class GCGAttackCostInfoOuterClass {
         }
       }
       /**
-       * <pre>
-       *FHMGOBDDINB snooswap
-       * </pre>
-       *
-       * <code>repeated .Uint32Pair cost_map = 3;</code>
+       * <code>repeated .Uint32Pair cost_map = 4;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
            getCostMapOrBuilderList() {
@@ -866,22 +797,14 @@ public final class GCGAttackCostInfoOuterClass {
         }
       }
       /**
-       * <pre>
-       *FHMGOBDDINB snooswap
-       * </pre>
-       *
-       * <code>repeated .Uint32Pair cost_map = 3;</code>
+       * <code>repeated .Uint32Pair cost_map = 4;</code>
        */
       public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder addCostMapBuilder() {
         return getCostMapFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.getDefaultInstance());
       }
       /**
-       * <pre>
-       *FHMGOBDDINB snooswap
-       * </pre>
-       *
-       * <code>repeated .Uint32Pair cost_map = 3;</code>
+       * <code>repeated .Uint32Pair cost_map = 4;</code>
        */
       public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder addCostMapBuilder(
           int index) {
@@ -889,11 +812,7 @@ public final class GCGAttackCostInfoOuterClass {
             index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.getDefaultInstance());
       }
       /**
-       * <pre>
-       *FHMGOBDDINB snooswap
-       * </pre>
-       *
-       * <code>repeated .Uint32Pair cost_map = 3;</code>
+       * <code>repeated .Uint32Pair cost_map = 4;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder> 
            getCostMapBuilderList() {
@@ -912,37 +831,6 @@ public final class GCGAttackCostInfoOuterClass {
           costMap_ = null;
         }
         return costMapBuilder_;
-      }
-
-      private int skillId_ ;
-      /**
-       * <code>uint32 skill_id = 10;</code>
-       * @return The skillId.
-       */
-      @java.lang.Override
-      public int getSkillId() {
-        return skillId_;
-      }
-      /**
-       * <code>uint32 skill_id = 10;</code>
-       * @param value The skillId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSkillId(int value) {
-        
-        skillId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 skill_id = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSkillId() {
-        
-        skillId_ = 0;
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1012,8 +900,8 @@ public final class GCGAttackCostInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027GCGAttackCostInfo.proto\032\020Uint32Pair.pr" +
-      "oto\"D\n\021GCGAttackCostInfo\022\035\n\010cost_map\030\003 \003" +
-      "(\0132\013.Uint32Pair\022\020\n\010skill_id\030\n \001(\rB\033\n\031emu" +
+      "oto\"D\n\021GCGAttackCostInfo\022\020\n\010skill_id\030\014 \001" +
+      "(\r\022\035\n\010cost_map\030\004 \003(\0132\013.Uint32PairB\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1026,7 +914,7 @@ public final class GCGAttackCostInfoOuterClass {
     internal_static_GCGAttackCostInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGAttackCostInfo_descriptor,
-        new java.lang.String[] { "CostMap", "SkillId", });
+        new java.lang.String[] { "SkillId", "CostMap", });
     emu.grasscutter.net.proto.Uint32PairOuterClass.getDescriptor();
   }
 

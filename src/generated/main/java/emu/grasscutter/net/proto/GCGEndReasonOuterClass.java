@@ -16,7 +16,7 @@ public final class GCGEndReasonOuterClass {
   }
   /**
    * <pre>
-   * Name: GNNLENFEFKP
+   * Obf: KHBHKELMHNO
    * </pre>
    *
    * Protobuf enum {@code GCGEndReason}
@@ -64,9 +64,9 @@ public final class GCGEndReasonOuterClass {
      */
     GCG_END_REASON_EFFECT(9),
     /**
-     * <code>GCG_END_REASON_MEBCCAFFADK = 10;</code>
+     * <code>GCG_END_REASON_EXPIRE_TIMEOUT = 10;</code>
      */
-    GCG_END_REASON_MEBCCAFFADK(10),
+    GCG_END_REASON_EXPIRE_TIMEOUT(10),
     UNRECOGNIZED(-1),
     ;
 
@@ -111,9 +111,9 @@ public final class GCGEndReasonOuterClass {
      */
     public static final int GCG_END_REASON_EFFECT_VALUE = 9;
     /**
-     * <code>GCG_END_REASON_MEBCCAFFADK = 10;</code>
+     * <code>GCG_END_REASON_EXPIRE_TIMEOUT = 10;</code>
      */
-    public static final int GCG_END_REASON_MEBCCAFFADK_VALUE = 10;
+    public static final int GCG_END_REASON_EXPIRE_TIMEOUT_VALUE = 10;
 
 
     public final int getNumber() {
@@ -150,7 +150,7 @@ public final class GCGEndReasonOuterClass {
         case 7: return GCG_END_REASON_GIVE_UP;
         case 8: return GCG_END_REASON_INIT_TIMEOUT;
         case 9: return GCG_END_REASON_EFFECT;
-        case 10: return GCG_END_REASON_MEBCCAFFADK;
+        case 10: return GCG_END_REASON_EXPIRE_TIMEOUT;
         default: return null;
       }
     }
@@ -216,7 +216,7 @@ public final class GCGEndReasonOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\022GCGEndReason.proto*\316\002\n\014GCGEndReason\022\032\n" +
+      "\n\022GCGEndReason.proto*\321\002\n\014GCGEndReason\022\032\n" +
       "\026GCG_END_REASON_DEFAULT\020\000\022\026\n\022GCG_END_REA" +
       "SON_DIE\020\001\022\034\n\030GCG_END_REASON_SURRENDER\020\002\022" +
       "\037\n\033GCG_END_REASON_DISCONNECTED\020\003\022\036\n\032GCG_" +
@@ -224,8 +224,8 @@ public final class GCGEndReasonOuterClass {
       "ON_GM\020\005\022\034\n\030GCG_END_REASON_NO_PLAYER\020\006\022\032\n" +
       "\026GCG_END_REASON_GIVE_UP\020\007\022\037\n\033GCG_END_REA" +
       "SON_INIT_TIMEOUT\020\010\022\031\n\025GCG_END_REASON_EFF" +
-      "ECT\020\t\022\036\n\032GCG_END_REASON_MEBCCAFFADK\020\nB\033\n" +
-      "\031emu.grasscutter.net.protob\006proto3"
+      "ECT\020\t\022!\n\035GCG_END_REASON_EXPIRE_TIMEOUT\020\n" +
+      "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

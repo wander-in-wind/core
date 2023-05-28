@@ -19,15 +19,15 @@ public final class MichiaeMatsuriInteractStatueReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 statue_entity_id = 3;</code>
+     * <code>uint32 statue_entity_id = 12;</code>
      * @return The statueEntityId.
      */
     int getStatueEntityId();
   }
   /**
    * <pre>
-   * Name: PNFBKOPDCBA
-   * CmdId: 8836
+   * CmdId: 8736
+   * Obf: BEHEDEIECCE
    * </pre>
    *
    * Protobuf type {@code MichiaeMatsuriInteractStatueReq}
@@ -74,7 +74,7 @@ public final class MichiaeMatsuriInteractStatueReqOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 96: {
 
               statueEntityId_ = input.readUInt32();
               break;
@@ -111,10 +111,10 @@ public final class MichiaeMatsuriInteractStatueReqOuterClass {
               emu.grasscutter.net.proto.MichiaeMatsuriInteractStatueReqOuterClass.MichiaeMatsuriInteractStatueReq.class, emu.grasscutter.net.proto.MichiaeMatsuriInteractStatueReqOuterClass.MichiaeMatsuriInteractStatueReq.Builder.class);
     }
 
-    public static final int STATUE_ENTITY_ID_FIELD_NUMBER = 3;
+    public static final int STATUE_ENTITY_ID_FIELD_NUMBER = 12;
     private int statueEntityId_;
     /**
-     * <code>uint32 statue_entity_id = 3;</code>
+     * <code>uint32 statue_entity_id = 12;</code>
      * @return The statueEntityId.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class MichiaeMatsuriInteractStatueReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (statueEntityId_ != 0) {
-        output.writeUInt32(3, statueEntityId_);
+        output.writeUInt32(12, statueEntityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class MichiaeMatsuriInteractStatueReqOuterClass {
       size = 0;
       if (statueEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, statueEntityId_);
+          .computeUInt32Size(12, statueEntityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class MichiaeMatsuriInteractStatueReqOuterClass {
     }
     /**
      * <pre>
-     * Name: PNFBKOPDCBA
-     * CmdId: 8836
+     * CmdId: 8736
+     * Obf: BEHEDEIECCE
      * </pre>
      *
      * Protobuf type {@code MichiaeMatsuriInteractStatueReq}
@@ -431,7 +431,7 @@ public final class MichiaeMatsuriInteractStatueReqOuterClass {
 
       private int statueEntityId_ ;
       /**
-       * <code>uint32 statue_entity_id = 3;</code>
+       * <code>uint32 statue_entity_id = 12;</code>
        * @return The statueEntityId.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class MichiaeMatsuriInteractStatueReqOuterClass {
         return statueEntityId_;
       }
       /**
-       * <code>uint32 statue_entity_id = 3;</code>
+       * <code>uint32 statue_entity_id = 12;</code>
        * @param value The statueEntityId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class MichiaeMatsuriInteractStatueReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 statue_entity_id = 3;</code>
+       * <code>uint32 statue_entity_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearStatueEntityId() {
@@ -528,7 +528,7 @@ public final class MichiaeMatsuriInteractStatueReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n%MichiaeMatsuriInteractStatueReq.proto\"" +
       ";\n\037MichiaeMatsuriInteractStatueReq\022\030\n\020st" +
-      "atue_entity_id\030\003 \001(\rB\033\n\031emu.grasscutter." +
+      "atue_entity_id\030\014 \001(\rB\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

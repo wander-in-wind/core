@@ -19,30 +19,30 @@ public final class PlayerApplyEnterHomeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.OnlinePlayerInfo src_player_info = 11;</code>
+     * <code>.OnlinePlayerInfo src_player_info = 2;</code>
      * @return Whether the srcPlayerInfo field is set.
      */
     boolean hasSrcPlayerInfo();
     /**
-     * <code>.OnlinePlayerInfo src_player_info = 11;</code>
+     * <code>.OnlinePlayerInfo src_player_info = 2;</code>
      * @return The srcPlayerInfo.
      */
     emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo getSrcPlayerInfo();
     /**
-     * <code>.OnlinePlayerInfo src_player_info = 11;</code>
+     * <code>.OnlinePlayerInfo src_player_info = 2;</code>
      */
     emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder getSrcPlayerInfoOrBuilder();
 
     /**
-     * <code>uint32 src_app_id = 8;</code>
+     * <code>uint32 src_app_id = 15;</code>
      * @return The srcAppId.
      */
     int getSrcAppId();
   }
   /**
    * <pre>
-   * Name: PHLBANPNLLI
-   * CmdId: 4757
+   * CmdId: 4495
+   * Obf: LPGJIFPNDHN
    * </pre>
    *
    * Protobuf type {@code PlayerApplyEnterHomeNotify}
@@ -89,12 +89,7 @@ public final class PlayerApplyEnterHomeNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
-
-              srcAppId_ = input.readUInt32();
-              break;
-            }
-            case 90: {
+            case 18: {
               emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder subBuilder = null;
               if (srcPlayerInfo_ != null) {
                 subBuilder = srcPlayerInfo_.toBuilder();
@@ -105,6 +100,11 @@ public final class PlayerApplyEnterHomeNotifyOuterClass {
                 srcPlayerInfo_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 120: {
+
+              srcAppId_ = input.readUInt32();
               break;
             }
             default: {
@@ -139,10 +139,10 @@ public final class PlayerApplyEnterHomeNotifyOuterClass {
               emu.grasscutter.net.proto.PlayerApplyEnterHomeNotifyOuterClass.PlayerApplyEnterHomeNotify.class, emu.grasscutter.net.proto.PlayerApplyEnterHomeNotifyOuterClass.PlayerApplyEnterHomeNotify.Builder.class);
     }
 
-    public static final int SRC_PLAYER_INFO_FIELD_NUMBER = 11;
+    public static final int SRC_PLAYER_INFO_FIELD_NUMBER = 2;
     private emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo srcPlayerInfo_;
     /**
-     * <code>.OnlinePlayerInfo src_player_info = 11;</code>
+     * <code>.OnlinePlayerInfo src_player_info = 2;</code>
      * @return Whether the srcPlayerInfo field is set.
      */
     @java.lang.Override
@@ -150,7 +150,7 @@ public final class PlayerApplyEnterHomeNotifyOuterClass {
       return srcPlayerInfo_ != null;
     }
     /**
-     * <code>.OnlinePlayerInfo src_player_info = 11;</code>
+     * <code>.OnlinePlayerInfo src_player_info = 2;</code>
      * @return The srcPlayerInfo.
      */
     @java.lang.Override
@@ -158,17 +158,17 @@ public final class PlayerApplyEnterHomeNotifyOuterClass {
       return srcPlayerInfo_ == null ? emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.getDefaultInstance() : srcPlayerInfo_;
     }
     /**
-     * <code>.OnlinePlayerInfo src_player_info = 11;</code>
+     * <code>.OnlinePlayerInfo src_player_info = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder getSrcPlayerInfoOrBuilder() {
       return getSrcPlayerInfo();
     }
 
-    public static final int SRC_APP_ID_FIELD_NUMBER = 8;
+    public static final int SRC_APP_ID_FIELD_NUMBER = 15;
     private int srcAppId_;
     /**
-     * <code>uint32 src_app_id = 8;</code>
+     * <code>uint32 src_app_id = 15;</code>
      * @return The srcAppId.
      */
     @java.lang.Override
@@ -190,11 +190,11 @@ public final class PlayerApplyEnterHomeNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (srcAppId_ != 0) {
-        output.writeUInt32(8, srcAppId_);
-      }
       if (srcPlayerInfo_ != null) {
-        output.writeMessage(11, getSrcPlayerInfo());
+        output.writeMessage(2, getSrcPlayerInfo());
+      }
+      if (srcAppId_ != 0) {
+        output.writeUInt32(15, srcAppId_);
       }
       unknownFields.writeTo(output);
     }
@@ -205,13 +205,13 @@ public final class PlayerApplyEnterHomeNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (srcAppId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, srcAppId_);
-      }
       if (srcPlayerInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, getSrcPlayerInfo());
+          .computeMessageSize(2, getSrcPlayerInfo());
+      }
+      if (srcAppId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, srcAppId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -349,8 +349,8 @@ public final class PlayerApplyEnterHomeNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: PHLBANPNLLI
-     * CmdId: 4757
+     * CmdId: 4495
+     * Obf: LPGJIFPNDHN
      * </pre>
      *
      * Protobuf type {@code PlayerApplyEnterHomeNotify}
@@ -517,14 +517,14 @@ public final class PlayerApplyEnterHomeNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder> srcPlayerInfoBuilder_;
       /**
-       * <code>.OnlinePlayerInfo src_player_info = 11;</code>
+       * <code>.OnlinePlayerInfo src_player_info = 2;</code>
        * @return Whether the srcPlayerInfo field is set.
        */
       public boolean hasSrcPlayerInfo() {
         return srcPlayerInfoBuilder_ != null || srcPlayerInfo_ != null;
       }
       /**
-       * <code>.OnlinePlayerInfo src_player_info = 11;</code>
+       * <code>.OnlinePlayerInfo src_player_info = 2;</code>
        * @return The srcPlayerInfo.
        */
       public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo getSrcPlayerInfo() {
@@ -535,7 +535,7 @@ public final class PlayerApplyEnterHomeNotifyOuterClass {
         }
       }
       /**
-       * <code>.OnlinePlayerInfo src_player_info = 11;</code>
+       * <code>.OnlinePlayerInfo src_player_info = 2;</code>
        */
       public Builder setSrcPlayerInfo(emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo value) {
         if (srcPlayerInfoBuilder_ == null) {
@@ -551,7 +551,7 @@ public final class PlayerApplyEnterHomeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.OnlinePlayerInfo src_player_info = 11;</code>
+       * <code>.OnlinePlayerInfo src_player_info = 2;</code>
        */
       public Builder setSrcPlayerInfo(
           emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder builderForValue) {
@@ -565,7 +565,7 @@ public final class PlayerApplyEnterHomeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.OnlinePlayerInfo src_player_info = 11;</code>
+       * <code>.OnlinePlayerInfo src_player_info = 2;</code>
        */
       public Builder mergeSrcPlayerInfo(emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo value) {
         if (srcPlayerInfoBuilder_ == null) {
@@ -583,7 +583,7 @@ public final class PlayerApplyEnterHomeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.OnlinePlayerInfo src_player_info = 11;</code>
+       * <code>.OnlinePlayerInfo src_player_info = 2;</code>
        */
       public Builder clearSrcPlayerInfo() {
         if (srcPlayerInfoBuilder_ == null) {
@@ -597,7 +597,7 @@ public final class PlayerApplyEnterHomeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.OnlinePlayerInfo src_player_info = 11;</code>
+       * <code>.OnlinePlayerInfo src_player_info = 2;</code>
        */
       public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder getSrcPlayerInfoBuilder() {
         
@@ -605,7 +605,7 @@ public final class PlayerApplyEnterHomeNotifyOuterClass {
         return getSrcPlayerInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.OnlinePlayerInfo src_player_info = 11;</code>
+       * <code>.OnlinePlayerInfo src_player_info = 2;</code>
        */
       public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder getSrcPlayerInfoOrBuilder() {
         if (srcPlayerInfoBuilder_ != null) {
@@ -616,7 +616,7 @@ public final class PlayerApplyEnterHomeNotifyOuterClass {
         }
       }
       /**
-       * <code>.OnlinePlayerInfo src_player_info = 11;</code>
+       * <code>.OnlinePlayerInfo src_player_info = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder> 
@@ -634,7 +634,7 @@ public final class PlayerApplyEnterHomeNotifyOuterClass {
 
       private int srcAppId_ ;
       /**
-       * <code>uint32 src_app_id = 8;</code>
+       * <code>uint32 src_app_id = 15;</code>
        * @return The srcAppId.
        */
       @java.lang.Override
@@ -642,7 +642,7 @@ public final class PlayerApplyEnterHomeNotifyOuterClass {
         return srcAppId_;
       }
       /**
-       * <code>uint32 src_app_id = 8;</code>
+       * <code>uint32 src_app_id = 15;</code>
        * @param value The srcAppId to set.
        * @return This builder for chaining.
        */
@@ -653,7 +653,7 @@ public final class PlayerApplyEnterHomeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 src_app_id = 8;</code>
+       * <code>uint32 src_app_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearSrcAppId() {
@@ -731,8 +731,8 @@ public final class PlayerApplyEnterHomeNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n PlayerApplyEnterHomeNotify.proto\032\026Onli" +
       "nePlayerInfo.proto\"\\\n\032PlayerApplyEnterHo" +
-      "meNotify\022*\n\017src_player_info\030\013 \001(\0132\021.Onli" +
-      "nePlayerInfo\022\022\n\nsrc_app_id\030\010 \001(\rB\033\n\031emu." +
+      "meNotify\022*\n\017src_player_info\030\002 \001(\0132\021.Onli" +
+      "nePlayerInfo\022\022\n\nsrc_app_id\030\017 \001(\rB\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

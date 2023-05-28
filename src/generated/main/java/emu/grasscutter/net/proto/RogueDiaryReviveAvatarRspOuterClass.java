@@ -26,8 +26,8 @@ public final class RogueDiaryReviveAvatarRspOuterClass {
   }
   /**
    * <pre>
-   * Name: ONLIBMGIBJN
-   * CmdId: 8812
+   * CmdId: 8185
+   * Obf: DIIPAIHMNFF
    * </pre>
    *
    * Protobuf type {@code RogueDiaryReviveAvatarRsp}
@@ -279,8 +279,8 @@ public final class RogueDiaryReviveAvatarRspOuterClass {
     }
     /**
      * <pre>
-     * Name: ONLIBMGIBJN
-     * CmdId: 8812
+     * CmdId: 8185
+     * Obf: DIIPAIHMNFF
      * </pre>
      *
      * Protobuf type {@code RogueDiaryReviveAvatarRsp}

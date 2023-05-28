@@ -16,7 +16,7 @@ public final class InBattleMechanicusCardChallengeStateOuterClass {
   }
   /**
    * <pre>
-   * Name: KKKJLKKHGDJ
+   * Obf: FHPDBJDFEJF
    * </pre>
    *
    * Protobuf enum {@code InBattleMechanicusCardChallengeState}

@@ -19,32 +19,32 @@ public final class DelScenePlayTeamEntityNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 del_entity_id_list = 10;</code>
+     * <code>uint32 scene_id = 3;</code>
+     * @return The sceneId.
+     */
+    int getSceneId();
+
+    /**
+     * <code>repeated uint32 del_entity_id_list = 15;</code>
      * @return A list containing the delEntityIdList.
      */
     java.util.List<java.lang.Integer> getDelEntityIdListList();
     /**
-     * <code>repeated uint32 del_entity_id_list = 10;</code>
+     * <code>repeated uint32 del_entity_id_list = 15;</code>
      * @return The count of delEntityIdList.
      */
     int getDelEntityIdListCount();
     /**
-     * <code>repeated uint32 del_entity_id_list = 10;</code>
+     * <code>repeated uint32 del_entity_id_list = 15;</code>
      * @param index The index of the element to return.
      * @return The delEntityIdList at the given index.
      */
     int getDelEntityIdList(int index);
-
-    /**
-     * <code>uint32 scene_id = 4;</code>
-     * @return The sceneId.
-     */
-    int getSceneId();
   }
   /**
    * <pre>
-   * Name: HLMBCOOBAEK
-   * CmdId: 3214
+   * CmdId: 3480
+   * Obf: MOBMGHNHAAC
    * </pre>
    *
    * Protobuf type {@code DelScenePlayTeamEntityNotify}
@@ -93,12 +93,12 @@ public final class DelScenePlayTeamEntityNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 24: {
 
               sceneId_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 120: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 delEntityIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -106,7 +106,7 @@ public final class DelScenePlayTeamEntityNotifyOuterClass {
               delEntityIdList_.addInt(input.readUInt32());
               break;
             }
-            case 82: {
+            case 122: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -154,10 +154,21 @@ public final class DelScenePlayTeamEntityNotifyOuterClass {
               emu.grasscutter.net.proto.DelScenePlayTeamEntityNotifyOuterClass.DelScenePlayTeamEntityNotify.class, emu.grasscutter.net.proto.DelScenePlayTeamEntityNotifyOuterClass.DelScenePlayTeamEntityNotify.Builder.class);
     }
 
-    public static final int DEL_ENTITY_ID_LIST_FIELD_NUMBER = 10;
+    public static final int SCENE_ID_FIELD_NUMBER = 3;
+    private int sceneId_;
+    /**
+     * <code>uint32 scene_id = 3;</code>
+     * @return The sceneId.
+     */
+    @java.lang.Override
+    public int getSceneId() {
+      return sceneId_;
+    }
+
+    public static final int DEL_ENTITY_ID_LIST_FIELD_NUMBER = 15;
     private com.google.protobuf.Internal.IntList delEntityIdList_;
     /**
-     * <code>repeated uint32 del_entity_id_list = 10;</code>
+     * <code>repeated uint32 del_entity_id_list = 15;</code>
      * @return A list containing the delEntityIdList.
      */
     @java.lang.Override
@@ -166,14 +177,14 @@ public final class DelScenePlayTeamEntityNotifyOuterClass {
       return delEntityIdList_;
     }
     /**
-     * <code>repeated uint32 del_entity_id_list = 10;</code>
+     * <code>repeated uint32 del_entity_id_list = 15;</code>
      * @return The count of delEntityIdList.
      */
     public int getDelEntityIdListCount() {
       return delEntityIdList_.size();
     }
     /**
-     * <code>repeated uint32 del_entity_id_list = 10;</code>
+     * <code>repeated uint32 del_entity_id_list = 15;</code>
      * @param index The index of the element to return.
      * @return The delEntityIdList at the given index.
      */
@@ -181,17 +192,6 @@ public final class DelScenePlayTeamEntityNotifyOuterClass {
       return delEntityIdList_.getInt(index);
     }
     private int delEntityIdListMemoizedSerializedSize = -1;
-
-    public static final int SCENE_ID_FIELD_NUMBER = 4;
-    private int sceneId_;
-    /**
-     * <code>uint32 scene_id = 4;</code>
-     * @return The sceneId.
-     */
-    @java.lang.Override
-    public int getSceneId() {
-      return sceneId_;
-    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -209,10 +209,10 @@ public final class DelScenePlayTeamEntityNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (sceneId_ != 0) {
-        output.writeUInt32(4, sceneId_);
+        output.writeUInt32(3, sceneId_);
       }
       if (getDelEntityIdListList().size() > 0) {
-        output.writeUInt32NoTag(82);
+        output.writeUInt32NoTag(122);
         output.writeUInt32NoTag(delEntityIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < delEntityIdList_.size(); i++) {
@@ -229,7 +229,7 @@ public final class DelScenePlayTeamEntityNotifyOuterClass {
       size = 0;
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, sceneId_);
+          .computeUInt32Size(3, sceneId_);
       }
       {
         int dataSize = 0;
@@ -260,10 +260,10 @@ public final class DelScenePlayTeamEntityNotifyOuterClass {
       }
       emu.grasscutter.net.proto.DelScenePlayTeamEntityNotifyOuterClass.DelScenePlayTeamEntityNotify other = (emu.grasscutter.net.proto.DelScenePlayTeamEntityNotifyOuterClass.DelScenePlayTeamEntityNotify) obj;
 
-      if (!getDelEntityIdListList()
-          .equals(other.getDelEntityIdListList())) return false;
       if (getSceneId()
           != other.getSceneId()) return false;
+      if (!getDelEntityIdListList()
+          .equals(other.getDelEntityIdListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -275,12 +275,12 @@ public final class DelScenePlayTeamEntityNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSceneId();
       if (getDelEntityIdListCount() > 0) {
         hash = (37 * hash) + DEL_ENTITY_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getDelEntityIdListList().hashCode();
       }
-      hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSceneId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -378,8 +378,8 @@ public final class DelScenePlayTeamEntityNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: HLMBCOOBAEK
-     * CmdId: 3214
+     * CmdId: 3480
+     * Obf: MOBMGHNHAAC
      * </pre>
      *
      * Protobuf type {@code DelScenePlayTeamEntityNotify}
@@ -419,10 +419,10 @@ public final class DelScenePlayTeamEntityNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        delEntityIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         sceneId_ = 0;
 
+        delEntityIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -450,12 +450,12 @@ public final class DelScenePlayTeamEntityNotifyOuterClass {
       public emu.grasscutter.net.proto.DelScenePlayTeamEntityNotifyOuterClass.DelScenePlayTeamEntityNotify buildPartial() {
         emu.grasscutter.net.proto.DelScenePlayTeamEntityNotifyOuterClass.DelScenePlayTeamEntityNotify result = new emu.grasscutter.net.proto.DelScenePlayTeamEntityNotifyOuterClass.DelScenePlayTeamEntityNotify(this);
         int from_bitField0_ = bitField0_;
+        result.sceneId_ = sceneId_;
         if (((bitField0_ & 0x00000001) != 0)) {
           delEntityIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.delEntityIdList_ = delEntityIdList_;
-        result.sceneId_ = sceneId_;
         onBuilt();
         return result;
       }
@@ -504,6 +504,9 @@ public final class DelScenePlayTeamEntityNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DelScenePlayTeamEntityNotifyOuterClass.DelScenePlayTeamEntityNotify other) {
         if (other == emu.grasscutter.net.proto.DelScenePlayTeamEntityNotifyOuterClass.DelScenePlayTeamEntityNotify.getDefaultInstance()) return this;
+        if (other.getSceneId() != 0) {
+          setSceneId(other.getSceneId());
+        }
         if (!other.delEntityIdList_.isEmpty()) {
           if (delEntityIdList_.isEmpty()) {
             delEntityIdList_ = other.delEntityIdList_;
@@ -513,9 +516,6 @@ public final class DelScenePlayTeamEntityNotifyOuterClass {
             delEntityIdList_.addAll(other.delEntityIdList_);
           }
           onChanged();
-        }
-        if (other.getSceneId() != 0) {
-          setSceneId(other.getSceneId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -547,6 +547,37 @@ public final class DelScenePlayTeamEntityNotifyOuterClass {
       }
       private int bitField0_;
 
+      private int sceneId_ ;
+      /**
+       * <code>uint32 scene_id = 3;</code>
+       * @return The sceneId.
+       */
+      @java.lang.Override
+      public int getSceneId() {
+        return sceneId_;
+      }
+      /**
+       * <code>uint32 scene_id = 3;</code>
+       * @param value The sceneId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSceneId(int value) {
+        
+        sceneId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 scene_id = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSceneId() {
+        
+        sceneId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private com.google.protobuf.Internal.IntList delEntityIdList_ = emptyIntList();
       private void ensureDelEntityIdListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -555,7 +586,7 @@ public final class DelScenePlayTeamEntityNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 del_entity_id_list = 10;</code>
+       * <code>repeated uint32 del_entity_id_list = 15;</code>
        * @return A list containing the delEntityIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -564,14 +595,14 @@ public final class DelScenePlayTeamEntityNotifyOuterClass {
                  java.util.Collections.unmodifiableList(delEntityIdList_) : delEntityIdList_;
       }
       /**
-       * <code>repeated uint32 del_entity_id_list = 10;</code>
+       * <code>repeated uint32 del_entity_id_list = 15;</code>
        * @return The count of delEntityIdList.
        */
       public int getDelEntityIdListCount() {
         return delEntityIdList_.size();
       }
       /**
-       * <code>repeated uint32 del_entity_id_list = 10;</code>
+       * <code>repeated uint32 del_entity_id_list = 15;</code>
        * @param index The index of the element to return.
        * @return The delEntityIdList at the given index.
        */
@@ -579,7 +610,7 @@ public final class DelScenePlayTeamEntityNotifyOuterClass {
         return delEntityIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 del_entity_id_list = 10;</code>
+       * <code>repeated uint32 del_entity_id_list = 15;</code>
        * @param index The index to set the value at.
        * @param value The delEntityIdList to set.
        * @return This builder for chaining.
@@ -592,7 +623,7 @@ public final class DelScenePlayTeamEntityNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 del_entity_id_list = 10;</code>
+       * <code>repeated uint32 del_entity_id_list = 15;</code>
        * @param value The delEntityIdList to add.
        * @return This builder for chaining.
        */
@@ -603,7 +634,7 @@ public final class DelScenePlayTeamEntityNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 del_entity_id_list = 10;</code>
+       * <code>repeated uint32 del_entity_id_list = 15;</code>
        * @param values The delEntityIdList to add.
        * @return This builder for chaining.
        */
@@ -616,43 +647,12 @@ public final class DelScenePlayTeamEntityNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 del_entity_id_list = 10;</code>
+       * <code>repeated uint32 del_entity_id_list = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearDelEntityIdList() {
         delEntityIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private int sceneId_ ;
-      /**
-       * <code>uint32 scene_id = 4;</code>
-       * @return The sceneId.
-       */
-      @java.lang.Override
-      public int getSceneId() {
-        return sceneId_;
-      }
-      /**
-       * <code>uint32 scene_id = 4;</code>
-       * @param value The sceneId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSceneId(int value) {
-        
-        sceneId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 scene_id = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSceneId() {
-        
-        sceneId_ = 0;
         onChanged();
         return this;
       }
@@ -724,8 +724,8 @@ public final class DelScenePlayTeamEntityNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\"DelScenePlayTeamEntityNotify.proto\"L\n\034" +
-      "DelScenePlayTeamEntityNotify\022\032\n\022del_enti" +
-      "ty_id_list\030\n \003(\r\022\020\n\010scene_id\030\004 \001(\rB\033\n\031em" +
+      "DelScenePlayTeamEntityNotify\022\020\n\010scene_id" +
+      "\030\003 \001(\r\022\032\n\022del_entity_id_list\030\017 \003(\rB\033\n\031em" +
       "u.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -737,7 +737,7 @@ public final class DelScenePlayTeamEntityNotifyOuterClass {
     internal_static_DelScenePlayTeamEntityNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DelScenePlayTeamEntityNotify_descriptor,
-        new java.lang.String[] { "DelEntityIdList", "SceneId", });
+        new java.lang.String[] { "SceneId", "DelEntityIdList", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

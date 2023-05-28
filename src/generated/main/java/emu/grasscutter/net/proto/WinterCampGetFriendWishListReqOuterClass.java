@@ -20,8 +20,8 @@ public final class WinterCampGetFriendWishListReqOuterClass {
   }
   /**
    * <pre>
-   * Name: IAKDOBNNCLB
-   * CmdId: 8440
+   * CmdId: 8278
+   * Obf: NGODGIDMEEE
    * </pre>
    *
    * Protobuf type {@code WinterCampGetFriendWishListReq}
@@ -246,8 +246,8 @@ public final class WinterCampGetFriendWishListReqOuterClass {
     }
     /**
      * <pre>
-     * Name: IAKDOBNNCLB
-     * CmdId: 8440
+     * CmdId: 8278
+     * Obf: NGODGIDMEEE
      * </pre>
      *
      * Protobuf type {@code WinterCampGetFriendWishListReq}

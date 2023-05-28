@@ -19,15 +19,15 @@ public final class FungusFighterClearTrainingRuntimeDataReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 dungeon_id = 5;</code>
+     * <code>uint32 dungeon_id = 10;</code>
      * @return The dungeonId.
      */
     int getDungeonId();
   }
   /**
    * <pre>
-   * Name: NJCOEAKDFOE
-   * CmdId: 22416
+   * CmdId: 22654
+   * Obf: HOOOCDBDDOJ
    * </pre>
    *
    * Protobuf type {@code FungusFighterClearTrainingRuntimeDataReq}
@@ -74,7 +74,7 @@ public final class FungusFighterClearTrainingRuntimeDataReqOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 80: {
 
               dungeonId_ = input.readUInt32();
               break;
@@ -111,10 +111,10 @@ public final class FungusFighterClearTrainingRuntimeDataReqOuterClass {
               emu.grasscutter.net.proto.FungusFighterClearTrainingRuntimeDataReqOuterClass.FungusFighterClearTrainingRuntimeDataReq.class, emu.grasscutter.net.proto.FungusFighterClearTrainingRuntimeDataReqOuterClass.FungusFighterClearTrainingRuntimeDataReq.Builder.class);
     }
 
-    public static final int DUNGEON_ID_FIELD_NUMBER = 5;
+    public static final int DUNGEON_ID_FIELD_NUMBER = 10;
     private int dungeonId_;
     /**
-     * <code>uint32 dungeon_id = 5;</code>
+     * <code>uint32 dungeon_id = 10;</code>
      * @return The dungeonId.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class FungusFighterClearTrainingRuntimeDataReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (dungeonId_ != 0) {
-        output.writeUInt32(5, dungeonId_);
+        output.writeUInt32(10, dungeonId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class FungusFighterClearTrainingRuntimeDataReqOuterClass {
       size = 0;
       if (dungeonId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, dungeonId_);
+          .computeUInt32Size(10, dungeonId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class FungusFighterClearTrainingRuntimeDataReqOuterClass {
     }
     /**
      * <pre>
-     * Name: NJCOEAKDFOE
-     * CmdId: 22416
+     * CmdId: 22654
+     * Obf: HOOOCDBDDOJ
      * </pre>
      *
      * Protobuf type {@code FungusFighterClearTrainingRuntimeDataReq}
@@ -431,7 +431,7 @@ public final class FungusFighterClearTrainingRuntimeDataReqOuterClass {
 
       private int dungeonId_ ;
       /**
-       * <code>uint32 dungeon_id = 5;</code>
+       * <code>uint32 dungeon_id = 10;</code>
        * @return The dungeonId.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class FungusFighterClearTrainingRuntimeDataReqOuterClass {
         return dungeonId_;
       }
       /**
-       * <code>uint32 dungeon_id = 5;</code>
+       * <code>uint32 dungeon_id = 10;</code>
        * @param value The dungeonId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class FungusFighterClearTrainingRuntimeDataReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 dungeon_id = 5;</code>
+       * <code>uint32 dungeon_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonId() {
@@ -528,7 +528,7 @@ public final class FungusFighterClearTrainingRuntimeDataReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n.FungusFighterClearTrainingRuntimeDataR" +
       "eq.proto\">\n(FungusFighterClearTrainingRu" +
-      "ntimeDataReq\022\022\n\ndungeon_id\030\005 \001(\rB\033\n\031emu." +
+      "ntimeDataReq\022\022\n\ndungeon_id\030\n \001(\rB\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

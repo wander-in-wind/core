@@ -19,15 +19,15 @@ public final class SetH5ActivityRedDotTimestampReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 client_red_dot_timestamp = 3;</code>
+     * <code>uint32 client_red_dot_timestamp = 5;</code>
      * @return The clientRedDotTimestamp.
      */
     int getClientRedDotTimestamp();
   }
   /**
    * <pre>
-   * Name: NIFPNHFGPNB
-   * CmdId: 5696
+   * CmdId: 5671
+   * Obf: ECBNHMNEKCE
    * </pre>
    *
    * Protobuf type {@code SetH5ActivityRedDotTimestampReq}
@@ -74,7 +74,7 @@ public final class SetH5ActivityRedDotTimestampReqOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 40: {
 
               clientRedDotTimestamp_ = input.readUInt32();
               break;
@@ -111,10 +111,10 @@ public final class SetH5ActivityRedDotTimestampReqOuterClass {
               emu.grasscutter.net.proto.SetH5ActivityRedDotTimestampReqOuterClass.SetH5ActivityRedDotTimestampReq.class, emu.grasscutter.net.proto.SetH5ActivityRedDotTimestampReqOuterClass.SetH5ActivityRedDotTimestampReq.Builder.class);
     }
 
-    public static final int CLIENT_RED_DOT_TIMESTAMP_FIELD_NUMBER = 3;
+    public static final int CLIENT_RED_DOT_TIMESTAMP_FIELD_NUMBER = 5;
     private int clientRedDotTimestamp_;
     /**
-     * <code>uint32 client_red_dot_timestamp = 3;</code>
+     * <code>uint32 client_red_dot_timestamp = 5;</code>
      * @return The clientRedDotTimestamp.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class SetH5ActivityRedDotTimestampReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (clientRedDotTimestamp_ != 0) {
-        output.writeUInt32(3, clientRedDotTimestamp_);
+        output.writeUInt32(5, clientRedDotTimestamp_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class SetH5ActivityRedDotTimestampReqOuterClass {
       size = 0;
       if (clientRedDotTimestamp_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, clientRedDotTimestamp_);
+          .computeUInt32Size(5, clientRedDotTimestamp_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class SetH5ActivityRedDotTimestampReqOuterClass {
     }
     /**
      * <pre>
-     * Name: NIFPNHFGPNB
-     * CmdId: 5696
+     * CmdId: 5671
+     * Obf: ECBNHMNEKCE
      * </pre>
      *
      * Protobuf type {@code SetH5ActivityRedDotTimestampReq}
@@ -431,7 +431,7 @@ public final class SetH5ActivityRedDotTimestampReqOuterClass {
 
       private int clientRedDotTimestamp_ ;
       /**
-       * <code>uint32 client_red_dot_timestamp = 3;</code>
+       * <code>uint32 client_red_dot_timestamp = 5;</code>
        * @return The clientRedDotTimestamp.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class SetH5ActivityRedDotTimestampReqOuterClass {
         return clientRedDotTimestamp_;
       }
       /**
-       * <code>uint32 client_red_dot_timestamp = 3;</code>
+       * <code>uint32 client_red_dot_timestamp = 5;</code>
        * @param value The clientRedDotTimestamp to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class SetH5ActivityRedDotTimestampReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 client_red_dot_timestamp = 3;</code>
+       * <code>uint32 client_red_dot_timestamp = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearClientRedDotTimestamp() {
@@ -528,7 +528,7 @@ public final class SetH5ActivityRedDotTimestampReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n%SetH5ActivityRedDotTimestampReq.proto\"" +
       "C\n\037SetH5ActivityRedDotTimestampReq\022 \n\030cl" +
-      "ient_red_dot_timestamp\030\003 \001(\rB\033\n\031emu.gras" +
+      "ient_red_dot_timestamp\030\005 \001(\rB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

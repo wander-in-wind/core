@@ -25,14 +25,14 @@ public final class GCGMsgWaitingListChangeOuterClass {
     int getCurIndex();
 
     /**
-     * <code>uint32 controller_id = 7;</code>
+     * <code>uint32 controller_id = 8;</code>
      * @return The controllerId.
      */
     int getControllerId();
   }
   /**
    * <pre>
-   * Name: BFAPCMPPLFE
+   * Obf: IHNCGPECAJK
    * </pre>
    *
    * Protobuf type {@code GCGMsgWaitingListChange}
@@ -84,7 +84,7 @@ public final class GCGMsgWaitingListChangeOuterClass {
               curIndex_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 64: {
 
               controllerId_ = input.readUInt32();
               break;
@@ -132,10 +132,10 @@ public final class GCGMsgWaitingListChangeOuterClass {
       return curIndex_;
     }
 
-    public static final int CONTROLLER_ID_FIELD_NUMBER = 7;
+    public static final int CONTROLLER_ID_FIELD_NUMBER = 8;
     private int controllerId_;
     /**
-     * <code>uint32 controller_id = 7;</code>
+     * <code>uint32 controller_id = 8;</code>
      * @return The controllerId.
      */
     @java.lang.Override
@@ -161,7 +161,7 @@ public final class GCGMsgWaitingListChangeOuterClass {
         output.writeUInt32(4, curIndex_);
       }
       if (controllerId_ != 0) {
-        output.writeUInt32(7, controllerId_);
+        output.writeUInt32(8, controllerId_);
       }
       unknownFields.writeTo(output);
     }
@@ -178,7 +178,7 @@ public final class GCGMsgWaitingListChangeOuterClass {
       }
       if (controllerId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, controllerId_);
+          .computeUInt32Size(8, controllerId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -311,7 +311,7 @@ public final class GCGMsgWaitingListChangeOuterClass {
     }
     /**
      * <pre>
-     * Name: BFAPCMPPLFE
+     * Obf: IHNCGPECAJK
      * </pre>
      *
      * Protobuf type {@code GCGMsgWaitingListChange}
@@ -499,7 +499,7 @@ public final class GCGMsgWaitingListChangeOuterClass {
 
       private int controllerId_ ;
       /**
-       * <code>uint32 controller_id = 7;</code>
+       * <code>uint32 controller_id = 8;</code>
        * @return The controllerId.
        */
       @java.lang.Override
@@ -507,7 +507,7 @@ public final class GCGMsgWaitingListChangeOuterClass {
         return controllerId_;
       }
       /**
-       * <code>uint32 controller_id = 7;</code>
+       * <code>uint32 controller_id = 8;</code>
        * @param value The controllerId to set.
        * @return This builder for chaining.
        */
@@ -518,7 +518,7 @@ public final class GCGMsgWaitingListChangeOuterClass {
         return this;
       }
       /**
-       * <code>uint32 controller_id = 7;</code>
+       * <code>uint32 controller_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearControllerId() {
@@ -596,7 +596,7 @@ public final class GCGMsgWaitingListChangeOuterClass {
     java.lang.String[] descriptorData = {
       "\n\035GCGMsgWaitingListChange.proto\"C\n\027GCGMs" +
       "gWaitingListChange\022\021\n\tcur_index\030\004 \001(\r\022\025\n" +
-      "\rcontroller_id\030\007 \001(\rB\033\n\031emu.grasscutter." +
+      "\rcontroller_id\030\010 \001(\rB\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

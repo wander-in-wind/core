@@ -26,8 +26,8 @@ public final class ExpeditionChallengeFinishedNotifyOuterClass {
   }
   /**
    * <pre>
-   * Name: JDEMFAMIKOH
-   * CmdId: 2075
+   * CmdId: 2128
+   * Obf: ADBFEJABOGD
    * </pre>
    *
    * Protobuf type {@code ExpeditionChallengeFinishedNotify}
@@ -279,8 +279,8 @@ public final class ExpeditionChallengeFinishedNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: JDEMFAMIKOH
-     * CmdId: 2075
+     * CmdId: 2128
+     * Obf: ADBFEJABOGD
      * </pre>
      *
      * Protobuf type {@code ExpeditionChallengeFinishedNotify}

@@ -32,7 +32,7 @@ public final class EntityEnvironmentInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: CPDBIKEOEDK
+   * Obf: DILGEMDKHHN
    * </pre>
    *
    * Protobuf type {@code EntityEnvironmentInfo}
@@ -311,7 +311,7 @@ public final class EntityEnvironmentInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: CPDBIKEOEDK
+     * Obf: DILGEMDKHHN
      * </pre>
      *
      * Protobuf type {@code EntityEnvironmentInfo}

@@ -20,8 +20,8 @@ public final class GetAllActivatedBargainDataReqOuterClass {
   }
   /**
    * <pre>
-   * Name: GNMJKFFBKMH
-   * CmdId: 413
+   * CmdId: 436
+   * Obf: AFPHNMAHMIG
    * </pre>
    *
    * Protobuf type {@code GetAllActivatedBargainDataReq}
@@ -246,8 +246,8 @@ public final class GetAllActivatedBargainDataReqOuterClass {
     }
     /**
      * <pre>
-     * Name: GNMJKFFBKMH
-     * CmdId: 413
+     * CmdId: 436
+     * Obf: AFPHNMAHMIG
      * </pre>
      *
      * Protobuf type {@code GetAllActivatedBargainDataReq}

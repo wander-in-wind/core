@@ -20,8 +20,8 @@ public final class RefreshBackgroundAvatarReqOuterClass {
   }
   /**
    * <pre>
-   * Name: CCMKMIKJOOL
-   * CmdId: 1636
+   * CmdId: 1738
+   * Obf: OFIIOCFBPPC
    * </pre>
    *
    * Protobuf type {@code RefreshBackgroundAvatarReq}
@@ -246,8 +246,8 @@ public final class RefreshBackgroundAvatarReqOuterClass {
     }
     /**
      * <pre>
-     * Name: CCMKMIKJOOL
-     * CmdId: 1636
+     * CmdId: 1738
+     * Obf: OFIIOCFBPPC
      * </pre>
      *
      * Protobuf type {@code RefreshBackgroundAvatarReq}

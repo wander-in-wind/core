@@ -19,51 +19,51 @@ public final class GearActivityFinishPlayGearReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .GearColumnInfo gear_column_info_list = 7;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo> 
-        getGearColumnInfoListList();
-    /**
-     * <code>repeated .GearColumnInfo gear_column_info_list = 7;</code>
-     */
-    emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo getGearColumnInfoList(int index);
-    /**
-     * <code>repeated .GearColumnInfo gear_column_info_list = 7;</code>
-     */
-    int getGearColumnInfoListCount();
-    /**
-     * <code>repeated .GearColumnInfo gear_column_info_list = 7;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfoOrBuilder> 
-        getGearColumnInfoListOrBuilderList();
-    /**
-     * <code>repeated .GearColumnInfo gear_column_info_list = 7;</code>
-     */
-    emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfoOrBuilder getGearColumnInfoListOrBuilder(
-        int index);
-
-    /**
-     * <code>bool use_clue = 13;</code>
+     * <code>bool use_clue = 1;</code>
      * @return The useClue.
      */
     boolean getUseClue();
 
     /**
-     * <code>bool is_success = 6;</code>
+     * <code>repeated .GearColumnInfo gear_column_info_list = 3;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo> 
+        getGearColumnInfoListList();
+    /**
+     * <code>repeated .GearColumnInfo gear_column_info_list = 3;</code>
+     */
+    emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo getGearColumnInfoList(int index);
+    /**
+     * <code>repeated .GearColumnInfo gear_column_info_list = 3;</code>
+     */
+    int getGearColumnInfoListCount();
+    /**
+     * <code>repeated .GearColumnInfo gear_column_info_list = 3;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfoOrBuilder> 
+        getGearColumnInfoListOrBuilderList();
+    /**
+     * <code>repeated .GearColumnInfo gear_column_info_list = 3;</code>
+     */
+    emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfoOrBuilder getGearColumnInfoListOrBuilder(
+        int index);
+
+    /**
+     * <code>bool is_success = 10;</code>
      * @return The isSuccess.
      */
     boolean getIsSuccess();
 
     /**
-     * <code>uint32 level_id = 10;</code>
+     * <code>uint32 level_id = 8;</code>
      * @return The levelId.
      */
     int getLevelId();
   }
   /**
    * <pre>
-   * Name: MHAFPLJHPLJ
-   * CmdId: 24069
+   * CmdId: 20732
+   * Obf: CBILABMBFLK
    * </pre>
    *
    * Protobuf type {@code GearActivityFinishPlayGearReq}
@@ -112,12 +112,12 @@ public final class GearActivityFinishPlayGearReqOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 8: {
 
-              isSuccess_ = input.readBool();
+              useClue_ = input.readBool();
               break;
             }
-            case 58: {
+            case 26: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 gearColumnInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -126,14 +126,14 @@ public final class GearActivityFinishPlayGearReqOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo.parser(), extensionRegistry));
               break;
             }
-            case 80: {
+            case 64: {
 
               levelId_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 80: {
 
-              useClue_ = input.readBool();
+              isSuccess_ = input.readBool();
               break;
             }
             default: {
@@ -171,50 +171,10 @@ public final class GearActivityFinishPlayGearReqOuterClass {
               emu.grasscutter.net.proto.GearActivityFinishPlayGearReqOuterClass.GearActivityFinishPlayGearReq.class, emu.grasscutter.net.proto.GearActivityFinishPlayGearReqOuterClass.GearActivityFinishPlayGearReq.Builder.class);
     }
 
-    public static final int GEAR_COLUMN_INFO_LIST_FIELD_NUMBER = 7;
-    private java.util.List<emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo> gearColumnInfoList_;
-    /**
-     * <code>repeated .GearColumnInfo gear_column_info_list = 7;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo> getGearColumnInfoListList() {
-      return gearColumnInfoList_;
-    }
-    /**
-     * <code>repeated .GearColumnInfo gear_column_info_list = 7;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfoOrBuilder> 
-        getGearColumnInfoListOrBuilderList() {
-      return gearColumnInfoList_;
-    }
-    /**
-     * <code>repeated .GearColumnInfo gear_column_info_list = 7;</code>
-     */
-    @java.lang.Override
-    public int getGearColumnInfoListCount() {
-      return gearColumnInfoList_.size();
-    }
-    /**
-     * <code>repeated .GearColumnInfo gear_column_info_list = 7;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo getGearColumnInfoList(int index) {
-      return gearColumnInfoList_.get(index);
-    }
-    /**
-     * <code>repeated .GearColumnInfo gear_column_info_list = 7;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfoOrBuilder getGearColumnInfoListOrBuilder(
-        int index) {
-      return gearColumnInfoList_.get(index);
-    }
-
-    public static final int USE_CLUE_FIELD_NUMBER = 13;
+    public static final int USE_CLUE_FIELD_NUMBER = 1;
     private boolean useClue_;
     /**
-     * <code>bool use_clue = 13;</code>
+     * <code>bool use_clue = 1;</code>
      * @return The useClue.
      */
     @java.lang.Override
@@ -222,10 +182,50 @@ public final class GearActivityFinishPlayGearReqOuterClass {
       return useClue_;
     }
 
-    public static final int IS_SUCCESS_FIELD_NUMBER = 6;
+    public static final int GEAR_COLUMN_INFO_LIST_FIELD_NUMBER = 3;
+    private java.util.List<emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo> gearColumnInfoList_;
+    /**
+     * <code>repeated .GearColumnInfo gear_column_info_list = 3;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo> getGearColumnInfoListList() {
+      return gearColumnInfoList_;
+    }
+    /**
+     * <code>repeated .GearColumnInfo gear_column_info_list = 3;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfoOrBuilder> 
+        getGearColumnInfoListOrBuilderList() {
+      return gearColumnInfoList_;
+    }
+    /**
+     * <code>repeated .GearColumnInfo gear_column_info_list = 3;</code>
+     */
+    @java.lang.Override
+    public int getGearColumnInfoListCount() {
+      return gearColumnInfoList_.size();
+    }
+    /**
+     * <code>repeated .GearColumnInfo gear_column_info_list = 3;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo getGearColumnInfoList(int index) {
+      return gearColumnInfoList_.get(index);
+    }
+    /**
+     * <code>repeated .GearColumnInfo gear_column_info_list = 3;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfoOrBuilder getGearColumnInfoListOrBuilder(
+        int index) {
+      return gearColumnInfoList_.get(index);
+    }
+
+    public static final int IS_SUCCESS_FIELD_NUMBER = 10;
     private boolean isSuccess_;
     /**
-     * <code>bool is_success = 6;</code>
+     * <code>bool is_success = 10;</code>
      * @return The isSuccess.
      */
     @java.lang.Override
@@ -233,10 +233,10 @@ public final class GearActivityFinishPlayGearReqOuterClass {
       return isSuccess_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 10;
+    public static final int LEVEL_ID_FIELD_NUMBER = 8;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 10;</code>
+     * <code>uint32 level_id = 8;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -258,17 +258,17 @@ public final class GearActivityFinishPlayGearReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isSuccess_ != false) {
-        output.writeBool(6, isSuccess_);
+      if (useClue_ != false) {
+        output.writeBool(1, useClue_);
       }
       for (int i = 0; i < gearColumnInfoList_.size(); i++) {
-        output.writeMessage(7, gearColumnInfoList_.get(i));
+        output.writeMessage(3, gearColumnInfoList_.get(i));
       }
       if (levelId_ != 0) {
-        output.writeUInt32(10, levelId_);
+        output.writeUInt32(8, levelId_);
       }
-      if (useClue_ != false) {
-        output.writeBool(13, useClue_);
+      if (isSuccess_ != false) {
+        output.writeBool(10, isSuccess_);
       }
       unknownFields.writeTo(output);
     }
@@ -279,21 +279,21 @@ public final class GearActivityFinishPlayGearReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isSuccess_ != false) {
+      if (useClue_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isSuccess_);
+          .computeBoolSize(1, useClue_);
       }
       for (int i = 0; i < gearColumnInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, gearColumnInfoList_.get(i));
+          .computeMessageSize(3, gearColumnInfoList_.get(i));
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, levelId_);
+          .computeUInt32Size(8, levelId_);
       }
-      if (useClue_ != false) {
+      if (isSuccess_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, useClue_);
+          .computeBoolSize(10, isSuccess_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -310,10 +310,10 @@ public final class GearActivityFinishPlayGearReqOuterClass {
       }
       emu.grasscutter.net.proto.GearActivityFinishPlayGearReqOuterClass.GearActivityFinishPlayGearReq other = (emu.grasscutter.net.proto.GearActivityFinishPlayGearReqOuterClass.GearActivityFinishPlayGearReq) obj;
 
-      if (!getGearColumnInfoListList()
-          .equals(other.getGearColumnInfoListList())) return false;
       if (getUseClue()
           != other.getUseClue()) return false;
+      if (!getGearColumnInfoListList()
+          .equals(other.getGearColumnInfoListList())) return false;
       if (getIsSuccess()
           != other.getIsSuccess()) return false;
       if (getLevelId()
@@ -329,13 +329,13 @@ public final class GearActivityFinishPlayGearReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + USE_CLUE_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getUseClue());
       if (getGearColumnInfoListCount() > 0) {
         hash = (37 * hash) + GEAR_COLUMN_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getGearColumnInfoListList().hashCode();
       }
-      hash = (37 * hash) + USE_CLUE_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUseClue());
       hash = (37 * hash) + IS_SUCCESS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsSuccess());
@@ -438,8 +438,8 @@ public final class GearActivityFinishPlayGearReqOuterClass {
     }
     /**
      * <pre>
-     * Name: MHAFPLJHPLJ
-     * CmdId: 24069
+     * CmdId: 20732
+     * Obf: CBILABMBFLK
      * </pre>
      *
      * Protobuf type {@code GearActivityFinishPlayGearReq}
@@ -480,14 +480,14 @@ public final class GearActivityFinishPlayGearReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        useClue_ = false;
+
         if (gearColumnInfoListBuilder_ == null) {
           gearColumnInfoList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           gearColumnInfoListBuilder_.clear();
         }
-        useClue_ = false;
-
         isSuccess_ = false;
 
         levelId_ = 0;
@@ -519,6 +519,7 @@ public final class GearActivityFinishPlayGearReqOuterClass {
       public emu.grasscutter.net.proto.GearActivityFinishPlayGearReqOuterClass.GearActivityFinishPlayGearReq buildPartial() {
         emu.grasscutter.net.proto.GearActivityFinishPlayGearReqOuterClass.GearActivityFinishPlayGearReq result = new emu.grasscutter.net.proto.GearActivityFinishPlayGearReqOuterClass.GearActivityFinishPlayGearReq(this);
         int from_bitField0_ = bitField0_;
+        result.useClue_ = useClue_;
         if (gearColumnInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             gearColumnInfoList_ = java.util.Collections.unmodifiableList(gearColumnInfoList_);
@@ -528,7 +529,6 @@ public final class GearActivityFinishPlayGearReqOuterClass {
         } else {
           result.gearColumnInfoList_ = gearColumnInfoListBuilder_.build();
         }
-        result.useClue_ = useClue_;
         result.isSuccess_ = isSuccess_;
         result.levelId_ = levelId_;
         onBuilt();
@@ -579,6 +579,9 @@ public final class GearActivityFinishPlayGearReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GearActivityFinishPlayGearReqOuterClass.GearActivityFinishPlayGearReq other) {
         if (other == emu.grasscutter.net.proto.GearActivityFinishPlayGearReqOuterClass.GearActivityFinishPlayGearReq.getDefaultInstance()) return this;
+        if (other.getUseClue() != false) {
+          setUseClue(other.getUseClue());
+        }
         if (gearColumnInfoListBuilder_ == null) {
           if (!other.gearColumnInfoList_.isEmpty()) {
             if (gearColumnInfoList_.isEmpty()) {
@@ -604,9 +607,6 @@ public final class GearActivityFinishPlayGearReqOuterClass {
               gearColumnInfoListBuilder_.addAllMessages(other.gearColumnInfoList_);
             }
           }
-        }
-        if (other.getUseClue() != false) {
-          setUseClue(other.getUseClue());
         }
         if (other.getIsSuccess() != false) {
           setIsSuccess(other.getIsSuccess());
@@ -644,6 +644,37 @@ public final class GearActivityFinishPlayGearReqOuterClass {
       }
       private int bitField0_;
 
+      private boolean useClue_ ;
+      /**
+       * <code>bool use_clue = 1;</code>
+       * @return The useClue.
+       */
+      @java.lang.Override
+      public boolean getUseClue() {
+        return useClue_;
+      }
+      /**
+       * <code>bool use_clue = 1;</code>
+       * @param value The useClue to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUseClue(boolean value) {
+        
+        useClue_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool use_clue = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUseClue() {
+        
+        useClue_ = false;
+        onChanged();
+        return this;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo> gearColumnInfoList_ =
         java.util.Collections.emptyList();
       private void ensureGearColumnInfoListIsMutable() {
@@ -657,7 +688,7 @@ public final class GearActivityFinishPlayGearReqOuterClass {
           emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo, emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo.Builder, emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfoOrBuilder> gearColumnInfoListBuilder_;
 
       /**
-       * <code>repeated .GearColumnInfo gear_column_info_list = 7;</code>
+       * <code>repeated .GearColumnInfo gear_column_info_list = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo> getGearColumnInfoListList() {
         if (gearColumnInfoListBuilder_ == null) {
@@ -667,7 +698,7 @@ public final class GearActivityFinishPlayGearReqOuterClass {
         }
       }
       /**
-       * <code>repeated .GearColumnInfo gear_column_info_list = 7;</code>
+       * <code>repeated .GearColumnInfo gear_column_info_list = 3;</code>
        */
       public int getGearColumnInfoListCount() {
         if (gearColumnInfoListBuilder_ == null) {
@@ -677,7 +708,7 @@ public final class GearActivityFinishPlayGearReqOuterClass {
         }
       }
       /**
-       * <code>repeated .GearColumnInfo gear_column_info_list = 7;</code>
+       * <code>repeated .GearColumnInfo gear_column_info_list = 3;</code>
        */
       public emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo getGearColumnInfoList(int index) {
         if (gearColumnInfoListBuilder_ == null) {
@@ -687,7 +718,7 @@ public final class GearActivityFinishPlayGearReqOuterClass {
         }
       }
       /**
-       * <code>repeated .GearColumnInfo gear_column_info_list = 7;</code>
+       * <code>repeated .GearColumnInfo gear_column_info_list = 3;</code>
        */
       public Builder setGearColumnInfoList(
           int index, emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo value) {
@@ -704,7 +735,7 @@ public final class GearActivityFinishPlayGearReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GearColumnInfo gear_column_info_list = 7;</code>
+       * <code>repeated .GearColumnInfo gear_column_info_list = 3;</code>
        */
       public Builder setGearColumnInfoList(
           int index, emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo.Builder builderForValue) {
@@ -718,7 +749,7 @@ public final class GearActivityFinishPlayGearReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GearColumnInfo gear_column_info_list = 7;</code>
+       * <code>repeated .GearColumnInfo gear_column_info_list = 3;</code>
        */
       public Builder addGearColumnInfoList(emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo value) {
         if (gearColumnInfoListBuilder_ == null) {
@@ -734,7 +765,7 @@ public final class GearActivityFinishPlayGearReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GearColumnInfo gear_column_info_list = 7;</code>
+       * <code>repeated .GearColumnInfo gear_column_info_list = 3;</code>
        */
       public Builder addGearColumnInfoList(
           int index, emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo value) {
@@ -751,7 +782,7 @@ public final class GearActivityFinishPlayGearReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GearColumnInfo gear_column_info_list = 7;</code>
+       * <code>repeated .GearColumnInfo gear_column_info_list = 3;</code>
        */
       public Builder addGearColumnInfoList(
           emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo.Builder builderForValue) {
@@ -765,7 +796,7 @@ public final class GearActivityFinishPlayGearReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GearColumnInfo gear_column_info_list = 7;</code>
+       * <code>repeated .GearColumnInfo gear_column_info_list = 3;</code>
        */
       public Builder addGearColumnInfoList(
           int index, emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo.Builder builderForValue) {
@@ -779,7 +810,7 @@ public final class GearActivityFinishPlayGearReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GearColumnInfo gear_column_info_list = 7;</code>
+       * <code>repeated .GearColumnInfo gear_column_info_list = 3;</code>
        */
       public Builder addAllGearColumnInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo> values) {
@@ -794,7 +825,7 @@ public final class GearActivityFinishPlayGearReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GearColumnInfo gear_column_info_list = 7;</code>
+       * <code>repeated .GearColumnInfo gear_column_info_list = 3;</code>
        */
       public Builder clearGearColumnInfoList() {
         if (gearColumnInfoListBuilder_ == null) {
@@ -807,7 +838,7 @@ public final class GearActivityFinishPlayGearReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GearColumnInfo gear_column_info_list = 7;</code>
+       * <code>repeated .GearColumnInfo gear_column_info_list = 3;</code>
        */
       public Builder removeGearColumnInfoList(int index) {
         if (gearColumnInfoListBuilder_ == null) {
@@ -820,14 +851,14 @@ public final class GearActivityFinishPlayGearReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GearColumnInfo gear_column_info_list = 7;</code>
+       * <code>repeated .GearColumnInfo gear_column_info_list = 3;</code>
        */
       public emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo.Builder getGearColumnInfoListBuilder(
           int index) {
         return getGearColumnInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .GearColumnInfo gear_column_info_list = 7;</code>
+       * <code>repeated .GearColumnInfo gear_column_info_list = 3;</code>
        */
       public emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfoOrBuilder getGearColumnInfoListOrBuilder(
           int index) {
@@ -837,7 +868,7 @@ public final class GearActivityFinishPlayGearReqOuterClass {
         }
       }
       /**
-       * <code>repeated .GearColumnInfo gear_column_info_list = 7;</code>
+       * <code>repeated .GearColumnInfo gear_column_info_list = 3;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfoOrBuilder> 
            getGearColumnInfoListOrBuilderList() {
@@ -848,14 +879,14 @@ public final class GearActivityFinishPlayGearReqOuterClass {
         }
       }
       /**
-       * <code>repeated .GearColumnInfo gear_column_info_list = 7;</code>
+       * <code>repeated .GearColumnInfo gear_column_info_list = 3;</code>
        */
       public emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo.Builder addGearColumnInfoListBuilder() {
         return getGearColumnInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .GearColumnInfo gear_column_info_list = 7;</code>
+       * <code>repeated .GearColumnInfo gear_column_info_list = 3;</code>
        */
       public emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo.Builder addGearColumnInfoListBuilder(
           int index) {
@@ -863,7 +894,7 @@ public final class GearActivityFinishPlayGearReqOuterClass {
             index, emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .GearColumnInfo gear_column_info_list = 7;</code>
+       * <code>repeated .GearColumnInfo gear_column_info_list = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GearColumnInfoOuterClass.GearColumnInfo.Builder> 
            getGearColumnInfoListBuilderList() {
@@ -884,40 +915,9 @@ public final class GearActivityFinishPlayGearReqOuterClass {
         return gearColumnInfoListBuilder_;
       }
 
-      private boolean useClue_ ;
-      /**
-       * <code>bool use_clue = 13;</code>
-       * @return The useClue.
-       */
-      @java.lang.Override
-      public boolean getUseClue() {
-        return useClue_;
-      }
-      /**
-       * <code>bool use_clue = 13;</code>
-       * @param value The useClue to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUseClue(boolean value) {
-        
-        useClue_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool use_clue = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUseClue() {
-        
-        useClue_ = false;
-        onChanged();
-        return this;
-      }
-
       private boolean isSuccess_ ;
       /**
-       * <code>bool is_success = 6;</code>
+       * <code>bool is_success = 10;</code>
        * @return The isSuccess.
        */
       @java.lang.Override
@@ -925,7 +925,7 @@ public final class GearActivityFinishPlayGearReqOuterClass {
         return isSuccess_;
       }
       /**
-       * <code>bool is_success = 6;</code>
+       * <code>bool is_success = 10;</code>
        * @param value The isSuccess to set.
        * @return This builder for chaining.
        */
@@ -936,7 +936,7 @@ public final class GearActivityFinishPlayGearReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_success = 6;</code>
+       * <code>bool is_success = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsSuccess() {
@@ -948,7 +948,7 @@ public final class GearActivityFinishPlayGearReqOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 10;</code>
+       * <code>uint32 level_id = 8;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -956,7 +956,7 @@ public final class GearActivityFinishPlayGearReqOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 10;</code>
+       * <code>uint32 level_id = 8;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -967,7 +967,7 @@ public final class GearActivityFinishPlayGearReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 10;</code>
+       * <code>uint32 level_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -1045,9 +1045,9 @@ public final class GearActivityFinishPlayGearReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n#GearActivityFinishPlayGearReq.proto\032\024G" +
       "earColumnInfo.proto\"\207\001\n\035GearActivityFini" +
-      "shPlayGearReq\022.\n\025gear_column_info_list\030\007" +
-      " \003(\0132\017.GearColumnInfo\022\020\n\010use_clue\030\r \001(\010\022" +
-      "\022\n\nis_success\030\006 \001(\010\022\020\n\010level_id\030\n \001(\rB\033\n" +
+      "shPlayGearReq\022\020\n\010use_clue\030\001 \001(\010\022.\n\025gear_" +
+      "column_info_list\030\003 \003(\0132\017.GearColumnInfo\022" +
+      "\022\n\nis_success\030\n \001(\010\022\020\n\010level_id\030\010 \001(\rB\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1060,7 +1060,7 @@ public final class GearActivityFinishPlayGearReqOuterClass {
     internal_static_GearActivityFinishPlayGearReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GearActivityFinishPlayGearReq_descriptor,
-        new java.lang.String[] { "GearColumnInfoList", "UseClue", "IsSuccess", "LevelId", });
+        new java.lang.String[] { "UseClue", "GearColumnInfoList", "IsSuccess", "LevelId", });
     emu.grasscutter.net.proto.GearColumnInfoOuterClass.getDescriptor();
   }
 

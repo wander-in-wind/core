@@ -19,6 +19,36 @@ public final class PlayerStartMatchRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>uint32 mp_play_id = 15;</code>
+     * @return The mpPlayId.
+     */
+    int getMpPlayId();
+
+    /**
+     * <code>uint32 mechanicus_difficult_level = 4;</code>
+     * @return The mechanicusDifficultLevel.
+     */
+    int getMechanicusDifficultLevel();
+
+    /**
+     * <code>uint32 dungeon_id = 9;</code>
+     * @return The dungeonId.
+     */
+    int getDungeonId();
+
+    /**
+     * <code>int32 retcode = 14;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
+
+    /**
+     * <code>uint32 param = 5;</code>
+     * @return The param.
+     */
+    int getParam();
+
+    /**
      * <code>.MatchType match_type = 2;</code>
      * @return The enum numeric value on the wire for matchType.
      */
@@ -30,51 +60,21 @@ public final class PlayerStartMatchRspOuterClass {
     emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType getMatchType();
 
     /**
-     * <code>uint32 mechanicus_difficult_level = 14;</code>
-     * @return The mechanicusDifficultLevel.
-     */
-    int getMechanicusDifficultLevel();
-
-    /**
-     * <code>uint32 dungeon_id = 12;</code>
-     * @return The dungeonId.
-     */
-    int getDungeonId();
-
-    /**
-     * <code>int32 retcode = 10;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>uint32 punish_end_time = 6;</code>
-     * @return The punishEndTime.
-     */
-    int getPunishEndTime();
-
-    /**
-     * <code>uint32 mp_play_id = 3;</code>
-     * @return The mpPlayId.
-     */
-    int getMpPlayId();
-
-    /**
-     * <code>uint32 match_id = 4;</code>
+     * <code>uint32 match_id = 7;</code>
      * @return The matchId.
      */
     int getMatchId();
 
     /**
-     * <code>uint32 param = 5;</code>
-     * @return The param.
+     * <code>uint32 punish_end_time = 10;</code>
+     * @return The punishEndTime.
      */
-    int getParam();
+    int getPunishEndTime();
   }
   /**
    * <pre>
-   * Name: MBPJKGIMLAO
-   * CmdId: 4193
+   * CmdId: 4158
+   * Obf: EPIGPKHDAID
    * </pre>
    *
    * Protobuf type {@code PlayerStartMatchRsp}
@@ -128,14 +128,9 @@ public final class PlayerStartMatchRspOuterClass {
               matchType_ = rawValue;
               break;
             }
-            case 24: {
-
-              mpPlayId_ = input.readUInt32();
-              break;
-            }
             case 32: {
 
-              matchId_ = input.readUInt32();
+              mechanicusDifficultLevel_ = input.readUInt32();
               break;
             }
             case 40: {
@@ -143,24 +138,29 @@ public final class PlayerStartMatchRspOuterClass {
               param_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 56: {
 
-              punishEndTime_ = input.readUInt32();
+              matchId_ = input.readUInt32();
               break;
             }
-            case 80: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 96: {
+            case 72: {
 
               dungeonId_ = input.readUInt32();
               break;
             }
+            case 80: {
+
+              punishEndTime_ = input.readUInt32();
+              break;
+            }
             case 112: {
 
-              mechanicusDifficultLevel_ = input.readUInt32();
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 120: {
+
+              mpPlayId_ = input.readUInt32();
               break;
             }
             default: {
@@ -195,6 +195,61 @@ public final class PlayerStartMatchRspOuterClass {
               emu.grasscutter.net.proto.PlayerStartMatchRspOuterClass.PlayerStartMatchRsp.class, emu.grasscutter.net.proto.PlayerStartMatchRspOuterClass.PlayerStartMatchRsp.Builder.class);
     }
 
+    public static final int MP_PLAY_ID_FIELD_NUMBER = 15;
+    private int mpPlayId_;
+    /**
+     * <code>uint32 mp_play_id = 15;</code>
+     * @return The mpPlayId.
+     */
+    @java.lang.Override
+    public int getMpPlayId() {
+      return mpPlayId_;
+    }
+
+    public static final int MECHANICUS_DIFFICULT_LEVEL_FIELD_NUMBER = 4;
+    private int mechanicusDifficultLevel_;
+    /**
+     * <code>uint32 mechanicus_difficult_level = 4;</code>
+     * @return The mechanicusDifficultLevel.
+     */
+    @java.lang.Override
+    public int getMechanicusDifficultLevel() {
+      return mechanicusDifficultLevel_;
+    }
+
+    public static final int DUNGEON_ID_FIELD_NUMBER = 9;
+    private int dungeonId_;
+    /**
+     * <code>uint32 dungeon_id = 9;</code>
+     * @return The dungeonId.
+     */
+    @java.lang.Override
+    public int getDungeonId() {
+      return dungeonId_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 14;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 14;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
+    public static final int PARAM_FIELD_NUMBER = 5;
+    private int param_;
+    /**
+     * <code>uint32 param = 5;</code>
+     * @return The param.
+     */
+    @java.lang.Override
+    public int getParam() {
+      return param_;
+    }
+
     public static final int MATCH_TYPE_FIELD_NUMBER = 2;
     private int matchType_;
     /**
@@ -214,65 +269,10 @@ public final class PlayerStartMatchRspOuterClass {
       return result == null ? emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.UNRECOGNIZED : result;
     }
 
-    public static final int MECHANICUS_DIFFICULT_LEVEL_FIELD_NUMBER = 14;
-    private int mechanicusDifficultLevel_;
-    /**
-     * <code>uint32 mechanicus_difficult_level = 14;</code>
-     * @return The mechanicusDifficultLevel.
-     */
-    @java.lang.Override
-    public int getMechanicusDifficultLevel() {
-      return mechanicusDifficultLevel_;
-    }
-
-    public static final int DUNGEON_ID_FIELD_NUMBER = 12;
-    private int dungeonId_;
-    /**
-     * <code>uint32 dungeon_id = 12;</code>
-     * @return The dungeonId.
-     */
-    @java.lang.Override
-    public int getDungeonId() {
-      return dungeonId_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 10;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 10;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int PUNISH_END_TIME_FIELD_NUMBER = 6;
-    private int punishEndTime_;
-    /**
-     * <code>uint32 punish_end_time = 6;</code>
-     * @return The punishEndTime.
-     */
-    @java.lang.Override
-    public int getPunishEndTime() {
-      return punishEndTime_;
-    }
-
-    public static final int MP_PLAY_ID_FIELD_NUMBER = 3;
-    private int mpPlayId_;
-    /**
-     * <code>uint32 mp_play_id = 3;</code>
-     * @return The mpPlayId.
-     */
-    @java.lang.Override
-    public int getMpPlayId() {
-      return mpPlayId_;
-    }
-
-    public static final int MATCH_ID_FIELD_NUMBER = 4;
+    public static final int MATCH_ID_FIELD_NUMBER = 7;
     private int matchId_;
     /**
-     * <code>uint32 match_id = 4;</code>
+     * <code>uint32 match_id = 7;</code>
      * @return The matchId.
      */
     @java.lang.Override
@@ -280,15 +280,15 @@ public final class PlayerStartMatchRspOuterClass {
       return matchId_;
     }
 
-    public static final int PARAM_FIELD_NUMBER = 5;
-    private int param_;
+    public static final int PUNISH_END_TIME_FIELD_NUMBER = 10;
+    private int punishEndTime_;
     /**
-     * <code>uint32 param = 5;</code>
-     * @return The param.
+     * <code>uint32 punish_end_time = 10;</code>
+     * @return The punishEndTime.
      */
     @java.lang.Override
-    public int getParam() {
-      return param_;
+    public int getPunishEndTime() {
+      return punishEndTime_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -308,26 +308,26 @@ public final class PlayerStartMatchRspOuterClass {
       if (matchType_ != emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.MATCH_TYPE_NONE.getNumber()) {
         output.writeEnum(2, matchType_);
       }
-      if (mpPlayId_ != 0) {
-        output.writeUInt32(3, mpPlayId_);
-      }
-      if (matchId_ != 0) {
-        output.writeUInt32(4, matchId_);
+      if (mechanicusDifficultLevel_ != 0) {
+        output.writeUInt32(4, mechanicusDifficultLevel_);
       }
       if (param_ != 0) {
         output.writeUInt32(5, param_);
       }
-      if (punishEndTime_ != 0) {
-        output.writeUInt32(6, punishEndTime_);
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(10, retcode_);
+      if (matchId_ != 0) {
+        output.writeUInt32(7, matchId_);
       }
       if (dungeonId_ != 0) {
-        output.writeUInt32(12, dungeonId_);
+        output.writeUInt32(9, dungeonId_);
       }
-      if (mechanicusDifficultLevel_ != 0) {
-        output.writeUInt32(14, mechanicusDifficultLevel_);
+      if (punishEndTime_ != 0) {
+        output.writeUInt32(10, punishEndTime_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(14, retcode_);
+      }
+      if (mpPlayId_ != 0) {
+        output.writeUInt32(15, mpPlayId_);
       }
       unknownFields.writeTo(output);
     }
@@ -342,33 +342,33 @@ public final class PlayerStartMatchRspOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(2, matchType_);
       }
-      if (mpPlayId_ != 0) {
+      if (mechanicusDifficultLevel_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, mpPlayId_);
-      }
-      if (matchId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, matchId_);
+          .computeUInt32Size(4, mechanicusDifficultLevel_);
       }
       if (param_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(5, param_);
       }
-      if (punishEndTime_ != 0) {
+      if (matchId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, punishEndTime_);
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(10, retcode_);
+          .computeUInt32Size(7, matchId_);
       }
       if (dungeonId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, dungeonId_);
+          .computeUInt32Size(9, dungeonId_);
       }
-      if (mechanicusDifficultLevel_ != 0) {
+      if (punishEndTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, mechanicusDifficultLevel_);
+          .computeUInt32Size(10, punishEndTime_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(14, retcode_);
+      }
+      if (mpPlayId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, mpPlayId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -385,21 +385,21 @@ public final class PlayerStartMatchRspOuterClass {
       }
       emu.grasscutter.net.proto.PlayerStartMatchRspOuterClass.PlayerStartMatchRsp other = (emu.grasscutter.net.proto.PlayerStartMatchRspOuterClass.PlayerStartMatchRsp) obj;
 
-      if (matchType_ != other.matchType_) return false;
+      if (getMpPlayId()
+          != other.getMpPlayId()) return false;
       if (getMechanicusDifficultLevel()
           != other.getMechanicusDifficultLevel()) return false;
       if (getDungeonId()
           != other.getDungeonId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (getPunishEndTime()
-          != other.getPunishEndTime()) return false;
-      if (getMpPlayId()
-          != other.getMpPlayId()) return false;
-      if (getMatchId()
-          != other.getMatchId()) return false;
       if (getParam()
           != other.getParam()) return false;
+      if (matchType_ != other.matchType_) return false;
+      if (getMatchId()
+          != other.getMatchId()) return false;
+      if (getPunishEndTime()
+          != other.getPunishEndTime()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -411,22 +411,22 @@ public final class PlayerStartMatchRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MATCH_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + matchType_;
+      hash = (37 * hash) + MP_PLAY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getMpPlayId();
       hash = (37 * hash) + MECHANICUS_DIFFICULT_LEVEL_FIELD_NUMBER;
       hash = (53 * hash) + getMechanicusDifficultLevel();
       hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
       hash = (53 * hash) + getDungeonId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + PUNISH_END_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getPunishEndTime();
-      hash = (37 * hash) + MP_PLAY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getMpPlayId();
-      hash = (37 * hash) + MATCH_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getMatchId();
       hash = (37 * hash) + PARAM_FIELD_NUMBER;
       hash = (53 * hash) + getParam();
+      hash = (37 * hash) + MATCH_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + matchType_;
+      hash = (37 * hash) + MATCH_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getMatchId();
+      hash = (37 * hash) + PUNISH_END_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getPunishEndTime();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -524,8 +524,8 @@ public final class PlayerStartMatchRspOuterClass {
     }
     /**
      * <pre>
-     * Name: MBPJKGIMLAO
-     * CmdId: 4193
+     * CmdId: 4158
+     * Obf: EPIGPKHDAID
      * </pre>
      *
      * Protobuf type {@code PlayerStartMatchRsp}
@@ -565,7 +565,7 @@ public final class PlayerStartMatchRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        matchType_ = 0;
+        mpPlayId_ = 0;
 
         mechanicusDifficultLevel_ = 0;
 
@@ -573,13 +573,13 @@ public final class PlayerStartMatchRspOuterClass {
 
         retcode_ = 0;
 
-        punishEndTime_ = 0;
+        param_ = 0;
 
-        mpPlayId_ = 0;
+        matchType_ = 0;
 
         matchId_ = 0;
 
-        param_ = 0;
+        punishEndTime_ = 0;
 
         return this;
       }
@@ -607,14 +607,14 @@ public final class PlayerStartMatchRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PlayerStartMatchRspOuterClass.PlayerStartMatchRsp buildPartial() {
         emu.grasscutter.net.proto.PlayerStartMatchRspOuterClass.PlayerStartMatchRsp result = new emu.grasscutter.net.proto.PlayerStartMatchRspOuterClass.PlayerStartMatchRsp(this);
-        result.matchType_ = matchType_;
+        result.mpPlayId_ = mpPlayId_;
         result.mechanicusDifficultLevel_ = mechanicusDifficultLevel_;
         result.dungeonId_ = dungeonId_;
         result.retcode_ = retcode_;
-        result.punishEndTime_ = punishEndTime_;
-        result.mpPlayId_ = mpPlayId_;
-        result.matchId_ = matchId_;
         result.param_ = param_;
+        result.matchType_ = matchType_;
+        result.matchId_ = matchId_;
+        result.punishEndTime_ = punishEndTime_;
         onBuilt();
         return result;
       }
@@ -663,8 +663,8 @@ public final class PlayerStartMatchRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PlayerStartMatchRspOuterClass.PlayerStartMatchRsp other) {
         if (other == emu.grasscutter.net.proto.PlayerStartMatchRspOuterClass.PlayerStartMatchRsp.getDefaultInstance()) return this;
-        if (other.matchType_ != 0) {
-          setMatchTypeValue(other.getMatchTypeValue());
+        if (other.getMpPlayId() != 0) {
+          setMpPlayId(other.getMpPlayId());
         }
         if (other.getMechanicusDifficultLevel() != 0) {
           setMechanicusDifficultLevel(other.getMechanicusDifficultLevel());
@@ -675,17 +675,17 @@ public final class PlayerStartMatchRspOuterClass {
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
-        if (other.getPunishEndTime() != 0) {
-          setPunishEndTime(other.getPunishEndTime());
+        if (other.getParam() != 0) {
+          setParam(other.getParam());
         }
-        if (other.getMpPlayId() != 0) {
-          setMpPlayId(other.getMpPlayId());
+        if (other.matchType_ != 0) {
+          setMatchTypeValue(other.getMatchTypeValue());
         }
         if (other.getMatchId() != 0) {
           setMatchId(other.getMatchId());
         }
-        if (other.getParam() != 0) {
-          setParam(other.getParam());
+        if (other.getPunishEndTime() != 0) {
+          setPunishEndTime(other.getPunishEndTime());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -713,6 +713,161 @@ public final class PlayerStartMatchRspOuterClass {
             mergeFrom(parsedMessage);
           }
         }
+        return this;
+      }
+
+      private int mpPlayId_ ;
+      /**
+       * <code>uint32 mp_play_id = 15;</code>
+       * @return The mpPlayId.
+       */
+      @java.lang.Override
+      public int getMpPlayId() {
+        return mpPlayId_;
+      }
+      /**
+       * <code>uint32 mp_play_id = 15;</code>
+       * @param value The mpPlayId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMpPlayId(int value) {
+        
+        mpPlayId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 mp_play_id = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMpPlayId() {
+        
+        mpPlayId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int mechanicusDifficultLevel_ ;
+      /**
+       * <code>uint32 mechanicus_difficult_level = 4;</code>
+       * @return The mechanicusDifficultLevel.
+       */
+      @java.lang.Override
+      public int getMechanicusDifficultLevel() {
+        return mechanicusDifficultLevel_;
+      }
+      /**
+       * <code>uint32 mechanicus_difficult_level = 4;</code>
+       * @param value The mechanicusDifficultLevel to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMechanicusDifficultLevel(int value) {
+        
+        mechanicusDifficultLevel_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 mechanicus_difficult_level = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMechanicusDifficultLevel() {
+        
+        mechanicusDifficultLevel_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int dungeonId_ ;
+      /**
+       * <code>uint32 dungeon_id = 9;</code>
+       * @return The dungeonId.
+       */
+      @java.lang.Override
+      public int getDungeonId() {
+        return dungeonId_;
+      }
+      /**
+       * <code>uint32 dungeon_id = 9;</code>
+       * @param value The dungeonId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDungeonId(int value) {
+        
+        dungeonId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 dungeon_id = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDungeonId() {
+        
+        dungeonId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 14;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 14;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int param_ ;
+      /**
+       * <code>uint32 param = 5;</code>
+       * @return The param.
+       */
+      @java.lang.Override
+      public int getParam() {
+        return param_;
+      }
+      /**
+       * <code>uint32 param = 5;</code>
+       * @param value The param to set.
+       * @return This builder for chaining.
+       */
+      public Builder setParam(int value) {
+        
+        param_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 param = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearParam() {
+        
+        param_ = 0;
+        onChanged();
         return this;
       }
 
@@ -770,164 +925,9 @@ public final class PlayerStartMatchRspOuterClass {
         return this;
       }
 
-      private int mechanicusDifficultLevel_ ;
-      /**
-       * <code>uint32 mechanicus_difficult_level = 14;</code>
-       * @return The mechanicusDifficultLevel.
-       */
-      @java.lang.Override
-      public int getMechanicusDifficultLevel() {
-        return mechanicusDifficultLevel_;
-      }
-      /**
-       * <code>uint32 mechanicus_difficult_level = 14;</code>
-       * @param value The mechanicusDifficultLevel to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMechanicusDifficultLevel(int value) {
-        
-        mechanicusDifficultLevel_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 mechanicus_difficult_level = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMechanicusDifficultLevel() {
-        
-        mechanicusDifficultLevel_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int dungeonId_ ;
-      /**
-       * <code>uint32 dungeon_id = 12;</code>
-       * @return The dungeonId.
-       */
-      @java.lang.Override
-      public int getDungeonId() {
-        return dungeonId_;
-      }
-      /**
-       * <code>uint32 dungeon_id = 12;</code>
-       * @param value The dungeonId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDungeonId(int value) {
-        
-        dungeonId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 dungeon_id = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDungeonId() {
-        
-        dungeonId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 10;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 10;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int punishEndTime_ ;
-      /**
-       * <code>uint32 punish_end_time = 6;</code>
-       * @return The punishEndTime.
-       */
-      @java.lang.Override
-      public int getPunishEndTime() {
-        return punishEndTime_;
-      }
-      /**
-       * <code>uint32 punish_end_time = 6;</code>
-       * @param value The punishEndTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPunishEndTime(int value) {
-        
-        punishEndTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 punish_end_time = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPunishEndTime() {
-        
-        punishEndTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int mpPlayId_ ;
-      /**
-       * <code>uint32 mp_play_id = 3;</code>
-       * @return The mpPlayId.
-       */
-      @java.lang.Override
-      public int getMpPlayId() {
-        return mpPlayId_;
-      }
-      /**
-       * <code>uint32 mp_play_id = 3;</code>
-       * @param value The mpPlayId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMpPlayId(int value) {
-        
-        mpPlayId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 mp_play_id = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMpPlayId() {
-        
-        mpPlayId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int matchId_ ;
       /**
-       * <code>uint32 match_id = 4;</code>
+       * <code>uint32 match_id = 7;</code>
        * @return The matchId.
        */
       @java.lang.Override
@@ -935,7 +935,7 @@ public final class PlayerStartMatchRspOuterClass {
         return matchId_;
       }
       /**
-       * <code>uint32 match_id = 4;</code>
+       * <code>uint32 match_id = 7;</code>
        * @param value The matchId to set.
        * @return This builder for chaining.
        */
@@ -946,7 +946,7 @@ public final class PlayerStartMatchRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 match_id = 4;</code>
+       * <code>uint32 match_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearMatchId() {
@@ -956,33 +956,33 @@ public final class PlayerStartMatchRspOuterClass {
         return this;
       }
 
-      private int param_ ;
+      private int punishEndTime_ ;
       /**
-       * <code>uint32 param = 5;</code>
-       * @return The param.
+       * <code>uint32 punish_end_time = 10;</code>
+       * @return The punishEndTime.
        */
       @java.lang.Override
-      public int getParam() {
-        return param_;
+      public int getPunishEndTime() {
+        return punishEndTime_;
       }
       /**
-       * <code>uint32 param = 5;</code>
-       * @param value The param to set.
+       * <code>uint32 punish_end_time = 10;</code>
+       * @param value The punishEndTime to set.
        * @return This builder for chaining.
        */
-      public Builder setParam(int value) {
+      public Builder setPunishEndTime(int value) {
         
-        param_ = value;
+        punishEndTime_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 param = 5;</code>
+       * <code>uint32 punish_end_time = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearParam() {
+      public Builder clearPunishEndTime() {
         
-        param_ = 0;
+        punishEndTime_ = 0;
         onChanged();
         return this;
       }
@@ -1054,12 +1054,12 @@ public final class PlayerStartMatchRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031PlayerStartMatchRsp.proto\032\017MatchType.p" +
-      "roto\"\314\001\n\023PlayerStartMatchRsp\022\036\n\nmatch_ty" +
-      "pe\030\002 \001(\0162\n.MatchType\022\"\n\032mechanicus_diffi" +
-      "cult_level\030\016 \001(\r\022\022\n\ndungeon_id\030\014 \001(\r\022\017\n\007" +
-      "retcode\030\n \001(\005\022\027\n\017punish_end_time\030\006 \001(\r\022\022" +
-      "\n\nmp_play_id\030\003 \001(\r\022\020\n\010match_id\030\004 \001(\r\022\r\n\005" +
-      "param\030\005 \001(\rB\033\n\031emu.grasscutter.net.proto" +
+      "roto\"\314\001\n\023PlayerStartMatchRsp\022\022\n\nmp_play_" +
+      "id\030\017 \001(\r\022\"\n\032mechanicus_difficult_level\030\004" +
+      " \001(\r\022\022\n\ndungeon_id\030\t \001(\r\022\017\n\007retcode\030\016 \001(" +
+      "\005\022\r\n\005param\030\005 \001(\r\022\036\n\nmatch_type\030\002 \001(\0162\n.M" +
+      "atchType\022\020\n\010match_id\030\007 \001(\r\022\027\n\017punish_end" +
+      "_time\030\n \001(\rB\033\n\031emu.grasscutter.net.proto" +
       "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1072,7 +1072,7 @@ public final class PlayerStartMatchRspOuterClass {
     internal_static_PlayerStartMatchRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerStartMatchRsp_descriptor,
-        new java.lang.String[] { "MatchType", "MechanicusDifficultLevel", "DungeonId", "Retcode", "PunishEndTime", "MpPlayId", "MatchId", "Param", });
+        new java.lang.String[] { "MpPlayId", "MechanicusDifficultLevel", "DungeonId", "Retcode", "Param", "MatchType", "MatchId", "PunishEndTime", });
     emu.grasscutter.net.proto.MatchTypeOuterClass.getDescriptor();
   }
 

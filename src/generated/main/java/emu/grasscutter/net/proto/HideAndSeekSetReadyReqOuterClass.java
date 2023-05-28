@@ -20,8 +20,8 @@ public final class HideAndSeekSetReadyReqOuterClass {
   }
   /**
    * <pre>
-   * Name: GCEBOCHMFOD
-   * CmdId: 5311
+   * CmdId: 5356
+   * Obf: CICAMCIEDLN
    * </pre>
    *
    * Protobuf type {@code HideAndSeekSetReadyReq}
@@ -246,8 +246,8 @@ public final class HideAndSeekSetReadyReqOuterClass {
     }
     /**
      * <pre>
-     * Name: GCEBOCHMFOD
-     * CmdId: 5311
+     * CmdId: 5356
+     * Obf: CICAMCIEDLN
      * </pre>
      *
      * Protobuf type {@code HideAndSeekSetReadyReq}

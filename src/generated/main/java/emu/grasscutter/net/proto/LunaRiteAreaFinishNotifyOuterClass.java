@@ -19,15 +19,15 @@ public final class LunaRiteAreaFinishNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 area_id = 10;</code>
+     * <code>uint32 area_id = 15;</code>
      * @return The areaId.
      */
     int getAreaId();
   }
   /**
    * <pre>
-   * Name: HDNFAJFONNC
-   * CmdId: 8956
+   * CmdId: 8751
+   * Obf: AIIFDHIDFJH
    * </pre>
    *
    * Protobuf type {@code LunaRiteAreaFinishNotify}
@@ -74,7 +74,7 @@ public final class LunaRiteAreaFinishNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 120: {
 
               areaId_ = input.readUInt32();
               break;
@@ -111,10 +111,10 @@ public final class LunaRiteAreaFinishNotifyOuterClass {
               emu.grasscutter.net.proto.LunaRiteAreaFinishNotifyOuterClass.LunaRiteAreaFinishNotify.class, emu.grasscutter.net.proto.LunaRiteAreaFinishNotifyOuterClass.LunaRiteAreaFinishNotify.Builder.class);
     }
 
-    public static final int AREA_ID_FIELD_NUMBER = 10;
+    public static final int AREA_ID_FIELD_NUMBER = 15;
     private int areaId_;
     /**
-     * <code>uint32 area_id = 10;</code>
+     * <code>uint32 area_id = 15;</code>
      * @return The areaId.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class LunaRiteAreaFinishNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (areaId_ != 0) {
-        output.writeUInt32(10, areaId_);
+        output.writeUInt32(15, areaId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class LunaRiteAreaFinishNotifyOuterClass {
       size = 0;
       if (areaId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, areaId_);
+          .computeUInt32Size(15, areaId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class LunaRiteAreaFinishNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: HDNFAJFONNC
-     * CmdId: 8956
+     * CmdId: 8751
+     * Obf: AIIFDHIDFJH
      * </pre>
      *
      * Protobuf type {@code LunaRiteAreaFinishNotify}
@@ -431,7 +431,7 @@ public final class LunaRiteAreaFinishNotifyOuterClass {
 
       private int areaId_ ;
       /**
-       * <code>uint32 area_id = 10;</code>
+       * <code>uint32 area_id = 15;</code>
        * @return The areaId.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class LunaRiteAreaFinishNotifyOuterClass {
         return areaId_;
       }
       /**
-       * <code>uint32 area_id = 10;</code>
+       * <code>uint32 area_id = 15;</code>
        * @param value The areaId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class LunaRiteAreaFinishNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 area_id = 10;</code>
+       * <code>uint32 area_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearAreaId() {
@@ -527,7 +527,7 @@ public final class LunaRiteAreaFinishNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036LunaRiteAreaFinishNotify.proto\"+\n\030Luna" +
-      "RiteAreaFinishNotify\022\017\n\007area_id\030\n \001(\rB\033\n" +
+      "RiteAreaFinishNotify\022\017\n\007area_id\030\017 \001(\rB\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

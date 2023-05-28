@@ -44,7 +44,7 @@ public final class HomeStakeRecordOuterClass {
   }
   /**
    * <pre>
-   * Name: GGDHLNEKIJB
+   * Obf: KDGCIAPGPDH
    * </pre>
    *
    * Protobuf type {@code HomeStakeRecord}
@@ -336,7 +336,7 @@ public final class HomeStakeRecordOuterClass {
     }
     /**
      * <pre>
-     * Name: GGDHLNEKIJB
+     * Obf: KDGCIAPGPDH
      * </pre>
      *
      * Protobuf type {@code HomeStakeRecord}

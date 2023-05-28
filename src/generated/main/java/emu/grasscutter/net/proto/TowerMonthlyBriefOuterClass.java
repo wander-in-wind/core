@@ -19,48 +19,32 @@ public final class TowerMonthlyBriefOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *IOOHBFIGKHH
-     * </pre>
-     *
-     * <code>uint32 tower_schedule_id = 11;</code>
+     * <code>uint32 LJGBNNKAJOF = 5;</code>
+     * @return The lJGBNNKAJOF.
+     */
+    int getLJGBNNKAJOF();
+
+    /**
+     * <code>uint32 FGDCNEJCNJO = 14;</code>
+     * @return The fGDCNEJCNJO.
+     */
+    int getFGDCNEJCNJO();
+
+    /**
+     * <code>uint32 tower_schedule_id = 6;</code>
      * @return The towerScheduleId.
      */
     int getTowerScheduleId();
 
     /**
-     * <pre>
-     *BNODKLKHBPA
-     * </pre>
-     *
-     * <code>uint32 total_star_count = 12;</code>
-     * @return The totalStarCount.
+     * <code>uint32 LINAGDMNNGF = 3;</code>
+     * @return The lINAGDMNNGF.
      */
-    int getTotalStarCount();
-
-    /**
-     * <pre>
-     *JILIANEOBAP
-     * </pre>
-     *
-     * <code>uint32 best_level_index = 14;</code>
-     * @return The bestLevelIndex.
-     */
-    int getBestLevelIndex();
-
-    /**
-     * <pre>
-     *GIMMDPJPPNH
-     * </pre>
-     *
-     * <code>uint32 best_floor_index = 10;</code>
-     * @return The bestFloorIndex.
-     */
-    int getBestFloorIndex();
+    int getLINAGDMNNGF();
   }
   /**
    * <pre>
-   * Name: DKDAOPDHNED
+   * Obf: PLCFJBMLEGG
    * </pre>
    *
    * Protobuf type {@code TowerMonthlyBrief}
@@ -107,24 +91,24 @@ public final class TowerMonthlyBriefOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 24: {
 
-              bestFloorIndex_ = input.readUInt32();
+              lINAGDMNNGF_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 40: {
+
+              lJGBNNKAJOF_ = input.readUInt32();
+              break;
+            }
+            case 48: {
 
               towerScheduleId_ = input.readUInt32();
               break;
             }
-            case 96: {
-
-              totalStarCount_ = input.readUInt32();
-              break;
-            }
             case 112: {
 
-              bestLevelIndex_ = input.readUInt32();
+              fGDCNEJCNJO_ = input.readUInt32();
               break;
             }
             default: {
@@ -159,14 +143,32 @@ public final class TowerMonthlyBriefOuterClass {
               emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief.class, emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief.Builder.class);
     }
 
-    public static final int TOWER_SCHEDULE_ID_FIELD_NUMBER = 11;
+    public static final int LJGBNNKAJOF_FIELD_NUMBER = 5;
+    private int lJGBNNKAJOF_;
+    /**
+     * <code>uint32 LJGBNNKAJOF = 5;</code>
+     * @return The lJGBNNKAJOF.
+     */
+    @java.lang.Override
+    public int getLJGBNNKAJOF() {
+      return lJGBNNKAJOF_;
+    }
+
+    public static final int FGDCNEJCNJO_FIELD_NUMBER = 14;
+    private int fGDCNEJCNJO_;
+    /**
+     * <code>uint32 FGDCNEJCNJO = 14;</code>
+     * @return The fGDCNEJCNJO.
+     */
+    @java.lang.Override
+    public int getFGDCNEJCNJO() {
+      return fGDCNEJCNJO_;
+    }
+
+    public static final int TOWER_SCHEDULE_ID_FIELD_NUMBER = 6;
     private int towerScheduleId_;
     /**
-     * <pre>
-     *IOOHBFIGKHH
-     * </pre>
-     *
-     * <code>uint32 tower_schedule_id = 11;</code>
+     * <code>uint32 tower_schedule_id = 6;</code>
      * @return The towerScheduleId.
      */
     @java.lang.Override
@@ -174,49 +176,15 @@ public final class TowerMonthlyBriefOuterClass {
       return towerScheduleId_;
     }
 
-    public static final int TOTAL_STAR_COUNT_FIELD_NUMBER = 12;
-    private int totalStarCount_;
+    public static final int LINAGDMNNGF_FIELD_NUMBER = 3;
+    private int lINAGDMNNGF_;
     /**
-     * <pre>
-     *BNODKLKHBPA
-     * </pre>
-     *
-     * <code>uint32 total_star_count = 12;</code>
-     * @return The totalStarCount.
+     * <code>uint32 LINAGDMNNGF = 3;</code>
+     * @return The lINAGDMNNGF.
      */
     @java.lang.Override
-    public int getTotalStarCount() {
-      return totalStarCount_;
-    }
-
-    public static final int BEST_LEVEL_INDEX_FIELD_NUMBER = 14;
-    private int bestLevelIndex_;
-    /**
-     * <pre>
-     *JILIANEOBAP
-     * </pre>
-     *
-     * <code>uint32 best_level_index = 14;</code>
-     * @return The bestLevelIndex.
-     */
-    @java.lang.Override
-    public int getBestLevelIndex() {
-      return bestLevelIndex_;
-    }
-
-    public static final int BEST_FLOOR_INDEX_FIELD_NUMBER = 10;
-    private int bestFloorIndex_;
-    /**
-     * <pre>
-     *GIMMDPJPPNH
-     * </pre>
-     *
-     * <code>uint32 best_floor_index = 10;</code>
-     * @return The bestFloorIndex.
-     */
-    @java.lang.Override
-    public int getBestFloorIndex() {
-      return bestFloorIndex_;
+    public int getLINAGDMNNGF() {
+      return lINAGDMNNGF_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -233,17 +201,17 @@ public final class TowerMonthlyBriefOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (bestFloorIndex_ != 0) {
-        output.writeUInt32(10, bestFloorIndex_);
+      if (lINAGDMNNGF_ != 0) {
+        output.writeUInt32(3, lINAGDMNNGF_);
+      }
+      if (lJGBNNKAJOF_ != 0) {
+        output.writeUInt32(5, lJGBNNKAJOF_);
       }
       if (towerScheduleId_ != 0) {
-        output.writeUInt32(11, towerScheduleId_);
+        output.writeUInt32(6, towerScheduleId_);
       }
-      if (totalStarCount_ != 0) {
-        output.writeUInt32(12, totalStarCount_);
-      }
-      if (bestLevelIndex_ != 0) {
-        output.writeUInt32(14, bestLevelIndex_);
+      if (fGDCNEJCNJO_ != 0) {
+        output.writeUInt32(14, fGDCNEJCNJO_);
       }
       unknownFields.writeTo(output);
     }
@@ -254,21 +222,21 @@ public final class TowerMonthlyBriefOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (bestFloorIndex_ != 0) {
+      if (lINAGDMNNGF_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, bestFloorIndex_);
+          .computeUInt32Size(3, lINAGDMNNGF_);
+      }
+      if (lJGBNNKAJOF_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, lJGBNNKAJOF_);
       }
       if (towerScheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, towerScheduleId_);
+          .computeUInt32Size(6, towerScheduleId_);
       }
-      if (totalStarCount_ != 0) {
+      if (fGDCNEJCNJO_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, totalStarCount_);
-      }
-      if (bestLevelIndex_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, bestLevelIndex_);
+          .computeUInt32Size(14, fGDCNEJCNJO_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -285,14 +253,14 @@ public final class TowerMonthlyBriefOuterClass {
       }
       emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief other = (emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief) obj;
 
+      if (getLJGBNNKAJOF()
+          != other.getLJGBNNKAJOF()) return false;
+      if (getFGDCNEJCNJO()
+          != other.getFGDCNEJCNJO()) return false;
       if (getTowerScheduleId()
           != other.getTowerScheduleId()) return false;
-      if (getTotalStarCount()
-          != other.getTotalStarCount()) return false;
-      if (getBestLevelIndex()
-          != other.getBestLevelIndex()) return false;
-      if (getBestFloorIndex()
-          != other.getBestFloorIndex()) return false;
+      if (getLINAGDMNNGF()
+          != other.getLINAGDMNNGF()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -304,14 +272,14 @@ public final class TowerMonthlyBriefOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + LJGBNNKAJOF_FIELD_NUMBER;
+      hash = (53 * hash) + getLJGBNNKAJOF();
+      hash = (37 * hash) + FGDCNEJCNJO_FIELD_NUMBER;
+      hash = (53 * hash) + getFGDCNEJCNJO();
       hash = (37 * hash) + TOWER_SCHEDULE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getTowerScheduleId();
-      hash = (37 * hash) + TOTAL_STAR_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getTotalStarCount();
-      hash = (37 * hash) + BEST_LEVEL_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getBestLevelIndex();
-      hash = (37 * hash) + BEST_FLOOR_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getBestFloorIndex();
+      hash = (37 * hash) + LINAGDMNNGF_FIELD_NUMBER;
+      hash = (53 * hash) + getLINAGDMNNGF();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -409,7 +377,7 @@ public final class TowerMonthlyBriefOuterClass {
     }
     /**
      * <pre>
-     * Name: DKDAOPDHNED
+     * Obf: PLCFJBMLEGG
      * </pre>
      *
      * Protobuf type {@code TowerMonthlyBrief}
@@ -449,13 +417,13 @@ public final class TowerMonthlyBriefOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        lJGBNNKAJOF_ = 0;
+
+        fGDCNEJCNJO_ = 0;
+
         towerScheduleId_ = 0;
 
-        totalStarCount_ = 0;
-
-        bestLevelIndex_ = 0;
-
-        bestFloorIndex_ = 0;
+        lINAGDMNNGF_ = 0;
 
         return this;
       }
@@ -483,10 +451,10 @@ public final class TowerMonthlyBriefOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief buildPartial() {
         emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief result = new emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief(this);
+        result.lJGBNNKAJOF_ = lJGBNNKAJOF_;
+        result.fGDCNEJCNJO_ = fGDCNEJCNJO_;
         result.towerScheduleId_ = towerScheduleId_;
-        result.totalStarCount_ = totalStarCount_;
-        result.bestLevelIndex_ = bestLevelIndex_;
-        result.bestFloorIndex_ = bestFloorIndex_;
+        result.lINAGDMNNGF_ = lINAGDMNNGF_;
         onBuilt();
         return result;
       }
@@ -535,17 +503,17 @@ public final class TowerMonthlyBriefOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief other) {
         if (other == emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief.getDefaultInstance()) return this;
+        if (other.getLJGBNNKAJOF() != 0) {
+          setLJGBNNKAJOF(other.getLJGBNNKAJOF());
+        }
+        if (other.getFGDCNEJCNJO() != 0) {
+          setFGDCNEJCNJO(other.getFGDCNEJCNJO());
+        }
         if (other.getTowerScheduleId() != 0) {
           setTowerScheduleId(other.getTowerScheduleId());
         }
-        if (other.getTotalStarCount() != 0) {
-          setTotalStarCount(other.getTotalStarCount());
-        }
-        if (other.getBestLevelIndex() != 0) {
-          setBestLevelIndex(other.getBestLevelIndex());
-        }
-        if (other.getBestFloorIndex() != 0) {
-          setBestFloorIndex(other.getBestFloorIndex());
+        if (other.getLINAGDMNNGF() != 0) {
+          setLINAGDMNNGF(other.getLINAGDMNNGF());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -576,13 +544,71 @@ public final class TowerMonthlyBriefOuterClass {
         return this;
       }
 
+      private int lJGBNNKAJOF_ ;
+      /**
+       * <code>uint32 LJGBNNKAJOF = 5;</code>
+       * @return The lJGBNNKAJOF.
+       */
+      @java.lang.Override
+      public int getLJGBNNKAJOF() {
+        return lJGBNNKAJOF_;
+      }
+      /**
+       * <code>uint32 LJGBNNKAJOF = 5;</code>
+       * @param value The lJGBNNKAJOF to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLJGBNNKAJOF(int value) {
+        
+        lJGBNNKAJOF_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 LJGBNNKAJOF = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLJGBNNKAJOF() {
+        
+        lJGBNNKAJOF_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int fGDCNEJCNJO_ ;
+      /**
+       * <code>uint32 FGDCNEJCNJO = 14;</code>
+       * @return The fGDCNEJCNJO.
+       */
+      @java.lang.Override
+      public int getFGDCNEJCNJO() {
+        return fGDCNEJCNJO_;
+      }
+      /**
+       * <code>uint32 FGDCNEJCNJO = 14;</code>
+       * @param value The fGDCNEJCNJO to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFGDCNEJCNJO(int value) {
+        
+        fGDCNEJCNJO_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 FGDCNEJCNJO = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFGDCNEJCNJO() {
+        
+        fGDCNEJCNJO_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int towerScheduleId_ ;
       /**
-       * <pre>
-       *IOOHBFIGKHH
-       * </pre>
-       *
-       * <code>uint32 tower_schedule_id = 11;</code>
+       * <code>uint32 tower_schedule_id = 6;</code>
        * @return The towerScheduleId.
        */
       @java.lang.Override
@@ -590,11 +616,7 @@ public final class TowerMonthlyBriefOuterClass {
         return towerScheduleId_;
       }
       /**
-       * <pre>
-       *IOOHBFIGKHH
-       * </pre>
-       *
-       * <code>uint32 tower_schedule_id = 11;</code>
+       * <code>uint32 tower_schedule_id = 6;</code>
        * @param value The towerScheduleId to set.
        * @return This builder for chaining.
        */
@@ -605,11 +627,7 @@ public final class TowerMonthlyBriefOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *IOOHBFIGKHH
-       * </pre>
-       *
-       * <code>uint32 tower_schedule_id = 11;</code>
+       * <code>uint32 tower_schedule_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearTowerScheduleId() {
@@ -619,131 +637,33 @@ public final class TowerMonthlyBriefOuterClass {
         return this;
       }
 
-      private int totalStarCount_ ;
+      private int lINAGDMNNGF_ ;
       /**
-       * <pre>
-       *BNODKLKHBPA
-       * </pre>
-       *
-       * <code>uint32 total_star_count = 12;</code>
-       * @return The totalStarCount.
+       * <code>uint32 LINAGDMNNGF = 3;</code>
+       * @return The lINAGDMNNGF.
        */
       @java.lang.Override
-      public int getTotalStarCount() {
-        return totalStarCount_;
+      public int getLINAGDMNNGF() {
+        return lINAGDMNNGF_;
       }
       /**
-       * <pre>
-       *BNODKLKHBPA
-       * </pre>
-       *
-       * <code>uint32 total_star_count = 12;</code>
-       * @param value The totalStarCount to set.
+       * <code>uint32 LINAGDMNNGF = 3;</code>
+       * @param value The lINAGDMNNGF to set.
        * @return This builder for chaining.
        */
-      public Builder setTotalStarCount(int value) {
+      public Builder setLINAGDMNNGF(int value) {
         
-        totalStarCount_ = value;
+        lINAGDMNNGF_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       *BNODKLKHBPA
-       * </pre>
-       *
-       * <code>uint32 total_star_count = 12;</code>
+       * <code>uint32 LINAGDMNNGF = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTotalStarCount() {
+      public Builder clearLINAGDMNNGF() {
         
-        totalStarCount_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int bestLevelIndex_ ;
-      /**
-       * <pre>
-       *JILIANEOBAP
-       * </pre>
-       *
-       * <code>uint32 best_level_index = 14;</code>
-       * @return The bestLevelIndex.
-       */
-      @java.lang.Override
-      public int getBestLevelIndex() {
-        return bestLevelIndex_;
-      }
-      /**
-       * <pre>
-       *JILIANEOBAP
-       * </pre>
-       *
-       * <code>uint32 best_level_index = 14;</code>
-       * @param value The bestLevelIndex to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBestLevelIndex(int value) {
-        
-        bestLevelIndex_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *JILIANEOBAP
-       * </pre>
-       *
-       * <code>uint32 best_level_index = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBestLevelIndex() {
-        
-        bestLevelIndex_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int bestFloorIndex_ ;
-      /**
-       * <pre>
-       *GIMMDPJPPNH
-       * </pre>
-       *
-       * <code>uint32 best_floor_index = 10;</code>
-       * @return The bestFloorIndex.
-       */
-      @java.lang.Override
-      public int getBestFloorIndex() {
-        return bestFloorIndex_;
-      }
-      /**
-       * <pre>
-       *GIMMDPJPPNH
-       * </pre>
-       *
-       * <code>uint32 best_floor_index = 10;</code>
-       * @param value The bestFloorIndex to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBestFloorIndex(int value) {
-        
-        bestFloorIndex_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *GIMMDPJPPNH
-       * </pre>
-       *
-       * <code>uint32 best_floor_index = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBestFloorIndex() {
-        
-        bestFloorIndex_ = 0;
+        lINAGDMNNGF_ = 0;
         onChanged();
         return this;
       }
@@ -814,11 +734,11 @@ public final class TowerMonthlyBriefOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\027TowerMonthlyBrief.proto\"|\n\021TowerMonthl" +
-      "yBrief\022\031\n\021tower_schedule_id\030\013 \001(\r\022\030\n\020tot" +
-      "al_star_count\030\014 \001(\r\022\030\n\020best_level_index\030" +
-      "\016 \001(\r\022\030\n\020best_floor_index\030\n \001(\rB\033\n\031emu.g" +
-      "rasscutter.net.protob\006proto3"
+      "\n\027TowerMonthlyBrief.proto\"m\n\021TowerMonthl" +
+      "yBrief\022\023\n\013LJGBNNKAJOF\030\005 \001(\r\022\023\n\013FGDCNEJCN" +
+      "JO\030\016 \001(\r\022\031\n\021tower_schedule_id\030\006 \001(\r\022\023\n\013L" +
+      "INAGDMNNGF\030\003 \001(\rB\033\n\031emu.grasscutter.net." +
+      "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -829,7 +749,7 @@ public final class TowerMonthlyBriefOuterClass {
     internal_static_TowerMonthlyBrief_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TowerMonthlyBrief_descriptor,
-        new java.lang.String[] { "TowerScheduleId", "TotalStarCount", "BestLevelIndex", "BestFloorIndex", });
+        new java.lang.String[] { "LJGBNNKAJOF", "FGDCNEJCNJO", "TowerScheduleId", "LINAGDMNNGF", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

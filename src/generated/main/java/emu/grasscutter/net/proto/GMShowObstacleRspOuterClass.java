@@ -19,39 +19,39 @@ public final class GMShowObstacleRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .GMObstacleInfo obstacles = 4;</code>
+     * <code>repeated .GMObstacleInfo obstacles = 9;</code>
      */
     java.util.List<emu.grasscutter.net.proto.GMObstacleInfoOuterClass.GMObstacleInfo> 
         getObstaclesList();
     /**
-     * <code>repeated .GMObstacleInfo obstacles = 4;</code>
+     * <code>repeated .GMObstacleInfo obstacles = 9;</code>
      */
     emu.grasscutter.net.proto.GMObstacleInfoOuterClass.GMObstacleInfo getObstacles(int index);
     /**
-     * <code>repeated .GMObstacleInfo obstacles = 4;</code>
+     * <code>repeated .GMObstacleInfo obstacles = 9;</code>
      */
     int getObstaclesCount();
     /**
-     * <code>repeated .GMObstacleInfo obstacles = 4;</code>
+     * <code>repeated .GMObstacleInfo obstacles = 9;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.GMObstacleInfoOuterClass.GMObstacleInfoOrBuilder> 
         getObstaclesOrBuilderList();
     /**
-     * <code>repeated .GMObstacleInfo obstacles = 4;</code>
+     * <code>repeated .GMObstacleInfo obstacles = 9;</code>
      */
     emu.grasscutter.net.proto.GMObstacleInfoOuterClass.GMObstacleInfoOrBuilder getObstaclesOrBuilder(
         int index);
 
     /**
-     * <code>int32 retcode = 2;</code>
+     * <code>int32 retcode = 7;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * Name: OCDAKMFDDAK
-   * CmdId: 2338
+   * CmdId: 2377
+   * Obf: KDCANMAJPFE
    * </pre>
    *
    * Protobuf type {@code GMShowObstacleRsp}
@@ -100,12 +100,12 @@ public final class GMShowObstacleRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 56: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 34: {
+            case 74: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 obstacles_ = new java.util.ArrayList<emu.grasscutter.net.proto.GMObstacleInfoOuterClass.GMObstacleInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -149,17 +149,17 @@ public final class GMShowObstacleRspOuterClass {
               emu.grasscutter.net.proto.GMShowObstacleRspOuterClass.GMShowObstacleRsp.class, emu.grasscutter.net.proto.GMShowObstacleRspOuterClass.GMShowObstacleRsp.Builder.class);
     }
 
-    public static final int OBSTACLES_FIELD_NUMBER = 4;
+    public static final int OBSTACLES_FIELD_NUMBER = 9;
     private java.util.List<emu.grasscutter.net.proto.GMObstacleInfoOuterClass.GMObstacleInfo> obstacles_;
     /**
-     * <code>repeated .GMObstacleInfo obstacles = 4;</code>
+     * <code>repeated .GMObstacleInfo obstacles = 9;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.GMObstacleInfoOuterClass.GMObstacleInfo> getObstaclesList() {
       return obstacles_;
     }
     /**
-     * <code>repeated .GMObstacleInfo obstacles = 4;</code>
+     * <code>repeated .GMObstacleInfo obstacles = 9;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.GMObstacleInfoOuterClass.GMObstacleInfoOrBuilder> 
@@ -167,21 +167,21 @@ public final class GMShowObstacleRspOuterClass {
       return obstacles_;
     }
     /**
-     * <code>repeated .GMObstacleInfo obstacles = 4;</code>
+     * <code>repeated .GMObstacleInfo obstacles = 9;</code>
      */
     @java.lang.Override
     public int getObstaclesCount() {
       return obstacles_.size();
     }
     /**
-     * <code>repeated .GMObstacleInfo obstacles = 4;</code>
+     * <code>repeated .GMObstacleInfo obstacles = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GMObstacleInfoOuterClass.GMObstacleInfo getObstacles(int index) {
       return obstacles_.get(index);
     }
     /**
-     * <code>repeated .GMObstacleInfo obstacles = 4;</code>
+     * <code>repeated .GMObstacleInfo obstacles = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GMObstacleInfoOuterClass.GMObstacleInfoOrBuilder getObstaclesOrBuilder(
@@ -189,10 +189,10 @@ public final class GMShowObstacleRspOuterClass {
       return obstacles_.get(index);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 2;
+    public static final int RETCODE_FIELD_NUMBER = 7;
     private int retcode_;
     /**
-     * <code>int32 retcode = 2;</code>
+     * <code>int32 retcode = 7;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -215,10 +215,10 @@ public final class GMShowObstacleRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(2, retcode_);
+        output.writeInt32(7, retcode_);
       }
       for (int i = 0; i < obstacles_.size(); i++) {
-        output.writeMessage(4, obstacles_.get(i));
+        output.writeMessage(9, obstacles_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -231,11 +231,11 @@ public final class GMShowObstacleRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, retcode_);
+          .computeInt32Size(7, retcode_);
       }
       for (int i = 0; i < obstacles_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, obstacles_.get(i));
+          .computeMessageSize(9, obstacles_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -370,8 +370,8 @@ public final class GMShowObstacleRspOuterClass {
     }
     /**
      * <pre>
-     * Name: OCDAKMFDDAK
-     * CmdId: 2338
+     * CmdId: 2377
+     * Obf: KDCANMAJPFE
      * </pre>
      *
      * Protobuf type {@code GMShowObstacleRsp}
@@ -577,7 +577,7 @@ public final class GMShowObstacleRspOuterClass {
           emu.grasscutter.net.proto.GMObstacleInfoOuterClass.GMObstacleInfo, emu.grasscutter.net.proto.GMObstacleInfoOuterClass.GMObstacleInfo.Builder, emu.grasscutter.net.proto.GMObstacleInfoOuterClass.GMObstacleInfoOrBuilder> obstaclesBuilder_;
 
       /**
-       * <code>repeated .GMObstacleInfo obstacles = 4;</code>
+       * <code>repeated .GMObstacleInfo obstacles = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GMObstacleInfoOuterClass.GMObstacleInfo> getObstaclesList() {
         if (obstaclesBuilder_ == null) {
@@ -587,7 +587,7 @@ public final class GMShowObstacleRspOuterClass {
         }
       }
       /**
-       * <code>repeated .GMObstacleInfo obstacles = 4;</code>
+       * <code>repeated .GMObstacleInfo obstacles = 9;</code>
        */
       public int getObstaclesCount() {
         if (obstaclesBuilder_ == null) {
@@ -597,7 +597,7 @@ public final class GMShowObstacleRspOuterClass {
         }
       }
       /**
-       * <code>repeated .GMObstacleInfo obstacles = 4;</code>
+       * <code>repeated .GMObstacleInfo obstacles = 9;</code>
        */
       public emu.grasscutter.net.proto.GMObstacleInfoOuterClass.GMObstacleInfo getObstacles(int index) {
         if (obstaclesBuilder_ == null) {
@@ -607,7 +607,7 @@ public final class GMShowObstacleRspOuterClass {
         }
       }
       /**
-       * <code>repeated .GMObstacleInfo obstacles = 4;</code>
+       * <code>repeated .GMObstacleInfo obstacles = 9;</code>
        */
       public Builder setObstacles(
           int index, emu.grasscutter.net.proto.GMObstacleInfoOuterClass.GMObstacleInfo value) {
@@ -624,7 +624,7 @@ public final class GMShowObstacleRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GMObstacleInfo obstacles = 4;</code>
+       * <code>repeated .GMObstacleInfo obstacles = 9;</code>
        */
       public Builder setObstacles(
           int index, emu.grasscutter.net.proto.GMObstacleInfoOuterClass.GMObstacleInfo.Builder builderForValue) {
@@ -638,7 +638,7 @@ public final class GMShowObstacleRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GMObstacleInfo obstacles = 4;</code>
+       * <code>repeated .GMObstacleInfo obstacles = 9;</code>
        */
       public Builder addObstacles(emu.grasscutter.net.proto.GMObstacleInfoOuterClass.GMObstacleInfo value) {
         if (obstaclesBuilder_ == null) {
@@ -654,7 +654,7 @@ public final class GMShowObstacleRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GMObstacleInfo obstacles = 4;</code>
+       * <code>repeated .GMObstacleInfo obstacles = 9;</code>
        */
       public Builder addObstacles(
           int index, emu.grasscutter.net.proto.GMObstacleInfoOuterClass.GMObstacleInfo value) {
@@ -671,7 +671,7 @@ public final class GMShowObstacleRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GMObstacleInfo obstacles = 4;</code>
+       * <code>repeated .GMObstacleInfo obstacles = 9;</code>
        */
       public Builder addObstacles(
           emu.grasscutter.net.proto.GMObstacleInfoOuterClass.GMObstacleInfo.Builder builderForValue) {
@@ -685,7 +685,7 @@ public final class GMShowObstacleRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GMObstacleInfo obstacles = 4;</code>
+       * <code>repeated .GMObstacleInfo obstacles = 9;</code>
        */
       public Builder addObstacles(
           int index, emu.grasscutter.net.proto.GMObstacleInfoOuterClass.GMObstacleInfo.Builder builderForValue) {
@@ -699,7 +699,7 @@ public final class GMShowObstacleRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GMObstacleInfo obstacles = 4;</code>
+       * <code>repeated .GMObstacleInfo obstacles = 9;</code>
        */
       public Builder addAllObstacles(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.GMObstacleInfoOuterClass.GMObstacleInfo> values) {
@@ -714,7 +714,7 @@ public final class GMShowObstacleRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GMObstacleInfo obstacles = 4;</code>
+       * <code>repeated .GMObstacleInfo obstacles = 9;</code>
        */
       public Builder clearObstacles() {
         if (obstaclesBuilder_ == null) {
@@ -727,7 +727,7 @@ public final class GMShowObstacleRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GMObstacleInfo obstacles = 4;</code>
+       * <code>repeated .GMObstacleInfo obstacles = 9;</code>
        */
       public Builder removeObstacles(int index) {
         if (obstaclesBuilder_ == null) {
@@ -740,14 +740,14 @@ public final class GMShowObstacleRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GMObstacleInfo obstacles = 4;</code>
+       * <code>repeated .GMObstacleInfo obstacles = 9;</code>
        */
       public emu.grasscutter.net.proto.GMObstacleInfoOuterClass.GMObstacleInfo.Builder getObstaclesBuilder(
           int index) {
         return getObstaclesFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .GMObstacleInfo obstacles = 4;</code>
+       * <code>repeated .GMObstacleInfo obstacles = 9;</code>
        */
       public emu.grasscutter.net.proto.GMObstacleInfoOuterClass.GMObstacleInfoOrBuilder getObstaclesOrBuilder(
           int index) {
@@ -757,7 +757,7 @@ public final class GMShowObstacleRspOuterClass {
         }
       }
       /**
-       * <code>repeated .GMObstacleInfo obstacles = 4;</code>
+       * <code>repeated .GMObstacleInfo obstacles = 9;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.GMObstacleInfoOuterClass.GMObstacleInfoOrBuilder> 
            getObstaclesOrBuilderList() {
@@ -768,14 +768,14 @@ public final class GMShowObstacleRspOuterClass {
         }
       }
       /**
-       * <code>repeated .GMObstacleInfo obstacles = 4;</code>
+       * <code>repeated .GMObstacleInfo obstacles = 9;</code>
        */
       public emu.grasscutter.net.proto.GMObstacleInfoOuterClass.GMObstacleInfo.Builder addObstaclesBuilder() {
         return getObstaclesFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.GMObstacleInfoOuterClass.GMObstacleInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .GMObstacleInfo obstacles = 4;</code>
+       * <code>repeated .GMObstacleInfo obstacles = 9;</code>
        */
       public emu.grasscutter.net.proto.GMObstacleInfoOuterClass.GMObstacleInfo.Builder addObstaclesBuilder(
           int index) {
@@ -783,7 +783,7 @@ public final class GMShowObstacleRspOuterClass {
             index, emu.grasscutter.net.proto.GMObstacleInfoOuterClass.GMObstacleInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .GMObstacleInfo obstacles = 4;</code>
+       * <code>repeated .GMObstacleInfo obstacles = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GMObstacleInfoOuterClass.GMObstacleInfo.Builder> 
            getObstaclesBuilderList() {
@@ -806,7 +806,7 @@ public final class GMShowObstacleRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 7;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -814,7 +814,7 @@ public final class GMShowObstacleRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 7;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -825,7 +825,7 @@ public final class GMShowObstacleRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -903,7 +903,7 @@ public final class GMShowObstacleRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\027GMShowObstacleRsp.proto\032\024GMObstacleInf" +
       "o.proto\"H\n\021GMShowObstacleRsp\022\"\n\tobstacle" +
-      "s\030\004 \003(\0132\017.GMObstacleInfo\022\017\n\007retcode\030\002 \001(" +
+      "s\030\t \003(\0132\017.GMObstacleInfo\022\017\n\007retcode\030\007 \001(" +
       "\005B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

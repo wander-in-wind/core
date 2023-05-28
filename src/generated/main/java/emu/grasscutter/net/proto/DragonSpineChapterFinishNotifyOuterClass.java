@@ -19,27 +19,27 @@ public final class DragonSpineChapterFinishNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 chapter_id = 13;</code>
+     * <code>uint32 chapter_id = 5;</code>
      * @return The chapterId.
      */
     int getChapterId();
 
     /**
-     * <code>uint32 schedule_id = 1;</code>
+     * <code>uint32 schedule_id = 15;</code>
      * @return The scheduleId.
      */
     int getScheduleId();
 
     /**
-     * <code>uint32 weapon_enhance_level = 8;</code>
+     * <code>uint32 weapon_enhance_level = 2;</code>
      * @return The weaponEnhanceLevel.
      */
     int getWeaponEnhanceLevel();
   }
   /**
    * <pre>
-   * Name: DKBFCMEAKEH
-   * CmdId: 2182
+   * CmdId: 2072
+   * Obf: IPHNALGCMCK
    * </pre>
    *
    * Protobuf type {@code DragonSpineChapterFinishNotify}
@@ -86,19 +86,19 @@ public final class DragonSpineChapterFinishNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              scheduleId_ = input.readUInt32();
-              break;
-            }
-            case 64: {
+            case 16: {
 
               weaponEnhanceLevel_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 40: {
 
               chapterId_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              scheduleId_ = input.readUInt32();
               break;
             }
             default: {
@@ -133,10 +133,10 @@ public final class DragonSpineChapterFinishNotifyOuterClass {
               emu.grasscutter.net.proto.DragonSpineChapterFinishNotifyOuterClass.DragonSpineChapterFinishNotify.class, emu.grasscutter.net.proto.DragonSpineChapterFinishNotifyOuterClass.DragonSpineChapterFinishNotify.Builder.class);
     }
 
-    public static final int CHAPTER_ID_FIELD_NUMBER = 13;
+    public static final int CHAPTER_ID_FIELD_NUMBER = 5;
     private int chapterId_;
     /**
-     * <code>uint32 chapter_id = 13;</code>
+     * <code>uint32 chapter_id = 5;</code>
      * @return The chapterId.
      */
     @java.lang.Override
@@ -144,10 +144,10 @@ public final class DragonSpineChapterFinishNotifyOuterClass {
       return chapterId_;
     }
 
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 1;
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 15;
     private int scheduleId_;
     /**
-     * <code>uint32 schedule_id = 1;</code>
+     * <code>uint32 schedule_id = 15;</code>
      * @return The scheduleId.
      */
     @java.lang.Override
@@ -155,10 +155,10 @@ public final class DragonSpineChapterFinishNotifyOuterClass {
       return scheduleId_;
     }
 
-    public static final int WEAPON_ENHANCE_LEVEL_FIELD_NUMBER = 8;
+    public static final int WEAPON_ENHANCE_LEVEL_FIELD_NUMBER = 2;
     private int weaponEnhanceLevel_;
     /**
-     * <code>uint32 weapon_enhance_level = 8;</code>
+     * <code>uint32 weapon_enhance_level = 2;</code>
      * @return The weaponEnhanceLevel.
      */
     @java.lang.Override
@@ -180,14 +180,14 @@ public final class DragonSpineChapterFinishNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (scheduleId_ != 0) {
-        output.writeUInt32(1, scheduleId_);
-      }
       if (weaponEnhanceLevel_ != 0) {
-        output.writeUInt32(8, weaponEnhanceLevel_);
+        output.writeUInt32(2, weaponEnhanceLevel_);
       }
       if (chapterId_ != 0) {
-        output.writeUInt32(13, chapterId_);
+        output.writeUInt32(5, chapterId_);
+      }
+      if (scheduleId_ != 0) {
+        output.writeUInt32(15, scheduleId_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +198,17 @@ public final class DragonSpineChapterFinishNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (scheduleId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, scheduleId_);
-      }
       if (weaponEnhanceLevel_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, weaponEnhanceLevel_);
+          .computeUInt32Size(2, weaponEnhanceLevel_);
       }
       if (chapterId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, chapterId_);
+          .computeUInt32Size(5, chapterId_);
+      }
+      if (scheduleId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, scheduleId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -345,8 +345,8 @@ public final class DragonSpineChapterFinishNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: DKBFCMEAKEH
-     * CmdId: 2182
+     * CmdId: 2072
+     * Obf: IPHNALGCMCK
      * </pre>
      *
      * Protobuf type {@code DragonSpineChapterFinishNotify}
@@ -509,7 +509,7 @@ public final class DragonSpineChapterFinishNotifyOuterClass {
 
       private int chapterId_ ;
       /**
-       * <code>uint32 chapter_id = 13;</code>
+       * <code>uint32 chapter_id = 5;</code>
        * @return The chapterId.
        */
       @java.lang.Override
@@ -517,7 +517,7 @@ public final class DragonSpineChapterFinishNotifyOuterClass {
         return chapterId_;
       }
       /**
-       * <code>uint32 chapter_id = 13;</code>
+       * <code>uint32 chapter_id = 5;</code>
        * @param value The chapterId to set.
        * @return This builder for chaining.
        */
@@ -528,7 +528,7 @@ public final class DragonSpineChapterFinishNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 chapter_id = 13;</code>
+       * <code>uint32 chapter_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearChapterId() {
@@ -540,7 +540,7 @@ public final class DragonSpineChapterFinishNotifyOuterClass {
 
       private int scheduleId_ ;
       /**
-       * <code>uint32 schedule_id = 1;</code>
+       * <code>uint32 schedule_id = 15;</code>
        * @return The scheduleId.
        */
       @java.lang.Override
@@ -548,7 +548,7 @@ public final class DragonSpineChapterFinishNotifyOuterClass {
         return scheduleId_;
       }
       /**
-       * <code>uint32 schedule_id = 1;</code>
+       * <code>uint32 schedule_id = 15;</code>
        * @param value The scheduleId to set.
        * @return This builder for chaining.
        */
@@ -559,7 +559,7 @@ public final class DragonSpineChapterFinishNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 schedule_id = 1;</code>
+       * <code>uint32 schedule_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearScheduleId() {
@@ -571,7 +571,7 @@ public final class DragonSpineChapterFinishNotifyOuterClass {
 
       private int weaponEnhanceLevel_ ;
       /**
-       * <code>uint32 weapon_enhance_level = 8;</code>
+       * <code>uint32 weapon_enhance_level = 2;</code>
        * @return The weaponEnhanceLevel.
        */
       @java.lang.Override
@@ -579,7 +579,7 @@ public final class DragonSpineChapterFinishNotifyOuterClass {
         return weaponEnhanceLevel_;
       }
       /**
-       * <code>uint32 weapon_enhance_level = 8;</code>
+       * <code>uint32 weapon_enhance_level = 2;</code>
        * @param value The weaponEnhanceLevel to set.
        * @return This builder for chaining.
        */
@@ -590,7 +590,7 @@ public final class DragonSpineChapterFinishNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 weapon_enhance_level = 8;</code>
+       * <code>uint32 weapon_enhance_level = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearWeaponEnhanceLevel() {
@@ -668,8 +668,8 @@ public final class DragonSpineChapterFinishNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n$DragonSpineChapterFinishNotify.proto\"g" +
       "\n\036DragonSpineChapterFinishNotify\022\022\n\nchap" +
-      "ter_id\030\r \001(\r\022\023\n\013schedule_id\030\001 \001(\r\022\034\n\024wea" +
-      "pon_enhance_level\030\010 \001(\rB\033\n\031emu.grasscutt" +
+      "ter_id\030\005 \001(\r\022\023\n\013schedule_id\030\017 \001(\r\022\034\n\024wea" +
+      "pon_enhance_level\030\002 \001(\rB\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

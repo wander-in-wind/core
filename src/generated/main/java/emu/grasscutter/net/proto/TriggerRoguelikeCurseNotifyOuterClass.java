@@ -19,44 +19,44 @@ public final class TriggerRoguelikeCurseNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 effect_param_list = 8;</code>
+     * <code>uint32 CMHIDNPDNFE = 15;</code>
+     * @return The cMHIDNPDNFE.
+     */
+    int getCMHIDNPDNFE();
+
+    /**
+     * <code>repeated uint32 effect_param_list = 3;</code>
      * @return A list containing the effectParamList.
      */
     java.util.List<java.lang.Integer> getEffectParamListList();
     /**
-     * <code>repeated uint32 effect_param_list = 8;</code>
+     * <code>repeated uint32 effect_param_list = 3;</code>
      * @return The count of effectParamList.
      */
     int getEffectParamListCount();
     /**
-     * <code>repeated uint32 effect_param_list = 8;</code>
+     * <code>repeated uint32 effect_param_list = 3;</code>
      * @param index The index of the element to return.
      * @return The effectParamList at the given index.
      */
     int getEffectParamList(int index);
 
     /**
-     * <code>uint32 IFGBOGLCBGG = 10;</code>
-     * @return The iFGBOGLCBGG.
-     */
-    int getIFGBOGLCBGG();
-
-    /**
-     * <code>bool is_trigger_curse = 11;</code>
+     * <code>bool is_trigger_curse = 13;</code>
      * @return The isTriggerCurse.
      */
     boolean getIsTriggerCurse();
 
     /**
-     * <code>uint32 FOPMNAMKHLG = 7;</code>
-     * @return The fOPMNAMKHLG.
+     * <code>uint32 JPMJHMPGOLL = 7;</code>
+     * @return The jPMJHMPGOLL.
      */
-    int getFOPMNAMKHLG();
+    int getJPMJHMPGOLL();
   }
   /**
    * <pre>
-   * Name: FNENCJDNDOH
-   * CmdId: 8901
+   * CmdId: 8958
+   * Obf: OONGFKFDNBI
    * </pre>
    *
    * Protobuf type {@code TriggerRoguelikeCurseNotify}
@@ -105,12 +105,7 @@ public final class TriggerRoguelikeCurseNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
-
-              fOPMNAMKHLG_ = input.readUInt32();
-              break;
-            }
-            case 64: {
+            case 24: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 effectParamList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -118,7 +113,7 @@ public final class TriggerRoguelikeCurseNotifyOuterClass {
               effectParamList_.addInt(input.readUInt32());
               break;
             }
-            case 66: {
+            case 26: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -131,14 +126,19 @@ public final class TriggerRoguelikeCurseNotifyOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 80: {
+            case 56: {
 
-              iFGBOGLCBGG_ = input.readUInt32();
+              jPMJHMPGOLL_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 104: {
 
               isTriggerCurse_ = input.readBool();
+              break;
+            }
+            case 120: {
+
+              cMHIDNPDNFE_ = input.readUInt32();
               break;
             }
             default: {
@@ -176,10 +176,21 @@ public final class TriggerRoguelikeCurseNotifyOuterClass {
               emu.grasscutter.net.proto.TriggerRoguelikeCurseNotifyOuterClass.TriggerRoguelikeCurseNotify.class, emu.grasscutter.net.proto.TriggerRoguelikeCurseNotifyOuterClass.TriggerRoguelikeCurseNotify.Builder.class);
     }
 
-    public static final int EFFECT_PARAM_LIST_FIELD_NUMBER = 8;
+    public static final int CMHIDNPDNFE_FIELD_NUMBER = 15;
+    private int cMHIDNPDNFE_;
+    /**
+     * <code>uint32 CMHIDNPDNFE = 15;</code>
+     * @return The cMHIDNPDNFE.
+     */
+    @java.lang.Override
+    public int getCMHIDNPDNFE() {
+      return cMHIDNPDNFE_;
+    }
+
+    public static final int EFFECT_PARAM_LIST_FIELD_NUMBER = 3;
     private com.google.protobuf.Internal.IntList effectParamList_;
     /**
-     * <code>repeated uint32 effect_param_list = 8;</code>
+     * <code>repeated uint32 effect_param_list = 3;</code>
      * @return A list containing the effectParamList.
      */
     @java.lang.Override
@@ -188,14 +199,14 @@ public final class TriggerRoguelikeCurseNotifyOuterClass {
       return effectParamList_;
     }
     /**
-     * <code>repeated uint32 effect_param_list = 8;</code>
+     * <code>repeated uint32 effect_param_list = 3;</code>
      * @return The count of effectParamList.
      */
     public int getEffectParamListCount() {
       return effectParamList_.size();
     }
     /**
-     * <code>repeated uint32 effect_param_list = 8;</code>
+     * <code>repeated uint32 effect_param_list = 3;</code>
      * @param index The index of the element to return.
      * @return The effectParamList at the given index.
      */
@@ -204,21 +215,10 @@ public final class TriggerRoguelikeCurseNotifyOuterClass {
     }
     private int effectParamListMemoizedSerializedSize = -1;
 
-    public static final int IFGBOGLCBGG_FIELD_NUMBER = 10;
-    private int iFGBOGLCBGG_;
-    /**
-     * <code>uint32 IFGBOGLCBGG = 10;</code>
-     * @return The iFGBOGLCBGG.
-     */
-    @java.lang.Override
-    public int getIFGBOGLCBGG() {
-      return iFGBOGLCBGG_;
-    }
-
-    public static final int IS_TRIGGER_CURSE_FIELD_NUMBER = 11;
+    public static final int IS_TRIGGER_CURSE_FIELD_NUMBER = 13;
     private boolean isTriggerCurse_;
     /**
-     * <code>bool is_trigger_curse = 11;</code>
+     * <code>bool is_trigger_curse = 13;</code>
      * @return The isTriggerCurse.
      */
     @java.lang.Override
@@ -226,15 +226,15 @@ public final class TriggerRoguelikeCurseNotifyOuterClass {
       return isTriggerCurse_;
     }
 
-    public static final int FOPMNAMKHLG_FIELD_NUMBER = 7;
-    private int fOPMNAMKHLG_;
+    public static final int JPMJHMPGOLL_FIELD_NUMBER = 7;
+    private int jPMJHMPGOLL_;
     /**
-     * <code>uint32 FOPMNAMKHLG = 7;</code>
-     * @return The fOPMNAMKHLG.
+     * <code>uint32 JPMJHMPGOLL = 7;</code>
+     * @return The jPMJHMPGOLL.
      */
     @java.lang.Override
-    public int getFOPMNAMKHLG() {
-      return fOPMNAMKHLG_;
+    public int getJPMJHMPGOLL() {
+      return jPMJHMPGOLL_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -252,21 +252,21 @@ public final class TriggerRoguelikeCurseNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (fOPMNAMKHLG_ != 0) {
-        output.writeUInt32(7, fOPMNAMKHLG_);
-      }
       if (getEffectParamListList().size() > 0) {
-        output.writeUInt32NoTag(66);
+        output.writeUInt32NoTag(26);
         output.writeUInt32NoTag(effectParamListMemoizedSerializedSize);
       }
       for (int i = 0; i < effectParamList_.size(); i++) {
         output.writeUInt32NoTag(effectParamList_.getInt(i));
       }
-      if (iFGBOGLCBGG_ != 0) {
-        output.writeUInt32(10, iFGBOGLCBGG_);
+      if (jPMJHMPGOLL_ != 0) {
+        output.writeUInt32(7, jPMJHMPGOLL_);
       }
       if (isTriggerCurse_ != false) {
-        output.writeBool(11, isTriggerCurse_);
+        output.writeBool(13, isTriggerCurse_);
+      }
+      if (cMHIDNPDNFE_ != 0) {
+        output.writeUInt32(15, cMHIDNPDNFE_);
       }
       unknownFields.writeTo(output);
     }
@@ -277,10 +277,6 @@ public final class TriggerRoguelikeCurseNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (fOPMNAMKHLG_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, fOPMNAMKHLG_);
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < effectParamList_.size(); i++) {
@@ -295,13 +291,17 @@ public final class TriggerRoguelikeCurseNotifyOuterClass {
         }
         effectParamListMemoizedSerializedSize = dataSize;
       }
-      if (iFGBOGLCBGG_ != 0) {
+      if (jPMJHMPGOLL_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, iFGBOGLCBGG_);
+          .computeUInt32Size(7, jPMJHMPGOLL_);
       }
       if (isTriggerCurse_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isTriggerCurse_);
+          .computeBoolSize(13, isTriggerCurse_);
+      }
+      if (cMHIDNPDNFE_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, cMHIDNPDNFE_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -318,14 +318,14 @@ public final class TriggerRoguelikeCurseNotifyOuterClass {
       }
       emu.grasscutter.net.proto.TriggerRoguelikeCurseNotifyOuterClass.TriggerRoguelikeCurseNotify other = (emu.grasscutter.net.proto.TriggerRoguelikeCurseNotifyOuterClass.TriggerRoguelikeCurseNotify) obj;
 
+      if (getCMHIDNPDNFE()
+          != other.getCMHIDNPDNFE()) return false;
       if (!getEffectParamListList()
           .equals(other.getEffectParamListList())) return false;
-      if (getIFGBOGLCBGG()
-          != other.getIFGBOGLCBGG()) return false;
       if (getIsTriggerCurse()
           != other.getIsTriggerCurse()) return false;
-      if (getFOPMNAMKHLG()
-          != other.getFOPMNAMKHLG()) return false;
+      if (getJPMJHMPGOLL()
+          != other.getJPMJHMPGOLL()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -337,17 +337,17 @@ public final class TriggerRoguelikeCurseNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + CMHIDNPDNFE_FIELD_NUMBER;
+      hash = (53 * hash) + getCMHIDNPDNFE();
       if (getEffectParamListCount() > 0) {
         hash = (37 * hash) + EFFECT_PARAM_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getEffectParamListList().hashCode();
       }
-      hash = (37 * hash) + IFGBOGLCBGG_FIELD_NUMBER;
-      hash = (53 * hash) + getIFGBOGLCBGG();
       hash = (37 * hash) + IS_TRIGGER_CURSE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsTriggerCurse());
-      hash = (37 * hash) + FOPMNAMKHLG_FIELD_NUMBER;
-      hash = (53 * hash) + getFOPMNAMKHLG();
+      hash = (37 * hash) + JPMJHMPGOLL_FIELD_NUMBER;
+      hash = (53 * hash) + getJPMJHMPGOLL();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -445,8 +445,8 @@ public final class TriggerRoguelikeCurseNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: FNENCJDNDOH
-     * CmdId: 8901
+     * CmdId: 8958
+     * Obf: OONGFKFDNBI
      * </pre>
      *
      * Protobuf type {@code TriggerRoguelikeCurseNotify}
@@ -486,13 +486,13 @@ public final class TriggerRoguelikeCurseNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        cMHIDNPDNFE_ = 0;
+
         effectParamList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        iFGBOGLCBGG_ = 0;
-
         isTriggerCurse_ = false;
 
-        fOPMNAMKHLG_ = 0;
+        jPMJHMPGOLL_ = 0;
 
         return this;
       }
@@ -521,14 +521,14 @@ public final class TriggerRoguelikeCurseNotifyOuterClass {
       public emu.grasscutter.net.proto.TriggerRoguelikeCurseNotifyOuterClass.TriggerRoguelikeCurseNotify buildPartial() {
         emu.grasscutter.net.proto.TriggerRoguelikeCurseNotifyOuterClass.TriggerRoguelikeCurseNotify result = new emu.grasscutter.net.proto.TriggerRoguelikeCurseNotifyOuterClass.TriggerRoguelikeCurseNotify(this);
         int from_bitField0_ = bitField0_;
+        result.cMHIDNPDNFE_ = cMHIDNPDNFE_;
         if (((bitField0_ & 0x00000001) != 0)) {
           effectParamList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.effectParamList_ = effectParamList_;
-        result.iFGBOGLCBGG_ = iFGBOGLCBGG_;
         result.isTriggerCurse_ = isTriggerCurse_;
-        result.fOPMNAMKHLG_ = fOPMNAMKHLG_;
+        result.jPMJHMPGOLL_ = jPMJHMPGOLL_;
         onBuilt();
         return result;
       }
@@ -577,6 +577,9 @@ public final class TriggerRoguelikeCurseNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.TriggerRoguelikeCurseNotifyOuterClass.TriggerRoguelikeCurseNotify other) {
         if (other == emu.grasscutter.net.proto.TriggerRoguelikeCurseNotifyOuterClass.TriggerRoguelikeCurseNotify.getDefaultInstance()) return this;
+        if (other.getCMHIDNPDNFE() != 0) {
+          setCMHIDNPDNFE(other.getCMHIDNPDNFE());
+        }
         if (!other.effectParamList_.isEmpty()) {
           if (effectParamList_.isEmpty()) {
             effectParamList_ = other.effectParamList_;
@@ -587,14 +590,11 @@ public final class TriggerRoguelikeCurseNotifyOuterClass {
           }
           onChanged();
         }
-        if (other.getIFGBOGLCBGG() != 0) {
-          setIFGBOGLCBGG(other.getIFGBOGLCBGG());
-        }
         if (other.getIsTriggerCurse() != false) {
           setIsTriggerCurse(other.getIsTriggerCurse());
         }
-        if (other.getFOPMNAMKHLG() != 0) {
-          setFOPMNAMKHLG(other.getFOPMNAMKHLG());
+        if (other.getJPMJHMPGOLL() != 0) {
+          setJPMJHMPGOLL(other.getJPMJHMPGOLL());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -626,6 +626,37 @@ public final class TriggerRoguelikeCurseNotifyOuterClass {
       }
       private int bitField0_;
 
+      private int cMHIDNPDNFE_ ;
+      /**
+       * <code>uint32 CMHIDNPDNFE = 15;</code>
+       * @return The cMHIDNPDNFE.
+       */
+      @java.lang.Override
+      public int getCMHIDNPDNFE() {
+        return cMHIDNPDNFE_;
+      }
+      /**
+       * <code>uint32 CMHIDNPDNFE = 15;</code>
+       * @param value The cMHIDNPDNFE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCMHIDNPDNFE(int value) {
+        
+        cMHIDNPDNFE_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 CMHIDNPDNFE = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCMHIDNPDNFE() {
+        
+        cMHIDNPDNFE_ = 0;
+        onChanged();
+        return this;
+      }
+
       private com.google.protobuf.Internal.IntList effectParamList_ = emptyIntList();
       private void ensureEffectParamListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -634,7 +665,7 @@ public final class TriggerRoguelikeCurseNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 effect_param_list = 8;</code>
+       * <code>repeated uint32 effect_param_list = 3;</code>
        * @return A list containing the effectParamList.
        */
       public java.util.List<java.lang.Integer>
@@ -643,14 +674,14 @@ public final class TriggerRoguelikeCurseNotifyOuterClass {
                  java.util.Collections.unmodifiableList(effectParamList_) : effectParamList_;
       }
       /**
-       * <code>repeated uint32 effect_param_list = 8;</code>
+       * <code>repeated uint32 effect_param_list = 3;</code>
        * @return The count of effectParamList.
        */
       public int getEffectParamListCount() {
         return effectParamList_.size();
       }
       /**
-       * <code>repeated uint32 effect_param_list = 8;</code>
+       * <code>repeated uint32 effect_param_list = 3;</code>
        * @param index The index of the element to return.
        * @return The effectParamList at the given index.
        */
@@ -658,7 +689,7 @@ public final class TriggerRoguelikeCurseNotifyOuterClass {
         return effectParamList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 effect_param_list = 8;</code>
+       * <code>repeated uint32 effect_param_list = 3;</code>
        * @param index The index to set the value at.
        * @param value The effectParamList to set.
        * @return This builder for chaining.
@@ -671,7 +702,7 @@ public final class TriggerRoguelikeCurseNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 effect_param_list = 8;</code>
+       * <code>repeated uint32 effect_param_list = 3;</code>
        * @param value The effectParamList to add.
        * @return This builder for chaining.
        */
@@ -682,7 +713,7 @@ public final class TriggerRoguelikeCurseNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 effect_param_list = 8;</code>
+       * <code>repeated uint32 effect_param_list = 3;</code>
        * @param values The effectParamList to add.
        * @return This builder for chaining.
        */
@@ -695,7 +726,7 @@ public final class TriggerRoguelikeCurseNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 effect_param_list = 8;</code>
+       * <code>repeated uint32 effect_param_list = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearEffectParamList() {
@@ -705,40 +736,9 @@ public final class TriggerRoguelikeCurseNotifyOuterClass {
         return this;
       }
 
-      private int iFGBOGLCBGG_ ;
-      /**
-       * <code>uint32 IFGBOGLCBGG = 10;</code>
-       * @return The iFGBOGLCBGG.
-       */
-      @java.lang.Override
-      public int getIFGBOGLCBGG() {
-        return iFGBOGLCBGG_;
-      }
-      /**
-       * <code>uint32 IFGBOGLCBGG = 10;</code>
-       * @param value The iFGBOGLCBGG to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIFGBOGLCBGG(int value) {
-        
-        iFGBOGLCBGG_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 IFGBOGLCBGG = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIFGBOGLCBGG() {
-        
-        iFGBOGLCBGG_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isTriggerCurse_ ;
       /**
-       * <code>bool is_trigger_curse = 11;</code>
+       * <code>bool is_trigger_curse = 13;</code>
        * @return The isTriggerCurse.
        */
       @java.lang.Override
@@ -746,7 +746,7 @@ public final class TriggerRoguelikeCurseNotifyOuterClass {
         return isTriggerCurse_;
       }
       /**
-       * <code>bool is_trigger_curse = 11;</code>
+       * <code>bool is_trigger_curse = 13;</code>
        * @param value The isTriggerCurse to set.
        * @return This builder for chaining.
        */
@@ -757,7 +757,7 @@ public final class TriggerRoguelikeCurseNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_trigger_curse = 11;</code>
+       * <code>bool is_trigger_curse = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsTriggerCurse() {
@@ -767,33 +767,33 @@ public final class TriggerRoguelikeCurseNotifyOuterClass {
         return this;
       }
 
-      private int fOPMNAMKHLG_ ;
+      private int jPMJHMPGOLL_ ;
       /**
-       * <code>uint32 FOPMNAMKHLG = 7;</code>
-       * @return The fOPMNAMKHLG.
+       * <code>uint32 JPMJHMPGOLL = 7;</code>
+       * @return The jPMJHMPGOLL.
        */
       @java.lang.Override
-      public int getFOPMNAMKHLG() {
-        return fOPMNAMKHLG_;
+      public int getJPMJHMPGOLL() {
+        return jPMJHMPGOLL_;
       }
       /**
-       * <code>uint32 FOPMNAMKHLG = 7;</code>
-       * @param value The fOPMNAMKHLG to set.
+       * <code>uint32 JPMJHMPGOLL = 7;</code>
+       * @param value The jPMJHMPGOLL to set.
        * @return This builder for chaining.
        */
-      public Builder setFOPMNAMKHLG(int value) {
+      public Builder setJPMJHMPGOLL(int value) {
         
-        fOPMNAMKHLG_ = value;
+        jPMJHMPGOLL_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 FOPMNAMKHLG = 7;</code>
+       * <code>uint32 JPMJHMPGOLL = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFOPMNAMKHLG() {
+      public Builder clearJPMJHMPGOLL() {
         
-        fOPMNAMKHLG_ = 0;
+        jPMJHMPGOLL_ = 0;
         onChanged();
         return this;
       }
@@ -865,9 +865,9 @@ public final class TriggerRoguelikeCurseNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!TriggerRoguelikeCurseNotify.proto\"|\n\033T" +
-      "riggerRoguelikeCurseNotify\022\031\n\021effect_par" +
-      "am_list\030\010 \003(\r\022\023\n\013IFGBOGLCBGG\030\n \001(\r\022\030\n\020is" +
-      "_trigger_curse\030\013 \001(\010\022\023\n\013FOPMNAMKHLG\030\007 \001(" +
+      "riggerRoguelikeCurseNotify\022\023\n\013CMHIDNPDNF" +
+      "E\030\017 \001(\r\022\031\n\021effect_param_list\030\003 \003(\r\022\030\n\020is" +
+      "_trigger_curse\030\r \001(\010\022\023\n\013JPMJHMPGOLL\030\007 \001(" +
       "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -879,7 +879,7 @@ public final class TriggerRoguelikeCurseNotifyOuterClass {
     internal_static_TriggerRoguelikeCurseNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TriggerRoguelikeCurseNotify_descriptor,
-        new java.lang.String[] { "EffectParamList", "IFGBOGLCBGG", "IsTriggerCurse", "FOPMNAMKHLG", });
+        new java.lang.String[] { "CMHIDNPDNFE", "EffectParamList", "IsTriggerCurse", "JPMJHMPGOLL", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -20,10 +20,8 @@ public final class CheckUgcStateReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 6342 (3.2)
-   * EnetChannelId: 0
-   * EnetIsReliable: true
-   * IsAllowClient: true
+   * CmdId: 6342
+   * Obf: MPGDDPFMIPD
    * </pre>
    *
    * Protobuf type {@code CheckUgcStateReq}
@@ -248,10 +246,8 @@ public final class CheckUgcStateReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6342 (3.2)
-     * EnetChannelId: 0
-     * EnetIsReliable: true
-     * IsAllowClient: true
+     * CmdId: 6342
+     * Obf: MPGDDPFMIPD
      * </pre>
      *
      * Protobuf type {@code CheckUgcStateReq}

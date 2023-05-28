@@ -19,316 +19,154 @@ public final class GCGPlayerFieldOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 ONKDMOMNGBG = 824;</code>
-     * @return The oNKDMOMNGBG.
+     * <code>uint32 EMBGKGCNFPE = 4;</code>
+     * @return The eMBGKGCNFPE.
      */
-    int getONKDMOMNGBG();
+    int getEMBGKGCNFPE();
 
     /**
-     * <pre>
-     *repeated PENJFODAGGI GGGHONFOAKP = 1;
-     * </pre>
-     *
-     * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
+     * <code>.GCGZone PIOEBHEPAIC = 6;</code>
+     * @return Whether the pIOEBHEPAIC field is set.
+     */
+    boolean hasPIOEBHEPAIC();
+    /**
+     * <code>.GCGZone PIOEBHEPAIC = 6;</code>
+     * @return The pIOEBHEPAIC.
+     */
+    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getPIOEBHEPAIC();
+    /**
+     * <code>.GCGZone PIOEBHEPAIC = 6;</code>
+     */
+    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getPIOEBHEPAICOrBuilder();
+
+    /**
+     * <code>.GCGZone GNCOGNIKACN = 11;</code>
+     * @return Whether the gNCOGNIKACN field is set.
+     */
+    boolean hasGNCOGNIKACN();
+    /**
+     * <code>.GCGZone GNCOGNIKACN = 11;</code>
+     * @return The gNCOGNIKACN.
+     */
+    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getGNCOGNIKACN();
+    /**
+     * <code>.GCGZone GNCOGNIKACN = 11;</code>
+     */
+    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getGNCOGNIKACNOrBuilder();
+
+    /**
+     * <code>uint32 controller_id = 10;</code>
+     * @return The controllerId.
+     */
+    int getControllerId();
+
+    /**
+     * <code>uint32 EEFLPHPIMDL = 12;</code>
+     * @return The eEFLPHPIMDL.
+     */
+    int getEEFLPHPIMDL();
+
+    /**
+     * <code>.GCGZone DPIINFPCNEK = 8;</code>
+     * @return Whether the dPIINFPCNEK field is set.
+     */
+    boolean hasDPIINFPCNEK();
+    /**
+     * <code>.GCGZone DPIINFPCNEK = 8;</code>
+     * @return The dPIINFPCNEK.
+     */
+    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getDPIINFPCNEK();
+    /**
+     * <code>.GCGZone DPIINFPCNEK = 8;</code>
+     */
+    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getDPIINFPCNEKOrBuilder();
+
+    /**
+     * <code>repeated .GABNJIGBIHE DNEEMCIDCAF = 2;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHE> 
+        getDNEEMCIDCAFList();
+    /**
+     * <code>repeated .GABNJIGBIHE DNEEMCIDCAF = 2;</code>
+     */
+    emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHE getDNEEMCIDCAF(int index);
+    /**
+     * <code>repeated .GABNJIGBIHE DNEEMCIDCAF = 2;</code>
+     */
+    int getDNEEMCIDCAFCount();
+    /**
+     * <code>repeated .GABNJIGBIHE DNEEMCIDCAF = 2;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHEOrBuilder> 
+        getDNEEMCIDCAFOrBuilderList();
+    /**
+     * <code>repeated .GABNJIGBIHE DNEEMCIDCAF = 2;</code>
+     */
+    emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHEOrBuilder getDNEEMCIDCAFOrBuilder(
+        int index);
+
+    /**
+     * <code>.GCGZone FPGFCMDIABG = 15;</code>
+     * @return Whether the fPGFCMDIABG field is set.
+     */
+    boolean hasFPGFCMDIABG();
+    /**
+     * <code>.GCGZone FPGFCMDIABG = 15;</code>
+     * @return The fPGFCMDIABG.
+     */
+    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getFPGFCMDIABG();
+    /**
+     * <code>.GCGZone FPGFCMDIABG = 15;</code>
+     */
+    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getFPGFCMDIABGOrBuilder();
+
+    /**
+     * <code>repeated .GCGDiceSideType dice_side_list = 9;</code>
      * @return A list containing the diceSideList.
      */
     java.util.List<emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType> getDiceSideListList();
     /**
-     * <pre>
-     *repeated PENJFODAGGI GGGHONFOAKP = 1;
-     * </pre>
-     *
-     * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
+     * <code>repeated .GCGDiceSideType dice_side_list = 9;</code>
      * @return The count of diceSideList.
      */
     int getDiceSideListCount();
     /**
-     * <pre>
-     *repeated PENJFODAGGI GGGHONFOAKP = 1;
-     * </pre>
-     *
-     * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
+     * <code>repeated .GCGDiceSideType dice_side_list = 9;</code>
      * @param index The index of the element to return.
      * @return The diceSideList at the given index.
      */
     emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getDiceSideList(int index);
     /**
-     * <pre>
-     *repeated PENJFODAGGI GGGHONFOAKP = 1;
-     * </pre>
-     *
-     * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
+     * <code>repeated .GCGDiceSideType dice_side_list = 9;</code>
      * @return A list containing the enum numeric values on the wire for diceSideList.
      */
     java.util.List<java.lang.Integer>
     getDiceSideListValueList();
     /**
-     * <pre>
-     *repeated PENJFODAGGI GGGHONFOAKP = 1;
-     * </pre>
-     *
-     * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
+     * <code>repeated .GCGDiceSideType dice_side_list = 9;</code>
      * @param index The index of the value to return.
      * @return The enum numeric value on the wire of diceSideList at the given index.
      */
     int getDiceSideListValue(int index);
 
     /**
-     * <pre>
-     *IGMNOEBOCJP IS CARD_BACK_SHOW_ID
-     * </pre>
-     *
-     * <code>uint32 card_back_show_id = 3;</code>
-     * @return The cardBackShowId.
+     * <code>uint32 KFDOPOINLPP = 5;</code>
+     * @return The kFDOPOINLPP.
      */
-    int getCardBackShowId();
+    int getKFDOPOINLPP();
 
     /**
-     * <pre>
-     *repeated HHKFLCHIBJJ AICAJEFEHLF = 1540;
-     * </pre>
-     *
-     * <code>repeated .GCGPVEIntention intention_list = 1540;</code>
+     * <code>uint32 ADCHOFHFPPC = 116;</code>
+     * @return The aDCHOFHFPPC.
      */
-    java.util.List<emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention> 
-        getIntentionListList();
-    /**
-     * <pre>
-     *repeated HHKFLCHIBJJ AICAJEFEHLF = 1540;
-     * </pre>
-     *
-     * <code>repeated .GCGPVEIntention intention_list = 1540;</code>
-     */
-    emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention getIntentionList(int index);
-    /**
-     * <pre>
-     *repeated HHKFLCHIBJJ AICAJEFEHLF = 1540;
-     * </pre>
-     *
-     * <code>repeated .GCGPVEIntention intention_list = 1540;</code>
-     */
-    int getIntentionListCount();
-    /**
-     * <pre>
-     *repeated HHKFLCHIBJJ AICAJEFEHLF = 1540;
-     * </pre>
-     *
-     * <code>repeated .GCGPVEIntention intention_list = 1540;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder> 
-        getIntentionListOrBuilderList();
-    /**
-     * <pre>
-     *repeated HHKFLCHIBJJ AICAJEFEHLF = 1540;
-     * </pre>
-     *
-     * <code>repeated .GCGPVEIntention intention_list = 1540;</code>
-     */
-    emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder getIntentionListOrBuilder(
-        int index);
+    int getADCHOFHFPPC();
 
     /**
-     * <pre>
-     *repeated AEEKABMMKNE PLPMEJFNDKA = 12;
-     * </pre>
-     *
-     * <code>repeated .GCGWaitingCharacter waiting_list = 12;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter> 
-        getWaitingListList();
-    /**
-     * <pre>
-     *repeated AEEKABMMKNE PLPMEJFNDKA = 12;
-     * </pre>
-     *
-     * <code>repeated .GCGWaitingCharacter waiting_list = 12;</code>
-     */
-    emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter getWaitingList(int index);
-    /**
-     * <pre>
-     *repeated AEEKABMMKNE PLPMEJFNDKA = 12;
-     * </pre>
-     *
-     * <code>repeated .GCGWaitingCharacter waiting_list = 12;</code>
-     */
-    int getWaitingListCount();
-    /**
-     * <pre>
-     *repeated AEEKABMMKNE PLPMEJFNDKA = 12;
-     * </pre>
-     *
-     * <code>repeated .GCGWaitingCharacter waiting_list = 12;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacterOrBuilder> 
-        getWaitingListOrBuilderList();
-    /**
-     * <pre>
-     *repeated AEEKABMMKNE PLPMEJFNDKA = 12;
-     * </pre>
-     *
-     * <code>repeated .GCGWaitingCharacter waiting_list = 12;</code>
-     */
-    emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacterOrBuilder getWaitingListOrBuilder(
-        int index);
-
-    /**
-     * <code>bool is_passed = 10;</code>
-     * @return The isPassed.
-     */
-    boolean getIsPassed();
-
-    /**
-     * <pre>
-     *AJFMMFEEDFF snooGUESS CORRECT
-     * </pre>
-     *
-     * <code>uint32 field_show_id = 14;</code>
-     * @return The fieldShowId.
-     */
-    int getFieldShowId();
-
-    /**
-     * <pre>
-     *IAEJLGAILAK snooguess swapperoo (right)
-     * </pre>
-     *
-     * <code>uint32 deck_card_num = 2;</code>
-     * @return The deckCardNum.
-     */
-    int getDeckCardNum();
-
-    /**
-     * <pre>
-     *AGPFPMEDGKI
-     * </pre>
-     *
-     * <code>uint32 AGPFPMEDGKI = 9;</code>
-     * @return The aGPFPMEDGKI.
-     */
-    int getAGPFPMEDGKI();
-
-    /**
-     * <pre>
-     *KOIGNIFNCMI swapperoo 5
-     * </pre>
-     *
-     * <code>.GCGZone KOIGNIFNCMI = 7;</code>
-     * @return Whether the kOIGNIFNCMI field is set.
-     */
-    boolean hasKOIGNIFNCMI();
-    /**
-     * <pre>
-     *KOIGNIFNCMI swapperoo 5
-     * </pre>
-     *
-     * <code>.GCGZone KOIGNIFNCMI = 7;</code>
-     * @return The kOIGNIFNCMI.
-     */
-    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getKOIGNIFNCMI();
-    /**
-     * <pre>
-     *KOIGNIFNCMI swapperoo 5
-     * </pre>
-     *
-     * <code>.GCGZone KOIGNIFNCMI = 7;</code>
-     */
-    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getKOIGNIFNCMIOrBuilder();
-
-    /**
-     * <pre>
-     *HBCOFFFLNAI swapperoo 5 (right Unk3300_INDJNJJJNKL)
-     * </pre>
-     *
-     * <code>.GCGZone character_zone = 5;</code>
-     * @return Whether the characterZone field is set.
-     */
-    boolean hasCharacterZone();
-    /**
-     * <pre>
-     *HBCOFFFLNAI swapperoo 5 (right Unk3300_INDJNJJJNKL)
-     * </pre>
-     *
-     * <code>.GCGZone character_zone = 5;</code>
-     * @return The characterZone.
-     */
-    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getCharacterZone();
-    /**
-     * <pre>
-     *HBCOFFFLNAI swapperoo 5 (right Unk3300_INDJNJJJNKL)
-     * </pre>
-     *
-     * <code>.GCGZone character_zone = 5;</code>
-     */
-    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getCharacterZoneOrBuilder();
-
-    /**
-     * <pre>
-     *JLPLPDNEFJA swapperoo 5
-     * </pre>
-     *
-     * <code>.GCGZone JLPLPDNEFJA = 15;</code>
-     * @return Whether the jLPLPDNEFJA field is set.
-     */
-    boolean hasJLPLPDNEFJA();
-    /**
-     * <pre>
-     *JLPLPDNEFJA swapperoo 5
-     * </pre>
-     *
-     * <code>.GCGZone JLPLPDNEFJA = 15;</code>
-     * @return The jLPLPDNEFJA.
-     */
-    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getJLPLPDNEFJA();
-    /**
-     * <pre>
-     *JLPLPDNEFJA swapperoo 5
-     * </pre>
-     *
-     * <code>.GCGZone JLPLPDNEFJA = 15;</code>
-     */
-    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getJLPLPDNEFJAOrBuilder();
-
-    /**
-     * <pre>
-     *DIFHGPIAFNK snoguess swapperoo 5
-     * </pre>
-     *
-     * <code>.GCGZone DIFHGPIAFNK = 13;</code>
-     * @return Whether the dIFHGPIAFNK field is set.
-     */
-    boolean hasDIFHGPIAFNK();
-    /**
-     * <pre>
-     *DIFHGPIAFNK snoguess swapperoo 5
-     * </pre>
-     *
-     * <code>.GCGZone DIFHGPIAFNK = 13;</code>
-     * @return The dIFHGPIAFNK.
-     */
-    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getDIFHGPIAFNK();
-    /**
-     * <pre>
-     *DIFHGPIAFNK snoguess swapperoo 5
-     * </pre>
-     *
-     * <code>.GCGZone DIFHGPIAFNK = 13;</code>
-     */
-    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getDIFHGPIAFNKOrBuilder();
-
-    /**
-     * <pre>
-     *JFAINLBMGJP
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 8;</code>
+     * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 1;</code>
      */
     int getModifyZoneMapCount();
     /**
-     * <pre>
-     *JFAINLBMGJP
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 8;</code>
+     * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 1;</code>
      */
     boolean containsModifyZoneMap(
         int key);
@@ -339,82 +177,60 @@ public final class GCGPlayerFieldOuterClass {
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone>
     getModifyZoneMap();
     /**
-     * <pre>
-     *JFAINLBMGJP
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 8;</code>
+     * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 1;</code>
      */
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone>
     getModifyZoneMapMap();
     /**
-     * <pre>
-     *JFAINLBMGJP
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 8;</code>
+     * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 1;</code>
      */
 
     emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getModifyZoneMapOrDefault(
         int key,
         emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone defaultValue);
     /**
-     * <pre>
-     *JFAINLBMGJP
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 8;</code>
+     * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 1;</code>
      */
 
     emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getModifyZoneMapOrThrow(
         int key);
 
     /**
-     * <pre>
-     *CGBIBGGMGEF swapperoo 5
-     * </pre>
-     *
-     * <code>.GCGZone CGBIBGGMGEF = 11;</code>
-     * @return Whether the cGBIBGGMGEF field is set.
+     * <code>uint32 JAMNMKIOPEO = 7;</code>
+     * @return The jAMNMKIOPEO.
      */
-    boolean hasCGBIBGGMGEF();
-    /**
-     * <pre>
-     *CGBIBGGMGEF swapperoo 5
-     * </pre>
-     *
-     * <code>.GCGZone CGBIBGGMGEF = 11;</code>
-     * @return The cGBIBGGMGEF.
-     */
-    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getCGBIBGGMGEF();
-    /**
-     * <pre>
-     *CGBIBGGMGEF swapperoo 5
-     * </pre>
-     *
-     * <code>.GCGZone CGBIBGGMGEF = 11;</code>
-     */
-    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getCGBIBGGMGEFOrBuilder();
+    int getJAMNMKIOPEO();
 
     /**
-     * <code>uint32 controller_id = 4;</code>
-     * @return The controllerId.
+     * <code>bool is_passed = 13;</code>
+     * @return The isPassed.
      */
-    int getControllerId();
+    boolean getIsPassed();
 
     /**
-     * <pre>
-     *NKNMAGGJMFP
-     * </pre>
-     *
-     * <code>uint32 NKNMAGGJMFP = 6;</code>
-     * @return The nKNMAGGJMFP.
+     * <code>.GCGZone JKEOEAIEALF = 14;</code>
+     * @return Whether the jKEOEAIEALF field is set.
      */
-    int getNKNMAGGJMFP();
+    boolean hasJKEOEAIEALF();
+    /**
+     * <code>.GCGZone JKEOEAIEALF = 14;</code>
+     * @return The jKEOEAIEALF.
+     */
+    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getJKEOEAIEALF();
+    /**
+     * <code>.GCGZone JKEOEAIEALF = 14;</code>
+     */
+    emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getJKEOEAIEALFOrBuilder();
+
+    /**
+     * <code>uint32 GNKGJFHDCDI = 3;</code>
+     * @return The gNKGJFHDCDI.
+     */
+    int getGNKGJFHDCDI();
   }
   /**
    * <pre>
-   * Name: AHGODAFKPIM
+   * Obf: CEGEHEEFNLJ
    * </pre>
    *
    * Protobuf type {@code GCGPlayerField}
@@ -429,9 +245,8 @@ public final class GCGPlayerFieldOuterClass {
       super(builder);
     }
     private GCGPlayerField() {
+      dNEEMCIDCAF_ = java.util.Collections.emptyList();
       diceSideList_ = java.util.Collections.emptyList();
-      intentionList_ = java.util.Collections.emptyList();
-      waitingList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -465,80 +280,11 @@ public final class GCGPlayerFieldOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-              int rawValue = input.readEnum();
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                diceSideList_ = new java.util.ArrayList<java.lang.Integer>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              diceSideList_.add(rawValue);
-              break;
-            }
             case 10: {
-              int length = input.readRawVarint32();
-              int oldLimit = input.pushLimit(length);
-              while(input.getBytesUntilLimit() > 0) {
-                int rawValue = input.readEnum();
-                if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                  diceSideList_ = new java.util.ArrayList<java.lang.Integer>();
-                  mutable_bitField0_ |= 0x00000001;
-                }
-                diceSideList_.add(rawValue);
-              }
-              input.popLimit(oldLimit);
-              break;
-            }
-            case 16: {
-
-              deckCardNum_ = input.readUInt32();
-              break;
-            }
-            case 24: {
-
-              cardBackShowId_ = input.readUInt32();
-              break;
-            }
-            case 32: {
-
-              controllerId_ = input.readUInt32();
-              break;
-            }
-            case 42: {
-              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder subBuilder = null;
-              if (characterZone_ != null) {
-                subBuilder = characterZone_.toBuilder();
-              }
-              characterZone_ = input.readMessage(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(characterZone_);
-                characterZone_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 48: {
-
-              nKNMAGGJMFP_ = input.readUInt32();
-              break;
-            }
-            case 58: {
-              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder subBuilder = null;
-              if (kOIGNIFNCMI_ != null) {
-                subBuilder = kOIGNIFNCMI_.toBuilder();
-              }
-              kOIGNIFNCMI_ = input.readMessage(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(kOIGNIFNCMI_);
-                kOIGNIFNCMI_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 66: {
-              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
                 modifyZoneMap_ = com.google.protobuf.MapField.newMapField(
                     ModifyZoneMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000008;
+                mutable_bitField0_ |= 0x00000004;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone>
               modifyZoneMap__ = input.readMessage(
@@ -547,81 +293,141 @@ public final class GCGPlayerFieldOuterClass {
                   modifyZoneMap__.getKey(), modifyZoneMap__.getValue());
               break;
             }
-            case 72: {
+            case 18: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                dNEEMCIDCAF_ = new java.util.ArrayList<emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHE>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              dNEEMCIDCAF_.add(
+                  input.readMessage(emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHE.parser(), extensionRegistry));
+              break;
+            }
+            case 24: {
 
-              aGPFPMEDGKI_ = input.readUInt32();
+              gNKGJFHDCDI_ = input.readUInt32();
+              break;
+            }
+            case 32: {
+
+              eMBGKGCNFPE_ = input.readUInt32();
+              break;
+            }
+            case 40: {
+
+              kFDOPOINLPP_ = input.readUInt32();
+              break;
+            }
+            case 50: {
+              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder subBuilder = null;
+              if (pIOEBHEPAIC_ != null) {
+                subBuilder = pIOEBHEPAIC_.toBuilder();
+              }
+              pIOEBHEPAIC_ = input.readMessage(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(pIOEBHEPAIC_);
+                pIOEBHEPAIC_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 56: {
+
+              jAMNMKIOPEO_ = input.readUInt32();
+              break;
+            }
+            case 66: {
+              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder subBuilder = null;
+              if (dPIINFPCNEK_ != null) {
+                subBuilder = dPIINFPCNEK_.toBuilder();
+              }
+              dPIINFPCNEK_ = input.readMessage(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(dPIINFPCNEK_);
+                dPIINFPCNEK_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 72: {
+              int rawValue = input.readEnum();
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                diceSideList_ = new java.util.ArrayList<java.lang.Integer>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              diceSideList_.add(rawValue);
+              break;
+            }
+            case 74: {
+              int length = input.readRawVarint32();
+              int oldLimit = input.pushLimit(length);
+              while(input.getBytesUntilLimit() > 0) {
+                int rawValue = input.readEnum();
+                if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                  diceSideList_ = new java.util.ArrayList<java.lang.Integer>();
+                  mutable_bitField0_ |= 0x00000002;
+                }
+                diceSideList_.add(rawValue);
+              }
+              input.popLimit(oldLimit);
               break;
             }
             case 80: {
 
-              isPassed_ = input.readBool();
+              controllerId_ = input.readUInt32();
               break;
             }
             case 90: {
               emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder subBuilder = null;
-              if (cGBIBGGMGEF_ != null) {
-                subBuilder = cGBIBGGMGEF_.toBuilder();
+              if (gNCOGNIKACN_ != null) {
+                subBuilder = gNCOGNIKACN_.toBuilder();
               }
-              cGBIBGGMGEF_ = input.readMessage(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.parser(), extensionRegistry);
+              gNCOGNIKACN_ = input.readMessage(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(cGBIBGGMGEF_);
-                cGBIBGGMGEF_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(gNCOGNIKACN_);
+                gNCOGNIKACN_ = subBuilder.buildPartial();
               }
 
               break;
             }
-            case 98: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                waitingList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter>();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              waitingList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.parser(), extensionRegistry));
+            case 96: {
+
+              eEFLPHPIMDL_ = input.readUInt32();
               break;
             }
-            case 106: {
+            case 104: {
+
+              isPassed_ = input.readBool();
+              break;
+            }
+            case 114: {
               emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder subBuilder = null;
-              if (dIFHGPIAFNK_ != null) {
-                subBuilder = dIFHGPIAFNK_.toBuilder();
+              if (jKEOEAIEALF_ != null) {
+                subBuilder = jKEOEAIEALF_.toBuilder();
               }
-              dIFHGPIAFNK_ = input.readMessage(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.parser(), extensionRegistry);
+              jKEOEAIEALF_ = input.readMessage(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(dIFHGPIAFNK_);
-                dIFHGPIAFNK_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(jKEOEAIEALF_);
+                jKEOEAIEALF_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 112: {
-
-              fieldShowId_ = input.readUInt32();
               break;
             }
             case 122: {
               emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder subBuilder = null;
-              if (jLPLPDNEFJA_ != null) {
-                subBuilder = jLPLPDNEFJA_.toBuilder();
+              if (fPGFCMDIABG_ != null) {
+                subBuilder = fPGFCMDIABG_.toBuilder();
               }
-              jLPLPDNEFJA_ = input.readMessage(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.parser(), extensionRegistry);
+              fPGFCMDIABG_ = input.readMessage(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(jLPLPDNEFJA_);
-                jLPLPDNEFJA_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(fPGFCMDIABG_);
+                fPGFCMDIABG_ = subBuilder.buildPartial();
               }
 
               break;
             }
-            case 6592: {
+            case 928: {
 
-              oNKDMOMNGBG_ = input.readUInt32();
-              break;
-            }
-            case 12322: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                intentionList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention>();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              intentionList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.parser(), extensionRegistry));
+              aDCHOFHFPPC_ = input.readUInt32();
               break;
             }
             default: {
@@ -640,13 +446,10 @@ public final class GCGPlayerFieldOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          diceSideList_ = java.util.Collections.unmodifiableList(diceSideList_);
-        }
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          waitingList_ = java.util.Collections.unmodifiableList(waitingList_);
+          dNEEMCIDCAF_ = java.util.Collections.unmodifiableList(dNEEMCIDCAF_);
         }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          intentionList_ = java.util.Collections.unmodifiableList(intentionList_);
+          diceSideList_ = java.util.Collections.unmodifiableList(diceSideList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -662,7 +465,7 @@ public final class GCGPlayerFieldOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 8:
+        case 1:
           return internalGetModifyZoneMap();
         default:
           throw new RuntimeException(
@@ -677,18 +480,184 @@ public final class GCGPlayerFieldOuterClass {
               emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField.class, emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField.Builder.class);
     }
 
-    public static final int ONKDMOMNGBG_FIELD_NUMBER = 824;
-    private int oNKDMOMNGBG_;
+    public static final int EMBGKGCNFPE_FIELD_NUMBER = 4;
+    private int eMBGKGCNFPE_;
     /**
-     * <code>uint32 ONKDMOMNGBG = 824;</code>
-     * @return The oNKDMOMNGBG.
+     * <code>uint32 EMBGKGCNFPE = 4;</code>
+     * @return The eMBGKGCNFPE.
      */
     @java.lang.Override
-    public int getONKDMOMNGBG() {
-      return oNKDMOMNGBG_;
+    public int getEMBGKGCNFPE() {
+      return eMBGKGCNFPE_;
     }
 
-    public static final int DICE_SIDE_LIST_FIELD_NUMBER = 1;
+    public static final int PIOEBHEPAIC_FIELD_NUMBER = 6;
+    private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone pIOEBHEPAIC_;
+    /**
+     * <code>.GCGZone PIOEBHEPAIC = 6;</code>
+     * @return Whether the pIOEBHEPAIC field is set.
+     */
+    @java.lang.Override
+    public boolean hasPIOEBHEPAIC() {
+      return pIOEBHEPAIC_ != null;
+    }
+    /**
+     * <code>.GCGZone PIOEBHEPAIC = 6;</code>
+     * @return The pIOEBHEPAIC.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getPIOEBHEPAIC() {
+      return pIOEBHEPAIC_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : pIOEBHEPAIC_;
+    }
+    /**
+     * <code>.GCGZone PIOEBHEPAIC = 6;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getPIOEBHEPAICOrBuilder() {
+      return getPIOEBHEPAIC();
+    }
+
+    public static final int GNCOGNIKACN_FIELD_NUMBER = 11;
+    private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone gNCOGNIKACN_;
+    /**
+     * <code>.GCGZone GNCOGNIKACN = 11;</code>
+     * @return Whether the gNCOGNIKACN field is set.
+     */
+    @java.lang.Override
+    public boolean hasGNCOGNIKACN() {
+      return gNCOGNIKACN_ != null;
+    }
+    /**
+     * <code>.GCGZone GNCOGNIKACN = 11;</code>
+     * @return The gNCOGNIKACN.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getGNCOGNIKACN() {
+      return gNCOGNIKACN_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : gNCOGNIKACN_;
+    }
+    /**
+     * <code>.GCGZone GNCOGNIKACN = 11;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getGNCOGNIKACNOrBuilder() {
+      return getGNCOGNIKACN();
+    }
+
+    public static final int CONTROLLER_ID_FIELD_NUMBER = 10;
+    private int controllerId_;
+    /**
+     * <code>uint32 controller_id = 10;</code>
+     * @return The controllerId.
+     */
+    @java.lang.Override
+    public int getControllerId() {
+      return controllerId_;
+    }
+
+    public static final int EEFLPHPIMDL_FIELD_NUMBER = 12;
+    private int eEFLPHPIMDL_;
+    /**
+     * <code>uint32 EEFLPHPIMDL = 12;</code>
+     * @return The eEFLPHPIMDL.
+     */
+    @java.lang.Override
+    public int getEEFLPHPIMDL() {
+      return eEFLPHPIMDL_;
+    }
+
+    public static final int DPIINFPCNEK_FIELD_NUMBER = 8;
+    private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone dPIINFPCNEK_;
+    /**
+     * <code>.GCGZone DPIINFPCNEK = 8;</code>
+     * @return Whether the dPIINFPCNEK field is set.
+     */
+    @java.lang.Override
+    public boolean hasDPIINFPCNEK() {
+      return dPIINFPCNEK_ != null;
+    }
+    /**
+     * <code>.GCGZone DPIINFPCNEK = 8;</code>
+     * @return The dPIINFPCNEK.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getDPIINFPCNEK() {
+      return dPIINFPCNEK_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : dPIINFPCNEK_;
+    }
+    /**
+     * <code>.GCGZone DPIINFPCNEK = 8;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getDPIINFPCNEKOrBuilder() {
+      return getDPIINFPCNEK();
+    }
+
+    public static final int DNEEMCIDCAF_FIELD_NUMBER = 2;
+    private java.util.List<emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHE> dNEEMCIDCAF_;
+    /**
+     * <code>repeated .GABNJIGBIHE DNEEMCIDCAF = 2;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHE> getDNEEMCIDCAFList() {
+      return dNEEMCIDCAF_;
+    }
+    /**
+     * <code>repeated .GABNJIGBIHE DNEEMCIDCAF = 2;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHEOrBuilder> 
+        getDNEEMCIDCAFOrBuilderList() {
+      return dNEEMCIDCAF_;
+    }
+    /**
+     * <code>repeated .GABNJIGBIHE DNEEMCIDCAF = 2;</code>
+     */
+    @java.lang.Override
+    public int getDNEEMCIDCAFCount() {
+      return dNEEMCIDCAF_.size();
+    }
+    /**
+     * <code>repeated .GABNJIGBIHE DNEEMCIDCAF = 2;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHE getDNEEMCIDCAF(int index) {
+      return dNEEMCIDCAF_.get(index);
+    }
+    /**
+     * <code>repeated .GABNJIGBIHE DNEEMCIDCAF = 2;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHEOrBuilder getDNEEMCIDCAFOrBuilder(
+        int index) {
+      return dNEEMCIDCAF_.get(index);
+    }
+
+    public static final int FPGFCMDIABG_FIELD_NUMBER = 15;
+    private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone fPGFCMDIABG_;
+    /**
+     * <code>.GCGZone FPGFCMDIABG = 15;</code>
+     * @return Whether the fPGFCMDIABG field is set.
+     */
+    @java.lang.Override
+    public boolean hasFPGFCMDIABG() {
+      return fPGFCMDIABG_ != null;
+    }
+    /**
+     * <code>.GCGZone FPGFCMDIABG = 15;</code>
+     * @return The fPGFCMDIABG.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getFPGFCMDIABG() {
+      return fPGFCMDIABG_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : fPGFCMDIABG_;
+    }
+    /**
+     * <code>.GCGZone FPGFCMDIABG = 15;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getFPGFCMDIABGOrBuilder() {
+      return getFPGFCMDIABG();
+    }
+
+    public static final int DICE_SIDE_LIST_FIELD_NUMBER = 9;
     private java.util.List<java.lang.Integer> diceSideList_;
     private static final com.google.protobuf.Internal.ListAdapter.Converter<
         java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType> diceSideList_converter_ =
@@ -701,11 +670,7 @@ public final class GCGPlayerFieldOuterClass {
               }
             };
     /**
-     * <pre>
-     *repeated PENJFODAGGI GGGHONFOAKP = 1;
-     * </pre>
-     *
-     * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
+     * <code>repeated .GCGDiceSideType dice_side_list = 9;</code>
      * @return A list containing the diceSideList.
      */
     @java.lang.Override
@@ -714,11 +679,7 @@ public final class GCGPlayerFieldOuterClass {
           java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>(diceSideList_, diceSideList_converter_);
     }
     /**
-     * <pre>
-     *repeated PENJFODAGGI GGGHONFOAKP = 1;
-     * </pre>
-     *
-     * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
+     * <code>repeated .GCGDiceSideType dice_side_list = 9;</code>
      * @return The count of diceSideList.
      */
     @java.lang.Override
@@ -726,11 +687,7 @@ public final class GCGPlayerFieldOuterClass {
       return diceSideList_.size();
     }
     /**
-     * <pre>
-     *repeated PENJFODAGGI GGGHONFOAKP = 1;
-     * </pre>
-     *
-     * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
+     * <code>repeated .GCGDiceSideType dice_side_list = 9;</code>
      * @param index The index of the element to return.
      * @return The diceSideList at the given index.
      */
@@ -739,11 +696,7 @@ public final class GCGPlayerFieldOuterClass {
       return diceSideList_converter_.convert(diceSideList_.get(index));
     }
     /**
-     * <pre>
-     *repeated PENJFODAGGI GGGHONFOAKP = 1;
-     * </pre>
-     *
-     * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
+     * <code>repeated .GCGDiceSideType dice_side_list = 9;</code>
      * @return A list containing the enum numeric values on the wire for diceSideList.
      */
     @java.lang.Override
@@ -752,11 +705,7 @@ public final class GCGPlayerFieldOuterClass {
       return diceSideList_;
     }
     /**
-     * <pre>
-     *repeated PENJFODAGGI GGGHONFOAKP = 1;
-     * </pre>
-     *
-     * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
+     * <code>repeated .GCGDiceSideType dice_side_list = 9;</code>
      * @param index The index of the value to return.
      * @return The enum numeric value on the wire of diceSideList at the given index.
      */
@@ -766,350 +715,29 @@ public final class GCGPlayerFieldOuterClass {
     }
     private int diceSideListMemoizedSerializedSize;
 
-    public static final int CARD_BACK_SHOW_ID_FIELD_NUMBER = 3;
-    private int cardBackShowId_;
+    public static final int KFDOPOINLPP_FIELD_NUMBER = 5;
+    private int kFDOPOINLPP_;
     /**
-     * <pre>
-     *IGMNOEBOCJP IS CARD_BACK_SHOW_ID
-     * </pre>
-     *
-     * <code>uint32 card_back_show_id = 3;</code>
-     * @return The cardBackShowId.
+     * <code>uint32 KFDOPOINLPP = 5;</code>
+     * @return The kFDOPOINLPP.
      */
     @java.lang.Override
-    public int getCardBackShowId() {
-      return cardBackShowId_;
+    public int getKFDOPOINLPP() {
+      return kFDOPOINLPP_;
     }
 
-    public static final int INTENTION_LIST_FIELD_NUMBER = 1540;
-    private java.util.List<emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention> intentionList_;
+    public static final int ADCHOFHFPPC_FIELD_NUMBER = 116;
+    private int aDCHOFHFPPC_;
     /**
-     * <pre>
-     *repeated HHKFLCHIBJJ AICAJEFEHLF = 1540;
-     * </pre>
-     *
-     * <code>repeated .GCGPVEIntention intention_list = 1540;</code>
+     * <code>uint32 ADCHOFHFPPC = 116;</code>
+     * @return The aDCHOFHFPPC.
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention> getIntentionListList() {
-      return intentionList_;
-    }
-    /**
-     * <pre>
-     *repeated HHKFLCHIBJJ AICAJEFEHLF = 1540;
-     * </pre>
-     *
-     * <code>repeated .GCGPVEIntention intention_list = 1540;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder> 
-        getIntentionListOrBuilderList() {
-      return intentionList_;
-    }
-    /**
-     * <pre>
-     *repeated HHKFLCHIBJJ AICAJEFEHLF = 1540;
-     * </pre>
-     *
-     * <code>repeated .GCGPVEIntention intention_list = 1540;</code>
-     */
-    @java.lang.Override
-    public int getIntentionListCount() {
-      return intentionList_.size();
-    }
-    /**
-     * <pre>
-     *repeated HHKFLCHIBJJ AICAJEFEHLF = 1540;
-     * </pre>
-     *
-     * <code>repeated .GCGPVEIntention intention_list = 1540;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention getIntentionList(int index) {
-      return intentionList_.get(index);
-    }
-    /**
-     * <pre>
-     *repeated HHKFLCHIBJJ AICAJEFEHLF = 1540;
-     * </pre>
-     *
-     * <code>repeated .GCGPVEIntention intention_list = 1540;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder getIntentionListOrBuilder(
-        int index) {
-      return intentionList_.get(index);
+    public int getADCHOFHFPPC() {
+      return aDCHOFHFPPC_;
     }
 
-    public static final int WAITING_LIST_FIELD_NUMBER = 12;
-    private java.util.List<emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter> waitingList_;
-    /**
-     * <pre>
-     *repeated AEEKABMMKNE PLPMEJFNDKA = 12;
-     * </pre>
-     *
-     * <code>repeated .GCGWaitingCharacter waiting_list = 12;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter> getWaitingListList() {
-      return waitingList_;
-    }
-    /**
-     * <pre>
-     *repeated AEEKABMMKNE PLPMEJFNDKA = 12;
-     * </pre>
-     *
-     * <code>repeated .GCGWaitingCharacter waiting_list = 12;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacterOrBuilder> 
-        getWaitingListOrBuilderList() {
-      return waitingList_;
-    }
-    /**
-     * <pre>
-     *repeated AEEKABMMKNE PLPMEJFNDKA = 12;
-     * </pre>
-     *
-     * <code>repeated .GCGWaitingCharacter waiting_list = 12;</code>
-     */
-    @java.lang.Override
-    public int getWaitingListCount() {
-      return waitingList_.size();
-    }
-    /**
-     * <pre>
-     *repeated AEEKABMMKNE PLPMEJFNDKA = 12;
-     * </pre>
-     *
-     * <code>repeated .GCGWaitingCharacter waiting_list = 12;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter getWaitingList(int index) {
-      return waitingList_.get(index);
-    }
-    /**
-     * <pre>
-     *repeated AEEKABMMKNE PLPMEJFNDKA = 12;
-     * </pre>
-     *
-     * <code>repeated .GCGWaitingCharacter waiting_list = 12;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacterOrBuilder getWaitingListOrBuilder(
-        int index) {
-      return waitingList_.get(index);
-    }
-
-    public static final int IS_PASSED_FIELD_NUMBER = 10;
-    private boolean isPassed_;
-    /**
-     * <code>bool is_passed = 10;</code>
-     * @return The isPassed.
-     */
-    @java.lang.Override
-    public boolean getIsPassed() {
-      return isPassed_;
-    }
-
-    public static final int FIELD_SHOW_ID_FIELD_NUMBER = 14;
-    private int fieldShowId_;
-    /**
-     * <pre>
-     *AJFMMFEEDFF snooGUESS CORRECT
-     * </pre>
-     *
-     * <code>uint32 field_show_id = 14;</code>
-     * @return The fieldShowId.
-     */
-    @java.lang.Override
-    public int getFieldShowId() {
-      return fieldShowId_;
-    }
-
-    public static final int DECK_CARD_NUM_FIELD_NUMBER = 2;
-    private int deckCardNum_;
-    /**
-     * <pre>
-     *IAEJLGAILAK snooguess swapperoo (right)
-     * </pre>
-     *
-     * <code>uint32 deck_card_num = 2;</code>
-     * @return The deckCardNum.
-     */
-    @java.lang.Override
-    public int getDeckCardNum() {
-      return deckCardNum_;
-    }
-
-    public static final int AGPFPMEDGKI_FIELD_NUMBER = 9;
-    private int aGPFPMEDGKI_;
-    /**
-     * <pre>
-     *AGPFPMEDGKI
-     * </pre>
-     *
-     * <code>uint32 AGPFPMEDGKI = 9;</code>
-     * @return The aGPFPMEDGKI.
-     */
-    @java.lang.Override
-    public int getAGPFPMEDGKI() {
-      return aGPFPMEDGKI_;
-    }
-
-    public static final int KOIGNIFNCMI_FIELD_NUMBER = 7;
-    private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone kOIGNIFNCMI_;
-    /**
-     * <pre>
-     *KOIGNIFNCMI swapperoo 5
-     * </pre>
-     *
-     * <code>.GCGZone KOIGNIFNCMI = 7;</code>
-     * @return Whether the kOIGNIFNCMI field is set.
-     */
-    @java.lang.Override
-    public boolean hasKOIGNIFNCMI() {
-      return kOIGNIFNCMI_ != null;
-    }
-    /**
-     * <pre>
-     *KOIGNIFNCMI swapperoo 5
-     * </pre>
-     *
-     * <code>.GCGZone KOIGNIFNCMI = 7;</code>
-     * @return The kOIGNIFNCMI.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getKOIGNIFNCMI() {
-      return kOIGNIFNCMI_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : kOIGNIFNCMI_;
-    }
-    /**
-     * <pre>
-     *KOIGNIFNCMI swapperoo 5
-     * </pre>
-     *
-     * <code>.GCGZone KOIGNIFNCMI = 7;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getKOIGNIFNCMIOrBuilder() {
-      return getKOIGNIFNCMI();
-    }
-
-    public static final int CHARACTER_ZONE_FIELD_NUMBER = 5;
-    private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone characterZone_;
-    /**
-     * <pre>
-     *HBCOFFFLNAI swapperoo 5 (right Unk3300_INDJNJJJNKL)
-     * </pre>
-     *
-     * <code>.GCGZone character_zone = 5;</code>
-     * @return Whether the characterZone field is set.
-     */
-    @java.lang.Override
-    public boolean hasCharacterZone() {
-      return characterZone_ != null;
-    }
-    /**
-     * <pre>
-     *HBCOFFFLNAI swapperoo 5 (right Unk3300_INDJNJJJNKL)
-     * </pre>
-     *
-     * <code>.GCGZone character_zone = 5;</code>
-     * @return The characterZone.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getCharacterZone() {
-      return characterZone_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : characterZone_;
-    }
-    /**
-     * <pre>
-     *HBCOFFFLNAI swapperoo 5 (right Unk3300_INDJNJJJNKL)
-     * </pre>
-     *
-     * <code>.GCGZone character_zone = 5;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getCharacterZoneOrBuilder() {
-      return getCharacterZone();
-    }
-
-    public static final int JLPLPDNEFJA_FIELD_NUMBER = 15;
-    private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone jLPLPDNEFJA_;
-    /**
-     * <pre>
-     *JLPLPDNEFJA swapperoo 5
-     * </pre>
-     *
-     * <code>.GCGZone JLPLPDNEFJA = 15;</code>
-     * @return Whether the jLPLPDNEFJA field is set.
-     */
-    @java.lang.Override
-    public boolean hasJLPLPDNEFJA() {
-      return jLPLPDNEFJA_ != null;
-    }
-    /**
-     * <pre>
-     *JLPLPDNEFJA swapperoo 5
-     * </pre>
-     *
-     * <code>.GCGZone JLPLPDNEFJA = 15;</code>
-     * @return The jLPLPDNEFJA.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getJLPLPDNEFJA() {
-      return jLPLPDNEFJA_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : jLPLPDNEFJA_;
-    }
-    /**
-     * <pre>
-     *JLPLPDNEFJA swapperoo 5
-     * </pre>
-     *
-     * <code>.GCGZone JLPLPDNEFJA = 15;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getJLPLPDNEFJAOrBuilder() {
-      return getJLPLPDNEFJA();
-    }
-
-    public static final int DIFHGPIAFNK_FIELD_NUMBER = 13;
-    private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone dIFHGPIAFNK_;
-    /**
-     * <pre>
-     *DIFHGPIAFNK snoguess swapperoo 5
-     * </pre>
-     *
-     * <code>.GCGZone DIFHGPIAFNK = 13;</code>
-     * @return Whether the dIFHGPIAFNK field is set.
-     */
-    @java.lang.Override
-    public boolean hasDIFHGPIAFNK() {
-      return dIFHGPIAFNK_ != null;
-    }
-    /**
-     * <pre>
-     *DIFHGPIAFNK snoguess swapperoo 5
-     * </pre>
-     *
-     * <code>.GCGZone DIFHGPIAFNK = 13;</code>
-     * @return The dIFHGPIAFNK.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getDIFHGPIAFNK() {
-      return dIFHGPIAFNK_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : dIFHGPIAFNK_;
-    }
-    /**
-     * <pre>
-     *DIFHGPIAFNK snoguess swapperoo 5
-     * </pre>
-     *
-     * <code>.GCGZone DIFHGPIAFNK = 13;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getDIFHGPIAFNKOrBuilder() {
-      return getDIFHGPIAFNK();
-    }
-
-    public static final int MODIFY_ZONE_MAP_FIELD_NUMBER = 8;
+    public static final int MODIFY_ZONE_MAP_FIELD_NUMBER = 1;
     private static final class ModifyZoneMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone> defaultEntry =
@@ -1136,11 +764,7 @@ public final class GCGPlayerFieldOuterClass {
       return internalGetModifyZoneMap().getMap().size();
     }
     /**
-     * <pre>
-     *JFAINLBMGJP
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 8;</code>
+     * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 1;</code>
      */
 
     @java.lang.Override
@@ -1158,11 +782,7 @@ public final class GCGPlayerFieldOuterClass {
       return getModifyZoneMapMap();
     }
     /**
-     * <pre>
-     *JFAINLBMGJP
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 8;</code>
+     * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 1;</code>
      */
     @java.lang.Override
 
@@ -1170,11 +790,7 @@ public final class GCGPlayerFieldOuterClass {
       return internalGetModifyZoneMap().getMap();
     }
     /**
-     * <pre>
-     *JFAINLBMGJP
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 8;</code>
+     * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 1;</code>
      */
     @java.lang.Override
 
@@ -1187,11 +803,7 @@ public final class GCGPlayerFieldOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <pre>
-     *JFAINLBMGJP
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 8;</code>
+     * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 1;</code>
      */
     @java.lang.Override
 
@@ -1206,68 +818,63 @@ public final class GCGPlayerFieldOuterClass {
       return map.get(key);
     }
 
-    public static final int CGBIBGGMGEF_FIELD_NUMBER = 11;
-    private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone cGBIBGGMGEF_;
+    public static final int JAMNMKIOPEO_FIELD_NUMBER = 7;
+    private int jAMNMKIOPEO_;
     /**
-     * <pre>
-     *CGBIBGGMGEF swapperoo 5
-     * </pre>
-     *
-     * <code>.GCGZone CGBIBGGMGEF = 11;</code>
-     * @return Whether the cGBIBGGMGEF field is set.
+     * <code>uint32 JAMNMKIOPEO = 7;</code>
+     * @return The jAMNMKIOPEO.
      */
     @java.lang.Override
-    public boolean hasCGBIBGGMGEF() {
-      return cGBIBGGMGEF_ != null;
-    }
-    /**
-     * <pre>
-     *CGBIBGGMGEF swapperoo 5
-     * </pre>
-     *
-     * <code>.GCGZone CGBIBGGMGEF = 11;</code>
-     * @return The cGBIBGGMGEF.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getCGBIBGGMGEF() {
-      return cGBIBGGMGEF_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : cGBIBGGMGEF_;
-    }
-    /**
-     * <pre>
-     *CGBIBGGMGEF swapperoo 5
-     * </pre>
-     *
-     * <code>.GCGZone CGBIBGGMGEF = 11;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getCGBIBGGMGEFOrBuilder() {
-      return getCGBIBGGMGEF();
+    public int getJAMNMKIOPEO() {
+      return jAMNMKIOPEO_;
     }
 
-    public static final int CONTROLLER_ID_FIELD_NUMBER = 4;
-    private int controllerId_;
+    public static final int IS_PASSED_FIELD_NUMBER = 13;
+    private boolean isPassed_;
     /**
-     * <code>uint32 controller_id = 4;</code>
-     * @return The controllerId.
+     * <code>bool is_passed = 13;</code>
+     * @return The isPassed.
      */
     @java.lang.Override
-    public int getControllerId() {
-      return controllerId_;
+    public boolean getIsPassed() {
+      return isPassed_;
     }
 
-    public static final int NKNMAGGJMFP_FIELD_NUMBER = 6;
-    private int nKNMAGGJMFP_;
+    public static final int JKEOEAIEALF_FIELD_NUMBER = 14;
+    private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone jKEOEAIEALF_;
     /**
-     * <pre>
-     *NKNMAGGJMFP
-     * </pre>
-     *
-     * <code>uint32 NKNMAGGJMFP = 6;</code>
-     * @return The nKNMAGGJMFP.
+     * <code>.GCGZone JKEOEAIEALF = 14;</code>
+     * @return Whether the jKEOEAIEALF field is set.
      */
     @java.lang.Override
-    public int getNKNMAGGJMFP() {
-      return nKNMAGGJMFP_;
+    public boolean hasJKEOEAIEALF() {
+      return jKEOEAIEALF_ != null;
+    }
+    /**
+     * <code>.GCGZone JKEOEAIEALF = 14;</code>
+     * @return The jKEOEAIEALF.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getJKEOEAIEALF() {
+      return jKEOEAIEALF_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : jKEOEAIEALF_;
+    }
+    /**
+     * <code>.GCGZone JKEOEAIEALF = 14;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getJKEOEAIEALFOrBuilder() {
+      return getJKEOEAIEALF();
+    }
+
+    public static final int GNKGJFHDCDI_FIELD_NUMBER = 3;
+    private int gNKGJFHDCDI_;
+    /**
+     * <code>uint32 GNKGJFHDCDI = 3;</code>
+     * @return The gNKGJFHDCDI.
+     */
+    @java.lang.Override
+    public int getGNKGJFHDCDI() {
+      return gNKGJFHDCDI_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -1285,63 +892,60 @@ public final class GCGPlayerFieldOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (getDiceSideListList().size() > 0) {
-        output.writeUInt32NoTag(10);
-        output.writeUInt32NoTag(diceSideListMemoizedSerializedSize);
-      }
-      for (int i = 0; i < diceSideList_.size(); i++) {
-        output.writeEnumNoTag(diceSideList_.get(i));
-      }
-      if (deckCardNum_ != 0) {
-        output.writeUInt32(2, deckCardNum_);
-      }
-      if (cardBackShowId_ != 0) {
-        output.writeUInt32(3, cardBackShowId_);
-      }
-      if (controllerId_ != 0) {
-        output.writeUInt32(4, controllerId_);
-      }
-      if (characterZone_ != null) {
-        output.writeMessage(5, getCharacterZone());
-      }
-      if (nKNMAGGJMFP_ != 0) {
-        output.writeUInt32(6, nKNMAGGJMFP_);
-      }
-      if (kOIGNIFNCMI_ != null) {
-        output.writeMessage(7, getKOIGNIFNCMI());
-      }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetModifyZoneMap(),
           ModifyZoneMapDefaultEntryHolder.defaultEntry,
-          8);
-      if (aGPFPMEDGKI_ != 0) {
-        output.writeUInt32(9, aGPFPMEDGKI_);
+          1);
+      for (int i = 0; i < dNEEMCIDCAF_.size(); i++) {
+        output.writeMessage(2, dNEEMCIDCAF_.get(i));
+      }
+      if (gNKGJFHDCDI_ != 0) {
+        output.writeUInt32(3, gNKGJFHDCDI_);
+      }
+      if (eMBGKGCNFPE_ != 0) {
+        output.writeUInt32(4, eMBGKGCNFPE_);
+      }
+      if (kFDOPOINLPP_ != 0) {
+        output.writeUInt32(5, kFDOPOINLPP_);
+      }
+      if (pIOEBHEPAIC_ != null) {
+        output.writeMessage(6, getPIOEBHEPAIC());
+      }
+      if (jAMNMKIOPEO_ != 0) {
+        output.writeUInt32(7, jAMNMKIOPEO_);
+      }
+      if (dPIINFPCNEK_ != null) {
+        output.writeMessage(8, getDPIINFPCNEK());
+      }
+      if (getDiceSideListList().size() > 0) {
+        output.writeUInt32NoTag(74);
+        output.writeUInt32NoTag(diceSideListMemoizedSerializedSize);
+      }
+      for (int i = 0; i < diceSideList_.size(); i++) {
+        output.writeEnumNoTag(diceSideList_.get(i));
+      }
+      if (controllerId_ != 0) {
+        output.writeUInt32(10, controllerId_);
+      }
+      if (gNCOGNIKACN_ != null) {
+        output.writeMessage(11, getGNCOGNIKACN());
+      }
+      if (eEFLPHPIMDL_ != 0) {
+        output.writeUInt32(12, eEFLPHPIMDL_);
       }
       if (isPassed_ != false) {
-        output.writeBool(10, isPassed_);
+        output.writeBool(13, isPassed_);
       }
-      if (cGBIBGGMGEF_ != null) {
-        output.writeMessage(11, getCGBIBGGMGEF());
+      if (jKEOEAIEALF_ != null) {
+        output.writeMessage(14, getJKEOEAIEALF());
       }
-      for (int i = 0; i < waitingList_.size(); i++) {
-        output.writeMessage(12, waitingList_.get(i));
+      if (fPGFCMDIABG_ != null) {
+        output.writeMessage(15, getFPGFCMDIABG());
       }
-      if (dIFHGPIAFNK_ != null) {
-        output.writeMessage(13, getDIFHGPIAFNK());
-      }
-      if (fieldShowId_ != 0) {
-        output.writeUInt32(14, fieldShowId_);
-      }
-      if (jLPLPDNEFJA_ != null) {
-        output.writeMessage(15, getJLPLPDNEFJA());
-      }
-      if (oNKDMOMNGBG_ != 0) {
-        output.writeUInt32(824, oNKDMOMNGBG_);
-      }
-      for (int i = 0; i < intentionList_.size(); i++) {
-        output.writeMessage(1540, intentionList_.get(i));
+      if (aDCHOFHFPPC_ != 0) {
+        output.writeUInt32(116, aDCHOFHFPPC_);
       }
       unknownFields.writeTo(output);
     }
@@ -1352,6 +956,44 @@ public final class GCGPlayerFieldOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      for (java.util.Map.Entry<java.lang.Integer, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone> entry
+           : internalGetModifyZoneMap().getMap().entrySet()) {
+        com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone>
+        modifyZoneMap__ = ModifyZoneMapDefaultEntryHolder.defaultEntry.newBuilderForType()
+            .setKey(entry.getKey())
+            .setValue(entry.getValue())
+            .build();
+        size += com.google.protobuf.CodedOutputStream
+            .computeMessageSize(1, modifyZoneMap__);
+      }
+      for (int i = 0; i < dNEEMCIDCAF_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, dNEEMCIDCAF_.get(i));
+      }
+      if (gNKGJFHDCDI_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, gNKGJFHDCDI_);
+      }
+      if (eMBGKGCNFPE_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, eMBGKGCNFPE_);
+      }
+      if (kFDOPOINLPP_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, kFDOPOINLPP_);
+      }
+      if (pIOEBHEPAIC_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(6, getPIOEBHEPAIC());
+      }
+      if (jAMNMKIOPEO_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, jAMNMKIOPEO_);
+      }
+      if (dPIINFPCNEK_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(8, getDPIINFPCNEK());
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < diceSideList_.size(); i++) {
@@ -1364,75 +1006,33 @@ public final class GCGPlayerFieldOuterClass {
             .computeUInt32SizeNoTag(dataSize);
         }diceSideListMemoizedSerializedSize = dataSize;
       }
-      if (deckCardNum_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, deckCardNum_);
-      }
-      if (cardBackShowId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, cardBackShowId_);
-      }
       if (controllerId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, controllerId_);
+          .computeUInt32Size(10, controllerId_);
       }
-      if (characterZone_ != null) {
+      if (gNCOGNIKACN_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, getCharacterZone());
+          .computeMessageSize(11, getGNCOGNIKACN());
       }
-      if (nKNMAGGJMFP_ != 0) {
+      if (eEFLPHPIMDL_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, nKNMAGGJMFP_);
-      }
-      if (kOIGNIFNCMI_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, getKOIGNIFNCMI());
-      }
-      for (java.util.Map.Entry<java.lang.Integer, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone> entry
-           : internalGetModifyZoneMap().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone>
-        modifyZoneMap__ = ModifyZoneMapDefaultEntryHolder.defaultEntry.newBuilderForType()
-            .setKey(entry.getKey())
-            .setValue(entry.getValue())
-            .build();
-        size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(8, modifyZoneMap__);
-      }
-      if (aGPFPMEDGKI_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, aGPFPMEDGKI_);
+          .computeUInt32Size(12, eEFLPHPIMDL_);
       }
       if (isPassed_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isPassed_);
+          .computeBoolSize(13, isPassed_);
       }
-      if (cGBIBGGMGEF_ != null) {
+      if (jKEOEAIEALF_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, getCGBIBGGMGEF());
+          .computeMessageSize(14, getJKEOEAIEALF());
       }
-      for (int i = 0; i < waitingList_.size(); i++) {
+      if (fPGFCMDIABG_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, waitingList_.get(i));
+          .computeMessageSize(15, getFPGFCMDIABG());
       }
-      if (dIFHGPIAFNK_ != null) {
+      if (aDCHOFHFPPC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, getDIFHGPIAFNK());
-      }
-      if (fieldShowId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, fieldShowId_);
-      }
-      if (jLPLPDNEFJA_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, getJLPLPDNEFJA());
-      }
-      if (oNKDMOMNGBG_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(824, oNKDMOMNGBG_);
-      }
-      for (int i = 0; i < intentionList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1540, intentionList_.get(i));
+          .computeUInt32Size(116, aDCHOFHFPPC_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1449,54 +1049,52 @@ public final class GCGPlayerFieldOuterClass {
       }
       emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField other = (emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField) obj;
 
-      if (getONKDMOMNGBG()
-          != other.getONKDMOMNGBG()) return false;
-      if (!diceSideList_.equals(other.diceSideList_)) return false;
-      if (getCardBackShowId()
-          != other.getCardBackShowId()) return false;
-      if (!getIntentionListList()
-          .equals(other.getIntentionListList())) return false;
-      if (!getWaitingListList()
-          .equals(other.getWaitingListList())) return false;
-      if (getIsPassed()
-          != other.getIsPassed()) return false;
-      if (getFieldShowId()
-          != other.getFieldShowId()) return false;
-      if (getDeckCardNum()
-          != other.getDeckCardNum()) return false;
-      if (getAGPFPMEDGKI()
-          != other.getAGPFPMEDGKI()) return false;
-      if (hasKOIGNIFNCMI() != other.hasKOIGNIFNCMI()) return false;
-      if (hasKOIGNIFNCMI()) {
-        if (!getKOIGNIFNCMI()
-            .equals(other.getKOIGNIFNCMI())) return false;
+      if (getEMBGKGCNFPE()
+          != other.getEMBGKGCNFPE()) return false;
+      if (hasPIOEBHEPAIC() != other.hasPIOEBHEPAIC()) return false;
+      if (hasPIOEBHEPAIC()) {
+        if (!getPIOEBHEPAIC()
+            .equals(other.getPIOEBHEPAIC())) return false;
       }
-      if (hasCharacterZone() != other.hasCharacterZone()) return false;
-      if (hasCharacterZone()) {
-        if (!getCharacterZone()
-            .equals(other.getCharacterZone())) return false;
-      }
-      if (hasJLPLPDNEFJA() != other.hasJLPLPDNEFJA()) return false;
-      if (hasJLPLPDNEFJA()) {
-        if (!getJLPLPDNEFJA()
-            .equals(other.getJLPLPDNEFJA())) return false;
-      }
-      if (hasDIFHGPIAFNK() != other.hasDIFHGPIAFNK()) return false;
-      if (hasDIFHGPIAFNK()) {
-        if (!getDIFHGPIAFNK()
-            .equals(other.getDIFHGPIAFNK())) return false;
-      }
-      if (!internalGetModifyZoneMap().equals(
-          other.internalGetModifyZoneMap())) return false;
-      if (hasCGBIBGGMGEF() != other.hasCGBIBGGMGEF()) return false;
-      if (hasCGBIBGGMGEF()) {
-        if (!getCGBIBGGMGEF()
-            .equals(other.getCGBIBGGMGEF())) return false;
+      if (hasGNCOGNIKACN() != other.hasGNCOGNIKACN()) return false;
+      if (hasGNCOGNIKACN()) {
+        if (!getGNCOGNIKACN()
+            .equals(other.getGNCOGNIKACN())) return false;
       }
       if (getControllerId()
           != other.getControllerId()) return false;
-      if (getNKNMAGGJMFP()
-          != other.getNKNMAGGJMFP()) return false;
+      if (getEEFLPHPIMDL()
+          != other.getEEFLPHPIMDL()) return false;
+      if (hasDPIINFPCNEK() != other.hasDPIINFPCNEK()) return false;
+      if (hasDPIINFPCNEK()) {
+        if (!getDPIINFPCNEK()
+            .equals(other.getDPIINFPCNEK())) return false;
+      }
+      if (!getDNEEMCIDCAFList()
+          .equals(other.getDNEEMCIDCAFList())) return false;
+      if (hasFPGFCMDIABG() != other.hasFPGFCMDIABG()) return false;
+      if (hasFPGFCMDIABG()) {
+        if (!getFPGFCMDIABG()
+            .equals(other.getFPGFCMDIABG())) return false;
+      }
+      if (!diceSideList_.equals(other.diceSideList_)) return false;
+      if (getKFDOPOINLPP()
+          != other.getKFDOPOINLPP()) return false;
+      if (getADCHOFHFPPC()
+          != other.getADCHOFHFPPC()) return false;
+      if (!internalGetModifyZoneMap().equals(
+          other.internalGetModifyZoneMap())) return false;
+      if (getJAMNMKIOPEO()
+          != other.getJAMNMKIOPEO()) return false;
+      if (getIsPassed()
+          != other.getIsPassed()) return false;
+      if (hasJKEOEAIEALF() != other.hasJKEOEAIEALF()) return false;
+      if (hasJKEOEAIEALF()) {
+        if (!getJKEOEAIEALF()
+            .equals(other.getJKEOEAIEALF())) return false;
+      }
+      if (getGNKGJFHDCDI()
+          != other.getGNKGJFHDCDI()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -1508,59 +1106,55 @@ public final class GCGPlayerFieldOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ONKDMOMNGBG_FIELD_NUMBER;
-      hash = (53 * hash) + getONKDMOMNGBG();
+      hash = (37 * hash) + EMBGKGCNFPE_FIELD_NUMBER;
+      hash = (53 * hash) + getEMBGKGCNFPE();
+      if (hasPIOEBHEPAIC()) {
+        hash = (37 * hash) + PIOEBHEPAIC_FIELD_NUMBER;
+        hash = (53 * hash) + getPIOEBHEPAIC().hashCode();
+      }
+      if (hasGNCOGNIKACN()) {
+        hash = (37 * hash) + GNCOGNIKACN_FIELD_NUMBER;
+        hash = (53 * hash) + getGNCOGNIKACN().hashCode();
+      }
+      hash = (37 * hash) + CONTROLLER_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getControllerId();
+      hash = (37 * hash) + EEFLPHPIMDL_FIELD_NUMBER;
+      hash = (53 * hash) + getEEFLPHPIMDL();
+      if (hasDPIINFPCNEK()) {
+        hash = (37 * hash) + DPIINFPCNEK_FIELD_NUMBER;
+        hash = (53 * hash) + getDPIINFPCNEK().hashCode();
+      }
+      if (getDNEEMCIDCAFCount() > 0) {
+        hash = (37 * hash) + DNEEMCIDCAF_FIELD_NUMBER;
+        hash = (53 * hash) + getDNEEMCIDCAFList().hashCode();
+      }
+      if (hasFPGFCMDIABG()) {
+        hash = (37 * hash) + FPGFCMDIABG_FIELD_NUMBER;
+        hash = (53 * hash) + getFPGFCMDIABG().hashCode();
+      }
       if (getDiceSideListCount() > 0) {
         hash = (37 * hash) + DICE_SIDE_LIST_FIELD_NUMBER;
         hash = (53 * hash) + diceSideList_.hashCode();
       }
-      hash = (37 * hash) + CARD_BACK_SHOW_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCardBackShowId();
-      if (getIntentionListCount() > 0) {
-        hash = (37 * hash) + INTENTION_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getIntentionListList().hashCode();
-      }
-      if (getWaitingListCount() > 0) {
-        hash = (37 * hash) + WAITING_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getWaitingListList().hashCode();
-      }
-      hash = (37 * hash) + IS_PASSED_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsPassed());
-      hash = (37 * hash) + FIELD_SHOW_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getFieldShowId();
-      hash = (37 * hash) + DECK_CARD_NUM_FIELD_NUMBER;
-      hash = (53 * hash) + getDeckCardNum();
-      hash = (37 * hash) + AGPFPMEDGKI_FIELD_NUMBER;
-      hash = (53 * hash) + getAGPFPMEDGKI();
-      if (hasKOIGNIFNCMI()) {
-        hash = (37 * hash) + KOIGNIFNCMI_FIELD_NUMBER;
-        hash = (53 * hash) + getKOIGNIFNCMI().hashCode();
-      }
-      if (hasCharacterZone()) {
-        hash = (37 * hash) + CHARACTER_ZONE_FIELD_NUMBER;
-        hash = (53 * hash) + getCharacterZone().hashCode();
-      }
-      if (hasJLPLPDNEFJA()) {
-        hash = (37 * hash) + JLPLPDNEFJA_FIELD_NUMBER;
-        hash = (53 * hash) + getJLPLPDNEFJA().hashCode();
-      }
-      if (hasDIFHGPIAFNK()) {
-        hash = (37 * hash) + DIFHGPIAFNK_FIELD_NUMBER;
-        hash = (53 * hash) + getDIFHGPIAFNK().hashCode();
-      }
+      hash = (37 * hash) + KFDOPOINLPP_FIELD_NUMBER;
+      hash = (53 * hash) + getKFDOPOINLPP();
+      hash = (37 * hash) + ADCHOFHFPPC_FIELD_NUMBER;
+      hash = (53 * hash) + getADCHOFHFPPC();
       if (!internalGetModifyZoneMap().getMap().isEmpty()) {
         hash = (37 * hash) + MODIFY_ZONE_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetModifyZoneMap().hashCode();
       }
-      if (hasCGBIBGGMGEF()) {
-        hash = (37 * hash) + CGBIBGGMGEF_FIELD_NUMBER;
-        hash = (53 * hash) + getCGBIBGGMGEF().hashCode();
+      hash = (37 * hash) + JAMNMKIOPEO_FIELD_NUMBER;
+      hash = (53 * hash) + getJAMNMKIOPEO();
+      hash = (37 * hash) + IS_PASSED_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsPassed());
+      if (hasJKEOEAIEALF()) {
+        hash = (37 * hash) + JKEOEAIEALF_FIELD_NUMBER;
+        hash = (53 * hash) + getJKEOEAIEALF().hashCode();
       }
-      hash = (37 * hash) + CONTROLLER_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getControllerId();
-      hash = (37 * hash) + NKNMAGGJMFP_FIELD_NUMBER;
-      hash = (53 * hash) + getNKNMAGGJMFP();
+      hash = (37 * hash) + GNKGJFHDCDI_FIELD_NUMBER;
+      hash = (53 * hash) + getGNKGJFHDCDI();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -1658,7 +1252,7 @@ public final class GCGPlayerFieldOuterClass {
     }
     /**
      * <pre>
-     * Name: AHGODAFKPIM
+     * Obf: CEGEHEEFNLJ
      * </pre>
      *
      * Protobuf type {@code GCGPlayerField}
@@ -1676,7 +1270,7 @@ public final class GCGPlayerFieldOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 8:
+          case 1:
             return internalGetModifyZoneMap();
           default:
             throw new RuntimeException(
@@ -1687,7 +1281,7 @@ public final class GCGPlayerFieldOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 8:
+          case 1:
             return internalGetMutableModifyZoneMap();
           default:
             throw new RuntimeException(
@@ -1715,73 +1309,66 @@ public final class GCGPlayerFieldOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getIntentionListFieldBuilder();
-          getWaitingListFieldBuilder();
+          getDNEEMCIDCAFFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        oNKDMOMNGBG_ = 0;
+        eMBGKGCNFPE_ = 0;
 
-        diceSideList_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        cardBackShowId_ = 0;
-
-        if (intentionListBuilder_ == null) {
-          intentionList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+        if (pIOEBHEPAICBuilder_ == null) {
+          pIOEBHEPAIC_ = null;
         } else {
-          intentionListBuilder_.clear();
+          pIOEBHEPAIC_ = null;
+          pIOEBHEPAICBuilder_ = null;
         }
-        if (waitingListBuilder_ == null) {
-          waitingList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
+        if (gNCOGNIKACNBuilder_ == null) {
+          gNCOGNIKACN_ = null;
         } else {
-          waitingListBuilder_.clear();
-        }
-        isPassed_ = false;
-
-        fieldShowId_ = 0;
-
-        deckCardNum_ = 0;
-
-        aGPFPMEDGKI_ = 0;
-
-        if (kOIGNIFNCMIBuilder_ == null) {
-          kOIGNIFNCMI_ = null;
-        } else {
-          kOIGNIFNCMI_ = null;
-          kOIGNIFNCMIBuilder_ = null;
-        }
-        if (characterZoneBuilder_ == null) {
-          characterZone_ = null;
-        } else {
-          characterZone_ = null;
-          characterZoneBuilder_ = null;
-        }
-        if (jLPLPDNEFJABuilder_ == null) {
-          jLPLPDNEFJA_ = null;
-        } else {
-          jLPLPDNEFJA_ = null;
-          jLPLPDNEFJABuilder_ = null;
-        }
-        if (dIFHGPIAFNKBuilder_ == null) {
-          dIFHGPIAFNK_ = null;
-        } else {
-          dIFHGPIAFNK_ = null;
-          dIFHGPIAFNKBuilder_ = null;
-        }
-        internalGetMutableModifyZoneMap().clear();
-        if (cGBIBGGMGEFBuilder_ == null) {
-          cGBIBGGMGEF_ = null;
-        } else {
-          cGBIBGGMGEF_ = null;
-          cGBIBGGMGEFBuilder_ = null;
+          gNCOGNIKACN_ = null;
+          gNCOGNIKACNBuilder_ = null;
         }
         controllerId_ = 0;
 
-        nKNMAGGJMFP_ = 0;
+        eEFLPHPIMDL_ = 0;
+
+        if (dPIINFPCNEKBuilder_ == null) {
+          dPIINFPCNEK_ = null;
+        } else {
+          dPIINFPCNEK_ = null;
+          dPIINFPCNEKBuilder_ = null;
+        }
+        if (dNEEMCIDCAFBuilder_ == null) {
+          dNEEMCIDCAF_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          dNEEMCIDCAFBuilder_.clear();
+        }
+        if (fPGFCMDIABGBuilder_ == null) {
+          fPGFCMDIABG_ = null;
+        } else {
+          fPGFCMDIABG_ = null;
+          fPGFCMDIABGBuilder_ = null;
+        }
+        diceSideList_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        kFDOPOINLPP_ = 0;
+
+        aDCHOFHFPPC_ = 0;
+
+        internalGetMutableModifyZoneMap().clear();
+        jAMNMKIOPEO_ = 0;
+
+        isPassed_ = false;
+
+        if (jKEOEAIEALFBuilder_ == null) {
+          jKEOEAIEALF_ = null;
+        } else {
+          jKEOEAIEALF_ = null;
+          jKEOEAIEALFBuilder_ = null;
+        }
+        gNKGJFHDCDI_ = 0;
 
         return this;
       }
@@ -1810,64 +1397,55 @@ public final class GCGPlayerFieldOuterClass {
       public emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField buildPartial() {
         emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField result = new emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField(this);
         int from_bitField0_ = bitField0_;
-        result.oNKDMOMNGBG_ = oNKDMOMNGBG_;
-        if (((bitField0_ & 0x00000001) != 0)) {
-          diceSideList_ = java.util.Collections.unmodifiableList(diceSideList_);
-          bitField0_ = (bitField0_ & ~0x00000001);
-        }
-        result.diceSideList_ = diceSideList_;
-        result.cardBackShowId_ = cardBackShowId_;
-        if (intentionListBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) != 0)) {
-            intentionList_ = java.util.Collections.unmodifiableList(intentionList_);
-            bitField0_ = (bitField0_ & ~0x00000002);
-          }
-          result.intentionList_ = intentionList_;
+        result.eMBGKGCNFPE_ = eMBGKGCNFPE_;
+        if (pIOEBHEPAICBuilder_ == null) {
+          result.pIOEBHEPAIC_ = pIOEBHEPAIC_;
         } else {
-          result.intentionList_ = intentionListBuilder_.build();
+          result.pIOEBHEPAIC_ = pIOEBHEPAICBuilder_.build();
         }
-        if (waitingListBuilder_ == null) {
-          if (((bitField0_ & 0x00000004) != 0)) {
-            waitingList_ = java.util.Collections.unmodifiableList(waitingList_);
-            bitField0_ = (bitField0_ & ~0x00000004);
-          }
-          result.waitingList_ = waitingList_;
+        if (gNCOGNIKACNBuilder_ == null) {
+          result.gNCOGNIKACN_ = gNCOGNIKACN_;
         } else {
-          result.waitingList_ = waitingListBuilder_.build();
-        }
-        result.isPassed_ = isPassed_;
-        result.fieldShowId_ = fieldShowId_;
-        result.deckCardNum_ = deckCardNum_;
-        result.aGPFPMEDGKI_ = aGPFPMEDGKI_;
-        if (kOIGNIFNCMIBuilder_ == null) {
-          result.kOIGNIFNCMI_ = kOIGNIFNCMI_;
-        } else {
-          result.kOIGNIFNCMI_ = kOIGNIFNCMIBuilder_.build();
-        }
-        if (characterZoneBuilder_ == null) {
-          result.characterZone_ = characterZone_;
-        } else {
-          result.characterZone_ = characterZoneBuilder_.build();
-        }
-        if (jLPLPDNEFJABuilder_ == null) {
-          result.jLPLPDNEFJA_ = jLPLPDNEFJA_;
-        } else {
-          result.jLPLPDNEFJA_ = jLPLPDNEFJABuilder_.build();
-        }
-        if (dIFHGPIAFNKBuilder_ == null) {
-          result.dIFHGPIAFNK_ = dIFHGPIAFNK_;
-        } else {
-          result.dIFHGPIAFNK_ = dIFHGPIAFNKBuilder_.build();
-        }
-        result.modifyZoneMap_ = internalGetModifyZoneMap();
-        result.modifyZoneMap_.makeImmutable();
-        if (cGBIBGGMGEFBuilder_ == null) {
-          result.cGBIBGGMGEF_ = cGBIBGGMGEF_;
-        } else {
-          result.cGBIBGGMGEF_ = cGBIBGGMGEFBuilder_.build();
+          result.gNCOGNIKACN_ = gNCOGNIKACNBuilder_.build();
         }
         result.controllerId_ = controllerId_;
-        result.nKNMAGGJMFP_ = nKNMAGGJMFP_;
+        result.eEFLPHPIMDL_ = eEFLPHPIMDL_;
+        if (dPIINFPCNEKBuilder_ == null) {
+          result.dPIINFPCNEK_ = dPIINFPCNEK_;
+        } else {
+          result.dPIINFPCNEK_ = dPIINFPCNEKBuilder_.build();
+        }
+        if (dNEEMCIDCAFBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) != 0)) {
+            dNEEMCIDCAF_ = java.util.Collections.unmodifiableList(dNEEMCIDCAF_);
+            bitField0_ = (bitField0_ & ~0x00000001);
+          }
+          result.dNEEMCIDCAF_ = dNEEMCIDCAF_;
+        } else {
+          result.dNEEMCIDCAF_ = dNEEMCIDCAFBuilder_.build();
+        }
+        if (fPGFCMDIABGBuilder_ == null) {
+          result.fPGFCMDIABG_ = fPGFCMDIABG_;
+        } else {
+          result.fPGFCMDIABG_ = fPGFCMDIABGBuilder_.build();
+        }
+        if (((bitField0_ & 0x00000002) != 0)) {
+          diceSideList_ = java.util.Collections.unmodifiableList(diceSideList_);
+          bitField0_ = (bitField0_ & ~0x00000002);
+        }
+        result.diceSideList_ = diceSideList_;
+        result.kFDOPOINLPP_ = kFDOPOINLPP_;
+        result.aDCHOFHFPPC_ = aDCHOFHFPPC_;
+        result.modifyZoneMap_ = internalGetModifyZoneMap();
+        result.modifyZoneMap_.makeImmutable();
+        result.jAMNMKIOPEO_ = jAMNMKIOPEO_;
+        result.isPassed_ = isPassed_;
+        if (jKEOEAIEALFBuilder_ == null) {
+          result.jKEOEAIEALF_ = jKEOEAIEALF_;
+        } else {
+          result.jKEOEAIEALF_ = jKEOEAIEALFBuilder_.build();
+        }
+        result.gNKGJFHDCDI_ = gNKGJFHDCDI_;
         onBuilt();
         return result;
       }
@@ -1916,108 +1494,82 @@ public final class GCGPlayerFieldOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField other) {
         if (other == emu.grasscutter.net.proto.GCGPlayerFieldOuterClass.GCGPlayerField.getDefaultInstance()) return this;
-        if (other.getONKDMOMNGBG() != 0) {
-          setONKDMOMNGBG(other.getONKDMOMNGBG());
+        if (other.getEMBGKGCNFPE() != 0) {
+          setEMBGKGCNFPE(other.getEMBGKGCNFPE());
+        }
+        if (other.hasPIOEBHEPAIC()) {
+          mergePIOEBHEPAIC(other.getPIOEBHEPAIC());
+        }
+        if (other.hasGNCOGNIKACN()) {
+          mergeGNCOGNIKACN(other.getGNCOGNIKACN());
+        }
+        if (other.getControllerId() != 0) {
+          setControllerId(other.getControllerId());
+        }
+        if (other.getEEFLPHPIMDL() != 0) {
+          setEEFLPHPIMDL(other.getEEFLPHPIMDL());
+        }
+        if (other.hasDPIINFPCNEK()) {
+          mergeDPIINFPCNEK(other.getDPIINFPCNEK());
+        }
+        if (dNEEMCIDCAFBuilder_ == null) {
+          if (!other.dNEEMCIDCAF_.isEmpty()) {
+            if (dNEEMCIDCAF_.isEmpty()) {
+              dNEEMCIDCAF_ = other.dNEEMCIDCAF_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+            } else {
+              ensureDNEEMCIDCAFIsMutable();
+              dNEEMCIDCAF_.addAll(other.dNEEMCIDCAF_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.dNEEMCIDCAF_.isEmpty()) {
+            if (dNEEMCIDCAFBuilder_.isEmpty()) {
+              dNEEMCIDCAFBuilder_.dispose();
+              dNEEMCIDCAFBuilder_ = null;
+              dNEEMCIDCAF_ = other.dNEEMCIDCAF_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+              dNEEMCIDCAFBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getDNEEMCIDCAFFieldBuilder() : null;
+            } else {
+              dNEEMCIDCAFBuilder_.addAllMessages(other.dNEEMCIDCAF_);
+            }
+          }
+        }
+        if (other.hasFPGFCMDIABG()) {
+          mergeFPGFCMDIABG(other.getFPGFCMDIABG());
         }
         if (!other.diceSideList_.isEmpty()) {
           if (diceSideList_.isEmpty()) {
             diceSideList_ = other.diceSideList_;
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000002);
           } else {
             ensureDiceSideListIsMutable();
             diceSideList_.addAll(other.diceSideList_);
           }
           onChanged();
         }
-        if (other.getCardBackShowId() != 0) {
-          setCardBackShowId(other.getCardBackShowId());
+        if (other.getKFDOPOINLPP() != 0) {
+          setKFDOPOINLPP(other.getKFDOPOINLPP());
         }
-        if (intentionListBuilder_ == null) {
-          if (!other.intentionList_.isEmpty()) {
-            if (intentionList_.isEmpty()) {
-              intentionList_ = other.intentionList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
-            } else {
-              ensureIntentionListIsMutable();
-              intentionList_.addAll(other.intentionList_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.intentionList_.isEmpty()) {
-            if (intentionListBuilder_.isEmpty()) {
-              intentionListBuilder_.dispose();
-              intentionListBuilder_ = null;
-              intentionList_ = other.intentionList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
-              intentionListBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getIntentionListFieldBuilder() : null;
-            } else {
-              intentionListBuilder_.addAllMessages(other.intentionList_);
-            }
-          }
+        if (other.getADCHOFHFPPC() != 0) {
+          setADCHOFHFPPC(other.getADCHOFHFPPC());
         }
-        if (waitingListBuilder_ == null) {
-          if (!other.waitingList_.isEmpty()) {
-            if (waitingList_.isEmpty()) {
-              waitingList_ = other.waitingList_;
-              bitField0_ = (bitField0_ & ~0x00000004);
-            } else {
-              ensureWaitingListIsMutable();
-              waitingList_.addAll(other.waitingList_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.waitingList_.isEmpty()) {
-            if (waitingListBuilder_.isEmpty()) {
-              waitingListBuilder_.dispose();
-              waitingListBuilder_ = null;
-              waitingList_ = other.waitingList_;
-              bitField0_ = (bitField0_ & ~0x00000004);
-              waitingListBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getWaitingListFieldBuilder() : null;
-            } else {
-              waitingListBuilder_.addAllMessages(other.waitingList_);
-            }
-          }
+        internalGetMutableModifyZoneMap().mergeFrom(
+            other.internalGetModifyZoneMap());
+        if (other.getJAMNMKIOPEO() != 0) {
+          setJAMNMKIOPEO(other.getJAMNMKIOPEO());
         }
         if (other.getIsPassed() != false) {
           setIsPassed(other.getIsPassed());
         }
-        if (other.getFieldShowId() != 0) {
-          setFieldShowId(other.getFieldShowId());
+        if (other.hasJKEOEAIEALF()) {
+          mergeJKEOEAIEALF(other.getJKEOEAIEALF());
         }
-        if (other.getDeckCardNum() != 0) {
-          setDeckCardNum(other.getDeckCardNum());
-        }
-        if (other.getAGPFPMEDGKI() != 0) {
-          setAGPFPMEDGKI(other.getAGPFPMEDGKI());
-        }
-        if (other.hasKOIGNIFNCMI()) {
-          mergeKOIGNIFNCMI(other.getKOIGNIFNCMI());
-        }
-        if (other.hasCharacterZone()) {
-          mergeCharacterZone(other.getCharacterZone());
-        }
-        if (other.hasJLPLPDNEFJA()) {
-          mergeJLPLPDNEFJA(other.getJLPLPDNEFJA());
-        }
-        if (other.hasDIFHGPIAFNK()) {
-          mergeDIFHGPIAFNK(other.getDIFHGPIAFNK());
-        }
-        internalGetMutableModifyZoneMap().mergeFrom(
-            other.internalGetModifyZoneMap());
-        if (other.hasCGBIBGGMGEF()) {
-          mergeCGBIBGGMGEF(other.getCGBIBGGMGEF());
-        }
-        if (other.getControllerId() != 0) {
-          setControllerId(other.getControllerId());
-        }
-        if (other.getNKNMAGGJMFP() != 0) {
-          setNKNMAGGJMFP(other.getNKNMAGGJMFP());
+        if (other.getGNKGJFHDCDI() != 0) {
+          setGNKGJFHDCDI(other.getGNKGJFHDCDI());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -2049,51 +1601,825 @@ public final class GCGPlayerFieldOuterClass {
       }
       private int bitField0_;
 
-      private int oNKDMOMNGBG_ ;
+      private int eMBGKGCNFPE_ ;
       /**
-       * <code>uint32 ONKDMOMNGBG = 824;</code>
-       * @return The oNKDMOMNGBG.
+       * <code>uint32 EMBGKGCNFPE = 4;</code>
+       * @return The eMBGKGCNFPE.
        */
       @java.lang.Override
-      public int getONKDMOMNGBG() {
-        return oNKDMOMNGBG_;
+      public int getEMBGKGCNFPE() {
+        return eMBGKGCNFPE_;
       }
       /**
-       * <code>uint32 ONKDMOMNGBG = 824;</code>
-       * @param value The oNKDMOMNGBG to set.
+       * <code>uint32 EMBGKGCNFPE = 4;</code>
+       * @param value The eMBGKGCNFPE to set.
        * @return This builder for chaining.
        */
-      public Builder setONKDMOMNGBG(int value) {
+      public Builder setEMBGKGCNFPE(int value) {
         
-        oNKDMOMNGBG_ = value;
+        eMBGKGCNFPE_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 ONKDMOMNGBG = 824;</code>
+       * <code>uint32 EMBGKGCNFPE = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearONKDMOMNGBG() {
+      public Builder clearEMBGKGCNFPE() {
         
-        oNKDMOMNGBG_ = 0;
+        eMBGKGCNFPE_ = 0;
         onChanged();
         return this;
+      }
+
+      private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone pIOEBHEPAIC_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> pIOEBHEPAICBuilder_;
+      /**
+       * <code>.GCGZone PIOEBHEPAIC = 6;</code>
+       * @return Whether the pIOEBHEPAIC field is set.
+       */
+      public boolean hasPIOEBHEPAIC() {
+        return pIOEBHEPAICBuilder_ != null || pIOEBHEPAIC_ != null;
+      }
+      /**
+       * <code>.GCGZone PIOEBHEPAIC = 6;</code>
+       * @return The pIOEBHEPAIC.
+       */
+      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getPIOEBHEPAIC() {
+        if (pIOEBHEPAICBuilder_ == null) {
+          return pIOEBHEPAIC_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : pIOEBHEPAIC_;
+        } else {
+          return pIOEBHEPAICBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.GCGZone PIOEBHEPAIC = 6;</code>
+       */
+      public Builder setPIOEBHEPAIC(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
+        if (pIOEBHEPAICBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          pIOEBHEPAIC_ = value;
+          onChanged();
+        } else {
+          pIOEBHEPAICBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.GCGZone PIOEBHEPAIC = 6;</code>
+       */
+      public Builder setPIOEBHEPAIC(
+          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder builderForValue) {
+        if (pIOEBHEPAICBuilder_ == null) {
+          pIOEBHEPAIC_ = builderForValue.build();
+          onChanged();
+        } else {
+          pIOEBHEPAICBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.GCGZone PIOEBHEPAIC = 6;</code>
+       */
+      public Builder mergePIOEBHEPAIC(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
+        if (pIOEBHEPAICBuilder_ == null) {
+          if (pIOEBHEPAIC_ != null) {
+            pIOEBHEPAIC_ =
+              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.newBuilder(pIOEBHEPAIC_).mergeFrom(value).buildPartial();
+          } else {
+            pIOEBHEPAIC_ = value;
+          }
+          onChanged();
+        } else {
+          pIOEBHEPAICBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.GCGZone PIOEBHEPAIC = 6;</code>
+       */
+      public Builder clearPIOEBHEPAIC() {
+        if (pIOEBHEPAICBuilder_ == null) {
+          pIOEBHEPAIC_ = null;
+          onChanged();
+        } else {
+          pIOEBHEPAIC_ = null;
+          pIOEBHEPAICBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.GCGZone PIOEBHEPAIC = 6;</code>
+       */
+      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder getPIOEBHEPAICBuilder() {
+        
+        onChanged();
+        return getPIOEBHEPAICFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.GCGZone PIOEBHEPAIC = 6;</code>
+       */
+      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getPIOEBHEPAICOrBuilder() {
+        if (pIOEBHEPAICBuilder_ != null) {
+          return pIOEBHEPAICBuilder_.getMessageOrBuilder();
+        } else {
+          return pIOEBHEPAIC_ == null ?
+              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : pIOEBHEPAIC_;
+        }
+      }
+      /**
+       * <code>.GCGZone PIOEBHEPAIC = 6;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> 
+          getPIOEBHEPAICFieldBuilder() {
+        if (pIOEBHEPAICBuilder_ == null) {
+          pIOEBHEPAICBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder>(
+                  getPIOEBHEPAIC(),
+                  getParentForChildren(),
+                  isClean());
+          pIOEBHEPAIC_ = null;
+        }
+        return pIOEBHEPAICBuilder_;
+      }
+
+      private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone gNCOGNIKACN_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> gNCOGNIKACNBuilder_;
+      /**
+       * <code>.GCGZone GNCOGNIKACN = 11;</code>
+       * @return Whether the gNCOGNIKACN field is set.
+       */
+      public boolean hasGNCOGNIKACN() {
+        return gNCOGNIKACNBuilder_ != null || gNCOGNIKACN_ != null;
+      }
+      /**
+       * <code>.GCGZone GNCOGNIKACN = 11;</code>
+       * @return The gNCOGNIKACN.
+       */
+      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getGNCOGNIKACN() {
+        if (gNCOGNIKACNBuilder_ == null) {
+          return gNCOGNIKACN_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : gNCOGNIKACN_;
+        } else {
+          return gNCOGNIKACNBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.GCGZone GNCOGNIKACN = 11;</code>
+       */
+      public Builder setGNCOGNIKACN(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
+        if (gNCOGNIKACNBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          gNCOGNIKACN_ = value;
+          onChanged();
+        } else {
+          gNCOGNIKACNBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.GCGZone GNCOGNIKACN = 11;</code>
+       */
+      public Builder setGNCOGNIKACN(
+          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder builderForValue) {
+        if (gNCOGNIKACNBuilder_ == null) {
+          gNCOGNIKACN_ = builderForValue.build();
+          onChanged();
+        } else {
+          gNCOGNIKACNBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.GCGZone GNCOGNIKACN = 11;</code>
+       */
+      public Builder mergeGNCOGNIKACN(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
+        if (gNCOGNIKACNBuilder_ == null) {
+          if (gNCOGNIKACN_ != null) {
+            gNCOGNIKACN_ =
+              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.newBuilder(gNCOGNIKACN_).mergeFrom(value).buildPartial();
+          } else {
+            gNCOGNIKACN_ = value;
+          }
+          onChanged();
+        } else {
+          gNCOGNIKACNBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.GCGZone GNCOGNIKACN = 11;</code>
+       */
+      public Builder clearGNCOGNIKACN() {
+        if (gNCOGNIKACNBuilder_ == null) {
+          gNCOGNIKACN_ = null;
+          onChanged();
+        } else {
+          gNCOGNIKACN_ = null;
+          gNCOGNIKACNBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.GCGZone GNCOGNIKACN = 11;</code>
+       */
+      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder getGNCOGNIKACNBuilder() {
+        
+        onChanged();
+        return getGNCOGNIKACNFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.GCGZone GNCOGNIKACN = 11;</code>
+       */
+      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getGNCOGNIKACNOrBuilder() {
+        if (gNCOGNIKACNBuilder_ != null) {
+          return gNCOGNIKACNBuilder_.getMessageOrBuilder();
+        } else {
+          return gNCOGNIKACN_ == null ?
+              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : gNCOGNIKACN_;
+        }
+      }
+      /**
+       * <code>.GCGZone GNCOGNIKACN = 11;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> 
+          getGNCOGNIKACNFieldBuilder() {
+        if (gNCOGNIKACNBuilder_ == null) {
+          gNCOGNIKACNBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder>(
+                  getGNCOGNIKACN(),
+                  getParentForChildren(),
+                  isClean());
+          gNCOGNIKACN_ = null;
+        }
+        return gNCOGNIKACNBuilder_;
+      }
+
+      private int controllerId_ ;
+      /**
+       * <code>uint32 controller_id = 10;</code>
+       * @return The controllerId.
+       */
+      @java.lang.Override
+      public int getControllerId() {
+        return controllerId_;
+      }
+      /**
+       * <code>uint32 controller_id = 10;</code>
+       * @param value The controllerId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setControllerId(int value) {
+        
+        controllerId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 controller_id = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearControllerId() {
+        
+        controllerId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int eEFLPHPIMDL_ ;
+      /**
+       * <code>uint32 EEFLPHPIMDL = 12;</code>
+       * @return The eEFLPHPIMDL.
+       */
+      @java.lang.Override
+      public int getEEFLPHPIMDL() {
+        return eEFLPHPIMDL_;
+      }
+      /**
+       * <code>uint32 EEFLPHPIMDL = 12;</code>
+       * @param value The eEFLPHPIMDL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEEFLPHPIMDL(int value) {
+        
+        eEFLPHPIMDL_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 EEFLPHPIMDL = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEEFLPHPIMDL() {
+        
+        eEFLPHPIMDL_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone dPIINFPCNEK_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> dPIINFPCNEKBuilder_;
+      /**
+       * <code>.GCGZone DPIINFPCNEK = 8;</code>
+       * @return Whether the dPIINFPCNEK field is set.
+       */
+      public boolean hasDPIINFPCNEK() {
+        return dPIINFPCNEKBuilder_ != null || dPIINFPCNEK_ != null;
+      }
+      /**
+       * <code>.GCGZone DPIINFPCNEK = 8;</code>
+       * @return The dPIINFPCNEK.
+       */
+      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getDPIINFPCNEK() {
+        if (dPIINFPCNEKBuilder_ == null) {
+          return dPIINFPCNEK_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : dPIINFPCNEK_;
+        } else {
+          return dPIINFPCNEKBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.GCGZone DPIINFPCNEK = 8;</code>
+       */
+      public Builder setDPIINFPCNEK(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
+        if (dPIINFPCNEKBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          dPIINFPCNEK_ = value;
+          onChanged();
+        } else {
+          dPIINFPCNEKBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.GCGZone DPIINFPCNEK = 8;</code>
+       */
+      public Builder setDPIINFPCNEK(
+          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder builderForValue) {
+        if (dPIINFPCNEKBuilder_ == null) {
+          dPIINFPCNEK_ = builderForValue.build();
+          onChanged();
+        } else {
+          dPIINFPCNEKBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.GCGZone DPIINFPCNEK = 8;</code>
+       */
+      public Builder mergeDPIINFPCNEK(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
+        if (dPIINFPCNEKBuilder_ == null) {
+          if (dPIINFPCNEK_ != null) {
+            dPIINFPCNEK_ =
+              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.newBuilder(dPIINFPCNEK_).mergeFrom(value).buildPartial();
+          } else {
+            dPIINFPCNEK_ = value;
+          }
+          onChanged();
+        } else {
+          dPIINFPCNEKBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.GCGZone DPIINFPCNEK = 8;</code>
+       */
+      public Builder clearDPIINFPCNEK() {
+        if (dPIINFPCNEKBuilder_ == null) {
+          dPIINFPCNEK_ = null;
+          onChanged();
+        } else {
+          dPIINFPCNEK_ = null;
+          dPIINFPCNEKBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.GCGZone DPIINFPCNEK = 8;</code>
+       */
+      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder getDPIINFPCNEKBuilder() {
+        
+        onChanged();
+        return getDPIINFPCNEKFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.GCGZone DPIINFPCNEK = 8;</code>
+       */
+      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getDPIINFPCNEKOrBuilder() {
+        if (dPIINFPCNEKBuilder_ != null) {
+          return dPIINFPCNEKBuilder_.getMessageOrBuilder();
+        } else {
+          return dPIINFPCNEK_ == null ?
+              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : dPIINFPCNEK_;
+        }
+      }
+      /**
+       * <code>.GCGZone DPIINFPCNEK = 8;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> 
+          getDPIINFPCNEKFieldBuilder() {
+        if (dPIINFPCNEKBuilder_ == null) {
+          dPIINFPCNEKBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder>(
+                  getDPIINFPCNEK(),
+                  getParentForChildren(),
+                  isClean());
+          dPIINFPCNEK_ = null;
+        }
+        return dPIINFPCNEKBuilder_;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHE> dNEEMCIDCAF_ =
+        java.util.Collections.emptyList();
+      private void ensureDNEEMCIDCAFIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          dNEEMCIDCAF_ = new java.util.ArrayList<emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHE>(dNEEMCIDCAF_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHE, emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHE.Builder, emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHEOrBuilder> dNEEMCIDCAFBuilder_;
+
+      /**
+       * <code>repeated .GABNJIGBIHE DNEEMCIDCAF = 2;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHE> getDNEEMCIDCAFList() {
+        if (dNEEMCIDCAFBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(dNEEMCIDCAF_);
+        } else {
+          return dNEEMCIDCAFBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .GABNJIGBIHE DNEEMCIDCAF = 2;</code>
+       */
+      public int getDNEEMCIDCAFCount() {
+        if (dNEEMCIDCAFBuilder_ == null) {
+          return dNEEMCIDCAF_.size();
+        } else {
+          return dNEEMCIDCAFBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .GABNJIGBIHE DNEEMCIDCAF = 2;</code>
+       */
+      public emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHE getDNEEMCIDCAF(int index) {
+        if (dNEEMCIDCAFBuilder_ == null) {
+          return dNEEMCIDCAF_.get(index);
+        } else {
+          return dNEEMCIDCAFBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .GABNJIGBIHE DNEEMCIDCAF = 2;</code>
+       */
+      public Builder setDNEEMCIDCAF(
+          int index, emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHE value) {
+        if (dNEEMCIDCAFBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureDNEEMCIDCAFIsMutable();
+          dNEEMCIDCAF_.set(index, value);
+          onChanged();
+        } else {
+          dNEEMCIDCAFBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GABNJIGBIHE DNEEMCIDCAF = 2;</code>
+       */
+      public Builder setDNEEMCIDCAF(
+          int index, emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHE.Builder builderForValue) {
+        if (dNEEMCIDCAFBuilder_ == null) {
+          ensureDNEEMCIDCAFIsMutable();
+          dNEEMCIDCAF_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          dNEEMCIDCAFBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GABNJIGBIHE DNEEMCIDCAF = 2;</code>
+       */
+      public Builder addDNEEMCIDCAF(emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHE value) {
+        if (dNEEMCIDCAFBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureDNEEMCIDCAFIsMutable();
+          dNEEMCIDCAF_.add(value);
+          onChanged();
+        } else {
+          dNEEMCIDCAFBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GABNJIGBIHE DNEEMCIDCAF = 2;</code>
+       */
+      public Builder addDNEEMCIDCAF(
+          int index, emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHE value) {
+        if (dNEEMCIDCAFBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureDNEEMCIDCAFIsMutable();
+          dNEEMCIDCAF_.add(index, value);
+          onChanged();
+        } else {
+          dNEEMCIDCAFBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GABNJIGBIHE DNEEMCIDCAF = 2;</code>
+       */
+      public Builder addDNEEMCIDCAF(
+          emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHE.Builder builderForValue) {
+        if (dNEEMCIDCAFBuilder_ == null) {
+          ensureDNEEMCIDCAFIsMutable();
+          dNEEMCIDCAF_.add(builderForValue.build());
+          onChanged();
+        } else {
+          dNEEMCIDCAFBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GABNJIGBIHE DNEEMCIDCAF = 2;</code>
+       */
+      public Builder addDNEEMCIDCAF(
+          int index, emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHE.Builder builderForValue) {
+        if (dNEEMCIDCAFBuilder_ == null) {
+          ensureDNEEMCIDCAFIsMutable();
+          dNEEMCIDCAF_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          dNEEMCIDCAFBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GABNJIGBIHE DNEEMCIDCAF = 2;</code>
+       */
+      public Builder addAllDNEEMCIDCAF(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHE> values) {
+        if (dNEEMCIDCAFBuilder_ == null) {
+          ensureDNEEMCIDCAFIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, dNEEMCIDCAF_);
+          onChanged();
+        } else {
+          dNEEMCIDCAFBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GABNJIGBIHE DNEEMCIDCAF = 2;</code>
+       */
+      public Builder clearDNEEMCIDCAF() {
+        if (dNEEMCIDCAFBuilder_ == null) {
+          dNEEMCIDCAF_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          dNEEMCIDCAFBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GABNJIGBIHE DNEEMCIDCAF = 2;</code>
+       */
+      public Builder removeDNEEMCIDCAF(int index) {
+        if (dNEEMCIDCAFBuilder_ == null) {
+          ensureDNEEMCIDCAFIsMutable();
+          dNEEMCIDCAF_.remove(index);
+          onChanged();
+        } else {
+          dNEEMCIDCAFBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .GABNJIGBIHE DNEEMCIDCAF = 2;</code>
+       */
+      public emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHE.Builder getDNEEMCIDCAFBuilder(
+          int index) {
+        return getDNEEMCIDCAFFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .GABNJIGBIHE DNEEMCIDCAF = 2;</code>
+       */
+      public emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHEOrBuilder getDNEEMCIDCAFOrBuilder(
+          int index) {
+        if (dNEEMCIDCAFBuilder_ == null) {
+          return dNEEMCIDCAF_.get(index);  } else {
+          return dNEEMCIDCAFBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .GABNJIGBIHE DNEEMCIDCAF = 2;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHEOrBuilder> 
+           getDNEEMCIDCAFOrBuilderList() {
+        if (dNEEMCIDCAFBuilder_ != null) {
+          return dNEEMCIDCAFBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(dNEEMCIDCAF_);
+        }
+      }
+      /**
+       * <code>repeated .GABNJIGBIHE DNEEMCIDCAF = 2;</code>
+       */
+      public emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHE.Builder addDNEEMCIDCAFBuilder() {
+        return getDNEEMCIDCAFFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHE.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .GABNJIGBIHE DNEEMCIDCAF = 2;</code>
+       */
+      public emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHE.Builder addDNEEMCIDCAFBuilder(
+          int index) {
+        return getDNEEMCIDCAFFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHE.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .GABNJIGBIHE DNEEMCIDCAF = 2;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHE.Builder> 
+           getDNEEMCIDCAFBuilderList() {
+        return getDNEEMCIDCAFFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHE, emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHE.Builder, emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHEOrBuilder> 
+          getDNEEMCIDCAFFieldBuilder() {
+        if (dNEEMCIDCAFBuilder_ == null) {
+          dNEEMCIDCAFBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHE, emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHE.Builder, emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.GABNJIGBIHEOrBuilder>(
+                  dNEEMCIDCAF_,
+                  ((bitField0_ & 0x00000001) != 0),
+                  getParentForChildren(),
+                  isClean());
+          dNEEMCIDCAF_ = null;
+        }
+        return dNEEMCIDCAFBuilder_;
+      }
+
+      private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone fPGFCMDIABG_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> fPGFCMDIABGBuilder_;
+      /**
+       * <code>.GCGZone FPGFCMDIABG = 15;</code>
+       * @return Whether the fPGFCMDIABG field is set.
+       */
+      public boolean hasFPGFCMDIABG() {
+        return fPGFCMDIABGBuilder_ != null || fPGFCMDIABG_ != null;
+      }
+      /**
+       * <code>.GCGZone FPGFCMDIABG = 15;</code>
+       * @return The fPGFCMDIABG.
+       */
+      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getFPGFCMDIABG() {
+        if (fPGFCMDIABGBuilder_ == null) {
+          return fPGFCMDIABG_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : fPGFCMDIABG_;
+        } else {
+          return fPGFCMDIABGBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.GCGZone FPGFCMDIABG = 15;</code>
+       */
+      public Builder setFPGFCMDIABG(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
+        if (fPGFCMDIABGBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          fPGFCMDIABG_ = value;
+          onChanged();
+        } else {
+          fPGFCMDIABGBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.GCGZone FPGFCMDIABG = 15;</code>
+       */
+      public Builder setFPGFCMDIABG(
+          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder builderForValue) {
+        if (fPGFCMDIABGBuilder_ == null) {
+          fPGFCMDIABG_ = builderForValue.build();
+          onChanged();
+        } else {
+          fPGFCMDIABGBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.GCGZone FPGFCMDIABG = 15;</code>
+       */
+      public Builder mergeFPGFCMDIABG(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
+        if (fPGFCMDIABGBuilder_ == null) {
+          if (fPGFCMDIABG_ != null) {
+            fPGFCMDIABG_ =
+              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.newBuilder(fPGFCMDIABG_).mergeFrom(value).buildPartial();
+          } else {
+            fPGFCMDIABG_ = value;
+          }
+          onChanged();
+        } else {
+          fPGFCMDIABGBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.GCGZone FPGFCMDIABG = 15;</code>
+       */
+      public Builder clearFPGFCMDIABG() {
+        if (fPGFCMDIABGBuilder_ == null) {
+          fPGFCMDIABG_ = null;
+          onChanged();
+        } else {
+          fPGFCMDIABG_ = null;
+          fPGFCMDIABGBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.GCGZone FPGFCMDIABG = 15;</code>
+       */
+      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder getFPGFCMDIABGBuilder() {
+        
+        onChanged();
+        return getFPGFCMDIABGFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.GCGZone FPGFCMDIABG = 15;</code>
+       */
+      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getFPGFCMDIABGOrBuilder() {
+        if (fPGFCMDIABGBuilder_ != null) {
+          return fPGFCMDIABGBuilder_.getMessageOrBuilder();
+        } else {
+          return fPGFCMDIABG_ == null ?
+              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : fPGFCMDIABG_;
+        }
+      }
+      /**
+       * <code>.GCGZone FPGFCMDIABG = 15;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> 
+          getFPGFCMDIABGFieldBuilder() {
+        if (fPGFCMDIABGBuilder_ == null) {
+          fPGFCMDIABGBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder>(
+                  getFPGFCMDIABG(),
+                  getParentForChildren(),
+                  isClean());
+          fPGFCMDIABG_ = null;
+        }
+        return fPGFCMDIABGBuilder_;
       }
 
       private java.util.List<java.lang.Integer> diceSideList_ =
         java.util.Collections.emptyList();
       private void ensureDiceSideListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000002) != 0)) {
           diceSideList_ = new java.util.ArrayList<java.lang.Integer>(diceSideList_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000002;
         }
       }
       /**
-       * <pre>
-       *repeated PENJFODAGGI GGGHONFOAKP = 1;
-       * </pre>
-       *
-       * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
+       * <code>repeated .GCGDiceSideType dice_side_list = 9;</code>
        * @return A list containing the diceSideList.
        */
       public java.util.List<emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType> getDiceSideListList() {
@@ -2101,22 +2427,14 @@ public final class GCGPlayerFieldOuterClass {
             java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>(diceSideList_, diceSideList_converter_);
       }
       /**
-       * <pre>
-       *repeated PENJFODAGGI GGGHONFOAKP = 1;
-       * </pre>
-       *
-       * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
+       * <code>repeated .GCGDiceSideType dice_side_list = 9;</code>
        * @return The count of diceSideList.
        */
       public int getDiceSideListCount() {
         return diceSideList_.size();
       }
       /**
-       * <pre>
-       *repeated PENJFODAGGI GGGHONFOAKP = 1;
-       * </pre>
-       *
-       * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
+       * <code>repeated .GCGDiceSideType dice_side_list = 9;</code>
        * @param index The index of the element to return.
        * @return The diceSideList at the given index.
        */
@@ -2124,11 +2442,7 @@ public final class GCGPlayerFieldOuterClass {
         return diceSideList_converter_.convert(diceSideList_.get(index));
       }
       /**
-       * <pre>
-       *repeated PENJFODAGGI GGGHONFOAKP = 1;
-       * </pre>
-       *
-       * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
+       * <code>repeated .GCGDiceSideType dice_side_list = 9;</code>
        * @param index The index to set the value at.
        * @param value The diceSideList to set.
        * @return This builder for chaining.
@@ -2144,11 +2458,7 @@ public final class GCGPlayerFieldOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *repeated PENJFODAGGI GGGHONFOAKP = 1;
-       * </pre>
-       *
-       * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
+       * <code>repeated .GCGDiceSideType dice_side_list = 9;</code>
        * @param value The diceSideList to add.
        * @return This builder for chaining.
        */
@@ -2162,11 +2472,7 @@ public final class GCGPlayerFieldOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *repeated PENJFODAGGI GGGHONFOAKP = 1;
-       * </pre>
-       *
-       * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
+       * <code>repeated .GCGDiceSideType dice_side_list = 9;</code>
        * @param values The diceSideList to add.
        * @return This builder for chaining.
        */
@@ -2180,25 +2486,17 @@ public final class GCGPlayerFieldOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *repeated PENJFODAGGI GGGHONFOAKP = 1;
-       * </pre>
-       *
-       * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
+       * <code>repeated .GCGDiceSideType dice_side_list = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearDiceSideList() {
         diceSideList_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000001);
+        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       *repeated PENJFODAGGI GGGHONFOAKP = 1;
-       * </pre>
-       *
-       * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
+       * <code>repeated .GCGDiceSideType dice_side_list = 9;</code>
        * @return A list containing the enum numeric values on the wire for diceSideList.
        */
       public java.util.List<java.lang.Integer>
@@ -2206,11 +2504,7 @@ public final class GCGPlayerFieldOuterClass {
         return java.util.Collections.unmodifiableList(diceSideList_);
       }
       /**
-       * <pre>
-       *repeated PENJFODAGGI GGGHONFOAKP = 1;
-       * </pre>
-       *
-       * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
+       * <code>repeated .GCGDiceSideType dice_side_list = 9;</code>
        * @param index The index of the value to return.
        * @return The enum numeric value on the wire of diceSideList at the given index.
        */
@@ -2218,11 +2512,7 @@ public final class GCGPlayerFieldOuterClass {
         return diceSideList_.get(index);
       }
       /**
-       * <pre>
-       *repeated PENJFODAGGI GGGHONFOAKP = 1;
-       * </pre>
-       *
-       * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
+       * <code>repeated .GCGDiceSideType dice_side_list = 9;</code>
        * @param index The index of the value to return.
        * @return The enum numeric value on the wire of diceSideList at the given index.
        * @return This builder for chaining.
@@ -2235,11 +2525,7 @@ public final class GCGPlayerFieldOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *repeated PENJFODAGGI GGGHONFOAKP = 1;
-       * </pre>
-       *
-       * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
+       * <code>repeated .GCGDiceSideType dice_side_list = 9;</code>
        * @param value The enum numeric value on the wire for diceSideList to add.
        * @return This builder for chaining.
        */
@@ -2250,11 +2536,7 @@ public final class GCGPlayerFieldOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *repeated PENJFODAGGI GGGHONFOAKP = 1;
-       * </pre>
-       *
-       * <code>repeated .GCGDiceSideType dice_side_list = 1;</code>
+       * <code>repeated .GCGDiceSideType dice_side_list = 9;</code>
        * @param values The enum numeric values on the wire for diceSideList to add.
        * @return This builder for chaining.
        */
@@ -2268,1451 +2550,66 @@ public final class GCGPlayerFieldOuterClass {
         return this;
       }
 
-      private int cardBackShowId_ ;
+      private int kFDOPOINLPP_ ;
       /**
-       * <pre>
-       *IGMNOEBOCJP IS CARD_BACK_SHOW_ID
-       * </pre>
-       *
-       * <code>uint32 card_back_show_id = 3;</code>
-       * @return The cardBackShowId.
+       * <code>uint32 KFDOPOINLPP = 5;</code>
+       * @return The kFDOPOINLPP.
        */
       @java.lang.Override
-      public int getCardBackShowId() {
-        return cardBackShowId_;
+      public int getKFDOPOINLPP() {
+        return kFDOPOINLPP_;
       }
       /**
-       * <pre>
-       *IGMNOEBOCJP IS CARD_BACK_SHOW_ID
-       * </pre>
-       *
-       * <code>uint32 card_back_show_id = 3;</code>
-       * @param value The cardBackShowId to set.
+       * <code>uint32 KFDOPOINLPP = 5;</code>
+       * @param value The kFDOPOINLPP to set.
        * @return This builder for chaining.
        */
-      public Builder setCardBackShowId(int value) {
+      public Builder setKFDOPOINLPP(int value) {
         
-        cardBackShowId_ = value;
+        kFDOPOINLPP_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       *IGMNOEBOCJP IS CARD_BACK_SHOW_ID
-       * </pre>
-       *
-       * <code>uint32 card_back_show_id = 3;</code>
+       * <code>uint32 KFDOPOINLPP = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCardBackShowId() {
+      public Builder clearKFDOPOINLPP() {
         
-        cardBackShowId_ = 0;
+        kFDOPOINLPP_ = 0;
         onChanged();
         return this;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention> intentionList_ =
-        java.util.Collections.emptyList();
-      private void ensureIntentionListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          intentionList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention>(intentionList_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder> intentionListBuilder_;
-
+      private int aDCHOFHFPPC_ ;
       /**
-       * <pre>
-       *repeated HHKFLCHIBJJ AICAJEFEHLF = 1540;
-       * </pre>
-       *
-       * <code>repeated .GCGPVEIntention intention_list = 1540;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention> getIntentionListList() {
-        if (intentionListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(intentionList_);
-        } else {
-          return intentionListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <pre>
-       *repeated HHKFLCHIBJJ AICAJEFEHLF = 1540;
-       * </pre>
-       *
-       * <code>repeated .GCGPVEIntention intention_list = 1540;</code>
-       */
-      public int getIntentionListCount() {
-        if (intentionListBuilder_ == null) {
-          return intentionList_.size();
-        } else {
-          return intentionListBuilder_.getCount();
-        }
-      }
-      /**
-       * <pre>
-       *repeated HHKFLCHIBJJ AICAJEFEHLF = 1540;
-       * </pre>
-       *
-       * <code>repeated .GCGPVEIntention intention_list = 1540;</code>
-       */
-      public emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention getIntentionList(int index) {
-        if (intentionListBuilder_ == null) {
-          return intentionList_.get(index);
-        } else {
-          return intentionListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <pre>
-       *repeated HHKFLCHIBJJ AICAJEFEHLF = 1540;
-       * </pre>
-       *
-       * <code>repeated .GCGPVEIntention intention_list = 1540;</code>
-       */
-      public Builder setIntentionList(
-          int index, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention value) {
-        if (intentionListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureIntentionListIsMutable();
-          intentionList_.set(index, value);
-          onChanged();
-        } else {
-          intentionListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *repeated HHKFLCHIBJJ AICAJEFEHLF = 1540;
-       * </pre>
-       *
-       * <code>repeated .GCGPVEIntention intention_list = 1540;</code>
-       */
-      public Builder setIntentionList(
-          int index, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder builderForValue) {
-        if (intentionListBuilder_ == null) {
-          ensureIntentionListIsMutable();
-          intentionList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          intentionListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *repeated HHKFLCHIBJJ AICAJEFEHLF = 1540;
-       * </pre>
-       *
-       * <code>repeated .GCGPVEIntention intention_list = 1540;</code>
-       */
-      public Builder addIntentionList(emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention value) {
-        if (intentionListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureIntentionListIsMutable();
-          intentionList_.add(value);
-          onChanged();
-        } else {
-          intentionListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *repeated HHKFLCHIBJJ AICAJEFEHLF = 1540;
-       * </pre>
-       *
-       * <code>repeated .GCGPVEIntention intention_list = 1540;</code>
-       */
-      public Builder addIntentionList(
-          int index, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention value) {
-        if (intentionListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureIntentionListIsMutable();
-          intentionList_.add(index, value);
-          onChanged();
-        } else {
-          intentionListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *repeated HHKFLCHIBJJ AICAJEFEHLF = 1540;
-       * </pre>
-       *
-       * <code>repeated .GCGPVEIntention intention_list = 1540;</code>
-       */
-      public Builder addIntentionList(
-          emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder builderForValue) {
-        if (intentionListBuilder_ == null) {
-          ensureIntentionListIsMutable();
-          intentionList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          intentionListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *repeated HHKFLCHIBJJ AICAJEFEHLF = 1540;
-       * </pre>
-       *
-       * <code>repeated .GCGPVEIntention intention_list = 1540;</code>
-       */
-      public Builder addIntentionList(
-          int index, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder builderForValue) {
-        if (intentionListBuilder_ == null) {
-          ensureIntentionListIsMutable();
-          intentionList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          intentionListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *repeated HHKFLCHIBJJ AICAJEFEHLF = 1540;
-       * </pre>
-       *
-       * <code>repeated .GCGPVEIntention intention_list = 1540;</code>
-       */
-      public Builder addAllIntentionList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention> values) {
-        if (intentionListBuilder_ == null) {
-          ensureIntentionListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, intentionList_);
-          onChanged();
-        } else {
-          intentionListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *repeated HHKFLCHIBJJ AICAJEFEHLF = 1540;
-       * </pre>
-       *
-       * <code>repeated .GCGPVEIntention intention_list = 1540;</code>
-       */
-      public Builder clearIntentionList() {
-        if (intentionListBuilder_ == null) {
-          intentionList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
-          onChanged();
-        } else {
-          intentionListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *repeated HHKFLCHIBJJ AICAJEFEHLF = 1540;
-       * </pre>
-       *
-       * <code>repeated .GCGPVEIntention intention_list = 1540;</code>
-       */
-      public Builder removeIntentionList(int index) {
-        if (intentionListBuilder_ == null) {
-          ensureIntentionListIsMutable();
-          intentionList_.remove(index);
-          onChanged();
-        } else {
-          intentionListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *repeated HHKFLCHIBJJ AICAJEFEHLF = 1540;
-       * </pre>
-       *
-       * <code>repeated .GCGPVEIntention intention_list = 1540;</code>
-       */
-      public emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder getIntentionListBuilder(
-          int index) {
-        return getIntentionListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <pre>
-       *repeated HHKFLCHIBJJ AICAJEFEHLF = 1540;
-       * </pre>
-       *
-       * <code>repeated .GCGPVEIntention intention_list = 1540;</code>
-       */
-      public emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder getIntentionListOrBuilder(
-          int index) {
-        if (intentionListBuilder_ == null) {
-          return intentionList_.get(index);  } else {
-          return intentionListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <pre>
-       *repeated HHKFLCHIBJJ AICAJEFEHLF = 1540;
-       * </pre>
-       *
-       * <code>repeated .GCGPVEIntention intention_list = 1540;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder> 
-           getIntentionListOrBuilderList() {
-        if (intentionListBuilder_ != null) {
-          return intentionListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(intentionList_);
-        }
-      }
-      /**
-       * <pre>
-       *repeated HHKFLCHIBJJ AICAJEFEHLF = 1540;
-       * </pre>
-       *
-       * <code>repeated .GCGPVEIntention intention_list = 1540;</code>
-       */
-      public emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder addIntentionListBuilder() {
-        return getIntentionListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.getDefaultInstance());
-      }
-      /**
-       * <pre>
-       *repeated HHKFLCHIBJJ AICAJEFEHLF = 1540;
-       * </pre>
-       *
-       * <code>repeated .GCGPVEIntention intention_list = 1540;</code>
-       */
-      public emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder addIntentionListBuilder(
-          int index) {
-        return getIntentionListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.getDefaultInstance());
-      }
-      /**
-       * <pre>
-       *repeated HHKFLCHIBJJ AICAJEFEHLF = 1540;
-       * </pre>
-       *
-       * <code>repeated .GCGPVEIntention intention_list = 1540;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder> 
-           getIntentionListBuilderList() {
-        return getIntentionListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder> 
-          getIntentionListFieldBuilder() {
-        if (intentionListBuilder_ == null) {
-          intentionListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntention.Builder, emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.GCGPVEIntentionOrBuilder>(
-                  intentionList_,
-                  ((bitField0_ & 0x00000002) != 0),
-                  getParentForChildren(),
-                  isClean());
-          intentionList_ = null;
-        }
-        return intentionListBuilder_;
-      }
-
-      private java.util.List<emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter> waitingList_ =
-        java.util.Collections.emptyList();
-      private void ensureWaitingListIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
-          waitingList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter>(waitingList_);
-          bitField0_ |= 0x00000004;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter, emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.Builder, emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacterOrBuilder> waitingListBuilder_;
-
-      /**
-       * <pre>
-       *repeated AEEKABMMKNE PLPMEJFNDKA = 12;
-       * </pre>
-       *
-       * <code>repeated .GCGWaitingCharacter waiting_list = 12;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter> getWaitingListList() {
-        if (waitingListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(waitingList_);
-        } else {
-          return waitingListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <pre>
-       *repeated AEEKABMMKNE PLPMEJFNDKA = 12;
-       * </pre>
-       *
-       * <code>repeated .GCGWaitingCharacter waiting_list = 12;</code>
-       */
-      public int getWaitingListCount() {
-        if (waitingListBuilder_ == null) {
-          return waitingList_.size();
-        } else {
-          return waitingListBuilder_.getCount();
-        }
-      }
-      /**
-       * <pre>
-       *repeated AEEKABMMKNE PLPMEJFNDKA = 12;
-       * </pre>
-       *
-       * <code>repeated .GCGWaitingCharacter waiting_list = 12;</code>
-       */
-      public emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter getWaitingList(int index) {
-        if (waitingListBuilder_ == null) {
-          return waitingList_.get(index);
-        } else {
-          return waitingListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <pre>
-       *repeated AEEKABMMKNE PLPMEJFNDKA = 12;
-       * </pre>
-       *
-       * <code>repeated .GCGWaitingCharacter waiting_list = 12;</code>
-       */
-      public Builder setWaitingList(
-          int index, emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter value) {
-        if (waitingListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureWaitingListIsMutable();
-          waitingList_.set(index, value);
-          onChanged();
-        } else {
-          waitingListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *repeated AEEKABMMKNE PLPMEJFNDKA = 12;
-       * </pre>
-       *
-       * <code>repeated .GCGWaitingCharacter waiting_list = 12;</code>
-       */
-      public Builder setWaitingList(
-          int index, emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.Builder builderForValue) {
-        if (waitingListBuilder_ == null) {
-          ensureWaitingListIsMutable();
-          waitingList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          waitingListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *repeated AEEKABMMKNE PLPMEJFNDKA = 12;
-       * </pre>
-       *
-       * <code>repeated .GCGWaitingCharacter waiting_list = 12;</code>
-       */
-      public Builder addWaitingList(emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter value) {
-        if (waitingListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureWaitingListIsMutable();
-          waitingList_.add(value);
-          onChanged();
-        } else {
-          waitingListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *repeated AEEKABMMKNE PLPMEJFNDKA = 12;
-       * </pre>
-       *
-       * <code>repeated .GCGWaitingCharacter waiting_list = 12;</code>
-       */
-      public Builder addWaitingList(
-          int index, emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter value) {
-        if (waitingListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureWaitingListIsMutable();
-          waitingList_.add(index, value);
-          onChanged();
-        } else {
-          waitingListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *repeated AEEKABMMKNE PLPMEJFNDKA = 12;
-       * </pre>
-       *
-       * <code>repeated .GCGWaitingCharacter waiting_list = 12;</code>
-       */
-      public Builder addWaitingList(
-          emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.Builder builderForValue) {
-        if (waitingListBuilder_ == null) {
-          ensureWaitingListIsMutable();
-          waitingList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          waitingListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *repeated AEEKABMMKNE PLPMEJFNDKA = 12;
-       * </pre>
-       *
-       * <code>repeated .GCGWaitingCharacter waiting_list = 12;</code>
-       */
-      public Builder addWaitingList(
-          int index, emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.Builder builderForValue) {
-        if (waitingListBuilder_ == null) {
-          ensureWaitingListIsMutable();
-          waitingList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          waitingListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *repeated AEEKABMMKNE PLPMEJFNDKA = 12;
-       * </pre>
-       *
-       * <code>repeated .GCGWaitingCharacter waiting_list = 12;</code>
-       */
-      public Builder addAllWaitingList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter> values) {
-        if (waitingListBuilder_ == null) {
-          ensureWaitingListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, waitingList_);
-          onChanged();
-        } else {
-          waitingListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *repeated AEEKABMMKNE PLPMEJFNDKA = 12;
-       * </pre>
-       *
-       * <code>repeated .GCGWaitingCharacter waiting_list = 12;</code>
-       */
-      public Builder clearWaitingList() {
-        if (waitingListBuilder_ == null) {
-          waitingList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
-          onChanged();
-        } else {
-          waitingListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *repeated AEEKABMMKNE PLPMEJFNDKA = 12;
-       * </pre>
-       *
-       * <code>repeated .GCGWaitingCharacter waiting_list = 12;</code>
-       */
-      public Builder removeWaitingList(int index) {
-        if (waitingListBuilder_ == null) {
-          ensureWaitingListIsMutable();
-          waitingList_.remove(index);
-          onChanged();
-        } else {
-          waitingListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <pre>
-       *repeated AEEKABMMKNE PLPMEJFNDKA = 12;
-       * </pre>
-       *
-       * <code>repeated .GCGWaitingCharacter waiting_list = 12;</code>
-       */
-      public emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.Builder getWaitingListBuilder(
-          int index) {
-        return getWaitingListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <pre>
-       *repeated AEEKABMMKNE PLPMEJFNDKA = 12;
-       * </pre>
-       *
-       * <code>repeated .GCGWaitingCharacter waiting_list = 12;</code>
-       */
-      public emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacterOrBuilder getWaitingListOrBuilder(
-          int index) {
-        if (waitingListBuilder_ == null) {
-          return waitingList_.get(index);  } else {
-          return waitingListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <pre>
-       *repeated AEEKABMMKNE PLPMEJFNDKA = 12;
-       * </pre>
-       *
-       * <code>repeated .GCGWaitingCharacter waiting_list = 12;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacterOrBuilder> 
-           getWaitingListOrBuilderList() {
-        if (waitingListBuilder_ != null) {
-          return waitingListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(waitingList_);
-        }
-      }
-      /**
-       * <pre>
-       *repeated AEEKABMMKNE PLPMEJFNDKA = 12;
-       * </pre>
-       *
-       * <code>repeated .GCGWaitingCharacter waiting_list = 12;</code>
-       */
-      public emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.Builder addWaitingListBuilder() {
-        return getWaitingListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.getDefaultInstance());
-      }
-      /**
-       * <pre>
-       *repeated AEEKABMMKNE PLPMEJFNDKA = 12;
-       * </pre>
-       *
-       * <code>repeated .GCGWaitingCharacter waiting_list = 12;</code>
-       */
-      public emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.Builder addWaitingListBuilder(
-          int index) {
-        return getWaitingListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.getDefaultInstance());
-      }
-      /**
-       * <pre>
-       *repeated AEEKABMMKNE PLPMEJFNDKA = 12;
-       * </pre>
-       *
-       * <code>repeated .GCGWaitingCharacter waiting_list = 12;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.Builder> 
-           getWaitingListBuilderList() {
-        return getWaitingListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter, emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.Builder, emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacterOrBuilder> 
-          getWaitingListFieldBuilder() {
-        if (waitingListBuilder_ == null) {
-          waitingListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter, emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacter.Builder, emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.GCGWaitingCharacterOrBuilder>(
-                  waitingList_,
-                  ((bitField0_ & 0x00000004) != 0),
-                  getParentForChildren(),
-                  isClean());
-          waitingList_ = null;
-        }
-        return waitingListBuilder_;
-      }
-
-      private boolean isPassed_ ;
-      /**
-       * <code>bool is_passed = 10;</code>
-       * @return The isPassed.
+       * <code>uint32 ADCHOFHFPPC = 116;</code>
+       * @return The aDCHOFHFPPC.
        */
       @java.lang.Override
-      public boolean getIsPassed() {
-        return isPassed_;
+      public int getADCHOFHFPPC() {
+        return aDCHOFHFPPC_;
       }
       /**
-       * <code>bool is_passed = 10;</code>
-       * @param value The isPassed to set.
+       * <code>uint32 ADCHOFHFPPC = 116;</code>
+       * @param value The aDCHOFHFPPC to set.
        * @return This builder for chaining.
        */
-      public Builder setIsPassed(boolean value) {
+      public Builder setADCHOFHFPPC(int value) {
         
-        isPassed_ = value;
+        aDCHOFHFPPC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_passed = 10;</code>
+       * <code>uint32 ADCHOFHFPPC = 116;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsPassed() {
+      public Builder clearADCHOFHFPPC() {
         
-        isPassed_ = false;
+        aDCHOFHFPPC_ = 0;
         onChanged();
         return this;
-      }
-
-      private int fieldShowId_ ;
-      /**
-       * <pre>
-       *AJFMMFEEDFF snooGUESS CORRECT
-       * </pre>
-       *
-       * <code>uint32 field_show_id = 14;</code>
-       * @return The fieldShowId.
-       */
-      @java.lang.Override
-      public int getFieldShowId() {
-        return fieldShowId_;
-      }
-      /**
-       * <pre>
-       *AJFMMFEEDFF snooGUESS CORRECT
-       * </pre>
-       *
-       * <code>uint32 field_show_id = 14;</code>
-       * @param value The fieldShowId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFieldShowId(int value) {
-        
-        fieldShowId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *AJFMMFEEDFF snooGUESS CORRECT
-       * </pre>
-       *
-       * <code>uint32 field_show_id = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFieldShowId() {
-        
-        fieldShowId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int deckCardNum_ ;
-      /**
-       * <pre>
-       *IAEJLGAILAK snooguess swapperoo (right)
-       * </pre>
-       *
-       * <code>uint32 deck_card_num = 2;</code>
-       * @return The deckCardNum.
-       */
-      @java.lang.Override
-      public int getDeckCardNum() {
-        return deckCardNum_;
-      }
-      /**
-       * <pre>
-       *IAEJLGAILAK snooguess swapperoo (right)
-       * </pre>
-       *
-       * <code>uint32 deck_card_num = 2;</code>
-       * @param value The deckCardNum to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDeckCardNum(int value) {
-        
-        deckCardNum_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *IAEJLGAILAK snooguess swapperoo (right)
-       * </pre>
-       *
-       * <code>uint32 deck_card_num = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDeckCardNum() {
-        
-        deckCardNum_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int aGPFPMEDGKI_ ;
-      /**
-       * <pre>
-       *AGPFPMEDGKI
-       * </pre>
-       *
-       * <code>uint32 AGPFPMEDGKI = 9;</code>
-       * @return The aGPFPMEDGKI.
-       */
-      @java.lang.Override
-      public int getAGPFPMEDGKI() {
-        return aGPFPMEDGKI_;
-      }
-      /**
-       * <pre>
-       *AGPFPMEDGKI
-       * </pre>
-       *
-       * <code>uint32 AGPFPMEDGKI = 9;</code>
-       * @param value The aGPFPMEDGKI to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAGPFPMEDGKI(int value) {
-        
-        aGPFPMEDGKI_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *AGPFPMEDGKI
-       * </pre>
-       *
-       * <code>uint32 AGPFPMEDGKI = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAGPFPMEDGKI() {
-        
-        aGPFPMEDGKI_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone kOIGNIFNCMI_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> kOIGNIFNCMIBuilder_;
-      /**
-       * <pre>
-       *KOIGNIFNCMI swapperoo 5
-       * </pre>
-       *
-       * <code>.GCGZone KOIGNIFNCMI = 7;</code>
-       * @return Whether the kOIGNIFNCMI field is set.
-       */
-      public boolean hasKOIGNIFNCMI() {
-        return kOIGNIFNCMIBuilder_ != null || kOIGNIFNCMI_ != null;
-      }
-      /**
-       * <pre>
-       *KOIGNIFNCMI swapperoo 5
-       * </pre>
-       *
-       * <code>.GCGZone KOIGNIFNCMI = 7;</code>
-       * @return The kOIGNIFNCMI.
-       */
-      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getKOIGNIFNCMI() {
-        if (kOIGNIFNCMIBuilder_ == null) {
-          return kOIGNIFNCMI_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : kOIGNIFNCMI_;
-        } else {
-          return kOIGNIFNCMIBuilder_.getMessage();
-        }
-      }
-      /**
-       * <pre>
-       *KOIGNIFNCMI swapperoo 5
-       * </pre>
-       *
-       * <code>.GCGZone KOIGNIFNCMI = 7;</code>
-       */
-      public Builder setKOIGNIFNCMI(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
-        if (kOIGNIFNCMIBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          kOIGNIFNCMI_ = value;
-          onChanged();
-        } else {
-          kOIGNIFNCMIBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *KOIGNIFNCMI swapperoo 5
-       * </pre>
-       *
-       * <code>.GCGZone KOIGNIFNCMI = 7;</code>
-       */
-      public Builder setKOIGNIFNCMI(
-          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder builderForValue) {
-        if (kOIGNIFNCMIBuilder_ == null) {
-          kOIGNIFNCMI_ = builderForValue.build();
-          onChanged();
-        } else {
-          kOIGNIFNCMIBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *KOIGNIFNCMI swapperoo 5
-       * </pre>
-       *
-       * <code>.GCGZone KOIGNIFNCMI = 7;</code>
-       */
-      public Builder mergeKOIGNIFNCMI(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
-        if (kOIGNIFNCMIBuilder_ == null) {
-          if (kOIGNIFNCMI_ != null) {
-            kOIGNIFNCMI_ =
-              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.newBuilder(kOIGNIFNCMI_).mergeFrom(value).buildPartial();
-          } else {
-            kOIGNIFNCMI_ = value;
-          }
-          onChanged();
-        } else {
-          kOIGNIFNCMIBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *KOIGNIFNCMI swapperoo 5
-       * </pre>
-       *
-       * <code>.GCGZone KOIGNIFNCMI = 7;</code>
-       */
-      public Builder clearKOIGNIFNCMI() {
-        if (kOIGNIFNCMIBuilder_ == null) {
-          kOIGNIFNCMI_ = null;
-          onChanged();
-        } else {
-          kOIGNIFNCMI_ = null;
-          kOIGNIFNCMIBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *KOIGNIFNCMI swapperoo 5
-       * </pre>
-       *
-       * <code>.GCGZone KOIGNIFNCMI = 7;</code>
-       */
-      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder getKOIGNIFNCMIBuilder() {
-        
-        onChanged();
-        return getKOIGNIFNCMIFieldBuilder().getBuilder();
-      }
-      /**
-       * <pre>
-       *KOIGNIFNCMI swapperoo 5
-       * </pre>
-       *
-       * <code>.GCGZone KOIGNIFNCMI = 7;</code>
-       */
-      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getKOIGNIFNCMIOrBuilder() {
-        if (kOIGNIFNCMIBuilder_ != null) {
-          return kOIGNIFNCMIBuilder_.getMessageOrBuilder();
-        } else {
-          return kOIGNIFNCMI_ == null ?
-              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : kOIGNIFNCMI_;
-        }
-      }
-      /**
-       * <pre>
-       *KOIGNIFNCMI swapperoo 5
-       * </pre>
-       *
-       * <code>.GCGZone KOIGNIFNCMI = 7;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> 
-          getKOIGNIFNCMIFieldBuilder() {
-        if (kOIGNIFNCMIBuilder_ == null) {
-          kOIGNIFNCMIBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder>(
-                  getKOIGNIFNCMI(),
-                  getParentForChildren(),
-                  isClean());
-          kOIGNIFNCMI_ = null;
-        }
-        return kOIGNIFNCMIBuilder_;
-      }
-
-      private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone characterZone_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> characterZoneBuilder_;
-      /**
-       * <pre>
-       *HBCOFFFLNAI swapperoo 5 (right Unk3300_INDJNJJJNKL)
-       * </pre>
-       *
-       * <code>.GCGZone character_zone = 5;</code>
-       * @return Whether the characterZone field is set.
-       */
-      public boolean hasCharacterZone() {
-        return characterZoneBuilder_ != null || characterZone_ != null;
-      }
-      /**
-       * <pre>
-       *HBCOFFFLNAI swapperoo 5 (right Unk3300_INDJNJJJNKL)
-       * </pre>
-       *
-       * <code>.GCGZone character_zone = 5;</code>
-       * @return The characterZone.
-       */
-      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getCharacterZone() {
-        if (characterZoneBuilder_ == null) {
-          return characterZone_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : characterZone_;
-        } else {
-          return characterZoneBuilder_.getMessage();
-        }
-      }
-      /**
-       * <pre>
-       *HBCOFFFLNAI swapperoo 5 (right Unk3300_INDJNJJJNKL)
-       * </pre>
-       *
-       * <code>.GCGZone character_zone = 5;</code>
-       */
-      public Builder setCharacterZone(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
-        if (characterZoneBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          characterZone_ = value;
-          onChanged();
-        } else {
-          characterZoneBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *HBCOFFFLNAI swapperoo 5 (right Unk3300_INDJNJJJNKL)
-       * </pre>
-       *
-       * <code>.GCGZone character_zone = 5;</code>
-       */
-      public Builder setCharacterZone(
-          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder builderForValue) {
-        if (characterZoneBuilder_ == null) {
-          characterZone_ = builderForValue.build();
-          onChanged();
-        } else {
-          characterZoneBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *HBCOFFFLNAI swapperoo 5 (right Unk3300_INDJNJJJNKL)
-       * </pre>
-       *
-       * <code>.GCGZone character_zone = 5;</code>
-       */
-      public Builder mergeCharacterZone(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
-        if (characterZoneBuilder_ == null) {
-          if (characterZone_ != null) {
-            characterZone_ =
-              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.newBuilder(characterZone_).mergeFrom(value).buildPartial();
-          } else {
-            characterZone_ = value;
-          }
-          onChanged();
-        } else {
-          characterZoneBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *HBCOFFFLNAI swapperoo 5 (right Unk3300_INDJNJJJNKL)
-       * </pre>
-       *
-       * <code>.GCGZone character_zone = 5;</code>
-       */
-      public Builder clearCharacterZone() {
-        if (characterZoneBuilder_ == null) {
-          characterZone_ = null;
-          onChanged();
-        } else {
-          characterZone_ = null;
-          characterZoneBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *HBCOFFFLNAI swapperoo 5 (right Unk3300_INDJNJJJNKL)
-       * </pre>
-       *
-       * <code>.GCGZone character_zone = 5;</code>
-       */
-      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder getCharacterZoneBuilder() {
-        
-        onChanged();
-        return getCharacterZoneFieldBuilder().getBuilder();
-      }
-      /**
-       * <pre>
-       *HBCOFFFLNAI swapperoo 5 (right Unk3300_INDJNJJJNKL)
-       * </pre>
-       *
-       * <code>.GCGZone character_zone = 5;</code>
-       */
-      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getCharacterZoneOrBuilder() {
-        if (characterZoneBuilder_ != null) {
-          return characterZoneBuilder_.getMessageOrBuilder();
-        } else {
-          return characterZone_ == null ?
-              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : characterZone_;
-        }
-      }
-      /**
-       * <pre>
-       *HBCOFFFLNAI swapperoo 5 (right Unk3300_INDJNJJJNKL)
-       * </pre>
-       *
-       * <code>.GCGZone character_zone = 5;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> 
-          getCharacterZoneFieldBuilder() {
-        if (characterZoneBuilder_ == null) {
-          characterZoneBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder>(
-                  getCharacterZone(),
-                  getParentForChildren(),
-                  isClean());
-          characterZone_ = null;
-        }
-        return characterZoneBuilder_;
-      }
-
-      private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone jLPLPDNEFJA_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> jLPLPDNEFJABuilder_;
-      /**
-       * <pre>
-       *JLPLPDNEFJA swapperoo 5
-       * </pre>
-       *
-       * <code>.GCGZone JLPLPDNEFJA = 15;</code>
-       * @return Whether the jLPLPDNEFJA field is set.
-       */
-      public boolean hasJLPLPDNEFJA() {
-        return jLPLPDNEFJABuilder_ != null || jLPLPDNEFJA_ != null;
-      }
-      /**
-       * <pre>
-       *JLPLPDNEFJA swapperoo 5
-       * </pre>
-       *
-       * <code>.GCGZone JLPLPDNEFJA = 15;</code>
-       * @return The jLPLPDNEFJA.
-       */
-      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getJLPLPDNEFJA() {
-        if (jLPLPDNEFJABuilder_ == null) {
-          return jLPLPDNEFJA_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : jLPLPDNEFJA_;
-        } else {
-          return jLPLPDNEFJABuilder_.getMessage();
-        }
-      }
-      /**
-       * <pre>
-       *JLPLPDNEFJA swapperoo 5
-       * </pre>
-       *
-       * <code>.GCGZone JLPLPDNEFJA = 15;</code>
-       */
-      public Builder setJLPLPDNEFJA(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
-        if (jLPLPDNEFJABuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          jLPLPDNEFJA_ = value;
-          onChanged();
-        } else {
-          jLPLPDNEFJABuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *JLPLPDNEFJA swapperoo 5
-       * </pre>
-       *
-       * <code>.GCGZone JLPLPDNEFJA = 15;</code>
-       */
-      public Builder setJLPLPDNEFJA(
-          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder builderForValue) {
-        if (jLPLPDNEFJABuilder_ == null) {
-          jLPLPDNEFJA_ = builderForValue.build();
-          onChanged();
-        } else {
-          jLPLPDNEFJABuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *JLPLPDNEFJA swapperoo 5
-       * </pre>
-       *
-       * <code>.GCGZone JLPLPDNEFJA = 15;</code>
-       */
-      public Builder mergeJLPLPDNEFJA(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
-        if (jLPLPDNEFJABuilder_ == null) {
-          if (jLPLPDNEFJA_ != null) {
-            jLPLPDNEFJA_ =
-              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.newBuilder(jLPLPDNEFJA_).mergeFrom(value).buildPartial();
-          } else {
-            jLPLPDNEFJA_ = value;
-          }
-          onChanged();
-        } else {
-          jLPLPDNEFJABuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *JLPLPDNEFJA swapperoo 5
-       * </pre>
-       *
-       * <code>.GCGZone JLPLPDNEFJA = 15;</code>
-       */
-      public Builder clearJLPLPDNEFJA() {
-        if (jLPLPDNEFJABuilder_ == null) {
-          jLPLPDNEFJA_ = null;
-          onChanged();
-        } else {
-          jLPLPDNEFJA_ = null;
-          jLPLPDNEFJABuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *JLPLPDNEFJA swapperoo 5
-       * </pre>
-       *
-       * <code>.GCGZone JLPLPDNEFJA = 15;</code>
-       */
-      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder getJLPLPDNEFJABuilder() {
-        
-        onChanged();
-        return getJLPLPDNEFJAFieldBuilder().getBuilder();
-      }
-      /**
-       * <pre>
-       *JLPLPDNEFJA swapperoo 5
-       * </pre>
-       *
-       * <code>.GCGZone JLPLPDNEFJA = 15;</code>
-       */
-      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getJLPLPDNEFJAOrBuilder() {
-        if (jLPLPDNEFJABuilder_ != null) {
-          return jLPLPDNEFJABuilder_.getMessageOrBuilder();
-        } else {
-          return jLPLPDNEFJA_ == null ?
-              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : jLPLPDNEFJA_;
-        }
-      }
-      /**
-       * <pre>
-       *JLPLPDNEFJA swapperoo 5
-       * </pre>
-       *
-       * <code>.GCGZone JLPLPDNEFJA = 15;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> 
-          getJLPLPDNEFJAFieldBuilder() {
-        if (jLPLPDNEFJABuilder_ == null) {
-          jLPLPDNEFJABuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder>(
-                  getJLPLPDNEFJA(),
-                  getParentForChildren(),
-                  isClean());
-          jLPLPDNEFJA_ = null;
-        }
-        return jLPLPDNEFJABuilder_;
-      }
-
-      private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone dIFHGPIAFNK_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> dIFHGPIAFNKBuilder_;
-      /**
-       * <pre>
-       *DIFHGPIAFNK snoguess swapperoo 5
-       * </pre>
-       *
-       * <code>.GCGZone DIFHGPIAFNK = 13;</code>
-       * @return Whether the dIFHGPIAFNK field is set.
-       */
-      public boolean hasDIFHGPIAFNK() {
-        return dIFHGPIAFNKBuilder_ != null || dIFHGPIAFNK_ != null;
-      }
-      /**
-       * <pre>
-       *DIFHGPIAFNK snoguess swapperoo 5
-       * </pre>
-       *
-       * <code>.GCGZone DIFHGPIAFNK = 13;</code>
-       * @return The dIFHGPIAFNK.
-       */
-      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getDIFHGPIAFNK() {
-        if (dIFHGPIAFNKBuilder_ == null) {
-          return dIFHGPIAFNK_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : dIFHGPIAFNK_;
-        } else {
-          return dIFHGPIAFNKBuilder_.getMessage();
-        }
-      }
-      /**
-       * <pre>
-       *DIFHGPIAFNK snoguess swapperoo 5
-       * </pre>
-       *
-       * <code>.GCGZone DIFHGPIAFNK = 13;</code>
-       */
-      public Builder setDIFHGPIAFNK(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
-        if (dIFHGPIAFNKBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          dIFHGPIAFNK_ = value;
-          onChanged();
-        } else {
-          dIFHGPIAFNKBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *DIFHGPIAFNK snoguess swapperoo 5
-       * </pre>
-       *
-       * <code>.GCGZone DIFHGPIAFNK = 13;</code>
-       */
-      public Builder setDIFHGPIAFNK(
-          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder builderForValue) {
-        if (dIFHGPIAFNKBuilder_ == null) {
-          dIFHGPIAFNK_ = builderForValue.build();
-          onChanged();
-        } else {
-          dIFHGPIAFNKBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *DIFHGPIAFNK snoguess swapperoo 5
-       * </pre>
-       *
-       * <code>.GCGZone DIFHGPIAFNK = 13;</code>
-       */
-      public Builder mergeDIFHGPIAFNK(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
-        if (dIFHGPIAFNKBuilder_ == null) {
-          if (dIFHGPIAFNK_ != null) {
-            dIFHGPIAFNK_ =
-              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.newBuilder(dIFHGPIAFNK_).mergeFrom(value).buildPartial();
-          } else {
-            dIFHGPIAFNK_ = value;
-          }
-          onChanged();
-        } else {
-          dIFHGPIAFNKBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *DIFHGPIAFNK snoguess swapperoo 5
-       * </pre>
-       *
-       * <code>.GCGZone DIFHGPIAFNK = 13;</code>
-       */
-      public Builder clearDIFHGPIAFNK() {
-        if (dIFHGPIAFNKBuilder_ == null) {
-          dIFHGPIAFNK_ = null;
-          onChanged();
-        } else {
-          dIFHGPIAFNK_ = null;
-          dIFHGPIAFNKBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       *DIFHGPIAFNK snoguess swapperoo 5
-       * </pre>
-       *
-       * <code>.GCGZone DIFHGPIAFNK = 13;</code>
-       */
-      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder getDIFHGPIAFNKBuilder() {
-        
-        onChanged();
-        return getDIFHGPIAFNKFieldBuilder().getBuilder();
-      }
-      /**
-       * <pre>
-       *DIFHGPIAFNK snoguess swapperoo 5
-       * </pre>
-       *
-       * <code>.GCGZone DIFHGPIAFNK = 13;</code>
-       */
-      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getDIFHGPIAFNKOrBuilder() {
-        if (dIFHGPIAFNKBuilder_ != null) {
-          return dIFHGPIAFNKBuilder_.getMessageOrBuilder();
-        } else {
-          return dIFHGPIAFNK_ == null ?
-              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : dIFHGPIAFNK_;
-        }
-      }
-      /**
-       * <pre>
-       *DIFHGPIAFNK snoguess swapperoo 5
-       * </pre>
-       *
-       * <code>.GCGZone DIFHGPIAFNK = 13;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> 
-          getDIFHGPIAFNKFieldBuilder() {
-        if (dIFHGPIAFNKBuilder_ == null) {
-          dIFHGPIAFNKBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder>(
-                  getDIFHGPIAFNK(),
-                  getParentForChildren(),
-                  isClean());
-          dIFHGPIAFNK_ = null;
-        }
-        return dIFHGPIAFNKBuilder_;
       }
 
       private com.google.protobuf.MapField<
@@ -3742,11 +2639,7 @@ public final class GCGPlayerFieldOuterClass {
         return internalGetModifyZoneMap().getMap().size();
       }
       /**
-       * <pre>
-       *JFAINLBMGJP
-       * </pre>
-       *
-       * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 8;</code>
+       * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 1;</code>
        */
 
       @java.lang.Override
@@ -3764,11 +2657,7 @@ public final class GCGPlayerFieldOuterClass {
         return getModifyZoneMapMap();
       }
       /**
-       * <pre>
-       *JFAINLBMGJP
-       * </pre>
-       *
-       * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 8;</code>
+       * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 1;</code>
        */
       @java.lang.Override
 
@@ -3776,11 +2665,7 @@ public final class GCGPlayerFieldOuterClass {
         return internalGetModifyZoneMap().getMap();
       }
       /**
-       * <pre>
-       *JFAINLBMGJP
-       * </pre>
-       *
-       * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 8;</code>
+       * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 1;</code>
        */
       @java.lang.Override
 
@@ -3793,11 +2678,7 @@ public final class GCGPlayerFieldOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <pre>
-       *JFAINLBMGJP
-       * </pre>
-       *
-       * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 8;</code>
+       * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 1;</code>
        */
       @java.lang.Override
 
@@ -3818,11 +2699,7 @@ public final class GCGPlayerFieldOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *JFAINLBMGJP
-       * </pre>
-       *
-       * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 8;</code>
+       * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 1;</code>
        */
 
       public Builder removeModifyZoneMap(
@@ -3841,11 +2718,7 @@ public final class GCGPlayerFieldOuterClass {
         return internalGetMutableModifyZoneMap().getMutableMap();
       }
       /**
-       * <pre>
-       *JFAINLBMGJP
-       * </pre>
-       *
-       * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 8;</code>
+       * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 1;</code>
        */
       public Builder putModifyZoneMap(
           int key,
@@ -3857,11 +2730,7 @@ public final class GCGPlayerFieldOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *JFAINLBMGJP
-       * </pre>
-       *
-       * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 8;</code>
+       * <code>map&lt;uint32, .GCGZone&gt; modify_zone_map = 1;</code>
        */
 
       public Builder putAllModifyZoneMap(
@@ -3871,231 +2740,214 @@ public final class GCGPlayerFieldOuterClass {
         return this;
       }
 
-      private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone cGBIBGGMGEF_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> cGBIBGGMGEFBuilder_;
+      private int jAMNMKIOPEO_ ;
       /**
-       * <pre>
-       *CGBIBGGMGEF swapperoo 5
-       * </pre>
-       *
-       * <code>.GCGZone CGBIBGGMGEF = 11;</code>
-       * @return Whether the cGBIBGGMGEF field is set.
+       * <code>uint32 JAMNMKIOPEO = 7;</code>
+       * @return The jAMNMKIOPEO.
        */
-      public boolean hasCGBIBGGMGEF() {
-        return cGBIBGGMGEFBuilder_ != null || cGBIBGGMGEF_ != null;
+      @java.lang.Override
+      public int getJAMNMKIOPEO() {
+        return jAMNMKIOPEO_;
       }
       /**
-       * <pre>
-       *CGBIBGGMGEF swapperoo 5
-       * </pre>
-       *
-       * <code>.GCGZone CGBIBGGMGEF = 11;</code>
-       * @return The cGBIBGGMGEF.
+       * <code>uint32 JAMNMKIOPEO = 7;</code>
+       * @param value The jAMNMKIOPEO to set.
+       * @return This builder for chaining.
        */
-      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getCGBIBGGMGEF() {
-        if (cGBIBGGMGEFBuilder_ == null) {
-          return cGBIBGGMGEF_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : cGBIBGGMGEF_;
+      public Builder setJAMNMKIOPEO(int value) {
+        
+        jAMNMKIOPEO_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 JAMNMKIOPEO = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearJAMNMKIOPEO() {
+        
+        jAMNMKIOPEO_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isPassed_ ;
+      /**
+       * <code>bool is_passed = 13;</code>
+       * @return The isPassed.
+       */
+      @java.lang.Override
+      public boolean getIsPassed() {
+        return isPassed_;
+      }
+      /**
+       * <code>bool is_passed = 13;</code>
+       * @param value The isPassed to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsPassed(boolean value) {
+        
+        isPassed_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_passed = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsPassed() {
+        
+        isPassed_ = false;
+        onChanged();
+        return this;
+      }
+
+      private emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone jKEOEAIEALF_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> jKEOEAIEALFBuilder_;
+      /**
+       * <code>.GCGZone JKEOEAIEALF = 14;</code>
+       * @return Whether the jKEOEAIEALF field is set.
+       */
+      public boolean hasJKEOEAIEALF() {
+        return jKEOEAIEALFBuilder_ != null || jKEOEAIEALF_ != null;
+      }
+      /**
+       * <code>.GCGZone JKEOEAIEALF = 14;</code>
+       * @return The jKEOEAIEALF.
+       */
+      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone getJKEOEAIEALF() {
+        if (jKEOEAIEALFBuilder_ == null) {
+          return jKEOEAIEALF_ == null ? emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : jKEOEAIEALF_;
         } else {
-          return cGBIBGGMGEFBuilder_.getMessage();
+          return jKEOEAIEALFBuilder_.getMessage();
         }
       }
       /**
-       * <pre>
-       *CGBIBGGMGEF swapperoo 5
-       * </pre>
-       *
-       * <code>.GCGZone CGBIBGGMGEF = 11;</code>
+       * <code>.GCGZone JKEOEAIEALF = 14;</code>
        */
-      public Builder setCGBIBGGMGEF(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
-        if (cGBIBGGMGEFBuilder_ == null) {
+      public Builder setJKEOEAIEALF(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
+        if (jKEOEAIEALFBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          cGBIBGGMGEF_ = value;
+          jKEOEAIEALF_ = value;
           onChanged();
         } else {
-          cGBIBGGMGEFBuilder_.setMessage(value);
+          jKEOEAIEALFBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <pre>
-       *CGBIBGGMGEF swapperoo 5
-       * </pre>
-       *
-       * <code>.GCGZone CGBIBGGMGEF = 11;</code>
+       * <code>.GCGZone JKEOEAIEALF = 14;</code>
        */
-      public Builder setCGBIBGGMGEF(
+      public Builder setJKEOEAIEALF(
           emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder builderForValue) {
-        if (cGBIBGGMGEFBuilder_ == null) {
-          cGBIBGGMGEF_ = builderForValue.build();
+        if (jKEOEAIEALFBuilder_ == null) {
+          jKEOEAIEALF_ = builderForValue.build();
           onChanged();
         } else {
-          cGBIBGGMGEFBuilder_.setMessage(builderForValue.build());
+          jKEOEAIEALFBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <pre>
-       *CGBIBGGMGEF swapperoo 5
-       * </pre>
-       *
-       * <code>.GCGZone CGBIBGGMGEF = 11;</code>
+       * <code>.GCGZone JKEOEAIEALF = 14;</code>
        */
-      public Builder mergeCGBIBGGMGEF(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
-        if (cGBIBGGMGEFBuilder_ == null) {
-          if (cGBIBGGMGEF_ != null) {
-            cGBIBGGMGEF_ =
-              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.newBuilder(cGBIBGGMGEF_).mergeFrom(value).buildPartial();
+      public Builder mergeJKEOEAIEALF(emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone value) {
+        if (jKEOEAIEALFBuilder_ == null) {
+          if (jKEOEAIEALF_ != null) {
+            jKEOEAIEALF_ =
+              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.newBuilder(jKEOEAIEALF_).mergeFrom(value).buildPartial();
           } else {
-            cGBIBGGMGEF_ = value;
+            jKEOEAIEALF_ = value;
           }
           onChanged();
         } else {
-          cGBIBGGMGEFBuilder_.mergeFrom(value);
+          jKEOEAIEALFBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <pre>
-       *CGBIBGGMGEF swapperoo 5
-       * </pre>
-       *
-       * <code>.GCGZone CGBIBGGMGEF = 11;</code>
+       * <code>.GCGZone JKEOEAIEALF = 14;</code>
        */
-      public Builder clearCGBIBGGMGEF() {
-        if (cGBIBGGMGEFBuilder_ == null) {
-          cGBIBGGMGEF_ = null;
+      public Builder clearJKEOEAIEALF() {
+        if (jKEOEAIEALFBuilder_ == null) {
+          jKEOEAIEALF_ = null;
           onChanged();
         } else {
-          cGBIBGGMGEF_ = null;
-          cGBIBGGMGEFBuilder_ = null;
+          jKEOEAIEALF_ = null;
+          jKEOEAIEALFBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <pre>
-       *CGBIBGGMGEF swapperoo 5
-       * </pre>
-       *
-       * <code>.GCGZone CGBIBGGMGEF = 11;</code>
+       * <code>.GCGZone JKEOEAIEALF = 14;</code>
        */
-      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder getCGBIBGGMGEFBuilder() {
+      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder getJKEOEAIEALFBuilder() {
         
         onChanged();
-        return getCGBIBGGMGEFFieldBuilder().getBuilder();
+        return getJKEOEAIEALFFieldBuilder().getBuilder();
       }
       /**
-       * <pre>
-       *CGBIBGGMGEF swapperoo 5
-       * </pre>
-       *
-       * <code>.GCGZone CGBIBGGMGEF = 11;</code>
+       * <code>.GCGZone JKEOEAIEALF = 14;</code>
        */
-      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getCGBIBGGMGEFOrBuilder() {
-        if (cGBIBGGMGEFBuilder_ != null) {
-          return cGBIBGGMGEFBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder getJKEOEAIEALFOrBuilder() {
+        if (jKEOEAIEALFBuilder_ != null) {
+          return jKEOEAIEALFBuilder_.getMessageOrBuilder();
         } else {
-          return cGBIBGGMGEF_ == null ?
-              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : cGBIBGGMGEF_;
+          return jKEOEAIEALF_ == null ?
+              emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.getDefaultInstance() : jKEOEAIEALF_;
         }
       }
       /**
-       * <pre>
-       *CGBIBGGMGEF swapperoo 5
-       * </pre>
-       *
-       * <code>.GCGZone CGBIBGGMGEF = 11;</code>
+       * <code>.GCGZone JKEOEAIEALF = 14;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder> 
-          getCGBIBGGMGEFFieldBuilder() {
-        if (cGBIBGGMGEFBuilder_ == null) {
-          cGBIBGGMGEFBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getJKEOEAIEALFFieldBuilder() {
+        if (jKEOEAIEALFBuilder_ == null) {
+          jKEOEAIEALFBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZone.Builder, emu.grasscutter.net.proto.GCGZoneOuterClass.GCGZoneOrBuilder>(
-                  getCGBIBGGMGEF(),
+                  getJKEOEAIEALF(),
                   getParentForChildren(),
                   isClean());
-          cGBIBGGMGEF_ = null;
+          jKEOEAIEALF_ = null;
         }
-        return cGBIBGGMGEFBuilder_;
+        return jKEOEAIEALFBuilder_;
       }
 
-      private int controllerId_ ;
+      private int gNKGJFHDCDI_ ;
       /**
-       * <code>uint32 controller_id = 4;</code>
-       * @return The controllerId.
+       * <code>uint32 GNKGJFHDCDI = 3;</code>
+       * @return The gNKGJFHDCDI.
        */
       @java.lang.Override
-      public int getControllerId() {
-        return controllerId_;
+      public int getGNKGJFHDCDI() {
+        return gNKGJFHDCDI_;
       }
       /**
-       * <code>uint32 controller_id = 4;</code>
-       * @param value The controllerId to set.
+       * <code>uint32 GNKGJFHDCDI = 3;</code>
+       * @param value The gNKGJFHDCDI to set.
        * @return This builder for chaining.
        */
-      public Builder setControllerId(int value) {
+      public Builder setGNKGJFHDCDI(int value) {
         
-        controllerId_ = value;
+        gNKGJFHDCDI_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 controller_id = 4;</code>
+       * <code>uint32 GNKGJFHDCDI = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearControllerId() {
+      public Builder clearGNKGJFHDCDI() {
         
-        controllerId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int nKNMAGGJMFP_ ;
-      /**
-       * <pre>
-       *NKNMAGGJMFP
-       * </pre>
-       *
-       * <code>uint32 NKNMAGGJMFP = 6;</code>
-       * @return The nKNMAGGJMFP.
-       */
-      @java.lang.Override
-      public int getNKNMAGGJMFP() {
-        return nKNMAGGJMFP_;
-      }
-      /**
-       * <pre>
-       *NKNMAGGJMFP
-       * </pre>
-       *
-       * <code>uint32 NKNMAGGJMFP = 6;</code>
-       * @param value The nKNMAGGJMFP to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNKNMAGGJMFP(int value) {
-        
-        nKNMAGGJMFP_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *NKNMAGGJMFP
-       * </pre>
-       *
-       * <code>uint32 NKNMAGGJMFP = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearNKNMAGGJMFP() {
-        
-        nKNMAGGJMFP_ = 0;
+        gNKGJFHDCDI_ = 0;
         onChanged();
         return this;
       }
@@ -4171,32 +3023,29 @@ public final class GCGPlayerFieldOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\024GCGPlayerField.proto\032\031GCGWaitingCharac" +
-      "ter.proto\032\rGCGZone.proto\032\025GCGPVEIntentio" +
-      "n.proto\032\025GCGDiceSideType.proto\"\337\004\n\016GCGPl" +
-      "ayerField\022\024\n\013ONKDMOMNGBG\030\270\006 \001(\r\022(\n\016dice_" +
-      "side_list\030\001 \003(\0162\020.GCGDiceSideType\022\031\n\021car" +
-      "d_back_show_id\030\003 \001(\r\022)\n\016intention_list\030\204" +
-      "\014 \003(\0132\020.GCGPVEIntention\022*\n\014waiting_list\030" +
-      "\014 \003(\0132\024.GCGWaitingCharacter\022\021\n\tis_passed" +
-      "\030\n \001(\010\022\025\n\rfield_show_id\030\016 \001(\r\022\025\n\rdeck_ca" +
-      "rd_num\030\002 \001(\r\022\023\n\013AGPFPMEDGKI\030\t \001(\r\022\035\n\013KOI" +
-      "GNIFNCMI\030\007 \001(\0132\010.GCGZone\022 \n\016character_zo" +
-      "ne\030\005 \001(\0132\010.GCGZone\022\035\n\013JLPLPDNEFJA\030\017 \001(\0132" +
-      "\010.GCGZone\022\035\n\013DIFHGPIAFNK\030\r \001(\0132\010.GCGZone" +
-      "\022;\n\017modify_zone_map\030\010 \003(\0132\".GCGPlayerFie" +
-      "ld.ModifyZoneMapEntry\022\035\n\013CGBIBGGMGEF\030\013 \001" +
-      "(\0132\010.GCGZone\022\025\n\rcontroller_id\030\004 \001(\r\022\023\n\013N" +
-      "KNMAGGJMFP\030\006 \001(\r\032>\n\022ModifyZoneMapEntry\022\013" +
-      "\n\003key\030\001 \001(\r\022\027\n\005value\030\002 \001(\0132\010.GCGZone:\0028\001" +
-      "B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\024GCGPlayerField.proto\032\rGCGZone.proto\032\021G" +
+      "ABNJIGBIHE.proto\032\025GCGDiceSideType.proto\"" +
+      "\235\004\n\016GCGPlayerField\022\023\n\013EMBGKGCNFPE\030\004 \001(\r\022" +
+      "\035\n\013PIOEBHEPAIC\030\006 \001(\0132\010.GCGZone\022\035\n\013GNCOGN" +
+      "IKACN\030\013 \001(\0132\010.GCGZone\022\025\n\rcontroller_id\030\n" +
+      " \001(\r\022\023\n\013EEFLPHPIMDL\030\014 \001(\r\022\035\n\013DPIINFPCNEK" +
+      "\030\010 \001(\0132\010.GCGZone\022!\n\013DNEEMCIDCAF\030\002 \003(\0132\014." +
+      "GABNJIGBIHE\022\035\n\013FPGFCMDIABG\030\017 \001(\0132\010.GCGZo" +
+      "ne\022(\n\016dice_side_list\030\t \003(\0162\020.GCGDiceSide" +
+      "Type\022\023\n\013KFDOPOINLPP\030\005 \001(\r\022\023\n\013ADCHOFHFPPC" +
+      "\030t \001(\r\022;\n\017modify_zone_map\030\001 \003(\0132\".GCGPla" +
+      "yerField.ModifyZoneMapEntry\022\023\n\013JAMNMKIOP" +
+      "EO\030\007 \001(\r\022\021\n\tis_passed\030\r \001(\010\022\035\n\013JKEOEAIEA" +
+      "LF\030\016 \001(\0132\010.GCGZone\022\023\n\013GNKGJFHDCDI\030\003 \001(\r\032" +
+      ">\n\022ModifyZoneMapEntry\022\013\n\003key\030\001 \001(\r\022\027\n\005va" +
+      "lue\030\002 \001(\0132\010.GCGZone:\0028\001B\033\n\031emu.grasscutt" +
+      "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.GCGZoneOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.getDescriptor(),
         });
     internal_static_GCGPlayerField_descriptor =
@@ -4204,16 +3053,15 @@ public final class GCGPlayerFieldOuterClass {
     internal_static_GCGPlayerField_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGPlayerField_descriptor,
-        new java.lang.String[] { "ONKDMOMNGBG", "DiceSideList", "CardBackShowId", "IntentionList", "WaitingList", "IsPassed", "FieldShowId", "DeckCardNum", "AGPFPMEDGKI", "KOIGNIFNCMI", "CharacterZone", "JLPLPDNEFJA", "DIFHGPIAFNK", "ModifyZoneMap", "CGBIBGGMGEF", "ControllerId", "NKNMAGGJMFP", });
+        new java.lang.String[] { "EMBGKGCNFPE", "PIOEBHEPAIC", "GNCOGNIKACN", "ControllerId", "EEFLPHPIMDL", "DPIINFPCNEK", "DNEEMCIDCAF", "FPGFCMDIABG", "DiceSideList", "KFDOPOINLPP", "ADCHOFHFPPC", "ModifyZoneMap", "JAMNMKIOPEO", "IsPassed", "JKEOEAIEALF", "GNKGJFHDCDI", });
     internal_static_GCGPlayerField_ModifyZoneMapEntry_descriptor =
       internal_static_GCGPlayerField_descriptor.getNestedTypes().get(0);
     internal_static_GCGPlayerField_ModifyZoneMapEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGPlayerField_ModifyZoneMapEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
-    emu.grasscutter.net.proto.GCGWaitingCharacterOuterClass.getDescriptor();
     emu.grasscutter.net.proto.GCGZoneOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.GCGPVEIntentionOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GABNJIGBIHEOuterClass.getDescriptor();
     emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.getDescriptor();
   }
 

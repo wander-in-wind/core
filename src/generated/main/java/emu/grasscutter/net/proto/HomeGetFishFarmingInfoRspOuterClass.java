@@ -19,39 +19,39 @@ public final class HomeGetFishFarmingInfoRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 7;</code>
+     * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 10;</code>
      */
     java.util.List<emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfo> 
         getFishFarmingInfoListList();
     /**
-     * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 7;</code>
+     * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 10;</code>
      */
     emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfo getFishFarmingInfoList(int index);
     /**
-     * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 7;</code>
+     * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 10;</code>
      */
     int getFishFarmingInfoListCount();
     /**
-     * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 7;</code>
+     * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 10;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfoOrBuilder> 
         getFishFarmingInfoListOrBuilderList();
     /**
-     * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 7;</code>
+     * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 10;</code>
      */
     emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfoOrBuilder getFishFarmingInfoListOrBuilder(
         int index);
 
     /**
-     * <code>int32 retcode = 2;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * Name: CJFLEHGDFFB
-   * CmdId: 4849
+   * CmdId: 4722
+   * Obf: BKBFCMKMJNJ
    * </pre>
    *
    * Protobuf type {@code HomeGetFishFarmingInfoRsp}
@@ -100,12 +100,12 @@ public final class HomeGetFishFarmingInfoRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 8: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 58: {
+            case 82: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 fishFarmingInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -149,17 +149,17 @@ public final class HomeGetFishFarmingInfoRspOuterClass {
               emu.grasscutter.net.proto.HomeGetFishFarmingInfoRspOuterClass.HomeGetFishFarmingInfoRsp.class, emu.grasscutter.net.proto.HomeGetFishFarmingInfoRspOuterClass.HomeGetFishFarmingInfoRsp.Builder.class);
     }
 
-    public static final int FISH_FARMING_INFO_LIST_FIELD_NUMBER = 7;
+    public static final int FISH_FARMING_INFO_LIST_FIELD_NUMBER = 10;
     private java.util.List<emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfo> fishFarmingInfoList_;
     /**
-     * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 7;</code>
+     * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 10;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfo> getFishFarmingInfoListList() {
       return fishFarmingInfoList_;
     }
     /**
-     * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 7;</code>
+     * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 10;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfoOrBuilder> 
@@ -167,21 +167,21 @@ public final class HomeGetFishFarmingInfoRspOuterClass {
       return fishFarmingInfoList_;
     }
     /**
-     * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 7;</code>
+     * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 10;</code>
      */
     @java.lang.Override
     public int getFishFarmingInfoListCount() {
       return fishFarmingInfoList_.size();
     }
     /**
-     * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 7;</code>
+     * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfo getFishFarmingInfoList(int index) {
       return fishFarmingInfoList_.get(index);
     }
     /**
-     * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 7;</code>
+     * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfoOrBuilder getFishFarmingInfoListOrBuilder(
@@ -189,10 +189,10 @@ public final class HomeGetFishFarmingInfoRspOuterClass {
       return fishFarmingInfoList_.get(index);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 2;
+    public static final int RETCODE_FIELD_NUMBER = 1;
     private int retcode_;
     /**
-     * <code>int32 retcode = 2;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -215,10 +215,10 @@ public final class HomeGetFishFarmingInfoRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(2, retcode_);
+        output.writeInt32(1, retcode_);
       }
       for (int i = 0; i < fishFarmingInfoList_.size(); i++) {
-        output.writeMessage(7, fishFarmingInfoList_.get(i));
+        output.writeMessage(10, fishFarmingInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -231,11 +231,11 @@ public final class HomeGetFishFarmingInfoRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, retcode_);
+          .computeInt32Size(1, retcode_);
       }
       for (int i = 0; i < fishFarmingInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, fishFarmingInfoList_.get(i));
+          .computeMessageSize(10, fishFarmingInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -370,8 +370,8 @@ public final class HomeGetFishFarmingInfoRspOuterClass {
     }
     /**
      * <pre>
-     * Name: CJFLEHGDFFB
-     * CmdId: 4849
+     * CmdId: 4722
+     * Obf: BKBFCMKMJNJ
      * </pre>
      *
      * Protobuf type {@code HomeGetFishFarmingInfoRsp}
@@ -577,7 +577,7 @@ public final class HomeGetFishFarmingInfoRspOuterClass {
           emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfo, emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfo.Builder, emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfoOrBuilder> fishFarmingInfoListBuilder_;
 
       /**
-       * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 7;</code>
+       * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 10;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfo> getFishFarmingInfoListList() {
         if (fishFarmingInfoListBuilder_ == null) {
@@ -587,7 +587,7 @@ public final class HomeGetFishFarmingInfoRspOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 7;</code>
+       * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 10;</code>
        */
       public int getFishFarmingInfoListCount() {
         if (fishFarmingInfoListBuilder_ == null) {
@@ -597,7 +597,7 @@ public final class HomeGetFishFarmingInfoRspOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 7;</code>
+       * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 10;</code>
        */
       public emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfo getFishFarmingInfoList(int index) {
         if (fishFarmingInfoListBuilder_ == null) {
@@ -607,7 +607,7 @@ public final class HomeGetFishFarmingInfoRspOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 7;</code>
+       * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 10;</code>
        */
       public Builder setFishFarmingInfoList(
           int index, emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfo value) {
@@ -624,7 +624,7 @@ public final class HomeGetFishFarmingInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 7;</code>
+       * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 10;</code>
        */
       public Builder setFishFarmingInfoList(
           int index, emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfo.Builder builderForValue) {
@@ -638,7 +638,7 @@ public final class HomeGetFishFarmingInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 7;</code>
+       * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 10;</code>
        */
       public Builder addFishFarmingInfoList(emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfo value) {
         if (fishFarmingInfoListBuilder_ == null) {
@@ -654,7 +654,7 @@ public final class HomeGetFishFarmingInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 7;</code>
+       * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 10;</code>
        */
       public Builder addFishFarmingInfoList(
           int index, emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfo value) {
@@ -671,7 +671,7 @@ public final class HomeGetFishFarmingInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 7;</code>
+       * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 10;</code>
        */
       public Builder addFishFarmingInfoList(
           emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfo.Builder builderForValue) {
@@ -685,7 +685,7 @@ public final class HomeGetFishFarmingInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 7;</code>
+       * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 10;</code>
        */
       public Builder addFishFarmingInfoList(
           int index, emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfo.Builder builderForValue) {
@@ -699,7 +699,7 @@ public final class HomeGetFishFarmingInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 7;</code>
+       * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 10;</code>
        */
       public Builder addAllFishFarmingInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfo> values) {
@@ -714,7 +714,7 @@ public final class HomeGetFishFarmingInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 7;</code>
+       * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 10;</code>
        */
       public Builder clearFishFarmingInfoList() {
         if (fishFarmingInfoListBuilder_ == null) {
@@ -727,7 +727,7 @@ public final class HomeGetFishFarmingInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 7;</code>
+       * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 10;</code>
        */
       public Builder removeFishFarmingInfoList(int index) {
         if (fishFarmingInfoListBuilder_ == null) {
@@ -740,14 +740,14 @@ public final class HomeGetFishFarmingInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 7;</code>
+       * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 10;</code>
        */
       public emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfo.Builder getFishFarmingInfoListBuilder(
           int index) {
         return getFishFarmingInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 7;</code>
+       * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 10;</code>
        */
       public emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfoOrBuilder getFishFarmingInfoListOrBuilder(
           int index) {
@@ -757,7 +757,7 @@ public final class HomeGetFishFarmingInfoRspOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 7;</code>
+       * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 10;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfoOrBuilder> 
            getFishFarmingInfoListOrBuilderList() {
@@ -768,14 +768,14 @@ public final class HomeGetFishFarmingInfoRspOuterClass {
         }
       }
       /**
-       * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 7;</code>
+       * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 10;</code>
        */
       public emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfo.Builder addFishFarmingInfoListBuilder() {
         return getFishFarmingInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 7;</code>
+       * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 10;</code>
        */
       public emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfo.Builder addFishFarmingInfoListBuilder(
           int index) {
@@ -783,7 +783,7 @@ public final class HomeGetFishFarmingInfoRspOuterClass {
             index, emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 7;</code>
+       * <code>repeated .HomeFishFarmingInfo fish_farming_info_list = 10;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.HomeFishFarmingInfoOuterClass.HomeFishFarmingInfo.Builder> 
            getFishFarmingInfoListBuilderList() {
@@ -806,7 +806,7 @@ public final class HomeGetFishFarmingInfoRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 1;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -814,7 +814,7 @@ public final class HomeGetFishFarmingInfoRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 1;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -825,7 +825,7 @@ public final class HomeGetFishFarmingInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 2;</code>
+       * <code>int32 retcode = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -903,8 +903,8 @@ public final class HomeGetFishFarmingInfoRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\037HomeGetFishFarmingInfoRsp.proto\032\031HomeF" +
       "ishFarmingInfo.proto\"b\n\031HomeGetFishFarmi" +
-      "ngInfoRsp\0224\n\026fish_farming_info_list\030\007 \003(" +
-      "\0132\024.HomeFishFarmingInfo\022\017\n\007retcode\030\002 \001(\005" +
+      "ngInfoRsp\0224\n\026fish_farming_info_list\030\n \003(" +
+      "\0132\024.HomeFishFarmingInfo\022\017\n\007retcode\030\001 \001(\005" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

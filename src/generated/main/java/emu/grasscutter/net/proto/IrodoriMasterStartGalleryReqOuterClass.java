@@ -19,21 +19,21 @@ public final class IrodoriMasterStartGalleryReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 11;</code>
+     * <code>uint32 level_id = 10;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>uint32 difficulty = 14;</code>
+     * <code>uint32 difficulty = 15;</code>
      * @return The difficulty.
      */
     int getDifficulty();
   }
   /**
    * <pre>
-   * Name: IGENANOLEOL
-   * CmdId: 8344
+   * CmdId: 8008
+   * Obf: PPBCCHFPIHM
    * </pre>
    *
    * Protobuf type {@code IrodoriMasterStartGalleryReq}
@@ -80,12 +80,12 @@ public final class IrodoriMasterStartGalleryReqOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
+            case 80: {
 
               levelId_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 120: {
 
               difficulty_ = input.readUInt32();
               break;
@@ -122,10 +122,10 @@ public final class IrodoriMasterStartGalleryReqOuterClass {
               emu.grasscutter.net.proto.IrodoriMasterStartGalleryReqOuterClass.IrodoriMasterStartGalleryReq.class, emu.grasscutter.net.proto.IrodoriMasterStartGalleryReqOuterClass.IrodoriMasterStartGalleryReq.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 11;
+    public static final int LEVEL_ID_FIELD_NUMBER = 10;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 11;</code>
+     * <code>uint32 level_id = 10;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class IrodoriMasterStartGalleryReqOuterClass {
       return levelId_;
     }
 
-    public static final int DIFFICULTY_FIELD_NUMBER = 14;
+    public static final int DIFFICULTY_FIELD_NUMBER = 15;
     private int difficulty_;
     /**
-     * <code>uint32 difficulty = 14;</code>
+     * <code>uint32 difficulty = 15;</code>
      * @return The difficulty.
      */
     @java.lang.Override
@@ -159,10 +159,10 @@ public final class IrodoriMasterStartGalleryReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (levelId_ != 0) {
-        output.writeUInt32(11, levelId_);
+        output.writeUInt32(10, levelId_);
       }
       if (difficulty_ != 0) {
-        output.writeUInt32(14, difficulty_);
+        output.writeUInt32(15, difficulty_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +175,11 @@ public final class IrodoriMasterStartGalleryReqOuterClass {
       size = 0;
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, levelId_);
+          .computeUInt32Size(10, levelId_);
       }
       if (difficulty_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, difficulty_);
+          .computeUInt32Size(15, difficulty_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class IrodoriMasterStartGalleryReqOuterClass {
     }
     /**
      * <pre>
-     * Name: IGENANOLEOL
-     * CmdId: 8344
+     * CmdId: 8008
+     * Obf: PPBCCHFPIHM
      * </pre>
      *
      * Protobuf type {@code IrodoriMasterStartGalleryReq}
@@ -470,7 +470,7 @@ public final class IrodoriMasterStartGalleryReqOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 11;</code>
+       * <code>uint32 level_id = 10;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class IrodoriMasterStartGalleryReqOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 11;</code>
+       * <code>uint32 level_id = 10;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class IrodoriMasterStartGalleryReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 11;</code>
+       * <code>uint32 level_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -501,7 +501,7 @@ public final class IrodoriMasterStartGalleryReqOuterClass {
 
       private int difficulty_ ;
       /**
-       * <code>uint32 difficulty = 14;</code>
+       * <code>uint32 difficulty = 15;</code>
        * @return The difficulty.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class IrodoriMasterStartGalleryReqOuterClass {
         return difficulty_;
       }
       /**
-       * <code>uint32 difficulty = 14;</code>
+       * <code>uint32 difficulty = 15;</code>
        * @param value The difficulty to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class IrodoriMasterStartGalleryReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficulty = 14;</code>
+       * <code>uint32 difficulty = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficulty() {
@@ -598,7 +598,7 @@ public final class IrodoriMasterStartGalleryReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"IrodoriMasterStartGalleryReq.proto\"D\n\034" +
       "IrodoriMasterStartGalleryReq\022\020\n\010level_id" +
-      "\030\013 \001(\r\022\022\n\ndifficulty\030\016 \001(\rB\033\n\031emu.grassc" +
+      "\030\n \001(\r\022\022\n\ndifficulty\030\017 \001(\rB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

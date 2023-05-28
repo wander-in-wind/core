@@ -26,8 +26,8 @@ public final class ActivityReadPushTipsRspOuterClass {
   }
   /**
    * <pre>
-   * Name: LEILOFMJCIF
-   * CmdId: 8119
+   * CmdId: 8669
+   * Obf: CGNHFOKLMKB
    * </pre>
    *
    * Protobuf type {@code ActivityReadPushTipsRsp}
@@ -279,8 +279,8 @@ public final class ActivityReadPushTipsRspOuterClass {
     }
     /**
      * <pre>
-     * Name: LEILOFMJCIF
-     * CmdId: 8119
+     * CmdId: 8669
+     * Obf: CGNHFOKLMKB
      * </pre>
      *
      * Protobuf type {@code ActivityReadPushTipsRsp}

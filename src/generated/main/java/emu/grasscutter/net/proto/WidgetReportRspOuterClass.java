@@ -19,7 +19,7 @@ public final class WidgetReportRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 material_id = 5;</code>
+     * <code>uint32 material_id = 8;</code>
      * @return The materialId.
      */
     int getMaterialId();
@@ -32,8 +32,8 @@ public final class WidgetReportRspOuterClass {
   }
   /**
    * <pre>
-   * Name: BCHGENBPFJI
-   * CmdId: 4252
+   * CmdId: 4292
+   * Obf: KLAFBCFKMAM
    * </pre>
    *
    * Protobuf type {@code WidgetReportRsp}
@@ -80,14 +80,14 @@ public final class WidgetReportRspOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
-
-              materialId_ = input.readUInt32();
-              break;
-            }
             case 56: {
 
               retcode_ = input.readInt32();
+              break;
+            }
+            case 64: {
+
+              materialId_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,10 +122,10 @@ public final class WidgetReportRspOuterClass {
               emu.grasscutter.net.proto.WidgetReportRspOuterClass.WidgetReportRsp.class, emu.grasscutter.net.proto.WidgetReportRspOuterClass.WidgetReportRsp.Builder.class);
     }
 
-    public static final int MATERIAL_ID_FIELD_NUMBER = 5;
+    public static final int MATERIAL_ID_FIELD_NUMBER = 8;
     private int materialId_;
     /**
-     * <code>uint32 material_id = 5;</code>
+     * <code>uint32 material_id = 8;</code>
      * @return The materialId.
      */
     @java.lang.Override
@@ -158,11 +158,11 @@ public final class WidgetReportRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (materialId_ != 0) {
-        output.writeUInt32(5, materialId_);
-      }
       if (retcode_ != 0) {
         output.writeInt32(7, retcode_);
+      }
+      if (materialId_ != 0) {
+        output.writeUInt32(8, materialId_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class WidgetReportRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (materialId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, materialId_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(7, retcode_);
+      }
+      if (materialId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, materialId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class WidgetReportRspOuterClass {
     }
     /**
      * <pre>
-     * Name: BCHGENBPFJI
-     * CmdId: 4252
+     * CmdId: 4292
+     * Obf: KLAFBCFKMAM
      * </pre>
      *
      * Protobuf type {@code WidgetReportRsp}
@@ -470,7 +470,7 @@ public final class WidgetReportRspOuterClass {
 
       private int materialId_ ;
       /**
-       * <code>uint32 material_id = 5;</code>
+       * <code>uint32 material_id = 8;</code>
        * @return The materialId.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class WidgetReportRspOuterClass {
         return materialId_;
       }
       /**
-       * <code>uint32 material_id = 5;</code>
+       * <code>uint32 material_id = 8;</code>
        * @param value The materialId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class WidgetReportRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 material_id = 5;</code>
+       * <code>uint32 material_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaterialId() {
@@ -597,7 +597,7 @@ public final class WidgetReportRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025WidgetReportRsp.proto\"7\n\017WidgetReportR" +
-      "sp\022\023\n\013material_id\030\005 \001(\r\022\017\n\007retcode\030\007 \001(\005" +
+      "sp\022\023\n\013material_id\030\010 \001(\r\022\017\n\007retcode\030\007 \001(\005" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

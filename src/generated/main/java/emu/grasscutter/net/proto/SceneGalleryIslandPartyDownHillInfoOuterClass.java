@@ -19,37 +19,37 @@ public final class SceneGalleryIslandPartyDownHillInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 coin = 4;</code>
+     * <code>uint32 coin = 7;</code>
      * @return The coin.
      */
     int getCoin();
 
     /**
-     * <code>uint32 total_kill_monster_count = 12;</code>
-     * @return The totalKillMonsterCount.
+     * <code>uint32 max_kill_monster_count = 10;</code>
+     * @return The maxKillMonsterCount.
      */
-    int getTotalKillMonsterCount();
+    int getMaxKillMonsterCount();
 
     /**
-     * <code>.GalleryStartSource start_source = 2;</code>
+     * <code>.GalleryStartSource start_source = 3;</code>
      * @return The enum numeric value on the wire for startSource.
      */
     int getStartSourceValue();
     /**
-     * <code>.GalleryStartSource start_source = 2;</code>
+     * <code>.GalleryStartSource start_source = 3;</code>
      * @return The startSource.
      */
     emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource getStartSource();
 
     /**
-     * <code>uint32 max_kill_monster_count = 1;</code>
-     * @return The maxKillMonsterCount.
+     * <code>uint32 total_kill_monster_count = 4;</code>
+     * @return The totalKillMonsterCount.
      */
-    int getMaxKillMonsterCount();
+    int getTotalKillMonsterCount();
   }
   /**
    * <pre>
-   * Name: CCABBNBIMHF
+   * Obf: IILPODAEJLO
    * </pre>
    *
    * Protobuf type {@code SceneGalleryIslandPartyDownHillInfo}
@@ -97,12 +97,7 @@ public final class SceneGalleryIslandPartyDownHillInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              maxKillMonsterCount_ = input.readUInt32();
-              break;
-            }
-            case 16: {
+            case 24: {
               int rawValue = input.readEnum();
 
               startSource_ = rawValue;
@@ -110,12 +105,17 @@ public final class SceneGalleryIslandPartyDownHillInfoOuterClass {
             }
             case 32: {
 
+              totalKillMonsterCount_ = input.readUInt32();
+              break;
+            }
+            case 56: {
+
               coin_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 80: {
 
-              totalKillMonsterCount_ = input.readUInt32();
+              maxKillMonsterCount_ = input.readUInt32();
               break;
             }
             default: {
@@ -150,10 +150,10 @@ public final class SceneGalleryIslandPartyDownHillInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryIslandPartyDownHillInfoOuterClass.SceneGalleryIslandPartyDownHillInfo.class, emu.grasscutter.net.proto.SceneGalleryIslandPartyDownHillInfoOuterClass.SceneGalleryIslandPartyDownHillInfo.Builder.class);
     }
 
-    public static final int COIN_FIELD_NUMBER = 4;
+    public static final int COIN_FIELD_NUMBER = 7;
     private int coin_;
     /**
-     * <code>uint32 coin = 4;</code>
+     * <code>uint32 coin = 7;</code>
      * @return The coin.
      */
     @java.lang.Override
@@ -161,28 +161,28 @@ public final class SceneGalleryIslandPartyDownHillInfoOuterClass {
       return coin_;
     }
 
-    public static final int TOTAL_KILL_MONSTER_COUNT_FIELD_NUMBER = 12;
-    private int totalKillMonsterCount_;
+    public static final int MAX_KILL_MONSTER_COUNT_FIELD_NUMBER = 10;
+    private int maxKillMonsterCount_;
     /**
-     * <code>uint32 total_kill_monster_count = 12;</code>
-     * @return The totalKillMonsterCount.
+     * <code>uint32 max_kill_monster_count = 10;</code>
+     * @return The maxKillMonsterCount.
      */
     @java.lang.Override
-    public int getTotalKillMonsterCount() {
-      return totalKillMonsterCount_;
+    public int getMaxKillMonsterCount() {
+      return maxKillMonsterCount_;
     }
 
-    public static final int START_SOURCE_FIELD_NUMBER = 2;
+    public static final int START_SOURCE_FIELD_NUMBER = 3;
     private int startSource_;
     /**
-     * <code>.GalleryStartSource start_source = 2;</code>
+     * <code>.GalleryStartSource start_source = 3;</code>
      * @return The enum numeric value on the wire for startSource.
      */
     @java.lang.Override public int getStartSourceValue() {
       return startSource_;
     }
     /**
-     * <code>.GalleryStartSource start_source = 2;</code>
+     * <code>.GalleryStartSource start_source = 3;</code>
      * @return The startSource.
      */
     @java.lang.Override public emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource getStartSource() {
@@ -191,15 +191,15 @@ public final class SceneGalleryIslandPartyDownHillInfoOuterClass {
       return result == null ? emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.UNRECOGNIZED : result;
     }
 
-    public static final int MAX_KILL_MONSTER_COUNT_FIELD_NUMBER = 1;
-    private int maxKillMonsterCount_;
+    public static final int TOTAL_KILL_MONSTER_COUNT_FIELD_NUMBER = 4;
+    private int totalKillMonsterCount_;
     /**
-     * <code>uint32 max_kill_monster_count = 1;</code>
-     * @return The maxKillMonsterCount.
+     * <code>uint32 total_kill_monster_count = 4;</code>
+     * @return The totalKillMonsterCount.
      */
     @java.lang.Override
-    public int getMaxKillMonsterCount() {
-      return maxKillMonsterCount_;
+    public int getTotalKillMonsterCount() {
+      return totalKillMonsterCount_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -216,17 +216,17 @@ public final class SceneGalleryIslandPartyDownHillInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (maxKillMonsterCount_ != 0) {
-        output.writeUInt32(1, maxKillMonsterCount_);
-      }
       if (startSource_ != emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.GALLERY_START_BY_NONE.getNumber()) {
-        output.writeEnum(2, startSource_);
-      }
-      if (coin_ != 0) {
-        output.writeUInt32(4, coin_);
+        output.writeEnum(3, startSource_);
       }
       if (totalKillMonsterCount_ != 0) {
-        output.writeUInt32(12, totalKillMonsterCount_);
+        output.writeUInt32(4, totalKillMonsterCount_);
+      }
+      if (coin_ != 0) {
+        output.writeUInt32(7, coin_);
+      }
+      if (maxKillMonsterCount_ != 0) {
+        output.writeUInt32(10, maxKillMonsterCount_);
       }
       unknownFields.writeTo(output);
     }
@@ -237,21 +237,21 @@ public final class SceneGalleryIslandPartyDownHillInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (maxKillMonsterCount_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, maxKillMonsterCount_);
-      }
       if (startSource_ != emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.GALLERY_START_BY_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(2, startSource_);
-      }
-      if (coin_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, coin_);
+          .computeEnumSize(3, startSource_);
       }
       if (totalKillMonsterCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, totalKillMonsterCount_);
+          .computeUInt32Size(4, totalKillMonsterCount_);
+      }
+      if (coin_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, coin_);
+      }
+      if (maxKillMonsterCount_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, maxKillMonsterCount_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -270,11 +270,11 @@ public final class SceneGalleryIslandPartyDownHillInfoOuterClass {
 
       if (getCoin()
           != other.getCoin()) return false;
-      if (getTotalKillMonsterCount()
-          != other.getTotalKillMonsterCount()) return false;
-      if (startSource_ != other.startSource_) return false;
       if (getMaxKillMonsterCount()
           != other.getMaxKillMonsterCount()) return false;
+      if (startSource_ != other.startSource_) return false;
+      if (getTotalKillMonsterCount()
+          != other.getTotalKillMonsterCount()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -288,12 +288,12 @@ public final class SceneGalleryIslandPartyDownHillInfoOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + COIN_FIELD_NUMBER;
       hash = (53 * hash) + getCoin();
-      hash = (37 * hash) + TOTAL_KILL_MONSTER_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getTotalKillMonsterCount();
-      hash = (37 * hash) + START_SOURCE_FIELD_NUMBER;
-      hash = (53 * hash) + startSource_;
       hash = (37 * hash) + MAX_KILL_MONSTER_COUNT_FIELD_NUMBER;
       hash = (53 * hash) + getMaxKillMonsterCount();
+      hash = (37 * hash) + START_SOURCE_FIELD_NUMBER;
+      hash = (53 * hash) + startSource_;
+      hash = (37 * hash) + TOTAL_KILL_MONSTER_COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getTotalKillMonsterCount();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -391,7 +391,7 @@ public final class SceneGalleryIslandPartyDownHillInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: CCABBNBIMHF
+     * Obf: IILPODAEJLO
      * </pre>
      *
      * Protobuf type {@code SceneGalleryIslandPartyDownHillInfo}
@@ -433,11 +433,11 @@ public final class SceneGalleryIslandPartyDownHillInfoOuterClass {
         super.clear();
         coin_ = 0;
 
-        totalKillMonsterCount_ = 0;
+        maxKillMonsterCount_ = 0;
 
         startSource_ = 0;
 
-        maxKillMonsterCount_ = 0;
+        totalKillMonsterCount_ = 0;
 
         return this;
       }
@@ -466,9 +466,9 @@ public final class SceneGalleryIslandPartyDownHillInfoOuterClass {
       public emu.grasscutter.net.proto.SceneGalleryIslandPartyDownHillInfoOuterClass.SceneGalleryIslandPartyDownHillInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGalleryIslandPartyDownHillInfoOuterClass.SceneGalleryIslandPartyDownHillInfo result = new emu.grasscutter.net.proto.SceneGalleryIslandPartyDownHillInfoOuterClass.SceneGalleryIslandPartyDownHillInfo(this);
         result.coin_ = coin_;
-        result.totalKillMonsterCount_ = totalKillMonsterCount_;
-        result.startSource_ = startSource_;
         result.maxKillMonsterCount_ = maxKillMonsterCount_;
+        result.startSource_ = startSource_;
+        result.totalKillMonsterCount_ = totalKillMonsterCount_;
         onBuilt();
         return result;
       }
@@ -520,14 +520,14 @@ public final class SceneGalleryIslandPartyDownHillInfoOuterClass {
         if (other.getCoin() != 0) {
           setCoin(other.getCoin());
         }
-        if (other.getTotalKillMonsterCount() != 0) {
-          setTotalKillMonsterCount(other.getTotalKillMonsterCount());
+        if (other.getMaxKillMonsterCount() != 0) {
+          setMaxKillMonsterCount(other.getMaxKillMonsterCount());
         }
         if (other.startSource_ != 0) {
           setStartSourceValue(other.getStartSourceValue());
         }
-        if (other.getMaxKillMonsterCount() != 0) {
-          setMaxKillMonsterCount(other.getMaxKillMonsterCount());
+        if (other.getTotalKillMonsterCount() != 0) {
+          setTotalKillMonsterCount(other.getTotalKillMonsterCount());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -560,7 +560,7 @@ public final class SceneGalleryIslandPartyDownHillInfoOuterClass {
 
       private int coin_ ;
       /**
-       * <code>uint32 coin = 4;</code>
+       * <code>uint32 coin = 7;</code>
        * @return The coin.
        */
       @java.lang.Override
@@ -568,7 +568,7 @@ public final class SceneGalleryIslandPartyDownHillInfoOuterClass {
         return coin_;
       }
       /**
-       * <code>uint32 coin = 4;</code>
+       * <code>uint32 coin = 7;</code>
        * @param value The coin to set.
        * @return This builder for chaining.
        */
@@ -579,7 +579,7 @@ public final class SceneGalleryIslandPartyDownHillInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 coin = 4;</code>
+       * <code>uint32 coin = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearCoin() {
@@ -589,47 +589,47 @@ public final class SceneGalleryIslandPartyDownHillInfoOuterClass {
         return this;
       }
 
-      private int totalKillMonsterCount_ ;
+      private int maxKillMonsterCount_ ;
       /**
-       * <code>uint32 total_kill_monster_count = 12;</code>
-       * @return The totalKillMonsterCount.
+       * <code>uint32 max_kill_monster_count = 10;</code>
+       * @return The maxKillMonsterCount.
        */
       @java.lang.Override
-      public int getTotalKillMonsterCount() {
-        return totalKillMonsterCount_;
+      public int getMaxKillMonsterCount() {
+        return maxKillMonsterCount_;
       }
       /**
-       * <code>uint32 total_kill_monster_count = 12;</code>
-       * @param value The totalKillMonsterCount to set.
+       * <code>uint32 max_kill_monster_count = 10;</code>
+       * @param value The maxKillMonsterCount to set.
        * @return This builder for chaining.
        */
-      public Builder setTotalKillMonsterCount(int value) {
+      public Builder setMaxKillMonsterCount(int value) {
         
-        totalKillMonsterCount_ = value;
+        maxKillMonsterCount_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 total_kill_monster_count = 12;</code>
+       * <code>uint32 max_kill_monster_count = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTotalKillMonsterCount() {
+      public Builder clearMaxKillMonsterCount() {
         
-        totalKillMonsterCount_ = 0;
+        maxKillMonsterCount_ = 0;
         onChanged();
         return this;
       }
 
       private int startSource_ = 0;
       /**
-       * <code>.GalleryStartSource start_source = 2;</code>
+       * <code>.GalleryStartSource start_source = 3;</code>
        * @return The enum numeric value on the wire for startSource.
        */
       @java.lang.Override public int getStartSourceValue() {
         return startSource_;
       }
       /**
-       * <code>.GalleryStartSource start_source = 2;</code>
+       * <code>.GalleryStartSource start_source = 3;</code>
        * @param value The enum numeric value on the wire for startSource to set.
        * @return This builder for chaining.
        */
@@ -640,7 +640,7 @@ public final class SceneGalleryIslandPartyDownHillInfoOuterClass {
         return this;
       }
       /**
-       * <code>.GalleryStartSource start_source = 2;</code>
+       * <code>.GalleryStartSource start_source = 3;</code>
        * @return The startSource.
        */
       @java.lang.Override
@@ -650,7 +650,7 @@ public final class SceneGalleryIslandPartyDownHillInfoOuterClass {
         return result == null ? emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.UNRECOGNIZED : result;
       }
       /**
-       * <code>.GalleryStartSource start_source = 2;</code>
+       * <code>.GalleryStartSource start_source = 3;</code>
        * @param value The startSource to set.
        * @return This builder for chaining.
        */
@@ -664,7 +664,7 @@ public final class SceneGalleryIslandPartyDownHillInfoOuterClass {
         return this;
       }
       /**
-       * <code>.GalleryStartSource start_source = 2;</code>
+       * <code>.GalleryStartSource start_source = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearStartSource() {
@@ -674,33 +674,33 @@ public final class SceneGalleryIslandPartyDownHillInfoOuterClass {
         return this;
       }
 
-      private int maxKillMonsterCount_ ;
+      private int totalKillMonsterCount_ ;
       /**
-       * <code>uint32 max_kill_monster_count = 1;</code>
-       * @return The maxKillMonsterCount.
+       * <code>uint32 total_kill_monster_count = 4;</code>
+       * @return The totalKillMonsterCount.
        */
       @java.lang.Override
-      public int getMaxKillMonsterCount() {
-        return maxKillMonsterCount_;
+      public int getTotalKillMonsterCount() {
+        return totalKillMonsterCount_;
       }
       /**
-       * <code>uint32 max_kill_monster_count = 1;</code>
-       * @param value The maxKillMonsterCount to set.
+       * <code>uint32 total_kill_monster_count = 4;</code>
+       * @param value The totalKillMonsterCount to set.
        * @return This builder for chaining.
        */
-      public Builder setMaxKillMonsterCount(int value) {
+      public Builder setTotalKillMonsterCount(int value) {
         
-        maxKillMonsterCount_ = value;
+        totalKillMonsterCount_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 max_kill_monster_count = 1;</code>
+       * <code>uint32 total_kill_monster_count = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMaxKillMonsterCount() {
+      public Builder clearTotalKillMonsterCount() {
         
-        maxKillMonsterCount_ = 0;
+        totalKillMonsterCount_ = 0;
         onChanged();
         return this;
       }
@@ -773,10 +773,10 @@ public final class SceneGalleryIslandPartyDownHillInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n)SceneGalleryIslandPartyDownHillInfo.pr" +
       "oto\032\030GalleryStartSource.proto\"\240\001\n#SceneG" +
-      "alleryIslandPartyDownHillInfo\022\014\n\004coin\030\004 " +
-      "\001(\r\022 \n\030total_kill_monster_count\030\014 \001(\r\022)\n" +
-      "\014start_source\030\002 \001(\0162\023.GalleryStartSource" +
-      "\022\036\n\026max_kill_monster_count\030\001 \001(\rB\033\n\031emu." +
+      "alleryIslandPartyDownHillInfo\022\014\n\004coin\030\007 " +
+      "\001(\r\022\036\n\026max_kill_monster_count\030\n \001(\r\022)\n\014s" +
+      "tart_source\030\003 \001(\0162\023.GalleryStartSource\022 " +
+      "\n\030total_kill_monster_count\030\004 \001(\rB\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -789,7 +789,7 @@ public final class SceneGalleryIslandPartyDownHillInfoOuterClass {
     internal_static_SceneGalleryIslandPartyDownHillInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryIslandPartyDownHillInfo_descriptor,
-        new java.lang.String[] { "Coin", "TotalKillMonsterCount", "StartSource", "MaxKillMonsterCount", });
+        new java.lang.String[] { "Coin", "MaxKillMonsterCount", "StartSource", "TotalKillMonsterCount", });
     emu.grasscutter.net.proto.GalleryStartSourceOuterClass.getDescriptor();
   }
 

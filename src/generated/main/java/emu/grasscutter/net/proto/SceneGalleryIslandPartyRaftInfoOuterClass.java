@@ -19,49 +19,49 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 point_id = 4;</code>
-     * @return The pointId.
+     * <code>uint32 MPEGPHEPACG = 6;</code>
+     * @return The mPEGPHEPACG.
      */
-    int getPointId();
+    int getMPEGPHEPACG();
 
     /**
-     * <code>uint32 ONIGIPPLAMK = 6;</code>
-     * @return The oNIGIPPLAMK.
+     * <code>uint32 LPGAJONPBMC = 14;</code>
+     * @return The lPGAJONPBMC.
      */
-    int getONIGIPPLAMK();
+    int getLPGAJONPBMC();
 
     /**
-     * <code>uint32 coin = 2;</code>
+     * <code>uint32 coin = 5;</code>
      * @return The coin.
      */
     int getCoin();
 
     /**
-     * <code>uint32 IPONIBNKJIL = 7;</code>
-     * @return The iPONIBNKJIL.
+     * <code>uint32 PAOCIBHJAHO = 9;</code>
+     * @return The pAOCIBHJAHO.
      */
-    int getIPONIBNKJIL();
+    int getPAOCIBHJAHO();
 
     /**
-     * <code>uint32 KCHKIPPLFBF = 1;</code>
-     * @return The kCHKIPPLFBF.
+     * <code>uint32 point_id = 11;</code>
+     * @return The pointId.
      */
-    int getKCHKIPPLFBF();
+    int getPointId();
 
     /**
-     * <code>.GalleryStartSource start_source = 13;</code>
+     * <code>.GalleryStartSource start_source = 2;</code>
      * @return The enum numeric value on the wire for startSource.
      */
     int getStartSourceValue();
     /**
-     * <code>.GalleryStartSource start_source = 13;</code>
+     * <code>.GalleryStartSource start_source = 2;</code>
      * @return The startSource.
      */
     emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource getStartSource();
   }
   /**
    * <pre>
-   * Name: LGAEGOFKODE
+   * Obf: DNKEAFFCEPM
    * </pre>
    *
    * Protobuf type {@code SceneGalleryIslandPartyRaftInfo}
@@ -109,35 +109,35 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 16: {
+              int rawValue = input.readEnum();
 
-              kCHKIPPLFBF_ = input.readUInt32();
+              startSource_ = rawValue;
               break;
             }
-            case 16: {
+            case 40: {
 
               coin_ = input.readUInt32();
               break;
             }
-            case 32: {
+            case 48: {
+
+              mPEGPHEPACG_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
+              pAOCIBHJAHO_ = input.readUInt32();
+              break;
+            }
+            case 88: {
 
               pointId_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 112: {
 
-              oNIGIPPLAMK_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              iPONIBNKJIL_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-              int rawValue = input.readEnum();
-
-              startSource_ = rawValue;
+              lPGAJONPBMC_ = input.readUInt32();
               break;
             }
             default: {
@@ -172,32 +172,32 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryIslandPartyRaftInfoOuterClass.SceneGalleryIslandPartyRaftInfo.class, emu.grasscutter.net.proto.SceneGalleryIslandPartyRaftInfoOuterClass.SceneGalleryIslandPartyRaftInfo.Builder.class);
     }
 
-    public static final int POINT_ID_FIELD_NUMBER = 4;
-    private int pointId_;
+    public static final int MPEGPHEPACG_FIELD_NUMBER = 6;
+    private int mPEGPHEPACG_;
     /**
-     * <code>uint32 point_id = 4;</code>
-     * @return The pointId.
+     * <code>uint32 MPEGPHEPACG = 6;</code>
+     * @return The mPEGPHEPACG.
      */
     @java.lang.Override
-    public int getPointId() {
-      return pointId_;
+    public int getMPEGPHEPACG() {
+      return mPEGPHEPACG_;
     }
 
-    public static final int ONIGIPPLAMK_FIELD_NUMBER = 6;
-    private int oNIGIPPLAMK_;
+    public static final int LPGAJONPBMC_FIELD_NUMBER = 14;
+    private int lPGAJONPBMC_;
     /**
-     * <code>uint32 ONIGIPPLAMK = 6;</code>
-     * @return The oNIGIPPLAMK.
+     * <code>uint32 LPGAJONPBMC = 14;</code>
+     * @return The lPGAJONPBMC.
      */
     @java.lang.Override
-    public int getONIGIPPLAMK() {
-      return oNIGIPPLAMK_;
+    public int getLPGAJONPBMC() {
+      return lPGAJONPBMC_;
     }
 
-    public static final int COIN_FIELD_NUMBER = 2;
+    public static final int COIN_FIELD_NUMBER = 5;
     private int coin_;
     /**
-     * <code>uint32 coin = 2;</code>
+     * <code>uint32 coin = 5;</code>
      * @return The coin.
      */
     @java.lang.Override
@@ -205,39 +205,39 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
       return coin_;
     }
 
-    public static final int IPONIBNKJIL_FIELD_NUMBER = 7;
-    private int iPONIBNKJIL_;
+    public static final int PAOCIBHJAHO_FIELD_NUMBER = 9;
+    private int pAOCIBHJAHO_;
     /**
-     * <code>uint32 IPONIBNKJIL = 7;</code>
-     * @return The iPONIBNKJIL.
+     * <code>uint32 PAOCIBHJAHO = 9;</code>
+     * @return The pAOCIBHJAHO.
      */
     @java.lang.Override
-    public int getIPONIBNKJIL() {
-      return iPONIBNKJIL_;
+    public int getPAOCIBHJAHO() {
+      return pAOCIBHJAHO_;
     }
 
-    public static final int KCHKIPPLFBF_FIELD_NUMBER = 1;
-    private int kCHKIPPLFBF_;
+    public static final int POINT_ID_FIELD_NUMBER = 11;
+    private int pointId_;
     /**
-     * <code>uint32 KCHKIPPLFBF = 1;</code>
-     * @return The kCHKIPPLFBF.
+     * <code>uint32 point_id = 11;</code>
+     * @return The pointId.
      */
     @java.lang.Override
-    public int getKCHKIPPLFBF() {
-      return kCHKIPPLFBF_;
+    public int getPointId() {
+      return pointId_;
     }
 
-    public static final int START_SOURCE_FIELD_NUMBER = 13;
+    public static final int START_SOURCE_FIELD_NUMBER = 2;
     private int startSource_;
     /**
-     * <code>.GalleryStartSource start_source = 13;</code>
+     * <code>.GalleryStartSource start_source = 2;</code>
      * @return The enum numeric value on the wire for startSource.
      */
     @java.lang.Override public int getStartSourceValue() {
       return startSource_;
     }
     /**
-     * <code>.GalleryStartSource start_source = 13;</code>
+     * <code>.GalleryStartSource start_source = 2;</code>
      * @return The startSource.
      */
     @java.lang.Override public emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource getStartSource() {
@@ -260,23 +260,23 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (kCHKIPPLFBF_ != 0) {
-        output.writeUInt32(1, kCHKIPPLFBF_);
+      if (startSource_ != emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.GALLERY_START_BY_NONE.getNumber()) {
+        output.writeEnum(2, startSource_);
       }
       if (coin_ != 0) {
-        output.writeUInt32(2, coin_);
+        output.writeUInt32(5, coin_);
+      }
+      if (mPEGPHEPACG_ != 0) {
+        output.writeUInt32(6, mPEGPHEPACG_);
+      }
+      if (pAOCIBHJAHO_ != 0) {
+        output.writeUInt32(9, pAOCIBHJAHO_);
       }
       if (pointId_ != 0) {
-        output.writeUInt32(4, pointId_);
+        output.writeUInt32(11, pointId_);
       }
-      if (oNIGIPPLAMK_ != 0) {
-        output.writeUInt32(6, oNIGIPPLAMK_);
-      }
-      if (iPONIBNKJIL_ != 0) {
-        output.writeUInt32(7, iPONIBNKJIL_);
-      }
-      if (startSource_ != emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.GALLERY_START_BY_NONE.getNumber()) {
-        output.writeEnum(13, startSource_);
+      if (lPGAJONPBMC_ != 0) {
+        output.writeUInt32(14, lPGAJONPBMC_);
       }
       unknownFields.writeTo(output);
     }
@@ -287,29 +287,29 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (kCHKIPPLFBF_ != 0) {
+      if (startSource_ != emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.GALLERY_START_BY_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, kCHKIPPLFBF_);
+          .computeEnumSize(2, startSource_);
       }
       if (coin_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, coin_);
+          .computeUInt32Size(5, coin_);
+      }
+      if (mPEGPHEPACG_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, mPEGPHEPACG_);
+      }
+      if (pAOCIBHJAHO_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, pAOCIBHJAHO_);
       }
       if (pointId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, pointId_);
+          .computeUInt32Size(11, pointId_);
       }
-      if (oNIGIPPLAMK_ != 0) {
+      if (lPGAJONPBMC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, oNIGIPPLAMK_);
-      }
-      if (iPONIBNKJIL_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, iPONIBNKJIL_);
-      }
-      if (startSource_ != emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.GALLERY_START_BY_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(13, startSource_);
+          .computeUInt32Size(14, lPGAJONPBMC_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -326,16 +326,16 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneGalleryIslandPartyRaftInfoOuterClass.SceneGalleryIslandPartyRaftInfo other = (emu.grasscutter.net.proto.SceneGalleryIslandPartyRaftInfoOuterClass.SceneGalleryIslandPartyRaftInfo) obj;
 
-      if (getPointId()
-          != other.getPointId()) return false;
-      if (getONIGIPPLAMK()
-          != other.getONIGIPPLAMK()) return false;
+      if (getMPEGPHEPACG()
+          != other.getMPEGPHEPACG()) return false;
+      if (getLPGAJONPBMC()
+          != other.getLPGAJONPBMC()) return false;
       if (getCoin()
           != other.getCoin()) return false;
-      if (getIPONIBNKJIL()
-          != other.getIPONIBNKJIL()) return false;
-      if (getKCHKIPPLFBF()
-          != other.getKCHKIPPLFBF()) return false;
+      if (getPAOCIBHJAHO()
+          != other.getPAOCIBHJAHO()) return false;
+      if (getPointId()
+          != other.getPointId()) return false;
       if (startSource_ != other.startSource_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
@@ -348,16 +348,16 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + POINT_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getPointId();
-      hash = (37 * hash) + ONIGIPPLAMK_FIELD_NUMBER;
-      hash = (53 * hash) + getONIGIPPLAMK();
+      hash = (37 * hash) + MPEGPHEPACG_FIELD_NUMBER;
+      hash = (53 * hash) + getMPEGPHEPACG();
+      hash = (37 * hash) + LPGAJONPBMC_FIELD_NUMBER;
+      hash = (53 * hash) + getLPGAJONPBMC();
       hash = (37 * hash) + COIN_FIELD_NUMBER;
       hash = (53 * hash) + getCoin();
-      hash = (37 * hash) + IPONIBNKJIL_FIELD_NUMBER;
-      hash = (53 * hash) + getIPONIBNKJIL();
-      hash = (37 * hash) + KCHKIPPLFBF_FIELD_NUMBER;
-      hash = (53 * hash) + getKCHKIPPLFBF();
+      hash = (37 * hash) + PAOCIBHJAHO_FIELD_NUMBER;
+      hash = (53 * hash) + getPAOCIBHJAHO();
+      hash = (37 * hash) + POINT_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getPointId();
       hash = (37 * hash) + START_SOURCE_FIELD_NUMBER;
       hash = (53 * hash) + startSource_;
       hash = (29 * hash) + unknownFields.hashCode();
@@ -457,7 +457,7 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: LGAEGOFKODE
+     * Obf: DNKEAFFCEPM
      * </pre>
      *
      * Protobuf type {@code SceneGalleryIslandPartyRaftInfo}
@@ -497,15 +497,15 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        pointId_ = 0;
+        mPEGPHEPACG_ = 0;
 
-        oNIGIPPLAMK_ = 0;
+        lPGAJONPBMC_ = 0;
 
         coin_ = 0;
 
-        iPONIBNKJIL_ = 0;
+        pAOCIBHJAHO_ = 0;
 
-        kCHKIPPLFBF_ = 0;
+        pointId_ = 0;
 
         startSource_ = 0;
 
@@ -535,11 +535,11 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneGalleryIslandPartyRaftInfoOuterClass.SceneGalleryIslandPartyRaftInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGalleryIslandPartyRaftInfoOuterClass.SceneGalleryIslandPartyRaftInfo result = new emu.grasscutter.net.proto.SceneGalleryIslandPartyRaftInfoOuterClass.SceneGalleryIslandPartyRaftInfo(this);
-        result.pointId_ = pointId_;
-        result.oNIGIPPLAMK_ = oNIGIPPLAMK_;
+        result.mPEGPHEPACG_ = mPEGPHEPACG_;
+        result.lPGAJONPBMC_ = lPGAJONPBMC_;
         result.coin_ = coin_;
-        result.iPONIBNKJIL_ = iPONIBNKJIL_;
-        result.kCHKIPPLFBF_ = kCHKIPPLFBF_;
+        result.pAOCIBHJAHO_ = pAOCIBHJAHO_;
+        result.pointId_ = pointId_;
         result.startSource_ = startSource_;
         onBuilt();
         return result;
@@ -589,20 +589,20 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneGalleryIslandPartyRaftInfoOuterClass.SceneGalleryIslandPartyRaftInfo other) {
         if (other == emu.grasscutter.net.proto.SceneGalleryIslandPartyRaftInfoOuterClass.SceneGalleryIslandPartyRaftInfo.getDefaultInstance()) return this;
-        if (other.getPointId() != 0) {
-          setPointId(other.getPointId());
+        if (other.getMPEGPHEPACG() != 0) {
+          setMPEGPHEPACG(other.getMPEGPHEPACG());
         }
-        if (other.getONIGIPPLAMK() != 0) {
-          setONIGIPPLAMK(other.getONIGIPPLAMK());
+        if (other.getLPGAJONPBMC() != 0) {
+          setLPGAJONPBMC(other.getLPGAJONPBMC());
         }
         if (other.getCoin() != 0) {
           setCoin(other.getCoin());
         }
-        if (other.getIPONIBNKJIL() != 0) {
-          setIPONIBNKJIL(other.getIPONIBNKJIL());
+        if (other.getPAOCIBHJAHO() != 0) {
+          setPAOCIBHJAHO(other.getPAOCIBHJAHO());
         }
-        if (other.getKCHKIPPLFBF() != 0) {
-          setKCHKIPPLFBF(other.getKCHKIPPLFBF());
+        if (other.getPointId() != 0) {
+          setPointId(other.getPointId());
         }
         if (other.startSource_ != 0) {
           setStartSourceValue(other.getStartSourceValue());
@@ -636,71 +636,71 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
         return this;
       }
 
-      private int pointId_ ;
+      private int mPEGPHEPACG_ ;
       /**
-       * <code>uint32 point_id = 4;</code>
-       * @return The pointId.
+       * <code>uint32 MPEGPHEPACG = 6;</code>
+       * @return The mPEGPHEPACG.
        */
       @java.lang.Override
-      public int getPointId() {
-        return pointId_;
+      public int getMPEGPHEPACG() {
+        return mPEGPHEPACG_;
       }
       /**
-       * <code>uint32 point_id = 4;</code>
-       * @param value The pointId to set.
+       * <code>uint32 MPEGPHEPACG = 6;</code>
+       * @param value The mPEGPHEPACG to set.
        * @return This builder for chaining.
        */
-      public Builder setPointId(int value) {
+      public Builder setMPEGPHEPACG(int value) {
         
-        pointId_ = value;
+        mPEGPHEPACG_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 point_id = 4;</code>
+       * <code>uint32 MPEGPHEPACG = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearPointId() {
+      public Builder clearMPEGPHEPACG() {
         
-        pointId_ = 0;
+        mPEGPHEPACG_ = 0;
         onChanged();
         return this;
       }
 
-      private int oNIGIPPLAMK_ ;
+      private int lPGAJONPBMC_ ;
       /**
-       * <code>uint32 ONIGIPPLAMK = 6;</code>
-       * @return The oNIGIPPLAMK.
+       * <code>uint32 LPGAJONPBMC = 14;</code>
+       * @return The lPGAJONPBMC.
        */
       @java.lang.Override
-      public int getONIGIPPLAMK() {
-        return oNIGIPPLAMK_;
+      public int getLPGAJONPBMC() {
+        return lPGAJONPBMC_;
       }
       /**
-       * <code>uint32 ONIGIPPLAMK = 6;</code>
-       * @param value The oNIGIPPLAMK to set.
+       * <code>uint32 LPGAJONPBMC = 14;</code>
+       * @param value The lPGAJONPBMC to set.
        * @return This builder for chaining.
        */
-      public Builder setONIGIPPLAMK(int value) {
+      public Builder setLPGAJONPBMC(int value) {
         
-        oNIGIPPLAMK_ = value;
+        lPGAJONPBMC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 ONIGIPPLAMK = 6;</code>
+       * <code>uint32 LPGAJONPBMC = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearONIGIPPLAMK() {
+      public Builder clearLPGAJONPBMC() {
         
-        oNIGIPPLAMK_ = 0;
+        lPGAJONPBMC_ = 0;
         onChanged();
         return this;
       }
 
       private int coin_ ;
       /**
-       * <code>uint32 coin = 2;</code>
+       * <code>uint32 coin = 5;</code>
        * @return The coin.
        */
       @java.lang.Override
@@ -708,7 +708,7 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
         return coin_;
       }
       /**
-       * <code>uint32 coin = 2;</code>
+       * <code>uint32 coin = 5;</code>
        * @param value The coin to set.
        * @return This builder for chaining.
        */
@@ -719,7 +719,7 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 coin = 2;</code>
+       * <code>uint32 coin = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearCoin() {
@@ -729,78 +729,78 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
         return this;
       }
 
-      private int iPONIBNKJIL_ ;
+      private int pAOCIBHJAHO_ ;
       /**
-       * <code>uint32 IPONIBNKJIL = 7;</code>
-       * @return The iPONIBNKJIL.
+       * <code>uint32 PAOCIBHJAHO = 9;</code>
+       * @return The pAOCIBHJAHO.
        */
       @java.lang.Override
-      public int getIPONIBNKJIL() {
-        return iPONIBNKJIL_;
+      public int getPAOCIBHJAHO() {
+        return pAOCIBHJAHO_;
       }
       /**
-       * <code>uint32 IPONIBNKJIL = 7;</code>
-       * @param value The iPONIBNKJIL to set.
+       * <code>uint32 PAOCIBHJAHO = 9;</code>
+       * @param value The pAOCIBHJAHO to set.
        * @return This builder for chaining.
        */
-      public Builder setIPONIBNKJIL(int value) {
+      public Builder setPAOCIBHJAHO(int value) {
         
-        iPONIBNKJIL_ = value;
+        pAOCIBHJAHO_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 IPONIBNKJIL = 7;</code>
+       * <code>uint32 PAOCIBHJAHO = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIPONIBNKJIL() {
+      public Builder clearPAOCIBHJAHO() {
         
-        iPONIBNKJIL_ = 0;
+        pAOCIBHJAHO_ = 0;
         onChanged();
         return this;
       }
 
-      private int kCHKIPPLFBF_ ;
+      private int pointId_ ;
       /**
-       * <code>uint32 KCHKIPPLFBF = 1;</code>
-       * @return The kCHKIPPLFBF.
+       * <code>uint32 point_id = 11;</code>
+       * @return The pointId.
        */
       @java.lang.Override
-      public int getKCHKIPPLFBF() {
-        return kCHKIPPLFBF_;
+      public int getPointId() {
+        return pointId_;
       }
       /**
-       * <code>uint32 KCHKIPPLFBF = 1;</code>
-       * @param value The kCHKIPPLFBF to set.
+       * <code>uint32 point_id = 11;</code>
+       * @param value The pointId to set.
        * @return This builder for chaining.
        */
-      public Builder setKCHKIPPLFBF(int value) {
+      public Builder setPointId(int value) {
         
-        kCHKIPPLFBF_ = value;
+        pointId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 KCHKIPPLFBF = 1;</code>
+       * <code>uint32 point_id = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearKCHKIPPLFBF() {
+      public Builder clearPointId() {
         
-        kCHKIPPLFBF_ = 0;
+        pointId_ = 0;
         onChanged();
         return this;
       }
 
       private int startSource_ = 0;
       /**
-       * <code>.GalleryStartSource start_source = 13;</code>
+       * <code>.GalleryStartSource start_source = 2;</code>
        * @return The enum numeric value on the wire for startSource.
        */
       @java.lang.Override public int getStartSourceValue() {
         return startSource_;
       }
       /**
-       * <code>.GalleryStartSource start_source = 13;</code>
+       * <code>.GalleryStartSource start_source = 2;</code>
        * @param value The enum numeric value on the wire for startSource to set.
        * @return This builder for chaining.
        */
@@ -811,7 +811,7 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
         return this;
       }
       /**
-       * <code>.GalleryStartSource start_source = 13;</code>
+       * <code>.GalleryStartSource start_source = 2;</code>
        * @return The startSource.
        */
       @java.lang.Override
@@ -821,7 +821,7 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
         return result == null ? emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.UNRECOGNIZED : result;
       }
       /**
-       * <code>.GalleryStartSource start_source = 13;</code>
+       * <code>.GalleryStartSource start_source = 2;</code>
        * @param value The startSource to set.
        * @return This builder for chaining.
        */
@@ -835,7 +835,7 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
         return this;
       }
       /**
-       * <code>.GalleryStartSource start_source = 13;</code>
+       * <code>.GalleryStartSource start_source = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearStartSource() {
@@ -913,10 +913,10 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n%SceneGalleryIslandPartyRaftInfo.proto\032" +
       "\030GalleryStartSource.proto\"\253\001\n\037SceneGalle" +
-      "ryIslandPartyRaftInfo\022\020\n\010point_id\030\004 \001(\r\022" +
-      "\023\n\013ONIGIPPLAMK\030\006 \001(\r\022\014\n\004coin\030\002 \001(\r\022\023\n\013IP" +
-      "ONIBNKJIL\030\007 \001(\r\022\023\n\013KCHKIPPLFBF\030\001 \001(\r\022)\n\014" +
-      "start_source\030\r \001(\0162\023.GalleryStartSourceB" +
+      "ryIslandPartyRaftInfo\022\023\n\013MPEGPHEPACG\030\006 \001" +
+      "(\r\022\023\n\013LPGAJONPBMC\030\016 \001(\r\022\014\n\004coin\030\005 \001(\r\022\023\n" +
+      "\013PAOCIBHJAHO\030\t \001(\r\022\020\n\010point_id\030\013 \001(\r\022)\n\014" +
+      "start_source\030\002 \001(\0162\023.GalleryStartSourceB" +
       "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -929,7 +929,7 @@ public final class SceneGalleryIslandPartyRaftInfoOuterClass {
     internal_static_SceneGalleryIslandPartyRaftInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryIslandPartyRaftInfo_descriptor,
-        new java.lang.String[] { "PointId", "ONIGIPPLAMK", "Coin", "IPONIBNKJIL", "KCHKIPPLFBF", "StartSource", });
+        new java.lang.String[] { "MPEGPHEPACG", "LPGAJONPBMC", "Coin", "PAOCIBHJAHO", "PointId", "StartSource", });
     emu.grasscutter.net.proto.GalleryStartSourceOuterClass.getDescriptor();
   }
 

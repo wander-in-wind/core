@@ -19,15 +19,15 @@ public final class NpcTalkStateNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_ban = 10;</code>
+     * <code>bool is_ban = 7;</code>
      * @return The isBan.
      */
     boolean getIsBan();
   }
   /**
    * <pre>
-   * Name: EIKPABMOCEM
-   * CmdId: 497
+   * CmdId: 441
+   * Obf: KPMPKMLFOMI
    * </pre>
    *
    * Protobuf type {@code NpcTalkStateNotify}
@@ -74,7 +74,7 @@ public final class NpcTalkStateNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 56: {
 
               isBan_ = input.readBool();
               break;
@@ -111,10 +111,10 @@ public final class NpcTalkStateNotifyOuterClass {
               emu.grasscutter.net.proto.NpcTalkStateNotifyOuterClass.NpcTalkStateNotify.class, emu.grasscutter.net.proto.NpcTalkStateNotifyOuterClass.NpcTalkStateNotify.Builder.class);
     }
 
-    public static final int IS_BAN_FIELD_NUMBER = 10;
+    public static final int IS_BAN_FIELD_NUMBER = 7;
     private boolean isBan_;
     /**
-     * <code>bool is_ban = 10;</code>
+     * <code>bool is_ban = 7;</code>
      * @return The isBan.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class NpcTalkStateNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isBan_ != false) {
-        output.writeBool(10, isBan_);
+        output.writeBool(7, isBan_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class NpcTalkStateNotifyOuterClass {
       size = 0;
       if (isBan_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isBan_);
+          .computeBoolSize(7, isBan_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,8 +280,8 @@ public final class NpcTalkStateNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: EIKPABMOCEM
-     * CmdId: 497
+     * CmdId: 441
+     * Obf: KPMPKMLFOMI
      * </pre>
      *
      * Protobuf type {@code NpcTalkStateNotify}
@@ -432,7 +432,7 @@ public final class NpcTalkStateNotifyOuterClass {
 
       private boolean isBan_ ;
       /**
-       * <code>bool is_ban = 10;</code>
+       * <code>bool is_ban = 7;</code>
        * @return The isBan.
        */
       @java.lang.Override
@@ -440,7 +440,7 @@ public final class NpcTalkStateNotifyOuterClass {
         return isBan_;
       }
       /**
-       * <code>bool is_ban = 10;</code>
+       * <code>bool is_ban = 7;</code>
        * @param value The isBan to set.
        * @return This builder for chaining.
        */
@@ -451,7 +451,7 @@ public final class NpcTalkStateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_ban = 10;</code>
+       * <code>bool is_ban = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsBan() {
@@ -528,7 +528,7 @@ public final class NpcTalkStateNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030NpcTalkStateNotify.proto\"$\n\022NpcTalkSta" +
-      "teNotify\022\016\n\006is_ban\030\n \001(\010B\033\n\031emu.grasscut" +
+      "teNotify\022\016\n\006is_ban\030\007 \001(\010B\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

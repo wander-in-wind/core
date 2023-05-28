@@ -19,128 +19,128 @@ public final class MistTrialSettleNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+     * <code>uint32 dungeon_scene_id = 3;</code>
+     * @return The dungeonSceneId.
+     */
+    int getDungeonSceneId();
+
+    /**
+     * <code>map&lt;uint32, uint32&gt; ECFLBCKABPE = 6;</code>
+     */
+    int getECFLBCKABPECount();
+    /**
+     * <code>map&lt;uint32, uint32&gt; ECFLBCKABPE = 6;</code>
+     */
+    boolean containsECFLBCKABPE(
+        int key);
+    /**
+     * Use {@link #getECFLBCKABPEMap()} instead.
+     */
+    @java.lang.Deprecated
+    java.util.Map<java.lang.Integer, java.lang.Integer>
+    getECFLBCKABPE();
+    /**
+     * <code>map&lt;uint32, uint32&gt; ECFLBCKABPE = 6;</code>
+     */
+    java.util.Map<java.lang.Integer, java.lang.Integer>
+    getECFLBCKABPEMap();
+    /**
+     * <code>map&lt;uint32, uint32&gt; ECFLBCKABPE = 6;</code>
+     */
+
+    int getECFLBCKABPEOrDefault(
+        int key,
+        int defaultValue);
+    /**
+     * <code>map&lt;uint32, uint32&gt; ECFLBCKABPE = 6;</code>
+     */
+
+    int getECFLBCKABPEOrThrow(
+        int key);
+
+    /**
+     * <code>repeated .MistTrialBestAvatar best_avatar_list = 5;</code>
      */
     java.util.List<emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar> 
         getBestAvatarListList();
     /**
-     * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+     * <code>repeated .MistTrialBestAvatar best_avatar_list = 5;</code>
      */
     emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar getBestAvatarList(int index);
     /**
-     * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+     * <code>repeated .MistTrialBestAvatar best_avatar_list = 5;</code>
      */
     int getBestAvatarListCount();
     /**
-     * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+     * <code>repeated .MistTrialBestAvatar best_avatar_list = 5;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatarOrBuilder> 
         getBestAvatarListOrBuilderList();
     /**
-     * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+     * <code>repeated .MistTrialBestAvatar best_avatar_list = 5;</code>
      */
     emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatarOrBuilder getBestAvatarListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 first_pass_time = 8;</code>
-     * @return The firstPassTime.
-     */
-    int getFirstPassTime();
-
-    /**
-     * <code>map&lt;uint32, uint32&gt; IIGOLKJOKAL = 15;</code>
-     */
-    int getIIGOLKJOKALCount();
-    /**
-     * <code>map&lt;uint32, uint32&gt; IIGOLKJOKAL = 15;</code>
-     */
-    boolean containsIIGOLKJOKAL(
-        int key);
-    /**
-     * Use {@link #getIIGOLKJOKALMap()} instead.
-     */
-    @java.lang.Deprecated
-    java.util.Map<java.lang.Integer, java.lang.Integer>
-    getIIGOLKJOKAL();
-    /**
-     * <code>map&lt;uint32, uint32&gt; IIGOLKJOKAL = 15;</code>
-     */
-    java.util.Map<java.lang.Integer, java.lang.Integer>
-    getIIGOLKJOKALMap();
-    /**
-     * <code>map&lt;uint32, uint32&gt; IIGOLKJOKAL = 15;</code>
-     */
-
-    int getIIGOLKJOKALOrDefault(
-        int key,
-        int defaultValue);
-    /**
-     * <code>map&lt;uint32, uint32&gt; IIGOLKJOKAL = 15;</code>
-     */
-
-    int getIIGOLKJOKALOrThrow(
-        int key);
-
-    /**
-     * <code>.MistTrialBestAvatar best_hit_avatar = 5;</code>
+     * <code>.MistTrialBestAvatar best_hit_avatar = 10;</code>
      * @return Whether the bestHitAvatar field is set.
      */
     boolean hasBestHitAvatar();
     /**
-     * <code>.MistTrialBestAvatar best_hit_avatar = 5;</code>
+     * <code>.MistTrialBestAvatar best_hit_avatar = 10;</code>
      * @return The bestHitAvatar.
      */
     emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar getBestHitAvatar();
     /**
-     * <code>.MistTrialBestAvatar best_hit_avatar = 5;</code>
+     * <code>.MistTrialBestAvatar best_hit_avatar = 10;</code>
      */
     emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatarOrBuilder getBestHitAvatarOrBuilder();
 
     /**
-     * <code>map&lt;uint32, uint32&gt; GIGIAGDALHG = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; MLPGIMJCPBJ = 1;</code>
      */
-    int getGIGIAGDALHGCount();
+    int getMLPGIMJCPBJCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; GIGIAGDALHG = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; MLPGIMJCPBJ = 1;</code>
      */
-    boolean containsGIGIAGDALHG(
+    boolean containsMLPGIMJCPBJ(
         int key);
     /**
-     * Use {@link #getGIGIAGDALHGMap()} instead.
+     * Use {@link #getMLPGIMJCPBJMap()} instead.
      */
     @java.lang.Deprecated
     java.util.Map<java.lang.Integer, java.lang.Integer>
-    getGIGIAGDALHG();
+    getMLPGIMJCPBJ();
     /**
-     * <code>map&lt;uint32, uint32&gt; GIGIAGDALHG = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; MLPGIMJCPBJ = 1;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
-    getGIGIAGDALHGMap();
+    getMLPGIMJCPBJMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; GIGIAGDALHG = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; MLPGIMJCPBJ = 1;</code>
      */
 
-    int getGIGIAGDALHGOrDefault(
+    int getMLPGIMJCPBJOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; GIGIAGDALHG = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; MLPGIMJCPBJ = 1;</code>
      */
 
-    int getGIGIAGDALHGOrThrow(
+    int getMLPGIMJCPBJOrThrow(
         int key);
 
     /**
-     * <code>uint32 dungeon_scene_id = 14;</code>
-     * @return The dungeonSceneId.
+     * <code>uint32 first_pass_time = 13;</code>
+     * @return The firstPassTime.
      */
-    int getDungeonSceneId();
+    int getFirstPassTime();
   }
   /**
    * <pre>
-   * Name: KEFALHAGPKF
-   * CmdId: 8559
+   * CmdId: 8153
+   * Obf: ICIKIBNLBCG
    * </pre>
    *
    * Protobuf type {@code MistTrialSettleNotify}
@@ -189,16 +189,47 @@ public final class MistTrialSettleNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+            case 10: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+                mLPGIMJCPBJ_ = com.google.protobuf.MapField.newMapField(
+                    MLPGIMJCPBJDefaultEntryHolder.defaultEntry);
+                mutable_bitField0_ |= 0x00000004;
+              }
+              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+              mLPGIMJCPBJ__ = input.readMessage(
+                  MLPGIMJCPBJDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              mLPGIMJCPBJ_.getMutableMap().put(
+                  mLPGIMJCPBJ__.getKey(), mLPGIMJCPBJ__.getValue());
+              break;
+            }
+            case 24: {
+
+              dungeonSceneId_ = input.readUInt32();
+              break;
+            }
+            case 42: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 bestAvatarList_ = new java.util.ArrayList<emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar>();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000002;
               }
               bestAvatarList_.add(
                   input.readMessage(emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.parser(), extensionRegistry));
               break;
             }
-            case 42: {
+            case 50: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                eCFLBCKABPE_ = com.google.protobuf.MapField.newMapField(
+                    ECFLBCKABPEDefaultEntryHolder.defaultEntry);
+                mutable_bitField0_ |= 0x00000001;
+              }
+              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+              eCFLBCKABPE__ = input.readMessage(
+                  ECFLBCKABPEDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              eCFLBCKABPE_.getMutableMap().put(
+                  eCFLBCKABPE__.getKey(), eCFLBCKABPE__.getValue());
+              break;
+            }
+            case 82: {
               emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.Builder subBuilder = null;
               if (bestHitAvatar_ != null) {
                 subBuilder = bestHitAvatar_.toBuilder();
@@ -211,40 +242,9 @@ public final class MistTrialSettleNotifyOuterClass {
 
               break;
             }
-            case 64: {
+            case 104: {
 
               firstPassTime_ = input.readUInt32();
-              break;
-            }
-            case 98: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                gIGIAGDALHG_ = com.google.protobuf.MapField.newMapField(
-                    GIGIAGDALHGDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000004;
-              }
-              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              gIGIAGDALHG__ = input.readMessage(
-                  GIGIAGDALHGDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              gIGIAGDALHG_.getMutableMap().put(
-                  gIGIAGDALHG__.getKey(), gIGIAGDALHG__.getValue());
-              break;
-            }
-            case 112: {
-
-              dungeonSceneId_ = input.readUInt32();
-              break;
-            }
-            case 122: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                iIGOLKJOKAL_ = com.google.protobuf.MapField.newMapField(
-                    IIGOLKJOKALDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000002;
-              }
-              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              iIGOLKJOKAL__ = input.readMessage(
-                  IIGOLKJOKALDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              iIGOLKJOKAL_.getMutableMap().put(
-                  iIGOLKJOKAL__.getKey(), iIGOLKJOKAL__.getValue());
               break;
             }
             default: {
@@ -262,7 +262,7 @@ public final class MistTrialSettleNotifyOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
           bestAvatarList_ = java.util.Collections.unmodifiableList(bestAvatarList_);
         }
         this.unknownFields = unknownFields.build();
@@ -279,10 +279,10 @@ public final class MistTrialSettleNotifyOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 15:
-          return internalGetIIGOLKJOKAL();
-        case 12:
-          return internalGetGIGIAGDALHG();
+        case 6:
+          return internalGetECFLBCKABPE();
+        case 1:
+          return internalGetMLPGIMJCPBJ();
         default:
           throw new RuntimeException(
               "Invalid map field number: " + number);
@@ -296,17 +296,109 @@ public final class MistTrialSettleNotifyOuterClass {
               emu.grasscutter.net.proto.MistTrialSettleNotifyOuterClass.MistTrialSettleNotify.class, emu.grasscutter.net.proto.MistTrialSettleNotifyOuterClass.MistTrialSettleNotify.Builder.class);
     }
 
-    public static final int BEST_AVATAR_LIST_FIELD_NUMBER = 3;
+    public static final int DUNGEON_SCENE_ID_FIELD_NUMBER = 3;
+    private int dungeonSceneId_;
+    /**
+     * <code>uint32 dungeon_scene_id = 3;</code>
+     * @return The dungeonSceneId.
+     */
+    @java.lang.Override
+    public int getDungeonSceneId() {
+      return dungeonSceneId_;
+    }
+
+    public static final int ECFLBCKABPE_FIELD_NUMBER = 6;
+    private static final class ECFLBCKABPEDefaultEntryHolder {
+      static final com.google.protobuf.MapEntry<
+          java.lang.Integer, java.lang.Integer> defaultEntry =
+              com.google.protobuf.MapEntry
+              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
+                  emu.grasscutter.net.proto.MistTrialSettleNotifyOuterClass.internal_static_MistTrialSettleNotify_ECFLBCKABPEEntry_descriptor, 
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0,
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0);
+    }
+    private com.google.protobuf.MapField<
+        java.lang.Integer, java.lang.Integer> eCFLBCKABPE_;
+    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+    internalGetECFLBCKABPE() {
+      if (eCFLBCKABPE_ == null) {
+        return com.google.protobuf.MapField.emptyMapField(
+            ECFLBCKABPEDefaultEntryHolder.defaultEntry);
+      }
+      return eCFLBCKABPE_;
+    }
+
+    public int getECFLBCKABPECount() {
+      return internalGetECFLBCKABPE().getMap().size();
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; ECFLBCKABPE = 6;</code>
+     */
+
+    @java.lang.Override
+    public boolean containsECFLBCKABPE(
+        int key) {
+      
+      return internalGetECFLBCKABPE().getMap().containsKey(key);
+    }
+    /**
+     * Use {@link #getECFLBCKABPEMap()} instead.
+     */
+    @java.lang.Override
+    @java.lang.Deprecated
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getECFLBCKABPE() {
+      return getECFLBCKABPEMap();
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; ECFLBCKABPE = 6;</code>
+     */
+    @java.lang.Override
+
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getECFLBCKABPEMap() {
+      return internalGetECFLBCKABPE().getMap();
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; ECFLBCKABPE = 6;</code>
+     */
+    @java.lang.Override
+
+    public int getECFLBCKABPEOrDefault(
+        int key,
+        int defaultValue) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetECFLBCKABPE().getMap();
+      return map.containsKey(key) ? map.get(key) : defaultValue;
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; ECFLBCKABPE = 6;</code>
+     */
+    @java.lang.Override
+
+    public int getECFLBCKABPEOrThrow(
+        int key) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetECFLBCKABPE().getMap();
+      if (!map.containsKey(key)) {
+        throw new java.lang.IllegalArgumentException();
+      }
+      return map.get(key);
+    }
+
+    public static final int BEST_AVATAR_LIST_FIELD_NUMBER = 5;
     private java.util.List<emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar> bestAvatarList_;
     /**
-     * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+     * <code>repeated .MistTrialBestAvatar best_avatar_list = 5;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar> getBestAvatarListList() {
       return bestAvatarList_;
     }
     /**
-     * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+     * <code>repeated .MistTrialBestAvatar best_avatar_list = 5;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatarOrBuilder> 
@@ -314,21 +406,21 @@ public final class MistTrialSettleNotifyOuterClass {
       return bestAvatarList_;
     }
     /**
-     * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+     * <code>repeated .MistTrialBestAvatar best_avatar_list = 5;</code>
      */
     @java.lang.Override
     public int getBestAvatarListCount() {
       return bestAvatarList_.size();
     }
     /**
-     * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+     * <code>repeated .MistTrialBestAvatar best_avatar_list = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar getBestAvatarList(int index) {
       return bestAvatarList_.get(index);
     }
     /**
-     * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+     * <code>repeated .MistTrialBestAvatar best_avatar_list = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatarOrBuilder getBestAvatarListOrBuilder(
@@ -336,102 +428,10 @@ public final class MistTrialSettleNotifyOuterClass {
       return bestAvatarList_.get(index);
     }
 
-    public static final int FIRST_PASS_TIME_FIELD_NUMBER = 8;
-    private int firstPassTime_;
-    /**
-     * <code>uint32 first_pass_time = 8;</code>
-     * @return The firstPassTime.
-     */
-    @java.lang.Override
-    public int getFirstPassTime() {
-      return firstPassTime_;
-    }
-
-    public static final int IIGOLKJOKAL_FIELD_NUMBER = 15;
-    private static final class IIGOLKJOKALDefaultEntryHolder {
-      static final com.google.protobuf.MapEntry<
-          java.lang.Integer, java.lang.Integer> defaultEntry =
-              com.google.protobuf.MapEntry
-              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.MistTrialSettleNotifyOuterClass.internal_static_MistTrialSettleNotify_IIGOLKJOKALEntry_descriptor, 
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0,
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0);
-    }
-    private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Integer> iIGOLKJOKAL_;
-    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-    internalGetIIGOLKJOKAL() {
-      if (iIGOLKJOKAL_ == null) {
-        return com.google.protobuf.MapField.emptyMapField(
-            IIGOLKJOKALDefaultEntryHolder.defaultEntry);
-      }
-      return iIGOLKJOKAL_;
-    }
-
-    public int getIIGOLKJOKALCount() {
-      return internalGetIIGOLKJOKAL().getMap().size();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; IIGOLKJOKAL = 15;</code>
-     */
-
-    @java.lang.Override
-    public boolean containsIIGOLKJOKAL(
-        int key) {
-      
-      return internalGetIIGOLKJOKAL().getMap().containsKey(key);
-    }
-    /**
-     * Use {@link #getIIGOLKJOKALMap()} instead.
-     */
-    @java.lang.Override
-    @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getIIGOLKJOKAL() {
-      return getIIGOLKJOKALMap();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; IIGOLKJOKAL = 15;</code>
-     */
-    @java.lang.Override
-
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getIIGOLKJOKALMap() {
-      return internalGetIIGOLKJOKAL().getMap();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; IIGOLKJOKAL = 15;</code>
-     */
-    @java.lang.Override
-
-    public int getIIGOLKJOKALOrDefault(
-        int key,
-        int defaultValue) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetIIGOLKJOKAL().getMap();
-      return map.containsKey(key) ? map.get(key) : defaultValue;
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; IIGOLKJOKAL = 15;</code>
-     */
-    @java.lang.Override
-
-    public int getIIGOLKJOKALOrThrow(
-        int key) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetIIGOLKJOKAL().getMap();
-      if (!map.containsKey(key)) {
-        throw new java.lang.IllegalArgumentException();
-      }
-      return map.get(key);
-    }
-
-    public static final int BEST_HIT_AVATAR_FIELD_NUMBER = 5;
+    public static final int BEST_HIT_AVATAR_FIELD_NUMBER = 10;
     private emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar bestHitAvatar_;
     /**
-     * <code>.MistTrialBestAvatar best_hit_avatar = 5;</code>
+     * <code>.MistTrialBestAvatar best_hit_avatar = 10;</code>
      * @return Whether the bestHitAvatar field is set.
      */
     @java.lang.Override
@@ -439,7 +439,7 @@ public final class MistTrialSettleNotifyOuterClass {
       return bestHitAvatar_ != null;
     }
     /**
-     * <code>.MistTrialBestAvatar best_hit_avatar = 5;</code>
+     * <code>.MistTrialBestAvatar best_hit_avatar = 10;</code>
      * @return The bestHitAvatar.
      */
     @java.lang.Override
@@ -447,103 +447,103 @@ public final class MistTrialSettleNotifyOuterClass {
       return bestHitAvatar_ == null ? emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.getDefaultInstance() : bestHitAvatar_;
     }
     /**
-     * <code>.MistTrialBestAvatar best_hit_avatar = 5;</code>
+     * <code>.MistTrialBestAvatar best_hit_avatar = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatarOrBuilder getBestHitAvatarOrBuilder() {
       return getBestHitAvatar();
     }
 
-    public static final int GIGIAGDALHG_FIELD_NUMBER = 12;
-    private static final class GIGIAGDALHGDefaultEntryHolder {
+    public static final int MLPGIMJCPBJ_FIELD_NUMBER = 1;
+    private static final class MLPGIMJCPBJDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
               com.google.protobuf.MapEntry
               .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.MistTrialSettleNotifyOuterClass.internal_static_MistTrialSettleNotify_GIGIAGDALHGEntry_descriptor, 
+                  emu.grasscutter.net.proto.MistTrialSettleNotifyOuterClass.internal_static_MistTrialSettleNotify_MLPGIMJCPBJEntry_descriptor, 
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0,
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0);
     }
     private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Integer> gIGIAGDALHG_;
+        java.lang.Integer, java.lang.Integer> mLPGIMJCPBJ_;
     private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-    internalGetGIGIAGDALHG() {
-      if (gIGIAGDALHG_ == null) {
+    internalGetMLPGIMJCPBJ() {
+      if (mLPGIMJCPBJ_ == null) {
         return com.google.protobuf.MapField.emptyMapField(
-            GIGIAGDALHGDefaultEntryHolder.defaultEntry);
+            MLPGIMJCPBJDefaultEntryHolder.defaultEntry);
       }
-      return gIGIAGDALHG_;
+      return mLPGIMJCPBJ_;
     }
 
-    public int getGIGIAGDALHGCount() {
-      return internalGetGIGIAGDALHG().getMap().size();
+    public int getMLPGIMJCPBJCount() {
+      return internalGetMLPGIMJCPBJ().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; GIGIAGDALHG = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; MLPGIMJCPBJ = 1;</code>
      */
 
     @java.lang.Override
-    public boolean containsGIGIAGDALHG(
+    public boolean containsMLPGIMJCPBJ(
         int key) {
       
-      return internalGetGIGIAGDALHG().getMap().containsKey(key);
+      return internalGetMLPGIMJCPBJ().getMap().containsKey(key);
     }
     /**
-     * Use {@link #getGIGIAGDALHGMap()} instead.
+     * Use {@link #getMLPGIMJCPBJMap()} instead.
      */
     @java.lang.Override
     @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getGIGIAGDALHG() {
-      return getGIGIAGDALHGMap();
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getMLPGIMJCPBJ() {
+      return getMLPGIMJCPBJMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; GIGIAGDALHG = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; MLPGIMJCPBJ = 1;</code>
      */
     @java.lang.Override
 
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getGIGIAGDALHGMap() {
-      return internalGetGIGIAGDALHG().getMap();
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getMLPGIMJCPBJMap() {
+      return internalGetMLPGIMJCPBJ().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; GIGIAGDALHG = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; MLPGIMJCPBJ = 1;</code>
      */
     @java.lang.Override
 
-    public int getGIGIAGDALHGOrDefault(
+    public int getMLPGIMJCPBJOrDefault(
         int key,
         int defaultValue) {
       
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetGIGIAGDALHG().getMap();
+          internalGetMLPGIMJCPBJ().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; GIGIAGDALHG = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; MLPGIMJCPBJ = 1;</code>
      */
     @java.lang.Override
 
-    public int getGIGIAGDALHGOrThrow(
+    public int getMLPGIMJCPBJOrThrow(
         int key) {
       
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetGIGIAGDALHG().getMap();
+          internalGetMLPGIMJCPBJ().getMap();
       if (!map.containsKey(key)) {
         throw new java.lang.IllegalArgumentException();
       }
       return map.get(key);
     }
 
-    public static final int DUNGEON_SCENE_ID_FIELD_NUMBER = 14;
-    private int dungeonSceneId_;
+    public static final int FIRST_PASS_TIME_FIELD_NUMBER = 13;
+    private int firstPassTime_;
     /**
-     * <code>uint32 dungeon_scene_id = 14;</code>
-     * @return The dungeonSceneId.
+     * <code>uint32 first_pass_time = 13;</code>
+     * @return The firstPassTime.
      */
     @java.lang.Override
-    public int getDungeonSceneId() {
-      return dungeonSceneId_;
+    public int getFirstPassTime() {
+      return firstPassTime_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -560,30 +560,30 @@ public final class MistTrialSettleNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < bestAvatarList_.size(); i++) {
-        output.writeMessage(3, bestAvatarList_.get(i));
+      com.google.protobuf.GeneratedMessageV3
+        .serializeIntegerMapTo(
+          output,
+          internalGetMLPGIMJCPBJ(),
+          MLPGIMJCPBJDefaultEntryHolder.defaultEntry,
+          1);
+      if (dungeonSceneId_ != 0) {
+        output.writeUInt32(3, dungeonSceneId_);
       }
+      for (int i = 0; i < bestAvatarList_.size(); i++) {
+        output.writeMessage(5, bestAvatarList_.get(i));
+      }
+      com.google.protobuf.GeneratedMessageV3
+        .serializeIntegerMapTo(
+          output,
+          internalGetECFLBCKABPE(),
+          ECFLBCKABPEDefaultEntryHolder.defaultEntry,
+          6);
       if (bestHitAvatar_ != null) {
-        output.writeMessage(5, getBestHitAvatar());
+        output.writeMessage(10, getBestHitAvatar());
       }
       if (firstPassTime_ != 0) {
-        output.writeUInt32(8, firstPassTime_);
+        output.writeUInt32(13, firstPassTime_);
       }
-      com.google.protobuf.GeneratedMessageV3
-        .serializeIntegerMapTo(
-          output,
-          internalGetGIGIAGDALHG(),
-          GIGIAGDALHGDefaultEntryHolder.defaultEntry,
-          12);
-      if (dungeonSceneId_ != 0) {
-        output.writeUInt32(14, dungeonSceneId_);
-      }
-      com.google.protobuf.GeneratedMessageV3
-        .serializeIntegerMapTo(
-          output,
-          internalGetIIGOLKJOKAL(),
-          IIGOLKJOKALDefaultEntryHolder.defaultEntry,
-          15);
       unknownFields.writeTo(output);
     }
 
@@ -593,41 +593,41 @@ public final class MistTrialSettleNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < bestAvatarList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, bestAvatarList_.get(i));
-      }
-      if (bestHitAvatar_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, getBestHitAvatar());
-      }
-      if (firstPassTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, firstPassTime_);
-      }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetGIGIAGDALHG().getMap().entrySet()) {
+           : internalGetMLPGIMJCPBJ().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        gIGIAGDALHG__ = GIGIAGDALHGDefaultEntryHolder.defaultEntry.newBuilderForType()
+        mLPGIMJCPBJ__ = MLPGIMJCPBJDefaultEntryHolder.defaultEntry.newBuilderForType()
             .setKey(entry.getKey())
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(12, gIGIAGDALHG__);
+            .computeMessageSize(1, mLPGIMJCPBJ__);
       }
       if (dungeonSceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, dungeonSceneId_);
+          .computeUInt32Size(3, dungeonSceneId_);
+      }
+      for (int i = 0; i < bestAvatarList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(5, bestAvatarList_.get(i));
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetIIGOLKJOKAL().getMap().entrySet()) {
+           : internalGetECFLBCKABPE().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        iIGOLKJOKAL__ = IIGOLKJOKALDefaultEntryHolder.defaultEntry.newBuilderForType()
+        eCFLBCKABPE__ = ECFLBCKABPEDefaultEntryHolder.defaultEntry.newBuilderForType()
             .setKey(entry.getKey())
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(15, iIGOLKJOKAL__);
+            .computeMessageSize(6, eCFLBCKABPE__);
+      }
+      if (bestHitAvatar_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(10, getBestHitAvatar());
+      }
+      if (firstPassTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, firstPassTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -644,21 +644,21 @@ public final class MistTrialSettleNotifyOuterClass {
       }
       emu.grasscutter.net.proto.MistTrialSettleNotifyOuterClass.MistTrialSettleNotify other = (emu.grasscutter.net.proto.MistTrialSettleNotifyOuterClass.MistTrialSettleNotify) obj;
 
+      if (getDungeonSceneId()
+          != other.getDungeonSceneId()) return false;
+      if (!internalGetECFLBCKABPE().equals(
+          other.internalGetECFLBCKABPE())) return false;
       if (!getBestAvatarListList()
           .equals(other.getBestAvatarListList())) return false;
-      if (getFirstPassTime()
-          != other.getFirstPassTime()) return false;
-      if (!internalGetIIGOLKJOKAL().equals(
-          other.internalGetIIGOLKJOKAL())) return false;
       if (hasBestHitAvatar() != other.hasBestHitAvatar()) return false;
       if (hasBestHitAvatar()) {
         if (!getBestHitAvatar()
             .equals(other.getBestHitAvatar())) return false;
       }
-      if (!internalGetGIGIAGDALHG().equals(
-          other.internalGetGIGIAGDALHG())) return false;
-      if (getDungeonSceneId()
-          != other.getDungeonSceneId()) return false;
+      if (!internalGetMLPGIMJCPBJ().equals(
+          other.internalGetMLPGIMJCPBJ())) return false;
+      if (getFirstPassTime()
+          != other.getFirstPassTime()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -670,26 +670,26 @@ public final class MistTrialSettleNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + DUNGEON_SCENE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getDungeonSceneId();
+      if (!internalGetECFLBCKABPE().getMap().isEmpty()) {
+        hash = (37 * hash) + ECFLBCKABPE_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetECFLBCKABPE().hashCode();
+      }
       if (getBestAvatarListCount() > 0) {
         hash = (37 * hash) + BEST_AVATAR_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getBestAvatarListList().hashCode();
-      }
-      hash = (37 * hash) + FIRST_PASS_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getFirstPassTime();
-      if (!internalGetIIGOLKJOKAL().getMap().isEmpty()) {
-        hash = (37 * hash) + IIGOLKJOKAL_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetIIGOLKJOKAL().hashCode();
       }
       if (hasBestHitAvatar()) {
         hash = (37 * hash) + BEST_HIT_AVATAR_FIELD_NUMBER;
         hash = (53 * hash) + getBestHitAvatar().hashCode();
       }
-      if (!internalGetGIGIAGDALHG().getMap().isEmpty()) {
-        hash = (37 * hash) + GIGIAGDALHG_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetGIGIAGDALHG().hashCode();
+      if (!internalGetMLPGIMJCPBJ().getMap().isEmpty()) {
+        hash = (37 * hash) + MLPGIMJCPBJ_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetMLPGIMJCPBJ().hashCode();
       }
-      hash = (37 * hash) + DUNGEON_SCENE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getDungeonSceneId();
+      hash = (37 * hash) + FIRST_PASS_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getFirstPassTime();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -787,8 +787,8 @@ public final class MistTrialSettleNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: KEFALHAGPKF
-     * CmdId: 8559
+     * CmdId: 8153
+     * Obf: ICIKIBNLBCG
      * </pre>
      *
      * Protobuf type {@code MistTrialSettleNotify}
@@ -806,10 +806,10 @@ public final class MistTrialSettleNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 15:
-            return internalGetIIGOLKJOKAL();
-          case 12:
-            return internalGetGIGIAGDALHG();
+          case 6:
+            return internalGetECFLBCKABPE();
+          case 1:
+            return internalGetMLPGIMJCPBJ();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -819,10 +819,10 @@ public final class MistTrialSettleNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 15:
-            return internalGetMutableIIGOLKJOKAL();
-          case 12:
-            return internalGetMutableGIGIAGDALHG();
+          case 6:
+            return internalGetMutableECFLBCKABPE();
+          case 1:
+            return internalGetMutableMLPGIMJCPBJ();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -855,23 +855,23 @@ public final class MistTrialSettleNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        dungeonSceneId_ = 0;
+
+        internalGetMutableECFLBCKABPE().clear();
         if (bestAvatarListBuilder_ == null) {
           bestAvatarList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
         } else {
           bestAvatarListBuilder_.clear();
         }
-        firstPassTime_ = 0;
-
-        internalGetMutableIIGOLKJOKAL().clear();
         if (bestHitAvatarBuilder_ == null) {
           bestHitAvatar_ = null;
         } else {
           bestHitAvatar_ = null;
           bestHitAvatarBuilder_ = null;
         }
-        internalGetMutableGIGIAGDALHG().clear();
-        dungeonSceneId_ = 0;
+        internalGetMutableMLPGIMJCPBJ().clear();
+        firstPassTime_ = 0;
 
         return this;
       }
@@ -900,26 +900,26 @@ public final class MistTrialSettleNotifyOuterClass {
       public emu.grasscutter.net.proto.MistTrialSettleNotifyOuterClass.MistTrialSettleNotify buildPartial() {
         emu.grasscutter.net.proto.MistTrialSettleNotifyOuterClass.MistTrialSettleNotify result = new emu.grasscutter.net.proto.MistTrialSettleNotifyOuterClass.MistTrialSettleNotify(this);
         int from_bitField0_ = bitField0_;
+        result.dungeonSceneId_ = dungeonSceneId_;
+        result.eCFLBCKABPE_ = internalGetECFLBCKABPE();
+        result.eCFLBCKABPE_.makeImmutable();
         if (bestAvatarListBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000002) != 0)) {
             bestAvatarList_ = java.util.Collections.unmodifiableList(bestAvatarList_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000002);
           }
           result.bestAvatarList_ = bestAvatarList_;
         } else {
           result.bestAvatarList_ = bestAvatarListBuilder_.build();
         }
-        result.firstPassTime_ = firstPassTime_;
-        result.iIGOLKJOKAL_ = internalGetIIGOLKJOKAL();
-        result.iIGOLKJOKAL_.makeImmutable();
         if (bestHitAvatarBuilder_ == null) {
           result.bestHitAvatar_ = bestHitAvatar_;
         } else {
           result.bestHitAvatar_ = bestHitAvatarBuilder_.build();
         }
-        result.gIGIAGDALHG_ = internalGetGIGIAGDALHG();
-        result.gIGIAGDALHG_.makeImmutable();
-        result.dungeonSceneId_ = dungeonSceneId_;
+        result.mLPGIMJCPBJ_ = internalGetMLPGIMJCPBJ();
+        result.mLPGIMJCPBJ_.makeImmutable();
+        result.firstPassTime_ = firstPassTime_;
         onBuilt();
         return result;
       }
@@ -968,11 +968,16 @@ public final class MistTrialSettleNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MistTrialSettleNotifyOuterClass.MistTrialSettleNotify other) {
         if (other == emu.grasscutter.net.proto.MistTrialSettleNotifyOuterClass.MistTrialSettleNotify.getDefaultInstance()) return this;
+        if (other.getDungeonSceneId() != 0) {
+          setDungeonSceneId(other.getDungeonSceneId());
+        }
+        internalGetMutableECFLBCKABPE().mergeFrom(
+            other.internalGetECFLBCKABPE());
         if (bestAvatarListBuilder_ == null) {
           if (!other.bestAvatarList_.isEmpty()) {
             if (bestAvatarList_.isEmpty()) {
               bestAvatarList_ = other.bestAvatarList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
             } else {
               ensureBestAvatarListIsMutable();
               bestAvatarList_.addAll(other.bestAvatarList_);
@@ -985,7 +990,7 @@ public final class MistTrialSettleNotifyOuterClass {
               bestAvatarListBuilder_.dispose();
               bestAvatarListBuilder_ = null;
               bestAvatarList_ = other.bestAvatarList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
               bestAvatarListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getBestAvatarListFieldBuilder() : null;
@@ -994,18 +999,13 @@ public final class MistTrialSettleNotifyOuterClass {
             }
           }
         }
-        if (other.getFirstPassTime() != 0) {
-          setFirstPassTime(other.getFirstPassTime());
-        }
-        internalGetMutableIIGOLKJOKAL().mergeFrom(
-            other.internalGetIIGOLKJOKAL());
         if (other.hasBestHitAvatar()) {
           mergeBestHitAvatar(other.getBestHitAvatar());
         }
-        internalGetMutableGIGIAGDALHG().mergeFrom(
-            other.internalGetGIGIAGDALHG());
-        if (other.getDungeonSceneId() != 0) {
-          setDungeonSceneId(other.getDungeonSceneId());
+        internalGetMutableMLPGIMJCPBJ().mergeFrom(
+            other.internalGetMLPGIMJCPBJ());
+        if (other.getFirstPassTime() != 0) {
+          setFirstPassTime(other.getFirstPassTime());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1037,12 +1037,171 @@ public final class MistTrialSettleNotifyOuterClass {
       }
       private int bitField0_;
 
+      private int dungeonSceneId_ ;
+      /**
+       * <code>uint32 dungeon_scene_id = 3;</code>
+       * @return The dungeonSceneId.
+       */
+      @java.lang.Override
+      public int getDungeonSceneId() {
+        return dungeonSceneId_;
+      }
+      /**
+       * <code>uint32 dungeon_scene_id = 3;</code>
+       * @param value The dungeonSceneId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDungeonSceneId(int value) {
+        
+        dungeonSceneId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 dungeon_scene_id = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDungeonSceneId() {
+        
+        dungeonSceneId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.MapField<
+          java.lang.Integer, java.lang.Integer> eCFLBCKABPE_;
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetECFLBCKABPE() {
+        if (eCFLBCKABPE_ == null) {
+          return com.google.protobuf.MapField.emptyMapField(
+              ECFLBCKABPEDefaultEntryHolder.defaultEntry);
+        }
+        return eCFLBCKABPE_;
+      }
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetMutableECFLBCKABPE() {
+        onChanged();;
+        if (eCFLBCKABPE_ == null) {
+          eCFLBCKABPE_ = com.google.protobuf.MapField.newMapField(
+              ECFLBCKABPEDefaultEntryHolder.defaultEntry);
+        }
+        if (!eCFLBCKABPE_.isMutable()) {
+          eCFLBCKABPE_ = eCFLBCKABPE_.copy();
+        }
+        return eCFLBCKABPE_;
+      }
+
+      public int getECFLBCKABPECount() {
+        return internalGetECFLBCKABPE().getMap().size();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; ECFLBCKABPE = 6;</code>
+       */
+
+      @java.lang.Override
+      public boolean containsECFLBCKABPE(
+          int key) {
+        
+        return internalGetECFLBCKABPE().getMap().containsKey(key);
+      }
+      /**
+       * Use {@link #getECFLBCKABPEMap()} instead.
+       */
+      @java.lang.Override
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getECFLBCKABPE() {
+        return getECFLBCKABPEMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; ECFLBCKABPE = 6;</code>
+       */
+      @java.lang.Override
+
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getECFLBCKABPEMap() {
+        return internalGetECFLBCKABPE().getMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; ECFLBCKABPE = 6;</code>
+       */
+      @java.lang.Override
+
+      public int getECFLBCKABPEOrDefault(
+          int key,
+          int defaultValue) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetECFLBCKABPE().getMap();
+        return map.containsKey(key) ? map.get(key) : defaultValue;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; ECFLBCKABPE = 6;</code>
+       */
+      @java.lang.Override
+
+      public int getECFLBCKABPEOrThrow(
+          int key) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetECFLBCKABPE().getMap();
+        if (!map.containsKey(key)) {
+          throw new java.lang.IllegalArgumentException();
+        }
+        return map.get(key);
+      }
+
+      public Builder clearECFLBCKABPE() {
+        internalGetMutableECFLBCKABPE().getMutableMap()
+            .clear();
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; ECFLBCKABPE = 6;</code>
+       */
+
+      public Builder removeECFLBCKABPE(
+          int key) {
+        
+        internalGetMutableECFLBCKABPE().getMutableMap()
+            .remove(key);
+        return this;
+      }
+      /**
+       * Use alternate mutation accessors instead.
+       */
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer>
+      getMutableECFLBCKABPE() {
+        return internalGetMutableECFLBCKABPE().getMutableMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; ECFLBCKABPE = 6;</code>
+       */
+      public Builder putECFLBCKABPE(
+          int key,
+          int value) {
+        
+        
+        internalGetMutableECFLBCKABPE().getMutableMap()
+            .put(key, value);
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; ECFLBCKABPE = 6;</code>
+       */
+
+      public Builder putAllECFLBCKABPE(
+          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
+        internalGetMutableECFLBCKABPE().getMutableMap()
+            .putAll(values);
+        return this;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar> bestAvatarList_ =
         java.util.Collections.emptyList();
       private void ensureBestAvatarListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000002) != 0)) {
           bestAvatarList_ = new java.util.ArrayList<emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar>(bestAvatarList_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000002;
          }
       }
 
@@ -1050,7 +1209,7 @@ public final class MistTrialSettleNotifyOuterClass {
           emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar, emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.Builder, emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatarOrBuilder> bestAvatarListBuilder_;
 
       /**
-       * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+       * <code>repeated .MistTrialBestAvatar best_avatar_list = 5;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar> getBestAvatarListList() {
         if (bestAvatarListBuilder_ == null) {
@@ -1060,7 +1219,7 @@ public final class MistTrialSettleNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+       * <code>repeated .MistTrialBestAvatar best_avatar_list = 5;</code>
        */
       public int getBestAvatarListCount() {
         if (bestAvatarListBuilder_ == null) {
@@ -1070,7 +1229,7 @@ public final class MistTrialSettleNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+       * <code>repeated .MistTrialBestAvatar best_avatar_list = 5;</code>
        */
       public emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar getBestAvatarList(int index) {
         if (bestAvatarListBuilder_ == null) {
@@ -1080,7 +1239,7 @@ public final class MistTrialSettleNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+       * <code>repeated .MistTrialBestAvatar best_avatar_list = 5;</code>
        */
       public Builder setBestAvatarList(
           int index, emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar value) {
@@ -1097,7 +1256,7 @@ public final class MistTrialSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+       * <code>repeated .MistTrialBestAvatar best_avatar_list = 5;</code>
        */
       public Builder setBestAvatarList(
           int index, emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.Builder builderForValue) {
@@ -1111,7 +1270,7 @@ public final class MistTrialSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+       * <code>repeated .MistTrialBestAvatar best_avatar_list = 5;</code>
        */
       public Builder addBestAvatarList(emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar value) {
         if (bestAvatarListBuilder_ == null) {
@@ -1127,7 +1286,7 @@ public final class MistTrialSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+       * <code>repeated .MistTrialBestAvatar best_avatar_list = 5;</code>
        */
       public Builder addBestAvatarList(
           int index, emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar value) {
@@ -1144,7 +1303,7 @@ public final class MistTrialSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+       * <code>repeated .MistTrialBestAvatar best_avatar_list = 5;</code>
        */
       public Builder addBestAvatarList(
           emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.Builder builderForValue) {
@@ -1158,7 +1317,7 @@ public final class MistTrialSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+       * <code>repeated .MistTrialBestAvatar best_avatar_list = 5;</code>
        */
       public Builder addBestAvatarList(
           int index, emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.Builder builderForValue) {
@@ -1172,7 +1331,7 @@ public final class MistTrialSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+       * <code>repeated .MistTrialBestAvatar best_avatar_list = 5;</code>
        */
       public Builder addAllBestAvatarList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar> values) {
@@ -1187,12 +1346,12 @@ public final class MistTrialSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+       * <code>repeated .MistTrialBestAvatar best_avatar_list = 5;</code>
        */
       public Builder clearBestAvatarList() {
         if (bestAvatarListBuilder_ == null) {
           bestAvatarList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
         } else {
           bestAvatarListBuilder_.clear();
@@ -1200,7 +1359,7 @@ public final class MistTrialSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+       * <code>repeated .MistTrialBestAvatar best_avatar_list = 5;</code>
        */
       public Builder removeBestAvatarList(int index) {
         if (bestAvatarListBuilder_ == null) {
@@ -1213,14 +1372,14 @@ public final class MistTrialSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+       * <code>repeated .MistTrialBestAvatar best_avatar_list = 5;</code>
        */
       public emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.Builder getBestAvatarListBuilder(
           int index) {
         return getBestAvatarListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+       * <code>repeated .MistTrialBestAvatar best_avatar_list = 5;</code>
        */
       public emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatarOrBuilder getBestAvatarListOrBuilder(
           int index) {
@@ -1230,7 +1389,7 @@ public final class MistTrialSettleNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+       * <code>repeated .MistTrialBestAvatar best_avatar_list = 5;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatarOrBuilder> 
            getBestAvatarListOrBuilderList() {
@@ -1241,14 +1400,14 @@ public final class MistTrialSettleNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+       * <code>repeated .MistTrialBestAvatar best_avatar_list = 5;</code>
        */
       public emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.Builder addBestAvatarListBuilder() {
         return getBestAvatarListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.getDefaultInstance());
       }
       /**
-       * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+       * <code>repeated .MistTrialBestAvatar best_avatar_list = 5;</code>
        */
       public emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.Builder addBestAvatarListBuilder(
           int index) {
@@ -1256,7 +1415,7 @@ public final class MistTrialSettleNotifyOuterClass {
             index, emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.getDefaultInstance());
       }
       /**
-       * <code>repeated .MistTrialBestAvatar best_avatar_list = 3;</code>
+       * <code>repeated .MistTrialBestAvatar best_avatar_list = 5;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.Builder> 
            getBestAvatarListBuilderList() {
@@ -1269,7 +1428,7 @@ public final class MistTrialSettleNotifyOuterClass {
           bestAvatarListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar, emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.Builder, emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatarOrBuilder>(
                   bestAvatarList_,
-                  ((bitField0_ & 0x00000001) != 0),
+                  ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
                   isClean());
           bestAvatarList_ = null;
@@ -1277,177 +1436,18 @@ public final class MistTrialSettleNotifyOuterClass {
         return bestAvatarListBuilder_;
       }
 
-      private int firstPassTime_ ;
-      /**
-       * <code>uint32 first_pass_time = 8;</code>
-       * @return The firstPassTime.
-       */
-      @java.lang.Override
-      public int getFirstPassTime() {
-        return firstPassTime_;
-      }
-      /**
-       * <code>uint32 first_pass_time = 8;</code>
-       * @param value The firstPassTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFirstPassTime(int value) {
-        
-        firstPassTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 first_pass_time = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFirstPassTime() {
-        
-        firstPassTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> iIGOLKJOKAL_;
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetIIGOLKJOKAL() {
-        if (iIGOLKJOKAL_ == null) {
-          return com.google.protobuf.MapField.emptyMapField(
-              IIGOLKJOKALDefaultEntryHolder.defaultEntry);
-        }
-        return iIGOLKJOKAL_;
-      }
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableIIGOLKJOKAL() {
-        onChanged();;
-        if (iIGOLKJOKAL_ == null) {
-          iIGOLKJOKAL_ = com.google.protobuf.MapField.newMapField(
-              IIGOLKJOKALDefaultEntryHolder.defaultEntry);
-        }
-        if (!iIGOLKJOKAL_.isMutable()) {
-          iIGOLKJOKAL_ = iIGOLKJOKAL_.copy();
-        }
-        return iIGOLKJOKAL_;
-      }
-
-      public int getIIGOLKJOKALCount() {
-        return internalGetIIGOLKJOKAL().getMap().size();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; IIGOLKJOKAL = 15;</code>
-       */
-
-      @java.lang.Override
-      public boolean containsIIGOLKJOKAL(
-          int key) {
-        
-        return internalGetIIGOLKJOKAL().getMap().containsKey(key);
-      }
-      /**
-       * Use {@link #getIIGOLKJOKALMap()} instead.
-       */
-      @java.lang.Override
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getIIGOLKJOKAL() {
-        return getIIGOLKJOKALMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; IIGOLKJOKAL = 15;</code>
-       */
-      @java.lang.Override
-
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getIIGOLKJOKALMap() {
-        return internalGetIIGOLKJOKAL().getMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; IIGOLKJOKAL = 15;</code>
-       */
-      @java.lang.Override
-
-      public int getIIGOLKJOKALOrDefault(
-          int key,
-          int defaultValue) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetIIGOLKJOKAL().getMap();
-        return map.containsKey(key) ? map.get(key) : defaultValue;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; IIGOLKJOKAL = 15;</code>
-       */
-      @java.lang.Override
-
-      public int getIIGOLKJOKALOrThrow(
-          int key) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetIIGOLKJOKAL().getMap();
-        if (!map.containsKey(key)) {
-          throw new java.lang.IllegalArgumentException();
-        }
-        return map.get(key);
-      }
-
-      public Builder clearIIGOLKJOKAL() {
-        internalGetMutableIIGOLKJOKAL().getMutableMap()
-            .clear();
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; IIGOLKJOKAL = 15;</code>
-       */
-
-      public Builder removeIIGOLKJOKAL(
-          int key) {
-        
-        internalGetMutableIIGOLKJOKAL().getMutableMap()
-            .remove(key);
-        return this;
-      }
-      /**
-       * Use alternate mutation accessors instead.
-       */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableIIGOLKJOKAL() {
-        return internalGetMutableIIGOLKJOKAL().getMutableMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; IIGOLKJOKAL = 15;</code>
-       */
-      public Builder putIIGOLKJOKAL(
-          int key,
-          int value) {
-        
-        
-        internalGetMutableIIGOLKJOKAL().getMutableMap()
-            .put(key, value);
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; IIGOLKJOKAL = 15;</code>
-       */
-
-      public Builder putAllIIGOLKJOKAL(
-          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableIIGOLKJOKAL().getMutableMap()
-            .putAll(values);
-        return this;
-      }
-
       private emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar bestHitAvatar_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar, emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.Builder, emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatarOrBuilder> bestHitAvatarBuilder_;
       /**
-       * <code>.MistTrialBestAvatar best_hit_avatar = 5;</code>
+       * <code>.MistTrialBestAvatar best_hit_avatar = 10;</code>
        * @return Whether the bestHitAvatar field is set.
        */
       public boolean hasBestHitAvatar() {
         return bestHitAvatarBuilder_ != null || bestHitAvatar_ != null;
       }
       /**
-       * <code>.MistTrialBestAvatar best_hit_avatar = 5;</code>
+       * <code>.MistTrialBestAvatar best_hit_avatar = 10;</code>
        * @return The bestHitAvatar.
        */
       public emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar getBestHitAvatar() {
@@ -1458,7 +1458,7 @@ public final class MistTrialSettleNotifyOuterClass {
         }
       }
       /**
-       * <code>.MistTrialBestAvatar best_hit_avatar = 5;</code>
+       * <code>.MistTrialBestAvatar best_hit_avatar = 10;</code>
        */
       public Builder setBestHitAvatar(emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar value) {
         if (bestHitAvatarBuilder_ == null) {
@@ -1474,7 +1474,7 @@ public final class MistTrialSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.MistTrialBestAvatar best_hit_avatar = 5;</code>
+       * <code>.MistTrialBestAvatar best_hit_avatar = 10;</code>
        */
       public Builder setBestHitAvatar(
           emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.Builder builderForValue) {
@@ -1488,7 +1488,7 @@ public final class MistTrialSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.MistTrialBestAvatar best_hit_avatar = 5;</code>
+       * <code>.MistTrialBestAvatar best_hit_avatar = 10;</code>
        */
       public Builder mergeBestHitAvatar(emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar value) {
         if (bestHitAvatarBuilder_ == null) {
@@ -1506,7 +1506,7 @@ public final class MistTrialSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.MistTrialBestAvatar best_hit_avatar = 5;</code>
+       * <code>.MistTrialBestAvatar best_hit_avatar = 10;</code>
        */
       public Builder clearBestHitAvatar() {
         if (bestHitAvatarBuilder_ == null) {
@@ -1520,7 +1520,7 @@ public final class MistTrialSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.MistTrialBestAvatar best_hit_avatar = 5;</code>
+       * <code>.MistTrialBestAvatar best_hit_avatar = 10;</code>
        */
       public emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.Builder getBestHitAvatarBuilder() {
         
@@ -1528,7 +1528,7 @@ public final class MistTrialSettleNotifyOuterClass {
         return getBestHitAvatarFieldBuilder().getBuilder();
       }
       /**
-       * <code>.MistTrialBestAvatar best_hit_avatar = 5;</code>
+       * <code>.MistTrialBestAvatar best_hit_avatar = 10;</code>
        */
       public emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatarOrBuilder getBestHitAvatarOrBuilder() {
         if (bestHitAvatarBuilder_ != null) {
@@ -1539,7 +1539,7 @@ public final class MistTrialSettleNotifyOuterClass {
         }
       }
       /**
-       * <code>.MistTrialBestAvatar best_hit_avatar = 5;</code>
+       * <code>.MistTrialBestAvatar best_hit_avatar = 10;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar, emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatar.Builder, emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.MistTrialBestAvatarOrBuilder> 
@@ -1556,99 +1556,99 @@ public final class MistTrialSettleNotifyOuterClass {
       }
 
       private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> gIGIAGDALHG_;
+          java.lang.Integer, java.lang.Integer> mLPGIMJCPBJ_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetGIGIAGDALHG() {
-        if (gIGIAGDALHG_ == null) {
+      internalGetMLPGIMJCPBJ() {
+        if (mLPGIMJCPBJ_ == null) {
           return com.google.protobuf.MapField.emptyMapField(
-              GIGIAGDALHGDefaultEntryHolder.defaultEntry);
+              MLPGIMJCPBJDefaultEntryHolder.defaultEntry);
         }
-        return gIGIAGDALHG_;
+        return mLPGIMJCPBJ_;
       }
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableGIGIAGDALHG() {
+      internalGetMutableMLPGIMJCPBJ() {
         onChanged();;
-        if (gIGIAGDALHG_ == null) {
-          gIGIAGDALHG_ = com.google.protobuf.MapField.newMapField(
-              GIGIAGDALHGDefaultEntryHolder.defaultEntry);
+        if (mLPGIMJCPBJ_ == null) {
+          mLPGIMJCPBJ_ = com.google.protobuf.MapField.newMapField(
+              MLPGIMJCPBJDefaultEntryHolder.defaultEntry);
         }
-        if (!gIGIAGDALHG_.isMutable()) {
-          gIGIAGDALHG_ = gIGIAGDALHG_.copy();
+        if (!mLPGIMJCPBJ_.isMutable()) {
+          mLPGIMJCPBJ_ = mLPGIMJCPBJ_.copy();
         }
-        return gIGIAGDALHG_;
+        return mLPGIMJCPBJ_;
       }
 
-      public int getGIGIAGDALHGCount() {
-        return internalGetGIGIAGDALHG().getMap().size();
+      public int getMLPGIMJCPBJCount() {
+        return internalGetMLPGIMJCPBJ().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; GIGIAGDALHG = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; MLPGIMJCPBJ = 1;</code>
        */
 
       @java.lang.Override
-      public boolean containsGIGIAGDALHG(
+      public boolean containsMLPGIMJCPBJ(
           int key) {
         
-        return internalGetGIGIAGDALHG().getMap().containsKey(key);
+        return internalGetMLPGIMJCPBJ().getMap().containsKey(key);
       }
       /**
-       * Use {@link #getGIGIAGDALHGMap()} instead.
+       * Use {@link #getMLPGIMJCPBJMap()} instead.
        */
       @java.lang.Override
       @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getGIGIAGDALHG() {
-        return getGIGIAGDALHGMap();
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getMLPGIMJCPBJ() {
+        return getMLPGIMJCPBJMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; GIGIAGDALHG = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; MLPGIMJCPBJ = 1;</code>
        */
       @java.lang.Override
 
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getGIGIAGDALHGMap() {
-        return internalGetGIGIAGDALHG().getMap();
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getMLPGIMJCPBJMap() {
+        return internalGetMLPGIMJCPBJ().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; GIGIAGDALHG = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; MLPGIMJCPBJ = 1;</code>
        */
       @java.lang.Override
 
-      public int getGIGIAGDALHGOrDefault(
+      public int getMLPGIMJCPBJOrDefault(
           int key,
           int defaultValue) {
         
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetGIGIAGDALHG().getMap();
+            internalGetMLPGIMJCPBJ().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; GIGIAGDALHG = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; MLPGIMJCPBJ = 1;</code>
        */
       @java.lang.Override
 
-      public int getGIGIAGDALHGOrThrow(
+      public int getMLPGIMJCPBJOrThrow(
           int key) {
         
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetGIGIAGDALHG().getMap();
+            internalGetMLPGIMJCPBJ().getMap();
         if (!map.containsKey(key)) {
           throw new java.lang.IllegalArgumentException();
         }
         return map.get(key);
       }
 
-      public Builder clearGIGIAGDALHG() {
-        internalGetMutableGIGIAGDALHG().getMutableMap()
+      public Builder clearMLPGIMJCPBJ() {
+        internalGetMutableMLPGIMJCPBJ().getMutableMap()
             .clear();
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; GIGIAGDALHG = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; MLPGIMJCPBJ = 1;</code>
        */
 
-      public Builder removeGIGIAGDALHG(
+      public Builder removeMLPGIMJCPBJ(
           int key) {
         
-        internalGetMutableGIGIAGDALHG().getMutableMap()
+        internalGetMutableMLPGIMJCPBJ().getMutableMap()
             .remove(key);
         return this;
       }
@@ -1657,59 +1657,59 @@ public final class MistTrialSettleNotifyOuterClass {
        */
       @java.lang.Deprecated
       public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableGIGIAGDALHG() {
-        return internalGetMutableGIGIAGDALHG().getMutableMap();
+      getMutableMLPGIMJCPBJ() {
+        return internalGetMutableMLPGIMJCPBJ().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; GIGIAGDALHG = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; MLPGIMJCPBJ = 1;</code>
        */
-      public Builder putGIGIAGDALHG(
+      public Builder putMLPGIMJCPBJ(
           int key,
           int value) {
         
         
-        internalGetMutableGIGIAGDALHG().getMutableMap()
+        internalGetMutableMLPGIMJCPBJ().getMutableMap()
             .put(key, value);
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; GIGIAGDALHG = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; MLPGIMJCPBJ = 1;</code>
        */
 
-      public Builder putAllGIGIAGDALHG(
+      public Builder putAllMLPGIMJCPBJ(
           java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableGIGIAGDALHG().getMutableMap()
+        internalGetMutableMLPGIMJCPBJ().getMutableMap()
             .putAll(values);
         return this;
       }
 
-      private int dungeonSceneId_ ;
+      private int firstPassTime_ ;
       /**
-       * <code>uint32 dungeon_scene_id = 14;</code>
-       * @return The dungeonSceneId.
+       * <code>uint32 first_pass_time = 13;</code>
+       * @return The firstPassTime.
        */
       @java.lang.Override
-      public int getDungeonSceneId() {
-        return dungeonSceneId_;
+      public int getFirstPassTime() {
+        return firstPassTime_;
       }
       /**
-       * <code>uint32 dungeon_scene_id = 14;</code>
-       * @param value The dungeonSceneId to set.
+       * <code>uint32 first_pass_time = 13;</code>
+       * @param value The firstPassTime to set.
        * @return This builder for chaining.
        */
-      public Builder setDungeonSceneId(int value) {
+      public Builder setFirstPassTime(int value) {
         
-        dungeonSceneId_ = value;
+        firstPassTime_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 dungeon_scene_id = 14;</code>
+       * <code>uint32 first_pass_time = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDungeonSceneId() {
+      public Builder clearFirstPassTime() {
         
-        dungeonSceneId_ = 0;
+        firstPassTime_ = 0;
         onChanged();
         return this;
       }
@@ -1772,15 +1772,15 @@ public final class MistTrialSettleNotifyOuterClass {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_MistTrialSettleNotify_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_MistTrialSettleNotify_IIGOLKJOKALEntry_descriptor;
+    internal_static_MistTrialSettleNotify_ECFLBCKABPEEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_MistTrialSettleNotify_IIGOLKJOKALEntry_fieldAccessorTable;
+      internal_static_MistTrialSettleNotify_ECFLBCKABPEEntry_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_MistTrialSettleNotify_GIGIAGDALHGEntry_descriptor;
+    internal_static_MistTrialSettleNotify_MLPGIMJCPBJEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_MistTrialSettleNotify_GIGIAGDALHGEntry_fieldAccessorTable;
+      internal_static_MistTrialSettleNotify_MLPGIMJCPBJEntry_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1792,15 +1792,15 @@ public final class MistTrialSettleNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033MistTrialSettleNotify.proto\032\031MistTrial" +
       "BestAvatar.proto\"\215\003\n\025MistTrialSettleNoti" +
-      "fy\022.\n\020best_avatar_list\030\003 \003(\0132\024.MistTrial" +
-      "BestAvatar\022\027\n\017first_pass_time\030\010 \001(\r\022<\n\013I" +
-      "IGOLKJOKAL\030\017 \003(\0132\'.MistTrialSettleNotify" +
-      ".IIGOLKJOKALEntry\022-\n\017best_hit_avatar\030\005 \001" +
-      "(\0132\024.MistTrialBestAvatar\022<\n\013GIGIAGDALHG\030" +
-      "\014 \003(\0132\'.MistTrialSettleNotify.GIGIAGDALH" +
-      "GEntry\022\030\n\020dungeon_scene_id\030\016 \001(\r\0322\n\020IIGO" +
-      "LKJOKALEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r" +
-      ":\0028\001\0322\n\020GIGIAGDALHGEntry\022\013\n\003key\030\001 \001(\r\022\r\n" +
+      "fy\022\030\n\020dungeon_scene_id\030\003 \001(\r\022<\n\013ECFLBCKA" +
+      "BPE\030\006 \003(\0132\'.MistTrialSettleNotify.ECFLBC" +
+      "KABPEEntry\022.\n\020best_avatar_list\030\005 \003(\0132\024.M" +
+      "istTrialBestAvatar\022-\n\017best_hit_avatar\030\n " +
+      "\001(\0132\024.MistTrialBestAvatar\022<\n\013MLPGIMJCPBJ" +
+      "\030\001 \003(\0132\'.MistTrialSettleNotify.MLPGIMJCP" +
+      "BJEntry\022\027\n\017first_pass_time\030\r \001(\r\0322\n\020ECFL" +
+      "BCKABPEEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r" +
+      ":\0028\001\0322\n\020MLPGIMJCPBJEntry\022\013\n\003key\030\001 \001(\r\022\r\n" +
       "\005value\030\002 \001(\r:\0028\001B\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
@@ -1814,18 +1814,18 @@ public final class MistTrialSettleNotifyOuterClass {
     internal_static_MistTrialSettleNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MistTrialSettleNotify_descriptor,
-        new java.lang.String[] { "BestAvatarList", "FirstPassTime", "IIGOLKJOKAL", "BestHitAvatar", "GIGIAGDALHG", "DungeonSceneId", });
-    internal_static_MistTrialSettleNotify_IIGOLKJOKALEntry_descriptor =
+        new java.lang.String[] { "DungeonSceneId", "ECFLBCKABPE", "BestAvatarList", "BestHitAvatar", "MLPGIMJCPBJ", "FirstPassTime", });
+    internal_static_MistTrialSettleNotify_ECFLBCKABPEEntry_descriptor =
       internal_static_MistTrialSettleNotify_descriptor.getNestedTypes().get(0);
-    internal_static_MistTrialSettleNotify_IIGOLKJOKALEntry_fieldAccessorTable = new
+    internal_static_MistTrialSettleNotify_ECFLBCKABPEEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_MistTrialSettleNotify_IIGOLKJOKALEntry_descriptor,
+        internal_static_MistTrialSettleNotify_ECFLBCKABPEEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
-    internal_static_MistTrialSettleNotify_GIGIAGDALHGEntry_descriptor =
+    internal_static_MistTrialSettleNotify_MLPGIMJCPBJEntry_descriptor =
       internal_static_MistTrialSettleNotify_descriptor.getNestedTypes().get(1);
-    internal_static_MistTrialSettleNotify_GIGIAGDALHGEntry_fieldAccessorTable = new
+    internal_static_MistTrialSettleNotify_MLPGIMJCPBJEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_MistTrialSettleNotify_GIGIAGDALHGEntry_descriptor,
+        internal_static_MistTrialSettleNotify_MLPGIMJCPBJEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
     emu.grasscutter.net.proto.MistTrialBestAvatarOuterClass.getDescriptor();
   }

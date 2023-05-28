@@ -16,7 +16,7 @@ public final class PropChangeReasonOuterClass {
   }
   /**
    * <pre>
-   * Name: ILEGGBKJDDK
+   * Obf: PGCOKALJOJB
    * </pre>
    *
    * Protobuf enum {@code PropChangeReason}

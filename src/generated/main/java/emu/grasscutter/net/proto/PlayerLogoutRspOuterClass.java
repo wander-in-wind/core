@@ -26,8 +26,8 @@ public final class PlayerLogoutRspOuterClass {
   }
   /**
    * <pre>
-   * Name: GCGNBHCNJCH
-   * CmdId: 134
+   * CmdId: 148
+   * Obf: CONCBIGOIIK
    * </pre>
    *
    * Protobuf type {@code PlayerLogoutRsp}
@@ -279,8 +279,8 @@ public final class PlayerLogoutRspOuterClass {
     }
     /**
      * <pre>
-     * Name: GCGNBHCNJCH
-     * CmdId: 134
+     * CmdId: 148
+     * Obf: CONCBIGOIIK
      * </pre>
      *
      * Protobuf type {@code PlayerLogoutRsp}

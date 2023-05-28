@@ -19,60 +19,60 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 coin = 1;</code>
+     * <code>uint32 DOIFHHACKHE = 14;</code>
+     * @return The dOIFHHACKHE.
+     */
+    int getDOIFHHACKHE();
+
+    /**
+     * <code>uint32 coin = 15;</code>
      * @return The coin.
      */
     int getCoin();
 
     /**
-     * <code>.GalleryStartSource start_source = 11;</code>
+     * <code>.GalleryStartSource start_source = 13;</code>
      * @return The enum numeric value on the wire for startSource.
      */
     int getStartSourceValue();
     /**
-     * <code>.GalleryStartSource start_source = 11;</code>
+     * <code>.GalleryStartSource start_source = 13;</code>
      * @return The startSource.
      */
     emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource getStartSource();
 
     /**
-     * <code>uint32 PCDHDGNHKIH = 7;</code>
-     * @return The pCDHDGNHKIH.
+     * <code>uint32 POAAKPIBPIF = 8;</code>
+     * @return The pOAAKPIBPIF.
      */
-    int getPCDHDGNHKIH();
+    int getPOAAKPIBPIF();
 
     /**
-     * <code>uint32 HGHNCOGIFOB = 9;</code>
-     * @return The hGHNCOGIFOB.
+     * <code>uint32 PICIGOLIPOG = 1;</code>
+     * @return The pICIGOLIPOG.
      */
-    int getHGHNCOGIFOB();
+    int getPICIGOLIPOG();
 
     /**
-     * <code>uint32 CBJLPHIDMMA = 10;</code>
-     * @return The cBJLPHIDMMA.
-     */
-    int getCBJLPHIDMMA();
-
-    /**
-     * <code>.IslandPartySailStage stage = 6;</code>
+     * <code>.IslandPartySailStage stage = 11;</code>
      * @return The enum numeric value on the wire for stage.
      */
     int getStageValue();
     /**
-     * <code>.IslandPartySailStage stage = 6;</code>
+     * <code>.IslandPartySailStage stage = 11;</code>
      * @return The stage.
      */
     emu.grasscutter.net.proto.IslandPartySailStageOuterClass.IslandPartySailStage getStage();
 
     /**
-     * <code>uint32 BPMNGFDGLGL = 14;</code>
-     * @return The bPMNGFDGLGL.
+     * <code>uint32 PJPNOKJPCHO = 9;</code>
+     * @return The pJPNOKJPCHO.
      */
-    int getBPMNGFDGLGL();
+    int getPJPNOKJPCHO();
   }
   /**
    * <pre>
-   * Name: JDBICBHIFLJ
+   * Obf: AAKECFHHIMB
    * </pre>
    *
    * Protobuf type {@code SceneGalleryIslandPartySailInfo}
@@ -123,31 +123,26 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
               break;
             case 8: {
 
-              coin_ = input.readUInt32();
+              pICIGOLIPOG_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 64: {
+
+              pOAAKPIBPIF_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
+              pJPNOKJPCHO_ = input.readUInt32();
+              break;
+            }
+            case 88: {
               int rawValue = input.readEnum();
 
               stage_ = rawValue;
               break;
             }
-            case 56: {
-
-              pCDHDGNHKIH_ = input.readUInt32();
-              break;
-            }
-            case 72: {
-
-              hGHNCOGIFOB_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
-              cBJLPHIDMMA_ = input.readUInt32();
-              break;
-            }
-            case 88: {
+            case 104: {
               int rawValue = input.readEnum();
 
               startSource_ = rawValue;
@@ -155,7 +150,12 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
             }
             case 112: {
 
-              bPMNGFDGLGL_ = input.readUInt32();
+              dOIFHHACKHE_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              coin_ = input.readUInt32();
               break;
             }
             default: {
@@ -190,10 +190,21 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryIslandPartySailInfoOuterClass.SceneGalleryIslandPartySailInfo.class, emu.grasscutter.net.proto.SceneGalleryIslandPartySailInfoOuterClass.SceneGalleryIslandPartySailInfo.Builder.class);
     }
 
-    public static final int COIN_FIELD_NUMBER = 1;
+    public static final int DOIFHHACKHE_FIELD_NUMBER = 14;
+    private int dOIFHHACKHE_;
+    /**
+     * <code>uint32 DOIFHHACKHE = 14;</code>
+     * @return The dOIFHHACKHE.
+     */
+    @java.lang.Override
+    public int getDOIFHHACKHE() {
+      return dOIFHHACKHE_;
+    }
+
+    public static final int COIN_FIELD_NUMBER = 15;
     private int coin_;
     /**
-     * <code>uint32 coin = 1;</code>
+     * <code>uint32 coin = 15;</code>
      * @return The coin.
      */
     @java.lang.Override
@@ -201,17 +212,17 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
       return coin_;
     }
 
-    public static final int START_SOURCE_FIELD_NUMBER = 11;
+    public static final int START_SOURCE_FIELD_NUMBER = 13;
     private int startSource_;
     /**
-     * <code>.GalleryStartSource start_source = 11;</code>
+     * <code>.GalleryStartSource start_source = 13;</code>
      * @return The enum numeric value on the wire for startSource.
      */
     @java.lang.Override public int getStartSourceValue() {
       return startSource_;
     }
     /**
-     * <code>.GalleryStartSource start_source = 11;</code>
+     * <code>.GalleryStartSource start_source = 13;</code>
      * @return The startSource.
      */
     @java.lang.Override public emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource getStartSource() {
@@ -220,50 +231,39 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
       return result == null ? emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.UNRECOGNIZED : result;
     }
 
-    public static final int PCDHDGNHKIH_FIELD_NUMBER = 7;
-    private int pCDHDGNHKIH_;
+    public static final int POAAKPIBPIF_FIELD_NUMBER = 8;
+    private int pOAAKPIBPIF_;
     /**
-     * <code>uint32 PCDHDGNHKIH = 7;</code>
-     * @return The pCDHDGNHKIH.
+     * <code>uint32 POAAKPIBPIF = 8;</code>
+     * @return The pOAAKPIBPIF.
      */
     @java.lang.Override
-    public int getPCDHDGNHKIH() {
-      return pCDHDGNHKIH_;
+    public int getPOAAKPIBPIF() {
+      return pOAAKPIBPIF_;
     }
 
-    public static final int HGHNCOGIFOB_FIELD_NUMBER = 9;
-    private int hGHNCOGIFOB_;
+    public static final int PICIGOLIPOG_FIELD_NUMBER = 1;
+    private int pICIGOLIPOG_;
     /**
-     * <code>uint32 HGHNCOGIFOB = 9;</code>
-     * @return The hGHNCOGIFOB.
+     * <code>uint32 PICIGOLIPOG = 1;</code>
+     * @return The pICIGOLIPOG.
      */
     @java.lang.Override
-    public int getHGHNCOGIFOB() {
-      return hGHNCOGIFOB_;
+    public int getPICIGOLIPOG() {
+      return pICIGOLIPOG_;
     }
 
-    public static final int CBJLPHIDMMA_FIELD_NUMBER = 10;
-    private int cBJLPHIDMMA_;
-    /**
-     * <code>uint32 CBJLPHIDMMA = 10;</code>
-     * @return The cBJLPHIDMMA.
-     */
-    @java.lang.Override
-    public int getCBJLPHIDMMA() {
-      return cBJLPHIDMMA_;
-    }
-
-    public static final int STAGE_FIELD_NUMBER = 6;
+    public static final int STAGE_FIELD_NUMBER = 11;
     private int stage_;
     /**
-     * <code>.IslandPartySailStage stage = 6;</code>
+     * <code>.IslandPartySailStage stage = 11;</code>
      * @return The enum numeric value on the wire for stage.
      */
     @java.lang.Override public int getStageValue() {
       return stage_;
     }
     /**
-     * <code>.IslandPartySailStage stage = 6;</code>
+     * <code>.IslandPartySailStage stage = 11;</code>
      * @return The stage.
      */
     @java.lang.Override public emu.grasscutter.net.proto.IslandPartySailStageOuterClass.IslandPartySailStage getStage() {
@@ -272,15 +272,15 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
       return result == null ? emu.grasscutter.net.proto.IslandPartySailStageOuterClass.IslandPartySailStage.UNRECOGNIZED : result;
     }
 
-    public static final int BPMNGFDGLGL_FIELD_NUMBER = 14;
-    private int bPMNGFDGLGL_;
+    public static final int PJPNOKJPCHO_FIELD_NUMBER = 9;
+    private int pJPNOKJPCHO_;
     /**
-     * <code>uint32 BPMNGFDGLGL = 14;</code>
-     * @return The bPMNGFDGLGL.
+     * <code>uint32 PJPNOKJPCHO = 9;</code>
+     * @return The pJPNOKJPCHO.
      */
     @java.lang.Override
-    public int getBPMNGFDGLGL() {
-      return bPMNGFDGLGL_;
+    public int getPJPNOKJPCHO() {
+      return pJPNOKJPCHO_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -297,26 +297,26 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (coin_ != 0) {
-        output.writeUInt32(1, coin_);
+      if (pICIGOLIPOG_ != 0) {
+        output.writeUInt32(1, pICIGOLIPOG_);
+      }
+      if (pOAAKPIBPIF_ != 0) {
+        output.writeUInt32(8, pOAAKPIBPIF_);
+      }
+      if (pJPNOKJPCHO_ != 0) {
+        output.writeUInt32(9, pJPNOKJPCHO_);
       }
       if (stage_ != emu.grasscutter.net.proto.IslandPartySailStageOuterClass.IslandPartySailStage.ISLAND_PARTY_SAIL_STAGE_NONE.getNumber()) {
-        output.writeEnum(6, stage_);
-      }
-      if (pCDHDGNHKIH_ != 0) {
-        output.writeUInt32(7, pCDHDGNHKIH_);
-      }
-      if (hGHNCOGIFOB_ != 0) {
-        output.writeUInt32(9, hGHNCOGIFOB_);
-      }
-      if (cBJLPHIDMMA_ != 0) {
-        output.writeUInt32(10, cBJLPHIDMMA_);
+        output.writeEnum(11, stage_);
       }
       if (startSource_ != emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.GALLERY_START_BY_NONE.getNumber()) {
-        output.writeEnum(11, startSource_);
+        output.writeEnum(13, startSource_);
       }
-      if (bPMNGFDGLGL_ != 0) {
-        output.writeUInt32(14, bPMNGFDGLGL_);
+      if (dOIFHHACKHE_ != 0) {
+        output.writeUInt32(14, dOIFHHACKHE_);
+      }
+      if (coin_ != 0) {
+        output.writeUInt32(15, coin_);
       }
       unknownFields.writeTo(output);
     }
@@ -327,33 +327,33 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (coin_ != 0) {
+      if (pICIGOLIPOG_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, coin_);
+          .computeUInt32Size(1, pICIGOLIPOG_);
+      }
+      if (pOAAKPIBPIF_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, pOAAKPIBPIF_);
+      }
+      if (pJPNOKJPCHO_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, pJPNOKJPCHO_);
       }
       if (stage_ != emu.grasscutter.net.proto.IslandPartySailStageOuterClass.IslandPartySailStage.ISLAND_PARTY_SAIL_STAGE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(6, stage_);
-      }
-      if (pCDHDGNHKIH_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, pCDHDGNHKIH_);
-      }
-      if (hGHNCOGIFOB_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, hGHNCOGIFOB_);
-      }
-      if (cBJLPHIDMMA_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, cBJLPHIDMMA_);
+          .computeEnumSize(11, stage_);
       }
       if (startSource_ != emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.GALLERY_START_BY_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(11, startSource_);
+          .computeEnumSize(13, startSource_);
       }
-      if (bPMNGFDGLGL_ != 0) {
+      if (dOIFHHACKHE_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, bPMNGFDGLGL_);
+          .computeUInt32Size(14, dOIFHHACKHE_);
+      }
+      if (coin_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, coin_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -370,18 +370,18 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneGalleryIslandPartySailInfoOuterClass.SceneGalleryIslandPartySailInfo other = (emu.grasscutter.net.proto.SceneGalleryIslandPartySailInfoOuterClass.SceneGalleryIslandPartySailInfo) obj;
 
+      if (getDOIFHHACKHE()
+          != other.getDOIFHHACKHE()) return false;
       if (getCoin()
           != other.getCoin()) return false;
       if (startSource_ != other.startSource_) return false;
-      if (getPCDHDGNHKIH()
-          != other.getPCDHDGNHKIH()) return false;
-      if (getHGHNCOGIFOB()
-          != other.getHGHNCOGIFOB()) return false;
-      if (getCBJLPHIDMMA()
-          != other.getCBJLPHIDMMA()) return false;
+      if (getPOAAKPIBPIF()
+          != other.getPOAAKPIBPIF()) return false;
+      if (getPICIGOLIPOG()
+          != other.getPICIGOLIPOG()) return false;
       if (stage_ != other.stage_) return false;
-      if (getBPMNGFDGLGL()
-          != other.getBPMNGFDGLGL()) return false;
+      if (getPJPNOKJPCHO()
+          != other.getPJPNOKJPCHO()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -393,20 +393,20 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + DOIFHHACKHE_FIELD_NUMBER;
+      hash = (53 * hash) + getDOIFHHACKHE();
       hash = (37 * hash) + COIN_FIELD_NUMBER;
       hash = (53 * hash) + getCoin();
       hash = (37 * hash) + START_SOURCE_FIELD_NUMBER;
       hash = (53 * hash) + startSource_;
-      hash = (37 * hash) + PCDHDGNHKIH_FIELD_NUMBER;
-      hash = (53 * hash) + getPCDHDGNHKIH();
-      hash = (37 * hash) + HGHNCOGIFOB_FIELD_NUMBER;
-      hash = (53 * hash) + getHGHNCOGIFOB();
-      hash = (37 * hash) + CBJLPHIDMMA_FIELD_NUMBER;
-      hash = (53 * hash) + getCBJLPHIDMMA();
+      hash = (37 * hash) + POAAKPIBPIF_FIELD_NUMBER;
+      hash = (53 * hash) + getPOAAKPIBPIF();
+      hash = (37 * hash) + PICIGOLIPOG_FIELD_NUMBER;
+      hash = (53 * hash) + getPICIGOLIPOG();
       hash = (37 * hash) + STAGE_FIELD_NUMBER;
       hash = (53 * hash) + stage_;
-      hash = (37 * hash) + BPMNGFDGLGL_FIELD_NUMBER;
-      hash = (53 * hash) + getBPMNGFDGLGL();
+      hash = (37 * hash) + PJPNOKJPCHO_FIELD_NUMBER;
+      hash = (53 * hash) + getPJPNOKJPCHO();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -504,7 +504,7 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: JDBICBHIFLJ
+     * Obf: AAKECFHHIMB
      * </pre>
      *
      * Protobuf type {@code SceneGalleryIslandPartySailInfo}
@@ -544,19 +544,19 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        dOIFHHACKHE_ = 0;
+
         coin_ = 0;
 
         startSource_ = 0;
 
-        pCDHDGNHKIH_ = 0;
+        pOAAKPIBPIF_ = 0;
 
-        hGHNCOGIFOB_ = 0;
-
-        cBJLPHIDMMA_ = 0;
+        pICIGOLIPOG_ = 0;
 
         stage_ = 0;
 
-        bPMNGFDGLGL_ = 0;
+        pJPNOKJPCHO_ = 0;
 
         return this;
       }
@@ -584,13 +584,13 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneGalleryIslandPartySailInfoOuterClass.SceneGalleryIslandPartySailInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGalleryIslandPartySailInfoOuterClass.SceneGalleryIslandPartySailInfo result = new emu.grasscutter.net.proto.SceneGalleryIslandPartySailInfoOuterClass.SceneGalleryIslandPartySailInfo(this);
+        result.dOIFHHACKHE_ = dOIFHHACKHE_;
         result.coin_ = coin_;
         result.startSource_ = startSource_;
-        result.pCDHDGNHKIH_ = pCDHDGNHKIH_;
-        result.hGHNCOGIFOB_ = hGHNCOGIFOB_;
-        result.cBJLPHIDMMA_ = cBJLPHIDMMA_;
+        result.pOAAKPIBPIF_ = pOAAKPIBPIF_;
+        result.pICIGOLIPOG_ = pICIGOLIPOG_;
         result.stage_ = stage_;
-        result.bPMNGFDGLGL_ = bPMNGFDGLGL_;
+        result.pJPNOKJPCHO_ = pJPNOKJPCHO_;
         onBuilt();
         return result;
       }
@@ -639,26 +639,26 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneGalleryIslandPartySailInfoOuterClass.SceneGalleryIslandPartySailInfo other) {
         if (other == emu.grasscutter.net.proto.SceneGalleryIslandPartySailInfoOuterClass.SceneGalleryIslandPartySailInfo.getDefaultInstance()) return this;
+        if (other.getDOIFHHACKHE() != 0) {
+          setDOIFHHACKHE(other.getDOIFHHACKHE());
+        }
         if (other.getCoin() != 0) {
           setCoin(other.getCoin());
         }
         if (other.startSource_ != 0) {
           setStartSourceValue(other.getStartSourceValue());
         }
-        if (other.getPCDHDGNHKIH() != 0) {
-          setPCDHDGNHKIH(other.getPCDHDGNHKIH());
+        if (other.getPOAAKPIBPIF() != 0) {
+          setPOAAKPIBPIF(other.getPOAAKPIBPIF());
         }
-        if (other.getHGHNCOGIFOB() != 0) {
-          setHGHNCOGIFOB(other.getHGHNCOGIFOB());
-        }
-        if (other.getCBJLPHIDMMA() != 0) {
-          setCBJLPHIDMMA(other.getCBJLPHIDMMA());
+        if (other.getPICIGOLIPOG() != 0) {
+          setPICIGOLIPOG(other.getPICIGOLIPOG());
         }
         if (other.stage_ != 0) {
           setStageValue(other.getStageValue());
         }
-        if (other.getBPMNGFDGLGL() != 0) {
-          setBPMNGFDGLGL(other.getBPMNGFDGLGL());
+        if (other.getPJPNOKJPCHO() != 0) {
+          setPJPNOKJPCHO(other.getPJPNOKJPCHO());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -689,9 +689,40 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
         return this;
       }
 
+      private int dOIFHHACKHE_ ;
+      /**
+       * <code>uint32 DOIFHHACKHE = 14;</code>
+       * @return The dOIFHHACKHE.
+       */
+      @java.lang.Override
+      public int getDOIFHHACKHE() {
+        return dOIFHHACKHE_;
+      }
+      /**
+       * <code>uint32 DOIFHHACKHE = 14;</code>
+       * @param value The dOIFHHACKHE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDOIFHHACKHE(int value) {
+        
+        dOIFHHACKHE_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 DOIFHHACKHE = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDOIFHHACKHE() {
+        
+        dOIFHHACKHE_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int coin_ ;
       /**
-       * <code>uint32 coin = 1;</code>
+       * <code>uint32 coin = 15;</code>
        * @return The coin.
        */
       @java.lang.Override
@@ -699,7 +730,7 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
         return coin_;
       }
       /**
-       * <code>uint32 coin = 1;</code>
+       * <code>uint32 coin = 15;</code>
        * @param value The coin to set.
        * @return This builder for chaining.
        */
@@ -710,7 +741,7 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 coin = 1;</code>
+       * <code>uint32 coin = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearCoin() {
@@ -722,14 +753,14 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
 
       private int startSource_ = 0;
       /**
-       * <code>.GalleryStartSource start_source = 11;</code>
+       * <code>.GalleryStartSource start_source = 13;</code>
        * @return The enum numeric value on the wire for startSource.
        */
       @java.lang.Override public int getStartSourceValue() {
         return startSource_;
       }
       /**
-       * <code>.GalleryStartSource start_source = 11;</code>
+       * <code>.GalleryStartSource start_source = 13;</code>
        * @param value The enum numeric value on the wire for startSource to set.
        * @return This builder for chaining.
        */
@@ -740,7 +771,7 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.GalleryStartSource start_source = 11;</code>
+       * <code>.GalleryStartSource start_source = 13;</code>
        * @return The startSource.
        */
       @java.lang.Override
@@ -750,7 +781,7 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
         return result == null ? emu.grasscutter.net.proto.GalleryStartSourceOuterClass.GalleryStartSource.UNRECOGNIZED : result;
       }
       /**
-       * <code>.GalleryStartSource start_source = 11;</code>
+       * <code>.GalleryStartSource start_source = 13;</code>
        * @param value The startSource to set.
        * @return This builder for chaining.
        */
@@ -764,7 +795,7 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.GalleryStartSource start_source = 11;</code>
+       * <code>.GalleryStartSource start_source = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearStartSource() {
@@ -774,109 +805,78 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
         return this;
       }
 
-      private int pCDHDGNHKIH_ ;
+      private int pOAAKPIBPIF_ ;
       /**
-       * <code>uint32 PCDHDGNHKIH = 7;</code>
-       * @return The pCDHDGNHKIH.
+       * <code>uint32 POAAKPIBPIF = 8;</code>
+       * @return The pOAAKPIBPIF.
        */
       @java.lang.Override
-      public int getPCDHDGNHKIH() {
-        return pCDHDGNHKIH_;
+      public int getPOAAKPIBPIF() {
+        return pOAAKPIBPIF_;
       }
       /**
-       * <code>uint32 PCDHDGNHKIH = 7;</code>
-       * @param value The pCDHDGNHKIH to set.
+       * <code>uint32 POAAKPIBPIF = 8;</code>
+       * @param value The pOAAKPIBPIF to set.
        * @return This builder for chaining.
        */
-      public Builder setPCDHDGNHKIH(int value) {
+      public Builder setPOAAKPIBPIF(int value) {
         
-        pCDHDGNHKIH_ = value;
+        pOAAKPIBPIF_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 PCDHDGNHKIH = 7;</code>
+       * <code>uint32 POAAKPIBPIF = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearPCDHDGNHKIH() {
+      public Builder clearPOAAKPIBPIF() {
         
-        pCDHDGNHKIH_ = 0;
+        pOAAKPIBPIF_ = 0;
         onChanged();
         return this;
       }
 
-      private int hGHNCOGIFOB_ ;
+      private int pICIGOLIPOG_ ;
       /**
-       * <code>uint32 HGHNCOGIFOB = 9;</code>
-       * @return The hGHNCOGIFOB.
+       * <code>uint32 PICIGOLIPOG = 1;</code>
+       * @return The pICIGOLIPOG.
        */
       @java.lang.Override
-      public int getHGHNCOGIFOB() {
-        return hGHNCOGIFOB_;
+      public int getPICIGOLIPOG() {
+        return pICIGOLIPOG_;
       }
       /**
-       * <code>uint32 HGHNCOGIFOB = 9;</code>
-       * @param value The hGHNCOGIFOB to set.
+       * <code>uint32 PICIGOLIPOG = 1;</code>
+       * @param value The pICIGOLIPOG to set.
        * @return This builder for chaining.
        */
-      public Builder setHGHNCOGIFOB(int value) {
+      public Builder setPICIGOLIPOG(int value) {
         
-        hGHNCOGIFOB_ = value;
+        pICIGOLIPOG_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 HGHNCOGIFOB = 9;</code>
+       * <code>uint32 PICIGOLIPOG = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearHGHNCOGIFOB() {
+      public Builder clearPICIGOLIPOG() {
         
-        hGHNCOGIFOB_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int cBJLPHIDMMA_ ;
-      /**
-       * <code>uint32 CBJLPHIDMMA = 10;</code>
-       * @return The cBJLPHIDMMA.
-       */
-      @java.lang.Override
-      public int getCBJLPHIDMMA() {
-        return cBJLPHIDMMA_;
-      }
-      /**
-       * <code>uint32 CBJLPHIDMMA = 10;</code>
-       * @param value The cBJLPHIDMMA to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCBJLPHIDMMA(int value) {
-        
-        cBJLPHIDMMA_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 CBJLPHIDMMA = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCBJLPHIDMMA() {
-        
-        cBJLPHIDMMA_ = 0;
+        pICIGOLIPOG_ = 0;
         onChanged();
         return this;
       }
 
       private int stage_ = 0;
       /**
-       * <code>.IslandPartySailStage stage = 6;</code>
+       * <code>.IslandPartySailStage stage = 11;</code>
        * @return The enum numeric value on the wire for stage.
        */
       @java.lang.Override public int getStageValue() {
         return stage_;
       }
       /**
-       * <code>.IslandPartySailStage stage = 6;</code>
+       * <code>.IslandPartySailStage stage = 11;</code>
        * @param value The enum numeric value on the wire for stage to set.
        * @return This builder for chaining.
        */
@@ -887,7 +887,7 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.IslandPartySailStage stage = 6;</code>
+       * <code>.IslandPartySailStage stage = 11;</code>
        * @return The stage.
        */
       @java.lang.Override
@@ -897,7 +897,7 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
         return result == null ? emu.grasscutter.net.proto.IslandPartySailStageOuterClass.IslandPartySailStage.UNRECOGNIZED : result;
       }
       /**
-       * <code>.IslandPartySailStage stage = 6;</code>
+       * <code>.IslandPartySailStage stage = 11;</code>
        * @param value The stage to set.
        * @return This builder for chaining.
        */
@@ -911,7 +911,7 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.IslandPartySailStage stage = 6;</code>
+       * <code>.IslandPartySailStage stage = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearStage() {
@@ -921,33 +921,33 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
         return this;
       }
 
-      private int bPMNGFDGLGL_ ;
+      private int pJPNOKJPCHO_ ;
       /**
-       * <code>uint32 BPMNGFDGLGL = 14;</code>
-       * @return The bPMNGFDGLGL.
+       * <code>uint32 PJPNOKJPCHO = 9;</code>
+       * @return The pJPNOKJPCHO.
        */
       @java.lang.Override
-      public int getBPMNGFDGLGL() {
-        return bPMNGFDGLGL_;
+      public int getPJPNOKJPCHO() {
+        return pJPNOKJPCHO_;
       }
       /**
-       * <code>uint32 BPMNGFDGLGL = 14;</code>
-       * @param value The bPMNGFDGLGL to set.
+       * <code>uint32 PJPNOKJPCHO = 9;</code>
+       * @param value The pJPNOKJPCHO to set.
        * @return This builder for chaining.
        */
-      public Builder setBPMNGFDGLGL(int value) {
+      public Builder setPJPNOKJPCHO(int value) {
         
-        bPMNGFDGLGL_ = value;
+        pJPNOKJPCHO_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 BPMNGFDGLGL = 14;</code>
+       * <code>uint32 PJPNOKJPCHO = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBPMNGFDGLGL() {
+      public Builder clearPJPNOKJPCHO() {
         
-        bPMNGFDGLGL_ = 0;
+        pJPNOKJPCHO_ = 0;
         onChanged();
         return this;
       }
@@ -1021,11 +1021,11 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
       "\n%SceneGalleryIslandPartySailInfo.proto\032" +
       "\030GalleryStartSource.proto\032\032IslandPartySa" +
       "ilStage.proto\"\324\001\n\037SceneGalleryIslandPart" +
-      "ySailInfo\022\014\n\004coin\030\001 \001(\r\022)\n\014start_source\030" +
-      "\013 \001(\0162\023.GalleryStartSource\022\023\n\013PCDHDGNHKI" +
-      "H\030\007 \001(\r\022\023\n\013HGHNCOGIFOB\030\t \001(\r\022\023\n\013CBJLPHID" +
-      "MMA\030\n \001(\r\022$\n\005stage\030\006 \001(\0162\025.IslandPartySa" +
-      "ilStage\022\023\n\013BPMNGFDGLGL\030\016 \001(\rB\033\n\031emu.gras" +
+      "ySailInfo\022\023\n\013DOIFHHACKHE\030\016 \001(\r\022\014\n\004coin\030\017" +
+      " \001(\r\022)\n\014start_source\030\r \001(\0162\023.GalleryStar" +
+      "tSource\022\023\n\013POAAKPIBPIF\030\010 \001(\r\022\023\n\013PICIGOLI" +
+      "POG\030\001 \001(\r\022$\n\005stage\030\013 \001(\0162\025.IslandPartySa" +
+      "ilStage\022\023\n\013PJPNOKJPCHO\030\t \001(\rB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1039,7 +1039,7 @@ public final class SceneGalleryIslandPartySailInfoOuterClass {
     internal_static_SceneGalleryIslandPartySailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryIslandPartySailInfo_descriptor,
-        new java.lang.String[] { "Coin", "StartSource", "PCDHDGNHKIH", "HGHNCOGIFOB", "CBJLPHIDMMA", "Stage", "BPMNGFDGLGL", });
+        new java.lang.String[] { "DOIFHHACKHE", "Coin", "StartSource", "POAAKPIBPIF", "PICIGOLIPOG", "Stage", "PJPNOKJPCHO", });
     emu.grasscutter.net.proto.GalleryStartSourceOuterClass.getDescriptor();
     emu.grasscutter.net.proto.IslandPartySailStageOuterClass.getDescriptor();
   }

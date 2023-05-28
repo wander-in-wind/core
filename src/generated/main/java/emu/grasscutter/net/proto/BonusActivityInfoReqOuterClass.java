@@ -20,8 +20,8 @@ public final class BonusActivityInfoReqOuterClass {
   }
   /**
    * <pre>
-   * Name: DNOKOCEBFIG
-   * CmdId: 2591
+   * CmdId: 2521
+   * Obf: FBLGPGPKKFK
    * </pre>
    *
    * Protobuf type {@code BonusActivityInfoReq}
@@ -246,8 +246,8 @@ public final class BonusActivityInfoReqOuterClass {
     }
     /**
      * <pre>
-     * Name: DNOKOCEBFIG
-     * CmdId: 2591
+     * CmdId: 2521
+     * Obf: FBLGPGPKKFK
      * </pre>
      *
      * Protobuf type {@code BonusActivityInfoReq}

@@ -19,15 +19,15 @@ public final class SpringUseReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint64 guid = 6;</code>
+     * <code>uint64 guid = 10;</code>
      * @return The guid.
      */
     long getGuid();
   }
   /**
    * <pre>
-   * Name: EDJCHALHLPF
-   * CmdId: 1788
+   * CmdId: 1799
+   * Obf: MLEGBAIPGGO
    * </pre>
    *
    * Protobuf type {@code SpringUseReq}
@@ -74,7 +74,7 @@ public final class SpringUseReqOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 80: {
 
               guid_ = input.readUInt64();
               break;
@@ -111,10 +111,10 @@ public final class SpringUseReqOuterClass {
               emu.grasscutter.net.proto.SpringUseReqOuterClass.SpringUseReq.class, emu.grasscutter.net.proto.SpringUseReqOuterClass.SpringUseReq.Builder.class);
     }
 
-    public static final int GUID_FIELD_NUMBER = 6;
+    public static final int GUID_FIELD_NUMBER = 10;
     private long guid_;
     /**
-     * <code>uint64 guid = 6;</code>
+     * <code>uint64 guid = 10;</code>
      * @return The guid.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class SpringUseReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (guid_ != 0L) {
-        output.writeUInt64(6, guid_);
+        output.writeUInt64(10, guid_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class SpringUseReqOuterClass {
       size = 0;
       if (guid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(6, guid_);
+          .computeUInt64Size(10, guid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,8 +280,8 @@ public final class SpringUseReqOuterClass {
     }
     /**
      * <pre>
-     * Name: EDJCHALHLPF
-     * CmdId: 1788
+     * CmdId: 1799
+     * Obf: MLEGBAIPGGO
      * </pre>
      *
      * Protobuf type {@code SpringUseReq}
@@ -432,7 +432,7 @@ public final class SpringUseReqOuterClass {
 
       private long guid_ ;
       /**
-       * <code>uint64 guid = 6;</code>
+       * <code>uint64 guid = 10;</code>
        * @return The guid.
        */
       @java.lang.Override
@@ -440,7 +440,7 @@ public final class SpringUseReqOuterClass {
         return guid_;
       }
       /**
-       * <code>uint64 guid = 6;</code>
+       * <code>uint64 guid = 10;</code>
        * @param value The guid to set.
        * @return This builder for chaining.
        */
@@ -451,7 +451,7 @@ public final class SpringUseReqOuterClass {
         return this;
       }
       /**
-       * <code>uint64 guid = 6;</code>
+       * <code>uint64 guid = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearGuid() {
@@ -528,7 +528,7 @@ public final class SpringUseReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\022SpringUseReq.proto\"\034\n\014SpringUseReq\022\014\n\004" +
-      "guid\030\006 \001(\004B\033\n\031emu.grasscutter.net.protob" +
+      "guid\030\n \001(\004B\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

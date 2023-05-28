@@ -19,28 +19,20 @@ public final class GCGGameCreateFailReasonNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *AIFELBCMNGE snooswap
-     * </pre>
-     *
-     * <code>.GCGGameCreateFailReasonNotify.GCGGameCreateReason reason = 6;</code>
+     * <code>.GCGGameCreateFailReasonNotify.GCGGameCreateReason reason = 15;</code>
      * @return The enum numeric value on the wire for reason.
      */
     int getReasonValue();
     /**
-     * <pre>
-     *AIFELBCMNGE snooswap
-     * </pre>
-     *
-     * <code>.GCGGameCreateFailReasonNotify.GCGGameCreateReason reason = 6;</code>
+     * <code>.GCGGameCreateFailReasonNotify.GCGGameCreateReason reason = 15;</code>
      * @return The reason.
      */
     emu.grasscutter.net.proto.GCGGameCreateFailReasonNotifyOuterClass.GCGGameCreateFailReasonNotify.GCGGameCreateReason getReason();
   }
   /**
    * <pre>
-   * Name: JGMCLGAMEOA
-   * CmdId: 7060
+   * CmdId: 7645
+   * Obf: JCGBJLLGAEF
    * </pre>
    *
    * Protobuf type {@code GCGGameCreateFailReasonNotify}
@@ -88,7 +80,7 @@ public final class GCGGameCreateFailReasonNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 120: {
               int rawValue = input.readEnum();
 
               reason_ = rawValue;
@@ -128,8 +120,7 @@ public final class GCGGameCreateFailReasonNotifyOuterClass {
 
     /**
      * <pre>
-     *snooswap
-     * Name: GCGGameCreateReason
+     * Obf: DIBOBKFKGCD
      * </pre>
      *
      * Protobuf enum {@code GCGGameCreateFailReasonNotify.GCGGameCreateReason}
@@ -156,6 +147,10 @@ public final class GCGGameCreateFailReasonNotifyOuterClass {
        * <code>REASON_TIMEOUT = 4;</code>
        */
       REASON_TIMEOUT(4),
+      /**
+       * <code>REASON_OPPONENT_CLIENT_VERSION_NOT_LASTEST = 5;</code>
+       */
+      REASON_OPPONENT_CLIENT_VERSION_NOT_LASTEST(5),
       UNRECOGNIZED(-1),
       ;
 
@@ -179,6 +174,10 @@ public final class GCGGameCreateFailReasonNotifyOuterClass {
        * <code>REASON_TIMEOUT = 4;</code>
        */
       public static final int REASON_TIMEOUT_VALUE = 4;
+      /**
+       * <code>REASON_OPPONENT_CLIENT_VERSION_NOT_LASTEST = 5;</code>
+       */
+      public static final int REASON_OPPONENT_CLIENT_VERSION_NOT_LASTEST_VALUE = 5;
 
 
       public final int getNumber() {
@@ -210,6 +209,7 @@ public final class GCGGameCreateFailReasonNotifyOuterClass {
           case 2: return REASON_CLIENT_VERSION_NOT_LASTEST;
           case 3: return REASON_RESOURCE_NOT_COMPLETE;
           case 4: return REASON_TIMEOUT;
+          case 5: return REASON_OPPONENT_CLIENT_VERSION_NOT_LASTEST;
           default: return null;
         }
       }
@@ -266,25 +266,17 @@ public final class GCGGameCreateFailReasonNotifyOuterClass {
       // @@protoc_insertion_point(enum_scope:GCGGameCreateFailReasonNotify.GCGGameCreateReason)
     }
 
-    public static final int REASON_FIELD_NUMBER = 6;
+    public static final int REASON_FIELD_NUMBER = 15;
     private int reason_;
     /**
-     * <pre>
-     *AIFELBCMNGE snooswap
-     * </pre>
-     *
-     * <code>.GCGGameCreateFailReasonNotify.GCGGameCreateReason reason = 6;</code>
+     * <code>.GCGGameCreateFailReasonNotify.GCGGameCreateReason reason = 15;</code>
      * @return The enum numeric value on the wire for reason.
      */
     @java.lang.Override public int getReasonValue() {
       return reason_;
     }
     /**
-     * <pre>
-     *AIFELBCMNGE snooswap
-     * </pre>
-     *
-     * <code>.GCGGameCreateFailReasonNotify.GCGGameCreateReason reason = 6;</code>
+     * <code>.GCGGameCreateFailReasonNotify.GCGGameCreateReason reason = 15;</code>
      * @return The reason.
      */
     @java.lang.Override public emu.grasscutter.net.proto.GCGGameCreateFailReasonNotifyOuterClass.GCGGameCreateFailReasonNotify.GCGGameCreateReason getReason() {
@@ -308,7 +300,7 @@ public final class GCGGameCreateFailReasonNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (reason_ != emu.grasscutter.net.proto.GCGGameCreateFailReasonNotifyOuterClass.GCGGameCreateFailReasonNotify.GCGGameCreateReason.REASON_NONE.getNumber()) {
-        output.writeEnum(6, reason_);
+        output.writeEnum(15, reason_);
       }
       unknownFields.writeTo(output);
     }
@@ -321,7 +313,7 @@ public final class GCGGameCreateFailReasonNotifyOuterClass {
       size = 0;
       if (reason_ != emu.grasscutter.net.proto.GCGGameCreateFailReasonNotifyOuterClass.GCGGameCreateFailReasonNotify.GCGGameCreateReason.REASON_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(6, reason_);
+          .computeEnumSize(15, reason_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -449,8 +441,8 @@ public final class GCGGameCreateFailReasonNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: JGMCLGAMEOA
-     * CmdId: 7060
+     * CmdId: 7645
+     * Obf: JCGBJLLGAEF
      * </pre>
      *
      * Protobuf type {@code GCGGameCreateFailReasonNotify}
@@ -601,22 +593,14 @@ public final class GCGGameCreateFailReasonNotifyOuterClass {
 
       private int reason_ = 0;
       /**
-       * <pre>
-       *AIFELBCMNGE snooswap
-       * </pre>
-       *
-       * <code>.GCGGameCreateFailReasonNotify.GCGGameCreateReason reason = 6;</code>
+       * <code>.GCGGameCreateFailReasonNotify.GCGGameCreateReason reason = 15;</code>
        * @return The enum numeric value on the wire for reason.
        */
       @java.lang.Override public int getReasonValue() {
         return reason_;
       }
       /**
-       * <pre>
-       *AIFELBCMNGE snooswap
-       * </pre>
-       *
-       * <code>.GCGGameCreateFailReasonNotify.GCGGameCreateReason reason = 6;</code>
+       * <code>.GCGGameCreateFailReasonNotify.GCGGameCreateReason reason = 15;</code>
        * @param value The enum numeric value on the wire for reason to set.
        * @return This builder for chaining.
        */
@@ -627,11 +611,7 @@ public final class GCGGameCreateFailReasonNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *AIFELBCMNGE snooswap
-       * </pre>
-       *
-       * <code>.GCGGameCreateFailReasonNotify.GCGGameCreateReason reason = 6;</code>
+       * <code>.GCGGameCreateFailReasonNotify.GCGGameCreateReason reason = 15;</code>
        * @return The reason.
        */
       @java.lang.Override
@@ -641,11 +621,7 @@ public final class GCGGameCreateFailReasonNotifyOuterClass {
         return result == null ? emu.grasscutter.net.proto.GCGGameCreateFailReasonNotifyOuterClass.GCGGameCreateFailReasonNotify.GCGGameCreateReason.UNRECOGNIZED : result;
       }
       /**
-       * <pre>
-       *AIFELBCMNGE snooswap
-       * </pre>
-       *
-       * <code>.GCGGameCreateFailReasonNotify.GCGGameCreateReason reason = 6;</code>
+       * <code>.GCGGameCreateFailReasonNotify.GCGGameCreateReason reason = 15;</code>
        * @param value The reason to set.
        * @return This builder for chaining.
        */
@@ -659,11 +635,7 @@ public final class GCGGameCreateFailReasonNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *AIFELBCMNGE snooswap
-       * </pre>
-       *
-       * <code>.GCGGameCreateFailReasonNotify.GCGGameCreateReason reason = 6;</code>
+       * <code>.GCGGameCreateFailReasonNotify.GCGGameCreateReason reason = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearReason() {
@@ -739,15 +711,16 @@ public final class GCGGameCreateFailReasonNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n#GCGGameCreateFailReasonNotify.proto\"\376\001" +
+      "\n#GCGGameCreateFailReasonNotify.proto\"\256\002" +
       "\n\035GCGGameCreateFailReasonNotify\022B\n\006reaso" +
-      "n\030\006 \001(\01622.GCGGameCreateFailReasonNotify." +
-      "GCGGameCreateReason\"\230\001\n\023GCGGameCreateRea" +
+      "n\030\017 \001(\01622.GCGGameCreateFailReasonNotify." +
+      "GCGGameCreateReason\"\310\001\n\023GCGGameCreateRea" +
       "son\022\017\n\013REASON_NONE\020\000\022\023\n\017REASON_GAME_MAX\020" +
       "\001\022%\n!REASON_CLIENT_VERSION_NOT_LASTEST\020\002" +
       "\022 \n\034REASON_RESOURCE_NOT_COMPLETE\020\003\022\022\n\016RE" +
-      "ASON_TIMEOUT\020\004B\033\n\031emu.grasscutter.net.pr" +
-      "otob\006proto3"
+      "ASON_TIMEOUT\020\004\022.\n*REASON_OPPONENT_CLIENT" +
+      "_VERSION_NOT_LASTEST\020\005B\033\n\031emu.grasscutte" +
+      "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -26,8 +26,8 @@ public final class GachaActivityResetReqOuterClass {
   }
   /**
    * <pre>
-   * Name: FHEHLPMHPID
-   * CmdId: 8231
+   * CmdId: 8903
+   * Obf: JGOADGMLKGO
    * </pre>
    *
    * Protobuf type {@code GachaActivityResetReq}
@@ -279,8 +279,8 @@ public final class GachaActivityResetReqOuterClass {
     }
     /**
      * <pre>
-     * Name: FHEHLPMHPID
-     * CmdId: 8231
+     * CmdId: 8903
+     * Obf: JGOADGMLKGO
      * </pre>
      *
      * Protobuf type {@code GachaActivityResetReq}

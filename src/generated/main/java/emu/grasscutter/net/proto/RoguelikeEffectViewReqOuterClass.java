@@ -19,43 +19,43 @@ public final class RoguelikeEffectViewReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 ILGIBMIOLPL = 10;</code>
-     * @return A list containing the iLGIBMIOLPL.
+     * <code>repeated uint32 BJBPCJDCIDI = 14;</code>
+     * @return A list containing the bJBPCJDCIDI.
      */
-    java.util.List<java.lang.Integer> getILGIBMIOLPLList();
+    java.util.List<java.lang.Integer> getBJBPCJDCIDIList();
     /**
-     * <code>repeated uint32 ILGIBMIOLPL = 10;</code>
-     * @return The count of iLGIBMIOLPL.
+     * <code>repeated uint32 BJBPCJDCIDI = 14;</code>
+     * @return The count of bJBPCJDCIDI.
      */
-    int getILGIBMIOLPLCount();
+    int getBJBPCJDCIDICount();
     /**
-     * <code>repeated uint32 ILGIBMIOLPL = 10;</code>
+     * <code>repeated uint32 BJBPCJDCIDI = 14;</code>
      * @param index The index of the element to return.
-     * @return The iLGIBMIOLPL at the given index.
+     * @return The bJBPCJDCIDI at the given index.
      */
-    int getILGIBMIOLPL(int index);
+    int getBJBPCJDCIDI(int index);
 
     /**
-     * <code>repeated uint32 PINDJOBJNJC = 11;</code>
-     * @return A list containing the pINDJOBJNJC.
+     * <code>repeated uint32 NEPOEDIHJJH = 6;</code>
+     * @return A list containing the nEPOEDIHJJH.
      */
-    java.util.List<java.lang.Integer> getPINDJOBJNJCList();
+    java.util.List<java.lang.Integer> getNEPOEDIHJJHList();
     /**
-     * <code>repeated uint32 PINDJOBJNJC = 11;</code>
-     * @return The count of pINDJOBJNJC.
+     * <code>repeated uint32 NEPOEDIHJJH = 6;</code>
+     * @return The count of nEPOEDIHJJH.
      */
-    int getPINDJOBJNJCCount();
+    int getNEPOEDIHJJHCount();
     /**
-     * <code>repeated uint32 PINDJOBJNJC = 11;</code>
+     * <code>repeated uint32 NEPOEDIHJJH = 6;</code>
      * @param index The index of the element to return.
-     * @return The pINDJOBJNJC at the given index.
+     * @return The nEPOEDIHJJH at the given index.
      */
-    int getPINDJOBJNJC(int index);
+    int getNEPOEDIHJJH(int index);
   }
   /**
    * <pre>
-   * Name: HEADEHODDME
-   * CmdId: 8885
+   * CmdId: 8105
+   * Obf: HIBIPBLJMJL
    * </pre>
    *
    * Protobuf type {@code RoguelikeEffectViewReq}
@@ -70,8 +70,8 @@ public final class RoguelikeEffectViewReqOuterClass {
       super(builder);
     }
     private RoguelikeEffectViewReq() {
-      iLGIBMIOLPL_ = emptyIntList();
-      pINDJOBJNJC_ = emptyIntList();
+      bJBPCJDCIDI_ = emptyIntList();
+      nEPOEDIHJJH_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -105,44 +105,44 @@ public final class RoguelikeEffectViewReqOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                iLGIBMIOLPL_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
+            case 48: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                nEPOEDIHJJH_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
               }
-              iLGIBMIOLPL_.addInt(input.readUInt32());
+              nEPOEDIHJJH_.addInt(input.readUInt32());
               break;
             }
-            case 82: {
+            case 50: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                iLGIBMIOLPL_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                nEPOEDIHJJH_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
               }
               while (input.getBytesUntilLimit() > 0) {
-                iLGIBMIOLPL_.addInt(input.readUInt32());
+                nEPOEDIHJJH_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
             }
-            case 88: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                pINDJOBJNJC_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+            case 112: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                bJBPCJDCIDI_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
               }
-              pINDJOBJNJC_.addInt(input.readUInt32());
+              bJBPCJDCIDI_.addInt(input.readUInt32());
               break;
             }
-            case 90: {
+            case 114: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                pINDJOBJNJC_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+                bJBPCJDCIDI_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
-                pINDJOBJNJC_.addInt(input.readUInt32());
+                bJBPCJDCIDI_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
@@ -162,11 +162,11 @@ public final class RoguelikeEffectViewReqOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          iLGIBMIOLPL_.makeImmutable(); // C
-        }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          pINDJOBJNJC_.makeImmutable(); // C
+          nEPOEDIHJJH_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          bJBPCJDCIDI_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -185,61 +185,61 @@ public final class RoguelikeEffectViewReqOuterClass {
               emu.grasscutter.net.proto.RoguelikeEffectViewReqOuterClass.RoguelikeEffectViewReq.class, emu.grasscutter.net.proto.RoguelikeEffectViewReqOuterClass.RoguelikeEffectViewReq.Builder.class);
     }
 
-    public static final int ILGIBMIOLPL_FIELD_NUMBER = 10;
-    private com.google.protobuf.Internal.IntList iLGIBMIOLPL_;
+    public static final int BJBPCJDCIDI_FIELD_NUMBER = 14;
+    private com.google.protobuf.Internal.IntList bJBPCJDCIDI_;
     /**
-     * <code>repeated uint32 ILGIBMIOLPL = 10;</code>
-     * @return A list containing the iLGIBMIOLPL.
+     * <code>repeated uint32 BJBPCJDCIDI = 14;</code>
+     * @return A list containing the bJBPCJDCIDI.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getILGIBMIOLPLList() {
-      return iLGIBMIOLPL_;
+        getBJBPCJDCIDIList() {
+      return bJBPCJDCIDI_;
     }
     /**
-     * <code>repeated uint32 ILGIBMIOLPL = 10;</code>
-     * @return The count of iLGIBMIOLPL.
+     * <code>repeated uint32 BJBPCJDCIDI = 14;</code>
+     * @return The count of bJBPCJDCIDI.
      */
-    public int getILGIBMIOLPLCount() {
-      return iLGIBMIOLPL_.size();
+    public int getBJBPCJDCIDICount() {
+      return bJBPCJDCIDI_.size();
     }
     /**
-     * <code>repeated uint32 ILGIBMIOLPL = 10;</code>
+     * <code>repeated uint32 BJBPCJDCIDI = 14;</code>
      * @param index The index of the element to return.
-     * @return The iLGIBMIOLPL at the given index.
+     * @return The bJBPCJDCIDI at the given index.
      */
-    public int getILGIBMIOLPL(int index) {
-      return iLGIBMIOLPL_.getInt(index);
+    public int getBJBPCJDCIDI(int index) {
+      return bJBPCJDCIDI_.getInt(index);
     }
-    private int iLGIBMIOLPLMemoizedSerializedSize = -1;
+    private int bJBPCJDCIDIMemoizedSerializedSize = -1;
 
-    public static final int PINDJOBJNJC_FIELD_NUMBER = 11;
-    private com.google.protobuf.Internal.IntList pINDJOBJNJC_;
+    public static final int NEPOEDIHJJH_FIELD_NUMBER = 6;
+    private com.google.protobuf.Internal.IntList nEPOEDIHJJH_;
     /**
-     * <code>repeated uint32 PINDJOBJNJC = 11;</code>
-     * @return A list containing the pINDJOBJNJC.
+     * <code>repeated uint32 NEPOEDIHJJH = 6;</code>
+     * @return A list containing the nEPOEDIHJJH.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getPINDJOBJNJCList() {
-      return pINDJOBJNJC_;
+        getNEPOEDIHJJHList() {
+      return nEPOEDIHJJH_;
     }
     /**
-     * <code>repeated uint32 PINDJOBJNJC = 11;</code>
-     * @return The count of pINDJOBJNJC.
+     * <code>repeated uint32 NEPOEDIHJJH = 6;</code>
+     * @return The count of nEPOEDIHJJH.
      */
-    public int getPINDJOBJNJCCount() {
-      return pINDJOBJNJC_.size();
+    public int getNEPOEDIHJJHCount() {
+      return nEPOEDIHJJH_.size();
     }
     /**
-     * <code>repeated uint32 PINDJOBJNJC = 11;</code>
+     * <code>repeated uint32 NEPOEDIHJJH = 6;</code>
      * @param index The index of the element to return.
-     * @return The pINDJOBJNJC at the given index.
+     * @return The nEPOEDIHJJH at the given index.
      */
-    public int getPINDJOBJNJC(int index) {
-      return pINDJOBJNJC_.getInt(index);
+    public int getNEPOEDIHJJH(int index) {
+      return nEPOEDIHJJH_.getInt(index);
     }
-    private int pINDJOBJNJCMemoizedSerializedSize = -1;
+    private int nEPOEDIHJJHMemoizedSerializedSize = -1;
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -256,19 +256,19 @@ public final class RoguelikeEffectViewReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (getILGIBMIOLPLList().size() > 0) {
-        output.writeUInt32NoTag(82);
-        output.writeUInt32NoTag(iLGIBMIOLPLMemoizedSerializedSize);
+      if (getNEPOEDIHJJHList().size() > 0) {
+        output.writeUInt32NoTag(50);
+        output.writeUInt32NoTag(nEPOEDIHJJHMemoizedSerializedSize);
       }
-      for (int i = 0; i < iLGIBMIOLPL_.size(); i++) {
-        output.writeUInt32NoTag(iLGIBMIOLPL_.getInt(i));
+      for (int i = 0; i < nEPOEDIHJJH_.size(); i++) {
+        output.writeUInt32NoTag(nEPOEDIHJJH_.getInt(i));
       }
-      if (getPINDJOBJNJCList().size() > 0) {
-        output.writeUInt32NoTag(90);
-        output.writeUInt32NoTag(pINDJOBJNJCMemoizedSerializedSize);
+      if (getBJBPCJDCIDIList().size() > 0) {
+        output.writeUInt32NoTag(114);
+        output.writeUInt32NoTag(bJBPCJDCIDIMemoizedSerializedSize);
       }
-      for (int i = 0; i < pINDJOBJNJC_.size(); i++) {
-        output.writeUInt32NoTag(pINDJOBJNJC_.getInt(i));
+      for (int i = 0; i < bJBPCJDCIDI_.size(); i++) {
+        output.writeUInt32NoTag(bJBPCJDCIDI_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -281,31 +281,31 @@ public final class RoguelikeEffectViewReqOuterClass {
       size = 0;
       {
         int dataSize = 0;
-        for (int i = 0; i < iLGIBMIOLPL_.size(); i++) {
+        for (int i = 0; i < nEPOEDIHJJH_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(iLGIBMIOLPL_.getInt(i));
+            .computeUInt32SizeNoTag(nEPOEDIHJJH_.getInt(i));
         }
         size += dataSize;
-        if (!getILGIBMIOLPLList().isEmpty()) {
+        if (!getNEPOEDIHJJHList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        iLGIBMIOLPLMemoizedSerializedSize = dataSize;
+        nEPOEDIHJJHMemoizedSerializedSize = dataSize;
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < pINDJOBJNJC_.size(); i++) {
+        for (int i = 0; i < bJBPCJDCIDI_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(pINDJOBJNJC_.getInt(i));
+            .computeUInt32SizeNoTag(bJBPCJDCIDI_.getInt(i));
         }
         size += dataSize;
-        if (!getPINDJOBJNJCList().isEmpty()) {
+        if (!getBJBPCJDCIDIList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        pINDJOBJNJCMemoizedSerializedSize = dataSize;
+        bJBPCJDCIDIMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -322,10 +322,10 @@ public final class RoguelikeEffectViewReqOuterClass {
       }
       emu.grasscutter.net.proto.RoguelikeEffectViewReqOuterClass.RoguelikeEffectViewReq other = (emu.grasscutter.net.proto.RoguelikeEffectViewReqOuterClass.RoguelikeEffectViewReq) obj;
 
-      if (!getILGIBMIOLPLList()
-          .equals(other.getILGIBMIOLPLList())) return false;
-      if (!getPINDJOBJNJCList()
-          .equals(other.getPINDJOBJNJCList())) return false;
+      if (!getBJBPCJDCIDIList()
+          .equals(other.getBJBPCJDCIDIList())) return false;
+      if (!getNEPOEDIHJJHList()
+          .equals(other.getNEPOEDIHJJHList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -337,13 +337,13 @@ public final class RoguelikeEffectViewReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getILGIBMIOLPLCount() > 0) {
-        hash = (37 * hash) + ILGIBMIOLPL_FIELD_NUMBER;
-        hash = (53 * hash) + getILGIBMIOLPLList().hashCode();
+      if (getBJBPCJDCIDICount() > 0) {
+        hash = (37 * hash) + BJBPCJDCIDI_FIELD_NUMBER;
+        hash = (53 * hash) + getBJBPCJDCIDIList().hashCode();
       }
-      if (getPINDJOBJNJCCount() > 0) {
-        hash = (37 * hash) + PINDJOBJNJC_FIELD_NUMBER;
-        hash = (53 * hash) + getPINDJOBJNJCList().hashCode();
+      if (getNEPOEDIHJJHCount() > 0) {
+        hash = (37 * hash) + NEPOEDIHJJH_FIELD_NUMBER;
+        hash = (53 * hash) + getNEPOEDIHJJHList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -442,8 +442,8 @@ public final class RoguelikeEffectViewReqOuterClass {
     }
     /**
      * <pre>
-     * Name: HEADEHODDME
-     * CmdId: 8885
+     * CmdId: 8105
+     * Obf: HIBIPBLJMJL
      * </pre>
      *
      * Protobuf type {@code RoguelikeEffectViewReq}
@@ -483,9 +483,9 @@ public final class RoguelikeEffectViewReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        iLGIBMIOLPL_ = emptyIntList();
+        bJBPCJDCIDI_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        pINDJOBJNJC_ = emptyIntList();
+        nEPOEDIHJJH_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
@@ -515,15 +515,15 @@ public final class RoguelikeEffectViewReqOuterClass {
         emu.grasscutter.net.proto.RoguelikeEffectViewReqOuterClass.RoguelikeEffectViewReq result = new emu.grasscutter.net.proto.RoguelikeEffectViewReqOuterClass.RoguelikeEffectViewReq(this);
         int from_bitField0_ = bitField0_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          iLGIBMIOLPL_.makeImmutable();
+          bJBPCJDCIDI_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.iLGIBMIOLPL_ = iLGIBMIOLPL_;
+        result.bJBPCJDCIDI_ = bJBPCJDCIDI_;
         if (((bitField0_ & 0x00000002) != 0)) {
-          pINDJOBJNJC_.makeImmutable();
+          nEPOEDIHJJH_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000002);
         }
-        result.pINDJOBJNJC_ = pINDJOBJNJC_;
+        result.nEPOEDIHJJH_ = nEPOEDIHJJH_;
         onBuilt();
         return result;
       }
@@ -572,23 +572,23 @@ public final class RoguelikeEffectViewReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.RoguelikeEffectViewReqOuterClass.RoguelikeEffectViewReq other) {
         if (other == emu.grasscutter.net.proto.RoguelikeEffectViewReqOuterClass.RoguelikeEffectViewReq.getDefaultInstance()) return this;
-        if (!other.iLGIBMIOLPL_.isEmpty()) {
-          if (iLGIBMIOLPL_.isEmpty()) {
-            iLGIBMIOLPL_ = other.iLGIBMIOLPL_;
+        if (!other.bJBPCJDCIDI_.isEmpty()) {
+          if (bJBPCJDCIDI_.isEmpty()) {
+            bJBPCJDCIDI_ = other.bJBPCJDCIDI_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureILGIBMIOLPLIsMutable();
-            iLGIBMIOLPL_.addAll(other.iLGIBMIOLPL_);
+            ensureBJBPCJDCIDIIsMutable();
+            bJBPCJDCIDI_.addAll(other.bJBPCJDCIDI_);
           }
           onChanged();
         }
-        if (!other.pINDJOBJNJC_.isEmpty()) {
-          if (pINDJOBJNJC_.isEmpty()) {
-            pINDJOBJNJC_ = other.pINDJOBJNJC_;
+        if (!other.nEPOEDIHJJH_.isEmpty()) {
+          if (nEPOEDIHJJH_.isEmpty()) {
+            nEPOEDIHJJH_ = other.nEPOEDIHJJH_;
             bitField0_ = (bitField0_ & ~0x00000002);
           } else {
-            ensurePINDJOBJNJCIsMutable();
-            pINDJOBJNJC_.addAll(other.pINDJOBJNJC_);
+            ensureNEPOEDIHJJHIsMutable();
+            nEPOEDIHJJH_.addAll(other.nEPOEDIHJJH_);
           }
           onChanged();
         }
@@ -622,159 +622,159 @@ public final class RoguelikeEffectViewReqOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList iLGIBMIOLPL_ = emptyIntList();
-      private void ensureILGIBMIOLPLIsMutable() {
+      private com.google.protobuf.Internal.IntList bJBPCJDCIDI_ = emptyIntList();
+      private void ensureBJBPCJDCIDIIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          iLGIBMIOLPL_ = mutableCopy(iLGIBMIOLPL_);
+          bJBPCJDCIDI_ = mutableCopy(bJBPCJDCIDI_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <code>repeated uint32 ILGIBMIOLPL = 10;</code>
-       * @return A list containing the iLGIBMIOLPL.
+       * <code>repeated uint32 BJBPCJDCIDI = 14;</code>
+       * @return A list containing the bJBPCJDCIDI.
        */
       public java.util.List<java.lang.Integer>
-          getILGIBMIOLPLList() {
+          getBJBPCJDCIDIList() {
         return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(iLGIBMIOLPL_) : iLGIBMIOLPL_;
+                 java.util.Collections.unmodifiableList(bJBPCJDCIDI_) : bJBPCJDCIDI_;
       }
       /**
-       * <code>repeated uint32 ILGIBMIOLPL = 10;</code>
-       * @return The count of iLGIBMIOLPL.
+       * <code>repeated uint32 BJBPCJDCIDI = 14;</code>
+       * @return The count of bJBPCJDCIDI.
        */
-      public int getILGIBMIOLPLCount() {
-        return iLGIBMIOLPL_.size();
+      public int getBJBPCJDCIDICount() {
+        return bJBPCJDCIDI_.size();
       }
       /**
-       * <code>repeated uint32 ILGIBMIOLPL = 10;</code>
+       * <code>repeated uint32 BJBPCJDCIDI = 14;</code>
        * @param index The index of the element to return.
-       * @return The iLGIBMIOLPL at the given index.
+       * @return The bJBPCJDCIDI at the given index.
        */
-      public int getILGIBMIOLPL(int index) {
-        return iLGIBMIOLPL_.getInt(index);
+      public int getBJBPCJDCIDI(int index) {
+        return bJBPCJDCIDI_.getInt(index);
       }
       /**
-       * <code>repeated uint32 ILGIBMIOLPL = 10;</code>
+       * <code>repeated uint32 BJBPCJDCIDI = 14;</code>
        * @param index The index to set the value at.
-       * @param value The iLGIBMIOLPL to set.
+       * @param value The bJBPCJDCIDI to set.
        * @return This builder for chaining.
        */
-      public Builder setILGIBMIOLPL(
+      public Builder setBJBPCJDCIDI(
           int index, int value) {
-        ensureILGIBMIOLPLIsMutable();
-        iLGIBMIOLPL_.setInt(index, value);
+        ensureBJBPCJDCIDIIsMutable();
+        bJBPCJDCIDI_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 ILGIBMIOLPL = 10;</code>
-       * @param value The iLGIBMIOLPL to add.
+       * <code>repeated uint32 BJBPCJDCIDI = 14;</code>
+       * @param value The bJBPCJDCIDI to add.
        * @return This builder for chaining.
        */
-      public Builder addILGIBMIOLPL(int value) {
-        ensureILGIBMIOLPLIsMutable();
-        iLGIBMIOLPL_.addInt(value);
+      public Builder addBJBPCJDCIDI(int value) {
+        ensureBJBPCJDCIDIIsMutable();
+        bJBPCJDCIDI_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 ILGIBMIOLPL = 10;</code>
-       * @param values The iLGIBMIOLPL to add.
+       * <code>repeated uint32 BJBPCJDCIDI = 14;</code>
+       * @param values The bJBPCJDCIDI to add.
        * @return This builder for chaining.
        */
-      public Builder addAllILGIBMIOLPL(
+      public Builder addAllBJBPCJDCIDI(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureILGIBMIOLPLIsMutable();
+        ensureBJBPCJDCIDIIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, iLGIBMIOLPL_);
+            values, bJBPCJDCIDI_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 ILGIBMIOLPL = 10;</code>
+       * <code>repeated uint32 BJBPCJDCIDI = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearILGIBMIOLPL() {
-        iLGIBMIOLPL_ = emptyIntList();
+      public Builder clearBJBPCJDCIDI() {
+        bJBPCJDCIDI_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList pINDJOBJNJC_ = emptyIntList();
-      private void ensurePINDJOBJNJCIsMutable() {
+      private com.google.protobuf.Internal.IntList nEPOEDIHJJH_ = emptyIntList();
+      private void ensureNEPOEDIHJJHIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
-          pINDJOBJNJC_ = mutableCopy(pINDJOBJNJC_);
+          nEPOEDIHJJH_ = mutableCopy(nEPOEDIHJJH_);
           bitField0_ |= 0x00000002;
          }
       }
       /**
-       * <code>repeated uint32 PINDJOBJNJC = 11;</code>
-       * @return A list containing the pINDJOBJNJC.
+       * <code>repeated uint32 NEPOEDIHJJH = 6;</code>
+       * @return A list containing the nEPOEDIHJJH.
        */
       public java.util.List<java.lang.Integer>
-          getPINDJOBJNJCList() {
+          getNEPOEDIHJJHList() {
         return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(pINDJOBJNJC_) : pINDJOBJNJC_;
+                 java.util.Collections.unmodifiableList(nEPOEDIHJJH_) : nEPOEDIHJJH_;
       }
       /**
-       * <code>repeated uint32 PINDJOBJNJC = 11;</code>
-       * @return The count of pINDJOBJNJC.
+       * <code>repeated uint32 NEPOEDIHJJH = 6;</code>
+       * @return The count of nEPOEDIHJJH.
        */
-      public int getPINDJOBJNJCCount() {
-        return pINDJOBJNJC_.size();
+      public int getNEPOEDIHJJHCount() {
+        return nEPOEDIHJJH_.size();
       }
       /**
-       * <code>repeated uint32 PINDJOBJNJC = 11;</code>
+       * <code>repeated uint32 NEPOEDIHJJH = 6;</code>
        * @param index The index of the element to return.
-       * @return The pINDJOBJNJC at the given index.
+       * @return The nEPOEDIHJJH at the given index.
        */
-      public int getPINDJOBJNJC(int index) {
-        return pINDJOBJNJC_.getInt(index);
+      public int getNEPOEDIHJJH(int index) {
+        return nEPOEDIHJJH_.getInt(index);
       }
       /**
-       * <code>repeated uint32 PINDJOBJNJC = 11;</code>
+       * <code>repeated uint32 NEPOEDIHJJH = 6;</code>
        * @param index The index to set the value at.
-       * @param value The pINDJOBJNJC to set.
+       * @param value The nEPOEDIHJJH to set.
        * @return This builder for chaining.
        */
-      public Builder setPINDJOBJNJC(
+      public Builder setNEPOEDIHJJH(
           int index, int value) {
-        ensurePINDJOBJNJCIsMutable();
-        pINDJOBJNJC_.setInt(index, value);
+        ensureNEPOEDIHJJHIsMutable();
+        nEPOEDIHJJH_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 PINDJOBJNJC = 11;</code>
-       * @param value The pINDJOBJNJC to add.
+       * <code>repeated uint32 NEPOEDIHJJH = 6;</code>
+       * @param value The nEPOEDIHJJH to add.
        * @return This builder for chaining.
        */
-      public Builder addPINDJOBJNJC(int value) {
-        ensurePINDJOBJNJCIsMutable();
-        pINDJOBJNJC_.addInt(value);
+      public Builder addNEPOEDIHJJH(int value) {
+        ensureNEPOEDIHJJHIsMutable();
+        nEPOEDIHJJH_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 PINDJOBJNJC = 11;</code>
-       * @param values The pINDJOBJNJC to add.
+       * <code>repeated uint32 NEPOEDIHJJH = 6;</code>
+       * @param values The nEPOEDIHJJH to add.
        * @return This builder for chaining.
        */
-      public Builder addAllPINDJOBJNJC(
+      public Builder addAllNEPOEDIHJJH(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensurePINDJOBJNJCIsMutable();
+        ensureNEPOEDIHJJHIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, pINDJOBJNJC_);
+            values, nEPOEDIHJJH_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 PINDJOBJNJC = 11;</code>
+       * <code>repeated uint32 NEPOEDIHJJH = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearPINDJOBJNJC() {
-        pINDJOBJNJC_ = emptyIntList();
+      public Builder clearNEPOEDIHJJH() {
+        nEPOEDIHJJH_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
@@ -847,8 +847,8 @@ public final class RoguelikeEffectViewReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034RoguelikeEffectViewReq.proto\"B\n\026Roguel" +
-      "ikeEffectViewReq\022\023\n\013ILGIBMIOLPL\030\n \003(\r\022\023\n" +
-      "\013PINDJOBJNJC\030\013 \003(\rB\033\n\031emu.grasscutter.ne" +
+      "ikeEffectViewReq\022\023\n\013BJBPCJDCIDI\030\016 \003(\r\022\023\n" +
+      "\013NEPOEDIHJJH\030\006 \003(\rB\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -860,7 +860,7 @@ public final class RoguelikeEffectViewReqOuterClass {
     internal_static_RoguelikeEffectViewReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RoguelikeEffectViewReq_descriptor,
-        new java.lang.String[] { "ILGIBMIOLPL", "PINDJOBJNJC", });
+        new java.lang.String[] { "BJBPCJDCIDI", "NEPOEDIHJJH", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,36 +19,36 @@ public final class ForceAddPlayerFriendRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 target_uid = 2;</code>
-     * @return The targetUid.
-     */
-    int getTargetUid();
-
-    /**
-     * <code>int32 retcode = 12;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>.FriendBrief target_friend_brief = 13;</code>
+     * <code>.FriendBrief target_friend_brief = 12;</code>
      * @return Whether the targetFriendBrief field is set.
      */
     boolean hasTargetFriendBrief();
     /**
-     * <code>.FriendBrief target_friend_brief = 13;</code>
+     * <code>.FriendBrief target_friend_brief = 12;</code>
      * @return The targetFriendBrief.
      */
     emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief getTargetFriendBrief();
     /**
-     * <code>.FriendBrief target_friend_brief = 13;</code>
+     * <code>.FriendBrief target_friend_brief = 12;</code>
      */
     emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBriefOrBuilder getTargetFriendBriefOrBuilder();
+
+    /**
+     * <code>uint32 target_uid = 11;</code>
+     * @return The targetUid.
+     */
+    int getTargetUid();
   }
   /**
    * <pre>
-   * Name: PPFCAGLIIJN
-   * CmdId: 4020
+   * CmdId: 4009
+   * Obf: HALDNGOFAPK
    * </pre>
    *
    * Protobuf type {@code ForceAddPlayerFriendRsp}
@@ -95,17 +95,17 @@ public final class ForceAddPlayerFriendRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              targetUid_ = input.readUInt32();
-              break;
-            }
-            case 96: {
+            case 48: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 106: {
+            case 88: {
+
+              targetUid_ = input.readUInt32();
+              break;
+            }
+            case 98: {
               emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief.Builder subBuilder = null;
               if (targetFriendBrief_ != null) {
                 subBuilder = targetFriendBrief_.toBuilder();
@@ -150,21 +150,10 @@ public final class ForceAddPlayerFriendRspOuterClass {
               emu.grasscutter.net.proto.ForceAddPlayerFriendRspOuterClass.ForceAddPlayerFriendRsp.class, emu.grasscutter.net.proto.ForceAddPlayerFriendRspOuterClass.ForceAddPlayerFriendRsp.Builder.class);
     }
 
-    public static final int TARGET_UID_FIELD_NUMBER = 2;
-    private int targetUid_;
-    /**
-     * <code>uint32 target_uid = 2;</code>
-     * @return The targetUid.
-     */
-    @java.lang.Override
-    public int getTargetUid() {
-      return targetUid_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 12;
+    public static final int RETCODE_FIELD_NUMBER = 6;
     private int retcode_;
     /**
-     * <code>int32 retcode = 12;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -172,10 +161,10 @@ public final class ForceAddPlayerFriendRspOuterClass {
       return retcode_;
     }
 
-    public static final int TARGET_FRIEND_BRIEF_FIELD_NUMBER = 13;
+    public static final int TARGET_FRIEND_BRIEF_FIELD_NUMBER = 12;
     private emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief targetFriendBrief_;
     /**
-     * <code>.FriendBrief target_friend_brief = 13;</code>
+     * <code>.FriendBrief target_friend_brief = 12;</code>
      * @return Whether the targetFriendBrief field is set.
      */
     @java.lang.Override
@@ -183,7 +172,7 @@ public final class ForceAddPlayerFriendRspOuterClass {
       return targetFriendBrief_ != null;
     }
     /**
-     * <code>.FriendBrief target_friend_brief = 13;</code>
+     * <code>.FriendBrief target_friend_brief = 12;</code>
      * @return The targetFriendBrief.
      */
     @java.lang.Override
@@ -191,11 +180,22 @@ public final class ForceAddPlayerFriendRspOuterClass {
       return targetFriendBrief_ == null ? emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief.getDefaultInstance() : targetFriendBrief_;
     }
     /**
-     * <code>.FriendBrief target_friend_brief = 13;</code>
+     * <code>.FriendBrief target_friend_brief = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBriefOrBuilder getTargetFriendBriefOrBuilder() {
       return getTargetFriendBrief();
+    }
+
+    public static final int TARGET_UID_FIELD_NUMBER = 11;
+    private int targetUid_;
+    /**
+     * <code>uint32 target_uid = 11;</code>
+     * @return The targetUid.
+     */
+    @java.lang.Override
+    public int getTargetUid() {
+      return targetUid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -212,14 +212,14 @@ public final class ForceAddPlayerFriendRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (targetUid_ != 0) {
-        output.writeUInt32(2, targetUid_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(12, retcode_);
+        output.writeInt32(6, retcode_);
+      }
+      if (targetUid_ != 0) {
+        output.writeUInt32(11, targetUid_);
       }
       if (targetFriendBrief_ != null) {
-        output.writeMessage(13, getTargetFriendBrief());
+        output.writeMessage(12, getTargetFriendBrief());
       }
       unknownFields.writeTo(output);
     }
@@ -230,17 +230,17 @@ public final class ForceAddPlayerFriendRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (targetUid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, targetUid_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(12, retcode_);
+          .computeInt32Size(6, retcode_);
+      }
+      if (targetUid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, targetUid_);
       }
       if (targetFriendBrief_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, getTargetFriendBrief());
+          .computeMessageSize(12, getTargetFriendBrief());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -257,8 +257,6 @@ public final class ForceAddPlayerFriendRspOuterClass {
       }
       emu.grasscutter.net.proto.ForceAddPlayerFriendRspOuterClass.ForceAddPlayerFriendRsp other = (emu.grasscutter.net.proto.ForceAddPlayerFriendRspOuterClass.ForceAddPlayerFriendRsp) obj;
 
-      if (getTargetUid()
-          != other.getTargetUid()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
       if (hasTargetFriendBrief() != other.hasTargetFriendBrief()) return false;
@@ -266,6 +264,8 @@ public final class ForceAddPlayerFriendRspOuterClass {
         if (!getTargetFriendBrief()
             .equals(other.getTargetFriendBrief())) return false;
       }
+      if (getTargetUid()
+          != other.getTargetUid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -277,14 +277,14 @@ public final class ForceAddPlayerFriendRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + TARGET_UID_FIELD_NUMBER;
-      hash = (53 * hash) + getTargetUid();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
       if (hasTargetFriendBrief()) {
         hash = (37 * hash) + TARGET_FRIEND_BRIEF_FIELD_NUMBER;
         hash = (53 * hash) + getTargetFriendBrief().hashCode();
       }
+      hash = (37 * hash) + TARGET_UID_FIELD_NUMBER;
+      hash = (53 * hash) + getTargetUid();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -382,8 +382,8 @@ public final class ForceAddPlayerFriendRspOuterClass {
     }
     /**
      * <pre>
-     * Name: PPFCAGLIIJN
-     * CmdId: 4020
+     * CmdId: 4009
+     * Obf: HALDNGOFAPK
      * </pre>
      *
      * Protobuf type {@code ForceAddPlayerFriendRsp}
@@ -423,8 +423,6 @@ public final class ForceAddPlayerFriendRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        targetUid_ = 0;
-
         retcode_ = 0;
 
         if (targetFriendBriefBuilder_ == null) {
@@ -433,6 +431,8 @@ public final class ForceAddPlayerFriendRspOuterClass {
           targetFriendBrief_ = null;
           targetFriendBriefBuilder_ = null;
         }
+        targetUid_ = 0;
+
         return this;
       }
 
@@ -459,13 +459,13 @@ public final class ForceAddPlayerFriendRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ForceAddPlayerFriendRspOuterClass.ForceAddPlayerFriendRsp buildPartial() {
         emu.grasscutter.net.proto.ForceAddPlayerFriendRspOuterClass.ForceAddPlayerFriendRsp result = new emu.grasscutter.net.proto.ForceAddPlayerFriendRspOuterClass.ForceAddPlayerFriendRsp(this);
-        result.targetUid_ = targetUid_;
         result.retcode_ = retcode_;
         if (targetFriendBriefBuilder_ == null) {
           result.targetFriendBrief_ = targetFriendBrief_;
         } else {
           result.targetFriendBrief_ = targetFriendBriefBuilder_.build();
         }
+        result.targetUid_ = targetUid_;
         onBuilt();
         return result;
       }
@@ -514,14 +514,14 @@ public final class ForceAddPlayerFriendRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ForceAddPlayerFriendRspOuterClass.ForceAddPlayerFriendRsp other) {
         if (other == emu.grasscutter.net.proto.ForceAddPlayerFriendRspOuterClass.ForceAddPlayerFriendRsp.getDefaultInstance()) return this;
-        if (other.getTargetUid() != 0) {
-          setTargetUid(other.getTargetUid());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
         if (other.hasTargetFriendBrief()) {
           mergeTargetFriendBrief(other.getTargetFriendBrief());
+        }
+        if (other.getTargetUid() != 0) {
+          setTargetUid(other.getTargetUid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -552,40 +552,9 @@ public final class ForceAddPlayerFriendRspOuterClass {
         return this;
       }
 
-      private int targetUid_ ;
-      /**
-       * <code>uint32 target_uid = 2;</code>
-       * @return The targetUid.
-       */
-      @java.lang.Override
-      public int getTargetUid() {
-        return targetUid_;
-      }
-      /**
-       * <code>uint32 target_uid = 2;</code>
-       * @param value The targetUid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTargetUid(int value) {
-        
-        targetUid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 target_uid = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTargetUid() {
-        
-        targetUid_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 6;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -593,7 +562,7 @@ public final class ForceAddPlayerFriendRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 6;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -604,7 +573,7 @@ public final class ForceAddPlayerFriendRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 12;</code>
+       * <code>int32 retcode = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -618,14 +587,14 @@ public final class ForceAddPlayerFriendRspOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief, emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief.Builder, emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBriefOrBuilder> targetFriendBriefBuilder_;
       /**
-       * <code>.FriendBrief target_friend_brief = 13;</code>
+       * <code>.FriendBrief target_friend_brief = 12;</code>
        * @return Whether the targetFriendBrief field is set.
        */
       public boolean hasTargetFriendBrief() {
         return targetFriendBriefBuilder_ != null || targetFriendBrief_ != null;
       }
       /**
-       * <code>.FriendBrief target_friend_brief = 13;</code>
+       * <code>.FriendBrief target_friend_brief = 12;</code>
        * @return The targetFriendBrief.
        */
       public emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief getTargetFriendBrief() {
@@ -636,7 +605,7 @@ public final class ForceAddPlayerFriendRspOuterClass {
         }
       }
       /**
-       * <code>.FriendBrief target_friend_brief = 13;</code>
+       * <code>.FriendBrief target_friend_brief = 12;</code>
        */
       public Builder setTargetFriendBrief(emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief value) {
         if (targetFriendBriefBuilder_ == null) {
@@ -652,7 +621,7 @@ public final class ForceAddPlayerFriendRspOuterClass {
         return this;
       }
       /**
-       * <code>.FriendBrief target_friend_brief = 13;</code>
+       * <code>.FriendBrief target_friend_brief = 12;</code>
        */
       public Builder setTargetFriendBrief(
           emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief.Builder builderForValue) {
@@ -666,7 +635,7 @@ public final class ForceAddPlayerFriendRspOuterClass {
         return this;
       }
       /**
-       * <code>.FriendBrief target_friend_brief = 13;</code>
+       * <code>.FriendBrief target_friend_brief = 12;</code>
        */
       public Builder mergeTargetFriendBrief(emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief value) {
         if (targetFriendBriefBuilder_ == null) {
@@ -684,7 +653,7 @@ public final class ForceAddPlayerFriendRspOuterClass {
         return this;
       }
       /**
-       * <code>.FriendBrief target_friend_brief = 13;</code>
+       * <code>.FriendBrief target_friend_brief = 12;</code>
        */
       public Builder clearTargetFriendBrief() {
         if (targetFriendBriefBuilder_ == null) {
@@ -698,7 +667,7 @@ public final class ForceAddPlayerFriendRspOuterClass {
         return this;
       }
       /**
-       * <code>.FriendBrief target_friend_brief = 13;</code>
+       * <code>.FriendBrief target_friend_brief = 12;</code>
        */
       public emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief.Builder getTargetFriendBriefBuilder() {
         
@@ -706,7 +675,7 @@ public final class ForceAddPlayerFriendRspOuterClass {
         return getTargetFriendBriefFieldBuilder().getBuilder();
       }
       /**
-       * <code>.FriendBrief target_friend_brief = 13;</code>
+       * <code>.FriendBrief target_friend_brief = 12;</code>
        */
       public emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBriefOrBuilder getTargetFriendBriefOrBuilder() {
         if (targetFriendBriefBuilder_ != null) {
@@ -717,7 +686,7 @@ public final class ForceAddPlayerFriendRspOuterClass {
         }
       }
       /**
-       * <code>.FriendBrief target_friend_brief = 13;</code>
+       * <code>.FriendBrief target_friend_brief = 12;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief, emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief.Builder, emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBriefOrBuilder> 
@@ -731,6 +700,37 @@ public final class ForceAddPlayerFriendRspOuterClass {
           targetFriendBrief_ = null;
         }
         return targetFriendBriefBuilder_;
+      }
+
+      private int targetUid_ ;
+      /**
+       * <code>uint32 target_uid = 11;</code>
+       * @return The targetUid.
+       */
+      @java.lang.Override
+      public int getTargetUid() {
+        return targetUid_;
+      }
+      /**
+       * <code>uint32 target_uid = 11;</code>
+       * @param value The targetUid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTargetUid(int value) {
+        
+        targetUid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 target_uid = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTargetUid() {
+        
+        targetUid_ = 0;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -800,9 +800,9 @@ public final class ForceAddPlayerFriendRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035ForceAddPlayerFriendRsp.proto\032\021FriendB" +
-      "rief.proto\"i\n\027ForceAddPlayerFriendRsp\022\022\n" +
-      "\ntarget_uid\030\002 \001(\r\022\017\n\007retcode\030\014 \001(\005\022)\n\023ta" +
-      "rget_friend_brief\030\r \001(\0132\014.FriendBriefB\033\n" +
+      "rief.proto\"i\n\027ForceAddPlayerFriendRsp\022\017\n" +
+      "\007retcode\030\006 \001(\005\022)\n\023target_friend_brief\030\014 " +
+      "\001(\0132\014.FriendBrief\022\022\n\ntarget_uid\030\013 \001(\rB\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -815,7 +815,7 @@ public final class ForceAddPlayerFriendRspOuterClass {
     internal_static_ForceAddPlayerFriendRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ForceAddPlayerFriendRsp_descriptor,
-        new java.lang.String[] { "TargetUid", "Retcode", "TargetFriendBrief", });
+        new java.lang.String[] { "Retcode", "TargetFriendBrief", "TargetUid", });
     emu.grasscutter.net.proto.FriendBriefOuterClass.getDescriptor();
   }
 

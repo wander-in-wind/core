@@ -20,8 +20,8 @@ public final class GearActivityStartPlayPictureReqOuterClass {
   }
   /**
    * <pre>
-   * Name: KNNCLKDLJGP
-   * CmdId: 24138
+   * CmdId: 23786
+   * Obf: CHLBJMMPOBJ
    * </pre>
    *
    * Protobuf type {@code GearActivityStartPlayPictureReq}
@@ -246,8 +246,8 @@ public final class GearActivityStartPlayPictureReqOuterClass {
     }
     /**
      * <pre>
-     * Name: KNNCLKDLJGP
-     * CmdId: 24138
+     * CmdId: 23786
+     * Obf: CHLBJMMPOBJ
      * </pre>
      *
      * Protobuf type {@code GearActivityStartPlayPictureReq}

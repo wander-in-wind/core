@@ -19,36 +19,36 @@ public final class WidgetCaptureAnimalReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 material_id = 5;</code>
+     * <code>uint32 material_id = 4;</code>
      * @return The materialId.
      */
     int getMaterialId();
 
     /**
-     * <code>.Vector pos = 3;</code>
+     * <code>.Vector pos = 7;</code>
      * @return Whether the pos field is set.
      */
     boolean hasPos();
     /**
-     * <code>.Vector pos = 3;</code>
+     * <code>.Vector pos = 7;</code>
      * @return The pos.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
     /**
-     * <code>.Vector pos = 3;</code>
+     * <code>.Vector pos = 7;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
 
     /**
-     * <code>uint32 entity_id = 11;</code>
+     * <code>uint32 entity_id = 3;</code>
      * @return The entityId.
      */
     int getEntityId();
   }
   /**
    * <pre>
-   * Name: OIAOALNGDJF
-   * CmdId: 4274
+   * CmdId: 4254
+   * Obf: KAPDJKILCIJ
    * </pre>
    *
    * Protobuf type {@code WidgetCaptureAnimalReq}
@@ -95,7 +95,17 @@ public final class WidgetCaptureAnimalReqOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
+            case 24: {
+
+              entityId_ = input.readUInt32();
+              break;
+            }
+            case 32: {
+
+              materialId_ = input.readUInt32();
+              break;
+            }
+            case 58: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (pos_ != null) {
                 subBuilder = pos_.toBuilder();
@@ -106,16 +116,6 @@ public final class WidgetCaptureAnimalReqOuterClass {
                 pos_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 40: {
-
-              materialId_ = input.readUInt32();
-              break;
-            }
-            case 88: {
-
-              entityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -150,10 +150,10 @@ public final class WidgetCaptureAnimalReqOuterClass {
               emu.grasscutter.net.proto.WidgetCaptureAnimalReqOuterClass.WidgetCaptureAnimalReq.class, emu.grasscutter.net.proto.WidgetCaptureAnimalReqOuterClass.WidgetCaptureAnimalReq.Builder.class);
     }
 
-    public static final int MATERIAL_ID_FIELD_NUMBER = 5;
+    public static final int MATERIAL_ID_FIELD_NUMBER = 4;
     private int materialId_;
     /**
-     * <code>uint32 material_id = 5;</code>
+     * <code>uint32 material_id = 4;</code>
      * @return The materialId.
      */
     @java.lang.Override
@@ -161,10 +161,10 @@ public final class WidgetCaptureAnimalReqOuterClass {
       return materialId_;
     }
 
-    public static final int POS_FIELD_NUMBER = 3;
+    public static final int POS_FIELD_NUMBER = 7;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
     /**
-     * <code>.Vector pos = 3;</code>
+     * <code>.Vector pos = 7;</code>
      * @return Whether the pos field is set.
      */
     @java.lang.Override
@@ -172,7 +172,7 @@ public final class WidgetCaptureAnimalReqOuterClass {
       return pos_ != null;
     }
     /**
-     * <code>.Vector pos = 3;</code>
+     * <code>.Vector pos = 7;</code>
      * @return The pos.
      */
     @java.lang.Override
@@ -180,17 +180,17 @@ public final class WidgetCaptureAnimalReqOuterClass {
       return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
     }
     /**
-     * <code>.Vector pos = 3;</code>
+     * <code>.Vector pos = 7;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
       return getPos();
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 11;
+    public static final int ENTITY_ID_FIELD_NUMBER = 3;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 11;</code>
+     * <code>uint32 entity_id = 3;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -212,14 +212,14 @@ public final class WidgetCaptureAnimalReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (pos_ != null) {
-        output.writeMessage(3, getPos());
+      if (entityId_ != 0) {
+        output.writeUInt32(3, entityId_);
       }
       if (materialId_ != 0) {
-        output.writeUInt32(5, materialId_);
+        output.writeUInt32(4, materialId_);
       }
-      if (entityId_ != 0) {
-        output.writeUInt32(11, entityId_);
+      if (pos_ != null) {
+        output.writeMessage(7, getPos());
       }
       unknownFields.writeTo(output);
     }
@@ -230,17 +230,17 @@ public final class WidgetCaptureAnimalReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (pos_ != null) {
+      if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getPos());
+          .computeUInt32Size(3, entityId_);
       }
       if (materialId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, materialId_);
+          .computeUInt32Size(4, materialId_);
       }
-      if (entityId_ != 0) {
+      if (pos_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, entityId_);
+          .computeMessageSize(7, getPos());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -382,8 +382,8 @@ public final class WidgetCaptureAnimalReqOuterClass {
     }
     /**
      * <pre>
-     * Name: OIAOALNGDJF
-     * CmdId: 4274
+     * CmdId: 4254
+     * Obf: KAPDJKILCIJ
      * </pre>
      *
      * Protobuf type {@code WidgetCaptureAnimalReq}
@@ -554,7 +554,7 @@ public final class WidgetCaptureAnimalReqOuterClass {
 
       private int materialId_ ;
       /**
-       * <code>uint32 material_id = 5;</code>
+       * <code>uint32 material_id = 4;</code>
        * @return The materialId.
        */
       @java.lang.Override
@@ -562,7 +562,7 @@ public final class WidgetCaptureAnimalReqOuterClass {
         return materialId_;
       }
       /**
-       * <code>uint32 material_id = 5;</code>
+       * <code>uint32 material_id = 4;</code>
        * @param value The materialId to set.
        * @return This builder for chaining.
        */
@@ -573,7 +573,7 @@ public final class WidgetCaptureAnimalReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 material_id = 5;</code>
+       * <code>uint32 material_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaterialId() {
@@ -587,14 +587,14 @@ public final class WidgetCaptureAnimalReqOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
       /**
-       * <code>.Vector pos = 3;</code>
+       * <code>.Vector pos = 7;</code>
        * @return Whether the pos field is set.
        */
       public boolean hasPos() {
         return posBuilder_ != null || pos_ != null;
       }
       /**
-       * <code>.Vector pos = 3;</code>
+       * <code>.Vector pos = 7;</code>
        * @return The pos.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
@@ -605,7 +605,7 @@ public final class WidgetCaptureAnimalReqOuterClass {
         }
       }
       /**
-       * <code>.Vector pos = 3;</code>
+       * <code>.Vector pos = 7;</code>
        */
       public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -621,7 +621,7 @@ public final class WidgetCaptureAnimalReqOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 3;</code>
+       * <code>.Vector pos = 7;</code>
        */
       public Builder setPos(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -635,7 +635,7 @@ public final class WidgetCaptureAnimalReqOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 3;</code>
+       * <code>.Vector pos = 7;</code>
        */
       public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -653,7 +653,7 @@ public final class WidgetCaptureAnimalReqOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 3;</code>
+       * <code>.Vector pos = 7;</code>
        */
       public Builder clearPos() {
         if (posBuilder_ == null) {
@@ -667,7 +667,7 @@ public final class WidgetCaptureAnimalReqOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 3;</code>
+       * <code>.Vector pos = 7;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
         
@@ -675,7 +675,7 @@ public final class WidgetCaptureAnimalReqOuterClass {
         return getPosFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector pos = 3;</code>
+       * <code>.Vector pos = 7;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
         if (posBuilder_ != null) {
@@ -686,7 +686,7 @@ public final class WidgetCaptureAnimalReqOuterClass {
         }
       }
       /**
-       * <code>.Vector pos = 3;</code>
+       * <code>.Vector pos = 7;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -704,7 +704,7 @@ public final class WidgetCaptureAnimalReqOuterClass {
 
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 11;</code>
+       * <code>uint32 entity_id = 3;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -712,7 +712,7 @@ public final class WidgetCaptureAnimalReqOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 11;</code>
+       * <code>uint32 entity_id = 3;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -723,7 +723,7 @@ public final class WidgetCaptureAnimalReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 11;</code>
+       * <code>uint32 entity_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
@@ -801,8 +801,8 @@ public final class WidgetCaptureAnimalReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\034WidgetCaptureAnimalReq.proto\032\014Vector.p" +
       "roto\"V\n\026WidgetCaptureAnimalReq\022\023\n\013materi" +
-      "al_id\030\005 \001(\r\022\024\n\003pos\030\003 \001(\0132\007.Vector\022\021\n\tent" +
-      "ity_id\030\013 \001(\rB\033\n\031emu.grasscutter.net.prot" +
+      "al_id\030\004 \001(\r\022\024\n\003pos\030\007 \001(\0132\007.Vector\022\021\n\tent" +
+      "ity_id\030\003 \001(\rB\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

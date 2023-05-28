@@ -26,8 +26,8 @@ public final class EvtDestroyServerGadgetNotifyOuterClass {
   }
   /**
    * <pre>
-   * Name: AFIFNBPACMH
-   * CmdId: 336
+   * CmdId: 317
+   * Obf: HNCKICFGIFN
    * </pre>
    *
    * Protobuf type {@code EvtDestroyServerGadgetNotify}
@@ -279,8 +279,8 @@ public final class EvtDestroyServerGadgetNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: AFIFNBPACMH
-     * CmdId: 336
+     * CmdId: 317
+     * Obf: HNCKICFGIFN
      * </pre>
      *
      * Protobuf type {@code EvtDestroyServerGadgetNotify}

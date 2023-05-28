@@ -19,21 +19,21 @@ public final class HomeClearGroupRecordRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 13;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 group_id = 7;</code>
+     * <code>uint32 group_id = 8;</code>
      * @return The groupId.
      */
     int getGroupId();
   }
   /**
    * <pre>
-   * Name: JLLLDKBHOMJ
-   * CmdId: 4846
+   * CmdId: 4492
+   * Obf: GJIFKMMJGMB
    * </pre>
    *
    * Protobuf type {@code HomeClearGroupRecordRsp}
@@ -80,14 +80,14 @@ public final class HomeClearGroupRecordRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 56: {
+            case 64: {
 
               groupId_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -122,10 +122,10 @@ public final class HomeClearGroupRecordRspOuterClass {
               emu.grasscutter.net.proto.HomeClearGroupRecordRspOuterClass.HomeClearGroupRecordRsp.class, emu.grasscutter.net.proto.HomeClearGroupRecordRspOuterClass.HomeClearGroupRecordRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 1;
+    public static final int RETCODE_FIELD_NUMBER = 13;
     private int retcode_;
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 13;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class HomeClearGroupRecordRspOuterClass {
       return retcode_;
     }
 
-    public static final int GROUP_ID_FIELD_NUMBER = 7;
+    public static final int GROUP_ID_FIELD_NUMBER = 8;
     private int groupId_;
     /**
-     * <code>uint32 group_id = 7;</code>
+     * <code>uint32 group_id = 8;</code>
      * @return The groupId.
      */
     @java.lang.Override
@@ -158,11 +158,11 @@ public final class HomeClearGroupRecordRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(1, retcode_);
-      }
       if (groupId_ != 0) {
-        output.writeUInt32(7, groupId_);
+        output.writeUInt32(8, groupId_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(13, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class HomeClearGroupRecordRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, retcode_);
-      }
       if (groupId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, groupId_);
+          .computeUInt32Size(8, groupId_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(13, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class HomeClearGroupRecordRspOuterClass {
     }
     /**
      * <pre>
-     * Name: JLLLDKBHOMJ
-     * CmdId: 4846
+     * CmdId: 4492
+     * Obf: GJIFKMMJGMB
      * </pre>
      *
      * Protobuf type {@code HomeClearGroupRecordRsp}
@@ -470,7 +470,7 @@ public final class HomeClearGroupRecordRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 13;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class HomeClearGroupRecordRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 13;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class HomeClearGroupRecordRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -501,7 +501,7 @@ public final class HomeClearGroupRecordRspOuterClass {
 
       private int groupId_ ;
       /**
-       * <code>uint32 group_id = 7;</code>
+       * <code>uint32 group_id = 8;</code>
        * @return The groupId.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class HomeClearGroupRecordRspOuterClass {
         return groupId_;
       }
       /**
-       * <code>uint32 group_id = 7;</code>
+       * <code>uint32 group_id = 8;</code>
        * @param value The groupId to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class HomeClearGroupRecordRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 group_id = 7;</code>
+       * <code>uint32 group_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearGroupId() {
@@ -597,8 +597,8 @@ public final class HomeClearGroupRecordRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035HomeClearGroupRecordRsp.proto\"<\n\027HomeC" +
-      "learGroupRecordRsp\022\017\n\007retcode\030\001 \001(\005\022\020\n\010g" +
-      "roup_id\030\007 \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "learGroupRecordRsp\022\017\n\007retcode\030\r \001(\005\022\020\n\010g" +
+      "roup_id\030\010 \001(\rB\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

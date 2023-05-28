@@ -19,26 +19,26 @@ public final class SumoDungeonAvatarOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint64 avatar_guid = 12;</code>
+     * <code>uint64 avatar_guid = 2;</code>
      * @return The avatarGuid.
      */
     long getAvatarGuid();
 
     /**
-     * <code>bool is_trial = 11;</code>
+     * <code>bool is_trial = 4;</code>
      * @return The isTrial.
      */
     boolean getIsTrial();
 
     /**
-     * <code>bool is_avlive = 8;</code>
+     * <code>bool is_avlive = 1;</code>
      * @return The isAvlive.
      */
     boolean getIsAvlive();
   }
   /**
    * <pre>
-   * Name: KGMFLOMCIPP
+   * Obf: DDJOHGFNFKB
    * </pre>
    *
    * Protobuf type {@code SumoDungeonAvatar}
@@ -85,19 +85,19 @@ public final class SumoDungeonAvatarOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 8: {
 
               isAvlive_ = input.readBool();
               break;
             }
-            case 88: {
-
-              isTrial_ = input.readBool();
-              break;
-            }
-            case 96: {
+            case 16: {
 
               avatarGuid_ = input.readUInt64();
+              break;
+            }
+            case 32: {
+
+              isTrial_ = input.readBool();
               break;
             }
             default: {
@@ -132,10 +132,10 @@ public final class SumoDungeonAvatarOuterClass {
               emu.grasscutter.net.proto.SumoDungeonAvatarOuterClass.SumoDungeonAvatar.class, emu.grasscutter.net.proto.SumoDungeonAvatarOuterClass.SumoDungeonAvatar.Builder.class);
     }
 
-    public static final int AVATAR_GUID_FIELD_NUMBER = 12;
+    public static final int AVATAR_GUID_FIELD_NUMBER = 2;
     private long avatarGuid_;
     /**
-     * <code>uint64 avatar_guid = 12;</code>
+     * <code>uint64 avatar_guid = 2;</code>
      * @return The avatarGuid.
      */
     @java.lang.Override
@@ -143,10 +143,10 @@ public final class SumoDungeonAvatarOuterClass {
       return avatarGuid_;
     }
 
-    public static final int IS_TRIAL_FIELD_NUMBER = 11;
+    public static final int IS_TRIAL_FIELD_NUMBER = 4;
     private boolean isTrial_;
     /**
-     * <code>bool is_trial = 11;</code>
+     * <code>bool is_trial = 4;</code>
      * @return The isTrial.
      */
     @java.lang.Override
@@ -154,10 +154,10 @@ public final class SumoDungeonAvatarOuterClass {
       return isTrial_;
     }
 
-    public static final int IS_AVLIVE_FIELD_NUMBER = 8;
+    public static final int IS_AVLIVE_FIELD_NUMBER = 1;
     private boolean isAvlive_;
     /**
-     * <code>bool is_avlive = 8;</code>
+     * <code>bool is_avlive = 1;</code>
      * @return The isAvlive.
      */
     @java.lang.Override
@@ -180,13 +180,13 @@ public final class SumoDungeonAvatarOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isAvlive_ != false) {
-        output.writeBool(8, isAvlive_);
-      }
-      if (isTrial_ != false) {
-        output.writeBool(11, isTrial_);
+        output.writeBool(1, isAvlive_);
       }
       if (avatarGuid_ != 0L) {
-        output.writeUInt64(12, avatarGuid_);
+        output.writeUInt64(2, avatarGuid_);
+      }
+      if (isTrial_ != false) {
+        output.writeBool(4, isTrial_);
       }
       unknownFields.writeTo(output);
     }
@@ -199,15 +199,15 @@ public final class SumoDungeonAvatarOuterClass {
       size = 0;
       if (isAvlive_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isAvlive_);
-      }
-      if (isTrial_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isTrial_);
+          .computeBoolSize(1, isAvlive_);
       }
       if (avatarGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(12, avatarGuid_);
+          .computeUInt64Size(2, avatarGuid_);
+      }
+      if (isTrial_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(4, isTrial_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -347,7 +347,7 @@ public final class SumoDungeonAvatarOuterClass {
     }
     /**
      * <pre>
-     * Name: KGMFLOMCIPP
+     * Obf: DDJOHGFNFKB
      * </pre>
      *
      * Protobuf type {@code SumoDungeonAvatar}
@@ -510,7 +510,7 @@ public final class SumoDungeonAvatarOuterClass {
 
       private long avatarGuid_ ;
       /**
-       * <code>uint64 avatar_guid = 12;</code>
+       * <code>uint64 avatar_guid = 2;</code>
        * @return The avatarGuid.
        */
       @java.lang.Override
@@ -518,7 +518,7 @@ public final class SumoDungeonAvatarOuterClass {
         return avatarGuid_;
       }
       /**
-       * <code>uint64 avatar_guid = 12;</code>
+       * <code>uint64 avatar_guid = 2;</code>
        * @param value The avatarGuid to set.
        * @return This builder for chaining.
        */
@@ -529,7 +529,7 @@ public final class SumoDungeonAvatarOuterClass {
         return this;
       }
       /**
-       * <code>uint64 avatar_guid = 12;</code>
+       * <code>uint64 avatar_guid = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarGuid() {
@@ -541,7 +541,7 @@ public final class SumoDungeonAvatarOuterClass {
 
       private boolean isTrial_ ;
       /**
-       * <code>bool is_trial = 11;</code>
+       * <code>bool is_trial = 4;</code>
        * @return The isTrial.
        */
       @java.lang.Override
@@ -549,7 +549,7 @@ public final class SumoDungeonAvatarOuterClass {
         return isTrial_;
       }
       /**
-       * <code>bool is_trial = 11;</code>
+       * <code>bool is_trial = 4;</code>
        * @param value The isTrial to set.
        * @return This builder for chaining.
        */
@@ -560,7 +560,7 @@ public final class SumoDungeonAvatarOuterClass {
         return this;
       }
       /**
-       * <code>bool is_trial = 11;</code>
+       * <code>bool is_trial = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsTrial() {
@@ -572,7 +572,7 @@ public final class SumoDungeonAvatarOuterClass {
 
       private boolean isAvlive_ ;
       /**
-       * <code>bool is_avlive = 8;</code>
+       * <code>bool is_avlive = 1;</code>
        * @return The isAvlive.
        */
       @java.lang.Override
@@ -580,7 +580,7 @@ public final class SumoDungeonAvatarOuterClass {
         return isAvlive_;
       }
       /**
-       * <code>bool is_avlive = 8;</code>
+       * <code>bool is_avlive = 1;</code>
        * @param value The isAvlive to set.
        * @return This builder for chaining.
        */
@@ -591,7 +591,7 @@ public final class SumoDungeonAvatarOuterClass {
         return this;
       }
       /**
-       * <code>bool is_avlive = 8;</code>
+       * <code>bool is_avlive = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsAvlive() {
@@ -668,8 +668,8 @@ public final class SumoDungeonAvatarOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027SumoDungeonAvatar.proto\"M\n\021SumoDungeon" +
-      "Avatar\022\023\n\013avatar_guid\030\014 \001(\004\022\020\n\010is_trial\030" +
-      "\013 \001(\010\022\021\n\tis_avlive\030\010 \001(\010B\033\n\031emu.grasscut" +
+      "Avatar\022\023\n\013avatar_guid\030\002 \001(\004\022\020\n\010is_trial\030" +
+      "\004 \001(\010\022\021\n\tis_avlive\030\001 \001(\010B\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

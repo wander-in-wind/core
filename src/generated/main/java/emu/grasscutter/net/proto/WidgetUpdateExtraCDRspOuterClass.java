@@ -19,53 +19,53 @@ public final class WidgetUpdateExtraCDRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.WIDGET_EXTRA_CD_TYPE extra_cd_type = 2;</code>
-     * @return The enum numeric value on the wire for extraCdType.
-     */
-    int getExtraCdTypeValue();
-    /**
-     * <code>.WIDGET_EXTRA_CD_TYPE extra_cd_type = 2;</code>
-     * @return The extraCdType.
-     */
-    emu.grasscutter.net.proto.WIDGETEXTRACDTYPE.WIDGET_EXTRA_CD_TYPE getExtraCdType();
-
-    /**
-     * <code>uint32 material_id = 12;</code>
-     * @return The materialId.
-     */
-    int getMaterialId();
-
-    /**
-     * <code>uint32 cd_group = 8;</code>
-     * @return The cdGroup.
-     */
-    int getCdGroup();
-
-    /**
-     * <code>int32 retcode = 7;</code>
+     * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>.WidgetCoolDownData cool_data = 6;</code>
+     * <code>.WIDGET_EXTRA_CD_TYPE extra_cd_type = 6;</code>
+     * @return The enum numeric value on the wire for extraCdType.
+     */
+    int getExtraCdTypeValue();
+    /**
+     * <code>.WIDGET_EXTRA_CD_TYPE extra_cd_type = 6;</code>
+     * @return The extraCdType.
+     */
+    emu.grasscutter.net.proto.WIDGETEXTRACDTYPE.WIDGET_EXTRA_CD_TYPE getExtraCdType();
+
+    /**
+     * <code>uint32 cd_group = 12;</code>
+     * @return The cdGroup.
+     */
+    int getCdGroup();
+
+    /**
+     * <code>uint32 material_id = 14;</code>
+     * @return The materialId.
+     */
+    int getMaterialId();
+
+    /**
+     * <code>.WidgetCoolDownData cool_data = 8;</code>
      * @return Whether the coolData field is set.
      */
     boolean hasCoolData();
     /**
-     * <code>.WidgetCoolDownData cool_data = 6;</code>
+     * <code>.WidgetCoolDownData cool_data = 8;</code>
      * @return The coolData.
      */
     emu.grasscutter.net.proto.WidgetCoolDownDataOuterClass.WidgetCoolDownData getCoolData();
     /**
-     * <code>.WidgetCoolDownData cool_data = 6;</code>
+     * <code>.WidgetCoolDownData cool_data = 8;</code>
      */
     emu.grasscutter.net.proto.WidgetCoolDownDataOuterClass.WidgetCoolDownDataOrBuilder getCoolDataOrBuilder();
   }
   /**
    * <pre>
-   * Name: HDBCLHJHDOB
-   * CmdId: 5925
+   * CmdId: 6018
+   * Obf: ECEDMOBDGMI
    * </pre>
    *
    * Protobuf type {@code WidgetUpdateExtraCDRsp}
@@ -113,13 +113,18 @@ public final class WidgetUpdateExtraCDRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 40: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 48: {
               int rawValue = input.readEnum();
 
               extraCdType_ = rawValue;
               break;
             }
-            case 50: {
+            case 66: {
               emu.grasscutter.net.proto.WidgetCoolDownDataOuterClass.WidgetCoolDownData.Builder subBuilder = null;
               if (coolData_ != null) {
                 subBuilder = coolData_.toBuilder();
@@ -132,17 +137,12 @@ public final class WidgetUpdateExtraCDRspOuterClass {
 
               break;
             }
-            case 56: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 64: {
+            case 96: {
 
               cdGroup_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 112: {
 
               materialId_ = input.readUInt32();
               break;
@@ -179,17 +179,28 @@ public final class WidgetUpdateExtraCDRspOuterClass {
               emu.grasscutter.net.proto.WidgetUpdateExtraCDRspOuterClass.WidgetUpdateExtraCDRsp.class, emu.grasscutter.net.proto.WidgetUpdateExtraCDRspOuterClass.WidgetUpdateExtraCDRsp.Builder.class);
     }
 
-    public static final int EXTRA_CD_TYPE_FIELD_NUMBER = 2;
+    public static final int RETCODE_FIELD_NUMBER = 5;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 5;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
+    public static final int EXTRA_CD_TYPE_FIELD_NUMBER = 6;
     private int extraCdType_;
     /**
-     * <code>.WIDGET_EXTRA_CD_TYPE extra_cd_type = 2;</code>
+     * <code>.WIDGET_EXTRA_CD_TYPE extra_cd_type = 6;</code>
      * @return The enum numeric value on the wire for extraCdType.
      */
     @java.lang.Override public int getExtraCdTypeValue() {
       return extraCdType_;
     }
     /**
-     * <code>.WIDGET_EXTRA_CD_TYPE extra_cd_type = 2;</code>
+     * <code>.WIDGET_EXTRA_CD_TYPE extra_cd_type = 6;</code>
      * @return The extraCdType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.WIDGETEXTRACDTYPE.WIDGET_EXTRA_CD_TYPE getExtraCdType() {
@@ -198,21 +209,10 @@ public final class WidgetUpdateExtraCDRspOuterClass {
       return result == null ? emu.grasscutter.net.proto.WIDGETEXTRACDTYPE.WIDGET_EXTRA_CD_TYPE.UNRECOGNIZED : result;
     }
 
-    public static final int MATERIAL_ID_FIELD_NUMBER = 12;
-    private int materialId_;
-    /**
-     * <code>uint32 material_id = 12;</code>
-     * @return The materialId.
-     */
-    @java.lang.Override
-    public int getMaterialId() {
-      return materialId_;
-    }
-
-    public static final int CD_GROUP_FIELD_NUMBER = 8;
+    public static final int CD_GROUP_FIELD_NUMBER = 12;
     private int cdGroup_;
     /**
-     * <code>uint32 cd_group = 8;</code>
+     * <code>uint32 cd_group = 12;</code>
      * @return The cdGroup.
      */
     @java.lang.Override
@@ -220,21 +220,21 @@ public final class WidgetUpdateExtraCDRspOuterClass {
       return cdGroup_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 7;
-    private int retcode_;
+    public static final int MATERIAL_ID_FIELD_NUMBER = 14;
+    private int materialId_;
     /**
-     * <code>int32 retcode = 7;</code>
-     * @return The retcode.
+     * <code>uint32 material_id = 14;</code>
+     * @return The materialId.
      */
     @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
+    public int getMaterialId() {
+      return materialId_;
     }
 
-    public static final int COOL_DATA_FIELD_NUMBER = 6;
+    public static final int COOL_DATA_FIELD_NUMBER = 8;
     private emu.grasscutter.net.proto.WidgetCoolDownDataOuterClass.WidgetCoolDownData coolData_;
     /**
-     * <code>.WidgetCoolDownData cool_data = 6;</code>
+     * <code>.WidgetCoolDownData cool_data = 8;</code>
      * @return Whether the coolData field is set.
      */
     @java.lang.Override
@@ -242,7 +242,7 @@ public final class WidgetUpdateExtraCDRspOuterClass {
       return coolData_ != null;
     }
     /**
-     * <code>.WidgetCoolDownData cool_data = 6;</code>
+     * <code>.WidgetCoolDownData cool_data = 8;</code>
      * @return The coolData.
      */
     @java.lang.Override
@@ -250,7 +250,7 @@ public final class WidgetUpdateExtraCDRspOuterClass {
       return coolData_ == null ? emu.grasscutter.net.proto.WidgetCoolDownDataOuterClass.WidgetCoolDownData.getDefaultInstance() : coolData_;
     }
     /**
-     * <code>.WidgetCoolDownData cool_data = 6;</code>
+     * <code>.WidgetCoolDownData cool_data = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.WidgetCoolDownDataOuterClass.WidgetCoolDownDataOrBuilder getCoolDataOrBuilder() {
@@ -271,20 +271,20 @@ public final class WidgetUpdateExtraCDRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (retcode_ != 0) {
+        output.writeInt32(5, retcode_);
+      }
       if (extraCdType_ != emu.grasscutter.net.proto.WIDGETEXTRACDTYPE.WIDGET_EXTRA_CD_TYPE.WIDGET_EXTRA_CD_TYPE_NONE.getNumber()) {
-        output.writeEnum(2, extraCdType_);
+        output.writeEnum(6, extraCdType_);
       }
       if (coolData_ != null) {
-        output.writeMessage(6, getCoolData());
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(7, retcode_);
+        output.writeMessage(8, getCoolData());
       }
       if (cdGroup_ != 0) {
-        output.writeUInt32(8, cdGroup_);
+        output.writeUInt32(12, cdGroup_);
       }
       if (materialId_ != 0) {
-        output.writeUInt32(12, materialId_);
+        output.writeUInt32(14, materialId_);
       }
       unknownFields.writeTo(output);
     }
@@ -295,25 +295,25 @@ public final class WidgetUpdateExtraCDRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(5, retcode_);
+      }
       if (extraCdType_ != emu.grasscutter.net.proto.WIDGETEXTRACDTYPE.WIDGET_EXTRA_CD_TYPE.WIDGET_EXTRA_CD_TYPE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(2, extraCdType_);
+          .computeEnumSize(6, extraCdType_);
       }
       if (coolData_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, getCoolData());
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, retcode_);
+          .computeMessageSize(8, getCoolData());
       }
       if (cdGroup_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, cdGroup_);
+          .computeUInt32Size(12, cdGroup_);
       }
       if (materialId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, materialId_);
+          .computeUInt32Size(14, materialId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -330,13 +330,13 @@ public final class WidgetUpdateExtraCDRspOuterClass {
       }
       emu.grasscutter.net.proto.WidgetUpdateExtraCDRspOuterClass.WidgetUpdateExtraCDRsp other = (emu.grasscutter.net.proto.WidgetUpdateExtraCDRspOuterClass.WidgetUpdateExtraCDRsp) obj;
 
-      if (extraCdType_ != other.extraCdType_) return false;
-      if (getMaterialId()
-          != other.getMaterialId()) return false;
-      if (getCdGroup()
-          != other.getCdGroup()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (extraCdType_ != other.extraCdType_) return false;
+      if (getCdGroup()
+          != other.getCdGroup()) return false;
+      if (getMaterialId()
+          != other.getMaterialId()) return false;
       if (hasCoolData() != other.hasCoolData()) return false;
       if (hasCoolData()) {
         if (!getCoolData()
@@ -353,14 +353,14 @@ public final class WidgetUpdateExtraCDRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + EXTRA_CD_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + extraCdType_;
-      hash = (37 * hash) + MATERIAL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getMaterialId();
-      hash = (37 * hash) + CD_GROUP_FIELD_NUMBER;
-      hash = (53 * hash) + getCdGroup();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + EXTRA_CD_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + extraCdType_;
+      hash = (37 * hash) + CD_GROUP_FIELD_NUMBER;
+      hash = (53 * hash) + getCdGroup();
+      hash = (37 * hash) + MATERIAL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getMaterialId();
       if (hasCoolData()) {
         hash = (37 * hash) + COOL_DATA_FIELD_NUMBER;
         hash = (53 * hash) + getCoolData().hashCode();
@@ -462,8 +462,8 @@ public final class WidgetUpdateExtraCDRspOuterClass {
     }
     /**
      * <pre>
-     * Name: HDBCLHJHDOB
-     * CmdId: 5925
+     * CmdId: 6018
+     * Obf: ECEDMOBDGMI
      * </pre>
      *
      * Protobuf type {@code WidgetUpdateExtraCDRsp}
@@ -503,13 +503,13 @@ public final class WidgetUpdateExtraCDRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        extraCdType_ = 0;
+        retcode_ = 0;
 
-        materialId_ = 0;
+        extraCdType_ = 0;
 
         cdGroup_ = 0;
 
-        retcode_ = 0;
+        materialId_ = 0;
 
         if (coolDataBuilder_ == null) {
           coolData_ = null;
@@ -543,10 +543,10 @@ public final class WidgetUpdateExtraCDRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.WidgetUpdateExtraCDRspOuterClass.WidgetUpdateExtraCDRsp buildPartial() {
         emu.grasscutter.net.proto.WidgetUpdateExtraCDRspOuterClass.WidgetUpdateExtraCDRsp result = new emu.grasscutter.net.proto.WidgetUpdateExtraCDRspOuterClass.WidgetUpdateExtraCDRsp(this);
-        result.extraCdType_ = extraCdType_;
-        result.materialId_ = materialId_;
-        result.cdGroup_ = cdGroup_;
         result.retcode_ = retcode_;
+        result.extraCdType_ = extraCdType_;
+        result.cdGroup_ = cdGroup_;
+        result.materialId_ = materialId_;
         if (coolDataBuilder_ == null) {
           result.coolData_ = coolData_;
         } else {
@@ -600,17 +600,17 @@ public final class WidgetUpdateExtraCDRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.WidgetUpdateExtraCDRspOuterClass.WidgetUpdateExtraCDRsp other) {
         if (other == emu.grasscutter.net.proto.WidgetUpdateExtraCDRspOuterClass.WidgetUpdateExtraCDRsp.getDefaultInstance()) return this;
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
+        }
         if (other.extraCdType_ != 0) {
           setExtraCdTypeValue(other.getExtraCdTypeValue());
-        }
-        if (other.getMaterialId() != 0) {
-          setMaterialId(other.getMaterialId());
         }
         if (other.getCdGroup() != 0) {
           setCdGroup(other.getCdGroup());
         }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
+        if (other.getMaterialId() != 0) {
+          setMaterialId(other.getMaterialId());
         }
         if (other.hasCoolData()) {
           mergeCoolData(other.getCoolData());
@@ -644,16 +644,47 @@ public final class WidgetUpdateExtraCDRspOuterClass {
         return this;
       }
 
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 5;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 5;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int extraCdType_ = 0;
       /**
-       * <code>.WIDGET_EXTRA_CD_TYPE extra_cd_type = 2;</code>
+       * <code>.WIDGET_EXTRA_CD_TYPE extra_cd_type = 6;</code>
        * @return The enum numeric value on the wire for extraCdType.
        */
       @java.lang.Override public int getExtraCdTypeValue() {
         return extraCdType_;
       }
       /**
-       * <code>.WIDGET_EXTRA_CD_TYPE extra_cd_type = 2;</code>
+       * <code>.WIDGET_EXTRA_CD_TYPE extra_cd_type = 6;</code>
        * @param value The enum numeric value on the wire for extraCdType to set.
        * @return This builder for chaining.
        */
@@ -664,7 +695,7 @@ public final class WidgetUpdateExtraCDRspOuterClass {
         return this;
       }
       /**
-       * <code>.WIDGET_EXTRA_CD_TYPE extra_cd_type = 2;</code>
+       * <code>.WIDGET_EXTRA_CD_TYPE extra_cd_type = 6;</code>
        * @return The extraCdType.
        */
       @java.lang.Override
@@ -674,7 +705,7 @@ public final class WidgetUpdateExtraCDRspOuterClass {
         return result == null ? emu.grasscutter.net.proto.WIDGETEXTRACDTYPE.WIDGET_EXTRA_CD_TYPE.UNRECOGNIZED : result;
       }
       /**
-       * <code>.WIDGET_EXTRA_CD_TYPE extra_cd_type = 2;</code>
+       * <code>.WIDGET_EXTRA_CD_TYPE extra_cd_type = 6;</code>
        * @param value The extraCdType to set.
        * @return This builder for chaining.
        */
@@ -688,7 +719,7 @@ public final class WidgetUpdateExtraCDRspOuterClass {
         return this;
       }
       /**
-       * <code>.WIDGET_EXTRA_CD_TYPE extra_cd_type = 2;</code>
+       * <code>.WIDGET_EXTRA_CD_TYPE extra_cd_type = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearExtraCdType() {
@@ -698,40 +729,9 @@ public final class WidgetUpdateExtraCDRspOuterClass {
         return this;
       }
 
-      private int materialId_ ;
-      /**
-       * <code>uint32 material_id = 12;</code>
-       * @return The materialId.
-       */
-      @java.lang.Override
-      public int getMaterialId() {
-        return materialId_;
-      }
-      /**
-       * <code>uint32 material_id = 12;</code>
-       * @param value The materialId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMaterialId(int value) {
-        
-        materialId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 material_id = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMaterialId() {
-        
-        materialId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int cdGroup_ ;
       /**
-       * <code>uint32 cd_group = 8;</code>
+       * <code>uint32 cd_group = 12;</code>
        * @return The cdGroup.
        */
       @java.lang.Override
@@ -739,7 +739,7 @@ public final class WidgetUpdateExtraCDRspOuterClass {
         return cdGroup_;
       }
       /**
-       * <code>uint32 cd_group = 8;</code>
+       * <code>uint32 cd_group = 12;</code>
        * @param value The cdGroup to set.
        * @return This builder for chaining.
        */
@@ -750,7 +750,7 @@ public final class WidgetUpdateExtraCDRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cd_group = 8;</code>
+       * <code>uint32 cd_group = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearCdGroup() {
@@ -760,33 +760,33 @@ public final class WidgetUpdateExtraCDRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
+      private int materialId_ ;
       /**
-       * <code>int32 retcode = 7;</code>
-       * @return The retcode.
+       * <code>uint32 material_id = 14;</code>
+       * @return The materialId.
        */
       @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
+      public int getMaterialId() {
+        return materialId_;
       }
       /**
-       * <code>int32 retcode = 7;</code>
-       * @param value The retcode to set.
+       * <code>uint32 material_id = 14;</code>
+       * @param value The materialId to set.
        * @return This builder for chaining.
        */
-      public Builder setRetcode(int value) {
+      public Builder setMaterialId(int value) {
         
-        retcode_ = value;
+        materialId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 retcode = 7;</code>
+       * <code>uint32 material_id = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearRetcode() {
+      public Builder clearMaterialId() {
         
-        retcode_ = 0;
+        materialId_ = 0;
         onChanged();
         return this;
       }
@@ -795,14 +795,14 @@ public final class WidgetUpdateExtraCDRspOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.WidgetCoolDownDataOuterClass.WidgetCoolDownData, emu.grasscutter.net.proto.WidgetCoolDownDataOuterClass.WidgetCoolDownData.Builder, emu.grasscutter.net.proto.WidgetCoolDownDataOuterClass.WidgetCoolDownDataOrBuilder> coolDataBuilder_;
       /**
-       * <code>.WidgetCoolDownData cool_data = 6;</code>
+       * <code>.WidgetCoolDownData cool_data = 8;</code>
        * @return Whether the coolData field is set.
        */
       public boolean hasCoolData() {
         return coolDataBuilder_ != null || coolData_ != null;
       }
       /**
-       * <code>.WidgetCoolDownData cool_data = 6;</code>
+       * <code>.WidgetCoolDownData cool_data = 8;</code>
        * @return The coolData.
        */
       public emu.grasscutter.net.proto.WidgetCoolDownDataOuterClass.WidgetCoolDownData getCoolData() {
@@ -813,7 +813,7 @@ public final class WidgetUpdateExtraCDRspOuterClass {
         }
       }
       /**
-       * <code>.WidgetCoolDownData cool_data = 6;</code>
+       * <code>.WidgetCoolDownData cool_data = 8;</code>
        */
       public Builder setCoolData(emu.grasscutter.net.proto.WidgetCoolDownDataOuterClass.WidgetCoolDownData value) {
         if (coolDataBuilder_ == null) {
@@ -829,7 +829,7 @@ public final class WidgetUpdateExtraCDRspOuterClass {
         return this;
       }
       /**
-       * <code>.WidgetCoolDownData cool_data = 6;</code>
+       * <code>.WidgetCoolDownData cool_data = 8;</code>
        */
       public Builder setCoolData(
           emu.grasscutter.net.proto.WidgetCoolDownDataOuterClass.WidgetCoolDownData.Builder builderForValue) {
@@ -843,7 +843,7 @@ public final class WidgetUpdateExtraCDRspOuterClass {
         return this;
       }
       /**
-       * <code>.WidgetCoolDownData cool_data = 6;</code>
+       * <code>.WidgetCoolDownData cool_data = 8;</code>
        */
       public Builder mergeCoolData(emu.grasscutter.net.proto.WidgetCoolDownDataOuterClass.WidgetCoolDownData value) {
         if (coolDataBuilder_ == null) {
@@ -861,7 +861,7 @@ public final class WidgetUpdateExtraCDRspOuterClass {
         return this;
       }
       /**
-       * <code>.WidgetCoolDownData cool_data = 6;</code>
+       * <code>.WidgetCoolDownData cool_data = 8;</code>
        */
       public Builder clearCoolData() {
         if (coolDataBuilder_ == null) {
@@ -875,7 +875,7 @@ public final class WidgetUpdateExtraCDRspOuterClass {
         return this;
       }
       /**
-       * <code>.WidgetCoolDownData cool_data = 6;</code>
+       * <code>.WidgetCoolDownData cool_data = 8;</code>
        */
       public emu.grasscutter.net.proto.WidgetCoolDownDataOuterClass.WidgetCoolDownData.Builder getCoolDataBuilder() {
         
@@ -883,7 +883,7 @@ public final class WidgetUpdateExtraCDRspOuterClass {
         return getCoolDataFieldBuilder().getBuilder();
       }
       /**
-       * <code>.WidgetCoolDownData cool_data = 6;</code>
+       * <code>.WidgetCoolDownData cool_data = 8;</code>
        */
       public emu.grasscutter.net.proto.WidgetCoolDownDataOuterClass.WidgetCoolDownDataOrBuilder getCoolDataOrBuilder() {
         if (coolDataBuilder_ != null) {
@@ -894,7 +894,7 @@ public final class WidgetUpdateExtraCDRspOuterClass {
         }
       }
       /**
-       * <code>.WidgetCoolDownData cool_data = 6;</code>
+       * <code>.WidgetCoolDownData cool_data = 8;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.WidgetCoolDownDataOuterClass.WidgetCoolDownData, emu.grasscutter.net.proto.WidgetCoolDownDataOuterClass.WidgetCoolDownData.Builder, emu.grasscutter.net.proto.WidgetCoolDownDataOuterClass.WidgetCoolDownDataOrBuilder> 
@@ -978,10 +978,10 @@ public final class WidgetUpdateExtraCDRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\034WidgetUpdateExtraCDRsp.proto\032\032WIDGET_E" +
       "XTRA_CD_TYPE.proto\032\030WidgetCoolDownData.p" +
-      "roto\"\246\001\n\026WidgetUpdateExtraCDRsp\022,\n\rextra" +
-      "_cd_type\030\002 \001(\0162\025.WIDGET_EXTRA_CD_TYPE\022\023\n" +
-      "\013material_id\030\014 \001(\r\022\020\n\010cd_group\030\010 \001(\r\022\017\n\007" +
-      "retcode\030\007 \001(\005\022&\n\tcool_data\030\006 \001(\0132\023.Widge" +
+      "roto\"\246\001\n\026WidgetUpdateExtraCDRsp\022\017\n\007retco" +
+      "de\030\005 \001(\005\022,\n\rextra_cd_type\030\006 \001(\0162\025.WIDGET" +
+      "_EXTRA_CD_TYPE\022\020\n\010cd_group\030\014 \001(\r\022\023\n\013mate" +
+      "rial_id\030\016 \001(\r\022&\n\tcool_data\030\010 \001(\0132\023.Widge" +
       "tCoolDownDataB\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
@@ -996,7 +996,7 @@ public final class WidgetUpdateExtraCDRspOuterClass {
     internal_static_WidgetUpdateExtraCDRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_WidgetUpdateExtraCDRsp_descriptor,
-        new java.lang.String[] { "ExtraCdType", "MaterialId", "CdGroup", "Retcode", "CoolData", });
+        new java.lang.String[] { "Retcode", "ExtraCdType", "CdGroup", "MaterialId", "CoolData", });
     emu.grasscutter.net.proto.WIDGETEXTRACDTYPE.getDescriptor();
     emu.grasscutter.net.proto.WidgetCoolDownDataOuterClass.getDescriptor();
   }

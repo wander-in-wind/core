@@ -20,8 +20,8 @@ public final class LanternRiteTakeSkinRewardReqOuterClass {
   }
   /**
    * <pre>
-   * Name: MLCAKNMPIAD
-   * CmdId: 8502
+   * CmdId: 8066
+   * Obf: HKBMBCKHENM
    * </pre>
    *
    * Protobuf type {@code LanternRiteTakeSkinRewardReq}
@@ -246,8 +246,8 @@ public final class LanternRiteTakeSkinRewardReqOuterClass {
     }
     /**
      * <pre>
-     * Name: MLCAKNMPIAD
-     * CmdId: 8502
+     * CmdId: 8066
+     * Obf: HKBMBCKHENM
      * </pre>
      *
      * Protobuf type {@code LanternRiteTakeSkinRewardReq}

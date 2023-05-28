@@ -19,207 +19,143 @@ public final class GCGMsgAddDiceOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *PENJFODAGGI FHJPIJFMAPL snooguess snootodo swapperoo 2
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; old_dice_map = 11;</code>
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; JMNNIEOBKHA = 9;</code>
      */
-    int getOldDiceMapCount();
+    int getJMNNIEOBKHACount();
     /**
-     * <pre>
-     *PENJFODAGGI FHJPIJFMAPL snooguess snootodo swapperoo 2
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; old_dice_map = 11;</code>
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; JMNNIEOBKHA = 9;</code>
      */
-    boolean containsOldDiceMap(
+    boolean containsJMNNIEOBKHA(
         int key);
     /**
-     * Use {@link #getOldDiceMapMap()} instead.
+     * Use {@link #getJMNNIEOBKHAMap()} instead.
      */
     @java.lang.Deprecated
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
-    getOldDiceMap();
+    getJMNNIEOBKHA();
     /**
-     * <pre>
-     *PENJFODAGGI FHJPIJFMAPL snooguess snootodo swapperoo 2
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; old_dice_map = 11;</code>
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; JMNNIEOBKHA = 9;</code>
      */
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
-    getOldDiceMapMap();
+    getJMNNIEOBKHAMap();
     /**
-     * <pre>
-     *PENJFODAGGI FHJPIJFMAPL snooguess snootodo swapperoo 2
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; old_dice_map = 11;</code>
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; JMNNIEOBKHA = 9;</code>
      */
-    emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getOldDiceMapOrDefault(
+    emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getJMNNIEOBKHAOrDefault(
         int key,
         emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType defaultValue);
     /**
-     * <pre>
-     *PENJFODAGGI FHJPIJFMAPL snooguess snootodo swapperoo 2
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; old_dice_map = 11;</code>
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; JMNNIEOBKHA = 9;</code>
      */
-    emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getOldDiceMapOrThrow(
+    emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getJMNNIEOBKHAOrThrow(
         int key);
     /**
-     * Use {@link #getOldDiceMapValueMap()} instead.
+     * Use {@link #getJMNNIEOBKHAValueMap()} instead.
      */
     @java.lang.Deprecated
     java.util.Map<java.lang.Integer, java.lang.Integer>
-    getOldDiceMapValue();
+    getJMNNIEOBKHAValue();
     /**
-     * <pre>
-     *PENJFODAGGI FHJPIJFMAPL snooguess snootodo swapperoo 2
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; old_dice_map = 11;</code>
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; JMNNIEOBKHA = 9;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
-    getOldDiceMapValueMap();
+    getJMNNIEOBKHAValueMap();
     /**
-     * <pre>
-     *PENJFODAGGI FHJPIJFMAPL snooguess snootodo swapperoo 2
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; old_dice_map = 11;</code>
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; JMNNIEOBKHA = 9;</code>
      */
 
-    int getOldDiceMapValueOrDefault(
+    int getJMNNIEOBKHAValueOrDefault(
         int key,
         int defaultValue);
     /**
-     * <pre>
-     *PENJFODAGGI FHJPIJFMAPL snooguess snootodo swapperoo 2
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; old_dice_map = 11;</code>
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; JMNNIEOBKHA = 9;</code>
      */
 
-    int getOldDiceMapValueOrThrow(
+    int getJMNNIEOBKHAValueOrThrow(
         int key);
+
+    /**
+     * <code>.MNDCMMKBIBP reason = 7;</code>
+     * @return The enum numeric value on the wire for reason.
+     */
+    int getReasonValue();
+    /**
+     * <code>.MNDCMMKBIBP reason = 7;</code>
+     * @return The reason.
+     */
+    emu.grasscutter.net.proto.MNDCMMKBIBPOuterClass.MNDCMMKBIBP getReason();
+
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; AEDGLBEONFO = 14;</code>
+     */
+    int getAEDGLBEONFOCount();
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; AEDGLBEONFO = 14;</code>
+     */
+    boolean containsAEDGLBEONFO(
+        int key);
+    /**
+     * Use {@link #getAEDGLBEONFOMap()} instead.
+     */
+    @java.lang.Deprecated
+    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
+    getAEDGLBEONFO();
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; AEDGLBEONFO = 14;</code>
+     */
+    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
+    getAEDGLBEONFOMap();
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; AEDGLBEONFO = 14;</code>
+     */
+    emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getAEDGLBEONFOOrDefault(
+        int key,
+        emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType defaultValue);
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; AEDGLBEONFO = 14;</code>
+     */
+    emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getAEDGLBEONFOOrThrow(
+        int key);
+    /**
+     * Use {@link #getAEDGLBEONFOValueMap()} instead.
+     */
+    @java.lang.Deprecated
+    java.util.Map<java.lang.Integer, java.lang.Integer>
+    getAEDGLBEONFOValue();
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; AEDGLBEONFO = 14;</code>
+     */
+    java.util.Map<java.lang.Integer, java.lang.Integer>
+    getAEDGLBEONFOValueMap();
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; AEDGLBEONFO = 14;</code>
+     */
+
+    int getAEDGLBEONFOValueOrDefault(
+        int key,
+        int defaultValue);
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; AEDGLBEONFO = 14;</code>
+     */
+
+    int getAEDGLBEONFOValueOrThrow(
+        int key);
+
+    /**
+     * <code>int32 change_count = 10;</code>
+     * @return The changeCount.
+     */
+    int getChangeCount();
 
     /**
      * <code>uint32 controller_id = 5;</code>
      * @return The controllerId.
      */
     int getControllerId();
-
-    /**
-     * <code>.GCGReason reason = 1;</code>
-     * @return The enum numeric value on the wire for reason.
-     */
-    int getReasonValue();
-    /**
-     * <code>.GCGReason reason = 1;</code>
-     * @return The reason.
-     */
-    emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason getReason();
-
-    /**
-     * <code>int32 change_count = 14;</code>
-     * @return The changeCount.
-     */
-    int getChangeCount();
-
-    /**
-     * <pre>
-     *PENJFODAGGI PNELDJLCNOP snooguess snootodo swapperoo 2
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; new_dice_map = 8;</code>
-     */
-    int getNewDiceMapCount();
-    /**
-     * <pre>
-     *PENJFODAGGI PNELDJLCNOP snooguess snootodo swapperoo 2
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; new_dice_map = 8;</code>
-     */
-    boolean containsNewDiceMap(
-        int key);
-    /**
-     * Use {@link #getNewDiceMapMap()} instead.
-     */
-    @java.lang.Deprecated
-    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
-    getNewDiceMap();
-    /**
-     * <pre>
-     *PENJFODAGGI PNELDJLCNOP snooguess snootodo swapperoo 2
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; new_dice_map = 8;</code>
-     */
-    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
-    getNewDiceMapMap();
-    /**
-     * <pre>
-     *PENJFODAGGI PNELDJLCNOP snooguess snootodo swapperoo 2
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; new_dice_map = 8;</code>
-     */
-    emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getNewDiceMapOrDefault(
-        int key,
-        emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType defaultValue);
-    /**
-     * <pre>
-     *PENJFODAGGI PNELDJLCNOP snooguess snootodo swapperoo 2
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; new_dice_map = 8;</code>
-     */
-    emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getNewDiceMapOrThrow(
-        int key);
-    /**
-     * Use {@link #getNewDiceMapValueMap()} instead.
-     */
-    @java.lang.Deprecated
-    java.util.Map<java.lang.Integer, java.lang.Integer>
-    getNewDiceMapValue();
-    /**
-     * <pre>
-     *PENJFODAGGI PNELDJLCNOP snooguess snootodo swapperoo 2
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; new_dice_map = 8;</code>
-     */
-    java.util.Map<java.lang.Integer, java.lang.Integer>
-    getNewDiceMapValueMap();
-    /**
-     * <pre>
-     *PENJFODAGGI PNELDJLCNOP snooguess snootodo swapperoo 2
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; new_dice_map = 8;</code>
-     */
-
-    int getNewDiceMapValueOrDefault(
-        int key,
-        int defaultValue);
-    /**
-     * <pre>
-     *PENJFODAGGI PNELDJLCNOP snooguess snootodo swapperoo 2
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; new_dice_map = 8;</code>
-     */
-
-    int getNewDiceMapValueOrThrow(
-        int key);
   }
   /**
    * <pre>
-   * Name: JJPBDGJNPOL
+   * Obf: COHENDMNJKA
    * </pre>
    *
    * Protobuf type {@code GCGMsgAddDice}
@@ -268,46 +204,46 @@ public final class GCGMsgAddDiceOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-              int rawValue = input.readEnum();
-
-              reason_ = rawValue;
-              break;
-            }
             case 40: {
 
               controllerId_ = input.readUInt32();
               break;
             }
-            case 66: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                newDiceMap_ = com.google.protobuf.MapField.newMapField(
-                    NewDiceMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000002;
-              }
-              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              newDiceMap__ = input.readMessage(
-                  NewDiceMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              newDiceMap_.getMutableMap().put(
-                  newDiceMap__.getKey(), newDiceMap__.getValue());
+            case 56: {
+              int rawValue = input.readEnum();
+
+              reason_ = rawValue;
               break;
             }
-            case 90: {
+            case 74: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                oldDiceMap_ = com.google.protobuf.MapField.newMapField(
-                    OldDiceMapDefaultEntryHolder.defaultEntry);
+                jMNNIEOBKHA_ = com.google.protobuf.MapField.newMapField(
+                    JMNNIEOBKHADefaultEntryHolder.defaultEntry);
                 mutable_bitField0_ |= 0x00000001;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              oldDiceMap__ = input.readMessage(
-                  OldDiceMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              oldDiceMap_.getMutableMap().put(
-                  oldDiceMap__.getKey(), oldDiceMap__.getValue());
+              jMNNIEOBKHA__ = input.readMessage(
+                  JMNNIEOBKHADefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              jMNNIEOBKHA_.getMutableMap().put(
+                  jMNNIEOBKHA__.getKey(), jMNNIEOBKHA__.getValue());
               break;
             }
-            case 112: {
+            case 80: {
 
               changeCount_ = input.readInt32();
+              break;
+            }
+            case 114: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                aEDGLBEONFO_ = com.google.protobuf.MapField.newMapField(
+                    AEDGLBEONFODefaultEntryHolder.defaultEntry);
+                mutable_bitField0_ |= 0x00000002;
+              }
+              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+              aEDGLBEONFO__ = input.readMessage(
+                  AEDGLBEONFODefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              aEDGLBEONFO_.getMutableMap().put(
+                  aEDGLBEONFO__.getKey(), aEDGLBEONFO__.getValue());
               break;
             }
             default: {
@@ -339,10 +275,10 @@ public final class GCGMsgAddDiceOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 11:
-          return internalGetOldDiceMap();
-        case 8:
-          return internalGetNewDiceMap();
+        case 9:
+          return internalGetJMNNIEOBKHA();
+        case 14:
+          return internalGetAEDGLBEONFO();
         default:
           throw new RuntimeException(
               "Invalid map field number: " + number);
@@ -356,176 +292,322 @@ public final class GCGMsgAddDiceOuterClass {
               emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice.class, emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice.Builder.class);
     }
 
-    public static final int OLD_DICE_MAP_FIELD_NUMBER = 11;
-    private static final class OldDiceMapDefaultEntryHolder {
+    public static final int JMNNIEOBKHA_FIELD_NUMBER = 9;
+    private static final class JMNNIEOBKHADefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
               com.google.protobuf.MapEntry
               .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.internal_static_GCGMsgAddDice_OldDiceMapEntry_descriptor, 
+                  emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.internal_static_GCGMsgAddDice_JMNNIEOBKHAEntry_descriptor, 
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0,
                   com.google.protobuf.WireFormat.FieldType.ENUM,
-                  emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType.GCG_DICE_SIDE_TYPE_INVALID.getNumber());
+                  emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType.GCG_DICE_SIDE_INVALID.getNumber());
     }
     private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Integer> oldDiceMap_;
+        java.lang.Integer, java.lang.Integer> jMNNIEOBKHA_;
     private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-    internalGetOldDiceMap() {
-      if (oldDiceMap_ == null) {
+    internalGetJMNNIEOBKHA() {
+      if (jMNNIEOBKHA_ == null) {
         return com.google.protobuf.MapField.emptyMapField(
-            OldDiceMapDefaultEntryHolder.defaultEntry);
+            JMNNIEOBKHADefaultEntryHolder.defaultEntry);
       }
-      return oldDiceMap_;
+      return jMNNIEOBKHA_;
     }
     private static final
     com.google.protobuf.Internal.MapAdapter.Converter<
-        java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType> oldDiceMapValueConverter =
+        java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType> jMNNIEOBKHAValueConverter =
             com.google.protobuf.Internal.MapAdapter.newEnumConverter(
                 emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType.internalGetValueMap(),
                 emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType.UNRECOGNIZED);
     private static final java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
-    internalGetAdaptedOldDiceMapMap(
+    internalGetAdaptedJMNNIEOBKHAMap(
         java.util.Map<java.lang.Integer, java.lang.Integer> map) {
       return new com.google.protobuf.Internal.MapAdapter<
           java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType, java.lang.Integer>(
-              map, oldDiceMapValueConverter);
+              map, jMNNIEOBKHAValueConverter);
     }
 
-    public int getOldDiceMapCount() {
-      return internalGetOldDiceMap().getMap().size();
+    public int getJMNNIEOBKHACount() {
+      return internalGetJMNNIEOBKHA().getMap().size();
     }
     /**
-     * <pre>
-     *PENJFODAGGI FHJPIJFMAPL snooguess snootodo swapperoo 2
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; old_dice_map = 11;</code>
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; JMNNIEOBKHA = 9;</code>
      */
 
     @java.lang.Override
-    public boolean containsOldDiceMap(
+    public boolean containsJMNNIEOBKHA(
         int key) {
       
-      return internalGetOldDiceMap().getMap().containsKey(key);
+      return internalGetJMNNIEOBKHA().getMap().containsKey(key);
     }
     /**
-     * Use {@link #getOldDiceMapMap()} instead.
+     * Use {@link #getJMNNIEOBKHAMap()} instead.
      */
     @java.lang.Override
     @java.lang.Deprecated
     public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
-    getOldDiceMap() {
-      return getOldDiceMapMap();
+    getJMNNIEOBKHA() {
+      return getJMNNIEOBKHAMap();
     }
     /**
-     * <pre>
-     *PENJFODAGGI FHJPIJFMAPL snooguess snootodo swapperoo 2
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; old_dice_map = 11;</code>
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; JMNNIEOBKHA = 9;</code>
      */
     @java.lang.Override
 
     public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
-    getOldDiceMapMap() {
-      return internalGetAdaptedOldDiceMapMap(
-          internalGetOldDiceMap().getMap());}
+    getJMNNIEOBKHAMap() {
+      return internalGetAdaptedJMNNIEOBKHAMap(
+          internalGetJMNNIEOBKHA().getMap());}
     /**
-     * <pre>
-     *PENJFODAGGI FHJPIJFMAPL snooguess snootodo swapperoo 2
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; old_dice_map = 11;</code>
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; JMNNIEOBKHA = 9;</code>
      */
     @java.lang.Override
 
-    public emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getOldDiceMapOrDefault(
+    public emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getJMNNIEOBKHAOrDefault(
         int key,
         emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType defaultValue) {
       
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetOldDiceMap().getMap();
+          internalGetJMNNIEOBKHA().getMap();
       return map.containsKey(key)
-             ? oldDiceMapValueConverter.doForward(map.get(key))
+             ? jMNNIEOBKHAValueConverter.doForward(map.get(key))
              : defaultValue;
     }
     /**
-     * <pre>
-     *PENJFODAGGI FHJPIJFMAPL snooguess snootodo swapperoo 2
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; old_dice_map = 11;</code>
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; JMNNIEOBKHA = 9;</code>
      */
     @java.lang.Override
 
-    public emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getOldDiceMapOrThrow(
+    public emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getJMNNIEOBKHAOrThrow(
         int key) {
       
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetOldDiceMap().getMap();
+          internalGetJMNNIEOBKHA().getMap();
       if (!map.containsKey(key)) {
         throw new java.lang.IllegalArgumentException();
       }
-      return oldDiceMapValueConverter.doForward(map.get(key));
+      return jMNNIEOBKHAValueConverter.doForward(map.get(key));
     }
     /**
-     * Use {@link #getOldDiceMapValueMap()} instead.
+     * Use {@link #getJMNNIEOBKHAValueMap()} instead.
      */
     @java.lang.Override
     @java.lang.Deprecated
     public java.util.Map<java.lang.Integer, java.lang.Integer>
-    getOldDiceMapValue() {
-      return getOldDiceMapValueMap();
+    getJMNNIEOBKHAValue() {
+      return getJMNNIEOBKHAValueMap();
     }
     /**
-     * <pre>
-     *PENJFODAGGI FHJPIJFMAPL snooguess snootodo swapperoo 2
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; old_dice_map = 11;</code>
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; JMNNIEOBKHA = 9;</code>
      */
     @java.lang.Override
 
     public java.util.Map<java.lang.Integer, java.lang.Integer>
-    getOldDiceMapValueMap() {
-      return internalGetOldDiceMap().getMap();
+    getJMNNIEOBKHAValueMap() {
+      return internalGetJMNNIEOBKHA().getMap();
     }
     /**
-     * <pre>
-     *PENJFODAGGI FHJPIJFMAPL snooguess snootodo swapperoo 2
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; old_dice_map = 11;</code>
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; JMNNIEOBKHA = 9;</code>
      */
     @java.lang.Override
 
-    public int getOldDiceMapValueOrDefault(
+    public int getJMNNIEOBKHAValueOrDefault(
         int key,
         int defaultValue) {
       
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetOldDiceMap().getMap();
+          internalGetJMNNIEOBKHA().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <pre>
-     *PENJFODAGGI FHJPIJFMAPL snooguess snootodo swapperoo 2
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; old_dice_map = 11;</code>
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; JMNNIEOBKHA = 9;</code>
      */
     @java.lang.Override
 
-    public int getOldDiceMapValueOrThrow(
+    public int getJMNNIEOBKHAValueOrThrow(
         int key) {
       
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetOldDiceMap().getMap();
+          internalGetJMNNIEOBKHA().getMap();
       if (!map.containsKey(key)) {
         throw new java.lang.IllegalArgumentException();
       }
       return map.get(key);
+    }
+
+    public static final int REASON_FIELD_NUMBER = 7;
+    private int reason_;
+    /**
+     * <code>.MNDCMMKBIBP reason = 7;</code>
+     * @return The enum numeric value on the wire for reason.
+     */
+    @java.lang.Override public int getReasonValue() {
+      return reason_;
+    }
+    /**
+     * <code>.MNDCMMKBIBP reason = 7;</code>
+     * @return The reason.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.MNDCMMKBIBPOuterClass.MNDCMMKBIBP getReason() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.MNDCMMKBIBPOuterClass.MNDCMMKBIBP result = emu.grasscutter.net.proto.MNDCMMKBIBPOuterClass.MNDCMMKBIBP.valueOf(reason_);
+      return result == null ? emu.grasscutter.net.proto.MNDCMMKBIBPOuterClass.MNDCMMKBIBP.UNRECOGNIZED : result;
+    }
+
+    public static final int AEDGLBEONFO_FIELD_NUMBER = 14;
+    private static final class AEDGLBEONFODefaultEntryHolder {
+      static final com.google.protobuf.MapEntry<
+          java.lang.Integer, java.lang.Integer> defaultEntry =
+              com.google.protobuf.MapEntry
+              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
+                  emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.internal_static_GCGMsgAddDice_AEDGLBEONFOEntry_descriptor, 
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0,
+                  com.google.protobuf.WireFormat.FieldType.ENUM,
+                  emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType.GCG_DICE_SIDE_INVALID.getNumber());
+    }
+    private com.google.protobuf.MapField<
+        java.lang.Integer, java.lang.Integer> aEDGLBEONFO_;
+    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+    internalGetAEDGLBEONFO() {
+      if (aEDGLBEONFO_ == null) {
+        return com.google.protobuf.MapField.emptyMapField(
+            AEDGLBEONFODefaultEntryHolder.defaultEntry);
+      }
+      return aEDGLBEONFO_;
+    }
+    private static final
+    com.google.protobuf.Internal.MapAdapter.Converter<
+        java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType> aEDGLBEONFOValueConverter =
+            com.google.protobuf.Internal.MapAdapter.newEnumConverter(
+                emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType.internalGetValueMap(),
+                emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType.UNRECOGNIZED);
+    private static final java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
+    internalGetAdaptedAEDGLBEONFOMap(
+        java.util.Map<java.lang.Integer, java.lang.Integer> map) {
+      return new com.google.protobuf.Internal.MapAdapter<
+          java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType, java.lang.Integer>(
+              map, aEDGLBEONFOValueConverter);
+    }
+
+    public int getAEDGLBEONFOCount() {
+      return internalGetAEDGLBEONFO().getMap().size();
+    }
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; AEDGLBEONFO = 14;</code>
+     */
+
+    @java.lang.Override
+    public boolean containsAEDGLBEONFO(
+        int key) {
+      
+      return internalGetAEDGLBEONFO().getMap().containsKey(key);
+    }
+    /**
+     * Use {@link #getAEDGLBEONFOMap()} instead.
+     */
+    @java.lang.Override
+    @java.lang.Deprecated
+    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
+    getAEDGLBEONFO() {
+      return getAEDGLBEONFOMap();
+    }
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; AEDGLBEONFO = 14;</code>
+     */
+    @java.lang.Override
+
+    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
+    getAEDGLBEONFOMap() {
+      return internalGetAdaptedAEDGLBEONFOMap(
+          internalGetAEDGLBEONFO().getMap());}
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; AEDGLBEONFO = 14;</code>
+     */
+    @java.lang.Override
+
+    public emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getAEDGLBEONFOOrDefault(
+        int key,
+        emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType defaultValue) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetAEDGLBEONFO().getMap();
+      return map.containsKey(key)
+             ? aEDGLBEONFOValueConverter.doForward(map.get(key))
+             : defaultValue;
+    }
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; AEDGLBEONFO = 14;</code>
+     */
+    @java.lang.Override
+
+    public emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getAEDGLBEONFOOrThrow(
+        int key) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetAEDGLBEONFO().getMap();
+      if (!map.containsKey(key)) {
+        throw new java.lang.IllegalArgumentException();
+      }
+      return aEDGLBEONFOValueConverter.doForward(map.get(key));
+    }
+    /**
+     * Use {@link #getAEDGLBEONFOValueMap()} instead.
+     */
+    @java.lang.Override
+    @java.lang.Deprecated
+    public java.util.Map<java.lang.Integer, java.lang.Integer>
+    getAEDGLBEONFOValue() {
+      return getAEDGLBEONFOValueMap();
+    }
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; AEDGLBEONFO = 14;</code>
+     */
+    @java.lang.Override
+
+    public java.util.Map<java.lang.Integer, java.lang.Integer>
+    getAEDGLBEONFOValueMap() {
+      return internalGetAEDGLBEONFO().getMap();
+    }
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; AEDGLBEONFO = 14;</code>
+     */
+    @java.lang.Override
+
+    public int getAEDGLBEONFOValueOrDefault(
+        int key,
+        int defaultValue) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetAEDGLBEONFO().getMap();
+      return map.containsKey(key) ? map.get(key) : defaultValue;
+    }
+    /**
+     * <code>map&lt;uint32, .GCGDiceSideType&gt; AEDGLBEONFO = 14;</code>
+     */
+    @java.lang.Override
+
+    public int getAEDGLBEONFOValueOrThrow(
+        int key) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetAEDGLBEONFO().getMap();
+      if (!map.containsKey(key)) {
+        throw new java.lang.IllegalArgumentException();
+      }
+      return map.get(key);
+    }
+
+    public static final int CHANGE_COUNT_FIELD_NUMBER = 10;
+    private int changeCount_;
+    /**
+     * <code>int32 change_count = 10;</code>
+     * @return The changeCount.
+     */
+    @java.lang.Override
+    public int getChangeCount() {
+      return changeCount_;
     }
 
     public static final int CONTROLLER_ID_FIELD_NUMBER = 5;
@@ -537,208 +619,6 @@ public final class GCGMsgAddDiceOuterClass {
     @java.lang.Override
     public int getControllerId() {
       return controllerId_;
-    }
-
-    public static final int REASON_FIELD_NUMBER = 1;
-    private int reason_;
-    /**
-     * <code>.GCGReason reason = 1;</code>
-     * @return The enum numeric value on the wire for reason.
-     */
-    @java.lang.Override public int getReasonValue() {
-      return reason_;
-    }
-    /**
-     * <code>.GCGReason reason = 1;</code>
-     * @return The reason.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason getReason() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason result = emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason.valueOf(reason_);
-      return result == null ? emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason.UNRECOGNIZED : result;
-    }
-
-    public static final int CHANGE_COUNT_FIELD_NUMBER = 14;
-    private int changeCount_;
-    /**
-     * <code>int32 change_count = 14;</code>
-     * @return The changeCount.
-     */
-    @java.lang.Override
-    public int getChangeCount() {
-      return changeCount_;
-    }
-
-    public static final int NEW_DICE_MAP_FIELD_NUMBER = 8;
-    private static final class NewDiceMapDefaultEntryHolder {
-      static final com.google.protobuf.MapEntry<
-          java.lang.Integer, java.lang.Integer> defaultEntry =
-              com.google.protobuf.MapEntry
-              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.internal_static_GCGMsgAddDice_NewDiceMapEntry_descriptor, 
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0,
-                  com.google.protobuf.WireFormat.FieldType.ENUM,
-                  emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType.GCG_DICE_SIDE_TYPE_INVALID.getNumber());
-    }
-    private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Integer> newDiceMap_;
-    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-    internalGetNewDiceMap() {
-      if (newDiceMap_ == null) {
-        return com.google.protobuf.MapField.emptyMapField(
-            NewDiceMapDefaultEntryHolder.defaultEntry);
-      }
-      return newDiceMap_;
-    }
-    private static final
-    com.google.protobuf.Internal.MapAdapter.Converter<
-        java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType> newDiceMapValueConverter =
-            com.google.protobuf.Internal.MapAdapter.newEnumConverter(
-                emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType.internalGetValueMap(),
-                emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType.UNRECOGNIZED);
-    private static final java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
-    internalGetAdaptedNewDiceMapMap(
-        java.util.Map<java.lang.Integer, java.lang.Integer> map) {
-      return new com.google.protobuf.Internal.MapAdapter<
-          java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType, java.lang.Integer>(
-              map, newDiceMapValueConverter);
-    }
-
-    public int getNewDiceMapCount() {
-      return internalGetNewDiceMap().getMap().size();
-    }
-    /**
-     * <pre>
-     *PENJFODAGGI PNELDJLCNOP snooguess snootodo swapperoo 2
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; new_dice_map = 8;</code>
-     */
-
-    @java.lang.Override
-    public boolean containsNewDiceMap(
-        int key) {
-      
-      return internalGetNewDiceMap().getMap().containsKey(key);
-    }
-    /**
-     * Use {@link #getNewDiceMapMap()} instead.
-     */
-    @java.lang.Override
-    @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
-    getNewDiceMap() {
-      return getNewDiceMapMap();
-    }
-    /**
-     * <pre>
-     *PENJFODAGGI PNELDJLCNOP snooguess snootodo swapperoo 2
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; new_dice_map = 8;</code>
-     */
-    @java.lang.Override
-
-    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
-    getNewDiceMapMap() {
-      return internalGetAdaptedNewDiceMapMap(
-          internalGetNewDiceMap().getMap());}
-    /**
-     * <pre>
-     *PENJFODAGGI PNELDJLCNOP snooguess snootodo swapperoo 2
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; new_dice_map = 8;</code>
-     */
-    @java.lang.Override
-
-    public emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getNewDiceMapOrDefault(
-        int key,
-        emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType defaultValue) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetNewDiceMap().getMap();
-      return map.containsKey(key)
-             ? newDiceMapValueConverter.doForward(map.get(key))
-             : defaultValue;
-    }
-    /**
-     * <pre>
-     *PENJFODAGGI PNELDJLCNOP snooguess snootodo swapperoo 2
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; new_dice_map = 8;</code>
-     */
-    @java.lang.Override
-
-    public emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getNewDiceMapOrThrow(
-        int key) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetNewDiceMap().getMap();
-      if (!map.containsKey(key)) {
-        throw new java.lang.IllegalArgumentException();
-      }
-      return newDiceMapValueConverter.doForward(map.get(key));
-    }
-    /**
-     * Use {@link #getNewDiceMapValueMap()} instead.
-     */
-    @java.lang.Override
-    @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, java.lang.Integer>
-    getNewDiceMapValue() {
-      return getNewDiceMapValueMap();
-    }
-    /**
-     * <pre>
-     *PENJFODAGGI PNELDJLCNOP snooguess snootodo swapperoo 2
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; new_dice_map = 8;</code>
-     */
-    @java.lang.Override
-
-    public java.util.Map<java.lang.Integer, java.lang.Integer>
-    getNewDiceMapValueMap() {
-      return internalGetNewDiceMap().getMap();
-    }
-    /**
-     * <pre>
-     *PENJFODAGGI PNELDJLCNOP snooguess snootodo swapperoo 2
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; new_dice_map = 8;</code>
-     */
-    @java.lang.Override
-
-    public int getNewDiceMapValueOrDefault(
-        int key,
-        int defaultValue) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetNewDiceMap().getMap();
-      return map.containsKey(key) ? map.get(key) : defaultValue;
-    }
-    /**
-     * <pre>
-     *PENJFODAGGI PNELDJLCNOP snooguess snootodo swapperoo 2
-     * </pre>
-     *
-     * <code>map&lt;uint32, .GCGDiceSideType&gt; new_dice_map = 8;</code>
-     */
-    @java.lang.Override
-
-    public int getNewDiceMapValueOrThrow(
-        int key) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetNewDiceMap().getMap();
-      if (!map.containsKey(key)) {
-        throw new java.lang.IllegalArgumentException();
-      }
-      return map.get(key);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -755,27 +635,27 @@ public final class GCGMsgAddDiceOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (reason_ != emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason.GCG_REASON_DEFAULT.getNumber()) {
-        output.writeEnum(1, reason_);
-      }
       if (controllerId_ != 0) {
         output.writeUInt32(5, controllerId_);
       }
-      com.google.protobuf.GeneratedMessageV3
-        .serializeIntegerMapTo(
-          output,
-          internalGetNewDiceMap(),
-          NewDiceMapDefaultEntryHolder.defaultEntry,
-          8);
-      com.google.protobuf.GeneratedMessageV3
-        .serializeIntegerMapTo(
-          output,
-          internalGetOldDiceMap(),
-          OldDiceMapDefaultEntryHolder.defaultEntry,
-          11);
-      if (changeCount_ != 0) {
-        output.writeInt32(14, changeCount_);
+      if (reason_ != emu.grasscutter.net.proto.MNDCMMKBIBPOuterClass.MNDCMMKBIBP.MNDCMMKBIBP_Default.getNumber()) {
+        output.writeEnum(7, reason_);
       }
+      com.google.protobuf.GeneratedMessageV3
+        .serializeIntegerMapTo(
+          output,
+          internalGetJMNNIEOBKHA(),
+          JMNNIEOBKHADefaultEntryHolder.defaultEntry,
+          9);
+      if (changeCount_ != 0) {
+        output.writeInt32(10, changeCount_);
+      }
+      com.google.protobuf.GeneratedMessageV3
+        .serializeIntegerMapTo(
+          output,
+          internalGetAEDGLBEONFO(),
+          AEDGLBEONFODefaultEntryHolder.defaultEntry,
+          14);
       unknownFields.writeTo(output);
     }
 
@@ -785,37 +665,37 @@ public final class GCGMsgAddDiceOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (reason_ != emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason.GCG_REASON_DEFAULT.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(1, reason_);
-      }
       if (controllerId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(5, controllerId_);
       }
-      for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetNewDiceMap().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        newDiceMap__ = NewDiceMapDefaultEntryHolder.defaultEntry.newBuilderForType()
-            .setKey(entry.getKey())
-            .setValue(entry.getValue())
-            .build();
+      if (reason_ != emu.grasscutter.net.proto.MNDCMMKBIBPOuterClass.MNDCMMKBIBP.MNDCMMKBIBP_Default.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(8, newDiceMap__);
+          .computeEnumSize(7, reason_);
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetOldDiceMap().getMap().entrySet()) {
+           : internalGetJMNNIEOBKHA().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        oldDiceMap__ = OldDiceMapDefaultEntryHolder.defaultEntry.newBuilderForType()
+        jMNNIEOBKHA__ = JMNNIEOBKHADefaultEntryHolder.defaultEntry.newBuilderForType()
             .setKey(entry.getKey())
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(11, oldDiceMap__);
+            .computeMessageSize(9, jMNNIEOBKHA__);
       }
       if (changeCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(14, changeCount_);
+          .computeInt32Size(10, changeCount_);
+      }
+      for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
+           : internalGetAEDGLBEONFO().getMap().entrySet()) {
+        com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+        aEDGLBEONFO__ = AEDGLBEONFODefaultEntryHolder.defaultEntry.newBuilderForType()
+            .setKey(entry.getKey())
+            .setValue(entry.getValue())
+            .build();
+        size += com.google.protobuf.CodedOutputStream
+            .computeMessageSize(14, aEDGLBEONFO__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -832,15 +712,15 @@ public final class GCGMsgAddDiceOuterClass {
       }
       emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice other = (emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice) obj;
 
-      if (!internalGetOldDiceMap().equals(
-          other.internalGetOldDiceMap())) return false;
-      if (getControllerId()
-          != other.getControllerId()) return false;
+      if (!internalGetJMNNIEOBKHA().equals(
+          other.internalGetJMNNIEOBKHA())) return false;
       if (reason_ != other.reason_) return false;
+      if (!internalGetAEDGLBEONFO().equals(
+          other.internalGetAEDGLBEONFO())) return false;
       if (getChangeCount()
           != other.getChangeCount()) return false;
-      if (!internalGetNewDiceMap().equals(
-          other.internalGetNewDiceMap())) return false;
+      if (getControllerId()
+          != other.getControllerId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -852,20 +732,20 @@ public final class GCGMsgAddDiceOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (!internalGetOldDiceMap().getMap().isEmpty()) {
-        hash = (37 * hash) + OLD_DICE_MAP_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetOldDiceMap().hashCode();
+      if (!internalGetJMNNIEOBKHA().getMap().isEmpty()) {
+        hash = (37 * hash) + JMNNIEOBKHA_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetJMNNIEOBKHA().hashCode();
       }
-      hash = (37 * hash) + CONTROLLER_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getControllerId();
       hash = (37 * hash) + REASON_FIELD_NUMBER;
       hash = (53 * hash) + reason_;
+      if (!internalGetAEDGLBEONFO().getMap().isEmpty()) {
+        hash = (37 * hash) + AEDGLBEONFO_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetAEDGLBEONFO().hashCode();
+      }
       hash = (37 * hash) + CHANGE_COUNT_FIELD_NUMBER;
       hash = (53 * hash) + getChangeCount();
-      if (!internalGetNewDiceMap().getMap().isEmpty()) {
-        hash = (37 * hash) + NEW_DICE_MAP_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetNewDiceMap().hashCode();
-      }
+      hash = (37 * hash) + CONTROLLER_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getControllerId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -963,7 +843,7 @@ public final class GCGMsgAddDiceOuterClass {
     }
     /**
      * <pre>
-     * Name: JJPBDGJNPOL
+     * Obf: COHENDMNJKA
      * </pre>
      *
      * Protobuf type {@code GCGMsgAddDice}
@@ -981,10 +861,10 @@ public final class GCGMsgAddDiceOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 11:
-            return internalGetOldDiceMap();
-          case 8:
-            return internalGetNewDiceMap();
+          case 9:
+            return internalGetJMNNIEOBKHA();
+          case 14:
+            return internalGetAEDGLBEONFO();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -994,10 +874,10 @@ public final class GCGMsgAddDiceOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 11:
-            return internalGetMutableOldDiceMap();
-          case 8:
-            return internalGetMutableNewDiceMap();
+          case 9:
+            return internalGetMutableJMNNIEOBKHA();
+          case 14:
+            return internalGetMutableAEDGLBEONFO();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -1029,14 +909,14 @@ public final class GCGMsgAddDiceOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        internalGetMutableOldDiceMap().clear();
-        controllerId_ = 0;
-
+        internalGetMutableJMNNIEOBKHA().clear();
         reason_ = 0;
 
+        internalGetMutableAEDGLBEONFO().clear();
         changeCount_ = 0;
 
-        internalGetMutableNewDiceMap().clear();
+        controllerId_ = 0;
+
         return this;
       }
 
@@ -1064,13 +944,13 @@ public final class GCGMsgAddDiceOuterClass {
       public emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice buildPartial() {
         emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice result = new emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice(this);
         int from_bitField0_ = bitField0_;
-        result.oldDiceMap_ = internalGetOldDiceMap();
-        result.oldDiceMap_.makeImmutable();
-        result.controllerId_ = controllerId_;
+        result.jMNNIEOBKHA_ = internalGetJMNNIEOBKHA();
+        result.jMNNIEOBKHA_.makeImmutable();
         result.reason_ = reason_;
+        result.aEDGLBEONFO_ = internalGetAEDGLBEONFO();
+        result.aEDGLBEONFO_.makeImmutable();
         result.changeCount_ = changeCount_;
-        result.newDiceMap_ = internalGetNewDiceMap();
-        result.newDiceMap_.makeImmutable();
+        result.controllerId_ = controllerId_;
         onBuilt();
         return result;
       }
@@ -1119,19 +999,19 @@ public final class GCGMsgAddDiceOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice other) {
         if (other == emu.grasscutter.net.proto.GCGMsgAddDiceOuterClass.GCGMsgAddDice.getDefaultInstance()) return this;
-        internalGetMutableOldDiceMap().mergeFrom(
-            other.internalGetOldDiceMap());
-        if (other.getControllerId() != 0) {
-          setControllerId(other.getControllerId());
-        }
+        internalGetMutableJMNNIEOBKHA().mergeFrom(
+            other.internalGetJMNNIEOBKHA());
         if (other.reason_ != 0) {
           setReasonValue(other.getReasonValue());
         }
+        internalGetMutableAEDGLBEONFO().mergeFrom(
+            other.internalGetAEDGLBEONFO());
         if (other.getChangeCount() != 0) {
           setChangeCount(other.getChangeCount());
         }
-        internalGetMutableNewDiceMap().mergeFrom(
-            other.internalGetNewDiceMap());
+        if (other.getControllerId() != 0) {
+          setControllerId(other.getControllerId());
+        }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -1163,181 +1043,149 @@ public final class GCGMsgAddDiceOuterClass {
       private int bitField0_;
 
       private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> oldDiceMap_;
+          java.lang.Integer, java.lang.Integer> jMNNIEOBKHA_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetOldDiceMap() {
-        if (oldDiceMap_ == null) {
+      internalGetJMNNIEOBKHA() {
+        if (jMNNIEOBKHA_ == null) {
           return com.google.protobuf.MapField.emptyMapField(
-              OldDiceMapDefaultEntryHolder.defaultEntry);
+              JMNNIEOBKHADefaultEntryHolder.defaultEntry);
         }
-        return oldDiceMap_;
+        return jMNNIEOBKHA_;
       }
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableOldDiceMap() {
+      internalGetMutableJMNNIEOBKHA() {
         onChanged();;
-        if (oldDiceMap_ == null) {
-          oldDiceMap_ = com.google.protobuf.MapField.newMapField(
-              OldDiceMapDefaultEntryHolder.defaultEntry);
+        if (jMNNIEOBKHA_ == null) {
+          jMNNIEOBKHA_ = com.google.protobuf.MapField.newMapField(
+              JMNNIEOBKHADefaultEntryHolder.defaultEntry);
         }
-        if (!oldDiceMap_.isMutable()) {
-          oldDiceMap_ = oldDiceMap_.copy();
+        if (!jMNNIEOBKHA_.isMutable()) {
+          jMNNIEOBKHA_ = jMNNIEOBKHA_.copy();
         }
-        return oldDiceMap_;
+        return jMNNIEOBKHA_;
       }
 
-      public int getOldDiceMapCount() {
-        return internalGetOldDiceMap().getMap().size();
+      public int getJMNNIEOBKHACount() {
+        return internalGetJMNNIEOBKHA().getMap().size();
       }
       /**
-       * <pre>
-       *PENJFODAGGI FHJPIJFMAPL snooguess snootodo swapperoo 2
-       * </pre>
-       *
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; old_dice_map = 11;</code>
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; JMNNIEOBKHA = 9;</code>
        */
 
       @java.lang.Override
-      public boolean containsOldDiceMap(
+      public boolean containsJMNNIEOBKHA(
           int key) {
         
-        return internalGetOldDiceMap().getMap().containsKey(key);
+        return internalGetJMNNIEOBKHA().getMap().containsKey(key);
       }
       /**
-       * Use {@link #getOldDiceMapMap()} instead.
+       * Use {@link #getJMNNIEOBKHAMap()} instead.
        */
       @java.lang.Override
       @java.lang.Deprecated
       public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
-      getOldDiceMap() {
-        return getOldDiceMapMap();
+      getJMNNIEOBKHA() {
+        return getJMNNIEOBKHAMap();
       }
       /**
-       * <pre>
-       *PENJFODAGGI FHJPIJFMAPL snooguess snootodo swapperoo 2
-       * </pre>
-       *
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; old_dice_map = 11;</code>
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; JMNNIEOBKHA = 9;</code>
        */
       @java.lang.Override
 
       public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
-      getOldDiceMapMap() {
-        return internalGetAdaptedOldDiceMapMap(
-            internalGetOldDiceMap().getMap());}
+      getJMNNIEOBKHAMap() {
+        return internalGetAdaptedJMNNIEOBKHAMap(
+            internalGetJMNNIEOBKHA().getMap());}
       /**
-       * <pre>
-       *PENJFODAGGI FHJPIJFMAPL snooguess snootodo swapperoo 2
-       * </pre>
-       *
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; old_dice_map = 11;</code>
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; JMNNIEOBKHA = 9;</code>
        */
       @java.lang.Override
 
-      public emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getOldDiceMapOrDefault(
+      public emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getJMNNIEOBKHAOrDefault(
           int key,
           emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType defaultValue) {
         
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetOldDiceMap().getMap();
+            internalGetJMNNIEOBKHA().getMap();
         return map.containsKey(key)
-               ? oldDiceMapValueConverter.doForward(map.get(key))
+               ? jMNNIEOBKHAValueConverter.doForward(map.get(key))
                : defaultValue;
       }
       /**
-       * <pre>
-       *PENJFODAGGI FHJPIJFMAPL snooguess snootodo swapperoo 2
-       * </pre>
-       *
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; old_dice_map = 11;</code>
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; JMNNIEOBKHA = 9;</code>
        */
       @java.lang.Override
 
-      public emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getOldDiceMapOrThrow(
+      public emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getJMNNIEOBKHAOrThrow(
           int key) {
         
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetOldDiceMap().getMap();
+            internalGetJMNNIEOBKHA().getMap();
         if (!map.containsKey(key)) {
           throw new java.lang.IllegalArgumentException();
         }
-        return oldDiceMapValueConverter.doForward(map.get(key));
+        return jMNNIEOBKHAValueConverter.doForward(map.get(key));
       }
       /**
-       * Use {@link #getOldDiceMapValueMap()} instead.
+       * Use {@link #getJMNNIEOBKHAValueMap()} instead.
        */
       @java.lang.Override
       @java.lang.Deprecated
       public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getOldDiceMapValue() {
-        return getOldDiceMapValueMap();
+      getJMNNIEOBKHAValue() {
+        return getJMNNIEOBKHAValueMap();
       }
       /**
-       * <pre>
-       *PENJFODAGGI FHJPIJFMAPL snooguess snootodo swapperoo 2
-       * </pre>
-       *
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; old_dice_map = 11;</code>
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; JMNNIEOBKHA = 9;</code>
        */
       @java.lang.Override
 
       public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getOldDiceMapValueMap() {
-        return internalGetOldDiceMap().getMap();
+      getJMNNIEOBKHAValueMap() {
+        return internalGetJMNNIEOBKHA().getMap();
       }
       /**
-       * <pre>
-       *PENJFODAGGI FHJPIJFMAPL snooguess snootodo swapperoo 2
-       * </pre>
-       *
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; old_dice_map = 11;</code>
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; JMNNIEOBKHA = 9;</code>
        */
       @java.lang.Override
 
-      public int getOldDiceMapValueOrDefault(
+      public int getJMNNIEOBKHAValueOrDefault(
           int key,
           int defaultValue) {
         
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetOldDiceMap().getMap();
+            internalGetJMNNIEOBKHA().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <pre>
-       *PENJFODAGGI FHJPIJFMAPL snooguess snootodo swapperoo 2
-       * </pre>
-       *
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; old_dice_map = 11;</code>
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; JMNNIEOBKHA = 9;</code>
        */
       @java.lang.Override
 
-      public int getOldDiceMapValueOrThrow(
+      public int getJMNNIEOBKHAValueOrThrow(
           int key) {
         
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetOldDiceMap().getMap();
+            internalGetJMNNIEOBKHA().getMap();
         if (!map.containsKey(key)) {
           throw new java.lang.IllegalArgumentException();
         }
         return map.get(key);
       }
 
-      public Builder clearOldDiceMap() {
-        internalGetMutableOldDiceMap().getMutableMap()
+      public Builder clearJMNNIEOBKHA() {
+        internalGetMutableJMNNIEOBKHA().getMutableMap()
             .clear();
         return this;
       }
       /**
-       * <pre>
-       *PENJFODAGGI FHJPIJFMAPL snooguess snootodo swapperoo 2
-       * </pre>
-       *
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; old_dice_map = 11;</code>
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; JMNNIEOBKHA = 9;</code>
        */
 
-      public Builder removeOldDiceMap(
+      public Builder removeJMNNIEOBKHA(
           int key) {
         
-        internalGetMutableOldDiceMap().getMutableMap()
+        internalGetMutableJMNNIEOBKHA().getMutableMap()
             .remove(key);
         return this;
       }
@@ -1346,37 +1194,29 @@ public final class GCGMsgAddDiceOuterClass {
        */
       @java.lang.Deprecated
       public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
-      getMutableOldDiceMap() {
-        return internalGetAdaptedOldDiceMapMap(
-             internalGetMutableOldDiceMap().getMutableMap());
+      getMutableJMNNIEOBKHA() {
+        return internalGetAdaptedJMNNIEOBKHAMap(
+             internalGetMutableJMNNIEOBKHA().getMutableMap());
       }
       /**
-       * <pre>
-       *PENJFODAGGI FHJPIJFMAPL snooguess snootodo swapperoo 2
-       * </pre>
-       *
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; old_dice_map = 11;</code>
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; JMNNIEOBKHA = 9;</code>
        */
-      public Builder putOldDiceMap(
+      public Builder putJMNNIEOBKHA(
           int key,
           emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType value) {
         
         if (value == null) { throw new java.lang.NullPointerException(); }
-        internalGetMutableOldDiceMap().getMutableMap()
-            .put(key, oldDiceMapValueConverter.doBackward(value));
+        internalGetMutableJMNNIEOBKHA().getMutableMap()
+            .put(key, jMNNIEOBKHAValueConverter.doBackward(value));
         return this;
       }
       /**
-       * <pre>
-       *PENJFODAGGI FHJPIJFMAPL snooguess snootodo swapperoo 2
-       * </pre>
-       *
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; old_dice_map = 11;</code>
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; JMNNIEOBKHA = 9;</code>
        */
-      public Builder putAllOldDiceMap(
+      public Builder putAllJMNNIEOBKHA(
           java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType> values) {
-        internalGetAdaptedOldDiceMapMap(
-            internalGetMutableOldDiceMap().getMutableMap())
+        internalGetAdaptedJMNNIEOBKHAMap(
+            internalGetMutableJMNNIEOBKHA().getMutableMap())
                 .putAll(values);
         return this;
       }
@@ -1385,35 +1225,319 @@ public final class GCGMsgAddDiceOuterClass {
        */
       @java.lang.Deprecated
       public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableOldDiceMapValue() {
-        return internalGetMutableOldDiceMap().getMutableMap();
+      getMutableJMNNIEOBKHAValue() {
+        return internalGetMutableJMNNIEOBKHA().getMutableMap();
       }
       /**
-       * <pre>
-       *PENJFODAGGI FHJPIJFMAPL snooguess snootodo swapperoo 2
-       * </pre>
-       *
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; old_dice_map = 11;</code>
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; JMNNIEOBKHA = 9;</code>
        */
-      public Builder putOldDiceMapValue(
+      public Builder putJMNNIEOBKHAValue(
           int key,
           int value) {
         
-        internalGetMutableOldDiceMap().getMutableMap()
+        internalGetMutableJMNNIEOBKHA().getMutableMap()
             .put(key, value);
         return this;
       }
       /**
-       * <pre>
-       *PENJFODAGGI FHJPIJFMAPL snooguess snootodo swapperoo 2
-       * </pre>
-       *
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; old_dice_map = 11;</code>
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; JMNNIEOBKHA = 9;</code>
        */
-      public Builder putAllOldDiceMapValue(
+      public Builder putAllJMNNIEOBKHAValue(
           java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableOldDiceMap().getMutableMap()
+        internalGetMutableJMNNIEOBKHA().getMutableMap()
             .putAll(values);
+        return this;
+      }
+
+      private int reason_ = 0;
+      /**
+       * <code>.MNDCMMKBIBP reason = 7;</code>
+       * @return The enum numeric value on the wire for reason.
+       */
+      @java.lang.Override public int getReasonValue() {
+        return reason_;
+      }
+      /**
+       * <code>.MNDCMMKBIBP reason = 7;</code>
+       * @param value The enum numeric value on the wire for reason to set.
+       * @return This builder for chaining.
+       */
+      public Builder setReasonValue(int value) {
+        
+        reason_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.MNDCMMKBIBP reason = 7;</code>
+       * @return The reason.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.MNDCMMKBIBPOuterClass.MNDCMMKBIBP getReason() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.MNDCMMKBIBPOuterClass.MNDCMMKBIBP result = emu.grasscutter.net.proto.MNDCMMKBIBPOuterClass.MNDCMMKBIBP.valueOf(reason_);
+        return result == null ? emu.grasscutter.net.proto.MNDCMMKBIBPOuterClass.MNDCMMKBIBP.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.MNDCMMKBIBP reason = 7;</code>
+       * @param value The reason to set.
+       * @return This builder for chaining.
+       */
+      public Builder setReason(emu.grasscutter.net.proto.MNDCMMKBIBPOuterClass.MNDCMMKBIBP value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        reason_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.MNDCMMKBIBP reason = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearReason() {
+        
+        reason_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.MapField<
+          java.lang.Integer, java.lang.Integer> aEDGLBEONFO_;
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetAEDGLBEONFO() {
+        if (aEDGLBEONFO_ == null) {
+          return com.google.protobuf.MapField.emptyMapField(
+              AEDGLBEONFODefaultEntryHolder.defaultEntry);
+        }
+        return aEDGLBEONFO_;
+      }
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetMutableAEDGLBEONFO() {
+        onChanged();;
+        if (aEDGLBEONFO_ == null) {
+          aEDGLBEONFO_ = com.google.protobuf.MapField.newMapField(
+              AEDGLBEONFODefaultEntryHolder.defaultEntry);
+        }
+        if (!aEDGLBEONFO_.isMutable()) {
+          aEDGLBEONFO_ = aEDGLBEONFO_.copy();
+        }
+        return aEDGLBEONFO_;
+      }
+
+      public int getAEDGLBEONFOCount() {
+        return internalGetAEDGLBEONFO().getMap().size();
+      }
+      /**
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; AEDGLBEONFO = 14;</code>
+       */
+
+      @java.lang.Override
+      public boolean containsAEDGLBEONFO(
+          int key) {
+        
+        return internalGetAEDGLBEONFO().getMap().containsKey(key);
+      }
+      /**
+       * Use {@link #getAEDGLBEONFOMap()} instead.
+       */
+      @java.lang.Override
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
+      getAEDGLBEONFO() {
+        return getAEDGLBEONFOMap();
+      }
+      /**
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; AEDGLBEONFO = 14;</code>
+       */
+      @java.lang.Override
+
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
+      getAEDGLBEONFOMap() {
+        return internalGetAdaptedAEDGLBEONFOMap(
+            internalGetAEDGLBEONFO().getMap());}
+      /**
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; AEDGLBEONFO = 14;</code>
+       */
+      @java.lang.Override
+
+      public emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getAEDGLBEONFOOrDefault(
+          int key,
+          emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType defaultValue) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetAEDGLBEONFO().getMap();
+        return map.containsKey(key)
+               ? aEDGLBEONFOValueConverter.doForward(map.get(key))
+               : defaultValue;
+      }
+      /**
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; AEDGLBEONFO = 14;</code>
+       */
+      @java.lang.Override
+
+      public emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getAEDGLBEONFOOrThrow(
+          int key) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetAEDGLBEONFO().getMap();
+        if (!map.containsKey(key)) {
+          throw new java.lang.IllegalArgumentException();
+        }
+        return aEDGLBEONFOValueConverter.doForward(map.get(key));
+      }
+      /**
+       * Use {@link #getAEDGLBEONFOValueMap()} instead.
+       */
+      @java.lang.Override
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer>
+      getAEDGLBEONFOValue() {
+        return getAEDGLBEONFOValueMap();
+      }
+      /**
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; AEDGLBEONFO = 14;</code>
+       */
+      @java.lang.Override
+
+      public java.util.Map<java.lang.Integer, java.lang.Integer>
+      getAEDGLBEONFOValueMap() {
+        return internalGetAEDGLBEONFO().getMap();
+      }
+      /**
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; AEDGLBEONFO = 14;</code>
+       */
+      @java.lang.Override
+
+      public int getAEDGLBEONFOValueOrDefault(
+          int key,
+          int defaultValue) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetAEDGLBEONFO().getMap();
+        return map.containsKey(key) ? map.get(key) : defaultValue;
+      }
+      /**
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; AEDGLBEONFO = 14;</code>
+       */
+      @java.lang.Override
+
+      public int getAEDGLBEONFOValueOrThrow(
+          int key) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetAEDGLBEONFO().getMap();
+        if (!map.containsKey(key)) {
+          throw new java.lang.IllegalArgumentException();
+        }
+        return map.get(key);
+      }
+
+      public Builder clearAEDGLBEONFO() {
+        internalGetMutableAEDGLBEONFO().getMutableMap()
+            .clear();
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; AEDGLBEONFO = 14;</code>
+       */
+
+      public Builder removeAEDGLBEONFO(
+          int key) {
+        
+        internalGetMutableAEDGLBEONFO().getMutableMap()
+            .remove(key);
+        return this;
+      }
+      /**
+       * Use alternate mutation accessors instead.
+       */
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
+      getMutableAEDGLBEONFO() {
+        return internalGetAdaptedAEDGLBEONFOMap(
+             internalGetMutableAEDGLBEONFO().getMutableMap());
+      }
+      /**
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; AEDGLBEONFO = 14;</code>
+       */
+      public Builder putAEDGLBEONFO(
+          int key,
+          emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType value) {
+        
+        if (value == null) { throw new java.lang.NullPointerException(); }
+        internalGetMutableAEDGLBEONFO().getMutableMap()
+            .put(key, aEDGLBEONFOValueConverter.doBackward(value));
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; AEDGLBEONFO = 14;</code>
+       */
+      public Builder putAllAEDGLBEONFO(
+          java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType> values) {
+        internalGetAdaptedAEDGLBEONFOMap(
+            internalGetMutableAEDGLBEONFO().getMutableMap())
+                .putAll(values);
+        return this;
+      }
+      /**
+       * Use alternate mutation accessors instead.
+       */
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer>
+      getMutableAEDGLBEONFOValue() {
+        return internalGetMutableAEDGLBEONFO().getMutableMap();
+      }
+      /**
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; AEDGLBEONFO = 14;</code>
+       */
+      public Builder putAEDGLBEONFOValue(
+          int key,
+          int value) {
+        
+        internalGetMutableAEDGLBEONFO().getMutableMap()
+            .put(key, value);
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, .GCGDiceSideType&gt; AEDGLBEONFO = 14;</code>
+       */
+      public Builder putAllAEDGLBEONFOValue(
+          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
+        internalGetMutableAEDGLBEONFO().getMutableMap()
+            .putAll(values);
+        return this;
+      }
+
+      private int changeCount_ ;
+      /**
+       * <code>int32 change_count = 10;</code>
+       * @return The changeCount.
+       */
+      @java.lang.Override
+      public int getChangeCount() {
+        return changeCount_;
+      }
+      /**
+       * <code>int32 change_count = 10;</code>
+       * @param value The changeCount to set.
+       * @return This builder for chaining.
+       */
+      public Builder setChangeCount(int value) {
+        
+        changeCount_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 change_count = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearChangeCount() {
+        
+        changeCount_ = 0;
+        onChanged();
         return this;
       }
 
@@ -1445,346 +1569,6 @@ public final class GCGMsgAddDiceOuterClass {
         
         controllerId_ = 0;
         onChanged();
-        return this;
-      }
-
-      private int reason_ = 0;
-      /**
-       * <code>.GCGReason reason = 1;</code>
-       * @return The enum numeric value on the wire for reason.
-       */
-      @java.lang.Override public int getReasonValue() {
-        return reason_;
-      }
-      /**
-       * <code>.GCGReason reason = 1;</code>
-       * @param value The enum numeric value on the wire for reason to set.
-       * @return This builder for chaining.
-       */
-      public Builder setReasonValue(int value) {
-        
-        reason_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.GCGReason reason = 1;</code>
-       * @return The reason.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason getReason() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason result = emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason.valueOf(reason_);
-        return result == null ? emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.GCGReason reason = 1;</code>
-       * @param value The reason to set.
-       * @return This builder for chaining.
-       */
-      public Builder setReason(emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        reason_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.GCGReason reason = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearReason() {
-        
-        reason_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int changeCount_ ;
-      /**
-       * <code>int32 change_count = 14;</code>
-       * @return The changeCount.
-       */
-      @java.lang.Override
-      public int getChangeCount() {
-        return changeCount_;
-      }
-      /**
-       * <code>int32 change_count = 14;</code>
-       * @param value The changeCount to set.
-       * @return This builder for chaining.
-       */
-      public Builder setChangeCount(int value) {
-        
-        changeCount_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 change_count = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearChangeCount() {
-        
-        changeCount_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> newDiceMap_;
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetNewDiceMap() {
-        if (newDiceMap_ == null) {
-          return com.google.protobuf.MapField.emptyMapField(
-              NewDiceMapDefaultEntryHolder.defaultEntry);
-        }
-        return newDiceMap_;
-      }
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableNewDiceMap() {
-        onChanged();;
-        if (newDiceMap_ == null) {
-          newDiceMap_ = com.google.protobuf.MapField.newMapField(
-              NewDiceMapDefaultEntryHolder.defaultEntry);
-        }
-        if (!newDiceMap_.isMutable()) {
-          newDiceMap_ = newDiceMap_.copy();
-        }
-        return newDiceMap_;
-      }
-
-      public int getNewDiceMapCount() {
-        return internalGetNewDiceMap().getMap().size();
-      }
-      /**
-       * <pre>
-       *PENJFODAGGI PNELDJLCNOP snooguess snootodo swapperoo 2
-       * </pre>
-       *
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; new_dice_map = 8;</code>
-       */
-
-      @java.lang.Override
-      public boolean containsNewDiceMap(
-          int key) {
-        
-        return internalGetNewDiceMap().getMap().containsKey(key);
-      }
-      /**
-       * Use {@link #getNewDiceMapMap()} instead.
-       */
-      @java.lang.Override
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
-      getNewDiceMap() {
-        return getNewDiceMapMap();
-      }
-      /**
-       * <pre>
-       *PENJFODAGGI PNELDJLCNOP snooguess snootodo swapperoo 2
-       * </pre>
-       *
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; new_dice_map = 8;</code>
-       */
-      @java.lang.Override
-
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
-      getNewDiceMapMap() {
-        return internalGetAdaptedNewDiceMapMap(
-            internalGetNewDiceMap().getMap());}
-      /**
-       * <pre>
-       *PENJFODAGGI PNELDJLCNOP snooguess snootodo swapperoo 2
-       * </pre>
-       *
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; new_dice_map = 8;</code>
-       */
-      @java.lang.Override
-
-      public emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getNewDiceMapOrDefault(
-          int key,
-          emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType defaultValue) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetNewDiceMap().getMap();
-        return map.containsKey(key)
-               ? newDiceMapValueConverter.doForward(map.get(key))
-               : defaultValue;
-      }
-      /**
-       * <pre>
-       *PENJFODAGGI PNELDJLCNOP snooguess snootodo swapperoo 2
-       * </pre>
-       *
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; new_dice_map = 8;</code>
-       */
-      @java.lang.Override
-
-      public emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType getNewDiceMapOrThrow(
-          int key) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetNewDiceMap().getMap();
-        if (!map.containsKey(key)) {
-          throw new java.lang.IllegalArgumentException();
-        }
-        return newDiceMapValueConverter.doForward(map.get(key));
-      }
-      /**
-       * Use {@link #getNewDiceMapValueMap()} instead.
-       */
-      @java.lang.Override
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getNewDiceMapValue() {
-        return getNewDiceMapValueMap();
-      }
-      /**
-       * <pre>
-       *PENJFODAGGI PNELDJLCNOP snooguess snootodo swapperoo 2
-       * </pre>
-       *
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; new_dice_map = 8;</code>
-       */
-      @java.lang.Override
-
-      public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getNewDiceMapValueMap() {
-        return internalGetNewDiceMap().getMap();
-      }
-      /**
-       * <pre>
-       *PENJFODAGGI PNELDJLCNOP snooguess snootodo swapperoo 2
-       * </pre>
-       *
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; new_dice_map = 8;</code>
-       */
-      @java.lang.Override
-
-      public int getNewDiceMapValueOrDefault(
-          int key,
-          int defaultValue) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetNewDiceMap().getMap();
-        return map.containsKey(key) ? map.get(key) : defaultValue;
-      }
-      /**
-       * <pre>
-       *PENJFODAGGI PNELDJLCNOP snooguess snootodo swapperoo 2
-       * </pre>
-       *
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; new_dice_map = 8;</code>
-       */
-      @java.lang.Override
-
-      public int getNewDiceMapValueOrThrow(
-          int key) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetNewDiceMap().getMap();
-        if (!map.containsKey(key)) {
-          throw new java.lang.IllegalArgumentException();
-        }
-        return map.get(key);
-      }
-
-      public Builder clearNewDiceMap() {
-        internalGetMutableNewDiceMap().getMutableMap()
-            .clear();
-        return this;
-      }
-      /**
-       * <pre>
-       *PENJFODAGGI PNELDJLCNOP snooguess snootodo swapperoo 2
-       * </pre>
-       *
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; new_dice_map = 8;</code>
-       */
-
-      public Builder removeNewDiceMap(
-          int key) {
-        
-        internalGetMutableNewDiceMap().getMutableMap()
-            .remove(key);
-        return this;
-      }
-      /**
-       * Use alternate mutation accessors instead.
-       */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType>
-      getMutableNewDiceMap() {
-        return internalGetAdaptedNewDiceMapMap(
-             internalGetMutableNewDiceMap().getMutableMap());
-      }
-      /**
-       * <pre>
-       *PENJFODAGGI PNELDJLCNOP snooguess snootodo swapperoo 2
-       * </pre>
-       *
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; new_dice_map = 8;</code>
-       */
-      public Builder putNewDiceMap(
-          int key,
-          emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType value) {
-        
-        if (value == null) { throw new java.lang.NullPointerException(); }
-        internalGetMutableNewDiceMap().getMutableMap()
-            .put(key, newDiceMapValueConverter.doBackward(value));
-        return this;
-      }
-      /**
-       * <pre>
-       *PENJFODAGGI PNELDJLCNOP snooguess snootodo swapperoo 2
-       * </pre>
-       *
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; new_dice_map = 8;</code>
-       */
-      public Builder putAllNewDiceMap(
-          java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.GCGDiceSideType> values) {
-        internalGetAdaptedNewDiceMapMap(
-            internalGetMutableNewDiceMap().getMutableMap())
-                .putAll(values);
-        return this;
-      }
-      /**
-       * Use alternate mutation accessors instead.
-       */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableNewDiceMapValue() {
-        return internalGetMutableNewDiceMap().getMutableMap();
-      }
-      /**
-       * <pre>
-       *PENJFODAGGI PNELDJLCNOP snooguess snootodo swapperoo 2
-       * </pre>
-       *
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; new_dice_map = 8;</code>
-       */
-      public Builder putNewDiceMapValue(
-          int key,
-          int value) {
-        
-        internalGetMutableNewDiceMap().getMutableMap()
-            .put(key, value);
-        return this;
-      }
-      /**
-       * <pre>
-       *PENJFODAGGI PNELDJLCNOP snooguess snootodo swapperoo 2
-       * </pre>
-       *
-       * <code>map&lt;uint32, .GCGDiceSideType&gt; new_dice_map = 8;</code>
-       */
-      public Builder putAllNewDiceMapValue(
-          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableNewDiceMap().getMutableMap()
-            .putAll(values);
         return this;
       }
       @java.lang.Override
@@ -1846,15 +1630,15 @@ public final class GCGMsgAddDiceOuterClass {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_GCGMsgAddDice_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_GCGMsgAddDice_OldDiceMapEntry_descriptor;
+    internal_static_GCGMsgAddDice_JMNNIEOBKHAEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_GCGMsgAddDice_OldDiceMapEntry_fieldAccessorTable;
+      internal_static_GCGMsgAddDice_JMNNIEOBKHAEntry_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_GCGMsgAddDice_NewDiceMapEntry_descriptor;
+    internal_static_GCGMsgAddDice_AEDGLBEONFOEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_GCGMsgAddDice_NewDiceMapEntry_fieldAccessorTable;
+      internal_static_GCGMsgAddDice_AEDGLBEONFOEntry_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1864,44 +1648,45 @@ public final class GCGMsgAddDiceOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\023GCGMsgAddDice.proto\032\017GCGReason.proto\032\025" +
-      "GCGDiceSideType.proto\"\316\002\n\rGCGMsgAddDice\022" +
-      "4\n\014old_dice_map\030\013 \003(\0132\036.GCGMsgAddDice.Ol" +
-      "dDiceMapEntry\022\025\n\rcontroller_id\030\005 \001(\r\022\032\n\006" +
-      "reason\030\001 \001(\0162\n.GCGReason\022\024\n\014change_count" +
-      "\030\016 \001(\005\0224\n\014new_dice_map\030\010 \003(\0132\036.GCGMsgAdd" +
-      "Dice.NewDiceMapEntry\032C\n\017OldDiceMapEntry\022" +
-      "\013\n\003key\030\001 \001(\r\022\037\n\005value\030\002 \001(\0162\020.GCGDiceSid" +
-      "eType:\0028\001\032C\n\017NewDiceMapEntry\022\013\n\003key\030\001 \001(" +
-      "\r\022\037\n\005value\030\002 \001(\0162\020.GCGDiceSideType:\0028\001B\033" +
-      "\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\023GCGMsgAddDice.proto\032\025GCGDiceSideType.p" +
+      "roto\032\021MNDCMMKBIBP.proto\"\322\002\n\rGCGMsgAddDic" +
+      "e\0224\n\013JMNNIEOBKHA\030\t \003(\0132\037.GCGMsgAddDice.J" +
+      "MNNIEOBKHAEntry\022\034\n\006reason\030\007 \001(\0162\014.MNDCMM" +
+      "KBIBP\0224\n\013AEDGLBEONFO\030\016 \003(\0132\037.GCGMsgAddDi" +
+      "ce.AEDGLBEONFOEntry\022\024\n\014change_count\030\n \001(" +
+      "\005\022\025\n\rcontroller_id\030\005 \001(\r\032D\n\020JMNNIEOBKHAE" +
+      "ntry\022\013\n\003key\030\001 \001(\r\022\037\n\005value\030\002 \001(\0162\020.GCGDi" +
+      "ceSideType:\0028\001\032D\n\020AEDGLBEONFOEntry\022\013\n\003ke" +
+      "y\030\001 \001(\r\022\037\n\005value\030\002 \001(\0162\020.GCGDiceSideType" +
+      ":\0028\001B\033\n\031emu.grasscutter.net.protob\006proto" +
+      "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.GCGReasonOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.MNDCMMKBIBPOuterClass.getDescriptor(),
         });
     internal_static_GCGMsgAddDice_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_GCGMsgAddDice_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGMsgAddDice_descriptor,
-        new java.lang.String[] { "OldDiceMap", "ControllerId", "Reason", "ChangeCount", "NewDiceMap", });
-    internal_static_GCGMsgAddDice_OldDiceMapEntry_descriptor =
+        new java.lang.String[] { "JMNNIEOBKHA", "Reason", "AEDGLBEONFO", "ChangeCount", "ControllerId", });
+    internal_static_GCGMsgAddDice_JMNNIEOBKHAEntry_descriptor =
       internal_static_GCGMsgAddDice_descriptor.getNestedTypes().get(0);
-    internal_static_GCGMsgAddDice_OldDiceMapEntry_fieldAccessorTable = new
+    internal_static_GCGMsgAddDice_JMNNIEOBKHAEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_GCGMsgAddDice_OldDiceMapEntry_descriptor,
+        internal_static_GCGMsgAddDice_JMNNIEOBKHAEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
-    internal_static_GCGMsgAddDice_NewDiceMapEntry_descriptor =
+    internal_static_GCGMsgAddDice_AEDGLBEONFOEntry_descriptor =
       internal_static_GCGMsgAddDice_descriptor.getNestedTypes().get(1);
-    internal_static_GCGMsgAddDice_NewDiceMapEntry_fieldAccessorTable = new
+    internal_static_GCGMsgAddDice_AEDGLBEONFOEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_GCGMsgAddDice_NewDiceMapEntry_descriptor,
+        internal_static_GCGMsgAddDice_AEDGLBEONFOEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
-    emu.grasscutter.net.proto.GCGReasonOuterClass.getDescriptor();
     emu.grasscutter.net.proto.GCGDiceSideTypeOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.MNDCMMKBIBPOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -44,8 +44,8 @@ public final class AsterMidCampInfoNotifyOuterClass {
   }
   /**
    * <pre>
-   * Name: NJEGIIGFNNA
-   * CmdId: 2142
+   * CmdId: 2145
+   * Obf: JOHBIOHFHOI
    * </pre>
    *
    * Protobuf type {@code AsterMidCampInfoNotify}
@@ -337,8 +337,8 @@ public final class AsterMidCampInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: NJEGIIGFNNA
-     * CmdId: 2142
+     * CmdId: 2145
+     * Obf: JOHBIOHFHOI
      * </pre>
      *
      * Protobuf type {@code AsterMidCampInfoNotify}

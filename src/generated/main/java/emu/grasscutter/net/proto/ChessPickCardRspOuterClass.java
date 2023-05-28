@@ -19,27 +19,27 @@ public final class ChessPickCardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 card_id = 1;</code>
+     * <code>uint32 card_id = 9;</code>
      * @return The cardId.
      */
     int getCardId();
 
     /**
-     * <code>int32 retcode = 13;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>uint32 card_index = 2;</code>
+     * <code>uint32 card_index = 6;</code>
      * @return The cardIndex.
      */
     int getCardIndex();
+
+    /**
+     * <code>int32 retcode = 1;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
    * <pre>
-   * Name: NPBEEKBHPPE
-   * CmdId: 5398
+   * CmdId: 5319
+   * Obf: KLALPHGMNFB
    * </pre>
    *
    * Protobuf type {@code ChessPickCardRsp}
@@ -88,17 +88,17 @@ public final class ChessPickCardRspOuterClass {
               break;
             case 8: {
 
-              cardId_ = input.readUInt32();
+              retcode_ = input.readInt32();
               break;
             }
-            case 16: {
+            case 48: {
 
               cardIndex_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 72: {
 
-              retcode_ = input.readInt32();
+              cardId_ = input.readUInt32();
               break;
             }
             default: {
@@ -133,10 +133,10 @@ public final class ChessPickCardRspOuterClass {
               emu.grasscutter.net.proto.ChessPickCardRspOuterClass.ChessPickCardRsp.class, emu.grasscutter.net.proto.ChessPickCardRspOuterClass.ChessPickCardRsp.Builder.class);
     }
 
-    public static final int CARD_ID_FIELD_NUMBER = 1;
+    public static final int CARD_ID_FIELD_NUMBER = 9;
     private int cardId_;
     /**
-     * <code>uint32 card_id = 1;</code>
+     * <code>uint32 card_id = 9;</code>
      * @return The cardId.
      */
     @java.lang.Override
@@ -144,26 +144,26 @@ public final class ChessPickCardRspOuterClass {
       return cardId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 13;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 13;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int CARD_INDEX_FIELD_NUMBER = 2;
+    public static final int CARD_INDEX_FIELD_NUMBER = 6;
     private int cardIndex_;
     /**
-     * <code>uint32 card_index = 2;</code>
+     * <code>uint32 card_index = 6;</code>
      * @return The cardIndex.
      */
     @java.lang.Override
     public int getCardIndex() {
       return cardIndex_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 1;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 1;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -180,14 +180,14 @@ public final class ChessPickCardRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (cardId_ != 0) {
-        output.writeUInt32(1, cardId_);
+      if (retcode_ != 0) {
+        output.writeInt32(1, retcode_);
       }
       if (cardIndex_ != 0) {
-        output.writeUInt32(2, cardIndex_);
+        output.writeUInt32(6, cardIndex_);
       }
-      if (retcode_ != 0) {
-        output.writeInt32(13, retcode_);
+      if (cardId_ != 0) {
+        output.writeUInt32(9, cardId_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +198,17 @@ public final class ChessPickCardRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (cardId_ != 0) {
+      if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, cardId_);
+          .computeInt32Size(1, retcode_);
       }
       if (cardIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, cardIndex_);
+          .computeUInt32Size(6, cardIndex_);
       }
-      if (retcode_ != 0) {
+      if (cardId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(13, retcode_);
+          .computeUInt32Size(9, cardId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -227,10 +227,10 @@ public final class ChessPickCardRspOuterClass {
 
       if (getCardId()
           != other.getCardId()) return false;
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getCardIndex()
           != other.getCardIndex()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -244,10 +244,10 @@ public final class ChessPickCardRspOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CARD_ID_FIELD_NUMBER;
       hash = (53 * hash) + getCardId();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + CARD_INDEX_FIELD_NUMBER;
       hash = (53 * hash) + getCardIndex();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -345,8 +345,8 @@ public final class ChessPickCardRspOuterClass {
     }
     /**
      * <pre>
-     * Name: NPBEEKBHPPE
-     * CmdId: 5398
+     * CmdId: 5319
+     * Obf: KLALPHGMNFB
      * </pre>
      *
      * Protobuf type {@code ChessPickCardRsp}
@@ -388,9 +388,9 @@ public final class ChessPickCardRspOuterClass {
         super.clear();
         cardId_ = 0;
 
-        retcode_ = 0;
-
         cardIndex_ = 0;
+
+        retcode_ = 0;
 
         return this;
       }
@@ -419,8 +419,8 @@ public final class ChessPickCardRspOuterClass {
       public emu.grasscutter.net.proto.ChessPickCardRspOuterClass.ChessPickCardRsp buildPartial() {
         emu.grasscutter.net.proto.ChessPickCardRspOuterClass.ChessPickCardRsp result = new emu.grasscutter.net.proto.ChessPickCardRspOuterClass.ChessPickCardRsp(this);
         result.cardId_ = cardId_;
-        result.retcode_ = retcode_;
         result.cardIndex_ = cardIndex_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -472,11 +472,11 @@ public final class ChessPickCardRspOuterClass {
         if (other.getCardId() != 0) {
           setCardId(other.getCardId());
         }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getCardIndex() != 0) {
           setCardIndex(other.getCardIndex());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -509,7 +509,7 @@ public final class ChessPickCardRspOuterClass {
 
       private int cardId_ ;
       /**
-       * <code>uint32 card_id = 1;</code>
+       * <code>uint32 card_id = 9;</code>
        * @return The cardId.
        */
       @java.lang.Override
@@ -517,7 +517,7 @@ public final class ChessPickCardRspOuterClass {
         return cardId_;
       }
       /**
-       * <code>uint32 card_id = 1;</code>
+       * <code>uint32 card_id = 9;</code>
        * @param value The cardId to set.
        * @return This builder for chaining.
        */
@@ -528,7 +528,7 @@ public final class ChessPickCardRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 card_id = 1;</code>
+       * <code>uint32 card_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearCardId() {
@@ -538,40 +538,9 @@ public final class ChessPickCardRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 13;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 13;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int cardIndex_ ;
       /**
-       * <code>uint32 card_index = 2;</code>
+       * <code>uint32 card_index = 6;</code>
        * @return The cardIndex.
        */
       @java.lang.Override
@@ -579,7 +548,7 @@ public final class ChessPickCardRspOuterClass {
         return cardIndex_;
       }
       /**
-       * <code>uint32 card_index = 2;</code>
+       * <code>uint32 card_index = 6;</code>
        * @param value The cardIndex to set.
        * @return This builder for chaining.
        */
@@ -590,12 +559,43 @@ public final class ChessPickCardRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 card_index = 2;</code>
+       * <code>uint32 card_index = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearCardIndex() {
         
         cardIndex_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 1;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 1;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -667,8 +667,8 @@ public final class ChessPickCardRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026ChessPickCardRsp.proto\"H\n\020ChessPickCar" +
-      "dRsp\022\017\n\007card_id\030\001 \001(\r\022\017\n\007retcode\030\r \001(\005\022\022" +
-      "\n\ncard_index\030\002 \001(\rB\033\n\031emu.grasscutter.ne" +
+      "dRsp\022\017\n\007card_id\030\t \001(\r\022\022\n\ncard_index\030\006 \001(" +
+      "\r\022\017\n\007retcode\030\001 \001(\005B\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -680,7 +680,7 @@ public final class ChessPickCardRspOuterClass {
     internal_static_ChessPickCardRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ChessPickCardRsp_descriptor,
-        new java.lang.String[] { "CardId", "Retcode", "CardIndex", });
+        new java.lang.String[] { "CardId", "CardIndex", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

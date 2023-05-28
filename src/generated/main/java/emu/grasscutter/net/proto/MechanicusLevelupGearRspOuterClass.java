@@ -19,33 +19,33 @@ public final class MechanicusLevelupGearRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 mechanicus_id = 2;</code>
+     * <code>int32 retcode = 3;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
+
+    /**
+     * <code>uint32 mechanicus_id = 1;</code>
      * @return The mechanicusId.
      */
     int getMechanicusId();
 
     /**
-     * <code>uint32 after_gear_level = 10;</code>
-     * @return The afterGearLevel.
-     */
-    int getAfterGearLevel();
-
-    /**
-     * <code>uint32 gear_id = 11;</code>
+     * <code>uint32 gear_id = 9;</code>
      * @return The gearId.
      */
     int getGearId();
 
     /**
-     * <code>int32 retcode = 4;</code>
-     * @return The retcode.
+     * <code>uint32 after_gear_level = 11;</code>
+     * @return The afterGearLevel.
      */
-    int getRetcode();
+    int getAfterGearLevel();
   }
   /**
    * <pre>
-   * Name: JFBKIAGDBAP
-   * CmdId: 3950
+   * CmdId: 3930
+   * Obf: FGICNIDNNOP
    * </pre>
    *
    * Protobuf type {@code MechanicusLevelupGearRsp}
@@ -92,24 +92,24 @@ public final class MechanicusLevelupGearRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 8: {
 
               mechanicusId_ = input.readUInt32();
               break;
             }
-            case 32: {
+            case 24: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 80: {
+            case 72: {
 
-              afterGearLevel_ = input.readUInt32();
+              gearId_ = input.readUInt32();
               break;
             }
             case 88: {
 
-              gearId_ = input.readUInt32();
+              afterGearLevel_ = input.readUInt32();
               break;
             }
             default: {
@@ -144,10 +144,21 @@ public final class MechanicusLevelupGearRspOuterClass {
               emu.grasscutter.net.proto.MechanicusLevelupGearRspOuterClass.MechanicusLevelupGearRsp.class, emu.grasscutter.net.proto.MechanicusLevelupGearRspOuterClass.MechanicusLevelupGearRsp.Builder.class);
     }
 
-    public static final int MECHANICUS_ID_FIELD_NUMBER = 2;
+    public static final int RETCODE_FIELD_NUMBER = 3;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 3;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
+    public static final int MECHANICUS_ID_FIELD_NUMBER = 1;
     private int mechanicusId_;
     /**
-     * <code>uint32 mechanicus_id = 2;</code>
+     * <code>uint32 mechanicus_id = 1;</code>
      * @return The mechanicusId.
      */
     @java.lang.Override
@@ -155,21 +166,10 @@ public final class MechanicusLevelupGearRspOuterClass {
       return mechanicusId_;
     }
 
-    public static final int AFTER_GEAR_LEVEL_FIELD_NUMBER = 10;
-    private int afterGearLevel_;
-    /**
-     * <code>uint32 after_gear_level = 10;</code>
-     * @return The afterGearLevel.
-     */
-    @java.lang.Override
-    public int getAfterGearLevel() {
-      return afterGearLevel_;
-    }
-
-    public static final int GEAR_ID_FIELD_NUMBER = 11;
+    public static final int GEAR_ID_FIELD_NUMBER = 9;
     private int gearId_;
     /**
-     * <code>uint32 gear_id = 11;</code>
+     * <code>uint32 gear_id = 9;</code>
      * @return The gearId.
      */
     @java.lang.Override
@@ -177,15 +177,15 @@ public final class MechanicusLevelupGearRspOuterClass {
       return gearId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 4;
-    private int retcode_;
+    public static final int AFTER_GEAR_LEVEL_FIELD_NUMBER = 11;
+    private int afterGearLevel_;
     /**
-     * <code>int32 retcode = 4;</code>
-     * @return The retcode.
+     * <code>uint32 after_gear_level = 11;</code>
+     * @return The afterGearLevel.
      */
     @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
+    public int getAfterGearLevel() {
+      return afterGearLevel_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -203,16 +203,16 @@ public final class MechanicusLevelupGearRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (mechanicusId_ != 0) {
-        output.writeUInt32(2, mechanicusId_);
+        output.writeUInt32(1, mechanicusId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(4, retcode_);
-      }
-      if (afterGearLevel_ != 0) {
-        output.writeUInt32(10, afterGearLevel_);
+        output.writeInt32(3, retcode_);
       }
       if (gearId_ != 0) {
-        output.writeUInt32(11, gearId_);
+        output.writeUInt32(9, gearId_);
+      }
+      if (afterGearLevel_ != 0) {
+        output.writeUInt32(11, afterGearLevel_);
       }
       unknownFields.writeTo(output);
     }
@@ -225,19 +225,19 @@ public final class MechanicusLevelupGearRspOuterClass {
       size = 0;
       if (mechanicusId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, mechanicusId_);
+          .computeUInt32Size(1, mechanicusId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, retcode_);
-      }
-      if (afterGearLevel_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, afterGearLevel_);
+          .computeInt32Size(3, retcode_);
       }
       if (gearId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, gearId_);
+          .computeUInt32Size(9, gearId_);
+      }
+      if (afterGearLevel_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, afterGearLevel_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -254,14 +254,14 @@ public final class MechanicusLevelupGearRspOuterClass {
       }
       emu.grasscutter.net.proto.MechanicusLevelupGearRspOuterClass.MechanicusLevelupGearRsp other = (emu.grasscutter.net.proto.MechanicusLevelupGearRspOuterClass.MechanicusLevelupGearRsp) obj;
 
-      if (getMechanicusId()
-          != other.getMechanicusId()) return false;
-      if (getAfterGearLevel()
-          != other.getAfterGearLevel()) return false;
-      if (getGearId()
-          != other.getGearId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getMechanicusId()
+          != other.getMechanicusId()) return false;
+      if (getGearId()
+          != other.getGearId()) return false;
+      if (getAfterGearLevel()
+          != other.getAfterGearLevel()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -273,14 +273,14 @@ public final class MechanicusLevelupGearRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MECHANICUS_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getMechanicusId();
-      hash = (37 * hash) + AFTER_GEAR_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getAfterGearLevel();
-      hash = (37 * hash) + GEAR_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGearId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + MECHANICUS_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getMechanicusId();
+      hash = (37 * hash) + GEAR_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGearId();
+      hash = (37 * hash) + AFTER_GEAR_LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getAfterGearLevel();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -378,8 +378,8 @@ public final class MechanicusLevelupGearRspOuterClass {
     }
     /**
      * <pre>
-     * Name: JFBKIAGDBAP
-     * CmdId: 3950
+     * CmdId: 3930
+     * Obf: FGICNIDNNOP
      * </pre>
      *
      * Protobuf type {@code MechanicusLevelupGearRsp}
@@ -419,13 +419,13 @@ public final class MechanicusLevelupGearRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        mechanicusId_ = 0;
+        retcode_ = 0;
 
-        afterGearLevel_ = 0;
+        mechanicusId_ = 0;
 
         gearId_ = 0;
 
-        retcode_ = 0;
+        afterGearLevel_ = 0;
 
         return this;
       }
@@ -453,10 +453,10 @@ public final class MechanicusLevelupGearRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.MechanicusLevelupGearRspOuterClass.MechanicusLevelupGearRsp buildPartial() {
         emu.grasscutter.net.proto.MechanicusLevelupGearRspOuterClass.MechanicusLevelupGearRsp result = new emu.grasscutter.net.proto.MechanicusLevelupGearRspOuterClass.MechanicusLevelupGearRsp(this);
-        result.mechanicusId_ = mechanicusId_;
-        result.afterGearLevel_ = afterGearLevel_;
-        result.gearId_ = gearId_;
         result.retcode_ = retcode_;
+        result.mechanicusId_ = mechanicusId_;
+        result.gearId_ = gearId_;
+        result.afterGearLevel_ = afterGearLevel_;
         onBuilt();
         return result;
       }
@@ -505,17 +505,17 @@ public final class MechanicusLevelupGearRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MechanicusLevelupGearRspOuterClass.MechanicusLevelupGearRsp other) {
         if (other == emu.grasscutter.net.proto.MechanicusLevelupGearRspOuterClass.MechanicusLevelupGearRsp.getDefaultInstance()) return this;
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
+        }
         if (other.getMechanicusId() != 0) {
           setMechanicusId(other.getMechanicusId());
-        }
-        if (other.getAfterGearLevel() != 0) {
-          setAfterGearLevel(other.getAfterGearLevel());
         }
         if (other.getGearId() != 0) {
           setGearId(other.getGearId());
         }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
+        if (other.getAfterGearLevel() != 0) {
+          setAfterGearLevel(other.getAfterGearLevel());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -546,102 +546,9 @@ public final class MechanicusLevelupGearRspOuterClass {
         return this;
       }
 
-      private int mechanicusId_ ;
-      /**
-       * <code>uint32 mechanicus_id = 2;</code>
-       * @return The mechanicusId.
-       */
-      @java.lang.Override
-      public int getMechanicusId() {
-        return mechanicusId_;
-      }
-      /**
-       * <code>uint32 mechanicus_id = 2;</code>
-       * @param value The mechanicusId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMechanicusId(int value) {
-        
-        mechanicusId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 mechanicus_id = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMechanicusId() {
-        
-        mechanicusId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int afterGearLevel_ ;
-      /**
-       * <code>uint32 after_gear_level = 10;</code>
-       * @return The afterGearLevel.
-       */
-      @java.lang.Override
-      public int getAfterGearLevel() {
-        return afterGearLevel_;
-      }
-      /**
-       * <code>uint32 after_gear_level = 10;</code>
-       * @param value The afterGearLevel to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAfterGearLevel(int value) {
-        
-        afterGearLevel_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 after_gear_level = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAfterGearLevel() {
-        
-        afterGearLevel_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int gearId_ ;
-      /**
-       * <code>uint32 gear_id = 11;</code>
-       * @return The gearId.
-       */
-      @java.lang.Override
-      public int getGearId() {
-        return gearId_;
-      }
-      /**
-       * <code>uint32 gear_id = 11;</code>
-       * @param value The gearId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGearId(int value) {
-        
-        gearId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 gear_id = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGearId() {
-        
-        gearId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 3;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -649,7 +556,7 @@ public final class MechanicusLevelupGearRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 3;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -660,12 +567,105 @@ public final class MechanicusLevelupGearRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
         
         retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int mechanicusId_ ;
+      /**
+       * <code>uint32 mechanicus_id = 1;</code>
+       * @return The mechanicusId.
+       */
+      @java.lang.Override
+      public int getMechanicusId() {
+        return mechanicusId_;
+      }
+      /**
+       * <code>uint32 mechanicus_id = 1;</code>
+       * @param value The mechanicusId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMechanicusId(int value) {
+        
+        mechanicusId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 mechanicus_id = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMechanicusId() {
+        
+        mechanicusId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int gearId_ ;
+      /**
+       * <code>uint32 gear_id = 9;</code>
+       * @return The gearId.
+       */
+      @java.lang.Override
+      public int getGearId() {
+        return gearId_;
+      }
+      /**
+       * <code>uint32 gear_id = 9;</code>
+       * @param value The gearId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGearId(int value) {
+        
+        gearId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 gear_id = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGearId() {
+        
+        gearId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int afterGearLevel_ ;
+      /**
+       * <code>uint32 after_gear_level = 11;</code>
+       * @return The afterGearLevel.
+       */
+      @java.lang.Override
+      public int getAfterGearLevel() {
+        return afterGearLevel_;
+      }
+      /**
+       * <code>uint32 after_gear_level = 11;</code>
+       * @param value The afterGearLevel to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAfterGearLevel(int value) {
+        
+        afterGearLevel_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 after_gear_level = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAfterGearLevel() {
+        
+        afterGearLevel_ = 0;
         onChanged();
         return this;
       }
@@ -737,9 +737,9 @@ public final class MechanicusLevelupGearRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036MechanicusLevelupGearRsp.proto\"m\n\030Mech" +
-      "anicusLevelupGearRsp\022\025\n\rmechanicus_id\030\002 " +
-      "\001(\r\022\030\n\020after_gear_level\030\n \001(\r\022\017\n\007gear_id" +
-      "\030\013 \001(\r\022\017\n\007retcode\030\004 \001(\005B\033\n\031emu.grasscutt" +
+      "anicusLevelupGearRsp\022\017\n\007retcode\030\003 \001(\005\022\025\n" +
+      "\rmechanicus_id\030\001 \001(\r\022\017\n\007gear_id\030\t \001(\r\022\030\n" +
+      "\020after_gear_level\030\013 \001(\rB\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -751,7 +751,7 @@ public final class MechanicusLevelupGearRspOuterClass {
     internal_static_MechanicusLevelupGearRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MechanicusLevelupGearRsp_descriptor,
-        new java.lang.String[] { "MechanicusId", "AfterGearLevel", "GearId", "Retcode", });
+        new java.lang.String[] { "Retcode", "MechanicusId", "GearId", "AfterGearLevel", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

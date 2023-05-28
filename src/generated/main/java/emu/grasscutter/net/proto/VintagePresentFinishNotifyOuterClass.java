@@ -26,8 +26,8 @@ public final class VintagePresentFinishNotifyOuterClass {
   }
   /**
    * <pre>
-   * Name: EJDCILANJNL
-   * CmdId: 23897
+   * CmdId: 22394
+   * Obf: JPPMJHKHKEB
    * </pre>
    *
    * Protobuf type {@code VintagePresentFinishNotify}
@@ -279,8 +279,8 @@ public final class VintagePresentFinishNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: EJDCILANJNL
-     * CmdId: 23897
+     * CmdId: 22394
+     * Obf: JPPMJHKHKEB
      * </pre>
      *
      * Protobuf type {@code VintagePresentFinishNotify}

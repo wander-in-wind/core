@@ -19,68 +19,68 @@ public final class ChessPlayerInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 GKBILFJMMAO = 11;</code>
-     * @return The gKBILFJMMAO.
-     */
-    int getGKBILFJMMAO();
-
-    /**
-     * <code>uint32 DBCNEFPDHHM = 14;</code>
-     * @return The dBCNEFPDHHM.
-     */
-    int getDBCNEFPDHHM();
-
-    /**
-     * <code>uint32 uid = 13;</code>
+     * <code>uint32 uid = 11;</code>
      * @return The uid.
      */
     int getUid();
 
     /**
-     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 15;</code>
+     * <code>uint32 GJDGAIKBFCC = 2;</code>
+     * @return The gJDGAIKBFCC.
+     */
+    int getGJDGAIKBFCC();
+
+    /**
+     * <code>uint32 FDJKOOOOHEL = 4;</code>
+     * @return The fDJKOOOOHEL.
+     */
+    int getFDJKOOOOHEL();
+
+    /**
+     * <code>uint32 MJEJBIPNFDL = 12;</code>
+     * @return The mJEJBIPNFDL.
+     */
+    int getMJEJBIPNFDL();
+
+    /**
+     * <code>uint32 DHOCBFFKAEN = 5;</code>
+     * @return The dHOCBFFKAEN.
+     */
+    int getDHOCBFFKAEN();
+
+    /**
+     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 13;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo> 
         getCandidateCardInfoListList();
     /**
-     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 15;</code>
+     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 13;</code>
      */
     emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo getCandidateCardInfoList(int index);
     /**
-     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 15;</code>
+     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 13;</code>
      */
     int getCandidateCardInfoListCount();
     /**
-     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 15;</code>
+     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 13;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfoOrBuilder> 
         getCandidateCardInfoListOrBuilderList();
     /**
-     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 15;</code>
+     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 13;</code>
      */
     emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfoOrBuilder getCandidateCardInfoListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 CNLJGGLHKAE = 3;</code>
-     * @return The cNLJGGLHKAE.
+     * <code>uint32 NKJJHNGOBMK = 6;</code>
+     * @return The nKJJHNGOBMK.
      */
-    int getCNLJGGLHKAE();
-
-    /**
-     * <code>uint32 JEGENLBHOCJ = 4;</code>
-     * @return The jEGENLBHOCJ.
-     */
-    int getJEGENLBHOCJ();
-
-    /**
-     * <code>uint32 FABBPOHPPEC = 7;</code>
-     * @return The fABBPOHPPEC.
-     */
-    int getFABBPOHPPEC();
+    int getNKJJHNGOBMK();
   }
   /**
    * <pre>
-   * Name: CEEAFEMNGPJ
+   * Obf: KNHPPMPLPEA
    * </pre>
    *
    * Protobuf type {@code ChessPlayerInfo}
@@ -129,37 +129,37 @@ public final class ChessPlayerInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 16: {
 
-              cNLJGGLHKAE_ = input.readUInt32();
+              gJDGAIKBFCC_ = input.readUInt32();
               break;
             }
             case 32: {
 
-              jEGENLBHOCJ_ = input.readUInt32();
+              fDJKOOOOHEL_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 40: {
 
-              fABBPOHPPEC_ = input.readUInt32();
+              dHOCBFFKAEN_ = input.readUInt32();
+              break;
+            }
+            case 48: {
+
+              nKJJHNGOBMK_ = input.readUInt32();
               break;
             }
             case 88: {
 
-              gKBILFJMMAO_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
               uid_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 96: {
 
-              dBCNEFPDHHM_ = input.readUInt32();
+              mJEJBIPNFDL_ = input.readUInt32();
               break;
             }
-            case 122: {
+            case 106: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 candidateCardInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -203,32 +203,10 @@ public final class ChessPlayerInfoOuterClass {
               emu.grasscutter.net.proto.ChessPlayerInfoOuterClass.ChessPlayerInfo.class, emu.grasscutter.net.proto.ChessPlayerInfoOuterClass.ChessPlayerInfo.Builder.class);
     }
 
-    public static final int GKBILFJMMAO_FIELD_NUMBER = 11;
-    private int gKBILFJMMAO_;
-    /**
-     * <code>uint32 GKBILFJMMAO = 11;</code>
-     * @return The gKBILFJMMAO.
-     */
-    @java.lang.Override
-    public int getGKBILFJMMAO() {
-      return gKBILFJMMAO_;
-    }
-
-    public static final int DBCNEFPDHHM_FIELD_NUMBER = 14;
-    private int dBCNEFPDHHM_;
-    /**
-     * <code>uint32 DBCNEFPDHHM = 14;</code>
-     * @return The dBCNEFPDHHM.
-     */
-    @java.lang.Override
-    public int getDBCNEFPDHHM() {
-      return dBCNEFPDHHM_;
-    }
-
-    public static final int UID_FIELD_NUMBER = 13;
+    public static final int UID_FIELD_NUMBER = 11;
     private int uid_;
     /**
-     * <code>uint32 uid = 13;</code>
+     * <code>uint32 uid = 11;</code>
      * @return The uid.
      */
     @java.lang.Override
@@ -236,17 +214,61 @@ public final class ChessPlayerInfoOuterClass {
       return uid_;
     }
 
-    public static final int CANDIDATE_CARD_INFO_LIST_FIELD_NUMBER = 15;
+    public static final int GJDGAIKBFCC_FIELD_NUMBER = 2;
+    private int gJDGAIKBFCC_;
+    /**
+     * <code>uint32 GJDGAIKBFCC = 2;</code>
+     * @return The gJDGAIKBFCC.
+     */
+    @java.lang.Override
+    public int getGJDGAIKBFCC() {
+      return gJDGAIKBFCC_;
+    }
+
+    public static final int FDJKOOOOHEL_FIELD_NUMBER = 4;
+    private int fDJKOOOOHEL_;
+    /**
+     * <code>uint32 FDJKOOOOHEL = 4;</code>
+     * @return The fDJKOOOOHEL.
+     */
+    @java.lang.Override
+    public int getFDJKOOOOHEL() {
+      return fDJKOOOOHEL_;
+    }
+
+    public static final int MJEJBIPNFDL_FIELD_NUMBER = 12;
+    private int mJEJBIPNFDL_;
+    /**
+     * <code>uint32 MJEJBIPNFDL = 12;</code>
+     * @return The mJEJBIPNFDL.
+     */
+    @java.lang.Override
+    public int getMJEJBIPNFDL() {
+      return mJEJBIPNFDL_;
+    }
+
+    public static final int DHOCBFFKAEN_FIELD_NUMBER = 5;
+    private int dHOCBFFKAEN_;
+    /**
+     * <code>uint32 DHOCBFFKAEN = 5;</code>
+     * @return The dHOCBFFKAEN.
+     */
+    @java.lang.Override
+    public int getDHOCBFFKAEN() {
+      return dHOCBFFKAEN_;
+    }
+
+    public static final int CANDIDATE_CARD_INFO_LIST_FIELD_NUMBER = 13;
     private java.util.List<emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo> candidateCardInfoList_;
     /**
-     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 15;</code>
+     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 13;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo> getCandidateCardInfoListList() {
       return candidateCardInfoList_;
     }
     /**
-     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 15;</code>
+     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 13;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfoOrBuilder> 
@@ -254,21 +276,21 @@ public final class ChessPlayerInfoOuterClass {
       return candidateCardInfoList_;
     }
     /**
-     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 15;</code>
+     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 13;</code>
      */
     @java.lang.Override
     public int getCandidateCardInfoListCount() {
       return candidateCardInfoList_.size();
     }
     /**
-     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 15;</code>
+     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo getCandidateCardInfoList(int index) {
       return candidateCardInfoList_.get(index);
     }
     /**
-     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 15;</code>
+     * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfoOrBuilder getCandidateCardInfoListOrBuilder(
@@ -276,37 +298,15 @@ public final class ChessPlayerInfoOuterClass {
       return candidateCardInfoList_.get(index);
     }
 
-    public static final int CNLJGGLHKAE_FIELD_NUMBER = 3;
-    private int cNLJGGLHKAE_;
+    public static final int NKJJHNGOBMK_FIELD_NUMBER = 6;
+    private int nKJJHNGOBMK_;
     /**
-     * <code>uint32 CNLJGGLHKAE = 3;</code>
-     * @return The cNLJGGLHKAE.
+     * <code>uint32 NKJJHNGOBMK = 6;</code>
+     * @return The nKJJHNGOBMK.
      */
     @java.lang.Override
-    public int getCNLJGGLHKAE() {
-      return cNLJGGLHKAE_;
-    }
-
-    public static final int JEGENLBHOCJ_FIELD_NUMBER = 4;
-    private int jEGENLBHOCJ_;
-    /**
-     * <code>uint32 JEGENLBHOCJ = 4;</code>
-     * @return The jEGENLBHOCJ.
-     */
-    @java.lang.Override
-    public int getJEGENLBHOCJ() {
-      return jEGENLBHOCJ_;
-    }
-
-    public static final int FABBPOHPPEC_FIELD_NUMBER = 7;
-    private int fABBPOHPPEC_;
-    /**
-     * <code>uint32 FABBPOHPPEC = 7;</code>
-     * @return The fABBPOHPPEC.
-     */
-    @java.lang.Override
-    public int getFABBPOHPPEC() {
-      return fABBPOHPPEC_;
+    public int getNKJJHNGOBMK() {
+      return nKJJHNGOBMK_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -323,26 +323,26 @@ public final class ChessPlayerInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (cNLJGGLHKAE_ != 0) {
-        output.writeUInt32(3, cNLJGGLHKAE_);
+      if (gJDGAIKBFCC_ != 0) {
+        output.writeUInt32(2, gJDGAIKBFCC_);
       }
-      if (jEGENLBHOCJ_ != 0) {
-        output.writeUInt32(4, jEGENLBHOCJ_);
+      if (fDJKOOOOHEL_ != 0) {
+        output.writeUInt32(4, fDJKOOOOHEL_);
       }
-      if (fABBPOHPPEC_ != 0) {
-        output.writeUInt32(7, fABBPOHPPEC_);
+      if (dHOCBFFKAEN_ != 0) {
+        output.writeUInt32(5, dHOCBFFKAEN_);
       }
-      if (gKBILFJMMAO_ != 0) {
-        output.writeUInt32(11, gKBILFJMMAO_);
+      if (nKJJHNGOBMK_ != 0) {
+        output.writeUInt32(6, nKJJHNGOBMK_);
       }
       if (uid_ != 0) {
-        output.writeUInt32(13, uid_);
+        output.writeUInt32(11, uid_);
       }
-      if (dBCNEFPDHHM_ != 0) {
-        output.writeUInt32(14, dBCNEFPDHHM_);
+      if (mJEJBIPNFDL_ != 0) {
+        output.writeUInt32(12, mJEJBIPNFDL_);
       }
       for (int i = 0; i < candidateCardInfoList_.size(); i++) {
-        output.writeMessage(15, candidateCardInfoList_.get(i));
+        output.writeMessage(13, candidateCardInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -353,33 +353,33 @@ public final class ChessPlayerInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (cNLJGGLHKAE_ != 0) {
+      if (gJDGAIKBFCC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, cNLJGGLHKAE_);
+          .computeUInt32Size(2, gJDGAIKBFCC_);
       }
-      if (jEGENLBHOCJ_ != 0) {
+      if (fDJKOOOOHEL_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, jEGENLBHOCJ_);
+          .computeUInt32Size(4, fDJKOOOOHEL_);
       }
-      if (fABBPOHPPEC_ != 0) {
+      if (dHOCBFFKAEN_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, fABBPOHPPEC_);
+          .computeUInt32Size(5, dHOCBFFKAEN_);
       }
-      if (gKBILFJMMAO_ != 0) {
+      if (nKJJHNGOBMK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, gKBILFJMMAO_);
+          .computeUInt32Size(6, nKJJHNGOBMK_);
       }
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, uid_);
+          .computeUInt32Size(11, uid_);
       }
-      if (dBCNEFPDHHM_ != 0) {
+      if (mJEJBIPNFDL_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, dBCNEFPDHHM_);
+          .computeUInt32Size(12, mJEJBIPNFDL_);
       }
       for (int i = 0; i < candidateCardInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, candidateCardInfoList_.get(i));
+          .computeMessageSize(13, candidateCardInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -396,20 +396,20 @@ public final class ChessPlayerInfoOuterClass {
       }
       emu.grasscutter.net.proto.ChessPlayerInfoOuterClass.ChessPlayerInfo other = (emu.grasscutter.net.proto.ChessPlayerInfoOuterClass.ChessPlayerInfo) obj;
 
-      if (getGKBILFJMMAO()
-          != other.getGKBILFJMMAO()) return false;
-      if (getDBCNEFPDHHM()
-          != other.getDBCNEFPDHHM()) return false;
       if (getUid()
           != other.getUid()) return false;
+      if (getGJDGAIKBFCC()
+          != other.getGJDGAIKBFCC()) return false;
+      if (getFDJKOOOOHEL()
+          != other.getFDJKOOOOHEL()) return false;
+      if (getMJEJBIPNFDL()
+          != other.getMJEJBIPNFDL()) return false;
+      if (getDHOCBFFKAEN()
+          != other.getDHOCBFFKAEN()) return false;
       if (!getCandidateCardInfoListList()
           .equals(other.getCandidateCardInfoListList())) return false;
-      if (getCNLJGGLHKAE()
-          != other.getCNLJGGLHKAE()) return false;
-      if (getJEGENLBHOCJ()
-          != other.getJEGENLBHOCJ()) return false;
-      if (getFABBPOHPPEC()
-          != other.getFABBPOHPPEC()) return false;
+      if (getNKJJHNGOBMK()
+          != other.getNKJJHNGOBMK()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -421,22 +421,22 @@ public final class ChessPlayerInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + GKBILFJMMAO_FIELD_NUMBER;
-      hash = (53 * hash) + getGKBILFJMMAO();
-      hash = (37 * hash) + DBCNEFPDHHM_FIELD_NUMBER;
-      hash = (53 * hash) + getDBCNEFPDHHM();
       hash = (37 * hash) + UID_FIELD_NUMBER;
       hash = (53 * hash) + getUid();
+      hash = (37 * hash) + GJDGAIKBFCC_FIELD_NUMBER;
+      hash = (53 * hash) + getGJDGAIKBFCC();
+      hash = (37 * hash) + FDJKOOOOHEL_FIELD_NUMBER;
+      hash = (53 * hash) + getFDJKOOOOHEL();
+      hash = (37 * hash) + MJEJBIPNFDL_FIELD_NUMBER;
+      hash = (53 * hash) + getMJEJBIPNFDL();
+      hash = (37 * hash) + DHOCBFFKAEN_FIELD_NUMBER;
+      hash = (53 * hash) + getDHOCBFFKAEN();
       if (getCandidateCardInfoListCount() > 0) {
         hash = (37 * hash) + CANDIDATE_CARD_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getCandidateCardInfoListList().hashCode();
       }
-      hash = (37 * hash) + CNLJGGLHKAE_FIELD_NUMBER;
-      hash = (53 * hash) + getCNLJGGLHKAE();
-      hash = (37 * hash) + JEGENLBHOCJ_FIELD_NUMBER;
-      hash = (53 * hash) + getJEGENLBHOCJ();
-      hash = (37 * hash) + FABBPOHPPEC_FIELD_NUMBER;
-      hash = (53 * hash) + getFABBPOHPPEC();
+      hash = (37 * hash) + NKJJHNGOBMK_FIELD_NUMBER;
+      hash = (53 * hash) + getNKJJHNGOBMK();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -534,7 +534,7 @@ public final class ChessPlayerInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: CEEAFEMNGPJ
+     * Obf: KNHPPMPLPEA
      * </pre>
      *
      * Protobuf type {@code ChessPlayerInfo}
@@ -575,11 +575,15 @@ public final class ChessPlayerInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        gKBILFJMMAO_ = 0;
-
-        dBCNEFPDHHM_ = 0;
-
         uid_ = 0;
+
+        gJDGAIKBFCC_ = 0;
+
+        fDJKOOOOHEL_ = 0;
+
+        mJEJBIPNFDL_ = 0;
+
+        dHOCBFFKAEN_ = 0;
 
         if (candidateCardInfoListBuilder_ == null) {
           candidateCardInfoList_ = java.util.Collections.emptyList();
@@ -587,11 +591,7 @@ public final class ChessPlayerInfoOuterClass {
         } else {
           candidateCardInfoListBuilder_.clear();
         }
-        cNLJGGLHKAE_ = 0;
-
-        jEGENLBHOCJ_ = 0;
-
-        fABBPOHPPEC_ = 0;
+        nKJJHNGOBMK_ = 0;
 
         return this;
       }
@@ -620,9 +620,11 @@ public final class ChessPlayerInfoOuterClass {
       public emu.grasscutter.net.proto.ChessPlayerInfoOuterClass.ChessPlayerInfo buildPartial() {
         emu.grasscutter.net.proto.ChessPlayerInfoOuterClass.ChessPlayerInfo result = new emu.grasscutter.net.proto.ChessPlayerInfoOuterClass.ChessPlayerInfo(this);
         int from_bitField0_ = bitField0_;
-        result.gKBILFJMMAO_ = gKBILFJMMAO_;
-        result.dBCNEFPDHHM_ = dBCNEFPDHHM_;
         result.uid_ = uid_;
+        result.gJDGAIKBFCC_ = gJDGAIKBFCC_;
+        result.fDJKOOOOHEL_ = fDJKOOOOHEL_;
+        result.mJEJBIPNFDL_ = mJEJBIPNFDL_;
+        result.dHOCBFFKAEN_ = dHOCBFFKAEN_;
         if (candidateCardInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             candidateCardInfoList_ = java.util.Collections.unmodifiableList(candidateCardInfoList_);
@@ -632,9 +634,7 @@ public final class ChessPlayerInfoOuterClass {
         } else {
           result.candidateCardInfoList_ = candidateCardInfoListBuilder_.build();
         }
-        result.cNLJGGLHKAE_ = cNLJGGLHKAE_;
-        result.jEGENLBHOCJ_ = jEGENLBHOCJ_;
-        result.fABBPOHPPEC_ = fABBPOHPPEC_;
+        result.nKJJHNGOBMK_ = nKJJHNGOBMK_;
         onBuilt();
         return result;
       }
@@ -683,14 +683,20 @@ public final class ChessPlayerInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ChessPlayerInfoOuterClass.ChessPlayerInfo other) {
         if (other == emu.grasscutter.net.proto.ChessPlayerInfoOuterClass.ChessPlayerInfo.getDefaultInstance()) return this;
-        if (other.getGKBILFJMMAO() != 0) {
-          setGKBILFJMMAO(other.getGKBILFJMMAO());
-        }
-        if (other.getDBCNEFPDHHM() != 0) {
-          setDBCNEFPDHHM(other.getDBCNEFPDHHM());
-        }
         if (other.getUid() != 0) {
           setUid(other.getUid());
+        }
+        if (other.getGJDGAIKBFCC() != 0) {
+          setGJDGAIKBFCC(other.getGJDGAIKBFCC());
+        }
+        if (other.getFDJKOOOOHEL() != 0) {
+          setFDJKOOOOHEL(other.getFDJKOOOOHEL());
+        }
+        if (other.getMJEJBIPNFDL() != 0) {
+          setMJEJBIPNFDL(other.getMJEJBIPNFDL());
+        }
+        if (other.getDHOCBFFKAEN() != 0) {
+          setDHOCBFFKAEN(other.getDHOCBFFKAEN());
         }
         if (candidateCardInfoListBuilder_ == null) {
           if (!other.candidateCardInfoList_.isEmpty()) {
@@ -718,14 +724,8 @@ public final class ChessPlayerInfoOuterClass {
             }
           }
         }
-        if (other.getCNLJGGLHKAE() != 0) {
-          setCNLJGGLHKAE(other.getCNLJGGLHKAE());
-        }
-        if (other.getJEGENLBHOCJ() != 0) {
-          setJEGENLBHOCJ(other.getJEGENLBHOCJ());
-        }
-        if (other.getFABBPOHPPEC() != 0) {
-          setFABBPOHPPEC(other.getFABBPOHPPEC());
+        if (other.getNKJJHNGOBMK() != 0) {
+          setNKJJHNGOBMK(other.getNKJJHNGOBMK());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -757,71 +757,9 @@ public final class ChessPlayerInfoOuterClass {
       }
       private int bitField0_;
 
-      private int gKBILFJMMAO_ ;
-      /**
-       * <code>uint32 GKBILFJMMAO = 11;</code>
-       * @return The gKBILFJMMAO.
-       */
-      @java.lang.Override
-      public int getGKBILFJMMAO() {
-        return gKBILFJMMAO_;
-      }
-      /**
-       * <code>uint32 GKBILFJMMAO = 11;</code>
-       * @param value The gKBILFJMMAO to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGKBILFJMMAO(int value) {
-        
-        gKBILFJMMAO_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 GKBILFJMMAO = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGKBILFJMMAO() {
-        
-        gKBILFJMMAO_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int dBCNEFPDHHM_ ;
-      /**
-       * <code>uint32 DBCNEFPDHHM = 14;</code>
-       * @return The dBCNEFPDHHM.
-       */
-      @java.lang.Override
-      public int getDBCNEFPDHHM() {
-        return dBCNEFPDHHM_;
-      }
-      /**
-       * <code>uint32 DBCNEFPDHHM = 14;</code>
-       * @param value The dBCNEFPDHHM to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDBCNEFPDHHM(int value) {
-        
-        dBCNEFPDHHM_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 DBCNEFPDHHM = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDBCNEFPDHHM() {
-        
-        dBCNEFPDHHM_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int uid_ ;
       /**
-       * <code>uint32 uid = 13;</code>
+       * <code>uint32 uid = 11;</code>
        * @return The uid.
        */
       @java.lang.Override
@@ -829,7 +767,7 @@ public final class ChessPlayerInfoOuterClass {
         return uid_;
       }
       /**
-       * <code>uint32 uid = 13;</code>
+       * <code>uint32 uid = 11;</code>
        * @param value The uid to set.
        * @return This builder for chaining.
        */
@@ -840,12 +778,136 @@ public final class ChessPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 uid = 13;</code>
+       * <code>uint32 uid = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearUid() {
         
         uid_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int gJDGAIKBFCC_ ;
+      /**
+       * <code>uint32 GJDGAIKBFCC = 2;</code>
+       * @return The gJDGAIKBFCC.
+       */
+      @java.lang.Override
+      public int getGJDGAIKBFCC() {
+        return gJDGAIKBFCC_;
+      }
+      /**
+       * <code>uint32 GJDGAIKBFCC = 2;</code>
+       * @param value The gJDGAIKBFCC to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGJDGAIKBFCC(int value) {
+        
+        gJDGAIKBFCC_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 GJDGAIKBFCC = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGJDGAIKBFCC() {
+        
+        gJDGAIKBFCC_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int fDJKOOOOHEL_ ;
+      /**
+       * <code>uint32 FDJKOOOOHEL = 4;</code>
+       * @return The fDJKOOOOHEL.
+       */
+      @java.lang.Override
+      public int getFDJKOOOOHEL() {
+        return fDJKOOOOHEL_;
+      }
+      /**
+       * <code>uint32 FDJKOOOOHEL = 4;</code>
+       * @param value The fDJKOOOOHEL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFDJKOOOOHEL(int value) {
+        
+        fDJKOOOOHEL_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 FDJKOOOOHEL = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFDJKOOOOHEL() {
+        
+        fDJKOOOOHEL_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int mJEJBIPNFDL_ ;
+      /**
+       * <code>uint32 MJEJBIPNFDL = 12;</code>
+       * @return The mJEJBIPNFDL.
+       */
+      @java.lang.Override
+      public int getMJEJBIPNFDL() {
+        return mJEJBIPNFDL_;
+      }
+      /**
+       * <code>uint32 MJEJBIPNFDL = 12;</code>
+       * @param value The mJEJBIPNFDL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMJEJBIPNFDL(int value) {
+        
+        mJEJBIPNFDL_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 MJEJBIPNFDL = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMJEJBIPNFDL() {
+        
+        mJEJBIPNFDL_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int dHOCBFFKAEN_ ;
+      /**
+       * <code>uint32 DHOCBFFKAEN = 5;</code>
+       * @return The dHOCBFFKAEN.
+       */
+      @java.lang.Override
+      public int getDHOCBFFKAEN() {
+        return dHOCBFFKAEN_;
+      }
+      /**
+       * <code>uint32 DHOCBFFKAEN = 5;</code>
+       * @param value The dHOCBFFKAEN to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDHOCBFFKAEN(int value) {
+        
+        dHOCBFFKAEN_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 DHOCBFFKAEN = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDHOCBFFKAEN() {
+        
+        dHOCBFFKAEN_ = 0;
         onChanged();
         return this;
       }
@@ -863,7 +925,7 @@ public final class ChessPlayerInfoOuterClass {
           emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo, emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.Builder, emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfoOrBuilder> candidateCardInfoListBuilder_;
 
       /**
-       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 15;</code>
+       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo> getCandidateCardInfoListList() {
         if (candidateCardInfoListBuilder_ == null) {
@@ -873,7 +935,7 @@ public final class ChessPlayerInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 15;</code>
+       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 13;</code>
        */
       public int getCandidateCardInfoListCount() {
         if (candidateCardInfoListBuilder_ == null) {
@@ -883,7 +945,7 @@ public final class ChessPlayerInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 15;</code>
+       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 13;</code>
        */
       public emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo getCandidateCardInfoList(int index) {
         if (candidateCardInfoListBuilder_ == null) {
@@ -893,7 +955,7 @@ public final class ChessPlayerInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 15;</code>
+       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 13;</code>
        */
       public Builder setCandidateCardInfoList(
           int index, emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo value) {
@@ -910,7 +972,7 @@ public final class ChessPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 15;</code>
+       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 13;</code>
        */
       public Builder setCandidateCardInfoList(
           int index, emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.Builder builderForValue) {
@@ -924,7 +986,7 @@ public final class ChessPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 15;</code>
+       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 13;</code>
        */
       public Builder addCandidateCardInfoList(emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo value) {
         if (candidateCardInfoListBuilder_ == null) {
@@ -940,7 +1002,7 @@ public final class ChessPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 15;</code>
+       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 13;</code>
        */
       public Builder addCandidateCardInfoList(
           int index, emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo value) {
@@ -957,7 +1019,7 @@ public final class ChessPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 15;</code>
+       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 13;</code>
        */
       public Builder addCandidateCardInfoList(
           emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.Builder builderForValue) {
@@ -971,7 +1033,7 @@ public final class ChessPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 15;</code>
+       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 13;</code>
        */
       public Builder addCandidateCardInfoList(
           int index, emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.Builder builderForValue) {
@@ -985,7 +1047,7 @@ public final class ChessPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 15;</code>
+       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 13;</code>
        */
       public Builder addAllCandidateCardInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo> values) {
@@ -1000,7 +1062,7 @@ public final class ChessPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 15;</code>
+       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 13;</code>
        */
       public Builder clearCandidateCardInfoList() {
         if (candidateCardInfoListBuilder_ == null) {
@@ -1013,7 +1075,7 @@ public final class ChessPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 15;</code>
+       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 13;</code>
        */
       public Builder removeCandidateCardInfoList(int index) {
         if (candidateCardInfoListBuilder_ == null) {
@@ -1026,14 +1088,14 @@ public final class ChessPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 15;</code>
+       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 13;</code>
        */
       public emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.Builder getCandidateCardInfoListBuilder(
           int index) {
         return getCandidateCardInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 15;</code>
+       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 13;</code>
        */
       public emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfoOrBuilder getCandidateCardInfoListOrBuilder(
           int index) {
@@ -1043,7 +1105,7 @@ public final class ChessPlayerInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 15;</code>
+       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 13;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfoOrBuilder> 
            getCandidateCardInfoListOrBuilderList() {
@@ -1054,14 +1116,14 @@ public final class ChessPlayerInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 15;</code>
+       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 13;</code>
        */
       public emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.Builder addCandidateCardInfoListBuilder() {
         return getCandidateCardInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 15;</code>
+       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 13;</code>
        */
       public emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.Builder addCandidateCardInfoListBuilder(
           int index) {
@@ -1069,7 +1131,7 @@ public final class ChessPlayerInfoOuterClass {
             index, emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 15;</code>
+       * <code>repeated .ChessNormalCardInfo candidate_card_info_list = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.ChessNormalCardInfo.Builder> 
            getCandidateCardInfoListBuilderList() {
@@ -1090,95 +1152,33 @@ public final class ChessPlayerInfoOuterClass {
         return candidateCardInfoListBuilder_;
       }
 
-      private int cNLJGGLHKAE_ ;
+      private int nKJJHNGOBMK_ ;
       /**
-       * <code>uint32 CNLJGGLHKAE = 3;</code>
-       * @return The cNLJGGLHKAE.
+       * <code>uint32 NKJJHNGOBMK = 6;</code>
+       * @return The nKJJHNGOBMK.
        */
       @java.lang.Override
-      public int getCNLJGGLHKAE() {
-        return cNLJGGLHKAE_;
+      public int getNKJJHNGOBMK() {
+        return nKJJHNGOBMK_;
       }
       /**
-       * <code>uint32 CNLJGGLHKAE = 3;</code>
-       * @param value The cNLJGGLHKAE to set.
+       * <code>uint32 NKJJHNGOBMK = 6;</code>
+       * @param value The nKJJHNGOBMK to set.
        * @return This builder for chaining.
        */
-      public Builder setCNLJGGLHKAE(int value) {
+      public Builder setNKJJHNGOBMK(int value) {
         
-        cNLJGGLHKAE_ = value;
+        nKJJHNGOBMK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 CNLJGGLHKAE = 3;</code>
+       * <code>uint32 NKJJHNGOBMK = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCNLJGGLHKAE() {
+      public Builder clearNKJJHNGOBMK() {
         
-        cNLJGGLHKAE_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int jEGENLBHOCJ_ ;
-      /**
-       * <code>uint32 JEGENLBHOCJ = 4;</code>
-       * @return The jEGENLBHOCJ.
-       */
-      @java.lang.Override
-      public int getJEGENLBHOCJ() {
-        return jEGENLBHOCJ_;
-      }
-      /**
-       * <code>uint32 JEGENLBHOCJ = 4;</code>
-       * @param value The jEGENLBHOCJ to set.
-       * @return This builder for chaining.
-       */
-      public Builder setJEGENLBHOCJ(int value) {
-        
-        jEGENLBHOCJ_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 JEGENLBHOCJ = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearJEGENLBHOCJ() {
-        
-        jEGENLBHOCJ_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int fABBPOHPPEC_ ;
-      /**
-       * <code>uint32 FABBPOHPPEC = 7;</code>
-       * @return The fABBPOHPPEC.
-       */
-      @java.lang.Override
-      public int getFABBPOHPPEC() {
-        return fABBPOHPPEC_;
-      }
-      /**
-       * <code>uint32 FABBPOHPPEC = 7;</code>
-       * @param value The fABBPOHPPEC to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFABBPOHPPEC(int value) {
-        
-        fABBPOHPPEC_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 FABBPOHPPEC = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFABBPOHPPEC() {
-        
-        fABBPOHPPEC_ = 0;
+        nKJJHNGOBMK_ = 0;
         onChanged();
         return this;
       }
@@ -1250,11 +1250,11 @@ public final class ChessPlayerInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025ChessPlayerInfo.proto\032\031ChessNormalCard" +
-      "Info.proto\"\277\001\n\017ChessPlayerInfo\022\023\n\013GKBILF" +
-      "JMMAO\030\013 \001(\r\022\023\n\013DBCNEFPDHHM\030\016 \001(\r\022\013\n\003uid\030" +
-      "\r \001(\r\0226\n\030candidate_card_info_list\030\017 \003(\0132" +
-      "\024.ChessNormalCardInfo\022\023\n\013CNLJGGLHKAE\030\003 \001" +
-      "(\r\022\023\n\013JEGENLBHOCJ\030\004 \001(\r\022\023\n\013FABBPOHPPEC\030\007" +
+      "Info.proto\"\277\001\n\017ChessPlayerInfo\022\013\n\003uid\030\013 " +
+      "\001(\r\022\023\n\013GJDGAIKBFCC\030\002 \001(\r\022\023\n\013FDJKOOOOHEL\030" +
+      "\004 \001(\r\022\023\n\013MJEJBIPNFDL\030\014 \001(\r\022\023\n\013DHOCBFFKAE" +
+      "N\030\005 \001(\r\0226\n\030candidate_card_info_list\030\r \003(" +
+      "\0132\024.ChessNormalCardInfo\022\023\n\013NKJJHNGOBMK\030\006" +
       " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
     };
@@ -1268,7 +1268,7 @@ public final class ChessPlayerInfoOuterClass {
     internal_static_ChessPlayerInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ChessPlayerInfo_descriptor,
-        new java.lang.String[] { "GKBILFJMMAO", "DBCNEFPDHHM", "Uid", "CandidateCardInfoList", "CNLJGGLHKAE", "JEGENLBHOCJ", "FABBPOHPPEC", });
+        new java.lang.String[] { "Uid", "GJDGAIKBFCC", "FDJKOOOOHEL", "MJEJBIPNFDL", "DHOCBFFKAEN", "CandidateCardInfoList", "NKJJHNGOBMK", });
     emu.grasscutter.net.proto.ChessNormalCardInfoOuterClass.getDescriptor();
   }
 

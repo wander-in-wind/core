@@ -19,20 +19,20 @@ public final class PlayerCancelMatchReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.MatchType match_type = 1;</code>
+     * <code>.MatchType match_type = 10;</code>
      * @return The enum numeric value on the wire for matchType.
      */
     int getMatchTypeValue();
     /**
-     * <code>.MatchType match_type = 1;</code>
+     * <code>.MatchType match_type = 10;</code>
      * @return The matchType.
      */
     emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType getMatchType();
   }
   /**
    * <pre>
-   * Name: KAONIMBCNLI
-   * CmdId: 4196
+   * CmdId: 4171
+   * Obf: CEOKCPHMBIB
    * </pre>
    *
    * Protobuf type {@code PlayerCancelMatchReq}
@@ -80,7 +80,7 @@ public final class PlayerCancelMatchReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 80: {
               int rawValue = input.readEnum();
 
               matchType_ = rawValue;
@@ -118,17 +118,17 @@ public final class PlayerCancelMatchReqOuterClass {
               emu.grasscutter.net.proto.PlayerCancelMatchReqOuterClass.PlayerCancelMatchReq.class, emu.grasscutter.net.proto.PlayerCancelMatchReqOuterClass.PlayerCancelMatchReq.Builder.class);
     }
 
-    public static final int MATCH_TYPE_FIELD_NUMBER = 1;
+    public static final int MATCH_TYPE_FIELD_NUMBER = 10;
     private int matchType_;
     /**
-     * <code>.MatchType match_type = 1;</code>
+     * <code>.MatchType match_type = 10;</code>
      * @return The enum numeric value on the wire for matchType.
      */
     @java.lang.Override public int getMatchTypeValue() {
       return matchType_;
     }
     /**
-     * <code>.MatchType match_type = 1;</code>
+     * <code>.MatchType match_type = 10;</code>
      * @return The matchType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType getMatchType() {
@@ -152,7 +152,7 @@ public final class PlayerCancelMatchReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (matchType_ != emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.MATCH_TYPE_NONE.getNumber()) {
-        output.writeEnum(1, matchType_);
+        output.writeEnum(10, matchType_);
       }
       unknownFields.writeTo(output);
     }
@@ -165,7 +165,7 @@ public final class PlayerCancelMatchReqOuterClass {
       size = 0;
       if (matchType_ != emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.MATCH_TYPE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(1, matchType_);
+          .computeEnumSize(10, matchType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -293,8 +293,8 @@ public final class PlayerCancelMatchReqOuterClass {
     }
     /**
      * <pre>
-     * Name: KAONIMBCNLI
-     * CmdId: 4196
+     * CmdId: 4171
+     * Obf: CEOKCPHMBIB
      * </pre>
      *
      * Protobuf type {@code PlayerCancelMatchReq}
@@ -445,14 +445,14 @@ public final class PlayerCancelMatchReqOuterClass {
 
       private int matchType_ = 0;
       /**
-       * <code>.MatchType match_type = 1;</code>
+       * <code>.MatchType match_type = 10;</code>
        * @return The enum numeric value on the wire for matchType.
        */
       @java.lang.Override public int getMatchTypeValue() {
         return matchType_;
       }
       /**
-       * <code>.MatchType match_type = 1;</code>
+       * <code>.MatchType match_type = 10;</code>
        * @param value The enum numeric value on the wire for matchType to set.
        * @return This builder for chaining.
        */
@@ -463,7 +463,7 @@ public final class PlayerCancelMatchReqOuterClass {
         return this;
       }
       /**
-       * <code>.MatchType match_type = 1;</code>
+       * <code>.MatchType match_type = 10;</code>
        * @return The matchType.
        */
       @java.lang.Override
@@ -473,7 +473,7 @@ public final class PlayerCancelMatchReqOuterClass {
         return result == null ? emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.MatchType match_type = 1;</code>
+       * <code>.MatchType match_type = 10;</code>
        * @param value The matchType to set.
        * @return This builder for chaining.
        */
@@ -487,7 +487,7 @@ public final class PlayerCancelMatchReqOuterClass {
         return this;
       }
       /**
-       * <code>.MatchType match_type = 1;</code>
+       * <code>.MatchType match_type = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearMatchType() {
@@ -565,7 +565,7 @@ public final class PlayerCancelMatchReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\032PlayerCancelMatchReq.proto\032\017MatchType." +
       "proto\"6\n\024PlayerCancelMatchReq\022\036\n\nmatch_t" +
-      "ype\030\001 \001(\0162\n.MatchTypeB\033\n\031emu.grasscutter" +
+      "ype\030\n \001(\0162\n.MatchTypeB\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

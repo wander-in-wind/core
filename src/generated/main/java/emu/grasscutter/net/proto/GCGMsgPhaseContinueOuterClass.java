@@ -20,7 +20,7 @@ public final class GCGMsgPhaseContinueOuterClass {
   }
   /**
    * <pre>
-   * Name: LPPEJPJNOEE
+   * Obf: GFDFCHHFLNJ
    * </pre>
    *
    * Protobuf type {@code GCGMsgPhaseContinue}
@@ -245,7 +245,7 @@ public final class GCGMsgPhaseContinueOuterClass {
     }
     /**
      * <pre>
-     * Name: LPPEJPJNOEE
+     * Obf: GFDFCHHFLNJ
      * </pre>
      *
      * Protobuf type {@code GCGMsgPhaseContinue}

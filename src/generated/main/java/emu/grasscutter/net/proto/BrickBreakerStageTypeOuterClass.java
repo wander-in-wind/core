@@ -16,7 +16,7 @@ public final class BrickBreakerStageTypeOuterClass {
   }
   /**
    * <pre>
-   * Name: KNECANABDCO
+   * Obf: INKEDONPJCP
    * </pre>
    *
    * Protobuf enum {@code BrickBreakerStageType}

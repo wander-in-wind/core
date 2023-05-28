@@ -19,67 +19,67 @@ public final class RogueSwitchAvatarRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 12;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>repeated uint64 onstage_avatar_guid_list = 6;</code>
-     * @return A list containing the onstageAvatarGuidList.
-     */
-    java.util.List<java.lang.Long> getOnstageAvatarGuidListList();
-    /**
-     * <code>repeated uint64 onstage_avatar_guid_list = 6;</code>
-     * @return The count of onstageAvatarGuidList.
-     */
-    int getOnstageAvatarGuidListCount();
-    /**
-     * <code>repeated uint64 onstage_avatar_guid_list = 6;</code>
-     * @param index The index of the element to return.
-     * @return The onstageAvatarGuidList at the given index.
-     */
-    long getOnstageAvatarGuidList(int index);
-
-    /**
-     * <code>uint32 cell_id = 5;</code>
-     * @return The cellId.
-     */
-    int getCellId();
-
-    /**
-     * <code>uint32 dungeon_id = 13;</code>
-     * @return The dungeonId.
-     */
-    int getDungeonId();
-
-    /**
-     * <code>repeated uint64 backstage_avatar_guid_list = 4;</code>
+     * <code>repeated uint64 backstage_avatar_guid_list = 1;</code>
      * @return A list containing the backstageAvatarGuidList.
      */
     java.util.List<java.lang.Long> getBackstageAvatarGuidListList();
     /**
-     * <code>repeated uint64 backstage_avatar_guid_list = 4;</code>
+     * <code>repeated uint64 backstage_avatar_guid_list = 1;</code>
      * @return The count of backstageAvatarGuidList.
      */
     int getBackstageAvatarGuidListCount();
     /**
-     * <code>repeated uint64 backstage_avatar_guid_list = 4;</code>
+     * <code>repeated uint64 backstage_avatar_guid_list = 1;</code>
      * @param index The index of the element to return.
      * @return The backstageAvatarGuidList at the given index.
      */
     long getBackstageAvatarGuidList(int index);
 
     /**
-     * <code>uint64 cur_avatar_guid = 9;</code>
+     * <code>uint32 dungeon_id = 8;</code>
+     * @return The dungeonId.
+     */
+    int getDungeonId();
+
+    /**
+     * <code>uint32 cell_id = 9;</code>
+     * @return The cellId.
+     */
+    int getCellId();
+
+    /**
+     * <code>int32 retcode = 3;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
+
+    /**
+     * <code>repeated uint64 onstage_avatar_guid_list = 15;</code>
+     * @return A list containing the onstageAvatarGuidList.
+     */
+    java.util.List<java.lang.Long> getOnstageAvatarGuidListList();
+    /**
+     * <code>repeated uint64 onstage_avatar_guid_list = 15;</code>
+     * @return The count of onstageAvatarGuidList.
+     */
+    int getOnstageAvatarGuidListCount();
+    /**
+     * <code>repeated uint64 onstage_avatar_guid_list = 15;</code>
+     * @param index The index of the element to return.
+     * @return The onstageAvatarGuidList at the given index.
+     */
+    long getOnstageAvatarGuidList(int index);
+
+    /**
+     * <code>uint64 cur_avatar_guid = 7;</code>
      * @return The curAvatarGuid.
      */
     long getCurAvatarGuid();
   }
   /**
    * <pre>
-   * Name: ACAAHFKBPFI
-   * CmdId: 8259
+   * CmdId: 8792
+   * Obf: PAMJGNCPGFM
    * </pre>
    *
    * Protobuf type {@code RogueSwitchAvatarRsp}
@@ -94,8 +94,8 @@ public final class RogueSwitchAvatarRspOuterClass {
       super(builder);
     }
     private RogueSwitchAvatarRsp() {
-      onstageAvatarGuidList_ = emptyLongList();
       backstageAvatarGuidList_ = emptyLongList();
+      onstageAvatarGuidList_ = emptyLongList();
     }
 
     @java.lang.Override
@@ -129,20 +129,20 @@ public final class RogueSwitchAvatarRspOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+            case 8: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 backstageAvatarGuidList_ = newLongList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               backstageAvatarGuidList_.addLong(input.readUInt64());
               break;
             }
-            case 34: {
+            case 10: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
                 backstageAvatarGuidList_ = newLongList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
                 backstageAvatarGuidList_.addLong(input.readUInt64());
@@ -150,45 +150,45 @@ public final class RogueSwitchAvatarRspOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 40: {
+            case 24: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 56: {
+
+              curAvatarGuid_ = input.readUInt64();
+              break;
+            }
+            case 64: {
+
+              dungeonId_ = input.readUInt32();
+              break;
+            }
+            case 72: {
 
               cellId_ = input.readUInt32();
               break;
             }
-            case 48: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+            case 120: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 onstageAvatarGuidList_ = newLongList();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000002;
               }
               onstageAvatarGuidList_.addLong(input.readUInt64());
               break;
             }
-            case 50: {
+            case 122: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
                 onstageAvatarGuidList_ = newLongList();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000002;
               }
               while (input.getBytesUntilLimit() > 0) {
                 onstageAvatarGuidList_.addLong(input.readUInt64());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 72: {
-
-              curAvatarGuid_ = input.readUInt64();
-              break;
-            }
-            case 96: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 104: {
-
-              dungeonId_ = input.readUInt32();
               break;
             }
             default: {
@@ -206,10 +206,10 @@ public final class RogueSwitchAvatarRspOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
           backstageAvatarGuidList_.makeImmutable(); // C
         }
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
           onstageAvatarGuidList_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
@@ -229,71 +229,10 @@ public final class RogueSwitchAvatarRspOuterClass {
               emu.grasscutter.net.proto.RogueSwitchAvatarRspOuterClass.RogueSwitchAvatarRsp.class, emu.grasscutter.net.proto.RogueSwitchAvatarRspOuterClass.RogueSwitchAvatarRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 12;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 12;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int ONSTAGE_AVATAR_GUID_LIST_FIELD_NUMBER = 6;
-    private com.google.protobuf.Internal.LongList onstageAvatarGuidList_;
-    /**
-     * <code>repeated uint64 onstage_avatar_guid_list = 6;</code>
-     * @return A list containing the onstageAvatarGuidList.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Long>
-        getOnstageAvatarGuidListList() {
-      return onstageAvatarGuidList_;
-    }
-    /**
-     * <code>repeated uint64 onstage_avatar_guid_list = 6;</code>
-     * @return The count of onstageAvatarGuidList.
-     */
-    public int getOnstageAvatarGuidListCount() {
-      return onstageAvatarGuidList_.size();
-    }
-    /**
-     * <code>repeated uint64 onstage_avatar_guid_list = 6;</code>
-     * @param index The index of the element to return.
-     * @return The onstageAvatarGuidList at the given index.
-     */
-    public long getOnstageAvatarGuidList(int index) {
-      return onstageAvatarGuidList_.getLong(index);
-    }
-    private int onstageAvatarGuidListMemoizedSerializedSize = -1;
-
-    public static final int CELL_ID_FIELD_NUMBER = 5;
-    private int cellId_;
-    /**
-     * <code>uint32 cell_id = 5;</code>
-     * @return The cellId.
-     */
-    @java.lang.Override
-    public int getCellId() {
-      return cellId_;
-    }
-
-    public static final int DUNGEON_ID_FIELD_NUMBER = 13;
-    private int dungeonId_;
-    /**
-     * <code>uint32 dungeon_id = 13;</code>
-     * @return The dungeonId.
-     */
-    @java.lang.Override
-    public int getDungeonId() {
-      return dungeonId_;
-    }
-
-    public static final int BACKSTAGE_AVATAR_GUID_LIST_FIELD_NUMBER = 4;
+    public static final int BACKSTAGE_AVATAR_GUID_LIST_FIELD_NUMBER = 1;
     private com.google.protobuf.Internal.LongList backstageAvatarGuidList_;
     /**
-     * <code>repeated uint64 backstage_avatar_guid_list = 4;</code>
+     * <code>repeated uint64 backstage_avatar_guid_list = 1;</code>
      * @return A list containing the backstageAvatarGuidList.
      */
     @java.lang.Override
@@ -302,14 +241,14 @@ public final class RogueSwitchAvatarRspOuterClass {
       return backstageAvatarGuidList_;
     }
     /**
-     * <code>repeated uint64 backstage_avatar_guid_list = 4;</code>
+     * <code>repeated uint64 backstage_avatar_guid_list = 1;</code>
      * @return The count of backstageAvatarGuidList.
      */
     public int getBackstageAvatarGuidListCount() {
       return backstageAvatarGuidList_.size();
     }
     /**
-     * <code>repeated uint64 backstage_avatar_guid_list = 4;</code>
+     * <code>repeated uint64 backstage_avatar_guid_list = 1;</code>
      * @param index The index of the element to return.
      * @return The backstageAvatarGuidList at the given index.
      */
@@ -318,10 +257,71 @@ public final class RogueSwitchAvatarRspOuterClass {
     }
     private int backstageAvatarGuidListMemoizedSerializedSize = -1;
 
-    public static final int CUR_AVATAR_GUID_FIELD_NUMBER = 9;
+    public static final int DUNGEON_ID_FIELD_NUMBER = 8;
+    private int dungeonId_;
+    /**
+     * <code>uint32 dungeon_id = 8;</code>
+     * @return The dungeonId.
+     */
+    @java.lang.Override
+    public int getDungeonId() {
+      return dungeonId_;
+    }
+
+    public static final int CELL_ID_FIELD_NUMBER = 9;
+    private int cellId_;
+    /**
+     * <code>uint32 cell_id = 9;</code>
+     * @return The cellId.
+     */
+    @java.lang.Override
+    public int getCellId() {
+      return cellId_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 3;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 3;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
+    public static final int ONSTAGE_AVATAR_GUID_LIST_FIELD_NUMBER = 15;
+    private com.google.protobuf.Internal.LongList onstageAvatarGuidList_;
+    /**
+     * <code>repeated uint64 onstage_avatar_guid_list = 15;</code>
+     * @return A list containing the onstageAvatarGuidList.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Long>
+        getOnstageAvatarGuidListList() {
+      return onstageAvatarGuidList_;
+    }
+    /**
+     * <code>repeated uint64 onstage_avatar_guid_list = 15;</code>
+     * @return The count of onstageAvatarGuidList.
+     */
+    public int getOnstageAvatarGuidListCount() {
+      return onstageAvatarGuidList_.size();
+    }
+    /**
+     * <code>repeated uint64 onstage_avatar_guid_list = 15;</code>
+     * @param index The index of the element to return.
+     * @return The onstageAvatarGuidList at the given index.
+     */
+    public long getOnstageAvatarGuidList(int index) {
+      return onstageAvatarGuidList_.getLong(index);
+    }
+    private int onstageAvatarGuidListMemoizedSerializedSize = -1;
+
+    public static final int CUR_AVATAR_GUID_FIELD_NUMBER = 7;
     private long curAvatarGuid_;
     /**
-     * <code>uint64 cur_avatar_guid = 9;</code>
+     * <code>uint64 cur_avatar_guid = 7;</code>
      * @return The curAvatarGuid.
      */
     @java.lang.Override
@@ -345,30 +345,30 @@ public final class RogueSwitchAvatarRspOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getBackstageAvatarGuidListList().size() > 0) {
-        output.writeUInt32NoTag(34);
+        output.writeUInt32NoTag(10);
         output.writeUInt32NoTag(backstageAvatarGuidListMemoizedSerializedSize);
       }
       for (int i = 0; i < backstageAvatarGuidList_.size(); i++) {
         output.writeUInt64NoTag(backstageAvatarGuidList_.getLong(i));
       }
+      if (retcode_ != 0) {
+        output.writeInt32(3, retcode_);
+      }
+      if (curAvatarGuid_ != 0L) {
+        output.writeUInt64(7, curAvatarGuid_);
+      }
+      if (dungeonId_ != 0) {
+        output.writeUInt32(8, dungeonId_);
+      }
       if (cellId_ != 0) {
-        output.writeUInt32(5, cellId_);
+        output.writeUInt32(9, cellId_);
       }
       if (getOnstageAvatarGuidListList().size() > 0) {
-        output.writeUInt32NoTag(50);
+        output.writeUInt32NoTag(122);
         output.writeUInt32NoTag(onstageAvatarGuidListMemoizedSerializedSize);
       }
       for (int i = 0; i < onstageAvatarGuidList_.size(); i++) {
         output.writeUInt64NoTag(onstageAvatarGuidList_.getLong(i));
-      }
-      if (curAvatarGuid_ != 0L) {
-        output.writeUInt64(9, curAvatarGuid_);
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(12, retcode_);
-      }
-      if (dungeonId_ != 0) {
-        output.writeUInt32(13, dungeonId_);
       }
       unknownFields.writeTo(output);
     }
@@ -393,9 +393,21 @@ public final class RogueSwitchAvatarRspOuterClass {
         }
         backstageAvatarGuidListMemoizedSerializedSize = dataSize;
       }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, retcode_);
+      }
+      if (curAvatarGuid_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(7, curAvatarGuid_);
+      }
+      if (dungeonId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, dungeonId_);
+      }
       if (cellId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, cellId_);
+          .computeUInt32Size(9, cellId_);
       }
       {
         int dataSize = 0;
@@ -410,18 +422,6 @@ public final class RogueSwitchAvatarRspOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         onstageAvatarGuidListMemoizedSerializedSize = dataSize;
-      }
-      if (curAvatarGuid_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(9, curAvatarGuid_);
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(12, retcode_);
-      }
-      if (dungeonId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, dungeonId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -438,16 +438,16 @@ public final class RogueSwitchAvatarRspOuterClass {
       }
       emu.grasscutter.net.proto.RogueSwitchAvatarRspOuterClass.RogueSwitchAvatarRsp other = (emu.grasscutter.net.proto.RogueSwitchAvatarRspOuterClass.RogueSwitchAvatarRsp) obj;
 
+      if (!getBackstageAvatarGuidListList()
+          .equals(other.getBackstageAvatarGuidListList())) return false;
+      if (getDungeonId()
+          != other.getDungeonId()) return false;
+      if (getCellId()
+          != other.getCellId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
       if (!getOnstageAvatarGuidListList()
           .equals(other.getOnstageAvatarGuidListList())) return false;
-      if (getCellId()
-          != other.getCellId()) return false;
-      if (getDungeonId()
-          != other.getDungeonId()) return false;
-      if (!getBackstageAvatarGuidListList()
-          .equals(other.getBackstageAvatarGuidListList())) return false;
       if (getCurAvatarGuid()
           != other.getCurAvatarGuid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -461,19 +461,19 @@ public final class RogueSwitchAvatarRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      if (getBackstageAvatarGuidListCount() > 0) {
+        hash = (37 * hash) + BACKSTAGE_AVATAR_GUID_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getBackstageAvatarGuidListList().hashCode();
+      }
+      hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getDungeonId();
+      hash = (37 * hash) + CELL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getCellId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
       if (getOnstageAvatarGuidListCount() > 0) {
         hash = (37 * hash) + ONSTAGE_AVATAR_GUID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getOnstageAvatarGuidListList().hashCode();
-      }
-      hash = (37 * hash) + CELL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCellId();
-      hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getDungeonId();
-      if (getBackstageAvatarGuidListCount() > 0) {
-        hash = (37 * hash) + BACKSTAGE_AVATAR_GUID_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getBackstageAvatarGuidListList().hashCode();
       }
       hash = (37 * hash) + CUR_AVATAR_GUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
@@ -575,8 +575,8 @@ public final class RogueSwitchAvatarRspOuterClass {
     }
     /**
      * <pre>
-     * Name: ACAAHFKBPFI
-     * CmdId: 8259
+     * CmdId: 8792
+     * Obf: PAMJGNCPGFM
      * </pre>
      *
      * Protobuf type {@code RogueSwitchAvatarRsp}
@@ -616,15 +616,15 @@ public final class RogueSwitchAvatarRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        backstageAvatarGuidList_ = emptyLongList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        dungeonId_ = 0;
+
+        cellId_ = 0;
+
         retcode_ = 0;
 
         onstageAvatarGuidList_ = emptyLongList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        cellId_ = 0;
-
-        dungeonId_ = 0;
-
-        backstageAvatarGuidList_ = emptyLongList();
         bitField0_ = (bitField0_ & ~0x00000002);
         curAvatarGuid_ = 0L;
 
@@ -655,19 +655,19 @@ public final class RogueSwitchAvatarRspOuterClass {
       public emu.grasscutter.net.proto.RogueSwitchAvatarRspOuterClass.RogueSwitchAvatarRsp buildPartial() {
         emu.grasscutter.net.proto.RogueSwitchAvatarRspOuterClass.RogueSwitchAvatarRsp result = new emu.grasscutter.net.proto.RogueSwitchAvatarRspOuterClass.RogueSwitchAvatarRsp(this);
         int from_bitField0_ = bitField0_;
-        result.retcode_ = retcode_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          onstageAvatarGuidList_.makeImmutable();
+          backstageAvatarGuidList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.onstageAvatarGuidList_ = onstageAvatarGuidList_;
-        result.cellId_ = cellId_;
+        result.backstageAvatarGuidList_ = backstageAvatarGuidList_;
         result.dungeonId_ = dungeonId_;
+        result.cellId_ = cellId_;
+        result.retcode_ = retcode_;
         if (((bitField0_ & 0x00000002) != 0)) {
-          backstageAvatarGuidList_.makeImmutable();
+          onstageAvatarGuidList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000002);
         }
-        result.backstageAvatarGuidList_ = backstageAvatarGuidList_;
+        result.onstageAvatarGuidList_ = onstageAvatarGuidList_;
         result.curAvatarGuid_ = curAvatarGuid_;
         onBuilt();
         return result;
@@ -717,32 +717,32 @@ public final class RogueSwitchAvatarRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.RogueSwitchAvatarRspOuterClass.RogueSwitchAvatarRsp other) {
         if (other == emu.grasscutter.net.proto.RogueSwitchAvatarRspOuterClass.RogueSwitchAvatarRsp.getDefaultInstance()) return this;
+        if (!other.backstageAvatarGuidList_.isEmpty()) {
+          if (backstageAvatarGuidList_.isEmpty()) {
+            backstageAvatarGuidList_ = other.backstageAvatarGuidList_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureBackstageAvatarGuidListIsMutable();
+            backstageAvatarGuidList_.addAll(other.backstageAvatarGuidList_);
+          }
+          onChanged();
+        }
+        if (other.getDungeonId() != 0) {
+          setDungeonId(other.getDungeonId());
+        }
+        if (other.getCellId() != 0) {
+          setCellId(other.getCellId());
+        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
         if (!other.onstageAvatarGuidList_.isEmpty()) {
           if (onstageAvatarGuidList_.isEmpty()) {
             onstageAvatarGuidList_ = other.onstageAvatarGuidList_;
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000002);
           } else {
             ensureOnstageAvatarGuidListIsMutable();
             onstageAvatarGuidList_.addAll(other.onstageAvatarGuidList_);
-          }
-          onChanged();
-        }
-        if (other.getCellId() != 0) {
-          setCellId(other.getCellId());
-        }
-        if (other.getDungeonId() != 0) {
-          setDungeonId(other.getDungeonId());
-        }
-        if (!other.backstageAvatarGuidList_.isEmpty()) {
-          if (backstageAvatarGuidList_.isEmpty()) {
-            backstageAvatarGuidList_ = other.backstageAvatarGuidList_;
-            bitField0_ = (bitField0_ & ~0x00000002);
-          } else {
-            ensureBackstageAvatarGuidListIsMutable();
-            backstageAvatarGuidList_.addAll(other.backstageAvatarGuidList_);
           }
           onChanged();
         }
@@ -779,203 +779,31 @@ public final class RogueSwitchAvatarRspOuterClass {
       }
       private int bitField0_;
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 12;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 12;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.LongList onstageAvatarGuidList_ = emptyLongList();
-      private void ensureOnstageAvatarGuidListIsMutable() {
+      private com.google.protobuf.Internal.LongList backstageAvatarGuidList_ = emptyLongList();
+      private void ensureBackstageAvatarGuidListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          onstageAvatarGuidList_ = mutableCopy(onstageAvatarGuidList_);
+          backstageAvatarGuidList_ = mutableCopy(backstageAvatarGuidList_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <code>repeated uint64 onstage_avatar_guid_list = 6;</code>
-       * @return A list containing the onstageAvatarGuidList.
-       */
-      public java.util.List<java.lang.Long>
-          getOnstageAvatarGuidListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(onstageAvatarGuidList_) : onstageAvatarGuidList_;
-      }
-      /**
-       * <code>repeated uint64 onstage_avatar_guid_list = 6;</code>
-       * @return The count of onstageAvatarGuidList.
-       */
-      public int getOnstageAvatarGuidListCount() {
-        return onstageAvatarGuidList_.size();
-      }
-      /**
-       * <code>repeated uint64 onstage_avatar_guid_list = 6;</code>
-       * @param index The index of the element to return.
-       * @return The onstageAvatarGuidList at the given index.
-       */
-      public long getOnstageAvatarGuidList(int index) {
-        return onstageAvatarGuidList_.getLong(index);
-      }
-      /**
-       * <code>repeated uint64 onstage_avatar_guid_list = 6;</code>
-       * @param index The index to set the value at.
-       * @param value The onstageAvatarGuidList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOnstageAvatarGuidList(
-          int index, long value) {
-        ensureOnstageAvatarGuidListIsMutable();
-        onstageAvatarGuidList_.setLong(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint64 onstage_avatar_guid_list = 6;</code>
-       * @param value The onstageAvatarGuidList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addOnstageAvatarGuidList(long value) {
-        ensureOnstageAvatarGuidListIsMutable();
-        onstageAvatarGuidList_.addLong(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint64 onstage_avatar_guid_list = 6;</code>
-       * @param values The onstageAvatarGuidList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllOnstageAvatarGuidList(
-          java.lang.Iterable<? extends java.lang.Long> values) {
-        ensureOnstageAvatarGuidListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, onstageAvatarGuidList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint64 onstage_avatar_guid_list = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOnstageAvatarGuidList() {
-        onstageAvatarGuidList_ = emptyLongList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private int cellId_ ;
-      /**
-       * <code>uint32 cell_id = 5;</code>
-       * @return The cellId.
-       */
-      @java.lang.Override
-      public int getCellId() {
-        return cellId_;
-      }
-      /**
-       * <code>uint32 cell_id = 5;</code>
-       * @param value The cellId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCellId(int value) {
-        
-        cellId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 cell_id = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCellId() {
-        
-        cellId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int dungeonId_ ;
-      /**
-       * <code>uint32 dungeon_id = 13;</code>
-       * @return The dungeonId.
-       */
-      @java.lang.Override
-      public int getDungeonId() {
-        return dungeonId_;
-      }
-      /**
-       * <code>uint32 dungeon_id = 13;</code>
-       * @param value The dungeonId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDungeonId(int value) {
-        
-        dungeonId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 dungeon_id = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDungeonId() {
-        
-        dungeonId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.LongList backstageAvatarGuidList_ = emptyLongList();
-      private void ensureBackstageAvatarGuidListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          backstageAvatarGuidList_ = mutableCopy(backstageAvatarGuidList_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-      /**
-       * <code>repeated uint64 backstage_avatar_guid_list = 4;</code>
+       * <code>repeated uint64 backstage_avatar_guid_list = 1;</code>
        * @return A list containing the backstageAvatarGuidList.
        */
       public java.util.List<java.lang.Long>
           getBackstageAvatarGuidListList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
+        return ((bitField0_ & 0x00000001) != 0) ?
                  java.util.Collections.unmodifiableList(backstageAvatarGuidList_) : backstageAvatarGuidList_;
       }
       /**
-       * <code>repeated uint64 backstage_avatar_guid_list = 4;</code>
+       * <code>repeated uint64 backstage_avatar_guid_list = 1;</code>
        * @return The count of backstageAvatarGuidList.
        */
       public int getBackstageAvatarGuidListCount() {
         return backstageAvatarGuidList_.size();
       }
       /**
-       * <code>repeated uint64 backstage_avatar_guid_list = 4;</code>
+       * <code>repeated uint64 backstage_avatar_guid_list = 1;</code>
        * @param index The index of the element to return.
        * @return The backstageAvatarGuidList at the given index.
        */
@@ -983,7 +811,7 @@ public final class RogueSwitchAvatarRspOuterClass {
         return backstageAvatarGuidList_.getLong(index);
       }
       /**
-       * <code>repeated uint64 backstage_avatar_guid_list = 4;</code>
+       * <code>repeated uint64 backstage_avatar_guid_list = 1;</code>
        * @param index The index to set the value at.
        * @param value The backstageAvatarGuidList to set.
        * @return This builder for chaining.
@@ -996,7 +824,7 @@ public final class RogueSwitchAvatarRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 backstage_avatar_guid_list = 4;</code>
+       * <code>repeated uint64 backstage_avatar_guid_list = 1;</code>
        * @param value The backstageAvatarGuidList to add.
        * @return This builder for chaining.
        */
@@ -1007,7 +835,7 @@ public final class RogueSwitchAvatarRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 backstage_avatar_guid_list = 4;</code>
+       * <code>repeated uint64 backstage_avatar_guid_list = 1;</code>
        * @param values The backstageAvatarGuidList to add.
        * @return This builder for chaining.
        */
@@ -1020,11 +848,183 @@ public final class RogueSwitchAvatarRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 backstage_avatar_guid_list = 4;</code>
+       * <code>repeated uint64 backstage_avatar_guid_list = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearBackstageAvatarGuidList() {
         backstageAvatarGuidList_ = emptyLongList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private int dungeonId_ ;
+      /**
+       * <code>uint32 dungeon_id = 8;</code>
+       * @return The dungeonId.
+       */
+      @java.lang.Override
+      public int getDungeonId() {
+        return dungeonId_;
+      }
+      /**
+       * <code>uint32 dungeon_id = 8;</code>
+       * @param value The dungeonId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDungeonId(int value) {
+        
+        dungeonId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 dungeon_id = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDungeonId() {
+        
+        dungeonId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int cellId_ ;
+      /**
+       * <code>uint32 cell_id = 9;</code>
+       * @return The cellId.
+       */
+      @java.lang.Override
+      public int getCellId() {
+        return cellId_;
+      }
+      /**
+       * <code>uint32 cell_id = 9;</code>
+       * @param value The cellId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCellId(int value) {
+        
+        cellId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 cell_id = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCellId() {
+        
+        cellId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 3;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 3;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.LongList onstageAvatarGuidList_ = emptyLongList();
+      private void ensureOnstageAvatarGuidListIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          onstageAvatarGuidList_ = mutableCopy(onstageAvatarGuidList_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+      /**
+       * <code>repeated uint64 onstage_avatar_guid_list = 15;</code>
+       * @return A list containing the onstageAvatarGuidList.
+       */
+      public java.util.List<java.lang.Long>
+          getOnstageAvatarGuidListList() {
+        return ((bitField0_ & 0x00000002) != 0) ?
+                 java.util.Collections.unmodifiableList(onstageAvatarGuidList_) : onstageAvatarGuidList_;
+      }
+      /**
+       * <code>repeated uint64 onstage_avatar_guid_list = 15;</code>
+       * @return The count of onstageAvatarGuidList.
+       */
+      public int getOnstageAvatarGuidListCount() {
+        return onstageAvatarGuidList_.size();
+      }
+      /**
+       * <code>repeated uint64 onstage_avatar_guid_list = 15;</code>
+       * @param index The index of the element to return.
+       * @return The onstageAvatarGuidList at the given index.
+       */
+      public long getOnstageAvatarGuidList(int index) {
+        return onstageAvatarGuidList_.getLong(index);
+      }
+      /**
+       * <code>repeated uint64 onstage_avatar_guid_list = 15;</code>
+       * @param index The index to set the value at.
+       * @param value The onstageAvatarGuidList to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOnstageAvatarGuidList(
+          int index, long value) {
+        ensureOnstageAvatarGuidListIsMutable();
+        onstageAvatarGuidList_.setLong(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint64 onstage_avatar_guid_list = 15;</code>
+       * @param value The onstageAvatarGuidList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addOnstageAvatarGuidList(long value) {
+        ensureOnstageAvatarGuidListIsMutable();
+        onstageAvatarGuidList_.addLong(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint64 onstage_avatar_guid_list = 15;</code>
+       * @param values The onstageAvatarGuidList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllOnstageAvatarGuidList(
+          java.lang.Iterable<? extends java.lang.Long> values) {
+        ensureOnstageAvatarGuidListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, onstageAvatarGuidList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint64 onstage_avatar_guid_list = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOnstageAvatarGuidList() {
+        onstageAvatarGuidList_ = emptyLongList();
         bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
@@ -1032,7 +1032,7 @@ public final class RogueSwitchAvatarRspOuterClass {
 
       private long curAvatarGuid_ ;
       /**
-       * <code>uint64 cur_avatar_guid = 9;</code>
+       * <code>uint64 cur_avatar_guid = 7;</code>
        * @return The curAvatarGuid.
        */
       @java.lang.Override
@@ -1040,7 +1040,7 @@ public final class RogueSwitchAvatarRspOuterClass {
         return curAvatarGuid_;
       }
       /**
-       * <code>uint64 cur_avatar_guid = 9;</code>
+       * <code>uint64 cur_avatar_guid = 7;</code>
        * @param value The curAvatarGuid to set.
        * @return This builder for chaining.
        */
@@ -1051,7 +1051,7 @@ public final class RogueSwitchAvatarRspOuterClass {
         return this;
       }
       /**
-       * <code>uint64 cur_avatar_guid = 9;</code>
+       * <code>uint64 cur_avatar_guid = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearCurAvatarGuid() {
@@ -1128,10 +1128,10 @@ public final class RogueSwitchAvatarRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032RogueSwitchAvatarRsp.proto\"\253\001\n\024RogueSw" +
-      "itchAvatarRsp\022\017\n\007retcode\030\014 \001(\005\022 \n\030onstag" +
-      "e_avatar_guid_list\030\006 \003(\004\022\017\n\007cell_id\030\005 \001(" +
-      "\r\022\022\n\ndungeon_id\030\r \001(\r\022\"\n\032backstage_avata" +
-      "r_guid_list\030\004 \003(\004\022\027\n\017cur_avatar_guid\030\t \001" +
+      "itchAvatarRsp\022\"\n\032backstage_avatar_guid_l" +
+      "ist\030\001 \003(\004\022\022\n\ndungeon_id\030\010 \001(\r\022\017\n\007cell_id" +
+      "\030\t \001(\r\022\017\n\007retcode\030\003 \001(\005\022 \n\030onstage_avata" +
+      "r_guid_list\030\017 \003(\004\022\027\n\017cur_avatar_guid\030\007 \001" +
       "(\004B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1143,7 +1143,7 @@ public final class RogueSwitchAvatarRspOuterClass {
     internal_static_RogueSwitchAvatarRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RogueSwitchAvatarRsp_descriptor,
-        new java.lang.String[] { "Retcode", "OnstageAvatarGuidList", "CellId", "DungeonId", "BackstageAvatarGuidList", "CurAvatarGuid", });
+        new java.lang.String[] { "BackstageAvatarGuidList", "DungeonId", "CellId", "Retcode", "OnstageAvatarGuidList", "CurAvatarGuid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

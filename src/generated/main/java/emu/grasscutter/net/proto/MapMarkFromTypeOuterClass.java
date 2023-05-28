@@ -16,7 +16,7 @@ public final class MapMarkFromTypeOuterClass {
   }
   /**
    * <pre>
-   * Name: NPBCGNLAONB
+   * Obf: PNMEOLJPFCC
    * </pre>
    *
    * Protobuf enum {@code MapMarkFromType}
@@ -24,10 +24,6 @@ public final class MapMarkFromTypeOuterClass {
   public enum MapMarkFromType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <pre>
-     *NOE typo?
-     * </pre>
-     *
      * <code>MAP_MARK_FROM_TYPE_NONE = 0;</code>
      */
     MAP_MARK_FROM_TYPE_NONE(0),
@@ -43,10 +39,6 @@ public final class MapMarkFromTypeOuterClass {
     ;
 
     /**
-     * <pre>
-     *NOE typo?
-     * </pre>
-     *
      * <code>MAP_MARK_FROM_TYPE_NONE = 0;</code>
      */
     public static final int MAP_MARK_FROM_TYPE_NONE_VALUE = 0;

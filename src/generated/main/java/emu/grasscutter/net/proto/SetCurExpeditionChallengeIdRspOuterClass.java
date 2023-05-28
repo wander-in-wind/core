@@ -19,21 +19,21 @@ public final class SetCurExpeditionChallengeIdRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 4;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>uint32 id = 12;</code>
+     * <code>uint32 id = 5;</code>
      * @return The id.
      */
     int getId();
+
+    /**
+     * <code>int32 retcode = 3;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
    * <pre>
-   * Name: IEJDHFBPKOP
-   * CmdId: 2052
+   * CmdId: 2186
+   * Obf: OGOLDLMEIDA
    * </pre>
    *
    * Protobuf type {@code SetCurExpeditionChallengeIdRsp}
@@ -80,12 +80,12 @@ public final class SetCurExpeditionChallengeIdRspOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 24: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 96: {
+            case 40: {
 
               id_ = input.readUInt32();
               break;
@@ -122,26 +122,26 @@ public final class SetCurExpeditionChallengeIdRspOuterClass {
               emu.grasscutter.net.proto.SetCurExpeditionChallengeIdRspOuterClass.SetCurExpeditionChallengeIdRsp.class, emu.grasscutter.net.proto.SetCurExpeditionChallengeIdRspOuterClass.SetCurExpeditionChallengeIdRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 4;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 4;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int ID_FIELD_NUMBER = 12;
+    public static final int ID_FIELD_NUMBER = 5;
     private int id_;
     /**
-     * <code>uint32 id = 12;</code>
+     * <code>uint32 id = 5;</code>
      * @return The id.
      */
     @java.lang.Override
     public int getId() {
       return id_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 3;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 3;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,10 +159,10 @@ public final class SetCurExpeditionChallengeIdRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(4, retcode_);
+        output.writeInt32(3, retcode_);
       }
       if (id_ != 0) {
-        output.writeUInt32(12, id_);
+        output.writeUInt32(5, id_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +175,11 @@ public final class SetCurExpeditionChallengeIdRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, retcode_);
+          .computeInt32Size(3, retcode_);
       }
       if (id_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, id_);
+          .computeUInt32Size(5, id_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +196,10 @@ public final class SetCurExpeditionChallengeIdRspOuterClass {
       }
       emu.grasscutter.net.proto.SetCurExpeditionChallengeIdRspOuterClass.SetCurExpeditionChallengeIdRsp other = (emu.grasscutter.net.proto.SetCurExpeditionChallengeIdRspOuterClass.SetCurExpeditionChallengeIdRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getId()
           != other.getId()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +211,10 @@ public final class SetCurExpeditionChallengeIdRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + ID_FIELD_NUMBER;
       hash = (53 * hash) + getId();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +312,8 @@ public final class SetCurExpeditionChallengeIdRspOuterClass {
     }
     /**
      * <pre>
-     * Name: IEJDHFBPKOP
-     * CmdId: 2052
+     * CmdId: 2186
+     * Obf: OGOLDLMEIDA
      * </pre>
      *
      * Protobuf type {@code SetCurExpeditionChallengeIdRsp}
@@ -353,9 +353,9 @@ public final class SetCurExpeditionChallengeIdRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         id_ = 0;
+
+        retcode_ = 0;
 
         return this;
       }
@@ -383,8 +383,8 @@ public final class SetCurExpeditionChallengeIdRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SetCurExpeditionChallengeIdRspOuterClass.SetCurExpeditionChallengeIdRsp buildPartial() {
         emu.grasscutter.net.proto.SetCurExpeditionChallengeIdRspOuterClass.SetCurExpeditionChallengeIdRsp result = new emu.grasscutter.net.proto.SetCurExpeditionChallengeIdRspOuterClass.SetCurExpeditionChallengeIdRsp(this);
-        result.retcode_ = retcode_;
         result.id_ = id_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -433,11 +433,11 @@ public final class SetCurExpeditionChallengeIdRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SetCurExpeditionChallengeIdRspOuterClass.SetCurExpeditionChallengeIdRsp other) {
         if (other == emu.grasscutter.net.proto.SetCurExpeditionChallengeIdRspOuterClass.SetCurExpeditionChallengeIdRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getId() != 0) {
           setId(other.getId());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,40 +468,9 @@ public final class SetCurExpeditionChallengeIdRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 4;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 4;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int id_ ;
       /**
-       * <code>uint32 id = 12;</code>
+       * <code>uint32 id = 5;</code>
        * @return The id.
        */
       @java.lang.Override
@@ -509,7 +478,7 @@ public final class SetCurExpeditionChallengeIdRspOuterClass {
         return id_;
       }
       /**
-       * <code>uint32 id = 12;</code>
+       * <code>uint32 id = 5;</code>
        * @param value The id to set.
        * @return This builder for chaining.
        */
@@ -520,12 +489,43 @@ public final class SetCurExpeditionChallengeIdRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 id = 12;</code>
+       * <code>uint32 id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearId() {
         
         id_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 3;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 3;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -597,8 +597,8 @@ public final class SetCurExpeditionChallengeIdRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n$SetCurExpeditionChallengeIdRsp.proto\"=" +
-      "\n\036SetCurExpeditionChallengeIdRsp\022\017\n\007retc" +
-      "ode\030\004 \001(\005\022\n\n\002id\030\014 \001(\rB\033\n\031emu.grasscutter" +
+      "\n\036SetCurExpeditionChallengeIdRsp\022\n\n\002id\030\005" +
+      " \001(\r\022\017\n\007retcode\030\003 \001(\005B\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -610,7 +610,7 @@ public final class SetCurExpeditionChallengeIdRspOuterClass {
     internal_static_SetCurExpeditionChallengeIdRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SetCurExpeditionChallengeIdRsp_descriptor,
-        new java.lang.String[] { "Retcode", "Id", });
+        new java.lang.String[] { "Id", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -16,7 +16,7 @@ public final class HideAndSeekStageTypeOuterClass {
   }
   /**
    * <pre>
-   * Name: EHGNPLKIBNP
+   * Obf: GLCDALAIONK
    * </pre>
    *
    * Protobuf enum {@code HideAndSeekStageType}

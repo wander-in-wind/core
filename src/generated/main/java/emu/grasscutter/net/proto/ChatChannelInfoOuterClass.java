@@ -19,20 +19,20 @@ public final class ChatChannelInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 channel_id = 7;</code>
-     * @return The channelId.
-     */
-    int getChannelId();
-
-    /**
-     * <code>bool is_shield = 9;</code>
+     * <code>bool is_shield = 7;</code>
      * @return The isShield.
      */
     boolean getIsShield();
+
+    /**
+     * <code>uint32 channel_id = 8;</code>
+     * @return The channelId.
+     */
+    int getChannelId();
   }
   /**
    * <pre>
-   * Name: FFEPOPDPELC
+   * Obf: DJFFNNEHCFM
    * </pre>
    *
    * Protobuf type {@code ChatChannelInfo}
@@ -81,12 +81,12 @@ public final class ChatChannelInfoOuterClass {
               break;
             case 56: {
 
-              channelId_ = input.readUInt32();
+              isShield_ = input.readBool();
               break;
             }
-            case 72: {
+            case 64: {
 
-              isShield_ = input.readBool();
+              channelId_ = input.readUInt32();
               break;
             }
             default: {
@@ -121,26 +121,26 @@ public final class ChatChannelInfoOuterClass {
               emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo.class, emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo.Builder.class);
     }
 
-    public static final int CHANNEL_ID_FIELD_NUMBER = 7;
-    private int channelId_;
-    /**
-     * <code>uint32 channel_id = 7;</code>
-     * @return The channelId.
-     */
-    @java.lang.Override
-    public int getChannelId() {
-      return channelId_;
-    }
-
-    public static final int IS_SHIELD_FIELD_NUMBER = 9;
+    public static final int IS_SHIELD_FIELD_NUMBER = 7;
     private boolean isShield_;
     /**
-     * <code>bool is_shield = 9;</code>
+     * <code>bool is_shield = 7;</code>
      * @return The isShield.
      */
     @java.lang.Override
     public boolean getIsShield() {
       return isShield_;
+    }
+
+    public static final int CHANNEL_ID_FIELD_NUMBER = 8;
+    private int channelId_;
+    /**
+     * <code>uint32 channel_id = 8;</code>
+     * @return The channelId.
+     */
+    @java.lang.Override
+    public int getChannelId() {
+      return channelId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -157,11 +157,11 @@ public final class ChatChannelInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (channelId_ != 0) {
-        output.writeUInt32(7, channelId_);
-      }
       if (isShield_ != false) {
-        output.writeBool(9, isShield_);
+        output.writeBool(7, isShield_);
+      }
+      if (channelId_ != 0) {
+        output.writeUInt32(8, channelId_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +172,13 @@ public final class ChatChannelInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (channelId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, channelId_);
-      }
       if (isShield_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isShield_);
+          .computeBoolSize(7, isShield_);
+      }
+      if (channelId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, channelId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -195,10 +195,10 @@ public final class ChatChannelInfoOuterClass {
       }
       emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo other = (emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo) obj;
 
-      if (getChannelId()
-          != other.getChannelId()) return false;
       if (getIsShield()
           != other.getIsShield()) return false;
+      if (getChannelId()
+          != other.getChannelId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -210,11 +210,11 @@ public final class ChatChannelInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CHANNEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getChannelId();
       hash = (37 * hash) + IS_SHIELD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsShield());
+      hash = (37 * hash) + CHANNEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getChannelId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,7 +312,7 @@ public final class ChatChannelInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: FFEPOPDPELC
+     * Obf: DJFFNNEHCFM
      * </pre>
      *
      * Protobuf type {@code ChatChannelInfo}
@@ -352,9 +352,9 @@ public final class ChatChannelInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        channelId_ = 0;
-
         isShield_ = false;
+
+        channelId_ = 0;
 
         return this;
       }
@@ -382,8 +382,8 @@ public final class ChatChannelInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo buildPartial() {
         emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo result = new emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo(this);
-        result.channelId_ = channelId_;
         result.isShield_ = isShield_;
+        result.channelId_ = channelId_;
         onBuilt();
         return result;
       }
@@ -432,11 +432,11 @@ public final class ChatChannelInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo other) {
         if (other == emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo.getDefaultInstance()) return this;
-        if (other.getChannelId() != 0) {
-          setChannelId(other.getChannelId());
-        }
         if (other.getIsShield() != false) {
           setIsShield(other.getIsShield());
+        }
+        if (other.getChannelId() != 0) {
+          setChannelId(other.getChannelId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -467,40 +467,9 @@ public final class ChatChannelInfoOuterClass {
         return this;
       }
 
-      private int channelId_ ;
-      /**
-       * <code>uint32 channel_id = 7;</code>
-       * @return The channelId.
-       */
-      @java.lang.Override
-      public int getChannelId() {
-        return channelId_;
-      }
-      /**
-       * <code>uint32 channel_id = 7;</code>
-       * @param value The channelId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setChannelId(int value) {
-        
-        channelId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 channel_id = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearChannelId() {
-        
-        channelId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isShield_ ;
       /**
-       * <code>bool is_shield = 9;</code>
+       * <code>bool is_shield = 7;</code>
        * @return The isShield.
        */
       @java.lang.Override
@@ -508,7 +477,7 @@ public final class ChatChannelInfoOuterClass {
         return isShield_;
       }
       /**
-       * <code>bool is_shield = 9;</code>
+       * <code>bool is_shield = 7;</code>
        * @param value The isShield to set.
        * @return This builder for chaining.
        */
@@ -519,12 +488,43 @@ public final class ChatChannelInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_shield = 9;</code>
+       * <code>bool is_shield = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsShield() {
         
         isShield_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int channelId_ ;
+      /**
+       * <code>uint32 channel_id = 8;</code>
+       * @return The channelId.
+       */
+      @java.lang.Override
+      public int getChannelId() {
+        return channelId_;
+      }
+      /**
+       * <code>uint32 channel_id = 8;</code>
+       * @param value The channelId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setChannelId(int value) {
+        
+        channelId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 channel_id = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearChannelId() {
+        
+        channelId_ = 0;
         onChanged();
         return this;
       }
@@ -596,8 +596,8 @@ public final class ChatChannelInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025ChatChannelInfo.proto\"8\n\017ChatChannelIn" +
-      "fo\022\022\n\nchannel_id\030\007 \001(\r\022\021\n\tis_shield\030\t \001(" +
-      "\010B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "fo\022\021\n\tis_shield\030\007 \001(\010\022\022\n\nchannel_id\030\010 \001(" +
+      "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -608,7 +608,7 @@ public final class ChatChannelInfoOuterClass {
     internal_static_ChatChannelInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ChatChannelInfo_descriptor,
-        new java.lang.String[] { "ChannelId", "IsShield", });
+        new java.lang.String[] { "IsShield", "ChannelId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

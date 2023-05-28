@@ -19,69 +19,45 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 next_refresh_time = 11;</code>
-     * @return The nextRefreshTime.
-     */
-    int getNextRefreshTime();
-
-    /**
-     * <pre>
-     *CANJOFHONKD snooswap
-     * </pre>
-     *
-     * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 9;</code>
+     * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 8;</code>
      */
     java.util.List<emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfo> 
         getChallengeInfoListList();
     /**
-     * <pre>
-     *CANJOFHONKD snooswap
-     * </pre>
-     *
-     * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 9;</code>
+     * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 8;</code>
      */
     emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfo getChallengeInfoList(int index);
     /**
-     * <pre>
-     *CANJOFHONKD snooswap
-     * </pre>
-     *
-     * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 9;</code>
+     * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 8;</code>
      */
     int getChallengeInfoListCount();
     /**
-     * <pre>
-     *CANJOFHONKD snooswap
-     * </pre>
-     *
-     * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 9;</code>
+     * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 8;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfoOrBuilder> 
         getChallengeInfoListOrBuilderList();
     /**
-     * <pre>
-     *CANJOFHONKD snooswap
-     * </pre>
-     *
-     * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 9;</code>
+     * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 8;</code>
      */
     emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfoOrBuilder getChallengeInfoListOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *EOKOEHJNONA snooswap
-     * </pre>
-     *
-     * <code>bool is_notify_npc_change = 13;</code>
+     * <code>bool is_notify_npc_change = 11;</code>
      * @return The isNotifyNpcChange.
      */
     boolean getIsNotifyNpcChange();
+
+    /**
+     * <code>uint32 next_refresh_time = 6;</code>
+     * @return The nextRefreshTime.
+     */
+    int getNextRefreshTime();
   }
   /**
    * <pre>
-   * Name: NNFHPDEKDGK
-   * CmdId: 7332
+   * CmdId: 7592
+   * Obf: MCPMKDKOMMJ
    * </pre>
    *
    * Protobuf type {@code GCGWeekChallengeInfoNotify}
@@ -130,7 +106,12 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 74: {
+            case 48: {
+
+              nextRefreshTime_ = input.readUInt32();
+              break;
+            }
+            case 66: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 challengeInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -140,11 +121,6 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
               break;
             }
             case 88: {
-
-              nextRefreshTime_ = input.readUInt32();
-              break;
-            }
-            case 104: {
 
               isNotifyNpcChange_ = input.readBool();
               break;
@@ -184,36 +160,17 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
               emu.grasscutter.net.proto.GCGWeekChallengeInfoNotifyOuterClass.GCGWeekChallengeInfoNotify.class, emu.grasscutter.net.proto.GCGWeekChallengeInfoNotifyOuterClass.GCGWeekChallengeInfoNotify.Builder.class);
     }
 
-    public static final int NEXT_REFRESH_TIME_FIELD_NUMBER = 11;
-    private int nextRefreshTime_;
-    /**
-     * <code>uint32 next_refresh_time = 11;</code>
-     * @return The nextRefreshTime.
-     */
-    @java.lang.Override
-    public int getNextRefreshTime() {
-      return nextRefreshTime_;
-    }
-
-    public static final int CHALLENGE_INFO_LIST_FIELD_NUMBER = 9;
+    public static final int CHALLENGE_INFO_LIST_FIELD_NUMBER = 8;
     private java.util.List<emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfo> challengeInfoList_;
     /**
-     * <pre>
-     *CANJOFHONKD snooswap
-     * </pre>
-     *
-     * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 9;</code>
+     * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 8;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfo> getChallengeInfoListList() {
       return challengeInfoList_;
     }
     /**
-     * <pre>
-     *CANJOFHONKD snooswap
-     * </pre>
-     *
-     * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 9;</code>
+     * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 8;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfoOrBuilder> 
@@ -221,33 +178,21 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
       return challengeInfoList_;
     }
     /**
-     * <pre>
-     *CANJOFHONKD snooswap
-     * </pre>
-     *
-     * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 9;</code>
+     * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 8;</code>
      */
     @java.lang.Override
     public int getChallengeInfoListCount() {
       return challengeInfoList_.size();
     }
     /**
-     * <pre>
-     *CANJOFHONKD snooswap
-     * </pre>
-     *
-     * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 9;</code>
+     * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfo getChallengeInfoList(int index) {
       return challengeInfoList_.get(index);
     }
     /**
-     * <pre>
-     *CANJOFHONKD snooswap
-     * </pre>
-     *
-     * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 9;</code>
+     * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfoOrBuilder getChallengeInfoListOrBuilder(
@@ -255,19 +200,26 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
       return challengeInfoList_.get(index);
     }
 
-    public static final int IS_NOTIFY_NPC_CHANGE_FIELD_NUMBER = 13;
+    public static final int IS_NOTIFY_NPC_CHANGE_FIELD_NUMBER = 11;
     private boolean isNotifyNpcChange_;
     /**
-     * <pre>
-     *EOKOEHJNONA snooswap
-     * </pre>
-     *
-     * <code>bool is_notify_npc_change = 13;</code>
+     * <code>bool is_notify_npc_change = 11;</code>
      * @return The isNotifyNpcChange.
      */
     @java.lang.Override
     public boolean getIsNotifyNpcChange() {
       return isNotifyNpcChange_;
+    }
+
+    public static final int NEXT_REFRESH_TIME_FIELD_NUMBER = 6;
+    private int nextRefreshTime_;
+    /**
+     * <code>uint32 next_refresh_time = 6;</code>
+     * @return The nextRefreshTime.
+     */
+    @java.lang.Override
+    public int getNextRefreshTime() {
+      return nextRefreshTime_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -284,14 +236,14 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < challengeInfoList_.size(); i++) {
-        output.writeMessage(9, challengeInfoList_.get(i));
-      }
       if (nextRefreshTime_ != 0) {
-        output.writeUInt32(11, nextRefreshTime_);
+        output.writeUInt32(6, nextRefreshTime_);
+      }
+      for (int i = 0; i < challengeInfoList_.size(); i++) {
+        output.writeMessage(8, challengeInfoList_.get(i));
       }
       if (isNotifyNpcChange_ != false) {
-        output.writeBool(13, isNotifyNpcChange_);
+        output.writeBool(11, isNotifyNpcChange_);
       }
       unknownFields.writeTo(output);
     }
@@ -302,17 +254,17 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < challengeInfoList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, challengeInfoList_.get(i));
-      }
       if (nextRefreshTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, nextRefreshTime_);
+          .computeUInt32Size(6, nextRefreshTime_);
+      }
+      for (int i = 0; i < challengeInfoList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(8, challengeInfoList_.get(i));
       }
       if (isNotifyNpcChange_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, isNotifyNpcChange_);
+          .computeBoolSize(11, isNotifyNpcChange_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -329,12 +281,12 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
       }
       emu.grasscutter.net.proto.GCGWeekChallengeInfoNotifyOuterClass.GCGWeekChallengeInfoNotify other = (emu.grasscutter.net.proto.GCGWeekChallengeInfoNotifyOuterClass.GCGWeekChallengeInfoNotify) obj;
 
-      if (getNextRefreshTime()
-          != other.getNextRefreshTime()) return false;
       if (!getChallengeInfoListList()
           .equals(other.getChallengeInfoListList())) return false;
       if (getIsNotifyNpcChange()
           != other.getIsNotifyNpcChange()) return false;
+      if (getNextRefreshTime()
+          != other.getNextRefreshTime()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -346,8 +298,6 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + NEXT_REFRESH_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getNextRefreshTime();
       if (getChallengeInfoListCount() > 0) {
         hash = (37 * hash) + CHALLENGE_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getChallengeInfoListList().hashCode();
@@ -355,6 +305,8 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
       hash = (37 * hash) + IS_NOTIFY_NPC_CHANGE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNotifyNpcChange());
+      hash = (37 * hash) + NEXT_REFRESH_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getNextRefreshTime();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -452,8 +404,8 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: NNFHPDEKDGK
-     * CmdId: 7332
+     * CmdId: 7592
+     * Obf: MCPMKDKOMMJ
      * </pre>
      *
      * Protobuf type {@code GCGWeekChallengeInfoNotify}
@@ -494,8 +446,6 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        nextRefreshTime_ = 0;
-
         if (challengeInfoListBuilder_ == null) {
           challengeInfoList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
@@ -503,6 +453,8 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
           challengeInfoListBuilder_.clear();
         }
         isNotifyNpcChange_ = false;
+
+        nextRefreshTime_ = 0;
 
         return this;
       }
@@ -531,7 +483,6 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
       public emu.grasscutter.net.proto.GCGWeekChallengeInfoNotifyOuterClass.GCGWeekChallengeInfoNotify buildPartial() {
         emu.grasscutter.net.proto.GCGWeekChallengeInfoNotifyOuterClass.GCGWeekChallengeInfoNotify result = new emu.grasscutter.net.proto.GCGWeekChallengeInfoNotifyOuterClass.GCGWeekChallengeInfoNotify(this);
         int from_bitField0_ = bitField0_;
-        result.nextRefreshTime_ = nextRefreshTime_;
         if (challengeInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             challengeInfoList_ = java.util.Collections.unmodifiableList(challengeInfoList_);
@@ -542,6 +493,7 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
           result.challengeInfoList_ = challengeInfoListBuilder_.build();
         }
         result.isNotifyNpcChange_ = isNotifyNpcChange_;
+        result.nextRefreshTime_ = nextRefreshTime_;
         onBuilt();
         return result;
       }
@@ -590,9 +542,6 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGWeekChallengeInfoNotifyOuterClass.GCGWeekChallengeInfoNotify other) {
         if (other == emu.grasscutter.net.proto.GCGWeekChallengeInfoNotifyOuterClass.GCGWeekChallengeInfoNotify.getDefaultInstance()) return this;
-        if (other.getNextRefreshTime() != 0) {
-          setNextRefreshTime(other.getNextRefreshTime());
-        }
         if (challengeInfoListBuilder_ == null) {
           if (!other.challengeInfoList_.isEmpty()) {
             if (challengeInfoList_.isEmpty()) {
@@ -621,6 +570,9 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
         }
         if (other.getIsNotifyNpcChange() != false) {
           setIsNotifyNpcChange(other.getIsNotifyNpcChange());
+        }
+        if (other.getNextRefreshTime() != 0) {
+          setNextRefreshTime(other.getNextRefreshTime());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -652,37 +604,6 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
       }
       private int bitField0_;
 
-      private int nextRefreshTime_ ;
-      /**
-       * <code>uint32 next_refresh_time = 11;</code>
-       * @return The nextRefreshTime.
-       */
-      @java.lang.Override
-      public int getNextRefreshTime() {
-        return nextRefreshTime_;
-      }
-      /**
-       * <code>uint32 next_refresh_time = 11;</code>
-       * @param value The nextRefreshTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNextRefreshTime(int value) {
-        
-        nextRefreshTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 next_refresh_time = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearNextRefreshTime() {
-        
-        nextRefreshTime_ = 0;
-        onChanged();
-        return this;
-      }
-
       private java.util.List<emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfo> challengeInfoList_ =
         java.util.Collections.emptyList();
       private void ensureChallengeInfoListIsMutable() {
@@ -696,11 +617,7 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
           emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfo, emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfo.Builder, emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfoOrBuilder> challengeInfoListBuilder_;
 
       /**
-       * <pre>
-       *CANJOFHONKD snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 9;</code>
+       * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfo> getChallengeInfoListList() {
         if (challengeInfoListBuilder_ == null) {
@@ -710,11 +627,7 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
         }
       }
       /**
-       * <pre>
-       *CANJOFHONKD snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 9;</code>
+       * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 8;</code>
        */
       public int getChallengeInfoListCount() {
         if (challengeInfoListBuilder_ == null) {
@@ -724,11 +637,7 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
         }
       }
       /**
-       * <pre>
-       *CANJOFHONKD snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 9;</code>
+       * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 8;</code>
        */
       public emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfo getChallengeInfoList(int index) {
         if (challengeInfoListBuilder_ == null) {
@@ -738,11 +647,7 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
         }
       }
       /**
-       * <pre>
-       *CANJOFHONKD snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 9;</code>
+       * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 8;</code>
        */
       public Builder setChallengeInfoList(
           int index, emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfo value) {
@@ -759,11 +664,7 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *CANJOFHONKD snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 9;</code>
+       * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 8;</code>
        */
       public Builder setChallengeInfoList(
           int index, emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfo.Builder builderForValue) {
@@ -777,11 +678,7 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *CANJOFHONKD snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 9;</code>
+       * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 8;</code>
        */
       public Builder addChallengeInfoList(emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfo value) {
         if (challengeInfoListBuilder_ == null) {
@@ -797,11 +694,7 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *CANJOFHONKD snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 9;</code>
+       * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 8;</code>
        */
       public Builder addChallengeInfoList(
           int index, emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfo value) {
@@ -818,11 +711,7 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *CANJOFHONKD snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 9;</code>
+       * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 8;</code>
        */
       public Builder addChallengeInfoList(
           emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfo.Builder builderForValue) {
@@ -836,11 +725,7 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *CANJOFHONKD snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 9;</code>
+       * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 8;</code>
        */
       public Builder addChallengeInfoList(
           int index, emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfo.Builder builderForValue) {
@@ -854,11 +739,7 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *CANJOFHONKD snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 9;</code>
+       * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 8;</code>
        */
       public Builder addAllChallengeInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfo> values) {
@@ -873,11 +754,7 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *CANJOFHONKD snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 9;</code>
+       * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 8;</code>
        */
       public Builder clearChallengeInfoList() {
         if (challengeInfoListBuilder_ == null) {
@@ -890,11 +767,7 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *CANJOFHONKD snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 9;</code>
+       * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 8;</code>
        */
       public Builder removeChallengeInfoList(int index) {
         if (challengeInfoListBuilder_ == null) {
@@ -907,22 +780,14 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *CANJOFHONKD snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 9;</code>
+       * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 8;</code>
        */
       public emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfo.Builder getChallengeInfoListBuilder(
           int index) {
         return getChallengeInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *CANJOFHONKD snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 9;</code>
+       * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 8;</code>
        */
       public emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfoOrBuilder getChallengeInfoListOrBuilder(
           int index) {
@@ -932,11 +797,7 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
         }
       }
       /**
-       * <pre>
-       *CANJOFHONKD snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 9;</code>
+       * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 8;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfoOrBuilder> 
            getChallengeInfoListOrBuilderList() {
@@ -947,22 +808,14 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
         }
       }
       /**
-       * <pre>
-       *CANJOFHONKD snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 9;</code>
+       * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 8;</code>
        */
       public emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfo.Builder addChallengeInfoListBuilder() {
         return getChallengeInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfo.getDefaultInstance());
       }
       /**
-       * <pre>
-       *CANJOFHONKD snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 9;</code>
+       * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 8;</code>
        */
       public emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfo.Builder addChallengeInfoListBuilder(
           int index) {
@@ -970,11 +823,7 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
             index, emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfo.getDefaultInstance());
       }
       /**
-       * <pre>
-       *CANJOFHONKD snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 9;</code>
+       * <code>repeated .GCGWeekChallengeInfo challenge_info_list = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.GCGWeekChallengeInfo.Builder> 
            getChallengeInfoListBuilderList() {
@@ -997,11 +846,7 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
 
       private boolean isNotifyNpcChange_ ;
       /**
-       * <pre>
-       *EOKOEHJNONA snooswap
-       * </pre>
-       *
-       * <code>bool is_notify_npc_change = 13;</code>
+       * <code>bool is_notify_npc_change = 11;</code>
        * @return The isNotifyNpcChange.
        */
       @java.lang.Override
@@ -1009,11 +854,7 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
         return isNotifyNpcChange_;
       }
       /**
-       * <pre>
-       *EOKOEHJNONA snooswap
-       * </pre>
-       *
-       * <code>bool is_notify_npc_change = 13;</code>
+       * <code>bool is_notify_npc_change = 11;</code>
        * @param value The isNotifyNpcChange to set.
        * @return This builder for chaining.
        */
@@ -1024,16 +865,43 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *EOKOEHJNONA snooswap
-       * </pre>
-       *
-       * <code>bool is_notify_npc_change = 13;</code>
+       * <code>bool is_notify_npc_change = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNotifyNpcChange() {
         
         isNotifyNpcChange_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int nextRefreshTime_ ;
+      /**
+       * <code>uint32 next_refresh_time = 6;</code>
+       * @return The nextRefreshTime.
+       */
+      @java.lang.Override
+      public int getNextRefreshTime() {
+        return nextRefreshTime_;
+      }
+      /**
+       * <code>uint32 next_refresh_time = 6;</code>
+       * @param value The nextRefreshTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNextRefreshTime(int value) {
+        
+        nextRefreshTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 next_refresh_time = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNextRefreshTime() {
+        
+        nextRefreshTime_ = 0;
         onChanged();
         return this;
       }
@@ -1106,10 +974,10 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n GCGWeekChallengeInfoNotify.proto\032\032GCGW" +
       "eekChallengeInfo.proto\"\211\001\n\032GCGWeekChalle" +
-      "ngeInfoNotify\022\031\n\021next_refresh_time\030\013 \001(\r" +
-      "\0222\n\023challenge_info_list\030\t \003(\0132\025.GCGWeekC" +
-      "hallengeInfo\022\034\n\024is_notify_npc_change\030\r \001" +
-      "(\010B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "ngeInfoNotify\0222\n\023challenge_info_list\030\010 \003" +
+      "(\0132\025.GCGWeekChallengeInfo\022\034\n\024is_notify_n" +
+      "pc_change\030\013 \001(\010\022\031\n\021next_refresh_time\030\006 \001" +
+      "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1121,7 +989,7 @@ public final class GCGWeekChallengeInfoNotifyOuterClass {
     internal_static_GCGWeekChallengeInfoNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGWeekChallengeInfoNotify_descriptor,
-        new java.lang.String[] { "NextRefreshTime", "ChallengeInfoList", "IsNotifyNpcChange", });
+        new java.lang.String[] { "ChallengeInfoList", "IsNotifyNpcChange", "NextRefreshTime", });
     emu.grasscutter.net.proto.GCGWeekChallengeInfoOuterClass.getDescriptor();
   }
 

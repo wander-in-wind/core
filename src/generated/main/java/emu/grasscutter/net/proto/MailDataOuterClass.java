@@ -19,10 +19,6 @@ public final class MailDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * FMBALDHPHEL
-     * </pre>
-     *
      * <code>uint32 mailId = 1;</code>
      * @return The mailId.
      */
@@ -68,10 +64,6 @@ public final class MailDataOuterClass {
         int index);
 
     /**
-     * <pre>
-     * ONHBGIHJJHJ
-     * </pre>
-     *
      * <code>uint32 send_time = 8;</code>
      * @return The sendTime.
      */
@@ -84,10 +76,6 @@ public final class MailDataOuterClass {
     int getExpireTime();
 
     /**
-     * <pre>
-     * GJNJJOANHLH
-     * </pre>
-     *
      * <code>uint32 importance = 10;</code>
      * @return The importance.
      */
@@ -149,7 +137,7 @@ public final class MailDataOuterClass {
   }
   /**
    * <pre>
-   * Name: HGOBDHKMDHO
+   * Obf: OAGKLHBIAAF
    * </pre>
    *
    * Protobuf type {@code MailData}
@@ -313,10 +301,6 @@ public final class MailDataOuterClass {
     public static final int MAILID_FIELD_NUMBER = 1;
     private int mailId_;
     /**
-     * <pre>
-     * FMBALDHPHEL
-     * </pre>
-     *
      * <code>uint32 mailId = 1;</code>
      * @return The mailId.
      */
@@ -394,10 +378,6 @@ public final class MailDataOuterClass {
     public static final int SEND_TIME_FIELD_NUMBER = 8;
     private int sendTime_;
     /**
-     * <pre>
-     * ONHBGIHJJHJ
-     * </pre>
-     *
      * <code>uint32 send_time = 8;</code>
      * @return The sendTime.
      */
@@ -420,10 +400,6 @@ public final class MailDataOuterClass {
     public static final int IMPORTANCE_FIELD_NUMBER = 10;
     private int importance_;
     /**
-     * <pre>
-     * GJNJJOANHLH
-     * </pre>
-     *
      * <code>uint32 importance = 10;</code>
      * @return The importance.
      */
@@ -800,7 +776,7 @@ public final class MailDataOuterClass {
     }
     /**
      * <pre>
-     * Name: HGOBDHKMDHO
+     * Obf: OAGKLHBIAAF
      * </pre>
      *
      * Protobuf type {@code MailData}
@@ -1068,10 +1044,6 @@ public final class MailDataOuterClass {
 
       private int mailId_ ;
       /**
-       * <pre>
-       * FMBALDHPHEL
-       * </pre>
-       *
        * <code>uint32 mailId = 1;</code>
        * @return The mailId.
        */
@@ -1080,10 +1052,6 @@ public final class MailDataOuterClass {
         return mailId_;
       }
       /**
-       * <pre>
-       * FMBALDHPHEL
-       * </pre>
-       *
        * <code>uint32 mailId = 1;</code>
        * @param value The mailId to set.
        * @return This builder for chaining.
@@ -1095,10 +1063,6 @@ public final class MailDataOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * FMBALDHPHEL
-       * </pre>
-       *
        * <code>uint32 mailId = 1;</code>
        * @return This builder for chaining.
        */
@@ -1470,10 +1434,6 @@ public final class MailDataOuterClass {
 
       private int sendTime_ ;
       /**
-       * <pre>
-       * ONHBGIHJJHJ
-       * </pre>
-       *
        * <code>uint32 send_time = 8;</code>
        * @return The sendTime.
        */
@@ -1482,10 +1442,6 @@ public final class MailDataOuterClass {
         return sendTime_;
       }
       /**
-       * <pre>
-       * ONHBGIHJJHJ
-       * </pre>
-       *
        * <code>uint32 send_time = 8;</code>
        * @param value The sendTime to set.
        * @return This builder for chaining.
@@ -1497,10 +1453,6 @@ public final class MailDataOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * ONHBGIHJJHJ
-       * </pre>
-       *
        * <code>uint32 send_time = 8;</code>
        * @return This builder for chaining.
        */
@@ -1544,10 +1496,6 @@ public final class MailDataOuterClass {
 
       private int importance_ ;
       /**
-       * <pre>
-       * GJNJJOANHLH
-       * </pre>
-       *
        * <code>uint32 importance = 10;</code>
        * @return The importance.
        */
@@ -1556,10 +1504,6 @@ public final class MailDataOuterClass {
         return importance_;
       }
       /**
-       * <pre>
-       * GJNJJOANHLH
-       * </pre>
-       *
        * <code>uint32 importance = 10;</code>
        * @param value The importance to set.
        * @return This builder for chaining.
@@ -1571,10 +1515,6 @@ public final class MailDataOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * GJNJJOANHLH
-       * </pre>
-       *
        * <code>uint32 importance = 10;</code>
        * @return This builder for chaining.
        */
@@ -1909,7 +1849,7 @@ public final class MailDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\016MailData.proto\032\025MailTextContent.proto\032" +
-      "\026MailCollectState.proto\032\016MailItem.proto\"" +
+      "\016MailItem.proto\032\026MailCollectState.proto\"" +
       "\241\002\n\010MailData\022\016\n\006mailId\030\001 \001(\r\022+\n\021mail_tex" +
       "t_content\030\004 \001(\0132\020.MailTextContent\022\034\n\tite" +
       "m_list\030\007 \003(\0132\t.MailItem\022\021\n\tsend_time\030\010 \001" +
@@ -1924,8 +1864,8 @@ public final class MailDataOuterClass {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           emu.grasscutter.net.proto.MailTextContentOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.MailCollectStateOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.MailItemOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.MailCollectStateOuterClass.getDescriptor(),
         });
     internal_static_MailData_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -1934,8 +1874,8 @@ public final class MailDataOuterClass {
         internal_static_MailData_descriptor,
         new java.lang.String[] { "MailId", "MailTextContent", "ItemList", "SendTime", "ExpireTime", "Importance", "IsRead", "IsAttachmentGot", "ConfigId", "ArgumentList", "CollectState", });
     emu.grasscutter.net.proto.MailTextContentOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.MailCollectStateOuterClass.getDescriptor();
     emu.grasscutter.net.proto.MailItemOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.MailCollectStateOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

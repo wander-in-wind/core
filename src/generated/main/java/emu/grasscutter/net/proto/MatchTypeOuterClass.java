@@ -16,7 +16,7 @@ public final class MatchTypeOuterClass {
   }
   /**
    * <pre>
-   * Name: FEPJMFICDGB
+   * Obf: MIDCGIIMBIG
    * </pre>
    *
    * Protobuf enum {@code MatchType}

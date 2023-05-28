@@ -26,8 +26,8 @@ public final class MiracleRingTakeRewardRspOuterClass {
   }
   /**
    * <pre>
-   * Name: JMJOKICHGFP
-   * CmdId: 5236
+   * CmdId: 5226
+   * Obf: PPFDCPKONEK
    * </pre>
    *
    * Protobuf type {@code MiracleRingTakeRewardRsp}
@@ -279,8 +279,8 @@ public final class MiracleRingTakeRewardRspOuterClass {
     }
     /**
      * <pre>
-     * Name: JMJOKICHGFP
-     * CmdId: 5236
+     * CmdId: 5226
+     * Obf: PPFDCPKONEK
      * </pre>
      *
      * Protobuf type {@code MiracleRingTakeRewardRsp}

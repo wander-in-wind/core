@@ -20,8 +20,8 @@ public final class ChangeWorldToSingleModeNotifyOuterClass {
   }
   /**
    * <pre>
-   * Name: LPCKIIGBGOD
-   * CmdId: 3025
+   * CmdId: 3223
+   * Obf: BANPFHHKFJI
    * </pre>
    *
    * Protobuf type {@code ChangeWorldToSingleModeNotify}
@@ -246,8 +246,8 @@ public final class ChangeWorldToSingleModeNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: LPCKIIGBGOD
-     * CmdId: 3025
+     * CmdId: 3223
+     * Obf: BANPFHHKFJI
      * </pre>
      *
      * Protobuf type {@code ChangeWorldToSingleModeNotify}

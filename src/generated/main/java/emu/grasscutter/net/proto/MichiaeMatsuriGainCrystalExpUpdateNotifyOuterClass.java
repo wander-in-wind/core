@@ -19,21 +19,21 @@ public final class MichiaeMatsuriGainCrystalExpUpdateNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 gain_crystal_exp = 15;</code>
+     * <code>uint32 gain_crystal_exp = 3;</code>
      * @return The gainCrystalExp.
      */
     int getGainCrystalExp();
 
     /**
-     * <code>uint32 activity_id = 10;</code>
+     * <code>uint32 activity_id = 6;</code>
      * @return The activityId.
      */
     int getActivityId();
   }
   /**
    * <pre>
-   * Name: JAKABKHGDHD
-   * CmdId: 8289
+   * CmdId: 8830
+   * Obf: KLPLNODAPGB
    * </pre>
    *
    * Protobuf type {@code MichiaeMatsuriGainCrystalExpUpdateNotify}
@@ -80,14 +80,14 @@ public final class MichiaeMatsuriGainCrystalExpUpdateNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
-
-              activityId_ = input.readUInt32();
-              break;
-            }
-            case 120: {
+            case 24: {
 
               gainCrystalExp_ = input.readUInt32();
+              break;
+            }
+            case 48: {
+
+              activityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,10 +122,10 @@ public final class MichiaeMatsuriGainCrystalExpUpdateNotifyOuterClass {
               emu.grasscutter.net.proto.MichiaeMatsuriGainCrystalExpUpdateNotifyOuterClass.MichiaeMatsuriGainCrystalExpUpdateNotify.class, emu.grasscutter.net.proto.MichiaeMatsuriGainCrystalExpUpdateNotifyOuterClass.MichiaeMatsuriGainCrystalExpUpdateNotify.Builder.class);
     }
 
-    public static final int GAIN_CRYSTAL_EXP_FIELD_NUMBER = 15;
+    public static final int GAIN_CRYSTAL_EXP_FIELD_NUMBER = 3;
     private int gainCrystalExp_;
     /**
-     * <code>uint32 gain_crystal_exp = 15;</code>
+     * <code>uint32 gain_crystal_exp = 3;</code>
      * @return The gainCrystalExp.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class MichiaeMatsuriGainCrystalExpUpdateNotifyOuterClass {
       return gainCrystalExp_;
     }
 
-    public static final int ACTIVITY_ID_FIELD_NUMBER = 10;
+    public static final int ACTIVITY_ID_FIELD_NUMBER = 6;
     private int activityId_;
     /**
-     * <code>uint32 activity_id = 10;</code>
+     * <code>uint32 activity_id = 6;</code>
      * @return The activityId.
      */
     @java.lang.Override
@@ -158,11 +158,11 @@ public final class MichiaeMatsuriGainCrystalExpUpdateNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (activityId_ != 0) {
-        output.writeUInt32(10, activityId_);
-      }
       if (gainCrystalExp_ != 0) {
-        output.writeUInt32(15, gainCrystalExp_);
+        output.writeUInt32(3, gainCrystalExp_);
+      }
+      if (activityId_ != 0) {
+        output.writeUInt32(6, activityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class MichiaeMatsuriGainCrystalExpUpdateNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (activityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, activityId_);
-      }
       if (gainCrystalExp_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, gainCrystalExp_);
+          .computeUInt32Size(3, gainCrystalExp_);
+      }
+      if (activityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, activityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class MichiaeMatsuriGainCrystalExpUpdateNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: JAKABKHGDHD
-     * CmdId: 8289
+     * CmdId: 8830
+     * Obf: KLPLNODAPGB
      * </pre>
      *
      * Protobuf type {@code MichiaeMatsuriGainCrystalExpUpdateNotify}
@@ -470,7 +470,7 @@ public final class MichiaeMatsuriGainCrystalExpUpdateNotifyOuterClass {
 
       private int gainCrystalExp_ ;
       /**
-       * <code>uint32 gain_crystal_exp = 15;</code>
+       * <code>uint32 gain_crystal_exp = 3;</code>
        * @return The gainCrystalExp.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class MichiaeMatsuriGainCrystalExpUpdateNotifyOuterClass {
         return gainCrystalExp_;
       }
       /**
-       * <code>uint32 gain_crystal_exp = 15;</code>
+       * <code>uint32 gain_crystal_exp = 3;</code>
        * @param value The gainCrystalExp to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class MichiaeMatsuriGainCrystalExpUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gain_crystal_exp = 15;</code>
+       * <code>uint32 gain_crystal_exp = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearGainCrystalExp() {
@@ -501,7 +501,7 @@ public final class MichiaeMatsuriGainCrystalExpUpdateNotifyOuterClass {
 
       private int activityId_ ;
       /**
-       * <code>uint32 activity_id = 10;</code>
+       * <code>uint32 activity_id = 6;</code>
        * @return The activityId.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class MichiaeMatsuriGainCrystalExpUpdateNotifyOuterClass {
         return activityId_;
       }
       /**
-       * <code>uint32 activity_id = 10;</code>
+       * <code>uint32 activity_id = 6;</code>
        * @param value The activityId to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class MichiaeMatsuriGainCrystalExpUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 activity_id = 10;</code>
+       * <code>uint32 activity_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearActivityId() {
@@ -598,8 +598,8 @@ public final class MichiaeMatsuriGainCrystalExpUpdateNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n.MichiaeMatsuriGainCrystalExpUpdateNoti" +
       "fy.proto\"Y\n(MichiaeMatsuriGainCrystalExp" +
-      "UpdateNotify\022\030\n\020gain_crystal_exp\030\017 \001(\r\022\023" +
-      "\n\013activity_id\030\n \001(\rB\033\n\031emu.grasscutter.n" +
+      "UpdateNotify\022\030\n\020gain_crystal_exp\030\003 \001(\r\022\023" +
+      "\n\013activity_id\030\006 \001(\rB\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

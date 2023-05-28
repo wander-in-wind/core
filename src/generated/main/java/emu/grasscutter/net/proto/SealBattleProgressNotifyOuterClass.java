@@ -19,39 +19,39 @@ public final class SealBattleProgressNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 HOECKCBABAL = 1;</code>
-     * @return The hOECKCBABAL.
+     * <code>uint32 progress = 7;</code>
+     * @return The progress.
      */
-    int getHOECKCBABAL();
+    int getProgress();
 
     /**
-     * <code>uint32 end_time = 13;</code>
+     * <code>uint32 end_time = 2;</code>
      * @return The endTime.
      */
     int getEndTime();
 
     /**
-     * <code>uint32 seal_entity_id = 11;</code>
+     * <code>uint32 NEBJNBBMOKB = 14;</code>
+     * @return The nEBJNBBMOKB.
+     */
+    int getNEBJNBBMOKB();
+
+    /**
+     * <code>uint32 seal_entity_id = 8;</code>
      * @return The sealEntityId.
      */
     int getSealEntityId();
 
     /**
-     * <code>uint32 OBDOEOGAGHH = 3;</code>
-     * @return The oBDOEOGAGHH.
+     * <code>uint32 MCMKKEIHOKO = 12;</code>
+     * @return The mCMKKEIHOKO.
      */
-    int getOBDOEOGAGHH();
-
-    /**
-     * <code>uint32 progress = 7;</code>
-     * @return The progress.
-     */
-    int getProgress();
+    int getMCMKKEIHOKO();
   }
   /**
    * <pre>
-   * Name: GOIEHDNPELN
-   * CmdId: 292
+   * CmdId: 278
+   * Obf: PJCDAGGHPHH
    * </pre>
    *
    * Protobuf type {@code SealBattleProgressNotify}
@@ -98,14 +98,9 @@ public final class SealBattleProgressNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 16: {
 
-              hOECKCBABAL_ = input.readUInt32();
-              break;
-            }
-            case 24: {
-
-              oBDOEOGAGHH_ = input.readUInt32();
+              endTime_ = input.readUInt32();
               break;
             }
             case 56: {
@@ -113,14 +108,19 @@ public final class SealBattleProgressNotifyOuterClass {
               progress_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 64: {
 
               sealEntityId_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 96: {
 
-              endTime_ = input.readUInt32();
+              mCMKKEIHOKO_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              nEBJNBBMOKB_ = input.readUInt32();
               break;
             }
             default: {
@@ -155,50 +155,6 @@ public final class SealBattleProgressNotifyOuterClass {
               emu.grasscutter.net.proto.SealBattleProgressNotifyOuterClass.SealBattleProgressNotify.class, emu.grasscutter.net.proto.SealBattleProgressNotifyOuterClass.SealBattleProgressNotify.Builder.class);
     }
 
-    public static final int HOECKCBABAL_FIELD_NUMBER = 1;
-    private int hOECKCBABAL_;
-    /**
-     * <code>uint32 HOECKCBABAL = 1;</code>
-     * @return The hOECKCBABAL.
-     */
-    @java.lang.Override
-    public int getHOECKCBABAL() {
-      return hOECKCBABAL_;
-    }
-
-    public static final int END_TIME_FIELD_NUMBER = 13;
-    private int endTime_;
-    /**
-     * <code>uint32 end_time = 13;</code>
-     * @return The endTime.
-     */
-    @java.lang.Override
-    public int getEndTime() {
-      return endTime_;
-    }
-
-    public static final int SEAL_ENTITY_ID_FIELD_NUMBER = 11;
-    private int sealEntityId_;
-    /**
-     * <code>uint32 seal_entity_id = 11;</code>
-     * @return The sealEntityId.
-     */
-    @java.lang.Override
-    public int getSealEntityId() {
-      return sealEntityId_;
-    }
-
-    public static final int OBDOEOGAGHH_FIELD_NUMBER = 3;
-    private int oBDOEOGAGHH_;
-    /**
-     * <code>uint32 OBDOEOGAGHH = 3;</code>
-     * @return The oBDOEOGAGHH.
-     */
-    @java.lang.Override
-    public int getOBDOEOGAGHH() {
-      return oBDOEOGAGHH_;
-    }
-
     public static final int PROGRESS_FIELD_NUMBER = 7;
     private int progress_;
     /**
@@ -208,6 +164,50 @@ public final class SealBattleProgressNotifyOuterClass {
     @java.lang.Override
     public int getProgress() {
       return progress_;
+    }
+
+    public static final int END_TIME_FIELD_NUMBER = 2;
+    private int endTime_;
+    /**
+     * <code>uint32 end_time = 2;</code>
+     * @return The endTime.
+     */
+    @java.lang.Override
+    public int getEndTime() {
+      return endTime_;
+    }
+
+    public static final int NEBJNBBMOKB_FIELD_NUMBER = 14;
+    private int nEBJNBBMOKB_;
+    /**
+     * <code>uint32 NEBJNBBMOKB = 14;</code>
+     * @return The nEBJNBBMOKB.
+     */
+    @java.lang.Override
+    public int getNEBJNBBMOKB() {
+      return nEBJNBBMOKB_;
+    }
+
+    public static final int SEAL_ENTITY_ID_FIELD_NUMBER = 8;
+    private int sealEntityId_;
+    /**
+     * <code>uint32 seal_entity_id = 8;</code>
+     * @return The sealEntityId.
+     */
+    @java.lang.Override
+    public int getSealEntityId() {
+      return sealEntityId_;
+    }
+
+    public static final int MCMKKEIHOKO_FIELD_NUMBER = 12;
+    private int mCMKKEIHOKO_;
+    /**
+     * <code>uint32 MCMKKEIHOKO = 12;</code>
+     * @return The mCMKKEIHOKO.
+     */
+    @java.lang.Override
+    public int getMCMKKEIHOKO() {
+      return mCMKKEIHOKO_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -224,20 +224,20 @@ public final class SealBattleProgressNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (hOECKCBABAL_ != 0) {
-        output.writeUInt32(1, hOECKCBABAL_);
-      }
-      if (oBDOEOGAGHH_ != 0) {
-        output.writeUInt32(3, oBDOEOGAGHH_);
+      if (endTime_ != 0) {
+        output.writeUInt32(2, endTime_);
       }
       if (progress_ != 0) {
         output.writeUInt32(7, progress_);
       }
       if (sealEntityId_ != 0) {
-        output.writeUInt32(11, sealEntityId_);
+        output.writeUInt32(8, sealEntityId_);
       }
-      if (endTime_ != 0) {
-        output.writeUInt32(13, endTime_);
+      if (mCMKKEIHOKO_ != 0) {
+        output.writeUInt32(12, mCMKKEIHOKO_);
+      }
+      if (nEBJNBBMOKB_ != 0) {
+        output.writeUInt32(14, nEBJNBBMOKB_);
       }
       unknownFields.writeTo(output);
     }
@@ -248,13 +248,9 @@ public final class SealBattleProgressNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (hOECKCBABAL_ != 0) {
+      if (endTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, hOECKCBABAL_);
-      }
-      if (oBDOEOGAGHH_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, oBDOEOGAGHH_);
+          .computeUInt32Size(2, endTime_);
       }
       if (progress_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -262,11 +258,15 @@ public final class SealBattleProgressNotifyOuterClass {
       }
       if (sealEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, sealEntityId_);
+          .computeUInt32Size(8, sealEntityId_);
       }
-      if (endTime_ != 0) {
+      if (mCMKKEIHOKO_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, endTime_);
+          .computeUInt32Size(12, mCMKKEIHOKO_);
+      }
+      if (nEBJNBBMOKB_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, nEBJNBBMOKB_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -283,16 +283,16 @@ public final class SealBattleProgressNotifyOuterClass {
       }
       emu.grasscutter.net.proto.SealBattleProgressNotifyOuterClass.SealBattleProgressNotify other = (emu.grasscutter.net.proto.SealBattleProgressNotifyOuterClass.SealBattleProgressNotify) obj;
 
-      if (getHOECKCBABAL()
-          != other.getHOECKCBABAL()) return false;
-      if (getEndTime()
-          != other.getEndTime()) return false;
-      if (getSealEntityId()
-          != other.getSealEntityId()) return false;
-      if (getOBDOEOGAGHH()
-          != other.getOBDOEOGAGHH()) return false;
       if (getProgress()
           != other.getProgress()) return false;
+      if (getEndTime()
+          != other.getEndTime()) return false;
+      if (getNEBJNBBMOKB()
+          != other.getNEBJNBBMOKB()) return false;
+      if (getSealEntityId()
+          != other.getSealEntityId()) return false;
+      if (getMCMKKEIHOKO()
+          != other.getMCMKKEIHOKO()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -304,16 +304,16 @@ public final class SealBattleProgressNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + HOECKCBABAL_FIELD_NUMBER;
-      hash = (53 * hash) + getHOECKCBABAL();
-      hash = (37 * hash) + END_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getEndTime();
-      hash = (37 * hash) + SEAL_ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSealEntityId();
-      hash = (37 * hash) + OBDOEOGAGHH_FIELD_NUMBER;
-      hash = (53 * hash) + getOBDOEOGAGHH();
       hash = (37 * hash) + PROGRESS_FIELD_NUMBER;
       hash = (53 * hash) + getProgress();
+      hash = (37 * hash) + END_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getEndTime();
+      hash = (37 * hash) + NEBJNBBMOKB_FIELD_NUMBER;
+      hash = (53 * hash) + getNEBJNBBMOKB();
+      hash = (37 * hash) + SEAL_ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSealEntityId();
+      hash = (37 * hash) + MCMKKEIHOKO_FIELD_NUMBER;
+      hash = (53 * hash) + getMCMKKEIHOKO();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -411,8 +411,8 @@ public final class SealBattleProgressNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: GOIEHDNPELN
-     * CmdId: 292
+     * CmdId: 278
+     * Obf: PJCDAGGHPHH
      * </pre>
      *
      * Protobuf type {@code SealBattleProgressNotify}
@@ -452,15 +452,15 @@ public final class SealBattleProgressNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        hOECKCBABAL_ = 0;
+        progress_ = 0;
 
         endTime_ = 0;
 
+        nEBJNBBMOKB_ = 0;
+
         sealEntityId_ = 0;
 
-        oBDOEOGAGHH_ = 0;
-
-        progress_ = 0;
+        mCMKKEIHOKO_ = 0;
 
         return this;
       }
@@ -488,11 +488,11 @@ public final class SealBattleProgressNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SealBattleProgressNotifyOuterClass.SealBattleProgressNotify buildPartial() {
         emu.grasscutter.net.proto.SealBattleProgressNotifyOuterClass.SealBattleProgressNotify result = new emu.grasscutter.net.proto.SealBattleProgressNotifyOuterClass.SealBattleProgressNotify(this);
-        result.hOECKCBABAL_ = hOECKCBABAL_;
-        result.endTime_ = endTime_;
-        result.sealEntityId_ = sealEntityId_;
-        result.oBDOEOGAGHH_ = oBDOEOGAGHH_;
         result.progress_ = progress_;
+        result.endTime_ = endTime_;
+        result.nEBJNBBMOKB_ = nEBJNBBMOKB_;
+        result.sealEntityId_ = sealEntityId_;
+        result.mCMKKEIHOKO_ = mCMKKEIHOKO_;
         onBuilt();
         return result;
       }
@@ -541,20 +541,20 @@ public final class SealBattleProgressNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SealBattleProgressNotifyOuterClass.SealBattleProgressNotify other) {
         if (other == emu.grasscutter.net.proto.SealBattleProgressNotifyOuterClass.SealBattleProgressNotify.getDefaultInstance()) return this;
-        if (other.getHOECKCBABAL() != 0) {
-          setHOECKCBABAL(other.getHOECKCBABAL());
+        if (other.getProgress() != 0) {
+          setProgress(other.getProgress());
         }
         if (other.getEndTime() != 0) {
           setEndTime(other.getEndTime());
         }
+        if (other.getNEBJNBBMOKB() != 0) {
+          setNEBJNBBMOKB(other.getNEBJNBBMOKB());
+        }
         if (other.getSealEntityId() != 0) {
           setSealEntityId(other.getSealEntityId());
         }
-        if (other.getOBDOEOGAGHH() != 0) {
-          setOBDOEOGAGHH(other.getOBDOEOGAGHH());
-        }
-        if (other.getProgress() != 0) {
-          setProgress(other.getProgress());
+        if (other.getMCMKKEIHOKO() != 0) {
+          setMCMKKEIHOKO(other.getMCMKKEIHOKO());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -585,130 +585,6 @@ public final class SealBattleProgressNotifyOuterClass {
         return this;
       }
 
-      private int hOECKCBABAL_ ;
-      /**
-       * <code>uint32 HOECKCBABAL = 1;</code>
-       * @return The hOECKCBABAL.
-       */
-      @java.lang.Override
-      public int getHOECKCBABAL() {
-        return hOECKCBABAL_;
-      }
-      /**
-       * <code>uint32 HOECKCBABAL = 1;</code>
-       * @param value The hOECKCBABAL to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHOECKCBABAL(int value) {
-        
-        hOECKCBABAL_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 HOECKCBABAL = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearHOECKCBABAL() {
-        
-        hOECKCBABAL_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int endTime_ ;
-      /**
-       * <code>uint32 end_time = 13;</code>
-       * @return The endTime.
-       */
-      @java.lang.Override
-      public int getEndTime() {
-        return endTime_;
-      }
-      /**
-       * <code>uint32 end_time = 13;</code>
-       * @param value The endTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEndTime(int value) {
-        
-        endTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 end_time = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEndTime() {
-        
-        endTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int sealEntityId_ ;
-      /**
-       * <code>uint32 seal_entity_id = 11;</code>
-       * @return The sealEntityId.
-       */
-      @java.lang.Override
-      public int getSealEntityId() {
-        return sealEntityId_;
-      }
-      /**
-       * <code>uint32 seal_entity_id = 11;</code>
-       * @param value The sealEntityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSealEntityId(int value) {
-        
-        sealEntityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 seal_entity_id = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSealEntityId() {
-        
-        sealEntityId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int oBDOEOGAGHH_ ;
-      /**
-       * <code>uint32 OBDOEOGAGHH = 3;</code>
-       * @return The oBDOEOGAGHH.
-       */
-      @java.lang.Override
-      public int getOBDOEOGAGHH() {
-        return oBDOEOGAGHH_;
-      }
-      /**
-       * <code>uint32 OBDOEOGAGHH = 3;</code>
-       * @param value The oBDOEOGAGHH to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOBDOEOGAGHH(int value) {
-        
-        oBDOEOGAGHH_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 OBDOEOGAGHH = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOBDOEOGAGHH() {
-        
-        oBDOEOGAGHH_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int progress_ ;
       /**
        * <code>uint32 progress = 7;</code>
@@ -736,6 +612,130 @@ public final class SealBattleProgressNotifyOuterClass {
       public Builder clearProgress() {
         
         progress_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int endTime_ ;
+      /**
+       * <code>uint32 end_time = 2;</code>
+       * @return The endTime.
+       */
+      @java.lang.Override
+      public int getEndTime() {
+        return endTime_;
+      }
+      /**
+       * <code>uint32 end_time = 2;</code>
+       * @param value The endTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEndTime(int value) {
+        
+        endTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 end_time = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEndTime() {
+        
+        endTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int nEBJNBBMOKB_ ;
+      /**
+       * <code>uint32 NEBJNBBMOKB = 14;</code>
+       * @return The nEBJNBBMOKB.
+       */
+      @java.lang.Override
+      public int getNEBJNBBMOKB() {
+        return nEBJNBBMOKB_;
+      }
+      /**
+       * <code>uint32 NEBJNBBMOKB = 14;</code>
+       * @param value The nEBJNBBMOKB to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNEBJNBBMOKB(int value) {
+        
+        nEBJNBBMOKB_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 NEBJNBBMOKB = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNEBJNBBMOKB() {
+        
+        nEBJNBBMOKB_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int sealEntityId_ ;
+      /**
+       * <code>uint32 seal_entity_id = 8;</code>
+       * @return The sealEntityId.
+       */
+      @java.lang.Override
+      public int getSealEntityId() {
+        return sealEntityId_;
+      }
+      /**
+       * <code>uint32 seal_entity_id = 8;</code>
+       * @param value The sealEntityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSealEntityId(int value) {
+        
+        sealEntityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 seal_entity_id = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSealEntityId() {
+        
+        sealEntityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int mCMKKEIHOKO_ ;
+      /**
+       * <code>uint32 MCMKKEIHOKO = 12;</code>
+       * @return The mCMKKEIHOKO.
+       */
+      @java.lang.Override
+      public int getMCMKKEIHOKO() {
+        return mCMKKEIHOKO_;
+      }
+      /**
+       * <code>uint32 MCMKKEIHOKO = 12;</code>
+       * @param value The mCMKKEIHOKO to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMCMKKEIHOKO(int value) {
+        
+        mCMKKEIHOKO_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 MCMKKEIHOKO = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMCMKKEIHOKO() {
+        
+        mCMKKEIHOKO_ = 0;
         onChanged();
         return this;
       }
@@ -807,9 +807,9 @@ public final class SealBattleProgressNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036SealBattleProgressNotify.proto\"\200\001\n\030Sea" +
-      "lBattleProgressNotify\022\023\n\013HOECKCBABAL\030\001 \001" +
-      "(\r\022\020\n\010end_time\030\r \001(\r\022\026\n\016seal_entity_id\030\013" +
-      " \001(\r\022\023\n\013OBDOEOGAGHH\030\003 \001(\r\022\020\n\010progress\030\007 " +
+      "lBattleProgressNotify\022\020\n\010progress\030\007 \001(\r\022" +
+      "\020\n\010end_time\030\002 \001(\r\022\023\n\013NEBJNBBMOKB\030\016 \001(\r\022\026" +
+      "\n\016seal_entity_id\030\010 \001(\r\022\023\n\013MCMKKEIHOKO\030\014 " +
       "\001(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -821,7 +821,7 @@ public final class SealBattleProgressNotifyOuterClass {
     internal_static_SealBattleProgressNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SealBattleProgressNotify_descriptor,
-        new java.lang.String[] { "HOECKCBABAL", "EndTime", "SealEntityId", "OBDOEOGAGHH", "Progress", });
+        new java.lang.String[] { "Progress", "EndTime", "NEBJNBBMOKB", "SealEntityId", "MCMKKEIHOKO", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

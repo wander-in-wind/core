@@ -37,8 +37,8 @@ public final class HomeAvatarAllFinishRewardNotifyOuterClass {
   }
   /**
    * <pre>
-   * Name: AILIPBDEECJ
-   * CmdId: 4504
+   * CmdId: 4653
+   * Obf: EBKECPJLCOH
    * </pre>
    *
    * Protobuf type {@code HomeAvatarAllFinishRewardNotify}
@@ -345,8 +345,8 @@ public final class HomeAvatarAllFinishRewardNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: AILIPBDEECJ
-     * CmdId: 4504
+     * CmdId: 4653
+     * Obf: EBKECPJLCOH
      * </pre>
      *
      * Protobuf type {@code HomeAvatarAllFinishRewardNotify}

@@ -20,8 +20,8 @@ public final class LastPacketPrintNotifyOuterClass {
   }
   /**
    * <pre>
-   * Name: JJELOGGMGHA
-   * CmdId: 41
+   * CmdId: 20
+   * Obf: EPENCIGCHKK
    * </pre>
    *
    * Protobuf type {@code LastPacketPrintNotify}
@@ -246,8 +246,8 @@ public final class LastPacketPrintNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: JJELOGGMGHA
-     * CmdId: 41
+     * CmdId: 20
+     * Obf: EPENCIGCHKK
      * </pre>
      *
      * Protobuf type {@code LastPacketPrintNotify}

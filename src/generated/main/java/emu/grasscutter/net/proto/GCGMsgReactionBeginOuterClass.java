@@ -19,20 +19,20 @@ public final class GCGMsgReactionBeginOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 card_guid = 2;</code>
+     * <code>uint32 card_guid = 13;</code>
      * @return The cardGuid.
      */
     int getCardGuid();
 
     /**
-     * <code>uint32 skill_id = 6;</code>
+     * <code>uint32 skill_id = 8;</code>
      * @return The skillId.
      */
     int getSkillId();
   }
   /**
    * <pre>
-   * Name: IJJHCPIEIGK
+   * Obf: LFJPKCJBNDP
    * </pre>
    *
    * Protobuf type {@code GCGMsgReactionBegin}
@@ -79,14 +79,14 @@ public final class GCGMsgReactionBeginOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              cardGuid_ = input.readUInt32();
-              break;
-            }
-            case 48: {
+            case 64: {
 
               skillId_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              cardGuid_ = input.readUInt32();
               break;
             }
             default: {
@@ -121,10 +121,10 @@ public final class GCGMsgReactionBeginOuterClass {
               emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin.class, emu.grasscutter.net.proto.GCGMsgReactionBeginOuterClass.GCGMsgReactionBegin.Builder.class);
     }
 
-    public static final int CARD_GUID_FIELD_NUMBER = 2;
+    public static final int CARD_GUID_FIELD_NUMBER = 13;
     private int cardGuid_;
     /**
-     * <code>uint32 card_guid = 2;</code>
+     * <code>uint32 card_guid = 13;</code>
      * @return The cardGuid.
      */
     @java.lang.Override
@@ -132,10 +132,10 @@ public final class GCGMsgReactionBeginOuterClass {
       return cardGuid_;
     }
 
-    public static final int SKILL_ID_FIELD_NUMBER = 6;
+    public static final int SKILL_ID_FIELD_NUMBER = 8;
     private int skillId_;
     /**
-     * <code>uint32 skill_id = 6;</code>
+     * <code>uint32 skill_id = 8;</code>
      * @return The skillId.
      */
     @java.lang.Override
@@ -157,11 +157,11 @@ public final class GCGMsgReactionBeginOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (cardGuid_ != 0) {
-        output.writeUInt32(2, cardGuid_);
-      }
       if (skillId_ != 0) {
-        output.writeUInt32(6, skillId_);
+        output.writeUInt32(8, skillId_);
+      }
+      if (cardGuid_ != 0) {
+        output.writeUInt32(13, cardGuid_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +172,13 @@ public final class GCGMsgReactionBeginOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (cardGuid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, cardGuid_);
-      }
       if (skillId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, skillId_);
+          .computeUInt32Size(8, skillId_);
+      }
+      if (cardGuid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, cardGuid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -311,7 +311,7 @@ public final class GCGMsgReactionBeginOuterClass {
     }
     /**
      * <pre>
-     * Name: IJJHCPIEIGK
+     * Obf: LFJPKCJBNDP
      * </pre>
      *
      * Protobuf type {@code GCGMsgReactionBegin}
@@ -468,7 +468,7 @@ public final class GCGMsgReactionBeginOuterClass {
 
       private int cardGuid_ ;
       /**
-       * <code>uint32 card_guid = 2;</code>
+       * <code>uint32 card_guid = 13;</code>
        * @return The cardGuid.
        */
       @java.lang.Override
@@ -476,7 +476,7 @@ public final class GCGMsgReactionBeginOuterClass {
         return cardGuid_;
       }
       /**
-       * <code>uint32 card_guid = 2;</code>
+       * <code>uint32 card_guid = 13;</code>
        * @param value The cardGuid to set.
        * @return This builder for chaining.
        */
@@ -487,7 +487,7 @@ public final class GCGMsgReactionBeginOuterClass {
         return this;
       }
       /**
-       * <code>uint32 card_guid = 2;</code>
+       * <code>uint32 card_guid = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearCardGuid() {
@@ -499,7 +499,7 @@ public final class GCGMsgReactionBeginOuterClass {
 
       private int skillId_ ;
       /**
-       * <code>uint32 skill_id = 6;</code>
+       * <code>uint32 skill_id = 8;</code>
        * @return The skillId.
        */
       @java.lang.Override
@@ -507,7 +507,7 @@ public final class GCGMsgReactionBeginOuterClass {
         return skillId_;
       }
       /**
-       * <code>uint32 skill_id = 6;</code>
+       * <code>uint32 skill_id = 8;</code>
        * @param value The skillId to set.
        * @return This builder for chaining.
        */
@@ -518,7 +518,7 @@ public final class GCGMsgReactionBeginOuterClass {
         return this;
       }
       /**
-       * <code>uint32 skill_id = 6;</code>
+       * <code>uint32 skill_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearSkillId() {
@@ -595,8 +595,8 @@ public final class GCGMsgReactionBeginOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031GCGMsgReactionBegin.proto\":\n\023GCGMsgRea" +
-      "ctionBegin\022\021\n\tcard_guid\030\002 \001(\r\022\020\n\010skill_i" +
-      "d\030\006 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "ctionBegin\022\021\n\tcard_guid\030\r \001(\r\022\020\n\010skill_i" +
+      "d\030\010 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -20,8 +20,8 @@ public final class TryInterruptRogueDiaryDungeonReqOuterClass {
   }
   /**
    * <pre>
-   * Name: JFMEMKLNFHK
-   * CmdId: 8362
+   * CmdId: 8917
+   * Obf: MDAKALDFIGK
    * </pre>
    *
    * Protobuf type {@code TryInterruptRogueDiaryDungeonReq}
@@ -246,8 +246,8 @@ public final class TryInterruptRogueDiaryDungeonReqOuterClass {
     }
     /**
      * <pre>
-     * Name: JFMEMKLNFHK
-     * CmdId: 8362
+     * CmdId: 8917
+     * Obf: MDAKALDFIGK
      * </pre>
      *
      * Protobuf type {@code TryInterruptRogueDiaryDungeonReq}

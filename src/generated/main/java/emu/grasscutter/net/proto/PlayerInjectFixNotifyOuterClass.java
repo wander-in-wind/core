@@ -19,21 +19,21 @@ public final class PlayerInjectFixNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bytes inject_fix = 2;</code>
+     * <code>bytes inject_fix = 4;</code>
      * @return The injectFix.
      */
     com.google.protobuf.ByteString getInjectFix();
 
     /**
-     * <code>uint32 id = 5;</code>
+     * <code>uint32 id = 10;</code>
      * @return The id.
      */
     int getId();
   }
   /**
    * <pre>
-   * Name: EPILEBMPDEP
-   * CmdId: 192
+   * CmdId: 178
+   * Obf: OIOAGJGLGBJ
    * </pre>
    *
    * Protobuf type {@code PlayerInjectFixNotify}
@@ -81,12 +81,12 @@ public final class PlayerInjectFixNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
+            case 34: {
 
               injectFix_ = input.readBytes();
               break;
             }
-            case 40: {
+            case 80: {
 
               id_ = input.readUInt32();
               break;
@@ -123,10 +123,10 @@ public final class PlayerInjectFixNotifyOuterClass {
               emu.grasscutter.net.proto.PlayerInjectFixNotifyOuterClass.PlayerInjectFixNotify.class, emu.grasscutter.net.proto.PlayerInjectFixNotifyOuterClass.PlayerInjectFixNotify.Builder.class);
     }
 
-    public static final int INJECT_FIX_FIELD_NUMBER = 2;
+    public static final int INJECT_FIX_FIELD_NUMBER = 4;
     private com.google.protobuf.ByteString injectFix_;
     /**
-     * <code>bytes inject_fix = 2;</code>
+     * <code>bytes inject_fix = 4;</code>
      * @return The injectFix.
      */
     @java.lang.Override
@@ -134,10 +134,10 @@ public final class PlayerInjectFixNotifyOuterClass {
       return injectFix_;
     }
 
-    public static final int ID_FIELD_NUMBER = 5;
+    public static final int ID_FIELD_NUMBER = 10;
     private int id_;
     /**
-     * <code>uint32 id = 5;</code>
+     * <code>uint32 id = 10;</code>
      * @return The id.
      */
     @java.lang.Override
@@ -160,10 +160,10 @@ public final class PlayerInjectFixNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (!injectFix_.isEmpty()) {
-        output.writeBytes(2, injectFix_);
+        output.writeBytes(4, injectFix_);
       }
       if (id_ != 0) {
-        output.writeUInt32(5, id_);
+        output.writeUInt32(10, id_);
       }
       unknownFields.writeTo(output);
     }
@@ -176,11 +176,11 @@ public final class PlayerInjectFixNotifyOuterClass {
       size = 0;
       if (!injectFix_.isEmpty()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(2, injectFix_);
+          .computeBytesSize(4, injectFix_);
       }
       if (id_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, id_);
+          .computeUInt32Size(10, id_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,8 +313,8 @@ public final class PlayerInjectFixNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: EPILEBMPDEP
-     * CmdId: 192
+     * CmdId: 178
+     * Obf: OIOAGJGLGBJ
      * </pre>
      *
      * Protobuf type {@code PlayerInjectFixNotify}
@@ -471,7 +471,7 @@ public final class PlayerInjectFixNotifyOuterClass {
 
       private com.google.protobuf.ByteString injectFix_ = com.google.protobuf.ByteString.EMPTY;
       /**
-       * <code>bytes inject_fix = 2;</code>
+       * <code>bytes inject_fix = 4;</code>
        * @return The injectFix.
        */
       @java.lang.Override
@@ -479,7 +479,7 @@ public final class PlayerInjectFixNotifyOuterClass {
         return injectFix_;
       }
       /**
-       * <code>bytes inject_fix = 2;</code>
+       * <code>bytes inject_fix = 4;</code>
        * @param value The injectFix to set.
        * @return This builder for chaining.
        */
@@ -493,7 +493,7 @@ public final class PlayerInjectFixNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bytes inject_fix = 2;</code>
+       * <code>bytes inject_fix = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearInjectFix() {
@@ -505,7 +505,7 @@ public final class PlayerInjectFixNotifyOuterClass {
 
       private int id_ ;
       /**
-       * <code>uint32 id = 5;</code>
+       * <code>uint32 id = 10;</code>
        * @return The id.
        */
       @java.lang.Override
@@ -513,7 +513,7 @@ public final class PlayerInjectFixNotifyOuterClass {
         return id_;
       }
       /**
-       * <code>uint32 id = 5;</code>
+       * <code>uint32 id = 10;</code>
        * @param value The id to set.
        * @return This builder for chaining.
        */
@@ -524,7 +524,7 @@ public final class PlayerInjectFixNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 id = 5;</code>
+       * <code>uint32 id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearId() {
@@ -601,8 +601,8 @@ public final class PlayerInjectFixNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033PlayerInjectFixNotify.proto\"7\n\025PlayerI" +
-      "njectFixNotify\022\022\n\ninject_fix\030\002 \001(\014\022\n\n\002id" +
-      "\030\005 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
+      "njectFixNotify\022\022\n\ninject_fix\030\004 \001(\014\022\n\n\002id" +
+      "\030\n \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

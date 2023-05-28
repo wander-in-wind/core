@@ -26,8 +26,8 @@ public final class TakeFirstShareRewardRspOuterClass {
   }
   /**
    * <pre>
-   * Name: CFJMNJDEFPH
-   * CmdId: 4025
+   * CmdId: 4046
+   * Obf: INLMGJJKFKJ
    * </pre>
    *
    * Protobuf type {@code TakeFirstShareRewardRsp}
@@ -279,8 +279,8 @@ public final class TakeFirstShareRewardRspOuterClass {
     }
     /**
      * <pre>
-     * Name: CFJMNJDEFPH
-     * CmdId: 4025
+     * CmdId: 4046
+     * Obf: INLMGJJKFKJ
      * </pre>
      *
      * Protobuf type {@code TakeFirstShareRewardRsp}

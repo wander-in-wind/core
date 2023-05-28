@@ -19,15 +19,15 @@ public final class TakeDeliveryDailyRewardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 schedule_id = 11;</code>
+     * <code>uint32 schedule_id = 12;</code>
      * @return The scheduleId.
      */
     int getScheduleId();
   }
   /**
    * <pre>
-   * Name: CNLADFBELDG
-   * CmdId: 2054
+   * CmdId: 2024
+   * Obf: JNEIELFDEBB
    * </pre>
    *
    * Protobuf type {@code TakeDeliveryDailyRewardReq}
@@ -74,7 +74,7 @@ public final class TakeDeliveryDailyRewardReqOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
+            case 96: {
 
               scheduleId_ = input.readUInt32();
               break;
@@ -111,10 +111,10 @@ public final class TakeDeliveryDailyRewardReqOuterClass {
               emu.grasscutter.net.proto.TakeDeliveryDailyRewardReqOuterClass.TakeDeliveryDailyRewardReq.class, emu.grasscutter.net.proto.TakeDeliveryDailyRewardReqOuterClass.TakeDeliveryDailyRewardReq.Builder.class);
     }
 
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 11;
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 12;
     private int scheduleId_;
     /**
-     * <code>uint32 schedule_id = 11;</code>
+     * <code>uint32 schedule_id = 12;</code>
      * @return The scheduleId.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class TakeDeliveryDailyRewardReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (scheduleId_ != 0) {
-        output.writeUInt32(11, scheduleId_);
+        output.writeUInt32(12, scheduleId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class TakeDeliveryDailyRewardReqOuterClass {
       size = 0;
       if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, scheduleId_);
+          .computeUInt32Size(12, scheduleId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class TakeDeliveryDailyRewardReqOuterClass {
     }
     /**
      * <pre>
-     * Name: CNLADFBELDG
-     * CmdId: 2054
+     * CmdId: 2024
+     * Obf: JNEIELFDEBB
      * </pre>
      *
      * Protobuf type {@code TakeDeliveryDailyRewardReq}
@@ -431,7 +431,7 @@ public final class TakeDeliveryDailyRewardReqOuterClass {
 
       private int scheduleId_ ;
       /**
-       * <code>uint32 schedule_id = 11;</code>
+       * <code>uint32 schedule_id = 12;</code>
        * @return The scheduleId.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class TakeDeliveryDailyRewardReqOuterClass {
         return scheduleId_;
       }
       /**
-       * <code>uint32 schedule_id = 11;</code>
+       * <code>uint32 schedule_id = 12;</code>
        * @param value The scheduleId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class TakeDeliveryDailyRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 schedule_id = 11;</code>
+       * <code>uint32 schedule_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearScheduleId() {
@@ -528,7 +528,7 @@ public final class TakeDeliveryDailyRewardReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n TakeDeliveryDailyRewardReq.proto\"1\n\032Ta" +
       "keDeliveryDailyRewardReq\022\023\n\013schedule_id\030" +
-      "\013 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "\014 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

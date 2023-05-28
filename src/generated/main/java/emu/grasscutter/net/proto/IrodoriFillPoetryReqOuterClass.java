@@ -19,21 +19,21 @@ public final class IrodoriFillPoetryReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 CGGCACEMFPB = 15;</code>
-     * @return The cGGCACEMFPB.
+     * <code>uint32 MKOEOLDGOOO = 11;</code>
+     * @return The mKOEOLDGOOO.
      */
-    int getCGGCACEMFPB();
+    int getMKOEOLDGOOO();
 
     /**
-     * <code>uint32 GLFNJNPENKJ = 5;</code>
-     * @return The gLFNJNPENKJ.
+     * <code>uint32 MOFMBBIKDAN = 10;</code>
+     * @return The mOFMBBIKDAN.
      */
-    int getGLFNJNPENKJ();
+    int getMOFMBBIKDAN();
   }
   /**
    * <pre>
-   * Name: AHHOICDJKLJ
-   * CmdId: 8228
+   * CmdId: 8719
+   * Obf: AIDOENDNIEB
    * </pre>
    *
    * Protobuf type {@code IrodoriFillPoetryReq}
@@ -80,14 +80,14 @@ public final class IrodoriFillPoetryReqOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 80: {
 
-              gLFNJNPENKJ_ = input.readUInt32();
+              mOFMBBIKDAN_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 88: {
 
-              cGGCACEMFPB_ = input.readUInt32();
+              mKOEOLDGOOO_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,26 +122,26 @@ public final class IrodoriFillPoetryReqOuterClass {
               emu.grasscutter.net.proto.IrodoriFillPoetryReqOuterClass.IrodoriFillPoetryReq.class, emu.grasscutter.net.proto.IrodoriFillPoetryReqOuterClass.IrodoriFillPoetryReq.Builder.class);
     }
 
-    public static final int CGGCACEMFPB_FIELD_NUMBER = 15;
-    private int cGGCACEMFPB_;
+    public static final int MKOEOLDGOOO_FIELD_NUMBER = 11;
+    private int mKOEOLDGOOO_;
     /**
-     * <code>uint32 CGGCACEMFPB = 15;</code>
-     * @return The cGGCACEMFPB.
+     * <code>uint32 MKOEOLDGOOO = 11;</code>
+     * @return The mKOEOLDGOOO.
      */
     @java.lang.Override
-    public int getCGGCACEMFPB() {
-      return cGGCACEMFPB_;
+    public int getMKOEOLDGOOO() {
+      return mKOEOLDGOOO_;
     }
 
-    public static final int GLFNJNPENKJ_FIELD_NUMBER = 5;
-    private int gLFNJNPENKJ_;
+    public static final int MOFMBBIKDAN_FIELD_NUMBER = 10;
+    private int mOFMBBIKDAN_;
     /**
-     * <code>uint32 GLFNJNPENKJ = 5;</code>
-     * @return The gLFNJNPENKJ.
+     * <code>uint32 MOFMBBIKDAN = 10;</code>
+     * @return The mOFMBBIKDAN.
      */
     @java.lang.Override
-    public int getGLFNJNPENKJ() {
-      return gLFNJNPENKJ_;
+    public int getMOFMBBIKDAN() {
+      return mOFMBBIKDAN_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -158,11 +158,11 @@ public final class IrodoriFillPoetryReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (gLFNJNPENKJ_ != 0) {
-        output.writeUInt32(5, gLFNJNPENKJ_);
+      if (mOFMBBIKDAN_ != 0) {
+        output.writeUInt32(10, mOFMBBIKDAN_);
       }
-      if (cGGCACEMFPB_ != 0) {
-        output.writeUInt32(15, cGGCACEMFPB_);
+      if (mKOEOLDGOOO_ != 0) {
+        output.writeUInt32(11, mKOEOLDGOOO_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class IrodoriFillPoetryReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (gLFNJNPENKJ_ != 0) {
+      if (mOFMBBIKDAN_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, gLFNJNPENKJ_);
+          .computeUInt32Size(10, mOFMBBIKDAN_);
       }
-      if (cGGCACEMFPB_ != 0) {
+      if (mKOEOLDGOOO_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, cGGCACEMFPB_);
+          .computeUInt32Size(11, mKOEOLDGOOO_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +196,10 @@ public final class IrodoriFillPoetryReqOuterClass {
       }
       emu.grasscutter.net.proto.IrodoriFillPoetryReqOuterClass.IrodoriFillPoetryReq other = (emu.grasscutter.net.proto.IrodoriFillPoetryReqOuterClass.IrodoriFillPoetryReq) obj;
 
-      if (getCGGCACEMFPB()
-          != other.getCGGCACEMFPB()) return false;
-      if (getGLFNJNPENKJ()
-          != other.getGLFNJNPENKJ()) return false;
+      if (getMKOEOLDGOOO()
+          != other.getMKOEOLDGOOO()) return false;
+      if (getMOFMBBIKDAN()
+          != other.getMOFMBBIKDAN()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +211,10 @@ public final class IrodoriFillPoetryReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CGGCACEMFPB_FIELD_NUMBER;
-      hash = (53 * hash) + getCGGCACEMFPB();
-      hash = (37 * hash) + GLFNJNPENKJ_FIELD_NUMBER;
-      hash = (53 * hash) + getGLFNJNPENKJ();
+      hash = (37 * hash) + MKOEOLDGOOO_FIELD_NUMBER;
+      hash = (53 * hash) + getMKOEOLDGOOO();
+      hash = (37 * hash) + MOFMBBIKDAN_FIELD_NUMBER;
+      hash = (53 * hash) + getMOFMBBIKDAN();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +312,8 @@ public final class IrodoriFillPoetryReqOuterClass {
     }
     /**
      * <pre>
-     * Name: AHHOICDJKLJ
-     * CmdId: 8228
+     * CmdId: 8719
+     * Obf: AIDOENDNIEB
      * </pre>
      *
      * Protobuf type {@code IrodoriFillPoetryReq}
@@ -353,9 +353,9 @@ public final class IrodoriFillPoetryReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        cGGCACEMFPB_ = 0;
+        mKOEOLDGOOO_ = 0;
 
-        gLFNJNPENKJ_ = 0;
+        mOFMBBIKDAN_ = 0;
 
         return this;
       }
@@ -383,8 +383,8 @@ public final class IrodoriFillPoetryReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.IrodoriFillPoetryReqOuterClass.IrodoriFillPoetryReq buildPartial() {
         emu.grasscutter.net.proto.IrodoriFillPoetryReqOuterClass.IrodoriFillPoetryReq result = new emu.grasscutter.net.proto.IrodoriFillPoetryReqOuterClass.IrodoriFillPoetryReq(this);
-        result.cGGCACEMFPB_ = cGGCACEMFPB_;
-        result.gLFNJNPENKJ_ = gLFNJNPENKJ_;
+        result.mKOEOLDGOOO_ = mKOEOLDGOOO_;
+        result.mOFMBBIKDAN_ = mOFMBBIKDAN_;
         onBuilt();
         return result;
       }
@@ -433,11 +433,11 @@ public final class IrodoriFillPoetryReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.IrodoriFillPoetryReqOuterClass.IrodoriFillPoetryReq other) {
         if (other == emu.grasscutter.net.proto.IrodoriFillPoetryReqOuterClass.IrodoriFillPoetryReq.getDefaultInstance()) return this;
-        if (other.getCGGCACEMFPB() != 0) {
-          setCGGCACEMFPB(other.getCGGCACEMFPB());
+        if (other.getMKOEOLDGOOO() != 0) {
+          setMKOEOLDGOOO(other.getMKOEOLDGOOO());
         }
-        if (other.getGLFNJNPENKJ() != 0) {
-          setGLFNJNPENKJ(other.getGLFNJNPENKJ());
+        if (other.getMOFMBBIKDAN() != 0) {
+          setMOFMBBIKDAN(other.getMOFMBBIKDAN());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,64 +468,64 @@ public final class IrodoriFillPoetryReqOuterClass {
         return this;
       }
 
-      private int cGGCACEMFPB_ ;
+      private int mKOEOLDGOOO_ ;
       /**
-       * <code>uint32 CGGCACEMFPB = 15;</code>
-       * @return The cGGCACEMFPB.
+       * <code>uint32 MKOEOLDGOOO = 11;</code>
+       * @return The mKOEOLDGOOO.
        */
       @java.lang.Override
-      public int getCGGCACEMFPB() {
-        return cGGCACEMFPB_;
+      public int getMKOEOLDGOOO() {
+        return mKOEOLDGOOO_;
       }
       /**
-       * <code>uint32 CGGCACEMFPB = 15;</code>
-       * @param value The cGGCACEMFPB to set.
+       * <code>uint32 MKOEOLDGOOO = 11;</code>
+       * @param value The mKOEOLDGOOO to set.
        * @return This builder for chaining.
        */
-      public Builder setCGGCACEMFPB(int value) {
+      public Builder setMKOEOLDGOOO(int value) {
         
-        cGGCACEMFPB_ = value;
+        mKOEOLDGOOO_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 CGGCACEMFPB = 15;</code>
+       * <code>uint32 MKOEOLDGOOO = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCGGCACEMFPB() {
+      public Builder clearMKOEOLDGOOO() {
         
-        cGGCACEMFPB_ = 0;
+        mKOEOLDGOOO_ = 0;
         onChanged();
         return this;
       }
 
-      private int gLFNJNPENKJ_ ;
+      private int mOFMBBIKDAN_ ;
       /**
-       * <code>uint32 GLFNJNPENKJ = 5;</code>
-       * @return The gLFNJNPENKJ.
+       * <code>uint32 MOFMBBIKDAN = 10;</code>
+       * @return The mOFMBBIKDAN.
        */
       @java.lang.Override
-      public int getGLFNJNPENKJ() {
-        return gLFNJNPENKJ_;
+      public int getMOFMBBIKDAN() {
+        return mOFMBBIKDAN_;
       }
       /**
-       * <code>uint32 GLFNJNPENKJ = 5;</code>
-       * @param value The gLFNJNPENKJ to set.
+       * <code>uint32 MOFMBBIKDAN = 10;</code>
+       * @param value The mOFMBBIKDAN to set.
        * @return This builder for chaining.
        */
-      public Builder setGLFNJNPENKJ(int value) {
+      public Builder setMOFMBBIKDAN(int value) {
         
-        gLFNJNPENKJ_ = value;
+        mOFMBBIKDAN_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 GLFNJNPENKJ = 5;</code>
+       * <code>uint32 MOFMBBIKDAN = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGLFNJNPENKJ() {
+      public Builder clearMOFMBBIKDAN() {
         
-        gLFNJNPENKJ_ = 0;
+        mOFMBBIKDAN_ = 0;
         onChanged();
         return this;
       }
@@ -597,8 +597,8 @@ public final class IrodoriFillPoetryReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032IrodoriFillPoetryReq.proto\"@\n\024IrodoriF" +
-      "illPoetryReq\022\023\n\013CGGCACEMFPB\030\017 \001(\r\022\023\n\013GLF" +
-      "NJNPENKJ\030\005 \001(\rB\033\n\031emu.grasscutter.net.pr" +
+      "illPoetryReq\022\023\n\013MKOEOLDGOOO\030\013 \001(\r\022\023\n\013MOF" +
+      "MBBIKDAN\030\n \001(\rB\033\n\031emu.grasscutter.net.pr" +
       "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -610,7 +610,7 @@ public final class IrodoriFillPoetryReqOuterClass {
     internal_static_IrodoriFillPoetryReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_IrodoriFillPoetryReq_descriptor,
-        new java.lang.String[] { "CGGCACEMFPB", "GLFNJNPENKJ", });
+        new java.lang.String[] { "MKOEOLDGOOO", "MOFMBBIKDAN", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

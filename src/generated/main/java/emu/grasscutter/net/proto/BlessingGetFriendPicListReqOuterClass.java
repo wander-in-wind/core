@@ -20,8 +20,8 @@ public final class BlessingGetFriendPicListReqOuterClass {
   }
   /**
    * <pre>
-   * Name: EPMNNEBIBEH
-   * CmdId: 2128
+   * CmdId: 2092
+   * Obf: LNCHLIFJBBO
    * </pre>
    *
    * Protobuf type {@code BlessingGetFriendPicListReq}
@@ -246,8 +246,8 @@ public final class BlessingGetFriendPicListReqOuterClass {
     }
     /**
      * <pre>
-     * Name: EPMNNEBIBEH
-     * CmdId: 2128
+     * CmdId: 2092
+     * Obf: LNCHLIFJBBO
      * </pre>
      *
      * Protobuf type {@code BlessingGetFriendPicListReq}

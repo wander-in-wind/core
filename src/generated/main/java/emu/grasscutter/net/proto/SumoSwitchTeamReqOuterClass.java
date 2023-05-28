@@ -19,21 +19,21 @@ public final class SumoSwitchTeamReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 stage_id = 9;</code>
-     * @return The stageId.
-     */
-    int getStageId();
-
-    /**
-     * <code>uint32 activity_id = 8;</code>
+     * <code>uint32 activity_id = 5;</code>
      * @return The activityId.
      */
     int getActivityId();
+
+    /**
+     * <code>uint32 stage_id = 13;</code>
+     * @return The stageId.
+     */
+    int getStageId();
   }
   /**
    * <pre>
-   * Name: GPFGCDGBNFC
-   * CmdId: 8384
+   * CmdId: 8219
+   * Obf: GIHGOLLOJHB
    * </pre>
    *
    * Protobuf type {@code SumoSwitchTeamReq}
@@ -80,12 +80,12 @@ public final class SumoSwitchTeamReqOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 40: {
 
               activityId_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 104: {
 
               stageId_ = input.readUInt32();
               break;
@@ -122,26 +122,26 @@ public final class SumoSwitchTeamReqOuterClass {
               emu.grasscutter.net.proto.SumoSwitchTeamReqOuterClass.SumoSwitchTeamReq.class, emu.grasscutter.net.proto.SumoSwitchTeamReqOuterClass.SumoSwitchTeamReq.Builder.class);
     }
 
-    public static final int STAGE_ID_FIELD_NUMBER = 9;
-    private int stageId_;
-    /**
-     * <code>uint32 stage_id = 9;</code>
-     * @return The stageId.
-     */
-    @java.lang.Override
-    public int getStageId() {
-      return stageId_;
-    }
-
-    public static final int ACTIVITY_ID_FIELD_NUMBER = 8;
+    public static final int ACTIVITY_ID_FIELD_NUMBER = 5;
     private int activityId_;
     /**
-     * <code>uint32 activity_id = 8;</code>
+     * <code>uint32 activity_id = 5;</code>
      * @return The activityId.
      */
     @java.lang.Override
     public int getActivityId() {
       return activityId_;
+    }
+
+    public static final int STAGE_ID_FIELD_NUMBER = 13;
+    private int stageId_;
+    /**
+     * <code>uint32 stage_id = 13;</code>
+     * @return The stageId.
+     */
+    @java.lang.Override
+    public int getStageId() {
+      return stageId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,10 +159,10 @@ public final class SumoSwitchTeamReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (activityId_ != 0) {
-        output.writeUInt32(8, activityId_);
+        output.writeUInt32(5, activityId_);
       }
       if (stageId_ != 0) {
-        output.writeUInt32(9, stageId_);
+        output.writeUInt32(13, stageId_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +175,11 @@ public final class SumoSwitchTeamReqOuterClass {
       size = 0;
       if (activityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, activityId_);
+          .computeUInt32Size(5, activityId_);
       }
       if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, stageId_);
+          .computeUInt32Size(13, stageId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +196,10 @@ public final class SumoSwitchTeamReqOuterClass {
       }
       emu.grasscutter.net.proto.SumoSwitchTeamReqOuterClass.SumoSwitchTeamReq other = (emu.grasscutter.net.proto.SumoSwitchTeamReqOuterClass.SumoSwitchTeamReq) obj;
 
-      if (getStageId()
-          != other.getStageId()) return false;
       if (getActivityId()
           != other.getActivityId()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +211,10 @@ public final class SumoSwitchTeamReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getStageId();
       hash = (37 * hash) + ACTIVITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getActivityId();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +312,8 @@ public final class SumoSwitchTeamReqOuterClass {
     }
     /**
      * <pre>
-     * Name: GPFGCDGBNFC
-     * CmdId: 8384
+     * CmdId: 8219
+     * Obf: GIHGOLLOJHB
      * </pre>
      *
      * Protobuf type {@code SumoSwitchTeamReq}
@@ -353,9 +353,9 @@ public final class SumoSwitchTeamReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        stageId_ = 0;
-
         activityId_ = 0;
+
+        stageId_ = 0;
 
         return this;
       }
@@ -383,8 +383,8 @@ public final class SumoSwitchTeamReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SumoSwitchTeamReqOuterClass.SumoSwitchTeamReq buildPartial() {
         emu.grasscutter.net.proto.SumoSwitchTeamReqOuterClass.SumoSwitchTeamReq result = new emu.grasscutter.net.proto.SumoSwitchTeamReqOuterClass.SumoSwitchTeamReq(this);
-        result.stageId_ = stageId_;
         result.activityId_ = activityId_;
+        result.stageId_ = stageId_;
         onBuilt();
         return result;
       }
@@ -433,11 +433,11 @@ public final class SumoSwitchTeamReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SumoSwitchTeamReqOuterClass.SumoSwitchTeamReq other) {
         if (other == emu.grasscutter.net.proto.SumoSwitchTeamReqOuterClass.SumoSwitchTeamReq.getDefaultInstance()) return this;
-        if (other.getStageId() != 0) {
-          setStageId(other.getStageId());
-        }
         if (other.getActivityId() != 0) {
           setActivityId(other.getActivityId());
+        }
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,40 +468,9 @@ public final class SumoSwitchTeamReqOuterClass {
         return this;
       }
 
-      private int stageId_ ;
-      /**
-       * <code>uint32 stage_id = 9;</code>
-       * @return The stageId.
-       */
-      @java.lang.Override
-      public int getStageId() {
-        return stageId_;
-      }
-      /**
-       * <code>uint32 stage_id = 9;</code>
-       * @param value The stageId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStageId(int value) {
-        
-        stageId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 stage_id = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStageId() {
-        
-        stageId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int activityId_ ;
       /**
-       * <code>uint32 activity_id = 8;</code>
+       * <code>uint32 activity_id = 5;</code>
        * @return The activityId.
        */
       @java.lang.Override
@@ -509,7 +478,7 @@ public final class SumoSwitchTeamReqOuterClass {
         return activityId_;
       }
       /**
-       * <code>uint32 activity_id = 8;</code>
+       * <code>uint32 activity_id = 5;</code>
        * @param value The activityId to set.
        * @return This builder for chaining.
        */
@@ -520,12 +489,43 @@ public final class SumoSwitchTeamReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 activity_id = 8;</code>
+       * <code>uint32 activity_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearActivityId() {
         
         activityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int stageId_ ;
+      /**
+       * <code>uint32 stage_id = 13;</code>
+       * @return The stageId.
+       */
+      @java.lang.Override
+      public int getStageId() {
+        return stageId_;
+      }
+      /**
+       * <code>uint32 stage_id = 13;</code>
+       * @param value The stageId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStageId(int value) {
+        
+        stageId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 stage_id = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStageId() {
+        
+        stageId_ = 0;
         onChanged();
         return this;
       }
@@ -597,8 +597,8 @@ public final class SumoSwitchTeamReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027SumoSwitchTeamReq.proto\":\n\021SumoSwitchT" +
-      "eamReq\022\020\n\010stage_id\030\t \001(\r\022\023\n\013activity_id\030" +
-      "\010 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "eamReq\022\023\n\013activity_id\030\005 \001(\r\022\020\n\010stage_id\030" +
+      "\r \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -610,7 +610,7 @@ public final class SumoSwitchTeamReqOuterClass {
     internal_static_SumoSwitchTeamReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SumoSwitchTeamReq_descriptor,
-        new java.lang.String[] { "StageId", "ActivityId", });
+        new java.lang.String[] { "ActivityId", "StageId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

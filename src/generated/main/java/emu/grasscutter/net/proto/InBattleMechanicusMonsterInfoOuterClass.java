@@ -19,7 +19,7 @@ public final class InBattleMechanicusMonsterInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 count = 6;</code>
+     * <code>uint32 count = 4;</code>
      * @return The count.
      */
     int getCount();
@@ -38,7 +38,7 @@ public final class InBattleMechanicusMonsterInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: ADKBFFHEKCF
+   * Obf: PCNMPAGEACE
    * </pre>
    *
    * Protobuf type {@code InBattleMechanicusMonsterInfo}
@@ -85,7 +85,7 @@ public final class InBattleMechanicusMonsterInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 32: {
 
               count_ = input.readUInt32();
               break;
@@ -132,10 +132,10 @@ public final class InBattleMechanicusMonsterInfoOuterClass {
               emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo.class, emu.grasscutter.net.proto.InBattleMechanicusMonsterInfoOuterClass.InBattleMechanicusMonsterInfo.Builder.class);
     }
 
-    public static final int COUNT_FIELD_NUMBER = 6;
+    public static final int COUNT_FIELD_NUMBER = 4;
     private int count_;
     /**
-     * <code>uint32 count = 6;</code>
+     * <code>uint32 count = 4;</code>
      * @return The count.
      */
     @java.lang.Override
@@ -180,7 +180,7 @@ public final class InBattleMechanicusMonsterInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (count_ != 0) {
-        output.writeUInt32(6, count_);
+        output.writeUInt32(4, count_);
       }
       if (monsterId_ != 0) {
         output.writeUInt32(12, monsterId_);
@@ -199,7 +199,7 @@ public final class InBattleMechanicusMonsterInfoOuterClass {
       size = 0;
       if (count_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, count_);
+          .computeUInt32Size(4, count_);
       }
       if (monsterId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -344,7 +344,7 @@ public final class InBattleMechanicusMonsterInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: ADKBFFHEKCF
+     * Obf: PCNMPAGEACE
      * </pre>
      *
      * Protobuf type {@code InBattleMechanicusMonsterInfo}
@@ -507,7 +507,7 @@ public final class InBattleMechanicusMonsterInfoOuterClass {
 
       private int count_ ;
       /**
-       * <code>uint32 count = 6;</code>
+       * <code>uint32 count = 4;</code>
        * @return The count.
        */
       @java.lang.Override
@@ -515,7 +515,7 @@ public final class InBattleMechanicusMonsterInfoOuterClass {
         return count_;
       }
       /**
-       * <code>uint32 count = 6;</code>
+       * <code>uint32 count = 4;</code>
        * @param value The count to set.
        * @return This builder for chaining.
        */
@@ -526,7 +526,7 @@ public final class InBattleMechanicusMonsterInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 count = 6;</code>
+       * <code>uint32 count = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearCount() {
@@ -666,7 +666,7 @@ public final class InBattleMechanicusMonsterInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n#InBattleMechanicusMonsterInfo.proto\"Q\n" +
       "\035InBattleMechanicusMonsterInfo\022\r\n\005count\030" +
-      "\006 \001(\r\022\022\n\nmonster_id\030\014 \001(\r\022\r\n\005level\030\016 \001(\r" +
+      "\004 \001(\r\022\022\n\nmonster_id\030\014 \001(\r\022\r\n\005level\030\016 \001(\r" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

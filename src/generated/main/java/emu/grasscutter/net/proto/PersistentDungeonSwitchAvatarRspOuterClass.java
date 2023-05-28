@@ -19,23 +19,23 @@ public final class PersistentDungeonSwitchAvatarRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 13;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>repeated uint64 avatar_team_guid_list = 4;</code>
+     * <code>repeated uint64 avatar_team_guid_list = 14;</code>
      * @return A list containing the avatarTeamGuidList.
      */
     java.util.List<java.lang.Long> getAvatarTeamGuidListList();
     /**
-     * <code>repeated uint64 avatar_team_guid_list = 4;</code>
+     * <code>repeated uint64 avatar_team_guid_list = 14;</code>
      * @return The count of avatarTeamGuidList.
      */
     int getAvatarTeamGuidListCount();
     /**
-     * <code>repeated uint64 avatar_team_guid_list = 4;</code>
+     * <code>repeated uint64 avatar_team_guid_list = 14;</code>
      * @param index The index of the element to return.
      * @return The avatarTeamGuidList at the given index.
      */
@@ -49,8 +49,8 @@ public final class PersistentDungeonSwitchAvatarRspOuterClass {
   }
   /**
    * <pre>
-   * Name: IHJMLCFKOMH
-   * CmdId: 1656
+   * CmdId: 1601
+   * Obf: AAFLJLMEIGG
    * </pre>
    *
    * Protobuf type {@code PersistentDungeonSwitchAvatarRsp}
@@ -99,7 +99,17 @@ public final class PersistentDungeonSwitchAvatarRspOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 48: {
+
+              curAvatarGuid_ = input.readUInt64();
+              break;
+            }
+            case 104: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 112: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 avatarTeamGuidList_ = newLongList();
                 mutable_bitField0_ |= 0x00000001;
@@ -107,7 +117,7 @@ public final class PersistentDungeonSwitchAvatarRspOuterClass {
               avatarTeamGuidList_.addLong(input.readUInt64());
               break;
             }
-            case 34: {
+            case 114: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -118,16 +128,6 @@ public final class PersistentDungeonSwitchAvatarRspOuterClass {
                 avatarTeamGuidList_.addLong(input.readUInt64());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 48: {
-
-              curAvatarGuid_ = input.readUInt64();
-              break;
-            }
-            case 64: {
-
-              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -165,10 +165,10 @@ public final class PersistentDungeonSwitchAvatarRspOuterClass {
               emu.grasscutter.net.proto.PersistentDungeonSwitchAvatarRspOuterClass.PersistentDungeonSwitchAvatarRsp.class, emu.grasscutter.net.proto.PersistentDungeonSwitchAvatarRspOuterClass.PersistentDungeonSwitchAvatarRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 8;
+    public static final int RETCODE_FIELD_NUMBER = 13;
     private int retcode_;
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 13;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -176,10 +176,10 @@ public final class PersistentDungeonSwitchAvatarRspOuterClass {
       return retcode_;
     }
 
-    public static final int AVATAR_TEAM_GUID_LIST_FIELD_NUMBER = 4;
+    public static final int AVATAR_TEAM_GUID_LIST_FIELD_NUMBER = 14;
     private com.google.protobuf.Internal.LongList avatarTeamGuidList_;
     /**
-     * <code>repeated uint64 avatar_team_guid_list = 4;</code>
+     * <code>repeated uint64 avatar_team_guid_list = 14;</code>
      * @return A list containing the avatarTeamGuidList.
      */
     @java.lang.Override
@@ -188,14 +188,14 @@ public final class PersistentDungeonSwitchAvatarRspOuterClass {
       return avatarTeamGuidList_;
     }
     /**
-     * <code>repeated uint64 avatar_team_guid_list = 4;</code>
+     * <code>repeated uint64 avatar_team_guid_list = 14;</code>
      * @return The count of avatarTeamGuidList.
      */
     public int getAvatarTeamGuidListCount() {
       return avatarTeamGuidList_.size();
     }
     /**
-     * <code>repeated uint64 avatar_team_guid_list = 4;</code>
+     * <code>repeated uint64 avatar_team_guid_list = 14;</code>
      * @param index The index of the element to return.
      * @return The avatarTeamGuidList at the given index.
      */
@@ -230,18 +230,18 @@ public final class PersistentDungeonSwitchAvatarRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (getAvatarTeamGuidListList().size() > 0) {
-        output.writeUInt32NoTag(34);
-        output.writeUInt32NoTag(avatarTeamGuidListMemoizedSerializedSize);
-      }
-      for (int i = 0; i < avatarTeamGuidList_.size(); i++) {
-        output.writeUInt64NoTag(avatarTeamGuidList_.getLong(i));
-      }
       if (curAvatarGuid_ != 0L) {
         output.writeUInt64(6, curAvatarGuid_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
+        output.writeInt32(13, retcode_);
+      }
+      if (getAvatarTeamGuidListList().size() > 0) {
+        output.writeUInt32NoTag(114);
+        output.writeUInt32NoTag(avatarTeamGuidListMemoizedSerializedSize);
+      }
+      for (int i = 0; i < avatarTeamGuidList_.size(); i++) {
+        output.writeUInt64NoTag(avatarTeamGuidList_.getLong(i));
       }
       unknownFields.writeTo(output);
     }
@@ -252,6 +252,14 @@ public final class PersistentDungeonSwitchAvatarRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (curAvatarGuid_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(6, curAvatarGuid_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(13, retcode_);
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < avatarTeamGuidList_.size(); i++) {
@@ -265,14 +273,6 @@ public final class PersistentDungeonSwitchAvatarRspOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         avatarTeamGuidListMemoizedSerializedSize = dataSize;
-      }
-      if (curAvatarGuid_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(6, curAvatarGuid_);
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -412,8 +412,8 @@ public final class PersistentDungeonSwitchAvatarRspOuterClass {
     }
     /**
      * <pre>
-     * Name: IHJMLCFKOMH
-     * CmdId: 1656
+     * CmdId: 1601
+     * Obf: AAFLJLMEIGG
      * </pre>
      *
      * Protobuf type {@code PersistentDungeonSwitchAvatarRsp}
@@ -589,7 +589,7 @@ public final class PersistentDungeonSwitchAvatarRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 13;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -597,7 +597,7 @@ public final class PersistentDungeonSwitchAvatarRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 13;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -608,7 +608,7 @@ public final class PersistentDungeonSwitchAvatarRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -626,7 +626,7 @@ public final class PersistentDungeonSwitchAvatarRspOuterClass {
          }
       }
       /**
-       * <code>repeated uint64 avatar_team_guid_list = 4;</code>
+       * <code>repeated uint64 avatar_team_guid_list = 14;</code>
        * @return A list containing the avatarTeamGuidList.
        */
       public java.util.List<java.lang.Long>
@@ -635,14 +635,14 @@ public final class PersistentDungeonSwitchAvatarRspOuterClass {
                  java.util.Collections.unmodifiableList(avatarTeamGuidList_) : avatarTeamGuidList_;
       }
       /**
-       * <code>repeated uint64 avatar_team_guid_list = 4;</code>
+       * <code>repeated uint64 avatar_team_guid_list = 14;</code>
        * @return The count of avatarTeamGuidList.
        */
       public int getAvatarTeamGuidListCount() {
         return avatarTeamGuidList_.size();
       }
       /**
-       * <code>repeated uint64 avatar_team_guid_list = 4;</code>
+       * <code>repeated uint64 avatar_team_guid_list = 14;</code>
        * @param index The index of the element to return.
        * @return The avatarTeamGuidList at the given index.
        */
@@ -650,7 +650,7 @@ public final class PersistentDungeonSwitchAvatarRspOuterClass {
         return avatarTeamGuidList_.getLong(index);
       }
       /**
-       * <code>repeated uint64 avatar_team_guid_list = 4;</code>
+       * <code>repeated uint64 avatar_team_guid_list = 14;</code>
        * @param index The index to set the value at.
        * @param value The avatarTeamGuidList to set.
        * @return This builder for chaining.
@@ -663,7 +663,7 @@ public final class PersistentDungeonSwitchAvatarRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 avatar_team_guid_list = 4;</code>
+       * <code>repeated uint64 avatar_team_guid_list = 14;</code>
        * @param value The avatarTeamGuidList to add.
        * @return This builder for chaining.
        */
@@ -674,7 +674,7 @@ public final class PersistentDungeonSwitchAvatarRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 avatar_team_guid_list = 4;</code>
+       * <code>repeated uint64 avatar_team_guid_list = 14;</code>
        * @param values The avatarTeamGuidList to add.
        * @return This builder for chaining.
        */
@@ -687,7 +687,7 @@ public final class PersistentDungeonSwitchAvatarRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 avatar_team_guid_list = 4;</code>
+       * <code>repeated uint64 avatar_team_guid_list = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarTeamGuidList() {
@@ -796,7 +796,7 @@ public final class PersistentDungeonSwitchAvatarRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n&PersistentDungeonSwitchAvatarRsp.proto" +
       "\"k\n PersistentDungeonSwitchAvatarRsp\022\017\n\007" +
-      "retcode\030\010 \001(\005\022\035\n\025avatar_team_guid_list\030\004" +
+      "retcode\030\r \001(\005\022\035\n\025avatar_team_guid_list\030\016" +
       " \003(\004\022\027\n\017cur_avatar_guid\030\006 \001(\004B\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };

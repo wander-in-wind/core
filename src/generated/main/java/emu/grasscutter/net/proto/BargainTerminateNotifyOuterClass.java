@@ -26,8 +26,8 @@ public final class BargainTerminateNotifyOuterClass {
   }
   /**
    * <pre>
-   * Name: ADBLPFJICML
-   * CmdId: 484
+   * CmdId: 426
+   * Obf: JCPIHJIJLGJ
    * </pre>
    *
    * Protobuf type {@code BargainTerminateNotify}
@@ -279,8 +279,8 @@ public final class BargainTerminateNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: ADBLPFJICML
-     * CmdId: 484
+     * CmdId: 426
+     * Obf: JCPIHJIJLGJ
      * </pre>
      *
      * Protobuf type {@code BargainTerminateNotify}

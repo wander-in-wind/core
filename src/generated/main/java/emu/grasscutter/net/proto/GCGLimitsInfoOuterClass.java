@@ -19,20 +19,20 @@ public final class GCGLimitsInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 HPPJEEIHHEG = 11;</code>
-     * @return The hPPJEEIHHEG.
+     * <code>uint32 EDNJLNEFJGA = 11;</code>
+     * @return The eDNJLNEFJGA.
      */
-    int getHPPJEEIHHEG();
+    int getEDNJLNEFJGA();
 
     /**
-     * <code>uint32 LNDNPPAMIIN = 8;</code>
-     * @return The lNDNPPAMIIN.
+     * <code>uint32 PNKLDHDMEOP = 9;</code>
+     * @return The pNKLDHDMEOP.
      */
-    int getLNDNPPAMIIN();
+    int getPNKLDHDMEOP();
   }
   /**
    * <pre>
-   * Name: MPOHNPIMAAJ
+   * Obf: INKKKGHKLAN
    * </pre>
    *
    * Protobuf type {@code GCGLimitsInfo}
@@ -79,14 +79,14 @@ public final class GCGLimitsInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 72: {
 
-              lNDNPPAMIIN_ = input.readUInt32();
+              pNKLDHDMEOP_ = input.readUInt32();
               break;
             }
             case 88: {
 
-              hPPJEEIHHEG_ = input.readUInt32();
+              eDNJLNEFJGA_ = input.readUInt32();
               break;
             }
             default: {
@@ -121,26 +121,26 @@ public final class GCGLimitsInfoOuterClass {
               emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo.class, emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo.Builder.class);
     }
 
-    public static final int HPPJEEIHHEG_FIELD_NUMBER = 11;
-    private int hPPJEEIHHEG_;
+    public static final int EDNJLNEFJGA_FIELD_NUMBER = 11;
+    private int eDNJLNEFJGA_;
     /**
-     * <code>uint32 HPPJEEIHHEG = 11;</code>
-     * @return The hPPJEEIHHEG.
+     * <code>uint32 EDNJLNEFJGA = 11;</code>
+     * @return The eDNJLNEFJGA.
      */
     @java.lang.Override
-    public int getHPPJEEIHHEG() {
-      return hPPJEEIHHEG_;
+    public int getEDNJLNEFJGA() {
+      return eDNJLNEFJGA_;
     }
 
-    public static final int LNDNPPAMIIN_FIELD_NUMBER = 8;
-    private int lNDNPPAMIIN_;
+    public static final int PNKLDHDMEOP_FIELD_NUMBER = 9;
+    private int pNKLDHDMEOP_;
     /**
-     * <code>uint32 LNDNPPAMIIN = 8;</code>
-     * @return The lNDNPPAMIIN.
+     * <code>uint32 PNKLDHDMEOP = 9;</code>
+     * @return The pNKLDHDMEOP.
      */
     @java.lang.Override
-    public int getLNDNPPAMIIN() {
-      return lNDNPPAMIIN_;
+    public int getPNKLDHDMEOP() {
+      return pNKLDHDMEOP_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -157,11 +157,11 @@ public final class GCGLimitsInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (lNDNPPAMIIN_ != 0) {
-        output.writeUInt32(8, lNDNPPAMIIN_);
+      if (pNKLDHDMEOP_ != 0) {
+        output.writeUInt32(9, pNKLDHDMEOP_);
       }
-      if (hPPJEEIHHEG_ != 0) {
-        output.writeUInt32(11, hPPJEEIHHEG_);
+      if (eDNJLNEFJGA_ != 0) {
+        output.writeUInt32(11, eDNJLNEFJGA_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +172,13 @@ public final class GCGLimitsInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (lNDNPPAMIIN_ != 0) {
+      if (pNKLDHDMEOP_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, lNDNPPAMIIN_);
+          .computeUInt32Size(9, pNKLDHDMEOP_);
       }
-      if (hPPJEEIHHEG_ != 0) {
+      if (eDNJLNEFJGA_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, hPPJEEIHHEG_);
+          .computeUInt32Size(11, eDNJLNEFJGA_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -195,10 +195,10 @@ public final class GCGLimitsInfoOuterClass {
       }
       emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo other = (emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo) obj;
 
-      if (getHPPJEEIHHEG()
-          != other.getHPPJEEIHHEG()) return false;
-      if (getLNDNPPAMIIN()
-          != other.getLNDNPPAMIIN()) return false;
+      if (getEDNJLNEFJGA()
+          != other.getEDNJLNEFJGA()) return false;
+      if (getPNKLDHDMEOP()
+          != other.getPNKLDHDMEOP()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -210,10 +210,10 @@ public final class GCGLimitsInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + HPPJEEIHHEG_FIELD_NUMBER;
-      hash = (53 * hash) + getHPPJEEIHHEG();
-      hash = (37 * hash) + LNDNPPAMIIN_FIELD_NUMBER;
-      hash = (53 * hash) + getLNDNPPAMIIN();
+      hash = (37 * hash) + EDNJLNEFJGA_FIELD_NUMBER;
+      hash = (53 * hash) + getEDNJLNEFJGA();
+      hash = (37 * hash) + PNKLDHDMEOP_FIELD_NUMBER;
+      hash = (53 * hash) + getPNKLDHDMEOP();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -311,7 +311,7 @@ public final class GCGLimitsInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: MPOHNPIMAAJ
+     * Obf: INKKKGHKLAN
      * </pre>
      *
      * Protobuf type {@code GCGLimitsInfo}
@@ -351,9 +351,9 @@ public final class GCGLimitsInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        hPPJEEIHHEG_ = 0;
+        eDNJLNEFJGA_ = 0;
 
-        lNDNPPAMIIN_ = 0;
+        pNKLDHDMEOP_ = 0;
 
         return this;
       }
@@ -381,8 +381,8 @@ public final class GCGLimitsInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo buildPartial() {
         emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo result = new emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo(this);
-        result.hPPJEEIHHEG_ = hPPJEEIHHEG_;
-        result.lNDNPPAMIIN_ = lNDNPPAMIIN_;
+        result.eDNJLNEFJGA_ = eDNJLNEFJGA_;
+        result.pNKLDHDMEOP_ = pNKLDHDMEOP_;
         onBuilt();
         return result;
       }
@@ -431,11 +431,11 @@ public final class GCGLimitsInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo other) {
         if (other == emu.grasscutter.net.proto.GCGLimitsInfoOuterClass.GCGLimitsInfo.getDefaultInstance()) return this;
-        if (other.getHPPJEEIHHEG() != 0) {
-          setHPPJEEIHHEG(other.getHPPJEEIHHEG());
+        if (other.getEDNJLNEFJGA() != 0) {
+          setEDNJLNEFJGA(other.getEDNJLNEFJGA());
         }
-        if (other.getLNDNPPAMIIN() != 0) {
-          setLNDNPPAMIIN(other.getLNDNPPAMIIN());
+        if (other.getPNKLDHDMEOP() != 0) {
+          setPNKLDHDMEOP(other.getPNKLDHDMEOP());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -466,64 +466,64 @@ public final class GCGLimitsInfoOuterClass {
         return this;
       }
 
-      private int hPPJEEIHHEG_ ;
+      private int eDNJLNEFJGA_ ;
       /**
-       * <code>uint32 HPPJEEIHHEG = 11;</code>
-       * @return The hPPJEEIHHEG.
+       * <code>uint32 EDNJLNEFJGA = 11;</code>
+       * @return The eDNJLNEFJGA.
        */
       @java.lang.Override
-      public int getHPPJEEIHHEG() {
-        return hPPJEEIHHEG_;
+      public int getEDNJLNEFJGA() {
+        return eDNJLNEFJGA_;
       }
       /**
-       * <code>uint32 HPPJEEIHHEG = 11;</code>
-       * @param value The hPPJEEIHHEG to set.
+       * <code>uint32 EDNJLNEFJGA = 11;</code>
+       * @param value The eDNJLNEFJGA to set.
        * @return This builder for chaining.
        */
-      public Builder setHPPJEEIHHEG(int value) {
+      public Builder setEDNJLNEFJGA(int value) {
         
-        hPPJEEIHHEG_ = value;
+        eDNJLNEFJGA_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 HPPJEEIHHEG = 11;</code>
+       * <code>uint32 EDNJLNEFJGA = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearHPPJEEIHHEG() {
+      public Builder clearEDNJLNEFJGA() {
         
-        hPPJEEIHHEG_ = 0;
+        eDNJLNEFJGA_ = 0;
         onChanged();
         return this;
       }
 
-      private int lNDNPPAMIIN_ ;
+      private int pNKLDHDMEOP_ ;
       /**
-       * <code>uint32 LNDNPPAMIIN = 8;</code>
-       * @return The lNDNPPAMIIN.
+       * <code>uint32 PNKLDHDMEOP = 9;</code>
+       * @return The pNKLDHDMEOP.
        */
       @java.lang.Override
-      public int getLNDNPPAMIIN() {
-        return lNDNPPAMIIN_;
+      public int getPNKLDHDMEOP() {
+        return pNKLDHDMEOP_;
       }
       /**
-       * <code>uint32 LNDNPPAMIIN = 8;</code>
-       * @param value The lNDNPPAMIIN to set.
+       * <code>uint32 PNKLDHDMEOP = 9;</code>
+       * @param value The pNKLDHDMEOP to set.
        * @return This builder for chaining.
        */
-      public Builder setLNDNPPAMIIN(int value) {
+      public Builder setPNKLDHDMEOP(int value) {
         
-        lNDNPPAMIIN_ = value;
+        pNKLDHDMEOP_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 LNDNPPAMIIN = 8;</code>
+       * <code>uint32 PNKLDHDMEOP = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLNDNPPAMIIN() {
+      public Builder clearPNKLDHDMEOP() {
         
-        lNDNPPAMIIN_ = 0;
+        pNKLDHDMEOP_ = 0;
         onChanged();
         return this;
       }
@@ -595,7 +595,7 @@ public final class GCGLimitsInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\023GCGLimitsInfo.proto\"9\n\rGCGLimitsInfo\022\023" +
-      "\n\013HPPJEEIHHEG\030\013 \001(\r\022\023\n\013LNDNPPAMIIN\030\010 \001(\r" +
+      "\n\013EDNJLNEFJGA\030\013 \001(\r\022\023\n\013PNKLDHDMEOP\030\t \001(\r" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -607,7 +607,7 @@ public final class GCGLimitsInfoOuterClass {
     internal_static_GCGLimitsInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGLimitsInfo_descriptor,
-        new java.lang.String[] { "HPPJEEIHHEG", "LNDNPPAMIIN", });
+        new java.lang.String[] { "EDNJLNEFJGA", "PNKLDHDMEOP", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

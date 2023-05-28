@@ -19,58 +19,43 @@ public final class GCGMsgTokenChangeOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *DBKMBFLENFI snootodo swapperoo 3
-     * </pre>
-     *
-     * <code>uint32 before = 11;</code>
-     * @return The before.
-     */
-    int getBefore();
-
-    /**
-     * <code>.GCGReason reason = 1;</code>
+     * <code>.MNDCMMKBIBP reason = 2;</code>
      * @return The enum numeric value on the wire for reason.
      */
     int getReasonValue();
     /**
-     * <code>.GCGReason reason = 1;</code>
+     * <code>.MNDCMMKBIBP reason = 2;</code>
      * @return The reason.
      */
-    emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason getReason();
+    emu.grasscutter.net.proto.MNDCMMKBIBPOuterClass.MNDCMMKBIBP getReason();
 
     /**
-     * <pre>
-     *FLOBIIACNND snootodo swapperoo 3
-     * </pre>
-     *
-     * <code>uint32 token_type = 15;</code>
-     * @return The tokenType.
+     * <code>uint32 DDJGBKCEKJC = 6;</code>
+     * @return The dDJGBKCEKJC.
      */
-    int getTokenType();
+    int getDDJGBKCEKJC();
 
     /**
-     * <pre>
-     *FCLCILADFHG snootodo swapperoo 3
-     * </pre>
-     *
-     * <code>uint32 after = 4;</code>
-     * @return The after.
+     * <code>uint32 FIGGLGDEGIG = 5;</code>
+     * @return The fIGGLGDEGIG.
      */
-    int getAfter();
+    int getFIGGLGDEGIG();
 
     /**
-     * <code>uint32 card_guid = 2;</code>
+     * <code>uint32 IHEELKBILHO = 1;</code>
+     * @return The iHEELKBILHO.
+     */
+    int getIHEELKBILHO();
+
+    /**
+     * <code>uint32 card_guid = 12;</code>
      * @return The cardGuid.
      */
     int getCardGuid();
   }
   /**
    * <pre>
-   * Name: AMJPLDCHBLD
-   *before 13, after 11, token_type 4 3_2
-   *before 12, after 10, token_type 7 3_3
-   *before 15, after  5, token_type 8 3_4
+   * Obf: NMOMNMJEDFF
    * </pre>
    *
    * Protobuf type {@code GCGMsgTokenChange}
@@ -119,29 +104,29 @@ public final class GCGMsgTokenChangeOuterClass {
               done = true;
               break;
             case 8: {
+
+              iHEELKBILHO_ = input.readUInt32();
+              break;
+            }
+            case 16: {
               int rawValue = input.readEnum();
 
               reason_ = rawValue;
               break;
             }
-            case 16: {
+            case 40: {
+
+              fIGGLGDEGIG_ = input.readUInt32();
+              break;
+            }
+            case 48: {
+
+              dDJGBKCEKJC_ = input.readUInt32();
+              break;
+            }
+            case 96: {
 
               cardGuid_ = input.readUInt32();
-              break;
-            }
-            case 32: {
-
-              after_ = input.readUInt32();
-              break;
-            }
-            case 88: {
-
-              before_ = input.readUInt32();
-              break;
-            }
-            case 120: {
-
-              tokenType_ = input.readUInt32();
               break;
             }
             default: {
@@ -176,74 +161,62 @@ public final class GCGMsgTokenChangeOuterClass {
               emu.grasscutter.net.proto.GCGMsgTokenChangeOuterClass.GCGMsgTokenChange.class, emu.grasscutter.net.proto.GCGMsgTokenChangeOuterClass.GCGMsgTokenChange.Builder.class);
     }
 
-    public static final int BEFORE_FIELD_NUMBER = 11;
-    private int before_;
-    /**
-     * <pre>
-     *DBKMBFLENFI snootodo swapperoo 3
-     * </pre>
-     *
-     * <code>uint32 before = 11;</code>
-     * @return The before.
-     */
-    @java.lang.Override
-    public int getBefore() {
-      return before_;
-    }
-
-    public static final int REASON_FIELD_NUMBER = 1;
+    public static final int REASON_FIELD_NUMBER = 2;
     private int reason_;
     /**
-     * <code>.GCGReason reason = 1;</code>
+     * <code>.MNDCMMKBIBP reason = 2;</code>
      * @return The enum numeric value on the wire for reason.
      */
     @java.lang.Override public int getReasonValue() {
       return reason_;
     }
     /**
-     * <code>.GCGReason reason = 1;</code>
+     * <code>.MNDCMMKBIBP reason = 2;</code>
      * @return The reason.
      */
-    @java.lang.Override public emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason getReason() {
+    @java.lang.Override public emu.grasscutter.net.proto.MNDCMMKBIBPOuterClass.MNDCMMKBIBP getReason() {
       @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason result = emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason.valueOf(reason_);
-      return result == null ? emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason.UNRECOGNIZED : result;
+      emu.grasscutter.net.proto.MNDCMMKBIBPOuterClass.MNDCMMKBIBP result = emu.grasscutter.net.proto.MNDCMMKBIBPOuterClass.MNDCMMKBIBP.valueOf(reason_);
+      return result == null ? emu.grasscutter.net.proto.MNDCMMKBIBPOuterClass.MNDCMMKBIBP.UNRECOGNIZED : result;
     }
 
-    public static final int TOKEN_TYPE_FIELD_NUMBER = 15;
-    private int tokenType_;
+    public static final int DDJGBKCEKJC_FIELD_NUMBER = 6;
+    private int dDJGBKCEKJC_;
     /**
-     * <pre>
-     *FLOBIIACNND snootodo swapperoo 3
-     * </pre>
-     *
-     * <code>uint32 token_type = 15;</code>
-     * @return The tokenType.
+     * <code>uint32 DDJGBKCEKJC = 6;</code>
+     * @return The dDJGBKCEKJC.
      */
     @java.lang.Override
-    public int getTokenType() {
-      return tokenType_;
+    public int getDDJGBKCEKJC() {
+      return dDJGBKCEKJC_;
     }
 
-    public static final int AFTER_FIELD_NUMBER = 4;
-    private int after_;
+    public static final int FIGGLGDEGIG_FIELD_NUMBER = 5;
+    private int fIGGLGDEGIG_;
     /**
-     * <pre>
-     *FCLCILADFHG snootodo swapperoo 3
-     * </pre>
-     *
-     * <code>uint32 after = 4;</code>
-     * @return The after.
+     * <code>uint32 FIGGLGDEGIG = 5;</code>
+     * @return The fIGGLGDEGIG.
      */
     @java.lang.Override
-    public int getAfter() {
-      return after_;
+    public int getFIGGLGDEGIG() {
+      return fIGGLGDEGIG_;
     }
 
-    public static final int CARD_GUID_FIELD_NUMBER = 2;
+    public static final int IHEELKBILHO_FIELD_NUMBER = 1;
+    private int iHEELKBILHO_;
+    /**
+     * <code>uint32 IHEELKBILHO = 1;</code>
+     * @return The iHEELKBILHO.
+     */
+    @java.lang.Override
+    public int getIHEELKBILHO() {
+      return iHEELKBILHO_;
+    }
+
+    public static final int CARD_GUID_FIELD_NUMBER = 12;
     private int cardGuid_;
     /**
-     * <code>uint32 card_guid = 2;</code>
+     * <code>uint32 card_guid = 12;</code>
      * @return The cardGuid.
      */
     @java.lang.Override
@@ -265,20 +238,20 @@ public final class GCGMsgTokenChangeOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (reason_ != emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason.GCG_REASON_DEFAULT.getNumber()) {
-        output.writeEnum(1, reason_);
+      if (iHEELKBILHO_ != 0) {
+        output.writeUInt32(1, iHEELKBILHO_);
+      }
+      if (reason_ != emu.grasscutter.net.proto.MNDCMMKBIBPOuterClass.MNDCMMKBIBP.MNDCMMKBIBP_Default.getNumber()) {
+        output.writeEnum(2, reason_);
+      }
+      if (fIGGLGDEGIG_ != 0) {
+        output.writeUInt32(5, fIGGLGDEGIG_);
+      }
+      if (dDJGBKCEKJC_ != 0) {
+        output.writeUInt32(6, dDJGBKCEKJC_);
       }
       if (cardGuid_ != 0) {
-        output.writeUInt32(2, cardGuid_);
-      }
-      if (after_ != 0) {
-        output.writeUInt32(4, after_);
-      }
-      if (before_ != 0) {
-        output.writeUInt32(11, before_);
-      }
-      if (tokenType_ != 0) {
-        output.writeUInt32(15, tokenType_);
+        output.writeUInt32(12, cardGuid_);
       }
       unknownFields.writeTo(output);
     }
@@ -289,25 +262,25 @@ public final class GCGMsgTokenChangeOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (reason_ != emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason.GCG_REASON_DEFAULT.getNumber()) {
+      if (iHEELKBILHO_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(1, reason_);
+          .computeUInt32Size(1, iHEELKBILHO_);
+      }
+      if (reason_ != emu.grasscutter.net.proto.MNDCMMKBIBPOuterClass.MNDCMMKBIBP.MNDCMMKBIBP_Default.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(2, reason_);
+      }
+      if (fIGGLGDEGIG_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, fIGGLGDEGIG_);
+      }
+      if (dDJGBKCEKJC_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, dDJGBKCEKJC_);
       }
       if (cardGuid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, cardGuid_);
-      }
-      if (after_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, after_);
-      }
-      if (before_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, before_);
-      }
-      if (tokenType_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, tokenType_);
+          .computeUInt32Size(12, cardGuid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -324,13 +297,13 @@ public final class GCGMsgTokenChangeOuterClass {
       }
       emu.grasscutter.net.proto.GCGMsgTokenChangeOuterClass.GCGMsgTokenChange other = (emu.grasscutter.net.proto.GCGMsgTokenChangeOuterClass.GCGMsgTokenChange) obj;
 
-      if (getBefore()
-          != other.getBefore()) return false;
       if (reason_ != other.reason_) return false;
-      if (getTokenType()
-          != other.getTokenType()) return false;
-      if (getAfter()
-          != other.getAfter()) return false;
+      if (getDDJGBKCEKJC()
+          != other.getDDJGBKCEKJC()) return false;
+      if (getFIGGLGDEGIG()
+          != other.getFIGGLGDEGIG()) return false;
+      if (getIHEELKBILHO()
+          != other.getIHEELKBILHO()) return false;
       if (getCardGuid()
           != other.getCardGuid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -344,14 +317,14 @@ public final class GCGMsgTokenChangeOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + BEFORE_FIELD_NUMBER;
-      hash = (53 * hash) + getBefore();
       hash = (37 * hash) + REASON_FIELD_NUMBER;
       hash = (53 * hash) + reason_;
-      hash = (37 * hash) + TOKEN_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getTokenType();
-      hash = (37 * hash) + AFTER_FIELD_NUMBER;
-      hash = (53 * hash) + getAfter();
+      hash = (37 * hash) + DDJGBKCEKJC_FIELD_NUMBER;
+      hash = (53 * hash) + getDDJGBKCEKJC();
+      hash = (37 * hash) + FIGGLGDEGIG_FIELD_NUMBER;
+      hash = (53 * hash) + getFIGGLGDEGIG();
+      hash = (37 * hash) + IHEELKBILHO_FIELD_NUMBER;
+      hash = (53 * hash) + getIHEELKBILHO();
       hash = (37 * hash) + CARD_GUID_FIELD_NUMBER;
       hash = (53 * hash) + getCardGuid();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -451,10 +424,7 @@ public final class GCGMsgTokenChangeOuterClass {
     }
     /**
      * <pre>
-     * Name: AMJPLDCHBLD
-     *before 13, after 11, token_type 4 3_2
-     *before 12, after 10, token_type 7 3_3
-     *before 15, after  5, token_type 8 3_4
+     * Obf: NMOMNMJEDFF
      * </pre>
      *
      * Protobuf type {@code GCGMsgTokenChange}
@@ -494,13 +464,13 @@ public final class GCGMsgTokenChangeOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        before_ = 0;
-
         reason_ = 0;
 
-        tokenType_ = 0;
+        dDJGBKCEKJC_ = 0;
 
-        after_ = 0;
+        fIGGLGDEGIG_ = 0;
+
+        iHEELKBILHO_ = 0;
 
         cardGuid_ = 0;
 
@@ -530,10 +500,10 @@ public final class GCGMsgTokenChangeOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgTokenChangeOuterClass.GCGMsgTokenChange buildPartial() {
         emu.grasscutter.net.proto.GCGMsgTokenChangeOuterClass.GCGMsgTokenChange result = new emu.grasscutter.net.proto.GCGMsgTokenChangeOuterClass.GCGMsgTokenChange(this);
-        result.before_ = before_;
         result.reason_ = reason_;
-        result.tokenType_ = tokenType_;
-        result.after_ = after_;
+        result.dDJGBKCEKJC_ = dDJGBKCEKJC_;
+        result.fIGGLGDEGIG_ = fIGGLGDEGIG_;
+        result.iHEELKBILHO_ = iHEELKBILHO_;
         result.cardGuid_ = cardGuid_;
         onBuilt();
         return result;
@@ -583,17 +553,17 @@ public final class GCGMsgTokenChangeOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGMsgTokenChangeOuterClass.GCGMsgTokenChange other) {
         if (other == emu.grasscutter.net.proto.GCGMsgTokenChangeOuterClass.GCGMsgTokenChange.getDefaultInstance()) return this;
-        if (other.getBefore() != 0) {
-          setBefore(other.getBefore());
-        }
         if (other.reason_ != 0) {
           setReasonValue(other.getReasonValue());
         }
-        if (other.getTokenType() != 0) {
-          setTokenType(other.getTokenType());
+        if (other.getDDJGBKCEKJC() != 0) {
+          setDDJGBKCEKJC(other.getDDJGBKCEKJC());
         }
-        if (other.getAfter() != 0) {
-          setAfter(other.getAfter());
+        if (other.getFIGGLGDEGIG() != 0) {
+          setFIGGLGDEGIG(other.getFIGGLGDEGIG());
+        }
+        if (other.getIHEELKBILHO() != 0) {
+          setIHEELKBILHO(other.getIHEELKBILHO());
         }
         if (other.getCardGuid() != 0) {
           setCardGuid(other.getCardGuid());
@@ -627,59 +597,16 @@ public final class GCGMsgTokenChangeOuterClass {
         return this;
       }
 
-      private int before_ ;
-      /**
-       * <pre>
-       *DBKMBFLENFI snootodo swapperoo 3
-       * </pre>
-       *
-       * <code>uint32 before = 11;</code>
-       * @return The before.
-       */
-      @java.lang.Override
-      public int getBefore() {
-        return before_;
-      }
-      /**
-       * <pre>
-       *DBKMBFLENFI snootodo swapperoo 3
-       * </pre>
-       *
-       * <code>uint32 before = 11;</code>
-       * @param value The before to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBefore(int value) {
-        
-        before_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *DBKMBFLENFI snootodo swapperoo 3
-       * </pre>
-       *
-       * <code>uint32 before = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBefore() {
-        
-        before_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int reason_ = 0;
       /**
-       * <code>.GCGReason reason = 1;</code>
+       * <code>.MNDCMMKBIBP reason = 2;</code>
        * @return The enum numeric value on the wire for reason.
        */
       @java.lang.Override public int getReasonValue() {
         return reason_;
       }
       /**
-       * <code>.GCGReason reason = 1;</code>
+       * <code>.MNDCMMKBIBP reason = 2;</code>
        * @param value The enum numeric value on the wire for reason to set.
        * @return This builder for chaining.
        */
@@ -690,21 +617,21 @@ public final class GCGMsgTokenChangeOuterClass {
         return this;
       }
       /**
-       * <code>.GCGReason reason = 1;</code>
+       * <code>.MNDCMMKBIBP reason = 2;</code>
        * @return The reason.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason getReason() {
+      public emu.grasscutter.net.proto.MNDCMMKBIBPOuterClass.MNDCMMKBIBP getReason() {
         @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason result = emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason.valueOf(reason_);
-        return result == null ? emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason.UNRECOGNIZED : result;
+        emu.grasscutter.net.proto.MNDCMMKBIBPOuterClass.MNDCMMKBIBP result = emu.grasscutter.net.proto.MNDCMMKBIBPOuterClass.MNDCMMKBIBP.valueOf(reason_);
+        return result == null ? emu.grasscutter.net.proto.MNDCMMKBIBPOuterClass.MNDCMMKBIBP.UNRECOGNIZED : result;
       }
       /**
-       * <code>.GCGReason reason = 1;</code>
+       * <code>.MNDCMMKBIBP reason = 2;</code>
        * @param value The reason to set.
        * @return This builder for chaining.
        */
-      public Builder setReason(emu.grasscutter.net.proto.GCGReasonOuterClass.GCGReason value) {
+      public Builder setReason(emu.grasscutter.net.proto.MNDCMMKBIBPOuterClass.MNDCMMKBIBP value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -714,7 +641,7 @@ public final class GCGMsgTokenChangeOuterClass {
         return this;
       }
       /**
-       * <code>.GCGReason reason = 1;</code>
+       * <code>.MNDCMMKBIBP reason = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearReason() {
@@ -724,95 +651,102 @@ public final class GCGMsgTokenChangeOuterClass {
         return this;
       }
 
-      private int tokenType_ ;
+      private int dDJGBKCEKJC_ ;
       /**
-       * <pre>
-       *FLOBIIACNND snootodo swapperoo 3
-       * </pre>
-       *
-       * <code>uint32 token_type = 15;</code>
-       * @return The tokenType.
+       * <code>uint32 DDJGBKCEKJC = 6;</code>
+       * @return The dDJGBKCEKJC.
        */
       @java.lang.Override
-      public int getTokenType() {
-        return tokenType_;
+      public int getDDJGBKCEKJC() {
+        return dDJGBKCEKJC_;
       }
       /**
-       * <pre>
-       *FLOBIIACNND snootodo swapperoo 3
-       * </pre>
-       *
-       * <code>uint32 token_type = 15;</code>
-       * @param value The tokenType to set.
+       * <code>uint32 DDJGBKCEKJC = 6;</code>
+       * @param value The dDJGBKCEKJC to set.
        * @return This builder for chaining.
        */
-      public Builder setTokenType(int value) {
+      public Builder setDDJGBKCEKJC(int value) {
         
-        tokenType_ = value;
+        dDJGBKCEKJC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       *FLOBIIACNND snootodo swapperoo 3
-       * </pre>
-       *
-       * <code>uint32 token_type = 15;</code>
+       * <code>uint32 DDJGBKCEKJC = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTokenType() {
+      public Builder clearDDJGBKCEKJC() {
         
-        tokenType_ = 0;
+        dDJGBKCEKJC_ = 0;
         onChanged();
         return this;
       }
 
-      private int after_ ;
+      private int fIGGLGDEGIG_ ;
       /**
-       * <pre>
-       *FCLCILADFHG snootodo swapperoo 3
-       * </pre>
-       *
-       * <code>uint32 after = 4;</code>
-       * @return The after.
+       * <code>uint32 FIGGLGDEGIG = 5;</code>
+       * @return The fIGGLGDEGIG.
        */
       @java.lang.Override
-      public int getAfter() {
-        return after_;
+      public int getFIGGLGDEGIG() {
+        return fIGGLGDEGIG_;
       }
       /**
-       * <pre>
-       *FCLCILADFHG snootodo swapperoo 3
-       * </pre>
-       *
-       * <code>uint32 after = 4;</code>
-       * @param value The after to set.
+       * <code>uint32 FIGGLGDEGIG = 5;</code>
+       * @param value The fIGGLGDEGIG to set.
        * @return This builder for chaining.
        */
-      public Builder setAfter(int value) {
+      public Builder setFIGGLGDEGIG(int value) {
         
-        after_ = value;
+        fIGGLGDEGIG_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       *FCLCILADFHG snootodo swapperoo 3
-       * </pre>
-       *
-       * <code>uint32 after = 4;</code>
+       * <code>uint32 FIGGLGDEGIG = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearAfter() {
+      public Builder clearFIGGLGDEGIG() {
         
-        after_ = 0;
+        fIGGLGDEGIG_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int iHEELKBILHO_ ;
+      /**
+       * <code>uint32 IHEELKBILHO = 1;</code>
+       * @return The iHEELKBILHO.
+       */
+      @java.lang.Override
+      public int getIHEELKBILHO() {
+        return iHEELKBILHO_;
+      }
+      /**
+       * <code>uint32 IHEELKBILHO = 1;</code>
+       * @param value The iHEELKBILHO to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIHEELKBILHO(int value) {
+        
+        iHEELKBILHO_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 IHEELKBILHO = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIHEELKBILHO() {
+        
+        iHEELKBILHO_ = 0;
         onChanged();
         return this;
       }
 
       private int cardGuid_ ;
       /**
-       * <code>uint32 card_guid = 2;</code>
+       * <code>uint32 card_guid = 12;</code>
        * @return The cardGuid.
        */
       @java.lang.Override
@@ -820,7 +754,7 @@ public final class GCGMsgTokenChangeOuterClass {
         return cardGuid_;
       }
       /**
-       * <code>uint32 card_guid = 2;</code>
+       * <code>uint32 card_guid = 12;</code>
        * @param value The cardGuid to set.
        * @return This builder for chaining.
        */
@@ -831,7 +765,7 @@ public final class GCGMsgTokenChangeOuterClass {
         return this;
       }
       /**
-       * <code>uint32 card_guid = 2;</code>
+       * <code>uint32 card_guid = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearCardGuid() {
@@ -907,24 +841,25 @@ public final class GCGMsgTokenChangeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\027GCGMsgTokenChange.proto\032\017GCGReason.pro" +
-      "to\"u\n\021GCGMsgTokenChange\022\016\n\006before\030\013 \001(\r\022" +
-      "\032\n\006reason\030\001 \001(\0162\n.GCGReason\022\022\n\ntoken_typ" +
-      "e\030\017 \001(\r\022\r\n\005after\030\004 \001(\r\022\021\n\tcard_guid\030\002 \001(" +
-      "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\027GCGMsgTokenChange.proto\032\021MNDCMMKBIBP.p" +
+      "roto\"\203\001\n\021GCGMsgTokenChange\022\034\n\006reason\030\002 \001" +
+      "(\0162\014.MNDCMMKBIBP\022\023\n\013DDJGBKCEKJC\030\006 \001(\r\022\023\n" +
+      "\013FIGGLGDEGIG\030\005 \001(\r\022\023\n\013IHEELKBILHO\030\001 \001(\r\022" +
+      "\021\n\tcard_guid\030\014 \001(\rB\033\n\031emu.grasscutter.ne" +
+      "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.GCGReasonOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.MNDCMMKBIBPOuterClass.getDescriptor(),
         });
     internal_static_GCGMsgTokenChange_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_GCGMsgTokenChange_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGMsgTokenChange_descriptor,
-        new java.lang.String[] { "Before", "Reason", "TokenType", "After", "CardGuid", });
-    emu.grasscutter.net.proto.GCGReasonOuterClass.getDescriptor();
+        new java.lang.String[] { "Reason", "DDJGBKCEKJC", "FIGGLGDEGIG", "IHEELKBILHO", "CardGuid", });
+    emu.grasscutter.net.proto.MNDCMMKBIBPOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

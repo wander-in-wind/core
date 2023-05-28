@@ -19,33 +19,33 @@ public final class ClientReportNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string EAPMOECPEPG = 7;</code>
-     * @return The eAPMOECPEPG.
+     * <code>string FKBNBKFNBDK = 13;</code>
+     * @return The fKBNBKFNBDK.
      */
-    java.lang.String getEAPMOECPEPG();
+    java.lang.String getFKBNBKFNBDK();
     /**
-     * <code>string EAPMOECPEPG = 7;</code>
-     * @return The bytes for eAPMOECPEPG.
+     * <code>string FKBNBKFNBDK = 13;</code>
+     * @return The bytes for fKBNBKFNBDK.
      */
     com.google.protobuf.ByteString
-        getEAPMOECPEPGBytes();
+        getFKBNBKFNBDKBytes();
 
     /**
-     * <code>string EMODEICADOO = 15;</code>
-     * @return The eMODEICADOO.
+     * <code>string HGDGHCLHDMG = 7;</code>
+     * @return The hGDGHCLHDMG.
      */
-    java.lang.String getEMODEICADOO();
+    java.lang.String getHGDGHCLHDMG();
     /**
-     * <code>string EMODEICADOO = 15;</code>
-     * @return The bytes for eMODEICADOO.
+     * <code>string HGDGHCLHDMG = 7;</code>
+     * @return The bytes for hGDGHCLHDMG.
      */
     com.google.protobuf.ByteString
-        getEMODEICADOOBytes();
+        getHGDGHCLHDMGBytes();
   }
   /**
    * <pre>
-   * Name: LEAMJFGPJOI
-   * CmdId: 29
+   * CmdId: 94
+   * Obf: JPGJCONIBGC
    * </pre>
    *
    * Protobuf type {@code ClientReportNotify}
@@ -60,8 +60,8 @@ public final class ClientReportNotifyOuterClass {
       super(builder);
     }
     private ClientReportNotify() {
-      eAPMOECPEPG_ = "";
-      eMODEICADOO_ = "";
+      fKBNBKFNBDK_ = "";
+      hGDGHCLHDMG_ = "";
     }
 
     @java.lang.Override
@@ -97,13 +97,13 @@ public final class ClientReportNotifyOuterClass {
             case 58: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              eAPMOECPEPG_ = s;
+              hGDGHCLHDMG_ = s;
               break;
             }
-            case 122: {
+            case 106: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              eMODEICADOO_ = s;
+              fKBNBKFNBDK_ = s;
               break;
             }
             default: {
@@ -138,76 +138,76 @@ public final class ClientReportNotifyOuterClass {
               emu.grasscutter.net.proto.ClientReportNotifyOuterClass.ClientReportNotify.class, emu.grasscutter.net.proto.ClientReportNotifyOuterClass.ClientReportNotify.Builder.class);
     }
 
-    public static final int EAPMOECPEPG_FIELD_NUMBER = 7;
-    private volatile java.lang.Object eAPMOECPEPG_;
+    public static final int FKBNBKFNBDK_FIELD_NUMBER = 13;
+    private volatile java.lang.Object fKBNBKFNBDK_;
     /**
-     * <code>string EAPMOECPEPG = 7;</code>
-     * @return The eAPMOECPEPG.
+     * <code>string FKBNBKFNBDK = 13;</code>
+     * @return The fKBNBKFNBDK.
      */
     @java.lang.Override
-    public java.lang.String getEAPMOECPEPG() {
-      java.lang.Object ref = eAPMOECPEPG_;
+    public java.lang.String getFKBNBKFNBDK() {
+      java.lang.Object ref = fKBNBKFNBDK_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        eAPMOECPEPG_ = s;
+        fKBNBKFNBDK_ = s;
         return s;
       }
     }
     /**
-     * <code>string EAPMOECPEPG = 7;</code>
-     * @return The bytes for eAPMOECPEPG.
+     * <code>string FKBNBKFNBDK = 13;</code>
+     * @return The bytes for fKBNBKFNBDK.
      */
     @java.lang.Override
     public com.google.protobuf.ByteString
-        getEAPMOECPEPGBytes() {
-      java.lang.Object ref = eAPMOECPEPG_;
+        getFKBNBKFNBDKBytes() {
+      java.lang.Object ref = fKBNBKFNBDK_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        eAPMOECPEPG_ = b;
+        fKBNBKFNBDK_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
 
-    public static final int EMODEICADOO_FIELD_NUMBER = 15;
-    private volatile java.lang.Object eMODEICADOO_;
+    public static final int HGDGHCLHDMG_FIELD_NUMBER = 7;
+    private volatile java.lang.Object hGDGHCLHDMG_;
     /**
-     * <code>string EMODEICADOO = 15;</code>
-     * @return The eMODEICADOO.
+     * <code>string HGDGHCLHDMG = 7;</code>
+     * @return The hGDGHCLHDMG.
      */
     @java.lang.Override
-    public java.lang.String getEMODEICADOO() {
-      java.lang.Object ref = eMODEICADOO_;
+    public java.lang.String getHGDGHCLHDMG() {
+      java.lang.Object ref = hGDGHCLHDMG_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        eMODEICADOO_ = s;
+        hGDGHCLHDMG_ = s;
         return s;
       }
     }
     /**
-     * <code>string EMODEICADOO = 15;</code>
-     * @return The bytes for eMODEICADOO.
+     * <code>string HGDGHCLHDMG = 7;</code>
+     * @return The bytes for hGDGHCLHDMG.
      */
     @java.lang.Override
     public com.google.protobuf.ByteString
-        getEMODEICADOOBytes() {
-      java.lang.Object ref = eMODEICADOO_;
+        getHGDGHCLHDMGBytes() {
+      java.lang.Object ref = hGDGHCLHDMG_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        eMODEICADOO_ = b;
+        hGDGHCLHDMG_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -228,11 +228,11 @@ public final class ClientReportNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(eAPMOECPEPG_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, eAPMOECPEPG_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(hGDGHCLHDMG_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, hGDGHCLHDMG_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(eMODEICADOO_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 15, eMODEICADOO_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(fKBNBKFNBDK_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 13, fKBNBKFNBDK_);
       }
       unknownFields.writeTo(output);
     }
@@ -243,11 +243,11 @@ public final class ClientReportNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(eAPMOECPEPG_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, eAPMOECPEPG_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(hGDGHCLHDMG_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, hGDGHCLHDMG_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(eMODEICADOO_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(15, eMODEICADOO_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(fKBNBKFNBDK_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(13, fKBNBKFNBDK_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -264,10 +264,10 @@ public final class ClientReportNotifyOuterClass {
       }
       emu.grasscutter.net.proto.ClientReportNotifyOuterClass.ClientReportNotify other = (emu.grasscutter.net.proto.ClientReportNotifyOuterClass.ClientReportNotify) obj;
 
-      if (!getEAPMOECPEPG()
-          .equals(other.getEAPMOECPEPG())) return false;
-      if (!getEMODEICADOO()
-          .equals(other.getEMODEICADOO())) return false;
+      if (!getFKBNBKFNBDK()
+          .equals(other.getFKBNBKFNBDK())) return false;
+      if (!getHGDGHCLHDMG()
+          .equals(other.getHGDGHCLHDMG())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -279,10 +279,10 @@ public final class ClientReportNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + EAPMOECPEPG_FIELD_NUMBER;
-      hash = (53 * hash) + getEAPMOECPEPG().hashCode();
-      hash = (37 * hash) + EMODEICADOO_FIELD_NUMBER;
-      hash = (53 * hash) + getEMODEICADOO().hashCode();
+      hash = (37 * hash) + FKBNBKFNBDK_FIELD_NUMBER;
+      hash = (53 * hash) + getFKBNBKFNBDK().hashCode();
+      hash = (37 * hash) + HGDGHCLHDMG_FIELD_NUMBER;
+      hash = (53 * hash) + getHGDGHCLHDMG().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -380,8 +380,8 @@ public final class ClientReportNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: LEAMJFGPJOI
-     * CmdId: 29
+     * CmdId: 94
+     * Obf: JPGJCONIBGC
      * </pre>
      *
      * Protobuf type {@code ClientReportNotify}
@@ -421,9 +421,9 @@ public final class ClientReportNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        eAPMOECPEPG_ = "";
+        fKBNBKFNBDK_ = "";
 
-        eMODEICADOO_ = "";
+        hGDGHCLHDMG_ = "";
 
         return this;
       }
@@ -451,8 +451,8 @@ public final class ClientReportNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ClientReportNotifyOuterClass.ClientReportNotify buildPartial() {
         emu.grasscutter.net.proto.ClientReportNotifyOuterClass.ClientReportNotify result = new emu.grasscutter.net.proto.ClientReportNotifyOuterClass.ClientReportNotify(this);
-        result.eAPMOECPEPG_ = eAPMOECPEPG_;
-        result.eMODEICADOO_ = eMODEICADOO_;
+        result.fKBNBKFNBDK_ = fKBNBKFNBDK_;
+        result.hGDGHCLHDMG_ = hGDGHCLHDMG_;
         onBuilt();
         return result;
       }
@@ -501,12 +501,12 @@ public final class ClientReportNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ClientReportNotifyOuterClass.ClientReportNotify other) {
         if (other == emu.grasscutter.net.proto.ClientReportNotifyOuterClass.ClientReportNotify.getDefaultInstance()) return this;
-        if (!other.getEAPMOECPEPG().isEmpty()) {
-          eAPMOECPEPG_ = other.eAPMOECPEPG_;
+        if (!other.getFKBNBKFNBDK().isEmpty()) {
+          fKBNBKFNBDK_ = other.fKBNBKFNBDK_;
           onChanged();
         }
-        if (!other.getEMODEICADOO().isEmpty()) {
-          eMODEICADOO_ = other.eMODEICADOO_;
+        if (!other.getHGDGHCLHDMG().isEmpty()) {
+          hGDGHCLHDMG_ = other.hGDGHCLHDMG_;
           onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
@@ -538,154 +538,154 @@ public final class ClientReportNotifyOuterClass {
         return this;
       }
 
-      private java.lang.Object eAPMOECPEPG_ = "";
+      private java.lang.Object fKBNBKFNBDK_ = "";
       /**
-       * <code>string EAPMOECPEPG = 7;</code>
-       * @return The eAPMOECPEPG.
+       * <code>string FKBNBKFNBDK = 13;</code>
+       * @return The fKBNBKFNBDK.
        */
-      public java.lang.String getEAPMOECPEPG() {
-        java.lang.Object ref = eAPMOECPEPG_;
+      public java.lang.String getFKBNBKFNBDK() {
+        java.lang.Object ref = fKBNBKFNBDK_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          eAPMOECPEPG_ = s;
+          fKBNBKFNBDK_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string EAPMOECPEPG = 7;</code>
-       * @return The bytes for eAPMOECPEPG.
+       * <code>string FKBNBKFNBDK = 13;</code>
+       * @return The bytes for fKBNBKFNBDK.
        */
       public com.google.protobuf.ByteString
-          getEAPMOECPEPGBytes() {
-        java.lang.Object ref = eAPMOECPEPG_;
+          getFKBNBKFNBDKBytes() {
+        java.lang.Object ref = fKBNBKFNBDK_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          eAPMOECPEPG_ = b;
+          fKBNBKFNBDK_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string EAPMOECPEPG = 7;</code>
-       * @param value The eAPMOECPEPG to set.
+       * <code>string FKBNBKFNBDK = 13;</code>
+       * @param value The fKBNBKFNBDK to set.
        * @return This builder for chaining.
        */
-      public Builder setEAPMOECPEPG(
+      public Builder setFKBNBKFNBDK(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        eAPMOECPEPG_ = value;
+        fKBNBKFNBDK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string EAPMOECPEPG = 7;</code>
+       * <code>string FKBNBKFNBDK = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEAPMOECPEPG() {
+      public Builder clearFKBNBKFNBDK() {
         
-        eAPMOECPEPG_ = getDefaultInstance().getEAPMOECPEPG();
+        fKBNBKFNBDK_ = getDefaultInstance().getFKBNBKFNBDK();
         onChanged();
         return this;
       }
       /**
-       * <code>string EAPMOECPEPG = 7;</code>
-       * @param value The bytes for eAPMOECPEPG to set.
+       * <code>string FKBNBKFNBDK = 13;</code>
+       * @param value The bytes for fKBNBKFNBDK to set.
        * @return This builder for chaining.
        */
-      public Builder setEAPMOECPEPGBytes(
+      public Builder setFKBNBKFNBDKBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        eAPMOECPEPG_ = value;
+        fKBNBKFNBDK_ = value;
         onChanged();
         return this;
       }
 
-      private java.lang.Object eMODEICADOO_ = "";
+      private java.lang.Object hGDGHCLHDMG_ = "";
       /**
-       * <code>string EMODEICADOO = 15;</code>
-       * @return The eMODEICADOO.
+       * <code>string HGDGHCLHDMG = 7;</code>
+       * @return The hGDGHCLHDMG.
        */
-      public java.lang.String getEMODEICADOO() {
-        java.lang.Object ref = eMODEICADOO_;
+      public java.lang.String getHGDGHCLHDMG() {
+        java.lang.Object ref = hGDGHCLHDMG_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          eMODEICADOO_ = s;
+          hGDGHCLHDMG_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string EMODEICADOO = 15;</code>
-       * @return The bytes for eMODEICADOO.
+       * <code>string HGDGHCLHDMG = 7;</code>
+       * @return The bytes for hGDGHCLHDMG.
        */
       public com.google.protobuf.ByteString
-          getEMODEICADOOBytes() {
-        java.lang.Object ref = eMODEICADOO_;
+          getHGDGHCLHDMGBytes() {
+        java.lang.Object ref = hGDGHCLHDMG_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          eMODEICADOO_ = b;
+          hGDGHCLHDMG_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string EMODEICADOO = 15;</code>
-       * @param value The eMODEICADOO to set.
+       * <code>string HGDGHCLHDMG = 7;</code>
+       * @param value The hGDGHCLHDMG to set.
        * @return This builder for chaining.
        */
-      public Builder setEMODEICADOO(
+      public Builder setHGDGHCLHDMG(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        eMODEICADOO_ = value;
+        hGDGHCLHDMG_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string EMODEICADOO = 15;</code>
+       * <code>string HGDGHCLHDMG = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEMODEICADOO() {
+      public Builder clearHGDGHCLHDMG() {
         
-        eMODEICADOO_ = getDefaultInstance().getEMODEICADOO();
+        hGDGHCLHDMG_ = getDefaultInstance().getHGDGHCLHDMG();
         onChanged();
         return this;
       }
       /**
-       * <code>string EMODEICADOO = 15;</code>
-       * @param value The bytes for eMODEICADOO to set.
+       * <code>string HGDGHCLHDMG = 7;</code>
+       * @param value The bytes for hGDGHCLHDMG to set.
        * @return This builder for chaining.
        */
-      public Builder setEMODEICADOOBytes(
+      public Builder setHGDGHCLHDMGBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        eMODEICADOO_ = value;
+        hGDGHCLHDMG_ = value;
         onChanged();
         return this;
       }
@@ -757,8 +757,8 @@ public final class ClientReportNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030ClientReportNotify.proto\">\n\022ClientRepo" +
-      "rtNotify\022\023\n\013EAPMOECPEPG\030\007 \001(\t\022\023\n\013EMODEIC" +
-      "ADOO\030\017 \001(\tB\033\n\031emu.grasscutter.net.protob" +
+      "rtNotify\022\023\n\013FKBNBKFNBDK\030\r \001(\t\022\023\n\013HGDGHCL" +
+      "HDMG\030\007 \001(\tB\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -770,7 +770,7 @@ public final class ClientReportNotifyOuterClass {
     internal_static_ClientReportNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ClientReportNotify_descriptor,
-        new java.lang.String[] { "EAPMOECPEPG", "EMODEICADOO", });
+        new java.lang.String[] { "FKBNBKFNBDK", "HGDGHCLHDMG", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

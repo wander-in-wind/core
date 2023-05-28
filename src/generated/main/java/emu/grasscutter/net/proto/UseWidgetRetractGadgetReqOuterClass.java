@@ -26,8 +26,8 @@ public final class UseWidgetRetractGadgetReqOuterClass {
   }
   /**
    * <pre>
-   * Name: AICMNABMOFJ
-   * CmdId: 4283
+   * CmdId: 4256
+   * Obf: LNHMLLJDNFJ
    * </pre>
    *
    * Protobuf type {@code UseWidgetRetractGadgetReq}
@@ -279,8 +279,8 @@ public final class UseWidgetRetractGadgetReqOuterClass {
     }
     /**
      * <pre>
-     * Name: AICMNABMOFJ
-     * CmdId: 4283
+     * CmdId: 4256
+     * Obf: LNHMLLJDNFJ
      * </pre>
      *
      * Protobuf type {@code UseWidgetRetractGadgetReq}

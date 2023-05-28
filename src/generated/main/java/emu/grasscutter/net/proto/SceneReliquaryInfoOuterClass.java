@@ -44,7 +44,7 @@ public final class SceneReliquaryInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: MAIEBCGCJMB
+   * Obf: FNNPFGFHKCK
    * </pre>
    *
    * Protobuf type {@code SceneReliquaryInfo}
@@ -378,7 +378,7 @@ public final class SceneReliquaryInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: MAIEBCGCJMB
+     * Obf: FNNPFGFHKCK
      * </pre>
      *
      * Protobuf type {@code SceneReliquaryInfo}

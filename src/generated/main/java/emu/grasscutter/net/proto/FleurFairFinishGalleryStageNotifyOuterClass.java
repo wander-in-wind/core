@@ -20,8 +20,8 @@ public final class FleurFairFinishGalleryStageNotifyOuterClass {
   }
   /**
    * <pre>
-   * Name: LGIHEIKKJMG
-   * CmdId: 5349
+   * CmdId: 5312
+   * Obf: BIBDABBHNLF
    * </pre>
    *
    * Protobuf type {@code FleurFairFinishGalleryStageNotify}
@@ -246,8 +246,8 @@ public final class FleurFairFinishGalleryStageNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: LGIHEIKKJMG
-     * CmdId: 5349
+     * CmdId: 5312
+     * Obf: BIBDABBHNLF
      * </pre>
      *
      * Protobuf type {@code FleurFairFinishGalleryStageNotify}

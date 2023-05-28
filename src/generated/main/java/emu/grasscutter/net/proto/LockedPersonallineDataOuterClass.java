@@ -19,49 +19,64 @@ public final class LockedPersonallineDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.LockedPersonallineData.LockReason lock_reason = 1;</code>
+     * <code>.LockedPersonallineData.JEMKDFPLHKI lock_reason = 13;</code>
      * @return The enum numeric value on the wire for lockReason.
      */
     int getLockReasonValue();
     /**
-     * <code>.LockedPersonallineData.LockReason lock_reason = 1;</code>
+     * <code>.LockedPersonallineData.JEMKDFPLHKI lock_reason = 13;</code>
      * @return The lockReason.
      */
-    emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.LockReason getLockReason();
+    emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.JEMKDFPLHKI getLockReason();
 
     /**
-     * <code>uint32 personal_line_id = 12;</code>
+     * <code>uint32 personal_line_id = 14;</code>
      * @return The personalLineId.
      */
     int getPersonalLineId();
 
     /**
-     * <code>uint32 chapter_id = 14;</code>
+     * <code>uint32 chapter_id = 6;</code>
      * @return Whether the chapterId field is set.
      */
     boolean hasChapterId();
     /**
-     * <code>uint32 chapter_id = 14;</code>
+     * <code>uint32 chapter_id = 6;</code>
      * @return The chapterId.
      */
     int getChapterId();
 
     /**
-     * <code>uint32 level = 2;</code>
+     * <code>uint32 level = 7;</code>
      * @return Whether the level field is set.
      */
     boolean hasLevel();
     /**
-     * <code>uint32 level = 2;</code>
+     * <code>uint32 level = 7;</code>
      * @return The level.
      */
     int getLevel();
+
+    /**
+     * <code>.LockedPersonallineData.MKKLIJOGAKA LIDHDAOKHIH = 1;</code>
+     * @return Whether the lIDHDAOKHIH field is set.
+     */
+    boolean hasLIDHDAOKHIH();
+    /**
+     * <code>.LockedPersonallineData.MKKLIJOGAKA LIDHDAOKHIH = 1;</code>
+     * @return The lIDHDAOKHIH.
+     */
+    emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA getLIDHDAOKHIH();
+    /**
+     * <code>.LockedPersonallineData.MKKLIJOGAKA LIDHDAOKHIH = 1;</code>
+     */
+    emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKAOrBuilder getLIDHDAOKHIHOrBuilder();
 
     public emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.ParamCase getParamCase();
   }
   /**
    * <pre>
-   * Name: FCFKAAGEDPK
+   * Obf: LPPGEMGIIIC
    * </pre>
    *
    * Protobuf type {@code LockedPersonallineData}
@@ -109,25 +124,39 @@ public final class LockedPersonallineDataOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 10: {
+              emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA.Builder subBuilder = null;
+              if (paramCase_ == 1) {
+                subBuilder = ((emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA) param_).toBuilder();
+              }
+              param_ =
+                  input.readMessage(emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA) param_);
+                param_ = subBuilder.buildPartial();
+              }
+              paramCase_ = 1;
+              break;
+            }
+            case 48: {
+              paramCase_ = 6;
+              param_ = input.readUInt32();
+              break;
+            }
+            case 56: {
+              paramCase_ = 7;
+              param_ = input.readUInt32();
+              break;
+            }
+            case 104: {
               int rawValue = input.readEnum();
 
               lockReason_ = rawValue;
               break;
             }
-            case 16: {
-              paramCase_ = 2;
-              param_ = input.readUInt32();
-              break;
-            }
-            case 96: {
+            case 112: {
 
               personalLineId_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-              paramCase_ = 14;
-              param_ = input.readUInt32();
               break;
             }
             default: {
@@ -163,33 +192,29 @@ public final class LockedPersonallineDataOuterClass {
     }
 
     /**
-     * <pre>
-     * Name: HIKGMNEMNOH
-     * </pre>
-     *
-     * Protobuf enum {@code LockedPersonallineData.LockReason}
+     * Protobuf enum {@code LockedPersonallineData.JEMKDFPLHKI}
      */
-    public enum LockReason
+    public enum JEMKDFPLHKI
         implements com.google.protobuf.ProtocolMessageEnum {
       /**
-       * <code>LOCK_REASON_LEVEL = 0;</code>
+       * <code>JEMKDFPLHKI_Level = 0;</code>
        */
-      LOCK_REASON_LEVEL(0),
+      JEMKDFPLHKI_Level(0),
       /**
-       * <code>LOCK_REASON_QUEST = 1;</code>
+       * <code>JEMKDFPLHKI_Quest = 1;</code>
        */
-      LOCK_REASON_QUEST(1),
+      JEMKDFPLHKI_Quest(1),
       UNRECOGNIZED(-1),
       ;
 
       /**
-       * <code>LOCK_REASON_LEVEL = 0;</code>
+       * <code>JEMKDFPLHKI_Level = 0;</code>
        */
-      public static final int LOCK_REASON_LEVEL_VALUE = 0;
+      public static final int JEMKDFPLHKI_Level_VALUE = 0;
       /**
-       * <code>LOCK_REASON_QUEST = 1;</code>
+       * <code>JEMKDFPLHKI_Quest = 1;</code>
        */
-      public static final int LOCK_REASON_QUEST_VALUE = 1;
+      public static final int JEMKDFPLHKI_Quest_VALUE = 1;
 
 
       public final int getNumber() {
@@ -206,7 +231,7 @@ public final class LockedPersonallineDataOuterClass {
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
-      public static LockReason valueOf(int value) {
+      public static JEMKDFPLHKI valueOf(int value) {
         return forNumber(value);
       }
 
@@ -214,23 +239,23 @@ public final class LockedPersonallineDataOuterClass {
        * @param value The numeric wire value of the corresponding enum entry.
        * @return The enum associated with the given numeric wire value.
        */
-      public static LockReason forNumber(int value) {
+      public static JEMKDFPLHKI forNumber(int value) {
         switch (value) {
-          case 0: return LOCK_REASON_LEVEL;
-          case 1: return LOCK_REASON_QUEST;
+          case 0: return JEMKDFPLHKI_Level;
+          case 1: return JEMKDFPLHKI_Quest;
           default: return null;
         }
       }
 
-      public static com.google.protobuf.Internal.EnumLiteMap<LockReason>
+      public static com.google.protobuf.Internal.EnumLiteMap<JEMKDFPLHKI>
           internalGetValueMap() {
         return internalValueMap;
       }
       private static final com.google.protobuf.Internal.EnumLiteMap<
-          LockReason> internalValueMap =
-            new com.google.protobuf.Internal.EnumLiteMap<LockReason>() {
-              public LockReason findValueByNumber(int number) {
-                return LockReason.forNumber(number);
+          JEMKDFPLHKI> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<JEMKDFPLHKI>() {
+              public JEMKDFPLHKI findValueByNumber(int number) {
+                return JEMKDFPLHKI.forNumber(number);
               }
             };
 
@@ -251,9 +276,9 @@ public final class LockedPersonallineDataOuterClass {
         return emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.getDescriptor().getEnumTypes().get(0);
       }
 
-      private static final LockReason[] VALUES = values();
+      private static final JEMKDFPLHKI[] VALUES = values();
 
-      public static LockReason valueOf(
+      public static JEMKDFPLHKI valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
         if (desc.getType() != getDescriptor()) {
           throw new java.lang.IllegalArgumentException(
@@ -267,11 +292,569 @@ public final class LockedPersonallineDataOuterClass {
 
       private final int value;
 
-      private LockReason(int value) {
+      private JEMKDFPLHKI(int value) {
         this.value = value;
       }
 
-      // @@protoc_insertion_point(enum_scope:LockedPersonallineData.LockReason)
+      // @@protoc_insertion_point(enum_scope:LockedPersonallineData.JEMKDFPLHKI)
+    }
+
+    public interface MKKLIJOGAKAOrBuilder extends
+        // @@protoc_insertion_point(interface_extends:LockedPersonallineData.MKKLIJOGAKA)
+        com.google.protobuf.MessageOrBuilder {
+
+      /**
+       * <code>uint32 quest_id = 9;</code>
+       * @return The questId.
+       */
+      int getQuestId();
+
+      /**
+       * <code>uint32 chapter_id = 3;</code>
+       * @return The chapterId.
+       */
+      int getChapterId();
+    }
+    /**
+     * Protobuf type {@code LockedPersonallineData.MKKLIJOGAKA}
+     */
+    public static final class MKKLIJOGAKA extends
+        com.google.protobuf.GeneratedMessageV3 implements
+        // @@protoc_insertion_point(message_implements:LockedPersonallineData.MKKLIJOGAKA)
+        MKKLIJOGAKAOrBuilder {
+    private static final long serialVersionUID = 0L;
+      // Use MKKLIJOGAKA.newBuilder() to construct.
+      private MKKLIJOGAKA(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+        super(builder);
+      }
+      private MKKLIJOGAKA() {
+      }
+
+      @java.lang.Override
+      @SuppressWarnings({"unused"})
+      protected java.lang.Object newInstance(
+          UnusedPrivateParameter unused) {
+        return new MKKLIJOGAKA();
+      }
+
+      @java.lang.Override
+      public final com.google.protobuf.UnknownFieldSet
+      getUnknownFields() {
+        return this.unknownFields;
+      }
+      private MKKLIJOGAKA(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        this();
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+            com.google.protobuf.UnknownFieldSet.newBuilder();
+        try {
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 24: {
+
+                chapterId_ = input.readUInt32();
+                break;
+              }
+              case 72: {
+
+                questId_ = input.readUInt32();
+                break;
+              }
+              default: {
+                if (!parseUnknownField(
+                    input, unknownFields, extensionRegistry, tag)) {
+                  done = true;
+                }
+                break;
+              }
+            }
+          }
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(this);
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(
+              e).setUnfinishedMessage(this);
+        } finally {
+          this.unknownFields = unknownFields.build();
+          makeExtensionsImmutable();
+        }
+      }
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.internal_static_LockedPersonallineData_MKKLIJOGAKA_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.internal_static_LockedPersonallineData_MKKLIJOGAKA_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA.class, emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA.Builder.class);
+      }
+
+      public static final int QUEST_ID_FIELD_NUMBER = 9;
+      private int questId_;
+      /**
+       * <code>uint32 quest_id = 9;</code>
+       * @return The questId.
+       */
+      @java.lang.Override
+      public int getQuestId() {
+        return questId_;
+      }
+
+      public static final int CHAPTER_ID_FIELD_NUMBER = 3;
+      private int chapterId_;
+      /**
+       * <code>uint32 chapter_id = 3;</code>
+       * @return The chapterId.
+       */
+      @java.lang.Override
+      public int getChapterId() {
+        return chapterId_;
+      }
+
+      private byte memoizedIsInitialized = -1;
+      @java.lang.Override
+      public final boolean isInitialized() {
+        byte isInitialized = memoizedIsInitialized;
+        if (isInitialized == 1) return true;
+        if (isInitialized == 0) return false;
+
+        memoizedIsInitialized = 1;
+        return true;
+      }
+
+      @java.lang.Override
+      public void writeTo(com.google.protobuf.CodedOutputStream output)
+                          throws java.io.IOException {
+        if (chapterId_ != 0) {
+          output.writeUInt32(3, chapterId_);
+        }
+        if (questId_ != 0) {
+          output.writeUInt32(9, questId_);
+        }
+        unknownFields.writeTo(output);
+      }
+
+      @java.lang.Override
+      public int getSerializedSize() {
+        int size = memoizedSize;
+        if (size != -1) return size;
+
+        size = 0;
+        if (chapterId_ != 0) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeUInt32Size(3, chapterId_);
+        }
+        if (questId_ != 0) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeUInt32Size(9, questId_);
+        }
+        size += unknownFields.getSerializedSize();
+        memoizedSize = size;
+        return size;
+      }
+
+      @java.lang.Override
+      public boolean equals(final java.lang.Object obj) {
+        if (obj == this) {
+         return true;
+        }
+        if (!(obj instanceof emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA)) {
+          return super.equals(obj);
+        }
+        emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA other = (emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA) obj;
+
+        if (getQuestId()
+            != other.getQuestId()) return false;
+        if (getChapterId()
+            != other.getChapterId()) return false;
+        if (!unknownFields.equals(other.unknownFields)) return false;
+        return true;
+      }
+
+      @java.lang.Override
+      public int hashCode() {
+        if (memoizedHashCode != 0) {
+          return memoizedHashCode;
+        }
+        int hash = 41;
+        hash = (19 * hash) + getDescriptor().hashCode();
+        hash = (37 * hash) + QUEST_ID_FIELD_NUMBER;
+        hash = (53 * hash) + getQuestId();
+        hash = (37 * hash) + CHAPTER_ID_FIELD_NUMBER;
+        hash = (53 * hash) + getChapterId();
+        hash = (29 * hash) + unknownFields.hashCode();
+        memoizedHashCode = hash;
+        return hash;
+      }
+
+      public static emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA parseFrom(
+          java.nio.ByteBuffer data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA parseFrom(
+          java.nio.ByteBuffer data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
+      public static emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA parseFrom(
+          com.google.protobuf.ByteString data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA parseFrom(
+          com.google.protobuf.ByteString data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
+      public static emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA parseFrom(byte[] data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA parseFrom(
+          byte[] data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
+      public static emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA parseFrom(java.io.InputStream input)
+          throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+            .parseWithIOException(PARSER, input);
+      }
+      public static emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA parseFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+            .parseWithIOException(PARSER, input, extensionRegistry);
+      }
+      public static emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA parseDelimitedFrom(java.io.InputStream input)
+          throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+            .parseDelimitedWithIOException(PARSER, input);
+      }
+      public static emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA parseDelimitedFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+      }
+      public static emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA parseFrom(
+          com.google.protobuf.CodedInputStream input)
+          throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+            .parseWithIOException(PARSER, input);
+      }
+      public static emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA parseFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+            .parseWithIOException(PARSER, input, extensionRegistry);
+      }
+
+      @java.lang.Override
+      public Builder newBuilderForType() { return newBuilder(); }
+      public static Builder newBuilder() {
+        return DEFAULT_INSTANCE.toBuilder();
+      }
+      public static Builder newBuilder(emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA prototype) {
+        return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+      }
+      @java.lang.Override
+      public Builder toBuilder() {
+        return this == DEFAULT_INSTANCE
+            ? new Builder() : new Builder().mergeFrom(this);
+      }
+
+      @java.lang.Override
+      protected Builder newBuilderForType(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        Builder builder = new Builder(parent);
+        return builder;
+      }
+      /**
+       * Protobuf type {@code LockedPersonallineData.MKKLIJOGAKA}
+       */
+      public static final class Builder extends
+          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+          // @@protoc_insertion_point(builder_implements:LockedPersonallineData.MKKLIJOGAKA)
+          emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKAOrBuilder {
+        public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+          return emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.internal_static_LockedPersonallineData_MKKLIJOGAKA_descriptor;
+        }
+
+        @java.lang.Override
+        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+          return emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.internal_static_LockedPersonallineData_MKKLIJOGAKA_fieldAccessorTable
+              .ensureFieldAccessorsInitialized(
+                  emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA.class, emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA.Builder.class);
+        }
+
+        // Construct using emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA.newBuilder()
+        private Builder() {
+          maybeForceBuilderInitialization();
+        }
+
+        private Builder(
+            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          super(parent);
+          maybeForceBuilderInitialization();
+        }
+        private void maybeForceBuilderInitialization() {
+          if (com.google.protobuf.GeneratedMessageV3
+                  .alwaysUseFieldBuilders) {
+          }
+        }
+        @java.lang.Override
+        public Builder clear() {
+          super.clear();
+          questId_ = 0;
+
+          chapterId_ = 0;
+
+          return this;
+        }
+
+        @java.lang.Override
+        public com.google.protobuf.Descriptors.Descriptor
+            getDescriptorForType() {
+          return emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.internal_static_LockedPersonallineData_MKKLIJOGAKA_descriptor;
+        }
+
+        @java.lang.Override
+        public emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA getDefaultInstanceForType() {
+          return emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA.getDefaultInstance();
+        }
+
+        @java.lang.Override
+        public emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA build() {
+          emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA result = buildPartial();
+          if (!result.isInitialized()) {
+            throw newUninitializedMessageException(result);
+          }
+          return result;
+        }
+
+        @java.lang.Override
+        public emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA buildPartial() {
+          emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA result = new emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA(this);
+          result.questId_ = questId_;
+          result.chapterId_ = chapterId_;
+          onBuilt();
+          return result;
+        }
+
+        @java.lang.Override
+        public Builder clone() {
+          return super.clone();
+        }
+        @java.lang.Override
+        public Builder setField(
+            com.google.protobuf.Descriptors.FieldDescriptor field,
+            java.lang.Object value) {
+          return super.setField(field, value);
+        }
+        @java.lang.Override
+        public Builder clearField(
+            com.google.protobuf.Descriptors.FieldDescriptor field) {
+          return super.clearField(field);
+        }
+        @java.lang.Override
+        public Builder clearOneof(
+            com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+          return super.clearOneof(oneof);
+        }
+        @java.lang.Override
+        public Builder setRepeatedField(
+            com.google.protobuf.Descriptors.FieldDescriptor field,
+            int index, java.lang.Object value) {
+          return super.setRepeatedField(field, index, value);
+        }
+        @java.lang.Override
+        public Builder addRepeatedField(
+            com.google.protobuf.Descriptors.FieldDescriptor field,
+            java.lang.Object value) {
+          return super.addRepeatedField(field, value);
+        }
+        @java.lang.Override
+        public Builder mergeFrom(com.google.protobuf.Message other) {
+          if (other instanceof emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA) {
+            return mergeFrom((emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA)other);
+          } else {
+            super.mergeFrom(other);
+            return this;
+          }
+        }
+
+        public Builder mergeFrom(emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA other) {
+          if (other == emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA.getDefaultInstance()) return this;
+          if (other.getQuestId() != 0) {
+            setQuestId(other.getQuestId());
+          }
+          if (other.getChapterId() != 0) {
+            setChapterId(other.getChapterId());
+          }
+          this.mergeUnknownFields(other.unknownFields);
+          onChanged();
+          return this;
+        }
+
+        @java.lang.Override
+        public final boolean isInitialized() {
+          return true;
+        }
+
+        @java.lang.Override
+        public Builder mergeFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+          emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA parsedMessage = null;
+          try {
+            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+            parsedMessage = (emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA) e.getUnfinishedMessage();
+            throw e.unwrapIOException();
+          } finally {
+            if (parsedMessage != null) {
+              mergeFrom(parsedMessage);
+            }
+          }
+          return this;
+        }
+
+        private int questId_ ;
+        /**
+         * <code>uint32 quest_id = 9;</code>
+         * @return The questId.
+         */
+        @java.lang.Override
+        public int getQuestId() {
+          return questId_;
+        }
+        /**
+         * <code>uint32 quest_id = 9;</code>
+         * @param value The questId to set.
+         * @return This builder for chaining.
+         */
+        public Builder setQuestId(int value) {
+          
+          questId_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>uint32 quest_id = 9;</code>
+         * @return This builder for chaining.
+         */
+        public Builder clearQuestId() {
+          
+          questId_ = 0;
+          onChanged();
+          return this;
+        }
+
+        private int chapterId_ ;
+        /**
+         * <code>uint32 chapter_id = 3;</code>
+         * @return The chapterId.
+         */
+        @java.lang.Override
+        public int getChapterId() {
+          return chapterId_;
+        }
+        /**
+         * <code>uint32 chapter_id = 3;</code>
+         * @param value The chapterId to set.
+         * @return This builder for chaining.
+         */
+        public Builder setChapterId(int value) {
+          
+          chapterId_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>uint32 chapter_id = 3;</code>
+         * @return This builder for chaining.
+         */
+        public Builder clearChapterId() {
+          
+          chapterId_ = 0;
+          onChanged();
+          return this;
+        }
+        @java.lang.Override
+        public final Builder setUnknownFields(
+            final com.google.protobuf.UnknownFieldSet unknownFields) {
+          return super.setUnknownFields(unknownFields);
+        }
+
+        @java.lang.Override
+        public final Builder mergeUnknownFields(
+            final com.google.protobuf.UnknownFieldSet unknownFields) {
+          return super.mergeUnknownFields(unknownFields);
+        }
+
+
+        // @@protoc_insertion_point(builder_scope:LockedPersonallineData.MKKLIJOGAKA)
+      }
+
+      // @@protoc_insertion_point(class_scope:LockedPersonallineData.MKKLIJOGAKA)
+      private static final emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA DEFAULT_INSTANCE;
+      static {
+        DEFAULT_INSTANCE = new emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA();
+      }
+
+      public static emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA getDefaultInstance() {
+        return DEFAULT_INSTANCE;
+      }
+
+      private static final com.google.protobuf.Parser<MKKLIJOGAKA>
+          PARSER = new com.google.protobuf.AbstractParser<MKKLIJOGAKA>() {
+        @java.lang.Override
+        public MKKLIJOGAKA parsePartialFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return new MKKLIJOGAKA(input, extensionRegistry);
+        }
+      };
+
+      public static com.google.protobuf.Parser<MKKLIJOGAKA> parser() {
+        return PARSER;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Parser<MKKLIJOGAKA> getParserForType() {
+        return PARSER;
+      }
+
+      @java.lang.Override
+      public emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA getDefaultInstanceForType() {
+        return DEFAULT_INSTANCE;
+      }
+
     }
 
     private int paramCase_ = 0;
@@ -279,8 +862,9 @@ public final class LockedPersonallineDataOuterClass {
     public enum ParamCase
         implements com.google.protobuf.Internal.EnumLite,
             com.google.protobuf.AbstractMessage.InternalOneOfEnum {
-      CHAPTER_ID(14),
-      LEVEL(2),
+      CHAPTER_ID(6),
+      LEVEL(7),
+      LIDHDAOKHIH(1),
       PARAM_NOT_SET(0);
       private final int value;
       private ParamCase(int value) {
@@ -298,8 +882,9 @@ public final class LockedPersonallineDataOuterClass {
 
       public static ParamCase forNumber(int value) {
         switch (value) {
-          case 14: return CHAPTER_ID;
-          case 2: return LEVEL;
+          case 6: return CHAPTER_ID;
+          case 7: return LEVEL;
+          case 1: return LIDHDAOKHIH;
           case 0: return PARAM_NOT_SET;
           default: return null;
         }
@@ -315,29 +900,29 @@ public final class LockedPersonallineDataOuterClass {
           paramCase_);
     }
 
-    public static final int LOCK_REASON_FIELD_NUMBER = 1;
+    public static final int LOCK_REASON_FIELD_NUMBER = 13;
     private int lockReason_;
     /**
-     * <code>.LockedPersonallineData.LockReason lock_reason = 1;</code>
+     * <code>.LockedPersonallineData.JEMKDFPLHKI lock_reason = 13;</code>
      * @return The enum numeric value on the wire for lockReason.
      */
     @java.lang.Override public int getLockReasonValue() {
       return lockReason_;
     }
     /**
-     * <code>.LockedPersonallineData.LockReason lock_reason = 1;</code>
+     * <code>.LockedPersonallineData.JEMKDFPLHKI lock_reason = 13;</code>
      * @return The lockReason.
      */
-    @java.lang.Override public emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.LockReason getLockReason() {
+    @java.lang.Override public emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.JEMKDFPLHKI getLockReason() {
       @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.LockReason result = emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.LockReason.valueOf(lockReason_);
-      return result == null ? emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.LockReason.UNRECOGNIZED : result;
+      emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.JEMKDFPLHKI result = emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.JEMKDFPLHKI.valueOf(lockReason_);
+      return result == null ? emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.JEMKDFPLHKI.UNRECOGNIZED : result;
     }
 
-    public static final int PERSONAL_LINE_ID_FIELD_NUMBER = 12;
+    public static final int PERSONAL_LINE_ID_FIELD_NUMBER = 14;
     private int personalLineId_;
     /**
-     * <code>uint32 personal_line_id = 12;</code>
+     * <code>uint32 personal_line_id = 14;</code>
      * @return The personalLineId.
      */
     @java.lang.Override
@@ -345,46 +930,77 @@ public final class LockedPersonallineDataOuterClass {
       return personalLineId_;
     }
 
-    public static final int CHAPTER_ID_FIELD_NUMBER = 14;
+    public static final int CHAPTER_ID_FIELD_NUMBER = 6;
     /**
-     * <code>uint32 chapter_id = 14;</code>
+     * <code>uint32 chapter_id = 6;</code>
      * @return Whether the chapterId field is set.
      */
     @java.lang.Override
     public boolean hasChapterId() {
-      return paramCase_ == 14;
+      return paramCase_ == 6;
     }
     /**
-     * <code>uint32 chapter_id = 14;</code>
+     * <code>uint32 chapter_id = 6;</code>
      * @return The chapterId.
      */
     @java.lang.Override
     public int getChapterId() {
-      if (paramCase_ == 14) {
+      if (paramCase_ == 6) {
         return (java.lang.Integer) param_;
       }
       return 0;
     }
 
-    public static final int LEVEL_FIELD_NUMBER = 2;
+    public static final int LEVEL_FIELD_NUMBER = 7;
     /**
-     * <code>uint32 level = 2;</code>
+     * <code>uint32 level = 7;</code>
      * @return Whether the level field is set.
      */
     @java.lang.Override
     public boolean hasLevel() {
-      return paramCase_ == 2;
+      return paramCase_ == 7;
     }
     /**
-     * <code>uint32 level = 2;</code>
+     * <code>uint32 level = 7;</code>
      * @return The level.
      */
     @java.lang.Override
     public int getLevel() {
-      if (paramCase_ == 2) {
+      if (paramCase_ == 7) {
         return (java.lang.Integer) param_;
       }
       return 0;
+    }
+
+    public static final int LIDHDAOKHIH_FIELD_NUMBER = 1;
+    /**
+     * <code>.LockedPersonallineData.MKKLIJOGAKA LIDHDAOKHIH = 1;</code>
+     * @return Whether the lIDHDAOKHIH field is set.
+     */
+    @java.lang.Override
+    public boolean hasLIDHDAOKHIH() {
+      return paramCase_ == 1;
+    }
+    /**
+     * <code>.LockedPersonallineData.MKKLIJOGAKA LIDHDAOKHIH = 1;</code>
+     * @return The lIDHDAOKHIH.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA getLIDHDAOKHIH() {
+      if (paramCase_ == 1) {
+         return (emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA) param_;
+      }
+      return emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA.getDefaultInstance();
+    }
+    /**
+     * <code>.LockedPersonallineData.MKKLIJOGAKA LIDHDAOKHIH = 1;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKAOrBuilder getLIDHDAOKHIHOrBuilder() {
+      if (paramCase_ == 1) {
+         return (emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA) param_;
+      }
+      return emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA.getDefaultInstance();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -401,19 +1017,22 @@ public final class LockedPersonallineDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (lockReason_ != emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.LockReason.LOCK_REASON_LEVEL.getNumber()) {
-        output.writeEnum(1, lockReason_);
+      if (paramCase_ == 1) {
+        output.writeMessage(1, (emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA) param_);
       }
-      if (paramCase_ == 2) {
+      if (paramCase_ == 6) {
         output.writeUInt32(
-            2, (int)((java.lang.Integer) param_));
+            6, (int)((java.lang.Integer) param_));
+      }
+      if (paramCase_ == 7) {
+        output.writeUInt32(
+            7, (int)((java.lang.Integer) param_));
+      }
+      if (lockReason_ != emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.JEMKDFPLHKI.JEMKDFPLHKI_Level.getNumber()) {
+        output.writeEnum(13, lockReason_);
       }
       if (personalLineId_ != 0) {
-        output.writeUInt32(12, personalLineId_);
-      }
-      if (paramCase_ == 14) {
-        output.writeUInt32(
-            14, (int)((java.lang.Integer) param_));
+        output.writeUInt32(14, personalLineId_);
       }
       unknownFields.writeTo(output);
     }
@@ -424,23 +1043,27 @@ public final class LockedPersonallineDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (lockReason_ != emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.LockReason.LOCK_REASON_LEVEL.getNumber()) {
+      if (paramCase_ == 1) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(1, lockReason_);
+          .computeMessageSize(1, (emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA) param_);
       }
-      if (paramCase_ == 2) {
+      if (paramCase_ == 6) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(
-              2, (int)((java.lang.Integer) param_));
+              6, (int)((java.lang.Integer) param_));
+      }
+      if (paramCase_ == 7) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(
+              7, (int)((java.lang.Integer) param_));
+      }
+      if (lockReason_ != emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.JEMKDFPLHKI.JEMKDFPLHKI_Level.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(13, lockReason_);
       }
       if (personalLineId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, personalLineId_);
-      }
-      if (paramCase_ == 14) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(
-              14, (int)((java.lang.Integer) param_));
+          .computeUInt32Size(14, personalLineId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -462,13 +1085,17 @@ public final class LockedPersonallineDataOuterClass {
           != other.getPersonalLineId()) return false;
       if (!getParamCase().equals(other.getParamCase())) return false;
       switch (paramCase_) {
-        case 14:
+        case 6:
           if (getChapterId()
               != other.getChapterId()) return false;
           break;
-        case 2:
+        case 7:
           if (getLevel()
               != other.getLevel()) return false;
+          break;
+        case 1:
+          if (!getLIDHDAOKHIH()
+              .equals(other.getLIDHDAOKHIH())) return false;
           break;
         case 0:
         default:
@@ -489,13 +1116,17 @@ public final class LockedPersonallineDataOuterClass {
       hash = (37 * hash) + PERSONAL_LINE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getPersonalLineId();
       switch (paramCase_) {
-        case 14:
+        case 6:
           hash = (37 * hash) + CHAPTER_ID_FIELD_NUMBER;
           hash = (53 * hash) + getChapterId();
           break;
-        case 2:
+        case 7:
           hash = (37 * hash) + LEVEL_FIELD_NUMBER;
           hash = (53 * hash) + getLevel();
+          break;
+        case 1:
+          hash = (37 * hash) + LIDHDAOKHIH_FIELD_NUMBER;
+          hash = (53 * hash) + getLIDHDAOKHIH().hashCode();
           break;
         case 0:
         default:
@@ -597,7 +1228,7 @@ public final class LockedPersonallineDataOuterClass {
     }
     /**
      * <pre>
-     * Name: FCFKAAGEDPK
+     * Obf: LPPGEMGIIIC
      * </pre>
      *
      * Protobuf type {@code LockedPersonallineData}
@@ -671,11 +1302,18 @@ public final class LockedPersonallineDataOuterClass {
         emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData result = new emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData(this);
         result.lockReason_ = lockReason_;
         result.personalLineId_ = personalLineId_;
-        if (paramCase_ == 14) {
+        if (paramCase_ == 6) {
           result.param_ = param_;
         }
-        if (paramCase_ == 2) {
+        if (paramCase_ == 7) {
           result.param_ = param_;
+        }
+        if (paramCase_ == 1) {
+          if (lIDHDAOKHIHBuilder_ == null) {
+            result.param_ = param_;
+          } else {
+            result.param_ = lIDHDAOKHIHBuilder_.build();
+          }
         }
         result.paramCase_ = paramCase_;
         onBuilt();
@@ -741,6 +1379,10 @@ public final class LockedPersonallineDataOuterClass {
             setLevel(other.getLevel());
             break;
           }
+          case LIDHDAOKHIH: {
+            mergeLIDHDAOKHIH(other.getLIDHDAOKHIH());
+            break;
+          }
           case PARAM_NOT_SET: {
             break;
           }
@@ -791,14 +1433,14 @@ public final class LockedPersonallineDataOuterClass {
 
       private int lockReason_ = 0;
       /**
-       * <code>.LockedPersonallineData.LockReason lock_reason = 1;</code>
+       * <code>.LockedPersonallineData.JEMKDFPLHKI lock_reason = 13;</code>
        * @return The enum numeric value on the wire for lockReason.
        */
       @java.lang.Override public int getLockReasonValue() {
         return lockReason_;
       }
       /**
-       * <code>.LockedPersonallineData.LockReason lock_reason = 1;</code>
+       * <code>.LockedPersonallineData.JEMKDFPLHKI lock_reason = 13;</code>
        * @param value The enum numeric value on the wire for lockReason to set.
        * @return This builder for chaining.
        */
@@ -809,21 +1451,21 @@ public final class LockedPersonallineDataOuterClass {
         return this;
       }
       /**
-       * <code>.LockedPersonallineData.LockReason lock_reason = 1;</code>
+       * <code>.LockedPersonallineData.JEMKDFPLHKI lock_reason = 13;</code>
        * @return The lockReason.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.LockReason getLockReason() {
+      public emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.JEMKDFPLHKI getLockReason() {
         @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.LockReason result = emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.LockReason.valueOf(lockReason_);
-        return result == null ? emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.LockReason.UNRECOGNIZED : result;
+        emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.JEMKDFPLHKI result = emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.JEMKDFPLHKI.valueOf(lockReason_);
+        return result == null ? emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.JEMKDFPLHKI.UNRECOGNIZED : result;
       }
       /**
-       * <code>.LockedPersonallineData.LockReason lock_reason = 1;</code>
+       * <code>.LockedPersonallineData.JEMKDFPLHKI lock_reason = 13;</code>
        * @param value The lockReason to set.
        * @return This builder for chaining.
        */
-      public Builder setLockReason(emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.LockReason value) {
+      public Builder setLockReason(emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.JEMKDFPLHKI value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -833,7 +1475,7 @@ public final class LockedPersonallineDataOuterClass {
         return this;
       }
       /**
-       * <code>.LockedPersonallineData.LockReason lock_reason = 1;</code>
+       * <code>.LockedPersonallineData.JEMKDFPLHKI lock_reason = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearLockReason() {
@@ -845,7 +1487,7 @@ public final class LockedPersonallineDataOuterClass {
 
       private int personalLineId_ ;
       /**
-       * <code>uint32 personal_line_id = 12;</code>
+       * <code>uint32 personal_line_id = 14;</code>
        * @return The personalLineId.
        */
       @java.lang.Override
@@ -853,7 +1495,7 @@ public final class LockedPersonallineDataOuterClass {
         return personalLineId_;
       }
       /**
-       * <code>uint32 personal_line_id = 12;</code>
+       * <code>uint32 personal_line_id = 14;</code>
        * @param value The personalLineId to set.
        * @return This builder for chaining.
        */
@@ -864,7 +1506,7 @@ public final class LockedPersonallineDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 personal_line_id = 12;</code>
+       * <code>uint32 personal_line_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearPersonalLineId() {
@@ -875,39 +1517,39 @@ public final class LockedPersonallineDataOuterClass {
       }
 
       /**
-       * <code>uint32 chapter_id = 14;</code>
+       * <code>uint32 chapter_id = 6;</code>
        * @return Whether the chapterId field is set.
        */
       public boolean hasChapterId() {
-        return paramCase_ == 14;
+        return paramCase_ == 6;
       }
       /**
-       * <code>uint32 chapter_id = 14;</code>
+       * <code>uint32 chapter_id = 6;</code>
        * @return The chapterId.
        */
       public int getChapterId() {
-        if (paramCase_ == 14) {
+        if (paramCase_ == 6) {
           return (java.lang.Integer) param_;
         }
         return 0;
       }
       /**
-       * <code>uint32 chapter_id = 14;</code>
+       * <code>uint32 chapter_id = 6;</code>
        * @param value The chapterId to set.
        * @return This builder for chaining.
        */
       public Builder setChapterId(int value) {
-        paramCase_ = 14;
+        paramCase_ = 6;
         param_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 chapter_id = 14;</code>
+       * <code>uint32 chapter_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearChapterId() {
-        if (paramCase_ == 14) {
+        if (paramCase_ == 6) {
           paramCase_ = 0;
           param_ = null;
           onChanged();
@@ -916,44 +1558,185 @@ public final class LockedPersonallineDataOuterClass {
       }
 
       /**
-       * <code>uint32 level = 2;</code>
+       * <code>uint32 level = 7;</code>
        * @return Whether the level field is set.
        */
       public boolean hasLevel() {
-        return paramCase_ == 2;
+        return paramCase_ == 7;
       }
       /**
-       * <code>uint32 level = 2;</code>
+       * <code>uint32 level = 7;</code>
        * @return The level.
        */
       public int getLevel() {
-        if (paramCase_ == 2) {
+        if (paramCase_ == 7) {
           return (java.lang.Integer) param_;
         }
         return 0;
       }
       /**
-       * <code>uint32 level = 2;</code>
+       * <code>uint32 level = 7;</code>
        * @param value The level to set.
        * @return This builder for chaining.
        */
       public Builder setLevel(int value) {
-        paramCase_ = 2;
+        paramCase_ = 7;
         param_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 level = 2;</code>
+       * <code>uint32 level = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevel() {
-        if (paramCase_ == 2) {
+        if (paramCase_ == 7) {
           paramCase_ = 0;
           param_ = null;
           onChanged();
         }
         return this;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA, emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA.Builder, emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKAOrBuilder> lIDHDAOKHIHBuilder_;
+      /**
+       * <code>.LockedPersonallineData.MKKLIJOGAKA LIDHDAOKHIH = 1;</code>
+       * @return Whether the lIDHDAOKHIH field is set.
+       */
+      @java.lang.Override
+      public boolean hasLIDHDAOKHIH() {
+        return paramCase_ == 1;
+      }
+      /**
+       * <code>.LockedPersonallineData.MKKLIJOGAKA LIDHDAOKHIH = 1;</code>
+       * @return The lIDHDAOKHIH.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA getLIDHDAOKHIH() {
+        if (lIDHDAOKHIHBuilder_ == null) {
+          if (paramCase_ == 1) {
+            return (emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA) param_;
+          }
+          return emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA.getDefaultInstance();
+        } else {
+          if (paramCase_ == 1) {
+            return lIDHDAOKHIHBuilder_.getMessage();
+          }
+          return emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.LockedPersonallineData.MKKLIJOGAKA LIDHDAOKHIH = 1;</code>
+       */
+      public Builder setLIDHDAOKHIH(emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA value) {
+        if (lIDHDAOKHIHBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          param_ = value;
+          onChanged();
+        } else {
+          lIDHDAOKHIHBuilder_.setMessage(value);
+        }
+        paramCase_ = 1;
+        return this;
+      }
+      /**
+       * <code>.LockedPersonallineData.MKKLIJOGAKA LIDHDAOKHIH = 1;</code>
+       */
+      public Builder setLIDHDAOKHIH(
+          emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA.Builder builderForValue) {
+        if (lIDHDAOKHIHBuilder_ == null) {
+          param_ = builderForValue.build();
+          onChanged();
+        } else {
+          lIDHDAOKHIHBuilder_.setMessage(builderForValue.build());
+        }
+        paramCase_ = 1;
+        return this;
+      }
+      /**
+       * <code>.LockedPersonallineData.MKKLIJOGAKA LIDHDAOKHIH = 1;</code>
+       */
+      public Builder mergeLIDHDAOKHIH(emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA value) {
+        if (lIDHDAOKHIHBuilder_ == null) {
+          if (paramCase_ == 1 &&
+              param_ != emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA.getDefaultInstance()) {
+            param_ = emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA.newBuilder((emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA) param_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            param_ = value;
+          }
+          onChanged();
+        } else {
+          if (paramCase_ == 1) {
+            lIDHDAOKHIHBuilder_.mergeFrom(value);
+          }
+          lIDHDAOKHIHBuilder_.setMessage(value);
+        }
+        paramCase_ = 1;
+        return this;
+      }
+      /**
+       * <code>.LockedPersonallineData.MKKLIJOGAKA LIDHDAOKHIH = 1;</code>
+       */
+      public Builder clearLIDHDAOKHIH() {
+        if (lIDHDAOKHIHBuilder_ == null) {
+          if (paramCase_ == 1) {
+            paramCase_ = 0;
+            param_ = null;
+            onChanged();
+          }
+        } else {
+          if (paramCase_ == 1) {
+            paramCase_ = 0;
+            param_ = null;
+          }
+          lIDHDAOKHIHBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.LockedPersonallineData.MKKLIJOGAKA LIDHDAOKHIH = 1;</code>
+       */
+      public emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA.Builder getLIDHDAOKHIHBuilder() {
+        return getLIDHDAOKHIHFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.LockedPersonallineData.MKKLIJOGAKA LIDHDAOKHIH = 1;</code>
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKAOrBuilder getLIDHDAOKHIHOrBuilder() {
+        if ((paramCase_ == 1) && (lIDHDAOKHIHBuilder_ != null)) {
+          return lIDHDAOKHIHBuilder_.getMessageOrBuilder();
+        } else {
+          if (paramCase_ == 1) {
+            return (emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA) param_;
+          }
+          return emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.LockedPersonallineData.MKKLIJOGAKA LIDHDAOKHIH = 1;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA, emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA.Builder, emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKAOrBuilder> 
+          getLIDHDAOKHIHFieldBuilder() {
+        if (lIDHDAOKHIHBuilder_ == null) {
+          if (!(paramCase_ == 1)) {
+            param_ = emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA.getDefaultInstance();
+          }
+          lIDHDAOKHIHBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA, emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA.Builder, emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKAOrBuilder>(
+                  (emu.grasscutter.net.proto.LockedPersonallineDataOuterClass.LockedPersonallineData.MKKLIJOGAKA) param_,
+                  getParentForChildren(),
+                  isClean());
+          param_ = null;
+        }
+        paramCase_ = 1;
+        onChanged();;
+        return lIDHDAOKHIHBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1013,6 +1796,11 @@ public final class LockedPersonallineDataOuterClass {
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_LockedPersonallineData_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_LockedPersonallineData_MKKLIJOGAKA_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_LockedPersonallineData_MKKLIJOGAKA_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1022,14 +1810,16 @@ public final class LockedPersonallineDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034LockedPersonallineData.proto\"\327\001\n\026Locke" +
-      "dPersonallineData\0227\n\013lock_reason\030\001 \001(\0162\"" +
-      ".LockedPersonallineData.LockReason\022\030\n\020pe" +
-      "rsonal_line_id\030\014 \001(\r\022\024\n\nchapter_id\030\016 \001(\r" +
-      "H\000\022\017\n\005level\030\002 \001(\rH\000\":\n\nLockReason\022\025\n\021LOC" +
-      "K_REASON_LEVEL\020\000\022\025\n\021LOCK_REASON_QUEST\020\001B" +
-      "\007\n\005paramB\033\n\031emu.grasscutter.net.protob\006p" +
-      "roto3"
+      "\n\034LockedPersonallineData.proto\"\312\002\n\026Locke" +
+      "dPersonallineData\0228\n\013lock_reason\030\r \001(\0162#" +
+      ".LockedPersonallineData.JEMKDFPLHKI\022\030\n\020p" +
+      "ersonal_line_id\030\016 \001(\r\022\024\n\nchapter_id\030\006 \001(" +
+      "\rH\000\022\017\n\005level\030\007 \001(\rH\000\022:\n\013LIDHDAOKHIH\030\001 \001(" +
+      "\0132#.LockedPersonallineData.MKKLIJOGAKAH\000" +
+      "\0323\n\013MKKLIJOGAKA\022\020\n\010quest_id\030\t \001(\r\022\022\n\ncha" +
+      "pter_id\030\003 \001(\r\";\n\013JEMKDFPLHKI\022\025\n\021JEMKDFPL" +
+      "HKI_Level\020\000\022\025\n\021JEMKDFPLHKI_Quest\020\001B\007\n\005pa" +
+      "ramB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1040,7 +1830,13 @@ public final class LockedPersonallineDataOuterClass {
     internal_static_LockedPersonallineData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_LockedPersonallineData_descriptor,
-        new java.lang.String[] { "LockReason", "PersonalLineId", "ChapterId", "Level", "Param", });
+        new java.lang.String[] { "LockReason", "PersonalLineId", "ChapterId", "Level", "LIDHDAOKHIH", "Param", });
+    internal_static_LockedPersonallineData_MKKLIJOGAKA_descriptor =
+      internal_static_LockedPersonallineData_descriptor.getNestedTypes().get(0);
+    internal_static_LockedPersonallineData_MKKLIJOGAKA_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_LockedPersonallineData_MKKLIJOGAKA_descriptor,
+        new java.lang.String[] { "QuestId", "ChapterId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

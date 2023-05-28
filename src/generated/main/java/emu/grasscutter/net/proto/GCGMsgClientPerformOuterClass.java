@@ -19,28 +19,28 @@ public final class GCGMsgClientPerformOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.GCGClientPerformType perform_type = 3;</code>
+     * <code>.FICAFCEJKPF perform_type = 3;</code>
      * @return The enum numeric value on the wire for performType.
      */
     int getPerformTypeValue();
     /**
-     * <code>.GCGClientPerformType perform_type = 3;</code>
+     * <code>.FICAFCEJKPF perform_type = 3;</code>
      * @return The performType.
      */
-    emu.grasscutter.net.proto.GCGClientPerformTypeOuterClass.GCGClientPerformType getPerformType();
+    emu.grasscutter.net.proto.FICAFCEJKPFOuterClass.FICAFCEJKPF getPerformType();
 
     /**
-     * <code>repeated uint32 param_list = 5;</code>
+     * <code>repeated uint32 param_list = 1;</code>
      * @return A list containing the paramList.
      */
     java.util.List<java.lang.Integer> getParamListList();
     /**
-     * <code>repeated uint32 param_list = 5;</code>
+     * <code>repeated uint32 param_list = 1;</code>
      * @return The count of paramList.
      */
     int getParamListCount();
     /**
-     * <code>repeated uint32 param_list = 5;</code>
+     * <code>repeated uint32 param_list = 1;</code>
      * @param index The index of the element to return.
      * @return The paramList at the given index.
      */
@@ -48,7 +48,7 @@ public final class GCGMsgClientPerformOuterClass {
   }
   /**
    * <pre>
-   * Name: DIGAEAGCDDK
+   * Obf: JPOOBBNLNDN
    * </pre>
    *
    * Protobuf type {@code GCGMsgClientPerform}
@@ -98,13 +98,7 @@ public final class GCGMsgClientPerformOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-              int rawValue = input.readEnum();
-
-              performType_ = rawValue;
-              break;
-            }
-            case 40: {
+            case 8: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 paramList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -112,7 +106,7 @@ public final class GCGMsgClientPerformOuterClass {
               paramList_.addInt(input.readUInt32());
               break;
             }
-            case 42: {
+            case 10: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -123,6 +117,12 @@ public final class GCGMsgClientPerformOuterClass {
                 paramList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
+              break;
+            }
+            case 24: {
+              int rawValue = input.readEnum();
+
+              performType_ = rawValue;
               break;
             }
             default: {
@@ -163,26 +163,26 @@ public final class GCGMsgClientPerformOuterClass {
     public static final int PERFORM_TYPE_FIELD_NUMBER = 3;
     private int performType_;
     /**
-     * <code>.GCGClientPerformType perform_type = 3;</code>
+     * <code>.FICAFCEJKPF perform_type = 3;</code>
      * @return The enum numeric value on the wire for performType.
      */
     @java.lang.Override public int getPerformTypeValue() {
       return performType_;
     }
     /**
-     * <code>.GCGClientPerformType perform_type = 3;</code>
+     * <code>.FICAFCEJKPF perform_type = 3;</code>
      * @return The performType.
      */
-    @java.lang.Override public emu.grasscutter.net.proto.GCGClientPerformTypeOuterClass.GCGClientPerformType getPerformType() {
+    @java.lang.Override public emu.grasscutter.net.proto.FICAFCEJKPFOuterClass.FICAFCEJKPF getPerformType() {
       @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.GCGClientPerformTypeOuterClass.GCGClientPerformType result = emu.grasscutter.net.proto.GCGClientPerformTypeOuterClass.GCGClientPerformType.valueOf(performType_);
-      return result == null ? emu.grasscutter.net.proto.GCGClientPerformTypeOuterClass.GCGClientPerformType.UNRECOGNIZED : result;
+      emu.grasscutter.net.proto.FICAFCEJKPFOuterClass.FICAFCEJKPF result = emu.grasscutter.net.proto.FICAFCEJKPFOuterClass.FICAFCEJKPF.valueOf(performType_);
+      return result == null ? emu.grasscutter.net.proto.FICAFCEJKPFOuterClass.FICAFCEJKPF.UNRECOGNIZED : result;
     }
 
-    public static final int PARAM_LIST_FIELD_NUMBER = 5;
+    public static final int PARAM_LIST_FIELD_NUMBER = 1;
     private com.google.protobuf.Internal.IntList paramList_;
     /**
-     * <code>repeated uint32 param_list = 5;</code>
+     * <code>repeated uint32 param_list = 1;</code>
      * @return A list containing the paramList.
      */
     @java.lang.Override
@@ -191,14 +191,14 @@ public final class GCGMsgClientPerformOuterClass {
       return paramList_;
     }
     /**
-     * <code>repeated uint32 param_list = 5;</code>
+     * <code>repeated uint32 param_list = 1;</code>
      * @return The count of paramList.
      */
     public int getParamListCount() {
       return paramList_.size();
     }
     /**
-     * <code>repeated uint32 param_list = 5;</code>
+     * <code>repeated uint32 param_list = 1;</code>
      * @param index The index of the element to return.
      * @return The paramList at the given index.
      */
@@ -222,15 +222,15 @@ public final class GCGMsgClientPerformOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (performType_ != emu.grasscutter.net.proto.GCGClientPerformTypeOuterClass.GCGClientPerformType.GCG_CLIENT_PERFORM_TYPE_INVALID.getNumber()) {
-        output.writeEnum(3, performType_);
-      }
       if (getParamListList().size() > 0) {
-        output.writeUInt32NoTag(42);
+        output.writeUInt32NoTag(10);
         output.writeUInt32NoTag(paramListMemoizedSerializedSize);
       }
       for (int i = 0; i < paramList_.size(); i++) {
         output.writeUInt32NoTag(paramList_.getInt(i));
+      }
+      if (performType_ != emu.grasscutter.net.proto.FICAFCEJKPFOuterClass.FICAFCEJKPF.FICAFCEJKPF_GcgPerformInvalid.getNumber()) {
+        output.writeEnum(3, performType_);
       }
       unknownFields.writeTo(output);
     }
@@ -241,10 +241,6 @@ public final class GCGMsgClientPerformOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (performType_ != emu.grasscutter.net.proto.GCGClientPerformTypeOuterClass.GCGClientPerformType.GCG_CLIENT_PERFORM_TYPE_INVALID.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(3, performType_);
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < paramList_.size(); i++) {
@@ -258,6 +254,10 @@ public final class GCGMsgClientPerformOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         paramListMemoizedSerializedSize = dataSize;
+      }
+      if (performType_ != emu.grasscutter.net.proto.FICAFCEJKPFOuterClass.FICAFCEJKPF.FICAFCEJKPF_GcgPerformInvalid.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(3, performType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -391,7 +391,7 @@ public final class GCGMsgClientPerformOuterClass {
     }
     /**
      * <pre>
-     * Name: DIGAEAGCDDK
+     * Obf: JPOOBBNLNDN
      * </pre>
      *
      * Protobuf type {@code GCGMsgClientPerform}
@@ -561,14 +561,14 @@ public final class GCGMsgClientPerformOuterClass {
 
       private int performType_ = 0;
       /**
-       * <code>.GCGClientPerformType perform_type = 3;</code>
+       * <code>.FICAFCEJKPF perform_type = 3;</code>
        * @return The enum numeric value on the wire for performType.
        */
       @java.lang.Override public int getPerformTypeValue() {
         return performType_;
       }
       /**
-       * <code>.GCGClientPerformType perform_type = 3;</code>
+       * <code>.FICAFCEJKPF perform_type = 3;</code>
        * @param value The enum numeric value on the wire for performType to set.
        * @return This builder for chaining.
        */
@@ -579,21 +579,21 @@ public final class GCGMsgClientPerformOuterClass {
         return this;
       }
       /**
-       * <code>.GCGClientPerformType perform_type = 3;</code>
+       * <code>.FICAFCEJKPF perform_type = 3;</code>
        * @return The performType.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.GCGClientPerformTypeOuterClass.GCGClientPerformType getPerformType() {
+      public emu.grasscutter.net.proto.FICAFCEJKPFOuterClass.FICAFCEJKPF getPerformType() {
         @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.GCGClientPerformTypeOuterClass.GCGClientPerformType result = emu.grasscutter.net.proto.GCGClientPerformTypeOuterClass.GCGClientPerformType.valueOf(performType_);
-        return result == null ? emu.grasscutter.net.proto.GCGClientPerformTypeOuterClass.GCGClientPerformType.UNRECOGNIZED : result;
+        emu.grasscutter.net.proto.FICAFCEJKPFOuterClass.FICAFCEJKPF result = emu.grasscutter.net.proto.FICAFCEJKPFOuterClass.FICAFCEJKPF.valueOf(performType_);
+        return result == null ? emu.grasscutter.net.proto.FICAFCEJKPFOuterClass.FICAFCEJKPF.UNRECOGNIZED : result;
       }
       /**
-       * <code>.GCGClientPerformType perform_type = 3;</code>
+       * <code>.FICAFCEJKPF perform_type = 3;</code>
        * @param value The performType to set.
        * @return This builder for chaining.
        */
-      public Builder setPerformType(emu.grasscutter.net.proto.GCGClientPerformTypeOuterClass.GCGClientPerformType value) {
+      public Builder setPerformType(emu.grasscutter.net.proto.FICAFCEJKPFOuterClass.FICAFCEJKPF value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -603,7 +603,7 @@ public final class GCGMsgClientPerformOuterClass {
         return this;
       }
       /**
-       * <code>.GCGClientPerformType perform_type = 3;</code>
+       * <code>.FICAFCEJKPF perform_type = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearPerformType() {
@@ -621,7 +621,7 @@ public final class GCGMsgClientPerformOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 param_list = 5;</code>
+       * <code>repeated uint32 param_list = 1;</code>
        * @return A list containing the paramList.
        */
       public java.util.List<java.lang.Integer>
@@ -630,14 +630,14 @@ public final class GCGMsgClientPerformOuterClass {
                  java.util.Collections.unmodifiableList(paramList_) : paramList_;
       }
       /**
-       * <code>repeated uint32 param_list = 5;</code>
+       * <code>repeated uint32 param_list = 1;</code>
        * @return The count of paramList.
        */
       public int getParamListCount() {
         return paramList_.size();
       }
       /**
-       * <code>repeated uint32 param_list = 5;</code>
+       * <code>repeated uint32 param_list = 1;</code>
        * @param index The index of the element to return.
        * @return The paramList at the given index.
        */
@@ -645,7 +645,7 @@ public final class GCGMsgClientPerformOuterClass {
         return paramList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 param_list = 5;</code>
+       * <code>repeated uint32 param_list = 1;</code>
        * @param index The index to set the value at.
        * @param value The paramList to set.
        * @return This builder for chaining.
@@ -658,7 +658,7 @@ public final class GCGMsgClientPerformOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 param_list = 5;</code>
+       * <code>repeated uint32 param_list = 1;</code>
        * @param value The paramList to add.
        * @return This builder for chaining.
        */
@@ -669,7 +669,7 @@ public final class GCGMsgClientPerformOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 param_list = 5;</code>
+       * <code>repeated uint32 param_list = 1;</code>
        * @param values The paramList to add.
        * @return This builder for chaining.
        */
@@ -682,7 +682,7 @@ public final class GCGMsgClientPerformOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 param_list = 5;</code>
+       * <code>repeated uint32 param_list = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearParamList() {
@@ -758,16 +758,16 @@ public final class GCGMsgClientPerformOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\031GCGMsgClientPerform.proto\032\032GCGClientPe" +
-      "rformType.proto\"V\n\023GCGMsgClientPerform\022+" +
-      "\n\014perform_type\030\003 \001(\0162\025.GCGClientPerformT" +
-      "ype\022\022\n\nparam_list\030\005 \003(\rB\033\n\031emu.grasscutt" +
-      "er.net.protob\006proto3"
+      "\n\031GCGMsgClientPerform.proto\032\021FICAFCEJKPF" +
+      ".proto\"M\n\023GCGMsgClientPerform\022\"\n\014perform" +
+      "_type\030\003 \001(\0162\014.FICAFCEJKPF\022\022\n\nparam_list\030" +
+      "\001 \003(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.GCGClientPerformTypeOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.FICAFCEJKPFOuterClass.getDescriptor(),
         });
     internal_static_GCGMsgClientPerform_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -775,7 +775,7 @@ public final class GCGMsgClientPerformOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGMsgClientPerform_descriptor,
         new java.lang.String[] { "PerformType", "ParamList", });
-    emu.grasscutter.net.proto.GCGClientPerformTypeOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.FICAFCEJKPFOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

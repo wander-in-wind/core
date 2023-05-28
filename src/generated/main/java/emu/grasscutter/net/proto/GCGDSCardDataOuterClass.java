@@ -19,94 +19,66 @@ public final class GCGDSCardDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 card_id = 9;</code>
-     * @return The cardId.
+     * <code>repeated uint32 ADGPBBJPBFH = 1;</code>
+     * @return A list containing the aDGPBBJPBFH.
      */
-    int getCardId();
-
+    java.util.List<java.lang.Integer> getADGPBBJPBFHList();
     /**
-     * <pre>
-     *EELEBKMIBBK snooguess swapperoo
-     * </pre>
-     *
-     * <code>repeated uint32 proficiency_reward_taken_idx_list = 15;</code>
-     * @return A list containing the proficiencyRewardTakenIdxList.
+     * <code>repeated uint32 ADGPBBJPBFH = 1;</code>
+     * @return The count of aDGPBBJPBFH.
      */
-    java.util.List<java.lang.Integer> getProficiencyRewardTakenIdxListList();
+    int getADGPBBJPBFHCount();
     /**
-     * <pre>
-     *EELEBKMIBBK snooguess swapperoo
-     * </pre>
-     *
-     * <code>repeated uint32 proficiency_reward_taken_idx_list = 15;</code>
-     * @return The count of proficiencyRewardTakenIdxList.
-     */
-    int getProficiencyRewardTakenIdxListCount();
-    /**
-     * <pre>
-     *EELEBKMIBBK snooguess swapperoo
-     * </pre>
-     *
-     * <code>repeated uint32 proficiency_reward_taken_idx_list = 15;</code>
+     * <code>repeated uint32 ADGPBBJPBFH = 1;</code>
      * @param index The index of the element to return.
-     * @return The proficiencyRewardTakenIdxList at the given index.
+     * @return The aDGPBBJPBFH at the given index.
      */
-    int getProficiencyRewardTakenIdxList(int index);
+    int getADGPBBJPBFH(int index);
 
     /**
-     * <code>uint32 face_type = 2;</code>
-     * @return The faceType.
-     */
-    int getFaceType();
-
-    /**
-     * <pre>
-     *AHCKEKMDMLJ snooguess swapperoo
-     * </pre>
-     *
-     * <code>repeated uint32 unlock_face_type_list = 14;</code>
-     * @return A list containing the unlockFaceTypeList.
-     */
-    java.util.List<java.lang.Integer> getUnlockFaceTypeListList();
-    /**
-     * <pre>
-     *AHCKEKMDMLJ snooguess swapperoo
-     * </pre>
-     *
-     * <code>repeated uint32 unlock_face_type_list = 14;</code>
-     * @return The count of unlockFaceTypeList.
-     */
-    int getUnlockFaceTypeListCount();
-    /**
-     * <pre>
-     *AHCKEKMDMLJ snooguess swapperoo
-     * </pre>
-     *
-     * <code>repeated uint32 unlock_face_type_list = 14;</code>
-     * @param index The index of the element to return.
-     * @return The unlockFaceTypeList at the given index.
-     */
-    int getUnlockFaceTypeList(int index);
-
-    /**
-     * <code>uint32 num = 7;</code>
+     * <code>uint32 num = 4;</code>
      * @return The num.
      */
     int getNum();
 
     /**
-     * <pre>
-     *EJKLKNPMHMC snooswap
-     * </pre>
-     *
-     * <code>uint32 proficiency = 1;</code>
+     * <code>uint32 proficiency = 2;</code>
      * @return The proficiency.
      */
     int getProficiency();
+
+    /**
+     * <code>uint32 card_id = 7;</code>
+     * @return The cardId.
+     */
+    int getCardId();
+
+    /**
+     * <code>repeated uint32 FIJOGENMOJM = 3;</code>
+     * @return A list containing the fIJOGENMOJM.
+     */
+    java.util.List<java.lang.Integer> getFIJOGENMOJMList();
+    /**
+     * <code>repeated uint32 FIJOGENMOJM = 3;</code>
+     * @return The count of fIJOGENMOJM.
+     */
+    int getFIJOGENMOJMCount();
+    /**
+     * <code>repeated uint32 FIJOGENMOJM = 3;</code>
+     * @param index The index of the element to return.
+     * @return The fIJOGENMOJM at the given index.
+     */
+    int getFIJOGENMOJM(int index);
+
+    /**
+     * <code>uint32 face_type = 10;</code>
+     * @return The faceType.
+     */
+    int getFaceType();
   }
   /**
    * <pre>
-   * Name: MFAFMALBKAP
+   * Obf: DCNGLKLJJFD
    * </pre>
    *
    * Protobuf type {@code GCGDSCardData}
@@ -121,8 +93,8 @@ public final class GCGDSCardDataOuterClass {
       super(builder);
     }
     private GCGDSCardData() {
-      proficiencyRewardTakenIdxList_ = emptyIntList();
-      unlockFaceTypeList_ = emptyIntList();
+      aDGPBBJPBFH_ = emptyIntList();
+      fIJOGENMOJM_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -157,65 +129,65 @@ public final class GCGDSCardDataOuterClass {
               done = true;
               break;
             case 8: {
-
-              proficiency_ = input.readUInt32();
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                aDGPBBJPBFH_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              aDGPBBJPBFH_.addInt(input.readUInt32());
+              break;
+            }
+            case 10: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+                aDGPBBJPBFH_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                aDGPBBJPBFH_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
               break;
             }
             case 16: {
 
-              faceType_ = input.readUInt32();
+              proficiency_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 24: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                fIJOGENMOJM_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              fIJOGENMOJM_.addInt(input.readUInt32());
+              break;
+            }
+            case 26: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                fIJOGENMOJM_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                fIJOGENMOJM_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 32: {
 
               num_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 56: {
 
               cardId_ = input.readUInt32();
               break;
             }
-            case 112: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                unlockFaceTypeList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              unlockFaceTypeList_.addInt(input.readUInt32());
-              break;
-            }
-            case 114: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                unlockFaceTypeList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                unlockFaceTypeList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 120: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                proficiencyRewardTakenIdxList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              proficiencyRewardTakenIdxList_.addInt(input.readUInt32());
-              break;
-            }
-            case 122: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                proficiencyRewardTakenIdxList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                proficiencyRewardTakenIdxList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
+            case 80: {
+
+              faceType_ = input.readUInt32();
               break;
             }
             default: {
@@ -233,11 +205,11 @@ public final class GCGDSCardDataOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          unlockFaceTypeList_.makeImmutable(); // C
-        }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          proficiencyRewardTakenIdxList_.makeImmutable(); // C
+          aDGPBBJPBFH_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          fIJOGENMOJM_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -256,112 +228,38 @@ public final class GCGDSCardDataOuterClass {
               emu.grasscutter.net.proto.GCGDSCardDataOuterClass.GCGDSCardData.class, emu.grasscutter.net.proto.GCGDSCardDataOuterClass.GCGDSCardData.Builder.class);
     }
 
-    public static final int CARD_ID_FIELD_NUMBER = 9;
-    private int cardId_;
+    public static final int ADGPBBJPBFH_FIELD_NUMBER = 1;
+    private com.google.protobuf.Internal.IntList aDGPBBJPBFH_;
     /**
-     * <code>uint32 card_id = 9;</code>
-     * @return The cardId.
-     */
-    @java.lang.Override
-    public int getCardId() {
-      return cardId_;
-    }
-
-    public static final int PROFICIENCY_REWARD_TAKEN_IDX_LIST_FIELD_NUMBER = 15;
-    private com.google.protobuf.Internal.IntList proficiencyRewardTakenIdxList_;
-    /**
-     * <pre>
-     *EELEBKMIBBK snooguess swapperoo
-     * </pre>
-     *
-     * <code>repeated uint32 proficiency_reward_taken_idx_list = 15;</code>
-     * @return A list containing the proficiencyRewardTakenIdxList.
+     * <code>repeated uint32 ADGPBBJPBFH = 1;</code>
+     * @return A list containing the aDGPBBJPBFH.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getProficiencyRewardTakenIdxListList() {
-      return proficiencyRewardTakenIdxList_;
+        getADGPBBJPBFHList() {
+      return aDGPBBJPBFH_;
     }
     /**
-     * <pre>
-     *EELEBKMIBBK snooguess swapperoo
-     * </pre>
-     *
-     * <code>repeated uint32 proficiency_reward_taken_idx_list = 15;</code>
-     * @return The count of proficiencyRewardTakenIdxList.
+     * <code>repeated uint32 ADGPBBJPBFH = 1;</code>
+     * @return The count of aDGPBBJPBFH.
      */
-    public int getProficiencyRewardTakenIdxListCount() {
-      return proficiencyRewardTakenIdxList_.size();
+    public int getADGPBBJPBFHCount() {
+      return aDGPBBJPBFH_.size();
     }
     /**
-     * <pre>
-     *EELEBKMIBBK snooguess swapperoo
-     * </pre>
-     *
-     * <code>repeated uint32 proficiency_reward_taken_idx_list = 15;</code>
+     * <code>repeated uint32 ADGPBBJPBFH = 1;</code>
      * @param index The index of the element to return.
-     * @return The proficiencyRewardTakenIdxList at the given index.
+     * @return The aDGPBBJPBFH at the given index.
      */
-    public int getProficiencyRewardTakenIdxList(int index) {
-      return proficiencyRewardTakenIdxList_.getInt(index);
+    public int getADGPBBJPBFH(int index) {
+      return aDGPBBJPBFH_.getInt(index);
     }
-    private int proficiencyRewardTakenIdxListMemoizedSerializedSize = -1;
+    private int aDGPBBJPBFHMemoizedSerializedSize = -1;
 
-    public static final int FACE_TYPE_FIELD_NUMBER = 2;
-    private int faceType_;
-    /**
-     * <code>uint32 face_type = 2;</code>
-     * @return The faceType.
-     */
-    @java.lang.Override
-    public int getFaceType() {
-      return faceType_;
-    }
-
-    public static final int UNLOCK_FACE_TYPE_LIST_FIELD_NUMBER = 14;
-    private com.google.protobuf.Internal.IntList unlockFaceTypeList_;
-    /**
-     * <pre>
-     *AHCKEKMDMLJ snooguess swapperoo
-     * </pre>
-     *
-     * <code>repeated uint32 unlock_face_type_list = 14;</code>
-     * @return A list containing the unlockFaceTypeList.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getUnlockFaceTypeListList() {
-      return unlockFaceTypeList_;
-    }
-    /**
-     * <pre>
-     *AHCKEKMDMLJ snooguess swapperoo
-     * </pre>
-     *
-     * <code>repeated uint32 unlock_face_type_list = 14;</code>
-     * @return The count of unlockFaceTypeList.
-     */
-    public int getUnlockFaceTypeListCount() {
-      return unlockFaceTypeList_.size();
-    }
-    /**
-     * <pre>
-     *AHCKEKMDMLJ snooguess swapperoo
-     * </pre>
-     *
-     * <code>repeated uint32 unlock_face_type_list = 14;</code>
-     * @param index The index of the element to return.
-     * @return The unlockFaceTypeList at the given index.
-     */
-    public int getUnlockFaceTypeList(int index) {
-      return unlockFaceTypeList_.getInt(index);
-    }
-    private int unlockFaceTypeListMemoizedSerializedSize = -1;
-
-    public static final int NUM_FIELD_NUMBER = 7;
+    public static final int NUM_FIELD_NUMBER = 4;
     private int num_;
     /**
-     * <code>uint32 num = 7;</code>
+     * <code>uint32 num = 4;</code>
      * @return The num.
      */
     @java.lang.Override
@@ -369,19 +267,65 @@ public final class GCGDSCardDataOuterClass {
       return num_;
     }
 
-    public static final int PROFICIENCY_FIELD_NUMBER = 1;
+    public static final int PROFICIENCY_FIELD_NUMBER = 2;
     private int proficiency_;
     /**
-     * <pre>
-     *EJKLKNPMHMC snooswap
-     * </pre>
-     *
-     * <code>uint32 proficiency = 1;</code>
+     * <code>uint32 proficiency = 2;</code>
      * @return The proficiency.
      */
     @java.lang.Override
     public int getProficiency() {
       return proficiency_;
+    }
+
+    public static final int CARD_ID_FIELD_NUMBER = 7;
+    private int cardId_;
+    /**
+     * <code>uint32 card_id = 7;</code>
+     * @return The cardId.
+     */
+    @java.lang.Override
+    public int getCardId() {
+      return cardId_;
+    }
+
+    public static final int FIJOGENMOJM_FIELD_NUMBER = 3;
+    private com.google.protobuf.Internal.IntList fIJOGENMOJM_;
+    /**
+     * <code>repeated uint32 FIJOGENMOJM = 3;</code>
+     * @return A list containing the fIJOGENMOJM.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getFIJOGENMOJMList() {
+      return fIJOGENMOJM_;
+    }
+    /**
+     * <code>repeated uint32 FIJOGENMOJM = 3;</code>
+     * @return The count of fIJOGENMOJM.
+     */
+    public int getFIJOGENMOJMCount() {
+      return fIJOGENMOJM_.size();
+    }
+    /**
+     * <code>repeated uint32 FIJOGENMOJM = 3;</code>
+     * @param index The index of the element to return.
+     * @return The fIJOGENMOJM at the given index.
+     */
+    public int getFIJOGENMOJM(int index) {
+      return fIJOGENMOJM_.getInt(index);
+    }
+    private int fIJOGENMOJMMemoizedSerializedSize = -1;
+
+    public static final int FACE_TYPE_FIELD_NUMBER = 10;
+    private int faceType_;
+    /**
+     * <code>uint32 face_type = 10;</code>
+     * @return The faceType.
+     */
+    @java.lang.Override
+    public int getFaceType() {
+      return faceType_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -399,31 +343,31 @@ public final class GCGDSCardDataOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (proficiency_ != 0) {
-        output.writeUInt32(1, proficiency_);
+      if (getADGPBBJPBFHList().size() > 0) {
+        output.writeUInt32NoTag(10);
+        output.writeUInt32NoTag(aDGPBBJPBFHMemoizedSerializedSize);
       }
-      if (faceType_ != 0) {
-        output.writeUInt32(2, faceType_);
+      for (int i = 0; i < aDGPBBJPBFH_.size(); i++) {
+        output.writeUInt32NoTag(aDGPBBJPBFH_.getInt(i));
+      }
+      if (proficiency_ != 0) {
+        output.writeUInt32(2, proficiency_);
+      }
+      if (getFIJOGENMOJMList().size() > 0) {
+        output.writeUInt32NoTag(26);
+        output.writeUInt32NoTag(fIJOGENMOJMMemoizedSerializedSize);
+      }
+      for (int i = 0; i < fIJOGENMOJM_.size(); i++) {
+        output.writeUInt32NoTag(fIJOGENMOJM_.getInt(i));
       }
       if (num_ != 0) {
-        output.writeUInt32(7, num_);
+        output.writeUInt32(4, num_);
       }
       if (cardId_ != 0) {
-        output.writeUInt32(9, cardId_);
+        output.writeUInt32(7, cardId_);
       }
-      if (getUnlockFaceTypeListList().size() > 0) {
-        output.writeUInt32NoTag(114);
-        output.writeUInt32NoTag(unlockFaceTypeListMemoizedSerializedSize);
-      }
-      for (int i = 0; i < unlockFaceTypeList_.size(); i++) {
-        output.writeUInt32NoTag(unlockFaceTypeList_.getInt(i));
-      }
-      if (getProficiencyRewardTakenIdxListList().size() > 0) {
-        output.writeUInt32NoTag(122);
-        output.writeUInt32NoTag(proficiencyRewardTakenIdxListMemoizedSerializedSize);
-      }
-      for (int i = 0; i < proficiencyRewardTakenIdxList_.size(); i++) {
-        output.writeUInt32NoTag(proficiencyRewardTakenIdxList_.getInt(i));
+      if (faceType_ != 0) {
+        output.writeUInt32(10, faceType_);
       }
       unknownFields.writeTo(output);
     }
@@ -434,49 +378,49 @@ public final class GCGDSCardDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      {
+        int dataSize = 0;
+        for (int i = 0; i < aDGPBBJPBFH_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(aDGPBBJPBFH_.getInt(i));
+        }
+        size += dataSize;
+        if (!getADGPBBJPBFHList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        aDGPBBJPBFHMemoizedSerializedSize = dataSize;
+      }
       if (proficiency_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, proficiency_);
+          .computeUInt32Size(2, proficiency_);
       }
-      if (faceType_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, faceType_);
+      {
+        int dataSize = 0;
+        for (int i = 0; i < fIJOGENMOJM_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(fIJOGENMOJM_.getInt(i));
+        }
+        size += dataSize;
+        if (!getFIJOGENMOJMList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        fIJOGENMOJMMemoizedSerializedSize = dataSize;
       }
       if (num_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, num_);
+          .computeUInt32Size(4, num_);
       }
       if (cardId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, cardId_);
+          .computeUInt32Size(7, cardId_);
       }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < unlockFaceTypeList_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(unlockFaceTypeList_.getInt(i));
-        }
-        size += dataSize;
-        if (!getUnlockFaceTypeListList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        unlockFaceTypeListMemoizedSerializedSize = dataSize;
-      }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < proficiencyRewardTakenIdxList_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(proficiencyRewardTakenIdxList_.getInt(i));
-        }
-        size += dataSize;
-        if (!getProficiencyRewardTakenIdxListList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        proficiencyRewardTakenIdxListMemoizedSerializedSize = dataSize;
+      if (faceType_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, faceType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -493,18 +437,18 @@ public final class GCGDSCardDataOuterClass {
       }
       emu.grasscutter.net.proto.GCGDSCardDataOuterClass.GCGDSCardData other = (emu.grasscutter.net.proto.GCGDSCardDataOuterClass.GCGDSCardData) obj;
 
-      if (getCardId()
-          != other.getCardId()) return false;
-      if (!getProficiencyRewardTakenIdxListList()
-          .equals(other.getProficiencyRewardTakenIdxListList())) return false;
-      if (getFaceType()
-          != other.getFaceType()) return false;
-      if (!getUnlockFaceTypeListList()
-          .equals(other.getUnlockFaceTypeListList())) return false;
+      if (!getADGPBBJPBFHList()
+          .equals(other.getADGPBBJPBFHList())) return false;
       if (getNum()
           != other.getNum()) return false;
       if (getProficiency()
           != other.getProficiency()) return false;
+      if (getCardId()
+          != other.getCardId()) return false;
+      if (!getFIJOGENMOJMList()
+          .equals(other.getFIJOGENMOJMList())) return false;
+      if (getFaceType()
+          != other.getFaceType()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -516,22 +460,22 @@ public final class GCGDSCardDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CARD_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCardId();
-      if (getProficiencyRewardTakenIdxListCount() > 0) {
-        hash = (37 * hash) + PROFICIENCY_REWARD_TAKEN_IDX_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getProficiencyRewardTakenIdxListList().hashCode();
-      }
-      hash = (37 * hash) + FACE_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getFaceType();
-      if (getUnlockFaceTypeListCount() > 0) {
-        hash = (37 * hash) + UNLOCK_FACE_TYPE_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getUnlockFaceTypeListList().hashCode();
+      if (getADGPBBJPBFHCount() > 0) {
+        hash = (37 * hash) + ADGPBBJPBFH_FIELD_NUMBER;
+        hash = (53 * hash) + getADGPBBJPBFHList().hashCode();
       }
       hash = (37 * hash) + NUM_FIELD_NUMBER;
       hash = (53 * hash) + getNum();
       hash = (37 * hash) + PROFICIENCY_FIELD_NUMBER;
       hash = (53 * hash) + getProficiency();
+      hash = (37 * hash) + CARD_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getCardId();
+      if (getFIJOGENMOJMCount() > 0) {
+        hash = (37 * hash) + FIJOGENMOJM_FIELD_NUMBER;
+        hash = (53 * hash) + getFIJOGENMOJMList().hashCode();
+      }
+      hash = (37 * hash) + FACE_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getFaceType();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -629,7 +573,7 @@ public final class GCGDSCardDataOuterClass {
     }
     /**
      * <pre>
-     * Name: MFAFMALBKAP
+     * Obf: DCNGLKLJJFD
      * </pre>
      *
      * Protobuf type {@code GCGDSCardData}
@@ -669,17 +613,17 @@ public final class GCGDSCardDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        cardId_ = 0;
-
-        proficiencyRewardTakenIdxList_ = emptyIntList();
+        aDGPBBJPBFH_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        faceType_ = 0;
-
-        unlockFaceTypeList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
         num_ = 0;
 
         proficiency_ = 0;
+
+        cardId_ = 0;
+
+        fIJOGENMOJM_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        faceType_ = 0;
 
         return this;
       }
@@ -708,20 +652,20 @@ public final class GCGDSCardDataOuterClass {
       public emu.grasscutter.net.proto.GCGDSCardDataOuterClass.GCGDSCardData buildPartial() {
         emu.grasscutter.net.proto.GCGDSCardDataOuterClass.GCGDSCardData result = new emu.grasscutter.net.proto.GCGDSCardDataOuterClass.GCGDSCardData(this);
         int from_bitField0_ = bitField0_;
-        result.cardId_ = cardId_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          proficiencyRewardTakenIdxList_.makeImmutable();
+          aDGPBBJPBFH_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.proficiencyRewardTakenIdxList_ = proficiencyRewardTakenIdxList_;
-        result.faceType_ = faceType_;
-        if (((bitField0_ & 0x00000002) != 0)) {
-          unlockFaceTypeList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000002);
-        }
-        result.unlockFaceTypeList_ = unlockFaceTypeList_;
+        result.aDGPBBJPBFH_ = aDGPBBJPBFH_;
         result.num_ = num_;
         result.proficiency_ = proficiency_;
+        result.cardId_ = cardId_;
+        if (((bitField0_ & 0x00000002) != 0)) {
+          fIJOGENMOJM_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        }
+        result.fIJOGENMOJM_ = fIJOGENMOJM_;
+        result.faceType_ = faceType_;
         onBuilt();
         return result;
       }
@@ -770,29 +714,13 @@ public final class GCGDSCardDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGDSCardDataOuterClass.GCGDSCardData other) {
         if (other == emu.grasscutter.net.proto.GCGDSCardDataOuterClass.GCGDSCardData.getDefaultInstance()) return this;
-        if (other.getCardId() != 0) {
-          setCardId(other.getCardId());
-        }
-        if (!other.proficiencyRewardTakenIdxList_.isEmpty()) {
-          if (proficiencyRewardTakenIdxList_.isEmpty()) {
-            proficiencyRewardTakenIdxList_ = other.proficiencyRewardTakenIdxList_;
+        if (!other.aDGPBBJPBFH_.isEmpty()) {
+          if (aDGPBBJPBFH_.isEmpty()) {
+            aDGPBBJPBFH_ = other.aDGPBBJPBFH_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureProficiencyRewardTakenIdxListIsMutable();
-            proficiencyRewardTakenIdxList_.addAll(other.proficiencyRewardTakenIdxList_);
-          }
-          onChanged();
-        }
-        if (other.getFaceType() != 0) {
-          setFaceType(other.getFaceType());
-        }
-        if (!other.unlockFaceTypeList_.isEmpty()) {
-          if (unlockFaceTypeList_.isEmpty()) {
-            unlockFaceTypeList_ = other.unlockFaceTypeList_;
-            bitField0_ = (bitField0_ & ~0x00000002);
-          } else {
-            ensureUnlockFaceTypeListIsMutable();
-            unlockFaceTypeList_.addAll(other.unlockFaceTypeList_);
+            ensureADGPBBJPBFHIsMutable();
+            aDGPBBJPBFH_.addAll(other.aDGPBBJPBFH_);
           }
           onChanged();
         }
@@ -801,6 +729,22 @@ public final class GCGDSCardDataOuterClass {
         }
         if (other.getProficiency() != 0) {
           setProficiency(other.getProficiency());
+        }
+        if (other.getCardId() != 0) {
+          setCardId(other.getCardId());
+        }
+        if (!other.fIJOGENMOJM_.isEmpty()) {
+          if (fIJOGENMOJM_.isEmpty()) {
+            fIJOGENMOJM_ = other.fIJOGENMOJM_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+          } else {
+            ensureFIJOGENMOJMIsMutable();
+            fIJOGENMOJM_.addAll(other.fIJOGENMOJM_);
+          }
+          onChanged();
+        }
+        if (other.getFaceType() != 0) {
+          setFaceType(other.getFaceType());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -832,285 +776,88 @@ public final class GCGDSCardDataOuterClass {
       }
       private int bitField0_;
 
-      private int cardId_ ;
-      /**
-       * <code>uint32 card_id = 9;</code>
-       * @return The cardId.
-       */
-      @java.lang.Override
-      public int getCardId() {
-        return cardId_;
-      }
-      /**
-       * <code>uint32 card_id = 9;</code>
-       * @param value The cardId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCardId(int value) {
-        
-        cardId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 card_id = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCardId() {
-        
-        cardId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList proficiencyRewardTakenIdxList_ = emptyIntList();
-      private void ensureProficiencyRewardTakenIdxListIsMutable() {
+      private com.google.protobuf.Internal.IntList aDGPBBJPBFH_ = emptyIntList();
+      private void ensureADGPBBJPBFHIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          proficiencyRewardTakenIdxList_ = mutableCopy(proficiencyRewardTakenIdxList_);
+          aDGPBBJPBFH_ = mutableCopy(aDGPBBJPBFH_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <pre>
-       *EELEBKMIBBK snooguess swapperoo
-       * </pre>
-       *
-       * <code>repeated uint32 proficiency_reward_taken_idx_list = 15;</code>
-       * @return A list containing the proficiencyRewardTakenIdxList.
+       * <code>repeated uint32 ADGPBBJPBFH = 1;</code>
+       * @return A list containing the aDGPBBJPBFH.
        */
       public java.util.List<java.lang.Integer>
-          getProficiencyRewardTakenIdxListList() {
+          getADGPBBJPBFHList() {
         return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(proficiencyRewardTakenIdxList_) : proficiencyRewardTakenIdxList_;
+                 java.util.Collections.unmodifiableList(aDGPBBJPBFH_) : aDGPBBJPBFH_;
       }
       /**
-       * <pre>
-       *EELEBKMIBBK snooguess swapperoo
-       * </pre>
-       *
-       * <code>repeated uint32 proficiency_reward_taken_idx_list = 15;</code>
-       * @return The count of proficiencyRewardTakenIdxList.
+       * <code>repeated uint32 ADGPBBJPBFH = 1;</code>
+       * @return The count of aDGPBBJPBFH.
        */
-      public int getProficiencyRewardTakenIdxListCount() {
-        return proficiencyRewardTakenIdxList_.size();
+      public int getADGPBBJPBFHCount() {
+        return aDGPBBJPBFH_.size();
       }
       /**
-       * <pre>
-       *EELEBKMIBBK snooguess swapperoo
-       * </pre>
-       *
-       * <code>repeated uint32 proficiency_reward_taken_idx_list = 15;</code>
+       * <code>repeated uint32 ADGPBBJPBFH = 1;</code>
        * @param index The index of the element to return.
-       * @return The proficiencyRewardTakenIdxList at the given index.
+       * @return The aDGPBBJPBFH at the given index.
        */
-      public int getProficiencyRewardTakenIdxList(int index) {
-        return proficiencyRewardTakenIdxList_.getInt(index);
+      public int getADGPBBJPBFH(int index) {
+        return aDGPBBJPBFH_.getInt(index);
       }
       /**
-       * <pre>
-       *EELEBKMIBBK snooguess swapperoo
-       * </pre>
-       *
-       * <code>repeated uint32 proficiency_reward_taken_idx_list = 15;</code>
+       * <code>repeated uint32 ADGPBBJPBFH = 1;</code>
        * @param index The index to set the value at.
-       * @param value The proficiencyRewardTakenIdxList to set.
+       * @param value The aDGPBBJPBFH to set.
        * @return This builder for chaining.
        */
-      public Builder setProficiencyRewardTakenIdxList(
+      public Builder setADGPBBJPBFH(
           int index, int value) {
-        ensureProficiencyRewardTakenIdxListIsMutable();
-        proficiencyRewardTakenIdxList_.setInt(index, value);
+        ensureADGPBBJPBFHIsMutable();
+        aDGPBBJPBFH_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       *EELEBKMIBBK snooguess swapperoo
-       * </pre>
-       *
-       * <code>repeated uint32 proficiency_reward_taken_idx_list = 15;</code>
-       * @param value The proficiencyRewardTakenIdxList to add.
+       * <code>repeated uint32 ADGPBBJPBFH = 1;</code>
+       * @param value The aDGPBBJPBFH to add.
        * @return This builder for chaining.
        */
-      public Builder addProficiencyRewardTakenIdxList(int value) {
-        ensureProficiencyRewardTakenIdxListIsMutable();
-        proficiencyRewardTakenIdxList_.addInt(value);
+      public Builder addADGPBBJPBFH(int value) {
+        ensureADGPBBJPBFHIsMutable();
+        aDGPBBJPBFH_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       *EELEBKMIBBK snooguess swapperoo
-       * </pre>
-       *
-       * <code>repeated uint32 proficiency_reward_taken_idx_list = 15;</code>
-       * @param values The proficiencyRewardTakenIdxList to add.
+       * <code>repeated uint32 ADGPBBJPBFH = 1;</code>
+       * @param values The aDGPBBJPBFH to add.
        * @return This builder for chaining.
        */
-      public Builder addAllProficiencyRewardTakenIdxList(
+      public Builder addAllADGPBBJPBFH(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureProficiencyRewardTakenIdxListIsMutable();
+        ensureADGPBBJPBFHIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, proficiencyRewardTakenIdxList_);
+            values, aDGPBBJPBFH_);
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       *EELEBKMIBBK snooguess swapperoo
-       * </pre>
-       *
-       * <code>repeated uint32 proficiency_reward_taken_idx_list = 15;</code>
+       * <code>repeated uint32 ADGPBBJPBFH = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearProficiencyRewardTakenIdxList() {
-        proficiencyRewardTakenIdxList_ = emptyIntList();
+      public Builder clearADGPBBJPBFH() {
+        aDGPBBJPBFH_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private int faceType_ ;
-      /**
-       * <code>uint32 face_type = 2;</code>
-       * @return The faceType.
-       */
-      @java.lang.Override
-      public int getFaceType() {
-        return faceType_;
-      }
-      /**
-       * <code>uint32 face_type = 2;</code>
-       * @param value The faceType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFaceType(int value) {
-        
-        faceType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 face_type = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFaceType() {
-        
-        faceType_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList unlockFaceTypeList_ = emptyIntList();
-      private void ensureUnlockFaceTypeListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          unlockFaceTypeList_ = mutableCopy(unlockFaceTypeList_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-      /**
-       * <pre>
-       *AHCKEKMDMLJ snooguess swapperoo
-       * </pre>
-       *
-       * <code>repeated uint32 unlock_face_type_list = 14;</code>
-       * @return A list containing the unlockFaceTypeList.
-       */
-      public java.util.List<java.lang.Integer>
-          getUnlockFaceTypeListList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(unlockFaceTypeList_) : unlockFaceTypeList_;
-      }
-      /**
-       * <pre>
-       *AHCKEKMDMLJ snooguess swapperoo
-       * </pre>
-       *
-       * <code>repeated uint32 unlock_face_type_list = 14;</code>
-       * @return The count of unlockFaceTypeList.
-       */
-      public int getUnlockFaceTypeListCount() {
-        return unlockFaceTypeList_.size();
-      }
-      /**
-       * <pre>
-       *AHCKEKMDMLJ snooguess swapperoo
-       * </pre>
-       *
-       * <code>repeated uint32 unlock_face_type_list = 14;</code>
-       * @param index The index of the element to return.
-       * @return The unlockFaceTypeList at the given index.
-       */
-      public int getUnlockFaceTypeList(int index) {
-        return unlockFaceTypeList_.getInt(index);
-      }
-      /**
-       * <pre>
-       *AHCKEKMDMLJ snooguess swapperoo
-       * </pre>
-       *
-       * <code>repeated uint32 unlock_face_type_list = 14;</code>
-       * @param index The index to set the value at.
-       * @param value The unlockFaceTypeList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUnlockFaceTypeList(
-          int index, int value) {
-        ensureUnlockFaceTypeListIsMutable();
-        unlockFaceTypeList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *AHCKEKMDMLJ snooguess swapperoo
-       * </pre>
-       *
-       * <code>repeated uint32 unlock_face_type_list = 14;</code>
-       * @param value The unlockFaceTypeList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addUnlockFaceTypeList(int value) {
-        ensureUnlockFaceTypeListIsMutable();
-        unlockFaceTypeList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *AHCKEKMDMLJ snooguess swapperoo
-       * </pre>
-       *
-       * <code>repeated uint32 unlock_face_type_list = 14;</code>
-       * @param values The unlockFaceTypeList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllUnlockFaceTypeList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureUnlockFaceTypeListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, unlockFaceTypeList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *AHCKEKMDMLJ snooguess swapperoo
-       * </pre>
-       *
-       * <code>repeated uint32 unlock_face_type_list = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUnlockFaceTypeList() {
-        unlockFaceTypeList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
 
       private int num_ ;
       /**
-       * <code>uint32 num = 7;</code>
+       * <code>uint32 num = 4;</code>
        * @return The num.
        */
       @java.lang.Override
@@ -1118,7 +865,7 @@ public final class GCGDSCardDataOuterClass {
         return num_;
       }
       /**
-       * <code>uint32 num = 7;</code>
+       * <code>uint32 num = 4;</code>
        * @param value The num to set.
        * @return This builder for chaining.
        */
@@ -1129,7 +876,7 @@ public final class GCGDSCardDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 num = 7;</code>
+       * <code>uint32 num = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearNum() {
@@ -1141,11 +888,7 @@ public final class GCGDSCardDataOuterClass {
 
       private int proficiency_ ;
       /**
-       * <pre>
-       *EJKLKNPMHMC snooswap
-       * </pre>
-       *
-       * <code>uint32 proficiency = 1;</code>
+       * <code>uint32 proficiency = 2;</code>
        * @return The proficiency.
        */
       @java.lang.Override
@@ -1153,11 +896,7 @@ public final class GCGDSCardDataOuterClass {
         return proficiency_;
       }
       /**
-       * <pre>
-       *EJKLKNPMHMC snooswap
-       * </pre>
-       *
-       * <code>uint32 proficiency = 1;</code>
+       * <code>uint32 proficiency = 2;</code>
        * @param value The proficiency to set.
        * @return This builder for chaining.
        */
@@ -1168,16 +907,153 @@ public final class GCGDSCardDataOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *EJKLKNPMHMC snooswap
-       * </pre>
-       *
-       * <code>uint32 proficiency = 1;</code>
+       * <code>uint32 proficiency = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearProficiency() {
         
         proficiency_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int cardId_ ;
+      /**
+       * <code>uint32 card_id = 7;</code>
+       * @return The cardId.
+       */
+      @java.lang.Override
+      public int getCardId() {
+        return cardId_;
+      }
+      /**
+       * <code>uint32 card_id = 7;</code>
+       * @param value The cardId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCardId(int value) {
+        
+        cardId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 card_id = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCardId() {
+        
+        cardId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList fIJOGENMOJM_ = emptyIntList();
+      private void ensureFIJOGENMOJMIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          fIJOGENMOJM_ = mutableCopy(fIJOGENMOJM_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+      /**
+       * <code>repeated uint32 FIJOGENMOJM = 3;</code>
+       * @return A list containing the fIJOGENMOJM.
+       */
+      public java.util.List<java.lang.Integer>
+          getFIJOGENMOJMList() {
+        return ((bitField0_ & 0x00000002) != 0) ?
+                 java.util.Collections.unmodifiableList(fIJOGENMOJM_) : fIJOGENMOJM_;
+      }
+      /**
+       * <code>repeated uint32 FIJOGENMOJM = 3;</code>
+       * @return The count of fIJOGENMOJM.
+       */
+      public int getFIJOGENMOJMCount() {
+        return fIJOGENMOJM_.size();
+      }
+      /**
+       * <code>repeated uint32 FIJOGENMOJM = 3;</code>
+       * @param index The index of the element to return.
+       * @return The fIJOGENMOJM at the given index.
+       */
+      public int getFIJOGENMOJM(int index) {
+        return fIJOGENMOJM_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 FIJOGENMOJM = 3;</code>
+       * @param index The index to set the value at.
+       * @param value The fIJOGENMOJM to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFIJOGENMOJM(
+          int index, int value) {
+        ensureFIJOGENMOJMIsMutable();
+        fIJOGENMOJM_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 FIJOGENMOJM = 3;</code>
+       * @param value The fIJOGENMOJM to add.
+       * @return This builder for chaining.
+       */
+      public Builder addFIJOGENMOJM(int value) {
+        ensureFIJOGENMOJMIsMutable();
+        fIJOGENMOJM_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 FIJOGENMOJM = 3;</code>
+       * @param values The fIJOGENMOJM to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllFIJOGENMOJM(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureFIJOGENMOJMIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, fIJOGENMOJM_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 FIJOGENMOJM = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFIJOGENMOJM() {
+        fIJOGENMOJM_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        onChanged();
+        return this;
+      }
+
+      private int faceType_ ;
+      /**
+       * <code>uint32 face_type = 10;</code>
+       * @return The faceType.
+       */
+      @java.lang.Override
+      public int getFaceType() {
+        return faceType_;
+      }
+      /**
+       * <code>uint32 face_type = 10;</code>
+       * @param value The faceType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFaceType(int value) {
+        
+        faceType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 face_type = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFaceType() {
+        
+        faceType_ = 0;
         onChanged();
         return this;
       }
@@ -1248,12 +1124,11 @@ public final class GCGDSCardDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\023GCGDSCardData.proto\"\237\001\n\rGCGDSCardData\022" +
-      "\017\n\007card_id\030\t \001(\r\022)\n!proficiency_reward_t" +
-      "aken_idx_list\030\017 \003(\r\022\021\n\tface_type\030\002 \001(\r\022\035" +
-      "\n\025unlock_face_type_list\030\016 \003(\r\022\013\n\003num\030\007 \001" +
-      "(\r\022\023\n\013proficiency\030\001 \001(\rB\033\n\031emu.grasscutt" +
-      "er.net.protob\006proto3"
+      "\n\023GCGDSCardData.proto\"\177\n\rGCGDSCardData\022\023" +
+      "\n\013ADGPBBJPBFH\030\001 \003(\r\022\013\n\003num\030\004 \001(\r\022\023\n\013prof" +
+      "iciency\030\002 \001(\r\022\017\n\007card_id\030\007 \001(\r\022\023\n\013FIJOGE" +
+      "NMOJM\030\003 \003(\r\022\021\n\tface_type\030\n \001(\rB\033\n\031emu.gr" +
+      "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1264,7 +1139,7 @@ public final class GCGDSCardDataOuterClass {
     internal_static_GCGDSCardData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGDSCardData_descriptor,
-        new java.lang.String[] { "CardId", "ProficiencyRewardTakenIdxList", "FaceType", "UnlockFaceTypeList", "Num", "Proficiency", });
+        new java.lang.String[] { "ADGPBBJPBFH", "Num", "Proficiency", "CardId", "FIJOGENMOJM", "FaceType", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

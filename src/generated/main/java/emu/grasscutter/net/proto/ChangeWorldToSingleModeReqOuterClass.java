@@ -20,8 +20,8 @@ public final class ChangeWorldToSingleModeReqOuterClass {
   }
   /**
    * <pre>
-   * Name: FHCMILEBGOM
-   * CmdId: 3243
+   * CmdId: 3445
+   * Obf: HCIHPLMCEFF
    * </pre>
    *
    * Protobuf type {@code ChangeWorldToSingleModeReq}
@@ -246,8 +246,8 @@ public final class ChangeWorldToSingleModeReqOuterClass {
     }
     /**
      * <pre>
-     * Name: FHCMILEBGOM
-     * CmdId: 3243
+     * CmdId: 3445
+     * Obf: HCIHPLMCEFF
      * </pre>
      *
      * Protobuf type {@code ChangeWorldToSingleModeReq}

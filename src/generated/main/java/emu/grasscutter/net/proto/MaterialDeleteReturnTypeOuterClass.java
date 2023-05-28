@@ -16,7 +16,7 @@ public final class MaterialDeleteReturnTypeOuterClass {
   }
   /**
    * <pre>
-   * Name: AFGHMMDBPMD
+   * Obf: EACMIGMMBCA
    * </pre>
    *
    * Protobuf enum {@code MaterialDeleteReturnType}

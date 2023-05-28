@@ -16,7 +16,7 @@ public final class DealAddFriendResultTypeOuterClass {
   }
   /**
    * <pre>
-   * Name: HKNICPJLBBF
+   * Obf: ABPPEJELBNL
    * </pre>
    *
    * Protobuf enum {@code DealAddFriendResultType}

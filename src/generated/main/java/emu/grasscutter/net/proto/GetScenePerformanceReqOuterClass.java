@@ -20,8 +20,8 @@ public final class GetScenePerformanceReqOuterClass {
   }
   /**
    * <pre>
-   * Name: PPOFPMJDCDD
-   * CmdId: 3283
+   * CmdId: 3358
+   * Obf: FCLLKCBDMIH
    * </pre>
    *
    * Protobuf type {@code GetScenePerformanceReq}
@@ -246,8 +246,8 @@ public final class GetScenePerformanceReqOuterClass {
     }
     /**
      * <pre>
-     * Name: PPOFPMJDCDD
-     * CmdId: 3283
+     * CmdId: 3358
+     * Obf: FCLLKCBDMIH
      * </pre>
      *
      * Protobuf type {@code GetScenePerformanceReq}

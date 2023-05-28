@@ -19,49 +19,37 @@ public final class GCGMsgOpTimerOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 controller_id = 11;</code>
-     * @return The controllerId.
+     * <code>.OFOHJIEDJKD phase = 7;</code>
+     * @return The enum numeric value on the wire for phase.
      */
-    int getControllerId();
+    int getPhaseValue();
+    /**
+     * <code>.OFOHJIEDJKD phase = 7;</code>
+     * @return The phase.
+     */
+    emu.grasscutter.net.proto.OFOHJIEDJKDOuterClass.OFOHJIEDJKD getPhase();
 
     /**
-     * <code>uint64 begin_time = 5;</code>
+     * <code>fixed64 begin_time = 1;</code>
      * @return The beginTime.
      */
     long getBeginTime();
 
     /**
-     * <pre>
-     *OAKPHGNDJLO snooswap
-     * </pre>
-     *
-     * <code>uint64 time_stamp = 12;</code>
-     * @return The timeStamp.
+     * <code>fixed64 NBEKAHFIEAF = 3;</code>
+     * @return The nBEKAHFIEAF.
      */
-    long getTimeStamp();
+    long getNBEKAHFIEAF();
 
     /**
-     * <pre>
-     *DOINBFHLBHP JFFMMIKBICI snooswap
-     * </pre>
-     *
-     * <code>.GCGPhaseType phase = 14;</code>
-     * @return The enum numeric value on the wire for phase.
+     * <code>uint32 controller_id = 4;</code>
+     * @return The controllerId.
      */
-    int getPhaseValue();
-    /**
-     * <pre>
-     *DOINBFHLBHP JFFMMIKBICI snooswap
-     * </pre>
-     *
-     * <code>.GCGPhaseType phase = 14;</code>
-     * @return The phase.
-     */
-    emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType getPhase();
+    int getControllerId();
   }
   /**
    * <pre>
-   * Name: AOHEFFCPELI
+   * Obf: KBHFMBICJNP
    * </pre>
    *
    * Protobuf type {@code GCGMsgOpTimer}
@@ -109,22 +97,22 @@ public final class GCGMsgOpTimerOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 9: {
 
-              beginTime_ = input.readUInt64();
+              beginTime_ = input.readFixed64();
               break;
             }
-            case 88: {
+            case 25: {
+
+              nBEKAHFIEAF_ = input.readFixed64();
+              break;
+            }
+            case 32: {
 
               controllerId_ = input.readUInt32();
               break;
             }
-            case 96: {
-
-              timeStamp_ = input.readUInt64();
-              break;
-            }
-            case 112: {
+            case 56: {
               int rawValue = input.readEnum();
 
               phase_ = rawValue;
@@ -162,21 +150,29 @@ public final class GCGMsgOpTimerOuterClass {
               emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer.class, emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer.Builder.class);
     }
 
-    public static final int CONTROLLER_ID_FIELD_NUMBER = 11;
-    private int controllerId_;
+    public static final int PHASE_FIELD_NUMBER = 7;
+    private int phase_;
     /**
-     * <code>uint32 controller_id = 11;</code>
-     * @return The controllerId.
+     * <code>.OFOHJIEDJKD phase = 7;</code>
+     * @return The enum numeric value on the wire for phase.
      */
-    @java.lang.Override
-    public int getControllerId() {
-      return controllerId_;
+    @java.lang.Override public int getPhaseValue() {
+      return phase_;
+    }
+    /**
+     * <code>.OFOHJIEDJKD phase = 7;</code>
+     * @return The phase.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.OFOHJIEDJKDOuterClass.OFOHJIEDJKD getPhase() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.OFOHJIEDJKDOuterClass.OFOHJIEDJKD result = emu.grasscutter.net.proto.OFOHJIEDJKDOuterClass.OFOHJIEDJKD.valueOf(phase_);
+      return result == null ? emu.grasscutter.net.proto.OFOHJIEDJKDOuterClass.OFOHJIEDJKD.UNRECOGNIZED : result;
     }
 
-    public static final int BEGIN_TIME_FIELD_NUMBER = 5;
+    public static final int BEGIN_TIME_FIELD_NUMBER = 1;
     private long beginTime_;
     /**
-     * <code>uint64 begin_time = 5;</code>
+     * <code>fixed64 begin_time = 1;</code>
      * @return The beginTime.
      */
     @java.lang.Override
@@ -184,46 +180,26 @@ public final class GCGMsgOpTimerOuterClass {
       return beginTime_;
     }
 
-    public static final int TIME_STAMP_FIELD_NUMBER = 12;
-    private long timeStamp_;
+    public static final int NBEKAHFIEAF_FIELD_NUMBER = 3;
+    private long nBEKAHFIEAF_;
     /**
-     * <pre>
-     *OAKPHGNDJLO snooswap
-     * </pre>
-     *
-     * <code>uint64 time_stamp = 12;</code>
-     * @return The timeStamp.
+     * <code>fixed64 NBEKAHFIEAF = 3;</code>
+     * @return The nBEKAHFIEAF.
      */
     @java.lang.Override
-    public long getTimeStamp() {
-      return timeStamp_;
+    public long getNBEKAHFIEAF() {
+      return nBEKAHFIEAF_;
     }
 
-    public static final int PHASE_FIELD_NUMBER = 14;
-    private int phase_;
+    public static final int CONTROLLER_ID_FIELD_NUMBER = 4;
+    private int controllerId_;
     /**
-     * <pre>
-     *DOINBFHLBHP JFFMMIKBICI snooswap
-     * </pre>
-     *
-     * <code>.GCGPhaseType phase = 14;</code>
-     * @return The enum numeric value on the wire for phase.
+     * <code>uint32 controller_id = 4;</code>
+     * @return The controllerId.
      */
-    @java.lang.Override public int getPhaseValue() {
-      return phase_;
-    }
-    /**
-     * <pre>
-     *DOINBFHLBHP JFFMMIKBICI snooswap
-     * </pre>
-     *
-     * <code>.GCGPhaseType phase = 14;</code>
-     * @return The phase.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType getPhase() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType result = emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.valueOf(phase_);
-      return result == null ? emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.UNRECOGNIZED : result;
+    @java.lang.Override
+    public int getControllerId() {
+      return controllerId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -241,16 +217,16 @@ public final class GCGMsgOpTimerOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (beginTime_ != 0L) {
-        output.writeUInt64(5, beginTime_);
+        output.writeFixed64(1, beginTime_);
+      }
+      if (nBEKAHFIEAF_ != 0L) {
+        output.writeFixed64(3, nBEKAHFIEAF_);
       }
       if (controllerId_ != 0) {
-        output.writeUInt32(11, controllerId_);
+        output.writeUInt32(4, controllerId_);
       }
-      if (timeStamp_ != 0L) {
-        output.writeUInt64(12, timeStamp_);
-      }
-      if (phase_ != emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.GCG_PHASE_TYPE_INVALID.getNumber()) {
-        output.writeEnum(14, phase_);
+      if (phase_ != emu.grasscutter.net.proto.OFOHJIEDJKDOuterClass.OFOHJIEDJKD.OFOHJIEDJKD_GcgPhaseInvalid.getNumber()) {
+        output.writeEnum(7, phase_);
       }
       unknownFields.writeTo(output);
     }
@@ -263,19 +239,19 @@ public final class GCGMsgOpTimerOuterClass {
       size = 0;
       if (beginTime_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(5, beginTime_);
+          .computeFixed64Size(1, beginTime_);
+      }
+      if (nBEKAHFIEAF_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFixed64Size(3, nBEKAHFIEAF_);
       }
       if (controllerId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, controllerId_);
+          .computeUInt32Size(4, controllerId_);
       }
-      if (timeStamp_ != 0L) {
+      if (phase_ != emu.grasscutter.net.proto.OFOHJIEDJKDOuterClass.OFOHJIEDJKD.OFOHJIEDJKD_GcgPhaseInvalid.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(12, timeStamp_);
-      }
-      if (phase_ != emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.GCG_PHASE_TYPE_INVALID.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(14, phase_);
+          .computeEnumSize(7, phase_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -292,13 +268,13 @@ public final class GCGMsgOpTimerOuterClass {
       }
       emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer other = (emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer) obj;
 
-      if (getControllerId()
-          != other.getControllerId()) return false;
+      if (phase_ != other.phase_) return false;
       if (getBeginTime()
           != other.getBeginTime()) return false;
-      if (getTimeStamp()
-          != other.getTimeStamp()) return false;
-      if (phase_ != other.phase_) return false;
+      if (getNBEKAHFIEAF()
+          != other.getNBEKAHFIEAF()) return false;
+      if (getControllerId()
+          != other.getControllerId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -310,16 +286,16 @@ public final class GCGMsgOpTimerOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CONTROLLER_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getControllerId();
+      hash = (37 * hash) + PHASE_FIELD_NUMBER;
+      hash = (53 * hash) + phase_;
       hash = (37 * hash) + BEGIN_TIME_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getBeginTime());
-      hash = (37 * hash) + TIME_STAMP_FIELD_NUMBER;
+      hash = (37 * hash) + NBEKAHFIEAF_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getTimeStamp());
-      hash = (37 * hash) + PHASE_FIELD_NUMBER;
-      hash = (53 * hash) + phase_;
+          getNBEKAHFIEAF());
+      hash = (37 * hash) + CONTROLLER_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getControllerId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -417,7 +393,7 @@ public final class GCGMsgOpTimerOuterClass {
     }
     /**
      * <pre>
-     * Name: AOHEFFCPELI
+     * Obf: KBHFMBICJNP
      * </pre>
      *
      * Protobuf type {@code GCGMsgOpTimer}
@@ -457,13 +433,13 @@ public final class GCGMsgOpTimerOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        controllerId_ = 0;
+        phase_ = 0;
 
         beginTime_ = 0L;
 
-        timeStamp_ = 0L;
+        nBEKAHFIEAF_ = 0L;
 
-        phase_ = 0;
+        controllerId_ = 0;
 
         return this;
       }
@@ -491,10 +467,10 @@ public final class GCGMsgOpTimerOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer buildPartial() {
         emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer result = new emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer(this);
-        result.controllerId_ = controllerId_;
-        result.beginTime_ = beginTime_;
-        result.timeStamp_ = timeStamp_;
         result.phase_ = phase_;
+        result.beginTime_ = beginTime_;
+        result.nBEKAHFIEAF_ = nBEKAHFIEAF_;
+        result.controllerId_ = controllerId_;
         onBuilt();
         return result;
       }
@@ -543,17 +519,17 @@ public final class GCGMsgOpTimerOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer other) {
         if (other == emu.grasscutter.net.proto.GCGMsgOpTimerOuterClass.GCGMsgOpTimer.getDefaultInstance()) return this;
-        if (other.getControllerId() != 0) {
-          setControllerId(other.getControllerId());
+        if (other.phase_ != 0) {
+          setPhaseValue(other.getPhaseValue());
         }
         if (other.getBeginTime() != 0L) {
           setBeginTime(other.getBeginTime());
         }
-        if (other.getTimeStamp() != 0L) {
-          setTimeStamp(other.getTimeStamp());
+        if (other.getNBEKAHFIEAF() != 0L) {
+          setNBEKAHFIEAF(other.getNBEKAHFIEAF());
         }
-        if (other.phase_ != 0) {
-          setPhaseValue(other.getPhaseValue());
+        if (other.getControllerId() != 0) {
+          setControllerId(other.getControllerId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -584,129 +560,16 @@ public final class GCGMsgOpTimerOuterClass {
         return this;
       }
 
-      private int controllerId_ ;
-      /**
-       * <code>uint32 controller_id = 11;</code>
-       * @return The controllerId.
-       */
-      @java.lang.Override
-      public int getControllerId() {
-        return controllerId_;
-      }
-      /**
-       * <code>uint32 controller_id = 11;</code>
-       * @param value The controllerId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setControllerId(int value) {
-        
-        controllerId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 controller_id = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearControllerId() {
-        
-        controllerId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private long beginTime_ ;
-      /**
-       * <code>uint64 begin_time = 5;</code>
-       * @return The beginTime.
-       */
-      @java.lang.Override
-      public long getBeginTime() {
-        return beginTime_;
-      }
-      /**
-       * <code>uint64 begin_time = 5;</code>
-       * @param value The beginTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBeginTime(long value) {
-        
-        beginTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 begin_time = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBeginTime() {
-        
-        beginTime_ = 0L;
-        onChanged();
-        return this;
-      }
-
-      private long timeStamp_ ;
-      /**
-       * <pre>
-       *OAKPHGNDJLO snooswap
-       * </pre>
-       *
-       * <code>uint64 time_stamp = 12;</code>
-       * @return The timeStamp.
-       */
-      @java.lang.Override
-      public long getTimeStamp() {
-        return timeStamp_;
-      }
-      /**
-       * <pre>
-       *OAKPHGNDJLO snooswap
-       * </pre>
-       *
-       * <code>uint64 time_stamp = 12;</code>
-       * @param value The timeStamp to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTimeStamp(long value) {
-        
-        timeStamp_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *OAKPHGNDJLO snooswap
-       * </pre>
-       *
-       * <code>uint64 time_stamp = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTimeStamp() {
-        
-        timeStamp_ = 0L;
-        onChanged();
-        return this;
-      }
-
       private int phase_ = 0;
       /**
-       * <pre>
-       *DOINBFHLBHP JFFMMIKBICI snooswap
-       * </pre>
-       *
-       * <code>.GCGPhaseType phase = 14;</code>
+       * <code>.OFOHJIEDJKD phase = 7;</code>
        * @return The enum numeric value on the wire for phase.
        */
       @java.lang.Override public int getPhaseValue() {
         return phase_;
       }
       /**
-       * <pre>
-       *DOINBFHLBHP JFFMMIKBICI snooswap
-       * </pre>
-       *
-       * <code>.GCGPhaseType phase = 14;</code>
+       * <code>.OFOHJIEDJKD phase = 7;</code>
        * @param value The enum numeric value on the wire for phase to set.
        * @return This builder for chaining.
        */
@@ -717,29 +580,21 @@ public final class GCGMsgOpTimerOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *DOINBFHLBHP JFFMMIKBICI snooswap
-       * </pre>
-       *
-       * <code>.GCGPhaseType phase = 14;</code>
+       * <code>.OFOHJIEDJKD phase = 7;</code>
        * @return The phase.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType getPhase() {
+      public emu.grasscutter.net.proto.OFOHJIEDJKDOuterClass.OFOHJIEDJKD getPhase() {
         @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType result = emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.valueOf(phase_);
-        return result == null ? emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType.UNRECOGNIZED : result;
+        emu.grasscutter.net.proto.OFOHJIEDJKDOuterClass.OFOHJIEDJKD result = emu.grasscutter.net.proto.OFOHJIEDJKDOuterClass.OFOHJIEDJKD.valueOf(phase_);
+        return result == null ? emu.grasscutter.net.proto.OFOHJIEDJKDOuterClass.OFOHJIEDJKD.UNRECOGNIZED : result;
       }
       /**
-       * <pre>
-       *DOINBFHLBHP JFFMMIKBICI snooswap
-       * </pre>
-       *
-       * <code>.GCGPhaseType phase = 14;</code>
+       * <code>.OFOHJIEDJKD phase = 7;</code>
        * @param value The phase to set.
        * @return This builder for chaining.
        */
-      public Builder setPhase(emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.GCGPhaseType value) {
+      public Builder setPhase(emu.grasscutter.net.proto.OFOHJIEDJKDOuterClass.OFOHJIEDJKD value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -749,16 +604,105 @@ public final class GCGMsgOpTimerOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *DOINBFHLBHP JFFMMIKBICI snooswap
-       * </pre>
-       *
-       * <code>.GCGPhaseType phase = 14;</code>
+       * <code>.OFOHJIEDJKD phase = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearPhase() {
         
         phase_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private long beginTime_ ;
+      /**
+       * <code>fixed64 begin_time = 1;</code>
+       * @return The beginTime.
+       */
+      @java.lang.Override
+      public long getBeginTime() {
+        return beginTime_;
+      }
+      /**
+       * <code>fixed64 begin_time = 1;</code>
+       * @param value The beginTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBeginTime(long value) {
+        
+        beginTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>fixed64 begin_time = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBeginTime() {
+        
+        beginTime_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private long nBEKAHFIEAF_ ;
+      /**
+       * <code>fixed64 NBEKAHFIEAF = 3;</code>
+       * @return The nBEKAHFIEAF.
+       */
+      @java.lang.Override
+      public long getNBEKAHFIEAF() {
+        return nBEKAHFIEAF_;
+      }
+      /**
+       * <code>fixed64 NBEKAHFIEAF = 3;</code>
+       * @param value The nBEKAHFIEAF to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNBEKAHFIEAF(long value) {
+        
+        nBEKAHFIEAF_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>fixed64 NBEKAHFIEAF = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNBEKAHFIEAF() {
+        
+        nBEKAHFIEAF_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private int controllerId_ ;
+      /**
+       * <code>uint32 controller_id = 4;</code>
+       * @return The controllerId.
+       */
+      @java.lang.Override
+      public int getControllerId() {
+        return controllerId_;
+      }
+      /**
+       * <code>uint32 controller_id = 4;</code>
+       * @param value The controllerId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setControllerId(int value) {
+        
+        controllerId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 controller_id = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearControllerId() {
+        
+        controllerId_ = 0;
         onChanged();
         return this;
       }
@@ -829,24 +773,24 @@ public final class GCGMsgOpTimerOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\023GCGMsgOpTimer.proto\032\022GCGPhaseType.prot" +
-      "o\"l\n\rGCGMsgOpTimer\022\025\n\rcontroller_id\030\013 \001(" +
-      "\r\022\022\n\nbegin_time\030\005 \001(\004\022\022\n\ntime_stamp\030\014 \001(" +
-      "\004\022\034\n\005phase\030\016 \001(\0162\r.GCGPhaseTypeB\033\n\031emu.g" +
-      "rasscutter.net.protob\006proto3"
+      "\n\023GCGMsgOpTimer.proto\032\021OFOHJIEDJKD.proto" +
+      "\"l\n\rGCGMsgOpTimer\022\033\n\005phase\030\007 \001(\0162\014.OFOHJ" +
+      "IEDJKD\022\022\n\nbegin_time\030\001 \001(\006\022\023\n\013NBEKAHFIEA" +
+      "F\030\003 \001(\006\022\025\n\rcontroller_id\030\004 \001(\rB\033\n\031emu.gr" +
+      "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.OFOHJIEDJKDOuterClass.getDescriptor(),
         });
     internal_static_GCGMsgOpTimer_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_GCGMsgOpTimer_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGMsgOpTimer_descriptor,
-        new java.lang.String[] { "ControllerId", "BeginTime", "TimeStamp", "Phase", });
-    emu.grasscutter.net.proto.GCGPhaseTypeOuterClass.getDescriptor();
+        new java.lang.String[] { "Phase", "BeginTime", "NBEKAHFIEAF", "ControllerId", });
+    emu.grasscutter.net.proto.OFOHJIEDJKDOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

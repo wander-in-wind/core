@@ -20,8 +20,8 @@ public final class PersonalLineAllDataReqOuterClass {
   }
   /**
    * <pre>
-   * Name: KJIKIBJBDBM
-   * CmdId: 437
+   * CmdId: 498
+   * Obf: LELAFJBLNGN
    * </pre>
    *
    * Protobuf type {@code PersonalLineAllDataReq}
@@ -246,8 +246,8 @@ public final class PersonalLineAllDataReqOuterClass {
     }
     /**
      * <pre>
-     * Name: KJIKIBJBDBM
-     * CmdId: 437
+     * CmdId: 498
+     * Obf: LELAFJBLNGN
      * </pre>
      *
      * Protobuf type {@code PersonalLineAllDataReq}

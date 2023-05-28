@@ -19,69 +19,61 @@ public final class ShowTemplateReminderNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *NHKGGOIDHKL snootodo swapperoo 2
-     * </pre>
-     *
-     * <code>bool is_revoke = 3;</code>
-     * @return The isRevoke.
+     * <code>bool GODGJLAMODL = 9;</code>
+     * @return The gODGJLAMODL.
      */
-    boolean getIsRevoke();
+    boolean getGODGJLAMODL();
 
     /**
-     * <code>uint32 template_reminder_id = 10;</code>
+     * <code>bool EJAADDKFGFE = 15;</code>
+     * @return The eJAADDKFGFE.
+     */
+    boolean getEJAADDKFGFE();
+
+    /**
+     * <code>uint32 template_reminder_id = 4;</code>
      * @return The templateReminderId.
      */
     int getTemplateReminderId();
 
     /**
-     * <code>repeated uint32 param_uid_list = 11;</code>
-     * @return A list containing the paramUidList.
-     */
-    java.util.List<java.lang.Integer> getParamUidListList();
-    /**
-     * <code>repeated uint32 param_uid_list = 11;</code>
-     * @return The count of paramUidList.
-     */
-    int getParamUidListCount();
-    /**
-     * <code>repeated uint32 param_uid_list = 11;</code>
-     * @param index The index of the element to return.
-     * @return The paramUidList at the given index.
-     */
-    int getParamUidList(int index);
-
-    /**
-     * <pre>
-     *GJKNBONLFAJ snootodo swapperoo 2
-     * </pre>
-     *
-     * <code>bool is_need_cache = 8;</code>
-     * @return The isNeedCache.
-     */
-    boolean getIsNeedCache();
-
-    /**
-     * <code>repeated int32 param_list = 7;</code>
+     * <code>repeated int32 param_list = 5;</code>
      * @return A list containing the paramList.
      */
     java.util.List<java.lang.Integer> getParamListList();
     /**
-     * <code>repeated int32 param_list = 7;</code>
+     * <code>repeated int32 param_list = 5;</code>
      * @return The count of paramList.
      */
     int getParamListCount();
     /**
-     * <code>repeated int32 param_list = 7;</code>
+     * <code>repeated int32 param_list = 5;</code>
      * @param index The index of the element to return.
      * @return The paramList at the given index.
      */
     int getParamList(int index);
+
+    /**
+     * <code>repeated uint32 param_uid_list = 12;</code>
+     * @return A list containing the paramUidList.
+     */
+    java.util.List<java.lang.Integer> getParamUidListList();
+    /**
+     * <code>repeated uint32 param_uid_list = 12;</code>
+     * @return The count of paramUidList.
+     */
+    int getParamUidListCount();
+    /**
+     * <code>repeated uint32 param_uid_list = 12;</code>
+     * @param index The index of the element to return.
+     * @return The paramUidList at the given index.
+     */
+    int getParamUidList(int index);
   }
   /**
    * <pre>
-   * Name: KFMKKDJPHOA
-   * CmdId: 3186
+   * CmdId: 3042
+   * Obf: DONIKBKDFCA
    * </pre>
    *
    * Protobuf type {@code ShowTemplateReminderNotify}
@@ -96,8 +88,8 @@ public final class ShowTemplateReminderNotifyOuterClass {
       super(builder);
     }
     private ShowTemplateReminderNotify() {
-      paramUidList_ = emptyIntList();
       paramList_ = emptyIntList();
+      paramUidList_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -131,25 +123,25 @@ public final class ShowTemplateReminderNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 32: {
 
-              isRevoke_ = input.readBool();
+              templateReminderId_ = input.readUInt32();
               break;
             }
-            case 56: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+            case 40: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 paramList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               paramList_.addInt(input.readInt32());
               break;
             }
-            case 58: {
+            case 42: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
                 paramList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
                 paramList_.addInt(input.readInt32());
@@ -157,35 +149,35 @@ public final class ShowTemplateReminderNotifyOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 64: {
+            case 72: {
 
-              isNeedCache_ = input.readBool();
+              gODGJLAMODL_ = input.readBool();
               break;
             }
-            case 80: {
-
-              templateReminderId_ = input.readUInt32();
-              break;
-            }
-            case 88: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+            case 96: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 paramUidList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000002;
               }
               paramUidList_.addInt(input.readUInt32());
               break;
             }
-            case 90: {
+            case 98: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
                 paramUidList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000002;
               }
               while (input.getBytesUntilLimit() > 0) {
                 paramUidList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
+              break;
+            }
+            case 120: {
+
+              eJAADDKFGFE_ = input.readBool();
               break;
             }
             default: {
@@ -203,10 +195,10 @@ public final class ShowTemplateReminderNotifyOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
           paramList_.makeImmutable(); // C
         }
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
           paramUidList_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
@@ -226,25 +218,32 @@ public final class ShowTemplateReminderNotifyOuterClass {
               emu.grasscutter.net.proto.ShowTemplateReminderNotifyOuterClass.ShowTemplateReminderNotify.class, emu.grasscutter.net.proto.ShowTemplateReminderNotifyOuterClass.ShowTemplateReminderNotify.Builder.class);
     }
 
-    public static final int IS_REVOKE_FIELD_NUMBER = 3;
-    private boolean isRevoke_;
+    public static final int GODGJLAMODL_FIELD_NUMBER = 9;
+    private boolean gODGJLAMODL_;
     /**
-     * <pre>
-     *NHKGGOIDHKL snootodo swapperoo 2
-     * </pre>
-     *
-     * <code>bool is_revoke = 3;</code>
-     * @return The isRevoke.
+     * <code>bool GODGJLAMODL = 9;</code>
+     * @return The gODGJLAMODL.
      */
     @java.lang.Override
-    public boolean getIsRevoke() {
-      return isRevoke_;
+    public boolean getGODGJLAMODL() {
+      return gODGJLAMODL_;
     }
 
-    public static final int TEMPLATE_REMINDER_ID_FIELD_NUMBER = 10;
+    public static final int EJAADDKFGFE_FIELD_NUMBER = 15;
+    private boolean eJAADDKFGFE_;
+    /**
+     * <code>bool EJAADDKFGFE = 15;</code>
+     * @return The eJAADDKFGFE.
+     */
+    @java.lang.Override
+    public boolean getEJAADDKFGFE() {
+      return eJAADDKFGFE_;
+    }
+
+    public static final int TEMPLATE_REMINDER_ID_FIELD_NUMBER = 4;
     private int templateReminderId_;
     /**
-     * <code>uint32 template_reminder_id = 10;</code>
+     * <code>uint32 template_reminder_id = 4;</code>
      * @return The templateReminderId.
      */
     @java.lang.Override
@@ -252,53 +251,10 @@ public final class ShowTemplateReminderNotifyOuterClass {
       return templateReminderId_;
     }
 
-    public static final int PARAM_UID_LIST_FIELD_NUMBER = 11;
-    private com.google.protobuf.Internal.IntList paramUidList_;
-    /**
-     * <code>repeated uint32 param_uid_list = 11;</code>
-     * @return A list containing the paramUidList.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getParamUidListList() {
-      return paramUidList_;
-    }
-    /**
-     * <code>repeated uint32 param_uid_list = 11;</code>
-     * @return The count of paramUidList.
-     */
-    public int getParamUidListCount() {
-      return paramUidList_.size();
-    }
-    /**
-     * <code>repeated uint32 param_uid_list = 11;</code>
-     * @param index The index of the element to return.
-     * @return The paramUidList at the given index.
-     */
-    public int getParamUidList(int index) {
-      return paramUidList_.getInt(index);
-    }
-    private int paramUidListMemoizedSerializedSize = -1;
-
-    public static final int IS_NEED_CACHE_FIELD_NUMBER = 8;
-    private boolean isNeedCache_;
-    /**
-     * <pre>
-     *GJKNBONLFAJ snootodo swapperoo 2
-     * </pre>
-     *
-     * <code>bool is_need_cache = 8;</code>
-     * @return The isNeedCache.
-     */
-    @java.lang.Override
-    public boolean getIsNeedCache() {
-      return isNeedCache_;
-    }
-
-    public static final int PARAM_LIST_FIELD_NUMBER = 7;
+    public static final int PARAM_LIST_FIELD_NUMBER = 5;
     private com.google.protobuf.Internal.IntList paramList_;
     /**
-     * <code>repeated int32 param_list = 7;</code>
+     * <code>repeated int32 param_list = 5;</code>
      * @return A list containing the paramList.
      */
     @java.lang.Override
@@ -307,14 +263,14 @@ public final class ShowTemplateReminderNotifyOuterClass {
       return paramList_;
     }
     /**
-     * <code>repeated int32 param_list = 7;</code>
+     * <code>repeated int32 param_list = 5;</code>
      * @return The count of paramList.
      */
     public int getParamListCount() {
       return paramList_.size();
     }
     /**
-     * <code>repeated int32 param_list = 7;</code>
+     * <code>repeated int32 param_list = 5;</code>
      * @param index The index of the element to return.
      * @return The paramList at the given index.
      */
@@ -322,6 +278,34 @@ public final class ShowTemplateReminderNotifyOuterClass {
       return paramList_.getInt(index);
     }
     private int paramListMemoizedSerializedSize = -1;
+
+    public static final int PARAM_UID_LIST_FIELD_NUMBER = 12;
+    private com.google.protobuf.Internal.IntList paramUidList_;
+    /**
+     * <code>repeated uint32 param_uid_list = 12;</code>
+     * @return A list containing the paramUidList.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getParamUidListList() {
+      return paramUidList_;
+    }
+    /**
+     * <code>repeated uint32 param_uid_list = 12;</code>
+     * @return The count of paramUidList.
+     */
+    public int getParamUidListCount() {
+      return paramUidList_.size();
+    }
+    /**
+     * <code>repeated uint32 param_uid_list = 12;</code>
+     * @param index The index of the element to return.
+     * @return The paramUidList at the given index.
+     */
+    public int getParamUidList(int index) {
+      return paramUidList_.getInt(index);
+    }
+    private int paramUidListMemoizedSerializedSize = -1;
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -338,28 +322,28 @@ public final class ShowTemplateReminderNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (isRevoke_ != false) {
-        output.writeBool(3, isRevoke_);
+      if (templateReminderId_ != 0) {
+        output.writeUInt32(4, templateReminderId_);
       }
       if (getParamListList().size() > 0) {
-        output.writeUInt32NoTag(58);
+        output.writeUInt32NoTag(42);
         output.writeUInt32NoTag(paramListMemoizedSerializedSize);
       }
       for (int i = 0; i < paramList_.size(); i++) {
         output.writeInt32NoTag(paramList_.getInt(i));
       }
-      if (isNeedCache_ != false) {
-        output.writeBool(8, isNeedCache_);
-      }
-      if (templateReminderId_ != 0) {
-        output.writeUInt32(10, templateReminderId_);
+      if (gODGJLAMODL_ != false) {
+        output.writeBool(9, gODGJLAMODL_);
       }
       if (getParamUidListList().size() > 0) {
-        output.writeUInt32NoTag(90);
+        output.writeUInt32NoTag(98);
         output.writeUInt32NoTag(paramUidListMemoizedSerializedSize);
       }
       for (int i = 0; i < paramUidList_.size(); i++) {
         output.writeUInt32NoTag(paramUidList_.getInt(i));
+      }
+      if (eJAADDKFGFE_ != false) {
+        output.writeBool(15, eJAADDKFGFE_);
       }
       unknownFields.writeTo(output);
     }
@@ -370,9 +354,9 @@ public final class ShowTemplateReminderNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isRevoke_ != false) {
+      if (templateReminderId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isRevoke_);
+          .computeUInt32Size(4, templateReminderId_);
       }
       {
         int dataSize = 0;
@@ -388,13 +372,9 @@ public final class ShowTemplateReminderNotifyOuterClass {
         }
         paramListMemoizedSerializedSize = dataSize;
       }
-      if (isNeedCache_ != false) {
+      if (gODGJLAMODL_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isNeedCache_);
-      }
-      if (templateReminderId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, templateReminderId_);
+          .computeBoolSize(9, gODGJLAMODL_);
       }
       {
         int dataSize = 0;
@@ -409,6 +389,10 @@ public final class ShowTemplateReminderNotifyOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         paramUidListMemoizedSerializedSize = dataSize;
+      }
+      if (eJAADDKFGFE_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(15, eJAADDKFGFE_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -425,16 +409,16 @@ public final class ShowTemplateReminderNotifyOuterClass {
       }
       emu.grasscutter.net.proto.ShowTemplateReminderNotifyOuterClass.ShowTemplateReminderNotify other = (emu.grasscutter.net.proto.ShowTemplateReminderNotifyOuterClass.ShowTemplateReminderNotify) obj;
 
-      if (getIsRevoke()
-          != other.getIsRevoke()) return false;
+      if (getGODGJLAMODL()
+          != other.getGODGJLAMODL()) return false;
+      if (getEJAADDKFGFE()
+          != other.getEJAADDKFGFE()) return false;
       if (getTemplateReminderId()
           != other.getTemplateReminderId()) return false;
-      if (!getParamUidListList()
-          .equals(other.getParamUidListList())) return false;
-      if (getIsNeedCache()
-          != other.getIsNeedCache()) return false;
       if (!getParamListList()
           .equals(other.getParamListList())) return false;
+      if (!getParamUidListList()
+          .equals(other.getParamUidListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -446,21 +430,21 @@ public final class ShowTemplateReminderNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_REVOKE_FIELD_NUMBER;
+      hash = (37 * hash) + GODGJLAMODL_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsRevoke());
+          getGODGJLAMODL());
+      hash = (37 * hash) + EJAADDKFGFE_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getEJAADDKFGFE());
       hash = (37 * hash) + TEMPLATE_REMINDER_ID_FIELD_NUMBER;
       hash = (53 * hash) + getTemplateReminderId();
-      if (getParamUidListCount() > 0) {
-        hash = (37 * hash) + PARAM_UID_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getParamUidListList().hashCode();
-      }
-      hash = (37 * hash) + IS_NEED_CACHE_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsNeedCache());
       if (getParamListCount() > 0) {
         hash = (37 * hash) + PARAM_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getParamListList().hashCode();
+      }
+      if (getParamUidListCount() > 0) {
+        hash = (37 * hash) + PARAM_UID_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getParamUidListList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -559,8 +543,8 @@ public final class ShowTemplateReminderNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: KFMKKDJPHOA
-     * CmdId: 3186
+     * CmdId: 3042
+     * Obf: DONIKBKDFCA
      * </pre>
      *
      * Protobuf type {@code ShowTemplateReminderNotify}
@@ -600,15 +584,15 @@ public final class ShowTemplateReminderNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isRevoke_ = false;
+        gODGJLAMODL_ = false;
+
+        eJAADDKFGFE_ = false;
 
         templateReminderId_ = 0;
 
-        paramUidList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        isNeedCache_ = false;
-
         paramList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        paramUidList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
@@ -637,19 +621,19 @@ public final class ShowTemplateReminderNotifyOuterClass {
       public emu.grasscutter.net.proto.ShowTemplateReminderNotifyOuterClass.ShowTemplateReminderNotify buildPartial() {
         emu.grasscutter.net.proto.ShowTemplateReminderNotifyOuterClass.ShowTemplateReminderNotify result = new emu.grasscutter.net.proto.ShowTemplateReminderNotifyOuterClass.ShowTemplateReminderNotify(this);
         int from_bitField0_ = bitField0_;
-        result.isRevoke_ = isRevoke_;
+        result.gODGJLAMODL_ = gODGJLAMODL_;
+        result.eJAADDKFGFE_ = eJAADDKFGFE_;
         result.templateReminderId_ = templateReminderId_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          paramUidList_.makeImmutable();
+          paramList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.paramUidList_ = paramUidList_;
-        result.isNeedCache_ = isNeedCache_;
+        result.paramList_ = paramList_;
         if (((bitField0_ & 0x00000002) != 0)) {
-          paramList_.makeImmutable();
+          paramUidList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000002);
         }
-        result.paramList_ = paramList_;
+        result.paramUidList_ = paramUidList_;
         onBuilt();
         return result;
       }
@@ -698,32 +682,32 @@ public final class ShowTemplateReminderNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ShowTemplateReminderNotifyOuterClass.ShowTemplateReminderNotify other) {
         if (other == emu.grasscutter.net.proto.ShowTemplateReminderNotifyOuterClass.ShowTemplateReminderNotify.getDefaultInstance()) return this;
-        if (other.getIsRevoke() != false) {
-          setIsRevoke(other.getIsRevoke());
+        if (other.getGODGJLAMODL() != false) {
+          setGODGJLAMODL(other.getGODGJLAMODL());
+        }
+        if (other.getEJAADDKFGFE() != false) {
+          setEJAADDKFGFE(other.getEJAADDKFGFE());
         }
         if (other.getTemplateReminderId() != 0) {
           setTemplateReminderId(other.getTemplateReminderId());
         }
-        if (!other.paramUidList_.isEmpty()) {
-          if (paramUidList_.isEmpty()) {
-            paramUidList_ = other.paramUidList_;
-            bitField0_ = (bitField0_ & ~0x00000001);
-          } else {
-            ensureParamUidListIsMutable();
-            paramUidList_.addAll(other.paramUidList_);
-          }
-          onChanged();
-        }
-        if (other.getIsNeedCache() != false) {
-          setIsNeedCache(other.getIsNeedCache());
-        }
         if (!other.paramList_.isEmpty()) {
           if (paramList_.isEmpty()) {
             paramList_ = other.paramList_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000001);
           } else {
             ensureParamListIsMutable();
             paramList_.addAll(other.paramList_);
+          }
+          onChanged();
+        }
+        if (!other.paramUidList_.isEmpty()) {
+          if (paramUidList_.isEmpty()) {
+            paramUidList_ = other.paramUidList_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+          } else {
+            ensureParamUidListIsMutable();
+            paramUidList_.addAll(other.paramUidList_);
           }
           onChanged();
         }
@@ -757,52 +741,71 @@ public final class ShowTemplateReminderNotifyOuterClass {
       }
       private int bitField0_;
 
-      private boolean isRevoke_ ;
+      private boolean gODGJLAMODL_ ;
       /**
-       * <pre>
-       *NHKGGOIDHKL snootodo swapperoo 2
-       * </pre>
-       *
-       * <code>bool is_revoke = 3;</code>
-       * @return The isRevoke.
+       * <code>bool GODGJLAMODL = 9;</code>
+       * @return The gODGJLAMODL.
        */
       @java.lang.Override
-      public boolean getIsRevoke() {
-        return isRevoke_;
+      public boolean getGODGJLAMODL() {
+        return gODGJLAMODL_;
       }
       /**
-       * <pre>
-       *NHKGGOIDHKL snootodo swapperoo 2
-       * </pre>
-       *
-       * <code>bool is_revoke = 3;</code>
-       * @param value The isRevoke to set.
+       * <code>bool GODGJLAMODL = 9;</code>
+       * @param value The gODGJLAMODL to set.
        * @return This builder for chaining.
        */
-      public Builder setIsRevoke(boolean value) {
+      public Builder setGODGJLAMODL(boolean value) {
         
-        isRevoke_ = value;
+        gODGJLAMODL_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       *NHKGGOIDHKL snootodo swapperoo 2
-       * </pre>
-       *
-       * <code>bool is_revoke = 3;</code>
+       * <code>bool GODGJLAMODL = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsRevoke() {
+      public Builder clearGODGJLAMODL() {
         
-        isRevoke_ = false;
+        gODGJLAMODL_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean eJAADDKFGFE_ ;
+      /**
+       * <code>bool EJAADDKFGFE = 15;</code>
+       * @return The eJAADDKFGFE.
+       */
+      @java.lang.Override
+      public boolean getEJAADDKFGFE() {
+        return eJAADDKFGFE_;
+      }
+      /**
+       * <code>bool EJAADDKFGFE = 15;</code>
+       * @param value The eJAADDKFGFE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEJAADDKFGFE(boolean value) {
+        
+        eJAADDKFGFE_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool EJAADDKFGFE = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEJAADDKFGFE() {
+        
+        eJAADDKFGFE_ = false;
         onChanged();
         return this;
       }
 
       private int templateReminderId_ ;
       /**
-       * <code>uint32 template_reminder_id = 10;</code>
+       * <code>uint32 template_reminder_id = 4;</code>
        * @return The templateReminderId.
        */
       @java.lang.Override
@@ -810,7 +813,7 @@ public final class ShowTemplateReminderNotifyOuterClass {
         return templateReminderId_;
       }
       /**
-       * <code>uint32 template_reminder_id = 10;</code>
+       * <code>uint32 template_reminder_id = 4;</code>
        * @param value The templateReminderId to set.
        * @return This builder for chaining.
        */
@@ -821,7 +824,7 @@ public final class ShowTemplateReminderNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 template_reminder_id = 10;</code>
+       * <code>uint32 template_reminder_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearTemplateReminderId() {
@@ -831,153 +834,31 @@ public final class ShowTemplateReminderNotifyOuterClass {
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList paramUidList_ = emptyIntList();
-      private void ensureParamUidListIsMutable() {
+      private com.google.protobuf.Internal.IntList paramList_ = emptyIntList();
+      private void ensureParamListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          paramUidList_ = mutableCopy(paramUidList_);
+          paramList_ = mutableCopy(paramList_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <code>repeated uint32 param_uid_list = 11;</code>
-       * @return A list containing the paramUidList.
-       */
-      public java.util.List<java.lang.Integer>
-          getParamUidListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(paramUidList_) : paramUidList_;
-      }
-      /**
-       * <code>repeated uint32 param_uid_list = 11;</code>
-       * @return The count of paramUidList.
-       */
-      public int getParamUidListCount() {
-        return paramUidList_.size();
-      }
-      /**
-       * <code>repeated uint32 param_uid_list = 11;</code>
-       * @param index The index of the element to return.
-       * @return The paramUidList at the given index.
-       */
-      public int getParamUidList(int index) {
-        return paramUidList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 param_uid_list = 11;</code>
-       * @param index The index to set the value at.
-       * @param value The paramUidList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setParamUidList(
-          int index, int value) {
-        ensureParamUidListIsMutable();
-        paramUidList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 param_uid_list = 11;</code>
-       * @param value The paramUidList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addParamUidList(int value) {
-        ensureParamUidListIsMutable();
-        paramUidList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 param_uid_list = 11;</code>
-       * @param values The paramUidList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllParamUidList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureParamUidListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, paramUidList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 param_uid_list = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearParamUidList() {
-        paramUidList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private boolean isNeedCache_ ;
-      /**
-       * <pre>
-       *GJKNBONLFAJ snootodo swapperoo 2
-       * </pre>
-       *
-       * <code>bool is_need_cache = 8;</code>
-       * @return The isNeedCache.
-       */
-      @java.lang.Override
-      public boolean getIsNeedCache() {
-        return isNeedCache_;
-      }
-      /**
-       * <pre>
-       *GJKNBONLFAJ snootodo swapperoo 2
-       * </pre>
-       *
-       * <code>bool is_need_cache = 8;</code>
-       * @param value The isNeedCache to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsNeedCache(boolean value) {
-        
-        isNeedCache_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *GJKNBONLFAJ snootodo swapperoo 2
-       * </pre>
-       *
-       * <code>bool is_need_cache = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsNeedCache() {
-        
-        isNeedCache_ = false;
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList paramList_ = emptyIntList();
-      private void ensureParamListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          paramList_ = mutableCopy(paramList_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-      /**
-       * <code>repeated int32 param_list = 7;</code>
+       * <code>repeated int32 param_list = 5;</code>
        * @return A list containing the paramList.
        */
       public java.util.List<java.lang.Integer>
           getParamListList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
+        return ((bitField0_ & 0x00000001) != 0) ?
                  java.util.Collections.unmodifiableList(paramList_) : paramList_;
       }
       /**
-       * <code>repeated int32 param_list = 7;</code>
+       * <code>repeated int32 param_list = 5;</code>
        * @return The count of paramList.
        */
       public int getParamListCount() {
         return paramList_.size();
       }
       /**
-       * <code>repeated int32 param_list = 7;</code>
+       * <code>repeated int32 param_list = 5;</code>
        * @param index The index of the element to return.
        * @return The paramList at the given index.
        */
@@ -985,7 +866,7 @@ public final class ShowTemplateReminderNotifyOuterClass {
         return paramList_.getInt(index);
       }
       /**
-       * <code>repeated int32 param_list = 7;</code>
+       * <code>repeated int32 param_list = 5;</code>
        * @param index The index to set the value at.
        * @param value The paramList to set.
        * @return This builder for chaining.
@@ -998,7 +879,7 @@ public final class ShowTemplateReminderNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated int32 param_list = 7;</code>
+       * <code>repeated int32 param_list = 5;</code>
        * @param value The paramList to add.
        * @return This builder for chaining.
        */
@@ -1009,7 +890,7 @@ public final class ShowTemplateReminderNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated int32 param_list = 7;</code>
+       * <code>repeated int32 param_list = 5;</code>
        * @param values The paramList to add.
        * @return This builder for chaining.
        */
@@ -1022,11 +903,90 @@ public final class ShowTemplateReminderNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated int32 param_list = 7;</code>
+       * <code>repeated int32 param_list = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearParamList() {
         paramList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList paramUidList_ = emptyIntList();
+      private void ensureParamUidListIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          paramUidList_ = mutableCopy(paramUidList_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+      /**
+       * <code>repeated uint32 param_uid_list = 12;</code>
+       * @return A list containing the paramUidList.
+       */
+      public java.util.List<java.lang.Integer>
+          getParamUidListList() {
+        return ((bitField0_ & 0x00000002) != 0) ?
+                 java.util.Collections.unmodifiableList(paramUidList_) : paramUidList_;
+      }
+      /**
+       * <code>repeated uint32 param_uid_list = 12;</code>
+       * @return The count of paramUidList.
+       */
+      public int getParamUidListCount() {
+        return paramUidList_.size();
+      }
+      /**
+       * <code>repeated uint32 param_uid_list = 12;</code>
+       * @param index The index of the element to return.
+       * @return The paramUidList at the given index.
+       */
+      public int getParamUidList(int index) {
+        return paramUidList_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 param_uid_list = 12;</code>
+       * @param index The index to set the value at.
+       * @param value The paramUidList to set.
+       * @return This builder for chaining.
+       */
+      public Builder setParamUidList(
+          int index, int value) {
+        ensureParamUidListIsMutable();
+        paramUidList_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 param_uid_list = 12;</code>
+       * @param value The paramUidList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addParamUidList(int value) {
+        ensureParamUidListIsMutable();
+        paramUidList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 param_uid_list = 12;</code>
+       * @param values The paramUidList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllParamUidList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureParamUidListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, paramUidList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 param_uid_list = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearParamUidList() {
+        paramUidList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
@@ -1099,10 +1059,10 @@ public final class ShowTemplateReminderNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n ShowTemplateReminderNotify.proto\"\220\001\n\032S" +
-      "howTemplateReminderNotify\022\021\n\tis_revoke\030\003" +
-      " \001(\010\022\034\n\024template_reminder_id\030\n \001(\r\022\026\n\016pa" +
-      "ram_uid_list\030\013 \003(\r\022\025\n\ris_need_cache\030\010 \001(" +
-      "\010\022\022\n\nparam_list\030\007 \003(\005B\033\n\031emu.grasscutter" +
+      "howTemplateReminderNotify\022\023\n\013GODGJLAMODL" +
+      "\030\t \001(\010\022\023\n\013EJAADDKFGFE\030\017 \001(\010\022\034\n\024template_" +
+      "reminder_id\030\004 \001(\r\022\022\n\nparam_list\030\005 \003(\005\022\026\n" +
+      "\016param_uid_list\030\014 \003(\rB\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1114,7 +1074,7 @@ public final class ShowTemplateReminderNotifyOuterClass {
     internal_static_ShowTemplateReminderNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ShowTemplateReminderNotify_descriptor,
-        new java.lang.String[] { "IsRevoke", "TemplateReminderId", "ParamUidList", "IsNeedCache", "ParamList", });
+        new java.lang.String[] { "GODGJLAMODL", "EJAADDKFGFE", "TemplateReminderId", "ParamList", "ParamUidList", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -16,7 +16,7 @@ public final class DraftInviteFailReasonOuterClass {
   }
   /**
    * <pre>
-   * Name: CGJEFNPEPCF
+   * Obf: KGMFIEKKAPP
    * </pre>
    *
    * Protobuf enum {@code DraftInviteFailReason}

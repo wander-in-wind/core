@@ -16,7 +16,7 @@ public final class ReportReasonTypeOuterClass {
   }
   /**
    * <pre>
-   * Name: MABMAHNONLB
+   * Obf: KNLGCAFBAOA
    * </pre>
    *
    * Protobuf enum {@code ReportReasonType}

@@ -19,7 +19,7 @@ public final class MichiaeMatsuriRemoveChestMarkNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 group_id = 9;</code>
+     * <code>uint32 group_id = 7;</code>
      * @return The groupId.
      */
     int getGroupId();
@@ -32,8 +32,8 @@ public final class MichiaeMatsuriRemoveChestMarkNotifyOuterClass {
   }
   /**
    * <pre>
-   * Name: IMCAECEJHJO
-   * CmdId: 8082
+   * CmdId: 8539
+   * Obf: FNNPJOFGFNB
    * </pre>
    *
    * Protobuf type {@code MichiaeMatsuriRemoveChestMarkNotify}
@@ -80,7 +80,7 @@ public final class MichiaeMatsuriRemoveChestMarkNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 56: {
 
               groupId_ = input.readUInt32();
               break;
@@ -122,10 +122,10 @@ public final class MichiaeMatsuriRemoveChestMarkNotifyOuterClass {
               emu.grasscutter.net.proto.MichiaeMatsuriRemoveChestMarkNotifyOuterClass.MichiaeMatsuriRemoveChestMarkNotify.class, emu.grasscutter.net.proto.MichiaeMatsuriRemoveChestMarkNotifyOuterClass.MichiaeMatsuriRemoveChestMarkNotify.Builder.class);
     }
 
-    public static final int GROUP_ID_FIELD_NUMBER = 9;
+    public static final int GROUP_ID_FIELD_NUMBER = 7;
     private int groupId_;
     /**
-     * <code>uint32 group_id = 9;</code>
+     * <code>uint32 group_id = 7;</code>
      * @return The groupId.
      */
     @java.lang.Override
@@ -159,7 +159,7 @@ public final class MichiaeMatsuriRemoveChestMarkNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (groupId_ != 0) {
-        output.writeUInt32(9, groupId_);
+        output.writeUInt32(7, groupId_);
       }
       if (configId_ != 0) {
         output.writeUInt32(13, configId_);
@@ -175,7 +175,7 @@ public final class MichiaeMatsuriRemoveChestMarkNotifyOuterClass {
       size = 0;
       if (groupId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, groupId_);
+          .computeUInt32Size(7, groupId_);
       }
       if (configId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -312,8 +312,8 @@ public final class MichiaeMatsuriRemoveChestMarkNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: IMCAECEJHJO
-     * CmdId: 8082
+     * CmdId: 8539
+     * Obf: FNNPJOFGFNB
      * </pre>
      *
      * Protobuf type {@code MichiaeMatsuriRemoveChestMarkNotify}
@@ -470,7 +470,7 @@ public final class MichiaeMatsuriRemoveChestMarkNotifyOuterClass {
 
       private int groupId_ ;
       /**
-       * <code>uint32 group_id = 9;</code>
+       * <code>uint32 group_id = 7;</code>
        * @return The groupId.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class MichiaeMatsuriRemoveChestMarkNotifyOuterClass {
         return groupId_;
       }
       /**
-       * <code>uint32 group_id = 9;</code>
+       * <code>uint32 group_id = 7;</code>
        * @param value The groupId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class MichiaeMatsuriRemoveChestMarkNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 group_id = 9;</code>
+       * <code>uint32 group_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearGroupId() {
@@ -598,7 +598,7 @@ public final class MichiaeMatsuriRemoveChestMarkNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n)MichiaeMatsuriRemoveChestMarkNotify.pr" +
       "oto\"J\n#MichiaeMatsuriRemoveChestMarkNoti" +
-      "fy\022\020\n\010group_id\030\t \001(\r\022\021\n\tconfig_id\030\r \001(\rB" +
+      "fy\022\020\n\010group_id\030\007 \001(\r\022\021\n\tconfig_id\030\r \001(\rB" +
       "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

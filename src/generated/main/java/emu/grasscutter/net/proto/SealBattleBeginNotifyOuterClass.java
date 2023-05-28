@@ -19,38 +19,38 @@ public final class SealBattleBeginNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 seal_entity_id = 12;</code>
-     * @return The sealEntityId.
+     * <code>uint32 COBODMBALLN = 13;</code>
+     * @return The cOBODMBALLN.
      */
-    int getSealEntityId();
+    int getCOBODMBALLN();
 
     /**
-     * <code>uint32 HOECKCBABAL = 4;</code>
-     * @return The hOECKCBABAL.
-     */
-    int getHOECKCBABAL();
-
-    /**
-     * <code>uint32 BBHIBAHFNJE = 5;</code>
-     * @return The bBHIBAHFNJE.
-     */
-    int getBBHIBAHFNJE();
-
-    /**
-     * <code>.SealBattleType battle_type = 15;</code>
+     * <code>.SealBattleType battle_type = 3;</code>
      * @return The enum numeric value on the wire for battleType.
      */
     int getBattleTypeValue();
     /**
-     * <code>.SealBattleType battle_type = 15;</code>
+     * <code>.SealBattleType battle_type = 3;</code>
      * @return The battleType.
      */
     emu.grasscutter.net.proto.SealBattleTypeOuterClass.SealBattleType getBattleType();
+
+    /**
+     * <code>uint32 NEBJNBBMOKB = 1;</code>
+     * @return The nEBJNBBMOKB.
+     */
+    int getNEBJNBBMOKB();
+
+    /**
+     * <code>uint32 seal_entity_id = 10;</code>
+     * @return The sealEntityId.
+     */
+    int getSealEntityId();
   }
   /**
    * <pre>
-   * Name: LABKKBMBJPG
-   * CmdId: 206
+   * CmdId: 260
+   * Obf: BHDHBJGAEDG
    * </pre>
    *
    * Protobuf type {@code SealBattleBeginNotify}
@@ -98,25 +98,25 @@ public final class SealBattleBeginNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 8: {
 
-              hOECKCBABAL_ = input.readUInt32();
+              nEBJNBBMOKB_ = input.readUInt32();
               break;
             }
-            case 40: {
+            case 24: {
+              int rawValue = input.readEnum();
 
-              bBHIBAHFNJE_ = input.readUInt32();
+              battleType_ = rawValue;
               break;
             }
-            case 96: {
+            case 80: {
 
               sealEntityId_ = input.readUInt32();
               break;
             }
-            case 120: {
-              int rawValue = input.readEnum();
+            case 104: {
 
-              battleType_ = rawValue;
+              cOBODMBALLN_ = input.readUInt32();
               break;
             }
             default: {
@@ -151,56 +151,56 @@ public final class SealBattleBeginNotifyOuterClass {
               emu.grasscutter.net.proto.SealBattleBeginNotifyOuterClass.SealBattleBeginNotify.class, emu.grasscutter.net.proto.SealBattleBeginNotifyOuterClass.SealBattleBeginNotify.Builder.class);
     }
 
-    public static final int SEAL_ENTITY_ID_FIELD_NUMBER = 12;
-    private int sealEntityId_;
+    public static final int COBODMBALLN_FIELD_NUMBER = 13;
+    private int cOBODMBALLN_;
     /**
-     * <code>uint32 seal_entity_id = 12;</code>
-     * @return The sealEntityId.
+     * <code>uint32 COBODMBALLN = 13;</code>
+     * @return The cOBODMBALLN.
      */
     @java.lang.Override
-    public int getSealEntityId() {
-      return sealEntityId_;
+    public int getCOBODMBALLN() {
+      return cOBODMBALLN_;
     }
 
-    public static final int HOECKCBABAL_FIELD_NUMBER = 4;
-    private int hOECKCBABAL_;
-    /**
-     * <code>uint32 HOECKCBABAL = 4;</code>
-     * @return The hOECKCBABAL.
-     */
-    @java.lang.Override
-    public int getHOECKCBABAL() {
-      return hOECKCBABAL_;
-    }
-
-    public static final int BBHIBAHFNJE_FIELD_NUMBER = 5;
-    private int bBHIBAHFNJE_;
-    /**
-     * <code>uint32 BBHIBAHFNJE = 5;</code>
-     * @return The bBHIBAHFNJE.
-     */
-    @java.lang.Override
-    public int getBBHIBAHFNJE() {
-      return bBHIBAHFNJE_;
-    }
-
-    public static final int BATTLE_TYPE_FIELD_NUMBER = 15;
+    public static final int BATTLE_TYPE_FIELD_NUMBER = 3;
     private int battleType_;
     /**
-     * <code>.SealBattleType battle_type = 15;</code>
+     * <code>.SealBattleType battle_type = 3;</code>
      * @return The enum numeric value on the wire for battleType.
      */
     @java.lang.Override public int getBattleTypeValue() {
       return battleType_;
     }
     /**
-     * <code>.SealBattleType battle_type = 15;</code>
+     * <code>.SealBattleType battle_type = 3;</code>
      * @return The battleType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.SealBattleTypeOuterClass.SealBattleType getBattleType() {
       @SuppressWarnings("deprecation")
       emu.grasscutter.net.proto.SealBattleTypeOuterClass.SealBattleType result = emu.grasscutter.net.proto.SealBattleTypeOuterClass.SealBattleType.valueOf(battleType_);
       return result == null ? emu.grasscutter.net.proto.SealBattleTypeOuterClass.SealBattleType.UNRECOGNIZED : result;
+    }
+
+    public static final int NEBJNBBMOKB_FIELD_NUMBER = 1;
+    private int nEBJNBBMOKB_;
+    /**
+     * <code>uint32 NEBJNBBMOKB = 1;</code>
+     * @return The nEBJNBBMOKB.
+     */
+    @java.lang.Override
+    public int getNEBJNBBMOKB() {
+      return nEBJNBBMOKB_;
+    }
+
+    public static final int SEAL_ENTITY_ID_FIELD_NUMBER = 10;
+    private int sealEntityId_;
+    /**
+     * <code>uint32 seal_entity_id = 10;</code>
+     * @return The sealEntityId.
+     */
+    @java.lang.Override
+    public int getSealEntityId() {
+      return sealEntityId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -217,17 +217,17 @@ public final class SealBattleBeginNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (hOECKCBABAL_ != 0) {
-        output.writeUInt32(4, hOECKCBABAL_);
-      }
-      if (bBHIBAHFNJE_ != 0) {
-        output.writeUInt32(5, bBHIBAHFNJE_);
-      }
-      if (sealEntityId_ != 0) {
-        output.writeUInt32(12, sealEntityId_);
+      if (nEBJNBBMOKB_ != 0) {
+        output.writeUInt32(1, nEBJNBBMOKB_);
       }
       if (battleType_ != emu.grasscutter.net.proto.SealBattleTypeOuterClass.SealBattleType.SEAL_BATTLE_KEEP_ALIVE.getNumber()) {
-        output.writeEnum(15, battleType_);
+        output.writeEnum(3, battleType_);
+      }
+      if (sealEntityId_ != 0) {
+        output.writeUInt32(10, sealEntityId_);
+      }
+      if (cOBODMBALLN_ != 0) {
+        output.writeUInt32(13, cOBODMBALLN_);
       }
       unknownFields.writeTo(output);
     }
@@ -238,21 +238,21 @@ public final class SealBattleBeginNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (hOECKCBABAL_ != 0) {
+      if (nEBJNBBMOKB_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, hOECKCBABAL_);
-      }
-      if (bBHIBAHFNJE_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, bBHIBAHFNJE_);
-      }
-      if (sealEntityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, sealEntityId_);
+          .computeUInt32Size(1, nEBJNBBMOKB_);
       }
       if (battleType_ != emu.grasscutter.net.proto.SealBattleTypeOuterClass.SealBattleType.SEAL_BATTLE_KEEP_ALIVE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(15, battleType_);
+          .computeEnumSize(3, battleType_);
+      }
+      if (sealEntityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, sealEntityId_);
+      }
+      if (cOBODMBALLN_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, cOBODMBALLN_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -269,13 +269,13 @@ public final class SealBattleBeginNotifyOuterClass {
       }
       emu.grasscutter.net.proto.SealBattleBeginNotifyOuterClass.SealBattleBeginNotify other = (emu.grasscutter.net.proto.SealBattleBeginNotifyOuterClass.SealBattleBeginNotify) obj;
 
+      if (getCOBODMBALLN()
+          != other.getCOBODMBALLN()) return false;
+      if (battleType_ != other.battleType_) return false;
+      if (getNEBJNBBMOKB()
+          != other.getNEBJNBBMOKB()) return false;
       if (getSealEntityId()
           != other.getSealEntityId()) return false;
-      if (getHOECKCBABAL()
-          != other.getHOECKCBABAL()) return false;
-      if (getBBHIBAHFNJE()
-          != other.getBBHIBAHFNJE()) return false;
-      if (battleType_ != other.battleType_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -287,14 +287,14 @@ public final class SealBattleBeginNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SEAL_ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSealEntityId();
-      hash = (37 * hash) + HOECKCBABAL_FIELD_NUMBER;
-      hash = (53 * hash) + getHOECKCBABAL();
-      hash = (37 * hash) + BBHIBAHFNJE_FIELD_NUMBER;
-      hash = (53 * hash) + getBBHIBAHFNJE();
+      hash = (37 * hash) + COBODMBALLN_FIELD_NUMBER;
+      hash = (53 * hash) + getCOBODMBALLN();
       hash = (37 * hash) + BATTLE_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + battleType_;
+      hash = (37 * hash) + NEBJNBBMOKB_FIELD_NUMBER;
+      hash = (53 * hash) + getNEBJNBBMOKB();
+      hash = (37 * hash) + SEAL_ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSealEntityId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -392,8 +392,8 @@ public final class SealBattleBeginNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: LABKKBMBJPG
-     * CmdId: 206
+     * CmdId: 260
+     * Obf: BHDHBJGAEDG
      * </pre>
      *
      * Protobuf type {@code SealBattleBeginNotify}
@@ -433,13 +433,13 @@ public final class SealBattleBeginNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        sealEntityId_ = 0;
-
-        hOECKCBABAL_ = 0;
-
-        bBHIBAHFNJE_ = 0;
+        cOBODMBALLN_ = 0;
 
         battleType_ = 0;
+
+        nEBJNBBMOKB_ = 0;
+
+        sealEntityId_ = 0;
 
         return this;
       }
@@ -467,10 +467,10 @@ public final class SealBattleBeginNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SealBattleBeginNotifyOuterClass.SealBattleBeginNotify buildPartial() {
         emu.grasscutter.net.proto.SealBattleBeginNotifyOuterClass.SealBattleBeginNotify result = new emu.grasscutter.net.proto.SealBattleBeginNotifyOuterClass.SealBattleBeginNotify(this);
-        result.sealEntityId_ = sealEntityId_;
-        result.hOECKCBABAL_ = hOECKCBABAL_;
-        result.bBHIBAHFNJE_ = bBHIBAHFNJE_;
+        result.cOBODMBALLN_ = cOBODMBALLN_;
         result.battleType_ = battleType_;
+        result.nEBJNBBMOKB_ = nEBJNBBMOKB_;
+        result.sealEntityId_ = sealEntityId_;
         onBuilt();
         return result;
       }
@@ -519,17 +519,17 @@ public final class SealBattleBeginNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SealBattleBeginNotifyOuterClass.SealBattleBeginNotify other) {
         if (other == emu.grasscutter.net.proto.SealBattleBeginNotifyOuterClass.SealBattleBeginNotify.getDefaultInstance()) return this;
-        if (other.getSealEntityId() != 0) {
-          setSealEntityId(other.getSealEntityId());
-        }
-        if (other.getHOECKCBABAL() != 0) {
-          setHOECKCBABAL(other.getHOECKCBABAL());
-        }
-        if (other.getBBHIBAHFNJE() != 0) {
-          setBBHIBAHFNJE(other.getBBHIBAHFNJE());
+        if (other.getCOBODMBALLN() != 0) {
+          setCOBODMBALLN(other.getCOBODMBALLN());
         }
         if (other.battleType_ != 0) {
           setBattleTypeValue(other.getBattleTypeValue());
+        }
+        if (other.getNEBJNBBMOKB() != 0) {
+          setNEBJNBBMOKB(other.getNEBJNBBMOKB());
+        }
+        if (other.getSealEntityId() != 0) {
+          setSealEntityId(other.getSealEntityId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -560,109 +560,47 @@ public final class SealBattleBeginNotifyOuterClass {
         return this;
       }
 
-      private int sealEntityId_ ;
+      private int cOBODMBALLN_ ;
       /**
-       * <code>uint32 seal_entity_id = 12;</code>
-       * @return The sealEntityId.
+       * <code>uint32 COBODMBALLN = 13;</code>
+       * @return The cOBODMBALLN.
        */
       @java.lang.Override
-      public int getSealEntityId() {
-        return sealEntityId_;
+      public int getCOBODMBALLN() {
+        return cOBODMBALLN_;
       }
       /**
-       * <code>uint32 seal_entity_id = 12;</code>
-       * @param value The sealEntityId to set.
+       * <code>uint32 COBODMBALLN = 13;</code>
+       * @param value The cOBODMBALLN to set.
        * @return This builder for chaining.
        */
-      public Builder setSealEntityId(int value) {
+      public Builder setCOBODMBALLN(int value) {
         
-        sealEntityId_ = value;
+        cOBODMBALLN_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 seal_entity_id = 12;</code>
+       * <code>uint32 COBODMBALLN = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearSealEntityId() {
+      public Builder clearCOBODMBALLN() {
         
-        sealEntityId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int hOECKCBABAL_ ;
-      /**
-       * <code>uint32 HOECKCBABAL = 4;</code>
-       * @return The hOECKCBABAL.
-       */
-      @java.lang.Override
-      public int getHOECKCBABAL() {
-        return hOECKCBABAL_;
-      }
-      /**
-       * <code>uint32 HOECKCBABAL = 4;</code>
-       * @param value The hOECKCBABAL to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHOECKCBABAL(int value) {
-        
-        hOECKCBABAL_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 HOECKCBABAL = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearHOECKCBABAL() {
-        
-        hOECKCBABAL_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int bBHIBAHFNJE_ ;
-      /**
-       * <code>uint32 BBHIBAHFNJE = 5;</code>
-       * @return The bBHIBAHFNJE.
-       */
-      @java.lang.Override
-      public int getBBHIBAHFNJE() {
-        return bBHIBAHFNJE_;
-      }
-      /**
-       * <code>uint32 BBHIBAHFNJE = 5;</code>
-       * @param value The bBHIBAHFNJE to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBBHIBAHFNJE(int value) {
-        
-        bBHIBAHFNJE_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 BBHIBAHFNJE = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBBHIBAHFNJE() {
-        
-        bBHIBAHFNJE_ = 0;
+        cOBODMBALLN_ = 0;
         onChanged();
         return this;
       }
 
       private int battleType_ = 0;
       /**
-       * <code>.SealBattleType battle_type = 15;</code>
+       * <code>.SealBattleType battle_type = 3;</code>
        * @return The enum numeric value on the wire for battleType.
        */
       @java.lang.Override public int getBattleTypeValue() {
         return battleType_;
       }
       /**
-       * <code>.SealBattleType battle_type = 15;</code>
+       * <code>.SealBattleType battle_type = 3;</code>
        * @param value The enum numeric value on the wire for battleType to set.
        * @return This builder for chaining.
        */
@@ -673,7 +611,7 @@ public final class SealBattleBeginNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.SealBattleType battle_type = 15;</code>
+       * <code>.SealBattleType battle_type = 3;</code>
        * @return The battleType.
        */
       @java.lang.Override
@@ -683,7 +621,7 @@ public final class SealBattleBeginNotifyOuterClass {
         return result == null ? emu.grasscutter.net.proto.SealBattleTypeOuterClass.SealBattleType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.SealBattleType battle_type = 15;</code>
+       * <code>.SealBattleType battle_type = 3;</code>
        * @param value The battleType to set.
        * @return This builder for chaining.
        */
@@ -697,12 +635,74 @@ public final class SealBattleBeginNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.SealBattleType battle_type = 15;</code>
+       * <code>.SealBattleType battle_type = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearBattleType() {
         
         battleType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int nEBJNBBMOKB_ ;
+      /**
+       * <code>uint32 NEBJNBBMOKB = 1;</code>
+       * @return The nEBJNBBMOKB.
+       */
+      @java.lang.Override
+      public int getNEBJNBBMOKB() {
+        return nEBJNBBMOKB_;
+      }
+      /**
+       * <code>uint32 NEBJNBBMOKB = 1;</code>
+       * @param value The nEBJNBBMOKB to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNEBJNBBMOKB(int value) {
+        
+        nEBJNBBMOKB_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 NEBJNBBMOKB = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNEBJNBBMOKB() {
+        
+        nEBJNBBMOKB_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int sealEntityId_ ;
+      /**
+       * <code>uint32 seal_entity_id = 10;</code>
+       * @return The sealEntityId.
+       */
+      @java.lang.Override
+      public int getSealEntityId() {
+        return sealEntityId_;
+      }
+      /**
+       * <code>uint32 seal_entity_id = 10;</code>
+       * @param value The sealEntityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSealEntityId(int value) {
+        
+        sealEntityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 seal_entity_id = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSealEntityId() {
+        
+        sealEntityId_ = 0;
         onChanged();
         return this;
       }
@@ -774,10 +774,10 @@ public final class SealBattleBeginNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033SealBattleBeginNotify.proto\032\024SealBattl" +
-      "eType.proto\"\177\n\025SealBattleBeginNotify\022\026\n\016" +
-      "seal_entity_id\030\014 \001(\r\022\023\n\013HOECKCBABAL\030\004 \001(" +
-      "\r\022\023\n\013BBHIBAHFNJE\030\005 \001(\r\022$\n\013battle_type\030\017 " +
-      "\001(\0162\017.SealBattleTypeB\033\n\031emu.grasscutter." +
+      "eType.proto\"\177\n\025SealBattleBeginNotify\022\023\n\013" +
+      "COBODMBALLN\030\r \001(\r\022$\n\013battle_type\030\003 \001(\0162\017" +
+      ".SealBattleType\022\023\n\013NEBJNBBMOKB\030\001 \001(\r\022\026\n\016" +
+      "seal_entity_id\030\n \001(\rB\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -790,7 +790,7 @@ public final class SealBattleBeginNotifyOuterClass {
     internal_static_SealBattleBeginNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SealBattleBeginNotify_descriptor,
-        new java.lang.String[] { "SealEntityId", "HOECKCBABAL", "BBHIBAHFNJE", "BattleType", });
+        new java.lang.String[] { "COBODMBALLN", "BattleType", "NEBJNBBMOKB", "SealEntityId", });
     emu.grasscutter.net.proto.SealBattleTypeOuterClass.getDescriptor();
   }
 

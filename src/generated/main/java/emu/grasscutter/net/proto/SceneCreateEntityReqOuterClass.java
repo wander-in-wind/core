@@ -19,6 +19,27 @@ public final class SceneCreateEntityReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>.CreateEntityInfo entity = 3;</code>
+     * @return Whether the entity field is set.
+     */
+    boolean hasEntity();
+    /**
+     * <code>.CreateEntityInfo entity = 3;</code>
+     * @return The entity.
+     */
+    emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo getEntity();
+    /**
+     * <code>.CreateEntityInfo entity = 3;</code>
+     */
+    emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfoOrBuilder getEntityOrBuilder();
+
+    /**
+     * <code>bool is_destroy_when_disconnect = 8;</code>
+     * @return The isDestroyWhenDisconnect.
+     */
+    boolean getIsDestroyWhenDisconnect();
+
+    /**
      * <code>.CreateReason reason = 11;</code>
      * @return The enum numeric value on the wire for reason.
      */
@@ -28,32 +49,11 @@ public final class SceneCreateEntityReqOuterClass {
      * @return The reason.
      */
     emu.grasscutter.net.proto.CreateReasonOuterClass.CreateReason getReason();
-
-    /**
-     * <code>.CreateEntityInfo entity = 14;</code>
-     * @return Whether the entity field is set.
-     */
-    boolean hasEntity();
-    /**
-     * <code>.CreateEntityInfo entity = 14;</code>
-     * @return The entity.
-     */
-    emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo getEntity();
-    /**
-     * <code>.CreateEntityInfo entity = 14;</code>
-     */
-    emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfoOrBuilder getEntityOrBuilder();
-
-    /**
-     * <code>bool is_destroy_when_disconnect = 3;</code>
-     * @return The isDestroyWhenDisconnect.
-     */
-    boolean getIsDestroyWhenDisconnect();
   }
   /**
    * <pre>
-   * Name: KAGBMEDMOLA
-   * CmdId: 241
+   * CmdId: 220
+   * Obf: BBMIAMJBHKA
    * </pre>
    *
    * Protobuf type {@code SceneCreateEntityReq}
@@ -101,18 +101,7 @@ public final class SceneCreateEntityReqOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              isDestroyWhenDisconnect_ = input.readBool();
-              break;
-            }
-            case 88: {
-              int rawValue = input.readEnum();
-
-              reason_ = rawValue;
-              break;
-            }
-            case 114: {
+            case 26: {
               emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo.Builder subBuilder = null;
               if (entity_ != null) {
                 subBuilder = entity_.toBuilder();
@@ -123,6 +112,17 @@ public final class SceneCreateEntityReqOuterClass {
                 entity_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 64: {
+
+              isDestroyWhenDisconnect_ = input.readBool();
+              break;
+            }
+            case 88: {
+              int rawValue = input.readEnum();
+
+              reason_ = rawValue;
               break;
             }
             default: {
@@ -157,6 +157,43 @@ public final class SceneCreateEntityReqOuterClass {
               emu.grasscutter.net.proto.SceneCreateEntityReqOuterClass.SceneCreateEntityReq.class, emu.grasscutter.net.proto.SceneCreateEntityReqOuterClass.SceneCreateEntityReq.Builder.class);
     }
 
+    public static final int ENTITY_FIELD_NUMBER = 3;
+    private emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo entity_;
+    /**
+     * <code>.CreateEntityInfo entity = 3;</code>
+     * @return Whether the entity field is set.
+     */
+    @java.lang.Override
+    public boolean hasEntity() {
+      return entity_ != null;
+    }
+    /**
+     * <code>.CreateEntityInfo entity = 3;</code>
+     * @return The entity.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo getEntity() {
+      return entity_ == null ? emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo.getDefaultInstance() : entity_;
+    }
+    /**
+     * <code>.CreateEntityInfo entity = 3;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfoOrBuilder getEntityOrBuilder() {
+      return getEntity();
+    }
+
+    public static final int IS_DESTROY_WHEN_DISCONNECT_FIELD_NUMBER = 8;
+    private boolean isDestroyWhenDisconnect_;
+    /**
+     * <code>bool is_destroy_when_disconnect = 8;</code>
+     * @return The isDestroyWhenDisconnect.
+     */
+    @java.lang.Override
+    public boolean getIsDestroyWhenDisconnect() {
+      return isDestroyWhenDisconnect_;
+    }
+
     public static final int REASON_FIELD_NUMBER = 11;
     private int reason_;
     /**
@@ -176,43 +213,6 @@ public final class SceneCreateEntityReqOuterClass {
       return result == null ? emu.grasscutter.net.proto.CreateReasonOuterClass.CreateReason.UNRECOGNIZED : result;
     }
 
-    public static final int ENTITY_FIELD_NUMBER = 14;
-    private emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo entity_;
-    /**
-     * <code>.CreateEntityInfo entity = 14;</code>
-     * @return Whether the entity field is set.
-     */
-    @java.lang.Override
-    public boolean hasEntity() {
-      return entity_ != null;
-    }
-    /**
-     * <code>.CreateEntityInfo entity = 14;</code>
-     * @return The entity.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo getEntity() {
-      return entity_ == null ? emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo.getDefaultInstance() : entity_;
-    }
-    /**
-     * <code>.CreateEntityInfo entity = 14;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfoOrBuilder getEntityOrBuilder() {
-      return getEntity();
-    }
-
-    public static final int IS_DESTROY_WHEN_DISCONNECT_FIELD_NUMBER = 3;
-    private boolean isDestroyWhenDisconnect_;
-    /**
-     * <code>bool is_destroy_when_disconnect = 3;</code>
-     * @return The isDestroyWhenDisconnect.
-     */
-    @java.lang.Override
-    public boolean getIsDestroyWhenDisconnect() {
-      return isDestroyWhenDisconnect_;
-    }
-
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -227,14 +227,14 @@ public final class SceneCreateEntityReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (entity_ != null) {
+        output.writeMessage(3, getEntity());
+      }
       if (isDestroyWhenDisconnect_ != false) {
-        output.writeBool(3, isDestroyWhenDisconnect_);
+        output.writeBool(8, isDestroyWhenDisconnect_);
       }
       if (reason_ != emu.grasscutter.net.proto.CreateReasonOuterClass.CreateReason.CREATE_NONE.getNumber()) {
         output.writeEnum(11, reason_);
-      }
-      if (entity_ != null) {
-        output.writeMessage(14, getEntity());
       }
       unknownFields.writeTo(output);
     }
@@ -245,17 +245,17 @@ public final class SceneCreateEntityReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (entity_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(3, getEntity());
+      }
       if (isDestroyWhenDisconnect_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isDestroyWhenDisconnect_);
+          .computeBoolSize(8, isDestroyWhenDisconnect_);
       }
       if (reason_ != emu.grasscutter.net.proto.CreateReasonOuterClass.CreateReason.CREATE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(11, reason_);
-      }
-      if (entity_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, getEntity());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -272,7 +272,6 @@ public final class SceneCreateEntityReqOuterClass {
       }
       emu.grasscutter.net.proto.SceneCreateEntityReqOuterClass.SceneCreateEntityReq other = (emu.grasscutter.net.proto.SceneCreateEntityReqOuterClass.SceneCreateEntityReq) obj;
 
-      if (reason_ != other.reason_) return false;
       if (hasEntity() != other.hasEntity()) return false;
       if (hasEntity()) {
         if (!getEntity()
@@ -280,6 +279,7 @@ public final class SceneCreateEntityReqOuterClass {
       }
       if (getIsDestroyWhenDisconnect()
           != other.getIsDestroyWhenDisconnect()) return false;
+      if (reason_ != other.reason_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -291,8 +291,6 @@ public final class SceneCreateEntityReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + REASON_FIELD_NUMBER;
-      hash = (53 * hash) + reason_;
       if (hasEntity()) {
         hash = (37 * hash) + ENTITY_FIELD_NUMBER;
         hash = (53 * hash) + getEntity().hashCode();
@@ -300,6 +298,8 @@ public final class SceneCreateEntityReqOuterClass {
       hash = (37 * hash) + IS_DESTROY_WHEN_DISCONNECT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsDestroyWhenDisconnect());
+      hash = (37 * hash) + REASON_FIELD_NUMBER;
+      hash = (53 * hash) + reason_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -397,8 +397,8 @@ public final class SceneCreateEntityReqOuterClass {
     }
     /**
      * <pre>
-     * Name: KAGBMEDMOLA
-     * CmdId: 241
+     * CmdId: 220
+     * Obf: BBMIAMJBHKA
      * </pre>
      *
      * Protobuf type {@code SceneCreateEntityReq}
@@ -438,8 +438,6 @@ public final class SceneCreateEntityReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        reason_ = 0;
-
         if (entityBuilder_ == null) {
           entity_ = null;
         } else {
@@ -447,6 +445,8 @@ public final class SceneCreateEntityReqOuterClass {
           entityBuilder_ = null;
         }
         isDestroyWhenDisconnect_ = false;
+
+        reason_ = 0;
 
         return this;
       }
@@ -474,13 +474,13 @@ public final class SceneCreateEntityReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneCreateEntityReqOuterClass.SceneCreateEntityReq buildPartial() {
         emu.grasscutter.net.proto.SceneCreateEntityReqOuterClass.SceneCreateEntityReq result = new emu.grasscutter.net.proto.SceneCreateEntityReqOuterClass.SceneCreateEntityReq(this);
-        result.reason_ = reason_;
         if (entityBuilder_ == null) {
           result.entity_ = entity_;
         } else {
           result.entity_ = entityBuilder_.build();
         }
         result.isDestroyWhenDisconnect_ = isDestroyWhenDisconnect_;
+        result.reason_ = reason_;
         onBuilt();
         return result;
       }
@@ -529,14 +529,14 @@ public final class SceneCreateEntityReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneCreateEntityReqOuterClass.SceneCreateEntityReq other) {
         if (other == emu.grasscutter.net.proto.SceneCreateEntityReqOuterClass.SceneCreateEntityReq.getDefaultInstance()) return this;
-        if (other.reason_ != 0) {
-          setReasonValue(other.getReasonValue());
-        }
         if (other.hasEntity()) {
           mergeEntity(other.getEntity());
         }
         if (other.getIsDestroyWhenDisconnect() != false) {
           setIsDestroyWhenDisconnect(other.getIsDestroyWhenDisconnect());
+        }
+        if (other.reason_ != 0) {
+          setReasonValue(other.getReasonValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -564,6 +564,156 @@ public final class SceneCreateEntityReqOuterClass {
             mergeFrom(parsedMessage);
           }
         }
+        return this;
+      }
+
+      private emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo entity_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo, emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo.Builder, emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfoOrBuilder> entityBuilder_;
+      /**
+       * <code>.CreateEntityInfo entity = 3;</code>
+       * @return Whether the entity field is set.
+       */
+      public boolean hasEntity() {
+        return entityBuilder_ != null || entity_ != null;
+      }
+      /**
+       * <code>.CreateEntityInfo entity = 3;</code>
+       * @return The entity.
+       */
+      public emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo getEntity() {
+        if (entityBuilder_ == null) {
+          return entity_ == null ? emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo.getDefaultInstance() : entity_;
+        } else {
+          return entityBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.CreateEntityInfo entity = 3;</code>
+       */
+      public Builder setEntity(emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo value) {
+        if (entityBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          entity_ = value;
+          onChanged();
+        } else {
+          entityBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.CreateEntityInfo entity = 3;</code>
+       */
+      public Builder setEntity(
+          emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo.Builder builderForValue) {
+        if (entityBuilder_ == null) {
+          entity_ = builderForValue.build();
+          onChanged();
+        } else {
+          entityBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.CreateEntityInfo entity = 3;</code>
+       */
+      public Builder mergeEntity(emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo value) {
+        if (entityBuilder_ == null) {
+          if (entity_ != null) {
+            entity_ =
+              emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo.newBuilder(entity_).mergeFrom(value).buildPartial();
+          } else {
+            entity_ = value;
+          }
+          onChanged();
+        } else {
+          entityBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.CreateEntityInfo entity = 3;</code>
+       */
+      public Builder clearEntity() {
+        if (entityBuilder_ == null) {
+          entity_ = null;
+          onChanged();
+        } else {
+          entity_ = null;
+          entityBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.CreateEntityInfo entity = 3;</code>
+       */
+      public emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo.Builder getEntityBuilder() {
+        
+        onChanged();
+        return getEntityFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.CreateEntityInfo entity = 3;</code>
+       */
+      public emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfoOrBuilder getEntityOrBuilder() {
+        if (entityBuilder_ != null) {
+          return entityBuilder_.getMessageOrBuilder();
+        } else {
+          return entity_ == null ?
+              emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo.getDefaultInstance() : entity_;
+        }
+      }
+      /**
+       * <code>.CreateEntityInfo entity = 3;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo, emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo.Builder, emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfoOrBuilder> 
+          getEntityFieldBuilder() {
+        if (entityBuilder_ == null) {
+          entityBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo, emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo.Builder, emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfoOrBuilder>(
+                  getEntity(),
+                  getParentForChildren(),
+                  isClean());
+          entity_ = null;
+        }
+        return entityBuilder_;
+      }
+
+      private boolean isDestroyWhenDisconnect_ ;
+      /**
+       * <code>bool is_destroy_when_disconnect = 8;</code>
+       * @return The isDestroyWhenDisconnect.
+       */
+      @java.lang.Override
+      public boolean getIsDestroyWhenDisconnect() {
+        return isDestroyWhenDisconnect_;
+      }
+      /**
+       * <code>bool is_destroy_when_disconnect = 8;</code>
+       * @param value The isDestroyWhenDisconnect to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsDestroyWhenDisconnect(boolean value) {
+        
+        isDestroyWhenDisconnect_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_destroy_when_disconnect = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsDestroyWhenDisconnect() {
+        
+        isDestroyWhenDisconnect_ = false;
+        onChanged();
         return this;
       }
 
@@ -617,156 +767,6 @@ public final class SceneCreateEntityReqOuterClass {
       public Builder clearReason() {
         
         reason_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo entity_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo, emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo.Builder, emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfoOrBuilder> entityBuilder_;
-      /**
-       * <code>.CreateEntityInfo entity = 14;</code>
-       * @return Whether the entity field is set.
-       */
-      public boolean hasEntity() {
-        return entityBuilder_ != null || entity_ != null;
-      }
-      /**
-       * <code>.CreateEntityInfo entity = 14;</code>
-       * @return The entity.
-       */
-      public emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo getEntity() {
-        if (entityBuilder_ == null) {
-          return entity_ == null ? emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo.getDefaultInstance() : entity_;
-        } else {
-          return entityBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.CreateEntityInfo entity = 14;</code>
-       */
-      public Builder setEntity(emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo value) {
-        if (entityBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          entity_ = value;
-          onChanged();
-        } else {
-          entityBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.CreateEntityInfo entity = 14;</code>
-       */
-      public Builder setEntity(
-          emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo.Builder builderForValue) {
-        if (entityBuilder_ == null) {
-          entity_ = builderForValue.build();
-          onChanged();
-        } else {
-          entityBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.CreateEntityInfo entity = 14;</code>
-       */
-      public Builder mergeEntity(emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo value) {
-        if (entityBuilder_ == null) {
-          if (entity_ != null) {
-            entity_ =
-              emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo.newBuilder(entity_).mergeFrom(value).buildPartial();
-          } else {
-            entity_ = value;
-          }
-          onChanged();
-        } else {
-          entityBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.CreateEntityInfo entity = 14;</code>
-       */
-      public Builder clearEntity() {
-        if (entityBuilder_ == null) {
-          entity_ = null;
-          onChanged();
-        } else {
-          entity_ = null;
-          entityBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.CreateEntityInfo entity = 14;</code>
-       */
-      public emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo.Builder getEntityBuilder() {
-        
-        onChanged();
-        return getEntityFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.CreateEntityInfo entity = 14;</code>
-       */
-      public emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfoOrBuilder getEntityOrBuilder() {
-        if (entityBuilder_ != null) {
-          return entityBuilder_.getMessageOrBuilder();
-        } else {
-          return entity_ == null ?
-              emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo.getDefaultInstance() : entity_;
-        }
-      }
-      /**
-       * <code>.CreateEntityInfo entity = 14;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo, emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo.Builder, emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfoOrBuilder> 
-          getEntityFieldBuilder() {
-        if (entityBuilder_ == null) {
-          entityBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo, emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo.Builder, emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfoOrBuilder>(
-                  getEntity(),
-                  getParentForChildren(),
-                  isClean());
-          entity_ = null;
-        }
-        return entityBuilder_;
-      }
-
-      private boolean isDestroyWhenDisconnect_ ;
-      /**
-       * <code>bool is_destroy_when_disconnect = 3;</code>
-       * @return The isDestroyWhenDisconnect.
-       */
-      @java.lang.Override
-      public boolean getIsDestroyWhenDisconnect() {
-        return isDestroyWhenDisconnect_;
-      }
-      /**
-       * <code>bool is_destroy_when_disconnect = 3;</code>
-       * @param value The isDestroyWhenDisconnect to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsDestroyWhenDisconnect(boolean value) {
-        
-        isDestroyWhenDisconnect_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_destroy_when_disconnect = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsDestroyWhenDisconnect() {
-        
-        isDestroyWhenDisconnect_ = false;
         onChanged();
         return this;
       }
@@ -839,9 +839,9 @@ public final class SceneCreateEntityReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\032SceneCreateEntityReq.proto\032\026CreateEnti" +
       "tyInfo.proto\032\022CreateReason.proto\"|\n\024Scen" +
-      "eCreateEntityReq\022\035\n\006reason\030\013 \001(\0162\r.Creat" +
-      "eReason\022!\n\006entity\030\016 \001(\0132\021.CreateEntityIn" +
-      "fo\022\"\n\032is_destroy_when_disconnect\030\003 \001(\010B\033" +
+      "eCreateEntityReq\022!\n\006entity\030\003 \001(\0132\021.Creat" +
+      "eEntityInfo\022\"\n\032is_destroy_when_disconnec" +
+      "t\030\010 \001(\010\022\035\n\006reason\030\013 \001(\0162\r.CreateReasonB\033" +
       "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -855,7 +855,7 @@ public final class SceneCreateEntityReqOuterClass {
     internal_static_SceneCreateEntityReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneCreateEntityReq_descriptor,
-        new java.lang.String[] { "Reason", "Entity", "IsDestroyWhenDisconnect", });
+        new java.lang.String[] { "Entity", "IsDestroyWhenDisconnect", "Reason", });
     emu.grasscutter.net.proto.CreateEntityInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.CreateReasonOuterClass.getDescriptor();
   }

@@ -19,21 +19,21 @@ public final class AdjustWorldLevelReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 GKPAJDAOHDN = 10;</code>
-     * @return The gKPAJDAOHDN.
+     * <code>uint32 ACFMMFELEHP = 14;</code>
+     * @return The aCFMMFELEHP.
      */
-    int getGKPAJDAOHDN();
+    int getACFMMFELEHP();
 
     /**
-     * <code>uint32 HFANGCIKHFI = 6;</code>
-     * @return The hFANGCIKHFI.
+     * <code>uint32 OLDCBGGJLDH = 9;</code>
+     * @return The oLDCBGGJLDH.
      */
-    int getHFANGCIKHFI();
+    int getOLDCBGGJLDH();
   }
   /**
    * <pre>
-   * Name: EDAOBIJNNKG
-   * CmdId: 132
+   * CmdId: 190
+   * Obf: LOENDAOINPF
    * </pre>
    *
    * Protobuf type {@code AdjustWorldLevelReq}
@@ -80,14 +80,14 @@ public final class AdjustWorldLevelReqOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 72: {
 
-              hFANGCIKHFI_ = input.readUInt32();
+              oLDCBGGJLDH_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 112: {
 
-              gKPAJDAOHDN_ = input.readUInt32();
+              aCFMMFELEHP_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,26 +122,26 @@ public final class AdjustWorldLevelReqOuterClass {
               emu.grasscutter.net.proto.AdjustWorldLevelReqOuterClass.AdjustWorldLevelReq.class, emu.grasscutter.net.proto.AdjustWorldLevelReqOuterClass.AdjustWorldLevelReq.Builder.class);
     }
 
-    public static final int GKPAJDAOHDN_FIELD_NUMBER = 10;
-    private int gKPAJDAOHDN_;
+    public static final int ACFMMFELEHP_FIELD_NUMBER = 14;
+    private int aCFMMFELEHP_;
     /**
-     * <code>uint32 GKPAJDAOHDN = 10;</code>
-     * @return The gKPAJDAOHDN.
+     * <code>uint32 ACFMMFELEHP = 14;</code>
+     * @return The aCFMMFELEHP.
      */
     @java.lang.Override
-    public int getGKPAJDAOHDN() {
-      return gKPAJDAOHDN_;
+    public int getACFMMFELEHP() {
+      return aCFMMFELEHP_;
     }
 
-    public static final int HFANGCIKHFI_FIELD_NUMBER = 6;
-    private int hFANGCIKHFI_;
+    public static final int OLDCBGGJLDH_FIELD_NUMBER = 9;
+    private int oLDCBGGJLDH_;
     /**
-     * <code>uint32 HFANGCIKHFI = 6;</code>
-     * @return The hFANGCIKHFI.
+     * <code>uint32 OLDCBGGJLDH = 9;</code>
+     * @return The oLDCBGGJLDH.
      */
     @java.lang.Override
-    public int getHFANGCIKHFI() {
-      return hFANGCIKHFI_;
+    public int getOLDCBGGJLDH() {
+      return oLDCBGGJLDH_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -158,11 +158,11 @@ public final class AdjustWorldLevelReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (hFANGCIKHFI_ != 0) {
-        output.writeUInt32(6, hFANGCIKHFI_);
+      if (oLDCBGGJLDH_ != 0) {
+        output.writeUInt32(9, oLDCBGGJLDH_);
       }
-      if (gKPAJDAOHDN_ != 0) {
-        output.writeUInt32(10, gKPAJDAOHDN_);
+      if (aCFMMFELEHP_ != 0) {
+        output.writeUInt32(14, aCFMMFELEHP_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class AdjustWorldLevelReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (hFANGCIKHFI_ != 0) {
+      if (oLDCBGGJLDH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, hFANGCIKHFI_);
+          .computeUInt32Size(9, oLDCBGGJLDH_);
       }
-      if (gKPAJDAOHDN_ != 0) {
+      if (aCFMMFELEHP_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, gKPAJDAOHDN_);
+          .computeUInt32Size(14, aCFMMFELEHP_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +196,10 @@ public final class AdjustWorldLevelReqOuterClass {
       }
       emu.grasscutter.net.proto.AdjustWorldLevelReqOuterClass.AdjustWorldLevelReq other = (emu.grasscutter.net.proto.AdjustWorldLevelReqOuterClass.AdjustWorldLevelReq) obj;
 
-      if (getGKPAJDAOHDN()
-          != other.getGKPAJDAOHDN()) return false;
-      if (getHFANGCIKHFI()
-          != other.getHFANGCIKHFI()) return false;
+      if (getACFMMFELEHP()
+          != other.getACFMMFELEHP()) return false;
+      if (getOLDCBGGJLDH()
+          != other.getOLDCBGGJLDH()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +211,10 @@ public final class AdjustWorldLevelReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + GKPAJDAOHDN_FIELD_NUMBER;
-      hash = (53 * hash) + getGKPAJDAOHDN();
-      hash = (37 * hash) + HFANGCIKHFI_FIELD_NUMBER;
-      hash = (53 * hash) + getHFANGCIKHFI();
+      hash = (37 * hash) + ACFMMFELEHP_FIELD_NUMBER;
+      hash = (53 * hash) + getACFMMFELEHP();
+      hash = (37 * hash) + OLDCBGGJLDH_FIELD_NUMBER;
+      hash = (53 * hash) + getOLDCBGGJLDH();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +312,8 @@ public final class AdjustWorldLevelReqOuterClass {
     }
     /**
      * <pre>
-     * Name: EDAOBIJNNKG
-     * CmdId: 132
+     * CmdId: 190
+     * Obf: LOENDAOINPF
      * </pre>
      *
      * Protobuf type {@code AdjustWorldLevelReq}
@@ -353,9 +353,9 @@ public final class AdjustWorldLevelReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        gKPAJDAOHDN_ = 0;
+        aCFMMFELEHP_ = 0;
 
-        hFANGCIKHFI_ = 0;
+        oLDCBGGJLDH_ = 0;
 
         return this;
       }
@@ -383,8 +383,8 @@ public final class AdjustWorldLevelReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AdjustWorldLevelReqOuterClass.AdjustWorldLevelReq buildPartial() {
         emu.grasscutter.net.proto.AdjustWorldLevelReqOuterClass.AdjustWorldLevelReq result = new emu.grasscutter.net.proto.AdjustWorldLevelReqOuterClass.AdjustWorldLevelReq(this);
-        result.gKPAJDAOHDN_ = gKPAJDAOHDN_;
-        result.hFANGCIKHFI_ = hFANGCIKHFI_;
+        result.aCFMMFELEHP_ = aCFMMFELEHP_;
+        result.oLDCBGGJLDH_ = oLDCBGGJLDH_;
         onBuilt();
         return result;
       }
@@ -433,11 +433,11 @@ public final class AdjustWorldLevelReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AdjustWorldLevelReqOuterClass.AdjustWorldLevelReq other) {
         if (other == emu.grasscutter.net.proto.AdjustWorldLevelReqOuterClass.AdjustWorldLevelReq.getDefaultInstance()) return this;
-        if (other.getGKPAJDAOHDN() != 0) {
-          setGKPAJDAOHDN(other.getGKPAJDAOHDN());
+        if (other.getACFMMFELEHP() != 0) {
+          setACFMMFELEHP(other.getACFMMFELEHP());
         }
-        if (other.getHFANGCIKHFI() != 0) {
-          setHFANGCIKHFI(other.getHFANGCIKHFI());
+        if (other.getOLDCBGGJLDH() != 0) {
+          setOLDCBGGJLDH(other.getOLDCBGGJLDH());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,64 +468,64 @@ public final class AdjustWorldLevelReqOuterClass {
         return this;
       }
 
-      private int gKPAJDAOHDN_ ;
+      private int aCFMMFELEHP_ ;
       /**
-       * <code>uint32 GKPAJDAOHDN = 10;</code>
-       * @return The gKPAJDAOHDN.
+       * <code>uint32 ACFMMFELEHP = 14;</code>
+       * @return The aCFMMFELEHP.
        */
       @java.lang.Override
-      public int getGKPAJDAOHDN() {
-        return gKPAJDAOHDN_;
+      public int getACFMMFELEHP() {
+        return aCFMMFELEHP_;
       }
       /**
-       * <code>uint32 GKPAJDAOHDN = 10;</code>
-       * @param value The gKPAJDAOHDN to set.
+       * <code>uint32 ACFMMFELEHP = 14;</code>
+       * @param value The aCFMMFELEHP to set.
        * @return This builder for chaining.
        */
-      public Builder setGKPAJDAOHDN(int value) {
+      public Builder setACFMMFELEHP(int value) {
         
-        gKPAJDAOHDN_ = value;
+        aCFMMFELEHP_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 GKPAJDAOHDN = 10;</code>
+       * <code>uint32 ACFMMFELEHP = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGKPAJDAOHDN() {
+      public Builder clearACFMMFELEHP() {
         
-        gKPAJDAOHDN_ = 0;
+        aCFMMFELEHP_ = 0;
         onChanged();
         return this;
       }
 
-      private int hFANGCIKHFI_ ;
+      private int oLDCBGGJLDH_ ;
       /**
-       * <code>uint32 HFANGCIKHFI = 6;</code>
-       * @return The hFANGCIKHFI.
+       * <code>uint32 OLDCBGGJLDH = 9;</code>
+       * @return The oLDCBGGJLDH.
        */
       @java.lang.Override
-      public int getHFANGCIKHFI() {
-        return hFANGCIKHFI_;
+      public int getOLDCBGGJLDH() {
+        return oLDCBGGJLDH_;
       }
       /**
-       * <code>uint32 HFANGCIKHFI = 6;</code>
-       * @param value The hFANGCIKHFI to set.
+       * <code>uint32 OLDCBGGJLDH = 9;</code>
+       * @param value The oLDCBGGJLDH to set.
        * @return This builder for chaining.
        */
-      public Builder setHFANGCIKHFI(int value) {
+      public Builder setOLDCBGGJLDH(int value) {
         
-        hFANGCIKHFI_ = value;
+        oLDCBGGJLDH_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 HFANGCIKHFI = 6;</code>
+       * <code>uint32 OLDCBGGJLDH = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearHFANGCIKHFI() {
+      public Builder clearOLDCBGGJLDH() {
         
-        hFANGCIKHFI_ = 0;
+        oLDCBGGJLDH_ = 0;
         onChanged();
         return this;
       }
@@ -597,8 +597,8 @@ public final class AdjustWorldLevelReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031AdjustWorldLevelReq.proto\"?\n\023AdjustWor" +
-      "ldLevelReq\022\023\n\013GKPAJDAOHDN\030\n \001(\r\022\023\n\013HFANG" +
-      "CIKHFI\030\006 \001(\rB\033\n\031emu.grasscutter.net.prot" +
+      "ldLevelReq\022\023\n\013ACFMMFELEHP\030\016 \001(\r\022\023\n\013OLDCB" +
+      "GGJLDH\030\t \001(\rB\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -610,7 +610,7 @@ public final class AdjustWorldLevelReqOuterClass {
     internal_static_AdjustWorldLevelReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AdjustWorldLevelReq_descriptor,
-        new java.lang.String[] { "GKPAJDAOHDN", "HFANGCIKHFI", });
+        new java.lang.String[] { "ACFMMFELEHP", "OLDCBGGJLDH", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

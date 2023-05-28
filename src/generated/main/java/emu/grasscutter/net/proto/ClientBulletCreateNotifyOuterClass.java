@@ -26,8 +26,8 @@ public final class ClientBulletCreateNotifyOuterClass {
   }
   /**
    * <pre>
-   * Name: HEIOKBJKIMH
-   * CmdId: 94
+   * CmdId: 24
+   * Obf: EHMCALABOPM
    * </pre>
    *
    * Protobuf type {@code ClientBulletCreateNotify}
@@ -279,8 +279,8 @@ public final class ClientBulletCreateNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: HEIOKBJKIMH
-     * CmdId: 94
+     * CmdId: 24
+     * Obf: EHMCALABOPM
      * </pre>
      *
      * Protobuf type {@code ClientBulletCreateNotify}

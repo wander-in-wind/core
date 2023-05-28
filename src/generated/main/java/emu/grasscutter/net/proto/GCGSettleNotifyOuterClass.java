@@ -19,143 +19,139 @@ public final class GCGSettleNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *DELFEGPPGMK snooswap
-     * </pre>
-     *
-     * <code>uint32 game_id = 2;</code>
-     * @return The gameId.
-     */
-    int getGameId();
-
-    /**
-     * <pre>
-     *EJMHNAHNPOB snooswap
-     * </pre>
-     *
-     * <code>repeated uint32 finished_challenge_id_list = 11;</code>
+     * <code>repeated uint32 finished_challenge_id_list = 9;</code>
      * @return A list containing the finishedChallengeIdList.
      */
     java.util.List<java.lang.Integer> getFinishedChallengeIdListList();
     /**
-     * <pre>
-     *EJMHNAHNPOB snooswap
-     * </pre>
-     *
-     * <code>repeated uint32 finished_challenge_id_list = 11;</code>
+     * <code>repeated uint32 finished_challenge_id_list = 9;</code>
      * @return The count of finishedChallengeIdList.
      */
     int getFinishedChallengeIdListCount();
     /**
-     * <pre>
-     *EJMHNAHNPOB snooswap
-     * </pre>
-     *
-     * <code>repeated uint32 finished_challenge_id_list = 11;</code>
+     * <code>repeated uint32 finished_challenge_id_list = 9;</code>
      * @param index The index of the element to return.
      * @return The finishedChallengeIdList at the given index.
      */
     int getFinishedChallengeIdList(int index);
 
     /**
-     * <code>uint32 win_controller_id = 10;</code>
-     * @return The winControllerId.
-     */
-    int getWinControllerId();
-
-    /**
-     * <pre>
-     *HLJEJHHAICH snooswap
-     * </pre>
-     *
-     * <code>repeated uint32 forbid_finish_challenge_list = 8;</code>
-     * @return A list containing the forbidFinishChallengeList.
-     */
-    java.util.List<java.lang.Integer> getForbidFinishChallengeListList();
-    /**
-     * <pre>
-     *HLJEJHHAICH snooswap
-     * </pre>
-     *
-     * <code>repeated uint32 forbid_finish_challenge_list = 8;</code>
-     * @return The count of forbidFinishChallengeList.
-     */
-    int getForbidFinishChallengeListCount();
-    /**
-     * <pre>
-     *HLJEJHHAICH snooswap
-     * </pre>
-     *
-     * <code>repeated uint32 forbid_finish_challenge_list = 8;</code>
-     * @param index The index of the element to return.
-     * @return The forbidFinishChallengeList at the given index.
-     */
-    int getForbidFinishChallengeList(int index);
-
-    /**
-     * <code>bool is_win = 12;</code>
+     * <code>bool is_win = 4;</code>
      * @return The isWin.
      */
     boolean getIsWin();
 
     /**
-     * <code>repeated .ItemParam reward_item_list = 4;</code>
+     * <code>uint32 win_controller_id = 6;</code>
+     * @return The winControllerId.
+     */
+    int getWinControllerId();
+
+    /**
+     * <code>repeated .ItemParam reward_item_list = 1;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> 
         getRewardItemListList();
     /**
-     * <code>repeated .ItemParam reward_item_list = 4;</code>
+     * <code>repeated .ItemParam reward_item_list = 1;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getRewardItemList(int index);
     /**
-     * <code>repeated .ItemParam reward_item_list = 4;</code>
+     * <code>repeated .ItemParam reward_item_list = 1;</code>
      */
     int getRewardItemListCount();
     /**
-     * <code>repeated .ItemParam reward_item_list = 4;</code>
+     * <code>repeated .ItemParam reward_item_list = 1;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
         getRewardItemListOrBuilderList();
     /**
-     * <code>repeated .ItemParam reward_item_list = 4;</code>
+     * <code>repeated .ItemParam reward_item_list = 1;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getRewardItemListOrBuilder(
         int index);
 
     /**
-     * <pre>
-     *FMOEOCJBOPN AECBJKLBGFK snooswap
-     * </pre>
-     *
-     * <code>.GCGGameBusinessType business_type = 15;</code>
-     * @return The enum numeric value on the wire for businessType.
+     * <code>uint32 OPGBGHPHELB = 11;</code>
+     * @return The oPGBGHPHELB.
      */
-    int getBusinessTypeValue();
-    /**
-     * <pre>
-     *FMOEOCJBOPN AECBJKLBGFK snooswap
-     * </pre>
-     *
-     * <code>.GCGGameBusinessType business_type = 15;</code>
-     * @return The businessType.
-     */
-    emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType getBusinessType();
+    int getOPGBGHPHELB();
 
     /**
-     * <code>.GCGEndReason reason = 7;</code>
+     * <code>repeated uint32 CGOPKBDOOFH = 14;</code>
+     * @return A list containing the cGOPKBDOOFH.
+     */
+    java.util.List<java.lang.Integer> getCGOPKBDOOFHList();
+    /**
+     * <code>repeated uint32 CGOPKBDOOFH = 14;</code>
+     * @return The count of cGOPKBDOOFH.
+     */
+    int getCGOPKBDOOFHCount();
+    /**
+     * <code>repeated uint32 CGOPKBDOOFH = 14;</code>
+     * @param index The index of the element to return.
+     * @return The cGOPKBDOOFH at the given index.
+     */
+    int getCGOPKBDOOFH(int index);
+
+    /**
+     * <code>.LABBALOFHKB LNPHMHEEEOL = 12;</code>
+     * @return The enum numeric value on the wire for lNPHMHEEEOL.
+     */
+    int getLNPHMHEEEOLValue();
+    /**
+     * <code>.LABBALOFHKB LNPHMHEEEOL = 12;</code>
+     * @return The lNPHMHEEEOL.
+     */
+    emu.grasscutter.net.proto.LABBALOFHKBOuterClass.LABBALOFHKB getLNPHMHEEEOL();
+
+    /**
+     * <code>.GCGEndReason reason = 13;</code>
      * @return The enum numeric value on the wire for reason.
      */
     int getReasonValue();
     /**
-     * <code>.GCGEndReason reason = 7;</code>
+     * <code>.GCGEndReason reason = 13;</code>
      * @return The reason.
      */
     emu.grasscutter.net.proto.GCGEndReasonOuterClass.GCGEndReason getReason();
+
+    /**
+     * <code>.EOIJDJGCEBA DODGJCLOEGH = 739;</code>
+     * @return Whether the dODGJCLOEGH field is set.
+     */
+    boolean hasDODGJCLOEGH();
+    /**
+     * <code>.EOIJDJGCEBA DODGJCLOEGH = 739;</code>
+     * @return The dODGJCLOEGH.
+     */
+    emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBA getDODGJCLOEGH();
+    /**
+     * <code>.EOIJDJGCEBA DODGJCLOEGH = 739;</code>
+     */
+    emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBAOrBuilder getDODGJCLOEGHOrBuilder();
+
+    /**
+     * <code>.CKGOHJGMCCG GKPBPPIGNKI = 482;</code>
+     * @return Whether the gKPBPPIGNKI field is set.
+     */
+    boolean hasGKPBPPIGNKI();
+    /**
+     * <code>.CKGOHJGMCCG GKPBPPIGNKI = 482;</code>
+     * @return The gKPBPPIGNKI.
+     */
+    emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCG getGKPBPPIGNKI();
+    /**
+     * <code>.CKGOHJGMCCG GKPBPPIGNKI = 482;</code>
+     */
+    emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCGOrBuilder getGKPBPPIGNKIOrBuilder();
+
+    public emu.grasscutter.net.proto.GCGSettleNotifyOuterClass.GCGSettleNotify.JJMHHOHBMNPCase getJJMHHOHBMNPCase();
   }
   /**
    * <pre>
-   * Name: JNPBOGLAGMK
-   * CmdId: 7370
+   * CmdId: 7359
+   * Obf: MHAEEPPGNLN
    * </pre>
    *
    * Protobuf type {@code GCGSettleNotify}
@@ -171,9 +167,9 @@ public final class GCGSettleNotifyOuterClass {
     }
     private GCGSettleNotify() {
       finishedChallengeIdList_ = emptyIntList();
-      forbidFinishChallengeList_ = emptyIntList();
       rewardItemList_ = java.util.Collections.emptyList();
-      businessType_ = 0;
+      cGOPKBDOOFH_ = emptyIntList();
+      lNPHMHEEEOL_ = 0;
       reason_ = 0;
     }
 
@@ -208,53 +204,26 @@ public final class GCGSettleNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              gameId_ = input.readUInt32();
-              break;
-            }
-            case 34: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+            case 10: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 rewardItemList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>();
-                mutable_bitField0_ |= 0x00000004;
+                mutable_bitField0_ |= 0x00000002;
               }
               rewardItemList_.add(
                   input.readMessage(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.parser(), extensionRegistry));
               break;
             }
-            case 56: {
-              int rawValue = input.readEnum();
+            case 32: {
 
-              reason_ = rawValue;
+              isWin_ = input.readBool();
               break;
             }
-            case 64: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                forbidFinishChallengeList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              forbidFinishChallengeList_.addInt(input.readUInt32());
-              break;
-            }
-            case 66: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                forbidFinishChallengeList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                forbidFinishChallengeList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 80: {
+            case 48: {
 
               winControllerId_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 72: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 finishedChallengeIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -262,7 +231,7 @@ public final class GCGSettleNotifyOuterClass {
               finishedChallengeIdList_.addInt(input.readUInt32());
               break;
             }
-            case 90: {
+            case 74: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -275,15 +244,70 @@ public final class GCGSettleNotifyOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 96: {
+            case 88: {
 
-              isWin_ = input.readBool();
+              oPGBGHPHELB_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 96: {
               int rawValue = input.readEnum();
 
-              businessType_ = rawValue;
+              lNPHMHEEEOL_ = rawValue;
+              break;
+            }
+            case 104: {
+              int rawValue = input.readEnum();
+
+              reason_ = rawValue;
+              break;
+            }
+            case 112: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+                cGOPKBDOOFH_ = newIntList();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              cGOPKBDOOFH_.addInt(input.readUInt32());
+              break;
+            }
+            case 114: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
+                cGOPKBDOOFH_ = newIntList();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                cGOPKBDOOFH_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 3858: {
+              emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCG.Builder subBuilder = null;
+              if (jJMHHOHBMNPCase_ == 482) {
+                subBuilder = ((emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCG) jJMHHOHBMNP_).toBuilder();
+              }
+              jJMHHOHBMNP_ =
+                  input.readMessage(emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCG.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCG) jJMHHOHBMNP_);
+                jJMHHOHBMNP_ = subBuilder.buildPartial();
+              }
+              jJMHHOHBMNPCase_ = 482;
+              break;
+            }
+            case 5914: {
+              emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBA.Builder subBuilder = null;
+              if (jJMHHOHBMNPCase_ == 739) {
+                subBuilder = ((emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBA) jJMHHOHBMNP_).toBuilder();
+              }
+              jJMHHOHBMNP_ =
+                  input.readMessage(emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBA.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBA) jJMHHOHBMNP_);
+                jJMHHOHBMNP_ = subBuilder.buildPartial();
+              }
+              jJMHHOHBMNPCase_ = 739;
               break;
             }
             default: {
@@ -301,14 +325,14 @@ public final class GCGSettleNotifyOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          rewardItemList_ = java.util.Collections.unmodifiableList(rewardItemList_);
-        }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          forbidFinishChallengeList_.makeImmutable(); // C
+          rewardItemList_ = java.util.Collections.unmodifiableList(rewardItemList_);
         }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
           finishedChallengeIdList_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000004) != 0)) {
+          cGOPKBDOOFH_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -327,29 +351,51 @@ public final class GCGSettleNotifyOuterClass {
               emu.grasscutter.net.proto.GCGSettleNotifyOuterClass.GCGSettleNotify.class, emu.grasscutter.net.proto.GCGSettleNotifyOuterClass.GCGSettleNotify.Builder.class);
     }
 
-    public static final int GAME_ID_FIELD_NUMBER = 2;
-    private int gameId_;
-    /**
-     * <pre>
-     *DELFEGPPGMK snooswap
-     * </pre>
-     *
-     * <code>uint32 game_id = 2;</code>
-     * @return The gameId.
-     */
-    @java.lang.Override
-    public int getGameId() {
-      return gameId_;
+    private int jJMHHOHBMNPCase_ = 0;
+    private java.lang.Object jJMHHOHBMNP_;
+    public enum JJMHHOHBMNPCase
+        implements com.google.protobuf.Internal.EnumLite,
+            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+      DODGJCLOEGH(739),
+      GKPBPPIGNKI(482),
+      JJMHHOHBMNP_NOT_SET(0);
+      private final int value;
+      private JJMHHOHBMNPCase(int value) {
+        this.value = value;
+      }
+      /**
+       * @param value The number of the enum to look for.
+       * @return The enum associated with the given number.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static JJMHHOHBMNPCase valueOf(int value) {
+        return forNumber(value);
+      }
+
+      public static JJMHHOHBMNPCase forNumber(int value) {
+        switch (value) {
+          case 739: return DODGJCLOEGH;
+          case 482: return GKPBPPIGNKI;
+          case 0: return JJMHHOHBMNP_NOT_SET;
+          default: return null;
+        }
+      }
+      public int getNumber() {
+        return this.value;
+      }
+    };
+
+    public JJMHHOHBMNPCase
+    getJJMHHOHBMNPCase() {
+      return JJMHHOHBMNPCase.forNumber(
+          jJMHHOHBMNPCase_);
     }
 
-    public static final int FINISHED_CHALLENGE_ID_LIST_FIELD_NUMBER = 11;
+    public static final int FINISHED_CHALLENGE_ID_LIST_FIELD_NUMBER = 9;
     private com.google.protobuf.Internal.IntList finishedChallengeIdList_;
     /**
-     * <pre>
-     *EJMHNAHNPOB snooswap
-     * </pre>
-     *
-     * <code>repeated uint32 finished_challenge_id_list = 11;</code>
+     * <code>repeated uint32 finished_challenge_id_list = 9;</code>
      * @return A list containing the finishedChallengeIdList.
      */
     @java.lang.Override
@@ -358,22 +404,14 @@ public final class GCGSettleNotifyOuterClass {
       return finishedChallengeIdList_;
     }
     /**
-     * <pre>
-     *EJMHNAHNPOB snooswap
-     * </pre>
-     *
-     * <code>repeated uint32 finished_challenge_id_list = 11;</code>
+     * <code>repeated uint32 finished_challenge_id_list = 9;</code>
      * @return The count of finishedChallengeIdList.
      */
     public int getFinishedChallengeIdListCount() {
       return finishedChallengeIdList_.size();
     }
     /**
-     * <pre>
-     *EJMHNAHNPOB snooswap
-     * </pre>
-     *
-     * <code>repeated uint32 finished_challenge_id_list = 11;</code>
+     * <code>repeated uint32 finished_challenge_id_list = 9;</code>
      * @param index The index of the element to return.
      * @return The finishedChallengeIdList at the given index.
      */
@@ -382,61 +420,10 @@ public final class GCGSettleNotifyOuterClass {
     }
     private int finishedChallengeIdListMemoizedSerializedSize = -1;
 
-    public static final int WIN_CONTROLLER_ID_FIELD_NUMBER = 10;
-    private int winControllerId_;
-    /**
-     * <code>uint32 win_controller_id = 10;</code>
-     * @return The winControllerId.
-     */
-    @java.lang.Override
-    public int getWinControllerId() {
-      return winControllerId_;
-    }
-
-    public static final int FORBID_FINISH_CHALLENGE_LIST_FIELD_NUMBER = 8;
-    private com.google.protobuf.Internal.IntList forbidFinishChallengeList_;
-    /**
-     * <pre>
-     *HLJEJHHAICH snooswap
-     * </pre>
-     *
-     * <code>repeated uint32 forbid_finish_challenge_list = 8;</code>
-     * @return A list containing the forbidFinishChallengeList.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getForbidFinishChallengeListList() {
-      return forbidFinishChallengeList_;
-    }
-    /**
-     * <pre>
-     *HLJEJHHAICH snooswap
-     * </pre>
-     *
-     * <code>repeated uint32 forbid_finish_challenge_list = 8;</code>
-     * @return The count of forbidFinishChallengeList.
-     */
-    public int getForbidFinishChallengeListCount() {
-      return forbidFinishChallengeList_.size();
-    }
-    /**
-     * <pre>
-     *HLJEJHHAICH snooswap
-     * </pre>
-     *
-     * <code>repeated uint32 forbid_finish_challenge_list = 8;</code>
-     * @param index The index of the element to return.
-     * @return The forbidFinishChallengeList at the given index.
-     */
-    public int getForbidFinishChallengeList(int index) {
-      return forbidFinishChallengeList_.getInt(index);
-    }
-    private int forbidFinishChallengeListMemoizedSerializedSize = -1;
-
-    public static final int IS_WIN_FIELD_NUMBER = 12;
+    public static final int IS_WIN_FIELD_NUMBER = 4;
     private boolean isWin_;
     /**
-     * <code>bool is_win = 12;</code>
+     * <code>bool is_win = 4;</code>
      * @return The isWin.
      */
     @java.lang.Override
@@ -444,17 +431,28 @@ public final class GCGSettleNotifyOuterClass {
       return isWin_;
     }
 
-    public static final int REWARD_ITEM_LIST_FIELD_NUMBER = 4;
+    public static final int WIN_CONTROLLER_ID_FIELD_NUMBER = 6;
+    private int winControllerId_;
+    /**
+     * <code>uint32 win_controller_id = 6;</code>
+     * @return The winControllerId.
+     */
+    @java.lang.Override
+    public int getWinControllerId() {
+      return winControllerId_;
+    }
+
+    public static final int REWARD_ITEM_LIST_FIELD_NUMBER = 1;
     private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> rewardItemList_;
     /**
-     * <code>repeated .ItemParam reward_item_list = 4;</code>
+     * <code>repeated .ItemParam reward_item_list = 1;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getRewardItemListList() {
       return rewardItemList_;
     }
     /**
-     * <code>repeated .ItemParam reward_item_list = 4;</code>
+     * <code>repeated .ItemParam reward_item_list = 1;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
@@ -462,21 +460,21 @@ public final class GCGSettleNotifyOuterClass {
       return rewardItemList_;
     }
     /**
-     * <code>repeated .ItemParam reward_item_list = 4;</code>
+     * <code>repeated .ItemParam reward_item_list = 1;</code>
      */
     @java.lang.Override
     public int getRewardItemListCount() {
       return rewardItemList_.size();
     }
     /**
-     * <code>repeated .ItemParam reward_item_list = 4;</code>
+     * <code>repeated .ItemParam reward_item_list = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getRewardItemList(int index) {
       return rewardItemList_.get(index);
     }
     /**
-     * <code>repeated .ItemParam reward_item_list = 4;</code>
+     * <code>repeated .ItemParam reward_item_list = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getRewardItemListOrBuilder(
@@ -484,50 +482,143 @@ public final class GCGSettleNotifyOuterClass {
       return rewardItemList_.get(index);
     }
 
-    public static final int BUSINESS_TYPE_FIELD_NUMBER = 15;
-    private int businessType_;
+    public static final int OPGBGHPHELB_FIELD_NUMBER = 11;
+    private int oPGBGHPHELB_;
     /**
-     * <pre>
-     *FMOEOCJBOPN AECBJKLBGFK snooswap
-     * </pre>
-     *
-     * <code>.GCGGameBusinessType business_type = 15;</code>
-     * @return The enum numeric value on the wire for businessType.
+     * <code>uint32 OPGBGHPHELB = 11;</code>
+     * @return The oPGBGHPHELB.
      */
-    @java.lang.Override public int getBusinessTypeValue() {
-      return businessType_;
-    }
-    /**
-     * <pre>
-     *FMOEOCJBOPN AECBJKLBGFK snooswap
-     * </pre>
-     *
-     * <code>.GCGGameBusinessType business_type = 15;</code>
-     * @return The businessType.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType getBusinessType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType result = emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType.valueOf(businessType_);
-      return result == null ? emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType.UNRECOGNIZED : result;
+    @java.lang.Override
+    public int getOPGBGHPHELB() {
+      return oPGBGHPHELB_;
     }
 
-    public static final int REASON_FIELD_NUMBER = 7;
+    public static final int CGOPKBDOOFH_FIELD_NUMBER = 14;
+    private com.google.protobuf.Internal.IntList cGOPKBDOOFH_;
+    /**
+     * <code>repeated uint32 CGOPKBDOOFH = 14;</code>
+     * @return A list containing the cGOPKBDOOFH.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getCGOPKBDOOFHList() {
+      return cGOPKBDOOFH_;
+    }
+    /**
+     * <code>repeated uint32 CGOPKBDOOFH = 14;</code>
+     * @return The count of cGOPKBDOOFH.
+     */
+    public int getCGOPKBDOOFHCount() {
+      return cGOPKBDOOFH_.size();
+    }
+    /**
+     * <code>repeated uint32 CGOPKBDOOFH = 14;</code>
+     * @param index The index of the element to return.
+     * @return The cGOPKBDOOFH at the given index.
+     */
+    public int getCGOPKBDOOFH(int index) {
+      return cGOPKBDOOFH_.getInt(index);
+    }
+    private int cGOPKBDOOFHMemoizedSerializedSize = -1;
+
+    public static final int LNPHMHEEEOL_FIELD_NUMBER = 12;
+    private int lNPHMHEEEOL_;
+    /**
+     * <code>.LABBALOFHKB LNPHMHEEEOL = 12;</code>
+     * @return The enum numeric value on the wire for lNPHMHEEEOL.
+     */
+    @java.lang.Override public int getLNPHMHEEEOLValue() {
+      return lNPHMHEEEOL_;
+    }
+    /**
+     * <code>.LABBALOFHKB LNPHMHEEEOL = 12;</code>
+     * @return The lNPHMHEEEOL.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.LABBALOFHKBOuterClass.LABBALOFHKB getLNPHMHEEEOL() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.LABBALOFHKBOuterClass.LABBALOFHKB result = emu.grasscutter.net.proto.LABBALOFHKBOuterClass.LABBALOFHKB.valueOf(lNPHMHEEEOL_);
+      return result == null ? emu.grasscutter.net.proto.LABBALOFHKBOuterClass.LABBALOFHKB.UNRECOGNIZED : result;
+    }
+
+    public static final int REASON_FIELD_NUMBER = 13;
     private int reason_;
     /**
-     * <code>.GCGEndReason reason = 7;</code>
+     * <code>.GCGEndReason reason = 13;</code>
      * @return The enum numeric value on the wire for reason.
      */
     @java.lang.Override public int getReasonValue() {
       return reason_;
     }
     /**
-     * <code>.GCGEndReason reason = 7;</code>
+     * <code>.GCGEndReason reason = 13;</code>
      * @return The reason.
      */
     @java.lang.Override public emu.grasscutter.net.proto.GCGEndReasonOuterClass.GCGEndReason getReason() {
       @SuppressWarnings("deprecation")
       emu.grasscutter.net.proto.GCGEndReasonOuterClass.GCGEndReason result = emu.grasscutter.net.proto.GCGEndReasonOuterClass.GCGEndReason.valueOf(reason_);
       return result == null ? emu.grasscutter.net.proto.GCGEndReasonOuterClass.GCGEndReason.UNRECOGNIZED : result;
+    }
+
+    public static final int DODGJCLOEGH_FIELD_NUMBER = 739;
+    /**
+     * <code>.EOIJDJGCEBA DODGJCLOEGH = 739;</code>
+     * @return Whether the dODGJCLOEGH field is set.
+     */
+    @java.lang.Override
+    public boolean hasDODGJCLOEGH() {
+      return jJMHHOHBMNPCase_ == 739;
+    }
+    /**
+     * <code>.EOIJDJGCEBA DODGJCLOEGH = 739;</code>
+     * @return The dODGJCLOEGH.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBA getDODGJCLOEGH() {
+      if (jJMHHOHBMNPCase_ == 739) {
+         return (emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBA) jJMHHOHBMNP_;
+      }
+      return emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBA.getDefaultInstance();
+    }
+    /**
+     * <code>.EOIJDJGCEBA DODGJCLOEGH = 739;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBAOrBuilder getDODGJCLOEGHOrBuilder() {
+      if (jJMHHOHBMNPCase_ == 739) {
+         return (emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBA) jJMHHOHBMNP_;
+      }
+      return emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBA.getDefaultInstance();
+    }
+
+    public static final int GKPBPPIGNKI_FIELD_NUMBER = 482;
+    /**
+     * <code>.CKGOHJGMCCG GKPBPPIGNKI = 482;</code>
+     * @return Whether the gKPBPPIGNKI field is set.
+     */
+    @java.lang.Override
+    public boolean hasGKPBPPIGNKI() {
+      return jJMHHOHBMNPCase_ == 482;
+    }
+    /**
+     * <code>.CKGOHJGMCCG GKPBPPIGNKI = 482;</code>
+     * @return The gKPBPPIGNKI.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCG getGKPBPPIGNKI() {
+      if (jJMHHOHBMNPCase_ == 482) {
+         return (emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCG) jJMHHOHBMNP_;
+      }
+      return emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCG.getDefaultInstance();
+    }
+    /**
+     * <code>.CKGOHJGMCCG GKPBPPIGNKI = 482;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCGOrBuilder getGKPBPPIGNKIOrBuilder() {
+      if (jJMHHOHBMNPCase_ == 482) {
+         return (emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCG) jJMHHOHBMNP_;
+      }
+      return emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCG.getDefaultInstance();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -545,37 +636,43 @@ public final class GCGSettleNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (gameId_ != 0) {
-        output.writeUInt32(2, gameId_);
-      }
       for (int i = 0; i < rewardItemList_.size(); i++) {
-        output.writeMessage(4, rewardItemList_.get(i));
+        output.writeMessage(1, rewardItemList_.get(i));
       }
-      if (reason_ != emu.grasscutter.net.proto.GCGEndReasonOuterClass.GCGEndReason.GCG_END_REASON_DEFAULT.getNumber()) {
-        output.writeEnum(7, reason_);
-      }
-      if (getForbidFinishChallengeListList().size() > 0) {
-        output.writeUInt32NoTag(66);
-        output.writeUInt32NoTag(forbidFinishChallengeListMemoizedSerializedSize);
-      }
-      for (int i = 0; i < forbidFinishChallengeList_.size(); i++) {
-        output.writeUInt32NoTag(forbidFinishChallengeList_.getInt(i));
+      if (isWin_ != false) {
+        output.writeBool(4, isWin_);
       }
       if (winControllerId_ != 0) {
-        output.writeUInt32(10, winControllerId_);
+        output.writeUInt32(6, winControllerId_);
       }
       if (getFinishedChallengeIdListList().size() > 0) {
-        output.writeUInt32NoTag(90);
+        output.writeUInt32NoTag(74);
         output.writeUInt32NoTag(finishedChallengeIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < finishedChallengeIdList_.size(); i++) {
         output.writeUInt32NoTag(finishedChallengeIdList_.getInt(i));
       }
-      if (isWin_ != false) {
-        output.writeBool(12, isWin_);
+      if (oPGBGHPHELB_ != 0) {
+        output.writeUInt32(11, oPGBGHPHELB_);
       }
-      if (businessType_ != emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType.GCG_GAME_BUSINESS_TYPE_NONE.getNumber()) {
-        output.writeEnum(15, businessType_);
+      if (lNPHMHEEEOL_ != emu.grasscutter.net.proto.LABBALOFHKBOuterClass.LABBALOFHKB.LABBALOFHKB_GcgGameNone.getNumber()) {
+        output.writeEnum(12, lNPHMHEEEOL_);
+      }
+      if (reason_ != emu.grasscutter.net.proto.GCGEndReasonOuterClass.GCGEndReason.GCG_END_REASON_DEFAULT.getNumber()) {
+        output.writeEnum(13, reason_);
+      }
+      if (getCGOPKBDOOFHList().size() > 0) {
+        output.writeUInt32NoTag(114);
+        output.writeUInt32NoTag(cGOPKBDOOFHMemoizedSerializedSize);
+      }
+      for (int i = 0; i < cGOPKBDOOFH_.size(); i++) {
+        output.writeUInt32NoTag(cGOPKBDOOFH_.getInt(i));
+      }
+      if (jJMHHOHBMNPCase_ == 482) {
+        output.writeMessage(482, (emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCG) jJMHHOHBMNP_);
+      }
+      if (jJMHHOHBMNPCase_ == 739) {
+        output.writeMessage(739, (emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBA) jJMHHOHBMNP_);
       }
       unknownFields.writeTo(output);
     }
@@ -586,35 +683,17 @@ public final class GCGSettleNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (gameId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, gameId_);
-      }
       for (int i = 0; i < rewardItemList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, rewardItemList_.get(i));
+          .computeMessageSize(1, rewardItemList_.get(i));
       }
-      if (reason_ != emu.grasscutter.net.proto.GCGEndReasonOuterClass.GCGEndReason.GCG_END_REASON_DEFAULT.getNumber()) {
+      if (isWin_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(7, reason_);
-      }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < forbidFinishChallengeList_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(forbidFinishChallengeList_.getInt(i));
-        }
-        size += dataSize;
-        if (!getForbidFinishChallengeListList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        forbidFinishChallengeListMemoizedSerializedSize = dataSize;
+          .computeBoolSize(4, isWin_);
       }
       if (winControllerId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, winControllerId_);
+          .computeUInt32Size(6, winControllerId_);
       }
       {
         int dataSize = 0;
@@ -630,13 +709,39 @@ public final class GCGSettleNotifyOuterClass {
         }
         finishedChallengeIdListMemoizedSerializedSize = dataSize;
       }
-      if (isWin_ != false) {
+      if (oPGBGHPHELB_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, isWin_);
+          .computeUInt32Size(11, oPGBGHPHELB_);
       }
-      if (businessType_ != emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType.GCG_GAME_BUSINESS_TYPE_NONE.getNumber()) {
+      if (lNPHMHEEEOL_ != emu.grasscutter.net.proto.LABBALOFHKBOuterClass.LABBALOFHKB.LABBALOFHKB_GcgGameNone.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(15, businessType_);
+          .computeEnumSize(12, lNPHMHEEEOL_);
+      }
+      if (reason_ != emu.grasscutter.net.proto.GCGEndReasonOuterClass.GCGEndReason.GCG_END_REASON_DEFAULT.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(13, reason_);
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < cGOPKBDOOFH_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(cGOPKBDOOFH_.getInt(i));
+        }
+        size += dataSize;
+        if (!getCGOPKBDOOFHList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        cGOPKBDOOFHMemoizedSerializedSize = dataSize;
+      }
+      if (jJMHHOHBMNPCase_ == 482) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(482, (emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCG) jJMHHOHBMNP_);
+      }
+      if (jJMHHOHBMNPCase_ == 739) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(739, (emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBA) jJMHHOHBMNP_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -653,20 +758,33 @@ public final class GCGSettleNotifyOuterClass {
       }
       emu.grasscutter.net.proto.GCGSettleNotifyOuterClass.GCGSettleNotify other = (emu.grasscutter.net.proto.GCGSettleNotifyOuterClass.GCGSettleNotify) obj;
 
-      if (getGameId()
-          != other.getGameId()) return false;
       if (!getFinishedChallengeIdListList()
           .equals(other.getFinishedChallengeIdListList())) return false;
-      if (getWinControllerId()
-          != other.getWinControllerId()) return false;
-      if (!getForbidFinishChallengeListList()
-          .equals(other.getForbidFinishChallengeListList())) return false;
       if (getIsWin()
           != other.getIsWin()) return false;
+      if (getWinControllerId()
+          != other.getWinControllerId()) return false;
       if (!getRewardItemListList()
           .equals(other.getRewardItemListList())) return false;
-      if (businessType_ != other.businessType_) return false;
+      if (getOPGBGHPHELB()
+          != other.getOPGBGHPHELB()) return false;
+      if (!getCGOPKBDOOFHList()
+          .equals(other.getCGOPKBDOOFHList())) return false;
+      if (lNPHMHEEEOL_ != other.lNPHMHEEEOL_) return false;
       if (reason_ != other.reason_) return false;
+      if (!getJJMHHOHBMNPCase().equals(other.getJJMHHOHBMNPCase())) return false;
+      switch (jJMHHOHBMNPCase_) {
+        case 739:
+          if (!getDODGJCLOEGH()
+              .equals(other.getDODGJCLOEGH())) return false;
+          break;
+        case 482:
+          if (!getGKPBPPIGNKI()
+              .equals(other.getGKPBPPIGNKI())) return false;
+          break;
+        case 0:
+        default:
+      }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -678,29 +796,41 @@ public final class GCGSettleNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + GAME_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGameId();
       if (getFinishedChallengeIdListCount() > 0) {
         hash = (37 * hash) + FINISHED_CHALLENGE_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getFinishedChallengeIdListList().hashCode();
       }
-      hash = (37 * hash) + WIN_CONTROLLER_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getWinControllerId();
-      if (getForbidFinishChallengeListCount() > 0) {
-        hash = (37 * hash) + FORBID_FINISH_CHALLENGE_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getForbidFinishChallengeListList().hashCode();
-      }
       hash = (37 * hash) + IS_WIN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsWin());
+      hash = (37 * hash) + WIN_CONTROLLER_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getWinControllerId();
       if (getRewardItemListCount() > 0) {
         hash = (37 * hash) + REWARD_ITEM_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getRewardItemListList().hashCode();
       }
-      hash = (37 * hash) + BUSINESS_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + businessType_;
+      hash = (37 * hash) + OPGBGHPHELB_FIELD_NUMBER;
+      hash = (53 * hash) + getOPGBGHPHELB();
+      if (getCGOPKBDOOFHCount() > 0) {
+        hash = (37 * hash) + CGOPKBDOOFH_FIELD_NUMBER;
+        hash = (53 * hash) + getCGOPKBDOOFHList().hashCode();
+      }
+      hash = (37 * hash) + LNPHMHEEEOL_FIELD_NUMBER;
+      hash = (53 * hash) + lNPHMHEEEOL_;
       hash = (37 * hash) + REASON_FIELD_NUMBER;
       hash = (53 * hash) + reason_;
+      switch (jJMHHOHBMNPCase_) {
+        case 739:
+          hash = (37 * hash) + DODGJCLOEGH_FIELD_NUMBER;
+          hash = (53 * hash) + getDODGJCLOEGH().hashCode();
+          break;
+        case 482:
+          hash = (37 * hash) + GKPBPPIGNKI_FIELD_NUMBER;
+          hash = (53 * hash) + getGKPBPPIGNKI().hashCode();
+          break;
+        case 0:
+        default:
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -798,8 +928,8 @@ public final class GCGSettleNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: JNPBOGLAGMK
-     * CmdId: 7370
+     * CmdId: 7359
+     * Obf: MHAEEPPGNLN
      * </pre>
      *
      * Protobuf type {@code GCGSettleNotify}
@@ -840,26 +970,28 @@ public final class GCGSettleNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        gameId_ = 0;
-
         finishedChallengeIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        winControllerId_ = 0;
-
-        forbidFinishChallengeList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
         isWin_ = false;
+
+        winControllerId_ = 0;
 
         if (rewardItemListBuilder_ == null) {
           rewardItemList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000002);
         } else {
           rewardItemListBuilder_.clear();
         }
-        businessType_ = 0;
+        oPGBGHPHELB_ = 0;
+
+        cGOPKBDOOFH_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000004);
+        lNPHMHEEEOL_ = 0;
 
         reason_ = 0;
 
+        jJMHHOHBMNPCase_ = 0;
+        jJMHHOHBMNP_ = null;
         return this;
       }
 
@@ -887,30 +1019,45 @@ public final class GCGSettleNotifyOuterClass {
       public emu.grasscutter.net.proto.GCGSettleNotifyOuterClass.GCGSettleNotify buildPartial() {
         emu.grasscutter.net.proto.GCGSettleNotifyOuterClass.GCGSettleNotify result = new emu.grasscutter.net.proto.GCGSettleNotifyOuterClass.GCGSettleNotify(this);
         int from_bitField0_ = bitField0_;
-        result.gameId_ = gameId_;
         if (((bitField0_ & 0x00000001) != 0)) {
           finishedChallengeIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.finishedChallengeIdList_ = finishedChallengeIdList_;
-        result.winControllerId_ = winControllerId_;
-        if (((bitField0_ & 0x00000002) != 0)) {
-          forbidFinishChallengeList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000002);
-        }
-        result.forbidFinishChallengeList_ = forbidFinishChallengeList_;
         result.isWin_ = isWin_;
+        result.winControllerId_ = winControllerId_;
         if (rewardItemListBuilder_ == null) {
-          if (((bitField0_ & 0x00000004) != 0)) {
+          if (((bitField0_ & 0x00000002) != 0)) {
             rewardItemList_ = java.util.Collections.unmodifiableList(rewardItemList_);
-            bitField0_ = (bitField0_ & ~0x00000004);
+            bitField0_ = (bitField0_ & ~0x00000002);
           }
           result.rewardItemList_ = rewardItemList_;
         } else {
           result.rewardItemList_ = rewardItemListBuilder_.build();
         }
-        result.businessType_ = businessType_;
+        result.oPGBGHPHELB_ = oPGBGHPHELB_;
+        if (((bitField0_ & 0x00000004) != 0)) {
+          cGOPKBDOOFH_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000004);
+        }
+        result.cGOPKBDOOFH_ = cGOPKBDOOFH_;
+        result.lNPHMHEEEOL_ = lNPHMHEEEOL_;
         result.reason_ = reason_;
+        if (jJMHHOHBMNPCase_ == 739) {
+          if (dODGJCLOEGHBuilder_ == null) {
+            result.jJMHHOHBMNP_ = jJMHHOHBMNP_;
+          } else {
+            result.jJMHHOHBMNP_ = dODGJCLOEGHBuilder_.build();
+          }
+        }
+        if (jJMHHOHBMNPCase_ == 482) {
+          if (gKPBPPIGNKIBuilder_ == null) {
+            result.jJMHHOHBMNP_ = jJMHHOHBMNP_;
+          } else {
+            result.jJMHHOHBMNP_ = gKPBPPIGNKIBuilder_.build();
+          }
+        }
+        result.jJMHHOHBMNPCase_ = jJMHHOHBMNPCase_;
         onBuilt();
         return result;
       }
@@ -959,9 +1106,6 @@ public final class GCGSettleNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGSettleNotifyOuterClass.GCGSettleNotify other) {
         if (other == emu.grasscutter.net.proto.GCGSettleNotifyOuterClass.GCGSettleNotify.getDefaultInstance()) return this;
-        if (other.getGameId() != 0) {
-          setGameId(other.getGameId());
-        }
         if (!other.finishedChallengeIdList_.isEmpty()) {
           if (finishedChallengeIdList_.isEmpty()) {
             finishedChallengeIdList_ = other.finishedChallengeIdList_;
@@ -972,27 +1116,17 @@ public final class GCGSettleNotifyOuterClass {
           }
           onChanged();
         }
-        if (other.getWinControllerId() != 0) {
-          setWinControllerId(other.getWinControllerId());
-        }
-        if (!other.forbidFinishChallengeList_.isEmpty()) {
-          if (forbidFinishChallengeList_.isEmpty()) {
-            forbidFinishChallengeList_ = other.forbidFinishChallengeList_;
-            bitField0_ = (bitField0_ & ~0x00000002);
-          } else {
-            ensureForbidFinishChallengeListIsMutable();
-            forbidFinishChallengeList_.addAll(other.forbidFinishChallengeList_);
-          }
-          onChanged();
-        }
         if (other.getIsWin() != false) {
           setIsWin(other.getIsWin());
+        }
+        if (other.getWinControllerId() != 0) {
+          setWinControllerId(other.getWinControllerId());
         }
         if (rewardItemListBuilder_ == null) {
           if (!other.rewardItemList_.isEmpty()) {
             if (rewardItemList_.isEmpty()) {
               rewardItemList_ = other.rewardItemList_;
-              bitField0_ = (bitField0_ & ~0x00000004);
+              bitField0_ = (bitField0_ & ~0x00000002);
             } else {
               ensureRewardItemListIsMutable();
               rewardItemList_.addAll(other.rewardItemList_);
@@ -1005,7 +1139,7 @@ public final class GCGSettleNotifyOuterClass {
               rewardItemListBuilder_.dispose();
               rewardItemListBuilder_ = null;
               rewardItemList_ = other.rewardItemList_;
-              bitField0_ = (bitField0_ & ~0x00000004);
+              bitField0_ = (bitField0_ & ~0x00000002);
               rewardItemListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getRewardItemListFieldBuilder() : null;
@@ -1014,11 +1148,37 @@ public final class GCGSettleNotifyOuterClass {
             }
           }
         }
-        if (other.businessType_ != 0) {
-          setBusinessTypeValue(other.getBusinessTypeValue());
+        if (other.getOPGBGHPHELB() != 0) {
+          setOPGBGHPHELB(other.getOPGBGHPHELB());
+        }
+        if (!other.cGOPKBDOOFH_.isEmpty()) {
+          if (cGOPKBDOOFH_.isEmpty()) {
+            cGOPKBDOOFH_ = other.cGOPKBDOOFH_;
+            bitField0_ = (bitField0_ & ~0x00000004);
+          } else {
+            ensureCGOPKBDOOFHIsMutable();
+            cGOPKBDOOFH_.addAll(other.cGOPKBDOOFH_);
+          }
+          onChanged();
+        }
+        if (other.lNPHMHEEEOL_ != 0) {
+          setLNPHMHEEEOLValue(other.getLNPHMHEEEOLValue());
         }
         if (other.reason_ != 0) {
           setReasonValue(other.getReasonValue());
+        }
+        switch (other.getJJMHHOHBMNPCase()) {
+          case DODGJCLOEGH: {
+            mergeDODGJCLOEGH(other.getDODGJCLOEGH());
+            break;
+          }
+          case GKPBPPIGNKI: {
+            mergeGKPBPPIGNKI(other.getGKPBPPIGNKI());
+            break;
+          }
+          case JJMHHOHBMNP_NOT_SET: {
+            break;
+          }
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1048,50 +1208,22 @@ public final class GCGSettleNotifyOuterClass {
         }
         return this;
       }
-      private int bitField0_;
+      private int jJMHHOHBMNPCase_ = 0;
+      private java.lang.Object jJMHHOHBMNP_;
+      public JJMHHOHBMNPCase
+          getJJMHHOHBMNPCase() {
+        return JJMHHOHBMNPCase.forNumber(
+            jJMHHOHBMNPCase_);
+      }
 
-      private int gameId_ ;
-      /**
-       * <pre>
-       *DELFEGPPGMK snooswap
-       * </pre>
-       *
-       * <code>uint32 game_id = 2;</code>
-       * @return The gameId.
-       */
-      @java.lang.Override
-      public int getGameId() {
-        return gameId_;
-      }
-      /**
-       * <pre>
-       *DELFEGPPGMK snooswap
-       * </pre>
-       *
-       * <code>uint32 game_id = 2;</code>
-       * @param value The gameId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGameId(int value) {
-        
-        gameId_ = value;
+      public Builder clearJJMHHOHBMNP() {
+        jJMHHOHBMNPCase_ = 0;
+        jJMHHOHBMNP_ = null;
         onChanged();
         return this;
       }
-      /**
-       * <pre>
-       *DELFEGPPGMK snooswap
-       * </pre>
-       *
-       * <code>uint32 game_id = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGameId() {
-        
-        gameId_ = 0;
-        onChanged();
-        return this;
-      }
+
+      private int bitField0_;
 
       private com.google.protobuf.Internal.IntList finishedChallengeIdList_ = emptyIntList();
       private void ensureFinishedChallengeIdListIsMutable() {
@@ -1101,11 +1233,7 @@ public final class GCGSettleNotifyOuterClass {
          }
       }
       /**
-       * <pre>
-       *EJMHNAHNPOB snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 finished_challenge_id_list = 11;</code>
+       * <code>repeated uint32 finished_challenge_id_list = 9;</code>
        * @return A list containing the finishedChallengeIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -1114,22 +1242,14 @@ public final class GCGSettleNotifyOuterClass {
                  java.util.Collections.unmodifiableList(finishedChallengeIdList_) : finishedChallengeIdList_;
       }
       /**
-       * <pre>
-       *EJMHNAHNPOB snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 finished_challenge_id_list = 11;</code>
+       * <code>repeated uint32 finished_challenge_id_list = 9;</code>
        * @return The count of finishedChallengeIdList.
        */
       public int getFinishedChallengeIdListCount() {
         return finishedChallengeIdList_.size();
       }
       /**
-       * <pre>
-       *EJMHNAHNPOB snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 finished_challenge_id_list = 11;</code>
+       * <code>repeated uint32 finished_challenge_id_list = 9;</code>
        * @param index The index of the element to return.
        * @return The finishedChallengeIdList at the given index.
        */
@@ -1137,11 +1257,7 @@ public final class GCGSettleNotifyOuterClass {
         return finishedChallengeIdList_.getInt(index);
       }
       /**
-       * <pre>
-       *EJMHNAHNPOB snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 finished_challenge_id_list = 11;</code>
+       * <code>repeated uint32 finished_challenge_id_list = 9;</code>
        * @param index The index to set the value at.
        * @param value The finishedChallengeIdList to set.
        * @return This builder for chaining.
@@ -1154,11 +1270,7 @@ public final class GCGSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *EJMHNAHNPOB snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 finished_challenge_id_list = 11;</code>
+       * <code>repeated uint32 finished_challenge_id_list = 9;</code>
        * @param value The finishedChallengeIdList to add.
        * @return This builder for chaining.
        */
@@ -1169,11 +1281,7 @@ public final class GCGSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *EJMHNAHNPOB snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 finished_challenge_id_list = 11;</code>
+       * <code>repeated uint32 finished_challenge_id_list = 9;</code>
        * @param values The finishedChallengeIdList to add.
        * @return This builder for chaining.
        */
@@ -1186,11 +1294,7 @@ public final class GCGSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *EJMHNAHNPOB snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 finished_challenge_id_list = 11;</code>
+       * <code>repeated uint32 finished_challenge_id_list = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearFinishedChallengeIdList() {
@@ -1200,147 +1304,9 @@ public final class GCGSettleNotifyOuterClass {
         return this;
       }
 
-      private int winControllerId_ ;
-      /**
-       * <code>uint32 win_controller_id = 10;</code>
-       * @return The winControllerId.
-       */
-      @java.lang.Override
-      public int getWinControllerId() {
-        return winControllerId_;
-      }
-      /**
-       * <code>uint32 win_controller_id = 10;</code>
-       * @param value The winControllerId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setWinControllerId(int value) {
-        
-        winControllerId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 win_controller_id = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearWinControllerId() {
-        
-        winControllerId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList forbidFinishChallengeList_ = emptyIntList();
-      private void ensureForbidFinishChallengeListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          forbidFinishChallengeList_ = mutableCopy(forbidFinishChallengeList_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-      /**
-       * <pre>
-       *HLJEJHHAICH snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 forbid_finish_challenge_list = 8;</code>
-       * @return A list containing the forbidFinishChallengeList.
-       */
-      public java.util.List<java.lang.Integer>
-          getForbidFinishChallengeListList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(forbidFinishChallengeList_) : forbidFinishChallengeList_;
-      }
-      /**
-       * <pre>
-       *HLJEJHHAICH snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 forbid_finish_challenge_list = 8;</code>
-       * @return The count of forbidFinishChallengeList.
-       */
-      public int getForbidFinishChallengeListCount() {
-        return forbidFinishChallengeList_.size();
-      }
-      /**
-       * <pre>
-       *HLJEJHHAICH snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 forbid_finish_challenge_list = 8;</code>
-       * @param index The index of the element to return.
-       * @return The forbidFinishChallengeList at the given index.
-       */
-      public int getForbidFinishChallengeList(int index) {
-        return forbidFinishChallengeList_.getInt(index);
-      }
-      /**
-       * <pre>
-       *HLJEJHHAICH snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 forbid_finish_challenge_list = 8;</code>
-       * @param index The index to set the value at.
-       * @param value The forbidFinishChallengeList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setForbidFinishChallengeList(
-          int index, int value) {
-        ensureForbidFinishChallengeListIsMutable();
-        forbidFinishChallengeList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *HLJEJHHAICH snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 forbid_finish_challenge_list = 8;</code>
-       * @param value The forbidFinishChallengeList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addForbidFinishChallengeList(int value) {
-        ensureForbidFinishChallengeListIsMutable();
-        forbidFinishChallengeList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *HLJEJHHAICH snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 forbid_finish_challenge_list = 8;</code>
-       * @param values The forbidFinishChallengeList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllForbidFinishChallengeList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureForbidFinishChallengeListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, forbidFinishChallengeList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       *HLJEJHHAICH snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 forbid_finish_challenge_list = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearForbidFinishChallengeList() {
-        forbidFinishChallengeList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        onChanged();
-        return this;
-      }
-
       private boolean isWin_ ;
       /**
-       * <code>bool is_win = 12;</code>
+       * <code>bool is_win = 4;</code>
        * @return The isWin.
        */
       @java.lang.Override
@@ -1348,7 +1314,7 @@ public final class GCGSettleNotifyOuterClass {
         return isWin_;
       }
       /**
-       * <code>bool is_win = 12;</code>
+       * <code>bool is_win = 4;</code>
        * @param value The isWin to set.
        * @return This builder for chaining.
        */
@@ -1359,7 +1325,7 @@ public final class GCGSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_win = 12;</code>
+       * <code>bool is_win = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsWin() {
@@ -1369,12 +1335,43 @@ public final class GCGSettleNotifyOuterClass {
         return this;
       }
 
+      private int winControllerId_ ;
+      /**
+       * <code>uint32 win_controller_id = 6;</code>
+       * @return The winControllerId.
+       */
+      @java.lang.Override
+      public int getWinControllerId() {
+        return winControllerId_;
+      }
+      /**
+       * <code>uint32 win_controller_id = 6;</code>
+       * @param value The winControllerId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setWinControllerId(int value) {
+        
+        winControllerId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 win_controller_id = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearWinControllerId() {
+        
+        winControllerId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> rewardItemList_ =
         java.util.Collections.emptyList();
       private void ensureRewardItemListIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
+        if (!((bitField0_ & 0x00000002) != 0)) {
           rewardItemList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>(rewardItemList_);
-          bitField0_ |= 0x00000004;
+          bitField0_ |= 0x00000002;
          }
       }
 
@@ -1382,7 +1379,7 @@ public final class GCGSettleNotifyOuterClass {
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> rewardItemListBuilder_;
 
       /**
-       * <code>repeated .ItemParam reward_item_list = 4;</code>
+       * <code>repeated .ItemParam reward_item_list = 1;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getRewardItemListList() {
         if (rewardItemListBuilder_ == null) {
@@ -1392,7 +1389,7 @@ public final class GCGSettleNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 4;</code>
+       * <code>repeated .ItemParam reward_item_list = 1;</code>
        */
       public int getRewardItemListCount() {
         if (rewardItemListBuilder_ == null) {
@@ -1402,7 +1399,7 @@ public final class GCGSettleNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 4;</code>
+       * <code>repeated .ItemParam reward_item_list = 1;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getRewardItemList(int index) {
         if (rewardItemListBuilder_ == null) {
@@ -1412,7 +1409,7 @@ public final class GCGSettleNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 4;</code>
+       * <code>repeated .ItemParam reward_item_list = 1;</code>
        */
       public Builder setRewardItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
@@ -1429,7 +1426,7 @@ public final class GCGSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 4;</code>
+       * <code>repeated .ItemParam reward_item_list = 1;</code>
        */
       public Builder setRewardItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -1443,7 +1440,7 @@ public final class GCGSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 4;</code>
+       * <code>repeated .ItemParam reward_item_list = 1;</code>
        */
       public Builder addRewardItemList(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
         if (rewardItemListBuilder_ == null) {
@@ -1459,7 +1456,7 @@ public final class GCGSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 4;</code>
+       * <code>repeated .ItemParam reward_item_list = 1;</code>
        */
       public Builder addRewardItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
@@ -1476,7 +1473,7 @@ public final class GCGSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 4;</code>
+       * <code>repeated .ItemParam reward_item_list = 1;</code>
        */
       public Builder addRewardItemList(
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -1490,7 +1487,7 @@ public final class GCGSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 4;</code>
+       * <code>repeated .ItemParam reward_item_list = 1;</code>
        */
       public Builder addRewardItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -1504,7 +1501,7 @@ public final class GCGSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 4;</code>
+       * <code>repeated .ItemParam reward_item_list = 1;</code>
        */
       public Builder addAllRewardItemList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> values) {
@@ -1519,12 +1516,12 @@ public final class GCGSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 4;</code>
+       * <code>repeated .ItemParam reward_item_list = 1;</code>
        */
       public Builder clearRewardItemList() {
         if (rewardItemListBuilder_ == null) {
           rewardItemList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
         } else {
           rewardItemListBuilder_.clear();
@@ -1532,7 +1529,7 @@ public final class GCGSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 4;</code>
+       * <code>repeated .ItemParam reward_item_list = 1;</code>
        */
       public Builder removeRewardItemList(int index) {
         if (rewardItemListBuilder_ == null) {
@@ -1545,14 +1542,14 @@ public final class GCGSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 4;</code>
+       * <code>repeated .ItemParam reward_item_list = 1;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getRewardItemListBuilder(
           int index) {
         return getRewardItemListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 4;</code>
+       * <code>repeated .ItemParam reward_item_list = 1;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getRewardItemListOrBuilder(
           int index) {
@@ -1562,7 +1559,7 @@ public final class GCGSettleNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 4;</code>
+       * <code>repeated .ItemParam reward_item_list = 1;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
            getRewardItemListOrBuilderList() {
@@ -1573,14 +1570,14 @@ public final class GCGSettleNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 4;</code>
+       * <code>repeated .ItemParam reward_item_list = 1;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addRewardItemListBuilder() {
         return getRewardItemListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 4;</code>
+       * <code>repeated .ItemParam reward_item_list = 1;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addRewardItemListBuilder(
           int index) {
@@ -1588,7 +1585,7 @@ public final class GCGSettleNotifyOuterClass {
             index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
       }
       /**
-       * <code>repeated .ItemParam reward_item_list = 4;</code>
+       * <code>repeated .ItemParam reward_item_list = 1;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder> 
            getRewardItemListBuilderList() {
@@ -1601,7 +1598,7 @@ public final class GCGSettleNotifyOuterClass {
           rewardItemListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder>(
                   rewardItemList_,
-                  ((bitField0_ & 0x00000004) != 0),
+                  ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
                   isClean());
           rewardItemList_ = null;
@@ -1609,90 +1606,180 @@ public final class GCGSettleNotifyOuterClass {
         return rewardItemListBuilder_;
       }
 
-      private int businessType_ = 0;
+      private int oPGBGHPHELB_ ;
       /**
-       * <pre>
-       *FMOEOCJBOPN AECBJKLBGFK snooswap
-       * </pre>
-       *
-       * <code>.GCGGameBusinessType business_type = 15;</code>
-       * @return The enum numeric value on the wire for businessType.
+       * <code>uint32 OPGBGHPHELB = 11;</code>
+       * @return The oPGBGHPHELB.
        */
-      @java.lang.Override public int getBusinessTypeValue() {
-        return businessType_;
+      @java.lang.Override
+      public int getOPGBGHPHELB() {
+        return oPGBGHPHELB_;
       }
       /**
-       * <pre>
-       *FMOEOCJBOPN AECBJKLBGFK snooswap
-       * </pre>
-       *
-       * <code>.GCGGameBusinessType business_type = 15;</code>
-       * @param value The enum numeric value on the wire for businessType to set.
+       * <code>uint32 OPGBGHPHELB = 11;</code>
+       * @param value The oPGBGHPHELB to set.
        * @return This builder for chaining.
        */
-      public Builder setBusinessTypeValue(int value) {
+      public Builder setOPGBGHPHELB(int value) {
         
-        businessType_ = value;
+        oPGBGHPHELB_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       *FMOEOCJBOPN AECBJKLBGFK snooswap
-       * </pre>
-       *
-       * <code>.GCGGameBusinessType business_type = 15;</code>
-       * @return The businessType.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType getBusinessType() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType result = emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType.valueOf(businessType_);
-        return result == null ? emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType.UNRECOGNIZED : result;
-      }
-      /**
-       * <pre>
-       *FMOEOCJBOPN AECBJKLBGFK snooswap
-       * </pre>
-       *
-       * <code>.GCGGameBusinessType business_type = 15;</code>
-       * @param value The businessType to set.
+       * <code>uint32 OPGBGHPHELB = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder setBusinessType(emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.GCGGameBusinessType value) {
+      public Builder clearOPGBGHPHELB() {
+        
+        oPGBGHPHELB_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList cGOPKBDOOFH_ = emptyIntList();
+      private void ensureCGOPKBDOOFHIsMutable() {
+        if (!((bitField0_ & 0x00000004) != 0)) {
+          cGOPKBDOOFH_ = mutableCopy(cGOPKBDOOFH_);
+          bitField0_ |= 0x00000004;
+         }
+      }
+      /**
+       * <code>repeated uint32 CGOPKBDOOFH = 14;</code>
+       * @return A list containing the cGOPKBDOOFH.
+       */
+      public java.util.List<java.lang.Integer>
+          getCGOPKBDOOFHList() {
+        return ((bitField0_ & 0x00000004) != 0) ?
+                 java.util.Collections.unmodifiableList(cGOPKBDOOFH_) : cGOPKBDOOFH_;
+      }
+      /**
+       * <code>repeated uint32 CGOPKBDOOFH = 14;</code>
+       * @return The count of cGOPKBDOOFH.
+       */
+      public int getCGOPKBDOOFHCount() {
+        return cGOPKBDOOFH_.size();
+      }
+      /**
+       * <code>repeated uint32 CGOPKBDOOFH = 14;</code>
+       * @param index The index of the element to return.
+       * @return The cGOPKBDOOFH at the given index.
+       */
+      public int getCGOPKBDOOFH(int index) {
+        return cGOPKBDOOFH_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 CGOPKBDOOFH = 14;</code>
+       * @param index The index to set the value at.
+       * @param value The cGOPKBDOOFH to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCGOPKBDOOFH(
+          int index, int value) {
+        ensureCGOPKBDOOFHIsMutable();
+        cGOPKBDOOFH_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 CGOPKBDOOFH = 14;</code>
+       * @param value The cGOPKBDOOFH to add.
+       * @return This builder for chaining.
+       */
+      public Builder addCGOPKBDOOFH(int value) {
+        ensureCGOPKBDOOFHIsMutable();
+        cGOPKBDOOFH_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 CGOPKBDOOFH = 14;</code>
+       * @param values The cGOPKBDOOFH to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllCGOPKBDOOFH(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureCGOPKBDOOFHIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, cGOPKBDOOFH_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 CGOPKBDOOFH = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCGOPKBDOOFH() {
+        cGOPKBDOOFH_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000004);
+        onChanged();
+        return this;
+      }
+
+      private int lNPHMHEEEOL_ = 0;
+      /**
+       * <code>.LABBALOFHKB LNPHMHEEEOL = 12;</code>
+       * @return The enum numeric value on the wire for lNPHMHEEEOL.
+       */
+      @java.lang.Override public int getLNPHMHEEEOLValue() {
+        return lNPHMHEEEOL_;
+      }
+      /**
+       * <code>.LABBALOFHKB LNPHMHEEEOL = 12;</code>
+       * @param value The enum numeric value on the wire for lNPHMHEEEOL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLNPHMHEEEOLValue(int value) {
+        
+        lNPHMHEEEOL_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.LABBALOFHKB LNPHMHEEEOL = 12;</code>
+       * @return The lNPHMHEEEOL.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.LABBALOFHKBOuterClass.LABBALOFHKB getLNPHMHEEEOL() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.LABBALOFHKBOuterClass.LABBALOFHKB result = emu.grasscutter.net.proto.LABBALOFHKBOuterClass.LABBALOFHKB.valueOf(lNPHMHEEEOL_);
+        return result == null ? emu.grasscutter.net.proto.LABBALOFHKBOuterClass.LABBALOFHKB.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.LABBALOFHKB LNPHMHEEEOL = 12;</code>
+       * @param value The lNPHMHEEEOL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLNPHMHEEEOL(emu.grasscutter.net.proto.LABBALOFHKBOuterClass.LABBALOFHKB value) {
         if (value == null) {
           throw new NullPointerException();
         }
         
-        businessType_ = value.getNumber();
+        lNPHMHEEEOL_ = value.getNumber();
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       *FMOEOCJBOPN AECBJKLBGFK snooswap
-       * </pre>
-       *
-       * <code>.GCGGameBusinessType business_type = 15;</code>
+       * <code>.LABBALOFHKB LNPHMHEEEOL = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBusinessType() {
+      public Builder clearLNPHMHEEEOL() {
         
-        businessType_ = 0;
+        lNPHMHEEEOL_ = 0;
         onChanged();
         return this;
       }
 
       private int reason_ = 0;
       /**
-       * <code>.GCGEndReason reason = 7;</code>
+       * <code>.GCGEndReason reason = 13;</code>
        * @return The enum numeric value on the wire for reason.
        */
       @java.lang.Override public int getReasonValue() {
         return reason_;
       }
       /**
-       * <code>.GCGEndReason reason = 7;</code>
+       * <code>.GCGEndReason reason = 13;</code>
        * @param value The enum numeric value on the wire for reason to set.
        * @return This builder for chaining.
        */
@@ -1703,7 +1790,7 @@ public final class GCGSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.GCGEndReason reason = 7;</code>
+       * <code>.GCGEndReason reason = 13;</code>
        * @return The reason.
        */
       @java.lang.Override
@@ -1713,7 +1800,7 @@ public final class GCGSettleNotifyOuterClass {
         return result == null ? emu.grasscutter.net.proto.GCGEndReasonOuterClass.GCGEndReason.UNRECOGNIZED : result;
       }
       /**
-       * <code>.GCGEndReason reason = 7;</code>
+       * <code>.GCGEndReason reason = 13;</code>
        * @param value The reason to set.
        * @return This builder for chaining.
        */
@@ -1727,7 +1814,7 @@ public final class GCGSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.GCGEndReason reason = 7;</code>
+       * <code>.GCGEndReason reason = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearReason() {
@@ -1735,6 +1822,288 @@ public final class GCGSettleNotifyOuterClass {
         reason_ = 0;
         onChanged();
         return this;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBA, emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBA.Builder, emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBAOrBuilder> dODGJCLOEGHBuilder_;
+      /**
+       * <code>.EOIJDJGCEBA DODGJCLOEGH = 739;</code>
+       * @return Whether the dODGJCLOEGH field is set.
+       */
+      @java.lang.Override
+      public boolean hasDODGJCLOEGH() {
+        return jJMHHOHBMNPCase_ == 739;
+      }
+      /**
+       * <code>.EOIJDJGCEBA DODGJCLOEGH = 739;</code>
+       * @return The dODGJCLOEGH.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBA getDODGJCLOEGH() {
+        if (dODGJCLOEGHBuilder_ == null) {
+          if (jJMHHOHBMNPCase_ == 739) {
+            return (emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBA) jJMHHOHBMNP_;
+          }
+          return emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBA.getDefaultInstance();
+        } else {
+          if (jJMHHOHBMNPCase_ == 739) {
+            return dODGJCLOEGHBuilder_.getMessage();
+          }
+          return emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBA.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.EOIJDJGCEBA DODGJCLOEGH = 739;</code>
+       */
+      public Builder setDODGJCLOEGH(emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBA value) {
+        if (dODGJCLOEGHBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          jJMHHOHBMNP_ = value;
+          onChanged();
+        } else {
+          dODGJCLOEGHBuilder_.setMessage(value);
+        }
+        jJMHHOHBMNPCase_ = 739;
+        return this;
+      }
+      /**
+       * <code>.EOIJDJGCEBA DODGJCLOEGH = 739;</code>
+       */
+      public Builder setDODGJCLOEGH(
+          emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBA.Builder builderForValue) {
+        if (dODGJCLOEGHBuilder_ == null) {
+          jJMHHOHBMNP_ = builderForValue.build();
+          onChanged();
+        } else {
+          dODGJCLOEGHBuilder_.setMessage(builderForValue.build());
+        }
+        jJMHHOHBMNPCase_ = 739;
+        return this;
+      }
+      /**
+       * <code>.EOIJDJGCEBA DODGJCLOEGH = 739;</code>
+       */
+      public Builder mergeDODGJCLOEGH(emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBA value) {
+        if (dODGJCLOEGHBuilder_ == null) {
+          if (jJMHHOHBMNPCase_ == 739 &&
+              jJMHHOHBMNP_ != emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBA.getDefaultInstance()) {
+            jJMHHOHBMNP_ = emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBA.newBuilder((emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBA) jJMHHOHBMNP_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            jJMHHOHBMNP_ = value;
+          }
+          onChanged();
+        } else {
+          if (jJMHHOHBMNPCase_ == 739) {
+            dODGJCLOEGHBuilder_.mergeFrom(value);
+          }
+          dODGJCLOEGHBuilder_.setMessage(value);
+        }
+        jJMHHOHBMNPCase_ = 739;
+        return this;
+      }
+      /**
+       * <code>.EOIJDJGCEBA DODGJCLOEGH = 739;</code>
+       */
+      public Builder clearDODGJCLOEGH() {
+        if (dODGJCLOEGHBuilder_ == null) {
+          if (jJMHHOHBMNPCase_ == 739) {
+            jJMHHOHBMNPCase_ = 0;
+            jJMHHOHBMNP_ = null;
+            onChanged();
+          }
+        } else {
+          if (jJMHHOHBMNPCase_ == 739) {
+            jJMHHOHBMNPCase_ = 0;
+            jJMHHOHBMNP_ = null;
+          }
+          dODGJCLOEGHBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.EOIJDJGCEBA DODGJCLOEGH = 739;</code>
+       */
+      public emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBA.Builder getDODGJCLOEGHBuilder() {
+        return getDODGJCLOEGHFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.EOIJDJGCEBA DODGJCLOEGH = 739;</code>
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBAOrBuilder getDODGJCLOEGHOrBuilder() {
+        if ((jJMHHOHBMNPCase_ == 739) && (dODGJCLOEGHBuilder_ != null)) {
+          return dODGJCLOEGHBuilder_.getMessageOrBuilder();
+        } else {
+          if (jJMHHOHBMNPCase_ == 739) {
+            return (emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBA) jJMHHOHBMNP_;
+          }
+          return emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBA.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.EOIJDJGCEBA DODGJCLOEGH = 739;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBA, emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBA.Builder, emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBAOrBuilder> 
+          getDODGJCLOEGHFieldBuilder() {
+        if (dODGJCLOEGHBuilder_ == null) {
+          if (!(jJMHHOHBMNPCase_ == 739)) {
+            jJMHHOHBMNP_ = emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBA.getDefaultInstance();
+          }
+          dODGJCLOEGHBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBA, emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBA.Builder, emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBAOrBuilder>(
+                  (emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.EOIJDJGCEBA) jJMHHOHBMNP_,
+                  getParentForChildren(),
+                  isClean());
+          jJMHHOHBMNP_ = null;
+        }
+        jJMHHOHBMNPCase_ = 739;
+        onChanged();;
+        return dODGJCLOEGHBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCG, emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCG.Builder, emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCGOrBuilder> gKPBPPIGNKIBuilder_;
+      /**
+       * <code>.CKGOHJGMCCG GKPBPPIGNKI = 482;</code>
+       * @return Whether the gKPBPPIGNKI field is set.
+       */
+      @java.lang.Override
+      public boolean hasGKPBPPIGNKI() {
+        return jJMHHOHBMNPCase_ == 482;
+      }
+      /**
+       * <code>.CKGOHJGMCCG GKPBPPIGNKI = 482;</code>
+       * @return The gKPBPPIGNKI.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCG getGKPBPPIGNKI() {
+        if (gKPBPPIGNKIBuilder_ == null) {
+          if (jJMHHOHBMNPCase_ == 482) {
+            return (emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCG) jJMHHOHBMNP_;
+          }
+          return emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCG.getDefaultInstance();
+        } else {
+          if (jJMHHOHBMNPCase_ == 482) {
+            return gKPBPPIGNKIBuilder_.getMessage();
+          }
+          return emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCG.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.CKGOHJGMCCG GKPBPPIGNKI = 482;</code>
+       */
+      public Builder setGKPBPPIGNKI(emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCG value) {
+        if (gKPBPPIGNKIBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          jJMHHOHBMNP_ = value;
+          onChanged();
+        } else {
+          gKPBPPIGNKIBuilder_.setMessage(value);
+        }
+        jJMHHOHBMNPCase_ = 482;
+        return this;
+      }
+      /**
+       * <code>.CKGOHJGMCCG GKPBPPIGNKI = 482;</code>
+       */
+      public Builder setGKPBPPIGNKI(
+          emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCG.Builder builderForValue) {
+        if (gKPBPPIGNKIBuilder_ == null) {
+          jJMHHOHBMNP_ = builderForValue.build();
+          onChanged();
+        } else {
+          gKPBPPIGNKIBuilder_.setMessage(builderForValue.build());
+        }
+        jJMHHOHBMNPCase_ = 482;
+        return this;
+      }
+      /**
+       * <code>.CKGOHJGMCCG GKPBPPIGNKI = 482;</code>
+       */
+      public Builder mergeGKPBPPIGNKI(emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCG value) {
+        if (gKPBPPIGNKIBuilder_ == null) {
+          if (jJMHHOHBMNPCase_ == 482 &&
+              jJMHHOHBMNP_ != emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCG.getDefaultInstance()) {
+            jJMHHOHBMNP_ = emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCG.newBuilder((emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCG) jJMHHOHBMNP_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            jJMHHOHBMNP_ = value;
+          }
+          onChanged();
+        } else {
+          if (jJMHHOHBMNPCase_ == 482) {
+            gKPBPPIGNKIBuilder_.mergeFrom(value);
+          }
+          gKPBPPIGNKIBuilder_.setMessage(value);
+        }
+        jJMHHOHBMNPCase_ = 482;
+        return this;
+      }
+      /**
+       * <code>.CKGOHJGMCCG GKPBPPIGNKI = 482;</code>
+       */
+      public Builder clearGKPBPPIGNKI() {
+        if (gKPBPPIGNKIBuilder_ == null) {
+          if (jJMHHOHBMNPCase_ == 482) {
+            jJMHHOHBMNPCase_ = 0;
+            jJMHHOHBMNP_ = null;
+            onChanged();
+          }
+        } else {
+          if (jJMHHOHBMNPCase_ == 482) {
+            jJMHHOHBMNPCase_ = 0;
+            jJMHHOHBMNP_ = null;
+          }
+          gKPBPPIGNKIBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.CKGOHJGMCCG GKPBPPIGNKI = 482;</code>
+       */
+      public emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCG.Builder getGKPBPPIGNKIBuilder() {
+        return getGKPBPPIGNKIFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.CKGOHJGMCCG GKPBPPIGNKI = 482;</code>
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCGOrBuilder getGKPBPPIGNKIOrBuilder() {
+        if ((jJMHHOHBMNPCase_ == 482) && (gKPBPPIGNKIBuilder_ != null)) {
+          return gKPBPPIGNKIBuilder_.getMessageOrBuilder();
+        } else {
+          if (jJMHHOHBMNPCase_ == 482) {
+            return (emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCG) jJMHHOHBMNP_;
+          }
+          return emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCG.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.CKGOHJGMCCG GKPBPPIGNKI = 482;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCG, emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCG.Builder, emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCGOrBuilder> 
+          getGKPBPPIGNKIFieldBuilder() {
+        if (gKPBPPIGNKIBuilder_ == null) {
+          if (!(jJMHHOHBMNPCase_ == 482)) {
+            jJMHHOHBMNP_ = emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCG.getDefaultInstance();
+          }
+          gKPBPPIGNKIBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCG, emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCG.Builder, emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCGOrBuilder>(
+                  (emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.CKGOHJGMCCG) jJMHHOHBMNP_,
+                  getParentForChildren(),
+                  isClean());
+          jJMHHOHBMNP_ = null;
+        }
+        jJMHHOHBMNPCase_ = 482;
+        onChanged();;
+        return gKPBPPIGNKIBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1803,33 +2172,40 @@ public final class GCGSettleNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025GCGSettleNotify.proto\032\031GCGGameBusiness" +
-      "Type.proto\032\022GCGEndReason.proto\032\017ItemPara" +
-      "m.proto\"\211\002\n\017GCGSettleNotify\022\017\n\007game_id\030\002" +
-      " \001(\r\022\"\n\032finished_challenge_id_list\030\013 \003(\r" +
-      "\022\031\n\021win_controller_id\030\n \001(\r\022$\n\034forbid_fi" +
-      "nish_challenge_list\030\010 \003(\r\022\016\n\006is_win\030\014 \001(" +
-      "\010\022$\n\020reward_item_list\030\004 \003(\0132\n.ItemParam\022" +
-      "+\n\rbusiness_type\030\017 \001(\0162\024.GCGGameBusiness" +
-      "Type\022\035\n\006reason\030\007 \001(\0162\r.GCGEndReasonB\033\n\031e" +
-      "mu.grasscutter.net.protob\006proto3"
+      "\n\025GCGSettleNotify.proto\032\017ItemParam.proto" +
+      "\032\021LABBALOFHKB.proto\032\022GCGEndReason.proto\032" +
+      "\021EOIJDJGCEBA.proto\032\021CKGOHJGMCCG.proto\"\315\002" +
+      "\n\017GCGSettleNotify\022\"\n\032finished_challenge_" +
+      "id_list\030\t \003(\r\022\016\n\006is_win\030\004 \001(\010\022\031\n\021win_con" +
+      "troller_id\030\006 \001(\r\022$\n\020reward_item_list\030\001 \003" +
+      "(\0132\n.ItemParam\022\023\n\013OPGBGHPHELB\030\013 \001(\r\022\023\n\013C" +
+      "GOPKBDOOFH\030\016 \003(\r\022!\n\013LNPHMHEEEOL\030\014 \001(\0162\014." +
+      "LABBALOFHKB\022\035\n\006reason\030\r \001(\0162\r.GCGEndReas" +
+      "on\022$\n\013DODGJCLOEGH\030\343\005 \001(\0132\014.EOIJDJGCEBAH\000" +
+      "\022$\n\013GKPBPPIGNKI\030\342\003 \001(\0132\014.CKGOHJGMCCGH\000B\r" +
+      "\n\013JJMHHOHBMNPB\033\n\031emu.grasscutter.net.pro" +
+      "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.GCGEndReasonOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.ItemParamOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.LABBALOFHKBOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.GCGEndReasonOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.getDescriptor(),
         });
     internal_static_GCGSettleNotify_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_GCGSettleNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGSettleNotify_descriptor,
-        new java.lang.String[] { "GameId", "FinishedChallengeIdList", "WinControllerId", "ForbidFinishChallengeList", "IsWin", "RewardItemList", "BusinessType", "Reason", });
-    emu.grasscutter.net.proto.GCGGameBusinessTypeOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.GCGEndReasonOuterClass.getDescriptor();
+        new java.lang.String[] { "FinishedChallengeIdList", "IsWin", "WinControllerId", "RewardItemList", "OPGBGHPHELB", "CGOPKBDOOFH", "LNPHMHEEEOL", "Reason", "DODGJCLOEGH", "GKPBPPIGNKI", "JJMHHOHBMNP", });
     emu.grasscutter.net.proto.ItemParamOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.LABBALOFHKBOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.GCGEndReasonOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.EOIJDJGCEBAOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.CKGOHJGMCCGOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

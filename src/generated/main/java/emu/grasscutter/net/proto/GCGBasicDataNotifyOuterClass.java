@@ -19,50 +19,38 @@ public final class GCGBasicDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 exp = 11;</code>
+     * <code>uint32 exp = 10;</code>
      * @return The exp.
      */
     int getExp();
 
     /**
-     * <code>uint32 level = 7;</code>
-     * @return The level.
-     */
-    int getLevel();
-
-    /**
-     * <pre>
-     *IAADAMKHBIL snooswap
-     * </pre>
-     *
-     * <code>repeated uint32 level_reward_taken_list = 9;</code>
+     * <code>repeated uint32 level_reward_taken_list = 13;</code>
      * @return A list containing the levelRewardTakenList.
      */
     java.util.List<java.lang.Integer> getLevelRewardTakenListList();
     /**
-     * <pre>
-     *IAADAMKHBIL snooswap
-     * </pre>
-     *
-     * <code>repeated uint32 level_reward_taken_list = 9;</code>
+     * <code>repeated uint32 level_reward_taken_list = 13;</code>
      * @return The count of levelRewardTakenList.
      */
     int getLevelRewardTakenListCount();
     /**
-     * <pre>
-     *IAADAMKHBIL snooswap
-     * </pre>
-     *
-     * <code>repeated uint32 level_reward_taken_list = 9;</code>
+     * <code>repeated uint32 level_reward_taken_list = 13;</code>
      * @param index The index of the element to return.
      * @return The levelRewardTakenList at the given index.
      */
     int getLevelRewardTakenList(int index);
+
+    /**
+     * <code>uint32 level = 4;</code>
+     * @return The level.
+     */
+    int getLevel();
   }
   /**
    * <pre>
-   * Name: LBCFEPONBPJ
-   * CmdId: 7005
+   * CmdId: 7514
+   * Obf: CBOGDEPDNHD
    * </pre>
    *
    * Protobuf type {@code GCGBasicDataNotify}
@@ -111,12 +99,17 @@ public final class GCGBasicDataNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 32: {
 
               level_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 80: {
+
+              exp_ = input.readUInt32();
+              break;
+            }
+            case 104: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 levelRewardTakenList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -124,7 +117,7 @@ public final class GCGBasicDataNotifyOuterClass {
               levelRewardTakenList_.addInt(input.readUInt32());
               break;
             }
-            case 74: {
+            case 106: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -135,11 +128,6 @@ public final class GCGBasicDataNotifyOuterClass {
                 levelRewardTakenList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 88: {
-
-              exp_ = input.readUInt32();
               break;
             }
             default: {
@@ -177,10 +165,10 @@ public final class GCGBasicDataNotifyOuterClass {
               emu.grasscutter.net.proto.GCGBasicDataNotifyOuterClass.GCGBasicDataNotify.class, emu.grasscutter.net.proto.GCGBasicDataNotifyOuterClass.GCGBasicDataNotify.Builder.class);
     }
 
-    public static final int EXP_FIELD_NUMBER = 11;
+    public static final int EXP_FIELD_NUMBER = 10;
     private int exp_;
     /**
-     * <code>uint32 exp = 11;</code>
+     * <code>uint32 exp = 10;</code>
      * @return The exp.
      */
     @java.lang.Override
@@ -188,25 +176,10 @@ public final class GCGBasicDataNotifyOuterClass {
       return exp_;
     }
 
-    public static final int LEVEL_FIELD_NUMBER = 7;
-    private int level_;
-    /**
-     * <code>uint32 level = 7;</code>
-     * @return The level.
-     */
-    @java.lang.Override
-    public int getLevel() {
-      return level_;
-    }
-
-    public static final int LEVEL_REWARD_TAKEN_LIST_FIELD_NUMBER = 9;
+    public static final int LEVEL_REWARD_TAKEN_LIST_FIELD_NUMBER = 13;
     private com.google.protobuf.Internal.IntList levelRewardTakenList_;
     /**
-     * <pre>
-     *IAADAMKHBIL snooswap
-     * </pre>
-     *
-     * <code>repeated uint32 level_reward_taken_list = 9;</code>
+     * <code>repeated uint32 level_reward_taken_list = 13;</code>
      * @return A list containing the levelRewardTakenList.
      */
     @java.lang.Override
@@ -215,22 +188,14 @@ public final class GCGBasicDataNotifyOuterClass {
       return levelRewardTakenList_;
     }
     /**
-     * <pre>
-     *IAADAMKHBIL snooswap
-     * </pre>
-     *
-     * <code>repeated uint32 level_reward_taken_list = 9;</code>
+     * <code>repeated uint32 level_reward_taken_list = 13;</code>
      * @return The count of levelRewardTakenList.
      */
     public int getLevelRewardTakenListCount() {
       return levelRewardTakenList_.size();
     }
     /**
-     * <pre>
-     *IAADAMKHBIL snooswap
-     * </pre>
-     *
-     * <code>repeated uint32 level_reward_taken_list = 9;</code>
+     * <code>repeated uint32 level_reward_taken_list = 13;</code>
      * @param index The index of the element to return.
      * @return The levelRewardTakenList at the given index.
      */
@@ -238,6 +203,17 @@ public final class GCGBasicDataNotifyOuterClass {
       return levelRewardTakenList_.getInt(index);
     }
     private int levelRewardTakenListMemoizedSerializedSize = -1;
+
+    public static final int LEVEL_FIELD_NUMBER = 4;
+    private int level_;
+    /**
+     * <code>uint32 level = 4;</code>
+     * @return The level.
+     */
+    @java.lang.Override
+    public int getLevel() {
+      return level_;
+    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -255,17 +231,17 @@ public final class GCGBasicDataNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (level_ != 0) {
-        output.writeUInt32(7, level_);
+        output.writeUInt32(4, level_);
+      }
+      if (exp_ != 0) {
+        output.writeUInt32(10, exp_);
       }
       if (getLevelRewardTakenListList().size() > 0) {
-        output.writeUInt32NoTag(74);
+        output.writeUInt32NoTag(106);
         output.writeUInt32NoTag(levelRewardTakenListMemoizedSerializedSize);
       }
       for (int i = 0; i < levelRewardTakenList_.size(); i++) {
         output.writeUInt32NoTag(levelRewardTakenList_.getInt(i));
-      }
-      if (exp_ != 0) {
-        output.writeUInt32(11, exp_);
       }
       unknownFields.writeTo(output);
     }
@@ -278,7 +254,11 @@ public final class GCGBasicDataNotifyOuterClass {
       size = 0;
       if (level_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, level_);
+          .computeUInt32Size(4, level_);
+      }
+      if (exp_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, exp_);
       }
       {
         int dataSize = 0;
@@ -293,10 +273,6 @@ public final class GCGBasicDataNotifyOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         levelRewardTakenListMemoizedSerializedSize = dataSize;
-      }
-      if (exp_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, exp_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -315,10 +291,10 @@ public final class GCGBasicDataNotifyOuterClass {
 
       if (getExp()
           != other.getExp()) return false;
-      if (getLevel()
-          != other.getLevel()) return false;
       if (!getLevelRewardTakenListList()
           .equals(other.getLevelRewardTakenListList())) return false;
+      if (getLevel()
+          != other.getLevel()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -332,12 +308,12 @@ public final class GCGBasicDataNotifyOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + EXP_FIELD_NUMBER;
       hash = (53 * hash) + getExp();
-      hash = (37 * hash) + LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getLevel();
       if (getLevelRewardTakenListCount() > 0) {
         hash = (37 * hash) + LEVEL_REWARD_TAKEN_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getLevelRewardTakenListList().hashCode();
       }
+      hash = (37 * hash) + LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getLevel();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -435,8 +411,8 @@ public final class GCGBasicDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: LBCFEPONBPJ
-     * CmdId: 7005
+     * CmdId: 7514
+     * Obf: CBOGDEPDNHD
      * </pre>
      *
      * Protobuf type {@code GCGBasicDataNotify}
@@ -478,10 +454,10 @@ public final class GCGBasicDataNotifyOuterClass {
         super.clear();
         exp_ = 0;
 
-        level_ = 0;
-
         levelRewardTakenList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        level_ = 0;
+
         return this;
       }
 
@@ -510,12 +486,12 @@ public final class GCGBasicDataNotifyOuterClass {
         emu.grasscutter.net.proto.GCGBasicDataNotifyOuterClass.GCGBasicDataNotify result = new emu.grasscutter.net.proto.GCGBasicDataNotifyOuterClass.GCGBasicDataNotify(this);
         int from_bitField0_ = bitField0_;
         result.exp_ = exp_;
-        result.level_ = level_;
         if (((bitField0_ & 0x00000001) != 0)) {
           levelRewardTakenList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.levelRewardTakenList_ = levelRewardTakenList_;
+        result.level_ = level_;
         onBuilt();
         return result;
       }
@@ -567,9 +543,6 @@ public final class GCGBasicDataNotifyOuterClass {
         if (other.getExp() != 0) {
           setExp(other.getExp());
         }
-        if (other.getLevel() != 0) {
-          setLevel(other.getLevel());
-        }
         if (!other.levelRewardTakenList_.isEmpty()) {
           if (levelRewardTakenList_.isEmpty()) {
             levelRewardTakenList_ = other.levelRewardTakenList_;
@@ -579,6 +552,9 @@ public final class GCGBasicDataNotifyOuterClass {
             levelRewardTakenList_.addAll(other.levelRewardTakenList_);
           }
           onChanged();
+        }
+        if (other.getLevel() != 0) {
+          setLevel(other.getLevel());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -612,7 +588,7 @@ public final class GCGBasicDataNotifyOuterClass {
 
       private int exp_ ;
       /**
-       * <code>uint32 exp = 11;</code>
+       * <code>uint32 exp = 10;</code>
        * @return The exp.
        */
       @java.lang.Override
@@ -620,7 +596,7 @@ public final class GCGBasicDataNotifyOuterClass {
         return exp_;
       }
       /**
-       * <code>uint32 exp = 11;</code>
+       * <code>uint32 exp = 10;</code>
        * @param value The exp to set.
        * @return This builder for chaining.
        */
@@ -631,43 +607,12 @@ public final class GCGBasicDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 exp = 11;</code>
+       * <code>uint32 exp = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearExp() {
         
         exp_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int level_ ;
-      /**
-       * <code>uint32 level = 7;</code>
-       * @return The level.
-       */
-      @java.lang.Override
-      public int getLevel() {
-        return level_;
-      }
-      /**
-       * <code>uint32 level = 7;</code>
-       * @param value The level to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevel(int value) {
-        
-        level_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevel() {
-        
-        level_ = 0;
         onChanged();
         return this;
       }
@@ -680,11 +625,7 @@ public final class GCGBasicDataNotifyOuterClass {
          }
       }
       /**
-       * <pre>
-       *IAADAMKHBIL snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 level_reward_taken_list = 9;</code>
+       * <code>repeated uint32 level_reward_taken_list = 13;</code>
        * @return A list containing the levelRewardTakenList.
        */
       public java.util.List<java.lang.Integer>
@@ -693,22 +634,14 @@ public final class GCGBasicDataNotifyOuterClass {
                  java.util.Collections.unmodifiableList(levelRewardTakenList_) : levelRewardTakenList_;
       }
       /**
-       * <pre>
-       *IAADAMKHBIL snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 level_reward_taken_list = 9;</code>
+       * <code>repeated uint32 level_reward_taken_list = 13;</code>
        * @return The count of levelRewardTakenList.
        */
       public int getLevelRewardTakenListCount() {
         return levelRewardTakenList_.size();
       }
       /**
-       * <pre>
-       *IAADAMKHBIL snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 level_reward_taken_list = 9;</code>
+       * <code>repeated uint32 level_reward_taken_list = 13;</code>
        * @param index The index of the element to return.
        * @return The levelRewardTakenList at the given index.
        */
@@ -716,11 +649,7 @@ public final class GCGBasicDataNotifyOuterClass {
         return levelRewardTakenList_.getInt(index);
       }
       /**
-       * <pre>
-       *IAADAMKHBIL snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 level_reward_taken_list = 9;</code>
+       * <code>repeated uint32 level_reward_taken_list = 13;</code>
        * @param index The index to set the value at.
        * @param value The levelRewardTakenList to set.
        * @return This builder for chaining.
@@ -733,11 +662,7 @@ public final class GCGBasicDataNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *IAADAMKHBIL snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 level_reward_taken_list = 9;</code>
+       * <code>repeated uint32 level_reward_taken_list = 13;</code>
        * @param value The levelRewardTakenList to add.
        * @return This builder for chaining.
        */
@@ -748,11 +673,7 @@ public final class GCGBasicDataNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *IAADAMKHBIL snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 level_reward_taken_list = 9;</code>
+       * <code>repeated uint32 level_reward_taken_list = 13;</code>
        * @param values The levelRewardTakenList to add.
        * @return This builder for chaining.
        */
@@ -765,16 +686,43 @@ public final class GCGBasicDataNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *IAADAMKHBIL snooswap
-       * </pre>
-       *
-       * <code>repeated uint32 level_reward_taken_list = 9;</code>
+       * <code>repeated uint32 level_reward_taken_list = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelRewardTakenList() {
         levelRewardTakenList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private int level_ ;
+      /**
+       * <code>uint32 level = 4;</code>
+       * @return The level.
+       */
+      @java.lang.Override
+      public int getLevel() {
+        return level_;
+      }
+      /**
+       * <code>uint32 level = 4;</code>
+       * @param value The level to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevel(int value) {
+        
+        level_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 level = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevel() {
+        
+        level_ = 0;
         onChanged();
         return this;
       }
@@ -846,8 +794,8 @@ public final class GCGBasicDataNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030GCGBasicDataNotify.proto\"Q\n\022GCGBasicDa" +
-      "taNotify\022\013\n\003exp\030\013 \001(\r\022\r\n\005level\030\007 \001(\r\022\037\n\027" +
-      "level_reward_taken_list\030\t \003(\rB\033\n\031emu.gra" +
+      "taNotify\022\013\n\003exp\030\n \001(\r\022\037\n\027level_reward_ta" +
+      "ken_list\030\r \003(\r\022\r\n\005level\030\004 \001(\rB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -859,7 +807,7 @@ public final class GCGBasicDataNotifyOuterClass {
     internal_static_GCGBasicDataNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGBasicDataNotify_descriptor,
-        new java.lang.String[] { "Exp", "Level", "LevelRewardTakenList", });
+        new java.lang.String[] { "Exp", "LevelRewardTakenList", "Level", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

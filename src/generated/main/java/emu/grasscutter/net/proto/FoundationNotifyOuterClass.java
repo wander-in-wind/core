@@ -19,30 +19,30 @@ public final class FoundationNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 gadget_entity_id = 11;</code>
-     * @return The gadgetEntityId.
-     */
-    int getGadgetEntityId();
-
-    /**
-     * <code>.FoundationInfo info = 12;</code>
+     * <code>.FoundationInfo info = 2;</code>
      * @return Whether the info field is set.
      */
     boolean hasInfo();
     /**
-     * <code>.FoundationInfo info = 12;</code>
+     * <code>.FoundationInfo info = 2;</code>
      * @return The info.
      */
     emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfo getInfo();
     /**
-     * <code>.FoundationInfo info = 12;</code>
+     * <code>.FoundationInfo info = 2;</code>
      */
     emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfoOrBuilder getInfoOrBuilder();
+
+    /**
+     * <code>uint32 gadget_entity_id = 5;</code>
+     * @return The gadgetEntityId.
+     */
+    int getGadgetEntityId();
   }
   /**
    * <pre>
-   * Name: CKGGJCDDFIG
-   * CmdId: 861
+   * CmdId: 838
+   * Obf: MLGJDILLNOB
    * </pre>
    *
    * Protobuf type {@code FoundationNotify}
@@ -89,12 +89,7 @@ public final class FoundationNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
-
-              gadgetEntityId_ = input.readUInt32();
-              break;
-            }
-            case 98: {
+            case 18: {
               emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfo.Builder subBuilder = null;
               if (info_ != null) {
                 subBuilder = info_.toBuilder();
@@ -105,6 +100,11 @@ public final class FoundationNotifyOuterClass {
                 info_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 40: {
+
+              gadgetEntityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -139,21 +139,10 @@ public final class FoundationNotifyOuterClass {
               emu.grasscutter.net.proto.FoundationNotifyOuterClass.FoundationNotify.class, emu.grasscutter.net.proto.FoundationNotifyOuterClass.FoundationNotify.Builder.class);
     }
 
-    public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 11;
-    private int gadgetEntityId_;
-    /**
-     * <code>uint32 gadget_entity_id = 11;</code>
-     * @return The gadgetEntityId.
-     */
-    @java.lang.Override
-    public int getGadgetEntityId() {
-      return gadgetEntityId_;
-    }
-
-    public static final int INFO_FIELD_NUMBER = 12;
+    public static final int INFO_FIELD_NUMBER = 2;
     private emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfo info_;
     /**
-     * <code>.FoundationInfo info = 12;</code>
+     * <code>.FoundationInfo info = 2;</code>
      * @return Whether the info field is set.
      */
     @java.lang.Override
@@ -161,7 +150,7 @@ public final class FoundationNotifyOuterClass {
       return info_ != null;
     }
     /**
-     * <code>.FoundationInfo info = 12;</code>
+     * <code>.FoundationInfo info = 2;</code>
      * @return The info.
      */
     @java.lang.Override
@@ -169,11 +158,22 @@ public final class FoundationNotifyOuterClass {
       return info_ == null ? emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfo.getDefaultInstance() : info_;
     }
     /**
-     * <code>.FoundationInfo info = 12;</code>
+     * <code>.FoundationInfo info = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfoOrBuilder getInfoOrBuilder() {
       return getInfo();
+    }
+
+    public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 5;
+    private int gadgetEntityId_;
+    /**
+     * <code>uint32 gadget_entity_id = 5;</code>
+     * @return The gadgetEntityId.
+     */
+    @java.lang.Override
+    public int getGadgetEntityId() {
+      return gadgetEntityId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -190,11 +190,11 @@ public final class FoundationNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (gadgetEntityId_ != 0) {
-        output.writeUInt32(11, gadgetEntityId_);
-      }
       if (info_ != null) {
-        output.writeMessage(12, getInfo());
+        output.writeMessage(2, getInfo());
+      }
+      if (gadgetEntityId_ != 0) {
+        output.writeUInt32(5, gadgetEntityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -205,13 +205,13 @@ public final class FoundationNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (gadgetEntityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, gadgetEntityId_);
-      }
       if (info_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, getInfo());
+          .computeMessageSize(2, getInfo());
+      }
+      if (gadgetEntityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, gadgetEntityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -228,13 +228,13 @@ public final class FoundationNotifyOuterClass {
       }
       emu.grasscutter.net.proto.FoundationNotifyOuterClass.FoundationNotify other = (emu.grasscutter.net.proto.FoundationNotifyOuterClass.FoundationNotify) obj;
 
-      if (getGadgetEntityId()
-          != other.getGadgetEntityId()) return false;
       if (hasInfo() != other.hasInfo()) return false;
       if (hasInfo()) {
         if (!getInfo()
             .equals(other.getInfo())) return false;
       }
+      if (getGadgetEntityId()
+          != other.getGadgetEntityId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -246,12 +246,12 @@ public final class FoundationNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + GADGET_ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGadgetEntityId();
       if (hasInfo()) {
         hash = (37 * hash) + INFO_FIELD_NUMBER;
         hash = (53 * hash) + getInfo().hashCode();
       }
+      hash = (37 * hash) + GADGET_ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGadgetEntityId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -349,8 +349,8 @@ public final class FoundationNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: CKGGJCDDFIG
-     * CmdId: 861
+     * CmdId: 838
+     * Obf: MLGJDILLNOB
      * </pre>
      *
      * Protobuf type {@code FoundationNotify}
@@ -390,14 +390,14 @@ public final class FoundationNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        gadgetEntityId_ = 0;
-
         if (infoBuilder_ == null) {
           info_ = null;
         } else {
           info_ = null;
           infoBuilder_ = null;
         }
+        gadgetEntityId_ = 0;
+
         return this;
       }
 
@@ -424,12 +424,12 @@ public final class FoundationNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FoundationNotifyOuterClass.FoundationNotify buildPartial() {
         emu.grasscutter.net.proto.FoundationNotifyOuterClass.FoundationNotify result = new emu.grasscutter.net.proto.FoundationNotifyOuterClass.FoundationNotify(this);
-        result.gadgetEntityId_ = gadgetEntityId_;
         if (infoBuilder_ == null) {
           result.info_ = info_;
         } else {
           result.info_ = infoBuilder_.build();
         }
+        result.gadgetEntityId_ = gadgetEntityId_;
         onBuilt();
         return result;
       }
@@ -478,11 +478,11 @@ public final class FoundationNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FoundationNotifyOuterClass.FoundationNotify other) {
         if (other == emu.grasscutter.net.proto.FoundationNotifyOuterClass.FoundationNotify.getDefaultInstance()) return this;
-        if (other.getGadgetEntityId() != 0) {
-          setGadgetEntityId(other.getGadgetEntityId());
-        }
         if (other.hasInfo()) {
           mergeInfo(other.getInfo());
+        }
+        if (other.getGadgetEntityId() != 0) {
+          setGadgetEntityId(other.getGadgetEntityId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -513,49 +513,18 @@ public final class FoundationNotifyOuterClass {
         return this;
       }
 
-      private int gadgetEntityId_ ;
-      /**
-       * <code>uint32 gadget_entity_id = 11;</code>
-       * @return The gadgetEntityId.
-       */
-      @java.lang.Override
-      public int getGadgetEntityId() {
-        return gadgetEntityId_;
-      }
-      /**
-       * <code>uint32 gadget_entity_id = 11;</code>
-       * @param value The gadgetEntityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGadgetEntityId(int value) {
-        
-        gadgetEntityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 gadget_entity_id = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGadgetEntityId() {
-        
-        gadgetEntityId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfo info_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfo, emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfo.Builder, emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfoOrBuilder> infoBuilder_;
       /**
-       * <code>.FoundationInfo info = 12;</code>
+       * <code>.FoundationInfo info = 2;</code>
        * @return Whether the info field is set.
        */
       public boolean hasInfo() {
         return infoBuilder_ != null || info_ != null;
       }
       /**
-       * <code>.FoundationInfo info = 12;</code>
+       * <code>.FoundationInfo info = 2;</code>
        * @return The info.
        */
       public emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfo getInfo() {
@@ -566,7 +535,7 @@ public final class FoundationNotifyOuterClass {
         }
       }
       /**
-       * <code>.FoundationInfo info = 12;</code>
+       * <code>.FoundationInfo info = 2;</code>
        */
       public Builder setInfo(emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfo value) {
         if (infoBuilder_ == null) {
@@ -582,7 +551,7 @@ public final class FoundationNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.FoundationInfo info = 12;</code>
+       * <code>.FoundationInfo info = 2;</code>
        */
       public Builder setInfo(
           emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfo.Builder builderForValue) {
@@ -596,7 +565,7 @@ public final class FoundationNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.FoundationInfo info = 12;</code>
+       * <code>.FoundationInfo info = 2;</code>
        */
       public Builder mergeInfo(emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfo value) {
         if (infoBuilder_ == null) {
@@ -614,7 +583,7 @@ public final class FoundationNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.FoundationInfo info = 12;</code>
+       * <code>.FoundationInfo info = 2;</code>
        */
       public Builder clearInfo() {
         if (infoBuilder_ == null) {
@@ -628,7 +597,7 @@ public final class FoundationNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.FoundationInfo info = 12;</code>
+       * <code>.FoundationInfo info = 2;</code>
        */
       public emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfo.Builder getInfoBuilder() {
         
@@ -636,7 +605,7 @@ public final class FoundationNotifyOuterClass {
         return getInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.FoundationInfo info = 12;</code>
+       * <code>.FoundationInfo info = 2;</code>
        */
       public emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfoOrBuilder getInfoOrBuilder() {
         if (infoBuilder_ != null) {
@@ -647,7 +616,7 @@ public final class FoundationNotifyOuterClass {
         }
       }
       /**
-       * <code>.FoundationInfo info = 12;</code>
+       * <code>.FoundationInfo info = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfo, emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfo.Builder, emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfoOrBuilder> 
@@ -661,6 +630,37 @@ public final class FoundationNotifyOuterClass {
           info_ = null;
         }
         return infoBuilder_;
+      }
+
+      private int gadgetEntityId_ ;
+      /**
+       * <code>uint32 gadget_entity_id = 5;</code>
+       * @return The gadgetEntityId.
+       */
+      @java.lang.Override
+      public int getGadgetEntityId() {
+        return gadgetEntityId_;
+      }
+      /**
+       * <code>uint32 gadget_entity_id = 5;</code>
+       * @param value The gadgetEntityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGadgetEntityId(int value) {
+        
+        gadgetEntityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 gadget_entity_id = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGadgetEntityId() {
+        
+        gadgetEntityId_ = 0;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -730,9 +730,9 @@ public final class FoundationNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026FoundationNotify.proto\032\024FoundationInfo" +
-      ".proto\"K\n\020FoundationNotify\022\030\n\020gadget_ent" +
-      "ity_id\030\013 \001(\r\022\035\n\004info\030\014 \001(\0132\017.FoundationI" +
-      "nfoB\033\n\031emu.grasscutter.net.protob\006proto3"
+      ".proto\"K\n\020FoundationNotify\022\035\n\004info\030\002 \001(\013" +
+      "2\017.FoundationInfo\022\030\n\020gadget_entity_id\030\005 " +
+      "\001(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -744,7 +744,7 @@ public final class FoundationNotifyOuterClass {
     internal_static_FoundationNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FoundationNotify_descriptor,
-        new java.lang.String[] { "GadgetEntityId", "Info", });
+        new java.lang.String[] { "Info", "GadgetEntityId", });
     emu.grasscutter.net.proto.FoundationInfoOuterClass.getDescriptor();
   }
 

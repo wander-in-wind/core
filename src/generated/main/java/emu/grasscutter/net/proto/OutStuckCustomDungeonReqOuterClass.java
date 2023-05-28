@@ -20,8 +20,8 @@ public final class OutStuckCustomDungeonReqOuterClass {
   }
   /**
    * <pre>
-   * Name: JDDIMPMFOLC
-   * CmdId: 6227
+   * CmdId: 6232
+   * Obf: DBOACICOHED
    * </pre>
    *
    * Protobuf type {@code OutStuckCustomDungeonReq}
@@ -246,8 +246,8 @@ public final class OutStuckCustomDungeonReqOuterClass {
     }
     /**
      * <pre>
-     * Name: JDDIMPMFOLC
-     * CmdId: 6227
+     * CmdId: 6232
+     * Obf: DBOACICOHED
      * </pre>
      *
      * Protobuf type {@code OutStuckCustomDungeonReq}

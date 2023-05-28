@@ -19,29 +19,29 @@ public final class LuminanceStoneChallengeSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_new_record = 10;</code>
+     * <code>bool is_new_record = 12;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
 
     /**
-     * <code>.LuminanceStoneChallengeGallerySettleInfo settle_info = 15;</code>
+     * <code>.LuminanceStoneChallengeGallerySettleInfo settle_info = 4;</code>
      * @return Whether the settleInfo field is set.
      */
     boolean hasSettleInfo();
     /**
-     * <code>.LuminanceStoneChallengeGallerySettleInfo settle_info = 15;</code>
+     * <code>.LuminanceStoneChallengeGallerySettleInfo settle_info = 4;</code>
      * @return The settleInfo.
      */
     emu.grasscutter.net.proto.LuminanceStoneChallengeGallerySettleInfoOuterClass.LuminanceStoneChallengeGallerySettleInfo getSettleInfo();
     /**
-     * <code>.LuminanceStoneChallengeGallerySettleInfo settle_info = 15;</code>
+     * <code>.LuminanceStoneChallengeGallerySettleInfo settle_info = 4;</code>
      */
     emu.grasscutter.net.proto.LuminanceStoneChallengeGallerySettleInfoOuterClass.LuminanceStoneChallengeGallerySettleInfoOrBuilder getSettleInfoOrBuilder();
   }
   /**
    * <pre>
-   * Name: DIEEDAKFLAJ
+   * Obf: FHILFJLJAAN
    * </pre>
    *
    * Protobuf type {@code LuminanceStoneChallengeSettleInfo}
@@ -88,12 +88,7 @@ public final class LuminanceStoneChallengeSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
-
-              isNewRecord_ = input.readBool();
-              break;
-            }
-            case 122: {
+            case 34: {
               emu.grasscutter.net.proto.LuminanceStoneChallengeGallerySettleInfoOuterClass.LuminanceStoneChallengeGallerySettleInfo.Builder subBuilder = null;
               if (settleInfo_ != null) {
                 subBuilder = settleInfo_.toBuilder();
@@ -104,6 +99,11 @@ public final class LuminanceStoneChallengeSettleInfoOuterClass {
                 settleInfo_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 96: {
+
+              isNewRecord_ = input.readBool();
               break;
             }
             default: {
@@ -138,10 +138,10 @@ public final class LuminanceStoneChallengeSettleInfoOuterClass {
               emu.grasscutter.net.proto.LuminanceStoneChallengeSettleInfoOuterClass.LuminanceStoneChallengeSettleInfo.class, emu.grasscutter.net.proto.LuminanceStoneChallengeSettleInfoOuterClass.LuminanceStoneChallengeSettleInfo.Builder.class);
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 10;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 12;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 10;</code>
+     * <code>bool is_new_record = 12;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
@@ -149,10 +149,10 @@ public final class LuminanceStoneChallengeSettleInfoOuterClass {
       return isNewRecord_;
     }
 
-    public static final int SETTLE_INFO_FIELD_NUMBER = 15;
+    public static final int SETTLE_INFO_FIELD_NUMBER = 4;
     private emu.grasscutter.net.proto.LuminanceStoneChallengeGallerySettleInfoOuterClass.LuminanceStoneChallengeGallerySettleInfo settleInfo_;
     /**
-     * <code>.LuminanceStoneChallengeGallerySettleInfo settle_info = 15;</code>
+     * <code>.LuminanceStoneChallengeGallerySettleInfo settle_info = 4;</code>
      * @return Whether the settleInfo field is set.
      */
     @java.lang.Override
@@ -160,7 +160,7 @@ public final class LuminanceStoneChallengeSettleInfoOuterClass {
       return settleInfo_ != null;
     }
     /**
-     * <code>.LuminanceStoneChallengeGallerySettleInfo settle_info = 15;</code>
+     * <code>.LuminanceStoneChallengeGallerySettleInfo settle_info = 4;</code>
      * @return The settleInfo.
      */
     @java.lang.Override
@@ -168,7 +168,7 @@ public final class LuminanceStoneChallengeSettleInfoOuterClass {
       return settleInfo_ == null ? emu.grasscutter.net.proto.LuminanceStoneChallengeGallerySettleInfoOuterClass.LuminanceStoneChallengeGallerySettleInfo.getDefaultInstance() : settleInfo_;
     }
     /**
-     * <code>.LuminanceStoneChallengeGallerySettleInfo settle_info = 15;</code>
+     * <code>.LuminanceStoneChallengeGallerySettleInfo settle_info = 4;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.LuminanceStoneChallengeGallerySettleInfoOuterClass.LuminanceStoneChallengeGallerySettleInfoOrBuilder getSettleInfoOrBuilder() {
@@ -189,11 +189,11 @@ public final class LuminanceStoneChallengeSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isNewRecord_ != false) {
-        output.writeBool(10, isNewRecord_);
-      }
       if (settleInfo_ != null) {
-        output.writeMessage(15, getSettleInfo());
+        output.writeMessage(4, getSettleInfo());
+      }
+      if (isNewRecord_ != false) {
+        output.writeBool(12, isNewRecord_);
       }
       unknownFields.writeTo(output);
     }
@@ -204,13 +204,13 @@ public final class LuminanceStoneChallengeSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isNewRecord_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isNewRecord_);
-      }
       if (settleInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, getSettleInfo());
+          .computeMessageSize(4, getSettleInfo());
+      }
+      if (isNewRecord_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(12, isNewRecord_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -349,7 +349,7 @@ public final class LuminanceStoneChallengeSettleInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: DIEEDAKFLAJ
+     * Obf: FHILFJLJAAN
      * </pre>
      *
      * Protobuf type {@code LuminanceStoneChallengeSettleInfo}
@@ -514,7 +514,7 @@ public final class LuminanceStoneChallengeSettleInfoOuterClass {
 
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 10;</code>
+       * <code>bool is_new_record = 12;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -522,7 +522,7 @@ public final class LuminanceStoneChallengeSettleInfoOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 10;</code>
+       * <code>bool is_new_record = 12;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -533,7 +533,7 @@ public final class LuminanceStoneChallengeSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 10;</code>
+       * <code>bool is_new_record = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
@@ -547,14 +547,14 @@ public final class LuminanceStoneChallengeSettleInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.LuminanceStoneChallengeGallerySettleInfoOuterClass.LuminanceStoneChallengeGallerySettleInfo, emu.grasscutter.net.proto.LuminanceStoneChallengeGallerySettleInfoOuterClass.LuminanceStoneChallengeGallerySettleInfo.Builder, emu.grasscutter.net.proto.LuminanceStoneChallengeGallerySettleInfoOuterClass.LuminanceStoneChallengeGallerySettleInfoOrBuilder> settleInfoBuilder_;
       /**
-       * <code>.LuminanceStoneChallengeGallerySettleInfo settle_info = 15;</code>
+       * <code>.LuminanceStoneChallengeGallerySettleInfo settle_info = 4;</code>
        * @return Whether the settleInfo field is set.
        */
       public boolean hasSettleInfo() {
         return settleInfoBuilder_ != null || settleInfo_ != null;
       }
       /**
-       * <code>.LuminanceStoneChallengeGallerySettleInfo settle_info = 15;</code>
+       * <code>.LuminanceStoneChallengeGallerySettleInfo settle_info = 4;</code>
        * @return The settleInfo.
        */
       public emu.grasscutter.net.proto.LuminanceStoneChallengeGallerySettleInfoOuterClass.LuminanceStoneChallengeGallerySettleInfo getSettleInfo() {
@@ -565,7 +565,7 @@ public final class LuminanceStoneChallengeSettleInfoOuterClass {
         }
       }
       /**
-       * <code>.LuminanceStoneChallengeGallerySettleInfo settle_info = 15;</code>
+       * <code>.LuminanceStoneChallengeGallerySettleInfo settle_info = 4;</code>
        */
       public Builder setSettleInfo(emu.grasscutter.net.proto.LuminanceStoneChallengeGallerySettleInfoOuterClass.LuminanceStoneChallengeGallerySettleInfo value) {
         if (settleInfoBuilder_ == null) {
@@ -581,7 +581,7 @@ public final class LuminanceStoneChallengeSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.LuminanceStoneChallengeGallerySettleInfo settle_info = 15;</code>
+       * <code>.LuminanceStoneChallengeGallerySettleInfo settle_info = 4;</code>
        */
       public Builder setSettleInfo(
           emu.grasscutter.net.proto.LuminanceStoneChallengeGallerySettleInfoOuterClass.LuminanceStoneChallengeGallerySettleInfo.Builder builderForValue) {
@@ -595,7 +595,7 @@ public final class LuminanceStoneChallengeSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.LuminanceStoneChallengeGallerySettleInfo settle_info = 15;</code>
+       * <code>.LuminanceStoneChallengeGallerySettleInfo settle_info = 4;</code>
        */
       public Builder mergeSettleInfo(emu.grasscutter.net.proto.LuminanceStoneChallengeGallerySettleInfoOuterClass.LuminanceStoneChallengeGallerySettleInfo value) {
         if (settleInfoBuilder_ == null) {
@@ -613,7 +613,7 @@ public final class LuminanceStoneChallengeSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.LuminanceStoneChallengeGallerySettleInfo settle_info = 15;</code>
+       * <code>.LuminanceStoneChallengeGallerySettleInfo settle_info = 4;</code>
        */
       public Builder clearSettleInfo() {
         if (settleInfoBuilder_ == null) {
@@ -627,7 +627,7 @@ public final class LuminanceStoneChallengeSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.LuminanceStoneChallengeGallerySettleInfo settle_info = 15;</code>
+       * <code>.LuminanceStoneChallengeGallerySettleInfo settle_info = 4;</code>
        */
       public emu.grasscutter.net.proto.LuminanceStoneChallengeGallerySettleInfoOuterClass.LuminanceStoneChallengeGallerySettleInfo.Builder getSettleInfoBuilder() {
         
@@ -635,7 +635,7 @@ public final class LuminanceStoneChallengeSettleInfoOuterClass {
         return getSettleInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.LuminanceStoneChallengeGallerySettleInfo settle_info = 15;</code>
+       * <code>.LuminanceStoneChallengeGallerySettleInfo settle_info = 4;</code>
        */
       public emu.grasscutter.net.proto.LuminanceStoneChallengeGallerySettleInfoOuterClass.LuminanceStoneChallengeGallerySettleInfoOrBuilder getSettleInfoOrBuilder() {
         if (settleInfoBuilder_ != null) {
@@ -646,7 +646,7 @@ public final class LuminanceStoneChallengeSettleInfoOuterClass {
         }
       }
       /**
-       * <code>.LuminanceStoneChallengeGallerySettleInfo settle_info = 15;</code>
+       * <code>.LuminanceStoneChallengeGallerySettleInfo settle_info = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.LuminanceStoneChallengeGallerySettleInfoOuterClass.LuminanceStoneChallengeGallerySettleInfo, emu.grasscutter.net.proto.LuminanceStoneChallengeGallerySettleInfoOuterClass.LuminanceStoneChallengeGallerySettleInfo.Builder, emu.grasscutter.net.proto.LuminanceStoneChallengeGallerySettleInfoOuterClass.LuminanceStoneChallengeGallerySettleInfoOrBuilder> 
@@ -731,8 +731,8 @@ public final class LuminanceStoneChallengeSettleInfoOuterClass {
       "\n\'LuminanceStoneChallengeSettleInfo.prot" +
       "o\032.LuminanceStoneChallengeGallerySettleI" +
       "nfo.proto\"z\n!LuminanceStoneChallengeSett" +
-      "leInfo\022\025\n\ris_new_record\030\n \001(\010\022>\n\013settle_" +
-      "info\030\017 \001(\0132).LuminanceStoneChallengeGall" +
+      "leInfo\022\025\n\ris_new_record\030\014 \001(\010\022>\n\013settle_" +
+      "info\030\004 \001(\0132).LuminanceStoneChallengeGall" +
       "erySettleInfoB\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };

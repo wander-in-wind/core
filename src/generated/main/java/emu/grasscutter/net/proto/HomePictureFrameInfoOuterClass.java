@@ -19,20 +19,20 @@ public final class HomePictureFrameInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 picture_id = 4;</code>
+     * <code>uint32 picture_id = 14;</code>
      * @return The pictureId.
      */
     int getPictureId();
 
     /**
-     * <code>uint32 guid = 14;</code>
+     * <code>uint32 guid = 3;</code>
      * @return The guid.
      */
     int getGuid();
   }
   /**
    * <pre>
-   * Name: BJHINJBCGKK
+   * Obf: MLIJNFGLGLP
    * </pre>
    *
    * Protobuf type {@code HomePictureFrameInfo}
@@ -79,14 +79,14 @@ public final class HomePictureFrameInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 24: {
 
-              pictureId_ = input.readUInt32();
+              guid_ = input.readUInt32();
               break;
             }
             case 112: {
 
-              guid_ = input.readUInt32();
+              pictureId_ = input.readUInt32();
               break;
             }
             default: {
@@ -121,10 +121,10 @@ public final class HomePictureFrameInfoOuterClass {
               emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo.class, emu.grasscutter.net.proto.HomePictureFrameInfoOuterClass.HomePictureFrameInfo.Builder.class);
     }
 
-    public static final int PICTURE_ID_FIELD_NUMBER = 4;
+    public static final int PICTURE_ID_FIELD_NUMBER = 14;
     private int pictureId_;
     /**
-     * <code>uint32 picture_id = 4;</code>
+     * <code>uint32 picture_id = 14;</code>
      * @return The pictureId.
      */
     @java.lang.Override
@@ -132,10 +132,10 @@ public final class HomePictureFrameInfoOuterClass {
       return pictureId_;
     }
 
-    public static final int GUID_FIELD_NUMBER = 14;
+    public static final int GUID_FIELD_NUMBER = 3;
     private int guid_;
     /**
-     * <code>uint32 guid = 14;</code>
+     * <code>uint32 guid = 3;</code>
      * @return The guid.
      */
     @java.lang.Override
@@ -157,11 +157,11 @@ public final class HomePictureFrameInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (pictureId_ != 0) {
-        output.writeUInt32(4, pictureId_);
-      }
       if (guid_ != 0) {
-        output.writeUInt32(14, guid_);
+        output.writeUInt32(3, guid_);
+      }
+      if (pictureId_ != 0) {
+        output.writeUInt32(14, pictureId_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +172,13 @@ public final class HomePictureFrameInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (pictureId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, pictureId_);
-      }
       if (guid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, guid_);
+          .computeUInt32Size(3, guid_);
+      }
+      if (pictureId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, pictureId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -311,7 +311,7 @@ public final class HomePictureFrameInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: BJHINJBCGKK
+     * Obf: MLIJNFGLGLP
      * </pre>
      *
      * Protobuf type {@code HomePictureFrameInfo}
@@ -468,7 +468,7 @@ public final class HomePictureFrameInfoOuterClass {
 
       private int pictureId_ ;
       /**
-       * <code>uint32 picture_id = 4;</code>
+       * <code>uint32 picture_id = 14;</code>
        * @return The pictureId.
        */
       @java.lang.Override
@@ -476,7 +476,7 @@ public final class HomePictureFrameInfoOuterClass {
         return pictureId_;
       }
       /**
-       * <code>uint32 picture_id = 4;</code>
+       * <code>uint32 picture_id = 14;</code>
        * @param value The pictureId to set.
        * @return This builder for chaining.
        */
@@ -487,7 +487,7 @@ public final class HomePictureFrameInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 picture_id = 4;</code>
+       * <code>uint32 picture_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearPictureId() {
@@ -499,7 +499,7 @@ public final class HomePictureFrameInfoOuterClass {
 
       private int guid_ ;
       /**
-       * <code>uint32 guid = 14;</code>
+       * <code>uint32 guid = 3;</code>
        * @return The guid.
        */
       @java.lang.Override
@@ -507,7 +507,7 @@ public final class HomePictureFrameInfoOuterClass {
         return guid_;
       }
       /**
-       * <code>uint32 guid = 14;</code>
+       * <code>uint32 guid = 3;</code>
        * @param value The guid to set.
        * @return This builder for chaining.
        */
@@ -518,7 +518,7 @@ public final class HomePictureFrameInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 guid = 14;</code>
+       * <code>uint32 guid = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearGuid() {
@@ -595,8 +595,8 @@ public final class HomePictureFrameInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032HomePictureFrameInfo.proto\"8\n\024HomePict" +
-      "ureFrameInfo\022\022\n\npicture_id\030\004 \001(\r\022\014\n\004guid" +
-      "\030\016 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
+      "ureFrameInfo\022\022\n\npicture_id\030\016 \001(\r\022\014\n\004guid" +
+      "\030\003 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

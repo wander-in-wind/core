@@ -26,8 +26,8 @@ public final class WinterCampTakeExploreRewardReqOuterClass {
   }
   /**
    * <pre>
-   * Name: PAADLGLLMEH
-   * CmdId: 8750
+   * CmdId: 8890
+   * Obf: HAFGLPPKHDP
    * </pre>
    *
    * Protobuf type {@code WinterCampTakeExploreRewardReq}
@@ -279,8 +279,8 @@ public final class WinterCampTakeExploreRewardReqOuterClass {
     }
     /**
      * <pre>
-     * Name: PAADLGLLMEH
-     * CmdId: 8750
+     * CmdId: 8890
+     * Obf: HAFGLPPKHDP
      * </pre>
      *
      * Protobuf type {@code WinterCampTakeExploreRewardReq}

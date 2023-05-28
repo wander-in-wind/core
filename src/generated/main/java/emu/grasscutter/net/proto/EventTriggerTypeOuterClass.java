@@ -16,7 +16,7 @@ public final class EventTriggerTypeOuterClass {
   }
   /**
    * <pre>
-   * Name: CDPGFLKDBEF
+   * Obf: COGCCGNJACN
    * </pre>
    *
    * Protobuf enum {@code EventTriggerType}

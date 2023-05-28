@@ -59,7 +59,7 @@ public final class SceneFishInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: PBOJPLIHGGO
+   * Obf: EALFECBKMNC
    * </pre>
    *
    * Protobuf type {@code SceneFishInfo}
@@ -447,7 +447,7 @@ public final class SceneFishInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: PBOJPLIHGGO
+     * Obf: EALFECBKMNC
      * </pre>
      *
      * Protobuf type {@code SceneFishInfo}

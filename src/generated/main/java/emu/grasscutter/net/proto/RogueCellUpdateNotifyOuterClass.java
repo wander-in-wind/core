@@ -19,24 +19,24 @@ public final class RogueCellUpdateNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.RogueCellInfo cell_info = 13;</code>
+     * <code>.RogueCellInfo cell_info = 3;</code>
      * @return Whether the cellInfo field is set.
      */
     boolean hasCellInfo();
     /**
-     * <code>.RogueCellInfo cell_info = 13;</code>
+     * <code>.RogueCellInfo cell_info = 3;</code>
      * @return The cellInfo.
      */
     emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfo getCellInfo();
     /**
-     * <code>.RogueCellInfo cell_info = 13;</code>
+     * <code>.RogueCellInfo cell_info = 3;</code>
      */
     emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfoOrBuilder getCellInfoOrBuilder();
   }
   /**
    * <pre>
-   * Name: MGMCOIIAJLO
-   * CmdId: 8624
+   * CmdId: 8723
+   * Obf: KLMMGJJDKAP
    * </pre>
    *
    * Protobuf type {@code RogueCellUpdateNotify}
@@ -83,7 +83,7 @@ public final class RogueCellUpdateNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 106: {
+            case 26: {
               emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfo.Builder subBuilder = null;
               if (cellInfo_ != null) {
                 subBuilder = cellInfo_.toBuilder();
@@ -128,10 +128,10 @@ public final class RogueCellUpdateNotifyOuterClass {
               emu.grasscutter.net.proto.RogueCellUpdateNotifyOuterClass.RogueCellUpdateNotify.class, emu.grasscutter.net.proto.RogueCellUpdateNotifyOuterClass.RogueCellUpdateNotify.Builder.class);
     }
 
-    public static final int CELL_INFO_FIELD_NUMBER = 13;
+    public static final int CELL_INFO_FIELD_NUMBER = 3;
     private emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfo cellInfo_;
     /**
-     * <code>.RogueCellInfo cell_info = 13;</code>
+     * <code>.RogueCellInfo cell_info = 3;</code>
      * @return Whether the cellInfo field is set.
      */
     @java.lang.Override
@@ -139,7 +139,7 @@ public final class RogueCellUpdateNotifyOuterClass {
       return cellInfo_ != null;
     }
     /**
-     * <code>.RogueCellInfo cell_info = 13;</code>
+     * <code>.RogueCellInfo cell_info = 3;</code>
      * @return The cellInfo.
      */
     @java.lang.Override
@@ -147,7 +147,7 @@ public final class RogueCellUpdateNotifyOuterClass {
       return cellInfo_ == null ? emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfo.getDefaultInstance() : cellInfo_;
     }
     /**
-     * <code>.RogueCellInfo cell_info = 13;</code>
+     * <code>.RogueCellInfo cell_info = 3;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfoOrBuilder getCellInfoOrBuilder() {
@@ -169,7 +169,7 @@ public final class RogueCellUpdateNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (cellInfo_ != null) {
-        output.writeMessage(13, getCellInfo());
+        output.writeMessage(3, getCellInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -182,7 +182,7 @@ public final class RogueCellUpdateNotifyOuterClass {
       size = 0;
       if (cellInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, getCellInfo());
+          .computeMessageSize(3, getCellInfo());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -316,8 +316,8 @@ public final class RogueCellUpdateNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: MGMCOIIAJLO
-     * CmdId: 8624
+     * CmdId: 8723
+     * Obf: KLMMGJJDKAP
      * </pre>
      *
      * Protobuf type {@code RogueCellUpdateNotify}
@@ -478,14 +478,14 @@ public final class RogueCellUpdateNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfo, emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfo.Builder, emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfoOrBuilder> cellInfoBuilder_;
       /**
-       * <code>.RogueCellInfo cell_info = 13;</code>
+       * <code>.RogueCellInfo cell_info = 3;</code>
        * @return Whether the cellInfo field is set.
        */
       public boolean hasCellInfo() {
         return cellInfoBuilder_ != null || cellInfo_ != null;
       }
       /**
-       * <code>.RogueCellInfo cell_info = 13;</code>
+       * <code>.RogueCellInfo cell_info = 3;</code>
        * @return The cellInfo.
        */
       public emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfo getCellInfo() {
@@ -496,7 +496,7 @@ public final class RogueCellUpdateNotifyOuterClass {
         }
       }
       /**
-       * <code>.RogueCellInfo cell_info = 13;</code>
+       * <code>.RogueCellInfo cell_info = 3;</code>
        */
       public Builder setCellInfo(emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfo value) {
         if (cellInfoBuilder_ == null) {
@@ -512,7 +512,7 @@ public final class RogueCellUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.RogueCellInfo cell_info = 13;</code>
+       * <code>.RogueCellInfo cell_info = 3;</code>
        */
       public Builder setCellInfo(
           emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfo.Builder builderForValue) {
@@ -526,7 +526,7 @@ public final class RogueCellUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.RogueCellInfo cell_info = 13;</code>
+       * <code>.RogueCellInfo cell_info = 3;</code>
        */
       public Builder mergeCellInfo(emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfo value) {
         if (cellInfoBuilder_ == null) {
@@ -544,7 +544,7 @@ public final class RogueCellUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.RogueCellInfo cell_info = 13;</code>
+       * <code>.RogueCellInfo cell_info = 3;</code>
        */
       public Builder clearCellInfo() {
         if (cellInfoBuilder_ == null) {
@@ -558,7 +558,7 @@ public final class RogueCellUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.RogueCellInfo cell_info = 13;</code>
+       * <code>.RogueCellInfo cell_info = 3;</code>
        */
       public emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfo.Builder getCellInfoBuilder() {
         
@@ -566,7 +566,7 @@ public final class RogueCellUpdateNotifyOuterClass {
         return getCellInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.RogueCellInfo cell_info = 13;</code>
+       * <code>.RogueCellInfo cell_info = 3;</code>
        */
       public emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfoOrBuilder getCellInfoOrBuilder() {
         if (cellInfoBuilder_ != null) {
@@ -577,7 +577,7 @@ public final class RogueCellUpdateNotifyOuterClass {
         }
       }
       /**
-       * <code>.RogueCellInfo cell_info = 13;</code>
+       * <code>.RogueCellInfo cell_info = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfo, emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfo.Builder, emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfoOrBuilder> 
@@ -661,7 +661,7 @@ public final class RogueCellUpdateNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033RogueCellUpdateNotify.proto\032\023RogueCell" +
       "Info.proto\":\n\025RogueCellUpdateNotify\022!\n\tc" +
-      "ell_info\030\r \001(\0132\016.RogueCellInfoB\033\n\031emu.gr" +
+      "ell_info\030\003 \001(\0132\016.RogueCellInfoB\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

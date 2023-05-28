@@ -19,15 +19,15 @@ public final class ActivityPlayOpenAnimNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 activity_id = 6;</code>
+     * <code>uint32 activity_id = 5;</code>
      * @return The activityId.
      */
     int getActivityId();
   }
   /**
    * <pre>
-   * Name: MEAKCDAMKNJ
-   * CmdId: 2136
+   * CmdId: 2131
+   * Obf: NOCEOLGOMJF
    * </pre>
    *
    * Protobuf type {@code ActivityPlayOpenAnimNotify}
@@ -74,7 +74,7 @@ public final class ActivityPlayOpenAnimNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 40: {
 
               activityId_ = input.readUInt32();
               break;
@@ -111,10 +111,10 @@ public final class ActivityPlayOpenAnimNotifyOuterClass {
               emu.grasscutter.net.proto.ActivityPlayOpenAnimNotifyOuterClass.ActivityPlayOpenAnimNotify.class, emu.grasscutter.net.proto.ActivityPlayOpenAnimNotifyOuterClass.ActivityPlayOpenAnimNotify.Builder.class);
     }
 
-    public static final int ACTIVITY_ID_FIELD_NUMBER = 6;
+    public static final int ACTIVITY_ID_FIELD_NUMBER = 5;
     private int activityId_;
     /**
-     * <code>uint32 activity_id = 6;</code>
+     * <code>uint32 activity_id = 5;</code>
      * @return The activityId.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class ActivityPlayOpenAnimNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (activityId_ != 0) {
-        output.writeUInt32(6, activityId_);
+        output.writeUInt32(5, activityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class ActivityPlayOpenAnimNotifyOuterClass {
       size = 0;
       if (activityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, activityId_);
+          .computeUInt32Size(5, activityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class ActivityPlayOpenAnimNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: MEAKCDAMKNJ
-     * CmdId: 2136
+     * CmdId: 2131
+     * Obf: NOCEOLGOMJF
      * </pre>
      *
      * Protobuf type {@code ActivityPlayOpenAnimNotify}
@@ -431,7 +431,7 @@ public final class ActivityPlayOpenAnimNotifyOuterClass {
 
       private int activityId_ ;
       /**
-       * <code>uint32 activity_id = 6;</code>
+       * <code>uint32 activity_id = 5;</code>
        * @return The activityId.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class ActivityPlayOpenAnimNotifyOuterClass {
         return activityId_;
       }
       /**
-       * <code>uint32 activity_id = 6;</code>
+       * <code>uint32 activity_id = 5;</code>
        * @param value The activityId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class ActivityPlayOpenAnimNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 activity_id = 6;</code>
+       * <code>uint32 activity_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearActivityId() {
@@ -528,7 +528,7 @@ public final class ActivityPlayOpenAnimNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n ActivityPlayOpenAnimNotify.proto\"1\n\032Ac" +
       "tivityPlayOpenAnimNotify\022\023\n\013activity_id\030" +
-      "\006 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "\005 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

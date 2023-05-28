@@ -19,21 +19,21 @@ public final class RestartCoinCollectPlaySingleModeRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 8;</code>
-     * @return The levelId.
-     */
-    int getLevelId();
-
-    /**
      * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     int getRetcode();
+
+    /**
+     * <code>uint32 level_id = 15;</code>
+     * @return The levelId.
+     */
+    int getLevelId();
   }
   /**
    * <pre>
-   * Name: GNNGDDLNMPK
-   * CmdId: 21212
+   * CmdId: 24881
+   * Obf: PIBIDKICNIP
    * </pre>
    *
    * Protobuf type {@code RestartCoinCollectPlaySingleModeRsp}
@@ -85,7 +85,7 @@ public final class RestartCoinCollectPlaySingleModeRspOuterClass {
               retcode_ = input.readInt32();
               break;
             }
-            case 64: {
+            case 120: {
 
               levelId_ = input.readUInt32();
               break;
@@ -122,17 +122,6 @@ public final class RestartCoinCollectPlaySingleModeRspOuterClass {
               emu.grasscutter.net.proto.RestartCoinCollectPlaySingleModeRspOuterClass.RestartCoinCollectPlaySingleModeRsp.class, emu.grasscutter.net.proto.RestartCoinCollectPlaySingleModeRspOuterClass.RestartCoinCollectPlaySingleModeRsp.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 8;
-    private int levelId_;
-    /**
-     * <code>uint32 level_id = 8;</code>
-     * @return The levelId.
-     */
-    @java.lang.Override
-    public int getLevelId() {
-      return levelId_;
-    }
-
     public static final int RETCODE_FIELD_NUMBER = 4;
     private int retcode_;
     /**
@@ -142,6 +131,17 @@ public final class RestartCoinCollectPlaySingleModeRspOuterClass {
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
+    }
+
+    public static final int LEVEL_ID_FIELD_NUMBER = 15;
+    private int levelId_;
+    /**
+     * <code>uint32 level_id = 15;</code>
+     * @return The levelId.
+     */
+    @java.lang.Override
+    public int getLevelId() {
+      return levelId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -162,7 +162,7 @@ public final class RestartCoinCollectPlaySingleModeRspOuterClass {
         output.writeInt32(4, retcode_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(8, levelId_);
+        output.writeUInt32(15, levelId_);
       }
       unknownFields.writeTo(output);
     }
@@ -179,7 +179,7 @@ public final class RestartCoinCollectPlaySingleModeRspOuterClass {
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, levelId_);
+          .computeUInt32Size(15, levelId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +196,10 @@ public final class RestartCoinCollectPlaySingleModeRspOuterClass {
       }
       emu.grasscutter.net.proto.RestartCoinCollectPlaySingleModeRspOuterClass.RestartCoinCollectPlaySingleModeRsp other = (emu.grasscutter.net.proto.RestartCoinCollectPlaySingleModeRspOuterClass.RestartCoinCollectPlaySingleModeRsp) obj;
 
-      if (getLevelId()
-          != other.getLevelId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getLevelId()
+          != other.getLevelId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +211,10 @@ public final class RestartCoinCollectPlaySingleModeRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +312,8 @@ public final class RestartCoinCollectPlaySingleModeRspOuterClass {
     }
     /**
      * <pre>
-     * Name: GNNGDDLNMPK
-     * CmdId: 21212
+     * CmdId: 24881
+     * Obf: PIBIDKICNIP
      * </pre>
      *
      * Protobuf type {@code RestartCoinCollectPlaySingleModeRsp}
@@ -353,9 +353,9 @@ public final class RestartCoinCollectPlaySingleModeRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        levelId_ = 0;
-
         retcode_ = 0;
+
+        levelId_ = 0;
 
         return this;
       }
@@ -383,8 +383,8 @@ public final class RestartCoinCollectPlaySingleModeRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.RestartCoinCollectPlaySingleModeRspOuterClass.RestartCoinCollectPlaySingleModeRsp buildPartial() {
         emu.grasscutter.net.proto.RestartCoinCollectPlaySingleModeRspOuterClass.RestartCoinCollectPlaySingleModeRsp result = new emu.grasscutter.net.proto.RestartCoinCollectPlaySingleModeRspOuterClass.RestartCoinCollectPlaySingleModeRsp(this);
-        result.levelId_ = levelId_;
         result.retcode_ = retcode_;
+        result.levelId_ = levelId_;
         onBuilt();
         return result;
       }
@@ -433,11 +433,11 @@ public final class RestartCoinCollectPlaySingleModeRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.RestartCoinCollectPlaySingleModeRspOuterClass.RestartCoinCollectPlaySingleModeRsp other) {
         if (other == emu.grasscutter.net.proto.RestartCoinCollectPlaySingleModeRspOuterClass.RestartCoinCollectPlaySingleModeRsp.getDefaultInstance()) return this;
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,37 +468,6 @@ public final class RestartCoinCollectPlaySingleModeRspOuterClass {
         return this;
       }
 
-      private int levelId_ ;
-      /**
-       * <code>uint32 level_id = 8;</code>
-       * @return The levelId.
-       */
-      @java.lang.Override
-      public int getLevelId() {
-        return levelId_;
-      }
-      /**
-       * <code>uint32 level_id = 8;</code>
-       * @param value The levelId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevelId(int value) {
-        
-        levelId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level_id = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevelId() {
-        
-        levelId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
        * <code>int32 retcode = 4;</code>
@@ -526,6 +495,37 @@ public final class RestartCoinCollectPlaySingleModeRspOuterClass {
       public Builder clearRetcode() {
         
         retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int levelId_ ;
+      /**
+       * <code>uint32 level_id = 15;</code>
+       * @return The levelId.
+       */
+      @java.lang.Override
+      public int getLevelId() {
+        return levelId_;
+      }
+      /**
+       * <code>uint32 level_id = 15;</code>
+       * @param value The levelId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevelId(int value) {
+        
+        levelId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 level_id = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevelId() {
+        
+        levelId_ = 0;
         onChanged();
         return this;
       }
@@ -598,7 +598,7 @@ public final class RestartCoinCollectPlaySingleModeRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n)RestartCoinCollectPlaySingleModeRsp.pr" +
       "oto\"H\n#RestartCoinCollectPlaySingleModeR" +
-      "sp\022\020\n\010level_id\030\010 \001(\r\022\017\n\007retcode\030\004 \001(\005B\033\n" +
+      "sp\022\017\n\007retcode\030\004 \001(\005\022\020\n\010level_id\030\017 \001(\rB\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -610,7 +610,7 @@ public final class RestartCoinCollectPlaySingleModeRspOuterClass {
     internal_static_RestartCoinCollectPlaySingleModeRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RestartCoinCollectPlaySingleModeRsp_descriptor,
-        new java.lang.String[] { "LevelId", "Retcode", });
+        new java.lang.String[] { "Retcode", "LevelId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

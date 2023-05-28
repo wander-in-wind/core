@@ -20,8 +20,8 @@ public final class LeaveSceneReqOuterClass {
   }
   /**
    * <pre>
-   * Name: GLNIOKANGHH
-   * CmdId: 275
+   * CmdId: 296
+   * Obf: FBCLHAKAEAM
    * </pre>
    *
    * Protobuf type {@code LeaveSceneReq}
@@ -246,8 +246,8 @@ public final class LeaveSceneReqOuterClass {
     }
     /**
      * <pre>
-     * Name: GLNIOKANGHH
-     * CmdId: 275
+     * CmdId: 296
+     * Obf: FBCLHAKAEAM
      * </pre>
      *
      * Protobuf type {@code LeaveSceneReq}

@@ -44,7 +44,7 @@ public final class CustomGadgetTreeInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: IKCAPLALLPO
+   * Obf: DPOLIKKKKLA
    * </pre>
    *
    * Protobuf type {@code CustomGadgetTreeInfo}
@@ -336,7 +336,7 @@ public final class CustomGadgetTreeInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: IKCAPLALLPO
+     * Obf: DPOLIKKKKLA
      * </pre>
      *
      * Protobuf type {@code CustomGadgetTreeInfo}

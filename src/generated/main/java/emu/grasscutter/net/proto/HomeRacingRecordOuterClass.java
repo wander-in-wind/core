@@ -44,7 +44,7 @@ public final class HomeRacingRecordOuterClass {
   }
   /**
    * <pre>
-   * Name: ICPGKGIADBI
+   * Obf: AAIKFOGFMOJ
    * </pre>
    *
    * Protobuf type {@code HomeRacingRecord}
@@ -336,7 +336,7 @@ public final class HomeRacingRecordOuterClass {
     }
     /**
      * <pre>
-     * Name: ICPGKGIADBI
+     * Obf: AAIKFOGFMOJ
      * </pre>
      *
      * Protobuf type {@code HomeRacingRecord}

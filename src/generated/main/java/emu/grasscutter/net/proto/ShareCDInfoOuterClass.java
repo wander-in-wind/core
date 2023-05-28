@@ -19,26 +19,26 @@ public final class ShareCDInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 index = 10;</code>
-     * @return The index.
+     * <code>uint32 share_cd_id = 12;</code>
+     * @return The shareCdId.
      */
-    int getIndex();
+    int getShareCdId();
 
     /**
-     * <code>uint64 cd_start_time = 6;</code>
+     * <code>uint64 cd_start_time = 7;</code>
      * @return The cdStartTime.
      */
     long getCdStartTime();
 
     /**
-     * <code>uint32 share_cd_id = 1;</code>
-     * @return The shareCdId.
+     * <code>uint32 index = 8;</code>
+     * @return The index.
      */
-    int getShareCdId();
+    int getIndex();
   }
   /**
    * <pre>
-   * Name: HPDLLEKEJEF
+   * Obf: OANICCCLDGG
    * </pre>
    *
    * Protobuf type {@code ShareCDInfo}
@@ -85,19 +85,19 @@ public final class ShareCDInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              shareCdId_ = input.readUInt32();
-              break;
-            }
-            case 48: {
+            case 56: {
 
               cdStartTime_ = input.readUInt64();
               break;
             }
-            case 80: {
+            case 64: {
 
               index_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              shareCdId_ = input.readUInt32();
               break;
             }
             default: {
@@ -132,21 +132,21 @@ public final class ShareCDInfoOuterClass {
               emu.grasscutter.net.proto.ShareCDInfoOuterClass.ShareCDInfo.class, emu.grasscutter.net.proto.ShareCDInfoOuterClass.ShareCDInfo.Builder.class);
     }
 
-    public static final int INDEX_FIELD_NUMBER = 10;
-    private int index_;
+    public static final int SHARE_CD_ID_FIELD_NUMBER = 12;
+    private int shareCdId_;
     /**
-     * <code>uint32 index = 10;</code>
-     * @return The index.
+     * <code>uint32 share_cd_id = 12;</code>
+     * @return The shareCdId.
      */
     @java.lang.Override
-    public int getIndex() {
-      return index_;
+    public int getShareCdId() {
+      return shareCdId_;
     }
 
-    public static final int CD_START_TIME_FIELD_NUMBER = 6;
+    public static final int CD_START_TIME_FIELD_NUMBER = 7;
     private long cdStartTime_;
     /**
-     * <code>uint64 cd_start_time = 6;</code>
+     * <code>uint64 cd_start_time = 7;</code>
      * @return The cdStartTime.
      */
     @java.lang.Override
@@ -154,15 +154,15 @@ public final class ShareCDInfoOuterClass {
       return cdStartTime_;
     }
 
-    public static final int SHARE_CD_ID_FIELD_NUMBER = 1;
-    private int shareCdId_;
+    public static final int INDEX_FIELD_NUMBER = 8;
+    private int index_;
     /**
-     * <code>uint32 share_cd_id = 1;</code>
-     * @return The shareCdId.
+     * <code>uint32 index = 8;</code>
+     * @return The index.
      */
     @java.lang.Override
-    public int getShareCdId() {
-      return shareCdId_;
+    public int getIndex() {
+      return index_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -179,14 +179,14 @@ public final class ShareCDInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (shareCdId_ != 0) {
-        output.writeUInt32(1, shareCdId_);
-      }
       if (cdStartTime_ != 0L) {
-        output.writeUInt64(6, cdStartTime_);
+        output.writeUInt64(7, cdStartTime_);
       }
       if (index_ != 0) {
-        output.writeUInt32(10, index_);
+        output.writeUInt32(8, index_);
+      }
+      if (shareCdId_ != 0) {
+        output.writeUInt32(12, shareCdId_);
       }
       unknownFields.writeTo(output);
     }
@@ -197,17 +197,17 @@ public final class ShareCDInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (shareCdId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, shareCdId_);
-      }
       if (cdStartTime_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(6, cdStartTime_);
+          .computeUInt64Size(7, cdStartTime_);
       }
       if (index_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, index_);
+          .computeUInt32Size(8, index_);
+      }
+      if (shareCdId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, shareCdId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -224,12 +224,12 @@ public final class ShareCDInfoOuterClass {
       }
       emu.grasscutter.net.proto.ShareCDInfoOuterClass.ShareCDInfo other = (emu.grasscutter.net.proto.ShareCDInfoOuterClass.ShareCDInfo) obj;
 
-      if (getIndex()
-          != other.getIndex()) return false;
-      if (getCdStartTime()
-          != other.getCdStartTime()) return false;
       if (getShareCdId()
           != other.getShareCdId()) return false;
+      if (getCdStartTime()
+          != other.getCdStartTime()) return false;
+      if (getIndex()
+          != other.getIndex()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -241,13 +241,13 @@ public final class ShareCDInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getIndex();
+      hash = (37 * hash) + SHARE_CD_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getShareCdId();
       hash = (37 * hash) + CD_START_TIME_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getCdStartTime());
-      hash = (37 * hash) + SHARE_CD_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getShareCdId();
+      hash = (37 * hash) + INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getIndex();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -345,7 +345,7 @@ public final class ShareCDInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: HPDLLEKEJEF
+     * Obf: OANICCCLDGG
      * </pre>
      *
      * Protobuf type {@code ShareCDInfo}
@@ -385,11 +385,11 @@ public final class ShareCDInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        index_ = 0;
+        shareCdId_ = 0;
 
         cdStartTime_ = 0L;
 
-        shareCdId_ = 0;
+        index_ = 0;
 
         return this;
       }
@@ -417,9 +417,9 @@ public final class ShareCDInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ShareCDInfoOuterClass.ShareCDInfo buildPartial() {
         emu.grasscutter.net.proto.ShareCDInfoOuterClass.ShareCDInfo result = new emu.grasscutter.net.proto.ShareCDInfoOuterClass.ShareCDInfo(this);
-        result.index_ = index_;
-        result.cdStartTime_ = cdStartTime_;
         result.shareCdId_ = shareCdId_;
+        result.cdStartTime_ = cdStartTime_;
+        result.index_ = index_;
         onBuilt();
         return result;
       }
@@ -468,14 +468,14 @@ public final class ShareCDInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ShareCDInfoOuterClass.ShareCDInfo other) {
         if (other == emu.grasscutter.net.proto.ShareCDInfoOuterClass.ShareCDInfo.getDefaultInstance()) return this;
-        if (other.getIndex() != 0) {
-          setIndex(other.getIndex());
+        if (other.getShareCdId() != 0) {
+          setShareCdId(other.getShareCdId());
         }
         if (other.getCdStartTime() != 0L) {
           setCdStartTime(other.getCdStartTime());
         }
-        if (other.getShareCdId() != 0) {
-          setShareCdId(other.getShareCdId());
+        if (other.getIndex() != 0) {
+          setIndex(other.getIndex());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -506,71 +506,9 @@ public final class ShareCDInfoOuterClass {
         return this;
       }
 
-      private int index_ ;
-      /**
-       * <code>uint32 index = 10;</code>
-       * @return The index.
-       */
-      @java.lang.Override
-      public int getIndex() {
-        return index_;
-      }
-      /**
-       * <code>uint32 index = 10;</code>
-       * @param value The index to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIndex(int value) {
-        
-        index_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 index = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIndex() {
-        
-        index_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private long cdStartTime_ ;
-      /**
-       * <code>uint64 cd_start_time = 6;</code>
-       * @return The cdStartTime.
-       */
-      @java.lang.Override
-      public long getCdStartTime() {
-        return cdStartTime_;
-      }
-      /**
-       * <code>uint64 cd_start_time = 6;</code>
-       * @param value The cdStartTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCdStartTime(long value) {
-        
-        cdStartTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 cd_start_time = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCdStartTime() {
-        
-        cdStartTime_ = 0L;
-        onChanged();
-        return this;
-      }
-
       private int shareCdId_ ;
       /**
-       * <code>uint32 share_cd_id = 1;</code>
+       * <code>uint32 share_cd_id = 12;</code>
        * @return The shareCdId.
        */
       @java.lang.Override
@@ -578,7 +516,7 @@ public final class ShareCDInfoOuterClass {
         return shareCdId_;
       }
       /**
-       * <code>uint32 share_cd_id = 1;</code>
+       * <code>uint32 share_cd_id = 12;</code>
        * @param value The shareCdId to set.
        * @return This builder for chaining.
        */
@@ -589,12 +527,74 @@ public final class ShareCDInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 share_cd_id = 1;</code>
+       * <code>uint32 share_cd_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearShareCdId() {
         
         shareCdId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private long cdStartTime_ ;
+      /**
+       * <code>uint64 cd_start_time = 7;</code>
+       * @return The cdStartTime.
+       */
+      @java.lang.Override
+      public long getCdStartTime() {
+        return cdStartTime_;
+      }
+      /**
+       * <code>uint64 cd_start_time = 7;</code>
+       * @param value The cdStartTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCdStartTime(long value) {
+        
+        cdStartTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint64 cd_start_time = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCdStartTime() {
+        
+        cdStartTime_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private int index_ ;
+      /**
+       * <code>uint32 index = 8;</code>
+       * @return The index.
+       */
+      @java.lang.Override
+      public int getIndex() {
+        return index_;
+      }
+      /**
+       * <code>uint32 index = 8;</code>
+       * @param value The index to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIndex(int value) {
+        
+        index_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 index = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIndex() {
+        
+        index_ = 0;
         onChanged();
         return this;
       }
@@ -665,9 +665,9 @@ public final class ShareCDInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021ShareCDInfo.proto\"H\n\013ShareCDInfo\022\r\n\005in" +
-      "dex\030\n \001(\r\022\025\n\rcd_start_time\030\006 \001(\004\022\023\n\013shar" +
-      "e_cd_id\030\001 \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "\n\021ShareCDInfo.proto\"H\n\013ShareCDInfo\022\023\n\013sh" +
+      "are_cd_id\030\014 \001(\r\022\025\n\rcd_start_time\030\007 \001(\004\022\r" +
+      "\n\005index\030\010 \001(\rB\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -679,7 +679,7 @@ public final class ShareCDInfoOuterClass {
     internal_static_ShareCDInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ShareCDInfo_descriptor,
-        new java.lang.String[] { "Index", "CdStartTime", "ShareCdId", });
+        new java.lang.String[] { "ShareCdId", "CdStartTime", "Index", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

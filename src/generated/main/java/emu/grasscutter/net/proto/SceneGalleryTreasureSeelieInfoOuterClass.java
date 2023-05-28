@@ -19,20 +19,20 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 progress = 15;</code>
-     * @return The progress.
-     */
-    int getProgress();
-
-    /**
-     * <code>uint32 goal = 13;</code>
+     * <code>uint32 goal = 9;</code>
      * @return The goal.
      */
     int getGoal();
+
+    /**
+     * <code>uint32 progress = 5;</code>
+     * @return The progress.
+     */
+    int getProgress();
   }
   /**
    * <pre>
-   * Name: BAFIKPMLBFP
+   * Obf: BANHLKHPLBC
    * </pre>
    *
    * Protobuf type {@code SceneGalleryTreasureSeelieInfo}
@@ -79,14 +79,14 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
-
-              goal_ = input.readUInt32();
-              break;
-            }
-            case 120: {
+            case 40: {
 
               progress_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
+              goal_ = input.readUInt32();
               break;
             }
             default: {
@@ -121,26 +121,26 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryTreasureSeelieInfoOuterClass.SceneGalleryTreasureSeelieInfo.class, emu.grasscutter.net.proto.SceneGalleryTreasureSeelieInfoOuterClass.SceneGalleryTreasureSeelieInfo.Builder.class);
     }
 
-    public static final int PROGRESS_FIELD_NUMBER = 15;
-    private int progress_;
-    /**
-     * <code>uint32 progress = 15;</code>
-     * @return The progress.
-     */
-    @java.lang.Override
-    public int getProgress() {
-      return progress_;
-    }
-
-    public static final int GOAL_FIELD_NUMBER = 13;
+    public static final int GOAL_FIELD_NUMBER = 9;
     private int goal_;
     /**
-     * <code>uint32 goal = 13;</code>
+     * <code>uint32 goal = 9;</code>
      * @return The goal.
      */
     @java.lang.Override
     public int getGoal() {
       return goal_;
+    }
+
+    public static final int PROGRESS_FIELD_NUMBER = 5;
+    private int progress_;
+    /**
+     * <code>uint32 progress = 5;</code>
+     * @return The progress.
+     */
+    @java.lang.Override
+    public int getProgress() {
+      return progress_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -157,11 +157,11 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (goal_ != 0) {
-        output.writeUInt32(13, goal_);
-      }
       if (progress_ != 0) {
-        output.writeUInt32(15, progress_);
+        output.writeUInt32(5, progress_);
+      }
+      if (goal_ != 0) {
+        output.writeUInt32(9, goal_);
       }
       unknownFields.writeTo(output);
     }
@@ -172,13 +172,13 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (goal_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, goal_);
-      }
       if (progress_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, progress_);
+          .computeUInt32Size(5, progress_);
+      }
+      if (goal_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, goal_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -195,10 +195,10 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneGalleryTreasureSeelieInfoOuterClass.SceneGalleryTreasureSeelieInfo other = (emu.grasscutter.net.proto.SceneGalleryTreasureSeelieInfoOuterClass.SceneGalleryTreasureSeelieInfo) obj;
 
-      if (getProgress()
-          != other.getProgress()) return false;
       if (getGoal()
           != other.getGoal()) return false;
+      if (getProgress()
+          != other.getProgress()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -210,10 +210,10 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + PROGRESS_FIELD_NUMBER;
-      hash = (53 * hash) + getProgress();
       hash = (37 * hash) + GOAL_FIELD_NUMBER;
       hash = (53 * hash) + getGoal();
+      hash = (37 * hash) + PROGRESS_FIELD_NUMBER;
+      hash = (53 * hash) + getProgress();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -311,7 +311,7 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: BAFIKPMLBFP
+     * Obf: BANHLKHPLBC
      * </pre>
      *
      * Protobuf type {@code SceneGalleryTreasureSeelieInfo}
@@ -351,9 +351,9 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        progress_ = 0;
-
         goal_ = 0;
+
+        progress_ = 0;
 
         return this;
       }
@@ -381,8 +381,8 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneGalleryTreasureSeelieInfoOuterClass.SceneGalleryTreasureSeelieInfo buildPartial() {
         emu.grasscutter.net.proto.SceneGalleryTreasureSeelieInfoOuterClass.SceneGalleryTreasureSeelieInfo result = new emu.grasscutter.net.proto.SceneGalleryTreasureSeelieInfoOuterClass.SceneGalleryTreasureSeelieInfo(this);
-        result.progress_ = progress_;
         result.goal_ = goal_;
+        result.progress_ = progress_;
         onBuilt();
         return result;
       }
@@ -431,11 +431,11 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneGalleryTreasureSeelieInfoOuterClass.SceneGalleryTreasureSeelieInfo other) {
         if (other == emu.grasscutter.net.proto.SceneGalleryTreasureSeelieInfoOuterClass.SceneGalleryTreasureSeelieInfo.getDefaultInstance()) return this;
-        if (other.getProgress() != 0) {
-          setProgress(other.getProgress());
-        }
         if (other.getGoal() != 0) {
           setGoal(other.getGoal());
+        }
+        if (other.getProgress() != 0) {
+          setProgress(other.getProgress());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -466,40 +466,9 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
         return this;
       }
 
-      private int progress_ ;
-      /**
-       * <code>uint32 progress = 15;</code>
-       * @return The progress.
-       */
-      @java.lang.Override
-      public int getProgress() {
-        return progress_;
-      }
-      /**
-       * <code>uint32 progress = 15;</code>
-       * @param value The progress to set.
-       * @return This builder for chaining.
-       */
-      public Builder setProgress(int value) {
-        
-        progress_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 progress = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearProgress() {
-        
-        progress_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int goal_ ;
       /**
-       * <code>uint32 goal = 13;</code>
+       * <code>uint32 goal = 9;</code>
        * @return The goal.
        */
       @java.lang.Override
@@ -507,7 +476,7 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
         return goal_;
       }
       /**
-       * <code>uint32 goal = 13;</code>
+       * <code>uint32 goal = 9;</code>
        * @param value The goal to set.
        * @return This builder for chaining.
        */
@@ -518,12 +487,43 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 goal = 13;</code>
+       * <code>uint32 goal = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearGoal() {
         
         goal_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int progress_ ;
+      /**
+       * <code>uint32 progress = 5;</code>
+       * @return The progress.
+       */
+      @java.lang.Override
+      public int getProgress() {
+        return progress_;
+      }
+      /**
+       * <code>uint32 progress = 5;</code>
+       * @param value The progress to set.
+       * @return This builder for chaining.
+       */
+      public Builder setProgress(int value) {
+        
+        progress_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 progress = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearProgress() {
+        
+        progress_ = 0;
         onChanged();
         return this;
       }
@@ -595,8 +595,8 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n$SceneGalleryTreasureSeelieInfo.proto\"@" +
-      "\n\036SceneGalleryTreasureSeelieInfo\022\020\n\010prog" +
-      "ress\030\017 \001(\r\022\014\n\004goal\030\r \001(\rB\033\n\031emu.grasscut" +
+      "\n\036SceneGalleryTreasureSeelieInfo\022\014\n\004goal" +
+      "\030\t \001(\r\022\020\n\010progress\030\005 \001(\rB\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -608,7 +608,7 @@ public final class SceneGalleryTreasureSeelieInfoOuterClass {
     internal_static_SceneGalleryTreasureSeelieInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryTreasureSeelieInfo_descriptor,
-        new java.lang.String[] { "Progress", "Goal", });
+        new java.lang.String[] { "Goal", "Progress", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

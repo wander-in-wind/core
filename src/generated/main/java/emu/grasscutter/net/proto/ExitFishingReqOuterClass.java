@@ -20,8 +20,8 @@ public final class ExitFishingReqOuterClass {
   }
   /**
    * <pre>
-   * Name: HKJPHJBGJCM
-   * CmdId: 5817
+   * CmdId: 5835
+   * Obf: OCBMCJEHDFN
    * </pre>
    *
    * Protobuf type {@code ExitFishingReq}
@@ -246,8 +246,8 @@ public final class ExitFishingReqOuterClass {
     }
     /**
      * <pre>
-     * Name: HKJPHJBGJCM
-     * CmdId: 5817
+     * CmdId: 5835
+     * Obf: OCBMCJEHDFN
      * </pre>
      *
      * Protobuf type {@code ExitFishingReq}

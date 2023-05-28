@@ -20,8 +20,8 @@ public final class SumoRestartDungeonReqOuterClass {
   }
   /**
    * <pre>
-   * Name: EJNCNLAGAEA
-   * CmdId: 8246
+   * CmdId: 8150
+   * Obf: AFHMAMMABBM
    * </pre>
    *
    * Protobuf type {@code SumoRestartDungeonReq}
@@ -246,8 +246,8 @@ public final class SumoRestartDungeonReqOuterClass {
     }
     /**
      * <pre>
-     * Name: EJNCNLAGAEA
-     * CmdId: 8246
+     * CmdId: 8150
+     * Obf: AFHMAMMABBM
      * </pre>
      *
      * Protobuf type {@code SumoRestartDungeonReq}

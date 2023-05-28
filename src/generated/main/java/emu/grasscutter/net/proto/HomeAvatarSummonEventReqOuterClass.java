@@ -19,27 +19,27 @@ public final class HomeAvatarSummonEventReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>uint32 guid = 1;</code>
+     * @return The guid.
+     */
+    int getGuid();
+
+    /**
      * <code>uint32 suit_id = 7;</code>
      * @return The suitId.
      */
     int getSuitId();
 
     /**
-     * <code>uint32 guid = 8;</code>
-     * @return The guid.
-     */
-    int getGuid();
-
-    /**
-     * <code>uint32 avatar_id = 6;</code>
+     * <code>uint32 avatar_id = 14;</code>
      * @return The avatarId.
      */
     int getAvatarId();
   }
   /**
    * <pre>
-   * Name: ADACNEIOBBD
-   * CmdId: 4708
+   * CmdId: 4777
+   * Obf: LKHMJDHGINB
    * </pre>
    *
    * Protobuf type {@code HomeAvatarSummonEventReq}
@@ -86,9 +86,9 @@ public final class HomeAvatarSummonEventReqOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 8: {
 
-              avatarId_ = input.readUInt32();
+              guid_ = input.readUInt32();
               break;
             }
             case 56: {
@@ -96,9 +96,9 @@ public final class HomeAvatarSummonEventReqOuterClass {
               suitId_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 112: {
 
-              guid_ = input.readUInt32();
+              avatarId_ = input.readUInt32();
               break;
             }
             default: {
@@ -133,6 +133,17 @@ public final class HomeAvatarSummonEventReqOuterClass {
               emu.grasscutter.net.proto.HomeAvatarSummonEventReqOuterClass.HomeAvatarSummonEventReq.class, emu.grasscutter.net.proto.HomeAvatarSummonEventReqOuterClass.HomeAvatarSummonEventReq.Builder.class);
     }
 
+    public static final int GUID_FIELD_NUMBER = 1;
+    private int guid_;
+    /**
+     * <code>uint32 guid = 1;</code>
+     * @return The guid.
+     */
+    @java.lang.Override
+    public int getGuid() {
+      return guid_;
+    }
+
     public static final int SUIT_ID_FIELD_NUMBER = 7;
     private int suitId_;
     /**
@@ -144,21 +155,10 @@ public final class HomeAvatarSummonEventReqOuterClass {
       return suitId_;
     }
 
-    public static final int GUID_FIELD_NUMBER = 8;
-    private int guid_;
-    /**
-     * <code>uint32 guid = 8;</code>
-     * @return The guid.
-     */
-    @java.lang.Override
-    public int getGuid() {
-      return guid_;
-    }
-
-    public static final int AVATAR_ID_FIELD_NUMBER = 6;
+    public static final int AVATAR_ID_FIELD_NUMBER = 14;
     private int avatarId_;
     /**
-     * <code>uint32 avatar_id = 6;</code>
+     * <code>uint32 avatar_id = 14;</code>
      * @return The avatarId.
      */
     @java.lang.Override
@@ -180,14 +180,14 @@ public final class HomeAvatarSummonEventReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (avatarId_ != 0) {
-        output.writeUInt32(6, avatarId_);
+      if (guid_ != 0) {
+        output.writeUInt32(1, guid_);
       }
       if (suitId_ != 0) {
         output.writeUInt32(7, suitId_);
       }
-      if (guid_ != 0) {
-        output.writeUInt32(8, guid_);
+      if (avatarId_ != 0) {
+        output.writeUInt32(14, avatarId_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +198,17 @@ public final class HomeAvatarSummonEventReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (avatarId_ != 0) {
+      if (guid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, avatarId_);
+          .computeUInt32Size(1, guid_);
       }
       if (suitId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(7, suitId_);
       }
-      if (guid_ != 0) {
+      if (avatarId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, guid_);
+          .computeUInt32Size(14, avatarId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -225,10 +225,10 @@ public final class HomeAvatarSummonEventReqOuterClass {
       }
       emu.grasscutter.net.proto.HomeAvatarSummonEventReqOuterClass.HomeAvatarSummonEventReq other = (emu.grasscutter.net.proto.HomeAvatarSummonEventReqOuterClass.HomeAvatarSummonEventReq) obj;
 
-      if (getSuitId()
-          != other.getSuitId()) return false;
       if (getGuid()
           != other.getGuid()) return false;
+      if (getSuitId()
+          != other.getSuitId()) return false;
       if (getAvatarId()
           != other.getAvatarId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -242,10 +242,10 @@ public final class HomeAvatarSummonEventReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SUIT_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSuitId();
       hash = (37 * hash) + GUID_FIELD_NUMBER;
       hash = (53 * hash) + getGuid();
+      hash = (37 * hash) + SUIT_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSuitId();
       hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
       hash = (53 * hash) + getAvatarId();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -345,8 +345,8 @@ public final class HomeAvatarSummonEventReqOuterClass {
     }
     /**
      * <pre>
-     * Name: ADACNEIOBBD
-     * CmdId: 4708
+     * CmdId: 4777
+     * Obf: LKHMJDHGINB
      * </pre>
      *
      * Protobuf type {@code HomeAvatarSummonEventReq}
@@ -386,9 +386,9 @@ public final class HomeAvatarSummonEventReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        suitId_ = 0;
-
         guid_ = 0;
+
+        suitId_ = 0;
 
         avatarId_ = 0;
 
@@ -418,8 +418,8 @@ public final class HomeAvatarSummonEventReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeAvatarSummonEventReqOuterClass.HomeAvatarSummonEventReq buildPartial() {
         emu.grasscutter.net.proto.HomeAvatarSummonEventReqOuterClass.HomeAvatarSummonEventReq result = new emu.grasscutter.net.proto.HomeAvatarSummonEventReqOuterClass.HomeAvatarSummonEventReq(this);
-        result.suitId_ = suitId_;
         result.guid_ = guid_;
+        result.suitId_ = suitId_;
         result.avatarId_ = avatarId_;
         onBuilt();
         return result;
@@ -469,11 +469,11 @@ public final class HomeAvatarSummonEventReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HomeAvatarSummonEventReqOuterClass.HomeAvatarSummonEventReq other) {
         if (other == emu.grasscutter.net.proto.HomeAvatarSummonEventReqOuterClass.HomeAvatarSummonEventReq.getDefaultInstance()) return this;
-        if (other.getSuitId() != 0) {
-          setSuitId(other.getSuitId());
-        }
         if (other.getGuid() != 0) {
           setGuid(other.getGuid());
+        }
+        if (other.getSuitId() != 0) {
+          setSuitId(other.getSuitId());
         }
         if (other.getAvatarId() != 0) {
           setAvatarId(other.getAvatarId());
@@ -504,6 +504,37 @@ public final class HomeAvatarSummonEventReqOuterClass {
             mergeFrom(parsedMessage);
           }
         }
+        return this;
+      }
+
+      private int guid_ ;
+      /**
+       * <code>uint32 guid = 1;</code>
+       * @return The guid.
+       */
+      @java.lang.Override
+      public int getGuid() {
+        return guid_;
+      }
+      /**
+       * <code>uint32 guid = 1;</code>
+       * @param value The guid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGuid(int value) {
+        
+        guid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 guid = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGuid() {
+        
+        guid_ = 0;
+        onChanged();
         return this;
       }
 
@@ -538,40 +569,9 @@ public final class HomeAvatarSummonEventReqOuterClass {
         return this;
       }
 
-      private int guid_ ;
-      /**
-       * <code>uint32 guid = 8;</code>
-       * @return The guid.
-       */
-      @java.lang.Override
-      public int getGuid() {
-        return guid_;
-      }
-      /**
-       * <code>uint32 guid = 8;</code>
-       * @param value The guid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGuid(int value) {
-        
-        guid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 guid = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGuid() {
-        
-        guid_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int avatarId_ ;
       /**
-       * <code>uint32 avatar_id = 6;</code>
+       * <code>uint32 avatar_id = 14;</code>
        * @return The avatarId.
        */
       @java.lang.Override
@@ -579,7 +579,7 @@ public final class HomeAvatarSummonEventReqOuterClass {
         return avatarId_;
       }
       /**
-       * <code>uint32 avatar_id = 6;</code>
+       * <code>uint32 avatar_id = 14;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
        */
@@ -590,7 +590,7 @@ public final class HomeAvatarSummonEventReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 avatar_id = 6;</code>
+       * <code>uint32 avatar_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarId() {
@@ -667,8 +667,8 @@ public final class HomeAvatarSummonEventReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036HomeAvatarSummonEventReq.proto\"L\n\030Home" +
-      "AvatarSummonEventReq\022\017\n\007suit_id\030\007 \001(\r\022\014\n" +
-      "\004guid\030\010 \001(\r\022\021\n\tavatar_id\030\006 \001(\rB\033\n\031emu.gr" +
+      "AvatarSummonEventReq\022\014\n\004guid\030\001 \001(\r\022\017\n\007su" +
+      "it_id\030\007 \001(\r\022\021\n\tavatar_id\030\016 \001(\rB\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -680,7 +680,7 @@ public final class HomeAvatarSummonEventReqOuterClass {
     internal_static_HomeAvatarSummonEventReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeAvatarSummonEventReq_descriptor,
-        new java.lang.String[] { "SuitId", "Guid", "AvatarId", });
+        new java.lang.String[] { "Guid", "SuitId", "AvatarId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

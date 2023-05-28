@@ -19,32 +19,32 @@ public final class BargainSnapshotOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 LKDBPDDOMID = 3;</code>
-     * @return The lKDBPDDOMID.
+     * <code>uint32 PJHMEHGELGC = 13;</code>
+     * @return The pJHMEHGELGC.
      */
-    int getLKDBPDDOMID();
+    int getPJHMEHGELGC();
 
     /**
-     * <code>int32 cur_mood = 13;</code>
+     * <code>int32 cur_mood = 14;</code>
      * @return The curMood.
      */
     int getCurMood();
 
     /**
-     * <code>uint32 bargain_id = 6;</code>
+     * <code>uint32 HADMOPEJFIC = 12;</code>
+     * @return The hADMOPEJFIC.
+     */
+    int getHADMOPEJFIC();
+
+    /**
+     * <code>uint32 bargain_id = 10;</code>
      * @return The bargainId.
      */
     int getBargainId();
-
-    /**
-     * <code>uint32 DDLPCONIMNM = 5;</code>
-     * @return The dDLPCONIMNM.
-     */
-    int getDDLPCONIMNM();
   }
   /**
    * <pre>
-   * Name: LBLBKNOBLGL
+   * Obf: OPLEOKJHFKD
    * </pre>
    *
    * Protobuf type {@code BargainSnapshot}
@@ -91,22 +91,22 @@ public final class BargainSnapshotOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              lKDBPDDOMID_ = input.readUInt32();
-              break;
-            }
-            case 40: {
-
-              dDLPCONIMNM_ = input.readUInt32();
-              break;
-            }
-            case 48: {
+            case 80: {
 
               bargainId_ = input.readUInt32();
               break;
             }
+            case 96: {
+
+              hADMOPEJFIC_ = input.readUInt32();
+              break;
+            }
             case 104: {
+
+              pJHMEHGELGC_ = input.readUInt32();
+              break;
+            }
+            case 112: {
 
               curMood_ = input.readInt32();
               break;
@@ -143,21 +143,21 @@ public final class BargainSnapshotOuterClass {
               emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot.class, emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot.Builder.class);
     }
 
-    public static final int LKDBPDDOMID_FIELD_NUMBER = 3;
-    private int lKDBPDDOMID_;
+    public static final int PJHMEHGELGC_FIELD_NUMBER = 13;
+    private int pJHMEHGELGC_;
     /**
-     * <code>uint32 LKDBPDDOMID = 3;</code>
-     * @return The lKDBPDDOMID.
+     * <code>uint32 PJHMEHGELGC = 13;</code>
+     * @return The pJHMEHGELGC.
      */
     @java.lang.Override
-    public int getLKDBPDDOMID() {
-      return lKDBPDDOMID_;
+    public int getPJHMEHGELGC() {
+      return pJHMEHGELGC_;
     }
 
-    public static final int CUR_MOOD_FIELD_NUMBER = 13;
+    public static final int CUR_MOOD_FIELD_NUMBER = 14;
     private int curMood_;
     /**
-     * <code>int32 cur_mood = 13;</code>
+     * <code>int32 cur_mood = 14;</code>
      * @return The curMood.
      */
     @java.lang.Override
@@ -165,26 +165,26 @@ public final class BargainSnapshotOuterClass {
       return curMood_;
     }
 
-    public static final int BARGAIN_ID_FIELD_NUMBER = 6;
+    public static final int HADMOPEJFIC_FIELD_NUMBER = 12;
+    private int hADMOPEJFIC_;
+    /**
+     * <code>uint32 HADMOPEJFIC = 12;</code>
+     * @return The hADMOPEJFIC.
+     */
+    @java.lang.Override
+    public int getHADMOPEJFIC() {
+      return hADMOPEJFIC_;
+    }
+
+    public static final int BARGAIN_ID_FIELD_NUMBER = 10;
     private int bargainId_;
     /**
-     * <code>uint32 bargain_id = 6;</code>
+     * <code>uint32 bargain_id = 10;</code>
      * @return The bargainId.
      */
     @java.lang.Override
     public int getBargainId() {
       return bargainId_;
-    }
-
-    public static final int DDLPCONIMNM_FIELD_NUMBER = 5;
-    private int dDLPCONIMNM_;
-    /**
-     * <code>uint32 DDLPCONIMNM = 5;</code>
-     * @return The dDLPCONIMNM.
-     */
-    @java.lang.Override
-    public int getDDLPCONIMNM() {
-      return dDLPCONIMNM_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -201,17 +201,17 @@ public final class BargainSnapshotOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (lKDBPDDOMID_ != 0) {
-        output.writeUInt32(3, lKDBPDDOMID_);
-      }
-      if (dDLPCONIMNM_ != 0) {
-        output.writeUInt32(5, dDLPCONIMNM_);
-      }
       if (bargainId_ != 0) {
-        output.writeUInt32(6, bargainId_);
+        output.writeUInt32(10, bargainId_);
+      }
+      if (hADMOPEJFIC_ != 0) {
+        output.writeUInt32(12, hADMOPEJFIC_);
+      }
+      if (pJHMEHGELGC_ != 0) {
+        output.writeUInt32(13, pJHMEHGELGC_);
       }
       if (curMood_ != 0) {
-        output.writeInt32(13, curMood_);
+        output.writeInt32(14, curMood_);
       }
       unknownFields.writeTo(output);
     }
@@ -222,21 +222,21 @@ public final class BargainSnapshotOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (lKDBPDDOMID_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, lKDBPDDOMID_);
-      }
-      if (dDLPCONIMNM_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, dDLPCONIMNM_);
-      }
       if (bargainId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, bargainId_);
+          .computeUInt32Size(10, bargainId_);
+      }
+      if (hADMOPEJFIC_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, hADMOPEJFIC_);
+      }
+      if (pJHMEHGELGC_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, pJHMEHGELGC_);
       }
       if (curMood_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(13, curMood_);
+          .computeInt32Size(14, curMood_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -253,14 +253,14 @@ public final class BargainSnapshotOuterClass {
       }
       emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot other = (emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot) obj;
 
-      if (getLKDBPDDOMID()
-          != other.getLKDBPDDOMID()) return false;
+      if (getPJHMEHGELGC()
+          != other.getPJHMEHGELGC()) return false;
       if (getCurMood()
           != other.getCurMood()) return false;
+      if (getHADMOPEJFIC()
+          != other.getHADMOPEJFIC()) return false;
       if (getBargainId()
           != other.getBargainId()) return false;
-      if (getDDLPCONIMNM()
-          != other.getDDLPCONIMNM()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -272,14 +272,14 @@ public final class BargainSnapshotOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + LKDBPDDOMID_FIELD_NUMBER;
-      hash = (53 * hash) + getLKDBPDDOMID();
+      hash = (37 * hash) + PJHMEHGELGC_FIELD_NUMBER;
+      hash = (53 * hash) + getPJHMEHGELGC();
       hash = (37 * hash) + CUR_MOOD_FIELD_NUMBER;
       hash = (53 * hash) + getCurMood();
+      hash = (37 * hash) + HADMOPEJFIC_FIELD_NUMBER;
+      hash = (53 * hash) + getHADMOPEJFIC();
       hash = (37 * hash) + BARGAIN_ID_FIELD_NUMBER;
       hash = (53 * hash) + getBargainId();
-      hash = (37 * hash) + DDLPCONIMNM_FIELD_NUMBER;
-      hash = (53 * hash) + getDDLPCONIMNM();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -377,7 +377,7 @@ public final class BargainSnapshotOuterClass {
     }
     /**
      * <pre>
-     * Name: LBLBKNOBLGL
+     * Obf: OPLEOKJHFKD
      * </pre>
      *
      * Protobuf type {@code BargainSnapshot}
@@ -417,13 +417,13 @@ public final class BargainSnapshotOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        lKDBPDDOMID_ = 0;
+        pJHMEHGELGC_ = 0;
 
         curMood_ = 0;
 
-        bargainId_ = 0;
+        hADMOPEJFIC_ = 0;
 
-        dDLPCONIMNM_ = 0;
+        bargainId_ = 0;
 
         return this;
       }
@@ -451,10 +451,10 @@ public final class BargainSnapshotOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot buildPartial() {
         emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot result = new emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot(this);
-        result.lKDBPDDOMID_ = lKDBPDDOMID_;
+        result.pJHMEHGELGC_ = pJHMEHGELGC_;
         result.curMood_ = curMood_;
+        result.hADMOPEJFIC_ = hADMOPEJFIC_;
         result.bargainId_ = bargainId_;
-        result.dDLPCONIMNM_ = dDLPCONIMNM_;
         onBuilt();
         return result;
       }
@@ -503,17 +503,17 @@ public final class BargainSnapshotOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot other) {
         if (other == emu.grasscutter.net.proto.BargainSnapshotOuterClass.BargainSnapshot.getDefaultInstance()) return this;
-        if (other.getLKDBPDDOMID() != 0) {
-          setLKDBPDDOMID(other.getLKDBPDDOMID());
+        if (other.getPJHMEHGELGC() != 0) {
+          setPJHMEHGELGC(other.getPJHMEHGELGC());
         }
         if (other.getCurMood() != 0) {
           setCurMood(other.getCurMood());
         }
+        if (other.getHADMOPEJFIC() != 0) {
+          setHADMOPEJFIC(other.getHADMOPEJFIC());
+        }
         if (other.getBargainId() != 0) {
           setBargainId(other.getBargainId());
-        }
-        if (other.getDDLPCONIMNM() != 0) {
-          setDDLPCONIMNM(other.getDDLPCONIMNM());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -544,40 +544,40 @@ public final class BargainSnapshotOuterClass {
         return this;
       }
 
-      private int lKDBPDDOMID_ ;
+      private int pJHMEHGELGC_ ;
       /**
-       * <code>uint32 LKDBPDDOMID = 3;</code>
-       * @return The lKDBPDDOMID.
+       * <code>uint32 PJHMEHGELGC = 13;</code>
+       * @return The pJHMEHGELGC.
        */
       @java.lang.Override
-      public int getLKDBPDDOMID() {
-        return lKDBPDDOMID_;
+      public int getPJHMEHGELGC() {
+        return pJHMEHGELGC_;
       }
       /**
-       * <code>uint32 LKDBPDDOMID = 3;</code>
-       * @param value The lKDBPDDOMID to set.
+       * <code>uint32 PJHMEHGELGC = 13;</code>
+       * @param value The pJHMEHGELGC to set.
        * @return This builder for chaining.
        */
-      public Builder setLKDBPDDOMID(int value) {
+      public Builder setPJHMEHGELGC(int value) {
         
-        lKDBPDDOMID_ = value;
+        pJHMEHGELGC_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 LKDBPDDOMID = 3;</code>
+       * <code>uint32 PJHMEHGELGC = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLKDBPDDOMID() {
+      public Builder clearPJHMEHGELGC() {
         
-        lKDBPDDOMID_ = 0;
+        pJHMEHGELGC_ = 0;
         onChanged();
         return this;
       }
 
       private int curMood_ ;
       /**
-       * <code>int32 cur_mood = 13;</code>
+       * <code>int32 cur_mood = 14;</code>
        * @return The curMood.
        */
       @java.lang.Override
@@ -585,7 +585,7 @@ public final class BargainSnapshotOuterClass {
         return curMood_;
       }
       /**
-       * <code>int32 cur_mood = 13;</code>
+       * <code>int32 cur_mood = 14;</code>
        * @param value The curMood to set.
        * @return This builder for chaining.
        */
@@ -596,7 +596,7 @@ public final class BargainSnapshotOuterClass {
         return this;
       }
       /**
-       * <code>int32 cur_mood = 13;</code>
+       * <code>int32 cur_mood = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearCurMood() {
@@ -606,9 +606,40 @@ public final class BargainSnapshotOuterClass {
         return this;
       }
 
+      private int hADMOPEJFIC_ ;
+      /**
+       * <code>uint32 HADMOPEJFIC = 12;</code>
+       * @return The hADMOPEJFIC.
+       */
+      @java.lang.Override
+      public int getHADMOPEJFIC() {
+        return hADMOPEJFIC_;
+      }
+      /**
+       * <code>uint32 HADMOPEJFIC = 12;</code>
+       * @param value The hADMOPEJFIC to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHADMOPEJFIC(int value) {
+        
+        hADMOPEJFIC_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 HADMOPEJFIC = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHADMOPEJFIC() {
+        
+        hADMOPEJFIC_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int bargainId_ ;
       /**
-       * <code>uint32 bargain_id = 6;</code>
+       * <code>uint32 bargain_id = 10;</code>
        * @return The bargainId.
        */
       @java.lang.Override
@@ -616,7 +647,7 @@ public final class BargainSnapshotOuterClass {
         return bargainId_;
       }
       /**
-       * <code>uint32 bargain_id = 6;</code>
+       * <code>uint32 bargain_id = 10;</code>
        * @param value The bargainId to set.
        * @return This builder for chaining.
        */
@@ -627,43 +658,12 @@ public final class BargainSnapshotOuterClass {
         return this;
       }
       /**
-       * <code>uint32 bargain_id = 6;</code>
+       * <code>uint32 bargain_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearBargainId() {
         
         bargainId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int dDLPCONIMNM_ ;
-      /**
-       * <code>uint32 DDLPCONIMNM = 5;</code>
-       * @return The dDLPCONIMNM.
-       */
-      @java.lang.Override
-      public int getDDLPCONIMNM() {
-        return dDLPCONIMNM_;
-      }
-      /**
-       * <code>uint32 DDLPCONIMNM = 5;</code>
-       * @param value The dDLPCONIMNM to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDDLPCONIMNM(int value) {
-        
-        dDLPCONIMNM_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 DDLPCONIMNM = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDDLPCONIMNM() {
-        
-        dDLPCONIMNM_ = 0;
         onChanged();
         return this;
       }
@@ -735,8 +735,8 @@ public final class BargainSnapshotOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025BargainSnapshot.proto\"a\n\017BargainSnapsh" +
-      "ot\022\023\n\013LKDBPDDOMID\030\003 \001(\r\022\020\n\010cur_mood\030\r \001(" +
-      "\005\022\022\n\nbargain_id\030\006 \001(\r\022\023\n\013DDLPCONIMNM\030\005 \001" +
+      "ot\022\023\n\013PJHMEHGELGC\030\r \001(\r\022\020\n\010cur_mood\030\016 \001(" +
+      "\005\022\023\n\013HADMOPEJFIC\030\014 \001(\r\022\022\n\nbargain_id\030\n \001" +
       "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -748,7 +748,7 @@ public final class BargainSnapshotOuterClass {
     internal_static_BargainSnapshot_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BargainSnapshot_descriptor,
-        new java.lang.String[] { "LKDBPDDOMID", "CurMood", "BargainId", "DDLPCONIMNM", });
+        new java.lang.String[] { "PJHMEHGELGC", "CurMood", "HADMOPEJFIC", "BargainId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

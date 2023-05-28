@@ -19,23 +19,23 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 mp_ret = 10;</code>
+     * <code>int32 mp_ret = 2;</code>
      * @return The mpRet.
      */
     int getMpRet();
 
     /**
-     * <code>repeated uint32 param_list = 1;</code>
+     * <code>repeated uint32 param_list = 6;</code>
      * @return A list containing the paramList.
      */
     java.util.List<java.lang.Integer> getParamListList();
     /**
-     * <code>repeated uint32 param_list = 1;</code>
+     * <code>repeated uint32 param_list = 6;</code>
      * @return The count of paramList.
      */
     int getParamListCount();
     /**
-     * <code>repeated uint32 param_list = 1;</code>
+     * <code>repeated uint32 param_list = 6;</code>
      * @param index The index of the element to return.
      * @return The paramList at the given index.
      */
@@ -49,8 +49,8 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
   }
   /**
    * <pre>
-   * Name: JIJPJGHOGBN
-   * CmdId: 1831
+   * CmdId: 1816
+   * Obf: ACIMIPPBCHH
    * </pre>
    *
    * Protobuf type {@code GetPlayerMpModeAvailabilityRsp}
@@ -99,7 +99,17 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 16: {
+
+              mpRet_ = input.readInt32();
+              break;
+            }
+            case 40: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 48: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 paramList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -107,7 +117,7 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
               paramList_.addInt(input.readUInt32());
               break;
             }
-            case 10: {
+            case 50: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -118,16 +128,6 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
                 paramList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 40: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 80: {
-
-              mpRet_ = input.readInt32();
               break;
             }
             default: {
@@ -165,10 +165,10 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
               emu.grasscutter.net.proto.GetPlayerMpModeAvailabilityRspOuterClass.GetPlayerMpModeAvailabilityRsp.class, emu.grasscutter.net.proto.GetPlayerMpModeAvailabilityRspOuterClass.GetPlayerMpModeAvailabilityRsp.Builder.class);
     }
 
-    public static final int MP_RET_FIELD_NUMBER = 10;
+    public static final int MP_RET_FIELD_NUMBER = 2;
     private int mpRet_;
     /**
-     * <code>int32 mp_ret = 10;</code>
+     * <code>int32 mp_ret = 2;</code>
      * @return The mpRet.
      */
     @java.lang.Override
@@ -176,10 +176,10 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
       return mpRet_;
     }
 
-    public static final int PARAM_LIST_FIELD_NUMBER = 1;
+    public static final int PARAM_LIST_FIELD_NUMBER = 6;
     private com.google.protobuf.Internal.IntList paramList_;
     /**
-     * <code>repeated uint32 param_list = 1;</code>
+     * <code>repeated uint32 param_list = 6;</code>
      * @return A list containing the paramList.
      */
     @java.lang.Override
@@ -188,14 +188,14 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
       return paramList_;
     }
     /**
-     * <code>repeated uint32 param_list = 1;</code>
+     * <code>repeated uint32 param_list = 6;</code>
      * @return The count of paramList.
      */
     public int getParamListCount() {
       return paramList_.size();
     }
     /**
-     * <code>repeated uint32 param_list = 1;</code>
+     * <code>repeated uint32 param_list = 6;</code>
      * @param index The index of the element to return.
      * @return The paramList at the given index.
      */
@@ -230,18 +230,18 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (getParamListList().size() > 0) {
-        output.writeUInt32NoTag(10);
-        output.writeUInt32NoTag(paramListMemoizedSerializedSize);
-      }
-      for (int i = 0; i < paramList_.size(); i++) {
-        output.writeUInt32NoTag(paramList_.getInt(i));
+      if (mpRet_ != 0) {
+        output.writeInt32(2, mpRet_);
       }
       if (retcode_ != 0) {
         output.writeInt32(5, retcode_);
       }
-      if (mpRet_ != 0) {
-        output.writeInt32(10, mpRet_);
+      if (getParamListList().size() > 0) {
+        output.writeUInt32NoTag(50);
+        output.writeUInt32NoTag(paramListMemoizedSerializedSize);
+      }
+      for (int i = 0; i < paramList_.size(); i++) {
+        output.writeUInt32NoTag(paramList_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -252,6 +252,14 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (mpRet_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, mpRet_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(5, retcode_);
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < paramList_.size(); i++) {
@@ -265,14 +273,6 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         paramListMemoizedSerializedSize = dataSize;
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, retcode_);
-      }
-      if (mpRet_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(10, mpRet_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -411,8 +411,8 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
     }
     /**
      * <pre>
-     * Name: JIJPJGHOGBN
-     * CmdId: 1831
+     * CmdId: 1816
+     * Obf: ACIMIPPBCHH
      * </pre>
      *
      * Protobuf type {@code GetPlayerMpModeAvailabilityRsp}
@@ -588,7 +588,7 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
 
       private int mpRet_ ;
       /**
-       * <code>int32 mp_ret = 10;</code>
+       * <code>int32 mp_ret = 2;</code>
        * @return The mpRet.
        */
       @java.lang.Override
@@ -596,7 +596,7 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
         return mpRet_;
       }
       /**
-       * <code>int32 mp_ret = 10;</code>
+       * <code>int32 mp_ret = 2;</code>
        * @param value The mpRet to set.
        * @return This builder for chaining.
        */
@@ -607,7 +607,7 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 mp_ret = 10;</code>
+       * <code>int32 mp_ret = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearMpRet() {
@@ -625,7 +625,7 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 param_list = 1;</code>
+       * <code>repeated uint32 param_list = 6;</code>
        * @return A list containing the paramList.
        */
       public java.util.List<java.lang.Integer>
@@ -634,14 +634,14 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
                  java.util.Collections.unmodifiableList(paramList_) : paramList_;
       }
       /**
-       * <code>repeated uint32 param_list = 1;</code>
+       * <code>repeated uint32 param_list = 6;</code>
        * @return The count of paramList.
        */
       public int getParamListCount() {
         return paramList_.size();
       }
       /**
-       * <code>repeated uint32 param_list = 1;</code>
+       * <code>repeated uint32 param_list = 6;</code>
        * @param index The index of the element to return.
        * @return The paramList at the given index.
        */
@@ -649,7 +649,7 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
         return paramList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 param_list = 1;</code>
+       * <code>repeated uint32 param_list = 6;</code>
        * @param index The index to set the value at.
        * @param value The paramList to set.
        * @return This builder for chaining.
@@ -662,7 +662,7 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 param_list = 1;</code>
+       * <code>repeated uint32 param_list = 6;</code>
        * @param value The paramList to add.
        * @return This builder for chaining.
        */
@@ -673,7 +673,7 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 param_list = 1;</code>
+       * <code>repeated uint32 param_list = 6;</code>
        * @param values The paramList to add.
        * @return This builder for chaining.
        */
@@ -686,7 +686,7 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 param_list = 1;</code>
+       * <code>repeated uint32 param_list = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearParamList() {
@@ -795,7 +795,7 @@ public final class GetPlayerMpModeAvailabilityRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n$GetPlayerMpModeAvailabilityRsp.proto\"U" +
       "\n\036GetPlayerMpModeAvailabilityRsp\022\016\n\006mp_r" +
-      "et\030\n \001(\005\022\022\n\nparam_list\030\001 \003(\r\022\017\n\007retcode\030" +
+      "et\030\002 \001(\005\022\022\n\nparam_list\030\006 \003(\r\022\017\n\007retcode\030" +
       "\005 \001(\005B\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };

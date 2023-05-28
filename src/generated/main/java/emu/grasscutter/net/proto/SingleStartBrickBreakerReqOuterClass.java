@@ -19,55 +19,55 @@ public final class SingleStartBrickBreakerReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 chosen_skill_list = 9;</code>
-     * @return A list containing the chosenSkillList.
+     * <code>bool is_dungeon = 14;</code>
+     * @return The isDungeon.
      */
-    java.util.List<java.lang.Integer> getChosenSkillListList();
-    /**
-     * <code>repeated uint32 chosen_skill_list = 9;</code>
-     * @return The count of chosenSkillList.
-     */
-    int getChosenSkillListCount();
-    /**
-     * <code>repeated uint32 chosen_skill_list = 9;</code>
-     * @param index The index of the element to return.
-     * @return The chosenSkillList at the given index.
-     */
-    int getChosenSkillList(int index);
+    boolean getIsDungeon();
 
     /**
-     * <code>uint32 level_id = 14;</code>
+     * <code>uint32 level_id = 6;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>repeated uint32 chosen_avatar_list = 12;</code>
+     * <code>repeated uint32 chosen_avatar_list = 10;</code>
      * @return A list containing the chosenAvatarList.
      */
     java.util.List<java.lang.Integer> getChosenAvatarListList();
     /**
-     * <code>repeated uint32 chosen_avatar_list = 12;</code>
+     * <code>repeated uint32 chosen_avatar_list = 10;</code>
      * @return The count of chosenAvatarList.
      */
     int getChosenAvatarListCount();
     /**
-     * <code>repeated uint32 chosen_avatar_list = 12;</code>
+     * <code>repeated uint32 chosen_avatar_list = 10;</code>
      * @param index The index of the element to return.
      * @return The chosenAvatarList at the given index.
      */
     int getChosenAvatarList(int index);
 
     /**
-     * <code>bool is_dungeon = 8;</code>
-     * @return The isDungeon.
+     * <code>repeated uint32 chosen_skill_list = 2;</code>
+     * @return A list containing the chosenSkillList.
      */
-    boolean getIsDungeon();
+    java.util.List<java.lang.Integer> getChosenSkillListList();
+    /**
+     * <code>repeated uint32 chosen_skill_list = 2;</code>
+     * @return The count of chosenSkillList.
+     */
+    int getChosenSkillListCount();
+    /**
+     * <code>repeated uint32 chosen_skill_list = 2;</code>
+     * @param index The index of the element to return.
+     * @return The chosenSkillList at the given index.
+     */
+    int getChosenSkillList(int index);
   }
   /**
    * <pre>
-   * Name: JOHLMDHNHAL
-   * CmdId: 20581
+   * CmdId: 23458
+   * Obf: FMNFIFAKILE
    * </pre>
    *
    * Protobuf type {@code SingleStartBrickBreakerReq}
@@ -82,8 +82,8 @@ public final class SingleStartBrickBreakerReqOuterClass {
       super(builder);
     }
     private SingleStartBrickBreakerReq() {
-      chosenSkillList_ = emptyIntList();
       chosenAvatarList_ = emptyIntList();
+      chosenSkillList_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -117,25 +117,20 @@ public final class SingleStartBrickBreakerReqOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
-
-              isDungeon_ = input.readBool();
-              break;
-            }
-            case 72: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+            case 16: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 chosenSkillList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000002;
               }
               chosenSkillList_.addInt(input.readUInt32());
               break;
             }
-            case 74: {
+            case 18: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
                 chosenSkillList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000002;
               }
               while (input.getBytesUntilLimit() > 0) {
                 chosenSkillList_.addInt(input.readUInt32());
@@ -143,20 +138,25 @@ public final class SingleStartBrickBreakerReqOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 96: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+            case 48: {
+
+              levelId_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 chosenAvatarList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               chosenAvatarList_.addInt(input.readUInt32());
               break;
             }
-            case 98: {
+            case 82: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
                 chosenAvatarList_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
                 chosenAvatarList_.addInt(input.readUInt32());
@@ -166,7 +166,7 @@ public final class SingleStartBrickBreakerReqOuterClass {
             }
             case 112: {
 
-              levelId_ = input.readUInt32();
+              isDungeon_ = input.readBool();
               break;
             }
             default: {
@@ -184,10 +184,10 @@ public final class SingleStartBrickBreakerReqOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
           chosenSkillList_.makeImmutable(); // C
         }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
           chosenAvatarList_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
@@ -207,38 +207,21 @@ public final class SingleStartBrickBreakerReqOuterClass {
               emu.grasscutter.net.proto.SingleStartBrickBreakerReqOuterClass.SingleStartBrickBreakerReq.class, emu.grasscutter.net.proto.SingleStartBrickBreakerReqOuterClass.SingleStartBrickBreakerReq.Builder.class);
     }
 
-    public static final int CHOSEN_SKILL_LIST_FIELD_NUMBER = 9;
-    private com.google.protobuf.Internal.IntList chosenSkillList_;
+    public static final int IS_DUNGEON_FIELD_NUMBER = 14;
+    private boolean isDungeon_;
     /**
-     * <code>repeated uint32 chosen_skill_list = 9;</code>
-     * @return A list containing the chosenSkillList.
+     * <code>bool is_dungeon = 14;</code>
+     * @return The isDungeon.
      */
     @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getChosenSkillListList() {
-      return chosenSkillList_;
+    public boolean getIsDungeon() {
+      return isDungeon_;
     }
-    /**
-     * <code>repeated uint32 chosen_skill_list = 9;</code>
-     * @return The count of chosenSkillList.
-     */
-    public int getChosenSkillListCount() {
-      return chosenSkillList_.size();
-    }
-    /**
-     * <code>repeated uint32 chosen_skill_list = 9;</code>
-     * @param index The index of the element to return.
-     * @return The chosenSkillList at the given index.
-     */
-    public int getChosenSkillList(int index) {
-      return chosenSkillList_.getInt(index);
-    }
-    private int chosenSkillListMemoizedSerializedSize = -1;
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 14;
+    public static final int LEVEL_ID_FIELD_NUMBER = 6;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 14;</code>
+     * <code>uint32 level_id = 6;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -246,10 +229,10 @@ public final class SingleStartBrickBreakerReqOuterClass {
       return levelId_;
     }
 
-    public static final int CHOSEN_AVATAR_LIST_FIELD_NUMBER = 12;
+    public static final int CHOSEN_AVATAR_LIST_FIELD_NUMBER = 10;
     private com.google.protobuf.Internal.IntList chosenAvatarList_;
     /**
-     * <code>repeated uint32 chosen_avatar_list = 12;</code>
+     * <code>repeated uint32 chosen_avatar_list = 10;</code>
      * @return A list containing the chosenAvatarList.
      */
     @java.lang.Override
@@ -258,14 +241,14 @@ public final class SingleStartBrickBreakerReqOuterClass {
       return chosenAvatarList_;
     }
     /**
-     * <code>repeated uint32 chosen_avatar_list = 12;</code>
+     * <code>repeated uint32 chosen_avatar_list = 10;</code>
      * @return The count of chosenAvatarList.
      */
     public int getChosenAvatarListCount() {
       return chosenAvatarList_.size();
     }
     /**
-     * <code>repeated uint32 chosen_avatar_list = 12;</code>
+     * <code>repeated uint32 chosen_avatar_list = 10;</code>
      * @param index The index of the element to return.
      * @return The chosenAvatarList at the given index.
      */
@@ -274,16 +257,33 @@ public final class SingleStartBrickBreakerReqOuterClass {
     }
     private int chosenAvatarListMemoizedSerializedSize = -1;
 
-    public static final int IS_DUNGEON_FIELD_NUMBER = 8;
-    private boolean isDungeon_;
+    public static final int CHOSEN_SKILL_LIST_FIELD_NUMBER = 2;
+    private com.google.protobuf.Internal.IntList chosenSkillList_;
     /**
-     * <code>bool is_dungeon = 8;</code>
-     * @return The isDungeon.
+     * <code>repeated uint32 chosen_skill_list = 2;</code>
+     * @return A list containing the chosenSkillList.
      */
     @java.lang.Override
-    public boolean getIsDungeon() {
-      return isDungeon_;
+    public java.util.List<java.lang.Integer>
+        getChosenSkillListList() {
+      return chosenSkillList_;
     }
+    /**
+     * <code>repeated uint32 chosen_skill_list = 2;</code>
+     * @return The count of chosenSkillList.
+     */
+    public int getChosenSkillListCount() {
+      return chosenSkillList_.size();
+    }
+    /**
+     * <code>repeated uint32 chosen_skill_list = 2;</code>
+     * @param index The index of the element to return.
+     * @return The chosenSkillList at the given index.
+     */
+    public int getChosenSkillList(int index) {
+      return chosenSkillList_.getInt(index);
+    }
+    private int chosenSkillListMemoizedSerializedSize = -1;
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -300,25 +300,25 @@ public final class SingleStartBrickBreakerReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (isDungeon_ != false) {
-        output.writeBool(8, isDungeon_);
-      }
       if (getChosenSkillListList().size() > 0) {
-        output.writeUInt32NoTag(74);
+        output.writeUInt32NoTag(18);
         output.writeUInt32NoTag(chosenSkillListMemoizedSerializedSize);
       }
       for (int i = 0; i < chosenSkillList_.size(); i++) {
         output.writeUInt32NoTag(chosenSkillList_.getInt(i));
       }
+      if (levelId_ != 0) {
+        output.writeUInt32(6, levelId_);
+      }
       if (getChosenAvatarListList().size() > 0) {
-        output.writeUInt32NoTag(98);
+        output.writeUInt32NoTag(82);
         output.writeUInt32NoTag(chosenAvatarListMemoizedSerializedSize);
       }
       for (int i = 0; i < chosenAvatarList_.size(); i++) {
         output.writeUInt32NoTag(chosenAvatarList_.getInt(i));
       }
-      if (levelId_ != 0) {
-        output.writeUInt32(14, levelId_);
+      if (isDungeon_ != false) {
+        output.writeBool(14, isDungeon_);
       }
       unknownFields.writeTo(output);
     }
@@ -329,10 +329,6 @@ public final class SingleStartBrickBreakerReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isDungeon_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isDungeon_);
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < chosenSkillList_.size(); i++) {
@@ -346,6 +342,10 @@ public final class SingleStartBrickBreakerReqOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         chosenSkillListMemoizedSerializedSize = dataSize;
+      }
+      if (levelId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, levelId_);
       }
       {
         int dataSize = 0;
@@ -361,9 +361,9 @@ public final class SingleStartBrickBreakerReqOuterClass {
         }
         chosenAvatarListMemoizedSerializedSize = dataSize;
       }
-      if (levelId_ != 0) {
+      if (isDungeon_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, levelId_);
+          .computeBoolSize(14, isDungeon_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -380,14 +380,14 @@ public final class SingleStartBrickBreakerReqOuterClass {
       }
       emu.grasscutter.net.proto.SingleStartBrickBreakerReqOuterClass.SingleStartBrickBreakerReq other = (emu.grasscutter.net.proto.SingleStartBrickBreakerReqOuterClass.SingleStartBrickBreakerReq) obj;
 
-      if (!getChosenSkillListList()
-          .equals(other.getChosenSkillListList())) return false;
+      if (getIsDungeon()
+          != other.getIsDungeon()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
       if (!getChosenAvatarListList()
           .equals(other.getChosenAvatarListList())) return false;
-      if (getIsDungeon()
-          != other.getIsDungeon()) return false;
+      if (!getChosenSkillListList()
+          .equals(other.getChosenSkillListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -399,19 +399,19 @@ public final class SingleStartBrickBreakerReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getChosenSkillListCount() > 0) {
-        hash = (37 * hash) + CHOSEN_SKILL_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getChosenSkillListList().hashCode();
-      }
+      hash = (37 * hash) + IS_DUNGEON_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsDungeon());
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
       if (getChosenAvatarListCount() > 0) {
         hash = (37 * hash) + CHOSEN_AVATAR_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getChosenAvatarListList().hashCode();
       }
-      hash = (37 * hash) + IS_DUNGEON_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsDungeon());
+      if (getChosenSkillListCount() > 0) {
+        hash = (37 * hash) + CHOSEN_SKILL_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getChosenSkillListList().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -509,8 +509,8 @@ public final class SingleStartBrickBreakerReqOuterClass {
     }
     /**
      * <pre>
-     * Name: JOHLMDHNHAL
-     * CmdId: 20581
+     * CmdId: 23458
+     * Obf: FMNFIFAKILE
      * </pre>
      *
      * Protobuf type {@code SingleStartBrickBreakerReq}
@@ -550,14 +550,14 @@ public final class SingleStartBrickBreakerReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        chosenSkillList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
+        isDungeon_ = false;
+
         levelId_ = 0;
 
         chosenAvatarList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        chosenSkillList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
-        isDungeon_ = false;
-
         return this;
       }
 
@@ -585,18 +585,18 @@ public final class SingleStartBrickBreakerReqOuterClass {
       public emu.grasscutter.net.proto.SingleStartBrickBreakerReqOuterClass.SingleStartBrickBreakerReq buildPartial() {
         emu.grasscutter.net.proto.SingleStartBrickBreakerReqOuterClass.SingleStartBrickBreakerReq result = new emu.grasscutter.net.proto.SingleStartBrickBreakerReqOuterClass.SingleStartBrickBreakerReq(this);
         int from_bitField0_ = bitField0_;
+        result.isDungeon_ = isDungeon_;
+        result.levelId_ = levelId_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          chosenSkillList_.makeImmutable();
+          chosenAvatarList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.chosenSkillList_ = chosenSkillList_;
-        result.levelId_ = levelId_;
+        result.chosenAvatarList_ = chosenAvatarList_;
         if (((bitField0_ & 0x00000002) != 0)) {
-          chosenAvatarList_.makeImmutable();
+          chosenSkillList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000002);
         }
-        result.chosenAvatarList_ = chosenAvatarList_;
-        result.isDungeon_ = isDungeon_;
+        result.chosenSkillList_ = chosenSkillList_;
         onBuilt();
         return result;
       }
@@ -645,15 +645,8 @@ public final class SingleStartBrickBreakerReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SingleStartBrickBreakerReqOuterClass.SingleStartBrickBreakerReq other) {
         if (other == emu.grasscutter.net.proto.SingleStartBrickBreakerReqOuterClass.SingleStartBrickBreakerReq.getDefaultInstance()) return this;
-        if (!other.chosenSkillList_.isEmpty()) {
-          if (chosenSkillList_.isEmpty()) {
-            chosenSkillList_ = other.chosenSkillList_;
-            bitField0_ = (bitField0_ & ~0x00000001);
-          } else {
-            ensureChosenSkillListIsMutable();
-            chosenSkillList_.addAll(other.chosenSkillList_);
-          }
-          onChanged();
+        if (other.getIsDungeon() != false) {
+          setIsDungeon(other.getIsDungeon());
         }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
@@ -661,15 +654,22 @@ public final class SingleStartBrickBreakerReqOuterClass {
         if (!other.chosenAvatarList_.isEmpty()) {
           if (chosenAvatarList_.isEmpty()) {
             chosenAvatarList_ = other.chosenAvatarList_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000001);
           } else {
             ensureChosenAvatarListIsMutable();
             chosenAvatarList_.addAll(other.chosenAvatarList_);
           }
           onChanged();
         }
-        if (other.getIsDungeon() != false) {
-          setIsDungeon(other.getIsDungeon());
+        if (!other.chosenSkillList_.isEmpty()) {
+          if (chosenSkillList_.isEmpty()) {
+            chosenSkillList_ = other.chosenSkillList_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+          } else {
+            ensureChosenSkillListIsMutable();
+            chosenSkillList_.addAll(other.chosenSkillList_);
+          }
+          onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -701,88 +701,40 @@ public final class SingleStartBrickBreakerReqOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList chosenSkillList_ = emptyIntList();
-      private void ensureChosenSkillListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          chosenSkillList_ = mutableCopy(chosenSkillList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
+      private boolean isDungeon_ ;
       /**
-       * <code>repeated uint32 chosen_skill_list = 9;</code>
-       * @return A list containing the chosenSkillList.
+       * <code>bool is_dungeon = 14;</code>
+       * @return The isDungeon.
        */
-      public java.util.List<java.lang.Integer>
-          getChosenSkillListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(chosenSkillList_) : chosenSkillList_;
+      @java.lang.Override
+      public boolean getIsDungeon() {
+        return isDungeon_;
       }
       /**
-       * <code>repeated uint32 chosen_skill_list = 9;</code>
-       * @return The count of chosenSkillList.
-       */
-      public int getChosenSkillListCount() {
-        return chosenSkillList_.size();
-      }
-      /**
-       * <code>repeated uint32 chosen_skill_list = 9;</code>
-       * @param index The index of the element to return.
-       * @return The chosenSkillList at the given index.
-       */
-      public int getChosenSkillList(int index) {
-        return chosenSkillList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 chosen_skill_list = 9;</code>
-       * @param index The index to set the value at.
-       * @param value The chosenSkillList to set.
+       * <code>bool is_dungeon = 14;</code>
+       * @param value The isDungeon to set.
        * @return This builder for chaining.
        */
-      public Builder setChosenSkillList(
-          int index, int value) {
-        ensureChosenSkillListIsMutable();
-        chosenSkillList_.setInt(index, value);
+      public Builder setIsDungeon(boolean value) {
+        
+        isDungeon_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 chosen_skill_list = 9;</code>
-       * @param value The chosenSkillList to add.
+       * <code>bool is_dungeon = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder addChosenSkillList(int value) {
-        ensureChosenSkillListIsMutable();
-        chosenSkillList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 chosen_skill_list = 9;</code>
-       * @param values The chosenSkillList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllChosenSkillList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureChosenSkillListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, chosenSkillList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 chosen_skill_list = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearChosenSkillList() {
-        chosenSkillList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
+      public Builder clearIsDungeon() {
+        
+        isDungeon_ = false;
         onChanged();
         return this;
       }
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 14;</code>
+       * <code>uint32 level_id = 6;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -790,7 +742,7 @@ public final class SingleStartBrickBreakerReqOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 14;</code>
+       * <code>uint32 level_id = 6;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -801,7 +753,7 @@ public final class SingleStartBrickBreakerReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 14;</code>
+       * <code>uint32 level_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -813,29 +765,29 @@ public final class SingleStartBrickBreakerReqOuterClass {
 
       private com.google.protobuf.Internal.IntList chosenAvatarList_ = emptyIntList();
       private void ensureChosenAvatarListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
+        if (!((bitField0_ & 0x00000001) != 0)) {
           chosenAvatarList_ = mutableCopy(chosenAvatarList_);
-          bitField0_ |= 0x00000002;
+          bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <code>repeated uint32 chosen_avatar_list = 12;</code>
+       * <code>repeated uint32 chosen_avatar_list = 10;</code>
        * @return A list containing the chosenAvatarList.
        */
       public java.util.List<java.lang.Integer>
           getChosenAvatarListList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
+        return ((bitField0_ & 0x00000001) != 0) ?
                  java.util.Collections.unmodifiableList(chosenAvatarList_) : chosenAvatarList_;
       }
       /**
-       * <code>repeated uint32 chosen_avatar_list = 12;</code>
+       * <code>repeated uint32 chosen_avatar_list = 10;</code>
        * @return The count of chosenAvatarList.
        */
       public int getChosenAvatarListCount() {
         return chosenAvatarList_.size();
       }
       /**
-       * <code>repeated uint32 chosen_avatar_list = 12;</code>
+       * <code>repeated uint32 chosen_avatar_list = 10;</code>
        * @param index The index of the element to return.
        * @return The chosenAvatarList at the given index.
        */
@@ -843,7 +795,7 @@ public final class SingleStartBrickBreakerReqOuterClass {
         return chosenAvatarList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 chosen_avatar_list = 12;</code>
+       * <code>repeated uint32 chosen_avatar_list = 10;</code>
        * @param index The index to set the value at.
        * @param value The chosenAvatarList to set.
        * @return This builder for chaining.
@@ -856,7 +808,7 @@ public final class SingleStartBrickBreakerReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 chosen_avatar_list = 12;</code>
+       * <code>repeated uint32 chosen_avatar_list = 10;</code>
        * @param value The chosenAvatarList to add.
        * @return This builder for chaining.
        */
@@ -867,7 +819,7 @@ public final class SingleStartBrickBreakerReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 chosen_avatar_list = 12;</code>
+       * <code>repeated uint32 chosen_avatar_list = 10;</code>
        * @param values The chosenAvatarList to add.
        * @return This builder for chaining.
        */
@@ -880,43 +832,91 @@ public final class SingleStartBrickBreakerReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 chosen_avatar_list = 12;</code>
+       * <code>repeated uint32 chosen_avatar_list = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearChosenAvatarList() {
         chosenAvatarList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
       }
 
-      private boolean isDungeon_ ;
-      /**
-       * <code>bool is_dungeon = 8;</code>
-       * @return The isDungeon.
-       */
-      @java.lang.Override
-      public boolean getIsDungeon() {
-        return isDungeon_;
+      private com.google.protobuf.Internal.IntList chosenSkillList_ = emptyIntList();
+      private void ensureChosenSkillListIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          chosenSkillList_ = mutableCopy(chosenSkillList_);
+          bitField0_ |= 0x00000002;
+         }
       }
       /**
-       * <code>bool is_dungeon = 8;</code>
-       * @param value The isDungeon to set.
+       * <code>repeated uint32 chosen_skill_list = 2;</code>
+       * @return A list containing the chosenSkillList.
+       */
+      public java.util.List<java.lang.Integer>
+          getChosenSkillListList() {
+        return ((bitField0_ & 0x00000002) != 0) ?
+                 java.util.Collections.unmodifiableList(chosenSkillList_) : chosenSkillList_;
+      }
+      /**
+       * <code>repeated uint32 chosen_skill_list = 2;</code>
+       * @return The count of chosenSkillList.
+       */
+      public int getChosenSkillListCount() {
+        return chosenSkillList_.size();
+      }
+      /**
+       * <code>repeated uint32 chosen_skill_list = 2;</code>
+       * @param index The index of the element to return.
+       * @return The chosenSkillList at the given index.
+       */
+      public int getChosenSkillList(int index) {
+        return chosenSkillList_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 chosen_skill_list = 2;</code>
+       * @param index The index to set the value at.
+       * @param value The chosenSkillList to set.
        * @return This builder for chaining.
        */
-      public Builder setIsDungeon(boolean value) {
-        
-        isDungeon_ = value;
+      public Builder setChosenSkillList(
+          int index, int value) {
+        ensureChosenSkillListIsMutable();
+        chosenSkillList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_dungeon = 8;</code>
+       * <code>repeated uint32 chosen_skill_list = 2;</code>
+       * @param value The chosenSkillList to add.
        * @return This builder for chaining.
        */
-      public Builder clearIsDungeon() {
-        
-        isDungeon_ = false;
+      public Builder addChosenSkillList(int value) {
+        ensureChosenSkillListIsMutable();
+        chosenSkillList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 chosen_skill_list = 2;</code>
+       * @param values The chosenSkillList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllChosenSkillList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureChosenSkillListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, chosenSkillList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 chosen_skill_list = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearChosenSkillList() {
+        chosenSkillList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
@@ -988,9 +988,9 @@ public final class SingleStartBrickBreakerReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n SingleStartBrickBreakerReq.proto\"y\n\032Si" +
-      "ngleStartBrickBreakerReq\022\031\n\021chosen_skill" +
-      "_list\030\t \003(\r\022\020\n\010level_id\030\016 \001(\r\022\032\n\022chosen_" +
-      "avatar_list\030\014 \003(\r\022\022\n\nis_dungeon\030\010 \001(\010B\033\n" +
+      "ngleStartBrickBreakerReq\022\022\n\nis_dungeon\030\016" +
+      " \001(\010\022\020\n\010level_id\030\006 \001(\r\022\032\n\022chosen_avatar_" +
+      "list\030\n \003(\r\022\031\n\021chosen_skill_list\030\002 \003(\rB\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1002,7 +1002,7 @@ public final class SingleStartBrickBreakerReqOuterClass {
     internal_static_SingleStartBrickBreakerReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SingleStartBrickBreakerReq_descriptor,
-        new java.lang.String[] { "ChosenSkillList", "LevelId", "ChosenAvatarList", "IsDungeon", });
+        new java.lang.String[] { "IsDungeon", "LevelId", "ChosenAvatarList", "ChosenSkillList", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

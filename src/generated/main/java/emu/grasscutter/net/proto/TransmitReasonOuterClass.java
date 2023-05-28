@@ -16,7 +16,7 @@ public final class TransmitReasonOuterClass {
   }
   /**
    * <pre>
-   * Name: COEAABHEACL
+   * Obf: DBGOMKHBAHD
    * </pre>
    *
    * Protobuf enum {@code TransmitReason}

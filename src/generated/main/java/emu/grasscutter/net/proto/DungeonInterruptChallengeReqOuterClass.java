@@ -19,27 +19,27 @@ public final class DungeonInterruptChallengeReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 challenge_id = 2;</code>
+     * <code>uint32 group_id = 9;</code>
+     * @return The groupId.
+     */
+    int getGroupId();
+
+    /**
+     * <code>uint32 challenge_id = 7;</code>
      * @return The challengeId.
      */
     int getChallengeId();
 
     /**
-     * <code>uint32 challenge_index = 11;</code>
+     * <code>uint32 challenge_index = 13;</code>
      * @return The challengeIndex.
      */
     int getChallengeIndex();
-
-    /**
-     * <code>uint32 group_id = 3;</code>
-     * @return The groupId.
-     */
-    int getGroupId();
   }
   /**
    * <pre>
-   * Name: KFCHJAMJHIP
-   * CmdId: 993
+   * CmdId: 918
+   * Obf: EEGGKBINCKG
    * </pre>
    *
    * Protobuf type {@code DungeonInterruptChallengeReq}
@@ -86,17 +86,17 @@ public final class DungeonInterruptChallengeReqOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 56: {
 
               challengeId_ = input.readUInt32();
               break;
             }
-            case 24: {
+            case 72: {
 
               groupId_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 104: {
 
               challengeIndex_ = input.readUInt32();
               break;
@@ -133,10 +133,21 @@ public final class DungeonInterruptChallengeReqOuterClass {
               emu.grasscutter.net.proto.DungeonInterruptChallengeReqOuterClass.DungeonInterruptChallengeReq.class, emu.grasscutter.net.proto.DungeonInterruptChallengeReqOuterClass.DungeonInterruptChallengeReq.Builder.class);
     }
 
-    public static final int CHALLENGE_ID_FIELD_NUMBER = 2;
+    public static final int GROUP_ID_FIELD_NUMBER = 9;
+    private int groupId_;
+    /**
+     * <code>uint32 group_id = 9;</code>
+     * @return The groupId.
+     */
+    @java.lang.Override
+    public int getGroupId() {
+      return groupId_;
+    }
+
+    public static final int CHALLENGE_ID_FIELD_NUMBER = 7;
     private int challengeId_;
     /**
-     * <code>uint32 challenge_id = 2;</code>
+     * <code>uint32 challenge_id = 7;</code>
      * @return The challengeId.
      */
     @java.lang.Override
@@ -144,26 +155,15 @@ public final class DungeonInterruptChallengeReqOuterClass {
       return challengeId_;
     }
 
-    public static final int CHALLENGE_INDEX_FIELD_NUMBER = 11;
+    public static final int CHALLENGE_INDEX_FIELD_NUMBER = 13;
     private int challengeIndex_;
     /**
-     * <code>uint32 challenge_index = 11;</code>
+     * <code>uint32 challenge_index = 13;</code>
      * @return The challengeIndex.
      */
     @java.lang.Override
     public int getChallengeIndex() {
       return challengeIndex_;
-    }
-
-    public static final int GROUP_ID_FIELD_NUMBER = 3;
-    private int groupId_;
-    /**
-     * <code>uint32 group_id = 3;</code>
-     * @return The groupId.
-     */
-    @java.lang.Override
-    public int getGroupId() {
-      return groupId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -181,13 +181,13 @@ public final class DungeonInterruptChallengeReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (challengeId_ != 0) {
-        output.writeUInt32(2, challengeId_);
+        output.writeUInt32(7, challengeId_);
       }
       if (groupId_ != 0) {
-        output.writeUInt32(3, groupId_);
+        output.writeUInt32(9, groupId_);
       }
       if (challengeIndex_ != 0) {
-        output.writeUInt32(11, challengeIndex_);
+        output.writeUInt32(13, challengeIndex_);
       }
       unknownFields.writeTo(output);
     }
@@ -200,15 +200,15 @@ public final class DungeonInterruptChallengeReqOuterClass {
       size = 0;
       if (challengeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, challengeId_);
+          .computeUInt32Size(7, challengeId_);
       }
       if (groupId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, groupId_);
+          .computeUInt32Size(9, groupId_);
       }
       if (challengeIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, challengeIndex_);
+          .computeUInt32Size(13, challengeIndex_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -225,12 +225,12 @@ public final class DungeonInterruptChallengeReqOuterClass {
       }
       emu.grasscutter.net.proto.DungeonInterruptChallengeReqOuterClass.DungeonInterruptChallengeReq other = (emu.grasscutter.net.proto.DungeonInterruptChallengeReqOuterClass.DungeonInterruptChallengeReq) obj;
 
+      if (getGroupId()
+          != other.getGroupId()) return false;
       if (getChallengeId()
           != other.getChallengeId()) return false;
       if (getChallengeIndex()
           != other.getChallengeIndex()) return false;
-      if (getGroupId()
-          != other.getGroupId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -242,12 +242,12 @@ public final class DungeonInterruptChallengeReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGroupId();
       hash = (37 * hash) + CHALLENGE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getChallengeId();
       hash = (37 * hash) + CHALLENGE_INDEX_FIELD_NUMBER;
       hash = (53 * hash) + getChallengeIndex();
-      hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGroupId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -345,8 +345,8 @@ public final class DungeonInterruptChallengeReqOuterClass {
     }
     /**
      * <pre>
-     * Name: KFCHJAMJHIP
-     * CmdId: 993
+     * CmdId: 918
+     * Obf: EEGGKBINCKG
      * </pre>
      *
      * Protobuf type {@code DungeonInterruptChallengeReq}
@@ -386,11 +386,11 @@ public final class DungeonInterruptChallengeReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        groupId_ = 0;
+
         challengeId_ = 0;
 
         challengeIndex_ = 0;
-
-        groupId_ = 0;
 
         return this;
       }
@@ -418,9 +418,9 @@ public final class DungeonInterruptChallengeReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.DungeonInterruptChallengeReqOuterClass.DungeonInterruptChallengeReq buildPartial() {
         emu.grasscutter.net.proto.DungeonInterruptChallengeReqOuterClass.DungeonInterruptChallengeReq result = new emu.grasscutter.net.proto.DungeonInterruptChallengeReqOuterClass.DungeonInterruptChallengeReq(this);
+        result.groupId_ = groupId_;
         result.challengeId_ = challengeId_;
         result.challengeIndex_ = challengeIndex_;
-        result.groupId_ = groupId_;
         onBuilt();
         return result;
       }
@@ -469,14 +469,14 @@ public final class DungeonInterruptChallengeReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DungeonInterruptChallengeReqOuterClass.DungeonInterruptChallengeReq other) {
         if (other == emu.grasscutter.net.proto.DungeonInterruptChallengeReqOuterClass.DungeonInterruptChallengeReq.getDefaultInstance()) return this;
+        if (other.getGroupId() != 0) {
+          setGroupId(other.getGroupId());
+        }
         if (other.getChallengeId() != 0) {
           setChallengeId(other.getChallengeId());
         }
         if (other.getChallengeIndex() != 0) {
           setChallengeIndex(other.getChallengeIndex());
-        }
-        if (other.getGroupId() != 0) {
-          setGroupId(other.getGroupId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -507,9 +507,40 @@ public final class DungeonInterruptChallengeReqOuterClass {
         return this;
       }
 
+      private int groupId_ ;
+      /**
+       * <code>uint32 group_id = 9;</code>
+       * @return The groupId.
+       */
+      @java.lang.Override
+      public int getGroupId() {
+        return groupId_;
+      }
+      /**
+       * <code>uint32 group_id = 9;</code>
+       * @param value The groupId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGroupId(int value) {
+        
+        groupId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 group_id = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGroupId() {
+        
+        groupId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int challengeId_ ;
       /**
-       * <code>uint32 challenge_id = 2;</code>
+       * <code>uint32 challenge_id = 7;</code>
        * @return The challengeId.
        */
       @java.lang.Override
@@ -517,7 +548,7 @@ public final class DungeonInterruptChallengeReqOuterClass {
         return challengeId_;
       }
       /**
-       * <code>uint32 challenge_id = 2;</code>
+       * <code>uint32 challenge_id = 7;</code>
        * @param value The challengeId to set.
        * @return This builder for chaining.
        */
@@ -528,7 +559,7 @@ public final class DungeonInterruptChallengeReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 challenge_id = 2;</code>
+       * <code>uint32 challenge_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearChallengeId() {
@@ -540,7 +571,7 @@ public final class DungeonInterruptChallengeReqOuterClass {
 
       private int challengeIndex_ ;
       /**
-       * <code>uint32 challenge_index = 11;</code>
+       * <code>uint32 challenge_index = 13;</code>
        * @return The challengeIndex.
        */
       @java.lang.Override
@@ -548,7 +579,7 @@ public final class DungeonInterruptChallengeReqOuterClass {
         return challengeIndex_;
       }
       /**
-       * <code>uint32 challenge_index = 11;</code>
+       * <code>uint32 challenge_index = 13;</code>
        * @param value The challengeIndex to set.
        * @return This builder for chaining.
        */
@@ -559,43 +590,12 @@ public final class DungeonInterruptChallengeReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 challenge_index = 11;</code>
+       * <code>uint32 challenge_index = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearChallengeIndex() {
         
         challengeIndex_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int groupId_ ;
-      /**
-       * <code>uint32 group_id = 3;</code>
-       * @return The groupId.
-       */
-      @java.lang.Override
-      public int getGroupId() {
-        return groupId_;
-      }
-      /**
-       * <code>uint32 group_id = 3;</code>
-       * @param value The groupId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGroupId(int value) {
-        
-        groupId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 group_id = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGroupId() {
-        
-        groupId_ = 0;
         onChanged();
         return this;
       }
@@ -667,9 +667,9 @@ public final class DungeonInterruptChallengeReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\"DungeonInterruptChallengeReq.proto\"_\n\034" +
-      "DungeonInterruptChallengeReq\022\024\n\014challeng" +
-      "e_id\030\002 \001(\r\022\027\n\017challenge_index\030\013 \001(\r\022\020\n\010g" +
-      "roup_id\030\003 \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "DungeonInterruptChallengeReq\022\020\n\010group_id" +
+      "\030\t \001(\r\022\024\n\014challenge_id\030\007 \001(\r\022\027\n\017challeng" +
+      "e_index\030\r \001(\rB\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -681,7 +681,7 @@ public final class DungeonInterruptChallengeReqOuterClass {
     internal_static_DungeonInterruptChallengeReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DungeonInterruptChallengeReq_descriptor,
-        new java.lang.String[] { "ChallengeId", "ChallengeIndex", "GroupId", });
+        new java.lang.String[] { "GroupId", "ChallengeId", "ChallengeIndex", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

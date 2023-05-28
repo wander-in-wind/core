@@ -19,59 +19,39 @@ public final class GCGWorldPlayerGCGStateRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 9;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <pre>
-     *NOFNBENGFPJ OADJMAAKKAK snooswap
-     * </pre>
-     *
-     * <code>repeated .GCGPlayerGCGState player_state = 13;</code>
+     * <code>repeated .GCGPlayerGCGState player_state = 8;</code>
      */
     java.util.List<emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGState> 
         getPlayerStateList();
     /**
-     * <pre>
-     *NOFNBENGFPJ OADJMAAKKAK snooswap
-     * </pre>
-     *
-     * <code>repeated .GCGPlayerGCGState player_state = 13;</code>
+     * <code>repeated .GCGPlayerGCGState player_state = 8;</code>
      */
     emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGState getPlayerState(int index);
     /**
-     * <pre>
-     *NOFNBENGFPJ OADJMAAKKAK snooswap
-     * </pre>
-     *
-     * <code>repeated .GCGPlayerGCGState player_state = 13;</code>
+     * <code>repeated .GCGPlayerGCGState player_state = 8;</code>
      */
     int getPlayerStateCount();
     /**
-     * <pre>
-     *NOFNBENGFPJ OADJMAAKKAK snooswap
-     * </pre>
-     *
-     * <code>repeated .GCGPlayerGCGState player_state = 13;</code>
+     * <code>repeated .GCGPlayerGCGState player_state = 8;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGStateOrBuilder> 
         getPlayerStateOrBuilderList();
     /**
-     * <pre>
-     *NOFNBENGFPJ OADJMAAKKAK snooswap
-     * </pre>
-     *
-     * <code>repeated .GCGPlayerGCGState player_state = 13;</code>
+     * <code>repeated .GCGPlayerGCGState player_state = 8;</code>
      */
     emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGStateOrBuilder getPlayerStateOrBuilder(
         int index);
+
+    /**
+     * <code>int32 retcode = 13;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
    * <pre>
-   * Name: BLNOFHFAMDO
-   * CmdId: 7347
+   * CmdId: 7093
+   * Obf: DOLLCIEKMJI
    * </pre>
    *
    * Protobuf type {@code GCGWorldPlayerGCGStateRsp}
@@ -120,18 +100,18 @@ public final class GCGWorldPlayerGCGStateRspOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 106: {
+            case 66: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 playerState_ = new java.util.ArrayList<emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGState>();
                 mutable_bitField0_ |= 0x00000001;
               }
               playerState_.add(
                   input.readMessage(emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGState.parser(), extensionRegistry));
+              break;
+            }
+            case 104: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -169,36 +149,17 @@ public final class GCGWorldPlayerGCGStateRspOuterClass {
               emu.grasscutter.net.proto.GCGWorldPlayerGCGStateRspOuterClass.GCGWorldPlayerGCGStateRsp.class, emu.grasscutter.net.proto.GCGWorldPlayerGCGStateRspOuterClass.GCGWorldPlayerGCGStateRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 9;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 9;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int PLAYER_STATE_FIELD_NUMBER = 13;
+    public static final int PLAYER_STATE_FIELD_NUMBER = 8;
     private java.util.List<emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGState> playerState_;
     /**
-     * <pre>
-     *NOFNBENGFPJ OADJMAAKKAK snooswap
-     * </pre>
-     *
-     * <code>repeated .GCGPlayerGCGState player_state = 13;</code>
+     * <code>repeated .GCGPlayerGCGState player_state = 8;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGState> getPlayerStateList() {
       return playerState_;
     }
     /**
-     * <pre>
-     *NOFNBENGFPJ OADJMAAKKAK snooswap
-     * </pre>
-     *
-     * <code>repeated .GCGPlayerGCGState player_state = 13;</code>
+     * <code>repeated .GCGPlayerGCGState player_state = 8;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGStateOrBuilder> 
@@ -206,38 +167,37 @@ public final class GCGWorldPlayerGCGStateRspOuterClass {
       return playerState_;
     }
     /**
-     * <pre>
-     *NOFNBENGFPJ OADJMAAKKAK snooswap
-     * </pre>
-     *
-     * <code>repeated .GCGPlayerGCGState player_state = 13;</code>
+     * <code>repeated .GCGPlayerGCGState player_state = 8;</code>
      */
     @java.lang.Override
     public int getPlayerStateCount() {
       return playerState_.size();
     }
     /**
-     * <pre>
-     *NOFNBENGFPJ OADJMAAKKAK snooswap
-     * </pre>
-     *
-     * <code>repeated .GCGPlayerGCGState player_state = 13;</code>
+     * <code>repeated .GCGPlayerGCGState player_state = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGState getPlayerState(int index) {
       return playerState_.get(index);
     }
     /**
-     * <pre>
-     *NOFNBENGFPJ OADJMAAKKAK snooswap
-     * </pre>
-     *
-     * <code>repeated .GCGPlayerGCGState player_state = 13;</code>
+     * <code>repeated .GCGPlayerGCGState player_state = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGStateOrBuilder getPlayerStateOrBuilder(
         int index) {
       return playerState_.get(index);
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 13;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 13;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -254,11 +214,11 @@ public final class GCGWorldPlayerGCGStateRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(9, retcode_);
-      }
       for (int i = 0; i < playerState_.size(); i++) {
-        output.writeMessage(13, playerState_.get(i));
+        output.writeMessage(8, playerState_.get(i));
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(13, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -269,13 +229,13 @@ public final class GCGWorldPlayerGCGStateRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, retcode_);
-      }
       for (int i = 0; i < playerState_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, playerState_.get(i));
+          .computeMessageSize(8, playerState_.get(i));
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(13, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -292,10 +252,10 @@ public final class GCGWorldPlayerGCGStateRspOuterClass {
       }
       emu.grasscutter.net.proto.GCGWorldPlayerGCGStateRspOuterClass.GCGWorldPlayerGCGStateRsp other = (emu.grasscutter.net.proto.GCGWorldPlayerGCGStateRspOuterClass.GCGWorldPlayerGCGStateRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (!getPlayerStateList()
           .equals(other.getPlayerStateList())) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -307,12 +267,12 @@ public final class GCGWorldPlayerGCGStateRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       if (getPlayerStateCount() > 0) {
         hash = (37 * hash) + PLAYER_STATE_FIELD_NUMBER;
         hash = (53 * hash) + getPlayerStateList().hashCode();
       }
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -410,8 +370,8 @@ public final class GCGWorldPlayerGCGStateRspOuterClass {
     }
     /**
      * <pre>
-     * Name: BLNOFHFAMDO
-     * CmdId: 7347
+     * CmdId: 7093
+     * Obf: DOLLCIEKMJI
      * </pre>
      *
      * Protobuf type {@code GCGWorldPlayerGCGStateRsp}
@@ -452,14 +412,14 @@ public final class GCGWorldPlayerGCGStateRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         if (playerStateBuilder_ == null) {
           playerState_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           playerStateBuilder_.clear();
         }
+        retcode_ = 0;
+
         return this;
       }
 
@@ -487,7 +447,6 @@ public final class GCGWorldPlayerGCGStateRspOuterClass {
       public emu.grasscutter.net.proto.GCGWorldPlayerGCGStateRspOuterClass.GCGWorldPlayerGCGStateRsp buildPartial() {
         emu.grasscutter.net.proto.GCGWorldPlayerGCGStateRspOuterClass.GCGWorldPlayerGCGStateRsp result = new emu.grasscutter.net.proto.GCGWorldPlayerGCGStateRspOuterClass.GCGWorldPlayerGCGStateRsp(this);
         int from_bitField0_ = bitField0_;
-        result.retcode_ = retcode_;
         if (playerStateBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             playerState_ = java.util.Collections.unmodifiableList(playerState_);
@@ -497,6 +456,7 @@ public final class GCGWorldPlayerGCGStateRspOuterClass {
         } else {
           result.playerState_ = playerStateBuilder_.build();
         }
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -545,9 +505,6 @@ public final class GCGWorldPlayerGCGStateRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GCGWorldPlayerGCGStateRspOuterClass.GCGWorldPlayerGCGStateRsp other) {
         if (other == emu.grasscutter.net.proto.GCGWorldPlayerGCGStateRspOuterClass.GCGWorldPlayerGCGStateRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (playerStateBuilder_ == null) {
           if (!other.playerState_.isEmpty()) {
             if (playerState_.isEmpty()) {
@@ -573,6 +530,9 @@ public final class GCGWorldPlayerGCGStateRspOuterClass {
               playerStateBuilder_.addAllMessages(other.playerState_);
             }
           }
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -604,37 +564,6 @@ public final class GCGWorldPlayerGCGStateRspOuterClass {
       }
       private int bitField0_;
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 9;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 9;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private java.util.List<emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGState> playerState_ =
         java.util.Collections.emptyList();
       private void ensurePlayerStateIsMutable() {
@@ -648,11 +577,7 @@ public final class GCGWorldPlayerGCGStateRspOuterClass {
           emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGState, emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGState.Builder, emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGStateOrBuilder> playerStateBuilder_;
 
       /**
-       * <pre>
-       *NOFNBENGFPJ OADJMAAKKAK snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGPlayerGCGState player_state = 13;</code>
+       * <code>repeated .GCGPlayerGCGState player_state = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGState> getPlayerStateList() {
         if (playerStateBuilder_ == null) {
@@ -662,11 +587,7 @@ public final class GCGWorldPlayerGCGStateRspOuterClass {
         }
       }
       /**
-       * <pre>
-       *NOFNBENGFPJ OADJMAAKKAK snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGPlayerGCGState player_state = 13;</code>
+       * <code>repeated .GCGPlayerGCGState player_state = 8;</code>
        */
       public int getPlayerStateCount() {
         if (playerStateBuilder_ == null) {
@@ -676,11 +597,7 @@ public final class GCGWorldPlayerGCGStateRspOuterClass {
         }
       }
       /**
-       * <pre>
-       *NOFNBENGFPJ OADJMAAKKAK snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGPlayerGCGState player_state = 13;</code>
+       * <code>repeated .GCGPlayerGCGState player_state = 8;</code>
        */
       public emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGState getPlayerState(int index) {
         if (playerStateBuilder_ == null) {
@@ -690,11 +607,7 @@ public final class GCGWorldPlayerGCGStateRspOuterClass {
         }
       }
       /**
-       * <pre>
-       *NOFNBENGFPJ OADJMAAKKAK snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGPlayerGCGState player_state = 13;</code>
+       * <code>repeated .GCGPlayerGCGState player_state = 8;</code>
        */
       public Builder setPlayerState(
           int index, emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGState value) {
@@ -711,11 +624,7 @@ public final class GCGWorldPlayerGCGStateRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *NOFNBENGFPJ OADJMAAKKAK snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGPlayerGCGState player_state = 13;</code>
+       * <code>repeated .GCGPlayerGCGState player_state = 8;</code>
        */
       public Builder setPlayerState(
           int index, emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGState.Builder builderForValue) {
@@ -729,11 +638,7 @@ public final class GCGWorldPlayerGCGStateRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *NOFNBENGFPJ OADJMAAKKAK snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGPlayerGCGState player_state = 13;</code>
+       * <code>repeated .GCGPlayerGCGState player_state = 8;</code>
        */
       public Builder addPlayerState(emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGState value) {
         if (playerStateBuilder_ == null) {
@@ -749,11 +654,7 @@ public final class GCGWorldPlayerGCGStateRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *NOFNBENGFPJ OADJMAAKKAK snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGPlayerGCGState player_state = 13;</code>
+       * <code>repeated .GCGPlayerGCGState player_state = 8;</code>
        */
       public Builder addPlayerState(
           int index, emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGState value) {
@@ -770,11 +671,7 @@ public final class GCGWorldPlayerGCGStateRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *NOFNBENGFPJ OADJMAAKKAK snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGPlayerGCGState player_state = 13;</code>
+       * <code>repeated .GCGPlayerGCGState player_state = 8;</code>
        */
       public Builder addPlayerState(
           emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGState.Builder builderForValue) {
@@ -788,11 +685,7 @@ public final class GCGWorldPlayerGCGStateRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *NOFNBENGFPJ OADJMAAKKAK snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGPlayerGCGState player_state = 13;</code>
+       * <code>repeated .GCGPlayerGCGState player_state = 8;</code>
        */
       public Builder addPlayerState(
           int index, emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGState.Builder builderForValue) {
@@ -806,11 +699,7 @@ public final class GCGWorldPlayerGCGStateRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *NOFNBENGFPJ OADJMAAKKAK snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGPlayerGCGState player_state = 13;</code>
+       * <code>repeated .GCGPlayerGCGState player_state = 8;</code>
        */
       public Builder addAllPlayerState(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGState> values) {
@@ -825,11 +714,7 @@ public final class GCGWorldPlayerGCGStateRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *NOFNBENGFPJ OADJMAAKKAK snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGPlayerGCGState player_state = 13;</code>
+       * <code>repeated .GCGPlayerGCGState player_state = 8;</code>
        */
       public Builder clearPlayerState() {
         if (playerStateBuilder_ == null) {
@@ -842,11 +727,7 @@ public final class GCGWorldPlayerGCGStateRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *NOFNBENGFPJ OADJMAAKKAK snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGPlayerGCGState player_state = 13;</code>
+       * <code>repeated .GCGPlayerGCGState player_state = 8;</code>
        */
       public Builder removePlayerState(int index) {
         if (playerStateBuilder_ == null) {
@@ -859,22 +740,14 @@ public final class GCGWorldPlayerGCGStateRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *NOFNBENGFPJ OADJMAAKKAK snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGPlayerGCGState player_state = 13;</code>
+       * <code>repeated .GCGPlayerGCGState player_state = 8;</code>
        */
       public emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGState.Builder getPlayerStateBuilder(
           int index) {
         return getPlayerStateFieldBuilder().getBuilder(index);
       }
       /**
-       * <pre>
-       *NOFNBENGFPJ OADJMAAKKAK snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGPlayerGCGState player_state = 13;</code>
+       * <code>repeated .GCGPlayerGCGState player_state = 8;</code>
        */
       public emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGStateOrBuilder getPlayerStateOrBuilder(
           int index) {
@@ -884,11 +757,7 @@ public final class GCGWorldPlayerGCGStateRspOuterClass {
         }
       }
       /**
-       * <pre>
-       *NOFNBENGFPJ OADJMAAKKAK snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGPlayerGCGState player_state = 13;</code>
+       * <code>repeated .GCGPlayerGCGState player_state = 8;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGStateOrBuilder> 
            getPlayerStateOrBuilderList() {
@@ -899,22 +768,14 @@ public final class GCGWorldPlayerGCGStateRspOuterClass {
         }
       }
       /**
-       * <pre>
-       *NOFNBENGFPJ OADJMAAKKAK snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGPlayerGCGState player_state = 13;</code>
+       * <code>repeated .GCGPlayerGCGState player_state = 8;</code>
        */
       public emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGState.Builder addPlayerStateBuilder() {
         return getPlayerStateFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGState.getDefaultInstance());
       }
       /**
-       * <pre>
-       *NOFNBENGFPJ OADJMAAKKAK snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGPlayerGCGState player_state = 13;</code>
+       * <code>repeated .GCGPlayerGCGState player_state = 8;</code>
        */
       public emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGState.Builder addPlayerStateBuilder(
           int index) {
@@ -922,11 +783,7 @@ public final class GCGWorldPlayerGCGStateRspOuterClass {
             index, emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGState.getDefaultInstance());
       }
       /**
-       * <pre>
-       *NOFNBENGFPJ OADJMAAKKAK snooswap
-       * </pre>
-       *
-       * <code>repeated .GCGPlayerGCGState player_state = 13;</code>
+       * <code>repeated .GCGPlayerGCGState player_state = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.GCGPlayerGCGState.Builder> 
            getPlayerStateBuilderList() {
@@ -945,6 +802,37 @@ public final class GCGWorldPlayerGCGStateRspOuterClass {
           playerState_ = null;
         }
         return playerStateBuilder_;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 13;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 13;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1015,8 +903,8 @@ public final class GCGWorldPlayerGCGStateRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\037GCGWorldPlayerGCGStateRsp.proto\032\027GCGPl" +
       "ayerGCGState.proto\"V\n\031GCGWorldPlayerGCGS" +
-      "tateRsp\022\017\n\007retcode\030\t \001(\005\022(\n\014player_state" +
-      "\030\r \003(\0132\022.GCGPlayerGCGStateB\033\n\031emu.grassc" +
+      "tateRsp\022(\n\014player_state\030\010 \003(\0132\022.GCGPlaye" +
+      "rGCGState\022\017\n\007retcode\030\r \001(\005B\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1029,7 +917,7 @@ public final class GCGWorldPlayerGCGStateRspOuterClass {
     internal_static_GCGWorldPlayerGCGStateRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GCGWorldPlayerGCGStateRsp_descriptor,
-        new java.lang.String[] { "Retcode", "PlayerState", });
+        new java.lang.String[] { "PlayerState", "Retcode", });
     emu.grasscutter.net.proto.GCGPlayerGCGStateOuterClass.getDescriptor();
   }
 

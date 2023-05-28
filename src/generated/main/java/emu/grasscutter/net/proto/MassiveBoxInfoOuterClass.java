@@ -107,7 +107,7 @@ public final class MassiveBoxInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: PGPIMHLBMNI
+   * Obf: ECODOBCMKIG
    * </pre>
    *
    * Protobuf type {@code MassiveBoxInfo}
@@ -661,7 +661,7 @@ public final class MassiveBoxInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: PGPIMHLBMNI
+     * Obf: ECODOBCMKIG
      * </pre>
      *
      * Protobuf type {@code MassiveBoxInfo}

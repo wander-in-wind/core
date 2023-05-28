@@ -19,21 +19,21 @@ public final class PlayerSetOnlyMPWithPSPlayerRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_only = 4;</code>
-     * @return The isOnly.
-     */
-    boolean getIsOnly();
-
-    /**
-     * <code>int32 retcode = 13;</code>
+     * <code>int32 retcode = 12;</code>
      * @return The retcode.
      */
     int getRetcode();
+
+    /**
+     * <code>bool is_only = 13;</code>
+     * @return The isOnly.
+     */
+    boolean getIsOnly();
   }
   /**
    * <pre>
-   * Name: FJOBAJGGBCO
-   * CmdId: 1821
+   * CmdId: 1848
+   * Obf: KOJJGLLEEEM
    * </pre>
    *
    * Protobuf type {@code PlayerSetOnlyMPWithPSPlayerRsp}
@@ -80,14 +80,14 @@ public final class PlayerSetOnlyMPWithPSPlayerRspOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 96: {
 
-              isOnly_ = input.readBool();
+              retcode_ = input.readInt32();
               break;
             }
             case 104: {
 
-              retcode_ = input.readInt32();
+              isOnly_ = input.readBool();
               break;
             }
             default: {
@@ -122,26 +122,26 @@ public final class PlayerSetOnlyMPWithPSPlayerRspOuterClass {
               emu.grasscutter.net.proto.PlayerSetOnlyMPWithPSPlayerRspOuterClass.PlayerSetOnlyMPWithPSPlayerRsp.class, emu.grasscutter.net.proto.PlayerSetOnlyMPWithPSPlayerRspOuterClass.PlayerSetOnlyMPWithPSPlayerRsp.Builder.class);
     }
 
-    public static final int IS_ONLY_FIELD_NUMBER = 4;
-    private boolean isOnly_;
-    /**
-     * <code>bool is_only = 4;</code>
-     * @return The isOnly.
-     */
-    @java.lang.Override
-    public boolean getIsOnly() {
-      return isOnly_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 13;
+    public static final int RETCODE_FIELD_NUMBER = 12;
     private int retcode_;
     /**
-     * <code>int32 retcode = 13;</code>
+     * <code>int32 retcode = 12;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
+    }
+
+    public static final int IS_ONLY_FIELD_NUMBER = 13;
+    private boolean isOnly_;
+    /**
+     * <code>bool is_only = 13;</code>
+     * @return The isOnly.
+     */
+    @java.lang.Override
+    public boolean getIsOnly() {
+      return isOnly_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -158,11 +158,11 @@ public final class PlayerSetOnlyMPWithPSPlayerRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isOnly_ != false) {
-        output.writeBool(4, isOnly_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(13, retcode_);
+        output.writeInt32(12, retcode_);
+      }
+      if (isOnly_ != false) {
+        output.writeBool(13, isOnly_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class PlayerSetOnlyMPWithPSPlayerRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isOnly_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, isOnly_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(13, retcode_);
+          .computeInt32Size(12, retcode_);
+      }
+      if (isOnly_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(13, isOnly_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +196,10 @@ public final class PlayerSetOnlyMPWithPSPlayerRspOuterClass {
       }
       emu.grasscutter.net.proto.PlayerSetOnlyMPWithPSPlayerRspOuterClass.PlayerSetOnlyMPWithPSPlayerRsp other = (emu.grasscutter.net.proto.PlayerSetOnlyMPWithPSPlayerRspOuterClass.PlayerSetOnlyMPWithPSPlayerRsp) obj;
 
-      if (getIsOnly()
-          != other.getIsOnly()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getIsOnly()
+          != other.getIsOnly()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,11 +211,11 @@ public final class PlayerSetOnlyMPWithPSPlayerRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + IS_ONLY_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOnly());
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -313,8 +313,8 @@ public final class PlayerSetOnlyMPWithPSPlayerRspOuterClass {
     }
     /**
      * <pre>
-     * Name: FJOBAJGGBCO
-     * CmdId: 1821
+     * CmdId: 1848
+     * Obf: KOJJGLLEEEM
      * </pre>
      *
      * Protobuf type {@code PlayerSetOnlyMPWithPSPlayerRsp}
@@ -354,9 +354,9 @@ public final class PlayerSetOnlyMPWithPSPlayerRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isOnly_ = false;
-
         retcode_ = 0;
+
+        isOnly_ = false;
 
         return this;
       }
@@ -384,8 +384,8 @@ public final class PlayerSetOnlyMPWithPSPlayerRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PlayerSetOnlyMPWithPSPlayerRspOuterClass.PlayerSetOnlyMPWithPSPlayerRsp buildPartial() {
         emu.grasscutter.net.proto.PlayerSetOnlyMPWithPSPlayerRspOuterClass.PlayerSetOnlyMPWithPSPlayerRsp result = new emu.grasscutter.net.proto.PlayerSetOnlyMPWithPSPlayerRspOuterClass.PlayerSetOnlyMPWithPSPlayerRsp(this);
-        result.isOnly_ = isOnly_;
         result.retcode_ = retcode_;
+        result.isOnly_ = isOnly_;
         onBuilt();
         return result;
       }
@@ -434,11 +434,11 @@ public final class PlayerSetOnlyMPWithPSPlayerRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PlayerSetOnlyMPWithPSPlayerRspOuterClass.PlayerSetOnlyMPWithPSPlayerRsp other) {
         if (other == emu.grasscutter.net.proto.PlayerSetOnlyMPWithPSPlayerRspOuterClass.PlayerSetOnlyMPWithPSPlayerRsp.getDefaultInstance()) return this;
-        if (other.getIsOnly() != false) {
-          setIsOnly(other.getIsOnly());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getIsOnly() != false) {
+          setIsOnly(other.getIsOnly());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -469,40 +469,9 @@ public final class PlayerSetOnlyMPWithPSPlayerRspOuterClass {
         return this;
       }
 
-      private boolean isOnly_ ;
-      /**
-       * <code>bool is_only = 4;</code>
-       * @return The isOnly.
-       */
-      @java.lang.Override
-      public boolean getIsOnly() {
-        return isOnly_;
-      }
-      /**
-       * <code>bool is_only = 4;</code>
-       * @param value The isOnly to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsOnly(boolean value) {
-        
-        isOnly_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_only = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsOnly() {
-        
-        isOnly_ = false;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 12;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -510,7 +479,7 @@ public final class PlayerSetOnlyMPWithPSPlayerRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 12;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -521,12 +490,43 @@ public final class PlayerSetOnlyMPWithPSPlayerRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
         
         retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isOnly_ ;
+      /**
+       * <code>bool is_only = 13;</code>
+       * @return The isOnly.
+       */
+      @java.lang.Override
+      public boolean getIsOnly() {
+        return isOnly_;
+      }
+      /**
+       * <code>bool is_only = 13;</code>
+       * @param value The isOnly to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsOnly(boolean value) {
+        
+        isOnly_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_only = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsOnly() {
+        
+        isOnly_ = false;
         onChanged();
         return this;
       }
@@ -598,8 +598,8 @@ public final class PlayerSetOnlyMPWithPSPlayerRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n$PlayerSetOnlyMPWithPSPlayerRsp.proto\"B" +
-      "\n\036PlayerSetOnlyMPWithPSPlayerRsp\022\017\n\007is_o" +
-      "nly\030\004 \001(\010\022\017\n\007retcode\030\r \001(\005B\033\n\031emu.grassc" +
+      "\n\036PlayerSetOnlyMPWithPSPlayerRsp\022\017\n\007retc" +
+      "ode\030\014 \001(\005\022\017\n\007is_only\030\r \001(\010B\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -611,7 +611,7 @@ public final class PlayerSetOnlyMPWithPSPlayerRspOuterClass {
     internal_static_PlayerSetOnlyMPWithPSPlayerRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerSetOnlyMPWithPSPlayerRsp_descriptor,
-        new java.lang.String[] { "IsOnly", "Retcode", });
+        new java.lang.String[] { "Retcode", "IsOnly", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

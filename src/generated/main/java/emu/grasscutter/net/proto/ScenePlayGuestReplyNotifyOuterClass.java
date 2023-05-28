@@ -19,27 +19,27 @@ public final class ScenePlayGuestReplyNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_agree = 8;</code>
+     * <code>uint32 play_id = 8;</code>
+     * @return The playId.
+     */
+    int getPlayId();
+
+    /**
+     * <code>bool is_agree = 9;</code>
      * @return The isAgree.
      */
     boolean getIsAgree();
 
     /**
-     * <code>uint32 guest_uid = 11;</code>
+     * <code>uint32 guest_uid = 10;</code>
      * @return The guestUid.
      */
     int getGuestUid();
-
-    /**
-     * <code>uint32 play_id = 7;</code>
-     * @return The playId.
-     */
-    int getPlayId();
   }
   /**
    * <pre>
-   * Name: HAFIBFIFCMD
-   * CmdId: 4415
+   * CmdId: 4437
+   * Obf: GOIBIFGMAME
    * </pre>
    *
    * Protobuf type {@code ScenePlayGuestReplyNotify}
@@ -86,17 +86,17 @@ public final class ScenePlayGuestReplyNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 64: {
 
               playId_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 72: {
 
               isAgree_ = input.readBool();
               break;
             }
-            case 88: {
+            case 80: {
 
               guestUid_ = input.readUInt32();
               break;
@@ -133,10 +133,21 @@ public final class ScenePlayGuestReplyNotifyOuterClass {
               emu.grasscutter.net.proto.ScenePlayGuestReplyNotifyOuterClass.ScenePlayGuestReplyNotify.class, emu.grasscutter.net.proto.ScenePlayGuestReplyNotifyOuterClass.ScenePlayGuestReplyNotify.Builder.class);
     }
 
-    public static final int IS_AGREE_FIELD_NUMBER = 8;
+    public static final int PLAY_ID_FIELD_NUMBER = 8;
+    private int playId_;
+    /**
+     * <code>uint32 play_id = 8;</code>
+     * @return The playId.
+     */
+    @java.lang.Override
+    public int getPlayId() {
+      return playId_;
+    }
+
+    public static final int IS_AGREE_FIELD_NUMBER = 9;
     private boolean isAgree_;
     /**
-     * <code>bool is_agree = 8;</code>
+     * <code>bool is_agree = 9;</code>
      * @return The isAgree.
      */
     @java.lang.Override
@@ -144,26 +155,15 @@ public final class ScenePlayGuestReplyNotifyOuterClass {
       return isAgree_;
     }
 
-    public static final int GUEST_UID_FIELD_NUMBER = 11;
+    public static final int GUEST_UID_FIELD_NUMBER = 10;
     private int guestUid_;
     /**
-     * <code>uint32 guest_uid = 11;</code>
+     * <code>uint32 guest_uid = 10;</code>
      * @return The guestUid.
      */
     @java.lang.Override
     public int getGuestUid() {
       return guestUid_;
-    }
-
-    public static final int PLAY_ID_FIELD_NUMBER = 7;
-    private int playId_;
-    /**
-     * <code>uint32 play_id = 7;</code>
-     * @return The playId.
-     */
-    @java.lang.Override
-    public int getPlayId() {
-      return playId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -181,13 +181,13 @@ public final class ScenePlayGuestReplyNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (playId_ != 0) {
-        output.writeUInt32(7, playId_);
+        output.writeUInt32(8, playId_);
       }
       if (isAgree_ != false) {
-        output.writeBool(8, isAgree_);
+        output.writeBool(9, isAgree_);
       }
       if (guestUid_ != 0) {
-        output.writeUInt32(11, guestUid_);
+        output.writeUInt32(10, guestUid_);
       }
       unknownFields.writeTo(output);
     }
@@ -200,15 +200,15 @@ public final class ScenePlayGuestReplyNotifyOuterClass {
       size = 0;
       if (playId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, playId_);
+          .computeUInt32Size(8, playId_);
       }
       if (isAgree_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isAgree_);
+          .computeBoolSize(9, isAgree_);
       }
       if (guestUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, guestUid_);
+          .computeUInt32Size(10, guestUid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -225,12 +225,12 @@ public final class ScenePlayGuestReplyNotifyOuterClass {
       }
       emu.grasscutter.net.proto.ScenePlayGuestReplyNotifyOuterClass.ScenePlayGuestReplyNotify other = (emu.grasscutter.net.proto.ScenePlayGuestReplyNotifyOuterClass.ScenePlayGuestReplyNotify) obj;
 
+      if (getPlayId()
+          != other.getPlayId()) return false;
       if (getIsAgree()
           != other.getIsAgree()) return false;
       if (getGuestUid()
           != other.getGuestUid()) return false;
-      if (getPlayId()
-          != other.getPlayId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -242,13 +242,13 @@ public final class ScenePlayGuestReplyNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + PLAY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getPlayId();
       hash = (37 * hash) + IS_AGREE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsAgree());
       hash = (37 * hash) + GUEST_UID_FIELD_NUMBER;
       hash = (53 * hash) + getGuestUid();
-      hash = (37 * hash) + PLAY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getPlayId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -346,8 +346,8 @@ public final class ScenePlayGuestReplyNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: HAFIBFIFCMD
-     * CmdId: 4415
+     * CmdId: 4437
+     * Obf: GOIBIFGMAME
      * </pre>
      *
      * Protobuf type {@code ScenePlayGuestReplyNotify}
@@ -387,11 +387,11 @@ public final class ScenePlayGuestReplyNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        playId_ = 0;
+
         isAgree_ = false;
 
         guestUid_ = 0;
-
-        playId_ = 0;
 
         return this;
       }
@@ -419,9 +419,9 @@ public final class ScenePlayGuestReplyNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ScenePlayGuestReplyNotifyOuterClass.ScenePlayGuestReplyNotify buildPartial() {
         emu.grasscutter.net.proto.ScenePlayGuestReplyNotifyOuterClass.ScenePlayGuestReplyNotify result = new emu.grasscutter.net.proto.ScenePlayGuestReplyNotifyOuterClass.ScenePlayGuestReplyNotify(this);
+        result.playId_ = playId_;
         result.isAgree_ = isAgree_;
         result.guestUid_ = guestUid_;
-        result.playId_ = playId_;
         onBuilt();
         return result;
       }
@@ -470,14 +470,14 @@ public final class ScenePlayGuestReplyNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ScenePlayGuestReplyNotifyOuterClass.ScenePlayGuestReplyNotify other) {
         if (other == emu.grasscutter.net.proto.ScenePlayGuestReplyNotifyOuterClass.ScenePlayGuestReplyNotify.getDefaultInstance()) return this;
+        if (other.getPlayId() != 0) {
+          setPlayId(other.getPlayId());
+        }
         if (other.getIsAgree() != false) {
           setIsAgree(other.getIsAgree());
         }
         if (other.getGuestUid() != 0) {
           setGuestUid(other.getGuestUid());
-        }
-        if (other.getPlayId() != 0) {
-          setPlayId(other.getPlayId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -508,9 +508,40 @@ public final class ScenePlayGuestReplyNotifyOuterClass {
         return this;
       }
 
+      private int playId_ ;
+      /**
+       * <code>uint32 play_id = 8;</code>
+       * @return The playId.
+       */
+      @java.lang.Override
+      public int getPlayId() {
+        return playId_;
+      }
+      /**
+       * <code>uint32 play_id = 8;</code>
+       * @param value The playId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPlayId(int value) {
+        
+        playId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 play_id = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPlayId() {
+        
+        playId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private boolean isAgree_ ;
       /**
-       * <code>bool is_agree = 8;</code>
+       * <code>bool is_agree = 9;</code>
        * @return The isAgree.
        */
       @java.lang.Override
@@ -518,7 +549,7 @@ public final class ScenePlayGuestReplyNotifyOuterClass {
         return isAgree_;
       }
       /**
-       * <code>bool is_agree = 8;</code>
+       * <code>bool is_agree = 9;</code>
        * @param value The isAgree to set.
        * @return This builder for chaining.
        */
@@ -529,7 +560,7 @@ public final class ScenePlayGuestReplyNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_agree = 8;</code>
+       * <code>bool is_agree = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsAgree() {
@@ -541,7 +572,7 @@ public final class ScenePlayGuestReplyNotifyOuterClass {
 
       private int guestUid_ ;
       /**
-       * <code>uint32 guest_uid = 11;</code>
+       * <code>uint32 guest_uid = 10;</code>
        * @return The guestUid.
        */
       @java.lang.Override
@@ -549,7 +580,7 @@ public final class ScenePlayGuestReplyNotifyOuterClass {
         return guestUid_;
       }
       /**
-       * <code>uint32 guest_uid = 11;</code>
+       * <code>uint32 guest_uid = 10;</code>
        * @param value The guestUid to set.
        * @return This builder for chaining.
        */
@@ -560,43 +591,12 @@ public final class ScenePlayGuestReplyNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 guest_uid = 11;</code>
+       * <code>uint32 guest_uid = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearGuestUid() {
         
         guestUid_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int playId_ ;
-      /**
-       * <code>uint32 play_id = 7;</code>
-       * @return The playId.
-       */
-      @java.lang.Override
-      public int getPlayId() {
-        return playId_;
-      }
-      /**
-       * <code>uint32 play_id = 7;</code>
-       * @param value The playId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPlayId(int value) {
-        
-        playId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 play_id = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPlayId() {
-        
-        playId_ = 0;
         onChanged();
         return this;
       }
@@ -668,8 +668,8 @@ public final class ScenePlayGuestReplyNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037ScenePlayGuestReplyNotify.proto\"Q\n\031Sce" +
-      "nePlayGuestReplyNotify\022\020\n\010is_agree\030\010 \001(\010" +
-      "\022\021\n\tguest_uid\030\013 \001(\r\022\017\n\007play_id\030\007 \001(\rB\033\n\031" +
+      "nePlayGuestReplyNotify\022\017\n\007play_id\030\010 \001(\r\022" +
+      "\020\n\010is_agree\030\t \001(\010\022\021\n\tguest_uid\030\n \001(\rB\033\n\031" +
       "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -681,7 +681,7 @@ public final class ScenePlayGuestReplyNotifyOuterClass {
     internal_static_ScenePlayGuestReplyNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ScenePlayGuestReplyNotify_descriptor,
-        new java.lang.String[] { "IsAgree", "GuestUid", "PlayId", });
+        new java.lang.String[] { "PlayId", "IsAgree", "GuestUid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

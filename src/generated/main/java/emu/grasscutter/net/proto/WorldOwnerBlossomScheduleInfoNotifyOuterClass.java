@@ -35,8 +35,8 @@ public final class WorldOwnerBlossomScheduleInfoNotifyOuterClass {
   }
   /**
    * <pre>
-   * Name: DIEHNGECGMB
-   * CmdId: 2714
+   * CmdId: 2755
+   * Obf: ODEKGEDHGLM
    * </pre>
    *
    * Protobuf type {@code WorldOwnerBlossomScheduleInfoNotify}
@@ -316,8 +316,8 @@ public final class WorldOwnerBlossomScheduleInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: DIEHNGECGMB
-     * CmdId: 2714
+     * CmdId: 2755
+     * Obf: ODEKGEDHGLM
      * </pre>
      *
      * Protobuf type {@code WorldOwnerBlossomScheduleInfoNotify}

@@ -38,7 +38,7 @@ public final class ExhibitionDisplayInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: ABMCDDFMBOC
+   * Obf: FALKBLEJAOC
    * </pre>
    *
    * Protobuf type {@code ExhibitionDisplayInfo}
@@ -344,7 +344,7 @@ public final class ExhibitionDisplayInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: ABMCDDFMBOC
+     * Obf: FALKBLEJAOC
      * </pre>
      *
      * Protobuf type {@code ExhibitionDisplayInfo}

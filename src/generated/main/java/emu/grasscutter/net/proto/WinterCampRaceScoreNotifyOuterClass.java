@@ -19,21 +19,21 @@ public final class WinterCampRaceScoreNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 id = 4;</code>
-     * @return The id.
-     */
-    int getId();
-
-    /**
-     * <code>uint32 max_score = 9;</code>
+     * <code>uint32 max_score = 4;</code>
      * @return The maxScore.
      */
     int getMaxScore();
+
+    /**
+     * <code>uint32 id = 7;</code>
+     * @return The id.
+     */
+    int getId();
   }
   /**
    * <pre>
-   * Name: EONLNJIEIKH
-   * CmdId: 8664
+   * CmdId: 8372
+   * Obf: NNOEOPFIHPB
    * </pre>
    *
    * Protobuf type {@code WinterCampRaceScoreNotify}
@@ -82,12 +82,12 @@ public final class WinterCampRaceScoreNotifyOuterClass {
               break;
             case 32: {
 
-              id_ = input.readUInt32();
+              maxScore_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 56: {
 
-              maxScore_ = input.readUInt32();
+              id_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,26 +122,26 @@ public final class WinterCampRaceScoreNotifyOuterClass {
               emu.grasscutter.net.proto.WinterCampRaceScoreNotifyOuterClass.WinterCampRaceScoreNotify.class, emu.grasscutter.net.proto.WinterCampRaceScoreNotifyOuterClass.WinterCampRaceScoreNotify.Builder.class);
     }
 
-    public static final int ID_FIELD_NUMBER = 4;
-    private int id_;
-    /**
-     * <code>uint32 id = 4;</code>
-     * @return The id.
-     */
-    @java.lang.Override
-    public int getId() {
-      return id_;
-    }
-
-    public static final int MAX_SCORE_FIELD_NUMBER = 9;
+    public static final int MAX_SCORE_FIELD_NUMBER = 4;
     private int maxScore_;
     /**
-     * <code>uint32 max_score = 9;</code>
+     * <code>uint32 max_score = 4;</code>
      * @return The maxScore.
      */
     @java.lang.Override
     public int getMaxScore() {
       return maxScore_;
+    }
+
+    public static final int ID_FIELD_NUMBER = 7;
+    private int id_;
+    /**
+     * <code>uint32 id = 7;</code>
+     * @return The id.
+     */
+    @java.lang.Override
+    public int getId() {
+      return id_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -158,11 +158,11 @@ public final class WinterCampRaceScoreNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (id_ != 0) {
-        output.writeUInt32(4, id_);
-      }
       if (maxScore_ != 0) {
-        output.writeUInt32(9, maxScore_);
+        output.writeUInt32(4, maxScore_);
+      }
+      if (id_ != 0) {
+        output.writeUInt32(7, id_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class WinterCampRaceScoreNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (id_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, id_);
-      }
       if (maxScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, maxScore_);
+          .computeUInt32Size(4, maxScore_);
+      }
+      if (id_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, id_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +196,10 @@ public final class WinterCampRaceScoreNotifyOuterClass {
       }
       emu.grasscutter.net.proto.WinterCampRaceScoreNotifyOuterClass.WinterCampRaceScoreNotify other = (emu.grasscutter.net.proto.WinterCampRaceScoreNotifyOuterClass.WinterCampRaceScoreNotify) obj;
 
-      if (getId()
-          != other.getId()) return false;
       if (getMaxScore()
           != other.getMaxScore()) return false;
+      if (getId()
+          != other.getId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +211,10 @@ public final class WinterCampRaceScoreNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ID_FIELD_NUMBER;
-      hash = (53 * hash) + getId();
       hash = (37 * hash) + MAX_SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getMaxScore();
+      hash = (37 * hash) + ID_FIELD_NUMBER;
+      hash = (53 * hash) + getId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +312,8 @@ public final class WinterCampRaceScoreNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: EONLNJIEIKH
-     * CmdId: 8664
+     * CmdId: 8372
+     * Obf: NNOEOPFIHPB
      * </pre>
      *
      * Protobuf type {@code WinterCampRaceScoreNotify}
@@ -353,9 +353,9 @@ public final class WinterCampRaceScoreNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        id_ = 0;
-
         maxScore_ = 0;
+
+        id_ = 0;
 
         return this;
       }
@@ -383,8 +383,8 @@ public final class WinterCampRaceScoreNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.WinterCampRaceScoreNotifyOuterClass.WinterCampRaceScoreNotify buildPartial() {
         emu.grasscutter.net.proto.WinterCampRaceScoreNotifyOuterClass.WinterCampRaceScoreNotify result = new emu.grasscutter.net.proto.WinterCampRaceScoreNotifyOuterClass.WinterCampRaceScoreNotify(this);
-        result.id_ = id_;
         result.maxScore_ = maxScore_;
+        result.id_ = id_;
         onBuilt();
         return result;
       }
@@ -433,11 +433,11 @@ public final class WinterCampRaceScoreNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.WinterCampRaceScoreNotifyOuterClass.WinterCampRaceScoreNotify other) {
         if (other == emu.grasscutter.net.proto.WinterCampRaceScoreNotifyOuterClass.WinterCampRaceScoreNotify.getDefaultInstance()) return this;
-        if (other.getId() != 0) {
-          setId(other.getId());
-        }
         if (other.getMaxScore() != 0) {
           setMaxScore(other.getMaxScore());
+        }
+        if (other.getId() != 0) {
+          setId(other.getId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,40 +468,9 @@ public final class WinterCampRaceScoreNotifyOuterClass {
         return this;
       }
 
-      private int id_ ;
-      /**
-       * <code>uint32 id = 4;</code>
-       * @return The id.
-       */
-      @java.lang.Override
-      public int getId() {
-        return id_;
-      }
-      /**
-       * <code>uint32 id = 4;</code>
-       * @param value The id to set.
-       * @return This builder for chaining.
-       */
-      public Builder setId(int value) {
-        
-        id_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 id = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearId() {
-        
-        id_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int maxScore_ ;
       /**
-       * <code>uint32 max_score = 9;</code>
+       * <code>uint32 max_score = 4;</code>
        * @return The maxScore.
        */
       @java.lang.Override
@@ -509,7 +478,7 @@ public final class WinterCampRaceScoreNotifyOuterClass {
         return maxScore_;
       }
       /**
-       * <code>uint32 max_score = 9;</code>
+       * <code>uint32 max_score = 4;</code>
        * @param value The maxScore to set.
        * @return This builder for chaining.
        */
@@ -520,12 +489,43 @@ public final class WinterCampRaceScoreNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 max_score = 9;</code>
+       * <code>uint32 max_score = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaxScore() {
         
         maxScore_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int id_ ;
+      /**
+       * <code>uint32 id = 7;</code>
+       * @return The id.
+       */
+      @java.lang.Override
+      public int getId() {
+        return id_;
+      }
+      /**
+       * <code>uint32 id = 7;</code>
+       * @param value The id to set.
+       * @return This builder for chaining.
+       */
+      public Builder setId(int value) {
+        
+        id_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 id = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearId() {
+        
+        id_ = 0;
         onChanged();
         return this;
       }
@@ -597,8 +597,8 @@ public final class WinterCampRaceScoreNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037WinterCampRaceScoreNotify.proto\":\n\031Win" +
-      "terCampRaceScoreNotify\022\n\n\002id\030\004 \001(\r\022\021\n\tma" +
-      "x_score\030\t \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "terCampRaceScoreNotify\022\021\n\tmax_score\030\004 \001(" +
+      "\r\022\n\n\002id\030\007 \001(\rB\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -610,7 +610,7 @@ public final class WinterCampRaceScoreNotifyOuterClass {
     internal_static_WinterCampRaceScoreNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_WinterCampRaceScoreNotify_descriptor,
-        new java.lang.String[] { "Id", "MaxScore", });
+        new java.lang.String[] { "MaxScore", "Id", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

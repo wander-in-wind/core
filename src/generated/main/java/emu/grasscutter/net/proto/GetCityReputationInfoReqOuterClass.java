@@ -26,8 +26,8 @@ public final class GetCityReputationInfoReqOuterClass {
   }
   /**
    * <pre>
-   * Name: JANGLBNFJMN
-   * CmdId: 2867
+   * CmdId: 2875
+   * Obf: CCKEGBEBNDG
    * </pre>
    *
    * Protobuf type {@code GetCityReputationInfoReq}
@@ -279,8 +279,8 @@ public final class GetCityReputationInfoReqOuterClass {
     }
     /**
      * <pre>
-     * Name: JANGLBNFJMN
-     * CmdId: 2867
+     * CmdId: 2875
+     * Obf: CCKEGBEBNDG
      * </pre>
      *
      * Protobuf type {@code GetCityReputationInfoReq}

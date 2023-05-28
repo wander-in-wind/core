@@ -19,27 +19,27 @@ public final class DungeonReviseLevelNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 dungeon_id = 15;</code>
+     * <code>uint32 LPEGNBKLNPD = 2;</code>
+     * @return The lPEGNBKLNPD.
+     */
+    int getLPEGNBKLNPD();
+
+    /**
+     * <code>uint32 dungeon_id = 11;</code>
      * @return The dungeonId.
      */
     int getDungeonId();
 
     /**
-     * <code>uint32 scene_level = 3;</code>
-     * @return The sceneLevel.
+     * <code>uint32 MAGJOJOBHEK = 10;</code>
+     * @return The mAGJOJOBHEK.
      */
-    int getSceneLevel();
-
-    /**
-     * <code>uint32 revise_level = 7;</code>
-     * @return The reviseLevel.
-     */
-    int getReviseLevel();
+    int getMAGJOJOBHEK();
   }
   /**
    * <pre>
-   * Name: LPLPFPBLPIJ
-   * CmdId: 901
+   * CmdId: 915
+   * Obf: DPHJKPDLJME
    * </pre>
    *
    * Protobuf type {@code DungeonReviseLevelNotify}
@@ -86,17 +86,17 @@ public final class DungeonReviseLevelNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 16: {
 
-              sceneLevel_ = input.readUInt32();
+              lPEGNBKLNPD_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 80: {
 
-              reviseLevel_ = input.readUInt32();
+              mAGJOJOBHEK_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 88: {
 
               dungeonId_ = input.readUInt32();
               break;
@@ -133,10 +133,21 @@ public final class DungeonReviseLevelNotifyOuterClass {
               emu.grasscutter.net.proto.DungeonReviseLevelNotifyOuterClass.DungeonReviseLevelNotify.class, emu.grasscutter.net.proto.DungeonReviseLevelNotifyOuterClass.DungeonReviseLevelNotify.Builder.class);
     }
 
-    public static final int DUNGEON_ID_FIELD_NUMBER = 15;
+    public static final int LPEGNBKLNPD_FIELD_NUMBER = 2;
+    private int lPEGNBKLNPD_;
+    /**
+     * <code>uint32 LPEGNBKLNPD = 2;</code>
+     * @return The lPEGNBKLNPD.
+     */
+    @java.lang.Override
+    public int getLPEGNBKLNPD() {
+      return lPEGNBKLNPD_;
+    }
+
+    public static final int DUNGEON_ID_FIELD_NUMBER = 11;
     private int dungeonId_;
     /**
-     * <code>uint32 dungeon_id = 15;</code>
+     * <code>uint32 dungeon_id = 11;</code>
      * @return The dungeonId.
      */
     @java.lang.Override
@@ -144,26 +155,15 @@ public final class DungeonReviseLevelNotifyOuterClass {
       return dungeonId_;
     }
 
-    public static final int SCENE_LEVEL_FIELD_NUMBER = 3;
-    private int sceneLevel_;
+    public static final int MAGJOJOBHEK_FIELD_NUMBER = 10;
+    private int mAGJOJOBHEK_;
     /**
-     * <code>uint32 scene_level = 3;</code>
-     * @return The sceneLevel.
+     * <code>uint32 MAGJOJOBHEK = 10;</code>
+     * @return The mAGJOJOBHEK.
      */
     @java.lang.Override
-    public int getSceneLevel() {
-      return sceneLevel_;
-    }
-
-    public static final int REVISE_LEVEL_FIELD_NUMBER = 7;
-    private int reviseLevel_;
-    /**
-     * <code>uint32 revise_level = 7;</code>
-     * @return The reviseLevel.
-     */
-    @java.lang.Override
-    public int getReviseLevel() {
-      return reviseLevel_;
+    public int getMAGJOJOBHEK() {
+      return mAGJOJOBHEK_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -180,14 +180,14 @@ public final class DungeonReviseLevelNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (sceneLevel_ != 0) {
-        output.writeUInt32(3, sceneLevel_);
+      if (lPEGNBKLNPD_ != 0) {
+        output.writeUInt32(2, lPEGNBKLNPD_);
       }
-      if (reviseLevel_ != 0) {
-        output.writeUInt32(7, reviseLevel_);
+      if (mAGJOJOBHEK_ != 0) {
+        output.writeUInt32(10, mAGJOJOBHEK_);
       }
       if (dungeonId_ != 0) {
-        output.writeUInt32(15, dungeonId_);
+        output.writeUInt32(11, dungeonId_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +198,17 @@ public final class DungeonReviseLevelNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (sceneLevel_ != 0) {
+      if (lPEGNBKLNPD_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, sceneLevel_);
+          .computeUInt32Size(2, lPEGNBKLNPD_);
       }
-      if (reviseLevel_ != 0) {
+      if (mAGJOJOBHEK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, reviseLevel_);
+          .computeUInt32Size(10, mAGJOJOBHEK_);
       }
       if (dungeonId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, dungeonId_);
+          .computeUInt32Size(11, dungeonId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -225,12 +225,12 @@ public final class DungeonReviseLevelNotifyOuterClass {
       }
       emu.grasscutter.net.proto.DungeonReviseLevelNotifyOuterClass.DungeonReviseLevelNotify other = (emu.grasscutter.net.proto.DungeonReviseLevelNotifyOuterClass.DungeonReviseLevelNotify) obj;
 
+      if (getLPEGNBKLNPD()
+          != other.getLPEGNBKLNPD()) return false;
       if (getDungeonId()
           != other.getDungeonId()) return false;
-      if (getSceneLevel()
-          != other.getSceneLevel()) return false;
-      if (getReviseLevel()
-          != other.getReviseLevel()) return false;
+      if (getMAGJOJOBHEK()
+          != other.getMAGJOJOBHEK()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -242,12 +242,12 @@ public final class DungeonReviseLevelNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + LPEGNBKLNPD_FIELD_NUMBER;
+      hash = (53 * hash) + getLPEGNBKLNPD();
       hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
       hash = (53 * hash) + getDungeonId();
-      hash = (37 * hash) + SCENE_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getSceneLevel();
-      hash = (37 * hash) + REVISE_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getReviseLevel();
+      hash = (37 * hash) + MAGJOJOBHEK_FIELD_NUMBER;
+      hash = (53 * hash) + getMAGJOJOBHEK();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -345,8 +345,8 @@ public final class DungeonReviseLevelNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: LPLPFPBLPIJ
-     * CmdId: 901
+     * CmdId: 915
+     * Obf: DPHJKPDLJME
      * </pre>
      *
      * Protobuf type {@code DungeonReviseLevelNotify}
@@ -386,11 +386,11 @@ public final class DungeonReviseLevelNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        lPEGNBKLNPD_ = 0;
+
         dungeonId_ = 0;
 
-        sceneLevel_ = 0;
-
-        reviseLevel_ = 0;
+        mAGJOJOBHEK_ = 0;
 
         return this;
       }
@@ -418,9 +418,9 @@ public final class DungeonReviseLevelNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.DungeonReviseLevelNotifyOuterClass.DungeonReviseLevelNotify buildPartial() {
         emu.grasscutter.net.proto.DungeonReviseLevelNotifyOuterClass.DungeonReviseLevelNotify result = new emu.grasscutter.net.proto.DungeonReviseLevelNotifyOuterClass.DungeonReviseLevelNotify(this);
+        result.lPEGNBKLNPD_ = lPEGNBKLNPD_;
         result.dungeonId_ = dungeonId_;
-        result.sceneLevel_ = sceneLevel_;
-        result.reviseLevel_ = reviseLevel_;
+        result.mAGJOJOBHEK_ = mAGJOJOBHEK_;
         onBuilt();
         return result;
       }
@@ -469,14 +469,14 @@ public final class DungeonReviseLevelNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DungeonReviseLevelNotifyOuterClass.DungeonReviseLevelNotify other) {
         if (other == emu.grasscutter.net.proto.DungeonReviseLevelNotifyOuterClass.DungeonReviseLevelNotify.getDefaultInstance()) return this;
+        if (other.getLPEGNBKLNPD() != 0) {
+          setLPEGNBKLNPD(other.getLPEGNBKLNPD());
+        }
         if (other.getDungeonId() != 0) {
           setDungeonId(other.getDungeonId());
         }
-        if (other.getSceneLevel() != 0) {
-          setSceneLevel(other.getSceneLevel());
-        }
-        if (other.getReviseLevel() != 0) {
-          setReviseLevel(other.getReviseLevel());
+        if (other.getMAGJOJOBHEK() != 0) {
+          setMAGJOJOBHEK(other.getMAGJOJOBHEK());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -507,9 +507,40 @@ public final class DungeonReviseLevelNotifyOuterClass {
         return this;
       }
 
+      private int lPEGNBKLNPD_ ;
+      /**
+       * <code>uint32 LPEGNBKLNPD = 2;</code>
+       * @return The lPEGNBKLNPD.
+       */
+      @java.lang.Override
+      public int getLPEGNBKLNPD() {
+        return lPEGNBKLNPD_;
+      }
+      /**
+       * <code>uint32 LPEGNBKLNPD = 2;</code>
+       * @param value The lPEGNBKLNPD to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLPEGNBKLNPD(int value) {
+        
+        lPEGNBKLNPD_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 LPEGNBKLNPD = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLPEGNBKLNPD() {
+        
+        lPEGNBKLNPD_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int dungeonId_ ;
       /**
-       * <code>uint32 dungeon_id = 15;</code>
+       * <code>uint32 dungeon_id = 11;</code>
        * @return The dungeonId.
        */
       @java.lang.Override
@@ -517,7 +548,7 @@ public final class DungeonReviseLevelNotifyOuterClass {
         return dungeonId_;
       }
       /**
-       * <code>uint32 dungeon_id = 15;</code>
+       * <code>uint32 dungeon_id = 11;</code>
        * @param value The dungeonId to set.
        * @return This builder for chaining.
        */
@@ -528,7 +559,7 @@ public final class DungeonReviseLevelNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 dungeon_id = 15;</code>
+       * <code>uint32 dungeon_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonId() {
@@ -538,64 +569,33 @@ public final class DungeonReviseLevelNotifyOuterClass {
         return this;
       }
 
-      private int sceneLevel_ ;
+      private int mAGJOJOBHEK_ ;
       /**
-       * <code>uint32 scene_level = 3;</code>
-       * @return The sceneLevel.
+       * <code>uint32 MAGJOJOBHEK = 10;</code>
+       * @return The mAGJOJOBHEK.
        */
       @java.lang.Override
-      public int getSceneLevel() {
-        return sceneLevel_;
+      public int getMAGJOJOBHEK() {
+        return mAGJOJOBHEK_;
       }
       /**
-       * <code>uint32 scene_level = 3;</code>
-       * @param value The sceneLevel to set.
+       * <code>uint32 MAGJOJOBHEK = 10;</code>
+       * @param value The mAGJOJOBHEK to set.
        * @return This builder for chaining.
        */
-      public Builder setSceneLevel(int value) {
+      public Builder setMAGJOJOBHEK(int value) {
         
-        sceneLevel_ = value;
+        mAGJOJOBHEK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 scene_level = 3;</code>
+       * <code>uint32 MAGJOJOBHEK = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearSceneLevel() {
+      public Builder clearMAGJOJOBHEK() {
         
-        sceneLevel_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int reviseLevel_ ;
-      /**
-       * <code>uint32 revise_level = 7;</code>
-       * @return The reviseLevel.
-       */
-      @java.lang.Override
-      public int getReviseLevel() {
-        return reviseLevel_;
-      }
-      /**
-       * <code>uint32 revise_level = 7;</code>
-       * @param value The reviseLevel to set.
-       * @return This builder for chaining.
-       */
-      public Builder setReviseLevel(int value) {
-        
-        reviseLevel_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 revise_level = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearReviseLevel() {
-        
-        reviseLevel_ = 0;
+        mAGJOJOBHEK_ = 0;
         onChanged();
         return this;
       }
@@ -666,10 +666,10 @@ public final class DungeonReviseLevelNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\036DungeonReviseLevelNotify.proto\"Y\n\030Dung" +
-      "eonReviseLevelNotify\022\022\n\ndungeon_id\030\017 \001(\r" +
-      "\022\023\n\013scene_level\030\003 \001(\r\022\024\n\014revise_level\030\007 " +
-      "\001(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\036DungeonReviseLevelNotify.proto\"X\n\030Dung" +
+      "eonReviseLevelNotify\022\023\n\013LPEGNBKLNPD\030\002 \001(" +
+      "\r\022\022\n\ndungeon_id\030\013 \001(\r\022\023\n\013MAGJOJOBHEK\030\n \001" +
+      "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -680,7 +680,7 @@ public final class DungeonReviseLevelNotifyOuterClass {
     internal_static_DungeonReviseLevelNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DungeonReviseLevelNotify_descriptor,
-        new java.lang.String[] { "DungeonId", "SceneLevel", "ReviseLevel", });
+        new java.lang.String[] { "LPEGNBKLNPD", "DungeonId", "MAGJOJOBHEK", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

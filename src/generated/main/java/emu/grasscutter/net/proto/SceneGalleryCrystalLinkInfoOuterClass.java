@@ -26,7 +26,7 @@ public final class SceneGalleryCrystalLinkInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: DOFFFMPIPDH
+   * Obf: OPKHPMPOMFE
    * </pre>
    *
    * Protobuf type {@code SceneGalleryCrystalLinkInfo}
@@ -278,7 +278,7 @@ public final class SceneGalleryCrystalLinkInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: DOFFFMPIPDH
+     * Obf: OPKHPMPOMFE
      * </pre>
      *
      * Protobuf type {@code SceneGalleryCrystalLinkInfo}

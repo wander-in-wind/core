@@ -19,13 +19,13 @@ public final class GravenInnocencePhotoObjectInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 finish_time = 7;</code>
+     * <code>uint32 finish_time = 5;</code>
      * @return The finishTime.
      */
     int getFinishTime();
 
     /**
-     * <code>uint32 param = 13;</code>
+     * <code>uint32 param = 11;</code>
      * @return The param.
      */
     int getParam();
@@ -38,7 +38,7 @@ public final class GravenInnocencePhotoObjectInfoOuterClass {
   }
   /**
    * <pre>
-   * Name: MJHFBOFELIG
+   * Obf: MHMICGIPAGB
    * </pre>
    *
    * Protobuf type {@code GravenInnocencePhotoObjectInfo}
@@ -85,7 +85,7 @@ public final class GravenInnocencePhotoObjectInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 40: {
 
               finishTime_ = input.readUInt32();
               break;
@@ -95,7 +95,7 @@ public final class GravenInnocencePhotoObjectInfoOuterClass {
               objectId_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 88: {
 
               param_ = input.readUInt32();
               break;
@@ -132,10 +132,10 @@ public final class GravenInnocencePhotoObjectInfoOuterClass {
               emu.grasscutter.net.proto.GravenInnocencePhotoObjectInfoOuterClass.GravenInnocencePhotoObjectInfo.class, emu.grasscutter.net.proto.GravenInnocencePhotoObjectInfoOuterClass.GravenInnocencePhotoObjectInfo.Builder.class);
     }
 
-    public static final int FINISH_TIME_FIELD_NUMBER = 7;
+    public static final int FINISH_TIME_FIELD_NUMBER = 5;
     private int finishTime_;
     /**
-     * <code>uint32 finish_time = 7;</code>
+     * <code>uint32 finish_time = 5;</code>
      * @return The finishTime.
      */
     @java.lang.Override
@@ -143,10 +143,10 @@ public final class GravenInnocencePhotoObjectInfoOuterClass {
       return finishTime_;
     }
 
-    public static final int PARAM_FIELD_NUMBER = 13;
+    public static final int PARAM_FIELD_NUMBER = 11;
     private int param_;
     /**
-     * <code>uint32 param = 13;</code>
+     * <code>uint32 param = 11;</code>
      * @return The param.
      */
     @java.lang.Override
@@ -180,13 +180,13 @@ public final class GravenInnocencePhotoObjectInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (finishTime_ != 0) {
-        output.writeUInt32(7, finishTime_);
+        output.writeUInt32(5, finishTime_);
       }
       if (objectId_ != 0) {
         output.writeUInt32(8, objectId_);
       }
       if (param_ != 0) {
-        output.writeUInt32(13, param_);
+        output.writeUInt32(11, param_);
       }
       unknownFields.writeTo(output);
     }
@@ -199,7 +199,7 @@ public final class GravenInnocencePhotoObjectInfoOuterClass {
       size = 0;
       if (finishTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, finishTime_);
+          .computeUInt32Size(5, finishTime_);
       }
       if (objectId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -207,7 +207,7 @@ public final class GravenInnocencePhotoObjectInfoOuterClass {
       }
       if (param_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, param_);
+          .computeUInt32Size(11, param_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -344,7 +344,7 @@ public final class GravenInnocencePhotoObjectInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: MJHFBOFELIG
+     * Obf: MHMICGIPAGB
      * </pre>
      *
      * Protobuf type {@code GravenInnocencePhotoObjectInfo}
@@ -507,7 +507,7 @@ public final class GravenInnocencePhotoObjectInfoOuterClass {
 
       private int finishTime_ ;
       /**
-       * <code>uint32 finish_time = 7;</code>
+       * <code>uint32 finish_time = 5;</code>
        * @return The finishTime.
        */
       @java.lang.Override
@@ -515,7 +515,7 @@ public final class GravenInnocencePhotoObjectInfoOuterClass {
         return finishTime_;
       }
       /**
-       * <code>uint32 finish_time = 7;</code>
+       * <code>uint32 finish_time = 5;</code>
        * @param value The finishTime to set.
        * @return This builder for chaining.
        */
@@ -526,7 +526,7 @@ public final class GravenInnocencePhotoObjectInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 finish_time = 7;</code>
+       * <code>uint32 finish_time = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearFinishTime() {
@@ -538,7 +538,7 @@ public final class GravenInnocencePhotoObjectInfoOuterClass {
 
       private int param_ ;
       /**
-       * <code>uint32 param = 13;</code>
+       * <code>uint32 param = 11;</code>
        * @return The param.
        */
       @java.lang.Override
@@ -546,7 +546,7 @@ public final class GravenInnocencePhotoObjectInfoOuterClass {
         return param_;
       }
       /**
-       * <code>uint32 param = 13;</code>
+       * <code>uint32 param = 11;</code>
        * @param value The param to set.
        * @return This builder for chaining.
        */
@@ -557,7 +557,7 @@ public final class GravenInnocencePhotoObjectInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 param = 13;</code>
+       * <code>uint32 param = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearParam() {
@@ -666,7 +666,7 @@ public final class GravenInnocencePhotoObjectInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n$GravenInnocencePhotoObjectInfo.proto\"W" +
       "\n\036GravenInnocencePhotoObjectInfo\022\023\n\013fini" +
-      "sh_time\030\007 \001(\r\022\r\n\005param\030\r \001(\r\022\021\n\tobject_i" +
+      "sh_time\030\005 \001(\r\022\r\n\005param\030\013 \001(\r\022\021\n\tobject_i" +
       "d\030\010 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };

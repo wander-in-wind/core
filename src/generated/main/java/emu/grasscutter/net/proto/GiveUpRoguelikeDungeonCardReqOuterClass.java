@@ -20,8 +20,8 @@ public final class GiveUpRoguelikeDungeonCardReqOuterClass {
   }
   /**
    * <pre>
-   * Name: GCJILFHLJJG
-   * CmdId: 8292
+   * CmdId: 8147
+   * Obf: HHONHBALFOG
    * </pre>
    *
    * Protobuf type {@code GiveUpRoguelikeDungeonCardReq}
@@ -246,8 +246,8 @@ public final class GiveUpRoguelikeDungeonCardReqOuterClass {
     }
     /**
      * <pre>
-     * Name: GCJILFHLJJG
-     * CmdId: 8292
+     * CmdId: 8147
+     * Obf: HHONHBALFOG
      * </pre>
      *
      * Protobuf type {@code GiveUpRoguelikeDungeonCardReq}

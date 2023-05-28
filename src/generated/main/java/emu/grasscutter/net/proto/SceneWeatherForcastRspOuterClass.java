@@ -19,38 +19,38 @@ public final class SceneWeatherForcastRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 6;</code>
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>repeated uint32 forcast_climate_list = 15;</code>
+     * <code>repeated uint32 forcast_climate_list = 6;</code>
      * @return A list containing the forcastClimateList.
      */
     java.util.List<java.lang.Integer> getForcastClimateListList();
     /**
-     * <code>repeated uint32 forcast_climate_list = 15;</code>
+     * <code>repeated uint32 forcast_climate_list = 6;</code>
      * @return The count of forcastClimateList.
      */
     int getForcastClimateListCount();
     /**
-     * <code>repeated uint32 forcast_climate_list = 15;</code>
+     * <code>repeated uint32 forcast_climate_list = 6;</code>
      * @param index The index of the element to return.
      * @return The forcastClimateList at the given index.
      */
     int getForcastClimateList(int index);
 
     /**
-     * <code>uint64 next_climate_time = 1;</code>
+     * <code>uint64 next_climate_time = 12;</code>
      * @return The nextClimateTime.
      */
     long getNextClimateTime();
   }
   /**
    * <pre>
-   * Name: FIKFNEBEPOB
-   * CmdId: 3257
+   * CmdId: 3037
+   * Obf: MGONCHGNCBI
    * </pre>
    *
    * Protobuf type {@code SceneWeatherForcastRsp}
@@ -99,17 +99,7 @@ public final class SceneWeatherForcastRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              nextClimateTime_ = input.readUInt64();
-              break;
-            }
             case 48: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 120: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 forcastClimateList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -117,7 +107,7 @@ public final class SceneWeatherForcastRspOuterClass {
               forcastClimateList_.addInt(input.readUInt32());
               break;
             }
-            case 122: {
+            case 50: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -128,6 +118,16 @@ public final class SceneWeatherForcastRspOuterClass {
                 forcastClimateList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
+              break;
+            }
+            case 80: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 96: {
+
+              nextClimateTime_ = input.readUInt64();
               break;
             }
             default: {
@@ -165,10 +165,10 @@ public final class SceneWeatherForcastRspOuterClass {
               emu.grasscutter.net.proto.SceneWeatherForcastRspOuterClass.SceneWeatherForcastRsp.class, emu.grasscutter.net.proto.SceneWeatherForcastRspOuterClass.SceneWeatherForcastRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 6;
+    public static final int RETCODE_FIELD_NUMBER = 10;
     private int retcode_;
     /**
-     * <code>int32 retcode = 6;</code>
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -176,10 +176,10 @@ public final class SceneWeatherForcastRspOuterClass {
       return retcode_;
     }
 
-    public static final int FORCAST_CLIMATE_LIST_FIELD_NUMBER = 15;
+    public static final int FORCAST_CLIMATE_LIST_FIELD_NUMBER = 6;
     private com.google.protobuf.Internal.IntList forcastClimateList_;
     /**
-     * <code>repeated uint32 forcast_climate_list = 15;</code>
+     * <code>repeated uint32 forcast_climate_list = 6;</code>
      * @return A list containing the forcastClimateList.
      */
     @java.lang.Override
@@ -188,14 +188,14 @@ public final class SceneWeatherForcastRspOuterClass {
       return forcastClimateList_;
     }
     /**
-     * <code>repeated uint32 forcast_climate_list = 15;</code>
+     * <code>repeated uint32 forcast_climate_list = 6;</code>
      * @return The count of forcastClimateList.
      */
     public int getForcastClimateListCount() {
       return forcastClimateList_.size();
     }
     /**
-     * <code>repeated uint32 forcast_climate_list = 15;</code>
+     * <code>repeated uint32 forcast_climate_list = 6;</code>
      * @param index The index of the element to return.
      * @return The forcastClimateList at the given index.
      */
@@ -204,10 +204,10 @@ public final class SceneWeatherForcastRspOuterClass {
     }
     private int forcastClimateListMemoizedSerializedSize = -1;
 
-    public static final int NEXT_CLIMATE_TIME_FIELD_NUMBER = 1;
+    public static final int NEXT_CLIMATE_TIME_FIELD_NUMBER = 12;
     private long nextClimateTime_;
     /**
-     * <code>uint64 next_climate_time = 1;</code>
+     * <code>uint64 next_climate_time = 12;</code>
      * @return The nextClimateTime.
      */
     @java.lang.Override
@@ -230,18 +230,18 @@ public final class SceneWeatherForcastRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (nextClimateTime_ != 0L) {
-        output.writeUInt64(1, nextClimateTime_);
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(6, retcode_);
-      }
       if (getForcastClimateListList().size() > 0) {
-        output.writeUInt32NoTag(122);
+        output.writeUInt32NoTag(50);
         output.writeUInt32NoTag(forcastClimateListMemoizedSerializedSize);
       }
       for (int i = 0; i < forcastClimateList_.size(); i++) {
         output.writeUInt32NoTag(forcastClimateList_.getInt(i));
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(10, retcode_);
+      }
+      if (nextClimateTime_ != 0L) {
+        output.writeUInt64(12, nextClimateTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -252,14 +252,6 @@ public final class SceneWeatherForcastRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (nextClimateTime_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(1, nextClimateTime_);
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(6, retcode_);
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < forcastClimateList_.size(); i++) {
@@ -273,6 +265,14 @@ public final class SceneWeatherForcastRspOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         forcastClimateListMemoizedSerializedSize = dataSize;
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(10, retcode_);
+      }
+      if (nextClimateTime_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(12, nextClimateTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -412,8 +412,8 @@ public final class SceneWeatherForcastRspOuterClass {
     }
     /**
      * <pre>
-     * Name: FIKFNEBEPOB
-     * CmdId: 3257
+     * CmdId: 3037
+     * Obf: MGONCHGNCBI
      * </pre>
      *
      * Protobuf type {@code SceneWeatherForcastRsp}
@@ -589,7 +589,7 @@ public final class SceneWeatherForcastRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 10;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -597,7 +597,7 @@ public final class SceneWeatherForcastRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 10;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -608,7 +608,7 @@ public final class SceneWeatherForcastRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -626,7 +626,7 @@ public final class SceneWeatherForcastRspOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 forcast_climate_list = 15;</code>
+       * <code>repeated uint32 forcast_climate_list = 6;</code>
        * @return A list containing the forcastClimateList.
        */
       public java.util.List<java.lang.Integer>
@@ -635,14 +635,14 @@ public final class SceneWeatherForcastRspOuterClass {
                  java.util.Collections.unmodifiableList(forcastClimateList_) : forcastClimateList_;
       }
       /**
-       * <code>repeated uint32 forcast_climate_list = 15;</code>
+       * <code>repeated uint32 forcast_climate_list = 6;</code>
        * @return The count of forcastClimateList.
        */
       public int getForcastClimateListCount() {
         return forcastClimateList_.size();
       }
       /**
-       * <code>repeated uint32 forcast_climate_list = 15;</code>
+       * <code>repeated uint32 forcast_climate_list = 6;</code>
        * @param index The index of the element to return.
        * @return The forcastClimateList at the given index.
        */
@@ -650,7 +650,7 @@ public final class SceneWeatherForcastRspOuterClass {
         return forcastClimateList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 forcast_climate_list = 15;</code>
+       * <code>repeated uint32 forcast_climate_list = 6;</code>
        * @param index The index to set the value at.
        * @param value The forcastClimateList to set.
        * @return This builder for chaining.
@@ -663,7 +663,7 @@ public final class SceneWeatherForcastRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 forcast_climate_list = 15;</code>
+       * <code>repeated uint32 forcast_climate_list = 6;</code>
        * @param value The forcastClimateList to add.
        * @return This builder for chaining.
        */
@@ -674,7 +674,7 @@ public final class SceneWeatherForcastRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 forcast_climate_list = 15;</code>
+       * <code>repeated uint32 forcast_climate_list = 6;</code>
        * @param values The forcastClimateList to add.
        * @return This builder for chaining.
        */
@@ -687,7 +687,7 @@ public final class SceneWeatherForcastRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 forcast_climate_list = 15;</code>
+       * <code>repeated uint32 forcast_climate_list = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearForcastClimateList() {
@@ -699,7 +699,7 @@ public final class SceneWeatherForcastRspOuterClass {
 
       private long nextClimateTime_ ;
       /**
-       * <code>uint64 next_climate_time = 1;</code>
+       * <code>uint64 next_climate_time = 12;</code>
        * @return The nextClimateTime.
        */
       @java.lang.Override
@@ -707,7 +707,7 @@ public final class SceneWeatherForcastRspOuterClass {
         return nextClimateTime_;
       }
       /**
-       * <code>uint64 next_climate_time = 1;</code>
+       * <code>uint64 next_climate_time = 12;</code>
        * @param value The nextClimateTime to set.
        * @return This builder for chaining.
        */
@@ -718,7 +718,7 @@ public final class SceneWeatherForcastRspOuterClass {
         return this;
       }
       /**
-       * <code>uint64 next_climate_time = 1;</code>
+       * <code>uint64 next_climate_time = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearNextClimateTime() {
@@ -795,9 +795,9 @@ public final class SceneWeatherForcastRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034SceneWeatherForcastRsp.proto\"b\n\026SceneW" +
-      "eatherForcastRsp\022\017\n\007retcode\030\006 \001(\005\022\034\n\024for" +
-      "cast_climate_list\030\017 \003(\r\022\031\n\021next_climate_" +
-      "time\030\001 \001(\004B\033\n\031emu.grasscutter.net.protob" +
+      "eatherForcastRsp\022\017\n\007retcode\030\n \001(\005\022\034\n\024for" +
+      "cast_climate_list\030\006 \003(\r\022\031\n\021next_climate_" +
+      "time\030\014 \001(\004B\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

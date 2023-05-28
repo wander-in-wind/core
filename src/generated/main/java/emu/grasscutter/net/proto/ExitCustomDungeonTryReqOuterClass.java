@@ -20,8 +20,8 @@ public final class ExitCustomDungeonTryReqOuterClass {
   }
   /**
    * <pre>
-   * Name: KMEEJMNFPAB
-   * CmdId: 6226
+   * CmdId: 6231
+   * Obf: DKHELJILCOF
    * </pre>
    *
    * Protobuf type {@code ExitCustomDungeonTryReq}
@@ -246,8 +246,8 @@ public final class ExitCustomDungeonTryReqOuterClass {
     }
     /**
      * <pre>
-     * Name: KMEEJMNFPAB
-     * CmdId: 6226
+     * CmdId: 6231
+     * Obf: DKHELJILCOF
      * </pre>
      *
      * Protobuf type {@code ExitCustomDungeonTryReq}

@@ -19,42 +19,42 @@ public final class WidgetCaptureAnimalRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 material_id = 5;</code>
+     * <code>uint32 entity_id = 5;</code>
+     * @return The entityId.
+     */
+    int getEntityId();
+
+    /**
+     * <code>.Vector pos = 12;</code>
+     * @return Whether the pos field is set.
+     */
+    boolean hasPos();
+    /**
+     * <code>.Vector pos = 12;</code>
+     * @return The pos.
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
+    /**
+     * <code>.Vector pos = 12;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
+
+    /**
+     * <code>uint32 material_id = 1;</code>
      * @return The materialId.
      */
     int getMaterialId();
 
     /**
-     * <code>.Vector pos = 15;</code>
-     * @return Whether the pos field is set.
-     */
-    boolean hasPos();
-    /**
-     * <code>.Vector pos = 15;</code>
-     * @return The pos.
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
-    /**
-     * <code>.Vector pos = 15;</code>
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
-
-    /**
-     * <code>int32 retcode = 4;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     int getRetcode();
-
-    /**
-     * <code>uint32 entity_id = 14;</code>
-     * @return The entityId.
-     */
-    int getEntityId();
   }
   /**
    * <pre>
-   * Name: GNMFHLECBKG
-   * CmdId: 4261
+   * CmdId: 4277
+   * Obf: IAMFEIDINMH
    * </pre>
    *
    * Protobuf type {@code WidgetCaptureAnimalRsp}
@@ -101,22 +101,22 @@ public final class WidgetCaptureAnimalRspOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 8: {
+
+              materialId_ = input.readUInt32();
+              break;
+            }
+            case 16: {
 
               retcode_ = input.readInt32();
               break;
             }
             case 40: {
 
-              materialId_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
               entityId_ = input.readUInt32();
               break;
             }
-            case 122: {
+            case 98: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (pos_ != null) {
                 subBuilder = pos_.toBuilder();
@@ -161,21 +161,21 @@ public final class WidgetCaptureAnimalRspOuterClass {
               emu.grasscutter.net.proto.WidgetCaptureAnimalRspOuterClass.WidgetCaptureAnimalRsp.class, emu.grasscutter.net.proto.WidgetCaptureAnimalRspOuterClass.WidgetCaptureAnimalRsp.Builder.class);
     }
 
-    public static final int MATERIAL_ID_FIELD_NUMBER = 5;
-    private int materialId_;
+    public static final int ENTITY_ID_FIELD_NUMBER = 5;
+    private int entityId_;
     /**
-     * <code>uint32 material_id = 5;</code>
-     * @return The materialId.
+     * <code>uint32 entity_id = 5;</code>
+     * @return The entityId.
      */
     @java.lang.Override
-    public int getMaterialId() {
-      return materialId_;
+    public int getEntityId() {
+      return entityId_;
     }
 
-    public static final int POS_FIELD_NUMBER = 15;
+    public static final int POS_FIELD_NUMBER = 12;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
     /**
-     * <code>.Vector pos = 15;</code>
+     * <code>.Vector pos = 12;</code>
      * @return Whether the pos field is set.
      */
     @java.lang.Override
@@ -183,7 +183,7 @@ public final class WidgetCaptureAnimalRspOuterClass {
       return pos_ != null;
     }
     /**
-     * <code>.Vector pos = 15;</code>
+     * <code>.Vector pos = 12;</code>
      * @return The pos.
      */
     @java.lang.Override
@@ -191,33 +191,33 @@ public final class WidgetCaptureAnimalRspOuterClass {
       return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
     }
     /**
-     * <code>.Vector pos = 15;</code>
+     * <code>.Vector pos = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
       return getPos();
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 4;
+    public static final int MATERIAL_ID_FIELD_NUMBER = 1;
+    private int materialId_;
+    /**
+     * <code>uint32 material_id = 1;</code>
+     * @return The materialId.
+     */
+    @java.lang.Override
+    public int getMaterialId() {
+      return materialId_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 2;
     private int retcode_;
     /**
-     * <code>int32 retcode = 4;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
-    }
-
-    public static final int ENTITY_ID_FIELD_NUMBER = 14;
-    private int entityId_;
-    /**
-     * <code>uint32 entity_id = 14;</code>
-     * @return The entityId.
-     */
-    @java.lang.Override
-    public int getEntityId() {
-      return entityId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -234,17 +234,17 @@ public final class WidgetCaptureAnimalRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(4, retcode_);
-      }
       if (materialId_ != 0) {
-        output.writeUInt32(5, materialId_);
+        output.writeUInt32(1, materialId_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(2, retcode_);
       }
       if (entityId_ != 0) {
-        output.writeUInt32(14, entityId_);
+        output.writeUInt32(5, entityId_);
       }
       if (pos_ != null) {
-        output.writeMessage(15, getPos());
+        output.writeMessage(12, getPos());
       }
       unknownFields.writeTo(output);
     }
@@ -255,21 +255,21 @@ public final class WidgetCaptureAnimalRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, retcode_);
-      }
       if (materialId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, materialId_);
+          .computeUInt32Size(1, materialId_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, retcode_);
       }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, entityId_);
+          .computeUInt32Size(5, entityId_);
       }
       if (pos_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, getPos());
+          .computeMessageSize(12, getPos());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -286,17 +286,17 @@ public final class WidgetCaptureAnimalRspOuterClass {
       }
       emu.grasscutter.net.proto.WidgetCaptureAnimalRspOuterClass.WidgetCaptureAnimalRsp other = (emu.grasscutter.net.proto.WidgetCaptureAnimalRspOuterClass.WidgetCaptureAnimalRsp) obj;
 
-      if (getMaterialId()
-          != other.getMaterialId()) return false;
+      if (getEntityId()
+          != other.getEntityId()) return false;
       if (hasPos() != other.hasPos()) return false;
       if (hasPos()) {
         if (!getPos()
             .equals(other.getPos())) return false;
       }
+      if (getMaterialId()
+          != other.getMaterialId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (getEntityId()
-          != other.getEntityId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -308,16 +308,16 @@ public final class WidgetCaptureAnimalRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MATERIAL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getMaterialId();
+      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getEntityId();
       if (hasPos()) {
         hash = (37 * hash) + POS_FIELD_NUMBER;
         hash = (53 * hash) + getPos().hashCode();
       }
+      hash = (37 * hash) + MATERIAL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getMaterialId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getEntityId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -415,8 +415,8 @@ public final class WidgetCaptureAnimalRspOuterClass {
     }
     /**
      * <pre>
-     * Name: GNMFHLECBKG
-     * CmdId: 4261
+     * CmdId: 4277
+     * Obf: IAMFEIDINMH
      * </pre>
      *
      * Protobuf type {@code WidgetCaptureAnimalRsp}
@@ -456,7 +456,7 @@ public final class WidgetCaptureAnimalRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        materialId_ = 0;
+        entityId_ = 0;
 
         if (posBuilder_ == null) {
           pos_ = null;
@@ -464,9 +464,9 @@ public final class WidgetCaptureAnimalRspOuterClass {
           pos_ = null;
           posBuilder_ = null;
         }
-        retcode_ = 0;
+        materialId_ = 0;
 
-        entityId_ = 0;
+        retcode_ = 0;
 
         return this;
       }
@@ -494,14 +494,14 @@ public final class WidgetCaptureAnimalRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.WidgetCaptureAnimalRspOuterClass.WidgetCaptureAnimalRsp buildPartial() {
         emu.grasscutter.net.proto.WidgetCaptureAnimalRspOuterClass.WidgetCaptureAnimalRsp result = new emu.grasscutter.net.proto.WidgetCaptureAnimalRspOuterClass.WidgetCaptureAnimalRsp(this);
-        result.materialId_ = materialId_;
+        result.entityId_ = entityId_;
         if (posBuilder_ == null) {
           result.pos_ = pos_;
         } else {
           result.pos_ = posBuilder_.build();
         }
+        result.materialId_ = materialId_;
         result.retcode_ = retcode_;
-        result.entityId_ = entityId_;
         onBuilt();
         return result;
       }
@@ -550,17 +550,17 @@ public final class WidgetCaptureAnimalRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.WidgetCaptureAnimalRspOuterClass.WidgetCaptureAnimalRsp other) {
         if (other == emu.grasscutter.net.proto.WidgetCaptureAnimalRspOuterClass.WidgetCaptureAnimalRsp.getDefaultInstance()) return this;
-        if (other.getMaterialId() != 0) {
-          setMaterialId(other.getMaterialId());
+        if (other.getEntityId() != 0) {
+          setEntityId(other.getEntityId());
         }
         if (other.hasPos()) {
           mergePos(other.getPos());
         }
+        if (other.getMaterialId() != 0) {
+          setMaterialId(other.getMaterialId());
+        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
-        }
-        if (other.getEntityId() != 0) {
-          setEntityId(other.getEntityId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -591,33 +591,33 @@ public final class WidgetCaptureAnimalRspOuterClass {
         return this;
       }
 
-      private int materialId_ ;
+      private int entityId_ ;
       /**
-       * <code>uint32 material_id = 5;</code>
-       * @return The materialId.
+       * <code>uint32 entity_id = 5;</code>
+       * @return The entityId.
        */
       @java.lang.Override
-      public int getMaterialId() {
-        return materialId_;
+      public int getEntityId() {
+        return entityId_;
       }
       /**
-       * <code>uint32 material_id = 5;</code>
-       * @param value The materialId to set.
+       * <code>uint32 entity_id = 5;</code>
+       * @param value The entityId to set.
        * @return This builder for chaining.
        */
-      public Builder setMaterialId(int value) {
+      public Builder setEntityId(int value) {
         
-        materialId_ = value;
+        entityId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 material_id = 5;</code>
+       * <code>uint32 entity_id = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMaterialId() {
+      public Builder clearEntityId() {
         
-        materialId_ = 0;
+        entityId_ = 0;
         onChanged();
         return this;
       }
@@ -626,14 +626,14 @@ public final class WidgetCaptureAnimalRspOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
       /**
-       * <code>.Vector pos = 15;</code>
+       * <code>.Vector pos = 12;</code>
        * @return Whether the pos field is set.
        */
       public boolean hasPos() {
         return posBuilder_ != null || pos_ != null;
       }
       /**
-       * <code>.Vector pos = 15;</code>
+       * <code>.Vector pos = 12;</code>
        * @return The pos.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
@@ -644,7 +644,7 @@ public final class WidgetCaptureAnimalRspOuterClass {
         }
       }
       /**
-       * <code>.Vector pos = 15;</code>
+       * <code>.Vector pos = 12;</code>
        */
       public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -660,7 +660,7 @@ public final class WidgetCaptureAnimalRspOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 15;</code>
+       * <code>.Vector pos = 12;</code>
        */
       public Builder setPos(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -674,7 +674,7 @@ public final class WidgetCaptureAnimalRspOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 15;</code>
+       * <code>.Vector pos = 12;</code>
        */
       public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -692,7 +692,7 @@ public final class WidgetCaptureAnimalRspOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 15;</code>
+       * <code>.Vector pos = 12;</code>
        */
       public Builder clearPos() {
         if (posBuilder_ == null) {
@@ -706,7 +706,7 @@ public final class WidgetCaptureAnimalRspOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 15;</code>
+       * <code>.Vector pos = 12;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
         
@@ -714,7 +714,7 @@ public final class WidgetCaptureAnimalRspOuterClass {
         return getPosFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector pos = 15;</code>
+       * <code>.Vector pos = 12;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
         if (posBuilder_ != null) {
@@ -725,7 +725,7 @@ public final class WidgetCaptureAnimalRspOuterClass {
         }
       }
       /**
-       * <code>.Vector pos = 15;</code>
+       * <code>.Vector pos = 12;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -741,9 +741,40 @@ public final class WidgetCaptureAnimalRspOuterClass {
         return posBuilder_;
       }
 
+      private int materialId_ ;
+      /**
+       * <code>uint32 material_id = 1;</code>
+       * @return The materialId.
+       */
+      @java.lang.Override
+      public int getMaterialId() {
+        return materialId_;
+      }
+      /**
+       * <code>uint32 material_id = 1;</code>
+       * @param value The materialId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMaterialId(int value) {
+        
+        materialId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 material_id = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMaterialId() {
+        
+        materialId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 2;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -751,7 +782,7 @@ public final class WidgetCaptureAnimalRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 2;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -762,43 +793,12 @@ public final class WidgetCaptureAnimalRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
         
         retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int entityId_ ;
-      /**
-       * <code>uint32 entity_id = 14;</code>
-       * @return The entityId.
-       */
-      @java.lang.Override
-      public int getEntityId() {
-        return entityId_;
-      }
-      /**
-       * <code>uint32 entity_id = 14;</code>
-       * @param value The entityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEntityId(int value) {
-        
-        entityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 entity_id = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEntityId() {
-        
-        entityId_ = 0;
         onChanged();
         return this;
       }
@@ -870,9 +870,9 @@ public final class WidgetCaptureAnimalRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034WidgetCaptureAnimalRsp.proto\032\014Vector.p" +
-      "roto\"g\n\026WidgetCaptureAnimalRsp\022\023\n\013materi" +
-      "al_id\030\005 \001(\r\022\024\n\003pos\030\017 \001(\0132\007.Vector\022\017\n\007ret" +
-      "code\030\004 \001(\005\022\021\n\tentity_id\030\016 \001(\rB\033\n\031emu.gra" +
+      "roto\"g\n\026WidgetCaptureAnimalRsp\022\021\n\tentity" +
+      "_id\030\005 \001(\r\022\024\n\003pos\030\014 \001(\0132\007.Vector\022\023\n\013mater" +
+      "ial_id\030\001 \001(\r\022\017\n\007retcode\030\002 \001(\005B\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -885,7 +885,7 @@ public final class WidgetCaptureAnimalRspOuterClass {
     internal_static_WidgetCaptureAnimalRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_WidgetCaptureAnimalRsp_descriptor,
-        new java.lang.String[] { "MaterialId", "Pos", "Retcode", "EntityId", });
+        new java.lang.String[] { "EntityId", "Pos", "MaterialId", "Retcode", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

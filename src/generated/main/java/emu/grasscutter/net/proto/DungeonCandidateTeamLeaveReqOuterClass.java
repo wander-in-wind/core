@@ -20,8 +20,8 @@ public final class DungeonCandidateTeamLeaveReqOuterClass {
   }
   /**
    * <pre>
-   * Name: AMBAOJLENKE
-   * CmdId: 925
+   * CmdId: 946
+   * Obf: EPAMAIKAGEP
    * </pre>
    *
    * Protobuf type {@code DungeonCandidateTeamLeaveReq}
@@ -246,8 +246,8 @@ public final class DungeonCandidateTeamLeaveReqOuterClass {
     }
     /**
      * <pre>
-     * Name: AMBAOJLENKE
-     * CmdId: 925
+     * CmdId: 946
+     * Obf: EPAMAIKAGEP
      * </pre>
      *
      * Protobuf type {@code DungeonCandidateTeamLeaveReq}

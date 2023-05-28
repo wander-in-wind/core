@@ -19,10 +19,16 @@ public final class SumoEnterDungeonNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 stage_id = 8;</code>
+     * <code>uint32 stage_id = 7;</code>
      * @return The stageId.
      */
     int getStageId();
+
+    /**
+     * <code>uint32 BDAFDFKPJAE = 8;</code>
+     * @return The bDAFDFKPJAE.
+     */
+    int getBDAFDFKPJAE();
 
     /**
      * <code>repeated .SumoDungeonTeam dungeon_team_list = 13;</code>
@@ -49,33 +55,27 @@ public final class SumoEnterDungeonNotifyOuterClass {
         int index);
 
     /**
-     * <code>uint32 activity_id = 1;</code>
+     * <code>uint32 DHAAEJHLHNB = 1;</code>
+     * @return The dHAAEJHLHNB.
+     */
+    int getDHAAEJHLHNB();
+
+    /**
+     * <code>uint32 activity_id = 9;</code>
      * @return The activityId.
      */
     int getActivityId();
 
     /**
-     * <code>uint32 JOLHHGEAOGA = 6;</code>
-     * @return The jOLHHGEAOGA.
+     * <code>uint32 PHBHNGMAEKN = 4;</code>
+     * @return The pHBHNGMAEKN.
      */
-    int getJOLHHGEAOGA();
-
-    /**
-     * <code>uint32 FDGOAAPAMDK = 7;</code>
-     * @return The fDGOAAPAMDK.
-     */
-    int getFDGOAAPAMDK();
-
-    /**
-     * <code>uint32 PDDNDHHKBIH = 14;</code>
-     * @return The pDDNDHHKBIH.
-     */
-    int getPDDNDHHKBIH();
+    int getPHBHNGMAEKN();
   }
   /**
    * <pre>
-   * Name: OCPMCOMKMOP
-   * CmdId: 8823
+   * CmdId: 8412
+   * Obf: NIBHIEKCOGK
    * </pre>
    *
    * Protobuf type {@code SumoEnterDungeonNotify}
@@ -126,22 +126,27 @@ public final class SumoEnterDungeonNotifyOuterClass {
               break;
             case 8: {
 
-              activityId_ = input.readUInt32();
+              dHAAEJHLHNB_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 32: {
 
-              jOLHHGEAOGA_ = input.readUInt32();
+              pHBHNGMAEKN_ = input.readUInt32();
               break;
             }
             case 56: {
 
-              fDGOAAPAMDK_ = input.readUInt32();
+              stageId_ = input.readUInt32();
               break;
             }
             case 64: {
 
-              stageId_ = input.readUInt32();
+              bDAFDFKPJAE_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
+              activityId_ = input.readUInt32();
               break;
             }
             case 106: {
@@ -151,11 +156,6 @@ public final class SumoEnterDungeonNotifyOuterClass {
               }
               dungeonTeamList_.add(
                   input.readMessage(emu.grasscutter.net.proto.SumoDungeonTeamOuterClass.SumoDungeonTeam.parser(), extensionRegistry));
-              break;
-            }
-            case 112: {
-
-              pDDNDHHKBIH_ = input.readUInt32();
               break;
             }
             default: {
@@ -193,15 +193,26 @@ public final class SumoEnterDungeonNotifyOuterClass {
               emu.grasscutter.net.proto.SumoEnterDungeonNotifyOuterClass.SumoEnterDungeonNotify.class, emu.grasscutter.net.proto.SumoEnterDungeonNotifyOuterClass.SumoEnterDungeonNotify.Builder.class);
     }
 
-    public static final int STAGE_ID_FIELD_NUMBER = 8;
+    public static final int STAGE_ID_FIELD_NUMBER = 7;
     private int stageId_;
     /**
-     * <code>uint32 stage_id = 8;</code>
+     * <code>uint32 stage_id = 7;</code>
      * @return The stageId.
      */
     @java.lang.Override
     public int getStageId() {
       return stageId_;
+    }
+
+    public static final int BDAFDFKPJAE_FIELD_NUMBER = 8;
+    private int bDAFDFKPJAE_;
+    /**
+     * <code>uint32 BDAFDFKPJAE = 8;</code>
+     * @return The bDAFDFKPJAE.
+     */
+    @java.lang.Override
+    public int getBDAFDFKPJAE() {
+      return bDAFDFKPJAE_;
     }
 
     public static final int DUNGEON_TEAM_LIST_FIELD_NUMBER = 13;
@@ -244,10 +255,21 @@ public final class SumoEnterDungeonNotifyOuterClass {
       return dungeonTeamList_.get(index);
     }
 
-    public static final int ACTIVITY_ID_FIELD_NUMBER = 1;
+    public static final int DHAAEJHLHNB_FIELD_NUMBER = 1;
+    private int dHAAEJHLHNB_;
+    /**
+     * <code>uint32 DHAAEJHLHNB = 1;</code>
+     * @return The dHAAEJHLHNB.
+     */
+    @java.lang.Override
+    public int getDHAAEJHLHNB() {
+      return dHAAEJHLHNB_;
+    }
+
+    public static final int ACTIVITY_ID_FIELD_NUMBER = 9;
     private int activityId_;
     /**
-     * <code>uint32 activity_id = 1;</code>
+     * <code>uint32 activity_id = 9;</code>
      * @return The activityId.
      */
     @java.lang.Override
@@ -255,37 +277,15 @@ public final class SumoEnterDungeonNotifyOuterClass {
       return activityId_;
     }
 
-    public static final int JOLHHGEAOGA_FIELD_NUMBER = 6;
-    private int jOLHHGEAOGA_;
+    public static final int PHBHNGMAEKN_FIELD_NUMBER = 4;
+    private int pHBHNGMAEKN_;
     /**
-     * <code>uint32 JOLHHGEAOGA = 6;</code>
-     * @return The jOLHHGEAOGA.
+     * <code>uint32 PHBHNGMAEKN = 4;</code>
+     * @return The pHBHNGMAEKN.
      */
     @java.lang.Override
-    public int getJOLHHGEAOGA() {
-      return jOLHHGEAOGA_;
-    }
-
-    public static final int FDGOAAPAMDK_FIELD_NUMBER = 7;
-    private int fDGOAAPAMDK_;
-    /**
-     * <code>uint32 FDGOAAPAMDK = 7;</code>
-     * @return The fDGOAAPAMDK.
-     */
-    @java.lang.Override
-    public int getFDGOAAPAMDK() {
-      return fDGOAAPAMDK_;
-    }
-
-    public static final int PDDNDHHKBIH_FIELD_NUMBER = 14;
-    private int pDDNDHHKBIH_;
-    /**
-     * <code>uint32 PDDNDHHKBIH = 14;</code>
-     * @return The pDDNDHHKBIH.
-     */
-    @java.lang.Override
-    public int getPDDNDHHKBIH() {
-      return pDDNDHHKBIH_;
+    public int getPHBHNGMAEKN() {
+      return pHBHNGMAEKN_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -302,23 +302,23 @@ public final class SumoEnterDungeonNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (activityId_ != 0) {
-        output.writeUInt32(1, activityId_);
+      if (dHAAEJHLHNB_ != 0) {
+        output.writeUInt32(1, dHAAEJHLHNB_);
       }
-      if (jOLHHGEAOGA_ != 0) {
-        output.writeUInt32(6, jOLHHGEAOGA_);
-      }
-      if (fDGOAAPAMDK_ != 0) {
-        output.writeUInt32(7, fDGOAAPAMDK_);
+      if (pHBHNGMAEKN_ != 0) {
+        output.writeUInt32(4, pHBHNGMAEKN_);
       }
       if (stageId_ != 0) {
-        output.writeUInt32(8, stageId_);
+        output.writeUInt32(7, stageId_);
+      }
+      if (bDAFDFKPJAE_ != 0) {
+        output.writeUInt32(8, bDAFDFKPJAE_);
+      }
+      if (activityId_ != 0) {
+        output.writeUInt32(9, activityId_);
       }
       for (int i = 0; i < dungeonTeamList_.size(); i++) {
         output.writeMessage(13, dungeonTeamList_.get(i));
-      }
-      if (pDDNDHHKBIH_ != 0) {
-        output.writeUInt32(14, pDDNDHHKBIH_);
       }
       unknownFields.writeTo(output);
     }
@@ -329,29 +329,29 @@ public final class SumoEnterDungeonNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (activityId_ != 0) {
+      if (dHAAEJHLHNB_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, activityId_);
+          .computeUInt32Size(1, dHAAEJHLHNB_);
       }
-      if (jOLHHGEAOGA_ != 0) {
+      if (pHBHNGMAEKN_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, jOLHHGEAOGA_);
-      }
-      if (fDGOAAPAMDK_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, fDGOAAPAMDK_);
+          .computeUInt32Size(4, pHBHNGMAEKN_);
       }
       if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, stageId_);
+          .computeUInt32Size(7, stageId_);
+      }
+      if (bDAFDFKPJAE_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, bDAFDFKPJAE_);
+      }
+      if (activityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, activityId_);
       }
       for (int i = 0; i < dungeonTeamList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(13, dungeonTeamList_.get(i));
-      }
-      if (pDDNDHHKBIH_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, pDDNDHHKBIH_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -370,16 +370,16 @@ public final class SumoEnterDungeonNotifyOuterClass {
 
       if (getStageId()
           != other.getStageId()) return false;
+      if (getBDAFDFKPJAE()
+          != other.getBDAFDFKPJAE()) return false;
       if (!getDungeonTeamListList()
           .equals(other.getDungeonTeamListList())) return false;
+      if (getDHAAEJHLHNB()
+          != other.getDHAAEJHLHNB()) return false;
       if (getActivityId()
           != other.getActivityId()) return false;
-      if (getJOLHHGEAOGA()
-          != other.getJOLHHGEAOGA()) return false;
-      if (getFDGOAAPAMDK()
-          != other.getFDGOAAPAMDK()) return false;
-      if (getPDDNDHHKBIH()
-          != other.getPDDNDHHKBIH()) return false;
+      if (getPHBHNGMAEKN()
+          != other.getPHBHNGMAEKN()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -393,18 +393,18 @@ public final class SumoEnterDungeonNotifyOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getStageId();
+      hash = (37 * hash) + BDAFDFKPJAE_FIELD_NUMBER;
+      hash = (53 * hash) + getBDAFDFKPJAE();
       if (getDungeonTeamListCount() > 0) {
         hash = (37 * hash) + DUNGEON_TEAM_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getDungeonTeamListList().hashCode();
       }
+      hash = (37 * hash) + DHAAEJHLHNB_FIELD_NUMBER;
+      hash = (53 * hash) + getDHAAEJHLHNB();
       hash = (37 * hash) + ACTIVITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getActivityId();
-      hash = (37 * hash) + JOLHHGEAOGA_FIELD_NUMBER;
-      hash = (53 * hash) + getJOLHHGEAOGA();
-      hash = (37 * hash) + FDGOAAPAMDK_FIELD_NUMBER;
-      hash = (53 * hash) + getFDGOAAPAMDK();
-      hash = (37 * hash) + PDDNDHHKBIH_FIELD_NUMBER;
-      hash = (53 * hash) + getPDDNDHHKBIH();
+      hash = (37 * hash) + PHBHNGMAEKN_FIELD_NUMBER;
+      hash = (53 * hash) + getPHBHNGMAEKN();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -502,8 +502,8 @@ public final class SumoEnterDungeonNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: OCPMCOMKMOP
-     * CmdId: 8823
+     * CmdId: 8412
+     * Obf: NIBHIEKCOGK
      * </pre>
      *
      * Protobuf type {@code SumoEnterDungeonNotify}
@@ -546,19 +546,19 @@ public final class SumoEnterDungeonNotifyOuterClass {
         super.clear();
         stageId_ = 0;
 
+        bDAFDFKPJAE_ = 0;
+
         if (dungeonTeamListBuilder_ == null) {
           dungeonTeamList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           dungeonTeamListBuilder_.clear();
         }
+        dHAAEJHLHNB_ = 0;
+
         activityId_ = 0;
 
-        jOLHHGEAOGA_ = 0;
-
-        fDGOAAPAMDK_ = 0;
-
-        pDDNDHHKBIH_ = 0;
+        pHBHNGMAEKN_ = 0;
 
         return this;
       }
@@ -588,6 +588,7 @@ public final class SumoEnterDungeonNotifyOuterClass {
         emu.grasscutter.net.proto.SumoEnterDungeonNotifyOuterClass.SumoEnterDungeonNotify result = new emu.grasscutter.net.proto.SumoEnterDungeonNotifyOuterClass.SumoEnterDungeonNotify(this);
         int from_bitField0_ = bitField0_;
         result.stageId_ = stageId_;
+        result.bDAFDFKPJAE_ = bDAFDFKPJAE_;
         if (dungeonTeamListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             dungeonTeamList_ = java.util.Collections.unmodifiableList(dungeonTeamList_);
@@ -597,10 +598,9 @@ public final class SumoEnterDungeonNotifyOuterClass {
         } else {
           result.dungeonTeamList_ = dungeonTeamListBuilder_.build();
         }
+        result.dHAAEJHLHNB_ = dHAAEJHLHNB_;
         result.activityId_ = activityId_;
-        result.jOLHHGEAOGA_ = jOLHHGEAOGA_;
-        result.fDGOAAPAMDK_ = fDGOAAPAMDK_;
-        result.pDDNDHHKBIH_ = pDDNDHHKBIH_;
+        result.pHBHNGMAEKN_ = pHBHNGMAEKN_;
         onBuilt();
         return result;
       }
@@ -652,6 +652,9 @@ public final class SumoEnterDungeonNotifyOuterClass {
         if (other.getStageId() != 0) {
           setStageId(other.getStageId());
         }
+        if (other.getBDAFDFKPJAE() != 0) {
+          setBDAFDFKPJAE(other.getBDAFDFKPJAE());
+        }
         if (dungeonTeamListBuilder_ == null) {
           if (!other.dungeonTeamList_.isEmpty()) {
             if (dungeonTeamList_.isEmpty()) {
@@ -678,17 +681,14 @@ public final class SumoEnterDungeonNotifyOuterClass {
             }
           }
         }
+        if (other.getDHAAEJHLHNB() != 0) {
+          setDHAAEJHLHNB(other.getDHAAEJHLHNB());
+        }
         if (other.getActivityId() != 0) {
           setActivityId(other.getActivityId());
         }
-        if (other.getJOLHHGEAOGA() != 0) {
-          setJOLHHGEAOGA(other.getJOLHHGEAOGA());
-        }
-        if (other.getFDGOAAPAMDK() != 0) {
-          setFDGOAAPAMDK(other.getFDGOAAPAMDK());
-        }
-        if (other.getPDDNDHHKBIH() != 0) {
-          setPDDNDHHKBIH(other.getPDDNDHHKBIH());
+        if (other.getPHBHNGMAEKN() != 0) {
+          setPHBHNGMAEKN(other.getPHBHNGMAEKN());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -722,7 +722,7 @@ public final class SumoEnterDungeonNotifyOuterClass {
 
       private int stageId_ ;
       /**
-       * <code>uint32 stage_id = 8;</code>
+       * <code>uint32 stage_id = 7;</code>
        * @return The stageId.
        */
       @java.lang.Override
@@ -730,7 +730,7 @@ public final class SumoEnterDungeonNotifyOuterClass {
         return stageId_;
       }
       /**
-       * <code>uint32 stage_id = 8;</code>
+       * <code>uint32 stage_id = 7;</code>
        * @param value The stageId to set.
        * @return This builder for chaining.
        */
@@ -741,12 +741,43 @@ public final class SumoEnterDungeonNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stage_id = 8;</code>
+       * <code>uint32 stage_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearStageId() {
         
         stageId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int bDAFDFKPJAE_ ;
+      /**
+       * <code>uint32 BDAFDFKPJAE = 8;</code>
+       * @return The bDAFDFKPJAE.
+       */
+      @java.lang.Override
+      public int getBDAFDFKPJAE() {
+        return bDAFDFKPJAE_;
+      }
+      /**
+       * <code>uint32 BDAFDFKPJAE = 8;</code>
+       * @param value The bDAFDFKPJAE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBDAFDFKPJAE(int value) {
+        
+        bDAFDFKPJAE_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 BDAFDFKPJAE = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBDAFDFKPJAE() {
+        
+        bDAFDFKPJAE_ = 0;
         onChanged();
         return this;
       }
@@ -991,9 +1022,40 @@ public final class SumoEnterDungeonNotifyOuterClass {
         return dungeonTeamListBuilder_;
       }
 
+      private int dHAAEJHLHNB_ ;
+      /**
+       * <code>uint32 DHAAEJHLHNB = 1;</code>
+       * @return The dHAAEJHLHNB.
+       */
+      @java.lang.Override
+      public int getDHAAEJHLHNB() {
+        return dHAAEJHLHNB_;
+      }
+      /**
+       * <code>uint32 DHAAEJHLHNB = 1;</code>
+       * @param value The dHAAEJHLHNB to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDHAAEJHLHNB(int value) {
+        
+        dHAAEJHLHNB_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 DHAAEJHLHNB = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDHAAEJHLHNB() {
+        
+        dHAAEJHLHNB_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int activityId_ ;
       /**
-       * <code>uint32 activity_id = 1;</code>
+       * <code>uint32 activity_id = 9;</code>
        * @return The activityId.
        */
       @java.lang.Override
@@ -1001,7 +1063,7 @@ public final class SumoEnterDungeonNotifyOuterClass {
         return activityId_;
       }
       /**
-       * <code>uint32 activity_id = 1;</code>
+       * <code>uint32 activity_id = 9;</code>
        * @param value The activityId to set.
        * @return This builder for chaining.
        */
@@ -1012,7 +1074,7 @@ public final class SumoEnterDungeonNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 activity_id = 1;</code>
+       * <code>uint32 activity_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearActivityId() {
@@ -1022,95 +1084,33 @@ public final class SumoEnterDungeonNotifyOuterClass {
         return this;
       }
 
-      private int jOLHHGEAOGA_ ;
+      private int pHBHNGMAEKN_ ;
       /**
-       * <code>uint32 JOLHHGEAOGA = 6;</code>
-       * @return The jOLHHGEAOGA.
+       * <code>uint32 PHBHNGMAEKN = 4;</code>
+       * @return The pHBHNGMAEKN.
        */
       @java.lang.Override
-      public int getJOLHHGEAOGA() {
-        return jOLHHGEAOGA_;
+      public int getPHBHNGMAEKN() {
+        return pHBHNGMAEKN_;
       }
       /**
-       * <code>uint32 JOLHHGEAOGA = 6;</code>
-       * @param value The jOLHHGEAOGA to set.
+       * <code>uint32 PHBHNGMAEKN = 4;</code>
+       * @param value The pHBHNGMAEKN to set.
        * @return This builder for chaining.
        */
-      public Builder setJOLHHGEAOGA(int value) {
+      public Builder setPHBHNGMAEKN(int value) {
         
-        jOLHHGEAOGA_ = value;
+        pHBHNGMAEKN_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 JOLHHGEAOGA = 6;</code>
+       * <code>uint32 PHBHNGMAEKN = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearJOLHHGEAOGA() {
+      public Builder clearPHBHNGMAEKN() {
         
-        jOLHHGEAOGA_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int fDGOAAPAMDK_ ;
-      /**
-       * <code>uint32 FDGOAAPAMDK = 7;</code>
-       * @return The fDGOAAPAMDK.
-       */
-      @java.lang.Override
-      public int getFDGOAAPAMDK() {
-        return fDGOAAPAMDK_;
-      }
-      /**
-       * <code>uint32 FDGOAAPAMDK = 7;</code>
-       * @param value The fDGOAAPAMDK to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFDGOAAPAMDK(int value) {
-        
-        fDGOAAPAMDK_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 FDGOAAPAMDK = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFDGOAAPAMDK() {
-        
-        fDGOAAPAMDK_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int pDDNDHHKBIH_ ;
-      /**
-       * <code>uint32 PDDNDHHKBIH = 14;</code>
-       * @return The pDDNDHHKBIH.
-       */
-      @java.lang.Override
-      public int getPDDNDHHKBIH() {
-        return pDDNDHHKBIH_;
-      }
-      /**
-       * <code>uint32 PDDNDHHKBIH = 14;</code>
-       * @param value The pDDNDHHKBIH to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPDDNDHHKBIH(int value) {
-        
-        pDDNDHHKBIH_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 PDDNDHHKBIH = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPDDNDHHKBIH() {
-        
-        pDDNDHHKBIH_ = 0;
+        pHBHNGMAEKN_ = 0;
         onChanged();
         return this;
       }
@@ -1183,10 +1183,10 @@ public final class SumoEnterDungeonNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\034SumoEnterDungeonNotify.proto\032\025SumoDung" +
       "eonTeam.proto\"\253\001\n\026SumoEnterDungeonNotify" +
-      "\022\020\n\010stage_id\030\010 \001(\r\022+\n\021dungeon_team_list\030" +
-      "\r \003(\0132\020.SumoDungeonTeam\022\023\n\013activity_id\030\001" +
-      " \001(\r\022\023\n\013JOLHHGEAOGA\030\006 \001(\r\022\023\n\013FDGOAAPAMDK" +
-      "\030\007 \001(\r\022\023\n\013PDDNDHHKBIH\030\016 \001(\rB\033\n\031emu.grass" +
+      "\022\020\n\010stage_id\030\007 \001(\r\022\023\n\013BDAFDFKPJAE\030\010 \001(\r\022" +
+      "+\n\021dungeon_team_list\030\r \003(\0132\020.SumoDungeon" +
+      "Team\022\023\n\013DHAAEJHLHNB\030\001 \001(\r\022\023\n\013activity_id" +
+      "\030\t \001(\r\022\023\n\013PHBHNGMAEKN\030\004 \001(\rB\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1199,7 +1199,7 @@ public final class SumoEnterDungeonNotifyOuterClass {
     internal_static_SumoEnterDungeonNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SumoEnterDungeonNotify_descriptor,
-        new java.lang.String[] { "StageId", "DungeonTeamList", "ActivityId", "JOLHHGEAOGA", "FDGOAAPAMDK", "PDDNDHHKBIH", });
+        new java.lang.String[] { "StageId", "BDAFDFKPJAE", "DungeonTeamList", "DHAAEJHLHNB", "ActivityId", "PHBHNGMAEKN", });
     emu.grasscutter.net.proto.SumoDungeonTeamOuterClass.getDescriptor();
   }
 

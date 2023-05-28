@@ -20,8 +20,8 @@ public final class HomeResourceTakeFetterExpReqOuterClass {
   }
   /**
    * <pre>
-   * Name: EIPCBMAJHAJ
-   * CmdId: 4534
+   * CmdId: 4766
+   * Obf: JAJFLCAJDNA
    * </pre>
    *
    * Protobuf type {@code HomeResourceTakeFetterExpReq}
@@ -246,8 +246,8 @@ public final class HomeResourceTakeFetterExpReqOuterClass {
     }
     /**
      * <pre>
-     * Name: EIPCBMAJHAJ
-     * CmdId: 4534
+     * CmdId: 4766
+     * Obf: JAJFLCAJDNA
      * </pre>
      *
      * Protobuf type {@code HomeResourceTakeFetterExpReq}

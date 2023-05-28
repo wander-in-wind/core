@@ -19,27 +19,27 @@ public final class WeaponUpgradeReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint64 food_weapon_guid_list = 14;</code>
-     * @return A list containing the foodWeaponGuidList.
-     */
-    java.util.List<java.lang.Long> getFoodWeaponGuidListList();
-    /**
-     * <code>repeated uint64 food_weapon_guid_list = 14;</code>
-     * @return The count of foodWeaponGuidList.
-     */
-    int getFoodWeaponGuidListCount();
-    /**
-     * <code>repeated uint64 food_weapon_guid_list = 14;</code>
-     * @param index The index of the element to return.
-     * @return The foodWeaponGuidList at the given index.
-     */
-    long getFoodWeaponGuidList(int index);
-
-    /**
      * <code>uint64 target_weapon_guid = 10;</code>
      * @return The targetWeaponGuid.
      */
     long getTargetWeaponGuid();
+
+    /**
+     * <code>repeated uint64 food_weapon_guid_list = 5;</code>
+     * @return A list containing the foodWeaponGuidList.
+     */
+    java.util.List<java.lang.Long> getFoodWeaponGuidListList();
+    /**
+     * <code>repeated uint64 food_weapon_guid_list = 5;</code>
+     * @return The count of foodWeaponGuidList.
+     */
+    int getFoodWeaponGuidListCount();
+    /**
+     * <code>repeated uint64 food_weapon_guid_list = 5;</code>
+     * @param index The index of the element to return.
+     * @return The foodWeaponGuidList at the given index.
+     */
+    long getFoodWeaponGuidList(int index);
 
     /**
      * <code>repeated .ItemParam item_param_list = 12;</code>
@@ -67,8 +67,8 @@ public final class WeaponUpgradeReqOuterClass {
   }
   /**
    * <pre>
-   * Name: EMACIPMAPCM
-   * CmdId: 656
+   * CmdId: 688
+   * Obf: PCCDPKOLOBP
    * </pre>
    *
    * Protobuf type {@code WeaponUpgradeReq}
@@ -118,6 +118,27 @@ public final class WeaponUpgradeReqOuterClass {
             case 0:
               done = true;
               break;
+            case 40: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                foodWeaponGuidList_ = newLongList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              foodWeaponGuidList_.addLong(input.readUInt64());
+              break;
+            }
+            case 42: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+                foodWeaponGuidList_ = newLongList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                foodWeaponGuidList_.addLong(input.readUInt64());
+              }
+              input.popLimit(limit);
+              break;
+            }
             case 80: {
 
               targetWeaponGuid_ = input.readUInt64();
@@ -130,27 +151,6 @@ public final class WeaponUpgradeReqOuterClass {
               }
               itemParamList_.add(
                   input.readMessage(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.parser(), extensionRegistry));
-              break;
-            }
-            case 112: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                foodWeaponGuidList_ = newLongList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              foodWeaponGuidList_.addLong(input.readUInt64());
-              break;
-            }
-            case 114: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                foodWeaponGuidList_ = newLongList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                foodWeaponGuidList_.addLong(input.readUInt64());
-              }
-              input.popLimit(limit);
               break;
             }
             default: {
@@ -168,11 +168,11 @@ public final class WeaponUpgradeReqOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          itemParamList_ = java.util.Collections.unmodifiableList(itemParamList_);
-        }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
           foodWeaponGuidList_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          itemParamList_ = java.util.Collections.unmodifiableList(itemParamList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -191,34 +191,6 @@ public final class WeaponUpgradeReqOuterClass {
               emu.grasscutter.net.proto.WeaponUpgradeReqOuterClass.WeaponUpgradeReq.class, emu.grasscutter.net.proto.WeaponUpgradeReqOuterClass.WeaponUpgradeReq.Builder.class);
     }
 
-    public static final int FOOD_WEAPON_GUID_LIST_FIELD_NUMBER = 14;
-    private com.google.protobuf.Internal.LongList foodWeaponGuidList_;
-    /**
-     * <code>repeated uint64 food_weapon_guid_list = 14;</code>
-     * @return A list containing the foodWeaponGuidList.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Long>
-        getFoodWeaponGuidListList() {
-      return foodWeaponGuidList_;
-    }
-    /**
-     * <code>repeated uint64 food_weapon_guid_list = 14;</code>
-     * @return The count of foodWeaponGuidList.
-     */
-    public int getFoodWeaponGuidListCount() {
-      return foodWeaponGuidList_.size();
-    }
-    /**
-     * <code>repeated uint64 food_weapon_guid_list = 14;</code>
-     * @param index The index of the element to return.
-     * @return The foodWeaponGuidList at the given index.
-     */
-    public long getFoodWeaponGuidList(int index) {
-      return foodWeaponGuidList_.getLong(index);
-    }
-    private int foodWeaponGuidListMemoizedSerializedSize = -1;
-
     public static final int TARGET_WEAPON_GUID_FIELD_NUMBER = 10;
     private long targetWeaponGuid_;
     /**
@@ -229,6 +201,34 @@ public final class WeaponUpgradeReqOuterClass {
     public long getTargetWeaponGuid() {
       return targetWeaponGuid_;
     }
+
+    public static final int FOOD_WEAPON_GUID_LIST_FIELD_NUMBER = 5;
+    private com.google.protobuf.Internal.LongList foodWeaponGuidList_;
+    /**
+     * <code>repeated uint64 food_weapon_guid_list = 5;</code>
+     * @return A list containing the foodWeaponGuidList.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Long>
+        getFoodWeaponGuidListList() {
+      return foodWeaponGuidList_;
+    }
+    /**
+     * <code>repeated uint64 food_weapon_guid_list = 5;</code>
+     * @return The count of foodWeaponGuidList.
+     */
+    public int getFoodWeaponGuidListCount() {
+      return foodWeaponGuidList_.size();
+    }
+    /**
+     * <code>repeated uint64 food_weapon_guid_list = 5;</code>
+     * @param index The index of the element to return.
+     * @return The foodWeaponGuidList at the given index.
+     */
+    public long getFoodWeaponGuidList(int index) {
+      return foodWeaponGuidList_.getLong(index);
+    }
+    private int foodWeaponGuidListMemoizedSerializedSize = -1;
 
     public static final int ITEM_PARAM_LIST_FIELD_NUMBER = 12;
     private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> itemParamList_;
@@ -285,18 +285,18 @@ public final class WeaponUpgradeReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (getFoodWeaponGuidListList().size() > 0) {
+        output.writeUInt32NoTag(42);
+        output.writeUInt32NoTag(foodWeaponGuidListMemoizedSerializedSize);
+      }
+      for (int i = 0; i < foodWeaponGuidList_.size(); i++) {
+        output.writeUInt64NoTag(foodWeaponGuidList_.getLong(i));
+      }
       if (targetWeaponGuid_ != 0L) {
         output.writeUInt64(10, targetWeaponGuid_);
       }
       for (int i = 0; i < itemParamList_.size(); i++) {
         output.writeMessage(12, itemParamList_.get(i));
-      }
-      if (getFoodWeaponGuidListList().size() > 0) {
-        output.writeUInt32NoTag(114);
-        output.writeUInt32NoTag(foodWeaponGuidListMemoizedSerializedSize);
-      }
-      for (int i = 0; i < foodWeaponGuidList_.size(); i++) {
-        output.writeUInt64NoTag(foodWeaponGuidList_.getLong(i));
       }
       unknownFields.writeTo(output);
     }
@@ -307,14 +307,6 @@ public final class WeaponUpgradeReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (targetWeaponGuid_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(10, targetWeaponGuid_);
-      }
-      for (int i = 0; i < itemParamList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, itemParamList_.get(i));
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < foodWeaponGuidList_.size(); i++) {
@@ -328,6 +320,14 @@ public final class WeaponUpgradeReqOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         foodWeaponGuidListMemoizedSerializedSize = dataSize;
+      }
+      if (targetWeaponGuid_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(10, targetWeaponGuid_);
+      }
+      for (int i = 0; i < itemParamList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(12, itemParamList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -344,10 +344,10 @@ public final class WeaponUpgradeReqOuterClass {
       }
       emu.grasscutter.net.proto.WeaponUpgradeReqOuterClass.WeaponUpgradeReq other = (emu.grasscutter.net.proto.WeaponUpgradeReqOuterClass.WeaponUpgradeReq) obj;
 
-      if (!getFoodWeaponGuidListList()
-          .equals(other.getFoodWeaponGuidListList())) return false;
       if (getTargetWeaponGuid()
           != other.getTargetWeaponGuid()) return false;
+      if (!getFoodWeaponGuidListList()
+          .equals(other.getFoodWeaponGuidListList())) return false;
       if (!getItemParamListList()
           .equals(other.getItemParamListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -361,13 +361,13 @@ public final class WeaponUpgradeReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + TARGET_WEAPON_GUID_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getTargetWeaponGuid());
       if (getFoodWeaponGuidListCount() > 0) {
         hash = (37 * hash) + FOOD_WEAPON_GUID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getFoodWeaponGuidListList().hashCode();
       }
-      hash = (37 * hash) + TARGET_WEAPON_GUID_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getTargetWeaponGuid());
       if (getItemParamListCount() > 0) {
         hash = (37 * hash) + ITEM_PARAM_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getItemParamListList().hashCode();
@@ -469,8 +469,8 @@ public final class WeaponUpgradeReqOuterClass {
     }
     /**
      * <pre>
-     * Name: EMACIPMAPCM
-     * CmdId: 656
+     * CmdId: 688
+     * Obf: PCCDPKOLOBP
      * </pre>
      *
      * Protobuf type {@code WeaponUpgradeReq}
@@ -511,10 +511,10 @@ public final class WeaponUpgradeReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        foodWeaponGuidList_ = emptyLongList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         targetWeaponGuid_ = 0L;
 
+        foodWeaponGuidList_ = emptyLongList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         if (itemParamListBuilder_ == null) {
           itemParamList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000002);
@@ -548,12 +548,12 @@ public final class WeaponUpgradeReqOuterClass {
       public emu.grasscutter.net.proto.WeaponUpgradeReqOuterClass.WeaponUpgradeReq buildPartial() {
         emu.grasscutter.net.proto.WeaponUpgradeReqOuterClass.WeaponUpgradeReq result = new emu.grasscutter.net.proto.WeaponUpgradeReqOuterClass.WeaponUpgradeReq(this);
         int from_bitField0_ = bitField0_;
+        result.targetWeaponGuid_ = targetWeaponGuid_;
         if (((bitField0_ & 0x00000001) != 0)) {
           foodWeaponGuidList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.foodWeaponGuidList_ = foodWeaponGuidList_;
-        result.targetWeaponGuid_ = targetWeaponGuid_;
         if (itemParamListBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0)) {
             itemParamList_ = java.util.Collections.unmodifiableList(itemParamList_);
@@ -611,6 +611,9 @@ public final class WeaponUpgradeReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.WeaponUpgradeReqOuterClass.WeaponUpgradeReq other) {
         if (other == emu.grasscutter.net.proto.WeaponUpgradeReqOuterClass.WeaponUpgradeReq.getDefaultInstance()) return this;
+        if (other.getTargetWeaponGuid() != 0L) {
+          setTargetWeaponGuid(other.getTargetWeaponGuid());
+        }
         if (!other.foodWeaponGuidList_.isEmpty()) {
           if (foodWeaponGuidList_.isEmpty()) {
             foodWeaponGuidList_ = other.foodWeaponGuidList_;
@@ -620,9 +623,6 @@ public final class WeaponUpgradeReqOuterClass {
             foodWeaponGuidList_.addAll(other.foodWeaponGuidList_);
           }
           onChanged();
-        }
-        if (other.getTargetWeaponGuid() != 0L) {
-          setTargetWeaponGuid(other.getTargetWeaponGuid());
         }
         if (itemParamListBuilder_ == null) {
           if (!other.itemParamList_.isEmpty()) {
@@ -680,85 +680,6 @@ public final class WeaponUpgradeReqOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.LongList foodWeaponGuidList_ = emptyLongList();
-      private void ensureFoodWeaponGuidListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          foodWeaponGuidList_ = mutableCopy(foodWeaponGuidList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-      /**
-       * <code>repeated uint64 food_weapon_guid_list = 14;</code>
-       * @return A list containing the foodWeaponGuidList.
-       */
-      public java.util.List<java.lang.Long>
-          getFoodWeaponGuidListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(foodWeaponGuidList_) : foodWeaponGuidList_;
-      }
-      /**
-       * <code>repeated uint64 food_weapon_guid_list = 14;</code>
-       * @return The count of foodWeaponGuidList.
-       */
-      public int getFoodWeaponGuidListCount() {
-        return foodWeaponGuidList_.size();
-      }
-      /**
-       * <code>repeated uint64 food_weapon_guid_list = 14;</code>
-       * @param index The index of the element to return.
-       * @return The foodWeaponGuidList at the given index.
-       */
-      public long getFoodWeaponGuidList(int index) {
-        return foodWeaponGuidList_.getLong(index);
-      }
-      /**
-       * <code>repeated uint64 food_weapon_guid_list = 14;</code>
-       * @param index The index to set the value at.
-       * @param value The foodWeaponGuidList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFoodWeaponGuidList(
-          int index, long value) {
-        ensureFoodWeaponGuidListIsMutable();
-        foodWeaponGuidList_.setLong(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint64 food_weapon_guid_list = 14;</code>
-       * @param value The foodWeaponGuidList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addFoodWeaponGuidList(long value) {
-        ensureFoodWeaponGuidListIsMutable();
-        foodWeaponGuidList_.addLong(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint64 food_weapon_guid_list = 14;</code>
-       * @param values The foodWeaponGuidList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllFoodWeaponGuidList(
-          java.lang.Iterable<? extends java.lang.Long> values) {
-        ensureFoodWeaponGuidListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, foodWeaponGuidList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint64 food_weapon_guid_list = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFoodWeaponGuidList() {
-        foodWeaponGuidList_ = emptyLongList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
       private long targetWeaponGuid_ ;
       /**
        * <code>uint64 target_weapon_guid = 10;</code>
@@ -786,6 +707,85 @@ public final class WeaponUpgradeReqOuterClass {
       public Builder clearTargetWeaponGuid() {
         
         targetWeaponGuid_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.LongList foodWeaponGuidList_ = emptyLongList();
+      private void ensureFoodWeaponGuidListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          foodWeaponGuidList_ = mutableCopy(foodWeaponGuidList_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      /**
+       * <code>repeated uint64 food_weapon_guid_list = 5;</code>
+       * @return A list containing the foodWeaponGuidList.
+       */
+      public java.util.List<java.lang.Long>
+          getFoodWeaponGuidListList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(foodWeaponGuidList_) : foodWeaponGuidList_;
+      }
+      /**
+       * <code>repeated uint64 food_weapon_guid_list = 5;</code>
+       * @return The count of foodWeaponGuidList.
+       */
+      public int getFoodWeaponGuidListCount() {
+        return foodWeaponGuidList_.size();
+      }
+      /**
+       * <code>repeated uint64 food_weapon_guid_list = 5;</code>
+       * @param index The index of the element to return.
+       * @return The foodWeaponGuidList at the given index.
+       */
+      public long getFoodWeaponGuidList(int index) {
+        return foodWeaponGuidList_.getLong(index);
+      }
+      /**
+       * <code>repeated uint64 food_weapon_guid_list = 5;</code>
+       * @param index The index to set the value at.
+       * @param value The foodWeaponGuidList to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFoodWeaponGuidList(
+          int index, long value) {
+        ensureFoodWeaponGuidListIsMutable();
+        foodWeaponGuidList_.setLong(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint64 food_weapon_guid_list = 5;</code>
+       * @param value The foodWeaponGuidList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addFoodWeaponGuidList(long value) {
+        ensureFoodWeaponGuidListIsMutable();
+        foodWeaponGuidList_.addLong(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint64 food_weapon_guid_list = 5;</code>
+       * @param values The foodWeaponGuidList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllFoodWeaponGuidList(
+          java.lang.Iterable<? extends java.lang.Long> values) {
+        ensureFoodWeaponGuidListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, foodWeaponGuidList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint64 food_weapon_guid_list = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFoodWeaponGuidList() {
+        foodWeaponGuidList_ = emptyLongList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
       }
@@ -1097,8 +1097,8 @@ public final class WeaponUpgradeReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026WeaponUpgradeReq.proto\032\017ItemParam.prot" +
-      "o\"r\n\020WeaponUpgradeReq\022\035\n\025food_weapon_gui" +
-      "d_list\030\016 \003(\004\022\032\n\022target_weapon_guid\030\n \001(\004" +
+      "o\"r\n\020WeaponUpgradeReq\022\032\n\022target_weapon_g" +
+      "uid\030\n \001(\004\022\035\n\025food_weapon_guid_list\030\005 \003(\004" +
       "\022#\n\017item_param_list\030\014 \003(\0132\n.ItemParamB\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
@@ -1112,7 +1112,7 @@ public final class WeaponUpgradeReqOuterClass {
     internal_static_WeaponUpgradeReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_WeaponUpgradeReq_descriptor,
-        new java.lang.String[] { "FoodWeaponGuidList", "TargetWeaponGuid", "ItemParamList", });
+        new java.lang.String[] { "TargetWeaponGuid", "FoodWeaponGuidList", "ItemParamList", });
     emu.grasscutter.net.proto.ItemParamOuterClass.getDescriptor();
   }
 

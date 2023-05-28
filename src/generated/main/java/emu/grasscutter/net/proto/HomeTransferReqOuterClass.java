@@ -19,27 +19,27 @@ public final class HomeTransferReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 guid = 1;</code>
+     * <code>uint32 guid = 8;</code>
      * @return The guid.
      */
     int getGuid();
 
     /**
-     * <code>bool MPAJHMEOAPK = 12;</code>
-     * @return The mPAJHMEOAPK.
+     * <code>bool is_transfer_to_safe_point = 9;</code>
+     * @return The isTransferToSafePoint.
      */
-    boolean getMPAJHMEOAPK();
+    boolean getIsTransferToSafePoint();
 
     /**
-     * <code>bool NBNNPNAGOEA = 8;</code>
-     * @return The nBNNPNAGOEA.
+     * <code>bool GGBOCPDIIKL = 13;</code>
+     * @return The gGBOCPDIIKL.
      */
-    boolean getNBNNPNAGOEA();
+    boolean getGGBOCPDIIKL();
   }
   /**
    * <pre>
-   * Name: HBPDOMIGAKK
-   * CmdId: 4537
+   * CmdId: 4460
+   * Obf: FFFNGAHIEOK
    * </pre>
    *
    * Protobuf type {@code HomeTransferReq}
@@ -86,19 +86,19 @@ public final class HomeTransferReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 64: {
 
               guid_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 72: {
 
-              nBNNPNAGOEA_ = input.readBool();
+              isTransferToSafePoint_ = input.readBool();
               break;
             }
-            case 96: {
+            case 104: {
 
-              mPAJHMEOAPK_ = input.readBool();
+              gGBOCPDIIKL_ = input.readBool();
               break;
             }
             default: {
@@ -133,10 +133,10 @@ public final class HomeTransferReqOuterClass {
               emu.grasscutter.net.proto.HomeTransferReqOuterClass.HomeTransferReq.class, emu.grasscutter.net.proto.HomeTransferReqOuterClass.HomeTransferReq.Builder.class);
     }
 
-    public static final int GUID_FIELD_NUMBER = 1;
+    public static final int GUID_FIELD_NUMBER = 8;
     private int guid_;
     /**
-     * <code>uint32 guid = 1;</code>
+     * <code>uint32 guid = 8;</code>
      * @return The guid.
      */
     @java.lang.Override
@@ -144,26 +144,26 @@ public final class HomeTransferReqOuterClass {
       return guid_;
     }
 
-    public static final int MPAJHMEOAPK_FIELD_NUMBER = 12;
-    private boolean mPAJHMEOAPK_;
+    public static final int IS_TRANSFER_TO_SAFE_POINT_FIELD_NUMBER = 9;
+    private boolean isTransferToSafePoint_;
     /**
-     * <code>bool MPAJHMEOAPK = 12;</code>
-     * @return The mPAJHMEOAPK.
+     * <code>bool is_transfer_to_safe_point = 9;</code>
+     * @return The isTransferToSafePoint.
      */
     @java.lang.Override
-    public boolean getMPAJHMEOAPK() {
-      return mPAJHMEOAPK_;
+    public boolean getIsTransferToSafePoint() {
+      return isTransferToSafePoint_;
     }
 
-    public static final int NBNNPNAGOEA_FIELD_NUMBER = 8;
-    private boolean nBNNPNAGOEA_;
+    public static final int GGBOCPDIIKL_FIELD_NUMBER = 13;
+    private boolean gGBOCPDIIKL_;
     /**
-     * <code>bool NBNNPNAGOEA = 8;</code>
-     * @return The nBNNPNAGOEA.
+     * <code>bool GGBOCPDIIKL = 13;</code>
+     * @return The gGBOCPDIIKL.
      */
     @java.lang.Override
-    public boolean getNBNNPNAGOEA() {
-      return nBNNPNAGOEA_;
+    public boolean getGGBOCPDIIKL() {
+      return gGBOCPDIIKL_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -181,13 +181,13 @@ public final class HomeTransferReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (guid_ != 0) {
-        output.writeUInt32(1, guid_);
+        output.writeUInt32(8, guid_);
       }
-      if (nBNNPNAGOEA_ != false) {
-        output.writeBool(8, nBNNPNAGOEA_);
+      if (isTransferToSafePoint_ != false) {
+        output.writeBool(9, isTransferToSafePoint_);
       }
-      if (mPAJHMEOAPK_ != false) {
-        output.writeBool(12, mPAJHMEOAPK_);
+      if (gGBOCPDIIKL_ != false) {
+        output.writeBool(13, gGBOCPDIIKL_);
       }
       unknownFields.writeTo(output);
     }
@@ -200,15 +200,15 @@ public final class HomeTransferReqOuterClass {
       size = 0;
       if (guid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, guid_);
+          .computeUInt32Size(8, guid_);
       }
-      if (nBNNPNAGOEA_ != false) {
+      if (isTransferToSafePoint_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, nBNNPNAGOEA_);
+          .computeBoolSize(9, isTransferToSafePoint_);
       }
-      if (mPAJHMEOAPK_ != false) {
+      if (gGBOCPDIIKL_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, mPAJHMEOAPK_);
+          .computeBoolSize(13, gGBOCPDIIKL_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -227,10 +227,10 @@ public final class HomeTransferReqOuterClass {
 
       if (getGuid()
           != other.getGuid()) return false;
-      if (getMPAJHMEOAPK()
-          != other.getMPAJHMEOAPK()) return false;
-      if (getNBNNPNAGOEA()
-          != other.getNBNNPNAGOEA()) return false;
+      if (getIsTransferToSafePoint()
+          != other.getIsTransferToSafePoint()) return false;
+      if (getGGBOCPDIIKL()
+          != other.getGGBOCPDIIKL()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -244,12 +244,12 @@ public final class HomeTransferReqOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + GUID_FIELD_NUMBER;
       hash = (53 * hash) + getGuid();
-      hash = (37 * hash) + MPAJHMEOAPK_FIELD_NUMBER;
+      hash = (37 * hash) + IS_TRANSFER_TO_SAFE_POINT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getMPAJHMEOAPK());
-      hash = (37 * hash) + NBNNPNAGOEA_FIELD_NUMBER;
+          getIsTransferToSafePoint());
+      hash = (37 * hash) + GGBOCPDIIKL_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getNBNNPNAGOEA());
+          getGGBOCPDIIKL());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -347,8 +347,8 @@ public final class HomeTransferReqOuterClass {
     }
     /**
      * <pre>
-     * Name: HBPDOMIGAKK
-     * CmdId: 4537
+     * CmdId: 4460
+     * Obf: FFFNGAHIEOK
      * </pre>
      *
      * Protobuf type {@code HomeTransferReq}
@@ -390,9 +390,9 @@ public final class HomeTransferReqOuterClass {
         super.clear();
         guid_ = 0;
 
-        mPAJHMEOAPK_ = false;
+        isTransferToSafePoint_ = false;
 
-        nBNNPNAGOEA_ = false;
+        gGBOCPDIIKL_ = false;
 
         return this;
       }
@@ -421,8 +421,8 @@ public final class HomeTransferReqOuterClass {
       public emu.grasscutter.net.proto.HomeTransferReqOuterClass.HomeTransferReq buildPartial() {
         emu.grasscutter.net.proto.HomeTransferReqOuterClass.HomeTransferReq result = new emu.grasscutter.net.proto.HomeTransferReqOuterClass.HomeTransferReq(this);
         result.guid_ = guid_;
-        result.mPAJHMEOAPK_ = mPAJHMEOAPK_;
-        result.nBNNPNAGOEA_ = nBNNPNAGOEA_;
+        result.isTransferToSafePoint_ = isTransferToSafePoint_;
+        result.gGBOCPDIIKL_ = gGBOCPDIIKL_;
         onBuilt();
         return result;
       }
@@ -474,11 +474,11 @@ public final class HomeTransferReqOuterClass {
         if (other.getGuid() != 0) {
           setGuid(other.getGuid());
         }
-        if (other.getMPAJHMEOAPK() != false) {
-          setMPAJHMEOAPK(other.getMPAJHMEOAPK());
+        if (other.getIsTransferToSafePoint() != false) {
+          setIsTransferToSafePoint(other.getIsTransferToSafePoint());
         }
-        if (other.getNBNNPNAGOEA() != false) {
-          setNBNNPNAGOEA(other.getNBNNPNAGOEA());
+        if (other.getGGBOCPDIIKL() != false) {
+          setGGBOCPDIIKL(other.getGGBOCPDIIKL());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -511,7 +511,7 @@ public final class HomeTransferReqOuterClass {
 
       private int guid_ ;
       /**
-       * <code>uint32 guid = 1;</code>
+       * <code>uint32 guid = 8;</code>
        * @return The guid.
        */
       @java.lang.Override
@@ -519,7 +519,7 @@ public final class HomeTransferReqOuterClass {
         return guid_;
       }
       /**
-       * <code>uint32 guid = 1;</code>
+       * <code>uint32 guid = 8;</code>
        * @param value The guid to set.
        * @return This builder for chaining.
        */
@@ -530,7 +530,7 @@ public final class HomeTransferReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 guid = 1;</code>
+       * <code>uint32 guid = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearGuid() {
@@ -540,64 +540,64 @@ public final class HomeTransferReqOuterClass {
         return this;
       }
 
-      private boolean mPAJHMEOAPK_ ;
+      private boolean isTransferToSafePoint_ ;
       /**
-       * <code>bool MPAJHMEOAPK = 12;</code>
-       * @return The mPAJHMEOAPK.
+       * <code>bool is_transfer_to_safe_point = 9;</code>
+       * @return The isTransferToSafePoint.
        */
       @java.lang.Override
-      public boolean getMPAJHMEOAPK() {
-        return mPAJHMEOAPK_;
+      public boolean getIsTransferToSafePoint() {
+        return isTransferToSafePoint_;
       }
       /**
-       * <code>bool MPAJHMEOAPK = 12;</code>
-       * @param value The mPAJHMEOAPK to set.
+       * <code>bool is_transfer_to_safe_point = 9;</code>
+       * @param value The isTransferToSafePoint to set.
        * @return This builder for chaining.
        */
-      public Builder setMPAJHMEOAPK(boolean value) {
+      public Builder setIsTransferToSafePoint(boolean value) {
         
-        mPAJHMEOAPK_ = value;
+        isTransferToSafePoint_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool MPAJHMEOAPK = 12;</code>
+       * <code>bool is_transfer_to_safe_point = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMPAJHMEOAPK() {
+      public Builder clearIsTransferToSafePoint() {
         
-        mPAJHMEOAPK_ = false;
+        isTransferToSafePoint_ = false;
         onChanged();
         return this;
       }
 
-      private boolean nBNNPNAGOEA_ ;
+      private boolean gGBOCPDIIKL_ ;
       /**
-       * <code>bool NBNNPNAGOEA = 8;</code>
-       * @return The nBNNPNAGOEA.
+       * <code>bool GGBOCPDIIKL = 13;</code>
+       * @return The gGBOCPDIIKL.
        */
       @java.lang.Override
-      public boolean getNBNNPNAGOEA() {
-        return nBNNPNAGOEA_;
+      public boolean getGGBOCPDIIKL() {
+        return gGBOCPDIIKL_;
       }
       /**
-       * <code>bool NBNNPNAGOEA = 8;</code>
-       * @param value The nBNNPNAGOEA to set.
+       * <code>bool GGBOCPDIIKL = 13;</code>
+       * @param value The gGBOCPDIIKL to set.
        * @return This builder for chaining.
        */
-      public Builder setNBNNPNAGOEA(boolean value) {
+      public Builder setGGBOCPDIIKL(boolean value) {
         
-        nBNNPNAGOEA_ = value;
+        gGBOCPDIIKL_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool NBNNPNAGOEA = 8;</code>
+       * <code>bool GGBOCPDIIKL = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearNBNNPNAGOEA() {
+      public Builder clearGGBOCPDIIKL() {
         
-        nBNNPNAGOEA_ = false;
+        gGBOCPDIIKL_ = false;
         onChanged();
         return this;
       }
@@ -668,10 +668,10 @@ public final class HomeTransferReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025HomeTransferReq.proto\"I\n\017HomeTransferR" +
-      "eq\022\014\n\004guid\030\001 \001(\r\022\023\n\013MPAJHMEOAPK\030\014 \001(\010\022\023\n" +
-      "\013NBNNPNAGOEA\030\010 \001(\010B\033\n\031emu.grasscutter.ne" +
-      "t.protob\006proto3"
+      "\n\025HomeTransferReq.proto\"W\n\017HomeTransferR" +
+      "eq\022\014\n\004guid\030\010 \001(\r\022!\n\031is_transfer_to_safe_" +
+      "point\030\t \001(\010\022\023\n\013GGBOCPDIIKL\030\r \001(\010B\033\n\031emu." +
+      "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -682,7 +682,7 @@ public final class HomeTransferReqOuterClass {
     internal_static_HomeTransferReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeTransferReq_descriptor,
-        new java.lang.String[] { "Guid", "MPAJHMEOAPK", "NBNNPNAGOEA", });
+        new java.lang.String[] { "Guid", "IsTransferToSafePoint", "GGBOCPDIIKL", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

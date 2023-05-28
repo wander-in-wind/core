@@ -19,15 +19,15 @@ public final class EndCoinCollectPlaySingleModeReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 multistage_play_index = 8;</code>
+     * <code>uint32 multistage_play_index = 6;</code>
      * @return The multistagePlayIndex.
      */
     int getMultistagePlayIndex();
   }
   /**
    * <pre>
-   * Name: GKLCMJNGJME
-   * CmdId: 21430
+   * CmdId: 21573
+   * Obf: CNCBKBCGLAI
    * </pre>
    *
    * Protobuf type {@code EndCoinCollectPlaySingleModeReq}
@@ -74,7 +74,7 @@ public final class EndCoinCollectPlaySingleModeReqOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 48: {
 
               multistagePlayIndex_ = input.readUInt32();
               break;
@@ -111,10 +111,10 @@ public final class EndCoinCollectPlaySingleModeReqOuterClass {
               emu.grasscutter.net.proto.EndCoinCollectPlaySingleModeReqOuterClass.EndCoinCollectPlaySingleModeReq.class, emu.grasscutter.net.proto.EndCoinCollectPlaySingleModeReqOuterClass.EndCoinCollectPlaySingleModeReq.Builder.class);
     }
 
-    public static final int MULTISTAGE_PLAY_INDEX_FIELD_NUMBER = 8;
+    public static final int MULTISTAGE_PLAY_INDEX_FIELD_NUMBER = 6;
     private int multistagePlayIndex_;
     /**
-     * <code>uint32 multistage_play_index = 8;</code>
+     * <code>uint32 multistage_play_index = 6;</code>
      * @return The multistagePlayIndex.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class EndCoinCollectPlaySingleModeReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (multistagePlayIndex_ != 0) {
-        output.writeUInt32(8, multistagePlayIndex_);
+        output.writeUInt32(6, multistagePlayIndex_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class EndCoinCollectPlaySingleModeReqOuterClass {
       size = 0;
       if (multistagePlayIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, multistagePlayIndex_);
+          .computeUInt32Size(6, multistagePlayIndex_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class EndCoinCollectPlaySingleModeReqOuterClass {
     }
     /**
      * <pre>
-     * Name: GKLCMJNGJME
-     * CmdId: 21430
+     * CmdId: 21573
+     * Obf: CNCBKBCGLAI
      * </pre>
      *
      * Protobuf type {@code EndCoinCollectPlaySingleModeReq}
@@ -431,7 +431,7 @@ public final class EndCoinCollectPlaySingleModeReqOuterClass {
 
       private int multistagePlayIndex_ ;
       /**
-       * <code>uint32 multistage_play_index = 8;</code>
+       * <code>uint32 multistage_play_index = 6;</code>
        * @return The multistagePlayIndex.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class EndCoinCollectPlaySingleModeReqOuterClass {
         return multistagePlayIndex_;
       }
       /**
-       * <code>uint32 multistage_play_index = 8;</code>
+       * <code>uint32 multistage_play_index = 6;</code>
        * @param value The multistagePlayIndex to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class EndCoinCollectPlaySingleModeReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 multistage_play_index = 8;</code>
+       * <code>uint32 multistage_play_index = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearMultistagePlayIndex() {
@@ -528,7 +528,7 @@ public final class EndCoinCollectPlaySingleModeReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n%EndCoinCollectPlaySingleModeReq.proto\"" +
       "@\n\037EndCoinCollectPlaySingleModeReq\022\035\n\025mu" +
-      "ltistage_play_index\030\010 \001(\rB\033\n\031emu.grasscu" +
+      "ltistage_play_index\030\006 \001(\rB\033\n\031emu.grasscu" +
       "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

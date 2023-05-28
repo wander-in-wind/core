@@ -20,8 +20,8 @@ public final class DuelHeartCgEndNotifyOuterClass {
   }
   /**
    * <pre>
-   * Name: PNKNAMMJIDF
-   * CmdId: 23386
+   * CmdId: 23659
+   * Obf: DKHBIMPOOJM
    * </pre>
    *
    * Protobuf type {@code DuelHeartCgEndNotify}
@@ -246,8 +246,8 @@ public final class DuelHeartCgEndNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: PNKNAMMJIDF
-     * CmdId: 23386
+     * CmdId: 23659
+     * Obf: DKHBIMPOOJM
      * </pre>
      *
      * Protobuf type {@code DuelHeartCgEndNotify}

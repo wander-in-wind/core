@@ -19,7 +19,7 @@ public final class ChessPickCardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 card_id = 7;</code>
+     * <code>uint32 card_id = 10;</code>
      * @return The cardId.
      */
     int getCardId();
@@ -32,8 +32,8 @@ public final class ChessPickCardReqOuterClass {
   }
   /**
    * <pre>
-   * Name: BGOPOLELLBI
-   * CmdId: 5301
+   * CmdId: 5315
+   * Obf: GHBDOONGKGK
    * </pre>
    *
    * Protobuf type {@code ChessPickCardReq}
@@ -85,7 +85,7 @@ public final class ChessPickCardReqOuterClass {
               cardIndex_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 80: {
 
               cardId_ = input.readUInt32();
               break;
@@ -122,10 +122,10 @@ public final class ChessPickCardReqOuterClass {
               emu.grasscutter.net.proto.ChessPickCardReqOuterClass.ChessPickCardReq.class, emu.grasscutter.net.proto.ChessPickCardReqOuterClass.ChessPickCardReq.Builder.class);
     }
 
-    public static final int CARD_ID_FIELD_NUMBER = 7;
+    public static final int CARD_ID_FIELD_NUMBER = 10;
     private int cardId_;
     /**
-     * <code>uint32 card_id = 7;</code>
+     * <code>uint32 card_id = 10;</code>
      * @return The cardId.
      */
     @java.lang.Override
@@ -162,7 +162,7 @@ public final class ChessPickCardReqOuterClass {
         output.writeUInt32(3, cardIndex_);
       }
       if (cardId_ != 0) {
-        output.writeUInt32(7, cardId_);
+        output.writeUInt32(10, cardId_);
       }
       unknownFields.writeTo(output);
     }
@@ -179,7 +179,7 @@ public final class ChessPickCardReqOuterClass {
       }
       if (cardId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, cardId_);
+          .computeUInt32Size(10, cardId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class ChessPickCardReqOuterClass {
     }
     /**
      * <pre>
-     * Name: BGOPOLELLBI
-     * CmdId: 5301
+     * CmdId: 5315
+     * Obf: GHBDOONGKGK
      * </pre>
      *
      * Protobuf type {@code ChessPickCardReq}
@@ -470,7 +470,7 @@ public final class ChessPickCardReqOuterClass {
 
       private int cardId_ ;
       /**
-       * <code>uint32 card_id = 7;</code>
+       * <code>uint32 card_id = 10;</code>
        * @return The cardId.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class ChessPickCardReqOuterClass {
         return cardId_;
       }
       /**
-       * <code>uint32 card_id = 7;</code>
+       * <code>uint32 card_id = 10;</code>
        * @param value The cardId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class ChessPickCardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 card_id = 7;</code>
+       * <code>uint32 card_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearCardId() {
@@ -597,7 +597,7 @@ public final class ChessPickCardReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026ChessPickCardReq.proto\"7\n\020ChessPickCar" +
-      "dReq\022\017\n\007card_id\030\007 \001(\r\022\022\n\ncard_index\030\003 \001(" +
+      "dReq\022\017\n\007card_id\030\n \001(\r\022\022\n\ncard_index\030\003 \001(" +
       "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,21 +19,21 @@ public final class StartRogueDiaryRoomReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 room_difficulty = 14;</code>
+     * <code>uint32 room_difficulty = 9;</code>
      * @return The roomDifficulty.
      */
     int getRoomDifficulty();
 
     /**
-     * <code>bool is_select_hard = 13;</code>
+     * <code>bool is_select_hard = 10;</code>
      * @return The isSelectHard.
      */
     boolean getIsSelectHard();
   }
   /**
    * <pre>
-   * Name: EJLABJMFMFD
-   * CmdId: 8291
+   * CmdId: 8341
+   * Obf: KBCDPPOOJKP
    * </pre>
    *
    * Protobuf type {@code StartRogueDiaryRoomReq}
@@ -80,14 +80,14 @@ public final class StartRogueDiaryRoomReqOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
-
-              isSelectHard_ = input.readBool();
-              break;
-            }
-            case 112: {
+            case 72: {
 
               roomDifficulty_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
+              isSelectHard_ = input.readBool();
               break;
             }
             default: {
@@ -122,10 +122,10 @@ public final class StartRogueDiaryRoomReqOuterClass {
               emu.grasscutter.net.proto.StartRogueDiaryRoomReqOuterClass.StartRogueDiaryRoomReq.class, emu.grasscutter.net.proto.StartRogueDiaryRoomReqOuterClass.StartRogueDiaryRoomReq.Builder.class);
     }
 
-    public static final int ROOM_DIFFICULTY_FIELD_NUMBER = 14;
+    public static final int ROOM_DIFFICULTY_FIELD_NUMBER = 9;
     private int roomDifficulty_;
     /**
-     * <code>uint32 room_difficulty = 14;</code>
+     * <code>uint32 room_difficulty = 9;</code>
      * @return The roomDifficulty.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class StartRogueDiaryRoomReqOuterClass {
       return roomDifficulty_;
     }
 
-    public static final int IS_SELECT_HARD_FIELD_NUMBER = 13;
+    public static final int IS_SELECT_HARD_FIELD_NUMBER = 10;
     private boolean isSelectHard_;
     /**
-     * <code>bool is_select_hard = 13;</code>
+     * <code>bool is_select_hard = 10;</code>
      * @return The isSelectHard.
      */
     @java.lang.Override
@@ -158,11 +158,11 @@ public final class StartRogueDiaryRoomReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isSelectHard_ != false) {
-        output.writeBool(13, isSelectHard_);
-      }
       if (roomDifficulty_ != 0) {
-        output.writeUInt32(14, roomDifficulty_);
+        output.writeUInt32(9, roomDifficulty_);
+      }
+      if (isSelectHard_ != false) {
+        output.writeBool(10, isSelectHard_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class StartRogueDiaryRoomReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isSelectHard_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, isSelectHard_);
-      }
       if (roomDifficulty_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, roomDifficulty_);
+          .computeUInt32Size(9, roomDifficulty_);
+      }
+      if (isSelectHard_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(10, isSelectHard_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -313,8 +313,8 @@ public final class StartRogueDiaryRoomReqOuterClass {
     }
     /**
      * <pre>
-     * Name: EJLABJMFMFD
-     * CmdId: 8291
+     * CmdId: 8341
+     * Obf: KBCDPPOOJKP
      * </pre>
      *
      * Protobuf type {@code StartRogueDiaryRoomReq}
@@ -471,7 +471,7 @@ public final class StartRogueDiaryRoomReqOuterClass {
 
       private int roomDifficulty_ ;
       /**
-       * <code>uint32 room_difficulty = 14;</code>
+       * <code>uint32 room_difficulty = 9;</code>
        * @return The roomDifficulty.
        */
       @java.lang.Override
@@ -479,7 +479,7 @@ public final class StartRogueDiaryRoomReqOuterClass {
         return roomDifficulty_;
       }
       /**
-       * <code>uint32 room_difficulty = 14;</code>
+       * <code>uint32 room_difficulty = 9;</code>
        * @param value The roomDifficulty to set.
        * @return This builder for chaining.
        */
@@ -490,7 +490,7 @@ public final class StartRogueDiaryRoomReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 room_difficulty = 14;</code>
+       * <code>uint32 room_difficulty = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearRoomDifficulty() {
@@ -502,7 +502,7 @@ public final class StartRogueDiaryRoomReqOuterClass {
 
       private boolean isSelectHard_ ;
       /**
-       * <code>bool is_select_hard = 13;</code>
+       * <code>bool is_select_hard = 10;</code>
        * @return The isSelectHard.
        */
       @java.lang.Override
@@ -510,7 +510,7 @@ public final class StartRogueDiaryRoomReqOuterClass {
         return isSelectHard_;
       }
       /**
-       * <code>bool is_select_hard = 13;</code>
+       * <code>bool is_select_hard = 10;</code>
        * @param value The isSelectHard to set.
        * @return This builder for chaining.
        */
@@ -521,7 +521,7 @@ public final class StartRogueDiaryRoomReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_select_hard = 13;</code>
+       * <code>bool is_select_hard = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsSelectHard() {
@@ -598,8 +598,8 @@ public final class StartRogueDiaryRoomReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034StartRogueDiaryRoomReq.proto\"I\n\026StartR" +
-      "ogueDiaryRoomReq\022\027\n\017room_difficulty\030\016 \001(" +
-      "\r\022\026\n\016is_select_hard\030\r \001(\010B\033\n\031emu.grasscu" +
+      "ogueDiaryRoomReq\022\027\n\017room_difficulty\030\t \001(" +
+      "\r\022\026\n\016is_select_hard\030\n \001(\010B\033\n\031emu.grasscu" +
       "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

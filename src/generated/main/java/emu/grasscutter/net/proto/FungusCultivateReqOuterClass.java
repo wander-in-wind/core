@@ -19,57 +19,57 @@ public final class FungusCultivateReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 cultivate_id = 15;</code>
+     * <code>uint32 cultivate_id = 8;</code>
      * @return The cultivateId.
      */
     int getCultivateId();
 
     /**
-     * <code>uint32 PEMEEBICACO = 13;</code>
-     * @return The pEMEEBICACO.
-     */
-    int getPEMEEBICACO();
-
-    /**
-     * <code>uint32 DALIOFECCHH = 8;</code>
-     * @return The dALIOFECCHH.
-     */
-    int getDALIOFECCHH();
-
-    /**
-     * <code>uint32 MDEFDDPPPFJ = 10;</code>
-     * @return The mDEFDDPPPFJ.
-     */
-    int getMDEFDDPPPFJ();
-
-    /**
-     * <code>uint32 ONNAFGONBKP = 5;</code>
-     * @return The oNNAFGONBKP.
-     */
-    int getONNAFGONBKP();
-
-    /**
-     * <code>uint32 time = 14;</code>
+     * <code>uint32 time = 2;</code>
      * @return The time.
      */
     int getTime();
 
     /**
-     * <code>uint32 GOEOLKBNFFE = 12;</code>
-     * @return The gOEOLKBNFFE.
+     * <code>uint32 OKFNJNAKHKF = 10;</code>
+     * @return The oKFNJNAKHKF.
      */
-    int getGOEOLKBNFFE();
+    int getOKFNJNAKHKF();
 
     /**
-     * <code>uint32 LIMHENMOOKA = 1;</code>
-     * @return The lIMHENMOOKA.
+     * <code>uint32 HHOHEFDDBLG = 15;</code>
+     * @return The hHOHEFDDBLG.
      */
-    int getLIMHENMOOKA();
+    int getHHOHEFDDBLG();
+
+    /**
+     * <code>uint32 COEDEMAFPMM = 5;</code>
+     * @return The cOEDEMAFPMM.
+     */
+    int getCOEDEMAFPMM();
+
+    /**
+     * <code>uint32 BMOLOBMLFCK = 11;</code>
+     * @return The bMOLOBMLFCK.
+     */
+    int getBMOLOBMLFCK();
+
+    /**
+     * <code>uint32 KHDKLIJEJEG = 7;</code>
+     * @return The kHDKLIJEJEG.
+     */
+    int getKHDKLIJEJEG();
+
+    /**
+     * <code>uint32 CNGHBGNKCMP = 12;</code>
+     * @return The cNGHBGNKCMP.
+     */
+    int getCNGHBGNKCMP();
   }
   /**
    * <pre>
-   * Name: BGKFONJDBCL
-   * CmdId: 20945
+   * CmdId: 24404
+   * Obf: FNOHLKCCFJK
    * </pre>
    *
    * Protobuf type {@code FungusCultivateReq}
@@ -116,44 +116,44 @@ public final class FungusCultivateReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              lIMHENMOOKA_ = input.readUInt32();
-              break;
-            }
-            case 40: {
-
-              oNNAFGONBKP_ = input.readUInt32();
-              break;
-            }
-            case 64: {
-
-              dALIOFECCHH_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
-              mDEFDDPPPFJ_ = input.readUInt32();
-              break;
-            }
-            case 96: {
-
-              gOEOLKBNFFE_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
-              pEMEEBICACO_ = input.readUInt32();
-              break;
-            }
-            case 112: {
+            case 16: {
 
               time_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 40: {
+
+              cOEDEMAFPMM_ = input.readUInt32();
+              break;
+            }
+            case 56: {
+
+              kHDKLIJEJEG_ = input.readUInt32();
+              break;
+            }
+            case 64: {
 
               cultivateId_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
+              oKFNJNAKHKF_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              bMOLOBMLFCK_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              cNGHBGNKCMP_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              hHOHEFDDBLG_ = input.readUInt32();
               break;
             }
             default: {
@@ -188,10 +188,10 @@ public final class FungusCultivateReqOuterClass {
               emu.grasscutter.net.proto.FungusCultivateReqOuterClass.FungusCultivateReq.class, emu.grasscutter.net.proto.FungusCultivateReqOuterClass.FungusCultivateReq.Builder.class);
     }
 
-    public static final int CULTIVATE_ID_FIELD_NUMBER = 15;
+    public static final int CULTIVATE_ID_FIELD_NUMBER = 8;
     private int cultivateId_;
     /**
-     * <code>uint32 cultivate_id = 15;</code>
+     * <code>uint32 cultivate_id = 8;</code>
      * @return The cultivateId.
      */
     @java.lang.Override
@@ -199,54 +199,10 @@ public final class FungusCultivateReqOuterClass {
       return cultivateId_;
     }
 
-    public static final int PEMEEBICACO_FIELD_NUMBER = 13;
-    private int pEMEEBICACO_;
-    /**
-     * <code>uint32 PEMEEBICACO = 13;</code>
-     * @return The pEMEEBICACO.
-     */
-    @java.lang.Override
-    public int getPEMEEBICACO() {
-      return pEMEEBICACO_;
-    }
-
-    public static final int DALIOFECCHH_FIELD_NUMBER = 8;
-    private int dALIOFECCHH_;
-    /**
-     * <code>uint32 DALIOFECCHH = 8;</code>
-     * @return The dALIOFECCHH.
-     */
-    @java.lang.Override
-    public int getDALIOFECCHH() {
-      return dALIOFECCHH_;
-    }
-
-    public static final int MDEFDDPPPFJ_FIELD_NUMBER = 10;
-    private int mDEFDDPPPFJ_;
-    /**
-     * <code>uint32 MDEFDDPPPFJ = 10;</code>
-     * @return The mDEFDDPPPFJ.
-     */
-    @java.lang.Override
-    public int getMDEFDDPPPFJ() {
-      return mDEFDDPPPFJ_;
-    }
-
-    public static final int ONNAFGONBKP_FIELD_NUMBER = 5;
-    private int oNNAFGONBKP_;
-    /**
-     * <code>uint32 ONNAFGONBKP = 5;</code>
-     * @return The oNNAFGONBKP.
-     */
-    @java.lang.Override
-    public int getONNAFGONBKP() {
-      return oNNAFGONBKP_;
-    }
-
-    public static final int TIME_FIELD_NUMBER = 14;
+    public static final int TIME_FIELD_NUMBER = 2;
     private int time_;
     /**
-     * <code>uint32 time = 14;</code>
+     * <code>uint32 time = 2;</code>
      * @return The time.
      */
     @java.lang.Override
@@ -254,26 +210,70 @@ public final class FungusCultivateReqOuterClass {
       return time_;
     }
 
-    public static final int GOEOLKBNFFE_FIELD_NUMBER = 12;
-    private int gOEOLKBNFFE_;
+    public static final int OKFNJNAKHKF_FIELD_NUMBER = 10;
+    private int oKFNJNAKHKF_;
     /**
-     * <code>uint32 GOEOLKBNFFE = 12;</code>
-     * @return The gOEOLKBNFFE.
+     * <code>uint32 OKFNJNAKHKF = 10;</code>
+     * @return The oKFNJNAKHKF.
      */
     @java.lang.Override
-    public int getGOEOLKBNFFE() {
-      return gOEOLKBNFFE_;
+    public int getOKFNJNAKHKF() {
+      return oKFNJNAKHKF_;
     }
 
-    public static final int LIMHENMOOKA_FIELD_NUMBER = 1;
-    private int lIMHENMOOKA_;
+    public static final int HHOHEFDDBLG_FIELD_NUMBER = 15;
+    private int hHOHEFDDBLG_;
     /**
-     * <code>uint32 LIMHENMOOKA = 1;</code>
-     * @return The lIMHENMOOKA.
+     * <code>uint32 HHOHEFDDBLG = 15;</code>
+     * @return The hHOHEFDDBLG.
      */
     @java.lang.Override
-    public int getLIMHENMOOKA() {
-      return lIMHENMOOKA_;
+    public int getHHOHEFDDBLG() {
+      return hHOHEFDDBLG_;
+    }
+
+    public static final int COEDEMAFPMM_FIELD_NUMBER = 5;
+    private int cOEDEMAFPMM_;
+    /**
+     * <code>uint32 COEDEMAFPMM = 5;</code>
+     * @return The cOEDEMAFPMM.
+     */
+    @java.lang.Override
+    public int getCOEDEMAFPMM() {
+      return cOEDEMAFPMM_;
+    }
+
+    public static final int BMOLOBMLFCK_FIELD_NUMBER = 11;
+    private int bMOLOBMLFCK_;
+    /**
+     * <code>uint32 BMOLOBMLFCK = 11;</code>
+     * @return The bMOLOBMLFCK.
+     */
+    @java.lang.Override
+    public int getBMOLOBMLFCK() {
+      return bMOLOBMLFCK_;
+    }
+
+    public static final int KHDKLIJEJEG_FIELD_NUMBER = 7;
+    private int kHDKLIJEJEG_;
+    /**
+     * <code>uint32 KHDKLIJEJEG = 7;</code>
+     * @return The kHDKLIJEJEG.
+     */
+    @java.lang.Override
+    public int getKHDKLIJEJEG() {
+      return kHDKLIJEJEG_;
+    }
+
+    public static final int CNGHBGNKCMP_FIELD_NUMBER = 12;
+    private int cNGHBGNKCMP_;
+    /**
+     * <code>uint32 CNGHBGNKCMP = 12;</code>
+     * @return The cNGHBGNKCMP.
+     */
+    @java.lang.Override
+    public int getCNGHBGNKCMP() {
+      return cNGHBGNKCMP_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -290,29 +290,29 @@ public final class FungusCultivateReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (lIMHENMOOKA_ != 0) {
-        output.writeUInt32(1, lIMHENMOOKA_);
-      }
-      if (oNNAFGONBKP_ != 0) {
-        output.writeUInt32(5, oNNAFGONBKP_);
-      }
-      if (dALIOFECCHH_ != 0) {
-        output.writeUInt32(8, dALIOFECCHH_);
-      }
-      if (mDEFDDPPPFJ_ != 0) {
-        output.writeUInt32(10, mDEFDDPPPFJ_);
-      }
-      if (gOEOLKBNFFE_ != 0) {
-        output.writeUInt32(12, gOEOLKBNFFE_);
-      }
-      if (pEMEEBICACO_ != 0) {
-        output.writeUInt32(13, pEMEEBICACO_);
-      }
       if (time_ != 0) {
-        output.writeUInt32(14, time_);
+        output.writeUInt32(2, time_);
+      }
+      if (cOEDEMAFPMM_ != 0) {
+        output.writeUInt32(5, cOEDEMAFPMM_);
+      }
+      if (kHDKLIJEJEG_ != 0) {
+        output.writeUInt32(7, kHDKLIJEJEG_);
       }
       if (cultivateId_ != 0) {
-        output.writeUInt32(15, cultivateId_);
+        output.writeUInt32(8, cultivateId_);
+      }
+      if (oKFNJNAKHKF_ != 0) {
+        output.writeUInt32(10, oKFNJNAKHKF_);
+      }
+      if (bMOLOBMLFCK_ != 0) {
+        output.writeUInt32(11, bMOLOBMLFCK_);
+      }
+      if (cNGHBGNKCMP_ != 0) {
+        output.writeUInt32(12, cNGHBGNKCMP_);
+      }
+      if (hHOHEFDDBLG_ != 0) {
+        output.writeUInt32(15, hHOHEFDDBLG_);
       }
       unknownFields.writeTo(output);
     }
@@ -323,37 +323,37 @@ public final class FungusCultivateReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (lIMHENMOOKA_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, lIMHENMOOKA_);
-      }
-      if (oNNAFGONBKP_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, oNNAFGONBKP_);
-      }
-      if (dALIOFECCHH_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, dALIOFECCHH_);
-      }
-      if (mDEFDDPPPFJ_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, mDEFDDPPPFJ_);
-      }
-      if (gOEOLKBNFFE_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, gOEOLKBNFFE_);
-      }
-      if (pEMEEBICACO_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, pEMEEBICACO_);
-      }
       if (time_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, time_);
+          .computeUInt32Size(2, time_);
+      }
+      if (cOEDEMAFPMM_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, cOEDEMAFPMM_);
+      }
+      if (kHDKLIJEJEG_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, kHDKLIJEJEG_);
       }
       if (cultivateId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, cultivateId_);
+          .computeUInt32Size(8, cultivateId_);
+      }
+      if (oKFNJNAKHKF_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, oKFNJNAKHKF_);
+      }
+      if (bMOLOBMLFCK_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, bMOLOBMLFCK_);
+      }
+      if (cNGHBGNKCMP_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, cNGHBGNKCMP_);
+      }
+      if (hHOHEFDDBLG_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, hHOHEFDDBLG_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -372,20 +372,20 @@ public final class FungusCultivateReqOuterClass {
 
       if (getCultivateId()
           != other.getCultivateId()) return false;
-      if (getPEMEEBICACO()
-          != other.getPEMEEBICACO()) return false;
-      if (getDALIOFECCHH()
-          != other.getDALIOFECCHH()) return false;
-      if (getMDEFDDPPPFJ()
-          != other.getMDEFDDPPPFJ()) return false;
-      if (getONNAFGONBKP()
-          != other.getONNAFGONBKP()) return false;
       if (getTime()
           != other.getTime()) return false;
-      if (getGOEOLKBNFFE()
-          != other.getGOEOLKBNFFE()) return false;
-      if (getLIMHENMOOKA()
-          != other.getLIMHENMOOKA()) return false;
+      if (getOKFNJNAKHKF()
+          != other.getOKFNJNAKHKF()) return false;
+      if (getHHOHEFDDBLG()
+          != other.getHHOHEFDDBLG()) return false;
+      if (getCOEDEMAFPMM()
+          != other.getCOEDEMAFPMM()) return false;
+      if (getBMOLOBMLFCK()
+          != other.getBMOLOBMLFCK()) return false;
+      if (getKHDKLIJEJEG()
+          != other.getKHDKLIJEJEG()) return false;
+      if (getCNGHBGNKCMP()
+          != other.getCNGHBGNKCMP()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -399,20 +399,20 @@ public final class FungusCultivateReqOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CULTIVATE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getCultivateId();
-      hash = (37 * hash) + PEMEEBICACO_FIELD_NUMBER;
-      hash = (53 * hash) + getPEMEEBICACO();
-      hash = (37 * hash) + DALIOFECCHH_FIELD_NUMBER;
-      hash = (53 * hash) + getDALIOFECCHH();
-      hash = (37 * hash) + MDEFDDPPPFJ_FIELD_NUMBER;
-      hash = (53 * hash) + getMDEFDDPPPFJ();
-      hash = (37 * hash) + ONNAFGONBKP_FIELD_NUMBER;
-      hash = (53 * hash) + getONNAFGONBKP();
       hash = (37 * hash) + TIME_FIELD_NUMBER;
       hash = (53 * hash) + getTime();
-      hash = (37 * hash) + GOEOLKBNFFE_FIELD_NUMBER;
-      hash = (53 * hash) + getGOEOLKBNFFE();
-      hash = (37 * hash) + LIMHENMOOKA_FIELD_NUMBER;
-      hash = (53 * hash) + getLIMHENMOOKA();
+      hash = (37 * hash) + OKFNJNAKHKF_FIELD_NUMBER;
+      hash = (53 * hash) + getOKFNJNAKHKF();
+      hash = (37 * hash) + HHOHEFDDBLG_FIELD_NUMBER;
+      hash = (53 * hash) + getHHOHEFDDBLG();
+      hash = (37 * hash) + COEDEMAFPMM_FIELD_NUMBER;
+      hash = (53 * hash) + getCOEDEMAFPMM();
+      hash = (37 * hash) + BMOLOBMLFCK_FIELD_NUMBER;
+      hash = (53 * hash) + getBMOLOBMLFCK();
+      hash = (37 * hash) + KHDKLIJEJEG_FIELD_NUMBER;
+      hash = (53 * hash) + getKHDKLIJEJEG();
+      hash = (37 * hash) + CNGHBGNKCMP_FIELD_NUMBER;
+      hash = (53 * hash) + getCNGHBGNKCMP();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -510,8 +510,8 @@ public final class FungusCultivateReqOuterClass {
     }
     /**
      * <pre>
-     * Name: BGKFONJDBCL
-     * CmdId: 20945
+     * CmdId: 24404
+     * Obf: FNOHLKCCFJK
      * </pre>
      *
      * Protobuf type {@code FungusCultivateReq}
@@ -553,19 +553,19 @@ public final class FungusCultivateReqOuterClass {
         super.clear();
         cultivateId_ = 0;
 
-        pEMEEBICACO_ = 0;
-
-        dALIOFECCHH_ = 0;
-
-        mDEFDDPPPFJ_ = 0;
-
-        oNNAFGONBKP_ = 0;
-
         time_ = 0;
 
-        gOEOLKBNFFE_ = 0;
+        oKFNJNAKHKF_ = 0;
 
-        lIMHENMOOKA_ = 0;
+        hHOHEFDDBLG_ = 0;
+
+        cOEDEMAFPMM_ = 0;
+
+        bMOLOBMLFCK_ = 0;
+
+        kHDKLIJEJEG_ = 0;
+
+        cNGHBGNKCMP_ = 0;
 
         return this;
       }
@@ -594,13 +594,13 @@ public final class FungusCultivateReqOuterClass {
       public emu.grasscutter.net.proto.FungusCultivateReqOuterClass.FungusCultivateReq buildPartial() {
         emu.grasscutter.net.proto.FungusCultivateReqOuterClass.FungusCultivateReq result = new emu.grasscutter.net.proto.FungusCultivateReqOuterClass.FungusCultivateReq(this);
         result.cultivateId_ = cultivateId_;
-        result.pEMEEBICACO_ = pEMEEBICACO_;
-        result.dALIOFECCHH_ = dALIOFECCHH_;
-        result.mDEFDDPPPFJ_ = mDEFDDPPPFJ_;
-        result.oNNAFGONBKP_ = oNNAFGONBKP_;
         result.time_ = time_;
-        result.gOEOLKBNFFE_ = gOEOLKBNFFE_;
-        result.lIMHENMOOKA_ = lIMHENMOOKA_;
+        result.oKFNJNAKHKF_ = oKFNJNAKHKF_;
+        result.hHOHEFDDBLG_ = hHOHEFDDBLG_;
+        result.cOEDEMAFPMM_ = cOEDEMAFPMM_;
+        result.bMOLOBMLFCK_ = bMOLOBMLFCK_;
+        result.kHDKLIJEJEG_ = kHDKLIJEJEG_;
+        result.cNGHBGNKCMP_ = cNGHBGNKCMP_;
         onBuilt();
         return result;
       }
@@ -652,26 +652,26 @@ public final class FungusCultivateReqOuterClass {
         if (other.getCultivateId() != 0) {
           setCultivateId(other.getCultivateId());
         }
-        if (other.getPEMEEBICACO() != 0) {
-          setPEMEEBICACO(other.getPEMEEBICACO());
-        }
-        if (other.getDALIOFECCHH() != 0) {
-          setDALIOFECCHH(other.getDALIOFECCHH());
-        }
-        if (other.getMDEFDDPPPFJ() != 0) {
-          setMDEFDDPPPFJ(other.getMDEFDDPPPFJ());
-        }
-        if (other.getONNAFGONBKP() != 0) {
-          setONNAFGONBKP(other.getONNAFGONBKP());
-        }
         if (other.getTime() != 0) {
           setTime(other.getTime());
         }
-        if (other.getGOEOLKBNFFE() != 0) {
-          setGOEOLKBNFFE(other.getGOEOLKBNFFE());
+        if (other.getOKFNJNAKHKF() != 0) {
+          setOKFNJNAKHKF(other.getOKFNJNAKHKF());
         }
-        if (other.getLIMHENMOOKA() != 0) {
-          setLIMHENMOOKA(other.getLIMHENMOOKA());
+        if (other.getHHOHEFDDBLG() != 0) {
+          setHHOHEFDDBLG(other.getHHOHEFDDBLG());
+        }
+        if (other.getCOEDEMAFPMM() != 0) {
+          setCOEDEMAFPMM(other.getCOEDEMAFPMM());
+        }
+        if (other.getBMOLOBMLFCK() != 0) {
+          setBMOLOBMLFCK(other.getBMOLOBMLFCK());
+        }
+        if (other.getKHDKLIJEJEG() != 0) {
+          setKHDKLIJEJEG(other.getKHDKLIJEJEG());
+        }
+        if (other.getCNGHBGNKCMP() != 0) {
+          setCNGHBGNKCMP(other.getCNGHBGNKCMP());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -704,7 +704,7 @@ public final class FungusCultivateReqOuterClass {
 
       private int cultivateId_ ;
       /**
-       * <code>uint32 cultivate_id = 15;</code>
+       * <code>uint32 cultivate_id = 8;</code>
        * @return The cultivateId.
        */
       @java.lang.Override
@@ -712,7 +712,7 @@ public final class FungusCultivateReqOuterClass {
         return cultivateId_;
       }
       /**
-       * <code>uint32 cultivate_id = 15;</code>
+       * <code>uint32 cultivate_id = 8;</code>
        * @param value The cultivateId to set.
        * @return This builder for chaining.
        */
@@ -723,7 +723,7 @@ public final class FungusCultivateReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cultivate_id = 15;</code>
+       * <code>uint32 cultivate_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearCultivateId() {
@@ -733,133 +733,9 @@ public final class FungusCultivateReqOuterClass {
         return this;
       }
 
-      private int pEMEEBICACO_ ;
-      /**
-       * <code>uint32 PEMEEBICACO = 13;</code>
-       * @return The pEMEEBICACO.
-       */
-      @java.lang.Override
-      public int getPEMEEBICACO() {
-        return pEMEEBICACO_;
-      }
-      /**
-       * <code>uint32 PEMEEBICACO = 13;</code>
-       * @param value The pEMEEBICACO to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPEMEEBICACO(int value) {
-        
-        pEMEEBICACO_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 PEMEEBICACO = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPEMEEBICACO() {
-        
-        pEMEEBICACO_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int dALIOFECCHH_ ;
-      /**
-       * <code>uint32 DALIOFECCHH = 8;</code>
-       * @return The dALIOFECCHH.
-       */
-      @java.lang.Override
-      public int getDALIOFECCHH() {
-        return dALIOFECCHH_;
-      }
-      /**
-       * <code>uint32 DALIOFECCHH = 8;</code>
-       * @param value The dALIOFECCHH to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDALIOFECCHH(int value) {
-        
-        dALIOFECCHH_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 DALIOFECCHH = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDALIOFECCHH() {
-        
-        dALIOFECCHH_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int mDEFDDPPPFJ_ ;
-      /**
-       * <code>uint32 MDEFDDPPPFJ = 10;</code>
-       * @return The mDEFDDPPPFJ.
-       */
-      @java.lang.Override
-      public int getMDEFDDPPPFJ() {
-        return mDEFDDPPPFJ_;
-      }
-      /**
-       * <code>uint32 MDEFDDPPPFJ = 10;</code>
-       * @param value The mDEFDDPPPFJ to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMDEFDDPPPFJ(int value) {
-        
-        mDEFDDPPPFJ_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 MDEFDDPPPFJ = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMDEFDDPPPFJ() {
-        
-        mDEFDDPPPFJ_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int oNNAFGONBKP_ ;
-      /**
-       * <code>uint32 ONNAFGONBKP = 5;</code>
-       * @return The oNNAFGONBKP.
-       */
-      @java.lang.Override
-      public int getONNAFGONBKP() {
-        return oNNAFGONBKP_;
-      }
-      /**
-       * <code>uint32 ONNAFGONBKP = 5;</code>
-       * @param value The oNNAFGONBKP to set.
-       * @return This builder for chaining.
-       */
-      public Builder setONNAFGONBKP(int value) {
-        
-        oNNAFGONBKP_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 ONNAFGONBKP = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearONNAFGONBKP() {
-        
-        oNNAFGONBKP_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int time_ ;
       /**
-       * <code>uint32 time = 14;</code>
+       * <code>uint32 time = 2;</code>
        * @return The time.
        */
       @java.lang.Override
@@ -867,7 +743,7 @@ public final class FungusCultivateReqOuterClass {
         return time_;
       }
       /**
-       * <code>uint32 time = 14;</code>
+       * <code>uint32 time = 2;</code>
        * @param value The time to set.
        * @return This builder for chaining.
        */
@@ -878,7 +754,7 @@ public final class FungusCultivateReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 time = 14;</code>
+       * <code>uint32 time = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearTime() {
@@ -888,64 +764,188 @@ public final class FungusCultivateReqOuterClass {
         return this;
       }
 
-      private int gOEOLKBNFFE_ ;
+      private int oKFNJNAKHKF_ ;
       /**
-       * <code>uint32 GOEOLKBNFFE = 12;</code>
-       * @return The gOEOLKBNFFE.
+       * <code>uint32 OKFNJNAKHKF = 10;</code>
+       * @return The oKFNJNAKHKF.
        */
       @java.lang.Override
-      public int getGOEOLKBNFFE() {
-        return gOEOLKBNFFE_;
+      public int getOKFNJNAKHKF() {
+        return oKFNJNAKHKF_;
       }
       /**
-       * <code>uint32 GOEOLKBNFFE = 12;</code>
-       * @param value The gOEOLKBNFFE to set.
+       * <code>uint32 OKFNJNAKHKF = 10;</code>
+       * @param value The oKFNJNAKHKF to set.
        * @return This builder for chaining.
        */
-      public Builder setGOEOLKBNFFE(int value) {
+      public Builder setOKFNJNAKHKF(int value) {
         
-        gOEOLKBNFFE_ = value;
+        oKFNJNAKHKF_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 GOEOLKBNFFE = 12;</code>
+       * <code>uint32 OKFNJNAKHKF = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGOEOLKBNFFE() {
+      public Builder clearOKFNJNAKHKF() {
         
-        gOEOLKBNFFE_ = 0;
+        oKFNJNAKHKF_ = 0;
         onChanged();
         return this;
       }
 
-      private int lIMHENMOOKA_ ;
+      private int hHOHEFDDBLG_ ;
       /**
-       * <code>uint32 LIMHENMOOKA = 1;</code>
-       * @return The lIMHENMOOKA.
+       * <code>uint32 HHOHEFDDBLG = 15;</code>
+       * @return The hHOHEFDDBLG.
        */
       @java.lang.Override
-      public int getLIMHENMOOKA() {
-        return lIMHENMOOKA_;
+      public int getHHOHEFDDBLG() {
+        return hHOHEFDDBLG_;
       }
       /**
-       * <code>uint32 LIMHENMOOKA = 1;</code>
-       * @param value The lIMHENMOOKA to set.
+       * <code>uint32 HHOHEFDDBLG = 15;</code>
+       * @param value The hHOHEFDDBLG to set.
        * @return This builder for chaining.
        */
-      public Builder setLIMHENMOOKA(int value) {
+      public Builder setHHOHEFDDBLG(int value) {
         
-        lIMHENMOOKA_ = value;
+        hHOHEFDDBLG_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 LIMHENMOOKA = 1;</code>
+       * <code>uint32 HHOHEFDDBLG = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLIMHENMOOKA() {
+      public Builder clearHHOHEFDDBLG() {
         
-        lIMHENMOOKA_ = 0;
+        hHOHEFDDBLG_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int cOEDEMAFPMM_ ;
+      /**
+       * <code>uint32 COEDEMAFPMM = 5;</code>
+       * @return The cOEDEMAFPMM.
+       */
+      @java.lang.Override
+      public int getCOEDEMAFPMM() {
+        return cOEDEMAFPMM_;
+      }
+      /**
+       * <code>uint32 COEDEMAFPMM = 5;</code>
+       * @param value The cOEDEMAFPMM to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCOEDEMAFPMM(int value) {
+        
+        cOEDEMAFPMM_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 COEDEMAFPMM = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCOEDEMAFPMM() {
+        
+        cOEDEMAFPMM_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int bMOLOBMLFCK_ ;
+      /**
+       * <code>uint32 BMOLOBMLFCK = 11;</code>
+       * @return The bMOLOBMLFCK.
+       */
+      @java.lang.Override
+      public int getBMOLOBMLFCK() {
+        return bMOLOBMLFCK_;
+      }
+      /**
+       * <code>uint32 BMOLOBMLFCK = 11;</code>
+       * @param value The bMOLOBMLFCK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBMOLOBMLFCK(int value) {
+        
+        bMOLOBMLFCK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 BMOLOBMLFCK = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBMOLOBMLFCK() {
+        
+        bMOLOBMLFCK_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int kHDKLIJEJEG_ ;
+      /**
+       * <code>uint32 KHDKLIJEJEG = 7;</code>
+       * @return The kHDKLIJEJEG.
+       */
+      @java.lang.Override
+      public int getKHDKLIJEJEG() {
+        return kHDKLIJEJEG_;
+      }
+      /**
+       * <code>uint32 KHDKLIJEJEG = 7;</code>
+       * @param value The kHDKLIJEJEG to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKHDKLIJEJEG(int value) {
+        
+        kHDKLIJEJEG_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 KHDKLIJEJEG = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearKHDKLIJEJEG() {
+        
+        kHDKLIJEJEG_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int cNGHBGNKCMP_ ;
+      /**
+       * <code>uint32 CNGHBGNKCMP = 12;</code>
+       * @return The cNGHBGNKCMP.
+       */
+      @java.lang.Override
+      public int getCNGHBGNKCMP() {
+        return cNGHBGNKCMP_;
+      }
+      /**
+       * <code>uint32 CNGHBGNKCMP = 12;</code>
+       * @param value The cNGHBGNKCMP to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCNGHBGNKCMP(int value) {
+        
+        cNGHBGNKCMP_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 CNGHBGNKCMP = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCNGHBGNKCMP() {
+        
+        cNGHBGNKCMP_ = 0;
         onChanged();
         return this;
       }
@@ -1017,11 +1017,11 @@ public final class FungusCultivateReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030FungusCultivateReq.proto\"\266\001\n\022FungusCul" +
-      "tivateReq\022\024\n\014cultivate_id\030\017 \001(\r\022\023\n\013PEMEE" +
-      "BICACO\030\r \001(\r\022\023\n\013DALIOFECCHH\030\010 \001(\r\022\023\n\013MDE" +
-      "FDDPPPFJ\030\n \001(\r\022\023\n\013ONNAFGONBKP\030\005 \001(\r\022\014\n\004t" +
-      "ime\030\016 \001(\r\022\023\n\013GOEOLKBNFFE\030\014 \001(\r\022\023\n\013LIMHEN" +
-      "MOOKA\030\001 \001(\rB\033\n\031emu.grasscutter.net.proto" +
+      "tivateReq\022\024\n\014cultivate_id\030\010 \001(\r\022\014\n\004time\030" +
+      "\002 \001(\r\022\023\n\013OKFNJNAKHKF\030\n \001(\r\022\023\n\013HHOHEFDDBL" +
+      "G\030\017 \001(\r\022\023\n\013COEDEMAFPMM\030\005 \001(\r\022\023\n\013BMOLOBML" +
+      "FCK\030\013 \001(\r\022\023\n\013KHDKLIJEJEG\030\007 \001(\r\022\023\n\013CNGHBG" +
+      "NKCMP\030\014 \001(\rB\033\n\031emu.grasscutter.net.proto" +
       "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1033,7 +1033,7 @@ public final class FungusCultivateReqOuterClass {
     internal_static_FungusCultivateReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FungusCultivateReq_descriptor,
-        new java.lang.String[] { "CultivateId", "PEMEEBICACO", "DALIOFECCHH", "MDEFDDPPPFJ", "ONNAFGONBKP", "Time", "GOEOLKBNFFE", "LIMHENMOOKA", });
+        new java.lang.String[] { "CultivateId", "Time", "OKFNJNAKHKF", "HHOHEFDDBLG", "COEDEMAFPMM", "BMOLOBMLFCK", "KHDKLIJEJEG", "CNGHBGNKCMP", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

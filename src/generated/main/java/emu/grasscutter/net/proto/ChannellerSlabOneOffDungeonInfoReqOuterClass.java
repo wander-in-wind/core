@@ -20,8 +20,8 @@ public final class ChannellerSlabOneOffDungeonInfoReqOuterClass {
   }
   /**
    * <pre>
-   * Name: OIFAMINIMPJ
-   * CmdId: 8079
+   * CmdId: 8017
+   * Obf: EAJEGEBCEOK
    * </pre>
    *
    * Protobuf type {@code ChannellerSlabOneOffDungeonInfoReq}
@@ -246,8 +246,8 @@ public final class ChannellerSlabOneOffDungeonInfoReqOuterClass {
     }
     /**
      * <pre>
-     * Name: OIFAMINIMPJ
-     * CmdId: 8079
+     * CmdId: 8017
+     * Obf: EAJEGEBCEOK
      * </pre>
      *
      * Protobuf type {@code ChannellerSlabOneOffDungeonInfoReq}

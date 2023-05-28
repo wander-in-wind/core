@@ -19,26 +19,26 @@ public final class SceneGalleryFlowerInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 cur_score = 6;</code>
+     * <code>uint32 cur_score = 10;</code>
      * @return The curScore.
      */
     int getCurScore();
 
     /**
-     * <code>uint32 target_score = 7;</code>
+     * <code>uint32 target_score = 4;</code>
      * @return The targetScore.
      */
     int getTargetScore();
 
     /**
-     * <code>uint32 end_time = 10;</code>
+     * <code>uint32 end_time = 1;</code>
      * @return The endTime.
      */
     int getEndTime();
   }
   /**
    * <pre>
-   * Name: HGHFCOCOBNC
+   * Obf: GDLNENFGMCP
    * </pre>
    *
    * Protobuf type {@code SceneGalleryFlowerInfo}
@@ -85,19 +85,19 @@ public final class SceneGalleryFlowerInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 8: {
 
-              curScore_ = input.readUInt32();
+              endTime_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 32: {
 
               targetScore_ = input.readUInt32();
               break;
             }
             case 80: {
 
-              endTime_ = input.readUInt32();
+              curScore_ = input.readUInt32();
               break;
             }
             default: {
@@ -132,10 +132,10 @@ public final class SceneGalleryFlowerInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryFlowerInfoOuterClass.SceneGalleryFlowerInfo.class, emu.grasscutter.net.proto.SceneGalleryFlowerInfoOuterClass.SceneGalleryFlowerInfo.Builder.class);
     }
 
-    public static final int CUR_SCORE_FIELD_NUMBER = 6;
+    public static final int CUR_SCORE_FIELD_NUMBER = 10;
     private int curScore_;
     /**
-     * <code>uint32 cur_score = 6;</code>
+     * <code>uint32 cur_score = 10;</code>
      * @return The curScore.
      */
     @java.lang.Override
@@ -143,10 +143,10 @@ public final class SceneGalleryFlowerInfoOuterClass {
       return curScore_;
     }
 
-    public static final int TARGET_SCORE_FIELD_NUMBER = 7;
+    public static final int TARGET_SCORE_FIELD_NUMBER = 4;
     private int targetScore_;
     /**
-     * <code>uint32 target_score = 7;</code>
+     * <code>uint32 target_score = 4;</code>
      * @return The targetScore.
      */
     @java.lang.Override
@@ -154,10 +154,10 @@ public final class SceneGalleryFlowerInfoOuterClass {
       return targetScore_;
     }
 
-    public static final int END_TIME_FIELD_NUMBER = 10;
+    public static final int END_TIME_FIELD_NUMBER = 1;
     private int endTime_;
     /**
-     * <code>uint32 end_time = 10;</code>
+     * <code>uint32 end_time = 1;</code>
      * @return The endTime.
      */
     @java.lang.Override
@@ -179,14 +179,14 @@ public final class SceneGalleryFlowerInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (curScore_ != 0) {
-        output.writeUInt32(6, curScore_);
+      if (endTime_ != 0) {
+        output.writeUInt32(1, endTime_);
       }
       if (targetScore_ != 0) {
-        output.writeUInt32(7, targetScore_);
+        output.writeUInt32(4, targetScore_);
       }
-      if (endTime_ != 0) {
-        output.writeUInt32(10, endTime_);
+      if (curScore_ != 0) {
+        output.writeUInt32(10, curScore_);
       }
       unknownFields.writeTo(output);
     }
@@ -197,17 +197,17 @@ public final class SceneGalleryFlowerInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (curScore_ != 0) {
+      if (endTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, curScore_);
+          .computeUInt32Size(1, endTime_);
       }
       if (targetScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, targetScore_);
+          .computeUInt32Size(4, targetScore_);
       }
-      if (endTime_ != 0) {
+      if (curScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, endTime_);
+          .computeUInt32Size(10, curScore_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -344,7 +344,7 @@ public final class SceneGalleryFlowerInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: HGHFCOCOBNC
+     * Obf: GDLNENFGMCP
      * </pre>
      *
      * Protobuf type {@code SceneGalleryFlowerInfo}
@@ -507,7 +507,7 @@ public final class SceneGalleryFlowerInfoOuterClass {
 
       private int curScore_ ;
       /**
-       * <code>uint32 cur_score = 6;</code>
+       * <code>uint32 cur_score = 10;</code>
        * @return The curScore.
        */
       @java.lang.Override
@@ -515,7 +515,7 @@ public final class SceneGalleryFlowerInfoOuterClass {
         return curScore_;
       }
       /**
-       * <code>uint32 cur_score = 6;</code>
+       * <code>uint32 cur_score = 10;</code>
        * @param value The curScore to set.
        * @return This builder for chaining.
        */
@@ -526,7 +526,7 @@ public final class SceneGalleryFlowerInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cur_score = 6;</code>
+       * <code>uint32 cur_score = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearCurScore() {
@@ -538,7 +538,7 @@ public final class SceneGalleryFlowerInfoOuterClass {
 
       private int targetScore_ ;
       /**
-       * <code>uint32 target_score = 7;</code>
+       * <code>uint32 target_score = 4;</code>
        * @return The targetScore.
        */
       @java.lang.Override
@@ -546,7 +546,7 @@ public final class SceneGalleryFlowerInfoOuterClass {
         return targetScore_;
       }
       /**
-       * <code>uint32 target_score = 7;</code>
+       * <code>uint32 target_score = 4;</code>
        * @param value The targetScore to set.
        * @return This builder for chaining.
        */
@@ -557,7 +557,7 @@ public final class SceneGalleryFlowerInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 target_score = 7;</code>
+       * <code>uint32 target_score = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetScore() {
@@ -569,7 +569,7 @@ public final class SceneGalleryFlowerInfoOuterClass {
 
       private int endTime_ ;
       /**
-       * <code>uint32 end_time = 10;</code>
+       * <code>uint32 end_time = 1;</code>
        * @return The endTime.
        */
       @java.lang.Override
@@ -577,7 +577,7 @@ public final class SceneGalleryFlowerInfoOuterClass {
         return endTime_;
       }
       /**
-       * <code>uint32 end_time = 10;</code>
+       * <code>uint32 end_time = 1;</code>
        * @param value The endTime to set.
        * @return This builder for chaining.
        */
@@ -588,7 +588,7 @@ public final class SceneGalleryFlowerInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 end_time = 10;</code>
+       * <code>uint32 end_time = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearEndTime() {
@@ -665,8 +665,8 @@ public final class SceneGalleryFlowerInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034SceneGalleryFlowerInfo.proto\"S\n\026SceneG" +
-      "alleryFlowerInfo\022\021\n\tcur_score\030\006 \001(\r\022\024\n\014t" +
-      "arget_score\030\007 \001(\r\022\020\n\010end_time\030\n \001(\rB\033\n\031e" +
+      "alleryFlowerInfo\022\021\n\tcur_score\030\n \001(\r\022\024\n\014t" +
+      "arget_score\030\004 \001(\r\022\020\n\010end_time\030\001 \001(\rB\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

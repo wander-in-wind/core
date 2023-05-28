@@ -19,19 +19,15 @@ public final class GCGHeartBeatNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *HCKIILHKKBE snooswap
-     * </pre>
-     *
-     * <code>uint32 server_seq = 7;</code>
+     * <code>uint32 server_seq = 4;</code>
      * @return The serverSeq.
      */
     int getServerSeq();
   }
   /**
    * <pre>
-   * Name: ONPDGODGHML
-   * CmdId: 7364
+   * CmdId: 7807
+   * Obf: IIMEOILCLMG
    * </pre>
    *
    * Protobuf type {@code GCGHeartBeatNotify}
@@ -78,7 +74,7 @@ public final class GCGHeartBeatNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 32: {
 
               serverSeq_ = input.readUInt32();
               break;
@@ -115,14 +111,10 @@ public final class GCGHeartBeatNotifyOuterClass {
               emu.grasscutter.net.proto.GCGHeartBeatNotifyOuterClass.GCGHeartBeatNotify.class, emu.grasscutter.net.proto.GCGHeartBeatNotifyOuterClass.GCGHeartBeatNotify.Builder.class);
     }
 
-    public static final int SERVER_SEQ_FIELD_NUMBER = 7;
+    public static final int SERVER_SEQ_FIELD_NUMBER = 4;
     private int serverSeq_;
     /**
-     * <pre>
-     *HCKIILHKKBE snooswap
-     * </pre>
-     *
-     * <code>uint32 server_seq = 7;</code>
+     * <code>uint32 server_seq = 4;</code>
      * @return The serverSeq.
      */
     @java.lang.Override
@@ -145,7 +137,7 @@ public final class GCGHeartBeatNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (serverSeq_ != 0) {
-        output.writeUInt32(7, serverSeq_);
+        output.writeUInt32(4, serverSeq_);
       }
       unknownFields.writeTo(output);
     }
@@ -158,7 +150,7 @@ public final class GCGHeartBeatNotifyOuterClass {
       size = 0;
       if (serverSeq_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, serverSeq_);
+          .computeUInt32Size(4, serverSeq_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -287,8 +279,8 @@ public final class GCGHeartBeatNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: ONPDGODGHML
-     * CmdId: 7364
+     * CmdId: 7807
+     * Obf: IIMEOILCLMG
      * </pre>
      *
      * Protobuf type {@code GCGHeartBeatNotify}
@@ -439,11 +431,7 @@ public final class GCGHeartBeatNotifyOuterClass {
 
       private int serverSeq_ ;
       /**
-       * <pre>
-       *HCKIILHKKBE snooswap
-       * </pre>
-       *
-       * <code>uint32 server_seq = 7;</code>
+       * <code>uint32 server_seq = 4;</code>
        * @return The serverSeq.
        */
       @java.lang.Override
@@ -451,11 +439,7 @@ public final class GCGHeartBeatNotifyOuterClass {
         return serverSeq_;
       }
       /**
-       * <pre>
-       *HCKIILHKKBE snooswap
-       * </pre>
-       *
-       * <code>uint32 server_seq = 7;</code>
+       * <code>uint32 server_seq = 4;</code>
        * @param value The serverSeq to set.
        * @return This builder for chaining.
        */
@@ -466,11 +450,7 @@ public final class GCGHeartBeatNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *HCKIILHKKBE snooswap
-       * </pre>
-       *
-       * <code>uint32 server_seq = 7;</code>
+       * <code>uint32 server_seq = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearServerSeq() {
@@ -547,7 +527,7 @@ public final class GCGHeartBeatNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030GCGHeartBeatNotify.proto\"(\n\022GCGHeartBe" +
-      "atNotify\022\022\n\nserver_seq\030\007 \001(\rB\033\n\031emu.gras" +
+      "atNotify\022\022\n\nserver_seq\030\004 \001(\rB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

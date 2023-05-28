@@ -19,11 +19,17 @@ public final class FleurFairFallSettleNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint32, .FleurFairFallSettleInfo&gt; settle_info_map = 8;</code>
+     * <code>uint32 minigame_id = 8;</code>
+     * @return The minigameId.
+     */
+    int getMinigameId();
+
+    /**
+     * <code>map&lt;uint32, .FleurFairFallSettleInfo&gt; settle_info_map = 13;</code>
      */
     int getSettleInfoMapCount();
     /**
-     * <code>map&lt;uint32, .FleurFairFallSettleInfo&gt; settle_info_map = 8;</code>
+     * <code>map&lt;uint32, .FleurFairFallSettleInfo&gt; settle_info_map = 13;</code>
      */
     boolean containsSettleInfoMap(
         int key);
@@ -34,34 +40,28 @@ public final class FleurFairFallSettleNotifyOuterClass {
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FleurFairFallSettleInfoOuterClass.FleurFairFallSettleInfo>
     getSettleInfoMap();
     /**
-     * <code>map&lt;uint32, .FleurFairFallSettleInfo&gt; settle_info_map = 8;</code>
+     * <code>map&lt;uint32, .FleurFairFallSettleInfo&gt; settle_info_map = 13;</code>
      */
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FleurFairFallSettleInfoOuterClass.FleurFairFallSettleInfo>
     getSettleInfoMapMap();
     /**
-     * <code>map&lt;uint32, .FleurFairFallSettleInfo&gt; settle_info_map = 8;</code>
+     * <code>map&lt;uint32, .FleurFairFallSettleInfo&gt; settle_info_map = 13;</code>
      */
 
     emu.grasscutter.net.proto.FleurFairFallSettleInfoOuterClass.FleurFairFallSettleInfo getSettleInfoMapOrDefault(
         int key,
         emu.grasscutter.net.proto.FleurFairFallSettleInfoOuterClass.FleurFairFallSettleInfo defaultValue);
     /**
-     * <code>map&lt;uint32, .FleurFairFallSettleInfo&gt; settle_info_map = 8;</code>
+     * <code>map&lt;uint32, .FleurFairFallSettleInfo&gt; settle_info_map = 13;</code>
      */
 
     emu.grasscutter.net.proto.FleurFairFallSettleInfoOuterClass.FleurFairFallSettleInfo getSettleInfoMapOrThrow(
         int key);
-
-    /**
-     * <code>uint32 minigame_id = 7;</code>
-     * @return The minigameId.
-     */
-    int getMinigameId();
   }
   /**
    * <pre>
-   * Name: JJHDGPCHPHD
-   * CmdId: 2027
+   * CmdId: 2112
+   * Obf: GNBFNMEAMNF
    * </pre>
    *
    * Protobuf type {@code FleurFairFallSettleNotify}
@@ -109,12 +109,12 @@ public final class FleurFairFallSettleNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 64: {
 
               minigameId_ = input.readUInt32();
               break;
             }
-            case 66: {
+            case 106: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 settleInfoMap_ = com.google.protobuf.MapField.newMapField(
                     SettleInfoMapDefaultEntryHolder.defaultEntry);
@@ -156,7 +156,7 @@ public final class FleurFairFallSettleNotifyOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 8:
+        case 13:
           return internalGetSettleInfoMap();
         default:
           throw new RuntimeException(
@@ -171,7 +171,18 @@ public final class FleurFairFallSettleNotifyOuterClass {
               emu.grasscutter.net.proto.FleurFairFallSettleNotifyOuterClass.FleurFairFallSettleNotify.class, emu.grasscutter.net.proto.FleurFairFallSettleNotifyOuterClass.FleurFairFallSettleNotify.Builder.class);
     }
 
-    public static final int SETTLE_INFO_MAP_FIELD_NUMBER = 8;
+    public static final int MINIGAME_ID_FIELD_NUMBER = 8;
+    private int minigameId_;
+    /**
+     * <code>uint32 minigame_id = 8;</code>
+     * @return The minigameId.
+     */
+    @java.lang.Override
+    public int getMinigameId() {
+      return minigameId_;
+    }
+
+    public static final int SETTLE_INFO_MAP_FIELD_NUMBER = 13;
     private static final class SettleInfoMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, emu.grasscutter.net.proto.FleurFairFallSettleInfoOuterClass.FleurFairFallSettleInfo> defaultEntry =
@@ -198,7 +209,7 @@ public final class FleurFairFallSettleNotifyOuterClass {
       return internalGetSettleInfoMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, .FleurFairFallSettleInfo&gt; settle_info_map = 8;</code>
+     * <code>map&lt;uint32, .FleurFairFallSettleInfo&gt; settle_info_map = 13;</code>
      */
 
     @java.lang.Override
@@ -216,7 +227,7 @@ public final class FleurFairFallSettleNotifyOuterClass {
       return getSettleInfoMapMap();
     }
     /**
-     * <code>map&lt;uint32, .FleurFairFallSettleInfo&gt; settle_info_map = 8;</code>
+     * <code>map&lt;uint32, .FleurFairFallSettleInfo&gt; settle_info_map = 13;</code>
      */
     @java.lang.Override
 
@@ -224,7 +235,7 @@ public final class FleurFairFallSettleNotifyOuterClass {
       return internalGetSettleInfoMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, .FleurFairFallSettleInfo&gt; settle_info_map = 8;</code>
+     * <code>map&lt;uint32, .FleurFairFallSettleInfo&gt; settle_info_map = 13;</code>
      */
     @java.lang.Override
 
@@ -237,7 +248,7 @@ public final class FleurFairFallSettleNotifyOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, .FleurFairFallSettleInfo&gt; settle_info_map = 8;</code>
+     * <code>map&lt;uint32, .FleurFairFallSettleInfo&gt; settle_info_map = 13;</code>
      */
     @java.lang.Override
 
@@ -250,17 +261,6 @@ public final class FleurFairFallSettleNotifyOuterClass {
         throw new java.lang.IllegalArgumentException();
       }
       return map.get(key);
-    }
-
-    public static final int MINIGAME_ID_FIELD_NUMBER = 7;
-    private int minigameId_;
-    /**
-     * <code>uint32 minigame_id = 7;</code>
-     * @return The minigameId.
-     */
-    @java.lang.Override
-    public int getMinigameId() {
-      return minigameId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -278,14 +278,14 @@ public final class FleurFairFallSettleNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (minigameId_ != 0) {
-        output.writeUInt32(7, minigameId_);
+        output.writeUInt32(8, minigameId_);
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetSettleInfoMap(),
           SettleInfoMapDefaultEntryHolder.defaultEntry,
-          8);
+          13);
       unknownFields.writeTo(output);
     }
 
@@ -297,7 +297,7 @@ public final class FleurFairFallSettleNotifyOuterClass {
       size = 0;
       if (minigameId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, minigameId_);
+          .computeUInt32Size(8, minigameId_);
       }
       for (java.util.Map.Entry<java.lang.Integer, emu.grasscutter.net.proto.FleurFairFallSettleInfoOuterClass.FleurFairFallSettleInfo> entry
            : internalGetSettleInfoMap().getMap().entrySet()) {
@@ -307,7 +307,7 @@ public final class FleurFairFallSettleNotifyOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(8, settleInfoMap__);
+            .computeMessageSize(13, settleInfoMap__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -324,10 +324,10 @@ public final class FleurFairFallSettleNotifyOuterClass {
       }
       emu.grasscutter.net.proto.FleurFairFallSettleNotifyOuterClass.FleurFairFallSettleNotify other = (emu.grasscutter.net.proto.FleurFairFallSettleNotifyOuterClass.FleurFairFallSettleNotify) obj;
 
-      if (!internalGetSettleInfoMap().equals(
-          other.internalGetSettleInfoMap())) return false;
       if (getMinigameId()
           != other.getMinigameId()) return false;
+      if (!internalGetSettleInfoMap().equals(
+          other.internalGetSettleInfoMap())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -339,12 +339,12 @@ public final class FleurFairFallSettleNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + MINIGAME_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getMinigameId();
       if (!internalGetSettleInfoMap().getMap().isEmpty()) {
         hash = (37 * hash) + SETTLE_INFO_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetSettleInfoMap().hashCode();
       }
-      hash = (37 * hash) + MINIGAME_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getMinigameId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -442,8 +442,8 @@ public final class FleurFairFallSettleNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: JJHDGPCHPHD
-     * CmdId: 2027
+     * CmdId: 2112
+     * Obf: GNBFNMEAMNF
      * </pre>
      *
      * Protobuf type {@code FleurFairFallSettleNotify}
@@ -461,7 +461,7 @@ public final class FleurFairFallSettleNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 8:
+          case 13:
             return internalGetSettleInfoMap();
           default:
             throw new RuntimeException(
@@ -472,7 +472,7 @@ public final class FleurFairFallSettleNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 8:
+          case 13:
             return internalGetMutableSettleInfoMap();
           default:
             throw new RuntimeException(
@@ -505,9 +505,9 @@ public final class FleurFairFallSettleNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        internalGetMutableSettleInfoMap().clear();
         minigameId_ = 0;
 
+        internalGetMutableSettleInfoMap().clear();
         return this;
       }
 
@@ -535,9 +535,9 @@ public final class FleurFairFallSettleNotifyOuterClass {
       public emu.grasscutter.net.proto.FleurFairFallSettleNotifyOuterClass.FleurFairFallSettleNotify buildPartial() {
         emu.grasscutter.net.proto.FleurFairFallSettleNotifyOuterClass.FleurFairFallSettleNotify result = new emu.grasscutter.net.proto.FleurFairFallSettleNotifyOuterClass.FleurFairFallSettleNotify(this);
         int from_bitField0_ = bitField0_;
+        result.minigameId_ = minigameId_;
         result.settleInfoMap_ = internalGetSettleInfoMap();
         result.settleInfoMap_.makeImmutable();
-        result.minigameId_ = minigameId_;
         onBuilt();
         return result;
       }
@@ -586,11 +586,11 @@ public final class FleurFairFallSettleNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FleurFairFallSettleNotifyOuterClass.FleurFairFallSettleNotify other) {
         if (other == emu.grasscutter.net.proto.FleurFairFallSettleNotifyOuterClass.FleurFairFallSettleNotify.getDefaultInstance()) return this;
-        internalGetMutableSettleInfoMap().mergeFrom(
-            other.internalGetSettleInfoMap());
         if (other.getMinigameId() != 0) {
           setMinigameId(other.getMinigameId());
         }
+        internalGetMutableSettleInfoMap().mergeFrom(
+            other.internalGetSettleInfoMap());
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -621,6 +621,37 @@ public final class FleurFairFallSettleNotifyOuterClass {
       }
       private int bitField0_;
 
+      private int minigameId_ ;
+      /**
+       * <code>uint32 minigame_id = 8;</code>
+       * @return The minigameId.
+       */
+      @java.lang.Override
+      public int getMinigameId() {
+        return minigameId_;
+      }
+      /**
+       * <code>uint32 minigame_id = 8;</code>
+       * @param value The minigameId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMinigameId(int value) {
+        
+        minigameId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 minigame_id = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMinigameId() {
+        
+        minigameId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private com.google.protobuf.MapField<
           java.lang.Integer, emu.grasscutter.net.proto.FleurFairFallSettleInfoOuterClass.FleurFairFallSettleInfo> settleInfoMap_;
       private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.FleurFairFallSettleInfoOuterClass.FleurFairFallSettleInfo>
@@ -648,7 +679,7 @@ public final class FleurFairFallSettleNotifyOuterClass {
         return internalGetSettleInfoMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, .FleurFairFallSettleInfo&gt; settle_info_map = 8;</code>
+       * <code>map&lt;uint32, .FleurFairFallSettleInfo&gt; settle_info_map = 13;</code>
        */
 
       @java.lang.Override
@@ -666,7 +697,7 @@ public final class FleurFairFallSettleNotifyOuterClass {
         return getSettleInfoMapMap();
       }
       /**
-       * <code>map&lt;uint32, .FleurFairFallSettleInfo&gt; settle_info_map = 8;</code>
+       * <code>map&lt;uint32, .FleurFairFallSettleInfo&gt; settle_info_map = 13;</code>
        */
       @java.lang.Override
 
@@ -674,7 +705,7 @@ public final class FleurFairFallSettleNotifyOuterClass {
         return internalGetSettleInfoMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, .FleurFairFallSettleInfo&gt; settle_info_map = 8;</code>
+       * <code>map&lt;uint32, .FleurFairFallSettleInfo&gt; settle_info_map = 13;</code>
        */
       @java.lang.Override
 
@@ -687,7 +718,7 @@ public final class FleurFairFallSettleNotifyOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, .FleurFairFallSettleInfo&gt; settle_info_map = 8;</code>
+       * <code>map&lt;uint32, .FleurFairFallSettleInfo&gt; settle_info_map = 13;</code>
        */
       @java.lang.Override
 
@@ -708,7 +739,7 @@ public final class FleurFairFallSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .FleurFairFallSettleInfo&gt; settle_info_map = 8;</code>
+       * <code>map&lt;uint32, .FleurFairFallSettleInfo&gt; settle_info_map = 13;</code>
        */
 
       public Builder removeSettleInfoMap(
@@ -727,7 +758,7 @@ public final class FleurFairFallSettleNotifyOuterClass {
         return internalGetMutableSettleInfoMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, .FleurFairFallSettleInfo&gt; settle_info_map = 8;</code>
+       * <code>map&lt;uint32, .FleurFairFallSettleInfo&gt; settle_info_map = 13;</code>
        */
       public Builder putSettleInfoMap(
           int key,
@@ -739,44 +770,13 @@ public final class FleurFairFallSettleNotifyOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .FleurFairFallSettleInfo&gt; settle_info_map = 8;</code>
+       * <code>map&lt;uint32, .FleurFairFallSettleInfo&gt; settle_info_map = 13;</code>
        */
 
       public Builder putAllSettleInfoMap(
           java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.FleurFairFallSettleInfoOuterClass.FleurFairFallSettleInfo> values) {
         internalGetMutableSettleInfoMap().getMutableMap()
             .putAll(values);
-        return this;
-      }
-
-      private int minigameId_ ;
-      /**
-       * <code>uint32 minigame_id = 7;</code>
-       * @return The minigameId.
-       */
-      @java.lang.Override
-      public int getMinigameId() {
-        return minigameId_;
-      }
-      /**
-       * <code>uint32 minigame_id = 7;</code>
-       * @param value The minigameId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMinigameId(int value) {
-        
-        minigameId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 minigame_id = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMinigameId() {
-        
-        minigameId_ = 0;
-        onChanged();
         return this;
       }
       @java.lang.Override
@@ -853,9 +853,9 @@ public final class FleurFairFallSettleNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\037FleurFairFallSettleNotify.proto\032\035Fleur" +
       "FairFallSettleInfo.proto\"\310\001\n\031FleurFairFa" +
-      "llSettleNotify\022F\n\017settle_info_map\030\010 \003(\0132" +
-      "-.FleurFairFallSettleNotify.SettleInfoMa" +
-      "pEntry\022\023\n\013minigame_id\030\007 \001(\r\032N\n\022SettleInf" +
+      "llSettleNotify\022\023\n\013minigame_id\030\010 \001(\r\022F\n\017s" +
+      "ettle_info_map\030\r \003(\0132-.FleurFairFallSett" +
+      "leNotify.SettleInfoMapEntry\032N\n\022SettleInf" +
       "oMapEntry\022\013\n\003key\030\001 \001(\r\022\'\n\005value\030\002 \001(\0132\030." +
       "FleurFairFallSettleInfo:\0028\001B\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
@@ -870,7 +870,7 @@ public final class FleurFairFallSettleNotifyOuterClass {
     internal_static_FleurFairFallSettleNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FleurFairFallSettleNotify_descriptor,
-        new java.lang.String[] { "SettleInfoMap", "MinigameId", });
+        new java.lang.String[] { "MinigameId", "SettleInfoMap", });
     internal_static_FleurFairFallSettleNotify_SettleInfoMapEntry_descriptor =
       internal_static_FleurFairFallSettleNotify_descriptor.getNestedTypes().get(0);
     internal_static_FleurFairFallSettleNotify_SettleInfoMapEntry_fieldAccessorTable = new

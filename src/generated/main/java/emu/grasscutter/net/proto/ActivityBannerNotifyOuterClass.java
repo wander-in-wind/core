@@ -19,21 +19,21 @@ public final class ActivityBannerNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 activity_id = 12;</code>
-     * @return The activityId.
-     */
-    int getActivityId();
-
-    /**
-     * <code>uint32 schedule_id = 3;</code>
+     * <code>uint32 schedule_id = 6;</code>
      * @return The scheduleId.
      */
     int getScheduleId();
+
+    /**
+     * <code>uint32 activity_id = 13;</code>
+     * @return The activityId.
+     */
+    int getActivityId();
   }
   /**
    * <pre>
-   * Name: FMNLOMEOFMG
-   * CmdId: 2018
+   * CmdId: 2078
+   * Obf: BLPLOJMDAKF
    * </pre>
    *
    * Protobuf type {@code ActivityBannerNotify}
@@ -80,12 +80,12 @@ public final class ActivityBannerNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 48: {
 
               scheduleId_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 104: {
 
               activityId_ = input.readUInt32();
               break;
@@ -122,26 +122,26 @@ public final class ActivityBannerNotifyOuterClass {
               emu.grasscutter.net.proto.ActivityBannerNotifyOuterClass.ActivityBannerNotify.class, emu.grasscutter.net.proto.ActivityBannerNotifyOuterClass.ActivityBannerNotify.Builder.class);
     }
 
-    public static final int ACTIVITY_ID_FIELD_NUMBER = 12;
-    private int activityId_;
-    /**
-     * <code>uint32 activity_id = 12;</code>
-     * @return The activityId.
-     */
-    @java.lang.Override
-    public int getActivityId() {
-      return activityId_;
-    }
-
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 3;
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 6;
     private int scheduleId_;
     /**
-     * <code>uint32 schedule_id = 3;</code>
+     * <code>uint32 schedule_id = 6;</code>
      * @return The scheduleId.
      */
     @java.lang.Override
     public int getScheduleId() {
       return scheduleId_;
+    }
+
+    public static final int ACTIVITY_ID_FIELD_NUMBER = 13;
+    private int activityId_;
+    /**
+     * <code>uint32 activity_id = 13;</code>
+     * @return The activityId.
+     */
+    @java.lang.Override
+    public int getActivityId() {
+      return activityId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -159,10 +159,10 @@ public final class ActivityBannerNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (scheduleId_ != 0) {
-        output.writeUInt32(3, scheduleId_);
+        output.writeUInt32(6, scheduleId_);
       }
       if (activityId_ != 0) {
-        output.writeUInt32(12, activityId_);
+        output.writeUInt32(13, activityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +175,11 @@ public final class ActivityBannerNotifyOuterClass {
       size = 0;
       if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, scheduleId_);
+          .computeUInt32Size(6, scheduleId_);
       }
       if (activityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, activityId_);
+          .computeUInt32Size(13, activityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +196,10 @@ public final class ActivityBannerNotifyOuterClass {
       }
       emu.grasscutter.net.proto.ActivityBannerNotifyOuterClass.ActivityBannerNotify other = (emu.grasscutter.net.proto.ActivityBannerNotifyOuterClass.ActivityBannerNotify) obj;
 
-      if (getActivityId()
-          != other.getActivityId()) return false;
       if (getScheduleId()
           != other.getScheduleId()) return false;
+      if (getActivityId()
+          != other.getActivityId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +211,10 @@ public final class ActivityBannerNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ACTIVITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getActivityId();
       hash = (37 * hash) + SCHEDULE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getScheduleId();
+      hash = (37 * hash) + ACTIVITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getActivityId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +312,8 @@ public final class ActivityBannerNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: FMNLOMEOFMG
-     * CmdId: 2018
+     * CmdId: 2078
+     * Obf: BLPLOJMDAKF
      * </pre>
      *
      * Protobuf type {@code ActivityBannerNotify}
@@ -353,9 +353,9 @@ public final class ActivityBannerNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        activityId_ = 0;
-
         scheduleId_ = 0;
+
+        activityId_ = 0;
 
         return this;
       }
@@ -383,8 +383,8 @@ public final class ActivityBannerNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ActivityBannerNotifyOuterClass.ActivityBannerNotify buildPartial() {
         emu.grasscutter.net.proto.ActivityBannerNotifyOuterClass.ActivityBannerNotify result = new emu.grasscutter.net.proto.ActivityBannerNotifyOuterClass.ActivityBannerNotify(this);
-        result.activityId_ = activityId_;
         result.scheduleId_ = scheduleId_;
+        result.activityId_ = activityId_;
         onBuilt();
         return result;
       }
@@ -433,11 +433,11 @@ public final class ActivityBannerNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ActivityBannerNotifyOuterClass.ActivityBannerNotify other) {
         if (other == emu.grasscutter.net.proto.ActivityBannerNotifyOuterClass.ActivityBannerNotify.getDefaultInstance()) return this;
-        if (other.getActivityId() != 0) {
-          setActivityId(other.getActivityId());
-        }
         if (other.getScheduleId() != 0) {
           setScheduleId(other.getScheduleId());
+        }
+        if (other.getActivityId() != 0) {
+          setActivityId(other.getActivityId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,40 +468,9 @@ public final class ActivityBannerNotifyOuterClass {
         return this;
       }
 
-      private int activityId_ ;
-      /**
-       * <code>uint32 activity_id = 12;</code>
-       * @return The activityId.
-       */
-      @java.lang.Override
-      public int getActivityId() {
-        return activityId_;
-      }
-      /**
-       * <code>uint32 activity_id = 12;</code>
-       * @param value The activityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setActivityId(int value) {
-        
-        activityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 activity_id = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearActivityId() {
-        
-        activityId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int scheduleId_ ;
       /**
-       * <code>uint32 schedule_id = 3;</code>
+       * <code>uint32 schedule_id = 6;</code>
        * @return The scheduleId.
        */
       @java.lang.Override
@@ -509,7 +478,7 @@ public final class ActivityBannerNotifyOuterClass {
         return scheduleId_;
       }
       /**
-       * <code>uint32 schedule_id = 3;</code>
+       * <code>uint32 schedule_id = 6;</code>
        * @param value The scheduleId to set.
        * @return This builder for chaining.
        */
@@ -520,12 +489,43 @@ public final class ActivityBannerNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 schedule_id = 3;</code>
+       * <code>uint32 schedule_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearScheduleId() {
         
         scheduleId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int activityId_ ;
+      /**
+       * <code>uint32 activity_id = 13;</code>
+       * @return The activityId.
+       */
+      @java.lang.Override
+      public int getActivityId() {
+        return activityId_;
+      }
+      /**
+       * <code>uint32 activity_id = 13;</code>
+       * @param value The activityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setActivityId(int value) {
+        
+        activityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 activity_id = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearActivityId() {
+        
+        activityId_ = 0;
         onChanged();
         return this;
       }
@@ -597,8 +597,8 @@ public final class ActivityBannerNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032ActivityBannerNotify.proto\"@\n\024Activity" +
-      "BannerNotify\022\023\n\013activity_id\030\014 \001(\r\022\023\n\013sch" +
-      "edule_id\030\003 \001(\rB\033\n\031emu.grasscutter.net.pr" +
+      "BannerNotify\022\023\n\013schedule_id\030\006 \001(\r\022\023\n\013act" +
+      "ivity_id\030\r \001(\rB\033\n\031emu.grasscutter.net.pr" +
       "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -610,7 +610,7 @@ public final class ActivityBannerNotifyOuterClass {
     internal_static_ActivityBannerNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ActivityBannerNotify_descriptor,
-        new java.lang.String[] { "ActivityId", "ScheduleId", });
+        new java.lang.String[] { "ScheduleId", "ActivityId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

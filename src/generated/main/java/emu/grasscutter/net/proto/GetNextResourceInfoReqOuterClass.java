@@ -20,8 +20,8 @@ public final class GetNextResourceInfoReqOuterClass {
   }
   /**
    * <pre>
-   * Name: AENJJOAOGLI
-   * CmdId: 185
+   * CmdId: 144
+   * Obf: DBIBJAANOIA
    * </pre>
    *
    * Protobuf type {@code GetNextResourceInfoReq}
@@ -246,8 +246,8 @@ public final class GetNextResourceInfoReqOuterClass {
     }
     /**
      * <pre>
-     * Name: AENJJOAOGLI
-     * CmdId: 185
+     * CmdId: 144
+     * Obf: DBIBJAANOIA
      * </pre>
      *
      * Protobuf type {@code GetNextResourceInfoReq}

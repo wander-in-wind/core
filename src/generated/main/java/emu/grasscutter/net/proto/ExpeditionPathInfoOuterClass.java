@@ -19,84 +19,84 @@ public final class ExpeditionPathInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 LOHMHPCOLBG = 10;</code>
-     * @return The lOHMHPCOLBG.
-     */
-    int getLOHMHPCOLBG();
-
-    /**
-     * <code>uint32 challenge_id = 1;</code>
+     * <code>uint32 challenge_id = 10;</code>
      * @return The challengeId.
      */
     int getChallengeId();
 
     /**
-     * <code>uint32 LDEBEBPADLF = 15;</code>
-     * @return The lDEBEBPADLF.
+     * <code>repeated uint32 avatar_id_list = 7;</code>
+     * @return A list containing the avatarIdList.
      */
-    int getLDEBEBPADLF();
+    java.util.List<java.lang.Integer> getAvatarIdListList();
+    /**
+     * <code>repeated uint32 avatar_id_list = 7;</code>
+     * @return The count of avatarIdList.
+     */
+    int getAvatarIdListCount();
+    /**
+     * <code>repeated uint32 avatar_id_list = 7;</code>
+     * @param index The index of the element to return.
+     * @return The avatarIdList at the given index.
+     */
+    int getAvatarIdList(int index);
 
     /**
-     * <code>.ExpeditionState state = 3;</code>
-     * @return The enum numeric value on the wire for state.
-     */
-    int getStateValue();
-    /**
-     * <code>.ExpeditionState state = 3;</code>
-     * @return The state.
-     */
-    emu.grasscutter.net.proto.ExpeditionStateOuterClass.ExpeditionState getState();
-
-    /**
-     * <code>uint32 OOKCMLMGMJB = 14;</code>
-     * @return The oOKCMLMGMJB.
-     */
-    int getOOKCMLMGMJB();
-
-    /**
-     * <code>uint32 start_time = 2;</code>
-     * @return The startTime.
-     */
-    int getStartTime();
-
-    /**
-     * <code>uint32 path_id = 13;</code>
-     * @return The pathId.
-     */
-    int getPathId();
-
-    /**
-     * <code>uint32 CBDEDACLCPN = 4;</code>
-     * @return The cBDEDACLCPN.
-     */
-    int getCBDEDACLCPN();
-
-    /**
-     * <code>float bonus_probability = 7;</code>
+     * <code>float bonus_probability = 8;</code>
      * @return The bonusProbability.
      */
     float getBonusProbability();
 
     /**
-     * <code>repeated uint32 avatar_id_list = 11;</code>
-     * @return A list containing the avatarIdList.
+     * <code>uint32 DPOMPOMLCKP = 11;</code>
+     * @return The dPOMPOMLCKP.
      */
-    java.util.List<java.lang.Integer> getAvatarIdListList();
+    int getDPOMPOMLCKP();
+
     /**
-     * <code>repeated uint32 avatar_id_list = 11;</code>
-     * @return The count of avatarIdList.
+     * <code>uint32 IBKDBMDJGDI = 3;</code>
+     * @return The iBKDBMDJGDI.
      */
-    int getAvatarIdListCount();
+    int getIBKDBMDJGDI();
+
     /**
-     * <code>repeated uint32 avatar_id_list = 11;</code>
-     * @param index The index of the element to return.
-     * @return The avatarIdList at the given index.
+     * <code>uint32 start_time = 13;</code>
+     * @return The startTime.
      */
-    int getAvatarIdList(int index);
+    int getStartTime();
+
+    /**
+     * <code>uint32 FLHKBCEIKLE = 15;</code>
+     * @return The fLHKBCEIKLE.
+     */
+    int getFLHKBCEIKLE();
+
+    /**
+     * <code>uint32 path_id = 2;</code>
+     * @return The pathId.
+     */
+    int getPathId();
+
+    /**
+     * <code>.ExpeditionState state = 6;</code>
+     * @return The enum numeric value on the wire for state.
+     */
+    int getStateValue();
+    /**
+     * <code>.ExpeditionState state = 6;</code>
+     * @return The state.
+     */
+    emu.grasscutter.net.proto.ExpeditionStateOuterClass.ExpeditionState getState();
+
+    /**
+     * <code>uint32 MFNGJOCIAPE = 1;</code>
+     * @return The mFNGJOCIAPE.
+     */
+    int getMFNGJOCIAPE();
   }
   /**
    * <pre>
-   * Name: BOLIIDNPFLP
+   * Obf: FMHECDDFAAE
    * </pre>
    *
    * Protobuf type {@code ExpeditionPathInfo}
@@ -111,8 +111,8 @@ public final class ExpeditionPathInfoOuterClass {
       super(builder);
     }
     private ExpeditionPathInfo() {
-      state_ = 0;
       avatarIdList_ = emptyIntList();
+      state_ = 0;
     }
 
     @java.lang.Override
@@ -148,36 +148,26 @@ public final class ExpeditionPathInfoOuterClass {
               break;
             case 8: {
 
-              challengeId_ = input.readUInt32();
+              mFNGJOCIAPE_ = input.readUInt32();
               break;
             }
             case 16: {
 
-              startTime_ = input.readUInt32();
+              pathId_ = input.readUInt32();
               break;
             }
             case 24: {
+
+              iBKDBMDJGDI_ = input.readUInt32();
+              break;
+            }
+            case 48: {
               int rawValue = input.readEnum();
 
               state_ = rawValue;
               break;
             }
-            case 32: {
-
-              cBDEDACLCPN_ = input.readUInt32();
-              break;
-            }
-            case 61: {
-
-              bonusProbability_ = input.readFloat();
-              break;
-            }
-            case 80: {
-
-              lOHMHPCOLBG_ = input.readUInt32();
-              break;
-            }
-            case 88: {
+            case 56: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 avatarIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -185,7 +175,7 @@ public final class ExpeditionPathInfoOuterClass {
               avatarIdList_.addInt(input.readUInt32());
               break;
             }
-            case 90: {
+            case 58: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -198,19 +188,29 @@ public final class ExpeditionPathInfoOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 104: {
+            case 69: {
 
-              pathId_ = input.readUInt32();
+              bonusProbability_ = input.readFloat();
               break;
             }
-            case 112: {
+            case 80: {
 
-              oOKCMLMGMJB_ = input.readUInt32();
+              challengeId_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              dPOMPOMLCKP_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              startTime_ = input.readUInt32();
               break;
             }
             case 120: {
 
-              lDEBEBPADLF_ = input.readUInt32();
+              fLHKBCEIKLE_ = input.readUInt32();
               break;
             }
             default: {
@@ -248,21 +248,10 @@ public final class ExpeditionPathInfoOuterClass {
               emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfo.class, emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfo.Builder.class);
     }
 
-    public static final int LOHMHPCOLBG_FIELD_NUMBER = 10;
-    private int lOHMHPCOLBG_;
-    /**
-     * <code>uint32 LOHMHPCOLBG = 10;</code>
-     * @return The lOHMHPCOLBG.
-     */
-    @java.lang.Override
-    public int getLOHMHPCOLBG() {
-      return lOHMHPCOLBG_;
-    }
-
-    public static final int CHALLENGE_ID_FIELD_NUMBER = 1;
+    public static final int CHALLENGE_ID_FIELD_NUMBER = 10;
     private int challengeId_;
     /**
-     * <code>uint32 challenge_id = 1;</code>
+     * <code>uint32 challenge_id = 10;</code>
      * @return The challengeId.
      */
     @java.lang.Override
@@ -270,95 +259,10 @@ public final class ExpeditionPathInfoOuterClass {
       return challengeId_;
     }
 
-    public static final int LDEBEBPADLF_FIELD_NUMBER = 15;
-    private int lDEBEBPADLF_;
-    /**
-     * <code>uint32 LDEBEBPADLF = 15;</code>
-     * @return The lDEBEBPADLF.
-     */
-    @java.lang.Override
-    public int getLDEBEBPADLF() {
-      return lDEBEBPADLF_;
-    }
-
-    public static final int STATE_FIELD_NUMBER = 3;
-    private int state_;
-    /**
-     * <code>.ExpeditionState state = 3;</code>
-     * @return The enum numeric value on the wire for state.
-     */
-    @java.lang.Override public int getStateValue() {
-      return state_;
-    }
-    /**
-     * <code>.ExpeditionState state = 3;</code>
-     * @return The state.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.ExpeditionStateOuterClass.ExpeditionState getState() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.ExpeditionStateOuterClass.ExpeditionState result = emu.grasscutter.net.proto.ExpeditionStateOuterClass.ExpeditionState.valueOf(state_);
-      return result == null ? emu.grasscutter.net.proto.ExpeditionStateOuterClass.ExpeditionState.UNRECOGNIZED : result;
-    }
-
-    public static final int OOKCMLMGMJB_FIELD_NUMBER = 14;
-    private int oOKCMLMGMJB_;
-    /**
-     * <code>uint32 OOKCMLMGMJB = 14;</code>
-     * @return The oOKCMLMGMJB.
-     */
-    @java.lang.Override
-    public int getOOKCMLMGMJB() {
-      return oOKCMLMGMJB_;
-    }
-
-    public static final int START_TIME_FIELD_NUMBER = 2;
-    private int startTime_;
-    /**
-     * <code>uint32 start_time = 2;</code>
-     * @return The startTime.
-     */
-    @java.lang.Override
-    public int getStartTime() {
-      return startTime_;
-    }
-
-    public static final int PATH_ID_FIELD_NUMBER = 13;
-    private int pathId_;
-    /**
-     * <code>uint32 path_id = 13;</code>
-     * @return The pathId.
-     */
-    @java.lang.Override
-    public int getPathId() {
-      return pathId_;
-    }
-
-    public static final int CBDEDACLCPN_FIELD_NUMBER = 4;
-    private int cBDEDACLCPN_;
-    /**
-     * <code>uint32 CBDEDACLCPN = 4;</code>
-     * @return The cBDEDACLCPN.
-     */
-    @java.lang.Override
-    public int getCBDEDACLCPN() {
-      return cBDEDACLCPN_;
-    }
-
-    public static final int BONUS_PROBABILITY_FIELD_NUMBER = 7;
-    private float bonusProbability_;
-    /**
-     * <code>float bonus_probability = 7;</code>
-     * @return The bonusProbability.
-     */
-    @java.lang.Override
-    public float getBonusProbability() {
-      return bonusProbability_;
-    }
-
-    public static final int AVATAR_ID_LIST_FIELD_NUMBER = 11;
+    public static final int AVATAR_ID_LIST_FIELD_NUMBER = 7;
     private com.google.protobuf.Internal.IntList avatarIdList_;
     /**
-     * <code>repeated uint32 avatar_id_list = 11;</code>
+     * <code>repeated uint32 avatar_id_list = 7;</code>
      * @return A list containing the avatarIdList.
      */
     @java.lang.Override
@@ -367,14 +271,14 @@ public final class ExpeditionPathInfoOuterClass {
       return avatarIdList_;
     }
     /**
-     * <code>repeated uint32 avatar_id_list = 11;</code>
+     * <code>repeated uint32 avatar_id_list = 7;</code>
      * @return The count of avatarIdList.
      */
     public int getAvatarIdListCount() {
       return avatarIdList_.size();
     }
     /**
-     * <code>repeated uint32 avatar_id_list = 11;</code>
+     * <code>repeated uint32 avatar_id_list = 7;</code>
      * @param index The index of the element to return.
      * @return The avatarIdList at the given index.
      */
@@ -382,6 +286,102 @@ public final class ExpeditionPathInfoOuterClass {
       return avatarIdList_.getInt(index);
     }
     private int avatarIdListMemoizedSerializedSize = -1;
+
+    public static final int BONUS_PROBABILITY_FIELD_NUMBER = 8;
+    private float bonusProbability_;
+    /**
+     * <code>float bonus_probability = 8;</code>
+     * @return The bonusProbability.
+     */
+    @java.lang.Override
+    public float getBonusProbability() {
+      return bonusProbability_;
+    }
+
+    public static final int DPOMPOMLCKP_FIELD_NUMBER = 11;
+    private int dPOMPOMLCKP_;
+    /**
+     * <code>uint32 DPOMPOMLCKP = 11;</code>
+     * @return The dPOMPOMLCKP.
+     */
+    @java.lang.Override
+    public int getDPOMPOMLCKP() {
+      return dPOMPOMLCKP_;
+    }
+
+    public static final int IBKDBMDJGDI_FIELD_NUMBER = 3;
+    private int iBKDBMDJGDI_;
+    /**
+     * <code>uint32 IBKDBMDJGDI = 3;</code>
+     * @return The iBKDBMDJGDI.
+     */
+    @java.lang.Override
+    public int getIBKDBMDJGDI() {
+      return iBKDBMDJGDI_;
+    }
+
+    public static final int START_TIME_FIELD_NUMBER = 13;
+    private int startTime_;
+    /**
+     * <code>uint32 start_time = 13;</code>
+     * @return The startTime.
+     */
+    @java.lang.Override
+    public int getStartTime() {
+      return startTime_;
+    }
+
+    public static final int FLHKBCEIKLE_FIELD_NUMBER = 15;
+    private int fLHKBCEIKLE_;
+    /**
+     * <code>uint32 FLHKBCEIKLE = 15;</code>
+     * @return The fLHKBCEIKLE.
+     */
+    @java.lang.Override
+    public int getFLHKBCEIKLE() {
+      return fLHKBCEIKLE_;
+    }
+
+    public static final int PATH_ID_FIELD_NUMBER = 2;
+    private int pathId_;
+    /**
+     * <code>uint32 path_id = 2;</code>
+     * @return The pathId.
+     */
+    @java.lang.Override
+    public int getPathId() {
+      return pathId_;
+    }
+
+    public static final int STATE_FIELD_NUMBER = 6;
+    private int state_;
+    /**
+     * <code>.ExpeditionState state = 6;</code>
+     * @return The enum numeric value on the wire for state.
+     */
+    @java.lang.Override public int getStateValue() {
+      return state_;
+    }
+    /**
+     * <code>.ExpeditionState state = 6;</code>
+     * @return The state.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.ExpeditionStateOuterClass.ExpeditionState getState() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.ExpeditionStateOuterClass.ExpeditionState result = emu.grasscutter.net.proto.ExpeditionStateOuterClass.ExpeditionState.valueOf(state_);
+      return result == null ? emu.grasscutter.net.proto.ExpeditionStateOuterClass.ExpeditionState.UNRECOGNIZED : result;
+    }
+
+    public static final int MFNGJOCIAPE_FIELD_NUMBER = 1;
+    private int mFNGJOCIAPE_;
+    /**
+     * <code>uint32 MFNGJOCIAPE = 1;</code>
+     * @return The mFNGJOCIAPE.
+     */
+    @java.lang.Override
+    public int getMFNGJOCIAPE() {
+      return mFNGJOCIAPE_;
+    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -398,39 +398,39 @@ public final class ExpeditionPathInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (challengeId_ != 0) {
-        output.writeUInt32(1, challengeId_);
+      if (mFNGJOCIAPE_ != 0) {
+        output.writeUInt32(1, mFNGJOCIAPE_);
       }
-      if (startTime_ != 0) {
-        output.writeUInt32(2, startTime_);
+      if (pathId_ != 0) {
+        output.writeUInt32(2, pathId_);
+      }
+      if (iBKDBMDJGDI_ != 0) {
+        output.writeUInt32(3, iBKDBMDJGDI_);
       }
       if (state_ != emu.grasscutter.net.proto.ExpeditionStateOuterClass.ExpeditionState.EXPEDITION_NONE.getNumber()) {
-        output.writeEnum(3, state_);
-      }
-      if (cBDEDACLCPN_ != 0) {
-        output.writeUInt32(4, cBDEDACLCPN_);
-      }
-      if (bonusProbability_ != 0F) {
-        output.writeFloat(7, bonusProbability_);
-      }
-      if (lOHMHPCOLBG_ != 0) {
-        output.writeUInt32(10, lOHMHPCOLBG_);
+        output.writeEnum(6, state_);
       }
       if (getAvatarIdListList().size() > 0) {
-        output.writeUInt32NoTag(90);
+        output.writeUInt32NoTag(58);
         output.writeUInt32NoTag(avatarIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < avatarIdList_.size(); i++) {
         output.writeUInt32NoTag(avatarIdList_.getInt(i));
       }
-      if (pathId_ != 0) {
-        output.writeUInt32(13, pathId_);
+      if (bonusProbability_ != 0F) {
+        output.writeFloat(8, bonusProbability_);
       }
-      if (oOKCMLMGMJB_ != 0) {
-        output.writeUInt32(14, oOKCMLMGMJB_);
+      if (challengeId_ != 0) {
+        output.writeUInt32(10, challengeId_);
       }
-      if (lDEBEBPADLF_ != 0) {
-        output.writeUInt32(15, lDEBEBPADLF_);
+      if (dPOMPOMLCKP_ != 0) {
+        output.writeUInt32(11, dPOMPOMLCKP_);
+      }
+      if (startTime_ != 0) {
+        output.writeUInt32(13, startTime_);
+      }
+      if (fLHKBCEIKLE_ != 0) {
+        output.writeUInt32(15, fLHKBCEIKLE_);
       }
       unknownFields.writeTo(output);
     }
@@ -441,29 +441,21 @@ public final class ExpeditionPathInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (challengeId_ != 0) {
+      if (mFNGJOCIAPE_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, challengeId_);
+          .computeUInt32Size(1, mFNGJOCIAPE_);
       }
-      if (startTime_ != 0) {
+      if (pathId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, startTime_);
+          .computeUInt32Size(2, pathId_);
+      }
+      if (iBKDBMDJGDI_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, iBKDBMDJGDI_);
       }
       if (state_ != emu.grasscutter.net.proto.ExpeditionStateOuterClass.ExpeditionState.EXPEDITION_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(3, state_);
-      }
-      if (cBDEDACLCPN_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, cBDEDACLCPN_);
-      }
-      if (bonusProbability_ != 0F) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(7, bonusProbability_);
-      }
-      if (lOHMHPCOLBG_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, lOHMHPCOLBG_);
+          .computeEnumSize(6, state_);
       }
       {
         int dataSize = 0;
@@ -479,17 +471,25 @@ public final class ExpeditionPathInfoOuterClass {
         }
         avatarIdListMemoizedSerializedSize = dataSize;
       }
-      if (pathId_ != 0) {
+      if (bonusProbability_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, pathId_);
+          .computeFloatSize(8, bonusProbability_);
       }
-      if (oOKCMLMGMJB_ != 0) {
+      if (challengeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, oOKCMLMGMJB_);
+          .computeUInt32Size(10, challengeId_);
       }
-      if (lDEBEBPADLF_ != 0) {
+      if (dPOMPOMLCKP_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, lDEBEBPADLF_);
+          .computeUInt32Size(11, dPOMPOMLCKP_);
+      }
+      if (startTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, startTime_);
+      }
+      if (fLHKBCEIKLE_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, fLHKBCEIKLE_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -506,26 +506,26 @@ public final class ExpeditionPathInfoOuterClass {
       }
       emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfo other = (emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfo) obj;
 
-      if (getLOHMHPCOLBG()
-          != other.getLOHMHPCOLBG()) return false;
       if (getChallengeId()
           != other.getChallengeId()) return false;
-      if (getLDEBEBPADLF()
-          != other.getLDEBEBPADLF()) return false;
-      if (state_ != other.state_) return false;
-      if (getOOKCMLMGMJB()
-          != other.getOOKCMLMGMJB()) return false;
-      if (getStartTime()
-          != other.getStartTime()) return false;
-      if (getPathId()
-          != other.getPathId()) return false;
-      if (getCBDEDACLCPN()
-          != other.getCBDEDACLCPN()) return false;
+      if (!getAvatarIdListList()
+          .equals(other.getAvatarIdListList())) return false;
       if (java.lang.Float.floatToIntBits(getBonusProbability())
           != java.lang.Float.floatToIntBits(
               other.getBonusProbability())) return false;
-      if (!getAvatarIdListList()
-          .equals(other.getAvatarIdListList())) return false;
+      if (getDPOMPOMLCKP()
+          != other.getDPOMPOMLCKP()) return false;
+      if (getIBKDBMDJGDI()
+          != other.getIBKDBMDJGDI()) return false;
+      if (getStartTime()
+          != other.getStartTime()) return false;
+      if (getFLHKBCEIKLE()
+          != other.getFLHKBCEIKLE()) return false;
+      if (getPathId()
+          != other.getPathId()) return false;
+      if (state_ != other.state_) return false;
+      if (getMFNGJOCIAPE()
+          != other.getMFNGJOCIAPE()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -537,29 +537,29 @@ public final class ExpeditionPathInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + LOHMHPCOLBG_FIELD_NUMBER;
-      hash = (53 * hash) + getLOHMHPCOLBG();
       hash = (37 * hash) + CHALLENGE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getChallengeId();
-      hash = (37 * hash) + LDEBEBPADLF_FIELD_NUMBER;
-      hash = (53 * hash) + getLDEBEBPADLF();
-      hash = (37 * hash) + STATE_FIELD_NUMBER;
-      hash = (53 * hash) + state_;
-      hash = (37 * hash) + OOKCMLMGMJB_FIELD_NUMBER;
-      hash = (53 * hash) + getOOKCMLMGMJB();
-      hash = (37 * hash) + START_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getStartTime();
-      hash = (37 * hash) + PATH_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getPathId();
-      hash = (37 * hash) + CBDEDACLCPN_FIELD_NUMBER;
-      hash = (53 * hash) + getCBDEDACLCPN();
-      hash = (37 * hash) + BONUS_PROBABILITY_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getBonusProbability());
       if (getAvatarIdListCount() > 0) {
         hash = (37 * hash) + AVATAR_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getAvatarIdListList().hashCode();
       }
+      hash = (37 * hash) + BONUS_PROBABILITY_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getBonusProbability());
+      hash = (37 * hash) + DPOMPOMLCKP_FIELD_NUMBER;
+      hash = (53 * hash) + getDPOMPOMLCKP();
+      hash = (37 * hash) + IBKDBMDJGDI_FIELD_NUMBER;
+      hash = (53 * hash) + getIBKDBMDJGDI();
+      hash = (37 * hash) + START_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getStartTime();
+      hash = (37 * hash) + FLHKBCEIKLE_FIELD_NUMBER;
+      hash = (53 * hash) + getFLHKBCEIKLE();
+      hash = (37 * hash) + PATH_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getPathId();
+      hash = (37 * hash) + STATE_FIELD_NUMBER;
+      hash = (53 * hash) + state_;
+      hash = (37 * hash) + MFNGJOCIAPE_FIELD_NUMBER;
+      hash = (53 * hash) + getMFNGJOCIAPE();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -657,7 +657,7 @@ public final class ExpeditionPathInfoOuterClass {
     }
     /**
      * <pre>
-     * Name: BOLIIDNPFLP
+     * Obf: FMHECDDFAAE
      * </pre>
      *
      * Protobuf type {@code ExpeditionPathInfo}
@@ -697,26 +697,26 @@ public final class ExpeditionPathInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        lOHMHPCOLBG_ = 0;
-
         challengeId_ = 0;
-
-        lDEBEBPADLF_ = 0;
-
-        state_ = 0;
-
-        oOKCMLMGMJB_ = 0;
-
-        startTime_ = 0;
-
-        pathId_ = 0;
-
-        cBDEDACLCPN_ = 0;
-
-        bonusProbability_ = 0F;
 
         avatarIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        bonusProbability_ = 0F;
+
+        dPOMPOMLCKP_ = 0;
+
+        iBKDBMDJGDI_ = 0;
+
+        startTime_ = 0;
+
+        fLHKBCEIKLE_ = 0;
+
+        pathId_ = 0;
+
+        state_ = 0;
+
+        mFNGJOCIAPE_ = 0;
+
         return this;
       }
 
@@ -744,20 +744,20 @@ public final class ExpeditionPathInfoOuterClass {
       public emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfo buildPartial() {
         emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfo result = new emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfo(this);
         int from_bitField0_ = bitField0_;
-        result.lOHMHPCOLBG_ = lOHMHPCOLBG_;
         result.challengeId_ = challengeId_;
-        result.lDEBEBPADLF_ = lDEBEBPADLF_;
-        result.state_ = state_;
-        result.oOKCMLMGMJB_ = oOKCMLMGMJB_;
-        result.startTime_ = startTime_;
-        result.pathId_ = pathId_;
-        result.cBDEDACLCPN_ = cBDEDACLCPN_;
-        result.bonusProbability_ = bonusProbability_;
         if (((bitField0_ & 0x00000001) != 0)) {
           avatarIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.avatarIdList_ = avatarIdList_;
+        result.bonusProbability_ = bonusProbability_;
+        result.dPOMPOMLCKP_ = dPOMPOMLCKP_;
+        result.iBKDBMDJGDI_ = iBKDBMDJGDI_;
+        result.startTime_ = startTime_;
+        result.fLHKBCEIKLE_ = fLHKBCEIKLE_;
+        result.pathId_ = pathId_;
+        result.state_ = state_;
+        result.mFNGJOCIAPE_ = mFNGJOCIAPE_;
         onBuilt();
         return result;
       }
@@ -806,32 +806,8 @@ public final class ExpeditionPathInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfo other) {
         if (other == emu.grasscutter.net.proto.ExpeditionPathInfoOuterClass.ExpeditionPathInfo.getDefaultInstance()) return this;
-        if (other.getLOHMHPCOLBG() != 0) {
-          setLOHMHPCOLBG(other.getLOHMHPCOLBG());
-        }
         if (other.getChallengeId() != 0) {
           setChallengeId(other.getChallengeId());
-        }
-        if (other.getLDEBEBPADLF() != 0) {
-          setLDEBEBPADLF(other.getLDEBEBPADLF());
-        }
-        if (other.state_ != 0) {
-          setStateValue(other.getStateValue());
-        }
-        if (other.getOOKCMLMGMJB() != 0) {
-          setOOKCMLMGMJB(other.getOOKCMLMGMJB());
-        }
-        if (other.getStartTime() != 0) {
-          setStartTime(other.getStartTime());
-        }
-        if (other.getPathId() != 0) {
-          setPathId(other.getPathId());
-        }
-        if (other.getCBDEDACLCPN() != 0) {
-          setCBDEDACLCPN(other.getCBDEDACLCPN());
-        }
-        if (other.getBonusProbability() != 0F) {
-          setBonusProbability(other.getBonusProbability());
         }
         if (!other.avatarIdList_.isEmpty()) {
           if (avatarIdList_.isEmpty()) {
@@ -842,6 +818,30 @@ public final class ExpeditionPathInfoOuterClass {
             avatarIdList_.addAll(other.avatarIdList_);
           }
           onChanged();
+        }
+        if (other.getBonusProbability() != 0F) {
+          setBonusProbability(other.getBonusProbability());
+        }
+        if (other.getDPOMPOMLCKP() != 0) {
+          setDPOMPOMLCKP(other.getDPOMPOMLCKP());
+        }
+        if (other.getIBKDBMDJGDI() != 0) {
+          setIBKDBMDJGDI(other.getIBKDBMDJGDI());
+        }
+        if (other.getStartTime() != 0) {
+          setStartTime(other.getStartTime());
+        }
+        if (other.getFLHKBCEIKLE() != 0) {
+          setFLHKBCEIKLE(other.getFLHKBCEIKLE());
+        }
+        if (other.getPathId() != 0) {
+          setPathId(other.getPathId());
+        }
+        if (other.state_ != 0) {
+          setStateValue(other.getStateValue());
+        }
+        if (other.getMFNGJOCIAPE() != 0) {
+          setMFNGJOCIAPE(other.getMFNGJOCIAPE());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -873,40 +873,9 @@ public final class ExpeditionPathInfoOuterClass {
       }
       private int bitField0_;
 
-      private int lOHMHPCOLBG_ ;
-      /**
-       * <code>uint32 LOHMHPCOLBG = 10;</code>
-       * @return The lOHMHPCOLBG.
-       */
-      @java.lang.Override
-      public int getLOHMHPCOLBG() {
-        return lOHMHPCOLBG_;
-      }
-      /**
-       * <code>uint32 LOHMHPCOLBG = 10;</code>
-       * @param value The lOHMHPCOLBG to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLOHMHPCOLBG(int value) {
-        
-        lOHMHPCOLBG_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 LOHMHPCOLBG = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLOHMHPCOLBG() {
-        
-        lOHMHPCOLBG_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int challengeId_ ;
       /**
-       * <code>uint32 challenge_id = 1;</code>
+       * <code>uint32 challenge_id = 10;</code>
        * @return The challengeId.
        */
       @java.lang.Override
@@ -914,7 +883,7 @@ public final class ExpeditionPathInfoOuterClass {
         return challengeId_;
       }
       /**
-       * <code>uint32 challenge_id = 1;</code>
+       * <code>uint32 challenge_id = 10;</code>
        * @param value The challengeId to set.
        * @return This builder for chaining.
        */
@@ -925,7 +894,7 @@ public final class ExpeditionPathInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 challenge_id = 1;</code>
+       * <code>uint32 challenge_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearChallengeId() {
@@ -935,47 +904,281 @@ public final class ExpeditionPathInfoOuterClass {
         return this;
       }
 
-      private int lDEBEBPADLF_ ;
-      /**
-       * <code>uint32 LDEBEBPADLF = 15;</code>
-       * @return The lDEBEBPADLF.
-       */
-      @java.lang.Override
-      public int getLDEBEBPADLF() {
-        return lDEBEBPADLF_;
+      private com.google.protobuf.Internal.IntList avatarIdList_ = emptyIntList();
+      private void ensureAvatarIdListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          avatarIdList_ = mutableCopy(avatarIdList_);
+          bitField0_ |= 0x00000001;
+         }
       }
       /**
-       * <code>uint32 LDEBEBPADLF = 15;</code>
-       * @param value The lDEBEBPADLF to set.
+       * <code>repeated uint32 avatar_id_list = 7;</code>
+       * @return A list containing the avatarIdList.
+       */
+      public java.util.List<java.lang.Integer>
+          getAvatarIdListList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(avatarIdList_) : avatarIdList_;
+      }
+      /**
+       * <code>repeated uint32 avatar_id_list = 7;</code>
+       * @return The count of avatarIdList.
+       */
+      public int getAvatarIdListCount() {
+        return avatarIdList_.size();
+      }
+      /**
+       * <code>repeated uint32 avatar_id_list = 7;</code>
+       * @param index The index of the element to return.
+       * @return The avatarIdList at the given index.
+       */
+      public int getAvatarIdList(int index) {
+        return avatarIdList_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 avatar_id_list = 7;</code>
+       * @param index The index to set the value at.
+       * @param value The avatarIdList to set.
        * @return This builder for chaining.
        */
-      public Builder setLDEBEBPADLF(int value) {
-        
-        lDEBEBPADLF_ = value;
+      public Builder setAvatarIdList(
+          int index, int value) {
+        ensureAvatarIdListIsMutable();
+        avatarIdList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 LDEBEBPADLF = 15;</code>
+       * <code>repeated uint32 avatar_id_list = 7;</code>
+       * @param value The avatarIdList to add.
        * @return This builder for chaining.
        */
-      public Builder clearLDEBEBPADLF() {
+      public Builder addAvatarIdList(int value) {
+        ensureAvatarIdListIsMutable();
+        avatarIdList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 avatar_id_list = 7;</code>
+       * @param values The avatarIdList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllAvatarIdList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureAvatarIdListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, avatarIdList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 avatar_id_list = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAvatarIdList() {
+        avatarIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private float bonusProbability_ ;
+      /**
+       * <code>float bonus_probability = 8;</code>
+       * @return The bonusProbability.
+       */
+      @java.lang.Override
+      public float getBonusProbability() {
+        return bonusProbability_;
+      }
+      /**
+       * <code>float bonus_probability = 8;</code>
+       * @param value The bonusProbability to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBonusProbability(float value) {
         
-        lDEBEBPADLF_ = 0;
+        bonusProbability_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>float bonus_probability = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBonusProbability() {
+        
+        bonusProbability_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private int dPOMPOMLCKP_ ;
+      /**
+       * <code>uint32 DPOMPOMLCKP = 11;</code>
+       * @return The dPOMPOMLCKP.
+       */
+      @java.lang.Override
+      public int getDPOMPOMLCKP() {
+        return dPOMPOMLCKP_;
+      }
+      /**
+       * <code>uint32 DPOMPOMLCKP = 11;</code>
+       * @param value The dPOMPOMLCKP to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDPOMPOMLCKP(int value) {
+        
+        dPOMPOMLCKP_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 DPOMPOMLCKP = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDPOMPOMLCKP() {
+        
+        dPOMPOMLCKP_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int iBKDBMDJGDI_ ;
+      /**
+       * <code>uint32 IBKDBMDJGDI = 3;</code>
+       * @return The iBKDBMDJGDI.
+       */
+      @java.lang.Override
+      public int getIBKDBMDJGDI() {
+        return iBKDBMDJGDI_;
+      }
+      /**
+       * <code>uint32 IBKDBMDJGDI = 3;</code>
+       * @param value The iBKDBMDJGDI to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIBKDBMDJGDI(int value) {
+        
+        iBKDBMDJGDI_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 IBKDBMDJGDI = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIBKDBMDJGDI() {
+        
+        iBKDBMDJGDI_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int startTime_ ;
+      /**
+       * <code>uint32 start_time = 13;</code>
+       * @return The startTime.
+       */
+      @java.lang.Override
+      public int getStartTime() {
+        return startTime_;
+      }
+      /**
+       * <code>uint32 start_time = 13;</code>
+       * @param value The startTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStartTime(int value) {
+        
+        startTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 start_time = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStartTime() {
+        
+        startTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int fLHKBCEIKLE_ ;
+      /**
+       * <code>uint32 FLHKBCEIKLE = 15;</code>
+       * @return The fLHKBCEIKLE.
+       */
+      @java.lang.Override
+      public int getFLHKBCEIKLE() {
+        return fLHKBCEIKLE_;
+      }
+      /**
+       * <code>uint32 FLHKBCEIKLE = 15;</code>
+       * @param value The fLHKBCEIKLE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFLHKBCEIKLE(int value) {
+        
+        fLHKBCEIKLE_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 FLHKBCEIKLE = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFLHKBCEIKLE() {
+        
+        fLHKBCEIKLE_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int pathId_ ;
+      /**
+       * <code>uint32 path_id = 2;</code>
+       * @return The pathId.
+       */
+      @java.lang.Override
+      public int getPathId() {
+        return pathId_;
+      }
+      /**
+       * <code>uint32 path_id = 2;</code>
+       * @param value The pathId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPathId(int value) {
+        
+        pathId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 path_id = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPathId() {
+        
+        pathId_ = 0;
         onChanged();
         return this;
       }
 
       private int state_ = 0;
       /**
-       * <code>.ExpeditionState state = 3;</code>
+       * <code>.ExpeditionState state = 6;</code>
        * @return The enum numeric value on the wire for state.
        */
       @java.lang.Override public int getStateValue() {
         return state_;
       }
       /**
-       * <code>.ExpeditionState state = 3;</code>
+       * <code>.ExpeditionState state = 6;</code>
        * @param value The enum numeric value on the wire for state to set.
        * @return This builder for chaining.
        */
@@ -986,7 +1189,7 @@ public final class ExpeditionPathInfoOuterClass {
         return this;
       }
       /**
-       * <code>.ExpeditionState state = 3;</code>
+       * <code>.ExpeditionState state = 6;</code>
        * @return The state.
        */
       @java.lang.Override
@@ -996,7 +1199,7 @@ public final class ExpeditionPathInfoOuterClass {
         return result == null ? emu.grasscutter.net.proto.ExpeditionStateOuterClass.ExpeditionState.UNRECOGNIZED : result;
       }
       /**
-       * <code>.ExpeditionState state = 3;</code>
+       * <code>.ExpeditionState state = 6;</code>
        * @param value The state to set.
        * @return This builder for chaining.
        */
@@ -1010,7 +1213,7 @@ public final class ExpeditionPathInfoOuterClass {
         return this;
       }
       /**
-       * <code>.ExpeditionState state = 3;</code>
+       * <code>.ExpeditionState state = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearState() {
@@ -1020,236 +1223,33 @@ public final class ExpeditionPathInfoOuterClass {
         return this;
       }
 
-      private int oOKCMLMGMJB_ ;
+      private int mFNGJOCIAPE_ ;
       /**
-       * <code>uint32 OOKCMLMGMJB = 14;</code>
-       * @return The oOKCMLMGMJB.
+       * <code>uint32 MFNGJOCIAPE = 1;</code>
+       * @return The mFNGJOCIAPE.
        */
       @java.lang.Override
-      public int getOOKCMLMGMJB() {
-        return oOKCMLMGMJB_;
+      public int getMFNGJOCIAPE() {
+        return mFNGJOCIAPE_;
       }
       /**
-       * <code>uint32 OOKCMLMGMJB = 14;</code>
-       * @param value The oOKCMLMGMJB to set.
+       * <code>uint32 MFNGJOCIAPE = 1;</code>
+       * @param value The mFNGJOCIAPE to set.
        * @return This builder for chaining.
        */
-      public Builder setOOKCMLMGMJB(int value) {
+      public Builder setMFNGJOCIAPE(int value) {
         
-        oOKCMLMGMJB_ = value;
+        mFNGJOCIAPE_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 OOKCMLMGMJB = 14;</code>
+       * <code>uint32 MFNGJOCIAPE = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOOKCMLMGMJB() {
+      public Builder clearMFNGJOCIAPE() {
         
-        oOKCMLMGMJB_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int startTime_ ;
-      /**
-       * <code>uint32 start_time = 2;</code>
-       * @return The startTime.
-       */
-      @java.lang.Override
-      public int getStartTime() {
-        return startTime_;
-      }
-      /**
-       * <code>uint32 start_time = 2;</code>
-       * @param value The startTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStartTime(int value) {
-        
-        startTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 start_time = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStartTime() {
-        
-        startTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int pathId_ ;
-      /**
-       * <code>uint32 path_id = 13;</code>
-       * @return The pathId.
-       */
-      @java.lang.Override
-      public int getPathId() {
-        return pathId_;
-      }
-      /**
-       * <code>uint32 path_id = 13;</code>
-       * @param value The pathId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPathId(int value) {
-        
-        pathId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 path_id = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPathId() {
-        
-        pathId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int cBDEDACLCPN_ ;
-      /**
-       * <code>uint32 CBDEDACLCPN = 4;</code>
-       * @return The cBDEDACLCPN.
-       */
-      @java.lang.Override
-      public int getCBDEDACLCPN() {
-        return cBDEDACLCPN_;
-      }
-      /**
-       * <code>uint32 CBDEDACLCPN = 4;</code>
-       * @param value The cBDEDACLCPN to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCBDEDACLCPN(int value) {
-        
-        cBDEDACLCPN_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 CBDEDACLCPN = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCBDEDACLCPN() {
-        
-        cBDEDACLCPN_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private float bonusProbability_ ;
-      /**
-       * <code>float bonus_probability = 7;</code>
-       * @return The bonusProbability.
-       */
-      @java.lang.Override
-      public float getBonusProbability() {
-        return bonusProbability_;
-      }
-      /**
-       * <code>float bonus_probability = 7;</code>
-       * @param value The bonusProbability to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBonusProbability(float value) {
-        
-        bonusProbability_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float bonus_probability = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBonusProbability() {
-        
-        bonusProbability_ = 0F;
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList avatarIdList_ = emptyIntList();
-      private void ensureAvatarIdListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          avatarIdList_ = mutableCopy(avatarIdList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-      /**
-       * <code>repeated uint32 avatar_id_list = 11;</code>
-       * @return A list containing the avatarIdList.
-       */
-      public java.util.List<java.lang.Integer>
-          getAvatarIdListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(avatarIdList_) : avatarIdList_;
-      }
-      /**
-       * <code>repeated uint32 avatar_id_list = 11;</code>
-       * @return The count of avatarIdList.
-       */
-      public int getAvatarIdListCount() {
-        return avatarIdList_.size();
-      }
-      /**
-       * <code>repeated uint32 avatar_id_list = 11;</code>
-       * @param index The index of the element to return.
-       * @return The avatarIdList at the given index.
-       */
-      public int getAvatarIdList(int index) {
-        return avatarIdList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 avatar_id_list = 11;</code>
-       * @param index The index to set the value at.
-       * @param value The avatarIdList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAvatarIdList(
-          int index, int value) {
-        ensureAvatarIdListIsMutable();
-        avatarIdList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 avatar_id_list = 11;</code>
-       * @param value The avatarIdList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAvatarIdList(int value) {
-        ensureAvatarIdListIsMutable();
-        avatarIdList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 avatar_id_list = 11;</code>
-       * @param values The avatarIdList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllAvatarIdList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureAvatarIdListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, avatarIdList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 avatar_id_list = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAvatarIdList() {
-        avatarIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
+        mFNGJOCIAPE_ = 0;
         onChanged();
         return this;
       }
@@ -1321,13 +1321,13 @@ public final class ExpeditionPathInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030ExpeditionPathInfo.proto\032\025ExpeditionSt" +
-      "ate.proto\"\367\001\n\022ExpeditionPathInfo\022\023\n\013LOHM" +
-      "HPCOLBG\030\n \001(\r\022\024\n\014challenge_id\030\001 \001(\r\022\023\n\013L" +
-      "DEBEBPADLF\030\017 \001(\r\022\037\n\005state\030\003 \001(\0162\020.Expedi" +
-      "tionState\022\023\n\013OOKCMLMGMJB\030\016 \001(\r\022\022\n\nstart_" +
-      "time\030\002 \001(\r\022\017\n\007path_id\030\r \001(\r\022\023\n\013CBDEDACLC" +
-      "PN\030\004 \001(\r\022\031\n\021bonus_probability\030\007 \001(\002\022\026\n\016a" +
-      "vatar_id_list\030\013 \003(\rB\033\n\031emu.grasscutter.n" +
+      "ate.proto\"\367\001\n\022ExpeditionPathInfo\022\024\n\014chal" +
+      "lenge_id\030\n \001(\r\022\026\n\016avatar_id_list\030\007 \003(\r\022\031" +
+      "\n\021bonus_probability\030\010 \001(\002\022\023\n\013DPOMPOMLCKP" +
+      "\030\013 \001(\r\022\023\n\013IBKDBMDJGDI\030\003 \001(\r\022\022\n\nstart_tim" +
+      "e\030\r \001(\r\022\023\n\013FLHKBCEIKLE\030\017 \001(\r\022\017\n\007path_id\030" +
+      "\002 \001(\r\022\037\n\005state\030\006 \001(\0162\020.ExpeditionState\022\023" +
+      "\n\013MFNGJOCIAPE\030\001 \001(\rB\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1340,7 +1340,7 @@ public final class ExpeditionPathInfoOuterClass {
     internal_static_ExpeditionPathInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ExpeditionPathInfo_descriptor,
-        new java.lang.String[] { "LOHMHPCOLBG", "ChallengeId", "LDEBEBPADLF", "State", "OOKCMLMGMJB", "StartTime", "PathId", "CBDEDACLCPN", "BonusProbability", "AvatarIdList", });
+        new java.lang.String[] { "ChallengeId", "AvatarIdList", "BonusProbability", "DPOMPOMLCKP", "IBKDBMDJGDI", "StartTime", "FLHKBCEIKLE", "PathId", "State", "MFNGJOCIAPE", });
     emu.grasscutter.net.proto.ExpeditionStateOuterClass.getDescriptor();
   }
 

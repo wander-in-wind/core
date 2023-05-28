@@ -19,21 +19,21 @@ public final class CityReputationLevelupNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 city_id = 1;</code>
+     * <code>uint32 city_id = 15;</code>
      * @return The cityId.
      */
     int getCityId();
 
     /**
-     * <code>uint32 level = 4;</code>
+     * <code>uint32 level = 3;</code>
      * @return The level.
      */
     int getLevel();
   }
   /**
    * <pre>
-   * Name: FEJKJMLPOLC
-   * CmdId: 2814
+   * CmdId: 2855
+   * Obf: AKGEAPMEBIK
    * </pre>
    *
    * Protobuf type {@code CityReputationLevelupNotify}
@@ -80,14 +80,14 @@ public final class CityReputationLevelupNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              cityId_ = input.readUInt32();
-              break;
-            }
-            case 32: {
+            case 24: {
 
               level_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              cityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,10 +122,10 @@ public final class CityReputationLevelupNotifyOuterClass {
               emu.grasscutter.net.proto.CityReputationLevelupNotifyOuterClass.CityReputationLevelupNotify.class, emu.grasscutter.net.proto.CityReputationLevelupNotifyOuterClass.CityReputationLevelupNotify.Builder.class);
     }
 
-    public static final int CITY_ID_FIELD_NUMBER = 1;
+    public static final int CITY_ID_FIELD_NUMBER = 15;
     private int cityId_;
     /**
-     * <code>uint32 city_id = 1;</code>
+     * <code>uint32 city_id = 15;</code>
      * @return The cityId.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class CityReputationLevelupNotifyOuterClass {
       return cityId_;
     }
 
-    public static final int LEVEL_FIELD_NUMBER = 4;
+    public static final int LEVEL_FIELD_NUMBER = 3;
     private int level_;
     /**
-     * <code>uint32 level = 4;</code>
+     * <code>uint32 level = 3;</code>
      * @return The level.
      */
     @java.lang.Override
@@ -158,11 +158,11 @@ public final class CityReputationLevelupNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (cityId_ != 0) {
-        output.writeUInt32(1, cityId_);
-      }
       if (level_ != 0) {
-        output.writeUInt32(4, level_);
+        output.writeUInt32(3, level_);
+      }
+      if (cityId_ != 0) {
+        output.writeUInt32(15, cityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class CityReputationLevelupNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (cityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, cityId_);
-      }
       if (level_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, level_);
+          .computeUInt32Size(3, level_);
+      }
+      if (cityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, cityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class CityReputationLevelupNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: FEJKJMLPOLC
-     * CmdId: 2814
+     * CmdId: 2855
+     * Obf: AKGEAPMEBIK
      * </pre>
      *
      * Protobuf type {@code CityReputationLevelupNotify}
@@ -470,7 +470,7 @@ public final class CityReputationLevelupNotifyOuterClass {
 
       private int cityId_ ;
       /**
-       * <code>uint32 city_id = 1;</code>
+       * <code>uint32 city_id = 15;</code>
        * @return The cityId.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class CityReputationLevelupNotifyOuterClass {
         return cityId_;
       }
       /**
-       * <code>uint32 city_id = 1;</code>
+       * <code>uint32 city_id = 15;</code>
        * @param value The cityId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class CityReputationLevelupNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 city_id = 1;</code>
+       * <code>uint32 city_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearCityId() {
@@ -501,7 +501,7 @@ public final class CityReputationLevelupNotifyOuterClass {
 
       private int level_ ;
       /**
-       * <code>uint32 level = 4;</code>
+       * <code>uint32 level = 3;</code>
        * @return The level.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class CityReputationLevelupNotifyOuterClass {
         return level_;
       }
       /**
-       * <code>uint32 level = 4;</code>
+       * <code>uint32 level = 3;</code>
        * @param value The level to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class CityReputationLevelupNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level = 4;</code>
+       * <code>uint32 level = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevel() {
@@ -597,8 +597,8 @@ public final class CityReputationLevelupNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!CityReputationLevelupNotify.proto\"=\n\033C" +
-      "ityReputationLevelupNotify\022\017\n\007city_id\030\001 " +
-      "\001(\r\022\r\n\005level\030\004 \001(\rB\033\n\031emu.grasscutter.ne" +
+      "ityReputationLevelupNotify\022\017\n\007city_id\030\017 " +
+      "\001(\r\022\r\n\005level\030\003 \001(\rB\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

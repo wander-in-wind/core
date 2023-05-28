@@ -19,21 +19,21 @@ public final class FinishLanternProjectionReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 1;</code>
+     * <code>uint32 level_id = 3;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>uint32 finish_time = 12;</code>
+     * <code>uint32 finish_time = 4;</code>
      * @return The finishTime.
      */
     int getFinishTime();
   }
   /**
    * <pre>
-   * Name: MHMFOLKBLFK
-   * CmdId: 8720
+   * CmdId: 8033
+   * Obf: AFICEFMKCFC
    * </pre>
    *
    * Protobuf type {@code FinishLanternProjectionReq}
@@ -80,12 +80,12 @@ public final class FinishLanternProjectionReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 24: {
 
               levelId_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 32: {
 
               finishTime_ = input.readUInt32();
               break;
@@ -122,10 +122,10 @@ public final class FinishLanternProjectionReqOuterClass {
               emu.grasscutter.net.proto.FinishLanternProjectionReqOuterClass.FinishLanternProjectionReq.class, emu.grasscutter.net.proto.FinishLanternProjectionReqOuterClass.FinishLanternProjectionReq.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 1;
+    public static final int LEVEL_ID_FIELD_NUMBER = 3;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 1;</code>
+     * <code>uint32 level_id = 3;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class FinishLanternProjectionReqOuterClass {
       return levelId_;
     }
 
-    public static final int FINISH_TIME_FIELD_NUMBER = 12;
+    public static final int FINISH_TIME_FIELD_NUMBER = 4;
     private int finishTime_;
     /**
-     * <code>uint32 finish_time = 12;</code>
+     * <code>uint32 finish_time = 4;</code>
      * @return The finishTime.
      */
     @java.lang.Override
@@ -159,10 +159,10 @@ public final class FinishLanternProjectionReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (levelId_ != 0) {
-        output.writeUInt32(1, levelId_);
+        output.writeUInt32(3, levelId_);
       }
       if (finishTime_ != 0) {
-        output.writeUInt32(12, finishTime_);
+        output.writeUInt32(4, finishTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +175,11 @@ public final class FinishLanternProjectionReqOuterClass {
       size = 0;
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, levelId_);
+          .computeUInt32Size(3, levelId_);
       }
       if (finishTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, finishTime_);
+          .computeUInt32Size(4, finishTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class FinishLanternProjectionReqOuterClass {
     }
     /**
      * <pre>
-     * Name: MHMFOLKBLFK
-     * CmdId: 8720
+     * CmdId: 8033
+     * Obf: AFICEFMKCFC
      * </pre>
      *
      * Protobuf type {@code FinishLanternProjectionReq}
@@ -470,7 +470,7 @@ public final class FinishLanternProjectionReqOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 1;</code>
+       * <code>uint32 level_id = 3;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class FinishLanternProjectionReqOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 1;</code>
+       * <code>uint32 level_id = 3;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class FinishLanternProjectionReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 1;</code>
+       * <code>uint32 level_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -501,7 +501,7 @@ public final class FinishLanternProjectionReqOuterClass {
 
       private int finishTime_ ;
       /**
-       * <code>uint32 finish_time = 12;</code>
+       * <code>uint32 finish_time = 4;</code>
        * @return The finishTime.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class FinishLanternProjectionReqOuterClass {
         return finishTime_;
       }
       /**
-       * <code>uint32 finish_time = 12;</code>
+       * <code>uint32 finish_time = 4;</code>
        * @param value The finishTime to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class FinishLanternProjectionReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 finish_time = 12;</code>
+       * <code>uint32 finish_time = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearFinishTime() {
@@ -597,8 +597,8 @@ public final class FinishLanternProjectionReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n FinishLanternProjectionReq.proto\"C\n\032Fi" +
-      "nishLanternProjectionReq\022\020\n\010level_id\030\001 \001" +
-      "(\r\022\023\n\013finish_time\030\014 \001(\rB\033\n\031emu.grasscutt" +
+      "nishLanternProjectionReq\022\020\n\010level_id\030\003 \001" +
+      "(\r\022\023\n\013finish_time\030\004 \001(\rB\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

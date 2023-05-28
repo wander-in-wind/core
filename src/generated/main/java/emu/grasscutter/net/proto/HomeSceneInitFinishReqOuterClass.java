@@ -20,8 +20,8 @@ public final class HomeSceneInitFinishReqOuterClass {
   }
   /**
    * <pre>
-   * Name: BKKCOCNANDN
-   * CmdId: 4900
+   * CmdId: 4497
+   * Obf: JJFGMDDJNEN
    * </pre>
    *
    * Protobuf type {@code HomeSceneInitFinishReq}
@@ -246,8 +246,8 @@ public final class HomeSceneInitFinishReqOuterClass {
     }
     /**
      * <pre>
-     * Name: BKKCOCNANDN
-     * CmdId: 4900
+     * CmdId: 4497
+     * Obf: JJFGMDDJNEN
      * </pre>
      *
      * Protobuf type {@code HomeSceneInitFinishReq}

@@ -20,8 +20,8 @@ public final class FungusFighterRestartTraningDungeonReqOuterClass {
   }
   /**
    * <pre>
-   * Name: DEAFLGBLKPA
-   * CmdId: 21003
+   * CmdId: 20014
+   * Obf: BLEHNLOIEGM
    * </pre>
    *
    * Protobuf type {@code FungusFighterRestartTraningDungeonReq}
@@ -246,8 +246,8 @@ public final class FungusFighterRestartTraningDungeonReqOuterClass {
     }
     /**
      * <pre>
-     * Name: DEAFLGBLKPA
-     * CmdId: 21003
+     * CmdId: 20014
+     * Obf: BLEHNLOIEGM
      * </pre>
      *
      * Protobuf type {@code FungusFighterRestartTraningDungeonReq}

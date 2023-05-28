@@ -16,7 +16,7 @@ public final class FriendEnterHomeOptionOuterClass {
   }
   /**
    * <pre>
-   * Name: HPAIEMHJBDF
+   * Obf: CEAPGMBAHFJ
    * </pre>
    *
    * Protobuf enum {@code FriendEnterHomeOption}

@@ -19,15 +19,15 @@ public final class PublishCustomDungeonRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 14;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * Name: NLCLGMAIEIE
-   * CmdId: 6217
+   * CmdId: 6235
+   * Obf: GFCAHHKDCMF
    * </pre>
    *
    * Protobuf type {@code PublishCustomDungeonRsp}
@@ -74,7 +74,7 @@ public final class PublishCustomDungeonRspOuterClass {
             case 0:
               done = true;
               break;
-            case 112: {
+            case 8: {
 
               retcode_ = input.readInt32();
               break;
@@ -111,10 +111,10 @@ public final class PublishCustomDungeonRspOuterClass {
               emu.grasscutter.net.proto.PublishCustomDungeonRspOuterClass.PublishCustomDungeonRsp.class, emu.grasscutter.net.proto.PublishCustomDungeonRspOuterClass.PublishCustomDungeonRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 14;
+    public static final int RETCODE_FIELD_NUMBER = 1;
     private int retcode_;
     /**
-     * <code>int32 retcode = 14;</code>
+     * <code>int32 retcode = 1;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class PublishCustomDungeonRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(14, retcode_);
+        output.writeInt32(1, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class PublishCustomDungeonRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(14, retcode_);
+          .computeInt32Size(1, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class PublishCustomDungeonRspOuterClass {
     }
     /**
      * <pre>
-     * Name: NLCLGMAIEIE
-     * CmdId: 6217
+     * CmdId: 6235
+     * Obf: GFCAHHKDCMF
      * </pre>
      *
      * Protobuf type {@code PublishCustomDungeonRsp}
@@ -431,7 +431,7 @@ public final class PublishCustomDungeonRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 1;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class PublishCustomDungeonRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 1;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class PublishCustomDungeonRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -527,7 +527,7 @@ public final class PublishCustomDungeonRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035PublishCustomDungeonRsp.proto\"*\n\027Publi" +
-      "shCustomDungeonRsp\022\017\n\007retcode\030\016 \001(\005B\033\n\031e" +
+      "shCustomDungeonRsp\022\017\n\007retcode\030\001 \001(\005B\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -16,7 +16,7 @@ public final class ChangeEnergyReasonOuterClass {
   }
   /**
    * <pre>
-   * Name: CPBMIAMDLPE
+   * Obf: GEHMDJHCOIE
    * </pre>
    *
    * Protobuf enum {@code ChangeEnergyReason}

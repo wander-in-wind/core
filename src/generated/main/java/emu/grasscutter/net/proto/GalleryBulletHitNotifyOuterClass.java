@@ -19,21 +19,21 @@ public final class GalleryBulletHitNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 gallery_id = 15;</code>
+     * <code>uint32 gallery_id = 8;</code>
      * @return The galleryId.
      */
     int getGalleryId();
 
     /**
-     * <code>uint32 hit_count = 8;</code>
+     * <code>uint32 hit_count = 11;</code>
      * @return The hitCount.
      */
     int getHitCount();
   }
   /**
    * <pre>
-   * Name: DICLNBCEGHA
-   * CmdId: 5559
+   * CmdId: 5584
+   * Obf: MOCNEPOFOLB
    * </pre>
    *
    * Protobuf type {@code GalleryBulletHitNotify}
@@ -82,12 +82,12 @@ public final class GalleryBulletHitNotifyOuterClass {
               break;
             case 64: {
 
-              hitCount_ = input.readUInt32();
+              galleryId_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 88: {
 
-              galleryId_ = input.readUInt32();
+              hitCount_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,10 +122,10 @@ public final class GalleryBulletHitNotifyOuterClass {
               emu.grasscutter.net.proto.GalleryBulletHitNotifyOuterClass.GalleryBulletHitNotify.class, emu.grasscutter.net.proto.GalleryBulletHitNotifyOuterClass.GalleryBulletHitNotify.Builder.class);
     }
 
-    public static final int GALLERY_ID_FIELD_NUMBER = 15;
+    public static final int GALLERY_ID_FIELD_NUMBER = 8;
     private int galleryId_;
     /**
-     * <code>uint32 gallery_id = 15;</code>
+     * <code>uint32 gallery_id = 8;</code>
      * @return The galleryId.
      */
     @java.lang.Override
@@ -133,10 +133,10 @@ public final class GalleryBulletHitNotifyOuterClass {
       return galleryId_;
     }
 
-    public static final int HIT_COUNT_FIELD_NUMBER = 8;
+    public static final int HIT_COUNT_FIELD_NUMBER = 11;
     private int hitCount_;
     /**
-     * <code>uint32 hit_count = 8;</code>
+     * <code>uint32 hit_count = 11;</code>
      * @return The hitCount.
      */
     @java.lang.Override
@@ -158,11 +158,11 @@ public final class GalleryBulletHitNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (hitCount_ != 0) {
-        output.writeUInt32(8, hitCount_);
-      }
       if (galleryId_ != 0) {
-        output.writeUInt32(15, galleryId_);
+        output.writeUInt32(8, galleryId_);
+      }
+      if (hitCount_ != 0) {
+        output.writeUInt32(11, hitCount_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class GalleryBulletHitNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (hitCount_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, hitCount_);
-      }
       if (galleryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, galleryId_);
+          .computeUInt32Size(8, galleryId_);
+      }
+      if (hitCount_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, hitCount_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +312,8 @@ public final class GalleryBulletHitNotifyOuterClass {
     }
     /**
      * <pre>
-     * Name: DICLNBCEGHA
-     * CmdId: 5559
+     * CmdId: 5584
+     * Obf: MOCNEPOFOLB
      * </pre>
      *
      * Protobuf type {@code GalleryBulletHitNotify}
@@ -470,7 +470,7 @@ public final class GalleryBulletHitNotifyOuterClass {
 
       private int galleryId_ ;
       /**
-       * <code>uint32 gallery_id = 15;</code>
+       * <code>uint32 gallery_id = 8;</code>
        * @return The galleryId.
        */
       @java.lang.Override
@@ -478,7 +478,7 @@ public final class GalleryBulletHitNotifyOuterClass {
         return galleryId_;
       }
       /**
-       * <code>uint32 gallery_id = 15;</code>
+       * <code>uint32 gallery_id = 8;</code>
        * @param value The galleryId to set.
        * @return This builder for chaining.
        */
@@ -489,7 +489,7 @@ public final class GalleryBulletHitNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gallery_id = 15;</code>
+       * <code>uint32 gallery_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearGalleryId() {
@@ -501,7 +501,7 @@ public final class GalleryBulletHitNotifyOuterClass {
 
       private int hitCount_ ;
       /**
-       * <code>uint32 hit_count = 8;</code>
+       * <code>uint32 hit_count = 11;</code>
        * @return The hitCount.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class GalleryBulletHitNotifyOuterClass {
         return hitCount_;
       }
       /**
-       * <code>uint32 hit_count = 8;</code>
+       * <code>uint32 hit_count = 11;</code>
        * @param value The hitCount to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class GalleryBulletHitNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 hit_count = 8;</code>
+       * <code>uint32 hit_count = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearHitCount() {
@@ -597,8 +597,8 @@ public final class GalleryBulletHitNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034GalleryBulletHitNotify.proto\"?\n\026Galler" +
-      "yBulletHitNotify\022\022\n\ngallery_id\030\017 \001(\r\022\021\n\t" +
-      "hit_count\030\010 \001(\rB\033\n\031emu.grasscutter.net.p" +
+      "yBulletHitNotify\022\022\n\ngallery_id\030\010 \001(\r\022\021\n\t" +
+      "hit_count\030\013 \001(\rB\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

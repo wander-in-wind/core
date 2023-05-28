@@ -43,27 +43,27 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
         int index);
 
     /**
-     * <code>uint32 stage_id = 14;</code>
+     * <code>uint32 difficulty_id = 14;</code>
+     * @return The difficultyId.
+     */
+    int getDifficultyId();
+
+    /**
+     * <code>uint32 stage_id = 5;</code>
      * @return The stageId.
      */
     int getStageId();
 
     /**
-     * <code>uint32 activity_id = 1;</code>
+     * <code>uint32 activity_id = 2;</code>
      * @return The activityId.
      */
     int getActivityId();
-
-    /**
-     * <code>uint32 difficulty_id = 11;</code>
-     * @return The difficultyId.
-     */
-    int getDifficultyId();
   }
   /**
    * <pre>
-   * Name: IAIKNJPDOJB
-   * CmdId: 8930
+   * CmdId: 8326
+   * Obf: EOBIHPJLCPA
    * </pre>
    *
    * Protobuf type {@code SumoSelectTeamAndEnterDungeonReq}
@@ -112,9 +112,14 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 16: {
 
               activityId_ = input.readUInt32();
+              break;
+            }
+            case 40: {
+
+              stageId_ = input.readUInt32();
               break;
             }
             case 50: {
@@ -126,14 +131,9 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.parser(), extensionRegistry));
               break;
             }
-            case 88: {
-
-              difficultyId_ = input.readUInt32();
-              break;
-            }
             case 112: {
 
-              stageId_ = input.readUInt32();
+              difficultyId_ = input.readUInt32();
               break;
             }
             default: {
@@ -211,10 +211,21 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
       return teamList_.get(index);
     }
 
-    public static final int STAGE_ID_FIELD_NUMBER = 14;
+    public static final int DIFFICULTY_ID_FIELD_NUMBER = 14;
+    private int difficultyId_;
+    /**
+     * <code>uint32 difficulty_id = 14;</code>
+     * @return The difficultyId.
+     */
+    @java.lang.Override
+    public int getDifficultyId() {
+      return difficultyId_;
+    }
+
+    public static final int STAGE_ID_FIELD_NUMBER = 5;
     private int stageId_;
     /**
-     * <code>uint32 stage_id = 14;</code>
+     * <code>uint32 stage_id = 5;</code>
      * @return The stageId.
      */
     @java.lang.Override
@@ -222,26 +233,15 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
       return stageId_;
     }
 
-    public static final int ACTIVITY_ID_FIELD_NUMBER = 1;
+    public static final int ACTIVITY_ID_FIELD_NUMBER = 2;
     private int activityId_;
     /**
-     * <code>uint32 activity_id = 1;</code>
+     * <code>uint32 activity_id = 2;</code>
      * @return The activityId.
      */
     @java.lang.Override
     public int getActivityId() {
       return activityId_;
-    }
-
-    public static final int DIFFICULTY_ID_FIELD_NUMBER = 11;
-    private int difficultyId_;
-    /**
-     * <code>uint32 difficulty_id = 11;</code>
-     * @return The difficultyId.
-     */
-    @java.lang.Override
-    public int getDifficultyId() {
-      return difficultyId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -259,16 +259,16 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (activityId_ != 0) {
-        output.writeUInt32(1, activityId_);
+        output.writeUInt32(2, activityId_);
+      }
+      if (stageId_ != 0) {
+        output.writeUInt32(5, stageId_);
       }
       for (int i = 0; i < teamList_.size(); i++) {
         output.writeMessage(6, teamList_.get(i));
       }
       if (difficultyId_ != 0) {
-        output.writeUInt32(11, difficultyId_);
-      }
-      if (stageId_ != 0) {
-        output.writeUInt32(14, stageId_);
+        output.writeUInt32(14, difficultyId_);
       }
       unknownFields.writeTo(output);
     }
@@ -281,7 +281,11 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
       size = 0;
       if (activityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, activityId_);
+          .computeUInt32Size(2, activityId_);
+      }
+      if (stageId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, stageId_);
       }
       for (int i = 0; i < teamList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -289,11 +293,7 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
       }
       if (difficultyId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, difficultyId_);
-      }
-      if (stageId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, stageId_);
+          .computeUInt32Size(14, difficultyId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,12 +312,12 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
 
       if (!getTeamListList()
           .equals(other.getTeamListList())) return false;
+      if (getDifficultyId()
+          != other.getDifficultyId()) return false;
       if (getStageId()
           != other.getStageId()) return false;
       if (getActivityId()
           != other.getActivityId()) return false;
-      if (getDifficultyId()
-          != other.getDifficultyId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -333,12 +333,12 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
         hash = (37 * hash) + TEAM_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getTeamListList().hashCode();
       }
+      hash = (37 * hash) + DIFFICULTY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getDifficultyId();
       hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getStageId();
       hash = (37 * hash) + ACTIVITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getActivityId();
-      hash = (37 * hash) + DIFFICULTY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getDifficultyId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -436,8 +436,8 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
     }
     /**
      * <pre>
-     * Name: IAIKNJPDOJB
-     * CmdId: 8930
+     * CmdId: 8326
+     * Obf: EOBIHPJLCPA
      * </pre>
      *
      * Protobuf type {@code SumoSelectTeamAndEnterDungeonReq}
@@ -484,11 +484,11 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
         } else {
           teamListBuilder_.clear();
         }
+        difficultyId_ = 0;
+
         stageId_ = 0;
 
         activityId_ = 0;
-
-        difficultyId_ = 0;
 
         return this;
       }
@@ -526,9 +526,9 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
         } else {
           result.teamList_ = teamListBuilder_.build();
         }
+        result.difficultyId_ = difficultyId_;
         result.stageId_ = stageId_;
         result.activityId_ = activityId_;
-        result.difficultyId_ = difficultyId_;
         onBuilt();
         return result;
       }
@@ -603,14 +603,14 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
             }
           }
         }
+        if (other.getDifficultyId() != 0) {
+          setDifficultyId(other.getDifficultyId());
+        }
         if (other.getStageId() != 0) {
           setStageId(other.getStageId());
         }
         if (other.getActivityId() != 0) {
           setActivityId(other.getActivityId());
-        }
-        if (other.getDifficultyId() != 0) {
-          setDifficultyId(other.getDifficultyId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -882,9 +882,40 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
         return teamListBuilder_;
       }
 
+      private int difficultyId_ ;
+      /**
+       * <code>uint32 difficulty_id = 14;</code>
+       * @return The difficultyId.
+       */
+      @java.lang.Override
+      public int getDifficultyId() {
+        return difficultyId_;
+      }
+      /**
+       * <code>uint32 difficulty_id = 14;</code>
+       * @param value The difficultyId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDifficultyId(int value) {
+        
+        difficultyId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 difficulty_id = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDifficultyId() {
+        
+        difficultyId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int stageId_ ;
       /**
-       * <code>uint32 stage_id = 14;</code>
+       * <code>uint32 stage_id = 5;</code>
        * @return The stageId.
        */
       @java.lang.Override
@@ -892,7 +923,7 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
         return stageId_;
       }
       /**
-       * <code>uint32 stage_id = 14;</code>
+       * <code>uint32 stage_id = 5;</code>
        * @param value The stageId to set.
        * @return This builder for chaining.
        */
@@ -903,7 +934,7 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stage_id = 14;</code>
+       * <code>uint32 stage_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearStageId() {
@@ -915,7 +946,7 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
 
       private int activityId_ ;
       /**
-       * <code>uint32 activity_id = 1;</code>
+       * <code>uint32 activity_id = 2;</code>
        * @return The activityId.
        */
       @java.lang.Override
@@ -923,7 +954,7 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
         return activityId_;
       }
       /**
-       * <code>uint32 activity_id = 1;</code>
+       * <code>uint32 activity_id = 2;</code>
        * @param value The activityId to set.
        * @return This builder for chaining.
        */
@@ -934,43 +965,12 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 activity_id = 1;</code>
+       * <code>uint32 activity_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearActivityId() {
         
         activityId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int difficultyId_ ;
-      /**
-       * <code>uint32 difficulty_id = 11;</code>
-       * @return The difficultyId.
-       */
-      @java.lang.Override
-      public int getDifficultyId() {
-        return difficultyId_;
-      }
-      /**
-       * <code>uint32 difficulty_id = 11;</code>
-       * @param value The difficultyId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDifficultyId(int value) {
-        
-        difficultyId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 difficulty_id = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDifficultyId() {
-        
-        difficultyId_ = 0;
         onChanged();
         return this;
       }
@@ -1044,8 +1044,8 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
       "\n&SumoSelectTeamAndEnterDungeonReq.proto" +
       "\032\022SumoTeamData.proto\"\202\001\n SumoSelectTeamA" +
       "ndEnterDungeonReq\022 \n\tteam_list\030\006 \003(\0132\r.S" +
-      "umoTeamData\022\020\n\010stage_id\030\016 \001(\r\022\023\n\013activit" +
-      "y_id\030\001 \001(\r\022\025\n\rdifficulty_id\030\013 \001(\rB\033\n\031emu" +
+      "umoTeamData\022\025\n\rdifficulty_id\030\016 \001(\r\022\020\n\010st" +
+      "age_id\030\005 \001(\r\022\023\n\013activity_id\030\002 \001(\rB\033\n\031emu" +
       ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1058,7 +1058,7 @@ public final class SumoSelectTeamAndEnterDungeonReqOuterClass {
     internal_static_SumoSelectTeamAndEnterDungeonReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SumoSelectTeamAndEnterDungeonReq_descriptor,
-        new java.lang.String[] { "TeamList", "StageId", "ActivityId", "DifficultyId", });
+        new java.lang.String[] { "TeamList", "DifficultyId", "StageId", "ActivityId", });
     emu.grasscutter.net.proto.SumoTeamDataOuterClass.getDescriptor();
   }
 

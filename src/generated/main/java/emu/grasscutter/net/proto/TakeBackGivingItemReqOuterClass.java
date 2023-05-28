@@ -26,8 +26,8 @@ public final class TakeBackGivingItemReqOuterClass {
   }
   /**
    * <pre>
-   * Name: BFIJDKCMHDM
-   * CmdId: 152
+   * CmdId: 162
+   * Obf: DJFBMLNEOFC
    * </pre>
    *
    * Protobuf type {@code TakeBackGivingItemReq}
@@ -279,8 +279,8 @@ public final class TakeBackGivingItemReqOuterClass {
     }
     /**
      * <pre>
-     * Name: BFIJDKCMHDM
-     * CmdId: 152
+     * CmdId: 162
+     * Obf: DJFBMLNEOFC
      * </pre>
      *
      * Protobuf type {@code TakeBackGivingItemReq}

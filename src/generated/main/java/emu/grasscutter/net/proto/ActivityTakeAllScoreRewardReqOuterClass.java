@@ -19,15 +19,15 @@ public final class ActivityTakeAllScoreRewardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 activity_id = 15;</code>
+     * <code>uint32 activity_id = 12;</code>
      * @return The activityId.
      */
     int getActivityId();
   }
   /**
    * <pre>
-   * Name: BOPMGFEHJEB
-   * CmdId: 8731
+   * CmdId: 8377
+   * Obf: HPMIPCLCLLG
    * </pre>
    *
    * Protobuf type {@code ActivityTakeAllScoreRewardReq}
@@ -74,7 +74,7 @@ public final class ActivityTakeAllScoreRewardReqOuterClass {
             case 0:
               done = true;
               break;
-            case 120: {
+            case 96: {
 
               activityId_ = input.readUInt32();
               break;
@@ -111,10 +111,10 @@ public final class ActivityTakeAllScoreRewardReqOuterClass {
               emu.grasscutter.net.proto.ActivityTakeAllScoreRewardReqOuterClass.ActivityTakeAllScoreRewardReq.class, emu.grasscutter.net.proto.ActivityTakeAllScoreRewardReqOuterClass.ActivityTakeAllScoreRewardReq.Builder.class);
     }
 
-    public static final int ACTIVITY_ID_FIELD_NUMBER = 15;
+    public static final int ACTIVITY_ID_FIELD_NUMBER = 12;
     private int activityId_;
     /**
-     * <code>uint32 activity_id = 15;</code>
+     * <code>uint32 activity_id = 12;</code>
      * @return The activityId.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class ActivityTakeAllScoreRewardReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (activityId_ != 0) {
-        output.writeUInt32(15, activityId_);
+        output.writeUInt32(12, activityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class ActivityTakeAllScoreRewardReqOuterClass {
       size = 0;
       if (activityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, activityId_);
+          .computeUInt32Size(12, activityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +279,8 @@ public final class ActivityTakeAllScoreRewardReqOuterClass {
     }
     /**
      * <pre>
-     * Name: BOPMGFEHJEB
-     * CmdId: 8731
+     * CmdId: 8377
+     * Obf: HPMIPCLCLLG
      * </pre>
      *
      * Protobuf type {@code ActivityTakeAllScoreRewardReq}
@@ -431,7 +431,7 @@ public final class ActivityTakeAllScoreRewardReqOuterClass {
 
       private int activityId_ ;
       /**
-       * <code>uint32 activity_id = 15;</code>
+       * <code>uint32 activity_id = 12;</code>
        * @return The activityId.
        */
       @java.lang.Override
@@ -439,7 +439,7 @@ public final class ActivityTakeAllScoreRewardReqOuterClass {
         return activityId_;
       }
       /**
-       * <code>uint32 activity_id = 15;</code>
+       * <code>uint32 activity_id = 12;</code>
        * @param value The activityId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +450,7 @@ public final class ActivityTakeAllScoreRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 activity_id = 15;</code>
+       * <code>uint32 activity_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearActivityId() {
@@ -528,7 +528,7 @@ public final class ActivityTakeAllScoreRewardReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n#ActivityTakeAllScoreRewardReq.proto\"4\n" +
       "\035ActivityTakeAllScoreRewardReq\022\023\n\013activi" +
-      "ty_id\030\017 \001(\rB\033\n\031emu.grasscutter.net.proto" +
+      "ty_id\030\014 \001(\rB\033\n\031emu.grasscutter.net.proto" +
       "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

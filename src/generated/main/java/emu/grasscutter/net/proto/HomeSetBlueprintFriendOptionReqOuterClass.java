@@ -19,15 +19,21 @@ public final class HomeSetBlueprintFriendOptionReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_allow_friend_copy = 14;</code>
-     * @return The isAllowFriendCopy.
+     * <code>bool CNDJLHPOOBO = 2;</code>
+     * @return The cNDJLHPOOBO.
      */
-    boolean getIsAllowFriendCopy();
+    boolean getCNDJLHPOOBO();
+
+    /**
+     * <code>bool KMDEOGAINNP = 13;</code>
+     * @return The kMDEOGAINNP.
+     */
+    boolean getKMDEOGAINNP();
   }
   /**
    * <pre>
-   * Name: NHOOLBPOGLC
-   * CmdId: 4490
+   * CmdId: 4812
+   * Obf: OAKFBMBKPFD
    * </pre>
    *
    * Protobuf type {@code HomeSetBlueprintFriendOptionReq}
@@ -74,9 +80,14 @@ public final class HomeSetBlueprintFriendOptionReqOuterClass {
             case 0:
               done = true;
               break;
-            case 112: {
+            case 16: {
 
-              isAllowFriendCopy_ = input.readBool();
+              cNDJLHPOOBO_ = input.readBool();
+              break;
+            }
+            case 104: {
+
+              kMDEOGAINNP_ = input.readBool();
               break;
             }
             default: {
@@ -111,15 +122,26 @@ public final class HomeSetBlueprintFriendOptionReqOuterClass {
               emu.grasscutter.net.proto.HomeSetBlueprintFriendOptionReqOuterClass.HomeSetBlueprintFriendOptionReq.class, emu.grasscutter.net.proto.HomeSetBlueprintFriendOptionReqOuterClass.HomeSetBlueprintFriendOptionReq.Builder.class);
     }
 
-    public static final int IS_ALLOW_FRIEND_COPY_FIELD_NUMBER = 14;
-    private boolean isAllowFriendCopy_;
+    public static final int CNDJLHPOOBO_FIELD_NUMBER = 2;
+    private boolean cNDJLHPOOBO_;
     /**
-     * <code>bool is_allow_friend_copy = 14;</code>
-     * @return The isAllowFriendCopy.
+     * <code>bool CNDJLHPOOBO = 2;</code>
+     * @return The cNDJLHPOOBO.
      */
     @java.lang.Override
-    public boolean getIsAllowFriendCopy() {
-      return isAllowFriendCopy_;
+    public boolean getCNDJLHPOOBO() {
+      return cNDJLHPOOBO_;
+    }
+
+    public static final int KMDEOGAINNP_FIELD_NUMBER = 13;
+    private boolean kMDEOGAINNP_;
+    /**
+     * <code>bool KMDEOGAINNP = 13;</code>
+     * @return The kMDEOGAINNP.
+     */
+    @java.lang.Override
+    public boolean getKMDEOGAINNP() {
+      return kMDEOGAINNP_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -136,8 +158,11 @@ public final class HomeSetBlueprintFriendOptionReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isAllowFriendCopy_ != false) {
-        output.writeBool(14, isAllowFriendCopy_);
+      if (cNDJLHPOOBO_ != false) {
+        output.writeBool(2, cNDJLHPOOBO_);
+      }
+      if (kMDEOGAINNP_ != false) {
+        output.writeBool(13, kMDEOGAINNP_);
       }
       unknownFields.writeTo(output);
     }
@@ -148,9 +173,13 @@ public final class HomeSetBlueprintFriendOptionReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isAllowFriendCopy_ != false) {
+      if (cNDJLHPOOBO_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, isAllowFriendCopy_);
+          .computeBoolSize(2, cNDJLHPOOBO_);
+      }
+      if (kMDEOGAINNP_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(13, kMDEOGAINNP_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -167,8 +196,10 @@ public final class HomeSetBlueprintFriendOptionReqOuterClass {
       }
       emu.grasscutter.net.proto.HomeSetBlueprintFriendOptionReqOuterClass.HomeSetBlueprintFriendOptionReq other = (emu.grasscutter.net.proto.HomeSetBlueprintFriendOptionReqOuterClass.HomeSetBlueprintFriendOptionReq) obj;
 
-      if (getIsAllowFriendCopy()
-          != other.getIsAllowFriendCopy()) return false;
+      if (getCNDJLHPOOBO()
+          != other.getCNDJLHPOOBO()) return false;
+      if (getKMDEOGAINNP()
+          != other.getKMDEOGAINNP()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -180,9 +211,12 @@ public final class HomeSetBlueprintFriendOptionReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_ALLOW_FRIEND_COPY_FIELD_NUMBER;
+      hash = (37 * hash) + CNDJLHPOOBO_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsAllowFriendCopy());
+          getCNDJLHPOOBO());
+      hash = (37 * hash) + KMDEOGAINNP_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getKMDEOGAINNP());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -280,8 +314,8 @@ public final class HomeSetBlueprintFriendOptionReqOuterClass {
     }
     /**
      * <pre>
-     * Name: NHOOLBPOGLC
-     * CmdId: 4490
+     * CmdId: 4812
+     * Obf: OAKFBMBKPFD
      * </pre>
      *
      * Protobuf type {@code HomeSetBlueprintFriendOptionReq}
@@ -321,7 +355,9 @@ public final class HomeSetBlueprintFriendOptionReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isAllowFriendCopy_ = false;
+        cNDJLHPOOBO_ = false;
+
+        kMDEOGAINNP_ = false;
 
         return this;
       }
@@ -349,7 +385,8 @@ public final class HomeSetBlueprintFriendOptionReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeSetBlueprintFriendOptionReqOuterClass.HomeSetBlueprintFriendOptionReq buildPartial() {
         emu.grasscutter.net.proto.HomeSetBlueprintFriendOptionReqOuterClass.HomeSetBlueprintFriendOptionReq result = new emu.grasscutter.net.proto.HomeSetBlueprintFriendOptionReqOuterClass.HomeSetBlueprintFriendOptionReq(this);
-        result.isAllowFriendCopy_ = isAllowFriendCopy_;
+        result.cNDJLHPOOBO_ = cNDJLHPOOBO_;
+        result.kMDEOGAINNP_ = kMDEOGAINNP_;
         onBuilt();
         return result;
       }
@@ -398,8 +435,11 @@ public final class HomeSetBlueprintFriendOptionReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HomeSetBlueprintFriendOptionReqOuterClass.HomeSetBlueprintFriendOptionReq other) {
         if (other == emu.grasscutter.net.proto.HomeSetBlueprintFriendOptionReqOuterClass.HomeSetBlueprintFriendOptionReq.getDefaultInstance()) return this;
-        if (other.getIsAllowFriendCopy() != false) {
-          setIsAllowFriendCopy(other.getIsAllowFriendCopy());
+        if (other.getCNDJLHPOOBO() != false) {
+          setCNDJLHPOOBO(other.getCNDJLHPOOBO());
+        }
+        if (other.getKMDEOGAINNP() != false) {
+          setKMDEOGAINNP(other.getKMDEOGAINNP());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -430,33 +470,64 @@ public final class HomeSetBlueprintFriendOptionReqOuterClass {
         return this;
       }
 
-      private boolean isAllowFriendCopy_ ;
+      private boolean cNDJLHPOOBO_ ;
       /**
-       * <code>bool is_allow_friend_copy = 14;</code>
-       * @return The isAllowFriendCopy.
+       * <code>bool CNDJLHPOOBO = 2;</code>
+       * @return The cNDJLHPOOBO.
        */
       @java.lang.Override
-      public boolean getIsAllowFriendCopy() {
-        return isAllowFriendCopy_;
+      public boolean getCNDJLHPOOBO() {
+        return cNDJLHPOOBO_;
       }
       /**
-       * <code>bool is_allow_friend_copy = 14;</code>
-       * @param value The isAllowFriendCopy to set.
+       * <code>bool CNDJLHPOOBO = 2;</code>
+       * @param value The cNDJLHPOOBO to set.
        * @return This builder for chaining.
        */
-      public Builder setIsAllowFriendCopy(boolean value) {
+      public Builder setCNDJLHPOOBO(boolean value) {
         
-        isAllowFriendCopy_ = value;
+        cNDJLHPOOBO_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_allow_friend_copy = 14;</code>
+       * <code>bool CNDJLHPOOBO = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsAllowFriendCopy() {
+      public Builder clearCNDJLHPOOBO() {
         
-        isAllowFriendCopy_ = false;
+        cNDJLHPOOBO_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean kMDEOGAINNP_ ;
+      /**
+       * <code>bool KMDEOGAINNP = 13;</code>
+       * @return The kMDEOGAINNP.
+       */
+      @java.lang.Override
+      public boolean getKMDEOGAINNP() {
+        return kMDEOGAINNP_;
+      }
+      /**
+       * <code>bool KMDEOGAINNP = 13;</code>
+       * @param value The kMDEOGAINNP to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKMDEOGAINNP(boolean value) {
+        
+        kMDEOGAINNP_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool KMDEOGAINNP = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearKMDEOGAINNP() {
+        
+        kMDEOGAINNP_ = false;
         onChanged();
         return this;
       }
@@ -528,9 +599,9 @@ public final class HomeSetBlueprintFriendOptionReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n%HomeSetBlueprintFriendOptionReq.proto\"" +
-      "?\n\037HomeSetBlueprintFriendOptionReq\022\034\n\024is" +
-      "_allow_friend_copy\030\016 \001(\010B\033\n\031emu.grasscut" +
-      "ter.net.protob\006proto3"
+      "K\n\037HomeSetBlueprintFriendOptionReq\022\023\n\013CN" +
+      "DJLHPOOBO\030\002 \001(\010\022\023\n\013KMDEOGAINNP\030\r \001(\010B\033\n\031" +
+      "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -541,7 +612,7 @@ public final class HomeSetBlueprintFriendOptionReqOuterClass {
     internal_static_HomeSetBlueprintFriendOptionReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeSetBlueprintFriendOptionReq_descriptor,
-        new java.lang.String[] { "IsAllowFriendCopy", });
+        new java.lang.String[] { "CNDJLHPOOBO", "KMDEOGAINNP", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

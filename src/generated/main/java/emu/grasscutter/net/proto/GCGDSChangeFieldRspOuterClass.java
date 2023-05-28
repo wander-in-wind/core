@@ -19,35 +19,27 @@ public final class GCGDSChangeFieldRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *AHAIAIPGFDN snooswap
-     * </pre>
-     *
-     * <code>uint32 deck_id = 2;</code>
+     * <code>uint32 deck_id = 12;</code>
      * @return The deckId.
      */
     int getDeckId();
 
     /**
-     * <code>int32 retcode = 3;</code>
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <pre>
-     *LKFDEJMGHMP snooswap
-     * </pre>
-     *
-     * <code>uint32 field_id = 7;</code>
+     * <code>uint32 field_id = 1;</code>
      * @return The fieldId.
      */
     int getFieldId();
   }
   /**
    * <pre>
-   * Name: OODONDJKIEL
-   * CmdId: 7245
+   * CmdId: 7141
+   * Obf: CNICBHJMBGH
    * </pre>
    *
    * Protobuf type {@code GCGDSChangeFieldRsp}
@@ -94,19 +86,19 @@ public final class GCGDSChangeFieldRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 8: {
 
-              deckId_ = input.readUInt32();
+              fieldId_ = input.readUInt32();
               break;
             }
-            case 24: {
+            case 72: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 56: {
+            case 96: {
 
-              fieldId_ = input.readUInt32();
+              deckId_ = input.readUInt32();
               break;
             }
             default: {
@@ -141,14 +133,10 @@ public final class GCGDSChangeFieldRspOuterClass {
               emu.grasscutter.net.proto.GCGDSChangeFieldRspOuterClass.GCGDSChangeFieldRsp.class, emu.grasscutter.net.proto.GCGDSChangeFieldRspOuterClass.GCGDSChangeFieldRsp.Builder.class);
     }
 
-    public static final int DECK_ID_FIELD_NUMBER = 2;
+    public static final int DECK_ID_FIELD_NUMBER = 12;
     private int deckId_;
     /**
-     * <pre>
-     *AHAIAIPGFDN snooswap
-     * </pre>
-     *
-     * <code>uint32 deck_id = 2;</code>
+     * <code>uint32 deck_id = 12;</code>
      * @return The deckId.
      */
     @java.lang.Override
@@ -156,10 +144,10 @@ public final class GCGDSChangeFieldRspOuterClass {
       return deckId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 3;
+    public static final int RETCODE_FIELD_NUMBER = 9;
     private int retcode_;
     /**
-     * <code>int32 retcode = 3;</code>
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -167,14 +155,10 @@ public final class GCGDSChangeFieldRspOuterClass {
       return retcode_;
     }
 
-    public static final int FIELD_ID_FIELD_NUMBER = 7;
+    public static final int FIELD_ID_FIELD_NUMBER = 1;
     private int fieldId_;
     /**
-     * <pre>
-     *LKFDEJMGHMP snooswap
-     * </pre>
-     *
-     * <code>uint32 field_id = 7;</code>
+     * <code>uint32 field_id = 1;</code>
      * @return The fieldId.
      */
     @java.lang.Override
@@ -196,14 +180,14 @@ public final class GCGDSChangeFieldRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (deckId_ != 0) {
-        output.writeUInt32(2, deckId_);
+      if (fieldId_ != 0) {
+        output.writeUInt32(1, fieldId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(3, retcode_);
+        output.writeInt32(9, retcode_);
       }
-      if (fieldId_ != 0) {
-        output.writeUInt32(7, fieldId_);
+      if (deckId_ != 0) {
+        output.writeUInt32(12, deckId_);
       }
       unknownFields.writeTo(output);
     }
@@ -214,17 +198,17 @@ public final class GCGDSChangeFieldRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (deckId_ != 0) {
+      if (fieldId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, deckId_);
+          .computeUInt32Size(1, fieldId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, retcode_);
+          .computeInt32Size(9, retcode_);
       }
-      if (fieldId_ != 0) {
+      if (deckId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, fieldId_);
+          .computeUInt32Size(12, deckId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -361,8 +345,8 @@ public final class GCGDSChangeFieldRspOuterClass {
     }
     /**
      * <pre>
-     * Name: OODONDJKIEL
-     * CmdId: 7245
+     * CmdId: 7141
+     * Obf: CNICBHJMBGH
      * </pre>
      *
      * Protobuf type {@code GCGDSChangeFieldRsp}
@@ -525,11 +509,7 @@ public final class GCGDSChangeFieldRspOuterClass {
 
       private int deckId_ ;
       /**
-       * <pre>
-       *AHAIAIPGFDN snooswap
-       * </pre>
-       *
-       * <code>uint32 deck_id = 2;</code>
+       * <code>uint32 deck_id = 12;</code>
        * @return The deckId.
        */
       @java.lang.Override
@@ -537,11 +517,7 @@ public final class GCGDSChangeFieldRspOuterClass {
         return deckId_;
       }
       /**
-       * <pre>
-       *AHAIAIPGFDN snooswap
-       * </pre>
-       *
-       * <code>uint32 deck_id = 2;</code>
+       * <code>uint32 deck_id = 12;</code>
        * @param value The deckId to set.
        * @return This builder for chaining.
        */
@@ -552,11 +528,7 @@ public final class GCGDSChangeFieldRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *AHAIAIPGFDN snooswap
-       * </pre>
-       *
-       * <code>uint32 deck_id = 2;</code>
+       * <code>uint32 deck_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearDeckId() {
@@ -568,7 +540,7 @@ public final class GCGDSChangeFieldRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 3;</code>
+       * <code>int32 retcode = 9;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -576,7 +548,7 @@ public final class GCGDSChangeFieldRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 3;</code>
+       * <code>int32 retcode = 9;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -587,7 +559,7 @@ public final class GCGDSChangeFieldRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 3;</code>
+       * <code>int32 retcode = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -599,11 +571,7 @@ public final class GCGDSChangeFieldRspOuterClass {
 
       private int fieldId_ ;
       /**
-       * <pre>
-       *LKFDEJMGHMP snooswap
-       * </pre>
-       *
-       * <code>uint32 field_id = 7;</code>
+       * <code>uint32 field_id = 1;</code>
        * @return The fieldId.
        */
       @java.lang.Override
@@ -611,11 +579,7 @@ public final class GCGDSChangeFieldRspOuterClass {
         return fieldId_;
       }
       /**
-       * <pre>
-       *LKFDEJMGHMP snooswap
-       * </pre>
-       *
-       * <code>uint32 field_id = 7;</code>
+       * <code>uint32 field_id = 1;</code>
        * @param value The fieldId to set.
        * @return This builder for chaining.
        */
@@ -626,11 +590,7 @@ public final class GCGDSChangeFieldRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *LKFDEJMGHMP snooswap
-       * </pre>
-       *
-       * <code>uint32 field_id = 7;</code>
+       * <code>uint32 field_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearFieldId() {
@@ -707,8 +667,8 @@ public final class GCGDSChangeFieldRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031GCGDSChangeFieldRsp.proto\"I\n\023GCGDSChan" +
-      "geFieldRsp\022\017\n\007deck_id\030\002 \001(\r\022\017\n\007retcode\030\003" +
-      " \001(\005\022\020\n\010field_id\030\007 \001(\rB\033\n\031emu.grasscutte" +
+      "geFieldRsp\022\017\n\007deck_id\030\014 \001(\r\022\017\n\007retcode\030\t" +
+      " \001(\005\022\020\n\010field_id\030\001 \001(\rB\033\n\031emu.grasscutte" +
       "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

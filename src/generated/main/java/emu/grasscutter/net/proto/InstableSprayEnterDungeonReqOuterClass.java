@@ -19,45 +19,45 @@ public final class InstableSprayEnterDungeonReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 stage_id = 6;</code>
-     * @return The stageId.
+     * <code>uint32 difficulty = 6;</code>
+     * @return The difficulty.
      */
-    int getStageId();
+    int getDifficulty();
 
     /**
-     * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 5;</code>
+     * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 3;</code>
      */
     java.util.List<emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo> 
         getAvatarInfoListList();
     /**
-     * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 5;</code>
+     * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 3;</code>
      */
     emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo getAvatarInfoList(int index);
     /**
-     * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 5;</code>
+     * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 3;</code>
      */
     int getAvatarInfoListCount();
     /**
-     * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 5;</code>
+     * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 3;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfoOrBuilder> 
         getAvatarInfoListOrBuilderList();
     /**
-     * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 5;</code>
+     * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 3;</code>
      */
     emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfoOrBuilder getAvatarInfoListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 difficulty = 8;</code>
-     * @return The difficulty.
+     * <code>uint32 stage_id = 8;</code>
+     * @return The stageId.
      */
-    int getDifficulty();
+    int getStageId();
   }
   /**
    * <pre>
-   * Name: IFPBCAEGOEF
-   * CmdId: 23181
+   * CmdId: 22671
+   * Obf: KLJFPCMKFNN
    * </pre>
    *
    * Protobuf type {@code InstableSprayEnterDungeonReq}
@@ -106,7 +106,7 @@ public final class InstableSprayEnterDungeonReqOuterClass {
             case 0:
               done = true;
               break;
-            case 42: {
+            case 26: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 avatarInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -117,12 +117,12 @@ public final class InstableSprayEnterDungeonReqOuterClass {
             }
             case 48: {
 
-              stageId_ = input.readUInt32();
+              difficulty_ = input.readUInt32();
               break;
             }
             case 64: {
 
-              difficulty_ = input.readUInt32();
+              stageId_ = input.readUInt32();
               break;
             }
             default: {
@@ -160,28 +160,28 @@ public final class InstableSprayEnterDungeonReqOuterClass {
               emu.grasscutter.net.proto.InstableSprayEnterDungeonReqOuterClass.InstableSprayEnterDungeonReq.class, emu.grasscutter.net.proto.InstableSprayEnterDungeonReqOuterClass.InstableSprayEnterDungeonReq.Builder.class);
     }
 
-    public static final int STAGE_ID_FIELD_NUMBER = 6;
-    private int stageId_;
+    public static final int DIFFICULTY_FIELD_NUMBER = 6;
+    private int difficulty_;
     /**
-     * <code>uint32 stage_id = 6;</code>
-     * @return The stageId.
+     * <code>uint32 difficulty = 6;</code>
+     * @return The difficulty.
      */
     @java.lang.Override
-    public int getStageId() {
-      return stageId_;
+    public int getDifficulty() {
+      return difficulty_;
     }
 
-    public static final int AVATAR_INFO_LIST_FIELD_NUMBER = 5;
+    public static final int AVATAR_INFO_LIST_FIELD_NUMBER = 3;
     private java.util.List<emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo> avatarInfoList_;
     /**
-     * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 5;</code>
+     * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 3;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo> getAvatarInfoListList() {
       return avatarInfoList_;
     }
     /**
-     * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 5;</code>
+     * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 3;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfoOrBuilder> 
@@ -189,21 +189,21 @@ public final class InstableSprayEnterDungeonReqOuterClass {
       return avatarInfoList_;
     }
     /**
-     * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 5;</code>
+     * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 3;</code>
      */
     @java.lang.Override
     public int getAvatarInfoListCount() {
       return avatarInfoList_.size();
     }
     /**
-     * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 5;</code>
+     * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 3;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo getAvatarInfoList(int index) {
       return avatarInfoList_.get(index);
     }
     /**
-     * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 5;</code>
+     * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 3;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfoOrBuilder getAvatarInfoListOrBuilder(
@@ -211,15 +211,15 @@ public final class InstableSprayEnterDungeonReqOuterClass {
       return avatarInfoList_.get(index);
     }
 
-    public static final int DIFFICULTY_FIELD_NUMBER = 8;
-    private int difficulty_;
+    public static final int STAGE_ID_FIELD_NUMBER = 8;
+    private int stageId_;
     /**
-     * <code>uint32 difficulty = 8;</code>
-     * @return The difficulty.
+     * <code>uint32 stage_id = 8;</code>
+     * @return The stageId.
      */
     @java.lang.Override
-    public int getDifficulty() {
-      return difficulty_;
+    public int getStageId() {
+      return stageId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -237,13 +237,13 @@ public final class InstableSprayEnterDungeonReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < avatarInfoList_.size(); i++) {
-        output.writeMessage(5, avatarInfoList_.get(i));
-      }
-      if (stageId_ != 0) {
-        output.writeUInt32(6, stageId_);
+        output.writeMessage(3, avatarInfoList_.get(i));
       }
       if (difficulty_ != 0) {
-        output.writeUInt32(8, difficulty_);
+        output.writeUInt32(6, difficulty_);
+      }
+      if (stageId_ != 0) {
+        output.writeUInt32(8, stageId_);
       }
       unknownFields.writeTo(output);
     }
@@ -256,15 +256,15 @@ public final class InstableSprayEnterDungeonReqOuterClass {
       size = 0;
       for (int i = 0; i < avatarInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, avatarInfoList_.get(i));
-      }
-      if (stageId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, stageId_);
+          .computeMessageSize(3, avatarInfoList_.get(i));
       }
       if (difficulty_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, difficulty_);
+          .computeUInt32Size(6, difficulty_);
+      }
+      if (stageId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, stageId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -281,12 +281,12 @@ public final class InstableSprayEnterDungeonReqOuterClass {
       }
       emu.grasscutter.net.proto.InstableSprayEnterDungeonReqOuterClass.InstableSprayEnterDungeonReq other = (emu.grasscutter.net.proto.InstableSprayEnterDungeonReqOuterClass.InstableSprayEnterDungeonReq) obj;
 
-      if (getStageId()
-          != other.getStageId()) return false;
-      if (!getAvatarInfoListList()
-          .equals(other.getAvatarInfoListList())) return false;
       if (getDifficulty()
           != other.getDifficulty()) return false;
+      if (!getAvatarInfoListList()
+          .equals(other.getAvatarInfoListList())) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -298,14 +298,14 @@ public final class InstableSprayEnterDungeonReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getStageId();
+      hash = (37 * hash) + DIFFICULTY_FIELD_NUMBER;
+      hash = (53 * hash) + getDifficulty();
       if (getAvatarInfoListCount() > 0) {
         hash = (37 * hash) + AVATAR_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getAvatarInfoListList().hashCode();
       }
-      hash = (37 * hash) + DIFFICULTY_FIELD_NUMBER;
-      hash = (53 * hash) + getDifficulty();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -403,8 +403,8 @@ public final class InstableSprayEnterDungeonReqOuterClass {
     }
     /**
      * <pre>
-     * Name: IFPBCAEGOEF
-     * CmdId: 23181
+     * CmdId: 22671
+     * Obf: KLJFPCMKFNN
      * </pre>
      *
      * Protobuf type {@code InstableSprayEnterDungeonReq}
@@ -445,7 +445,7 @@ public final class InstableSprayEnterDungeonReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        stageId_ = 0;
+        difficulty_ = 0;
 
         if (avatarInfoListBuilder_ == null) {
           avatarInfoList_ = java.util.Collections.emptyList();
@@ -453,7 +453,7 @@ public final class InstableSprayEnterDungeonReqOuterClass {
         } else {
           avatarInfoListBuilder_.clear();
         }
-        difficulty_ = 0;
+        stageId_ = 0;
 
         return this;
       }
@@ -482,7 +482,7 @@ public final class InstableSprayEnterDungeonReqOuterClass {
       public emu.grasscutter.net.proto.InstableSprayEnterDungeonReqOuterClass.InstableSprayEnterDungeonReq buildPartial() {
         emu.grasscutter.net.proto.InstableSprayEnterDungeonReqOuterClass.InstableSprayEnterDungeonReq result = new emu.grasscutter.net.proto.InstableSprayEnterDungeonReqOuterClass.InstableSprayEnterDungeonReq(this);
         int from_bitField0_ = bitField0_;
-        result.stageId_ = stageId_;
+        result.difficulty_ = difficulty_;
         if (avatarInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             avatarInfoList_ = java.util.Collections.unmodifiableList(avatarInfoList_);
@@ -492,7 +492,7 @@ public final class InstableSprayEnterDungeonReqOuterClass {
         } else {
           result.avatarInfoList_ = avatarInfoListBuilder_.build();
         }
-        result.difficulty_ = difficulty_;
+        result.stageId_ = stageId_;
         onBuilt();
         return result;
       }
@@ -541,8 +541,8 @@ public final class InstableSprayEnterDungeonReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.InstableSprayEnterDungeonReqOuterClass.InstableSprayEnterDungeonReq other) {
         if (other == emu.grasscutter.net.proto.InstableSprayEnterDungeonReqOuterClass.InstableSprayEnterDungeonReq.getDefaultInstance()) return this;
-        if (other.getStageId() != 0) {
-          setStageId(other.getStageId());
+        if (other.getDifficulty() != 0) {
+          setDifficulty(other.getDifficulty());
         }
         if (avatarInfoListBuilder_ == null) {
           if (!other.avatarInfoList_.isEmpty()) {
@@ -570,8 +570,8 @@ public final class InstableSprayEnterDungeonReqOuterClass {
             }
           }
         }
-        if (other.getDifficulty() != 0) {
-          setDifficulty(other.getDifficulty());
+        if (other.getStageId() != 0) {
+          setStageId(other.getStageId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -603,33 +603,33 @@ public final class InstableSprayEnterDungeonReqOuterClass {
       }
       private int bitField0_;
 
-      private int stageId_ ;
+      private int difficulty_ ;
       /**
-       * <code>uint32 stage_id = 6;</code>
-       * @return The stageId.
+       * <code>uint32 difficulty = 6;</code>
+       * @return The difficulty.
        */
       @java.lang.Override
-      public int getStageId() {
-        return stageId_;
+      public int getDifficulty() {
+        return difficulty_;
       }
       /**
-       * <code>uint32 stage_id = 6;</code>
-       * @param value The stageId to set.
+       * <code>uint32 difficulty = 6;</code>
+       * @param value The difficulty to set.
        * @return This builder for chaining.
        */
-      public Builder setStageId(int value) {
+      public Builder setDifficulty(int value) {
         
-        stageId_ = value;
+        difficulty_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 stage_id = 6;</code>
+       * <code>uint32 difficulty = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearStageId() {
+      public Builder clearDifficulty() {
         
-        stageId_ = 0;
+        difficulty_ = 0;
         onChanged();
         return this;
       }
@@ -647,7 +647,7 @@ public final class InstableSprayEnterDungeonReqOuterClass {
           emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo, emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo.Builder, emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfoOrBuilder> avatarInfoListBuilder_;
 
       /**
-       * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 5;</code>
+       * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo> getAvatarInfoListList() {
         if (avatarInfoListBuilder_ == null) {
@@ -657,7 +657,7 @@ public final class InstableSprayEnterDungeonReqOuterClass {
         }
       }
       /**
-       * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 5;</code>
+       * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 3;</code>
        */
       public int getAvatarInfoListCount() {
         if (avatarInfoListBuilder_ == null) {
@@ -667,7 +667,7 @@ public final class InstableSprayEnterDungeonReqOuterClass {
         }
       }
       /**
-       * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 5;</code>
+       * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 3;</code>
        */
       public emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo getAvatarInfoList(int index) {
         if (avatarInfoListBuilder_ == null) {
@@ -677,7 +677,7 @@ public final class InstableSprayEnterDungeonReqOuterClass {
         }
       }
       /**
-       * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 5;</code>
+       * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 3;</code>
        */
       public Builder setAvatarInfoList(
           int index, emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo value) {
@@ -694,7 +694,7 @@ public final class InstableSprayEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 5;</code>
+       * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 3;</code>
        */
       public Builder setAvatarInfoList(
           int index, emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo.Builder builderForValue) {
@@ -708,7 +708,7 @@ public final class InstableSprayEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 5;</code>
+       * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 3;</code>
        */
       public Builder addAvatarInfoList(emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo value) {
         if (avatarInfoListBuilder_ == null) {
@@ -724,7 +724,7 @@ public final class InstableSprayEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 5;</code>
+       * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 3;</code>
        */
       public Builder addAvatarInfoList(
           int index, emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo value) {
@@ -741,7 +741,7 @@ public final class InstableSprayEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 5;</code>
+       * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 3;</code>
        */
       public Builder addAvatarInfoList(
           emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo.Builder builderForValue) {
@@ -755,7 +755,7 @@ public final class InstableSprayEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 5;</code>
+       * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 3;</code>
        */
       public Builder addAvatarInfoList(
           int index, emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo.Builder builderForValue) {
@@ -769,7 +769,7 @@ public final class InstableSprayEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 5;</code>
+       * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 3;</code>
        */
       public Builder addAllAvatarInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo> values) {
@@ -784,7 +784,7 @@ public final class InstableSprayEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 5;</code>
+       * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 3;</code>
        */
       public Builder clearAvatarInfoList() {
         if (avatarInfoListBuilder_ == null) {
@@ -797,7 +797,7 @@ public final class InstableSprayEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 5;</code>
+       * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 3;</code>
        */
       public Builder removeAvatarInfoList(int index) {
         if (avatarInfoListBuilder_ == null) {
@@ -810,14 +810,14 @@ public final class InstableSprayEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 5;</code>
+       * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 3;</code>
        */
       public emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo.Builder getAvatarInfoListBuilder(
           int index) {
         return getAvatarInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 5;</code>
+       * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 3;</code>
        */
       public emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfoOrBuilder getAvatarInfoListOrBuilder(
           int index) {
@@ -827,7 +827,7 @@ public final class InstableSprayEnterDungeonReqOuterClass {
         }
       }
       /**
-       * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 5;</code>
+       * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 3;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfoOrBuilder> 
            getAvatarInfoListOrBuilderList() {
@@ -838,14 +838,14 @@ public final class InstableSprayEnterDungeonReqOuterClass {
         }
       }
       /**
-       * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 5;</code>
+       * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 3;</code>
        */
       public emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo.Builder addAvatarInfoListBuilder() {
         return getAvatarInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 5;</code>
+       * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 3;</code>
        */
       public emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo.Builder addAvatarInfoListBuilder(
           int index) {
@@ -853,7 +853,7 @@ public final class InstableSprayEnterDungeonReqOuterClass {
             index, emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 5;</code>
+       * <code>repeated .InstableSprayAvatarInfo avatar_info_list = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo.Builder> 
            getAvatarInfoListBuilderList() {
@@ -874,33 +874,33 @@ public final class InstableSprayEnterDungeonReqOuterClass {
         return avatarInfoListBuilder_;
       }
 
-      private int difficulty_ ;
+      private int stageId_ ;
       /**
-       * <code>uint32 difficulty = 8;</code>
-       * @return The difficulty.
+       * <code>uint32 stage_id = 8;</code>
+       * @return The stageId.
        */
       @java.lang.Override
-      public int getDifficulty() {
-        return difficulty_;
+      public int getStageId() {
+        return stageId_;
       }
       /**
-       * <code>uint32 difficulty = 8;</code>
-       * @param value The difficulty to set.
+       * <code>uint32 stage_id = 8;</code>
+       * @param value The stageId to set.
        * @return This builder for chaining.
        */
-      public Builder setDifficulty(int value) {
+      public Builder setStageId(int value) {
         
-        difficulty_ = value;
+        stageId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 difficulty = 8;</code>
+       * <code>uint32 stage_id = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDifficulty() {
+      public Builder clearStageId() {
         
-        difficulty_ = 0;
+        stageId_ = 0;
         onChanged();
         return this;
       }
@@ -973,9 +973,9 @@ public final class InstableSprayEnterDungeonReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"InstableSprayEnterDungeonReq.proto\032\035In" +
       "stableSprayAvatarInfo.proto\"x\n\034InstableS" +
-      "prayEnterDungeonReq\022\020\n\010stage_id\030\006 \001(\r\0222\n" +
-      "\020avatar_info_list\030\005 \003(\0132\030.InstableSprayA" +
-      "vatarInfo\022\022\n\ndifficulty\030\010 \001(\rB\033\n\031emu.gra" +
+      "prayEnterDungeonReq\022\022\n\ndifficulty\030\006 \001(\r\022" +
+      "2\n\020avatar_info_list\030\003 \003(\0132\030.InstableSpra" +
+      "yAvatarInfo\022\020\n\010stage_id\030\010 \001(\rB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -988,7 +988,7 @@ public final class InstableSprayEnterDungeonReqOuterClass {
     internal_static_InstableSprayEnterDungeonReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_InstableSprayEnterDungeonReq_descriptor,
-        new java.lang.String[] { "StageId", "AvatarInfoList", "Difficulty", });
+        new java.lang.String[] { "Difficulty", "AvatarInfoList", "StageId", });
     emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.getDescriptor();
   }
 

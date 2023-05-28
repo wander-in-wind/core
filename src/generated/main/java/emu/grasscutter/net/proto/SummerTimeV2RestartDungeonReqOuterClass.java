@@ -20,8 +20,8 @@ public final class SummerTimeV2RestartDungeonReqOuterClass {
   }
   /**
    * <pre>
-   * Name: FFFCGMMCJNO
-   * CmdId: 8988
+   * CmdId: 8841
+   * Obf: KPHLIIFCLHO
    * </pre>
    *
    * Protobuf type {@code SummerTimeV2RestartDungeonReq}
@@ -246,8 +246,8 @@ public final class SummerTimeV2RestartDungeonReqOuterClass {
     }
     /**
      * <pre>
-     * Name: FFFCGMMCJNO
-     * CmdId: 8988
+     * CmdId: 8841
+     * Obf: KPHLIIFCLHO
      * </pre>
      *
      * Protobuf type {@code SummerTimeV2RestartDungeonReq}
