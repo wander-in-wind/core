@@ -23,7 +23,7 @@ public class PacketGetAllMailResultNotify extends BasePacket {
     public PacketGetAllMailResultNotify(Player player, boolean isCollected) {
         super(PacketOpcodes.GetAllMailResultNotify);
         GetAllMailResultNotify.Builder proto = GetAllMailResultNotify.newBuilder();
-		
+
 		if (player.getAllMail().size() != 0) { // Make sure the player has mail
             List<MailData> mailDataList = new ArrayList<MailData>();
 
@@ -67,15 +67,15 @@ public class PacketGetAllMailResultNotify extends BasePacket {
             }
 
 			proto.addAllMailList(mailDataList);
-		
+
 			//proto.setIsCollected(isCollected);
-			proto.setPageIndex(1);
+			proto.setPacketNum(1); //current packet index
 			proto.setRetcode(0);
-			proto.setTotalPageCount(1);
-			
+			proto.setPacketBeSentNum(1); //Total number of packets
+
 			String endToken = isCollected ? "-111049" : "-111050"; //totoally not hardcoded sniff
-			proto.setTransaction(player.getUid() + "-" + (int) (System.currentTimeMillis() / 1000) + endToken); 
-			
+			proto.setTransaction(player.getUid() + "-" + (int) (System.currentTimeMillis() / 1000) + endToken);
+
 		}
         this.setData(proto.build());
     }
