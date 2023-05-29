@@ -1,9 +1,9 @@
 package emu.grasscutter.game.quest.content;
 
 import emu.grasscutter.Grasscutter;
-import emu.grasscutter.data.excels.QuestData;
 import emu.grasscutter.game.quest.GameQuest;
 import emu.grasscutter.game.quest.QuestValueContent;
+import emu.grasscutter.data.common.quest.SubQuestData.QuestContentCondition;
 import lombok.val;
 
 import javax.annotation.Nullable;
@@ -15,7 +15,7 @@ import static emu.grasscutter.game.quest.enums.QuestContent.QUEST_CONTENT_COMPLE
 public class ContentCompleteAnyTalk extends BaseContent {
 
     @Override
-    public boolean execute(GameQuest quest, QuestData.QuestContentCondition condition, @Nullable String paramStr, int... params) {
+    public boolean execute(GameQuest quest, QuestContentCondition condition, @Nullable String paramStr, int... params) {
         if(condition.getParamString() == null) {
             Grasscutter.getLogger().warn("Quest {} has no param string for QUEST_CONTENT_COMPLETE_ANY_TALK!", quest.getSubQuestId());
             return false;

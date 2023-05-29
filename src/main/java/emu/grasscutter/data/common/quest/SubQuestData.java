@@ -1,10 +1,13 @@
 package emu.grasscutter.data.common.quest;
 
-import emu.grasscutter.data.excels.QuestData;
-import emu.grasscutter.game.quest.enums.LogicType;
-import emu.grasscutter.game.quest.enums.QuestShowType;
+import emu.grasscutter.game.quest.enums.*;
+import lombok.AccessLevel;
 import lombok.Data;
+import lombok.experimental.FieldDefaults;
+import lombok.val;
 
+import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 import java.util.List;
 
 @Data
@@ -27,14 +30,14 @@ public class SubQuestData {
     private LogicType finishCondComb;
     private LogicType failCondComb;
 
-    private List<QuestData.QuestAcceptCondition> acceptCond;
-    private List<QuestData.QuestContentCondition> finishCond;
-    private List<QuestData.QuestContentCondition> failCond;
+    private List<QuestAcceptCondition> acceptCond;
+    private List<QuestContentCondition> finishCond;
+    private List<QuestContentCondition> failCond;
 
-    private List<QuestData.QuestExecParam> beginExec;
-    private List<QuestData.QuestExecParam> finishExec;
-    private List<QuestData.QuestExecParam> failExec;
-    private QuestData.Guide guide;
+    private List<QuestExecParam> beginExec;
+    private List<QuestExecParam> finishExec;
+    private List<QuestExecParam> failExec;
+    private Guide guide;
     private List<Integer> trialAvatarList;
     private List<Integer> exclusiveNpcList;
     private int exclusiveNpcPriority;
@@ -46,9 +49,46 @@ public class SubQuestData {
     private long descTextMapHash;
     private long stepDescTextMapHash;
 
+    public static String questConditionKey(@Nonnull Enum<?> type, int firstParam, @Nullable String paramsStr) {
+        return type.name() + firstParam + (paramsStr != null ? paramsStr : "");
+    }
+
     @Data
     public static class GainItem {
         private int itemId;
         private int count;
+    }
+
+    @Data
+    @FieldDefaults(level = AccessLevel.PRIVATE)
+    public static class QuestExecParam {
+        QuestExec type;
+        String[] param;
+        String count;
+    }
+
+    public static class QuestAcceptCondition extends QuestCondition<QuestCond> { }
+
+    public static class QuestContentCondition extends QuestCondition<QuestContent> { }
+
+    @Data
+    public static class QuestCondition<TYPE extends Enum<?> & QuestTrigger> {
+        private TYPE type;
+        private int[] param;
+        @Nullable
+        private String paramString;
+        private int count;
+
+        public String asKey() {
+            val param = getParam();
+            return questConditionKey(getType(), param!=null && param.length>0 ? getParam()[0] : 0, getParamString());
+        }
+    }
+
+    @Data
+    public static class Guide {
+        private String type;
+        private List<String> param;
+        private int guideScene;
     }
 }

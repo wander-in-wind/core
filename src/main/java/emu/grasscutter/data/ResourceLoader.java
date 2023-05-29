@@ -11,7 +11,6 @@ import emu.grasscutter.data.common.quest.SubQuestData;
 import emu.grasscutter.data.binout.routes.SceneRoutes;
 import emu.grasscutter.data.common.PointData;
 import emu.grasscutter.data.custom.*;
-import emu.grasscutter.data.excels.QuestData;
 import emu.grasscutter.data.excels.TrialAvatarActivityDataData;
 import emu.grasscutter.data.server.ActivityCondGroup;
 import emu.grasscutter.data.server.GadgetMapping;
@@ -483,7 +482,7 @@ public class ResourceLoader {
         }
         val cacheMap = GameData.getBeginCondQuestMap();
         if (questData.getAcceptCond().isEmpty()) {
-            val list = cacheMap.computeIfAbsent(QuestData.questConditionKey(QuestCond.QUEST_COND_NONE, 0, null), e -> new ArrayList<>());
+            val list = cacheMap.computeIfAbsent(SubQuestData.questConditionKey(QuestCond.QUEST_COND_NONE, 0, null), e -> new ArrayList<>());
             list.add(questData);
         } else {
             questData.getAcceptCond().forEach(questCondition -> {

@@ -300,6 +300,6 @@ public class GameData {
 
     @Nullable
     public static List<SubQuestData> getQuestDataByConditions(QuestCond questCond, int param0, String questStr){
-        return beginCondQuestMap.get(QuestData.questConditionKey(questCond, param0, questStr));
+        return beginCondQuestMap.get(SubQuestData.questConditionKey(questCond, param0, questStr));
     }
 }
