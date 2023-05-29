@@ -590,12 +590,15 @@ public class Player {
     }
 
     public void onEnterRegion(SceneRegion region) {
+        val enterRegionName = "ENTER_REGION_"+ region.config_id;
         getQuestManager().forEachActiveQuest(quest -> {
-            if (quest.getTriggerData() != null && quest.getTriggers().containsKey("ENTER_REGION_"+ region.config_id)) {
+            val triggerData = quest.getTriggerByName(enterRegionName);
+            if (triggerData != null && triggerData.getGroupId() == region.getGroupId()) {
                 // If trigger hasn't been fired yet
-                if (!Boolean.TRUE.equals(quest.getTriggers().put("ENTER_REGION_"+ region.config_id, true))) {
+                if (!Boolean.TRUE.equals(quest.getTriggers().put(enterRegionName, true))) {
                     //getSession().send(new PacketServerCondMeetQuestListUpdateNotify());
-                    getQuestManager().queueEvent(QuestContent.QUEST_CONTENT_TRIGGER_FIRE, quest.getTriggerData().get("ENTER_REGION_"+ region.config_id).getId(),0);
+                    getQuestManager().queueEvent(QuestContent.QUEST_CONTENT_TRIGGER_FIRE,
+                        triggerData.getId(),0);
                 }
             }
         });
@@ -603,12 +606,15 @@ public class Player {
     }
 
     public void onLeaveRegion(SceneRegion region) {
+        val leaveRegionName = "LEAVE_REGION_"+ region.config_id;
         getQuestManager().forEachActiveQuest(quest -> {
-            if (quest.getTriggers().containsKey("LEAVE_REGION_"+ region.config_id)) {
+            val triggerData = quest.getTriggerByName(leaveRegionName);
+            if (triggerData != null && triggerData.getGroupId() == region.getGroupId()) {
                 // If trigger hasn't been fired yet
-                if (!Boolean.TRUE.equals(quest.getTriggers().put("LEAVE_REGION_"+ region.config_id, true))) {
+                if (!Boolean.TRUE.equals(quest.getTriggers().put(leaveRegionName, true))) {
                     getSession().send(new PacketServerCondMeetQuestListUpdateNotify());
-                    getQuestManager().queueEvent(QuestContent.QUEST_CONTENT_TRIGGER_FIRE, quest.getTriggerData().get("LEAVE_REGION_"+ region.config_id).getId(),0);
+                    getQuestManager().queueEvent(QuestContent.QUEST_CONTENT_TRIGGER_FIRE,
+                        triggerData.getId(),0);
                 }
             }
         });
@@ -621,6 +627,9 @@ public class Player {
         return playerProfile;
     }
 
+    public boolean setProperty(PlayerProperty prop, boolean value) {
+        return setPropertyWithSanityCheck(prop, value ? 1:0, true);
+    }
     public boolean setProperty(PlayerProperty prop, int value) {
         return setPropertyWithSanityCheck(prop, value, true);
     }
@@ -631,6 +640,9 @@ public class Player {
 
     public int getProperty(PlayerProperty prop) {
         return getProperties().get(prop.getId());
+    }
+    public boolean getBoolProperty(PlayerProperty prop) {
+        return getProperties().get(prop.getId()) == 1;
     }
 
     public synchronized Int2ObjectMap<CoopRequest> getCoopRequests() {

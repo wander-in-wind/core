@@ -281,16 +281,17 @@ public class QuestManager extends BasePlayerManager {
         return quest;
     }
 
-    public void startMainQuest(int mainQuestId) {
+    public boolean startMainQuest(int mainQuestId) {
         var mainQuestData = GameData.getMainQuestDataMap().get(mainQuestId);
 
         if (mainQuestData == null) {
-            return;
+            return false;
         }
 
         Arrays.stream(mainQuestData.getSubQuests())
             .min(Comparator.comparingInt(SubQuestData::getOrder))
             .ifPresent(this::addQuest);
+        return true;
     }
     public void queueEvent(QuestCond condType, int... params) {
         queueEvent(condType, "", params);

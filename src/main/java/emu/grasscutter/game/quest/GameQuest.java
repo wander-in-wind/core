@@ -25,6 +25,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.val;
 
+import javax.annotation.Nullable;
 import javax.script.Bindings;
 import java.util.HashMap;
 import java.util.Map;
@@ -115,6 +116,14 @@ public class GameQuest {
         }
         //return empty string if can't find trigger
         return "";
+    }
+
+    @Nullable
+    public TriggerExcelConfigData getTriggerByName(String name) {
+        if(triggerData==null){
+            return null;
+        }
+        return triggerData.get(name);
     }
 
     public Player getOwner() {

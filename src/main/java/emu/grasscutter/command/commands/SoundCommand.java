@@ -18,7 +18,7 @@ import static emu.grasscutter.utils.Language.translate;
             "[<audioname>] [<x><y><z>]"
          },
          permission = "player.group",
-         permissionTargeted = "player.group.others")
+         permissionTargeted = "player.sound.others")
 public final class SoundCommand implements CommandHandler {
 
     @Override

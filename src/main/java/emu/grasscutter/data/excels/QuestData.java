@@ -45,49 +45,6 @@ public class QuestData extends GameResource {
         return subId;
     }
 
-    /*public void onLoad() {
-        this.acceptCond = acceptCond.stream().filter(p -> p.getType() != null).toList();
-        this.finishCond = finishCond.stream().filter(p -> p.getType() != null).toList();
-        this.failCond = failCond.stream().filter(p -> p.getType() != null).toList();
-
-        this.beginExec = beginExec.stream().filter(p -> p.type != null).toList();
-        this.finishExec = finishExec.stream().filter(p -> p.type != null).toList();
-        this.failExec = failExec.stream().filter(p -> p.type != null).toList();
-
-        if (this.acceptCondComb == null)
-            this.acceptCondComb = LogicType.LOGIC_NONE;
-
-        if (this.finishCondComb == null)
-            this.finishCondComb = LogicType.LOGIC_NONE;
-
-        if (this.failCondComb == null)
-            this.failCondComb = LogicType.LOGIC_NONE;
-
-        addToCache();
-    }*/
-
-    /*private void addToCache() {
-        if (this.acceptCond == null) {
-            Grasscutter.getLogger().warn("missing AcceptConditions for quest {}", getSubId());
-            return;
-        }
-        val cacheMap = GameData.getBeginCondQuestMap();
-        if (getAcceptCond().isEmpty()) {
-            val list = cacheMap.computeIfAbsent(QuestData.questConditionKey(QuestCond.QUEST_COND_NONE, 0, null), e -> new ArrayList<>());
-            list.add(this);
-        } else {
-            getAcceptCond().forEach(questCondition -> {
-                if (questCondition.getType() == null) {
-                    Grasscutter.getLogger().warn("null accept type for quest {}", getSubId());
-                    return;
-                }
-                val key = questCondition.asKey();
-                val list = cacheMap.computeIfAbsent(key, e -> new ArrayList<>());
-                list.add(this);
-            });
-        }
-    }*/
-
     @Data
     @FieldDefaults(level = AccessLevel.PRIVATE)
     public static class QuestExecParam {
@@ -104,11 +61,13 @@ public class QuestData extends GameResource {
     public static class QuestCondition<TYPE extends Enum<?> & QuestTrigger> {
         private TYPE type;
         private int[] param;
+        @Nullable
         private String paramString;
         private int count;
 
         public String asKey() {
-            return questConditionKey(getType(), getParam()[0], getParamString());
+            val param = getParam();
+            return questConditionKey(getType(), param!=null && param.length>0 ? getParam()[0] : 0, getParamString());
         }
     }
 

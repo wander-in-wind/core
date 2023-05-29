@@ -12,7 +12,10 @@ public class ContentFinishPlot extends BaseContent {
 
     @Override
     public boolean execute(GameQuest quest, QuestData.QuestContentCondition condition, String paramStr, int... params) {
-        MainQuestData.TalkData talkData = quest.getMainQuest().getTalks().get(Integer.valueOf(params[0]));
+        if(params.length == 0) {
+            return false;
+        }
+        MainQuestData.TalkData talkData = quest.getMainQuest().getTalks().get(params[0]);
         GameQuest subQuest = quest.getMainQuest().getChildQuestById(params[0]);
         return talkData != null && subQuest != null || condition.getParam()[0] == params[0];
     }
