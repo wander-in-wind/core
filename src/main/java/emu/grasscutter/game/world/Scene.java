@@ -819,13 +819,13 @@ public class Scene {
             }
 
             // Load garbages
-            List<SceneGadget> garbageGadgets = group.getGarbageGadgets();
+            /*List<SceneGadget> garbageGadgets = group.getGarbageGadgets();
 
             if (garbageGadgets != null) {
                 entities.addAll(garbageGadgets.stream().map(g -> scriptManager.createGadget(group.id, group.block_id, g))
                     .filter(Objects::nonNull)
                     .toList());
-            }
+            }*/
 
             // Load suites
             //int suite = group.findInitSuiteIndex(0);

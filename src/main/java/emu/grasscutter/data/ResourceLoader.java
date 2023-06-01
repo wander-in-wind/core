@@ -6,6 +6,8 @@ import emu.grasscutter.data.binout.*;
 import emu.grasscutter.data.binout.AbilityModifier.AbilityModifierAction;
 import emu.grasscutter.data.binout.config.*;
 import emu.grasscutter.data.binout.config.fields.ConfigAbilityData;
+import emu.grasscutter.data.common.quest.MainQuestData;
+import emu.grasscutter.data.common.quest.SubQuestData;
 import emu.grasscutter.data.binout.routes.SceneRoutes;
 import emu.grasscutter.data.common.PointData;
 import emu.grasscutter.data.custom.*;
@@ -17,6 +19,7 @@ import emu.grasscutter.game.managers.blossom.BlossomConfig;
 import emu.grasscutter.game.quest.QuestEncryptionKey;
 import emu.grasscutter.game.quest.RewindData;
 import emu.grasscutter.game.quest.TeleportData;
+import emu.grasscutter.game.quest.enums.QuestCond;
 import emu.grasscutter.game.world.GroupReplacementData;
 import emu.grasscutter.game.world.SpawnDataEntry;
 import emu.grasscutter.game.world.SpawnDataEntry.GridBlockId;
@@ -434,13 +437,16 @@ public class ResourceLoader {
     }
 
     private static void loadQuests() {
-        try (val stream = Files.list(getResourcePath("BinOutput/Quest/"))) {
+        try (val stream = Files.list(getResourcePath("Generated/Quest/"))) {
             stream.forEach(path -> {
                 try {
                     val mainQuest = JsonUtils.loadToClass(path, MainQuestData.class);
                     GameData.getMainQuestDataMap().put(mainQuest.getId(), mainQuest);
                     if(mainQuest.getTalks() != null) {
                         mainQuest.getTalks().forEach(talkData -> GameData.getQuestTalkMap().put(talkData.getId(), mainQuest.getId()));
+                    }
+                    for(SubQuestData quest : mainQuest.getSubQuests()){
+                        addToCache(quest);
                     }
                 } catch (IOException e) {
 
@@ -466,6 +472,29 @@ public class ResourceLoader {
         }
 
         Grasscutter.getLogger().debug("Loaded " + GameData.getMainQuestDataMap().size() + " MainQuestDatas.");
+    }
+
+    private static void addToCache(SubQuestData questData) {
+        GameData.getQuestDataMap().put(questData.getSubId(), questData);
+        if (questData.getAcceptCond() == null) {
+            Grasscutter.getLogger().warn("missing AcceptConditions for quest {}", questData.getSubId());
+            return;
+        }
+        val cacheMap = GameData.getBeginCondQuestMap();
+        if (questData.getAcceptCond().isEmpty()) {
+            val list = cacheMap.computeIfAbsent(SubQuestData.questConditionKey(QuestCond.QUEST_COND_NONE, 0, null), e -> new ArrayList<>());
+            list.add(questData);
+        } else {
+            questData.getAcceptCond().forEach(questCondition -> {
+                if (questCondition.getType() == null) {
+                    Grasscutter.getLogger().warn("null accept type for quest {}", questData.getSubId());
+                    return;
+                }
+                val key = questCondition.asKey();
+                val list = cacheMap.computeIfAbsent(key, e -> new ArrayList<>());
+                list.add(questData);
+            });
+        }
     }
 
     public static void loadScriptSceneData() {

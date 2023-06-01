@@ -1,14 +1,11 @@
 package emu.grasscutter.game.ability;
 
 import java.util.HashMap;
-import java.util.Map;
 import java.util.Objects;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
-
-import javax.xml.crypto.Data;
 
 import lombok.val;
 import org.reflections.Reflections;
@@ -35,8 +32,6 @@ import emu.grasscutter.net.proto.AbilityMixinCostStaminaOuterClass.AbilityMixinC
 import emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry;
 import emu.grasscutter.net.proto.ModifierActionOuterClass.ModifierAction;
 import io.netty.util.concurrent.FastThreadLocalThread;
-import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
-import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
 import lombok.Getter;
 import emu.grasscutter.net.proto.AbilityMetaAddAbilityOuterClass.AbilityMetaAddAbility;
 

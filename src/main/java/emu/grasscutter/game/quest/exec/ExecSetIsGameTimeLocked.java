@@ -5,12 +5,13 @@ import emu.grasscutter.game.quest.QuestValueExec;
 import emu.grasscutter.game.quest.enums.QuestExec;
 import emu.grasscutter.game.quest.handlers.QuestExecHandler;
 import emu.grasscutter.data.common.quest.SubQuestData.QuestExecParam;
+import lombok.val;
 
-@QuestValueExec(QuestExec.QUEST_EXEC_INC_QUEST_VAR)
-public class ExecIncQuestVar extends QuestExecHandler {
+@QuestValueExec(QuestExec.QUEST_EXEC_SET_IS_GAME_TIME_LOCKED)
+public class ExecSetIsGameTimeLocked extends QuestExecHandler {
     @Override
     public boolean execute(GameQuest quest, QuestExecParam condition, String... paramStr) {
-        quest.getMainQuest().incQuestVar(Integer.parseInt(paramStr[0]), Integer.parseInt(paramStr[1]));
-        return true;
+        val lockTime = Integer.parseInt(paramStr[0]);
+        return quest.getOwner().getWorld().setGameTimeLocked(lockTime == 1);
     }
 }

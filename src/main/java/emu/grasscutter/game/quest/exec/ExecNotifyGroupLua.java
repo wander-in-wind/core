@@ -1,12 +1,12 @@
 package emu.grasscutter.game.quest.exec;
 
 import emu.grasscutter.Grasscutter;
-import emu.grasscutter.data.excels.QuestData;
 import emu.grasscutter.game.quest.GameQuest;
 import emu.grasscutter.game.quest.QuestValueExec;
 import emu.grasscutter.game.quest.enums.QuestState;
 import emu.grasscutter.game.quest.enums.QuestExec;
 import emu.grasscutter.game.quest.handlers.QuestExecHandler;
+import emu.grasscutter.data.common.quest.SubQuestData.QuestExecParam;
 import emu.grasscutter.scripts.constants.EventType;
 import emu.grasscutter.scripts.data.ScriptArgs;
 import lombok.val;
@@ -15,7 +15,7 @@ import lombok.val;
 public class ExecNotifyGroupLua extends QuestExecHandler {
 
     @Override
-    public boolean execute(GameQuest quest, QuestData.QuestExecParam condition, String... paramStr) {
+    public boolean execute(GameQuest quest, QuestExecParam condition, String... paramStr) {
         val sceneId = Integer.parseInt(paramStr[0]);
         val groupId = Integer.parseInt(paramStr[1]);
 
