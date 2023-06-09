@@ -31,7 +31,7 @@ import static emu.grasscutter.net.proto.QueryRegionListHttpRspOuterClass.QueryRe
  */
 public final class RegionHandler implements Router {
     private static final Map<String, RegionData> regions = new ConcurrentHashMap<>();
-    private static Map<RegionType, String> regionListResponses = new HashMap<>();
+    private static final Map<RegionType, String> regionListResponses = new EnumMap<>(RegionType.class);
 
     public RegionHandler() {
         try { // Read & initialize region data.
@@ -116,6 +116,9 @@ public final class RegionHandler implements Router {
         javalin.get("/query_cur_region/{region}", RegionHandler::queryCurrentRegion);
     }
 
+    private static final String VERSION_KEY = "version";
+    private static final String PLATFORM_KEY = "platform";
+
     /**
      * @route /query_region_list
      */
@@ -125,10 +128,10 @@ public final class RegionHandler implements Router {
         RegionType targetRegion = RegionType.OS;
 
         // Respond with event result.
-        if (ctx.queryParamMap().containsKey("version") && ctx.queryParamMap().containsKey("platform")) {
-            String versionName = ctx.queryParam("version");
-            String versionCode = versionName.replaceAll("[/.0-9]*", "");
-            String platformName = ctx.queryParam("platform");
+        if (ctx.queryParamMap().containsKey(VERSION_KEY) && ctx.queryParamMap().containsKey(PLATFORM_KEY)) {
+            String versionName = ctx.queryParam(VERSION_KEY);
+            String versionCode = versionName!=null ?  versionName.replaceAll("[/.0-9]*", "") : "";
+            String platformName = ctx.queryParam(PLATFORM_KEY);
 
             // Determine the region list to use based on the version and platform.
             if ("CNRELiOS".equals(versionCode) || "CNRELWin".equals(versionCode)

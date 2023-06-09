@@ -568,12 +568,13 @@ public class ScriptLib {
 				printTable(table));
 		var configId = table.get("config_id").toint();
 		var delayTime = table.get("delay_time").toint();
+        val group = getCurrentGroup();
 
-		if(getCurrentGroup().isEmpty()){
+		if(group.isEmpty()){
 			return 1;
 		}
 
-		getSceneScriptManager().spawnMonstersByConfigId(getCurrentGroup().get(), configId, delayTime);
+		getSceneScriptManager().spawnMonstersByConfigId(group.get(), configId, delayTime);
 		return 0;
 	}
 

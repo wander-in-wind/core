@@ -12,7 +12,7 @@ public class DynamicFloat {
     public static DynamicFloat ZERO = new DynamicFloat(0f);
 
     public static class StackOp {
-        enum Op {CONSTANT, KEY, ADD, SUB, MUL, DIV, NEXBOOLEAN};
+        enum Op {CONSTANT, KEY, ADD, SUB, MUL, DIV, NEXBOOLEAN}
         public Op op;
         public float fValue;
         public String sValue;
