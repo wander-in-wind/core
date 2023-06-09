@@ -143,6 +143,7 @@ public class QuestManager extends BasePlayerManager {
         this.lastDayCheck = currentDays;
         this.lastHourCheck = currentHours;
         player.getActiveQuestTimers().forEach(mainQuestId -> {
+            queueEvent(QuestCond.QUEST_COND_IS_DAYTIME);
             if(checkHours) {
                 queueEvent(QuestCond.QUEST_COND_TIME_VAR_GT_EQ, mainQuestId);
                 queueEvent(QuestContent.QUEST_CONTENT_TIME_VAR_GT_EQ, mainQuestId);

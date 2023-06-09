@@ -205,7 +205,7 @@ public class Player {
     @Getter @Setter private int nextResinRefresh;
     @Getter @Setter private int lastDailyReset;
     @Getter private transient MpSettingType mpSetting = MpSettingType.MP_SETTING_TYPE_ENTER_AFTER_APPLY;  // TODO
-    @Getter private long playerGameTime = 0;
+    @Getter private long playerGameTime = 540;
 
     @Getter private PlayerProgress playerProgress;
     @Getter private Set<Integer> activeQuestTimers;
@@ -1489,26 +1489,29 @@ public class Player {
         }
     }
 
-    private boolean setPropertyWithSanityCheck(PlayerProperty prop, int value, boolean sendPacket) {
+    public boolean isValueInPropBounds(PlayerProperty prop, int value){
         int min = this.getPropertyMin(prop);
         int max = this.getPropertyMax(prop);
-        if (min <= value && value <= max) {
-            int currentValue = this.properties.get(prop.getId());
-            this.properties.put(prop.getId(), value);
-            if (sendPacket) {
-                // Update player with packet
-                this.sendPacket(new PacketPlayerPropNotify(this, prop));
-                this.sendPacket(new PacketPlayerPropChangeNotify(this, prop, value - currentValue));
+        return min <= value && value <= max;
+    }
 
-                // Make the Adventure EXP pop-up show on screen.
-                if (prop == PlayerProperty.PROP_PLAYER_EXP) {
-                    this.sendPacket(new PacketPlayerPropChangeReasonNotify(this, prop, currentValue, value, PropChangeReason.PROP_CHANGE_REASON_PLAYER_ADD_EXP));
-                }
-            }
-            return true;
-        } else {
+    private boolean setPropertyWithSanityCheck(PlayerProperty prop, int value, boolean sendPacket) {
+        if(!isValueInPropBounds(prop, value)){
             return false;
         }
+        int currentValue = this.properties.get(prop.getId());
+        this.properties.put(prop.getId(), value);
+        if (sendPacket) {
+            // Update player with packet
+            this.sendPacket(new PacketPlayerPropNotify(this, prop));
+            this.sendPacket(new PacketPlayerPropChangeNotify(this, prop, value - currentValue));
+
+            // Make the Adventure EXP pop-up show on screen.
+            if (prop == PlayerProperty.PROP_PLAYER_EXP) {
+                this.sendPacket(new PacketPlayerPropChangeReasonNotify(this, prop, currentValue, value, PropChangeReason.PROP_CHANGE_REASON_PLAYER_ADD_EXP));
+            }
+        }
+        return true;
     }
 
 }
