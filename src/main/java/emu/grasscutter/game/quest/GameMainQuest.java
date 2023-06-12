@@ -26,6 +26,7 @@ import lombok.Getter;
 import lombok.val;
 import org.bson.types.ObjectId;
 
+import javax.annotation.Nullable;
 import java.util.*;
 
 @Entity(value = "quests", useDiscriminator = false)
@@ -73,7 +74,12 @@ public class GameMainQuest {
     }
 
     private void addAllChildQuests() {
-        val subQuests = Arrays.stream(GameData.getMainQuestDataMap().get(this.parentQuestId).getSubQuests()).toList();
+        val mainQuestData = getMainQuestData();
+        if(mainQuestData== null) {
+            Grasscutter.getLogger().error("mainQuestData is null for parentQuestId {}", parentQuestId);
+            return;
+        }
+        val subQuests = Arrays.stream(mainQuestData.getSubQuests()).toList();
         for (SubQuestData subQuestData : subQuests) {
             this.childQuests.put(subQuestData.getSubId(), new GameQuest(this, subQuestData));
         }
@@ -119,6 +125,12 @@ public class GameMainQuest {
         return this.getChildQuests().values().stream().filter(p -> p.getQuestData().getOrder() == order).toList().get(0);
     }
 
+    //TODO maybe just store it in the GameMainQuest object?
+    @Nullable
+    public MainQuestData getMainQuestData() {
+        return GameData.getMainQuestDataMap().get(this.parentQuestId);
+    }
+
     public void finish(boolean isManualFinish) {
         // Avoid recursion from child finish() in GameQuest
         // when auto finishing all child quests with QUEST_STATE_UNFINISHED (below)
@@ -159,8 +171,8 @@ public class GameMainQuest {
         this.save();
 
         // Add rewards
-        MainQuestData mainQuestData = GameData.getMainQuestDataMap().get(this.getParentQuestId());
-        if(mainQuestData.getRewardIdList()!=null) {
+        val mainQuestData = getMainQuestData();
+        if(mainQuestData!= null && mainQuestData.getRewardIdList()!=null) {
             for (int rewardId : mainQuestData.getRewardIdList()) {
                 RewardData rewardData = GameData.getRewardDataMap().get(rewardId);
 
