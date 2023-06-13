@@ -56,7 +56,7 @@ public class AbilityModifierController {
                 ability.getManager().executeAction(ability, action);
             }
 
-        if(data.elementType != null && event.getAttackElementType().equals(data.elementType)) {
+        if(event.getAttackElementType().equals(data.elementType)) {
             elementDurability -= event.getDamage();
             if(elementDurability <= 0) {
                 onRemoved();

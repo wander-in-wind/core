@@ -249,7 +249,7 @@ public class SceneScriptManager {
     public boolean refreshGroupSuite(int groupId, int suiteId) {
         var targetGroupInstance = getGroupInstanceById(groupId);
         if (targetGroupInstance == null) {
-            getGroupById(groupId); //Load the group, this ensures an instance is created and the if neccesary unloaded, but the suite data is stored
+            getGroupById(groupId); //Load the group, this ensures an instance is created and the if necessary unloaded, but the suite data is stored
             targetGroupInstance = getGroupInstanceById(groupId);
             Grasscutter.getLogger().debug("trying to regresh group suite {} in an unloaded and uncached group {} in scene {}", suiteId, groupId, getScene().getId());
         } else {
@@ -391,17 +391,16 @@ public class SceneScriptManager {
     public List<Grid> getGroupGrids() {
         int sceneId = scene.getId();
         if (groupGridsCache.containsKey(sceneId) && groupGridsCache.get(sceneId) != null) {
-            Grasscutter.getLogger().debug("Hit cache for scene {}",sceneId);
             return groupGridsCache.get(sceneId);
         } else {
-            var path = FileUtils.getCachePath("scene" + sceneId + "_grid.json");
+            var path = FileUtils.getCachePath("Grid/scene" + sceneId + "_grid.json");
             if (path.toFile().isFile() && !Grasscutter.config.server.game.cacheSceneEntitiesEveryRun) {
                 try {
                     var groupGrids = JsonUtils.loadToList(path, Grid.class);
                     groupGridsCache.put(sceneId, groupGrids);
                     if(groupGrids != null) return groupGrids;
                 } catch (IOException e) {
-                    Grasscutter.getLogger().error("exception during group grid loading: {}", e);
+                    e.printStackTrace();
                 }
             }
 
@@ -545,7 +544,6 @@ public class SceneScriptManager {
                 callEvent(new ScriptArgs(region.getGroupId(), EventType.EVENT_ENTER_REGION, region.getConfigId())
                     .setSourceEntityId(region.getId())
                     .setTargetEntityId(targetID)
-                    .setGroupId(region.getGroupId())
                 );
 
                 region.resetNewEntities();
@@ -561,7 +559,6 @@ public class SceneScriptManager {
                 callEvent(new ScriptArgs(region.getGroupId(), EventType.EVENT_LEAVE_REGION, region.getConfigId())
                     .setSourceEntityId(region.getId())
                     .setTargetEntityId(region.getFirstEntityId())
-                    .setGroupId(region.getGroupId())
                 );
 
                 region.resetNewEntities();
@@ -897,9 +894,6 @@ public class SceneScriptManager {
         getScene().removeEntities(gameEntity.stream().map(e -> (GameEntity) e).collect(Collectors.toList()), VisionTypeOuterClass.VisionType.VISION_TYPE_REFRESH);
     }
 
-    public RTree<SceneBlock, Geometry> getBlocksIndex() {
-        return meta.sceneBlockIndex;
-    }
     public void removeMonstersInGroup(SceneGroup group, SceneSuite suite) {
         var configSet = suite.sceneMonsters.stream()
                 .map(m -> m.config_id)

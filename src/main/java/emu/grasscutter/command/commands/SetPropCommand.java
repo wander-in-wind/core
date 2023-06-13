@@ -26,7 +26,8 @@ public final class SetPropCommand implements CommandHandler {
         UNLIMITED_ENERGY,
         SET_OPENSTATE,
         UNSET_OPENSTATE,
-        UNLOCK_MAP
+        UNLOCK_MAP,
+        IS_FLYABLE
     }
 
     static class Prop {
@@ -112,6 +113,12 @@ public final class SetPropCommand implements CommandHandler {
         Prop unlockmap = new Prop("UnlockMap", PseudoProp.UNLOCK_MAP);
         this.props.put("unlockmap", unlockmap);
         this.props.put("um", unlockmap);
+
+        Prop flyable = new Prop("IsFlyable", PlayerProperty.PROP_IS_FLYABLE, PseudoProp.IS_FLYABLE);
+        this.props.put("canfly", flyable);
+        this.props.put("fly", flyable);
+        this.props.put("glider", flyable);
+        this.props.put("canglide", flyable);
     }
 
     @Override
@@ -232,7 +239,7 @@ public final class SetPropCommand implements CommandHandler {
     }
 
     // List of map areas. Unfortunately, there is no readily available source for them in excels or bins.
-    final static private List<Integer> sceneAreas = List.of(1,2,3,4,5,6,7,8,9,10,11,12,13,14,17,18,19,20,21,22,23,24,25,26,27,28,29,100,101,102,103,200,210,300,400,401,402,403);
+    final static private List<Integer> sceneAreas = List.of(1,2,3,4,5,6,7,8,9,10,11,12,13,14,17,18,19,20,21,22,23,24,25,26,27,28,29,32,100,101,102,103,200,210,300,400,401,402,403);
     private boolean unlockMap(Player targetPlayer) {
         // Unlock.
         GameData.getScenePointsPerScene().forEach((sceneId, scenePoints) -> {

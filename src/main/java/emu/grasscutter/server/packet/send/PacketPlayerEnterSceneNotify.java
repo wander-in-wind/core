@@ -57,6 +57,14 @@ public class PacketPlayerEnterSceneNotify extends BasePacket {
     public PacketPlayerEnterSceneNotify(Player player, Player target, TeleportProperties teleportProperties) {
         super(PacketOpcodes.PlayerEnterSceneNotify);
 
+//        // Set previous position
+//        if(!(newScene == 3)){ // Hardcoded for now else weird positions will occur
+//            // Don't update position within same scene or teapot
+//        } else {
+//            // Only used for exiting teapot currently
+//            player.setPrevPos(player.getPosition());
+//        }
+
         player.setSceneLoadState(SceneLoadState.LOADING);
         player.setEnterSceneToken(Utils.randomRange(1000, 99999));
 

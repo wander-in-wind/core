@@ -17,6 +17,7 @@ import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.binout.AbilityData;
 import emu.grasscutter.data.binout.AbilityModifierEntry;
 import emu.grasscutter.data.binout.AbilityModifier.AbilityModifierAction;
+import emu.grasscutter.data.binout.AbilityModifierEntry;
 import emu.grasscutter.game.entity.EntityGadget;
 import emu.grasscutter.game.entity.GameEntity;
 import emu.grasscutter.game.entity.gadget.GadgetGatherObject;
@@ -25,6 +26,7 @@ import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.quest.enums.QuestContent;
 import emu.grasscutter.net.proto.AbilityInvokeEntryHeadOuterClass.AbilityInvokeEntryHead;
 import emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry;
+import emu.grasscutter.net.proto.AbilityMetaAddAbilityOuterClass.AbilityMetaAddAbility;
 import emu.grasscutter.net.proto.AbilityMetaModifierChangeOuterClass.AbilityMetaModifierChange;
 import emu.grasscutter.net.proto.AbilityMetaModifierDurabilityChangeOuterClass.AbilityMetaModifierDurabilityChange;
 import emu.grasscutter.net.proto.AbilityMetaReInitOverrideMapOuterClass.AbilityMetaReInitOverrideMap;
@@ -165,7 +167,7 @@ public final class AbilityManager extends BasePlayerManager {
     private boolean checkAbility(Ability ability, int hash, GameEntity entity, int instancedAbilityId){
         val abilityName = ability.getData().abilityName;
         val entityInstanceName = entity.getInstanceToName().get(instancedAbilityId);
-        return ability.getHash() == hash || abilityName!=null && entityInstanceName != null && abilityName.equals(entityInstanceName);
+        return ability.getHash() == hash || abilityName != null && abilityName.equals(entityInstanceName);
     }
 
     private void handleInvoke(AbilityInvokeEntry invoke) {
@@ -175,11 +177,8 @@ public final class AbilityManager extends BasePlayerManager {
         }
 
         AbilityInvokeEntryHead head = invoke.getHead();
-        if (head == null) {
-            return;
-        }
 
-        Grasscutter.getLogger().debug("{} {} {}", head.getInstancedAbilityId(), entity.getInstanceToHash(), head.getLocalId());
+        Grasscutter.getLogger().trace("{} {} {}", head.getInstancedAbilityId(), entity.getInstanceToHash(), head.getLocalId());
 
         Integer hash = entity.getInstanceToHash().get(head.getInstancedAbilityId());
         if(hash == null) {
@@ -243,7 +242,7 @@ public final class AbilityManager extends BasePlayerManager {
 
         // Destroying rocks
         if (target instanceof EntityGadget targetGadget && targetGadget.getContent() instanceof GadgetGatherObject gatherObject) {
-            if (data.getAction() == ModifierAction.REMOVED) {
+            if (data.getAction() == ModifierAction.MODIFIER_ACTION_REMOVED) {
                 gatherObject.dropItems(this.getPlayer());
                 return;
             }
@@ -251,8 +250,29 @@ public final class AbilityManager extends BasePlayerManager {
 
         // Sanity checks
         AbilityInvokeEntryHead head = invoke.getHead();
-        if (head == null) {
-            return;
+
+        if(data.getAction() == ModifierAction.MODIFIER_ACTION_REMOVED) {
+            Ability ability = target.getAbilities().get(data.getParentAbilityName().getStr());
+            if(ability != null) {
+                String modifierName=target.getInstanceToName().get(head.getInstancedModifierId());
+                AbilityModifierController modifier = ability.getModifiers().get(modifierName);
+                if(modifier != null) {
+                    modifier.onRemoved();
+                    ability.getModifiers().remove(modifierName);
+                }
+            }
+        }
+
+        if(data.getAction() == ModifierAction.MODIFIER_ACTION_ADDED) {
+            String modifierString = data.getParentAbilityName().getStr();
+
+            Integer hash = target.getInstanceToHash().get(head.getInstancedAbilityId());
+            if (hash == null) return;
+            target.getAbilities().values().stream()
+                .filter(a -> checkAbility(a, hash, target, head.getInstancedAbilityId()))
+                .map(a -> a.getModifiers().get(modifierString))
+                .filter(Objects::nonNull)
+                .forEach(a -> a.setLocalId(head.getInstancedModifierId()));
         }
 
         if(data.getAction() == ModifierAction.REMOVED) {
@@ -284,7 +304,7 @@ public final class AbilityManager extends BasePlayerManager {
         }
 
         // This is not how it works but we will keep it for now since healing abilities dont work properly anyways
-        if (data.getAction() == ModifierAction.ADDED && data.getParentAbilityName() != null) {
+        if (data.getAction() == ModifierAction.MODIFIER_ACTION_ADDED) {
             // Handle add modifier here
             String modifierString = data.getParentAbilityName().getStr();
             AbilityModifierEntry modifier = GameData.getAbilityModifiers().get(modifierString);
@@ -297,7 +317,7 @@ public final class AbilityManager extends BasePlayerManager {
 
             // Add to meta modifier list
             target.getMetaModifiers().put(head.getInstancedModifierId(), modifierString);
-        } else if (data.getAction() == ModifierAction.REMOVED) {
+        } else if (data.getAction() == ModifierAction.MODIFIER_ACTION_REMOVED) {
             // Handle remove modifier
             String modifierString = target.getMetaModifiers().get(head.getInstancedModifierId());
 
@@ -367,9 +387,6 @@ public final class AbilityManager extends BasePlayerManager {
         }
 
         AbilityInvokeEntryHead head = invoke.getHead();
-        if (head == null) {
-            return;
-        }
 
         Integer hash = target.getInstanceToHash().get(head.getInstancedAbilityId());
         if(hash == null) return;

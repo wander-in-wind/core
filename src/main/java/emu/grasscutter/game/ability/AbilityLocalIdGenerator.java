@@ -20,7 +20,7 @@ public class AbilityLocalIdGenerator {
         }
     }
 
-    public ConfigAbilitySubContainerType type = ConfigAbilitySubContainerType.NONE;
+    public ConfigAbilitySubContainerType type;
     public long ModifierIndex = 0;
     public long ConfigIndex = 0;
     public long MixinIndex = 0;
@@ -31,7 +31,7 @@ public class AbilityLocalIdGenerator {
         this.type = type;
     }
 
-    public void InitializeActionLocalIds(AbilityModifierAction actions[], Map<Integer, AbilityModifierAction> localIdToAction)
+    public void InitializeActionLocalIds(AbilityModifierAction[] actions, Map<Integer, AbilityModifierAction> localIdToAction)
     {
         if (actions == null) return;
         ActionIndex = 0;

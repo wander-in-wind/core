@@ -1,9 +1,6 @@
 package emu.grasscutter.scripts.data;
 
-import com.github.davidmoten.rtreemulti.RTree;
-import com.github.davidmoten.rtreemulti.geometry.Geometry;
 import emu.grasscutter.Grasscutter;
-import emu.grasscutter.scripts.SceneIndexManager;
 import emu.grasscutter.scripts.ScriptLoader;
 import lombok.Setter;
 import lombok.ToString;
@@ -12,6 +9,7 @@ import javax.script.Bindings;
 import javax.script.CompiledScript;
 import javax.script.ScriptException;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -22,10 +20,9 @@ public class SceneMeta {
 
     public SceneConfig config;
     public Map<Integer, SceneBlock> blocks;
+    public Map<Integer, SceneGroup> groups;
 
     public Bindings context;
-
-    public RTree<SceneBlock, Geometry> sceneBlockIndex;
 
     public static SceneMeta of(int sceneId) {
         return new SceneMeta().load(sceneId);
@@ -57,11 +54,16 @@ public class SceneMeta {
             for (int i = 0; i < blocks.size(); i++) {
                 SceneBlock block = blocks.get(i);
                 block.id = blockIds.get(i);
-
             }
 
             this.blocks = blocks.stream().collect(Collectors.toMap(b -> b.id, b -> b, (a, b) -> a));
-            this.sceneBlockIndex = SceneIndexManager.buildIndex(2, blocks, SceneBlock::toRectangle);
+
+            //load all blocks
+            this.groups = new HashMap<>();
+            for (var block : this.blocks.values()) {
+                block.load(sceneId, this.context);
+                groups.putAll(block.groups);
+            }
 
         } catch (ScriptException exception) {
             Grasscutter.getLogger().error("An error occurred while running a script.", exception);

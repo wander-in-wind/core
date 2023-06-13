@@ -22,6 +22,7 @@ import emu.grasscutter.command.CommandHandler;
 import emu.grasscutter.command.CommandMap;
 import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.ResourceLoader;
+import emu.grasscutter.data.excels.AchievementData;
 import emu.grasscutter.data.excels.AvatarData;
 import emu.grasscutter.data.excels.ItemData;
 import emu.grasscutter.utils.Language;
@@ -30,12 +31,24 @@ import it.unimi.dsi.fastutil.ints.Int2IntRBTreeMap;
 import it.unimi.dsi.fastutil.ints.Int2ObjectRBTreeMap;
 import lombok.val;
 
-import static emu.grasscutter.config.Configuration.*;
 import static emu.grasscutter.utils.FileUtils.getResourcePath;
 import static emu.grasscutter.utils.Language.getTextMapKey;
 
 public final class Tools {
+    /**
+     * This generates the GM handbooks with a message by default.
+     * @throws Exception If an error occurs while generating the handbooks.
+     */
     public static void createGmHandbooks() throws Exception {
+        Tools.createGmHandbooks(true);
+    }
+
+    /**
+     * Generates a GM handbook for each language.
+     * @param message Should a message be printed to the console?
+     * @throws Exception If an error occurs while generating the handbooks.
+     */
+    public static void createGmHandbooks(boolean message) throws Exception {
         val languages = Language.TextStrings.getLanguages();
 
         ResourceLoader.loadAll();
@@ -47,8 +60,9 @@ public final class Tools {
         val monsterDataMap = new Int2ObjectRBTreeMap<>(GameData.getMonsterDataMap());
         val sceneDataMap = new Int2ObjectRBTreeMap<>(GameData.getSceneDataMap());
         val questDataMap = new Int2ObjectRBTreeMap<>(GameData.getQuestDataMap());
+        val achievementDataMap = new Int2ObjectRBTreeMap<>(GameData.getAchievementDataMap());
 
-        Function<SortedMap, String> getPad = m -> "%" + m.lastKey().toString().length() + "s : ";
+        Function<SortedMap<?, ?>, String> getPad = m -> "%" + m.lastKey().toString().length() + "s : ";
 
         // Create builders and helper functions
         val handbookBuilders = IntStream.range(0, TextStrings.NUM_LANGUAGES).mapToObj(i -> new StringBuilder()).toList();
@@ -136,6 +150,14 @@ public final class Tools {
             padQuestId.formatted(id) + "{0} - {1}",
             mainQuestTitles.get(data.getMainId()),
             data.getDescTextMapHash()));
+        // Achievements
+        h.newSection("Achievements");
+        val padAchievementId = getPad.apply(achievementDataMap);
+        achievementDataMap.values().stream()
+            .filter(AchievementData::isUsed)
+            .forEach(data -> {
+                h.newTranslatedLine(padAchievementId.formatted(data.getId()) + "{0} - {1}", data.getTitleTextMapHash(), data.getDescTextMapHash());
+            });
 
         // Write txt files
         for (int i = 0; i < TextStrings.NUM_LANGUAGES; i++) {
@@ -146,7 +168,8 @@ public final class Tools {
                 writer.write(handbookBuilders.get(i).toString());
             }
         }
-        Grasscutter.getLogger().info("GM Handbooks generated!");
+
+        if (message) Grasscutter.getLogger().info("GM Handbooks generated!");
     }
 
     public static List<String> createGachaMappingJsons() {

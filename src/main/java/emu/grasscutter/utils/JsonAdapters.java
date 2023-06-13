@@ -23,6 +23,10 @@ import it.unimi.dsi.fastutil.ints.IntArrayList;
 import it.unimi.dsi.fastutil.ints.IntList;
 import lombok.val;
 
+import static com.google.gson.stream.JsonToken.BEGIN_ARRAY;
+import static com.google.gson.stream.JsonToken.BEGIN_OBJECT;
+import static emu.grasscutter.utils.JsonUtils.gson;
+
 public class JsonAdapters {
     static class DynamicFloatAdapter extends TypeAdapter<DynamicFloat> {
         @Override

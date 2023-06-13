@@ -14,6 +14,7 @@ public class PacketGetPlayerTokenRsp extends BasePacket {
         super(PacketOpcodes.GetPlayerTokenRsp, true);
 
         this.setUseDispatchKey(true);
+        this.shouldEncrypt = false;
 
         GetPlayerTokenRsp p = GetPlayerTokenRsp.newBuilder()
             .setUid(session.getPlayer().getUid())
@@ -37,6 +38,7 @@ public class PacketGetPlayerTokenRsp extends BasePacket {
         super(PacketOpcodes.GetPlayerTokenRsp, true);
 
         this.setUseDispatchKey(true);
+        this.shouldEncrypt = false;
 
         GetPlayerTokenRsp p = GetPlayerTokenRsp.newBuilder()
             .setUid(session.getPlayer().getUid())
@@ -56,6 +58,7 @@ public class PacketGetPlayerTokenRsp extends BasePacket {
         super(PacketOpcodes.GetPlayerTokenRsp, true);
 
         this.setUseDispatchKey(true);
+        this.shouldEncrypt = false;
 
         GetPlayerTokenRsp p = GetPlayerTokenRsp.newBuilder()
             .setUid(session.getPlayer().getUid())
@@ -70,8 +73,8 @@ public class PacketGetPlayerTokenRsp extends BasePacket {
             .setClientVersionRandomKey("c25-314dd05b0b5f")
             .setRegPlatform(3)
             .setClientIpStr(session.getAddress().getAddress().getHostAddress())
-            .setEncryptedSeed(encryptedSeed)
-            .setSeedSignature(encryptedSeedSign)
+            .setServerRandKey(encryptedSeed)
+            .setSign(encryptedSeedSign)
             .build();
 
         this.setData(p.toByteArray());

@@ -5,6 +5,7 @@ import com.google.gson.JsonObject;
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.ResourceLoader;
+import emu.grasscutter.data.excels.AchievementData;
 import emu.grasscutter.game.player.Player;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
@@ -15,6 +16,7 @@ import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap;
 import lombok.EqualsAndHashCode;
 
 import static emu.grasscutter.config.Configuration.*;
+import static emu.grasscutter.utils.FileUtils.getCachePath;
 import static emu.grasscutter.utils.FileUtils.getResourcePath;
 
 import java.io.BufferedInputStream;
@@ -367,17 +369,16 @@ public final class Language {
     }
 
     private static void saveTextMapsCache(Int2ObjectMap<TextStrings> input) throws IOException {
-        try {
-            Files.createDirectory(Path.of("cache"));
-        } catch (FileAlreadyExistsException ignored) {};
-        try (ObjectOutputStream file = new ObjectOutputStream(new BufferedOutputStream(Files.newOutputStream(TEXTMAP_CACHE_PATH, StandardOpenOption.CREATE), 0x100000))) {
+        Files.createDirectories(TEXTMAP_CACHE_PATH.getParent());
+        try (var file = new ObjectOutputStream(new BufferedOutputStream(
+            Files.newOutputStream(TEXTMAP_CACHE_PATH, StandardOpenOption.CREATE), 0x100000))) {
             file.writeInt(TEXTMAP_CACHE_VERSION);
             file.writeObject(input);
         }
     }
 
     private static Int2ObjectMap<TextStrings> textMapStrings;
-    private static final Path TEXTMAP_CACHE_PATH = Path.of(Utils.toFilePath("cache/TextMapCache.bin"));
+    private static final Path TEXTMAP_CACHE_PATH = getCachePath("TextMap/TextMapCache.bin");
 
     @Deprecated(forRemoval = true)
     public static Int2ObjectMap<TextStrings> getTextMapStrings() {
@@ -417,7 +418,7 @@ public final class Language {
                 Grasscutter.getLogger().debug("Cache modified %d, textmap modified %d".formatted(cacheModified, textmapsModified));
             if (textmapsModified < cacheModified) {
                 // Try loading from cache
-                Grasscutter.getLogger().info("Loading cached TextMaps");
+                Grasscutter.getLogger().info("Loading cached 'TextMaps'...");
                 textMapStrings = loadTextMapsCache();
                 return;
             }
@@ -429,6 +430,12 @@ public final class Language {
         Grasscutter.getLogger().info("Generating TextMaps cache");
         ResourceLoader.loadAll();
         IntSet usedHashes = new IntOpenHashSet();
+        GameData.getAchievementDataMap().values().stream()
+            .filter(AchievementData::isUsed)
+            .forEach(a -> {
+                usedHashes.add((int) a.getTitleTextMapHash());
+                usedHashes.add((int) a.getDescTextMapHash());
+            });
         GameData.getAvatarDataMap().forEach((k, v) -> usedHashes.add((int) v.getNameTextMapHash()));
         GameData.getAvatarSkillDataMap().forEach((k, v) -> {
             usedHashes.add((int) v.getNameTextMapHash());

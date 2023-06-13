@@ -20,7 +20,7 @@ public class ActionApplyModifier extends AbilityActionHandler {
         }
 
         if(modifierData.stacking != null && modifierData.stacking.compareTo("Unique") == 0 &&
-            ability.getModifiers().values().stream().filter(m -> m.getData().equals(modifierData)).count() != 0) {
+           ability.getModifiers().values().stream().anyMatch(m -> m.getData().equals(modifierData))) {
             return true;
         }
 

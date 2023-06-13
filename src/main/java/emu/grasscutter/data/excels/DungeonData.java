@@ -4,6 +4,10 @@ import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.GameResource;
 import emu.grasscutter.data.ResourceType;
 import emu.grasscutter.game.dungeons.enums.*;
+import java.util.List;
+
+import emu.grasscutter.scripts.data.SceneMeta;
+import emu.grasscutter.utils.Position;
 import lombok.Getter;
 
 import java.util.List;
@@ -29,6 +33,7 @@ public class DungeonData extends GameResource {
 	@Getter private int passRewardPreviewID;
     @Getter private int statueCostID;
     @Getter private int statueCostCount;
+    @Getter private int statueDrop;
 
     // not part of DungeonExcelConfigData
     @Getter private RewardPreviewData rewardPreviewData;
@@ -61,10 +66,24 @@ public class DungeonData extends GameResource {
         return involveType;
     }
 
-	@Override
-	public void onLoad() {
-		if (this.passRewardPreviewID > 0) {
-			this.rewardPreviewData = GameData.getRewardPreviewDataMap().get(this.passRewardPreviewID);
-		}
-	}
+    /**
+     * @return The position of the player when they enter the dungeon.
+     */
+    public Position getStartPosition() {
+        return SceneMeta.of(this.getSceneId()).config.born_pos;
+    }
+
+    /**
+     * @return The rotation of the player when they enter the dungeon.
+     */
+    public Position getStartRotation() {
+        return SceneMeta.of(this.getSceneId()).config.born_rot;
+    }
+
+    @Override
+    public void onLoad() {
+        if (this.passRewardPreviewID > 0) {
+            this.rewardPreviewData = GameData.getRewardPreviewDataMap().get(this.passRewardPreviewID);
+        }
+    }
 }

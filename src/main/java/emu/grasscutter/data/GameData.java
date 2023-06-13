@@ -66,6 +66,8 @@ public class GameData {
     @Getter private static final Int2ObjectMap<Int2ObjectMap<Route>> sceneRouteData = new Int2ObjectOpenHashMap<>();
 
     @Getter private static final ArrayList<CodexReliquaryData> codexReliquaryArrayList = new ArrayList<>();
+    private static final Int2ObjectMap<AchievementData> achievementDataMap = new Int2ObjectOpenHashMap<>();
+    @Getter private static final Int2ObjectMap<AchievementGoalData> achievementGoalDataMap = new Int2ObjectOpenHashMap<>();
     @Getter private static final Int2ObjectMap<ActivityData> activityDataMap = new Int2ObjectOpenHashMap<>();
     @Getter private static final Int2ObjectMap<ActivityShopData> activityShopDataMap = new Int2ObjectOpenHashMap<>();
     @Getter private static final Int2ObjectMap<ActivityWatcherData> activityWatcherDataMap = new Int2ObjectOpenHashMap<>();
@@ -96,6 +98,8 @@ public class GameData {
     @Getter private static final Int2ObjectMap<CookRecipeData> cookRecipeDataMap = new Int2ObjectOpenHashMap<>();
     @Getter private static final Int2ObjectMap<CompoundData> compoundDataMap=new Int2ObjectOpenHashMap<>();
     @Getter private static final Int2ObjectMap<DailyDungeonData> dailyDungeonDataMap = new Int2ObjectOpenHashMap<>();
+    @Getter private static final Int2ObjectMap<DropTableData> dropTableDataMap=new Int2ObjectOpenHashMap<>();
+    @Getter private static final Int2ObjectMap<DropMaterialData> dropMaterialDataMap=new Int2ObjectOpenHashMap<>();
     @Getter private static final Int2ObjectMap<DungeonData> dungeonDataMap = new Int2ObjectOpenHashMap<>();
     @Getter private static final Int2ObjectMap<DungeonEntryData> dungeonEntryDataMap = new Int2ObjectOpenHashMap<>();
     @Getter private static final Int2ObjectMap<EnvAnimalGatherConfigData> envAnimalGatherConfigDataMap = new Int2ObjectOpenHashMap<>();
@@ -301,5 +305,10 @@ public class GameData {
     @Nullable
     public static List<SubQuestData> getQuestDataByConditions(QuestCond questCond, int param0, String questStr){
         return beginCondQuestMap.get(SubQuestData.questConditionKey(questCond, param0, questStr));
+    }
+
+    public static Int2ObjectMap<AchievementData> getAchievementDataMap() {
+        AchievementData.divideIntoGroups();
+        return achievementDataMap;
     }
 }

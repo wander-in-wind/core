@@ -1,5 +1,6 @@
 package emu.grasscutter.data.binout;
 
+import java.io.Serial;
 import java.io.Serializable;
 
 import com.google.gson.annotations.SerializedName;
@@ -8,7 +9,7 @@ import emu.grasscutter.data.common.DynamicFloat;
 import emu.grasscutter.game.props.ElementType;
 
 public class AbilityModifier implements Serializable {
-    private static final long serialVersionUID = -2001232313615923575L;
+    @Serial private static final long serialVersionUID = -2001232313615923575L;
 
     @SerializedName(value="onAdded", alternate={"KCICDEJLIJD"})
     public AbilityModifierAction[] onAdded;

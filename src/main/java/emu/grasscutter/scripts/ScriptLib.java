@@ -29,7 +29,6 @@ import lombok.val;
 import org.luaj.vm2.LuaTable;
 import org.luaj.vm2.LuaValue;
 import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import javax.annotation.Nullable;
 import java.util.*;
@@ -41,7 +40,7 @@ import static emu.grasscutter.scripts.constants.GroupKillPolicy.*;
 
 @SuppressWarnings("unused")
 public class ScriptLib {
-	public static final Logger logger = LoggerFactory.getLogger(ScriptLib.class);
+	public static final Logger logger = Grasscutter.getLogger();
 	private final FastThreadLocal<SceneScriptManager> sceneScriptManager;
 	private final FastThreadLocal<SceneGroup> currentGroup;
 	private final FastThreadLocal<ScriptArgs> callParams;
@@ -105,11 +104,11 @@ public class ScriptLib {
 				configId,gadgetState);
 		GameEntity entity = getSceneScriptManager().getScene().getEntityByConfigId(configId);
 
-		if (!(entity instanceof EntityGadget)) {
-			return 1;
-		}
+        if (!(entity instanceof EntityGadget gadget)) {
+            return 1;
+        }
 
-        ((EntityGadget) entity).updateState(gadgetState);
+        gadget.updateState(gadgetState);
         return 0;
 	}
 
@@ -117,11 +116,11 @@ public class ScriptLib {
 		logger.debug("[LUA] Call SetGroupGadgetStateByConfigId with {},{},{}",
 				groupId,configId,gadgetState);
 
-		val entity = getSceneScriptManager().getScene().getEntityByConfigId(configId, groupId);
-        if(!(entity instanceof EntityGadget)){
+        val entity = getSceneScriptManager().getScene().getEntityByConfigId(configId, groupId);
+        if(!(entity instanceof EntityGadget gadget)){
             return -1;
         }
-        ((EntityGadget) entity).updateState(gadgetState);
+        gadget.updateState(gadgetState);
 
 		return 0;
 	}
@@ -171,9 +170,7 @@ public class ScriptLib {
 
         worktop.addWorktopOptions(worktopOptions);
         var scene = getSceneScriptManager().getScene();
-        Grasscutter.getGameServer().getScheduler().scheduleDelayedTask(() -> {
-            scene.broadcastPacket(new PacketWorktopOptionNotify(gadget));
-        },1);
+        Grasscutter.getGameServer().getScheduler().scheduleDelayedTask(() -> scene.broadcastPacket(new PacketWorktopOptionNotify(gadget)),1);
 		return 0;
 	}
 
@@ -216,25 +213,33 @@ public class ScriptLib {
         worktop.removeWorktopOption(callParams.param2);
 
         var scene = getSceneScriptManager().getScene();
-        Grasscutter.getGameServer().getScheduler().scheduleDelayedTask(() -> {
-            scene.broadcastPacket(new PacketWorktopOptionNotify(gadget));
-        },1);
+        Grasscutter.getGameServer().getScheduler().scheduleDelayedTask(() -> scene.broadcastPacket(new PacketWorktopOptionNotify(gadget)), 1);
 
         return 0;
     }
 
-	// Some fields are guessed
-	public int AutoMonsterTide(int challengeIndex, int groupId, Integer[] ordersConfigId, int tideCount, int sceneLimit, int param6) {
-		logger.debug("[LUA] Call AutoMonsterTide with {},{},{},{},{},{}",
-				challengeIndex,groupId,ordersConfigId,tideCount,sceneLimit,param6);
+    /**
+     * Create a monster tide
+     *
+     * @param tideIndex        used for EVENT_MONSTER_TIDE_DIE's event source
+     * @param groupId          the tide's group id
+     * @param monsterConfigIds configIds of monsters
+     * @param totalCount       total monster count
+     * @param stageLimitMin    min monster count on the stage
+     * @param stageLimitMax    max monster count on the stage
+     * @return 0 on success
+     */
+    public int AutoMonsterTide(int tideIndex, int groupId, Integer[] monsterConfigIds, int totalCount, int stageLimitMin, int stageLimitMax) {
+        logger.debug("[LUA] Call AutoMonsterTide with {},{},{},{},{},{}",
+            tideIndex, groupId, monsterConfigIds, totalCount, stageLimitMin, stageLimitMax);
 
-		SceneGroup group = getSceneScriptManager().getGroupById(groupId);
+        SceneGroup group = getSceneScriptManager().getGroupById(groupId);
 
-		if (group == null || group.monsters == null) {
-			return 1;
-		}
+        if (group == null || group.monsters == null) {
+            return 1;
+        }
 
-		this.getSceneScriptManager().startMonsterTideInGroup(group, ordersConfigId, tideCount, sceneLimit);
+        this.getSceneScriptManager().startMonsterTideInGroup(tideIndex, group, monsterConfigIds, totalCount, stageLimitMin, stageLimitMax);
 
 		return 0;
 	}
@@ -400,7 +405,7 @@ public class ScriptLib {
 
         val old = variables.getOrDefault(var, value);
         variables.put(var, value);
-        getSceneScriptManager().callEvent(new ScriptArgs(groupId, EventType.EVENT_VARIABLE_CHANGE, value, old));
+        getSceneScriptManager().callEvent(new ScriptArgs(groupId, EventType.EVENT_VARIABLE_CHANGE, value, old).setEventSource(var));
 		return 0;
 	}
 
@@ -415,7 +420,7 @@ public class ScriptLib {
         variables.put(var, old + value);
         logger.debug("[LUA] Call ChangeGroupVariableValue with {},{}",
             old, old+value);
-        getSceneScriptManager().callEvent(new ScriptArgs(groupId, EventType.EVENT_VARIABLE_CHANGE, old+value, old));
+        getSceneScriptManager().callEvent(new ScriptArgs(groupId, EventType.EVENT_VARIABLE_CHANGE, old+value, old).setEventSource(var));
 		return LuaValue.ZERO;
 	}
 
@@ -472,9 +477,14 @@ public class ScriptLib {
         printLog("PrintLog", msg);
 	}
 
-	public int TowerCountTimeStatus(int isDone, int var2){
-		logger.debug("[LUA] Call TowerCountTimeStatus with {},{}",
-				isDone,var2);
+    /**
+     *
+     * @param isDone
+     * @return
+     */
+	public int TowerCountTimeStatus(int isDone){
+		logger.debug("[LUA] Call TowerCountTimeStatus with {}",
+				isDone);
 		// TODO record time
 		return 0;
 	}
@@ -511,9 +521,19 @@ public class ScriptLib {
 		return 0;
 	}
 
-    public int SetEntityServerGlobalValueByConfigId(int cfgId, String sgvName, int value){
-        logger.warn("[LUA] Call unimplemented SetEntityServerGlobalValueByConfigId with {} {} {}", cfgId, sgvName, value);
-        //TODO implement
+    public int SetEntityServerGlobalValueByConfigId(int cfgId, String sgvName, int value) {
+        logger.debug("[LUA] Call SetEntityServerGlobalValueByConfigId with {}, {}, {}",
+            cfgId, sgvName, value);
+
+        var scriptManager = this.getSceneScriptManager();
+        if (scriptManager == null) return 1;
+
+        var scene = scriptManager.getScene();
+        var entity = scene.getEntityByConfigId(cfgId);
+        if (entity == null) return 2;
+
+        scene.broadcastPacket(
+            new PacketServerGlobalValueChangeNotify(entity, sgvName, value));
         return 0;
     }
 

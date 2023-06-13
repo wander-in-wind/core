@@ -11,6 +11,7 @@ import dev.morphia.query.experimental.filters.Filters;
 import emu.grasscutter.GameConstants;
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.game.Account;
+import emu.grasscutter.game.achievement.Achievements;
 import emu.grasscutter.game.activity.PlayerActivityData;
 import emu.grasscutter.game.activity.musicgame.MusicGameBeatmap;
 import emu.grasscutter.game.avatar.Avatar;
@@ -134,6 +135,7 @@ public final class DatabaseHelper {
         }
         int uid = player.getUid();
         // Delete data from collections
+        DatabaseManager.getGameDatabase().getCollection("achievements").deleteMany(eq("uid", uid));
         DatabaseManager.getGameDatabase().getCollection("activities").deleteMany(eq("uid", uid));
         DatabaseManager.getGameDatabase().getCollection("homes").deleteMany(eq("ownerUid", uid));
         DatabaseManager.getGameDatabase().getCollection("mail").deleteMany(eq("ownerUid", uid));
@@ -350,6 +352,7 @@ public final class DatabaseHelper {
     public static void savePlayerActivityData(PlayerActivityData playerActivityData) {
         DatabaseManager.getGameDatastore().save(playerActivityData);
     }
+
     public static MusicGameBeatmap getMusicGameBeatmap(long musicShareId) {
         return DatabaseManager.getGameDatastore().find(MusicGameBeatmap.class)
             .filter(Filters.eq("musicShareId", musicShareId))
@@ -365,7 +368,18 @@ public final class DatabaseHelper {
     }
 
     public static SceneGroupInstance loadGroupInstance(int groupId, Player owner) {
-        SceneGroupInstance instance = DatabaseManager.getGameDatastore().find(SceneGroupInstance.class).filter(Filters.and(Filters.eq("ownerUid", owner.getUid()), Filters.eq("groupId", groupId))).first();
+        SceneGroupInstance instance = DatabaseManager.getGameDatastore().find(SceneGroupInstance.class)
+                .filter(Filters.and(Filters.eq("ownerUid", owner.getUid()), Filters.eq("groupId", groupId))).first();
         return instance;
+    }
+
+    public static Achievements getAchievementData(int uid) {
+        return DatabaseManager.getGameDatastore().find(Achievements.class)
+            .filter(Filters.and(Filters.eq("uid", uid)))
+            .first();
+    }
+
+    public static void saveAchievementData(Achievements achievements) {
+        DatabaseManager.getGameDatastore().save(achievements);
     }
 }

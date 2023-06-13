@@ -27,6 +27,10 @@ import lombok.val;
 import org.bson.types.ObjectId;
 
 import java.util.*;
+import javax.script.Bindings;
+import javax.script.CompiledScript;
+import javax.script.ScriptException;
+
 
 @Entity(value = "quests", useDiscriminator = false)
 public class GameMainQuest {
@@ -157,7 +161,7 @@ public class GameMainQuest {
 
         // Add rewards
         MainQuestData mainQuestData = GameData.getMainQuestDataMap().get(this.getParentQuestId());
-        if(mainQuestData.getRewardIdList()!=null) {
+        if (mainQuestData != null && mainQuestData.getRewardIdList() != null) {
             for (int rewardId : mainQuestData.getRewardIdList()) {
                 RewardData rewardData = GameData.getRewardDataMap().get(rewardId);
 
@@ -385,7 +389,7 @@ public class GameMainQuest {
                 .setParentQuestId(getParentQuestId())
                 .setIsFinished(isFinished())
                 .setParentQuestState(getState().getValue())
-                .setCutsceneEncryptionKey(QuestManager.getQuestKey(parentQuestId));
+                .setVideoKey(QuestManager.getQuestKey(parentQuestId));
         if(withChildQuests) {
             for (GameQuest quest : this.getChildQuests().values()) {
                 if (quest.getState() != QuestState.QUEST_STATE_UNSTARTED) {

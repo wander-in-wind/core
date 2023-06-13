@@ -7,6 +7,7 @@ import emu.grasscutter.Grasscutter.ServerDebugMode;
 import emu.grasscutter.Grasscutter.ServerRunMode;
 import emu.grasscutter.utils.JsonUtils;
 
+import java.net.URI;
 import java.util.Set;
 import java.lang.reflect.Field;
 import java.util.Arrays;
@@ -87,7 +88,7 @@ public class ConfigContainer {
         public String packets = "./packets/";
         public String scripts = "resources:Scripts/";
         public String plugins = "./plugins/";
-        public String cache = "./server/cache/";
+        public String cache = "./cache/";
 
         // UNUSED (potentially added later?)
         // public String dumps = "./dumps/";
@@ -146,7 +147,8 @@ public class ConfigContainer {
 
         /* Entities within a certain range will be loaded for the player */
         public int loadEntitiesForPlayerRange = 300;
-        public boolean enableScriptInBigWorld = false;
+        /* Start in 'unstable-quests', Lua scripts will be enabled by default. */
+        public boolean enableScriptInBigWorld = true;
         public boolean enableConsole = true;
 
         /* Kcp internal work interval (milliseconds) */
@@ -235,9 +237,9 @@ public class ConfigContainer {
         public boolean staminaUsage = true;
         public boolean energyUsage = true;
         public boolean fishhookTeleport = true;
+        public boolean questing = true;
         public ResinOptions resinOptions = new ResinOptions();
         public Rates rates = new Rates();
-        public boolean questing = false;
 
         public static class InventoryLimits {
             public int weapons = 2000;

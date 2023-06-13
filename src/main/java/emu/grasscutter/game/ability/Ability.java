@@ -3,10 +3,8 @@ package emu.grasscutter.game.ability;
 import java.util.HashMap;
 import java.util.Map;
 
-import emu.grasscutter.Grasscutter;
 import emu.grasscutter.data.binout.AbilityData;
 import emu.grasscutter.data.binout.AbilityModifier.AbilityModifierAction;
-import emu.grasscutter.data.common.DynamicFloat;
 import emu.grasscutter.game.entity.GameEntity;
 import emu.grasscutter.server.event.entity.EntityDamageEvent;
 import lombok.Getter;
@@ -55,7 +53,7 @@ public class Ability {
         char[] asCharArray = str.toCharArray();
         for (int i = 0; i < str.length(); i++)
         {
-            hash = ((asCharArray[i] + 131 * hash) & 0xFFFFFFFF);
+            hash = ((asCharArray[i] + 131 * hash) & 0xFFFFFFFFL);
         }
         return (int)hash;
     }

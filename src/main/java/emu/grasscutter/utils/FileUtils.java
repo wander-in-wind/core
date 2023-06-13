@@ -8,7 +8,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.*;
+import java.nio.file.FileSystem;
+import java.nio.file.FileSystems;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -19,7 +22,7 @@ public final class FileUtils {
     private static final Path DATA_USER_PATH = Path.of(Grasscutter.config.folderStructure.data);
     private static final Path PACKETS_PATH = Path.of(Grasscutter.config.folderStructure.packets);
     private static final Path PLUGINS_PATH = Path.of(Grasscutter.config.folderStructure.plugins);
-    private static final Path CACHE_PATH;
+    private static final Path CACHE_PATH = Path.of(Grasscutter.config.folderStructure.cache);
     private static final Path RESOURCES_PATH;
     private static final Path SCRIPTS_PATH;
     static {
@@ -88,7 +91,6 @@ public final class FileUtils {
             ? RESOURCES_PATH.resolve(scripts.substring("resources:".length()))
             : Path.of(scripts);
 
-        CACHE_PATH = RESOURCES_PATH.resolve(Grasscutter.config.folderStructure.cache);
     };
 
     private static final String[] TSJ_JSON_TSV = {"tsj", "json", "tsv"};
@@ -118,6 +120,9 @@ public final class FileUtils {
     public static Path getDataUserPath(String path) {
         return DATA_USER_PATH.resolve(path);
     }
+    public static Path getCachePath(String path) {
+        return CACHE_PATH.resolve(path);
+    }
 
     public static Path getPacketPath(String path) {
         return PACKETS_PATH.resolve(path);
@@ -136,7 +141,9 @@ public final class FileUtils {
     }
 
     public static Path getExcelPath(String filename) {
-        return getTsjJsonTsv(RESOURCES_PATH.resolve("ExcelBinOutput"), filename);
+        Path p = getTsjJsonTsv(RESOURCES_PATH.resolve("Server"), filename);
+        if (Files.exists(p)) return p;
+        else return getTsjJsonTsv(RESOURCES_PATH.resolve("ExcelBinOutput"), filename);
     }
 
     // Gets path of a resource.
