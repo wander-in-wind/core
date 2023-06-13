@@ -180,8 +180,6 @@ public class Player {
 
     @Getter @Setter private transient Position lastCheckedPosition = null;
 
-    @Getter @Setter private transient Position lastCheckedPosition = null;
-
     // Manager data (Save-able to the database)
     @Getter private transient Achievements achievements;
     private PlayerProfile playerProfile;  // Getter has null-check

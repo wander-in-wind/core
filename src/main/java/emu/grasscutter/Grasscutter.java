@@ -103,7 +103,11 @@ public final class Grasscutter {
 
         ScriptLoader.init();
         // Generate handbooks.
-        Tools.createGmHandbooks(false);
+        try {
+            Tools.createGmHandbooks(false);
+        }catch (Exception e) {
+            logger.error("Error while generating handbooks.", e);
+        }
         // Initialize database.
         DatabaseManager.initialize();
 

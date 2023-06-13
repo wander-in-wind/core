@@ -1,21 +1,9 @@
 package emu.grasscutter.game.ability;
 
-import java.util.HashMap;
-import java.util.Objects;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.LinkedBlockingDeque;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
-
-import lombok.val;
-import org.reflections.Reflections;
-
 import com.google.protobuf.InvalidProtocolBufferException;
-
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.binout.AbilityData;
-import emu.grasscutter.data.binout.AbilityModifierEntry;
 import emu.grasscutter.data.binout.AbilityModifier.AbilityModifierAction;
 import emu.grasscutter.data.binout.AbilityModifierEntry;
 import emu.grasscutter.game.entity.EntityGadget;
@@ -35,7 +23,15 @@ import emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalar
 import emu.grasscutter.net.proto.ModifierActionOuterClass.ModifierAction;
 import io.netty.util.concurrent.FastThreadLocalThread;
 import lombok.Getter;
-import emu.grasscutter.net.proto.AbilityMetaAddAbilityOuterClass.AbilityMetaAddAbility;
+import lombok.val;
+import org.reflections.Reflections;
+
+import java.util.HashMap;
+import java.util.Objects;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.LinkedBlockingDeque;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
 
 public final class AbilityManager extends BasePlayerManager {
     HealAbilityManager healAbilityManager;
@@ -275,18 +271,18 @@ public final class AbilityManager extends BasePlayerManager {
                 .forEach(a -> a.setLocalId(head.getInstancedModifierId()));
         }
 
-        if(data.getAction() == ModifierAction.REMOVED) {
+        if (data.getAction() == ModifierAction.MODIFIER_ACTION_REMOVED) {
             Ability ability = target.getAbilities().get(data.getParentAbilityName().getStr());
-            if(ability != null) {
+            if (ability != null) {
                 AbilityModifierController modifier = ability.getModifiers().get(head.getInstancedModifierId());
-                if(modifier != null) {
+                if (modifier != null) {
                     modifier.onRemoved();
                     ability.getModifiers().remove(modifier);
                 }
             }
         }
 
-        if(data.getAction() == ModifierAction.ADDED && data.getParentAbilityName() != null) {
+        if(data.getAction() == ModifierAction.MODIFIER_ACTION_ADDED && data.getParentAbilityName() != null) {
             String modifierString = data.getParentAbilityName().getStr();
 
             Integer hash = target.getInstanceToHash().get(head.getInstancedAbilityId());

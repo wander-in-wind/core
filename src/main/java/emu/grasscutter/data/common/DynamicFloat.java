@@ -1,15 +1,12 @@
 package emu.grasscutter.data.common;
 
-import java.util.List;
-import java.util.Optional;
-
 import it.unimi.dsi.fastutil.floats.FloatArrayList;
 import it.unimi.dsi.fastutil.objects.Object2FloatArrayMap;
 import it.unimi.dsi.fastutil.objects.Object2FloatMap;
 import lombok.val;
-import org.jetbrains.annotations.Contract;
-import org.jetbrains.annotations.NotNull;
-import org.luaj.vm2.ast.Str;
+
+import java.util.List;
+import java.util.Optional;
 
 public class DynamicFloat {
     public static DynamicFloat ZERO = new DynamicFloat(0f);
@@ -33,11 +30,6 @@ public class DynamicFloat {
                 }
             }
         }
-        public StackOp(boolean b) {
-            this.op = Op.NEXBOOLEAN;
-            this.bValue = Boolean.parseBoolean(String.valueOf(b));
-        }
-
         public StackOp(boolean b) {
             this.op = Op.NEXBOOLEAN;
             this.bValue = Boolean.parseBoolean(String.valueOf(b));

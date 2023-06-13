@@ -1,8 +1,5 @@
 package emu.grasscutter.scripts;
 
-import com.github.davidmoten.rtreemulti.RTree;
-import com.github.davidmoten.rtreemulti.geometry.Geometry;
-
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.excels.MonsterData;
@@ -31,14 +28,12 @@ import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
 import kotlin.Pair;
 import lombok.val;
-
 import org.luaj.vm2.LuaError;
 import org.luaj.vm2.LuaValue;
 import org.luaj.vm2.lib.jse.CoerceJavaToLua;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
-
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -47,7 +42,7 @@ import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
-import static emu.grasscutter.scripts.constants.EventType.*;
+import static emu.grasscutter.scripts.constants.EventType.EVENT_TIMER_EVENT;
 
 public class SceneScriptManager {
     private final Scene scene;
@@ -62,7 +57,6 @@ public class SceneScriptManager {
     private final Map<Integer, Set<Pair<String, Integer>>> activeGroupTimers;
     private final Map<String, AtomicInteger> triggerInvocations;
     private final Map<Integer, EntityRegion> regions; // <EntityId-Region>
-    private final Map<Integer, SceneGroup> sceneGroups;
     private final Map<Integer, SceneGroupInstance> sceneGroupsInstances;
     private final Map<Integer, SceneGroupInstance> cachedSceneGroupsInstances;
     private ScriptMonsterTideService scriptMonsterTideService;
@@ -70,7 +64,6 @@ public class SceneScriptManager {
     /**
      * blockid - loaded groupSet
      */
-    private final Map<Integer, Set<SceneGroup>> loadedGroupSetPerBlock;
     private static final Int2ObjectMap<List<Grid>> groupGridsCache = new Int2ObjectOpenHashMap<>();
     public static final ExecutorService eventExecutor;
     static {
@@ -87,11 +80,9 @@ public class SceneScriptManager {
 
         this.regions = new ConcurrentHashMap<>();
         this.variables = new ConcurrentHashMap<>();
-        this.sceneGroups = new ConcurrentHashMap<>();
         this.sceneGroupsInstances = new ConcurrentHashMap<>();
         this.cachedSceneGroupsInstances = new ConcurrentHashMap<>();
         this.scriptMonsterSpawnService = new ScriptMonsterSpawnService(this);
-        this.loadedGroupSetPerBlock = new ConcurrentHashMap<>();
 
         // TEMPORARY
         if (this.getScene().getId() < 10 && !Grasscutter.getConfig().server.game.enableScriptInBigWorld) {
@@ -117,9 +108,13 @@ public class SceneScriptManager {
         return meta.blocks;
     }
 
+    public Map<Integer, SceneGroup> getGroups() {
+        return meta.groups;
+    }
+
     @Nullable
     public Map<String, Integer> getVariables(int group_id) {
-        if(getCachedGroupInstanceById(group_id) == null) return Collections.emptyMap();
+        if (getCachedGroupInstanceById(group_id) == null) return Collections.emptyMap();
         return getCachedGroupInstanceById(group_id).getCachedVariables();
     }
 
@@ -154,7 +149,7 @@ public class SceneScriptManager {
         Grasscutter.getLogger().debug("reset triggers for group {} suite {}", group.id, suiteIndex);
         var suite = group.getSuiteByIndex(suiteIndex);
         if (suite == null) {
-            Grasscutter.getLogger().warn("Trying to load null suite Triggers for group {} with suiteindex {}", group.id, suiteIndex);
+            Grasscutter.getLogger().warn("Trying to load null suite Triggers for group {} with suite index {}", group.id, suiteIndex);
             return;
         }
 
@@ -182,12 +177,12 @@ public class SceneScriptManager {
     }
 
     public void refreshGroup(SceneGroupInstance groupInstance) {
-        if(groupInstance == null || groupInstance.getLuaGroup().suites==null){
+        if (groupInstance == null || groupInstance.getLuaGroup().suites == null) {
             return;
         }
         //for (int i = 1; i<= group.suites.size();i++){
-            //refreshGroup(group, i);
-            refreshGroup(groupInstance, groupInstance.getActiveSuiteId(), false); //Refresh the last group triggers
+        //refreshGroup(group, i);
+        refreshGroup(groupInstance, groupInstance.getActiveSuiteId(), false); //Refresh the last group triggers
         //}
     }
     public int refreshGroup(SceneGroupInstance groupInstance, int suiteIndex, boolean excludePrevSuite) {
@@ -221,23 +216,23 @@ public class SceneScriptManager {
             }
         }
 
-        if(waitForOne && (groupInstance.getTargetSuiteId() == 0 || prevSuiteIndex != groupInstance.getTargetSuiteId())) {
+        if (waitForOne && (groupInstance.getTargetSuiteId() == 0 || prevSuiteIndex != groupInstance.getTargetSuiteId())) {
             groupInstance.setTargetSuiteId(suiteIndex);
-            Grasscutter.getLogger().debug("Group {} suite {} wating one more refresh", group.id, suiteIndex);
+            Grasscutter.getLogger().debug("Group {} suite {} waiting one more refresh", group.id, suiteIndex);
             return 0;
         }
 
         groupInstance.setTargetSuiteId(0);
 
-		if(prevSuiteData != null) {
-			removeGroupSuite(group, prevSuiteData);
-		} //Remove old group suite
+        if (prevSuiteData != null) {
+            removeGroupSuite(group, prevSuiteData);
+        } //Remove old group suite
 
-		addGroupSuite(groupInstance, suiteData, entitiesAdded);
+        addGroupSuite(groupInstance, suiteData, entitiesAdded);
 
-        //Refesh variables here
+        //Refresh variables here
         group.variables.forEach(variable -> {
-            if(!variable.no_refresh)
+            if (!variable.no_refresh)
                 groupInstance.getCachedVariables().put(variable.name, variable.value);
         });
 
@@ -251,7 +246,7 @@ public class SceneScriptManager {
         if (targetGroupInstance == null) {
             getGroupById(groupId); //Load the group, this ensures an instance is created and the if necessary unloaded, but the suite data is stored
             targetGroupInstance = getGroupInstanceById(groupId);
-            Grasscutter.getLogger().debug("trying to regresh group suite {} in an unloaded and uncached group {} in scene {}", suiteId, groupId, getScene().getId());
+            Grasscutter.getLogger().debug("trying to refresh group suite {} in an unloaded and uncached group {} in scene {}", suiteId, groupId, getScene().getId());
         } else {
             Grasscutter.getLogger().debug("Refreshing group {} suite {}", groupId, suiteId);
             suiteId = refreshGroup(targetGroupInstance, suiteId, false); //If suiteId is zero, the value of suiteId changes
@@ -277,7 +272,7 @@ public class SceneScriptManager {
     public boolean refreshGroupMonster(int groupId) {
         var groupInstance = getGroupInstanceById(groupId);
         if (groupInstance == null) {
-            Grasscutter.getLogger().warn("trying to refesh monster group in unloaded and uncached group {} in scene {}", groupId, getScene().getId());
+            Grasscutter.getLogger().warn("trying to refresh monster group in unloaded and uncached group {} in scene {}", groupId, getScene().getId());
             return false;
         }
 
@@ -312,27 +307,14 @@ public class SceneScriptManager {
         instance.ifPresent(entityRegion -> regions.remove(entityRegion.getId()));
     }
 
-    public Map<Integer, Set<SceneGroup>> getLoadedGroupSetPerBlock() {
-        return loadedGroupSetPerBlock;
-    }
-
-    // TODO optimize
     public SceneGroup getGroupById(int groupId) {
-        for (SceneBlock block : getBlocks().values()) {
-            getScene().loadBlock(block);
-
-            var group = block.groups.get(groupId);
-            if (group == null) {
-                continue;
-            }
-
-            if (!this.sceneGroupsInstances.containsKey(groupId)) {
-                getScene().onLoadGroup(List.of(group));
-                getScene().onRegisterGroups();
-            }
-            return group;
+        var group = meta.groups.get(groupId);
+        if (group == null) return null;
+        if (!this.sceneGroupsInstances.containsKey(groupId)) {
+            getScene().onLoadGroup(List.of(group));
+            getScene().onRegisterGroups();
         }
-        return null;
+        return group;
     }
 
     public SceneGroupInstance getGroupInstanceById(int groupId) {
@@ -494,7 +476,6 @@ public class SceneScriptManager {
     public void loadGroupFromScript(SceneGroup group) {
         group.load(getScene().getId());
 
-        this.sceneGroups.put(group.id, group);
         if(this.getCachedGroupInstanceById(group.id) != null) {
             this.sceneGroupsInstances.put(group.id, this.cachedSceneGroupsInstances.get(group.id));
             this.cachedSceneGroupsInstances.get(group.id).setCached(false);
@@ -516,7 +497,6 @@ public class SceneScriptManager {
     }
 
     public void unregisterGroup(SceneGroup group) {
-        this.sceneGroups.remove(group.id);
         this.sceneGroupsInstances.values().removeIf(i -> i.getLuaGroup().equals(group));
         this.cachedSceneGroupsInstances.values().stream().filter(i -> i.getLuaGroup().equals(group)).forEach(s -> s.setCached(true));
     }
@@ -602,7 +582,7 @@ public class SceneScriptManager {
         toCreate.addAll(getGadgetsInGroupSuite(groupInstance, suite));
         toCreate.addAll(getMonstersInGroupSuite(groupInstance, suite));
         if(entities != null)
-            toCreate.forEach(entities::add);
+            entities.addAll(toCreate);
         else
             addEntities(toCreate);
 
@@ -636,9 +616,9 @@ public class SceneScriptManager {
         suite.sceneRegions.forEach(this::deregisterRegion);
     }
 
-    public void startMonsterTideInGroup(SceneGroup group, Integer[] ordersConfigId, int tideCount, int sceneLimit) {
+    public void startMonsterTideInGroup(int tideIndex, SceneGroup group, Integer[] monsterConfigIds, int totalCount, int stageLimitMin, int stageLimitMax) {
         this.scriptMonsterTideService =
-                new ScriptMonsterTideService(this, group, tideCount, sceneLimit, ordersConfigId);
+            new ScriptMonsterTideService(this, tideIndex, group, monsterConfigIds, totalCount, stageLimitMin, stageLimitMax);
 
     }
     public void unloadCurrentMonsterTide() {
@@ -683,12 +663,22 @@ public class SceneScriptManager {
             if (eventType == EventType.EVENT_ENTER_REGION || eventType == EventType.EVENT_LEAVE_REGION) {
                 relevantTriggers = this.getTriggersByEvent(eventType).stream()
                     .filter(t -> t.getCondition().contains(String.valueOf(params.param1)) &&
-                        (t.getSource().isEmpty() || t.getSource().equals(params.getEventSource())))
+                                 (t.getSource().isEmpty() || t.getSource().equals(params.getEventSource())))
                     .collect(Collectors.toSet());
             } else {
                 relevantTriggers = this.getTriggersByEvent(eventType).stream()
                     .filter(t -> params.getGroupId() == 0 || t.getCurrentGroup().id == params.getGroupId())
-                    .filter(t ->  (t.getSource().isEmpty() || t.getSource().equals(params.getEventSource())))
+                    .filter(t -> {
+                        if (t.getSource().isEmpty() || t.getSource().equals(params.getEventSource())) {
+                            return true;
+                        }
+                        if (!t.getSource().isEmpty() && params.getEventSource() == null) {
+                            //Add this for debug purposes, so when we see this log we can add relevant event source to the params.
+                            Grasscutter.getLogger().error("[Bypass] Trigger {} source is null! Bypass event source check.", t.getName());
+                            return true;
+                        }
+                        return false;
+                    })
                     .collect(Collectors.toSet());
             }
             for (SceneTrigger trigger : relevantTriggers) {
@@ -759,8 +749,8 @@ public class SceneScriptManager {
             cancelGroupTimerEvent(trigger.currentGroup.id, trigger.getSource());
         }
         // always deregister on error, otherwise only if the count is reached
-        if(ret.isboolean() && !ret.checkboolean() || ret.isint() && ret.checkint()!=0
-        || trigger.getTrigger_count()>0 && invocations >= trigger.getTrigger_count()) {
+        if (ret.isboolean() && !ret.checkboolean() || ret.isint() && ret.checkint() != 0
+            || trigger.getTrigger_count() > 0 && invocations >= trigger.getTrigger_count()) {
             deregisterTrigger(trigger);
         }
     }

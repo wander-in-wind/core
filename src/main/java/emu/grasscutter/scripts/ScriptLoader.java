@@ -81,8 +81,6 @@ public class ScriptLoader {
         ctx.globals.set("EventType", CoerceJavaToLua.coerce(new EventType())); // TODO - make static class to avoid instantiating a new class every scene
         ctx.globals.set("GadgetState", CoerceJavaToLua.coerce(new ScriptGadgetState()));
         ctx.globals.set("RegionShape", CoerceJavaToLua.coerce(new ScriptRegionShape()));
-        ctx.globals.set("VisionLevelType", CoerceJavaToLua.coerce(new VisionLevelType()));
-
 
         scriptLib = new ScriptLib();
         scriptLibLua = CoerceJavaToLua.coerce(scriptLib);

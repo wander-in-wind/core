@@ -1,13 +1,11 @@
 package emu.grasscutter.server.packet.send;
 
-import emu.grasscutter.Grasscutter;
 import emu.grasscutter.game.mail.Mail;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.net.packet.BasePacket;
 import emu.grasscutter.net.packet.PacketOpcodes;
 import emu.grasscutter.net.proto.EquipParamOuterClass;
 import emu.grasscutter.net.proto.GetAllMailResultNotifyOuterClass.GetAllMailResultNotify;
-import emu.grasscutter.net.proto.ItemParamOuterClass;
 import emu.grasscutter.net.proto.MailCollectStateOuterClass.MailCollectState;
 import emu.grasscutter.net.proto.MailDataOuterClass;
 import emu.grasscutter.net.proto.MailDataOuterClass.MailData;
@@ -66,17 +64,17 @@ public class PacketGetAllMailResultNotify extends BasePacket {
                 }
             }
 
-			proto.addAllMailList(mailDataList);
+            proto.addAllMailList(mailDataList);
 
-			//proto.setIsCollected(isCollected);
-			proto.setPacketNum(1); //current packet index
-			proto.setRetcode(0);
-			proto.setPacketBeSentNum(1); //Total number of packets
+            //proto.setIsCollected(isCollected);
+            proto.setPageIndex(1)
+                .setRetcode(0)
+                .setTotalPageCount(1);
 
-			String endToken = isCollected ? "-111049" : "-111050"; //totoally not hardcoded sniff
-			proto.setTransaction(player.getUid() + "-" + (int) (System.currentTimeMillis() / 1000) + endToken);
+            String endToken = isCollected ? "-111049" : "-111050"; //totally not hardcoded sniff
+            proto.setTransaction(player.getUid() + "-" + (int) (System.currentTimeMillis() / 1000) + endToken);
 
-		}
+        }
         this.setData(proto.build());
     }
 }

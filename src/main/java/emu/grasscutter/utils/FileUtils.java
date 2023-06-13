@@ -136,9 +136,6 @@ public final class FileUtils {
         return RESOURCES_PATH.resolve(path);
     }
 
-    public static Path getCachePath(String path) {
-        return CACHE_PATH.resolve(path);
-    }
 
     public static Path getExcelPath(String filename) {
         Path p = getTsjJsonTsv(RESOURCES_PATH.resolve("Server"), filename);

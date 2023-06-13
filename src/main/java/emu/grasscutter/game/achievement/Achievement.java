@@ -2,7 +2,7 @@ package emu.grasscutter.game.achievement;
 
 import dev.morphia.annotations.Entity;
 import emu.grasscutter.net.proto.AchievementOuterClass;
-import emu.grasscutter.net.proto.StatusOuterClass;
+import emu.grasscutter.net.proto.AchievementOuterClass.Achievement.Status;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -10,15 +10,15 @@ import lombok.Setter;
 @Getter
 public class Achievement {
     @Setter
-    private StatusOuterClass.Status status;
-    private int id;
+    private Status status;
+    private final int id;
     private int totalProgress;
     @Setter
     private int curProgress;
     @Setter
     private int finishTimestampSec;
 
-    public Achievement(StatusOuterClass.Status status, int id, int totalProgress, int curProgress, int finishTimestampSec) {
+    public Achievement(Status status, int id, int totalProgress, int curProgress, int finishTimestampSec) {
         this.status = status;
         this.id = id;
         this.totalProgress = totalProgress;
