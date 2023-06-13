@@ -1,6 +1,8 @@
 package emu.grasscutter.data.common.quest;
 
 import dev.morphia.annotations.Entity;
+import emu.grasscutter.game.props.ActivityType;
+import emu.grasscutter.game.quest.enums.PlayMode;
 import emu.grasscutter.game.quest.enums.QuestShowType;
 import emu.grasscutter.game.quest.enums.QuestType;
 import lombok.Data;
@@ -19,11 +21,11 @@ public class MainQuestData {
     private QuestShowType showType;
     private boolean repeatable;
     private int activityId;
-    private int activityType;
+    private ActivityType activityType;
     private String mainQuestTag;
-    private String activeMode;
+    private PlayMode activeMode;
     private boolean showRedPoint;
-    private int taskId;
+    private int eventId;
     private long videoKey;
 
 
@@ -36,38 +38,8 @@ public class MainQuestData {
     private List<TalkData> talks;
     private long[] preloadLuaList;
 
-    public int getId() {
-        return id;
-    }
-
     private long titleTextMapHash;
 
-    public int getSeries() {
-        return series;
-    }
-
-    public QuestType getType() {
-        return taskType;
-    }
-
-    public long getTitleTextMapHash() {
-        return titleTextMapHash;
-    }
-
-    public int[] getSuggestTrackMainQuestList() {
-        return suggestTrackMainQuestList;
-    }
-
-    public int[] getRewardIdList() {
-        return rewardIdList;
-    }
-
-    public SubQuestData[] getSubQuests() {
-        return subQuests;
-    }
-    public List<TalkData> getTalks() {
-        return talks;
-    }
 
     public void onLoad() {
         this.talks = talks.stream().filter(Objects::nonNull).toList();
@@ -79,7 +51,6 @@ public class MainQuestData {
         private int id;
         private String heroTalk;
 
-        public TalkData() {}
         public TalkData(int id, String heroTalk) {
             this.id = id;
             this.heroTalk = heroTalk;

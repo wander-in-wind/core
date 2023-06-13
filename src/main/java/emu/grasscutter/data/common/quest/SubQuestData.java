@@ -1,6 +1,7 @@
 package emu.grasscutter.data.common.quest;
 
 import emu.grasscutter.game.quest.enums.*;
+import emu.grasscutter.game.quest.enums.guide.Guide;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.experimental.FieldDefaults;
@@ -38,11 +39,16 @@ public class SubQuestData {
     private List<QuestExecParam> finishExec;
     private List<QuestExecParam> failExec;
     private Guide guide;
+    private ShowQuestGuideType showGuide;
     private List<Integer> trialAvatarList;
     private List<Integer> exclusiveNpcList;
     private int exclusiveNpcPriority;
     private List<Integer> sharedNpcList;
     private List<Integer> exclusivePlaceList;
+    private String loadAbilityGroup;
+    private String loadTeamAbilityGroup;
+    private int[] coopPointIdList;
+    private boolean refreshNonCoopOnly;
 
     private List<GainItem> gainItems;
 
@@ -55,7 +61,7 @@ public class SubQuestData {
 
     @Data
     public static class GainItem {
-        private int itemId;
+        private int id;
         private int count;
     }
 
@@ -81,14 +87,8 @@ public class SubQuestData {
 
         public String asKey() {
             val param = getParam();
-            return questConditionKey(getType(), param!=null && param.length>0 ? getParam()[0] : 0, getParamString());
+            return questConditionKey(getType(), param != null && param.length > 0 ? getParam()[0] : 0, getParamString());
         }
     }
 
-    @Data
-    public static class Guide {
-        private String type;
-        private List<String> param;
-        private int guideScene;
-    }
 }

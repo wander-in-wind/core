@@ -30,7 +30,6 @@ import lombok.Setter;
 import lombok.val;
 
 import javax.annotation.Nullable;
-import javax.script.Bindings;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -201,7 +200,7 @@ public class GameQuest {
         val gainItems = questData.getGainItems();
         if(gainItems != null && gainItems.size() > 0){
             gainItems.forEach(item -> {
-                getOwner().getInventory().addItem(item.getItemId(), item.getCount(), ActionReason.QuestItem);
+                getOwner().getInventory().addItem(item.getId(), item.getCount(), ActionReason.QuestItem);
             });
         }
 

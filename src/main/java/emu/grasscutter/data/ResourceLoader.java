@@ -445,10 +445,12 @@ public class ResourceLoader {
                     if(mainQuest.getTalks() != null) {
                         mainQuest.getTalks().forEach(talkData -> GameData.getQuestTalkMap().put(talkData.getId(), mainQuest.getId()));
                     }
-                    for(SubQuestData quest : mainQuest.getSubQuests()){
-                        addToCache(quest);
+                    if (mainQuest.getSubQuests() != null) {
+                        for(SubQuestData quest : mainQuest.getSubQuests()){
+                            addToCache(quest);
+                        }
                     }
-                } catch (IOException e) {
+                } catch (IOException ignored) {
 
                 }
             });
