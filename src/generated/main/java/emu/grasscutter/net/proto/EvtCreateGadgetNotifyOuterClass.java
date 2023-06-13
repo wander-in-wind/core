@@ -37,21 +37,21 @@ public final class EvtCreateGadgetNotifyOuterClass {
     boolean getSightGroupWithOwner();
 
     /**
-     * <code>repeated uint32 Unk2700_BELOIHEIEAN = 889;</code>
-     * @return A list containing the unk2700BELOIHEIEAN.
+     * <code>repeated uint32 target_entity_id_list = 889;</code>
+     * @return A list containing the targetEntityIdList.
      */
-    java.util.List<java.lang.Integer> getUnk2700BELOIHEIEANList();
+    java.util.List<java.lang.Integer> getTargetEntityIdListList();
     /**
-     * <code>repeated uint32 Unk2700_BELOIHEIEAN = 889;</code>
-     * @return The count of unk2700BELOIHEIEAN.
+     * <code>repeated uint32 target_entity_id_list = 889;</code>
+     * @return The count of targetEntityIdList.
      */
-    int getUnk2700BELOIHEIEANCount();
+    int getTargetEntityIdListCount();
     /**
-     * <code>repeated uint32 Unk2700_BELOIHEIEAN = 889;</code>
+     * <code>repeated uint32 target_entity_id_list = 889;</code>
      * @param index The index of the element to return.
-     * @return The unk2700BELOIHEIEAN at the given index.
+     * @return The targetEntityIdList at the given index.
      */
-    int getUnk2700BELOIHEIEAN(int index);
+    int getTargetEntityIdList(int index);
 
     /**
      * <code>.ForwardType forward_type = 12;</code>
@@ -110,21 +110,21 @@ public final class EvtCreateGadgetNotifyOuterClass {
     int getTargetLockPointIndex();
 
     /**
-     * <code>repeated uint32 Unk2700_JDNFLLGJBGA = 1920;</code>
-     * @return A list containing the unk2700JDNFLLGJBGA.
+     * <code>repeated uint32 target_lock_point_index_list = 1920;</code>
+     * @return A list containing the targetLockPointIndexList.
      */
-    java.util.List<java.lang.Integer> getUnk2700JDNFLLGJBGAList();
+    java.util.List<java.lang.Integer> getTargetLockPointIndexListList();
     /**
-     * <code>repeated uint32 Unk2700_JDNFLLGJBGA = 1920;</code>
-     * @return The count of unk2700JDNFLLGJBGA.
+     * <code>repeated uint32 target_lock_point_index_list = 1920;</code>
+     * @return The count of targetLockPointIndexList.
      */
-    int getUnk2700JDNFLLGJBGACount();
+    int getTargetLockPointIndexListCount();
     /**
-     * <code>repeated uint32 Unk2700_JDNFLLGJBGA = 1920;</code>
+     * <code>repeated uint32 target_lock_point_index_list = 1920;</code>
      * @param index The index of the element to return.
-     * @return The unk2700JDNFLLGJBGA at the given index.
+     * @return The targetLockPointIndexList at the given index.
      */
-    int getUnk2700JDNFLLGJBGA(int index);
+    int getTargetLockPointIndexList(int index);
 
     /**
      * <code>.Vector init_pos = 4;</code>
@@ -154,10 +154,10 @@ public final class EvtCreateGadgetNotifyOuterClass {
     int getRoomId();
 
     /**
-     * <code>bool Unk2700_JBOPENAGGAF = 25;</code>
-     * @return The unk2700JBOPENAGGAF.
+     * <code>bool is_peer_id_from_player = 25;</code>
+     * @return The isPeerIdFromPlayer.
      */
-    boolean getUnk2700JBOPENAGGAF();
+    boolean getIsPeerIdFromPlayer();
 
     /**
      * <code>uint32 prop_owner_entity_id = 1;</code>
@@ -166,10 +166,10 @@ public final class EvtCreateGadgetNotifyOuterClass {
     int getPropOwnerEntityId();
 
     /**
-     * <code>bool Unk2700_IHIDGKPHFME = 379;</code>
-     * @return The unk2700IHIDGKPHFME.
+     * <code>bool is_true_life_time_by_owner = 379;</code>
+     * @return The isTrueLifeTimeByOwner.
      */
-    boolean getUnk2700IHIDGKPHFME();
+    boolean getIsTrueLifeTimeByOwner();
 
     /**
      * <code>uint32 config_id = 14;</code>
@@ -181,7 +181,7 @@ public final class EvtCreateGadgetNotifyOuterClass {
    * <pre>
    * CmdId: 307
    * EnetChannelId: 0
-   * EnetIsReliable: false
+   * EnetIsReliable: true
    * IsAllowClient: true
    * </pre>
    *
@@ -197,9 +197,9 @@ public final class EvtCreateGadgetNotifyOuterClass {
       super(builder);
     }
     private EvtCreateGadgetNotify() {
-      unk2700BELOIHEIEAN_ = emptyIntList();
+      targetEntityIdList_ = emptyIntList();
       forwardType_ = 0;
-      unk2700JDNFLLGJBGA_ = emptyIntList();
+      targetLockPointIndexList_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -327,52 +327,52 @@ public final class EvtCreateGadgetNotifyOuterClass {
             }
             case 200: {
 
-              unk2700JBOPENAGGAF_ = input.readBool();
+              isPeerIdFromPlayer_ = input.readBool();
               break;
             }
             case 3032: {
 
-              unk2700IHIDGKPHFME_ = input.readBool();
+              isTrueLifeTimeByOwner_ = input.readBool();
               break;
             }
             case 7112: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                unk2700BELOIHEIEAN_ = newIntList();
+                targetEntityIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
-              unk2700BELOIHEIEAN_.addInt(input.readUInt32());
+              targetEntityIdList_.addInt(input.readUInt32());
               break;
             }
             case 7114: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                unk2700BELOIHEIEAN_ = newIntList();
+                targetEntityIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
-                unk2700BELOIHEIEAN_.addInt(input.readUInt32());
+                targetEntityIdList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
             }
             case 15360: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                unk2700JDNFLLGJBGA_ = newIntList();
+                targetLockPointIndexList_ = newIntList();
                 mutable_bitField0_ |= 0x00000002;
               }
-              unk2700JDNFLLGJBGA_.addInt(input.readUInt32());
+              targetLockPointIndexList_.addInt(input.readUInt32());
               break;
             }
             case 15362: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                unk2700JDNFLLGJBGA_ = newIntList();
+                targetLockPointIndexList_ = newIntList();
                 mutable_bitField0_ |= 0x00000002;
               }
               while (input.getBytesUntilLimit() > 0) {
-                unk2700JDNFLLGJBGA_.addInt(input.readUInt32());
+                targetLockPointIndexList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
@@ -393,10 +393,10 @@ public final class EvtCreateGadgetNotifyOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          unk2700BELOIHEIEAN_.makeImmutable(); // C
+          targetEntityIdList_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          unk2700JDNFLLGJBGA_.makeImmutable(); // C
+          targetLockPointIndexList_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -448,33 +448,33 @@ public final class EvtCreateGadgetNotifyOuterClass {
       return sightGroupWithOwner_;
     }
 
-    public static final int UNK2700_BELOIHEIEAN_FIELD_NUMBER = 889;
-    private com.google.protobuf.Internal.IntList unk2700BELOIHEIEAN_;
+    public static final int TARGET_ENTITY_ID_LIST_FIELD_NUMBER = 889;
+    private com.google.protobuf.Internal.IntList targetEntityIdList_;
     /**
-     * <code>repeated uint32 Unk2700_BELOIHEIEAN = 889;</code>
-     * @return A list containing the unk2700BELOIHEIEAN.
+     * <code>repeated uint32 target_entity_id_list = 889;</code>
+     * @return A list containing the targetEntityIdList.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getUnk2700BELOIHEIEANList() {
-      return unk2700BELOIHEIEAN_;
+        getTargetEntityIdListList() {
+      return targetEntityIdList_;
     }
     /**
-     * <code>repeated uint32 Unk2700_BELOIHEIEAN = 889;</code>
-     * @return The count of unk2700BELOIHEIEAN.
+     * <code>repeated uint32 target_entity_id_list = 889;</code>
+     * @return The count of targetEntityIdList.
      */
-    public int getUnk2700BELOIHEIEANCount() {
-      return unk2700BELOIHEIEAN_.size();
+    public int getTargetEntityIdListCount() {
+      return targetEntityIdList_.size();
     }
     /**
-     * <code>repeated uint32 Unk2700_BELOIHEIEAN = 889;</code>
+     * <code>repeated uint32 target_entity_id_list = 889;</code>
      * @param index The index of the element to return.
-     * @return The unk2700BELOIHEIEAN at the given index.
+     * @return The targetEntityIdList at the given index.
      */
-    public int getUnk2700BELOIHEIEAN(int index) {
-      return unk2700BELOIHEIEAN_.getInt(index);
+    public int getTargetEntityIdList(int index) {
+      return targetEntityIdList_.getInt(index);
     }
-    private int unk2700BELOIHEIEANMemoizedSerializedSize = -1;
+    private int targetEntityIdListMemoizedSerializedSize = -1;
 
     public static final int FORWARD_TYPE_FIELD_NUMBER = 12;
     private int forwardType_;
@@ -576,33 +576,33 @@ public final class EvtCreateGadgetNotifyOuterClass {
       return targetLockPointIndex_;
     }
 
-    public static final int UNK2700_JDNFLLGJBGA_FIELD_NUMBER = 1920;
-    private com.google.protobuf.Internal.IntList unk2700JDNFLLGJBGA_;
+    public static final int TARGET_LOCK_POINT_INDEX_LIST_FIELD_NUMBER = 1920;
+    private com.google.protobuf.Internal.IntList targetLockPointIndexList_;
     /**
-     * <code>repeated uint32 Unk2700_JDNFLLGJBGA = 1920;</code>
-     * @return A list containing the unk2700JDNFLLGJBGA.
+     * <code>repeated uint32 target_lock_point_index_list = 1920;</code>
+     * @return A list containing the targetLockPointIndexList.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getUnk2700JDNFLLGJBGAList() {
-      return unk2700JDNFLLGJBGA_;
+        getTargetLockPointIndexListList() {
+      return targetLockPointIndexList_;
     }
     /**
-     * <code>repeated uint32 Unk2700_JDNFLLGJBGA = 1920;</code>
-     * @return The count of unk2700JDNFLLGJBGA.
+     * <code>repeated uint32 target_lock_point_index_list = 1920;</code>
+     * @return The count of targetLockPointIndexList.
      */
-    public int getUnk2700JDNFLLGJBGACount() {
-      return unk2700JDNFLLGJBGA_.size();
+    public int getTargetLockPointIndexListCount() {
+      return targetLockPointIndexList_.size();
     }
     /**
-     * <code>repeated uint32 Unk2700_JDNFLLGJBGA = 1920;</code>
+     * <code>repeated uint32 target_lock_point_index_list = 1920;</code>
      * @param index The index of the element to return.
-     * @return The unk2700JDNFLLGJBGA at the given index.
+     * @return The targetLockPointIndexList at the given index.
      */
-    public int getUnk2700JDNFLLGJBGA(int index) {
-      return unk2700JDNFLLGJBGA_.getInt(index);
+    public int getTargetLockPointIndexList(int index) {
+      return targetLockPointIndexList_.getInt(index);
     }
-    private int unk2700JDNFLLGJBGAMemoizedSerializedSize = -1;
+    private int targetLockPointIndexListMemoizedSerializedSize = -1;
 
     public static final int INIT_POS_FIELD_NUMBER = 4;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector initPos_;
@@ -652,15 +652,15 @@ public final class EvtCreateGadgetNotifyOuterClass {
       return roomId_;
     }
 
-    public static final int UNK2700_JBOPENAGGAF_FIELD_NUMBER = 25;
-    private boolean unk2700JBOPENAGGAF_;
+    public static final int IS_PEER_ID_FROM_PLAYER_FIELD_NUMBER = 25;
+    private boolean isPeerIdFromPlayer_;
     /**
-     * <code>bool Unk2700_JBOPENAGGAF = 25;</code>
-     * @return The unk2700JBOPENAGGAF.
+     * <code>bool is_peer_id_from_player = 25;</code>
+     * @return The isPeerIdFromPlayer.
      */
     @java.lang.Override
-    public boolean getUnk2700JBOPENAGGAF() {
-      return unk2700JBOPENAGGAF_;
+    public boolean getIsPeerIdFromPlayer() {
+      return isPeerIdFromPlayer_;
     }
 
     public static final int PROP_OWNER_ENTITY_ID_FIELD_NUMBER = 1;
@@ -674,15 +674,15 @@ public final class EvtCreateGadgetNotifyOuterClass {
       return propOwnerEntityId_;
     }
 
-    public static final int UNK2700_IHIDGKPHFME_FIELD_NUMBER = 379;
-    private boolean unk2700IHIDGKPHFME_;
+    public static final int IS_TRUE_LIFE_TIME_BY_OWNER_FIELD_NUMBER = 379;
+    private boolean isTrueLifeTimeByOwner_;
     /**
-     * <code>bool Unk2700_IHIDGKPHFME = 379;</code>
-     * @return The unk2700IHIDGKPHFME.
+     * <code>bool is_true_life_time_by_owner = 379;</code>
+     * @return The isTrueLifeTimeByOwner.
      */
     @java.lang.Override
-    public boolean getUnk2700IHIDGKPHFME() {
-      return unk2700IHIDGKPHFME_;
+    public boolean getIsTrueLifeTimeByOwner() {
+      return isTrueLifeTimeByOwner_;
     }
 
     public static final int CONFIG_ID_FIELD_NUMBER = 14;
@@ -756,25 +756,25 @@ public final class EvtCreateGadgetNotifyOuterClass {
       if (campId_ != 0) {
         output.writeUInt32(15, campId_);
       }
-      if (unk2700JBOPENAGGAF_ != false) {
-        output.writeBool(25, unk2700JBOPENAGGAF_);
+      if (isPeerIdFromPlayer_ != false) {
+        output.writeBool(25, isPeerIdFromPlayer_);
       }
-      if (unk2700IHIDGKPHFME_ != false) {
-        output.writeBool(379, unk2700IHIDGKPHFME_);
+      if (isTrueLifeTimeByOwner_ != false) {
+        output.writeBool(379, isTrueLifeTimeByOwner_);
       }
-      if (getUnk2700BELOIHEIEANList().size() > 0) {
+      if (getTargetEntityIdListList().size() > 0) {
         output.writeUInt32NoTag(7114);
-        output.writeUInt32NoTag(unk2700BELOIHEIEANMemoizedSerializedSize);
+        output.writeUInt32NoTag(targetEntityIdListMemoizedSerializedSize);
       }
-      for (int i = 0; i < unk2700BELOIHEIEAN_.size(); i++) {
-        output.writeUInt32NoTag(unk2700BELOIHEIEAN_.getInt(i));
+      for (int i = 0; i < targetEntityIdList_.size(); i++) {
+        output.writeUInt32NoTag(targetEntityIdList_.getInt(i));
       }
-      if (getUnk2700JDNFLLGJBGAList().size() > 0) {
+      if (getTargetLockPointIndexListList().size() > 0) {
         output.writeUInt32NoTag(15362);
-        output.writeUInt32NoTag(unk2700JDNFLLGJBGAMemoizedSerializedSize);
+        output.writeUInt32NoTag(targetLockPointIndexListMemoizedSerializedSize);
       }
-      for (int i = 0; i < unk2700JDNFLLGJBGA_.size(); i++) {
-        output.writeUInt32NoTag(unk2700JDNFLLGJBGA_.getInt(i));
+      for (int i = 0; i < targetLockPointIndexList_.size(); i++) {
+        output.writeUInt32NoTag(targetLockPointIndexList_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -845,41 +845,41 @@ public final class EvtCreateGadgetNotifyOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(15, campId_);
       }
-      if (unk2700JBOPENAGGAF_ != false) {
+      if (isPeerIdFromPlayer_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(25, unk2700JBOPENAGGAF_);
+          .computeBoolSize(25, isPeerIdFromPlayer_);
       }
-      if (unk2700IHIDGKPHFME_ != false) {
+      if (isTrueLifeTimeByOwner_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(379, unk2700IHIDGKPHFME_);
+          .computeBoolSize(379, isTrueLifeTimeByOwner_);
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < unk2700BELOIHEIEAN_.size(); i++) {
+        for (int i = 0; i < targetEntityIdList_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(unk2700BELOIHEIEAN_.getInt(i));
+            .computeUInt32SizeNoTag(targetEntityIdList_.getInt(i));
         }
         size += dataSize;
-        if (!getUnk2700BELOIHEIEANList().isEmpty()) {
+        if (!getTargetEntityIdListList().isEmpty()) {
           size += 2;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        unk2700BELOIHEIEANMemoizedSerializedSize = dataSize;
+        targetEntityIdListMemoizedSerializedSize = dataSize;
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < unk2700JDNFLLGJBGA_.size(); i++) {
+        for (int i = 0; i < targetLockPointIndexList_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(unk2700JDNFLLGJBGA_.getInt(i));
+            .computeUInt32SizeNoTag(targetLockPointIndexList_.getInt(i));
         }
         size += dataSize;
-        if (!getUnk2700JDNFLLGJBGAList().isEmpty()) {
+        if (!getTargetLockPointIndexListList().isEmpty()) {
           size += 2;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        unk2700JDNFLLGJBGAMemoizedSerializedSize = dataSize;
+        targetLockPointIndexListMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -902,8 +902,8 @@ public final class EvtCreateGadgetNotifyOuterClass {
           != other.getCampType()) return false;
       if (getSightGroupWithOwner()
           != other.getSightGroupWithOwner()) return false;
-      if (!getUnk2700BELOIHEIEANList()
-          .equals(other.getUnk2700BELOIHEIEANList())) return false;
+      if (!getTargetEntityIdListList()
+          .equals(other.getTargetEntityIdListList())) return false;
       if (forwardType_ != other.forwardType_) return false;
       if (getEntityId()
           != other.getEntityId()) return false;
@@ -920,8 +920,8 @@ public final class EvtCreateGadgetNotifyOuterClass {
       }
       if (getTargetLockPointIndex()
           != other.getTargetLockPointIndex()) return false;
-      if (!getUnk2700JDNFLLGJBGAList()
-          .equals(other.getUnk2700JDNFLLGJBGAList())) return false;
+      if (!getTargetLockPointIndexListList()
+          .equals(other.getTargetLockPointIndexListList())) return false;
       if (hasInitPos() != other.hasInitPos()) return false;
       if (hasInitPos()) {
         if (!getInitPos()
@@ -931,12 +931,12 @@ public final class EvtCreateGadgetNotifyOuterClass {
           != other.getOwnerEntityId()) return false;
       if (getRoomId()
           != other.getRoomId()) return false;
-      if (getUnk2700JBOPENAGGAF()
-          != other.getUnk2700JBOPENAGGAF()) return false;
+      if (getIsPeerIdFromPlayer()
+          != other.getIsPeerIdFromPlayer()) return false;
       if (getPropOwnerEntityId()
           != other.getPropOwnerEntityId()) return false;
-      if (getUnk2700IHIDGKPHFME()
-          != other.getUnk2700IHIDGKPHFME()) return false;
+      if (getIsTrueLifeTimeByOwner()
+          != other.getIsTrueLifeTimeByOwner()) return false;
       if (getConfigId()
           != other.getConfigId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -958,9 +958,9 @@ public final class EvtCreateGadgetNotifyOuterClass {
       hash = (37 * hash) + SIGHT_GROUP_WITH_OWNER_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getSightGroupWithOwner());
-      if (getUnk2700BELOIHEIEANCount() > 0) {
-        hash = (37 * hash) + UNK2700_BELOIHEIEAN_FIELD_NUMBER;
-        hash = (53 * hash) + getUnk2700BELOIHEIEANList().hashCode();
+      if (getTargetEntityIdListCount() > 0) {
+        hash = (37 * hash) + TARGET_ENTITY_ID_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getTargetEntityIdListList().hashCode();
       }
       hash = (37 * hash) + FORWARD_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + forwardType_;
@@ -979,9 +979,9 @@ public final class EvtCreateGadgetNotifyOuterClass {
       }
       hash = (37 * hash) + TARGET_LOCK_POINT_INDEX_FIELD_NUMBER;
       hash = (53 * hash) + getTargetLockPointIndex();
-      if (getUnk2700JDNFLLGJBGACount() > 0) {
-        hash = (37 * hash) + UNK2700_JDNFLLGJBGA_FIELD_NUMBER;
-        hash = (53 * hash) + getUnk2700JDNFLLGJBGAList().hashCode();
+      if (getTargetLockPointIndexListCount() > 0) {
+        hash = (37 * hash) + TARGET_LOCK_POINT_INDEX_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getTargetLockPointIndexListList().hashCode();
       }
       if (hasInitPos()) {
         hash = (37 * hash) + INIT_POS_FIELD_NUMBER;
@@ -991,14 +991,14 @@ public final class EvtCreateGadgetNotifyOuterClass {
       hash = (53 * hash) + getOwnerEntityId();
       hash = (37 * hash) + ROOM_ID_FIELD_NUMBER;
       hash = (53 * hash) + getRoomId();
-      hash = (37 * hash) + UNK2700_JBOPENAGGAF_FIELD_NUMBER;
+      hash = (37 * hash) + IS_PEER_ID_FROM_PLAYER_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk2700JBOPENAGGAF());
+          getIsPeerIdFromPlayer());
       hash = (37 * hash) + PROP_OWNER_ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getPropOwnerEntityId();
-      hash = (37 * hash) + UNK2700_IHIDGKPHFME_FIELD_NUMBER;
+      hash = (37 * hash) + IS_TRUE_LIFE_TIME_BY_OWNER_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk2700IHIDGKPHFME());
+          getIsTrueLifeTimeByOwner());
       hash = (37 * hash) + CONFIG_ID_FIELD_NUMBER;
       hash = (53 * hash) + getConfigId();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -1100,7 +1100,7 @@ public final class EvtCreateGadgetNotifyOuterClass {
      * <pre>
      * CmdId: 307
      * EnetChannelId: 0
-     * EnetIsReliable: false
+     * EnetIsReliable: true
      * IsAllowClient: true
      * </pre>
      *
@@ -1147,7 +1147,7 @@ public final class EvtCreateGadgetNotifyOuterClass {
 
         sightGroupWithOwner_ = false;
 
-        unk2700BELOIHEIEAN_ = emptyIntList();
+        targetEntityIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         forwardType_ = 0;
 
@@ -1167,7 +1167,7 @@ public final class EvtCreateGadgetNotifyOuterClass {
         }
         targetLockPointIndex_ = 0;
 
-        unk2700JDNFLLGJBGA_ = emptyIntList();
+        targetLockPointIndexList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
         if (initPosBuilder_ == null) {
           initPos_ = null;
@@ -1179,11 +1179,11 @@ public final class EvtCreateGadgetNotifyOuterClass {
 
         roomId_ = 0;
 
-        unk2700JBOPENAGGAF_ = false;
+        isPeerIdFromPlayer_ = false;
 
         propOwnerEntityId_ = 0;
 
-        unk2700IHIDGKPHFME_ = false;
+        isTrueLifeTimeByOwner_ = false;
 
         configId_ = 0;
 
@@ -1218,10 +1218,10 @@ public final class EvtCreateGadgetNotifyOuterClass {
         result.campType_ = campType_;
         result.sightGroupWithOwner_ = sightGroupWithOwner_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          unk2700BELOIHEIEAN_.makeImmutable();
+          targetEntityIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.unk2700BELOIHEIEAN_ = unk2700BELOIHEIEAN_;
+        result.targetEntityIdList_ = targetEntityIdList_;
         result.forwardType_ = forwardType_;
         result.entityId_ = entityId_;
         result.targetEntityId_ = targetEntityId_;
@@ -1234,10 +1234,10 @@ public final class EvtCreateGadgetNotifyOuterClass {
         }
         result.targetLockPointIndex_ = targetLockPointIndex_;
         if (((bitField0_ & 0x00000002) != 0)) {
-          unk2700JDNFLLGJBGA_.makeImmutable();
+          targetLockPointIndexList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000002);
         }
-        result.unk2700JDNFLLGJBGA_ = unk2700JDNFLLGJBGA_;
+        result.targetLockPointIndexList_ = targetLockPointIndexList_;
         if (initPosBuilder_ == null) {
           result.initPos_ = initPos_;
         } else {
@@ -1245,9 +1245,9 @@ public final class EvtCreateGadgetNotifyOuterClass {
         }
         result.ownerEntityId_ = ownerEntityId_;
         result.roomId_ = roomId_;
-        result.unk2700JBOPENAGGAF_ = unk2700JBOPENAGGAF_;
+        result.isPeerIdFromPlayer_ = isPeerIdFromPlayer_;
         result.propOwnerEntityId_ = propOwnerEntityId_;
-        result.unk2700IHIDGKPHFME_ = unk2700IHIDGKPHFME_;
+        result.isTrueLifeTimeByOwner_ = isTrueLifeTimeByOwner_;
         result.configId_ = configId_;
         onBuilt();
         return result;
@@ -1306,13 +1306,13 @@ public final class EvtCreateGadgetNotifyOuterClass {
         if (other.getSightGroupWithOwner() != false) {
           setSightGroupWithOwner(other.getSightGroupWithOwner());
         }
-        if (!other.unk2700BELOIHEIEAN_.isEmpty()) {
-          if (unk2700BELOIHEIEAN_.isEmpty()) {
-            unk2700BELOIHEIEAN_ = other.unk2700BELOIHEIEAN_;
+        if (!other.targetEntityIdList_.isEmpty()) {
+          if (targetEntityIdList_.isEmpty()) {
+            targetEntityIdList_ = other.targetEntityIdList_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureUnk2700BELOIHEIEANIsMutable();
-            unk2700BELOIHEIEAN_.addAll(other.unk2700BELOIHEIEAN_);
+            ensureTargetEntityIdListIsMutable();
+            targetEntityIdList_.addAll(other.targetEntityIdList_);
           }
           onChanged();
         }
@@ -1337,13 +1337,13 @@ public final class EvtCreateGadgetNotifyOuterClass {
         if (other.getTargetLockPointIndex() != 0) {
           setTargetLockPointIndex(other.getTargetLockPointIndex());
         }
-        if (!other.unk2700JDNFLLGJBGA_.isEmpty()) {
-          if (unk2700JDNFLLGJBGA_.isEmpty()) {
-            unk2700JDNFLLGJBGA_ = other.unk2700JDNFLLGJBGA_;
+        if (!other.targetLockPointIndexList_.isEmpty()) {
+          if (targetLockPointIndexList_.isEmpty()) {
+            targetLockPointIndexList_ = other.targetLockPointIndexList_;
             bitField0_ = (bitField0_ & ~0x00000002);
           } else {
-            ensureUnk2700JDNFLLGJBGAIsMutable();
-            unk2700JDNFLLGJBGA_.addAll(other.unk2700JDNFLLGJBGA_);
+            ensureTargetLockPointIndexListIsMutable();
+            targetLockPointIndexList_.addAll(other.targetLockPointIndexList_);
           }
           onChanged();
         }
@@ -1356,14 +1356,14 @@ public final class EvtCreateGadgetNotifyOuterClass {
         if (other.getRoomId() != 0) {
           setRoomId(other.getRoomId());
         }
-        if (other.getUnk2700JBOPENAGGAF() != false) {
-          setUnk2700JBOPENAGGAF(other.getUnk2700JBOPENAGGAF());
+        if (other.getIsPeerIdFromPlayer() != false) {
+          setIsPeerIdFromPlayer(other.getIsPeerIdFromPlayer());
         }
         if (other.getPropOwnerEntityId() != 0) {
           setPropOwnerEntityId(other.getPropOwnerEntityId());
         }
-        if (other.getUnk2700IHIDGKPHFME() != false) {
-          setUnk2700IHIDGKPHFME(other.getUnk2700IHIDGKPHFME());
+        if (other.getIsTrueLifeTimeByOwner() != false) {
+          setIsTrueLifeTimeByOwner(other.getIsTrueLifeTimeByOwner());
         }
         if (other.getConfigId() != 0) {
           setConfigId(other.getConfigId());
@@ -1491,80 +1491,80 @@ public final class EvtCreateGadgetNotifyOuterClass {
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList unk2700BELOIHEIEAN_ = emptyIntList();
-      private void ensureUnk2700BELOIHEIEANIsMutable() {
+      private com.google.protobuf.Internal.IntList targetEntityIdList_ = emptyIntList();
+      private void ensureTargetEntityIdListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          unk2700BELOIHEIEAN_ = mutableCopy(unk2700BELOIHEIEAN_);
+          targetEntityIdList_ = mutableCopy(targetEntityIdList_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <code>repeated uint32 Unk2700_BELOIHEIEAN = 889;</code>
-       * @return A list containing the unk2700BELOIHEIEAN.
+       * <code>repeated uint32 target_entity_id_list = 889;</code>
+       * @return A list containing the targetEntityIdList.
        */
       public java.util.List<java.lang.Integer>
-          getUnk2700BELOIHEIEANList() {
+          getTargetEntityIdListList() {
         return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(unk2700BELOIHEIEAN_) : unk2700BELOIHEIEAN_;
+                 java.util.Collections.unmodifiableList(targetEntityIdList_) : targetEntityIdList_;
       }
       /**
-       * <code>repeated uint32 Unk2700_BELOIHEIEAN = 889;</code>
-       * @return The count of unk2700BELOIHEIEAN.
+       * <code>repeated uint32 target_entity_id_list = 889;</code>
+       * @return The count of targetEntityIdList.
        */
-      public int getUnk2700BELOIHEIEANCount() {
-        return unk2700BELOIHEIEAN_.size();
+      public int getTargetEntityIdListCount() {
+        return targetEntityIdList_.size();
       }
       /**
-       * <code>repeated uint32 Unk2700_BELOIHEIEAN = 889;</code>
+       * <code>repeated uint32 target_entity_id_list = 889;</code>
        * @param index The index of the element to return.
-       * @return The unk2700BELOIHEIEAN at the given index.
+       * @return The targetEntityIdList at the given index.
        */
-      public int getUnk2700BELOIHEIEAN(int index) {
-        return unk2700BELOIHEIEAN_.getInt(index);
+      public int getTargetEntityIdList(int index) {
+        return targetEntityIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 Unk2700_BELOIHEIEAN = 889;</code>
+       * <code>repeated uint32 target_entity_id_list = 889;</code>
        * @param index The index to set the value at.
-       * @param value The unk2700BELOIHEIEAN to set.
+       * @param value The targetEntityIdList to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700BELOIHEIEAN(
+      public Builder setTargetEntityIdList(
           int index, int value) {
-        ensureUnk2700BELOIHEIEANIsMutable();
-        unk2700BELOIHEIEAN_.setInt(index, value);
+        ensureTargetEntityIdListIsMutable();
+        targetEntityIdList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 Unk2700_BELOIHEIEAN = 889;</code>
-       * @param value The unk2700BELOIHEIEAN to add.
+       * <code>repeated uint32 target_entity_id_list = 889;</code>
+       * @param value The targetEntityIdList to add.
        * @return This builder for chaining.
        */
-      public Builder addUnk2700BELOIHEIEAN(int value) {
-        ensureUnk2700BELOIHEIEANIsMutable();
-        unk2700BELOIHEIEAN_.addInt(value);
+      public Builder addTargetEntityIdList(int value) {
+        ensureTargetEntityIdListIsMutable();
+        targetEntityIdList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 Unk2700_BELOIHEIEAN = 889;</code>
-       * @param values The unk2700BELOIHEIEAN to add.
+       * <code>repeated uint32 target_entity_id_list = 889;</code>
+       * @param values The targetEntityIdList to add.
        * @return This builder for chaining.
        */
-      public Builder addAllUnk2700BELOIHEIEAN(
+      public Builder addAllTargetEntityIdList(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureUnk2700BELOIHEIEANIsMutable();
+        ensureTargetEntityIdListIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, unk2700BELOIHEIEAN_);
+            values, targetEntityIdList_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 Unk2700_BELOIHEIEAN = 889;</code>
+       * <code>repeated uint32 target_entity_id_list = 889;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700BELOIHEIEAN() {
-        unk2700BELOIHEIEAN_ = emptyIntList();
+      public Builder clearTargetEntityIdList() {
+        targetEntityIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
@@ -1898,80 +1898,80 @@ public final class EvtCreateGadgetNotifyOuterClass {
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList unk2700JDNFLLGJBGA_ = emptyIntList();
-      private void ensureUnk2700JDNFLLGJBGAIsMutable() {
+      private com.google.protobuf.Internal.IntList targetLockPointIndexList_ = emptyIntList();
+      private void ensureTargetLockPointIndexListIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
-          unk2700JDNFLLGJBGA_ = mutableCopy(unk2700JDNFLLGJBGA_);
+          targetLockPointIndexList_ = mutableCopy(targetLockPointIndexList_);
           bitField0_ |= 0x00000002;
          }
       }
       /**
-       * <code>repeated uint32 Unk2700_JDNFLLGJBGA = 1920;</code>
-       * @return A list containing the unk2700JDNFLLGJBGA.
+       * <code>repeated uint32 target_lock_point_index_list = 1920;</code>
+       * @return A list containing the targetLockPointIndexList.
        */
       public java.util.List<java.lang.Integer>
-          getUnk2700JDNFLLGJBGAList() {
+          getTargetLockPointIndexListList() {
         return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(unk2700JDNFLLGJBGA_) : unk2700JDNFLLGJBGA_;
+                 java.util.Collections.unmodifiableList(targetLockPointIndexList_) : targetLockPointIndexList_;
       }
       /**
-       * <code>repeated uint32 Unk2700_JDNFLLGJBGA = 1920;</code>
-       * @return The count of unk2700JDNFLLGJBGA.
+       * <code>repeated uint32 target_lock_point_index_list = 1920;</code>
+       * @return The count of targetLockPointIndexList.
        */
-      public int getUnk2700JDNFLLGJBGACount() {
-        return unk2700JDNFLLGJBGA_.size();
+      public int getTargetLockPointIndexListCount() {
+        return targetLockPointIndexList_.size();
       }
       /**
-       * <code>repeated uint32 Unk2700_JDNFLLGJBGA = 1920;</code>
+       * <code>repeated uint32 target_lock_point_index_list = 1920;</code>
        * @param index The index of the element to return.
-       * @return The unk2700JDNFLLGJBGA at the given index.
+       * @return The targetLockPointIndexList at the given index.
        */
-      public int getUnk2700JDNFLLGJBGA(int index) {
-        return unk2700JDNFLLGJBGA_.getInt(index);
+      public int getTargetLockPointIndexList(int index) {
+        return targetLockPointIndexList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 Unk2700_JDNFLLGJBGA = 1920;</code>
+       * <code>repeated uint32 target_lock_point_index_list = 1920;</code>
        * @param index The index to set the value at.
-       * @param value The unk2700JDNFLLGJBGA to set.
+       * @param value The targetLockPointIndexList to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700JDNFLLGJBGA(
+      public Builder setTargetLockPointIndexList(
           int index, int value) {
-        ensureUnk2700JDNFLLGJBGAIsMutable();
-        unk2700JDNFLLGJBGA_.setInt(index, value);
+        ensureTargetLockPointIndexListIsMutable();
+        targetLockPointIndexList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 Unk2700_JDNFLLGJBGA = 1920;</code>
-       * @param value The unk2700JDNFLLGJBGA to add.
+       * <code>repeated uint32 target_lock_point_index_list = 1920;</code>
+       * @param value The targetLockPointIndexList to add.
        * @return This builder for chaining.
        */
-      public Builder addUnk2700JDNFLLGJBGA(int value) {
-        ensureUnk2700JDNFLLGJBGAIsMutable();
-        unk2700JDNFLLGJBGA_.addInt(value);
+      public Builder addTargetLockPointIndexList(int value) {
+        ensureTargetLockPointIndexListIsMutable();
+        targetLockPointIndexList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 Unk2700_JDNFLLGJBGA = 1920;</code>
-       * @param values The unk2700JDNFLLGJBGA to add.
+       * <code>repeated uint32 target_lock_point_index_list = 1920;</code>
+       * @param values The targetLockPointIndexList to add.
        * @return This builder for chaining.
        */
-      public Builder addAllUnk2700JDNFLLGJBGA(
+      public Builder addAllTargetLockPointIndexList(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureUnk2700JDNFLLGJBGAIsMutable();
+        ensureTargetLockPointIndexListIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, unk2700JDNFLLGJBGA_);
+            values, targetLockPointIndexList_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 Unk2700_JDNFLLGJBGA = 1920;</code>
+       * <code>repeated uint32 target_lock_point_index_list = 1920;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700JDNFLLGJBGA() {
-        unk2700JDNFLLGJBGA_ = emptyIntList();
+      public Builder clearTargetLockPointIndexList() {
+        targetLockPointIndexList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
@@ -2158,33 +2158,33 @@ public final class EvtCreateGadgetNotifyOuterClass {
         return this;
       }
 
-      private boolean unk2700JBOPENAGGAF_ ;
+      private boolean isPeerIdFromPlayer_ ;
       /**
-       * <code>bool Unk2700_JBOPENAGGAF = 25;</code>
-       * @return The unk2700JBOPENAGGAF.
+       * <code>bool is_peer_id_from_player = 25;</code>
+       * @return The isPeerIdFromPlayer.
        */
       @java.lang.Override
-      public boolean getUnk2700JBOPENAGGAF() {
-        return unk2700JBOPENAGGAF_;
+      public boolean getIsPeerIdFromPlayer() {
+        return isPeerIdFromPlayer_;
       }
       /**
-       * <code>bool Unk2700_JBOPENAGGAF = 25;</code>
-       * @param value The unk2700JBOPENAGGAF to set.
+       * <code>bool is_peer_id_from_player = 25;</code>
+       * @param value The isPeerIdFromPlayer to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700JBOPENAGGAF(boolean value) {
+      public Builder setIsPeerIdFromPlayer(boolean value) {
         
-        unk2700JBOPENAGGAF_ = value;
+        isPeerIdFromPlayer_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk2700_JBOPENAGGAF = 25;</code>
+       * <code>bool is_peer_id_from_player = 25;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700JBOPENAGGAF() {
+      public Builder clearIsPeerIdFromPlayer() {
         
-        unk2700JBOPENAGGAF_ = false;
+        isPeerIdFromPlayer_ = false;
         onChanged();
         return this;
       }
@@ -2220,33 +2220,33 @@ public final class EvtCreateGadgetNotifyOuterClass {
         return this;
       }
 
-      private boolean unk2700IHIDGKPHFME_ ;
+      private boolean isTrueLifeTimeByOwner_ ;
       /**
-       * <code>bool Unk2700_IHIDGKPHFME = 379;</code>
-       * @return The unk2700IHIDGKPHFME.
+       * <code>bool is_true_life_time_by_owner = 379;</code>
+       * @return The isTrueLifeTimeByOwner.
        */
       @java.lang.Override
-      public boolean getUnk2700IHIDGKPHFME() {
-        return unk2700IHIDGKPHFME_;
+      public boolean getIsTrueLifeTimeByOwner() {
+        return isTrueLifeTimeByOwner_;
       }
       /**
-       * <code>bool Unk2700_IHIDGKPHFME = 379;</code>
-       * @param value The unk2700IHIDGKPHFME to set.
+       * <code>bool is_true_life_time_by_owner = 379;</code>
+       * @param value The isTrueLifeTimeByOwner to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700IHIDGKPHFME(boolean value) {
+      public Builder setIsTrueLifeTimeByOwner(boolean value) {
         
-        unk2700IHIDGKPHFME_ = value;
+        isTrueLifeTimeByOwner_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk2700_IHIDGKPHFME = 379;</code>
+       * <code>bool is_true_life_time_by_owner = 379;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700IHIDGKPHFME() {
+      public Builder clearIsTrueLifeTimeByOwner() {
         
-        unk2700IHIDGKPHFME_ = false;
+        isTrueLifeTimeByOwner_ = false;
         onChanged();
         return this;
       }
@@ -2349,21 +2349,21 @@ public final class EvtCreateGadgetNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033EvtCreateGadgetNotify.proto\032\021ForwardTy" +
-      "pe.proto\032\014Vector.proto\"\203\004\n\025EvtCreateGadg" +
+      "pe.proto\032\014Vector.proto\"\230\004\n\025EvtCreateGadg" +
       "etNotify\022\025\n\ris_async_load\030\010 \001(\010\022\021\n\tcamp_" +
       "type\030\005 \001(\r\022\036\n\026sight_group_with_owner\030\n \001" +
-      "(\010\022\034\n\023Unk2700_BELOIHEIEAN\030\371\006 \003(\r\022\"\n\014forw" +
-      "ard_type\030\014 \001(\0162\014.ForwardType\022\021\n\tentity_i" +
-      "d\030\002 \001(\r\022\030\n\020target_entity_id\030\003 \001(\r\022\017\n\007cam" +
-      "p_id\030\017 \001(\r\022\014\n\004guid\030\006 \001(\004\022\"\n\021init_euler_a" +
-      "ngles\030\r \001(\0132\007.Vector\022\037\n\027target_lock_poin" +
-      "t_index\030\013 \001(\r\022\034\n\023Unk2700_JDNFLLGJBGA\030\200\017 " +
-      "\003(\r\022\031\n\010init_pos\030\004 \001(\0132\007.Vector\022\027\n\017owner_" +
-      "entity_id\030\t \001(\r\022\017\n\007room_id\030\007 \001(\r\022\033\n\023Unk2" +
-      "700_JBOPENAGGAF\030\031 \001(\010\022\034\n\024prop_owner_enti" +
-      "ty_id\030\001 \001(\r\022\034\n\023Unk2700_IHIDGKPHFME\030\373\002 \001(" +
-      "\010\022\021\n\tconfig_id\030\016 \001(\rB\033\n\031emu.grasscutter." +
-      "net.protob\006proto3"
+      "(\010\022\036\n\025target_entity_id_list\030\371\006 \003(\r\022\"\n\014fo" +
+      "rward_type\030\014 \001(\0162\014.ForwardType\022\021\n\tentity" +
+      "_id\030\002 \001(\r\022\030\n\020target_entity_id\030\003 \001(\r\022\017\n\007c" +
+      "amp_id\030\017 \001(\r\022\014\n\004guid\030\006 \001(\004\022\"\n\021init_euler" +
+      "_angles\030\r \001(\0132\007.Vector\022\037\n\027target_lock_po" +
+      "int_index\030\013 \001(\r\022%\n\034target_lock_point_ind" +
+      "ex_list\030\200\017 \003(\r\022\031\n\010init_pos\030\004 \001(\0132\007.Vecto" +
+      "r\022\027\n\017owner_entity_id\030\t \001(\r\022\017\n\007room_id\030\007 " +
+      "\001(\r\022\036\n\026is_peer_id_from_player\030\031 \001(\010\022\034\n\024p" +
+      "rop_owner_entity_id\030\001 \001(\r\022#\n\032is_true_lif" +
+      "e_time_by_owner\030\373\002 \001(\010\022\021\n\tconfig_id\030\016 \001(" +
+      "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -2376,7 +2376,7 @@ public final class EvtCreateGadgetNotifyOuterClass {
     internal_static_EvtCreateGadgetNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EvtCreateGadgetNotify_descriptor,
-        new java.lang.String[] { "IsAsyncLoad", "CampType", "SightGroupWithOwner", "Unk2700BELOIHEIEAN", "ForwardType", "EntityId", "TargetEntityId", "CampId", "Guid", "InitEulerAngles", "TargetLockPointIndex", "Unk2700JDNFLLGJBGA", "InitPos", "OwnerEntityId", "RoomId", "Unk2700JBOPENAGGAF", "PropOwnerEntityId", "Unk2700IHIDGKPHFME", "ConfigId", });
+        new java.lang.String[] { "IsAsyncLoad", "CampType", "SightGroupWithOwner", "TargetEntityIdList", "ForwardType", "EntityId", "TargetEntityId", "CampId", "Guid", "InitEulerAngles", "TargetLockPointIndex", "TargetLockPointIndexList", "InitPos", "OwnerEntityId", "RoomId", "IsPeerIdFromPlayer", "PropOwnerEntityId", "IsTrueLifeTimeByOwner", "ConfigId", });
     emu.grasscutter.net.proto.ForwardTypeOuterClass.getDescriptor();
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }

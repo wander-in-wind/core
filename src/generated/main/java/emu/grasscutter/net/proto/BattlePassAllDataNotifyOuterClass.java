@@ -67,8 +67,7 @@ public final class BattlePassAllDataNotifyOuterClass {
    * <pre>
    * CmdId: 2626
    * EnetChannelId: 0
-   * EnetIsReliable: false
-   * IsAllowClient: true
+   * EnetIsReliable: true
    * </pre>
    *
    * Protobuf type {@code BattlePassAllDataNotify}
@@ -445,8 +444,7 @@ public final class BattlePassAllDataNotifyOuterClass {
      * <pre>
      * CmdId: 2626
      * EnetChannelId: 0
-     * EnetIsReliable: false
-     * IsAllowClient: true
+     * EnetIsReliable: true
      * </pre>
      *
      * Protobuf type {@code BattlePassAllDataNotify}

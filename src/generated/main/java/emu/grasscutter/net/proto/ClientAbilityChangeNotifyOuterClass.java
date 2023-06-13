@@ -19,10 +19,10 @@ public final class ClientAbilityChangeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool Unk2200_FNAFDMAPLHP = 9;</code>
-     * @return The unk2200FNAFDMAPLHP.
+     * <code>bool is_init_hash = 9;</code>
+     * @return The isInitHash.
      */
-    boolean getUnk2200FNAFDMAPLHP();
+    boolean getIsInitHash();
 
     /**
      * <code>uint32 entity_id = 2;</code>
@@ -58,7 +58,7 @@ public final class ClientAbilityChangeNotifyOuterClass {
    * <pre>
    * CmdId: 1175
    * EnetChannelId: 0
-   * EnetIsReliable: false
+   * EnetIsReliable: true
    * IsAllowClient: true
    * </pre>
    *
@@ -124,7 +124,7 @@ public final class ClientAbilityChangeNotifyOuterClass {
             }
             case 72: {
 
-              unk2200FNAFDMAPLHP_ = input.readBool();
+              isInitHash_ = input.readBool();
               break;
             }
             default: {
@@ -162,15 +162,15 @@ public final class ClientAbilityChangeNotifyOuterClass {
               emu.grasscutter.net.proto.ClientAbilityChangeNotifyOuterClass.ClientAbilityChangeNotify.class, emu.grasscutter.net.proto.ClientAbilityChangeNotifyOuterClass.ClientAbilityChangeNotify.Builder.class);
     }
 
-    public static final int UNK2200_FNAFDMAPLHP_FIELD_NUMBER = 9;
-    private boolean unk2200FNAFDMAPLHP_;
+    public static final int IS_INIT_HASH_FIELD_NUMBER = 9;
+    private boolean isInitHash_;
     /**
-     * <code>bool Unk2200_FNAFDMAPLHP = 9;</code>
-     * @return The unk2200FNAFDMAPLHP.
+     * <code>bool is_init_hash = 9;</code>
+     * @return The isInitHash.
      */
     @java.lang.Override
-    public boolean getUnk2200FNAFDMAPLHP() {
-      return unk2200FNAFDMAPLHP_;
+    public boolean getIsInitHash() {
+      return isInitHash_;
     }
 
     public static final int ENTITY_ID_FIELD_NUMBER = 2;
@@ -244,8 +244,8 @@ public final class ClientAbilityChangeNotifyOuterClass {
       for (int i = 0; i < invokes_.size(); i++) {
         output.writeMessage(3, invokes_.get(i));
       }
-      if (unk2200FNAFDMAPLHP_ != false) {
-        output.writeBool(9, unk2200FNAFDMAPLHP_);
+      if (isInitHash_ != false) {
+        output.writeBool(9, isInitHash_);
       }
       unknownFields.writeTo(output);
     }
@@ -264,9 +264,9 @@ public final class ClientAbilityChangeNotifyOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(3, invokes_.get(i));
       }
-      if (unk2200FNAFDMAPLHP_ != false) {
+      if (isInitHash_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, unk2200FNAFDMAPLHP_);
+          .computeBoolSize(9, isInitHash_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -283,8 +283,8 @@ public final class ClientAbilityChangeNotifyOuterClass {
       }
       emu.grasscutter.net.proto.ClientAbilityChangeNotifyOuterClass.ClientAbilityChangeNotify other = (emu.grasscutter.net.proto.ClientAbilityChangeNotifyOuterClass.ClientAbilityChangeNotify) obj;
 
-      if (getUnk2200FNAFDMAPLHP()
-          != other.getUnk2200FNAFDMAPLHP()) return false;
+      if (getIsInitHash()
+          != other.getIsInitHash()) return false;
       if (getEntityId()
           != other.getEntityId()) return false;
       if (!getInvokesList()
@@ -300,9 +300,9 @@ public final class ClientAbilityChangeNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + UNK2200_FNAFDMAPLHP_FIELD_NUMBER;
+      hash = (37 * hash) + IS_INIT_HASH_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk2200FNAFDMAPLHP());
+          getIsInitHash());
       hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getEntityId();
       if (getInvokesCount() > 0) {
@@ -408,7 +408,7 @@ public final class ClientAbilityChangeNotifyOuterClass {
      * <pre>
      * CmdId: 1175
      * EnetChannelId: 0
-     * EnetIsReliable: false
+     * EnetIsReliable: true
      * IsAllowClient: true
      * </pre>
      *
@@ -450,7 +450,7 @@ public final class ClientAbilityChangeNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        unk2200FNAFDMAPLHP_ = false;
+        isInitHash_ = false;
 
         entityId_ = 0;
 
@@ -487,7 +487,7 @@ public final class ClientAbilityChangeNotifyOuterClass {
       public emu.grasscutter.net.proto.ClientAbilityChangeNotifyOuterClass.ClientAbilityChangeNotify buildPartial() {
         emu.grasscutter.net.proto.ClientAbilityChangeNotifyOuterClass.ClientAbilityChangeNotify result = new emu.grasscutter.net.proto.ClientAbilityChangeNotifyOuterClass.ClientAbilityChangeNotify(this);
         int from_bitField0_ = bitField0_;
-        result.unk2200FNAFDMAPLHP_ = unk2200FNAFDMAPLHP_;
+        result.isInitHash_ = isInitHash_;
         result.entityId_ = entityId_;
         if (invokesBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
@@ -546,8 +546,8 @@ public final class ClientAbilityChangeNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ClientAbilityChangeNotifyOuterClass.ClientAbilityChangeNotify other) {
         if (other == emu.grasscutter.net.proto.ClientAbilityChangeNotifyOuterClass.ClientAbilityChangeNotify.getDefaultInstance()) return this;
-        if (other.getUnk2200FNAFDMAPLHP() != false) {
-          setUnk2200FNAFDMAPLHP(other.getUnk2200FNAFDMAPLHP());
+        if (other.getIsInitHash() != false) {
+          setIsInitHash(other.getIsInitHash());
         }
         if (other.getEntityId() != 0) {
           setEntityId(other.getEntityId());
@@ -608,33 +608,33 @@ public final class ClientAbilityChangeNotifyOuterClass {
       }
       private int bitField0_;
 
-      private boolean unk2200FNAFDMAPLHP_ ;
+      private boolean isInitHash_ ;
       /**
-       * <code>bool Unk2200_FNAFDMAPLHP = 9;</code>
-       * @return The unk2200FNAFDMAPLHP.
+       * <code>bool is_init_hash = 9;</code>
+       * @return The isInitHash.
        */
       @java.lang.Override
-      public boolean getUnk2200FNAFDMAPLHP() {
-        return unk2200FNAFDMAPLHP_;
+      public boolean getIsInitHash() {
+        return isInitHash_;
       }
       /**
-       * <code>bool Unk2200_FNAFDMAPLHP = 9;</code>
-       * @param value The unk2200FNAFDMAPLHP to set.
+       * <code>bool is_init_hash = 9;</code>
+       * @param value The isInitHash to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2200FNAFDMAPLHP(boolean value) {
+      public Builder setIsInitHash(boolean value) {
         
-        unk2200FNAFDMAPLHP_ = value;
+        isInitHash_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk2200_FNAFDMAPLHP = 9;</code>
+       * <code>bool is_init_hash = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2200FNAFDMAPLHP() {
+      public Builder clearIsInitHash() {
         
-        unk2200FNAFDMAPLHP_ = false;
+        isInitHash_ = false;
         onChanged();
         return this;
       }
@@ -977,11 +977,11 @@ public final class ClientAbilityChangeNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037ClientAbilityChangeNotify.proto\032\030Abili" +
-      "tyInvokeEntry.proto\"q\n\031ClientAbilityChan" +
-      "geNotify\022\033\n\023Unk2200_FNAFDMAPLHP\030\t \001(\010\022\021\n" +
-      "\tentity_id\030\002 \001(\r\022$\n\007invokes\030\003 \003(\0132\023.Abil" +
-      "ityInvokeEntryB\033\n\031emu.grasscutter.net.pr" +
-      "otob\006proto3"
+      "tyInvokeEntry.proto\"j\n\031ClientAbilityChan" +
+      "geNotify\022\024\n\014is_init_hash\030\t \001(\010\022\021\n\tentity" +
+      "_id\030\002 \001(\r\022$\n\007invokes\030\003 \003(\0132\023.AbilityInvo" +
+      "keEntryB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -993,7 +993,7 @@ public final class ClientAbilityChangeNotifyOuterClass {
     internal_static_ClientAbilityChangeNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ClientAbilityChangeNotify_descriptor,
-        new java.lang.String[] { "Unk2200FNAFDMAPLHP", "EntityId", "Invokes", });
+        new java.lang.String[] { "IsInitHash", "EntityId", "Invokes", });
     emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.getDescriptor();
   }
 

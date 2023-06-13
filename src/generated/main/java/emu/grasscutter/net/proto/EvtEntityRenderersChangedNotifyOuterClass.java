@@ -60,7 +60,7 @@ public final class EvtEntityRenderersChangedNotifyOuterClass {
    * <pre>
    * CmdId: 343
    * EnetChannelId: 0
-   * EnetIsReliable: false
+   * EnetIsReliable: true
    * IsAllowClient: true
    * </pre>
    *
@@ -434,7 +434,7 @@ public final class EvtEntityRenderersChangedNotifyOuterClass {
      * <pre>
      * CmdId: 343
      * EnetChannelId: 0
-     * EnetIsReliable: false
+     * EnetIsReliable: true
      * IsAllowClient: true
      * </pre>
      *

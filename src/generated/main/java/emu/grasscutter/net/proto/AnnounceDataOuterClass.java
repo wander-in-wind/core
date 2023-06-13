@@ -79,7 +79,7 @@ public final class AnnounceDataOuterClass {
         getDungeonConfirmTextBytes();
 
     /**
-     * <code>bool is_center_system_last5_every_minutes = 14;</code>
+     * <code>bool is_center_system_last_5_every_minutes = 14;</code>
      * @return The isCenterSystemLast5EveryMinutes.
      */
     boolean getIsCenterSystemLast5EveryMinutes();
@@ -376,10 +376,10 @@ public final class AnnounceDataOuterClass {
       }
     }
 
-    public static final int IS_CENTER_SYSTEM_LAST5_EVERY_MINUTES_FIELD_NUMBER = 14;
+    public static final int IS_CENTER_SYSTEM_LAST_5_EVERY_MINUTES_FIELD_NUMBER = 14;
     private boolean isCenterSystemLast5EveryMinutes_;
     /**
-     * <code>bool is_center_system_last5_every_minutes = 14;</code>
+     * <code>bool is_center_system_last_5_every_minutes = 14;</code>
      * @return The isCenterSystemLast5EveryMinutes.
      */
     @java.lang.Override
@@ -539,7 +539,7 @@ public final class AnnounceDataOuterClass {
       hash = (53 * hash) + getCenterSystemFrequency();
       hash = (37 * hash) + DUNGEON_CONFIRM_TEXT_FIELD_NUMBER;
       hash = (53 * hash) + getDungeonConfirmText().hashCode();
-      hash = (37 * hash) + IS_CENTER_SYSTEM_LAST5_EVERY_MINUTES_FIELD_NUMBER;
+      hash = (37 * hash) + IS_CENTER_SYSTEM_LAST_5_EVERY_MINUTES_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsCenterSystemLast5EveryMinutes());
       hash = (37 * hash) + END_TIME_FIELD_NUMBER;
@@ -1191,7 +1191,7 @@ public final class AnnounceDataOuterClass {
 
       private boolean isCenterSystemLast5EveryMinutes_ ;
       /**
-       * <code>bool is_center_system_last5_every_minutes = 14;</code>
+       * <code>bool is_center_system_last_5_every_minutes = 14;</code>
        * @return The isCenterSystemLast5EveryMinutes.
        */
       @java.lang.Override
@@ -1199,7 +1199,7 @@ public final class AnnounceDataOuterClass {
         return isCenterSystemLast5EveryMinutes_;
       }
       /**
-       * <code>bool is_center_system_last5_every_minutes = 14;</code>
+       * <code>bool is_center_system_last_5_every_minutes = 14;</code>
        * @param value The isCenterSystemLast5EveryMinutes to set.
        * @return This builder for chaining.
        */
@@ -1210,7 +1210,7 @@ public final class AnnounceDataOuterClass {
         return this;
       }
       /**
-       * <code>bool is_center_system_last5_every_minutes = 14;</code>
+       * <code>bool is_center_system_last_5_every_minutes = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsCenterSystemLast5EveryMinutes() {
@@ -1317,15 +1317,15 @@ public final class AnnounceDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\022AnnounceData.proto\"\207\002\n\014AnnounceData\022\027\n" +
+      "\n\022AnnounceData.proto\"\210\002\n\014AnnounceData\022\027\n" +
       "\017count_down_text\030\t \001(\t\022\032\n\022center_system_" +
       "text\030\010 \001(\t\022\034\n\024count_down_frequency\030\001 \001(\r" +
       "\022\021\n\tconfig_id\030\007 \001(\r\022\022\n\nbegin_time\030\004 \001(\r\022" +
       "\037\n\027center_system_frequency\030\013 \001(\r\022\034\n\024dung" +
-      "eon_confirm_text\030\002 \001(\t\022,\n$is_center_syst" +
-      "em_last5_every_minutes\030\016 \001(\010\022\020\n\010end_time" +
-      "\030\n \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
-      "to3"
+      "eon_confirm_text\030\002 \001(\t\022-\n%is_center_syst" +
+      "em_last_5_every_minutes\030\016 \001(\010\022\020\n\010end_tim" +
+      "e\030\n \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

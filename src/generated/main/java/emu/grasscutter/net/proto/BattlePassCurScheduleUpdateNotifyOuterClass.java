@@ -43,8 +43,7 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
    * <pre>
    * CmdId: 2607
    * EnetChannelId: 0
-   * EnetIsReliable: false
-   * IsAllowClient: true
+   * EnetIsReliable: true
    * </pre>
    *
    * Protobuf type {@code BattlePassCurScheduleUpdateNotify}
@@ -354,8 +353,7 @@ public final class BattlePassCurScheduleUpdateNotifyOuterClass {
      * <pre>
      * CmdId: 2607
      * EnetChannelId: 0
-     * EnetIsReliable: false
-     * IsAllowClient: true
+     * EnetIsReliable: true
      * </pre>
      *
      * Protobuf type {@code BattlePassCurScheduleUpdateNotify}

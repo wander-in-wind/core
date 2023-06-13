@@ -64,8 +64,7 @@ public final class GetBattlePassProductRspOuterClass {
    * <pre>
    * CmdId: 2649
    * EnetChannelId: 0
-   * EnetIsReliable: false
-   * IsAllowClient: true
+   * EnetIsReliable: true
    * </pre>
    *
    * Protobuf type {@code GetBattlePassProductRsp}
@@ -483,8 +482,7 @@ public final class GetBattlePassProductRspOuterClass {
      * <pre>
      * CmdId: 2649
      * EnetChannelId: 0
-     * EnetIsReliable: false
-     * IsAllowClient: true
+     * EnetIsReliable: true
      * </pre>
      *
      * Protobuf type {@code GetBattlePassProductRsp}

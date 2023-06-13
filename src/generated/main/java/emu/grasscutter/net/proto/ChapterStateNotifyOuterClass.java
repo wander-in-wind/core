@@ -69,8 +69,7 @@ public final class ChapterStateNotifyOuterClass {
    * <pre>
    * CmdId: 405
    * EnetChannelId: 0
-   * EnetIsReliable: false
-   * IsAllowClient: true
+   * EnetIsReliable: true
    * </pre>
    *
    * Protobuf type {@code ChapterStateNotify}
@@ -1588,8 +1587,7 @@ public final class ChapterStateNotifyOuterClass {
      * <pre>
      * CmdId: 405
      * EnetChannelId: 0
-     * EnetIsReliable: false
-     * IsAllowClient: true
+     * EnetIsReliable: true
      * </pre>
      *
      * Protobuf type {@code ChapterStateNotify}

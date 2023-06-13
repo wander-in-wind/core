@@ -129,7 +129,7 @@ public final class QueryPathReqOuterClass {
    * <pre>
    * CmdId: 2372
    * EnetChannelId: 0
-   * EnetIsReliable: false
+   * EnetIsReliable: true
    * IsAllowClient: true
    * </pre>
    *
@@ -851,7 +851,7 @@ public final class QueryPathReqOuterClass {
      * <pre>
      * CmdId: 2372
      * EnetChannelId: 0
-     * EnetIsReliable: false
+     * EnetIsReliable: true
      * IsAllowClient: true
      * </pre>
      *

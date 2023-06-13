@@ -53,10 +53,10 @@ public final class GadgetInteractReqOuterClass {
     emu.grasscutter.net.proto.ResinCostTypeOuterClass.ResinCostType getResinCostType();
 
     /**
-     * <code>uint32 Unk2700_DCPBGMKCHGJ = 2;</code>
-     * @return The unk2700DCPBGMKCHGJ.
+     * <code>uint32 ui_interact_id = 2;</code>
+     * @return The uiInteractId.
      */
-    int getUnk2700DCPBGMKCHGJ();
+    int getUiInteractId();
 
     /**
      * <code>uint32 gadget_entity_id = 4;</code>
@@ -68,7 +68,7 @@ public final class GadgetInteractReqOuterClass {
    * <pre>
    * CmdId: 872
    * EnetChannelId: 0
-   * EnetIsReliable: false
+   * EnetIsReliable: true
    * IsAllowClient: true
    * </pre>
    *
@@ -126,7 +126,7 @@ public final class GadgetInteractReqOuterClass {
             }
             case 16: {
 
-              unk2700DCPBGMKCHGJ_ = input.readUInt32();
+              uiInteractId_ = input.readUInt32();
               break;
             }
             case 32: {
@@ -242,15 +242,15 @@ public final class GadgetInteractReqOuterClass {
       return result == null ? emu.grasscutter.net.proto.ResinCostTypeOuterClass.ResinCostType.UNRECOGNIZED : result;
     }
 
-    public static final int UNK2700_DCPBGMKCHGJ_FIELD_NUMBER = 2;
-    private int unk2700DCPBGMKCHGJ_;
+    public static final int UI_INTERACT_ID_FIELD_NUMBER = 2;
+    private int uiInteractId_;
     /**
-     * <code>uint32 Unk2700_DCPBGMKCHGJ = 2;</code>
-     * @return The unk2700DCPBGMKCHGJ.
+     * <code>uint32 ui_interact_id = 2;</code>
+     * @return The uiInteractId.
      */
     @java.lang.Override
-    public int getUnk2700DCPBGMKCHGJ() {
-      return unk2700DCPBGMKCHGJ_;
+    public int getUiInteractId() {
+      return uiInteractId_;
     }
 
     public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 4;
@@ -281,8 +281,8 @@ public final class GadgetInteractReqOuterClass {
       if (resinCostType_ != emu.grasscutter.net.proto.ResinCostTypeOuterClass.ResinCostType.RESIN_COST_TYPE_NONE.getNumber()) {
         output.writeEnum(1, resinCostType_);
       }
-      if (unk2700DCPBGMKCHGJ_ != 0) {
-        output.writeUInt32(2, unk2700DCPBGMKCHGJ_);
+      if (uiInteractId_ != 0) {
+        output.writeUInt32(2, uiInteractId_);
       }
       if (gadgetEntityId_ != 0) {
         output.writeUInt32(4, gadgetEntityId_);
@@ -309,9 +309,9 @@ public final class GadgetInteractReqOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(1, resinCostType_);
       }
-      if (unk2700DCPBGMKCHGJ_ != 0) {
+      if (uiInteractId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, unk2700DCPBGMKCHGJ_);
+          .computeUInt32Size(2, uiInteractId_);
       }
       if (gadgetEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -350,8 +350,8 @@ public final class GadgetInteractReqOuterClass {
           != other.getIsUseCondenseResin()) return false;
       if (opType_ != other.opType_) return false;
       if (resinCostType_ != other.resinCostType_) return false;
-      if (getUnk2700DCPBGMKCHGJ()
-          != other.getUnk2700DCPBGMKCHGJ()) return false;
+      if (getUiInteractId()
+          != other.getUiInteractId()) return false;
       if (getGadgetEntityId()
           != other.getGadgetEntityId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -374,8 +374,8 @@ public final class GadgetInteractReqOuterClass {
       hash = (53 * hash) + opType_;
       hash = (37 * hash) + RESIN_COST_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + resinCostType_;
-      hash = (37 * hash) + UNK2700_DCPBGMKCHGJ_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2700DCPBGMKCHGJ();
+      hash = (37 * hash) + UI_INTERACT_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getUiInteractId();
       hash = (37 * hash) + GADGET_ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGadgetEntityId();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -477,7 +477,7 @@ public final class GadgetInteractReqOuterClass {
      * <pre>
      * CmdId: 872
      * EnetChannelId: 0
-     * EnetIsReliable: false
+     * EnetIsReliable: true
      * IsAllowClient: true
      * </pre>
      *
@@ -526,7 +526,7 @@ public final class GadgetInteractReqOuterClass {
 
         resinCostType_ = 0;
 
-        unk2700DCPBGMKCHGJ_ = 0;
+        uiInteractId_ = 0;
 
         gadgetEntityId_ = 0;
 
@@ -560,7 +560,7 @@ public final class GadgetInteractReqOuterClass {
         result.isUseCondenseResin_ = isUseCondenseResin_;
         result.opType_ = opType_;
         result.resinCostType_ = resinCostType_;
-        result.unk2700DCPBGMKCHGJ_ = unk2700DCPBGMKCHGJ_;
+        result.uiInteractId_ = uiInteractId_;
         result.gadgetEntityId_ = gadgetEntityId_;
         onBuilt();
         return result;
@@ -622,8 +622,8 @@ public final class GadgetInteractReqOuterClass {
         if (other.resinCostType_ != 0) {
           setResinCostTypeValue(other.getResinCostTypeValue());
         }
-        if (other.getUnk2700DCPBGMKCHGJ() != 0) {
-          setUnk2700DCPBGMKCHGJ(other.getUnk2700DCPBGMKCHGJ());
+        if (other.getUiInteractId() != 0) {
+          setUiInteractId(other.getUiInteractId());
         }
         if (other.getGadgetEntityId() != 0) {
           setGadgetEntityId(other.getGadgetEntityId());
@@ -827,33 +827,33 @@ public final class GadgetInteractReqOuterClass {
         return this;
       }
 
-      private int unk2700DCPBGMKCHGJ_ ;
+      private int uiInteractId_ ;
       /**
-       * <code>uint32 Unk2700_DCPBGMKCHGJ = 2;</code>
-       * @return The unk2700DCPBGMKCHGJ.
+       * <code>uint32 ui_interact_id = 2;</code>
+       * @return The uiInteractId.
        */
       @java.lang.Override
-      public int getUnk2700DCPBGMKCHGJ() {
-        return unk2700DCPBGMKCHGJ_;
+      public int getUiInteractId() {
+        return uiInteractId_;
       }
       /**
-       * <code>uint32 Unk2700_DCPBGMKCHGJ = 2;</code>
-       * @param value The unk2700DCPBGMKCHGJ to set.
+       * <code>uint32 ui_interact_id = 2;</code>
+       * @param value The uiInteractId to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700DCPBGMKCHGJ(int value) {
+      public Builder setUiInteractId(int value) {
         
-        unk2700DCPBGMKCHGJ_ = value;
+        uiInteractId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk2700_DCPBGMKCHGJ = 2;</code>
+       * <code>uint32 ui_interact_id = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700DCPBGMKCHGJ() {
+      public Builder clearUiInteractId() {
         
-        unk2700DCPBGMKCHGJ_ = 0;
+        uiInteractId_ = 0;
         onChanged();
         return this;
       }
@@ -956,13 +956,13 @@ public final class GadgetInteractReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027GadgetInteractReq.proto\032\021InterOpType.p" +
-      "roto\032\023ResinCostType.proto\"\304\001\n\021GadgetInte" +
+      "roto\032\023ResinCostType.proto\"\277\001\n\021GadgetInte" +
       "ractReq\022\021\n\tgadget_id\030\010 \001(\r\022\035\n\025is_use_con" +
       "dense_resin\030\017 \001(\010\022\035\n\007op_type\030\005 \001(\0162\014.Int" +
       "erOpType\022\'\n\017resin_cost_type\030\001 \001(\0162\016.Resi" +
-      "nCostType\022\033\n\023Unk2700_DCPBGMKCHGJ\030\002 \001(\r\022\030" +
-      "\n\020gadget_entity_id\030\004 \001(\rB\033\n\031emu.grasscut" +
-      "ter.net.protob\006proto3"
+      "nCostType\022\026\n\016ui_interact_id\030\002 \001(\r\022\030\n\020gad" +
+      "get_entity_id\030\004 \001(\rB\033\n\031emu.grasscutter.n" +
+      "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -975,7 +975,7 @@ public final class GadgetInteractReqOuterClass {
     internal_static_GadgetInteractReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GadgetInteractReq_descriptor,
-        new java.lang.String[] { "GadgetId", "IsUseCondenseResin", "OpType", "ResinCostType", "Unk2700DCPBGMKCHGJ", "GadgetEntityId", });
+        new java.lang.String[] { "GadgetId", "IsUseCondenseResin", "OpType", "ResinCostType", "UiInteractId", "GadgetEntityId", });
     emu.grasscutter.net.proto.InterOpTypeOuterClass.getDescriptor();
     emu.grasscutter.net.proto.ResinCostTypeOuterClass.getDescriptor();
   }

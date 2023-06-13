@@ -99,10 +99,10 @@ public final class BattlePassScheduleOuterClass {
     int getCurCyclePoints();
 
     /**
-     * <code>uint32 Unk2700_ODHAAHEPFAG = 12;</code>
-     * @return The unk2700ODHAAHEPFAG.
+     * <code>uint32 paid_platform_flags = 12;</code>
+     * @return The paidPlatformFlags.
      */
-    int getUnk2700ODHAAHEPFAG();
+    int getPaidPlatformFlags();
 
     /**
      * <code>.BattlePassProduct product_info = 13;</code>
@@ -245,7 +245,7 @@ public final class BattlePassScheduleOuterClass {
             }
             case 96: {
 
-              unk2700ODHAAHEPFAG_ = input.readUInt32();
+              paidPlatformFlags_ = input.readUInt32();
               break;
             }
             case 106: {
@@ -446,15 +446,15 @@ public final class BattlePassScheduleOuterClass {
       return curCyclePoints_;
     }
 
-    public static final int UNK2700_ODHAAHEPFAG_FIELD_NUMBER = 12;
-    private int unk2700ODHAAHEPFAG_;
+    public static final int PAID_PLATFORM_FLAGS_FIELD_NUMBER = 12;
+    private int paidPlatformFlags_;
     /**
-     * <code>uint32 Unk2700_ODHAAHEPFAG = 12;</code>
-     * @return The unk2700ODHAAHEPFAG.
+     * <code>uint32 paid_platform_flags = 12;</code>
+     * @return The paidPlatformFlags.
      */
     @java.lang.Override
-    public int getUnk2700ODHAAHEPFAG() {
-      return unk2700ODHAAHEPFAG_;
+    public int getPaidPlatformFlags() {
+      return paidPlatformFlags_;
     }
 
     public static final int PRODUCT_INFO_FIELD_NUMBER = 13;
@@ -557,8 +557,8 @@ public final class BattlePassScheduleOuterClass {
       for (int i = 0; i < rewardTakenList_.size(); i++) {
         output.writeMessage(11, rewardTakenList_.get(i));
       }
-      if (unk2700ODHAAHEPFAG_ != 0) {
-        output.writeUInt32(12, unk2700ODHAAHEPFAG_);
+      if (paidPlatformFlags_ != 0) {
+        output.writeUInt32(12, paidPlatformFlags_);
       }
       if (productInfo_ != null) {
         output.writeMessage(13, getProductInfo());
@@ -614,9 +614,9 @@ public final class BattlePassScheduleOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(11, rewardTakenList_.get(i));
       }
-      if (unk2700ODHAAHEPFAG_ != 0) {
+      if (paidPlatformFlags_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, unk2700ODHAAHEPFAG_);
+          .computeUInt32Size(12, paidPlatformFlags_);
       }
       if (productInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
@@ -663,8 +663,8 @@ public final class BattlePassScheduleOuterClass {
           .equals(other.getRewardTakenListList())) return false;
       if (getCurCyclePoints()
           != other.getCurCyclePoints()) return false;
-      if (getUnk2700ODHAAHEPFAG()
-          != other.getUnk2700ODHAAHEPFAG()) return false;
+      if (getPaidPlatformFlags()
+          != other.getPaidPlatformFlags()) return false;
       if (hasProductInfo() != other.hasProductInfo()) return false;
       if (hasProductInfo()) {
         if (!getProductInfo()
@@ -707,8 +707,8 @@ public final class BattlePassScheduleOuterClass {
       }
       hash = (37 * hash) + CUR_CYCLE_POINTS_FIELD_NUMBER;
       hash = (53 * hash) + getCurCyclePoints();
-      hash = (37 * hash) + UNK2700_ODHAAHEPFAG_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2700ODHAAHEPFAG();
+      hash = (37 * hash) + PAID_PLATFORM_FLAGS_FIELD_NUMBER;
+      hash = (53 * hash) + getPaidPlatformFlags();
       if (hasProductInfo()) {
         hash = (37 * hash) + PRODUCT_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getProductInfo().hashCode();
@@ -879,7 +879,7 @@ public final class BattlePassScheduleOuterClass {
         }
         curCyclePoints_ = 0;
 
-        unk2700ODHAAHEPFAG_ = 0;
+        paidPlatformFlags_ = 0;
 
         if (productInfoBuilder_ == null) {
           productInfo_ = null;
@@ -940,7 +940,7 @@ public final class BattlePassScheduleOuterClass {
           result.rewardTakenList_ = rewardTakenListBuilder_.build();
         }
         result.curCyclePoints_ = curCyclePoints_;
-        result.unk2700ODHAAHEPFAG_ = unk2700ODHAAHEPFAG_;
+        result.paidPlatformFlags_ = paidPlatformFlags_;
         if (productInfoBuilder_ == null) {
           result.productInfo_ = productInfo_;
         } else {
@@ -1044,8 +1044,8 @@ public final class BattlePassScheduleOuterClass {
         if (other.getCurCyclePoints() != 0) {
           setCurCyclePoints(other.getCurCyclePoints());
         }
-        if (other.getUnk2700ODHAAHEPFAG() != 0) {
-          setUnk2700ODHAAHEPFAG(other.getUnk2700ODHAAHEPFAG());
+        if (other.getPaidPlatformFlags() != 0) {
+          setPaidPlatformFlags(other.getPaidPlatformFlags());
         }
         if (other.hasProductInfo()) {
           mergeProductInfo(other.getProductInfo());
@@ -1657,33 +1657,33 @@ public final class BattlePassScheduleOuterClass {
         return this;
       }
 
-      private int unk2700ODHAAHEPFAG_ ;
+      private int paidPlatformFlags_ ;
       /**
-       * <code>uint32 Unk2700_ODHAAHEPFAG = 12;</code>
-       * @return The unk2700ODHAAHEPFAG.
+       * <code>uint32 paid_platform_flags = 12;</code>
+       * @return The paidPlatformFlags.
        */
       @java.lang.Override
-      public int getUnk2700ODHAAHEPFAG() {
-        return unk2700ODHAAHEPFAG_;
+      public int getPaidPlatformFlags() {
+        return paidPlatformFlags_;
       }
       /**
-       * <code>uint32 Unk2700_ODHAAHEPFAG = 12;</code>
-       * @param value The unk2700ODHAAHEPFAG to set.
+       * <code>uint32 paid_platform_flags = 12;</code>
+       * @param value The paidPlatformFlags to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700ODHAAHEPFAG(int value) {
+      public Builder setPaidPlatformFlags(int value) {
         
-        unk2700ODHAAHEPFAG_ = value;
+        paidPlatformFlags_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk2700_ODHAAHEPFAG = 12;</code>
+       * <code>uint32 paid_platform_flags = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700ODHAAHEPFAG() {
+      public Builder clearPaidPlatformFlags() {
         
-        unk2700ODHAAHEPFAG_ = 0;
+        paidPlatformFlags_ = 0;
         onChanged();
         return this;
       }
@@ -1975,8 +1975,8 @@ public final class BattlePassScheduleOuterClass {
       "\0132\020.BattlePassCycle\022.\n\runlock_status\030\007 \001" +
       "(\0162\027.BattlePassUnlockStatus\022/\n\021reward_ta" +
       "ken_list\030\013 \003(\0132\024.BattlePassRewardTag\022\030\n\020" +
-      "cur_cycle_points\030\n \001(\r\022\033\n\023Unk2700_ODHAAH" +
-      "EPFAG\030\014 \001(\r\022(\n\014product_info\030\r \001(\0132\022.Batt" +
+      "cur_cycle_points\030\n \001(\r\022\033\n\023paid_platform_" +
+      "flags\030\014 \001(\r\022(\n\014product_info\030\r \001(\0132\022.Batt" +
       "lePassProduct\022\"\n\032is_extra_paid_reward_ta" +
       "ken\030\006 \001(\010\022\021\n\tis_viewed\030\003 \001(\010\022\023\n\013schedule" +
       "_id\030\t \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
@@ -1995,7 +1995,7 @@ public final class BattlePassScheduleOuterClass {
     internal_static_BattlePassSchedule_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BattlePassSchedule_descriptor,
-        new java.lang.String[] { "Level", "BeginTime", "EndTime", "Point", "CurCycle", "UnlockStatus", "RewardTakenList", "CurCyclePoints", "Unk2700ODHAAHEPFAG", "ProductInfo", "IsExtraPaidRewardTaken", "IsViewed", "ScheduleId", });
+        new java.lang.String[] { "Level", "BeginTime", "EndTime", "Point", "CurCycle", "UnlockStatus", "RewardTakenList", "CurCyclePoints", "PaidPlatformFlags", "ProductInfo", "IsExtraPaidRewardTaken", "IsViewed", "ScheduleId", });
     emu.grasscutter.net.proto.BattlePassCycleOuterClass.getDescriptor();
     emu.grasscutter.net.proto.BattlePassProductOuterClass.getDescriptor();
     emu.grasscutter.net.proto.BattlePassRewardTagOuterClass.getDescriptor();

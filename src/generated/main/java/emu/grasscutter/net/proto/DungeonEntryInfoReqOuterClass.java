@@ -31,34 +31,34 @@ public final class DungeonEntryInfoReqOuterClass {
     int getSceneId();
 
     /**
-     * <code>repeated .Uint32Pair Unk2800_GGAMJDFELPH = 4;</code>
+     * <code>repeated .Uint32Pair scene_point_id_list = 4;</code>
      */
     java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> 
-        getUnk2800GGAMJDFELPHList();
+        getScenePointIdListList();
     /**
-     * <code>repeated .Uint32Pair Unk2800_GGAMJDFELPH = 4;</code>
+     * <code>repeated .Uint32Pair scene_point_id_list = 4;</code>
      */
-    emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getUnk2800GGAMJDFELPH(int index);
+    emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getScenePointIdList(int index);
     /**
-     * <code>repeated .Uint32Pair Unk2800_GGAMJDFELPH = 4;</code>
+     * <code>repeated .Uint32Pair scene_point_id_list = 4;</code>
      */
-    int getUnk2800GGAMJDFELPHCount();
+    int getScenePointIdListCount();
     /**
-     * <code>repeated .Uint32Pair Unk2800_GGAMJDFELPH = 4;</code>
+     * <code>repeated .Uint32Pair scene_point_id_list = 4;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
-        getUnk2800GGAMJDFELPHOrBuilderList();
+        getScenePointIdListOrBuilderList();
     /**
-     * <code>repeated .Uint32Pair Unk2800_GGAMJDFELPH = 4;</code>
+     * <code>repeated .Uint32Pair scene_point_id_list = 4;</code>
      */
-    emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getUnk2800GGAMJDFELPHOrBuilder(
+    emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getScenePointIdListOrBuilder(
         int index);
   }
   /**
    * <pre>
    * CmdId: 972
    * EnetChannelId: 0
-   * EnetIsReliable: false
+   * EnetIsReliable: true
    * IsAllowClient: true
    * </pre>
    *
@@ -74,7 +74,7 @@ public final class DungeonEntryInfoReqOuterClass {
       super(builder);
     }
     private DungeonEntryInfoReq() {
-      unk2800GGAMJDFELPH_ = java.util.Collections.emptyList();
+      scenePointIdList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -115,10 +115,10 @@ public final class DungeonEntryInfoReqOuterClass {
             }
             case 34: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                unk2800GGAMJDFELPH_ = new java.util.ArrayList<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair>();
+                scenePointIdList_ = new java.util.ArrayList<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              unk2800GGAMJDFELPH_.add(
+              scenePointIdList_.add(
                   input.readMessage(emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.parser(), extensionRegistry));
               break;
             }
@@ -143,7 +143,7 @@ public final class DungeonEntryInfoReqOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          unk2800GGAMJDFELPH_ = java.util.Collections.unmodifiableList(unk2800GGAMJDFELPH_);
+          scenePointIdList_ = java.util.Collections.unmodifiableList(scenePointIdList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -184,44 +184,44 @@ public final class DungeonEntryInfoReqOuterClass {
       return sceneId_;
     }
 
-    public static final int UNK2800_GGAMJDFELPH_FIELD_NUMBER = 4;
-    private java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> unk2800GGAMJDFELPH_;
+    public static final int SCENE_POINT_ID_LIST_FIELD_NUMBER = 4;
+    private java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> scenePointIdList_;
     /**
-     * <code>repeated .Uint32Pair Unk2800_GGAMJDFELPH = 4;</code>
+     * <code>repeated .Uint32Pair scene_point_id_list = 4;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> getUnk2800GGAMJDFELPHList() {
-      return unk2800GGAMJDFELPH_;
+    public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> getScenePointIdListList() {
+      return scenePointIdList_;
     }
     /**
-     * <code>repeated .Uint32Pair Unk2800_GGAMJDFELPH = 4;</code>
+     * <code>repeated .Uint32Pair scene_point_id_list = 4;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
-        getUnk2800GGAMJDFELPHOrBuilderList() {
-      return unk2800GGAMJDFELPH_;
+        getScenePointIdListOrBuilderList() {
+      return scenePointIdList_;
     }
     /**
-     * <code>repeated .Uint32Pair Unk2800_GGAMJDFELPH = 4;</code>
+     * <code>repeated .Uint32Pair scene_point_id_list = 4;</code>
      */
     @java.lang.Override
-    public int getUnk2800GGAMJDFELPHCount() {
-      return unk2800GGAMJDFELPH_.size();
+    public int getScenePointIdListCount() {
+      return scenePointIdList_.size();
     }
     /**
-     * <code>repeated .Uint32Pair Unk2800_GGAMJDFELPH = 4;</code>
+     * <code>repeated .Uint32Pair scene_point_id_list = 4;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getUnk2800GGAMJDFELPH(int index) {
-      return unk2800GGAMJDFELPH_.get(index);
+    public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getScenePointIdList(int index) {
+      return scenePointIdList_.get(index);
     }
     /**
-     * <code>repeated .Uint32Pair Unk2800_GGAMJDFELPH = 4;</code>
+     * <code>repeated .Uint32Pair scene_point_id_list = 4;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getUnk2800GGAMJDFELPHOrBuilder(
+    public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getScenePointIdListOrBuilder(
         int index) {
-      return unk2800GGAMJDFELPH_.get(index);
+      return scenePointIdList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -241,8 +241,8 @@ public final class DungeonEntryInfoReqOuterClass {
       if (pointId_ != 0) {
         output.writeUInt32(2, pointId_);
       }
-      for (int i = 0; i < unk2800GGAMJDFELPH_.size(); i++) {
-        output.writeMessage(4, unk2800GGAMJDFELPH_.get(i));
+      for (int i = 0; i < scenePointIdList_.size(); i++) {
+        output.writeMessage(4, scenePointIdList_.get(i));
       }
       if (sceneId_ != 0) {
         output.writeUInt32(9, sceneId_);
@@ -260,9 +260,9 @@ public final class DungeonEntryInfoReqOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(2, pointId_);
       }
-      for (int i = 0; i < unk2800GGAMJDFELPH_.size(); i++) {
+      for (int i = 0; i < scenePointIdList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, unk2800GGAMJDFELPH_.get(i));
+          .computeMessageSize(4, scenePointIdList_.get(i));
       }
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -287,8 +287,8 @@ public final class DungeonEntryInfoReqOuterClass {
           != other.getPointId()) return false;
       if (getSceneId()
           != other.getSceneId()) return false;
-      if (!getUnk2800GGAMJDFELPHList()
-          .equals(other.getUnk2800GGAMJDFELPHList())) return false;
+      if (!getScenePointIdListList()
+          .equals(other.getScenePointIdListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -304,9 +304,9 @@ public final class DungeonEntryInfoReqOuterClass {
       hash = (53 * hash) + getPointId();
       hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getSceneId();
-      if (getUnk2800GGAMJDFELPHCount() > 0) {
-        hash = (37 * hash) + UNK2800_GGAMJDFELPH_FIELD_NUMBER;
-        hash = (53 * hash) + getUnk2800GGAMJDFELPHList().hashCode();
+      if (getScenePointIdListCount() > 0) {
+        hash = (37 * hash) + SCENE_POINT_ID_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getScenePointIdListList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -407,7 +407,7 @@ public final class DungeonEntryInfoReqOuterClass {
      * <pre>
      * CmdId: 972
      * EnetChannelId: 0
-     * EnetIsReliable: false
+     * EnetIsReliable: true
      * IsAllowClient: true
      * </pre>
      *
@@ -443,7 +443,7 @@ public final class DungeonEntryInfoReqOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getUnk2800GGAMJDFELPHFieldBuilder();
+          getScenePointIdListFieldBuilder();
         }
       }
       @java.lang.Override
@@ -453,11 +453,11 @@ public final class DungeonEntryInfoReqOuterClass {
 
         sceneId_ = 0;
 
-        if (unk2800GGAMJDFELPHBuilder_ == null) {
-          unk2800GGAMJDFELPH_ = java.util.Collections.emptyList();
+        if (scenePointIdListBuilder_ == null) {
+          scenePointIdList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          unk2800GGAMJDFELPHBuilder_.clear();
+          scenePointIdListBuilder_.clear();
         }
         return this;
       }
@@ -488,14 +488,14 @@ public final class DungeonEntryInfoReqOuterClass {
         int from_bitField0_ = bitField0_;
         result.pointId_ = pointId_;
         result.sceneId_ = sceneId_;
-        if (unk2800GGAMJDFELPHBuilder_ == null) {
+        if (scenePointIdListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            unk2800GGAMJDFELPH_ = java.util.Collections.unmodifiableList(unk2800GGAMJDFELPH_);
+            scenePointIdList_ = java.util.Collections.unmodifiableList(scenePointIdList_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.unk2800GGAMJDFELPH_ = unk2800GGAMJDFELPH_;
+          result.scenePointIdList_ = scenePointIdList_;
         } else {
-          result.unk2800GGAMJDFELPH_ = unk2800GGAMJDFELPHBuilder_.build();
+          result.scenePointIdList_ = scenePointIdListBuilder_.build();
         }
         onBuilt();
         return result;
@@ -551,29 +551,29 @@ public final class DungeonEntryInfoReqOuterClass {
         if (other.getSceneId() != 0) {
           setSceneId(other.getSceneId());
         }
-        if (unk2800GGAMJDFELPHBuilder_ == null) {
-          if (!other.unk2800GGAMJDFELPH_.isEmpty()) {
-            if (unk2800GGAMJDFELPH_.isEmpty()) {
-              unk2800GGAMJDFELPH_ = other.unk2800GGAMJDFELPH_;
+        if (scenePointIdListBuilder_ == null) {
+          if (!other.scenePointIdList_.isEmpty()) {
+            if (scenePointIdList_.isEmpty()) {
+              scenePointIdList_ = other.scenePointIdList_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureUnk2800GGAMJDFELPHIsMutable();
-              unk2800GGAMJDFELPH_.addAll(other.unk2800GGAMJDFELPH_);
+              ensureScenePointIdListIsMutable();
+              scenePointIdList_.addAll(other.scenePointIdList_);
             }
             onChanged();
           }
         } else {
-          if (!other.unk2800GGAMJDFELPH_.isEmpty()) {
-            if (unk2800GGAMJDFELPHBuilder_.isEmpty()) {
-              unk2800GGAMJDFELPHBuilder_.dispose();
-              unk2800GGAMJDFELPHBuilder_ = null;
-              unk2800GGAMJDFELPH_ = other.unk2800GGAMJDFELPH_;
+          if (!other.scenePointIdList_.isEmpty()) {
+            if (scenePointIdListBuilder_.isEmpty()) {
+              scenePointIdListBuilder_.dispose();
+              scenePointIdListBuilder_ = null;
+              scenePointIdList_ = other.scenePointIdList_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              unk2800GGAMJDFELPHBuilder_ = 
+              scenePointIdListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getUnk2800GGAMJDFELPHFieldBuilder() : null;
+                   getScenePointIdListFieldBuilder() : null;
             } else {
-              unk2800GGAMJDFELPHBuilder_.addAllMessages(other.unk2800GGAMJDFELPH_);
+              scenePointIdListBuilder_.addAllMessages(other.scenePointIdList_);
             }
           }
         }
@@ -669,244 +669,244 @@ public final class DungeonEntryInfoReqOuterClass {
         return this;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> unk2800GGAMJDFELPH_ =
+      private java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> scenePointIdList_ =
         java.util.Collections.emptyList();
-      private void ensureUnk2800GGAMJDFELPHIsMutable() {
+      private void ensureScenePointIdListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          unk2800GGAMJDFELPH_ = new java.util.ArrayList<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair>(unk2800GGAMJDFELPH_);
+          scenePointIdList_ = new java.util.ArrayList<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair>(scenePointIdList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> unk2800GGAMJDFELPHBuilder_;
+          emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> scenePointIdListBuilder_;
 
       /**
-       * <code>repeated .Uint32Pair Unk2800_GGAMJDFELPH = 4;</code>
+       * <code>repeated .Uint32Pair scene_point_id_list = 4;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> getUnk2800GGAMJDFELPHList() {
-        if (unk2800GGAMJDFELPHBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(unk2800GGAMJDFELPH_);
+      public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> getScenePointIdListList() {
+        if (scenePointIdListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(scenePointIdList_);
         } else {
-          return unk2800GGAMJDFELPHBuilder_.getMessageList();
+          return scenePointIdListBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .Uint32Pair Unk2800_GGAMJDFELPH = 4;</code>
+       * <code>repeated .Uint32Pair scene_point_id_list = 4;</code>
        */
-      public int getUnk2800GGAMJDFELPHCount() {
-        if (unk2800GGAMJDFELPHBuilder_ == null) {
-          return unk2800GGAMJDFELPH_.size();
+      public int getScenePointIdListCount() {
+        if (scenePointIdListBuilder_ == null) {
+          return scenePointIdList_.size();
         } else {
-          return unk2800GGAMJDFELPHBuilder_.getCount();
+          return scenePointIdListBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .Uint32Pair Unk2800_GGAMJDFELPH = 4;</code>
+       * <code>repeated .Uint32Pair scene_point_id_list = 4;</code>
        */
-      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getUnk2800GGAMJDFELPH(int index) {
-        if (unk2800GGAMJDFELPHBuilder_ == null) {
-          return unk2800GGAMJDFELPH_.get(index);
+      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getScenePointIdList(int index) {
+        if (scenePointIdListBuilder_ == null) {
+          return scenePointIdList_.get(index);
         } else {
-          return unk2800GGAMJDFELPHBuilder_.getMessage(index);
+          return scenePointIdListBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .Uint32Pair Unk2800_GGAMJDFELPH = 4;</code>
+       * <code>repeated .Uint32Pair scene_point_id_list = 4;</code>
        */
-      public Builder setUnk2800GGAMJDFELPH(
+      public Builder setScenePointIdList(
           int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
-        if (unk2800GGAMJDFELPHBuilder_ == null) {
+        if (scenePointIdListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2800GGAMJDFELPHIsMutable();
-          unk2800GGAMJDFELPH_.set(index, value);
+          ensureScenePointIdListIsMutable();
+          scenePointIdList_.set(index, value);
           onChanged();
         } else {
-          unk2800GGAMJDFELPHBuilder_.setMessage(index, value);
+          scenePointIdListBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair Unk2800_GGAMJDFELPH = 4;</code>
+       * <code>repeated .Uint32Pair scene_point_id_list = 4;</code>
        */
-      public Builder setUnk2800GGAMJDFELPH(
+      public Builder setScenePointIdList(
           int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder builderForValue) {
-        if (unk2800GGAMJDFELPHBuilder_ == null) {
-          ensureUnk2800GGAMJDFELPHIsMutable();
-          unk2800GGAMJDFELPH_.set(index, builderForValue.build());
+        if (scenePointIdListBuilder_ == null) {
+          ensureScenePointIdListIsMutable();
+          scenePointIdList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          unk2800GGAMJDFELPHBuilder_.setMessage(index, builderForValue.build());
+          scenePointIdListBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair Unk2800_GGAMJDFELPH = 4;</code>
+       * <code>repeated .Uint32Pair scene_point_id_list = 4;</code>
        */
-      public Builder addUnk2800GGAMJDFELPH(emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
-        if (unk2800GGAMJDFELPHBuilder_ == null) {
+      public Builder addScenePointIdList(emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
+        if (scenePointIdListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2800GGAMJDFELPHIsMutable();
-          unk2800GGAMJDFELPH_.add(value);
+          ensureScenePointIdListIsMutable();
+          scenePointIdList_.add(value);
           onChanged();
         } else {
-          unk2800GGAMJDFELPHBuilder_.addMessage(value);
+          scenePointIdListBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair Unk2800_GGAMJDFELPH = 4;</code>
+       * <code>repeated .Uint32Pair scene_point_id_list = 4;</code>
        */
-      public Builder addUnk2800GGAMJDFELPH(
+      public Builder addScenePointIdList(
           int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
-        if (unk2800GGAMJDFELPHBuilder_ == null) {
+        if (scenePointIdListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2800GGAMJDFELPHIsMutable();
-          unk2800GGAMJDFELPH_.add(index, value);
+          ensureScenePointIdListIsMutable();
+          scenePointIdList_.add(index, value);
           onChanged();
         } else {
-          unk2800GGAMJDFELPHBuilder_.addMessage(index, value);
+          scenePointIdListBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair Unk2800_GGAMJDFELPH = 4;</code>
+       * <code>repeated .Uint32Pair scene_point_id_list = 4;</code>
        */
-      public Builder addUnk2800GGAMJDFELPH(
+      public Builder addScenePointIdList(
           emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder builderForValue) {
-        if (unk2800GGAMJDFELPHBuilder_ == null) {
-          ensureUnk2800GGAMJDFELPHIsMutable();
-          unk2800GGAMJDFELPH_.add(builderForValue.build());
+        if (scenePointIdListBuilder_ == null) {
+          ensureScenePointIdListIsMutable();
+          scenePointIdList_.add(builderForValue.build());
           onChanged();
         } else {
-          unk2800GGAMJDFELPHBuilder_.addMessage(builderForValue.build());
+          scenePointIdListBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair Unk2800_GGAMJDFELPH = 4;</code>
+       * <code>repeated .Uint32Pair scene_point_id_list = 4;</code>
        */
-      public Builder addUnk2800GGAMJDFELPH(
+      public Builder addScenePointIdList(
           int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder builderForValue) {
-        if (unk2800GGAMJDFELPHBuilder_ == null) {
-          ensureUnk2800GGAMJDFELPHIsMutable();
-          unk2800GGAMJDFELPH_.add(index, builderForValue.build());
+        if (scenePointIdListBuilder_ == null) {
+          ensureScenePointIdListIsMutable();
+          scenePointIdList_.add(index, builderForValue.build());
           onChanged();
         } else {
-          unk2800GGAMJDFELPHBuilder_.addMessage(index, builderForValue.build());
+          scenePointIdListBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair Unk2800_GGAMJDFELPH = 4;</code>
+       * <code>repeated .Uint32Pair scene_point_id_list = 4;</code>
        */
-      public Builder addAllUnk2800GGAMJDFELPH(
+      public Builder addAllScenePointIdList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> values) {
-        if (unk2800GGAMJDFELPHBuilder_ == null) {
-          ensureUnk2800GGAMJDFELPHIsMutable();
+        if (scenePointIdListBuilder_ == null) {
+          ensureScenePointIdListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, unk2800GGAMJDFELPH_);
+              values, scenePointIdList_);
           onChanged();
         } else {
-          unk2800GGAMJDFELPHBuilder_.addAllMessages(values);
+          scenePointIdListBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair Unk2800_GGAMJDFELPH = 4;</code>
+       * <code>repeated .Uint32Pair scene_point_id_list = 4;</code>
        */
-      public Builder clearUnk2800GGAMJDFELPH() {
-        if (unk2800GGAMJDFELPHBuilder_ == null) {
-          unk2800GGAMJDFELPH_ = java.util.Collections.emptyList();
+      public Builder clearScenePointIdList() {
+        if (scenePointIdListBuilder_ == null) {
+          scenePointIdList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          unk2800GGAMJDFELPHBuilder_.clear();
+          scenePointIdListBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair Unk2800_GGAMJDFELPH = 4;</code>
+       * <code>repeated .Uint32Pair scene_point_id_list = 4;</code>
        */
-      public Builder removeUnk2800GGAMJDFELPH(int index) {
-        if (unk2800GGAMJDFELPHBuilder_ == null) {
-          ensureUnk2800GGAMJDFELPHIsMutable();
-          unk2800GGAMJDFELPH_.remove(index);
+      public Builder removeScenePointIdList(int index) {
+        if (scenePointIdListBuilder_ == null) {
+          ensureScenePointIdListIsMutable();
+          scenePointIdList_.remove(index);
           onChanged();
         } else {
-          unk2800GGAMJDFELPHBuilder_.remove(index);
+          scenePointIdListBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair Unk2800_GGAMJDFELPH = 4;</code>
+       * <code>repeated .Uint32Pair scene_point_id_list = 4;</code>
        */
-      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder getUnk2800GGAMJDFELPHBuilder(
+      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder getScenePointIdListBuilder(
           int index) {
-        return getUnk2800GGAMJDFELPHFieldBuilder().getBuilder(index);
+        return getScenePointIdListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .Uint32Pair Unk2800_GGAMJDFELPH = 4;</code>
+       * <code>repeated .Uint32Pair scene_point_id_list = 4;</code>
        */
-      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getUnk2800GGAMJDFELPHOrBuilder(
+      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getScenePointIdListOrBuilder(
           int index) {
-        if (unk2800GGAMJDFELPHBuilder_ == null) {
-          return unk2800GGAMJDFELPH_.get(index);  } else {
-          return unk2800GGAMJDFELPHBuilder_.getMessageOrBuilder(index);
+        if (scenePointIdListBuilder_ == null) {
+          return scenePointIdList_.get(index);  } else {
+          return scenePointIdListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .Uint32Pair Unk2800_GGAMJDFELPH = 4;</code>
+       * <code>repeated .Uint32Pair scene_point_id_list = 4;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
-           getUnk2800GGAMJDFELPHOrBuilderList() {
-        if (unk2800GGAMJDFELPHBuilder_ != null) {
-          return unk2800GGAMJDFELPHBuilder_.getMessageOrBuilderList();
+           getScenePointIdListOrBuilderList() {
+        if (scenePointIdListBuilder_ != null) {
+          return scenePointIdListBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(unk2800GGAMJDFELPH_);
+          return java.util.Collections.unmodifiableList(scenePointIdList_);
         }
       }
       /**
-       * <code>repeated .Uint32Pair Unk2800_GGAMJDFELPH = 4;</code>
+       * <code>repeated .Uint32Pair scene_point_id_list = 4;</code>
        */
-      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder addUnk2800GGAMJDFELPHBuilder() {
-        return getUnk2800GGAMJDFELPHFieldBuilder().addBuilder(
+      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder addScenePointIdListBuilder() {
+        return getScenePointIdListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.getDefaultInstance());
       }
       /**
-       * <code>repeated .Uint32Pair Unk2800_GGAMJDFELPH = 4;</code>
+       * <code>repeated .Uint32Pair scene_point_id_list = 4;</code>
        */
-      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder addUnk2800GGAMJDFELPHBuilder(
+      public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder addScenePointIdListBuilder(
           int index) {
-        return getUnk2800GGAMJDFELPHFieldBuilder().addBuilder(
+        return getScenePointIdListFieldBuilder().addBuilder(
             index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.getDefaultInstance());
       }
       /**
-       * <code>repeated .Uint32Pair Unk2800_GGAMJDFELPH = 4;</code>
+       * <code>repeated .Uint32Pair scene_point_id_list = 4;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder> 
-           getUnk2800GGAMJDFELPHBuilderList() {
-        return getUnk2800GGAMJDFELPHFieldBuilder().getBuilderList();
+           getScenePointIdListBuilderList() {
+        return getScenePointIdListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
           emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
-          getUnk2800GGAMJDFELPHFieldBuilder() {
-        if (unk2800GGAMJDFELPHBuilder_ == null) {
-          unk2800GGAMJDFELPHBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+          getScenePointIdListFieldBuilder() {
+        if (scenePointIdListBuilder_ == null) {
+          scenePointIdListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder>(
-                  unk2800GGAMJDFELPH_,
+                  scenePointIdList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          unk2800GGAMJDFELPH_ = null;
+          scenePointIdList_ = null;
         }
-        return unk2800GGAMJDFELPHBuilder_;
+        return scenePointIdListBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -977,8 +977,8 @@ public final class DungeonEntryInfoReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\031DungeonEntryInfoReq.proto\032\020Uint32Pair." +
       "proto\"c\n\023DungeonEntryInfoReq\022\020\n\010point_id" +
-      "\030\002 \001(\r\022\020\n\010scene_id\030\t \001(\r\022(\n\023Unk2800_GGAM" +
-      "JDFELPH\030\004 \003(\0132\013.Uint32PairB\033\n\031emu.grassc" +
+      "\030\002 \001(\r\022\020\n\010scene_id\030\t \001(\r\022(\n\023scene_point_" +
+      "id_list\030\004 \003(\0132\013.Uint32PairB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -991,7 +991,7 @@ public final class DungeonEntryInfoReqOuterClass {
     internal_static_DungeonEntryInfoReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DungeonEntryInfoReq_descriptor,
-        new java.lang.String[] { "PointId", "SceneId", "Unk2800GGAMJDFELPH", });
+        new java.lang.String[] { "PointId", "SceneId", "ScenePointIdList", });
     emu.grasscutter.net.proto.Uint32PairOuterClass.getDescriptor();
   }
 

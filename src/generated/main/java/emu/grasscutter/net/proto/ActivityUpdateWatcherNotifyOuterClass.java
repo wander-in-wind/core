@@ -43,7 +43,7 @@ public final class ActivityUpdateWatcherNotifyOuterClass {
    * <pre>
    * CmdId: 2156
    * EnetChannelId: 0
-   * EnetIsReliable: false
+   * EnetIsReliable: true
    * IsAllowClient: true
    * </pre>
    *
@@ -353,7 +353,7 @@ public final class ActivityUpdateWatcherNotifyOuterClass {
      * <pre>
      * CmdId: 2156
      * EnetChannelId: 0
-     * EnetIsReliable: false
+     * EnetIsReliable: true
      * IsAllowClient: true
      * </pre>
      *

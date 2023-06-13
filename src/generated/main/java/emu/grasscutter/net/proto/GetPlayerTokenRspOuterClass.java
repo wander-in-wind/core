@@ -79,10 +79,10 @@ public final class GetPlayerTokenRspOuterClass {
         getSecretKeyBytes();
 
     /**
-     * <code>uint32 Unk2700_NOJPEHIBDJH = 1561;</code>
-     * @return The unk2700NOJPEHIBDJH.
+     * <code>uint32 minors_reg_min_age = 1561;</code>
+     * @return The minorsRegMinAge.
      */
-    int getUnk2700NOJPEHIBDJH();
+    int getMinorsRegMinAge();
 
     /**
      * <code>uint32 black_uid_end_time = 14;</code>
@@ -169,22 +169,22 @@ public final class GetPlayerTokenRspOuterClass {
     int getSubChannelId();
 
     /**
-     * <code>bool Unk2700_FLBKPCPGPDH = 2028;</code>
-     * @return The unk2700FLBKPCPGPDH.
+     * <code>bool is_watchdog_uid = 2028;</code>
+     * @return The isWatchdogUid.
      */
-    boolean getUnk2700FLBKPCPGPDH();
+    boolean getIsWatchdogUid();
 
     /**
-     * <code>string encrypted_seed = 1493;</code>
-     * @return The encryptedSeed.
+     * <code>string server_rand_key = 1493;</code>
+     * @return The serverRandKey.
      */
-    java.lang.String getEncryptedSeed();
+    java.lang.String getServerRandKey();
     /**
-     * <code>string encrypted_seed = 1493;</code>
-     * @return The bytes for encryptedSeed.
+     * <code>string server_rand_key = 1493;</code>
+     * @return The bytes for serverRandKey.
      */
     com.google.protobuf.ByteString
-        getEncryptedSeedBytes();
+        getServerRandKeyBytes();
 
     /**
      * <code>bool is_proficient_player = 9;</code>
@@ -193,10 +193,10 @@ public final class GetPlayerTokenRspOuterClass {
     boolean getIsProficientPlayer();
 
     /**
-     * <code>uint32 Unk2800_BPJOBLNCBEI = 1172;</code>
-     * @return The unk2800BPJOBLNCBEI.
+     * <code>uint32 key_id = 1172;</code>
+     * @return The keyId.
      */
-    int getUnk2800BPJOBLNCBEI();
+    int getKeyId();
 
     /**
      * <code>uint32 uid = 1;</code>
@@ -235,21 +235,21 @@ public final class GetPlayerTokenRspOuterClass {
         getClientVersionRandomKeyBytes();
 
     /**
-     * <code>repeated uint32 Unk2800_NNBFCEAOEPB = 1640;</code>
-     * @return A list containing the unk2800NNBFCEAOEPB.
+     * <code>repeated uint32 finish_collection_id_list = 1640;</code>
+     * @return A list containing the finishCollectionIdList.
      */
-    java.util.List<java.lang.Integer> getUnk2800NNBFCEAOEPBList();
+    java.util.List<java.lang.Integer> getFinishCollectionIdListList();
     /**
-     * <code>repeated uint32 Unk2800_NNBFCEAOEPB = 1640;</code>
-     * @return The count of unk2800NNBFCEAOEPB.
+     * <code>repeated uint32 finish_collection_id_list = 1640;</code>
+     * @return The count of finishCollectionIdList.
      */
-    int getUnk2800NNBFCEAOEPBCount();
+    int getFinishCollectionIdListCount();
     /**
-     * <code>repeated uint32 Unk2800_NNBFCEAOEPB = 1640;</code>
+     * <code>repeated uint32 finish_collection_id_list = 1640;</code>
      * @param index The index of the element to return.
-     * @return The unk2800NNBFCEAOEPB at the given index.
+     * @return The finishCollectionIdList at the given index.
      */
-    int getUnk2800NNBFCEAOEPB(int index);
+    int getFinishCollectionIdList(int index);
 
     /**
      * <code>uint32 platform_type = 8;</code>
@@ -270,23 +270,22 @@ public final class GetPlayerTokenRspOuterClass {
     boolean getIsLoginWhiteList();
 
     /**
-     * <code>string seed_signature = 1140;</code>
-     * @return The seedSignature.
+     * <code>string sign = 1140;</code>
+     * @return The sign.
      */
-    java.lang.String getSeedSignature();
+    java.lang.String getSign();
     /**
-     * <code>string seed_signature = 1140;</code>
-     * @return The bytes for seedSignature.
+     * <code>string sign = 1140;</code>
+     * @return The bytes for sign.
      */
     com.google.protobuf.ByteString
-        getSeedSignatureBytes();
+        getSignBytes();
   }
   /**
    * <pre>
    * CmdId: 198
    * EnetChannelId: 0
-   * EnetIsReliable: false
-   * IsAllowClient: true
+   * EnetIsReliable: true
    * </pre>
    *
    * Protobuf type {@code GetPlayerTokenRsp}
@@ -310,11 +309,11 @@ public final class GetPlayerTokenRspOuterClass {
       psnId_ = "";
       clientIpStr_ = "";
       msg_ = "";
-      encryptedSeed_ = "";
+      serverRandKey_ = "";
       accountUid_ = "";
       clientVersionRandomKey_ = "";
-      unk2800NNBFCEAOEPB_ = emptyIntList();
-      seedSignature_ = "";
+      finishCollectionIdList_ = emptyIntList();
+      sign_ = "";
     }
 
     @java.lang.Override
@@ -457,18 +456,18 @@ public final class GetPlayerTokenRspOuterClass {
             case 9122: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              seedSignature_ = s;
+              sign_ = s;
               break;
             }
             case 9376: {
 
-              unk2800BPJOBLNCBEI_ = input.readUInt32();
+              keyId_ = input.readUInt32();
               break;
             }
             case 11946: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              encryptedSeed_ = s;
+              serverRandKey_ = s;
               break;
             }
             case 12234: {
@@ -479,7 +478,7 @@ public final class GetPlayerTokenRspOuterClass {
             }
             case 12488: {
 
-              unk2700NOJPEHIBDJH_ = input.readUInt32();
+              minorsRegMinAge_ = input.readUInt32();
               break;
             }
             case 13080: {
@@ -489,21 +488,21 @@ public final class GetPlayerTokenRspOuterClass {
             }
             case 13120: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                unk2800NNBFCEAOEPB_ = newIntList();
+                finishCollectionIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
-              unk2800NNBFCEAOEPB_.addInt(input.readUInt32());
+              finishCollectionIdList_.addInt(input.readUInt32());
               break;
             }
             case 13122: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                unk2800NNBFCEAOEPB_ = newIntList();
+                finishCollectionIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
-                unk2800NNBFCEAOEPB_.addInt(input.readUInt32());
+                finishCollectionIdList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
@@ -527,7 +526,7 @@ public final class GetPlayerTokenRspOuterClass {
             }
             case 16224: {
 
-              unk2700FLBKPCPGPDH_ = input.readBool();
+              isWatchdogUid_ = input.readBool();
               break;
             }
             default: {
@@ -546,7 +545,7 @@ public final class GetPlayerTokenRspOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          unk2800NNBFCEAOEPB_.makeImmutable(); // C
+          finishCollectionIdList_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -723,15 +722,15 @@ public final class GetPlayerTokenRspOuterClass {
       }
     }
 
-    public static final int UNK2700_NOJPEHIBDJH_FIELD_NUMBER = 1561;
-    private int unk2700NOJPEHIBDJH_;
+    public static final int MINORS_REG_MIN_AGE_FIELD_NUMBER = 1561;
+    private int minorsRegMinAge_;
     /**
-     * <code>uint32 Unk2700_NOJPEHIBDJH = 1561;</code>
-     * @return The unk2700NOJPEHIBDJH.
+     * <code>uint32 minors_reg_min_age = 1561;</code>
+     * @return The minorsRegMinAge.
      */
     @java.lang.Override
-    public int getUnk2700NOJPEHIBDJH() {
-      return unk2700NOJPEHIBDJH_;
+    public int getMinorsRegMinAge() {
+      return minorsRegMinAge_;
     }
 
     public static final int BLACK_UID_END_TIME_FIELD_NUMBER = 14;
@@ -952,49 +951,49 @@ public final class GetPlayerTokenRspOuterClass {
       return subChannelId_;
     }
 
-    public static final int UNK2700_FLBKPCPGPDH_FIELD_NUMBER = 2028;
-    private boolean unk2700FLBKPCPGPDH_;
+    public static final int IS_WATCHDOG_UID_FIELD_NUMBER = 2028;
+    private boolean isWatchdogUid_;
     /**
-     * <code>bool Unk2700_FLBKPCPGPDH = 2028;</code>
-     * @return The unk2700FLBKPCPGPDH.
+     * <code>bool is_watchdog_uid = 2028;</code>
+     * @return The isWatchdogUid.
      */
     @java.lang.Override
-    public boolean getUnk2700FLBKPCPGPDH() {
-      return unk2700FLBKPCPGPDH_;
+    public boolean getIsWatchdogUid() {
+      return isWatchdogUid_;
     }
 
-    public static final int ENCRYPTED_SEED_FIELD_NUMBER = 1493;
-    private volatile java.lang.Object encryptedSeed_;
+    public static final int SERVER_RAND_KEY_FIELD_NUMBER = 1493;
+    private volatile java.lang.Object serverRandKey_;
     /**
-     * <code>string encrypted_seed = 1493;</code>
-     * @return The encryptedSeed.
+     * <code>string server_rand_key = 1493;</code>
+     * @return The serverRandKey.
      */
     @java.lang.Override
-    public java.lang.String getEncryptedSeed() {
-      java.lang.Object ref = encryptedSeed_;
+    public java.lang.String getServerRandKey() {
+      java.lang.Object ref = serverRandKey_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        encryptedSeed_ = s;
+        serverRandKey_ = s;
         return s;
       }
     }
     /**
-     * <code>string encrypted_seed = 1493;</code>
-     * @return The bytes for encryptedSeed.
+     * <code>string server_rand_key = 1493;</code>
+     * @return The bytes for serverRandKey.
      */
     @java.lang.Override
     public com.google.protobuf.ByteString
-        getEncryptedSeedBytes() {
-      java.lang.Object ref = encryptedSeed_;
+        getServerRandKeyBytes() {
+      java.lang.Object ref = serverRandKey_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        encryptedSeed_ = b;
+        serverRandKey_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -1012,15 +1011,15 @@ public final class GetPlayerTokenRspOuterClass {
       return isProficientPlayer_;
     }
 
-    public static final int UNK2800_BPJOBLNCBEI_FIELD_NUMBER = 1172;
-    private int unk2800BPJOBLNCBEI_;
+    public static final int KEY_ID_FIELD_NUMBER = 1172;
+    private int keyId_;
     /**
-     * <code>uint32 Unk2800_BPJOBLNCBEI = 1172;</code>
-     * @return The unk2800BPJOBLNCBEI.
+     * <code>uint32 key_id = 1172;</code>
+     * @return The keyId.
      */
     @java.lang.Override
-    public int getUnk2800BPJOBLNCBEI() {
-      return unk2800BPJOBLNCBEI_;
+    public int getKeyId() {
+      return keyId_;
     }
 
     public static final int UID_FIELD_NUMBER = 1;
@@ -1121,33 +1120,33 @@ public final class GetPlayerTokenRspOuterClass {
       }
     }
 
-    public static final int UNK2800_NNBFCEAOEPB_FIELD_NUMBER = 1640;
-    private com.google.protobuf.Internal.IntList unk2800NNBFCEAOEPB_;
+    public static final int FINISH_COLLECTION_ID_LIST_FIELD_NUMBER = 1640;
+    private com.google.protobuf.Internal.IntList finishCollectionIdList_;
     /**
-     * <code>repeated uint32 Unk2800_NNBFCEAOEPB = 1640;</code>
-     * @return A list containing the unk2800NNBFCEAOEPB.
+     * <code>repeated uint32 finish_collection_id_list = 1640;</code>
+     * @return A list containing the finishCollectionIdList.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getUnk2800NNBFCEAOEPBList() {
-      return unk2800NNBFCEAOEPB_;
+        getFinishCollectionIdListList() {
+      return finishCollectionIdList_;
     }
     /**
-     * <code>repeated uint32 Unk2800_NNBFCEAOEPB = 1640;</code>
-     * @return The count of unk2800NNBFCEAOEPB.
+     * <code>repeated uint32 finish_collection_id_list = 1640;</code>
+     * @return The count of finishCollectionIdList.
      */
-    public int getUnk2800NNBFCEAOEPBCount() {
-      return unk2800NNBFCEAOEPB_.size();
+    public int getFinishCollectionIdListCount() {
+      return finishCollectionIdList_.size();
     }
     /**
-     * <code>repeated uint32 Unk2800_NNBFCEAOEPB = 1640;</code>
+     * <code>repeated uint32 finish_collection_id_list = 1640;</code>
      * @param index The index of the element to return.
-     * @return The unk2800NNBFCEAOEPB at the given index.
+     * @return The finishCollectionIdList at the given index.
      */
-    public int getUnk2800NNBFCEAOEPB(int index) {
-      return unk2800NNBFCEAOEPB_.getInt(index);
+    public int getFinishCollectionIdList(int index) {
+      return finishCollectionIdList_.getInt(index);
     }
-    private int unk2800NNBFCEAOEPBMemoizedSerializedSize = -1;
+    private int finishCollectionIdListMemoizedSerializedSize = -1;
 
     public static final int PLATFORM_TYPE_FIELD_NUMBER = 8;
     private int platformType_;
@@ -1182,38 +1181,38 @@ public final class GetPlayerTokenRspOuterClass {
       return isLoginWhiteList_;
     }
 
-    public static final int SEED_SIGNATURE_FIELD_NUMBER = 1140;
-    private volatile java.lang.Object seedSignature_;
+    public static final int SIGN_FIELD_NUMBER = 1140;
+    private volatile java.lang.Object sign_;
     /**
-     * <code>string seed_signature = 1140;</code>
-     * @return The seedSignature.
+     * <code>string sign = 1140;</code>
+     * @return The sign.
      */
     @java.lang.Override
-    public java.lang.String getSeedSignature() {
-      java.lang.Object ref = seedSignature_;
+    public java.lang.String getSign() {
+      java.lang.Object ref = sign_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        seedSignature_ = s;
+        sign_ = s;
         return s;
       }
     }
     /**
-     * <code>string seed_signature = 1140;</code>
-     * @return The bytes for seedSignature.
+     * <code>string sign = 1140;</code>
+     * @return The bytes for sign.
      */
     @java.lang.Override
     public com.google.protobuf.ByteString
-        getSeedSignatureBytes() {
-      java.lang.Object ref = seedSignature_;
+        getSignBytes() {
+      java.lang.Object ref = sign_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        seedSignature_ = b;
+        sign_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -1295,30 +1294,30 @@ public final class GetPlayerTokenRspOuterClass {
       if (regPlatform_ != 0) {
         output.writeUInt32(1112, regPlatform_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(seedSignature_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1140, seedSignature_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(sign_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1140, sign_);
       }
-      if (unk2800BPJOBLNCBEI_ != 0) {
-        output.writeUInt32(1172, unk2800BPJOBLNCBEI_);
+      if (keyId_ != 0) {
+        output.writeUInt32(1172, keyId_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(encryptedSeed_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1493, encryptedSeed_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(serverRandKey_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1493, serverRandKey_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientVersionRandomKey_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1529, clientVersionRandomKey_);
       }
-      if (unk2700NOJPEHIBDJH_ != 0) {
-        output.writeUInt32(1561, unk2700NOJPEHIBDJH_);
+      if (minorsRegMinAge_ != 0) {
+        output.writeUInt32(1561, minorsRegMinAge_);
       }
       if (tag_ != 0) {
         output.writeUInt32(1635, tag_);
       }
-      if (getUnk2800NNBFCEAOEPBList().size() > 0) {
+      if (getFinishCollectionIdListList().size() > 0) {
         output.writeUInt32NoTag(13122);
-        output.writeUInt32NoTag(unk2800NNBFCEAOEPBMemoizedSerializedSize);
+        output.writeUInt32NoTag(finishCollectionIdListMemoizedSerializedSize);
       }
-      for (int i = 0; i < unk2800NNBFCEAOEPB_.size(); i++) {
-        output.writeUInt32NoTag(unk2800NNBFCEAOEPB_.getInt(i));
+      for (int i = 0; i < finishCollectionIdList_.size(); i++) {
+        output.writeUInt32NoTag(finishCollectionIdList_.getInt(i));
       }
       if (subChannelId_ != 0) {
         output.writeUInt32(1802, subChannelId_);
@@ -1329,8 +1328,8 @@ public final class GetPlayerTokenRspOuterClass {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(countryCode_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2013, countryCode_);
       }
-      if (unk2700FLBKPCPGPDH_ != false) {
-        output.writeBool(2028, unk2700FLBKPCPGPDH_);
+      if (isWatchdogUid_ != false) {
+        output.writeBool(2028, isWatchdogUid_);
       }
       unknownFields.writeTo(output);
     }
@@ -1415,22 +1414,22 @@ public final class GetPlayerTokenRspOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(1112, regPlatform_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(seedSignature_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1140, seedSignature_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(sign_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1140, sign_);
       }
-      if (unk2800BPJOBLNCBEI_ != 0) {
+      if (keyId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1172, unk2800BPJOBLNCBEI_);
+          .computeUInt32Size(1172, keyId_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(encryptedSeed_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1493, encryptedSeed_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(serverRandKey_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1493, serverRandKey_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientVersionRandomKey_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1529, clientVersionRandomKey_);
       }
-      if (unk2700NOJPEHIBDJH_ != 0) {
+      if (minorsRegMinAge_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1561, unk2700NOJPEHIBDJH_);
+          .computeUInt32Size(1561, minorsRegMinAge_);
       }
       if (tag_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -1438,17 +1437,17 @@ public final class GetPlayerTokenRspOuterClass {
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < unk2800NNBFCEAOEPB_.size(); i++) {
+        for (int i = 0; i < finishCollectionIdList_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(unk2800NNBFCEAOEPB_.getInt(i));
+            .computeUInt32SizeNoTag(finishCollectionIdList_.getInt(i));
         }
         size += dataSize;
-        if (!getUnk2800NNBFCEAOEPBList().isEmpty()) {
+        if (!getFinishCollectionIdListList().isEmpty()) {
           size += 2;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        unk2800NNBFCEAOEPBMemoizedSerializedSize = dataSize;
+        finishCollectionIdListMemoizedSerializedSize = dataSize;
       }
       if (subChannelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -1460,9 +1459,9 @@ public final class GetPlayerTokenRspOuterClass {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(countryCode_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2013, countryCode_);
       }
-      if (unk2700FLBKPCPGPDH_ != false) {
+      if (isWatchdogUid_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2028, unk2700FLBKPCPGPDH_);
+          .computeBoolSize(2028, isWatchdogUid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1493,8 +1492,8 @@ public final class GetPlayerTokenRspOuterClass {
           .equals(other.getExtraBinData())) return false;
       if (!getSecretKey()
           .equals(other.getSecretKey())) return false;
-      if (getUnk2700NOJPEHIBDJH()
-          != other.getUnk2700NOJPEHIBDJH()) return false;
+      if (getMinorsRegMinAge()
+          != other.getMinorsRegMinAge()) return false;
       if (getBlackUidEndTime()
           != other.getBlackUidEndTime()) return false;
       if (getTag()
@@ -1515,14 +1514,14 @@ public final class GetPlayerTokenRspOuterClass {
           != other.getAccountType()) return false;
       if (getSubChannelId()
           != other.getSubChannelId()) return false;
-      if (getUnk2700FLBKPCPGPDH()
-          != other.getUnk2700FLBKPCPGPDH()) return false;
-      if (!getEncryptedSeed()
-          .equals(other.getEncryptedSeed())) return false;
+      if (getIsWatchdogUid()
+          != other.getIsWatchdogUid()) return false;
+      if (!getServerRandKey()
+          .equals(other.getServerRandKey())) return false;
       if (getIsProficientPlayer()
           != other.getIsProficientPlayer()) return false;
-      if (getUnk2800BPJOBLNCBEI()
-          != other.getUnk2800BPJOBLNCBEI()) return false;
+      if (getKeyId()
+          != other.getKeyId()) return false;
       if (getUid()
           != other.getUid()) return false;
       if (!getAccountUid()
@@ -1531,16 +1530,16 @@ public final class GetPlayerTokenRspOuterClass {
           != other.getIsGuest()) return false;
       if (!getClientVersionRandomKey()
           .equals(other.getClientVersionRandomKey())) return false;
-      if (!getUnk2800NNBFCEAOEPBList()
-          .equals(other.getUnk2800NNBFCEAOEPBList())) return false;
+      if (!getFinishCollectionIdListList()
+          .equals(other.getFinishCollectionIdListList())) return false;
       if (getPlatformType()
           != other.getPlatformType()) return false;
       if (getRegPlatform()
           != other.getRegPlatform()) return false;
       if (getIsLoginWhiteList()
           != other.getIsLoginWhiteList()) return false;
-      if (!getSeedSignature()
-          .equals(other.getSeedSignature())) return false;
+      if (!getSign()
+          .equals(other.getSign())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -1567,8 +1566,8 @@ public final class GetPlayerTokenRspOuterClass {
       hash = (53 * hash) + getExtraBinData().hashCode();
       hash = (37 * hash) + SECRET_KEY_FIELD_NUMBER;
       hash = (53 * hash) + getSecretKey().hashCode();
-      hash = (37 * hash) + UNK2700_NOJPEHIBDJH_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2700NOJPEHIBDJH();
+      hash = (37 * hash) + MINORS_REG_MIN_AGE_FIELD_NUMBER;
+      hash = (53 * hash) + getMinorsRegMinAge();
       hash = (37 * hash) + BLACK_UID_END_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getBlackUidEndTime();
       hash = (37 * hash) + TAG_FIELD_NUMBER;
@@ -1589,16 +1588,16 @@ public final class GetPlayerTokenRspOuterClass {
       hash = (53 * hash) + getAccountType();
       hash = (37 * hash) + SUB_CHANNEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getSubChannelId();
-      hash = (37 * hash) + UNK2700_FLBKPCPGPDH_FIELD_NUMBER;
+      hash = (37 * hash) + IS_WATCHDOG_UID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk2700FLBKPCPGPDH());
-      hash = (37 * hash) + ENCRYPTED_SEED_FIELD_NUMBER;
-      hash = (53 * hash) + getEncryptedSeed().hashCode();
+          getIsWatchdogUid());
+      hash = (37 * hash) + SERVER_RAND_KEY_FIELD_NUMBER;
+      hash = (53 * hash) + getServerRandKey().hashCode();
       hash = (37 * hash) + IS_PROFICIENT_PLAYER_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsProficientPlayer());
-      hash = (37 * hash) + UNK2800_BPJOBLNCBEI_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2800BPJOBLNCBEI();
+      hash = (37 * hash) + KEY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getKeyId();
       hash = (37 * hash) + UID_FIELD_NUMBER;
       hash = (53 * hash) + getUid();
       hash = (37 * hash) + ACCOUNT_UID_FIELD_NUMBER;
@@ -1608,9 +1607,9 @@ public final class GetPlayerTokenRspOuterClass {
           getIsGuest());
       hash = (37 * hash) + CLIENT_VERSION_RANDOM_KEY_FIELD_NUMBER;
       hash = (53 * hash) + getClientVersionRandomKey().hashCode();
-      if (getUnk2800NNBFCEAOEPBCount() > 0) {
-        hash = (37 * hash) + UNK2800_NNBFCEAOEPB_FIELD_NUMBER;
-        hash = (53 * hash) + getUnk2800NNBFCEAOEPBList().hashCode();
+      if (getFinishCollectionIdListCount() > 0) {
+        hash = (37 * hash) + FINISH_COLLECTION_ID_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getFinishCollectionIdListList().hashCode();
       }
       hash = (37 * hash) + PLATFORM_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getPlatformType();
@@ -1619,8 +1618,8 @@ public final class GetPlayerTokenRspOuterClass {
       hash = (37 * hash) + IS_LOGIN_WHITE_LIST_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsLoginWhiteList());
-      hash = (37 * hash) + SEED_SIGNATURE_FIELD_NUMBER;
-      hash = (53 * hash) + getSeedSignature().hashCode();
+      hash = (37 * hash) + SIGN_FIELD_NUMBER;
+      hash = (53 * hash) + getSign().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -1720,8 +1719,7 @@ public final class GetPlayerTokenRspOuterClass {
      * <pre>
      * CmdId: 198
      * EnetChannelId: 0
-     * EnetIsReliable: false
-     * IsAllowClient: true
+     * EnetIsReliable: true
      * </pre>
      *
      * Protobuf type {@code GetPlayerTokenRsp}
@@ -1775,7 +1773,7 @@ public final class GetPlayerTokenRspOuterClass {
 
         secretKey_ = "";
 
-        unk2700NOJPEHIBDJH_ = 0;
+        minorsRegMinAge_ = 0;
 
         blackUidEndTime_ = 0;
 
@@ -1797,13 +1795,13 @@ public final class GetPlayerTokenRspOuterClass {
 
         subChannelId_ = 0;
 
-        unk2700FLBKPCPGPDH_ = false;
+        isWatchdogUid_ = false;
 
-        encryptedSeed_ = "";
+        serverRandKey_ = "";
 
         isProficientPlayer_ = false;
 
-        unk2800BPJOBLNCBEI_ = 0;
+        keyId_ = 0;
 
         uid_ = 0;
 
@@ -1813,7 +1811,7 @@ public final class GetPlayerTokenRspOuterClass {
 
         clientVersionRandomKey_ = "";
 
-        unk2800NNBFCEAOEPB_ = emptyIntList();
+        finishCollectionIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         platformType_ = 0;
 
@@ -1821,7 +1819,7 @@ public final class GetPlayerTokenRspOuterClass {
 
         isLoginWhiteList_ = false;
 
-        seedSignature_ = "";
+        sign_ = "";
 
         return this;
       }
@@ -1857,7 +1855,7 @@ public final class GetPlayerTokenRspOuterClass {
         result.countryCode_ = countryCode_;
         result.extraBinData_ = extraBinData_;
         result.secretKey_ = secretKey_;
-        result.unk2700NOJPEHIBDJH_ = unk2700NOJPEHIBDJH_;
+        result.minorsRegMinAge_ = minorsRegMinAge_;
         result.blackUidEndTime_ = blackUidEndTime_;
         result.tag_ = tag_;
         result.token_ = token_;
@@ -1868,23 +1866,23 @@ public final class GetPlayerTokenRspOuterClass {
         result.msg_ = msg_;
         result.accountType_ = accountType_;
         result.subChannelId_ = subChannelId_;
-        result.unk2700FLBKPCPGPDH_ = unk2700FLBKPCPGPDH_;
-        result.encryptedSeed_ = encryptedSeed_;
+        result.isWatchdogUid_ = isWatchdogUid_;
+        result.serverRandKey_ = serverRandKey_;
         result.isProficientPlayer_ = isProficientPlayer_;
-        result.unk2800BPJOBLNCBEI_ = unk2800BPJOBLNCBEI_;
+        result.keyId_ = keyId_;
         result.uid_ = uid_;
         result.accountUid_ = accountUid_;
         result.isGuest_ = isGuest_;
         result.clientVersionRandomKey_ = clientVersionRandomKey_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          unk2800NNBFCEAOEPB_.makeImmutable();
+          finishCollectionIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.unk2800NNBFCEAOEPB_ = unk2800NNBFCEAOEPB_;
+        result.finishCollectionIdList_ = finishCollectionIdList_;
         result.platformType_ = platformType_;
         result.regPlatform_ = regPlatform_;
         result.isLoginWhiteList_ = isLoginWhiteList_;
-        result.seedSignature_ = seedSignature_;
+        result.sign_ = sign_;
         onBuilt();
         return result;
       }
@@ -1957,8 +1955,8 @@ public final class GetPlayerTokenRspOuterClass {
           secretKey_ = other.secretKey_;
           onChanged();
         }
-        if (other.getUnk2700NOJPEHIBDJH() != 0) {
-          setUnk2700NOJPEHIBDJH(other.getUnk2700NOJPEHIBDJH());
+        if (other.getMinorsRegMinAge() != 0) {
+          setMinorsRegMinAge(other.getMinorsRegMinAge());
         }
         if (other.getBlackUidEndTime() != 0) {
           setBlackUidEndTime(other.getBlackUidEndTime());
@@ -1994,18 +1992,18 @@ public final class GetPlayerTokenRspOuterClass {
         if (other.getSubChannelId() != 0) {
           setSubChannelId(other.getSubChannelId());
         }
-        if (other.getUnk2700FLBKPCPGPDH() != false) {
-          setUnk2700FLBKPCPGPDH(other.getUnk2700FLBKPCPGPDH());
+        if (other.getIsWatchdogUid() != false) {
+          setIsWatchdogUid(other.getIsWatchdogUid());
         }
-        if (!other.getEncryptedSeed().isEmpty()) {
-          encryptedSeed_ = other.encryptedSeed_;
+        if (!other.getServerRandKey().isEmpty()) {
+          serverRandKey_ = other.serverRandKey_;
           onChanged();
         }
         if (other.getIsProficientPlayer() != false) {
           setIsProficientPlayer(other.getIsProficientPlayer());
         }
-        if (other.getUnk2800BPJOBLNCBEI() != 0) {
-          setUnk2800BPJOBLNCBEI(other.getUnk2800BPJOBLNCBEI());
+        if (other.getKeyId() != 0) {
+          setKeyId(other.getKeyId());
         }
         if (other.getUid() != 0) {
           setUid(other.getUid());
@@ -2021,13 +2019,13 @@ public final class GetPlayerTokenRspOuterClass {
           clientVersionRandomKey_ = other.clientVersionRandomKey_;
           onChanged();
         }
-        if (!other.unk2800NNBFCEAOEPB_.isEmpty()) {
-          if (unk2800NNBFCEAOEPB_.isEmpty()) {
-            unk2800NNBFCEAOEPB_ = other.unk2800NNBFCEAOEPB_;
+        if (!other.finishCollectionIdList_.isEmpty()) {
+          if (finishCollectionIdList_.isEmpty()) {
+            finishCollectionIdList_ = other.finishCollectionIdList_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureUnk2800NNBFCEAOEPBIsMutable();
-            unk2800NNBFCEAOEPB_.addAll(other.unk2800NNBFCEAOEPB_);
+            ensureFinishCollectionIdListIsMutable();
+            finishCollectionIdList_.addAll(other.finishCollectionIdList_);
           }
           onChanged();
         }
@@ -2040,8 +2038,8 @@ public final class GetPlayerTokenRspOuterClass {
         if (other.getIsLoginWhiteList() != false) {
           setIsLoginWhiteList(other.getIsLoginWhiteList());
         }
-        if (!other.getSeedSignature().isEmpty()) {
-          seedSignature_ = other.seedSignature_;
+        if (!other.getSign().isEmpty()) {
+          sign_ = other.sign_;
           onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
@@ -2432,33 +2430,33 @@ public final class GetPlayerTokenRspOuterClass {
         return this;
       }
 
-      private int unk2700NOJPEHIBDJH_ ;
+      private int minorsRegMinAge_ ;
       /**
-       * <code>uint32 Unk2700_NOJPEHIBDJH = 1561;</code>
-       * @return The unk2700NOJPEHIBDJH.
+       * <code>uint32 minors_reg_min_age = 1561;</code>
+       * @return The minorsRegMinAge.
        */
       @java.lang.Override
-      public int getUnk2700NOJPEHIBDJH() {
-        return unk2700NOJPEHIBDJH_;
+      public int getMinorsRegMinAge() {
+        return minorsRegMinAge_;
       }
       /**
-       * <code>uint32 Unk2700_NOJPEHIBDJH = 1561;</code>
-       * @param value The unk2700NOJPEHIBDJH to set.
+       * <code>uint32 minors_reg_min_age = 1561;</code>
+       * @param value The minorsRegMinAge to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700NOJPEHIBDJH(int value) {
+      public Builder setMinorsRegMinAge(int value) {
         
-        unk2700NOJPEHIBDJH_ = value;
+        minorsRegMinAge_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk2700_NOJPEHIBDJH = 1561;</code>
+       * <code>uint32 minors_reg_min_age = 1561;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700NOJPEHIBDJH() {
+      public Builder clearMinorsRegMinAge() {
         
-        unk2700NOJPEHIBDJH_ = 0;
+        minorsRegMinAge_ = 0;
         onChanged();
         return this;
       }
@@ -2953,109 +2951,109 @@ public final class GetPlayerTokenRspOuterClass {
         return this;
       }
 
-      private boolean unk2700FLBKPCPGPDH_ ;
+      private boolean isWatchdogUid_ ;
       /**
-       * <code>bool Unk2700_FLBKPCPGPDH = 2028;</code>
-       * @return The unk2700FLBKPCPGPDH.
+       * <code>bool is_watchdog_uid = 2028;</code>
+       * @return The isWatchdogUid.
        */
       @java.lang.Override
-      public boolean getUnk2700FLBKPCPGPDH() {
-        return unk2700FLBKPCPGPDH_;
+      public boolean getIsWatchdogUid() {
+        return isWatchdogUid_;
       }
       /**
-       * <code>bool Unk2700_FLBKPCPGPDH = 2028;</code>
-       * @param value The unk2700FLBKPCPGPDH to set.
+       * <code>bool is_watchdog_uid = 2028;</code>
+       * @param value The isWatchdogUid to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700FLBKPCPGPDH(boolean value) {
+      public Builder setIsWatchdogUid(boolean value) {
         
-        unk2700FLBKPCPGPDH_ = value;
+        isWatchdogUid_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk2700_FLBKPCPGPDH = 2028;</code>
+       * <code>bool is_watchdog_uid = 2028;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700FLBKPCPGPDH() {
+      public Builder clearIsWatchdogUid() {
         
-        unk2700FLBKPCPGPDH_ = false;
+        isWatchdogUid_ = false;
         onChanged();
         return this;
       }
 
-      private java.lang.Object encryptedSeed_ = "";
+      private java.lang.Object serverRandKey_ = "";
       /**
-       * <code>string encrypted_seed = 1493;</code>
-       * @return The encryptedSeed.
+       * <code>string server_rand_key = 1493;</code>
+       * @return The serverRandKey.
        */
-      public java.lang.String getEncryptedSeed() {
-        java.lang.Object ref = encryptedSeed_;
+      public java.lang.String getServerRandKey() {
+        java.lang.Object ref = serverRandKey_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          encryptedSeed_ = s;
+          serverRandKey_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string encrypted_seed = 1493;</code>
-       * @return The bytes for encryptedSeed.
+       * <code>string server_rand_key = 1493;</code>
+       * @return The bytes for serverRandKey.
        */
       public com.google.protobuf.ByteString
-          getEncryptedSeedBytes() {
-        java.lang.Object ref = encryptedSeed_;
+          getServerRandKeyBytes() {
+        java.lang.Object ref = serverRandKey_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          encryptedSeed_ = b;
+          serverRandKey_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string encrypted_seed = 1493;</code>
-       * @param value The encryptedSeed to set.
+       * <code>string server_rand_key = 1493;</code>
+       * @param value The serverRandKey to set.
        * @return This builder for chaining.
        */
-      public Builder setEncryptedSeed(
+      public Builder setServerRandKey(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        encryptedSeed_ = value;
+        serverRandKey_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string encrypted_seed = 1493;</code>
+       * <code>string server_rand_key = 1493;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEncryptedSeed() {
+      public Builder clearServerRandKey() {
         
-        encryptedSeed_ = getDefaultInstance().getEncryptedSeed();
+        serverRandKey_ = getDefaultInstance().getServerRandKey();
         onChanged();
         return this;
       }
       /**
-       * <code>string encrypted_seed = 1493;</code>
-       * @param value The bytes for encryptedSeed to set.
+       * <code>string server_rand_key = 1493;</code>
+       * @param value The bytes for serverRandKey to set.
        * @return This builder for chaining.
        */
-      public Builder setEncryptedSeedBytes(
+      public Builder setServerRandKeyBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        encryptedSeed_ = value;
+        serverRandKey_ = value;
         onChanged();
         return this;
       }
@@ -3091,33 +3089,33 @@ public final class GetPlayerTokenRspOuterClass {
         return this;
       }
 
-      private int unk2800BPJOBLNCBEI_ ;
+      private int keyId_ ;
       /**
-       * <code>uint32 Unk2800_BPJOBLNCBEI = 1172;</code>
-       * @return The unk2800BPJOBLNCBEI.
+       * <code>uint32 key_id = 1172;</code>
+       * @return The keyId.
        */
       @java.lang.Override
-      public int getUnk2800BPJOBLNCBEI() {
-        return unk2800BPJOBLNCBEI_;
+      public int getKeyId() {
+        return keyId_;
       }
       /**
-       * <code>uint32 Unk2800_BPJOBLNCBEI = 1172;</code>
-       * @param value The unk2800BPJOBLNCBEI to set.
+       * <code>uint32 key_id = 1172;</code>
+       * @param value The keyId to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2800BPJOBLNCBEI(int value) {
+      public Builder setKeyId(int value) {
         
-        unk2800BPJOBLNCBEI_ = value;
+        keyId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk2800_BPJOBLNCBEI = 1172;</code>
+       * <code>uint32 key_id = 1172;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2800BPJOBLNCBEI() {
+      public Builder clearKeyId() {
         
-        unk2800BPJOBLNCBEI_ = 0;
+        keyId_ = 0;
         onChanged();
         return this;
       }
@@ -3336,80 +3334,80 @@ public final class GetPlayerTokenRspOuterClass {
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList unk2800NNBFCEAOEPB_ = emptyIntList();
-      private void ensureUnk2800NNBFCEAOEPBIsMutable() {
+      private com.google.protobuf.Internal.IntList finishCollectionIdList_ = emptyIntList();
+      private void ensureFinishCollectionIdListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          unk2800NNBFCEAOEPB_ = mutableCopy(unk2800NNBFCEAOEPB_);
+          finishCollectionIdList_ = mutableCopy(finishCollectionIdList_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <code>repeated uint32 Unk2800_NNBFCEAOEPB = 1640;</code>
-       * @return A list containing the unk2800NNBFCEAOEPB.
+       * <code>repeated uint32 finish_collection_id_list = 1640;</code>
+       * @return A list containing the finishCollectionIdList.
        */
       public java.util.List<java.lang.Integer>
-          getUnk2800NNBFCEAOEPBList() {
+          getFinishCollectionIdListList() {
         return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(unk2800NNBFCEAOEPB_) : unk2800NNBFCEAOEPB_;
+                 java.util.Collections.unmodifiableList(finishCollectionIdList_) : finishCollectionIdList_;
       }
       /**
-       * <code>repeated uint32 Unk2800_NNBFCEAOEPB = 1640;</code>
-       * @return The count of unk2800NNBFCEAOEPB.
+       * <code>repeated uint32 finish_collection_id_list = 1640;</code>
+       * @return The count of finishCollectionIdList.
        */
-      public int getUnk2800NNBFCEAOEPBCount() {
-        return unk2800NNBFCEAOEPB_.size();
+      public int getFinishCollectionIdListCount() {
+        return finishCollectionIdList_.size();
       }
       /**
-       * <code>repeated uint32 Unk2800_NNBFCEAOEPB = 1640;</code>
+       * <code>repeated uint32 finish_collection_id_list = 1640;</code>
        * @param index The index of the element to return.
-       * @return The unk2800NNBFCEAOEPB at the given index.
+       * @return The finishCollectionIdList at the given index.
        */
-      public int getUnk2800NNBFCEAOEPB(int index) {
-        return unk2800NNBFCEAOEPB_.getInt(index);
+      public int getFinishCollectionIdList(int index) {
+        return finishCollectionIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 Unk2800_NNBFCEAOEPB = 1640;</code>
+       * <code>repeated uint32 finish_collection_id_list = 1640;</code>
        * @param index The index to set the value at.
-       * @param value The unk2800NNBFCEAOEPB to set.
+       * @param value The finishCollectionIdList to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2800NNBFCEAOEPB(
+      public Builder setFinishCollectionIdList(
           int index, int value) {
-        ensureUnk2800NNBFCEAOEPBIsMutable();
-        unk2800NNBFCEAOEPB_.setInt(index, value);
+        ensureFinishCollectionIdListIsMutable();
+        finishCollectionIdList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 Unk2800_NNBFCEAOEPB = 1640;</code>
-       * @param value The unk2800NNBFCEAOEPB to add.
+       * <code>repeated uint32 finish_collection_id_list = 1640;</code>
+       * @param value The finishCollectionIdList to add.
        * @return This builder for chaining.
        */
-      public Builder addUnk2800NNBFCEAOEPB(int value) {
-        ensureUnk2800NNBFCEAOEPBIsMutable();
-        unk2800NNBFCEAOEPB_.addInt(value);
+      public Builder addFinishCollectionIdList(int value) {
+        ensureFinishCollectionIdListIsMutable();
+        finishCollectionIdList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 Unk2800_NNBFCEAOEPB = 1640;</code>
-       * @param values The unk2800NNBFCEAOEPB to add.
+       * <code>repeated uint32 finish_collection_id_list = 1640;</code>
+       * @param values The finishCollectionIdList to add.
        * @return This builder for chaining.
        */
-      public Builder addAllUnk2800NNBFCEAOEPB(
+      public Builder addAllFinishCollectionIdList(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureUnk2800NNBFCEAOEPBIsMutable();
+        ensureFinishCollectionIdListIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, unk2800NNBFCEAOEPB_);
+            values, finishCollectionIdList_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 Unk2800_NNBFCEAOEPB = 1640;</code>
+       * <code>repeated uint32 finish_collection_id_list = 1640;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2800NNBFCEAOEPB() {
-        unk2800NNBFCEAOEPB_ = emptyIntList();
+      public Builder clearFinishCollectionIdList() {
+        finishCollectionIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
@@ -3508,78 +3506,78 @@ public final class GetPlayerTokenRspOuterClass {
         return this;
       }
 
-      private java.lang.Object seedSignature_ = "";
+      private java.lang.Object sign_ = "";
       /**
-       * <code>string seed_signature = 1140;</code>
-       * @return The seedSignature.
+       * <code>string sign = 1140;</code>
+       * @return The sign.
        */
-      public java.lang.String getSeedSignature() {
-        java.lang.Object ref = seedSignature_;
+      public java.lang.String getSign() {
+        java.lang.Object ref = sign_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          seedSignature_ = s;
+          sign_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string seed_signature = 1140;</code>
-       * @return The bytes for seedSignature.
+       * <code>string sign = 1140;</code>
+       * @return The bytes for sign.
        */
       public com.google.protobuf.ByteString
-          getSeedSignatureBytes() {
-        java.lang.Object ref = seedSignature_;
+          getSignBytes() {
+        java.lang.Object ref = sign_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          seedSignature_ = b;
+          sign_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string seed_signature = 1140;</code>
-       * @param value The seedSignature to set.
+       * <code>string sign = 1140;</code>
+       * @param value The sign to set.
        * @return This builder for chaining.
        */
-      public Builder setSeedSignature(
+      public Builder setSign(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        seedSignature_ = value;
+        sign_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string seed_signature = 1140;</code>
+       * <code>string sign = 1140;</code>
        * @return This builder for chaining.
        */
-      public Builder clearSeedSignature() {
+      public Builder clearSign() {
         
-        seedSignature_ = getDefaultInstance().getSeedSignature();
+        sign_ = getDefaultInstance().getSign();
         onChanged();
         return this;
       }
       /**
-       * <code>string seed_signature = 1140;</code>
-       * @param value The bytes for seedSignature to set.
+       * <code>string sign = 1140;</code>
+       * @param value The bytes for sign to set.
        * @return This builder for chaining.
        */
-      public Builder setSeedSignatureBytes(
+      public Builder setSignBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        seedSignature_ = value;
+        sign_ = value;
         onChanged();
         return this;
       }
@@ -3650,26 +3648,26 @@ public final class GetPlayerTokenRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\027GetPlayerTokenRsp.proto\"\337\005\n\021GetPlayerT" +
+      "\n\027GetPlayerTokenRsp.proto\"\312\005\n\021GetPlayerT" +
       "okenRsp\022\021\n\010birthday\030\251\007 \001(\t\022\017\n\007retcode\030\002 " +
       "\001(\005\022\033\n\023security_cmd_buffer\030\006 \001(\014\022\027\n\017secr" +
       "et_key_seed\030\r \001(\004\022\025\n\014country_code\030\335\017 \001(\t" +
       "\022\026\n\016extra_bin_data\030\003 \001(\014\022\022\n\nsecret_key\030\017" +
-      " \001(\t\022\034\n\023Unk2700_NOJPEHIBDJH\030\231\014 \001(\r\022\032\n\022bl" +
-      "ack_uid_end_time\030\016 \001(\r\022\014\n\003tag\030\343\014 \001(\r\022\r\n\005" +
-      "token\030\013 \001(\t\022\016\n\006gm_uid\030\n \001(\r\022\023\n\nchannel_i" +
-      "d\030\200\007 \001(\r\022\017\n\006psn_id\030\223\016 \001(\t\022\026\n\rclient_ip_s" +
-      "tr\030\334\006 \001(\t\022\013\n\003msg\030\007 \001(\t\022\024\n\014account_type\030\005" +
-      " \001(\r\022\027\n\016sub_channel_id\030\212\016 \001(\r\022\034\n\023Unk2700" +
-      "_FLBKPCPGPDH\030\354\017 \001(\010\022\027\n\016encrypted_seed\030\325\013" +
-      " \001(\t\022\034\n\024is_proficient_player\030\t \001(\010\022\034\n\023Un" +
-      "k2800_BPJOBLNCBEI\030\224\t \001(\r\022\013\n\003uid\030\001 \001(\r\022\023\n" +
-      "\013account_uid\030\014 \001(\t\022\020\n\010is_guest\030\004 \001(\010\022\"\n\031" +
-      "client_version_random_key\030\371\013 \001(\t\022\034\n\023Unk2" +
-      "800_NNBFCEAOEPB\030\350\014 \003(\r\022\025\n\rplatform_type\030" +
-      "\010 \001(\r\022\025\n\014reg_platform\030\330\010 \001(\r\022\034\n\023is_login" +
-      "_white_list\030\275\004 \001(\010\022\027\n\016seed_signature\030\364\010 " +
-      "\001(\tB\033\n\031emu.grasscutter.net.protob\006proto3"
+      " \001(\t\022\033\n\022minors_reg_min_age\030\231\014 \001(\r\022\032\n\022bla" +
+      "ck_uid_end_time\030\016 \001(\r\022\014\n\003tag\030\343\014 \001(\r\022\r\n\005t" +
+      "oken\030\013 \001(\t\022\016\n\006gm_uid\030\n \001(\r\022\023\n\nchannel_id" +
+      "\030\200\007 \001(\r\022\017\n\006psn_id\030\223\016 \001(\t\022\026\n\rclient_ip_st" +
+      "r\030\334\006 \001(\t\022\013\n\003msg\030\007 \001(\t\022\024\n\014account_type\030\005 " +
+      "\001(\r\022\027\n\016sub_channel_id\030\212\016 \001(\r\022\030\n\017is_watch" +
+      "dog_uid\030\354\017 \001(\010\022\030\n\017server_rand_key\030\325\013 \001(\t" +
+      "\022\034\n\024is_proficient_player\030\t \001(\010\022\017\n\006key_id" +
+      "\030\224\t \001(\r\022\013\n\003uid\030\001 \001(\r\022\023\n\013account_uid\030\014 \001(" +
+      "\t\022\020\n\010is_guest\030\004 \001(\010\022\"\n\031client_version_ra" +
+      "ndom_key\030\371\013 \001(\t\022\"\n\031finish_collection_id_" +
+      "list\030\350\014 \003(\r\022\025\n\rplatform_type\030\010 \001(\r\022\025\n\014re" +
+      "g_platform\030\330\010 \001(\r\022\034\n\023is_login_white_list" +
+      "\030\275\004 \001(\010\022\r\n\004sign\030\364\010 \001(\tB\033\n\031emu.grasscutte" +
+      "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -3680,7 +3678,7 @@ public final class GetPlayerTokenRspOuterClass {
     internal_static_GetPlayerTokenRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetPlayerTokenRsp_descriptor,
-        new java.lang.String[] { "Birthday", "Retcode", "SecurityCmdBuffer", "SecretKeySeed", "CountryCode", "ExtraBinData", "SecretKey", "Unk2700NOJPEHIBDJH", "BlackUidEndTime", "Tag", "Token", "GmUid", "ChannelId", "PsnId", "ClientIpStr", "Msg", "AccountType", "SubChannelId", "Unk2700FLBKPCPGPDH", "EncryptedSeed", "IsProficientPlayer", "Unk2800BPJOBLNCBEI", "Uid", "AccountUid", "IsGuest", "ClientVersionRandomKey", "Unk2800NNBFCEAOEPB", "PlatformType", "RegPlatform", "IsLoginWhiteList", "SeedSignature", });
+        new java.lang.String[] { "Birthday", "Retcode", "SecurityCmdBuffer", "SecretKeySeed", "CountryCode", "ExtraBinData", "SecretKey", "MinorsRegMinAge", "BlackUidEndTime", "Tag", "Token", "GmUid", "ChannelId", "PsnId", "ClientIpStr", "Msg", "AccountType", "SubChannelId", "IsWatchdogUid", "ServerRandKey", "IsProficientPlayer", "KeyId", "Uid", "AccountUid", "IsGuest", "ClientVersionRandomKey", "FinishCollectionIdList", "PlatformType", "RegPlatform", "IsLoginWhiteList", "Sign", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

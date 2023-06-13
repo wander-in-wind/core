@@ -76,8 +76,7 @@ public final class TakeBattlePassRewardRspOuterClass {
    * <pre>
    * CmdId: 2631
    * EnetChannelId: 0
-   * EnetIsReliable: false
-   * IsAllowClient: true
+   * EnetIsReliable: true
    * </pre>
    *
    * Protobuf type {@code TakeBattlePassRewardRsp}
@@ -464,8 +463,7 @@ public final class TakeBattlePassRewardRspOuterClass {
      * <pre>
      * CmdId: 2631
      * EnetChannelId: 0
-     * EnetIsReliable: false
-     * IsAllowClient: true
+     * EnetIsReliable: true
      * </pre>
      *
      * Protobuf type {@code TakeBattlePassRewardRsp}

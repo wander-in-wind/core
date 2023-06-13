@@ -82,27 +82,27 @@ public final class ParentQuestOuterClass {
     boolean getIsFinished();
 
     /**
-     * <code>repeated .Unk3000_ENLDIHLGNCK Unk3000_HLPGILIGGCB = 15;</code>
+     * <code>repeated .InferencePageInfo inference_page_list = 15;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCK> 
-        getUnk3000HLPGILIGGCBList();
+    java.util.List<emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfo> 
+        getInferencePageListList();
     /**
-     * <code>repeated .Unk3000_ENLDIHLGNCK Unk3000_HLPGILIGGCB = 15;</code>
+     * <code>repeated .InferencePageInfo inference_page_list = 15;</code>
      */
-    emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCK getUnk3000HLPGILIGGCB(int index);
+    emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfo getInferencePageList(int index);
     /**
-     * <code>repeated .Unk3000_ENLDIHLGNCK Unk3000_HLPGILIGGCB = 15;</code>
+     * <code>repeated .InferencePageInfo inference_page_list = 15;</code>
      */
-    int getUnk3000HLPGILIGGCBCount();
+    int getInferencePageListCount();
     /**
-     * <code>repeated .Unk3000_ENLDIHLGNCK Unk3000_HLPGILIGGCB = 15;</code>
+     * <code>repeated .InferencePageInfo inference_page_list = 15;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCKOrBuilder> 
-        getUnk3000HLPGILIGGCBOrBuilderList();
+    java.util.List<? extends emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfoOrBuilder> 
+        getInferencePageListOrBuilderList();
     /**
-     * <code>repeated .Unk3000_ENLDIHLGNCK Unk3000_HLPGILIGGCB = 15;</code>
+     * <code>repeated .InferencePageInfo inference_page_list = 15;</code>
      */
-    emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCKOrBuilder getUnk3000HLPGILIGGCBOrBuilder(
+    emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfoOrBuilder getInferencePageListOrBuilder(
         int index);
 
     /**
@@ -133,10 +133,10 @@ public final class ParentQuestOuterClass {
     boolean getIsRandom();
 
     /**
-     * <code>uint64 cutscene_encryption_key = 6;</code>
-     * @return The cutsceneEncryptionKey.
+     * <code>uint64 video_key = 6;</code>
+     * @return The videoKey.
      */
-    long getCutsceneEncryptionKey();
+    long getVideoKey();
 
     /**
      * <code>uint32 quest_var_seq = 11;</code>
@@ -182,7 +182,7 @@ public final class ParentQuestOuterClass {
     }
     private ParentQuest() {
       questVar_ = emptyIntList();
-      unk3000HLPGILIGGCB_ = java.util.Collections.emptyList();
+      inferencePageList_ = java.util.Collections.emptyList();
       childQuestList_ = java.util.Collections.emptyList();
     }
 
@@ -229,7 +229,7 @@ public final class ParentQuestOuterClass {
             }
             case 48: {
 
-              cutsceneEncryptionKey_ = input.readUInt64();
+              videoKey_ = input.readUInt64();
               break;
             }
             case 56: {
@@ -305,11 +305,11 @@ public final class ParentQuestOuterClass {
             }
             case 122: {
               if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                unk3000HLPGILIGGCB_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCK>();
+                inferencePageList_ = new java.util.ArrayList<emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfo>();
                 mutable_bitField0_ |= 0x00000004;
               }
-              unk3000HLPGILIGGCB_.add(
-                  input.readMessage(emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCK.parser(), extensionRegistry));
+              inferencePageList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfo.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -334,7 +334,7 @@ public final class ParentQuestOuterClass {
           questVar_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          unk3000HLPGILIGGCB_ = java.util.Collections.unmodifiableList(unk3000HLPGILIGGCB_);
+          inferencePageList_ = java.util.Collections.unmodifiableList(inferencePageList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -496,44 +496,44 @@ public final class ParentQuestOuterClass {
       return isFinished_;
     }
 
-    public static final int UNK3000_HLPGILIGGCB_FIELD_NUMBER = 15;
-    private java.util.List<emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCK> unk3000HLPGILIGGCB_;
+    public static final int INFERENCE_PAGE_LIST_FIELD_NUMBER = 15;
+    private java.util.List<emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfo> inferencePageList_;
     /**
-     * <code>repeated .Unk3000_ENLDIHLGNCK Unk3000_HLPGILIGGCB = 15;</code>
+     * <code>repeated .InferencePageInfo inference_page_list = 15;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCK> getUnk3000HLPGILIGGCBList() {
-      return unk3000HLPGILIGGCB_;
+    public java.util.List<emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfo> getInferencePageListList() {
+      return inferencePageList_;
     }
     /**
-     * <code>repeated .Unk3000_ENLDIHLGNCK Unk3000_HLPGILIGGCB = 15;</code>
+     * <code>repeated .InferencePageInfo inference_page_list = 15;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCKOrBuilder> 
-        getUnk3000HLPGILIGGCBOrBuilderList() {
-      return unk3000HLPGILIGGCB_;
+    public java.util.List<? extends emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfoOrBuilder> 
+        getInferencePageListOrBuilderList() {
+      return inferencePageList_;
     }
     /**
-     * <code>repeated .Unk3000_ENLDIHLGNCK Unk3000_HLPGILIGGCB = 15;</code>
+     * <code>repeated .InferencePageInfo inference_page_list = 15;</code>
      */
     @java.lang.Override
-    public int getUnk3000HLPGILIGGCBCount() {
-      return unk3000HLPGILIGGCB_.size();
+    public int getInferencePageListCount() {
+      return inferencePageList_.size();
     }
     /**
-     * <code>repeated .Unk3000_ENLDIHLGNCK Unk3000_HLPGILIGGCB = 15;</code>
+     * <code>repeated .InferencePageInfo inference_page_list = 15;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCK getUnk3000HLPGILIGGCB(int index) {
-      return unk3000HLPGILIGGCB_.get(index);
+    public emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfo getInferencePageList(int index) {
+      return inferencePageList_.get(index);
     }
     /**
-     * <code>repeated .Unk3000_ENLDIHLGNCK Unk3000_HLPGILIGGCB = 15;</code>
+     * <code>repeated .InferencePageInfo inference_page_list = 15;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCKOrBuilder getUnk3000HLPGILIGGCBOrBuilder(
+    public emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfoOrBuilder getInferencePageListOrBuilder(
         int index) {
-      return unk3000HLPGILIGGCB_.get(index);
+      return inferencePageList_.get(index);
     }
 
     public static final int RANDOM_INFO_FIELD_NUMBER = 12;
@@ -584,15 +584,15 @@ public final class ParentQuestOuterClass {
       return isRandom_;
     }
 
-    public static final int CUTSCENE_ENCRYPTION_KEY_FIELD_NUMBER = 6;
-    private long cutsceneEncryptionKey_;
+    public static final int VIDEO_KEY_FIELD_NUMBER = 6;
+    private long videoKey_;
     /**
-     * <code>uint64 cutscene_encryption_key = 6;</code>
-     * @return The cutsceneEncryptionKey.
+     * <code>uint64 video_key = 6;</code>
+     * @return The videoKey.
      */
     @java.lang.Override
-    public long getCutsceneEncryptionKey() {
-      return cutsceneEncryptionKey_;
+    public long getVideoKey() {
+      return videoKey_;
     }
 
     public static final int QUEST_VAR_SEQ_FIELD_NUMBER = 11;
@@ -667,8 +667,8 @@ public final class ParentQuestOuterClass {
       if (parentQuestId_ != 0) {
         output.writeUInt32(3, parentQuestId_);
       }
-      if (cutsceneEncryptionKey_ != 0L) {
-        output.writeUInt64(6, cutsceneEncryptionKey_);
+      if (videoKey_ != 0L) {
+        output.writeUInt64(6, videoKey_);
       }
       if (isFinished_ != false) {
         output.writeBool(7, isFinished_);
@@ -698,8 +698,8 @@ public final class ParentQuestOuterClass {
       for (int i = 0; i < questVar_.size(); i++) {
         output.writeInt32NoTag(questVar_.getInt(i));
       }
-      for (int i = 0; i < unk3000HLPGILIGGCB_.size(); i++) {
-        output.writeMessage(15, unk3000HLPGILIGGCB_.get(i));
+      for (int i = 0; i < inferencePageList_.size(); i++) {
+        output.writeMessage(15, inferencePageList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -718,9 +718,9 @@ public final class ParentQuestOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(3, parentQuestId_);
       }
-      if (cutsceneEncryptionKey_ != 0L) {
+      if (videoKey_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(6, cutsceneEncryptionKey_);
+          .computeUInt64Size(6, videoKey_);
       }
       if (isFinished_ != false) {
         size += com.google.protobuf.CodedOutputStream
@@ -766,9 +766,9 @@ public final class ParentQuestOuterClass {
         }
         questVarMemoizedSerializedSize = dataSize;
       }
-      for (int i = 0; i < unk3000HLPGILIGGCB_.size(); i++) {
+      for (int i = 0; i < inferencePageList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, unk3000HLPGILIGGCB_.get(i));
+          .computeMessageSize(15, inferencePageList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -793,8 +793,8 @@ public final class ParentQuestOuterClass {
           != other.getParentQuestState()) return false;
       if (getIsFinished()
           != other.getIsFinished()) return false;
-      if (!getUnk3000HLPGILIGGCBList()
-          .equals(other.getUnk3000HLPGILIGGCBList())) return false;
+      if (!getInferencePageListList()
+          .equals(other.getInferencePageListList())) return false;
       if (hasRandomInfo() != other.hasRandomInfo()) return false;
       if (hasRandomInfo()) {
         if (!getRandomInfo()
@@ -804,8 +804,8 @@ public final class ParentQuestOuterClass {
           != other.getParentQuestId()) return false;
       if (getIsRandom()
           != other.getIsRandom()) return false;
-      if (getCutsceneEncryptionKey()
-          != other.getCutsceneEncryptionKey()) return false;
+      if (getVideoKey()
+          != other.getVideoKey()) return false;
       if (getQuestVarSeq()
           != other.getQuestVarSeq()) return false;
       if (!getChildQuestListList()
@@ -834,9 +834,9 @@ public final class ParentQuestOuterClass {
       hash = (37 * hash) + IS_FINISHED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsFinished());
-      if (getUnk3000HLPGILIGGCBCount() > 0) {
-        hash = (37 * hash) + UNK3000_HLPGILIGGCB_FIELD_NUMBER;
-        hash = (53 * hash) + getUnk3000HLPGILIGGCBList().hashCode();
+      if (getInferencePageListCount() > 0) {
+        hash = (37 * hash) + INFERENCE_PAGE_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getInferencePageListList().hashCode();
       }
       if (hasRandomInfo()) {
         hash = (37 * hash) + RANDOM_INFO_FIELD_NUMBER;
@@ -847,9 +847,9 @@ public final class ParentQuestOuterClass {
       hash = (37 * hash) + IS_RANDOM_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsRandom());
-      hash = (37 * hash) + CUTSCENE_ENCRYPTION_KEY_FIELD_NUMBER;
+      hash = (37 * hash) + VIDEO_KEY_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getCutsceneEncryptionKey());
+          getVideoKey());
       hash = (37 * hash) + QUEST_VAR_SEQ_FIELD_NUMBER;
       hash = (53 * hash) + getQuestVarSeq();
       if (getChildQuestListCount() > 0) {
@@ -1006,7 +1006,7 @@ public final class ParentQuestOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getUnk3000HLPGILIGGCBFieldBuilder();
+          getInferencePageListFieldBuilder();
           getChildQuestListFieldBuilder();
         }
       }
@@ -1020,11 +1020,11 @@ public final class ParentQuestOuterClass {
 
         isFinished_ = false;
 
-        if (unk3000HLPGILIGGCBBuilder_ == null) {
-          unk3000HLPGILIGGCB_ = java.util.Collections.emptyList();
+        if (inferencePageListBuilder_ == null) {
+          inferencePageList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000004);
         } else {
-          unk3000HLPGILIGGCBBuilder_.clear();
+          inferencePageListBuilder_.clear();
         }
         if (randomInfoBuilder_ == null) {
           randomInfo_ = null;
@@ -1036,7 +1036,7 @@ public final class ParentQuestOuterClass {
 
         isRandom_ = false;
 
-        cutsceneEncryptionKey_ = 0L;
+        videoKey_ = 0L;
 
         questVarSeq_ = 0;
 
@@ -1082,14 +1082,14 @@ public final class ParentQuestOuterClass {
         result.timeVarMap_.makeImmutable();
         result.parentQuestState_ = parentQuestState_;
         result.isFinished_ = isFinished_;
-        if (unk3000HLPGILIGGCBBuilder_ == null) {
+        if (inferencePageListBuilder_ == null) {
           if (((bitField0_ & 0x00000004) != 0)) {
-            unk3000HLPGILIGGCB_ = java.util.Collections.unmodifiableList(unk3000HLPGILIGGCB_);
+            inferencePageList_ = java.util.Collections.unmodifiableList(inferencePageList_);
             bitField0_ = (bitField0_ & ~0x00000004);
           }
-          result.unk3000HLPGILIGGCB_ = unk3000HLPGILIGGCB_;
+          result.inferencePageList_ = inferencePageList_;
         } else {
-          result.unk3000HLPGILIGGCB_ = unk3000HLPGILIGGCBBuilder_.build();
+          result.inferencePageList_ = inferencePageListBuilder_.build();
         }
         if (randomInfoBuilder_ == null) {
           result.randomInfo_ = randomInfo_;
@@ -1098,7 +1098,7 @@ public final class ParentQuestOuterClass {
         }
         result.parentQuestId_ = parentQuestId_;
         result.isRandom_ = isRandom_;
-        result.cutsceneEncryptionKey_ = cutsceneEncryptionKey_;
+        result.videoKey_ = videoKey_;
         result.questVarSeq_ = questVarSeq_;
         if (childQuestListBuilder_ == null) {
           if (((bitField0_ & 0x00000008) != 0)) {
@@ -1175,29 +1175,29 @@ public final class ParentQuestOuterClass {
         if (other.getIsFinished() != false) {
           setIsFinished(other.getIsFinished());
         }
-        if (unk3000HLPGILIGGCBBuilder_ == null) {
-          if (!other.unk3000HLPGILIGGCB_.isEmpty()) {
-            if (unk3000HLPGILIGGCB_.isEmpty()) {
-              unk3000HLPGILIGGCB_ = other.unk3000HLPGILIGGCB_;
+        if (inferencePageListBuilder_ == null) {
+          if (!other.inferencePageList_.isEmpty()) {
+            if (inferencePageList_.isEmpty()) {
+              inferencePageList_ = other.inferencePageList_;
               bitField0_ = (bitField0_ & ~0x00000004);
             } else {
-              ensureUnk3000HLPGILIGGCBIsMutable();
-              unk3000HLPGILIGGCB_.addAll(other.unk3000HLPGILIGGCB_);
+              ensureInferencePageListIsMutable();
+              inferencePageList_.addAll(other.inferencePageList_);
             }
             onChanged();
           }
         } else {
-          if (!other.unk3000HLPGILIGGCB_.isEmpty()) {
-            if (unk3000HLPGILIGGCBBuilder_.isEmpty()) {
-              unk3000HLPGILIGGCBBuilder_.dispose();
-              unk3000HLPGILIGGCBBuilder_ = null;
-              unk3000HLPGILIGGCB_ = other.unk3000HLPGILIGGCB_;
+          if (!other.inferencePageList_.isEmpty()) {
+            if (inferencePageListBuilder_.isEmpty()) {
+              inferencePageListBuilder_.dispose();
+              inferencePageListBuilder_ = null;
+              inferencePageList_ = other.inferencePageList_;
               bitField0_ = (bitField0_ & ~0x00000004);
-              unk3000HLPGILIGGCBBuilder_ = 
+              inferencePageListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getUnk3000HLPGILIGGCBFieldBuilder() : null;
+                   getInferencePageListFieldBuilder() : null;
             } else {
-              unk3000HLPGILIGGCBBuilder_.addAllMessages(other.unk3000HLPGILIGGCB_);
+              inferencePageListBuilder_.addAllMessages(other.inferencePageList_);
             }
           }
         }
@@ -1210,8 +1210,8 @@ public final class ParentQuestOuterClass {
         if (other.getIsRandom() != false) {
           setIsRandom(other.getIsRandom());
         }
-        if (other.getCutsceneEncryptionKey() != 0L) {
-          setCutsceneEncryptionKey(other.getCutsceneEncryptionKey());
+        if (other.getVideoKey() != 0L) {
+          setVideoKey(other.getVideoKey());
         }
         if (other.getQuestVarSeq() != 0) {
           setQuestVarSeq(other.getQuestVarSeq());
@@ -1541,244 +1541,244 @@ public final class ParentQuestOuterClass {
         return this;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCK> unk3000HLPGILIGGCB_ =
+      private java.util.List<emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfo> inferencePageList_ =
         java.util.Collections.emptyList();
-      private void ensureUnk3000HLPGILIGGCBIsMutable() {
+      private void ensureInferencePageListIsMutable() {
         if (!((bitField0_ & 0x00000004) != 0)) {
-          unk3000HLPGILIGGCB_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCK>(unk3000HLPGILIGGCB_);
+          inferencePageList_ = new java.util.ArrayList<emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfo>(inferencePageList_);
           bitField0_ |= 0x00000004;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCK, emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCK.Builder, emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCKOrBuilder> unk3000HLPGILIGGCBBuilder_;
+          emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfo, emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfo.Builder, emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfoOrBuilder> inferencePageListBuilder_;
 
       /**
-       * <code>repeated .Unk3000_ENLDIHLGNCK Unk3000_HLPGILIGGCB = 15;</code>
+       * <code>repeated .InferencePageInfo inference_page_list = 15;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCK> getUnk3000HLPGILIGGCBList() {
-        if (unk3000HLPGILIGGCBBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(unk3000HLPGILIGGCB_);
+      public java.util.List<emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfo> getInferencePageListList() {
+        if (inferencePageListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(inferencePageList_);
         } else {
-          return unk3000HLPGILIGGCBBuilder_.getMessageList();
+          return inferencePageListBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .Unk3000_ENLDIHLGNCK Unk3000_HLPGILIGGCB = 15;</code>
+       * <code>repeated .InferencePageInfo inference_page_list = 15;</code>
        */
-      public int getUnk3000HLPGILIGGCBCount() {
-        if (unk3000HLPGILIGGCBBuilder_ == null) {
-          return unk3000HLPGILIGGCB_.size();
+      public int getInferencePageListCount() {
+        if (inferencePageListBuilder_ == null) {
+          return inferencePageList_.size();
         } else {
-          return unk3000HLPGILIGGCBBuilder_.getCount();
+          return inferencePageListBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .Unk3000_ENLDIHLGNCK Unk3000_HLPGILIGGCB = 15;</code>
+       * <code>repeated .InferencePageInfo inference_page_list = 15;</code>
        */
-      public emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCK getUnk3000HLPGILIGGCB(int index) {
-        if (unk3000HLPGILIGGCBBuilder_ == null) {
-          return unk3000HLPGILIGGCB_.get(index);
+      public emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfo getInferencePageList(int index) {
+        if (inferencePageListBuilder_ == null) {
+          return inferencePageList_.get(index);
         } else {
-          return unk3000HLPGILIGGCBBuilder_.getMessage(index);
+          return inferencePageListBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .Unk3000_ENLDIHLGNCK Unk3000_HLPGILIGGCB = 15;</code>
+       * <code>repeated .InferencePageInfo inference_page_list = 15;</code>
        */
-      public Builder setUnk3000HLPGILIGGCB(
-          int index, emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCK value) {
-        if (unk3000HLPGILIGGCBBuilder_ == null) {
+      public Builder setInferencePageList(
+          int index, emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfo value) {
+        if (inferencePageListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk3000HLPGILIGGCBIsMutable();
-          unk3000HLPGILIGGCB_.set(index, value);
+          ensureInferencePageListIsMutable();
+          inferencePageList_.set(index, value);
           onChanged();
         } else {
-          unk3000HLPGILIGGCBBuilder_.setMessage(index, value);
+          inferencePageListBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk3000_ENLDIHLGNCK Unk3000_HLPGILIGGCB = 15;</code>
+       * <code>repeated .InferencePageInfo inference_page_list = 15;</code>
        */
-      public Builder setUnk3000HLPGILIGGCB(
-          int index, emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCK.Builder builderForValue) {
-        if (unk3000HLPGILIGGCBBuilder_ == null) {
-          ensureUnk3000HLPGILIGGCBIsMutable();
-          unk3000HLPGILIGGCB_.set(index, builderForValue.build());
+      public Builder setInferencePageList(
+          int index, emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfo.Builder builderForValue) {
+        if (inferencePageListBuilder_ == null) {
+          ensureInferencePageListIsMutable();
+          inferencePageList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          unk3000HLPGILIGGCBBuilder_.setMessage(index, builderForValue.build());
+          inferencePageListBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk3000_ENLDIHLGNCK Unk3000_HLPGILIGGCB = 15;</code>
+       * <code>repeated .InferencePageInfo inference_page_list = 15;</code>
        */
-      public Builder addUnk3000HLPGILIGGCB(emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCK value) {
-        if (unk3000HLPGILIGGCBBuilder_ == null) {
+      public Builder addInferencePageList(emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfo value) {
+        if (inferencePageListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk3000HLPGILIGGCBIsMutable();
-          unk3000HLPGILIGGCB_.add(value);
+          ensureInferencePageListIsMutable();
+          inferencePageList_.add(value);
           onChanged();
         } else {
-          unk3000HLPGILIGGCBBuilder_.addMessage(value);
+          inferencePageListBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk3000_ENLDIHLGNCK Unk3000_HLPGILIGGCB = 15;</code>
+       * <code>repeated .InferencePageInfo inference_page_list = 15;</code>
        */
-      public Builder addUnk3000HLPGILIGGCB(
-          int index, emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCK value) {
-        if (unk3000HLPGILIGGCBBuilder_ == null) {
+      public Builder addInferencePageList(
+          int index, emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfo value) {
+        if (inferencePageListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk3000HLPGILIGGCBIsMutable();
-          unk3000HLPGILIGGCB_.add(index, value);
+          ensureInferencePageListIsMutable();
+          inferencePageList_.add(index, value);
           onChanged();
         } else {
-          unk3000HLPGILIGGCBBuilder_.addMessage(index, value);
+          inferencePageListBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk3000_ENLDIHLGNCK Unk3000_HLPGILIGGCB = 15;</code>
+       * <code>repeated .InferencePageInfo inference_page_list = 15;</code>
        */
-      public Builder addUnk3000HLPGILIGGCB(
-          emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCK.Builder builderForValue) {
-        if (unk3000HLPGILIGGCBBuilder_ == null) {
-          ensureUnk3000HLPGILIGGCBIsMutable();
-          unk3000HLPGILIGGCB_.add(builderForValue.build());
+      public Builder addInferencePageList(
+          emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfo.Builder builderForValue) {
+        if (inferencePageListBuilder_ == null) {
+          ensureInferencePageListIsMutable();
+          inferencePageList_.add(builderForValue.build());
           onChanged();
         } else {
-          unk3000HLPGILIGGCBBuilder_.addMessage(builderForValue.build());
+          inferencePageListBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk3000_ENLDIHLGNCK Unk3000_HLPGILIGGCB = 15;</code>
+       * <code>repeated .InferencePageInfo inference_page_list = 15;</code>
        */
-      public Builder addUnk3000HLPGILIGGCB(
-          int index, emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCK.Builder builderForValue) {
-        if (unk3000HLPGILIGGCBBuilder_ == null) {
-          ensureUnk3000HLPGILIGGCBIsMutable();
-          unk3000HLPGILIGGCB_.add(index, builderForValue.build());
+      public Builder addInferencePageList(
+          int index, emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfo.Builder builderForValue) {
+        if (inferencePageListBuilder_ == null) {
+          ensureInferencePageListIsMutable();
+          inferencePageList_.add(index, builderForValue.build());
           onChanged();
         } else {
-          unk3000HLPGILIGGCBBuilder_.addMessage(index, builderForValue.build());
+          inferencePageListBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk3000_ENLDIHLGNCK Unk3000_HLPGILIGGCB = 15;</code>
+       * <code>repeated .InferencePageInfo inference_page_list = 15;</code>
        */
-      public Builder addAllUnk3000HLPGILIGGCB(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCK> values) {
-        if (unk3000HLPGILIGGCBBuilder_ == null) {
-          ensureUnk3000HLPGILIGGCBIsMutable();
+      public Builder addAllInferencePageList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfo> values) {
+        if (inferencePageListBuilder_ == null) {
+          ensureInferencePageListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, unk3000HLPGILIGGCB_);
+              values, inferencePageList_);
           onChanged();
         } else {
-          unk3000HLPGILIGGCBBuilder_.addAllMessages(values);
+          inferencePageListBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk3000_ENLDIHLGNCK Unk3000_HLPGILIGGCB = 15;</code>
+       * <code>repeated .InferencePageInfo inference_page_list = 15;</code>
        */
-      public Builder clearUnk3000HLPGILIGGCB() {
-        if (unk3000HLPGILIGGCBBuilder_ == null) {
-          unk3000HLPGILIGGCB_ = java.util.Collections.emptyList();
+      public Builder clearInferencePageList() {
+        if (inferencePageListBuilder_ == null) {
+          inferencePageList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000004);
           onChanged();
         } else {
-          unk3000HLPGILIGGCBBuilder_.clear();
+          inferencePageListBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .Unk3000_ENLDIHLGNCK Unk3000_HLPGILIGGCB = 15;</code>
+       * <code>repeated .InferencePageInfo inference_page_list = 15;</code>
        */
-      public Builder removeUnk3000HLPGILIGGCB(int index) {
-        if (unk3000HLPGILIGGCBBuilder_ == null) {
-          ensureUnk3000HLPGILIGGCBIsMutable();
-          unk3000HLPGILIGGCB_.remove(index);
+      public Builder removeInferencePageList(int index) {
+        if (inferencePageListBuilder_ == null) {
+          ensureInferencePageListIsMutable();
+          inferencePageList_.remove(index);
           onChanged();
         } else {
-          unk3000HLPGILIGGCBBuilder_.remove(index);
+          inferencePageListBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk3000_ENLDIHLGNCK Unk3000_HLPGILIGGCB = 15;</code>
+       * <code>repeated .InferencePageInfo inference_page_list = 15;</code>
        */
-      public emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCK.Builder getUnk3000HLPGILIGGCBBuilder(
+      public emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfo.Builder getInferencePageListBuilder(
           int index) {
-        return getUnk3000HLPGILIGGCBFieldBuilder().getBuilder(index);
+        return getInferencePageListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .Unk3000_ENLDIHLGNCK Unk3000_HLPGILIGGCB = 15;</code>
+       * <code>repeated .InferencePageInfo inference_page_list = 15;</code>
        */
-      public emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCKOrBuilder getUnk3000HLPGILIGGCBOrBuilder(
+      public emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfoOrBuilder getInferencePageListOrBuilder(
           int index) {
-        if (unk3000HLPGILIGGCBBuilder_ == null) {
-          return unk3000HLPGILIGGCB_.get(index);  } else {
-          return unk3000HLPGILIGGCBBuilder_.getMessageOrBuilder(index);
+        if (inferencePageListBuilder_ == null) {
+          return inferencePageList_.get(index);  } else {
+          return inferencePageListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .Unk3000_ENLDIHLGNCK Unk3000_HLPGILIGGCB = 15;</code>
+       * <code>repeated .InferencePageInfo inference_page_list = 15;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCKOrBuilder> 
-           getUnk3000HLPGILIGGCBOrBuilderList() {
-        if (unk3000HLPGILIGGCBBuilder_ != null) {
-          return unk3000HLPGILIGGCBBuilder_.getMessageOrBuilderList();
+      public java.util.List<? extends emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfoOrBuilder> 
+           getInferencePageListOrBuilderList() {
+        if (inferencePageListBuilder_ != null) {
+          return inferencePageListBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(unk3000HLPGILIGGCB_);
+          return java.util.Collections.unmodifiableList(inferencePageList_);
         }
       }
       /**
-       * <code>repeated .Unk3000_ENLDIHLGNCK Unk3000_HLPGILIGGCB = 15;</code>
+       * <code>repeated .InferencePageInfo inference_page_list = 15;</code>
        */
-      public emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCK.Builder addUnk3000HLPGILIGGCBBuilder() {
-        return getUnk3000HLPGILIGGCBFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCK.getDefaultInstance());
+      public emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfo.Builder addInferencePageListBuilder() {
+        return getInferencePageListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .Unk3000_ENLDIHLGNCK Unk3000_HLPGILIGGCB = 15;</code>
+       * <code>repeated .InferencePageInfo inference_page_list = 15;</code>
        */
-      public emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCK.Builder addUnk3000HLPGILIGGCBBuilder(
+      public emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfo.Builder addInferencePageListBuilder(
           int index) {
-        return getUnk3000HLPGILIGGCBFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCK.getDefaultInstance());
+        return getInferencePageListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .Unk3000_ENLDIHLGNCK Unk3000_HLPGILIGGCB = 15;</code>
+       * <code>repeated .InferencePageInfo inference_page_list = 15;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCK.Builder> 
-           getUnk3000HLPGILIGGCBBuilderList() {
-        return getUnk3000HLPGILIGGCBFieldBuilder().getBuilderList();
+      public java.util.List<emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfo.Builder> 
+           getInferencePageListBuilderList() {
+        return getInferencePageListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCK, emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCK.Builder, emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCKOrBuilder> 
-          getUnk3000HLPGILIGGCBFieldBuilder() {
-        if (unk3000HLPGILIGGCBBuilder_ == null) {
-          unk3000HLPGILIGGCBBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCK, emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCK.Builder, emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.Unk3000_ENLDIHLGNCKOrBuilder>(
-                  unk3000HLPGILIGGCB_,
+          emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfo, emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfo.Builder, emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfoOrBuilder> 
+          getInferencePageListFieldBuilder() {
+        if (inferencePageListBuilder_ == null) {
+          inferencePageListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfo, emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfo.Builder, emu.grasscutter.net.proto.InferencePageInfoOuterClass.InferencePageInfoOrBuilder>(
+                  inferencePageList_,
                   ((bitField0_ & 0x00000004) != 0),
                   getParentForChildren(),
                   isClean());
-          unk3000HLPGILIGGCB_ = null;
+          inferencePageList_ = null;
         }
-        return unk3000HLPGILIGGCBBuilder_;
+        return inferencePageListBuilder_;
       }
 
       private emu.grasscutter.net.proto.ParentQuestRandomInfoOuterClass.ParentQuestRandomInfo randomInfo_;
@@ -1962,33 +1962,33 @@ public final class ParentQuestOuterClass {
         return this;
       }
 
-      private long cutsceneEncryptionKey_ ;
+      private long videoKey_ ;
       /**
-       * <code>uint64 cutscene_encryption_key = 6;</code>
-       * @return The cutsceneEncryptionKey.
+       * <code>uint64 video_key = 6;</code>
+       * @return The videoKey.
        */
       @java.lang.Override
-      public long getCutsceneEncryptionKey() {
-        return cutsceneEncryptionKey_;
+      public long getVideoKey() {
+        return videoKey_;
       }
       /**
-       * <code>uint64 cutscene_encryption_key = 6;</code>
-       * @param value The cutsceneEncryptionKey to set.
+       * <code>uint64 video_key = 6;</code>
+       * @param value The videoKey to set.
        * @return This builder for chaining.
        */
-      public Builder setCutsceneEncryptionKey(long value) {
+      public Builder setVideoKey(long value) {
         
-        cutsceneEncryptionKey_ = value;
+        videoKey_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint64 cutscene_encryption_key = 6;</code>
+       * <code>uint64 video_key = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCutsceneEncryptionKey() {
+      public Builder clearVideoKey() {
         
-        cutsceneEncryptionKey_ = 0L;
+        videoKey_ = 0L;
         onChanged();
         return this;
       }
@@ -2335,34 +2335,34 @@ public final class ParentQuestOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021ParentQuest.proto\032\020ChildQuest.proto\032\033P" +
-      "arentQuestRandomInfo.proto\032\031Unk3000_ENLD" +
-      "IHLGNCK.proto\"\243\003\n\013ParentQuest\022\021\n\tquest_v" +
-      "ar\030\016 \003(\005\0222\n\014time_var_map\030\010 \003(\0132\034.ParentQ" +
-      "uest.TimeVarMapEntry\022\032\n\022parent_quest_sta" +
-      "te\030\001 \001(\r\022\023\n\013is_finished\030\007 \001(\010\0221\n\023Unk3000" +
-      "_HLPGILIGGCB\030\017 \003(\0132\024.Unk3000_ENLDIHLGNCK" +
-      "\022+\n\013random_info\030\014 \001(\0132\026.ParentQuestRando" +
-      "mInfo\022\027\n\017parent_quest_id\030\003 \001(\r\022\021\n\tis_ran" +
-      "dom\030\r \001(\010\022\037\n\027cutscene_encryption_key\030\006 \001" +
-      "(\004\022\025\n\rquest_var_seq\030\013 \001(\r\022%\n\020child_quest" +
-      "_list\030\t \003(\0132\013.ChildQuest\0321\n\017TimeVarMapEn" +
-      "try\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031e" +
-      "mu.grasscutter.net.protob\006proto3"
+      "\n\021ParentQuest.proto\032\020ChildQuest.proto\032\027I" +
+      "nferencePageInfo.proto\032\033ParentQuestRando" +
+      "mInfo.proto\"\223\003\n\013ParentQuest\022\021\n\tquest_var" +
+      "\030\016 \003(\005\0222\n\014time_var_map\030\010 \003(\0132\034.ParentQue" +
+      "st.TimeVarMapEntry\022\032\n\022parent_quest_state" +
+      "\030\001 \001(\r\022\023\n\013is_finished\030\007 \001(\010\022/\n\023inference" +
+      "_page_list\030\017 \003(\0132\022.InferencePageInfo\022+\n\013" +
+      "random_info\030\014 \001(\0132\026.ParentQuestRandomInf" +
+      "o\022\027\n\017parent_quest_id\030\003 \001(\r\022\021\n\tis_random\030" +
+      "\r \001(\010\022\021\n\tvideo_key\030\006 \001(\004\022\025\n\rquest_var_se" +
+      "q\030\013 \001(\r\022%\n\020child_quest_list\030\t \003(\0132\013.Chil" +
+      "dQuest\0321\n\017TimeVarMapEntry\022\013\n\003key\030\001 \001(\r\022\r" +
+      "\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu.grasscutter.net" +
+      ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           emu.grasscutter.net.proto.ChildQuestOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.InferencePageInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.ParentQuestRandomInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.getDescriptor(),
         });
     internal_static_ParentQuest_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_ParentQuest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ParentQuest_descriptor,
-        new java.lang.String[] { "QuestVar", "TimeVarMap", "ParentQuestState", "IsFinished", "Unk3000HLPGILIGGCB", "RandomInfo", "ParentQuestId", "IsRandom", "CutsceneEncryptionKey", "QuestVarSeq", "ChildQuestList", });
+        new java.lang.String[] { "QuestVar", "TimeVarMap", "ParentQuestState", "IsFinished", "InferencePageList", "RandomInfo", "ParentQuestId", "IsRandom", "VideoKey", "QuestVarSeq", "ChildQuestList", });
     internal_static_ParentQuest_TimeVarMapEntry_descriptor =
       internal_static_ParentQuest_descriptor.getNestedTypes().get(0);
     internal_static_ParentQuest_TimeVarMapEntry_fieldAccessorTable = new
@@ -2370,8 +2370,8 @@ public final class ParentQuestOuterClass {
         internal_static_ParentQuest_TimeVarMapEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
     emu.grasscutter.net.proto.ChildQuestOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.InferencePageInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.ParentQuestRandomInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.Unk3000ENLDIHLGNCK.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

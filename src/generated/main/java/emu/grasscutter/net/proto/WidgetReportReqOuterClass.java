@@ -19,10 +19,10 @@ public final class WidgetReportReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool Unk2700_MFEHMLBNNAG = 5;</code>
-     * @return The unk2700MFEHMLBNNAG.
+     * <code>bool is_clear_sky_crystal_hint = 5;</code>
+     * @return The isClearSkyCrystalHint.
      */
-    boolean getUnk2700MFEHMLBNNAG();
+    boolean getIsClearSkyCrystalHint();
 
     /**
      * <code>bool is_client_collect = 14;</code>
@@ -46,7 +46,7 @@ public final class WidgetReportReqOuterClass {
    * <pre>
    * CmdId: 4291
    * EnetChannelId: 0
-   * EnetIsReliable: false
+   * EnetIsReliable: true
    * IsAllowClient: true
    * </pre>
    *
@@ -96,7 +96,7 @@ public final class WidgetReportReqOuterClass {
               break;
             case 40: {
 
-              unk2700MFEHMLBNNAG_ = input.readBool();
+              isClearSkyCrystalHint_ = input.readBool();
               break;
             }
             case 104: {
@@ -146,15 +146,15 @@ public final class WidgetReportReqOuterClass {
               emu.grasscutter.net.proto.WidgetReportReqOuterClass.WidgetReportReq.class, emu.grasscutter.net.proto.WidgetReportReqOuterClass.WidgetReportReq.Builder.class);
     }
 
-    public static final int UNK2700_MFEHMLBNNAG_FIELD_NUMBER = 5;
-    private boolean unk2700MFEHMLBNNAG_;
+    public static final int IS_CLEAR_SKY_CRYSTAL_HINT_FIELD_NUMBER = 5;
+    private boolean isClearSkyCrystalHint_;
     /**
-     * <code>bool Unk2700_MFEHMLBNNAG = 5;</code>
-     * @return The unk2700MFEHMLBNNAG.
+     * <code>bool is_clear_sky_crystal_hint = 5;</code>
+     * @return The isClearSkyCrystalHint.
      */
     @java.lang.Override
-    public boolean getUnk2700MFEHMLBNNAG() {
-      return unk2700MFEHMLBNNAG_;
+    public boolean getIsClearSkyCrystalHint() {
+      return isClearSkyCrystalHint_;
     }
 
     public static final int IS_CLIENT_COLLECT_FIELD_NUMBER = 14;
@@ -204,8 +204,8 @@ public final class WidgetReportReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (unk2700MFEHMLBNNAG_ != false) {
-        output.writeBool(5, unk2700MFEHMLBNNAG_);
+      if (isClearSkyCrystalHint_ != false) {
+        output.writeBool(5, isClearSkyCrystalHint_);
       }
       if (isClearHint_ != false) {
         output.writeBool(13, isClearHint_);
@@ -225,9 +225,9 @@ public final class WidgetReportReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (unk2700MFEHMLBNNAG_ != false) {
+      if (isClearSkyCrystalHint_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, unk2700MFEHMLBNNAG_);
+          .computeBoolSize(5, isClearSkyCrystalHint_);
       }
       if (isClearHint_ != false) {
         size += com.google.protobuf.CodedOutputStream
@@ -256,8 +256,8 @@ public final class WidgetReportReqOuterClass {
       }
       emu.grasscutter.net.proto.WidgetReportReqOuterClass.WidgetReportReq other = (emu.grasscutter.net.proto.WidgetReportReqOuterClass.WidgetReportReq) obj;
 
-      if (getUnk2700MFEHMLBNNAG()
-          != other.getUnk2700MFEHMLBNNAG()) return false;
+      if (getIsClearSkyCrystalHint()
+          != other.getIsClearSkyCrystalHint()) return false;
       if (getIsClientCollect()
           != other.getIsClientCollect()) return false;
       if (getIsClearHint()
@@ -275,9 +275,9 @@ public final class WidgetReportReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + UNK2700_MFEHMLBNNAG_FIELD_NUMBER;
+      hash = (37 * hash) + IS_CLEAR_SKY_CRYSTAL_HINT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk2700MFEHMLBNNAG());
+          getIsClearSkyCrystalHint());
       hash = (37 * hash) + IS_CLIENT_COLLECT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsClientCollect());
@@ -385,7 +385,7 @@ public final class WidgetReportReqOuterClass {
      * <pre>
      * CmdId: 4291
      * EnetChannelId: 0
-     * EnetIsReliable: false
+     * EnetIsReliable: true
      * IsAllowClient: true
      * </pre>
      *
@@ -426,7 +426,7 @@ public final class WidgetReportReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        unk2700MFEHMLBNNAG_ = false;
+        isClearSkyCrystalHint_ = false;
 
         isClientCollect_ = false;
 
@@ -460,7 +460,7 @@ public final class WidgetReportReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.WidgetReportReqOuterClass.WidgetReportReq buildPartial() {
         emu.grasscutter.net.proto.WidgetReportReqOuterClass.WidgetReportReq result = new emu.grasscutter.net.proto.WidgetReportReqOuterClass.WidgetReportReq(this);
-        result.unk2700MFEHMLBNNAG_ = unk2700MFEHMLBNNAG_;
+        result.isClearSkyCrystalHint_ = isClearSkyCrystalHint_;
         result.isClientCollect_ = isClientCollect_;
         result.isClearHint_ = isClearHint_;
         result.materialId_ = materialId_;
@@ -512,8 +512,8 @@ public final class WidgetReportReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.WidgetReportReqOuterClass.WidgetReportReq other) {
         if (other == emu.grasscutter.net.proto.WidgetReportReqOuterClass.WidgetReportReq.getDefaultInstance()) return this;
-        if (other.getUnk2700MFEHMLBNNAG() != false) {
-          setUnk2700MFEHMLBNNAG(other.getUnk2700MFEHMLBNNAG());
+        if (other.getIsClearSkyCrystalHint() != false) {
+          setIsClearSkyCrystalHint(other.getIsClearSkyCrystalHint());
         }
         if (other.getIsClientCollect() != false) {
           setIsClientCollect(other.getIsClientCollect());
@@ -553,33 +553,33 @@ public final class WidgetReportReqOuterClass {
         return this;
       }
 
-      private boolean unk2700MFEHMLBNNAG_ ;
+      private boolean isClearSkyCrystalHint_ ;
       /**
-       * <code>bool Unk2700_MFEHMLBNNAG = 5;</code>
-       * @return The unk2700MFEHMLBNNAG.
+       * <code>bool is_clear_sky_crystal_hint = 5;</code>
+       * @return The isClearSkyCrystalHint.
        */
       @java.lang.Override
-      public boolean getUnk2700MFEHMLBNNAG() {
-        return unk2700MFEHMLBNNAG_;
+      public boolean getIsClearSkyCrystalHint() {
+        return isClearSkyCrystalHint_;
       }
       /**
-       * <code>bool Unk2700_MFEHMLBNNAG = 5;</code>
-       * @param value The unk2700MFEHMLBNNAG to set.
+       * <code>bool is_clear_sky_crystal_hint = 5;</code>
+       * @param value The isClearSkyCrystalHint to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700MFEHMLBNNAG(boolean value) {
+      public Builder setIsClearSkyCrystalHint(boolean value) {
         
-        unk2700MFEHMLBNNAG_ = value;
+        isClearSkyCrystalHint_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk2700_MFEHMLBNNAG = 5;</code>
+       * <code>bool is_clear_sky_crystal_hint = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700MFEHMLBNNAG() {
+      public Builder clearIsClearSkyCrystalHint() {
         
-        unk2700MFEHMLBNNAG_ = false;
+        isClearSkyCrystalHint_ = false;
         onChanged();
         return this;
       }
@@ -743,11 +743,11 @@ public final class WidgetReportReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025WidgetReportReq.proto\"u\n\017WidgetReportR" +
-      "eq\022\033\n\023Unk2700_MFEHMLBNNAG\030\005 \001(\010\022\031\n\021is_cl" +
-      "ient_collect\030\016 \001(\010\022\025\n\ris_clear_hint\030\r \001(" +
-      "\010\022\023\n\013material_id\030\017 \001(\rB\033\n\031emu.grasscutte" +
-      "r.net.protob\006proto3"
+      "\n\025WidgetReportReq.proto\"{\n\017WidgetReportR" +
+      "eq\022!\n\031is_clear_sky_crystal_hint\030\005 \001(\010\022\031\n" +
+      "\021is_client_collect\030\016 \001(\010\022\025\n\ris_clear_hin" +
+      "t\030\r \001(\010\022\023\n\013material_id\030\017 \001(\rB\033\n\031emu.gras" +
+      "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -758,7 +758,7 @@ public final class WidgetReportReqOuterClass {
     internal_static_WidgetReportReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_WidgetReportReq_descriptor,
-        new java.lang.String[] { "Unk2700MFEHMLBNNAG", "IsClientCollect", "IsClearHint", "MaterialId", });
+        new java.lang.String[] { "IsClearSkyCrystalHint", "IsClientCollect", "IsClearHint", "MaterialId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

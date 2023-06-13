@@ -19,27 +19,27 @@ public final class WorldPlayerInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .Unk3000_HKHFFDEMNKN Unk3000_GCJLJCJAADG = 8;</code>
+     * <code>repeated .PlayerWidgetInfo player_widget_info_list = 8;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKN> 
-        getUnk3000GCJLJCJAADGList();
+    java.util.List<emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfo> 
+        getPlayerWidgetInfoListList();
     /**
-     * <code>repeated .Unk3000_HKHFFDEMNKN Unk3000_GCJLJCJAADG = 8;</code>
+     * <code>repeated .PlayerWidgetInfo player_widget_info_list = 8;</code>
      */
-    emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKN getUnk3000GCJLJCJAADG(int index);
+    emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfo getPlayerWidgetInfoList(int index);
     /**
-     * <code>repeated .Unk3000_HKHFFDEMNKN Unk3000_GCJLJCJAADG = 8;</code>
+     * <code>repeated .PlayerWidgetInfo player_widget_info_list = 8;</code>
      */
-    int getUnk3000GCJLJCJAADGCount();
+    int getPlayerWidgetInfoListCount();
     /**
-     * <code>repeated .Unk3000_HKHFFDEMNKN Unk3000_GCJLJCJAADG = 8;</code>
+     * <code>repeated .PlayerWidgetInfo player_widget_info_list = 8;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKNOrBuilder> 
-        getUnk3000GCJLJCJAADGOrBuilderList();
+    java.util.List<? extends emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfoOrBuilder> 
+        getPlayerWidgetInfoListOrBuilderList();
     /**
-     * <code>repeated .Unk3000_HKHFFDEMNKN Unk3000_GCJLJCJAADG = 8;</code>
+     * <code>repeated .PlayerWidgetInfo player_widget_info_list = 8;</code>
      */
-    emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKNOrBuilder getUnk3000GCJLJCJAADGOrBuilder(
+    emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfoOrBuilder getPlayerWidgetInfoListOrBuilder(
         int index);
 
     /**
@@ -87,7 +87,7 @@ public final class WorldPlayerInfoNotifyOuterClass {
    * <pre>
    * CmdId: 3116
    * EnetChannelId: 0
-   * EnetIsReliable: false
+   * EnetIsReliable: true
    * IsAllowClient: true
    * </pre>
    *
@@ -103,7 +103,7 @@ public final class WorldPlayerInfoNotifyOuterClass {
       super(builder);
     }
     private WorldPlayerInfoNotify() {
-      unk3000GCJLJCJAADG_ = java.util.Collections.emptyList();
+      playerWidgetInfoList_ = java.util.Collections.emptyList();
       playerInfoList_ = java.util.Collections.emptyList();
       playerUidList_ = emptyIntList();
     }
@@ -141,11 +141,11 @@ public final class WorldPlayerInfoNotifyOuterClass {
               break;
             case 66: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                unk3000GCJLJCJAADG_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKN>();
+                playerWidgetInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfo>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              unk3000GCJLJCJAADG_.add(
-                  input.readMessage(emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKN.parser(), extensionRegistry));
+              playerWidgetInfoList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfo.parser(), extensionRegistry));
               break;
             }
             case 88: {
@@ -194,7 +194,7 @@ public final class WorldPlayerInfoNotifyOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          unk3000GCJLJCJAADG_ = java.util.Collections.unmodifiableList(unk3000GCJLJCJAADG_);
+          playerWidgetInfoList_ = java.util.Collections.unmodifiableList(playerWidgetInfoList_);
         }
         if (((mutable_bitField0_ & 0x00000004) != 0)) {
           playerUidList_.makeImmutable(); // C
@@ -219,44 +219,44 @@ public final class WorldPlayerInfoNotifyOuterClass {
               emu.grasscutter.net.proto.WorldPlayerInfoNotifyOuterClass.WorldPlayerInfoNotify.class, emu.grasscutter.net.proto.WorldPlayerInfoNotifyOuterClass.WorldPlayerInfoNotify.Builder.class);
     }
 
-    public static final int UNK3000_GCJLJCJAADG_FIELD_NUMBER = 8;
-    private java.util.List<emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKN> unk3000GCJLJCJAADG_;
+    public static final int PLAYER_WIDGET_INFO_LIST_FIELD_NUMBER = 8;
+    private java.util.List<emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfo> playerWidgetInfoList_;
     /**
-     * <code>repeated .Unk3000_HKHFFDEMNKN Unk3000_GCJLJCJAADG = 8;</code>
+     * <code>repeated .PlayerWidgetInfo player_widget_info_list = 8;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKN> getUnk3000GCJLJCJAADGList() {
-      return unk3000GCJLJCJAADG_;
+    public java.util.List<emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfo> getPlayerWidgetInfoListList() {
+      return playerWidgetInfoList_;
     }
     /**
-     * <code>repeated .Unk3000_HKHFFDEMNKN Unk3000_GCJLJCJAADG = 8;</code>
+     * <code>repeated .PlayerWidgetInfo player_widget_info_list = 8;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKNOrBuilder> 
-        getUnk3000GCJLJCJAADGOrBuilderList() {
-      return unk3000GCJLJCJAADG_;
+    public java.util.List<? extends emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfoOrBuilder> 
+        getPlayerWidgetInfoListOrBuilderList() {
+      return playerWidgetInfoList_;
     }
     /**
-     * <code>repeated .Unk3000_HKHFFDEMNKN Unk3000_GCJLJCJAADG = 8;</code>
+     * <code>repeated .PlayerWidgetInfo player_widget_info_list = 8;</code>
      */
     @java.lang.Override
-    public int getUnk3000GCJLJCJAADGCount() {
-      return unk3000GCJLJCJAADG_.size();
+    public int getPlayerWidgetInfoListCount() {
+      return playerWidgetInfoList_.size();
     }
     /**
-     * <code>repeated .Unk3000_HKHFFDEMNKN Unk3000_GCJLJCJAADG = 8;</code>
+     * <code>repeated .PlayerWidgetInfo player_widget_info_list = 8;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKN getUnk3000GCJLJCJAADG(int index) {
-      return unk3000GCJLJCJAADG_.get(index);
+    public emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfo getPlayerWidgetInfoList(int index) {
+      return playerWidgetInfoList_.get(index);
     }
     /**
-     * <code>repeated .Unk3000_HKHFFDEMNKN Unk3000_GCJLJCJAADG = 8;</code>
+     * <code>repeated .PlayerWidgetInfo player_widget_info_list = 8;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKNOrBuilder getUnk3000GCJLJCJAADGOrBuilder(
+    public emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfoOrBuilder getPlayerWidgetInfoListOrBuilder(
         int index) {
-      return unk3000GCJLJCJAADG_.get(index);
+      return playerWidgetInfoList_.get(index);
     }
 
     public static final int PLAYER_INFO_LIST_FIELD_NUMBER = 14;
@@ -342,8 +342,8 @@ public final class WorldPlayerInfoNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      for (int i = 0; i < unk3000GCJLJCJAADG_.size(); i++) {
-        output.writeMessage(8, unk3000GCJLJCJAADG_.get(i));
+      for (int i = 0; i < playerWidgetInfoList_.size(); i++) {
+        output.writeMessage(8, playerWidgetInfoList_.get(i));
       }
       if (getPlayerUidListList().size() > 0) {
         output.writeUInt32NoTag(90);
@@ -364,9 +364,9 @@ public final class WorldPlayerInfoNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < unk3000GCJLJCJAADG_.size(); i++) {
+      for (int i = 0; i < playerWidgetInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, unk3000GCJLJCJAADG_.get(i));
+          .computeMessageSize(8, playerWidgetInfoList_.get(i));
       }
       {
         int dataSize = 0;
@@ -401,8 +401,8 @@ public final class WorldPlayerInfoNotifyOuterClass {
       }
       emu.grasscutter.net.proto.WorldPlayerInfoNotifyOuterClass.WorldPlayerInfoNotify other = (emu.grasscutter.net.proto.WorldPlayerInfoNotifyOuterClass.WorldPlayerInfoNotify) obj;
 
-      if (!getUnk3000GCJLJCJAADGList()
-          .equals(other.getUnk3000GCJLJCJAADGList())) return false;
+      if (!getPlayerWidgetInfoListList()
+          .equals(other.getPlayerWidgetInfoListList())) return false;
       if (!getPlayerInfoListList()
           .equals(other.getPlayerInfoListList())) return false;
       if (!getPlayerUidListList()
@@ -418,9 +418,9 @@ public final class WorldPlayerInfoNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getUnk3000GCJLJCJAADGCount() > 0) {
-        hash = (37 * hash) + UNK3000_GCJLJCJAADG_FIELD_NUMBER;
-        hash = (53 * hash) + getUnk3000GCJLJCJAADGList().hashCode();
+      if (getPlayerWidgetInfoListCount() > 0) {
+        hash = (37 * hash) + PLAYER_WIDGET_INFO_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getPlayerWidgetInfoListList().hashCode();
       }
       if (getPlayerInfoListCount() > 0) {
         hash = (37 * hash) + PLAYER_INFO_LIST_FIELD_NUMBER;
@@ -529,7 +529,7 @@ public final class WorldPlayerInfoNotifyOuterClass {
      * <pre>
      * CmdId: 3116
      * EnetChannelId: 0
-     * EnetIsReliable: false
+     * EnetIsReliable: true
      * IsAllowClient: true
      * </pre>
      *
@@ -565,18 +565,18 @@ public final class WorldPlayerInfoNotifyOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getUnk3000GCJLJCJAADGFieldBuilder();
+          getPlayerWidgetInfoListFieldBuilder();
           getPlayerInfoListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (unk3000GCJLJCJAADGBuilder_ == null) {
-          unk3000GCJLJCJAADG_ = java.util.Collections.emptyList();
+        if (playerWidgetInfoListBuilder_ == null) {
+          playerWidgetInfoList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          unk3000GCJLJCJAADGBuilder_.clear();
+          playerWidgetInfoListBuilder_.clear();
         }
         if (playerInfoListBuilder_ == null) {
           playerInfoList_ = java.util.Collections.emptyList();
@@ -613,14 +613,14 @@ public final class WorldPlayerInfoNotifyOuterClass {
       public emu.grasscutter.net.proto.WorldPlayerInfoNotifyOuterClass.WorldPlayerInfoNotify buildPartial() {
         emu.grasscutter.net.proto.WorldPlayerInfoNotifyOuterClass.WorldPlayerInfoNotify result = new emu.grasscutter.net.proto.WorldPlayerInfoNotifyOuterClass.WorldPlayerInfoNotify(this);
         int from_bitField0_ = bitField0_;
-        if (unk3000GCJLJCJAADGBuilder_ == null) {
+        if (playerWidgetInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            unk3000GCJLJCJAADG_ = java.util.Collections.unmodifiableList(unk3000GCJLJCJAADG_);
+            playerWidgetInfoList_ = java.util.Collections.unmodifiableList(playerWidgetInfoList_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.unk3000GCJLJCJAADG_ = unk3000GCJLJCJAADG_;
+          result.playerWidgetInfoList_ = playerWidgetInfoList_;
         } else {
-          result.unk3000GCJLJCJAADG_ = unk3000GCJLJCJAADGBuilder_.build();
+          result.playerWidgetInfoList_ = playerWidgetInfoListBuilder_.build();
         }
         if (playerInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0)) {
@@ -684,29 +684,29 @@ public final class WorldPlayerInfoNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.WorldPlayerInfoNotifyOuterClass.WorldPlayerInfoNotify other) {
         if (other == emu.grasscutter.net.proto.WorldPlayerInfoNotifyOuterClass.WorldPlayerInfoNotify.getDefaultInstance()) return this;
-        if (unk3000GCJLJCJAADGBuilder_ == null) {
-          if (!other.unk3000GCJLJCJAADG_.isEmpty()) {
-            if (unk3000GCJLJCJAADG_.isEmpty()) {
-              unk3000GCJLJCJAADG_ = other.unk3000GCJLJCJAADG_;
+        if (playerWidgetInfoListBuilder_ == null) {
+          if (!other.playerWidgetInfoList_.isEmpty()) {
+            if (playerWidgetInfoList_.isEmpty()) {
+              playerWidgetInfoList_ = other.playerWidgetInfoList_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureUnk3000GCJLJCJAADGIsMutable();
-              unk3000GCJLJCJAADG_.addAll(other.unk3000GCJLJCJAADG_);
+              ensurePlayerWidgetInfoListIsMutable();
+              playerWidgetInfoList_.addAll(other.playerWidgetInfoList_);
             }
             onChanged();
           }
         } else {
-          if (!other.unk3000GCJLJCJAADG_.isEmpty()) {
-            if (unk3000GCJLJCJAADGBuilder_.isEmpty()) {
-              unk3000GCJLJCJAADGBuilder_.dispose();
-              unk3000GCJLJCJAADGBuilder_ = null;
-              unk3000GCJLJCJAADG_ = other.unk3000GCJLJCJAADG_;
+          if (!other.playerWidgetInfoList_.isEmpty()) {
+            if (playerWidgetInfoListBuilder_.isEmpty()) {
+              playerWidgetInfoListBuilder_.dispose();
+              playerWidgetInfoListBuilder_ = null;
+              playerWidgetInfoList_ = other.playerWidgetInfoList_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              unk3000GCJLJCJAADGBuilder_ = 
+              playerWidgetInfoListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getUnk3000GCJLJCJAADGFieldBuilder() : null;
+                   getPlayerWidgetInfoListFieldBuilder() : null;
             } else {
-              unk3000GCJLJCJAADGBuilder_.addAllMessages(other.unk3000GCJLJCJAADG_);
+              playerWidgetInfoListBuilder_.addAllMessages(other.playerWidgetInfoList_);
             }
           }
         }
@@ -776,244 +776,244 @@ public final class WorldPlayerInfoNotifyOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKN> unk3000GCJLJCJAADG_ =
+      private java.util.List<emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfo> playerWidgetInfoList_ =
         java.util.Collections.emptyList();
-      private void ensureUnk3000GCJLJCJAADGIsMutable() {
+      private void ensurePlayerWidgetInfoListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          unk3000GCJLJCJAADG_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKN>(unk3000GCJLJCJAADG_);
+          playerWidgetInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfo>(playerWidgetInfoList_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKN, emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKN.Builder, emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKNOrBuilder> unk3000GCJLJCJAADGBuilder_;
+          emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfo, emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfo.Builder, emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfoOrBuilder> playerWidgetInfoListBuilder_;
 
       /**
-       * <code>repeated .Unk3000_HKHFFDEMNKN Unk3000_GCJLJCJAADG = 8;</code>
+       * <code>repeated .PlayerWidgetInfo player_widget_info_list = 8;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKN> getUnk3000GCJLJCJAADGList() {
-        if (unk3000GCJLJCJAADGBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(unk3000GCJLJCJAADG_);
+      public java.util.List<emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfo> getPlayerWidgetInfoListList() {
+        if (playerWidgetInfoListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(playerWidgetInfoList_);
         } else {
-          return unk3000GCJLJCJAADGBuilder_.getMessageList();
+          return playerWidgetInfoListBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .Unk3000_HKHFFDEMNKN Unk3000_GCJLJCJAADG = 8;</code>
+       * <code>repeated .PlayerWidgetInfo player_widget_info_list = 8;</code>
        */
-      public int getUnk3000GCJLJCJAADGCount() {
-        if (unk3000GCJLJCJAADGBuilder_ == null) {
-          return unk3000GCJLJCJAADG_.size();
+      public int getPlayerWidgetInfoListCount() {
+        if (playerWidgetInfoListBuilder_ == null) {
+          return playerWidgetInfoList_.size();
         } else {
-          return unk3000GCJLJCJAADGBuilder_.getCount();
+          return playerWidgetInfoListBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .Unk3000_HKHFFDEMNKN Unk3000_GCJLJCJAADG = 8;</code>
+       * <code>repeated .PlayerWidgetInfo player_widget_info_list = 8;</code>
        */
-      public emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKN getUnk3000GCJLJCJAADG(int index) {
-        if (unk3000GCJLJCJAADGBuilder_ == null) {
-          return unk3000GCJLJCJAADG_.get(index);
+      public emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfo getPlayerWidgetInfoList(int index) {
+        if (playerWidgetInfoListBuilder_ == null) {
+          return playerWidgetInfoList_.get(index);
         } else {
-          return unk3000GCJLJCJAADGBuilder_.getMessage(index);
+          return playerWidgetInfoListBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .Unk3000_HKHFFDEMNKN Unk3000_GCJLJCJAADG = 8;</code>
+       * <code>repeated .PlayerWidgetInfo player_widget_info_list = 8;</code>
        */
-      public Builder setUnk3000GCJLJCJAADG(
-          int index, emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKN value) {
-        if (unk3000GCJLJCJAADGBuilder_ == null) {
+      public Builder setPlayerWidgetInfoList(
+          int index, emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfo value) {
+        if (playerWidgetInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk3000GCJLJCJAADGIsMutable();
-          unk3000GCJLJCJAADG_.set(index, value);
+          ensurePlayerWidgetInfoListIsMutable();
+          playerWidgetInfoList_.set(index, value);
           onChanged();
         } else {
-          unk3000GCJLJCJAADGBuilder_.setMessage(index, value);
+          playerWidgetInfoListBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk3000_HKHFFDEMNKN Unk3000_GCJLJCJAADG = 8;</code>
+       * <code>repeated .PlayerWidgetInfo player_widget_info_list = 8;</code>
        */
-      public Builder setUnk3000GCJLJCJAADG(
-          int index, emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKN.Builder builderForValue) {
-        if (unk3000GCJLJCJAADGBuilder_ == null) {
-          ensureUnk3000GCJLJCJAADGIsMutable();
-          unk3000GCJLJCJAADG_.set(index, builderForValue.build());
+      public Builder setPlayerWidgetInfoList(
+          int index, emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfo.Builder builderForValue) {
+        if (playerWidgetInfoListBuilder_ == null) {
+          ensurePlayerWidgetInfoListIsMutable();
+          playerWidgetInfoList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          unk3000GCJLJCJAADGBuilder_.setMessage(index, builderForValue.build());
+          playerWidgetInfoListBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk3000_HKHFFDEMNKN Unk3000_GCJLJCJAADG = 8;</code>
+       * <code>repeated .PlayerWidgetInfo player_widget_info_list = 8;</code>
        */
-      public Builder addUnk3000GCJLJCJAADG(emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKN value) {
-        if (unk3000GCJLJCJAADGBuilder_ == null) {
+      public Builder addPlayerWidgetInfoList(emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfo value) {
+        if (playerWidgetInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk3000GCJLJCJAADGIsMutable();
-          unk3000GCJLJCJAADG_.add(value);
+          ensurePlayerWidgetInfoListIsMutable();
+          playerWidgetInfoList_.add(value);
           onChanged();
         } else {
-          unk3000GCJLJCJAADGBuilder_.addMessage(value);
+          playerWidgetInfoListBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk3000_HKHFFDEMNKN Unk3000_GCJLJCJAADG = 8;</code>
+       * <code>repeated .PlayerWidgetInfo player_widget_info_list = 8;</code>
        */
-      public Builder addUnk3000GCJLJCJAADG(
-          int index, emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKN value) {
-        if (unk3000GCJLJCJAADGBuilder_ == null) {
+      public Builder addPlayerWidgetInfoList(
+          int index, emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfo value) {
+        if (playerWidgetInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk3000GCJLJCJAADGIsMutable();
-          unk3000GCJLJCJAADG_.add(index, value);
+          ensurePlayerWidgetInfoListIsMutable();
+          playerWidgetInfoList_.add(index, value);
           onChanged();
         } else {
-          unk3000GCJLJCJAADGBuilder_.addMessage(index, value);
+          playerWidgetInfoListBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk3000_HKHFFDEMNKN Unk3000_GCJLJCJAADG = 8;</code>
+       * <code>repeated .PlayerWidgetInfo player_widget_info_list = 8;</code>
        */
-      public Builder addUnk3000GCJLJCJAADG(
-          emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKN.Builder builderForValue) {
-        if (unk3000GCJLJCJAADGBuilder_ == null) {
-          ensureUnk3000GCJLJCJAADGIsMutable();
-          unk3000GCJLJCJAADG_.add(builderForValue.build());
+      public Builder addPlayerWidgetInfoList(
+          emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfo.Builder builderForValue) {
+        if (playerWidgetInfoListBuilder_ == null) {
+          ensurePlayerWidgetInfoListIsMutable();
+          playerWidgetInfoList_.add(builderForValue.build());
           onChanged();
         } else {
-          unk3000GCJLJCJAADGBuilder_.addMessage(builderForValue.build());
+          playerWidgetInfoListBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk3000_HKHFFDEMNKN Unk3000_GCJLJCJAADG = 8;</code>
+       * <code>repeated .PlayerWidgetInfo player_widget_info_list = 8;</code>
        */
-      public Builder addUnk3000GCJLJCJAADG(
-          int index, emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKN.Builder builderForValue) {
-        if (unk3000GCJLJCJAADGBuilder_ == null) {
-          ensureUnk3000GCJLJCJAADGIsMutable();
-          unk3000GCJLJCJAADG_.add(index, builderForValue.build());
+      public Builder addPlayerWidgetInfoList(
+          int index, emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfo.Builder builderForValue) {
+        if (playerWidgetInfoListBuilder_ == null) {
+          ensurePlayerWidgetInfoListIsMutable();
+          playerWidgetInfoList_.add(index, builderForValue.build());
           onChanged();
         } else {
-          unk3000GCJLJCJAADGBuilder_.addMessage(index, builderForValue.build());
+          playerWidgetInfoListBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk3000_HKHFFDEMNKN Unk3000_GCJLJCJAADG = 8;</code>
+       * <code>repeated .PlayerWidgetInfo player_widget_info_list = 8;</code>
        */
-      public Builder addAllUnk3000GCJLJCJAADG(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKN> values) {
-        if (unk3000GCJLJCJAADGBuilder_ == null) {
-          ensureUnk3000GCJLJCJAADGIsMutable();
+      public Builder addAllPlayerWidgetInfoList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfo> values) {
+        if (playerWidgetInfoListBuilder_ == null) {
+          ensurePlayerWidgetInfoListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, unk3000GCJLJCJAADG_);
+              values, playerWidgetInfoList_);
           onChanged();
         } else {
-          unk3000GCJLJCJAADGBuilder_.addAllMessages(values);
+          playerWidgetInfoListBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk3000_HKHFFDEMNKN Unk3000_GCJLJCJAADG = 8;</code>
+       * <code>repeated .PlayerWidgetInfo player_widget_info_list = 8;</code>
        */
-      public Builder clearUnk3000GCJLJCJAADG() {
-        if (unk3000GCJLJCJAADGBuilder_ == null) {
-          unk3000GCJLJCJAADG_ = java.util.Collections.emptyList();
+      public Builder clearPlayerWidgetInfoList() {
+        if (playerWidgetInfoListBuilder_ == null) {
+          playerWidgetInfoList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          unk3000GCJLJCJAADGBuilder_.clear();
+          playerWidgetInfoListBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .Unk3000_HKHFFDEMNKN Unk3000_GCJLJCJAADG = 8;</code>
+       * <code>repeated .PlayerWidgetInfo player_widget_info_list = 8;</code>
        */
-      public Builder removeUnk3000GCJLJCJAADG(int index) {
-        if (unk3000GCJLJCJAADGBuilder_ == null) {
-          ensureUnk3000GCJLJCJAADGIsMutable();
-          unk3000GCJLJCJAADG_.remove(index);
+      public Builder removePlayerWidgetInfoList(int index) {
+        if (playerWidgetInfoListBuilder_ == null) {
+          ensurePlayerWidgetInfoListIsMutable();
+          playerWidgetInfoList_.remove(index);
           onChanged();
         } else {
-          unk3000GCJLJCJAADGBuilder_.remove(index);
+          playerWidgetInfoListBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk3000_HKHFFDEMNKN Unk3000_GCJLJCJAADG = 8;</code>
+       * <code>repeated .PlayerWidgetInfo player_widget_info_list = 8;</code>
        */
-      public emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKN.Builder getUnk3000GCJLJCJAADGBuilder(
+      public emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfo.Builder getPlayerWidgetInfoListBuilder(
           int index) {
-        return getUnk3000GCJLJCJAADGFieldBuilder().getBuilder(index);
+        return getPlayerWidgetInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .Unk3000_HKHFFDEMNKN Unk3000_GCJLJCJAADG = 8;</code>
+       * <code>repeated .PlayerWidgetInfo player_widget_info_list = 8;</code>
        */
-      public emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKNOrBuilder getUnk3000GCJLJCJAADGOrBuilder(
+      public emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfoOrBuilder getPlayerWidgetInfoListOrBuilder(
           int index) {
-        if (unk3000GCJLJCJAADGBuilder_ == null) {
-          return unk3000GCJLJCJAADG_.get(index);  } else {
-          return unk3000GCJLJCJAADGBuilder_.getMessageOrBuilder(index);
+        if (playerWidgetInfoListBuilder_ == null) {
+          return playerWidgetInfoList_.get(index);  } else {
+          return playerWidgetInfoListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .Unk3000_HKHFFDEMNKN Unk3000_GCJLJCJAADG = 8;</code>
+       * <code>repeated .PlayerWidgetInfo player_widget_info_list = 8;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKNOrBuilder> 
-           getUnk3000GCJLJCJAADGOrBuilderList() {
-        if (unk3000GCJLJCJAADGBuilder_ != null) {
-          return unk3000GCJLJCJAADGBuilder_.getMessageOrBuilderList();
+      public java.util.List<? extends emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfoOrBuilder> 
+           getPlayerWidgetInfoListOrBuilderList() {
+        if (playerWidgetInfoListBuilder_ != null) {
+          return playerWidgetInfoListBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(unk3000GCJLJCJAADG_);
+          return java.util.Collections.unmodifiableList(playerWidgetInfoList_);
         }
       }
       /**
-       * <code>repeated .Unk3000_HKHFFDEMNKN Unk3000_GCJLJCJAADG = 8;</code>
+       * <code>repeated .PlayerWidgetInfo player_widget_info_list = 8;</code>
        */
-      public emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKN.Builder addUnk3000GCJLJCJAADGBuilder() {
-        return getUnk3000GCJLJCJAADGFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKN.getDefaultInstance());
+      public emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfo.Builder addPlayerWidgetInfoListBuilder() {
+        return getPlayerWidgetInfoListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .Unk3000_HKHFFDEMNKN Unk3000_GCJLJCJAADG = 8;</code>
+       * <code>repeated .PlayerWidgetInfo player_widget_info_list = 8;</code>
        */
-      public emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKN.Builder addUnk3000GCJLJCJAADGBuilder(
+      public emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfo.Builder addPlayerWidgetInfoListBuilder(
           int index) {
-        return getUnk3000GCJLJCJAADGFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKN.getDefaultInstance());
+        return getPlayerWidgetInfoListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .Unk3000_HKHFFDEMNKN Unk3000_GCJLJCJAADG = 8;</code>
+       * <code>repeated .PlayerWidgetInfo player_widget_info_list = 8;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKN.Builder> 
-           getUnk3000GCJLJCJAADGBuilderList() {
-        return getUnk3000GCJLJCJAADGFieldBuilder().getBuilderList();
+      public java.util.List<emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfo.Builder> 
+           getPlayerWidgetInfoListBuilderList() {
+        return getPlayerWidgetInfoListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKN, emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKN.Builder, emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKNOrBuilder> 
-          getUnk3000GCJLJCJAADGFieldBuilder() {
-        if (unk3000GCJLJCJAADGBuilder_ == null) {
-          unk3000GCJLJCJAADGBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKN, emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKN.Builder, emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.Unk3000_HKHFFDEMNKNOrBuilder>(
-                  unk3000GCJLJCJAADG_,
+          emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfo, emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfo.Builder, emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfoOrBuilder> 
+          getPlayerWidgetInfoListFieldBuilder() {
+        if (playerWidgetInfoListBuilder_ == null) {
+          playerWidgetInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfo, emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfo.Builder, emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.PlayerWidgetInfoOrBuilder>(
+                  playerWidgetInfoList_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          unk3000GCJLJCJAADG_ = null;
+          playerWidgetInfoList_ = null;
         }
-        return unk3000GCJLJCJAADGBuilder_;
+        return playerWidgetInfoListBuilder_;
       }
 
       private java.util.List<emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo> playerInfoList_ =
@@ -1402,27 +1402,27 @@ public final class WorldPlayerInfoNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033WorldPlayerInfoNotify.proto\032\026OnlinePla" +
-      "yerInfo.proto\032\031Unk3000_HKHFFDEMNKN.proto" +
-      "\"\220\001\n\025WorldPlayerInfoNotify\0221\n\023Unk3000_GC" +
-      "JLJCJAADG\030\010 \003(\0132\024.Unk3000_HKHFFDEMNKN\022+\n" +
-      "\020player_info_list\030\016 \003(\0132\021.OnlinePlayerIn" +
-      "fo\022\027\n\017player_uid_list\030\013 \003(\rB\033\n\031emu.grass" +
-      "cutter.net.protob\006proto3"
+      "yerInfo.proto\032\026PlayerWidgetInfo.proto\"\221\001" +
+      "\n\025WorldPlayerInfoNotify\0222\n\027player_widget" +
+      "_info_list\030\010 \003(\0132\021.PlayerWidgetInfo\022+\n\020p" +
+      "layer_info_list\030\016 \003(\0132\021.OnlinePlayerInfo" +
+      "\022\027\n\017player_uid_list\030\013 \003(\rB\033\n\031emu.grasscu" +
+      "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.getDescriptor(),
+          emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.getDescriptor(),
         });
     internal_static_WorldPlayerInfoNotify_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_WorldPlayerInfoNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_WorldPlayerInfoNotify_descriptor,
-        new java.lang.String[] { "Unk3000GCJLJCJAADG", "PlayerInfoList", "PlayerUidList", });
+        new java.lang.String[] { "PlayerWidgetInfoList", "PlayerInfoList", "PlayerUidList", });
     emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.Unk3000HKHFFDEMNKN.getDescriptor();
+    emu.grasscutter.net.proto.PlayerWidgetInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

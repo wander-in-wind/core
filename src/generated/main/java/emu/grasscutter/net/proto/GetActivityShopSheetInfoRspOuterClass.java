@@ -55,6 +55,12 @@ public final class GetActivityShopSheetInfoRspOuterClass {
     int getRetcode();
   }
   /**
+   * <pre>
+   * CmdId: 790
+   * EnetChannelId: 0
+   * EnetIsReliable: true
+   * </pre>
+   *
    * Protobuf type {@code GetActivityShopSheetInfoRsp}
    */
   public static final class GetActivityShopSheetInfoRsp extends
@@ -397,6 +403,12 @@ public final class GetActivityShopSheetInfoRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 790
+     * EnetChannelId: 0
+     * EnetIsReliable: true
+     * </pre>
+     *
      * Protobuf type {@code GetActivityShopSheetInfoRsp}
      */
     public static final class Builder extends

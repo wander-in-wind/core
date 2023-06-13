@@ -129,10 +129,10 @@ public final class AbilityMetaModifierChangeOuterClass {
     emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getParentAbilityOverrideOrBuilder();
 
     /**
-     * <code>bool Unk2700_PMJMNCFJPDC = 9;</code>
-     * @return The unk2700PMJMNCFJPDC.
+     * <code>bool is_durability_zero = 9;</code>
+     * @return The isDurabilityZero.
      */
-    boolean getUnk2700PMJMNCFJPDC();
+    boolean getIsDurabilityZero();
   }
   /**
    * Protobuf type {@code AbilityMetaModifierChange}
@@ -239,7 +239,7 @@ public final class AbilityMetaModifierChangeOuterClass {
             }
             case 72: {
 
-              unk2700PMJMNCFJPDC_ = input.readBool();
+              isDurabilityZero_ = input.readBool();
               break;
             }
             case 80: {
@@ -493,15 +493,15 @@ public final class AbilityMetaModifierChangeOuterClass {
       return getParentAbilityOverride();
     }
 
-    public static final int UNK2700_PMJMNCFJPDC_FIELD_NUMBER = 9;
-    private boolean unk2700PMJMNCFJPDC_;
+    public static final int IS_DURABILITY_ZERO_FIELD_NUMBER = 9;
+    private boolean isDurabilityZero_;
     /**
-     * <code>bool Unk2700_PMJMNCFJPDC = 9;</code>
-     * @return The unk2700PMJMNCFJPDC.
+     * <code>bool is_durability_zero = 9;</code>
+     * @return The isDurabilityZero.
      */
     @java.lang.Override
-    public boolean getUnk2700PMJMNCFJPDC() {
-      return unk2700PMJMNCFJPDC_;
+    public boolean getIsDurabilityZero() {
+      return isDurabilityZero_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -539,8 +539,8 @@ public final class AbilityMetaModifierChangeOuterClass {
       if (attachedInstancedModifier_ != null) {
         output.writeMessage(7, getAttachedInstancedModifier());
       }
-      if (unk2700PMJMNCFJPDC_ != false) {
-        output.writeBool(9, unk2700PMJMNCFJPDC_);
+      if (isDurabilityZero_ != false) {
+        output.writeBool(9, isDurabilityZero_);
       }
       if (isAttachedParentAbility_ != false) {
         output.writeBool(10, isAttachedParentAbility_);
@@ -548,7 +548,7 @@ public final class AbilityMetaModifierChangeOuterClass {
       if (parentAbilityOverride_ != null) {
         output.writeMessage(11, getParentAbilityOverride());
       }
-      if (action_ != emu.grasscutter.net.proto.ModifierActionOuterClass.ModifierAction.ADDED.getNumber()) {
+      if (action_ != emu.grasscutter.net.proto.ModifierActionOuterClass.ModifierAction.MODIFIER_ACTION_ADDED.getNumber()) {
         output.writeEnum(13, action_);
       }
       unknownFields.writeTo(output);
@@ -588,9 +588,9 @@ public final class AbilityMetaModifierChangeOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(7, getAttachedInstancedModifier());
       }
-      if (unk2700PMJMNCFJPDC_ != false) {
+      if (isDurabilityZero_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, unk2700PMJMNCFJPDC_);
+          .computeBoolSize(9, isDurabilityZero_);
       }
       if (isAttachedParentAbility_ != false) {
         size += com.google.protobuf.CodedOutputStream
@@ -600,7 +600,7 @@ public final class AbilityMetaModifierChangeOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(11, getParentAbilityOverride());
       }
-      if (action_ != emu.grasscutter.net.proto.ModifierActionOuterClass.ModifierAction.ADDED.getNumber()) {
+      if (action_ != emu.grasscutter.net.proto.ModifierActionOuterClass.ModifierAction.MODIFIER_ACTION_ADDED.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(13, action_);
       }
@@ -647,8 +647,8 @@ public final class AbilityMetaModifierChangeOuterClass {
         if (!getParentAbilityOverride()
             .equals(other.getParentAbilityOverride())) return false;
       }
-      if (getUnk2700PMJMNCFJPDC()
-          != other.getUnk2700PMJMNCFJPDC()) return false;
+      if (getIsDurabilityZero()
+          != other.getIsDurabilityZero()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -690,9 +690,9 @@ public final class AbilityMetaModifierChangeOuterClass {
         hash = (37 * hash) + PARENT_ABILITY_OVERRIDE_FIELD_NUMBER;
         hash = (53 * hash) + getParentAbilityOverride().hashCode();
       }
-      hash = (37 * hash) + UNK2700_PMJMNCFJPDC_FIELD_NUMBER;
+      hash = (37 * hash) + IS_DURABILITY_ZERO_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk2700PMJMNCFJPDC());
+          getIsDurabilityZero());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -863,7 +863,7 @@ public final class AbilityMetaModifierChangeOuterClass {
           parentAbilityOverride_ = null;
           parentAbilityOverrideBuilder_ = null;
         }
-        unk2700PMJMNCFJPDC_ = false;
+        isDurabilityZero_ = false;
 
         return this;
       }
@@ -922,7 +922,7 @@ public final class AbilityMetaModifierChangeOuterClass {
         } else {
           result.parentAbilityOverride_ = parentAbilityOverrideBuilder_.build();
         }
-        result.unk2700PMJMNCFJPDC_ = unk2700PMJMNCFJPDC_;
+        result.isDurabilityZero_ = isDurabilityZero_;
         onBuilt();
         return result;
       }
@@ -1024,8 +1024,8 @@ public final class AbilityMetaModifierChangeOuterClass {
         if (other.hasParentAbilityOverride()) {
           mergeParentAbilityOverride(other.getParentAbilityOverride());
         }
-        if (other.getUnk2700PMJMNCFJPDC() != false) {
-          setUnk2700PMJMNCFJPDC(other.getUnk2700PMJMNCFJPDC());
+        if (other.getIsDurabilityZero() != false) {
+          setIsDurabilityZero(other.getIsDurabilityZero());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1863,33 +1863,33 @@ public final class AbilityMetaModifierChangeOuterClass {
         return parentAbilityOverrideBuilder_;
       }
 
-      private boolean unk2700PMJMNCFJPDC_ ;
+      private boolean isDurabilityZero_ ;
       /**
-       * <code>bool Unk2700_PMJMNCFJPDC = 9;</code>
-       * @return The unk2700PMJMNCFJPDC.
+       * <code>bool is_durability_zero = 9;</code>
+       * @return The isDurabilityZero.
        */
       @java.lang.Override
-      public boolean getUnk2700PMJMNCFJPDC() {
-        return unk2700PMJMNCFJPDC_;
+      public boolean getIsDurabilityZero() {
+        return isDurabilityZero_;
       }
       /**
-       * <code>bool Unk2700_PMJMNCFJPDC = 9;</code>
-       * @param value The unk2700PMJMNCFJPDC to set.
+       * <code>bool is_durability_zero = 9;</code>
+       * @param value The isDurabilityZero to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700PMJMNCFJPDC(boolean value) {
+      public Builder setIsDurabilityZero(boolean value) {
         
-        unk2700PMJMNCFJPDC_ = value;
+        isDurabilityZero_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk2700_PMJMNCFJPDC = 9;</code>
+       * <code>bool is_durability_zero = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700PMJMNCFJPDC() {
+      public Builder clearIsDurabilityZero() {
         
-        unk2700PMJMNCFJPDC_ = false;
+        isDurabilityZero_ = false;
         onChanged();
         return this;
       }
@@ -1963,7 +1963,7 @@ public final class AbilityMetaModifierChangeOuterClass {
       "\n\037AbilityMetaModifierChange.proto\032\035Abili" +
       "tyAttachedModifier.proto\032\023AbilityString." +
       "proto\032\024ModifierAction.proto\032\026ModifierPro" +
-      "perty.proto\"\246\003\n\031AbilityMetaModifierChang" +
+      "perty.proto\"\245\003\n\031AbilityMetaModifierChang" +
       "e\022=\n\033attached_instanced_modifier\030\007 \001(\0132\030" +
       ".AbilityAttachedModifier\022\027\n\017server_buff_" +
       "uid\030\004 \001(\r\022\"\n\032is_attached_parent_ability\030" +
@@ -1973,8 +1973,8 @@ public final class AbilityMetaModifierChangeOuterClass {
       "e_remote\030\006 \001(\010\022\027\n\017apply_entity_id\030\005 \001(\r\022" +
       "%\n\nproperties\030\003 \003(\0132\021.ModifierProperty\022/" +
       "\n\027parent_ability_override\030\013 \001(\0132\016.Abilit" +
-      "yString\022\033\n\023Unk2700_PMJMNCFJPDC\030\t \001(\010B\033\n\031" +
-      "emu.grasscutter.net.protob\006proto3"
+      "yString\022\032\n\022is_durability_zero\030\t \001(\010B\033\n\031e" +
+      "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1989,7 +1989,7 @@ public final class AbilityMetaModifierChangeOuterClass {
     internal_static_AbilityMetaModifierChange_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilityMetaModifierChange_descriptor,
-        new java.lang.String[] { "AttachedInstancedModifier", "ServerBuffUid", "IsAttachedParentAbility", "Action", "ModifierLocalId", "ParentAbilityName", "IsMuteRemote", "ApplyEntityId", "Properties", "ParentAbilityOverride", "Unk2700PMJMNCFJPDC", });
+        new java.lang.String[] { "AttachedInstancedModifier", "ServerBuffUid", "IsAttachedParentAbility", "Action", "ModifierLocalId", "ParentAbilityName", "IsMuteRemote", "ApplyEntityId", "Properties", "ParentAbilityOverride", "IsDurabilityZero", });
     emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.getDescriptor();
     emu.grasscutter.net.proto.AbilityStringOuterClass.getDescriptor();
     emu.grasscutter.net.proto.ModifierActionOuterClass.getDescriptor();

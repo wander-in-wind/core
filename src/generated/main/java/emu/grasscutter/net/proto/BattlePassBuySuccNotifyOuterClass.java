@@ -64,8 +64,7 @@ public final class BattlePassBuySuccNotifyOuterClass {
    * <pre>
    * CmdId: 2614
    * EnetChannelId: 0
-   * EnetIsReliable: false
-   * IsAllowClient: true
+   * EnetIsReliable: true
    * </pre>
    *
    * Protobuf type {@code BattlePassBuySuccNotify}
@@ -440,8 +439,7 @@ public final class BattlePassBuySuccNotifyOuterClass {
      * <pre>
      * CmdId: 2614
      * EnetChannelId: 0
-     * EnetIsReliable: false
-     * IsAllowClient: true
+     * EnetIsReliable: true
      * </pre>
      *
      * Protobuf type {@code BattlePassBuySuccNotify}

@@ -25,10 +25,10 @@ public final class AttackResultOuterClass {
     boolean getIsResistText();
 
     /**
-     * <code>uint32 Unk2700_GBANCFEPPIM = 1011;</code>
-     * @return The unk2700GBANCFEPPIM.
+     * <code>uint32 create_count_sync_to_server = 1011;</code>
+     * @return The createCountSyncToServer.
      */
-    int getUnk2700GBANCFEPPIM();
+    int getCreateCountSyncToServer();
 
     /**
      * <code>uint32 amplify_reaction_type = 2005;</code>
@@ -411,7 +411,7 @@ public final class AttackResultOuterClass {
             }
             case 8088: {
 
-              unk2700GBANCFEPPIM_ = input.readUInt32();
+              createCountSyncToServer_ = input.readUInt32();
               break;
             }
             case 8880: {
@@ -512,15 +512,15 @@ public final class AttackResultOuterClass {
       return isResistText_;
     }
 
-    public static final int UNK2700_GBANCFEPPIM_FIELD_NUMBER = 1011;
-    private int unk2700GBANCFEPPIM_;
+    public static final int CREATE_COUNT_SYNC_TO_SERVER_FIELD_NUMBER = 1011;
+    private int createCountSyncToServer_;
     /**
-     * <code>uint32 Unk2700_GBANCFEPPIM = 1011;</code>
-     * @return The unk2700GBANCFEPPIM.
+     * <code>uint32 create_count_sync_to_server = 1011;</code>
+     * @return The createCountSyncToServer.
      */
     @java.lang.Override
-    public int getUnk2700GBANCFEPPIM() {
-      return unk2700GBANCFEPPIM_;
+    public int getCreateCountSyncToServer() {
+      return createCountSyncToServer_;
     }
 
     public static final int AMPLIFY_REACTION_TYPE_FIELD_NUMBER = 2005;
@@ -986,8 +986,8 @@ public final class AttackResultOuterClass {
       if (elementAmplifyRate_ != 0F) {
         output.writeFloat(900, elementAmplifyRate_);
       }
-      if (unk2700GBANCFEPPIM_ != 0) {
-        output.writeUInt32(1011, unk2700GBANCFEPPIM_);
+      if (createCountSyncToServer_ != 0) {
+        output.writeUInt32(1011, createCountSyncToServer_);
       }
       if (gadgetDamageActionIdx_ != 0) {
         output.writeUInt32(1110, gadgetDamageActionIdx_);
@@ -1102,9 +1102,9 @@ public final class AttackResultOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeFloatSize(900, elementAmplifyRate_);
       }
-      if (unk2700GBANCFEPPIM_ != 0) {
+      if (createCountSyncToServer_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1011, unk2700GBANCFEPPIM_);
+          .computeUInt32Size(1011, createCountSyncToServer_);
       }
       if (gadgetDamageActionIdx_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -1167,8 +1167,8 @@ public final class AttackResultOuterClass {
 
       if (getIsResistText()
           != other.getIsResistText()) return false;
-      if (getUnk2700GBANCFEPPIM()
-          != other.getUnk2700GBANCFEPPIM()) return false;
+      if (getCreateCountSyncToServer()
+          != other.getCreateCountSyncToServer()) return false;
       if (getAmplifyReactionType()
           != other.getAmplifyReactionType()) return false;
       if (getEndureBreak()
@@ -1256,8 +1256,8 @@ public final class AttackResultOuterClass {
       hash = (37 * hash) + IS_RESIST_TEXT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsResistText());
-      hash = (37 * hash) + UNK2700_GBANCFEPPIM_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2700GBANCFEPPIM();
+      hash = (37 * hash) + CREATE_COUNT_SYNC_TO_SERVER_FIELD_NUMBER;
+      hash = (53 * hash) + getCreateCountSyncToServer();
       hash = (37 * hash) + AMPLIFY_REACTION_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getAmplifyReactionType();
       hash = (37 * hash) + ENDURE_BREAK_FIELD_NUMBER;
@@ -1465,7 +1465,7 @@ public final class AttackResultOuterClass {
         super.clear();
         isResistText_ = false;
 
-        unk2700GBANCFEPPIM_ = 0;
+        createCountSyncToServer_ = 0;
 
         amplifyReactionType_ = 0;
 
@@ -1566,7 +1566,7 @@ public final class AttackResultOuterClass {
       public emu.grasscutter.net.proto.AttackResultOuterClass.AttackResult buildPartial() {
         emu.grasscutter.net.proto.AttackResultOuterClass.AttackResult result = new emu.grasscutter.net.proto.AttackResultOuterClass.AttackResult(this);
         result.isResistText_ = isResistText_;
-        result.unk2700GBANCFEPPIM_ = unk2700GBANCFEPPIM_;
+        result.createCountSyncToServer_ = createCountSyncToServer_;
         result.amplifyReactionType_ = amplifyReactionType_;
         result.endureBreak_ = endureBreak_;
         result.elementType_ = elementType_;
@@ -1662,8 +1662,8 @@ public final class AttackResultOuterClass {
         if (other.getIsResistText() != false) {
           setIsResistText(other.getIsResistText());
         }
-        if (other.getUnk2700GBANCFEPPIM() != 0) {
-          setUnk2700GBANCFEPPIM(other.getUnk2700GBANCFEPPIM());
+        if (other.getCreateCountSyncToServer() != 0) {
+          setCreateCountSyncToServer(other.getCreateCountSyncToServer());
         }
         if (other.getAmplifyReactionType() != 0) {
           setAmplifyReactionType(other.getAmplifyReactionType());
@@ -1810,33 +1810,33 @@ public final class AttackResultOuterClass {
         return this;
       }
 
-      private int unk2700GBANCFEPPIM_ ;
+      private int createCountSyncToServer_ ;
       /**
-       * <code>uint32 Unk2700_GBANCFEPPIM = 1011;</code>
-       * @return The unk2700GBANCFEPPIM.
+       * <code>uint32 create_count_sync_to_server = 1011;</code>
+       * @return The createCountSyncToServer.
        */
       @java.lang.Override
-      public int getUnk2700GBANCFEPPIM() {
-        return unk2700GBANCFEPPIM_;
+      public int getCreateCountSyncToServer() {
+        return createCountSyncToServer_;
       }
       /**
-       * <code>uint32 Unk2700_GBANCFEPPIM = 1011;</code>
-       * @param value The unk2700GBANCFEPPIM to set.
+       * <code>uint32 create_count_sync_to_server = 1011;</code>
+       * @param value The createCountSyncToServer to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700GBANCFEPPIM(int value) {
+      public Builder setCreateCountSyncToServer(int value) {
         
-        unk2700GBANCFEPPIM_ = value;
+        createCountSyncToServer_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk2700_GBANCFEPPIM = 1011;</code>
+       * <code>uint32 create_count_sync_to_server = 1011;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700GBANCFEPPIM() {
+      public Builder clearCreateCountSyncToServer() {
         
-        unk2700GBANCFEPPIM_ = 0;
+        createCountSyncToServer_ = 0;
         onChanged();
         return this;
       }
@@ -3174,30 +3174,30 @@ public final class AttackResultOuterClass {
     java.lang.String[] descriptorData = {
       "\n\022AttackResult.proto\032\027AbilityIdentifier." +
       "proto\032\033AttackHitEffectResult.proto\032\022HitC" +
-      "ollision.proto\032\014Vector.proto\"\346\006\n\014AttackR" +
-      "esult\022\027\n\016is_resist_text\030\302\016 \001(\010\022\034\n\023Unk270" +
-      "0_GBANCFEPPIM\030\363\007 \001(\r\022\036\n\025amplify_reaction" +
-      "_type\030\325\017 \001(\r\022\024\n\014endure_break\030\007 \001(\r\022\024\n\014el" +
-      "ement_type\030\005 \001(\r\022\'\n\036element_durability_a" +
-      "ttenuation\030\251\003 \001(\002\022\022\n\ndefense_id\030\017 \001(\r\022\034\n" +
-      "\023attack_timestamp_ms\030\244\t \001(\r\022\032\n\022bullet_fl" +
-      "y_time_ms\030[ \001(\r\022\017\n\007is_crit\030\r \001(\010\022\035\n\024elem" +
-      "ent_amplify_rate\030\204\007 \001(\002\022\025\n\014attack_count\030" +
-      "\234\014 \001(\r\022\026\n\rcritical_rand\030\200\r \001(\r\022\024\n\014hit_po" +
-      "s_type\030\002 \001(\r\022\025\n\ranim_event_id\030\004 \001(\t\022.\n\016h" +
-      "it_eff_result\030\010 \001(\0132\026.AttackHitEffectRes" +
-      "ult\022\026\n\rdamage_shield\030\262\t \001(\002\022\025\n\014endure_de" +
-      "lta\030\256\003 \001(\002\022\035\n\014resolved_dir\030\001 \001(\0132\007.Vecto" +
-      "r\022\016\n\006damage\030\006 \001(\002\022\036\n\025addhurt_reaction_ty" +
-      "pe\030\337\016 \001(\r\022\035\n\024hashed_anim_event_id\030\226\002 \001(\r" +
-      "\022!\n\030use_gadget_damage_action\030\212\013 \001(\010\022 \n\030h" +
-      "it_retreat_angle_compat\030\t \001(\005\022.\n\022ability" +
-      "_identifier\030\016 \001(\0132\022.AbilityIdentifier\022\023\n" +
-      "\013attacker_id\030\013 \001(\r\022\032\n\021mute_element_hurt\030" +
-      "\372\013 \001(\010\022\024\n\013target_type\030\326\n \001(\r\022$\n\rhit_coll" +
-      "ision\030\n \001(\0132\r.HitCollision\022!\n\030gadget_dam" +
-      "age_action_idx\030\326\010 \001(\rB\033\n\031emu.grasscutter" +
-      ".net.protob\006proto3"
+      "ollision.proto\032\014Vector.proto\"\356\006\n\014AttackR" +
+      "esult\022\027\n\016is_resist_text\030\302\016 \001(\010\022$\n\033create" +
+      "_count_sync_to_server\030\363\007 \001(\r\022\036\n\025amplify_" +
+      "reaction_type\030\325\017 \001(\r\022\024\n\014endure_break\030\007 \001" +
+      "(\r\022\024\n\014element_type\030\005 \001(\r\022\'\n\036element_dura" +
+      "bility_attenuation\030\251\003 \001(\002\022\022\n\ndefense_id\030" +
+      "\017 \001(\r\022\034\n\023attack_timestamp_ms\030\244\t \001(\r\022\032\n\022b" +
+      "ullet_fly_time_ms\030[ \001(\r\022\017\n\007is_crit\030\r \001(\010" +
+      "\022\035\n\024element_amplify_rate\030\204\007 \001(\002\022\025\n\014attac" +
+      "k_count\030\234\014 \001(\r\022\026\n\rcritical_rand\030\200\r \001(\r\022\024" +
+      "\n\014hit_pos_type\030\002 \001(\r\022\025\n\ranim_event_id\030\004 " +
+      "\001(\t\022.\n\016hit_eff_result\030\010 \001(\0132\026.AttackHitE" +
+      "ffectResult\022\026\n\rdamage_shield\030\262\t \001(\002\022\025\n\014e" +
+      "ndure_delta\030\256\003 \001(\002\022\035\n\014resolved_dir\030\001 \001(\013" +
+      "2\007.Vector\022\016\n\006damage\030\006 \001(\002\022\036\n\025addhurt_rea" +
+      "ction_type\030\337\016 \001(\r\022\035\n\024hashed_anim_event_i" +
+      "d\030\226\002 \001(\r\022!\n\030use_gadget_damage_action\030\212\013 " +
+      "\001(\010\022 \n\030hit_retreat_angle_compat\030\t \001(\005\022.\n" +
+      "\022ability_identifier\030\016 \001(\0132\022.AbilityIdent" +
+      "ifier\022\023\n\013attacker_id\030\013 \001(\r\022\032\n\021mute_eleme" +
+      "nt_hurt\030\372\013 \001(\010\022\024\n\013target_type\030\326\n \001(\r\022$\n\r" +
+      "hit_collision\030\n \001(\0132\r.HitCollision\022!\n\030ga" +
+      "dget_damage_action_idx\030\326\010 \001(\rB\033\n\031emu.gra" +
+      "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -3212,7 +3212,7 @@ public final class AttackResultOuterClass {
     internal_static_AttackResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AttackResult_descriptor,
-        new java.lang.String[] { "IsResistText", "Unk2700GBANCFEPPIM", "AmplifyReactionType", "EndureBreak", "ElementType", "ElementDurabilityAttenuation", "DefenseId", "AttackTimestampMs", "BulletFlyTimeMs", "IsCrit", "ElementAmplifyRate", "AttackCount", "CriticalRand", "HitPosType", "AnimEventId", "HitEffResult", "DamageShield", "EndureDelta", "ResolvedDir", "Damage", "AddhurtReactionType", "HashedAnimEventId", "UseGadgetDamageAction", "HitRetreatAngleCompat", "AbilityIdentifier", "AttackerId", "MuteElementHurt", "TargetType", "HitCollision", "GadgetDamageActionIdx", });
+        new java.lang.String[] { "IsResistText", "CreateCountSyncToServer", "AmplifyReactionType", "EndureBreak", "ElementType", "ElementDurabilityAttenuation", "DefenseId", "AttackTimestampMs", "BulletFlyTimeMs", "IsCrit", "ElementAmplifyRate", "AttackCount", "CriticalRand", "HitPosType", "AnimEventId", "HitEffResult", "DamageShield", "EndureDelta", "ResolvedDir", "Damage", "AddhurtReactionType", "HashedAnimEventId", "UseGadgetDamageAction", "HitRetreatAngleCompat", "AbilityIdentifier", "AttackerId", "MuteElementHurt", "TargetType", "HitCollision", "GadgetDamageActionIdx", });
     emu.grasscutter.net.proto.AbilityIdentifierOuterClass.getDescriptor();
     emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.getDescriptor();
     emu.grasscutter.net.proto.HitCollisionOuterClass.getDescriptor();

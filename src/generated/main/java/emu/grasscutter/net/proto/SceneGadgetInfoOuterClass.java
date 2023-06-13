@@ -446,34 +446,34 @@ public final class SceneGadgetInfoOuterClass {
     emu.grasscutter.net.proto.RoguelikeGadgetInfoOuterClass.RoguelikeGadgetInfoOrBuilder getRoguelikeGadgetInfoOrBuilder();
 
     /**
-     * <code>.Unk2800_FHMOLALLEEN night_crow_gadget_info = 62;</code>
+     * <code>.NightCrowGadgetInfo night_crow_gadget_info = 62;</code>
      * @return Whether the nightCrowGadgetInfo field is set.
      */
     boolean hasNightCrowGadgetInfo();
     /**
-     * <code>.Unk2800_FHMOLALLEEN night_crow_gadget_info = 62;</code>
+     * <code>.NightCrowGadgetInfo night_crow_gadget_info = 62;</code>
      * @return The nightCrowGadgetInfo.
      */
-    emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEEN getNightCrowGadgetInfo();
+    emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfo getNightCrowGadgetInfo();
     /**
-     * <code>.Unk2800_FHMOLALLEEN night_crow_gadget_info = 62;</code>
+     * <code>.NightCrowGadgetInfo night_crow_gadget_info = 62;</code>
      */
-    emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEENOrBuilder getNightCrowGadgetInfoOrBuilder();
+    emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfoOrBuilder getNightCrowGadgetInfoOrBuilder();
 
     /**
-     * <code>.Unk3000_FANANGGCLOF deshret_obelisk_gadget_info = 63;</code>
+     * <code>.DeshretObeliskGadgetInfo deshret_obelisk_gadget_info = 63;</code>
      * @return Whether the deshretObeliskGadgetInfo field is set.
      */
     boolean hasDeshretObeliskGadgetInfo();
     /**
-     * <code>.Unk3000_FANANGGCLOF deshret_obelisk_gadget_info = 63;</code>
+     * <code>.DeshretObeliskGadgetInfo deshret_obelisk_gadget_info = 63;</code>
      * @return The deshretObeliskGadgetInfo.
      */
-    emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOF getDeshretObeliskGadgetInfo();
+    emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo getDeshretObeliskGadgetInfo();
     /**
-     * <code>.Unk3000_FANANGGCLOF deshret_obelisk_gadget_info = 63;</code>
+     * <code>.DeshretObeliskGadgetInfo deshret_obelisk_gadget_info = 63;</code>
      */
-    emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOFOrBuilder getDeshretObeliskGadgetInfoOrBuilder();
+    emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfoOrBuilder getDeshretObeliskGadgetInfoOrBuilder();
 
     public emu.grasscutter.net.proto.SceneGadgetInfoOuterClass.SceneGadgetInfo.ContentCase getContentCase();
   }
@@ -902,28 +902,28 @@ public final class SceneGadgetInfoOuterClass {
               break;
             }
             case 498: {
-              emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEEN.Builder subBuilder = null;
+              emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfo.Builder subBuilder = null;
               if (contentCase_ == 62) {
-                subBuilder = ((emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEEN) content_).toBuilder();
+                subBuilder = ((emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfo) content_).toBuilder();
               }
               content_ =
-                  input.readMessage(emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEEN.parser(), extensionRegistry);
+                  input.readMessage(emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfo.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEEN) content_);
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfo) content_);
                 content_ = subBuilder.buildPartial();
               }
               contentCase_ = 62;
               break;
             }
             case 506: {
-              emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOF.Builder subBuilder = null;
+              emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo.Builder subBuilder = null;
               if (contentCase_ == 63) {
-                subBuilder = ((emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOF) content_).toBuilder();
+                subBuilder = ((emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo) content_).toBuilder();
               }
               content_ =
-                  input.readMessage(emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOF.parser(), extensionRegistry);
+                  input.readMessage(emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOF) content_);
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo) content_);
                 content_ = subBuilder.buildPartial();
               }
               contentCase_ = 63;
@@ -1900,7 +1900,7 @@ public final class SceneGadgetInfoOuterClass {
 
     public static final int NIGHT_CROW_GADGET_INFO_FIELD_NUMBER = 62;
     /**
-     * <code>.Unk2800_FHMOLALLEEN night_crow_gadget_info = 62;</code>
+     * <code>.NightCrowGadgetInfo night_crow_gadget_info = 62;</code>
      * @return Whether the nightCrowGadgetInfo field is set.
      */
     @java.lang.Override
@@ -1908,30 +1908,30 @@ public final class SceneGadgetInfoOuterClass {
       return contentCase_ == 62;
     }
     /**
-     * <code>.Unk2800_FHMOLALLEEN night_crow_gadget_info = 62;</code>
+     * <code>.NightCrowGadgetInfo night_crow_gadget_info = 62;</code>
      * @return The nightCrowGadgetInfo.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEEN getNightCrowGadgetInfo() {
+    public emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfo getNightCrowGadgetInfo() {
       if (contentCase_ == 62) {
-         return (emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEEN) content_;
+         return (emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfo) content_;
       }
-      return emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEEN.getDefaultInstance();
+      return emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfo.getDefaultInstance();
     }
     /**
-     * <code>.Unk2800_FHMOLALLEEN night_crow_gadget_info = 62;</code>
+     * <code>.NightCrowGadgetInfo night_crow_gadget_info = 62;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEENOrBuilder getNightCrowGadgetInfoOrBuilder() {
+    public emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfoOrBuilder getNightCrowGadgetInfoOrBuilder() {
       if (contentCase_ == 62) {
-         return (emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEEN) content_;
+         return (emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfo) content_;
       }
-      return emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEEN.getDefaultInstance();
+      return emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfo.getDefaultInstance();
     }
 
     public static final int DESHRET_OBELISK_GADGET_INFO_FIELD_NUMBER = 63;
     /**
-     * <code>.Unk3000_FANANGGCLOF deshret_obelisk_gadget_info = 63;</code>
+     * <code>.DeshretObeliskGadgetInfo deshret_obelisk_gadget_info = 63;</code>
      * @return Whether the deshretObeliskGadgetInfo field is set.
      */
     @java.lang.Override
@@ -1939,25 +1939,25 @@ public final class SceneGadgetInfoOuterClass {
       return contentCase_ == 63;
     }
     /**
-     * <code>.Unk3000_FANANGGCLOF deshret_obelisk_gadget_info = 63;</code>
+     * <code>.DeshretObeliskGadgetInfo deshret_obelisk_gadget_info = 63;</code>
      * @return The deshretObeliskGadgetInfo.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOF getDeshretObeliskGadgetInfo() {
+    public emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo getDeshretObeliskGadgetInfo() {
       if (contentCase_ == 63) {
-         return (emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOF) content_;
+         return (emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo) content_;
       }
-      return emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOF.getDefaultInstance();
+      return emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo.getDefaultInstance();
     }
     /**
-     * <code>.Unk3000_FANANGGCLOF deshret_obelisk_gadget_info = 63;</code>
+     * <code>.DeshretObeliskGadgetInfo deshret_obelisk_gadget_info = 63;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOFOrBuilder getDeshretObeliskGadgetInfoOrBuilder() {
+    public emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfoOrBuilder getDeshretObeliskGadgetInfoOrBuilder() {
       if (contentCase_ == 63) {
-         return (emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOF) content_;
+         return (emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo) content_;
       }
-      return emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOF.getDefaultInstance();
+      return emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo.getDefaultInstance();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -2088,10 +2088,10 @@ public final class SceneGadgetInfoOuterClass {
         output.writeMessage(61, (emu.grasscutter.net.proto.RoguelikeGadgetInfoOuterClass.RoguelikeGadgetInfo) content_);
       }
       if (contentCase_ == 62) {
-        output.writeMessage(62, (emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEEN) content_);
+        output.writeMessage(62, (emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfo) content_);
       }
       if (contentCase_ == 63) {
-        output.writeMessage(63, (emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOF) content_);
+        output.writeMessage(63, (emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo) content_);
       }
       if (playInfo_ != null) {
         output.writeMessage(100, getPlayInfo());
@@ -2261,11 +2261,11 @@ public final class SceneGadgetInfoOuterClass {
       }
       if (contentCase_ == 62) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(62, (emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEEN) content_);
+          .computeMessageSize(62, (emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfo) content_);
       }
       if (contentCase_ == 63) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(63, (emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOF) content_);
+          .computeMessageSize(63, (emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo) content_);
       }
       if (playInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
@@ -6671,9 +6671,9 @@ public final class SceneGadgetInfoOuterClass {
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEEN, emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEEN.Builder, emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEENOrBuilder> nightCrowGadgetInfoBuilder_;
+          emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfo, emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfo.Builder, emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfoOrBuilder> nightCrowGadgetInfoBuilder_;
       /**
-       * <code>.Unk2800_FHMOLALLEEN night_crow_gadget_info = 62;</code>
+       * <code>.NightCrowGadgetInfo night_crow_gadget_info = 62;</code>
        * @return Whether the nightCrowGadgetInfo field is set.
        */
       @java.lang.Override
@@ -6681,27 +6681,27 @@ public final class SceneGadgetInfoOuterClass {
         return contentCase_ == 62;
       }
       /**
-       * <code>.Unk2800_FHMOLALLEEN night_crow_gadget_info = 62;</code>
+       * <code>.NightCrowGadgetInfo night_crow_gadget_info = 62;</code>
        * @return The nightCrowGadgetInfo.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEEN getNightCrowGadgetInfo() {
+      public emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfo getNightCrowGadgetInfo() {
         if (nightCrowGadgetInfoBuilder_ == null) {
           if (contentCase_ == 62) {
-            return (emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEEN) content_;
+            return (emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfo) content_;
           }
-          return emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEEN.getDefaultInstance();
+          return emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfo.getDefaultInstance();
         } else {
           if (contentCase_ == 62) {
             return nightCrowGadgetInfoBuilder_.getMessage();
           }
-          return emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEEN.getDefaultInstance();
+          return emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.Unk2800_FHMOLALLEEN night_crow_gadget_info = 62;</code>
+       * <code>.NightCrowGadgetInfo night_crow_gadget_info = 62;</code>
        */
-      public Builder setNightCrowGadgetInfo(emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEEN value) {
+      public Builder setNightCrowGadgetInfo(emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfo value) {
         if (nightCrowGadgetInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -6715,10 +6715,10 @@ public final class SceneGadgetInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Unk2800_FHMOLALLEEN night_crow_gadget_info = 62;</code>
+       * <code>.NightCrowGadgetInfo night_crow_gadget_info = 62;</code>
        */
       public Builder setNightCrowGadgetInfo(
-          emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEEN.Builder builderForValue) {
+          emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfo.Builder builderForValue) {
         if (nightCrowGadgetInfoBuilder_ == null) {
           content_ = builderForValue.build();
           onChanged();
@@ -6729,13 +6729,13 @@ public final class SceneGadgetInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Unk2800_FHMOLALLEEN night_crow_gadget_info = 62;</code>
+       * <code>.NightCrowGadgetInfo night_crow_gadget_info = 62;</code>
        */
-      public Builder mergeNightCrowGadgetInfo(emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEEN value) {
+      public Builder mergeNightCrowGadgetInfo(emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfo value) {
         if (nightCrowGadgetInfoBuilder_ == null) {
           if (contentCase_ == 62 &&
-              content_ != emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEEN.getDefaultInstance()) {
-            content_ = emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEEN.newBuilder((emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEEN) content_)
+              content_ != emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfo.getDefaultInstance()) {
+            content_ = emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfo.newBuilder((emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfo) content_)
                 .mergeFrom(value).buildPartial();
           } else {
             content_ = value;
@@ -6751,7 +6751,7 @@ public final class SceneGadgetInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Unk2800_FHMOLALLEEN night_crow_gadget_info = 62;</code>
+       * <code>.NightCrowGadgetInfo night_crow_gadget_info = 62;</code>
        */
       public Builder clearNightCrowGadgetInfo() {
         if (nightCrowGadgetInfoBuilder_ == null) {
@@ -6770,38 +6770,38 @@ public final class SceneGadgetInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Unk2800_FHMOLALLEEN night_crow_gadget_info = 62;</code>
+       * <code>.NightCrowGadgetInfo night_crow_gadget_info = 62;</code>
        */
-      public emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEEN.Builder getNightCrowGadgetInfoBuilder() {
+      public emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfo.Builder getNightCrowGadgetInfoBuilder() {
         return getNightCrowGadgetInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Unk2800_FHMOLALLEEN night_crow_gadget_info = 62;</code>
+       * <code>.NightCrowGadgetInfo night_crow_gadget_info = 62;</code>
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEENOrBuilder getNightCrowGadgetInfoOrBuilder() {
+      public emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfoOrBuilder getNightCrowGadgetInfoOrBuilder() {
         if ((contentCase_ == 62) && (nightCrowGadgetInfoBuilder_ != null)) {
           return nightCrowGadgetInfoBuilder_.getMessageOrBuilder();
         } else {
           if (contentCase_ == 62) {
-            return (emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEEN) content_;
+            return (emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfo) content_;
           }
-          return emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEEN.getDefaultInstance();
+          return emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.Unk2800_FHMOLALLEEN night_crow_gadget_info = 62;</code>
+       * <code>.NightCrowGadgetInfo night_crow_gadget_info = 62;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEEN, emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEEN.Builder, emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEENOrBuilder> 
+          emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfo, emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfo.Builder, emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfoOrBuilder> 
           getNightCrowGadgetInfoFieldBuilder() {
         if (nightCrowGadgetInfoBuilder_ == null) {
           if (!(contentCase_ == 62)) {
-            content_ = emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEEN.getDefaultInstance();
+            content_ = emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfo.getDefaultInstance();
           }
           nightCrowGadgetInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEEN, emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEEN.Builder, emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEENOrBuilder>(
-                  (emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.Unk2800_FHMOLALLEEN) content_,
+              emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfo, emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfo.Builder, emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfoOrBuilder>(
+                  (emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.NightCrowGadgetInfo) content_,
                   getParentForChildren(),
                   isClean());
           content_ = null;
@@ -6812,9 +6812,9 @@ public final class SceneGadgetInfoOuterClass {
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOF, emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOF.Builder, emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOFOrBuilder> deshretObeliskGadgetInfoBuilder_;
+          emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo, emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo.Builder, emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfoOrBuilder> deshretObeliskGadgetInfoBuilder_;
       /**
-       * <code>.Unk3000_FANANGGCLOF deshret_obelisk_gadget_info = 63;</code>
+       * <code>.DeshretObeliskGadgetInfo deshret_obelisk_gadget_info = 63;</code>
        * @return Whether the deshretObeliskGadgetInfo field is set.
        */
       @java.lang.Override
@@ -6822,27 +6822,27 @@ public final class SceneGadgetInfoOuterClass {
         return contentCase_ == 63;
       }
       /**
-       * <code>.Unk3000_FANANGGCLOF deshret_obelisk_gadget_info = 63;</code>
+       * <code>.DeshretObeliskGadgetInfo deshret_obelisk_gadget_info = 63;</code>
        * @return The deshretObeliskGadgetInfo.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOF getDeshretObeliskGadgetInfo() {
+      public emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo getDeshretObeliskGadgetInfo() {
         if (deshretObeliskGadgetInfoBuilder_ == null) {
           if (contentCase_ == 63) {
-            return (emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOF) content_;
+            return (emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo) content_;
           }
-          return emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOF.getDefaultInstance();
+          return emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo.getDefaultInstance();
         } else {
           if (contentCase_ == 63) {
             return deshretObeliskGadgetInfoBuilder_.getMessage();
           }
-          return emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOF.getDefaultInstance();
+          return emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.Unk3000_FANANGGCLOF deshret_obelisk_gadget_info = 63;</code>
+       * <code>.DeshretObeliskGadgetInfo deshret_obelisk_gadget_info = 63;</code>
        */
-      public Builder setDeshretObeliskGadgetInfo(emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOF value) {
+      public Builder setDeshretObeliskGadgetInfo(emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo value) {
         if (deshretObeliskGadgetInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -6856,10 +6856,10 @@ public final class SceneGadgetInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Unk3000_FANANGGCLOF deshret_obelisk_gadget_info = 63;</code>
+       * <code>.DeshretObeliskGadgetInfo deshret_obelisk_gadget_info = 63;</code>
        */
       public Builder setDeshretObeliskGadgetInfo(
-          emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOF.Builder builderForValue) {
+          emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo.Builder builderForValue) {
         if (deshretObeliskGadgetInfoBuilder_ == null) {
           content_ = builderForValue.build();
           onChanged();
@@ -6870,13 +6870,13 @@ public final class SceneGadgetInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Unk3000_FANANGGCLOF deshret_obelisk_gadget_info = 63;</code>
+       * <code>.DeshretObeliskGadgetInfo deshret_obelisk_gadget_info = 63;</code>
        */
-      public Builder mergeDeshretObeliskGadgetInfo(emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOF value) {
+      public Builder mergeDeshretObeliskGadgetInfo(emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo value) {
         if (deshretObeliskGadgetInfoBuilder_ == null) {
           if (contentCase_ == 63 &&
-              content_ != emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOF.getDefaultInstance()) {
-            content_ = emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOF.newBuilder((emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOF) content_)
+              content_ != emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo.getDefaultInstance()) {
+            content_ = emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo.newBuilder((emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo) content_)
                 .mergeFrom(value).buildPartial();
           } else {
             content_ = value;
@@ -6892,7 +6892,7 @@ public final class SceneGadgetInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Unk3000_FANANGGCLOF deshret_obelisk_gadget_info = 63;</code>
+       * <code>.DeshretObeliskGadgetInfo deshret_obelisk_gadget_info = 63;</code>
        */
       public Builder clearDeshretObeliskGadgetInfo() {
         if (deshretObeliskGadgetInfoBuilder_ == null) {
@@ -6911,38 +6911,38 @@ public final class SceneGadgetInfoOuterClass {
         return this;
       }
       /**
-       * <code>.Unk3000_FANANGGCLOF deshret_obelisk_gadget_info = 63;</code>
+       * <code>.DeshretObeliskGadgetInfo deshret_obelisk_gadget_info = 63;</code>
        */
-      public emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOF.Builder getDeshretObeliskGadgetInfoBuilder() {
+      public emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo.Builder getDeshretObeliskGadgetInfoBuilder() {
         return getDeshretObeliskGadgetInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Unk3000_FANANGGCLOF deshret_obelisk_gadget_info = 63;</code>
+       * <code>.DeshretObeliskGadgetInfo deshret_obelisk_gadget_info = 63;</code>
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOFOrBuilder getDeshretObeliskGadgetInfoOrBuilder() {
+      public emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfoOrBuilder getDeshretObeliskGadgetInfoOrBuilder() {
         if ((contentCase_ == 63) && (deshretObeliskGadgetInfoBuilder_ != null)) {
           return deshretObeliskGadgetInfoBuilder_.getMessageOrBuilder();
         } else {
           if (contentCase_ == 63) {
-            return (emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOF) content_;
+            return (emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo) content_;
           }
-          return emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOF.getDefaultInstance();
+          return emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.Unk3000_FANANGGCLOF deshret_obelisk_gadget_info = 63;</code>
+       * <code>.DeshretObeliskGadgetInfo deshret_obelisk_gadget_info = 63;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOF, emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOF.Builder, emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOFOrBuilder> 
+          emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo, emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo.Builder, emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfoOrBuilder> 
           getDeshretObeliskGadgetInfoFieldBuilder() {
         if (deshretObeliskGadgetInfoBuilder_ == null) {
           if (!(contentCase_ == 63)) {
-            content_ = emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOF.getDefaultInstance();
+            content_ = emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo.getDefaultInstance();
           }
           deshretObeliskGadgetInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOF, emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOF.Builder, emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOFOrBuilder>(
-                  (emu.grasscutter.net.proto.Unk3000FANANGGCLOF.Unk3000_FANANGGCLOF) content_,
+              emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo, emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo.Builder, emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfoOrBuilder>(
+                  (emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.DeshretObeliskGadgetInfo) content_,
                   getParentForChildren(),
                   isClean());
           content_ = null;
@@ -7021,54 +7021,54 @@ public final class SceneGadgetInfoOuterClass {
       "\n\025SceneGadgetInfo.proto\032\027AbilityGadgetIn" +
       "fo.proto\032\026BlossomChestInfo.proto\032\023BossCh" +
       "estInfo.proto\032\026ClientGadgetInfo.proto\032\032C" +
-      "ustomGadgetTreeInfo.proto\032\023EchoShellInfo" +
-      ".proto\032\022FishPoolInfo.proto\032\024FoundationIn" +
-      "fo.proto\032\024GadgetBornType.proto\032\035GadgetGe" +
-      "neralRewardInfo.proto\032\024GadgetPlayInfo.pr" +
-      "oto\032\026GatherGadgetInfo.proto\032\nItem.proto\032" +
-      "\026MpPlayRewardInfo.proto\032\022OfferingInfo.pr" +
-      "oto\032\022PlatformInfo.proto\032\031RoguelikeGadget" +
-      "Info.proto\032\020ScreenInfo.proto\032\026StatueGadg" +
-      "etInfo.proto\032\031Unk2800_FHMOLALLEEN.proto\032" +
-      "\031Unk3000_FANANGGCLOF.proto\032\021VehicleInfo." +
-      "proto\032\021WeatherInfo.proto\032\021WorktopInfo.pr" +
-      "oto\"\370\n\n\017SceneGadgetInfo\022\021\n\tgadget_id\030\001 \001" +
-      "(\r\022\020\n\010group_id\030\002 \001(\r\022\021\n\tconfig_id\030\003 \001(\r\022" +
-      "\027\n\017owner_entity_id\030\004 \001(\r\022\"\n\tborn_type\030\005 " +
-      "\001(\0162\017.GadgetBornType\022\024\n\014gadget_state\030\006 \001" +
-      "(\r\022\023\n\013gadget_type\030\007 \001(\r\022\030\n\020is_show_cutsc" +
-      "ene\030\010 \001(\010\022\031\n\021authority_peer_id\030\t \001(\r\022\032\n\022" +
-      "is_enable_interact\030\n \001(\010\022\023\n\013interact_id\030" +
-      "\013 \001(\r\022\021\n\tmark_flag\030\025 \001(\r\022\034\n\024prop_owner_e" +
-      "ntity_id\030\026 \001(\r\022\037\n\010platform\030\027 \001(\0132\r.Platf" +
-      "ormInfo\022\031\n\021interact_uid_list\030\030 \003(\r\022\020\n\010dr" +
-      "aft_id\030\031 \001(\r\022\031\n\021gadget_talk_state\030\032 \001(\r\022" +
-      "\"\n\tplay_info\030d \001(\0132\017.GadgetPlayInfo\022\034\n\013t" +
-      "rifle_item\030\014 \001(\0132\005.ItemH\000\022*\n\rgather_gadg" +
-      "et\030\r \001(\0132\021.GatherGadgetInfoH\000\022\037\n\007worktop" +
-      "\030\016 \001(\0132\014.WorktopInfoH\000\022*\n\rclient_gadget\030" +
-      "\017 \001(\0132\021.ClientGadgetInfoH\000\022\037\n\007weather\030\021 " +
-      "\001(\0132\014.WeatherInfoH\000\022,\n\016ability_gadget\030\022 " +
-      "\001(\0132\022.AbilityGadgetInfoH\000\022*\n\rstatue_gadg" +
-      "et\030\023 \001(\0132\021.StatueGadgetInfoH\000\022$\n\nboss_ch" +
-      "est\030\024 \001(\0132\016.BossChestInfoH\000\022*\n\rblossom_c" +
-      "hest\030) \001(\0132\021.BlossomChestInfoH\000\022+\n\016mp_pl" +
-      "ay_reward\030* \001(\0132\021.MpPlayRewardInfoH\000\0222\n\016" +
-      "general_reward\030+ \001(\0132\030.GadgetGeneralRewa" +
-      "rdInfoH\000\022&\n\roffering_info\030, \001(\0132\r.Offeri" +
-      "ngInfoH\000\022*\n\017foundation_info\030- \001(\0132\017.Foun" +
-      "dationInfoH\000\022$\n\014vehicle_info\030. \001(\0132\014.Veh" +
-      "icleInfoH\000\022$\n\nshell_info\030/ \001(\0132\016.EchoShe" +
-      "llInfoH\000\022\"\n\013screen_info\0300 \001(\0132\013.ScreenIn" +
-      "foH\000\022\'\n\016fish_pool_info\030; \001(\0132\r.FishPoolI" +
-      "nfoH\000\0228\n\027custom_gadget_tree_info\030< \001(\0132\025" +
-      ".CustomGadgetTreeInfoH\000\0225\n\025roguelike_gad" +
-      "get_info\030= \001(\0132\024.RoguelikeGadgetInfoH\000\0226" +
-      "\n\026night_crow_gadget_info\030> \001(\0132\024.Unk2800" +
-      "_FHMOLALLEENH\000\022;\n\033deshret_obelisk_gadget" +
-      "_info\030? \001(\0132\024.Unk3000_FANANGGCLOFH\000B\t\n\007c" +
-      "ontentB\033\n\031emu.grasscutter.net.protob\006pro" +
-      "to3"
+      "ustomGadgetTreeInfo.proto\032\036DeshretObelis" +
+      "kGadgetInfo.proto\032\023EchoShellInfo.proto\032\022" +
+      "FishPoolInfo.proto\032\024FoundationInfo.proto" +
+      "\032\024GadgetBornType.proto\032\035GadgetGeneralRew" +
+      "ardInfo.proto\032\024GadgetPlayInfo.proto\032\026Gat" +
+      "herGadgetInfo.proto\032\nItem.proto\032\026MpPlayR" +
+      "ewardInfo.proto\032\031NightCrowGadgetInfo.pro" +
+      "to\032\022OfferingInfo.proto\032\022PlatformInfo.pro" +
+      "to\032\031RoguelikeGadgetInfo.proto\032\020ScreenInf" +
+      "o.proto\032\026StatueGadgetInfo.proto\032\021Vehicle" +
+      "Info.proto\032\021WeatherInfo.proto\032\021WorktopIn" +
+      "fo.proto\"\375\n\n\017SceneGadgetInfo\022\021\n\tgadget_i" +
+      "d\030\001 \001(\r\022\020\n\010group_id\030\002 \001(\r\022\021\n\tconfig_id\030\003" +
+      " \001(\r\022\027\n\017owner_entity_id\030\004 \001(\r\022\"\n\tborn_ty" +
+      "pe\030\005 \001(\0162\017.GadgetBornType\022\024\n\014gadget_stat" +
+      "e\030\006 \001(\r\022\023\n\013gadget_type\030\007 \001(\r\022\030\n\020is_show_" +
+      "cutscene\030\010 \001(\010\022\031\n\021authority_peer_id\030\t \001(" +
+      "\r\022\032\n\022is_enable_interact\030\n \001(\010\022\023\n\013interac" +
+      "t_id\030\013 \001(\r\022\021\n\tmark_flag\030\025 \001(\r\022\034\n\024prop_ow" +
+      "ner_entity_id\030\026 \001(\r\022\037\n\010platform\030\027 \001(\0132\r." +
+      "PlatformInfo\022\031\n\021interact_uid_list\030\030 \003(\r\022" +
+      "\020\n\010draft_id\030\031 \001(\r\022\031\n\021gadget_talk_state\030\032" +
+      " \001(\r\022\"\n\tplay_info\030d \001(\0132\017.GadgetPlayInfo" +
+      "\022\034\n\013trifle_item\030\014 \001(\0132\005.ItemH\000\022*\n\rgather" +
+      "_gadget\030\r \001(\0132\021.GatherGadgetInfoH\000\022\037\n\007wo" +
+      "rktop\030\016 \001(\0132\014.WorktopInfoH\000\022*\n\rclient_ga" +
+      "dget\030\017 \001(\0132\021.ClientGadgetInfoH\000\022\037\n\007weath" +
+      "er\030\021 \001(\0132\014.WeatherInfoH\000\022,\n\016ability_gadg" +
+      "et\030\022 \001(\0132\022.AbilityGadgetInfoH\000\022*\n\rstatue" +
+      "_gadget\030\023 \001(\0132\021.StatueGadgetInfoH\000\022$\n\nbo" +
+      "ss_chest\030\024 \001(\0132\016.BossChestInfoH\000\022*\n\rblos" +
+      "som_chest\030) \001(\0132\021.BlossomChestInfoH\000\022+\n\016" +
+      "mp_play_reward\030* \001(\0132\021.MpPlayRewardInfoH" +
+      "\000\0222\n\016general_reward\030+ \001(\0132\030.GadgetGenera" +
+      "lRewardInfoH\000\022&\n\roffering_info\030, \001(\0132\r.O" +
+      "fferingInfoH\000\022*\n\017foundation_info\030- \001(\0132\017" +
+      ".FoundationInfoH\000\022$\n\014vehicle_info\030. \001(\0132" +
+      "\014.VehicleInfoH\000\022$\n\nshell_info\030/ \001(\0132\016.Ec" +
+      "hoShellInfoH\000\022\"\n\013screen_info\0300 \001(\0132\013.Scr" +
+      "eenInfoH\000\022\'\n\016fish_pool_info\030; \001(\0132\r.Fish" +
+      "PoolInfoH\000\0228\n\027custom_gadget_tree_info\030< " +
+      "\001(\0132\025.CustomGadgetTreeInfoH\000\0225\n\025roguelik" +
+      "e_gadget_info\030= \001(\0132\024.RoguelikeGadgetInf" +
+      "oH\000\0226\n\026night_crow_gadget_info\030> \001(\0132\024.Ni" +
+      "ghtCrowGadgetInfoH\000\022@\n\033deshret_obelisk_g" +
+      "adget_info\030? \001(\0132\031.DeshretObeliskGadgetI" +
+      "nfoH\000B\t\n\007contentB\033\n\031emu.grasscutter.net." +
+      "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -7078,6 +7078,7 @@ public final class SceneGadgetInfoOuterClass {
           emu.grasscutter.net.proto.BossChestInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.ClientGadgetInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.EchoShellInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.FishPoolInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.FoundationInfoOuterClass.getDescriptor(),
@@ -7087,13 +7088,12 @@ public final class SceneGadgetInfoOuterClass {
           emu.grasscutter.net.proto.GatherGadgetInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.ItemOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.MpPlayRewardInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.OfferingInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.PlatformInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.RoguelikeGadgetInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.ScreenInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.StatueGadgetInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.getDescriptor(),
-          emu.grasscutter.net.proto.Unk3000FANANGGCLOF.getDescriptor(),
           emu.grasscutter.net.proto.VehicleInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.WeatherInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.WorktopInfoOuterClass.getDescriptor(),
@@ -7109,6 +7109,7 @@ public final class SceneGadgetInfoOuterClass {
     emu.grasscutter.net.proto.BossChestInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.ClientGadgetInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.CustomGadgetTreeInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.DeshretObeliskGadgetInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.EchoShellInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.FishPoolInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.FoundationInfoOuterClass.getDescriptor();
@@ -7118,13 +7119,12 @@ public final class SceneGadgetInfoOuterClass {
     emu.grasscutter.net.proto.GatherGadgetInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.ItemOuterClass.getDescriptor();
     emu.grasscutter.net.proto.MpPlayRewardInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.NightCrowGadgetInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.OfferingInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.PlatformInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.RoguelikeGadgetInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.ScreenInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.StatueGadgetInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.Unk2800FHMOLALLEEN.getDescriptor();
-    emu.grasscutter.net.proto.Unk3000FANANGGCLOF.getDescriptor();
     emu.grasscutter.net.proto.VehicleInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.WeatherInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.WorktopInfoOuterClass.getDescriptor();

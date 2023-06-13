@@ -34,8 +34,7 @@ public final class SetBattlePassViewedRspOuterClass {
    * <pre>
    * CmdId: 2642
    * EnetChannelId: 0
-   * EnetIsReliable: false
-   * IsAllowClient: true
+   * EnetIsReliable: true
    * </pre>
    *
    * Protobuf type {@code SetBattlePassViewedRsp}
@@ -316,8 +315,7 @@ public final class SetBattlePassViewedRspOuterClass {
      * <pre>
      * CmdId: 2642
      * EnetChannelId: 0
-     * EnetIsReliable: false
-     * IsAllowClient: true
+     * EnetIsReliable: true
      * </pre>
      *
      * Protobuf type {@code SetBattlePassViewedRsp}

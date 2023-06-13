@@ -97,16 +97,16 @@ public final class GetPlayerTokenReqOuterClass {
         getCountryCodeBytes();
 
     /**
-     * <code>string client_seed = 760;</code>
-     * @return The clientSeed.
+     * <code>string client_rand_key = 760;</code>
+     * @return The clientRandKey.
      */
-    java.lang.String getClientSeed();
+    java.lang.String getClientRandKey();
     /**
-     * <code>string client_seed = 760;</code>
-     * @return The bytes for clientSeed.
+     * <code>string client_rand_key = 760;</code>
+     * @return The bytes for clientRandKey.
      */
     com.google.protobuf.ByteString
-        getClientSeedBytes();
+        getClientRandKeyBytes();
 
     /**
      * <code>bool is_guest = 6;</code>
@@ -169,10 +169,10 @@ public final class GetPlayerTokenReqOuterClass {
     int getAccountType();
 
     /**
-     * <code>uint32 Unk2700_NOJPEHIBDJH = 995;</code>
-     * @return The unk2700NOJPEHIBDJH.
+     * <code>uint32 minors_reg_min_age = 995;</code>
+     * @return The minorsRegMinAge.
      */
-    int getUnk2700NOJPEHIBDJH();
+    int getMinorsRegMinAge();
 
     /**
      * <code>uint32 cloud_client_ip = 14;</code>
@@ -196,7 +196,7 @@ public final class GetPlayerTokenReqOuterClass {
    * <pre>
    * CmdId: 172
    * EnetChannelId: 0
-   * EnetIsReliable: false
+   * EnetIsReliable: true
    * IsAllowClient: true
    * </pre>
    *
@@ -218,7 +218,7 @@ public final class GetPlayerTokenReqOuterClass {
       onlineId_ = "";
       accountExt_ = "";
       countryCode_ = "";
-      clientSeed_ = "";
+      clientRandKey_ = "";
       birthday_ = "";
       clientIpStr_ = "";
       psnId_ = "";
@@ -340,12 +340,12 @@ public final class GetPlayerTokenReqOuterClass {
             case 6082: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              clientSeed_ = s;
+              clientRandKey_ = s;
               break;
             }
             case 7960: {
 
-              unk2700NOJPEHIBDJH_ = input.readUInt32();
+              minorsRegMinAge_ = input.readUInt32();
               break;
             }
             case 13746: {
@@ -630,38 +630,38 @@ public final class GetPlayerTokenReqOuterClass {
       }
     }
 
-    public static final int CLIENT_SEED_FIELD_NUMBER = 760;
-    private volatile java.lang.Object clientSeed_;
+    public static final int CLIENT_RAND_KEY_FIELD_NUMBER = 760;
+    private volatile java.lang.Object clientRandKey_;
     /**
-     * <code>string client_seed = 760;</code>
-     * @return The clientSeed.
+     * <code>string client_rand_key = 760;</code>
+     * @return The clientRandKey.
      */
     @java.lang.Override
-    public java.lang.String getClientSeed() {
-      java.lang.Object ref = clientSeed_;
+    public java.lang.String getClientRandKey() {
+      java.lang.Object ref = clientRandKey_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        clientSeed_ = s;
+        clientRandKey_ = s;
         return s;
       }
     }
     /**
-     * <code>string client_seed = 760;</code>
-     * @return The bytes for clientSeed.
+     * <code>string client_rand_key = 760;</code>
+     * @return The bytes for clientRandKey.
      */
     @java.lang.Override
     public com.google.protobuf.ByteString
-        getClientSeedBytes() {
-      java.lang.Object ref = clientSeed_;
+        getClientRandKeyBytes() {
+      java.lang.Object ref = clientRandKey_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        clientSeed_ = b;
+        clientRandKey_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -826,15 +826,15 @@ public final class GetPlayerTokenReqOuterClass {
       return accountType_;
     }
 
-    public static final int UNK2700_NOJPEHIBDJH_FIELD_NUMBER = 995;
-    private int unk2700NOJPEHIBDJH_;
+    public static final int MINORS_REG_MIN_AGE_FIELD_NUMBER = 995;
+    private int minorsRegMinAge_;
     /**
-     * <code>uint32 Unk2700_NOJPEHIBDJH = 995;</code>
-     * @return The unk2700NOJPEHIBDJH.
+     * <code>uint32 minors_reg_min_age = 995;</code>
+     * @return The minorsRegMinAge.
      */
     @java.lang.Override
-    public int getUnk2700NOJPEHIBDJH() {
-      return unk2700NOJPEHIBDJH_;
+    public int getMinorsRegMinAge() {
+      return minorsRegMinAge_;
     }
 
     public static final int CLOUD_CLIENT_IP_FIELD_NUMBER = 14;
@@ -929,11 +929,11 @@ public final class GetPlayerTokenReqOuterClass {
       if (channelId_ != 0) {
         output.writeUInt32(15, channelId_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientSeed_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 760, clientSeed_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientRandKey_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 760, clientRandKey_);
       }
-      if (unk2700NOJPEHIBDJH_ != 0) {
-        output.writeUInt32(995, unk2700NOJPEHIBDJH_);
+      if (minorsRegMinAge_ != 0) {
+        output.writeUInt32(995, minorsRegMinAge_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(birthday_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1718, birthday_);
@@ -1002,12 +1002,12 @@ public final class GetPlayerTokenReqOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(15, channelId_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientSeed_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(760, clientSeed_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientRandKey_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(760, clientRandKey_);
       }
-      if (unk2700NOJPEHIBDJH_ != 0) {
+      if (minorsRegMinAge_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(995, unk2700NOJPEHIBDJH_);
+          .computeUInt32Size(995, minorsRegMinAge_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(birthday_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1718, birthday_);
@@ -1045,8 +1045,8 @@ public final class GetPlayerTokenReqOuterClass {
           .equals(other.getAccountExt())) return false;
       if (!getCountryCode()
           .equals(other.getCountryCode())) return false;
-      if (!getClientSeed()
-          .equals(other.getClientSeed())) return false;
+      if (!getClientRandKey()
+          .equals(other.getClientRandKey())) return false;
       if (getIsGuest()
           != other.getIsGuest()) return false;
       if (!getBirthday()
@@ -1061,8 +1061,8 @@ public final class GetPlayerTokenReqOuterClass {
           .equals(other.getPsnId())) return false;
       if (getAccountType()
           != other.getAccountType()) return false;
-      if (getUnk2700NOJPEHIBDJH()
-          != other.getUnk2700NOJPEHIBDJH()) return false;
+      if (getMinorsRegMinAge()
+          != other.getMinorsRegMinAge()) return false;
       if (getCloudClientIp()
           != other.getCloudClientIp()) return false;
       if (getKeyId()
@@ -1094,8 +1094,8 @@ public final class GetPlayerTokenReqOuterClass {
       hash = (53 * hash) + getAccountExt().hashCode();
       hash = (37 * hash) + COUNTRY_CODE_FIELD_NUMBER;
       hash = (53 * hash) + getCountryCode().hashCode();
-      hash = (37 * hash) + CLIENT_SEED_FIELD_NUMBER;
-      hash = (53 * hash) + getClientSeed().hashCode();
+      hash = (37 * hash) + CLIENT_RAND_KEY_FIELD_NUMBER;
+      hash = (53 * hash) + getClientRandKey().hashCode();
       hash = (37 * hash) + IS_GUEST_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsGuest());
@@ -1111,8 +1111,8 @@ public final class GetPlayerTokenReqOuterClass {
       hash = (53 * hash) + getPsnId().hashCode();
       hash = (37 * hash) + ACCOUNT_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getAccountType();
-      hash = (37 * hash) + UNK2700_NOJPEHIBDJH_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2700NOJPEHIBDJH();
+      hash = (37 * hash) + MINORS_REG_MIN_AGE_FIELD_NUMBER;
+      hash = (53 * hash) + getMinorsRegMinAge();
       hash = (37 * hash) + CLOUD_CLIENT_IP_FIELD_NUMBER;
       hash = (53 * hash) + getCloudClientIp();
       hash = (37 * hash) + KEY_ID_FIELD_NUMBER;
@@ -1218,7 +1218,7 @@ public final class GetPlayerTokenReqOuterClass {
      * <pre>
      * CmdId: 172
      * EnetChannelId: 0
-     * EnetIsReliable: false
+     * EnetIsReliable: true
      * IsAllowClient: true
      * </pre>
      *
@@ -1273,7 +1273,7 @@ public final class GetPlayerTokenReqOuterClass {
 
         countryCode_ = "";
 
-        clientSeed_ = "";
+        clientRandKey_ = "";
 
         isGuest_ = false;
 
@@ -1289,7 +1289,7 @@ public final class GetPlayerTokenReqOuterClass {
 
         accountType_ = 0;
 
-        unk2700NOJPEHIBDJH_ = 0;
+        minorsRegMinAge_ = 0;
 
         cloudClientIp_ = 0;
 
@@ -1330,7 +1330,7 @@ public final class GetPlayerTokenReqOuterClass {
         result.channelId_ = channelId_;
         result.accountExt_ = accountExt_;
         result.countryCode_ = countryCode_;
-        result.clientSeed_ = clientSeed_;
+        result.clientRandKey_ = clientRandKey_;
         result.isGuest_ = isGuest_;
         result.birthday_ = birthday_;
         result.subChannelId_ = subChannelId_;
@@ -1338,7 +1338,7 @@ public final class GetPlayerTokenReqOuterClass {
         result.clientIpStr_ = clientIpStr_;
         result.psnId_ = psnId_;
         result.accountType_ = accountType_;
-        result.unk2700NOJPEHIBDJH_ = unk2700NOJPEHIBDJH_;
+        result.minorsRegMinAge_ = minorsRegMinAge_;
         result.cloudClientIp_ = cloudClientIp_;
         result.keyId_ = keyId_;
         result.uid_ = uid_;
@@ -1417,8 +1417,8 @@ public final class GetPlayerTokenReqOuterClass {
           countryCode_ = other.countryCode_;
           onChanged();
         }
-        if (!other.getClientSeed().isEmpty()) {
-          clientSeed_ = other.clientSeed_;
+        if (!other.getClientRandKey().isEmpty()) {
+          clientRandKey_ = other.clientRandKey_;
           onChanged();
         }
         if (other.getIsGuest() != false) {
@@ -1445,8 +1445,8 @@ public final class GetPlayerTokenReqOuterClass {
         if (other.getAccountType() != 0) {
           setAccountType(other.getAccountType());
         }
-        if (other.getUnk2700NOJPEHIBDJH() != 0) {
-          setUnk2700NOJPEHIBDJH(other.getUnk2700NOJPEHIBDJH());
+        if (other.getMinorsRegMinAge() != 0) {
+          setMinorsRegMinAge(other.getMinorsRegMinAge());
         }
         if (other.getCloudClientIp() != 0) {
           setCloudClientIp(other.getCloudClientIp());
@@ -1973,78 +1973,78 @@ public final class GetPlayerTokenReqOuterClass {
         return this;
       }
 
-      private java.lang.Object clientSeed_ = "";
+      private java.lang.Object clientRandKey_ = "";
       /**
-       * <code>string client_seed = 760;</code>
-       * @return The clientSeed.
+       * <code>string client_rand_key = 760;</code>
+       * @return The clientRandKey.
        */
-      public java.lang.String getClientSeed() {
-        java.lang.Object ref = clientSeed_;
+      public java.lang.String getClientRandKey() {
+        java.lang.Object ref = clientRandKey_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          clientSeed_ = s;
+          clientRandKey_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string client_seed = 760;</code>
-       * @return The bytes for clientSeed.
+       * <code>string client_rand_key = 760;</code>
+       * @return The bytes for clientRandKey.
        */
       public com.google.protobuf.ByteString
-          getClientSeedBytes() {
-        java.lang.Object ref = clientSeed_;
+          getClientRandKeyBytes() {
+        java.lang.Object ref = clientRandKey_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          clientSeed_ = b;
+          clientRandKey_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string client_seed = 760;</code>
-       * @param value The clientSeed to set.
+       * <code>string client_rand_key = 760;</code>
+       * @param value The clientRandKey to set.
        * @return This builder for chaining.
        */
-      public Builder setClientSeed(
+      public Builder setClientRandKey(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        clientSeed_ = value;
+        clientRandKey_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string client_seed = 760;</code>
+       * <code>string client_rand_key = 760;</code>
        * @return This builder for chaining.
        */
-      public Builder clearClientSeed() {
+      public Builder clearClientRandKey() {
         
-        clientSeed_ = getDefaultInstance().getClientSeed();
+        clientRandKey_ = getDefaultInstance().getClientRandKey();
         onChanged();
         return this;
       }
       /**
-       * <code>string client_seed = 760;</code>
-       * @param value The bytes for clientSeed to set.
+       * <code>string client_rand_key = 760;</code>
+       * @param value The bytes for clientRandKey to set.
        * @return This builder for chaining.
        */
-      public Builder setClientSeedBytes(
+      public Builder setClientRandKeyBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        clientSeed_ = value;
+        clientRandKey_ = value;
         onChanged();
         return this;
       }
@@ -2401,33 +2401,33 @@ public final class GetPlayerTokenReqOuterClass {
         return this;
       }
 
-      private int unk2700NOJPEHIBDJH_ ;
+      private int minorsRegMinAge_ ;
       /**
-       * <code>uint32 Unk2700_NOJPEHIBDJH = 995;</code>
-       * @return The unk2700NOJPEHIBDJH.
+       * <code>uint32 minors_reg_min_age = 995;</code>
+       * @return The minorsRegMinAge.
        */
       @java.lang.Override
-      public int getUnk2700NOJPEHIBDJH() {
-        return unk2700NOJPEHIBDJH_;
+      public int getMinorsRegMinAge() {
+        return minorsRegMinAge_;
       }
       /**
-       * <code>uint32 Unk2700_NOJPEHIBDJH = 995;</code>
-       * @param value The unk2700NOJPEHIBDJH to set.
+       * <code>uint32 minors_reg_min_age = 995;</code>
+       * @param value The minorsRegMinAge to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700NOJPEHIBDJH(int value) {
+      public Builder setMinorsRegMinAge(int value) {
         
-        unk2700NOJPEHIBDJH_ = value;
+        minorsRegMinAge_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk2700_NOJPEHIBDJH = 995;</code>
+       * <code>uint32 minors_reg_min_age = 995;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700NOJPEHIBDJH() {
+      public Builder clearMinorsRegMinAge() {
         
-        unk2700NOJPEHIBDJH_ = 0;
+        minorsRegMinAge_ = 0;
         onChanged();
         return this;
       }
@@ -2591,19 +2591,19 @@ public final class GetPlayerTokenReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\027GetPlayerTokenReq.proto\"\241\003\n\021GetPlayerT" +
+      "\n\027GetPlayerTokenReq.proto\"\244\003\n\021GetPlayerT" +
       "okenReq\022\025\n\raccount_token\030\n \001(\t\022\023\n\013accoun" +
       "t_uid\030\013 \001(\t\022\022\n\npsn_region\030\004 \001(\t\022\021\n\tonlin" +
       "e_id\030\007 \001(\t\022\022\n\nchannel_id\030\017 \001(\r\022\023\n\013accoun" +
-      "t_ext\030\t \001(\t\022\024\n\014country_code\030\005 \001(\t\022\024\n\013cli" +
-      "ent_seed\030\370\005 \001(\t\022\020\n\010is_guest\030\006 \001(\010\022\021\n\010bir" +
-      "thday\030\266\r \001(\t\022\026\n\016sub_channel_id\030\010 \001(\r\022\025\n\r" +
-      "platform_type\030\014 \001(\r\022\025\n\rclient_ip_str\030\003 \001" +
-      "(\t\022\016\n\006psn_id\030\r \001(\t\022\024\n\014account_type\030\001 \001(\r" +
-      "\022\034\n\023Unk2700_NOJPEHIBDJH\030\343\007 \001(\r\022\027\n\017cloud_" +
-      "client_ip\030\016 \001(\r\022\017\n\006key_id\030\373\r \001(\r\022\013\n\003uid\030" +
-      "\002 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
-      "o3"
+      "t_ext\030\t \001(\t\022\024\n\014country_code\030\005 \001(\t\022\030\n\017cli" +
+      "ent_rand_key\030\370\005 \001(\t\022\020\n\010is_guest\030\006 \001(\010\022\021\n" +
+      "\010birthday\030\266\r \001(\t\022\026\n\016sub_channel_id\030\010 \001(\r" +
+      "\022\025\n\rplatform_type\030\014 \001(\r\022\025\n\rclient_ip_str" +
+      "\030\003 \001(\t\022\016\n\006psn_id\030\r \001(\t\022\024\n\014account_type\030\001" +
+      " \001(\r\022\033\n\022minors_reg_min_age\030\343\007 \001(\r\022\027\n\017clo" +
+      "ud_client_ip\030\016 \001(\r\022\017\n\006key_id\030\373\r \001(\r\022\013\n\003u" +
+      "id\030\002 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
+      "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -2614,7 +2614,7 @@ public final class GetPlayerTokenReqOuterClass {
     internal_static_GetPlayerTokenReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetPlayerTokenReq_descriptor,
-        new java.lang.String[] { "AccountToken", "AccountUid", "PsnRegion", "OnlineId", "ChannelId", "AccountExt", "CountryCode", "ClientSeed", "IsGuest", "Birthday", "SubChannelId", "PlatformType", "ClientIpStr", "PsnId", "AccountType", "Unk2700NOJPEHIBDJH", "CloudClientIp", "KeyId", "Uid", });
+        new java.lang.String[] { "AccountToken", "AccountUid", "PsnRegion", "OnlineId", "ChannelId", "AccountExt", "CountryCode", "ClientRandKey", "IsGuest", "Birthday", "SubChannelId", "PlatformType", "ClientIpStr", "PsnId", "AccountType", "MinorsRegMinAge", "CloudClientIp", "KeyId", "Uid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

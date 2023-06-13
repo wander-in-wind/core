@@ -19,17 +19,17 @@ public final class GachaItemOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.ItemParam gacha_item_ = 7;</code>
+     * <code>.ItemParam gacha_item = 7;</code>
      * @return Whether the gachaItem field is set.
      */
     boolean hasGachaItem();
     /**
-     * <code>.ItemParam gacha_item_ = 7;</code>
+     * <code>.ItemParam gacha_item = 7;</code>
      * @return The gachaItem.
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getGachaItem();
     /**
-     * <code>.ItemParam gacha_item_ = 7;</code>
+     * <code>.ItemParam gacha_item = 7;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getGachaItemOrBuilder();
 
@@ -220,10 +220,10 @@ public final class GachaItemOuterClass {
               emu.grasscutter.net.proto.GachaItemOuterClass.GachaItem.class, emu.grasscutter.net.proto.GachaItemOuterClass.GachaItem.Builder.class);
     }
 
-    public static final int GACHA_ITEM__FIELD_NUMBER = 7;
+    public static final int GACHA_ITEM_FIELD_NUMBER = 7;
     private emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam gachaItem_;
     /**
-     * <code>.ItemParam gacha_item_ = 7;</code>
+     * <code>.ItemParam gacha_item = 7;</code>
      * @return Whether the gachaItem field is set.
      */
     @java.lang.Override
@@ -231,7 +231,7 @@ public final class GachaItemOuterClass {
       return gachaItem_ != null;
     }
     /**
-     * <code>.ItemParam gacha_item_ = 7;</code>
+     * <code>.ItemParam gacha_item = 7;</code>
      * @return The gachaItem.
      */
     @java.lang.Override
@@ -239,7 +239,7 @@ public final class GachaItemOuterClass {
       return gachaItem_ == null ? emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance() : gachaItem_;
     }
     /**
-     * <code>.ItemParam gacha_item_ = 7;</code>
+     * <code>.ItemParam gacha_item = 7;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getGachaItemOrBuilder() {
@@ -446,7 +446,7 @@ public final class GachaItemOuterClass {
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
       if (hasGachaItem()) {
-        hash = (37 * hash) + GACHA_ITEM__FIELD_NUMBER;
+        hash = (37 * hash) + GACHA_ITEM_FIELD_NUMBER;
         hash = (53 * hash) + getGachaItem().hashCode();
       }
       hash = (37 * hash) + IS_GACHA_ITEM_NEW_FIELD_NUMBER;
@@ -815,14 +815,14 @@ public final class GachaItemOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> gachaItemBuilder_;
       /**
-       * <code>.ItemParam gacha_item_ = 7;</code>
+       * <code>.ItemParam gacha_item = 7;</code>
        * @return Whether the gachaItem field is set.
        */
       public boolean hasGachaItem() {
         return gachaItemBuilder_ != null || gachaItem_ != null;
       }
       /**
-       * <code>.ItemParam gacha_item_ = 7;</code>
+       * <code>.ItemParam gacha_item = 7;</code>
        * @return The gachaItem.
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getGachaItem() {
@@ -833,7 +833,7 @@ public final class GachaItemOuterClass {
         }
       }
       /**
-       * <code>.ItemParam gacha_item_ = 7;</code>
+       * <code>.ItemParam gacha_item = 7;</code>
        */
       public Builder setGachaItem(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
         if (gachaItemBuilder_ == null) {
@@ -849,7 +849,7 @@ public final class GachaItemOuterClass {
         return this;
       }
       /**
-       * <code>.ItemParam gacha_item_ = 7;</code>
+       * <code>.ItemParam gacha_item = 7;</code>
        */
       public Builder setGachaItem(
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -863,7 +863,7 @@ public final class GachaItemOuterClass {
         return this;
       }
       /**
-       * <code>.ItemParam gacha_item_ = 7;</code>
+       * <code>.ItemParam gacha_item = 7;</code>
        */
       public Builder mergeGachaItem(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
         if (gachaItemBuilder_ == null) {
@@ -881,7 +881,7 @@ public final class GachaItemOuterClass {
         return this;
       }
       /**
-       * <code>.ItemParam gacha_item_ = 7;</code>
+       * <code>.ItemParam gacha_item = 7;</code>
        */
       public Builder clearGachaItem() {
         if (gachaItemBuilder_ == null) {
@@ -895,7 +895,7 @@ public final class GachaItemOuterClass {
         return this;
       }
       /**
-       * <code>.ItemParam gacha_item_ = 7;</code>
+       * <code>.ItemParam gacha_item = 7;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getGachaItemBuilder() {
         
@@ -903,7 +903,7 @@ public final class GachaItemOuterClass {
         return getGachaItemFieldBuilder().getBuilder();
       }
       /**
-       * <code>.ItemParam gacha_item_ = 7;</code>
+       * <code>.ItemParam gacha_item = 7;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getGachaItemOrBuilder() {
         if (gachaItemBuilder_ != null) {
@@ -914,7 +914,7 @@ public final class GachaItemOuterClass {
         }
       }
       /**
-       * <code>.ItemParam gacha_item_ = 7;</code>
+       * <code>.ItemParam gacha_item = 7;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
@@ -1539,12 +1539,12 @@ public final class GachaItemOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\017GachaItem.proto\032\027GachaTransferItem.pro" +
-      "to\032\017ItemParam.proto\"\257\001\n\tGachaItem\022\037\n\013gac" +
-      "ha_item_\030\007 \001(\0132\n.ItemParam\022\031\n\021is_gacha_i" +
-      "tem_new\030\006 \001(\010\022\025\n\ris_flash_card\030\010 \001(\010\022#\n\017" +
-      "token_item_list\030\t \003(\0132\n.ItemParam\022*\n\016tra" +
-      "nsfer_items\030\014 \003(\0132\022.GachaTransferItemB\033\n" +
-      "\031emu.grasscutter.net.protob\006proto3"
+      "to\032\017ItemParam.proto\"\256\001\n\tGachaItem\022\036\n\ngac" +
+      "ha_item\030\007 \001(\0132\n.ItemParam\022\031\n\021is_gacha_it" +
+      "em_new\030\006 \001(\010\022\025\n\ris_flash_card\030\010 \001(\010\022#\n\017t" +
+      "oken_item_list\030\t \003(\0132\n.ItemParam\022*\n\016tran" +
+      "sfer_items\030\014 \003(\0132\022.GachaTransferItemB\033\n\031" +
+      "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

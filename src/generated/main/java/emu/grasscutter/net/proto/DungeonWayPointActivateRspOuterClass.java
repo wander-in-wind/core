@@ -34,8 +34,7 @@ public final class DungeonWayPointActivateRspOuterClass {
    * <pre>
    * CmdId: 973
    * EnetChannelId: 0
-   * EnetIsReliable: false
-   * IsAllowClient: true
+   * EnetIsReliable: true
    * </pre>
    *
    * Protobuf type {@code DungeonWayPointActivateRsp}
@@ -316,8 +315,7 @@ public final class DungeonWayPointActivateRspOuterClass {
      * <pre>
      * CmdId: 973
      * EnetChannelId: 0
-     * EnetIsReliable: false
-     * IsAllowClient: true
+     * EnetIsReliable: true
      * </pre>
      *
      * Protobuf type {@code DungeonWayPointActivateRsp}

@@ -25,6 +25,17 @@ public final class CheckAddItemExceedLimitNotifyOuterClass {
     boolean getIsDrop();
 
     /**
+     * <code>.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType msg_type = 4;</code>
+     * @return The enum numeric value on the wire for msgType.
+     */
+    int getMsgTypeValue();
+    /**
+     * <code>.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType msg_type = 4;</code>
+     * @return The msgType.
+     */
+    emu.grasscutter.net.proto.CheckAddItemExceedLimitNotifyOuterClass.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType getMsgType();
+
+    /**
      * <code>repeated uint32 exceeded_item_type_list = 10;</code>
      * @return A list containing the exceededItemTypeList.
      */
@@ -59,22 +70,16 @@ public final class CheckAddItemExceedLimitNotifyOuterClass {
     int getExceededItemList(int index);
 
     /**
-     * <code>.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType msg_type = 4;</code>
-     * @return The enum numeric value on the wire for msgType.
+     * <code>uint32 reason = 14;</code>
+     * @return The reason.
      */
-    int getMsgTypeValue();
-    /**
-     * <code>.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType msg_type = 4;</code>
-     * @return The msgType.
-     */
-    emu.grasscutter.net.proto.CheckAddItemExceedLimitNotifyOuterClass.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType getMsgType();
+    int getReason();
   }
   /**
    * <pre>
    * CmdId: 692
    * EnetChannelId: 0
-   * EnetIsReliable: false
-   * IsAllowClient: true
+   * EnetIsReliable: true
    * </pre>
    *
    * Protobuf type {@code CheckAddItemExceedLimitNotify}
@@ -89,9 +94,9 @@ public final class CheckAddItemExceedLimitNotifyOuterClass {
       super(builder);
     }
     private CheckAddItemExceedLimitNotify() {
+      msgType_ = 0;
       exceededItemTypeList_ = emptyIntList();
       exceededItemList_ = emptyIntList();
-      msgType_ = 0;
     }
 
     @java.lang.Override
@@ -178,6 +183,11 @@ public final class CheckAddItemExceedLimitNotifyOuterClass {
               input.popLimit(limit);
               break;
             }
+            case 112: {
+
+              reason_ = input.readUInt32();
+              break;
+            }
             default: {
               if (!parseUnknownField(
                   input, unknownFields, extensionRegistry, tag)) {
@@ -234,9 +244,9 @@ public final class CheckAddItemExceedLimitNotifyOuterClass {
        */
       ITEM_EXCEED_LIMIT_MSG_TYPE_DIALOG(2),
       /**
-       * <code>ITEM_EXCEED_LIMIT_MSG_TYPE_Unk2700_BONLGEEEBBF = 3;</code>
+       * <code>ITEM_EXCEED_LIMIT_MSG_TYPE_DIALOG_NONBLOCK = 3;</code>
        */
-      ITEM_EXCEED_LIMIT_MSG_TYPE_Unk2700_BONLGEEEBBF(3),
+      ITEM_EXCEED_LIMIT_MSG_TYPE_DIALOG_NONBLOCK(3),
       UNRECOGNIZED(-1),
       ;
 
@@ -253,9 +263,9 @@ public final class CheckAddItemExceedLimitNotifyOuterClass {
        */
       public static final int ITEM_EXCEED_LIMIT_MSG_TYPE_DIALOG_VALUE = 2;
       /**
-       * <code>ITEM_EXCEED_LIMIT_MSG_TYPE_Unk2700_BONLGEEEBBF = 3;</code>
+       * <code>ITEM_EXCEED_LIMIT_MSG_TYPE_DIALOG_NONBLOCK = 3;</code>
        */
-      public static final int ITEM_EXCEED_LIMIT_MSG_TYPE_Unk2700_BONLGEEEBBF_VALUE = 3;
+      public static final int ITEM_EXCEED_LIMIT_MSG_TYPE_DIALOG_NONBLOCK_VALUE = 3;
 
 
       public final int getNumber() {
@@ -285,7 +295,7 @@ public final class CheckAddItemExceedLimitNotifyOuterClass {
           case 0: return ITEM_EXCEED_LIMIT_MSG_TYPE_DEFAULT;
           case 1: return ITEM_EXCEED_LIMIT_MSG_TYPE_TEXT;
           case 2: return ITEM_EXCEED_LIMIT_MSG_TYPE_DIALOG;
-          case 3: return ITEM_EXCEED_LIMIT_MSG_TYPE_Unk2700_BONLGEEEBBF;
+          case 3: return ITEM_EXCEED_LIMIT_MSG_TYPE_DIALOG_NONBLOCK;
           default: return null;
         }
       }
@@ -353,6 +363,25 @@ public final class CheckAddItemExceedLimitNotifyOuterClass {
       return isDrop_;
     }
 
+    public static final int MSG_TYPE_FIELD_NUMBER = 4;
+    private int msgType_;
+    /**
+     * <code>.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType msg_type = 4;</code>
+     * @return The enum numeric value on the wire for msgType.
+     */
+    @java.lang.Override public int getMsgTypeValue() {
+      return msgType_;
+    }
+    /**
+     * <code>.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType msg_type = 4;</code>
+     * @return The msgType.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.CheckAddItemExceedLimitNotifyOuterClass.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType getMsgType() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.CheckAddItemExceedLimitNotifyOuterClass.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType result = emu.grasscutter.net.proto.CheckAddItemExceedLimitNotifyOuterClass.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType.valueOf(msgType_);
+      return result == null ? emu.grasscutter.net.proto.CheckAddItemExceedLimitNotifyOuterClass.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType.UNRECOGNIZED : result;
+    }
+
     public static final int EXCEEDED_ITEM_TYPE_LIST_FIELD_NUMBER = 10;
     private com.google.protobuf.Internal.IntList exceededItemTypeList_;
     /**
@@ -409,23 +438,15 @@ public final class CheckAddItemExceedLimitNotifyOuterClass {
     }
     private int exceededItemListMemoizedSerializedSize = -1;
 
-    public static final int MSG_TYPE_FIELD_NUMBER = 4;
-    private int msgType_;
+    public static final int REASON_FIELD_NUMBER = 14;
+    private int reason_;
     /**
-     * <code>.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType msg_type = 4;</code>
-     * @return The enum numeric value on the wire for msgType.
+     * <code>uint32 reason = 14;</code>
+     * @return The reason.
      */
-    @java.lang.Override public int getMsgTypeValue() {
-      return msgType_;
-    }
-    /**
-     * <code>.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType msg_type = 4;</code>
-     * @return The msgType.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.CheckAddItemExceedLimitNotifyOuterClass.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType getMsgType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.CheckAddItemExceedLimitNotifyOuterClass.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType result = emu.grasscutter.net.proto.CheckAddItemExceedLimitNotifyOuterClass.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType.valueOf(msgType_);
-      return result == null ? emu.grasscutter.net.proto.CheckAddItemExceedLimitNotifyOuterClass.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType.UNRECOGNIZED : result;
+    @java.lang.Override
+    public int getReason() {
+      return reason_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -462,6 +483,9 @@ public final class CheckAddItemExceedLimitNotifyOuterClass {
       }
       for (int i = 0; i < exceededItemList_.size(); i++) {
         output.writeUInt32NoTag(exceededItemList_.getInt(i));
+      }
+      if (reason_ != 0) {
+        output.writeUInt32(14, reason_);
       }
       unknownFields.writeTo(output);
     }
@@ -508,6 +532,10 @@ public final class CheckAddItemExceedLimitNotifyOuterClass {
         }
         exceededItemListMemoizedSerializedSize = dataSize;
       }
+      if (reason_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, reason_);
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -525,11 +553,13 @@ public final class CheckAddItemExceedLimitNotifyOuterClass {
 
       if (getIsDrop()
           != other.getIsDrop()) return false;
+      if (msgType_ != other.msgType_) return false;
       if (!getExceededItemTypeListList()
           .equals(other.getExceededItemTypeListList())) return false;
       if (!getExceededItemListList()
           .equals(other.getExceededItemListList())) return false;
-      if (msgType_ != other.msgType_) return false;
+      if (getReason()
+          != other.getReason()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -544,6 +574,8 @@ public final class CheckAddItemExceedLimitNotifyOuterClass {
       hash = (37 * hash) + IS_DROP_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsDrop());
+      hash = (37 * hash) + MSG_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + msgType_;
       if (getExceededItemTypeListCount() > 0) {
         hash = (37 * hash) + EXCEEDED_ITEM_TYPE_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getExceededItemTypeListList().hashCode();
@@ -552,8 +584,8 @@ public final class CheckAddItemExceedLimitNotifyOuterClass {
         hash = (37 * hash) + EXCEEDED_ITEM_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getExceededItemListList().hashCode();
       }
-      hash = (37 * hash) + MSG_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + msgType_;
+      hash = (37 * hash) + REASON_FIELD_NUMBER;
+      hash = (53 * hash) + getReason();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -653,8 +685,7 @@ public final class CheckAddItemExceedLimitNotifyOuterClass {
      * <pre>
      * CmdId: 692
      * EnetChannelId: 0
-     * EnetIsReliable: false
-     * IsAllowClient: true
+     * EnetIsReliable: true
      * </pre>
      *
      * Protobuf type {@code CheckAddItemExceedLimitNotify}
@@ -696,11 +727,13 @@ public final class CheckAddItemExceedLimitNotifyOuterClass {
         super.clear();
         isDrop_ = false;
 
+        msgType_ = 0;
+
         exceededItemTypeList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         exceededItemList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
-        msgType_ = 0;
+        reason_ = 0;
 
         return this;
       }
@@ -730,6 +763,7 @@ public final class CheckAddItemExceedLimitNotifyOuterClass {
         emu.grasscutter.net.proto.CheckAddItemExceedLimitNotifyOuterClass.CheckAddItemExceedLimitNotify result = new emu.grasscutter.net.proto.CheckAddItemExceedLimitNotifyOuterClass.CheckAddItemExceedLimitNotify(this);
         int from_bitField0_ = bitField0_;
         result.isDrop_ = isDrop_;
+        result.msgType_ = msgType_;
         if (((bitField0_ & 0x00000001) != 0)) {
           exceededItemTypeList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
@@ -740,7 +774,7 @@ public final class CheckAddItemExceedLimitNotifyOuterClass {
           bitField0_ = (bitField0_ & ~0x00000002);
         }
         result.exceededItemList_ = exceededItemList_;
-        result.msgType_ = msgType_;
+        result.reason_ = reason_;
         onBuilt();
         return result;
       }
@@ -792,6 +826,9 @@ public final class CheckAddItemExceedLimitNotifyOuterClass {
         if (other.getIsDrop() != false) {
           setIsDrop(other.getIsDrop());
         }
+        if (other.msgType_ != 0) {
+          setMsgTypeValue(other.getMsgTypeValue());
+        }
         if (!other.exceededItemTypeList_.isEmpty()) {
           if (exceededItemTypeList_.isEmpty()) {
             exceededItemTypeList_ = other.exceededItemTypeList_;
@@ -812,8 +849,8 @@ public final class CheckAddItemExceedLimitNotifyOuterClass {
           }
           onChanged();
         }
-        if (other.msgType_ != 0) {
-          setMsgTypeValue(other.getMsgTypeValue());
+        if (other.getReason() != 0) {
+          setReason(other.getReason());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -872,6 +909,60 @@ public final class CheckAddItemExceedLimitNotifyOuterClass {
       public Builder clearIsDrop() {
         
         isDrop_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int msgType_ = 0;
+      /**
+       * <code>.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType msg_type = 4;</code>
+       * @return The enum numeric value on the wire for msgType.
+       */
+      @java.lang.Override public int getMsgTypeValue() {
+        return msgType_;
+      }
+      /**
+       * <code>.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType msg_type = 4;</code>
+       * @param value The enum numeric value on the wire for msgType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMsgTypeValue(int value) {
+        
+        msgType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType msg_type = 4;</code>
+       * @return The msgType.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.CheckAddItemExceedLimitNotifyOuterClass.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType getMsgType() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.CheckAddItemExceedLimitNotifyOuterClass.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType result = emu.grasscutter.net.proto.CheckAddItemExceedLimitNotifyOuterClass.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType.valueOf(msgType_);
+        return result == null ? emu.grasscutter.net.proto.CheckAddItemExceedLimitNotifyOuterClass.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType msg_type = 4;</code>
+       * @param value The msgType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMsgType(emu.grasscutter.net.proto.CheckAddItemExceedLimitNotifyOuterClass.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        msgType_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType msg_type = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMsgType() {
+        
+        msgType_ = 0;
         onChanged();
         return this;
       }
@@ -1034,56 +1125,33 @@ public final class CheckAddItemExceedLimitNotifyOuterClass {
         return this;
       }
 
-      private int msgType_ = 0;
+      private int reason_ ;
       /**
-       * <code>.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType msg_type = 4;</code>
-       * @return The enum numeric value on the wire for msgType.
-       */
-      @java.lang.Override public int getMsgTypeValue() {
-        return msgType_;
-      }
-      /**
-       * <code>.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType msg_type = 4;</code>
-       * @param value The enum numeric value on the wire for msgType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMsgTypeValue(int value) {
-        
-        msgType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType msg_type = 4;</code>
-       * @return The msgType.
+       * <code>uint32 reason = 14;</code>
+       * @return The reason.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.CheckAddItemExceedLimitNotifyOuterClass.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType getMsgType() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.CheckAddItemExceedLimitNotifyOuterClass.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType result = emu.grasscutter.net.proto.CheckAddItemExceedLimitNotifyOuterClass.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType.valueOf(msgType_);
-        return result == null ? emu.grasscutter.net.proto.CheckAddItemExceedLimitNotifyOuterClass.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType.UNRECOGNIZED : result;
+      public int getReason() {
+        return reason_;
       }
       /**
-       * <code>.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType msg_type = 4;</code>
-       * @param value The msgType to set.
+       * <code>uint32 reason = 14;</code>
+       * @param value The reason to set.
        * @return This builder for chaining.
        */
-      public Builder setMsgType(emu.grasscutter.net.proto.CheckAddItemExceedLimitNotifyOuterClass.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
+      public Builder setReason(int value) {
         
-        msgType_ = value.getNumber();
+        reason_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>.CheckAddItemExceedLimitNotify.ItemExceedLimitMsgType msg_type = 4;</code>
+       * <code>uint32 reason = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMsgType() {
+      public Builder clearReason() {
         
-        msgType_ = 0;
+        reason_ = 0;
         onChanged();
         return this;
       }
@@ -1154,18 +1222,18 @@ public final class CheckAddItemExceedLimitNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n#CheckAddItemExceedLimitNotify.proto\"\371\002" +
+      "\n#CheckAddItemExceedLimitNotify.proto\"\205\003" +
       "\n\035CheckAddItemExceedLimitNotify\022\017\n\007is_dr" +
-      "op\030\005 \001(\010\022\037\n\027exceeded_item_type_list\030\n \003(" +
-      "\r\022\032\n\022exceeded_item_list\030\014 \003(\r\022G\n\010msg_typ" +
-      "e\030\004 \001(\01625.CheckAddItemExceedLimitNotify." +
-      "ItemExceedLimitMsgType\"\300\001\n\026ItemExceedLim" +
-      "itMsgType\022&\n\"ITEM_EXCEED_LIMIT_MSG_TYPE_" +
-      "DEFAULT\020\000\022#\n\037ITEM_EXCEED_LIMIT_MSG_TYPE_" +
-      "TEXT\020\001\022%\n!ITEM_EXCEED_LIMIT_MSG_TYPE_DIA" +
-      "LOG\020\002\0222\n.ITEM_EXCEED_LIMIT_MSG_TYPE_Unk2" +
-      "700_BONLGEEEBBF\020\003B\033\n\031emu.grasscutter.net" +
-      ".protob\006proto3"
+      "op\030\005 \001(\010\022G\n\010msg_type\030\004 \001(\01625.CheckAddIte" +
+      "mExceedLimitNotify.ItemExceedLimitMsgTyp" +
+      "e\022\037\n\027exceeded_item_type_list\030\n \003(\r\022\032\n\022ex" +
+      "ceeded_item_list\030\014 \003(\r\022\016\n\006reason\030\016 \001(\r\"\274" +
+      "\001\n\026ItemExceedLimitMsgType\022&\n\"ITEM_EXCEED" +
+      "_LIMIT_MSG_TYPE_DEFAULT\020\000\022#\n\037ITEM_EXCEED" +
+      "_LIMIT_MSG_TYPE_TEXT\020\001\022%\n!ITEM_EXCEED_LI" +
+      "MIT_MSG_TYPE_DIALOG\020\002\022.\n*ITEM_EXCEED_LIM" +
+      "IT_MSG_TYPE_DIALOG_NONBLOCK\020\003B\033\n\031emu.gra" +
+      "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1176,7 +1244,7 @@ public final class CheckAddItemExceedLimitNotifyOuterClass {
     internal_static_CheckAddItemExceedLimitNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CheckAddItemExceedLimitNotify_descriptor,
-        new java.lang.String[] { "IsDrop", "ExceededItemTypeList", "ExceededItemList", "MsgType", });
+        new java.lang.String[] { "IsDrop", "MsgType", "ExceededItemTypeList", "ExceededItemList", "Reason", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

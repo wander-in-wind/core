@@ -45,8 +45,7 @@ public final class DungeonWayPointNotifyOuterClass {
    * <pre>
    * CmdId: 903
    * EnetChannelId: 0
-   * EnetIsReliable: false
-   * IsAllowClient: true
+   * EnetIsReliable: true
    * </pre>
    *
    * Protobuf type {@code DungeonWayPointNotify}
@@ -383,8 +382,7 @@ public final class DungeonWayPointNotifyOuterClass {
      * <pre>
      * CmdId: 903
      * EnetChannelId: 0
-     * EnetIsReliable: false
-     * IsAllowClient: true
+     * EnetIsReliable: true
      * </pre>
      *
      * Protobuf type {@code DungeonWayPointNotify}

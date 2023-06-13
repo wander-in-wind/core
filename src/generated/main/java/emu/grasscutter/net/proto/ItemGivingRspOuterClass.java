@@ -19,10 +19,10 @@ public final class ItemGivingRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 Unk2700_MHIPHDFEOON = 1;</code>
-     * @return The unk2700MHIPHDFEOON.
+     * <code>uint32 giving_group_id = 1;</code>
+     * @return The givingGroupId.
      */
-    int getUnk2700MHIPHDFEOON();
+    int getGivingGroupId();
 
     /**
      * <code>uint32 giving_id = 13;</code>
@@ -40,8 +40,7 @@ public final class ItemGivingRspOuterClass {
    * <pre>
    * CmdId: 118
    * EnetChannelId: 0
-   * EnetIsReliable: false
-   * IsAllowClient: true
+   * EnetIsReliable: true
    * </pre>
    *
    * Protobuf type {@code ItemGivingRsp}
@@ -90,7 +89,7 @@ public final class ItemGivingRspOuterClass {
               break;
             case 8: {
 
-              unk2700MHIPHDFEOON_ = input.readUInt32();
+              givingGroupId_ = input.readUInt32();
               break;
             }
             case 24: {
@@ -135,15 +134,15 @@ public final class ItemGivingRspOuterClass {
               emu.grasscutter.net.proto.ItemGivingRspOuterClass.ItemGivingRsp.class, emu.grasscutter.net.proto.ItemGivingRspOuterClass.ItemGivingRsp.Builder.class);
     }
 
-    public static final int UNK2700_MHIPHDFEOON_FIELD_NUMBER = 1;
-    private int unk2700MHIPHDFEOON_;
+    public static final int GIVING_GROUP_ID_FIELD_NUMBER = 1;
+    private int givingGroupId_;
     /**
-     * <code>uint32 Unk2700_MHIPHDFEOON = 1;</code>
-     * @return The unk2700MHIPHDFEOON.
+     * <code>uint32 giving_group_id = 1;</code>
+     * @return The givingGroupId.
      */
     @java.lang.Override
-    public int getUnk2700MHIPHDFEOON() {
-      return unk2700MHIPHDFEOON_;
+    public int getGivingGroupId() {
+      return givingGroupId_;
     }
 
     public static final int GIVING_ID_FIELD_NUMBER = 13;
@@ -182,8 +181,8 @@ public final class ItemGivingRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (unk2700MHIPHDFEOON_ != 0) {
-        output.writeUInt32(1, unk2700MHIPHDFEOON_);
+      if (givingGroupId_ != 0) {
+        output.writeUInt32(1, givingGroupId_);
       }
       if (retcode_ != 0) {
         output.writeInt32(3, retcode_);
@@ -200,9 +199,9 @@ public final class ItemGivingRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (unk2700MHIPHDFEOON_ != 0) {
+      if (givingGroupId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, unk2700MHIPHDFEOON_);
+          .computeUInt32Size(1, givingGroupId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -227,8 +226,8 @@ public final class ItemGivingRspOuterClass {
       }
       emu.grasscutter.net.proto.ItemGivingRspOuterClass.ItemGivingRsp other = (emu.grasscutter.net.proto.ItemGivingRspOuterClass.ItemGivingRsp) obj;
 
-      if (getUnk2700MHIPHDFEOON()
-          != other.getUnk2700MHIPHDFEOON()) return false;
+      if (getGivingGroupId()
+          != other.getGivingGroupId()) return false;
       if (getGivingId()
           != other.getGivingId()) return false;
       if (getRetcode()
@@ -244,8 +243,8 @@ public final class ItemGivingRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + UNK2700_MHIPHDFEOON_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2700MHIPHDFEOON();
+      hash = (37 * hash) + GIVING_GROUP_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGivingGroupId();
       hash = (37 * hash) + GIVING_ID_FIELD_NUMBER;
       hash = (53 * hash) + getGivingId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
@@ -349,8 +348,7 @@ public final class ItemGivingRspOuterClass {
      * <pre>
      * CmdId: 118
      * EnetChannelId: 0
-     * EnetIsReliable: false
-     * IsAllowClient: true
+     * EnetIsReliable: true
      * </pre>
      *
      * Protobuf type {@code ItemGivingRsp}
@@ -390,7 +388,7 @@ public final class ItemGivingRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        unk2700MHIPHDFEOON_ = 0;
+        givingGroupId_ = 0;
 
         givingId_ = 0;
 
@@ -422,7 +420,7 @@ public final class ItemGivingRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ItemGivingRspOuterClass.ItemGivingRsp buildPartial() {
         emu.grasscutter.net.proto.ItemGivingRspOuterClass.ItemGivingRsp result = new emu.grasscutter.net.proto.ItemGivingRspOuterClass.ItemGivingRsp(this);
-        result.unk2700MHIPHDFEOON_ = unk2700MHIPHDFEOON_;
+        result.givingGroupId_ = givingGroupId_;
         result.givingId_ = givingId_;
         result.retcode_ = retcode_;
         onBuilt();
@@ -473,8 +471,8 @@ public final class ItemGivingRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ItemGivingRspOuterClass.ItemGivingRsp other) {
         if (other == emu.grasscutter.net.proto.ItemGivingRspOuterClass.ItemGivingRsp.getDefaultInstance()) return this;
-        if (other.getUnk2700MHIPHDFEOON() != 0) {
-          setUnk2700MHIPHDFEOON(other.getUnk2700MHIPHDFEOON());
+        if (other.getGivingGroupId() != 0) {
+          setGivingGroupId(other.getGivingGroupId());
         }
         if (other.getGivingId() != 0) {
           setGivingId(other.getGivingId());
@@ -511,33 +509,33 @@ public final class ItemGivingRspOuterClass {
         return this;
       }
 
-      private int unk2700MHIPHDFEOON_ ;
+      private int givingGroupId_ ;
       /**
-       * <code>uint32 Unk2700_MHIPHDFEOON = 1;</code>
-       * @return The unk2700MHIPHDFEOON.
+       * <code>uint32 giving_group_id = 1;</code>
+       * @return The givingGroupId.
        */
       @java.lang.Override
-      public int getUnk2700MHIPHDFEOON() {
-        return unk2700MHIPHDFEOON_;
+      public int getGivingGroupId() {
+        return givingGroupId_;
       }
       /**
-       * <code>uint32 Unk2700_MHIPHDFEOON = 1;</code>
-       * @param value The unk2700MHIPHDFEOON to set.
+       * <code>uint32 giving_group_id = 1;</code>
+       * @param value The givingGroupId to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700MHIPHDFEOON(int value) {
+      public Builder setGivingGroupId(int value) {
         
-        unk2700MHIPHDFEOON_ = value;
+        givingGroupId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk2700_MHIPHDFEOON = 1;</code>
+       * <code>uint32 giving_group_id = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700MHIPHDFEOON() {
+      public Builder clearGivingGroupId() {
         
-        unk2700MHIPHDFEOON_ = 0;
+        givingGroupId_ = 0;
         onChanged();
         return this;
       }
@@ -670,10 +668,10 @@ public final class ItemGivingRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\023ItemGivingRsp.proto\"P\n\rItemGivingRsp\022\033" +
-      "\n\023Unk2700_MHIPHDFEOON\030\001 \001(\r\022\021\n\tgiving_id" +
-      "\030\r \001(\r\022\017\n\007retcode\030\003 \001(\005B\033\n\031emu.grasscutt" +
-      "er.net.protob\006proto3"
+      "\n\023ItemGivingRsp.proto\"L\n\rItemGivingRsp\022\027" +
+      "\n\017giving_group_id\030\001 \001(\r\022\021\n\tgiving_id\030\r \001" +
+      "(\r\022\017\n\007retcode\030\003 \001(\005B\033\n\031emu.grasscutter.n" +
+      "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -684,7 +682,7 @@ public final class ItemGivingRspOuterClass {
     internal_static_ItemGivingRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ItemGivingRsp_descriptor,
-        new java.lang.String[] { "Unk2700MHIPHDFEOON", "GivingId", "Retcode", });
+        new java.lang.String[] { "GivingGroupId", "GivingId", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

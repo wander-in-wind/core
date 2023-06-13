@@ -37,10 +37,10 @@ public final class EvtAnimatorStateChangedInfoOuterClass {
     int getNormalizedTimeCompact();
 
     /**
-     * <code>uint32 Unk2700_HEMGNDKMAFO = 2;</code>
-     * @return The unk2700HEMGNDKMAFO.
+     * <code>uint32 layer = 2;</code>
+     * @return The layer.
      */
-    int getUnk2700HEMGNDKMAFO();
+    int getLayer();
 
     /**
      * <code>.Vector pos = 13;</code>
@@ -64,10 +64,10 @@ public final class EvtAnimatorStateChangedInfoOuterClass {
     float getFadeDuration();
 
     /**
-     * <code>bool Unk2700_CJCJLGHIBPK = 1;</code>
-     * @return The unk2700CJCJLGHIBPK.
+     * <code>bool force_sync = 1;</code>
+     * @return The forceSync.
      */
-    boolean getUnk2700CJCJLGHIBPK();
+    boolean getForceSync();
 
     /**
      * <code>uint32 entity_id = 15;</code>
@@ -76,10 +76,10 @@ public final class EvtAnimatorStateChangedInfoOuterClass {
     int getEntityId();
 
     /**
-     * <code>bool Unk2700_JECBLPNLJMJ = 7;</code>
-     * @return The unk2700JECBLPNLJMJ.
+     * <code>bool handle_animator_state_immediately = 7;</code>
+     * @return The handleAnimatorStateImmediately.
      */
-    boolean getUnk2700JECBLPNLJMJ();
+    boolean getHandleAnimatorStateImmediately();
   }
   /**
    * Protobuf type {@code EvtAnimatorStateChangedInfo}
@@ -128,12 +128,12 @@ public final class EvtAnimatorStateChangedInfoOuterClass {
               break;
             case 8: {
 
-              unk2700CJCJLGHIBPK_ = input.readBool();
+              forceSync_ = input.readBool();
               break;
             }
             case 16: {
 
-              unk2700HEMGNDKMAFO_ = input.readUInt32();
+              layer_ = input.readUInt32();
               break;
             }
             case 29: {
@@ -148,7 +148,7 @@ public final class EvtAnimatorStateChangedInfoOuterClass {
             }
             case 56: {
 
-              unk2700JECBLPNLJMJ_ = input.readBool();
+              handleAnimatorStateImmediately_ = input.readBool();
               break;
             }
             case 72: {
@@ -244,15 +244,15 @@ public final class EvtAnimatorStateChangedInfoOuterClass {
       return normalizedTimeCompact_;
     }
 
-    public static final int UNK2700_HEMGNDKMAFO_FIELD_NUMBER = 2;
-    private int unk2700HEMGNDKMAFO_;
+    public static final int LAYER_FIELD_NUMBER = 2;
+    private int layer_;
     /**
-     * <code>uint32 Unk2700_HEMGNDKMAFO = 2;</code>
-     * @return The unk2700HEMGNDKMAFO.
+     * <code>uint32 layer = 2;</code>
+     * @return The layer.
      */
     @java.lang.Override
-    public int getUnk2700HEMGNDKMAFO() {
-      return unk2700HEMGNDKMAFO_;
+    public int getLayer() {
+      return layer_;
     }
 
     public static final int POS_FIELD_NUMBER = 13;
@@ -292,15 +292,15 @@ public final class EvtAnimatorStateChangedInfoOuterClass {
       return fadeDuration_;
     }
 
-    public static final int UNK2700_CJCJLGHIBPK_FIELD_NUMBER = 1;
-    private boolean unk2700CJCJLGHIBPK_;
+    public static final int FORCE_SYNC_FIELD_NUMBER = 1;
+    private boolean forceSync_;
     /**
-     * <code>bool Unk2700_CJCJLGHIBPK = 1;</code>
-     * @return The unk2700CJCJLGHIBPK.
+     * <code>bool force_sync = 1;</code>
+     * @return The forceSync.
      */
     @java.lang.Override
-    public boolean getUnk2700CJCJLGHIBPK() {
-      return unk2700CJCJLGHIBPK_;
+    public boolean getForceSync() {
+      return forceSync_;
     }
 
     public static final int ENTITY_ID_FIELD_NUMBER = 15;
@@ -314,15 +314,15 @@ public final class EvtAnimatorStateChangedInfoOuterClass {
       return entityId_;
     }
 
-    public static final int UNK2700_JECBLPNLJMJ_FIELD_NUMBER = 7;
-    private boolean unk2700JECBLPNLJMJ_;
+    public static final int HANDLE_ANIMATOR_STATE_IMMEDIATELY_FIELD_NUMBER = 7;
+    private boolean handleAnimatorStateImmediately_;
     /**
-     * <code>bool Unk2700_JECBLPNLJMJ = 7;</code>
-     * @return The unk2700JECBLPNLJMJ.
+     * <code>bool handle_animator_state_immediately = 7;</code>
+     * @return The handleAnimatorStateImmediately.
      */
     @java.lang.Override
-    public boolean getUnk2700JECBLPNLJMJ() {
-      return unk2700JECBLPNLJMJ_;
+    public boolean getHandleAnimatorStateImmediately() {
+      return handleAnimatorStateImmediately_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -339,11 +339,11 @@ public final class EvtAnimatorStateChangedInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (unk2700CJCJLGHIBPK_ != false) {
-        output.writeBool(1, unk2700CJCJLGHIBPK_);
+      if (forceSync_ != false) {
+        output.writeBool(1, forceSync_);
       }
-      if (unk2700HEMGNDKMAFO_ != 0) {
-        output.writeUInt32(2, unk2700HEMGNDKMAFO_);
+      if (layer_ != 0) {
+        output.writeUInt32(2, layer_);
       }
       if (fadeDuration_ != 0F) {
         output.writeFloat(3, fadeDuration_);
@@ -351,8 +351,8 @@ public final class EvtAnimatorStateChangedInfoOuterClass {
       if (toStateHash_ != 0) {
         output.writeUInt32(5, toStateHash_);
       }
-      if (unk2700JECBLPNLJMJ_ != false) {
-        output.writeBool(7, unk2700JECBLPNLJMJ_);
+      if (handleAnimatorStateImmediately_ != false) {
+        output.writeBool(7, handleAnimatorStateImmediately_);
       }
       if (normalizedTimeCompact_ != 0) {
         output.writeUInt32(9, normalizedTimeCompact_);
@@ -375,13 +375,13 @@ public final class EvtAnimatorStateChangedInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (unk2700CJCJLGHIBPK_ != false) {
+      if (forceSync_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, unk2700CJCJLGHIBPK_);
+          .computeBoolSize(1, forceSync_);
       }
-      if (unk2700HEMGNDKMAFO_ != 0) {
+      if (layer_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, unk2700HEMGNDKMAFO_);
+          .computeUInt32Size(2, layer_);
       }
       if (fadeDuration_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
@@ -391,9 +391,9 @@ public final class EvtAnimatorStateChangedInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(5, toStateHash_);
       }
-      if (unk2700JECBLPNLJMJ_ != false) {
+      if (handleAnimatorStateImmediately_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, unk2700JECBLPNLJMJ_);
+          .computeBoolSize(7, handleAnimatorStateImmediately_);
       }
       if (normalizedTimeCompact_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -432,8 +432,8 @@ public final class EvtAnimatorStateChangedInfoOuterClass {
           != other.getToStateHash()) return false;
       if (getNormalizedTimeCompact()
           != other.getNormalizedTimeCompact()) return false;
-      if (getUnk2700HEMGNDKMAFO()
-          != other.getUnk2700HEMGNDKMAFO()) return false;
+      if (getLayer()
+          != other.getLayer()) return false;
       if (hasPos() != other.hasPos()) return false;
       if (hasPos()) {
         if (!getPos()
@@ -442,12 +442,12 @@ public final class EvtAnimatorStateChangedInfoOuterClass {
       if (java.lang.Float.floatToIntBits(getFadeDuration())
           != java.lang.Float.floatToIntBits(
               other.getFadeDuration())) return false;
-      if (getUnk2700CJCJLGHIBPK()
-          != other.getUnk2700CJCJLGHIBPK()) return false;
+      if (getForceSync()
+          != other.getForceSync()) return false;
       if (getEntityId()
           != other.getEntityId()) return false;
-      if (getUnk2700JECBLPNLJMJ()
-          != other.getUnk2700JECBLPNLJMJ()) return false;
+      if (getHandleAnimatorStateImmediately()
+          != other.getHandleAnimatorStateImmediately()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -465,8 +465,8 @@ public final class EvtAnimatorStateChangedInfoOuterClass {
       hash = (53 * hash) + getToStateHash();
       hash = (37 * hash) + NORMALIZED_TIME_COMPACT_FIELD_NUMBER;
       hash = (53 * hash) + getNormalizedTimeCompact();
-      hash = (37 * hash) + UNK2700_HEMGNDKMAFO_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2700HEMGNDKMAFO();
+      hash = (37 * hash) + LAYER_FIELD_NUMBER;
+      hash = (53 * hash) + getLayer();
       if (hasPos()) {
         hash = (37 * hash) + POS_FIELD_NUMBER;
         hash = (53 * hash) + getPos().hashCode();
@@ -474,14 +474,14 @@ public final class EvtAnimatorStateChangedInfoOuterClass {
       hash = (37 * hash) + FADE_DURATION_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
           getFadeDuration());
-      hash = (37 * hash) + UNK2700_CJCJLGHIBPK_FIELD_NUMBER;
+      hash = (37 * hash) + FORCE_SYNC_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk2700CJCJLGHIBPK());
+          getForceSync());
       hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getEntityId();
-      hash = (37 * hash) + UNK2700_JECBLPNLJMJ_FIELD_NUMBER;
+      hash = (37 * hash) + HANDLE_ANIMATOR_STATE_IMMEDIATELY_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk2700JECBLPNLJMJ());
+          getHandleAnimatorStateImmediately());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -621,7 +621,7 @@ public final class EvtAnimatorStateChangedInfoOuterClass {
 
         normalizedTimeCompact_ = 0;
 
-        unk2700HEMGNDKMAFO_ = 0;
+        layer_ = 0;
 
         if (posBuilder_ == null) {
           pos_ = null;
@@ -631,11 +631,11 @@ public final class EvtAnimatorStateChangedInfoOuterClass {
         }
         fadeDuration_ = 0F;
 
-        unk2700CJCJLGHIBPK_ = false;
+        forceSync_ = false;
 
         entityId_ = 0;
 
-        unk2700JECBLPNLJMJ_ = false;
+        handleAnimatorStateImmediately_ = false;
 
         return this;
       }
@@ -666,16 +666,16 @@ public final class EvtAnimatorStateChangedInfoOuterClass {
         result.faceAngleCompact_ = faceAngleCompact_;
         result.toStateHash_ = toStateHash_;
         result.normalizedTimeCompact_ = normalizedTimeCompact_;
-        result.unk2700HEMGNDKMAFO_ = unk2700HEMGNDKMAFO_;
+        result.layer_ = layer_;
         if (posBuilder_ == null) {
           result.pos_ = pos_;
         } else {
           result.pos_ = posBuilder_.build();
         }
         result.fadeDuration_ = fadeDuration_;
-        result.unk2700CJCJLGHIBPK_ = unk2700CJCJLGHIBPK_;
+        result.forceSync_ = forceSync_;
         result.entityId_ = entityId_;
-        result.unk2700JECBLPNLJMJ_ = unk2700JECBLPNLJMJ_;
+        result.handleAnimatorStateImmediately_ = handleAnimatorStateImmediately_;
         onBuilt();
         return result;
       }
@@ -733,8 +733,8 @@ public final class EvtAnimatorStateChangedInfoOuterClass {
         if (other.getNormalizedTimeCompact() != 0) {
           setNormalizedTimeCompact(other.getNormalizedTimeCompact());
         }
-        if (other.getUnk2700HEMGNDKMAFO() != 0) {
-          setUnk2700HEMGNDKMAFO(other.getUnk2700HEMGNDKMAFO());
+        if (other.getLayer() != 0) {
+          setLayer(other.getLayer());
         }
         if (other.hasPos()) {
           mergePos(other.getPos());
@@ -742,14 +742,14 @@ public final class EvtAnimatorStateChangedInfoOuterClass {
         if (other.getFadeDuration() != 0F) {
           setFadeDuration(other.getFadeDuration());
         }
-        if (other.getUnk2700CJCJLGHIBPK() != false) {
-          setUnk2700CJCJLGHIBPK(other.getUnk2700CJCJLGHIBPK());
+        if (other.getForceSync() != false) {
+          setForceSync(other.getForceSync());
         }
         if (other.getEntityId() != 0) {
           setEntityId(other.getEntityId());
         }
-        if (other.getUnk2700JECBLPNLJMJ() != false) {
-          setUnk2700JECBLPNLJMJ(other.getUnk2700JECBLPNLJMJ());
+        if (other.getHandleAnimatorStateImmediately() != false) {
+          setHandleAnimatorStateImmediately(other.getHandleAnimatorStateImmediately());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -873,33 +873,33 @@ public final class EvtAnimatorStateChangedInfoOuterClass {
         return this;
       }
 
-      private int unk2700HEMGNDKMAFO_ ;
+      private int layer_ ;
       /**
-       * <code>uint32 Unk2700_HEMGNDKMAFO = 2;</code>
-       * @return The unk2700HEMGNDKMAFO.
+       * <code>uint32 layer = 2;</code>
+       * @return The layer.
        */
       @java.lang.Override
-      public int getUnk2700HEMGNDKMAFO() {
-        return unk2700HEMGNDKMAFO_;
+      public int getLayer() {
+        return layer_;
       }
       /**
-       * <code>uint32 Unk2700_HEMGNDKMAFO = 2;</code>
-       * @param value The unk2700HEMGNDKMAFO to set.
+       * <code>uint32 layer = 2;</code>
+       * @param value The layer to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700HEMGNDKMAFO(int value) {
+      public Builder setLayer(int value) {
         
-        unk2700HEMGNDKMAFO_ = value;
+        layer_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk2700_HEMGNDKMAFO = 2;</code>
+       * <code>uint32 layer = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700HEMGNDKMAFO() {
+      public Builder clearLayer() {
         
-        unk2700HEMGNDKMAFO_ = 0;
+        layer_ = 0;
         onChanged();
         return this;
       }
@@ -1054,33 +1054,33 @@ public final class EvtAnimatorStateChangedInfoOuterClass {
         return this;
       }
 
-      private boolean unk2700CJCJLGHIBPK_ ;
+      private boolean forceSync_ ;
       /**
-       * <code>bool Unk2700_CJCJLGHIBPK = 1;</code>
-       * @return The unk2700CJCJLGHIBPK.
+       * <code>bool force_sync = 1;</code>
+       * @return The forceSync.
        */
       @java.lang.Override
-      public boolean getUnk2700CJCJLGHIBPK() {
-        return unk2700CJCJLGHIBPK_;
+      public boolean getForceSync() {
+        return forceSync_;
       }
       /**
-       * <code>bool Unk2700_CJCJLGHIBPK = 1;</code>
-       * @param value The unk2700CJCJLGHIBPK to set.
+       * <code>bool force_sync = 1;</code>
+       * @param value The forceSync to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700CJCJLGHIBPK(boolean value) {
+      public Builder setForceSync(boolean value) {
         
-        unk2700CJCJLGHIBPK_ = value;
+        forceSync_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk2700_CJCJLGHIBPK = 1;</code>
+       * <code>bool force_sync = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700CJCJLGHIBPK() {
+      public Builder clearForceSync() {
         
-        unk2700CJCJLGHIBPK_ = false;
+        forceSync_ = false;
         onChanged();
         return this;
       }
@@ -1116,33 +1116,33 @@ public final class EvtAnimatorStateChangedInfoOuterClass {
         return this;
       }
 
-      private boolean unk2700JECBLPNLJMJ_ ;
+      private boolean handleAnimatorStateImmediately_ ;
       /**
-       * <code>bool Unk2700_JECBLPNLJMJ = 7;</code>
-       * @return The unk2700JECBLPNLJMJ.
+       * <code>bool handle_animator_state_immediately = 7;</code>
+       * @return The handleAnimatorStateImmediately.
        */
       @java.lang.Override
-      public boolean getUnk2700JECBLPNLJMJ() {
-        return unk2700JECBLPNLJMJ_;
+      public boolean getHandleAnimatorStateImmediately() {
+        return handleAnimatorStateImmediately_;
       }
       /**
-       * <code>bool Unk2700_JECBLPNLJMJ = 7;</code>
-       * @param value The unk2700JECBLPNLJMJ to set.
+       * <code>bool handle_animator_state_immediately = 7;</code>
+       * @param value The handleAnimatorStateImmediately to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700JECBLPNLJMJ(boolean value) {
+      public Builder setHandleAnimatorStateImmediately(boolean value) {
         
-        unk2700JECBLPNLJMJ_ = value;
+        handleAnimatorStateImmediately_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk2700_JECBLPNLJMJ = 7;</code>
+       * <code>bool handle_animator_state_immediately = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700JECBLPNLJMJ() {
+      public Builder clearHandleAnimatorStateImmediately() {
         
-        unk2700JECBLPNLJMJ_ = false;
+        handleAnimatorStateImmediately_ = false;
         onChanged();
         return this;
       }
@@ -1214,14 +1214,14 @@ public final class EvtAnimatorStateChangedInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!EvtAnimatorStateChangedInfo.proto\032\014Vec" +
-      "tor.proto\"\210\002\n\033EvtAnimatorStateChangedInf" +
+      "tor.proto\"\377\001\n\033EvtAnimatorStateChangedInf" +
       "o\022\032\n\022face_angle_compact\030\016 \001(\005\022\025\n\rto_stat" +
       "e_hash\030\005 \001(\r\022\037\n\027normalized_time_compact\030" +
-      "\t \001(\r\022\033\n\023Unk2700_HEMGNDKMAFO\030\002 \001(\r\022\024\n\003po" +
-      "s\030\r \001(\0132\007.Vector\022\025\n\rfade_duration\030\003 \001(\002\022" +
-      "\033\n\023Unk2700_CJCJLGHIBPK\030\001 \001(\010\022\021\n\tentity_i" +
-      "d\030\017 \001(\r\022\033\n\023Unk2700_JECBLPNLJMJ\030\007 \001(\010B\033\n\031" +
-      "emu.grasscutter.net.protob\006proto3"
+      "\t \001(\r\022\r\n\005layer\030\002 \001(\r\022\024\n\003pos\030\r \001(\0132\007.Vect" +
+      "or\022\025\n\rfade_duration\030\003 \001(\002\022\022\n\nforce_sync\030" +
+      "\001 \001(\010\022\021\n\tentity_id\030\017 \001(\r\022)\n!handle_anima" +
+      "tor_state_immediately\030\007 \001(\010B\033\n\031emu.grass" +
+      "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1233,7 +1233,7 @@ public final class EvtAnimatorStateChangedInfoOuterClass {
     internal_static_EvtAnimatorStateChangedInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EvtAnimatorStateChangedInfo_descriptor,
-        new java.lang.String[] { "FaceAngleCompact", "ToStateHash", "NormalizedTimeCompact", "Unk2700HEMGNDKMAFO", "Pos", "FadeDuration", "Unk2700CJCJLGHIBPK", "EntityId", "Unk2700JECBLPNLJMJ", });
+        new java.lang.String[] { "FaceAngleCompact", "ToStateHash", "NormalizedTimeCompact", "Layer", "Pos", "FadeDuration", "ForceSync", "EntityId", "HandleAnimatorStateImmediately", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

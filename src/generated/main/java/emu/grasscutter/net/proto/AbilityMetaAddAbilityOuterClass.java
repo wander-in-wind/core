@@ -551,7 +551,7 @@ public final class AbilityMetaAddAbilityOuterClass {
        * <code>.AbilityAppliedAbility ability = 12;</code>
        */
       public emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility.Builder getAbilityBuilder() {
-
+        
         onChanged();
         return getAbilityFieldBuilder().getBuilder();
       }
@@ -570,7 +570,7 @@ public final class AbilityMetaAddAbilityOuterClass {
        * <code>.AbilityAppliedAbility ability = 12;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility, emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility.Builder, emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbilityOrBuilder>
+          emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility, emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility.Builder, emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbilityOrBuilder> 
           getAbilityFieldBuilder() {
         if (abilityBuilder_ == null) {
           abilityBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -637,7 +637,7 @@ public final class AbilityMetaAddAbilityOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_AbilityMetaAddAbility_descriptor;
-  private static final
+  private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_AbilityMetaAddAbility_fieldAccessorTable;
 
@@ -652,8 +652,8 @@ public final class AbilityMetaAddAbilityOuterClass {
       "\n\033AbilityMetaAddAbility.proto\032\033AbilityAp" +
       "pliedAbility.proto\"@\n\025AbilityMetaAddAbil" +
       "ity\022\'\n\007ability\030\014 \001(\0132\026.AbilityAppliedAbi" +
-      "lityB%\n#emu.grasscutter.net.pr" +
-      "otob\006proto3"
+      "lityB\033\n\031emu.grasscutter.net.protob\006proto" +
+      "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

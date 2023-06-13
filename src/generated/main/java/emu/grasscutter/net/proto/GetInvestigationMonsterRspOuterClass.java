@@ -49,16 +49,16 @@ public final class GetInvestigationMonsterRspOuterClass {
     int getRetcode();
 
     /**
-     * <code>bool Unk2700_DEMFDHNFBBJ = 2;</code>
-     * @return The unk2700DEMFDHNFBBJ.
+     * <code>bool is_for_mark = 2;</code>
+     * @return The isForMark.
      */
-    boolean getUnk2700DEMFDHNFBBJ();
+    boolean getIsForMark();
   }
   /**
    * <pre>
    * CmdId: 1910
    * EnetChannelId: 0
-   * EnetIsReliable: false
+   * EnetIsReliable: true
    * IsAllowClient: true
    * </pre>
    *
@@ -115,7 +115,7 @@ public final class GetInvestigationMonsterRspOuterClass {
             }
             case 16: {
 
-              unk2700DEMFDHNFBBJ_ = input.readBool();
+              isForMark_ = input.readBool();
               break;
             }
             case 82: {
@@ -213,15 +213,15 @@ public final class GetInvestigationMonsterRspOuterClass {
       return retcode_;
     }
 
-    public static final int UNK2700_DEMFDHNFBBJ_FIELD_NUMBER = 2;
-    private boolean unk2700DEMFDHNFBBJ_;
+    public static final int IS_FOR_MARK_FIELD_NUMBER = 2;
+    private boolean isForMark_;
     /**
-     * <code>bool Unk2700_DEMFDHNFBBJ = 2;</code>
-     * @return The unk2700DEMFDHNFBBJ.
+     * <code>bool is_for_mark = 2;</code>
+     * @return The isForMark.
      */
     @java.lang.Override
-    public boolean getUnk2700DEMFDHNFBBJ() {
-      return unk2700DEMFDHNFBBJ_;
+    public boolean getIsForMark() {
+      return isForMark_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -241,8 +241,8 @@ public final class GetInvestigationMonsterRspOuterClass {
       if (retcode_ != 0) {
         output.writeInt32(1, retcode_);
       }
-      if (unk2700DEMFDHNFBBJ_ != false) {
-        output.writeBool(2, unk2700DEMFDHNFBBJ_);
+      if (isForMark_ != false) {
+        output.writeBool(2, isForMark_);
       }
       for (int i = 0; i < monsterList_.size(); i++) {
         output.writeMessage(10, monsterList_.get(i));
@@ -260,9 +260,9 @@ public final class GetInvestigationMonsterRspOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(1, retcode_);
       }
-      if (unk2700DEMFDHNFBBJ_ != false) {
+      if (isForMark_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, unk2700DEMFDHNFBBJ_);
+          .computeBoolSize(2, isForMark_);
       }
       for (int i = 0; i < monsterList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -287,8 +287,8 @@ public final class GetInvestigationMonsterRspOuterClass {
           .equals(other.getMonsterListList())) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (getUnk2700DEMFDHNFBBJ()
-          != other.getUnk2700DEMFDHNFBBJ()) return false;
+      if (getIsForMark()
+          != other.getIsForMark()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -306,9 +306,9 @@ public final class GetInvestigationMonsterRspOuterClass {
       }
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + UNK2700_DEMFDHNFBBJ_FIELD_NUMBER;
+      hash = (37 * hash) + IS_FOR_MARK_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk2700DEMFDHNFBBJ());
+          getIsForMark());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -408,7 +408,7 @@ public final class GetInvestigationMonsterRspOuterClass {
      * <pre>
      * CmdId: 1910
      * EnetChannelId: 0
-     * EnetIsReliable: false
+     * EnetIsReliable: true
      * IsAllowClient: true
      * </pre>
      *
@@ -458,7 +458,7 @@ public final class GetInvestigationMonsterRspOuterClass {
         }
         retcode_ = 0;
 
-        unk2700DEMFDHNFBBJ_ = false;
+        isForMark_ = false;
 
         return this;
       }
@@ -497,7 +497,7 @@ public final class GetInvestigationMonsterRspOuterClass {
           result.monsterList_ = monsterListBuilder_.build();
         }
         result.retcode_ = retcode_;
-        result.unk2700DEMFDHNFBBJ_ = unk2700DEMFDHNFBBJ_;
+        result.isForMark_ = isForMark_;
         onBuilt();
         return result;
       }
@@ -575,8 +575,8 @@ public final class GetInvestigationMonsterRspOuterClass {
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
-        if (other.getUnk2700DEMFDHNFBBJ() != false) {
-          setUnk2700DEMFDHNFBBJ(other.getUnk2700DEMFDHNFBBJ());
+        if (other.getIsForMark() != false) {
+          setIsForMark(other.getIsForMark());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -879,33 +879,33 @@ public final class GetInvestigationMonsterRspOuterClass {
         return this;
       }
 
-      private boolean unk2700DEMFDHNFBBJ_ ;
+      private boolean isForMark_ ;
       /**
-       * <code>bool Unk2700_DEMFDHNFBBJ = 2;</code>
-       * @return The unk2700DEMFDHNFBBJ.
+       * <code>bool is_for_mark = 2;</code>
+       * @return The isForMark.
        */
       @java.lang.Override
-      public boolean getUnk2700DEMFDHNFBBJ() {
-        return unk2700DEMFDHNFBBJ_;
+      public boolean getIsForMark() {
+        return isForMark_;
       }
       /**
-       * <code>bool Unk2700_DEMFDHNFBBJ = 2;</code>
-       * @param value The unk2700DEMFDHNFBBJ to set.
+       * <code>bool is_for_mark = 2;</code>
+       * @param value The isForMark to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700DEMFDHNFBBJ(boolean value) {
+      public Builder setIsForMark(boolean value) {
         
-        unk2700DEMFDHNFBBJ_ = value;
+        isForMark_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk2700_DEMFDHNFBBJ = 2;</code>
+       * <code>bool is_for_mark = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700DEMFDHNFBBJ() {
+      public Builder clearIsForMark() {
         
-        unk2700DEMFDHNFBBJ_ = false;
+        isForMark_ = false;
         onChanged();
         return this;
       }
@@ -977,11 +977,11 @@ public final class GetInvestigationMonsterRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n GetInvestigationMonsterRsp.proto\032\032Inve" +
-      "stigationMonster.proto\"w\n\032GetInvestigati" +
+      "stigationMonster.proto\"o\n\032GetInvestigati" +
       "onMonsterRsp\022+\n\014monster_list\030\n \003(\0132\025.Inv" +
-      "estigationMonster\022\017\n\007retcode\030\001 \001(\005\022\033\n\023Un" +
-      "k2700_DEMFDHNFBBJ\030\002 \001(\010B\033\n\031emu.grasscutt" +
-      "er.net.protob\006proto3"
+      "estigationMonster\022\017\n\007retcode\030\001 \001(\005\022\023\n\013is" +
+      "_for_mark\030\002 \001(\010B\033\n\031emu.grasscutter.net.p" +
+      "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -993,7 +993,7 @@ public final class GetInvestigationMonsterRspOuterClass {
     internal_static_GetInvestigationMonsterRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetInvestigationMonsterRsp_descriptor,
-        new java.lang.String[] { "MonsterList", "Retcode", "Unk2700DEMFDHNFBBJ", });
+        new java.lang.String[] { "MonsterList", "Retcode", "IsForMark", });
     emu.grasscutter.net.proto.InvestigationMonsterOuterClass.getDescriptor();
   }
 

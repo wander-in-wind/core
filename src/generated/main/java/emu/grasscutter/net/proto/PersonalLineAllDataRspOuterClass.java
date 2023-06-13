@@ -98,8 +98,7 @@ public final class PersonalLineAllDataRspOuterClass {
    * <pre>
    * CmdId: 476
    * EnetChannelId: 0
-   * EnetIsReliable: false
-   * IsAllowClient: true
+   * EnetIsReliable: true
    * </pre>
    *
    * Protobuf type {@code PersonalLineAllDataRsp}
@@ -635,8 +634,7 @@ public final class PersonalLineAllDataRspOuterClass {
      * <pre>
      * CmdId: 476
      * EnetChannelId: 0
-     * EnetIsReliable: false
-     * IsAllowClient: true
+     * EnetIsReliable: true
      * </pre>
      *
      * Protobuf type {@code PersonalLineAllDataRsp}

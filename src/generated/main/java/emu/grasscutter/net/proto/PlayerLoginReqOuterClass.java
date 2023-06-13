@@ -106,16 +106,16 @@ public final class PlayerLoginReqOuterClass {
         getClientVersionBytes();
 
     /**
-     * <code>string Unk2700_NGKCNPKKIKB = 772;</code>
-     * @return The unk2700NGKCNPKKIKB.
+     * <code>string security_library_md5 = 772;</code>
+     * @return The securityLibraryMd5.
      */
-    java.lang.String getUnk2700NGKCNPKKIKB();
+    java.lang.String getSecurityLibraryMd5();
     /**
-     * <code>string Unk2700_NGKCNPKKIKB = 772;</code>
-     * @return The bytes for unk2700NGKCNPKKIKB.
+     * <code>string security_library_md5 = 772;</code>
+     * @return The bytes for securityLibraryMd5.
      */
     com.google.protobuf.ByteString
-        getUnk2700NGKCNPKKIKBBytes();
+        getSecurityLibraryMd5Bytes();
 
     /**
      * <code>string country_code = 2000;</code>
@@ -142,10 +142,10 @@ public final class PlayerLoginReqOuterClass {
         getPsnIdBytes();
 
     /**
-     * <code>uint32 Unk2700_GPPBEMDGEHH = 431;</code>
-     * @return The unk2700GPPBEMDGEHH.
+     * <code>uint32 client_port = 431;</code>
+     * @return The clientPort.
      */
-    int getUnk2700GPPBEMDGEHH();
+    int getClientPort();
 
     /**
      * <code>string device_name = 9;</code>
@@ -259,16 +259,16 @@ public final class PlayerLoginReqOuterClass {
     com.google.protobuf.ByteString getSecurityCmdReply();
 
     /**
-     * <code>string Unk2700_JNDKPBBCACB = 1213;</code>
-     * @return The unk2700JNDKPBBCACB.
+     * <code>string security_library_version = 1213;</code>
+     * @return The securityLibraryVersion.
      */
-    java.lang.String getUnk2700JNDKPBBCACB();
+    java.lang.String getSecurityLibraryVersion();
     /**
-     * <code>string Unk2700_JNDKPBBCACB = 1213;</code>
-     * @return The bytes for unk2700JNDKPBBCACB.
+     * <code>string security_library_version = 1213;</code>
+     * @return The bytes for securityLibraryVersion.
      */
     com.google.protobuf.ByteString
-        getUnk2700JNDKPBBCACBBytes();
+        getSecurityLibraryVersionBytes();
 
     /**
      * <code>string birthday = 1652;</code>
@@ -400,7 +400,7 @@ public final class PlayerLoginReqOuterClass {
    * <pre>
    * CmdId: 112
    * EnetChannelId: 0
-   * EnetIsReliable: false
+   * EnetIsReliable: true
    * IsAllowClient: true
    * </pre>
    *
@@ -420,7 +420,7 @@ public final class PlayerLoginReqOuterClass {
       extraBinData_ = com.google.protobuf.ByteString.EMPTY;
       accountUid_ = "";
       clientVersion_ = "";
-      unk2700NGKCNPKKIKB_ = "";
+      securityLibraryMd5_ = "";
       countryCode_ = "";
       psnId_ = "";
       deviceName_ = "";
@@ -429,7 +429,7 @@ public final class PlayerLoginReqOuterClass {
       onlineId_ = "";
       checksumClientVersion_ = "";
       securityCmdReply_ = com.google.protobuf.ByteString.EMPTY;
-      unk2700JNDKPBBCACB_ = "";
+      securityLibraryVersion_ = "";
       birthday_ = "";
       deviceUuid_ = "";
       deviceInfo_ = "";
@@ -559,7 +559,7 @@ public final class PlayerLoginReqOuterClass {
             }
             case 3448: {
 
-              unk2700GPPBEMDGEHH_ = input.readUInt32();
+              clientPort_ = input.readUInt32();
               break;
             }
             case 4896: {
@@ -580,7 +580,7 @@ public final class PlayerLoginReqOuterClass {
             case 6178: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              unk2700NGKCNPKKIKB_ = s;
+              securityLibraryMd5_ = s;
               break;
             }
             case 6890: {
@@ -614,7 +614,7 @@ public final class PlayerLoginReqOuterClass {
             case 9706: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              unk2700JNDKPBBCACB_ = s;
+              securityLibraryVersion_ = s;
               break;
             }
             case 10146: {
@@ -951,38 +951,38 @@ public final class PlayerLoginReqOuterClass {
       }
     }
 
-    public static final int UNK2700_NGKCNPKKIKB_FIELD_NUMBER = 772;
-    private volatile java.lang.Object unk2700NGKCNPKKIKB_;
+    public static final int SECURITY_LIBRARY_MD5_FIELD_NUMBER = 772;
+    private volatile java.lang.Object securityLibraryMd5_;
     /**
-     * <code>string Unk2700_NGKCNPKKIKB = 772;</code>
-     * @return The unk2700NGKCNPKKIKB.
+     * <code>string security_library_md5 = 772;</code>
+     * @return The securityLibraryMd5.
      */
     @java.lang.Override
-    public java.lang.String getUnk2700NGKCNPKKIKB() {
-      java.lang.Object ref = unk2700NGKCNPKKIKB_;
+    public java.lang.String getSecurityLibraryMd5() {
+      java.lang.Object ref = securityLibraryMd5_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        unk2700NGKCNPKKIKB_ = s;
+        securityLibraryMd5_ = s;
         return s;
       }
     }
     /**
-     * <code>string Unk2700_NGKCNPKKIKB = 772;</code>
-     * @return The bytes for unk2700NGKCNPKKIKB.
+     * <code>string security_library_md5 = 772;</code>
+     * @return The bytes for securityLibraryMd5.
      */
     @java.lang.Override
     public com.google.protobuf.ByteString
-        getUnk2700NGKCNPKKIKBBytes() {
-      java.lang.Object ref = unk2700NGKCNPKKIKB_;
+        getSecurityLibraryMd5Bytes() {
+      java.lang.Object ref = securityLibraryMd5_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        unk2700NGKCNPKKIKB_ = b;
+        securityLibraryMd5_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -1065,15 +1065,15 @@ public final class PlayerLoginReqOuterClass {
       }
     }
 
-    public static final int UNK2700_GPPBEMDGEHH_FIELD_NUMBER = 431;
-    private int unk2700GPPBEMDGEHH_;
+    public static final int CLIENT_PORT_FIELD_NUMBER = 431;
+    private int clientPort_;
     /**
-     * <code>uint32 Unk2700_GPPBEMDGEHH = 431;</code>
-     * @return The unk2700GPPBEMDGEHH.
+     * <code>uint32 client_port = 431;</code>
+     * @return The clientPort.
      */
     @java.lang.Override
-    public int getUnk2700GPPBEMDGEHH() {
-      return unk2700GPPBEMDGEHH_;
+    public int getClientPort() {
+      return clientPort_;
     }
 
     public static final int DEVICE_NAME_FIELD_NUMBER = 9;
@@ -1342,38 +1342,38 @@ public final class PlayerLoginReqOuterClass {
       return securityCmdReply_;
     }
 
-    public static final int UNK2700_JNDKPBBCACB_FIELD_NUMBER = 1213;
-    private volatile java.lang.Object unk2700JNDKPBBCACB_;
+    public static final int SECURITY_LIBRARY_VERSION_FIELD_NUMBER = 1213;
+    private volatile java.lang.Object securityLibraryVersion_;
     /**
-     * <code>string Unk2700_JNDKPBBCACB = 1213;</code>
-     * @return The unk2700JNDKPBBCACB.
+     * <code>string security_library_version = 1213;</code>
+     * @return The securityLibraryVersion.
      */
     @java.lang.Override
-    public java.lang.String getUnk2700JNDKPBBCACB() {
-      java.lang.Object ref = unk2700JNDKPBBCACB_;
+    public java.lang.String getSecurityLibraryVersion() {
+      java.lang.Object ref = securityLibraryVersion_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        unk2700JNDKPBBCACB_ = s;
+        securityLibraryVersion_ = s;
         return s;
       }
     }
     /**
-     * <code>string Unk2700_JNDKPBBCACB = 1213;</code>
-     * @return The bytes for unk2700JNDKPBBCACB.
+     * <code>string security_library_version = 1213;</code>
+     * @return The bytes for securityLibraryVersion.
      */
     @java.lang.Override
     public com.google.protobuf.ByteString
-        getUnk2700JNDKPBBCACBBytes() {
-      java.lang.Object ref = unk2700JNDKPBBCACB_;
+        getSecurityLibraryVersionBytes() {
+      java.lang.Object ref = securityLibraryVersion_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        unk2700JNDKPBBCACB_ = b;
+        securityLibraryVersion_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -1785,8 +1785,8 @@ public final class PlayerLoginReqOuterClass {
       if (subChannelId_ != 0) {
         output.writeUInt32(23, subChannelId_);
       }
-      if (unk2700GPPBEMDGEHH_ != 0) {
-        output.writeUInt32(431, unk2700GPPBEMDGEHH_);
+      if (clientPort_ != 0) {
+        output.writeUInt32(431, clientPort_);
       }
       if (gmUid_ != 0) {
         output.writeUInt32(612, gmUid_);
@@ -1797,8 +1797,8 @@ public final class PlayerLoginReqOuterClass {
       if (clientDataVersion_ != 0) {
         output.writeUInt32(688, clientDataVersion_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(unk2700NGKCNPKKIKB_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 772, unk2700NGKCNPKKIKB_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(securityLibraryMd5_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 772, securityLibraryMd5_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(checksumClientVersion_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 861, checksumClientVersion_);
@@ -1815,8 +1815,8 @@ public final class PlayerLoginReqOuterClass {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(cps_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1163, cps_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(unk2700JNDKPBBCACB_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1213, unk2700JNDKPBBCACB_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(securityLibraryVersion_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1213, securityLibraryVersion_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(psnId_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1268, psnId_);
@@ -1928,9 +1928,9 @@ public final class PlayerLoginReqOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(23, subChannelId_);
       }
-      if (unk2700GPPBEMDGEHH_ != 0) {
+      if (clientPort_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(431, unk2700GPPBEMDGEHH_);
+          .computeUInt32Size(431, clientPort_);
       }
       if (gmUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -1944,8 +1944,8 @@ public final class PlayerLoginReqOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(688, clientDataVersion_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(unk2700NGKCNPKKIKB_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(772, unk2700NGKCNPKKIKB_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(securityLibraryMd5_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(772, securityLibraryMd5_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(checksumClientVersion_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(861, checksumClientVersion_);
@@ -1964,8 +1964,8 @@ public final class PlayerLoginReqOuterClass {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(cps_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1163, cps_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(unk2700JNDKPBBCACB_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1213, unk2700JNDKPBBCACB_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(securityLibraryVersion_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1213, securityLibraryVersion_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(psnId_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1268, psnId_);
@@ -2060,14 +2060,14 @@ public final class PlayerLoginReqOuterClass {
           .equals(other.getAccountUid())) return false;
       if (!getClientVersion()
           .equals(other.getClientVersion())) return false;
-      if (!getUnk2700NGKCNPKKIKB()
-          .equals(other.getUnk2700NGKCNPKKIKB())) return false;
+      if (!getSecurityLibraryMd5()
+          .equals(other.getSecurityLibraryMd5())) return false;
       if (!getCountryCode()
           .equals(other.getCountryCode())) return false;
       if (!getPsnId()
           .equals(other.getPsnId())) return false;
-      if (getUnk2700GPPBEMDGEHH()
-          != other.getUnk2700GPPBEMDGEHH()) return false;
+      if (getClientPort()
+          != other.getClientPort()) return false;
       if (!getDeviceName()
           .equals(other.getDeviceName())) return false;
       if (!getCps()
@@ -2097,8 +2097,8 @@ public final class PlayerLoginReqOuterClass {
           .equals(other.getChecksumClientVersion())) return false;
       if (!getSecurityCmdReply()
           .equals(other.getSecurityCmdReply())) return false;
-      if (!getUnk2700JNDKPBBCACB()
-          .equals(other.getUnk2700JNDKPBBCACB())) return false;
+      if (!getSecurityLibraryVersion()
+          .equals(other.getSecurityLibraryVersion())) return false;
       if (!getBirthday()
           .equals(other.getBirthday())) return false;
       if (!getDeviceUuid()
@@ -2160,14 +2160,14 @@ public final class PlayerLoginReqOuterClass {
       hash = (53 * hash) + getAccountUid().hashCode();
       hash = (37 * hash) + CLIENT_VERSION_FIELD_NUMBER;
       hash = (53 * hash) + getClientVersion().hashCode();
-      hash = (37 * hash) + UNK2700_NGKCNPKKIKB_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2700NGKCNPKKIKB().hashCode();
+      hash = (37 * hash) + SECURITY_LIBRARY_MD5_FIELD_NUMBER;
+      hash = (53 * hash) + getSecurityLibraryMd5().hashCode();
       hash = (37 * hash) + COUNTRY_CODE_FIELD_NUMBER;
       hash = (53 * hash) + getCountryCode().hashCode();
       hash = (37 * hash) + PSN_ID_FIELD_NUMBER;
       hash = (53 * hash) + getPsnId().hashCode();
-      hash = (37 * hash) + UNK2700_GPPBEMDGEHH_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2700GPPBEMDGEHH();
+      hash = (37 * hash) + CLIENT_PORT_FIELD_NUMBER;
+      hash = (53 * hash) + getClientPort();
       hash = (37 * hash) + DEVICE_NAME_FIELD_NUMBER;
       hash = (53 * hash) + getDeviceName().hashCode();
       hash = (37 * hash) + CPS_FIELD_NUMBER;
@@ -2200,8 +2200,8 @@ public final class PlayerLoginReqOuterClass {
       hash = (53 * hash) + getChecksumClientVersion().hashCode();
       hash = (37 * hash) + SECURITY_CMD_REPLY_FIELD_NUMBER;
       hash = (53 * hash) + getSecurityCmdReply().hashCode();
-      hash = (37 * hash) + UNK2700_JNDKPBBCACB_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2700JNDKPBBCACB().hashCode();
+      hash = (37 * hash) + SECURITY_LIBRARY_VERSION_FIELD_NUMBER;
+      hash = (53 * hash) + getSecurityLibraryVersion().hashCode();
       hash = (37 * hash) + BIRTHDAY_FIELD_NUMBER;
       hash = (53 * hash) + getBirthday().hashCode();
       hash = (37 * hash) + DEVICE_UUID_FIELD_NUMBER;
@@ -2329,7 +2329,7 @@ public final class PlayerLoginReqOuterClass {
      * <pre>
      * CmdId: 112
      * EnetChannelId: 0
-     * EnetIsReliable: false
+     * EnetIsReliable: true
      * IsAllowClient: true
      * </pre>
      *
@@ -2394,13 +2394,13 @@ public final class PlayerLoginReqOuterClass {
 
         clientVersion_ = "";
 
-        unk2700NGKCNPKKIKB_ = "";
+        securityLibraryMd5_ = "";
 
         countryCode_ = "";
 
         psnId_ = "";
 
-        unk2700GPPBEMDGEHH_ = 0;
+        clientPort_ = 0;
 
         deviceName_ = "";
 
@@ -2432,7 +2432,7 @@ public final class PlayerLoginReqOuterClass {
 
         securityCmdReply_ = com.google.protobuf.ByteString.EMPTY;
 
-        unk2700JNDKPBBCACB_ = "";
+        securityLibraryVersion_ = "";
 
         birthday_ = "";
 
@@ -2502,10 +2502,10 @@ public final class PlayerLoginReqOuterClass {
         result.clientDataVersion_ = clientDataVersion_;
         result.accountUid_ = accountUid_;
         result.clientVersion_ = clientVersion_;
-        result.unk2700NGKCNPKKIKB_ = unk2700NGKCNPKKIKB_;
+        result.securityLibraryMd5_ = securityLibraryMd5_;
         result.countryCode_ = countryCode_;
         result.psnId_ = psnId_;
-        result.unk2700GPPBEMDGEHH_ = unk2700GPPBEMDGEHH_;
+        result.clientPort_ = clientPort_;
         result.deviceName_ = deviceName_;
         result.cps_ = cps_;
         result.loginRand_ = loginRand_;
@@ -2523,7 +2523,7 @@ public final class PlayerLoginReqOuterClass {
         result.isEditor_ = isEditor_;
         result.checksumClientVersion_ = checksumClientVersion_;
         result.securityCmdReply_ = securityCmdReply_;
-        result.unk2700JNDKPBBCACB_ = unk2700JNDKPBBCACB_;
+        result.securityLibraryVersion_ = securityLibraryVersion_;
         result.birthday_ = birthday_;
         result.deviceUuid_ = deviceUuid_;
         result.clientToken_ = clientToken_;
@@ -2619,8 +2619,8 @@ public final class PlayerLoginReqOuterClass {
           clientVersion_ = other.clientVersion_;
           onChanged();
         }
-        if (!other.getUnk2700NGKCNPKKIKB().isEmpty()) {
-          unk2700NGKCNPKKIKB_ = other.unk2700NGKCNPKKIKB_;
+        if (!other.getSecurityLibraryMd5().isEmpty()) {
+          securityLibraryMd5_ = other.securityLibraryMd5_;
           onChanged();
         }
         if (!other.getCountryCode().isEmpty()) {
@@ -2631,8 +2631,8 @@ public final class PlayerLoginReqOuterClass {
           psnId_ = other.psnId_;
           onChanged();
         }
-        if (other.getUnk2700GPPBEMDGEHH() != 0) {
-          setUnk2700GPPBEMDGEHH(other.getUnk2700GPPBEMDGEHH());
+        if (other.getClientPort() != 0) {
+          setClientPort(other.getClientPort());
         }
         if (!other.getDeviceName().isEmpty()) {
           deviceName_ = other.deviceName_;
@@ -2677,8 +2677,8 @@ public final class PlayerLoginReqOuterClass {
         if (other.getSecurityCmdReply() != com.google.protobuf.ByteString.EMPTY) {
           setSecurityCmdReply(other.getSecurityCmdReply());
         }
-        if (!other.getUnk2700JNDKPBBCACB().isEmpty()) {
-          unk2700JNDKPBBCACB_ = other.unk2700JNDKPBBCACB_;
+        if (!other.getSecurityLibraryVersion().isEmpty()) {
+          securityLibraryVersion_ = other.securityLibraryVersion_;
           onChanged();
         }
         if (!other.getBirthday().isEmpty()) {
@@ -3295,78 +3295,78 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
 
-      private java.lang.Object unk2700NGKCNPKKIKB_ = "";
+      private java.lang.Object securityLibraryMd5_ = "";
       /**
-       * <code>string Unk2700_NGKCNPKKIKB = 772;</code>
-       * @return The unk2700NGKCNPKKIKB.
+       * <code>string security_library_md5 = 772;</code>
+       * @return The securityLibraryMd5.
        */
-      public java.lang.String getUnk2700NGKCNPKKIKB() {
-        java.lang.Object ref = unk2700NGKCNPKKIKB_;
+      public java.lang.String getSecurityLibraryMd5() {
+        java.lang.Object ref = securityLibraryMd5_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          unk2700NGKCNPKKIKB_ = s;
+          securityLibraryMd5_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string Unk2700_NGKCNPKKIKB = 772;</code>
-       * @return The bytes for unk2700NGKCNPKKIKB.
+       * <code>string security_library_md5 = 772;</code>
+       * @return The bytes for securityLibraryMd5.
        */
       public com.google.protobuf.ByteString
-          getUnk2700NGKCNPKKIKBBytes() {
-        java.lang.Object ref = unk2700NGKCNPKKIKB_;
+          getSecurityLibraryMd5Bytes() {
+        java.lang.Object ref = securityLibraryMd5_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          unk2700NGKCNPKKIKB_ = b;
+          securityLibraryMd5_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string Unk2700_NGKCNPKKIKB = 772;</code>
-       * @param value The unk2700NGKCNPKKIKB to set.
+       * <code>string security_library_md5 = 772;</code>
+       * @param value The securityLibraryMd5 to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700NGKCNPKKIKB(
+      public Builder setSecurityLibraryMd5(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        unk2700NGKCNPKKIKB_ = value;
+        securityLibraryMd5_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string Unk2700_NGKCNPKKIKB = 772;</code>
+       * <code>string security_library_md5 = 772;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700NGKCNPKKIKB() {
+      public Builder clearSecurityLibraryMd5() {
         
-        unk2700NGKCNPKKIKB_ = getDefaultInstance().getUnk2700NGKCNPKKIKB();
+        securityLibraryMd5_ = getDefaultInstance().getSecurityLibraryMd5();
         onChanged();
         return this;
       }
       /**
-       * <code>string Unk2700_NGKCNPKKIKB = 772;</code>
-       * @param value The bytes for unk2700NGKCNPKKIKB to set.
+       * <code>string security_library_md5 = 772;</code>
+       * @param value The bytes for securityLibraryMd5 to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700NGKCNPKKIKBBytes(
+      public Builder setSecurityLibraryMd5Bytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        unk2700NGKCNPKKIKB_ = value;
+        securityLibraryMd5_ = value;
         onChanged();
         return this;
       }
@@ -3523,33 +3523,33 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
 
-      private int unk2700GPPBEMDGEHH_ ;
+      private int clientPort_ ;
       /**
-       * <code>uint32 Unk2700_GPPBEMDGEHH = 431;</code>
-       * @return The unk2700GPPBEMDGEHH.
+       * <code>uint32 client_port = 431;</code>
+       * @return The clientPort.
        */
       @java.lang.Override
-      public int getUnk2700GPPBEMDGEHH() {
-        return unk2700GPPBEMDGEHH_;
+      public int getClientPort() {
+        return clientPort_;
       }
       /**
-       * <code>uint32 Unk2700_GPPBEMDGEHH = 431;</code>
-       * @param value The unk2700GPPBEMDGEHH to set.
+       * <code>uint32 client_port = 431;</code>
+       * @param value The clientPort to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700GPPBEMDGEHH(int value) {
+      public Builder setClientPort(int value) {
         
-        unk2700GPPBEMDGEHH_ = value;
+        clientPort_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk2700_GPPBEMDGEHH = 431;</code>
+       * <code>uint32 client_port = 431;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700GPPBEMDGEHH() {
+      public Builder clearClientPort() {
         
-        unk2700GPPBEMDGEHH_ = 0;
+        clientPort_ = 0;
         onChanged();
         return this;
       }
@@ -4231,78 +4231,78 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
 
-      private java.lang.Object unk2700JNDKPBBCACB_ = "";
+      private java.lang.Object securityLibraryVersion_ = "";
       /**
-       * <code>string Unk2700_JNDKPBBCACB = 1213;</code>
-       * @return The unk2700JNDKPBBCACB.
+       * <code>string security_library_version = 1213;</code>
+       * @return The securityLibraryVersion.
        */
-      public java.lang.String getUnk2700JNDKPBBCACB() {
-        java.lang.Object ref = unk2700JNDKPBBCACB_;
+      public java.lang.String getSecurityLibraryVersion() {
+        java.lang.Object ref = securityLibraryVersion_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          unk2700JNDKPBBCACB_ = s;
+          securityLibraryVersion_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string Unk2700_JNDKPBBCACB = 1213;</code>
-       * @return The bytes for unk2700JNDKPBBCACB.
+       * <code>string security_library_version = 1213;</code>
+       * @return The bytes for securityLibraryVersion.
        */
       public com.google.protobuf.ByteString
-          getUnk2700JNDKPBBCACBBytes() {
-        java.lang.Object ref = unk2700JNDKPBBCACB_;
+          getSecurityLibraryVersionBytes() {
+        java.lang.Object ref = securityLibraryVersion_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          unk2700JNDKPBBCACB_ = b;
+          securityLibraryVersion_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string Unk2700_JNDKPBBCACB = 1213;</code>
-       * @param value The unk2700JNDKPBBCACB to set.
+       * <code>string security_library_version = 1213;</code>
+       * @param value The securityLibraryVersion to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700JNDKPBBCACB(
+      public Builder setSecurityLibraryVersion(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        unk2700JNDKPBBCACB_ = value;
+        securityLibraryVersion_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string Unk2700_JNDKPBBCACB = 1213;</code>
+       * <code>string security_library_version = 1213;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700JNDKPBBCACB() {
+      public Builder clearSecurityLibraryVersion() {
         
-        unk2700JNDKPBBCACB_ = getDefaultInstance().getUnk2700JNDKPBBCACB();
+        securityLibraryVersion_ = getDefaultInstance().getSecurityLibraryVersion();
         onChanged();
         return this;
       }
       /**
-       * <code>string Unk2700_JNDKPBBCACB = 1213;</code>
-       * @param value The bytes for unk2700JNDKPBBCACB to set.
+       * <code>string security_library_version = 1213;</code>
+       * @param value The bytes for securityLibraryVersion to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700JNDKPBBCACBBytes(
+      public Builder setSecurityLibraryVersionBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        unk2700JNDKPBBCACB_ = value;
+        securityLibraryVersion_ = value;
         onChanged();
         return this;
       }
@@ -5123,34 +5123,34 @@ public final class PlayerLoginReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024PlayerLoginReq.proto\032\030AdjustTrackingIn" +
-      "fo.proto\032\024TrackingIOInfo.proto\"\213\010\n\016Playe" +
+      "fo.proto\032\024TrackingIOInfo.proto\"\211\010\n\016Playe" +
       "rLoginReq\022\025\n\rlanguage_type\030\006 \001(\r\022\025\n\014reg_" +
       "platform\030\347\004 \001(\r\022*\n\020tracking_io_info\030\374\014 \001" +
       "(\0132\017.TrackingIOInfo\022\024\n\014account_type\030\r \001(" +
       "\r\022\r\n\005token\030\017 \001(\t\022\027\n\016extra_bin_data\030\262\013 \001(" +
       "\014\022\023\n\nchannel_id\030\242\n \001(\r\022\034\n\023client_data_ve" +
       "rsion\030\260\005 \001(\r\022\023\n\013account_uid\030\002 \001(\t\022\026\n\016cli" +
-      "ent_version\030\014 \001(\t\022\034\n\023Unk2700_NGKCNPKKIKB" +
-      "\030\204\006 \001(\t\022\025\n\014country_code\030\320\017 \001(\t\022\017\n\006psn_id" +
-      "\030\364\t \001(\t\022\034\n\023Unk2700_GPPBEMDGEHH\030\257\003 \001(\r\022\023\n" +
-      "\013device_name\030\t \001(\t\022\014\n\003cps\030\213\t \001(\t\022\022\n\nlogi" +
-      "n_rand\030\003 \001(\004\022\032\n\021target_home_param\030\330\007 \001(\r" +
-      "\0222\n\024adjust_tracking_info\030\230\016 \001(\0132\023.Adjust" +
-      "TrackingInfo\022\024\n\013is_transfer\030\214\007 \001(\010\022\014\n\003ta" +
-      "g\030\373\r \001(\r\022\020\n\010is_guest\030\005 \001(\010\022\037\n\026environmen" +
-      "t_error_code\030\352\017 \001(\014\022\022\n\tonline_id\030\207\007 \001(\t\022" +
-      "\021\n\tis_editor\030\010 \001(\010\022 \n\027checksum_client_ve" +
-      "rsion\030\335\006 \001(\t\022\033\n\022security_cmd_reply\030\313\017 \001(" +
-      "\014\022\034\n\023Unk2700_JNDKPBBCACB\030\275\t \001(\t\022\021\n\010birth" +
-      "day\030\364\014 \001(\t\022\023\n\013device_uuid\030\004 \001(\t\022\025\n\014clien" +
-      "t_token\030\212\014 \001(\r\022\026\n\016sub_channel_id\030\027 \001(\r\022\022" +
-      "\n\ntarget_uid\030\013 \001(\r\022\023\n\013device_info\030\001 \001(\t\022" +
-      "\034\n\023client_verison_hash\030\253\r \001(\t\022\021\n\010checksu" +
-      "m\030\374\013 \001(\t\022\025\n\rplatform_type\030\016 \001(\r\022\036\n\025targe" +
-      "t_home_owner_uid\030\310\016 \001(\r\022\030\n\017cloud_client_" +
-      "ip\030\267\n \001(\r\022\017\n\006gm_uid\030\344\004 \001(\r\022\026\n\016system_ver" +
-      "sion\030\n \001(\t\022\020\n\010platform\030\007 \001(\tB\033\n\031emu.gras" +
-      "scutter.net.protob\006proto3"
+      "ent_version\030\014 \001(\t\022\035\n\024security_library_md" +
+      "5\030\204\006 \001(\t\022\025\n\014country_code\030\320\017 \001(\t\022\017\n\006psn_i" +
+      "d\030\364\t \001(\t\022\024\n\013client_port\030\257\003 \001(\r\022\023\n\013device" +
+      "_name\030\t \001(\t\022\014\n\003cps\030\213\t \001(\t\022\022\n\nlogin_rand\030" +
+      "\003 \001(\004\022\032\n\021target_home_param\030\330\007 \001(\r\0222\n\024adj" +
+      "ust_tracking_info\030\230\016 \001(\0132\023.AdjustTrackin" +
+      "gInfo\022\024\n\013is_transfer\030\214\007 \001(\010\022\014\n\003tag\030\373\r \001(" +
+      "\r\022\020\n\010is_guest\030\005 \001(\010\022\037\n\026environment_error" +
+      "_code\030\352\017 \001(\014\022\022\n\tonline_id\030\207\007 \001(\t\022\021\n\tis_e" +
+      "ditor\030\010 \001(\010\022 \n\027checksum_client_version\030\335" +
+      "\006 \001(\t\022\033\n\022security_cmd_reply\030\313\017 \001(\014\022!\n\030se" +
+      "curity_library_version\030\275\t \001(\t\022\021\n\010birthda" +
+      "y\030\364\014 \001(\t\022\023\n\013device_uuid\030\004 \001(\t\022\025\n\014client_" +
+      "token\030\212\014 \001(\r\022\026\n\016sub_channel_id\030\027 \001(\r\022\022\n\n" +
+      "target_uid\030\013 \001(\r\022\023\n\013device_info\030\001 \001(\t\022\034\n" +
+      "\023client_verison_hash\030\253\r \001(\t\022\021\n\010checksum\030" +
+      "\374\013 \001(\t\022\025\n\rplatform_type\030\016 \001(\r\022\036\n\025target_" +
+      "home_owner_uid\030\310\016 \001(\r\022\030\n\017cloud_client_ip" +
+      "\030\267\n \001(\r\022\017\n\006gm_uid\030\344\004 \001(\r\022\026\n\016system_versi" +
+      "on\030\n \001(\t\022\020\n\010platform\030\007 \001(\tB\033\n\031emu.grassc" +
+      "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -5163,7 +5163,7 @@ public final class PlayerLoginReqOuterClass {
     internal_static_PlayerLoginReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerLoginReq_descriptor,
-        new java.lang.String[] { "LanguageType", "RegPlatform", "TrackingIoInfo", "AccountType", "Token", "ExtraBinData", "ChannelId", "ClientDataVersion", "AccountUid", "ClientVersion", "Unk2700NGKCNPKKIKB", "CountryCode", "PsnId", "Unk2700GPPBEMDGEHH", "DeviceName", "Cps", "LoginRand", "TargetHomeParam", "AdjustTrackingInfo", "IsTransfer", "Tag", "IsGuest", "EnvironmentErrorCode", "OnlineId", "IsEditor", "ChecksumClientVersion", "SecurityCmdReply", "Unk2700JNDKPBBCACB", "Birthday", "DeviceUuid", "ClientToken", "SubChannelId", "TargetUid", "DeviceInfo", "ClientVerisonHash", "Checksum", "PlatformType", "TargetHomeOwnerUid", "CloudClientIp", "GmUid", "SystemVersion", "Platform", });
+        new java.lang.String[] { "LanguageType", "RegPlatform", "TrackingIoInfo", "AccountType", "Token", "ExtraBinData", "ChannelId", "ClientDataVersion", "AccountUid", "ClientVersion", "SecurityLibraryMd5", "CountryCode", "PsnId", "ClientPort", "DeviceName", "Cps", "LoginRand", "TargetHomeParam", "AdjustTrackingInfo", "IsTransfer", "Tag", "IsGuest", "EnvironmentErrorCode", "OnlineId", "IsEditor", "ChecksumClientVersion", "SecurityCmdReply", "SecurityLibraryVersion", "Birthday", "DeviceUuid", "ClientToken", "SubChannelId", "TargetUid", "DeviceInfo", "ClientVerisonHash", "Checksum", "PlatformType", "TargetHomeOwnerUid", "CloudClientIp", "GmUid", "SystemVersion", "Platform", });
     emu.grasscutter.net.proto.AdjustTrackingInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.TrackingIOInfoOuterClass.getDescriptor();
   }

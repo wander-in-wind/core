@@ -25,6 +25,13 @@ public final class GetActivityShopSheetInfoReqOuterClass {
     int getShopType();
   }
   /**
+   * <pre>
+   * CmdId: 703
+   * EnetChannelId: 0
+   * EnetIsReliable: true
+   * IsAllowClient: true
+   * </pre>
+   *
    * Protobuf type {@code GetActivityShopSheetInfoReq}
    */
   public static final class GetActivityShopSheetInfoReq extends
@@ -273,6 +280,13 @@ public final class GetActivityShopSheetInfoReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 703
+     * EnetChannelId: 0
+     * EnetIsReliable: true
+     * IsAllowClient: true
+     * </pre>
+     *
      * Protobuf type {@code GetActivityShopSheetInfoReq}
      */
     public static final class Builder extends

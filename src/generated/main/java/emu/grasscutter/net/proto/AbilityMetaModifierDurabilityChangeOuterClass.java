@@ -19,16 +19,16 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>float remain_durability = 15;</code>
-     * @return The remainDurability.
-     */
-    float getRemainDurability();
-
-    /**
      * <code>float reduce_durability = 6;</code>
      * @return The reduceDurability.
      */
     float getReduceDurability();
+
+    /**
+     * <code>float remain_durability = 15;</code>
+     * @return The remainDurability.
+     */
+    float getRemainDurability();
   }
   /**
    * Protobuf type {@code AbilityMetaModifierDurabilityChange}
@@ -75,12 +75,12 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
             case 0:
               done = true;
               break;
-            case 15: {
+            case 53: {
 
               reduceDurability_ = input.readFloat();
               break;
             }
-            case 109: {
+            case 125: {
 
               remainDurability_ = input.readFloat();
               break;
@@ -117,17 +117,6 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
               emu.grasscutter.net.proto.AbilityMetaModifierDurabilityChangeOuterClass.AbilityMetaModifierDurabilityChange.class, emu.grasscutter.net.proto.AbilityMetaModifierDurabilityChangeOuterClass.AbilityMetaModifierDurabilityChange.Builder.class);
     }
 
-    public static final int REMAIN_DURABILITY_FIELD_NUMBER = 15;
-    private float remainDurability_;
-    /**
-     * <code>float remain_durability = 15;</code>
-     * @return The remainDurability.
-     */
-    @java.lang.Override
-    public float getRemainDurability() {
-      return remainDurability_;
-    }
-
     public static final int REDUCE_DURABILITY_FIELD_NUMBER = 6;
     private float reduceDurability_;
     /**
@@ -137,6 +126,17 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
     @java.lang.Override
     public float getReduceDurability() {
       return reduceDurability_;
+    }
+
+    public static final int REMAIN_DURABILITY_FIELD_NUMBER = 15;
+    private float remainDurability_;
+    /**
+     * <code>float remain_durability = 15;</code>
+     * @return The remainDurability.
+     */
+    @java.lang.Override
+    public float getRemainDurability() {
+      return remainDurability_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -191,12 +191,12 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
       }
       emu.grasscutter.net.proto.AbilityMetaModifierDurabilityChangeOuterClass.AbilityMetaModifierDurabilityChange other = (emu.grasscutter.net.proto.AbilityMetaModifierDurabilityChangeOuterClass.AbilityMetaModifierDurabilityChange) obj;
 
-      if (java.lang.Float.floatToIntBits(getRemainDurability())
-          != java.lang.Float.floatToIntBits(
-              other.getRemainDurability())) return false;
       if (java.lang.Float.floatToIntBits(getReduceDurability())
           != java.lang.Float.floatToIntBits(
               other.getReduceDurability())) return false;
+      if (java.lang.Float.floatToIntBits(getRemainDurability())
+          != java.lang.Float.floatToIntBits(
+              other.getRemainDurability())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -208,12 +208,12 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + REMAIN_DURABILITY_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getRemainDurability());
       hash = (37 * hash) + REDUCE_DURABILITY_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
           getReduceDurability());
+      hash = (37 * hash) + REMAIN_DURABILITY_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getRemainDurability());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -347,9 +347,9 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        remainDurability_ = 0F;
-
         reduceDurability_ = 0F;
+
+        remainDurability_ = 0F;
 
         return this;
       }
@@ -377,8 +377,8 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AbilityMetaModifierDurabilityChangeOuterClass.AbilityMetaModifierDurabilityChange buildPartial() {
         emu.grasscutter.net.proto.AbilityMetaModifierDurabilityChangeOuterClass.AbilityMetaModifierDurabilityChange result = new emu.grasscutter.net.proto.AbilityMetaModifierDurabilityChangeOuterClass.AbilityMetaModifierDurabilityChange(this);
-        result.remainDurability_ = remainDurability_;
         result.reduceDurability_ = reduceDurability_;
+        result.remainDurability_ = remainDurability_;
         onBuilt();
         return result;
       }
@@ -427,11 +427,11 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AbilityMetaModifierDurabilityChangeOuterClass.AbilityMetaModifierDurabilityChange other) {
         if (other == emu.grasscutter.net.proto.AbilityMetaModifierDurabilityChangeOuterClass.AbilityMetaModifierDurabilityChange.getDefaultInstance()) return this;
-        if (other.getRemainDurability() != 0F) {
-          setRemainDurability(other.getRemainDurability());
-        }
         if (other.getReduceDurability() != 0F) {
           setReduceDurability(other.getReduceDurability());
+        }
+        if (other.getRemainDurability() != 0F) {
+          setRemainDurability(other.getRemainDurability());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -462,37 +462,6 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
         return this;
       }
 
-      private float remainDurability_ ;
-      /**
-       * <code>float remain_durability = 15;</code>
-       * @return The remainDurability.
-       */
-      @java.lang.Override
-      public float getRemainDurability() {
-        return remainDurability_;
-      }
-      /**
-       * <code>float remain_durability = 15;</code>
-       * @param value The remainDurability to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRemainDurability(float value) {
-
-        remainDurability_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float remain_durability = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRemainDurability() {
-
-        remainDurability_ = 0F;
-        onChanged();
-        return this;
-      }
-
       private float reduceDurability_ ;
       /**
        * <code>float reduce_durability = 6;</code>
@@ -508,7 +477,7 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
        * @return This builder for chaining.
        */
       public Builder setReduceDurability(float value) {
-
+        
         reduceDurability_ = value;
         onChanged();
         return this;
@@ -518,8 +487,39 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearReduceDurability() {
-
+        
         reduceDurability_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private float remainDurability_ ;
+      /**
+       * <code>float remain_durability = 15;</code>
+       * @return The remainDurability.
+       */
+      @java.lang.Override
+      public float getRemainDurability() {
+        return remainDurability_;
+      }
+      /**
+       * <code>float remain_durability = 15;</code>
+       * @param value The remainDurability to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRemainDurability(float value) {
+        
+        remainDurability_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>float remain_durability = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRemainDurability() {
+        
+        remainDurability_ = 0F;
         onChanged();
         return this;
       }
@@ -578,7 +578,7 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_AbilityMetaModifierDurabilityChange_descriptor;
-  private static final
+  private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_AbilityMetaModifierDurabilityChange_fieldAccessorTable;
 
@@ -592,8 +592,8 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
     java.lang.String[] descriptorData = {
       "\n)AbilityMetaModifierDurabilityChange.pr" +
       "oto\"[\n#AbilityMetaModifierDurabilityChan" +
-      "ge\022\031\n\021remain_durability\030\015 \001(\002\022\031\n\021reduce_" +
-      "durability\030\006 \001(\002B\033\n\031emu.grasscutter.net." +
+      "ge\022\031\n\021reduce_durability\030\006 \001(\002\022\031\n\021remain_" +
+      "durability\030\017 \001(\002B\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -605,7 +605,7 @@ public final class AbilityMetaModifierDurabilityChangeOuterClass {
     internal_static_AbilityMetaModifierDurabilityChange_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilityMetaModifierDurabilityChange_descriptor,
-        new java.lang.String[] { "RemainDurability", "ReduceDurability", });
+        new java.lang.String[] { "ReduceDurability", "RemainDurability", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

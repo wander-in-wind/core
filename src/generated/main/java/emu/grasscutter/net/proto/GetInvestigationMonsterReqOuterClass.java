@@ -36,16 +36,16 @@ public final class GetInvestigationMonsterReqOuterClass {
     int getCityIdList(int index);
 
     /**
-     * <code>bool Unk2700_DEMFDHNFBBJ = 4;</code>
-     * @return The unk2700DEMFDHNFBBJ.
+     * <code>bool is_for_mark = 4;</code>
+     * @return The isForMark.
      */
-    boolean getUnk2700DEMFDHNFBBJ();
+    boolean getIsForMark();
   }
   /**
    * <pre>
    * CmdId: 1901
    * EnetChannelId: 0
-   * EnetIsReliable: false
+   * EnetIsReliable: true
    * IsAllowClient: true
    * </pre>
    *
@@ -118,7 +118,7 @@ public final class GetInvestigationMonsterReqOuterClass {
             }
             case 32: {
 
-              unk2700DEMFDHNFBBJ_ = input.readBool();
+              isForMark_ = input.readBool();
               break;
             }
             default: {
@@ -184,15 +184,15 @@ public final class GetInvestigationMonsterReqOuterClass {
     }
     private int cityIdListMemoizedSerializedSize = -1;
 
-    public static final int UNK2700_DEMFDHNFBBJ_FIELD_NUMBER = 4;
-    private boolean unk2700DEMFDHNFBBJ_;
+    public static final int IS_FOR_MARK_FIELD_NUMBER = 4;
+    private boolean isForMark_;
     /**
-     * <code>bool Unk2700_DEMFDHNFBBJ = 4;</code>
-     * @return The unk2700DEMFDHNFBBJ.
+     * <code>bool is_for_mark = 4;</code>
+     * @return The isForMark.
      */
     @java.lang.Override
-    public boolean getUnk2700DEMFDHNFBBJ() {
-      return unk2700DEMFDHNFBBJ_;
+    public boolean getIsForMark() {
+      return isForMark_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -217,8 +217,8 @@ public final class GetInvestigationMonsterReqOuterClass {
       for (int i = 0; i < cityIdList_.size(); i++) {
         output.writeUInt32NoTag(cityIdList_.getInt(i));
       }
-      if (unk2700DEMFDHNFBBJ_ != false) {
-        output.writeBool(4, unk2700DEMFDHNFBBJ_);
+      if (isForMark_ != false) {
+        output.writeBool(4, isForMark_);
       }
       unknownFields.writeTo(output);
     }
@@ -243,9 +243,9 @@ public final class GetInvestigationMonsterReqOuterClass {
         }
         cityIdListMemoizedSerializedSize = dataSize;
       }
-      if (unk2700DEMFDHNFBBJ_ != false) {
+      if (isForMark_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, unk2700DEMFDHNFBBJ_);
+          .computeBoolSize(4, isForMark_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -264,8 +264,8 @@ public final class GetInvestigationMonsterReqOuterClass {
 
       if (!getCityIdListList()
           .equals(other.getCityIdListList())) return false;
-      if (getUnk2700DEMFDHNFBBJ()
-          != other.getUnk2700DEMFDHNFBBJ()) return false;
+      if (getIsForMark()
+          != other.getIsForMark()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -281,9 +281,9 @@ public final class GetInvestigationMonsterReqOuterClass {
         hash = (37 * hash) + CITY_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getCityIdListList().hashCode();
       }
-      hash = (37 * hash) + UNK2700_DEMFDHNFBBJ_FIELD_NUMBER;
+      hash = (37 * hash) + IS_FOR_MARK_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk2700DEMFDHNFBBJ());
+          getIsForMark());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -383,7 +383,7 @@ public final class GetInvestigationMonsterReqOuterClass {
      * <pre>
      * CmdId: 1901
      * EnetChannelId: 0
-     * EnetIsReliable: false
+     * EnetIsReliable: true
      * IsAllowClient: true
      * </pre>
      *
@@ -426,7 +426,7 @@ public final class GetInvestigationMonsterReqOuterClass {
         super.clear();
         cityIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        unk2700DEMFDHNFBBJ_ = false;
+        isForMark_ = false;
 
         return this;
       }
@@ -460,7 +460,7 @@ public final class GetInvestigationMonsterReqOuterClass {
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.cityIdList_ = cityIdList_;
-        result.unk2700DEMFDHNFBBJ_ = unk2700DEMFDHNFBBJ_;
+        result.isForMark_ = isForMark_;
         onBuilt();
         return result;
       }
@@ -519,8 +519,8 @@ public final class GetInvestigationMonsterReqOuterClass {
           }
           onChanged();
         }
-        if (other.getUnk2700DEMFDHNFBBJ() != false) {
-          setUnk2700DEMFDHNFBBJ(other.getUnk2700DEMFDHNFBBJ());
+        if (other.getIsForMark() != false) {
+          setIsForMark(other.getIsForMark());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -631,33 +631,33 @@ public final class GetInvestigationMonsterReqOuterClass {
         return this;
       }
 
-      private boolean unk2700DEMFDHNFBBJ_ ;
+      private boolean isForMark_ ;
       /**
-       * <code>bool Unk2700_DEMFDHNFBBJ = 4;</code>
-       * @return The unk2700DEMFDHNFBBJ.
+       * <code>bool is_for_mark = 4;</code>
+       * @return The isForMark.
        */
       @java.lang.Override
-      public boolean getUnk2700DEMFDHNFBBJ() {
-        return unk2700DEMFDHNFBBJ_;
+      public boolean getIsForMark() {
+        return isForMark_;
       }
       /**
-       * <code>bool Unk2700_DEMFDHNFBBJ = 4;</code>
-       * @param value The unk2700DEMFDHNFBBJ to set.
+       * <code>bool is_for_mark = 4;</code>
+       * @param value The isForMark to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700DEMFDHNFBBJ(boolean value) {
+      public Builder setIsForMark(boolean value) {
         
-        unk2700DEMFDHNFBBJ_ = value;
+        isForMark_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk2700_DEMFDHNFBBJ = 4;</code>
+       * <code>bool is_for_mark = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700DEMFDHNFBBJ() {
+      public Builder clearIsForMark() {
         
-        unk2700DEMFDHNFBBJ_ = false;
+        isForMark_ = false;
         onChanged();
         return this;
       }
@@ -728,10 +728,10 @@ public final class GetInvestigationMonsterReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n GetInvestigationMonsterReq.proto\"O\n\032Ge" +
+      "\n GetInvestigationMonsterReq.proto\"G\n\032Ge" +
       "tInvestigationMonsterReq\022\024\n\014city_id_list" +
-      "\030\003 \003(\r\022\033\n\023Unk2700_DEMFDHNFBBJ\030\004 \001(\010B\033\n\031e" +
-      "mu.grasscutter.net.protob\006proto3"
+      "\030\003 \003(\r\022\023\n\013is_for_mark\030\004 \001(\010B\033\n\031emu.grass" +
+      "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -742,7 +742,7 @@ public final class GetInvestigationMonsterReqOuterClass {
     internal_static_GetInvestigationMonsterReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetInvestigationMonsterReq_descriptor,
-        new java.lang.String[] { "CityIdList", "Unk2700DEMFDHNFBBJ", });
+        new java.lang.String[] { "CityIdList", "IsForMark", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

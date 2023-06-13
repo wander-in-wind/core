@@ -62,8 +62,7 @@ public final class H5ActivityIdsNotifyOuterClass {
    * <pre>
    * CmdId: 5675
    * EnetChannelId: 0
-   * EnetIsReliable: false
-   * IsAllowClient: true
+   * EnetIsReliable: true
    * </pre>
    *
    * Protobuf type {@code H5ActivityIdsNotify}
@@ -446,8 +445,7 @@ public final class H5ActivityIdsNotifyOuterClass {
      * <pre>
      * CmdId: 5675
      * EnetChannelId: 0
-     * EnetIsReliable: false
-     * IsAllowClient: true
+     * EnetIsReliable: true
      * </pre>
      *
      * Protobuf type {@code H5ActivityIdsNotify}

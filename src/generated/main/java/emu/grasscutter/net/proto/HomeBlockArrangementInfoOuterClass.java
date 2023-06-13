@@ -55,27 +55,27 @@ public final class HomeBlockArrangementInfoOuterClass {
         int index);
 
     /**
-     * <code>repeated .Unk2700_GOHMLAFNBGF Unk2700_HGIECHILOJL = 5;</code>
+     * <code>repeated .HomeFurnitureGroupData furniture_group_list = 5;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGF> 
-        getUnk2700HGIECHILOJLList();
+    java.util.List<emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData> 
+        getFurnitureGroupListList();
     /**
-     * <code>repeated .Unk2700_GOHMLAFNBGF Unk2700_HGIECHILOJL = 5;</code>
+     * <code>repeated .HomeFurnitureGroupData furniture_group_list = 5;</code>
      */
-    emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGF getUnk2700HGIECHILOJL(int index);
+    emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData getFurnitureGroupList(int index);
     /**
-     * <code>repeated .Unk2700_GOHMLAFNBGF Unk2700_HGIECHILOJL = 5;</code>
+     * <code>repeated .HomeFurnitureGroupData furniture_group_list = 5;</code>
      */
-    int getUnk2700HGIECHILOJLCount();
+    int getFurnitureGroupListCount();
     /**
-     * <code>repeated .Unk2700_GOHMLAFNBGF Unk2700_HGIECHILOJL = 5;</code>
+     * <code>repeated .HomeFurnitureGroupData furniture_group_list = 5;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGFOrBuilder> 
-        getUnk2700HGIECHILOJLOrBuilderList();
+    java.util.List<? extends emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupDataOrBuilder> 
+        getFurnitureGroupListOrBuilderList();
     /**
-     * <code>repeated .Unk2700_GOHMLAFNBGF Unk2700_HGIECHILOJL = 5;</code>
+     * <code>repeated .HomeFurnitureGroupData furniture_group_list = 5;</code>
      */
-    emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGFOrBuilder getUnk2700HGIECHILOJLOrBuilder(
+    emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupDataOrBuilder getFurnitureGroupListOrBuilder(
         int index);
 
     /**
@@ -253,27 +253,27 @@ public final class HomeBlockArrangementInfoOuterClass {
     int getBlockId();
 
     /**
-     * <code>repeated .Unk2700_BIEMCDLIFOD Unk2700_KJGLLEEHBPF = 14;</code>
+     * <code>repeated .HomeFurnitureCustomSuiteData furniture_custom_suite_list = 14;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFOD> 
-        getUnk2700KJGLLEEHBPFList();
+    java.util.List<emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteData> 
+        getFurnitureCustomSuiteListList();
     /**
-     * <code>repeated .Unk2700_BIEMCDLIFOD Unk2700_KJGLLEEHBPF = 14;</code>
+     * <code>repeated .HomeFurnitureCustomSuiteData furniture_custom_suite_list = 14;</code>
      */
-    emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFOD getUnk2700KJGLLEEHBPF(int index);
+    emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteData getFurnitureCustomSuiteList(int index);
     /**
-     * <code>repeated .Unk2700_BIEMCDLIFOD Unk2700_KJGLLEEHBPF = 14;</code>
+     * <code>repeated .HomeFurnitureCustomSuiteData furniture_custom_suite_list = 14;</code>
      */
-    int getUnk2700KJGLLEEHBPFCount();
+    int getFurnitureCustomSuiteListCount();
     /**
-     * <code>repeated .Unk2700_BIEMCDLIFOD Unk2700_KJGLLEEHBPF = 14;</code>
+     * <code>repeated .HomeFurnitureCustomSuiteData furniture_custom_suite_list = 14;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFODOrBuilder> 
-        getUnk2700KJGLLEEHBPFOrBuilderList();
+    java.util.List<? extends emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteDataOrBuilder> 
+        getFurnitureCustomSuiteListOrBuilderList();
     /**
-     * <code>repeated .Unk2700_BIEMCDLIFOD Unk2700_KJGLLEEHBPF = 14;</code>
+     * <code>repeated .HomeFurnitureCustomSuiteData furniture_custom_suite_list = 14;</code>
      */
-    emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFODOrBuilder getUnk2700KJGLLEEHBPFOrBuilder(
+    emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteDataOrBuilder getFurnitureCustomSuiteListOrBuilder(
         int index);
   }
   /**
@@ -290,7 +290,7 @@ public final class HomeBlockArrangementInfoOuterClass {
     }
     private HomeBlockArrangementInfo() {
       deployAnimalList_ = java.util.Collections.emptyList();
-      unk2700HGIECHILOJL_ = java.util.Collections.emptyList();
+      furnitureGroupList_ = java.util.Collections.emptyList();
       weekendDjinnInfoList_ = java.util.Collections.emptyList();
       furnitureSuiteList_ = java.util.Collections.emptyList();
       fieldList_ = java.util.Collections.emptyList();
@@ -298,7 +298,7 @@ public final class HomeBlockArrangementInfoOuterClass {
       dotPatternList_ = java.util.Collections.emptyList();
       persistentFurnitureList_ = java.util.Collections.emptyList();
       deployFurniureList_ = java.util.Collections.emptyList();
-      unk2700KJGLLEEHBPF_ = java.util.Collections.emptyList();
+      furnitureCustomSuiteList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -362,11 +362,11 @@ public final class HomeBlockArrangementInfoOuterClass {
             }
             case 42: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                unk2700HGIECHILOJL_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGF>();
+                furnitureGroupList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData>();
                 mutable_bitField0_ |= 0x00000002;
               }
-              unk2700HGIECHILOJL_.add(
-                  input.readMessage(emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGF.parser(), extensionRegistry));
+              furnitureGroupList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData.parser(), extensionRegistry));
               break;
             }
             case 48: {
@@ -421,11 +421,11 @@ public final class HomeBlockArrangementInfoOuterClass {
             }
             case 114: {
               if (!((mutable_bitField0_ & 0x00000200) != 0)) {
-                unk2700KJGLLEEHBPF_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFOD>();
+                furnitureCustomSuiteList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteData>();
                 mutable_bitField0_ |= 0x00000200;
               }
-              unk2700KJGLLEEHBPF_.add(
-                  input.readMessage(emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFOD.parser(), extensionRegistry));
+              furnitureCustomSuiteList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteData.parser(), extensionRegistry));
               break;
             }
             case 122: {
@@ -459,7 +459,7 @@ public final class HomeBlockArrangementInfoOuterClass {
           deployAnimalList_ = java.util.Collections.unmodifiableList(deployAnimalList_);
         }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          unk2700HGIECHILOJL_ = java.util.Collections.unmodifiableList(unk2700HGIECHILOJL_);
+          furnitureGroupList_ = java.util.Collections.unmodifiableList(furnitureGroupList_);
         }
         if (((mutable_bitField0_ & 0x00000040) != 0)) {
           dotPatternList_ = java.util.Collections.unmodifiableList(dotPatternList_);
@@ -477,7 +477,7 @@ public final class HomeBlockArrangementInfoOuterClass {
           weekendDjinnInfoList_ = java.util.Collections.unmodifiableList(weekendDjinnInfoList_);
         }
         if (((mutable_bitField0_ & 0x00000200) != 0)) {
-          unk2700KJGLLEEHBPF_ = java.util.Collections.unmodifiableList(unk2700KJGLLEEHBPF_);
+          furnitureCustomSuiteList_ = java.util.Collections.unmodifiableList(furnitureCustomSuiteList_);
         }
         if (((mutable_bitField0_ & 0x00000008) != 0)) {
           furnitureSuiteList_ = java.util.Collections.unmodifiableList(furnitureSuiteList_);
@@ -561,44 +561,44 @@ public final class HomeBlockArrangementInfoOuterClass {
       return deployAnimalList_.get(index);
     }
 
-    public static final int UNK2700_HGIECHILOJL_FIELD_NUMBER = 5;
-    private java.util.List<emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGF> unk2700HGIECHILOJL_;
+    public static final int FURNITURE_GROUP_LIST_FIELD_NUMBER = 5;
+    private java.util.List<emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData> furnitureGroupList_;
     /**
-     * <code>repeated .Unk2700_GOHMLAFNBGF Unk2700_HGIECHILOJL = 5;</code>
+     * <code>repeated .HomeFurnitureGroupData furniture_group_list = 5;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGF> getUnk2700HGIECHILOJLList() {
-      return unk2700HGIECHILOJL_;
+    public java.util.List<emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData> getFurnitureGroupListList() {
+      return furnitureGroupList_;
     }
     /**
-     * <code>repeated .Unk2700_GOHMLAFNBGF Unk2700_HGIECHILOJL = 5;</code>
+     * <code>repeated .HomeFurnitureGroupData furniture_group_list = 5;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGFOrBuilder> 
-        getUnk2700HGIECHILOJLOrBuilderList() {
-      return unk2700HGIECHILOJL_;
+    public java.util.List<? extends emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupDataOrBuilder> 
+        getFurnitureGroupListOrBuilderList() {
+      return furnitureGroupList_;
     }
     /**
-     * <code>repeated .Unk2700_GOHMLAFNBGF Unk2700_HGIECHILOJL = 5;</code>
+     * <code>repeated .HomeFurnitureGroupData furniture_group_list = 5;</code>
      */
     @java.lang.Override
-    public int getUnk2700HGIECHILOJLCount() {
-      return unk2700HGIECHILOJL_.size();
+    public int getFurnitureGroupListCount() {
+      return furnitureGroupList_.size();
     }
     /**
-     * <code>repeated .Unk2700_GOHMLAFNBGF Unk2700_HGIECHILOJL = 5;</code>
+     * <code>repeated .HomeFurnitureGroupData furniture_group_list = 5;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGF getUnk2700HGIECHILOJL(int index) {
-      return unk2700HGIECHILOJL_.get(index);
+    public emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData getFurnitureGroupList(int index) {
+      return furnitureGroupList_.get(index);
     }
     /**
-     * <code>repeated .Unk2700_GOHMLAFNBGF Unk2700_HGIECHILOJL = 5;</code>
+     * <code>repeated .HomeFurnitureGroupData furniture_group_list = 5;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGFOrBuilder getUnk2700HGIECHILOJLOrBuilder(
+    public emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupDataOrBuilder getFurnitureGroupListOrBuilder(
         int index) {
-      return unk2700HGIECHILOJL_.get(index);
+      return furnitureGroupList_.get(index);
     }
 
     public static final int WEEKEND_DJINN_INFO_LIST_FIELD_NUMBER = 13;
@@ -892,44 +892,44 @@ public final class HomeBlockArrangementInfoOuterClass {
       return blockId_;
     }
 
-    public static final int UNK2700_KJGLLEEHBPF_FIELD_NUMBER = 14;
-    private java.util.List<emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFOD> unk2700KJGLLEEHBPF_;
+    public static final int FURNITURE_CUSTOM_SUITE_LIST_FIELD_NUMBER = 14;
+    private java.util.List<emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteData> furnitureCustomSuiteList_;
     /**
-     * <code>repeated .Unk2700_BIEMCDLIFOD Unk2700_KJGLLEEHBPF = 14;</code>
+     * <code>repeated .HomeFurnitureCustomSuiteData furniture_custom_suite_list = 14;</code>
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFOD> getUnk2700KJGLLEEHBPFList() {
-      return unk2700KJGLLEEHBPF_;
+    public java.util.List<emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteData> getFurnitureCustomSuiteListList() {
+      return furnitureCustomSuiteList_;
     }
     /**
-     * <code>repeated .Unk2700_BIEMCDLIFOD Unk2700_KJGLLEEHBPF = 14;</code>
+     * <code>repeated .HomeFurnitureCustomSuiteData furniture_custom_suite_list = 14;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFODOrBuilder> 
-        getUnk2700KJGLLEEHBPFOrBuilderList() {
-      return unk2700KJGLLEEHBPF_;
+    public java.util.List<? extends emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteDataOrBuilder> 
+        getFurnitureCustomSuiteListOrBuilderList() {
+      return furnitureCustomSuiteList_;
     }
     /**
-     * <code>repeated .Unk2700_BIEMCDLIFOD Unk2700_KJGLLEEHBPF = 14;</code>
+     * <code>repeated .HomeFurnitureCustomSuiteData furniture_custom_suite_list = 14;</code>
      */
     @java.lang.Override
-    public int getUnk2700KJGLLEEHBPFCount() {
-      return unk2700KJGLLEEHBPF_.size();
+    public int getFurnitureCustomSuiteListCount() {
+      return furnitureCustomSuiteList_.size();
     }
     /**
-     * <code>repeated .Unk2700_BIEMCDLIFOD Unk2700_KJGLLEEHBPF = 14;</code>
+     * <code>repeated .HomeFurnitureCustomSuiteData furniture_custom_suite_list = 14;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFOD getUnk2700KJGLLEEHBPF(int index) {
-      return unk2700KJGLLEEHBPF_.get(index);
+    public emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteData getFurnitureCustomSuiteList(int index) {
+      return furnitureCustomSuiteList_.get(index);
     }
     /**
-     * <code>repeated .Unk2700_BIEMCDLIFOD Unk2700_KJGLLEEHBPF = 14;</code>
+     * <code>repeated .HomeFurnitureCustomSuiteData furniture_custom_suite_list = 14;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFODOrBuilder getUnk2700KJGLLEEHBPFOrBuilder(
+    public emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteDataOrBuilder getFurnitureCustomSuiteListOrBuilder(
         int index) {
-      return unk2700KJGLLEEHBPF_.get(index);
+      return furnitureCustomSuiteList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -958,8 +958,8 @@ public final class HomeBlockArrangementInfoOuterClass {
       for (int i = 0; i < deployAnimalList_.size(); i++) {
         output.writeMessage(4, deployAnimalList_.get(i));
       }
-      for (int i = 0; i < unk2700HGIECHILOJL_.size(); i++) {
-        output.writeMessage(5, unk2700HGIECHILOJL_.get(i));
+      for (int i = 0; i < furnitureGroupList_.size(); i++) {
+        output.writeMessage(5, furnitureGroupList_.get(i));
       }
       if (blockId_ != 0) {
         output.writeUInt32(6, blockId_);
@@ -979,8 +979,8 @@ public final class HomeBlockArrangementInfoOuterClass {
       for (int i = 0; i < weekendDjinnInfoList_.size(); i++) {
         output.writeMessage(13, weekendDjinnInfoList_.get(i));
       }
-      for (int i = 0; i < unk2700KJGLLEEHBPF_.size(); i++) {
-        output.writeMessage(14, unk2700KJGLLEEHBPF_.get(i));
+      for (int i = 0; i < furnitureCustomSuiteList_.size(); i++) {
+        output.writeMessage(14, furnitureCustomSuiteList_.get(i));
       }
       for (int i = 0; i < furnitureSuiteList_.size(); i++) {
         output.writeMessage(15, furnitureSuiteList_.get(i));
@@ -1010,9 +1010,9 @@ public final class HomeBlockArrangementInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(4, deployAnimalList_.get(i));
       }
-      for (int i = 0; i < unk2700HGIECHILOJL_.size(); i++) {
+      for (int i = 0; i < furnitureGroupList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, unk2700HGIECHILOJL_.get(i));
+          .computeMessageSize(5, furnitureGroupList_.get(i));
       }
       if (blockId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -1038,9 +1038,9 @@ public final class HomeBlockArrangementInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(13, weekendDjinnInfoList_.get(i));
       }
-      for (int i = 0; i < unk2700KJGLLEEHBPF_.size(); i++) {
+      for (int i = 0; i < furnitureCustomSuiteList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, unk2700KJGLLEEHBPF_.get(i));
+          .computeMessageSize(14, furnitureCustomSuiteList_.get(i));
       }
       for (int i = 0; i < furnitureSuiteList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -1067,8 +1067,8 @@ public final class HomeBlockArrangementInfoOuterClass {
           != other.getComfortValue()) return false;
       if (!getDeployAnimalListList()
           .equals(other.getDeployAnimalListList())) return false;
-      if (!getUnk2700HGIECHILOJLList()
-          .equals(other.getUnk2700HGIECHILOJLList())) return false;
+      if (!getFurnitureGroupListList()
+          .equals(other.getFurnitureGroupListList())) return false;
       if (!getWeekendDjinnInfoListList()
           .equals(other.getWeekendDjinnInfoListList())) return false;
       if (!getFurnitureSuiteListList()
@@ -1085,8 +1085,8 @@ public final class HomeBlockArrangementInfoOuterClass {
           .equals(other.getDeployFurniureListList())) return false;
       if (getBlockId()
           != other.getBlockId()) return false;
-      if (!getUnk2700KJGLLEEHBPFList()
-          .equals(other.getUnk2700KJGLLEEHBPFList())) return false;
+      if (!getFurnitureCustomSuiteListList()
+          .equals(other.getFurnitureCustomSuiteListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -1107,9 +1107,9 @@ public final class HomeBlockArrangementInfoOuterClass {
         hash = (37 * hash) + DEPLOY_ANIMAL_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getDeployAnimalListList().hashCode();
       }
-      if (getUnk2700HGIECHILOJLCount() > 0) {
-        hash = (37 * hash) + UNK2700_HGIECHILOJL_FIELD_NUMBER;
-        hash = (53 * hash) + getUnk2700HGIECHILOJLList().hashCode();
+      if (getFurnitureGroupListCount() > 0) {
+        hash = (37 * hash) + FURNITURE_GROUP_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getFurnitureGroupListList().hashCode();
       }
       if (getWeekendDjinnInfoListCount() > 0) {
         hash = (37 * hash) + WEEKEND_DJINN_INFO_LIST_FIELD_NUMBER;
@@ -1141,9 +1141,9 @@ public final class HomeBlockArrangementInfoOuterClass {
       }
       hash = (37 * hash) + BLOCK_ID_FIELD_NUMBER;
       hash = (53 * hash) + getBlockId();
-      if (getUnk2700KJGLLEEHBPFCount() > 0) {
-        hash = (37 * hash) + UNK2700_KJGLLEEHBPF_FIELD_NUMBER;
-        hash = (53 * hash) + getUnk2700KJGLLEEHBPFList().hashCode();
+      if (getFurnitureCustomSuiteListCount() > 0) {
+        hash = (37 * hash) + FURNITURE_CUSTOM_SUITE_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getFurnitureCustomSuiteListList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -1274,7 +1274,7 @@ public final class HomeBlockArrangementInfoOuterClass {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
           getDeployAnimalListFieldBuilder();
-          getUnk2700HGIECHILOJLFieldBuilder();
+          getFurnitureGroupListFieldBuilder();
           getWeekendDjinnInfoListFieldBuilder();
           getFurnitureSuiteListFieldBuilder();
           getFieldListFieldBuilder();
@@ -1282,7 +1282,7 @@ public final class HomeBlockArrangementInfoOuterClass {
           getDotPatternListFieldBuilder();
           getPersistentFurnitureListFieldBuilder();
           getDeployFurniureListFieldBuilder();
-          getUnk2700KJGLLEEHBPFFieldBuilder();
+          getFurnitureCustomSuiteListFieldBuilder();
         }
       }
       @java.lang.Override
@@ -1298,11 +1298,11 @@ public final class HomeBlockArrangementInfoOuterClass {
         } else {
           deployAnimalListBuilder_.clear();
         }
-        if (unk2700HGIECHILOJLBuilder_ == null) {
-          unk2700HGIECHILOJL_ = java.util.Collections.emptyList();
+        if (furnitureGroupListBuilder_ == null) {
+          furnitureGroupList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000002);
         } else {
-          unk2700HGIECHILOJLBuilder_.clear();
+          furnitureGroupListBuilder_.clear();
         }
         if (weekendDjinnInfoListBuilder_ == null) {
           weekendDjinnInfoList_ = java.util.Collections.emptyList();
@@ -1348,11 +1348,11 @@ public final class HomeBlockArrangementInfoOuterClass {
         }
         blockId_ = 0;
 
-        if (unk2700KJGLLEEHBPFBuilder_ == null) {
-          unk2700KJGLLEEHBPF_ = java.util.Collections.emptyList();
+        if (furnitureCustomSuiteListBuilder_ == null) {
+          furnitureCustomSuiteList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000200);
         } else {
-          unk2700KJGLLEEHBPFBuilder_.clear();
+          furnitureCustomSuiteListBuilder_.clear();
         }
         return this;
       }
@@ -1392,14 +1392,14 @@ public final class HomeBlockArrangementInfoOuterClass {
         } else {
           result.deployAnimalList_ = deployAnimalListBuilder_.build();
         }
-        if (unk2700HGIECHILOJLBuilder_ == null) {
+        if (furnitureGroupListBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0)) {
-            unk2700HGIECHILOJL_ = java.util.Collections.unmodifiableList(unk2700HGIECHILOJL_);
+            furnitureGroupList_ = java.util.Collections.unmodifiableList(furnitureGroupList_);
             bitField0_ = (bitField0_ & ~0x00000002);
           }
-          result.unk2700HGIECHILOJL_ = unk2700HGIECHILOJL_;
+          result.furnitureGroupList_ = furnitureGroupList_;
         } else {
-          result.unk2700HGIECHILOJL_ = unk2700HGIECHILOJLBuilder_.build();
+          result.furnitureGroupList_ = furnitureGroupListBuilder_.build();
         }
         if (weekendDjinnInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000004) != 0)) {
@@ -1465,14 +1465,14 @@ public final class HomeBlockArrangementInfoOuterClass {
           result.deployFurniureList_ = deployFurniureListBuilder_.build();
         }
         result.blockId_ = blockId_;
-        if (unk2700KJGLLEEHBPFBuilder_ == null) {
+        if (furnitureCustomSuiteListBuilder_ == null) {
           if (((bitField0_ & 0x00000200) != 0)) {
-            unk2700KJGLLEEHBPF_ = java.util.Collections.unmodifiableList(unk2700KJGLLEEHBPF_);
+            furnitureCustomSuiteList_ = java.util.Collections.unmodifiableList(furnitureCustomSuiteList_);
             bitField0_ = (bitField0_ & ~0x00000200);
           }
-          result.unk2700KJGLLEEHBPF_ = unk2700KJGLLEEHBPF_;
+          result.furnitureCustomSuiteList_ = furnitureCustomSuiteList_;
         } else {
-          result.unk2700KJGLLEEHBPF_ = unk2700KJGLLEEHBPFBuilder_.build();
+          result.furnitureCustomSuiteList_ = furnitureCustomSuiteListBuilder_.build();
         }
         onBuilt();
         return result;
@@ -1554,29 +1554,29 @@ public final class HomeBlockArrangementInfoOuterClass {
             }
           }
         }
-        if (unk2700HGIECHILOJLBuilder_ == null) {
-          if (!other.unk2700HGIECHILOJL_.isEmpty()) {
-            if (unk2700HGIECHILOJL_.isEmpty()) {
-              unk2700HGIECHILOJL_ = other.unk2700HGIECHILOJL_;
+        if (furnitureGroupListBuilder_ == null) {
+          if (!other.furnitureGroupList_.isEmpty()) {
+            if (furnitureGroupList_.isEmpty()) {
+              furnitureGroupList_ = other.furnitureGroupList_;
               bitField0_ = (bitField0_ & ~0x00000002);
             } else {
-              ensureUnk2700HGIECHILOJLIsMutable();
-              unk2700HGIECHILOJL_.addAll(other.unk2700HGIECHILOJL_);
+              ensureFurnitureGroupListIsMutable();
+              furnitureGroupList_.addAll(other.furnitureGroupList_);
             }
             onChanged();
           }
         } else {
-          if (!other.unk2700HGIECHILOJL_.isEmpty()) {
-            if (unk2700HGIECHILOJLBuilder_.isEmpty()) {
-              unk2700HGIECHILOJLBuilder_.dispose();
-              unk2700HGIECHILOJLBuilder_ = null;
-              unk2700HGIECHILOJL_ = other.unk2700HGIECHILOJL_;
+          if (!other.furnitureGroupList_.isEmpty()) {
+            if (furnitureGroupListBuilder_.isEmpty()) {
+              furnitureGroupListBuilder_.dispose();
+              furnitureGroupListBuilder_ = null;
+              furnitureGroupList_ = other.furnitureGroupList_;
               bitField0_ = (bitField0_ & ~0x00000002);
-              unk2700HGIECHILOJLBuilder_ = 
+              furnitureGroupListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getUnk2700HGIECHILOJLFieldBuilder() : null;
+                   getFurnitureGroupListFieldBuilder() : null;
             } else {
-              unk2700HGIECHILOJLBuilder_.addAllMessages(other.unk2700HGIECHILOJL_);
+              furnitureGroupListBuilder_.addAllMessages(other.furnitureGroupList_);
             }
           }
         }
@@ -1765,29 +1765,29 @@ public final class HomeBlockArrangementInfoOuterClass {
         if (other.getBlockId() != 0) {
           setBlockId(other.getBlockId());
         }
-        if (unk2700KJGLLEEHBPFBuilder_ == null) {
-          if (!other.unk2700KJGLLEEHBPF_.isEmpty()) {
-            if (unk2700KJGLLEEHBPF_.isEmpty()) {
-              unk2700KJGLLEEHBPF_ = other.unk2700KJGLLEEHBPF_;
+        if (furnitureCustomSuiteListBuilder_ == null) {
+          if (!other.furnitureCustomSuiteList_.isEmpty()) {
+            if (furnitureCustomSuiteList_.isEmpty()) {
+              furnitureCustomSuiteList_ = other.furnitureCustomSuiteList_;
               bitField0_ = (bitField0_ & ~0x00000200);
             } else {
-              ensureUnk2700KJGLLEEHBPFIsMutable();
-              unk2700KJGLLEEHBPF_.addAll(other.unk2700KJGLLEEHBPF_);
+              ensureFurnitureCustomSuiteListIsMutable();
+              furnitureCustomSuiteList_.addAll(other.furnitureCustomSuiteList_);
             }
             onChanged();
           }
         } else {
-          if (!other.unk2700KJGLLEEHBPF_.isEmpty()) {
-            if (unk2700KJGLLEEHBPFBuilder_.isEmpty()) {
-              unk2700KJGLLEEHBPFBuilder_.dispose();
-              unk2700KJGLLEEHBPFBuilder_ = null;
-              unk2700KJGLLEEHBPF_ = other.unk2700KJGLLEEHBPF_;
+          if (!other.furnitureCustomSuiteList_.isEmpty()) {
+            if (furnitureCustomSuiteListBuilder_.isEmpty()) {
+              furnitureCustomSuiteListBuilder_.dispose();
+              furnitureCustomSuiteListBuilder_ = null;
+              furnitureCustomSuiteList_ = other.furnitureCustomSuiteList_;
               bitField0_ = (bitField0_ & ~0x00000200);
-              unk2700KJGLLEEHBPFBuilder_ = 
+              furnitureCustomSuiteListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getUnk2700KJGLLEEHBPFFieldBuilder() : null;
+                   getFurnitureCustomSuiteListFieldBuilder() : null;
             } else {
-              unk2700KJGLLEEHBPFBuilder_.addAllMessages(other.unk2700KJGLLEEHBPF_);
+              furnitureCustomSuiteListBuilder_.addAllMessages(other.furnitureCustomSuiteList_);
             }
           }
         }
@@ -2123,244 +2123,244 @@ public final class HomeBlockArrangementInfoOuterClass {
         return deployAnimalListBuilder_;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGF> unk2700HGIECHILOJL_ =
+      private java.util.List<emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData> furnitureGroupList_ =
         java.util.Collections.emptyList();
-      private void ensureUnk2700HGIECHILOJLIsMutable() {
+      private void ensureFurnitureGroupListIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
-          unk2700HGIECHILOJL_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGF>(unk2700HGIECHILOJL_);
+          furnitureGroupList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData>(furnitureGroupList_);
           bitField0_ |= 0x00000002;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGF, emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGF.Builder, emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGFOrBuilder> unk2700HGIECHILOJLBuilder_;
+          emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData, emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData.Builder, emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupDataOrBuilder> furnitureGroupListBuilder_;
 
       /**
-       * <code>repeated .Unk2700_GOHMLAFNBGF Unk2700_HGIECHILOJL = 5;</code>
+       * <code>repeated .HomeFurnitureGroupData furniture_group_list = 5;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGF> getUnk2700HGIECHILOJLList() {
-        if (unk2700HGIECHILOJLBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(unk2700HGIECHILOJL_);
+      public java.util.List<emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData> getFurnitureGroupListList() {
+        if (furnitureGroupListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(furnitureGroupList_);
         } else {
-          return unk2700HGIECHILOJLBuilder_.getMessageList();
+          return furnitureGroupListBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .Unk2700_GOHMLAFNBGF Unk2700_HGIECHILOJL = 5;</code>
+       * <code>repeated .HomeFurnitureGroupData furniture_group_list = 5;</code>
        */
-      public int getUnk2700HGIECHILOJLCount() {
-        if (unk2700HGIECHILOJLBuilder_ == null) {
-          return unk2700HGIECHILOJL_.size();
+      public int getFurnitureGroupListCount() {
+        if (furnitureGroupListBuilder_ == null) {
+          return furnitureGroupList_.size();
         } else {
-          return unk2700HGIECHILOJLBuilder_.getCount();
+          return furnitureGroupListBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .Unk2700_GOHMLAFNBGF Unk2700_HGIECHILOJL = 5;</code>
+       * <code>repeated .HomeFurnitureGroupData furniture_group_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGF getUnk2700HGIECHILOJL(int index) {
-        if (unk2700HGIECHILOJLBuilder_ == null) {
-          return unk2700HGIECHILOJL_.get(index);
+      public emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData getFurnitureGroupList(int index) {
+        if (furnitureGroupListBuilder_ == null) {
+          return furnitureGroupList_.get(index);
         } else {
-          return unk2700HGIECHILOJLBuilder_.getMessage(index);
+          return furnitureGroupListBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .Unk2700_GOHMLAFNBGF Unk2700_HGIECHILOJL = 5;</code>
+       * <code>repeated .HomeFurnitureGroupData furniture_group_list = 5;</code>
        */
-      public Builder setUnk2700HGIECHILOJL(
-          int index, emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGF value) {
-        if (unk2700HGIECHILOJLBuilder_ == null) {
+      public Builder setFurnitureGroupList(
+          int index, emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData value) {
+        if (furnitureGroupListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2700HGIECHILOJLIsMutable();
-          unk2700HGIECHILOJL_.set(index, value);
+          ensureFurnitureGroupListIsMutable();
+          furnitureGroupList_.set(index, value);
           onChanged();
         } else {
-          unk2700HGIECHILOJLBuilder_.setMessage(index, value);
+          furnitureGroupListBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_GOHMLAFNBGF Unk2700_HGIECHILOJL = 5;</code>
+       * <code>repeated .HomeFurnitureGroupData furniture_group_list = 5;</code>
        */
-      public Builder setUnk2700HGIECHILOJL(
-          int index, emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGF.Builder builderForValue) {
-        if (unk2700HGIECHILOJLBuilder_ == null) {
-          ensureUnk2700HGIECHILOJLIsMutable();
-          unk2700HGIECHILOJL_.set(index, builderForValue.build());
+      public Builder setFurnitureGroupList(
+          int index, emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData.Builder builderForValue) {
+        if (furnitureGroupListBuilder_ == null) {
+          ensureFurnitureGroupListIsMutable();
+          furnitureGroupList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          unk2700HGIECHILOJLBuilder_.setMessage(index, builderForValue.build());
+          furnitureGroupListBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_GOHMLAFNBGF Unk2700_HGIECHILOJL = 5;</code>
+       * <code>repeated .HomeFurnitureGroupData furniture_group_list = 5;</code>
        */
-      public Builder addUnk2700HGIECHILOJL(emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGF value) {
-        if (unk2700HGIECHILOJLBuilder_ == null) {
+      public Builder addFurnitureGroupList(emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData value) {
+        if (furnitureGroupListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2700HGIECHILOJLIsMutable();
-          unk2700HGIECHILOJL_.add(value);
+          ensureFurnitureGroupListIsMutable();
+          furnitureGroupList_.add(value);
           onChanged();
         } else {
-          unk2700HGIECHILOJLBuilder_.addMessage(value);
+          furnitureGroupListBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_GOHMLAFNBGF Unk2700_HGIECHILOJL = 5;</code>
+       * <code>repeated .HomeFurnitureGroupData furniture_group_list = 5;</code>
        */
-      public Builder addUnk2700HGIECHILOJL(
-          int index, emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGF value) {
-        if (unk2700HGIECHILOJLBuilder_ == null) {
+      public Builder addFurnitureGroupList(
+          int index, emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData value) {
+        if (furnitureGroupListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2700HGIECHILOJLIsMutable();
-          unk2700HGIECHILOJL_.add(index, value);
+          ensureFurnitureGroupListIsMutable();
+          furnitureGroupList_.add(index, value);
           onChanged();
         } else {
-          unk2700HGIECHILOJLBuilder_.addMessage(index, value);
+          furnitureGroupListBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_GOHMLAFNBGF Unk2700_HGIECHILOJL = 5;</code>
+       * <code>repeated .HomeFurnitureGroupData furniture_group_list = 5;</code>
        */
-      public Builder addUnk2700HGIECHILOJL(
-          emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGF.Builder builderForValue) {
-        if (unk2700HGIECHILOJLBuilder_ == null) {
-          ensureUnk2700HGIECHILOJLIsMutable();
-          unk2700HGIECHILOJL_.add(builderForValue.build());
+      public Builder addFurnitureGroupList(
+          emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData.Builder builderForValue) {
+        if (furnitureGroupListBuilder_ == null) {
+          ensureFurnitureGroupListIsMutable();
+          furnitureGroupList_.add(builderForValue.build());
           onChanged();
         } else {
-          unk2700HGIECHILOJLBuilder_.addMessage(builderForValue.build());
+          furnitureGroupListBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_GOHMLAFNBGF Unk2700_HGIECHILOJL = 5;</code>
+       * <code>repeated .HomeFurnitureGroupData furniture_group_list = 5;</code>
        */
-      public Builder addUnk2700HGIECHILOJL(
-          int index, emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGF.Builder builderForValue) {
-        if (unk2700HGIECHILOJLBuilder_ == null) {
-          ensureUnk2700HGIECHILOJLIsMutable();
-          unk2700HGIECHILOJL_.add(index, builderForValue.build());
+      public Builder addFurnitureGroupList(
+          int index, emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData.Builder builderForValue) {
+        if (furnitureGroupListBuilder_ == null) {
+          ensureFurnitureGroupListIsMutable();
+          furnitureGroupList_.add(index, builderForValue.build());
           onChanged();
         } else {
-          unk2700HGIECHILOJLBuilder_.addMessage(index, builderForValue.build());
+          furnitureGroupListBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_GOHMLAFNBGF Unk2700_HGIECHILOJL = 5;</code>
+       * <code>repeated .HomeFurnitureGroupData furniture_group_list = 5;</code>
        */
-      public Builder addAllUnk2700HGIECHILOJL(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGF> values) {
-        if (unk2700HGIECHILOJLBuilder_ == null) {
-          ensureUnk2700HGIECHILOJLIsMutable();
+      public Builder addAllFurnitureGroupList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData> values) {
+        if (furnitureGroupListBuilder_ == null) {
+          ensureFurnitureGroupListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, unk2700HGIECHILOJL_);
+              values, furnitureGroupList_);
           onChanged();
         } else {
-          unk2700HGIECHILOJLBuilder_.addAllMessages(values);
+          furnitureGroupListBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_GOHMLAFNBGF Unk2700_HGIECHILOJL = 5;</code>
+       * <code>repeated .HomeFurnitureGroupData furniture_group_list = 5;</code>
        */
-      public Builder clearUnk2700HGIECHILOJL() {
-        if (unk2700HGIECHILOJLBuilder_ == null) {
-          unk2700HGIECHILOJL_ = java.util.Collections.emptyList();
+      public Builder clearFurnitureGroupList() {
+        if (furnitureGroupListBuilder_ == null) {
+          furnitureGroupList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
         } else {
-          unk2700HGIECHILOJLBuilder_.clear();
+          furnitureGroupListBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_GOHMLAFNBGF Unk2700_HGIECHILOJL = 5;</code>
+       * <code>repeated .HomeFurnitureGroupData furniture_group_list = 5;</code>
        */
-      public Builder removeUnk2700HGIECHILOJL(int index) {
-        if (unk2700HGIECHILOJLBuilder_ == null) {
-          ensureUnk2700HGIECHILOJLIsMutable();
-          unk2700HGIECHILOJL_.remove(index);
+      public Builder removeFurnitureGroupList(int index) {
+        if (furnitureGroupListBuilder_ == null) {
+          ensureFurnitureGroupListIsMutable();
+          furnitureGroupList_.remove(index);
           onChanged();
         } else {
-          unk2700HGIECHILOJLBuilder_.remove(index);
+          furnitureGroupListBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_GOHMLAFNBGF Unk2700_HGIECHILOJL = 5;</code>
+       * <code>repeated .HomeFurnitureGroupData furniture_group_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGF.Builder getUnk2700HGIECHILOJLBuilder(
+      public emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData.Builder getFurnitureGroupListBuilder(
           int index) {
-        return getUnk2700HGIECHILOJLFieldBuilder().getBuilder(index);
+        return getFurnitureGroupListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .Unk2700_GOHMLAFNBGF Unk2700_HGIECHILOJL = 5;</code>
+       * <code>repeated .HomeFurnitureGroupData furniture_group_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGFOrBuilder getUnk2700HGIECHILOJLOrBuilder(
+      public emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupDataOrBuilder getFurnitureGroupListOrBuilder(
           int index) {
-        if (unk2700HGIECHILOJLBuilder_ == null) {
-          return unk2700HGIECHILOJL_.get(index);  } else {
-          return unk2700HGIECHILOJLBuilder_.getMessageOrBuilder(index);
+        if (furnitureGroupListBuilder_ == null) {
+          return furnitureGroupList_.get(index);  } else {
+          return furnitureGroupListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .Unk2700_GOHMLAFNBGF Unk2700_HGIECHILOJL = 5;</code>
+       * <code>repeated .HomeFurnitureGroupData furniture_group_list = 5;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGFOrBuilder> 
-           getUnk2700HGIECHILOJLOrBuilderList() {
-        if (unk2700HGIECHILOJLBuilder_ != null) {
-          return unk2700HGIECHILOJLBuilder_.getMessageOrBuilderList();
+      public java.util.List<? extends emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupDataOrBuilder> 
+           getFurnitureGroupListOrBuilderList() {
+        if (furnitureGroupListBuilder_ != null) {
+          return furnitureGroupListBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(unk2700HGIECHILOJL_);
+          return java.util.Collections.unmodifiableList(furnitureGroupList_);
         }
       }
       /**
-       * <code>repeated .Unk2700_GOHMLAFNBGF Unk2700_HGIECHILOJL = 5;</code>
+       * <code>repeated .HomeFurnitureGroupData furniture_group_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGF.Builder addUnk2700HGIECHILOJLBuilder() {
-        return getUnk2700HGIECHILOJLFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGF.getDefaultInstance());
+      public emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData.Builder addFurnitureGroupListBuilder() {
+        return getFurnitureGroupListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData.getDefaultInstance());
       }
       /**
-       * <code>repeated .Unk2700_GOHMLAFNBGF Unk2700_HGIECHILOJL = 5;</code>
+       * <code>repeated .HomeFurnitureGroupData furniture_group_list = 5;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGF.Builder addUnk2700HGIECHILOJLBuilder(
+      public emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData.Builder addFurnitureGroupListBuilder(
           int index) {
-        return getUnk2700HGIECHILOJLFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGF.getDefaultInstance());
+        return getFurnitureGroupListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData.getDefaultInstance());
       }
       /**
-       * <code>repeated .Unk2700_GOHMLAFNBGF Unk2700_HGIECHILOJL = 5;</code>
+       * <code>repeated .HomeFurnitureGroupData furniture_group_list = 5;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGF.Builder> 
-           getUnk2700HGIECHILOJLBuilderList() {
-        return getUnk2700HGIECHILOJLFieldBuilder().getBuilderList();
+      public java.util.List<emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData.Builder> 
+           getFurnitureGroupListBuilderList() {
+        return getFurnitureGroupListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGF, emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGF.Builder, emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGFOrBuilder> 
-          getUnk2700HGIECHILOJLFieldBuilder() {
-        if (unk2700HGIECHILOJLBuilder_ == null) {
-          unk2700HGIECHILOJLBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGF, emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGF.Builder, emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.Unk2700_GOHMLAFNBGFOrBuilder>(
-                  unk2700HGIECHILOJL_,
+          emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData, emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData.Builder, emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupDataOrBuilder> 
+          getFurnitureGroupListFieldBuilder() {
+        if (furnitureGroupListBuilder_ == null) {
+          furnitureGroupListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData, emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupData.Builder, emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.HomeFurnitureGroupDataOrBuilder>(
+                  furnitureGroupList_,
                   ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
                   isClean());
-          unk2700HGIECHILOJL_ = null;
+          furnitureGroupList_ = null;
         }
-        return unk2700HGIECHILOJLBuilder_;
+        return furnitureGroupListBuilder_;
       }
 
       private java.util.List<emu.grasscutter.net.proto.WeekendDjinnInfoOuterClass.WeekendDjinnInfo> weekendDjinnInfoList_ =
@@ -4074,244 +4074,244 @@ public final class HomeBlockArrangementInfoOuterClass {
         return this;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFOD> unk2700KJGLLEEHBPF_ =
+      private java.util.List<emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteData> furnitureCustomSuiteList_ =
         java.util.Collections.emptyList();
-      private void ensureUnk2700KJGLLEEHBPFIsMutable() {
+      private void ensureFurnitureCustomSuiteListIsMutable() {
         if (!((bitField0_ & 0x00000200) != 0)) {
-          unk2700KJGLLEEHBPF_ = new java.util.ArrayList<emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFOD>(unk2700KJGLLEEHBPF_);
+          furnitureCustomSuiteList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteData>(furnitureCustomSuiteList_);
           bitField0_ |= 0x00000200;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFOD, emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFOD.Builder, emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFODOrBuilder> unk2700KJGLLEEHBPFBuilder_;
+          emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteData, emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteData.Builder, emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteDataOrBuilder> furnitureCustomSuiteListBuilder_;
 
       /**
-       * <code>repeated .Unk2700_BIEMCDLIFOD Unk2700_KJGLLEEHBPF = 14;</code>
+       * <code>repeated .HomeFurnitureCustomSuiteData furniture_custom_suite_list = 14;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFOD> getUnk2700KJGLLEEHBPFList() {
-        if (unk2700KJGLLEEHBPFBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(unk2700KJGLLEEHBPF_);
+      public java.util.List<emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteData> getFurnitureCustomSuiteListList() {
+        if (furnitureCustomSuiteListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(furnitureCustomSuiteList_);
         } else {
-          return unk2700KJGLLEEHBPFBuilder_.getMessageList();
+          return furnitureCustomSuiteListBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .Unk2700_BIEMCDLIFOD Unk2700_KJGLLEEHBPF = 14;</code>
+       * <code>repeated .HomeFurnitureCustomSuiteData furniture_custom_suite_list = 14;</code>
        */
-      public int getUnk2700KJGLLEEHBPFCount() {
-        if (unk2700KJGLLEEHBPFBuilder_ == null) {
-          return unk2700KJGLLEEHBPF_.size();
+      public int getFurnitureCustomSuiteListCount() {
+        if (furnitureCustomSuiteListBuilder_ == null) {
+          return furnitureCustomSuiteList_.size();
         } else {
-          return unk2700KJGLLEEHBPFBuilder_.getCount();
+          return furnitureCustomSuiteListBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .Unk2700_BIEMCDLIFOD Unk2700_KJGLLEEHBPF = 14;</code>
+       * <code>repeated .HomeFurnitureCustomSuiteData furniture_custom_suite_list = 14;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFOD getUnk2700KJGLLEEHBPF(int index) {
-        if (unk2700KJGLLEEHBPFBuilder_ == null) {
-          return unk2700KJGLLEEHBPF_.get(index);
+      public emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteData getFurnitureCustomSuiteList(int index) {
+        if (furnitureCustomSuiteListBuilder_ == null) {
+          return furnitureCustomSuiteList_.get(index);
         } else {
-          return unk2700KJGLLEEHBPFBuilder_.getMessage(index);
+          return furnitureCustomSuiteListBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .Unk2700_BIEMCDLIFOD Unk2700_KJGLLEEHBPF = 14;</code>
+       * <code>repeated .HomeFurnitureCustomSuiteData furniture_custom_suite_list = 14;</code>
        */
-      public Builder setUnk2700KJGLLEEHBPF(
-          int index, emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFOD value) {
-        if (unk2700KJGLLEEHBPFBuilder_ == null) {
+      public Builder setFurnitureCustomSuiteList(
+          int index, emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteData value) {
+        if (furnitureCustomSuiteListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2700KJGLLEEHBPFIsMutable();
-          unk2700KJGLLEEHBPF_.set(index, value);
+          ensureFurnitureCustomSuiteListIsMutable();
+          furnitureCustomSuiteList_.set(index, value);
           onChanged();
         } else {
-          unk2700KJGLLEEHBPFBuilder_.setMessage(index, value);
+          furnitureCustomSuiteListBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_BIEMCDLIFOD Unk2700_KJGLLEEHBPF = 14;</code>
+       * <code>repeated .HomeFurnitureCustomSuiteData furniture_custom_suite_list = 14;</code>
        */
-      public Builder setUnk2700KJGLLEEHBPF(
-          int index, emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFOD.Builder builderForValue) {
-        if (unk2700KJGLLEEHBPFBuilder_ == null) {
-          ensureUnk2700KJGLLEEHBPFIsMutable();
-          unk2700KJGLLEEHBPF_.set(index, builderForValue.build());
+      public Builder setFurnitureCustomSuiteList(
+          int index, emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteData.Builder builderForValue) {
+        if (furnitureCustomSuiteListBuilder_ == null) {
+          ensureFurnitureCustomSuiteListIsMutable();
+          furnitureCustomSuiteList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          unk2700KJGLLEEHBPFBuilder_.setMessage(index, builderForValue.build());
+          furnitureCustomSuiteListBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_BIEMCDLIFOD Unk2700_KJGLLEEHBPF = 14;</code>
+       * <code>repeated .HomeFurnitureCustomSuiteData furniture_custom_suite_list = 14;</code>
        */
-      public Builder addUnk2700KJGLLEEHBPF(emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFOD value) {
-        if (unk2700KJGLLEEHBPFBuilder_ == null) {
+      public Builder addFurnitureCustomSuiteList(emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteData value) {
+        if (furnitureCustomSuiteListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2700KJGLLEEHBPFIsMutable();
-          unk2700KJGLLEEHBPF_.add(value);
+          ensureFurnitureCustomSuiteListIsMutable();
+          furnitureCustomSuiteList_.add(value);
           onChanged();
         } else {
-          unk2700KJGLLEEHBPFBuilder_.addMessage(value);
+          furnitureCustomSuiteListBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_BIEMCDLIFOD Unk2700_KJGLLEEHBPF = 14;</code>
+       * <code>repeated .HomeFurnitureCustomSuiteData furniture_custom_suite_list = 14;</code>
        */
-      public Builder addUnk2700KJGLLEEHBPF(
-          int index, emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFOD value) {
-        if (unk2700KJGLLEEHBPFBuilder_ == null) {
+      public Builder addFurnitureCustomSuiteList(
+          int index, emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteData value) {
+        if (furnitureCustomSuiteListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureUnk2700KJGLLEEHBPFIsMutable();
-          unk2700KJGLLEEHBPF_.add(index, value);
+          ensureFurnitureCustomSuiteListIsMutable();
+          furnitureCustomSuiteList_.add(index, value);
           onChanged();
         } else {
-          unk2700KJGLLEEHBPFBuilder_.addMessage(index, value);
+          furnitureCustomSuiteListBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_BIEMCDLIFOD Unk2700_KJGLLEEHBPF = 14;</code>
+       * <code>repeated .HomeFurnitureCustomSuiteData furniture_custom_suite_list = 14;</code>
        */
-      public Builder addUnk2700KJGLLEEHBPF(
-          emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFOD.Builder builderForValue) {
-        if (unk2700KJGLLEEHBPFBuilder_ == null) {
-          ensureUnk2700KJGLLEEHBPFIsMutable();
-          unk2700KJGLLEEHBPF_.add(builderForValue.build());
+      public Builder addFurnitureCustomSuiteList(
+          emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteData.Builder builderForValue) {
+        if (furnitureCustomSuiteListBuilder_ == null) {
+          ensureFurnitureCustomSuiteListIsMutable();
+          furnitureCustomSuiteList_.add(builderForValue.build());
           onChanged();
         } else {
-          unk2700KJGLLEEHBPFBuilder_.addMessage(builderForValue.build());
+          furnitureCustomSuiteListBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_BIEMCDLIFOD Unk2700_KJGLLEEHBPF = 14;</code>
+       * <code>repeated .HomeFurnitureCustomSuiteData furniture_custom_suite_list = 14;</code>
        */
-      public Builder addUnk2700KJGLLEEHBPF(
-          int index, emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFOD.Builder builderForValue) {
-        if (unk2700KJGLLEEHBPFBuilder_ == null) {
-          ensureUnk2700KJGLLEEHBPFIsMutable();
-          unk2700KJGLLEEHBPF_.add(index, builderForValue.build());
+      public Builder addFurnitureCustomSuiteList(
+          int index, emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteData.Builder builderForValue) {
+        if (furnitureCustomSuiteListBuilder_ == null) {
+          ensureFurnitureCustomSuiteListIsMutable();
+          furnitureCustomSuiteList_.add(index, builderForValue.build());
           onChanged();
         } else {
-          unk2700KJGLLEEHBPFBuilder_.addMessage(index, builderForValue.build());
+          furnitureCustomSuiteListBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_BIEMCDLIFOD Unk2700_KJGLLEEHBPF = 14;</code>
+       * <code>repeated .HomeFurnitureCustomSuiteData furniture_custom_suite_list = 14;</code>
        */
-      public Builder addAllUnk2700KJGLLEEHBPF(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFOD> values) {
-        if (unk2700KJGLLEEHBPFBuilder_ == null) {
-          ensureUnk2700KJGLLEEHBPFIsMutable();
+      public Builder addAllFurnitureCustomSuiteList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteData> values) {
+        if (furnitureCustomSuiteListBuilder_ == null) {
+          ensureFurnitureCustomSuiteListIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, unk2700KJGLLEEHBPF_);
+              values, furnitureCustomSuiteList_);
           onChanged();
         } else {
-          unk2700KJGLLEEHBPFBuilder_.addAllMessages(values);
+          furnitureCustomSuiteListBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_BIEMCDLIFOD Unk2700_KJGLLEEHBPF = 14;</code>
+       * <code>repeated .HomeFurnitureCustomSuiteData furniture_custom_suite_list = 14;</code>
        */
-      public Builder clearUnk2700KJGLLEEHBPF() {
-        if (unk2700KJGLLEEHBPFBuilder_ == null) {
-          unk2700KJGLLEEHBPF_ = java.util.Collections.emptyList();
+      public Builder clearFurnitureCustomSuiteList() {
+        if (furnitureCustomSuiteListBuilder_ == null) {
+          furnitureCustomSuiteList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000200);
           onChanged();
         } else {
-          unk2700KJGLLEEHBPFBuilder_.clear();
+          furnitureCustomSuiteListBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_BIEMCDLIFOD Unk2700_KJGLLEEHBPF = 14;</code>
+       * <code>repeated .HomeFurnitureCustomSuiteData furniture_custom_suite_list = 14;</code>
        */
-      public Builder removeUnk2700KJGLLEEHBPF(int index) {
-        if (unk2700KJGLLEEHBPFBuilder_ == null) {
-          ensureUnk2700KJGLLEEHBPFIsMutable();
-          unk2700KJGLLEEHBPF_.remove(index);
+      public Builder removeFurnitureCustomSuiteList(int index) {
+        if (furnitureCustomSuiteListBuilder_ == null) {
+          ensureFurnitureCustomSuiteListIsMutable();
+          furnitureCustomSuiteList_.remove(index);
           onChanged();
         } else {
-          unk2700KJGLLEEHBPFBuilder_.remove(index);
+          furnitureCustomSuiteListBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .Unk2700_BIEMCDLIFOD Unk2700_KJGLLEEHBPF = 14;</code>
+       * <code>repeated .HomeFurnitureCustomSuiteData furniture_custom_suite_list = 14;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFOD.Builder getUnk2700KJGLLEEHBPFBuilder(
+      public emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteData.Builder getFurnitureCustomSuiteListBuilder(
           int index) {
-        return getUnk2700KJGLLEEHBPFFieldBuilder().getBuilder(index);
+        return getFurnitureCustomSuiteListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .Unk2700_BIEMCDLIFOD Unk2700_KJGLLEEHBPF = 14;</code>
+       * <code>repeated .HomeFurnitureCustomSuiteData furniture_custom_suite_list = 14;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFODOrBuilder getUnk2700KJGLLEEHBPFOrBuilder(
+      public emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteDataOrBuilder getFurnitureCustomSuiteListOrBuilder(
           int index) {
-        if (unk2700KJGLLEEHBPFBuilder_ == null) {
-          return unk2700KJGLLEEHBPF_.get(index);  } else {
-          return unk2700KJGLLEEHBPFBuilder_.getMessageOrBuilder(index);
+        if (furnitureCustomSuiteListBuilder_ == null) {
+          return furnitureCustomSuiteList_.get(index);  } else {
+          return furnitureCustomSuiteListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .Unk2700_BIEMCDLIFOD Unk2700_KJGLLEEHBPF = 14;</code>
+       * <code>repeated .HomeFurnitureCustomSuiteData furniture_custom_suite_list = 14;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFODOrBuilder> 
-           getUnk2700KJGLLEEHBPFOrBuilderList() {
-        if (unk2700KJGLLEEHBPFBuilder_ != null) {
-          return unk2700KJGLLEEHBPFBuilder_.getMessageOrBuilderList();
+      public java.util.List<? extends emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteDataOrBuilder> 
+           getFurnitureCustomSuiteListOrBuilderList() {
+        if (furnitureCustomSuiteListBuilder_ != null) {
+          return furnitureCustomSuiteListBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(unk2700KJGLLEEHBPF_);
+          return java.util.Collections.unmodifiableList(furnitureCustomSuiteList_);
         }
       }
       /**
-       * <code>repeated .Unk2700_BIEMCDLIFOD Unk2700_KJGLLEEHBPF = 14;</code>
+       * <code>repeated .HomeFurnitureCustomSuiteData furniture_custom_suite_list = 14;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFOD.Builder addUnk2700KJGLLEEHBPFBuilder() {
-        return getUnk2700KJGLLEEHBPFFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFOD.getDefaultInstance());
+      public emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteData.Builder addFurnitureCustomSuiteListBuilder() {
+        return getFurnitureCustomSuiteListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteData.getDefaultInstance());
       }
       /**
-       * <code>repeated .Unk2700_BIEMCDLIFOD Unk2700_KJGLLEEHBPF = 14;</code>
+       * <code>repeated .HomeFurnitureCustomSuiteData furniture_custom_suite_list = 14;</code>
        */
-      public emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFOD.Builder addUnk2700KJGLLEEHBPFBuilder(
+      public emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteData.Builder addFurnitureCustomSuiteListBuilder(
           int index) {
-        return getUnk2700KJGLLEEHBPFFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFOD.getDefaultInstance());
+        return getFurnitureCustomSuiteListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteData.getDefaultInstance());
       }
       /**
-       * <code>repeated .Unk2700_BIEMCDLIFOD Unk2700_KJGLLEEHBPF = 14;</code>
+       * <code>repeated .HomeFurnitureCustomSuiteData furniture_custom_suite_list = 14;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFOD.Builder> 
-           getUnk2700KJGLLEEHBPFBuilderList() {
-        return getUnk2700KJGLLEEHBPFFieldBuilder().getBuilderList();
+      public java.util.List<emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteData.Builder> 
+           getFurnitureCustomSuiteListBuilderList() {
+        return getFurnitureCustomSuiteListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFOD, emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFOD.Builder, emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFODOrBuilder> 
-          getUnk2700KJGLLEEHBPFFieldBuilder() {
-        if (unk2700KJGLLEEHBPFBuilder_ == null) {
-          unk2700KJGLLEEHBPFBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFOD, emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFOD.Builder, emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.Unk2700_BIEMCDLIFODOrBuilder>(
-                  unk2700KJGLLEEHBPF_,
+          emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteData, emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteData.Builder, emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteDataOrBuilder> 
+          getFurnitureCustomSuiteListFieldBuilder() {
+        if (furnitureCustomSuiteListBuilder_ == null) {
+          furnitureCustomSuiteListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteData, emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteData.Builder, emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.HomeFurnitureCustomSuiteDataOrBuilder>(
+                  furnitureCustomSuiteList_,
                   ((bitField0_ & 0x00000200) != 0),
                   getParentForChildren(),
                   isClean());
-          unk2700KJGLLEEHBPF_ = null;
+          furnitureCustomSuiteList_ = null;
         }
-        return unk2700KJGLLEEHBPFBuilder_;
+        return furnitureCustomSuiteListBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -4382,26 +4382,27 @@ public final class HomeBlockArrangementInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\036HomeBlockArrangementInfo.proto\032\024HomeAn" +
       "imalData.proto\032\031HomeBlockDotPattern.prot" +
-      "o\032\030HomeBlockFieldData.proto\032\027HomeFurnitu" +
-      "reData.proto\032\034HomeFurnitureSuiteData.pro" +
-      "to\032\021HomeNpcData.proto\032\031Unk2700_BIEMCDLIF" +
-      "OD.proto\032\031Unk2700_GOHMLAFNBGF.proto\032\026Wee" +
-      "kendDjinnInfo.proto\"\277\004\n\030HomeBlockArrange" +
-      "mentInfo\022\023\n\013is_unlocked\030\001 \001(\010\022\025\n\rcomfort" +
-      "_value\030\002 \001(\r\022+\n\022deploy_animal_list\030\004 \003(\013" +
-      "2\017.HomeAnimalData\0221\n\023Unk2700_HGIECHILOJL" +
-      "\030\005 \003(\0132\024.Unk2700_GOHMLAFNBGF\0222\n\027weekend_" +
-      "djinn_info_list\030\r \003(\0132\021.WeekendDjinnInfo" +
-      "\0225\n\024furniture_suite_list\030\017 \003(\0132\027.HomeFur" +
-      "nitureSuiteData\022\'\n\nfield_list\030\003 \003(\0132\023.Ho" +
-      "meBlockFieldData\022%\n\017deploy_npc_list\030\013 \003(" +
-      "\0132\014.HomeNpcData\022.\n\020dot_pattern_list\030\007 \003(" +
-      "\0132\024.HomeBlockDotPattern\0225\n\031persistent_fu" +
-      "rniture_list\030\t \003(\0132\022.HomeFurnitureData\0220" +
-      "\n\024deploy_furniure_list\030\014 \003(\0132\022.HomeFurni" +
-      "tureData\022\020\n\010block_id\030\006 \001(\r\0221\n\023Unk2700_KJ" +
-      "GLLEEHBPF\030\016 \003(\0132\024.Unk2700_BIEMCDLIFODB\033\n" +
-      "\031emu.grasscutter.net.protob\006proto3"
+      "o\032\030HomeBlockFieldData.proto\032\"HomeFurnitu" +
+      "reCustomSuiteData.proto\032\027HomeFurnitureDa" +
+      "ta.proto\032\034HomeFurnitureGroupData.proto\032\034" +
+      "HomeFurnitureSuiteData.proto\032\021HomeNpcDat" +
+      "a.proto\032\026WeekendDjinnInfo.proto\"\324\004\n\030Home" +
+      "BlockArrangementInfo\022\023\n\013is_unlocked\030\001 \001(" +
+      "\010\022\025\n\rcomfort_value\030\002 \001(\r\022+\n\022deploy_anima" +
+      "l_list\030\004 \003(\0132\017.HomeAnimalData\0225\n\024furnitu" +
+      "re_group_list\030\005 \003(\0132\027.HomeFurnitureGroup" +
+      "Data\0222\n\027weekend_djinn_info_list\030\r \003(\0132\021." +
+      "WeekendDjinnInfo\0225\n\024furniture_suite_list" +
+      "\030\017 \003(\0132\027.HomeFurnitureSuiteData\022\'\n\nfield" +
+      "_list\030\003 \003(\0132\023.HomeBlockFieldData\022%\n\017depl" +
+      "oy_npc_list\030\013 \003(\0132\014.HomeNpcData\022.\n\020dot_p" +
+      "attern_list\030\007 \003(\0132\024.HomeBlockDotPattern\022" +
+      "5\n\031persistent_furniture_list\030\t \003(\0132\022.Hom" +
+      "eFurnitureData\0220\n\024deploy_furniure_list\030\014" +
+      " \003(\0132\022.HomeFurnitureData\022\020\n\010block_id\030\006 \001" +
+      "(\r\022B\n\033furniture_custom_suite_list\030\016 \003(\0132" +
+      "\035.HomeFurnitureCustomSuiteDataB\033\n\031emu.gr" +
+      "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -4409,11 +4410,11 @@ public final class HomeBlockArrangementInfoOuterClass {
           emu.grasscutter.net.proto.HomeAnimalDataOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.HomeBlockDotPatternOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.HomeBlockFieldDataOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.HomeFurnitureSuiteDataOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.HomeNpcDataOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.getDescriptor(),
-          emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.getDescriptor(),
           emu.grasscutter.net.proto.WeekendDjinnInfoOuterClass.getDescriptor(),
         });
     internal_static_HomeBlockArrangementInfo_descriptor =
@@ -4421,15 +4422,15 @@ public final class HomeBlockArrangementInfoOuterClass {
     internal_static_HomeBlockArrangementInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeBlockArrangementInfo_descriptor,
-        new java.lang.String[] { "IsUnlocked", "ComfortValue", "DeployAnimalList", "Unk2700HGIECHILOJL", "WeekendDjinnInfoList", "FurnitureSuiteList", "FieldList", "DeployNpcList", "DotPatternList", "PersistentFurnitureList", "DeployFurniureList", "BlockId", "Unk2700KJGLLEEHBPF", });
+        new java.lang.String[] { "IsUnlocked", "ComfortValue", "DeployAnimalList", "FurnitureGroupList", "WeekendDjinnInfoList", "FurnitureSuiteList", "FieldList", "DeployNpcList", "DotPatternList", "PersistentFurnitureList", "DeployFurniureList", "BlockId", "FurnitureCustomSuiteList", });
     emu.grasscutter.net.proto.HomeAnimalDataOuterClass.getDescriptor();
     emu.grasscutter.net.proto.HomeBlockDotPatternOuterClass.getDescriptor();
     emu.grasscutter.net.proto.HomeBlockFieldDataOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.HomeFurnitureCustomSuiteDataOuterClass.getDescriptor();
     emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.HomeFurnitureGroupDataOuterClass.getDescriptor();
     emu.grasscutter.net.proto.HomeFurnitureSuiteDataOuterClass.getDescriptor();
     emu.grasscutter.net.proto.HomeNpcDataOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.Unk2700BIEMCDLIFOD.getDescriptor();
-    emu.grasscutter.net.proto.Unk2700GOHMLAFNBGF.getDescriptor();
     emu.grasscutter.net.proto.WeekendDjinnInfoOuterClass.getDescriptor();
   }
 

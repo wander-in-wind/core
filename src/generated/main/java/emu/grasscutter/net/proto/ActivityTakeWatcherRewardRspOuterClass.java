@@ -40,8 +40,7 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
    * <pre>
    * CmdId: 2034
    * EnetChannelId: 0
-   * EnetIsReliable: false
-   * IsAllowClient: true
+   * EnetIsReliable: true
    * </pre>
    *
    * Protobuf type {@code ActivityTakeWatcherRewardRsp}
@@ -349,8 +348,7 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
      * <pre>
      * CmdId: 2034
      * EnetChannelId: 0
-     * EnetIsReliable: false
-     * IsAllowClient: true
+     * EnetIsReliable: true
      * </pre>
      *
      * Protobuf type {@code ActivityTakeWatcherRewardRsp}

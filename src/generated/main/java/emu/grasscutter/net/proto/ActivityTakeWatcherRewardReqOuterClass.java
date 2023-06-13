@@ -34,7 +34,7 @@ public final class ActivityTakeWatcherRewardReqOuterClass {
    * <pre>
    * CmdId: 2038
    * EnetChannelId: 0
-   * EnetIsReliable: false
+   * EnetIsReliable: true
    * IsAllowClient: true
    * </pre>
    *
@@ -316,7 +316,7 @@ public final class ActivityTakeWatcherRewardReqOuterClass {
      * <pre>
      * CmdId: 2038
      * EnetChannelId: 0
-     * EnetIsReliable: false
+     * EnetIsReliable: true
      * IsAllowClient: true
      * </pre>
      *

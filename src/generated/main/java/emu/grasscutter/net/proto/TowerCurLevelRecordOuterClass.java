@@ -66,10 +66,10 @@ public final class TowerCurLevelRecordOuterClass {
     int getBuffIdList(int index);
 
     /**
-     * <code>bool Unk2700_CBPNPEBMPOH = 2;</code>
-     * @return The unk2700CBPNPEBMPOH.
+     * <code>bool is_upper_part = 2;</code>
+     * @return The isUpperPart.
      */
-    boolean getUnk2700CBPNPEBMPOH();
+    boolean getIsUpperPart();
 
     /**
      * <code>uint32 cur_level_index = 1;</code>
@@ -138,7 +138,7 @@ public final class TowerCurLevelRecordOuterClass {
             }
             case 16: {
 
-              unk2700CBPNPEBMPOH_ = input.readBool();
+              isUpperPart_ = input.readBool();
               break;
             }
             case 32: {
@@ -298,15 +298,15 @@ public final class TowerCurLevelRecordOuterClass {
     }
     private int buffIdListMemoizedSerializedSize = -1;
 
-    public static final int UNK2700_CBPNPEBMPOH_FIELD_NUMBER = 2;
-    private boolean unk2700CBPNPEBMPOH_;
+    public static final int IS_UPPER_PART_FIELD_NUMBER = 2;
+    private boolean isUpperPart_;
     /**
-     * <code>bool Unk2700_CBPNPEBMPOH = 2;</code>
-     * @return The unk2700CBPNPEBMPOH.
+     * <code>bool is_upper_part = 2;</code>
+     * @return The isUpperPart.
      */
     @java.lang.Override
-    public boolean getUnk2700CBPNPEBMPOH() {
-      return unk2700CBPNPEBMPOH_;
+    public boolean getIsUpperPart() {
+      return isUpperPart_;
     }
 
     public static final int CUR_LEVEL_INDEX_FIELD_NUMBER = 1;
@@ -349,8 +349,8 @@ public final class TowerCurLevelRecordOuterClass {
       if (curLevelIndex_ != 0) {
         output.writeUInt32(1, curLevelIndex_);
       }
-      if (unk2700CBPNPEBMPOH_ != false) {
-        output.writeBool(2, unk2700CBPNPEBMPOH_);
+      if (isUpperPart_ != false) {
+        output.writeBool(2, isUpperPart_);
       }
       if (getBuffIdListList().size() > 0) {
         output.writeUInt32NoTag(34);
@@ -381,9 +381,9 @@ public final class TowerCurLevelRecordOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(1, curLevelIndex_);
       }
-      if (unk2700CBPNPEBMPOH_ != false) {
+      if (isUpperPart_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, unk2700CBPNPEBMPOH_);
+          .computeBoolSize(2, isUpperPart_);
       }
       {
         int dataSize = 0;
@@ -432,8 +432,8 @@ public final class TowerCurLevelRecordOuterClass {
           != other.getIsEmpty()) return false;
       if (!getBuffIdListList()
           .equals(other.getBuffIdListList())) return false;
-      if (getUnk2700CBPNPEBMPOH()
-          != other.getUnk2700CBPNPEBMPOH()) return false;
+      if (getIsUpperPart()
+          != other.getIsUpperPart()) return false;
       if (getCurLevelIndex()
           != other.getCurLevelIndex()) return false;
       if (getCurFloorId()
@@ -460,9 +460,9 @@ public final class TowerCurLevelRecordOuterClass {
         hash = (37 * hash) + BUFF_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getBuffIdListList().hashCode();
       }
-      hash = (37 * hash) + UNK2700_CBPNPEBMPOH_FIELD_NUMBER;
+      hash = (37 * hash) + IS_UPPER_PART_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk2700CBPNPEBMPOH());
+          getIsUpperPart());
       hash = (37 * hash) + CUR_LEVEL_INDEX_FIELD_NUMBER;
       hash = (53 * hash) + getCurLevelIndex();
       hash = (37 * hash) + CUR_FLOOR_ID_FIELD_NUMBER;
@@ -611,7 +611,7 @@ public final class TowerCurLevelRecordOuterClass {
 
         buffIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
-        unk2700CBPNPEBMPOH_ = false;
+        isUpperPart_ = false;
 
         curLevelIndex_ = 0;
 
@@ -659,7 +659,7 @@ public final class TowerCurLevelRecordOuterClass {
           bitField0_ = (bitField0_ & ~0x00000002);
         }
         result.buffIdList_ = buffIdList_;
-        result.unk2700CBPNPEBMPOH_ = unk2700CBPNPEBMPOH_;
+        result.isUpperPart_ = isUpperPart_;
         result.curLevelIndex_ = curLevelIndex_;
         result.curFloorId_ = curFloorId_;
         onBuilt();
@@ -749,8 +749,8 @@ public final class TowerCurLevelRecordOuterClass {
           }
           onChanged();
         }
-        if (other.getUnk2700CBPNPEBMPOH() != false) {
-          setUnk2700CBPNPEBMPOH(other.getUnk2700CBPNPEBMPOH());
+        if (other.getIsUpperPart() != false) {
+          setIsUpperPart(other.getIsUpperPart());
         }
         if (other.getCurLevelIndex() != 0) {
           setCurLevelIndex(other.getCurLevelIndex());
@@ -1138,33 +1138,33 @@ public final class TowerCurLevelRecordOuterClass {
         return this;
       }
 
-      private boolean unk2700CBPNPEBMPOH_ ;
+      private boolean isUpperPart_ ;
       /**
-       * <code>bool Unk2700_CBPNPEBMPOH = 2;</code>
-       * @return The unk2700CBPNPEBMPOH.
+       * <code>bool is_upper_part = 2;</code>
+       * @return The isUpperPart.
        */
       @java.lang.Override
-      public boolean getUnk2700CBPNPEBMPOH() {
-        return unk2700CBPNPEBMPOH_;
+      public boolean getIsUpperPart() {
+        return isUpperPart_;
       }
       /**
-       * <code>bool Unk2700_CBPNPEBMPOH = 2;</code>
-       * @param value The unk2700CBPNPEBMPOH to set.
+       * <code>bool is_upper_part = 2;</code>
+       * @param value The isUpperPart to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700CBPNPEBMPOH(boolean value) {
+      public Builder setIsUpperPart(boolean value) {
         
-        unk2700CBPNPEBMPOH_ = value;
+        isUpperPart_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk2700_CBPNPEBMPOH = 2;</code>
+       * <code>bool is_upper_part = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700CBPNPEBMPOH() {
+      public Builder clearIsUpperPart() {
         
-        unk2700CBPNPEBMPOH_ = false;
+        isUpperPart_ = false;
         onChanged();
         return this;
       }
@@ -1298,12 +1298,12 @@ public final class TowerCurLevelRecordOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031TowerCurLevelRecord.proto\032\017TowerTeam.p" +
-      "roto\"\256\001\n\023TowerCurLevelRecord\022#\n\017tower_te" +
+      "roto\"\250\001\n\023TowerCurLevelRecord\022#\n\017tower_te" +
       "am_list\030\010 \003(\0132\n.TowerTeam\022\020\n\010is_empty\030\006 " +
-      "\001(\010\022\024\n\014buff_id_list\030\004 \003(\r\022\033\n\023Unk2700_CBP" +
-      "NPEBMPOH\030\002 \001(\010\022\027\n\017cur_level_index\030\001 \001(\r\022" +
-      "\024\n\014cur_floor_id\030\017 \001(\rB\033\n\031emu.grasscutter" +
-      ".net.protob\006proto3"
+      "\001(\010\022\024\n\014buff_id_list\030\004 \003(\r\022\025\n\ris_upper_pa" +
+      "rt\030\002 \001(\010\022\027\n\017cur_level_index\030\001 \001(\r\022\024\n\014cur" +
+      "_floor_id\030\017 \001(\rB\033\n\031emu.grasscutter.net.p" +
+      "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1315,7 +1315,7 @@ public final class TowerCurLevelRecordOuterClass {
     internal_static_TowerCurLevelRecord_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TowerCurLevelRecord_descriptor,
-        new java.lang.String[] { "TowerTeamList", "IsEmpty", "BuffIdList", "Unk2700CBPNPEBMPOH", "CurLevelIndex", "CurFloorId", });
+        new java.lang.String[] { "TowerTeamList", "IsEmpty", "BuffIdList", "IsUpperPart", "CurLevelIndex", "CurFloorId", });
     emu.grasscutter.net.proto.TowerTeamOuterClass.getDescriptor();
   }
 

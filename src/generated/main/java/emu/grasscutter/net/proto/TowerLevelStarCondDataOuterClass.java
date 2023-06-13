@@ -19,10 +19,10 @@ public final class TowerLevelStarCondDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool Unk2700_HIFMJMAHEMB = 15;</code>
-     * @return The unk2700HIFMJMAHEMB.
+     * <code>bool is_fail = 15;</code>
+     * @return The isFail.
      */
-    boolean getUnk2700HIFMJMAHEMB();
+    boolean getIsFail();
 
     /**
      * <code>uint32 cond_value = 9;</code>
@@ -104,7 +104,7 @@ public final class TowerLevelStarCondDataOuterClass {
             }
             case 120: {
 
-              unk2700HIFMJMAHEMB_ = input.readBool();
+              isFail_ = input.readBool();
               break;
             }
             default: {
@@ -139,15 +139,15 @@ public final class TowerLevelStarCondDataOuterClass {
               emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData.class, emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData.Builder.class);
     }
 
-    public static final int UNK2700_HIFMJMAHEMB_FIELD_NUMBER = 15;
-    private boolean unk2700HIFMJMAHEMB_;
+    public static final int IS_FAIL_FIELD_NUMBER = 15;
+    private boolean isFail_;
     /**
-     * <code>bool Unk2700_HIFMJMAHEMB = 15;</code>
-     * @return The unk2700HIFMJMAHEMB.
+     * <code>bool is_fail = 15;</code>
+     * @return The isFail.
      */
     @java.lang.Override
-    public boolean getUnk2700HIFMJMAHEMB() {
-      return unk2700HIFMJMAHEMB_;
+    public boolean getIsFail() {
+      return isFail_;
     }
 
     public static final int COND_VALUE_FIELD_NUMBER = 9;
@@ -206,8 +206,8 @@ public final class TowerLevelStarCondDataOuterClass {
       if (isPause_ != false) {
         output.writeBool(13, isPause_);
       }
-      if (unk2700HIFMJMAHEMB_ != false) {
-        output.writeBool(15, unk2700HIFMJMAHEMB_);
+      if (isFail_ != false) {
+        output.writeBool(15, isFail_);
       }
       unknownFields.writeTo(output);
     }
@@ -230,9 +230,9 @@ public final class TowerLevelStarCondDataOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(13, isPause_);
       }
-      if (unk2700HIFMJMAHEMB_ != false) {
+      if (isFail_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, unk2700HIFMJMAHEMB_);
+          .computeBoolSize(15, isFail_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -249,8 +249,8 @@ public final class TowerLevelStarCondDataOuterClass {
       }
       emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData other = (emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData) obj;
 
-      if (getUnk2700HIFMJMAHEMB()
-          != other.getUnk2700HIFMJMAHEMB()) return false;
+      if (getIsFail()
+          != other.getIsFail()) return false;
       if (getCondValue()
           != other.getCondValue()) return false;
       if (getIsPause()
@@ -268,9 +268,9 @@ public final class TowerLevelStarCondDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + UNK2700_HIFMJMAHEMB_FIELD_NUMBER;
+      hash = (37 * hash) + IS_FAIL_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk2700HIFMJMAHEMB());
+          getIsFail());
       hash = (37 * hash) + COND_VALUE_FIELD_NUMBER;
       hash = (53 * hash) + getCondValue();
       hash = (37 * hash) + IS_PAUSE_FIELD_NUMBER;
@@ -411,7 +411,7 @@ public final class TowerLevelStarCondDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        unk2700HIFMJMAHEMB_ = false;
+        isFail_ = false;
 
         condValue_ = 0;
 
@@ -445,7 +445,7 @@ public final class TowerLevelStarCondDataOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData buildPartial() {
         emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData result = new emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData(this);
-        result.unk2700HIFMJMAHEMB_ = unk2700HIFMJMAHEMB_;
+        result.isFail_ = isFail_;
         result.condValue_ = condValue_;
         result.isPause_ = isPause_;
         result.starCondIndex_ = starCondIndex_;
@@ -497,8 +497,8 @@ public final class TowerLevelStarCondDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData other) {
         if (other == emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData.getDefaultInstance()) return this;
-        if (other.getUnk2700HIFMJMAHEMB() != false) {
-          setUnk2700HIFMJMAHEMB(other.getUnk2700HIFMJMAHEMB());
+        if (other.getIsFail() != false) {
+          setIsFail(other.getIsFail());
         }
         if (other.getCondValue() != 0) {
           setCondValue(other.getCondValue());
@@ -538,33 +538,33 @@ public final class TowerLevelStarCondDataOuterClass {
         return this;
       }
 
-      private boolean unk2700HIFMJMAHEMB_ ;
+      private boolean isFail_ ;
       /**
-       * <code>bool Unk2700_HIFMJMAHEMB = 15;</code>
-       * @return The unk2700HIFMJMAHEMB.
+       * <code>bool is_fail = 15;</code>
+       * @return The isFail.
        */
       @java.lang.Override
-      public boolean getUnk2700HIFMJMAHEMB() {
-        return unk2700HIFMJMAHEMB_;
+      public boolean getIsFail() {
+        return isFail_;
       }
       /**
-       * <code>bool Unk2700_HIFMJMAHEMB = 15;</code>
-       * @param value The unk2700HIFMJMAHEMB to set.
+       * <code>bool is_fail = 15;</code>
+       * @param value The isFail to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700HIFMJMAHEMB(boolean value) {
+      public Builder setIsFail(boolean value) {
         
-        unk2700HIFMJMAHEMB_ = value;
+        isFail_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk2700_HIFMJMAHEMB = 15;</code>
+       * <code>bool is_fail = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700HIFMJMAHEMB() {
+      public Builder clearIsFail() {
         
-        unk2700HIFMJMAHEMB_ = false;
+        isFail_ = false;
         onChanged();
         return this;
       }
@@ -728,11 +728,11 @@ public final class TowerLevelStarCondDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034TowerLevelStarCondData.proto\"t\n\026TowerL" +
-      "evelStarCondData\022\033\n\023Unk2700_HIFMJMAHEMB\030" +
-      "\017 \001(\010\022\022\n\ncond_value\030\t \001(\r\022\020\n\010is_pause\030\r " +
-      "\001(\010\022\027\n\017star_cond_index\030\006 \001(\rB\033\n\031emu.gras" +
-      "scutter.net.protob\006proto3"
+      "\n\034TowerLevelStarCondData.proto\"h\n\026TowerL" +
+      "evelStarCondData\022\017\n\007is_fail\030\017 \001(\010\022\022\n\ncon" +
+      "d_value\030\t \001(\r\022\020\n\010is_pause\030\r \001(\010\022\027\n\017star_" +
+      "cond_index\030\006 \001(\rB\033\n\031emu.grasscutter.net." +
+      "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -743,7 +743,7 @@ public final class TowerLevelStarCondDataOuterClass {
     internal_static_TowerLevelStarCondData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TowerLevelStarCondData_descriptor,
-        new java.lang.String[] { "Unk2700HIFMJMAHEMB", "CondValue", "IsPause", "StarCondIndex", });
+        new java.lang.String[] { "IsFail", "CondValue", "IsPause", "StarCondIndex", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

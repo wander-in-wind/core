@@ -19,16 +19,16 @@ public final class BeginCameraSceneLookNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 Unk3000_MNLLCJMPMNH = 1154;</code>
-     * @return The unk3000MNLLCJMPMNH.
+     * <code>uint32 blend_type = 1154;</code>
+     * @return The blendType.
      */
-    int getUnk3000MNLLCJMPMNH();
+    int getBlendType();
 
     /**
-     * <code>float Unk2700_DHAHEKOGHBJ = 7;</code>
-     * @return The unk2700DHAHEKOGHBJ.
+     * <code>float custom_radius = 7;</code>
+     * @return The customRadius.
      */
-    float getUnk2700DHAHEKOGHBJ();
+    float getCustomRadius();
 
     /**
      * <code>bool is_set_screen_xy = 5;</code>
@@ -58,21 +58,21 @@ public final class BeginCameraSceneLookNotifyOuterClass {
     boolean getIsRecoverKeepCurrent();
 
     /**
-     * <code>bool Unk3000_GOPIFPMFEPB = 1375;</code>
-     * @return The unk3000GOPIFPMFEPB.
+     * <code>bool is_abs_follow_pos = 1375;</code>
+     * @return The isAbsFollowPos.
      */
-    boolean getUnk3000GOPIFPMFEPB();
+    boolean getIsAbsFollowPos();
 
     /**
-     * <code>.BeginCameraSceneLookNotify.Unk2700_LNCHDDOOECD Unk2700_HIAKNNCKHJB = 6;</code>
-     * @return The enum numeric value on the wire for unk2700HIAKNNCKHJB.
+     * <code>.BeginCameraSceneLookNotify.KeepRotType keep_rot_type = 6;</code>
+     * @return The enum numeric value on the wire for keepRotType.
      */
-    int getUnk2700HIAKNNCKHJBValue();
+    int getKeepRotTypeValue();
     /**
-     * <code>.BeginCameraSceneLookNotify.Unk2700_LNCHDDOOECD Unk2700_HIAKNNCKHJB = 6;</code>
-     * @return The unk2700HIAKNNCKHJB.
+     * <code>.BeginCameraSceneLookNotify.KeepRotType keep_rot_type = 6;</code>
+     * @return The keepRotType.
      */
-    emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.Unk2700_LNCHDDOOECD getUnk2700HIAKNNCKHJB();
+    emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.KeepRotType getKeepRotType();
 
     /**
      * <code>bool is_change_play_mode = 9;</code>
@@ -81,10 +81,10 @@ public final class BeginCameraSceneLookNotifyOuterClass {
     boolean getIsChangePlayMode();
 
     /**
-     * <code>uint32 Unk3000_IEFIKMHCKDH = 1103;</code>
-     * @return The unk3000IEFIKMHCKDH.
+     * <code>uint32 disable_protect = 1103;</code>
+     * @return The disableProtect.
      */
-    int getUnk3000IEFIKMHCKDH();
+    int getDisableProtect();
 
     /**
      * <code>float screen_y = 15;</code>
@@ -105,10 +105,10 @@ public final class BeginCameraSceneLookNotifyOuterClass {
     boolean getIsForce();
 
     /**
-     * <code>float Unk3000_OGCLMFFADBD = 1758;</code>
-     * @return The unk3000OGCLMFFADBD.
+     * <code>float blend_duration = 1758;</code>
+     * @return The blendDuration.
      */
-    float getUnk3000OGCLMFFADBD();
+    float getBlendDuration();
 
     /**
      * <code>uint32 entity_id = 1327;</code>
@@ -199,7 +199,7 @@ public final class BeginCameraSceneLookNotifyOuterClass {
       super(builder);
     }
     private BeginCameraSceneLookNotify() {
-      unk2700HIAKNNCKHJB_ = 0;
+      keepRotType_ = 0;
       otherParams_ = com.google.protobuf.LazyStringArrayList.EMPTY;
     }
 
@@ -274,12 +274,12 @@ public final class BeginCameraSceneLookNotifyOuterClass {
             case 48: {
               int rawValue = input.readEnum();
 
-              unk2700HIAKNNCKHJB_ = rawValue;
+              keepRotType_ = rawValue;
               break;
             }
             case 61: {
 
-              unk2700DHAHEKOGHBJ_ = input.readFloat();
+              customRadius_ = input.readFloat();
               break;
             }
             case 66: {
@@ -332,12 +332,12 @@ public final class BeginCameraSceneLookNotifyOuterClass {
             }
             case 8824: {
 
-              unk3000IEFIKMHCKDH_ = input.readUInt32();
+              disableProtect_ = input.readUInt32();
               break;
             }
             case 9232: {
 
-              unk3000MNLLCJMPMNH_ = input.readUInt32();
+              blendType_ = input.readUInt32();
               break;
             }
             case 10616: {
@@ -347,12 +347,12 @@ public final class BeginCameraSceneLookNotifyOuterClass {
             }
             case 11000: {
 
-              unk3000GOPIFPMFEPB_ = input.readBool();
+              isAbsFollowPos_ = input.readBool();
               break;
             }
             case 14069: {
 
-              unk3000OGCLMFFADBD_ = input.readFloat();
+              blendDuration_ = input.readFloat();
               break;
             }
             default: {
@@ -391,29 +391,29 @@ public final class BeginCameraSceneLookNotifyOuterClass {
     }
 
     /**
-     * Protobuf enum {@code BeginCameraSceneLookNotify.Unk2700_LNCHDDOOECD}
+     * Protobuf enum {@code BeginCameraSceneLookNotify.KeepRotType}
      */
-    public enum Unk2700_LNCHDDOOECD
+    public enum KeepRotType
         implements com.google.protobuf.ProtocolMessageEnum {
       /**
-       * <code>Unk2700_LNCHDDOOECD_Unk2700_ACOENBMDFBP = 0;</code>
+       * <code>KEEP_ROT_TYPE_X = 0;</code>
        */
-      Unk2700_LNCHDDOOECD_Unk2700_ACOENBMDFBP(0),
+      KEEP_ROT_TYPE_X(0),
       /**
-       * <code>Unk2700_LNCHDDOOECD_Unk2700_FKBLCDFLCOM = 1;</code>
+       * <code>KEEP_ROT_TYPE_XY = 1;</code>
        */
-      Unk2700_LNCHDDOOECD_Unk2700_FKBLCDFLCOM(1),
+      KEEP_ROT_TYPE_XY(1),
       UNRECOGNIZED(-1),
       ;
 
       /**
-       * <code>Unk2700_LNCHDDOOECD_Unk2700_ACOENBMDFBP = 0;</code>
+       * <code>KEEP_ROT_TYPE_X = 0;</code>
        */
-      public static final int Unk2700_LNCHDDOOECD_Unk2700_ACOENBMDFBP_VALUE = 0;
+      public static final int KEEP_ROT_TYPE_X_VALUE = 0;
       /**
-       * <code>Unk2700_LNCHDDOOECD_Unk2700_FKBLCDFLCOM = 1;</code>
+       * <code>KEEP_ROT_TYPE_XY = 1;</code>
        */
-      public static final int Unk2700_LNCHDDOOECD_Unk2700_FKBLCDFLCOM_VALUE = 1;
+      public static final int KEEP_ROT_TYPE_XY_VALUE = 1;
 
 
       public final int getNumber() {
@@ -430,7 +430,7 @@ public final class BeginCameraSceneLookNotifyOuterClass {
        * @deprecated Use {@link #forNumber(int)} instead.
        */
       @java.lang.Deprecated
-      public static Unk2700_LNCHDDOOECD valueOf(int value) {
+      public static KeepRotType valueOf(int value) {
         return forNumber(value);
       }
 
@@ -438,23 +438,23 @@ public final class BeginCameraSceneLookNotifyOuterClass {
        * @param value The numeric wire value of the corresponding enum entry.
        * @return The enum associated with the given numeric wire value.
        */
-      public static Unk2700_LNCHDDOOECD forNumber(int value) {
+      public static KeepRotType forNumber(int value) {
         switch (value) {
-          case 0: return Unk2700_LNCHDDOOECD_Unk2700_ACOENBMDFBP;
-          case 1: return Unk2700_LNCHDDOOECD_Unk2700_FKBLCDFLCOM;
+          case 0: return KEEP_ROT_TYPE_X;
+          case 1: return KEEP_ROT_TYPE_XY;
           default: return null;
         }
       }
 
-      public static com.google.protobuf.Internal.EnumLiteMap<Unk2700_LNCHDDOOECD>
+      public static com.google.protobuf.Internal.EnumLiteMap<KeepRotType>
           internalGetValueMap() {
         return internalValueMap;
       }
       private static final com.google.protobuf.Internal.EnumLiteMap<
-          Unk2700_LNCHDDOOECD> internalValueMap =
-            new com.google.protobuf.Internal.EnumLiteMap<Unk2700_LNCHDDOOECD>() {
-              public Unk2700_LNCHDDOOECD findValueByNumber(int number) {
-                return Unk2700_LNCHDDOOECD.forNumber(number);
+          KeepRotType> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<KeepRotType>() {
+              public KeepRotType findValueByNumber(int number) {
+                return KeepRotType.forNumber(number);
               }
             };
 
@@ -475,9 +475,9 @@ public final class BeginCameraSceneLookNotifyOuterClass {
         return emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.getDescriptor().getEnumTypes().get(0);
       }
 
-      private static final Unk2700_LNCHDDOOECD[] VALUES = values();
+      private static final KeepRotType[] VALUES = values();
 
-      public static Unk2700_LNCHDDOOECD valueOf(
+      public static KeepRotType valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
         if (desc.getType() != getDescriptor()) {
           throw new java.lang.IllegalArgumentException(
@@ -491,33 +491,33 @@ public final class BeginCameraSceneLookNotifyOuterClass {
 
       private final int value;
 
-      private Unk2700_LNCHDDOOECD(int value) {
+      private KeepRotType(int value) {
         this.value = value;
       }
 
-      // @@protoc_insertion_point(enum_scope:BeginCameraSceneLookNotify.Unk2700_LNCHDDOOECD)
+      // @@protoc_insertion_point(enum_scope:BeginCameraSceneLookNotify.KeepRotType)
     }
 
-    public static final int UNK3000_MNLLCJMPMNH_FIELD_NUMBER = 1154;
-    private int unk3000MNLLCJMPMNH_;
+    public static final int BLEND_TYPE_FIELD_NUMBER = 1154;
+    private int blendType_;
     /**
-     * <code>uint32 Unk3000_MNLLCJMPMNH = 1154;</code>
-     * @return The unk3000MNLLCJMPMNH.
+     * <code>uint32 blend_type = 1154;</code>
+     * @return The blendType.
      */
     @java.lang.Override
-    public int getUnk3000MNLLCJMPMNH() {
-      return unk3000MNLLCJMPMNH_;
+    public int getBlendType() {
+      return blendType_;
     }
 
-    public static final int UNK2700_DHAHEKOGHBJ_FIELD_NUMBER = 7;
-    private float unk2700DHAHEKOGHBJ_;
+    public static final int CUSTOM_RADIUS_FIELD_NUMBER = 7;
+    private float customRadius_;
     /**
-     * <code>float Unk2700_DHAHEKOGHBJ = 7;</code>
-     * @return The unk2700DHAHEKOGHBJ.
+     * <code>float custom_radius = 7;</code>
+     * @return The customRadius.
      */
     @java.lang.Override
-    public float getUnk2700DHAHEKOGHBJ() {
-      return unk2700DHAHEKOGHBJ_;
+    public float getCustomRadius() {
+      return customRadius_;
     }
 
     public static final int IS_SET_SCREEN_XY_FIELD_NUMBER = 5;
@@ -568,34 +568,34 @@ public final class BeginCameraSceneLookNotifyOuterClass {
       return isRecoverKeepCurrent_;
     }
 
-    public static final int UNK3000_GOPIFPMFEPB_FIELD_NUMBER = 1375;
-    private boolean unk3000GOPIFPMFEPB_;
+    public static final int IS_ABS_FOLLOW_POS_FIELD_NUMBER = 1375;
+    private boolean isAbsFollowPos_;
     /**
-     * <code>bool Unk3000_GOPIFPMFEPB = 1375;</code>
-     * @return The unk3000GOPIFPMFEPB.
+     * <code>bool is_abs_follow_pos = 1375;</code>
+     * @return The isAbsFollowPos.
      */
     @java.lang.Override
-    public boolean getUnk3000GOPIFPMFEPB() {
-      return unk3000GOPIFPMFEPB_;
+    public boolean getIsAbsFollowPos() {
+      return isAbsFollowPos_;
     }
 
-    public static final int UNK2700_HIAKNNCKHJB_FIELD_NUMBER = 6;
-    private int unk2700HIAKNNCKHJB_;
+    public static final int KEEP_ROT_TYPE_FIELD_NUMBER = 6;
+    private int keepRotType_;
     /**
-     * <code>.BeginCameraSceneLookNotify.Unk2700_LNCHDDOOECD Unk2700_HIAKNNCKHJB = 6;</code>
-     * @return The enum numeric value on the wire for unk2700HIAKNNCKHJB.
+     * <code>.BeginCameraSceneLookNotify.KeepRotType keep_rot_type = 6;</code>
+     * @return The enum numeric value on the wire for keepRotType.
      */
-    @java.lang.Override public int getUnk2700HIAKNNCKHJBValue() {
-      return unk2700HIAKNNCKHJB_;
+    @java.lang.Override public int getKeepRotTypeValue() {
+      return keepRotType_;
     }
     /**
-     * <code>.BeginCameraSceneLookNotify.Unk2700_LNCHDDOOECD Unk2700_HIAKNNCKHJB = 6;</code>
-     * @return The unk2700HIAKNNCKHJB.
+     * <code>.BeginCameraSceneLookNotify.KeepRotType keep_rot_type = 6;</code>
+     * @return The keepRotType.
      */
-    @java.lang.Override public emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.Unk2700_LNCHDDOOECD getUnk2700HIAKNNCKHJB() {
+    @java.lang.Override public emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.KeepRotType getKeepRotType() {
       @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.Unk2700_LNCHDDOOECD result = emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.Unk2700_LNCHDDOOECD.valueOf(unk2700HIAKNNCKHJB_);
-      return result == null ? emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.Unk2700_LNCHDDOOECD.UNRECOGNIZED : result;
+      emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.KeepRotType result = emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.KeepRotType.valueOf(keepRotType_);
+      return result == null ? emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.KeepRotType.UNRECOGNIZED : result;
     }
 
     public static final int IS_CHANGE_PLAY_MODE_FIELD_NUMBER = 9;
@@ -609,15 +609,15 @@ public final class BeginCameraSceneLookNotifyOuterClass {
       return isChangePlayMode_;
     }
 
-    public static final int UNK3000_IEFIKMHCKDH_FIELD_NUMBER = 1103;
-    private int unk3000IEFIKMHCKDH_;
+    public static final int DISABLE_PROTECT_FIELD_NUMBER = 1103;
+    private int disableProtect_;
     /**
-     * <code>uint32 Unk3000_IEFIKMHCKDH = 1103;</code>
-     * @return The unk3000IEFIKMHCKDH.
+     * <code>uint32 disable_protect = 1103;</code>
+     * @return The disableProtect.
      */
     @java.lang.Override
-    public int getUnk3000IEFIKMHCKDH() {
-      return unk3000IEFIKMHCKDH_;
+    public int getDisableProtect() {
+      return disableProtect_;
     }
 
     public static final int SCREEN_Y_FIELD_NUMBER = 15;
@@ -653,15 +653,15 @@ public final class BeginCameraSceneLookNotifyOuterClass {
       return isForce_;
     }
 
-    public static final int UNK3000_OGCLMFFADBD_FIELD_NUMBER = 1758;
-    private float unk3000OGCLMFFADBD_;
+    public static final int BLEND_DURATION_FIELD_NUMBER = 1758;
+    private float blendDuration_;
     /**
-     * <code>float Unk3000_OGCLMFFADBD = 1758;</code>
-     * @return The unk3000OGCLMFFADBD.
+     * <code>float blend_duration = 1758;</code>
+     * @return The blendDuration.
      */
     @java.lang.Override
-    public float getUnk3000OGCLMFFADBD() {
-      return unk3000OGCLMFFADBD_;
+    public float getBlendDuration() {
+      return blendDuration_;
     }
 
     public static final int ENTITY_ID_FIELD_NUMBER = 1327;
@@ -809,11 +809,11 @@ public final class BeginCameraSceneLookNotifyOuterClass {
       if (isSetScreenXy_ != false) {
         output.writeBool(5, isSetScreenXy_);
       }
-      if (unk2700HIAKNNCKHJB_ != emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.Unk2700_LNCHDDOOECD.Unk2700_LNCHDDOOECD_Unk2700_ACOENBMDFBP.getNumber()) {
-        output.writeEnum(6, unk2700HIAKNNCKHJB_);
+      if (keepRotType_ != emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.KeepRotType.KEEP_ROT_TYPE_X.getNumber()) {
+        output.writeEnum(6, keepRotType_);
       }
-      if (unk2700DHAHEKOGHBJ_ != 0F) {
-        output.writeFloat(7, unk2700DHAHEKOGHBJ_);
+      if (customRadius_ != 0F) {
+        output.writeFloat(7, customRadius_);
       }
       if (followPos_ != null) {
         output.writeMessage(8, getFollowPos());
@@ -839,20 +839,20 @@ public final class BeginCameraSceneLookNotifyOuterClass {
       if (screenY_ != 0F) {
         output.writeFloat(15, screenY_);
       }
-      if (unk3000IEFIKMHCKDH_ != 0) {
-        output.writeUInt32(1103, unk3000IEFIKMHCKDH_);
+      if (disableProtect_ != 0) {
+        output.writeUInt32(1103, disableProtect_);
       }
-      if (unk3000MNLLCJMPMNH_ != 0) {
-        output.writeUInt32(1154, unk3000MNLLCJMPMNH_);
+      if (blendType_ != 0) {
+        output.writeUInt32(1154, blendType_);
       }
       if (entityId_ != 0) {
         output.writeUInt32(1327, entityId_);
       }
-      if (unk3000GOPIFPMFEPB_ != false) {
-        output.writeBool(1375, unk3000GOPIFPMFEPB_);
+      if (isAbsFollowPos_ != false) {
+        output.writeBool(1375, isAbsFollowPos_);
       }
-      if (unk3000OGCLMFFADBD_ != 0F) {
-        output.writeFloat(1758, unk3000OGCLMFFADBD_);
+      if (blendDuration_ != 0F) {
+        output.writeFloat(1758, blendDuration_);
       }
       unknownFields.writeTo(output);
     }
@@ -887,13 +887,13 @@ public final class BeginCameraSceneLookNotifyOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(5, isSetScreenXy_);
       }
-      if (unk2700HIAKNNCKHJB_ != emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.Unk2700_LNCHDDOOECD.Unk2700_LNCHDDOOECD_Unk2700_ACOENBMDFBP.getNumber()) {
+      if (keepRotType_ != emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.KeepRotType.KEEP_ROT_TYPE_X.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(6, unk2700HIAKNNCKHJB_);
+          .computeEnumSize(6, keepRotType_);
       }
-      if (unk2700DHAHEKOGHBJ_ != 0F) {
+      if (customRadius_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(7, unk2700DHAHEKOGHBJ_);
+          .computeFloatSize(7, customRadius_);
       }
       if (followPos_ != null) {
         size += com.google.protobuf.CodedOutputStream
@@ -927,25 +927,25 @@ public final class BeginCameraSceneLookNotifyOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeFloatSize(15, screenY_);
       }
-      if (unk3000IEFIKMHCKDH_ != 0) {
+      if (disableProtect_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1103, unk3000IEFIKMHCKDH_);
+          .computeUInt32Size(1103, disableProtect_);
       }
-      if (unk3000MNLLCJMPMNH_ != 0) {
+      if (blendType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1154, unk3000MNLLCJMPMNH_);
+          .computeUInt32Size(1154, blendType_);
       }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(1327, entityId_);
       }
-      if (unk3000GOPIFPMFEPB_ != false) {
+      if (isAbsFollowPos_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1375, unk3000GOPIFPMFEPB_);
+          .computeBoolSize(1375, isAbsFollowPos_);
       }
-      if (unk3000OGCLMFFADBD_ != 0F) {
+      if (blendDuration_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(1758, unk3000OGCLMFFADBD_);
+          .computeFloatSize(1758, blendDuration_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -962,11 +962,11 @@ public final class BeginCameraSceneLookNotifyOuterClass {
       }
       emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify other = (emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify) obj;
 
-      if (getUnk3000MNLLCJMPMNH()
-          != other.getUnk3000MNLLCJMPMNH()) return false;
-      if (java.lang.Float.floatToIntBits(getUnk2700DHAHEKOGHBJ())
+      if (getBlendType()
+          != other.getBlendType()) return false;
+      if (java.lang.Float.floatToIntBits(getCustomRadius())
           != java.lang.Float.floatToIntBits(
-              other.getUnk2700DHAHEKOGHBJ())) return false;
+              other.getCustomRadius())) return false;
       if (getIsSetScreenXy()
           != other.getIsSetScreenXy()) return false;
       if (hasLookPos() != other.hasLookPos()) return false;
@@ -976,13 +976,13 @@ public final class BeginCameraSceneLookNotifyOuterClass {
       }
       if (getIsRecoverKeepCurrent()
           != other.getIsRecoverKeepCurrent()) return false;
-      if (getUnk3000GOPIFPMFEPB()
-          != other.getUnk3000GOPIFPMFEPB()) return false;
-      if (unk2700HIAKNNCKHJB_ != other.unk2700HIAKNNCKHJB_) return false;
+      if (getIsAbsFollowPos()
+          != other.getIsAbsFollowPos()) return false;
+      if (keepRotType_ != other.keepRotType_) return false;
       if (getIsChangePlayMode()
           != other.getIsChangePlayMode()) return false;
-      if (getUnk3000IEFIKMHCKDH()
-          != other.getUnk3000IEFIKMHCKDH()) return false;
+      if (getDisableProtect()
+          != other.getDisableProtect()) return false;
       if (java.lang.Float.floatToIntBits(getScreenY())
           != java.lang.Float.floatToIntBits(
               other.getScreenY())) return false;
@@ -990,9 +990,9 @@ public final class BeginCameraSceneLookNotifyOuterClass {
           != other.getIsSetFollowPos()) return false;
       if (getIsForce()
           != other.getIsForce()) return false;
-      if (java.lang.Float.floatToIntBits(getUnk3000OGCLMFFADBD())
+      if (java.lang.Float.floatToIntBits(getBlendDuration())
           != java.lang.Float.floatToIntBits(
-              other.getUnk3000OGCLMFFADBD())) return false;
+              other.getBlendDuration())) return false;
       if (getEntityId()
           != other.getEntityId()) return false;
       if (java.lang.Float.floatToIntBits(getScreenX())
@@ -1023,11 +1023,11 @@ public final class BeginCameraSceneLookNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + UNK3000_MNLLCJMPMNH_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk3000MNLLCJMPMNH();
-      hash = (37 * hash) + UNK2700_DHAHEKOGHBJ_FIELD_NUMBER;
+      hash = (37 * hash) + BLEND_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getBlendType();
+      hash = (37 * hash) + CUSTOM_RADIUS_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getUnk2700DHAHEKOGHBJ());
+          getCustomRadius());
       hash = (37 * hash) + IS_SET_SCREEN_XY_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsSetScreenXy());
@@ -1038,16 +1038,16 @@ public final class BeginCameraSceneLookNotifyOuterClass {
       hash = (37 * hash) + IS_RECOVER_KEEP_CURRENT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsRecoverKeepCurrent());
-      hash = (37 * hash) + UNK3000_GOPIFPMFEPB_FIELD_NUMBER;
+      hash = (37 * hash) + IS_ABS_FOLLOW_POS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk3000GOPIFPMFEPB());
-      hash = (37 * hash) + UNK2700_HIAKNNCKHJB_FIELD_NUMBER;
-      hash = (53 * hash) + unk2700HIAKNNCKHJB_;
+          getIsAbsFollowPos());
+      hash = (37 * hash) + KEEP_ROT_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + keepRotType_;
       hash = (37 * hash) + IS_CHANGE_PLAY_MODE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsChangePlayMode());
-      hash = (37 * hash) + UNK3000_IEFIKMHCKDH_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk3000IEFIKMHCKDH();
+      hash = (37 * hash) + DISABLE_PROTECT_FIELD_NUMBER;
+      hash = (53 * hash) + getDisableProtect();
       hash = (37 * hash) + SCREEN_Y_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
           getScreenY());
@@ -1057,9 +1057,9 @@ public final class BeginCameraSceneLookNotifyOuterClass {
       hash = (37 * hash) + IS_FORCE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsForce());
-      hash = (37 * hash) + UNK3000_OGCLMFFADBD_FIELD_NUMBER;
+      hash = (37 * hash) + BLEND_DURATION_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getUnk3000OGCLMFFADBD());
+          getBlendDuration());
       hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getEntityId();
       hash = (37 * hash) + SCREEN_X_FIELD_NUMBER;
@@ -1221,9 +1221,9 @@ public final class BeginCameraSceneLookNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        unk3000MNLLCJMPMNH_ = 0;
+        blendType_ = 0;
 
-        unk2700DHAHEKOGHBJ_ = 0F;
+        customRadius_ = 0F;
 
         isSetScreenXy_ = false;
 
@@ -1235,13 +1235,13 @@ public final class BeginCameraSceneLookNotifyOuterClass {
         }
         isRecoverKeepCurrent_ = false;
 
-        unk3000GOPIFPMFEPB_ = false;
+        isAbsFollowPos_ = false;
 
-        unk2700HIAKNNCKHJB_ = 0;
+        keepRotType_ = 0;
 
         isChangePlayMode_ = false;
 
-        unk3000IEFIKMHCKDH_ = 0;
+        disableProtect_ = 0;
 
         screenY_ = 0F;
 
@@ -1249,7 +1249,7 @@ public final class BeginCameraSceneLookNotifyOuterClass {
 
         isForce_ = false;
 
-        unk3000OGCLMFFADBD_ = 0F;
+        blendDuration_ = 0F;
 
         entityId_ = 0;
 
@@ -1296,8 +1296,8 @@ public final class BeginCameraSceneLookNotifyOuterClass {
       public emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify buildPartial() {
         emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify result = new emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify(this);
         int from_bitField0_ = bitField0_;
-        result.unk3000MNLLCJMPMNH_ = unk3000MNLLCJMPMNH_;
-        result.unk2700DHAHEKOGHBJ_ = unk2700DHAHEKOGHBJ_;
+        result.blendType_ = blendType_;
+        result.customRadius_ = customRadius_;
         result.isSetScreenXy_ = isSetScreenXy_;
         if (lookPosBuilder_ == null) {
           result.lookPos_ = lookPos_;
@@ -1305,14 +1305,14 @@ public final class BeginCameraSceneLookNotifyOuterClass {
           result.lookPos_ = lookPosBuilder_.build();
         }
         result.isRecoverKeepCurrent_ = isRecoverKeepCurrent_;
-        result.unk3000GOPIFPMFEPB_ = unk3000GOPIFPMFEPB_;
-        result.unk2700HIAKNNCKHJB_ = unk2700HIAKNNCKHJB_;
+        result.isAbsFollowPos_ = isAbsFollowPos_;
+        result.keepRotType_ = keepRotType_;
         result.isChangePlayMode_ = isChangePlayMode_;
-        result.unk3000IEFIKMHCKDH_ = unk3000IEFIKMHCKDH_;
+        result.disableProtect_ = disableProtect_;
         result.screenY_ = screenY_;
         result.isSetFollowPos_ = isSetFollowPos_;
         result.isForce_ = isForce_;
-        result.unk3000OGCLMFFADBD_ = unk3000OGCLMFFADBD_;
+        result.blendDuration_ = blendDuration_;
         result.entityId_ = entityId_;
         result.screenX_ = screenX_;
         result.isForceWalk_ = isForceWalk_;
@@ -1376,11 +1376,11 @@ public final class BeginCameraSceneLookNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify other) {
         if (other == emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.getDefaultInstance()) return this;
-        if (other.getUnk3000MNLLCJMPMNH() != 0) {
-          setUnk3000MNLLCJMPMNH(other.getUnk3000MNLLCJMPMNH());
+        if (other.getBlendType() != 0) {
+          setBlendType(other.getBlendType());
         }
-        if (other.getUnk2700DHAHEKOGHBJ() != 0F) {
-          setUnk2700DHAHEKOGHBJ(other.getUnk2700DHAHEKOGHBJ());
+        if (other.getCustomRadius() != 0F) {
+          setCustomRadius(other.getCustomRadius());
         }
         if (other.getIsSetScreenXy() != false) {
           setIsSetScreenXy(other.getIsSetScreenXy());
@@ -1391,17 +1391,17 @@ public final class BeginCameraSceneLookNotifyOuterClass {
         if (other.getIsRecoverKeepCurrent() != false) {
           setIsRecoverKeepCurrent(other.getIsRecoverKeepCurrent());
         }
-        if (other.getUnk3000GOPIFPMFEPB() != false) {
-          setUnk3000GOPIFPMFEPB(other.getUnk3000GOPIFPMFEPB());
+        if (other.getIsAbsFollowPos() != false) {
+          setIsAbsFollowPos(other.getIsAbsFollowPos());
         }
-        if (other.unk2700HIAKNNCKHJB_ != 0) {
-          setUnk2700HIAKNNCKHJBValue(other.getUnk2700HIAKNNCKHJBValue());
+        if (other.keepRotType_ != 0) {
+          setKeepRotTypeValue(other.getKeepRotTypeValue());
         }
         if (other.getIsChangePlayMode() != false) {
           setIsChangePlayMode(other.getIsChangePlayMode());
         }
-        if (other.getUnk3000IEFIKMHCKDH() != 0) {
-          setUnk3000IEFIKMHCKDH(other.getUnk3000IEFIKMHCKDH());
+        if (other.getDisableProtect() != 0) {
+          setDisableProtect(other.getDisableProtect());
         }
         if (other.getScreenY() != 0F) {
           setScreenY(other.getScreenY());
@@ -1412,8 +1412,8 @@ public final class BeginCameraSceneLookNotifyOuterClass {
         if (other.getIsForce() != false) {
           setIsForce(other.getIsForce());
         }
-        if (other.getUnk3000OGCLMFFADBD() != 0F) {
-          setUnk3000OGCLMFFADBD(other.getUnk3000OGCLMFFADBD());
+        if (other.getBlendDuration() != 0F) {
+          setBlendDuration(other.getBlendDuration());
         }
         if (other.getEntityId() != 0) {
           setEntityId(other.getEntityId());
@@ -1473,64 +1473,64 @@ public final class BeginCameraSceneLookNotifyOuterClass {
       }
       private int bitField0_;
 
-      private int unk3000MNLLCJMPMNH_ ;
+      private int blendType_ ;
       /**
-       * <code>uint32 Unk3000_MNLLCJMPMNH = 1154;</code>
-       * @return The unk3000MNLLCJMPMNH.
+       * <code>uint32 blend_type = 1154;</code>
+       * @return The blendType.
        */
       @java.lang.Override
-      public int getUnk3000MNLLCJMPMNH() {
-        return unk3000MNLLCJMPMNH_;
+      public int getBlendType() {
+        return blendType_;
       }
       /**
-       * <code>uint32 Unk3000_MNLLCJMPMNH = 1154;</code>
-       * @param value The unk3000MNLLCJMPMNH to set.
+       * <code>uint32 blend_type = 1154;</code>
+       * @param value The blendType to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3000MNLLCJMPMNH(int value) {
+      public Builder setBlendType(int value) {
         
-        unk3000MNLLCJMPMNH_ = value;
+        blendType_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk3000_MNLLCJMPMNH = 1154;</code>
+       * <code>uint32 blend_type = 1154;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3000MNLLCJMPMNH() {
+      public Builder clearBlendType() {
         
-        unk3000MNLLCJMPMNH_ = 0;
+        blendType_ = 0;
         onChanged();
         return this;
       }
 
-      private float unk2700DHAHEKOGHBJ_ ;
+      private float customRadius_ ;
       /**
-       * <code>float Unk2700_DHAHEKOGHBJ = 7;</code>
-       * @return The unk2700DHAHEKOGHBJ.
+       * <code>float custom_radius = 7;</code>
+       * @return The customRadius.
        */
       @java.lang.Override
-      public float getUnk2700DHAHEKOGHBJ() {
-        return unk2700DHAHEKOGHBJ_;
+      public float getCustomRadius() {
+        return customRadius_;
       }
       /**
-       * <code>float Unk2700_DHAHEKOGHBJ = 7;</code>
-       * @param value The unk2700DHAHEKOGHBJ to set.
+       * <code>float custom_radius = 7;</code>
+       * @param value The customRadius to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700DHAHEKOGHBJ(float value) {
+      public Builder setCustomRadius(float value) {
         
-        unk2700DHAHEKOGHBJ_ = value;
+        customRadius_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float Unk2700_DHAHEKOGHBJ = 7;</code>
+       * <code>float custom_radius = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700DHAHEKOGHBJ() {
+      public Builder clearCustomRadius() {
         
-        unk2700DHAHEKOGHBJ_ = 0F;
+        customRadius_ = 0F;
         onChanged();
         return this;
       }
@@ -1716,87 +1716,87 @@ public final class BeginCameraSceneLookNotifyOuterClass {
         return this;
       }
 
-      private boolean unk3000GOPIFPMFEPB_ ;
+      private boolean isAbsFollowPos_ ;
       /**
-       * <code>bool Unk3000_GOPIFPMFEPB = 1375;</code>
-       * @return The unk3000GOPIFPMFEPB.
+       * <code>bool is_abs_follow_pos = 1375;</code>
+       * @return The isAbsFollowPos.
        */
       @java.lang.Override
-      public boolean getUnk3000GOPIFPMFEPB() {
-        return unk3000GOPIFPMFEPB_;
+      public boolean getIsAbsFollowPos() {
+        return isAbsFollowPos_;
       }
       /**
-       * <code>bool Unk3000_GOPIFPMFEPB = 1375;</code>
-       * @param value The unk3000GOPIFPMFEPB to set.
+       * <code>bool is_abs_follow_pos = 1375;</code>
+       * @param value The isAbsFollowPos to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3000GOPIFPMFEPB(boolean value) {
+      public Builder setIsAbsFollowPos(boolean value) {
         
-        unk3000GOPIFPMFEPB_ = value;
+        isAbsFollowPos_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk3000_GOPIFPMFEPB = 1375;</code>
+       * <code>bool is_abs_follow_pos = 1375;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3000GOPIFPMFEPB() {
+      public Builder clearIsAbsFollowPos() {
         
-        unk3000GOPIFPMFEPB_ = false;
+        isAbsFollowPos_ = false;
         onChanged();
         return this;
       }
 
-      private int unk2700HIAKNNCKHJB_ = 0;
+      private int keepRotType_ = 0;
       /**
-       * <code>.BeginCameraSceneLookNotify.Unk2700_LNCHDDOOECD Unk2700_HIAKNNCKHJB = 6;</code>
-       * @return The enum numeric value on the wire for unk2700HIAKNNCKHJB.
+       * <code>.BeginCameraSceneLookNotify.KeepRotType keep_rot_type = 6;</code>
+       * @return The enum numeric value on the wire for keepRotType.
        */
-      @java.lang.Override public int getUnk2700HIAKNNCKHJBValue() {
-        return unk2700HIAKNNCKHJB_;
+      @java.lang.Override public int getKeepRotTypeValue() {
+        return keepRotType_;
       }
       /**
-       * <code>.BeginCameraSceneLookNotify.Unk2700_LNCHDDOOECD Unk2700_HIAKNNCKHJB = 6;</code>
-       * @param value The enum numeric value on the wire for unk2700HIAKNNCKHJB to set.
+       * <code>.BeginCameraSceneLookNotify.KeepRotType keep_rot_type = 6;</code>
+       * @param value The enum numeric value on the wire for keepRotType to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700HIAKNNCKHJBValue(int value) {
+      public Builder setKeepRotTypeValue(int value) {
         
-        unk2700HIAKNNCKHJB_ = value;
+        keepRotType_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>.BeginCameraSceneLookNotify.Unk2700_LNCHDDOOECD Unk2700_HIAKNNCKHJB = 6;</code>
-       * @return The unk2700HIAKNNCKHJB.
+       * <code>.BeginCameraSceneLookNotify.KeepRotType keep_rot_type = 6;</code>
+       * @return The keepRotType.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.Unk2700_LNCHDDOOECD getUnk2700HIAKNNCKHJB() {
+      public emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.KeepRotType getKeepRotType() {
         @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.Unk2700_LNCHDDOOECD result = emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.Unk2700_LNCHDDOOECD.valueOf(unk2700HIAKNNCKHJB_);
-        return result == null ? emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.Unk2700_LNCHDDOOECD.UNRECOGNIZED : result;
+        emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.KeepRotType result = emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.KeepRotType.valueOf(keepRotType_);
+        return result == null ? emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.KeepRotType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.BeginCameraSceneLookNotify.Unk2700_LNCHDDOOECD Unk2700_HIAKNNCKHJB = 6;</code>
-       * @param value The unk2700HIAKNNCKHJB to set.
+       * <code>.BeginCameraSceneLookNotify.KeepRotType keep_rot_type = 6;</code>
+       * @param value The keepRotType to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700HIAKNNCKHJB(emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.Unk2700_LNCHDDOOECD value) {
+      public Builder setKeepRotType(emu.grasscutter.net.proto.BeginCameraSceneLookNotifyOuterClass.BeginCameraSceneLookNotify.KeepRotType value) {
         if (value == null) {
           throw new NullPointerException();
         }
         
-        unk2700HIAKNNCKHJB_ = value.getNumber();
+        keepRotType_ = value.getNumber();
         onChanged();
         return this;
       }
       /**
-       * <code>.BeginCameraSceneLookNotify.Unk2700_LNCHDDOOECD Unk2700_HIAKNNCKHJB = 6;</code>
+       * <code>.BeginCameraSceneLookNotify.KeepRotType keep_rot_type = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700HIAKNNCKHJB() {
+      public Builder clearKeepRotType() {
         
-        unk2700HIAKNNCKHJB_ = 0;
+        keepRotType_ = 0;
         onChanged();
         return this;
       }
@@ -1832,33 +1832,33 @@ public final class BeginCameraSceneLookNotifyOuterClass {
         return this;
       }
 
-      private int unk3000IEFIKMHCKDH_ ;
+      private int disableProtect_ ;
       /**
-       * <code>uint32 Unk3000_IEFIKMHCKDH = 1103;</code>
-       * @return The unk3000IEFIKMHCKDH.
+       * <code>uint32 disable_protect = 1103;</code>
+       * @return The disableProtect.
        */
       @java.lang.Override
-      public int getUnk3000IEFIKMHCKDH() {
-        return unk3000IEFIKMHCKDH_;
+      public int getDisableProtect() {
+        return disableProtect_;
       }
       /**
-       * <code>uint32 Unk3000_IEFIKMHCKDH = 1103;</code>
-       * @param value The unk3000IEFIKMHCKDH to set.
+       * <code>uint32 disable_protect = 1103;</code>
+       * @param value The disableProtect to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3000IEFIKMHCKDH(int value) {
+      public Builder setDisableProtect(int value) {
         
-        unk3000IEFIKMHCKDH_ = value;
+        disableProtect_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk3000_IEFIKMHCKDH = 1103;</code>
+       * <code>uint32 disable_protect = 1103;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3000IEFIKMHCKDH() {
+      public Builder clearDisableProtect() {
         
-        unk3000IEFIKMHCKDH_ = 0;
+        disableProtect_ = 0;
         onChanged();
         return this;
       }
@@ -1956,33 +1956,33 @@ public final class BeginCameraSceneLookNotifyOuterClass {
         return this;
       }
 
-      private float unk3000OGCLMFFADBD_ ;
+      private float blendDuration_ ;
       /**
-       * <code>float Unk3000_OGCLMFFADBD = 1758;</code>
-       * @return The unk3000OGCLMFFADBD.
+       * <code>float blend_duration = 1758;</code>
+       * @return The blendDuration.
        */
       @java.lang.Override
-      public float getUnk3000OGCLMFFADBD() {
-        return unk3000OGCLMFFADBD_;
+      public float getBlendDuration() {
+        return blendDuration_;
       }
       /**
-       * <code>float Unk3000_OGCLMFFADBD = 1758;</code>
-       * @param value The unk3000OGCLMFFADBD to set.
+       * <code>float blend_duration = 1758;</code>
+       * @param value The blendDuration to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3000OGCLMFFADBD(float value) {
+      public Builder setBlendDuration(float value) {
         
-        unk3000OGCLMFFADBD_ = value;
+        blendDuration_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float Unk3000_OGCLMFFADBD = 1758;</code>
+       * <code>float blend_duration = 1758;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3000OGCLMFFADBD() {
+      public Builder clearBlendDuration() {
         
-        unk3000OGCLMFFADBD_ = 0F;
+        blendDuration_ = 0F;
         onChanged();
         return this;
       }
@@ -2438,25 +2438,23 @@ public final class BeginCameraSceneLookNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n BeginCameraSceneLookNotify.proto\032\014Vect" +
-      "or.proto\"\274\005\n\032BeginCameraSceneLookNotify\022" +
-      "\034\n\023Unk3000_MNLLCJMPMNH\030\202\t \001(\r\022\033\n\023Unk2700" +
-      "_DHAHEKOGHBJ\030\007 \001(\002\022\030\n\020is_set_screen_xy\030\005" +
-      " \001(\010\022\031\n\010look_pos\030\004 \001(\0132\007.Vector\022\037\n\027is_re" +
-      "cover_keep_current\030\013 \001(\010\022\034\n\023Unk3000_GOPI" +
-      "FPMFEPB\030\337\n \001(\010\022L\n\023Unk2700_HIAKNNCKHJB\030\006 " +
-      "\001(\0162/.BeginCameraSceneLookNotify.Unk2700" +
-      "_LNCHDDOOECD\022\033\n\023is_change_play_mode\030\t \001(" +
-      "\010\022\034\n\023Unk3000_IEFIKMHCKDH\030\317\010 \001(\r\022\020\n\010scree" +
-      "n_y\030\017 \001(\002\022\031\n\021is_set_follow_pos\030\r \001(\010\022\020\n\010" +
-      "is_force\030\014 \001(\010\022\034\n\023Unk3000_OGCLMFFADBD\030\336\r" +
+      "or.proto\"\335\004\n\032BeginCameraSceneLookNotify\022" +
+      "\023\n\nblend_type\030\202\t \001(\r\022\025\n\rcustom_radius\030\007 " +
+      "\001(\002\022\030\n\020is_set_screen_xy\030\005 \001(\010\022\031\n\010look_po" +
+      "s\030\004 \001(\0132\007.Vector\022\037\n\027is_recover_keep_curr" +
+      "ent\030\013 \001(\010\022\032\n\021is_abs_follow_pos\030\337\n \001(\010\022>\n" +
+      "\rkeep_rot_type\030\006 \001(\0162\'.BeginCameraSceneL" +
+      "ookNotify.KeepRotType\022\033\n\023is_change_play_" +
+      "mode\030\t \001(\010\022\030\n\017disable_protect\030\317\010 \001(\r\022\020\n\010" +
+      "screen_y\030\017 \001(\002\022\031\n\021is_set_follow_pos\030\r \001(" +
+      "\010\022\020\n\010is_force\030\014 \001(\010\022\027\n\016blend_duration\030\336\r" +
       " \001(\002\022\022\n\tentity_id\030\257\n \001(\r\022\020\n\010screen_x\030\003 \001" +
       "(\002\022\025\n\ris_force_walk\030\n \001(\010\022\024\n\014other_param" +
       "s\030\001 \003(\t\022\033\n\nfollow_pos\030\010 \001(\0132\007.Vector\022\026\n\016" +
-      "is_allow_input\030\002 \001(\010\022\020\n\010duration\030\016 \001(\002\"o" +
-      "\n\023Unk2700_LNCHDDOOECD\022+\n\'Unk2700_LNCHDDO" +
-      "OECD_Unk2700_ACOENBMDFBP\020\000\022+\n\'Unk2700_LN" +
-      "CHDDOOECD_Unk2700_FKBLCDFLCOM\020\001B\033\n\031emu.g" +
-      "rasscutter.net.protob\006proto3"
+      "is_allow_input\030\002 \001(\010\022\020\n\010duration\030\016 \001(\002\"8" +
+      "\n\013KeepRotType\022\023\n\017KEEP_ROT_TYPE_X\020\000\022\024\n\020KE" +
+      "EP_ROT_TYPE_XY\020\001B\033\n\031emu.grasscutter.net." +
+      "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -2468,7 +2466,7 @@ public final class BeginCameraSceneLookNotifyOuterClass {
     internal_static_BeginCameraSceneLookNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BeginCameraSceneLookNotify_descriptor,
-        new java.lang.String[] { "Unk3000MNLLCJMPMNH", "Unk2700DHAHEKOGHBJ", "IsSetScreenXy", "LookPos", "IsRecoverKeepCurrent", "Unk3000GOPIFPMFEPB", "Unk2700HIAKNNCKHJB", "IsChangePlayMode", "Unk3000IEFIKMHCKDH", "ScreenY", "IsSetFollowPos", "IsForce", "Unk3000OGCLMFFADBD", "EntityId", "ScreenX", "IsForceWalk", "OtherParams", "FollowPos", "IsAllowInput", "Duration", });
+        new java.lang.String[] { "BlendType", "CustomRadius", "IsSetScreenXy", "LookPos", "IsRecoverKeepCurrent", "IsAbsFollowPos", "KeepRotType", "IsChangePlayMode", "DisableProtect", "ScreenY", "IsSetFollowPos", "IsForce", "BlendDuration", "EntityId", "ScreenX", "IsForceWalk", "OtherParams", "FollowPos", "IsAllowInput", "Duration", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

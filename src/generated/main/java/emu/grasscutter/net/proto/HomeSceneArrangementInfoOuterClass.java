@@ -133,10 +133,10 @@ public final class HomeSceneArrangementInfoOuterClass {
     int getSceneId();
 
     /**
-     * <code>uint32 Unk2700_BJHAMKKECEI = 12;</code>
-     * @return The unk2700BJHAMKKECEI.
+     * <code>uint32 bgm_id = 12;</code>
+     * @return The bgmId.
      */
-    int getUnk2700BJHAMKKECEI();
+    int getBgmId();
 
     /**
      * <code>.Vector djinn_pos = 9;</code>
@@ -308,7 +308,7 @@ public final class HomeSceneArrangementInfoOuterClass {
             }
             case 96: {
 
-              unk2700BJHAMKKECEI_ = input.readUInt32();
+              bgmId_ = input.readUInt32();
               break;
             }
             case 106: {
@@ -568,15 +568,15 @@ public final class HomeSceneArrangementInfoOuterClass {
       return sceneId_;
     }
 
-    public static final int UNK2700_BJHAMKKECEI_FIELD_NUMBER = 12;
-    private int unk2700BJHAMKKECEI_;
+    public static final int BGM_ID_FIELD_NUMBER = 12;
+    private int bgmId_;
     /**
-     * <code>uint32 Unk2700_BJHAMKKECEI = 12;</code>
-     * @return The unk2700BJHAMKKECEI.
+     * <code>uint32 bgm_id = 12;</code>
+     * @return The bgmId.
      */
     @java.lang.Override
-    public int getUnk2700BJHAMKKECEI() {
-      return unk2700BJHAMKKECEI_;
+    public int getBgmId() {
+      return bgmId_;
     }
 
     public static final int DJINN_POS_FIELD_NUMBER = 9;
@@ -694,8 +694,8 @@ public final class HomeSceneArrangementInfoOuterClass {
       for (int i = 0; i < stairList_.size(); i++) {
         output.writeMessage(11, stairList_.get(i));
       }
-      if (unk2700BJHAMKKECEI_ != 0) {
-        output.writeUInt32(12, unk2700BJHAMKKECEI_);
+      if (bgmId_ != 0) {
+        output.writeUInt32(12, bgmId_);
       }
       for (int i = 0; i < doorList_.size(); i++) {
         output.writeMessage(13, doorList_.get(i));
@@ -748,9 +748,9 @@ public final class HomeSceneArrangementInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(11, stairList_.get(i));
       }
-      if (unk2700BJHAMKKECEI_ != 0) {
+      if (bgmId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, unk2700BJHAMKKECEI_);
+          .computeUInt32Size(12, bgmId_);
       }
       for (int i = 0; i < doorList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -795,8 +795,8 @@ public final class HomeSceneArrangementInfoOuterClass {
           .equals(other.getBlockArrangementInfoListList())) return false;
       if (getSceneId()
           != other.getSceneId()) return false;
-      if (getUnk2700BJHAMKKECEI()
-          != other.getUnk2700BJHAMKKECEI()) return false;
+      if (getBgmId()
+          != other.getBgmId()) return false;
       if (hasDjinnPos() != other.hasDjinnPos()) return false;
       if (hasDjinnPos()) {
         if (!getDjinnPos()
@@ -847,8 +847,8 @@ public final class HomeSceneArrangementInfoOuterClass {
       }
       hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getSceneId();
-      hash = (37 * hash) + UNK2700_BJHAMKKECEI_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk2700BJHAMKKECEI();
+      hash = (37 * hash) + BGM_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getBgmId();
       if (hasDjinnPos()) {
         hash = (37 * hash) + DJINN_POS_FIELD_NUMBER;
         hash = (53 * hash) + getDjinnPos().hashCode();
@@ -1031,7 +1031,7 @@ public final class HomeSceneArrangementInfoOuterClass {
         }
         sceneId_ = 0;
 
-        unk2700BJHAMKKECEI_ = 0;
+        bgmId_ = 0;
 
         if (djinnPosBuilder_ == null) {
           djinnPos_ = null;
@@ -1115,7 +1115,7 @@ public final class HomeSceneArrangementInfoOuterClass {
           result.blockArrangementInfoList_ = blockArrangementInfoListBuilder_.build();
         }
         result.sceneId_ = sceneId_;
-        result.unk2700BJHAMKKECEI_ = unk2700BJHAMKKECEI_;
+        result.bgmId_ = bgmId_;
         if (djinnPosBuilder_ == null) {
           result.djinnPos_ = djinnPos_;
         } else {
@@ -1266,8 +1266,8 @@ public final class HomeSceneArrangementInfoOuterClass {
         if (other.getSceneId() != 0) {
           setSceneId(other.getSceneId());
         }
-        if (other.getUnk2700BJHAMKKECEI() != 0) {
-          setUnk2700BJHAMKKECEI(other.getUnk2700BJHAMKKECEI());
+        if (other.getBgmId() != 0) {
+          setBgmId(other.getBgmId());
         }
         if (other.hasDjinnPos()) {
           mergeDjinnPos(other.getDjinnPos());
@@ -2331,33 +2331,33 @@ public final class HomeSceneArrangementInfoOuterClass {
         return this;
       }
 
-      private int unk2700BJHAMKKECEI_ ;
+      private int bgmId_ ;
       /**
-       * <code>uint32 Unk2700_BJHAMKKECEI = 12;</code>
-       * @return The unk2700BJHAMKKECEI.
+       * <code>uint32 bgm_id = 12;</code>
+       * @return The bgmId.
        */
       @java.lang.Override
-      public int getUnk2700BJHAMKKECEI() {
-        return unk2700BJHAMKKECEI_;
+      public int getBgmId() {
+        return bgmId_;
       }
       /**
-       * <code>uint32 Unk2700_BJHAMKKECEI = 12;</code>
-       * @param value The unk2700BJHAMKKECEI to set.
+       * <code>uint32 bgm_id = 12;</code>
+       * @param value The bgmId to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk2700BJHAMKKECEI(int value) {
+      public Builder setBgmId(int value) {
         
-        unk2700BJHAMKKECEI_ = value;
+        bgmId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk2700_BJHAMKKECEI = 12;</code>
+       * <code>uint32 bgm_id = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk2700BJHAMKKECEI() {
+      public Builder clearBgmId() {
         
-        unk2700BJHAMKKECEI_ = 0;
+        bgmId_ = 0;
         onChanged();
         return this;
       }
@@ -2730,18 +2730,18 @@ public final class HomeSceneArrangementInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\036HomeSceneArrangementInfo.proto\032\036HomeBl" +
       "ockArrangementInfo.proto\032\027HomeFurnitureD" +
-      "ata.proto\032\014Vector.proto\"\227\003\n\030HomeSceneArr" +
+      "ata.proto\032\014Vector.proto\"\212\003\n\030HomeSceneArr" +
       "angementInfo\022\031\n\010born_rot\030\004 \001(\0132\007.Vector\022" +
       "\031\n\010born_pos\030\001 \001(\0132\007.Vector\022&\n\nstair_list" +
       "\030\013 \003(\0132\022.HomeFurnitureData\022%\n\tdoor_list\030" +
       "\r \003(\0132\022.HomeFurnitureData\022\027\n\017is_set_born" +
       "_pos\030\n \001(\010\022>\n\033block_arrangement_info_lis" +
       "t\030\010 \003(\0132\031.HomeBlockArrangementInfo\022\020\n\010sc" +
-      "ene_id\030\002 \001(\r\022\033\n\023Unk2700_BJHAMKKECEI\030\014 \001(" +
-      "\r\022\032\n\tdjinn_pos\030\t \001(\0132\007.Vector\022&\n\nmain_ho" +
-      "use\030\016 \001(\0132\022.HomeFurnitureData\022\025\n\rcomfort" +
-      "_value\030\007 \001(\r\022\023\n\013tmp_version\030\005 \001(\rB\033\n\031emu" +
-      ".grasscutter.net.protob\006proto3"
+      "ene_id\030\002 \001(\r\022\016\n\006bgm_id\030\014 \001(\r\022\032\n\tdjinn_po" +
+      "s\030\t \001(\0132\007.Vector\022&\n\nmain_house\030\016 \001(\0132\022.H" +
+      "omeFurnitureData\022\025\n\rcomfort_value\030\007 \001(\r\022" +
+      "\023\n\013tmp_version\030\005 \001(\rB\033\n\031emu.grasscutter." +
+      "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -2755,7 +2755,7 @@ public final class HomeSceneArrangementInfoOuterClass {
     internal_static_HomeSceneArrangementInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeSceneArrangementInfo_descriptor,
-        new java.lang.String[] { "BornRot", "BornPos", "StairList", "DoorList", "IsSetBornPos", "BlockArrangementInfoList", "SceneId", "Unk2700BJHAMKKECEI", "DjinnPos", "MainHouse", "ComfortValue", "TmpVersion", });
+        new java.lang.String[] { "BornRot", "BornPos", "StairList", "DoorList", "IsSetBornPos", "BlockArrangementInfoList", "SceneId", "BgmId", "DjinnPos", "MainHouse", "ComfortValue", "TmpVersion", });
     emu.grasscutter.net.proto.HomeBlockArrangementInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.HomeFurnitureDataOuterClass.getDescriptor();
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();

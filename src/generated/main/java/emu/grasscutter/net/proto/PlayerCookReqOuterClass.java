@@ -46,7 +46,7 @@ public final class PlayerCookReqOuterClass {
    * <pre>
    * CmdId: 194
    * EnetChannelId: 0
-   * EnetIsReliable: false
+   * EnetIsReliable: true
    * IsAllowClient: true
    * </pre>
    *
@@ -382,7 +382,7 @@ public final class PlayerCookReqOuterClass {
      * <pre>
      * CmdId: 194
      * EnetChannelId: 0
-     * EnetIsReliable: false
+     * EnetIsReliable: true
      * IsAllowClient: true
      * </pre>
      *
