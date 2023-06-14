@@ -6,15 +6,18 @@ import dev.morphia.annotations.Indexed;
 import dev.morphia.annotations.Transient;
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.data.GameData;
+import emu.grasscutter.data.binout.ScriptSceneData;
 import emu.grasscutter.data.common.quest.MainQuestData;
 import emu.grasscutter.data.common.quest.MainQuestData.TalkData;
-import emu.grasscutter.data.binout.ScriptSceneData;
 import emu.grasscutter.data.common.quest.SubQuestData;
 import emu.grasscutter.data.excels.RewardData;
 import emu.grasscutter.database.DatabaseHelper;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.props.ActionReason;
-import emu.grasscutter.game.quest.enums.*;
+import emu.grasscutter.game.quest.enums.LogicType;
+import emu.grasscutter.game.quest.enums.ParentQuestState;
+import emu.grasscutter.game.quest.enums.QuestContent;
+import emu.grasscutter.game.quest.enums.QuestState;
 import emu.grasscutter.game.world.World;
 import emu.grasscutter.net.proto.ChildQuestOuterClass.ChildQuest;
 import emu.grasscutter.net.proto.ParentQuestOuterClass.ParentQuest;
@@ -27,9 +30,6 @@ import lombok.val;
 import org.bson.types.ObjectId;
 
 import java.util.*;
-import javax.script.Bindings;
-import javax.script.CompiledScript;
-import javax.script.ScriptException;
 
 
 @Entity(value = "quests", useDiscriminator = false)
@@ -316,7 +316,7 @@ public class GameMainQuest {
         try {
             List<GameQuest> subQuestsWithCond = getChildQuests().values().stream()
                 .filter(p -> p.getState() == QuestState.QUEST_STATE_UNFINISHED)
-                .filter(p -> p.getQuestData().getFailCond().stream().anyMatch(q -> q.getType() == condType))
+                .filter(p -> Optional.ofNullable(p.getQuestData().getFailCond()).orElse(Collections.emptyList()).stream().anyMatch(q -> q.getType() == condType))
                 .toList();
 
             for (GameQuest subQuestWithCond : subQuestsWithCond) {

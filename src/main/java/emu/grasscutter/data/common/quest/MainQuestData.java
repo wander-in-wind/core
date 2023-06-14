@@ -6,6 +6,8 @@ import emu.grasscutter.game.quest.enums.PlayMode;
 import emu.grasscutter.game.quest.enums.QuestShowType;
 import emu.grasscutter.game.quest.enums.QuestType;
 import lombok.Data;
+
+import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
@@ -35,7 +37,7 @@ public class MainQuestData {
     private int[] rewardIdList;
 
     private SubQuestData[] subQuests;
-    private List<TalkData> talks;
+    private List<TalkData> talks = Collections.emptyList();
     private long[] preloadLuaList;
 
     private long titleTextMapHash;

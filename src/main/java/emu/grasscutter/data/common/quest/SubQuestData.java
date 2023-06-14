@@ -9,6 +9,7 @@ import lombok.val;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
+import java.util.Collections;
 import java.util.List;
 
 @Data
@@ -31,26 +32,26 @@ public class SubQuestData {
     private LogicType finishCondComb;
     private LogicType failCondComb;
 
-    private List<QuestAcceptCondition> acceptCond;
-    private List<QuestContentCondition> finishCond;
-    private List<QuestContentCondition> failCond;
+    private List<QuestAcceptCondition> acceptCond = Collections.emptyList();
+    private List<QuestContentCondition> finishCond = Collections.emptyList();
+    private List<QuestContentCondition> failCond = Collections.emptyList();
 
-    private List<QuestExecParam> beginExec;
-    private List<QuestExecParam> finishExec;
-    private List<QuestExecParam> failExec;
+    private List<QuestExecParam> beginExec = Collections.emptyList();
+    private List<QuestExecParam> finishExec = Collections.emptyList();
+    private List<QuestExecParam> failExec = Collections.emptyList();
     private Guide guide;
     private ShowQuestGuideType showGuide;
-    private List<Integer> trialAvatarList;
-    private List<Integer> exclusiveNpcList;
+    private List<Integer> trialAvatarList = Collections.emptyList();
+    private List<Integer> exclusiveNpcList = Collections.emptyList();
     private int exclusiveNpcPriority;
-    private List<Integer> sharedNpcList;
-    private List<Integer> exclusivePlaceList;
+    private List<Integer> sharedNpcList = Collections.emptyList();
+    private List<Integer> exclusivePlaceList = Collections.emptyList();
     private String loadAbilityGroup;
     private String loadTeamAbilityGroup;
     private int[] coopPointIdList;
     private boolean refreshNonCoopOnly;
 
-    private List<GainItem> gainItems;
+    private List<GainItem> gainItems = Collections.emptyList();
 
     private long descTextMapHash;
     private long stepDescTextMapHash;
