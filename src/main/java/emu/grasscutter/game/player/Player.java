@@ -203,6 +203,7 @@ public class Player {
     @Getter @Setter private long springLastUsed;
     private HashMap<String, MapMark> mapMarks;  // Getter makes an empty hashmap - maybe do this elsewhere?
     @Getter @Setter private int nextResinRefresh;
+    @Getter @Setter private int resinBuyCount;
     @Getter @Setter private int lastDailyReset;
     @Getter private transient MpSettingType mpSetting = MpSettingType.MP_SETTING_TYPE_ENTER_AFTER_APPLY;  // TODO
     @Getter private long playerGameTime = 540;
@@ -1271,6 +1272,8 @@ public class Player {
         if (currentDate.getDayOfWeek() == DayOfWeek.MONDAY) {
             this.getBattlePassManager().resetWeeklyMissions();
         }
+        // Reset resin-buying count.
+        this.setResinBuyCount(0);
 
         // Done. Update last reset time.
         this.setLastDailyReset(currentTime);
