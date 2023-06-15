@@ -33,8 +33,8 @@ public class SceneGadget extends SceneObject{
     public boolean is_use_point_array  = false;
     public boolean persistent = false;
     public int mark_flag;
-    public Explore explore;
     public int trigger_count;
+    public Explore explore;
 
     public void setIsOneoff(boolean isOneoff) {
         this.isOneoff = isOneoff;

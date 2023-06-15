@@ -1,10 +1,8 @@
 package emu.grasscutter.scripts.data;
 
-import lombok.Setter;
-import lombok.ToString;
+import lombok.Data;
 
-@ToString
-@Setter
+@Data
 public class Explore {
     public String name;
     public int exp;

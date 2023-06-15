@@ -1340,6 +1340,8 @@ public class Player {
         if (currentDate.getDayOfWeek() == DayOfWeek.MONDAY) {
             this.getBattlePassManager().resetWeeklyMissions();
         }
+        // Reset resin-buying count.
+        this.setResinBuyCount(0);
 
         // Reset resin-buying count.
         this.setResinBuyCount(0);

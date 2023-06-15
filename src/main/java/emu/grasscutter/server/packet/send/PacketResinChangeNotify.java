@@ -5,6 +5,7 @@ import emu.grasscutter.game.props.PlayerProperty;
 import emu.grasscutter.net.packet.BasePacket;
 import emu.grasscutter.net.packet.PacketOpcodes;
 import emu.grasscutter.net.proto.ResinChangeNotifyOuterClass.ResinChangeNotify;
+import lombok.val;
 
 public class PacketResinChangeNotify extends BasePacket {
 

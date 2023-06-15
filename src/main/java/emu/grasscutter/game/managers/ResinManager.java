@@ -1,5 +1,7 @@
 package emu.grasscutter.game.managers;
 
+import static emu.grasscutter.config.Configuration.GAME_OPTIONS;
+
 import emu.grasscutter.game.inventory.GameItem;
 import emu.grasscutter.game.player.BasePlayerManager;
 import emu.grasscutter.game.player.Player;
@@ -8,12 +10,16 @@ import emu.grasscutter.game.props.PlayerProperty;
 import emu.grasscutter.game.props.WatcherTriggerType;
 import emu.grasscutter.net.proto.RetcodeOuterClass;
 import emu.grasscutter.server.packet.send.PacketItemAddHintNotify;
+import emu.grasscutter.net.proto.RetcodeOuterClass.Retcode;
+import emu.grasscutter.server.packet.send.PacketItemAddHintNotify;
+import emu.grasscutter.server.packet.send.PacketPlayerPropNotify;
 import emu.grasscutter.server.packet.send.PacketResinChangeNotify;
 import emu.grasscutter.utils.Utils;
 
 import static emu.grasscutter.config.Configuration.GAME_OPTIONS;
 
 public class ResinManager extends BasePlayerManager {
+    // todo check if there is a Excel file for this data
     public static final int MAX_RESIN_BUYING_COUNT = 6;
     public static final int AMOUNT_TO_ADD = 60;
     public static final int[] HCOIN_NUM_TO_BUY_RESIN = new int[]{50, 100, 100, 150, 200, 200};
@@ -155,12 +161,12 @@ public class ResinManager extends BasePlayerManager {
 
     public int buy() {
         if (this.player.getResinBuyCount() >= MAX_RESIN_BUYING_COUNT) {
-            return RetcodeOuterClass.Retcode.RET_RESIN_BOUGHT_COUNT_EXCEEDED_VALUE;
+            return Retcode.RET_RESIN_BOUGHT_COUNT_EXCEEDED_VALUE;
         }
 
         var res = this.player.getInventory().payItem(201, HCOIN_NUM_TO_BUY_RESIN[this.player.getResinBuyCount()]);
         if (!res) {
-            return RetcodeOuterClass.Retcode.RET_HCOIN_NOT_ENOUGH_VALUE;
+            return Retcode.RET_HCOIN_NOT_ENOUGH_VALUE;
         }
 
         this.player.setResinBuyCount(this.player.getResinBuyCount() + 1);

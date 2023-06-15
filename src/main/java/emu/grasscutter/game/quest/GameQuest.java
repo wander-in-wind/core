@@ -170,7 +170,12 @@ public class GameQuest {
         return true;
     }
 
+
     public void finish() {
+        finish(false);
+    }
+
+    public void finish(boolean isManualFinish) {
         this.state = QuestState.QUEST_STATE_FINISHED;
         this.finishTime = Utils.getCurrentSeconds();
 
@@ -178,7 +183,7 @@ public class GameQuest {
 
         if (getQuestData().isFinishParent()) {
             // This quest finishes the questline - the main quest will also save the quest to db, so we don't have to call save() here
-            getMainQuest().finish();
+            getMainQuest().finish(isManualFinish);
         }
 
         getQuestData().getFinishExec().forEach(e -> getOwner().getServer().getQuestSystem().triggerExec(this, e, e.getParam()));

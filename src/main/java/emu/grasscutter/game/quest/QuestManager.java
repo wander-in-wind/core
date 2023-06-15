@@ -284,6 +284,24 @@ public class QuestManager extends BasePlayerManager {
         return quest;
     }
 
+    public boolean finishQuest(int questId, boolean isManual) {
+        val quest = getQuestById(questId);
+        if (quest == null || quest.getState() == QuestState.QUEST_STATE_FINISHED) {
+            return false;
+        }
+        quest.finish(isManual);
+        return true;
+    }
+
+    public boolean finishMainQuest(int questId, boolean isManual) {
+        val quest = getMainQuestById(questId);
+        if (quest == null || quest.getState() == ParentQuestState.PARENT_QUEST_STATE_FINISHED) {
+            return false;
+        }
+        quest.finish(isManual);
+        return true;
+    }
+
     public boolean startMainQuest(int mainQuestId) {
         var mainQuestData = GameData.getMainQuestDataMap().get(mainQuestId);
 
