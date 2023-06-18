@@ -1,18 +1,6 @@
 package emu.grasscutter.game.avatar;
 
 import dev.morphia.annotations.*;
-import static emu.grasscutter.config.Configuration.GAME_OPTIONS;
-
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
-import java.util.stream.Stream;
-import java.util.Set;
-
-import org.bson.types.ObjectId;
-
 import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.binout.OpenConfigEntry;
 import emu.grasscutter.data.binout.OpenConfigEntry.SkillPointModifier;
@@ -26,7 +14,11 @@ import emu.grasscutter.game.inventory.EquipType;
 import emu.grasscutter.game.inventory.GameItem;
 import emu.grasscutter.game.inventory.ItemType;
 import emu.grasscutter.game.player.Player;
-import emu.grasscutter.game.props.*;
+import emu.grasscutter.game.props.ElementType;
+import emu.grasscutter.game.props.EntityIdType;
+import emu.grasscutter.game.props.FetterState;
+import emu.grasscutter.game.props.FightProperty;
+import emu.grasscutter.game.props.PlayerProperty;
 import emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo;
 import emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo;
 import emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo;
@@ -34,17 +26,23 @@ import emu.grasscutter.net.proto.FetterDataOuterClass.FetterData;
 import emu.grasscutter.net.proto.ShowAvatarInfoOuterClass;
 import emu.grasscutter.net.proto.ShowAvatarInfoOuterClass.ShowAvatarInfo;
 import emu.grasscutter.net.proto.ShowEquipOuterClass.ShowEquip;
-import emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo;
 import emu.grasscutter.net.proto.TrialAvatarGrantRecordOuterClass.TrialAvatarGrantRecord;
 import emu.grasscutter.net.proto.TrialAvatarGrantRecordOuterClass.TrialAvatarGrantRecord.GrantReason;
+import emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo;
 import emu.grasscutter.server.packet.send.*;
 import emu.grasscutter.utils.ProtoHelper;
 import it.unimi.dsi.fastutil.ints.*;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.val;
+import org.bson.types.ObjectId;
 
 import javax.annotation.Nonnull;
+import java.util.*;
+import java.util.stream.Stream;
+
+import static emu.grasscutter.config.Configuration.GAME_OPTIONS;
 
 @Entity(value = "avatars", useDiscriminator = false)
 public class Avatar {
@@ -96,7 +94,7 @@ public class Avatar {
     @Getter @Setter private int fromParentQuestId = 0;
     // so far no outer class or prop value has information of this, but from packet i sniff
     // 1 = normal, 2 = trial avatar
-    @Getter @Setter private int avatarType = 1;
+    @Transient @Getter @Setter private AvatarType avatarType = AvatarType.NORMAL;
 
     @Deprecated // Do not use. Morhpia only!
     public Avatar() {
@@ -883,23 +881,23 @@ public class Avatar {
         }
 
         AvatarInfo.Builder avatarInfo = AvatarInfo.newBuilder()
-                .setAvatarId(this.getAvatarId())
-                .setGuid(this.getGuid())
-                .setLifeState(1)
-                .addAllTalentIdList(this.getTalentIdList())
-                .putAllFightPropMap(this.getFightProperties())
-                .setSkillDepotId(this.getSkillDepotId())
-                .setCoreProudSkillLevel(this.getCoreProudSkillLevel())
-                .putAllSkillLevelMap(this.getSkillLevelMap())
-                .addAllInherentProudSkillList(this.getProudSkillList())
-                .putAllProudSkillExtraLevelMap(getProudSkillBonusMap())
-                .setAvatarType(this.getAvatarType())
+            .setAvatarId(this.getAvatarId())
+            .setGuid(this.getGuid())
+            .setLifeState(1)
+            .addAllTalentIdList(this.getTalentIdList())
+            .putAllFightPropMap(this.getFightProperties())
+            .setSkillDepotId(this.getSkillDepotId())
+            .setCoreProudSkillLevel(this.getCoreProudSkillLevel())
+            .putAllSkillLevelMap(this.getSkillLevelMap())
+            .addAllInherentProudSkillList(this.getProudSkillList())
+            .putAllProudSkillExtraLevelMap(getProudSkillBonusMap())
+            .setAvatarType(this.getAvatarType().getNumber())
                 .setBornTime(this.getBornTime())
                 .setWearingFlycloakId(this.getFlyCloak())
                 .setCostumeId(this.getCostume())
                 .setIsFocus(false);
 
-        if (this.getAvatarType() == 1){
+        if (this.getAvatarType() == AvatarType.NORMAL) {
             avatarInfo.setFetterInfo(avatarFetter);
             if (this.getPlayer().getNameCardList().contains(this.getNameCardId())) {
                 avatarFetter.addRewardedFetterLevelList(10);
@@ -967,7 +965,7 @@ public class Avatar {
         this.setTrialAvatarId(trialAvatarId);
         this.setGrantReason(grantReason.getNumber());
         this.setFromParentQuestId(fromParentQuestId);
-        this.setAvatarType(2);
+        this.setAvatarType(AvatarType.TRIAL);
         this.setTrialSkillLevel();
         this.setTrialItems();
     }
@@ -1092,5 +1090,14 @@ public class Avatar {
     @PrePersist
     private void prePersist() {
         this.currentHp = this.getFightProperty(FightProperty.FIGHT_PROP_CUR_HP);
+    }
+
+    @AllArgsConstructor
+    @Getter
+    enum AvatarType {
+        NORMAL(1),
+        TRIAL(2);
+
+        final int number;
     }
 }
