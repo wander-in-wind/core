@@ -20,20 +20,19 @@ public class EntityControllerScriptManager {
         cacheGadgetControllers();
     }
 
-    private static void cacheGadgetControllers() {
-        try (var stream = Files.newDirectoryStream(getScriptPath("Gadget/"), "*.lua")) {
+    private static void cacheGadgetControllers(){
+        try (val stream = Files.newDirectoryStream(getScriptPath("Gadget/"), "*.lua")) {
             stream.forEach(path -> {
                 val fileName = path.getFileName().toString();
                 if (!fileName.endsWith(".lua")) return;
 
-                val controllerName = fileName.substring(0, fileName.length() - 4);
-                var cs = ScriptLoader.getScript("Gadget/" + fileName);
-                var bindings = ScriptLoader.getEngine().createBindings();
+                val controllerName = fileName.substring(0, fileName.length()-4);
+                val cs = ScriptLoader.getScript("Gadget/"+fileName);
                 if (cs == null) return;
 
                 try {
-                    cs.eval(bindings);
-                    gadgetController.put(controllerName, new EntityController(cs, bindings));
+                    cs.evaluate();
+                    gadgetController.put(controllerName, new EntityController(cs));
                 } catch (Throwable e) {
                     Grasscutter.getLogger()
                         .error("Error while loading gadget controller: {}.", fileName);

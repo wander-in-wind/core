@@ -14,6 +14,7 @@ import emu.grasscutter.database.DatabaseHelper;
 import emu.grasscutter.game.player.BasePlayerManager;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.quest.enums.*;
+import emu.grasscutter.game.world.World;
 import emu.grasscutter.server.packet.send.*;
 import emu.grasscutter.utils.Position;
 import io.netty.util.concurrent.FastThreadLocalThread;
@@ -123,20 +124,22 @@ public class QuestManager extends BasePlayerManager {
         player.getActivityManager().triggerActivityConditions();
     }
 
-    public void onTick() {
-        var world = this.getPlayer().getWorld();
-        if (world == null) return;
+    public void onTick(){
+        val world = player.getWorld();
+        if(world == null){
+            return;
+        }
+        checkTimeVars(world);
 
-        checkTimeVars();
         // trigger game time tick for quests
         queueEvent(QuestContent.QUEST_CONTENT_GAME_TIME_TICK,
             world.getGameTimeHours() , // hours
             0);
     }
 
-    private void checkTimeVars() {
-        val currentDays = player.getWorld().getTotalGameTimeDays();
-        val currentHours = player.getWorld().getTotalGameTimeHours();
+    private void checkTimeVars(@Nonnull World world) {
+        val currentDays = world.getTotalGameTimeDays();
+        val currentHours = world.getTotalGameTimeHours();
         boolean checkDays =  currentDays != lastDayCheck;
         boolean checkHours = currentHours != lastHourCheck;
 

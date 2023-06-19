@@ -5,6 +5,7 @@ import emu.grasscutter.scripts.ScriptLoader;
 import emu.grasscutter.utils.Position;
 import lombok.Setter;
 import lombok.ToString;
+import lombok.val;
 
 import javax.script.Bindings;
 import javax.script.CompiledScript;
@@ -37,14 +38,14 @@ public class SceneBlock {
                pos.getZ() <= (this.max.getZ() + range) && pos.getZ() >= (this.min.getZ() - range);
     }
 
-    public SceneBlock load(int sceneId, Bindings bindings) {
+    public SceneBlock load(int sceneId) {
         if (this.loaded) {
             return this;
         }
         this.sceneId = sceneId;
         this.setLoaded(true);
 
-        CompiledScript cs = ScriptLoader.getScript("Scene/" + sceneId + "/scene" + sceneId + "_block" + this.id + ".lua");
+        val cs = ScriptLoader.getScript("Scene/" + sceneId + "/scene" + sceneId + "_block" + this.id + ".lua");
 
         if (cs == null) {
             return null;
@@ -52,10 +53,10 @@ public class SceneBlock {
 
         // Eval script
         try {
-            cs.eval(bindings);
+            cs.evaluate();
 
             // Set groups
-            this.groups = ScriptLoader.getSerializer().toList(SceneGroup.class, bindings.get("groups")).stream()
+            this.groups = cs.getGlobalVariableList("groups", SceneGroup.class).stream()
                 .collect(Collectors.toMap(x -> x.id, y -> y, (a, b) -> a));
 
             this.groups.values().forEach(g -> g.block_id = this.id);

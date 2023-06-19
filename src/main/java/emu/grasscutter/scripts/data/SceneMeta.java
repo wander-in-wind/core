@@ -2,8 +2,10 @@ package emu.grasscutter.scripts.data;
 
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.scripts.ScriptLoader;
+import emu.grasscutter.scripts.lua_engine.LuaScript;
 import lombok.Setter;
 import lombok.ToString;
+import lombok.val;
 
 import javax.script.Bindings;
 import javax.script.CompiledScript;
@@ -22,7 +24,7 @@ public class SceneMeta {
     public Map<Integer, SceneBlock> blocks;
     public Map<Integer, SceneGroup> groups;
 
-    public Bindings context;
+    public LuaScript context;
 
     public static SceneMeta of(int sceneId) {
         return new SceneMeta().load(sceneId);
@@ -30,26 +32,23 @@ public class SceneMeta {
 
     public SceneMeta load(int sceneId) {
         // Get compiled script if cached
-        CompiledScript cs = ScriptLoader.getScript("Scene/" + sceneId + "/scene" + sceneId + ".lua");
+        val cs = ScriptLoader.getScript("Scene/" + sceneId + "/scene" + sceneId + ".lua");
 
         if (cs == null) {
             Grasscutter.getLogger().warn("No script found for scene " + sceneId);
             return null;
         }
 
-        // Create bindings
-        this.context = ScriptLoader.getEngine().createBindings();
-
         // Eval script
         try {
-            cs.eval(this.context);
+            cs.evaluate();
 
-            this.config = ScriptLoader.getSerializer().toObject(SceneConfig.class, this.context.get("scene_config"));
+            this.config = cs.getGlobalVariable("scene_config", SceneConfig.class);
 
             // TODO optimize later
             // Create blocks
-            List<Integer> blockIds = ScriptLoader.getSerializer().toList(Integer.class, this.context.get("blocks"));
-            List<SceneBlock> blocks = ScriptLoader.getSerializer().toList(SceneBlock.class, this.context.get("block_rects"));
+            List<Integer> blockIds = cs.getGlobalVariableList("blocks", Integer.class);
+            List<SceneBlock> blocks = cs.getGlobalVariableList("block_rects", SceneBlock.class);
 
             for (int i = 0; i < blocks.size(); i++) {
                 SceneBlock block = blocks.get(i);
