@@ -11,7 +11,11 @@ public class ContentEnterMyWorld extends BaseContent {
     // params[0] scene ID
     @Override
     public boolean execute(GameQuest quest, QuestContentCondition condition, String paramStr, int... params) {
-        return condition.getParam()[0] == params[0];
+        //Sometimes `condition.getParam()` is empty, this often happens in dungeon quests and quest should fail if player enters big world
+        //So trigger by default
+        int sceneId = condition.getParam(0);
+        if (sceneId == 0) return true;
+        return sceneId == params[0];
     }
 
 }

@@ -90,6 +90,12 @@ public class SubQuestData {
             val param = getParam();
             return questConditionKey(getType(), param != null && param.length > 0 ? getParam()[0] : 0, getParamString());
         }
+
+        public int getParam(int index) {
+            //handle null exceptions
+            if (param == null || index >= param.length) return 0;
+            return param[index];
+        }
     }
 
 }
