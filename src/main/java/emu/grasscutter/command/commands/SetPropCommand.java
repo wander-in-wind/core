@@ -206,8 +206,8 @@ public final class SetPropCommand implements CommandHandler {
 
     private boolean setBool(Player sender, Player targetPlayer, PseudoProp pseudoProp, int value) {
         boolean enabled = switch (pseudoProp) {
-            case GOD_MODE -> targetPlayer.inGodmode();
-            case UNLIMITED_STAMINA -> targetPlayer.getUnlimitedStamina();
+            case GOD_MODE -> targetPlayer.isInGodMode();
+            case UNLIMITED_STAMINA -> targetPlayer.isUnlimitedStamina();
             case UNLIMITED_ENERGY -> !targetPlayer.getEnergyManager().getEnergyUsage();
             default -> false;
         };
@@ -219,7 +219,7 @@ public final class SetPropCommand implements CommandHandler {
 
         switch (pseudoProp) {
             case GOD_MODE:
-                targetPlayer.setGodmode(enabled);
+                targetPlayer.setInGodMode(enabled);
                 break;
             case UNLIMITED_STAMINA:
                 targetPlayer.setUnlimitedStamina(enabled);

@@ -382,7 +382,7 @@ public class Scene {
 
         // Godmode check
         if (target instanceof EntityAvatar) {
-            if (((EntityAvatar) target).getPlayer().inGodmode()) {
+            if (((EntityAvatar) target).getPlayer().isInGodMode()) {
                 return;
             }
         }

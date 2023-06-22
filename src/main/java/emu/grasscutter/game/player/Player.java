@@ -4,7 +4,6 @@ import dev.morphia.annotations.*;
 import emu.grasscutter.GameConstants;
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.data.GameData;
-import emu.grasscutter.data.binout.AbilityData;
 import emu.grasscutter.data.binout.config.ConfigLevelEntity;
 import emu.grasscutter.data.binout.config.fields.ConfigAbilityData;
 import emu.grasscutter.data.excels.*;
@@ -32,7 +31,6 @@ import emu.grasscutter.game.managers.FurnitureManager;
 import emu.grasscutter.game.managers.ResinManager;
 import emu.grasscutter.game.managers.SotSManager;
 import emu.grasscutter.game.managers.SatiationManager;
-import emu.grasscutter.game.managers.SotSManager;
 import emu.grasscutter.game.managers.cooking.ActiveCookCompoundData;
 import emu.grasscutter.game.managers.cooking.CookingCompoundManager;
 import emu.grasscutter.game.managers.cooking.CookingManager;
@@ -121,8 +119,8 @@ public class Player {
     @Getter @Setter private int sceneId;
     @Getter @Setter private int regionId;
     @Getter private int mainCharacterId;
-    @Setter private boolean godmode;  // Getter is inGodmode
-    private boolean stamina;  // Getter is getUnlimitedStamina, Setter is setUnlimitedStamina
+    @Getter @Setter private boolean inGodMode;
+    @Setter @Getter private boolean unlimitedStamina;
 
     @Getter private Set<Integer> nameCardList;
     @Getter private Set<Integer> flyCloakList;
@@ -840,18 +838,6 @@ public class Player {
             getShopLimit().add(sl);
         }
         this.save();
-    }
-
-    public boolean getUnlimitedStamina() {
-        return stamina;
-    }
-
-    public void setUnlimitedStamina(boolean stamina) {
-        this.stamina = stamina;
-    }
-
-    public boolean inGodmode() {
-        return godmode;
     }
 
     public boolean hasSentLoginPackets() {
