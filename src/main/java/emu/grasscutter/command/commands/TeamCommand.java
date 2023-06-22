@@ -5,12 +5,11 @@ import emu.grasscutter.command.CommandHandler;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.server.packet.send.PacketChangeMpTeamAvatarRsp;
 
-import java.util.List;
-
-import static emu.grasscutter.config.Configuration.*;
-
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
+
+import static emu.grasscutter.config.Configuration.GAME_OPTIONS;
 
 @Command(
     label = "team",
@@ -28,26 +27,26 @@ public final class TeamCommand implements CommandHandler {
         }
 
         switch (args.get(0)) {
-            case "add":
+            case "add" -> {
                 if (!addCommand(sender, targetPlayer, args)) return;
-                break;
-
-            case "remove":
+            }
+            case "remove" -> {
                 if (!removeCommand(sender, targetPlayer, args)) return;
-                break;
-
-            case "set":
+            }
+            case "set" -> {
                 if (!setCommand(sender, targetPlayer, args)) return;
-                break;
-
-            default:
+            }
+            default -> {
                 CommandHandler.sendTranslatedMessage(sender, "commands.team.invalid_usage");
                 sendUsageMessage(sender);
                 return;
+            }
         }
 
-        targetPlayer.getTeamManager().updateTeamEntities(
-                new PacketChangeMpTeamAvatarRsp(targetPlayer, targetPlayer.getTeamManager().getCurrentTeamInfo()));
+        targetPlayer.getTeamManager().updateTeamEntities(true);
+        // TODO might not be wise since no request is sent
+        targetPlayer.sendPacket(new PacketChangeMpTeamAvatarRsp(targetPlayer, targetPlayer.getTeamManager().getCurrentTeamInfo()));
+
     }
 
     private boolean addCommand(Player sender, Player targetPlayer, List<String> args) {
@@ -112,7 +111,6 @@ public final class TeamCommand implements CommandHandler {
                     indexes.add(currentTeamAvatars.get(avatarIndex - 1));
                 } catch (Exception e) {
                     ignoreList.add(avatarIndex);
-                    continue;
                 }
             }
         }

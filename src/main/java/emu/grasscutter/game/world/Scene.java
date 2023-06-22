@@ -5,7 +5,11 @@ import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.GameDepot;
 import emu.grasscutter.data.binout.SceneNpcBornEntry;
 import emu.grasscutter.data.binout.routes.Route;
-import emu.grasscutter.data.excels.*;
+import emu.grasscutter.data.excels.CodexAnimalData;
+import emu.grasscutter.data.excels.ItemData;
+import emu.grasscutter.data.excels.MonsterData;
+import emu.grasscutter.data.excels.SceneData;
+import emu.grasscutter.data.excels.WorldLevelData;
 import emu.grasscutter.data.server.Grid;
 import emu.grasscutter.game.avatar.Avatar;
 import emu.grasscutter.game.dungeons.DungeonManager;
@@ -17,8 +21,11 @@ import emu.grasscutter.game.entity.gadget.GadgetWorktop;
 import emu.grasscutter.game.inventory.GameItem;
 import emu.grasscutter.game.managers.blossom.BlossomManager;
 import emu.grasscutter.game.player.Player;
-import emu.grasscutter.game.player.TeamInfo;
-import emu.grasscutter.game.props.*;
+import emu.grasscutter.game.props.ElementType;
+import emu.grasscutter.game.props.EnterReason;
+import emu.grasscutter.game.props.FightProperty;
+import emu.grasscutter.game.props.LifeState;
+import emu.grasscutter.game.props.SceneType;
 import emu.grasscutter.game.quest.QuestGroupSuite;
 import emu.grasscutter.game.world.data.TeleportProperties;
 import emu.grasscutter.net.packet.BasePacket;
@@ -40,6 +47,7 @@ import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.val;
+import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
 import java.util.*;
@@ -201,7 +209,7 @@ public class Scene {
         player.setScene(null);
 
         // Remove player avatars
-        this.removePlayerAvatars(player);
+         this.removePlayerAvatars(player);
 
         // Remove player gadgets
         for (EntityBaseGadget gadget : player.getTeamManager().getGadgets()) {
@@ -216,34 +224,18 @@ public class Scene {
         this.saveGroups();
     }
 
-    private void setupPlayerAvatars(Player player) {
+    private void setupPlayerAvatars(@NotNull Player player) {
         // Clear entities from old team
-        player.getTeamManager().getActiveTeam().clear();
-
-        // Add new entities for player
-        TeamInfo teamInfo = player.getTeamManager().getCurrentTeamInfo();
-        for (int avatarId : teamInfo.getAvatars()) {
-            Avatar avatar = player.getAvatars().getAvatarById(avatarId);
-            if (avatar == null) {
-                if (player.getTeamManager().isUseTrialTeam()) {
-                    avatar = player.getTeamManager().getTrialAvatars().get(avatarId);
-                }
-                if (avatar == null) continue;
-            }
-            player.getTeamManager().getActiveTeam().add(new EntityAvatar(player.getScene(), avatar));
-        }
-
-        // Limit character index in case its out of bounds
-        if (player.getTeamManager().getCurrentCharacterIndex() >= player.getTeamManager().getActiveTeam().size() || player.getTeamManager().getCurrentCharacterIndex() < 0) {
-            player.getTeamManager().setCurrentCharacterIndex(player.getTeamManager().getCurrentCharacterIndex() - 1);
-        }
+        List<EntityAvatar> activeTeam = player.getTeamManager().getActiveTeam();
+        activeTeam.clear();
+        Optional.ofNullable(player.getTeamManager().getCurrentTeamInfo())
+            .ifPresent(info -> info.getAvatars().forEach(avatarId -> activeTeam.add(
+                new EntityAvatar(player.getScene(), player.getAvatars().getAvatarById(avatarId))
+            )));
     }
 
-    private synchronized void removePlayerAvatars(Player player) {
-        var team = player.getTeamManager().getActiveTeam();
-        // removeEntities(team, VisionType.VISION_TYPE_REMOVE);  // List<SubType> isn't cool apparently :(
-        team.forEach(e -> removeEntity(e, VisionType.VISION_TYPE_REMOVE));
-        team.clear();
+    private synchronized void removePlayerAvatars(@NotNull Player player) {
+        removeEntities(player.getTeamManager().getActiveTeam(), VisionType.VISION_TYPE_MISS);
     }
 
     public void spawnPlayer(Player player) {
@@ -346,9 +338,9 @@ public class Scene {
         }
     }
 
-    public synchronized void removeEntities(List<GameEntity> entity, VisionType visionType) {
+    public synchronized void removeEntities(List<? extends GameEntity> entity, VisionType visionType) {
         var toRemove = entity.stream()
-            .filter(e -> e != null)
+            .filter(Objects::nonNull)
             .map(this::removeEntityDirectly)
             .filter(Objects::nonNull)
             .toList();
@@ -388,6 +380,11 @@ public class Scene {
         }
 
         // Sanity check
+//        if (target instanceof EntityMonster monsterTarget) {
+//            monsterTarget.damage(result.getDamage(), result.getAttackerId(), attackType,
+//                ElementReactionType.getTypeByValue(result.getAmplifyReactionType()));
+//            return;
+//        }
         target.damage(result.getDamage(), result.getAttackerId(), attackType);
     }
 

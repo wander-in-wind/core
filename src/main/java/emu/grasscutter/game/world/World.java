@@ -22,7 +22,8 @@ import emu.grasscutter.utils.Position;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMaps;
 import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
-import lombok.*;
+import lombok.Getter;
+import lombok.val;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -347,7 +348,7 @@ public class World implements Iterable<Player> {
             // Update team of all players since max players has been changed - Probably not the best way to do it
             if (this.isMultiplayer()) {
                 player.getTeamManager().getMpTeam().copyFrom(player.getTeamManager().getMpTeam(), player.getTeamManager().getMaxTeamSize());
-                player.getTeamManager().updateTeamEntities(null);
+                player.getTeamManager().updateTeamEntities(true);
             }
 
             // Don't send packets if player is loading into the scene

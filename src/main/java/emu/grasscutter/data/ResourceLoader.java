@@ -4,13 +4,18 @@ import com.google.gson.annotations.SerializedName;
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.data.binout.*;
 import emu.grasscutter.data.binout.AbilityModifier.AbilityModifierAction;
-import emu.grasscutter.data.binout.config.*;
+import emu.grasscutter.data.binout.config.ConfigEntityAvatar;
+import emu.grasscutter.data.binout.config.ConfigEntityBase;
+import emu.grasscutter.data.binout.config.ConfigEntityGadget;
+import emu.grasscutter.data.binout.config.ConfigEntityMonster;
+import emu.grasscutter.data.binout.config.ConfigLevelEntity;
 import emu.grasscutter.data.binout.config.fields.ConfigAbilityData;
-import emu.grasscutter.data.common.quest.MainQuestData;
-import emu.grasscutter.data.common.quest.SubQuestData;
 import emu.grasscutter.data.binout.routes.SceneRoutes;
 import emu.grasscutter.data.common.PointData;
-import emu.grasscutter.data.custom.*;
+import emu.grasscutter.data.common.quest.MainQuestData;
+import emu.grasscutter.data.common.quest.SubQuestData;
+import emu.grasscutter.data.custom.TrialAvatarActivityCustomData;
+import emu.grasscutter.data.custom.TrialAvatarCustomData;
 import emu.grasscutter.data.excels.TrialAvatarActivityDataData;
 import emu.grasscutter.data.server.ActivityCondGroup;
 import emu.grasscutter.data.server.GadgetMapping;
@@ -35,21 +40,21 @@ import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import it.unimi.dsi.fastutil.ints.IntArrayList;
 import it.unimi.dsi.fastutil.ints.IntArraySet;
 import lombok.val;
-
 import org.reflections.Reflections;
 
-import java.io.*;
+import javax.script.Bindings;
+import javax.script.CompiledScript;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.*;
+import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.CopyOnWriteArraySet;
 import java.util.regex.Pattern;
-import java.util.stream.Stream;
 import java.util.stream.Collectors;
-import java.util.Map.Entry;
-import javax.script.Bindings;
-import javax.script.CompiledScript;
+import java.util.stream.Stream;
 
 import static emu.grasscutter.utils.FileUtils.getDataPath;
 import static emu.grasscutter.utils.FileUtils.getResourcePath;
@@ -714,7 +719,7 @@ public class ResourceLoader {
 
     private static void loadTrialAvatarCustomData() {
         try {
-            String pathName = "CustomResources/TrialAvatarExcels/";
+            String pathName = "TrialAvatar/";
             try {
                 JsonUtils.loadToList(
                     getResourcePath(pathName + "TrialAvatarActivityDataExcelConfigData.json"),
@@ -737,9 +742,8 @@ public class ResourceLoader {
             Grasscutter.getLogger().debug("Loaded trial activity schedule custom data.");
             try {
                 JsonUtils.loadToList(
-                    getResourcePath(pathName + "TrialAvatarData.json"),
+                    getResourcePath(pathName + "TrialAvatarCustomConfigData.json"),
                     TrialAvatarCustomData.class).forEach(instance -> {
-                        instance.onLoad();
                         GameData.getTrialAvatarCustomData()
                             .put(instance.getTrialAvatarId(), instance);
                     });

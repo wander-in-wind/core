@@ -10,12 +10,9 @@ import emu.grasscutter.game.dungeons.handlers.DungeonBaseHandler;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.props.SceneType;
 import emu.grasscutter.game.world.Scene;
-import emu.grasscutter.net.packet.BasePacket;
-import emu.grasscutter.net.packet.PacketOpcodes;
 import emu.grasscutter.server.game.BaseGameSystem;
 import emu.grasscutter.server.game.GameServer;
 import emu.grasscutter.server.packet.send.PacketDungeonEntryInfoRsp;
-import emu.grasscutter.server.packet.send.PacketPlayerEnterDungeonRsp;
 import emu.grasscutter.utils.Position;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
@@ -158,13 +155,10 @@ public class DungeonSystem extends BaseGameSystem {
             if(!dungeonManager.isFinishedSuccessfully()){
                 dungeonManager.quitDungeon();
             }
-
-            dungeonManager.unsetTrialTeam(player);
         }
         // clean temp team if it has
         player.getTeamManager().cleanTemporaryTeam();
         player.getTowerManager().clearEntry();
-
 
         // Transfer player back to world
         player.getWorld().transferPlayerToScene(player, prevScene, prevPos);
