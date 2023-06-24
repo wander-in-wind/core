@@ -366,6 +366,31 @@ public class ScriptLib {
 		return 0;
 	}
 
+    public int StopChallenge(int challengeId, int result) {
+        logger.debug("[LUA] Call StopChallenge with ");
+        var challenge = getSceneScriptManager().getScene().getChallenge();
+        if(challenge == null){
+            return 1;
+        }
+        if(challenge.getChallengeId() != challengeId){
+            return 2;
+        }
+
+        switch (result){
+            case 0:
+                challenge.fail();
+                break;
+            case 1:
+                challenge.done();
+                break;
+            default:
+                logger.warn("[LUA] Call StopChallenge with unsupported result {}", result);
+                return 3;
+
+        }
+        return 0;
+    }
+
 	public int GetGroupMonsterCountByGroupId(int groupId) {
 		logger.debug("[LUA] Call GetGroupMonsterCountByGroupId with {}",
 				groupId);
@@ -713,6 +738,10 @@ public class ScriptLib {
         }
 
         return entity.getEntityType();
+    }
+
+    public int GetSceneOwnerUid(){
+        return getSceneScriptManager().getScene().getWorld().getHost().getUid();
     }
 
     public int GetHostQuestState(int questId){
@@ -1450,6 +1479,13 @@ public class ScriptLib {
             return 0;
         }
         return ((EntityMonster) entity).getMonsterData().getId();
+    }
+    public int GetMonsterConfigId(int entityId){
+        var entity = getSceneScriptManager().getScene().getEntityById(entityId);
+        if(!(entity instanceof EntityMonster)){
+            return 0;
+        }
+        return entity.getConfigId();
     }
     public int GetMonsterID(int var1){
         //TODO implement var1 type
