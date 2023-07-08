@@ -6,7 +6,11 @@ import emu.grasscutter.data.excels.MonsterData;
 import emu.grasscutter.data.excels.WorldLevelData;
 import emu.grasscutter.data.server.Grid;
 import emu.grasscutter.database.DatabaseHelper;
-import emu.grasscutter.game.entity.*;
+import emu.grasscutter.game.entity.EntityGadget;
+import emu.grasscutter.game.entity.EntityMonster;
+import emu.grasscutter.game.entity.EntityNPC;
+import emu.grasscutter.game.entity.EntityRegion;
+import emu.grasscutter.game.entity.GameEntity;
 import emu.grasscutter.game.entity.gadget.platform.BaseRoute;
 import emu.grasscutter.game.props.EntityType;
 import emu.grasscutter.game.quest.GameQuest;
@@ -38,7 +42,11 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.util.*;
-import java.util.concurrent.*;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.LinkedBlockingDeque;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
@@ -659,28 +667,19 @@ public class SceneScriptManager {
         try {
             ScriptLoader.getScriptLib().setSceneScriptManager(this);
             int eventType = params.type;
-            Set<SceneTrigger> relevantTriggers = new HashSet<>();
-            if (eventType == EventType.EVENT_ENTER_REGION || eventType == EventType.EVENT_LEAVE_REGION) {
-                relevantTriggers = this.getTriggersByEvent(eventType).stream()
-                    .filter(t -> t.getCondition().contains(String.valueOf(params.param1)) &&
-                                 (t.getSource().isEmpty() || t.getSource().equals(params.getEventSource())))
-                    .collect(Collectors.toSet());
-            } else {
-                relevantTriggers = this.getTriggersByEvent(eventType).stream()
-                    .filter(t -> params.getGroupId() == 0 || t.getCurrentGroup().id == params.getGroupId())
-                    .filter(t -> {
-                        if (t.getSource().isEmpty() || t.getSource().equals(params.getEventSource())) {
-                            return true;
-                        }
-                        if (!t.getSource().isEmpty() && params.getEventSource() == null) {
-                            //Add this for debug purposes, so when we see this log we can add relevant event source to the params.
-                            Grasscutter.getLogger().error("[Bypass] Trigger {} source is null! Bypass event source check.", t.getName());
-                            return true;
-                        }
-                        return false;
-                    })
-                    .collect(Collectors.toSet());
-            }
+            var relevantTriggers = getTriggersByEvent(eventType).stream()
+                .filter(t -> params.getGroupId() == 0 || t.getCurrentGroup().id == params.getGroupId())
+                .filter(t -> {
+                    if (t.getSource().isEmpty() || t.getSource().equals(params.getEventSource())) {
+                        return true;
+                    }
+                    if (!t.getSource().isEmpty() && params.getEventSource() == null) {
+                        //Add this for debug purposes, so when we see this log we can add relevant event source to the params.
+                        Grasscutter.getLogger().error("[Bypass] Trigger {} source is null! Bypass event source check.", t.getName());
+                        return true;
+                    }
+                    return false;
+                }).collect(Collectors.toSet());
             for (SceneTrigger trigger : relevantTriggers) {
                 handleEventForTrigger(params, trigger);
             }
@@ -764,12 +763,7 @@ public class SceneScriptManager {
         LuaValue ret = LuaValue.TRUE;
 
         if (funcLua != null) {
-            LuaValue args = LuaValue.NIL;
-
-            if (params != null) {
-                args = CoerceJavaToLua.coerce(params);
-            }
-
+            LuaValue args = CoerceJavaToLua.coerce(params);
             ret = safetyCall(funcName, funcLua, args, group);
         }
         return ret;

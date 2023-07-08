@@ -468,26 +468,34 @@ public class ScriptLib {
 
         SceneGroupInstance groupInstance = getSceneScriptManager().getGroupInstanceById(groupId);
 
-		if (groupInstance == null) {
+        if (groupInstance == null) {
             logger.warn("[LUA] trying to refresh unloaded group {}", groupId);
-			return 1;
-		}
+            return 1;
+        }
 
-		getSceneScriptManager().refreshGroup(groupInstance, suite, false);
+        getSceneScriptManager().refreshGroup(groupInstance, suite, false);
 
-		return 0;
-	}
+        return 0;
+    }
 
-	public int GetRegionEntityCount(LuaTable table) {
-		logger.debug("[LUA] Call GetRegionEntityCount with {}",
-				printTable(table));
-		int regionId = table.get("region_eid").toint();
-		int entityType = table.get("entity_type").toint();
+    public int GetRegionConfigId(LuaTable table) {
+        logger.debug("[LUA] Call GetRegionConfigId with {}", printTable(table));
+        int regionId = table.get("region_eid").toint();
+        var region = this.getSceneScriptManager().getRegionById(regionId);
+        if (region == null) return 0;
+        return region.getConfigId();
+    }
 
-		var region = this.getSceneScriptManager().getRegionById(regionId);
+    public int GetRegionEntityCount(LuaTable table) {
+        logger.debug("[LUA] Call GetRegionEntityCount with {}",
+            printTable(table));
+        int regionId = table.get("region_eid").toint();
+        int entityType = table.get("entity_type").toint();
 
-		if (region == null) {
-			return 0;
+        var region = this.getSceneScriptManager().getRegionById(regionId);
+
+        if (region == null) {
+            return 0;
 		}
 
 		return (int) region.getEntities().stream().filter(e -> e >> 24 == entityType).count();
