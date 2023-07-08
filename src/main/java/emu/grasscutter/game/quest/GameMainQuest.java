@@ -138,7 +138,7 @@ public class GameMainQuest {
     public void finish(boolean isManualFinish) {
         // Avoid recursion from child finish() in GameQuest
         // when auto finishing all child quests with QUEST_STATE_UNFINISHED (below)
-        if (this.isFinished) {
+        if (this.isFinished || this.state == ParentQuestState.PARENT_QUEST_STATE_FINISHED) {
             Grasscutter.getLogger().debug("Skip main quest finishing because it's already finished");
             return;
         }

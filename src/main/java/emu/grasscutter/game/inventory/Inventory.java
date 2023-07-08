@@ -1,9 +1,5 @@
 package emu.grasscutter.game.inventory;
 
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
-
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.common.ItemParamData;
@@ -29,7 +25,7 @@ import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
 import it.unimi.dsi.fastutil.longs.Long2ObjectMap;
 import it.unimi.dsi.fastutil.longs.Long2ObjectOpenHashMap;
 
-import java.util.ArrayList;
+import java.util.*;
 
 import static emu.grasscutter.config.Configuration.INVENTORY_LIMITS;
 

@@ -182,24 +182,24 @@ public class ScriptLib {
 	}
 
 	public int DelWorktopOptionByGroupId(int groupId, int configId, int option) {
-		logger.debug("[LUA] Call DelWorktopOptionByGroupId with {},{},{}",groupId,configId,option);
+        logger.debug("[LUA] Call DelWorktopOptionByGroupId with {},{},{}", groupId, configId, option);
 
 
         val entity = getSceneScriptManager().getScene().getEntityByConfigId(configId, groupId);
 
-		if (!(entity instanceof EntityGadget gadget)) {
-			return 1;
-		}
+        if (!(entity instanceof EntityGadget gadget)) {
+            return 1;
+        }
 
-		if (!(gadget.getContent() instanceof GadgetWorktop worktop)) {
-			return 1;
-		}
+        if (!(gadget.getContent() instanceof GadgetWorktop worktop)) {
+            return 1;
+        }
 
-		worktop.removeWorktopOption(option);
-		getSceneScriptManager().getScene().broadcastPacket(new PacketWorktopOptionNotify(gadget));
-
-		return 0;
-	}
+        if (worktop.removeWorktopOption(option)) {
+            getSceneScriptManager().getScene().broadcastPacket(new PacketWorktopOptionNotify(gadget));
+            return 0;
+        } else return 1;
+    }
     public int DelWorktopOption(int var1){
         logger.warn("[LUA] Call unimplemented DelWorktopOption with {}", var1);
         var callParams = this.callParams.getIfExists();

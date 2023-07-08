@@ -25,7 +25,9 @@ public class HandlerSelectWorktopOptionReq extends PacketHandler {
             if (!(entity instanceof EntityGadget)) {
                 return;
             }
+            //Call legacy worktop handler, now only used by legacy blossom system, maybe we can deprecate it later
             session.getPlayer().getScene().selectWorktopOptionWith(req);
+            //Call script-based worktop handler
             session.getPlayer().getScene().getScriptManager().callEvent(
                     new ScriptArgs(entity.getGroupId(), EventType.EVENT_SELECT_OPTION, entity.getConfigId(), req.getOptionId())
             );

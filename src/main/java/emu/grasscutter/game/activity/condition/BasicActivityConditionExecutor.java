@@ -21,12 +21,11 @@ public class BasicActivityConditionExecutor implements ActivityConditionExecutor
     private final Int2ObjectMap<PlayerActivityData> playerActivityDataByActivityCondId;
     private final Map<ActivityConditions, ActivityConditionBaseHandler> activityConditionsHandlers;
 
-    private static final UnknownActivityConditionHandler UNKNOWN_CONDITION_HANDLER = new UnknownActivityConditionHandler();
-
-    public BasicActivityConditionExecutor(Map<Integer, ActivityConfigItem> activityConfigItemMap,
-                                          Int2ObjectMap<ActivityCondExcelConfigData> activityConditions,
-                                          Int2ObjectMap<PlayerActivityData> playerActivityDataByActivityCondId,
-                                          Map<ActivityConditions, ActivityConditionBaseHandler> activityConditionsHandlers) {
+    public BasicActivityConditionExecutor(
+        Map<Integer, ActivityConfigItem> activityConfigItemMap,
+        Int2ObjectMap<ActivityCondExcelConfigData> activityConditions,
+        Int2ObjectMap<PlayerActivityData> playerActivityDataByActivityCondId,
+        Map<ActivityConditions, ActivityConditionBaseHandler> activityConditionsHandlers) {
         this.activityConfigItemMap = activityConfigItemMap;
         this.activityConditions = activityConditions;
         this.playerActivityDataByActivityCondId = playerActivityDataByActivityCondId;
@@ -63,7 +62,8 @@ public class BasicActivityConditionExecutor implements ActivityConditionExecutor
             .stream()
             .map(c -> (BooleanSupplier) () ->
                 activityConditionsHandlers
-                    .getOrDefault(c.getType(), UNKNOWN_CONDITION_HANDLER).execute(activity, activityConfig, c.paramArray()))
+                    .getOrDefault(c.getType(), new UnknownActivityConditionHandler(c.getType()))
+                    .execute(activity, activityConfig, c.paramArray()))
             .collect(Collectors.toList());
 
         return LogicType.calculate(condComb, predicates);

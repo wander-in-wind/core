@@ -33,7 +33,6 @@ import emu.grasscutter.game.mail.MailHandler;
 import emu.grasscutter.game.managers.FurnitureManager;
 import emu.grasscutter.game.managers.ResinManager;
 import emu.grasscutter.game.managers.SatiationManager;
-import emu.grasscutter.game.managers.SotSManager;
 import emu.grasscutter.game.managers.cooking.ActiveCookCompoundData;
 import emu.grasscutter.game.managers.cooking.CookingCompoundManager;
 import emu.grasscutter.game.managers.cooking.CookingManager;
@@ -125,8 +124,8 @@ public class Player {
     @Getter @Setter private int sceneId;
     @Getter @Setter private int regionId;
     @Getter private int mainCharacterId;
-    @Setter private boolean godmode;  // Getter is inGodmode
-    private boolean stamina;  // Getter is getUnlimitedStamina, Setter is setUnlimitedStamina
+    @Getter @Setter private boolean inGodMode;
+    @Setter @Getter private boolean unlimitedStamina;
 
     @Getter private Set<Integer> nameCardList;
     @Getter private Set<Integer> flyCloakList;
@@ -844,18 +843,6 @@ public class Player {
             getShopLimit().add(sl);
         }
         this.save();
-    }
-
-    public boolean getUnlimitedStamina() {
-        return stamina;
-    }
-
-    public void setUnlimitedStamina(boolean stamina) {
-        this.stamina = stamina;
-    }
-
-    public boolean inGodmode() {
-        return godmode;
     }
 
     public boolean hasSentLoginPackets() {
@@ -1588,14 +1575,19 @@ public class Player {
         int currentValue = this.properties.get(prop.getId());
         this.properties.put(prop.getId(), value);
         if (sendPacket) {
-            // Update player with packet
+                // Send property change reasons if needed.
+                switch (prop) {
+                    case PROP_PLAYER_EXP -> this.sendPacket(new PacketPlayerPropChangeReasonNotify(this, prop, currentValue, value,
+                        PropChangeReason.PROP_CHANGE_REASON_PLAYER_ADD_EXP));
+                    case PROP_PLAYER_LEVEL -> this.sendPacket(new PacketPlayerPropChangeReasonNotify(this, prop, currentValue, value,
+                        PropChangeReason.PROP_CHANGE_REASON_LEVELUP));
+                    case PROP_PLAYER_WORLD_LEVEL -> this.sendPacket(new PacketPlayerPropChangeReasonNotify(this, prop, currentValue, value,
+                        PropChangeReason.PROP_CHANGE_REASON_MANUAL_ADJUST_WORLD_LEVEL));
+                }
+
+                // Update player with packet.
             this.sendPacket(new PacketPlayerPropNotify(this, prop));
             this.sendPacket(new PacketPlayerPropChangeNotify(this, prop, value - currentValue));
-
-            // Make the Adventure EXP pop-up show on screen.
-            if (prop == PlayerProperty.PROP_PLAYER_EXP) {
-                this.sendPacket(new PacketPlayerPropChangeReasonNotify(this, prop, currentValue, value, PropChangeReason.PROP_CHANGE_REASON_PLAYER_ADD_EXP));
-            }
         }
         return true;
     }
