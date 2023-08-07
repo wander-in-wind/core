@@ -206,7 +206,6 @@ public class GameQuest {
 
         getQuestData().getFinishExec().forEach(e -> getOwner().getServer().getQuestSystem().triggerExec(this, e, e.getParam()));
         //Some subQuests have conditions that subQuests are finished (even from different MainQuests)
-        getOwner().getQuestManager().queueEvent(QuestContent.QUEST_CONTENT_FINISH_PLOT, this.subQuestId, 0);
         triggerStateEvents();
         getOwner().getScene().triggerDungeonEvent(DungeonPassConditionType.DUNGEON_COND_FINISH_QUEST, getSubQuestId());
 
@@ -239,7 +238,6 @@ public class GameQuest {
 
         // Some subQuests have conditions that subQuests fail (even from different MainQuests)
         triggerStateEvents();
-
         getQuestData().getFailExec().forEach(e -> getOwner().getServer().getQuestSystem().triggerExec(this, e, e.getParam()));
 
         if (getQuestData().getTrialAvatarList() != null) {

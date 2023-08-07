@@ -4,6 +4,7 @@ import emu.grasscutter.data.common.quest.SubQuestData;
 import emu.grasscutter.data.common.quest.SubQuestData.QuestAcceptCondition;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.quest.GameQuest;
+import emu.grasscutter.game.quest.QuestSystem;
 import emu.grasscutter.game.quest.QuestValueCond;
 import lombok.val;
 

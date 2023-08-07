@@ -1,6 +1,5 @@
 package emu.grasscutter.server.packet.recv;
 
-import emu.grasscutter.game.props.SceneType;
 import emu.grasscutter.game.quest.enums.QuestContent;
 import emu.grasscutter.net.packet.Opcodes;
 import emu.grasscutter.net.packet.PacketHandler;
@@ -14,11 +13,12 @@ public class HandlerPostEnterSceneReq extends PacketHandler {
     @Override
     public void handle(GameSession session, byte[] header, byte[] payload) throws Exception {
         var player = session.getPlayer();
+        var sceneId = player.getSceneId();
         var scene = player.getScene();
         var questManager = player.getQuestManager();
 
-        switch (session.getPlayer().getScene().getSceneType()){
-            case SCENE_ROOM -> questManager.queueEvent(QuestContent.QUEST_CONTENT_ENTER_ROOM, scene.getId(), 0);
+        switch (scene.getSceneType()) {
+            case SCENE_ROOM -> questManager.queueEvent(QuestContent.QUEST_CONTENT_ENTER_ROOM, sceneId, 0);
             case SCENE_WORLD -> {
                 questManager.queueEvent(QuestContent.QUEST_CONTENT_ENTER_MY_WORLD, scene.getId());
                 questManager.queueEvent(QuestContent.QUEST_CONTENT_ENTER_MY_WORLD_SCENE, scene.getId());
@@ -29,6 +29,11 @@ public class HandlerPostEnterSceneReq extends PacketHandler {
             }
         }
 
-        session.send(new PacketPostEnterSceneRsp(session.getPlayer()));
+        if (scene.getPrevScene() != sceneId) {
+            questManager.queueEvent(QuestContent.QUEST_CONTENT_LEAVE_SCENE, scene.getPrevScene());
+        }
+
+
+        session.send(new PacketPostEnterSceneRsp(player));
     }
 }
