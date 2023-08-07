@@ -571,7 +571,7 @@ public class ScriptLib {
             return 0;
 		}
 
-		return (int) region.getEntities().stream().filter(e -> e >> 24 == entityType).count();
+		return (int) region.getEntities().stream().filter(e -> e.getEntityType() == entityType).count();
 	}
 
     private static void printLog(@Nullable LuaContext context, String source, String msg){

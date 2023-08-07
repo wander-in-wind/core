@@ -652,6 +652,8 @@ public class Player {
         return towerData;
     }
 
+
+    // TODO remove?
     public void onEnterRegion(SceneRegion region) {
         val enterRegionName = "ENTER_REGION_"+ region.config_id;
         getQuestManager().forEachActiveQuest(quest -> {
@@ -668,6 +670,7 @@ public class Player {
 
     }
 
+    // TODO remove?
     public void onLeaveRegion(SceneRegion region) {
         val leaveRegionName = "LEAVE_REGION_"+ region.config_id;
         getQuestManager().forEachActiveQuest(quest -> {

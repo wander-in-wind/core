@@ -137,6 +137,7 @@ public class GameData {
     @Getter private static final Int2ObjectMap<TrialAvatarTemplateData> trialAvatarTemplateDataMap = new Int2ObjectOpenHashMap<>();
     @Getter private static final Int2ObjectMap<TrialReliquaryData> trialReliquaryDataMap = new Int2ObjectOpenHashMap<>();
     @Getter private static final Int2ObjectMap<TriggerExcelConfigData> triggerExcelConfigDataMap = new Int2ObjectOpenHashMap<>();
+    @Getter private static final Map<String, TriggerExcelConfigData> triggerDataByNameMap = new HashMap<>();
     @Getter private static final Int2ObjectMap<WeaponCurveData> weaponCurveDataMap = new Int2ObjectOpenHashMap<>();
     @Getter private static final Int2ObjectMap<WeaponLevelData> weaponLevelDataMap = new Int2ObjectOpenHashMap<>();
     @Getter private static final Int2ObjectMap<WeaponPromoteData> weaponPromoteDataMap = new Int2ObjectOpenHashMap<>();
@@ -313,5 +314,9 @@ public class GameData {
     public static Int2ObjectMap<AchievementData> getAchievementDataMap() {
         AchievementData.divideIntoGroups();
         return achievementDataMap;
+    }
+
+    public static TriggerExcelConfigData getQuestTriggerDataByName(int groupId, String triggerName){
+        return triggerDataByNameMap.get(groupId + triggerName);
     }
 }
