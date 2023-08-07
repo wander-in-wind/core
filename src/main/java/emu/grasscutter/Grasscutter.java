@@ -1,8 +1,6 @@
 package emu.grasscutter;
 
 import ch.qos.logback.classic.Level;
-import ch.qos.logback.classic.Logger;
-
 import emu.grasscutter.auth.AuthenticationSystem;
 import emu.grasscutter.auth.DefaultAuthentication;
 import emu.grasscutter.command.CommandMap;
@@ -32,6 +30,7 @@ import emu.grasscutter.utils.StartupArguments;
 import emu.grasscutter.utils.Utils;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.val;
 import org.jline.reader.EndOfFileException;
 import org.jline.reader.LineReader;
 import org.jline.reader.LineReaderBuilder;
@@ -39,6 +38,7 @@ import org.jline.reader.UserInterruptException;
 import org.jline.terminal.Terminal;
 import org.jline.terminal.TerminalBuilder;
 import org.reflections.Reflections;
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.annotation.Nullable;
@@ -51,7 +51,7 @@ import static emu.grasscutter.utils.Language.translate;
 public final class Grasscutter {
     public static final File configFile = new File("./config.json");
     public static final Reflections reflector = new Reflections("emu.grasscutter");
-    @Getter private static final Logger logger = (Logger) LoggerFactory.getLogger(Grasscutter.class);
+    @Getter private static final Logger logger = LoggerFactory.getLogger(Grasscutter.class);
     @Getter public static ConfigContainer config;
     private static LineReader consoleLineReader = null;
     @Getter @Setter private static Language language;
@@ -70,7 +70,7 @@ public final class Grasscutter {
         System.setProperty("logback.configurationFile", "src/main/resources/logback.xml");
 
         // Disable the MongoDB logger.
-        var mongoLogger = (Logger) LoggerFactory.getLogger("org.mongodb.driver");
+        val mongoLogger = (ch.qos.logback.classic.Logger) LoggerFactory.getLogger("org.mongodb.driver");
         mongoLogger.setLevel(Level.OFF);
 
         // Load server configuration.

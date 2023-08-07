@@ -20,7 +20,7 @@ import static emu.grasscutter.Grasscutter.config;
  */
 public class ConfigContainer {
     private static int version() {
-        return 4;
+        return 5;
     }
 
     /**
@@ -191,11 +191,7 @@ public class ConfigContainer {
     *  (see StartupArguments.enableDebug) */
     public static class DebugMode {
         /* Log level of the main server code (works only with -debug arg) */
-        public Level serverLoggerLevel = Level.DEBUG;
-
-        /* Log level of the third-party services (works only with -debug arg):
-           javalin, quartz, reflections, jetty, mongodb.driver*/
-        public Level servicesLoggersLevel = Level.INFO;
+        public Logging debugLogging = new Logging();
 
         /* Controls whether packets should be logged in console or not */
         public ServerDebugMode logPackets = ServerDebugMode.ALL;
@@ -208,6 +204,20 @@ public class ConfigContainer {
 
         /* Controls whether http requests should be logged in console or not */
         public ServerDebugMode logRequests = ServerDebugMode.ALL;
+    }
+
+    public static class Logging {
+        /* Log level of the main server code (works only with -debug arg) */
+        public Level serverLoggerLevel = Level.DEBUG;
+
+        public Level abilityLevel = Level.INFO;
+        public Level questLevel = Level.INFO;
+        public Level resourceLevel = Level.INFO;
+        public Level scriptLevel = Level.INFO;
+
+        /* Log level of the third-party services (works only with -debug arg):
+           javalin, quartz, reflections, jetty, mongodb.driver*/
+        public Level servicesLoggersLevel = Level.INFO;
     }
 
     public static class Encryption {

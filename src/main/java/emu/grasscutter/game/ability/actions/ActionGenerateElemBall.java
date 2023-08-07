@@ -3,6 +3,7 @@ package emu.grasscutter.game.ability.actions;
 import com.google.protobuf.ByteString;
 import com.google.protobuf.InvalidProtocolBufferException;
 import emu.grasscutter.Grasscutter;
+import emu.grasscutter.Loggers;
 import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.binout.AbilityModifier.AbilityModifierAction;
 import emu.grasscutter.data.binout.AbilityModifier.AbilityModifierAction.DropType;
@@ -33,12 +34,12 @@ public class ActionGenerateElemBall extends AbilityActionHandler {
             String levelEntityConfig = owner.getScene().getSceneData().getLevelEntityConfig();
             ConfigLevelEntity config = GameData.getConfigLevelEntityDataMap().get(levelEntityConfig);
             if (config != null && config.getDropElemControlType() != null && config.getDropElemControlType().compareTo("None") == 0) {
-                Grasscutter.getLogger().warn("This level config don't allow element balls");
+                logger.warn("This level config don't allow element balls");
                 return true;
             }
         } else if (action.dropType == DropType.BigWorldOnly) {
             if (owner.getScene().getSceneData().getSceneType() != SceneType.SCENE_WORLD) {
-                Grasscutter.getLogger().warn("This level config only allows element balls on big world");
+                logger.warn("This level config only allows element balls on big world");
                 return true;
             }
         } //Else the drop is forced
@@ -48,12 +49,12 @@ public class ActionGenerateElemBall extends AbilityActionHandler {
 
         var itemData = GameData.getItemDataMap().get(action.configID);
         if (itemData == null) {
-            Grasscutter.getLogger().warn("configID {} not found", action.configID);
+            logger.warn("configID {} not found", action.configID);
             return false;
         }
 
         if (itemData.getItemUse() == null || itemData.getItemUse().isEmpty()) {
-            Grasscutter.getLogger().warn("Item {} has no item use array", action.configID);
+            logger.warn("Item {} has no item use array", action.configID);
             return true;
         }
 
@@ -67,17 +68,17 @@ public class ActionGenerateElemBall extends AbilityActionHandler {
                 requiredEnergy = Integer.parseInt(itemUse.getUseParam()[0]);
                 break;
             default:
-                Grasscutter.getLogger().warn("UseOp not implemented: {}", itemUse.getUseOp());
+                logger.warn("UseOp not implemented: {}", itemUse.getUseOp());
                 return false;
         }
 
         var amountGenerated = (int) Math.ceil(energy / requiredEnergy);
         if (amountGenerated >= 21) {
-            Grasscutter.getLogger().warn("Attempt to generate more than 20 element balls {}", amountGenerated);
+            logger.warn("Attempt to generate more than 20 element balls {}", amountGenerated);
             return false;
         }
 
-        Grasscutter.getLogger().debug("Generating {} of {} element balls", amountGenerated, action.configID);
+        logger.debug("Generating {} of {} element balls", amountGenerated, action.configID);
         for (int i = 0; i < amountGenerated; i++) {
             EntityItem energyBall = new EntityItem(owner.getScene(), (owner instanceof EntityAvatar avatar) ? avatar.getPlayer() : null, itemData, new Position(generateElemBall.getPos()), new Position(generateElemBall.getRot()), 1);
             owner.getScene().addEntity(energyBall);
