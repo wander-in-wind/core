@@ -93,7 +93,7 @@ public class ScriptLib {
     }
 
     public static int GetEntityType(int entityId){
-        return entityId >> 24;
+        return EntityIdType.fromEntityId(entityId).getType().getValue();
     }
 
 
@@ -571,7 +571,7 @@ public class ScriptLib {
             return 0;
 		}
 
-		return (int) region.getEntities().stream().filter(e -> e.getEntityType() == entityType).count();
+		return (int) region.getEntities().stream().filter(e -> e.getEntityType().getValue() == entityType).count();
 	}
 
     private static void printLog(@Nullable LuaContext context, String source, String msg){
@@ -830,7 +830,7 @@ public class ScriptLib {
 
         val entity = context.getSceneScriptManager().getScene().getEntityByConfigId(configId, groupId);
 
-        if(entity == null || entity.getEntityType() != entityType){
+        if(entity == null || entity.getEntityType().getValue() != entityType){
             return 1;
         }
 
@@ -910,7 +910,7 @@ public class ScriptLib {
     }
     public static boolean IsPlayerAllAvatarDie(GroupEventLuaContext context, int sceneUid){
         logger.warn("[LUA] Call unimplemented IsPlayerAllAvatarDie {}", sceneUid);
-        var playerEntities = context.getSceneScriptManager().getScene().getEntities().values().stream().filter(e -> e.getEntityType() == EntityIdType.AVATAR.getId()).toList();
+        var playerEntities = context.getSceneScriptManager().getScene().getEntities().values().stream().filter(e -> e.getEntityType() == EntityType.Avatar).toList();
         for (GameEntity p : playerEntities){
             var player = (EntityAvatar)p;
             if(player.isAlive()){
