@@ -15,32 +15,25 @@ import it.unimi.dsi.fastutil.objects.Object2IntMap;
 import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap;
 import lombok.EqualsAndHashCode;
 
-import static emu.grasscutter.config.Configuration.*;
-import static emu.grasscutter.utils.FileUtils.getCachePath;
-import static emu.grasscutter.utils.FileUtils.getResourcePath;
-
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
+import java.io.*;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.FileAlreadyExistsException;
 import java.nio.file.Files;
+import java.nio.file.NoSuchFileException;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+
+import static emu.grasscutter.config.Configuration.FALLBACK_LANGUAGE;
+import static emu.grasscutter.utils.FileUtils.getCachePath;
+import static emu.grasscutter.utils.FileUtils.getResourcePath;
 
 public final class Language {
     private static final Map<String, Language> cachedLanguages = new ConcurrentHashMap<>();
@@ -415,16 +408,18 @@ public final class Language {
                 .max(Long::compare)
                 .get();
 
-                Grasscutter.getLogger().debug("Cache modified %d, textmap modified %d".formatted(cacheModified, textmapsModified));
+            Grasscutter.getLogger().debug("Cache modified %d, textmap modified %d".formatted(cacheModified, textmapsModified));
             if (textmapsModified < cacheModified) {
                 // Try loading from cache
                 Grasscutter.getLogger().info("Loading cached 'TextMaps'...");
                 textMapStrings = loadTextMapsCache();
                 return;
             }
+        } catch (NoSuchFileException e) {
+            Grasscutter.getLogger().debug("TextMaps cache not found");
         } catch (Exception e) {
             Grasscutter.getLogger().debug("Exception while checking cache: ", e);
-        };
+        }
 
         // Regenerate cache
         Grasscutter.getLogger().info("Generating TextMaps cache");
