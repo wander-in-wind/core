@@ -415,6 +415,7 @@ public class SceneScriptManager {
                     Grasscutter.getLogger().error("block.groups null for block {}", block.id);
                     return;
                 }
+                Grasscutter.getLogger().debug("Loading block grid " + block.id);
                 block.groups.values().stream().filter(g -> !g.dynamic_load).forEach(group -> {
                     group.load(this.scene.getId());
 

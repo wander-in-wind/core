@@ -28,6 +28,7 @@ import emu.grasscutter.net.proto.SceneEntityAiInfoOuterClass.SceneEntityAiInfo;
 import emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfo;
 import emu.grasscutter.net.proto.SceneGadgetInfoOuterClass.SceneGadgetInfo;
 import emu.grasscutter.net.proto.VectorOuterClass.Vector;
+import emu.grasscutter.net.proto.VisionTypeOuterClass.VisionType;
 import emu.grasscutter.net.proto.VisionTypeOuterClass;
 import emu.grasscutter.scripts.EntityControllerScriptManager;
 import emu.grasscutter.scripts.constants.EventType;

@@ -22,8 +22,8 @@ import emu.grasscutter.game.quest.enums.QuestState;
 import emu.grasscutter.game.world.SceneGroupInstance;
 import emu.grasscutter.net.proto.EnterTypeOuterClass;
 import emu.grasscutter.scripts.constants.EventType;
-import emu.grasscutter.scripts.constants.temporary.FlowSuiteOperatePolicy;
 import emu.grasscutter.scripts.constants.GroupKillPolicy;
+import emu.grasscutter.scripts.constants.temporary.FlowSuiteOperatePolicy;
 import emu.grasscutter.scripts.constants.temporary.GalleryProgressScoreType;
 import emu.grasscutter.scripts.constants.temporary.GalleryProgressScoreUIType;
 import emu.grasscutter.scripts.data.SceneGroup;
@@ -42,7 +42,6 @@ import org.slf4j.Logger;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.Optional;
 
 import static emu.grasscutter.game.props.EnterReason.Lua;
 import static emu.grasscutter.scripts.ScriptUtils.luaToPos;
@@ -295,7 +294,7 @@ public class ScriptLib {
 		}
 		var suiteData = group.getSuiteByIndex(suite);
 		if(suiteData == null){
-            Grasscutter.getLogger().warn("trying to get suite that doesn't exist: {} {}", groupId, suite);
+            logger.warn("trying to get suite that doesn't exist: {} {}", groupId, suite);
 			return 1;
 		}
 		scriptManager.addGroupSuite(groupInstance, suiteData);
@@ -525,11 +524,14 @@ public class ScriptLib {
         return 0;
     }
 
-    public int GetRegionConfigId(LuaTable table) {
+    public int GetRegionConfigId(GroupEventLuaContext context, Object rawTable) {
+        val table = context.getEngine().getTable(rawTable);
         logger.debug("[LUA] Call GetRegionConfigId with {}", printTable(table));
-        int regionId = table.get("region_eid").toint();
-        var region = this.getSceneScriptManager().getRegionById(regionId);
-        if (region == null) return 0;
+        val regionEid = table.getInt("region_eid");
+        val region = context.getSceneScriptManager().getRegionById(regionEid);
+        if (region == null) {
+            return -1;
+        }
         return region.getConfigId();
     }
 
@@ -584,9 +586,10 @@ public class ScriptLib {
 		// TODO implement scene50008_group250008057.lua uses incomplete group numbers
 
         // -> MonsterForceAlertNotify
-        var entity = getSceneScriptManager().getScene().getEntityByConfigId(configId, groupId);
+        var scene = context.getSceneScriptManager().getScene();
+        var entity = scene.getEntityByConfigId(configId, groupId);
         if (entity != null && entity instanceof EntityMonster monster) {
-            getSceneScriptManager().getScene().broadcastPacket(new PacketMonsterForceAlertNotify(monster.getId()));
+            scene.broadcastPacket(new PacketMonsterForceAlertNotify(monster.getId()));
         }
 
 		return 0;
@@ -613,7 +616,7 @@ public class ScriptLib {
         logger.debug("[LUA] Call SetEntityServerGlobalValueByConfigId with {}, {}, {}",
             cfgId, sgvName, value);
 
-        var scriptManager = this.getSceneScriptManager();
+        var scriptManager = context.getSceneScriptManager();
         if (scriptManager == null) return 1;
 
         var scene = scriptManager.getScene();
@@ -790,7 +793,6 @@ public class ScriptLib {
 
 		return 1;
 	}
-
 
     public static int GetSceneOwnerUid(GroupEventLuaContext context){
         return context.getSceneScriptManager().getScene().getWorld().getHost().getUid();
@@ -1927,29 +1929,30 @@ public class ScriptLib {
         return gadget.getGroupId();
     }
 
-    public int SetGadgetEnableInteract(int groupId, int configId, boolean enable) {
-        EntityGadget gadget = getCurrentEntityGadget();
-        if (gadget.getGroupId() != groupId || gadget.getConfigId() != configId) return -1;
+
+
+    public static int SetGadgetEnableInteract(ControllerLuaContext context, int groupId, int configId, boolean enable) {
+        val gadget = context.getEntity();
+        if(gadget.getGroupId() != groupId || gadget.getConfigId() != configId) return -1;
 
         gadget.setInteractEnabled(enable);
 
         return 0;
     }
 
-    public int DropSubfield(LuaTable table) {
-        String subfield_name = table.get("subfield_name").toString();
-        var entity = getCurrentEntity();
-        if (!entity.isPresent()) return -1;
+    public static int DropSubfield(ControllerLuaContext context, Object paramsTable) {
+        val gadget = context.getEntity();
+        val params = context.getEngine().getTable(paramsTable);
+        String subfield_name = params.getString("subfield_name");
 
-        entity.get().dropSubfield(subfield_name);
+        gadget.dropSubfield(subfield_name);
 
         return -1;
     }
 
     public static int[] GetGatherConfigIdList(ControllerLuaContext context) {
-        EntityGadget gadget = context.getEntity();
-
-        var children = gadget.getChildren();
+        val gadget = context.getEntity();
+        val children = gadget.getChildren();
 
         int[] configIds = new int[children.size()];
         for (int i = 0; i < children.size(); i++) {

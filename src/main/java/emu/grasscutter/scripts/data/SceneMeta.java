@@ -60,7 +60,7 @@ public class SceneMeta {
             //load all blocks
             this.groups = new HashMap<>();
             for (var block : this.blocks.values()) {
-                block.load(sceneId, this.context);
+                block.load(sceneId);
                 groups.putAll(block.groups);
             }
 
