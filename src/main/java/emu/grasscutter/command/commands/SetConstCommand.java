@@ -7,7 +7,7 @@ import emu.grasscutter.game.entity.EntityAvatar;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.world.Scene;
 import emu.grasscutter.game.world.World;
-import emu.grasscutter.server.packet.send.*;
+import emu.grasscutter.server.packet.send.PacketSceneEntityAppearNotify;
 import emu.grasscutter.utils.Position;
 
 import java.util.List;
@@ -82,8 +82,8 @@ public final class SetConstCommand implements CommandHandler {
         World world = player.getWorld();
         Scene scene = player.getScene();
         Position pos = player.getPosition();
-        world.transferPlayerToScene(player, 1, pos);
-        world.transferPlayerToScene(player, scene.getId(), pos);
+        world.transferPlayerToScene(player, 1, pos, null);
+        world.transferPlayerToScene(player, scene.getId(), pos, null);
         scene.broadcastPacket(new PacketSceneEntityAppearNotify(player));
     }
 }

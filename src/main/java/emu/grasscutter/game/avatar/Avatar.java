@@ -35,7 +35,10 @@ import lombok.val;
 import org.bson.types.ObjectId;
 
 import javax.annotation.Nonnull;
-import java.util.*;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Objects;
+import java.util.Set;
 import java.util.stream.Stream;
 
 import static emu.grasscutter.config.Configuration.GAME_OPTIONS;
@@ -43,35 +46,35 @@ import static emu.grasscutter.config.Configuration.GAME_OPTIONS;
 @Entity(value = "avatars", useDiscriminator = false)
 public class Avatar {
     @Id private ObjectId id;
-    @Indexed @Getter private int ownerId;	// Id of player that this avatar belongs to
+    @Indexed @Getter private int ownerId;    // id of player that this avatar belongs to
 
     @Transient private Player owner;
-    @Transient @Getter private AvatarData data;
-    @Transient @Getter private AvatarSkillDepotData skillDepot;
-    @Transient @Getter private long guid;	// Player unique id
-    @Getter private int avatarId;			// Id of avatar
+    @Transient @Getter protected AvatarData data;
+    @Transient @Getter protected AvatarSkillDepotData skillDepot;
+    @Transient @Getter protected long guid;    // Player unique id
+    @Getter protected int avatarId;            // id of avatar
 
-    @Getter @Setter private int level = 1;
-    @Getter @Setter private int exp;
-    @Getter @Setter private int promoteLevel;
-    @Getter @Setter private int satiation; // Fullness
-    @Getter @Setter private int satiationPenalty; // When eating too much
-    @Getter @Setter private float currentHp;
-    private float currentEnergy;
+    @Getter @Setter protected int level = 1;
+    @Getter @Setter protected int exp;
+    @Getter @Setter protected int promoteLevel;
+    @Getter @Setter protected int satiation; // Fullness
+    @Getter @Setter protected int satiationPenalty; // When eating too much
+    @Getter @Setter protected float currentHp;
+    @Getter protected float currentEnergy;
 
-    @Transient @Getter private final Int2ObjectMap<GameItem> equips;
-    @Transient @Getter private final Int2FloatOpenHashMap fightProperties;
-    @Transient @Getter private final Int2FloatOpenHashMap fightPropOverrides;
-    @Transient @Getter private Set<String> extraAbilityEmbryos;
+    @Transient @Getter protected final Int2ObjectMap<GameItem> equips = new Int2ObjectOpenHashMap<>();
+    @Transient @Getter protected final Int2FloatOpenHashMap fightProperties = new Int2FloatOpenHashMap();
+    @Transient @Getter protected final Int2FloatOpenHashMap fightPropOverrides = new Int2FloatOpenHashMap();
+    @Transient @Getter protected final Set<String> extraAbilityEmbryos = new HashSet<>();
 
-    private List<Integer> fetters;
+    @Getter protected final Set<Integer> fetters = new HashSet<>();
 
-    private final Map<Integer, Integer> skillLevelMap = new Int2IntArrayMap(7); // Talent levels
-    @Transient @Getter private final Map<Integer, Integer> skillExtraChargeMap = new Int2IntArrayMap(2); // Charges
-    @Transient private final Map<Integer, Integer> proudSkillBonusMap = new Int2IntArrayMap(2); // Talent bonus levels (from const)
+    protected final Map<Integer, Integer> skillLevelMap = new Int2IntArrayMap(7); // Talent levels
+    @Transient @Getter protected final Map<Integer, Integer> skillExtraChargeMap = new Int2IntArrayMap(2); // Charges
+    @Transient protected final Map<Integer, Integer> proudSkillBonusMap = new Int2IntArrayMap(2); // Talent bonus levels (from const)
     @Getter private int skillDepotId;
-    private Set<Integer> talentIdList; // Constellation id list
-    @Getter private Set<Integer> proudSkillList; // Character passives
+    protected Set<Integer> talentIdList; // Constellation id list
+    @Getter protected Set<Integer> proudSkillList; // Character passives
 
     @Getter @Setter private int flyCloak;
     @Getter @Setter private int costume;
@@ -83,13 +86,9 @@ public class Avatar {
     @Getter @Setter private int nameCardRewardId;
     @Getter @Setter private int nameCardId;
 
-    @Deprecated // Do not use. Morhpia only!
+    @Deprecated // Do not use. Morphia only!
     public Avatar() {
-        this.equips = new Int2ObjectOpenHashMap<>();
-        this.fightProperties = new Int2FloatOpenHashMap();
-        this.fightPropOverrides = new Int2FloatOpenHashMap();
-        this.extraAbilityEmbryos = new HashSet<>();
-        this.fetters = new ArrayList<>(); // TODO Move to avatar
+
     }
 
     // On creation
@@ -169,7 +168,7 @@ public class Avatar {
 
     public boolean addSatiation(int value) {
         if (this.satiation >= 10000) return false;
-        this.satiation += value;
+        this.satiation += (int) value;
         return true;
     }
 
@@ -260,14 +259,6 @@ public class Avatar {
         return true;
     }
 
-    public void setFetterList(List<Integer> fetterList) {
-        this.fetters = fetterList;
-    }
-
-    public List<Integer> getFetterList() {
-        return fetters;
-    }
-
     public void setCurrentEnergy() {
         if (GAME_OPTIONS.energyUsage) {
             this.setCurrentEnergy(this.currentEnergy);
@@ -288,6 +279,9 @@ public class Avatar {
         if (GAME_OPTIONS.energyUsage) {
             this.setFightProperty(curEnergyProp, currentEnergy);
             this.currentEnergy = currentEnergy;
+            if (getPlayer() != null && getPlayer().hasSentLoginPackets()) {
+                getPlayer().sendPacket(new PacketAvatarFightPropUpdateNotify(this, curEnergyProp));
+            }
             this.save();
         }
     }
@@ -311,7 +305,7 @@ public class Avatar {
     public Map<Integer, Integer> getSkillLevelMap() {  // Returns a copy of the skill levels for the current skillDepot.
         var map = new Int2IntOpenHashMap();
         this.skillDepot.getSkillsAndEnergySkill().forEach(skillId ->
-            map.put(skillId, this.skillLevelMap.putIfAbsent(skillId, 1).intValue()));
+            map.put(skillId, this.skillLevelMap.getOrDefault(skillId, 1).intValue()));
         return map;
     }
 
@@ -421,10 +415,10 @@ public class Avatar {
 
         // Extra ability embryos
         Set<String> prevExtraAbilityEmbryos = this.getExtraAbilityEmbryos();
-        this.extraAbilityEmbryos = new HashSet<>();
+        this.extraAbilityEmbryos.clear();
 
         // Fetters
-        this.setFetterList(data.getFetters());
+        this.getFetters().addAll(data.getFetters());
         this.setNameCardRewardId(data.getNameCardRewardId());
         this.setNameCardId(data.getNameCardId());
 
@@ -530,8 +524,8 @@ public class Avatar {
                 }
             }
             // Add weapon skill from affixes
-            if (weapon.getAffixes() != null && weapon.getAffixes().size() > 0) {
-                // Weapons usually dont have more than one affix but just in case...
+            if (weapon.getAffixes() != null && !weapon.getAffixes().isEmpty()) {
+                // Weapons usually don't have more than one affix but just in case...
                 for (int af : weapon.getAffixes()) {
                     if (af == 0) {
                         continue;
@@ -621,14 +615,14 @@ public class Avatar {
     }
 
     public void addToExtraAbilityEmbryos(String openConfig, boolean forceAdd) {
-        if (openConfig == null || openConfig.length() == 0) {
+        if (openConfig == null || openConfig.isEmpty()) {
             return;
         }
 
         OpenConfigEntry entry = GameData.getOpenConfigEntries().get(openConfig);
         if (entry == null) {
             if (forceAdd) {
-                // Add config string to ability skill list anyways
+                // Add config string to ability skill list anyway
                 this.getExtraAbilityEmbryos().add(openConfig);
             }
             return;
@@ -656,11 +650,9 @@ public class Avatar {
             // Packet
             Stream.of(entry.getSkillPointModifiers())
                 .mapToInt(SkillPointModifier::getSkillId)
-                .forEach(skillId -> {
-                    this.getPlayer().sendPacket(
-                        new PacketAvatarSkillMaxChargeCountNotify(this, skillId, this.getSkillExtraChargeMap().getOrDefault(skillId, 0))
-                    );
-                });
+                .forEach(skillId -> this.getPlayer().sendPacket(
+                    new PacketAvatarSkillMaxChargeCountNotify(this, skillId, this.getSkillExtraChargeMap().getOrDefault(skillId, 0))
+                ));
         }
     }
 
@@ -679,7 +671,7 @@ public class Avatar {
             .filter(Objects::nonNull)
             .map(AvatarTalentData::getOpenConfig)
             .filter(Objects::nonNull)
-            .filter(openConfig -> openConfig.length() > 0)
+            .filter(openConfig -> !openConfig.isEmpty())
             .map(GameData.getOpenConfigEntries()::get)
             .filter(Objects::nonNull)
             .forEach(e -> this.calcConstellation(e, false));
@@ -863,13 +855,10 @@ public class Avatar {
             avatarFetter.setExpNumber(this.getFetterExp());
         }
 
-
-        if (this.fetters != null) {
-            this.fetters.forEach(fetterId -> avatarFetter.addFetterList(
-                FetterData.newBuilder()
-                    .setFetterId(fetterId)
-                    .setFetterState(FetterState.FINISH.getValue())));
-        }
+        this.fetters.forEach(fetterId -> avatarFetter.addFetterList(
+            FetterData.newBuilder()
+                .setFetterId(fetterId)
+                .setFetterState(FetterState.FINISH.getValue())));
 
         AvatarInfo.Builder avatarInfo = AvatarInfo.newBuilder()
                 .setAvatarId(this.getAvatarId())
@@ -957,7 +946,7 @@ public class Avatar {
     }
 
     @PrePersist
-    private void prePersist() {
+    protected void prePersist() {
         this.currentHp = this.getFightProperty(FightProperty.FIGHT_PROP_CUR_HP);
     }
 }

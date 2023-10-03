@@ -7,11 +7,10 @@ import emu.grasscutter.Grasscutter.ServerDebugMode;
 import emu.grasscutter.Grasscutter.ServerRunMode;
 import emu.grasscutter.utils.JsonUtils;
 
-import java.net.URI;
-import java.util.Set;
 import java.lang.reflect.Field;
 import java.util.Arrays;
 import java.util.Locale;
+import java.util.Set;
 
 import static emu.grasscutter.Grasscutter.config;
 
@@ -146,6 +145,8 @@ public class ConfigContainer {
         public int accessPort = 0;
 
         /* Entities within a certain range will be loaded for the player */
+
+        public String timeZone = "Asia/Shanghai";
         public int loadEntitiesForPlayerRange = 300;
         public boolean enableScriptInBigWorld = true;
         public boolean useJNLua=false;

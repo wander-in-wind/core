@@ -19,7 +19,7 @@ public class ScriptMonsterTideService {
     private final AtomicInteger monsterAlive;
     private final AtomicInteger monsterTotalCount;
     private final AtomicInteger monsterKillCount;
-    private final int tideIndex;
+    private final int tideIndex; // challengeIndex on other forks
     private final int stageLimitMin;
     private final int stageLimitMax;
     private final ConcurrentLinkedQueue<Integer> monsterConfigOrders;
@@ -27,7 +27,7 @@ public class ScriptMonsterTideService {
     private final OnMonsterCreated onMonsterCreated = new OnMonsterCreated();
     private final OnMonsterDead onMonsterDead = new OnMonsterDead();
 
-    public ScriptMonsterTideService(SceneScriptManager sceneScriptManager, int tideIndex, SceneGroup group, Integer[] monsterConfigIds, int totalCount, int stageLimitMin, int stageLimitMax) {
+    public ScriptMonsterTideService(SceneScriptManager sceneScriptManager, int tideIndex, SceneGroup group, int totalCount, Integer[] monsterConfigIds, int stageLimitMin, int stageLimitMax) {
         this.sceneScriptManager = sceneScriptManager;
         this.currentGroup = group;
         this.tideIndex = tideIndex;
@@ -79,9 +79,9 @@ public class ScriptMonsterTideService {
                 sceneScriptManager.addEntity(sceneScriptManager.createMonster(currentGroup.id, currentGroup.block_id, getNextMonster()));
                 return;
             }
-            if (monsterTotalCount.get() <= 0) {
-                sceneScriptManager.callEvent(new ScriptArgs(currentGroup.id, EventType.EVENT_MONSTER_TIDE_DIE, monsterKillCount.get()).setEventSource(String.valueOf(tideIndex)));
-            }
+            // spawn the last turn of monsters
+            sceneScriptManager.callEvent(new ScriptArgs(currentGroup.id, EventType.EVENT_MONSTER_TIDE_DIE, monsterKillCount.get())
+                .setEventSource(String.valueOf(tideIndex)));
         }
 
     }

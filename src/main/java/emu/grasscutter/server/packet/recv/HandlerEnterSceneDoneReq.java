@@ -2,10 +2,9 @@ package emu.grasscutter.server.packet.recv;
 
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.game.player.Player.SceneLoadState;
-import emu.grasscutter.game.quest.QuestGroupSuite;
 import emu.grasscutter.net.packet.Opcodes;
-import emu.grasscutter.net.packet.PacketOpcodes;
 import emu.grasscutter.net.packet.PacketHandler;
+import emu.grasscutter.net.packet.PacketOpcodes;
 import emu.grasscutter.server.game.GameSession;
 import emu.grasscutter.server.packet.send.*;
 
@@ -31,6 +30,9 @@ public class HandlerEnterSceneDoneReq extends PacketHandler {
         session.send(new PacketWorldPlayerLocationNotify(session.getPlayer().getWorld()));
         session.send(new PacketScenePlayerLocationNotify(session.getPlayer().getScene()));
         session.send(new PacketWorldPlayerRTTNotify(session.getPlayer().getWorld()));
+
+        // Blossoms, should broadcast the information of the world owner instead
+        session.getPlayer().getWorld().getOwner().getBlossomManager().loadBlossomGroup();
 
         // spawn NPC
         session.getPlayer().getScene().loadNpcForPlayerEnter(session.getPlayer());

@@ -2,10 +2,12 @@ package emu.grasscutter.data.excels;
 
 import emu.grasscutter.data.GameResource;
 import emu.grasscutter.data.ResourceType;
-import lombok.Getter;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @ResourceType(name = "TowerFloorExcelConfigData.json")
-@Getter
+@Data
+@EqualsAndHashCode(callSuper = false)
 public class TowerFloorData extends GameResource {
     private int floorId;
     private int floorIndex;
