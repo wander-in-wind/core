@@ -9,6 +9,7 @@ import emu.grasscutter.game.quest.QuestValueCond;
 import lombok.val;
 
 import static emu.grasscutter.game.quest.enums.QuestCond.QUEST_COND_STATE_NOT_EQUAL;
+import static emu.grasscutter.game.quest.enums.QuestState.QUEST_STATE_NONE;
 
 @QuestValueCond(QUEST_COND_STATE_NOT_EQUAL)
 public class ConditionStateNotEqual extends BaseCondition {
@@ -17,8 +18,9 @@ public class ConditionStateNotEqual extends BaseCondition {
     public boolean execute(Player owner, SubQuestData questData, QuestAcceptCondition condition, String paramStr, int... params) {
         val questId = condition.getParam()[0];
         val questStateValue = condition.getParam()[1];
-        GameQuest checkQuest = owner.getQuestManager().getQuestById(questId);
-        return checkQuest != null && checkQuest.getState().getValue() != questStateValue;
+        val checkQuest = owner.getQuestManager().getQuestById(questId);
+        val curQuestState = checkQuest != null ? checkQuest.getState() : QUEST_STATE_NONE;
+        return curQuestState.getValue() != questStateValue;
     }
 
 }
