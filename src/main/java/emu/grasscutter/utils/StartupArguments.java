@@ -101,19 +101,17 @@ public final class StartupArguments {
         Loggers.getScriptSystem().setLevel(loggers.scriptLevel);
         Grasscutter.getLogger().debug("The logger is now running in debug mode.");
 
-            // Log level to other third-party services
-            Level loggerLevel = loggers.servicesLoggersLevel;
-            // Change loggers to debug.
-            ((Logger) LoggerFactory.getLogger("io.javalin")).setLevel(loggerLevel);
-            ((Logger) LoggerFactory.getLogger("org.quartz")).setLevel(loggerLevel);
-            ((Logger) LoggerFactory.getLogger("org.reflections")).setLevel(loggerLevel);
-            ((Logger) LoggerFactory.getLogger("org.eclipse.jetty")).setLevel(loggerLevel);
-            ((Logger) LoggerFactory.getLogger("org.mongodb.driver")).setLevel(loggerLevel);
-        }
+        // Log level to other third-party services
+        Level loggerLevel = loggers.servicesLoggersLevel;
 
-        // Set the main logger to debug.
-        Grasscutter.getLogger().setLevel(DEBUG_MODE_INFO.serverLoggerLevel);
-        Grasscutter.getLogger().debug("The logger is now running in debug mode.");
+        // Change loggers to debug.
+        ((Logger) LoggerFactory.getLogger("io.javalin")).setLevel(loggerLevel);
+        ((Logger) LoggerFactory.getLogger("org.quartz")).setLevel(loggerLevel);
+        ((Logger) LoggerFactory.getLogger("org.reflections")).setLevel(loggerLevel);
+        ((Logger) LoggerFactory.getLogger("org.eclipse.jetty")).setLevel(loggerLevel);
+        ((Logger) LoggerFactory.getLogger("org.mongodb.driver")).setLevel(loggerLevel);
+        ((Logger) LoggerFactory.getLogger("emu.grasscutter.scripts")).setLevel(loggerLevel);
+
         return false;
     }
 }

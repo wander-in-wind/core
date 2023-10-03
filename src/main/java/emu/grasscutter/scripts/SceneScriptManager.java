@@ -13,7 +13,6 @@ import emu.grasscutter.game.entity.EntityNPC;
 import emu.grasscutter.game.entity.EntityRegion;
 import emu.grasscutter.game.entity.GameEntity;
 import emu.grasscutter.game.entity.gadget.platform.BaseRoute;
-import emu.grasscutter.game.props.EntityIdType;
 import emu.grasscutter.game.quest.GameQuest;
 import emu.grasscutter.game.quest.QuestGroupSuite;
 import emu.grasscutter.game.quest.enums.QuestContent;
@@ -41,7 +40,6 @@ import org.slf4j.Logger;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import javax.script.ScriptException;
-
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -54,7 +52,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
-import static emu.grasscutter.scripts.constants.EventType.EVENT_TIMER_EVENT;
+import static emu.grasscutter.scripts.constants.EventType.*;
 
 public class SceneScriptManager {
     private static final Logger logger = Loggers.getScriptSystem();
@@ -530,7 +528,7 @@ public class SceneScriptManager {
     }
 
     public void checkRegions() {
-        if (this.regions.size() == 0) {
+        if (this.regions.isEmpty()) {
             return;
         }
 
@@ -541,13 +539,6 @@ public class SceneScriptManager {
             getScene().getEntities().values().stream()
                 .filter(e -> metaRegion.contains(e.getPosition()) && !region.getEntities().contains(e))
                 .forEach(region::addEntity);
-
-            if (region.hasNewEntities()) {
-                logger.trace("Call EVENT_ENTER_REGION_{}",region.getMetaRegion().config_id);
-                callEvent(new ScriptArgs(region.getGroupId(), EventType.EVENT_ENTER_REGION, region.getConfigId())
-                    .setSourceEntityId(region.getId())
-                    .setTargetEntityId(targetID)
-                );
 
             region.getEntities().stream()
                 .filter(e -> !metaRegion.contains(e.getPosition()))
@@ -560,9 +551,9 @@ public class SceneScriptManager {
             // call leave region events for left entities
             region.getLeftEntities().forEach(entity -> callRegionEvent(region, EventType.EVENT_LEAVE_REGION, entity));
             region.resetEntityLeave();
+
         }
     }
-
     private void callRegionEvent(EntityRegion region, int eventType, GameEntity entity) {
         callEvent(new ScriptArgs(region.getGroupId(), eventType, region.getConfigId())
             .setEventSource(entity.getEntityType().getValue())

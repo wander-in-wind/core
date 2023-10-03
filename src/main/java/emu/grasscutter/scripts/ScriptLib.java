@@ -17,6 +17,7 @@ import emu.grasscutter.game.entity.gadget.platform.ConfigRoute;
 import emu.grasscutter.game.entity.gadget.platform.PointArrayRoute;
 import emu.grasscutter.game.props.ClimateType;
 import emu.grasscutter.game.props.EntityIdType;
+import emu.grasscutter.game.props.EntityType;
 import emu.grasscutter.game.quest.enums.QuestCond;
 import emu.grasscutter.game.quest.enums.QuestContent;
 import emu.grasscutter.game.quest.enums.QuestState;
