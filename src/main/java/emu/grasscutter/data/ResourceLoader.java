@@ -57,8 +57,7 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import static emu.grasscutter.utils.FileUtils.getDataPath;
-import static emu.grasscutter.utils.FileUtils.getResourcePath;
+import static emu.grasscutter.utils.FileUtils.*;
 import static emu.grasscutter.utils.Language.translate;
 
 public class ResourceLoader {
@@ -849,39 +848,34 @@ public class ResourceLoader {
 
     private static void loadTrialAvatarCustomData() {
         try {
-            String pathName = "TrialAvatar/";
-            try {
-                JsonUtils.loadToList(
-                    getResourcePath(pathName + "TrialAvatarActivityDataExcelConfigData.json"),
-                    TrialAvatarActivityDataData.class).forEach(instance -> {
-                        instance.onLoad();
-                        GameData.getTrialAvatarActivityDataCustomData()
-                            .put(instance.getTrialAvatarIndexId(), instance);
-                    });
-            } catch (IOException | NullPointerException ignored) {}
-            logger.debug("Loaded trial activity custom data.");
-            try {
-                JsonUtils.loadToList(
-                    getResourcePath(pathName + "TrialAvatarActivityExcelConfigData.json"),
-                    TrialAvatarActivityCustomData.class).forEach(instance -> {
-                        instance.onLoad();
-                        GameData.getTrialAvatarActivityCustomData()
-                            .put(instance.getScheduleId(), instance);
-                    });
-            } catch (IOException | NullPointerException ignored) {}
-            logger.debug("Loaded trial activity schedule custom data.");
-            try {
-                JsonUtils.loadToList(
-                    getResourcePath(pathName + "TrialAvatarCustomConfigData.json"),
-                    TrialAvatarCustomData.class).forEach(instance -> {
-                        GameData.getTrialAvatarCustomData()
-                            .put(instance.getTrialAvatarId(), instance);
-                    });
-            } catch (IOException | NullPointerException ignored) {}
-            logger.debug("Loaded trial avatar custom data.");
-        } catch (Exception e) {
-            logger.error("Unable to load trial avatar custom data.", e);
-        }
+            JsonUtils.loadToList(
+                getExcelPath("TrialAvatarActivityDataExcelConfigData.json"),
+                TrialAvatarActivityDataData.class).forEach(instance -> {
+                instance.onLoad();
+                GameData.getTrialAvatarActivityDataCustomData()
+                    .put(instance.getTrialAvatarIndexId(), instance);
+            });
+            logger.debug("[TrialAvatar] Loaded trial activity custom data.");
+        } catch (IOException | NullPointerException ignored) {}
+        try {
+            JsonUtils.loadToList(
+                getExcelPath("TrialAvatarActivityExcelConfigData.json"),
+                TrialAvatarActivityCustomData.class).forEach(instance -> {
+                instance.onLoad();
+                GameData.getTrialAvatarActivityCustomData()
+                    .put(instance.getScheduleId(), instance);
+            });
+            logger.debug("[TrialAvatar] Loaded trial activity schedule custom data.");
+        } catch (IOException | NullPointerException ignored) {}
+        try {
+            JsonUtils.loadToList(
+                getExcelPath("TrialAvatarCustomConfigData.json"),
+                TrialAvatarCustomData.class).forEach(instance -> {
+                GameData.getTrialAvatarCustomData()
+                    .put(instance.getTrialAvatarId(), instance);
+            });
+            logger.debug("[TrialAvatar] Loaded trial avatar custom data.");
+        } catch (IOException | NullPointerException ignored) {}
     }
 
     private static void loadGroupReplacements(){
@@ -908,7 +902,7 @@ public class ResourceLoader {
         } else {
             logger.debug("Loaded {} group replacements.", GameData.getGroupReplacements().size());
             GameData.getGroupReplacements().forEach((group, groups) -> {
-                logger.debug("{} -> {}", group, groups.getReplace_groups().stream().map(String::valueOf).collect(Collectors.joining(",")));
+                logger.trace("{} -> {}", group, groups.getReplace_groups().stream().map(String::valueOf).collect(Collectors.joining(",")));
             });
         }
     }

@@ -6,7 +6,10 @@ import emu.grasscutter.BuildConfig;
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.Grasscutter.ServerRunMode;
 import emu.grasscutter.Loggers;
+import emu.grasscutter.command.CommandMap;
 import emu.grasscutter.net.packet.PacketOpcodesUtils;
+import emu.grasscutter.scripts.ScriptLoader;
+import emu.grasscutter.tools.Tools;
 import lombok.val;
 import org.slf4j.LoggerFactory;
 
@@ -36,6 +39,17 @@ public final class StartupArguments {
             Grasscutter.setRunModeOverride(ServerRunMode.GAME_ONLY); return false;
         },"-dispatch", parameter -> {
             Grasscutter.setRunModeOverride(ServerRunMode.DISPATCH_ONLY); return false;
+        },
+        "-handbook", parameter -> {
+            // Generate handbooks.
+            Grasscutter.getLogger().info("Generating handbooks...");
+            try {
+                ScriptLoader.init();
+                Tools.createGmHandbooks(true);
+            } catch (Exception e) {
+                Grasscutter.getLogger().error("Error while generating handbooks.", e);
+            }
+            return true;
         },
 
         // Aliases.

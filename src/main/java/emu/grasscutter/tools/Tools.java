@@ -95,14 +95,14 @@ public final class Tools {
 
         // Commands
         h.newSection("Commands");
-        final List<CommandHandler> cmdList = CommandMap.getInstance().getHandlersAsList();
+        final List<CommandHandler> cmdList = new CommandMap(true).getHandlersAsList();
         final String padCmdLabel = "%" + cmdList.stream().map(CommandHandler::getLabel).map(String::length).max(Integer::compare).get().toString() + "s : ";
         for (CommandHandler cmd : cmdList) {
             final String label = padCmdLabel.formatted(cmd.getLabel());
             final String descKey = cmd.getDescriptionKey();
             for (int i = 0; i < TextStrings.NUM_LANGUAGES; i++) {
                 String desc = languages.get(i).get(descKey).replace("\n", "\n\t\t\t\t").replace("\t", "    ");
-                handbookBuilders.get(i).append(label + desc + "\n");
+                handbookBuilders.get(i).append(label).append(desc).append("\n");
             }
         }
         // Avatars
