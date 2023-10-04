@@ -2,6 +2,7 @@ package emu.grasscutter.scripts.data;
 
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.scripts.ScriptLoader;
+import emu.grasscutter.scripts.lua_engine.ScriptType;
 import emu.grasscutter.utils.Position;
 import lombok.Setter;
 import lombok.ToString;
@@ -45,7 +46,7 @@ public class SceneBlock {
         this.sceneId = sceneId;
         this.setLoaded(true);
 
-        val cs = ScriptLoader.getScript("Scene/" + sceneId + "/scene" + sceneId + "_block" + this.id + ".lua");
+        val cs = ScriptLoader.getScript("Scene/" + sceneId + "/scene" + sceneId + "_block" + this.id + ".lua", ScriptType.DATA_STORAGE);
 
         if (cs == null) {
             return null;

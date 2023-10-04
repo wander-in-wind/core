@@ -3,14 +3,12 @@ package emu.grasscutter.scripts.data;
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.scripts.ScriptLoader;
 import emu.grasscutter.scripts.lua_engine.LuaScript;
+import emu.grasscutter.scripts.lua_engine.ScriptType;
 import lombok.Setter;
 import lombok.ToString;
 import lombok.val;
 
-import javax.script.Bindings;
-import javax.script.CompiledScript;
 import javax.script.ScriptException;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -32,7 +30,7 @@ public class SceneMeta {
 
     public SceneMeta load(int sceneId) {
         // Get compiled script if cached
-        val cs = ScriptLoader.getScript("Scene/" + sceneId + "/scene" + sceneId + ".lua");
+        val cs = ScriptLoader.getScript("Scene/" + sceneId + "/scene" + sceneId + ".lua", ScriptType.DATA_STORAGE);
 
         if (cs == null) {
             Grasscutter.getLogger().warn("No script found for scene " + sceneId);

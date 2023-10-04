@@ -34,6 +34,7 @@ import emu.grasscutter.scripts.EntityControllerScriptManager;
 import emu.grasscutter.scripts.SceneIndexManager;
 import emu.grasscutter.scripts.ScriptLoader;
 import emu.grasscutter.scripts.data.DummyPoint;
+import emu.grasscutter.scripts.lua_engine.ScriptType;
 import emu.grasscutter.utils.FileUtils;
 import emu.grasscutter.utils.JsonUtils;
 import emu.grasscutter.utils.TsvUtils;
@@ -759,7 +760,7 @@ public class ResourceLoader {
                 val matcher = pattern.matcher(path.getFileName().toString());
                 if (!matcher.find()) return;
 
-                val cs = ScriptLoader.getScript("Quest/Share/"+path.getFileName().toString());
+                val cs = ScriptLoader.getScript("Quest/Share/"+path.getFileName().toString(), ScriptType.DATA_STORAGE);
                 if (cs == null) return;
 
                 try{
@@ -794,7 +795,7 @@ public class ResourceLoader {
                 val targetScript = "Scene/"+sceneId+"/scene"+sceneId+"_dummy_points.lua";
                 val targetPath = FileUtils.getScriptPath(targetScript);
                 if(Files.notExists(targetPath)) return;
-                val cs =  ScriptLoader.getScript(targetScript);
+                val cs =  ScriptLoader.getScript(targetScript, ScriptType.DATA_STORAGE);
                 if (cs == null) return;
 
                 try{
@@ -919,7 +920,7 @@ public class ResourceLoader {
 
     private static void loadGroupReplacements(){
 
-        val cs = ScriptLoader.getScript("Scene/groups_replacement.lua");
+        val cs = ScriptLoader.getScript("Scene/groups_replacement.lua", ScriptType.DATA_STORAGE);
         if (cs == null) {
             logger.error("Error while loading Group Replacements: file not found");
             return;
