@@ -228,6 +228,7 @@ public class Scene {
         activeTeam.clear();
         Optional.ofNullable(player.getTeamManager().getCurrentTeamInfo()).map(TeamInfo::getAvatars).stream()
             .flatMap(List::stream).map(player.getAvatars()::getAvatarById)
+            .filter(Objects::nonNull)
             .map(avatar -> new EntityAvatar(player.getScene(), avatar)).forEach(activeTeam::add);
     }
 
