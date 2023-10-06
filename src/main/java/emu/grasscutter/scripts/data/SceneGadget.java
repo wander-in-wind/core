@@ -14,13 +14,14 @@ public class SceneGadget extends SceneObject{
     public int chest_drop_id;
     public int drop_count;
     public String drop_tag;
-    boolean showcutscene;
-    boolean persistence;
+    public boolean showcutscene;
+    public boolean persistence;
     public int state;
 
     public int point_type;
     public int owner;
     public SceneBossChest boss_chest;
+    public boolean is_blossom_chest;
     public int interact_id;
     /**
      * Note: this field indicates whether the gadget should disappear permanently.
@@ -41,5 +42,9 @@ public class SceneGadget extends SceneObject{
 
     public void setIsOneoff(boolean isOneoff) {
         this.isOneoff = isOneoff;
+    }
+
+    public void setIs_blossom_chest(boolean is_blossom_chest) {
+        this.is_blossom_chest = is_blossom_chest;
     }
 }

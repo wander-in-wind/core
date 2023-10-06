@@ -39,8 +39,8 @@ public class GadgetChest extends GadgetContent {
             SceneGadget chest = getGadget().getMetaGadget();
             DropSystem dropSystem = player.getServer().getDropSystem();
             if (chest.boss_chest != null && chest.drop_tag != null) {
-                //Boss chest drop
-                //TODO:check for blossom chests
+                //boss chest drop
+                //touch the flower
                 if (req.getOpType() == InterOpType.INTER_OP_TYPE_START) {
                     //Two steps
                     player.sendPacket(new PacketGadgetInteractRsp(getGadget(), InteractType.INTERACT_TYPE_OPEN_CHEST, InterOpType.INTER_OP_TYPE_START));
@@ -56,8 +56,25 @@ public class GadgetChest extends GadgetContent {
                     return true;
                 }
                 //if failed,fallback to legacy drop system.
+            } else if (chest.is_blossom_chest) {
+                // blossom chest drop
+                // chest_drop_id is set by `ScriptLib.CreateBlossomChestByGroupId`
+                //touch the flower
+                if (req.getOpType() == InterOpType.INTER_OP_TYPE_START) {
+                    //Two steps
+                    player.sendPacket(new PacketGadgetInteractRsp(getGadget(), InteractType.INTERACT_TYPE_OPEN_CHEST, InterOpType.INTER_OP_TYPE_START));
+                    return false;
+                }
+                if (player.getWorld().getHost().getBlossomManager()
+                    .onReward(player, getGadget(), req.getResinCostType() == ResinCostType.RESIN_COST_TYPE_CONDENSE)) {
+                    player.getBattlePassManager().triggerMission(WatcherTriggerType.TRIGGER_OPEN_BLOSSOM_CHEST);
+                    getGadget().updateState(ScriptGadgetState.ChestOpened);
+                    player.sendPacket(new PacketGadgetInteractRsp(this.getGadget(), InteractTypeOuterClass.InteractType.INTERACT_TYPE_OPEN_CHEST, InterOpType.INTER_OP_TYPE_FINISH));
+                    return true;
+                }
+
             } else {
-                //Normal chest drop
+                //normal chest drop
                 //only the owner of the world can open chests.
                 if (player != player.getWorld().getHost()) return false;
                 boolean status = false;

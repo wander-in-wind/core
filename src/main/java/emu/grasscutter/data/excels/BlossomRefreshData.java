@@ -65,7 +65,12 @@ public class BlossomRefreshData extends GameResource implements BaseBlossomROSDa
 
     @Override
     public int getRewardId(int worldLevel) {
-        return getDropVec().get(worldLevel).getPreviewReward();
+        return getDropVec().get(worldLevel).getDropId();
+    }
+
+    @Override
+    public BlossomRefreshData getRefreshData() {
+        return this;
     }
 
     @FieldDefaults(level = AccessLevel.PRIVATE)

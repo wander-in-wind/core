@@ -1025,20 +1025,29 @@ public class ScriptLib {
     public static int CreateBlossomChestByGroupId(GroupEventLuaContext context, int groupId, int chestConfigId) {
         logger.debug("[LUA] Call check CreateBlossomChestByGroupId with {} {}", groupId, chestConfigId);
 
-        val currentGroup = context.getSceneScriptManager().getGroupById(groupId);
+        val manager = context.getSceneScriptManager();
+        val currentGroup = manager.getGroupById(groupId);
         if (currentGroup == null) return 1;
 
-        val gadget = currentGroup.gadgets.get(chestConfigId);
-        val chestGadget = context.getSceneScriptManager().createGadget(currentGroup.id, currentGroup.block_id, gadget);
-        if (chestGadget == null) return 1;
-
-        val blossomManager = context.getSceneScriptManager().getScene().getWorld().getHost().getBlossomManager();
+        val host = manager.getScene().getWorld().getHost();
+        val blossomManager = host.getBlossomManager();
         val blossomSchedule = blossomManager.getBlossomSchedule().get(currentGroup.id);
         if (blossomSchedule == null) return 1;
+        val refreshData = blossomSchedule.getRefreshData();
+
+        val gadget = currentGroup.gadgets.get(chestConfigId);
+        val chestData = GameData.getBlossomChestDataMap().get(refreshData.getBlossomChestId());
+        gadget.gadget_id = chestData.getChestGadgetId();
+        gadget.chest_drop_id = blossomSchedule.getRewardId(host.getWorldLevel());
+        val chestGadget = manager.createGadget(currentGroup.id, currentGroup.block_id, gadget);
+
+        if (chestGadget == null) return 1;
 
         blossomManager.getSpawnedChest().put(chestGadget.getConfigId(), currentGroup.id);
-        context.getSceneScriptManager().addEntity(chestGadget);
-        context.getSceneScriptManager().getScene().broadcastPacket(
+        blossomManager.getChestInfoMap().put(chestGadget.getId(),
+            blossomManager.new ChestInfo(blossomSchedule.getRewardId(host.getWorldLevel()), chestData.getResin()));
+        manager.addEntity(chestGadget);
+        manager.getScene().broadcastPacket(
             new PacketBlossomChestCreateNotify(blossomSchedule.getRefreshId(), blossomSchedule.getCircleCampId()));
         return 0;
     }

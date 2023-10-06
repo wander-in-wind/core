@@ -8,11 +8,9 @@ import emu.grasscutter.data.excels.BlossomRefreshData;
 import emu.grasscutter.data.excels.BlossomRefreshData.RefreshCond;
 import emu.grasscutter.data.excels.BlossomSectionOrderData;
 import emu.grasscutter.game.entity.EntityGadget;
-import emu.grasscutter.game.inventory.GameItem;
 import emu.grasscutter.game.managers.blossom.enums.BlossomRefreshType;
 import emu.grasscutter.game.player.BasePlayerDataManager;
 import emu.grasscutter.game.player.Player;
-import emu.grasscutter.game.props.ActionReason;
 import emu.grasscutter.net.proto.BlossomBriefInfoOuterClass.BlossomBriefInfo;
 import emu.grasscutter.net.proto.BlossomChestInfoOuterClass.BlossomChestInfo;
 import emu.grasscutter.scripts.constants.EventType;
@@ -44,6 +42,23 @@ public class BlossomManager extends BasePlayerDataManager {
      */
     private final ConcurrentHashMap<Integer, Integer> spawnedChest;
 
+    // key is chest entity id
+    @Getter
+    private final ConcurrentHashMap<Integer, ChestInfo> chestInfoMap = new ConcurrentHashMap<>();
+
+    public class ChestInfo {
+        public ChestInfo(int dropId, int resin) {
+            this.dropId = dropId;
+            this.resin = resin;
+            // TODO: are all players in the world qualified? or just players in the scene?
+            this.remainingUid = new HashSet<>(player.getWorld().getPlayers());
+        }
+
+        public final int dropId;
+        public final int resin;
+        public final Set<Player> remainingUid;
+
+    }
     public BlossomManager() {
         this.blossomSchedule = new ConcurrentHashMap<>();
         this.spawnedChest = new ConcurrentHashMap<>();
@@ -135,7 +150,6 @@ public class BlossomManager extends BasePlayerDataManager {
     public BlossomChestInfo getChestInfo(int chestConfigId, List<Integer> playersUid) {
         val scheduleOption = Optional.ofNullable(this.spawnedChest.get(chestConfigId))
             .map(this.blossomSchedule::get);
-        scheduleOption.ifPresent(schedule -> schedule.getRemainingUid().addAll(playersUid));
         return scheduleOption.map(schedule -> BlossomChestInfo.newBuilder()
             .setResin(schedule.getResin())
             .addAllQualifyUidList(playersUid)
@@ -149,26 +163,21 @@ public class BlossomManager extends BasePlayerDataManager {
      * Give player reward after challenge finish
      */
     public boolean onReward(Player player, @NonNull EntityGadget gadget, boolean useCondensedResin) {
-        val scheduleOption = Optional.ofNullable(this.spawnedChest.get(gadget.getConfigId()))
-            .map(this.blossomSchedule::get);
+        var chestInfo = chestInfoMap.get(gadget.getId());
+        if (chestInfo == null) return false;
+
         // if player is not qualified for the reward
-        if (scheduleOption.filter(s -> s.getRemainingUid().contains(player.getUid())).isEmpty()) return false;
+        if (!chestInfo.remainingUid.contains(player)) return false;
 
-        val schedule = scheduleOption.get();
-        // give rewards
+        // use resin
         val resinManager = player.getResinManager();
-        val payable = useCondensedResin ? resinManager.useCondensedResin(1) : resinManager.useResin(schedule.getResin());
+        val payable = useCondensedResin ? resinManager.useCondensedResin(1) : resinManager.useResin(chestInfo.resin);
         if (!payable) return false;
+        chestInfo.remainingUid.remove(player);
 
-        val blossomRewards = GameData.getRewardPreviewDataMap().get(schedule.getRewardId());
-        if (blossomRewards == null) return false;
-
-        player.getInventory().addItems(Stream.of(blossomRewards.getPreviewItems())
-            .map(reward -> new GameItem(reward.getItemId(), reward.getCount() * (useCondensedResin ? 2 : 1)))
-            .toList(), ActionReason.OpenBlossomChest);
-
-        schedule.getRemainingUid().remove(player.getUid());
-        return true;
+        // give rewards
+        var dropSystem = player.getServer().getDropSystem();
+        return dropSystem.handleFloraChestDrop(chestInfo.dropId, player, useCondensedResin);
     }
 
     /**

@@ -1,5 +1,6 @@
 package emu.grasscutter.data.common;
 
+import emu.grasscutter.data.excels.BlossomRefreshData;
 import emu.grasscutter.game.managers.blossom.enums.BlossomRefreshType;
 
 public interface BaseBlossomROSData {
@@ -11,4 +12,6 @@ public interface BaseBlossomROSData {
     int getRewardId(int worldLevel);
 
     BlossomRefreshType getRefreshType();
+
+    BlossomRefreshData getRefreshData();
 }

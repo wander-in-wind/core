@@ -153,7 +153,11 @@ public final class DropSystem extends BaseGameSystem {
 
     public boolean handleBossChestDrop(String dropTag, Player player) {
         int dropId = queryDropData(dropTag, bossLevel[player.getWorldLevel()], chestReward);
-        var items = processDrop(dropId, 1);
+        return handleFloraChestDrop(dropId, player, false);
+    }
+
+    public boolean handleFloraChestDrop(int dropId, Player player, boolean doubleReward) {
+        var items = processDrop(dropId, doubleReward ? 2 : 1);
         if (items == null) return false;
         player.getInventory().addItems(items, ActionReason.OpenWorldBossChest);
         player.sendPacket(new PacketGadgetAutoPickDropInfoNotify(items));

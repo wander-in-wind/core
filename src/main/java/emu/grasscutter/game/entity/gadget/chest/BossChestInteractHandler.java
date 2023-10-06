@@ -22,9 +22,6 @@ public class BossChestInteractHandler implements ChestInteractHandler{
     }
 
     public boolean onInteract(GadgetChest chest, Player player, boolean useCondensedResin) {
-        val blossomRewards = player.getScene().getWorld().getOwner().getBlossomManager().onReward(player, chest.getGadget(), useCondensedResin);
-        if (blossomRewards) return true;
-
         val worldDataManager = chest.getGadget().getScene().getWorld().getServer().getWorldDataSystem();
         val monster = chest.getGadget().getMetaGadget().group.monsters.get(chest.getGadget().getMetaGadget().boss_chest.monster_config_id);
         val reward = worldDataManager.getRewardByBossId(monster.monster_id);

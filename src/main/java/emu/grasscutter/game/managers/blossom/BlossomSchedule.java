@@ -4,7 +4,6 @@ import dev.morphia.annotations.Entity;
 import emu.grasscutter.GameConstants;
 import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.common.BaseBlossomROSData;
-import emu.grasscutter.data.excels.BlossomChestData;
 import emu.grasscutter.data.excels.BlossomGroupsData;
 import emu.grasscutter.data.excels.BlossomRefreshData;
 import emu.grasscutter.data.excels.CityData;
@@ -24,10 +23,8 @@ import org.jetbrains.annotations.NotNull;
 import java.time.LocalTime;
 import java.time.ZonedDateTime;
 import java.util.Collection;
-import java.util.HashSet;
 import java.util.Map;
 import java.util.Optional;
-import java.util.Set;
 
 @Getter
 @Builder(builderMethodName = "of", setterPrefix = "set")
@@ -49,13 +46,14 @@ public class BlossomSchedule implements BaseBlossomROSData {
     private int progress;
     private int round;
     private final int finishProgress;
-    private final Set<Integer> remainingUid = new HashSet<>();
     // gadget info related
     private final int groupId;
     private final int decorateGroupId;
     // extra
     private final BlossomRefreshType refreshType;
     private String lastCycledTime;
+    @Getter(onMethod = @__(@Override))
+    private final BlossomRefreshData refreshData;
 
     /**
      * Builder function
@@ -73,7 +71,7 @@ public class BlossomSchedule implements BaseBlossomROSData {
                 .setSceneId(sceneId)
                 .setCityId(baseData.getCityId())
                 .setPosition(gadget.pos)
-                .setResin(getResinCost(baseData.getRefreshType()))
+                .setResin(getResinCost(baseData.getRefreshData()))
                 .setMonsterLevel(getMonsterLevel(worldLevel))
                 .setRewardId(baseData.getRewardId(worldLevel))
                 .setCircleCampId(groupsData.getId())
@@ -83,6 +81,7 @@ public class BlossomSchedule implements BaseBlossomROSData {
                 .setDecorateGroupId(groupsData.getDecorateGroupId())
                 .setRefreshType(baseData.getRefreshType())
                 .setLastCycledTime(getLastRefreshTimeStr(baseData))
+                .setRefreshData(baseData.getRefreshData())
                 .build())
             .findFirst().orElse(null);
     }
@@ -127,11 +126,9 @@ public class BlossomSchedule implements BaseBlossomROSData {
     /**
      * Get resin cost of current blossom camp
      */
-    private static int getResinCost(BlossomRefreshType refreshType) {
-        return GameData.getBlossomChestDataMap().values().stream()
-            .filter(c -> c.getBlossomRefreshType() == refreshType)
-            .map(BlossomChestData::getResin)
-            .findFirst().orElse(0);
+    private static int getResinCost(BlossomRefreshData refreshData) {
+        var chestData = GameData.getBlossomChestDataMap().get(refreshData.getBlossomChestId());
+        return chestData != null ? chestData.getResin() : 0;
     }
 
     /**
