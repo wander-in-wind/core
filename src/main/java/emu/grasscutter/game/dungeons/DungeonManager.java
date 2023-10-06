@@ -120,7 +120,7 @@ public class DungeonManager {
 
     private boolean hasRewards() {
         //TODO check dungeonData.passRewardId and dungeondata.passRewardPreviewId only as fallback
-        return this.dungeonData.getRewardPreviewData() != null && this.dungeonData.getRewardPreviewData().getPreviewItems().length > 0;
+        return dungeonData.getStatueDrop() != 0 || this.dungeonData.getRewardPreviewData() != null && this.dungeonData.getRewardPreviewData().getPreviewItems().length > 0;
     }
 
     private boolean hasPlayerClaimedRewards(Player player) {
@@ -138,8 +138,8 @@ public class DungeonManager {
             return false;
 
         // Get and roll rewards.
-        List<GameItem> rewards = player.getServer().getDropSystem().handleDungeonRewardDrop(dungeonData.getStatueDrop(), useCondensed);
-        if (rewards.isEmpty()) {
+        var rewards = player.getServer().getDropSystem().handleDungeonRewardDrop(dungeonData.getStatueDrop(), useCondensed);
+        if (rewards == null || rewards.isEmpty()) {
             //fallback to legacy drop system
             Grasscutter.getLogger().warn("dungeon drop failed for {}", dungeonData.getId());
             rewards = new ArrayList<>(this.rollRewards(useCondensed));

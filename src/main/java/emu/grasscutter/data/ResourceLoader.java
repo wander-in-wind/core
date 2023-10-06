@@ -14,7 +14,9 @@ import emu.grasscutter.data.common.quest.SubQuestData;
 import emu.grasscutter.data.custom.TrialAvatarActivityCustomData;
 import emu.grasscutter.data.custom.TrialAvatarCustomData;
 import emu.grasscutter.data.excels.TrialAvatarActivityDataData;
-import emu.grasscutter.data.server.*;
+import emu.grasscutter.data.server.ActivityCondGroup;
+import emu.grasscutter.data.server.GadgetMapping;
+import emu.grasscutter.data.server.MonsterMapping;
 import emu.grasscutter.game.ability.Ability;
 import emu.grasscutter.game.dungeons.DungeonDrop;
 import emu.grasscutter.game.dungeons.dungeon_entry.DungeonEntries;
@@ -48,7 +50,6 @@ import org.slf4j.Logger;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.LinkOption;
 import java.nio.file.Path;
@@ -139,7 +140,6 @@ public class ResourceLoader {
         loadConfigLevelEntityData();
         loadScriptData();
         loadGadgetMappings();
-        loadSubfieldMappings();
         loadMonsterMappings();
         loadActivityCondGroups();
         loadTrialAvatarCustomData();
@@ -830,37 +830,6 @@ public class ResourceLoader {
         }
     }
 
-    private static void loadSubfieldMappings() {
-        try {
-            val subfieldMap = GameData.getSubfieldMappingMap();
-            try {
-                JsonUtils.loadToList(getResourcePath("Server/SubfieldMapping.json"), SubfieldMapping.class).forEach(entry -> subfieldMap.put(entry.getEntityId(), entry));
-            } catch (IOException | NullPointerException ignored) {}
-            logger.debug("Loaded {} subfield mappings.", subfieldMap.size());
-        } catch (Exception e) {
-            logger.error("Unable to load subfield mappings.", e);
-        }
-
-        try {
-            val dropSubfieldMap = GameData.getDropSubfieldMappingMap();
-            try {
-                JsonUtils.loadToList(getResourcePath("Server/DropSubfieldMapping.json"), DropSubfieldMapping.class).forEach(entry -> dropSubfieldMap.put(entry.getDropId(), entry));
-            } catch (IOException | NullPointerException ignored) {}
-            logger.debug("Loaded {} drop subfield mappings.", dropSubfieldMap.size());
-        } catch (Exception e) {
-            logger.error("Unable to load drop subfield mappings.", e);
-        }
-
-        try {
-            val dropTableExcelConfigDataMap = GameData.getDropTableExcelConfigDataMap();
-            try {
-                JsonUtils.loadToList(getResourcePath("Server/DropTableExcelConfigData.json"), DropTableExcelConfigData.class).forEach(entry -> dropTableExcelConfigDataMap.put(entry.getId(), entry));
-            } catch (IOException | NullPointerException ignored) {}
-            logger.debug("Loaded {} drop table configs.", dropTableExcelConfigDataMap.size());
-        } catch (Exception e) {
-            logger.error("Unable to load drop table config data.", e);
-        }
-    }
 
     private static void loadMonsterMappings() {
         try {

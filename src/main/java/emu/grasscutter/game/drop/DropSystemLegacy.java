@@ -52,10 +52,8 @@ public class DropSystemLegacy extends BaseGameSystem {
     private void addDropEntity(DropData dd, Scene dropScene, ItemData itemData, Position pos, int num, Player target) {
         if (!dd.isGive() && (itemData.getItemType() != ItemType.ITEM_VIRTUAL || itemData.getGadgetId() != 0)) {
             EntityItem entity = new EntityItem(dropScene, target, itemData, pos, num, dd.isShare());
-            if (!dd.isShare())
-                dropScene.addEntityToSingleClient(target, entity);
-            else
-                dropScene.addEntity(entity);
+            //EntityItem and GameEntity will do everything now
+            dropScene.addEntity(entity);
         } else {
             if (target != null) {
                 target.getInventory().addItem(new GameItem(itemData, num), ActionReason.SubfieldDrop, true);

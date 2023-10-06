@@ -15,6 +15,7 @@ import emu.grasscutter.scripts.data.SceneGroup;
 import emu.grasscutter.scripts.data.SceneMonster;
 import emu.grasscutter.server.game.BaseGameSystem;
 import emu.grasscutter.server.game.GameServer;
+import lombok.Getter;
 import lombok.val;
 import org.luaj.vm2.LuaError;
 
@@ -25,7 +26,7 @@ import java.util.Objects;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class WorldDataSystem extends BaseGameSystem {
-    private final Map<String, ChestInteractHandler> chestInteractHandlerMap; // chestType-Handler
+    @Getter private final Map<String, ChestInteractHandler> chestInteractHandlerMap; // chestType-Handler
     private final Map<String, SceneGroup> sceneInvestigationGroupMap; // <sceneId_groupId, Group>
 
     public WorldDataSystem(GameServer server) {
@@ -50,9 +51,6 @@ public class WorldDataSystem extends BaseGameSystem {
         }
     }
 
-    public Map<String, ChestInteractHandler> getChestInteractHandlerMap() {
-        return chestInteractHandlerMap;
-    }
     @Deprecated
     public RewardPreviewData getRewardByBossId(int monsterId) {
         var investigationMonsterData = GameData.getInvestigationMonsterDataMap().values().parallelStream()

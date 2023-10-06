@@ -13,7 +13,9 @@ import emu.grasscutter.data.common.quest.SubQuestData;
 import emu.grasscutter.data.custom.TrialAvatarActivityCustomData;
 import emu.grasscutter.data.custom.TrialAvatarCustomData;
 import emu.grasscutter.data.excels.*;
-import emu.grasscutter.data.server.*;
+import emu.grasscutter.data.server.ActivityCondGroup;
+import emu.grasscutter.data.server.GadgetMapping;
+import emu.grasscutter.data.server.MonsterMapping;
 import emu.grasscutter.game.dungeons.DungeonDropEntry;
 import emu.grasscutter.game.dungeons.dungeon_entry.DungeonEntries;
 import emu.grasscutter.game.quest.QuestEncryptionKey;
@@ -21,7 +23,6 @@ import emu.grasscutter.game.quest.RewindData;
 import emu.grasscutter.game.quest.TeleportData;
 import emu.grasscutter.game.quest.enums.QuestCond;
 import emu.grasscutter.game.world.GroupReplacementData;
-import emu.grasscutter.game.quest.enums.QuestCond;
 import emu.grasscutter.scripts.data.DummyPoint;
 import emu.grasscutter.utils.Utils;
 import it.unimi.dsi.fastutil.ints.*;
@@ -100,8 +101,10 @@ public class GameData {
     @Getter private static final Int2ObjectMap<CookRecipeData> cookRecipeDataMap = new Int2ObjectOpenHashMap<>();
     @Getter private static final Int2ObjectMap<CompoundData> compoundDataMap=new Int2ObjectOpenHashMap<>();
     @Getter private static final Int2ObjectMap<DailyDungeonData> dailyDungeonDataMap = new Int2ObjectOpenHashMap<>();
-    @Getter private static final Int2ObjectMap<DropTableData> dropTableDataMap=new Int2ObjectOpenHashMap<>();
-    @Getter private static final Int2ObjectMap<DropMaterialData> dropMaterialDataMap=new Int2ObjectOpenHashMap<>();
+    @Getter private static final Int2ObjectMap<DropTableData> dropTableDataMap = new Int2ObjectOpenHashMap<>();
+    @Getter private static final Int2ObjectMap<DropMaterialData> dropMaterialDataMap = new Int2ObjectOpenHashMap<>();
+    @Getter private static final Int2ObjectMap<DropSubfieldData> dropSubfieldDataMap = new Int2ObjectOpenHashMap<>();
+    @Getter private static final Int2ObjectMap<EntityDropData> entityDropDataMap = new Int2ObjectOpenHashMap<>();
     @Getter private static final Int2ObjectMap<DungeonData> dungeonDataMap = new Int2ObjectOpenHashMap<>();
     @Getter private static final Int2ObjectMap<DungeonElementChallengeData> dungeonElementChallengeDataMap = new Int2ObjectOpenHashMap<>();
     @Getter private static final Int2ObjectMap<DungeonEntryData> dungeonEntryDataMap = new Int2ObjectOpenHashMap<>();
@@ -175,9 +178,6 @@ public class GameData {
 
     // Custom community server resources
     @Getter private static final Int2ObjectMap<GadgetMapping> gadgetMappingMap = new Int2ObjectOpenHashMap<>();
-    @Getter private static final Int2ObjectMap<SubfieldMapping> subfieldMappingMap = new Int2ObjectOpenHashMap<>();
-    @Getter private static final Int2ObjectMap<DropSubfieldMapping> dropSubfieldMappingMap = new Int2ObjectOpenHashMap<>();
-    @Getter private static final Int2ObjectMap<DropTableExcelConfigData> dropTableExcelConfigDataMap = new Int2ObjectOpenHashMap<>();
     @Getter private static final Int2ObjectMap<MonsterMapping> monsterMappingMap = new Int2ObjectOpenHashMap<>();
     @Getter private static final Int2ObjectMap<ActivityCondGroup> activityCondGroupMap = new Int2ObjectOpenHashMap<>();
     @Getter private static final Int2ObjectMap<GroupReplacementData> groupReplacements = new Int2ObjectOpenHashMap<>();

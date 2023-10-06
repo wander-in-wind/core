@@ -1,10 +1,10 @@
 package emu.grasscutter.scripts.data;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import lombok.Setter;
 import lombok.ToString;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @ToString
 @Setter
@@ -15,7 +15,7 @@ public class SceneSuite {
 	public List<String> triggers = List.of();
     public List<Integer> regions = List.of();
     public int rand_weight;
-    public int[] npcs;
+    public List<Integer> npcs = List.of();
 
     public boolean ban_refresh = false;
 

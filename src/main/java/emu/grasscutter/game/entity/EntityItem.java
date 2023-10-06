@@ -29,10 +29,14 @@ import emu.grasscutter.utils.ProtoHelper;
 import it.unimi.dsi.fastutil.ints.Int2FloatMap;
 import lombok.Getter;
 
+import java.util.HashSet;
+import java.util.Optional;
+
+@Getter
 public class EntityItem extends EntityBaseGadget {
-    @Getter private final GameItem item;
-    @Getter private final long guid;
-    @Getter private final boolean share;
+    private final GameItem item;
+    private final long guid;
+    private final boolean share;
 
     public EntityItem(Scene scene, Player player, ItemData itemData, Position pos, int count) {
         this(scene, player, itemData, pos, count, true);
@@ -49,12 +53,25 @@ public class EntityItem extends EntityBaseGadget {
     // In official game, some drop items are shared to all players, and some other items are independent to all players
     // For example, if you killed a monster in MP mode, all players could get drops but rarity and number of them are different
     // but if you broke regional mine, when someone picked up the drop then it disappeared
+
+    /**
+     * Create an item entity.
+     *
+     * @param player the owner of the item entity if unshared. If absent, the world host by default.
+     * @param share  indicate whether the item entity is only visible and accessible to the given player or all players in the scene.
+     */
     public EntityItem(Scene scene, Player player, ItemData itemData, Position pos, Position rotation, int count, boolean share) {
         super(scene, pos, rotation);
         this.id = getScene().getWorld().getNextEntityId(EntityIdType.GADGET);
-        this.guid = player == null ? scene.getWorld().getHost().getNextGameGuid() : player.getNextGameGuid();
+        this.guid = player == null ? getWorld().getHost().getNextGameGuid() : player.getNextGameGuid();
         this.item = new GameItem(itemData, count);
         this.share = share;
+        if (share) {
+            owners = new HashSet<>(getWorld().getPlayers());
+        } else {
+            owners = new HashSet<>();
+            owners.add(Optional.ofNullable(player).orElse(getWorld().getHost()));
+        }
     }
 
     public ItemData getItemData() {
@@ -75,26 +92,19 @@ public class EntityItem extends EntityBaseGadget {
     @Override
     public void onInteract(Player player, GadgetInteractReq interactReq) {
         // check drop owner to avoid someone picked up item in others' world
-        //TODO:improve it
         if (!this.isShare()) {
-            int dropOwner = (int) (this.getGuid() >> 32);
-            if (dropOwner != player.getUid()) {
-                return;
-            }
+            if (!owners.contains(player)) return;
         }
 
-        this.getScene().removeEntity(this);
         GameItem item = new GameItem(this.getItemData(), this.getCount());
-
         // Add to inventory
+        //TODO: determine if the ActionReason is correct
         boolean success = player.getInventory().addItem(item, ActionReason.SubfieldDrop);
         if (success) {
+            // no matter whether the item is shared, we only need to notify the player interacted it
             player.sendPacket(new PacketDropHintNotify(item.getItemId(),getPosition().toProto()));
-            if (!this.isShare()) { // not shared drop
-                player.sendPacket(new PacketGadgetInteractRsp(this, InteractType.INTERACT_TYPE_PICK_ITEM));
-            } else {
-                this.getScene().broadcastPacket(new PacketGadgetInteractRsp(this, InteractType.INTERACT_TYPE_PICK_ITEM));
-            }
+            player.sendPacket(new PacketGadgetInteractRsp(this, InteractType.INTERACT_TYPE_PICK_ITEM));
+            getScene().removeEntity(this); // will only remove the entity for this player
         }
     }
 

@@ -8,7 +8,7 @@ import lombok.Getter;
 
 import java.util.List;
 
-@ResourceType(name ={"DropTableExcelConfigData.json","DropSubTableExcelConfigData.json"} , loadPriority = LoadPriority.HIGH)
+@ResourceType(name = {"DropTableExcelConfigData.json", "DropSubTableExcelConfigData.json"}, loadPriority = LoadPriority.HIGH)
 @Getter
 public class DropTableData extends GameResource {
     @Getter(onMethod = @__(@Override))

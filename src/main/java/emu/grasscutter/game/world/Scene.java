@@ -5,7 +5,11 @@ import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.GameDepot;
 import emu.grasscutter.data.binout.SceneNpcBornEntry;
 import emu.grasscutter.data.binout.routes.Route;
-import emu.grasscutter.data.excels.*;
+import emu.grasscutter.data.excels.CodexAnimalData;
+import emu.grasscutter.data.excels.DungeonData;
+import emu.grasscutter.data.excels.MonsterData;
+import emu.grasscutter.data.excels.SceneData;
+import emu.grasscutter.data.excels.WorldLevelData;
 import emu.grasscutter.data.server.Grid;
 import emu.grasscutter.game.avatar.Avatar;
 import emu.grasscutter.game.dungeons.DungeonManager;
@@ -14,7 +18,6 @@ import emu.grasscutter.game.dungeons.enums.DungeonPassConditionType;
 import emu.grasscutter.game.dungeons.settle_listeners.DungeonSettleListener;
 import emu.grasscutter.game.entity.*;
 import emu.grasscutter.game.entity.gadget.GadgetWorktop;
-import emu.grasscutter.game.inventory.GameItem;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.player.TeamInfo;
 import emu.grasscutter.game.props.*;
@@ -254,34 +257,13 @@ public class Scene {
 
     public synchronized void addEntity(GameEntity entity) {
         addEntityDirectly(entity);
-        broadcastPacket(new PacketSceneEntityAppearNotify(entity));
-    }
-
-    public synchronized void addEntityToSingleClient(Player player, GameEntity entity) {
-        addEntityDirectly(entity);
-        player.sendPacket(new PacketSceneEntityAppearNotify(entity));
-
-    }
-
-    public void addDropEntity(GameItem item, GameEntity bornForm, Player player, boolean share) {
-        // TODO:optimize EntityItem.java. Maybe we should make other players can't see
-        // the ItemEntity.
-        ItemData itemData = GameData.getItemDataMap().get(item.getItemId());
-        if (itemData == null)
-            return;
-        if (itemData.isEquip()) {
-            float range = (1.5f + (.05f * item.getCount()));
-            for (int j = 0; j < item.getCount(); j++) {
-                Position pos = bornForm.getPosition().nearby2d(range).addY(0.5f);
-                EntityItem entity = new EntityItem(this, player, itemData, pos, item.getCount(), share);
-                addEntity(entity);
-            }
+        if (entity.getOwners() == null) {
+            broadcastPacket(new PacketSceneEntityAppearNotify(entity));
         } else {
-            EntityItem entity = new EntityItem(this, player, itemData, bornForm.getPosition().clone().addY(0.5f),
-                item.getCount(), share);
-            addEntity(entity);
+            for (var owner : entity.getOwners()) {
+                owner.sendPacket(new PacketSceneEntityAppearNotify(entity));
+            }
         }
-
     }
 
     public void addEntities(Collection<? extends GameEntity> entities) {
@@ -322,28 +304,41 @@ public class Scene {
         if (removed != null) {
             removed.onRemoved();//Call entity remove event
         }
-
-        //if(entity instanceof EntityWeapon) {
-        //    Grasscutter.getLogger().warn("Weapon removed {}: ", entity.getId());
-//
-        //    for (StackTraceElement ste : Thread.currentThread().getStackTrace()) {
-        //        Grasscutter.getLogger().warn(ste.toString());
-        //    }
-        //}
         return removed;
     }
 
     public void removeEntity(GameEntity entity) {
         removeEntity(entity, VisionType.VISION_TYPE_DIE);
     }
-
     public synchronized void removeEntity(GameEntity entity, VisionType visionType) {
-        GameEntity removed = this.removeEntityDirectly(entity);
-        if (removed != null) {
-            this.broadcastPacket(new PacketSceneEntityDisappearNotify(removed, visionType));
+        removeEntity(entity, null, visionType);
+    }
+
+    /**
+     * Remove the entity for the player.
+     *
+     * @param entity     entity to remove
+     * @param player     if absent, will remove the entity for all players
+     * @param visionType The animation to disappear the entity.
+     */
+    public synchronized void removeEntity(GameEntity entity, Player player, VisionType visionType) {
+        GameEntity toRemove = entities.get(entity.getId());
+        if (toRemove == null) return;
+        var owners = entity.getOwners();
+        if (player != null && owners != null) {
+            owners.remove(player);
+            player.sendPacket(new PacketSceneEntityDisappearNotify(toRemove, visionType));
+            if (owners.isEmpty()) removeEntityDirectly(entity);
+        } else {
+            // remove for all players
+            removeEntityDirectly(entity);
+            this.broadcastPacket(new PacketSceneEntityDisappearNotify(toRemove, visionType));
         }
     }
 
+    /**
+     * Note: not support owner-based remove.
+     */
     public synchronized void removeEntities(List<? extends GameEntity> entity, VisionType visionType) {
         var toRemove = entity.stream()
             .filter(Objects::nonNull)
@@ -885,6 +880,7 @@ public class Scene {
         this.players.stream().filter(p -> p != excludedPlayer).forEach(p -> p.sendPacket(packet));
     }
 
+    @Deprecated
     public void addItemEntity(int itemId, int amount, GameEntity bornForm) {
         val itemData = GameData.getItemDataMap().get(itemId);
         if (itemData == null) return;

@@ -2053,14 +2053,12 @@ public class ScriptLib {
         return 0;
     }
 
-    public static int DropSubfield(ControllerLuaContext context, Object paramsTable) {
+    public static boolean DropSubfield(ControllerLuaContext context, Object paramsTable) {
         val gadget = context.getEntity();
         val params = context.getEngine().getTable(paramsTable);
         String subfield_name = params.getString("subfield_name");
 
-        gadget.dropSubfield(subfield_name);
-
-        return -1;
+        return gadget.dropSubfield(subfield_name);
     }
 
     public static int[] GetGatherConfigIdList(ControllerLuaContext context) {

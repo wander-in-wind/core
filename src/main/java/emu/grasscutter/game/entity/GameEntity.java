@@ -1,6 +1,5 @@
 package emu.grasscutter.game.entity;
 
-import emu.grasscutter.data.GameData;
 import emu.grasscutter.game.ability.Ability;
 import emu.grasscutter.game.ability.AbilityModifierController;
 import emu.grasscutter.game.player.Player;
@@ -27,11 +26,7 @@ import lombok.Setter;
 import lombok.val;
 
 import javax.annotation.Nullable;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 
 public abstract class GameEntity {
     @Getter private final Scene scene;
@@ -47,6 +42,8 @@ public abstract class GameEntity {
     @Getter @Setter private int lastMoveReliableSeq;
 
     @Getter @Setter private boolean lockHP;
+
+    @Getter protected Set<Player> owners;
 
     // Lua controller for specific actions
     @Getter @Setter private EntityController entityController;
@@ -252,76 +249,12 @@ public abstract class GameEntity {
 
     }
 
-    private int[] parseCountRange(String range) {
-        var split = range.split(";");
-        if (split.length == 1) return new int[]{Integer.parseInt(split[0]), Integer.parseInt(split[0])};
-        return new int[]{Integer.parseInt(split[0]), Integer.parseInt(split[1])};
-    }
-
-    public boolean dropSubfieldItem(int dropId) {
-        var drop = GameData.getDropSubfieldMappingMap().get(dropId);
-        if (drop == null) return false;
-        var dropTableEntry = GameData.getDropTableExcelConfigDataMap().get(drop.getItemId());
-        if (dropTableEntry == null) return false;
-
-        var dropRandom = getScene().getWorld().getWorldRandomGenerator();
-
-        Int2ObjectMap<Integer> itemsToDrop = new Int2ObjectOpenHashMap<>();
-        switch (dropTableEntry.getRandomType()) {
-            case 0: //select one
-            {
-                int weightCount = 0;
-                for (var entry : dropTableEntry.getDropVec()) weightCount += entry.getWeight();
-
-                int randomValue = dropRandom.nextInt(weightCount);
-
-                weightCount = 0;
-                for (var entry : dropTableEntry.getDropVec()) {
-                    if (randomValue >= weightCount && randomValue < (weightCount + entry.getWeight())) {
-                        var countRange = parseCountRange(entry.getCountRange());
-                        itemsToDrop.put(entry.getItemId(), Integer.valueOf((dropRandom.nextBoolean() ? countRange[0] : countRange[1])));
-                    }
-                }
-            }
-            break;
-            case 1: //Select various
-            {
-                for (var entry : dropTableEntry.getDropVec()) {
-                    if (entry.getWeight() < dropRandom.nextInt(10000)) {
-                        var countRange = parseCountRange(entry.getCountRange());
-                        itemsToDrop.put(entry.getItemId(), Integer.valueOf((dropRandom.nextBoolean() ? countRange[0] : countRange[1])));
-                    }
-                }
-            }
-            break;
-        }
-
-        for (var entry : itemsToDrop.int2ObjectEntrySet()) {
-            EntityItem item = new EntityItem(
-                scene,
-                null,
-                GameData.getItemDataMap().get(entry.getIntKey()),
-                getPosition().nearby2d(1f).addY(0.5f),
-                entry.getValue(),
-                true);
-
-            scene.addEntity(item);
-        }
-
-        return true;
-    }
-
     public boolean dropSubfield(String subfieldName) {
-        var subfieldMapping = GameData.getSubfieldMappingMap().get(getEntityTypeId());
-        if (subfieldMapping == null || subfieldMapping.getSubfields() == null) return false;
-
-        for (var entry : subfieldMapping.getSubfields()) {
-            if (entry.getSubfieldName().compareTo(subfieldName) == 0) {
-                return dropSubfieldItem(entry.getDrop_id());
-            }
-        }
-
-        return false;
+        var dropSystem = scene.getWorld().getServer().getDropSystem();
+        var items = dropSystem.handleEntityDrop(getEntityTypeId(), subfieldName);
+        if (items == null) return false;
+        dropSystem.dropItems(items, ActionReason.SubfieldDrop, this, null, true);
+        return true;
     }
 
     public void onTick(int sceneTime) {
