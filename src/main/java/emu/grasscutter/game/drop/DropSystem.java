@@ -90,7 +90,7 @@ public final class DropSystem extends BaseGameSystem {
         for (var entry : subfieldInfo.getSubfields()) {
             if (entry.getSubfieldName().equals(subfieldName)) {
                 var dropSubfieldData = GameData.getDropSubfieldDataMap().get(entry.getSubfieldId());
-                return processDrop(dropSubfieldData.getDropId(), 1);
+                return unstackItems(processDrop(dropSubfieldData.getDropId(), 1));
             }
         }
         return null;
@@ -179,7 +179,7 @@ public final class DropSystem extends BaseGameSystem {
     }
 
     // `items` is used to store drop items and pile them
-    private void processDrop(DropTableData dropData, Int2ObjectMap<GameItem> items) {
+    private void processDrop(DropTableData dropData, @NotNull Int2ObjectMap<GameItem> items) {
         //TODO:Not clear on the meaning of some fields,like "dropLevel".Will ignore them.
         //TODO:solve drop limits,like everydayLimit.
         if (dropData.getRandomType() == 0) { // select one from pool
@@ -210,6 +210,19 @@ public final class DropSystem extends BaseGameSystem {
                 }
             }
         }
+    }
+
+    @Nullable
+    private Collection<GameItem> unstackItems(@Nullable Collection<GameItem> items) {
+        if (items == null) return null;
+        // de-pile the drops
+        var dropList = new ArrayList<GameItem>();
+        for (var drop : items) {
+            for (int i = 0; i < drop.getCount(); i++) {
+                dropList.add(new GameItem(drop.getItemData()));
+            }
+        }
+        return dropList;
     }
 
     private void addReward(DropItemData dropEntry, Int2ObjectMap<GameItem> items) {
